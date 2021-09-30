@@ -1,15 +1,15 @@
 ---
-user-guide-title: Guía de operaciones comerciales
+user-guide-title: Manual operativo
 user-guide-description: Aprenda a preparar operacionalmente sus empresas para ejecutar un sitio de comercio electrónico exitoso.
-source-git-commit: 6eeb6547d06d416c50fcf97cb07cbc94729ebcd0
+source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
 workflow-type: tm+mt
-source-wordcount: '134'
+source-wordcount: '132'
 ht-degree: 0%
 
 ---
 
 
-# Guía de operaciones comerciales {#operational-playbook}
+# Manual operativo {#operational-playbook}
 
 - [Información general](overview.md)
 - Comercio {#intro}
