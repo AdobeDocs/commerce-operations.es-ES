@@ -1,9 +1,9 @@
 ---
-title: Optimizaciones de rendimiento
+title: Optimizaciones del rendimiento AEM
 description: Optimice la configuración predeterminada de Adobe Experience Manager para admitir altas cargas en Adobe Commerce.
-source-git-commit: 1cff7359ddb4caeca6773ff74b92048c89676f12
+source-git-commit: 6ad72d5110ae3e3a7cf341282f2af9b700874f09
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '2253'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ Cada nivel de carpeta tendría &quot;nivel de estadísticas&quot;, como se muest
 
 | content (docroot) | comercio electrónico | us | en | products | product-page.tml |
 |-------------------|-----------|----|----|----------|------------------|
-| 0 | 1 | 2 | 1 | 4 | - |
+| 0 | 1 | 2 | 3 | 4 | - |
 
 En este caso, si ha dejado la propiedad statfilelevel establecida en el &quot;0&quot; predeterminado y la plantilla product-page.html se actualiza y activa activando una invalidación, todos los archivos .stat desde docroot hasta el nivel 4 se tocarán y los archivos se invalidarán, lo que provocará una solicitud adicional de las instancias de publicación de AEM para todas las páginas del sitio (incluidos otros sitios web, países e idiomas) a partir de ese cambio único.
 

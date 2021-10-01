@@ -1,7 +1,7 @@
 ---
 title: Adobe Comercio y Alineación de la Infraestructura de Adobe Experience Manager
 description: Alinee su infraestructura de Adobe Commerce y Adobe Experience Manager para establecer tiempos de espera aceptables y límites de conexión.
-source-git-commit: 1cff7359ddb4caeca6773ff74b92048c89676f12
+source-git-commit: 6ad72d5110ae3e3a7cf341282f2af9b700874f09
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -25,11 +25,11 @@ Suponiendo que haya un equilibrador de carga de aplicación de AWS en la infraes
 
 1. Se deben revisar las comprobaciones de estado del editor para evitar que los despachantes abandonen el servicio innecesariamente antes de que se produzcan sobrecargas de carga. La configuración de tiempo de espera de la comprobación de estado del equilibrador de carga debe alinearse con la configuración de tiempo de espera del editor.
 
-   ![Captura de pantalla que muestra AEM controles de estado del equilibrador de carga](../assets/commerce-at-scale/health-checks.svg)
+   ![Captura de pantalla que muestra AEM controles de estado del equilibrador de carga](../assets/commerce-at-scale/health-checks.png)
 
 1. La adherencia del grupo de destino de Dispatcher se puede deshabilitar y se puede utilizar el algoritmo de equilibrio de carga de Round Robin. Esto supone que no hay AEM funcionalidad específica o AEM sesiones de usuario utilizadas que requerirían que se estableciera la permanencia de la sesión. Se supone que el inicio de sesión del usuario y la administración de sesiones solo están en Adobe Commerce a través de GraphQL.
 
-   ![Captura de pantalla que muestra AEM atributos de adherencia a la sesión](../assets/commerce-at-scale/session-stickiness.svg)
+   ![Captura de pantalla que muestra AEM atributos de adherencia a la sesión](../assets/commerce-at-scale/session-stickiness.png)
 
 1. Tenga en cuenta que si habilita la permanencia en la sesión, esto puede hacer que las solicitudes no se almacenen en caché, ya que de forma predeterminada Finfinito no almacena en caché las páginas con el encabezado Set-Cookies. Adobe Commerce establece cookies incluso en páginas almacenables en caché (TTL > 0), pero la VCL predeterminada de Flash elimina esas cookies en páginas almacenables en caché para que funcione el almacenamiento en caché de forma rápida. Si las páginas no están almacenando en caché, compruebe las cookies personalizadas que pueda estar utilizando, y también cargue la LV de moda y vuelva a comprobar el sitio.
 
@@ -49,8 +49,8 @@ El tiempo de espera de la conexión http y el tiempo de espera del socket http d
 
 La siguiente imagen muestra la Fábrica de Configuración del Cliente CIF GraphQL de Magento. La configuración que se muestra a continuación son solo ejemplos y debe ajustarse en función de cada caso:
 
-![Captura de pantalla de la configuración del marco de integración de comercio](../assets/commerce-at-scale/cif-config.svg)
+![Captura de pantalla de la configuración del marco de integración de comercio](../assets/commerce-at-scale/cif-config.png)
 
 Las siguientes imágenes muestran las configuraciones del backend de Ffinity. La configuración que se muestra a continuación son solo ejemplos y debe ajustarse en función de cada caso:
 
-![Captura de pantalla de los ajustes de configuración de Administración de comercio para Ffinity](../assets/commerce-at-scale/cif-config-advanced.svg)
+![Captura de pantalla de los ajustes de configuración de Administración de comercio para Ffinity](../assets/commerce-at-scale/cif-config-advanced.png)

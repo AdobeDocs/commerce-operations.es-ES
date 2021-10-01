@@ -1,7 +1,7 @@
 ---
 title: Ofrecer Experiencias A Escala
 description: Aprenda a ofrecer experiencias a escala con Adobe Commerce y Adobe Experience Manager.
-source-git-commit: 1cff7359ddb4caeca6773ff74b92048c89676f12
+source-git-commit: 6ad72d5110ae3e3a7cf341282f2af9b700874f09
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -30,6 +30,6 @@ Es poco probable que las páginas de comercio electrónico, como las páginas de
 
 ## Renderización del lado del cliente
 
-Cuando se muestran atributos más dinámicos, como niveles de existencias, disponibilidad o precio, por ejemplo en las páginas de detalles del producto (PDP), se pueden utilizar componentes del lado del cliente. Aunque la página de plantilla se puede crear y almacenar en caché en el despachante utilizando el método de renderización del lado del servidor descrito anteriormente, dentro de la propia página estática puede haber componentes web dinámicos del lado del cliente. Estos componentes dinámicos pueden recuperar datos directamente en el explorador del cliente desde Adobe Commerce a través de las API de GraphQL para comprobar, por ejemplo, el precio actual o el nivel de existencias en tiempo real en el PDP. Esto garantiza que el contenido que suele ser crítico para mostrarse en tiempo real siempre se obtenga al cargar la página. Algunos ejemplos de esto se muestran en los cuadros amarillos del ejemplo anterior.
+Cuando se muestran atributos más dinámicos, como niveles de existencias, disponibilidad o precio, por ejemplo en las páginas de detalles del producto (PDP), se pueden utilizar componentes del lado del cliente. Aunque la página de plantilla se puede crear y almacenar en caché en el despachante utilizando el método de renderización del lado del servidor descrito anteriormente, dentro de la propia página estática puede haber componentes web dinámicos del lado del cliente. Estos componentes dinámicos pueden recuperar datos directamente en el explorador del cliente desde Adobe Commerce a través de las API de GraphQL para comprobar, por ejemplo, el precio actual o el nivel de existencias en tiempo real en el PDP. Esto garantiza que el contenido que suele ser crítico para mostrarse en tiempo real siempre se obtenga al cargar la página. Algunos ejemplos de esto se muestran en los cuadros rojos del ejemplo anterior.
 
 Durante el proceso de cierre de compra también se puede utilizar una combinación de plantillas de AEM y renderización del lado del cliente: los componentes del carro de compras del lado del cliente representan el carro de compras, el formulario de cierre de compra y la integración con el proveedor de servicios de pago. Este método híbrido también se puede utilizar para la funcionalidad de administración de cuentas de Adobe Commerce, como crear cuenta, iniciar sesión en la cuenta y contraseña olvidada.

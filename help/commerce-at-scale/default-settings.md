@@ -1,23 +1,19 @@
 ---
-title: Cambiar configuración predeterminada
+title: Optimizar el rendimiento de Adobe Commerce
 description: Prepare su proyecto de Adobe Commerce para utilizar Adobe Experience Manager como CMS cambiando algunos ajustes predeterminados.
-source-git-commit: 1cff7359ddb4caeca6773ff74b92048c89676f12
+source-git-commit: 6ad72d5110ae3e3a7cf341282f2af9b700874f09
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1143'
 ht-degree: 0%
 
 ---
 
 
-# Cambiar la configuración predeterminada de Adobe Commerce
+# Optimizar el rendimiento de Adobe Commerce
 
 ## Ubicación geográfica de la infraestructura de comercio de AEM y Adobe
 
 Para reducir la latencia entre el editor de AEM y Adobe Commerce GraphQL al crear páginas, el aprovisionamiento inicial de las dos infraestructuras independientes debe alojarse en la misma región de AWS (o Azure). La ubicación geográfica elegida para ambas nubes también debe ser la más cercana a la mayoría de la base de clientes, de modo que las solicitudes de GraphQL del lado del cliente se proporcionen desde una ubicación geográficamente cercana a la mayoría de sus clientes.
-
-## AWS/Azure PrivateLink: vinculación de AEM y comercio de Adobe en VPC de nube
-
-Para mejorar los tiempos de respuesta y reducir aún más la latencia para sitios con expectativas de carga extremas, se puede considerar una conexión de vínculo privado de AWS (o Azure) entre el VPC de AEM y el Adobe Commerce en el VPC de la nube. Esto tendría el efecto de todo el tráfico de red entre los editores de AEM y el comercio de Adobe que permanecen en la red troncal global de AWS y no necesitan atravesar la internet pública.
 
 ## Almacenamiento en caché de GraphQL en Adobe Commerce
 
@@ -58,7 +54,7 @@ De forma predeterminada, las conexiones esclavas MySQL y Redis no están activad
 
 Si la instancia de Adobe Commerce espera una carga extrema, la activación del maestro esclavo para MySQL y Redis ayudará con el rendimiento al distribuir la carga en la base de datos MySQL o Redis en diferentes nodos.
 
-Como guía, en entornos con carga normal, habilitar Conexiones esclavas reducirá el rendimiento en un 10-15%. Sin embargo, en los clústeres con una carga y un tráfico elevados, existe un aumento del rendimiento de alrededor del 10-15%. Por lo tanto, es importante cargar la prueba del entorno con los niveles de tráfico esperados para evaluar si esta configuración sería beneficiosa para los tiempos de rendimiento en carga.
+Como guía, en entornos con carga normal, habilitar Conexiones esclavas reducirá el rendimiento en un 10-15%. Sin embargo, en los clústeres con una carga y un tráfico elevados, existe un aumento del rendimiento de alrededor del 10-15%. Por lo tanto, es importante que cargue la prueba del entorno con los niveles de tráfico esperados para evaluar si esta configuración sería beneficiosa para los tiempos de rendimiento en carga.
 
 Para habilitar/deshabilitar conexiones esclavas para mysql y redis, debe editar su archivo `.magento.env.yaml` para incluir lo siguiente:
 

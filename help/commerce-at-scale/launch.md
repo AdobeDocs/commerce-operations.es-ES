@@ -1,7 +1,7 @@
 ---
-title: Preparación para Launch
+title: Consejos de pruebas de rendimiento
 description: Obtenga información sobre cómo configurar los KPI para iniciar la solución Adobe Commerce y Adobe Experience Manager.
-source-git-commit: 1cff7359ddb4caeca6773ff74b92048c89676f12
+source-git-commit: 6ad72d5110ae3e3a7cf341282f2af9b700874f09
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -9,7 +9,7 @@ ht-degree: 0%
 ---
 
 
-# Preparación para el lanzamiento
+# Sugerencias de pruebas de rendimiento
 
 Para evaluar la eficacia de todos los cambios anteriores, se deben ejecutar pruebas de rendimiento exhaustivas antes del lanzamiento y antes de cualquier implementación importante futura en los entornos de producción. Al planificar las pruebas de carga, es importante simular el tráfico de consumidores en la vida real en la medida de lo posible.
 
@@ -53,7 +53,7 @@ saltar inmediatamente a la siguiente página del sitio durante su recorrido: hab
 hay varios resultados puntuales que tardan mucho más que los otros resultados, por lo que esto distorsionaría este resultado promedio, pero lo que nos interesa es el tiempo de respuesta del usuario final para la mayoría de los usuarios, que es más adecuado para la medida media.
 - Los recursos incrustados no se recopilan de forma predeterminada en jmetro (por ejemplo, JS, CSS y otros recursos descargados cuando un usuario visita la página). Esto se puede habilitar, pero solo para el dominio que está probando: las llamadas a recursos externos se deben seguir excluyendo (por ejemplo, no queremos incluir tiempos de respuesta de servicios alojados externamente, por ejemplo. código de google analytics, ya que no tenemos control sobre ellos).
 - El Administrador de caché HTTP debe estar habilitado, lo que permite a Jmetro almacenar en caché los elementos de página durante un recorrido como
-el recorrido de un usuario real lo haría durante su navegación por el sitio web en su propio navegador. Durante su recorrido a través del sitio, el navegador del usuario descargaba el recurso incrustado relacionado solo una vez y luego el navegador del usuario los almacenaba en caché. Además, si el mismo usuario regresa al sitio algún tiempo después de su visita original, podría seguir siendo la caché en la que se almacenan esos recursos.
+el recorrido de un usuario real lo haría durante su navegación por el sitio web en su propio navegador. Durante su recorrido a través del sitio, el navegador del usuario descargaba el recurso incrustado relacionado solo una vez y luego el navegador del usuario los almacenaba en caché. Además, si el mismo usuario vuelve al sitio algún tiempo después de su visita original, podría ser la caché en la que se almacenan esos recursos.
 - Los oyentes deben mantenerse dentro de las ejecuciones de prueba de carga real (por ejemplo, &quot;Ver árbol de resultados&quot; y &quot;Agregar informe&quot;). Incluirlo en la ejecución de pruebas de carga real que no son de GUI puede afectar a los resultados de rendimiento que informa Jmetro, ya que los recursos se utilizan durante la ejecución de pruebas real para generar los informes. Estos oyentes se eliminaron de la secuencia de comandos de prueba para reemplazarlos con un archivo de resultados JTL, que luego se puede procesar usando la funcionalidad del panel de informes de Jmetro.
 - Un tiempo de respuesta objetivo para evaluado, de modo que la &quot;puntuación Apdex&quot; del informe del panel pueda utilizarse como una forma rápida de medir el efecto de los cambios en el rendimiento entre ejecuciones de prueba. La puntuación de Apdex se basa en una cierta cantidad de personas que pueden acceder al sitio en un tiempo tolerable . Si el tiempo de respuesta supera una cierta cantidad &quot;frustrante&quot;, se reduce la puntuación. Los tiempos se pueden configurar utilizando los parámetros &quot;apdex_happy_ threshold&quot; y &quot;apdex_tolated_threshold&quot;.
 - Establezca una métrica objetivo &quot;Pedidos por hora&quot; para presentarla a los usuarios empresariales, no a un recuento de usuarios virtuales. Los &quot;usuarios virtuales&quot; pueden ser un tema complejo para comprender qué mide la prueba en la vida real. Al calcular la tasa de conversión del sitio, los pedidos por hora, el tiempo promedio que un usuario emplea en el sitio y pensar en el tiempo entre cada carga de página, se pueden utilizar cálculos estándar del sector para presentar diferentes escenarios de prueba de carga basados en los pedidos por hora que se van a lograr.
