@@ -3,7 +3,7 @@ user-guide-title: Ofrecer experiencias comerciales a escala
 user-guide-description: Aprenda a ofrecer experiencias a escala mediante el comercio de Adobe con Adobe Experience Manager.
 source-git-commit: 63f153365398c3ae7dc7e6214b67705c8a4c7686
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '41'
 ht-degree: 0%
 
 ---

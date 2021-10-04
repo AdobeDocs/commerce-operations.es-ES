@@ -1,17 +1,17 @@
 ---
 title: Planificación de caché eficaz
 description: Consulte los puntos de referencia recomendados para el almacenamiento en caché con el fin de garantizar el éxito del sitio bajo carga.
-source-git-commit: 41c0ba17b3d731a82ad6ecd8b16fac151a597e75
+exl-id: 275eb21d-fa52-4b97-9453-8f8553128b53
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '353'
+source-wordcount: '354'
 ht-degree: 0%
 
 ---
 
-
 # Planificación del almacenamiento en caché efectivo para el éxito del comercio electrónico bajo carga
 
-La entrega de una experiencia de compra bajo carga requiere una estrategia de almacenamiento en caché bien planificada. Aunque inicialmente la solicitud de las partes interesadas del negocio puede ser presentar siempre datos de productos en tiempo real a los clientes, no se trata de un uso óptimo de los recursos del sistema, y el impacto del rendimiento del sitio del usuario final superaría en gran medida los beneficios de mostrar la información en tiempo real de forma coherente.
+La entrega de una experiencia de compra en carga requerirá una estrategia de almacenamiento en caché bien planificada. Aunque inicialmente la solicitud de las partes interesadas del negocio puede ser presentar siempre datos de productos en tiempo real a los clientes, no se trata de un uso óptimo de los recursos del sistema, y el impacto del rendimiento del sitio del usuario final superaría en gran medida los beneficios de mostrar la información en tiempo real de forma coherente.
 
 Por lo tanto, el paso inicial en la estrategia de almacenamiento en caché debería ser definir con las partes interesadas una matriz de tiempos de almacenamiento en caché aceptables para las diferentes áreas del sitio, por ejemplo:
 

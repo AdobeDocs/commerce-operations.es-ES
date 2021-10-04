@@ -1,19 +1,19 @@
 ---
 title: Guía de implementación
 description: Objetivo del manual de implementación de Commerce
-source-git-commit: bb7dbf2a9d7f2fca1ecc7714f8f1ea53e4fcf067
+exl-id: 2f82c68c-60c7-4a62-837b-492afc06e0db
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '501'
+source-wordcount: '498'
 ht-degree: 0%
 
 ---
-
 
 # Manual de implementación
 
 El propósito de este manual es proporcionar la visión general más holística de una implementación típica de Adobe Commerce.
 
-Desde las primeras etapas del ámbito de los proyectos hasta el desarrollo y las integraciones y, finalmente, la implementación y el soporte continuo, hay muchas metodologías y prácticas recomendadas que debe tener en cuenta para iniciar con éxito un proyecto de comercio.
+Desde las primeras etapas del análisis de proyectos hasta el desarrollo, las integraciones y la implementación hasta el soporte continuo, hay muchas metodologías y prácticas recomendadas que debe tener en cuenta para iniciar con éxito un proyecto de comercio de Adobe.
 
 Además, estos procesos y consideraciones se aplican a cualquier tipo de proyecto de comercio de Adobe:
 

@@ -1,13 +1,13 @@
 ---
 title: Adobe Comercio y Alineación de la Infraestructura de Adobe Experience Manager
 description: Alinee su infraestructura de Adobe Commerce y Adobe Experience Manager para establecer tiempos de espera aceptables y límites de conexión.
-source-git-commit: 6ad72d5110ae3e3a7cf341282f2af9b700874f09
+exl-id: f9cb818f-1461-4b23-b931-e7cee70912fd
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '671'
 ht-degree: 0%
 
 ---
-
 
 # Alineaciones de la infraestructura (tiempos de espera y límites de conexión)
 
