@@ -2,9 +2,9 @@
 title: Guía de implementación
 description: Objetivo del manual de implementación de Commerce
 exl-id: 2f82c68c-60c7-4a62-837b-492afc06e0db
-source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
+source-git-commit: 7bad54402e4698545f3436d4195170adb7b48c15
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '497'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Además, estos procesos y consideraciones se aplican a cualquier tipo de proyect
 - Implementaciones de mercado único o de varios mercados
 - Integraciones extensas con o sin middleware
 
-Esperamos que este manual proporcione perspectivas y orientación a una variedad de partes interesadas que normalmente participarían en una iniciativa de proyecto de comercio electrónico, como:
+Esperamos que este manual proporcione perspectivas y orientación a una variedad de partes interesadas que normalmente participarían en una iniciativa de proyecto de comercio electrónico, entre las que se incluyen:
 
 - CEOs y gerencia general, quienes deben tener una idea sólida de lo que implica un despliegue de comercio electrónico
 - CMO y administradores digitales, que trabajarán con usuarios empresariales en la propia plataforma
