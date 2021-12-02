@@ -1,13 +1,13 @@
 ---
 title: Recommendations de optimización del rendimiento
-description: Optimice el rendimiento de la implementación de Adobe Commerce siguiendo estas recomendaciones.
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+description: Optimice el rendimiento de su implementación de Adobe Commerce siguiendo estas recomendaciones.
+exl-id: c5d62e23-be43-4eea-afdb-bb1b156848f9
+source-git-commit: a7ccb83cbcfc2f12882fa8d8a879118db2b20ede
 workflow-type: tm+mt
-source-wordcount: '1287'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
-
 
 # Revisión de la optimización del rendimiento
 
@@ -33,7 +33,7 @@ La ubicación del centro de datos afecta a la latencia web de los usuarios de fr
 
 El ancho de banda de red suficiente es uno de los requisitos clave para el intercambio de datos entre nodos web, bases de datos, servidores de almacenamiento en caché/sesión y otros servicios.
 
-Dado que el comercio de Adobe aprovecha de forma eficaz el almacenamiento en caché para obtener un alto rendimiento, su sistema puede intercambiar datos de forma activa con servidores de almacenamiento en caché como Redis. Si Redis está ubicado en un servidor remoto, debe proporcionar un canal de red suficiente entre los nodos web y el servidor caché para evitar cuellos de botella en las operaciones de lectura y escritura.
+Como Adobe Commerce aprovecha de forma eficaz el almacenamiento en caché para obtener un alto rendimiento, su sistema puede intercambiar datos de forma activa con servidores de almacenamiento en caché como Redis. Si Redis está ubicado en un servidor remoto, debe proporcionar un canal de red suficiente entre los nodos web y el servidor caché para evitar cuellos de botella en las operaciones de lectura y escritura.
 
 ### Sistema operativo (OS)
 
@@ -41,7 +41,7 @@ Las configuraciones y optimizaciones del sistema operativo son similares para Ad
 
 ### CPU de nodos web
 
-Un núcleo de CPU puede servir entre 2 y 4 solicitudes de comercio de Adobe sin caché de forma eficaz. Para determinar cuántos nodos o núcleos web necesitaban para procesar todas las solicitudes entrantes sin ponerlas en cola, utilice la ecuación :
+Un núcleo de CPU puede servir entre 2 y 4 solicitudes de Adobe Commerce sin caché de forma efectiva. Para determinar cuántos nodos o núcleos web necesitaban para procesar todas las solicitudes entrantes sin ponerlas en cola, utilice la ecuación :
 
 ```
 N[Cores] = (N [Expected Requests] / 2) + N [Expected Cron Processes])
@@ -51,15 +51,15 @@ N[Cores] = (N [Expected Requests] / 2) + N [Expected Cron Processes])
 
 La optimización de esta configuración depende de los resultados de la prueba de rendimiento de diferentes proyectos.
 
-- **ByteCode**: para obtener la máxima velocidad del comercio de Adobe en PHP 7, debe activar el  `opcache` módulo y configurarlo correctamente.
+- **ByteCode**: para obtener la máxima velocidad de Adobe Commerce en PHP 7, debe activar el `opcache` y configúrelo correctamente.
 
-- **APCU**: se recomienda habilitar la extensión APCu de PHP y configurar Composer para optimizar para el máximo rendimiento. Esta extensión almacena en caché las ubicaciones de archivos para los archivos abiertos, lo que aumenta el rendimiento de las llamadas al servidor de Adobe Commerce, incluidas las páginas, las llamadas de Ajax y los extremos.
+- **APCU**—Recomendamos habilitar la extensión PHP APCu y configurar Composer para optimizar para el máximo rendimiento. Esta extensión almacena en caché las ubicaciones de archivos para los archivos abiertos, lo que aumenta el rendimiento de las llamadas al servidor de Adobe Commerce, incluidas las páginas, las llamadas de Ajax y los extremos.
 
-- **Realpath_cacheconfiguration**: la optimización  `realpath_cache` permite que los procesos PHP almacenen en caché las rutas a los archivos en lugar de buscarlas cada vez que se carga una página.
+- **Realpath_cacheconfiguration**—Optimización `realpath_cache` permite que los procesos PHP almacenen en caché las rutas a los archivos en lugar de buscarlos cada vez que se carga una página.
 
 ### Servidor web
 
-Solo se necesita una ligera reconfiguración para usar nginx como servidor web. El servidor web nginx proporciona un mejor rendimiento y es fácil de configurar utilizando el archivo de configuración de ejemplo de Adobe Commerce ([`nginx.conf.sample`](https://github.com/magento/magento2/blob/2.4/nginx.conf.sample)).
+Solo se necesita una ligera reconfiguración para usar nginx como servidor web. El servidor web nginx proporciona un mejor rendimiento y es fácil de configurar mediante el archivo de configuración de ejemplo de Adobe Commerce ([`nginx.conf.sample`](https://github.com/magento/magento2/blob/2.4/nginx.conf.sample)).
 
 - Configuración correcta de PHP-FPM con TCP
 
@@ -73,7 +73,7 @@ Este documento no proporciona instrucciones detalladas de ajuste MySQL porque ca
 
 La base de datos de Adobe Commerce (así como cualquier otra base de datos) es sensible a la cantidad de memoria disponible para almacenar datos e índices. Para aprovechar efectivamente la indexación de datos MySQL, la cantidad de memoria disponible debería ser, como mínimo, casi la mitad del tamaño de los datos almacenados en la base de datos.
 
-Optimice la configuración `innodb_buffer_pool_instances` para evitar problemas con varios subprocesos que intentan acceder a la misma instancia. El valor del parámetro `max_connections` debe correlacionarse con el número total de subprocesos PHP configurados en el servidor de aplicaciones. Utilice la fórmula siguiente para calcular el mejor valor para `innodb-thread-concurrency`:
+Optimice el `innodb_buffer_pool_instances` para evitar problemas con varios subprocesos que intentan acceder a la misma instancia. El valor de la variable `max_connections` debe correlacionarse con el número total de subprocesos PHP configurados en el servidor de aplicaciones. Utilice la fórmula siguiente para calcular el mejor valor de `innodb-thread-concurrency`:
 
 ```
 innodb-thread-concurrency = 2 * (NumCPUs+NumDisks)
@@ -87,7 +87,7 @@ Redis debería tener suficiente memoria asignada para guardar todas las demás c
 
 ### Almacenamiento en caché de página
 
-Recomendamos encarecidamente usar Varnish para la caché de página completa en su tienda de comercio de Adobe. El módulo `PageCache` sigue presente en la base de código, pero solo debe utilizarse para fines de desarrollo.
+Recomendamos encarecidamente utilizar Varnish para la caché de página completa en su tienda Adobe Commerce. La variable `PageCache` aún está presente en la base de código, pero solo debe utilizarse para fines de desarrollo.
 
 Instale Varnish en un servidor separado delante del nivel web. Debe aceptar todas las solicitudes entrantes y proporcionar copias de páginas en caché. Para permitir que Varnish funcione eficazmente con las páginas seguras, se puede colocar un proxy de terminación SSL delante de Varnish. Nginx puede utilizarse para este fin.
 
@@ -95,7 +95,7 @@ Aunque la invalidación de memoria caché de página completa de Varnish es efec
 
 ### Cola de mensajes
 
-El marco de colas de mensajes (MQF) es un sistema que permite que un módulo publique mensajes en las colas. También define a los consumidores que reciben los mensajes de forma asíncrona. Adobe Commerce es compatible con RabbitMQ como el agente de mensajería, que proporciona una plataforma escalable para enviar y recibir mensajes.
+El marco de colas de mensajes (MQF) es un sistema que permite que un módulo publique mensajes en las colas. También define a los consumidores que reciben los mensajes de forma asíncrona. Adobe Commerce es compatible con RabbitMQ como agente de mensajería, que proporciona una plataforma escalable para enviar y recibir mensajes.
 
 ### Pruebas y monitorización del rendimiento
 
@@ -103,11 +103,11 @@ Siempre se recomienda realizar pruebas de rendimiento antes de cada versión de 
 
 >[!NOTE]
 >
-> Adobe Commerce en la infraestructura de la nube ya aplica todas las optimizaciones de infraestructura y arquitectura anteriores, excepto la búsqueda de DNS porque está fuera de alcance.
+> Adobe Commerce en la infraestructura de nube ya aplica todas las optimizaciones de infraestructura y arquitectura anteriores, excepto la búsqueda de DNS porque está fuera de alcance.
 
 ### Buscar
 
-Elasticsearch es necesario a partir de la versión 2.4 de Adobe Commerce, pero también se recomienda habilitarlo para versiones anteriores a la 2.4.
+Elasticsearch es necesario desde la versión 2.4 de Adobe Commerce, pero también se recomienda habilitarlo para versiones anteriores a la 2.4.
 
 ## Modelos operativos
 
@@ -115,11 +115,11 @@ Además de las recomendaciones comunes de optimización de infraestructura anter
 
 ### Arquitectura sin encabezado
 
-Tenemos una sección separada dedicada a detallar qué es [headless](../../architecture/headless/adobe-commerce.md) y las diferentes opciones. En resumen, separa la capa de tienda de la propia plataforma. Sigue siendo el mismo servidor, pero Adobe Commerce ya no procesa las solicitudes directamente y solo admite tiendas personalizadas a través de la API de GraphQL.
+Tenemos una sección separada dedicada a detallar qué [headless](../../architecture/headless/adobe-commerce.md) es y diferentes opciones. En resumen, separa la capa de tienda de la propia plataforma. Sigue siendo el mismo servidor, pero Adobe Commerce ya no procesa las solicitudes directamente y solo admite tiendas personalizadas a través de la API de GraphQL.
 
-### Mantener actualizado el comercio de Adobe
+### Mantener Adobe Commerce actualizado
 
-Adobe Commerce siempre tiene un mejor rendimiento al ejecutar la versión más reciente. Aunque no sea posible mantener Adobe Commerce actualizado después de publicar cada nueva versión, se recomienda actualizar cuando Adobe Commerce presente optimizaciones de rendimiento significativas.
+Adobe Commerce siempre tiene un mejor rendimiento al ejecutar la versión más reciente. Aunque no sea posible mantener Adobe Commerce actualizado después de publicar cada nueva versión, se recomienda [actualización](../../../assets/upgrade-guide/adobe-commerce-2-4-upgrade-guide.pdf) cuando Adobe Commerce introduce optimizaciones de rendimiento significativas.
 
 Por ejemplo, en 2020, Adobe lanzó una optimización en la capa de Redis, solucionando muchas ineficiencias, problemas de conexión y transferencia de datos innecesaria entre Redis y Adobe Commerce. El rendimiento general entre 2.3 y 2.4 es de noche y día y hemos visto mejoras significativas en el carro de compras, el cierre de compra y los usuarios simultáneos, solo debido a la optimización de Redis.
 
