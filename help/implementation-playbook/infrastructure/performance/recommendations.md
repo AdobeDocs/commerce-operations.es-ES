@@ -2,9 +2,9 @@
 title: Recommendations de optimización del rendimiento
 description: Optimice el rendimiento de su implementación de Adobe Commerce siguiendo estas recomendaciones.
 exl-id: c5d62e23-be43-4eea-afdb-bb1b156848f9
-source-git-commit: a7ccb83cbcfc2f12882fa8d8a879118db2b20ede
+source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1289'
 ht-degree: 0%
 
 ---
@@ -119,7 +119,7 @@ Tenemos una sección separada dedicada a detallar qué [headless](../../architec
 
 ### Mantener Adobe Commerce actualizado
 
-Adobe Commerce siempre tiene un mejor rendimiento al ejecutar la versión más reciente. Aunque no sea posible mantener Adobe Commerce actualizado después de publicar cada nueva versión, se recomienda [actualización](../../../assets/upgrade-guide/adobe-commerce-2-4-upgrade-guide.pdf) cuando Adobe Commerce introduce optimizaciones de rendimiento significativas.
+Adobe Commerce siempre tiene un mejor rendimiento al ejecutar la versión más reciente. Aunque no sea posible mantener Adobe Commerce actualizado después de publicar cada nueva versión, se recomienda [actualización](../../../upgrade/overview.md) cuando Adobe Commerce introduce optimizaciones de rendimiento significativas.
 
 Por ejemplo, en 2020, Adobe lanzó una optimización en la capa de Redis, solucionando muchas ineficiencias, problemas de conexión y transferencia de datos innecesaria entre Redis y Adobe Commerce. El rendimiento general entre 2.3 y 2.4 es de noche y día y hemos visto mejoras significativas en el carro de compras, el cierre de compra y los usuarios simultáneos, solo debido a la optimización de Redis.
 
