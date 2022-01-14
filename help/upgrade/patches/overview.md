@@ -1,9 +1,9 @@
 ---
 title: Cómo funcionan los parches
 description: Obtenga información sobre los distintos tipos de parches para Adobe Commerce y Magento Open Source y cómo funcionan.
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+source-git-commit: 38b054bbae8ba116557ce367c8397c646c837558
 workflow-type: tm+mt
-source-wordcount: '610'
+source-wordcount: '619'
 ht-degree: 0%
 
 ---
@@ -60,7 +60,7 @@ Existen muchas maneras de crear archivos de parches personalizados. El siguiente
 Para crear un parche personalizado:
 
 1. Cree un `patches/composer` en el proyecto local.
-1. Identifique la confirmación o la solicitud de extracción de GitHub que se utilizará para el parche. Este ejemplo utiliza la variable [`2d31571`](https://github.com/magento/magento2/commit/) confirmar, vinculado a un problema de GitHub [#6474](https://github.com/magento/magento2/issues/6474).
+1. Identifique la confirmación o la solicitud de extracción de GitHub que se utilizará para el parche. Este ejemplo utiliza la variable [`2d31571`](https://github.com/magento/magento2/commit/2d31571f1bacd11aa2ec795180abf682e0e9aede) confirmar, vinculado a un problema de GitHub [#6474](https://github.com/magento/magento2/issues/6474).
 1. Anexe la variable `.patch` o `.diff` extensiones a la URL de confirmación. Uso `.diff` para un tamaño de archivo más pequeño. Por ejemplo: [https://github.com/magento/magento2/commit/2d31571f1bacd11aa2ec795180abf682e0e9aede.diff](https://github.com/magento/magento2/commit/2d31571f1bacd11aa2ec795180abf682e0e9aede.diff)
 1. Guarde la página como un archivo en el `patches/composer` directorio. Por ejemplo, `github-issue-6474.diff`.
 1. Edite el archivo y elimine `app/code/<VENDOR>/<PACKAGE>` desde todas las rutas para que sean relativas a la variable `vendor/<VENDOR>/<PACKAGE>` directorio.
@@ -78,11 +78,12 @@ index c8a6fef58d31..7d01c195791e 100644
 +++ b/view/frontend/web/js/view/payment/iframe.js
 @@ -154,6 +154,7 @@ define(
               */
-              clearTimeout: function () {
-                  clearTimeout(this.timeoutId);
-                  this.fail();
-                  return this;
-            },
+             clearTimeout: function () {
+                 clearTimeout(this.timeoutId);
++                this.fail();
+ 
+                 return this;
+             },
 ```
 
 ## Aplicación de parches
