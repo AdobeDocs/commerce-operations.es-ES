@@ -1,9 +1,9 @@
 ---
 title: Implementación de actualización
 description: Obtenga información sobre las distintas fases de implementación de la actualización para proyectos de Adobe Commerce y Magento Open Source.
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+source-git-commit: 3d9a721e33621b78f03f16b932a1ba2904ae4010
 workflow-type: tm+mt
-source-wordcount: '883'
+source-wordcount: '877'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ Los siguientes son elementos que puede que desee incluir en un análisis exhaust
 
 - **Alcance de la versión de target**—Documentación sobre [Documentos de desarrollo comercial](https://devdocs.magento.com) y la información de los seminarios web de la versión del socio le proporcionan todos los detalles que debe conocer sobre su actualización de destino.
 
-- **Resultados de la herramienta de compatibilidad de actualización**: esta herramienta facilita y agiliza cualquier actualización comparando el código actual con el código de la versión de destino y produciendo un informe de todos los problemas que deben solucionarse. Consulte la [Herramienta de compatibilidad de actualización](../upgrade-compatibility-tool/overview.md). Los detalles clave del informe incluyen:
+- **[!DNL Upgrade Compatibility Tool]resultados**: esta herramienta facilita y agiliza cualquier actualización comparando el código actual con el código de la versión de destino y produciendo un informe de todos los problemas que deben solucionarse. Consulte la [[!DNL Upgrade Compatibility Tool]](../upgrade-compatibility-tool/overview.md). Los detalles clave del informe incluyen:
 
    - Versión instalada actual
    - Actualizar la versión de destino

@@ -1,17 +1,17 @@
 ---
-title: Información para desarrolladores de la herramienta de compatibilidad de actualización
-description: Personalice la herramienta de compatibilidad de actualización mediante la integración de índice de API.
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+title: '[!DNL Upgrade Compatibility Tool] Información para desarrolladores'
+description: Personalice el [!DNL Upgrade Compatibility Tool] uso de la integración de índice de API.
+source-git-commit: 3d9a721e33621b78f03f16b932a1ba2904ae4010
 workflow-type: tm+mt
-source-wordcount: '450'
+source-wordcount: '432'
 ht-degree: 0%
 
 ---
 
 
-# Información para desarrolladores de la herramienta de compatibilidad de actualización
+# [!DNL Upgrade Compatibility Tool] información para desarrolladores
 
-Este tema contiene información para los desarrolladores que trabajan estrechamente con el código Adobe Commerce y desean obtener información detallada sobre la herramienta de compatibilidad de actualización. Puede utilizar este conocimiento para personalizar los componentes de la herramienta.
+Este tema contiene información para los desarrolladores que trabajan estrechamente con el código Adobe Commerce y desean obtener información detallada sobre la variable [!DNL Upgrade Compatibility Tool]. Puede utilizar este conocimiento para personalizar los componentes de la herramienta.
 
 ## Integración del índice de la API de Adobe Commerce
 
@@ -29,7 +29,7 @@ Edite este archivo para personalizar la respuesta según su instalación. Reempl
 
 `sut\Domain\MRay\MRayInterface : "@sut_mray_mock"`
 
-En el ejemplo anterior, la herramienta de compatibilidad de actualización utiliza `@sut_mray_mock` como el `MRayInterface` implementación. Las respuestas de `api()` y `modules()` los métodos provienen de los siguientes archivos:
+En el ejemplo anterior, la variable [!DNL Upgrade Compatibility Tool] uses `@sut_mray_mock` como el `MRayInterface` implementación. Las respuestas de `api()` y `modules()` los métodos provienen de los siguientes archivos:
 
 - `dev/mray_mock_files/api.json`
 - `dev/mray_mock_files/modules.json`
@@ -117,7 +117,7 @@ Esta puntuación se basa en los resultados extraídos del análisis:
 - Número de problemas identificados
 - Gravedad de las cuestiones identificadas
 
-La herramienta de compatibilidad de actualización calcula esta puntuación según la fórmula de puntuación de complejidad que se muestra a continuación.
+La variable [!DNL Upgrade Compatibility Tool] calcula esta puntuación según la fórmula de puntuación de complejidad que se muestra a continuación.
 
 ### Fórmula de puntuación de complejidad
 

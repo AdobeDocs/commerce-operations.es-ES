@@ -1,17 +1,17 @@
 ---
-title: Mensajes de error de la herramienta de compatibilidad de actualización
-description: Obtenga más información sobre los mensajes de error que encuentra al usar la herramienta de compatibilidad de actualización en su proyecto de Adobe Commerce.
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+title: '[!DNL Upgrade Compatibility Tool] Mensajes de error'
+description: Obtenga más información sobre los mensajes de error que encuentra al usar la variable [!DNL Upgrade Compatibility Tool] en su proyecto de Adobe Commerce.
+source-git-commit: 3d9a721e33621b78f03f16b932a1ba2904ae4010
 workflow-type: tm+mt
-source-wordcount: '3759'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 
-# Mensajes de error de la herramienta de compatibilidad de actualización
+# [!DNL Upgrade Compatibility Tool] mensajes de error
 
-Esta referencia de mensaje de error proporciona información sobre los errores que pueden producirse al ejecutar la herramienta de compatibilidad de actualización.
+Esta referencia de mensaje de error proporciona información sobre los errores que se pueden producir al ejecutar el [!DNL Upgrade Compatibility Tool].
 
 Los mensajes de error se clasifican por nivel (problemas críticos, errores y advertencias) y tipo (código principal, código personalizado y esquemas de GraphQL). Cada tipo contiene la siguiente información:
 
