@@ -2,9 +2,9 @@
 title: Planificación de caché eficaz
 description: Consulte los puntos de referencia recomendados para el almacenamiento en caché con el fin de garantizar el éxito del sitio bajo carga.
 exl-id: 275eb21d-fa52-4b97-9453-8f8553128b53
-source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
+source-git-commit: 87e379aff4ec57f15ce914a13b4e9bc2769e6d1c
 workflow-type: tm+mt
-source-wordcount: '354'
+source-wordcount: '357'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Por lo tanto, el paso inicial en la estrategia de almacenamiento en caché deber
 
 | Área de almacenamiento en caché | ¿Con qué frecuencia cambian? | Impacto si el contenido obsoleto se sirve desde la caché | ¿Tiempo de vida (TTL) aceptable en caché? |
 |---------------------------------------------------------------|--------------------|-------------------------------------------|-----------------------------------------------------|
-| Páginas HTML de contenido de sitio actualizadas mediante CMS | Poco frecuentes | Bajo | 1 día |
+| Páginas del HTML de contenido del sitio actualizadas mediante CMS | Poco frecuentes | Bajo | 1 día |
 | Recursos/medios de plantilla de contenido del sitio: logotipo, diseño de CSS, imágenes | Poco frecuentes | Bajo | 1 semana |
 | Páginas de listas de productos (PLP) | Poco frecuentes | Medio | 1 día |
 | Página de detalles del producto (PDP) | A veces | Medio | 1 hora |
@@ -31,4 +31,4 @@ Por lo tanto, el paso inicial en la estrategia de almacenamiento en caché deber
 
 Con esta planificación inicial finalizada, se puede empezar a establecer la configuración técnica para configurar las cachés según estos requisitos.
 
-Incluso si el contenido se actualiza y necesita activarse dentro del TTL de almacenamiento en caché, en la mayoría de los casos es posible borrar manualmente las cachés del despachante de AEM y la caché de Adobe Commerce de forma selectiva para ese contenido, lo que significa que los cambios urgentes se reflejarán inmediatamente. El proceso en torno a la limpieza manual de la caché también debe planificarse y probarse con antelación para que si hay necesidad de forzar manualmente una actualización de algún contenido, entonces se documenta en un runbook de operaciones del sitio y se borre cómo y quién debe estar involucrado para actuar en esto. Aquí se muestra un ejemplo de operación de borrado manual de caché para AEM y comercio de Adobe.
+Incluso si el contenido se actualiza y necesita activarse dentro del TTL de almacenamiento en caché, es posible, en la mayoría de los casos, borrar manualmente las cachés para el [AEM dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=en) y [Adobe Commerce](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cache.html#config-cli-subcommands-cache-clean) almacenar en caché de forma selectiva para ese contenido, lo que significa que los cambios urgentes se reflejarán inmediatamente. El proceso en torno a la limpieza manual de la caché también debe planificarse y probarse con antelación para que si hay necesidad de forzar manualmente una actualización de algún contenido, entonces se documenta en un runbook de operaciones del sitio y se borre cómo y quién debe estar involucrado para actuar en esto.
