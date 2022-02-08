@@ -1,13 +1,13 @@
 ---
-title: Estrategia de integración del comercio de Adobe
+title: Estrategia de integración de Adobe Commerce
 description: Revise las estrategias y opciones de integración para su implementación de Adobe Commerce.
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+exl-id: af7cc59a-3ee2-461a-8489-a35fe0288277
+source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
 workflow-type: tm+mt
-source-wordcount: '518'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
-
 
 # Estrategia de integración de Adobe Commerce
 
@@ -15,11 +15,11 @@ La capacidad de integrar su plataforma es &quot;no negociable&quot;. Las empresa
 
 Las API de GraphQL, las API completas de REST y la importación por lotes de archivos entre Adobe Commerce y otros sistemas o servicios admiten un enfoque de integración holístico tanto para los sistemas de tienda como para los sistemas de back-end.
 
-La API de Adobe Commerce GraphQL proporciona una cobertura completa de tienda que puede utilizar para integrarla con otras tiendas, como:
+La API de Adobe Commerce GraphQL proporciona una completa cobertura de tienda que puede utilizar para integrarla con otras tiendas, entre las que se incluyen:
 
 - Plataformas de experiencia digital (DXP) como Adobe Experience Manager y Bloomscope
 - Sistemas de administración de contenido (CMS) como Drupal y WordPress
-- Moderna aplicación de tienda personalizada, como Adobe Commerce, PWA Studio y Tienda de valores
+- Moderna aplicación de tienda personalizada como Adobe Commerce, PWA Studio y Tienda de valores
 
 GraphQL proporciona una respuesta eficiente y específica del canal, no sobrecarga de datos y una implementación ágil de nuevas funciones de touchpoint. También suele elegirse para integrarse con canales de ventas como aplicaciones nativas para móviles, POS, IoT, canales sociales y canales comerciales de transmisión en directo como Facebook, Google, Instagram, WeChat y TikTok.
 
@@ -39,7 +39,7 @@ Las importaciones de archivos por lotes también se consideran una buena opción
 
 Adobe Commerce ofrece tres opciones de integración flexibles:
 
-- Integración directa de sistema a sistema con conectores pregenerados. Es posible que algunos sistemas ya tengan extensiones de Adobe Commerce en el Commerce Marketplace de Adobe o en su propio sitio web.
+- Integración directa de sistema a sistema con conectores pregenerados. Es posible que algunos sistemas ya tengan extensiones de Adobe Commerce en Adobe Commerce Marketplace o en su propio sitio web.
 
 - Integración de sistema a sistema a través de middleware personalizado. La solución de middleware personalizada implementada se utilizará para la asignación, traducción y administración de datos de procesos.
 
@@ -47,4 +47,4 @@ Adobe Commerce ofrece tres opciones de integración flexibles:
 
 ![Opciones de integración de Adobe Commerce](../../assets/playbooks/integration-options.svg)
 
-Aunque normalmente se desean integraciones en tiempo real, no es necesario para algunos escenarios. Adobe Commerce es compatible de forma nativa con RabbitMQ como el bus de mensajes para habilitar procesos asincrónicos, lo que se recomienda para algunos datos que no son necesarios para intercambiarlos en tiempo real, sino que se actualizan con el intercambio de archivos por lotes o la API de procesamiento de datos por lotes REST para procesarlos asincrónicamente.
+Aunque normalmente se desean integraciones en tiempo real, no es necesario para algunos escenarios. Adobe Commerce admite de forma nativa RabbitMQ como el bus de mensajes para habilitar procesos asincrónicos, lo que se recomienda para algunos datos que no son necesarios para intercambiar en tiempo real, sino que se actualizan con el intercambio de archivos por lotes o la API de procesamiento de datos por lotes de REST para procesarlos asincrónicamente.

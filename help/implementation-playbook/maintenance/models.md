@@ -1,13 +1,13 @@
 ---
 title: Modelos de mantenimiento y asistencia
-description: 'Utilice estos modelos comunes de mantenimiento y asistencia para mantener la implementación de Adobe Commerce sin problemas. '
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+description: Utilice estos modelos comunes de mantenimiento y asistencia para mantener la implementación de Adobe Commerce funcionando sin problemas.
+exl-id: 44469b83-a10b-44c2-8721-9a7daa2733d3
+source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
 workflow-type: tm+mt
-source-wordcount: '501'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
-
 
 # Modelos de mantenimiento y soporte
 

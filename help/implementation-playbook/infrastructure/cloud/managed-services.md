@@ -1,27 +1,27 @@
 ---
 title: Managed Services
-description: Revise las responsabilidades de Adobe Managed Services, los clientes y los proveedores de servicios en la nube para su Adobe Commerce en la implementación de la infraestructura de la nube.
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+description: Revise las responsabilidades de Adobe Managed Services, los clientes y los proveedores de servicios en la nube para su Adobe Commerce en la implementación de la infraestructura en la nube.
+exl-id: b1442e31-06f4-4aa6-b24a-b6cda630d52f
+source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
 workflow-type: tm+mt
-source-wordcount: '521'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
-
 # Servicios administrados
 
-Adobe Commerce en los servicios administrados por la infraestructura de la nube son seguros de forma predeterminada.
+Adobe Commerce en servicios administrados de infraestructura de nube son seguros de forma predeterminada.
 
 ![Diagrama que muestra los servicios administrados de Adobe Commerce](../../../assets/playbooks/managed-services.svg)
 
 ## Responsabilidad compartida
 
-Los planes de Adobe Commerce Pro dependen de un modelo de seguridad de responsabilidad compartida. En este modelo, las diferentes partes tienen diferentes ámbitos de responsabilidad en el mantenimiento de la seguridad del sistema. Este enfoque permite la flexibilidad y el uso de las mejores tecnologías de nube.
+Los planes de Adobe Commerce Pro se basan en un modelo de seguridad de responsabilidad compartida. En este modelo, las diferentes partes tienen diferentes ámbitos de responsabilidad en el mantenimiento de la seguridad del sistema. Este enfoque permite la flexibilidad y el uso de las mejores tecnologías de nube.
 
 ![Diagrama que muestra el modelo de responsabilidad compartida de Adobe Commerce](../../../assets/playbooks/shared-responsibility.svg)
 
-### Responsabilidades de los servicios administrados de Adobe
+### Responsabilidades de Adobe Managed Services
 
 Adobe Managed Services es responsable de la seguridad y disponibilidad del entorno de nube de Adobe Commerce Pro, el código de aplicación principal de Adobe Commerce Pro y los sistemas de comercio internos. Esto incluye, entre otras cosas:
 
@@ -38,9 +38,9 @@ Adobe Managed Services también se encarga de administrar las configuraciones de
 
 ### Responsabilidades de AWS
 
-Adobe Managed Services utiliza Amazon Web Services (AWS) para la infraestructura de servidores en la nube. AWS es responsable de la seguridad de la red, incluyendo enrutamiento, conmutación y seguridad de la red perimetral a través de sistemas de firewall y sistemas de detección de intrusiones (IDS). AWS es responsable de la seguridad física de los centros de datos que administran los entornos de la nube de comercio de Adobe, así como de la seguridad ambiental para garantizar que se implementen los controles adecuados de alimentación, refrigeración y mecanismos.
+Adobe Managed Services utiliza Amazon Web Service (AWS) para la infraestructura de servidores en la nube. AWS es responsable de la seguridad de la red, incluido el enrutamiento, la conmutación y la seguridad de la red perimetral a través de sistemas de firewall y sistemas de detección de intrusiones (IDS). AWS es responsable de la seguridad física de los centros de datos que administran los entornos de la nube de Adobe Commerce, así como de la seguridad ambiental para garantizar que se implementen los controles adecuados de alimentación, refrigeración y mecanismos.
 
-Adobe Commerce Pro planea utilizar:
+Adobe Commerce Pro planea usar:
 
 - Amazon Elastic Compute Cloud (EC2)
 - Amazon Simple Storage Service (S3)
@@ -53,7 +53,7 @@ Amazon tiene un amplio programa de cumplimiento de normas, que incluye certifica
 
 ### Responsabilidades de socios y clientes de la solución
 
-El cliente es el principal responsable de la seguridad de su implementación personalizada de la aplicación de comercio de Adobe que se ejecuta en el entorno de nube de plan de Adobe Commerce Pro. Esto incluye:
+El cliente es el principal responsable de la seguridad de su implementación personalizada de la aplicación de Adobe Commerce que se ejecuta en el entorno de nube de plan de Adobe Commerce Pro. Esto incluye:
 
 - Garantizar una configuración y codificación seguras de las actividades de supervisión de aplicaciones y seguridad, incluidas las pruebas de penetración y los análisis regulares de vulnerabilidades.
 

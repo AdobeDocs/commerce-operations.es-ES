@@ -2,9 +2,9 @@
 title: Recommendations de optimización del rendimiento
 description: Optimice el rendimiento de su implementación de Adobe Commerce siguiendo estas recomendaciones.
 exl-id: c5d62e23-be43-4eea-afdb-bb1b156848f9
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
 workflow-type: tm+mt
-source-wordcount: '1289'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ La búsqueda de DNS es el proceso de búsqueda de la dirección IP a la que pert
 
 ### Red de distribución de contenido (CDN)
 
-Utilice una CDN para optimizar el rendimiento de descarga de recursos. Adobe Commerce utiliza Fray. Si tiene una implementación local de Adobe Commerce, debe considerar la posibilidad de agregar una capa de CDN.
+Utilice una CDN para optimizar el rendimiento de descarga de recursos. Adobe Commerce utiliza Fray. Si tiene una implementación local de Adobe Commerce, también debe considerar la posibilidad de agregar una capa de CDN.
 
 ### Latencia web
 
@@ -103,7 +103,7 @@ Siempre se recomienda realizar pruebas de rendimiento antes de cada versión de 
 
 >[!NOTE]
 >
-> Adobe Commerce en la infraestructura de nube ya aplica todas las optimizaciones de infraestructura y arquitectura anteriores, excepto la búsqueda de DNS porque está fuera de alcance.
+> Adobe Commerce en la infraestructura de la nube ya aplica todas las optimizaciones de infraestructura y arquitectura anteriores, excepto la búsqueda de DNS porque está fuera de alcance.
 
 ### Buscar
 
@@ -111,7 +111,7 @@ Elasticsearch es necesario desde la versión 2.4 de Adobe Commerce, pero tambié
 
 ## Modelos operativos
 
-Además de las recomendaciones comunes de optimización de infraestructura anteriormente mencionadas, también existen enfoques para mejorar el rendimiento para modos y escalas de negocio específicos. Este documento no proporciona instrucciones de ajuste detalladas para todos ellos porque cada escenario es diferente, pero podemos proporcionar algunas opciones de alto nivel para su referencia.
+Además de las recomendaciones comunes de optimización de infraestructura mencionadas anteriormente, también existen enfoques para mejorar el rendimiento para modos y escalas de negocio específicos. Este documento no proporciona instrucciones de ajuste detalladas para todos ellos porque cada escenario es diferente, pero podemos proporcionar algunas opciones de alto nivel para su referencia.
 
 ### Arquitectura sin encabezado
 

@@ -1,13 +1,13 @@
 ---
 title: Listas de comprobación de requisitos
 description: Utilice esta lista de preguntas completas para prepararse para una implementación de Adobe Commerce.
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+exl-id: 9ac485c5-d491-4022-9366-5e3a382513b6
+source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
 workflow-type: tm+mt
-source-wordcount: '1509'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
-
 
 # Listas de comprobación de requisitos
 
@@ -29,7 +29,7 @@ Las siguientes preguntas pueden servir de punto de partida para ver qué informa
 
 - ¿Cuántos de sus analistas técnicos se asignarán a este proyecto?
 
-- ¿Cuántos de sus desarrolladores HTML se asignarán a este proyecto?
+- ¿Cuántos de los desarrolladores HTML se asignarán a este proyecto?
 
 - ¿Qué documentación existe para los procesos comerciales actuales?
 
@@ -45,7 +45,7 @@ Las siguientes preguntas pueden servir de punto de partida para ver qué informa
 
 - ¿Qué formación se completará después de la entrada en funcionamiento?
 
-- ¿Qué soporte de Adobe Commerce se necesitará después del lanzamiento?
+- ¿Qué soporte de Adobe Commerce se necesitará después de la activación?
 
 - ¿Este proyecto depende de otros proyectos de desarrollo del sistema?
 
@@ -55,11 +55,11 @@ Las siguientes preguntas pueden servir de punto de partida para ver qué informa
 
 - ¿De dónde puede ver el crecimiento futuro en su negocio?
 
-- ¿Qué papel desempeña el comercio digital en su estrategia empresarial? ¿Cuáles son sus objetivos principales para configurar esta plataforma ecommerceplatform?
+- ¿Qué papel desempeña el comercio digital en su estrategia empresarial? ¿Cuáles son sus objetivos principales para configurar esta plataforma de comercio electrónico?
 
 - ¿Tiene alguna marca o empresa que tome como referencia para el crecimiento de su negocio omnicanal?
 
-- ¿Qué equipos o personas están conduciendo la estrategia de comercio electrónico? Describa las posiciones relevantes.
+- ¿Qué equipos o personas están impulsando la estrategia de comercio electrónico? Describa las posiciones relevantes.
 
 ## Plataforma actual
 
@@ -139,7 +139,7 @@ Las siguientes preguntas pueden servir de punto de partida para ver qué informa
 
 - ¿Se trata principalmente de un sitio B2C o B2B? ¿Hay algún elemento B2B2B o B2B2C?
 
-- ¿Hay un diseño existente que esté adaptado, o la plataforma se diseñará desde cero?
+- ¿Existe un diseño que se adapte o se diseñará desde cero?
 
 - ¿Existe algún requisito para el comercio sin periféricos (capas de front-end y back-end separadas)?
 
@@ -151,7 +151,7 @@ Las siguientes preguntas pueden servir de punto de partida para ver qué informa
 
 - ¿Cuáles son los idiomas para cada front-end? ¿Está disponible el contenido traducido o se necesita soporte técnico?
 
-- ¿Hay varios sitios web? En caso afirmativo, ¿pueden los clientes utilizar sus credenciales en todos los sitios?
+- ¿Hay varios sitios web? Si es así, ¿pueden los clientes utilizar sus credenciales en todos los sitios?
 
 - ¿Los datos del producto se comparten en todos los sitios?
 
@@ -171,7 +171,7 @@ Las siguientes preguntas pueden servir de punto de partida para ver qué informa
 
 - ¿Qué sistema ERP se integrará con Adobe Commerce? (Ejemplos: SAP, MS Dynamics NAV)
 
-- ¿Qué sistema de transportistas marítimos se integrará con Adobe Commerce?
+- ¿Qué sistema de transportista marítimo se integrará con Adobe Commerce?
 
 - ¿Qué sistema de software fiscal se integrará con Adobe Commerce? (Ejemplo: Taxware)
 
@@ -179,11 +179,11 @@ Las siguientes preguntas pueden servir de punto de partida para ver qué informa
 
 - ¿Frecuencia de carga de datos de productos importados?
 
-- ¿En qué sistema exportará Adobe Commerce datos de productos?
+- ¿En qué sistema exportará Adobe Commerce los datos del producto?
 
 - ¿Frecuencia de carga de datos de productos exportados?
 
-- ¿Desde qué sistema se pedirán los datos importados a Adobe Commerce?
+- ¿Desde qué sistema se importarán los datos en Adobe Commerce?
 
 - ¿Frecuencia de carga de datos de pedidos importados?
 
@@ -285,7 +285,7 @@ Las siguientes preguntas pueden servir de punto de partida para ver qué informa
 
 - Puntos de rebote
 
-- &quot;Bill Me Later&quot; - más comúnmente conocido como &quot;Buy Now, Pay Later&quot; (Cómprate ahora, paga más tarde) ya que es facturado inmediatamente pero aún no pagado
+- &quot;Bill Me Later&quot; - más comúnmente conocido como &quot;Buy Now, Pay Later&quot; (Comprar ahora, Pagar más tarde) ya que es facturado inmediatamente pero aún no pagado
 
 - ¿Habrá diferentes precios de producto en diferentes sitios web?
 
@@ -307,9 +307,9 @@ Las siguientes preguntas pueden servir de punto de partida para ver qué informa
 
 - Carro de compras: Productos en carros, artes abandonadas
 
-- Productos: Bestsellers, productos pedidos, más visitados, más bajos, descargas
+- Productos: Bestsellers, productos pedidos, más visitados, stock bajo, descargas
 
-- Clientes: Nuevas cuentas, clientes por pedidos total, clientes por número de pedidos, segmentos de clientes, revisiones de clientes
+- Clientes: Nuevas cuentas, clientes por pedidos en total, clientes por número de pedidos, segmentos de clientes, revisiones de clientes
 
 - Revisiones de productos
 
@@ -323,7 +323,7 @@ Las siguientes preguntas pueden servir de punto de partida para ver qué informa
 
 - ¿Necesitará Adobe Commerce para generar informes basados en datos de ventas?
 
-- ¿Necesitará puertos comerciales de Adobe personalizados?
+- ¿Necesitará informes personalizados de Adobe Commerce?
 
 - ¿Cuál es su estrategia actual de SEO?
 
@@ -331,7 +331,7 @@ Las siguientes preguntas pueden servir de punto de partida para ver qué informa
 
 - ¿Cuáles son sus requisitos para la migración de SEO?
 
-- Almacene tarifas fijas en Adobe Commerce?
+- ¿Desea almacenar las tarifas fijas en Adobe Commerce?
 
 - ¿Permitir el envío parcial?
 
