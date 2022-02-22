@@ -1,9 +1,9 @@
 ---
 title: Información general sobre [!DNL Upgrade Compatibility Tool]
 description: Obtenga información sobre [!DNL Upgrade Compatibility Tool] y cómo puede ayudarle con su proyecto de Adobe Commerce.
-source-git-commit: 3d9a721e33621b78f03f16b932a1ba2904ae4010
+source-git-commit: e6b6c61aa3fc7c3f22e3a1450b43015f1a7ffed7
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '284'
 ht-degree: 0%
 
 ---
@@ -25,12 +25,16 @@ Consulte la [Instalar](../upgrade-compatibility-tool/install.md) para los primer
 
 ## Ayuda a mejorar el [!DNL Upgrade Compatibility Tool]
 
-Para conectarse con el [!DNL Upgrade Compatibility Tool] equipo, póngase en contacto con nosotros en el canal Slack de ingeniería [[!DNL Upgrade Compatibility Tool]](https://magentocommeng.slack.com/archives/C019Y143U9F).
+Para conectarse con el [!DNL Upgrade Compatibility Tool] equipo, póngase en contacto con nosotros en el canal Slack de ingeniería [[!DNL Upgrade Compatibility Tool]](https://magentocommeng.slack.com/archives/C019Y143U9F). Queremos escuchar sus comentarios, problemas y sugerencias para ayudarnos a mejorar la herramienta.
 
->[!NOTE]
->
->Queremos escuchar sus comentarios, problemas y sugerencias para ayudarnos a mejorar la herramienta.
+La variable [!DNL Upgrade Compatibility Tool] usa reglas definidas dentro de nuestro [Normas de codificación](https://devdocs.magento.com/guides/v2.4/coding-standards/bk-coding-standards.html) para garantizar que el proyecto sigue las prácticas recomendadas de Adobe Commerce y para ayudarle a mejorar y ampliar el [!DNL Upgrade Compatibility Tool].
 
-¿Tiene una idea de cómo mejorar nuestro análisis de compatibilidad? Marque la [Contribute](https://devdocs.magento.com/guides/v2.4/coding-standards/contributing.html) para obtener más información.
+Consulte la [Contribute](https://devdocs.magento.com/guides/v2.4/coding-standards/contributing.html)  para obtener más información sobre cómo contribuir a este proyecto.
 
-Consulte la [Recursos](https://devdocs.magento.com/community/resources/resources.html) para obtener más información.
+## Recursos
+
+Hemos desarrollado los siguientes recursos para ayudarle a comprender las actualizaciones de Adobe Commerce:
+
+- [Guía de actualización](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/overview.html)
+- [Próximas versiones](https://devdocs.magento.com/release/)
+- [Recursos de la comunidad](https://devdocs.magento.com/community/resources/resources.html) para obtener más información.
