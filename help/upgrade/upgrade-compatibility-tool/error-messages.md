@@ -1,15 +1,17 @@
 ---
 title: '"[!DNL Upgrade Compatibility Tool] Mensajes de error"'
 description: Obtenga más información sobre los mensajes de error que encuentra al usar la variable [!DNL Upgrade Compatibility Tool] en su proyecto de Adobe Commerce.
-source-git-commit: 97295df89fda393c8cf8675f8f4be92ac6f38a6a
+source-git-commit: 317a044e66fe796ff66b9d8cf7b308f741eb82c1
 workflow-type: tm+mt
-source-wordcount: '3638'
+source-wordcount: '3639'
 ht-degree: 0%
 
 ---
 
 
 # [!DNL Upgrade Compatibility Tool] mensajes de error
+
+{{commerce-only}}
 
 Esta referencia de mensaje de error proporciona información sobre los errores que se pueden producir al ejecutar el [!DNL Upgrade Compatibility Tool].
 
