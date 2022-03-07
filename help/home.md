@@ -1,0 +1,131 @@
+---
+keywords: Adobe Commerce;inicio;temas populares
+title: Página principal
+description: Examine un índice de la documentación del producto operativo de Adobe Commerce.
+source-git-commit: 60f54a25450a0bba12373c1c53e327358fcdcb35
+workflow-type: tm+mt
+source-wordcount: '209'
+ht-degree: 0%
+
+---
+
+
+# Guías operativas de Adobe Commerce
+
+Esta página proporciona vínculos a todas las guías operativas para Adobe Commerce y Magento Open Source.
+
+## Novedades
+
+Esta sección incluye los cambios recientes que creemos que le gustaría conocer, como los nuevos temas y las actualizaciones significativas de los temas existentes.
+
+| Descripción | Tipo |
+|------------------------------------------------------------------------------------------------------------------------------------|--------------|
+| Se ha añadido [información](upgrade/upgrade-compatibility-tool/overview.md) acerca de cómo se definen las reglas para la herramienta de compatibilidad de actualización. | Actualización principal |
+| Se ha eliminado la herramienta de compatibilidad de actualización obsoleta [códigos de error](upgrade/upgrade-compatibility-tool/error-messages.md). | Técnico |
+
+## Guías
+
+<table>
+<tr>
+  <td valign="top">
+    <a href="https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html">
+      <img alt="Información de la versión" src="assets/icons/promote.svg" width="40" height="40"/>
+    </a>
+    <div>
+      <a href="https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html"><strong>Información de la versión</strong></a>
+    </div>
+  </td>
+  <td valign="top">
+    <a href="https://devdocs.magento.com/guides/v2.4/install-gde/install-flow-diagram.html">
+      <img alt="Instalación" src="assets/icons/servers.svg" width="40" height="40"/>
+    </a>
+    <div>
+      <a href="https://devdocs.magento.com/guides/v2.4/install-gde/install-flow-diagram.html"><strong>Instalación</strong></a>
+    </div>
+  </td>
+  <td valign="top">
+    <a href="https://devdocs.magento.com/guides/v2.4/config-guide/bk-config-guide.html">
+      <img alt="Configuración" src="assets/icons/settings.svg" width="40" height="40"/>
+    </a>
+    <div>
+      <a href="https://devdocs.magento.com/guides/v2.4/config-guide/bk-config-guide.html"><strong>Configuración</strong></a>
+    </div>
+  </td>
+  <td valign="top">
+    <a href="https://devdocs.magento.com/guides/v2.4/migration/bk-migration-guide.html">
+      <img alt="Migración" src="assets/icons/move-to.svg" width="40" height="40"/>
+    </a>
+    <div>
+      <a href="https://devdocs.magento.com/guides/v2.4/migration/bk-migration-guide.html"><strong>Migración</strong></a>
+    </div>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <a href="upgrade/overview.md">
+      <img alt="Actualización" src="assets/icons/download-cloud.svg" width="40" height="40"/>
+    </a>
+    <div>
+      <a href="upgrade/overview.md"><strong>Actualización</strong></a>
+    </div>
+  </td>
+  <td valign="top">
+    <a href="https://devdocs.magento.com/extensions/">
+       <img alt="Extensiones" src="assets/icons/extension.svg" width="40" height="40"/>
+    </a>
+    <div>
+      <a href="https://devdocs.magento.com/extensions/"><strong>Extensiones</strong></a>
+    </div>
+  </td>
+  <td valign="top">
+    <a href="https://devdocs.magento.com/guides/v2.4/performance-best-practices/introduction.html">
+       <img alt="Rendimiento" src="assets/icons/gauge.svg" width="40" height="40"/>
+    </a>
+    <div>
+      <a href="https://devdocs.magento.com/guides/v2.4/performance-best-practices/introduction.html"><strong>Prácticas recomendadas de rendimiento</strong></a>
+    </div>
+  </td>
+  <td valign="top">
+    <a href="https://devdocs.magento.com/quality-patches/tool.html">
+       <img alt="Herramientas" src="assets/icons/wrench.svg" width="40" height="40"/>
+    </a>
+    <div>
+      <a href="https://devdocs.magento.com/quality-patches/tool.html"><strong>Herramientas</strong></a>
+    </div>
+  </td>
+</tr>
+<tr>
+  <td valign="top">
+    <a href="https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html">
+       <img alt="Referencia de herramientas de la línea de comandos" src="assets/icons/page-rule.svg" width="40" height="40"/>
+    </a>
+    <div>
+      <a href="https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html"><strong>Referencia de herramientas de la línea de comandos</strong></a>
+    </div>
+  </td>
+  <td valign="top">
+    <a href="implementation-playbook/overview.md">
+      <img alt="Implementación" src="assets/icons/play.svg" width="40" height="40"/>
+    </a>
+    <div>
+      <a href="implementation-playbook/overview.md"><strong>Guía de implementación</strong></a>
+    </div>
+  </td>
+  <td valign="top">
+    <a href="operational-playbook/overview.md">
+       <img alt="Operaciones" src="assets/icons/refresh.svg" width="40" height="40"/>
+    </a>
+    <div>
+      <a href="operational-playbook/overview.md"><strong>Manual operativo</strong></a>
+    </div>
+  </td>
+  <td valign="top">
+    <a href="operational-playbook/overview.md">
+       <img alt="Empresa" src="assets/icons/enterprise.svg" width="40" height="40"/>
+    </a>
+    <div>
+      <a href="operational-playbook/overview.md"><strong>Comercio a escala</strong></a>
+    </div>
+  </td>
+</tr>
+</table>
