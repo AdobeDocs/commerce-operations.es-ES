@@ -1,7 +1,7 @@
 ---
 title: Ejecute el [!DNL Upgrade Compatibility Tool]
 description: Siga estos pasos para ejecutar el [!DNL Upgrade Compatibility Tool] en su proyecto de Adobe Commerce.
-source-git-commit: 02c42b2b1853da9f73e75a069adcb1ab815e6134
+source-git-commit: ee80753da5327ebf593e007e3b4316e2b01c5a61
 workflow-type: tm+mt
 source-wordcount: '1864'
 ht-degree: 0%
@@ -77,7 +77,7 @@ Disponible `--help` para las `upgrade:check` comando:
 - `--json-output-path[=JSON-OUTPUT-PATH]`: Ruta del archivo donde se exporta la salida en formato json.
 - `--html-output-path[=HTML-OUTPUT-PATH]`: Ruta del archivo donde se exportará el resultado en formato de HTML.
 - `--min-issue-level`: Nivel mínimo del problema que se mostrará en el informe. El valor predeterminado es [ADVERTENCIA].
-- `--ignore-current-version-compatibility-issues`: Utilice esta opción cuando no desee incluir problemas críticos conocidos, errores y advertencias en su [!DNL Upgrade Compatibility Tool] informe.
+- `-i, --ignore-current-version-compatibility-issues`: Utilice esta opción cuando no desee incluir problemas críticos conocidos, errores y advertencias en su [!DNL Upgrade Compatibility Tool] informe.
 - `--context=CONTEXT`: Contexto de ejecución. Esta opción se utiliza con fines de integración y no afecta al resultado de la ejecución.
 - `-h, --help`: Mostrar ayuda para ese comando específico. Si no se proporciona ningún comando, `list` es el resultado predeterminado.
 - `-q, --quiet`: No envíe ningún mensaje mientras ejecuta el comando.
