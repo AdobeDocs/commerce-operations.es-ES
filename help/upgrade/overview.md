@@ -1,7 +1,7 @@
 ---
 title: Descripción general del proceso de actualización
 description: Obtenga información sobre cómo actualizar su proyecto de Adobe Commerce y Magento Open Source ayuda a mantener su tienda segura y funcionando de forma eficaz.
-source-git-commit: 8f983e6791da852350fa061fd3119abcdaa03cbf
+source-git-commit: 18f5e9c96377e0299fdc776a69393f2ceef3618b
 workflow-type: tm+mt
 source-wordcount: '1054'
 ht-degree: 0%
@@ -76,7 +76,7 @@ El continuo crecimiento del espacio de comercio digital ha ejercido una mayor pr
 
 Adobe publica un [programación de versiones](https://devdocs.magento.com/release/) anualmente para facilitar el proceso de planificación de los comerciantes y recomienda actualizar cada ciclo de lanzamiento de parches. Para seguir cumpliendo con PCI, los comerciantes deben estar en el último parche o parche de seguridad. En la siguiente cronología se muestran los principales eventos de lanzamiento y fin de vida útil de 2022.
 
-![](../assets/upgrade-guide/2022-release-timeline.jpg)
+![](../assets/upgrade-guide/2022-release-timeline.png)
 
 Los eventos importantes que debe tener en cuenta son:
 
