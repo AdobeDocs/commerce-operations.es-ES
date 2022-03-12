@@ -2,9 +2,9 @@
 keywords: Adobe Commerce;inicio;temas populares
 title: Página principal
 description: Examine un índice de la documentación del producto operativo de Adobe Commerce.
-source-git-commit: 3637e81bf3951d0130941613d88488405073e7e1
+source-git-commit: 63ceb5bad64a7ed5bce3ad2af76966eb6883d62e
 workflow-type: tm+mt
-source-wordcount: '210'
+source-wordcount: '205'
 ht-degree: 0%
 
 ---
@@ -12,18 +12,7 @@ ht-degree: 0%
 
 # Guías operativas de Adobe Commerce
 
-Esta página proporciona vínculos a todas las guías operativas para Adobe Commerce y Magento Open Source.
-
-## Novedades
-
-La siguiente tabla incluye los cambios recientes que creemos que le gustaría conocer, como temas nuevos y actualizaciones significativas de temas existentes:
-
-| Descripción | Tipo |
-|------------------------------------------------------------------------------------------------------------------------------------|--------------|
-| Se ha añadido [información](../upgrade/upgrade-compatibility-tool/overview.md) acerca de cómo se definen las reglas para la herramienta de compatibilidad de actualización. | Actualización principal |
-| Se ha eliminado la herramienta de compatibilidad de actualización obsoleta [códigos de error](../upgrade/upgrade-compatibility-tool/error-messages.md). | Técnico |
-
-## Guías
+Obtenga información práctica sobre conceptos, procesos, herramientas y prácticas recomendadas para desarrollar, implementar y mantener proyectos de comercio implementados en plataformas de Adobe Commerce y Magento Open Source.
 
 <table>
 <tr>
@@ -63,7 +52,7 @@ La siguiente tabla incluye los cambios recientes que creemos que le gustaría co
 <tr>
   <td valign="top">
     <a href="../upgrade/overview.md">
-      <img alt="Actualización" src="../assets/icons/download-cloud.svg" width="40" height="40"/>
+      <img alt="Actualización" src="../assets/icons/upload-cloud.svg" width="40" height="40"/>
     </a>
     <div>
       <a href="../upgrade/overview.md"><strong>Actualización</strong></a>
@@ -129,3 +118,12 @@ La siguiente tabla incluye los cambios recientes que creemos que le gustaría co
   </td>
 </tr>
 </table>
+
+## Novedades
+
+Obtenga información sobre la nueva documentación y las actualizaciones importantes de la documentación existente.
+
+| Cambiar | Tipo |
+|----------------------------------------------------------------------------------------------------------------------------------------|--------------|
+| Se ha añadido [información](../upgrade/upgrade-compatibility-tool/overview.md) acerca de cómo se definen las reglas para la herramienta de compatibilidad de actualización. | Actualización principal |
+| Se ha eliminado la herramienta de compatibilidad de actualización obsoleta [códigos de error](../upgrade/upgrade-compatibility-tool/error-messages.md). | Técnico |
