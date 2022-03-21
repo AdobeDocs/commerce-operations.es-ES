@@ -4,7 +4,7 @@ description: Revise las responsabilidades de Adobe Managed Services, los cliente
 exl-id: b1442e31-06f4-4aa6-b24a-b6cda630d52f
 source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '521'
 ht-degree: 0%
 
 ---

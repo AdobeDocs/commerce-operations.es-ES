@@ -1,13 +1,13 @@
 ---
 title: Haga clic en y recopile
 description: Siga estas diez sugerencias para ofrecer un clic delicioso y recopilar experiencia para sus clientes.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: 5f5743ac-75a5-41f1-8819-2de088f56387
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '802'
 ht-degree: 0%
 
 ---
-
 
 # Haga clic y recopile
 
@@ -34,13 +34,13 @@ Las empresas deben seguir estas diez sugerencias para ofrecer un buen servicio d
 
 Cuando decida implementar click y collect, las empresas deben considerar cómo planean entregar click y recopilar a los clientes, como los tipos de servicio:
 
-- **Pago en línea y cobro en la tienda**: el usuario paga por el producto en línea y después de confirmar el pago, la tienda notifica al cliente cuando el producto está listo para ser recopilado en función de la selección de la tienda del cliente. Recopilar el pago primero ayuda a reservar el producto.
+- **Pago y cobro en línea en la tienda**: el usuario paga por el producto en línea y una vez confirmado el pago, el almacén notifica al cliente cuando el producto está listo para ser recopilado en función de la selección de la tienda del cliente. Recopilar el pago primero ayuda a reservar el producto.
 
-- **Reservar producto en línea, pago y colección en la tienda**: En este tipo de servicio, el cliente no paga en línea al reservar un producto. En este tipo de servicio, el cliente puede cambiar de opinión y es posible que no compre el producto.
+- **Reservar producto en línea, pago y cobro en tienda**: en este tipo de servicio, el cliente no paga en línea al reservar un producto. En este tipo de servicio, el cliente puede cambiar de opinión y es posible que no compre el producto.
 
 - **Integración**: una vez seleccionado el tipo de entrega, las empresas deben decidir la estructura de integración (dónde se envían los pedidos, dónde se cumplen los pedidos). Las existencias pueden realizarse desde un almacén central o directamente desde tiendas individuales.
 
-- **Devuelve**: las devoluciones pueden ser complejas. Las empresas necesitan tener una estrategia clara para administrar los retornos de productos entregados y productos pedidos mediante clic y recopilación. Las empresas deben permitir que los clientes devuelvan los productos que solicitan mediante clics y recopilaciones para proporcionar un servicio de atención al cliente integral.
+- **Devuelve**: las devoluciones pueden ser complejas. Las empresas necesitan tener una estrategia clara para administrar los retornos de productos entregados y productos pedidos mediante clics y recopilaciones. Las empresas deben permitir que los clientes devuelvan los productos que solicitan mediante clics y recopilaciones para proporcionar un servicio de atención al cliente integral.
 
 ## Promoción
 

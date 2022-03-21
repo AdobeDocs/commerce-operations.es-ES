@@ -1,13 +1,13 @@
 ---
 title: Servicios de software de comercio
 description: Obtenga información sobre las principales diferencias entre las aplicaciones SaaS y otras opciones de comercio electrónico de código abierto (locales) autoalojadas.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: 9be70e1e-76d5-4696-862e-f2b71eb1abb0
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '576'
 ht-degree: 0%
 
 ---
-
 
 # Software como servicio (SaaS)
 
@@ -33,7 +33,7 @@ Las plataformas de comercio electrónico SaaS son soluciones integradas, en las 
 
 ### Mantenimiento
 
-Una de las ventajas principales de una plataforma de comercio electrónico SaaS es el mantenimiento. El proveedor es responsable de alojar y mantener el software, el tiempo de actividad, el rendimiento, las actualizaciones y las correcciones de errores. A su vez, los equipos de comercio electrónico o TI pueden centrarse en desarrollar la base de código de la tienda en línea, mientras que el proveedor SaaS (Adobe Comercio) puede mejorar la infraestructura.
+Una de las ventajas principales de una plataforma de comercio electrónico SaaS es el mantenimiento. El proveedor es responsable de alojar y mantener el software, el tiempo de actividad, el rendimiento, las actualizaciones y las correcciones de errores. A su vez, los equipos de comercio electrónico o TI pueden centrarse en desarrollar la base de código de la tienda en línea, mientras que el proveedor SaaS (Adobe Commerce) puede mejorar la infraestructura.
 
 ### Seguridad y cumplimiento de PCI
 
@@ -49,5 +49,4 @@ Aunque las plataformas de comercio electrónico son el núcleo de la mayoría de
 
 Recomendamos que los minoristas utilicen los mejores sistemas de cría, lo que significa que utilizan el mejor sistema para cada parte de su negocio. La mayoría de las veces, elegir una plataforma para realizar todos los aspectos y funciones de su negocio no cumple con sus expectativas.
 
-En su lugar, las empresas deberían poder usar cualquier cantidad de sistemas para
-sus sistemas ERP, POS, 3PL y ecommerce e integran esos sistemas para sincronizar inventarios, pedidos, clientes, artículos y datos de envío/seguimiento automatizan sus procesos empresariales. Las plataformas SaaS basadas en la nube suelen satisfacer estos requisitos empresariales con flexibilidad y facilidad.
+En su lugar, las empresas deben poder utilizar cualquier cantidad de sistemas para sus sistemas ERP, POS, 3PL y de comercio electrónico e integrar esos sistemas para sincronizar inventarios, pedidos, clientes, artículos y datos de envío/seguimiento automatizando sus procesos de negocio. Las plataformas SaaS basadas en la nube suelen satisfacer estos requisitos empresariales con flexibilidad y facilidad.

@@ -4,7 +4,7 @@ description: Obtenga información sobre lo que hace que el enfoque de arquitectu
 exl-id: eac9d5b1-4917-4d2a-a8af-7f85c825fa0d
 source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '762'
 ht-degree: 0%
 
 ---

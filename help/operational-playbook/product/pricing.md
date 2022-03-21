@@ -1,13 +1,13 @@
 ---
 title: Precio
 description: Conozca los diferentes métodos de pago electrónico y las ventajas de los pagos en línea en general.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: d2dd1a6d-0a75-433e-88cd-74bffcc47594
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '332'
 ht-degree: 0%
 
 ---
-
 
 # Precio
 

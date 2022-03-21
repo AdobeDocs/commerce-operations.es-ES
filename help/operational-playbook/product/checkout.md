@@ -1,13 +1,13 @@
 ---
 title: Flujo y proceso de cierre de compra
 description: Aumente las tasas de conversión al proporcionar a sus clientes una experiencia de cierre de compra perfecta.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: 692236fd-b909-4061-8038-0db19e0ed72b
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '680'
 ht-degree: 0%
 
 ---
-
 
 # Proceso y flujos de cierre de compra
 
@@ -47,7 +47,7 @@ Tenga botones de llamada a acción limpios y en negrita con un diseño de págin
 
 Los clientes que compran en línea siempre están preocupados por la seguridad. Para ofrecer seguridad a los clientes, muestre lo siguiente en el sitio:
 
-- Acreditaciones de credibilidad como Norton seguras, MacAfee seguras y Google Trusted Store
+- Credibilidad acreditaciones como Norton, seguridad de MacAfee y Google Trusted Store
 - Certificados SSL
 - Logotipos del método de pago
 - Clasificaciones y reseñas
@@ -68,7 +68,7 @@ No forzar un tipo de opción en el usuario.
 
 Los minoristas deben proporcionar diferentes métodos de envío para satisfacer las necesidades de los distintos clientes.
 
-Además de las opciones de pago, los minoristas también pueden proporcionar opciones como [click y collect](click-collect.md).
+Además de las opciones de pago, los minoristas también pueden proporcionar opciones como [haga clic y recopile](click-collect.md).
 
 ## Detalles de pago
 

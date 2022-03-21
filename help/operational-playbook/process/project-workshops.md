@@ -1,13 +1,13 @@
 ---
 title: Cursos prácticos sobre proyectos
 description: Conozca los diferentes tipos de talleres de administración que son comunes para los proyectos de comercio electrónico.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: 72e465a0-b965-46a7-b0d0-0ed8a59a4bab
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '692'
 ht-degree: 0%
 
 ---
-
 
 # Cursos prácticos comunes de proyectos
 
@@ -40,7 +40,7 @@ Es esencial incluir un paquete de presentación, un programa propuesto, un enví
 
 ### Asistencia
 
-Es esencial esbozar a los asistentes para el inicio del proyecto. Tener un equipo grande que incluya a todos los desarrolladores y usuarios solo complicará el inicio. Es importante llamar a las partes interesadas clave del lado del cliente, como los patrocinadores del proyecto, el nivel C y el líder del proyecto. En el equipo del proyecto, incluya el administrador de proyectos, el arquitecto funcional, el arquitecto técnico y el posible cliente de participación.
+Es esencial esbozar a los asistentes para el inicio del proyecto. Tener un equipo grande que incluya a todos los desarrolladores y usuarios solo complicará el inicio. Es importante llamar a las partes interesadas clave del lado del cliente, como los patrocinadores del proyecto, el nivel C y el líder del proyecto. Desde el equipo del proyecto, incluya el administrador de proyectos, el arquitecto funcional, el arquitecto técnico y el posible cliente de participación.
 
 ### Temas a tratar
 

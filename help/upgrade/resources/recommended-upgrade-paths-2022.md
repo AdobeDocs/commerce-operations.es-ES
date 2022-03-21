@@ -3,7 +3,7 @@ title: Modernización de la plataforma con Adobe Commerce 2.4.4+
 description: Revise las recomendaciones para planificar la actualización de Adobe Commerce o Magento Open Source en 2022.
 source-git-commit: ddad036c0f2ed5f790136c5c4d6faec38069dbda
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '213'
 ht-degree: 0%
 
 ---

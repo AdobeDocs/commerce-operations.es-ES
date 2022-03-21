@@ -1,13 +1,13 @@
 ---
 title: Listas de comprobación de comercio
 description: Encuentre listas de comprobación útiles para organizar su proyecto de comercio electrónico.
-source-git-commit: 9901503a124011ea8ada6b77a6947b5c5dbadbdf
+exl-id: 4b5e5bca-7b5b-46e7-b3eb-ef6289d238ed
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '70'
 ht-degree: 0%
 
 ---
-
 
 # Listas de comprobación y plantillas de comercio
 

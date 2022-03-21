@@ -1,13 +1,13 @@
 ---
 title: Gateways de pago
 description: Elija un proveedor de pasarelas de pago para su proyecto de comercio electrónico en función de las necesidades de su empresa.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: eab50191-0744-41da-99ba-2e06ea61da27
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '554'
 ht-degree: 0%
 
 ---
-
 
 # Puertas de pago
 
@@ -42,8 +42,7 @@ Cuando una empresa decide integrar una puerta de enlace de pago con su plataform
 
 Las empresas B2B y B2C tienen sistemas de pago similares, pero las empresas B2B tienen más reglas, regulaciones y procesos. Las empresas B2B tienden a operar en grandes volúmenes en comparación con las empresas B2C.
 
-Los clientes de B2C adquieren productos o servicios para uso individual. Los clientes suelen pagar el mismo precio que otros clientes y no hay negociación. Los clientes de B2B incluyen varios
-partes interesadas, lo que hace que la aprobación sea más compleja y costosa.
+Los clientes de B2C adquieren productos o servicios para uso individual. Los clientes suelen pagar el mismo precio que otros clientes y no hay negociación. Los clientes B2B incluyen varias partes interesadas, lo que hace que la aprobación sea más compleja y costosa.
 
 Los clientes B2B tienen diferentes pedidos y requisitos, que deben ser procesados y aprobados por el representante de ventas o un representante de ventas debe estar involucrado cuando un cliente compra en línea mediante una solicitud de propuesta (RFP) o una orden de compra (PO).
 

@@ -1,13 +1,13 @@
 ---
 title: Planificación del comercio
-description: Cree un plan paso a paso para lograr sus objetivos de proyecto de comercio de Adobe.
-source-git-commit: 225ead587fb9f8fbb31442db6cc7ce1826ebb3e8
+description: Cree un plan paso a paso para lograr sus objetivos de proyecto de Adobe Commerce.
+exl-id: b3f7de65-8630-4c5e-8b3b-2ea8c4e1b20a
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '101'
 ht-degree: 0%
 
 ---
-
 
 # Planificación
 

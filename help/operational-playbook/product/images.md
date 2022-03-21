@@ -1,13 +1,13 @@
 ---
 title: Imágenes del producto
 description: Proporcione a sus clientes imágenes y vídeos de productos de alta calidad para aumentar las tasas de conversión.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: 080f177e-f668-4154-8a05-ea4724c29c5f
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '490'
 ht-degree: 0%
 
 ---
-
 
 # Imágenes del producto
 
@@ -51,19 +51,19 @@ Se pueden utilizar diferentes tipos de imágenes según los requisitos del negoc
 
 ## Prácticas recomendadas
 
-- **Demostrar el producto**: si el producto tiene un propósito definido, demuéstrelo para mostrar sus funciones y características.
+- **Demostración del producto**: si el producto tiene un propósito definido, demule el producto para mostrar sus funciones y características.
 
-- **Promocionar imágenes** generadas por el usuario: los usuarios que cargan sus imágenes con el producto como una revisión, lo que motiva a otros compradores a comprar el producto.
+- **Promocionar imágenes generadas por el usuario**—Los usuarios que cargan sus imágenes con el producto como una revisión, lo que motiva a otros compradores a comprar el producto.
 
-- **Vista de 360 grados del producto**: al cargar un vídeo o GIF de 360 grados del producto, se puede proporcionar una vista detallada al cliente y motivarlo a adquirir el producto.
+- **Vista de 360 grados del producto**: al cargar un vídeo de 360 grados o un GIF del producto, se puede proporcionar una vista detallada al cliente y motivarlo a adquirir el producto.
 
-- **Convenciones de nomenclatura**: haga que sea una regla seguir una convención de nombres para la imagen del producto, lo que ayuda a minimizar el error de carga de una imagen incorrecta para un producto y ayuda al equipo a administrar imágenes fácilmente.
+- **Convención de nomenclatura**: convierta en una regla seguir una convención de nombres para la imagen del producto, lo que ayuda a minimizar el error de cargar una imagen incorrecta para un producto y ayuda al equipo a administrar imágenes fácilmente.
 
-- **Carga de página**: no cargue imágenes que aumenten el tiempo de carga de las páginas. Si un cliente debe esperar a que se muestre la imagen, puede que abandone el sitio.
+- **Carga de la página**: no cargue imágenes que aumenten el tiempo de carga de las páginas. Si un cliente debe esperar a que se muestre la imagen, puede que abandone el sitio.
 
-- **Contenido** simple: no complice demasiado el contenido. Intente que el contenido sea sencillo y atractivo, donde el enfoque sea el producto. Por ejemplo, una práctica recomendada es tener la imagen del producto en un fondo blanco para mejorar la imagen del producto.
+- **Contenido simple**: no complice demasiado el contenido. Intente que el contenido sea sencillo y atractivo, donde el enfoque sea el producto. Por ejemplo, una práctica recomendada es tener la imagen del producto en un fondo blanco para mejorar la imagen del producto.
 
-- **Imagen** del producto real: cuando un cliente compra un producto en línea, espera ver el producto tal como está en el sitio web. Evite aplicar filtros o mejorar la imagen para modificar el aspecto del producto. Es importante ser transparente con el cliente; de lo contrario, podría tener una alta tasa de devoluciones.
+- **Imagen del producto real**: cuando un cliente compra un producto en línea, espera ver el producto tal como está en el sitio web. Evite aplicar filtros o mejorar la imagen para modificar el aspecto del producto. Es importante ser transparente con el cliente; de lo contrario, podría tener una alta tasa de devoluciones.
 
 >[!TIP]
 >

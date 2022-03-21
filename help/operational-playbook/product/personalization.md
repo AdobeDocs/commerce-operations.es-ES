@@ -1,13 +1,13 @@
 ---
 title: Personalización
 description: Obtenga información sobre el tipo de personalización de experiencias que debe proporcionar a sus clientes.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: ea829c53-1f98-4e23-90ee-5424a4ef0324
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '338'
 ht-degree: 0%
 
 ---
-
 
 # Personalización
 
@@ -29,17 +29,17 @@ Algunos ejemplos de personalización son:
 
 - **Productos recomendados**: recomiende productos en función del comportamiento de navegación de los clientes.
 
-- **Buscar**: muestra resultados de búsqueda personalizados basados en el comportamiento de búsqueda anterior de un cliente.
+- **Buscar**: permite mostrar resultados de búsqueda personalizados basados en el comportamiento de búsqueda anterior de un cliente.
 
-- **Correo electrónico**: envíe correos electrónicos personalizados sobre productos si un cliente ha dejado el artículo en el carro de compras o si el producto no estaba en existencias. Envíe una notificación cuando vuelva a estar en existencias.
+- **Correo electrónico**: envíe correos electrónicos personalizados sobre productos si un cliente ha dejado el artículo en el carro de compras o si el producto no estaba en existencias, envíe una notificación cuando vuelva a estar en existencias.
 
-- **Ubicación geográfica**: muestra varias ubicaciones geográficas para el sitio. Por ejemplo, un cliente visita el sitio de AU, pero también se muestra la opción del sitio de EE. UU. para que el cliente pueda elegir.
+- **Geolocalización**: permite mostrar varias ubicaciones geográficas para el sitio. Por ejemplo, un cliente visita el sitio de AU, pero también se muestra la opción del sitio de EE. UU. para que el cliente pueda elegir.
 
-- **Código de descuento**: muestra códigos de descuento de categoría específicos para promocionar productos de una categoría en particular.
+- **Código de descuento**: permite mostrar códigos de descuento de categoría específicos para promocionar productos de una categoría en particular.
 
 - **Productos complementarios**: muestra productos complementarios cuando el cliente visita un producto. Por ejemplo, un cliente ve un vestido y puede ver productos complementarios como zapatos, bolsas y accesorios que van con el vestido.
 
-- **Página de inicio personalizada**: muestra una página de inicio personalizada para que un usuario registrado se sienta especial.
+- **Página principal personalizada**: permite mostrar una página de inicio personalizada para que un usuario registrado se sienta especial.
 
 ![Ejemplo de productos personalizados](../../assets/playbooks/personalization-example.png)
 

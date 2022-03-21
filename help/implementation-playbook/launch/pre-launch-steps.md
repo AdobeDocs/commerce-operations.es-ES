@@ -1,13 +1,13 @@
 ---
 title: Pasos previos al lanzamiento
-description: Utilice nuestras listas de comprobación previas al lanzamiento para garantizar una implementación sin problemas del sitio de comercio de Adobe.
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+description: Utilice nuestras listas de comprobación previas al lanzamiento para garantizar una implementación sin problemas del sitio de Adobe Commerce.
+exl-id: bd10881f-0336-4aa4-82ad-4d635010e2e4
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '520'
 ht-degree: 0%
 
 ---
-
 
 # Pasos previos al lanzamiento
 
@@ -39,7 +39,7 @@ Las principales diferencias entre las implementaciones locales y en la nube de A
 
 Para el certificado SSL (TLS), Adobe Commerce en la infraestructura de la nube proporciona un certificado comodín Finfinito. Para empezar a utilizarla, debe pasar la validación: agregue el registro TXT de inicio rápido al nombre de dominio de ápex dentro de la configuración DNS. El registro TXT FAdministración se encuentra en la hoja de cálculo de incorporación; de lo contrario, deberá enviar un ticket de soporte para obtenerlo. Reemplace este texto por sus preguntas/comentarios aquí. Si utiliza su propio certificado SSL (TLS) en lugar de un certificado comodín FIENE, envíe un vale de asistencia con el certificado adjunto a la configuración.
 
-Adobe Commerce en la infraestructura de la nube proporciona la funcionalidad SendGrid Mail para sus correos electrónicos transaccionales. Para planes Pro, debe agregar registros SendGrid a la configuración DNS. Los registros de SendGrid se pueden encontrar en la hoja de cálculo de incorporación, de lo contrario, SI o el comerciante deben enviar tickets de soporte para obtenerlos. Para empezar, no es necesario realizar ningún cambio en el DNS; SendGrid está preconfigurado para usted.
+Adobe Commerce en la infraestructura de nube proporciona la funcionalidad SendGrid Mail para sus correos electrónicos transaccionales. Para planes Pro, debe agregar registros SendGrid a la configuración DNS. Los registros de SendGrid se pueden encontrar en la hoja de cálculo de incorporación, de lo contrario, SI o el comerciante deben enviar tickets de soporte para obtenerlos. Para empezar, no es necesario realizar ningún cambio en el DNS; SendGrid está preconfigurado para usted.
 
 ## Lista de comprobación completa previa al lanzamiento
 
@@ -49,7 +49,7 @@ La lista de comprobación completa previa al lanzamiento muestra todas las activ
 - Se han proporcionado los nombres de dominio correctos
 - Se han probado los correos electrónicos salientes
 - El certificado SSL está aprovisionado y configurado
-- La configuración importante de la aplicación de comercio de Adobe se actualiza correctamente
+- La configuración importante de la aplicación Adobe Commerce se actualiza correctamente
 - Las direcciones URL base y la URL de administración base se establecen correctamente en el nombre de host final
 - Se han cambiado las contraseñas de los administradores
 - Se eliminan todos los usuarios con acceso a la aplicación que ya no requieran acceso

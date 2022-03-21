@@ -1,13 +1,13 @@
 ---
 title: Servicio al cliente
 description: Un buen servicio al cliente puede ser una ventaja competitiva en el espacio de comercio electrónico.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: ef798b1b-96d0-493e-b125-1d67aa7644a1
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '482'
 ht-degree: 0%
 
 ---
-
 
 # Servicio al cliente
 
@@ -17,7 +17,7 @@ El comercio electrónico se basa digitalmente y el único equipo que interactúa
 
 Los minoristas deben ser proactivos en términos de servicio al cliente porque no solo está en juego el nombre de la marca, sino que, lo que es más importante, es la lealtad del cliente. Para que los minoristas tengan éxito al proporcionar la mejor experiencia al cliente, existen algunas prácticas recomendadas que pueden seguir:
 
-- **Canal** de compatibilidad múltiple: la provisión de servicios solo por correo electrónico o por teléfono no es suficiente en la era actual. El servicio al cliente debe proporcionarse en varios canales, como charlas en directo, correos electrónicos, llamadas telefónicas, medios sociales y mensajes de texto. Cada uno de ellos tiene sus propios pros y contras que los minoristas deben analizar.
+- **Canal de compatibilidad múltiple**: el suministro de servicio por correo electrónico o por teléfono no es suficiente en la era actual. El servicio al cliente debe proporcionarse en varios canales, como charlas en directo, correos electrónicos, llamadas telefónicas, medios sociales y mensajes de texto. Cada uno de ellos tiene sus propios pros y contras que los minoristas deben analizar.
 
 - **Servicio personalizado**: toda la actividad de los clientes se realiza en línea, y los minoristas pueden realizar un seguimiento para comprender el comportamiento de los clientes. Por ejemplo, cuando un cliente contacta con el equipo de Servicio al cliente, este tendrá su información de antemano, como su nombre, dirección de correo electrónico, historial de pedidos y devoluciones. Esto ayuda al Servicio al cliente a proporcionar un servicio rápido y preciso, y también ofrece a los clientes un servicio personalizado.
 

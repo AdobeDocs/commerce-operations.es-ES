@@ -1,13 +1,13 @@
 ---
 title: Equipos
 description: Obtenga información sobre los distintos tipos de equipos que hacen que los proyectos de comercio electrónico tengan éxito.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: b1a007b2-49ff-475f-9ad7-5fa100cdfa3b
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '1224'
 ht-degree: 0%
 
 ---
-
 
 # Equipos
 
@@ -87,8 +87,8 @@ Cuando inicie un proyecto de comercio electrónico, tenga en cuenta el nivel C y
 
 Hay otros equipos que forman parte de un equipo existente o son independientes, entre ellos:
 
-- **Equipo** de contenido: deben alinearse con todos los equipos para crear contenido eficaz. El contenido del sitio requiere actualizaciones regulares. El equipo de Contenido es responsable de configurar el contenido de la página del producto, las páginas de categorías, el blog y el pie de página, lo que atrae el tráfico del sitio y aumenta la tasa de conversión.
+- **Equipo de contenido**: deben alinearse con todos los equipos para crear contenido eficaz. El contenido del sitio requiere actualizaciones regulares. El equipo de Contenido es responsable de configurar el contenido de la página del producto, las páginas de categorías, el blog y el pie de página, lo que atrae el tráfico del sitio y aumenta la tasa de conversión.
 
-- **Equipo de datos**: los sitios de comercio electrónico generan una gran cantidad de datos que se pueden recopilar y analizar, incluida la información de los clientes, los hábitos de gasto, los productos populares y el tiempo que el sitio tiene más tráfico. El equipo de datos procesa toda esta información para obtener información sobre cómo está funcionando el sitio y dónde es necesario mejorarlo. El equipo de datos puede recomendar las tendencias que se avecinan y el centro de atención de la empresa.
+- **Equipo de datos**: los sitios de comercio electrónico generan una gran cantidad de datos que puede recopilar y analizar, incluida la información de los clientes, los hábitos de gasto, los productos populares y el tiempo que el sitio tiene más tráfico. El equipo de datos procesa toda esta información para obtener información sobre cómo está funcionando el sitio y dónde es necesario mejorarlo. El equipo de datos puede recomendar las tendencias que se avecinan y el centro de atención de la empresa.
 
-- **Equipo** de finanzas y contabilidad: algunas empresas tienen un pequeño equipo de finanzas y contabilidad, que puede ser interno o externo. Se centran en la presupuestación, la previsión y la gestión del aspecto financiero de la configuración y la gestión de un sitio de comercio electrónico.
+- **Equipo de finanzas y contabilidad**—Algunas empresas tienen un pequeño equipo de finanzas y contabilidad, que puede ser interno o externo. Se centran en la presupuestación, la previsión y la gestión del aspecto financiero de la configuración y la gestión de un sitio de comercio electrónico.

@@ -1,13 +1,13 @@
 ---
 title: Informes y tableros
-description: 'Monitorice los KPI, rastree las ventas y mida el éxito del sitio de comercio electrónico con informes y tableros. '
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+description: Monitorice los KPI, rastree las ventas y mida el éxito del sitio de comercio electrónico con informes y tableros.
+exl-id: 7b57c11b-ff32-440f-85bd-6b6d09c522b7
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '497'
 ht-degree: 0%
 
 ---
-
 
 # Informes y tableros
 
@@ -37,13 +37,13 @@ En un negocio de comercio electrónico sucede tanto que puede ser difícil segui
 
 Los cuatro informes y tableros principales que utilizan las empresas B2B son:
 
-- **Perfil de la empresa**: las empresas B2B necesitan rastrear los perfiles de su empresa cliente para comprender su historial de compras, los detalles de pagos y qué canal compraban. Este panel puede ayudar a identificar posibles riesgos y problemas.
+- **Perfil de la empresa**—Las empresas B2B necesitan rastrear los perfiles de sus empresas clientes para comprender su historial de compras, detalles de pagos y qué canal compraban. Este panel puede ayudar a identificar posibles riesgos y problemas.
 
 - **Catálogo**: un tablero e informe de catálogo ayuda a las empresas B2B a ver el rendimiento de cada producto en los niveles de catálogo, promociones e inventario, lo que ayuda a identificar qué tipo de promoción funciona mejor y qué productos están en demanda. Esto ayuda a las empresas a hacer inventario y obtener una ventaja competitiva.
 
-- **Comillas**: el modelo de negocio B2B funciona sobre cotizaciones y precios. Las empresas B2B deben pasar por un proceso en el que analicen una cotización para que puedan aprobarla o intentar negociar. Un tablero e informe de presupuesto le ayuda a mejorar la tasa de conversión de sus presupuestos mediante el seguimiento de la tasa de éxito, las tasas de competencia, el rendimiento y la retención general de clientes.
+- **Comillas**: el modelo de negocio B2B funciona con cotizaciones y precios. Las empresas B2B deben pasar por un proceso en el que analicen una cotización para que puedan aprobarla o intentar negociar. Un tablero e informe de presupuesto le ayuda a mejorar la tasa de conversión de sus presupuestos mediante el seguimiento de la tasa de éxito, las tasas de competencia, el rendimiento y la retención general de clientes.
 
-- **Ventas**: aunque las empresas B2B pueden trabajar en línea, sigue siendo necesario contar con un representante de ventas para que las cosas cambien en términos de identificación de cotizaciones que necesitan negociación, seguimiento de cotizaciones que están a punto de caducar, seguimiento de contratos que están listos para renovarse, seguimiento del rendimiento del equipo y ayuda a racionalizar las actividades comerciales diarias.
+- **Ventas**: a pesar de que las empresas B2B pueden trabajar en línea, sigue siendo necesario contar con un representante de ventas para que las cosas cambien en términos de identificación de cotizaciones que necesitan negociación, seguimiento de cotizaciones que están a punto de caducar, seguimiento de contratos que están listos para renovarse, seguimiento del rendimiento del equipo y ayuda a optimizar las actividades comerciales diarias.
 
 ## Mejor juntos
 

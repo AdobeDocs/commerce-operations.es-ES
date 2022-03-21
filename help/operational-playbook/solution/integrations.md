@@ -1,13 +1,13 @@
 ---
 title: Integraciones de comercio
 description: Equipe a su equipo con las herramientas que necesita para deleitar a sus clientes y garantizar operaciones diarias sin problemas.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: 52bfa6c7-0687-45de-8889-c529cea7d01a
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '295'
 ht-degree: 0%
 
 ---
-
 
 # Integraciones de terceros
 
@@ -15,8 +15,7 @@ La mayoría de las empresas entienden que muchas estrategias y procesos únicos 
 
 La mayoría de las necesidades operacionales se pueden satisfacer utilizando diferentes plataformas de software, entre ellas ERP, marketplace, herramientas de inteligencia empresarial, software de contabilidad, grupos de informes y muchos más. El software adicional se selecciona para reducir el tiempo y esfuerzo de la organización y optimizar al mismo tiempo la experiencia del cliente y las operaciones comerciales.
 
-Al seleccionar un proveedor de terceros, las empresas deben utilizar un
-y un enfoque eficaz para la integración que satisfaga sus necesidades. Después de comprender las necesidades de los clientes, decida un plan detallado con la ayuda del interesado. Después de decidir el plan, configure un documento de especificación que defina cómo se comunica el sistema y qué tipo de datos se requiere y se pasa al tercero.
+Al seleccionar un proveedor de terceros, las empresas deben utilizar un enfoque simple y eficaz para la integración que satisfaga sus necesidades. Después de comprender las necesidades de los clientes, decida un plan detallado con la ayuda del interesado. Después de decidir el plan, configure un documento de especificación que defina cómo se comunica el sistema y qué tipo de datos se requiere y se pasa al tercero.
 
 >[!NOTE]
 >

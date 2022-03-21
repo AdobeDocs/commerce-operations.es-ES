@@ -1,17 +1,17 @@
 ---
 title: Deliverables
 description: Obtenga información sobre los diferentes entregables asociados a una implementación de Adobe Commerce.
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+exl-id: 6f5e603b-bbe5-411d-ad72-696cb4eae246
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '266'
 ht-degree: 0%
 
 ---
 
-
 # Deliverables
 
-El proceso de detección identifica los resultados específicos de la implementación de Adobe Commerce. Consulte las secciones siguientes para obtener más información.
+El proceso de detección identifica los entregables de implementación específicos de Adobe Commerce. Consulte las secciones siguientes para obtener más información.
 
 ## Requisitos empresariales
 
@@ -19,7 +19,7 @@ Este documento captura las aprobaciones de requisitos comerciales para especific
 
 ## Diagrama del sistema
 
-Un diagrama de sistemas debería mostrar datos (por ejemplo, pedidos, productos, integraciones de terceros) que fluyan hacia y desde los diversos sistemas involucrados (Adobe Comercio, OMS, ESP, proveedores de pagos).
+Un diagrama de sistemas debería mostrar datos (por ejemplo, pedidos, productos, integraciones de terceros) que fluyan hacia y desde los distintos sistemas involucrados (Adobe Commerce, OMS, ESP, proveedores de pagos).
 
 ## Especificaciones técnicas
 
@@ -31,11 +31,11 @@ Un documento de asignación de datos abarca categorías, productos, recomendacio
 
 ## Diagrama de flujo
 
-Muestra los flujos de usuario para procesos únicos y/o críticos, especialmente cuando se personalizan a partir del comportamiento de comercio de Adobe estándar.
+Muestra los flujos de usuario para procesos únicos o críticos, especialmente cuando se personalizan a partir del comportamiento estándar de Adobe Commerce.
 
 ## Ámbito y proveedores
 
-Esta es una lista completa de proveedores de terceros nombrados que se integrarán en la solución de comercio de Adobe.
+Esta es una lista completa de proveedores de terceros nombrados que se integrarán en la solución Adobe Commerce.
 
 ## Datos del producto
 
@@ -43,4 +43,4 @@ Una revisión de los productos, precios y datos de inventario existentes de una 
 
 ## Plan del proyecto
 
-Un plan de proyecto detalla las tareas de alto nivel y los plazos asociados con la iniciativa de implementación, incluidas las integraciones superpuestas y las dependencias de terceros. El plan también puede incluir una matriz de responsabilidades, o [RACI](../planning/ownership.md), un gráfico que muestre quién es responsable, responsable, consultado e informado.
+Un plan de proyecto detalla las tareas de alto nivel y los plazos asociados con la iniciativa de implementación, incluidas las integraciones superpuestas y las dependencias de terceros. El plan también puede incluir una matriz de responsabilidades, o [RACI](../planning/ownership.md), gráfico que muestra quién es responsable, responsable, consultado e informado.

@@ -4,7 +4,7 @@ description: Obtenga información sobre cómo mantener Adobe Commerce seguro en 
 exl-id: cd5d1106-c8db-4b70-b1c7-12378d7d77a7
 source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1639'
 ht-degree: 0%
 
 ---

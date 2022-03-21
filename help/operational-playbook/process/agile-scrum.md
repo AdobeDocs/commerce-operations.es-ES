@@ -1,13 +1,13 @@
 ---
 title: Metodología de análisis
 description: Descubra cómo la combinación de metodologías Agile y Scrum puede ayudar a acelerar su proyecto de comercio electrónico.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: 2c46acad-bff9-4a9f-acfb-622ffbf97288
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '262'
 ht-degree: 0%
 
 ---
-
 
 # Metodología de Agile Scrum
 
@@ -19,12 +19,12 @@ Scrum anima a los equipos autoorganizados y multifuncionales a resolver los prob
 
 En la metodología Scrum, hay varias reuniones que se utilizan para impulsar la transparencia y el progreso en un proyecto de comercio electrónico:
 
-- **Planificación de Sprint**: una reunión de planificación en la que los integrantes del equipo se reúnen para decidir cuánto trabajo se puede completar en un sprint.
+- **Planificación de impresión**: una reunión de planificación en la que los integrantes del equipo se reúnen para decidir cuánto trabajo se puede completar en un sprint.
 
-- **Examen diario**: una reunión de 15 minutos se utilizó para compartir actualizaciones sobre en qué está trabajando cada miembro del equipo.
+- **Examen diario**: reunión de 15 minutos en la que se compartieron actualizaciones sobre el trabajo de cada miembro del equipo.
 
-- **Revisión de Sprint**: una reunión que se utilizó para demostrar el progreso de la sprint.
+- **Revisión de Sprint**—Una reunión que se utilizó para demostrar el progreso del sprint.
 
-- **Retrospectiva de Sprint**: una reunión que se utilizó para reflexionar sobre el modelo anterior y para identificar oportunidades de mejora.
+- **Retrospectiva de Sprint**:: Una reunión que se utilizó para reflexionar sobre el modelo anterior y para identificar oportunidades de mejora.
 
 Al final de cada sprint, se debe entregar y publicar un incremento de valor (por ejemplo, nuevas funciones, correcciones de errores, actualizaciones o actualizaciones generales de código) a los clientes.

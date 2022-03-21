@@ -1,13 +1,13 @@
 ---
 title: Servicios de plataforma de comercio
 description: Revise las ventajas y desventajas de utilizar soluciones de PaaS para su infraestructura de alojamiento para determinar qué es lo adecuado para su proyecto de comercio electrónico.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: 071e6e9b-6874-4d08-90b4-036d6cdca4c2
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '368'
 ht-degree: 0%
 
 ---
-
 
 # Plataforma como servicio (PaaS)
 
@@ -17,9 +17,9 @@ PaaS se proporciona como un servicio alojado en la infraestructura del proveedor
 
 PaaS trabaja en nubes privadas, públicas e híbridas:
 
-- **Private cloud**: PaaS se entrega dentro del cortafuegos del cliente para su seguridad, donde los datos se almacenan en las instalaciones.
+- **Nube privada**: PaaS se entrega dentro del cortafuegos del cliente para seguridad, donde los datos se almacenan en las instalaciones.
 - **Nube pública**: el cliente controla las implementaciones y el proveedor es responsable de todos los demás componentes, como la red y el sistema operativo.
-- **Nube híbrida**: híbrida combina las funciones tanto privadas como públicas para que el cliente pueda tener flexibilidad.
+- **Nube híbrida**: híbrido combina las funciones tanto privadas como públicas para que el cliente pueda tener flexibilidad.
 
 ## Ventajas
 
@@ -39,8 +39,7 @@ PaaS trabaja en nubes privadas, públicas e híbridas:
 
 - Podría suponer una amenaza para la seguridad, ya que todo está almacenado en la nube
 - Dependiente del proveedor de servicios
-- Si el proveedor experimenta un tiempo de inactividad, sería un problema para el
-cliente
+- Si el proveedor experimenta un tiempo de inactividad, sería un problema para el cliente
 - Permite actualizaciones rápidas y sencillas
 
 Cuando el cliente utiliza PaaS en el comercio electrónico, no necesita administrar el sistema y el software operativo. El cliente dispone de una plataforma para configurar su sitio de comercio electrónico, donde crea y configura contenido, datos de código y productos. que es independiente del lado de administración de las cosas relacionadas con PaaS.

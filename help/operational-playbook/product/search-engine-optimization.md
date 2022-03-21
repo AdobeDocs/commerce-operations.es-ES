@@ -1,13 +1,13 @@
 ---
 title: Optimización del motor de búsqueda (SEO)
 description: Obtenga información sobre las principales diferencias entre las campañas de SEO B2B y B2C.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: 7b1348b5-d379-48c1-9e9d-71a8d02b2ca4
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '243'
 ht-degree: 0%
 
 ---
-
 
 # Optimización del motor de búsqueda (SEO)
 
@@ -17,7 +17,7 @@ La optimización de los motores de búsqueda (SEO) es una herramienta que le ayu
 
 Consulte los resultados descritos en rojo en la siguiente imagen:
 
-![Resultados de búsqueda en Google de SEO no pagados](../../assets/playbooks/seo-unpaid.png)
+![Resultados de búsqueda de SEO Google no pagados](../../assets/playbooks/seo-unpaid.png)
 
 ## Pagado
 
@@ -25,21 +25,21 @@ Consulte los resultados descritos en naranja en la siguiente imagen:
 
 >[!NOTE]
 >
->Compras de Google delineadas en morado.
+>Compra de Google con un perfil morado.
 
-![Resultados de búsqueda de SEO de pago en Google](../../assets/playbooks/seo-paid.png)
+![Resultados de búsqueda de SEO Google de pago](../../assets/playbooks/seo-paid.png)
 
 ## Estrategias
 
 La estrategia SEO incluye:
 
-- **Búsqueda de palabras clave**: palabras clave utilizadas por los clientes para buscar
+- **Búsqueda de palabras clave**—Palabras clave utilizadas por los clientes para buscar
 
-- **Arquitectura del sitio**: la investigación se realiza sobre las palabras clave
+- **Arquitectura del sitio**: la investigación se realiza sobre las palabras clave.
 
-- **SEO (técnico)**: garantizar que SEO rastree el sitio
+- **SEO (técnico)**—Garantizar que SEO rastree el sitio
 
-- **SEO en la página**: se utilizan metaetiquetas y contenido para atraer clientes
+- **SEO en la página**: las etiquetas meta y el contenido se utilizan para atraer clientes
 
 - **Analytics**: las herramientas, como los Google Analytics, se utilizan para realizar el seguimiento de SEO
 

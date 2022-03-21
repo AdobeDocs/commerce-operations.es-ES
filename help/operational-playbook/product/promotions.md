@@ -1,13 +1,13 @@
 ---
 title: Promociones
 description: Cree una estrategia de marketing para promocionar sus productos a sus clientes.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: 3b1cf7ab-6a24-40eb-b504-c19e3a064231
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '199'
 ht-degree: 0%
 
 ---
-
 
 # Promociones
 

@@ -1,18 +1,17 @@
 ---
 title: Administración de pedidos
 description: Descubra cómo un sistema de gestión de pedidos es esencial para su negocio de comercio electrónico.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: 62edc895-d725-4252-9a43-e03427579444
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '426'
 ht-degree: 0%
 
 ---
 
-
 # Gestión de pedidos
 
-Para las empresas nuevas, los niveles de pedidos son bajos y es más fácil
-complete pedidos a un menor costo. Sin embargo, cuando la demanda aumenta los pedidos aumentan y resulta difícil manejarlos con un equipo pequeño o por usted mismo a un costo menor. Es posible que necesite instalaciones más grandes, como un almacén o más de un almacén, dependiendo de la naturaleza del negocio, lo que puede ser costoso y requiere más personal. Aquí es donde la gestión de pedidos entra en escena.
+Para las empresas nuevas, los niveles de pedidos son bajos y es más fácil realizar pedidos a un costo menor. Sin embargo, cuando la demanda aumenta los pedidos aumentan y resulta difícil manejarlos con un equipo pequeño o por usted mismo a un costo menor. Es posible que necesite instalaciones más grandes, como un almacén o más de un almacén, dependiendo de la naturaleza del negocio, lo que puede ser costoso y requiere más personal. Aquí es donde la gestión de pedidos entra en escena.
 
 La gestión de pedidos ayuda a satisfacer los cambiantes requerimientos operativos para administrar la demanda, el inventario, el empaquetado y el envío. La integración de un sistema de gestión de pedidos con la plataforma puede ayudar a las empresas a satisfacer sus cambiantes necesidades y aumentar la satisfacción del cliente, la retención de clientes, las tasas de conversión más altas y la lealtad de marca. Todos estos factores afectan directa e indirectamente el rendimiento y el crecimiento de los ingresos de su negocio.
 

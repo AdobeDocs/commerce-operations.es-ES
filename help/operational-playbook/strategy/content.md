@@ -1,13 +1,13 @@
 ---
 title: Estrategia de contenido
 description: Aproveche el contenido para crear campañas atractivas que atraigan a sus clientes.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: fabfed9e-63ff-4be3-8bb7-192ccdb9dde6
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '449'
 ht-degree: 0%
 
 ---
-
 
 # Estrategia de contenido
 
@@ -37,10 +37,10 @@ Ya sea que administre contenido web básico o contenido que se va a publicar en 
 
 Adobe Experience Manager combina una serie de funciones a nivel de infraestructura y de aplicación en un único paquete integrado. La oferta se dirige a:
 
-- **Sitios**: cree y distribuya rápidamente sitios web y aplicaciones móviles relevantes y actualice el contenido en cualquier momento sin sobrecargar a su departamento de TI.
+- **Sitios**: cree y distribuya rápidamente sitios web y aplicaciones móviles relevantes y actualice el contenido en cualquier momento sin sobrecargar su departamento de TI.
 - **Recursos**: administre fácilmente imágenes, vídeos y otros recursos en todos los canales digitales para ofrecer experiencias personalizadas para los clientes.
-- **Comunidades**: cree comunidades prósperas y conversaciones atractivas en todas sus propiedades sociales para que pueda inspirar nuevos niveles de aprendizaje y lealtad de los clientes.
+- **Comunidades**: genere comunidades prósperas y conversaciones atractivas en todas sus propiedades sociales para que pueda inspirar nuevos niveles de aprendizaje y lealtad del cliente.
 - **Forms**: integre formularios de nivel empresarial en sus sitios web y experiencias móviles y simplifique la creación de formularios y la finalización de transacciones.
-- **Aplicaciones**: cree y distribuya aplicaciones móviles con una solución que elimine la brecha entre los especialistas en marketing y TI, de modo que los especialistas en marketing puedan actualizar fácilmente el contenido (incluso después del lanzamiento).
+- **Aplicaciones**: cree y distribuya aplicaciones móviles con una solución que acorte la brecha entre los especialistas en marketing y TI para que los especialistas en marketing puedan actualizar fácilmente el contenido (incluso después del lanzamiento).
 
 ![Diagrama del marco de la estrategia de contenido](../../assets/playbooks/content-strategy-framework2.png)

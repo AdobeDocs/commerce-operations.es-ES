@@ -1,13 +1,13 @@
 ---
 title: Funciones y responsabilidades
 description: Obtenga información sobre las diferentes funciones y responsabilidades involucradas en un proyecto de comercio electrónico exitoso.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: 6e61dcce-ad71-4380-bae4-48be1a3d88b9
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '1170'
 ht-degree: 0%
 
 ---
-
 
 # Funciones y responsabilidades
 
@@ -136,6 +136,6 @@ El equipo de contenido es responsable de:
 
 - **Actualización de contenido**: el contenido del sitio web debe estar actualizado. Si el sitio consta de contenido obsoleto, esto afecta a la experiencia del cliente y aumenta la carga de trabajo del equipo de Servicio al cliente. Por ejemplo, deben responder a las preguntas de los clientes a las que el contenido del sitio web debería haber respondido.
 
-- **Simplificar el contenido**: el equipo de contenido necesita crear contenido simple y directo. El lenguaje simple funciona mejor cuando se interactúa con los clientes.
+- **Simplificación del contenido**: el equipo de contenido debe crear contenido sencillo y directo. El lenguaje simple funciona mejor cuando se interactúa con los clientes.
 
 El equipo de contenido crea, prueba, administra y optimiza todo el contenido del sitio web, lo que aporta el retorno de la inversión.

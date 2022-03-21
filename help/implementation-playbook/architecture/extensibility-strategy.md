@@ -4,7 +4,7 @@ description: Descubra cómo el modelo de extensibilidad de Adobe Commerce le per
 exl-id: fac4630d-8a41-40dc-899a-01eabceaa61e
 source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '48'
 ht-degree: 0%
 
 ---

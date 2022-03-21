@@ -1,13 +1,13 @@
 ---
 title: Resumen de mantenimiento y asistencia
 description: Mantenga y admita correctamente la implementación de Adobe Commerce recién lanzada.
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+exl-id: 5a104148-74f1-469b-84ca-9bce740a7865
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '441'
 ht-degree: 0%
 
 ---
-
 
 # Resumen de mantenimiento y asistencia
 

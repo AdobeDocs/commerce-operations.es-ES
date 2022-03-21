@@ -1,13 +1,13 @@
 ---
 title: Acuerdos de nivel de servicio
-description: Obtenga información sobre los acuerdos de nivel de servicio y cómo utilizarlos para admitir la implementación de Adobe Commerce.
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+description: Obtenga información sobre los acuerdos de nivel de servicio y cómo utilizarlos para admitir su implementación de Adobe Commerce.
+exl-id: 5da42dfa-e165-4142-a863-6f3ce7689478
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '226'
 ht-degree: 1%
 
 ---
-
 
 # Acuerdos de nivel de servicio (SLA)
 

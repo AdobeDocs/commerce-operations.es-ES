@@ -4,7 +4,7 @@ description: Ser capaz de diferenciar entre microservicios y sin periféricos en
 exl-id: 078e0e8e-7acc-4913-8b78-585a950f3f5e
 source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '294'
 ht-degree: 0%
 
 ---

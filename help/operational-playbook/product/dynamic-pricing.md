@@ -1,13 +1,13 @@
 ---
 title: Administración dinámica de precios
 description: Obtenga una ventaja competitiva creando una estrategia para cambiar los precios de los productos de forma dinámica en función de las condiciones del mercado.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: 913dba96-d939-4e9a-b382-f22c6669fed1
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '486'
 ht-degree: 0%
 
 ---
-
 
 # Administración dinámica de precios
 
@@ -15,11 +15,11 @@ Los precios dinámicos son una estrategia de precios adaptable en la que los pre
 
 Existen tres factores que impulsan la fijación dinámica de precios, entre los que se incluyen:
 
-- **Industria**: los minoristas deben comprobar cuál es el precio más básico de un producto, entre otras marcas.
+- **Industria**—Los comerciantes deben comprobar cuál es el precio más básico de un producto, entre otras marcas.
 
-- **Mercado**: ¿Cuál es la oferta y la demanda actuales? ¿Cuál es la oferta y la demanda previstas?
+- **Mercado**— ¿Cuál es la oferta y la demanda actuales? ¿Cuál es la oferta y la demanda previstas?
 
-- **Clientes**: ¿Cuál es el comportamiento de compra del cliente? ¿Cuál es el precio que el cliente está dispuesto a pagar por un producto?
+- **Clientes**—¿Cuál es el comportamiento de compra del cliente? ¿Cuál es el precio que el cliente está dispuesto a pagar por un producto?
 
 Debe observar cada aspecto al trabajar en una estrategia de precios dinámica.
 

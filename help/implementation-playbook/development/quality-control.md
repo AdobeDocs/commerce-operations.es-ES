@@ -1,13 +1,13 @@
 ---
 title: Control de calidad
-description: Obtenga información sobre los procesos de control de calidad del comercio de Adobe relacionados con los proyectos de implementación.
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+description: Obtenga información sobre los procesos de control de calidad de Adobe Commerce relacionados con los proyectos de implementación.
+exl-id: 0eb62b24-21f6-4cec-8ef9-eeaa1ee6ae52
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '658'
 ht-degree: 0%
 
 ---
-
 
 # Proceso y herramientas de control de calidad
 
@@ -142,12 +142,12 @@ El proceso de control de calidad del diagrama anterior se puede describir brevem
 </tbody>
 </table>
 
-Al igual que las [herramientas](project-management-tools.md) que identificamos para el proceso de desarrollo, hemos seleccionado un puñado de soluciones y plataformas de elección que a menudo utilizamos para las pruebas de control de calidad.
+Similar a la variable [herramientas](project-management-tools.md) identificamos para el proceso de desarrollo, hemos seleccionado un puñado de soluciones y plataformas de elección que a menudo utilizamos para las pruebas de control de calidad.
 
 | Objetivo | Herramienta |
 |---------------------------|---------------------------------------------------|
 | Índice de rendimiento del sitio web | Google PageSpeed, Webpagetest, JMeter |
-| Seguridad | Adobe Commerce Security Scan Tool, SonarQube, ZAP |
+| Seguridad | Herramienta de análisis de seguridad de Adobe Commerce, SonarQube, ZAP |
 | Sistema de gestión de problemas | JIRA |
 | Pruebas de la interfaz de usuario | Píxel perfecto, Pila de navegador |
 | Pruebas de API | Postman, SoapUI |
@@ -172,7 +172,7 @@ OWASPZAP (Zed Attack Proxy) está diseñado para ser utilizado por los nuevos us
 
 ## Pruebas de la interfaz de usuario
 
-Perfect Pixel permite a los desarrolladores y diseñadores de marcas colocar una superposición de imagen semitransparente sobre la parte superior del HTML desarrollado y realizar una comparación de píxeles perfecta entre ellos.
+Perfect Pixel permite a los desarrolladores y diseñadores de marcas colocar una superposición de imagen semitransparente sobre la parte superior del HTML desarrollado y realizar una comparación perfecta de píxeles entre ellos.
 
 BrowserStack es una plataforma de prueba móvil y web en la nube que permite a los desarrolladores probar sus sitios web y aplicaciones móviles en navegadores bajo demanda, sistemas operativos y dispositivos móviles reales.
 

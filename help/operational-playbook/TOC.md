@@ -4,7 +4,7 @@ user-guide-description: Aprenda a preparar operacionalmente sus empresas para ej
 source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
 workflow-type: tm+mt
 source-wordcount: '132'
-ht-degree: 0%
+ht-degree: 13%
 
 ---
 
@@ -53,7 +53,7 @@ ht-degree: 0%
    - [Recursos](people/resources.md)
    - [Cultura](people/culture.md)
    - [Equipos de proyecto](people/project-teams.md)
-- Producto {#product}
+- Product {#product}
    - [Sistemas de gestión de pedidos](product/order-management-systems.md)
    - [Envío y cumplimiento](product/shipping-fulfillment.md)
    - [Puertas de pago](product/payment-gateways.md)

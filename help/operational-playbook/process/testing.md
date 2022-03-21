@@ -1,13 +1,13 @@
 ---
 title: Pruebas
 description: Las pruebas AB y las pruebas de implementación son comunes para los proyectos de comercio electrónico y ayudan a garantizar sitios web de alta calidad.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: 59675287-c390-4b41-be75-55c90d7e93c8
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '212'
 ht-degree: 0%
 
 ---
-
 
 # Pruebas
 

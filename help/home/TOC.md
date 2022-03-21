@@ -4,7 +4,7 @@ user-guide-description: Obtenga información sobre los aspectos operativos del m
 source-git-commit: ee7867a6d428643ca1ee57b0f3d782b2a78efa2e
 workflow-type: tm+mt
 source-wordcount: '118'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 

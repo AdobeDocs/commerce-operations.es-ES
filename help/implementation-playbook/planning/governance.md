@@ -1,13 +1,13 @@
 ---
 title: Gobernanza del proyecto
-description: Aplique nuestras recomendaciones de control de proyectos a su implementación de Adobe Commerce.
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+description: Aplique las recomendaciones de control de proyecto a su implementación de Adobe Commerce.
+exl-id: adf53a2a-1673-441a-84d3-4cdda47d6aa5
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '474'
 ht-degree: 0%
 
 ---
-
 
 # Administración de proyectos
 
@@ -23,7 +23,7 @@ En varios niveles, los equipos analizan métricas específicas de sprint y proye
 
 - Informe trimestral de las empresas
 
-   - Analizar estrategias de escalamiento del crecimiento
+   - Analizar las estrategias de escalación del crecimiento
 
    - Resaltar el éxito y los objetivos actuales
 

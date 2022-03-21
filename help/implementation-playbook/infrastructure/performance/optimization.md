@@ -1,17 +1,17 @@
 ---
 title: Optimización del rendimiento
 description: Obtenga información sobre la optimización del rendimiento y los pasos que debe seguir para revisar el rendimiento de la implementación de Adobe Commerce.
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+exl-id: 506ef2cc-c6fd-4401-afa5-a71e7b9871e6
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '306'
 ht-degree: 0%
 
 ---
 
-
 # Optimización del rendimiento
 
-El rendimiento es un tema importante. Cuando los usuarios experimentan un sitio lento o no interactivo, esto afecta a la conversión. Recomendamos seguir estos pasos para optimizar el rendimiento de Adobe Commerce en la implementación de la infraestructura de nube:
+El rendimiento es un tema importante. Cuando los usuarios experimentan un sitio lento o no interactivo, esto afecta a la conversión. Recomendamos seguir estos pasos para optimizar el rendimiento de su Adobe Commerce en la implementación de la infraestructura en la nube:
 
 - Evaluar el problema
 - Medir el rendimiento

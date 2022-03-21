@@ -4,7 +4,7 @@ description: Defina las funciones y responsabilidades del proyecto para garantiz
 exl-id: 206b6e3b-6dee-442e-a2ba-7867b2494b75
 source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '205'
 ht-degree: 0%
 
 ---

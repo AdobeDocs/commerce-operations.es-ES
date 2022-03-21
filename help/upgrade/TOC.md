@@ -4,7 +4,7 @@ user-guide-description: Descubra por qué es tan importante actualizar la aplica
 source-git-commit: 3d9a721e33621b78f03f16b932a1ba2904ae4010
 workflow-type: tm+mt
 source-wordcount: '122'
-ht-degree: 0%
+ht-degree: 22%
 
 ---
 

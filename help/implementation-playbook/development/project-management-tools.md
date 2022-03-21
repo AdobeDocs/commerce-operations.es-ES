@@ -1,17 +1,17 @@
 ---
 title: Herramientas de administración de proyectos
 description: Elija las herramientas de administración de proyectos recomendadas para su implementación de Adobe Commerce.
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+exl-id: 5c87d762-06ce-4716-946a-f0fe5348fa18
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '373'
 ht-degree: 0%
 
 ---
 
-
 # Herramientas de administración de proyectos
 
-Salir del entorno de comercio de Adobe real, pero también es importante, son las herramientas y soluciones que hacen que la colaboración y todo el proceso de desarrollo sean lo más fluidos posible.
+Salir del entorno Adobe Commerce real, pero igualmente importante, son las herramientas y soluciones que hacen que la colaboración y todo el proceso de desarrollo sean lo más fluidos posible.
 
 La siguiente tabla incluye las herramientas recomendadas para la administración de proyectos:
 

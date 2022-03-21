@@ -1,13 +1,13 @@
 ---
 title: Mantenimiento del proyecto de comercio
 description: Establecer normas de alta calidad y establecer mecanismos para mantener esas normas a lo largo del tiempo.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: 8f394ae0-02c4-4efc-a313-40b8c48aecbb
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '709'
 ht-degree: 0%
 
 ---
-
 
 # Actualizaciones, backups y mantenimiento
 
@@ -29,18 +29,17 @@ Al realizar la actualización, usted está probando su negocio en el futuro y d�
 
 A continuación, le presentamos una lista rápida de preguntas que debe hacer cuando planifique la actualización:
 
-- **Limpieza** del sitio: ¿Qué puedo mantener y qué puedo cambiar? ¿Qué cosas nuevas quiero implementar? Por ejemplo, ¿qué cambios quiero realizar en la taxonomía y la estructura del producto o en el contenido?
+- **Limpieza del sitio**— ¿Qué puedo mantener y qué puedo cambiar? ¿Qué cosas nuevas quiero implementar? Por ejemplo, ¿qué cambios quiero realizar en la taxonomía y la estructura del producto o en el contenido?
 
-- **Comprobación** de Analytics: ¿Cuáles son mis KPI actuales? ¿Qué me dicen mis datos sobre cómo se puede mejorar mi sitio? ¿Hay nuevos KPI que quiero implementar para mi nuevo sitio?
+- **Comprobación de Analytics**—¿Cuáles son mis KPI actuales? ¿Qué me dicen mis datos sobre cómo se puede mejorar mi sitio? ¿Hay nuevos KPI que quiero implementar para mi nuevo sitio?
 
-- **Extensiones**: ¿sigo necesitándolas? ¿Qué extensiones de terceros cubren mis necesidades?
+- **Extensiones**—¿Todavía los necesito? ¿Qué extensiones de terceros cubren mis necesidades?
 
-- **Integraciones**: ¿con qué sistemas de terceros, como ERP y contabilidad, debo integrarlos? ¿Tienen conectores específicos o se necesitan integraciones personalizadas?
+- **Integraciones**— ¿Con qué sistemas de terceros, como ERP y contabilidad, debo integrarme? ¿Tienen conectores específicos o se necesitan integraciones personalizadas?
 
-- **Formación**: ¿El equipo de actualización cuenta con los conocimientos y la formación adecuados? Novedades
-¿mi plan para entrenar a los usuarios finales sobre cómo utilizar el nuevo administrador antes de que se ponga en marcha?
+- **Capacitación**—¿El equipo de actualización tiene el conocimiento y la formación adecuados? ¿Cuál es mi plan para entrenar a los usuarios finales sobre cómo usar el nuevo administrador antes de que entre en funcionamiento?
 
-- **Equipo** de actualización: ¿Quién está dedicado al proyecto de actualización (expertos internos y externos)? ¿Tienen el apoyo necesario del liderazgo y otros equipos internos?
+- **Equipo de actualización**—¿Quién está dedicado al proyecto de actualización (tanto expertos internos como externos)? ¿Tienen el apoyo necesario del liderazgo y otros equipos internos?
 
 ## Preguntas frecuentes sobre la actualización
 
@@ -53,9 +52,9 @@ P: ¿Cuánto cuesta la actualización?
 
 A: De nuevo, depende de la situación actual y de los requisitos para el nuevo sitio. La buena noticia es que, en general, a medida que los socios y desarrolladores se han vuelto más familiarizados y expertos con su plataforma de comercio, los costes de actualización y la duración de los proyectos han disminuido. Le recomendamos consultar con su socio de soluciones para obtener una estimación.
 
-P: ¿Están disponibles las versiones de Adobe Commerce 2 de mis extensiones de Adobe Commerce 1?
+P: ¿Están disponibles las versiones de Adobe Commerce 2 de mis extensiones Adobe Commerce 1?
 
-A: Prácticamente se cubren todas las necesidades críticas para el negocio. Desde el contenido y las personalizaciones, el envío y el cumplimiento hasta la optimización del sitio, hemos visto un aumento espectacular en el número, y la diversidad, de extensiones en el Commerce Marketplace, a medida que ha aumentado la adopción por parte de los comerciantes y la familiaridad de los socios con el comercio de Adobe.
+A: Prácticamente se cubren todas las necesidades críticas para el negocio. Desde el contenido y las personalizaciones, el envío y el cumplimiento hasta la optimización del sitio, hemos visto un aumento espectacular en el número, y la diversidad, de extensiones en el Commerce Marketplace, ya que la adopción por parte de los comerciantes y la familiaridad de los socios con Adobe Commerce han aumentado.
 
 Algunos ejemplos de empresas tecnológicas globales líderes que han creado extensiones son:
 
@@ -72,7 +71,7 @@ Algunos ejemplos de empresas tecnológicas globales líderes que han creado exte
 
 Además, las comprobaciones de control de calidad implementadas para todas las extensiones garantizan una calidad de producto alta de forma consistente, por lo que existe una alta probabilidad de que su extensión o una alternativa de alta calidad a su extensión ya esté en Commerce Marketplace.
 
-Muchos comerciantes han descubierto que las capacidades nativas de Adobe Commerce han reducido su necesidad y dependencia de las extensiones, simplificando las operaciones de desarrollo y mantenimiento y mejorando el rendimiento general. Si aún no lo ha hecho, le recomendamos que se comprometa a realizar una planificación de actualización exhaustiva para descubrir este tipo de oportunidades.
+Muchos comerciantes han descubierto que las funcionalidades nativas de Adobe Commerce han reducido su necesidad y dependencia de las extensiones, simplificando las operaciones de desarrollo y mantenimiento y mejorando el rendimiento general. Si aún no lo ha hecho, le recomendamos que se comprometa a realizar una planificación de actualización exhaustiva para descubrir este tipo de oportunidades.
 
 P: ¿Qué sucede si mis extensiones e integraciones no son compatibles con la plataforma?
 
@@ -86,5 +85,5 @@ A: Con una planificación adecuada, su SEO debe mejorarse. Nuestro socio Corra r
 - Creación de un plan de redireccionamiento 301 específico
 - Creación de una estrategia en torno a la taxonomía de direcciones URL
 - Realización de una comprobación de mapa del sitio XML
-- Uso de Tag Management (Google)
+- Uso de la administración de etiquetas (Google)
 - Discutir en detalle con su equipo de implementación

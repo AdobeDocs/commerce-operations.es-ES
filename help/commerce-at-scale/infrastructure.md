@@ -1,5 +1,5 @@
 ---
-title: Adobe Comercio y Alineación de la Infraestructura de Adobe Experience Manager
+title: Alineación de la infraestructura de Adobe Commerce y Adobe Experience Manager
 description: Alinee su infraestructura de Adobe Commerce y Adobe Experience Manager para establecer tiempos de espera aceptables y límites de conexión.
 exl-id: f9cb818f-1461-4b23-b931-e7cee70912fd
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 # Alineaciones de la infraestructura (tiempos de espera y límites de conexión)
 
-Hay configuraciones con comercio de AEM y Adobe y la infraestructura circundante, como equilibradores de carga que necesitan alineación, que están relacionadas con los límites de conexión y la configuración de tiempo de espera.
+Hay configuraciones con AEM y Adobe Commerce e infraestructura circundante, como equilibradores de carga que necesitan alineación, que están relacionadas con los límites de conexión y la configuración de tiempo de espera.
 
-Un desajuste entre estos límites significaría que las conexiones podrían terminar siendo restringidas en AEM lado, mientras que Adobe Commerce es capaz de manejar más conexiones. Del mismo modo, para la configuración de tiempo de espera, un desajuste podría significar que se producen errores de tiempo de espera en AEM lado, mientras que Adobe Commerce sigue procesando una solicitud.
+Un desajuste entre estos límites significaría que las conexiones podrían terminar siendo restringidas en AEM lado, mientras que Adobe Commerce es capaz de manejar más conexiones. Del mismo modo, para la configuración de tiempo de espera, un desajuste podría significar que se producen errores de tiempo de espera en AEM lado, mientras Adobe Commerce sigue procesando una solicitud.
 
 Para la configuración de tiempo de espera, la configuración debe revisarse y alinearse para evitar que aparezcan errores de tiempo de espera 503 al estar en carga. Hay varias opciones de configuración de tiempo de espera de la aplicación y la infraestructura que se deben revisar:
 
@@ -21,7 +21,7 @@ Para la configuración de tiempo de espera, la configuración debe revisarse y a
 
 ## equilibrador de carga AEM
 
-Suponiendo que haya un equilibrador de carga de aplicación de AWS en la infraestructura y varios distribuidores/editores - se debe tener en cuenta la siguiente configuración para el equilibrador de carga:
+Suponiendo que haya un equilibrador de carga de aplicación de AWS en la infraestructura y varios distribuidores/editores, se debe tener en cuenta la siguiente configuración para el equilibrador de carga:
 
 1. Se deben revisar las comprobaciones de estado del editor para evitar que los despachantes abandonen el servicio innecesariamente antes de que se produzcan sobrecargas de carga. La configuración de tiempo de espera de la comprobación de estado del equilibrador de carga debe alinearse con la configuración de tiempo de espera del editor.
 
@@ -41,7 +41,7 @@ Si no hay ningún equilibrador de carga en la infraestructura, la configuración
 
 ## Editores
 
-Límites y tiempos de espera de conexión de Publisher GraphQL: Inicialmente, las conexiones HTTP máximas en la configuración OSGI del CIF de Adobe Commerce GraphQL Client Configuration Factory deben establecerse en el límite de conexiones máximo rápido predeterminado, que actualmente está establecido en 200. Incluso si hay varios editores en la granja de AEM, el límite debe establecerse igual en cada publicador, coincidiendo con la configuración de Inicio. El motivo de esto es que, en algunos casos, un editor podría estar gestionando más tráfico que los otros editores, si se saca a un despachante asociado de la granja, por ejemplo. Esto significaría que todo el tráfico se enrutaría a través del Dispatcher y los editores restantes, en este caso el editor único puede necesitar todas las conexiones HTTP.
+Límites y tiempos de espera de conexión de Publisher GraphQL: Inicialmente, las conexiones HTTP máximas en la configuración OSGI de la fábrica de configuración del cliente de Adobe Commerce CIF GraphQL deben establecerse en el límite máximo de conexiones predeterminado, que actualmente está establecido en 200. Incluso si hay varios editores en la granja de AEM, el límite debe establecerse igual en cada publicador, coincidiendo con la configuración de Inicio. El motivo de esto es que, en algunos casos, un editor podría estar gestionando más tráfico que los otros editores, si se saca a un despachante asociado de la granja, por ejemplo. Esto significaría que todo el tráfico se enrutaría a través del Dispatcher y los editores restantes, en este caso el editor único puede necesitar todas las conexiones HTTP.
 
 El &quot;método HTTP predeterminado&quot; debe configurarse de POST en GET. Solo las solicitudes de GET se almacenan en caché en la caché de Adobe Commerce GraphQL y, por lo tanto, el método predeterminado siempre debe configurarse como GET.
 

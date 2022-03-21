@@ -1,11 +1,11 @@
 ---
 user-guide-title: Guía de implementación
-user-guide-description: Obtenga información sobre las estrategias para planificar e implementar un sitio de comercio de Adobe exitoso.
+user-guide-description: Obtenga información acerca de las estrategias para planificar e implementar un sitio de Adobe Commerce con éxito.
 mini-toc-levels: 3
 source-git-commit: 0def7f131883428f4d959071e36200644b73b7c2
 workflow-type: tm+mt
 source-wordcount: '132'
-ht-degree: 0%
+ht-degree: 12%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 - [Información general](overview.md)
 - Comercio {#intro}
-   - [Acerca del comercio de Adobe](intro/about-commerce.md)
+   - [Acerca de Adobe Commerce](intro/about-commerce.md)
    - [Principios del desarrollo de plataformas](intro/platform-development.md)
 - Ámbito del proyecto {#project-scope}
    - [El conocimiento es poder](project-scope/knowledge.md)
@@ -27,7 +27,7 @@ ht-degree: 0%
    - [Herramientas de administración de proyectos](development/project-management-tools.md)
    - [Metodología de implementación de proyectos](development/delivery.md)
    - [Control de calidad](development/quality-control.md)
-- Planificación y administración {#planning}
+- Planificación y gobernanza {#planning}
    - [Enfoque de ejecución y planificación](planning/delivery.md)
    - [Responsabilidad y titularidad](planning/ownership.md)
    - [Administración de proyectos](planning/governance.md)
@@ -63,7 +63,7 @@ ht-degree: 0%
    - [Pasos previos al lanzamiento](launch/pre-launch-steps.md)
    - [Pasos de Launch](launch/launch-steps.md)
    - [Pasos posteriores al lanzamiento](launch/post-launch-steps.md)
-- Mantenimiento y soporte {#maintenance}
+- Mantenimiento y asistencia {#maintenance}
    - [Información general](maintenance/overview.md)
    - [Modelos](maintenance/models.md)
    - [Niveles de servicio](maintenance/service-level-agreements.md)

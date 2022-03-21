@@ -1,13 +1,13 @@
 ---
 title: Métricas de asistencia
-description: Supervise los esfuerzos de asistencia y mantenimiento para la implementación de Adobe Commerce con métricas comunes.
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+description: Supervise los esfuerzos de asistencia y mantenimiento para su implementación de Adobe Commerce con métricas comunes.
+exl-id: a8171a08-3583-4c6a-bb18-158161be42d1
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '183'
 ht-degree: 0%
 
 ---
-
 
 # Métricas de asistencia
 
@@ -25,5 +25,5 @@ La medición y la elaboración de informes de los servicios L2 (mejoras y servic
 | Calidad de código | Números, Porcentaje | Complejidad, LoC, Violaciones, Cobertura de código para la huella digital |
 | Volatilidad de los requisitos | Número | N.º de requisitos cambio/ total # requisitos para la sprint |
 | Densidad de defecto | Porcentaje | [No. de defectos válidos encontrados/Número total de casos de prueba ejecutados]*100 para el sprint |
-| Eficacia de las pruebas | Porcentaje | [Defectos válidos elevados/(Defectos válidos planteados+ defectos rechazados)]*100 para la velocidad |
+| Eficacia de las pruebas | Porcentaje | [Defectos válidos elevados/(Defectos válidos planteados+ Defectos rechazados)]*100 para el sprint |
 | Productividad | Número (tendencia) | Puntos de artículo entregados por sprint/capacidad |

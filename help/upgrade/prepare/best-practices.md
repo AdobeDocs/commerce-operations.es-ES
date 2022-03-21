@@ -3,7 +3,7 @@ title: Prácticas recomendadas
 description: Utilice las prácticas recomendadas por el Adobe para administrar el proceso de actualización de sus proyectos de Adobe Commerce y Magento Open Source.
 source-git-commit: 3d9a721e33621b78f03f16b932a1ba2904ae4010
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1092'
 ht-degree: 0%
 
 ---

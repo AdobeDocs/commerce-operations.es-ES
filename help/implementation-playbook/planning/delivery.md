@@ -1,13 +1,13 @@
 ---
 title: Enfoque de entrega y planificación
-description: Use nuestro enfoque recomendado para planificar y entregar la implementación de Adobe Commerce.
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+description: Utilice nuestro enfoque recomendado para planificar y ofrecer la implementación de Adobe Commerce.
+exl-id: ee2918d6-0d97-4f02-8e8f-b88bc999cd22
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '498'
 ht-degree: 0%
 
 ---
-
 
 # Enfoque de ejecución y planificación
 
@@ -31,9 +31,9 @@ Este enfoque consta de los siguientes pasos:
 
 El modelo híbrido le permite aprovechar el poder de la metodología Agile, manteniendo el objetivo de la cronología, el costo y la calidad. El plan completo se divide en dos fases distintas, seguidas de actividades de lanzamiento, optimización y mantenimiento.
 
-- **Obtención de la idea** correcta: se trata de una fase previa a la implementación para garantizar que los requisitos, el diseño y la solución tecnológica se diseñen, documenten y colaboren en todas las partes interesadas. El retraso en la implementación se prepara y se crea, se planifican los modelos de desarrollo y se finaliza una estrategia secuencial para crear el producto.
+- **La idea correcta**: es una fase previa a la implementación para garantizar que los requisitos, el diseño y la solución tecnológica se planifiquen, documenten y colaboren entre los interesados. El retraso en la implementación se prepara y se crea, se planifican los modelos de desarrollo y se finaliza una estrategia secuencial para crear el producto.
 
-- **Corrección** de la idea: esta es la fase de implementación para crear el producto de forma iterativa, realizar pruebas exhaustivas y publicarlo adecuadamente. El primer paso es desarrollar el código a través de varios sprints; cada sprint contiene desarrollo y pruebas en sprint, seguidos de pruebas de integración del sistema, pruebas de rendimiento y seguridad, pruebas de aceptación del usuario y actividades de lanzamiento.
+- **La idea es correcta**: esta es la fase de implementación para crear el producto de forma iterativa, realizar pruebas exhaustivas y liberarlo adecuadamente. El primer paso es desarrollar el código a través de varios sprints; cada sprint contiene desarrollo y pruebas en sprint, seguidos de pruebas de integración del sistema, pruebas de rendimiento y seguridad, pruebas de aceptación del usuario y actividades de lanzamiento.
 
 La planificación de proyectos es una actividad crítica. Guía a las partes interesadas, los equipos, los patrocinadores y los directores de proyectos sobre cómo supervisar, administrar y controlar las fases del proyecto. También ayuda a identificar objetivos, evitar plazos incumplidos, priorizar tareas esenciales, reducir riesgos y ofrecer los resultados deseados.
 

@@ -1,13 +1,13 @@
 ---
 title: Administración de proyectos
 description: Aplique marcos conocidos para administrar su proyecto de comercio electrónico.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: 514e2317-f409-4079-bdee-1596f6635467
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '378'
 ht-degree: 0%
 
 ---
-
 
 # Administración de proyectos
 
@@ -36,17 +36,17 @@ La depuración ayuda a administrar los cambios durante el proyecto, permite a lo
 
 Un plan básico de gestión de proyectos de comercio electrónico incluye:
 
-- **Análisis**: en la etapa inicial de un proyecto, el negocio necesita realizar análisis, incluido análisis de negocios de competidores y del mercado para comprender las fortalezas y debilidades de la organización.
+- **Análisis**: en la fase inicial de un proyecto, el negocio necesita realizar análisis, incluyendo análisis de negocios de mercado y competidores para comprender las fortalezas y debilidades de la organización.
 
-- **Requisitos**: Defina los requisitos detallados de lo que la organización desea al final del proyecto en términos de mejorar las habilidades existentes o implementar nuevas funciones o integraciones.
+- **Requisitos**: defina requisitos detallados de lo que la organización desea al final del proyecto en términos de mejorar las habilidades existentes o implementar nuevas funciones o integraciones.
 
-- **Proveedores** de terceros: en esta fase, asigne las integraciones de terceros necesarias (por ejemplo, pagos, envíos, clasificaciones y revisiones).
+- **Proveedores de terceros**: en esta etapa, asigne las integraciones de terceros necesarias (por ejemplo, pagos, envíos, clasificaciones y revisiones).
 
-- **Diseño**: requisitos específicos para el diseño de las plantillas y el libro de marcas de la empresa.
+- **Diseño**—Requisitos específicos de diseño para plantillas y el libro de marca de la empresa.
 
 - **Migración**: planifique los pasos para migrar contenido y datos.
 
-- **Plataforma de comercio electrónico**: Analice y finalice la plataforma necesaria para que la empresa cumpla los requisitos.
+- **Plataforma de comercio electrónico**: analice y finalice la plataforma necesaria para que la empresa cumpla los requisitos.
 
 ## Prácticas recomendadas
 

@@ -1,13 +1,13 @@
 ---
 title: Marketing
 description: Promocione sus productos y atraiga clientes a través de campañas de marketing de comercio electrónico.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: a6b38975-ff85-4cc1-86e3-9792562369ab
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '492'
 ht-degree: 0%
 
 ---
-
 
 # Marketing por correo electrónico
 

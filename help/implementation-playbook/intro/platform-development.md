@@ -4,7 +4,7 @@ description: Conozca los principios fundamentales del desarrollo de plataformas 
 exl-id: 3d822a8c-0e81-4a80-a820-46cf2702e0bf
 source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '315'
 ht-degree: 0%
 
 ---

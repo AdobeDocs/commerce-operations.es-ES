@@ -1,17 +1,17 @@
 ---
 title: Principales partes interesadas
-description: Revise las partes interesadas clave involucradas en la implementación de Adobe Commerce y quién posee diferentes aspectos del proyecto.
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+description: Revise las partes interesadas clave involucradas en una implementación de Adobe Commerce y quién posee diferentes aspectos del proyecto.
+exl-id: 04d8270f-3f68-445a-8e7a-e17905a6f77c
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '390'
 ht-degree: 0%
 
 ---
 
-
 # Principales partes interesadas
 
-Muchas empresas en 2021 se han dado cuenta de que convertirse en &quot;a prueba de pandemias&quot; se relaciona directamente con la fuerza digital de una organización. Según los datos de Forrester,[McKinsey](https://www.mckinsey.com/business-functions/strategy-and-corporate-finance/our-insights/five-fifty-the-quickening)determinó que el comercio electrónico ha experimentado un crecimiento de 10 años en apenas 3 meses, y que el crecimiento se debió a la necesidad de conectarse digitalmente con los clientes mientras que las puertas de ladrillo y mortero estaban cerradas.
+Muchas empresas en 2021 se han dado cuenta de que convertirse en &quot;a prueba de pandemias&quot; se relaciona directamente con la fuerza digital de una organización. Basado en datos de Forrester,[McKinsey](https://www.mckinsey.com/business-functions/strategy-and-corporate-finance/our-insights/five-fifty-the-quickening)se comprobó que el comercio electrónico ha experimentado un crecimiento de diez años en apenas tres meses, y que el crecimiento ha sido impulsado por la necesidad de conectarse digitalmente con los clientes mientras que las puertas de ladrillo y mortero estaban cerradas.
 
 Cuando se toma la decisión de invertir en una transformación del comercio, uno de los pasos más importantes es determinar quién de la organización participa en el proceso. Para las empresas más pequeñas, a veces el equipo digital o de comercio electrónico es sólo un puñado de personas, por lo que todo el equipo se hace cargo de la tarea. Sin embargo, en el caso de las organizaciones más grandes, un enfoque consiste en dividirlas en tres esferas diferentes, a saber:
 

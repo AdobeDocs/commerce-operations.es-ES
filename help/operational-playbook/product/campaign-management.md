@@ -1,13 +1,13 @@
 ---
 title: Administración de campañas
 description: Organice sus campañas de comercio electrónico para adaptarlas a sus necesidades empresariales.
-source-git-commit: 226f1925d9ca628c94b67a86888084a21cd7e336
+exl-id: 466f2f83-ea19-4230-b33b-4435974effb7
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '255'
 ht-degree: 0%
 
 ---
-
 
 # Administración de campañas
 
@@ -34,10 +34,10 @@ Todo el modelo de comercio electrónico se establece en el sitio web, lo que sig
 
 Diferencias entre la administración de campañas B2B y B2C:
 
-- **Desarrollo de relaciones**: B2B utiliza la administración de campañas para crear relaciones a largo plazo, mientras que B2C utiliza la administración de campañas para crear relaciones a corto plazo
+- **Desarrollo de relaciones**—B2B utiliza la administración de campañas para crear relaciones a largo plazo, mientras que B2C utiliza la administración de campañas para crear relaciones a corto plazo
 
 - **Marcas**: la administración de campañas B2B se centra más en la generación de posibles clientes, mientras que B2C se centra en el valor de la marca
 
-- **Toma de decisiones**: las decisiones de campaña B2B son lógicas, mientras que las decisiones de campaña B2C son emocionales
+- **Toma de decisiones**—Las decisiones de campaña B2B son lógicas, mientras que las decisiones de campaña B2C son emocionales
 
 - **Audiencia**: la administración de campañas B2B incluye múltiples partes interesadas, mientras que la administración de campañas B2C está dirigida a usuarios finales individuales.

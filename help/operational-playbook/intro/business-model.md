@@ -1,13 +1,13 @@
 ---
 title: ¿Qué es B2B y B2C?
 description: Obtenga información sobre los diferentes modelos de negocio de Commerce.
-source-git-commit: 225ead587fb9f8fbb31442db6cc7ce1826ebb3e8
+exl-id: d66b4a7f-d54b-4902-8791-7a8f67fa4b43
+source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
 source-wordcount: '274'
 ht-degree: 1%
 
 ---
-
 
 # ¿Qué es B2B y B2C?
 

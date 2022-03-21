@@ -3,7 +3,7 @@ title: Comprender el ámbito de actualización
 description: Obtenga información sobre los cambios incompatibles con versiones anteriores en una versión que podrían afectar a los módulos personalizados de Adobe Commerce o Magento Open Source o a las extensiones de terceros.
 source-git-commit: 3d9a721e33621b78f03f16b932a1ba2904ae4010
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '931'
 ht-degree: 0%
 
 ---
