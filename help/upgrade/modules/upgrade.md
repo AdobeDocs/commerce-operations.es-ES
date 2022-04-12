@@ -1,9 +1,9 @@
 ---
 title: Módulos y extensiones de actualización
 description: Utilice la interfaz de línea de comandos y el Compositor para actualizar los módulos y extensiones de Adobe Commerce y Magento Open Source.
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+source-git-commit: 70f1bda91023526fbc0024b6a6fef93c7633ecc2
 workflow-type: tm+mt
-source-wordcount: '96'
+source-wordcount: '161'
 ht-degree: 0%
 
 ---
@@ -44,3 +44,9 @@ Para actualizar o actualizar un módulo o una extensión:
    ```bash
    bin/magento cache:clean
    ```
+
+## Extensiones agrupadas de proveedores (VBE)
+
+Adobe eliminado todo [VBE](https://devdocs.magento.com/extensions/vendor/) en 2.4.4. Los proveedores siguen admitiendo estas extensiones en Adobe Commerce Marketplace.
+
+Si desea seguir utilizando estas extensiones con Adobe Commerce y Magento Open Source 2.4.4 y versiones posteriores, debe actualizar las dependencias de paquete correspondientes en su `composer.json` file _before_ actualizar a 2.4.4. Póngase en contacto con el proveedor para obtener el nombre y la versión del paquete que va a usar.
