@@ -1,9 +1,9 @@
 ---
 title: Procesamiento de pedidos de alto rendimiento
 description: Optimice la ubicación de los pedidos y la experiencia de cierre de compra para su implementación de Adobe Commerce o Magento Open Source.
-source-git-commit: 0a902d7fe967bbcee5019fea83e5be66ce2aefd0
+source-git-commit: c4c52baa9e04a4e935ccc29fcce2ac2745a454ee
 workflow-type: tm+mt
-source-wordcount: '879'
+source-wordcount: '927'
 ht-degree: 0%
 
 ---
@@ -14,12 +14,10 @@ ht-degree: 0%
 Puede optimizar la ubicación de pedidos y la experiencia de cierre de compra configurando el siguiente conjunto de módulos para **procesamiento de pedidos de alto rendimiento**:
 
 - [AsyncOrder](#asynchronous-order-placement): procesa de forma asíncrona los pedidos mediante una cola.
-- [NegociableCitaSincronizaciónPedido](#negotiable-quote-asyn-order)—Procesa asincrónicamente elementos de orden de guardado de cotizaciones.
 - [Cálculo total diferido](#deferred-total-calculation): permite posponer los cálculos de totales de pedidos hasta que comienza el cierre de compra.
+- [Comprobación de inventario en carga de cotización](#disable-inventory-check): permite omitir la validación de inventario de artículos del carro de compras.
 
-Todas las funciones funcionan de forma independiente. Puede usar todas las funciones simultáneamente o habilitar y deshabilitar las características en cualquier combinación.
-
-Utilice la interfaz de la línea de comandos para habilitar estas funciones o edite la `app/etc/env.php` según los archivos README correspondientes definidos en el [_Guía de referencia de módulos_][mrg].
+Todas las funciones (AsyncOrder, Deferred Total Calculation y Inventory Check) funcionan de forma independiente. Puede usar las tres funciones simultáneamente o habilitar y deshabilitar las características en cualquier combinación.
 
 ## Colocación de pedidos asincrónica
 
@@ -30,7 +28,9 @@ Por ejemplo, un cliente agrega un producto al carro de compras y selecciona **[!
 - **Producto disponible**: el estado de pedido cambia a _Pendiente_, se ajusta la cantidad del producto, se envía un correo electrónico con los detalles del pedido al cliente y los detalles del pedido correctos quedan disponibles para su visualización en la **Pedidos y devoluciones** con opciones procesables, como reordenar.
 - **Producto sin existencias o con poca oferta**: el estado de pedido cambia a _Rechazado_, la cantidad del producto no se ajusta, se envía un correo electrónico con los detalles del pedido sobre el problema al cliente y los detalles del pedido rechazado están disponibles en la **Pedidos y devoluciones** sin opciones procesables.
 
-Para habilitar AsyncOrder:
+Utilice la interfaz de la línea de comandos para habilitar estas funciones o edite la `app/etc/env.php` según los archivos README correspondientes definidos en el [_Guía de referencia de módulos_][mrg].
+
+**Para habilitar AsyncOrder**:
 
 Puede habilitar AsyncOrder mediante la interfaz de línea de comandos:
 
@@ -49,7 +49,7 @@ La variable `set` escribe lo siguiente en el `app/etc/env.php` archivo:
 
 Consulte [AsyncOrder] en el _Guía de referencia de módulos_.
 
-Para desactivar AsyncOrder:
+**Para desactivar AsyncOrder**:
 
 >[!WARNING]
 >
@@ -109,7 +109,7 @@ Cuando el módulo AsyncOrder está habilitado, los siguientes extremos REST y la
 
 Los desarrolladores pueden excluir explícitamente ciertos métodos de pago de la colocación de pedidos asincrónicos añadiéndolos al `Magento\AsyncOrder\Model\OrderManagement::paymentMethods` matriz. Los pedidos que utilizan métodos de pago excluidos se procesan sincrónicamente.
 
-## Orden asincrónico de cotización negociable
+### Orden asincrónico de cotización negociable
 
 La variable _Orden asincrónico de cotización negociable_ El módulo B2B le permite guardar los elementos de pedido asincrónicamente para el `NegotiableQuote` funcionalidad. Debe tener activados AsyncOrder y NegociableQuote.
 
@@ -117,9 +117,9 @@ La variable _Orden asincrónico de cotización negociable_ El módulo B2B le per
 
 La variable _Cálculo total diferido_ optimiza el proceso de cierre de compra aplazando el cálculo total hasta que se solicite para el carro de compras o durante los pasos finales de cierre de compra. Cuando está habilitado, solo el subtotal se calcula a medida que un cliente agrega productos al carro de compras.
 
-DeferredTotalCalculation es **disabled** de forma predeterminada.
+DeferredTotalCalculation es **disabled** de forma predeterminada. Utilice la interfaz de la línea de comandos para habilitar estas funciones o edite la `app/etc/env.php` según los archivos README correspondientes definidos en el [_Guía de referencia de módulos_][mrg].
 
-Para habilitar DeferredTotalCalculation:
+**Para habilitar DeferredTotalCalculation**:
 
 Puede habilitar DeferredTotalCalculation mediante la interfaz de línea de comandos:
 
@@ -136,7 +136,7 @@ La variable `set` escribe lo siguiente en el `app/etc/env.php` archivo:
    ]
 ```
 
-Para desactivar DeferredTotalCalculation:
+**Para desactivar DeferredTotalCalculation**:
 
 Puede desactivar DeferredTotalCalculation mediante la interfaz de línea de comandos:
 
@@ -165,9 +165,7 @@ La variable _Habilitar inventario al cargar el carro de compras_ la configuraci�
 
 Cuando está desactivado, no se produce la comprobación de inventario al agregar un producto al carro de compras. Si se omite esta comprobación de inventario, algunos escenarios fuera de existencias podrían generar otros tipos de errores. Comprobación de inventario _always_ se produce en el paso de colocación del pedido, incluso cuando está desactivado.
 
-Habilitar inventario al cargar el carro de compras es **enabled** de forma predeterminada.
-
-Para desactivar la comprobación de inventario al cargar el carro de compras, establezca **[!UICONTROL Enable Inventory Check On Cart Load]** a `No` en la interfaz de usuario de administración. Consulte [Configurar opciones globales][global] y [Inventario de catálogo][inventory] en el _Guía del usuario_.
+**Habilitar Comprobación de inventario al cargar el carro de compras** está habilitado (establecido en Sí) de forma predeterminada. Para desactivar la comprobación de inventario al cargar el carro de compras, establezca **[!UICONTROL Enable Inventory Check On Cart Load]** a `No` en la interfaz de usuario del administrador **Almacenes** > **Configuración** > **Catálogo** > **Inventario** > **Opciones de stock** para obtener más información. Consulte [Configurar opciones globales][global] y [Inventario de catálogo][inventory] en el _Guía del usuario_.
 
 <!-- link definitions -->
 
