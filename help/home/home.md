@@ -2,9 +2,9 @@
 keywords: Adobe Commerce;inicio;temas populares
 title: Página principal
 description: Examine un índice de la documentación del producto operativo de Adobe Commerce.
-source-git-commit: bca5208cb5a53ac839c666cb42f2124de5d96be2
+source-git-commit: e38d4f1c3e7618e77afb638f4a996cd7e5ebdbd5
 workflow-type: tm+mt
-source-wordcount: '212'
+source-wordcount: '214'
 ht-degree: 1%
 
 ---
@@ -75,7 +75,7 @@ Obtenga información práctica sobre conceptos, procesos, herramientas y prácti
     </div>
   </td>
   <td valign="top">
-    <a href="https://devdocs.magento.com/quality-patches/tool.html">
+    <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/overview.html">
        <img alt="Herramientas" src="../assets/icons/wrench.svg" width="40" height="40"/>
     </a>
     <div>
