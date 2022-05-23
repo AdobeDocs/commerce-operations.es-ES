@@ -1,9 +1,9 @@
 ---
 title: Ejecute el [!DNL Upgrade Compatibility Tool]
 description: Siga estos pasos para ejecutar el [!DNL Upgrade Compatibility Tool] en su proyecto de Adobe Commerce.
-source-git-commit: fbe47245623469a93cce5cc5a83baf467a007bc4
+source-git-commit: d5811225d695c44cc8f67ae01cf688fe6382dc23
 workflow-type: tm+mt
-source-wordcount: '1883'
+source-wordcount: '2030'
 ht-degree: 0%
 
 ---
@@ -162,7 +162,15 @@ Donde los argumentos son los siguientes:
 
 #### HTML
 
-El archivo del HTML también contiene la lista de problemas identificados y el resumen del análisis. También incluye cuatro gráficos diferentes:
+El archivo del HTML también contiene el resumen del análisis y la lista de problemas identificados.
+
+![Informe del HTML - Resumen](../../assets/upgrade-guide/uct-html-summary.png)
+
+Puede navegar fácilmente por los problemas identificados durante el [!DNL Upgrade Compatibility Tool] análisis:
+
+![Informe del HTML: detalles](../../assets/upgrade-guide/uct-html-details.png)
+
+El informe del HTML también incluye cuatro gráficos diferentes:
 
 - **Módulos por gravedad del problema**: Muestra la distribución de gravedad por módulos.
 - **Archivos por gravedad del problema**: Muestra la distribución de gravedad por archivos.
@@ -171,9 +179,21 @@ El archivo del HTML también contiene la lista de problemas identificados y el r
 
 Estos gráficos permiten identificar (de un vistazo) las partes más comprometidas y las que requieren más trabajo para realizar una actualización.
 
-![Informe del HTML - Resumen](../../assets/upgrade-guide/uct-html-summary.png)
+![Informe de HTML: diagramas](../../assets/upgrade-guide/uct-html-diagrams.png)
 
-![Informe del HTML: detalles](../../assets/upgrade-guide/uct-html-details.png)
+Podrá filtrar los problemas que se muestran en el informe según el nivel de problema mínimo (de forma predeterminada, [ADVERTENCIA]).
+
+Hay un menú desplegable en la esquina superior derecha que le permite seleccionar uno diferente según sus necesidades. La lista de problemas identificados se filtrará en consecuencia.
+
+![Informe del HTML: uso desplegable](../../assets/upgrade-guide/uct-html-filtered-issues-list.png)
+
+Tenga en cuenta que los problemas con menor nivel de problema se eliminan, pero recibe una notificación para que siempre esté al tanto de los problemas identificados por módulo.
+
+Los diagramas también se actualizan en consecuencia, con la única excepción del `Modules with relative sizes and issues`, que se genera con la variable `min-issue-level` originalmente configurado.
+
+Si desea ver resultados diferentes, tendrá que volver a ejecutar el comando proporcionando otro valor para la variable `--min-issue-level` .
+
+![Informe del HTML - Diagrama del gráfico de burbujas](../../assets/upgrade-guide/uct-html-filtered-diagrams.png)
 
 Para exportar este informe a una carpeta de salida diferente, ejecute:
 
@@ -341,8 +361,8 @@ Puede ejecutar el [!DNL Upgrade Compatibility Tool] con una configuración de ej
 La variable [!DNL Upgrade Compatibility Tool] proporciona un informe con resultados con todos los problemas identificados en el proyecto de forma predeterminada. Puede optimizar los resultados para centrarse en los problemas que debe corregir para completar la actualización:
 
 - Utilice la opción `--ignore-current-version-compatibility-issues`, que suprime todos los problemas críticos conocidos, errores y advertencias contra su versión actual de Adobe Commerce. Solo proporciona errores con respecto a la versión a la que intenta actualizar.
-- Agregue la variable `--min-issue-level` , esta configuración permite establecer el nivel mínimo de problema para ayudar a priorizar solo los problemas más importantes con la actualización. Si desea analizar únicamente un determinado proveedor, módulo o incluso directorio, también puede especificar la ruta como opción.
-- Ejecute el `bin` con la opción añadida `-m`. Esto permite que la variable [!DNL Upgrade Compatibility Tool] para analizar un módulo específico de forma independiente y ayuda con los problemas de memoria que pueden producirse al ejecutar el [!DNL Upgrade Compatibility Tool].
+- Agregue la variable `--min-issue-level` , esta configuración permite establecer el nivel mínimo de problema para ayudar a priorizar solo los problemas más importantes con la actualización.
+- Si desea analizar únicamente un determinado proveedor, módulo o incluso directorio, también puede especificar la ruta como opción. Ejecute el `bin` con la opción añadida `-m`. Esto permite que la variable [!DNL Upgrade Compatibility Tool] para analizar un módulo específico de forma independiente y ayuda con los problemas de memoria que pueden producirse al ejecutar el [!DNL Upgrade Compatibility Tool].
 
 ### Siga las prácticas recomendadas de Adobe Commerce
 
