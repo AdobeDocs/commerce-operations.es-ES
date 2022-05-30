@@ -3,7 +3,7 @@ title: Actualizar una instalación basada en Git
 description: Actualice una instalación de Adobe Commerce o Magento Open Source que haya clonado desde un repositorio de Git.
 source-git-commit: 7bcfbc4483f4b6d4c1a5e852adbd1cd81bc136b7
 workflow-type: tm+mt
-source-wordcount: '126'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
