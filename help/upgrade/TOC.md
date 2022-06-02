@@ -1,10 +1,10 @@
 ---
 user-guide-title: Guía de actualización
 user-guide-description: Descubra por qué es tan importante actualizar la aplicación de Adobe Commerce o Magento Open Source y cómo planificar y ejecutar correctamente una actualización.
-source-git-commit: 84c24627c00ecea97e29bf0cb023ddf2dc285aeb
+source-git-commit: ee949c72e42d329fdfb7f4068aeeb3cdc20e1758
 workflow-type: tm+mt
-source-wordcount: '129'
-ht-degree: 20%
+source-wordcount: '145'
+ht-degree: 19%
 
 ---
 
@@ -32,13 +32,16 @@ ht-degree: 20%
    - [Funcionamiento de los parches](patches/overview.md)
    - [Aplicar parches](patches/apply.md)
 - [!DNL Upgrade Compatibility Tool] {#upgrade-compatibility-tool}
-   - [[!DNL Upgrade Compatibility Tool] Información general](upgrade-compatibility-tool/overview.md)
+   - [Información general](upgrade-compatibility-tool/overview.md)
    - [Requisitos previos](upgrade-compatibility-tool/prerequisites.md)
-   - [Instalar](upgrade-compatibility-tool/install.md)
-   - [Ejecutar la herramienta](upgrade-compatibility-tool/run.md)
+   - Utilice la variable [!DNL Upgrade Compatibility Tool] {#use-upgrade-compatibility-tool}
+      - [Ejecute la herramienta en una interfaz de línea de comandos](upgrade-compatibility-tool/run.md)
+      - [Integración con [!DNL Site-Wide Analysis Tool]](upgrade-compatibility-tool/integrate-analysis-tool.md)
+      - [Ejecute la herramienta dentro del complemento Magento PHPStorm](upgrade-compatibility-tool/run-configuration-phpstorm-plugin.md)
+   - Informes {#reporting}
+      - [Informes](upgrade-compatibility-tool/reports.md)
+      - [Mensajes de error](upgrade-compatibility-tool/error-messages.md)
    - [Herramientas relacionadas](upgrade-compatibility-tool/related-tools.md)
-   - [Integrar el [!DNL Site-Wide Analysis Tool]](upgrade-compatibility-tool/integrate-analysis-tool.md)
-   - [Mensajes de error](upgrade-compatibility-tool/error-messages.md)
 - Desarrolladores colaboradores {#developer}
    - [Actualizar una instalación basada en Git](developer/git-installs.md)
    - [Administrar módulos](developer/manage-modules.md)
