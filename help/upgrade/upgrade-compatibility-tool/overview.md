@@ -1,7 +1,7 @@
 ---
 title: '"Descripción general de la variable [!DNL Upgrade Compatibility Tool]"'
 description: Obtenga información sobre [!DNL Upgrade Compatibility Tool] y cómo puede ayudarle con su proyecto de Adobe Commerce.
-source-git-commit: ee949c72e42d329fdfb7f4068aeeb3cdc20e1758
+source-git-commit: fd624a97d74c7f6a9e29223227dae425bb6fa68c
 workflow-type: tm+mt
 source-wordcount: '350'
 ht-degree: 0%
@@ -27,13 +27,13 @@ Puede usar la variable [!DNL Upgrade Compatibility Tool] mediante:
 - Integración de [!DNL Upgrade Compatibility Tool] con la variable [[!DNL Site-Wide Analysis Tool]](../upgrade-compatibility-tool/integrate-analysis-tool.md).
 - Una configuración de ejecución dentro de la variable [Complemento PHPStorm Magento](../upgrade-compatibility-tool/run-configuration-phpstorm-plugin.md).
 
-### Flujo de trabajo
+## Flujo de trabajo
 
 El diagrama siguiente muestra los posibles flujos de trabajo al ejecutar el [!DNL Upgrade Compatibility Tool]:
 
 ![[!DNL Upgrade Compatibility Tool] Diagrama](../../assets/upgrade-guide/uct-diagram-v5.png)
 
-### Ayuda a mejorar el [!DNL Upgrade Compatibility Tool]
+## Ayuda a mejorar el [!DNL Upgrade Compatibility Tool]
 
 Si necesita información o tiene preguntas que no están incluidas en esta guía, utilice los siguientes recursos:
 
@@ -43,7 +43,7 @@ La variable [!DNL Upgrade Compatibility Tool] usa reglas definidas dentro de nue
 
 Consulte la [Contribute](https://devdocs.magento.com/guides/v2.4/coding-standards/contributing.html) para obtener más información sobre cómo contribuir a los estándares de codificación.
 
-### Recursos
+## Recursos
 
 Consulte los siguientes recursos para comprender las actualizaciones de Adobe Commerce:
 
