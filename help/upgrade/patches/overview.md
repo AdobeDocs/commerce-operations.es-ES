@@ -1,9 +1,9 @@
 ---
 title: Cómo funcionan los parches
 description: Obtenga información sobre los distintos tipos de parches para Adobe Commerce y Magento Open Source y cómo funcionan.
-source-git-commit: 06ac3169a5e3813e4f50246f54f91998e14b5985
+source-git-commit: 45a44d98f149b4b9a1fbb4ac0bcea3eb372f49a8
 workflow-type: tm+mt
-source-wordcount: '619'
+source-wordcount: '614'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Los archivos de parches (o diferencias) son archivos de texto que señalan:
 - El número de línea para comenzar el cambio y el número de líneas que desea cambiar.
 - El nuevo código que se va a intercambiar.
 
-Cuando la variable [parche](https://en.wikipedia.org/wiki/Patch_(Unix)) se ejecuta, este archivo se lee en y los cambios especificados se realizan en los archivos.
+Cuando se ejecuta el programa de parches, este archivo se lee en y se realizan los cambios especificados en los archivos.
 
 Existen tres tipos de parches:
 
