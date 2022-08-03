@@ -1,7 +1,7 @@
 ---
 user-guide-title: Guías operativas
 user-guide-description: Obtenga información acerca de los aspectos operativos del mantenimiento de la aplicación Adobe Commerce o Magento Open Source.
-source-git-commit: 8b40946fc65d9089de752376abbd31e37f60c541
+source-git-commit: 6c462d615675615b317c6de529d1af5846d26e69
 workflow-type: tm+mt
 source-wordcount: '118'
 ht-degree: 17%
@@ -14,7 +14,7 @@ ht-degree: 17%
 - [Página principal](home.md)
 - [Información de la versión](https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html)
 - [Instalación](https://devdocs.magento.com/guides/v2.4/install-gde/install-flow-diagram.html)
-- [Configuración](https://devdocs.magento.com/guides/v2.4/config-guide/bk-config-guide.html)
+- [Configuración](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/overview.html)
 - [Migración](https://devdocs.magento.com/guides/v2.4/migration/bk-migration-guide.html)
 - [Actualización](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/overview.html?lang=en)
 - [Prácticas recomendadas de rendimiento](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/overview.html)

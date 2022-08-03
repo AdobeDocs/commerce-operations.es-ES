@@ -1,7 +1,7 @@
 ---
 title: Solución de rendimiento de la base de datos dividida
 description: Obtenga más información sobre la solución de división de bases de datos para Adobe Commerce y Magento Open Source.
-source-git-commit: bda758381d8d1b9209110adb168c36e1d504c4fa
+source-git-commit: 52f92ef79586d618fd4ac51c00eaa1446a2dc98f
 workflow-type: tm+mt
 source-wordcount: '640'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Descripción general de la solución de base de datos dividida
 
-{#ee-only}
+{{ee-only}}
 
 {{deprecate-split-db}}
 

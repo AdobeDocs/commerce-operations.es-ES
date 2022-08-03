@@ -1,7 +1,7 @@
 ---
 title: Configuración manual de bases de datos maestras
 description: Consulte las instrucciones sobre la configuración manual de la solución de base de datos dividida.
-source-git-commit: bda758381d8d1b9209110adb168c36e1d504c4fa
+source-git-commit: 52f92ef79586d618fd4ac51c00eaa1446a2dc98f
 workflow-type: tm+mt
 source-wordcount: '1402'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Configuración manual de bases de datos maestras
 
-{#ee-only}
+{{ee-only}}
 
 {{deprecate-split-db}}
 
