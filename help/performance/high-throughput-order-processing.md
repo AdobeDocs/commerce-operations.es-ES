@@ -1,9 +1,9 @@
 ---
 title: Procesamiento de pedidos de alto rendimiento
 description: Optimice la ubicación de los pedidos y la experiencia de cierre de compra para su implementación de Adobe Commerce o Magento Open Source.
-source-git-commit: c4c52baa9e04a4e935ccc29fcce2ac2745a454ee
+source-git-commit: 4ce6f01ab6c3e0bb408657727b65bcb2f84dd954
 workflow-type: tm+mt
-source-wordcount: '927'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -175,7 +175,7 @@ Cuando está desactivado, no se produce la comprobación de inventario al agrega
 [Install extensions]: https://devdocs.magento.com/extensions/install/
 [cloud-extensions]: https://devdocs.magento.com/cloud/howtos/install-components.html
 
-[mrg]: https://devdocs.magento.com/guides/v2.4//mrg/intro.html
+[mrg]: https://developer.adobe.com/commerce/php/module-reference/
 [AsyncOrder]: https://devdocs.magento.com/guides/v2.4/mrg/module-async-order.html
 [TotalDiferidoCalculando]: https://devdocs.magento.com/guides/v2.4/mrg/module-deferred-total-calculating.html
 [NegotiableQuoteAsyncOrder]: https://devdocs.magento.com/guides/v2.4/mrg/module-negotiable-quote-async-order.html
