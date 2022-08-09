@@ -1,9 +1,9 @@
 ---
 title: referencia env.php
 description: Consulte una lista de valores para el archivo env.php .
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: 7ecd54b40690ec046e9a3d46a6ef9ad44ffaf4ab
 workflow-type: tm+mt
-source-wordcount: '629'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -22,6 +22,7 @@ La variable `env.php` contiene las siguientes secciones:
 | `cron` | Habilitar o deshabilitar los trabajos cron |
 | `crypt` | La clave de cifrado para las funciones criptográficas |
 | `db` | Configuración de conexión de base de datos |
+| `default_connection` | Conexión predeterminada de colas de mensajes |
 | `directories` | Configuración de asignación de directorios de comercio |
 | `downloadable_domains` | Lista de dominios descargables |
 | `install` | La fecha de instalación |
@@ -168,6 +169,19 @@ Todas las configuraciones de base de datos están disponibles en este nodo.
   ]
 ]
 ```
+
+## default_connection
+
+Define la conexión predeterminada para las colas de mensajes. El valor puede ser `db`, `amqp`o un sistema de cola personalizado como `redismq`. Si especifica cualquier valor que no sea `db`, el software de la cola de mensajes debe instalarse y configurarse primero. De lo contrario, los mensajes no se procesarán correctamente.
+
+```conf
+'queue' => [
+    'default_connection' => 'amqp'
+]
+```
+
+If `queue/default_connection` se especifica en el sistema `env.php` , esta conexión se utiliza para todas las colas de mensajes a través del sistema, a menos que una conexión específica esté definida en un `queue_topology.xml`, `queue_publisher.xml` o `queue_consumer.xml` archivo.
+Por ejemplo, si `queue/default_connection` es `amqp` en `env.php` pero `db` La conexión se especifica en los archivos XML de configuración de cola de un módulo, el módulo utilizará MySQL como agente de mensajes.
 
 ## directorios
 
