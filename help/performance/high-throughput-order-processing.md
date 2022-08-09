@@ -1,9 +1,9 @@
 ---
 title: Procesamiento de pedidos de alto rendimiento
 description: Optimice la ubicación de los pedidos y la experiencia de cierre de compra para su implementación de Adobe Commerce o Magento Open Source.
-source-git-commit: 4ce6f01ab6c3e0bb408657727b65bcb2f84dd954
+source-git-commit: 6afdb941ce3753af02bde3dddd4e66414f488957
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1046'
 ht-degree: 0%
 
 ---
@@ -166,6 +166,21 @@ La variable _Habilitar inventario al cargar el carro de compras_ la configuraci�
 Cuando está desactivado, no se produce la comprobación de inventario al agregar un producto al carro de compras. Si se omite esta comprobación de inventario, algunos escenarios fuera de existencias podrían generar otros tipos de errores. Comprobación de inventario _always_ se produce en el paso de colocación del pedido, incluso cuando está desactivado.
 
 **Habilitar Comprobación de inventario al cargar el carro de compras** está habilitado (establecido en Sí) de forma predeterminada. Para desactivar la comprobación de inventario al cargar el carro de compras, establezca **[!UICONTROL Enable Inventory Check On Cart Load]** a `No` en la interfaz de usuario del administrador **Almacenes** > **Configuración** > **Catálogo** > **Inventario** > **Opciones de stock** para obtener más información. Consulte [Configurar opciones globales][global] y [Inventario de catálogo][inventory] en el _Guía del usuario_.
+
+## Equilibrio de carga
+
+Puede ayudar a equilibrar la carga entre diferentes nodos al habilitar conexiones secundarias para la base de datos MySQL y la instancia de Redis.
+
+Adobe Commerce puede leer varias bases de datos o instancias de Redis de forma asíncrona. Si utiliza Commerce en la infraestructura de la nube, puede configurar las conexiones secundarias editando el [MYSQL_USE_SLAVE_CONNECTION](https://devdocs.magento.com/cloud/env/variables-deploy.html#mysql_use_slave_connection) y [REDIS_USE_SLAVE_CONNECTION](https://devdocs.magento.com/cloud/env/variables-deploy.html#redis_use_slave_connection) en la variable `.magento.env.yaml` archivo. Solo un nodo necesita gestionar el tráfico de lectura y escritura, por lo que debe establecer las variables en `true` crea una conexión secundaria para el tráfico de solo lectura. Configure los valores en `false` para quitar cualquier matriz de conexión de sólo lectura existente de la `env.php` archivo.
+
+Ejemplo de `.magento.env.yaml` archivo:
+
+```yaml
+stage:
+  deploy:
+    MYSQL_USE_SLAVE_CONNECTION: true
+    REDIS_USE_SLAVE_CONNECTION: true
+```
 
 <!-- link definitions -->
 
