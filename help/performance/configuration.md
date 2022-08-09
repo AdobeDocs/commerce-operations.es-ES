@@ -1,7 +1,7 @@
 ---
 title: Prácticas recomendadas de configuración
 description: Optimice el tiempo de respuesta de su implementación de Adobe Commerce o Magento Open Source mediante estas prácticas recomendadas.
-source-git-commit: 20c4f55162b25be8906562c395abf4671437992b
+source-git-commit: c65c065c5f9ac2847caa8898535afdacf089006a
 workflow-type: tm+mt
 source-wordcount: '959'
 ht-degree: 0%
@@ -76,7 +76,7 @@ Al activar el **[!UICONTROL Enable [!DNL JavaScript] Bundling]** , permite que C
 
 ### Sugerencias de agrupamiento
 
-* Le recomendamos que utilice herramientas de terceros para la minificación y el agrupamiento (como [r.js](http://requirejs.org/)). [!DNL Commerce] los mecanismos integrados no son óptimos y se envían como alternativas de reserva.
+* Le recomendamos que utilice herramientas de terceros para la minificación y el agrupamiento (como [r.js](https://requirejs.org/)). [!DNL Commerce] los mecanismos integrados no son óptimos y se envían como alternativas de reserva.
 * La activación del protocolo HTTP2 puede ser una buena alternativa al uso del paquete JS. El protocolo ofrece casi las mismas ventajas.
 * No se recomienda utilizar configuraciones obsoletas como la combinación de archivos JS y CSS, ya que solo se diseñaron para JS cargados sincrónicamente en la sección HEAD de la página. El uso de esta técnica puede hacer que el agrupamiento y la lógica de requiredJS funcionen incorrectamente.
 

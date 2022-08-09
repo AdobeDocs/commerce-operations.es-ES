@@ -1,7 +1,7 @@
 ---
 title: Información general sobre las colas de mensajes
 description: Obtenga información sobre el marco de la cola de mensajes y cómo funciona con la aplicación Adobe Commerce y Magento Open Source.
-source-git-commit: 5c0d285717a79d654af769cb734ec385d2d4046f
+source-git-commit: c65c065c5f9ac2847caa8898535afdacf089006a
 workflow-type: tm+mt
 source-wordcount: '313'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Resumen de las colas de mensajes
 
-El marco de cola de mensajes (MQF) es un sistema que permite un [módulo](https://glossary.magento.com/module) para publicar mensajes en las colas. También define los consumidores que recibirán los mensajes de forma asíncrona. El MQF utiliza [RabbitMQ](http://www.rabbitmq.com) como agente de mensajería, que proporciona una plataforma escalable para enviar y recibir mensajes. También incluye un mecanismo para almacenar los mensajes no enviados. RabbitMQ se basa en la especificación del Protocolo avanzado de Message Queue Server (AMQP) 0.9.1.
+El marco de cola de mensajes (MQF) es un sistema que permite un [módulo](https://glossary.magento.com/module) para publicar mensajes en las colas. También define los consumidores que recibirán los mensajes de forma asíncrona. El MQF utiliza [RabbitMQ](https://www.rabbitmq.com) como agente de mensajería, que proporciona una plataforma escalable para enviar y recibir mensajes. También incluye un mecanismo para almacenar los mensajes no enviados. RabbitMQ se basa en la especificación del Protocolo avanzado de Message Queue Server (AMQP) 0.9.1.
 
 El diagrama siguiente ilustra el marco de cola de mensajes:
 
