@@ -1,9 +1,9 @@
 ---
 title: '"[!DNL Upgrade Compatibility Tool] Mensajes de error"'
 description: Obtenga más información sobre los mensajes de error que encuentra al usar la variable [!DNL Upgrade Compatibility Tool] en su proyecto de Adobe Commerce.
-source-git-commit: a13b0ea5aa109ce2f5d33e0966b194d64bad5d0c
+source-git-commit: 038cb256cb19c253ae9c0375258a555601428847
 workflow-type: tm+mt
-source-wordcount: '3781'
+source-wordcount: '4140'
 ht-degree: 4%
 
 ---
@@ -64,6 +64,17 @@ Se generan errores críticos cuando el código personalizado hace referencia a e
 | 5072 | Posible infracción de diseño del Magento 2. Se ha detectado una construcción típica de Magento 1.x | Actualice la construcción a los estándares del Magento 2. |
 | 5076 | No se puede usar en el espacio de nombres porque está reservado desde PHP 7 | Reemplace la palabra reservada en el espacio de nombres con una palabra clave no reservada. |
 | 5077 | No se puede usar como nombre de clase porque está reservado desde PHP 7 | Reemplace el nombre de clase reservado con un nombre no reservado. |
+
+{style=&quot;table-layout:auto&quot;}
+
+### Esquema de base de datos
+
+Los problemas críticos del esquema de base de datos se notifican si las tablas o columnas principales eliminadas son referenciadas por restricciones personalizadas.
+
+| Código de error | Descripción del error | Acción sugerida |
+| --- | --- | --- |
+| 7009 | La restricción personalizada hace referencia a una tabla principal que se eliminó en la versión de destino | Eliminar la restricción o actualizar los atributos referenceTable y referenceColumn |
+| 7010 | La restricción personalizada hace referencia a una columna principal que se eliminó en la versión de destino | Eliminar la restricción o actualizar el atributo referenceColumn |
 
 {style=&quot;table-layout:auto&quot;}
 
@@ -199,6 +210,23 @@ Los errores de código personalizado se generan cuando el código personalizado 
 | 6009 | `jQuery.isArray()` está en desuso | En su lugar, utilice el método nativo Array.isArray. |
 | 6009 | `jQuery.parseJSON()` está en desuso | Para analizar cadenas JSON, utilice el método nativo JSON.parse en su lugar. |
 | 6010 | (`jQuery.expr[":"]`, `jQuery.expr.filters`) está en desuso | Utilice jQuery.expr.pseudos en su lugar. |
+
+{style=&quot;table-layout:auto&quot;}
+
+### Esquema de base de datos
+
+Los errores del esquema de base de datos se generan si las tablas, columnas, índices o restricciones de la base de datos, añadidas o eliminadas en la versión de Adobe Commerce de destino, pueden dar lugar a conflictos con el esquema de base de datos personalizado.
+
+| Código de error | Descripción del error | Acción sugerida |
+| --- | --- | --- |
+| 7001 | La versión principal de destino introduce una tabla con el mismo nombre que una tabla declarada por un módulo personalizado | Usar la nueva tabla principal (si es adecuado) o cambiar el nombre de la tabla personalizada |
+| 7002 | La tabla principal ampliada por un módulo personalizado se ha eliminado en la versión de destino | Todas las referencias de tabla principal eliminadas deben eliminarse de la base de código |
+| 7003 | La versión principal de destino introduce una columna con el mismo nombre que una columna declarada por un módulo personalizado | Utilice la nueva columna principal (si corresponde) o cambie el nombre de la columna personalizada |
+| 7004 | La columna principal que se amplía con un módulo personalizado se eliminó en la versión de destino | Todas las referencias de columnas principales eliminadas deben eliminarse de la base de código |
+| 7005 | La versión principal de destino introduce un índice con el mismo referenceId que un índice declarado por un módulo personalizado | Eliminar (si está duplicado en el índice principal introducido) o cambiar el nombre del índice personalizado |
+| 7006 | El índice principal ampliado por un módulo personalizado se eliminó en la versión de destino | Todas las referencias de índice principal eliminadas deben eliminarse de la base de código |
+| 7007 | La versión principal de destino introduce una restricción con el mismo nombre que una restricción declarada por un módulo personalizado | Eliminar (si está duplicado con la restricción principal introducida) o cambiar el nombre de la restricción personalizada |
+| 7008 | La restricción principal extendida por un módulo personalizado se eliminó en la versión de destino | Utilice la nueva restricción principal (si procede) o cambie el nombre de la restricción personalizada |
 
 {style=&quot;table-layout:auto&quot;}
 
