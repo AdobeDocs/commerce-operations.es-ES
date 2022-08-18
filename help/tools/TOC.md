@@ -1,9 +1,9 @@
 ---
 user-guide-title: Herramientas
 user-guide-description: Obtenga información sobre las distintas herramientas que puede utilizar con Adobe Commerce, sus usos, el proceso de instalación y cómo obtener acceso.
-source-git-commit: 3f2a401bb916fc04405f21ba2acfc42f7defdccb
+source-git-commit: 1b9f57460f5b336c4ccacef01709c696acbc8316
 workflow-type: tm+mt
-source-wordcount: '106'
+source-wordcount: '112'
 ht-degree: 0%
 
 ---
@@ -42,6 +42,7 @@ ht-degree: 0%
    - [La ficha RabbitMQ](observation-for-adobe-commerce/rabbitmq-tab.md)
    - [La pestaña Cron](observation-for-adobe-commerce/cron-tab.md)
    - [La ficha Indexación](observation-for-adobe-commerce/indexing-tab.md)
+   - [La ficha Vista rápida](observation-for-adobe-commerce/oac-quickview-tab.md)
    - [La pestaña Seguridad](observation-for-adobe-commerce/security-tab.md)
+   - [La ficha Infra](observation-for-adobe-commerce/oac-infra.md)
    - [Cómo utilizar Observation para Adobe Commerce](observation-for-adobe-commerce/how-to-use.md)
-
