@@ -1,9 +1,9 @@
 ---
 title: '"Ejecute el [!DNL Upgrade Compatibility Tool]"'
 description: Siga estos pasos para ejecutar el [!DNL Upgrade Compatibility Tool] en una interfaz de línea de comandos para su proyecto de Adobe Commerce.
-source-git-commit: 038cb256cb19c253ae9c0375258a555601428847
+source-git-commit: c10afb6632fa4e77f46b540c2b89f54b9cab430c
 workflow-type: tm+mt
-source-wordcount: '1145'
+source-wordcount: '1071'
 ht-degree: 0%
 
 ---
@@ -218,7 +218,6 @@ bin/uct --help
 Que devuelve una lista con todas las disponibles `help` para las [!DNL Upgrade Compatibility Tool] en una interfaz de línea de comandos:
 
 ```terminal
-- -m, --module-path[=MODULE-PATH]: Path of the modules to be analysed
 - -a, --current-version[=CURRENT-VERSION]: Current Adobe Commerce version, version of the Adobe Commerce installation will be used if omitted.
 - -c, --coming-version[=COMING-VERSION]: Target Adobe Commerce version, latest released version of Adobe Commerce will be used if omitted. Provides a list of all available Adobe Commerce versions.
 - --json-output-path[=JSON-OUTPUT-PATH]: Path of the file where the output will be exported in json format.
@@ -260,13 +259,3 @@ La variable [!DNL Upgrade Compatibility Tool] proporciona un informe con resulta
 - Utilice la opción `--ignore-current-version-compatibility-issues` cuando solo desee obtener problemas nuevos que se introduzcan con la actualización de su versión actual a la versión de destino en su [!DNL Upgrade Compatibility Tool] informe.
 - Adición de la variable `--min-issue-level` , esta configuración permite establecer el nivel mínimo de problema para ayudar a priorizar solo los problemas más importantes con la actualización.
 - La variable [!DNL Upgrade Compatibility Tool] requiere al menos 2 GB de RAM para ejecutarse. Se recomienda esta configuración para evitar problemas debido a una limitación de memoria baja. La variable [!DNL Upgrade Compatibility Tool] muestra una pregunta si ejecuta la variable `upgrade:check` comando con un valor bajo `memory_limit` configuración.
-- Si desea analizar únicamente un determinado proveedor, módulo o incluso directorio, también puede especificar la ruta como opción. Ejecute el `bin` con la opción añadida `-m`. Esto permite que la variable [!DNL Upgrade Compatibility Tool] para analizar un módulo específico de forma independiente y ayuda con los problemas de memoria que pueden producirse al ejecutar el [!DNL Upgrade Compatibility Tool]. Especifique la variable `-m` para ejecutar la herramienta en un módulo específico:
-
-   ```bash
-   bin/uct upgrade:check <dir> -m[=MODULE-PATH]
-   ```
-
-Donde los argumentos son los siguientes:
-
-- `<dir>`: directorio de instalación de Adobe Commerce.
-- `[=MODULE-PATH]`: Directorio de rutas del módulo específico.
