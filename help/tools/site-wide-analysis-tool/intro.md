@@ -1,9 +1,9 @@
 ---
 title: '"[!DNL Site-Wide Analysis Tool]"'
 description: Obtenga información sobre [!DNL Site-Wide Analysis] Herramienta, sus usos, el proceso de instalación y cómo obtener acceso
-source-git-commit: 52a74694ad01cf3192a7eb8af086d77a5b7e9276
+source-git-commit: ded2204fe0b3327f72bbce2ec03f8d66aa1b9353
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '420'
 ht-degree: 0%
 
 ---
@@ -45,3 +45,9 @@ Vea todas las perspectivas importantes sobre el sitio en un solo lugar. [!DNL Si
 ## ¿Para quién es esta guía?
 
 Comerciantes y socios que desean tener buena visibilidad en sus sitios web de Adobe Commerce. Permite a los comerciantes mejorar la experiencia de sus clientes y tener una mayor alineación en las recomendaciones de prácticas recomendadas y los problemas fundamentales.
+
+## [!DNL Site-Wide Analysis Tool] demostración
+
+Vea este vídeo para obtener más información sobre [!DNL Site-Wide Analysis Tool]:
+
+>[!VIDEO](https://video.tv.adobe.com/v/344001?quality=12)
