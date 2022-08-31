@@ -63,7 +63,7 @@ Los archivos de asignación se tratan con más detalle en [[!DNL Data Migration 
 ![Flujo de migración](../../assets/data-migration/migration_flow.png)
 
 <!-- Link definitions -->
-[[!DNL Data Migration Tool] Especificación técnica]: technical-specified.md
+[[!DNL Data Migration Tool] Especificación técnica]: technical-specification.md
 
 [Migration Modes]: ../../assets/data-migration/MigrationModes2.png
 
