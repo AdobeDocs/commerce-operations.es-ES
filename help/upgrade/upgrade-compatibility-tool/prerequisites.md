@@ -1,9 +1,9 @@
 ---
-title: '"[!DNL Upgrade Compatibility Tool] requisitos"'
-description: 'Verifique que su sistema cumpla los requisitos necesarios para ejecutar el [!DNL Upgrade Compatibility Tool] en una interfaz de línea de comandos para su proyecto de Adobe Commerce. '
-source-git-commit: 167e0e7554e912aeef276a34daeaff29d7762009
+title: "[!DNL Upgrade Compatibility Tool] requisitos"
+description: Verifique que su sistema cumpla los requisitos necesarios para ejecutar el [!DNL Upgrade Compatibility Tool] en una interfaz de línea de comandos para su proyecto de Adobe Commerce.
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '273'
+source-wordcount: '275'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 {{commerce-only}}
 
-Debe tener [Claves de acceso de Adobe Commerce](https://devdocs.magento.com/marketplace/sellers/profile-information.html#access-keys) para descargar y usar el [!DNL Upgrade Compatibility Tool]. Añada sus claves de acceso de Adobe Commerce a su `auth.json` que se encuentra en `~/.composer` de forma predeterminada.
+Debe tener [Claves de acceso de Adobe Commerce](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-information/#access-keys) para descargar y usar el [!DNL Upgrade Compatibility Tool]. Añada sus claves de acceso de Adobe Commerce a su `auth.json` que se encuentra en `~/.composer` de forma predeterminada.
 
 >[!NOTE]
 >

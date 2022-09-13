@@ -1,9 +1,9 @@
 ---
 title: Hardware Recommendations
 description: Revise una lista de hardware recomendado relacionado con el rendimiento óptimo de las implementaciones de Adobe Commerce y Magento Open Source.
-source-git-commit: 9ab52374e031bd2b0a846dd5f47c89ff788dcafa
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '481'
+source-wordcount: '475'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Escenarios y requisitos de memoria de PHP esperados:
 
 * El nodo web solo sirve para páginas de tienda: 256 MB
 * Webnode sirve para páginas de administración con un catálogo grande: 1 GB
-* [!DNL Commerce] cron indexando un sitio con un catálogo grande: >256 MB (véase [configuración avanzada](https://devdocs.magento.com/guides/v2.4/performance-best-practices/advanced-setup.html) para optimizar el rendimiento).
+* [!DNL Commerce] cron indexando un sitio con un catálogo grande: >256 MB (véase [configuración avanzada](../performance/advanced-setup.md) para optimizar el rendimiento).
 * [!DNL Commerce] compilar e implementar recursos estáticos: 756 MB
 * [!DNL Commerce] generación de perfiles del kit de herramientas de rendimiento: >1 GB de RAM PHP, >16 MB [!DNL MySQL] Ajustes de TMP_TABLE_SIZE y MAX_HEAP_TABLE_SIZE
 

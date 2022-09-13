@@ -1,9 +1,9 @@
 ---
 title: Implementación de actualización
 description: Obtenga información sobre las distintas fases de implementación de la actualización para proyectos de Adobe Commerce y Magento Open Source.
-source-git-commit: 3d9a721e33621b78f03f16b932a1ba2904ae4010
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '877'
+source-wordcount: '870'
 ht-degree: 1%
 
 ---
@@ -33,7 +33,7 @@ Los siguientes son elementos que puede que desee incluir en un análisis exhaust
    - Actualizar la versión de destino
    - Número y detalles de errores críticos encontrados
 
-- Actualización de servicios para admitir la versión de destino. Utilice la siguiente plantilla de tabla para asignar los servicios que debe actualizar. Utilice la variable [requisitos del sistema](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html) para determinar qué añadir a la variable _Actualizar a_ para abrir el Navegador.
+- Actualización de servicios para admitir la versión de destino. Utilice la siguiente plantilla de tabla para asignar los servicios que debe actualizar. Utilice la variable [requisitos del sistema](../../installation/system-requirements.md) para determinar qué añadir a la variable _Actualizar a_ para abrir el Navegador.
 
 
    | Servicio | Versión actual | Actualizar a | Notas |
@@ -64,7 +64,7 @@ Además, los socios pueden participar en la [Programa Beta de Adobe Commerce](ht
 
 ## Desarrollo y control de calidad
 
-La prueba es la fase de una actualización que requiere la mayor cantidad de tiempo. Como resultado, este proceso debe ser lo más automatizado posible. La variable _[Guía de prueba de aplicaciones](https://devdocs.magento.com/guides/v2.4/test/testing.html)_ proporciona detalles sobre cómo configurar y utilizar herramientas de prueba de sistemas y plataformas para un control de calidad más rápido. Utilice un entorno de ensayo para probar y validar la actualización antes de pasar a producción.
+La prueba es la fase de una actualización que requiere la mayor cantidad de tiempo. Como resultado, este proceso debe ser lo más automatizado posible. La variable _[Guía de prueba de aplicaciones](https://developer.adobe.com/commerce/testing/guide/)_ proporciona detalles sobre cómo configurar y utilizar herramientas de prueba de sistemas y plataformas para un control de calidad más rápido. Utilice un entorno de ensayo para probar y validar la actualización antes de pasar a producción.
 
 ## UAT y preparación para el lanzamiento
 

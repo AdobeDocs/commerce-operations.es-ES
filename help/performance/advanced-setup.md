@@ -1,9 +1,9 @@
 ---
 title: Configuración avanzada
 description: Revise las prácticas recomendadas y recomendaciones para los sistemas empresariales grandes diseñados para procesar grandes volúmenes de datos.
-source-git-commit: 9ab52374e031bd2b0a846dd5f47c89ff788dcafa
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '1203'
+source-wordcount: '1192'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ Por ejemplo, si está ejecutando un perfil similar a B2B Medium, puede anular el
 
 Un gran número de SKU de producto, sitios web, grupos de clientes o catálogos compartidos afectará al tiempo de ejecución de los indexadores de precios de producto y reglas de catálogo. Esto se debe a que, de forma predeterminada, todos los sitios web se asignan a todos los grupos de clientes (catálogos compartidos).
 
-Para reducir el tiempo de indexación, puede [excluir determinados sitios web de grupos de clientes (catálogos compartidos)](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/indexer-optimization.html#customer-group-limitations-by-websites).
+Para reducir el tiempo de indexación, puede [excluir determinados sitios web de grupos de clientes (catálogos compartidos)](https://developer.adobe.com/commerce/php/development/components/indexing/optimization/#customer-group-limitations-by-websites).
 
 ## Configuración de Redis
 
@@ -56,7 +56,7 @@ Magento Open Source y Adobe [!DNL Commerce] cola de mensajes de asistencia imple
 
 >[!WARNING]
 >
->La función de base de datos dividida era [obsoleto](https://community.magento.com/t5/Magento-DevBlog/Deprecation-of-Split-Database-in-Magento-Commerce/ba-p/465187) en la versión 2.4.2 de Adobe Commerce. Consulte [Revertir de una base de datos dividida a una única base de datos](https://devdocs.magento.com/guides/v2.4/config-guide/revert-split-database.html).
+>La función de base de datos dividida era [obsoleto](https://community.magento.com/t5/Magento-DevBlog/Deprecation-of-Split-Database-in-Magento-Commerce/ba-p/465187) en la versión 2.4.2 de Adobe Commerce. Consulte [Revertir de una base de datos dividida a una única base de datos](../configuration/storage/revert-split-database.md).
 
 Adobe Commerce le permite configurar el almacenamiento de base de datos escalable para satisfacer las necesidades de un negocio en crecimiento. Puede configurar tres bases de datos maestras independientes que sirven a dominios específicos:
 
@@ -95,7 +95,7 @@ Este comando realiza cambios de configuración, pero no configura la replicació
 Después de dividir la base de datos maestra y establecer bases de datos esclavas, [!DNL Commerce] regula automáticamente las conexiones a una base de datos específica, tomando decisiones según el tipo de solicitud (POST, PUT, GET, etc.) y el recurso de datos. If [!DNL Commerce] o sus extensiones realizan operaciones de escritura en una solicitud de GET, el sistema cambia automáticamente la conexión de esclavo a base de datos maestra. Funciona del mismo modo con las bases de datos maestras: tan pronto como se trabaja con una tabla relacionada con el cierre de compra, el sistema redirige todas las consultas a una base de datos específica. Mientras tanto, todas las consultas relacionadas con el catálogo irán a la base de datos principal.
 
 Para obtener más información sobre la configuración y las ventajas de la configuración maestra/esclava múltiple, consulte
-[Solución de rendimiento de la base de datos dividida](https://devdocs.magento.com/guides/v2.4/config-guide/multi-master/multi-master.html).
+[Solución de rendimiento de la base de datos dividida](../configuration/storage/multi-master.md).
 
 ## Servir contenido multimedia
 

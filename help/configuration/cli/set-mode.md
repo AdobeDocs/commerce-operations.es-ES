@@ -1,9 +1,9 @@
 ---
 title: Definir el modo de operación
 description: Obtenga más información sobre la configuración de los modos de operación de Adobe Commerce.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '383'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ Excepciones:
 
 ## Mostrar el modo actual
 
-La forma más sencilla de hacerlo es ejecutar este comando como el [propietario del sistema de archivos](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html). Si ha compartido un alojamiento, este es el usuario que su proveedor le da para iniciar sesión en el servidor. Si tiene un servidor privado, suele ser una cuenta de usuario local en el servidor de comercio.
+La forma más sencilla de hacerlo es ejecutar este comando como el [propietario del sistema de archivos](../../installation/prerequisites/file-system/overview.md). Si ha compartido un alojamiento, este es el usuario que su proveedor le da para iniciar sesión en el servidor. Si tiene un servidor privado, suele ser una cuenta de usuario local en el servidor de comercio.
 
 Uso de comandos:
 

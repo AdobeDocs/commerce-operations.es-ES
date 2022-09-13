@@ -1,9 +1,9 @@
 ---
 title: Borrado de caché con Varnish
 description: Aprenda cómo funciona la limpieza de caché con Varnish y cómo utilizarla como acelerador de almacenamiento en caché web para la aplicación Adobe Commerce.
-source-git-commit: c65c065c5f9ac2847caa8898535afdacf089006a
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '395'
+source-wordcount: '388'
 ht-degree: 0%
 
 ---
@@ -57,4 +57,4 @@ A continuación, puede purgar los hosts de Varnish cuando actualice la caché de
 
 Para actualizar la caché mediante el administrador, haga clic en **[!UICONTROL SYSTEM]** > Herramientas > **Administración de caché** y haga clic en **Vaciar caché del Magento** en la parte superior de la página. (También puede actualizar tipos de caché individuales).
 
-Para actualizar la caché utilizando la línea de comandos, normalmente utiliza la variable [`magento cache:clean <type>`](../cli/manage-cache.md#clean-and-flush-cache-types) como [propietario del sistema de archivos](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+Para actualizar la caché utilizando la línea de comandos, normalmente utiliza la variable [`magento cache:clean <type>`](../cli/manage-cache.md#clean-and-flush-cache-types) como [propietario del sistema de archivos](../../installation/prerequisites/file-system/overview.md).

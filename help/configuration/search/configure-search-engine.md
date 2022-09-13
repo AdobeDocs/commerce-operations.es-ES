@@ -1,9 +1,9 @@
 ---
 title: Configuración del motor de búsqueda
 description: Configure un motor de búsqueda con Adobe Commerce y Magento Open Source.
-source-git-commit: 80abb0180fcd8ecc275428c23b68feb5883cbc28
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '666'
+source-wordcount: '637'
 ht-degree: 0%
 
 ---
@@ -41,8 +41,8 @@ A menos que cambie la configuración del servidor del motor de búsqueda, los va
 
    Continúe con:
 
-   - [Configurar Apache para su motor de búsqueda](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/es-config-apache.html)
-   - [Configure nginx en su motor de búsqueda](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/es-config-nginx.html)
+   - [Configurar Apache para su motor de búsqueda](../../installation/prerequisites/search-engine/configure-apache.md)
+   - [Configure nginx en su motor de búsqueda](../../installation/prerequisites/search-engine/configure-nginx.md)
 
    o verá:
 
@@ -53,7 +53,7 @@ Si es así, pruebe lo siguiente:
 - Asegúrese de que el servidor del motor de búsqueda se esté ejecutando.
 - Si el servidor se encuentra en un host diferente de Commerce, inicie sesión en el servidor de Commerce y haga ping en el host del motor de búsqueda. Resuelva los problemas de conectividad de red y vuelva a probar la conexión.
 - Examine la ventana de comandos en la que inició Elasticsearch o OpenSearch para detectar rastros y excepciones de pila. Debe resolverlos antes de continuar. En concreto, asegúrese de que inició su motor de búsqueda como usuario con `root` privilegios.
-- Asegúrese de que [Firewall UNIX y SELinux](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/elasticsearch.html#firewall-selinux) están deshabilitadas o configuran reglas para permitir que su motor de búsqueda y Comercio se comuniquen entre sí.
+- Asegúrese de que [Firewall UNIX y SELinux](../../installation/prerequisites/search-engine/overview.md#firewall-and-selinux) están deshabilitadas o configuran reglas para permitir que su motor de búsqueda y Comercio se comuniquen entre sí.
 - Compruebe el valor de la variable **Nombre de host del servidor Elasticsearch** campo . Asegúrese de que el servidor esté disponible. Puede probar la dirección IP del servidor en su lugar.
 - Utilice la variable `netstat -an | grep <listen-port>` para verificar que el puerto especificado en la variable **Puerto del servidor Elasticsearch** no se está utilizando en otro proceso.
 
@@ -85,7 +85,7 @@ Para limpiar la caché con la línea de comandos: [`bin/magento cache:clean`](..
 
 Para reindexar usando la línea de comandos:
 
-1. Inicie sesión en el servidor de Commerce como, o cambie a [propietario del sistema de archivos](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. Inicie sesión en el servidor de Commerce como, o cambie a [propietario del sistema de archivos](../../installation/prerequisites/file-system/overview.md).
 1. Introduzca cualquiera de los siguientes comandos:
 
    Introduzca el siguiente comando para reindexar solo el índice de búsqueda del catálogo:

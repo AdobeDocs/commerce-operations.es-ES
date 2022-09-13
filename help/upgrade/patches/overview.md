@@ -1,9 +1,9 @@
 ---
 title: Cómo funcionan los parches
 description: Obtenga información sobre los distintos tipos de parches para Adobe Commerce y Magento Open Source y cómo funcionan.
-source-git-commit: 45a44d98f149b4b9a1fbb4ac0bcea3eb372f49a8
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '614'
+source-wordcount: '606'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 >[!WARNING]
 >
->Recomendamos encarecidamente que pruebe todos los parches en un entorno de ensayo o desarrollo antes de implementarlos en producción. También recomendamos encarecidamente que realice una copia de seguridad de sus datos antes de aplicar un parche. Consulte [Hacer una copia de seguridad y revertir el sistema de archivos](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-backup.html).
+>Recomendamos encarecidamente que pruebe todos los parches en un entorno de ensayo o desarrollo antes de implementarlos en producción. También recomendamos encarecidamente que realice una copia de seguridad de sus datos antes de aplicar un parche. Consulte [Hacer una copia de seguridad y revertir el sistema de archivos](../../installation/tutorials/backup.md).
 
 Los archivos de parches (o diferencias) son archivos de texto que señalan:
 

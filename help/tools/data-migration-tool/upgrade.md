@@ -1,9 +1,9 @@
 ---
 title: Actualice el [!DNL Data Migration Tool]
 description: Obtenga información sobre cómo actualizar el [!DNL Data Migration Tool] para transferir datos entre el Magento 1 y el Magento 2.
-source-git-commit: b5a2c362b09de993e1dc196bdda90e74cf4a8ba2
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '239'
+source-wordcount: '227'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Antes de actualizar la variable [!DNL Data Migration Tool], debe:
 
 ### Actualice el software del Magento
 
-Si aún no lo ha hecho, [actualizar el software del Magento](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/overview.html).
+Si aún no lo ha hecho, [actualizar el software del Magento](../../upgrade/overview.md).
 
 ### Haga una copia de seguridad de `vendor/magento/data-migration-tool` directory
 
@@ -56,8 +56,8 @@ Consulte la [Instalar [!DNL Data Migration Tool]](install.md) tema para saber c�
 
 ## Actualice el [!DNL Data Migration Tool]
 
-1. Inicie sesión en el servidor Magento como o cambie a [el propietario del sistema de archivos](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
-1. Cambie al directorio raíz del Magento 2.
+1. Inicie sesión en el servidor de aplicaciones como o cambie a [el propietario del sistema de archivos](../../installation/prerequisites/file-system/overview.md).
+1. Cambie al directorio raíz de la aplicación.
 1. Introduzca el siguiente comando:
 
    ```bash

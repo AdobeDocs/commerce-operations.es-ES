@@ -1,9 +1,9 @@
 ---
 title: Administrar los indexadores
 description: Consulte ejemplos de cómo ver y administrar los indexadores de comercio.
-source-git-commit: dd84039be22b6bd25d57912615d64bad91970926
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '630'
+source-wordcount: '622'
 ht-degree: 0%
 
 ---
@@ -108,7 +108,7 @@ Catalog Search index has been rebuilt successfully in <time>
 
 ### Reindexación en modo paralelo
 
-Los indexadores tienen ámbitos y subprocesos múltiples para admitir la reindexación en modo paralelo. Se paralela por la dimensión del indizador y se ejecuta en varios subprocesos, lo que reduce el tiempo de procesamiento.
+Los indexadores tienen ámbitos y subprocesos múltiples para admitir la reindexación en modo paralelo. Se paraleliza por la dimensión del indizador y se ejecuta en varios subprocesos, lo que reduce el tiempo de procesamiento.
 
 En este contexto, `dimension` es el ámbito de la reindexación, por ejemplo, un `website` o solo un `customer_group`.
 
@@ -220,7 +220,7 @@ Catalog Search:                                    Update on Save
 
 >[!INFO]
 >
->Antes de cambiar de modo de indexador, le recomendamos que coloque el sitio web en [mantenimiento](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-maint.html) y [desactivar trabajos cron](https://devdocs.magento.com/cloud/configure/setup-cron-jobs.html#disable-cron-jobs). Esto garantiza que no sufra bloqueos de base de datos.
+>Antes de cambiar de modo de indexador, le recomendamos que coloque el sitio web en [mantenimiento](../../installation/tutorials/maintenance-mode.md) y [desactivar trabajos cron](https://devdocs.magento.com/cloud/configure/setup-cron-jobs.html#disable-cron-jobs). Esto garantiza que no sufra bloqueos de base de datos.
 
 Para especificar la configuración del indizador:
 

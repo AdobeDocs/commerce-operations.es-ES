@@ -1,9 +1,9 @@
 ---
 title: Comandos comunes
 description: Vea una muestra de comandos y uso comunes de Commerce CLI.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '270'
+source-wordcount: '248'
 ht-degree: 0%
 
 ---
@@ -44,10 +44,10 @@ Los comandos se muestran únicamente en forma de resumen; para obtener más info
 | [`magento dev:tests:run`](../cli/unit-tests.md) | Ejecuta pruebas automatizadas |
 | [`magento dev:xml:convert`](../cli/convert-layout-files.md) | Actualice los archivos XML de diseño para que coincidan con la nueva hoja de estilo Transformaciones de lenguaje de hojas de estilo ampliables (XSLT) |
 | [`magento setup:perf:generate-fixtures`](../cli/generate-data.md) | Genere datos para utilizarlos en pruebas de rendimiento. |
-| [`magento sampledata:install`](https://devdocs.magento.com/guides/v2.4/install-gde/install/sample-data.html) | Instala datos de ejemplo opcionales después de instalar la aplicación Commerce.<br><br>Para obtener más información sobre los datos de ejemplo, consulte [Datos de ejemplo opcionales](https://devdocs.magento.com/guides/v2.4/install-gde/install/sample-data.html). |
+| [`magento sampledata:install`](../../installation/sample-data/overview.md) | Instala datos de ejemplo opcionales después de instalar la aplicación Commerce.<br><br>Para obtener más información sobre los datos de ejemplo, consulte [Datos de ejemplo opcionales](../../installation/sample-data/overview.md). |
 | [`magento config:{set/sensitive:set/show/}`](../cli/set-configuration-values.md) | Gestiona las configuraciones del servidor |
-| [`magento admin:user:{create/unlock}`](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-admin.html) | Crea/edita/desbloquea usuarios administradores. |
-| [`magento dev:template-hints:{enable/disable}`](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/themes/debug-theme.html) | Habilita/deshabilita las sugerencias de plantilla para desarrolladores. |
+| [`magento admin:user:{create/unlock}`](../../installation/tutorials/admin.md#create-edit-or-unloack-an-administrator-account) | Crea/edita/desbloquea usuarios administradores. |
+| [`magento dev:template-hints:{enable/disable}`](https://developer.adobe.com/commerce/frontend-core/guide/themes/debug/) | Habilita/deshabilita las sugerencias de plantilla para desarrolladores. |
 
 ## Argumentos comunes
 

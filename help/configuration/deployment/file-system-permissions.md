@@ -1,9 +1,9 @@
 ---
 title: Permisos de acceso de sistemas de archivos
 description: Consulte cómo configurar el propietario o los propietarios del sistema de archivos de la aplicación Commerce para un sistema de desarrollo y producción.
-source-git-commit: 80abb0180fcd8ecc275428c23b68feb5883cbc28
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '895'
+source-wordcount: '866'
 ht-degree: 0%
 
 ---
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 # Permisos de acceso de sistemas de archivos
 
-En esta sección se explica cómo configurar el propietario o los propietarios del sistema de archivos de comercio para un sistema de desarrollo y producción. Antes de continuar, revise los conceptos mencionados en [Información general sobre la propiedad y los permisos del sistema de archivos](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+En esta sección se explica cómo configurar el propietario o los propietarios del sistema de archivos de comercio para un sistema de desarrollo y producción. Antes de continuar, revise los conceptos mencionados en [Información general sobre la propiedad y los permisos del sistema de archivos](../../installation/prerequisites/file-system/overview.md).
 
-Este tema se centra en el desarrollo del comercio y los sistemas de producción. Si va a instalar Commerce, consulte [Establezca la propiedad y los permisos previos a la instalación](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-system-perms.html).
+Este tema se centra en el desarrollo del comercio y los sistemas de producción. Si va a instalar Commerce, consulte [Establezca la propiedad y los permisos previos a la instalación](../../installation/prerequisites/file-system/configure-permissions.md).
 
 En las secciones siguientes se analizan los requisitos para uno o dos propietarios de sistemas de archivos. Esto significa que:
 
@@ -103,7 +103,7 @@ Para hacer que los archivos y directorios sean grabables para que pueda actualiz
 
 ### Configurado de forma opcional `magento_umask`
 
-Consulte [Configuración opcional de una máscara](https://devdocs.magento.com/guides/v2.4/install-gde/install/post-install-umask.html) en el _Guía de instalación_.
+Consulte [Configuración opcional de una máscara](../../installation/next-steps/set-umask.md) en el _Guía de instalación_.
 
 ## Propiedad del sistema de archivos de producción para alojamiento privado (dos usuarios)
 
@@ -121,7 +121,7 @@ Si utiliza su propio servidor (incluida la configuración del servidor privado d
    >
    >El usuario de la línea de comandos también se denomina _propietario del sistema de archivos_.
 
-Dado que estos usuarios necesitan acceder a los mismos archivos, le recomendamos que cree un [grupo compartido](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-system-perms.html#mage-owner-about-group) a los que ambos pertenecen. Los siguientes procedimientos suponen que ya ha hecho esto.
+Dado que estos usuarios necesitan acceder a los mismos archivos, le recomendamos que cree un [grupo compartido](../../installation/prerequisites/file-system/configure-permissions.md#about-the-shared-group) a los que ambos pertenecen. Los siguientes procedimientos suponen que ya ha hecho esto.
 
 Consulte una de las siguientes secciones:
 

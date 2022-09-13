@@ -1,9 +1,9 @@
 ---
 title: Solución de rendimiento de la base de datos dividida
 description: Obtenga más información sobre la solución de división de bases de datos para Adobe Commerce y Magento Open Source.
-source-git-commit: 52f92ef79586d618fd4ac51c00eaa1446a2dc98f
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '640'
+source-wordcount: '632'
 ht-degree: 0%
 
 ---
@@ -70,7 +70,7 @@ Esto también significa que puede:
 
    >[!WARNING]
    >
-   >Debe realizar una copia de seguridad de las dos instancias de base de datos adicionales manualmente. Commerce realiza una copia de seguridad solo de la instancia de base de datos principal. La variable [`magento setup:backup --db`](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-backup.html) las opciones de comando y administración no hacen una copia de seguridad de las tablas adicionales.
+   >Debe realizar una copia de seguridad de las dos instancias de base de datos adicionales manualmente. Commerce realiza una copia de seguridad solo de la instancia de base de datos principal. La variable [`magento setup:backup --db`](../../installation/tutorials/backup.md) las opciones de comando y administración no hacen una copia de seguridad de las tablas adicionales.
 
 ## Requisitos previos
 

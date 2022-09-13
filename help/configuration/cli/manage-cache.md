@@ -1,9 +1,9 @@
 ---
 title: Administrar la caché
 description: Administre los tipos de caché y vea el estado de la caché.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '877'
+source-wordcount: '870'
 ht-degree: 0%
 
 ---
@@ -71,7 +71,7 @@ Este comando le permite habilitar o deshabilitar todos los tipos de caché o sol
 
 >[!INFO]
 >
->A partir de la versión 2.2, solo puede habilitar o deshabilitar los tipos de caché mediante la línea de comandos mientras ejecuta Commerce en modo de producción. Si ejecuta Commerce en modo de desarrollador, puede habilitar o deshabilitar los tipos de caché mediante la línea de comandos o manualmente. Antes de hacerlo, debe realizar manualmente `<magento_root>/app/etc/env.php` grabable por el [propietario del sistema de archivos](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-system-perms.html).
+>A partir de la versión 2.2, solo puede habilitar o deshabilitar los tipos de caché mediante la línea de comandos mientras ejecuta Commerce en modo de producción. Si ejecuta Commerce en modo de desarrollador, puede habilitar o deshabilitar los tipos de caché mediante la línea de comandos o manualmente. Antes de hacerlo, debe realizar manualmente `<magento_root>/app/etc/env.php` grabable por el [propietario del sistema de archivos](../../installation/prerequisites/file-system/overview.md).
 
 Puede limpiar (también denominado _flush_ o _actualizar_) tipos de caché que utilizan la línea de comandos o el administrador.
 

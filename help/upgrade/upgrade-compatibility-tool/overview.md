@@ -1,9 +1,9 @@
 ---
-title: '"Descripción general de la variable [!DNL Upgrade Compatibility Tool]"'
+title: "Descripción general de la variable [!DNL Upgrade Compatibility Tool]"
 description: Obtenga información sobre [!DNL Upgrade Compatibility Tool] y cómo puede ayudarle con su proyecto de Adobe Commerce.
-source-git-commit: ded2204fe0b3327f72bbce2ec03f8d66aa1b9353
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '351'
+source-wordcount: '344'
 ht-degree: 0%
 
 ---
@@ -45,15 +45,15 @@ Si necesita información o tiene preguntas que no están incluidas en esta guía
 
 Para conectarse con el [!DNL Upgrade Compatibility Tool] equipo, póngase en contacto con nosotros en el canal Slack de ingeniería [#upgrade-compatibility-tool](https://magentocommeng.slack.com/archives/C019Y143U9F). Queremos escuchar sus comentarios, problemas y sugerencias para ayudarnos a mejorar la herramienta.
 
-La variable [!DNL Upgrade Compatibility Tool] usa reglas definidas dentro de nuestro [Normas de codificación](https://devdocs.magento.com/guides/v2.4/coding-standards/bk-coding-standards.html) para garantizar que el proyecto sigue las prácticas recomendadas de Adobe Commerce y para ayudarle a mejorar y ampliar el [!DNL Upgrade Compatibility Tool].
+La variable [!DNL Upgrade Compatibility Tool] usa reglas definidas dentro de nuestro [Normas de codificación](https://developer.adobe.com/commerce/php/coding-standards/) para garantizar que el proyecto sigue las prácticas recomendadas de Adobe Commerce y para ayudarle a mejorar y ampliar el [!DNL Upgrade Compatibility Tool].
 
-Consulte la [Contribute](https://devdocs.magento.com/guides/v2.4/coding-standards/contributing.html) para obtener más información sobre cómo contribuir a los estándares de codificación.
+Consulte la [Contribute](https://developer.adobe.com/commerce/php/coding-standards/contributing/) para obtener más información sobre cómo contribuir a los estándares de codificación.
 
 ## Recursos
 
 Consulte los siguientes recursos para comprender las actualizaciones de Adobe Commerce:
 
-- La variable [guía de actualización](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/overview.html) proporciona información general sobre el recorrido de actualización típico de Adobe Commerce o Magento Open Source y prácticas recomendadas para seguir ese recorrido.
+- La variable [guía de actualización](../overview.md) proporciona información general sobre el recorrido de actualización típico de Adobe Commerce o Magento Open Source y prácticas recomendadas para seguir ese recorrido.
 - La variable [próximas versiones](https://devdocs.magento.com/release/) proporciona las fechas de las versiones programadas y futuras.
 - La variable [recursos de la comunidad](https://developer.adobe.com/commerce/contributor/community/) es para iniciar discusiones o para encontrar más información.
 - Marque la [herramientas relacionadas](../upgrade-compatibility-tool/related-tools.md) para obtener herramientas útiles en el recorrido de actualización típico.

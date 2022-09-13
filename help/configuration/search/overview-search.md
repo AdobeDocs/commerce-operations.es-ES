@@ -1,9 +1,9 @@
 ---
 title: Información general del motor de búsqueda
 description: Descripción general de las opciones del motor de búsqueda para Adobe Commerce y Magento Open Source.
-source-git-commit: 52c472bf80942339b511292243b5da9babf829d9
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '161'
+source-wordcount: '132'
 ht-degree: 0%
 
 ---
@@ -25,10 +25,9 @@ Después de instalar e integrar el motor de búsqueda con Adobe Commerce, debe r
 
 <!-- Link Definitions -->
 
-[Requisitos previos del motor de búsqueda]: https://devdocs.magento.com/guides/v2.4/install-gde/prereq/elasticsearch.html
-[Configure nginx en su motor de búsqueda]: https://devdocs.magento.com/guides/v2.4/install-gde/prereq/es-config-nginx.html
-[Configurar Apache para su motor de búsqueda]: https://devdocs.magento.com/guides/v2.4/install-gde/prereq/es-config-apache.html
+[Requisitos previos del motor de búsqueda]: ../../installation/prerequisites/search-engine/overview.md
+[Configure nginx en su motor de búsqueda]: ../../installation/prerequisites/search-engine/configure-nginx.md
+[Configurar Apache para su motor de búsqueda]: ../../installation/prerequisites/search-engine/configure-apache.md
 [Elasticsearch]: https://www.elastic.co
-[Elasticsearch documentation]: https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html
-[Instalación del software Commerce]: https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-install.html
+[Instalación del software Commerce]: ../../installation/composer.md
 [OpenSearch]: https://opensearch.org/docs/latest/opensearch/install/index/

@@ -1,9 +1,9 @@
 ---
-title: '"[!DNL Site-Wide Analysis Tool]"'
+title: "[!DNL Site-Wide Analysis Tool]"
 description: Obtenga información sobre [!DNL Site-Wide Analysis] Herramienta, sus usos, el proceso de instalación y cómo obtener acceso
-source-git-commit: ded2204fe0b3327f72bbce2ec03f8d66aa1b9353
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '420'
+source-wordcount: '411'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ Vea todas las perspectivas importantes sobre el sitio en un solo lugar. [!DNL Si
 
 - [**[!DNL Security Scan Tool]**](https://docs.magento.com/user-guide/magento/security-scan.html) - Proporciona a los clientes de Adobe Commerce y Magento de código abierto información en tiempo real sobre el estado de seguridad de su tienda mediante la detección proactiva de software malicioso y la notificación si su tienda está en peligro.
 
-- [**[!DNL Upgrade Compatability Tool]**](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/overview.html?lang=en) : ejecuta la instancia personalizada de Adobe Commerce con la versión de actualización de destino y devuelve un resumen de los problemas, errores y advertencias críticos que se deben abordar, lo que facilita, acelera y reduce el proceso de análisis de la actualización.
+- [**[!DNL Upgrade Compatability Tool]**](../../upgrade/upgrade-compatibility-tool/overview.md) : ejecuta la instancia personalizada de Adobe Commerce con la versión de actualización de destino y devuelve un resumen de los problemas, errores y advertencias críticos que se deben abordar, lo que facilita, acelera y reduce el proceso de análisis de la actualización.
 
 - [**[!DNL Managed Alerts]**](https://support.magento.com/hc/en-us/sections/360010758472-Managed-alerts-for-Adobe-Commerce) : supervise varias métricas para rastrear proactivamente el rendimiento de la plataforma y proporcionar instrucciones específicas sobre cómo solucionar problemas para que los comerciantes puedan evitar downtime crítico y mantenerse informados sobre su CPU, rendimiento de las aplicaciones, disco, memoria y base de datos.
 

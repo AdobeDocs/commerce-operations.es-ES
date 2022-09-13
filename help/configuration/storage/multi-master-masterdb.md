@@ -1,9 +1,9 @@
 ---
 title: Configuración automática de bases de datos maestras
 description: Consulte las directrices sobre la configuración automática de la solución de base de datos dividida.
-source-git-commit: 52f92ef79586d618fd4ac51c00eaa1446a2dc98f
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '364'
+source-wordcount: '358'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ En este tema se explica cómo empezar a utilizar la solución de división de ba
 
 ## Instalación del software de Adobe Commerce
 
-Puede habilitar bases de datos divididas en cualquier momento después de instalar el software de Adobe Commerce; en otras palabras, puede agregar bases de datos divididas a un sistema de Adobe Commerce que ya tenga datos de cierre de compra y pedido. Utilice las instrucciones de Adobe Commerce README o la [guía de instalación](https://devdocs.magento.com/guides/v2.4/install-gde/bk-install-guide.html) para instalar el software de Adobe Commerce utilizando una única base de datos maestra.
+Puede habilitar bases de datos divididas en cualquier momento después de instalar el software de Adobe Commerce; en otras palabras, puede agregar bases de datos divididas a un sistema de Adobe Commerce que ya tenga datos de cierre de compra y pedido. Utilice las instrucciones de Adobe Commerce README o la [guía de instalación](../../installation/overview.md) para instalar el software de Adobe Commerce utilizando una única base de datos maestra.
 
 ## Configuración de bases de datos maestras adicionales
 

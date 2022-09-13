@@ -1,7 +1,7 @@
 ---
 title: Convertir archivos de diseño
 description: Convertir archivos de diseño XML.
-source-git-commit: 02f02393878d04b4a0fcdae256ac1ac5dd13b7f6
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
 source-wordcount: '94'
 ht-degree: 0%
@@ -15,8 +15,8 @@ ht-degree: 0%
 
 Utilice este comando para actualizar los archivos XML de presentación si actualiza la hoja de estilo correspondiente Transformaciones de lenguaje de hoja de estilo extensible (XSLT).
 
-- [Instrucciones de diseño](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/layouts/xml-instructions.html)
-- [Tipos de archivo de diseño](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/layouts/layout-types.html)
+- [Instrucciones de diseño](https://developer.adobe.com/commerce/frontend-core/guide/layouts/xml-instructions/)
+- [Tipos de archivo de diseño](https://developer.adobe.com/commerce/frontend-core/guide/layouts/types/)
 
 Opciones de comando:
 

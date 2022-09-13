@@ -1,9 +1,9 @@
 ---
 title: Configuración y ejecución de trabajos cron
 description: Aprenda a administrar trabajos cron.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '766'
+source-wordcount: '745'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ La aplicación Commerce utiliza tareas cron que pueden ejecutarse con diferentes
 
 >[!WARNING]
 >
->- Para evitar problemas durante la instalación y actualización, recomendamos encarecidamente que aplique la misma configuración de PHP tanto a la configuración de la línea de comandos de PHP como a la configuración del complemento del servidor web de PHP. Para obtener más información, consulte [Configuración de PHP requerida](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/php-settings.html).
+>- Para evitar problemas durante la instalación y actualización, recomendamos encarecidamente que aplique la misma configuración de PHP tanto a la configuración de la línea de comandos de PHP como a la configuración del complemento del servidor web de PHP. Para obtener más información, consulte [Configuración de PHP requerida](../../installation/prerequisites/php-settings.md).
 >- En un sistema de varios nodos, crontab sólo puede ejecutarse en un nodo. Esto solo se aplica si configura más de un nodo web por motivos relacionados con el rendimiento o la escalabilidad.
 
 
@@ -58,7 +58,7 @@ La crontab de comercio está dentro de `#~ MAGENTO START` y `#~ MAGENTO END` com
 
 Para crear la crontab de comercio:
 
-1. Inicie sesión como o cambie a la [propietario del sistema de archivos](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. Inicie sesión como o cambie a la [propietario del sistema de archivos](../../installation/prerequisites/file-system/overview.md).
 1. Cambie al directorio de instalación de Commerce.
 1. Introduzca el siguiente comando:
 
@@ -100,7 +100,7 @@ Debe quitar Commerce crontab solo antes de desinstalar la aplicación Commerce.
 
 Para eliminar Commerce crontab:
 
-1. Inicie sesión como o cambie a la [propietario del sistema de archivos](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. Inicie sesión como o cambie a la [propietario del sistema de archivos](../../installation/prerequisites/file-system/overview.md).
 1. Cambie al directorio de instalación de Commerce.
 1. Introduzca el siguiente comando:
 

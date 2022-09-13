@@ -1,9 +1,9 @@
 ---
 title: Requisitos previos completos
 description: Prepare su proyecto de Adobe Commerce o Magento Open Source para una actualización completando estos pasos previos.
-source-git-commit: 0729e84adabcded6d50cf28a7525b97fd50d45f5
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '1477'
+source-wordcount: '1338'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Requisitos previos de actualización completos
 
-Es importante comprender qué es necesario para ejecutar Adobe Commerce o Magento Open Source. Primero debe revisar el [requisitos del sistema](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html) para la versión a la que planea actualizar.
+Es importante comprender qué es necesario para ejecutar Adobe Commerce o Magento Open Source. Primero debe revisar el [requisitos del sistema](../../installation/system-requirements.md) para la versión a la que planea actualizar.
 
 Después de revisar los requisitos del sistema, debe completar los siguientes requisitos previos antes de actualizar el sistema:
 
@@ -26,9 +26,9 @@ Después de revisar los requisitos del sistema, debe completar los siguientes re
 
 ## Actualizar todo el software
 
-La variable [requisitos del sistema](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html) describa exactamente qué versiones de software de terceros se han probado con las versiones de Adobe Commerce y Magento Open Source.
+La variable [requisitos del sistema](../../installation/system-requirements.md) describa exactamente qué versiones de software de terceros se han probado con las versiones de Adobe Commerce y Magento Open Source.
 
-Asegúrese de haber actualizado todos los requisitos y dependencias del sistema en su entorno. Consulte PHP [7,4](https://www.php.net/manual/en/migration74.php), PHP [8,0](https://www.php.net/manual/en/migration80.php), PHP [8,1](https://www.php.net/manual/en/migration81.php)y [configuración requerida de PHP](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/php-settings.html#php-required-set).
+Asegúrese de haber actualizado todos los requisitos y dependencias del sistema en su entorno. Consulte PHP [7,4](https://www.php.net/manual/en/migration74.php), PHP [8,0](https://www.php.net/manual/en/migration80.php), PHP [8,1](https://www.php.net/manual/en/migration81.php)y [configuración requerida de PHP](../../installation/prerequisites/php-settings.md#php-settings).
 
 ## Verifique que esté instalado un motor de búsqueda compatible
 
@@ -50,10 +50,10 @@ Las secciones siguientes describen las acciones que debe realizar antes de actua
 
 A partir de la versión 2.4, MySQL ya no es un motor de búsqueda de catálogo compatible. Debe instalar y configurar Elasticsearch o OpenSearch antes de actualizar. Utilice los siguientes recursos para ayudarle a guiar a través de este proceso:
 
-- [Instalación y configuración del Elasticsearch](https://devdocs.magento.com/guides/v2.4/config-guide/elasticsearch/es-overview.html)
+- [Instalación y configuración del Elasticsearch](../../configuration/search/overview-search.md)
 - [Instalación del Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html)
-- Configurar [nginx](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/es-config-nginx.html) o [Apache](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/es-config-apache.html) para trabajar con su motor de búsqueda
-- [Configuración de Commerce para utilizar Elasticsearch](https://devdocs.magento.com/guides/v2.4/config-guide/elasticsearch/configure-magento.html) y reindexar
+- Configurar [nginx](../../installation/prerequisites/search-engine/configure-nginx.md) o [Apache](../../installation/prerequisites/search-engine/configure-apache.md) para trabajar con su motor de búsqueda
+- [Configuración de Commerce para utilizar Elasticsearch](../../configuration/search/configure-search-engine.md) y reindexar
 
 Algunos motores de búsqueda de catálogo de terceros se ejecutan sobre el motor de búsqueda de Adobe Commerce. Póngase en contacto con el proveedor para determinar si debe actualizar la extensión.
 
@@ -63,9 +63,9 @@ Debe instalar y configurar el Elasticsearch 7.6 o superior o OpenSearch 1.2 ante
 
 Consulte [Actualización del Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) para obtener instrucciones completas sobre cómo realizar copias de seguridad de los datos, detectar posibles problemas de migración y probar actualizaciones antes de implementarlas en producción. Según la versión actual del Elasticsearch, puede que sea necesario o no reiniciar el clúster completo.
 
-Elasticsearch requiere JDK 1.8 o superior. Consulte [Instalación del Kit de desarrollo de software de Java (JDK)](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/elasticsearch.html#prereq-java) para comprobar qué versión de JDK está instalada.
+Elasticsearch requiere JDK 1.8 o superior. Consulte [Instalación del Kit de desarrollo de software de Java (JDK)](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk) para comprobar qué versión de JDK está instalada.
 
-[Configuración del Magento para utilizar el Elasticsearch](https://devdocs.magento.com/guides/v2.4/config-guide/elasticsearch/configure-magento.html) describe las tareas que debe realizar después de actualizar el Elasticsearch 2 a una versión compatible.
+[Configuración del Elasticsearch](../../configuration/search/configure-search-engine.md) describe las tareas que debe realizar después de actualizar el Elasticsearch 2 a una versión compatible.
 
 ### OpenSearch
 
@@ -77,9 +77,9 @@ OpenSearch es una ramificación de código abierto de Elasticsearch 7.10.2, que 
 
 Puede [migrar de Elasticsearch a OpenSearch](opensearch-migration.md) solo si está actualizando a una versión de Adobe Commerce o Magento Open Source enumerada anteriormente (o superior).
 
-OpenSearch requiere JDK 1.8 o superior. Consulte [Instalación del Kit de desarrollo de software de Java (JDK)](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/elasticsearch.html#prereq-java) para comprobar qué versión de JDK está instalada.
+OpenSearch requiere JDK 1.8 o superior. Consulte [Instalación del Kit de desarrollo de software de Java (JDK)](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk) para comprobar qué versión de JDK está instalada.
 
-[Configuración del Magento para utilizar el Elasticsearch](https://devdocs.magento.com/guides/v2.4/config-guide/elasticsearch/configure-magento.html) describe las tareas que debe realizar después de cambiar los motores de búsqueda.
+[Configuración del Magento para utilizar el Elasticsearch](../../configuration/search/configure-search-engine.md) describe las tareas que debe realizar después de cambiar los motores de búsqueda.
 
 ### Extensiones de terceros
 
@@ -93,8 +93,8 @@ Adobe recomienda configurar los archivos abiertos [ulimit](https://ss64.com/bash
 
 Para establecer el límite desde la línea de comandos:
 
-1. Cambie a la [propietario del sistema de archivos](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
-1. Establezca el límite en 65536.
+1. Cambie a la [propietario del sistema de archivos](../../installation/prerequisites/file-system/overview.md).
+1. Establezca el límite en `65536`.
 
    ```bash
    ulimit -s 65536
@@ -106,7 +106,7 @@ Para establecer el límite desde la línea de comandos:
 
 Para establecer el valor en el shell de Bash:
 
-1. Cambie a la [propietario del sistema de archivos](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. Cambie a la [propietario del sistema de archivos](../../installation/prerequisites/file-system/overview.md).
 1. Apertura `/home/<username>/.bashrc` en un editor de texto.
 1. Añada la siguiente línea:
 
@@ -150,7 +150,7 @@ Para ver el error, haga clic en **Mensajes del sistema** en la parte superior de
 
 ![](../../assets/upgrade-guide/system-messages.png)
 
-Consulte [Configuración y ejecución de cron](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html) para obtener más información.
+Consulte [Configuración y ejecución de cron](../../configuration/cli/configure-cron-jobs.md) para obtener más información.
 
 ## Establezca DATA_CONVERTER_BATCH_SIZE
 
@@ -172,7 +172,7 @@ Si tiene una gran cantidad de datos, puede mejorar el rendimiento configurando e
 
 Para configurar la variable de entorno:
 
-1. Cambie a la [propietario del sistema de archivos](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. Cambie a la [propietario del sistema de archivos](../../installation/prerequisites/file-system/overview.md).
 1. Configure la variable :
 
    ```bash
@@ -191,9 +191,9 @@ Para configurar la variable de entorno:
 
 ## Comprobar permisos del sistema de archivos
 
-Por motivos de seguridad, Adobe Commerce y el Magento Open Source requieren ciertos permisos en el sistema de archivos. Los permisos son diferentes de _[propiedad](https://devdocs.magento.com/guides/v2.4/comp-mgr/prereq/prereq_compman-checklist.html#magento-owner-group)_. La propiedad determina quién puede realizar acciones en el sistema de archivos; los permisos determinan lo que puede hacer el usuario.
+Por motivos de seguridad, Adobe Commerce y el Magento Open Source requieren ciertos permisos en el sistema de archivos. Los permisos son diferentes de _[propiedad](../../upgrade/prepare/prerequisites.md#verify-file-system-permissions)_. La propiedad determina quién puede realizar acciones en el sistema de archivos; los permisos determinan lo que puede hacer el usuario.
 
-Los directorios del sistema de archivos deben ser grabables por el [del propietario del sistema de archivos](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html) grupo.
+Los directorios del sistema de archivos deben ser grabables por el [del propietario del sistema de archivos](../../installation/prerequisites/file-system/overview.md) grupo.
 
 Para comprobar que los permisos del sistema de archivos están correctamente configurados, inicie sesión en el servidor de aplicaciones o utilice la aplicación del administrador de archivos de su proveedor de alojamiento.
 
@@ -252,13 +252,13 @@ Para obtener información más detallada, puede introducir el siguiente comando:
 ls -la /var/www/html/magento2/pub
 ```
 
-Porque Adobe Commerce y el Magento Open Source implementan recursos de archivos estáticos en subdirectorios de `pub`, es aconsejable verificar los permisos y la propiedad allí también.
+Porque Adobe Commerce y el Magento Open Source implementan recursos de archivos estáticos en subdirectorios de `pub`, es una buena idea verificar los permisos y la propiedad allí también.
 
-Para obtener más información, consulte [Permisos y propiedad del sistema de archivos](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+Para obtener más información, consulte [Permisos y propiedad del sistema de archivos](../../installation/prerequisites/file-system/overview.md).
 
 ## Configure las variables `pub/` raíz de directorio
 
-Consulte [Modificar docroot para mejorar la seguridad](https://devdocs.magento.com/guides/v2.4/install-gde/tutorials/change-docroot-to-pub.html) para obtener más información.
+Consulte [Modificar docroot para mejorar la seguridad](../../installation/tutorials/docroot.md) para obtener más información.
 
 ## Instalación del complemento de actualización del Compositor
 

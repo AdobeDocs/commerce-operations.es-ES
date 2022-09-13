@@ -1,9 +1,9 @@
 ---
 title: Prácticas recomendadas
 description: Utilice las prácticas recomendadas por el Adobe para administrar el proceso de actualización de sus proyectos de Adobe Commerce y Magento Open Source.
-source-git-commit: 3d9a721e33621b78f03f16b932a1ba2904ae4010
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '1092'
+source-wordcount: '1089'
 ht-degree: 0%
 
 ---
@@ -41,8 +41,8 @@ Si el proyecto está activo, le sugerimos que realice una auditoría para determ
 
 Desde el momento en que empiece a trabajar en un proyecto, debe considerar cómo se verán afectadas las futuras actualizaciones por su trabajo actual. Siga siempre las prácticas recomendadas de desarrollo de Adobe Commerce que se describen aquí:
 
-- [Prácticas recomendadas de desarrollo](https://devdocs.magento.com/guides/v2.4/ext-best-practices/bk-ext-best-practices.html)
-- [Normas de codificación](https://devdocs.magento.com/guides/v2.4/coding-standards/bk-coding-standards.html)
+- [Prácticas recomendadas de desarrollo](https://developer.adobe.com/commerce/php/best-practices/)
+- [Normas de codificación](https://developer.adobe.com/commerce/php/coding-standards/)
 
 Empiece a adoptar la plataforma de extensibilidad de Adobe Commerce, si aún no lo ha hecho. La plataforma le permite personalizar de forma eficiente los procesos, integrar los sistemas e implementar nuevas capacidades, al mismo tiempo que mantiene la capacidad de actualización similar a SaaS. Sus características incluyen:
 
@@ -80,7 +80,7 @@ Evalúe el trabajo a realizar para la actualización:
 
 ### Pruebas posteriores a la actualización
 
-La prueba es la fase de una actualización que requiere la mayor cantidad de tiempo. Como resultado, este proceso debe ser lo más automatizado posible. Puede beneficiarse del uso de las herramientas de prueba principales. La variable [Guía de prueba de aplicaciones](https://devdocs.magento.com/guides/v2.4/test/testing.html) proporciona detalles.
+La prueba es la fase de una actualización que requiere la mayor cantidad de tiempo. Como resultado, este proceso debe ser lo más automatizado posible. Puede beneficiarse del uso de las herramientas de prueba principales. La variable [Guía de prueba de aplicaciones](https://developer.adobe.com/commerce/testing/guide/) proporciona detalles.
 
 Utilice un entorno de ensayo para probar y validar la actualización antes de pasar a producción.
 

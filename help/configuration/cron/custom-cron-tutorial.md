@@ -1,9 +1,9 @@
 ---
 title: Configuración de un trabajo cron personalizado y de un grupo cron (tutorial)
 description: Utilice este tutorial paso a paso para crear un trabajo cron personalizado.
-source-git-commit: 53448b11a2d000fe8e8a7eecf2ffcef4b7e248fa
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '822'
+source-wordcount: '808'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ En este tutorial, se asume lo siguiente:
 
 - La aplicación Commerce está instalada en `/var/www/html/magento2`
 - El nombre de usuario y la contraseña de la base de datos de Commerce son los dos `magento`
-- Todas las acciones se realizan como [propietario del sistema de archivos](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html)
+- Todas las acciones se realizan como [propietario del sistema de archivos](../../installation/prerequisites/file-system/overview.md)
 
 ## Paso 1: Obtener un módulo de muestra
 
@@ -31,7 +31,7 @@ Si ya tiene un módulo de muestra, puede utilizarlo; omita este paso y el siguie
 
 **Para obtener un módulo de muestra**:
 
-1. Inicie sesión en el servidor de Commerce como, o cambie a [propietario del sistema de archivos](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. Inicie sesión en el servidor de Commerce como, o cambie a [propietario del sistema de archivos](../../installation/prerequisites/file-system/overview.md).
 1. Cambie a un directorio que no esté en la raíz de la aplicación Commerce (por ejemplo, su directorio principal).
 1. Clonar el [`magento2-samples` repositorio][samples].
 

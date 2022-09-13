@@ -1,9 +1,9 @@
 ---
 title: Comprender el ámbito de actualización
 description: Obtenga información sobre los cambios incompatibles con versiones anteriores en una versión que podrían afectar a los módulos personalizados de Adobe Commerce o Magento Open Source o a las extensiones de terceros.
-source-git-commit: 3d9a721e33621b78f03f16b932a1ba2904ae4010
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '931'
+source-wordcount: '930'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ La nueva política de compatibilidad de Adobe Commerce Marketplace garantiza que
 
 ## Módulos personalizados
 
-Todos los módulos personalizados deben comprobarse con la versión de destino a la que desee actualizar. Este es el proceso de actualización que requiere más tiempo y recursos. Al evaluar los módulos personalizados, debe buscar cambios incompatibles con versiones anteriores y tener en cuenta las nuevas prácticas, como la descomposición del controlador. Puede obtener más información sobre esto en la sección [notas de la versión](https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html). Además, asegúrese de que está siguiendo [prácticas recomendadas](https://devdocs.magento.com/guides/v2.4/ext-best-practices/extension-coding/common-programming-bp.html) para el desarrollo de módulos.
+Todos los módulos personalizados deben comprobarse con la versión de destino a la que desee actualizar. Este es el proceso de actualización que requiere más tiempo y recursos. Al evaluar los módulos personalizados, debe buscar cambios incompatibles con versiones anteriores y tener en cuenta las nuevas prácticas, como la descomposición del controlador. Puede obtener más información sobre esto en la sección [notas de la versión](https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html). Además, asegúrese de que está siguiendo [prácticas recomendadas](https://developer.adobe.com/commerce/php/best-practices/extensions/) para el desarrollo de módulos.
 
 ## [!DNL Upgrade Compatibility Tool]
 

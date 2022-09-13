@@ -1,9 +1,9 @@
 ---
 title: Verificar base de datos dividida
 description: Obtenga información sobre cómo verificar que una configuración de base de datos dividida en comercio funciona correctamente.
-source-git-commit: 52f92ef79586d618fd4ac51c00eaa1446a2dc98f
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '171'
+source-wordcount: '155'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Después de la configuración, las bases de datos maestras se configuran de la s
 - Comercio [comillas](https://glossary.magento.com/quote) base de datos: 11 cuadros
 - Base de datos de ventas comerciales: 55 tablas
 
-Para comprobar que las bases de datos divididas funcionan correctamente, realice las siguientes tareas y verifique que los datos se agreguen a las tablas de la base de datos con una herramienta de base de datos como [phpmyadmin](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/optional.html#install-optional-phpmyadmin):
+Para comprobar que las bases de datos divididas funcionan correctamente, realice las siguientes tareas y verifique que los datos se agreguen a las tablas de la base de datos con una herramienta de base de datos como [phpmyadmin](../../installation/prerequisites/optional-software.md#phpmyadmin):
 
 | Qué verificar | Comprobar |
 | -------------- | ------------- |
@@ -30,4 +30,4 @@ Para comprobar que las bases de datos divididas funcionan correctamente, realice
 
 >[!WARNING]
 >
->Debe realizar una copia de seguridad de las dos instancias de base de datos adicionales manualmente. Commerce realiza una copia de seguridad solo de la instancia de base de datos principal. La variable [`magento setup:backup --db`](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-backup.html) las opciones de comando y administración no hacen una copia de seguridad de las tablas adicionales.
+>Debe realizar una copia de seguridad de las dos instancias de base de datos adicionales manualmente. Commerce realiza una copia de seguridad solo de la instancia de base de datos principal. La variable [`magento setup:backup --db`](../../installation/tutorials/backup.md) las opciones de comando y administración no hacen una copia de seguridad de las tablas adicionales.

@@ -1,9 +1,9 @@
 ---
-title: '"El [!UICONTROL Summary] tab"'
+title: "El [!UICONTROL Summary] tab"
 description: Obtenga información sobre [!UICONTROL Summary] pestaña [!DNL Observation for Adobe Commerce].
-source-git-commit: 22df5b80262fbc98f3dd929ec8fdf6f697734c9b
+source-git-commit: 5bcb834bc563c52cd5b169b9f4f20dab31d404cd
 workflow-type: tm+mt
-source-wordcount: '2650'
+source-wordcount: '2637'
 ht-degree: 0%
 
 ---
@@ -109,7 +109,7 @@ La variable **[!UICONTROL Deployment State]** facetas de marco de frases de impl
 
 **Frases del registro de implementación:**
 
-* ‘%Iniciando generar comando%&#39;) como &#39;start_gen&#39;
+* &#39;%Iniciando generar comando%&#39;) como &#39;start_gen&#39;
 * &#39;%git aplique /app/provider/magento/ece-tools/patches%&#39;) como &#39;apply_patches&#39;
 * Indicador &#39;%Set: .static_content_deploy%&#39;) como &#39;SCD&#39;
 * &#39;%AVISO: Generar comando completado%) como &#39;gen_compl&#39;
@@ -152,7 +152,7 @@ A veces es difícil saber qué dirección IP tiene la mayor cantidad de solicitu
 
 ![posibles bots](../../assets/tools/potential-bots.jpg)
 
-La variable **[!UICONTROL Potential Bots]** frame busca solicitudes con un nombre request_user_agent como NULL o ‘%bot%’. Normalmente, el elemento request_user_agent de ‘%bot%’ seguirá la configuración de directivas en `robots.txt` archivo.
+La variable **[!UICONTROL Potential Bots]** frame busca solicitudes con un nombre request_user_agent como NULL o &#39;%bot%&#39;. Normalmente, el parámetro request_user_agent &#39;%bot%&#39; seguirá la configuración de directivas en `robots.txt` archivo.
 
 ## [!UICONTROL Transaction Errors]
 
@@ -181,7 +181,7 @@ La variable **[!UICONTROL Nginx access by node]** frame busca los recuentos de `
 * &#39;%self-Leave%&#39;) como &#39;susp_node&#39;
 * &#39;%Members = 3/3 (unido/total)%&#39;) como &#39;3of3&#39;
 * &#39;%Members = 2/3 (unido/total)%&#39;) como &#39;2of3&#39;
-* &#39;%miembros = 2/2%&#39;) como &#39;2of2&#39; ・ &#39;%miembros = 1/2%&#39;) como &#39;1de2&#39; ・ &#39;%miembros = 1/3%&#39;) como &#39;1de3&#39;
+* &#39;%miembros = 2/2%&#39;) como &#39;2of2&#39; * &#39;%miembros = 1/2%&#39;) como &#39;1de2&#39; * &#39;%miembros = 1/3%&#39;) como &#39;1de3&#39;
 * &#39;%Members = 1/1%&#39;) como &#39;1of1&#39;
 * &#39;%\[Nota\] /usr/sbin/mysqld (mysqld 10.%&#39;) como &#39;sql_restart&#39;
 * &#39;%Quórum: Ningún nodo con estado completo:%) como &#39;no_node_count&#39;
@@ -190,7 +190,7 @@ La variable **[!UICONTROL Nginx access by node]** frame busca los recuentos de `
 * &#39;%WSREP: Miembro 2%) como &#39;mem2&#39;
 * &#39;%WSREP: Sincronizado con grupo, listo para conexiones%) como &quot;listo&quot;
 * &#39;%/usr/sbin/mysqld, Versión:%) como &#39;mysql_restart_mysql.slow&#39;
-* &quot;%\[Nota\] WSREP: Nueva vista de clúster: estado global:%) como &#39;galera_cluster_view_chng&#39;
+* WSREP &#39;%\[Nota\]: Nueva vista de clúster: estado global:%) como &#39;galera_cluster_view_chng&#39;
 
 Estas señales pueden indicar problemas de almacenamiento, memoria o consulta si el estado cambia con frecuencia.
 
@@ -228,7 +228,7 @@ Estas señales pueden indicar problemas de almacenamiento, memoria o consulta si
 * &#39;%1062 \[\ERROR\] InnoDB:%&#39;) como &#39;sql_1062_e&#39;
 * WSREP &#39;%\[Nota\]: Vaciando el mapa de memoria al disco...%&#39;) como &#39;mem_map_flush&#39;
 * &#39;%Código de error interno de MariaDB: 1146%) como &#39;sql_1146&#39;
-* &#39;%Código de error interno de MariaDB: 1062%) como &#39;sql_1062&#39; ・ &#39;%1062 \[Warning\] InnoDB:%&#39;) como &#39;sql_1062_w&#39;
+* &#39;%Código de error interno de MariaDB: 1062%) como &#39;sql_1062&#39; * &#39;%1062 \[Warning\] InnoDB:%&#39;) como &#39;sql_1062_w&#39;
 * &#39;%Código de error interno de MariaDB: 1064%) como &#39;sql_1064&#39;
 * &#39;%InnoDB: Error de aserción en el archivo%) como &#39;assertion_err&#39;
 * &#39;%mysqld_safe Número de procesos en ejecución ahora: 0%) como &#39;mysql_oom&#39;
@@ -289,7 +289,7 @@ La forma en que se comportan los procesos PHP depende de [configuración](https:
 
 ![errores de php](../../assets/tools/php-errors.jpg)
 
-La variable **[!UICONTROL PHP errors]** frame muestra el número de errores de PHP con trabajadores a lo largo del periodo de tiempo seleccionado. Para obtener más información, consulte [Configuración de Adobe Commerce PHP](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/php-settings.html).
+La variable **[!UICONTROL PHP errors]** frame muestra el número de errores de PHP con trabajadores a lo largo del periodo de tiempo seleccionado. Para obtener más información, consulte [Configuración de Adobe Commerce PHP](../../installation/prerequisites/php-settings.md).
 
 **Errores y mensajes de PHP**
 
@@ -309,7 +309,7 @@ La variable **[!UICONTROL PHP errors]** frame muestra el número de errores de P
 
 ![procesos php](../../assets/tools/php-processes.jpg)
 
-[PHP-FPM](https://php-fpm.org/), [!UICONTROL FastCGI Process Manager] usado por [!DNL Nginx]. Para obtener más información sobre los requisitos del sistema, consulte [Requisitos de versión de PHP asignados a versiones de Adobe Commerce](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html). La variable **[!UICONTROL PHP processes]** frame muestra el número de procesos PHP que se ejecutan en un momento en particular en la cronología seleccionada.
+[PHP-FPM](https://php-fpm.org/), [!UICONTROL FastCGI Process Manager] usado por [!DNL Nginx]. Para obtener más información sobre los requisitos del sistema, consulte [Requisitos de versión de PHP asignados a versiones de Adobe Commerce](../../installation/system-requirements.md). La variable **[!UICONTROL PHP processes]** frame muestra el número de procesos PHP que se ejecutan en un momento en particular en la cronología seleccionada.
 
 ## [!UICONTROL Secondary processes]
 
@@ -359,7 +359,7 @@ La variable **[!UICONTROL Admin Activities]** frame identifica transacciones con
 
 ![Valor predeterminado de transacciones de pedido](../../assets/tools/order-transactions-default.jpg)
 
-La variable **[!UICONTROL Order transactions (default?)]** busca marco para transacciones `request.headers.host` de transacciones en las que el nombre = &#39;WebTransaction/Action/checkout/onepage/success&#39;. Si la URL de éxito del pedido es diferente, este marco no tendrá datos.
+La variable **[!UICONTROL Order transactions (default?)]** busca marco para transacciones `request.headers.host` de transacciones donde el nombre = &#39;WebTransaction/Action/checkout/onepage/success&#39;. Si la URL de éxito del pedido es diferente, este marco no tendrá datos.
 
 ## [!UICONTROL Elasticsearch Index information]
 
@@ -402,7 +402,7 @@ La variable **[!UICONTROL Cron view]** frame busca en el registro cron el equili
 * &#39;%No se pudo adquirir el bloqueo para el trabajo cron%&#39; como &#39;cron_lock&#39;
 * &#39;%Error general: 2006 El servidor MySQL ha desaparecido% como &#39;mysql_has_away_away&#39;
 * &#39;%error%&#39; como &#39;error&#39;
-* &#39;%Error general: 1205 Se superó el tiempo de espera de bloqueo%&quot; como sql_1205_cron
+* &#39;%Error general: 1205 Se superó el tiempo de espera de bloqueo%&#39; como sql_1205_cron
 
 ## [!UICONTROL cron_schedule table updates]
 

@@ -1,9 +1,9 @@
 ---
 title: Migración de cambios
 description: Aprenda a migrar solo los datos que hayan cambiado desde la última migración de datos de Magento 1 con la variable [!DNL Data Migration Tool].
-source-git-commit: b5a2c362b09de993e1dc196bdda90e74cf4a8ba2
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '367'
+source-wordcount: '359'
 ht-degree: 0%
 
 ---
@@ -24,8 +24,8 @@ La herramienta de migración incremental instala tablas deltalog (con prefijo `m
 
 Antes de empezar, siga los siguientes pasos para prepararse:
 
-1. Inicie sesión en el servidor de Magento como [el propietario del sistema de archivos](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
-1. Cambio en el Magento `/bin` o asegúrese de que se agrega a su PATH del sistema.
+1. Inicie sesión en el servidor de aplicaciones como [el propietario del sistema de archivos](../../../installation/prerequisites/file-system/overview.md).
+1. Cambie a la función `/bin` o asegúrese de que se agrega al sistema `PATH`.
 
 Consulte la [primeros pasos](overview.md#first-steps) para obtener más información.
 

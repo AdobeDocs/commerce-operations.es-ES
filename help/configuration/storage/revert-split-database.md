@@ -1,9 +1,9 @@
 ---
 title: Revertir base de datos dividida
 description: Revertir de una implementación de base de datos dividida obsoleta a una implementación de base de datos única.
-source-git-commit: bda758381d8d1b9209110adb168c36e1d504c4fa
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '265'
+source-wordcount: '257'
 ht-degree: 0%
 
 ---
@@ -64,7 +64,7 @@ En este ejemplo, iniciamos sesión en las tres bases de datos, que están instal
 
 ## Verificar su trabajo
 
-Para verificar que la implementación de la base de datos única funciona correctamente, realice las siguientes tareas y verifique que los datos se agreguen al `magento_main` tablas de base de datos utilizando una herramienta de base de datos como [phpMyAdmin](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/optional.html#install-optional-phpmyadmin):
+Para verificar que la implementación de la base de datos única funciona correctamente, realice las siguientes tareas y verifique que los datos se agreguen al `magento_main` tablas de base de datos utilizando una herramienta de base de datos como [phpMyAdmin](../../installation/prerequisites/optional-software.md#phpmyadmin):
 
 1. Compruebe que se hayan restaurado las claves externas. Por ejemplo, la variable `QUOTE_STORE_ID_STORE_STORE_ID` en la variable `quote` tabla de base de datos.
 1. Compruebe que los clientes pueden realizar pedidos desde la tienda.

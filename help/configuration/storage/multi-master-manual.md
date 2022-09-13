@@ -1,9 +1,9 @@
 ---
 title: Configuración manual de bases de datos maestras
 description: Consulte las instrucciones sobre la configuración manual de la solución de base de datos dividida.
-source-git-commit: 52f92ef79586d618fd4ac51c00eaa1446a2dc98f
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '1402'
+source-wordcount: '1388'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ Adobe recomienda encarecidamente que realice una copia de seguridad de la base d
 
 **Para realizar una copia de seguridad del sistema**:
 
-1. Inicie sesión en el servidor de Commerce como, o cambie a [propietario del sistema de archivos](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. Inicie sesión en el servidor de Commerce como, o cambie a [propietario del sistema de archivos](../../installation/prerequisites/file-system/overview.md).
 1. Introduzca los siguientes comandos:
 
    ```bash
@@ -476,7 +476,7 @@ El último paso para dividir manualmente las bases de datos es agregar la inform
 
 Para actualizar la configuración de implementación:
 
-1. Inicie sesión en el servidor de Commerce como, o cambie a [propietario del sistema de archivos](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. Inicie sesión en el servidor de Commerce como, o cambie a [propietario del sistema de archivos](../../installation/prerequisites/file-system/overview.md).
 1. Haga una copia de seguridad de la configuración de implementación:
 
    ```bash

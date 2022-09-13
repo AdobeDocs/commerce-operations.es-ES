@@ -1,9 +1,9 @@
 ---
 title: Entorno de desarrollo Recommendations
 description: Obtenga información sobre las recomendaciones de rendimiento para configurar el entorno de desarrollo de Adobe Commerce o Magento Open Source local.
-source-git-commit: 87b353b408ecd7f55cea5b4775a0c8523952abc0
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '257'
+source-wordcount: '241'
 ht-degree: 0%
 
 ---
@@ -47,5 +47,5 @@ Si se desarrolla en una VM y la carga de una página de Magento tarda más de 2 
 
 <!-- Link definitions -->
 
-[limpiar las cachés]: https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cache.html#config-cli-subcommands-cache-clean
-[desactivar las cachés]: https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cache.html#config-cli-subcommands-cache-en
+[limpiar las cachés]: ../configuration/cli/manage-cache.md#clean-and-flush-cache-types
+[desactivar las cachés]: ../configuration/cli/manage-cache.md#enable-or-disable-cache-types

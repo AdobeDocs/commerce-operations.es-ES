@@ -1,9 +1,9 @@
 ---
 title: Información general sobre migración
 description: Obtenga información sobre cómo empezar a migrar datos del Magento 1 al Magento 2 con la variable [!DNL Data Migration Tool].
-source-git-commit: d609c497fdf00c5e5f975a5679b1d072cec4f8a2
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '333'
+source-wordcount: '306'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Esta sección muestra cómo ejecutar el [!DNL Data Migration Tool] para migrar l
 
 ### Primeros pasos
 
-1. Inicie sesión en el servidor de aplicaciones como usuario con permisos para escribir en el sistema de archivos o cambie a. Consulte [cambie al propietario del sistema de archivos](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. Inicie sesión en el servidor de aplicaciones como usuario con permisos para escribir en el sistema de archivos o cambie a. Consulte [cambie al propietario del sistema de archivos](../../../installation/prerequisites/file-system/overview.md).
 
    Si utiliza el shell de bash, puede utilizar la siguiente sintaxis para cambiar al propietario del sistema de archivos e introducir el comando al mismo tiempo:
 
@@ -58,8 +58,6 @@ Esta sección muestra cómo ejecutar el [!DNL Data Migration Tool] para migrar l
    - `cd <magento_root>/bin` y ejecútelos como `./magento <command name>`
    - `<magento_root>/bin/magento <command name>`
    - `<magento_root>` es un subdirectorio de su servidor web docroot.
-
-Además de los argumentos de comando mencionados aquí, consulte [Argumentos comunes](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands.html#instgde-cli-subcommands-common)
 
 ### Sintaxis del comando
 

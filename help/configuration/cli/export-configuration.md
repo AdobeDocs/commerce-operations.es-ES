@@ -1,7 +1,7 @@
 ---
 title: Exportar ajustes de configuración
 description: Exporte los ajustes de configuración de Adobe Commerce a archivos de configuración, también conocidos como volcado de configuración.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
 source-wordcount: '222'
 ht-degree: 0%
@@ -47,6 +47,6 @@ Contiene configuraciones sensibles y específicas del sistema para entornos indi
 
 Para establecer la configuración confidencial escrita en `env.php`, use el [`bin/magento config:sensitive:set`](set-configuration-values.md#set-values) comando.
 
-Los valores de configuración se especifican como confidenciales o específicos del sistema haciendo referencia a [`Magento\Config\Model\Config\TypePool`](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Config/Model/Config/TypePool.php) en el [`di.xml`](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/configuration/sensitive-and-environment-settings.html#how-to-specify-values-as-sensitive-or-system-specific) archivo.
+Los valores de configuración se especifican como confidenciales o específicos del sistema haciendo referencia a [`Magento\Config\Model\Config\TypePool`](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Config/Model/Config/TypePool.php) en el [`di.xml`](https://developer.adobe.com/commerce/php/development/configuration/sensitive-environment-settings/#how-to-specify-values-as-sensitive-or-system-specific) archivo.
 
 Para exportar configuraciones del sistema adicionales al usar `config_types`, considere usar la variable [`bin/magento config:set`](set-configuration-values.md#set-values) comando.

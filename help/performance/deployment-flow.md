@@ -1,9 +1,9 @@
 ---
 title: Flujo de implementación
-description: 'Obtenga información sobre los pasos necesarios para implementar Adobe Commerce o Magento Open Source en un entorno de producción. '
-source-git-commit: 9ab52374e031bd2b0a846dd5f47c89ff788dcafa
+description: Obtenga información sobre los pasos necesarios para implementar Adobe Commerce o Magento Open Source en un entorno de producción.
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '468'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ bin/magento setup:di:compile
 
 ## Actualizar el cargador automático
 
-Una vez finalizada la compilación, confirme que [APCu está habilitado](https://devdocs.magento.com/guides/v2.4/performance-best-practices/software.html#php-settings) y actualizar el cargador automático:
+Una vez finalizada la compilación, confirme que [APCu está habilitado](../performance/software.md#php-settings) y actualizar el cargador automático:
 
 Para actualizar el cargador automático:
 
@@ -82,7 +82,7 @@ La implementación de causas de contenido estático [!DNL Commerce] para realiza
 
 Si el contenido estático no está implementado, [!DNL Commerce] realiza todas las operaciones enumeradas sobre la marcha, lo que provoca un aumento significativo del tiempo de respuesta.
 
-Puede utilizar una variedad de opciones para personalizar las operaciones de implementación según el tamaño del almacén y las necesidades de cumplimiento. El más común es la estrategia de implementación compacta. Consulte [Estrategias de implementación de archivos estáticos](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-static-deploy-strategies.html)
+Puede utilizar una variedad de opciones para personalizar las operaciones de implementación según el tamaño del almacén y las necesidades de cumplimiento. El más común es la estrategia de implementación compacta. Consulte [Estrategias de implementación de archivos estáticos](../configuration/cli/static-view-file-strategy.md)
 
 Para implementar contenido estático:
 

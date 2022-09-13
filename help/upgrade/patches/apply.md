@@ -1,9 +1,9 @@
 ---
 title: Aplicar parches
 description: Obtenga información sobre los métodos para aplicar parches a un proyecto de Adobe Commerce o de Magento Open Source.
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '338'
+source-wordcount: '330'
 ht-degree: 0%
 
 ---
@@ -69,7 +69,7 @@ Para aplicar un parche personalizado con Composer:
 Para aplicar parches desde la línea de comandos:
 
 1. Cargue el archivo local en el `<Magento_root>` en el servidor mediante FTP, SFTP, SSH o el método de transporte normal.
-1. Inicie sesión en el servidor como [usuario administrador](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli.html#config-install-cli-first) y compruebe que el archivo se encuentra en el directorio correcto.
+1. Inicie sesión en el servidor como [usuario administrador](../../configuration/cli/config-cli.md#prerequisites) y compruebe que el archivo se encuentra en el directorio correcto.
 1. En la interfaz de la línea de comandos, ejecute los siguientes comandos según la extensión del parche:
 
    ```bash

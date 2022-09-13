@@ -1,9 +1,9 @@
 ---
-title: '"[!DNL Data Migration Tool] especificación técnica"'
-description: '"Obtenga información sobre los detalles de implementación de la variable [!DNL Data Migration Tool] y cómo ampliar al transferir datos entre el Magento 1 y el Magento 2."'
-source-git-commit: d609c497fdf00c5e5f975a5679b1d072cec4f8a2
+title: "[!DNL Data Migration Tool] especificación técnica"
+description: "Obtenga información sobre los detalles de implementación de la variable [!DNL Data Migration Tool] y cómo ampliar al transferir datos entre el Magento 1 y el Magento 2."
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '2091'
+source-wordcount: '2085'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Para acceder a la [!DNL Data Migration Tool] código fuente, consulte GitHub [re
 
 ## Requisitos del sistema
 
-La variable [requisitos del sistema](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html) para el [!DNL Data Migration Tool] son los mismos que para el Magento 2.
+La variable [requisitos del sistema](../../installation/system-requirements.md) para el [!DNL Data Migration Tool] son los mismos que para el Magento 2.
 
 ## Estructura interna
 

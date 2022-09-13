@@ -1,9 +1,9 @@
 ---
 title: Configuración del sistema de producción
 description: Aprenda a configurar un sistema de producción para la aplicación Commerce.
-source-git-commit: 53448b11a2d000fe8e8a7eecf2ffcef4b7e248fa
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '379'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Para configurar un equipo de producción:
 
    Crear `auth.json` en ese directorio.
 
-   `auth.json` debe contener [claves de autenticación](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html).
+   `auth.json` debe contener [claves de autenticación](../../installation/prerequisites/authentication-keys.md).
 
    A continuación se muestra una muestra:
 

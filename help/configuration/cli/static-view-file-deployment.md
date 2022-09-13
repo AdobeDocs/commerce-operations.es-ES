@@ -1,9 +1,9 @@
 ---
 title: Implementación de archivos de vista estáticos
 description: Aprenda a escribir archivos estáticos en el sistema de archivos de Commerce durante el modo de producción.
-source-git-commit: 80abb0180fcd8ecc275428c23b68feb5883cbc28
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '1167'
+source-wordcount: '1135'
 ht-degree: 0%
 
 ---
@@ -31,11 +31,11 @@ Debe escribir manualmente archivos de vista estáticos en el sistema de archivos
 
 >[!WARNING]
 >
->_Solo modo desarrollador_: Al instalar o habilitar un nuevo módulo, es posible que se carguen nuevos JavaScript, CSS, diseños, etc. Para evitar problemas con los archivos estáticos, debe limpiar los archivos antiguos para asegurarse de que obtiene todos los cambios para el nuevo módulo. Puede limpiar los archivos de vista estáticos generados de varias formas. Consulte [Limpiar el tema de la caché de archivos estáticos para obtener más información](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/cache_for_frontdevs.html#clean_static_cache) para obtener más información.
+>_Solo modo desarrollador_: Al instalar o habilitar un nuevo módulo, es posible que se carguen nuevos JavaScript, CSS, diseños, etc. Para evitar problemas con los archivos estáticos, debe limpiar los archivos antiguos para asegurarse de que obtiene todos los cambios para el nuevo módulo. Puede limpiar los archivos de vista estáticos generados de varias formas. Consulte [Limpiar el tema de la caché de archivos estáticos para obtener más información](https://developer.adobe.com/commerce/frontend-core/guide/caching/#clean-static-files-cache) para obtener más información.
 
 **Para implementar archivos de vista estáticos**:
 
-1. Inicie sesión en el servidor de comercio como o [cambie al propietario del sistema de archivos](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html).
+1. Inicie sesión en el servidor de comercio como o [cambie al propietario del sistema de archivos](../../installation/prerequisites/file-system/overview.md).
 1. Eliminar el contenido de `<magento_root>/pub/static`, excepto para el `.htaccess` archivo. No elimine este archivo.
 1. Ejecute la herramienta de implementación de archivos de vista estática `<magento_root>/bin/magento setup:static-content:deploy`.
 
@@ -158,7 +158,7 @@ Para ello, siga estos pasos:
 
 ## Solución de problemas de la herramienta de implementación de archivos de vista estáticos
 
-[Instale primero el software Commerce](https://devdocs.magento.com/guides/v2.4/install-gde/bk-install-guide.html); de lo contrario, no puede ejecutar la herramienta de implementación de archivos de vista estáticos.
+[Instale primero el software Commerce](../../installation/overview.md); de lo contrario, no puede ejecutar la herramienta de implementación de archivos de vista estáticos.
 
 **Síntoma**: El siguiente error se muestra al ejecutar la herramienta de implementación de archivos de vista estática:
 
@@ -170,9 +170,9 @@ ERROR: You need to install the Commerce application before running this utility.
 
 Siga estos pasos:
 
-1. Instale el software Commerce utilizando el [línea de comandos](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli.html).
-1. Inicie sesión en el servidor de comercio como o [cambiar a](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/file-sys-perms-over.html), el propietario del sistema de archivos.
-1. Eliminar el contenido de `<magento_root>/pub/static` , excepto para el `.htaccess` archivo. No elimine este archivo.
+1. Instale el software Commerce utilizando el [línea de comandos](../../installation/composer.md).
+1. Inicie sesión en el servidor de aplicaciones como o [cambiar a](../../installation/prerequisites/file-system/overview.md), el propietario del sistema de archivos.
+1. Eliminar el contenido de `<app_root>/pub/static` , excepto para el `.htaccess` archivo. No elimine este archivo.
 1. Implementar archivos de vista estáticos: `bin/magento setup:static-content:deploy`
 
 ## Sugerencia para desarrolladores que personalizan la herramienta de implementación de contenido estático

@@ -1,9 +1,9 @@
 ---
 title: Información general
 description: Siga estas prácticas recomendadas para optimizar el rendimiento de la implementación de Adobe Commerce o Magento Open Source.
-source-git-commit: 4baa58b440eab0d33a86388198670292a4119381
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '104'
+source-wordcount: '98'
 ht-degree: 0%
 
 ---
@@ -15,5 +15,5 @@ La variable _Prácticas recomendadas de rendimiento_ guía proporciona recomenda
 
 ## Suposiciones
 
-* Ha instalado Adobe Commerce o Magento Open Source mediante [Compositor](https://devdocs.magento.com/guides/v2.4/install-gde/composer.html).
+* Ha instalado Adobe Commerce o Magento Open Source mediante [Compositor](../installation/composer.md).
 * Utilice esta instalación para ejecutar una instancia de producción activa de Adobe Commerce o Magento Open Source.

@@ -1,9 +1,9 @@
 ---
 title: Modos de aplicación
 description: La aplicación Commerce puede funcionar en diferentes modos según sus necesidades. Vea una lista detallada de los modos de aplicación disponibles.
-source-git-commit: 53448b11a2d000fe8e8a7eecf2ffcef4b7e248fa
+source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
 workflow-type: tm+mt
-source-wordcount: '805'
+source-wordcount: '790'
 ht-degree: 0%
 
 ---
@@ -69,6 +69,6 @@ En modo de producción:
 
 Ejecute la aplicación Commerce en modo de mantenimiento para desconectar el sitio mientras completa las tareas de mantenimiento, actualización o configuración. En el modo de mantenimiento, el sitio redirige a los visitantes a una `Service Temporarily Unavailable` página.
 
-Puede crear un [página de mantenimiento personalizada](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/troubleshooting/maintenance-mode-options.html), habilite y deshabilite manualmente el modo de mantenimiento y configure el modo de mantenimiento para permitir a los visitantes de direcciones IP autorizadas ver el almacén de forma normal. Consulte [activar y desactivar el modo de mantenimiento](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-subcommands-maint.html).
+Puede crear un [página de mantenimiento personalizada](../../upgrade/troubleshooting/maintenance-mode-options.md), habilite y deshabilite manualmente el modo de mantenimiento y configure el modo de mantenimiento para permitir a los visitantes de direcciones IP autorizadas ver el almacén de forma normal. Consulte [activar y desactivar el modo de mantenimiento](../../installation/tutorials/maintenance-mode.md).
 
 Si utiliza Commerce en la infraestructura de la nube, la aplicación Commerce se ejecuta en modo de mantenimiento durante la fase de implementación. Cuando la implementación se completa correctamente, la aplicación Commerce vuelve a ejecutarse en modo de producción. Consulte [Enlaces de implementación](https://devdocs.magento.com/cloud/reference/discover-deploy.html#cloud-deploy-over-phases-hook) en el _guía del Commerce Cloud_.
