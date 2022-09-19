@@ -1,9 +1,9 @@
 ---
 title: Requisitos previos completos
 description: Prepare su proyecto de Adobe Commerce o Magento Open Source para una actualización completando estos pasos previos.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: c2d0c1d46a5f111a245b34ed6bc706dcd52be31c
 workflow-type: tm+mt
-source-wordcount: '1338'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -97,12 +97,8 @@ Para establecer el límite desde la línea de comandos:
 1. Establezca el límite en `65536`.
 
    ```bash
-   ulimit -s 65536
+   ulimit -n 65536
    ```
-
-   >[!NOTE]
-   >
-   > La sintaxis para el límite de archivos abiertos depende del shell de UNIX que utilice. La configuración anterior debería funcionar con CentOS y Ubuntu con el shell de Bash. Sin embargo, para el sistema operativo Mac, la configuración correcta es ulimit -S 65532. Consulte una página de comando man o referencia del sistema operativo para obtener más información.
 
 Para establecer el valor en el shell de Bash:
 
@@ -111,7 +107,7 @@ Para establecer el valor en el shell de Bash:
 1. Añada la siguiente línea:
 
    ```bash
-   ulimit -s 65536
+   ulimit -n 65536
    ```
 
 1. Guarde los cambios en la `.bashrc` y salga del editor de texto.
