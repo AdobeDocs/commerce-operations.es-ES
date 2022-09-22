@@ -1,7 +1,7 @@
 ---
-source-git-commit: 5a950079e8b445ef363217c085da92f0991a3a7f
+source-git-commit: 3ba17b62f595e5a02ca56753d81d67166ddbc413
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '538'
 ht-degree: 5%
 
 ---
@@ -62,7 +62,7 @@ En el repositorio público, se asignan etiquetas automatizadas a las solicitudes
 ## Plantillas
 
 La variable `_jekyll` contiene temas con plantillas y recursos necesarios.
-Las plantillas que utilizan el lenguaje de plantilla Líquido residen en la variable `_jekyll` como archivos HTML.
+Las plantillas que utilizan el lenguaje de plantilla Líquido residen en la variable `_jekyll/templated` como archivos HTML.
 La variable `_jekyll/_data` contiene archivos con los datos que se utilizan para procesar las plantillas.
 
 Para procesar todas las plantillas:
@@ -80,7 +80,6 @@ _scripts/render
 > **NOTA:** Debe ejecutar la secuencia de comandos desde el `_jekyll` directorio.
 > **NOTA:** Debe tener Ruby instalado para ejecutar este script.
 
-La secuencia de comandos ejecuta la renderización y escribe los archivos procesados en la variable `_jekyll/_rendered` como archivos HTML y los copia en el `help/_includes` como `.md` archivos.
-
+La secuencia de comandos ejecuta la renderización y escribe las plantillas renderizadas en el `help/_includes/templated` directorio.
 
 Consulte la documentación de Jekyll para obtener más información sobre [Archivos de datos](https://jekyllrb.com/docs/datafiles, [Filtros líquidos](https://jekyllrb.com/docs/liquid/filters/), y otras funciones.
