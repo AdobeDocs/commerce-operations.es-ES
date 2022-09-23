@@ -2,19 +2,19 @@
 title: Prueba comparativa de rendimiento
 description: Revise los puntos de referencia de rendimiento para implementaciones de Adobe Commerce alojadas en la infraestructura de nube de Adobe.
 exl-id: cc9b090a-a504-4df3-aa32-81882f431dd9
-source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
+source-git-commit: 69ef86eca884e06a7367a9053c584f78f70997b1
 workflow-type: tm+mt
-source-wordcount: '51'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 # Prueba comparativa
 
-Adobe Commerce en la infraestructura de la nube sin personalizaciones adicionales y la caché de CDN tiene las siguientes cifras de referencia:
+Adobe Commerce 2.4.5 en infraestructura en la nube sin personalizaciones adicionales y la caché de CDN tiene las siguientes cifras de referencia:
 
-- SKU efectivos de 200 millones
+- SKU efectivos de 242 millones
 - Tiempo medio de respuesta de API de 300 ms
-- 1.700 pedidos por hora
+- 208.000 pedidos por hora
 - &lt;2s tiempo promedio de respuesta de tienda
-- 500.000 vistas de página por hora
+- 2 millones de vistas de página por hora
