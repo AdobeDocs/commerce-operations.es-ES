@@ -1,7 +1,7 @@
 ---
 title: Requisitos del sistema
 description: Utilice esta referencia para identificar las dependencias de software necesarias que se han probado con las versiones de Adobe Commerce y Magento Open Source.
-source-git-commit: 3ba17b62f595e5a02ca56753d81d67166ddbc413
+source-git-commit: df8240b71efe992bc1c0655aa30c32778297a3c6
 workflow-type: tm+mt
 source-wordcount: '534'
 ht-degree: 0%
@@ -39,7 +39,7 @@ Distribuciones Linux, como RedHat Enterprise Linux (RHEL), CentOS, Ubuntu, Debia
 >
 >La variable [Instrucciones de instalación de PHP](prerequisites/php-settings.md) incluya un paso para instalar estas extensiones.
 
-{{$include /help/_includes/php-extensions.md}}
+{{$include /help/_includes/templated/php-extensions.md}}
 
 Consulte [documentación oficial de PHP](https://php.net/manual/en/extensions.php) para obtener más información sobre la instalación.
 
