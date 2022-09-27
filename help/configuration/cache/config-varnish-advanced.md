@@ -1,7 +1,7 @@
 ---
 title: Configuración avanzada de barniz
 description: Configure características avanzadas de Varnish, incluidos los modos de comprobación de estado, gracia y santo.
-source-git-commit: bda758381d8d1b9209110adb168c36e1d504c4fa
+source-git-commit: 974c3480ccf5d1e1a5308e1bd2b27fcfaf3c72b2
 workflow-type: tm+mt
 source-wordcount: '907'
 ht-degree: 0%
@@ -48,7 +48,7 @@ La variable `vcl_hit` la subrutina define cómo Varnish responde a una solicitud
 
 ### Cuando el servidor de Commerce está en buen estado
 
-Cuando las comprobaciones de estado determinan que el servidor de Commerce está en buen estado, Varnish comprueba si el tiempo permanece en el período de gracia. El período de gracia predeterminado es de 300 segundos, pero un comerciante puede establecer el valor desde la variable [Administrador](https://glossary.magento.com/admin) tal como se describe en [Configuración de Commerce para utilizar Varnish](config-varnish-magento.md). Si el período de gracia no ha caducado, Varnish envía el contenido antiguo y actualiza el objeto de forma asíncrona desde el servidor de Commerce. Si el período de gracia ha caducado, Varnish sirve el contenido obsoleto y actualiza sincrónicamente el objeto del servidor de Commerce.
+Cuando las comprobaciones de estado determinan que el servidor de Commerce está en buen estado, Varnish comprueba si el tiempo permanece en el período de gracia. El período de gracia predeterminado es de 300 segundos, pero un comerciante puede establecer el valor desde la variable [Administrador](https://glossary.magento.com/admin) tal como se describe en [Configuración de Commerce para utilizar Varnish](configure-varnish-commerce.md). Si el período de gracia no ha caducado, Varnish envía el contenido antiguo y actualiza el objeto de forma asíncrona desde el servidor de Commerce. Si el período de gracia ha caducado, Varnish sirve el contenido obsoleto y actualiza sincrónicamente el objeto del servidor de Commerce.
 
 La cantidad máxima de tiempo que Varnish proporciona un objeto obsoleto es la suma del periodo de gracia (300 segundos de forma predeterminada) y el valor TTL (86400 segundos de forma predeterminada).
 
