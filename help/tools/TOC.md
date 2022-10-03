@@ -1,9 +1,9 @@
 ---
 user-guide-title: Herramientas
 user-guide-description: Obtenga información sobre las distintas herramientas que puede utilizar con Adobe Commerce, sus usos, el proceso de instalación y cómo obtener acceso.
-source-git-commit: 5edd2839a611fc20b1978b01923a692b21a8dd55
+source-git-commit: 3914a9bb185a18fa80497630f8a6e09b58bdec22
 workflow-type: tm+mt
-source-wordcount: '168'
+source-wordcount: '178'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,7 @@ ht-degree: 0%
    - [Alertas](site-wide-analysis-tool/alerts.md)
    - [Parches](site-wide-analysis-tool/patches.md)
 - Herramienta Parches de calidad {#quality-patches-tool}
+   - [Herramienta Parches de calidad](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target=&quot;_blank&quot;}
    - [Uso](quality-patches-tool/usage.md)
    - [Notas de la versión](quality-patches-tool/release-notes.md)
 - Observación para Adobe Commerce {#observation-for-adobe-commerce}
