@@ -1,7 +1,7 @@
 ---
 title: Notas de la versión
 description: Obtenga información sobre los parches disponibles para Adobe Commerce y los problemas que resuelven.
-source-git-commit: ead062ac2f5dbf07293aef2a5a5d9f1f21255402
+source-git-commit: ea89232bba442add673a0024753f7a5dfdc8d1f8
 workflow-type: tm+mt
 source-wordcount: '9233'
 ht-degree: 0%
@@ -14,7 +14,7 @@ La variable [[!DNL Quality Patches Tool]](https://github.com/magento/quality-pat
 
 >[!INFO]
 >
->Consulte [Aplicar parches](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches) para obtener instrucciones sobre la aplicación de parches a sus proyectos de Adobe Commerce o Magento Open Source. Consulte [Parches disponibles](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) en la Guía de actualización de software para revisar una lista completa de parches publicados.
+>Consulte [Aplicar parches](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches) para obtener instrucciones sobre la aplicación de parches a sus proyectos de Adobe Commerce o Magento Open Source. Consulte [Parches disponibles](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) en la Guía de actualización de software para revisar una lista completa de parches publicados.
 
 >[!INFO]
 >
@@ -542,4 +542,3 @@ Correcciones menores para versiones de parches
 * **MDVA-30052** (*para Adobe Commerce >=2.3.2-p2 &lt;2.3.5*): Corrige el problema con el contenido privado (almacenamiento local) que no se rellena correctamente, lo que daba como resultado problemas de rendimiento.
 * **MDVA-30131** (*para Adobe Commerce >=2.3.4 &lt;2.3.6 || 2.4.0*): Corrige el problema de la navegación en capas, en la que la función *No* el valor de los atributos de producto de tipo booleano no se incluyó en la navegación en capas si [!DNL Elasticsearch] se usaba como motor de búsqueda.
 * **MDVA-35514** (*para Adobe Commerce >=2.4.0 &lt;2.4.1*) : corrige el problema con la creación de una etiqueta de envío y la adición de productos pedidos a un paquete en la ventana modal Crear paquetes .
-

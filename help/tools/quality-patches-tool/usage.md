@@ -1,9 +1,9 @@
 ---
 title: Uso
 description: Aprenda a utilizar la variable [!DNL Quality Patches Tool].
-source-git-commit: 83fa1c77dd6105f4c97f697fd6636773d94fb5ee
+source-git-commit: 7ce26f10b92632c077d37ae03d68594ba2444098
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '872'
 ht-degree: 0%
 
 ---
@@ -14,8 +14,8 @@ La variable [[!DNL Quality Patches Tool]](https://github.com/magento/quality-pat
 
 
 >[!INFO]
-> 
->Consulte [Aplicar parches individuales](#apply-individual-patches) para obtener instrucciones sobre la aplicación de parches a sus proyectos de Adobe Commerce o Magento Open Source. Consulte [Parches disponibles](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) para revisar una lista completa de parches liberados.
+>
+>Consulte [Aplicar parches individuales](#apply-individual-patches) para obtener instrucciones sobre la aplicación de parches a sus proyectos de Adobe Commerce o Magento Open Source. Consulte [Parches disponibles](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) para revisar una lista completa de parches liberados.
 
 >[!WARNING]
 >
@@ -24,7 +24,7 @@ La variable [[!DNL Quality Patches Tool]](https://github.com/magento/quality-pat
 ## Instalar
 
 >[!INFO]
-> 
+>
 >Si aún no está instalado, debe instalar [[!DNL Git]](https://github.com/git-guides/install-git) o [Parche](https://man7.org/linux/man-pages/man1/patch.1.html) antes de instalar el [!DNL Quality Patches Tool]. Agregue la variable `magento/quality-patches` Paquete de compositor a su `composer.json` archivo:
 
 ```bash
@@ -72,7 +72,7 @@ La tabla de estado incluye:
    - `Recommended replacement` — El parche que es un reemplazo recomendado para un parche en desuso.
 
 >[!INFO]
-> 
+>
 >Después de actualizar a una nueva versión de Adobe Commerce o Magento Open Source, debe volver a aplicar los parches si no se incluyen en la nueva versión. Consulte [Volver a aplicar parches después de una actualización](#re-apply-patches-after-an-upgrade).
 
 ## Aplicar parches individuales {#apply-individual-patches}
