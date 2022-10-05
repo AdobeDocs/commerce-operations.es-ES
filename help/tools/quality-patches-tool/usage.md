@@ -1,9 +1,9 @@
 ---
 title: Uso
 description: Aprenda a utilizar la variable [!DNL Quality Patches Tool].
-source-git-commit: 7ce26f10b92632c077d37ae03d68594ba2444098
+source-git-commit: 9e719cdf888caa3fa34f6416650e62bbf1b81175
 workflow-type: tm+mt
-source-wordcount: '872'
+source-wordcount: '901'
 ht-degree: 0%
 
 ---
@@ -12,6 +12,8 @@ ht-degree: 0%
 
 La variable [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) ofrece parches individuales desarrollados por Adobe y la comunidad de Magento Open Source. Permite aplicar, revertir y ver información general sobre todos los parches individuales disponibles para la versión instalada de Adobe Commerce o Magento Open Source. Puede aplicar parches a los proyectos de Adobe Commerce y Magento Open Source independientemente de quién desarrolló el parche. Por ejemplo, puede aplicar un parche desarrollado por la comunidad a los proyectos de Adobe Commerce.
 
+
+Observe esto [vídeo técnico](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/tools/quality-patch-tool.html?lang=en) y aprenda a utilizar la herramienta Parche de Calidad para Adobe Commerce y Magento Open Source.
 
 >[!INFO]
 >
