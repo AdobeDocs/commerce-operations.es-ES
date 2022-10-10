@@ -1,9 +1,9 @@
 ---
 user-guide-title: Herramientas
 user-guide-description: Obtenga información sobre las distintas herramientas que puede utilizar con Adobe Commerce, sus usos, el proceso de instalación y cómo obtener acceso.
-source-git-commit: 3914a9bb185a18fa80497630f8a6e09b58bdec22
+source-git-commit: 5e8e2730a0cc30997365bd70c4409e0eb8923dfb
 workflow-type: tm+mt
-source-wordcount: '178'
+source-wordcount: '181'
 ht-degree: 0%
 
 ---
@@ -39,6 +39,7 @@ ht-degree: 0%
    - [La pestaña Redis](observation-for-adobe-commerce/redis-tab.md)
    - [La ficha MySQL](observation-for-adobe-commerce/mysql-tab.md)
    - [La pestaña PHP](observation-for-adobe-commerce/php-tab.md)
+   - [La pestaña Bots](observation-for-adobe-commerce/bots.md)
    - [La ficha Implementar](observation-for-adobe-commerce/deploy-tab.md)
    - [La pestaña Alertas](observation-for-adobe-commerce/alerts-tab.md)
    - [La pestaña WAF](observation-for-adobe-commerce/waf-tab.md)
