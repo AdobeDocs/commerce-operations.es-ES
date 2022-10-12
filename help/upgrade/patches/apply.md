@@ -1,9 +1,9 @@
 ---
 title: Aplicar parches
 description: Obtenga información sobre los métodos para aplicar parches a un proyecto de Adobe Commerce o de Magento Open Source.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: e2ddb30da8dd86236e1dcf33a3f911b67384a6d7
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Puede aplicar parches mediante cualquiera de los siguientes métodos:
 
-- [Herramienta Parches de calidad](https://devdocs.magento.com/quality-patches/tool.html)
+- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target=&quot;_blank&quot;}
 - [Línea de comandos](../patches/apply.md#command-line)
 - [Compositor](../patches/apply.md#composer)
 
@@ -21,7 +21,7 @@ Puede aplicar parches mediante cualquiera de los siguientes métodos:
 
 >[!IMPORTANT]
 >
->Para aplicar parches oficiales de calidad, utilice la variable [Herramienta Parches de calidad](https://devdocs.magento.com/quality-patches/tool.html). Realice pruebas exhaustivas antes de implementar cualquier parche personalizado.
+>Para aplicar parches oficiales de calidad, utilice la variable [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target=&quot;_blank&quot;}. Realice pruebas exhaustivas antes de implementar cualquier parche personalizado.
 
 Para aplicar un parche personalizado con Composer:
 
