@@ -1,24 +1,28 @@
 ---
 title: Configurar el cambio de tamaño de la imagen para el almacenamiento remoto
 description: Optimice los recursos de disco configurando el cambio de tamaño de las imágenes del lado del servidor.
-source-git-commit: 96fe0c5eeaa029347c829c39547ee5e473c8d04d
+source-git-commit: 7fc5d561baa3c2a4aab160a35a1c8a302a62a3b1
 workflow-type: tm+mt
-source-wordcount: '226'
+source-wordcount: '247'
 ht-degree: 1%
 
 ---
 
 # Configurar el cambio de tamaño de la imagen para el almacenamiento remoto
 
-De forma predeterminada, [!DNL Commerce] admite el cambio de tamaño de la imagen en el lado de la aplicación. Sin embargo, al habilitar el módulo Almacenamiento remoto, puede utilizar Nginx para descargar el cambio de tamaño de la imagen en el servidor, donde puede guardar recursos de disco y optimizar el uso del disco.
+De forma predeterminada, Adobe Commerce admite el cambio de tamaño de imágenes en la aplicación. Sin embargo, al habilitar el módulo Almacenamiento remoto, puede utilizar Nginx para descargar el cambio de tamaño de la imagen en el servidor, donde puede guardar recursos de disco y optimizar el uso del disco.
 
 El diagrama siguiente muestra cómo Nginx recupera, cambia de tamaño y almacena las imágenes en la caché. El cambio de tamaño viene determinado por los parámetros incluidos en la dirección URL, como la altura y la anchura.
 
 ![cambiar tamaño de imagen](../../assets/configuration/remote-storage-nginx-image-resize.png)
 
-## Configurar el formato de URL en [!DNL Commerce]
+>[!TIP]
+>
+>Para Adobe Commerce en proyectos de infraestructura en la nube, consulte [Configuración del almacenamiento remoto para Commerce en la infraestructura de Cloud](cloud-support.md)
 
-Para cambiar el tamaño de las imágenes en el servidor, debe configurar Commerce para proporcionar argumentos sobre la altura, la anchura y la ubicación (URL) de la imagen.
+## Configuración del formato de URL en Adobe Commerce
+
+Para cambiar el tamaño de las imágenes en el servidor, debe configurar Adobe Commerce para que proporcione argumentos sobre la altura, la anchura y la ubicación (URL) de la imagen.
 
 **Para configurar Commerce para el cambio de tamaño de imágenes del lado del servidor**:
 
