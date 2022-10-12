@@ -1,9 +1,9 @@
 ---
 title: Programación de la versión
 description: Descubra cuándo se han programado versiones específicas de Adobe Commerce para su versión beta, previa al lanzamiento y disponibilidad general.
-source-git-commit: 1c302d312eeeb7512d8b91063f06f8e7c9bf98bd
+source-git-commit: c0609aef52f6c8c24a6ccb036b9d44bed9b3c597
 workflow-type: tm+mt
-source-wordcount: '474'
+source-wordcount: '458'
 ht-degree: 0%
 
 ---
@@ -24,8 +24,6 @@ La siguiente tabla proporciona las fechas para las versiones programadas (las fe
 | Junio de 2022<br>Versión de funciones | \-\- | \-\- | \-\- | 21 de junio de 2022 |
 | Agosto de 2022<br>Funcionalidad + lanzamiento de parches + lanzamiento de parches de seguridad | 2.4.5<br>2.4.4-p1<br>2.4.3-p3<br>2.3.7-p4<sup>1</sup> | \-\- | 26 de julio de 2022 | 9 de agosto de 2022 |
 | Octubre de 2022<br>Funcionalidad + versión de parches de seguridad | 2.4.5-p1<sup>2</sup><br>2.4.4-p2 | \-\- | 27 de septiembre de 2022 | 11 de octubre de 2022 |
-| Enero de 2023<br>Versión de funciones | \-\- | \-\- | \-\- | 17 de enero de 2023 |
-| Marzo de 2023<br>Funcionalidad + lanzamiento de parches + lanzamiento de parches de seguridad | 2.4.6<br>2.4.5-p2<br>2.4.4-p3 | Enero de 2023 | 28 de febrero de 2023 | 14 de marzo de 2023 |
 
 <sup>\-\- Indica los elementos que no son aplicables a esta versión.</sup><br>
 <sup>1 Esta es la última versión del parche para la línea de versión 2.3.x. La línea de versión 2.3.x llega al fin de la compatibilidad (EOS) en septiembre de 2022.</sup><br>
