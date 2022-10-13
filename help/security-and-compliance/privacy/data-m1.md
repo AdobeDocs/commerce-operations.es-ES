@@ -1,9 +1,9 @@
 ---
 title: Referencia de información personal del cliente (versión 1.x)
-description: Obtenga información sobre el flujo de datos y las asignaciones de entidades de base de datos para la información personal del cliente en Magento 1.x.
-source-git-commit: 0640b59cc529123911537475bbfc179c917ac258
+description: Obtenga información sobre el flujo de datos y las asignaciones de entidades de base de datos para la información personal del cliente en el Magento 1.x.
+source-git-commit: 2120e5bb912a89c58611ef9e23661a54e40a14f1
 workflow-type: tm+mt
-source-wordcount: '609'
+source-wordcount: '606'
 ht-degree: 0%
 
 ---

@@ -1,9 +1,9 @@
 ---
 title: Referencia de información personal del cliente (versión 2.x)
-description: Obtenga información sobre diagramas de flujo de datos y asignaciones de entidades de base de datos para información personal del cliente en Adobe Commerce y Magento Open Source 2.x.
-source-git-commit: 0640b59cc529123911537475bbfc179c917ac258
+description: Obtenga información sobre los diagramas de flujo de datos y las asignaciones de entidades de base de datos para la información personal del cliente en Adobe Commerce y Magento Open Source 2.x.
+source-git-commit: 2120e5bb912a89c58611ef9e23661a54e40a14f1
 workflow-type: tm+mt
-source-wordcount: '759'
+source-wordcount: '755'
 ht-degree: 0%
 
 ---

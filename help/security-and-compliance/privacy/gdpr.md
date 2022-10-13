@@ -1,9 +1,9 @@
 ---
 title: Reglamento general de protección de datos (RGPD)
 description: Obtenga información sobre el Reglamento General de Protección de Datos (RGPD), que es una legislación que regula la protección de datos y la privacidad de todas las personas en la Unión Europea y el Espacio Económico Europeo.
-source-git-commit: 1a608e8a5986026d5a187dc8cbd358fed2db5d9e
+source-git-commit: 2120e5bb912a89c58611ef9e23661a54e40a14f1
 workflow-type: tm+mt
-source-wordcount: '294'
+source-wordcount: '292'
 ht-degree: 0%
 
 ---
