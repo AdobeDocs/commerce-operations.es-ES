@@ -1,10 +1,10 @@
 ---
 title: Lectura recomendada para actualizaciones
 description: Consulte la lectura recomendada para planificar la actualización de Adobe Commerce o Magento Open Source.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: ffa8b957828833d2c3f9bc79c31dc3fa2c6035a5
 workflow-type: tm+mt
-source-wordcount: '420'
-ht-degree: 3%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -34,7 +34,7 @@ Continúe aprendiendo sobre las actualizaciones de Adobe Commerce y Magento Open
             <li><a href="https://experienceleague.adobe.com/docs/commerce-learn/tutorials/uct-phpstorm.html?lang=en">Actualización del complemento PhpStorm de la herramienta de compatibilidad</a> (vídeo)</li>
             <li><a href="../upgrade-compatibility-tool/overview.md">Herramienta de compatibilidad de actualización</a></li>
             <li><a href="https://magentocommeng.slack.com/archives/C019Y143U9F">#UpgradeCompatibilityTool canal del Slack</a></li>
-            <li><a href="https://devdocs.magento.com/quality-patches/usage.html">Herramienta Parches de calidad</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html">Herramienta Parches de calidad</a></li>
           </ul>
       </td>
     </tr>

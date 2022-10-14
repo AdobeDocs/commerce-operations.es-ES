@@ -1,7 +1,7 @@
 ---
 title: Política de ciclo de vida del software
 description: Obtenga información sobre las fechas clave para el fin de la compatibilidad con software para las versiones de Adobe Commerce.
-source-git-commit: 79f36e3728e6bc436e8093bd4051143a48e681d6
+source-git-commit: ffa8b957828833d2c3f9bc79c31dc3fa2c6035a5
 workflow-type: tm+mt
 source-wordcount: '368'
 ht-degree: 5%
@@ -13,7 +13,7 @@ ht-degree: 5%
 
 Para Adobe Commerce 2.4 y versiones posteriores:
 
-- Para optimizar mejor nuestra política de ciclo vital, Adobe proporciona correcciones de calidad a la línea de versiones 2.4 hasta el final de la fecha de soporte de la versión PHP en la que se basa. Un cliente puede acceder a las correcciones de calidad poniéndose en contacto con [Asistencia de Adobe Commerce](https://developer.adobe.com/commerce/contributor/community/support/) o a través del autoservicio [Herramienta Parches de calidad](https://devdocs.magento.com/quality-patches/tool.html) si su versión sigue siendo compatible con la calidad. Consulte la siguiente tabla para ver las fechas de fin de soporte de software para las líneas de versión de Adobe Commerce.
+- Para optimizar mejor nuestra política de ciclo vital, Adobe proporciona correcciones de calidad a la línea de versiones 2.4 hasta el final de la fecha de soporte de la versión PHP en la que se basa. Un cliente puede acceder a las correcciones de calidad poniéndose en contacto con [Asistencia de Adobe Commerce](https://developer.adobe.com/commerce/contributor/community/support/) o a través del autoservicio [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target=&quot;_blank&quot;} si su versión sigue siendo compatible con la calidad. Consulte la siguiente tabla para ver las fechas de fin de soporte de software para las líneas de versión de Adobe Commerce.
 
 - Adobe proporciona correcciones de seguridad solo a través del último parche o parche de seguridad, incluso si la versión de un cliente sigue siendo apta para asistencia de calidad. A diferencia de las correcciones de calidad, las correcciones de seguridad no se pueden portar de versiones anteriores menores ni de versiones anteriores de parches dentro de versiones menores admitidas.
 
