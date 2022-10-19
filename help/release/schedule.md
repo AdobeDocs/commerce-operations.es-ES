@@ -1,9 +1,9 @@
 ---
 title: Programación de la versión
 description: Descubra cuándo se han programado versiones específicas de Adobe Commerce para su versión beta, previa al lanzamiento y disponibilidad general.
-source-git-commit: c0609aef52f6c8c24a6ccb036b9d44bed9b3c597
+source-git-commit: 77ef9c276306700a9ff62795d05075e8731f5d5a
 workflow-type: tm+mt
-source-wordcount: '458'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -24,6 +24,8 @@ La siguiente tabla proporciona las fechas para las versiones programadas (las fe
 | Junio de 2022<br>Versión de funciones | \-\- | \-\- | \-\- | 21 de junio de 2022 |
 | Agosto de 2022<br>Funcionalidad + lanzamiento de parches + lanzamiento de parches de seguridad | 2.4.5<br>2.4.4-p1<br>2.4.3-p3<br>2.3.7-p4<sup>1</sup> | \-\- | 26 de julio de 2022 | 9 de agosto de 2022 |
 | Octubre de 2022<br>Funcionalidad + versión de parches de seguridad | 2.4.5-p1<sup>2</sup><br>2.4.4-p2 | \-\- | 27 de septiembre de 2022 | 11 de octubre de 2022 |
+| Enero de 2023<br>Versión de funciones | \-\- | \-\- | \-\- | 17 de enero de 2023 |
+| Marzo de 2023<br>Funcionalidad + lanzamiento de parches + lanzamiento de parches de seguridad | 2.4.6<br>2.4.5-p2<br>2.4.4-p3 | Enero de 2023 | 28 de febrero de 2023 | 14 de marzo de 2023 |
 
 <sup>\-\- Indica los elementos que no son aplicables a esta versión.</sup><br>
 <sup>1 Esta es la última versión del parche para la línea de versión 2.3.x. La línea de versión 2.3.x llega al fin de la compatibilidad (EOS) en septiembre de 2022.</sup><br>
@@ -32,10 +34,6 @@ La siguiente tabla proporciona las fechas para las versiones programadas (las fe
 >[!TIP]
 >
 >Las versiones de parches y parches de seguridad son oportunidades para actualizar la base de código central para mantener su plataforma segura, fiable y con rendimiento. Las versiones de funciones se producen cada dos meses. Las versiones de funciones son independientes del código base principal y están disponibles a través de un módulo o extensión externa. Cualquier actualización de las funciones independientes existentes se lanza durante los periodos de la versión de las funciones y no se produce automáticamente si la función ya está implementada.
-
->[!NOTE]
->
->Hemos introducido un [nueva política](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf) que se aplica a nuestras líneas de versión admitidas. Para obtener más información sobre la nueva estrategia que hay detrás de nuestro calendario de versiones de 2022 y nuestra política de ciclo vital, visite nuestra [blog](https://business.adobe.com/blog/how-to/accelerating-innovation-through-simplified-release-strategy).
 
 ## Acceso anticipado
 
