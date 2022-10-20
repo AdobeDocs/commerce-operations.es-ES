@@ -3,8 +3,8 @@ title: Lectura recomendada para actualizaciones
 description: Consulte la lectura recomendada para planificar la actualización de Adobe Commerce o Magento Open Source.
 source-git-commit: ffa8b957828833d2c3f9bc79c31dc3fa2c6035a5
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '423'
+ht-degree: 3%
 
 ---
 
