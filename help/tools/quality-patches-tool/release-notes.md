@@ -1,9 +1,9 @@
 ---
 title: Notas de la versión
 description: Obtenga información sobre los parches disponibles para Adobe Commerce y los problemas que resuelven.
-source-git-commit: bb1cb17b75a799409336068967c9d0facefeaf41
+source-git-commit: e9ba2d0ad8568c40335e8643ef0070d9e2bb9b3f
 workflow-type: tm+mt
-source-wordcount: '9467'
+source-wordcount: '9581'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,14 @@ La variable [[!DNL Quality Patches Tool]](https://github.com/magento/quality-pat
 >[!INFO]
 >
 >Para obtener información sobre [!DNL quality patches] creado por la comunidad para el Magento Open Source, consulte la [notas de la versión](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.22 {#v1-1-22}
+
+* **ACSD-47444** (para Adobe Commerce y Magento Open Source >=2.4.0 &lt;2.4.3): corrige la variable _Intentando acceder al desplazamiento de matriz en el valor de tipo bool_ al acceder a ciertas rutas de categoría no existentes para productos conocidos en PHP 7.4.
+* **ACSD-47332** (para Adobe Commerce y Magento Open Source >=2.4.0 &lt;2.4.6): corrige el problema en el que cron falla con un error del que solo se informa cuando se ejecuta entre las 00:00 y las 00:59 UTC.
+* **ACSD-47280** (para Adobe Commerce y Magento Open Source >=2.4.0 &lt;2.4.6) : corrige el problema en el que deshabilitar la función de catálogo compartido en un ámbito específico no funciona correctamente.
+* **ACSD-47106** (para Adobe Commerce y Magento Open Source >=2.4.4 &lt;2.4.6) : corrige el problema en el que un valor no se puede guardar en un nuevo atributo personalizado en una página de creación de empresa.
+* Parche actualizado: ACSD-45143.
 
 ## v1.1.21 {#v1-1-21}
 
@@ -385,7 +393,7 @@ La variable [[!DNL Quality Patches Tool]](https://github.com/magento/quality-pat
 * **MDVA-34943** (*para Adobe Commerce >=2.3.0 &lt;2.4.2*): corrige el problema en el que los pedidos rápidos almacenan en caché los SKU introducidos anteriormente.
 * **MDVA-35197** (*para Adobe Commerce >=2.3.5 &lt;2.4.0*): Corrige el problema en el que se producía un error al añadir al carro de compras mediante GraphQL si los productos añadidos anteriormente no estaban en existencias.
 * **MDVA-34850** (*para Adobe Commerce >=2.3.1 &lt;2.4.0*): Corrige el problema en el que las opciones sin existencias de un producto configurable no se muestran en lugar de mostrarse como pulsadas.
-* **MDVA-34867** (*para Adobe Commerce >=2.3.0 &lt;2.4.3*): Corrige el problema en el que no se están guardando los valores de un campo de condición establecido para una actualización programada.
+* **MDVA-34867** (*para Adobe Commerce >=2.3.0 &lt;2.4.3*): Corrige el problema en el que no se están guardando los valores de un campo de condición definido para una actualización programada.
 * **MDVA-35092** (*para Adobe Commerce >=2.3.5 &lt;2.4.3*): Corrige el problema en el que los usuarios no pueden agregar [!DNL Vimeo] vídeos en desuso [!DNL Vimeo] API.
 
 ## v1.0.16 {#v1-0-16}
