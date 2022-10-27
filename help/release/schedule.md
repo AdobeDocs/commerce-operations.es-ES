@@ -1,9 +1,9 @@
 ---
 title: Programación de la versión
 description: Descubra cuándo se han programado versiones específicas de Adobe Commerce para su versión beta, previa al lanzamiento y disponibilidad general.
-source-git-commit: 77ef9c276306700a9ff62795d05075e8731f5d5a
+source-git-commit: 261aecd7d217e5c2e22f1a6c97242baa2923af60
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '428'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Programación de la versión
 
-El Adobe se esfuerza continuamente por encontrar el equilibrio adecuado entre hacer que las actualizaciones de productos sean simples y predecibles y ofrecer mejoras y nuevas funciones a los usuarios que las adopten más rápidamente. Durante el último año, hemos perfeccionado la forma en que suministramos software para respaldar este equilibrio. Para obtener más información, consulte nuestra [directiva de versión](policy.md).
+El Adobe se esfuerza continuamente por encontrar el equilibrio adecuado entre hacer que las actualizaciones de productos sean simples y predecibles y ofrecer mejoras y nuevas funciones a los usuarios que las adopten más rápidamente. Durante el último año, hemos perfeccionado la forma en que suministramos software para respaldar este equilibrio. Para obtener más información, consulte nuestra [directiva de versiones](versioning-policy.md).
 
 Adobe libera parches funcionales y de seguridad para cada línea de versiones admitida de Adobe Commerce y Magento Open Source.
 
