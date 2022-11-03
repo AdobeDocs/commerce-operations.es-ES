@@ -1,9 +1,9 @@
 ---
 title: Procesamiento de pedidos de alto rendimiento
 description: Optimice la ubicación de los pedidos y la experiencia de cierre de compra para su implementación de Adobe Commerce o Magento Open Source.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 45ffa6487d94feba3d6c2a6d5d938108b1fef91d
 workflow-type: tm+mt
-source-wordcount: '1046'
+source-wordcount: '1048'
 ht-degree: 0%
 
 ---
@@ -75,7 +75,7 @@ La variable `set` escribe lo siguiente en el `app/etc/env.php` archivo:
 AsyncOrder admite un conjunto limitado de [!DNL Commerce] características.
 
 | Categoría | Función compatible |
-|---------------- | -----------------------|
+|------------------|--------------------------------------------------------------------------|
 | Tipos de cierre de compra | Cierre de compra de una página<br>Cierre de compra estándar<br>Oferta negociable B2B |
 | Métodos de pago | Comprobación/Pedido de Dinero<br>Efectivo a la entrega<br>Braintree<br>PayPal PayFlow Pro |
 | Métodos de envío | Se admiten todos los métodos de envío. |
@@ -184,8 +184,8 @@ stage:
 
 <!-- link definitions -->
 
-[global]: https://docs.magento.com/user-guide/catalog/inventory-options-global.html
-[inventory]: https://docs.magento.com/user-guide/configuration/catalog/inventory.html
+[global]: https://experienceleague.adobe.com/docs/commerce-admin/inventory/configuration/global-options.html
+[inventory]: https://experienceleague.adobe.com/docs/commerce-admin/inventory/guide-overview.html
 [mrg]: https://developer.adobe.com/commerce/php/module-reference/
 [AsyncOrder]: https://developer.adobe.com/commerce/php/module-reference/module-async-order/
 [TotalDiferidoCalculando]: https://developer.adobe.com/commerce/php/module-reference/module-deferred-total-calculating/

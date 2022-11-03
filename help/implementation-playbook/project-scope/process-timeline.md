@@ -1,15 +1,16 @@
 ---
-title: Proceso y línea de tiempo
+title: Proceso de implementación y cronología
 description: Consulte ejemplos de cronologías y actividades típicas de la implementación de Adobe Commerce.
 exl-id: 73e38098-db2b-4ad3-9f2d-ac8a377f2525
-source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
+source-git-commit: 6e07f8c958adedd2a98d3fe0d174865a3b9ebead
 workflow-type: tm+mt
-source-wordcount: '168'
+source-wordcount: '170'
 ht-degree: 0%
 
 ---
 
-# Proceso típico y cronología
+
+# Proceso de implementación típico y cronología
 
 Muchas organizaciones se preparan para una transformación del comercio mediante la creación de una solicitud de propuesta (RFP). Esto incluye requisitos detallados, sistemas actuales de registro, casos comerciales y objetivos específicos (por ejemplo, ingresos, conversión, valor de pedido promedio) para definir el éxito. A continuación, la marca se acerca de dos a tres integradores de sistemas de comercio o agencias digitales diferentes para evaluar, revisar las estimaciones y propuestas, seleccionar una empresa y comenzar a trabajar hacia el calendario proyectado para su lanzamiento.
 

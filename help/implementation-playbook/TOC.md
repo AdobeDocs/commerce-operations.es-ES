@@ -2,10 +2,10 @@
 user-guide-title: Guía de implementación
 user-guide-description: Obtenga información acerca de las estrategias para planificar e implementar un sitio de Adobe Commerce con éxito.
 mini-toc-levels: 3
-source-git-commit: 514426d622ba47b8a7e517368132c86c9236b63a
+source-git-commit: 1582431fed6978de23bd1b7f6d901ae343523a2e
 workflow-type: tm+mt
-source-wordcount: '128'
-ht-degree: 12%
+source-wordcount: '235'
+ht-degree: 6%
 
 ---
 
@@ -66,3 +66,46 @@ ht-degree: 12%
 - Mantenimiento y asistencia {#maintenance}
    - [Información general](maintenance/overview.md)
    - [Adobe Managed Services](maintenance/adobe-managed-services.md)
+- Prácticas recomendadas {#best-practices}
+   - [Información general](best-practices/phases.md)
+   - Planificación {#planning}
+      - [Información general](best-practices/planning/overview.md)
+      - [Sitios, tiendas y configuración de vista de tienda](best-practices/planning/sites-stores-store-views.md)
+      - [Configuración de informes](best-practices/planning/reporting-configuration.md)
+      - [Configuración de la base de datos para implementaciones en la nube &#x200B;](best-practices/planning/database-on-cloud.md)
+      - [Configuración de conexión esclava de MySQL &#x200B;](best-practices/planning/configure-mysql-slave-connection-on-cloud.md)
+      - [Uso de déclencheur MySQL](best-practices/planning/mysql-triggers-usage.md)
+      - [Configuración del servicio Redis](best-practices/planning/redis-service-configuration.md)
+      - [Tamaño de memoria OPcache](best-practices/planning/opcache-memory-size.md)
+      - [Tamaño de caché de la ruta de acceso real](best-practices/planning/realpath-cache-size.md)
+      - [Categorías](best-practices/planning/category-limits.md)
+      - [Product](best-practices/planning/product-sku-limits.md)
+      - [Variaciones de productos](best-practices/planning/product-variations.md)
+      - [Opciones de producto](best-practices/planning/product-options.md)
+      - [Atributos del producto](best-practices/planning/product-attributes-and-options.md)
+      - [Paginación de la lista de productos](best-practices/planning/product-listing-pagination.md)
+      - [Límite del carro de productos](best-practices/planning/product-cart.md)
+      - [Promociones](best-practices/planning/product-cart-promotions.md)
+      - [Extensiones](best-practices/planning/extensions.md)
+      - [Escalaciones de socios](best-practices/planning/partner-escalation.md)
+   - Desarrollo {#development}
+      - [Información general](best-practices/development/overview.md)
+      - [Optimización de imágenes](best-practices/development/image-optimization.md)
+      - [Resolución de problemas](best-practices/development/troubleshooting.md)
+      - [Optimización de archivos CSS y JS](best-practices/development/optimize-css-js-files.md)
+      - [Bloques de contenido privado](best-practices/development/private-content-block-configuration.md)
+      - [Implementación de contenido estático](best-practices/development/static-content-deployment.md)
+   - Launch {#launch}
+      - [Información general](best-practices/launch/overview.md)
+      - [Servicio de notificaciones de seguridad de Adobe](best-practices/launch/security-notification-service.md)
+      - [Configuración del archivo robots.txt](best-practices/launch/robots-txt.md)
+   - Mantenimiento {#maintenance}
+      - [Información general](best-practices/maintenance/overview.md)
+      - [Rendimiento del front-end de auditoría](best-practices/maintenance/frontend-performance.md)
+      - [Configuración del indexador](best-practices/maintenance/indexer-configuration.md)
+      - [Procesamiento de pedidos](best-practices/maintenance/order-processing-configuration.md)
+      - [Programación de actualizaciones de administración en sitios de producción](best-practices/maintenance/scheduling-admin-updates-in-production.md)
+      - [Actualizar servicios](best-practices/maintenance/update-services.md)
+      - [Actualizar lista de comprobación](best-practices/maintenance/upgrade-checklist.md)
+      - [Resolver problemas de rendimiento de la base de datos &#x200B;](best-practices/maintenance/resolve-database-performance-issues.md)
+      - [Requisitos previos de actualización de Adobe Commerce 2.3.5 para &#x200B; de MariaDB](best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.md)
