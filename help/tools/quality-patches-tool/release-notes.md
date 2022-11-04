@@ -1,9 +1,9 @@
 ---
 title: Notas de la versión
 description: Obtenga información sobre los parches disponibles para Adobe Commerce y los problemas que resuelven.
-source-git-commit: e9ba2d0ad8568c40335e8643ef0070d9e2bb9b3f
+source-git-commit: 6d0b5515792afe33eab440290413b84d251796cc
 workflow-type: tm+mt
-source-wordcount: '9581'
+source-wordcount: '9752'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,18 @@ La variable [[!DNL Quality Patches Tool]](https://github.com/magento/quality-pat
 >[!INFO]
 >
 >Para obtener información sobre [!DNL quality patches] creado por la comunidad para el Magento Open Source, consulte la [notas de la versión](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.23 {#v1-1-23}
+
+* **ACSD-47179** (para Adobe Commerce y Magento Open Source >=2.4.0 &lt;2.4.6) : corrige el problema en el que un administrador con acceso restringido a un ámbito específico no puede eliminar las revisiones de productos.
+* **ACSD-47107** (para Adobe Commerce y Magento Open Source >=2.4.2 &lt;2.4.5) : corrige el problema en el que el descuento de la regla de precio del catálogo se aplica a las opciones de producto personalizadas.
+* **ACSD-47232** (para Adobe Commerce y Magento Open Source >=2.4.0 &lt;2.4.6): corrige el problema en el que los cupones con condiciones de peso total no se pueden aplicar en el administrador.
+* **ACSD-46519** (para Adobe Commerce y Magento Open Source >=2.4.1 &lt;2.4.6) : corrige el problema en el que la solicitud categoryList de GraphQL devuelve un product_count incorrecto para una categoría de anclaje.
+* **ACSD-47027** (para Adobe Commerce y Magento Open Source >=2.4.2 &lt;2.4.6): corrige una solicitud lenta de updateCompanyRole GraphQL.
+* **ACSD-47666** (para Adobe Commerce y Magento Open Source >=2.4.0 &lt;2.4.6) : corrige el problema en el que la función de filtro no funciona en la cuadrícula Administración > Sistema > Permisos > Funciones de usuario > a función > Usuarios de rol .
+* **ACSD-47497** (para Adobe Commerce y Magento Open Source >=2.4.0 &lt;2.4.6) : corrige el problema en el que la pestaña Servicios no está visible en la Configuración en Administración.
+* Parche actualizado: ACSD-47743.
+* parches reemplazados: MDVA-42807.
 
 ## v1.1.22 {#v1-1-22}
 
