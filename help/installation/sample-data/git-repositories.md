@@ -1,9 +1,9 @@
 ---
 title: Clonar datos de ejemplo en repositorios Git
 description: Siga estos pasos para instalar Adobe Commerce y los datos de ejemplo del Magento Open Source mediante la clonación de repositorios Git.
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+source-git-commit: 3692dcfd5b50c2f036b005d40a22db061b9ea5fd
 workflow-type: tm+mt
-source-wordcount: '800'
+source-wordcount: '764'
 ht-degree: 0%
 
 ---
@@ -73,12 +73,10 @@ Para clonar el repositorio de GitHub de datos de muestra mediante el protocolo S
 
    Si ha utilizado la variable `2.4-develop` rama del repositorio Magento Open Source de GitHub, la rama de datos de ejemplo debe ser `2.4-develop`.
 
-   Si ha utilizado la variable `2.4.3` rama del repositorio Magento Open Source de GitHub, la rama de datos de ejemplo debe ser `2.4.3`.
-
-   Para extraer la rama correcta, ejecute el siguiente comando desde el directorio raíz del repositorio de datos de ejemplo (suponiendo que necesite el `2.4.3` rama):
+   Para extraer la rama correcta, ejecute el siguiente comando desde el directorio raíz del repositorio de datos de ejemplo (suponiendo que necesite el `2.4-develop` rama):
 
    ```bash
-   git checkout 2.4.3
+   git checkout 2.4-develop
    ```
 
 1. Cambiar a `<app_root>`.
@@ -129,12 +127,10 @@ Para clonar el repositorio de GitHub de datos de ejemplo mediante el protocolo H
 
    Si ha utilizado la variable `2.4-develop` rama del repositorio Magento Open Source de GitHub, la rama de datos de ejemplo debe ser `2.4-develop`.
 
-   Si ha utilizado la variable `2.4.3` rama del repositorio Magento Open Source de GitHub, la rama de datos de ejemplo debe ser `2.4.3`.
-
-   Para extraer la rama correcta, ejecute el siguiente comando desde el directorio raíz del repositorio de datos de ejemplo (suponiendo que necesite el `2.4.3` rama):
+   Para extraer la rama correcta, ejecute el siguiente comando desde el directorio raíz del repositorio de datos de ejemplo (suponiendo que necesite el `2.4-develop` rama):
 
    ```bash
-   git checkout 2.4.3
+   git checkout 2.4-develop
    ```
 
 1. Cambiar a `<magento_root>`.

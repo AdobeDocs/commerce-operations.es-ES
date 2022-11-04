@@ -1,9 +1,9 @@
 ---
 title: Instalación local de inicio rápido
 description: Siga estos pasos para instalar Adobe Commerce o Magento Open Source en la infraestructura que posea.
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+source-git-commit: 3692dcfd5b50c2f036b005d40a22db061b9ea5fd
 workflow-type: tm+mt
-source-wordcount: '996'
+source-wordcount: '993'
 ht-degree: 0%
 
 ---
@@ -95,32 +95,32 @@ Para obtener el metapaquete Adobe Commerce o Magento Open Source:
 
    >[!NOTE]
    >
-   >Los clientes de Adobe Commerce pueden acceder a los parches 2.4.x y 2.3.x dos semanas antes de la fecha de disponibilidad general (GA). Los paquetes de versiones anteriores solo están disponibles a través del Compositor. No puede acceder a las versiones anteriores en Developer Portal o GitHub hasta que se disponga de asistencia técnica. Si no encuentra estos paquetes en el Compositor, póngase en contacto con el servicio de asistencia técnica de Adobe Commerce.
+   >Los clientes de Adobe Commerce pueden acceder a parches dos semanas antes de la fecha de disponibilidad general (GA). Los paquetes de versiones anteriores solo están disponibles a través del Compositor. No puede acceder a las versiones anteriores en Developer Portal o GitHub hasta que se disponga de asistencia técnica. Si no encuentra estos paquetes en el Compositor, póngase en contacto con el servicio de asistencia técnica de Adobe Commerce.
 
 ### Ejemplo: versión menor
 
-Las versiones menores contienen nuevas funciones, correcciones de calidad y correcciones de seguridad. Use el Compositor para especificar una versión secundaria. Por ejemplo, para especificar el metapaquete de Adobe Commerce 2.4.3:
+Las versiones menores contienen nuevas funciones, correcciones de calidad y correcciones de seguridad. Use el Compositor para especificar una versión secundaria. Por ejemplo, para especificar el metapaquete de Adobe Commerce 2.4.5:
 
 ```bash
-composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.3 <install-directory-name>
+composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.5 <install-directory-name>
 ```
 
 ### Ejemplo: parche de calidad
 
-Los parches de calidad funcionan principalmente _y_ correcciones de seguridad. Sin embargo, a veces también pueden contener nuevas funciones compatibles con versiones anteriores. Use Composer para descargar un parche de calidad. Por ejemplo, para especificar el metapaquete de Adobe Commerce 2.4.3:
+Los parches de calidad funcionan principalmente _y_ correcciones de seguridad. Sin embargo, a veces también pueden contener nuevas funciones compatibles con versiones anteriores. Use Composer para descargar un parche de calidad. Por ejemplo, para especificar el metapaquete de Adobe Commerce 2.4.5:
 
 ```bash
-composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.3 <install-directory-name>
+composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.5 <install-directory-name>
 ```
 
 ### Ejemplo: parche de seguridad
 
 Los parches de seguridad solo contienen correcciones de seguridad. Están diseñadas para que el proceso de actualización sea más rápido y fácil.
 
-Los parches de seguridad utilizan la convención de nomenclatura del Compositor `2.4.3-px`. Use el Compositor para especificar un parche. Por ejemplo, para descargar el metapaquete Adobe Commerce 2.4.3-p1:
+Los parches de seguridad utilizan la convención de nomenclatura del Compositor `2.4.5-px`. Use el Compositor para especificar un parche. Por ejemplo, para descargar el metapaquete Adobe Commerce 2.4.5-p1:
 
 ```bash
-composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.3-p1 <install-directory-name>
+composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.5-p1 <install-directory-name>
 ```
 
 ## Definir permisos de archivo
