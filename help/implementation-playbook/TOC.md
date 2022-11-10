@@ -2,10 +2,10 @@
 user-guide-title: Guía de implementación
 user-guide-description: Obtenga información acerca de las estrategias para planificar e implementar un sitio de Adobe Commerce con éxito.
 mini-toc-levels: 3
-source-git-commit: 1582431fed6978de23bd1b7f6d901ae343523a2e
+source-git-commit: 8c86688cd0c7127b6b39c0c605c668288dbe09dc
 workflow-type: tm+mt
-source-wordcount: '235'
-ht-degree: 6%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -99,6 +99,7 @@ ht-degree: 6%
       - [Información general](best-practices/launch/overview.md)
       - [Servicio de notificaciones de seguridad de Adobe](best-practices/launch/security-notification-service.md)
       - [Configuración del archivo robots.txt](best-practices/launch/robots-txt.md)
+      - [Prevención y respuesta de incidentes de seguridad](best-practices/launch/prevent-respond-security-incident.md)
    - Mantenimiento {#maintenance}
       - [Información general](best-practices/maintenance/overview.md)
       - [Rendimiento del front-end de auditoría](best-practices/maintenance/frontend-performance.md)
