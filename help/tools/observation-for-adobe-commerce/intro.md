@@ -1,9 +1,9 @@
 ---
 title: "[!DNL Observation for Adobe Commerce]"
 description: Obtenga información sobre [!DNL Observation for Adobe Commerce], sus usos, cuándo usar y cómo obtener acceso.
-source-git-commit: 6523372cd5fe3219dc582123471cc85f3c47f37d
+source-git-commit: c40d78d37dc37b5ce38f61b46bcfb4d439a51ac2
 workflow-type: tm+mt
-source-wordcount: '361'
+source-wordcount: '362'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Esta guía proporciona una descripción general holística de [!DNL Observation 
 
 Cuando surgen problemas, puede ser largo el tiempo para identificar dónde está arraigado el problema y tener los conocimientos para solucionarlo. La organización de apoyo al Adobe ha acumulado conocimientos tribales basados en años de observar los registros y los resultados de la línea de comandos mientras se solucionan los problemas. La herramienta aprovecha estos conocimientos para identificar señales importantes en una cronología común. La cronología se puede ampliar o contraer, lo que le permite visualizar los datos de registro para facilitar la gestión del rendimiento y la resolución de problemas.
 
-Uso [!DNL Observation], puede analizar los problemas complejos que encuentra el soporte técnico para ayudar a identificar las causas principales. En lugar de rastrear datos dispares, puede dedicar su tiempo a correlacionar eventos y errores para obtener una perspectiva profunda de las causas de los cuellos de botella en el rendimiento. El objetivo de la herramienta es ofrecer una visión más clara de algunos de los problemas que experimentan los sitios para ayudarle a identificar las posibles causas profundas de los problemas y mantener el rendimiento de los sitios de forma óptima. Esto incluye la identificación de si y qué [!DNL bots] están causando problemas en el sitio.
+Uso [!DNL Observation for Adobe Commerce], puede analizar los problemas complejos que encuentra el soporte técnico para ayudar a identificar las causas principales. En lugar de rastrear datos dispares, puede dedicar su tiempo a correlacionar eventos y errores para obtener una perspectiva profunda de las causas de los cuellos de botella en el rendimiento. El objetivo de la herramienta es ofrecer una visión más clara de algunos de los problemas que experimentan los sitios para ayudarle a identificar las posibles causas profundas de los problemas y mantener el rendimiento óptimo de sus sitios. Esto incluye la identificación de si y qué [!DNL bots] están causando problemas en el sitio.
 
 ## ¿Para quién es esta guía?
 

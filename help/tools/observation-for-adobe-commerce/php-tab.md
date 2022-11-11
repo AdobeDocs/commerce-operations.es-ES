@@ -1,9 +1,9 @@
 ---
-title: '"El [!UICONTROL PHP] tab"'
-description: Obtenga información sobre [!UICONTROL PHP] ficha de [!DNS Observation for Adobe Commerce].
-source-git-commit: f71fc3b2a66a4cc0b0d7865138184135e4a874e0
+title: "El [!UICONTROL PHP] tab"
+description: Obtenga información sobre [!UICONTROL PHP] pestaña [!DNL Observation for Adobe Commerce].
+source-git-commit: 28055eb09235912c66c637990e2081a70e1c7808
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '591'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ La variable **[!UICONTROL PHP active process details]** frame muestra los proces
 
 ![Carga del proceso PHP](../../assets/tools/php-process-load.jpg)
 
-Este fotograma muestra la carga de CPU de los procesos PHP-FPM en el intervalo de tiempo seleccionado.
+La variable **[!UICONTROL PHP process load (# of PHP processes and % of CPU load)]** frame muestra la carga de CPU de los procesos PHP-FPM en el intervalo de tiempo seleccionado.
 
 ## [!UICONTROL PHP Memory detail]
 
@@ -35,13 +35,13 @@ La variable **[!UICONTROL PHP Memory detail]** frame muestra el uso de memoria d
 
 ![Uso de CPU PHP](../../assets/tools/php-cpu-utilization.jpg)
 
-La variable **[!UICONTROL PHP CPU Utilization]** frame muestra la utilización del % de CPU de los procesos PHP a través del intervalo de tiempo seleccionado.
+La variable **[!UICONTROL PHP CPU Utilization]** frame muestra el porcentaje de utilización de CPU de los procesos PHP a través del intervalo de tiempo seleccionado.
 
 ## [!UICONTROL PHP Process states]
 
 ![Estados del proceso PHP](../../assets/tools/php-process-states-image-1.jpg)
 
-La variable **[!UICONTROL PHP Process states]** frame muestra los estados del proceso PHP en el periodo seleccionado. Se mostrará cuando los procesos PHP terminen y se reinicien. Tenga cuidado con los procesos PHP terminados que no muestran reinicios.
+La variable **[!UICONTROL PHP Process states]** frame muestra los estados del proceso PHP en el periodo seleccionado. Se muestra cuando los procesos PHP terminan y se reinician. Tenga cuidado con los procesos PHP terminados que no muestran reinicios.
 
 * &#39;%AVISO: Finalizando ...%&#39;) como &#39;php_term&#39;
 * &#39;% AVISO: saliendo, adiós!%&#39;) como &#39;php_exit&#39;
@@ -106,7 +106,7 @@ La variable **[!UICONTROL Database Errors]** muestra errores de base de datos en
 * &#39;%1062 \[ERROR\] InnoDB:%&#39;) como &#39;sql_1062_e&#39;
 * &#39;%[Nota] WSREP: Vaciando el mapa de memoria al disco...%&#39;) como &#39;mem_map_flush&#39;
 * &#39;%Código de error interno de MariaDB: 1146%) como &#39;sql_1146&#39;
-* &#39;%Código de error interno de MariaDB: 1062%) como &#39;sql_1062&#39; ・ &#39;%1062 [Advertencia] InnoDB:%&#39;) como &#39;sql_1062_w&#39;
+* &#39;%Código de error interno de MariaDB: 1062%) como &#39;sql_1062&#39; * &#39;%1062 [Advertencia] InnoDB:%&#39;) como &#39;sql_1062_w&#39;
 * &#39;%Código de error interno de MariaDB: 1064%) como &#39;sql_1064&#39;
 * &#39;%InnoDB: Error de aserción en el archivo%) como &#39;assertion_err&#39;
 * &#39;%mysqld_safe Número de procesos en ejecución ahora: 0%) como &#39;mysql_oom&#39;

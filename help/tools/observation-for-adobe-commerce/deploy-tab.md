@@ -1,9 +1,9 @@
 ---
-title: '"El [!UICONTROL Deploy] tab"'
+title: "El [!UICONTROL Deploy] tab"
 description: Obtenga información sobre [!UICONTROL Deploy] pestaña [!DNL Observation for Adobe Commerce].
-source-git-commit: 3f2a401bb916fc04405f21ba2acfc42f7defdccb
+source-git-commit: b95a35ee64cd8e844a51a9ff699eceb9c3a9266c
 workflow-type: tm+mt
-source-wordcount: '1114'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---

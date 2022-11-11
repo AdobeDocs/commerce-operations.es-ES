@@ -1,9 +1,9 @@
 ---
-title: '"Empiece a utilizar: Selección de la cuenta y el periodo de tiempo"'
+title: "Empiece a utilizar: Selección de la cuenta y el periodo de tiempo"
 description: Obtenga información sobre cómo empezar a usar la variable [!DNL Observation for Adobe Commerce] nerdlet seleccionando la cuenta y el periodo de tiempo.
-source-git-commit: 7058d114c31a45a3f66dcff265d1bafc4e01de41
+source-git-commit: 86e990e18955cce8ed0917c72ddbe99d8cb3f333
 workflow-type: tm+mt
-source-wordcount: '166'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 Al hacer clic en el botón [!UICONTROL Observation for Adobe Commerce] el icono [!DNL Observation for Adobe Commerce] se abrirá el nerdlet.
 
-1. Haga clic en el **Seleccionar una cuenta** lista desplegable. Si no ve la variable **Seleccionar una cuenta** , es posible que no tenga acceso a . Solicitar [here](https://adobe.sharepoint.com/sites/MG/it/IT%20Services%20Wiki/Requesting%20access%20to%20Magento%20Commerce%20New%20Relic.aspx):
+1. Haga clic en el **Seleccionar una cuenta** lista desplegable. Si no ve la variable **Seleccionar una cuenta** , es posible que no tenga acceso a . Haga clic en [here](https://adobe.sharepoint.com/sites/MG/it/IT%20Services%20Wiki/Requesting%20access%20to%20Magento%20Commerce%20New%20Relic.aspx) para solicitar acceso.
 
    ![Seleccionar una cuenta](../../assets/tools/observation-for-adobe-commerce/start-using-1.jpeg)
 
