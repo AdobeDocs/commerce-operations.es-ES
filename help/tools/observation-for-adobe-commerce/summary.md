@@ -1,7 +1,7 @@
 ---
 title: "El [!UICONTROL Summary] tab"
 description: Obtenga información sobre [!UICONTROL Summary] pestaña [!DNL Observation for Adobe Commerce].
-source-git-commit: 5058441eb64d59b3e1aa329603a87f75c826996e
+source-git-commit: 808018aca0630f725eebdd279b9314e2ee80eccc
 workflow-type: tm+mt
 source-wordcount: '2655'
 ht-degree: 0%
@@ -363,7 +363,7 @@ La variable **[!UICONTROL Order transactions (default?)]** busca marco para tran
 
 ## [!UICONTROL Elasticsearch Index information]
 
-![información del índice elasticsearch](../../assets/tools/elasticsearch-Index-information.jpg)
+![información del índice elasticsearch](../../assets/tools/elasticsearch-index-information.jpg)
 
 **[estados del Elasticsearch:](https://www.elastic.co/guide/en/elasticsearch/reference/current/cluster-health.html)**
 
