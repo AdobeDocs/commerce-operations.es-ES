@@ -2,9 +2,9 @@
 title: Recommendations de optimización del rendimiento
 description: Optimice el rendimiento de su implementación de Adobe Commerce siguiendo estas recomendaciones.
 exl-id: c5d62e23-be43-4eea-afdb-bb1b156848f9
-source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
+source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
 workflow-type: tm+mt
-source-wordcount: '1289'
+source-wordcount: '1288'
 ht-degree: 0%
 
 ---
@@ -95,7 +95,7 @@ Aunque la invalidación de memoria caché de página completa de Varnish es efec
 
 ### Cola de mensajes
 
-El marco de colas de mensajes (MQF) es un sistema que permite que un módulo publique mensajes en las colas. También define a los consumidores que reciben los mensajes de forma asíncrona. Adobe Commerce es compatible con RabbitMQ como agente de mensajería, que proporciona una plataforma escalable para enviar y recibir mensajes.
+El marco de colas de mensajes (MQF) es un sistema que permite que un módulo publique mensajes en las colas. También define a los consumidores que reciben los mensajes de forma asíncrona. Compatibilidad con Adobe Commerce [!DNL RabbitMQ] como agente de mensajería, que proporciona una plataforma escalable para enviar y recibir mensajes.
 
 ### Pruebas y monitorización del rendimiento
 

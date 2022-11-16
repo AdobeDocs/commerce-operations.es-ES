@@ -2,9 +2,9 @@
 title: Herramientas de plataforma
 description: Elija las herramientas de plataforma recomendadas para la implementación de Adobe Commerce.
 exl-id: 3fc164f9-a0fc-46e7-a54e-08ce101ccae7
-source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
+source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
 workflow-type: tm+mt
-source-wordcount: '732'
+source-wordcount: '730'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ La siguiente tabla incluye soluciones que recomendamos y que se pueden usar en A
 | Servidor web | Nginx, Apache |
 | Servicios de almacenamiento en caché | Redis, Varniz |
 | Servicios de búsqueda | Elasticsearch |
-| Servicios de cola de mensajes | RabbitMQ |
+| Servicios de cola de mensajes | [!DNL RabbitMQ] |
 | Herramienta de análisis de seguridad | SonarQube, ZAP |
 
 ## Base de datos
@@ -61,7 +61,7 @@ Para Adobe Commerce versión 2.4 y posteriores, todas las instalaciones deben co
 
 ## Servicios de cola de mensajes
 
-Las colas de mensajes proporcionan un mecanismo de comunicación asincrónico en el que el remitente y el receptor de un mensaje no se comunican entre sí. RabbitMQ es un intermediario de mensajes de código abierto que ofrece un sistema de mensajería fiable, altamente disponible, escalable y portátil.
+Las colas de mensajes proporcionan un mecanismo de comunicación asincrónico en el que el remitente y el receptor de un mensaje no se comunican entre sí. [!DNL RabbitMQ] es un agente de mensajes de código abierto que ofrece un sistema de mensajería fiable, altamente disponible, escalable y portátil.
 
 ## Herramientas de seguridad
 

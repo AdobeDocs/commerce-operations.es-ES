@@ -2,9 +2,9 @@
 title: Principios del desarrollo de la plataforma
 description: Conozca los principios fundamentales del desarrollo de plataformas al trabajar con Adobe Commerce.
 exl-id: 3d822a8c-0e81-4a80-a820-46cf2702e0bf
-source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
+source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
 workflow-type: tm+mt
-source-wordcount: '315'
+source-wordcount: '314'
 ht-degree: 0%
 
 ---
@@ -32,6 +32,6 @@ Adobe Commerce en infraestructura de nube es una plataforma de alojamiento autom
 
 ![infografías de componentes de Adobe Commerce](../../assets/playbooks/commerce-cloud.svg)
 
-Adobe Commerce en infraestructura de nube proporciona una infraestructura preaprovisionada que incluye tecnologías PHP, MySQL, Redis, RabbitMQ y Elasticsearch; un flujo de trabajo basado en Git con operaciones automáticas de compilación e implementación para un desarrollo rápido y eficiente y una implementación continua cada vez que se inserten cambios en el código en un entorno de Platform as a Service (PaaS); herramientas y archivos de configuración de entorno altamente personalizables; y el alojamiento de AWS que ofrece un entorno escalable y seguro para ventas y comercio minorista en línea.
+Adobe Commerce en infraestructura de nube proporciona una infraestructura preaprovisionada que incluye PHP, MySQL, Redis, [!DNL RabbitMQ]y tecnologías Elasticsearch; un flujo de trabajo basado en Git con operaciones automáticas de compilación e implementación para un desarrollo rápido y eficiente y una implementación continua cada vez que se inserten cambios en el código en un entorno de Platform as a Service (PaaS); herramientas y archivos de configuración de entorno altamente personalizables; y el alojamiento de AWS que ofrece un entorno escalable y seguro para ventas y comercio minorista en línea.
 
 ![infografías de componentes de Adobe Commerce](../../assets/playbooks/cloud-tech-stack.svg)

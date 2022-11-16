@@ -1,9 +1,9 @@
 ---
 user-guide-title: Herramientas
 user-guide-description: Obtenga información sobre las distintas herramientas que puede utilizar con Adobe Commerce, sus usos, el proceso de instalación y cómo obtener acceso.
-source-git-commit: 5e8e2730a0cc30997365bd70c4409e0eb8923dfb
+source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
 workflow-type: tm+mt
-source-wordcount: '181'
+source-wordcount: '180'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ ht-degree: 0%
    - [La pestaña Alertas](observation-for-adobe-commerce/alerts-tab.md)
    - [La pestaña WAF](observation-for-adobe-commerce/waf-tab.md)
    - [La pestaña CDN](observation-for-adobe-commerce/cdn-tab.md)
-   - [La ficha RabbitMQ](observation-for-adobe-commerce/rabbitmq-tab.md)
+   - [La variable [!DNL RabbitMQ] ficha](observation-for-adobe-commerce/rabbitmq-tab.md)
    - [La pestaña Cron](observation-for-adobe-commerce/cron-tab.md)
    - [La ficha Indexación](observation-for-adobe-commerce/indexing-tab.md)
    - [La ficha Vista rápida](observation-for-adobe-commerce/oac-quickview-tab.md)

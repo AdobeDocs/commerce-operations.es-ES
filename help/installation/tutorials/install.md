@@ -1,9 +1,9 @@
 ---
 title: Instalación de Adobe Commerce
 description: Siga estos pasos para instalar Adobe Commerce o Magento Open Source en la infraestructura que posea.
-source-git-commit: 46302eb8e8fd9bb7c9e7fbf990abb149bedd0ff4
+source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
 workflow-type: tm+mt
-source-wordcount: '2118'
+source-wordcount: '2106'
 ht-degree: 0%
 
 ---
@@ -132,16 +132,16 @@ En Adobe Commerce versión 2.2.8 y posteriores, puede crear el usuario administr
 | `--elasticsearch-username` | El ID de usuario para autenticarse | No, a menos que la autenticación esté habilitada |
 | `--elasticsearch-password` | La contraseña para autenticarse | No, a menos que la autenticación esté habilitada |
 
-**Opciones de configuración de RabbitMQ:**
+**[!DNL RabbitMQ]opciones de configuración:**
 
 | Nombre | Valor | ¿Requerido? |
 |--- |--- |--- |
-| `--amqp-host` | No use el `--amqp` a menos que ya haya configurado una instalación de RabbitMQ. Consulte Instalación de RabbitMQ para obtener más información sobre cómo instalar y configurar RabbitMQ.<br><br>Nombre de host donde está instalado RabbitMQ. | No |
-| `--amqp-port` | Puerto que se utilizará para conectar con RabbitMQ. El valor predeterminado es 5672. | No |
-| `--amqp-user` | El nombre de usuario para conectarse a RabbitMQ. No utilizar el usuario predeterminado `guest`. | No |
-| `--amqp-password` | La contraseña para conectarse a RabbitMQ. No use la contraseña predeterminada `guest`. | No |
-| `--amqp-virtualhost` | El host virtual para conectarse a RabbitMQ. El valor predeterminado es `/`. | No |
-| `--amqp-ssl` | Indica si se conecta a RabbitMQ. El valor predeterminado es `false`. Consulte RabbitMQ para obtener información sobre la configuración de SSL para RabbitMQ. | No |
+| `--amqp-host` | No use el `--amqp` a menos que ya haya configurado una instalación de [!DNL RabbitMQ]. Consulte [!DNL RabbitMQ] instalación para obtener más información sobre cómo instalar y configurar [!DNL RabbitMQ].<br><br>El nombre de host donde [!DNL RabbitMQ] está instalado. | No |
+| `--amqp-port` | El puerto a utilizar para conectarse a [!DNL RabbitMQ]. El valor predeterminado es 5672. | No |
+| `--amqp-user` | El nombre de usuario para conectarse a [!DNL RabbitMQ]. No utilizar el usuario predeterminado `guest`. | No |
+| `--amqp-password` | La contraseña para conectarse a [!DNL RabbitMQ]. No use la contraseña predeterminada `guest`. | No |
+| `--amqp-virtualhost` | El host virtual para conectarse a [!DNL RabbitMQ]. El valor predeterminado es `/`. | No |
+| `--amqp-ssl` | Indica si se conecta a [!DNL RabbitMQ]. El valor predeterminado es `false`. Consulte [!DNL RabbitMQ] para obtener información sobre la configuración de SSL para [!DNL RabbitMQ]. | No |
 | `--consumers-wait-for-messages` | ¿Deben los consumidores esperar un mensaje de la cola? 1 - Sí, 0 - No | No |
 
 **Opciones de almacenamiento remoto:**
