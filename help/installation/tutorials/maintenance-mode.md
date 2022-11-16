@@ -1,9 +1,9 @@
 ---
 title: Habilitar o deshabilitar el modo de mantenimiento
 description: Siga estos pasos para personalizar lo que los clientes ven cuando su implementación de Adobe Commerce o Magento Open Source está inactiva para realizar tareas de mantenimiento.
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+source-git-commit: bc025217ed7bc2195c0a2d919139abe13d184259
 workflow-type: tm+mt
-source-wordcount: '599'
+source-wordcount: '553'
 ht-degree: 0%
 
 ---
@@ -81,9 +81,10 @@ La variable `--none` borra la lista.
 
 ## Configuración de varias tiendas
 
-Para configurar varias tiendas, cada una con un diseño diferente y contenido localizado, cree un aspecto para cada una y configúrelo en `pub/errors/{name}` donde `{name}` es el código de tienda. Para distinguir entre tiendas y sitios web con la misma instancia, utilice `pub/errors/{type}-{name}` donde `{type}` es `store` o `website` y coincide con la variable `MAGE_RUN_TYPE` en la configuración del servidor.
+<!-- To set up multiple stores, each with a different layout and localized content, create a skin for each and put it into `pub/errors/{name}` where `{name}` is the store code. To distinguish between stores and websites with the same instance, use `pub/errors/{type}-{name}` where `{type}` is either `store` or `website` and matches the `MAGE_RUN_TYPE` in your server configuration. Another option is to pass the `$_GET['skin']` parameter to the intended processor. This method requires a specific configuration on your server. -->
+<!-- Replace the line below with the commented text after https://github.com/magento/magento2/pull/35095 is merged. -->
 
-Otra opción es pasar la variable `$_GET['skin']` al procesador deseado. Este método requiere una configuración específica en el servidor.
+Si desea configurar varias tiendas, cada una con un diseño y contenido localizado diferentes, pase el `$_GET['skin']` al procesador deseado.
 
 En el ejemplo siguiente, se usa un `503` escriba el archivo de plantilla de error, que requiere contenido localizado.
 
