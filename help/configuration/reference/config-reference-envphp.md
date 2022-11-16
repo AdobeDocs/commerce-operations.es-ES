@@ -1,7 +1,7 @@
 ---
 title: referencia env.php
 description: Consulte una lista de valores para el archivo env.php .
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: fe5e16d44213d1864a62230029e9e206eecd1717
 workflow-type: tm+mt
 source-wordcount: '717'
 ht-degree: 0%
@@ -185,7 +185,7 @@ Por ejemplo, si `queue/default_connection` es `amqp` en `env.php` pero `db` La c
 
 ## directorios
 
-Opciones opcionales de asignación de directorios que deben establecerse cuando el servidor web está configurado para servir la aplicación Commerce desde la `/pub` para [seguridad mejorada][change-docroot-to-pub].
+Opciones opcionales de asignación de directorios que deben establecerse cuando el servidor web está configurado para servir la aplicación Commerce desde la `/pub` para [seguridad mejorada](../../installation/tutorials/docroot.md).
 
 ```conf
 'directories' => [
@@ -219,7 +219,7 @@ La fecha de instalación de la aplicación Commerce.
 
 La configuración del proveedor de bloqueo se configura con la variable `lock` nodo .
 
-Más información sobre [Bloquear configuración del proveedor][lock-provider-config].
+Más información sobre [Bloquear configuración del proveedor](../../installation/tutorials/lock-provider.md).
 
 ## MAGE_MODE
 
@@ -299,6 +299,4 @@ Obtenga más información en [env-php-config-set](../cli/set-configuration-value
 
 <!-- Link definitions -->
 
-[change-docroot-to-pub]: ../../installation/tutorials/docroot.md
-[lock-provider-config]: ../../installation/tutorials/lock-provider.md
 [message-queue]: https://developer.adobe.com/commerce/php/development/components/message-queues/
