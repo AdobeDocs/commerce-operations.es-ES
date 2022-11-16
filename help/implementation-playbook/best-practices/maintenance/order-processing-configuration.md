@@ -4,9 +4,9 @@ description: Conozca las prácticas recomendadas de configuración para mejorar 
 role: Admin, User
 feature: Best Practices
 feature-set: Commerce
-source-git-commit: fbeaa486d32d77135ab97f4819ef4df9e64c6471
+source-git-commit: fb30b18c9b9f6a9f538189eeafda9ee7a29d436c
 workflow-type: tm+mt
-source-wordcount: '251'
+source-wordcount: '249'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ A medida que aumenta el volumen de pedidos en sus sitios de comercio, puede opti
 
 - **[!UICONTROL Asynchronous indexing]**: habilite esta opción para evitar bloqueos de base de datos y un procesamiento lento que se pueden producir cuando se realizan grandes cantidades de pedidos simultáneamente.
 - **[!UICONTROL Asynchronous email notifications]**: habilite esta opción para acelerar el rendimiento del cierre de compra enviando notificaciones de cierre de compra y procesamiento de solicitudes por correo electrónico a intervalos designados en lugar de enviarlas inmediatamente.
-- **[!UICONTROL Enable Archiving]**: habilite esta opción para mejorar el rendimiento de las cuadrículas Pedidos, Facturas, Envíos y Notas de Crédito y mantener su espacio de trabajo libre de información innecesaria, de modo que pueda centrarse en el negocio actual. Consulte [Habilitar archivado](https://docs.magento.com/user-guide/sales/order-archive.html#to-enable-archiving).
+- **[!UICONTROL Enable Archiving]**: habilite esta opción para mejorar el rendimiento de pedidos, facturas, envíos y notas de crédito, y mantenga su espacio de trabajo libre de información innecesaria para que pueda centrarse en el negocio actual. Consulte [Habilitar archivado](https://docs.magento.com/user-guide/sales/order-archive.html#to-enable-archiving).
 
 ## Productos y versiones afectados
 
