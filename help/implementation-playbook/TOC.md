@@ -2,9 +2,9 @@
 user-guide-title: Guía de implementación
 user-guide-description: Obtenga información acerca de las estrategias para planificar e implementar un sitio de Adobe Commerce con éxito.
 mini-toc-levels: 3
-source-git-commit: 86149bbe268a573f94e8bdb34974403459e46909
+source-git-commit: e856fd2a6a5bde96896f624fc0914e990d20d4cc
 workflow-type: tm+mt
-source-wordcount: '244'
+source-wordcount: '247'
 ht-degree: 6%
 
 ---
@@ -96,6 +96,7 @@ ht-degree: 6%
       - [Optimización de archivos CSS y JS](best-practices/development/optimize-css-js-files.md)
       - [Bloques de contenido privado](best-practices/development/private-content-block-configuration.md)
       - [Implementación de contenido estático](best-practices/development/static-content-deployment.md)
+      - [Modificación de tablas de base de datos](best-practices/development/modifying-core-and-third-party-tables.md)
    - Launch {#launch}
       - [Información general](best-practices/launch/overview.md)
       - [Servicio de notificaciones de seguridad de Adobe](best-practices/launch/security-notification-service.md)
