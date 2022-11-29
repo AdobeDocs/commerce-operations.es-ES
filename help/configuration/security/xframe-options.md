@@ -1,9 +1,9 @@
 ---
 title: Encabezado X-Frame-Options
 description: Utilice X-Frame-Options para controlar el procesamiento de las páginas.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: db696b8ca501d128db655c5ebb161c654c6378a7
 workflow-type: tm+mt
-source-wordcount: '218'
+source-wordcount: '225'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Para ayudar a evitar [Clickjacking](https://owasp.org/www-community/attacks/Clickjacking) se ha agregado una opción para usar la variable [X-Frame-Options](https://datatracker.ietf.org/doc/html/rfc7034) Encabezado de solicitud HTTP en solicitudes a su tienda.
 
-La variable `X-Frame-Options` el encabezado le permite especificar si se debe permitir o no que un explorador renderice una página en un `<frame>`, `<iframe>`o `<object>` de la siguiente manera:
+La variable `X-Frame-Options` header le permite especificar si se debe permitir a un explorador procesar una página en un `<frame>`, `<iframe>`o `<object>` de la siguiente manera:
 
 - `DENY`: La página no se puede mostrar en un marco.
 - `SAMEORIGIN`: (predeterminado) La página solo se puede mostrar en un marco del mismo origen que la propia página.
@@ -28,11 +28,13 @@ La variable `X-Frame-Options` el encabezado le permite especificar si se debe pe
 
 ## Implementación `X-Frame-Options`
 
-Definir un valor para `X-Frame-Options` en `<magento_root>/app/etc/env.php`. A continuación se muestra el valor predeterminado:
+Definir un valor para `X-Frame-Options` en `<project-root>/app/etc/env.php`. El valor predeterminado se establece de la siguiente manera:
 
 ```php
 'x-frame-options' => 'SAMEORIGIN',
 ```
+
+Reimplementar para cualquier cambio en la `env.php` para que surta efecto.
 
 >[!TIP]
 >
@@ -44,10 +46,8 @@ Para comprobar la configuración, vea los encabezados HTTP en cualquier página 
 
 El siguiente ejemplo utiliza curl, que puede ejecutar desde cualquier equipo que pueda conectarse al servidor de Commerce a través del protocolo HTTP.
 
-Utilice el siguiente comando:
-
 ```bash
-curl -I -v --location-trusted '<your storefront URL>'
+curl -I -v --location-trusted '<storefront-URL>'
 ```
 
 Busque la variable `X-Frame-Options` en los encabezados.
