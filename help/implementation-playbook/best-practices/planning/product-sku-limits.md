@@ -4,9 +4,9 @@ description: Conozca las prácticas recomendadas para configurar las unidades de
 role: Admin
 feature: Best Practices
 feature-set: Commerce
-source-git-commit: 510f2d4cdaec1034cb04a01fab0948c4261c6d10
+source-git-commit: 3a187ae8c066e56df0d7f4981d26ffb934f64576
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -14,9 +14,11 @@ ht-degree: 0%
 
 # Prácticas recomendadas para la configuración de SKU de producto
 
-Para maximizar el rendimiento, el máximo recomendado para unidades de mantenimiento de almacenamiento (SKU) efectivas del producto es de 10 millones. Este máximo de producto efectivo se calcula como:
+Para maximizar el rendimiento, el máximo recomendado para unidades de mantenimiento de almacenamiento (SKU) efectivas del producto es de 242 millones. Este máximo de producto efectivo se calcula como:
 
-`Effective SKU = N\[SKUs\] * Stores/Websites * Customer Groups`
+```text
+Effective SKU = N\[SKUs\] * Stores/Websites * Customer Groups
+```
 
 Tener más de la cantidad máxima de SKU efectivos ralentiza la recuperación de datos de productos y aumenta el tiempo para completar las operaciones de administración.
 
