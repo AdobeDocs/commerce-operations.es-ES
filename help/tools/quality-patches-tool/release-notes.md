@@ -1,9 +1,9 @@
 ---
 title: Notas de la versión
 description: Obtenga información sobre los parches disponibles para Adobe Commerce y los problemas que resuelven.
-source-git-commit: 6d0b5515792afe33eab440290413b84d251796cc
+source-git-commit: aad242e3a458e40fb1977399649ffe3e31696cd3
 workflow-type: tm+mt
-source-wordcount: '9752'
+source-wordcount: '10066'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,22 @@ La variable [[!DNL Quality Patches Tool]](https://github.com/magento/quality-pat
 >[!INFO]
 >
 >Para obtener información sobre [!DNL quality patches] creado por la comunidad para el Magento Open Source, consulte la [notas de la versión](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.24 {#v1-1-24}
+
+* **ACSD-45168** (para Adobe Commerce y Magento Open Source >=2.4.2 &lt;2.4.6) : corrige el problema en el que no se generan direcciones URL compatibles con SEO para productos que tienen *url_key* atributos anulados en el nivel de vista de tienda.
+* **ACSD-46865** (para Adobe Commerce y Magento Open Source >=2.4.4 &lt;2.4.6) : corrige el problema en el que la cuadrícula Envío y Nota de crédito no se rellena cuando la indexación asíncrona está habilitada.
+* **ACSD-47004** (para Adobe Commerce y Magento Open Source >=2.4.2 &lt;2.4.6): corrige el problema en el que el IVA no se aplica a una dirección de facturación sin un ID de IVA.
+* **ACSD-47803** (para Adobe Commerce y Magento Open Source >=2.4.0 &lt;2.4.6) : corrige el problema en el que las muestras de productos configurables fuera de existencias se muestran como disponibles.
+* **ACSD-47137** (para Adobe Commerce y Magento Open Source >=2.4.4 &lt;2.4.6) : mejora la velocidad de carga de la galería de imágenes cuando la carpeta pub/media es muy grande.
+* **ACSD-46770** (para Adobe Commerce y Magento Open Source >=2.4.0 &lt;2.4.6) : corrige el problema en el que se envían los correos electrónicos de orden de administración incluso cuando se envía la variable *Confirmación del pedido de correo electrónico* está desmarcada.
+* **ACSD-47955** (para Adobe Commerce y Magento Open Source >=2.4.4 &lt;2.4.6) : corrige el problema en el que GraphQL no muestra correctamente el descuento del carro de compras.
+* **ACSD-46617** (para Adobe Commerce y Magento Open Source >=2.4.0 &lt;2.4.6): corrige el problema en el que la variable *Continuar con el cierre de compra* aparece atenuado aunque el subtotal sea bueno al configurado *Importe mínimo de pedido*.
+* **ACSD-47079** (para Adobe Commerce y Magento Open Source >=2.4.4 &lt;2.4.5) : corrige el problema en el que el estado de las existencias de productos compuestos (agrupados, agrupados y configurables) no se actualiza cuando el estado de las existencias de subproductos cambia a través del POST de la API de REST /rest/V1/inventory/source-items.
+* **ACSD-47336** (para Adobe Commerce y Magento Open Source >=2.4.0 &lt;2.4.6): correcciones *Algo salió mal.* error al rechazar notificaciones en el administrador de comercio.
+* **ACSD-47559** (para Adobe Commerce y Magento Open Source >=2.4.0 &lt;2.4.6) : corrige el problema en el que el área Vista previa de plantilla de correo electrónico no es totalmente visible.
+* **ACSD-47920** (para Adobe Commerce y Magento Open Source >=2.4.0 &lt;2.4.6) : corrige el problema en el que los pedidos se pueden realizar a través de la API de Rest como usuario invitado, incluso cuando la variable *Permitir cierre de compra de invitado* está desactivado.
+* parches reemplazados: MDVA-39305, MDVA-42855.
 
 ## v1.1.23 {#v1-1-23}
 
@@ -405,7 +421,7 @@ La variable [[!DNL Quality Patches Tool]](https://github.com/magento/quality-pat
 * **MDVA-34943** (*para Adobe Commerce >=2.3.0 &lt;2.4.2*): corrige el problema en el que los pedidos rápidos almacenan en caché los SKU introducidos anteriormente.
 * **MDVA-35197** (*para Adobe Commerce >=2.3.5 &lt;2.4.0*): Corrige el problema en el que se producía un error al añadir al carro de compras mediante GraphQL si los productos añadidos anteriormente no estaban en existencias.
 * **MDVA-34850** (*para Adobe Commerce >=2.3.1 &lt;2.4.0*): Corrige el problema en el que las opciones sin existencias de un producto configurable no se muestran en lugar de mostrarse como pulsadas.
-* **MDVA-34867** (*para Adobe Commerce >=2.3.0 &lt;2.4.3*): Corrige el problema en el que no se están guardando los valores de un campo de condición definido para una actualización programada.
+* **MDVA-34867** (*para Adobe Commerce >=2.3.0 &lt;2.4.3*): Corrige el problema en el que no se están guardando los valores de un campo de condición establecido para una actualización programada.
 * **MDVA-35092** (*para Adobe Commerce >=2.3.5 &lt;2.4.3*): Corrige el problema en el que los usuarios no pueden agregar [!DNL Vimeo] vídeos en desuso [!DNL Vimeo] API.
 
 ## v1.0.16 {#v1-0-16}
@@ -465,7 +481,7 @@ La variable [[!DNL Quality Patches Tool]](https://github.com/magento/quality-pat
 * **MDVA-31236** (*para Adobe Commerce >=2.4.0 &lt;2.4.2*): Corrige el problema en el que los administradores con acceso a recursos personalizado no podían configurar 2FA o iniciar sesión.
 * **MDVA-30845** (*para Adobe Commerce >=2.3.5 &lt;2.3.7*): Corrige el problema en el que la variable *Lo sentimos, no hay comillas disponibles para este pedido en este momento* se muestra cuando no se puede conectar a UPS XML/USPS/DHL, y no hay ningún otro método de envío disponible.
 * **MDVA-32133** (*para Adobe Commerce >=2.4.0 &lt;2.4.1*): Corrige el problema en el que la galería de medios no se carga desde el Creador de páginas en determinados casos.
-* **MDVA-12304** (*para Adobe Commerce >=2.3.0 &lt;2.4.2*): Aumenta el número máximo de cookies de 50 a 200.
+* **MDVA-12304** (*para Adobe Commerce >=2.3.0*): Aumenta el número máximo de cookies de 50 a 200.
 * **MDVA-32632** (*para Adobe Commerce >=2.3.2 &lt;2.3.5*) - Corrige el problema en el que los pedidos aparecen en el sistema de pago, pero no en Adobe Commerce.
 * **MDVA-32449** (*para Adobe Commerce >=2.3.0 &lt;2.3.6 || 2.4.0 || >=2.4.1 &lt;2.4.2 con extensión B2B*) : corrige el problema en el que el historial de pedidos se carga muy lentamente o no se carga nada.
 * **MDVA-32739** (*para Adobe Commerce >=2.3.0 &lt;2.4.2*): corrige el problema en el que al habilitar Notificaciones de correo electrónico asincrónicas se envían correos electrónicos de ventas antiguos.
