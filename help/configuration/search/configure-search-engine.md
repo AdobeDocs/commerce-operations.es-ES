@@ -1,9 +1,9 @@
 ---
 title: Configuración del motor de búsqueda
 description: Configure un motor de búsqueda con Adobe Commerce y Magento Open Source.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 66681f06c15907a5d25e71005c27785f0745ed63
 workflow-type: tm+mt
-source-wordcount: '637'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 En esta sección se describen las configuraciones mínimas que debe elegir para probar el Elasticsearch o OpenSearch con Adobe Commerce y el Magento Open Source. En las versiones 2.4.4 y 2.4.3-p2, todos los campos están etiquetados **Elasticsearch** también se aplican a OpenSearch.
 
-Para obtener más información sobre la configuración del motor de búsqueda, consulte la [Guía del usuario](https://docs.magento.com/user-guide/catalog/search-elasticsearch.html).
+Para obtener más información sobre la configuración del motor de búsqueda, consulte la [Guía del usuario](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-configuration.html).
 
 ## Configure el motor de búsqueda desde el administrador
 
