@@ -1,7 +1,7 @@
 ---
 title: Requisitos previos completos
 description: Prepare su proyecto de Adobe Commerce o Magento Open Source para una actualización completando estos pasos previos.
-source-git-commit: c2d0c1d46a5f111a245b34ed6bc706dcd52be31c
+source-git-commit: 6782498985d4fd6540b0481e2567499f74d04d97
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -17,6 +17,7 @@ Después de revisar los requisitos del sistema, debe completar los siguientes re
 
 - Actualizar todo el software
 - Verifique que esté instalado un motor de búsqueda compatible
+- Convertir formato de tabla de base de datos
 - Establecer el límite de archivos abiertos
 - Compruebe que se estén ejecutando trabajos cron
 - Establezca `DATA_CONVERTER_BATCH_SIZE`
@@ -29,6 +30,10 @@ Después de revisar los requisitos del sistema, debe completar los siguientes re
 La variable [requisitos del sistema](../../installation/system-requirements.md) describa exactamente qué versiones de software de terceros se han probado con las versiones de Adobe Commerce y Magento Open Source.
 
 Asegúrese de haber actualizado todos los requisitos y dependencias del sistema en su entorno. Consulte PHP [7,4](https://www.php.net/manual/en/migration74.php), PHP [8,0](https://www.php.net/manual/en/migration80.php), PHP [8,1](https://www.php.net/manual/en/migration81.php)y [configuración requerida de PHP](../../installation/prerequisites/php-settings.md#php-settings).
+
+>[!NOTE]
+>
+>Para Adobe Commerce en proyectos de infraestructura en la nube Pro, debe crear un [Asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) para instalar o actualizar servicios en entornos de ensayo y producción. Indique los cambios de servicio necesarios e incluya la actualización `.magento.app.yaml` y `services.yaml` archivos y versión PHP en el ticket. El equipo de infraestructura de Cloud puede tardar hasta 48 horas en actualizar el proyecto. Consulte [Software y servicios compatibles](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/cloud-architecture.html#supported-software-and-services).
 
 ## Verifique que esté instalado un motor de búsqueda compatible
 
@@ -63,7 +68,7 @@ Debe instalar y configurar el Elasticsearch 7.6 o superior o OpenSearch 1.2 ante
 
 Consulte [Actualización del Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) para obtener instrucciones completas sobre cómo realizar copias de seguridad de los datos, detectar posibles problemas de migración y probar actualizaciones antes de implementarlas en producción. Según la versión actual del Elasticsearch, puede que sea necesario o no reiniciar el clúster completo.
 
-Elasticsearch requiere JDK 1.8 o superior. Consulte [Instalación del Kit de desarrollo de software de Java (JDK)](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk) para comprobar qué versión de JDK está instalada.
+Elasticsearch requiere Java Development Kit (JDK) 1.8 o superior. Consulte [Instalación del Kit de desarrollo de software de Java (JDK)](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk) para comprobar qué versión de JDK está instalada.
 
 [Configuración del Elasticsearch](../../configuration/search/configure-search-engine.md) describe las tareas que debe realizar después de actualizar el Elasticsearch 2 a una versión compatible.
 
@@ -79,11 +84,15 @@ Puede [migrar de Elasticsearch a OpenSearch](opensearch-migration.md) solo si es
 
 OpenSearch requiere JDK 1.8 o superior. Consulte [Instalación del Kit de desarrollo de software de Java (JDK)](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk) para comprobar qué versión de JDK está instalada.
 
-[Configuración del Magento para utilizar el Elasticsearch](../../configuration/search/configure-search-engine.md) describe las tareas que debe realizar después de cambiar los motores de búsqueda.
+[Configuración del motor de búsqueda](../../configuration/search/configure-search-engine.md) describe las tareas que debe realizar después de cambiar los motores de búsqueda.
 
 ### Extensiones de terceros
 
 Le recomendamos que se ponga en contacto con el proveedor de motores de búsqueda para determinar si la extensión es totalmente compatible con la versión 2.4.
+
+## Convertir formato de tabla de base de datos
+
+Debe convertir el formato de todas las tablas de base de datos de `COMPACT` a `DYNAMIC`. También debe convertir el tipo de motor de almacenamiento de `MyISAM` a `InnoDB`. Consulte [prácticas recomendadas](../../implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.md).
 
 ## Establecer el límite de archivos abiertos
 
@@ -116,9 +125,9 @@ Para establecer el valor en el shell de Bash:
 >
 >Le recomendamos que evite establecer un valor para la variable `pcre.recursion_limit` en la variable `php.ini` porque puede provocar devoluciones incompletas sin aviso de error.
 
-## Verificar que los trabajos de cron se estén ejecutando
+## Compruebe que se estén ejecutando trabajos cron
 
-El programador de tareas de UNIX `cron` es fundamental para las operaciones diarias de Adobe Commerce y Magento Open Source. Programa cosas como la reindexación, boletines informativos, correos electrónicos, mapas del sitio, etc. Varias funciones requieren al menos un trabajo cron que se ejecute como propietario del sistema de archivos.
+El programador de tareas de UNIX `cron` es fundamental para las operaciones diarias de Adobe Commerce y Magento Open Source. Programa cosas como la reindexación, boletines informativos, correos electrónicos y mapas del sitio. Varias funciones requieren al menos un trabajo cron que se ejecute como propietario del sistema de archivos.
 
 Para verificar que su trabajo cron está configurado correctamente, compruebe crontab introduciendo el siguiente comando como propietario del sistema de archivos:
 
