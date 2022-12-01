@@ -1,9 +1,9 @@
 ---
-title: '"El [!UICONTROL CDN] tab"'
+title: "El [!UICONTROL CDN] tab"
 description: Obtenga información sobre [!UICONTROL CDN] pestaña [!DNL Observation for Adobe Commerce].
-source-git-commit: 3f2a401bb916fc04405f21ba2acfc42f7defdccb
+source-git-commit: 424c832ba7580e5d766dea33e3b776eaca7a0d77
 workflow-type: tm+mt
-source-wordcount: '702'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ La variable **[!UICONTROL Error Percentage]** muestra el valor del porcentaje de
 
 ![Respuesta media de caché de Fough para el período de tiempo seleccionado en segundos](../../assets/tools/observation-for-adobe-commerce/cdn-tab-9.png)
 
-Este fotograma muestra la duración en segundos de las solicitudes almacenables en caché, lo que significa que si una `cache_response` es un MISS, muestra el promedio de respuestas en caché perdidas durante el tiempo seleccionado.
+Este fotograma muestra la duración en segundos de las solicitudes almacenables en caché, lo que significa que si una `cache_response` es [!UICONTROL MISS], muestra el promedio de respuestas en caché perdidas durante el tiempo seleccionado.
 
 ## [!UICONTROL Fastly Cache Average Response for selected time period in seconds, faceted by POP]
 
@@ -70,7 +70,7 @@ Este fotograma muestra la duración en segundos de las solicitudes almacenables 
 
 ![Solicitudes: desde el lapso de tiempo seleccionado comparado con hace una semana](../../assets/tools/observation-for-adobe-commerce/cdn-tab-12.png)
 
-Este marco es similar al cuadro de resumen de Total de solicitudes en la parte superior, pero muestra los recuentos de solicitudes de semanas anteriores. Todas son solicitudes, no solo solicitudes almacenables en caché (donde `is_cacheable` es true).
+Este marco es similar al cuadro de resumen de [!UICONTROL Total Requests] en la parte superior, pero muestra los recuentos de solicitudes de las semanas anteriores. Todas son solicitudes, no solo solicitudes almacenables en caché (donde `is_cacheable` es true).
 
 ## [!UICONTROL Response Count]
 
