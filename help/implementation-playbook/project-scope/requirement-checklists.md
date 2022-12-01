@@ -2,7 +2,7 @@
 title: Listas de comprobación de requisitos
 description: Utilice esta lista de preguntas completas para prepararse para una implementación de Adobe Commerce.
 exl-id: 9ac485c5-d491-4022-9366-5e3a382513b6
-source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
+source-git-commit: d18be812626723e203d2308be8c3f9783a19b43b
 workflow-type: tm+mt
 source-wordcount: '1536'
 ht-degree: 0%
@@ -205,7 +205,7 @@ Las siguientes preguntas pueden servir de punto de partida para ver qué informa
 
 - ¿Qué sistema de gestión de pedidos se integrará con Adobe Commerce? (Ejemplos: Microsoft Dynamics, SAP, Retail Pro)
 
-- ¿Qué sistema de administración de inventario de productos se integrará con Adobe Commerce? (Ejemplos: Akeneo, InRiver, Bluestone)
+- ¿Qué sistema de administración de información de productos se integrará con Adobe Commerce? (Ejemplos: Akeneo, InRiver, Bluestone)
 
 - ¿Qué sistema de administración de la relación con los clientes se integrará con Adobe Commerce? (Ejemplos: Hubspot, Salesforce, Klaviyo)
 
