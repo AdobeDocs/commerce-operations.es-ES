@@ -1,9 +1,9 @@
 ---
 title: Configuración de varios sitios web con Apache
 description: Siga este tutorial para configurar varios sitios web con Apache.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: 8102c083bb0216bbdcad2882f39f7711b9cee52b
 workflow-type: tm+mt
-source-wordcount: '500'
+source-wordcount: '508'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Si es necesario, copie la `index.php` script de punto de entrada para su sitio w
 
    Es posible que se necesiten tareas adicionales para implementar varios sitios web en un entorno alojado; consulte con su proveedor de alojamiento para obtener más información.
 
-   Se requieren tareas adicionales para configurar Adobe Commerce en la infraestructura de la nube. Después de completar las tareas tratadas en este tema, consulte [Configuración de varios sitios web o tiendas](https://devdocs.magento.com/cloud/project/project-multi-sites.html) en el _guía del Commerce Cloud_.
+   Se requieren tareas adicionales para configurar Adobe Commerce en la infraestructura de la nube. Después de completar las tareas tratadas en este tema, consulte [Configuración de varios sitios web o tiendas](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) en el _Guía de Commerce on Cloud Infrastructure_.
 
 - Utiliza un host virtual por sitio web; el archivo de configuración del host virtual es `/etc/httpd/httpd.conf`
 
@@ -95,8 +95,8 @@ A menos que tenga DNS configurado para las URL de sus tiendas, debe agregar una 
 1. Añada la ruta estática con el formato :
 
    ```conf
-   <ip address> french.mysite.mg
-   <ip address> german.mysite.mg
+   <ip-address> french.mysite.mg
+   <ip-address> german.mysite.mg
    ```
 
 1. Vaya a una de las siguientes direcciones URL en su explorador:
@@ -110,7 +110,7 @@ A menos que tenga DNS configurado para las URL de sus tiendas, debe agregar una 
 >[!INFO]
 >
 >- Es posible que se necesiten tareas adicionales para implementar varios sitios web en un entorno alojado; consulte con su proveedor de alojamiento para obtener más información.
->- Se necesitan tareas adicionales para configurar Adobe Commerce en la infraestructura de la nube; see [Configuración de varios sitios web o tiendas de Cloud](https://devdocs.magento.com/cloud/project/project-multi-sites.html) en el _guía del Commerce Cloud_.
+>- Se necesitan tareas adicionales para configurar Adobe Commerce en la infraestructura de la nube; see [Configuración de varios sitios web o tiendas de Cloud](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) en el _Guía de Commerce on Cloud Infrastructure_.
 
 
 ### Resolución de problemas

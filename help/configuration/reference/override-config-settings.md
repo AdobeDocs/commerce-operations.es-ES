@@ -1,9 +1,9 @@
 ---
 title: Anular configuración
 description: Aprenda a utilizar variables de entorno para anular los ajustes de configuración.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: 8102c083bb0216bbdcad2882f39f7711b9cee52b
 workflow-type: tm+mt
-source-wordcount: '1241'
+source-wordcount: '1228'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Puede anular el valor de _any_ configuración mediante variables de entorno; sin
 
 >[!TIP]
 >
->Consulte la [Configuración de entornos](https://devdocs.magento.com/cloud/env/variables-intro.html) en el _guía del Commerce Cloud_ para obtener más información sobre cómo trabajar con variables en Adobe Commerce en la infraestructura de nube.
+>Consulte la [Configuración de entornos](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-intro.html) en el _Guía de Commerce on Cloud Infrastructure_.
 
 ## Variables de entorno
 
@@ -253,6 +253,6 @@ Se muestra un ejemplo paso a paso en [Definir valores de configuración mediante
 >
 >- Para utilizar los valores que se establecen en la variable `$_ENV` matriz, debe configurar `variables_order = "EGPCS"`(Entorno, Obtener, Publicar, Cookie y Servidor) en su `php.ini` archivo. Para obtener más información, consulte [Documentación de PHP](https://www.php.net/manual/en/ini.core.php).
 >
->- Para Adobe Commerce en la infraestructura de nube, si intenta anular los ajustes de configuración utilizando la variable [Interfaz web del proyecto](https://devdocs.magento.com/cloud/project/project-webint-basic.html#project-conf-env-var), debe anteponer el nombre de la variable con `env:`. Por ejemplo:
+>- Para Adobe Commerce en la infraestructura de nube, si intenta anular los ajustes de configuración utilizando la variable [Interfaz web del proyecto](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html#configure-the-project), debe anteponer el nombre de la variable con `env:`. Por ejemplo:
 >
->![Ejemplo de variable de entorno](https://devdocs.magento.com/common/images/cloud/cloud_env_var_example.png)
+>![Ejemplo de variable de entorno](../../assets/configuration/cloud-console-envvariable.png)

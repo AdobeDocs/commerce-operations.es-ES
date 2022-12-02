@@ -1,9 +1,9 @@
 ---
 title: Configuración de caché L2
 description: Aprenda a configurar la caché L2.
-source-git-commit: 2ef8b48fab84221c8e6423f41126bbee37706809
+source-git-commit: 8102c083bb0216bbdcad2882f39f7711b9cee52b
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '431'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Commerce almacena la versión de datos con hash en Redis, con el sufijo &#39;:ha
 
 >[!INFO]
 >
->Para Adobe Commerce en infraestructura de nube, puede usar [implementar variables](https://devdocs.magento.com/cloud/env/variables-deploy.html#redis_backend) para la configuración de caché L2.
+>Para Adobe Commerce en infraestructura de nube, puede usar [implementar variables](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_backend) para la configuración de caché L2.
 
 ## Ejemplo de configuración
 

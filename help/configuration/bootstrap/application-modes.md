@@ -1,9 +1,9 @@
 ---
 title: Modos de aplicación
 description: La aplicación Commerce puede funcionar en diferentes modos según sus necesidades. Vea una lista detallada de los modos de aplicación disponibles.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 8102c083bb0216bbdcad2882f39f7711b9cee52b
 workflow-type: tm+mt
-source-wordcount: '790'
+source-wordcount: '798'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Puede ejecutar la aplicación Commerce en cualquiera de los siguientes _modos_:
 
 >[!INFO]
 >
->[Adobe Commerce en infraestructura en la nube](https://devdocs.magento.com/cloud/bk-cloud.html) solo admite los modos de producción y mantenimiento.
+>[Adobe Commerce en infraestructura en la nube](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/overview.html) solo admite los modos de producción y mantenimiento.
 
 ## Modo predeterminado
 
@@ -71,4 +71,4 @@ Ejecute la aplicación Commerce en modo de mantenimiento para desconectar el sit
 
 Puede crear un [página de mantenimiento personalizada](../../upgrade/troubleshooting/maintenance-mode-options.md), habilite y deshabilite manualmente el modo de mantenimiento y configure el modo de mantenimiento para permitir a los visitantes de direcciones IP autorizadas ver el almacén de forma normal. Consulte [activar y desactivar el modo de mantenimiento](../../installation/tutorials/maintenance-mode.md).
 
-Si utiliza Commerce en la infraestructura de la nube, la aplicación Commerce se ejecuta en modo de mantenimiento durante la fase de implementación. Cuando la implementación se completa correctamente, la aplicación Commerce vuelve a ejecutarse en modo de producción. Consulte [Enlaces de implementación](https://devdocs.magento.com/cloud/reference/discover-deploy.html#cloud-deploy-over-phases-hook) en el _guía del Commerce Cloud_.
+Si utiliza Commerce en la infraestructura de la nube, la aplicación Commerce se ejecuta en modo de mantenimiento durante la fase de implementación. Cuando la implementación se completa correctamente, la aplicación Commerce vuelve a ejecutarse en modo de producción. Consulte [Enlaces de implementación](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices.html#phase-5%3A-deployment-hooks) en el _Guía de Commerce on Cloud Infrastructure_.
