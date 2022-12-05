@@ -1,7 +1,7 @@
 ---
 title: Definir valores de configuración
 description: Obtenga información sobre cómo establecer valores de configuración y cambiar valores que están bloqueados en Administración.
-source-git-commit: ee2e446edf79efcd7cbbd67248f8e7ece06bfefd
+source-git-commit: cb8edb8de8f8419e9992b180ea927ba55cbd839b
 workflow-type: tm+mt
 source-wordcount: '985'
 ht-degree: 0%
@@ -133,8 +133,8 @@ La tabla siguiente describe el `set` parámetros de comando:
 | --- | --- |
 | `--scope` | El ámbito de la configuración. Los valores posibles son `default`, `website`o `store`. El valor predeterminado es `default`. |
 | `--scope-code` | El código de ámbito de configuración (código de sitio web o código de vista de tienda) |
-| `-le or --lock-env` | Bloquea el valor para que no se pueda editar en el Administrador o cambia un valor que ya está bloqueado en el Administrador. El comando escribe el valor en la variable `<Commerce base dir>/app/etc/env.php` archivo. |
-| `-lc or --lock-config` | Bloquea el valor para que no se pueda editar en el Administrador o cambia un valor que ya está bloqueado en el Administrador. El comando escribe el valor en la variable `<Commerce base dir>/app/etc/config.php` archivo. La variable `--lock-config` sobrescrituras de opciones `--lock-env` si especifica ambas opciones. |
+| `-e or --lock-env` | Bloquea el valor para que no se pueda editar en el Administrador o cambia un valor que ya está bloqueado en el Administrador. El comando escribe el valor en la variable `<Commerce base dir>/app/etc/env.php` archivo. |
+| `-c or --lock-config` | Bloquea el valor para que no se pueda editar en el Administrador o cambia un valor que ya está bloqueado en el Administrador. El comando escribe el valor en la variable `<Commerce base dir>/app/etc/config.php` archivo. La variable `--lock-config` sobrescrituras de opciones `--lock-env` si especifica ambas opciones. |
 | `path` | _Requerido_. La ruta de configuración |
 | `value` | _Requerido_. El valor de la configuración |
 
