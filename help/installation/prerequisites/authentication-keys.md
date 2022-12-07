@@ -1,9 +1,9 @@
 ---
 title: Obtener las claves de autenticación
 description: Siga estos pasos para recuperar las credenciales y acceder a los paquetes de Adobe Commerce y del Compositor de Magento Open Source en repo.magento.com.
-source-git-commit: 8f05fb6fc212c2b3fda80457bbf27ecf16fb1194
+source-git-commit: d209d3f7fde55f7495488f2cbeeebf21024875ed
 workflow-type: tm+mt
-source-wordcount: '457'
+source-wordcount: '512'
 ht-degree: 0%
 
 ---
@@ -13,9 +13,15 @@ ht-degree: 0%
 
 La variable `repo.magento.com` repositorio es donde se almacenan los paquetes de Adobe Commerce y Magento Open Source y del Compositor de terceros, y requiere autenticación. Utilice su cuenta de Commerce Marketplace para generar un par de 32 caracteres *claves de autenticación* para acceder al repositorio.
 
->[!NOTE]
+Para tener acceso a los paquetes Adobe Commerce y Magento Open Source, debe utilizar claves asociadas con un MAGEID al que se le haya concedido acceso a esos paquetes. El MAGEID suele ser el contacto principal de la cuenta de Adobe Commerce y es posible que no siempre sea el propietario del proyecto de Adobe Commerce en el proyecto de infraestructura de nube.
+
+>[!TIP]
 >
->Para tener acceso a los paquetes Adobe Commerce y Magento Open Source, debe utilizar claves asociadas con un MAGEID al que se le haya concedido acceso a esos paquetes. El MAGEID suele ser el **Contacto de facturación** en la cuenta de Adobe Commerce y es posible que no siempre sea la variable **Propietario del proyecto** de Adobe Commerce en el proyecto de infraestructura de nube. Si encuentra [errors](https://support.magento.com/hc/en-us/articles/360040296392), es posible que no tenga autorización para acceder al paquete o que el derecho de acceso haya caducado debido a una factura pendiente en la cuenta. Contacto [Asistencia de Adobe Commerce](https://support.magento.com/hc/en-us) para obtener ayuda con su MAGEID.
+>Si encuentra [errors](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html), es posible que no tenga autorización para acceder al paquete o que el derecho de acceso haya caducado debido a una factura pendiente en su cuenta.
+>
+>* Si es la persona de contacto principal de la cuenta, asegúrese de que no haya ninguna factura pendiente enumerada en la cuenta.
+>* Si las claves proporcionadas por el Contacto Principal no funcionan y no hay facturas pendientes en la cuenta, póngase en contacto con [Asistencia de Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) para obtener ayuda con el MAGEID del contacto principal.
+
 
 Para crear claves de autenticación:
 
