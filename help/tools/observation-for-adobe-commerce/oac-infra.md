@@ -1,17 +1,17 @@
 ---
-title: '"El [!UICONTROL Infra] tab"'
-description: La variable [!UICONTROL Infra] aísla los problemas y las causas de los problemas de infraestructura.
-source-git-commit: b0d80d97f60b24bc801063dc484f3a495cf0a036
+title: "El [!DNL Infra] tab"
+description: La variable [!DNL Infra] aísla los problemas y las causas de los problemas de infraestructura.
+source-git-commit: 38467ebd2ec29f9e1679182fb1ee7076d738664b
 workflow-type: tm+mt
-source-wordcount: '255'
+source-wordcount: '252'
 ht-degree: 0%
 
 ---
 
 
-# La variable [!UICONTROL Infra] ficha
+# La variable [!DNL Infra] ficha
 
-La variable **[!UICONTROL Infra]** aísla los problemas y las causas de los problemas de infraestructura. A continuación, se describen los marcos que se pueden ver en la pestaña .
+La variable **[!DNL Infra]** aísla los problemas y las causas de los problemas de infraestructura. A continuación, se describen los marcos que se pueden ver en la pestaña .
 
 ## [!UICONTROL Service Alerts – Infrastructure Alerts by Application name]
 
@@ -23,7 +23,7 @@ La variable **[!UICONTROL Service Alerts – Infrastructure Alerts by Applicatio
 
 ![Uso de nodos por montaje](../../assets/tools/observation-for-adobe-commerce/inode-usage-mount.jpg)
 
-La variable **[!UICONTROL Inode usage by mount]** frame muestra el uso de código por montaje en el intervalo de tiempo seleccionado. Aunque puede haber mucho almacenamiento libre, si un nodo se queda sin nodos, mostrará una falta de almacenamiento disponible. Si elimina archivos (especialmente los pequeños), se liberará espacio y los nodos estarán disponibles.
+La variable **[!UICONTROL Inode usage by mount]** muestras de marco [!DNL inode] uso por montaje en el intervalo de tiempo seleccionado. Aunque puede haber mucho almacenamiento libre, si un nodo se queda sin [!DNL inodes], mostrará una falta de almacenamiento disponible. La eliminación de archivos (especialmente pequeños) liberará espacio y creará [!DNL inodes] disponible.
 
 ## [!UICONTROL vCPU tier view over timeline GREATER 2 weeks]
 

@@ -1,15 +1,15 @@
 ---
-title: '"El [!UICONTROL QuickView] tab"'
-description: La pestaña QuickView explica los diferentes tipos de alerta que puede ver, incluyendo los que están en un espacio de disco bajo y en el uso del servidor.
-source-git-commit: 4d700c04be5cd1ec2dc1c43c627feeed93f0fbee
+title: "El [!DNL QuickView] tab"
+description: La variable [!DNL QuickView] explica los distintos tipos de alertas que puede ver, incluidos los que están en un espacio de disco bajo y el uso del servidor.
+source-git-commit: 38467ebd2ec29f9e1679182fb1ee7076d738664b
 workflow-type: tm+mt
-source-wordcount: '129'
+source-wordcount: '128'
 ht-degree: 0%
 
 ---
 
 
-# La variable [!UICONTROL QuickView] ficha
+# La variable [!DNL QuickView] ficha
 
 La variable **[!UICONTROL QuickView]** explica los distintos tipos de alertas que puede ver, incluidos los que están en un espacio de disco bajo y el uso del servidor. A continuación, se describen los marcos de la pestaña .
 
