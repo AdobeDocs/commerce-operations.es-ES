@@ -1,15 +1,15 @@
 ---
-title: Acerca de Adobe Commerce
+title: Adobe Commerce
 description: Descripción de Adobe Commerce
 exl-id: 130bae23-8a22-4523-abe2-8dc97b3881d2
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+source-git-commit: 1611a8cab95ec24a1420fac31958853e28033af6
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '285'
 ht-degree: 0%
 
 ---
 
-# Adobe Commerce
+# Acerca de Adobe Commerce
 
 Adobe Commerce es la plataforma líder para la innovación en comercio abierto. Cada año, el Adobe Commerce gestiona más de 100.000 millones de dólares en volumen bruto de mercancías. Adobe Commerce ofrece a los clientes la capacidad de crear experiencias de compra únicas y atractivas, funciones integradas y la capacidad ilimitada de personalizar, una arquitectura flexible sin periféricos e integraciones de terceros sin problemas.
 
@@ -26,7 +26,7 @@ Adobe Commerce se puede alojar en las instalaciones. Por lo tanto, aloje y desar
 Adobe Commerce es una solución de comercio electrónico con todas las funciones que incorpora las siguientes funciones adicionales:
 
 - Funcionalidad B2B, como citas, catálogos personalizados y administrar funciones y permisos de comprador
-- Paneles de Magento BI con visualización y creador de informes personalizado
+- Paneles de informes de Adobe Commerce con visualización y creador de informes personalizado
 - Chat del Magento (con tecnología dotdigital)
 - Herramientas de marketing avanzadas
 - [!DNL Product Recommendations] equipado con Adobe Sensei
