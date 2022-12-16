@@ -1,7 +1,7 @@
 ---
 title: Iniciar consumidores de cola de mensajes
 description: Obtenga información sobre cómo iniciar un consumidor de cola de mensajes.
-source-git-commit: 02f02393878d04b4a0fcdae256ac1ac5dd13b7f6
+source-git-commit: 3e3dac0c75622b210cf1168639b8804003f3c538
 workflow-type: tm+mt
 source-wordcount: '189'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 {{file-system-owner}}
 
-Debe iniciar un consumidor de cola de mensajes para habilitar operaciones asincrónicas como acciones masivas de Inventory management y extremos masivos y asíncronos de REST. Para habilitar la funcionalidad B2B, debe iniciar varios consumidores. Los módulos de terceros también pueden requerir el inicio de un consumidor personalizado.
+Debe iniciar un [cliente de cola de mensajes](../queues/consumers.md) para habilitar operaciones asincrónicas como acciones masivas de Inventory management y extremos masivos y asíncronos de REST. Para habilitar la funcionalidad B2B, debe iniciar varios consumidores. Los módulos de terceros también pueden requerir el inicio de un consumidor personalizado.
 
 Para ver una lista de todos los consumidores:
 
