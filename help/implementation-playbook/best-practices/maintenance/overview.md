@@ -1,9 +1,9 @@
 ---
 title: Fase de mantenimiento de la implementación
 description: Obtenga información sobre las prácticas recomendadas de implementación para la fase de mantenimiento de los proyectos de Adobe Commerce.
-source-git-commit: 46c06a74f221877391196894abc1f5f217c5b073
+source-git-commit: ae9573f3766c59887aea177cb85bf889c2161bfc
 workflow-type: tm+mt
-source-wordcount: '280'
+source-wordcount: '277'
 ht-degree: 0%
 
 ---
@@ -29,9 +29,7 @@ Las siguientes secciones incluyen información sobre las prácticas recomendadas
 - [Rendimiento del front-end de auditoría](frontend-performance.md)
 - [Listo, Establecer, Mantener](https://business.adobe.com/blog/basics/ready-set-maintain)
 - [Utilice la herramienta SWAT para garantizar la seguridad y la operabilidad de Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/intro.html?lang=en#integrations-with-other-adobe-commerce-support-tools) - Piso CTAG
-- Nueva reliquia
-- Registros
-- Espacio en disco
+- [Utilice las notificaciones de New Relic y Health para supervisar el rendimiento, el espacio en disco y los registros de los sitios de Adobe Commerce implementados en la infraestructura de la nube](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/performance.html)
 
 ## Administración de bases de datos
 
@@ -53,14 +51,15 @@ Las siguientes secciones incluyen información sobre las prácticas recomendadas
 - [Reindexar](https://developer.adobe.com/commerce/php/development/components/indexing/#how-to-reindex)
 - [Prácticas recomendadas de configuración para indexadores &#x200B;](indexer-configuration.md)
 - [Prácticas recomendadas de configuración para el procesamiento de pedidos](order-processing-configuration.md)
-- Piso CTAG
-- Planificar la ampliación de tráfico para aumentos de tráfico planificados durante promociones o festivos: contenido de la cubierta CTAG
+
+<!-- Asset not yet integrated from CTAG deck:
+- Plan upsizing for planned traffic increases during promotions or holidays -->
 
 ## Configuración
 
 - [Programación de actualizaciones de administración en sitios de producción](scheduling-admin-updates-in-production.md)
 
-- Planificación de la temporada alta y los períodos promocionales (ajuste de tamaño) - Contenido del paquete CTAG
+<!-- Asset not yet integrated from CTAG deck: Planning for peak season and promotional periods (upsizing)-->
 
 ## Correcciones de errores
 

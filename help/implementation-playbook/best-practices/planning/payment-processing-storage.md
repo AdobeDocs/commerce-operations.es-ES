@@ -4,9 +4,9 @@ description: Aprenda a procesar y almacenar de forma segura los detalles de pago
 role: Developer
 feature-set: Commerce
 feature: Best Practices
-source-git-commit: 124eaf6e7b465b320d3d7e6a3694130edb93f187
+source-git-commit: cf8626bfab170a1e12cc72f0bc344c9beb9349a7
 workflow-type: tm+mt
-source-wordcount: '525'
+source-wordcount: '529'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Prácticas recomendadas para procesamiento y almacenamiento de pagos
 
-Uno de los principios fundamentales para mantener [Cumplimiento de PCI](https://nam04.safelinks.protection.outlook.com/GetUrlReputation) tiene una estrategia para procesar y almacenar correctamente los pagos con tarjeta de crédito.
+Uno de los principios fundamentales para mantener [Cumplimiento de PCI](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/payments/compliance-pci.html) tiene una estrategia para procesar y almacenar correctamente los pagos con tarjeta de crédito.
 
 El almacenamiento de datos de titulares de tarjetas en Adobe Commerce es **estrictamente prohibido** y hacerlo podría ser una violación de sus obligaciones como comerciante bajo el estándar de seguridad de datos del sector de tarjetas de pago (PCI-DSS). Encontrará más información sobre nuestro modelo de responsabilidad compartida y las directrices para las obligaciones de los comerciantes en nuestra [guía de responsabilidad compartida de Adobe Commerce](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-commerce-shared-responsibility-guide.pdf) en el Centro Fiduciario de Adobe.
 

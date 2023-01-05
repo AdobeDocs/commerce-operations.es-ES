@@ -4,7 +4,7 @@ description: Obtenga información sobre cómo mantener actualizado su Adobe Comm
 role: Developer
 feature: Best Practices
 feature-set: Commerce
-source-git-commit: 48c5666ee9b83bbf8a5c6375ec53762d918bcece
+source-git-commit: cf8626bfab170a1e12cc72f0bc344c9beb9349a7
 workflow-type: tm+mt
 source-wordcount: '264'
 ht-degree: 0%
@@ -26,7 +26,7 @@ Actualice los servicios y componentes utilizados por Adobe Commerce antes de que
 
 Los clientes con planes Starter pueden autoabastecerse en actualizaciones de servicios. Consulte [Cambiar la versión del servicio](https://devdocs.magento.com/cloud/project/services.html#change-service-version) para obtener más información sobre cómo hacerlo.
 
-Los clientes con planes Pro solo pueden autoabastecerse en actualizaciones de servicios en sus [Entorno de integración](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/integration-environment-enhancement-request-pro-and-starter.md). Para las actualizaciones de servicios en Producción, debe [enviar un ticket de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) solicitando la actualización.
+Los clientes con planes Pro solo pueden autoabastecerse en actualizaciones de servicios en sus [Entorno de integración](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/integration-environment-enhancement-request-pro-and-starter.html). Para las actualizaciones de servicios en Producción, debe [enviar un ticket de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) solicitando la actualización.
 
 >[!WARNING]
 >

@@ -4,7 +4,7 @@ description: Aprenda a pasar instrucciones sobre su sitio de Adobe Commerce a ra
 role: Developer
 feature-set: Commerce
 feature: Best Practices
-source-git-commit: 48c5666ee9b83bbf8a5c6375ec53762d918bcece
+source-git-commit: cf8626bfab170a1e12cc72f0bc344c9beb9349a7
 workflow-type: tm+mt
 source-wordcount: '596'
 ht-degree: 0%
@@ -107,11 +107,11 @@ Para ver los pasos para editar la variable `robots.txt` y elimine todas las entr
 
 >[!TIP]
 >
->Si necesita ayuda, [enviar un ticket de asistencia de Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.md#submit-ticket).
+>Si necesita ayuda, [enviar un ticket de asistencia de Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
 
 ## Información adicional
 
 - [Información sobre sitios web, tiendas y vistas de tiendas](https://devdocs.magento.com/cloud/configure/configure-best-practices.html#sites)
 - [Adición de sitios web](https://docs.magento.com/user-guide/stores/stores-all-create-website.html)
 - [Use Finfinito para bloquear el tráfico malintencionado de sus sitios de Adobe Commerce](https://devdocs.magento.com/cloud/cdn/fastly-vcl-blocking.html)
-- [robots.txt proporciona un error 404 en Adobe Commerce en la infraestructura de nube 2.3.x](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/robots.txt-gives-404-error-magento-commerce-cloud-2.3.x.md)
+- [robots.txt proporciona un error 404 en Adobe Commerce en la infraestructura de nube 2.3.x](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/robots.txt-gives-404-error-magento-commerce-cloud-2.3.x.html)
