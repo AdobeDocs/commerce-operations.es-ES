@@ -1,9 +1,9 @@
 ---
 title: Configurar Redis
 description: Obtenga información general sobre las funciones de Redis e inicie su configuración de Redis.
-source-git-commit: 5c0d285717a79d654af769cb734ec385d2d4046f
+source-git-commit: 0d106b36f479ecf2eda3fecf6740b28d4b6793eb
 workflow-type: tm+mt
-source-wordcount: '403'
+source-wordcount: '390'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ También puede activar las opciones RDB y AOF al mismo tiempo. Para obtener más
 
 Para la instancia de caché, configure la instancia para que sea lo suficientemente grande como para almacenar toda la caché de comercio. Los requisitos de tamaño dependen de diferentes factores, como la cantidad de productos y las vistas de la tienda. Como punto de partida, puede utilizar el tamaño de la carpeta de caché en su sistema de archivos. Por ejemplo, si la variable `var/cache` en su sistema de archivos es de 5 GB, configure su instancia de Redis con al menos 5 GB para que se inicie. No se requiere persistencia para la instancia de caché porque se puede restaurar la caché de comercio. Consulte [Guía de caché de Redis](https://redis.io/docs/manual/eviction/).
 
-Para el ajuste del rendimiento, también puede habilitar las siguientes configuraciones para la eliminación asincrónica. Estos ajustes no cambian el comportamiento de Redis. Consulte también [redirección de noticias](http://antirez.com/news/93) para obtener más información sobre la eliminación asincrónica.
+Para el ajuste del rendimiento, puede habilitar las siguientes configuraciones para la eliminación asincrónica. Estos ajustes no cambian el comportamiento de Redis.
 
 ```ini
 lazyfree-lazy-eviction yes

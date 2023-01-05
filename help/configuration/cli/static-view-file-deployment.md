@@ -1,7 +1,7 @@
 ---
 title: Implementación de archivos de vista estáticos
 description: Aprenda a escribir archivos estáticos en el sistema de archivos de Commerce durante el modo de producción.
-source-git-commit: 4fe6d6a76a5d4849d4f96b61b95a9a3dae7fc76a
+source-git-commit: 0d106b36f479ecf2eda3fecf6740b28d4b6793eb
 workflow-type: tm+mt
 source-wordcount: '1135'
 ht-degree: 0%
@@ -53,7 +53,7 @@ La siguiente tabla explica los parámetros y valores de este comando.
 
 | Opción | Descripción | ¿Requerido? |
 | ------ | ----------- | --------- |
-| `<languages>` | Lista separada por espacios de [ISO-639](http://www.loc.gov/standards/iso639-2/php/code_list.php) códigos de idioma para los que se van a generar archivos de vista estáticos. (El valor predeterminado es `en_US`.)<br>Busque la lista ejecutando: `bin/magento info:language:list` | No |
+| `<languages>` | Lista separada por espacios de [ISO-639](https://www.loc.gov/standards/iso639-2/php/code_list.php) códigos de idioma para los que se van a generar archivos de vista estáticos. (El valor predeterminado es `en_US`.)<br>Busque la lista ejecutando: `bin/magento info:language:list` | No |
 | `--language (-l)` | Genere archivos solo para los idiomas especificados. La opción predeterminada, sin especificar, es generar archivos para todos los códigos de idioma ISO-639. Puede especificar el nombre de un código de idioma a la vez. El valor predeterminado es **all**.<br>Por ejemplo: `--language en_US --language es_ES` | No |
 | `--exclude-language` | Genere archivos para los códigos de idioma especificados. El valor predeterminado, sin opción especificada, es no excluir nada. Puede especificar el nombre de un código de idioma o una lista de códigos de idioma separados por coma. El valor predeterminado es **ninguno**. | No |
 | `--theme <theme>` | Temas para los que implementar contenido estático. El valor predeterminado es **all**.<br>Por ejemplo: `--theme Magento/blank --theme Magento/luma` | No |

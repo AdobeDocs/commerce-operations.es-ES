@@ -1,9 +1,9 @@
 ---
 title: "[!DNL Upgrade Compatibility Tool] requisitos"
 description: Verifique que su sistema cumpla los requisitos necesarios para ejecutar el [!DNL Upgrade Compatibility Tool] en una interfaz de línea de comandos para su proyecto de Adobe Commerce.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 0d106b36f479ecf2eda3fecf6740b28d4b6793eb
 workflow-type: tm+mt
-source-wordcount: '275'
+source-wordcount: '276'
 ht-degree: 0%
 
 ---
@@ -44,9 +44,9 @@ Los requisitos mínimos para utilizar la variable [!DNL Upgrade Compatibility To
 
 | **Requisitos** | **Restricciones** |
 |----------------|-----------------|
-| Versión de PHP | >= 7,3 |
+| Versión de PHP | >= 7.3 |
 | Compositor | no se conoce ningún requisito. |
-| Node.js | Versiones de Node.js `^12.22.0`, `^14.17.0`o `>=16.0.0` (consulte [Instalar Node.js](https://nodejs.dev/learn/how-to-install-nodejs)) |
+| Node.js | Versiones de Node.js `^12.22.0`, `^14.17.0`o `>=16.0.0` (consulte [Instalar Node.js](https://nodejs.dev/en/learn/how-to-install-nodejs/)) |
 | Limitaciones de memoria | Al menos 2 GB de RAM. |
 
 [!DNL Upgrade Compatibility Tool] requirements [PCNTL](https://www.php.net/manual/en/book.pcntl.php) y otras extensiones PHP para la ejecución. Compruebe las extensiones PHP requeridas utilizando `composer check-platform-reqs` comando:

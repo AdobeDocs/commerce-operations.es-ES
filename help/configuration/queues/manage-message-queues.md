@@ -1,9 +1,9 @@
 ---
 title: Administrar colas de mensajes
 description: Obtenga información sobre cómo administrar las colas de mensajes desde la línea de comandos para Adobe Commerce.
-source-git-commit: 8102c083bb0216bbdcad2882f39f7711b9cee52b
+source-git-commit: 0d106b36f479ecf2eda3fecf6740b28d4b6793eb
 workflow-type: tm+mt
-source-wordcount: '410'
+source-wordcount: '411'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ El siguiente ejemplo muestra la variable `crontab` configuración para ejecutar 
 
 >[!INFO]
 >
->La frecuencia con la que comprueba las colas de mensajes depende de la lógica empresarial y de los recursos del sistema disponibles. En general, es posible que desee buscar nuevos clientes y enviar correos electrónicos de bienvenida con más frecuencia que con un proceso que consume más recursos, como actualizar el catálogo. Debe definir `cron` programaciones según sus necesidades comerciales.
+>La frecuencia con la que comprueba las colas de mensajes puede depender de la lógica empresarial y de los recursos del sistema disponibles. En general, es posible que desee buscar nuevos clientes y enviar correos electrónicos de bienvenida con más frecuencia que con un proceso que consume más recursos, como actualizar el catálogo. Debe definir `cron` programaciones según sus necesidades comerciales.
 >
 >Se puede configurar en las opciones de configuración de Administración > Configuración > Avanzado > Sistema > Cron del grupo: consumidores.
 >

@@ -1,7 +1,7 @@
 ---
 title: Uso almacenado en la memoria caché para el almacenamiento de sesión
 description: Obtenga más información sobre el uso de memcached para el almacenamiento de sesión de Commerce.
-source-git-commit: 53448b11a2d000fe8e8a7eecf2ffcef4b7e248fa
+source-git-commit: 0d106b36f479ecf2eda3fecf6740b28d4b6793eb
 workflow-type: tm+mt
 source-wordcount: '285'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 La memoria en caché es un sistema de almacenamiento en caché distribuido de uso general. A menudo se utiliza para acelerar los sitios web dinámicos impulsados por bases de datos almacenando en caché los datos y objetos en RAM para reducir el número de veces que se debe leer una fuente de datos externa (como una base de datos o API).
 
-En memoria caché proporciona una tabla hash grande que se puede distribuir entre varios equipos. Cuando la tabla está llena, las inserciones posteriores hacen que los datos más antiguos se purguen en el orden utilizado (LRU) menos recientemente. El tamaño de esta tabla hash a menudo es muy grande. (Fuente: [memcached.org](http://memcached.org/))
+En memoria caché proporciona una tabla hash grande que se puede distribuir entre varios equipos. Cuando la tabla está llena, las inserciones posteriores hacen que los datos más antiguos se purguen en el orden utilizado (LRU) menos recientemente. El tamaño de esta tabla hash a menudo es muy grande. (Fuente: [memcached.org](https://www.memcached.org/))
 
 El comercio utiliza la memoria caché para el almacenamiento de sesión, pero no para el almacenamiento de páginas. Para el almacenamiento en caché de páginas, se recomienda [Redis](../cache/redis-pg-cache.md) o [Varniz](../cache/config-varnish.md).
 
@@ -39,7 +39,7 @@ El comercio utiliza la memoria caché para el almacenamiento de sesión, pero no
    ),
    ```
 
-   memcached tiene parámetros de inicio opcionales que están fuera del alcance de esta guía. Puede encontrar más información sobre ellos en la sección [en caché](https://php.net/manual/en/memcached.sessions.php) documentación, código fuente y cambios.
+   memcached tiene parámetros de inicio opcionales que están fuera del alcance de esta guía. Puede encontrar más información sobre ellos en la sección [en caché](https://www.php.net/manual/en/memcached.sessions.php) documentación, código fuente y cambios.
 
 1. Continúe con la siguiente sección.
 
@@ -80,5 +80,5 @@ El comercio utiliza la memoria caché para el almacenamiento de sesión, pero no
    STAT items:3:outofmemory 0
    STAT items:3:tailrepairs 0
    
-   [Look at the keys in more detail](http://www.darkcoding.net/software/memcached-list-all-keys/)
+   [Look at the keys in more detail](https://darkcoding.net/software/memcached-list-all-keys/)
    ```
