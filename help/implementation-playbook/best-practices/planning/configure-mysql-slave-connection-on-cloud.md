@@ -4,15 +4,18 @@ description: Aprenda a configurar la conexión esclava de MySQL para los sitios 
 role: Developer
 feature-set: Commerce
 feature: Best Practices
-source-git-commit: 48c5666ee9b83bbf8a5c6375ec53762d918bcece
+source-git-commit: 0866272e02a7a223d35e14842bfb42a827e0468d
 workflow-type: tm+mt
-source-wordcount: '282'
+source-wordcount: '286'
 ht-degree: 0%
 
 ---
 
 
 # Práctica recomendada para configurar la conexión esclava de MySQL
+
+>!![NOTE]
+Somos conscientes de que este artículo todavía contiene términos de software estándar de la industria que algunos pueden encontrar racistas, sexistas u opresivos y que pueden hacer que el lector se sienta herido, traumatizado o no bienvenido. Adobe está trabajando para eliminar estos términos de nuestro código, documentación y experiencias de usuario.
 
 Para los sitios de Adobe Commerce implementados en la arquitectura de la infraestructura de nube Pro, Adobe recomienda habilitar la conexión esclava de MYSQL para la base de datos de forma predeterminada.
 
@@ -24,7 +27,7 @@ Adobe Commerce en infraestructura en la nube, arquitectura Pro
 
 ## Configuración de la conexión esclava de MySQL
 
-La configuración de la conexión esclava de MYSQL la establece el [MYSQL_SLAVE_CONNECTION](https://devdocs.magento.com/cloud/env/variables-deploy.html#mysql_use_slave_connection) implementar variable en Adobe Commerce en el archivo de configuración de entorno de infraestructura de nube, `.magento.env.yaml`. Establezca esta variable como `true` para activar la conexión.
+La configuración de la conexión esclava de MYSQL la establece el [MYSQL_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#mysql_use_slave_connection) implementar variable en Adobe Commerce en el archivo de configuración de entorno de infraestructura de nube, `.magento.env.yaml`. Establezca esta variable como `true` para activar la conexión.
 
 Para habilitar la conexión esclava de MySQL:
 
@@ -45,6 +48,3 @@ Para habilitar la conexión esclava de MySQL:
 - [Variables de entorno](https://devdocs.magento.com/cloud/env/variables-intro.html)
 - [Cuello de botella de alta carga de MySQL en Adobe Commerce en infraestructura de nube](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/database/mysql-high-load-bottleneck-in-magento-commerce-cloud.html?lang=en)
 - [Prácticas recomendadas de bases de datos para Adobe Commerce en infraestructura en la nube](database-on-cloud.md)
-
->!![NOTE]
-Somos conscientes de que este artículo todavía puede contener términos de software estándar de la industria que algunos pueden encontrar racistas, sexistas u opresivos y que pueden hacer que el lector se sienta herido, traumatizado o no bienvenido. Adobe está trabajando para eliminar estos términos de nuestro código, documentación y experiencias de usuario.
