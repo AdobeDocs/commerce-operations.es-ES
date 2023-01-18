@@ -4,7 +4,7 @@ description: Aprenda a configurar la conexión esclava de MySQL para los sitios 
 role: Developer
 feature-set: Commerce
 feature: Best Practices
-source-git-commit: 0866272e02a7a223d35e14842bfb42a827e0468d
+source-git-commit: a5a6e25e3fd303e07a07110b85aa1d460f53cd54
 workflow-type: tm+mt
 source-wordcount: '286'
 ht-degree: 0%
@@ -14,8 +14,9 @@ ht-degree: 0%
 
 # Práctica recomendada para configurar la conexión esclava de MySQL
 
->!![NOTE]
-Somos conscientes de que este artículo todavía contiene términos de software estándar de la industria que algunos pueden encontrar racistas, sexistas u opresivos y que pueden hacer que el lector se sienta herido, traumatizado o no bienvenido. Adobe está trabajando para eliminar estos términos de nuestro código, documentación y experiencias de usuario.
+>[!NOTE]
+>
+>Somos conscientes de que este artículo todavía contiene términos de software estándar de la industria que algunos pueden encontrar racistas, sexistas u opresivos y que pueden hacer que el lector se sienta herido, traumatizado o no bienvenido. Adobe está trabajando para eliminar estos términos de nuestro código, documentación y experiencias de usuario.
 
 Para los sitios de Adobe Commerce implementados en la arquitectura de la infraestructura de nube Pro, Adobe recomienda habilitar la conexión esclava de MYSQL para la base de datos de forma predeterminada.
 
