@@ -4,7 +4,7 @@ description: Obtenga información sobre cómo preparar la base de datos de Adobe
 role: Developer
 feature-set: Commerce
 feature: Best Practices
-source-git-commit: 071e88c6a07df0f74b6d4b09cce858710c9332cc
+source-git-commit: 35efea20181b112e97bfae803c8d0168cfc88dfc
 workflow-type: tm+mt
 source-wordcount: '562'
 ht-degree: 0%
@@ -50,7 +50,7 @@ Puede convertir tablas en un nodo del clúster. Los cambios se replican automát
 1. Identifique las tablas que se van a convertir de formato compacto a dinámico.
 
    ```mysql
-   SELECT table_name, row_format FROM information_schema.tables WHERE table_schema=DATABASE() and row_format 'Compact';
+   SELECT table_name, row_format FROM information_schema.tables WHERE table_schema=DATABASE() and row_format = 'Compact';
    ```
 
 1. Determine los tamaños de tabla para poder programar el trabajo de conversión.
