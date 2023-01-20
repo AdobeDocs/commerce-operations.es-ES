@@ -1,10 +1,10 @@
 ---
 user-guide-title: Manual operativo
 user-guide-description: Aprenda a preparar operacionalmente sus empresas para ejecutar un sitio de comercio electrónico exitoso.
-source-git-commit: 748c302527617c6a9bf7d6e666c6b3acff89e021
+source-git-commit: 338a99f4f047640ac4bb944ac8599301cba5f646
 workflow-type: tm+mt
-source-wordcount: '132'
-ht-degree: 13%
+source-wordcount: '142'
+ht-degree: 12%
 
 ---
 
@@ -72,3 +72,4 @@ ht-degree: 13%
    - [Haga clic y recopile](product/click-collect.md)
    - [PWA](product/progressive-web-app.md)
 - [Listas de comprobación y plantillas](checklists-templates/home.md)
+- [Volver a las guías operativas](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

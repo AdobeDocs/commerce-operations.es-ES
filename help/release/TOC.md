@@ -1,10 +1,10 @@
 ---
 user-guide-title: Información de la versión
 user-guide-description: Obtenga información sobre las versiones de Adobe Commerce y Magento Open Source.
-source-git-commit: a2d95f70b5d24b555b7d9b42c2f4317b02b81e68
+source-git-commit: 338a99f4f047640ac4bb944ac8599301cba5f646
 workflow-type: tm+mt
-source-wordcount: '77'
-ht-degree: 16%
+source-wordcount: '87'
+ht-degree: 14%
 
 ---
 
@@ -50,3 +50,4 @@ ht-degree: 16%
    - [Adobe Commerce](packages/adobe-commerce.md)
    - [Paquetes de nube para Adobe Commerce](packages/cloud.md)
    - [Magento Open Source](packages/magento-open-source.md)
+- [Volver a las guías operativas](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

@@ -1,9 +1,9 @@
 ---
 user-guide-title: Guía de configuración
 user-guide-description: Configure las funciones y los servicios de la aplicación de Adobe Commerce o Magento Open Source.
-source-git-commit: 31f9ff21a848e248d2c3da7cfb3cfc8bfd5785be
+source-git-commit: 338a99f4f047640ac4bb944ac8599301cba5f646
 workflow-type: tm+mt
-source-wordcount: '353'
+source-wordcount: '363'
 ht-degree: 0%
 
 ---
@@ -145,3 +145,4 @@ ht-degree: 0%
       + [Verificar base de datos dividida](storage/multi-master-verify.md)
       + [Duplicación de base de datos](storage/multi-master-replication.md)
       + [Revertir a una sola base de datos](storage/revert-split-database.md)
++ [Volver a las guías operativas](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

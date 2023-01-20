@@ -1,10 +1,10 @@
 ---
 user-guide-title: Guía de actualización
 user-guide-description: Descubra por qué es tan importante actualizar la aplicación de Adobe Commerce o Magento Open Source y cómo planificar y ejecutar correctamente una actualización.
-source-git-commit: fd624a97d74c7f6a9e29223227dae425bb6fa68c
+source-git-commit: 338a99f4f047640ac4bb944ac8599301cba5f646
 workflow-type: tm+mt
-source-wordcount: '146'
-ht-degree: 19%
+source-wordcount: '156'
+ht-degree: 17%
 
 ---
 
@@ -53,3 +53,4 @@ ht-degree: 19%
    - [Lectura recomendada](resources/recommended-reading.md)
    - [Modernización de la plataforma con Adobe Commerce 2.4.4+](resources/recommended-upgrade-paths-2022.md)
    - [Actualizar lista de comprobación del plan](https://support.magento.com/hc/en-us/articles/360057968951)
+- [Volver a las guías operativas](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

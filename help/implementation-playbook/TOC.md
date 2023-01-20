@@ -2,9 +2,9 @@
 user-guide-title: Guía de implementación
 user-guide-description: Obtenga información acerca de las estrategias para planificar e implementar un sitio de Adobe Commerce con éxito.
 mini-toc-levels: 3
-source-git-commit: e856fd2a6a5bde96896f624fc0914e990d20d4cc
+source-git-commit: 338a99f4f047640ac4bb944ac8599301cba5f646
 workflow-type: tm+mt
-source-wordcount: '247'
+source-wordcount: '257'
 ht-degree: 6%
 
 ---
@@ -112,3 +112,4 @@ ht-degree: 6%
       - [Actualizar lista de comprobación](best-practices/maintenance/upgrade-checklist.md)
       - [Resolver problemas de rendimiento de la base de datos &#x200B;](best-practices/maintenance/resolve-database-performance-issues.md)
       - [Requisitos previos de actualización de Adobe Commerce 2.3.5 para &#x200B; de MariaDB](best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.md)
+- [Volver a las guías operativas](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
