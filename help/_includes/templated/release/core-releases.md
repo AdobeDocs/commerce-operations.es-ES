@@ -1,5 +1,5 @@
 ---
-source-git-commit: a2747c1d62c4a22179c1177e7c4e76e028f66cea
+source-git-commit: 4391091cce32618dc02b0bddb62ff9d16dd12f10
 workflow-type: tm+mt
 source-wordcount: '953'
 ht-degree: 9%
@@ -54,7 +54,7 @@ La compatibilidad con la línea de versión 2.4.4-2.4.6 finaliza el 25 de noviem
 
 ## 2.4.0-2.4.3
 
-La compatibilidad con la línea de versión 2.4.0-2.4.3 finaliza el 28 de noviembre de 2022.
+La compatibilidad con la línea de versión 2.4.0-2.4.3 finalizó el 28 de noviembre de 2022.
 
 <table>
   <thead>
@@ -133,7 +133,7 @@ La compatibilidad con la línea de versión 2.4.0-2.4.3 finaliza el 28 de noviem
   </tbody>
 </table>
 
-## 2,3
+## 2.3
 
 La compatibilidad con la línea de versión 2.3 finalizó el 8 de septiembre de 2022.
 
@@ -206,7 +206,7 @@ La compatibilidad con la línea de versión 2.3 finalizó el 8 de septiembre de 
           </td>
     </tr>
     <tr>
-        <td>2,3,5</td>
+        <td>2.3.5</td>
         <td>28 de abril de 2020</td>
           <td><a href="https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-5-commerce.html">Notas de la versión de Adobe Commerce</a><br><a href="https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-5-open-source.html">Notas de la versión del Magento Open Source</a><br>
           </td>
@@ -256,7 +256,7 @@ La compatibilidad con la línea de versión 2.3 finalizó el 8 de septiembre de 
   </tbody>
 </table>
 
-## 2,2
+## 2.2
 
 La compatibilidad con la línea de versión 2.2 finalizó el 1 de diciembre de 2019.
 
@@ -305,7 +305,7 @@ La compatibilidad con la línea de versión 2.2 finalizó el 1 de diciembre de 2
           </td>
     </tr>
     <tr>
-        <td>2,2,5</td>
+        <td>2.2.5</td>
         <td>27 de junio de 2018</td>
           <td><a href="https://devdocs.magento.com/guides/v2.2/release-notes/ReleaseNotes2.2.5EE.html">Notas de la versión de Adobe Commerce</a><br><a href="https://devdocs.magento.com/guides/v2.2/release-notes/ReleaseNotes2.2.5CE.html">Notas de la versión del Magento Open Source</a><br>
           </td>
@@ -343,7 +343,7 @@ La compatibilidad con la línea de versión 2.2 finalizó el 1 de diciembre de 2
   </tbody>
 </table>
 
-## 2,1
+## 2.1
 
 La compatibilidad con la línea de versión 2.1 finalizó el 30 de junio de 2019.
 
@@ -434,7 +434,7 @@ La compatibilidad con la línea de versión 2.1 finalizó el 30 de junio de 2019
   </tbody>
 </table>
 
-## 2,0
+## 2.0
 
 La compatibilidad con la línea de la versión 2.0 finalizó el 31 de marzo de 2018.
 
@@ -499,7 +499,7 @@ La compatibilidad con la línea de la versión 2.0 finalizó el 31 de marzo de 2
         <td>17 de mayo de 2016</td>
     </tr>
     <tr>
-        <td>2,0,5</td>
+        <td>2.0.5</td>
         <td>28 de abril de 2016</td>
     </tr>
     <tr>
