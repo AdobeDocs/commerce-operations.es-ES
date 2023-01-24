@@ -2,10 +2,10 @@
 keywords: Adobe Commerce;inicio;temas populares
 title: Página principal
 description: Examine un índice de la documentación del producto operativo de Adobe Commerce.
-source-git-commit: f66183c3dc01e0f8c049edf767cd6c74aae1a1cf
+source-git-commit: a1e74edb232b818dea9a2723bf506fac49acbd9f
 workflow-type: tm+mt
-source-wordcount: '164'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -119,12 +119,4 @@ Obtenga información práctica sobre conceptos, procesos, herramientas y prácti
 </tr>
 </table>
 
-## Novedades
-
-Obtenga información sobre la nueva documentación y las actualizaciones importantes de la documentación existente.
-
-| Cambiar | Tipo |
-|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------|
-| Se ha añadido un nuevo tema que describe todos los [consumidores de cola de mensajes](../configuration/queues/consumers.md). | Nuevo |
-| Se ha añadido [instrucciones](../implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.md) para convertir el formato de almacenamiento de tablas de base de datos para Adobe Commerce en proyectos de infraestructura de nube Pro. | Actualizado |
-| Se ha añadido [instrucciones](../configuration/remote-storage/cloud-support.md) para habilitar el almacenamiento remoto para Adobe Commerce en proyectos de infraestructura en la nube. | Actualizado |
+{{$include /help/_includes/templated/whats-new.md}}
