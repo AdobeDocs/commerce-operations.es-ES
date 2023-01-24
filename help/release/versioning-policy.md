@@ -1,9 +1,9 @@
 ---
 title: Política de versiones
 description: Obtenga información sobre los distintos tipos de versiones de Adobe Commerce, como menor, parche, parche de seguridad, función, revisión, parche individual y parche personalizado.
-source-git-commit: f9bbfb86d2197ee7252602edba455ebcae5a2b18
+source-git-commit: 1705e930b7ab0176722c4f911dd06f448f992373
 workflow-type: tm+mt
-source-wordcount: '951'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -15,10 +15,11 @@ Uso de Adobe Commerce y Magento Open Source [versionado semántico](https://semv
 
 - **Versión principal**—2
 - **Versión menor**—2,4
-- **versión del PATCH**—2.4.1
-   - **Lanzamiento del parche de SEGURIDAD**—2.4.1-p1
+- **versión del PATCH**—2,4,5
+   - **Lanzamiento del parche de SEGURIDAD**—2.4.5-p1
       - Corrección de errores de seguridad
       - Mejora de la seguridad
+- **Lanzamiento de parche BETA**—2.4.7-beta1
 - **Versión de funciones**
 - **Hotfix**
 - **Parche individual**
@@ -43,43 +44,23 @@ Las siguientes directrices se aplican a las versiones de parches:
 - Se evitan los cambios que podrían dañar las extensiones o la compatibilidad del código. Por ejemplo, el código escrito para la versión 2.2.0 debería seguir funcionando en la versión 2.2.7.
 - Excepcionalmente, se pueden publicar cambios o parches o revisiones adicionales para solucionar problemas de seguridad o cumplimiento y problemas de calidad de alto impacto. A nivel de módulo, se trata principalmente de cambios a nivel de PATCH; a veces, cambios de nivel MINOR.
 
-## Lanzamiento del parche de SEGURIDAD
+### Lanzamiento del parche de SEGURIDAD
 
 **Corrección de errores de seguridad**: Un cambio en el código de software que resuelve un problema de seguridad identificado y ofrece los resultados esperados en un área de producto afectada. Estas correcciones son generalmente compatibles con versiones anteriores.
 
 **Mejora de seguridad**: Una mejora de software o un cambio de configuración para mejorar proactivamente la seguridad dentro de la aplicación. Estas mejoras de seguridad ayudan a resolver los riesgos de seguridad que afectan a la postura de seguridad de la aplicación Adobe Commerce, pero que pueden ser incompatibles con versiones anteriores.
 
-Con las versiones de parches de seguridad, puede mantener su sitio más seguro sin aplicar correcciones y mejoras de calidad adicionales que se incluyen en una versión trimestral completa de parches. Las versiones de parches de seguridad se agregan con &quot;-pN&quot;, donde N es la versión de parches incremental que comienza con 1 (por ejemplo, 2.3.5-p1). Las versiones de parches de seguridad también pueden incluir revisiones necesarias para solucionar problemas críticos que afectan a la aplicación Adobe Commerce.
+Con las versiones de parches de seguridad, puede mantener su sitio más seguro sin aplicar correcciones y mejoras de calidad adicionales que se incluyen en una versión completa de parches. Las versiones de parches de seguridad se agregan con &quot;-pN&quot;, donde N es la versión de parches incremental que comienza con 1 (por ejemplo, 2.3.5-p1). Las versiones de parches de seguridad también pueden incluir revisiones necesarias para solucionar problemas críticos que afectan a la aplicación Adobe Commerce.
 
 Cada versión de parches de seguridad se basa en la versión anterior de parches completos. Contiene correcciones de calidad y seguridad de revisiones anteriores y correcciones de seguridad creadas entre la versión anterior del parche completo y la versión del parche de seguridad.
 
-Con el anuncio de nuestra [nueva estrategia de versión y política de ciclo vital actualizada](https://business.adobe.com/blog/how-to/accelerating-innovation-through-simplified-release-strategy) (16/9/2021), nuestras versiones de parches de seguridad se diferencian según si son aplicables a la última versión menor admitida o a una parte de una línea de versiones menor anterior aún admitida:
+Para obtener instrucciones sobre cómo descargar y aplicar parches de seguridad, consulte [Instalación rápida](../installation/composer.md#example---security-patch).
 
-- **Versiones de parches de seguridad para la última versión menor admitida**:
+## Lanzamiento de parche BETA
 
-   - La versión de parches de seguridad para la última versión menor admitida (actualmente Adobe Commerce 2.4) incluye:
+Las versiones de disponibilidad pregenerales de las funciones de Adobe Commerce se ponen a disposición del público para todos los clientes de Adobe Commerce y socios de Adobe. Permite un tiempo adicional antes de la disponibilidad general para revisar el código y los componentes afectados.
 
-      - Correcciones de errores de seguridad que se han creado desde la versión anterior del parche completo.
-
-      - Estas versiones de parches de seguridad también pueden incluir revisiones necesarias para solucionar problemas críticos que pueden afectar a la aplicación Adobe Commerce.
-   - La versión de parches de seguridad para la última versión menor admitida (actualmente Adobe Commerce 2.4) no suele incluir mejoras de seguridad. En su lugar, se incluyen en la versión completa del parche para la última versión menor compatible.
-
-
-- **Versiones de parches de seguridad para versiones menores anteriores compatibles**:
-
-   - La versión del parche de seguridad para una versión anterior menor que aún se admite (actualmente Adobe Commerce 2.3) incluye:
-
-      - Correcciones de errores de seguridad que se han creado desde la versión anterior del parche o del parche de seguridad, y nuevas mejoras de seguridad.
-
-      - Estas versiones de parches de seguridad también pueden incluir revisiones necesarias para solucionar problemas críticos que afectan a la aplicación Adobe Commerce.
-
-      |  | Error de seguridad | Mejora de seguridad |
-      |--------------------------------------------------------------------------------|--------------|----------------------|
-      | Versiones de parches de seguridad para la última versión menor admitida (actualmente 2.4) | X |  |
-      | Versiones de parches de seguridad para versiones menores anteriores y compatibles (actualmente 2.3) | X | X |
-
-
-Para obtener información general sobre las versiones de seguridad, consulte [Presentación de la nueva versión de parches de solo seguridad](https://community.magento.com:443/t5/Magento-DevBlog/Introducing-the-New-Security-Patch-Release/ba-p/141287). Para obtener instrucciones sobre cómo descargar y aplicar parches de seguridad, consulte [Instalación rápida](../installation/composer.md).
+Las versiones beta pueden contener defectos y se proporcionan &quot;TAL CUAL&quot; sin garantía de ningún tipo. Adobe no tendrá obligación de mantener, corregir, actualizar, cambiar, modificar ni dar soporte de otro modo (a través de los Servicios de Soporte de Adobe o de otro modo) a las versiones beta. Se aconseja a los clientes que utilicen la precaución y no dependan en modo alguno del funcionamiento o rendimiento correctos de las versiones beta y/o de cualquier documentación o material que los acompañe. Por lo tanto, cualquier uso de las versiones beta está totalmente a cargo del cliente.
 
 ## Versión de funciones
 
@@ -107,7 +88,6 @@ Creado por personal que no es de Adobe para solucionar un problema o modificar e
 
 ## Temas relacionados
 
-- [Planificación y presupuestos para ciclos de actualización de comercio](https://magento.com/sites/default/files8/2019-08/Magento-Release-Cycle-Infosheet_Aug_2019.pdf)
 - [Versiones](https://developer.adobe.com/commerce/php/development/versioning/)
 - [Próximas versiones](schedule.md)
 - [Política de ciclo de vida del software](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
