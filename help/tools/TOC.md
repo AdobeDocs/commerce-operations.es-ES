@@ -1,9 +1,9 @@
 ---
 user-guide-title: Herramientas
 user-guide-description: Obtenga información sobre las distintas herramientas que puede utilizar con Adobe Commerce, sus usos, el proceso de instalación y cómo obtener acceso.
-source-git-commit: 338a99f4f047640ac4bb944ac8599301cba5f646
+source-git-commit: 67ec373cde21db066d3c0675c9ff479912ae229c
 workflow-type: tm+mt
-source-wordcount: '188'
+source-wordcount: '191'
 ht-degree: 0%
 
 ---
@@ -72,6 +72,6 @@ ht-degree: 0%
       - [Datos que requieren migración manual](data-migration-tool/migrate-data/manual.md)
       - [Pasos posteriores a la migración de datos](data-migration-tool/migrate-data/post-migration.md)
    - Recursos {#resources}
-      - [Resolución de problemas](https://support.magento.com/hc/en-us/articles/360033020451)
+      - [Resolución de problemas](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html)
       - [Cambio](https://github.com/magento/data-migration-tool/blob/2.4/CHANGELOG.md)
 - [Volver a las guías operativas](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
