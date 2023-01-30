@@ -4,9 +4,9 @@ description: Aprenda a mejorar el rendimiento del almacenamiento en caché media
 role: Developer, Admin
 feature-set: Commerce
 feature: Best Practices
-source-git-commit: 85f9355d0e8c704be3760334b07414d3e15b3b97
+source-git-commit: 12de523cc7ea1486c894d54efe6944d92d87ded0
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '380'
 ht-degree: 0%
 
 ---
@@ -51,6 +51,11 @@ Para obtener más información, consulte [Implementar variables > `REDIS_BACKEND
 >[!NOTE]
 >
 > Compruebe la versión de las herramientas de ece instalada en el entorno local de Cloud desde la línea de comandos utilizando la variable `composer show magento/ece-tools` comando. Si es necesario, [actualizar la versión de las herramientas de ece](https://devdocs.magento.com/cloud/project/ece-tools-update.html).
+
+>[!WARNING]
+>
+>Do _not_ configurar una conexión esclava de Redis para proyectos de infraestructura en la nube con un [arquitectura escalada](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture.html). Esto provoca errores de conexión de Redis. Consulte [las directrices de configuración de Redis](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_use_slave_connection) en el _Comercio en infraestructura de nube_ guía.
+
 
 ### Configuración de implementaciones locales
 
