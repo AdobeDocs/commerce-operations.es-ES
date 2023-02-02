@@ -1,10 +1,10 @@
 ---
 title: Implementación de una sola máquina
 description: Obtenga información sobre cómo implementar actualizaciones en Commerce en un servidor de producción mediante la línea de comandos.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 2e1a06b59fda7db4a9b32d000e1b2a3ca88926d3
 workflow-type: tm+mt
 source-wordcount: '186'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -14,7 +14,7 @@ En este tema se proporcionan instrucciones para implementar actualizaciones en C
 
 ## Suposiciones
 
-- Ha instalado Commerce utilizando [Compositor].
+- Ha instalado Commerce utilizando [Compositor](../../installation/composer.md).
 - Está aplicando actualizaciones directamente al servidor.
 
 >[!WARNING]
@@ -24,7 +24,7 @@ En este tema se proporcionan instrucciones para implementar actualizaciones en C
 
 ## Pasos de implementación
 
-1. Inicie sesión en el servidor de producción como o cambie a la [propietario del sistema de archivos][file-owner].
+1. Inicie sesión en el servidor de producción como o cambie a la [propietario del sistema de archivos](../../installation/prerequisites/file-system/overview.md).
 
 1. Cambie el directorio al directorio base de Commerce:
 
@@ -92,5 +92,3 @@ En este tema se proporcionan instrucciones para implementar actualizaciones en C
 <!-- link definitions -->
 
 [install]: https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies/
-[composer]: ../../installation/composer.md
-[file-owner]: ../../installation/prerequisites/file-system/overview.md
