@@ -1,9 +1,9 @@
 ---
 title: Funcionamiento de la migración de datos
 description: Obtenga información sobre el proceso de migración de datos entre el Magento 1 y el Magento 2, incluida la terminología, los diagramas de flujo de trabajo y los pasos.
-source-git-commit: 2e1a06b59fda7db4a9b32d000e1b2a3ca88926d3
+source-git-commit: be2f924728853236bba786e7611b2a368c9f3054
 workflow-type: tm+mt
-source-wordcount: '783'
+source-wordcount: '782'
 ht-degree: 0%
 
 ---
@@ -62,7 +62,7 @@ Los archivos de asignación se tratan con más detalle en [[!DNL Data Migration 
 
 ![Flujo de migración](../../assets/data-migration/migration_flow.png)
 
-[[!DNL Data Migration Tool] Especificación técnica]: technical-specification.md
+[[!DNL Data Migration Tool] Especificación técnica](technical-specification.md)
 
 Nos complace que esté considerando pasar de la primera plataforma comercial del mundo — Magento 1.x — a la plataforma del futuro, Magento 2. Estamos encantados de compartir los detalles sobre este proceso, al que nos referimos como migración.
 
