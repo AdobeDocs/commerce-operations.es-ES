@@ -1,7 +1,7 @@
 ---
-source-git-commit: a0b8a6131d9bccb819c846c873d2044da4009989
+source-git-commit: e7c10f28e241e47af8722fd41da0a9e86709b871
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '419'
 ht-degree: 0%
 
 ---
@@ -11,9 +11,69 @@ ht-degree: 0%
 
 Obtenga información sobre la nueva documentación y las actualizaciones importantes de la documentación existente.
 
+### 27 de enero de 2023
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descripción</th>
+      <th>Tipo</th>
+      <th>Fuente</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Publicado <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html">notas de la versión</a> para la versión del paquete de la herramienta de parches de calidad (QPT) 1.1.26.</p>
+</td>
+      <td>actualización principal</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/08210f356354d20adf7360d18e2ddba9fe9a565a">08210f</a> (confirmar)</td>
+    </tr>
+  </tbody>
+</table>
+
+### 24 de enero de 2023
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descripción</th>
+      <th>Tipo</th>
+      <th>Fuente</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Se ha actualizado el <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html">programación de versiones</a> y <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html">política de ciclo de vida del software</a> temas para 2023.</p>
+</td>
+      <td>actualización principal</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/979a6d481021eb26121e79974b2ce6e9280d51c3">979a6d</a> (confirmar)</td>
+    </tr>
+  </tbody>
+</table>
+
+### 23 de enero de 2023
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descripción</th>
+      <th>Tipo</th>
+      <th>Fuente</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Se han añadido notas de la versión para Adobe Commerce 2.4.6 beta 2. Consulte <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-6.html">Notas de la versión de Adobe Commerce 2.4.6</a>.</p>
+</td>
+      <td>actualización principal</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/af347fea185d2a3c02180216feb2fd13f5868081">af347f</a> (confirmar)</td>
+    </tr>
+  </tbody>
+</table>
+
 ### 19 de enero de 2023
 
-<table>
+<table style="table-layout:auto;">
   <thead>
     <tr>
       <th>Descripción</th>
@@ -33,7 +93,7 @@ Obtenga información sobre la nueva documentación y las actualizaciones importa
 
 ### 10 de enero de 2023
 
-<table>
+<table style="table-layout:auto;">
   <thead>
     <tr>
       <th>Descripción</th>
@@ -53,7 +113,7 @@ Obtenga información sobre la nueva documentación y las actualizaciones importa
 
 ### 9 de enero de 2023
 
-<table>
+<table style="table-layout:auto;">
   <thead>
     <tr>
       <th>Descripción</th>
@@ -73,7 +133,7 @@ Obtenga información sobre la nueva documentación y las actualizaciones importa
 
 ### 20 de diciembre de 2022
 
-<table>
+<table style="table-layout:auto;">
   <thead>
     <tr>
       <th>Descripción</th>
@@ -93,7 +153,7 @@ Obtenga información sobre la nueva documentación y las actualizaciones importa
 
 ### 16 de diciembre de 2022
 
-<table>
+<table style="table-layout:auto;">
   <thead>
     <tr>
       <th>Descripción</th>
@@ -113,7 +173,7 @@ Obtenga información sobre la nueva documentación y las actualizaciones importa
 
 ### 2 de diciembre de 2022
 
-<table>
+<table style="table-layout:auto;">
   <thead>
     <tr>
       <th>Descripción</th>
@@ -133,7 +193,7 @@ Obtenga información sobre la nueva documentación y las actualizaciones importa
 
 ### 1 de diciembre de 2022
 
-<table>
+<table style="table-layout:auto;">
   <thead>
     <tr>
       <th>Descripción</th>
