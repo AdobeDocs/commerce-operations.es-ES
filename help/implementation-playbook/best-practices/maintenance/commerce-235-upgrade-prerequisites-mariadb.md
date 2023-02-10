@@ -4,19 +4,19 @@ description: Obtenga información sobre cómo preparar la base de datos de Adobe
 role: Developer
 feature-set: Commerce
 feature: Best Practices
-source-git-commit: 35efea20181b112e97bfae803c8d0168cfc88dfc
+source-git-commit: bc38dd658401d3cd4c64159b1b2b2efe89979a93
 workflow-type: tm+mt
-source-wordcount: '562'
+source-wordcount: '641'
 ht-degree: 0%
 
 ---
 
 
-# Requisitos previos de la actualización a Adobe Commerce 2.3.5
+# Requisitos previos de actualización para MariaDB
 
-Este artículo explica cómo preparar la base de datos al actualizar a Adobe Commerce 2.3.5 desde la versión 2.3.4 o anterior.
+La actualización de Adobe Commerce 2.3.4 o versiones anteriores a cualquier versión más reciente requiere la actualización del servicio MariaDB en la infraestructura de nube de la versión 10.0 o 10.2 a la versión 10.3 o 10.4. La versión 10.3 de MariaDB y las versiones posteriores requieren que la base de datos utilice el formato de fila de tabla dinámica y Adobe Commerce requiere el uso del motor de almacenamiento InnoDB para las tablas. Este artículo explica cómo actualizar la base de datos para cumplir con estos requisitos de MariaDB.
 
-Esta actualización requiere que el equipo de asistencia actualice MariaDB en la infraestructura de nube de MariaDB 10.0 a 10.2 para satisfacer los requisitos de la versión 2.3.5 y posteriores de Adobe Commerce.
+Después de preparar la base de datos, envíe un ticket de asistencia de Adobe Commerce para actualizar la versión del servicio MariaDB en la infraestructura de la nube antes de continuar con el proceso de actualización de Adobe Commerce.
 
 ## Producto y versiones afectados
 
@@ -27,7 +27,7 @@ Adobe Commerce en infraestructura de nube con Adobe Commerce versión 2.3.4 o an
 Antes de que el equipo de asistencia de Adobe Commerce comience el proceso de actualización, prepare la base de datos convirtiendo las tablas de la base de datos:
 
 - Convertir el formato de fila de `COMPACT` a `DYNAMIC`
-- Convertir el motor de almacenamiento de `MyISAM` a `InnoDB`
+- Cambiar el motor de almacenamiento de `MyISAM` a `InnoDB`
 
 Tenga en cuenta las siguientes consideraciones cuando planifique y programe la conversión:
 
@@ -137,6 +137,12 @@ El día antes de la actualización programada a la versión 10.2 de MariaDB, com
 
 1. Si se ha revertido alguna tabla, repita los pasos para cambiar el formato de fila de tabla y el motor de almacenamiento.
 
+## Cambiar el motor de almacenamiento
+
+Consulte [Convertir las tablas MyISAM a InnoDB](../planning/database-on-cloud.md).
+
 ## Información adicional
 
-[Prácticas recomendadas de bases de datos para Adobe Commerce en infraestructura en la nube](../planning/database-on-cloud.md)
+- [Prácticas recomendadas de bases de datos para Adobe Commerce en infraestructura en la nube](../planning/database-on-cloud.md)
+- [Actualización de MariaDB de 10.0 a 12.0 para Adobe Commerce en Cloud](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/upgrade-mariadb-10.0-to-10.2-for-magento-commerce-cloud.html)
+
