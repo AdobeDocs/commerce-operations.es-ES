@@ -1,7 +1,7 @@
 ---
-source-git-commit: 23d55385046de18b238c90f6a99be692f1ce7561
+source-git-commit: 27e7a262fd1d8092045f5ebe2f88caaec37a6b0d
 workflow-type: tm+mt
-source-wordcount: '19853'
+source-wordcount: '29783'
 ht-degree: 0%
 
 ---
@@ -10,9 +10,9 @@ ht-degree: 0%
 <!-- All the assigned and captured content is used in the included template -->
 
 <!-- The template to render with above values -->
-**Versión**: 1,40,0
+**Versión**: 1,42,0
 
-Esta referencia contiene 129 comandos disponibles a través del `magento-cloud` herramienta de línea de comandos.
+Esta referencia contiene 134 comandos disponibles a través del `magento-cloud` herramienta de línea de comandos.
 La lista inicial se genera automáticamente usando la variable `magento-cloud list` en la edición.
 
 >[!NOTE]
@@ -83,37 +83,58 @@ Mostrar este mensaje de ayuda
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 ### `--verbose`, `-v|-vv|-vvv`
 
-Aumentar la diversidad de los mensajes
+Aumentar el nivel de detalle de los mensajes
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--version`, `-V`
 
-Mostrar esta versión de la aplicación
+Mostrar esta versión de aplicación
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; acepte el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -144,13 +165,6 @@ Mostrar este mensaje de ayuda
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Aumentar la diversidad de los mensajes
@@ -167,14 +181,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -208,13 +250,6 @@ Mostrar este mensaje de ayuda
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Aumentar la diversidad de los mensajes
@@ -231,14 +266,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -281,13 +344,6 @@ Mostrar este mensaje de ayuda
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Aumentar la diversidad de los mensajes
@@ -304,14 +360,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -322,7 +406,7 @@ Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
 Muestra ayuda para un comando
 
 ```bash
-help [--format FORMAT] [--raw] [--] [<command_name>]
+magento-cloud help [--format FORMAT] [--raw] [--] [<command_name>]
 ```
 
 
@@ -354,13 +438,6 @@ Mostrar este mensaje de ayuda
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Aumentar la diversidad de los mensajes
@@ -377,14 +454,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -412,13 +517,6 @@ Mostrar este mensaje de ayuda
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Aumentar la diversidad de los mensajes
@@ -435,14 +533,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -453,9 +579,15 @@ Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
 Listas, comandos
 
 ```bash
-list [--raw] [--format FORMAT] [--all] [--] [<namespace>]
+magento-cloud list [--raw] [--format FORMAT] [--all] [--] [<namespace>]
 ```
 
+
+### `command`
+
+El comando que se va a ejecutar
+
+- Requerido
 
 ### `namespace`
 
@@ -476,13 +608,83 @@ El formato de salida (txt, xml, json o md)
 - Predeterminado: `txt`
 - Requiere un valor
 
+### `--all`
+
+Mostrar todos los comandos, incluidos los ocultos
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--help`, `-h`
+
+Mostrar este mensaje de ayuda
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--verbose`, `-v|-vv|-vvv`
+
+Aumentar la diversidad de los mensajes
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--version`, `-V`
+
+Mostrar esta versión de la aplicación
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--yes`, `-y`
+
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no`, `-n`
+
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
+
+- Predeterminado: `false`
+- No acepta un valor
+
 
 ## `multi`
 
 Ejecutar un comando en varios proyectos
 
 ```bash
-magento-cloud multi [-p|--projects PROJECTS] [--continue] [--sort SORT] [--reverse] [--] <cmd>
+magento-cloud multi [-p|--projects PROJECTS] [--continue] [--sort SORT] [--reverse] [--] <cmd> (<cmd>)...
 ```
 
 
@@ -490,7 +692,10 @@ magento-cloud multi [-p|--projects PROJECTS] [--continue] [--sort SORT] [--rever
 
 El comando que se va a ejecutar
 
+- Predeterminado: `[]`
+
 - Requerido
+- Matriz
 
 ### `--projects`, `-p`
 
@@ -526,13 +731,6 @@ Mostrar este mensaje de ayuda
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Aumentar la diversidad de los mensajes
@@ -549,14 +747,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -567,7 +793,7 @@ Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
 Abrir la interfaz de usuario web
 
 ```bash
-magento-cloud web [--browser BROWSER] [--pipe] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT]
+magento-cloud web [--browser BROWSER] [--pipe] [-p|--project PROJECT] [-e|--environment ENVIRONMENT]
 ```
 
 ### `--browser`
@@ -591,7 +817,7 @@ ID o URL del proyecto
 
 ### `--host`
 
-El nombre de host de la API del proyecto
+Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -604,13 +830,6 @@ ID del entorno
 ### `--help`, `-h`
 
 Mostrar este mensaje de ayuda
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -631,14 +850,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -659,13 +906,6 @@ Mostrar este mensaje de ayuda
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Aumentar la diversidad de los mensajes
@@ -682,14 +922,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -710,13 +978,6 @@ Mostrar este mensaje de ayuda
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Aumentar la diversidad de los mensajes
@@ -733,14 +994,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -751,7 +1040,7 @@ Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
 Cancelar una actividad
 
 ```bash
-magento-cloud activity:cancel [--type TYPE] [--exclude-type EXCLUDE-TYPE] [-a|--all] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--] [<id>]
+magento-cloud activity:cancel [--type TYPE] [--exclude-type EXCLUDE-TYPE] [-a|--all] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] [<id>]
 ```
 
 
@@ -762,14 +1051,14 @@ El ID de actividad. El valor predeterminado es la actividad cancelable más reci
 
 ### `--type`
 
-Filtre por tipo (al seleccionar una actividad predeterminada). Si se especifica un solo valor, se dividirá por comas o espacios en blanco.
+Filtre por tipo (al seleccionar una actividad predeterminada). Si una lista se proporciona como un valor único (p. ej. &quot;a,b,c&quot;) se dividirá por comas o espacios en blanco. El carácter % puede utilizarse como comodín para el tipo, por ejemplo &#39;%var%&#39; para seleccionar actividades relacionadas con variables.
 
 - Predeterminado: `[]`
 - Requiere un valor
 
 ### `--exclude-type`
 
-Excluir por tipo (al seleccionar una actividad predeterminada). Si se especifica un solo valor, se dividirá por comas o espacios en blanco.
+Excluir por tipo (al seleccionar una actividad predeterminada). Si una lista se proporciona como un valor único (p. ej. &quot;a,b,c&quot;) se dividirá por comas o espacios en blanco. El carácter % puede utilizarse como comodín para excluir tipos.
 
 - Predeterminado: `[]`
 - Requiere un valor
@@ -789,7 +1078,7 @@ ID o URL del proyecto
 
 ### `--host`
 
-El nombre de host de la API del proyecto
+Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -802,13 +1091,6 @@ ID del entorno
 ### `--help`, `-h`
 
 Mostrar este mensaje de ayuda
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -829,14 +1111,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -847,7 +1157,7 @@ Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
 Ver información detallada sobre una sola actividad
 
 ```bash
-magento-cloud activity:get [-P|--property PROPERTY] [--type TYPE] [--exclude-type EXCLUDE-TYPE] [--state STATE] [--result RESULT] [-i|--incomplete] [-a|--all] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--format FORMAT] [--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [--] [<id>]
+magento-cloud activity:get [-P|--property PROPERTY] [--type TYPE] [--exclude-type EXCLUDE-TYPE] [--state STATE] [--result RESULT] [-i|--incomplete] [-a|--all] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [--] [<id>]
 ```
 
 
@@ -864,21 +1174,21 @@ La propiedad que se va a ver
 
 ### `--type`
 
-Filtre por tipo (al seleccionar una actividad predeterminada). Si se especifica un solo valor, se dividirá por comas o espacios en blanco.
+Filtre por tipo (al seleccionar una actividad predeterminada). Si una lista se proporciona como un valor único (p. ej. &quot;a,b,c&quot;) se dividirá por comas o espacios en blanco. El carácter % puede utilizarse como comodín para el tipo, por ejemplo &#39;%var%&#39; para seleccionar actividades relacionadas con variables.
 
 - Predeterminado: `[]`
 - Requiere un valor
 
 ### `--exclude-type`
 
-Excluir por tipo (al seleccionar una actividad predeterminada). Si se especifica un solo valor, se dividirá por comas o espacios en blanco.
+Excluir por tipo (al seleccionar una actividad predeterminada). Si una lista se proporciona como un valor único (p. ej. &quot;a,b,c&quot;) se dividirá por comas o espacios en blanco. El carácter % puede utilizarse como comodín para excluir tipos.
 
 - Predeterminado: `[]`
 - Requiere un valor
 
 ### `--state`
 
-Filtrar por estado (al seleccionar una actividad predeterminada): in_progress, pendiente, completado o cancelado. Si se especifica un solo valor, se dividirá por comas o espacios en blanco.
+Filtrar por estado (al seleccionar una actividad predeterminada): in_progress, pendiente, completado o cancelado. Si una lista se proporciona como un valor único (p. ej. &quot;a,b,c&quot;) se dividirá por comas o espacios en blanco.
 
 - Predeterminado: `[]`
 - Requiere un valor
@@ -911,7 +1221,7 @@ ID o URL del proyecto
 
 ### `--host`
 
-El nombre de host de la API del proyecto
+Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -923,14 +1233,14 @@ ID del entorno
 
 ### `--format`
 
-El formato de salida (&quot;tabla&quot;, &quot;csv&quot;, &quot;tsv&quot; o &quot;sin formato&quot;)
+El formato de salida: tabla, csv, tsv o plain
 
 - Predeterminado: `table`
 - Requiere un valor
 
-### `--columns`
+### `--columns`, `-c`
 
-Columnas que se van a mostrar (lista separada por comas o valores múltiples)
+Columnas que se van a mostrar. Si una lista se proporciona como un valor único (p. ej. &quot;a,b,c&quot;) se dividirá por comas o espacios en blanco.
 
 - Predeterminado: `[]`
 - Requiere un valor
@@ -956,13 +1266,6 @@ Mostrar este mensaje de ayuda
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Aumentar la diversidad de los mensajes
@@ -979,14 +1282,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -997,7 +1328,7 @@ Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
 Obtener una lista de actividades para un entorno o proyecto
 
 ```bash
-magento-cloud activity:list [-t|--type TYPE] [-x|--exclude-type EXCLUDE-TYPE] [--limit LIMIT] [--start START] [--state STATE] [--result RESULT] [-i|--incomplete] [-a|--all] [--format FORMAT] [--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT]
+magento-cloud activity:list [-t|--type TYPE] [-x|--exclude-type EXCLUDE-TYPE] [--limit LIMIT] [--start START] [--state STATE] [--result RESULT] [-i|--incomplete] [-a|--all] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT]
 ```
 
 
@@ -1012,14 +1343,14 @@ act
 
 ### `--type`, `-t`
 
-Filtrar actividades por tipo Si se especifica un solo valor, se dividirá por comas o en espacios en blanco.
+Filtrar actividades por tipo Si una lista se proporciona como un solo valor (p. ej. &quot;a,b,c&quot;) se dividirá por comas o espacios en blanco. El carácter % puede utilizarse como comodín para el tipo, por ejemplo &#39;%var%&#39; para seleccionar actividades relacionadas con variables.
 
 - Predeterminado: `[]`
 - Requiere un valor
 
 ### `--exclude-type`, `-x`
 
-Excluir actividades por tipo. Si se especifica un solo valor, se dividirá por comas o espacios en blanco.
+Excluir actividades por tipo. Si una lista se proporciona como un valor único (p. ej. &quot;a,b,c&quot;) se dividirá por comas o espacios en blanco. El carácter % puede utilizarse como comodín para excluir tipos.
 
 - Predeterminado: `[]`
 - Requiere un valor
@@ -1039,7 +1370,7 @@ Solo se enumerarán las actividades creadas antes de esta fecha
 
 ### `--state`
 
-Filtrar actividades por estado: in_progress, pendiente, completado o cancelado. Si se especifica un solo valor, se dividirá por comas o espacios en blanco.
+Filtrar actividades por estado: in_progress, pendiente, completado o cancelado. Si una lista se proporciona como un valor único (p. ej. &quot;a,b,c&quot;) se dividirá por comas o espacios en blanco.
 
 - Predeterminado: `[]`
 - Requiere un valor
@@ -1066,14 +1397,14 @@ Enumerar actividades en todos los entornos
 
 ### `--format`
 
-El formato de salida (&quot;tabla&quot;, &quot;csv&quot;, &quot;tsv&quot; o &quot;sin formato&quot;)
+El formato de salida: tabla, csv, tsv o plain
 
 - Predeterminado: `table`
 - Requiere un valor
 
-### `--columns`
+### `--columns`, `-c`
 
-Columnas que se van a mostrar (lista separada por comas o valores múltiples)
+Columnas que se van a mostrar. Columnas disponibles: id*, created*, description*, progress*, state*, result*, completed, environment, type (* = columnas predeterminadas). El carácter &quot;+&quot; puede utilizarse como marcador de posición para las columnas predeterminadas. Si una lista se proporciona como un valor único (p. ej. &quot;a,b,c&quot;) se dividirá por comas o espacios en blanco.
 
 - Predeterminado: `[]`
 - Requiere un valor
@@ -1100,7 +1431,7 @@ ID o URL del proyecto
 
 ### `--host`
 
-El nombre de host de la API del proyecto
+Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -1113,13 +1444,6 @@ ID del entorno
 ### `--help`, `-h`
 
 Mostrar este mensaje de ayuda
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -1140,14 +1464,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -1158,7 +1510,7 @@ Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
 Mostrar el registro de una actividad
 
 ```bash
-magento-cloud activity:log [--refresh REFRESH] [-t|--timestamps] [--type TYPE] [--exclude-type EXCLUDE-TYPE] [--state STATE] [--result RESULT] [-i|--incomplete] [-a|--all] [--date-fmt DATE-FMT] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--] [<id>]
+magento-cloud activity:log [--refresh REFRESH] [-t|--timestamps] [--type TYPE] [--exclude-type EXCLUDE-TYPE] [--state STATE] [--result RESULT] [-i|--incomplete] [-a|--all] [--date-fmt DATE-FMT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] [<id>]
 ```
 
 
@@ -1169,7 +1521,7 @@ El ID de actividad. El valor predeterminado es la actividad más reciente.
 
 ### `--refresh`
 
-Intervalo de actualización de la actividad (segundos). Establézcalo en 0 para desactivar la actualización.
+Intervalo de actualización de la actividad (segundos). Establézcalo en 0 para deshabilitar la actualización.
 
 - Predeterminado: `3`
 - Requiere un valor
@@ -1183,21 +1535,21 @@ Mostrar una marca de tiempo junto a cada mensaje
 
 ### `--type`
 
-Filtre por tipo (al seleccionar una actividad predeterminada). Si se especifica un solo valor, se dividirá por comas o espacios en blanco.
+Filtre por tipo (al seleccionar una actividad predeterminada). Si una lista se proporciona como un valor único (p. ej. &quot;a,b,c&quot;) se dividirá por comas o espacios en blanco. El carácter % puede utilizarse como comodín para el tipo, por ejemplo &#39;%var%&#39; para seleccionar actividades relacionadas con variables.
 
 - Predeterminado: `[]`
 - Requiere un valor
 
 ### `--exclude-type`
 
-Excluir por tipo (al seleccionar una actividad predeterminada). Si se especifica un solo valor, se dividirá por comas o espacios en blanco.
+Excluir por tipo (al seleccionar una actividad predeterminada). Si una lista se proporciona como un valor único (p. ej. &quot;a,b,c&quot;) se dividirá por comas o espacios en blanco. El carácter % puede utilizarse como comodín para excluir tipos.
 
 - Predeterminado: `[]`
 - Requiere un valor
 
 ### `--state`
 
-Filtrar por estado (al seleccionar una actividad predeterminada): in_progress, pendiente, completado o cancelado. Si se especifica un solo valor, se dividirá por comas o espacios en blanco.
+Filtrar por estado (al seleccionar una actividad predeterminada): in_progress, pendiente, completado o cancelado. Si una lista se proporciona como un valor único (p. ej. &quot;a,b,c&quot;) se dividirá por comas o espacios en blanco.
 
 - Predeterminado: `[]`
 - Requiere un valor
@@ -1237,7 +1589,7 @@ ID o URL del proyecto
 
 ### `--host`
 
-El nombre de host de la API del proyecto
+Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -1250,13 +1602,6 @@ ID del entorno
 ### `--help`, `-h`
 
 Mostrar este mensaje de ayuda
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -1277,14 +1622,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -1295,7 +1668,7 @@ Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
 Ejecute una solicitud de cURL autenticada en la API de Magento Cloud
 
 ```bash
-magento-cloud api:curl [-X|--request REQUEST] [-d|--data DATA] [-i|--include] [-I|--head] [--disable-compression] [--enable-glob] [-f|--fail] [-H|--header HEADER] [--] [<path>]
+magento-cloud api:curl [-X|--request REQUEST] [-d|--data DATA] [--json JSON] [-i|--include] [-I|--head] [--disable-compression] [--enable-glob] [-f|--fail] [-H|--header HEADER] [--] [<path>]
 ```
 
 
@@ -1313,6 +1686,12 @@ El método de solicitud para utilizar
 ### `--data`, `-d`
 
 Datos que enviar
+
+- Requiere un valor
+
+### `--json`
+
+Datos JSON para enviar
 
 - Requiere un valor
 
@@ -1365,13 +1744,6 @@ Mostrar este mensaje de ayuda
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Aumentar la diversidad de los mensajes
@@ -1388,14 +1760,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -1406,7 +1806,7 @@ Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
 Ver la configuración de una aplicación
 
 ```bash
-magento-cloud app:config-get [-P|--property PROPERTY] [--refresh] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [-i|--identity-file IDENTITY-FILE]
+magento-cloud app:config-get [-P|--property PROPERTY] [--refresh] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [-i|--identity-file IDENTITY-FILE]
 ```
 
 ### `--property`, `-P`
@@ -1430,7 +1830,7 @@ ID o URL del proyecto
 
 ### `--host`
 
-El nombre de host de la API del proyecto
+Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -1459,13 +1859,6 @@ Mostrar este mensaje de ayuda
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Aumentar la diversidad de los mensajes
@@ -1482,14 +1875,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -1500,7 +1921,7 @@ Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
 Enumerar aplicaciones en el proyecto
 
 ```bash
-magento-cloud apps [--refresh] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--format FORMAT] [--columns COLUMNS] [--no-header]
+magento-cloud apps [--refresh] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header]
 ```
 
 
@@ -1523,7 +1944,7 @@ ID o URL del proyecto
 
 ### `--host`
 
-El nombre de host de la API del proyecto
+Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -1535,14 +1956,14 @@ ID del entorno
 
 ### `--format`
 
-El formato de salida (&quot;tabla&quot;, &quot;csv&quot;, &quot;tsv&quot; o &quot;sin formato&quot;)
+El formato de salida: tabla, csv, tsv o plain
 
 - Predeterminado: `table`
 - Requiere un valor
 
-### `--columns`
+### `--columns`, `-c`
 
-Columnas que se van a mostrar (lista separada por comas o valores múltiples)
+Columnas que se van a mostrar. Columnas disponibles: name*, type*, disk, path, size (* = columnas predeterminadas). El carácter &quot;+&quot; puede utilizarse como marcador de posición para las columnas predeterminadas. Si una lista se proporciona como un valor único (p. ej. &quot;a,b,c&quot;) se dividirá por comas o espacios en blanco.
 
 - Predeterminado: `[]`
 - Requiere un valor
@@ -1557,13 +1978,6 @@ No mostrar el encabezado de tabla
 ### `--help`, `-h`
 
 Mostrar este mensaje de ayuda
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -1584,14 +1998,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -1612,13 +2054,6 @@ Mostrar este mensaje de ayuda
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Aumentar la diversidad de los mensajes
@@ -1635,14 +2070,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -1688,13 +2151,6 @@ Mostrar este mensaje de ayuda
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Aumentar la diversidad de los mensajes
@@ -1711,14 +2167,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -1729,7 +2213,7 @@ Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
 Mostrar la información de la cuenta
 
 ```bash
-magento-cloud auth:info [--no-auto-login] [-P|--property PROPERTY] [--refresh] [--format FORMAT] [--columns COLUMNS] [--no-header] [--] [<property>]
+magento-cloud auth:info [--no-auto-login] [-P|--property PROPERTY] [--refresh] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--] [<property>]
 ```
 
 
@@ -1760,14 +2244,14 @@ Si actualizar la caché
 
 ### `--format`
 
-El formato de salida (&quot;tabla&quot;, &quot;csv&quot;, &quot;tsv&quot; o &quot;sin formato&quot;)
+El formato de salida: tabla, csv, tsv o plain
 
 - Predeterminado: `table`
 - Requiere un valor
 
-### `--columns`
+### `--columns`, `-c`
 
-Columnas que se van a mostrar (lista separada por comas o valores múltiples)
+Columnas que se van a mostrar. Si una lista se proporciona como un valor único (p. ej. &quot;a,b,c&quot;) se dividirá por comas o espacios en blanco.
 
 - Predeterminado: `[]`
 - Requiere un valor
@@ -1782,13 +2266,6 @@ No mostrar el encabezado de tabla
 ### `--help`, `-h`
 
 Mostrar este mensaje de ayuda
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -1809,14 +2286,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -1856,13 +2361,6 @@ Mostrar este mensaje de ayuda
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Aumentar la diversidad de los mensajes
@@ -1879,14 +2377,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -1912,13 +2438,6 @@ Mostrar este mensaje de ayuda
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Aumentar la diversidad de los mensajes
@@ -1935,14 +2454,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -1953,19 +2500,26 @@ Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
 Obtenga un token de acceso de OAuth 2 para solicitudes a las API de Magento Cloud
 
 ```bash
-magento-cloud auth:token
+magento-cloud auth:token [-H|--header] [-W|--no-warn]
 ```
 
-### `--help`, `-h`
+### `--header`, `-H`
 
-Mostrar este mensaje de ayuda
+Agregue al token el prefijo &quot;Autorización: Portador &quot; para crear un encabezado RFC 6750
 
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--quiet`, `-q`
+### `--no-warn`, `-W`
 
-No mostrar ningún mensaje
+Elimine la advertencia que se imprime de forma predeterminada para guardar. Se prefiere esta opción en lugar de redirigir el servidor, ya que ocultaría otros mensajes potencialmente útiles.
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--help`, `-h`
+
+Mostrar este mensaje de ayuda
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -1986,14 +2540,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -2004,7 +2586,7 @@ Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
 Configuración de la integración de Blackfire.io para el proyecto
 
 ```bash
-magento-cloud blackfire:setup [--server_id SERVER_ID] [--server_token SERVER_TOKEN] [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait]
+magento-cloud blackfire:setup [--server_id SERVER_ID] [--server_token SERVER_TOKEN] [-p|--project PROJECT] [-W|--no-wait] [--wait]
 ```
 
 ### `--server_id`
@@ -2027,7 +2609,7 @@ ID o URL del proyecto
 
 ### `--host`
 
-El nombre de host de la API del proyecto
+Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -2052,9 +2634,92 @@ Mostrar este mensaje de ayuda
 - Predeterminado: `false`
 - No acepta un valor
 
+### `--verbose`, `-v|-vv|-vvv`
+
+Aumentar la diversidad de los mensajes
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--version`, `-V`
+
+Mostrar esta versión de la aplicación
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--yes`, `-y`
+
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no`, `-n`
+
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
 ### `--quiet`, `-q`
 
 No mostrar ningún mensaje
+
+- Predeterminado: `false`
+- No acepta un valor
+
+
+## `blue-green:conclude`
+
+&lt;fg white=&quot;&quot; bg=&quot;red&quot;>[ ALPHA ]&lt;/> Concluye una implementación azul/verde
+
+```bash
+magento-cloud blue-green:conclude [-p|--project PROJECT] [-e|--environment ENVIRONMENT]
+```
+
+### `--project`, `-p`
+
+ID o URL del proyecto
+
+- Requiere un valor
+
+### `--host`
+
+Opción obsoleta, ya no se utiliza
+
+- Requiere un valor
+
+### `--environment`, `-e`
+
+ID del entorno
+
+- Requiere un valor
+
+### `--help`, `-h`
+
+Mostrar este mensaje de ayuda
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -2075,14 +2740,236 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
+
+- Predeterminado: `false`
+- No acepta un valor
+
+
+## `blue-green:deploy`
+
+&lt;fg white=&quot;&quot; bg=&quot;red&quot;>[ ALPHA ]&lt;/> Realizar una implementación azul/verde
+
+```bash
+magento-cloud blue-green:deploy [--routing-percentage ROUTING-PERCENTAGE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT]
+```
+
+### `--routing-percentage`
+
+Establezca el porcentaje de enrutamiento de la última versión
+
+- Predeterminado: `100`
+- Requiere un valor
+
+### `--project`, `-p`
+
+ID o URL del proyecto
+
+- Requiere un valor
+
+### `--host`
+
+Opción obsoleta, ya no se utiliza
+
+- Requiere un valor
+
+### `--environment`, `-e`
+
+ID del entorno
+
+- Requiere un valor
+
+### `--help`, `-h`
+
+Mostrar este mensaje de ayuda
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--verbose`, `-v|-vv|-vvv`
+
+Aumentar la diversidad de los mensajes
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--version`, `-V`
+
+Mostrar esta versión de la aplicación
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--yes`, `-y`
+
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no`, `-n`
+
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
+
+- Predeterminado: `false`
+- No acepta un valor
+
+
+## `blue-green:enable`
+
+&lt;fg white=&quot;&quot; bg=&quot;red&quot;>[ ALPHA ]&lt;/> Habilitar implementaciones en azul/verde
+
+```bash
+magento-cloud blue-green:enable [-%|--routing-percentage ROUTING-PERCENTAGE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT]
+```
+
+### `--routing-percentage`, `-%`
+
+Establezca el porcentaje de enrutamiento de la última versión
+
+- Predeterminado: `100`
+- Requiere un valor
+
+### `--project`, `-p`
+
+ID o URL del proyecto
+
+- Requiere un valor
+
+### `--host`
+
+Opción obsoleta, ya no se utiliza
+
+- Requiere un valor
+
+### `--environment`, `-e`
+
+ID del entorno
+
+- Requiere un valor
+
+### `--help`, `-h`
+
+Mostrar este mensaje de ayuda
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--verbose`, `-v|-vv|-vvv`
+
+Aumentar la diversidad de los mensajes
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--version`, `-V`
+
+Mostrar esta versión de la aplicación
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--yes`, `-y`
+
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no`, `-n`
+
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -2093,7 +2980,7 @@ Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
 Agregar un certificado SSL al proyecto
 
 ```bash
-magento-cloud certificate:add [--cert CERT] [--key KEY] [--chain CHAIN] [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait]
+magento-cloud certificate:add [--cert CERT] [--key KEY] [--chain CHAIN] [-p|--project PROJECT] [-W|--no-wait] [--wait]
 ```
 
 ### `--cert`
@@ -2123,7 +3010,7 @@ ID o URL del proyecto
 
 ### `--host`
 
-El nombre de host de la API del proyecto
+Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -2148,13 +3035,6 @@ Mostrar este mensaje de ayuda
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Aumentar la diversidad de los mensajes
@@ -2171,14 +3051,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -2189,7 +3097,7 @@ Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
 Eliminar un certificado del proyecto
 
 ```bash
-magento-cloud certificate:delete [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait] [--] <id>
+magento-cloud certificate:delete [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] <id>
 ```
 
 
@@ -2207,7 +3115,7 @@ ID o URL del proyecto
 
 ### `--host`
 
-El nombre de host de la API del proyecto
+Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -2232,13 +3140,6 @@ Mostrar este mensaje de ayuda
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Aumentar la diversidad de los mensajes
@@ -2255,14 +3156,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -2273,7 +3202,7 @@ Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
 Ver un certificado
 
 ```bash
-magento-cloud certificate:get [-P|--property PROPERTY] [--date-fmt DATE-FMT] [-p|--project PROJECT] [--host HOST] [--] <id>
+magento-cloud certificate:get [-P|--property PROPERTY] [--date-fmt DATE-FMT] [-p|--project PROJECT] [--] <id>
 ```
 
 
@@ -2304,20 +3233,13 @@ ID o URL del proyecto
 
 ### `--host`
 
-El nombre de host de la API del proyecto
+Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
 ### `--help`, `-h`
 
 Mostrar este mensaje de ayuda
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -2338,14 +3260,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -2356,7 +3306,7 @@ Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
 Enumerar certificados de proyecto
 
 ```bash
-magento-cloud certificate:list [--domain DOMAIN] [--exclude-domain EXCLUDE-DOMAIN] [--issuer ISSUER] [--only-auto] [--no-auto] [--ignore-expiry] [--only-expired] [--no-expired] [--pipe-domains] [--date-fmt DATE-FMT] [--format FORMAT] [--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--host HOST]
+magento-cloud certificate:list [--domain DOMAIN] [--exclude-domain EXCLUDE-DOMAIN] [--issuer ISSUER] [--only-auto] [--no-auto] [--ignore-expiry] [--only-expired] [--no-expired] [--pipe-domains] [--date-fmt DATE-FMT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT]
 ```
 
 
@@ -2438,14 +3388,14 @@ El formato de fecha (como una cadena de formato de fecha PHP)
 
 ### `--format`
 
-El formato de salida (&quot;tabla&quot;, &quot;csv&quot;, &quot;tsv&quot; o &quot;sin formato&quot;)
+El formato de salida: tabla, csv, tsv o plain
 
 - Predeterminado: `table`
 - Requiere un valor
 
-### `--columns`
+### `--columns`, `-c`
 
-Columnas que se van a mostrar (lista separada por comas o valores múltiples)
+Columnas que se van a mostrar. Columnas disponibles: creado, dominios, caduca, id, emisor. Si una lista se proporciona como un valor único (p. ej. &quot;a,b,c&quot;) se dividirá por comas o espacios en blanco.
 
 - Predeterminado: `[]`
 - Requiere un valor
@@ -2465,20 +3415,13 @@ ID o URL del proyecto
 
 ### `--host`
 
-El nombre de host de la API del proyecto
+Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
 ### `--help`, `-h`
 
 Mostrar este mensaje de ayuda
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -2499,14 +3442,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -2517,7 +3488,7 @@ Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
 Mostrar detalles de confirmación
 
 ```bash
-magento-cloud commit:get [-P|--property PROPERTY] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--date-fmt DATE-FMT] [--format FORMAT] [--columns COLUMNS] [--no-header] [--] [<commit>]
+magento-cloud commit:get [-P|--property PROPERTY] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--date-fmt DATE-FMT] [--] [<commit>]
 ```
 
 
@@ -2542,7 +3513,7 @@ ID o URL del proyecto
 
 ### `--host`
 
-El nombre de host de la API del proyecto
+Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -2586,13 +3557,6 @@ Mostrar este mensaje de ayuda
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Aumentar la diversidad de los mensajes
@@ -2609,14 +3573,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -2627,7 +3619,7 @@ Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
 Listar confirmaciones
 
 ```bash
-magento-cloud commits [--limit LIMIT] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--format FORMAT] [--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [--] [<commit>]
+magento-cloud commits [--limit LIMIT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [--] [<commit>]
 ```
 
 
@@ -2656,7 +3648,7 @@ ID o URL del proyecto
 
 ### `--host`
 
-El nombre de host de la API del proyecto
+Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -2668,14 +3660,14 @@ ID del entorno
 
 ### `--format`
 
-El formato de salida (&quot;tabla&quot;, &quot;csv&quot;, &quot;tsv&quot; o &quot;sin formato&quot;)
+El formato de salida: tabla, csv, tsv o plain
 
 - Predeterminado: `table`
 - Requiere un valor
 
-### `--columns`
+### `--columns`, `-c`
 
-Columnas que se van a mostrar (lista separada por comas o valores múltiples)
+Columnas que se van a mostrar. Columnas disponibles: autor, fecha, sha, resumen. Si una lista se proporciona como un valor único (p. ej. &quot;a,b,c&quot;) se dividirá por comas o espacios en blanco.
 
 - Predeterminado: `[]`
 - Requiere un valor
@@ -2701,13 +3693,6 @@ Mostrar este mensaje de ayuda
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Aumentar la diversidad de los mensajes
@@ -2724,14 +3709,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -2742,7 +3755,7 @@ Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
 Crear un volcado local de la base de datos remota
 
 ```bash
-magento-cloud db:dump [--schema SCHEMA] [-f|--file FILE] [-d|--directory DIRECTORY] [-z|--gzip] [-t|--timestamp] [-o|--stdout] [--table TABLE] [--exclude-table EXCLUDE-TABLE] [--schema-only] [--charset CHARSET] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE]
+magento-cloud db:dump [--schema SCHEMA] [-f|--file FILE] [-d|--directory DIRECTORY] [-z|--gzip] [-t|--timestamp] [-o|--stdout] [--table TABLE] [--exclude-table EXCLUDE-TABLE] [--schema-only] [--charset CHARSET] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE]
 ```
 
 
@@ -2829,7 +3842,7 @@ ID o URL del proyecto
 
 ### `--host`
 
-El nombre de host de la API del proyecto
+Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -2864,13 +3877,6 @@ Mostrar este mensaje de ayuda
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Aumentar la diversidad de los mensajes
@@ -2887,14 +3893,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -2905,7 +3939,7 @@ Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
 Calcular el uso de disco de una base de datos
 
 ```bash
-magento-cloud db:size [-B|--bytes] [-C|--cleanup] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [-r|--relationship RELATIONSHIP] [--format FORMAT] [--columns COLUMNS] [--no-header] [-i|--identity-file IDENTITY-FILE]
+magento-cloud db:size [-B|--bytes] [-C|--cleanup] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [-r|--relationship RELATIONSHIP] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-i|--identity-file IDENTITY-FILE]
 ```
 
 ### `--bytes`, `-B`
@@ -2930,7 +3964,7 @@ ID o URL del proyecto
 
 ### `--host`
 
-El nombre de host de la API del proyecto
+Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -2954,14 +3988,14 @@ La relación de servicio que se va a usar
 
 ### `--format`
 
-El formato de salida (&quot;tabla&quot;, &quot;csv&quot;, &quot;tsv&quot; o &quot;sin formato&quot;)
+El formato de salida: tabla, csv, tsv o plain
 
 - Predeterminado: `table`
 - Requiere un valor
 
-### `--columns`
+### `--columns`, `-c`
 
-Columnas que se van a mostrar (lista separada por comas o valores múltiples)
+Columnas que se van a mostrar. Columnas disponibles: max, percent_used, used. Si una lista se proporciona como un valor único (p. ej. &quot;a,b,c&quot;) se dividirá por comas o espacios en blanco.
 
 - Predeterminado: `[]`
 - Requiere un valor
@@ -2986,13 +4020,6 @@ Mostrar este mensaje de ayuda
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Aumentar la diversidad de los mensajes
@@ -3009,14 +4036,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -3027,7 +4082,7 @@ Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
 Ejecutar SQL en la base de datos remota
 
 ```bash
-magento-cloud sql [--raw] [--schema SCHEMA] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [--] [<query>]
+magento-cloud sql [--raw] [--schema SCHEMA] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [--] [<query>]
 ```
 
 
@@ -3067,7 +4122,7 @@ ID o URL del proyecto
 
 ### `--host`
 
-El nombre de host de la API del proyecto
+Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -3102,13 +4157,6 @@ Mostrar este mensaje de ayuda
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Aumentar la diversidad de los mensajes
@@ -3125,14 +4173,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -3143,7 +4219,7 @@ Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
 Agregar un nuevo dominio al proyecto
 
 ```bash
-magento-cloud domain:add [--cert CERT] [--key KEY] [--chain CHAIN] [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait] [--] <name>
+magento-cloud domain:add [--cert CERT] [--key KEY] [--chain CHAIN] [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] <name>
 ```
 
 
@@ -3180,7 +4256,7 @@ ID o URL del proyecto
 
 ### `--host`
 
-El nombre de host de la API del proyecto
+Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -3205,13 +4281,6 @@ Mostrar este mensaje de ayuda
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Aumentar la diversidad de los mensajes
@@ -3228,14 +4297,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -3246,7 +4343,7 @@ Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
 Eliminar un dominio del proyecto
 
 ```bash
-magento-cloud domain:delete [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait] [--] <name>
+magento-cloud domain:delete [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] <name>
 ```
 
 
@@ -3264,7 +4361,7 @@ ID o URL del proyecto
 
 ### `--host`
 
-El nombre de host de la API del proyecto
+Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -3289,13 +4386,6 @@ Mostrar este mensaje de ayuda
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Aumentar la diversidad de los mensajes
@@ -3312,14 +4402,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -3330,7 +4448,7 @@ Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
 Mostrar información detallada de un dominio
 
 ```bash
-magento-cloud domain:get [-P|--property PROPERTY] [--format FORMAT] [--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [-p|--project PROJECT] [--host HOST] [--] [<name>]
+magento-cloud domain:get [-P|--property PROPERTY] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [-p|--project PROJECT] [--] [<name>]
 ```
 
 
@@ -3347,14 +4465,14 @@ La propiedad de dominio que se va a ver
 
 ### `--format`
 
-El formato de salida (&quot;tabla&quot;, &quot;csv&quot;, &quot;tsv&quot; o &quot;sin formato&quot;)
+El formato de salida: tabla, csv, tsv o plain
 
 - Predeterminado: `table`
 - Requiere un valor
 
-### `--columns`
+### `--columns`, `-c`
 
-Columnas que se van a mostrar (lista separada por comas o valores múltiples)
+Columnas que se van a mostrar. Si una lista se proporciona como un valor único (p. ej. &quot;a,b,c&quot;) se dividirá por comas o espacios en blanco.
 
 - Predeterminado: `[]`
 - Requiere un valor
@@ -3381,20 +4499,13 @@ ID o URL del proyecto
 
 ### `--host`
 
-El nombre de host de la API del proyecto
+Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
 ### `--help`, `-h`
 
 Mostrar este mensaje de ayuda
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -3415,14 +4526,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -3433,7 +4572,7 @@ Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
 Obtener una lista de todos los dominios
 
 ```bash
-magento-cloud domains [--format FORMAT] [--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--host HOST]
+magento-cloud domains [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT]
 ```
 
 
@@ -3443,14 +4582,14 @@ domains
 
 ### `--format`
 
-El formato de salida (&quot;tabla&quot;, &quot;csv&quot;, &quot;tsv&quot; o &quot;sin formato&quot;)
+El formato de salida: tabla, csv, tsv o plain
 
 - Predeterminado: `table`
 - Requiere un valor
 
-### `--columns`
+### `--columns`, `-c`
 
-Columnas que se van a mostrar (lista separada por comas o valores múltiples)
+Columnas que se van a mostrar. Columnas disponibles: name*, ssl*, created_at*, update_at (* = columnas predeterminadas). El carácter &quot;+&quot; puede utilizarse como marcador de posición para las columnas predeterminadas. Si una lista se proporciona como un valor único (p. ej. &quot;a,b,c&quot;) se dividirá por comas o espacios en blanco.
 
 - Predeterminado: `[]`
 - Requiere un valor
@@ -3470,20 +4609,13 @@ ID o URL del proyecto
 
 ### `--host`
 
-El nombre de host de la API del proyecto
+Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
 ### `--help`, `-h`
 
 Mostrar este mensaje de ayuda
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -3504,14 +4636,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -3522,7 +4682,7 @@ Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
 Actualizar un dominio
 
 ```bash
-magento-cloud domain:update [--cert CERT] [--key KEY] [--chain CHAIN] [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait] [--] <name>
+magento-cloud domain:update [--cert CERT] [--key KEY] [--chain CHAIN] [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] <name>
 ```
 
 
@@ -3559,7 +4719,7 @@ ID o URL del proyecto
 
 ### `--host`
 
-El nombre de host de la API del proyecto
+Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -3584,13 +4744,6 @@ Mostrar este mensaje de ayuda
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Aumentar la diversidad de los mensajes
@@ -3607,14 +4760,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -3625,7 +4806,7 @@ Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
 Activar un entorno
 
 ```bash
-magento-cloud environment:activate [--parent PARENT] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<environment>]...
+magento-cloud environment:activate [--parent PARENT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<environment>]...
 ```
 
 
@@ -3651,7 +4832,7 @@ ID o URL del proyecto
 
 ### `--host`
 
-El nombre de host de la API del proyecto
+Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -3682,13 +4863,6 @@ Mostrar este mensaje de ayuda
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Aumentar la diversidad de los mensajes
@@ -3705,14 +4879,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -3723,7 +4925,7 @@ Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
 Ramificar un entorno
 
 ```bash
-magento-cloud branch [--title TITLE] [--type TYPE] [--force] [--no-clone-parent] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [-i|--identity-file IDENTITY-FILE] [--] [<id>] [<parent>]
+magento-cloud branch [--title TITLE] [--type TYPE] [--force] [--no-clone-parent] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [-i|--identity-file IDENTITY-FILE] [--] [<id>] [<parent>]
 ```
 
 
@@ -3776,7 +4978,7 @@ ID o URL del proyecto
 
 ### `--host`
 
-El nombre de host de la API del proyecto
+Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -3813,13 +5015,6 @@ Mostrar este mensaje de ayuda
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Aumentar la diversidad de los mensajes
@@ -3836,14 +5031,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -3881,13 +5104,6 @@ Mostrar este mensaje de ayuda
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Aumentar la diversidad de los mensajes
@@ -3904,14 +5120,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -3922,7 +5166,7 @@ Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
 Ejecute una solicitud cURL autenticada en la API de un entorno
 
 ```bash
-magento-cloud environment:curl [-X|--request REQUEST] [-d|--data DATA] [-i|--include] [-I|--head] [--disable-compression] [--enable-glob] [-f|--fail] [-H|--header HEADER] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--] [<path>]
+magento-cloud environment:curl [-X|--request REQUEST] [-d|--data DATA] [--json JSON] [-i|--include] [-I|--head] [--disable-compression] [--enable-glob] [-f|--fail] [-H|--header HEADER] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] [<path>]
 ```
 
 
@@ -3940,6 +5184,12 @@ El método de solicitud para utilizar
 ### `--data`, `-d`
 
 Datos que enviar
+
+- Requiere un valor
+
+### `--json`
+
+Datos JSON para enviar
 
 - Requiere un valor
 
@@ -3993,7 +5243,7 @@ ID o URL del proyecto
 
 ### `--host`
 
-El nombre de host de la API del proyecto
+Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -4006,13 +5256,6 @@ ID del entorno
 ### `--help`, `-h`
 
 Mostrar este mensaje de ayuda
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -4033,14 +5276,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -4048,10 +5319,10 @@ Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
 
 ## `environment:delete`
 
-Eliminar un entorno
+Eliminar uno o más entornos
 
 ```bash
-magento-cloud environment:delete [--delete-branch] [--no-delete-branch] [--inactive] [--merged] [--type TYPE] [--exclude EXCLUDE] [--exclude-type EXCLUDE-TYPE] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<environment>]...
+magento-cloud environment:delete [--delete-branch] [--no-delete-branch] [--type TYPE] [-t|--only-type ONLY-TYPE] [--exclude EXCLUDE] [--exclude-type EXCLUDE-TYPE] [--inactive] [--merged] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<environment>]...
 ```
 
 
@@ -4062,7 +5333,7 @@ environment:deactivate
 
 ### `environment`
 
-Los entornos que se van a eliminar. El carácter % puede utilizarse como comodín. Si se especifica un solo valor, se dividirá por comas o espacios en blanco.
+Los entornos que se van a eliminar. El carácter % puede utilizarse como comodín. Si una lista se proporciona como un valor único (p. ej. &quot;a,b,c&quot;) se dividirá por comas o espacios en blanco.
 
 - Predeterminado: `[]`
 
@@ -4070,52 +5341,59 @@ Los entornos que se van a eliminar. El carácter % puede utilizarse como comodí
 
 ### `--delete-branch`
 
-Eliminar las ramas de Git remotas
+Eliminar ramas de Git (entornos inactivos)
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no-delete-branch`
 
-No elimine las ramas de Git remotas
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--inactive`
-
-Eliminar todos los entornos inactivos
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--merged`
-
-Eliminar todos los entornos combinados
+No elimine las ramas Git (entornos inactivos)
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--type`
 
-Tipos de entorno de los que eliminar Si se especifica un valor único, se dividirá por comas o espacios en blanco.
+Eliminar todos los entornos de un tipo (adición a los demás seleccionados) Si una lista se proporciona como un solo valor (p. ej. &quot;a,b,c&quot;) se dividirá por comas o espacios en blanco.
+
+- Predeterminado: `[]`
+- Requiere un valor
+
+### `--only-type`, `-t`
+
+Eliminar solo los entornos de un tipo específico Si una lista se proporciona como un valor único (p. ej. &quot;a,b,c&quot;) se dividirá por comas o espacios en blanco.
 
 - Predeterminado: `[]`
 - Requiere un valor
 
 ### `--exclude`
 
-Entorno(s) que no se va a eliminar. El carácter % puede utilizarse como comodín. Si se especifica un solo valor, se dividirá por comas o espacios en blanco.
+Entorno(s) que no se va a eliminar. El carácter % puede utilizarse como comodín. Si una lista se proporciona como un valor único (p. ej. &quot;a,b,c&quot;) se dividirá por comas o espacios en blanco.
 
 - Predeterminado: `[]`
 - Requiere un valor
 
 ### `--exclude-type`
 
-Tipos de entorno de los que no se eliminarán Si se especifica un solo valor, se dividirán por comas o espacios en blanco.
+Tipos de entorno de los que no se elimina Si una lista se proporciona como un valor único (p. ej. &quot;a,b,c&quot;) se dividirá por comas o espacios en blanco.
 
 - Predeterminado: `[]`
 - Requiere un valor
+
+### `--inactive`
+
+Eliminar todos los entornos inactivos (añadir a los demás seleccionados)
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--merged`
+
+Eliminar todos los entornos combinados (añadir a los demás seleccionados)
+
+- Predeterminado: `false`
+- No acepta un valor
 
 ### `--project`, `-p`
 
@@ -4125,7 +5403,7 @@ ID o URL del proyecto
 
 ### `--host`
 
-El nombre de host de la API del proyecto
+Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -4156,13 +5434,6 @@ Mostrar este mensaje de ayuda
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Aumentar la diversidad de los mensajes
@@ -4179,14 +5450,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -4197,7 +5496,7 @@ Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
 Actualizar la configuración de acceso HTTP para un entorno
 
 ```bash
-magento-cloud httpaccess [--access ACCESS] [--auth AUTH] [--enabled ENABLED] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait]
+magento-cloud httpaccess [--access ACCESS] [--auth AUTH] [--enabled ENABLED] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait]
 ```
 
 
@@ -4233,7 +5532,7 @@ ID o URL del proyecto
 
 ### `--host`
 
-El nombre de host de la API del proyecto
+Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -4264,13 +5563,6 @@ Mostrar este mensaje de ayuda
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Aumentar la diversidad de los mensajes
@@ -4287,14 +5579,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -4305,7 +5625,7 @@ Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
 Leer o establecer propiedades para un entorno
 
 ```bash
-magento-cloud environment:info [--refresh] [--date-fmt DATE-FMT] [--format FORMAT] [--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<property>] [<value>]
+magento-cloud environment:info [--refresh] [--date-fmt DATE-FMT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<property>] [<value>]
 ```
 
 
@@ -4340,14 +5660,14 @@ El formato de fecha (como una cadena de formato de fecha PHP)
 
 ### `--format`
 
-El formato de salida (&quot;tabla&quot;, &quot;csv&quot;, &quot;tsv&quot; o &quot;sin formato&quot;)
+El formato de salida: tabla, csv, tsv o plain
 
 - Predeterminado: `table`
 - Requiere un valor
 
-### `--columns`
+### `--columns`, `-c`
 
-Columnas que se van a mostrar (lista separada por comas o valores múltiples)
+Columnas que se van a mostrar. Si una lista se proporciona como un valor único (p. ej. &quot;a,b,c&quot;) se dividirá por comas o espacios en blanco.
 
 - Predeterminado: `[]`
 - Requiere un valor
@@ -4367,7 +5687,7 @@ ID o URL del proyecto
 
 ### `--host`
 
-El nombre de host de la API del proyecto
+Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -4398,13 +5718,6 @@ Mostrar este mensaje de ayuda
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Aumentar la diversidad de los mensajes
@@ -4421,14 +5734,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -4439,7 +5780,7 @@ Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
 Inicialización de un entorno desde un repositorio público de Git
 
 ```bash
-magento-cloud environment:init [--profile PROFILE] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <url>
+magento-cloud environment:init [--profile PROFILE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <url>
 ```
 
 
@@ -4463,7 +5804,7 @@ ID o URL del proyecto
 
 ### `--host`
 
-El nombre de host de la API del proyecto
+Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -4494,13 +5835,6 @@ Mostrar este mensaje de ayuda
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Aumentar la diversidad de los mensajes
@@ -4517,14 +5851,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -4535,7 +5897,7 @@ Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
 Obtener una lista de entornos
 
 ```bash
-magento-cloud environment:list [-I|--no-inactive] [--pipe] [--refresh REFRESH] [--sort SORT] [--reverse] [--type TYPE] [--format FORMAT] [--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--host HOST]
+magento-cloud environment:list [-I|--no-inactive] [--pipe] [--refresh REFRESH] [--sort SORT] [--reverse] [--type TYPE] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT]
 ```
 
 
@@ -4585,21 +5947,21 @@ Ordenar en orden inverso (descendente)
 
 ### `--type`
 
-Filtre la lista por tipos de entorno. Si se especifica un solo valor, se dividirá por comas o espacios en blanco.
+Filtre la lista por tipos de entorno. Si una lista se proporciona como un valor único (p. ej. &quot;a,b,c&quot;) se dividirá por comas o espacios en blanco.
 
 - Predeterminado: `[]`
 - Requiere un valor
 
 ### `--format`
 
-El formato de salida (&quot;tabla&quot;, &quot;csv&quot;, &quot;tsv&quot; o &quot;sin formato&quot;)
+El formato de salida: tabla, csv, tsv o plain
 
 - Predeterminado: `table`
 - Requiere un valor
 
-### `--columns`
+### `--columns`, `-c`
 
-Columnas que se van a mostrar (lista separada por comas o valores múltiples)
+Columnas que se van a mostrar. Columnas disponibles: id*, title*, status*, type*, created, machine_name, update (* = columnas predeterminadas). El carácter &quot;+&quot; puede utilizarse como marcador de posición para las columnas predeterminadas. Si una lista se proporciona como un valor único (p. ej. &quot;a,b,c&quot;) se dividirá por comas o espacios en blanco.
 
 - Predeterminado: `[]`
 - Requiere un valor
@@ -4619,20 +5981,13 @@ ID o URL del proyecto
 
 ### `--host`
 
-El nombre de host de la API del proyecto
+Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
 ### `--help`, `-h`
 
 Mostrar este mensaje de ayuda
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -4653,14 +6008,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -4671,7 +6054,7 @@ Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
 Leer los registros de un entorno
 
 ```bash
-magento-cloud log [--lines LINES] [--tail] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [--] [<type>]
+magento-cloud log [--lines LINES] [--tail] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE] [--] [<type>]
 ```
 
 
@@ -4712,7 +6095,7 @@ ID o URL del proyecto
 
 ### `--host`
 
-El nombre de host de la API del proyecto
+Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -4734,16 +6117,15 @@ Un nombre de trabajador
 
 - Requiere un valor
 
+### `--instance`, `-I`
+
+Un ID de instancia
+
+- Requiere un valor
+
 ### `--help`, `-h`
 
 Mostrar este mensaje de ayuda
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -4764,14 +6146,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -4782,7 +6192,7 @@ Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
 Combinar un entorno
 
 ```bash
-magento-cloud merge [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<environment>]
+magento-cloud merge [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<environment>]
 ```
 
 
@@ -4804,7 +6214,7 @@ ID o URL del proyecto
 
 ### `--host`
 
-El nombre de host de la API del proyecto
+Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -4835,13 +6245,6 @@ Mostrar este mensaje de ayuda
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Aumentar la diversidad de los mensajes
@@ -4858,14 +6261,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -4876,7 +6307,7 @@ Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
 Inserción de código en un entorno
 
 ```bash
-magento-cloud push [--target TARGET] [-f|--force] [--force-with-lease] [-u|--set-upstream] [--activate] [--branch] [--parent PARENT] [--type TYPE] [--no-clone-parent] [-W|--no-wait] [--wait] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-i|--identity-file IDENTITY-FILE] [--] [<source>]
+magento-cloud push [--target TARGET] [-f|--force] [--force-with-lease] [-u|--set-upstream] [--activate] [--parent PARENT] [--type TYPE] [--no-clone-parent] [-W|--no-wait] [--wait] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-i|--identity-file IDENTITY-FILE] [--] [<source>]
 ```
 
 
@@ -4974,7 +6405,7 @@ ID o URL del proyecto
 
 ### `--host`
 
-El nombre de host de la API del proyecto
+Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -4997,13 +6428,6 @@ Mostrar este mensaje de ayuda
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Aumentar la diversidad de los mensajes
@@ -5020,14 +6444,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -5038,7 +6490,7 @@ Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
 Reimplementar un entorno
 
 ```bash
-magento-cloud redeploy [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait]
+magento-cloud redeploy [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait]
 ```
 
 
@@ -5054,7 +6506,7 @@ ID o URL del proyecto
 
 ### `--host`
 
-El nombre de host de la API del proyecto
+Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -5085,13 +6537,6 @@ Mostrar este mensaje de ayuda
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Aumentar la diversidad de los mensajes
@@ -5108,14 +6553,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -5126,7 +6599,7 @@ Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
 Mostrar las relaciones de un entorno
 
 ```bash
-magento-cloud relationships [-P|--property PROPERTY] [--refresh] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [-i|--identity-file IDENTITY-FILE] [--] [<environment>]
+magento-cloud relationships [-P|--property PROPERTY] [--refresh] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [-i|--identity-file IDENTITY-FILE] [--] [<environment>]
 ```
 
 
@@ -5161,7 +6634,7 @@ ID o URL del proyecto
 
 ### `--host`
 
-El nombre de host de la API del proyecto
+Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -5190,13 +6663,6 @@ Mostrar este mensaje de ayuda
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Aumentar la diversidad de los mensajes
@@ -5213,14 +6679,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -5231,7 +6725,7 @@ Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
 Copiar archivos a y desde el entorno actual mediante scp
 
 ```bash
-magento-cloud scp [-r|--recursive] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-i|--identity-file IDENTITY-FILE] [--] [<files>]...
+magento-cloud scp [-r|--recursive] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE] [-i|--identity-file IDENTITY-FILE] [--] [<files>]...
 ```
 
 
@@ -5263,7 +6757,7 @@ ID o URL del proyecto
 
 ### `--host`
 
-El nombre de host de la API del proyecto
+Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -5285,6 +6779,12 @@ Un nombre de trabajador
 
 - Requiere un valor
 
+### `--instance`, `-I`
+
+Un ID de instancia
+
+- Requiere un valor
+
 ### `--identity-file`, `-i`
 
 Una identidad SSH (clave privada) para usar
@@ -5294,13 +6794,6 @@ Una identidad SSH (clave privada) para usar
 ### `--help`, `-h`
 
 Mostrar este mensaje de ayuda
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -5321,14 +6814,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -5361,13 +6882,6 @@ Mostrar este mensaje de ayuda
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Aumentar la diversidad de los mensajes
@@ -5384,14 +6898,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -5402,7 +6944,7 @@ Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
 SSH al entorno actual
 
 ```bash
-magento-cloud ssh [--pipe] [--all] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-i|--identity-file IDENTITY-FILE] [--] [<cmd>]...
+magento-cloud ssh [--pipe] [--all] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE] [-i|--identity-file IDENTITY-FILE] [--] [<cmd>]...
 ```
 
 
@@ -5441,7 +6983,7 @@ ID o URL del proyecto
 
 ### `--host`
 
-El nombre de host de la API del proyecto
+Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -5463,6 +7005,12 @@ Un nombre de trabajador
 
 - Requiere un valor
 
+### `--instance`, `-I`
+
+Un ID de instancia
+
+- Requiere un valor
+
 ### `--identity-file`, `-i`
 
 Una identidad SSH (clave privada) para usar
@@ -5472,13 +7020,6 @@ Una identidad SSH (clave privada) para usar
 ### `--help`, `-h`
 
 Mostrar este mensaje de ayuda
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -5499,14 +7040,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -5517,7 +7086,7 @@ Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
 Sincronizar el código o los datos de un entorno de su elemento principal
 
 ```bash
-magento-cloud sync [--rebase] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<synchronize>]...
+magento-cloud sync [--rebase] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<synchronize>]...
 ```
 
 
@@ -5549,7 +7118,7 @@ ID o URL del proyecto
 
 ### `--host`
 
-El nombre de host de la API del proyecto
+Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -5580,13 +7149,6 @@ Mostrar este mensaje de ayuda
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Aumentar la diversidad de los mensajes
@@ -5603,14 +7165,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -5621,7 +7211,7 @@ Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
 Obtener las direcciones URL públicas de un entorno
 
 ```bash
-magento-cloud url [-1|--primary] [--browser BROWSER] [--pipe] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT]
+magento-cloud url [-1|--primary] [--browser BROWSER] [--pipe] [-p|--project PROJECT] [-e|--environment ENVIRONMENT]
 ```
 
 
@@ -5657,7 +7247,7 @@ ID o URL del proyecto
 
 ### `--host`
 
-El nombre de host de la API del proyecto
+Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -5670,13 +7260,6 @@ ID del entorno
 ### `--help`, `-h`
 
 Mostrar este mensaje de ayuda
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -5697,14 +7280,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -5715,7 +7326,7 @@ Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
 Abra un túnel para Xdebug en el entorno
 
 ```bash
-magento-cloud xdebug [--port PORT] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-i|--identity-file IDENTITY-FILE]
+magento-cloud xdebug [--port PORT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE] [-i|--identity-file IDENTITY-FILE]
 ```
 
 
@@ -5738,7 +7349,7 @@ ID o URL del proyecto
 
 ### `--host`
 
-El nombre de host de la API del proyecto
+Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -5760,6 +7371,12 @@ Un nombre de trabajador
 
 - Requiere un valor
 
+### `--instance`, `-I`
+
+Un ID de instancia
+
+- Requiere un valor
+
 ### `--identity-file`, `-i`
 
 Una identidad SSH (clave privada) para usar
@@ -5769,13 +7386,6 @@ Una identidad SSH (clave privada) para usar
 ### `--help`, `-h`
 
 Mostrar este mensaje de ayuda
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -5796,14 +7406,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -5814,7 +7452,7 @@ Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
 Ver información detallada sobre una sola actividad de integración
 
 ```bash
-magento-cloud integration:activity:get [-P|--property PROPERTY] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--format FORMAT] [--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [--] [<integration>] [<activity>]
+magento-cloud integration:activity:get [-P|--property PROPERTY] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [--] [<integration>] [<activity>]
 ```
 
 
@@ -5842,7 +7480,7 @@ ID o URL del proyecto
 
 ### `--host`
 
-El nombre de host de la API del proyecto
+Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -5854,14 +7492,14 @@ El nombre de host de la API del proyecto
 
 ### `--format`
 
-El formato de salida (&quot;tabla&quot;, &quot;csv&quot;, &quot;tsv&quot; o &quot;sin formato&quot;)
+El formato de salida: tabla, csv, tsv o plain
 
 - Predeterminado: `table`
 - Requiere un valor
 
-### `--columns`
+### `--columns`, `-c`
 
-Columnas que se van a mostrar (lista separada por comas o valores múltiples)
+Columnas que se van a mostrar. Si una lista se proporciona como un valor único (p. ej. &quot;a,b,c&quot;) se dividirá por comas o espacios en blanco.
 
 - Predeterminado: `[]`
 - Requiere un valor
@@ -5887,13 +7525,6 @@ Mostrar este mensaje de ayuda
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Aumentar la diversidad de los mensajes
@@ -5910,14 +7541,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -5928,7 +7587,7 @@ Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
 Obtener una lista de actividades para una integración
 
 ```bash
-magento-cloud i:act [--type TYPE] [-x|--exclude-type EXCLUDE-TYPE] [--limit LIMIT] [--start START] [--state STATE] [--result RESULT] [--format FORMAT] [--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--] [<id>]
+magento-cloud i:act [--type TYPE] [-x|--exclude-type EXCLUDE-TYPE] [--limit LIMIT] [--start START] [--state STATE] [--result RESULT] [-i|--incomplete] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] [<id>]
 ```
 
 
@@ -5949,14 +7608,14 @@ Un ID de integración. Deje en blanco para elegir de una lista.
 
 ### `--type`
 
-Filtrar actividades por tipo. Si se especifica un solo valor, se dividirá por comas o espacios en blanco.
+Filtrar actividades por tipo. Si una lista se proporciona como un valor único (p. ej. &quot;a,b,c&quot;) se dividirá por comas o espacios en blanco.
 
 - Predeterminado: `[]`
 - Requiere un valor
 
 ### `--exclude-type`, `-x`
 
-Excluir actividades por tipo. Si se especifica un solo valor, se dividirá por comas o espacios en blanco.
+Excluir actividades por tipo. Si una lista se proporciona como un valor único (p. ej. &quot;a,b,c&quot;) se dividirá por comas o espacios en blanco. El carácter % puede utilizarse como comodín para excluir tipos.
 
 - Predeterminado: `[]`
 - Requiere un valor
@@ -5976,7 +7635,7 @@ Solo se enumerarán las actividades creadas antes de esta fecha
 
 ### `--state`
 
-Filtrar actividades por estado. Si se especifica un solo valor, se dividirá por comas o espacios en blanco.
+Filtrar actividades por estado. Si una lista se proporciona como un valor único (p. ej. &quot;a,b,c&quot;) se dividirá por comas o espacios en blanco.
 
 - Predeterminado: `[]`
 - Requiere un valor
@@ -5987,16 +7646,23 @@ Filtrar actividades por resultado
 
 - Requiere un valor
 
+### `--incomplete`, `-i`
+
+Enumerar solo actividades incompletas
+
+- Predeterminado: `false`
+- No acepta un valor
+
 ### `--format`
 
-El formato de salida (&quot;tabla&quot;, &quot;csv&quot;, &quot;tsv&quot; o &quot;sin formato&quot;)
+El formato de salida: tabla, csv, tsv o plain
 
 - Predeterminado: `table`
 - Requiere un valor
 
-### `--columns`
+### `--columns`, `-c`
 
-Columnas que se van a mostrar (lista separada por comas o valores múltiples)
+Columnas que se van a mostrar. Columnas disponibles: id*, created*, description*, type*, state*, result*, completed (* = columnas predeterminadas). El carácter &quot;+&quot; puede utilizarse como marcador de posición para las columnas predeterminadas. Si una lista se proporciona como un valor único (p. ej. &quot;a,b,c&quot;) se dividirá por comas o espacios en blanco.
 
 - Predeterminado: `[]`
 - Requiere un valor
@@ -6023,7 +7689,7 @@ ID o URL del proyecto
 
 ### `--host`
 
-El nombre de host de la API del proyecto
+Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -6036,13 +7702,6 @@ El nombre de host de la API del proyecto
 ### `--help`, `-h`
 
 Mostrar este mensaje de ayuda
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -6063,14 +7722,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -6081,7 +7768,7 @@ Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
 Mostrar el registro de una actividad de integración
 
 ```bash
-magento-cloud integration:activity:log [-t|--timestamps] [--date-fmt DATE-FMT] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--] [<integration>] [<activity>]
+magento-cloud integration:activity:log [-t|--timestamps] [--date-fmt DATE-FMT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] [<integration>] [<activity>]
 ```
 
 
@@ -6117,7 +7804,7 @@ ID o URL del proyecto
 
 ### `--host`
 
-El nombre de host de la API del proyecto
+Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -6134,13 +7821,6 @@ Mostrar este mensaje de ayuda
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Aumentar la diversidad de los mensajes
@@ -6157,14 +7837,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -6175,12 +7883,12 @@ Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
 Agregar una integración al proyecto
 
 ```bash
-magento-cloud integration:add [--type TYPE] [--base-url BASE-URL] [--username USERNAME] [--token TOKEN] [--key KEY] [--secret SECRET] [--server-project SERVER-PROJECT] [--repository REPOSITORY] [--build-merge-requests BUILD-MERGE-REQUESTS] [--build-pull-requests BUILD-PULL-REQUESTS] [--build-draft-pull-requests BUILD-DRAFT-PULL-REQUESTS] [--build-pull-requests-post-merge BUILD-PULL-REQUESTS-POST-MERGE] [--build-wip-merge-requests BUILD-WIP-MERGE-REQUESTS] [--merge-requests-clone-parent-data MERGE-REQUESTS-CLONE-PARENT-DATA] [--pull-requests-clone-parent-data PULL-REQUESTS-CLONE-PARENT-DATA] [--resync-pull-requests RESYNC-PULL-REQUESTS] [--fetch-branches FETCH-BRANCHES] [--prune-branches PRUNE-BRANCHES] [--url URL] [--shared-key SHARED-KEY] [--file FILE] [--events EVENTS] [--states STATES] [--environments ENVIRONMENTS] [--excluded-environments EXCLUDED-ENVIRONMENTS] [--from-address FROM-ADDRESS] [--recipients RECIPIENTS] [--channel CHANNEL] [--routing-key ROUTING-KEY] [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait]
+magento-cloud integration:add [--type TYPE] [--base-url BASE-URL] [--username USERNAME] [--token TOKEN] [--key KEY] [--secret SECRET] [--license-key LICENSE-KEY] [--server-project SERVER-PROJECT] [--repository REPOSITORY] [--build-merge-requests BUILD-MERGE-REQUESTS] [--build-pull-requests BUILD-PULL-REQUESTS] [--build-draft-pull-requests BUILD-DRAFT-PULL-REQUESTS] [--build-pull-requests-post-merge BUILD-PULL-REQUESTS-POST-MERGE] [--build-wip-merge-requests BUILD-WIP-MERGE-REQUESTS] [--merge-requests-clone-parent-data MERGE-REQUESTS-CLONE-PARENT-DATA] [--pull-requests-clone-parent-data PULL-REQUESTS-CLONE-PARENT-DATA] [--resync-pull-requests RESYNC-PULL-REQUESTS] [--fetch-branches FETCH-BRANCHES] [--prune-branches PRUNE-BRANCHES] [--url URL] [--shared-key SHARED-KEY] [--file FILE] [--events EVENTS] [--states STATES] [--environments ENVIRONMENTS] [--excluded-environments EXCLUDED-ENVIRONMENTS] [--from-address FROM-ADDRESS] [--recipients RECIPIENTS] [--channel CHANNEL] [--routing-key ROUTING-KEY] [--category CATEGORY] [--index INDEX] [--sourcetype SOURCETYPE] [--protocol PROTOCOL] [--syslog-host SYSLOG-HOST] [--syslog-port SYSLOG-PORT] [--facility FACILITY] [--message-format MESSAGE-FORMAT] [--auth-mode AUTH-MODE] [--auth-token AUTH-TOKEN] [--verify-tls VERIFY-TLS] [-p|--project PROJECT] [-W|--no-wait] [--wait]
 ```
 
 ### `--type`
 
-El tipo de integración (&quot;bitbucket&quot;, &quot;bitbucket_server&quot;, &quot;github&quot;, &quot;gitlab&quot;, &quot;weblock&quot;, &quot;health.email&quot;, &quot;health.pagerfee&quot;, &quot;health.slack&quot;, &quot;health.weblock&quot;, &quot;script&quot;)
+El tipo de integración (&#39;bitbucket&#39;, &#39;bitbucket_server&#39;, &#39;github&#39;, &#39;gitlab&#39;, &#39;weblock&#39;, &#39;health.email&#39;, &#39;health.pagerty&#39;, &#39;health.slack&#39;, &#39;health.weblock&#39;, &#39;script&#39;, &#39;newrelic&#39;, &#39;splunk&#39;, &#39;sumologic&#39;, &#39;syslog&#39;)
 
 - Requiere un valor
 
@@ -6198,7 +7906,7 @@ El nombre de usuario de Bitbucket Server
 
 ### `--token`
 
-Un token de acceso para la integración
+Autenticación o token de acceso para la integración
 
 - Requiere un valor
 
@@ -6211,6 +7919,12 @@ Una clave de consumidor de Bitbucket OAuth
 ### `--secret`
 
 Secreto de consumidor de Bitbucket OAuth
+
+- Requiere un valor
+
+### `--license-key`
+
+La clave de licencia de New Relic Logs
 
 - Requiere un valor
 
@@ -6298,7 +8012,7 @@ Eliminar ramas que no existen en el remoto
 
 ### `--url`
 
-Weblock: una URL para recibir datos JSON
+El extremo de URL o API para la integración
 
 - Requiere un valor
 
@@ -6367,6 +8081,77 @@ La clave de enrutamiento PagerDuty
 
 - Requiere un valor
 
+### `--category`
+
+La categoría Lógica de sumo, utilizada para filtrar
+
+- Requiere un valor
+
+### `--index`
+
+Índice de Splunk
+
+- Requiere un valor
+
+### `--sourcetype`
+
+Tipo de origen del evento Splunk
+
+- Requiere un valor
+
+### `--protocol`
+
+Protocolo de transporte de Syslog (&#39;tcp&#39;, &#39;udp&#39;, &#39;tls&#39;)
+
+- Predeterminado: `tls`
+- Requiere un valor
+
+### `--syslog-host`
+
+Host del relé/recolector de Syslog
+
+- Requiere un valor
+
+### `--syslog-port`
+
+Puerto del relé/recolector Syslog
+
+- Requiere un valor
+
+### `--facility`
+
+Instalación de Syslog
+
+- Predeterminado: `1`
+- Requiere un valor
+
+### `--message-format`
+
+Formato de mensaje Syslog (&#39;rfc3164&#39; o &#39;rfc5424&#39;)
+
+- Predeterminado: `rfc5424`
+- Requiere un valor
+
+### `--auth-mode`
+
+Modo de autenticación (&quot;prefix&quot; o &quot;structured_data&quot;)
+
+- Predeterminado: `prefix`
+- Requiere un valor
+
+### `--auth-token`
+
+Token de autenticación
+
+- Requiere un valor
+
+### `--verify-tls`
+
+Si la verificación de certificados HTTPS debe estar habilitada (recomendado)
+
+- Predeterminado: `true`
+- Requiere un valor
+
 ### `--project`, `-p`
 
 ID o URL del proyecto
@@ -6375,7 +8160,7 @@ ID o URL del proyecto
 
 ### `--host`
 
-El nombre de host de la API del proyecto
+Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -6400,13 +8185,6 @@ Mostrar este mensaje de ayuda
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Aumentar la diversidad de los mensajes
@@ -6423,14 +8201,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -6441,7 +8247,7 @@ Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
 Eliminar una integración de un proyecto
 
 ```bash
-magento-cloud integration:delete [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait] [--] [<id>]
+magento-cloud integration:delete [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] [<id>]
 ```
 
 
@@ -6458,7 +8264,7 @@ ID o URL del proyecto
 
 ### `--host`
 
-El nombre de host de la API del proyecto
+Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -6483,13 +8289,6 @@ Mostrar este mensaje de ayuda
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Aumentar la diversidad de los mensajes
@@ -6506,14 +8305,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -6524,7 +8351,7 @@ Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
 Ver detalles de una integración
 
 ```bash
-magento-cloud integration:get [-P|--property [PROPERTY]] [--format FORMAT] [--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--host HOST] [--] [<id>]
+magento-cloud integration:get [-P|--property [PROPERTY]] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--] [<id>]
 ```
 
 
@@ -6541,14 +8368,14 @@ La propiedad de integración que desea ver
 
 ### `--format`
 
-El formato de salida (&quot;tabla&quot;, &quot;csv&quot;, &quot;tsv&quot; o &quot;sin formato&quot;)
+El formato de salida: tabla, csv, tsv o plain
 
 - Predeterminado: `table`
 - Requiere un valor
 
-### `--columns`
+### `--columns`, `-c`
 
-Columnas que se van a mostrar (lista separada por comas o valores múltiples)
+Columnas que se van a mostrar. Si una lista se proporciona como un valor único (p. ej. &quot;a,b,c&quot;) se dividirá por comas o espacios en blanco.
 
 - Predeterminado: `[]`
 - Requiere un valor
@@ -6568,20 +8395,13 @@ ID o URL del proyecto
 
 ### `--host`
 
-El nombre de host de la API del proyecto
+Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
 ### `--help`, `-h`
 
 Mostrar este mensaje de ayuda
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -6602,14 +8422,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -6620,7 +8468,7 @@ Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
 Ver una lista de integración de proyectos
 
 ```bash
-magento-cloud integrations [--format FORMAT] [--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--host HOST]
+magento-cloud integrations [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT]
 ```
 
 
@@ -6630,14 +8478,14 @@ integrations
 
 ### `--format`
 
-El formato de salida (&quot;tabla&quot;, &quot;csv&quot;, &quot;tsv&quot; o &quot;sin formato&quot;)
+El formato de salida: tabla, csv, tsv o plain
 
 - Predeterminado: `table`
 - Requiere un valor
 
-### `--columns`
+### `--columns`, `-c`
 
-Columnas que se van a mostrar (lista separada por comas o valores múltiples)
+Columnas que se van a mostrar. Columnas disponibles: id, resumen, tipo. Si una lista se proporciona como un valor único (p. ej. &quot;a,b,c&quot;) se dividirá por comas o espacios en blanco.
 
 - Predeterminado: `[]`
 - Requiere un valor
@@ -6657,20 +8505,13 @@ ID o URL del proyecto
 
 ### `--host`
 
-El nombre de host de la API del proyecto
+Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
 ### `--help`, `-h`
 
 Mostrar este mensaje de ayuda
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -6691,14 +8532,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -6709,7 +8578,7 @@ Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
 Actualización de una integración
 
 ```bash
-magento-cloud integration:update [--type TYPE] [--base-url BASE-URL] [--username USERNAME] [--token TOKEN] [--key KEY] [--secret SECRET] [--server-project SERVER-PROJECT] [--repository REPOSITORY] [--build-merge-requests BUILD-MERGE-REQUESTS] [--build-pull-requests BUILD-PULL-REQUESTS] [--build-draft-pull-requests BUILD-DRAFT-PULL-REQUESTS] [--build-pull-requests-post-merge BUILD-PULL-REQUESTS-POST-MERGE] [--build-wip-merge-requests BUILD-WIP-MERGE-REQUESTS] [--merge-requests-clone-parent-data MERGE-REQUESTS-CLONE-PARENT-DATA] [--pull-requests-clone-parent-data PULL-REQUESTS-CLONE-PARENT-DATA] [--resync-pull-requests RESYNC-PULL-REQUESTS] [--fetch-branches FETCH-BRANCHES] [--prune-branches PRUNE-BRANCHES] [--url URL] [--shared-key SHARED-KEY] [--file FILE] [--events EVENTS] [--states STATES] [--environments ENVIRONMENTS] [--excluded-environments EXCLUDED-ENVIRONMENTS] [--from-address FROM-ADDRESS] [--recipients RECIPIENTS] [--channel CHANNEL] [--routing-key ROUTING-KEY] [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait] [--] [<id>]
+magento-cloud integration:update [--type TYPE] [--base-url BASE-URL] [--username USERNAME] [--token TOKEN] [--key KEY] [--secret SECRET] [--license-key LICENSE-KEY] [--server-project SERVER-PROJECT] [--repository REPOSITORY] [--build-merge-requests BUILD-MERGE-REQUESTS] [--build-pull-requests BUILD-PULL-REQUESTS] [--build-draft-pull-requests BUILD-DRAFT-PULL-REQUESTS] [--build-pull-requests-post-merge BUILD-PULL-REQUESTS-POST-MERGE] [--build-wip-merge-requests BUILD-WIP-MERGE-REQUESTS] [--merge-requests-clone-parent-data MERGE-REQUESTS-CLONE-PARENT-DATA] [--pull-requests-clone-parent-data PULL-REQUESTS-CLONE-PARENT-DATA] [--resync-pull-requests RESYNC-PULL-REQUESTS] [--fetch-branches FETCH-BRANCHES] [--prune-branches PRUNE-BRANCHES] [--url URL] [--shared-key SHARED-KEY] [--file FILE] [--events EVENTS] [--states STATES] [--environments ENVIRONMENTS] [--excluded-environments EXCLUDED-ENVIRONMENTS] [--from-address FROM-ADDRESS] [--recipients RECIPIENTS] [--channel CHANNEL] [--routing-key ROUTING-KEY] [--category CATEGORY] [--index INDEX] [--sourcetype SOURCETYPE] [--protocol PROTOCOL] [--syslog-host SYSLOG-HOST] [--syslog-port SYSLOG-PORT] [--facility FACILITY] [--message-format MESSAGE-FORMAT] [--auth-mode AUTH-MODE] [--auth-token AUTH-TOKEN] [--verify-tls VERIFY-TLS] [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] [<id>]
 ```
 
 
@@ -6720,7 +8589,7 @@ El ID de la integración que se va a actualizar
 
 ### `--type`
 
-El tipo de integración (&quot;bitbucket&quot;, &quot;bitbucket_server&quot;, &quot;github&quot;, &quot;gitlab&quot;, &quot;weblock&quot;, &quot;health.email&quot;, &quot;health.pagerfee&quot;, &quot;health.slack&quot;, &quot;health.weblock&quot;, &quot;script&quot;)
+El tipo de integración (&#39;bitbucket&#39;, &#39;bitbucket_server&#39;, &#39;github&#39;, &#39;gitlab&#39;, &#39;weblock&#39;, &#39;health.email&#39;, &#39;health.pagerty&#39;, &#39;health.slack&#39;, &#39;health.weblock&#39;, &#39;script&#39;, &#39;newrelic&#39;, &#39;splunk&#39;, &#39;sumologic&#39;, &#39;syslog&#39;)
 
 - Requiere un valor
 
@@ -6738,7 +8607,7 @@ El nombre de usuario de Bitbucket Server
 
 ### `--token`
 
-Un token de acceso para la integración
+Autenticación o token de acceso para la integración
 
 - Requiere un valor
 
@@ -6751,6 +8620,12 @@ Una clave de consumidor de Bitbucket OAuth
 ### `--secret`
 
 Secreto de consumidor de Bitbucket OAuth
+
+- Requiere un valor
+
+### `--license-key`
+
+La clave de licencia de New Relic Logs
 
 - Requiere un valor
 
@@ -6838,7 +8713,7 @@ Eliminar ramas que no existen en el remoto
 
 ### `--url`
 
-Weblock: una URL para recibir datos JSON
+El extremo de URL o API para la integración
 
 - Requiere un valor
 
@@ -6907,6 +8782,77 @@ La clave de enrutamiento PagerDuty
 
 - Requiere un valor
 
+### `--category`
+
+La categoría Lógica de sumo, utilizada para filtrar
+
+- Requiere un valor
+
+### `--index`
+
+Índice de Splunk
+
+- Requiere un valor
+
+### `--sourcetype`
+
+Tipo de origen del evento Splunk
+
+- Requiere un valor
+
+### `--protocol`
+
+Protocolo de transporte de Syslog (&#39;tcp&#39;, &#39;udp&#39;, &#39;tls&#39;)
+
+- Predeterminado: `tls`
+- Requiere un valor
+
+### `--syslog-host`
+
+Host del relé/recolector de Syslog
+
+- Requiere un valor
+
+### `--syslog-port`
+
+Puerto del relé/recolector Syslog
+
+- Requiere un valor
+
+### `--facility`
+
+Instalación de Syslog
+
+- Predeterminado: `1`
+- Requiere un valor
+
+### `--message-format`
+
+Formato de mensaje Syslog (&#39;rfc3164&#39; o &#39;rfc5424&#39;)
+
+- Predeterminado: `rfc5424`
+- Requiere un valor
+
+### `--auth-mode`
+
+Modo de autenticación (&quot;prefix&quot; o &quot;structured_data&quot;)
+
+- Predeterminado: `prefix`
+- Requiere un valor
+
+### `--auth-token`
+
+Token de autenticación
+
+- Requiere un valor
+
+### `--verify-tls`
+
+Si la verificación de certificados HTTPS debe estar habilitada (recomendado)
+
+- Predeterminado: `true`
+- Requiere un valor
+
 ### `--project`, `-p`
 
 ID o URL del proyecto
@@ -6915,7 +8861,7 @@ ID o URL del proyecto
 
 ### `--host`
 
-El nombre de host de la API del proyecto
+Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -6940,13 +8886,6 @@ Mostrar este mensaje de ayuda
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Aumentar la diversidad de los mensajes
@@ -6963,14 +8902,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -6981,7 +8948,7 @@ Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
 Validación de una integración existente
 
 ```bash
-magento-cloud integration:validate [-p|--project PROJECT] [--host HOST] [--] [<id>]
+magento-cloud integration:validate [-p|--project PROJECT] [--] [<id>]
 ```
 
 
@@ -6998,20 +8965,13 @@ ID o URL del proyecto
 
 ### `--host`
 
-El nombre de host de la API del proyecto
+Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
 ### `--help`, `-h`
 
 Mostrar este mensaje de ayuda
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -7032,14 +8992,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -7177,13 +9165,6 @@ Mostrar este mensaje de ayuda
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Aumentar la diversidad de los mensajes
@@ -7200,14 +9181,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -7253,13 +9262,6 @@ Mostrar este mensaje de ayuda
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Aumentar la diversidad de los mensajes
@@ -7276,14 +9278,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -7315,9 +9345,169 @@ Mostrar este mensaje de ayuda
 - Predeterminado: `false`
 - No acepta un valor
 
+### `--verbose`, `-v|-vv|-vvv`
+
+Aumentar la diversidad de los mensajes
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--version`, `-V`
+
+Mostrar esta versión de la aplicación
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--yes`, `-y`
+
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no`, `-n`
+
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
 ### `--quiet`, `-q`
 
 No mostrar ningún mensaje
+
+- Predeterminado: `false`
+- No acepta un valor
+
+
+## `metrics:disk-usage`
+
+Mostrar el uso del disco en un servicio
+
+```bash
+magento-cloud disk [-s|--service SERVICE] [--type TYPE] [-r|--range RANGE] [-i|--interval INTERVAL] [--to TO] [-B|--bytes] [-1|--latest] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT]
+```
+
+
+```bash
+disk
+```
+
+### `--service`, `-s`
+
+El nombre del servicio
+
+- Requiere un valor
+
+### `--type`
+
+El tipo de servicio (si no se proporciona el nombre del servicio), por ejemplo mysql, pgsql, mongodb, etc. No es necesaria la versión de tipo .
+
+- Requiere un valor
+
+### `--range`, `-r`
+
+Intervalo de tiempo. Las métricas se cargarán durante esta duración hasta la hora de finalización (—to). Puede especificar unidades: horas (h), minutos (m) o segundos (s). Mínimo &lt;comment>5 m&lt;/comment>, máximo &lt;comment>8h&lt;/comment> o más (según el proyecto), predeterminado &lt;comment>10 m&lt;/comment>.
+
+- Requiere un valor
+
+### `--interval`, `-i`
+
+El intervalo de tiempo. El valor predeterminado es una división del intervalo. Puede especificar unidades: horas (h), minutos (m) o segundos (s). Mínimo &lt;comment>1 m&lt;/comment>, máximo &lt;comment>1h&lt;/comment>.
+
+- Requiere un valor
+
+### `--to`
+
+La hora final. El valor predeterminado es ahora.
+
+- Requiere un valor
+
+### `--bytes`, `-B`
+
+Mostrar tamaños en bytes
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--latest`, `-1`
+
+Mostrar solo el último punto de datos único
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--project`, `-p`
+
+ID o URL del proyecto
+
+- Requiere un valor
+
+### `--host`
+
+Opción obsoleta, ya no se utiliza
+
+- Requiere un valor
+
+### `--environment`, `-e`
+
+ID del entorno
+
+- Requiere un valor
+
+### `--format`
+
+El formato de salida: tabla, csv, tsv o plain
+
+- Predeterminado: `table`
+- Requiere un valor
+
+### `--columns`, `-c`
+
+Columnas que se van a mostrar. Columnas disponibles: timestamp*, used*, limit*, percent*, percent*, ipercent*, ilimit, range, iused (* = columnas predeterminadas). El carácter &quot;+&quot; puede utilizarse como marcador de posición para las columnas predeterminadas. Si una lista se proporciona como un valor único (p. ej. &quot;a,b,c&quot;) se dividirá por comas o espacios en blanco.
+
+- Predeterminado: `[]`
+- Requiere un valor
+
+### `--no-header`
+
+No mostrar el encabezado de tabla
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--date-fmt`
+
+El formato de fecha (como una cadena de formato de fecha PHP)
+
+- Predeterminado: `c`
+- Requiere un valor
+
+### `--help`, `-h`
+
+Mostrar este mensaje de ayuda
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -7338,14 +9528,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -7356,7 +9574,7 @@ Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
 Descargar archivos de un montaje utilizando rsync
 
 ```bash
-magento-cloud mount:download [-a|--all] [-m|--mount MOUNT] [--target TARGET] [--source-path] [--delete] [--exclude EXCLUDE] [--include INCLUDE] [--refresh] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-i|--identity-file IDENTITY-FILE]
+magento-cloud mount:download [-a|--all] [-m|--mount MOUNT] [--target TARGET] [--source-path] [--delete] [--exclude EXCLUDE] [--include INCLUDE] [--refresh] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE] [-i|--identity-file IDENTITY-FILE]
 ```
 
 ### `--all`, `-a`
@@ -7421,7 +9639,7 @@ ID o URL del proyecto
 
 ### `--host`
 
-El nombre de host de la API del proyecto
+Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -7443,6 +9661,12 @@ Un nombre de trabajador
 
 - Requiere un valor
 
+### `--instance`, `-I`
+
+Un ID de instancia
+
+- Requiere un valor
+
 ### `--identity-file`, `-i`
 
 Una identidad SSH (clave privada) para usar
@@ -7452,13 +9676,6 @@ Una identidad SSH (clave privada) para usar
 ### `--help`, `-h`
 
 Mostrar este mensaje de ayuda
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -7479,14 +9696,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -7497,7 +9742,7 @@ Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
 Obtener una lista de montículos
 
 ```bash
-magento-cloud mounts [--paths] [--refresh] [--format FORMAT] [--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER]
+magento-cloud mounts [--paths] [--refresh] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE]
 ```
 
 
@@ -7521,14 +9766,14 @@ Si actualizar la caché
 
 ### `--format`
 
-El formato de salida (&quot;tabla&quot;, &quot;csv&quot;, &quot;tsv&quot; o &quot;sin formato&quot;)
+El formato de salida: tabla, csv, tsv o plain
 
 - Predeterminado: `table`
 - Requiere un valor
 
-### `--columns`
+### `--columns`, `-c`
 
-Columnas que se van a mostrar (lista separada por comas o valores múltiples)
+Columnas que se van a mostrar. Columnas disponibles: definición, ruta. Si una lista se proporciona como un valor único (p. ej. &quot;a,b,c&quot;) se dividirá por comas o espacios en blanco.
 
 - Predeterminado: `[]`
 - Requiere un valor
@@ -7548,7 +9793,7 @@ ID o URL del proyecto
 
 ### `--host`
 
-El nombre de host de la API del proyecto
+Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -7570,16 +9815,15 @@ Un nombre de trabajador
 
 - Requiere un valor
 
+### `--instance`, `-I`
+
+Un ID de instancia
+
+- Requiere un valor
+
 ### `--help`, `-h`
 
 Mostrar este mensaje de ayuda
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -7600,14 +9844,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -7618,7 +9890,7 @@ Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
 Compruebe el uso de discos de los montajes
 
 ```bash
-magento-cloud mount:size [-B|--bytes] [--refresh] [--format FORMAT] [--columns COLUMNS] [--no-header] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER]
+magento-cloud mount:size [-B|--bytes] [--refresh] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE]
 ```
 
 ### `--bytes`, `-B`
@@ -7637,14 +9909,14 @@ Actualizar la caché
 
 ### `--format`
 
-El formato de salida (&quot;tabla&quot;, &quot;csv&quot;, &quot;tsv&quot; o &quot;sin formato&quot;)
+El formato de salida: tabla, csv, tsv o plain
 
 - Predeterminado: `table`
 - Requiere un valor
 
-### `--columns`
+### `--columns`, `-c`
 
-Columnas que se van a mostrar (lista separada por comas o valores múltiples)
+Columnas que se van a mostrar. Columnas disponibles: disponible, máximo, montajes, porcentaje_utilizado, tamaños, usado. Si una lista se proporciona como un valor único (p. ej. &quot;a,b,c&quot;) se dividirá por comas o espacios en blanco.
 
 - Predeterminado: `[]`
 - Requiere un valor
@@ -7670,7 +9942,7 @@ ID o URL del proyecto
 
 ### `--host`
 
-El nombre de host de la API del proyecto
+Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -7692,16 +9964,15 @@ Un nombre de trabajador
 
 - Requiere un valor
 
+### `--instance`, `-I`
+
+Un ID de instancia
+
+- Requiere un valor
+
 ### `--help`, `-h`
 
 Mostrar este mensaje de ayuda
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -7722,14 +9993,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -7740,7 +10039,7 @@ Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
 Cargar archivos a un montaje mediante rsync
 
 ```bash
-magento-cloud mount:upload [--source SOURCE] [-m|--mount MOUNT] [--delete] [--exclude EXCLUDE] [--include INCLUDE] [--refresh] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-i|--identity-file IDENTITY-FILE]
+magento-cloud mount:upload [--source SOURCE] [-m|--mount MOUNT] [--delete] [--exclude EXCLUDE] [--include INCLUDE] [--refresh] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE] [-i|--identity-file IDENTITY-FILE]
 ```
 
 ### `--source`
@@ -7791,7 +10090,7 @@ ID o URL del proyecto
 
 ### `--host`
 
-El nombre de host de la API del proyecto
+Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -7813,6 +10112,12 @@ Un nombre de trabajador
 
 - Requiere un valor
 
+### `--instance`, `-I`
+
+Un ID de instancia
+
+- Requiere un valor
+
 ### `--identity-file`, `-i`
 
 Una identidad SSH (clave privada) para usar
@@ -7826,13 +10131,6 @@ Mostrar este mensaje de ayuda
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Aumentar la diversidad de los mensajes
@@ -7849,14 +10147,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -7867,7 +10193,7 @@ Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
 Borrar la caché de compilación de un proyecto
 
 ```bash
-magento-cloud project:clear-build-cache [-p|--project PROJECT] [--host HOST]
+magento-cloud project:clear-build-cache [-p|--project PROJECT]
 ```
 
 ### `--project`, `-p`
@@ -7878,20 +10204,13 @@ ID o URL del proyecto
 
 ### `--host`
 
-El nombre de host de la API del proyecto
+Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
 ### `--help`, `-h`
 
 Mostrar este mensaje de ayuda
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -7912,14 +10231,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -7930,7 +10277,7 @@ Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
 Ejecute una solicitud cURL autenticada en la API de un proyecto
 
 ```bash
-magento-cloud project:curl [-X|--request REQUEST] [-d|--data DATA] [-i|--include] [-I|--head] [--disable-compression] [--enable-glob] [-f|--fail] [-H|--header HEADER] [-p|--project PROJECT] [--host HOST] [--] [<path>]
+magento-cloud project:curl [-X|--request REQUEST] [-d|--data DATA] [--json JSON] [-i|--include] [-I|--head] [--disable-compression] [--enable-glob] [-f|--fail] [-H|--header HEADER] [-p|--project PROJECT] [--] [<path>]
 ```
 
 
@@ -7948,6 +10295,12 @@ El método de solicitud para utilizar
 ### `--data`, `-d`
 
 Datos que enviar
+
+- Requiere un valor
+
+### `--json`
+
+Datos JSON para enviar
 
 - Requiere un valor
 
@@ -8001,20 +10354,13 @@ ID o URL del proyecto
 
 ### `--host`
 
-El nombre de host de la API del proyecto
+Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
 ### `--help`, `-h`
 
 Mostrar este mensaje de ayuda
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -8035,14 +10381,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -8053,7 +10427,7 @@ Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
 Clonar un proyecto localmente
 
 ```bash
-magento-cloud get [-e|--environment ENVIRONMENT] [--depth DEPTH] [--build] [-p|--project PROJECT] [--host HOST] [-i|--identity-file IDENTITY-FILE] [--] [<project>] [<directory>]
+magento-cloud get [-e|--environment ENVIRONMENT] [--depth DEPTH] [--build] [-p|--project PROJECT] [-i|--identity-file IDENTITY-FILE] [--] [<project>] [<directory>]
 ```
 
 
@@ -8099,7 +10473,7 @@ ID o URL del proyecto
 
 ### `--host`
 
-El nombre de host de la API del proyecto
+Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -8112,13 +10486,6 @@ Una identidad SSH (clave privada) para usar
 ### `--help`, `-h`
 
 Mostrar este mensaje de ayuda
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -8139,14 +10506,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -8157,7 +10552,7 @@ Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
 Leer o establecer propiedades para un proyecto
 
 ```bash
-magento-cloud project:info [--refresh] [--date-fmt DATE-FMT] [--format FORMAT] [--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait] [--] [<property>] [<value>]
+magento-cloud project:info [--refresh] [--date-fmt DATE-FMT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] [<property>] [<value>]
 ```
 
 
@@ -8192,14 +10587,14 @@ El formato de fecha (como una cadena de formato de fecha PHP)
 
 ### `--format`
 
-El formato de salida (&quot;tabla&quot;, &quot;csv&quot;, &quot;tsv&quot; o &quot;sin formato&quot;)
+El formato de salida: tabla, csv, tsv o plain
 
 - Predeterminado: `table`
 - Requiere un valor
 
-### `--columns`
+### `--columns`, `-c`
 
-Columnas que se van a mostrar (lista separada por comas o valores múltiples)
+Columnas que se van a mostrar. Si una lista se proporciona como un valor único (p. ej. &quot;a,b,c&quot;) se dividirá por comas o espacios en blanco.
 
 - Predeterminado: `[]`
 - Requiere un valor
@@ -8219,7 +10614,7 @@ ID o URL del proyecto
 
 ### `--host`
 
-El nombre de host de la API del proyecto
+Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -8244,13 +10639,6 @@ Mostrar este mensaje de ayuda
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Aumentar la diversidad de los mensajes
@@ -8267,14 +10655,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -8285,7 +10701,7 @@ Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
 Obtener una lista de todos los proyectos activos
 
 ```bash
-magento-cloud project:list [--pipe] [--host HOST] [--title TITLE] [--my] [--refresh REFRESH] [--sort SORT] [--reverse] [--page PAGE] [--count COUNT] [--format FORMAT] [--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT]
+magento-cloud project:list [--pipe] [--host HOST] [--title TITLE] [--my] [--refresh REFRESH] [--sort SORT] [--reverse] [--page PAGE] [-c|--count COUNT] [--format FORMAT] [--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT]
 ```
 
 
@@ -8300,7 +10716,7 @@ pro
 
 ### `--pipe`
 
-Incluya una lista sencilla de ID de proyecto. Esto deshabilita la paginación.
+Incluya una lista sencilla de ID de proyecto. Desactiva la paginación.
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -8347,27 +10763,26 @@ Ordenar en orden inverso (descendente)
 
 ### `--page`
 
-Número de página (a partir de 1)
+Número de página. Esto habilita la paginación, a pesar de la configuración o —count. Se omite si se especifica —pipe.
 
-- Predeterminado: `1`
 - Requiere un valor
 
-### `--count`
+### `--count`, `-c`
 
-El número de proyectos que se mostrarán por página. El valor predeterminado se basa en la altura del terminal. Utilice 0 para desactivar la paginación.
+El número de proyectos que se mostrarán por página. Utilice 0 para desactivar la paginación. Se omite si se especifica —page.
 
 - Requiere un valor
 
 ### `--format`
 
-El formato de salida (&quot;tabla&quot;, &quot;csv&quot;, &quot;tsv&quot; o &quot;sin formato&quot;)
+El formato de salida: tabla, csv, tsv o plain
 
 - Predeterminado: `table`
 - Requiere un valor
 
 ### `--columns`
 
-Columnas que se van a mostrar (lista separada por comas o valores múltiples)
+Columnas que se van a mostrar. Columnas disponibles: id*, title*, region*, created_at, extremo, organización_id, etiqueta_organización, nombre_organización, etiqueta_región, estado, ui_url (* = columnas predeterminadas). El carácter &quot;+&quot; puede utilizarse como marcador de posición para las columnas predeterminadas. Si una lista se proporciona como un valor único (p. ej. &quot;a,b,c&quot;) se dividirá por comas o espacios en blanco.
 
 - Predeterminado: `[]`
 - Requiere un valor
@@ -8393,13 +10808,6 @@ Mostrar este mensaje de ayuda
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Aumentar la diversidad de los mensajes
@@ -8416,14 +10824,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -8450,13 +10886,6 @@ Mostrar este mensaje de ayuda
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Aumentar la diversidad de los mensajes
@@ -8473,14 +10902,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -8491,7 +10948,7 @@ Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
 &lt;fg white=&quot;&quot; bg=&quot;red&quot;>[ OBSOLETO ]&lt;/> Eliminar una variable de un proyecto
 
 ```bash
-magento-cloud project:variable:delete [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait] [--] <name>
+magento-cloud project:variable:delete [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] <name>
 ```
 
 
@@ -8509,7 +10966,7 @@ ID o URL del proyecto
 
 ### `--host`
 
-El nombre de host de la API del proyecto
+Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -8534,13 +10991,6 @@ Mostrar este mensaje de ayuda
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Aumentar la diversidad de los mensajes
@@ -8557,14 +11007,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -8575,7 +11053,7 @@ Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
 &lt;fg white=&quot;&quot; bg=&quot;red&quot;>[ OBSOLETO ]&lt;/> Ver variables de un proyecto
 
 ```bash
-magento-cloud project:variable:get [--pipe] [--format FORMAT] [--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--host HOST] [--] [<name>]
+magento-cloud project:variable:get [--pipe] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--] [<name>]
 ```
 
 
@@ -8608,14 +11086,14 @@ Incluya solo el valor de la variable completa (se debe especificar un &quot;nomb
 
 ### `--format`
 
-El formato de salida (&quot;tabla&quot;, &quot;csv&quot;, &quot;tsv&quot; o &quot;sin formato&quot;)
+El formato de salida: tabla, csv, tsv o plain
 
 - Predeterminado: `table`
 - Requiere un valor
 
-### `--columns`
+### `--columns`, `-c`
 
-Columnas que se van a mostrar (lista separada por comas o valores múltiples)
+Columnas que se van a mostrar. Si una lista se proporciona como un valor único (p. ej. &quot;a,b,c&quot;) se dividirá por comas o espacios en blanco.
 
 - Predeterminado: `[]`
 - Requiere un valor
@@ -8635,20 +11113,13 @@ ID o URL del proyecto
 
 ### `--host`
 
-El nombre de host de la API del proyecto
+Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
 ### `--help`, `-h`
 
 Mostrar este mensaje de ayuda
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -8669,14 +11140,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -8687,7 +11186,7 @@ Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
 &lt;fg white=&quot;&quot; bg=&quot;red&quot;>[ OBSOLETO ]&lt;/> Establecer una variable para un proyecto
 
 ```bash
-magento-cloud pvset [--json] [--no-visible-build] [--no-visible-runtime] [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait] [--] <name> <value>
+magento-cloud pvset [--json] [--no-visible-build] [--no-visible-runtime] [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] <name> <value>
 ```
 
 
@@ -8737,7 +11236,7 @@ ID o URL del proyecto
 
 ### `--host`
 
-El nombre de host de la API del proyecto
+Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -8762,13 +11261,6 @@ Mostrar este mensaje de ayuda
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Aumentar la diversidad de los mensajes
@@ -8785,14 +11277,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -8803,7 +11323,7 @@ Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
 Leer un archivo en el repositorio del proyecto
 
 ```bash
-magento-cloud repo:cat [-c|--commit COMMIT] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--] <path>
+magento-cloud repo:cat [-c|--commit COMMIT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] <path>
 ```
 
 
@@ -8827,7 +11347,7 @@ ID o URL del proyecto
 
 ### `--host`
 
-El nombre de host de la API del proyecto
+Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -8840,13 +11360,6 @@ ID del entorno
 ### `--help`, `-h`
 
 Mostrar este mensaje de ayuda
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -8867,14 +11380,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -8885,7 +11426,7 @@ Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
 Enumerar archivos en el repositorio del proyecto
 
 ```bash
-magento-cloud repo:ls [-d|--directories] [-f|--files] [--git-style] [-c|--commit COMMIT] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--] [<path>]
+magento-cloud repo:ls [-d|--directories] [-f|--files] [--git-style] [-c|--commit COMMIT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] [<path>]
 ```
 
 
@@ -8929,7 +11470,7 @@ ID o URL del proyecto
 
 ### `--host`
 
-El nombre de host de la API del proyecto
+Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -8942,13 +11483,6 @@ ID del entorno
 ### `--help`, `-h`
 
 Mostrar este mensaje de ayuda
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -8969,14 +11503,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -8987,7 +11549,7 @@ Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
 Leer un directorio o archivo en el repositorio del proyecto
 
 ```bash
-magento-cloud read [-c|--commit COMMIT] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--] [<path>]
+magento-cloud read [-c|--commit COMMIT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] [<path>]
 ```
 
 
@@ -9015,7 +11577,7 @@ ID o URL del proyecto
 
 ### `--host`
 
-El nombre de host de la API del proyecto
+Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -9028,13 +11590,6 @@ ID del entorno
 ### `--help`, `-h`
 
 Mostrar este mensaje de ayuda
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -9055,14 +11610,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -9073,7 +11656,7 @@ Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
 Ver información detallada sobre una ruta
 
 ```bash
-magento-cloud route:get [--id ID] [-1|--primary] [-P|--property PROPERTY] [--refresh] [--date-fmt DATE-FMT] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [-i|--identity-file IDENTITY-FILE] [--] [<route>]
+magento-cloud route:get [--id ID] [-1|--primary] [-P|--property PROPERTY] [--refresh] [--date-fmt DATE-FMT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [-i|--identity-file IDENTITY-FILE] [--] [<route>]
 ```
 
 
@@ -9123,7 +11706,7 @@ ID o URL del proyecto
 
 ### `--host`
 
-El nombre de host de la API del proyecto
+Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -9152,13 +11735,6 @@ Mostrar este mensaje de ayuda
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Aumentar la diversidad de los mensajes
@@ -9175,14 +11751,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -9193,7 +11797,7 @@ Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
 Enumerar todas las rutas para un entorno
 
 ```bash
-magento-cloud routes [--refresh] [--format FORMAT] [--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--] [<environment>]
+magento-cloud routes [--refresh] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] [<environment>]
 ```
 
 
@@ -9221,14 +11825,14 @@ Omitir la caché de rutas
 
 ### `--format`
 
-El formato de salida (&quot;tabla&quot;, &quot;csv&quot;, &quot;tsv&quot; o &quot;sin formato&quot;)
+El formato de salida: tabla, csv, tsv o plain
 
 - Predeterminado: `table`
 - Requiere un valor
 
-### `--columns`
+### `--columns`, `-c`
 
-Columnas que se van a mostrar (lista separada por comas o valores múltiples)
+Columnas que se van a mostrar. Columnas disponibles: route*, type*, to*, url (* = columnas predeterminadas). El carácter &quot;+&quot; puede utilizarse como marcador de posición para las columnas predeterminadas. Si una lista se proporciona como un valor único (p. ej. &quot;a,b,c&quot;) se dividirá por comas o espacios en blanco.
 
 - Predeterminado: `[]`
 - Requiere un valor
@@ -9248,7 +11852,7 @@ ID o URL del proyecto
 
 ### `--host`
 
-El nombre de host de la API del proyecto
+Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -9261,13 +11865,6 @@ ID del entorno
 ### `--help`, `-h`
 
 Mostrar este mensaje de ayuda
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -9288,14 +11885,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -9327,13 +11952,6 @@ Mostrar este mensaje de ayuda
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Aumentar la diversidad de los mensajes
@@ -9350,14 +11968,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -9387,14 +12033,14 @@ Resultados por página (máximo: 100)
 
 ### `--format`
 
-El formato de salida (&quot;tabla&quot;, &quot;csv&quot;, &quot;tsv&quot; o &quot;sin formato&quot;)
+El formato de salida: tabla, csv, tsv o plain
 
 - Predeterminado: `table`
 - Requiere un valor
 
 ### `--columns`
 
-Columnas que se van a mostrar (lista separada por comas o valores múltiples)
+Columnas que se van a mostrar. Columnas disponibles: recurso, fecha, descargas, lanzamiento. Si una lista se proporciona como un valor único (p. ej. &quot;a,b,c&quot;) se dividirá por comas o espacios en blanco.
 
 - Predeterminado: `[]`
 - Requiere un valor
@@ -9420,13 +12066,6 @@ Mostrar este mensaje de ayuda
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Aumentar la diversidad de los mensajes
@@ -9443,14 +12082,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -9514,13 +12181,6 @@ Mostrar este mensaje de ayuda
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Aumentar la diversidad de los mensajes
@@ -9537,14 +12197,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -9555,7 +12243,7 @@ Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
 Enumerar servicios en el proyecto
 
 ```bash
-magento-cloud services [--refresh] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--format FORMAT] [--columns COLUMNS] [--no-header]
+magento-cloud services [--refresh] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header]
 ```
 
 
@@ -9578,7 +12266,7 @@ ID o URL del proyecto
 
 ### `--host`
 
-El nombre de host de la API del proyecto
+Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -9590,14 +12278,14 @@ ID del entorno
 
 ### `--format`
 
-El formato de salida (&quot;tabla&quot;, &quot;csv&quot;, &quot;tsv&quot; o &quot;sin formato&quot;)
+El formato de salida: tabla, csv, tsv o plain
 
 - Predeterminado: `table`
 - Requiere un valor
 
-### `--columns`
+### `--columns`, `-c`
 
-Columnas que se van a mostrar (lista separada por comas o valores múltiples)
+Columnas que se van a mostrar. Columnas disponibles: disco, nombre, tamaño, tipo. Si una lista se proporciona como un valor único (p. ej. &quot;a,b,c&quot;) se dividirá por comas o espacios en blanco.
 
 - Predeterminado: `[]`
 - Requiere un valor
@@ -9612,13 +12300,6 @@ No mostrar el encabezado de tabla
 ### `--help`, `-h`
 
 Mostrar este mensaje de ayuda
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -9639,14 +12320,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -9657,7 +12366,7 @@ Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
 Crear un archivo binario de volcado de datos de MongoDB
 
 ```bash
-magento-cloud mongodump [-c|--collection COLLECTION] [-z|--gzip] [-o|--stdout] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP]
+magento-cloud mongodump [-c|--collection COLLECTION] [-z|--gzip] [-o|--stdout] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP]
 ```
 
 
@@ -9705,7 +12414,7 @@ ID o URL del proyecto
 
 ### `--host`
 
-El nombre de host de la API del proyecto
+Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -9728,13 +12437,6 @@ Mostrar este mensaje de ayuda
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Aumentar la diversidad de los mensajes
@@ -9751,14 +12453,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -9769,7 +12499,7 @@ Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
 Exportar datos de MongoDB
 
 ```bash
-magento-cloud mongoexport [-c|--collection COLLECTION] [--jsonArray] [--type TYPE] [-f|--fields FIELDS] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP]
+magento-cloud mongoexport [-c|--collection COLLECTION] [--jsonArray] [--type TYPE] [-f|--fields FIELDS] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP]
 ```
 
 
@@ -9823,7 +12553,7 @@ ID o URL del proyecto
 
 ### `--host`
 
-El nombre de host de la API del proyecto
+Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -9846,13 +12576,6 @@ Mostrar este mensaje de ayuda
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Aumentar la diversidad de los mensajes
@@ -9869,14 +12592,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -9887,7 +12638,7 @@ Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
 Restaurar un volcado de datos de archivo binario en MongoDB
 
 ```bash
-magento-cloud mongorestore [-c|--collection COLLECTION] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP]
+magento-cloud mongorestore [-c|--collection COLLECTION] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP]
 ```
 
 
@@ -9921,7 +12672,7 @@ ID o URL del proyecto
 
 ### `--host`
 
-El nombre de host de la API del proyecto
+Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -9944,13 +12695,6 @@ Mostrar este mensaje de ayuda
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Aumentar la diversidad de los mensajes
@@ -9967,14 +12711,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -9985,7 +12757,7 @@ Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
 Usar el shell de MongoDB
 
 ```bash
-magento-cloud mongo [--eval EVAL] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP]
+magento-cloud mongo [--eval EVAL] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP]
 ```
 
 
@@ -10019,7 +12791,7 @@ ID o URL del proyecto
 
 ### `--host`
 
-El nombre de host de la API del proyecto
+Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -10042,13 +12814,6 @@ Mostrar este mensaje de ayuda
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Aumentar la diversidad de los mensajes
@@ -10065,14 +12830,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -10083,7 +12876,7 @@ Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
 Acceso a la CLI de Redis
 
 ```bash
-magento-cloud redis [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [--] [<args>]
+magento-cloud redis [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--] [<args>]
 ```
 
 
@@ -10117,7 +12910,7 @@ ID o URL del proyecto
 
 ### `--host`
 
-El nombre de host de la API del proyecto
+Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -10140,13 +12933,6 @@ Mostrar este mensaje de ayuda
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Aumentar la diversidad de los mensajes
@@ -10163,14 +12949,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -10197,13 +13011,6 @@ Mostrar este mensaje de ayuda
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Aumentar la diversidad de los mensajes
@@ -10220,14 +13027,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -10238,7 +13073,7 @@ Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
 Crear una instantánea de un entorno
 
 ```bash
-magento-cloud backup [--live] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<environment>]
+magento-cloud backup [--live] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<environment>]
 ```
 
 
@@ -10277,7 +13112,7 @@ ID o URL del proyecto
 
 ### `--host`
 
-El nombre de host de la API del proyecto
+Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -10301,16 +13136,16 @@ Espere a que se complete la operación (valor predeterminado)
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--help`, `-h`
+### `--unsafe`
 
-Mostrar este mensaje de ayuda
+Opción obsoleta: use: live en su lugar
 
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--quiet`, `-q`
+### `--help`, `-h`
 
-No mostrar ningún mensaje
+Mostrar este mensaje de ayuda
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -10331,14 +13166,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -10349,7 +13212,7 @@ Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
 Lista de instantáneas disponibles de un entorno
 
 ```bash
-magento-cloud snapshots [--limit LIMIT] [--start START] [--format FORMAT] [--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT]
+magento-cloud snapshots [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT]
 ```
 
 
@@ -10369,7 +13232,7 @@ backup:list
 
 ### `--limit`
 
-Limitar el número de instantáneas a la lista
+[Obsoleto] - esta opción no se utiliza
 
 - Requiere un valor
 
@@ -10381,14 +13244,14 @@ Limitar el número de instantáneas a la lista
 
 ### `--format`
 
-El formato de salida (&quot;tabla&quot;, &quot;csv&quot;, &quot;tsv&quot; o &quot;sin formato&quot;)
+El formato de salida: tabla, csv, tsv o plain
 
 - Predeterminado: `table`
 - Requiere un valor
 
-### `--columns`
+### `--columns`, `-c`
 
-Columnas que se van a mostrar (lista separada por comas o valores múltiples)
+Columnas que se van a mostrar. Si una lista se proporciona como un valor único (p. ej. &quot;a,b,c&quot;) se dividirá por comas o espacios en blanco.
 
 - Predeterminado: `[]`
 - Requiere un valor
@@ -10415,7 +13278,7 @@ ID o URL del proyecto
 
 ### `--host`
 
-El nombre de host de la API del proyecto
+Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -10428,13 +13291,6 @@ ID del entorno
 ### `--help`, `-h`
 
 Mostrar este mensaje de ayuda
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -10455,14 +13311,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -10473,7 +13357,7 @@ Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
 Restaurar una instantánea de entorno
 
 ```bash
-magento-cloud snapshot:restore [--target TARGET] [--branch-from BRANCH-FROM] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<snapshot>]
+magento-cloud snapshot:restore [--target TARGET] [--branch-from BRANCH-FROM] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<snapshot>]
 ```
 
 
@@ -10494,7 +13378,7 @@ Nombre de la instantánea. El valor predeterminado es el más reciente
 
 ### `--target`
 
-Entorno al que restaurar. Valores predeterminados del entorno actual de la instantánea
+La entorno restaurar. Valores predeterminados del entorno actual de la instantánea
 
 - Requiere un valor
 
@@ -10512,7 +13396,7 @@ ID o URL del proyecto
 
 ### `--host`
 
-El nombre de host de la API del proyecto
+Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -10543,13 +13427,6 @@ Mostrar este mensaje de ayuda
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Aumentar la diversidad de los mensajes
@@ -10566,14 +13443,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -10584,7 +13489,7 @@ Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
 &lt;fg white=&quot;&quot; bg=&quot;red&quot;>[ BETA ]&lt;/> Ejecutar una operación de origen
 
 ```bash
-magento-cloud source-operation:run [--variable VARIABLE] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <operation>
+magento-cloud source-operation:run [--variable VARIABLE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <operation>
 ```
 
 
@@ -10609,7 +13514,7 @@ ID o URL del proyecto
 
 ### `--host`
 
-El nombre de host de la API del proyecto
+Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -10640,13 +13545,6 @@ Mostrar este mensaje de ayuda
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Aumentar la diversidad de los mensajes
@@ -10663,14 +13561,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -10711,13 +13637,6 @@ Mostrar este mensaje de ayuda
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Aumentar la diversidad de los mensajes
@@ -10734,14 +13653,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -10783,13 +13730,6 @@ Mostrar este mensaje de ayuda
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Aumentar la diversidad de los mensajes
@@ -10806,14 +13746,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -10846,13 +13814,6 @@ Mostrar este mensaje de ayuda
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Aumentar la diversidad de los mensajes
@@ -10869,14 +13830,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -10903,13 +13892,6 @@ Mostrar este mensaje de ayuda
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Aumentar la diversidad de los mensajes
@@ -10926,14 +13908,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -10944,7 +13954,7 @@ Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
 Obtener una lista de claves SSH en la cuenta
 
 ```bash
-magento-cloud ssh-keys [--format FORMAT] [--columns COLUMNS] [--no-header]
+magento-cloud ssh-keys [--format FORMAT] [-c|--columns COLUMNS] [--no-header]
 ```
 
 
@@ -10954,14 +13964,14 @@ ssh-keys
 
 ### `--format`
 
-El formato de salida (&quot;tabla&quot;, &quot;csv&quot;, &quot;tsv&quot; o &quot;sin formato&quot;)
+El formato de salida: tabla, csv, tsv o plain
 
 - Predeterminado: `table`
 - Requiere un valor
 
-### `--columns`
+### `--columns`, `-c`
 
-Columnas que se van a mostrar (lista separada por comas o valores múltiples)
+Columnas que se van a mostrar. Columnas disponibles: id*, title*, path*, huella digital (* = columnas predeterminadas). El carácter &quot;+&quot; puede utilizarse como marcador de posición para las columnas predeterminadas. Si una lista se proporciona como un valor único (p. ej. &quot;a,b,c&quot;) se dividirá por comas o espacios en blanco.
 
 - Predeterminado: `[]`
 - Requiere un valor
@@ -10980,13 +13990,6 @@ Mostrar este mensaje de ayuda
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Aumentar la diversidad de los mensajes
@@ -11003,14 +14006,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -11021,7 +14052,7 @@ Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
 Leer o modificar las propiedades de suscripción
 
 ```bash
-magento-cloud subscription:info [-s|--id ID] [--date-fmt DATE-FMT] [--format FORMAT] [--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--host HOST] [--] [<property>] [<value>]
+magento-cloud subscription:info [-s|--id ID] [--date-fmt DATE-FMT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--] [<property>] [<value>]
 ```
 
 
@@ -11050,14 +14081,14 @@ El formato de fecha (como una cadena de formato de fecha PHP)
 
 ### `--format`
 
-El formato de salida (&quot;tabla&quot;, &quot;csv&quot;, &quot;tsv&quot; o &quot;sin formato&quot;)
+El formato de salida: tabla, csv, tsv o plain
 
 - Predeterminado: `table`
 - Requiere un valor
 
-### `--columns`
+### `--columns`, `-c`
 
-Columnas que se van a mostrar (lista separada por comas o valores múltiples)
+Columnas que se van a mostrar. Si una lista se proporciona como un valor único (p. ej. &quot;a,b,c&quot;) se dividirá por comas o espacios en blanco.
 
 - Predeterminado: `[]`
 - Requiere un valor
@@ -11077,20 +14108,13 @@ ID o URL del proyecto
 
 ### `--host`
 
-El nombre de host de la API del proyecto
+Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
 ### `--help`, `-h`
 
 Mostrar este mensaje de ayuda
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -11111,14 +14135,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -11129,7 +14181,7 @@ Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
 Cierre de túneles SSH
 
 ```bash
-magento-cloud tunnel:close [-a|--all] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP]
+magento-cloud tunnel:close [-a|--all] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP]
 ```
 
 ### `--all`, `-a`
@@ -11147,7 +14199,7 @@ ID o URL del proyecto
 
 ### `--host`
 
-El nombre de host de la API del proyecto
+Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -11170,13 +14222,6 @@ Mostrar este mensaje de ayuda
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Aumentar la diversidad de los mensajes
@@ -11193,14 +14238,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -11211,7 +14284,7 @@ Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
 Ver información de relación para túneles SSH
 
 ```bash
-magento-cloud tunnel:info [-P|--property PROPERTY] [-c|--encode] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [--format FORMAT] [--columns COLUMNS] [--no-header]
+magento-cloud tunnel:info [-P|--property PROPERTY] [-c|--encode] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--format FORMAT] [--columns COLUMNS] [--no-header]
 ```
 
 ### `--property`, `-P`
@@ -11235,7 +14308,7 @@ ID o URL del proyecto
 
 ### `--host`
 
-El nombre de host de la API del proyecto
+Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -11253,14 +14326,14 @@ El nombre de la aplicación remota
 
 ### `--format`
 
-El formato de salida (&quot;tabla&quot;, &quot;csv&quot;, &quot;tsv&quot; o &quot;sin formato&quot;)
+El formato de salida: tabla, csv, tsv o plain
 
 - Predeterminado: `table`
 - Requiere un valor
 
 ### `--columns`
 
-Columnas que se van a mostrar (lista separada por comas o valores múltiples)
+Columnas que se van a mostrar. Si una lista se proporciona como un valor único (p. ej. &quot;a,b,c&quot;) se dividirá por comas o espacios en blanco.
 
 - Predeterminado: `[]`
 - Requiere un valor
@@ -11275,13 +14348,6 @@ No mostrar el encabezado de tabla
 ### `--help`, `-h`
 
 Mostrar este mensaje de ayuda
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -11302,14 +14368,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -11320,7 +14414,7 @@ Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
 Enumerar túneles SSH
 
 ```bash
-magento-cloud tunnels [-a|--all] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [--format FORMAT] [--columns COLUMNS] [--no-header]
+magento-cloud tunnels [-a|--all] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--format FORMAT] [-c|--columns COLUMNS] [--no-header]
 ```
 
 
@@ -11343,7 +14437,7 @@ ID o URL del proyecto
 
 ### `--host`
 
-El nombre de host de la API del proyecto
+Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -11361,14 +14455,14 @@ El nombre de la aplicación remota
 
 ### `--format`
 
-El formato de salida (&quot;tabla&quot;, &quot;csv&quot;, &quot;tsv&quot; o &quot;sin formato&quot;)
+El formato de salida: tabla, csv, tsv o plain
 
 - Predeterminado: `table`
 - Requiere un valor
 
-### `--columns`
+### `--columns`, `-c`
 
-Columnas que se van a mostrar (lista separada por comas o valores múltiples)
+Columnas que se van a mostrar. Si una lista se proporciona como un valor único (p. ej. &quot;a,b,c&quot;) se dividirá por comas o espacios en blanco.
 
 - Predeterminado: `[]`
 - Requiere un valor
@@ -11383,13 +14477,6 @@ No mostrar el encabezado de tabla
 ### `--help`, `-h`
 
 Mostrar este mensaje de ayuda
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -11410,14 +14497,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -11428,7 +14543,7 @@ Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
 Apertura de túneles SSH en las relaciones de una aplicación
 
 ```bash
-magento-cloud tunnel:open [-g|--gateway-ports] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [-i|--identity-file IDENTITY-FILE]
+magento-cloud tunnel:open [-g|--gateway-ports] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [-i|--identity-file IDENTITY-FILE]
 ```
 
 ### `--gateway-ports`, `-g`
@@ -11446,7 +14561,7 @@ ID o URL del proyecto
 
 ### `--host`
 
-El nombre de host de la API del proyecto
+Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -11475,13 +14590,6 @@ Mostrar este mensaje de ayuda
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Aumentar la diversidad de los mensajes
@@ -11498,14 +14606,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -11516,7 +14652,7 @@ Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
 Abrir un solo túnel SSH en una relación de aplicación
 
 ```bash
-magento-cloud tunnel:single [--port PORT] [-g|--gateway-ports] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-A|--app APP] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE]
+magento-cloud tunnel:single [--port PORT] [-g|--gateway-ports] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE]
 ```
 
 ### `--port`
@@ -11540,7 +14676,7 @@ ID o URL del proyecto
 
 ### `--host`
 
-El nombre de host de la API del proyecto
+Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -11575,13 +14711,6 @@ Mostrar este mensaje de ayuda
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Aumentar la diversidad de los mensajes
@@ -11598,14 +14727,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -11616,7 +14773,7 @@ Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
 Agregar un usuario al proyecto
 
 ```bash
-magento-cloud user:add [-r|--role ROLE] [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait] [--] [<email>]
+magento-cloud user:add [-r|--role ROLE] [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] [<email>]
 ```
 
 
@@ -11634,13 +14791,13 @@ La función de proyecto del usuario (&quot;administrador&quot; o &quot;visor&quo
 
 ### `--project`, `-p`
 
-ID o URL del proyecto
+ID de proyecto o URL
 
 - Requiere un valor
 
 ### `--host`
 
-El nombre de host de la API del proyecto
+Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -11665,13 +14822,6 @@ Mostrar este mensaje de ayuda
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Aumentar la diversidad de los mensajes
@@ -11688,14 +14838,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -11706,7 +14884,7 @@ Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
 Eliminar un usuario del proyecto
 
 ```bash
-magento-cloud user:delete [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait] [--] <email>
+magento-cloud user:delete [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] <email>
 ```
 
 
@@ -11724,7 +14902,7 @@ ID o URL del proyecto
 
 ### `--host`
 
-El nombre de host de la API del proyecto
+Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -11749,13 +14927,6 @@ Mostrar este mensaje de ayuda
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Aumentar la diversidad de los mensajes
@@ -11772,14 +14943,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -11790,7 +14989,7 @@ Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
 Ver las funciones de un usuario
 
 ```bash
-magento-cloud user:get [-l|--level LEVEL] [--pipe] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [-r|--role ROLE] [--] [<email>]
+magento-cloud user:get [-l|--level LEVEL] [--pipe] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [-r|--role ROLE] [--] [<email>]
 ```
 
 
@@ -11825,7 +15024,7 @@ ID o URL del proyecto
 
 ### `--host`
 
-El nombre de host de la API del proyecto
+Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -11862,13 +15061,6 @@ Mostrar este mensaje de ayuda
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Aumentar la diversidad de los mensajes
@@ -11885,14 +15077,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -11903,7 +15123,7 @@ Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
 Lista de usuarios de proyectos
 
 ```bash
-magento-cloud users [--format FORMAT] [--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--host HOST]
+magento-cloud users [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT]
 ```
 
 
@@ -11913,14 +15133,14 @@ users
 
 ### `--format`
 
-El formato de salida (&quot;tabla&quot;, &quot;csv&quot;, &quot;tsv&quot; o &quot;sin formato&quot;)
+El formato de salida: tabla, csv, tsv o plain
 
 - Predeterminado: `table`
 - Requiere un valor
 
-### `--columns`
+### `--columns`, `-c`
 
-Columnas que se van a mostrar (lista separada por comas o valores múltiples)
+Columnas que se van a mostrar. Columnas disponibles: correo electrónico, id, nombre, función. Si una lista se proporciona como un valor único (p. ej. &quot;a,b,c&quot;) se dividirá por comas o espacios en blanco.
 
 - Predeterminado: `[]`
 - Requiere un valor
@@ -11940,20 +15160,13 @@ ID o URL del proyecto
 
 ### `--host`
 
-El nombre de host de la API del proyecto
+Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
 ### `--help`, `-h`
 
 Mostrar este mensaje de ayuda
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -11974,14 +15187,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -11992,7 +15233,7 @@ Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
 Actualizar las funciones de usuario en un proyecto
 
 ```bash
-magento-cloud user:update [-r|--role ROLE] [-p|--project PROJECT] [--host HOST] [-W|--no-wait] [--wait] [--] [<email>]
+magento-cloud user:update [-r|--role ROLE] [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] [<email>]
 ```
 
 
@@ -12016,7 +15257,7 @@ ID o URL del proyecto
 
 ### `--host`
 
-El nombre de host de la API del proyecto
+Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -12041,13 +15282,6 @@ Mostrar este mensaje de ayuda
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Aumentar la diversidad de los mensajes
@@ -12064,14 +15298,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -12082,7 +15344,7 @@ Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
 Crear una variable
 
 ```bash
-magento-cloud variable:create [-l|--level LEVEL] [--name NAME] [--value VALUE] [--json JSON] [--sensitive SENSITIVE] [--prefix PREFIX] [--enabled ENABLED] [--inheritable INHERITABLE] [--visible-build VISIBLE-BUILD] [--visible-runtime VISIBLE-RUNTIME] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<name>]
+magento-cloud variable:create [-l|--level LEVEL] [--name NAME] [--value VALUE] [--json JSON] [--sensitive SENSITIVE] [--prefix PREFIX] [--enabled ENABLED] [--inheritable INHERITABLE] [--visible-build VISIBLE-BUILD] [--visible-runtime VISIBLE-RUNTIME] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<name>]
 ```
 
 
@@ -12165,7 +15427,7 @@ ID o URL del proyecto
 
 ### `--host`
 
-El nombre de host de la API del proyecto
+Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -12196,13 +15458,6 @@ Mostrar este mensaje de ayuda
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Aumentar la diversidad de los mensajes
@@ -12219,14 +15474,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -12237,7 +15520,7 @@ Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
 Eliminar una variable
 
 ```bash
-magento-cloud variable:delete [-l|--level LEVEL] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <name>
+magento-cloud variable:delete [-l|--level LEVEL] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <name>
 ```
 
 
@@ -12261,7 +15544,7 @@ ID o URL del proyecto
 
 ### `--host`
 
-El nombre de host de la API del proyecto
+Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -12292,13 +15575,6 @@ Mostrar este mensaje de ayuda
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Aumentar la diversidad de los mensajes
@@ -12315,14 +15591,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -12333,7 +15637,7 @@ Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
 &lt;fg white=&quot;&quot; bg=&quot;red&quot;>[ OBSOLETO ]&lt;/> Deshabilitar una variable habilitada a nivel de entorno
 
 ```bash
-magento-cloud variable:disable [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <name>
+magento-cloud variable:disable [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <name>
 ```
 
 
@@ -12351,7 +15655,7 @@ ID o URL del proyecto
 
 ### `--host`
 
-El nombre de host de la API del proyecto
+Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -12382,13 +15686,6 @@ Mostrar este mensaje de ayuda
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Aumentar la diversidad de los mensajes
@@ -12405,14 +15702,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -12423,7 +15748,7 @@ Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
 &lt;fg white=&quot;&quot; bg=&quot;red&quot;>[ OBSOLETO ]&lt;/> Habilitar una variable deshabilitada a nivel de entorno
 
 ```bash
-magento-cloud variable:enable [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <name>
+magento-cloud variable:enable [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <name>
 ```
 
 
@@ -12441,7 +15766,7 @@ ID o URL del proyecto
 
 ### `--host`
 
-El nombre de host de la API del proyecto
+Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -12472,13 +15797,6 @@ Mostrar este mensaje de ayuda
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Aumentar la diversidad de los mensajes
@@ -12495,14 +15813,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -12513,7 +15859,7 @@ Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
 Ver una variable
 
 ```bash
-magento-cloud vget [-P|--property PROPERTY] [-l|--level LEVEL] [--format FORMAT] [--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--pipe] [--] [<name>]
+magento-cloud vget [-P|--property PROPERTY] [-l|--level LEVEL] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--pipe] [--] [<name>]
 ```
 
 
@@ -12541,14 +15887,14 @@ El nivel de variable (&quot;proyecto&quot;, &quot;entorno&quot;, &quot;p&quot; o
 
 ### `--format`
 
-El formato de salida (&quot;tabla&quot;, &quot;csv&quot;, &quot;tsv&quot; o &quot;sin formato&quot;)
+El formato de salida: tabla, csv, tsv o plain
 
 - Predeterminado: `table`
 - Requiere un valor
 
-### `--columns`
+### `--columns`, `-c`
 
-Columnas que se van a mostrar (lista separada por comas o valores múltiples)
+Columnas que se van a mostrar. Si una lista se proporciona como un valor único (p. ej. &quot;a,b,c&quot;) se dividirá por comas o espacios en blanco.
 
 - Predeterminado: `[]`
 - Requiere un valor
@@ -12568,7 +15914,7 @@ ID o URL del proyecto
 
 ### `--host`
 
-El nombre de host de la API del proyecto
+Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -12592,13 +15938,6 @@ Mostrar este mensaje de ayuda
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Aumentar la diversidad de los mensajes
@@ -12615,14 +15954,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -12633,7 +16000,7 @@ Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
 Variables de lista
 
 ```bash
-magento-cloud variable:list [-l|--level LEVEL] [--format FORMAT] [--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT]
+magento-cloud variable:list [-l|--level LEVEL] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT] [-e|--environment ENVIRONMENT]
 ```
 
 
@@ -12654,14 +16021,14 @@ El nivel de variable (&quot;proyecto&quot;, &quot;entorno&quot;, &quot;p&quot; o
 
 ### `--format`
 
-El formato de salida (&quot;tabla&quot;, &quot;csv&quot;, &quot;tsv&quot; o &quot;sin formato&quot;)
+El formato de salida: tabla, csv, tsv o plain
 
 - Predeterminado: `table`
 - Requiere un valor
 
-### `--columns`
+### `--columns`, `-c`
 
-Columnas que se van a mostrar (lista separada por comas o valores múltiples)
+Columnas que se van a mostrar. Columnas disponibles: is_enabled, nivel, nombre, valor. Si una lista se proporciona como un valor único (p. ej. &quot;a,b,c&quot;) se dividirá por comas o espacios en blanco.
 
 - Predeterminado: `[]`
 - Requiere un valor
@@ -12681,7 +16048,7 @@ ID o URL del proyecto
 
 ### `--host`
 
-El nombre de host de la API del proyecto
+Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -12694,13 +16061,6 @@ ID del entorno
 ### `--help`, `-h`
 
 Mostrar este mensaje de ayuda
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -12721,14 +16081,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -12739,7 +16127,7 @@ Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
 &lt;fg white=&quot;&quot; bg=&quot;red&quot;>[ OBSOLETO ]&lt;/> Establecer una variable para un entorno
 
 ```bash
-magento-cloud vset [--json] [--disabled] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <name> <value>
+magento-cloud vset [--json] [--disabled] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <name> <value>
 ```
 
 
@@ -12782,7 +16170,7 @@ ID o URL del proyecto
 
 ### `--host`
 
-El nombre de host de la API del proyecto
+Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -12813,13 +16201,6 @@ Mostrar este mensaje de ayuda
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 ### `--verbose`, `-v|-vv|-vvv`
 
 Aumentar la diversidad de los mensajes
@@ -12836,14 +16217,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -12854,7 +16263,7 @@ Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
 Actualizar una variable
 
 ```bash
-magento-cloud variable:update [-l|--level LEVEL] [--value VALUE] [--json JSON] [--sensitive SENSITIVE] [--enabled ENABLED] [--inheritable INHERITABLE] [--visible-build VISIBLE-BUILD] [--visible-runtime VISIBLE-RUNTIME] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <name>
+magento-cloud variable:update [-l|--level LEVEL] [--value VALUE] [--json JSON] [--sensitive SENSITIVE] [--enabled ENABLED] [--inheritable INHERITABLE] [--visible-build VISIBLE-BUILD] [--visible-runtime VISIBLE-RUNTIME] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <name>
 ```
 
 
@@ -12925,7 +16334,7 @@ ID o URL del proyecto
 
 ### `--host`
 
-El nombre de host de la API del proyecto
+Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -12956,9 +16365,118 @@ Mostrar este mensaje de ayuda
 - Predeterminado: `false`
 - No acepta un valor
 
+### `--verbose`, `-v|-vv|-vvv`
+
+Aumentar la diversidad de los mensajes
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--version`, `-V`
+
+Mostrar esta versión de la aplicación
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--yes`, `-y`
+
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no`, `-n`
+
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
 ### `--quiet`, `-q`
 
 No mostrar ningún mensaje
+
+- Predeterminado: `false`
+- No acepta un valor
+
+
+## `version:list`
+
+&lt;fg white=&quot;&quot; bg=&quot;red&quot;>[ ALPHA ]&lt;/> Enumerar versiones de entornos
+
+```bash
+magento-cloud versions [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header]
+```
+
+
+```bash
+versions
+```
+
+### `--project`, `-p`
+
+ID o URL del proyecto
+
+- Requiere un valor
+
+### `--host`
+
+Opción obsoleta, ya no se utiliza
+
+- Requiere un valor
+
+### `--environment`, `-e`
+
+ID del entorno
+
+- Requiere un valor
+
+### `--format`
+
+El formato de salida: tabla, csv, tsv o plain
+
+- Predeterminado: `table`
+- Requiere un valor
+
+### `--columns`, `-c`
+
+Columnas que se van a mostrar. Si una lista se proporciona como un valor único (p. ej. &quot;a,b,c&quot;) se dividirá por comas o espacios en blanco.
+
+- Predeterminado: `[]`
+- Requiere un valor
+
+### `--no-header`
+
+No mostrar el encabezado de tabla
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--help`, `-h`
+
+Mostrar este mensaje de ayuda
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -12979,14 +16497,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -12997,7 +16543,7 @@ Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
 Obtener una lista de todos los trabajadores implementados
 
 ```bash
-magento-cloud workers [--refresh] [-p|--project PROJECT] [--host HOST] [-e|--environment ENVIRONMENT] [--format FORMAT] [--columns COLUMNS] [--no-header]
+magento-cloud workers [--refresh] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header]
 ```
 
 
@@ -13020,7 +16566,7 @@ ID o URL del proyecto
 
 ### `--host`
 
-El nombre de host de la API del proyecto
+Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -13032,14 +16578,14 @@ ID del entorno
 
 ### `--format`
 
-El formato de salida (&quot;tabla&quot;, &quot;csv&quot;, &quot;tsv&quot; o &quot;sin formato&quot;)
+El formato de salida: tabla, csv, tsv o plain
 
 - Predeterminado: `table`
 - Requiere un valor
 
-### `--columns`
+### `--columns`, `-c`
 
-Columnas que se van a mostrar (lista separada por comas o valores múltiples)
+Columnas que se van a mostrar. Columnas disponibles: comandos, nombre, tipo. Si una lista se proporciona como un valor único (p. ej. &quot;a,b,c&quot;) se dividirá por comas o espacios en blanco.
 
 - Predeterminado: `[]`
 - Requiere un valor
@@ -13054,13 +16600,6 @@ No mostrar el encabezado de tabla
 ### `--help`, `-h`
 
 Mostrar este mensaje de ayuda
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -13081,14 +16620,42 @@ Mostrar esta versión de la aplicación
 
 ### `--yes`, `-y`
 
-Responda &quot;sí&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga preguntas interactivas; aceptar valores predeterminados. Equivalente al uso de la variable de entorno: &lt;comment>Magento_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar salida ANSI
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-ansi`
+
+Deshabilitar salida ANSI
 
 - Predeterminado: `false`
 - No acepta un valor
 
 ### `--no`, `-n`
 
-Responda &quot;no&quot; a cualquier pregunta de sí/no. desactivar interacción
+Responda &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; desactivar interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No mostrar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
