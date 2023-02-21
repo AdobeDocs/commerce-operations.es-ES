@@ -1,7 +1,7 @@
 ---
 title: Arquitectura de referencia
 description: Revise los diagramas de la arquitectura de referencia recomendada para implementaciones de Adobe Commerce y Magento Open Source.
-source-git-commit: 9ab52374e031bd2b0a846dd5f47c89ff788dcafa
+source-git-commit: 065c56f20ba5b1eef8c331c5c2f5649902f1442b
 workflow-type: tm+mt
 source-wordcount: '426'
 ht-degree: 0%
@@ -53,7 +53,7 @@ En las secciones siguientes se proporcionan recomendaciones y consideraciones pa
 * Considere utilizar una base de datos esclava para permitir una recuperación rápida y para backups de datos
 * Los sitios de poco tráfico pueden almacenar imágenes en la base de datos
 
-### Buscar
+### Buscar {#search-heading}
 
 * Ajustar el número de instancias en función del tráfico de búsqueda
 
