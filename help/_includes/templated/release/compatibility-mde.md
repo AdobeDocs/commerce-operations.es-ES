@@ -1,7 +1,7 @@
 ---
-source-git-commit: 608c98818243557fe9c1f7dffceb23641b858fa5
+source-git-commit: 9b27ce148570b9480c4a1373c6b82c401742fd88
 workflow-type: tm+mt
-source-wordcount: '2197'
+source-wordcount: '2484'
 ht-degree: 0%
 
 ---
@@ -828,18 +828,80 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       <th colspan="15">Servicio de catálogo</th>
     </tr>
     <tr>
+      <td>Servicio de catálogo 1.4</td>
+      <td>Admitido</span>
+      </td>
+      <td>Admitido</span>
+      </td>
+      <td>No admitido</span>
+      </td>
+      <td>No admitido</span>
+      </td>
+      <td>No admitido</span>
+      </td>
+      <td>No admitido</span>
+      </td>
+      <td>No admitido</span>
+      </td>
+      <td>No admitido</span>
+      </td>
+      <td>No admitido</span>
+      </td>
+      <td>No admitido</span>
+      </td>
+      <td>No admitido</span>
+      </td>
+      <td>No admitido</span>
+      </td>
+      <td>No admitido</span>
+      </td>
+      <td>No admitido</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Servicio de catálogo 1.3</td>
+      <td>Admitido</span>
+      </td>
+      <td>Admitido</span>
+      </td>
+      <td>No admitido</span>
+      </td>
+      <td>No admitido</span>
+      </td>
+      <td>No admitido</span>
+      </td>
+      <td>No admitido</span>
+      </td>
+      <td>No admitido</span>
+      </td>
+      <td>No admitido</span>
+      </td>
+      <td>No admitido</span>
+      </td>
+      <td>No admitido</span>
+      </td>
+      <td>No admitido</span>
+      </td>
+      <td>No admitido</span>
+      </td>
+      <td>No admitido</span>
+      </td>
+      <td>No admitido</span>
+      </td>
+    </tr>
+    <tr>
       <td>Servicio de catálogo 1.1</td>
       <td>Admitido</span>
       </td>
       <td>Admitido</span>
       </td>
-      <td>Admitido</span>
+      <td>No admitido</span>
       </td>
-      <td>Admitido</span>
+      <td>No admitido</span>
       </td>
-      <td>Admitido</span>
+      <td>No admitido</span>
       </td>
-      <td>Admitido</span>
+      <td>No admitido</span>
       </td>
       <td>No admitido</span>
       </td>
@@ -864,13 +926,13 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Admitido</span>
       </td>
-      <td>Admitido</span>
+      <td>No admitido</span>
       </td>
-      <td>Admitido</span>
+      <td>No admitido</span>
       </td>
-      <td>Admitido</span>
+      <td>No admitido</span>
       </td>
-      <td>Admitido</span>
+      <td>No admitido</span>
       </td>
       <td>No admitido</span>
       </td>
@@ -1401,18 +1463,80 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       <th colspan="15">Live Search</th>
     </tr>
     <tr>
+      <td>Live Search 2.0.5</td>
+      <td>Admitido</span>
+      </td>
+      <td>Admitido</span>
+      </td>
+      <td>No admitido</span>
+      </td>
+      <td>No admitido</span>
+      </td>
+      <td>No admitido</span>
+      </td>
+      <td>No admitido</span>
+      </td>
+      <td>No admitido</span>
+      </td>
+      <td>No admitido</span>
+      </td>
+      <td>No admitido</span>
+      </td>
+      <td>No admitido</span>
+      </td>
+      <td>No admitido</span>
+      </td>
+      <td>No admitido</span>
+      </td>
+      <td>No admitido</span>
+      </td>
+      <td>No admitido</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Live Search 2.0.4</td>
+      <td>Admitido</span>
+      </td>
+      <td>Admitido</span>
+      </td>
+      <td>No admitido</span>
+      </td>
+      <td>No admitido</span>
+      </td>
+      <td>No admitido</span>
+      </td>
+      <td>No admitido</span>
+      </td>
+      <td>No admitido</span>
+      </td>
+      <td>No admitido</span>
+      </td>
+      <td>No admitido</span>
+      </td>
+      <td>No admitido</span>
+      </td>
+      <td>No admitido</span>
+      </td>
+      <td>No admitido</span>
+      </td>
+      <td>No admitido</span>
+      </td>
+      <td>No admitido</span>
+      </td>
+    </tr>
+    <tr>
       <td>Live Search 2.0.3</td>
       <td>Admitido</span>
       </td>
       <td>Admitido</span>
       </td>
-      <td>Admitido</span>
+      <td>No admitido</span>
       </td>
-      <td>Admitido</span>
+      <td>No admitido</span>
       </td>
-      <td>Admitido</span>
+      <td>No admitido</span>
       </td>
-      <td>Admitido</span>
+      <td>No admitido</span>
       </td>
       <td>No admitido</span>
       </td>
@@ -1437,13 +1561,13 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Admitido</span>
       </td>
-      <td>Admitido</span>
+      <td>No admitido</span>
       </td>
-      <td>Admitido</span>
+      <td>No admitido</span>
       </td>
-      <td>Admitido</span>
+      <td>No admitido</span>
       </td>
-      <td>Admitido</span>
+      <td>No admitido</span>
       </td>
       <td>No admitido</span>
       </td>
@@ -2377,18 +2501,173 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       <th colspan="15">Cierre rápido</th>
     </tr>
     <tr>
+      <td>Cierre de compra rápido 1.7.0</td>
+      <td>Admitido</span>
+      </td>
+      <td>Admitido</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>No admitido</span>
+      </td>
+      <td>No admitido</span>
+      </td>
+      <td>No admitido</span>
+      </td>
+      <td>No admitido</span>
+      </td>
+      <td>No admitido</span>
+      </td>
+      <td>No admitido</span>
+      </td>
+      <td>No admitido</span>
+      </td>
+      <td>No admitido</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Cierre de compra rápido 1.6.0</td>
+      <td>Admitido</span>
+      </td>
+      <td>Admitido</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>No admitido</span>
+      </td>
+      <td>No admitido</span>
+      </td>
+      <td>No admitido</span>
+      </td>
+      <td>No admitido</span>
+      </td>
+      <td>No admitido</span>
+      </td>
+      <td>No admitido</span>
+      </td>
+      <td>No admitido</span>
+      </td>
+      <td>No admitido</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Cierre de compra rápido 1.5.0</td>
+      <td>Admitido</span>
+      </td>
+      <td>Admitido</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>No admitido</span>
+      </td>
+      <td>No admitido</span>
+      </td>
+      <td>No admitido</span>
+      </td>
+      <td>No admitido</span>
+      </td>
+      <td>No admitido</span>
+      </td>
+      <td>No admitido</span>
+      </td>
+      <td>No admitido</span>
+      </td>
+      <td>No admitido</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Cierre de compra rápido 1.4.0</td>
+      <td>Admitido</span>
+      </td>
+      <td>Admitido</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>No admitido</span>
+      </td>
+      <td>No admitido</span>
+      </td>
+      <td>No admitido</span>
+      </td>
+      <td>No admitido</span>
+      </td>
+      <td>No admitido</span>
+      </td>
+      <td>No admitido</span>
+      </td>
+      <td>No admitido</span>
+      </td>
+      <td>No admitido</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Cierre de compra rápido 1.3.0</td>
+      <td>Admitido</span>
+      </td>
+      <td>Admitido</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>No admitido</span>
+      </td>
+      <td>No admitido</span>
+      </td>
+      <td>No admitido</span>
+      </td>
+      <td>No admitido</span>
+      </td>
+      <td>No admitido</span>
+      </td>
+      <td>No admitido</span>
+      </td>
+      <td>No admitido</span>
+      </td>
+      <td>No admitido</span>
+      </td>
+    </tr>
+    <tr>
       <td>Cierre de compra rápido 1.2.0</td>
       <td>Admitido</span>
       </td>
       <td>Admitido</span>
       </td>
-      <td>Admitido</span>
+      <td>Compatible</span>
       </td>
-      <td>Admitido</span>
+      <td>Compatible</span>
       </td>
-      <td>Admitido</span>
+      <td>Compatible</span>
       </td>
-      <td>No admitido</span>
+      <td>Compatible</span>
       </td>
       <td>No admitido</span>
       </td>
@@ -2511,34 +2790,65 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       <th colspan="15">Recommendations de producto</th>
     </tr>
     <tr>
+      <td>Product Recommendations 4.0.1</td>
+      <td>Admitido</span>
+      </td>
+      <td>Admitido</span>
+      </td>
+      <td>No admitido</span>
+      </td>
+      <td>No admitido</span>
+      </td>
+      <td>No admitido</span>
+      </td>
+      <td>No admitido</span>
+      </td>
+      <td>No admitido</span>
+      </td>
+      <td>No admitido</span>
+      </td>
+      <td>No admitido</span>
+      </td>
+      <td>No admitido</span>
+      </td>
+      <td>No admitido</span>
+      </td>
+      <td>No admitido</span>
+      </td>
+      <td>No admitido</span>
+      </td>
+      <td>No admitido</span>
+      </td>
+    </tr>
+    <tr>
       <td>Product Recommendations 4.0.0</td>
       <td>Admitido</span>
       </td>
       <td>Admitido</span>
       </td>
-      <td>Admitido</span>
+      <td>No admitido</span>
       </td>
-      <td>Admitido</span>
+      <td>No admitido</span>
       </td>
-      <td>Admitido</span>
+      <td>No admitido</span>
       </td>
-      <td>Admitido</span>
+      <td>No admitido</span>
       </td>
-      <td>Admitido</span>
+      <td>No admitido</span>
       </td>
-      <td>Admitido</span>
+      <td>No admitido</span>
       </td>
-      <td>Admitido</span>
+      <td>No admitido</span>
       </td>
-      <td>Admitido</span>
+      <td>No admitido</span>
       </td>
-      <td>Admitido</span>
+      <td>No admitido</span>
       </td>
-      <td>Admitido</span>
+      <td>No admitido</span>
       </td>
-      <td>Admitido</span>
+      <td>No admitido</span>
       </td>
-      <td>Admitido</span>
+      <td>No admitido</span>
       </td>
     </tr>
     <tr>
