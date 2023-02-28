@@ -1,9 +1,9 @@
 ---
 title: Programación de la versión
-description: Descubra cuándo se han programado las versiones específicas de Adobe Commerce para su versión beta, su versión previa al lanzamiento y su disponibilidad general.
+description: Descubra cuándo se han programado versiones específicas de Adobe Commerce para su versión beta, previa al lanzamiento y disponibilidad general.
 source-git-commit: 18338316c78e9c2ef87614044e65517b1f11b16d
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '504'
 ht-degree: 0%
 
 ---

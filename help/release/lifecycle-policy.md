@@ -1,10 +1,10 @@
 ---
 title: Política de ciclo de vida del software
-description: Obtenga información sobre las fechas clave de fin de compatibilidad de software para las versiones de Adobe Commerce.
+description: Obtenga información sobre las fechas clave para el fin de la compatibilidad con software para las versiones de Adobe Commerce.
 source-git-commit: 2612405bed470c4b0e0d501ab36bcfb09ac50e92
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '318'
+ht-degree: 10%
 
 ---
 
