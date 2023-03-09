@@ -1,12 +1,12 @@
 ---
 title: Prácticas recomendadas para la configuración del servicio Redis
-description: Aprenda a mejorar el rendimiento del almacenamiento en caché mediante la implementación de caché de Redis ampliada para Adobe Commerce 2.3.5.
+description: Obtenga información sobre cómo mejorar el rendimiento del almacenamiento en caché mediante la implementación de caché de Redis extendida para Adobe Commerce.
 role: Developer, Admin
 feature-set: Commerce
 feature: Best Practices
-source-git-commit: 12de523cc7ea1486c894d54efe6944d92d87ded0
+source-git-commit: e7888688803d86ec342b156da77adc663475fe20
 workflow-type: tm+mt
-source-wordcount: '380'
+source-wordcount: '439'
 ht-degree: 0%
 
 ---
@@ -14,31 +14,20 @@ ht-degree: 0%
 
 # Prácticas recomendadas para la configuración del servicio Redis
 
-- Para Adobe Commerce 2.3.3 y versiones posteriores implementadas en la infraestructura de nube, actualice a Redis versión 5.0.
-- Para Adobe Commerce versión 2.3.5 o superior, utilice la implementación de caché de Redis extendida. Esta implementación incluye las siguientes optimizaciones para minimizar el número de consultas de Redis que se realizan en cada solicitud de Adobe Commerce:
-   - Reduzca el tamaño de las transferencias de datos de red entre Redis y Adobe Commerce
-   - Reduzca el consumo de Redis de los ciclos de CPU al mejorar la capacidad del adaptador para determinar automáticamente lo que debe cargarse
-   - Reducir las condiciones de carrera en las operaciones de escritura Redis
+- Utilice la implementación de caché de Redis ampliada, que incluye las siguientes optimizaciones para minimizar el número de consultas de Redis que se realizan en cada solicitud de Adobe Commerce:
+   - Reduce el tamaño de las transferencias de datos de red entre Redis y Adobe Commerce
+   - Reduce el consumo de Redis de los ciclos de CPU al mejorar la capacidad del adaptador para determinar automáticamente lo que debe cargarse
+   - Reduce las condiciones de carrera en las operaciones de escritura de Redis
+- Separe la caché de Redis de la sesión de Redis
+- Comprima la caché de Redis y utilice `gzip` para mejorar el rendimiento
 
-## Productos y versiones afectados
+## Implementación de caché de Redis extendida
 
-Adobe Commerce en infraestructura de nube con versión 2.3.3 o posterior.
-Adobe Commerce (todos los métodos de implementación), versión 2.3.5 y posterior
+Actualice la configuración para utilizar la implementación de caché de Redis extendida `\Magento\Framework\Cache\Backend\Redis`.
 
-## Actualización de la versión de Redis para implementaciones en la nube
+### Configuración de implementaciones en la nube
 
-Para implementaciones de Adobe Commerce en infraestructura de nube con Adobe Commerce 2.3.3 o posterior, actualice el servicio Redis a la versión 5.0 de Redis. Para obtener instrucciones, consulte los temas siguientes en la documentación de Adobe Commerce sobre infraestructura de nube:
-
-- [Configuración del servicio Redis](https://devdocs.magento.com/cloud/project/services-redis.html)
-- [Cambiar la versión del servicio](https://devdocs.magento.com/cloud/project/services.html#change-service-version)
-
-## Configurar la implementación de caché de Redis extendida
-
-Para Adobe Commerce 2.3.5 y versiones posteriores, actualice la configuración para que utilice la implementación de caché de Redis extendida `\Magento\Framework\Cache\Backend\Redis`.
-
-### Configuración para implementaciones en la nube
-
-con `ece-tools` 2002.1.1 o superior, configure la caché mejorada de Redis estableciendo la variable `REDIS_BACKEND` variable de implementación en el archivo de configuración de entorno, `.magento.env.yaml`
+Configure la caché de Redis mejorada configurando `REDIS_BACKEND` variable de implementación en `.magento.env.yaml` archivo de configuración.
 
 ```yaml
 stage:
@@ -46,24 +35,123 @@ stage:
     REDIS_BACKEND: '\Magento\Framework\Cache\Backend\Redis'
 ```
 
-Para obtener más información, consulte [Implementar variables > `REDIS_BACKEND`](https://devdocs.magento.com/cloud/env/variables-deploy.html#redis_backend) en la documentación de Adobe Commerce sobre infraestructura de nube.
+Para obtener más información, consulte la [`REDIS_BACKEND`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_backend) descripción de la variable en _Guía de Commerce en la infraestructura de Cloud_.
 
 >[!NOTE]
 >
-> Compruebe la versión de las herramientas de ece instalada en el entorno local de Cloud desde la línea de comandos utilizando la variable `composer show magento/ece-tools` comando. Si es necesario, [actualizar la versión de las herramientas de ece](https://devdocs.magento.com/cloud/project/ece-tools-update.html).
+> Compruebe la `ece-tools` versión instalada en su entorno local desde la línea de comandos utilizando `composer show magento/ece-tools` comando. Si es necesario, [actualizar a la versión más reciente](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html).
 
 >[!WARNING]
 >
->Do _not_ configurar una conexión esclava de Redis para proyectos de infraestructura en la nube con un [arquitectura escalada](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture.html). Esto provoca errores de conexión de Redis. Consulte [las directrices de configuración de Redis](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_use_slave_connection) en el _Comercio en infraestructura de nube_ guía.
-
+>Hacer _no_ configurar una conexión esclava de Redis para proyectos de infraestructura en la nube con una [arquitectura a escala](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture.html). Esto provoca errores de conexión de Redis. Consulte [las directrices de configuración de Redis](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_use_slave_connection) en el _Commerce en infraestructura en la nube_ guía.
 
 ### Configuración de implementaciones locales
 
-Para implementaciones locales de Adobe Commerce, configure la nueva implementación de caché de Redis mediante el `bin/magento:setup` comandos. Para obtener instrucciones, consulte [Usar Redis para la caché predeterminada](../../../configuration/cache/redis-pg-cache.md#configure-redis-page-caching).
+Para implementaciones locales de Adobe Commerce, configure la nueva implementación de caché de Redis con el `bin/magento:setup` comandos. Para obtener instrucciones, consulte [Usar Redis para la caché predeterminada](../../../configuration/cache/redis-pg-cache.md#configure-redis-page-caching).
+
+## Instancias de caché y sesión independientes
+
+Separar la caché de Redis de la sesión de Redis le permite administrar la caché y las sesiones de forma independiente para evitar que los problemas de caché afecten a las sesiones.
+
+1. Actualice el `.magento/services.yaml` archivo de configuración.
+
+   ```yaml
+   mysql:
+       type: mysql:10.4
+       disk: 35000
+   
+   redis:
+      type: redis:6.0
+   
+   redis-session:              # This is for the new Redis instance
+      type: redis:6.0
+   
+   search:
+      type: elasticsearch:7.9
+      disk: 5000
+   
+   rabbitmq:
+      type: rabbitmq:3.8
+      disk: 2048
+   ```
+
+1. Actualice el `.magento.app.yaml` archivo de configuración.
+
+   ```yaml
+   relationships:
+       database: "mysql:mysql"
+       redis: "redis:redis"
+       redis-session: "redis-session:redis"   # Relationship of the new Redis instance
+       search: "search:elasticsearch"
+       rabbitmq: "rabbitmq:rabbitmq"
+   ```
+
+1. Enviar un [ticket de asistencia de Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) para cambiar la configuración del servicio Redis en los entornos de producción y ensayo de Pro. Incluir el actualizado `.magento/services.yaml` y `.magento.app.yaml` archivos de configuración.
+
+1. Compruebe que la nueva instancia se esté ejecutando y anote el número de puerto.
+
+   ```bash
+   echo $MAGENTO_CLOUD_RELATIONSHIPS | base64 -d | json_pp
+   ```
+
+1. Agregue el número de puerto al `.magento.env.yaml` archivo de configuración.
+
+   >[!NOTE]
+   >`disable_locking` se debe establecer en `1`.
+
+   ```yaml
+   SESSION_CONFIGURATION:
+     _merge: true
+    redis:
+       port: 6374       # check the port in $MAGENTO_CLOUD_RELATIONSHIPS
+       timeout: 5
+       disable_locking: 1
+       bot_first_lifetime: 60
+       bot_lifetime: 7200
+       max_lifetime: 2592000
+       min_lifetime: 60
+   ```
+
+1. Eliminación de sesiones de [base de datos predeterminada](../../../configuration/cache/redis-pg-cache.md) (`db 0`) en la instancia de caché de Redis.
+
+   ```bash
+   redis-cli -h 127.0.0.1 -p 6374 -n 0 FLUSHDB
+   ```
+
+Durante la implementación, debería ver las siguientes líneas en la [registro de generación e implementación](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html#build-and-deploy-logs):
+
+```terminal
+W:   - Downloading colinmollenhour/credis (1.11.1)
+W:   - Downloading colinmollenhour/php-redis-session-abstract (v1.4.5)
+...
+W:   - Installing colinmollenhour/credis (1.11.1): Extracting archive
+W:   - Installing colinmollenhour/php-redis-session-abstract (v1.4.5): Extracting archive
+...
+[2022-08-17 01:13:40] INFO: Version of service 'redis' is 6.0
+[2022-08-17 01:13:40] INFO: Version of service 'redis-session' is 6.0
+[2022-08-17 01:13:40] INFO: redis-session will be used for session if it was not override by SESSION_CONFIGURATION
+```
+
+## Compresión de caché
+
+Utilice la compresión de caché, pero tenga en cuenta que existe un equilibrio entre el rendimiento del lado del cliente y el de terceros. Si tiene CPU de reserva, actívela. Consulte [Usar Redis para el almacenamiento de sesión](../../../configuration/cache/redis-session.md).
+
+```yaml
+stage:
+  deploy:
+    REDIS_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
+    CACHE_CONFIGURATION:
+    _merge: true;
+      frontend:
+        default:
+            backend_options:
+              compress_data: 4              # 0-9
+              compress_tags: 4              # 0-9
+              compress_threshold: 20480     # don't compress files smaller than this value
+              compression_lib: 'gzip'       # snappy and lzf for performance, gzip for high compression (~69%)
+```
 
 ## Información adicional
 
-- [Versión 2.3.5 de Adobe Commerce: mejoras de rendimiento](https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-5-commerce.html#performance-boosts)
-- [Redis Page Cache](../../../configuration/cache/redis-pg-cache.md)
-
-
+- [Caché de página de Redis](../../../configuration/cache/redis-pg-cache.md)
+- [Usar Redis para el almacenamiento de sesión](../../../configuration/cache/redis-session.md)
