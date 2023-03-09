@@ -1,8 +1,8 @@
 ---
-source-git-commit: 8f4575e529cff1e11544f6df66bd486709e3d826
+source-git-commit: b29d19aefcea15e2242f5ac6d5850aff063a68c8
 workflow-type: tm+mt
-source-wordcount: '238'
-ht-degree: 62%
+source-wordcount: '214'
+ht-degree: 69%
 
 ---
 # Requisitos del sistema
@@ -13,7 +13,7 @@ ht-degree: 62%
       <th>
         Dependencias de software
       </th>
-      <th>2.4.5-p1</th>
+      <th>2,4,5-p1</th>
       <th>2.4.5</th>
       <th>2.4.4-p2</th>
       <th>2.4.4-p1</th>
@@ -28,7 +28,7 @@ ht-degree: 62%
   </thead>
   <tbody>
     <tr>
-      <td><span class="uicontrol">Compositor</span></td>
+      <td><span class="uicontrol">[!DNL Composer]</span></td>
       <td>
             2.2
       </td>
@@ -64,7 +64,7 @@ ht-degree: 62%
       </td>
     </tr>
     <tr>
-      <td><span class="uicontrol">Elasticsearch</span></td>
+      <td><span class="uicontrol">[!DNL Elasticsearch]</span></td>
       <td>
             7.17
       </td>
@@ -100,7 +100,7 @@ ht-degree: 62%
       </td>
     </tr>
     <tr>
-      <td><span class="uicontrol">OpenSearch</span></td>
+      <td><span class="uicontrol">[!DNL OpenSearch]</span></td>
       <td>
             1.2
       </td>
@@ -136,7 +136,7 @@ ht-degree: 62%
       </td>
     </tr>
     <tr>
-      <td><span class="uicontrol">MariaDB</span></td>
+      <td><span class="uicontrol">[!DNL MariaDB]</span></td>
       <td>
             10.4
       </td>
@@ -172,7 +172,7 @@ ht-degree: 62%
       </td>
     </tr>
     <tr>
-      <td><span class="uicontrol">MySQL</span></td>
+      <td><span class="uicontrol">[!DNL MySQL]</span></td>
       <td>
             8.0
       </td>
@@ -208,7 +208,7 @@ ht-degree: 62%
       </td>
     </tr>
     <tr>
-      <td><span class="uicontrol">PHP</span></td>
+      <td><span class="uicontrol">[!DNL PHP]</span></td>
       <td>
             8.1
       </td>
@@ -244,7 +244,7 @@ ht-degree: 62%
       </td>
     </tr>
     <tr>
-      <td><span class="uicontrol">RabbitMQ</span></td>
+      <td><span class="uicontrol">[!DNL RabbitMQ]</span></td>
       <td>
             3.9
       </td>
@@ -280,7 +280,7 @@ ht-degree: 62%
       </td>
     </tr>
     <tr>
-      <td><span class="uicontrol">Redis</span></td>
+      <td><span class="uicontrol">[!DNL Redis]</span></td>
       <td>
             6.2
       </td>
@@ -316,7 +316,7 @@ ht-degree: 62%
       </td>
     </tr>
     <tr>
-      <td><span class="uicontrol">Varniz</span></td>
+      <td><span class="uicontrol">[!DNL Varnish]</span></td>
       <td>
             7.0
       </td>
@@ -352,7 +352,7 @@ ht-degree: 62%
       </td>
     </tr>
     <tr>
-      <td><span class="uicontrol">Apache</span></td>
+      <td><span class="uicontrol">[!DNL Apache]</span></td>
       <td>
             2.4
       </td>
@@ -388,7 +388,7 @@ ht-degree: 62%
       </td>
     </tr>
     <tr>
-      <td><span class="uicontrol">nginx</span></td>
+      <td><span class="uicontrol">[!DNL nginx]</span></td>
       <td>
             1.18
       </td>
@@ -424,7 +424,7 @@ ht-degree: 62%
       </td>
     </tr>
     <tr>
-      <td><span class="uicontrol">AWS Aurora (MySQL)</span></td>
+      <td><span class="uicontrol">[!DNL AWS Aurora (MySQL)]</span></td>
       <td>
             8.0
       </td>
@@ -460,7 +460,7 @@ ht-degree: 62%
       </td>
     </tr>
     <tr>
-      <td><span class="uicontrol">AWS S3</span></td>
+      <td><span class="uicontrol">[!DNL AWS S3]</span></td>
       <td>
             ✔️
       </td>
@@ -496,7 +496,7 @@ ht-degree: 62%
       </td>
     </tr>
     <tr>
-      <td><span class="uicontrol">AWS MQ</span></td>
+      <td><span class="uicontrol">[!DNL AWS MQ]</span></td>
       <td>
             3.9.13
       </td>
@@ -532,7 +532,7 @@ ht-degree: 62%
       </td>
     </tr>
     <tr>
-      <td><span class="uicontrol">AWS ElastiCache</span></td>
+      <td><span class="uicontrol">[!DNL AWS ElastiCache]</span></td>
       <td>
             Redis 6
       </td>
@@ -568,7 +568,7 @@ ht-degree: 62%
       </td>
     </tr>
     <tr>
-      <td><span class="uicontrol">Elasticsearch de AWS</span></td>
+      <td><span class="uicontrol">[!DNL AWS Elasticsearch]</span></td>
       <td>
             7.9
       </td>
@@ -604,7 +604,7 @@ ht-degree: 62%
       </td>
     </tr>
     <tr>
-      <td><span class="uicontrol">AWS OpenSearch</span></td>
+      <td><span class="uicontrol">[!DNL AWS OpenSearch]</span></td>
       <td>
             1.2
       </td>
@@ -644,4 +644,4 @@ ht-degree: 62%
 
 >[!IMPORTANT]
 >
->La versión del servicio y la compatibilidad con Adobe Commerce en la infraestructura de la nube están determinadas por las versiones implementadas en la infraestructura de la nube y, a veces, difieren de las versiones admitidas por las implementaciones locales de Adobe Commerce. Consulte [Software y servicios compatibles](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/cloud-architecture.html#supported-software-and-services) en el _Guía de Cloud_.
+>La compatibilidad y la versión del servicio para Adobe Commerce en la infraestructura en la nube están determinadas por las versiones implementadas en la infraestructura en la nube y, a veces, difieren de las versiones admitidas por las implementaciones locales de Adobe Commerce. Consulte [Software y servicios compatibles](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/cloud-architecture.html#supported-software-and-services) en el _Guía de Cloud_.
