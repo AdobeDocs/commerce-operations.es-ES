@@ -1,7 +1,7 @@
 ---
-user-guide-title: Información de la versión
-user-guide-description: Obtenga información sobre las versiones de Adobe Commerce y Magento Open Source.
-source-git-commit: c08c48b0dc01867ba0a67871d01f1150f43242e4
+user-guide-title: Información de versión
+user-guide-description: Obtenga información acerca de las versiones de Adobe Commerce y Magento Open Source.
+source-git-commit: 841c6861c6b7a7341f334ba449b6270b31a34e94
 workflow-type: tm+mt
 source-wordcount: '90'
 ht-degree: 15%
@@ -9,9 +9,9 @@ ht-degree: 15%
 ---
 
 
-# Información de la versión {#release}
+# Información de versión {#release}
 
-- Notas de la versión {#notes}
+- Notas de versión {#notes}
    - [Información general](release-notes/overview.md)
    - [Cambios incompatibles con versiones anteriores](backward-incompatible-changes.md)
    - Adobe Commerce {#adobe-commerce}
@@ -31,26 +31,26 @@ ht-degree: 15%
       - [2.4.1](release-notes/open-source/2-4-1.md)
       - [2.4.0](release-notes/open-source/2-4-0.md)
    - Versiones de parches de seguridad {#security-patches}
-   - [2.4.5-p2](release-notes/security/2-4-5-p2.md)
-   - [2.4.5-p1](release-notes/security/2-4-5-p1.md)
-   - [2.4.4-p3](release-notes/security/2-4-4-p3.md)
-   - [2.4.4-p2](release-notes/security/2-4-4-p2.md)
-   - [2.4.4-p1](release-notes/security/2-4-4-p1.md)
-   - [2.4.3-p3](release-notes/security/2-4-3-p3.md)
-   - [2.4.3-p2](release-notes/security/2-4-3-p2.md)
-   - [2.4.3-p1](release-notes/security/2-4-3-p1.md)
-   - [2.4.2-p2](release-notes/security/2-4-2-p2.md)
+      - [2,4,5-p2](release-notes/security/2-4-5-p2.md)
+      - [2,4,5-p1](release-notes/security/2-4-5-p1.md)
+      - [2.4.4-p3](release-notes/security/2-4-4-p3.md)
+      - [2.4.4-p2](release-notes/security/2-4-4-p2.md)
+      - [2.4.4-p1](release-notes/security/2-4-4-p1.md)
+      - [2.4.3-p3](release-notes/security/2-4-3-p3.md)
+      - [2.4.3-p2](release-notes/security/2-4-3-p2.md)
+      - [2.4.3-p1](release-notes/security/2-4-3-p1.md)
+      - [2.4.2-p2](release-notes/security/2-4-2-p2.md)
 - [Versiones publicadas](versions.md)
-- [Funciones por versión](features.md)
+- [Características por versión](features.md)
 - [Disponibilidad del producto](product-availability.md)
 - [Hoja de ruta del producto](product-roadmap.md)
 - [Programa beta](beta-program.md)
 - Planificación y políticas {#planning}
-   - [Política del ciclo vital](lifecycle-policy.md)
-   - [Política de versiones](versioning-policy.md)
-   - [Programación de la versión](schedule.md)
+   - [Política de ciclo vital](lifecycle-policy.md)
+   - [Directiva de versiones](versioning-policy.md)
+   - [Programación de versiones](schedule.md)
 - Paquetes {#packages}
    - [Adobe Commerce](packages/adobe-commerce.md)
    - [Paquetes de nube para Adobe Commerce](packages/cloud.md)
    - [Magento Open Source](packages/magento-open-source.md)
-- [Volver a las guías operativas](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
+- [Volver a Guías operativas](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
