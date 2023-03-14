@@ -1,15 +1,15 @@
 ---
-title: Configurar Apache para su motor de búsqueda
+title: Configuración de Apache para el motor de búsqueda
 description: Siga estos pasos para configurar un motor de búsqueda con el servidor web Apache para instalaciones locales de Adobe Commerce y Magento Open Source.
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+source-git-commit: d3cfd97450164d38fd340b538099739601573d64
 workflow-type: tm+mt
-source-wordcount: '662'
+source-wordcount: '651'
 ht-degree: 0%
 
 ---
 
 
-# Configurar Apache para su motor de búsqueda
+# Configuración de Apache para el motor de búsqueda
 
 {{$include /help/_includes/web-server-communication.md}}
 
@@ -17,32 +17,32 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->La compatibilidad con OpenSearch se ha agregado en la versión 2.4.4. OpenSearch es una ramificación de Elasticsearch compatible. Todas las instrucciones para configurar el Elasticsearch 7 se aplican a OpenSearch. Consulte [Migrar Elasticsearch a OpenSearch](../../../upgrade/prepare/opensearch-migration.md) para obtener más información.
+>Se ha añadido compatibilidad con OpenSearch en 2.4.4. OpenSearch es una ramificación compatible de Elasticsearch. Consulte [Migrar Elasticsearch a OpenSearch](../../../upgrade/prepare/opensearch-migration.md) para obtener más información.
 
-Esta sección trata sobre cómo configurar Apache como un *unsecure* para que Adobe Commerce o el Magento Open Source puedan utilizar un motor de búsqueda que se ejecute en este servidor. En esta sección no se analiza la configuración de la autenticación básica HTTP; que se analiza en [Comunicación segura con Apache](#secure-communication-with-apache).
+En esta sección se explica cómo configurar Apache como un *inseguro* para que Adobe Commerce pueda utilizar un motor de búsqueda que se ejecute en este servidor. Esta sección no trata sobre la configuración de la autenticación HTTP Basic; se trata en [Comunicación segura con Apache](#secure-communication-with-apache).
 
 >[!NOTE]
 >
->La razón por la que el proxy no está protegido en este ejemplo es que es más fácil configurarlo y verificarlo. Puede utilizar TLS con este proxy. Si desea hacerlo, asegúrese de agregar la información del proxy a la configuración segura del host virtual.
+>La razón por la que el proxy no está protegido en este ejemplo es que es más fácil de configurar y verificar. Puede utilizar TLS con este proxy. Si desea hacerlo, asegúrese de añadir la información del proxy a la configuración de su host virtual seguro.
 
 ### Configuración de un proxy para Apache 2.4
 
 En esta sección se explica cómo configurar un proxy mediante un host virtual.
 
-1. Habilitar `mod_proxy` de la siguiente manera:
+1. Activar `mod_proxy` como sigue:
 
    ```bash
    a2enmod proxy_http
    ```
 
-1. Usar un editor de texto para abrir `/etc/apache2/sites-available/000-default.conf`
+1. Use un editor de texto para abrir `/etc/apache2/sites-available/000-default.conf`
 1. Agregue la siguiente directiva en la parte superior del archivo:
 
    ```conf
    Listen 8080
    ```
 
-1. Añada lo siguiente en la parte inferior del archivo :
+1. Agregue lo siguiente en la parte inferior del archivo:
 
    ```conf
    <VirtualHost *:8080>
@@ -63,13 +63,13 @@ En esta sección se explica cómo configurar un proxy mediante un host virtual.
    curl -i http://localhost:<proxy port>/_cluster/health
    ```
 
-   Por ejemplo, si está utilizando Elasticsearch y su proxy utiliza el puerto 8080:
+   Por ejemplo, si utiliza Elasticsearch y el proxy utiliza el puerto 8080:
 
    ```bash
    curl -i http://localhost:8080/_cluster/health
    ```
 
-   Los mensajes similares a los que se muestran a continuación indican que se ha realizado correctamente:
+   Se muestran mensajes similares a los siguientes para indicar que se ha realizado correctamente:
 
    ```terminal
    HTTP/1.1 200 OK
@@ -83,18 +83,18 @@ En esta sección se explica cómo configurar un proxy mediante un host virtual.
 
 ## Comunicación segura con Apache
 
-Esta sección trata sobre cómo proteger la comunicación entre Apache y el motor de búsqueda mediante [HTTP básico](https://datatracker.ietf.org/doc/html/rfc2617) autenticación con Apache. Para obtener más opciones, consulte uno de los siguientes recursos:
+En esta sección se explica cómo proteger la comunicación entre Apache y el motor de búsqueda mediante [HTTP Basic](https://datatracker.ietf.org/doc/html/rfc2617) autenticación con Apache. Para obtener más opciones, consulte uno de los siguientes recursos:
 
 * [Tutorial de autenticación y autorización de Apache 2.4](https://httpd.apache.org/docs/2.4/howto/auth.html)
 
 Consulte una de las siguientes secciones:
 
 * [Crear un archivo de contraseña](#create-a-password)
-* [Configurar el host virtual seguro](#secure-communication-with-apache)
+* [Configure su host virtual seguro](#secure-communication-with-apache)
 
 ### Crear una contraseña
 
-Por motivos de seguridad, puede localizar el archivo de contraseña en cualquier lugar excepto en el docroot de su servidor web. En este ejemplo, se muestra cómo almacenar el archivo de contraseña en un nuevo directorio.
+Por motivos de seguridad, puede localizar el archivo de contraseña en cualquier lugar excepto en el servidor web docroot. En este ejemplo, se muestra cómo almacenar el archivo de contraseña en un nuevo directorio.
 
 #### Instale htpasswd si es necesario
 
@@ -106,7 +106,7 @@ Primero, compruebe si tiene el Apache `htpasswd` se instala de la siguiente mane
    which htpasswd
    ```
 
-   Si se muestra una ruta, se instala; si el comando no devuelve ningún resultado, `htpasswd` no está instalado.
+   Si se muestra una ruta, se instala; si el comando no devuelve ninguna salida, `htpasswd` no está instalado.
 
 1. Si es necesario, instale `htpasswd`:
 
@@ -133,17 +133,17 @@ Donde
 
    En este ejemplo, utilizamos el usuario del servidor web, pero la elección del usuario depende de usted.
 
-   * Configuración del Elasticsearch: el nombre del usuario `magento_elasticsearch` en este ejemplo
+   * Configuración del Elasticsearch: el nombre del usuario es `magento_elasticsearch` en este ejemplo
 
 
-* `<password file name>` debe ser un archivo oculto (comienza con `.`) y debe reflejar el nombre del usuario. Consulte los ejemplos que aparecen más adelante en esta sección para obtener más información.
+* `<password file name>` debe ser un archivo oculto (comienza por `.`) y deben reflejar el nombre del usuario. Consulte los ejemplos que aparecen más adelante en esta sección para obtener más información.
 
-Siga las indicaciones de la pantalla para crear una contraseña para el usuario.
+Siga las indicaciones de la pantalla para crear una contraseña de usuario.
 
 #### Ejemplos
 
 **Ejemplo 1: cron**
-Debe configurar la autenticación de solo un usuario para cron; en este ejemplo, utilizamos el usuario del servidor web. Para crear un archivo de contraseña para el usuario del servidor web, introduzca los siguientes comandos:
+Debe configurar la autenticación solo para un usuario para cron; en este ejemplo, utilizamos el usuario del servidor web. Para crear un archivo de contraseña para el usuario del servidor web, introduzca los siguientes comandos:
 
 ```bash
 mkdir -p /usr/local/apache/password
@@ -154,7 +154,7 @@ htpasswd -c /usr/local/apache/password/.htpasswd apache
 ```
 
 **Ejemplo 2: Elasticsearch**
-Debe configurar la autenticación para dos usuarios: una con acceso a nginx y otra con acceso a Elasticsearch. Para crear archivos de contraseña para estos usuarios, introduzca los siguientes comandos:
+Debe configurar la autenticación para dos usuarios: uno con acceso a nginx y otro con acceso a Elasticsearch. Para crear archivos de contraseña para estos usuarios, introduzca los siguientes comandos:
 
 ```bash
 mkdir -p /usr/local/apache/password
@@ -164,9 +164,9 @@ mkdir -p /usr/local/apache/password
 htpasswd -c /usr/local/apache/password/.htpasswd_elasticsearch magento_elasticsearch
 ```
 
-#### Agregar usuarios adicionales
+#### Añadir usuarios adicionales
 
-Para agregar otro usuario al archivo de contraseña, introduzca el siguiente comando como usuario con `root` privilegios:
+Para agregar otro usuario al archivo de contraseñas, escriba el siguiente comando como usuario con `root` privilegios:
 
 ```bash
 htpasswd /usr/local/apache/password/.htpasswd <username>
@@ -174,11 +174,11 @@ htpasswd /usr/local/apache/password/.htpasswd <username>
 
 ### Comunicación segura con Apache
 
-Esta sección describe cómo configurar [Autenticación HTTP básica](https://httpd.apache.org/docs/2.2/howto/auth.html). El uso conjunto de autenticación TLS y HTTP Basic evita que cualquier persona intercepte comunicaciones con el Elasticsearch o con el servidor de aplicaciones.
+En esta sección se explica cómo configurar [Autenticación HTTP básica](https://httpd.apache.org/docs/2.2/howto/auth.html). El uso conjunto de autenticación TLS y HTTP Basic evita que cualquier persona intercepte la comunicación con Elasticsearch o OpenSearch, o con su servidor de aplicaciones.
 
-Esta sección explica cómo especificar quién puede acceder al servidor Apache.
+En esta sección se explica cómo especificar quién puede acceder al servidor Apache.
 
-1. Utilice un editor de texto para agregar el siguiente contenido a su host virtual seguro.
+1. Utilice un editor de texto para añadir el siguiente contenido a su host virtual seguro.
 
    * Apache 2.4: Editar `/etc/apache2/sites-available/default-ssl.conf`
 
@@ -188,7 +188,7 @@ Esta sección explica cómo especificar quién puede acceder al servidor Apache.
        Allow from all
    
        AuthType Basic
-       AuthName "Elastic Server"
+       AuthName "Elasticsearch Server" # or OpenSearch Server
        AuthBasicProvider file
        AuthUserFile /usr/local/apache/password/.htpasswd_elasticsearch
        Require valid-user
@@ -200,7 +200,7 @@ Esta sección explica cómo especificar quién puede acceder al servidor Apache.
    </Proxy>
    ```
 
-1. Si agregó el anterior al host virtual seguro, elimine `Listen 8080` y `<VirtualHost *:8080>` directivas agregadas anteriormente al host virtual no seguro.
+1. Si agregó el anterior a su host virtual seguro, quite `Listen 8080` y el `<VirtualHost *:8080>` directivas que agregó anteriormente a su host virtual no seguro.
 
 1. Guarde los cambios, salga del editor de texto y reinicie Apache:
 

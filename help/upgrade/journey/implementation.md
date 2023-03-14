@@ -1,87 +1,87 @@
 ---
 title: Implementación de actualización
-description: Obtenga información sobre las distintas fases de implementación de la actualización para proyectos de Adobe Commerce y Magento Open Source.
-source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
+description: Obtenga información acerca de las diferentes fases de la implementación de actualización para proyectos de Adobe Commerce.
+source-git-commit: 5e02f300bb0b5601c653fdea1dd5b85f4e18ed9c
 workflow-type: tm+mt
-source-wordcount: '869'
+source-wordcount: '824'
 ht-degree: 1%
 
 ---
 
 
-# Implementación de actualización
+# Actualizar implementación
 
 La implementación de la actualización consta de cinco fases:
 
 - Análisis de actualización
-- Desarrollo y garantía de calidad
-- Pruebas de aceptación del usuario (UAT) y preparación para el inicio
+- Desarrollo y control de calidad (QA)
+- Pruebas de aceptación de usuarios (UAT) y preparación para el lanzamiento
 - Launch
 - Posterior al lanzamiento
 
 ## Análisis de actualización
 
-Podría decirse que el análisis es la parte más importante del proceso de actualización. Un análisis bien ejecutado le ahorra tiempo y limita las sorpresas futuras. El resultado de esta fase debe ser una lista de comprobación de actualización detallada y un documento con todas las dependencias.
+El análisis es posiblemente la parte más importante del proceso de actualización. Un análisis bien ejecutado le ahorra tiempo y limita las sorpresas en el futuro. El resultado de esta fase debe ser una lista de comprobación de actualización detallada y un documento con todas las dependencias.
 
 Los siguientes son elementos que puede que desee incluir en un análisis exhaustivo:
 
-- **Alcance de la versión de target**—Documentación sobre [Documentos de desarrollo comercial](https://devdocs.magento.com) y la información de los seminarios web de la versión del socio le proporcionan todos los detalles que debe conocer sobre su actualización de destino.
+- **Ámbito de la versión de Target**: documentación sobre [Experience League](../../release/release-notes/overview.md) y la información de los seminarios web de versiones de socios proporcionan todos los detalles que debe conocer sobre la actualización de target.
 
-- **[!DNL Upgrade Compatibility Tool]resultados**: esta herramienta facilita y agiliza cualquier actualización comparando el código actual con el código de la versión de destino y produciendo un informe de todos los problemas que deben solucionarse. Consulte la [[!DNL Upgrade Compatibility Tool]](../upgrade-compatibility-tool/overview.md). Los detalles clave del informe incluyen:
+- **[!DNL Upgrade Compatibility Tool]resultados**: esta herramienta hace que cualquier actualización sea más rápida y sencilla comparando el código actual con el código de la versión de destino y generando un informe de todos los problemas que deben solucionarse. Consulte la [[!DNL Upgrade Compatibility Tool]](../upgrade-compatibility-tool/overview.md). Los detalles clave del informe incluyen:
 
    - Versión instalada actual
-   - Actualizar la versión de destino
+   - Actualizar versión de destino
    - Número y detalles de errores críticos encontrados
 
-- Actualización de servicios para admitir la versión de destino. Utilice la siguiente plantilla de tabla para asignar los servicios que debe actualizar. Utilice la variable [requisitos del sistema](../../installation/system-requirements.md) para determinar qué añadir a la variable _Actualizar a_ para abrir el Navegador.
+- Actualización de servicios para admitir la versión de destino. Utilice la siguiente plantilla de tabla para asignar los servicios que debe actualizar. Utilice el [requisitos del sistema](../../installation/system-requirements.md) para determinar qué añadir al _Actualizar a_ columna.
 
 
    | Servicio | Versión actual | Actualizar a | Notas |
    |-----------------|-----------------|------------|----------------------------------------------------------|
-   | PHP | 7,2,33 | 8,1 |  |
-   | Redis | 5,05 | 6,0 |  |
-   | [!DNL RabbitMQ] | 3,7 | 3,8 | No se está utilizando actualmente, pero debemos considerar su uso |
-   | MariaDB (Cloud) | 10.2.33 | 10,4 |  |
-   | MySQL | 8,0 |  |  |
-   | Compositor | 1.9.2 | 2,0 |  |
-   | Elasticsearch | 7,7 | 7,10 |  |
+   | PHP | 7.4 | 8.1 |  |
+   | Redis | 6.0 | 6.2 |  |
+   | [!DNL RabbitMQ] | 3.8 | 3.9 | No se está utilizando actualmente, pero deberíamos considerar su uso |
+   | MariaDB (Cloud) | 10.4 | 10.6 |  |
+   | MySQL | 8.0 | -/-/ |  |
+   | Compositor | 1.9.2 | 2.2 |  |
+   | Elasticsearch | 7.10 | 7.17 |  |
 
-- **Extensiones y módulos de terceros**: utilice esta plantilla de tabla para comprender el estado de sus extensiones y personalizaciones, de modo que pueda tomar decisiones estratégicas y definir acciones. Esta es una oportunidad para reemplazar cualquier extensión que pueda ser nativa de Adobe Commerce o Magento Open Source para minimizar la complejidad del proyecto. Utilice la variable `bin/magento module:status` para ver una lista de módulos y extensiones.
+- **Extensiones y módulos de terceros**: utilice esta plantilla de tabla para comprender el estado de las extensiones y personalizaciones, de modo que pueda tomar decisiones estratégicas y definir acciones. Esta es una oportunidad para reemplazar cualquier extensión que pueda ser nativa de Adobe Commerce o Magento Open Source para minimizar la complejidad del proyecto. Utilice el `bin/magento module:status` para ver una lista de módulos y extensiones.
 
-   | # | Extensión/<br>nombre del módulo | Paquete de compositor | Proveedor | Versión actual | Funcionalidad | Compatible con la última versión<br>Versión comercial? | Problemas | ¿Nativo en comercio? | Acción | Notas |
+   | # | Extensión/<br>nombre del módulo | Paquete Composer | Proveedor | Versión actual | Funcionalidad | Compatible con lo último<br>¿Versión de Commerce? | Problemas | ¿Nativo de Commerce? | Acción | Notas |
    |---|-----------------------------|------------------------------------|-------------|-------------------|-----------------------|---------------------------------------------|--------------------------------------------------|---------------------|-------------------------|-------|
-   | 1 | Nombre y vínculo de la extensión | extension/<br>extensionx-magento-2 | Nombre del proveedor | Versión instalada | Requisitos empresariales | Sí/No | Lista de problemas identificados con esta extensión | Sí/No | Mantener/Reemplazar/<br>Eliminar |  |
+   | 1 | Nombre de la extensión y vínculo | extension/<br>extensionx-magento-2 | Nombre del proveedor | Versión instalada | Requisitos empresariales | Sí/No | Enumerar los problemas identificados que enfrenta esta extensión | Sí/No | Conservar/Reemplazar/<br>Eliminar |  |
 
-- **Módulos personalizados**: similar a la tabla de módulos de terceros, esta plantilla le ayuda a realizar un seguimiento y comprender el estado y las acciones necesarias para actualizar los módulos personalizados.
+- **Módulos personalizados**: similar a la tabla de módulos de terceros, esta plantilla le ayuda a realizar un seguimiento y comprender el estado y las acciones necesarias para actualizar módulos personalizados.
 
-   | # | Nombre del módulo | Funcionalidad | ¿Requerido? | ¿Nativo en comercio? | Acción | Notas |
+   | # | Nombre de módulo | Funcionalidad | ¿Requerido? | ¿Nativo de Commerce? | Acción | Notas |
    |---|--------------|-----------------------|-----------|---------------------|---------------------|-------|
-   | 1 | Nombre del módulo | Requisitos empresariales | Sí/No | Sí/No | Mantener/Reemplazar/Quitar |  |
+   | 1 | Nombre de módulo | Requisitos empresariales | Sí/No | Sí/No | Conservar/Reemplazar/Quitar |  |
 
-- **Paquetes de compositor y dependencias en composer.json que requieren una actualización.**
+- **Paquetes del compositor y dependencias en composer.json que requieren una actualización.**
 
-Además, los socios pueden participar en la [Programa Beta de Adobe Commerce](https://devdocs.magento.com/release/beta-program.html) y utilice las oportunidades previas al lanzamiento para obtener acceso anticipado al código para una próxima versión. Obtener acceso al código antes de tiempo ayuda a los desarrolladores a prepararse con tiempo suficiente para completar la actualización antes de la fecha de disponibilidad general (GA). El código beta se suele publicar cinco semanas antes de la fecha de GA y los lanzamientos previos se lanzan con dos semanas de anticipación. Para la versión 2.4.4, Adobe comenzó a publicar código beta cinco meses antes de la fecha de disponibilidad general (8 de marzo de 2022), de modo que los socios puedan empezar a prepararse para esa actualización ya [registro para el programa](https://community.magento.com/t5/Magento-DevBlog/BREAKING-NEWS-2-4-4-beta-releases-are-coming-soon/ba-p/484310).
+Además, los socios pueden participar en [Versiones beta de Adobe Commerce](../../release/beta.md) y utilice las oportunidades previas al lanzamiento para obtener acceso anticipado al código de una próxima versión. El acceso anticipado al código ayuda a los desarrolladores a prepararse con tiempo suficiente para completar la actualización antes de la fecha de disponibilidad general (GA). El código beta se suele publicar cinco semanas antes de la fecha de GA y las versiones preliminares se publican dos semanas antes.
 
 ## Desarrollo y control de calidad
 
-La prueba es la fase de una actualización que requiere la mayor cantidad de tiempo. Como resultado, este proceso debe ser lo más automatizado posible. La variable _[Guía de prueba de aplicaciones](https://developer.adobe.com/commerce/testing/guide/)_ proporciona detalles sobre cómo configurar y utilizar herramientas de prueba de sistemas y plataformas para un control de calidad más rápido. Utilice un entorno de ensayo para probar y validar la actualización antes de pasar a producción.
+Las pruebas son la fase de una actualización que requiere más tiempo. Como resultado, este proceso debe ser lo más automatizado posible. El _[Guía de prueba de aplicaciones](https://developer.adobe.com/commerce/testing/guide/)_ proporciona detalles sobre cómo configurar y utilizar las herramientas de prueba de sistemas y plataformas para un control de calidad más rápido. Utilice un entorno de ensayo para probar y validar la actualización antes de pasar a producción.
 
 ## UAT y preparación para el lanzamiento
 
-UAT es una de las últimas etapas de la actualización que requiere revisar y validar el sitio. También debe decidir cuándo implementar y si necesita una página de mantenimiento. Planifique procesos cron y mensajes de terceros.
+UAT es una de las últimas etapas de la actualización que requiere la revisión y validación del sitio. También debe decidir cuándo implementar y si necesita una página de mantenimiento. Planifique los procesos de cron y los mensajes de terceros.
 
-A medida que se acerca la fecha de despliegue, la comunicación es esencial. Si hay más personas que sepan del cambio en el horizonte, cómo les afecta y cómo deben abordarlo, entonces es más probable que tenga un lanzamiento exitoso. No tengas miedo de comunicar demasiado cada paso del camino, ¡aumenta la probabilidad de reseñas brillantes de todos los involucrados una vez que vayas en vivo!
+A medida que se acerca la fecha de despliegue, la comunicación es esencial. Si más personas conocen el cambio en el horizonte, cómo les afecta y cómo deben abordarlo, entonces es más probable que su lanzamiento sea exitoso. No tenga miedo de comunicar en exceso cada paso del camino: aumenta la probabilidad de reseñas brillantes de todos los involucrados una vez que salga en vivo.
 
 ## Launch
 
-Complete la actualización implementando en las extensiones de producción y actualización. Asegúrese de probar los flujos de ruta críticos con pedidos simulados. Consulte estos [prácticas recomendadas](../prepare/best-practices.md) para obtener algunas sugerencias sobre el lanzamiento con problemas mínimos.
+Complete la actualización implementando en producción y actualizando las extensiones. Asegúrese de probar los flujos de ruta críticos con pedidos simulados. Consulte estos [prácticas recomendadas](../prepare/best-practices.md) para obtener algunas sugerencias sobre el inicio con problemas mínimos.
 
-Siga su plan de comunicación y asegúrese de que todas las partes interesadas sean conscientes de la actualización y estén completamente entrenadas para apoyarla.
+Siga su plan de comunicación y asegúrese de que todas las partes interesadas estén al tanto de la actualización y completamente formadas para apoyarla.
 
-Por último, póngase en contacto con su equipo para determinar las lecciones aprendidas y los inconvenientes. Esta retrospectiva le ayuda a mejorar el proceso la próxima vez.
+Por último, informe a su equipo para determinar las lecciones aprendidas y los inconvenientes. Esta retrospectiva le ayuda a mejorar el proceso la próxima vez.
 
 ## Posterior al lanzamiento
 
-Una vez que el sitio se inicie, asegúrese de comprobar los datos de análisis, la consola de búsqueda de Google y otros recursos para asegurarse de que no haya problemas inesperados y de que todo funcione según lo esperado.
+Una vez que se inicie el sitio, asegúrese de comprobar los datos de análisis, la consola de búsqueda de Google y otros recursos para garantizar que no haya problemas inesperados y que todo funcione según lo esperado.
 
-Siempre es una buena idea vigilar el rendimiento mediante herramientas de monitorización bien diseñadas. Existen muchas herramientas y medios para monitorear el rendimiento del sitio, por lo que asegúrese de elegir uno que se empareje bien con su organización. Recomendamos que los clientes de Adobe Commerce que utilizan nuestro sistema de administración de infraestructuras de nube aprovechen servicios como [Nueva reliquia](https://devdocs.magento.com/cloud/project/new-relic.html) para supervisar el rendimiento del sitio.
+Siempre es una buena idea vigilar el rendimiento con herramientas de monitorización bien diseñadas. Existen muchas herramientas y medios para monitorizar el rendimiento de su sitio, por lo que asegúrese de elegir uno que se adapte bien a su organización. Recomendamos que los clientes de Adobe Commerce que utilicen nuestro sistema de administración de la infraestructura en la nube aprovechen servicios como [New Relic](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic.html) para supervisar el rendimiento del sitio.

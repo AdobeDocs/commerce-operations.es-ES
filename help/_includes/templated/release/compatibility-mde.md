@@ -1,7 +1,7 @@
 ---
-source-git-commit: 2bb3c8545e271cbc7ba16f7f8bdf027fad4da936
+source-git-commit: dbfb4dadf5033eb580d3d47e9b2055ddeb316461
 workflow-type: tm+mt
-source-wordcount: '2444'
+source-wordcount: '926'
 ht-degree: 0%
 
 ---
@@ -12,16 +12,17 @@ template and the "_data/release/mde.yml" data file. To update the content,
 add new information to the data file. Follow the instructions in the README instructions to generate
 the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#templates -->
 
-**Admitido** : versión que ha sido totalmente probada por Adobe y es compatible.
+**Admitido** - versión que ha sido completamente probada por el Adobe y es compatible.
 
 **Compatible** : versión que se ha confirmado que es compatible con Adobe Commerce o Magento Open Source, pero que no es compatible.
 
-**No admitido** : versión que no es compatible con una versión de Adobe Commerce o Magento Open Source.
+**No compatible** : versión que no es compatible con una versión de Adobe Commerce o de Magento Open Source.
 
 <table style="table-layout:auto">
   <thead>
     <tr>
       <th> </th>
+      <th>Versión 2.4.6</th>
       <th>Versión 2.4.5</th>
       <th>Versión 2.4.4</th>
       <th>Versión 2.4.3</th>
@@ -29,18 +30,30 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       <th>Versión 2.4.1</th>
       <th>Versión 2.4.0</th>
       <th>Versión 2.3.7</th>
-      <th>Versión 2.3.6</th>
-      <th>Versión 2.3.5-p1</th>
-      <th>Versión 2.3.4</th>
-      <th>Versión 2.3.3</th>
-      <th>Versión 2.3.2</th>
-      <th>Versión 2.3.1</th>
-      <th>Versión 2.3.0</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th colspan="15">Sales Channel de Amazon</th>
+      <th colspan="9">Sales Channel de Amazon</th>
+    </tr>
+    <tr>
+      <td>Sales Channel de Amazon 4.4.4</td>
+      <td>Admitido</span>
+      </td>
+      <td>Admitido</span>
+      </td>
+      <td>Admitido</span>
+      </td>
+      <td>Admitido</span>
+      </td>
+      <td>Admitido</span>
+      </td>
+      <td>Admitido</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
     </tr>
     <tr>
       <td>Sales Channel de Amazon 4.4.3</td>
@@ -54,19 +67,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Admitido</span>
       </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
+      <td>Admitido</span>
       </td>
       <td>Compatible</span>
       </td>
@@ -85,19 +86,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Admitido</span>
       </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
+      <td>Admitido</span>
       </td>
       <td>Compatible</span>
       </td>
@@ -116,19 +105,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Admitido</span>
       </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
+      <td>Admitido</span>
       </td>
       <td>Compatible</span>
       </td>
@@ -136,7 +113,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
     </tr>
     <tr>
-      <td>Sales Channel de Amazon 4.4.0</td>
+      <td>Sales Channel DE Amazon 4.4.0</td>
       <td>Admitido</span>
       </td>
       <td>Admitido</span>
@@ -147,19 +124,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Admitido</span>
       </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
+      <td>Admitido</span>
       </td>
       <td>Compatible</span>
       </td>
@@ -167,7 +132,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
     </tr>
     <tr>
-      <td>Sales Channel de Amazon 4.3.0</td>
+      <td>Sales Channel DE Amazon 4.3.0</td>
       <td>Admitido</span>
       </td>
       <td>Admitido</span>
@@ -178,19 +143,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Admitido</span>
       </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
+      <td>Admitido</span>
       </td>
       <td>Compatible</span>
       </td>
@@ -198,15 +151,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
     </tr>
     <tr>
-      <td>Sales Channel de Amazon 4.2.0</td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
+      <td>Sales Channel DE Amazon 4.2.0</td>
       <td>Admitido</span>
       </td>
       <td>Compatible</span>
@@ -217,11 +162,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Compatible</span>
       </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
+      <td>Admitido</span>
       </td>
       <td>Compatible</span>
       </td>
@@ -229,156 +170,20 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
     </tr>
     <tr>
-      <td>Sales Channel de Amazon 4.1.0</td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
+      <td>Sales Channel DE Amazon 4.1.0</td>
       <td>Admitido</span>
       </td>
-      <td>Admitido</span>
+      <td>No compatible</span>
       </td>
-      <td>Admitido</span>
+      <td>No compatible</span>
       </td>
-      <td>Admitido</span>
+      <td>No compatible</span>
       </td>
-      <td>Admitido</span>
+      <td>No compatible</span>
       </td>
-      <td>Admitido</span>
+      <td>No compatible</span>
       </td>
-    </tr>
-    <tr>
-      <td>Sales Channel de Amazon 4.0.0</td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Sales Channel de Amazon 3.0.1</td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Sales Channel de Amazon 3.0.0</td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Sales Channel de Amazon 2.0.0</td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
+      <td>No compatible</span>
       </td>
       <td>Compatible</span>
       </td>
@@ -386,10 +191,10 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
   </tbody>
   <tbody>
     <tr>
-      <th colspan="15">B2B</th>
+      <th colspan="9">B2B</th>
     </tr>
     <tr>
-      <td>B2B 1.3.4</td>
+      <td>B2B 1.3.5</td>
       <td>Admitido</span>
       </td>
       <td>Compatible</span>
@@ -405,6 +210,13 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       <td>Compatible</span>
       </td>
       <td>Compatible</span>
+      </td>
+    </tr>
+    <tr>
+      <td>B2B 1.3.4</td>
+      <td>Compatible</span>
+      </td>
+      <td>Admitido</span>
       </td>
       <td>Compatible</span>
       </td>
@@ -423,21 +235,9 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       <td>B2B 1.3.3</td>
       <td>Compatible</span>
       </td>
+      <td>Compatible</span>
+      </td>
       <td>Admitido</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
       </td>
       <td>Compatible</span>
       </td>
@@ -456,21 +256,9 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Compatible</span>
       </td>
+      <td>Compatible</span>
+      </td>
       <td>Admitido</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
       </td>
       <td>Compatible</span>
       </td>
@@ -489,21 +277,9 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Compatible</span>
       </td>
+      <td>Compatible</span>
+      </td>
       <td>Admitido</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
       </td>
       <td>Compatible</span>
       </td>
@@ -522,21 +298,9 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Compatible</span>
       </td>
+      <td>Compatible</span>
+      </td>
       <td>Admitido</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
       </td>
       <td>Compatible</span>
       </td>
@@ -555,21 +319,9 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Compatible</span>
       </td>
+      <td>Compatible</span>
+      </td>
       <td>Admitido</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
       </td>
       <td>Compatible</span>
       </td>
@@ -588,235 +340,6 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Compatible</span>
       </td>
-      <td>Admitido</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-    </tr>
-    <tr>
-      <td>B2B 1.1.6</td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Admitido</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-    </tr>
-    <tr>
-      <td>B2B 1.1.5</td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Admitido</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-    </tr>
-    <tr>
-      <td>B2B 1.1.4</td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Admitido</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-    </tr>
-    <tr>
-      <td>B2B 1.1.3</td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Admitido</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-    </tr>
-    <tr>
-      <td>B2B 1.1.2</td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Admitido</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-    </tr>
-    <tr>
-      <td>B2B 1.1.1</td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Admitido</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-    </tr>
-    <tr>
-      <td>B2B 1.1.0</td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
       <td>Compatible</span>
       </td>
       <td>Admitido</span>
@@ -825,7 +348,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
   </tbody>
   <tbody>
     <tr>
-      <th colspan="15">Servicio de catálogo</th>
+      <th colspan="9">Servicio de catálogo</th>
     </tr>
     <tr>
       <td>Servicio de catálogo 1.4</td>
@@ -833,7 +356,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Admitido</span>
       </td>
-      <td>Compatible</span>
+      <td>Admitido</span>
       </td>
       <td>Compatible</span>
       </td>
@@ -841,21 +364,9 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Compatible</span>
       </td>
-      <td>No admitido</span>
+      <td>Compatible</span>
       </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
+      <td>No compatible</span>
       </td>
     </tr>
     <tr>
@@ -864,7 +375,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Admitido</span>
       </td>
-      <td>Compatible</span>
+      <td>Admitido</span>
       </td>
       <td>Compatible</span>
       </td>
@@ -872,21 +383,9 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Compatible</span>
       </td>
-      <td>No admitido</span>
+      <td>Compatible</span>
       </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
+      <td>No compatible</span>
       </td>
     </tr>
     <tr>
@@ -895,7 +394,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Admitido</span>
       </td>
-      <td>Compatible</span>
+      <td>Admitido</span>
       </td>
       <td>Compatible</span>
       </td>
@@ -903,21 +402,9 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Compatible</span>
       </td>
-      <td>No admitido</span>
+      <td>Compatible</span>
       </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
+      <td>No compatible</span>
       </td>
     </tr>
     <tr>
@@ -926,7 +413,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Admitido</span>
       </td>
-      <td>Compatible</span>
+      <td>Admitido</span>
       </td>
       <td>Compatible</span>
       </td>
@@ -934,31 +421,38 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Compatible</span>
       </td>
-      <td>No admitido</span>
+      <td>Compatible</span>
       </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
+      <td>No compatible</span>
       </td>
     </tr>
   </tbody>
   <tbody>
     <tr>
-      <th colspan="15">Administrador de canales</th>
+      <th colspan="9">Administrador de canales</th>
+    </tr>
+    <tr>
+      <td>Administrador de canales 1.4.0</td>
+      <td>Admitido</span>
+      </td>
+      <td>Admitido</span>
+      </td>
+      <td>Admitido</span>
+      </td>
+      <td>Admitido</span>
+      </td>
+      <td>Admitido</span>
+      </td>
+      <td>Admitido</span>
+      </td>
+      <td>Admitido</span>
+      </td>
+      <td>No compatible</span>
+      </td>
     </tr>
     <tr>
       <td>Administrador de canales 1.1.0</td>
-      <td>Admitido</span>
+      <td>No compatible</span>
       </td>
       <td>Admitido</span>
       </td>
@@ -970,21 +464,9 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Admitido</span>
       </td>
-      <td>No admitido</span>
+      <td>Admitido</span>
       </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
+      <td>No compatible</span>
       </td>
     </tr>
     <tr>
@@ -1001,30 +483,18 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Admitido</span>
       </td>
-      <td>No admitido</span>
+      <td>Admitido</span>
       </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
+      <td>No compatible</span>
       </td>
     </tr>
   </tbody>
   <tbody>
     <tr>
-      <th colspan="15">Inventory management</th>
+      <th colspan="9">Inventory management</th>
     </tr>
     <tr>
-      <td>Inventory management 1.2.5</td>
+      <td>Inventory management 1.2.6</td>
       <td>Admitido</span>
       </td>
       <td>Compatible</span>
@@ -1040,6 +510,13 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       <td>Compatible</span>
       </td>
       <td>Compatible</span>
+      </td>
+    </tr>
+    <tr>
+      <td>Inventory management 1.2.5</td>
+      <td>Compatible</span>
+      </td>
+      <td>Admitido</span>
       </td>
       <td>Compatible</span>
       </td>
@@ -1058,21 +535,9 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       <td>Inventory management 1.2.4</td>
       <td>Compatible</span>
       </td>
+      <td>Compatible</span>
+      </td>
       <td>Admitido</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
       </td>
       <td>Compatible</span>
       </td>
@@ -1091,21 +556,9 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Compatible</span>
       </td>
+      <td>Compatible</span>
+      </td>
       <td>Admitido</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
       </td>
       <td>Compatible</span>
       </td>
@@ -1124,21 +577,9 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Compatible</span>
       </td>
+      <td>Compatible</span>
+      </td>
       <td>Admitido</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
       </td>
       <td>Compatible</span>
       </td>
@@ -1157,21 +598,9 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Compatible</span>
       </td>
+      <td>Compatible</span>
+      </td>
       <td>Admitido</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
       </td>
       <td>Compatible</span>
       </td>
@@ -1190,21 +619,9 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Compatible</span>
       </td>
+      <td>Compatible</span>
+      </td>
       <td>Admitido</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
       </td>
       <td>Compatible</span>
       </td>
@@ -1223,235 +640,6 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Compatible</span>
       </td>
-      <td>Admitido</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Inventory management 1.1.6</td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Admitido</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Inventory management 1.1.5</td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Admitido</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Inventory management 1.1.4</td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Admitido</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Inventory management 1.1.3</td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Admitido</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Inventory management 1.1.2</td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Admitido</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Inventory management 1.1.1</td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Admitido</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Inventory management 1.1.0</td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
       <td>Compatible</span>
       </td>
       <td>Admitido</span>
@@ -1460,7 +648,26 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
   </tbody>
   <tbody>
     <tr>
-      <th colspan="15">Live Search</th>
+      <th colspan="9">Live Search</th>
+    </tr>
+    <tr>
+      <td>Live Search 3.0.1</td>
+      <td>Admitido</span>
+      </td>
+      <td>Admitido</span>
+      </td>
+      <td>Admitido</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>No compatible</span>
+      </td>
     </tr>
     <tr>
       <td>Live Search 2.0.5</td>
@@ -1468,7 +675,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Admitido</span>
       </td>
-      <td>Compatible</span>
+      <td>Admitido</span>
       </td>
       <td>Compatible</span>
       </td>
@@ -1476,21 +683,9 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Compatible</span>
       </td>
-      <td>No admitido</span>
+      <td>Compatible</span>
       </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
+      <td>No compatible</span>
       </td>
     </tr>
     <tr>
@@ -1499,7 +694,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Admitido</span>
       </td>
-      <td>Compatible</span>
+      <td>Admitido</span>
       </td>
       <td>Compatible</span>
       </td>
@@ -1507,21 +702,9 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Compatible</span>
       </td>
-      <td>No admitido</span>
+      <td>Compatible</span>
       </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
+      <td>No compatible</span>
       </td>
     </tr>
     <tr>
@@ -1530,7 +713,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Admitido</span>
       </td>
-      <td>Compatible</span>
+      <td>Admitido</span>
       </td>
       <td>Compatible</span>
       </td>
@@ -1538,21 +721,9 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Compatible</span>
       </td>
-      <td>No admitido</span>
+      <td>Compatible</span>
       </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
+      <td>No compatible</span>
       </td>
     </tr>
     <tr>
@@ -1561,7 +732,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Admitido</span>
       </td>
-      <td>Compatible</span>
+      <td>Admitido</span>
       </td>
       <td>Compatible</span>
       </td>
@@ -1569,21 +740,9 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Compatible</span>
       </td>
-      <td>No admitido</span>
+      <td>Compatible</span>
       </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
+      <td>No compatible</span>
       </td>
     </tr>
     <tr>
@@ -1600,21 +759,9 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Compatible</span>
       </td>
-      <td>No admitido</span>
+      <td>Compatible</span>
       </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
+      <td>No compatible</span>
       </td>
     </tr>
     <tr>
@@ -1631,21 +778,9 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Compatible</span>
       </td>
-      <td>No admitido</span>
+      <td>Compatible</span>
       </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
+      <td>No compatible</span>
       </td>
     </tr>
     <tr>
@@ -1662,443 +797,199 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Compatible</span>
       </td>
-      <td>No admitido</span>
+      <td>Compatible</span>
       </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
+      <td>No compatible</span>
       </td>
     </tr>
   </tbody>
   <tbody>
     <tr>
-      <th colspan="15">Page Builder</th>
+      <th colspan="9">Page Builder</th>
+    </tr>
+    <tr>
+      <td>Page Builder 1.7.3</td>
+      <td>Admitido</span>
+      </td>
+      <td>No compatible</span>
+      </td>
+      <td>No compatible</span>
+      </td>
+      <td>No compatible</span>
+      </td>
+      <td>No compatible</span>
+      </td>
+      <td>No compatible</span>
+      </td>
+      <td>No compatible</span>
+      </td>
+      <td>No compatible</span>
+      </td>
     </tr>
     <tr>
       <td>Page Builder 1.7.2</td>
+      <td>No compatible</span>
+      </td>
       <td>Admitido</span>
       </td>
-      <td>No admitido</span>
+      <td>No compatible</span>
       </td>
-      <td>No admitido</span>
+      <td>No compatible</span>
       </td>
-      <td>No admitido</span>
+      <td>No compatible</span>
       </td>
-      <td>No admitido</span>
+      <td>No compatible</span>
       </td>
-      <td>No admitido</span>
+      <td>No compatible</span>
       </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
+      <td>No compatible</span>
       </td>
     </tr>
     <tr>
       <td>Page Builder 1.7.1</td>
-      <td>No admitido</span>
+      <td>No compatible</span>
+      </td>
+      <td>No compatible</span>
       </td>
       <td>Admitido</span>
       </td>
-      <td>No admitido</span>
+      <td>No compatible</span>
       </td>
-      <td>No admitido</span>
+      <td>No compatible</span>
       </td>
-      <td>No admitido</span>
+      <td>No compatible</span>
       </td>
-      <td>No admitido</span>
+      <td>No compatible</span>
       </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
+      <td>No compatible</span>
       </td>
     </tr>
     <tr>
       <td>Page Builder 1.7.0</td>
-      <td>No admitido</span>
+      <td>No compatible</span>
       </td>
-      <td>No admitido</span>
+      <td>No compatible</span>
+      </td>
+      <td>No compatible</span>
       </td>
       <td>Admitido</span>
       </td>
-      <td>No admitido</span>
+      <td>No compatible</span>
       </td>
-      <td>No admitido</span>
+      <td>No compatible</span>
       </td>
-      <td>No admitido</span>
+      <td>No compatible</span>
       </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
+      <td>No compatible</span>
       </td>
     </tr>
     <tr>
       <td>Page Builder 1.6.0</td>
-      <td>No admitido</span>
+      <td>No compatible</span>
       </td>
-      <td>No admitido</span>
+      <td>No compatible</span>
       </td>
-      <td>No admitido</span>
+      <td>No compatible</span>
+      </td>
+      <td>No compatible</span>
       </td>
       <td>Admitido</span>
       </td>
-      <td>No admitido</span>
+      <td>No compatible</span>
       </td>
-      <td>No admitido</span>
+      <td>No compatible</span>
       </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
+      <td>No compatible</span>
       </td>
     </tr>
     <tr>
       <td>Page Builder 1.5.0</td>
-      <td>No admitido</span>
+      <td>No compatible</span>
       </td>
-      <td>No admitido</span>
+      <td>No compatible</span>
       </td>
-      <td>No admitido</span>
+      <td>No compatible</span>
       </td>
-      <td>No admitido</span>
+      <td>No compatible</span>
+      </td>
+      <td>No compatible</span>
       </td>
       <td>Admitido</span>
       </td>
-      <td>No admitido</span>
+      <td>No compatible</span>
       </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
+      <td>No compatible</span>
       </td>
     </tr>
     <tr>
       <td>Page Builder 1.4.0</td>
-      <td>No admitido</span>
+      <td>No compatible</span>
       </td>
-      <td>No admitido</span>
+      <td>No compatible</span>
       </td>
-      <td>No admitido</span>
+      <td>No compatible</span>
       </td>
-      <td>No admitido</span>
+      <td>No compatible</span>
       </td>
-      <td>No admitido</span>
+      <td>No compatible</span>
+      </td>
+      <td>No compatible</span>
       </td>
       <td>Admitido</span>
       </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
+      <td>No compatible</span>
       </td>
     </tr>
     <tr>
       <td>Page Builder 1.3.6</td>
-      <td>No admitido</span>
+      <td>No compatible</span>
       </td>
-      <td>No admitido</span>
+      <td>No compatible</span>
       </td>
-      <td>No admitido</span>
+      <td>No compatible</span>
       </td>
-      <td>No admitido</span>
+      <td>No compatible</span>
       </td>
-      <td>No admitido</span>
+      <td>No compatible</span>
       </td>
-      <td>No admitido</span>
+      <td>No compatible</span>
       </td>
-      <td>No admitido</span>
+      <td>No compatible</span>
       </td>
-      <td>Admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Page Builder 1.3.4</td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>Admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Page Builder 1.3.1</td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>Admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Page Builder 1.2.0</td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>Admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Page Builder 1.1.0</td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>Admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Page Builder 1.0.1</td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>Admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Page Builder 1.0.0</td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>Admitido</span>
-      </td>
-      <td>Compatible</span>
+      <td>No compatible</span>
       </td>
     </tr>
   </tbody>
   <tbody>
     <tr>
-      <th colspan="15">Servicios de pago</th>
+      <th colspan="9">Servicios de pago</th>
+    </tr>
+    <tr>
+      <td>Payment Services 2.0.0</td>
+      <td>Admitido</span>
+      </td>
+      <td>Admitido</span>
+      </td>
+      <td>Admitido</span>
+      </td>
+      <td>No compatible</span>
+      </td>
+      <td>No compatible</span>
+      </td>
+      <td>No compatible</span>
+      </td>
+      <td>No compatible</span>
+      </td>
+      <td></span>
+      </td>
     </tr>
     <tr>
       <td>Servicios de pago 1.6.0</td>
-      <td>Admitido</span>
+      <td>No compatible</span>
       </td>
       <td>Admitido</span>
       </td>
-      <td>Compatible</span>
+      <td>Admitido</span>
       </td>
       <td>Compatible</span>
       </td>
@@ -2106,21 +997,9 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Compatible</span>
       </td>
-      <td>No admitido</span>
+      <td>Compatible</span>
       </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
+      <td>No compatible</span>
       </td>
     </tr>
     <tr>
@@ -2129,7 +1008,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Admitido</span>
       </td>
-      <td>Compatible</span>
+      <td>Admitido</span>
       </td>
       <td>Compatible</span>
       </td>
@@ -2137,21 +1016,9 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Compatible</span>
       </td>
-      <td>No admitido</span>
+      <td>Compatible</span>
       </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
+      <td>No compatible</span>
       </td>
     </tr>
     <tr>
@@ -2160,7 +1027,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Admitido</span>
       </td>
-      <td>Compatible</span>
+      <td>Admitido</span>
       </td>
       <td>Compatible</span>
       </td>
@@ -2168,21 +1035,9 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Compatible</span>
       </td>
-      <td>No admitido</span>
+      <td>Compatible</span>
       </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
+      <td>No compatible</span>
       </td>
     </tr>
     <tr>
@@ -2191,7 +1046,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Admitido</span>
       </td>
-      <td>Compatible</span>
+      <td>Admitido</span>
       </td>
       <td>Compatible</span>
       </td>
@@ -2199,21 +1054,9 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Compatible</span>
       </td>
-      <td>No admitido</span>
+      <td>Compatible</span>
       </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
+      <td>No compatible</span>
       </td>
     </tr>
     <tr>
@@ -2222,7 +1065,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Admitido</span>
       </td>
-      <td>Compatible</span>
+      <td>Admitido</span>
       </td>
       <td>Compatible</span>
       </td>
@@ -2230,30 +1073,18 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Compatible</span>
       </td>
-      <td>No admitido</span>
+      <td>Compatible</span>
       </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
+      <td>No compatible</span>
       </td>
     </tr>
     <tr>
-      <td>Servicios de pago 1.5.0</td>
+      <td>Payment Services 1.5.0</td>
       <td>Admitido</span>
       </td>
       <td>Admitido</span>
       </td>
-      <td>Compatible</span>
+      <td>Admitido</span>
       </td>
       <td>Compatible</span>
       </td>
@@ -2261,21 +1092,9 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Compatible</span>
       </td>
-      <td>No admitido</span>
+      <td>Compatible</span>
       </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
+      <td>No compatible</span>
       </td>
     </tr>
     <tr>
@@ -2284,7 +1103,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Admitido</span>
       </td>
-      <td>Compatible</span>
+      <td>Admitido</span>
       </td>
       <td>Compatible</span>
       </td>
@@ -2292,21 +1111,9 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Compatible</span>
       </td>
-      <td>No admitido</span>
+      <td>Compatible</span>
       </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
+      <td>No compatible</span>
       </td>
     </tr>
     <tr>
@@ -2315,35 +1122,6 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Admitido</span>
       </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Servicios de pago 1.3.1</td>
-      <td>Admitido</span>
-      </td>
       <td>Admitido</span>
       </td>
       <td>Compatible</span>
@@ -2354,151 +1132,13 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Compatible</span>
       </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Servicios de pago 1.3.0</td>
-      <td>Admitido</span>
-      </td>
-      <td>Admitido</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Servicios de pago 1.2.0</td>
-      <td>Admitido</span>
-      </td>
-      <td>Admitido</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Servicios de pago 1.1.0</td>
-      <td>Admitido</span>
-      </td>
-      <td>Admitido</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Servicios de pago 1.0.0</td>
-      <td>Admitido</span>
-      </td>
-      <td>Admitido</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
+      <td>No compatible</span>
       </td>
     </tr>
   </tbody>
   <tbody>
     <tr>
-      <th colspan="15">Cierre rápido</th>
+      <th colspan="9">Cierre de compra rápido</th>
     </tr>
     <tr>
       <td>Cierre de compra rápido 1.7.0</td>
@@ -2506,7 +1146,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Admitido</span>
       </td>
-      <td>Compatible</span>
+      <td>Admitido</span>
       </td>
       <td>Compatible</span>
       </td>
@@ -2514,21 +1154,9 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Compatible</span>
       </td>
-      <td>No admitido</span>
+      <td>Compatible</span>
       </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
+      <td>No compatible</span>
       </td>
     </tr>
     <tr>
@@ -2537,7 +1165,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Admitido</span>
       </td>
-      <td>Compatible</span>
+      <td>Admitido</span>
       </td>
       <td>Compatible</span>
       </td>
@@ -2545,21 +1173,9 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Compatible</span>
       </td>
-      <td>No admitido</span>
+      <td>Compatible</span>
       </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
+      <td>No compatible</span>
       </td>
     </tr>
     <tr>
@@ -2568,7 +1184,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Admitido</span>
       </td>
-      <td>Compatible</span>
+      <td>Admitido</span>
       </td>
       <td>Compatible</span>
       </td>
@@ -2576,21 +1192,9 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Compatible</span>
       </td>
-      <td>No admitido</span>
+      <td>Compatible</span>
       </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
+      <td>No compatible</span>
       </td>
     </tr>
     <tr>
@@ -2599,7 +1203,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Admitido</span>
       </td>
-      <td>Compatible</span>
+      <td>Admitido</span>
       </td>
       <td>Compatible</span>
       </td>
@@ -2607,21 +1211,9 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Compatible</span>
       </td>
-      <td>No admitido</span>
+      <td>Compatible</span>
       </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
+      <td>No compatible</span>
       </td>
     </tr>
     <tr>
@@ -2630,7 +1222,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Admitido</span>
       </td>
-      <td>Compatible</span>
+      <td>Admitido</span>
       </td>
       <td>Compatible</span>
       </td>
@@ -2638,21 +1230,9 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Compatible</span>
       </td>
-      <td>No admitido</span>
+      <td>Compatible</span>
       </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
+      <td>No compatible</span>
       </td>
     </tr>
     <tr>
@@ -2661,7 +1241,7 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Admitido</span>
       </td>
-      <td>Compatible</span>
+      <td>Admitido</span>
       </td>
       <td>Compatible</span>
       </td>
@@ -2669,25 +1249,15 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Compatible</span>
       </td>
-      <td>No admitido</span>
+      <td>Compatible</span>
       </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
+      <td>No compatible</span>
       </td>
     </tr>
     <tr>
       <td>Cierre de compra rápido 1.1.0</td>
+      <td>Admitido</span>
+      </td>
       <td>Compatible</span>
       </td>
       <td>Admitido</span>
@@ -2698,27 +1268,15 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Admitido</span>
       </td>
-      <td>No admitido</span>
+      <td>No compatible</span>
       </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
+      <td>No compatible</span>
       </td>
     </tr>
     <tr>
       <td>Cierre de compra rápido 1.0.0</td>
+      <td>Admitido</span>
+      </td>
       <td>Compatible</span>
       </td>
       <td>Admitido</span>
@@ -2729,29 +1287,15 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Admitido</span>
       </td>
-      <td>No admitido</span>
+      <td>No compatible</span>
       </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
+      <td>No compatible</span>
       </td>
     </tr>
   </tbody>
   <tbody>
     <tr>
-      <th colspan="15">Conector del Experience Platform</th>
+      <th colspan="9">Conector del Experience Platform</th>
     </tr>
     <tr>
       <td>Conector de Experience Platform 1.0.0</td>
@@ -2761,33 +1305,21 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Admitido</span>
       </td>
-      <td>No admitido</span>
+      <td>Admitido</span>
       </td>
-      <td>No admitido</span>
+      <td>No compatible</span>
       </td>
-      <td>No admitido</span>
+      <td>No compatible</span>
       </td>
-      <td>No admitido</span>
+      <td>No compatible</span>
       </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
+      <td>No compatible</span>
       </td>
     </tr>
   </tbody>
   <tbody>
     <tr>
-      <th colspan="15">Recommendations de producto</th>
+      <th colspan="9">Product Recommendations</th>
     </tr>
     <tr>
       <td>Product Recommendations 4.0.1</td>
@@ -2803,21 +1335,9 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Compatible</span>
       </td>
-      <td>No admitido</span>
+      <td>Compatible</span>
       </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
+      <td>No compatible</span>
       </td>
     </tr>
     <tr>
@@ -2834,37 +1354,13 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Compatible</span>
       </td>
-      <td>No admitido</span>
+      <td>Compatible</span>
       </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
+      <td>No compatible</span>
       </td>
     </tr>
     <tr>
       <td>Product Recommendations 3.3.7</td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
       <td>Compatible</span>
       </td>
       <td>Compatible</span>
@@ -2900,33 +1396,9 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Compatible</span>
       </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
     </tr>
     <tr>
       <td>Product Recommendations 3.3.5</td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
       <td>Compatible</span>
       </td>
       <td>Compatible</span>
@@ -2962,33 +1434,9 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       </td>
       <td>Compatible</span>
       </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
     </tr>
     <tr>
       <td>Product Recommendations 3.3.2</td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
       <td>Compatible</span>
       </td>
       <td>Compatible</span>
@@ -3023,545 +1471,6 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
       <td>Compatible</span>
       </td>
       <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Product Recommendations 3.3.0</td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Product Recommendations 3.2.6</td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Product Recommendations 3.2.5</td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Product Recommendations 3.2.4</td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Product Recommendations 3.2.3</td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Product Recommendations 3.2.2</td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Product Recommendations 3.10.0</td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Product Recommendations 3.0.8</td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Product Recommendations 3.0.6</td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Product Recommendations 3.0.5</td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Product Recommendations 3.0.4</td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Product Recommendations 3.0.3</td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Product Recommendations 3.0.2</td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Product Recommendations 3.0.1</td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Product Recommendations 3.0.0</td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Product Recommendations 2.0.0</td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-      <td>Compatible</span>
-      </td>
-    </tr>
-    <tr>
-      <td>Product Recommendations 1.x.x</td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
-      </td>
-      <td>No admitido</span>
       </td>
     </tr>
   </tbody>

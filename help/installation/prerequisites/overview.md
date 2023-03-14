@@ -1,10 +1,10 @@
 ---
 title: Requisitos previos de instalación local
 description: Obtenga más información sobre las dependencias de software necesarias para las instalaciones locales de Adobe Commerce y Magento Open Source.
-source-git-commit: 8f05fb6fc212c2b3fda80457bbf27ecf16fb1194
+source-git-commit: 4c18f00e0b92e49924676274c4ed462a175a7e4b
 workflow-type: tm+mt
-source-wordcount: '325'
-ht-degree: 1%
+source-wordcount: '334'
+ht-degree: 0%
 
 ---
 
@@ -13,15 +13,15 @@ ht-degree: 1%
 
 Antes de instalar Adobe Commerce o Magento Open Source, debe hacer lo siguiente:
 
-* Configure uno o varios hosts que cumplan la función [requisitos del sistema](../system-requirements.md).
-* Si está configurando más de un nodo web con equilibrio de carga, configure y pruebe esa parte del sistema _before_ instale la aplicación.
-* Asegúrese de que puede realizar una copia de seguridad de todo el sistema en varios puntos durante la instalación para que pueda revertirla si hay problemas.
+* Configure uno o varios hosts que cumplan los requisitos [requisitos del sistema](../system-requirements.md).
+* Si está configurando más de un nodo web con equilibrio de carga, configure y pruebe esa parte del sistema _antes_ la aplicación se instala.
+* Asegúrese de que puede realizar copias de seguridad de todo el sistema en distintos puntos durante la instalación para poder revertirlo si hay problemas.
 
 >[!NOTE]
 >
->Se supone que está instalando el Adobe Commerce o el Magento Open Source en un **entorno de desarrollo**, que tiene acceso de usuario raíz al equipo, **y** que la máquina no necesita ser altamente segura. Si está configurando un equipo más seguro, le recomendamos que consulte con un administrador de red para obtener más ayuda.
+>Suponemos que va a instalar el Adobe Commerce o el Magento Open Source en un **entorno de desarrollo**, que tiene acceso de usuario raíz al equipo, **y** que la máquina no necesita ser altamente segura. Si va a configurar un equipo más seguro, le recomendamos encarecidamente que consulte con un administrador de red para obtener ayuda adicional.
 
-Le recomendamos encarecidamente que actualice y actualice el software del sistema operativo. Estas actualizaciones pueden proporcionar correcciones de seguridad y software que podrían evitar problemas futuros. ¿No saben qué significa esto? Consulte nuestra [página de información general de instalación](../overview.md).
+Le recomendamos encarecidamente que actualice y actualice el software de su sistema operativo. Estas actualizaciones pueden proporcionar correcciones de seguridad y software que podrían evitar problemas futuros. ¿No sabes lo que significa todo esto? Consulte nuestra [página de información general de instalación](../overview.md).
 
 Introduzca los siguientes comandos como usuario con `root` privilegios:
 
@@ -47,7 +47,7 @@ Introduzca los siguientes comandos como usuario con `root` privilegios:
 
 ## Comprobación de requisitos previos
 
-Para comprobar si el sistema tiene requisitos previos, introduzca los siguientes comandos:
+Para comprobar los requisitos previos del sistema, introduzca los siguientes comandos:
 
 ### Apache
 
@@ -55,7 +55,7 @@ CentOS: `httpd -v`
 
 Ubuntu: `apache2 -v`
 
-Adobe Commerce y Magento Open Source admiten la versión 2.4 de Apache como se indica en el siguiente resultado:
+Adobe Commerce y Magento Open Source admiten la versión 2.4 de Apache como indica el siguiente resultado:
 
 ```terminal
 Server version: Apache/2.4.0 (Unix)
@@ -66,7 +66,7 @@ Para instalar o actualizar Apache, consulte [Apache](web-server/apache.md).
 
 ### PHP
 
-Consulte [requisitos del sistema](../system-requirements.md) para versiones compatibles de PHP y [PHP] para los requisitos de PHP.
+Consulte [requisitos del sistema](../system-requirements.md) para versiones compatibles de PHP y [PHP] para requisitos de PHP.
 
 ### MySQL
 
@@ -80,7 +80,7 @@ Por ejemplo:
 mysql -u magento -p
 ```
 
-Compruebe que tiene la versión correcta de MySQL para la versión de Adobe Commerce o Magento Open Source que está instalando ([consulte aquí las versiones compatibles](../system-requirements.md). El siguiente resultado indica la versión que está ejecutando).
+Compruebe que tiene la versión correcta de MySQL para la versión de Adobe Commerce o del Magento Open Source que está instalando ([consulte aquí las versiones compatibles](../system-requirements.md). El siguiente resultado indica la versión que está ejecutando.)
 
 ```terminal
 Welcome to the MySQL monitor.  Commands end with ; or \g.
@@ -96,11 +96,19 @@ owners.
 
 Tipo `help` o `\h` para obtener ayuda. Tipo `\c` para borrar la instrucción de entrada actual.
 
-Entrar `exit` en el `mysql>` solicite salir.
+Entrar `exit` en el `mysql>` Mensaje para salir.
 
 Para instalar o actualizar MySQL, consulte [MySQL](database/mysql.md).
 
-### Elasticsearch u OpenSearch
+### Motor de búsqueda
+
+Para comprobar la instalación de OpenSearch:
+
+```bash
+curl -XGET '<opensearch-hostname>:<opensearch-port>'
+```
+
+Para comprobar la instalación del Elasticsearch:
 
 ```bash
 curl -XGET '<elasticsearch-hostname>:<elasticsearch-port>'

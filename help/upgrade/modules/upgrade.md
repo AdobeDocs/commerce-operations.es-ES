@@ -1,23 +1,23 @@
 ---
-title: Módulos y extensiones de actualización
-description: Utilice la interfaz de línea de comandos y el Compositor para actualizar los módulos y extensiones de Adobe Commerce y Magento Open Source.
-source-git-commit: c619bff9785d22298bc49e2ac9874480ff7a320b
+title: Actualización de módulos y extensiones
+description: Utilice la interfaz de línea de comandos y Composer para actualizar Adobe Commerce y los módulos y extensiones de Magento Open Source.
+source-git-commit: 682963fb66519097e54f14f2b84ed71528030054
 workflow-type: tm+mt
-source-wordcount: '195'
+source-wordcount: '191'
 ht-degree: 0%
 
 ---
 
 
-# Módulos de actualización y extensiones
+# Actualización de módulos y extensiones
 
 Para actualizar o actualizar un módulo o una extensión:
 
 1. Descargue el archivo actualizado desde Marketplace u otro desarrollador de extensiones. Tome nota del nombre y la versión del módulo.
 
-1. Exporte el contenido a su directorio de instalación raíz de Adobe Commerce o Magento Open Source.
+1. Exporte el contenido al directorio de instalación raíz de Adobe Commerce o de Magento Open Source.
 
-1. Si existe un paquete Composer para el módulo, ejecute uno de los siguientes.
+1. Si existe un paquete Composer para el módulo, ejecute una de las siguientes acciones.
 
    Actualización por nombre de módulo:
 
@@ -45,11 +45,11 @@ Para actualizar o actualizar un módulo o una extensión:
    bin/magento cache:clean
    ```
 
-## Extensiones agrupadas de proveedores (VBE)
+## Extensiones agrupadas de proveedor (VBE)
 
 Adobe eliminado todo [VBE](https://devdocs.magento.com/extensions/vendor/) en 2.4.4. Los proveedores siguen admitiendo estas extensiones en Adobe Commerce Marketplace.
 
-Si desea seguir utilizando estas extensiones con Adobe Commerce y Magento Open Source 2.4.4 y versiones posteriores, debe actualizar las dependencias de paquete correspondientes en su `composer.json` file _before_ actualizar a 2.4.4. Póngase en contacto con el proveedor para obtener el nombre y la versión del paquete que va a usar.
+Si desea seguir utilizando estas extensiones con Adobe Commerce 2.4.4 y versiones posteriores, debe actualizar las dependencias de paquete correspondientes en su `composer.json` archivo _antes_ actualización a 2.4.4. Póngase en contacto con el proveedor para obtener el nombre y la versión del paquete que desea utilizar.
 
 Consulte los siguientes listados de Adobe Commerce Marketplace para obtener más información:
 
