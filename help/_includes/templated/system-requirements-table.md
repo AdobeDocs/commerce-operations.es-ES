@@ -1,5 +1,5 @@
 ---
-source-git-commit: 1ca3d530051b0f59084bf370951f8f0b03dcfc28
+source-git-commit: 4117662e4b3686388d578ae3e620ee6478216a98
 workflow-type: tm+mt
 source-wordcount: '271'
 ht-degree: 70%
@@ -14,8 +14,8 @@ ht-degree: 70%
         Dependencias de software
       </th>
       <th>2.4.6</th>
-      <th>2,4,5-p2</th>
-      <th>2,4,5-p1</th>
+      <th>2.4.5-p2</th>
+      <th>2.4.5-p1</th>
       <th>2.4.5</th>
       <th>2.4.4-p3</th>
       <th>2.4.4-p2</th>
@@ -78,7 +78,7 @@ ht-degree: 70%
     <tr>
       <td><span class="uicontrol">[!DNL Elasticsearch]</span></td>
       <td>
-            8.4
+            8.4, 7.17
       </td>
       <td>
             7.17
@@ -258,7 +258,7 @@ ht-degree: 70%
     <tr>
       <td><span class="uicontrol">[!DNL PHP]</span></td>
       <td>
-            8.1
+            8.1, 8.2
       </td>
       <td>
             8.1
@@ -663,7 +663,7 @@ ht-degree: 70%
     <tr>
       <td><span class="uicontrol">[!DNL AWS ElastiCache]</span></td>
       <td>
-            Redis 6.2
+            Versión 6.2
       </td>
       <td>
             Redis 6
@@ -800,7 +800,7 @@ ht-degree: 70%
 
 >[!IMPORTANT]
 >
->La compatibilidad y la versión del servicio para Adobe Commerce en la infraestructura en la nube están determinadas por las versiones implementadas en la infraestructura en la nube y, a veces, difieren de las versiones admitidas por las implementaciones locales de Adobe Commerce. Consulte [Software y servicios compatibles](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/cloud-architecture.html#supported-software-and-services) en el _Guía de Cloud_.
+>La versión del servicio y la compatibilidad con Adobe Commerce en la infraestructura de la nube están determinadas por las versiones implementadas en la infraestructura de la nube y, a veces, difieren de las versiones admitidas por las implementaciones locales de Adobe Commerce. Consulte [Software y servicios compatibles](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/cloud-architecture.html#supported-software-and-services) en el _Guía de Cloud_.
 
 >[!NOTE]
 >
