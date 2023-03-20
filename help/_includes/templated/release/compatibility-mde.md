@@ -1,7 +1,7 @@
 ---
-source-git-commit: f918da5f205b23a2e11faaa06fb0572ca72cdaa4
+source-git-commit: fb62494e65bde8a35c7ff06e4ab83a7e53d5ebc2
 workflow-type: tm+mt
-source-wordcount: '937'
+source-wordcount: '959'
 ht-degree: 0%
 
 ---
@@ -349,6 +349,25 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
   <tbody>
     <tr>
       <th colspan="9">Servicio de catálogo</th>
+    </tr>
+    <tr>
+      <td>Servicio de catálogo 1.5</td>
+      <td>Admitido</span>
+      </td>
+      <td>Admitido</span>
+      </td>
+      <td>Admitido</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>No admitido</span>
+      </td>
     </tr>
     <tr>
       <td>Servicio de catálogo 1.4</td>
@@ -1339,6 +1358,25 @@ the updated content: https://github.com/AdobeDocs/commerce-operations.en/blob/ma
   <tbody>
     <tr>
       <th colspan="9">Recommendations de producto</th>
+    </tr>
+    <tr>
+      <td>Product Recommendations 5.0</td>
+      <td>Admitido</span>
+      </td>
+      <td>Admitido</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>Compatible</span>
+      </td>
+      <td>No admitido</span>
+      </td>
     </tr>
     <tr>
       <td>Product Recommendations 4.0.1</td>
