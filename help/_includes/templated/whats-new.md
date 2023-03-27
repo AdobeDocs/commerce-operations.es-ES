@@ -1,7 +1,7 @@
 ---
-source-git-commit: 9f9dc61a7cf10b3b1890878dc774e95a0adff27a
+source-git-commit: e1c40ccea2524704abd4d6b0f0a627f8809f6fa8
 workflow-type: tm+mt
-source-wordcount: '931'
+source-wordcount: '1043'
 ht-degree: 0%
 
 ---
@@ -10,6 +10,66 @@ ht-degree: 0%
 ## Novedades
 
 Obtenga información sobre la nueva documentación y las actualizaciones importantes de la documentación existente.
+
+### 23 de marzo de 2023
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descripción</th>
+      <th>Tipo</th>
+      <th>Fuente</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Publicado <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html">notas de la versión</a> para la versión del paquete de la herramienta de parches de calidad (QPT) 1.1.29.</p>
+</td>
+      <td>actualización principal</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/c720c867eecfce0ba584da55aefd8f09ccb3b9f6">c720c8</a> (confirmar)</td>
+    </tr>
+  </tbody>
+</table>
+
+### 17 de marzo de 2023
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descripción</th>
+      <th>Tipo</th>
+      <th>Fuente</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Se ha añadido información sobre las <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-6.html#known-issue">problema conocido</a> para Adobe Commerce 2.4.6.</p>
+</td>
+      <td>actualización principal</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/2cf389ad5aaa198cdffb0a32adab3774a613bdc1">2cf389</a> (confirmar)</td>
+    </tr>
+  </tbody>
+</table>
+
+### 16 de marzo de 2023
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descripción</th>
+      <th>Tipo</th>
+      <th>Fuente</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Actualizado <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html&lt;br/&gt;">Versiones publicadas</a>.</p>
+</td>
+      <td>technical</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/07e0a497aec1f4fc5d0ce7226b4406ef756e8359">07e0a4</a> (confirmar)</td>
+    </tr>
+  </tbody>
+</table>
 
 ### 14 de marzo de 2023
 
