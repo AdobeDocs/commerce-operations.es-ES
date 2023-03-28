@@ -1,9 +1,9 @@
 ---
 title: Referencia de rutas de configuración del catálogo
 description: Consulte una lista de valores de configuración del catálogo.
-source-git-commit: bd1bf6edd131ec93902246e95ce857b509f2a619
+source-git-commit: e4b7ea70b96143629b245409537459ad259393e0
 workflow-type: tm+mt
-source-wordcount: '827'
+source-wordcount: '814'
 ht-degree: 0%
 
 ---
@@ -72,6 +72,7 @@ Estos valores de configuración están disponibles en Administración en **Almac
 | Buscar recuento de Recommendations | `catalog/search/search_recommendations_count` | ![Solo comercio](/help/assets/configuration/cloud-ee.png) |
 | Mostrar recuento de resultados para cada recomendación | `catalog/search/search_recommendations_count_results_enabled` | ![Solo comercio](/help/assets/configuration/cloud-ee.png) |
 | Mínimo de términos para coincidir | `catalog/search/minimum_should_match` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Generar reescrituras de URL de &quot;categoría/producto&quot; | `catalog/seo/generate_category_product_rewrites` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Términos de búsqueda populares | `catalog/seo/search_terms` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Sufijo de dirección URL del producto | `catalog/seo/product_url_suffix` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Sufijo de dirección URL de categoría | `catalog/seo/category_url_suffix` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -115,7 +116,7 @@ Estos valores de configuración están disponibles en Administración en **Almac
 | Mostrar productos de ventas superiores | `catalog/magento_targetrule/upsell_position_behavior` | ![Solo comercio](/help/assets/configuration/cloud-ee.png) |
 | Modo de rotación de los productos en la lista de productos de ventas superiores | `catalog/magento_targetrule/upsell_rotation_mode` | ![Solo comercio](/help/assets/configuration/cloud-ee.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Rutas de inventario
 
@@ -145,7 +146,7 @@ Estos valores de configuración están disponibles en Administración en **Almac
 | Modo de cómputo | `cataloginventory/source_selection_distance_based_google/mode` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Valor | `cataloginventory/source_selection_distance_based_google/value` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Rutas de comercialización visuales
 
@@ -158,7 +159,7 @@ Estos valores de configuración están disponibles en Administración en **Almac
 | Código de atributo de color | `visualmerchandiser/options/color_attribute_code` | ![Solo comercio](/help/assets/configuration/cloud-ee.png) |
 | Orden del color | `visualmerchandiser/options/color_order` | ![Solo comercio](/help/assets/configuration/cloud-ee.png) |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Rutas de mapa del sitio XML
 
@@ -182,7 +183,7 @@ Estos valores de configuración están disponibles en Administración en **Almac
 | Tamaño máximo del archivo | `sitemap/limit/max_file_size` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Habilitar envío a Robots.txt | `sitemap/search_engines/submission_robots` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Rutas de fuentes RSS
 
@@ -198,7 +199,7 @@ Estos valores de configuración están disponibles en Administración en **Almac
 | Categoría superior | `rss/catalog/category` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Notificación de estado de pedido del cliente | `rss/order/status` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Enviar correo electrónico a rutas de amigos
 
@@ -213,4 +214,4 @@ Estos valores de configuración están disponibles en Administración en **Almac
 | Máximo de productos enviados en 1 hora | `sendfriend/email/max_per_hour` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Limitar envío por | `sendfriend/email/check_by` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
