@@ -1,9 +1,9 @@
 ---
 title: "[!DNL Upgrade Compatibility Tool] requisitos"
 description: Verifique que su sistema cumpla los requisitos necesarios para ejecutar el [!DNL Upgrade Compatibility Tool] en una interfaz de línea de comandos para su proyecto de Adobe Commerce.
-source-git-commit: 0d106b36f479ecf2eda3fecf6740b28d4b6793eb
+source-git-commit: 653d755023f96c0a6acc312f74fd4a0292f13a73
 workflow-type: tm+mt
-source-wordcount: '276'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -79,3 +79,5 @@ Adobe Commerce solo es compatible con sistemas operativos Linux. Puede ejecutar 
 Es necesario para el [!DNL Upgrade Compatibility Tool] para tener acceso al código fuente de la instancia de Adobe Commerce. Por ejemplo, puede instalarlo en un servidor y señalarlo en la instalación de Adobe Commerce en otro servidor.
 
 Si está ejecutando el [!DNL Upgrade Compatibility Tool] en una instancia de Adobe Commerce con módulos y archivos grandes, la herramienta podría requerir una gran cantidad de RAM (al menos 2 GB).
+
+Ejecute el [!DNL Upgrade Compatibility Tool] de la variable [[!DNL Site-Wide Analysis Tool]](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/integrate-analysis-tool.html) para [Adobe Commerce en infraestructura en la nube](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html){target=_blank} proyectos.

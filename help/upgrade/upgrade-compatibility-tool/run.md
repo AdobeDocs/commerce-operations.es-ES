@@ -1,9 +1,9 @@
 ---
 title: "Ejecute el [!DNL Upgrade Compatibility Tool]"
 description: Siga estos pasos para ejecutar el [!DNL Upgrade Compatibility Tool] en una interfaz de línea de comandos para su proyecto de Adobe Commerce.
-source-git-commit: e704748a7ceaa58a5a8d7004c81ac766dec4e7f1
+source-git-commit: 653d755023f96c0a6acc312f74fd4a0292f13a73
 workflow-type: tm+mt
-source-wordcount: '1090'
+source-wordcount: '1116'
 ht-degree: 0%
 
 ---
@@ -207,7 +207,7 @@ Para devolver una lista de [!DNL Upgrade Compatibility Tool] comandos disponible
 bin/uct list
 ```
 
-## Utilice la variable `--help` command
+## Utilice la variable `help` command
 
 Para ver el [!DNL Upgrade Compatibility Tool] comando opciones generales y ayuda, ejecute:
 
@@ -260,6 +260,7 @@ Esto devuelve opciones específicas que se pueden ejecutar para la variable `upg
 - Evite tener dos módulos con el mismo nombre.
 - Seguir Adobe Commerce [normas de codificación](https://developer.adobe.com/commerce/php/coding-standards/).
 - Adobe Commerce 2.4 [Guía de actualización](https://experienceleague.adobe.com/docs/commerce-operations/assets/adobe-commerce-2-4-upgrade-guide.pdf) prácticas recomendadas.
+- Ejecute el [!DNL Upgrade Compatibility Tool] de la variable [[!DNL Site-Wide Analysis Tool]](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/integrate-analysis-tool.html) para [Adobe Commerce en infraestructura en la nube](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html){target=_blank} proyectos.
 
 ## Optimizar los resultados
 
