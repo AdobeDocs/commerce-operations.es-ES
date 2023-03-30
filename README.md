@@ -1,17 +1,17 @@
 ---
-source-git-commit: d17847a7151c5e88f763b334e1ee659ca3ca6bcf
+source-git-commit: 4b767014f325bef7e07cea11d01089206bf44caf
 workflow-type: tm+mt
-source-wordcount: '532'
-ht-degree: 5%
+source-wordcount: '475'
+ht-degree: 0%
 
 ---
-# Documentación del usuario de Adobe Commerce
+# Documentación técnica de Adobe Commerce
 
 Agradecemos las contribuciones de nuestra comunidad, así como de los empleados de Adobe de fuera de los equipos de documentación.
 
 ## Código de conducta de código abierto de Adobe
 
-Este proyecto ha adoptado el [Código de conducta de código abierto de Adobe](code-of-conduct.md) o el [Código de conducta de la Fundación .NET](https://dotnetfoundation.org/code-of-conduct). Para obtener más información, consulte el artículo [Colaboración](contributing.md).
+Este proyecto ha adoptado el [Código de conducta de código abierto de Adobe](code-of-conduct.md) o [Código de conducta de .NET Foundation](https://dotnetfoundation.org/code-of-conduct). Para obtener más información, consulte la [Contribución](contributing.md) artículo.
 
 ## Acerca de sus contribuciones al contenido de Adobe
 
@@ -33,7 +33,7 @@ Si forma parte de la comunidad de Adobe y desea crear un artículo nuevo o envia
 If you submit a pull request with significant changes to documentation and code examples, you'll see a message in the pull request asking you to submit an online contribution license agreement (CLA). We need you to complete the online form before we can review your pull request.
 -->
 
-### Principales cambios de los empleados de Adobe
+### Principales cambios de los empleados del Adobe
 
 Si es redactor técnico, administrador de programa o desarrollador del equipo de producto para una solución de Adobe Experience Cloud y su trabajo consiste en contribuir a artículos técnicos o crearlos, debe utilizar el repositorio privado que hay en `https://git.corp.adobe.com/AdobeDocs`.
 
@@ -51,13 +51,6 @@ Todos los artículos de este repositorio utilizan el Markdown con sabor a GitHub
 
 * [Conceptos básicos de Markdown](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)
 * [Hoja de referencia de markdown para imprimir](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
-
-## Etiquetas
-
-En el repositorio público, se asignan etiquetas automatizadas a las solicitudes de extracción para que nos ayuden a administrar el flujo de trabajo de las solicitudes de extracción y para que sepan lo que sucede con la solicitud de extracción:
-
-* **Cambio enviado al autor**: Se ha notificado al autor de la solicitud de extracción pendiente.
-* **listo para combinar**: Listo para su revisión por nuestro equipo de revisión de solicitudes de extracción.
 
 ## Plantillas
 
