@@ -1,9 +1,9 @@
 ---
 title: Configuración del servidor web
 description: Aprenda a configurar su servidor web para que funcione con Varnish.
-source-git-commit: ee2e446edf79efcd7cbbd67248f8e7ece06bfefd
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '746'
+source-wordcount: '740'
 ht-degree: 0%
 
 ---
@@ -196,7 +196,7 @@ backend default {
 
 ## Verificar encabezados de respuesta HTTP
 
-Ahora puede verificar que Varnish esté sirviendo páginas mirando [HTML](https://glossary.magento.com/html) encabezados de respuesta devueltos desde cualquier página.
+Ahora puede comprobar que Varnish está sirviendo páginas mirando los encabezados de respuesta del HTML devueltos desde cualquier página.
 
 Para poder ver los encabezados, debe establecer Commerce para el modo de desarrollador. Hay varias formas de hacerlo, la más sencilla de las cuales es modificar `.htaccess` en la raíz de la aplicación Commerce. También puede usar la variable [`magento deploy:mode:set`](../cli/set-mode.md) comando.
 
@@ -235,7 +235,7 @@ Si encabezados como estos _not_ visualice, detenga Varnish, compruebe su `defaul
 
 ### Observe los encabezados de respuesta del HTML
 
-Existen varias formas de ver los encabezados de respuesta, incluido el uso de un explorador [complemento](https://glossary.magento.com/plug-in) o un inspector del navegador.
+Existen varias formas de ver los encabezados de respuesta, incluido el uso de un complemento del navegador o de un inspector del navegador.
 
 El siguiente ejemplo utiliza `curl`. Puede introducir este comando desde cualquier equipo que pueda acceder al servidor de comercio mediante HTTP.
 

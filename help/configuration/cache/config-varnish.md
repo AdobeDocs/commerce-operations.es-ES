@@ -1,9 +1,9 @@
 ---
 title: Configuración y uso de Varnish
 description: Comprenda cómo Varnish almacena archivos y mejora el tráfico HTTP.
-source-git-commit: 974c3480ccf5d1e1a5308e1bd2b27fcfaf3c72b2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '1088'
+source-wordcount: '1079'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ En la figura anterior, las solicitudes HTTP de los usuarios a través de Interne
 
 A medida que el servidor web devuelve recursos, los recursos almacenables en caché se almacenan en Varnish. Cualquier solicitud posterior de esos recursos la cumple Varnish (es decir, las solicitudes no llegan al servidor web). Varnish devuelve el contenido almacenado en caché muy rápidamente. Los resultados son tiempos de respuesta más rápidos para devolver el contenido a los usuarios y un número reducido de solicitudes que Commerce debe satisfacer.
 
-Los recursos almacenados en la caché de Varnish caducan a un intervalo configurable o se sustituyen por versiones más recientes de los mismos recursos. También puede borrar la caché manualmente mediante la función [Administrador](https://glossary.magento.com/magento-admin) o [`magento cache:clean`](../cli/manage-cache.md#clean-and-flush-cache-types) comando.
+Los recursos almacenados en la caché de Varnish caducan a un intervalo configurable o se sustituyen por versiones más recientes de los mismos recursos. También puede borrar la caché manualmente mediante el administrador o el [`magento cache:clean`](../cli/manage-cache.md#clean-and-flush-cache-types) comando.
 
 ## Información general del proceso
 
@@ -97,7 +97,7 @@ Este tema cubre únicamente las opciones predeterminadas de la lista anterior. E
 
 En la primera solicitud del explorador, los recursos almacenables en caché se entregan al explorador del cliente desde Varnish y se almacenan en la caché del explorador.
 
-Además, Varnish utiliza un [Entidad](https://glossary.magento.com/entity) Etiqueta (ETag) para recursos estáticos. La etiqueta ETag permite determinar cuándo [archivos estáticos](https://glossary.magento.com/static-files) cambie en el servidor. Como resultado, los recursos estáticos se envían al cliente cuando cambian en el servidor, ya sea en una nueva solicitud de un explorador o cuando el cliente actualiza la caché del explorador, normalmente presionando F5 o Control+F5.
+Además, Varnish utiliza una etiqueta de entidad (ETag) para los recursos estáticos. La etiqueta ETag permite determinar cuándo cambian los archivos estáticos en el servidor. Como resultado, los recursos estáticos se envían al cliente cuando cambian en el servidor, ya sea en una nueva solicitud de un explorador o cuando el cliente actualiza la caché del explorador, normalmente presionando F5 o Control+F5.
 
 En las secciones siguientes se proporcionan más detalles.
 

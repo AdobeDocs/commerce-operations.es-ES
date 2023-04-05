@@ -1,9 +1,9 @@
 ---
 title: Solución de rendimiento de la base de datos dividida
 description: Obtenga más información sobre la solución de división de bases de datos para Adobe Commerce y Magento Open Source.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '632'
+source-wordcount: '626'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ Adobe Commerce utiliza tres bases de datos maestras y un número configurable de
 Debido al modo en que se diseña la solución de rendimiento de la base de datos dividida, su código personalizado y los componentes instalados _cannot_ realice una de las acciones siguientes:
 
 - Escribir directamente en la base de datos (en su lugar, debe utilizar la interfaz de la base de datos de Adobe Commerce)
-- Utilice JOIN que afecten a las ventas o [comillas](https://glossary.magento.com/quote) bases de datos
+- Usar JOIN que afectan a las bases de datos de ventas o presupuestos
 - Utilice claves externas para tablas en las bases de datos principales, ventas o cierre de compra
 
 >[!WARNING]
@@ -76,7 +76,7 @@ Esto también significa que puede:
 
 La base de datos dividida requiere que configure tres bases de datos maestras de MySQL en cualquier host (las tres en el servidor de comercio, cada base de datos en un servidor separado, etc.). Estos son los _maestro_ y se utilizan de la siguiente manera:
 
-- Una base de datos maestra para [cierre de compra](https://glossary.magento.com/checkout) tablas
+- Una base de datos maestra para tablas de cierre de compra
 - Una base de datos maestra para tablas de ventas (también denominada _Sistema de gestión de pedidos_ o _OMS_, tablas)
 - Una base de datos maestra para el resto de las tablas de la aplicación Commerce 2
 

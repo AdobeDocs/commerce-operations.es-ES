@@ -1,9 +1,9 @@
 ---
 title: Tipos de configuración
 description: Crear o ampliar tipos de configuración.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '597'
+source-wordcount: '591'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 ## Ampliar tipos de configuración
 
-Para ampliar un tipo de configuración existente, solo necesita crear un archivo de configuración en su [módulo](https://glossary.magento.com/module).
+Para ampliar un tipo de configuración existente, solo necesita crear un archivo de configuración en el módulo.
 
 Por ejemplo, para añadir un observador de eventos, se crea `app/code/{VendorName}/{ModuleName}/etc/events.xml` y declarar un nuevo observador.
 
@@ -29,7 +29,7 @@ Para crear un tipo de configuración, debe agregar como mínimo:
 - Esquema de validación XSD
 - Archivos de configuración XML
 
-Por ejemplo, para introducir un [adaptador](https://glossary.magento.com/adapter) para un nuevo servidor de búsqueda que permita a las extensiones configurar cómo se indexan sus entidades en ese servidor, cree:
+Por ejemplo, para introducir un adaptador para un nuevo servidor de búsqueda que permita que las extensiones configuren cómo se indexan sus entidades en ese servidor, cree:
 
 - Un cargador
 - Un archivo de esquema XSD

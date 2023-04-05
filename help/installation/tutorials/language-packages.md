@@ -1,9 +1,9 @@
 ---
 title: Desinstalación de paquetes de idiomas
 description: Siga estos pasos para desinstalar un paquete de idioma Adobe Commerce o Magento Open Source.
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '222'
+source-wordcount: '213'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 En esta sección se explica cómo desinstalar uno o más paquetes de idioma, incluyendo opcionalmente el código de los paquetes de idioma del sistema de archivos. Primero puede crear copias de seguridad para poder restaurar los datos más adelante.
 
-Este comando desinstala *only* paquetes de idioma especificados en `composer.json`; es decir, paquetes de idiomas que se proporcionan como [Compositor](https://glossary.magento.com/composer) paquetes. Si su [paquete de idioma](https://glossary.magento.com/language-package) no es un paquete Composer, debe desinstalarlo manualmente eliminando el código del paquete de idioma del sistema de archivos.
+Este comando desinstala *only* paquetes de idioma especificados en `composer.json`; en otras palabras, los paquetes de idioma que se proporcionan como paquetes Composer. Si el paquete de idioma no es un paquete Composer, debe desinstalarlo manualmente eliminando el código del paquete de idioma del sistema de archivos.
 
 Puede restaurar las copias de seguridad en cualquier momento utilizando la variable [`magento setup:rollback`](uninstall-modules.md#roll-back-the-file-system-database-or-media-files) comando.
 
@@ -31,7 +31,7 @@ El comando de desinstalación del paquete de idioma realiza las siguientes tarea
 
 1. If `--backup code` se especifica, realice una copia de seguridad del sistema de archivos (excepto `var` y `pub/static` directorios) a `var/backups/<timestamp>_filesystem.tgz`
 1. Elimina los archivos de paquetes de idioma de la base de código mediante `composer remove`.
-1. Limpia el [cache](https://glossary.magento.com/cache).
+1. Limpia la caché.
 
 Por ejemplo, si intenta desinstalar un paquete de idioma del que dependa otro paquete de idioma, aparece el siguiente mensaje:
 

@@ -1,9 +1,9 @@
 ---
 title: Compilador de código
 description: Aprenda a ejecutar el compilador de código desde la línea de comandos.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '183'
+source-wordcount: '174'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,11 @@ ht-degree: 0%
 La compilación de código incluye lo siguiente (sin orden particular):
 
 - Generación de código de aplicación (fábricas, proxies)
-- Agregación de configuración de área (optimizada) [inyección de dependencia](https://glossary.magento.com/dependency-injection) configuraciones por área)
+- Agregación de configuración de área (configuraciones de inyección de dependencia optimizada por área)
 - Generación de interceptores (generación de código optimizada de interceptores)
 - Generación de caché de intercepción
 - Generación de código de repositorios (código generado para API)
-- Generación de atributos de datos de servicio (generada [Extensión](https://glossary.magento.com/extension) clases para objetos de datos)
+- Generación de atributos de datos de servicio (clases de extensión generadas para objetos de datos)
 
 Puede encontrar las clases de compilación de código en la [\Magento\Setup\Module\Di\App\Task\Operation][operation] espacio de nombres.
 
@@ -44,7 +44,7 @@ En algunos casos, es posible que desee compilar código antes de instalar la apl
    bin/magento module:enable --all [-c|--clear-static-content]
    ```
 
-   Utilice la variable `[-c|--clear-static-content]` para borrar [contenido estático](https://glossary.magento.com/static-content). Esto es necesario si previamente ha habilitado o deshabilitado los módulos y debe borrar el contenido estático generado previamente para ellos.
+   Utilice la variable `[-c|--clear-static-content]` para borrar contenido estático. Esto es necesario si previamente ha habilitado o deshabilitado los módulos y debe borrar el contenido estático generado previamente para ellos.
 
    Consulte [Habilitar módulos](../../installation/tutorials/manage-modules.md).
 

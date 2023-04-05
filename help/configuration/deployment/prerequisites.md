@@ -1,9 +1,9 @@
 ---
 title: Requisitos previos para la implementación
 description: Consulte una lista de requisitos previos para implementar Commerce en un sistema de desarrollo, compilación o producción.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '164'
+source-wordcount: '161'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Los permisos y la propiedad de los archivos deben ser coherentes en todos los si
 
 - Todos los siguientes:
 
-   - Configure lo mismo [propietario del sistema de archivos](https://glossary.magento.com/magento-file-system-owner) nombre de usuario en todos los sistemas
+   - Configurar el mismo nombre de usuario propietario del sistema de archivos en todos los sistemas
    - Asegúrese de que el servidor web se ejecuta como el mismo usuario en todos los sistemas
    - Asegúrese de que el propietario del sistema de archivos está en el grupo de servidores web en todos los sistemas
 

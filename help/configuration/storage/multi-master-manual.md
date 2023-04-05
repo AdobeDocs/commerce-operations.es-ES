@@ -1,9 +1,9 @@
 ---
 title: Configuración manual de bases de datos maestras
 description: Consulte las instrucciones sobre la configuración manual de la solución de base de datos dividida.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '1388'
+source-wordcount: '1379'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Si la aplicación Commerce ya está en producción o si ya ha instalado código 
 
 La división manual de bases de datos implica:
 
-- Cree la variable [cierre de compra](https://glossary.magento.com/checkout) y bases de datos del sistema de gestión de pedidos (OMS)
+- Creación de las bases de datos del sistema de gestión de pedidos (OMS) y cierre de compra
 - Ejecute una serie de secuencias de comandos SQL que:
 
    - Borrar claves externas
@@ -62,7 +62,7 @@ Adobe recomienda encarecidamente que realice una copia de seguridad de la base d
 
 ## Configuración de bases de datos maestras adicionales
 
-En esta sección se explica cómo crear instancias de base de datos para ventas y [comillas](https://glossary.magento.com/quote) tablas.
+En esta sección se explica cómo crear instancias de base de datos para tablas de venta y presupuesto.
 
 **Para crear bases de datos de presupuestos de ventas y OMS**:
 
@@ -549,7 +549,7 @@ Busque el bloque que comienza con `'resource'` y agregue `'checkout'` y `'sales'
 
 ## Scripts de referencia
 
-Esta sección proporciona secuencias de comandos que pueden ejecutarse para imprimir una lista completa de las tablas afectadas sin realizar ninguna acción en ellas. Puede utilizarlas para ver qué tablas se ven afectadas antes de dividir manualmente las bases de datos, lo que puede resultar útil si utiliza extensiones que personalizan el [esquema de base de datos](https://glossary.magento.com/database-schema).
+Esta sección proporciona secuencias de comandos que pueden ejecutarse para imprimir una lista completa de las tablas afectadas sin realizar ninguna acción en ellas. Puede utilizarlas para ver qué tablas se ven afectadas antes de dividir manualmente las bases de datos, lo que puede resultar útil si utiliza extensiones que personalizan el esquema de la base de datos.
 
 Para utilizar estas secuencias de comandos:
 

@@ -1,9 +1,9 @@
 ---
 title: Múltiples sitios web o tiendas
 description: Aprenda cómo iniciar varios sitios web o implementar vistas de tiendas con diferentes opciones, dominios y contenido.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '439'
+source-wordcount: '433'
 ht-degree: 0%
 
 ---
@@ -19,11 +19,11 @@ Una sola instancia del software de Adobe Commerce permite iniciar varios sitios 
 - Productos
 - Monedas
 
-Esta solución flexible permite un código de base de comercio y [Administrador](https://glossary.magento.com/magento-admin) para administrar y mostrar diferentes tiendas. Los sitios web, las tiendas y las vistas de las tiendas se configuran en Administración. Utilice ciertas variables en los hosts virtuales para iniciar la aplicación de comercio con estos sitios web o vistas de tienda.
+Esta solución flexible permite que un código de barras de comercio y un administrador administren y muestren diferentes tiendas. Los sitios web, las tiendas y las vistas de las tiendas se configuran en Administración. Utilice ciertas variables en los hosts virtuales para iniciar la aplicación de comercio con estos sitios web o vistas de tienda.
 
 Un uso habitual es configurar tiendas con diferentes opciones en distintos dominios. Por ejemplo, puede tener un conjunto de categorías y productos en un dominio y otro conjunto de categorías y productos en un dominio separado en un idioma diferente.
 
-Los sitios web, las tiendas y las vistas de las tiendas se configuran en Comercio [Administrador](https://glossary.magento.com/admin). Utilice la variable `MAGE_RUN_TYPE` y `MAGE_RUN_CODE` en hosts virtuales para iniciar la aplicación Commerce con estos sitios web o vistas de tienda.
+Los sitios web, las tiendas y las vistas de las tiendas se configuran en el Administrador de comercio. Utilice la variable `MAGE_RUN_TYPE` y `MAGE_RUN_CODE` en hosts virtuales para iniciar la aplicación Commerce con estos sitios web o vistas de tienda.
 
 Tenga en cuenta los siguientes términos:
 

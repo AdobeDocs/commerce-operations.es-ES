@@ -1,9 +1,9 @@
 ---
 title: Definir valores de configuración
 description: Obtenga información sobre cómo establecer valores de configuración y cambiar valores que están bloqueados en Administración.
-source-git-commit: cb8edb8de8f8419e9992b180ea927ba55cbd839b
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '985'
+source-wordcount: '982'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Puede establecer valores en los siguientes momentos:
 
 - Antes de instalar Commerce, puede establecer valores de configuración solo para el ámbito predeterminado, ya que es el único ámbito válido.
 
-- Después de instalar Commerce, puede establecer los valores de configuración para cualquier sitio web o [vista de tienda](https://glossary.magento.com/store-view) ámbito.
+- Después de instalar Commerce, puede establecer valores de configuración para cualquier sitio web o ámbito de vista de tienda.
 
 Utilice los siguientes comandos:
 

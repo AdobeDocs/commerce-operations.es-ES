@@ -1,9 +1,9 @@
 ---
 title: Implementación de archivos de vista estáticos
 description: Aprenda a escribir archivos estáticos en el sistema de archivos de Commerce durante el modo de producción.
-source-git-commit: 0d106b36f479ecf2eda3fecf6740b28d4b6793eb
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '1135'
+source-wordcount: '1132'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 {{file-system-owner}}
 
-El comando static view files deploy permite escribir [archivos estáticos](https://glossary.magento.com/static-files) al sistema de archivos Commerce cuando el software Commerce esté configurado para [modo de producción](../bootstrap/application-modes.md#production-mode).
+El comando static view files deploy permite escribir archivos estáticos en el sistema de archivos Commerce cuando el software Commerce está configurado para [modo de producción](../bootstrap/application-modes.md#production-mode).
 
 El término _archivo de vista estática_ hace referencia a lo siguiente:
 

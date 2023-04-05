@@ -1,9 +1,9 @@
 ---
 title: Configuración de la aplicación
 description: Obtenga información sobre la configuración posterior a la instalación necesaria para las implementaciones locales de Adobe Commerce y Magento Open Source.
-source-git-commit: 639dca9ee715f2f9ca7272d3b951d3315a85346c
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '731'
+source-wordcount: '728'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ Si utiliza el servidor web Apache, debe habilitar las reescrituras del servidor 
 
 Si tiene varios nodos web, *cannot* utilice el almacenamiento en caché predeterminado de archivos de la aplicación porque no hay sincronización entre nodos web. En otras palabras, la actividad de un nodo web solo se escribe en el sistema de archivos de ese nodo web. La actividad siguiente, si se realiza en otro nodo web, puede dar como resultado que se escriban archivos innecesarios o que se produzcan errores.
 
-En su lugar, utilice [Redis](../../configuration/cache/config-redis.md) para ambos valores predeterminados [cache](https://glossary.magento.com/cache) y la caché de la página.
+En su lugar, utilice [Redis](../../configuration/cache/config-redis.md) para la caché predeterminada y la caché de página.
 
 ## Configuración del servidor
 

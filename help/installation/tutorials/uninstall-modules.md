@@ -1,9 +1,9 @@
 ---
 title: Desinstalar módulos
 description: Siga estos pasos para desinstalar un módulo Adobe Commerce o Magento Open Source.
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '753'
+source-wordcount: '741'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Solo debe desinstalar un módulo si está seguro de que no lo usará. En lugar d
 
 >[!NOTE]
 >
->Este comando comprueba que solo las dependencias declaradas en la variable `composer.json` archivo. Si desinstala un [módulo](https://glossary.magento.com/module) que es _not_ definida en la variable `composer.json` , este comando desinstala el módulo sin comprobar las dependencias. Este comando sí _not_ sin embargo, elimine el código del módulo del sistema de archivos. Debe utilizar las herramientas del sistema de archivos para eliminar el código del módulo (por ejemplo, `rm -rf <path to module>`). Como alternativa, puede [disable](manage-modules.md) módulos que no sean del Compositor.
+>Este comando comprueba que solo las dependencias declaradas en la variable `composer.json` archivo. Si desinstala un módulo que _not_ definida en la variable `composer.json` , este comando desinstala el módulo sin comprobar las dependencias. Este comando sí _not_ sin embargo, elimine el código del módulo del sistema de archivos. Debe utilizar las herramientas del sistema de archivos para eliminar el código del módulo (por ejemplo, `rm -rf <path to module>`). Como alternativa, puede [disable](manage-modules.md) módulos que no sean del Compositor.
 
 Uso de comandos:
 
@@ -30,7 +30,7 @@ Donde `{ModuleName}` especifica el nombre del módulo en `<VendorName>_<ModuleNa
 
 El comando de desinstalación del módulo realiza las siguientes tareas:
 
-1. Verifica que los módulos especificados existan en la base de código y que sean paquetes instalados por [Compositor](https://glossary.magento.com/composer).
+1. Verifica que los módulos especificados existan en la base de código y que sean paquetes instalados por Composer.
 
    Este comando funciona _only_ con módulos definidos como paquetes de Composer.
 
@@ -60,7 +60,7 @@ El comando de desinstalación del módulo realiza las siguientes tareas:
    >
    >Desinstalación de un módulo _always_ run `composer remove`. La variable `--remove-data` elimina los datos de la base de datos y el esquema definidos por el módulo `Uninstall` Clase .
 
-1. Limpia el [cache](https://glossary.magento.com/cache).
+1. Limpia la caché.
 1. Actualiza las clases generadas.
 1. If `--clear-static-content` se especifica, limpia [archivos de vista estáticos generados](../../configuration/cli/static-view-file-deployment.md).
 1. Quita el almacén del modo de mantenimiento.
@@ -73,7 +73,7 @@ magento module:uninstall Magento_SampleMinimal
         Magento_SampleModifyContent
 ```
 
-Una alternativa es desinstalar ambos módulos después de realizar una copia de seguridad del sistema de archivos del módulo, `pub/media` archivos y tablas de base de datos, pero _not_ quitar el [esquema de base de datos](https://glossary.magento.com/database-schema) o datos:
+Una alternativa es desinstalar ambos módulos después de realizar una copia de seguridad del sistema de archivos del módulo, `pub/media` archivos y tablas de base de datos, pero _not_ quitar el esquema o los datos de la base de datos del módulo:
 
 ```bash
 bin/magento module:uninstall Magento_SampleMinimal Magento_SampleModifyContent --backup-code --backup-media --backup-db

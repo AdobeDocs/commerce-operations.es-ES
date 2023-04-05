@@ -1,9 +1,9 @@
 ---
 title: Actualización del esquema y los datos de la base de datos
 description: Siga estos pasos para actualizar el esquema de la base de datos de Adobe Commerce o Magento Open Source.
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '176'
+source-wordcount: '173'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Antes de utilizar este comando, debe [instalar la aplicación](../advanced.md).
 
 ## Actualización del esquema y los datos de la base de datos
 
-Siempre que realice una acción que provoque el [esquema de base de datos](https://glossary.magento.com/database-schema) Para que los datos cambien, debe actualizarlos ejecutando el comando discutido en esta sección. A continuación se ofrece una lista parcial de motivos:
+Siempre que realice una acción que haga que cambien los datos o el esquema de la base de datos, debe actualizarlos ejecutando el comando analizado en esta sección. A continuación se ofrece una lista parcial de motivos:
 
 * Ha actualizado la aplicación utilizando la línea de comandos
 * Ha instalado o actualizado un componente mediante la línea de comandos

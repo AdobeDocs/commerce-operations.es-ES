@@ -1,9 +1,9 @@
 ---
 title: Archivos de configuración para la implementación
 description: Obtenga información sobre cómo funcionan los archivos de configuración para instalar la aplicación Commerce.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '478'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ En el nivel superior de esta matriz se encuentran _segmentos de configuración_.
 
 [Magento\Framework\App\DeploymentConfig](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/DeploymentConfig.php) solo proporciona acceso a estas secciones, pero no permite ampliarlas.
 
-En el siguiente nivel de jerarquía, los elementos de cada segmento se ordenan según la variable [módulo](https://glossary.magento.com/module) definición de secuencia, que se obtiene combinando los archivos de configuración de todos los módulos, excepto los módulos desactivados.
+En el siguiente nivel de jerarquía, los elementos de cada segmento se ordenan según la definición de secuencia de módulo, que se obtiene combinando los archivos de configuración de todos los módulos, excepto los módulos desactivados.
 
 Las siguientes secciones tratan sobre la estructura y el contenido de la configuración de implementación:
 
@@ -78,6 +78,6 @@ return array (
 
 El valor `1` o `0` indica si un módulo está habilitado o deshabilitado.
 
-La aplicación Commerce no reconoce los módulos deshabilitados. en otras palabras, no participan en la configuración de combinación, en la inyección de dependencias, eventos, complementos, etc. Los módulos desactivados no modifican el [storefront](https://glossary.magento.com/storefront) o [Administrador](https://glossary.magento.com/admin) y no afectan al enrutamiento.
+La aplicación Commerce no reconoce los módulos deshabilitados. en otras palabras, no participan en la configuración de combinación, en la inyección de dependencias, eventos, complementos, etc. Los módulos desactivados no modifican la tienda ni el administrador y no afectan al enrutamiento.
 
 La única diferencia práctica de un módulo deshabilitado y un módulo ausente en la base de código es que el cargador automático encuentra un módulo deshabilitado, y sus clases y constantes están disponibles para su reutilización en otro código.

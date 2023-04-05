@@ -1,9 +1,9 @@
 ---
 title: Borrado de caché con Varnish
 description: Aprenda cómo funciona la limpieza de caché con Varnish y cómo utilizarla como acelerador de almacenamiento en caché web para la aplicación Adobe Commerce.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '382'
 ht-degree: 0%
 
 ---
@@ -15,13 +15,13 @@ En este tema se tratan los conceptos básicos del uso de Varnish como acelerador
 
 ## Purga de barniz
 
-Según [Documentación de Varnish](https://www.varnish-cache.org/docs/trunk/users-guide/purging.html), &quot;A *purge* es lo que sucede cuando se elige un objeto de la variable [cache](https://glossary.magento.com/cache) y desecharlo junto con sus variantes&quot;. Una purga de barniz es similar a un comando de limpieza de caché (o hacer clic en **Vaciar caché del Magento** en el administrador).
+Según [Documentación de Varnish](https://www.varnish-cache.org/docs/trunk/users-guide/purging.html), &quot;A *purge* Esto es lo que sucede cuando se selecciona un objeto de la caché y se descarta junto con sus variantes&quot;. Una purga de barniz es similar a un comando de limpieza de caché (o hacer clic en **Vaciar caché del Magento** en el administrador).
 
 De hecho, al limpiar, vaciar o actualizar la caché de comercio, también se depura Varnish.
 
 Después de instalar y configurar Varnish para que funcione con Commerce, las siguientes acciones pueden resultar en una purga de Varnish:
 
-- Mantenimiento de un [sitio web](https://glossary.magento.com/website).
+- Mantenimiento de un sitio web.
 
    Por ejemplo, cualquier cosa que haga en el Administrador de :
 

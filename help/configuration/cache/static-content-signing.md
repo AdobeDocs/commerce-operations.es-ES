@@ -1,9 +1,9 @@
 ---
 title: Caché de contenido estático
 description: Obtenga información sobre la firma de contenido estático y cómo habilitar o deshabilitar la función.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '442'
+source-wordcount: '433'
 ht-degree: 0%
 
 ---
@@ -15,12 +15,12 @@ Configuración de la variable `Expires` en un recurso estático, indica al explo
 Esto es común [prácticas recomendadas](https://developer.yahoo.com/performance/rules.html#expires=) para almacenar en caché los recursos estáticos.
 
 Cuando el explorador almacena en caché un recurso estático y ese recurso cambia en el servidor, debe borrar la caché del explorador para que pueda descargar la nueva versión.
-La eliminación manual de la caché del explorador funciona si es un [sitio web](https://glossary.magento.com/website) administrador, pero esta no es una solicitud adecuada para hacer de los usuarios cuando desea que descarguen nuevas versiones de un recurso estático.
+La eliminación manual de la caché del explorador funciona si es administrador de un sitio web, pero esta no es una solicitud adecuada para hacer de los usuarios cuando desea que descarguen nuevas versiones de un recurso estático.
 
 ## Firma de contenido estático
 
-[Contenido estático](https://glossary.magento.com/static-content) la firma es una función de comercio que le permite invalidar la caché del explorador para los recursos estáticos.
-Commerce lo consigue añadiendo una versión de implementación a la dirección URL de [archivos estáticos](https://glossary.magento.com/static-files).
+La firma de contenido estático es una función de comercio que permite invalidar la caché del explorador para los recursos estáticos.
+Commerce lo consigue añadiendo una versión de implementación a la URL de los archivos estáticos.
 
 A continuación se muestra un ejemplo de una URL firmada con una versión:
 

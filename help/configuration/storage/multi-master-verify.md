@@ -1,9 +1,9 @@
 ---
 title: Verificar base de datos dividida
 description: Obtenga información sobre cómo verificar que una configuración de base de datos dividida en comercio funciona correctamente.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '155'
+source-wordcount: '152'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 Después de la configuración, las bases de datos maestras se configuran de la siguiente manera:
 
 - Base de datos de comercio principal: 369 cuadros
-- Comercio [comillas](https://glossary.magento.com/quote) base de datos: 11 cuadros
+- Base de datos de ofertas de comercio: 11 cuadros
 - Base de datos de ventas comerciales: 55 tablas
 
 Para comprobar que las bases de datos divididas funcionan correctamente, realice las siguientes tareas y verifique que los datos se agreguen a las tablas de la base de datos con una herramienta de base de datos como [phpmyadmin](../../installation/prerequisites/optional-software.md#phpmyadmin):

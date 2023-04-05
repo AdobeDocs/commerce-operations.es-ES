@@ -1,9 +1,9 @@
 ---
 title: Configurar palabras clave de búsqueda
 description: Obtenga información sobre cómo administrar palabras clave para Adobe Commerce mediante archivos CSV.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '658'
+source-wordcount: '652'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Para obtener más información sobre cómo Elasticsearch y OpenSearch utilizan p
 
 Las palabras clave se encuentran en la variable `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords` directorio. Adobe Commerce y Magento Open Source se envían con un archivo CSV que contiene palabras clave para las configuraciones regionales predeterminadas y un archivo adicional, `stopwords.csv`, que tiene palabras clave para cualquier configuración regional que no esté representada por otro archivo CSV.
 
-Duración predeterminada del archivo de palabras clave [cache](https://glossary.magento.com/cache) es de 15 minutos.
+La duración predeterminada para la caché de archivos de palabras clave es de 15 minutos.
 
 ### Editar palabras clave para una configuración regional existente
 
@@ -54,7 +54,7 @@ Duración predeterminada del archivo de palabras clave [cache](https://glossary.
       php <magento_root>/bin/magento cache:clean config
       ```
 
-1. Compruebe los resultados buscando términos en su [storefront](https://glossary.magento.com/storefront).
+1. Compruebe los resultados buscando términos en su tienda.
 
 ### Crear palabras clave para una nueva configuración regional
 

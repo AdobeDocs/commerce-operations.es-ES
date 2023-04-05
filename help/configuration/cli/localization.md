@@ -1,9 +1,9 @@
 ---
 title: Diccionarios de traducción y paquetes de idiomas
 description: Aprenda a generar diccionarios de traducción y a crear paquetes de idiomas.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '1509'
+source-wordcount: '1503'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Consulte [Resumen de traducciones].
 
 ## Generar un diccionario de traducción
 
-Puede generar un [diccionario de traducción] para personalizar cadenas existentes, traducir palabras y frases en un módulo personalizado, localizar un tema o crear [paquetes de idioma](https://glossary.magento.com/language-package).
+Puede generar un [diccionario de traducción] para personalizar cadenas existentes, traducir palabras y frases en un módulo personalizado, localizar un tema o crear paquetes de idiomas.
 
 Para empezar a traducir, utilice un comando para generar un archivo CSV de diccionario con una lista recopilada de todas las frases y palabras existentes.
 
@@ -139,7 +139,7 @@ Para crear estos archivos:
 
 Al declarar un paquete de idioma en la variable `language.xml` archivo de configuración, debe especificar la secuencia de la herencia de idioma para este paquete.
 
-La herencia de idioma permite crear una traducción llamada _secundario_ en función de una traducción existente denominada _parent_. Las traducciones secundarias anulan al principal. Sin embargo, si la traducción secundaria no se carga o muestra, o si falta una frase o palabra, Commerce utiliza la traducción principal [locale](https://glossary.magento.com/locale). [Ejemplos de la herencia del paquete de idioma](#example-of-language-inheritance).
+La herencia de idioma permite crear una traducción llamada _secundario_ en función de una traducción existente denominada _parent_. Las traducciones secundarias anulan al principal. Sin embargo, si la traducción secundaria no se carga o muestra, o si falta una frase o palabra, Commerce utiliza la configuración regional principal. [Ejemplos de la herencia del paquete de idioma](#example-of-language-inheritance).
 
 Para declarar un paquete, especifique la siguiente información:
 

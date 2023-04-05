@@ -1,9 +1,9 @@
 ---
 title: Modificar docroot para mejorar la seguridad
 description: Impida el acceso no autorizado basado en explorador a Adobe Commerce o al sistema de archivos local del Magento Open Source.
-source-git-commit: 8f05fb6fc212c2b3fda80457bbf27ecf16fb1194
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '592'
 ht-degree: 0%
 
 ---
@@ -165,7 +165,7 @@ El cambio entre modos es un paso importante para comprobar que la configuración
 
 ## 5. Verifique la tienda
 
-Vaya a la [storefront](https://glossary.magento.com/storefront) en un navegador web para comprobar que todo funciona.
+Vaya a la tienda en un navegador web para comprobar que todo funciona.
 
 1. Abra un explorador web e introduzca el nombre de host o la dirección IP del servidor en la barra de direcciones. Por ejemplo, `http://192.168.33.10`.
 

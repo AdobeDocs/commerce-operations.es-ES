@@ -1,9 +1,9 @@
 ---
 title: Migración de cambios
 description: Aprenda a migrar solo los datos que hayan cambiado desde la última migración de datos de Magento 1 con la variable [!DNL Data Migration Tool].
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '359'
+source-wordcount: '350'
 ht-degree: 0%
 
 ---
@@ -13,9 +13,9 @@ ht-degree: 0%
 
 La herramienta de migración incremental instala tablas deltalog (con prefijo `m2_cl_*`) y déclencheur (para el seguimiento de cambios) en la base de datos de Magento 1 durante el [migración de datos](data.md). Estas tablas y déclencheur deltalog son esenciales para garantizar que se migran solo los cambios realizados en el Magento 1 desde la última vez que se migraron los datos. Estos cambios son:
 
-* Datos que los clientes agregaron mediante [storefront](https://glossary.magento.com/storefront) (se han creado pedidos, revisiones y cambios en los perfiles de los clientes)
+* Datos que los clientes agregaron a través de tienda (pedidos creados, revisiones y cambios en los perfiles de los clientes)
 
-* Todas las operaciones con pedidos, productos y categorías en la variable [Administrador](https://glossary.magento.com/magento-admin) panel
+* Todas las operaciones con pedidos, productos y categorías en el panel de administración
 
 >[!NOTE]
 >
@@ -54,7 +54,7 @@ Donde:
 
 En el `Delta` el modo [!DNL Data Migration Tool] migra datos creados únicamente por los módulos propios de Magento y no es responsable del código o las extensiones realizadas por desarrolladores de terceros. Si estas extensiones crearon datos en la base de datos de tienda y el comerciante desea que estos datos estén en el Magento 2 — Archivos de configuración de la variable [!DNL Data Migration Tool] debe crearse y modificarse en consecuencia.
 
-Si una [Extensión](https://glossary.magento.com/extension) tiene sus propias tablas y debe realizar un seguimiento de los cambios para la migración delta, siga estos pasos:
+Si una extensión tiene sus propias tablas y necesita realizar un seguimiento de sus cambios para la migración delta, siga estos pasos:
 
 1. Agregue las tablas que desea rastrear a la `deltalog.xml` file
 1. Cree una clase delta adicional que amplíe la variable `Migration\App\Step\AbstractDelta`

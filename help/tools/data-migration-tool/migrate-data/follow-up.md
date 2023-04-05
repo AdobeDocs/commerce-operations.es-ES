@@ -1,9 +1,9 @@
 ---
 title: Seguimiento de la migración de datos
 description: Obtenga información sobre cómo validar que la migración de datos de Magento 1 a Magento 2 se haya realizado correctamente y que toda la funcionalidad funcione correctamente.
-source-git-commit: d609c497fdf00c5e5f975a5679b1d072cec4f8a2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '304'
+source-wordcount: '301'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Los números de referencia para Pedidos, Facturas, Envíos, Notas de Crédito y 
 
 ### Volver a guardar segmentos del cliente [Solo Adobe Commerce]
 
-Después de la migración, los segmentos del cliente deben guardarse del [Administrador](https://glossary.magento.com/admin) Panel para ponerlos en marcha.
+Después de la migración, los segmentos del cliente deben guardarse del panel de administración para que estén en funcionamiento.
 
 ### Configuración de zona horaria
 

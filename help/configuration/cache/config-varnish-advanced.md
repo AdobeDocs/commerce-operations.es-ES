@@ -1,9 +1,9 @@
 ---
 title: Configuración avanzada de barniz
 description: Configure características avanzadas de Varnish, incluidos los modos de comprobación de estado, gracia y santo.
-source-git-commit: 974c3480ccf5d1e1a5308e1bd2b27fcfaf3c72b2
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '907'
+source-wordcount: '892'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ El comercio define la siguiente comprobación de estado predeterminada:
     }
 ```
 
-Cada 5 segundos, esta comprobación de estado llama a la función `pub/health_check.php` secuencia de comandos. Esta secuencia de comandos comprueba la disponibilidad del servidor, cada base de datos y Redis (si están instalados). La secuencia de comandos debe devolver una respuesta en un plazo de 2 segundos. Si la secuencia de comandos determina que alguno de estos recursos está inactivo, devuelve un código de error HTTP 500. Si este código de error se recibe en seis de cada diez intentos, la variable [backend](https://glossary.magento.com/backend) se considera poco saludable.
+Cada 5 segundos, esta comprobación de estado llama a la función `pub/health_check.php` secuencia de comandos. Esta secuencia de comandos comprueba la disponibilidad del servidor, cada base de datos y Redis (si están instalados). La secuencia de comandos debe devolver una respuesta en un plazo de 2 segundos. Si la secuencia de comandos determina que alguno de estos recursos está inactivo, devuelve un código de error HTTP 500. Si este código de error se recibe en seis de cada diez intentos, el servidor se considera no saludable.
 
 La variable `health_check.php` la secuencia de comandos se encuentra en la `pub` directorio. Si el directorio raíz de Commerce es `pub`, asegúrese de cambiar la ruta en la variable `url` parámetro de `/pub/health_check.php` a `health_check.php`.
 
@@ -39,7 +39,7 @@ Para obtener más información, consulte la [Controles sanitarios de Varniz](htt
 
 ## Modo de gracia
 
-El modo de gracia permite a Varnish mantener un objeto en [cache](https://glossary.magento.com/cache) más allá de su valor TTL. Después, Varnish puede servir el contenido caducado (obsoleto) mientras busca una nueva versión. Esto mejora el flujo de tráfico y disminuye los tiempos de carga. Se utiliza en las siguientes situaciones:
+El modo de gracia permite a Varnish mantener un objeto en la caché por encima de su valor TTL. Después, Varnish puede servir el contenido caducado (obsoleto) mientras busca una nueva versión. Esto mejora el flujo de tráfico y disminuye los tiempos de carga. Se utiliza en las siguientes situaciones:
 
 - Cuando el servidor de Commerce está en buen estado, pero una solicitud está tardando más de lo normal
 - Cuando el servidor de Commerce no está en buen estado.
@@ -48,7 +48,7 @@ La variable `vcl_hit` la subrutina define cómo Varnish responde a una solicitud
 
 ### Cuando el servidor de Commerce está en buen estado
 
-Cuando las comprobaciones de estado determinan que el servidor de Commerce está en buen estado, Varnish comprueba si el tiempo permanece en el período de gracia. El período de gracia predeterminado es de 300 segundos, pero un comerciante puede establecer el valor desde la variable [Administrador](https://glossary.magento.com/admin) tal como se describe en [Configuración de Commerce para utilizar Varnish](configure-varnish-commerce.md). Si el período de gracia no ha caducado, Varnish envía el contenido antiguo y actualiza el objeto de forma asíncrona desde el servidor de Commerce. Si el período de gracia ha caducado, Varnish sirve el contenido obsoleto y actualiza sincrónicamente el objeto del servidor de Commerce.
+Cuando las comprobaciones de estado determinan que el servidor de Commerce está en buen estado, Varnish comprueba si el tiempo permanece en el período de gracia. El período de gracia predeterminado es de 300 segundos, pero un comerciante puede establecer el valor desde el administrador tal como se describe en [Configuración de Commerce para utilizar Varnish](configure-varnish-commerce.md). Si el período de gracia no ha caducado, Varnish envía el contenido antiguo y actualiza el objeto de forma asíncrona desde el servidor de Commerce. Si el período de gracia ha caducado, Varnish sirve el contenido obsoleto y actualiza sincrónicamente el objeto del servidor de Commerce.
 
 La cantidad máxima de tiempo que Varnish proporciona un objeto obsoleto es la suma del periodo de gracia (300 segundos de forma predeterminada) y el valor TTL (86400 segundos de forma predeterminada).
 
@@ -74,7 +74,7 @@ Designe un equipo como la instalación principal. En este equipo, instale la ins
 
 En todos los demás equipos, la instancia de Commerce debe tener acceso a la base de datos mySQL del equipo principal. Las máquinas secundarias también deben tener acceso a los archivos de la instancia principal de Commerce.
 
-Alternativamente, [archivos estáticos](https://glossary.magento.com/static-files) el control de versiones se puede desactivar en todas las máquinas. Se puede acceder a esta opción desde el administrador en **Almacenes** > Configuración > **Configuración** > **Avanzadas** > **Desarrollador** > **Configuración de archivos estáticos** > **Firmar archivos estáticos** = **No**.
+Como alternativa, el control de versiones de archivos estáticos se puede desactivar en todos los equipos. Se puede acceder a esta opción desde el administrador en **Almacenes** > Configuración > **Configuración** > **Avanzadas** > **Desarrollador** > **Configuración de archivos estáticos** > **Firmar archivos estáticos** = **No**.
 
 Por último, todas las instancias de comercio deben estar en modo de producción. Antes de que se inicie Varnish, borre la caché de cada instancia. En el Administrador, vaya a **Sistema** > Herramientas > **Administración de caché** y haga clic en **Vaciar caché del Magento**. También puede ejecutar el siguiente comando para borrar la caché:
 
@@ -89,7 +89,7 @@ El modo Saint no forma parte del paquete principal Varnish. Es una versión sepa
 - [Instalación de Varnish 6.4](https://varnish-cache.org/docs/6.4/installation/install.html)
 - [Instalación de Varnish 6.0](https://varnish-cache.org/docs/6.0/installation/install.html) (LTS)
 
-Después de volver a compilar, puede instalar el modo Saint [módulo](https://glossary.magento.com/module). En general, siga estos pasos:
+Después de volver a compilar, puede instalar el módulo de modo Saint. En general, siga estos pasos:
 
 1. Obtener el código fuente de [Módulos de barniz](https://github.com/varnish/varnish-modules). Clona la versión de Git (versión maestra) ya que las versiones 0.9.x contienen un error de código fuente.
 1. Cree el código fuente con autotools:

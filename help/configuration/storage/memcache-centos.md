@@ -1,9 +1,9 @@
 ---
 title: Configuración almacenada en caché en CentOS
 description: Instale y configure memcached en CentOS.
-source-git-commit: 65060d067bbbfe139736df3800688ce897cb17be
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '564'
+source-wordcount: '561'
 ht-degree: 0%
 
 ---
@@ -113,7 +113,7 @@ Si memcache no se muestra, reinicie el servidor web y actualice la página del e
 
 ### Crear una prueba de memcache consistente en una base de datos MySQL y un script PHP
 
-La prueba utiliza una base de datos, tabla y datos MySQL para verificar que puede recuperar los datos de la base de datos y almacenarlos en memcache. Un script PHP busca primero la variable [cache](https://glossary.magento.com/cache). Si el resultado no existe, el script consulta la base de datos. Una vez que la base de datos original ha completado la consulta, la secuencia de comandos almacena el resultado en memcache, utilizando la variable `set` comando.
+La prueba utiliza una base de datos, tabla y datos MySQL para verificar que puede recuperar los datos de la base de datos y almacenarlos en memcache. Un script PHP busca primero la caché. Si el resultado no existe, el script consulta la base de datos. Una vez que la base de datos original ha completado la consulta, la secuencia de comandos almacena el resultado en memcache, utilizando la variable `set` comando.
 
 [Más detalles sobre esta prueba](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-memcache-on-ubuntu-12-04)
 

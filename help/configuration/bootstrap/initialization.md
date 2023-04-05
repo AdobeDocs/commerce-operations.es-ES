@@ -1,9 +1,9 @@
 ---
 title: Inicialización y arranque de la aplicación
 description: Obtenga información sobre la inicialización y la lógica de arranque para la aplicación Commerce.
-source-git-commit: 5c0d285717a79d654af769cb734ec385d2d4046f
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '866'
+source-wordcount: '863'
 ht-degree: 0%
 
 ---
@@ -104,7 +104,7 @@ Cuando se redirige la solicitud al punto de entrada, la aplicación Commerce ana
 
 ### Punto de entrada de recursos multimedia
 
-[Magento\MediaStorage\App\Media][media] recupera los recursos de medios (es decir, cualquier archivo cargado en el almacenamiento de medios) de la base de datos. Se utiliza siempre que la base de datos esté configurada como un [almacenamiento de medios](https://glossary.magento.com/media-storage).
+[Magento\MediaStorage\App\Media][media] recupera los recursos de medios (es decir, cualquier archivo cargado en el almacenamiento de medios) de la base de datos. Se utiliza siempre que la base de datos esté configurada como almacenamiento de medios.
 
 `\Magento\Core\App\Media` intenta encontrar el archivo multimedia en el almacenamiento de base de datos configurado y escribirlo en la `pub/static` y devuelva su contenido. Por error, devuelve un código de estado HTTP 404 (no encontrado) en el encabezado sin contenido.
 

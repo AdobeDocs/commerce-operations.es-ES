@@ -1,10 +1,10 @@
 ---
 title: Generar datos para pruebas de rendimiento
 description: Aprenda a generar una gran cantidad de datos para utilizarlos en las pruebas de rendimiento.
-source-git-commit: ee2e446edf79efcd7cbbd67248f8e7ece06bfefd
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '764'
-ht-degree: 9%
+source-wordcount: '749'
+ht-degree: 8%
 
 ---
 
@@ -32,18 +32,18 @@ La siguiente tabla proporciona detalles sobre los perfiles del generador de dato
 | `websites` | 1 | 3 | 25 | 5 | 5 |
 | `store_groups` | 1 | 3 | 25 | 5 | 5 |
 | `store_views` | 1 | 3 | 50 | 5 | 5 |
-| `simple_products` | 800 | 24.000 | 4.000 | 300.000 | 600.000 |
+| `simple_products` | 800 | 24,000 | 4,000 | 300,000 | 600,000 |
 | `configurable_products` | 16 con 24 opciones | 640 con 24 opciones | 800 con 24 opciones y 79 con 200 opciones | 8.000 con 24 opciones | 16.000 con 24 opciones |
 | `product_images` | 100 imágenes/3 imágenes por producto | 1000 imágenes/3 imágenes por producto | 1000 imágenes/3 imágenes por producto | 2000 imágenes/3 imágenes por producto | 2000 imágenes/3 imágenes por producto |
-| `categories` | 30 | 300 | 100 | 3.000 | 6.000 |
+| `categories` | 30 | 300 | 100 | 3,000 | 6,000 |
 | `categories_nesting_level` | 3 | 3 | 3 | 5 | 5 |
 | `catalog_price_rules` | 20 | 20 | 20 | 20 | 20 |
 | `catalog_target_rules` | 5 | 5 | 5 | 5 | 5 |
 | `cart_price_rules` | 20 | 20 | 20 | 20 | 20 |
 | `cart_price_rules_floor` | 2 | 2 | 2 | 2 | 2 |
-| `customers` | 200 | 2.000 | 2.000 | 5.000 | 10 000 |
-| `tax rates` | 130 | 40.000 | 40.000 | 40.000 | 40.000 |
-| `orders` | 80 | 50.000 | 50.000 | 100.000 | 150.000 |
+| `customers` | 200 | 2,000 | 2,000 | 5,000 | 10,000 |
+| `tax rates` | 130 | 40,000 | 40,000 | 40,000 | 40,000 |
+| `orders` | 80 | 50,000 | 50,000 | 100,000 | 150,000 |
 
 ### Ejecute el generador de datos
 
@@ -100,7 +100,7 @@ Generating simple products...  done in <time>
 
 ### Usuarios administradores
 
-Genera [admin](https://glossary.magento.com/admin) usuarios. [XML](https://glossary.magento.com/xml) nodo de perfil:
+Genera usuarios administradores. Nodo de perfil XML:
 
 ```xml
 <!-- Number of admin users -->
@@ -124,7 +124,7 @@ Genera conjuntos de atributos con la configuración especificada. Nodo de perfil
 
 ### Paquete de productos
 
-Genera productos de paquete. Las selecciones de paquetes generadas no se muestran individualmente en la variable [catálogo](https://glossary.magento.com/catalog). Los productos se distribuyen de forma uniforme por categorías y sitios web. If  `assign_entities_to_all_websites` desde el perfil está configurado en `1`. Los productos se asignan a todos los sitios web.
+Genera productos de paquete. Las selecciones de paquetes generadas no se muestran individualmente en el catálogo. Los productos se distribuyen de forma uniforme por categorías y sitios web. If  `assign_entities_to_all_websites` desde el perfil está configurado en `1`. Los productos se asignan a todos los sitios web.
 
 Nodo de perfil XML:
 
@@ -162,7 +162,7 @@ Genera reglas de precios de catálogo. Nodo de perfil XML:
 
 ### Categorías
 
-Genera categorías. If `assign_entities_to_all_websites` está configurado como `0`, todas las categorías se distribuyen de forma uniforme por categorías raíz; de lo contrario, todas las categorías se asignan a una raíz [categoría](https://glossary.magento.com/category).
+Genera categorías. If `assign_entities_to_all_websites` está configurado como `0`, todas las categorías se distribuyen de forma uniforme por categorías raíz; de lo contrario, todas las categorías se asignan a una categoría raíz.
 
 Nodo de perfil XML:
 
@@ -231,7 +231,7 @@ Se admiten los siguientes formatos de nodo XML:
    </configurable_products>
    ```
 
-- Generar productos en función de un [conjunto de atributos](https://glossary.magento.com/attribute-set) con un número específico de atributos y opciones:
+- Genere productos en función de un conjunto de atributos creado dinámicamente con un número específico de atributos y opciones:
 
    ```xml
    <configurable_products>

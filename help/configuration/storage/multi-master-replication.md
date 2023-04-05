@@ -1,9 +1,9 @@
 ---
 title: Duplicación de base de datos
 description: Consulte los beneficios de configurar la replicación de bases de datos.
-source-git-commit: 52f92ef79586d618fd4ac51c00eaa1446a2dc98f
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '178'
+source-wordcount: '175'
 ht-degree: 0%
 
 ---
@@ -121,7 +121,7 @@ Lo siguiente es más avanzado y solo se proporciona para su información:
 
 ## Mejora del rendimiento
 
-Para mejorar el rendimiento de la replicación maestro-esclavo, puede filtrar algunas tablas en instancias esclavas. Se recomienda filtrar todas las tablas temporales con un patrón de nombres `search\_tmp\_%` que se usan para [catálogo](https://glossary.magento.com/catalog) buscar.
+Para mejorar el rendimiento de la replicación maestro-esclavo, puede filtrar algunas tablas en instancias esclavas. Se recomienda filtrar todas las tablas temporales con un patrón de nombres `search\_tmp\_%` que se utilizan para la búsqueda en el catálogo.
 
 Para ello, agregue la línea siguiente al `my.cnf` en las instancias esclavas:
 

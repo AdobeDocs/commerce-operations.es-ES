@@ -1,9 +1,9 @@
 ---
 title: Anular configuración
 description: Aprenda a utilizar variables de entorno para anular los ajustes de configuración.
-source-git-commit: 8102c083bb0216bbdcad2882f39f7711b9cee52b
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '1228'
+source-wordcount: '1225'
 ht-degree: 0%
 
 ---
@@ -134,7 +134,7 @@ Por ejemplo, para encontrar un sitio web o almacenar el valor del ámbito de vis
 
 Para obtener estos valores de la base de datos:
 
-1. Inicie sesión en su sistema de desarrollo como [propietario del sistema de archivos](https://glossary.magento.com/magento-file-system-owner) si aún no lo ha hecho.
+1. Inicie sesión en su sistema de desarrollo como propietario del sistema de archivos si aún no lo ha hecho.
 1. Introduzca el siguiente comando:
 
    ```bash

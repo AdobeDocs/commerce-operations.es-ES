@@ -1,9 +1,9 @@
 ---
 title: Configurar memorias en Ubuntu
 description: Instale y configure memcached en Ubuntu.
-source-git-commit: 80abb0180fcd8ecc275428c23b68feb5883cbc28
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '452'
+source-wordcount: '449'
 ht-degree: 0%
 
 ---
@@ -94,7 +94,7 @@ Para verificar que el servidor web reconoce la memoria almacenada en caché:
 
 ### Verificar que los datos se puedan almacenar en caché
 
-Esta prueba utiliza un script PHP para verificar que la memoria en caché puede almacenar y recuperar [cache](https://glossary.magento.com/cache) datos.
+Esta prueba utiliza un script PHP para verificar que la memoria caché puede almacenar y recuperar datos de caché.
 
 Para obtener más información sobre esta prueba, consulte [Tutorial sobre cómo instalar y utilizar Memcache en Ubuntu](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-memcache-on-ubuntu-14-04).
 

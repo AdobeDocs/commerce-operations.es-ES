@@ -1,9 +1,9 @@
 ---
 title: Configuración de varios sitios web con Nginx
 description: Siga este tutorial para configurar varios sitios web con Nginx.
-source-git-commit: 8102c083bb0216bbdcad2882f39f7711b9cee52b
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '962'
+source-wordcount: '959'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ Consulte [Configure varios sitios web, tiendas y vistas de tienda en el administ
 
 ## Paso 2: Crear hosts virtuales nginx
 
-Este paso explica cómo cargar sitios web en la variable [storefront](https://glossary.magento.com/storefront). Puede utilizar sitios web o almacenar vistas; si utiliza vistas de tienda, debe ajustar los valores de los parámetros en consecuencia. Debe completar las tareas de esta sección como usuario con `sudo` privilegios.
+Este paso explica cómo cargar sitios web en la tienda. Puede utilizar sitios web o almacenar vistas; si utiliza vistas de tienda, debe ajustar los valores de los parámetros en consecuencia. Debe completar las tareas de esta sección como usuario con `sudo` privilegios.
 
 Usando solo una [archivo host virtual nginx](#step-2-create-nginx-virtual-hosts), puede mantener la configuración de nginx sencilla y limpia. Mediante el uso de varios archivos host virtuales, puede personalizar cada almacén (para utilizar una ubicación personalizada para `french.mysite.mg` por ejemplo).
 

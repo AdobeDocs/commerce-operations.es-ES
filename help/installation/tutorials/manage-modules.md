@@ -1,9 +1,9 @@
 ---
 title: Habilitar o deshabilitar módulos
 description: Siga estos pasos para administrar los módulos Adobe Commerce o Magento Open Source.
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '557'
+source-wordcount: '551'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Donde
 
 * `--enabled` enumera todos los módulos habilitados.
 * `--disabled` enumera todos los módulos desactivados.
-* `<module-list>` es una lista de módulos delimitada por espacios para comprobar el estado. Si [módulo](https://glossary.magento.com/module) nombre contiene caracteres especiales, escriba el nombre entre comillas simples o dobles.
+* `<module-list>` es una lista de módulos delimitada por espacios para comprobar el estado. Si algún nombre de módulo contiene caracteres especiales, escriba el nombre entre comillas simples o dobles.
 
 ## Módulo habilitar, deshabilitar
 
@@ -41,7 +41,7 @@ bin/magento module:disable [-c|--clear-static-content] [-f|--force] [--all] <mod
 
 Donde
 
-* `<module-list>` es una lista de módulos delimitada por espacios para habilitar o deshabilitar. Si [módulo](https://glossary.magento.com/module) nombre contiene caracteres especiales, escriba el nombre entre comillas simples o dobles.
+* `<module-list>` es una lista de módulos delimitada por espacios para habilitar o deshabilitar. Si algún nombre de módulo contiene caracteres especiales, escriba el nombre entre comillas simples o dobles.
 * `--all` para habilitar o deshabilitar todos los módulos al mismo tiempo.
 * `-f` o `--force` para forzar que un módulo se habilite o deshabilite a pesar de las dependencias. Antes de utilizar esta opción, consulte [Acerca de la activación y desactivación de módulos](#about-enabling-and-disabling-modules).
 * `-c` o `--clear-static-content` cleans [archivos de vista estáticos generados](../../configuration/cli/static-view-file-deployment.md).

@@ -1,9 +1,9 @@
 ---
 title: Configure varios sitios web, tiendas y vistas de tienda en el administrador
 description: Configure sitios web, tiendas y vistas de tiendas adicionales en el administrador de comercio.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '1016'
+source-wordcount: '1013'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Esta tarea requiere que cree una categoría raíz (y categorías adicionales, si
 
 ## Paso 1: Crear categorías raíz
 
-La creación de una categoría raíz es opcional, pero en este tutorial se muestra cómo hacerlo en la sección [evento](https://glossary.magento.com/event) desea que cada sitio web tenga una categoría raíz única. Si lo desea, puede crear categorías adicionales.
+La creación de una categoría raíz es opcional, pero se muestra cómo hacerlo en este tutorial en el caso de que desee que cada sitio web tenga una categoría raíz única. Si lo desea, puede crear categorías adicionales.
 
 Para crear una categoría raíz:
 

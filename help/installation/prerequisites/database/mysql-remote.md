@@ -1,9 +1,9 @@
 ---
 title: Configuración de una conexión de base de datos MySQL remota
 description: Siga estos pasos para configurar una conexión de base de datos remota para las instalaciones locales de Adobe Commerce y Magento Open Source.
-source-git-commit: 61638d373408d9a7c3c3a935eee61927acfac7a6
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '746'
+source-wordcount: '743'
 ht-degree: 0%
 
 ---
@@ -154,7 +154,7 @@ Si el servidor web está agrupado, introduzca el comando en cada host de servido
 
 Al instalar Adobe Commerce o Magento Open Source, debe especificar lo siguiente:
 
-* La base [URL](https://glossary.magento.com/url) (también denominado *dirección de tienda*) especifica el nombre de host o la dirección IP del *nodo web*
+* La URL base (también denominada *dirección de tienda*) especifica el nombre de host o la dirección IP del *nodo web*
 * El host de base de datos es *servidor de bases de datos remotas* Dirección IP (o equilibrador de carga si el servidor de base de datos está agrupado)
 * El nombre de usuario de la base de datos es *nodo web local* usuario de la base de datos al que ha dado acceso
 * La contraseña de la base de datos es la contraseña del usuario del nodo web local

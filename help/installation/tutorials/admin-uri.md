@@ -1,9 +1,9 @@
 ---
 title: Mostrar o cambiar el URI de administración
 description: Siga estos pasos para ver y modificar el URI de la aplicación de administración de Adobe Commerce o Magento Open Source.
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '106'
+source-wordcount: '103'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Antes de ejecutar este comando, debe [Crear o actualizar la configuración de im
 
 ## Mostrar el URI de administración
 
-En esta sección se explica cómo utilizar la línea de comandos para mostrar la variable [Administrador](https://glossary.magento.com/admin) Identificador uniforme de recurso ([URI](https://www.w3.org/Protocols/rfc2616/rfc2616-sec3.html#sec3.2)).
+En esta sección se explica cómo utilizar la línea de comandos para mostrar el identificador uniforme de recursos ([URI](https://www.w3.org/Protocols/rfc2616/rfc2616-sec3.html#sec3.2)).
 
 Opciones de comando:
 

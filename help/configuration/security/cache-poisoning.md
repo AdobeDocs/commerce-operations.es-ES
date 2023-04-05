@@ -1,9 +1,9 @@
 ---
 title: Evitar la intoxicación de la caché
 description: Obtenga información sobre cómo evitar la intoxicación en la caché de la página para su tienda de comercio.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
 workflow-type: tm+mt
-source-wordcount: '266'
+source-wordcount: '260'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Evitar la intoxicación de la caché
 
-En este tema se explica cómo evitar [cache](https://glossary.magento.com/cache) intoxicación si utiliza el servidor web de Microsoft Internet Information Server (IIS). _Intoxicación de caché_ es un método para cambiar el contenido de la caché para incluir diferentes páginas del mismo sitio. Por ejemplo, es posible insertar una página de error HTTP 404 (no encontrado) en lugar de una página benigna (por ejemplo, la variable [storefront](https://glossary.magento.com/storefront) página principal), que puede llevar a una posible denegación de servicio (DoS). Las direcciones URL de páginas malintencionadas las almacena en caché Varnish o Redis, de ahí el nombre _envenenamiento de caché de página_.
+En este tema se explica cómo evitar la intoxicación de la caché si utiliza el servidor web de Microsoft Internet Information Server (IIS). _Intoxicación de caché_ es un método para cambiar el contenido de la caché para incluir diferentes páginas del mismo sitio. Por ejemplo, es posible insertar una página de error HTTP 404 (no encontrado) en lugar de una página benigna (por ejemplo, la página principal de la tienda), que puede provocar una posible denegación de servicio (DoS). Las direcciones URL de páginas malintencionadas las almacena en caché Varnish o Redis, de ahí el nombre _envenenamiento de caché de página_.
 
 Estos tipos de ataques pueden ser difíciles de detectar porque no dan lugar a errores en los registros del servidor web.
 
