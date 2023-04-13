@@ -1,9 +1,9 @@
 ---
 title: Administrar los indexadores
 description: Consulte ejemplos de cómo ver y administrar los indexadores de comercio.
-source-git-commit: 8102c083bb0216bbdcad2882f39f7711b9cee52b
+source-git-commit: a7ead687c681914d90e9ed2680c8f7494eba74d4
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '638'
 ht-degree: 0%
 
 ---
@@ -120,6 +120,10 @@ Puede ejecutar los siguientes índices en modo paralelo:
 - `Category Product` se puede comparar con las vistas de la tienda.
 - `Catalog Price` se puede comparar con grupos de clientes y sitios web.
 - `Catalog Permissions` pueden ser paralelos a grupos de clientes.
+
+>[!INFO]
+>
+>La paralelización para la búsqueda en catálogo El texto completo y el producto de categoría están habilitados de forma predeterminada.
 
 Para utilizar la paralelización, establezca uno de los modos de dimensiones disponibles para el indizador de precios del producto:
 
