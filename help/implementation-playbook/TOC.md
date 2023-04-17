@@ -2,9 +2,9 @@
 user-guide-title: Guía de implementación
 user-guide-description: Obtenga información sobre las estrategias para planificar e implementar un sitio de Adobe Commerce con éxito.
 mini-toc-levels: 3
-source-git-commit: 5559d412ab58d392098cfff7a4cabb473c38cb0d
+source-git-commit: 5aa1669e556e5b7bf5ed3777db0f026ccfff5e70
 workflow-type: tm+mt
-source-wordcount: '255'
+source-wordcount: '269'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,13 @@ ht-degree: 0%
       - [Arquitectura sin encabezado](architecture/headless/adobe-commerce.md)
 - Infraestructura e implementación {#infrastructure}
    - [Información general](infrastructure/overview.md)
-   - [Infraestructura local](infrastructure/on-premises.md)
+   - Alojamiento propio {#self-hosting}
+      - [Información general](infrastructure/self-hosting/overview.md)
+      - [Infraestructura local](infrastructure/self-hosting/on-premises.md)
+      - [Conceptos de seguridad](infrastructure/self-hosting/security-concepts.md)
+      - [Monitorización de telemetría y herramientas](infrastructure/self-hosting/monitoring-tools.md)
+      - [Ideas para la recuperación ante desastres](infrastructure/self-hosting/disaster-recovery-ideas.md)
+      - [Sugerencias de rendimiento](infrastructure/self-hosting/performance-tips.md)
    - Infraestructura de nube {#cloud}
       - [Información general](infrastructure/cloud/overview.md)
       - [Regiones](infrastructure/cloud/regions.md)
