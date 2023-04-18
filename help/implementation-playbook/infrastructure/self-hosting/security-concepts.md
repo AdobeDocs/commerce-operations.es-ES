@@ -7,9 +7,9 @@ kt: 11420
 doc-type: tutorial
 audience: all
 last-substantial-update: 2023-04-13T00:00:00Z
-source-git-commit: 0d5c2d3ae44008142797c7ac91530a9df98ae004
+source-git-commit: cca195c20ddcba634a8fc39c0867e0ae28f43683
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1571'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Los siguientes conceptos no están en un orden determinado. Están pensados para
 
 ## Sistema de archivos de sólo lectura
 
-El concepto de sistema de archivos de solo lectura se tomó de [Adobe Commerce en una infraestructura ruidosa](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/getting-started/cloud/1-overview.html){target="_blank"}. Esto elimina completamente una área importante usada por un mal actor. Muchas vulnerabilidades han aprovechado la modificación de un archivo que se espera que esté en la aplicación Commerce para evitar la detección. En lugar de crear uno, el actor incorrecto cambia el contenido de un archivo existente para realizar una acción inesperada. Hacer que el sistema de archivos sea de solo lectura reduce significativamente este vector de ataque.
+El concepto de sistema de archivos de solo lectura se tomó de [Adobe Commerce en infraestructura en la nube](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/getting-started/cloud/1-overview.html){target="_blank"}. Esto elimina completamente una área importante usada por un mal actor. Muchas vulnerabilidades han aprovechado la modificación de un archivo que se espera que esté en la aplicación Commerce para evitar la detección. En lugar de crear uno, el actor incorrecto cambia el contenido de un archivo existente para realizar una acción inesperada. Hacer que el sistema de archivos sea de solo lectura reduce significativamente este vector de ataque.
 
 ## Usar dos factores de autenticación y administradores de contraseña
 

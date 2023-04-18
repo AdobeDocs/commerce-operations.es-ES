@@ -7,9 +7,9 @@ kt: 11420
 doc-type: tutorial
 audience: all
 last-substantial-update: 2023-04-13T00:00:00Z
-source-git-commit: 66abe9f234aa44f7e07cc024607eeb6591a99d07
+source-git-commit: ab099b2a8a353c2462424831cf8100e7e281b1be
 workflow-type: tm+mt
-source-wordcount: '1308'
+source-wordcount: '1304'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ Antes de desactivar los módulos no utilizados, asegúrese de que no dispone de 
 
 ## Requerir que se sigan los estándares de codificación Adobe Commerce y PHP para cada solicitud de extracción
 
-Adobe Commerce tiene un conjunto de [Normas de codificación](https://developer.adobe.com/commerce/php/coding-standards/){target="_blank"}. Ayudan a garantizar que se siga un patrón, estilo y diseño esperado similares independientemente del tipo de desarrollo de software. Lo que es un requisito de absolución a seguir es cuando contribuye al código base de Adobe Commerce. Sin embargo, seguir esta metodología para el desarrollo personalizado también constituye un pilar sólido para todos los desarrolladores, actuales y futuros, que pueden esperar. Cuando se requiere que todas las solicitudes de extracción pasen un código estándar, se garantiza que todos entiendan y esperen los mismos patrones de desarrollo coherentes.
+Adobe Commerce tiene un conjunto de [Normas de codificación](https://developer.adobe.com/commerce/php/coding-standards/){target="_blank"}. Ayudan a garantizar que se siga un patrón, estilo y diseño esperado similares independientemente del tipo de desarrollo de software. Al contribuir a la base de código de Adobe Commerce, esto es un requisito. Sin embargo, si decide seguir esta metodología para el desarrollo personalizado, establecerá una sólida piedra angular para todos los desarrolladores, tanto actuales como futuros. Cuando se requiere que todas las solicitudes de extracción pasen un código estándar, se garantiza que todos entiendan y esperen los mismos patrones de desarrollo coherentes.
 
 Para acompañar a los estándares de codificación de Adobe Commerce, la otra base utilizada son los estándares básicos de codificación de PHP. Debe estar claramente definido en las guías del desarrollador qué estándares debe seguir y cualquier desviación que sea aceptable. Sin embargo, una alternativa debería ser la guía que se mantiene públicamente en [PHP-FIG](https://www.php-fig.org){target="_blank"}.
 
