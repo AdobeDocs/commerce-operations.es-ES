@@ -1,7 +1,7 @@
 ---
 title: "El [!UICONTROL Summary] tab"
 description: Obtenga información sobre [!UICONTROL Summary] pestaña [!DNL Observation for Adobe Commerce].
-source-git-commit: 61d0de370cbfa02f5fcc7d20ad283c54357294a3
+source-git-commit: 1d4e6ee745b656f0bc291a479e1d5bac5c8504e3
 workflow-type: tm+mt
 source-wordcount: '2653'
 ht-degree: 0%
@@ -57,7 +57,7 @@ La variable **[!UICONTROL Swap memory free in bytes]** frame muestra, por nodo, 
 
 ![Porcentaje de CPU por host](../../assets/tools/cpu-percent-by-host.jpg)
 
-El agregado de todos los entornos y nodos se muestra en la variable **[!UICONTROL CPU % by host]** cuadro. Debe anular la selección de los entornos que no sean de producción. Tenga en cuenta también las instancias en las que no están presentes todos los nodos del entorno de producción. Para obtener más sugerencias sobre la alta utilización de la CPU, consulte [Resolución de problemas de rendimiento con la nueva relación de transmisión en Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.html).
+El agregado de todos los entornos y nodos se muestra en la variable **[!UICONTROL CPU % by host]** cuadro. Debe anular la selección de los entornos que no sean de producción. Tenga en cuenta también las instancias en las que no están presentes todos los nodos del entorno de producción. Para obtener más sugerencias sobre la alta utilización de la CPU, consulte [Resolución de problemas de rendimiento con New Relic en Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.html).
 
 ## [!UICONTROL Alerts during timeframe]
 
@@ -363,7 +363,7 @@ La variable **[!UICONTROL Order transactions (default?)]** busca marco para tran
 
 ## [!UICONTROL Elasticsearch Index information]
 
-![información del índice elasticsearch](../../assets/tools/elasticsearch-index-information.jpg)
+![información del índice elasticsearch](../../assets/tools/elasticsearch-tab-elasticsearch-index-information-image-1.jpg)
 
 **[estados del Elasticsearch:](https://www.elastic.co/guide/en/elasticsearch/reference/current/cluster-health.html)**
 
