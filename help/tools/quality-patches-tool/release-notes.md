@@ -1,7 +1,7 @@
 ---
 title: Notas de la versión
 description: Obtenga información sobre los parches disponibles para Adobe Commerce y los problemas que resuelven.
-source-git-commit: ab9d80140833e2d21feffe04a73fcd8ac5f1e980
+source-git-commit: 760f7f5e2e27dba8e77e564230ab3f1cf374dac2
 workflow-type: tm+mt
 source-wordcount: '11946'
 ht-degree: 0%
@@ -36,7 +36,7 @@ La variable [[!DNL Quality Patches Tool]](https://github.com/magento/quality-pat
 * **ACSD-50527** (para Adobe Commerce >=2.3.7 &lt;2.4.7) : corrige el error que se produce al guardar una página con un bloque dinámico vacío.
 * **ACSD-49973** (para Adobe Commerce y Magento Open Source >=2.4.4 &lt;2.4.5) : mejora el rendimiento de recuperar productos agrupados a través de GraphQL.
 * **ACSD-51114** (para Adobe Commerce y Magento Open Source >=2.4.3 &lt;2.4.7) : corrige el problema en el que un producto aleatorio desaparece de catálogos grandes cuando la indexación asíncrona está habilitada. Mejora el rendimiento de la reindexación asincrónica para catálogos grandes.
-* **BB2B-2598** (para Adobe Commerce y Magento Open Source >=2.4.4 &lt;2.4.7): agregue la capacidad de almacenamiento en caché al [!UICONTROL availableStores], [!UICONTROL countries], [!UICONTROL country], [!UICONTROL currency]y [!UICONTROL storeConfig] Consultas de GraphQL.
+* **B2B-2598** (para Adobe Commerce y Magento Open Source >=2.4.4 &lt;2.4.7): agregue la capacidad de almacenamiento en caché al [!UICONTROL availableStores], [!UICONTROL countries], [!UICONTROL country], [!UICONTROL currency]y [!UICONTROL storeConfig] Consultas de GraphQL.
 * Se han añadido nuevas versiones para MDVA-42806, ACSD-48627 y ACSD-46815.
 * Metadatos de parches actualizados para ACSD-49773, ACSD-47179, ACSD-48300.
 
