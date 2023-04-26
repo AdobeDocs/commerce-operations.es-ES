@@ -1,9 +1,10 @@
 ---
 title: Notas de la versión
 description: Obtenga información sobre los parches disponibles para Adobe Commerce y los problemas que resuelven.
-source-git-commit: 760f7f5e2e27dba8e77e564230ab3f1cf374dac2
+exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
+source-git-commit: 786be8bfa915fe82d9316f51662b20bde71abbaa
 workflow-type: tm+mt
-source-wordcount: '11946'
+source-wordcount: '11947'
 ht-degree: 0%
 
 ---
@@ -14,7 +15,7 @@ La variable [[!DNL Quality Patches Tool]](https://github.com/magento/quality-pat
 
 >[!INFO]
 >
->Consulte [Aplicar parches](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches) para obtener instrucciones sobre la aplicación de parches a sus proyectos de Adobe Commerce o Magento Open Source. Consulte [Parches disponibles](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) en la Guía de actualización de software para revisar una lista completa de parches publicados.
+>Consulte [Aplicar parches](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches) para obtener instrucciones sobre la aplicación de parches a sus proyectos de Adobe Commerce o Magento Open Source. Consulte [[!DNL Quality Patches Tool]: Buscar parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) en la Guía de actualización de software para revisar una lista completa de parches publicados.
 
 >[!INFO]
 >

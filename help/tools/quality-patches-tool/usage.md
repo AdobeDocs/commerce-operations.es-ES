@@ -1,9 +1,10 @@
 ---
 title: Uso
 description: Aprenda a utilizar la variable [!DNL Quality Patches Tool].
-source-git-commit: e35469adb1b3278cf787416e1bc829fae9979efc
+exl-id: f9ad37e9-2d0f-4bc8-a98b-6d60b6f56d42
+source-git-commit: 786be8bfa915fe82d9316f51662b20bde71abbaa
 workflow-type: tm+mt
-source-wordcount: '901'
+source-wordcount: '910'
 ht-degree: 0%
 
 ---
@@ -17,7 +18,7 @@ Observe esto [vídeo técnico](https://experienceleague.adobe.com/docs/commerce-
 
 >[!INFO]
 >
->Consulte [Aplicar parches individuales](#apply-individual-patches) para obtener instrucciones sobre la aplicación de parches a sus proyectos de Adobe Commerce o Magento Open Source. Consulte [Parches disponibles](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) para revisar una lista completa de parches liberados.
+>Consulte [Aplicar parches individuales](#apply-individual-patches) para obtener instrucciones sobre la aplicación de parches a sus proyectos de Adobe Commerce o Magento Open Source. Consulte [[!DNL Quality Patches Tool]: Buscar parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) para revisar una lista completa de parches liberados.
 
 >[!WARNING]
 >
@@ -60,7 +61,7 @@ Adobe Commerce 2.3.5.
 La tabla de estado incluye:
 
 - **Tipo**:
-   - `Optional` — Todos los parches de [!DNL Quality Patches Tool] y [Parches en la nube](https://devdocs.magento.com/cloud/project/project-patch.html) son opcionales para las instalaciones de Adobe Commerce y Magento Open Source.
+   - `Optional` — Todos los parches de [!DNL Quality Patches Tool] y [Guía de Commerce on Cloud Infrastructure > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) son opcionales para las instalaciones de Adobe Commerce y Magento Open Source.
    - `Deprecated` — el Adobe ha desaprobado el parche individual. Si ha aplicado el parche, le recomendamos que lo revierta. La operación revertir también elimina el parche de la tabla de estado.
 
 - **Estado**:
@@ -81,7 +82,7 @@ La tabla de estado incluye:
 
 >[!WARNING]
 >
->Se recomienda probar todos los parches en un entorno de ensayo o desarrollo antes de implementarlos en producción. También se recomienda realizar una copia de seguridad de los datos antes de aplicar un parche. Consulte [Hacer una copia de seguridad y revertir el sistema de archivos](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-backup.html).
+>Se recomienda probar todos los parches en un entorno de ensayo o desarrollo antes de implementarlos en producción. También se recomienda realizar una copia de seguridad de los datos antes de aplicar un parche. Consulte [Copia de seguridad y reversión del sistema de archivos, medios y base de datos](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/backup.html).
 
 Para aplicar un solo parche, ejecute el siguiente comando donde `MAGETWO-XXXX` es el ID de parche especificado en la tabla de estado:
 
@@ -109,7 +110,7 @@ Debe limpiar la caché después de aplicar parches para ver los cambios en la ap
 
 >[!WARNING]
 >
->Se recomienda probar todos los parches en un entorno de ensayo o desarrollo antes de implementarlos en producción. También se recomienda realizar una copia de seguridad de los datos antes de aplicar un parche. Consulte [Hacer una copia de seguridad y revertir el sistema de archivos](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-backup.html).
+>Se recomienda probar todos los parches en un entorno de ensayo o desarrollo antes de implementarlos en producción. También se recomienda realizar una copia de seguridad de los datos antes de aplicar un parche. Consulte [Copia de seguridad y reversión del sistema de archivos, medios y base de datos](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/backup.html).
 
 Para revertir un solo parche, ejecute el siguiente comando donde `MAGETWO-XXXX` es el ID de parche especificado en la tabla de estado:
 
