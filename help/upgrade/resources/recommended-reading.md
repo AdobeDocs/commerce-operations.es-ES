@@ -1,13 +1,13 @@
 ---
 title: Lectura recomendada para actualizaciones
 description: Revise la lectura recomendada para planificar su actualización a Adobe Commerce.
-source-git-commit: 5e02f300bb0b5601c653fdea1dd5b85f4e18ed9c
+exl-id: 24ca57c0-1a68-46c4-b2fa-4a114250d0e3
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '386'
 ht-degree: 0%
 
 ---
-
 
 # Lectura recomendada para la planificación de actualizaciones
 
