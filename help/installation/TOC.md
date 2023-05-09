@@ -1,7 +1,8 @@
 ---
 user-guide-title: Guía de instalación
 user-guide-description: Obtenga información sobre cómo instalar Adobe Commerce y Magento Open Source para implementaciones locales.
-source-git-commit: 338a99f4f047640ac4bb944ac8599301cba5f646
+feature: Install
+source-git-commit: 68c4cfc29735d2ea296f579ed0a0ff52db3fdd9f
 workflow-type: tm+mt
 source-wordcount: '178'
 ht-degree: 0%
@@ -46,7 +47,7 @@ ht-degree: 0%
       - [Descargar paquetes del Compositor](sample-data/composer-packages.md)
       - [Clonar repositorios Git](sample-data/git-repositories.md)
       - [Eliminar o actualizar módulos](sample-data/remove-or-update.md)
-- Tutoriales {#tutorials}
+- Tutorials {#tutorials}
    - [Copia de seguridad y reversión del sistema de archivos, medios y base de datos](tutorials/backup.md)
    - [Comprobar el estado de la base de datos](tutorials/database-status.md)
    - [Configurar el comportamiento del consumidor de mensajes](tutorials/message-consumers.md)

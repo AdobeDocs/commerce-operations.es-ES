@@ -1,7 +1,8 @@
 ---
 user-guide-title: Guía de configuración
 user-guide-description: Configure las funciones y los servicios de la aplicación de Adobe Commerce o Magento Open Source.
-source-git-commit: 338a99f4f047640ac4bb944ac8599301cba5f646
+feature: Configuration
+source-git-commit: 68c4cfc29735d2ea296f579ed0a0ff52db3fdd9f
 workflow-type: tm+mt
 source-wordcount: '363'
 ht-degree: 0%

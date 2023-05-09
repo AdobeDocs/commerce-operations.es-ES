@@ -1,7 +1,8 @@
 ---
 user-guide-title: Seguridad y cumplimiento
 user-guide-description: Conozca cómo Adobe Commerce y los comerciantes Magento Open Source son responsables de mantener un entorno seguro y cumplir con los requisitos legales y las prácticas recomendadas para los comerciantes en línea en su jurisdicción.
-source-git-commit: 338a99f4f047640ac4bb944ac8599301cba5f646
+feature: Security
+source-git-commit: 68c4cfc29735d2ea296f579ed0a0ff52db3fdd9f
 workflow-type: tm+mt
 source-wordcount: '72'
 ht-degree: 0%
