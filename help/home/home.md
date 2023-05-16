@@ -1,18 +1,18 @@
 ---
 keywords: Adobe Commerce;inicio;temas populares
 title: Página principal
-description: Examine un índice de la documentación del producto operativo de Adobe Commerce.
-source-git-commit: a1e74edb232b818dea9a2723bf506fac49acbd9f
+description: Examine un índice de la administración del sistema Adobe Commerce y la documentación de producto operativa.
+exl-id: 45ec4948-338f-4276-8a70-d0db720322d9
+source-git-commit: 9e010b68f6458bafda5119308531e62477f046a9
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '243'
 ht-degree: 0%
 
 ---
 
-
 # Guías operativas de Adobe Commerce
 
-Obtenga información práctica sobre conceptos, procesos, herramientas y prácticas recomendadas para desarrollar, implementar y mantener proyectos de comercio implementados en plataformas de Adobe Commerce y Magento Open Source.
+Obtenga información práctica sobre conceptos, procesos, herramientas y prácticas recomendadas para desarrollar, implementar y mantener proyectos de Adobe Commerce.
 
 <table>
 <tr>
@@ -22,6 +22,7 @@ Obtenga información práctica sobre conceptos, procesos, herramientas y prácti
     </a>
     <div>
       <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html"><strong>Información de la versión</strong></a>
+      <p>Revise toda la información de la versión de los parches y servicios de Adobe Commerce.</p>
     </div>
   </td>
   <td valign="top">
@@ -30,6 +31,7 @@ Obtenga información práctica sobre conceptos, procesos, herramientas y prácti
     </a>
     <div>
       <a href="../installation/overview.md"><strong>Instalación</strong></a>
+      <p>Obtenga información sobre cómo instalar Adobe Commerce para implementaciones locales.</p>
     </div>
   </td>
   <td valign="top">
@@ -38,6 +40,7 @@ Obtenga información práctica sobre conceptos, procesos, herramientas y prácti
     </a>
     <div>
       <a href="../configuration/overview.md"><strong>Configuración</strong></a>
+      <p>Configure funciones y servicios para la aplicación Adobe Commerce.</p>
     </div>
   </td>
   <td valign="top">
@@ -46,6 +49,7 @@ Obtenga información práctica sobre conceptos, procesos, herramientas y prácti
     </a>
     <div>
       <a href="../tools/data-migration-tool/how-migration-works.md"><strong>Migración de datos</strong></a>
+      <p>Obtenga información sobre el proceso de migración de datos entre el Magento 1 y el Magento 2.</p>
     </div>
   </td>
 </tr>
@@ -56,6 +60,7 @@ Obtenga información práctica sobre conceptos, procesos, herramientas y prácti
     </a>
     <div>
       <a href="../upgrade/overview.md"><strong>Actualización</strong></a>
+      <p>Aprenda a actualizar su proyecto de Adobe Commerce para mantener su tienda segura y funcionando de forma eficaz.</p>
     </div>
   </td>
   <td valign="top">
@@ -64,6 +69,7 @@ Obtenga información práctica sobre conceptos, procesos, herramientas y prácti
     </a>
     <div>
       <a href="https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce.html"><strong>Referencia de herramientas de la línea de comandos</strong></a>
+      <p>Obtenga información sobre los comandos, los argumentos y las opciones de las herramientas de línea de comandos de Adobe Commerce.</p>
     </div>
   </td>
   <td valign="top">
@@ -72,6 +78,7 @@ Obtenga información práctica sobre conceptos, procesos, herramientas y prácti
     </a>
     <div>
       <a href="../performance/overview.md"><strong>Prácticas recomendadas de rendimiento</strong></a>
+      <p>Utilice estas recomendaciones para optimizar el rendimiento de la implementación de Adobe Commerce.</p>
     </div>
   </td>
   <td valign="top">
@@ -80,6 +87,7 @@ Obtenga información práctica sobre conceptos, procesos, herramientas y prácti
     </a>
     <div>
       <a href="../tools/overview.md"><strong>Herramientas</strong></a>
+      <p>Obtenga información sobre las herramientas que puede utilizar con Adobe Commerce.</p>
     </div>
   </td>
 </tr>
@@ -90,6 +98,7 @@ Obtenga información práctica sobre conceptos, procesos, herramientas y prácti
     </a>
     <div>
       <a href="../implementation-playbook/overview.md"><strong>Guía de implementación</strong></a>
+      <p>Obtenga información sobre las estrategias para planificar e implementar un sitio de Adobe Commerce con éxito.</p>
     </div>
   </td>
   <td valign="top">
@@ -98,6 +107,7 @@ Obtenga información práctica sobre conceptos, procesos, herramientas y prácti
     </a>
     <div>
       <a href="../operational-playbook/overview.md"><strong>Manual operativo</strong></a>
+      <p>Aprenda a preparar operacionalmente sus empresas para ejecutar un sitio de comercio electrónico exitoso.</p>
     </div>
   </td>
   <td valign="top">
@@ -106,6 +116,7 @@ Obtenga información práctica sobre conceptos, procesos, herramientas y prácti
     </a>
     <div>
       <a href="../commerce-at-scale/overview.md"><strong>Comercio a escala</strong></a>
+      <p>Aprenda a ofrecer experiencias a escala utilizando Adobe Commerce con Adobe Experience Manager.</p>
     </div>
   </td>
   <td valign="top">
@@ -114,6 +125,7 @@ Obtenga información práctica sobre conceptos, procesos, herramientas y prácti
     </a>
     <div>
       <a href="../security-and-compliance/overview.md"><strong>Seguridad y cumplimiento de normas</strong></a>
+      <p>Descubra cómo los comerciantes de Adobe Commerce son responsables de mantener un entorno seguro.</p>
     </div>
   </td>
 </tr>
