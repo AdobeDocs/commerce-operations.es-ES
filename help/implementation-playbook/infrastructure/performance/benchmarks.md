@@ -2,9 +2,9 @@
 title: Prueba comparativa de rendimiento
 description: Revise los resultados de los análisis de rendimiento para implementaciones de Adobe Commerce alojadas en la infraestructura de nube de Adobe.
 exl-id: cc9b090a-a504-4df3-aa32-81882f431dd9
-source-git-commit: 09a42dc68836b34eab2c9d90879b897729cd1b09
+source-git-commit: eeb7146a8051e8692ebf974d65db75a4999cf2e6
 workflow-type: tm+mt
-source-wordcount: '589'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -79,6 +79,7 @@ Para la referencia de rendimiento, Adobe Commerce 2.4.5 se implementó en un [in
    - vCPU 216 (72 x 3 nodos)
    - Memoria 432 GiB (144 x 3 nodos)
    - Ancho de banda de red de 768 Gbps (256 x 3 nodos)
+   - Ancho de banda EBS 57000 Mbps (19000 x 3 nodos)
    - Almacenamiento aprovisionado de 100 GB
 
 - **Especificaciones del nodo de servicio**
