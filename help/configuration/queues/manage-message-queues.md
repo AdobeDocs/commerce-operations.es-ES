@@ -1,13 +1,13 @@
 ---
 title: Administrar colas de mensajes
 description: Obtenga información sobre cómo administrar las colas de mensajes desde la línea de comandos para Adobe Commerce.
-source-git-commit: 0d106b36f479ecf2eda3fecf6740b28d4b6793eb
+exl-id: 619e5df1-39cb-49b6-b636-618b12682d32
+source-git-commit: caca8df48c498977f830082ef27d9afb6220ae92
 workflow-type: tm+mt
-source-wordcount: '411'
+source-wordcount: '416'
 ht-degree: 0%
 
 ---
-
 
 # Administrar colas de mensajes
 
@@ -74,7 +74,7 @@ Edite el `/app/etc/env.php` para configurar el trabajo cron `consumers_runner`.
 - `cron_run` - Un valor booleano que habilita o deshabilita la variable `consumers_runner` trabajo cron (predeterminado = `true`).
 - `max_messages` - El número máximo de mensajes que cada consumidor debe procesar antes de finalizar (predeterminado = `10000`). Aunque no se recomienda, puede utilizar 0 para evitar que el consumidor finalice. Consulte [`consumers_wait_for_messages`](../reference/config-reference-envphp.md#consumerswaitformessages) para configurar el modo en que los consumidores procesan los mensajes desde la cola de mensajes.
 - `consumers` : matriz de cadenas que especifican qué consumidores se van a ejecutar. Se ejecuta una matriz vacía *all* consumidores.
-- `multiple_processes` : matriz de pares de clave-valor que especifica qué consumidor ejecutar en cuántos procesos.
+- `multiple_processes` : matriz de pares de clave-valor que especifica qué consumidor ejecutar en cuántos procesos. Compatible con Commerce 2.4.4 o buenas.
 
    >[!INFO]
    >
