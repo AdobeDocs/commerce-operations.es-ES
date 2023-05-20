@@ -1,62 +1,62 @@
 ---
 title: Obtener las claves de autenticación
-description: Siga estos pasos para recuperar las credenciales y acceder a los paquetes de Adobe Commerce y del Compositor de Magento Open Source en repo.magento.com.
-source-git-commit: d209d3f7fde55f7495488f2cbeeebf21024875ed
+description: Siga estos pasos para recuperar las credenciales de acceso a los paquetes de Adobe Commerce y Magento Open Source Composer en repo.magento.com.
+exl-id: 7ec2a410-d81f-476a-bf6a-f3c61982a734
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '512'
 ht-degree: 0%
 
 ---
 
-
 # Obtener las claves de autenticación
 
-La variable `repo.magento.com` repositorio es donde se almacenan los paquetes de Adobe Commerce y Magento Open Source y del Compositor de terceros, y requiere autenticación. Utilice su cuenta de Commerce Marketplace para generar un par de 32 caracteres *claves de autenticación* para acceder al repositorio.
+El `repo.magento.com` El repositorio es donde se almacenan los paquetes de Adobe Commerce y Magento Open Source y Compositor de terceros, y donde requiere autenticación. Use su cuenta de Commerce Marketplace para generar un par de caracteres de 32 caracteres *claves de autenticación* para acceder al repositorio.
 
-Para tener acceso a los paquetes Adobe Commerce y Magento Open Source, debe utilizar claves asociadas con un MAGEID al que se le haya concedido acceso a esos paquetes. El MAGEID suele ser el contacto principal de la cuenta de Adobe Commerce y es posible que no siempre sea el propietario del proyecto de Adobe Commerce en el proyecto de infraestructura de nube.
+Para tener acceso a los paquetes de Adobe Commerce y Magento Open Source, debe utilizar las claves asociadas con un MAGEID al que se haya concedido acceso a esos paquetes. El MAGEID suele ser el contacto principal de la cuenta de Adobe Commerce y es posible que no siempre sea el propietario del proyecto de Adobe Commerce en la nube.
 
 >[!TIP]
 >
->Si encuentra [errors](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html), es posible que no tenga autorización para acceder al paquete o que el derecho de acceso haya caducado debido a una factura pendiente en su cuenta.
+>Si se encuentra con [errores](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html)Sin embargo, es posible que no tenga autorización para acceder al paquete o que el derecho de acceso haya caducado debido a una factura pendiente en su cuenta.
 >
->* Si es la persona de contacto principal de la cuenta, asegúrese de que no haya ninguna factura pendiente enumerada en la cuenta.
->* Si las claves proporcionadas por el Contacto Principal no funcionan y no hay facturas pendientes en la cuenta, póngase en contacto con [Asistencia de Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) para obtener ayuda con el MAGEID del contacto principal.
+>* Si es la persona de contacto principal de la cuenta, asegúrese de que no haya ninguna factura pendiente en la cuenta.
+>* Si las claves proporcionadas por el contacto principal no funcionan y no hay facturas pendientes en la cuenta, póngase en contacto con [Asistencia de Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) para obtener ayuda sobre el uso del MAGEID del Contacto primario.
 
 
 Para crear claves de autenticación:
 
-1. Inicie sesión en la [Commerce Marketplace](https://marketplace.magento.com). Si no tiene una cuenta, haga clic en **Registro**.
+1. Inicie sesión en [Commerce Marketplace](https://marketplace.magento.com). Si no tiene una cuenta de, haga clic en **Registrar**.
 1. Haga clic en el nombre de su cuenta en la parte superior derecha de la página y seleccione **Mi perfil**.
 
-1. Haga clic en **Teclas de acceso** en la pestaña Marketplace .
+1. Clic **Claves de acceso** en la pestaña Marketplace.
 
    ![Obtenga sus claves de acceso seguras en el Commerce Marketplace](../../assets/installation/cloud_access-key.png)
 
-1. Haga clic en **Crear una nueva clave de acceso**. Escriba un nombre específico para las claves (por ejemplo, el nombre del desarrollador que recibe las claves) y haga clic en **OK**.
+1. Clic **Crear una nueva clave de acceso**. Introduzca un nombre específico para las claves (por ejemplo, el nombre del desarrollador que recibe las claves) y haga clic en **OK**.
 
-1. Las nuevas claves públicas y privadas están ahora asociadas a su cuenta en la que puede hacer clic para copiar. Guarde esta información o mantenga la página abierta cuando trabaje con su proyecto. Utilice la variable **Clave pública** como nombre de usuario y **Clave privada** como su contraseña.
+1. Las nuevas claves públicas y privadas ahora están asociadas a su cuenta, en la que puede hacer clic para copiarlas. Guarde esta información o mantenga la página abierta cuando trabaje con el proyecto. Utilice el **Clave pública** como su nombre de usuario y el **Clave privada** como contraseña.
 
 ## Administrar las claves de autenticación
 
-También puede deshabilitar o eliminar claves de autenticación. Por ejemplo, puede deshabilitar o eliminar claves por motivos de seguridad después de que alguien abandone la organización.
+También puede deshabilitar o eliminar las claves de autenticación. Por ejemplo, puede deshabilitar o eliminar claves por motivos de seguridad una vez que alguien abandone su organización.
 
-* Para desactivar claves: Haga clic en **Deshabilitar**. Puede hacerlo si desea suspender el uso de sus claves.
-* Para habilitar una clave deshabilitada anteriormente: Haga clic en **Habilitar**.
-* Para eliminar claves: Haga clic en **Eliminar**.
+* Para deshabilitar las claves: haga clic en **Deshabilitar**. Puede hacerlo si desea suspender el uso de las claves.
+* Para habilitar una clave deshabilitada anteriormente: haga clic en **Activar**.
+* Para eliminar claves: haga clic en **Eliminar**.
 
 ### Administrar token de acceso SSH
 
 Para descargar versiones de Adobe Commerce mediante SSH, debe generar un token de acceso de descargas. Para generar un token:
 
 1. Inicie sesión en su [cuenta de magento.com](https://account.magento.com/customer/account/login).
-1. Haga clic en **Mi cuenta** en la parte superior de la página.
-1. Haga clic en **Configuración de la cuenta** > **Descarga del token de acceso**.
+1. Clic **Mi cuenta** en la parte superior de la página.
+1. Clic **Configuración de cuenta** > **Token de acceso de descargas**.
 
-   ![Acceda a sus claves](../../assets/installation/connect_keys1.png)
+   ![Acceso a las claves](../../assets/installation/connect_keys1.png)
 
-1. Haga clic en **Generar nuevo token** para reemplazar y deshabilitar un token existente.
+1. Clic **Generar nuevo token** para reemplazar y deshabilitar un token existente.
 
-Debe usar su MAGEID y su token para descargar una versión. El MAGEID se muestra en la parte superior izquierda de la página de la cuenta.
+Debe usar su MAGEID más su token para descargar una versión. Su MAGEID se muestra en la parte superior izquierda de la página de su cuenta.
 
 Por ejemplo:
 
@@ -66,6 +66,6 @@ curl -k https://MAGEID:TOKEN@www.magentocommerce.com/products/downloads/info/hel
 
 Utilice sus claves de autenticación para:
 
-* [Obtenga el metapackage (integradores, empaquetadores)](../composer.md)
-* [Clonar el repositorio de GitHub](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/) (solo desarrolladores colaboradores)
+* [Obtención del metapaquete (integradores, empaquetadores)](../composer.md)
+* [Clone el repositorio de GitHub](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/) (solo para desarrolladores colaboradores)
 * [Actualización y administración de módulos](../../upgrade/modules/upgrade.md)

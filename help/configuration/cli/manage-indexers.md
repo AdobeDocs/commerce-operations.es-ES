@@ -1,10 +1,10 @@
 ---
 title: Administrar los indexadores
-description: Consulte ejemplos de cómo ver y administrar los indexadores de comercio.
+description: Consulte ejemplos de cómo ver y administrar los indexadores de Commerce.
 exl-id: d2cd1399-231e-4c42-aa0c-c2ed5d7557a0
 source-git-commit: 795d4e9d1910d0ad826eb6c82ac451ac58e43063
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '663'
 ht-degree: 0%
 
 ---
@@ -39,11 +39,11 @@ salesrule_rule                           Sales Rule
 ```
 
 >[!NOTE]
-> Los comerciantes de Adobe Commerce que utilizan Live Search, Catalog Service o Product Recommendations tienen la opción de usar [Indexación de precios basada en SaaS](https://experienceleague.adobe.com/docs/commerce-merchant-services/price-indexer/index.html).
+> Los comerciantes de Adobe Commerce que utilizan Live Search, el servicio de catálogo o Product Recommendations tienen la opción de usar [Indexación de precios basada en SaaS](https://experienceleague.adobe.com/docs/commerce-merchant-services/price-indexer/index.html).
 
 ## Ver estado del indexador
 
-Utilice este comando para ver el estado de todos los indexadores o indexadores específicos. Por ejemplo, averigüe si es necesario reindexar un indizador.
+Utilice este comando para ver el estado de todos los indexadores o de indexadores específicos. Por ejemplo, averigüe si es necesario reindexar un indexador.
 
 Opciones de comando:
 
@@ -51,9 +51,9 @@ Opciones de comando:
 bin/magento indexer:status [indexer]
 ```
 
-Donde `[indexer]` es una lista de indexadores separados por espacios. Omitir `[indexer]` para ver el estado de todos los indexadores.
+Donde `[indexer]` es una lista de indizadores separados por espacios. Omitir `[indexer]` para ver el estado de todos los indexadores.
 
-Resultado de la muestra:
+Resultado de muestra:
 
 ```terminal
 +----------------------+------------------+-----------+---------------------+---------------------+
@@ -73,13 +73,13 @@ Resultado de la muestra:
 +----------------------+------------------+-----------+---------------------+---------------------+
 ```
 
-## Reindex
+## Reindexar
 
 Utilice este comando para reindexar todos los indexadores o los seleccionados una sola vez.
 
 >[!INFO]
 >
->Este comando se reindexa una sola vez. Para mantener los indexadores actualizados, debe configurar un [trabajo cron](../cli/configure-cron-jobs.md).
+>Este comando reindexa solo una vez. Para mantener los indexadores actualizados, debe configurar un [trabajo cron](../cli/configure-cron-jobs.md).
 
 Opciones de comando:
 
@@ -87,9 +87,9 @@ Opciones de comando:
 bin/magento indexer:reindex [indexer]
 ```
 
-Donde `[indexer]` es una lista de indexadores separados por espacios. Omitir `[indexer]` para reindexar todos los indexadores.
+Donde `[indexer]` es una lista de indizadores separados por espacios. Omitir `[indexer]` para reindexar todos los indexadores.
 
-Resultado de la muestra:
+Resultado de muestra:
 
 ```terminal
 Design Config Grid index has been rebuilt successfully in <time>
@@ -107,41 +107,41 @@ Catalog Search index has been rebuilt successfully in <time>
 
 >[!INFO]
 >
->La reindexación de todos los indexadores puede llevar mucho tiempo para las tiendas con un gran número de productos, clientes, categorías y reglas promocionales.
+>La reindexación de todos los indexadores puede llevar mucho tiempo en tiendas con una gran cantidad de productos, clientes, categorías y reglas promocionales.
 
 ### Reindexación en modo paralelo
 
-Los indexadores tienen ámbitos y subprocesos múltiples para admitir la reindexación en modo paralelo. Se paraleliza por la dimensión del indizador y se ejecuta en varios subprocesos, lo que reduce el tiempo de procesamiento.
+Los indizadores tienen ámbitos y subprocesos múltiples para admitir la reindexación en modo paralelo. Se paraleliza por la dimensión del indexador y se ejecuta en varios subprocesos, lo que reduce el tiempo de procesamiento.
 
-En este contexto, `dimension` es el ámbito de la reindexación, por ejemplo, un `website` o solo un `customer_group`.
+En este contexto, `dimension` es el ámbito de la reindexación, por ejemplo, una `website` o solo un específico `customer_group`.
 
-La paralelización de índices solo afecta a los indexadores de ámbitos, lo que significa que Commerce divide los datos en varias tablas usando el indexador como su ámbito en lugar de mantener todos los datos en una tabla.
+La paralelización de índices afecta únicamente a los indexadores con ámbito, lo que significa que Commerce divide los datos en varias tablas utilizando el indexador como ámbito en lugar de mantener todos los datos en una tabla.
 
 Puede ejecutar los siguientes índices en modo paralelo:
 
-- `Catalog Search Fulltext` se puede comparar con las vistas de la tienda.
-- `Category Product` se puede comparar con las vistas de la tienda.
-- `Catalog Price` se puede comparar con grupos de clientes y sitios web.
-- `Catalog Permissions` pueden ser paralelos a grupos de clientes.
+- `Catalog Search Fulltext` puede ir paralelo a las vistas de tienda.
+- `Category Product` puede ir paralelo a las vistas de tienda.
+- `Catalog Price` puede ir paralelo a los grupos de sitios web y clientes.
+- `Catalog Permissions` pueden ser paralelos a los grupos de clientes.
 
 >[!INFO]
 >
->La paralelización para la búsqueda en catálogo El texto completo y el producto de categoría están habilitados de forma predeterminada.
+>La paralelización para la búsqueda en el catálogo de texto completo y categoría de producto está habilitada de forma predeterminada.
 
-Para utilizar la paralelización, establezca uno de los modos de dimensiones disponibles para el indizador de precios del producto:
+Para utilizar la paralelización, establezca uno de los modos de dimensión disponibles para el indexador de precios de producto:
 
 - `none` (predeterminado)
 - `website`
 - `customer_group`
 - `website_and_customer_group`
 
-Por ejemplo, para configurar el modo por sitio web:
+Por ejemplo, para establecer el modo por sitio web:
 
 ```bash
 bin/magento indexer:set-dimensions-mode catalog_product_price website
 ```
 
-Para utilizar la paralelización para los permisos de Catálogo, establezca uno de los modos de dimensiones disponibles para el indexador Permisos de Catálogo:
+Para utilizar la paralelización para los permisos de Catálogo, establezca uno de los modos de dimensiones disponibles para el indexador Permisos de catálogo:
 
 - `none` (predeterminado)
 - `customer_group`
@@ -152,17 +152,17 @@ O para comprobar el modo actual:
 bin/magento indexer:show-dimensions-mode
 ```
 
-Para reindexar en modo paralelo, ejecute el comando reindex utilizando la variable de entorno `MAGE_INDEXER_THREADS_COUNT`o agregar una variable de entorno al `env.php` archivo. Esta variable establece el número de subprocesos para el procesamiento del reíndice.
+Para reindexar en modo paralelo, ejecute el comando reindex utilizando la variable de entorno `MAGE_INDEXER_THREADS_COUNT`o agregue una variable de entorno a `env.php` archivo. Esta variable establece el número de subprocesos para el procesamiento de reindexación.
 
-Por ejemplo, el siguiente comando ejecuta el `Catalog Search Fulltext` indexador en tres subprocesos:
+Por ejemplo, el siguiente comando ejecuta el `Catalog Search Fulltext` indexador en tres hilos:
 
 ```bash
 MAGE_INDEXER_THREADS_COUNT=3 php -f bin/magento indexer:reindex catalogsearch_fulltext
 ```
 
-## Restablecer indexador
+## Restablecer indizador
 
-Utilice este comando para invalidar el estado de todos los indexadores o indexadores específicos.
+Utilice este comando para invalidar el estado de todos los indexadores o de indexadores específicos.
 
 Opciones de comando:
 
@@ -170,9 +170,9 @@ Opciones de comando:
 bin/magento indexer:reset [indexer]
 ```
 
-Donde ```[indexer]``` es una lista de indexadores separados por espacios. Omitir `[indexer]` para invalidar todos los indexadores.
+Donde ```[indexer]``` es una lista de indizadores separados por espacios. Omitir `[indexer]` para invalidar todos los indexadores.
 
-Resultado de la muestra:
+Resultado de muestra:
 
 ```terminal
 Design Config Grid indexer has been invalidated.
@@ -190,24 +190,24 @@ Catalog Search indexer has been invalidated.
 
 ## Configuración de indexadores
 
-Utilice este comando para establecer las siguientes opciones de indexador:
+Utilice este comando para establecer las siguientes opciones del indizador:
 
-- **Actualizar al guardar (`realtime`)**: Los datos indexados se actualizan cuando se realiza un cambio en Admin. (Por ejemplo, el índice de productos de la categoría se reindexa después de que los productos se agreguen a una categoría en el Administrador). Este es el valor predeterminado.
-- **Actualizar por programación (`schedule`)**: Los datos se indexan según la programación establecida por su trabajo cron.
+- **Actualización al guardar (`realtime`)**: los datos indexados se actualizan cuando se realiza un cambio en el administrador. (Por ejemplo, el índice de productos de la categoría se reindexará después de agregar los productos a una categoría en el Administrador). Esta es la opción predeterminada.
+- **Actualización según lo programado (`schedule`)**: Los datos se indexan según la programación establecida por el trabajo cron.
 
 [Más información sobre la indexación](https://developer.adobe.com/commerce/php/development/components/indexing/).
 
 ### Mostrar la configuración actual
 
-Para ver la configuración del indexador actual:
+Para ver la configuración actual del indizador:
 
 ```bash
 bin/magento indexer:show-mode [indexer]
 ```
 
-Donde `[indexer]` es una lista de indexadores separados por espacios. Omitir `[indexer]` para mostrar todos los modos de los indexadores. Por ejemplo, para mostrar el modo de todos los indexadores:
+Donde `[indexer]` es una lista de indizadores separados por espacios. Omitir `[indexer]` para mostrar todos los modos de los indexadores. Por ejemplo, para mostrar el modo de todos los indexadores:
 
-Resultado de la muestra:
+Resultado de muestra:
 
 ```terminal
 Design Config Grid:                                Update on Save
@@ -227,9 +227,9 @@ Catalog Search:                                    Update on Save
 
 >[!INFO]
 >
->Antes de cambiar de modo de indexador, le recomendamos que coloque el sitio web en [mantenimiento](../../installation/tutorials/maintenance-mode.md) y [desactivar trabajos cron](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html#disable-cron-jobs). Esto garantiza que no sufra bloqueos de base de datos.
+>Antes de cambiar los modos del indexador, recomendamos colocar el sitio web en [mantenimiento](../../installation/tutorials/maintenance-mode.md) modo y [deshabilitar trabajos de cron](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html#disable-cron-jobs). Esto garantiza que no sufra bloqueos de base de datos.
 
-Para especificar la configuración del indizador:
+Para especificar la configuración del indexador:
 
 ```bash
 bin/magento indexer:set-mode {realtime|schedule} [indexer]
@@ -237,21 +237,21 @@ bin/magento indexer:set-mode {realtime|schedule} [indexer]
 
 Donde:
 
-- `realtime`: permite configurar los indexadores seleccionados para que se actualicen al guardar.
-- `schedule`: permite configurar los indexadores especificados para guardar según la programación cron.
-- `indexer`: es una lista de indexadores separados por espacio. Omitir `indexer` para configurar todos los indexadores del mismo modo.
+- `realtime`: permite definir los indexadores seleccionados para que se actualicen al guardar.
+- `schedule`: permite definir los indexadores especificados para que se guarden según la programación de cron.
+- `indexer`: es una lista de indexadores separados por espacios. Omitir `indexer` para configurar todos los indexadores del mismo modo.
 
-Por ejemplo, para cambiar solo los indexadores de categorías de productos y categorías de productos para actualizarlos según lo programado, introduzca:
+Por ejemplo, para cambiar únicamente los indexadores de productos de categoría y categorías de productos para actualizar según lo programado, introduzca:
 
 ```bash
 bin/magento indexer:set-mode schedule catalog_category_product catalog_product_category
 ```
 
-Resultado de la muestra:
+Resultado de muestra:
 
 ```terminal
 Index mode for Indexer Category Products was changed from 'Update on Save' to 'Update by Schedule'
 Index mode for Indexer Product Categories was changed from 'Update on Save' to 'Update by Schedule'
 ```
 
-Los déclencheur de base de datos relacionados con los indexadores se agregan cuando el modo indexador se establece en `schedule` y se elimina cuando el modo indexador está configurado en `realtime`. Si faltan déclencheur en la base de datos mientras los indexadores están establecidos en `schedule`, cambie los indexadores a `realtime` y luego cambie a `schedule`. Esto restablece los déclencheur.
+Los déclencheur de base de datos relacionados con los indexadores se agregan cuando el modo de indexador se establece en `schedule` y se quita cuando el modo del indexador está configurado en `realtime`. Si faltan los déclencheur en la base de datos mientras los indexadores están configurados en `schedule`, cambie los indexadores a `realtime` y, a continuación, vuelva a cambiarlos por `schedule`. Esto restablece los déclencheur.

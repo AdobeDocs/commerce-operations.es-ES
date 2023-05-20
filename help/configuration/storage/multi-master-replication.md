@@ -1,15 +1,15 @@
 ---
-title: Duplicación de base de datos
-description: Consulte los beneficios de configurar la replicación de bases de datos.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+title: Replicación de base de datos
+description: Consulte las ventajas de configurar la replicación de bases de datos.
+exl-id: 0e41dca0-5a23-4d12-96fe-241c511ae366
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '175'
 ht-degree: 0%
 
 ---
 
-
-# Duplicación de base de datos
+# Replicación de base de datos
 
 {{ee-only}}
 
@@ -17,22 +17,22 @@ ht-degree: 0%
 
 La configuración de la replicación de bases de datos ofrece las siguientes ventajas:
 
-- Proporciona copia de seguridad de datos
-- Permite el análisis de datos sin afectar a la base de datos maestra
+- Proporciona backup de datos
+- Habilita el análisis de datos sin afectar a la base de datos maestra
 - Escalabilidad
 
-Las bases de datos MySQL se replican asincrónicamente, lo que significa que los esclavos no necesitan estar conectados permanentemente para recibir actualizaciones del maestro.
+Las bases de datos MySQL se replican de forma asíncrona, lo que significa que los esclavos no necesitan estar conectados permanentemente para recibir actualizaciones del maestro.
 
-## Configurar la replicación de la base de datos
+## Configurar replicación de base de datos
 
-Un análisis en profundidad de la replicación de bases de datos está fuera del alcance de esta guía. Para configurarlo, puede consultar un recurso como:
+En esta guía no se aborda en profundidad la replicación de bases de datos. Para configurarlo, puede consultar un recurso como:
 
 - [Documentación de MySQL](https://dev.mysql.com/doc/refman/5.6/en/replication.html)
-- [Cómo configurar la replicación maestra del esclavo en MySQL (digitalocean)](https://www.digitalocean.com/community/tutorials/how-to-set-up-replication-in-mysql)
+- [Cómo configurar la replicación de esclavos maestros en MySQL (digitalocean)](https://www.digitalocean.com/community/tutorials/how-to-set-up-replication-in-mysql)
 
-Commerce proporciona configuraciones MySQL de muestra para sus bases de datos esclavas. Se proporciona una configuración sencilla con la variable `ResourceConnections` class `README.md`.
+Commerce proporciona configuraciones MySQL de muestra para sus bases de datos esclavas. Se proporciona una configuración sencilla con el `ResourceConnections` clase `README.md`.
 
-Lo siguiente es más avanzado y solo se proporciona para su información:
+Lo siguiente es más avanzado y se proporciona solo para su información:
 
 ```php
    return array (
@@ -121,9 +121,9 @@ Lo siguiente es más avanzado y solo se proporciona para su información:
 
 ## Mejora del rendimiento
 
-Para mejorar el rendimiento de la replicación maestro-esclavo, puede filtrar algunas tablas en instancias esclavas. Se recomienda filtrar todas las tablas temporales con un patrón de nombres `search\_tmp\_%` que se utilizan para la búsqueda en el catálogo.
+Para mejorar el rendimiento de la replicación maestro-esclavo, puede filtrar algunas tablas en instancias esclavas. Se recomienda filtrar todas las tablas temporales con el patrón de nombre `search\_tmp\_%` que se utilizan para la búsqueda en el catálogo.
 
-Para ello, agregue la línea siguiente al `my.cnf` en las instancias esclavas:
+Para ello, añada la línea siguiente a su `my.cnf` en las instancias de esclavos:
 
 ```conf
 replicate-wild-ignore-table=%.search\_tmp\_%

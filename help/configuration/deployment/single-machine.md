@@ -1,20 +1,21 @@
 ---
 title: Implementación de una sola máquina
 description: Obtenga información sobre cómo implementar actualizaciones en Commerce en un servidor de producción mediante la línea de comandos.
-source-git-commit: 2e1a06b59fda7db4a9b32d000e1b2a3ca88926d3
+exl-id: ca73309c-7584-4506-99de-dd933651eeb6
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '186'
 ht-degree: 0%
 
 ---
 
-# Implementación de una sola máquina
+# Implementación de un solo equipo
 
 En este tema se proporcionan instrucciones para implementar actualizaciones en Commerce en un servidor de producción mediante la línea de comandos. Este proceso se aplica a los usuarios técnicos responsables de las tiendas que se ejecutan en un solo equipo con algunos temas y configuraciones regionales instalados.
 
 ## Suposiciones
 
-- Ha instalado Commerce utilizando [Compositor](../../installation/composer.md).
+- Ha instalado Commerce con [Compositor](../../installation/composer.md).
 - Está aplicando actualizaciones directamente al servidor.
 
 >[!WARNING]
@@ -24,7 +25,7 @@ En este tema se proporcionan instrucciones para implementar actualizaciones en C
 
 ## Pasos de implementación
 
-1. Inicie sesión en el servidor de producción como o cambie a la [propietario del sistema de archivos](../../installation/prerequisites/file-system/overview.md).
+1. Inicie sesión en el servidor de producción como, o cambie a, la [propietario del sistema de archivos](../../installation/prerequisites/file-system/overview.md).
 
 1. Cambie el directorio al directorio base de Commerce:
 
@@ -32,7 +33,7 @@ En este tema se proporcionan instrucciones para implementar actualizaciones en C
    cd <Commerce base directory>
    ```
 
-1. Habilite el modo de mantenimiento mediante el comando :
+1. Habilite el modo de mantenimiento con el comando:
 
    ```bash
    bin/magento maintenance:enable
@@ -44,7 +45,7 @@ En este tema se proporcionan instrucciones para implementar actualizaciones en C
    composer require-commerce <package> <version> --no-update
    ```
 
-   **paquete**: El nombre del paquete que desea actualizar.
+   **paquete**: Nombre del paquete que desea actualizar.
 
    Por ejemplo:
 
@@ -53,13 +54,13 @@ En este tema se proporcionan instrucciones para implementar actualizaciones en C
 
    **version**: La versión de destino del paquete que desea actualizar.
 
-1. Actualizar componentes con el Compositor:
+1. Actualizar componentes con Composer:
 
    ```bash
    composer update
    ```
 
-1. Actualice el esquema y los datos de la base de datos:
+1. Actualizar el esquema y los datos de la base de datos:
 
    ```bash
    bin/magento setup:upgrade
@@ -83,7 +84,7 @@ En este tema se proporcionan instrucciones para implementar actualizaciones en C
    bin/magento cache:clean
    ```
 
-1. Modo de mantenimiento de salida:
+1. Salir del modo de mantenimiento:
 
    ```bash
    bin/magento maintenance:disable

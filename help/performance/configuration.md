@@ -1,13 +1,13 @@
 ---
 title: Prácticas recomendadas de configuración
 description: Optimizar el tiempo de respuesta de la implementación de Adobe Commerce o Magento Open Source mediante estas prácticas recomendadas.
-source-git-commit: 5b455cb1285ce764a0517008fb8b692f3899066d
+exl-id: 4cb0f5e7-49d5-4343-a8c7-b8e351170f91
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '1348'
 ht-degree: 0%
 
 ---
-
 
 # Prácticas recomendadas de configuración
 
@@ -122,4 +122,3 @@ Puede limitar las colecciones de cuadrículas de productos solo en las páginas 
 * Página Administrador: Crear Pedido
 
 Si no desea que la cuadrícula de productos esté limitada, le recomendamos que utilice filtros de forma más precisa para que la colección de resultados tenga menos elementos que **[!UICONTROL Records Limit]**.
-

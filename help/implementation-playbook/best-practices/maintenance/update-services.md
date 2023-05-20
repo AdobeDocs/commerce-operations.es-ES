@@ -1,42 +1,42 @@
 ---
-title: Prácticas recomendadas de actualización de servicios
-description: Obtenga información sobre cómo mantener actualizado su Adobe Commerce en la pila de tecnología de infraestructura en la nube.
+title: Actualizar prácticas recomendadas de servicios
+description: Obtenga información sobre cómo mantener su Adobe Commerce en la pila de tecnología de infraestructura en la nube actualizada.
 role: Developer
 feature: Best Practices
 feature-set: Commerce
-source-git-commit: cf8626bfab170a1e12cc72f0bc344c9beb9349a7
+exl-id: 62aeffe3-b5a6-49f8-a39b-3219b46cd486
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '264'
 ht-degree: 0%
 
 ---
 
+# Actualizar prácticas recomendadas de servicios
 
-# Prácticas recomendadas de actualización de servicios
-
-Este artículo proporciona recomendaciones para mantener su Adobe Commerce actualizado en la pila de tecnología de la infraestructura de nube y proporciona vínculos a recursos útiles.
+Este artículo incluye recomendaciones para mantener actualizado el conjunto de tecnología de Adobe Commerce en la infraestructura en la nube y proporciona vínculos a recursos útiles.
 
 ## Productos y versiones afectados
 
-Adobe Commerce en la infraestructura de nube 2.4.x y posteriores
+Adobe Commerce en la infraestructura en la nube 2.4.x y posterior
 
 ## Actualizar servicios
 
-Actualice los servicios y componentes utilizados por Adobe Commerce antes de que alcancen o estén próximos a la fecha de finalización de la vida útil. Esto ayuda a mantenerse al día con el cumplimiento de PCI y a reducir las vulnerabilidades de seguridad.
+Actualice los servicios y componentes que utiliza Adobe Commerce antes de que lleguen a la fecha de fin de vida útil o estén cerca de ella. Esto ayuda a cumplir con PCI y a disminuir las vulnerabilidades de seguridad.
 
-Los clientes con planes Starter pueden autoabastecerse en actualizaciones de servicios. Consulte [Cambiar la versión del servicio](https://devdocs.magento.com/cloud/project/services.html#change-service-version) para obtener más información sobre cómo hacerlo.
+Los clientes con planes de inicio pueden autoabastecerse con actualizaciones de servicios. Consulte [Cambiar la versión del servicio](https://devdocs.magento.com/cloud/project/services.html#change-service-version) para obtener más información sobre cómo hacerlo.
 
-Los clientes con planes Pro solo pueden autoabastecerse en actualizaciones de servicios en sus [Entorno de integración](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/integration-environment-enhancement-request-pro-and-starter.html). Para las actualizaciones de servicios en Producción, debe [enviar un ticket de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) solicitando la actualización.
+Los clientes con planes Pro solo pueden autoabastecerse con actualizaciones de servicios en sus [Entorno de integración](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/integration-environment-enhancement-request-pro-and-starter.html). Para actualizar los servicios en Producción, debe [enviar un ticket de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) solicitando la actualización.
 
 >[!WARNING]
 >
->Las actualizaciones de servicio no se pueden impulsar al entorno de producción sin previo aviso de 48 horas laborables a nuestro equipo de infraestructura. Esto es necesario, ya que necesitamos asegurarnos de tener un ingeniero de soporte de infraestructura disponible para actualizar su configuración dentro de un periodo de tiempo deseado con un downtime mínimo para su entorno de producción.
+>Las actualizaciones de servicios no se pueden insertar en el entorno de producción sin un aviso de 48 horas laborables a nuestro equipo de infraestructura. Esto es necesario, ya que tenemos que asegurarnos de tener un ingeniero de asistencia técnica de infraestructura disponible para actualizar la configuración dentro de un periodo de tiempo deseado con un tiempo de inactividad mínimo en el entorno de producción.
 
-Puede ver la lista de versiones de servicio y fechas de finalización de la vida útil en el siguiente archivo: [https://github.com/magento/ece-tools/blob/develop/config/eol.yaml](https://github.com/magento/ece-tools/blob/develop/config/eol.yaml).
+Puede ver la lista de versiones del servicio y las fechas de finalización de la vida útil en el siguiente archivo: [https://github.com/magento/ece-tools/blob/develop/config/eol.yaml](https://github.com/magento/ece-tools/blob/develop/config/eol.yaml).
 
 >[!NOTE]
 >
->Este archivo no puede considerarse una única fuente de verdad. Consulte los sitios web oficiales del proveedor para estas tecnologías si hay dudas.
+>Este archivo no puede considerarse una única fuente de verdad. Consulte los sitios web oficiales de los proveedores para conocer estas tecnologías si tiene alguna duda.
 
 ## Información adicional
 

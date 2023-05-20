@@ -9,134 +9,134 @@ ht-degree: 0%
 
 ## A
 
-### encima del pliegue
+### sobre el pliegue
 
 _adjetivo_
 
-En una ventana del explorador, el contenido que es visible inmediatamente después de cargar una página web y antes de que un usuario se desplace hacia abajo en la página.
+En una ventana del explorador, el contenido que es visible inmediatamente después de cargar una página web y antes de que un usuario se desplace hacia abajo por la página.
 Al diseñar el diseño, utilice formatos flexibles para mostrar de la mejor manera los productos, las funciones, las ventas, las notificaciones, las opciones, etc. de mayor prioridad en esta área.
 
-Con móviles y tabletas, el área de arriba del pliegue difiere considerablemente, especialmente en el tamaño y las dimensiones de la pantalla y la orientación al ver (vertical frente a horizontal).
-El uso de temas interactivos y las pruebas pueden ayudar a encontrar la combinación correcta de contenido y diseño.
+En móviles y tabletas, el área de sobre el pliegue difiere considerablemente, especialmente en el tamaño y las dimensiones de la pantalla y la orientación al ver (vertical u horizontal).
+El uso de temáticas interactivas y pruebas puede ayudar a encontrar la combinación adecuada de contenido y diseño.
 
 _Atributos de término:_
 
-* _Campo: diseño_
+* _Field: design_
 
 ### rama activa
 
-_noun_
+_sustantivo_
 
-Una rama o entorno activo es uno que está conectado a una instancia implementada o en ejecución con acceso a los servicios.
-Cuando se desactiva, se elimina la conexión a los servicios y a la instancia en ejecución, pero se conserva el código.
-Se convierte en una rama de git normal.
+Una rama o entorno activo es aquel que está conectado a una instancia implementada o en ejecución con acceso a servicios.
+Cuando se desactiva, se elimina la conexión con los servicios y con la instancia en ejecución, pero se conserva el código.
+Se convierte en una rama de Git normal.
 
 _Atributos de término:_
 
-* _Campo: nube_
+* _Field: cloud_
 
 ### adaptador
 
-_noun_
+_sustantivo_
 
 Una clase que permite que dos sistemas incompatibles funcionen juntos sin modificar el código fuente del sistema.
-Algunos ejemplos son adaptadores de base de datos, adaptadores de caché, adaptadores de filesystem, adaptadores de bibliotecas posteriores al procesador y otros tipos de adaptadores informáticos.
+Algunos ejemplos son adaptadores de base de datos, adaptadores de caché, adaptadores del sistema de archivos, adaptadores de bibliotecas de postprocesador y otros tipos de adaptadores informáticos.
 
 _Atributos de término:_
 
-* _Campo: programación_
+* _Field: scheduling_
 
-### admin
+### administrador
 
-_noun_
+_sustantivo_
 
-En software, una función de usuario con privilegios de administrador completos para administrar toda la funcionalidad.
-En Adobe Commerce, los usuarios administradores tienen permisos completos y acceso a todas las funciones, opciones y funcionalidades del administrador.
+En el software, una función de usuario con privilegios de administrador completos para administrar todas las funcionalidades.
+En Adobe Commerce, los usuarios administradores tienen permisos y acceso completos a todas las funciones, opciones y funcionalidades de la variable Administración.
 También pueden crear usuarios y funciones.
 
 Más información: [Adición de usuarios](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions-users-all.html)
 
 _Atributos de término:_
 
-* _Campo: software de comercio_
+* _Field: commerce software_
 * _Sinónimos: administrador, superusuario_
-* _Términos relacionados: administrador de comercio_
+* _Términos relacionados: commerce admin_
 
 ### Área de administración
 
-_noun_
+_sustantivo_
 
 El back office protegido por contraseña de su tienda donde se administran los pedidos, el catálogo, el contenido y las configuraciones.
-Los usuarios acceden al área de administración para administrar la tienda, que incluye productos, pedidos, envíos, contenido de CMS, diseño de la tienda, información del cliente, etc.
-Los usuarios administradores tienen una función asociada con permisos que controlan el acceso a las funciones, opciones y capacidades.
+Los usuarios acceden al área de Administración para administrar la tienda, incluidos productos, pedidos, envíos, contenido de CMS, diseño de la tienda, información del cliente, etc.
+Los usuarios administradores tienen una función asociada con permisos que controlan el acceso a las funciones, opciones y funcionalidades.
 
 Más información: [Guía del usuario de Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html)
 
 _Atributos de término:_
 
-* _Campo: software de comercio_
-* _Sinónimos: Administrador, panel de administración, back-end, interfaz de administración, interfaz de administración_
+* _Field: commerce software_
+* _Sinónimos: Administrador, Panel de administración, servidor, Interfaz de administración, IU de administración_
 * _Términos relacionados: admin_
 
-### Variables ADMIN
+### Variables de ADMINISTRACIÓN
 
-_noun_
+_sustantivo_
 
-Las variables ADMIN son variables de entorno de proyecto para anular los ajustes de configuración de la cuenta de usuario de administración para acceder a la IU de administración.
+Las variables ADMIN son variables de entorno de proyecto para anular los ajustes de configuración de la cuenta de usuario Administrador para acceder a la IU de Administración.
 
-Más información: [Variables ADMIN](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-admin.html)
+Más información: [Variables de ADMINISTRACIÓN](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-admin.html)
 
 _Atributos de término:_
 
-* _Campo: administrador, nube_
+* _Campo: admin, cloud_
 
 ### adminhtml
 
-_noun_
+_sustantivo_
 
-El nombre del área interna asignada al administrador.
+El nombre de área interna asignado al administrador.
 
 Más información: [Guía del usuario de Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html)
 
 _Atributos de término:_
 
-* _Campo: software de comercio_
+* _Field: commerce software_
 * _Términos relacionados: área, administración de comercio_
 
-### area
+### área
 
-_noun_
+_sustantivo_
 
-Área es un término abstracto para un ámbito de aplicación de Magento.
-Las áreas son componentes lógicos que organizan el código para optimizar el procesamiento de solicitudes.
-Las áreas reducen las exigencias de memoria de los objetos de configuración a los que se accede desde la tienda, y optimizan las llamadas de servicio web cargando solo el código dependiente requerido.
-Cada área puede contener código completamente diferente para procesar direcciones URL y solicitudes.
+Área es un término abstracto para un ámbito de aplicación Magento.
+Las áreas son componentes lógicos que organizan el código para un procesamiento de solicitudes optimizado.
+Las áreas reducen la demanda de memoria de los objetos de configuración a los que se accede desde la tienda y optimizan las llamadas al servicio web al cargar únicamente el código dependiente requerido.
+Cada área puede contener un código completamente diferente para procesar direcciones URL y solicitudes.
 
 Las áreas de Adobe Commerce incluyen:
 
-* Administración (adminhtml)
+* Administrador (adminhtml)
 * Tienda
-* API web REST (webapi_rest)
+* REST de API web (webapi_rest)
 
 _Atributos de término:_
 
-* _Campo: software de comercio_
-* _Términos relacionados: componente de comercio, tienda_
+* _Field: commerce software_
+* _Términos relacionados: commerce component, storefront_
 
-### attribute
+### atributo
 
-_noun_
+_sustantivo_
 
 Característica o propiedad de un producto que describe algún aspecto del producto.
-Los usuarios de Adobe Commerce o Magento Open Source pueden crear atributos personalizados para agregarlos al conjunto de atributos predeterminado o a un conjunto de atributos personalizados.
-Cree estos atributos mediante el Administrador o mediante programación.
+Los usuarios de Adobe Commerce o Magento Open Source pueden crear atributos personalizados para agregarlos al conjunto de atributos predeterminado o a un conjunto de atributos personalizado.
+Cree estos atributos mediante el administrador o mediante programación.
 Ejemplos: color, tamaño, peso, precio, edad, sexo, etc.
 
 Los atributos personalizados son un tipo de atributo Entity-Attribute-Value (EAV).
 
-Para integraciones como Canal de anuncios de Google Shopping y Sales Channel de Amazon, puede asignar atributos de comercio a atributos de terceros para mostrar y vender correctamente productos y anuncios en pantalla.
+Para integraciones como el canal de anuncios de compras de Google y la Sales Channel de Amazon, asigne atributos de comercio a atributos de terceros para mostrar y vender correctamente productos y anuncios.
 
-Más información: [EAV y extension_attributes](https://developer.adobe.com/commerce/php/development/components/attributes/)
+Más información: [Atributos de extensión de EAV y extension](https://developer.adobe.com/commerce/php/development/components/attributes/)
 
 _Atributos de término:_
 
@@ -146,21 +146,21 @@ _Atributos de término:_
 
 ### grupo de atributos
 
-_noun_
+_sustantivo_
 
 Agrupación lógica de atributos dentro de un conjunto de atributos.
 
 _Atributos de término:_
 
-* _Campo: software de comercio_
+* _Field: commerce software_
 * _Términos relacionados: attribute_
 
 ### conjunto de atributos
 
-_noun_
+_sustantivo_
 
-Colección de grupos de atributos, personalizada para un producto específico.
-Ejemplo: Un conjunto de atributos de camiseta puede incluir color, tamaño, sexo y marca.
+Colección de grupos de atributos, personalizados para un producto específico.
+Ejemplo: un conjunto de atributos de camiseta puede incluir color, tamaño, sexo y marca.
 
 _Atributos de término:_
 
@@ -169,70 +169,70 @@ _Atributos de término:_
 
 ### coste de inventario promedio
 
-_noun_
+_sustantivo_
 
 Precio del producto, menos cupones o descuentos, más flete e impuestos aplicables.
-El promedio se determina añadiendo el costo inicial del inventario cada mes, más el costo final del inventario para el último mes del período.
+El promedio se determina sumando el costo inicial de inventario cada mes, más el costo final de inventario para el último mes del período.
 
 _Atributos de término:_
 
-* _Campo: producto, precio, inventario_
+* _Campo: producto, precios, inventario_
 
 ## B
 
-### moneda base
+### divisa base
 
-_noun_
+_sustantivo_
 
-La moneda principal que se utiliza por vista de tienda para todos los pagos en línea.
-Las tiendas pueden aceptar monedas de más de 200 países en todo el mundo.
-El frente de la tienda proporciona un selector de moneda para varias monedas aceptadas para un país o configuración regional específicos.
-Los símbolos monetarios aparecen en los documentos de precios y ventas de productos, como pedidos y facturas.
+La divisa principal que se utiliza por vista de tienda para todos los pagos en línea.
+Las tiendas pueden aceptar divisas de más de 200 países de todo el mundo.
+La tienda proporciona un selector de moneda para varias monedas aceptadas en un país o configuración regional específicos.
+Los símbolos de moneda aparecen en los precios de los productos y en los documentos de venta, como pedidos y facturas.
 Puede personalizar los símbolos de moneda según sea necesario y establecer la visualización del precio por separado para cada tienda o vista.
 
 Más información: [Moneda](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency.html)
 
 _Atributos de término:_
 
-* _Campo: precio_
+* _Field: price_
 
 ### procesamiento por lotes
 
-_noun_
+_sustantivo_
 
-Para realizar una tarea o cambiar varios elementos a la vez, sin repetición manual.
-
-_Atributos de término:_
-
-* _Campo: programación_
-* _Sinónimos: operaciones masivas_
-
-### block
-
-_noun_
-
-Unidad de salida de página que representa cierto contenido distintivo -un fragmento de información, un elemento de interfaz de usuario- todo visualmente tangible para el usuario final.
-[Bloques](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/blocks/blocks.html) se implementan y proporcionan mediante módulos.
-Los bloques utilizan plantillas para generar un HTML.
-Algunos ejemplos de bloques son una lista de categorías, un minicarrito, etiquetas de productos y listas de productos.
-
-[Bloques dinámicos](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/dynamic-blocks/dynamic-blocks.html) proporciona contenido basado en la lógica, como las reglas de precios.
-
-El Creador de páginas amplía la interactividad y la creación de [bloques](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/block.html) y [bloques dinámicos](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/dynamic-block.html).
+Para realizar una tarea o cambiar varios artículos a la vez, sin repetición manual.
 
 _Atributos de término:_
 
-* _Campo: software de comercio_
+* _Field: scheduling_
+* _Sinónimos: operaciones por lotes_
+
+### bloquear
+
+_sustantivo_
+
+Una unidad de salida de página que procesa contenido distintivo (un fragmento de información, un elemento de interfaz de usuario) o cualquier cosa visualmente tangible para el usuario final.
+[Bloques](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/blocks/blocks.html) se implementan y proporcionan mediante módulos de.
+Los bloques utilizan plantillas para generar HTML.
+Algunos ejemplos de bloques son una lista de categorías, un minicarrito, etiquetas de productos y una lista de productos.
+
+[Bloques dinámicos](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/dynamic-blocks/dynamic-blocks.html) proporcionar contenido basado en lógica, como reglas de precios.
+
+Page Builder amplía la interactividad y la creación de [bloques](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/block.html) y [bloques dinámicos](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/dynamic-block.html).
+
+_Atributos de término:_
+
+* _Field: commerce software_
 * _Sinónimos: Bloques dinámicos_
-* _Términos relacionados: bloque cms, bloque estático, contenedor, diseño_
+* _Términos relacionados: cms block, static block, container, layout_
 
 ### marca
 
 _sustantivo, verbo_
 
-Una identidad única que define un producto o grupo de productos determinado por el fabricante o Designer.
+Identidad única que define un producto o grupo de productos concreto por el fabricante o el diseñador.
 Estas incluyen marcas de nombre para ropa, electrodomésticos, artículos de lujo, etc.
-Su empresa también puede ser la marca, vendiendo productos bajo varias marcas en función de la unidad comercial, la audiencia de destino, etc.
+Su empresa también puede ser la marca, que vende productos con varias marcas en función de la unidad de negocio, la audiencia objetivo, etc.
 
 Utilice atributos personalizados para guardar la información de marca de los productos.
 
@@ -240,38 +240,38 @@ Algunas extensiones e integraciones pueden utilizar o requerir una marca para su
 
 _Atributos de término:_
 
-* _Campo: negocio_
+* _Field: business_
 
-### ladrillo y mortero
+### de ladrillo y mortero
 
 _adjetivo_
 
-Un negocio minorista con una ubicación física permanente, a diferencia de los negocios que funcionan virtual o exclusivamente a través de Internet.
+Un negocio minorista con una ubicación física permanente, a diferencia de los negocios que funcionan de forma virtual o exclusiva a través de Internet.
 
-Para [Inventory management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/sources/sources-manage.html) y [Administración de pedidos](https://omsdocs.magento.com/getting-started/terminology/), esta tienda es una fuente para realizar el seguimiento de las cantidades de productos, los pedidos de envío y la compatibilidad con la recogida en la tienda.
+Para [Inventory management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/sources/sources-manage.html) y [Order Management](https://omsdocs.magento.com/getting-started/terminology/)Sin embargo, esta tienda es una fuente de seguimiento de cantidades de productos, pedidos de envío y soporte para la recogida en tienda.
 
 _Atributos de término:_
 
 * _Campo: negocio, inventario_
 
-### operaciones masivas
+### operaciones por lotes
 
-_noun_
+_sustantivo_
 
-Las operaciones masivas son acciones que se realizan a gran escala.
-Las tareas de operaciones masivas de ejemplo incluyen importar o exportar artículos, cambiar precios en una escala masiva y asignar productos a un almacén.
+Las operaciones por lotes son acciones que se realizan a gran escala.
+Algunas tareas de operaciones por lotes incluyen la importación o exportación de artículos, el cambio de precios a escala masiva y la asignación de productos a un almacén.
 
 Más información: [Operaciones masivas de DevDocs](https://developer.adobe.com/commerce/php/development/components/message-queues/bulk-operations/)
 
 _Atributos de término:_
 
-* _Campo: programación_
+* _Field: scheduling_
 
 ### paquete de producto
 
-_noun_
+_sustantivo_
 
-Permite a los clientes ensamblar un producto personalizable &quot;propio&quot; a partir de diversas opciones y configuraciones.
+Permite a los clientes ensamblar un producto personalizable &quot;crear el suyo propio&quot; a partir de diversas opciones y configuraciones.
 Cada elemento del paquete es un producto simple o virtual independiente.
 
 Más información: [Productos configurables](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/types/product-create-configurable.html)
@@ -283,65 +283,65 @@ _Atributos de término:_
 
 ### extensión agrupada
 
-_noun_
+_sustantivo_
 
 El código que amplía o personaliza el comportamiento de Adobe Commerce se considera una extensión agrupada.
-Puede incluir módulos, temas y paquetes de idiomas.
+Puede incluir módulos, temáticas y paquetes de idiomas.
 
 _Atributos de término:_
 
 * _Campo: extensión agrupada, extensión_
-* _Sinónimos: Extensión_
-* _Términos relacionados: extensión, extensión agrupada de proveedor_
+* _Sinónimos: extensión_
+* _Términos relacionados: extensión, extensión agrupada por proveedor_
 
 ## C
 
-### back-end de caché
+### servidor de caché
 
-_noun_
+_sustantivo_
 
-Almacena registros de caché en un sistema back-end de dos niveles dentro del marco predeterminado de Zend.
-Una caché de primer nivel es rápida (por ejemplo, un back-end APC o Memcached), pero es limitada y no admite el etiquetado y la agrupación de entradas de caché.
-La caché de segundo nivel, por ejemplo, un sistema de archivos o un servidor de Redis, es más lenta, pero admite el etiquetado y la agrupación.
+Almacena registros de caché en un sistema backend de dos niveles dentro del marco predeterminado de Zend.
+Una caché de primer nivel es rápida (por ejemplo, un servidor APC o Memcached), pero es limitada y no admite el etiquetado y la agrupación de entradas de caché.
+Una caché de segundo nivel (por ejemplo, un sistema de archivos o un backend de Redis) es más lenta, pero admite etiquetado y agrupación.
 
 _Atributos de término:_
 
-* _Campo: programación_
+* _Field: scheduling_
 * _Términos relacionados: backend_
 
 ### front-end de caché
 
-_noun_
+_sustantivo_
 
-Especifica qué tipo de datos se almacena en el servidor de caché.
+Especifica qué tipo de datos se almacenan en el servidor de caché.
 
 _Atributos de término:_
 
-* _Campo: programación_
-* _Términos relacionados: front-end_
+* _Field: scheduling_
+* _Términos relacionados: frontend_
 
 ### tipo de caché
 
-_noun_
+_sustantivo_
 
-Una caché almacena datos para que las llamadas futuras a esos datos se carguen más rápido.
+Una caché almacena datos para que las llamadas futuras a dichos datos se carguen más rápido.
 
 Adobe Commerce incluye estos tipos:
 * Configuración
 * Diseños
-* Salida del HTML de bloque
+* Bloquear salida del HTML
 * Datos de colecciones
-* Datos de reflejo
-* Operaciones DDL de la base de datos
+* Datos de reflexión
+* Operaciones DDL de base de datos
 * Configuración compilada
 * Tipos y atributos de EAV
 * Notificación al cliente
 * Configuración de integraciones
-* Configuración de la API de integraciones
-* Caché de página (la más conocida)
+* Configuración de API de integraciones
+* Caché de páginas (la más conocida)
 * Configuración de servicios web
 * Traducciones
-* Regla de Target
+* Regla de destino
 * Caché de producto de Google
 * Vértice
 
@@ -349,23 +349,23 @@ Se pueden crear y definir otros tipos.
 
 _Atributos de término:_
 
-* _Campo: programación_
+* _Field: scheduling_
 
-### captura
+### captar
 
 _verbo_
 
-Proceso de convertir un importe de pedido autorizado en una transacción facturable.
-Las transacciones no pueden capturarse hasta que se autoricen y las autorizaciones no pueden capturarse hasta que se hayan enviado los bienes o servicios.
+Proceso de conversión de un importe de pedido autorizado en una transacción facturable.
+Las transacciones no se pueden capturar hasta que se autorice, y las autorizaciones no se pueden capturar hasta que se hayan enviado los productos o servicios.
 
 _Atributos de término:_
 
-* _Campo: negocio_
-* _Términos relacionados: autorización, estado de pedido_
+* _Field: business_
+* _Términos relacionados: autorización, estado del pedido_
 
 ### titular de la tarjeta
 
-_noun_
+_sustantivo_
 
 Una persona autorizada por una institución financiera para realizar compras en una cuenta de tarjeta de crédito.
 
@@ -373,11 +373,11 @@ _Atributos de término:_
 
 * _Campo: negocio, pedido_
 
-### reglas del carro de compras
+### reglas de carrito
 
-_noun_
+_sustantivo_
 
-Las reglas de precios que se aplican al carro de compras y a los déclencheur de una acción en respuesta a un conjunto de condiciones.
+Las reglas de precios que se aplican al carro de compras y que almacenan en déclencheur una acción en respuesta a un conjunto de condiciones.
 Se utiliza para crear promociones.
 
 _Atributos de término:_
@@ -385,30 +385,30 @@ _Atributos de término:_
 * _Campo: software de comercio, precios, producto_
 * _Términos relacionados: reglas de catálogo, carro de compras_
 
-### catálogo
+### catalogar
 
-_noun_
+_sustantivo_
 
 Para los comerciantes, el catálogo representa su inventario de productos.
-Dentro de la arquitectura de Adobe Commerce, el catálogo consta de categorías, productos y atributos de producto.
+Dentro de la arquitectura de Adobe Commerce, el catálogo consta de categorías, productos y atributos de productos.
 
-Cada tienda de comercio solo tiene un catálogo de productos, que se comparte en todas las vistas de la tienda.
-En una instalación de varias tiendas, cada tienda puede tener un catálogo independiente o compartir el catálogo.
-El catálogo de la tienda actual está determinado por la categoría raíz predeterminada, visible para el usuario en la barra de navegación superior (menú principal) de la tienda.
-(El término &quot;categoría raíz&quot; puede resultar confuso, ya que la &quot;categoría raíz&quot; no es en realidad una categoría, sino un contenedor para el menú, que consta de categorías y subcategorías).
+Cada tienda de Commerce tiene un solo catálogo de productos, que comparten todas las vistas de la tienda.
+En una instalación de varias tiendas, cada tienda puede tener un catálogo independiente o compartirlo.
+El catálogo de tiendas actual está determinado por la categoría raíz predeterminada, visible para el usuario en la barra de navegación superior (menú principal) de la tienda.
+(El término &quot;categoría raíz&quot; puede resultar confuso, ya que la &quot;categoría raíz&quot; no es en realidad una categoría, sino un contenedor del menú, que consta de categorías y subcategorías.)
 
-Puede crear tantas categorías raíz como desee, pero solo se puede usar una (la predeterminada) a la vez.
+Puede crear tantas categorías raíz como desee, pero solo se puede utilizar una (la predeterminada) a la vez.
 
 _Atributos de término:_
 
 * _Campo: software de comercio, precios, producto_
-* _Términos relacionados: catálogo compartido, regla de catálogo_
+* _Términos relacionados: shared catalog, catalog rule_
 
 ### reglas de catálogo
 
-_noun_
+_sustantivo_
 
-Las reglas de precios que se aplican a productos específicos y generan el déclencheur de una acción en respuesta a un conjunto de condiciones.
+Reglas de precios que se aplican a productos específicos y que déclencheur una acción en respuesta a un conjunto de condiciones.
 Se utiliza para crear promociones.
 
 _Atributos de término:_
@@ -418,90 +418,90 @@ _Atributos de término:_
 
 ### categoría
 
-_noun_
+_sustantivo_
 
-Grupo de productos que tienen algo en común.
+Un grupo de productos que tienen algo en común.
 El menú principal de la tienda está organizado en categorías y subcategorías de productos.
 
 _Atributos de término:_
 
 * _Campo: software de comercio, producto_
 
-### cierre de compra
+### pago y envío
 
-_noun_
+_sustantivo_
 
-Proceso de recopilación de la información de pago y envío necesaria para completar la compra de artículos en el carro de compras.
-Una vez que el cliente revisa la información y envía el pedido, se envía una confirmación por correo electrónico al cliente.
+Proceso de recopilar la información de pago y envío necesaria para completar la compra de artículos en el carro de compras.
+Una vez que el cliente revisa la información y envía el pedido, se le envía una confirmación por correo electrónico.
 
-El cierre de compra tiene muchas opciones y configuración listas para usar y por extensión.
+La desprotección tiene muchas opciones y configuraciones listas para usar y mediante extensión.
 
 Más información: [Tutorial de cierre de compra](https://developer.adobe.com/commerce/php/tutorials/frontend/custom-checkout/)
 
 _Atributos de término:_
 
-* _Campo: negocio, diseño, pedido, producto, programación_
+* _Campo: negocios, diseño, pedido, producto, programación_
 
 ### variables de nube
 
-_noun_
+_sustantivo_
 
-Las variables de nube son variables de entorno específicas de Adobe Commerce en la infraestructura de nube y utilizan la variable **`MAGENTO_CLOUD`** prefijo .
+Las variables de nube son variables de entorno específicas de Adobe Commerce en la infraestructura en la nube y utilizan el **`MAGENTO_CLOUD`** prefijo.
 
 Más información: [Variables de nube](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud.html)
 
 _Atributos de término:_
 
-* _Campo: nube_
+* _Field: cloud_
 
 ### Bloque CMS
 
-_noun_
+_sustantivo_
 
-Una variante especial de [block](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/blocks/blocks.html) que solo se puede crear en el administrador y no se puede hacer referencia a él a través de archivos de diseño.
+Una variante especial de [bloquear](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/blocks/blocks.html) que solo se pueden crear en el administrador y no se pueden referenciar mediante archivos de diseño.
 
 _Atributos de término:_
 
-* _Campo: software de comercio_
-* _Términos relacionados: bloque, bloque estático_
+* _Field: commerce software_
+* _Términos relacionados: block, static block_
 
 ### datos complejos
 
-_noun_
+_sustantivo_
 
 Datos asociados con varias opciones de producto.
 
 _Atributos de término:_
 
-* _Campo: programación_
+* _Field: scheduling_
 
 ### componente
 
-_noun_
+_sustantivo_
 
 Se utiliza para hacer referencia a un módulo, tema o paquete de idioma en Adobe Commerce.
 
 _Atributos de término:_
 
-* _Campo: software de comercio_
+* _Field: commerce software_
 * _Sinónimos: componente_
-* _Términos relacionados: componente ui_
+* _Términos relacionados: ui component_
 
 ### producto configurable
 
-_noun_
+_sustantivo_
 
-Un producto configurable se parece a un único producto con listas desplegables de opciones para cada variación.
+Un producto configurable parece un único producto con listas desplegables de opciones para cada variación.
 Cada opción es en realidad un producto simple independiente con un SKU único, lo que permite rastrear el inventario para cada variación de producto.
 Para lograr un efecto similar, se puede utilizar un producto simple con opciones personalizadas, pero sin la capacidad de realizar un seguimiento del inventario para cada variación.
 Los productos con varias opciones a veces se denominan productos compuestos.
 
-Aunque un producto configurable utiliza más SKU y puede tardar un poco más en configurarse, al final puede ahorrarle tiempo.
-Si planea ampliar su negocio, el tipo de producto configurable podría ser una mejor opción para un producto con múltiples opciones.
+Aunque un producto configurable utiliza más SKU y puede tardar un poco más en configurarse al principio, puede ahorrarle tiempo al final.
+Si planea hacer crecer su negocio, el tipo de producto configurable podría ser una mejor opción para un producto con varias opciones.
 
-Ejemplo: Camisetas disponibles en dos colores y tres tamaños.
+Ejemplo: camisetas disponibles en dos colores y tres tallas.
 Se deben crear seis variantes como productos individuales (cada una con su propio SKU).
-A continuación, todas las variantes se añaden a un producto configurable donde los clientes pueden elegir el tamaño y el color y luego agregarlo al carro de compras.
+A continuación, todas las variantes se añaden a un producto configurable en el que los clientes pueden elegir el tamaño y el color y, a continuación, agregarlo al carro de compras.
 
 _Atributos de término:_
 
@@ -510,7 +510,7 @@ _Atributos de término:_
 
 ### tasa de conversión
 
-_noun_
+_sustantivo_
 
 El porcentaje de visitantes que se convierten en compradores.
 
@@ -520,19 +520,19 @@ _Atributos de término:_
 
 ### escalado de nivel principal
 
-_noun_
+_sustantivo_
 
-El escalado del nivel principal consiste en tres nodos de servicio para almacenamiento de datos, caché y servicios como OpenSearch, Elasticsearch, MariaDB y Redis.
+La escala del nivel principal consta de tres nodos de servicio para el almacenamiento de datos, la caché y los servicios, como OpenSearch, Elasticsearch, MariaDB y Redis.
 
 _Atributos de término:_
 
-* _Campo: nube_
+* _Field: cloud_
 
 ### nota de crédito
 
-_noun_
+_sustantivo_
 
-Documento emitido por el comerciante a un cliente para que cancele un saldo pendiente debido a recargo, reembolso o devolución de bienes.
+Documento emitido por el comerciante a un cliente para eliminar un saldo pendiente debido a cargos excesivos, devoluciones o devolución de mercancías.
 La nota restaura los fondos en la cuenta del cliente.
 
 _Atributos de término:_
@@ -541,109 +541,109 @@ _Atributos de término:_
 
 ### comentario de nota de crédito
 
-_noun_
+_sustantivo_
 
-Detalles por los cuales se abonó al cliente un importe de nota de abono.
-
-_Atributos de término:_
-
-* _Campo: negocio, pedido_
-
-### artículo nota de abono
-
-_noun_
-
-Artículo facturado para el cual un comerciante crea una nota de crédito.
+Detalles de por qué se abonó un importe de nota de abono al cliente.
 
 _Atributos de término:_
 
 * _Campo: negocio, pedido_
 
-### venta cruzada
+### elemento de nota de crédito
+
+_sustantivo_
+
+Artículo facturado para el que un comerciante crea una nota de abono.
+
+_Atributos de término:_
+
+* _Campo: negocio, pedido_
+
+### realizar venta cruzada
 
 _sustantivo, adjetivo, verbo_
 
 Producto que aparece junto al carro de compras.
-Cuando un cliente navega a la página del carro de compras, estos productos se muestran como ventas cruzadas a los artículos que ya están en el carro de compras.
-Son similares a las compras por impulso, como revistas y dulces en las cajas registradoras de las tiendas de comestibles.
+Cuando un cliente navega a la página del carro de compras, estos productos se muestran como ventas cruzadas de los artículos que ya están en el carro de compras.
+Son similares a las compras por impulso, como las revistas y los dulces en las cajas registradoras de las tiendas de comestibles.
 
 _Atributos de término:_
 
 * _Campo: negocio, producto_
-* _Términos relacionados: impulsar ventas_
+* _Términos relacionados: upsell_
 
 ### CVM
 
-_noun_
+_sustantivo_
 
-Una abreviatura de &quot;Método de Verificación de Titulares de Tarjetas&quot;.
+Una abreviatura de &quot;Método de verificación del titular de la tarjeta&quot;.
 Una forma de verificar la identidad del cliente confirmando un código de seguridad de tarjeta de crédito de 3 o 4 dígitos con el procesador de pagos.
 
 _Atributos de término:_
 
 * _Campo: negocio, pedido_
-* _Sinónimos: Método de verificación de los titulares de tarjetas_
+* _Sinónimos: Método de verificación del titular de tarjeta_
 * _Términos relacionados: código de seguridad_
 
 ## D
 
-### esquema de base de datos
+### esquema base datos
 
-_noun_
+_sustantivo_
 
 Estructura de los datos de una base de datos.
 Define cómo se organizan los datos y cómo se rigen las relaciones de datos, incluidas todas las restricciones aplicadas a los datos.
-Un módulo puede contener fragmentos del esquema de base de datos si dicho módulo tiene datos que deben almacenarse en la base de datos.
+Un módulo puede contener fragmentos del esquema de la base de datos si ese módulo tiene datos que deben almacenarse en la base de datos.
 
 _Atributos de término:_
 
-* _Campo: programación_
+* _Field: scheduling_
 * _Sinónimos: esquema_
 
 ### inyección de dependencia
 
-_noun_
+_sustantivo_
 
-Un patrón de diseño de software que permite a una clase especificar sus dependencias sin tener que construirlas.
-Esta clase delega la responsabilidad de inyectar la dependencia a la clase que realiza la llamada.
+Patrón de diseño de software que permite a una clase especificar sus dependencias sin tener que construirlas.
+Esta clase delega la responsabilidad de insertar la dependencia en la clase que realiza la llamada.
 Se utiliza para facilitar las pruebas.
-Para definir dependencias para clases, edite el archivo de configuración di.xml .
+Para definir dependencias para clases, edite el archivo de configuración di.xml.
 
 _Atributos de término:_
 
-* _Campo: programación_
+* _Field: scheduling_
 
-### implementar clave
+### clave de implementación
 
-_noun_
+_sustantivo_
 
-Una clave de implementación es la clave pública SSH del proyecto y permite el acceso de solo lectura o lectura-escritura (si está habilitada) a un repositorio Git.
+Una clave de implementación es la clave pública SSH del proyecto y habilita el acceso de solo lectura o de lectura-escritura (si está habilitado) a un repositorio Git.
 
 Más información: [Conexiones seguras](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html)
 
 _Atributos de término:_
 
-* _Campo: nube_
+* _Field: cloud_
 
 ### inclusión doble
 
 _sustantivo, verbo_
 
-Un proceso de verificación de correo electrónico que requiere que los suscriptores potenciales completen un segundo paso que confirme su intención de suscribirse.
+Proceso de verificación por correo electrónico que requiere que los suscriptores potenciales completen un segundo paso que confirme su intención de suscribirse.
 
 _Atributos de término:_
 
-* _Campo: negocio_
+* _Field: business_
 
 ### producto descargable
 
-_noun_
+_sustantivo_
 
-Producto descargable digitalmente que consta de uno o más archivos descargados, como un eBook, música, vídeo, aplicación de software o una actualización.
+Producto descargable digitalmente que consta de uno o más archivos descargados, como un libro electrónico, música, vídeo, aplicación de software o una actualización.
 Puedes ofrecer un álbum a la venta y vender cada canción individualmente.
-Un producto descargable puede entregar una versión electrónica de su catálogo de productos.
+Un producto descargable puede entregar una versión electrónica del catálogo de productos.
 
-Los archivos descargables pueden residir en el servidor o proporcionarse como direcciones URL a cualquier otro servidor o red de entrega de contenido.
+Los archivos descargables pueden residir en el servidor o proporcionarse como direcciones URL a cualquier otro servidor o red de distribución de contenido.
 
 _Atributos de término:_
 
@@ -652,148 +652,148 @@ _Atributos de término:_
 
 ### contenido dinámico
 
-_noun_
+_sustantivo_
 
-Contenido generado por código en lugar de leerse desde una plantilla estática.
-Después de que el contenido dinámico se procese inicialmente cuando un usuario visita una página, a veces el contenido se puede almacenar en caché y reutilizar sin requerir otra llamada dinámica al volver a visitar.
+Contenido que se genera mediante código en lugar de leerse desde una plantilla estática.
+Después de que el contenido dinámico se represente inicialmente cuando un usuario visita una página, a veces el contenido se puede almacenar en caché y reutilizar sin requerir otra llamada dinámica tras una visita.
 
 _Atributos de término:_
 
-* _Campo: diseño_
+* _Field: design_
 * _Términos relacionados: php_
 
 ### URL de dynamic media
 
-_noun_
+_sustantivo_
 
-Dirección URL que el sistema genera dinámicamente para hacer referencia a una imagen u otro medio.
+Una dirección URL que el sistema genera dinámicamente para hacer referencia a una imagen u otro medio.
 La dirección se vincula directamente a los recursos almacenados en un servidor o en una red de entrega de contenido.
-Para usar una dirección URL estática, cambie la configuración.
-Sin embargo, si las direcciones URL de Dynamic Media se incluyen en el catálogo al deshabilitar la configuración, cada referencia del catálogo se convierte en un vínculo roto.
-Los vínculos se pueden restaurar habilitando de nuevo las direcciones URL de Dynamic Media.
+Para utilizar una dirección URL estática, cambie el valor de configuración.
+Sin embargo, si se incluyen direcciones URL de medios dinámicos en el catálogo al deshabilitar la configuración, cada referencia del catálogo se convierte en un vínculo roto.
+Los vínculos se pueden restaurar volviendo a habilitar las direcciones URL de medios dinámicos.
 El uso de direcciones URL de medios dinámicos puede afectar al rendimiento de la búsqueda en el catálogo.
 
 Formato de código: media url=&quot;path/to/image.jpg&quot;
 
 _Atributos de término:_
 
-* _Campo: programación_
-* _Términos relacionados: red de entrega de contenido, url_
+* _Field: scheduling_
+* _Términos relacionados: red de entrega de contenido, URL_
 
 ## E
 
 ### paquete ece-tools
 
-_noun_
+_sustantivo_
 
-Conjunto de secuencias de comandos y herramientas diseñadas para administrar e implementar la aplicación Commerce. Este paquete simplifica muchos Adobe Commerce en procesos de infraestructura en la nube, incluida la implementación en un entorno Docker, la administración de crons, la verificación de la configuración del proyecto y la aplicación de parches de Adobe.
+Un conjunto de scripts y herramientas diseñadas para administrar e implementar la aplicación de Commerce. Este paquete simplifica muchos procesos de infraestructura en la nube de Adobe Commerce, incluida la implementación en un entorno Docker, la administración de crons, la verificación de la configuración del proyecto y la aplicación de parches de Adobe.
 
 Más información: [paquete ece-tools](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/package-overview.html)
 
 _Atributos de término:_
 
-* _Campo: cli, cloud, implementar_
+* _Field: cli, cloud, deploy_
 
-### entity
+### entidad
 
-_noun_
+_sustantivo_
 
-Una unidad u objeto únicos en la programación.
+Una unidad u objeto único en programación.
 Contiene atributos o parámetros que se pueden modificar.
-Algunos ejemplos son el ensayo (donde una actualización puede cambiar entidades como reglas de precios, productos o categorías) y los registros de base de datos (donde los contratos de servicio incluyen estructuras de datos que se envían y reciben).
+Algunos ejemplos son el ensayo (en el que una actualización puede cambiar entidades como reglas de precios, productos o categorías) y los registros de base de datos (en el que los contratos de servicio incluyen estructuras de datos que se envían y reciben).
 
 _Atributos de término:_
 
-* _Campo: software de comercio_
-* _Términos relacionados: atributo, reglas del carro de compras, reglas de catálogo_
+* _Field: commerce software_
+* _Términos relacionados: atributo, reglas del carro de compras, reglas del catálogo_
 
 ### valor de atributo de entidad
 
-_noun_
+_sustantivo_
 
 Para entidades de base de datos, un modelo de datos que codifica entidades de forma eficaz.
-Almacena el id de entidad, el nombre de atributo y el valor como tres, lo que permite crear nuevos nombres de atributo de entidad en cualquier momento.
-En la codificación, el número de atributos que se puede utilizar para describir entidades puede escalar ampliamente, pero el número que se aplica a una entidad determinada se minimiza.
+Almacena el ID de entidad, el nombre de atributo y el valor como un triple, lo que permite crear nuevos nombres de atributo de entidad en cualquier momento.
+En la codificación, el número de atributos que se pueden utilizar para describir entidades se puede escalar ampliamente, pero el número que se aplica a una entidad determinada se minimiza.
 Este modelo de datos es flexible, pero puede ser lento.
 
-Más información: [EAV y extension_attributes](https://developer.adobe.com/commerce/php/development/components/attributes/)
+Más información: [Atributos de extensión de EAV y extension](https://developer.adobe.com/commerce/php/development/components/attributes/)
 
 _Atributos de término:_
 
-* _Campo: programación_
+* _Field: scheduling_
 * _Sinónimos: eav_
 
 ### contenido permanente
 
-_noun_
+_sustantivo_
 
 Contenido que tiene una larga vida útil o contenido que se puede reutilizar.
 
 _Atributos de término:_
 
-* _Campo: negocio_
+* _Field: business_
 
-### Extensión
+### extensión
 
-_noun_
+_sustantivo_
 
 Código que amplía o personaliza el comportamiento de Adobe Commerce.
-Opcionalmente, puede empaquetar y distribuir una extensión en el Commerce Marketplace u otro sistema de distribución de extensiones.
-Una extensión de comercio puede incluir módulos, temas y paquetes de idiomas.
+Si lo desea, puede empaquetar y distribuir una extensión en Commerce Marketplace u otro sistema de distribución de extensiones.
+Una extensión de Commerce puede incluir módulos, temáticas y paquetes de idiomas.
 
 _Atributos de término:_
 
-* _Campo: software de comercio_
+* _Field: commerce software_
 * _Términos relacionados: componente, módulo, paquete_
 
 ### atributo de extensión
 
-_noun_
+_sustantivo_
 
-Amplíe la funcionalidad y utilice a menudo tipos de datos más complejos que los atributos personalizados. Estos atributos no aparecen en la GUI.
+Amplíe la funcionalidad y, a menudo, utilice tipos de datos más complejos que los atributos personalizados. Estos atributos no aparecen en la GUI.
 
-Más información: [Añadir atributos de extensión a la entidad](https://developer.adobe.com/commerce/php/development/components/add-attributes/)
+Más información: [Adición de atributos de extensión a la entidad](https://developer.adobe.com/commerce/php/development/components/add-attributes/)
 
 _Atributos de término:_
 
-* _Campo: software de comercio_
+* _Field: commerce software_
 * _Términos relacionados: atributo, valor de atributo de entidad_
 
 ## F
 
-### carga a bordo
+### flete a bordo
 
-_noun_
+_sustantivo_
 
 En el transporte marítimo internacional, este término significa que la parte receptora es responsable de los gastos de envío.
-FOB puede basarse en el lugar de origen o de destino y ser designado como fletes recaudados o fletes prepagados.
+FOB puede basarse en el lugar de origen o de destino, y designarse como flete cobrado o flete pagado por adelantado.
 
 _Atributos de término:_
 
-* _Campo: negocio, pedido, precio_
+* _Campo: negocio, pedido, precios_
 * _Sinónimos: fob_
 
-### front-end
+### frontend
 
 _adjetivo_
 
-En una aplicación cliente-servidor, está el back-end y el front-end.
-El componente front-end, o cliente, es una interfaz que permite a los usuarios manipular o interactuar con el código backend subyacente.
+En una aplicación cliente-servidor, están el back-end y el front-end.
+El componente de front-end, o cliente, es una interfaz que permite a los usuarios manipular o interactuar con el código de back-end subyacente.
 El código back-end se ejecuta en un servidor.
 Un usuario no puede acceder directamente al código back-end.
-Un usuario interactúa con la tienda, que a su vez utiliza código que se ejecuta en el servidor de comercio.
+Un usuario interactúa con la tienda, que a su vez utiliza el código que se ejecuta en el servidor de Commerce.
 
-Nota: En el pasado, la tienda ha sido referida como el &quot;front-end&quot;, y el administrador ha sido referido como el &quot;backend&quot;. Este uso ya no es compatible.
+Nota: En el pasado, la tienda se conocía como &quot;front-end&quot; y el administrador como &quot;back-end&quot;. Ya no se admite este uso.
 
 _Atributos de término:_
 
 * _Campo: diseño, programación_
-* _Sinónimos: lado del cliente_
-* _Términos relacionados: back-end, tienda, front-end de caché_
+* _Sinónimos: cliente_
+* _Términos relacionados: backend, storefront, cache frontend_
 
-### propiedades frontend
+### propiedades de front-end
 
-_noun_
+_sustantivo_
 
 Propiedades que determinan la presentación y el comportamiento de un atributo desde el punto de vista del cliente en su tienda.
 
@@ -803,319 +803,319 @@ _Atributos de término:_
 
 ### cumplimiento
 
-_noun_
+_sustantivo_
 
-Proceso de administración de envíos de clientes.
+Proceso de gestión de envíos de clientes.
 
 _Atributos de término:_
 
-* _Campo: negocio_
+* _Field: business_
 
 ## G
 
 ### tarjeta regalo
 
-_noun_
+_sustantivo_
 
-Tarjeta de prepago o certificado de regalo que se puede usar para realizar compras en la tienda.
-A cada tarjeta regalo se le asigna un código único que se introduce durante el cierre de compra.
-El valor de la tarjeta regalo se refleja en el saldo de la cuenta de la tarjeta de regalo.
-Hay tres tipos de tarjetas de regalo:
+Tarjeta prepagada o certificado de regalo que se puede usar para hacer compras en la tienda.
+A cada tarjeta regalo se le asigna un código único que se introduce en el momento del pago y envío.
+El valor de la tarjeta regalo se refleja en el saldo de la cuenta de la tarjeta regalo.
+Existen tres tipos de tarjetas de regalo:
 
-* Las tarjetas de regalo &quot;físicas&quot; pueden ser producidas a partir de material plástico o de tarjeta, enviadas al cliente.
+* Las tarjetas de regalo &quot;físicas&quot; pueden ser producidas a partir de plástico o cartulina, enviadas al cliente.
 * Las tarjetas de regalo &quot;virtuales&quot; se envían por correo electrónico.
-* Las tarjetas de regalo &quot;combinadas&quot; son una combinación de las dos, enviadas al destinatario como una tarjeta física y también entregadas por correo electrónico.
-Las tarjetas de regalo se pueden configurar, incluidas las opciones para la idoneidad del producto y la selección de cantidades abiertas o fijas.
+* Las tarjetas regalo &quot;combinadas&quot; son una combinación de las dos, enviadas al destinatario como una tarjeta física y también entregadas por correo electrónico.
+Se pueden configurar las tarjetas de regalo, incluidas las opciones para la idoneidad del producto y la selección de importes abiertos o fijos.
 
-El administrador de la tienda también puede canjear una tarjeta de regalo a solicitud del cliente cuando el pedido se está creando en el servidor.
+El administrador de la tienda también puede canjear una tarjeta regalo a petición del cliente cuando el pedido se crea en el backend.
 
-Las tarjetas de regalo también ayudan a las promociones, ya que los administradores de las tiendas pueden crear manualmente las cuentas de tarjetas de regalo en el servidor y enviar los códigos de tarjetas de regalo al segmento de clientes específico.
-Las tarjetas de regalo pueden servir como un programa de fidelidad dirigido a los clientes más activos que realizan numerosas compras en la tienda web o una campaña promocional específica durante las vacaciones.
+Las tarjetas regalo también ayudan a las promociones, ya que los administradores de tiendas pueden crear manualmente las cuentas de tarjetas regalo en el backend y enviar los códigos de tarjetas regalo al segmento de clientes específico.
+Las tarjetas regalo pueden servir como un programa de fidelización dirigido a los clientes más activos que realizan numerosas compras en la tienda web o una campaña promocional específica durante las vacaciones.
 
 _Atributos de término:_
 
-* _Campo: software de comercio_
+* _Field: commerce software_
 * _Términos relacionados: tipos de producto_
 
 ### margen bruto
 
-_noun_
+_sustantivo_
 
 La diferencia entre el coste y el precio de un producto.
 
 _Atributos de término:_
 
-* _Campo: negocio_
+* _Field: business_
 
 ### producto agrupado
 
-_noun_
+_sustantivo_
 
-Tipo de producto con varios productos independientes similares agrupados en una sola página.
+Un tipo de producto con varios productos independientes similares agrupados en una sola página.
 Se puede ofrecer con variaciones de un solo producto o agrupándolas por temporada o tema para crear un conjunto coordinado.
-Cada producto se puede adquirir por separado o como parte del grupo.
+Cada producto se puede comprar por separado o como parte del grupo.
 
 Por ejemplo, para un cuchillo disponible en cuatro tamaños, los cuatro cuchillos se pueden mostrar dentro de una página de producto agrupada.
-Los clientes pueden seleccionar los tamaños que deseen y agregarlos al carro de compras desde esta página.
+Los clientes pueden seleccionar los tamaños que deseen y añadirlos al carro de compras desde esta página.
 
 _Atributos de término:_
 
 * _Campo: software de comercio, producto_
-* _Términos relacionados: producto simple, tipos de producto_
+* _Términos relacionados: productos simples, tipos de productos_
 
 ## H
 
-### handle
+### manipular
 
-_noun_
+_sustantivo_
 
-Generalmente, un control es una forma de hacer referencia a un objeto.
-En Adobe Commerce, los identificadores se utilizan en muchos lugares, normalmente para identificar una página.
-En el caso de los controles de página, el nombre del identificador se deriva de la dirección URL y se utiliza para localizar y cargar los archivos de diseño de la página a la que se hace referencia.
+Por lo general, un controlador es una forma de hacer referencia a un objeto.
+En Adobe Commerce, los controladores se utilizan en muchos lugares, generalmente para identificar una página.
+Para los identificadores de página, el nombre del identificador se deriva de la dirección URL y se utiliza para localizar y cargar los archivos de diseño de la página a la que se hace referencia.
 Por ejemplo, en el módulo Cliente, hay un archivo de diseño llamado &quot;view/frontend/layout/checkout_cart_index.xml&quot;.
-Aquí &quot;frontend&quot; es el nombre de área y &quot;checkout_cart_index&quot; es el nombre de controlador, ambos derivados de la dirección URL.
+Aquí &quot;frontend&quot; es el nombre del área y &quot;checkout_cart_index&quot; es el nombre del identificador, ambos derivados de la dirección URL.
 
 _Atributos de término:_
 
-* _Campo: programación_
+* _Field: scheduling_
 * _Sinónimos: identificador de página_
 
 ### escala horizontal
 
-_noun_
+_sustantivo_
 
-El escalado horizontal (también conocido como escalado) es el proceso de agregar nodos o equipos adicionales a su infraestructura para satisfacer la creciente demanda.
+El escalado horizontal (también conocido como escalado horizontal) es el proceso de añadir nodos o máquinas adicionales a su infraestructura para satisfacer la creciente demanda.
 
 _Atributos de término:_
 
-* _Campo: nube_
+* _Field: cloud_
 
 ## I
 
 ### interceptación
 
-_noun_
+_sustantivo_
 
-Proceso de inyección de nuevo código antes, después o alrededor de una función pública existente de una clase PHP.
+Proceso de insertar código nuevo antes, después o alrededor de una función pública existente de una clase PHP.
 
 Para interceptar una función, un complemento implementa el código adicional que se va a invocar.
-Los complementos están asociados a puntos de intercepción por el archivo de configuración de inyección de dependencias (di.xml).
-Si se definen varios complementos en la misma función, la configuración de inyección de dependencias define el orden en que se invocan los complementos, lo que permite utilizar varios complementos sin conflictos.
+Los complementos están asociados a puntos de interceptación mediante el archivo de configuración de inyección de dependencias (di.xml).
+Si se definen varios complementos en la misma función, la configuración de inyección de dependencia define el orden en que se invocan los complementos, lo que permite utilizar varios complementos sin conflictos.
 
 _Atributos de término:_
 
-* _Campo: programación_
+* _Field: scheduling_
 * _Términos relacionados: plug-in_
 
 ## L
 
 ### layout
 
-_noun_
+_sustantivo_
 
-En la construcción de una página de comercio, un diseño es una serie de bloques ensamblados en una jerarquía que representa la estructura de la página.
+En la construcción de una página de Commerce, un diseño es una serie de bloques reunidos en una jerarquía que representa la estructura de la página.
 
 Los archivos de diseño de página se centran en el nivel más alto de estructura de la página (encabezado, pie de página, área de contenido principal, barra lateral izquierda, etc.).
-A continuación, los archivos de diseño ensamblan el contenido (bloques) en estas áreas diferentes de la página.
+A continuación, los archivos de diseño combinan contenido (bloques) en estas diferentes áreas de la página.
 
 _Atributos de término:_
 
-* _Campo: software de diseño, comercio_
+* _Campo: diseño, software de comercio_
 * _Términos relacionados: instrucciones de diseño, bloque_
 
 ### instrucciones de diseño
 
-_noun_
+_sustantivo_
 
-Marcado en un archivo de diseño que describe los cambios que se aplicarán a un árbol de elementos estructurado de bloques, contenedores y componentes de la interfaz de usuario.
+Marcado en un archivo de diseño que describe los cambios que se aplicarán a un árbol de elementos estructurados de bloques, contenedores y componentes de la interfaz de usuario.
 Un solo archivo de diseño puede contener varias instrucciones de diseño.
 Las instrucciones de diseño se codifican en XML en los archivos de diseño.
 
 _Atributos de término:_
 
 * _Campo: diseño, programación_
-* _Términos relacionados: diseño, bloque, contenedor, componente ui_
+* _Términos relacionados: layout, block, container, ui component_
 
-### actualización de diseño
+### actualización del diseño
 
-_noun_
+_sustantivo_
 
-Se utiliza para fragmentos de código que se agregan para modificar el diseño XML o para importar las instrucciones de diseño de otro archivo.
-
-_Atributos de término:_
-
-* _Campo: software de diseño, comercio_
-
-### Propietario de la licencia
-
-_noun_
-
-El propietario de la licencia (también conocido como propietario de cuenta) es la persona designada en una organización empresarial que gestiona los pagos y otros problemas relacionados con el negocio para Adobe Commerce en la cuenta de infraestructura de nube.
-Esta persona sirve de punto de contacto con el Adobe.
-Una vez que una empresa compra una Adobe Commerce al suscribirse a la infraestructura de nube, el acceso inicial al proyecto y al código solo está disponible para la persona designada como Propietario de la licencia.
+Se utiliza para fragmentos de código que se agregan para modificar el diseño XML o para importar las instrucciones de diseño desde otro archivo.
 
 _Atributos de término:_
 
-* _Campo: negocio_
+* _Campo: diseño, software de comercio_
+
+### Propietario de licencia
+
+_sustantivo_
+
+El propietario de la licencia (también conocido como propietario de la cuenta) es la persona designada en una organización empresarial que administra pagos y otros problemas relacionados con la empresa para la cuenta de Adobe Commerce en la infraestructura de la nube.
+Esta persona sirve como punto de contacto con el Adobe.
+Después de que una empresa adquiera una suscripción a Adobe Commerce en la infraestructura en la nube, el acceso inicial al proyecto y al código solo estará disponible para la persona designada como Propietario de la licencia.
+
+_Atributos de término:_
+
+* _Field: business_
 
 ## M
 
 ### MAGEID
 
-_noun_
+_sustantivo_
 
-MAGEID suele ser el contacto de facturación de la cuenta de Adobe Commerce (y puede que no sea el propietario del proyecto de Adobe Commerce en el proyecto de infraestructura de nube).
-Para tener acceso a Adobe Commerce y Adobe Commerce en paquetes de infraestructura de nube, debe utilizar claves de acceso asociadas con un MAGEID al que se le haya concedido acceso a esos paquetes.
+MAGEID suele ser el contacto de facturación de la cuenta de Adobe Commerce (y puede no ser el propietario del proyecto del proyecto de Adobe Commerce en la nube).
+Para acceder a los derechos de Adobe Commerce y Adobe Commerce en paquetes de infraestructura en la nube, debe utilizar las claves de acceso asociadas con un MAGEID al que se haya concedido acceso a esos paquetes.
 
 Más información: [Obtener las claves de autenticación](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/authentication-keys.html)
 
 _Atributos de término:_
 
-* _Campo: software de comercio_
+* _Field: commerce software_
 
-### markup
+### marcado
 
-_noun_
+_sustantivo_
 
-En marketing y venta minorista, un porcentaje agregado al coste de un artículo para determinar el precio de venta minorista.
-[Configuración del marcado](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/settings/settings-advanced-custom-options.html), o markdown, de un producto a través de opciones personalizables del producto.
+En marketing y venta minorista, un porcentaje añadido al coste de un artículo para determinar el precio de venta minorista.
+[Configuración del marcado](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/settings/settings-advanced-custom-options.html), o markdown, de un producto a través de opciones personalizables de producto.
 
-En desarrollo, un idioma de equipo que controla el procesamiento, la presentación y el formato del texto.
-Además, las etiquetas de marcado son fragmentos de código que añaden funcionalidad o contenido a una página o bloque de CMS.
+En el desarrollo, lenguaje informático que controla el procesamiento, la presentación y el formato del texto.
+Además, las etiquetas de marcado son fragmentos de código que agregan funcionalidad o contenido a una página o bloque CMS.
 
 _Atributos de término:_
 
-* _Campo: negocio, programación_
+* _Campo: negocios, programación_
 * _Sinónimos: Markdown_
 
-### entorno maestro
+### entorno principal
 
-_noun_
+_sustantivo_
 
-En Adobe Commerce en la infraestructura de la nube, los proyectos Pro utilizan un entorno Platform as a Service (PaaS) activo denominado master que incluye una copia de la base de datos del entorno de producción y del servidor web.
+En Adobe Commerce, en la infraestructura en la nube, los proyectos Pro utilizan un entorno activo de Platform as a Service (PaaS) denominado principal que incluye una copia de la base de datos del entorno de producción y del servidor web.
 
 _Atributos de término:_
 
-* _Campo: nube_
+* _Field: cloud_
 
-### cuenta de comerciante
+### cuenta comercial
 
-_noun_
+_sustantivo_
 
 Cuenta con un banco o institución financiera que permite aceptar transacciones con tarjeta de crédito.
 
 _Atributos de término:_
 
-* _Campo: negocio_
+* _Field: business_
 
 ### MFTF
 
-_noun_
+_sustantivo_
 
-MFTF es un [Marco de pruebas funcionales](https://developer.adobe.com/commerce/testing/functional-testing-framework/).
-Proporciona un marco de pruebas para desarrolladores de comercio e ingenieros de software, como especialistas en control de calidad, desarrolladores de PHP e integradores de sistemas.
-Los desarrolladores y el control de calidad pueden escribir pruebas para intentar interacciones del usuario con aplicaciones web, comprobar la funcionalidad y automatizar las pruebas de regresión.
+MFTF es un [Marco de prueba funcional](https://developer.adobe.com/commerce/testing/functional-testing-framework/).
+Proporciona un marco de prueba para desarrolladores de Commerce e ingenieros de software, como especialistas en control de calidad, desarrolladores de PHP e integradores de sistemas.
+Los desarrolladores y el control de calidad pueden escribir pruebas para intentar las interacciones del usuario con aplicaciones web, verificar la funcionalidad y automatizar las pruebas de regresión.
 
 _Atributos de término:_
 
 * _Campo: software de comercio, programación_
-* _Términos relacionados: bloque cms, bloque estático, contenedor, diseño_
+* _Términos relacionados: cms block, static block, container, layout_
 
 ### módulo
 
-_noun_
+_sustantivo_
 
-Código que cambia o amplía las funciones proporcionadas por la aplicación Magento.
-Un módulo está contenido en una estructura de directorios que contiene archivos PHP y XML (configuración, bloques, controladores, ayudantes, modelos, etc.) relacionados con una funcionalidad específica para ofrecer una colección distinta de funciones de producto.
-El propósito de cada módulo es proporcionar características específicas del producto mediante la implementación de nuevas funciones o la ampliación de la funcionalidad de otros módulos.
+Código que cambia o amplía las características proporcionadas por la aplicación Magento.
+Un módulo está contenido en una estructura de directorio que contiene archivos PHP y XML (configuración, bloques, controladores, ayudantes, modelos, etc.) relacionados con una funcionalidad específica para ofrecer una colección distinta de características de producto.
+El propósito de cada módulo es proporcionar funciones de producto específicas mediante la implementación de nuevas funciones o la ampliación de las funciones de otros módulos.
 Cada módulo está diseñado para funcionar de forma independiente, por lo que la inclusión o exclusión de un módulo en particular no afecta a la funcionalidad de otros módulos.
 
-Un módulo también puede implementar widgets, que son elementos de página que los usuarios empresariales pueden personalizar en el Administrador.
+Un módulo también puede implementar widgets, que son elementos de página que los usuarios empresariales pueden personalizar en el Admin.
 
-Los módulos se pueden desactivar o eliminar sin romper la coherencia de la aplicación Magento.
+Los módulos se pueden deshabilitar o quitar sin romper la coherencia de la aplicación del Magento.
 Una excepción: Cuando el módulo depende de otros módulos, lo que requiere deshabilitar o quitar los módulos dependientes.
 
 _Atributos de término:_
 
-* _Campo: software de comercio_
+* _Field: commerce software_
 * _Términos relacionados: php, xml, block_
 
 ## O
 
 ### OMS
 
-_noun_
+_sustantivo_
 
-[OMS](https://omsdocs.magento.com) es la oferta del sistema de gestión de pedidos de Adobe.
+[OMS](https://omsdocs.magento.com) es la oferta de Order Management System de Adobe.
 
 OMS es una solución flexible y asequible para administrar, vender y cumplir el inventario de cualquier canal de ventas.
-OMS proporciona una experiencia perfecta para el cliente, lo que aumenta las ventas al tiempo que reduce los costos y acelera el tiempo de comercialización.
+OMS ofrece una experiencia de cliente perfecta, que aumenta las ventas al tiempo que reduce los costes y acelera el tiempo de comercialización.
 
-Las capacidades de OMS incluyen:
+Las funciones de OMS incluyen:
 
-* Visibilidad y administración globales de todo el inventario
-* Capacidad de envío desde y hacia cualquier lugar
-* Servicio al cliente más fácil y con mayor capacidad de respuesta
+* Visibilidad global y administración de todo el inventario
+* Capacidad de realizar envíos desde y hacia cualquier lugar
+* Servicio al cliente más fácil y interactivo
 * Mejor experiencia y lealtad del cliente
 
-Más información: [Introducción a OMS](https://omsdocs.magento.com/en/getting-started/), [Sitio de OMS Docs](https://omsdocs.magento.com/en/)
+Más información: [Introducción a OMS](https://omsdocs.magento.com/en/getting-started/), [Sitio de documentos de OMS](https://omsdocs.magento.com/en/)
 
 _Atributos de término:_
 
 * _Campo: función, software de comercio, gestión de pedidos_
 * _Sinónimos: gestión de pedidos, MOM, sistema de gestión de pedidos, Magento Order Management_
-* _Términos relacionados: gestión de pedidos_
+* _Términos relacionados: order management_
 
-### encubrimiento de origen
+### encubrimiento origen
 
-_noun_
+_sustantivo_
 
-La ocultación del origen es una función de seguridad que permite a Adobe Commerce en la infraestructura de la nube bloquear cualquier tráfico que no sea FAdministración para evitar ataques DDoS, yendo a la infraestructura de la nube (origen).
+El encubrimiento de origen es una función de seguridad que permite a Adobe Commerce en la infraestructura de la nube bloquear cualquier tráfico que no sea de Fastly para evitar ataques DDoS, dirigiéndose a la infraestructura de la nube (origen).
 
-Más información: [Trazado de origen rápido](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/fastly-origin-cloaking-enablement-faq.html)
+Más información: [Revestimiento de origen rápido](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/fastly-origin-cloaking-enablement-faq.html)
 
 _Atributos de término:_
 
-* _Campo: seguridad_
-* _Términos relacionados: servidor de seguridad de aplicaciones web_
+* _Field: security_
+* _Términos relacionados: web application firewall_
 
 ## P
 
 ### Page Builder
 
-_noun_
+_sustantivo_
 
-Page Builder es una extensión de comercio para crear páginas con contenido enriquecido arrastrando y soltando controles pregenerados para definir diseños personalizados.
+Page Builder es una extensión de Commerce para crear páginas con contenido enriquecido arrastrando y soltando controles creados previamente para definir diseños personalizados.
 Estos controles también se conocen como &quot;tipos de contenido&quot;.
-Los comerciantes pueden diseñar diseños y páginas sin tener que codificar la experiencia.
-Los desarrolladores pueden ampliar el Page Builder con soporte de extensión.
+Los comerciantes pueden diseñar diseños y páginas sin experiencia de codificación.
+Se proporciona compatibilidad con extensiones para que los desarrolladores amplíen Page Builder.
 
-Más información: [Guía del usuario del Page Builder](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/introduction.html), [Documentos de desarrollo del creador de páginas](https://developer.adobe.com/commerce/frontend-core/page-builder/)
+Más información: [Guía del usuario de Page Builder](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/introduction.html), [DevDocs de Page Builder](https://developer.adobe.com/commerce/frontend-core/page-builder/)
 
 _Atributos de término:_
 
 * _Campo: software de comercio, diseño_
-* _Sinónimos: Administrador, panel de administración, back-end, interfaz de administración, interfaz de administración_
+* _Sinónimos: Administrador, Panel de administración, servidor, Interfaz de administración, IU de administración_
 * _Términos relacionados: admin_
 
-### puerta de enlace de pago
+### pasarela de pago
 
-_noun_
+_sustantivo_
 
-Una puerta de enlace de pago es un servicio de terceros que procesa sin problemas las transacciones con tarjetas de crédito sin que el cliente abandone el sitio del comerciante.
+Una pasarela de pago es un servicio de terceros que procesa sin problemas las transacciones con tarjetas de crédito sin que el cliente abandone el sitio del comerciante.
 
 _Atributos de término:_
 
-* _Campo: negocio, pedido, programación_
+* _Campo: negocios, pedidos, programación_
 
 ## R
 
 ### producto relacionado
 
-_noun_
+_sustantivo_
 
 Una selección de productos que se presenta como un incentivo para comprar artículos adicionales.
-Por ejemplo, si el cliente está viendo la página de producto de una cámara, los productos relacionados podrían incluir otras cámaras comparables, un caso de cámara y un trípode.
+Por ejemplo, si el cliente está viendo la página de producto de una cámara, los productos relacionados podrían incluir otras cámaras comparables, una carcasa de cámara y un trípode.
 
 _Atributos de término:_
 
@@ -1125,82 +1125,82 @@ _Atributos de término:_
 
 ### reglas de ventas
 
-_noun_
+_sustantivo_
 
-Incluye reglas de catálogo y carro de compras, que se utilizan para cotizar un producto para promociones.
+Incluye las reglas del carro de compras y del catálogo, que se utilizan para asignar un precio a un producto para las promociones.
 
 _Atributos de término:_
 
 * _Campo: software de comercio, producto_
-* _Términos relacionados: reglas del carro de compras, reglas de catálogo_
+* _Términos relacionados: reglas del carro de compras, reglas del catálogo_
 
-### scope
+### ámbito
 
-_noun_
+_sustantivo_
 
-En Adobe Commerce, scope describe el alcance de la jerarquía de almacenamiento a la que puede afectar una configuración.
+En Adobe Commerce, el ámbito describe el alcance de la jerarquía de la tienda que puede afectar a una configuración.
 El ámbito puede aplicarse a lo siguiente:
 
 * Global: todos los sitios web, tiendas y vistas de tiendas
-* Sitio web: el sitio web seleccionado y todas las tiendas y vistas de tienda que hay debajo de él.
-* Tienda: la tienda seleccionada y todas las vistas de la tienda debajo de ella.
+* Sitio web: el sitio web seleccionado y todas las tiendas y vistas de la tienda debajo de él
+* Almacenar: la tienda seleccionada y todas las vistas de la tienda debajo de ella.
 * Vista de tienda: la vista de tienda seleccionada.
 
-Dentro de la jerarquía, la configuración aplicada en un nivel inferior puede anular algunos ajustes de nivel superior.
+Dentro de la jerarquía, la configuración aplicada en un nivel inferior puede anular algunas configuraciones de nivel superior.
 
 _Atributos de término:_
 
-* _Campo: software de comercio_
+* _Field: commerce software_
 
 ### contrato de servicio
 
-_noun_
+_sustantivo_
 
-Conjunto de interfaces PHP definidas para un módulo.
-Un contrato de servicio incluye interfaces de datos, que conservan la integridad de los datos, e interfaces de servicio, que ocultan los detalles de la lógica empresarial de los solicitantes de servicios, como controladores, servicios web y otros módulos.
+Un conjunto de interfaces PHP definidas para un módulo.
+Un contrato de servicio incluye interfaces de datos, que conservan la integridad de los datos, e interfaces de servicio, que ocultan detalles de lógica empresarial a los solicitantes de servicio, como controladores, servicios web y otros módulos.
 Las API web se pueden enlazar a contratos de servicio a través de archivos de configuración.
 
 _Atributos de término:_
 
-* _Campo: programación_
-* _Términos relacionados: php, api web_
+* _Field: scheduling_
+* _Términos relacionados: php, web api_
 
-### liquidación
+### asentamiento
 
-_noun_
+_sustantivo_
 
-La liquidación se produce cuando el banco adquirente y el emisor intercambian fondos y el producto se depositan en la cuenta del comerciante.
+La liquidación tiene lugar cuando el banco adquirente y el emisor intercambian fondos y el producto se deposita en la cuenta de comerciante.
 
 _Atributos de término:_
 
-* _Campo: negocio_
+* _Field: business_
 
 ### Catálogo compartido
 
-_noun_
+_sustantivo_
 
-Característica que permite a los comerciantes crear un catálogo que pueda servir como catálogo completo o subconjunto de él y luego asignar precios personalizados para uno o más productos.
-Los comerciantes pueden asignar este catálogo a una o más empresas.
+Característica que permite a los comerciantes crear un catálogo que puede servir como su catálogo completo o como un subconjunto de él y, a continuación, asignar precios personalizados para uno o más productos.
+Los comerciantes pueden asignar este catálogo a una o varias empresas.
 
-Por ejemplo, un comerciante B2B tiene tres clientes que han negociado tarifas específicas para el sitio de distribución electrónica del comerciante.
-Con la función de catálogo compartido, el comerciante tiene:
+Por ejemplo, un comerciante B2B tiene tres clientes que han negociado tarifas específicas para el sitio de distribución de productos electrónicos del comerciante.
+Al utilizar la función de catálogo compartido, el comerciante tiene:
 
 * Un catálogo principal
-* Un catálogo cliente 1 (quizás son solo tres SKU con grandes descuentos en ellos del catálogo principal)
-* Catálogo de Customer 2 (podría ser todo el catálogo con un 10% de descuento)
-* Catálogo cliente 3 (unas decenas de productos con descuentos en el catálogo principal que van del 5% al 60%).
+* Un catálogo de cliente 1 (tal vez solo sean tres SKU con grandes descuentos en ellas desde el catálogo principal)
+* Catálogo del cliente 2 (podría ser todo el catálogo con un 10 % de descuento)
+* Catálogo del cliente 3 (algunas docenas de productos con descuentos del catálogo principal que van del 5% al 60%).
 
 _Atributos de término:_
 
 * _Campo: software de comercio, producto_
-* _Términos relacionados: catálogo, b2b_
+* _Términos relacionados: catalog, b2b_
 
 ### envío
 
-_noun_
+_sustantivo_
 
-Un envío contiene los productos que se van a entregar y genera un registro de los productos en un pedido que se han enviado.
-Más de un envío se puede asociar a un único pedido.
+Un envío contiene los productos que se van a enviar y genera un registro de los productos en un pedido que se han enviado.
+Se puede asociar más de un envío con un único pedido.
 
 _Atributos de término:_
 
@@ -1208,19 +1208,19 @@ _Atributos de término:_
 
 ### documento de envío
 
-_noun_
+_sustantivo_
 
-Documento que acompaña a un envío. El documento enumera los productos y sus cantidades en el paquete de entrega.
+Documento que acompaña a un envío. El documento enumera los productos y sus cantidades en el paquete de envío.
 
 _Atributos de término:_
 
 * _Campo: negocio, pedido_
 
-### transportista marítimo
+### transportista
 
-_noun_
+_sustantivo_
 
-Empresa que transporta paquetes. Los portadores comunes incluyen UPS, FedEx, DHL y USPS.
+Una empresa que transporta paquetes. Los operadores comunes incluyen UPS, FedEx, DHL y USPS.
 
 _Atributos de término:_
 
@@ -1228,24 +1228,24 @@ _Atributos de término:_
 
 ### carro de compras
 
-_noun_
+_sustantivo_
 
-Conjunto de productos que un cliente ha seleccionado adquirir, pero que aún no ha comprado.
-También se refiere a un área de un sitio de comercio electrónico donde se puede encontrar estos productos para revisar y cerrar la compra.
+El conjunto de productos que un cliente ha seleccionado comprar, pero aún no ha comprado.
+También hace referencia a un área de un sitio de comercio electrónico en la que se pueden encontrar estos productos para revisarlos y cerrarlos.
 
 _Atributos de término:_
 
-* _Campo: negocio, diseño, producto, programación_
-* _Sinónimos: carro de compras, cesta_
+* _Campo: negocios, diseño, producto, programación_
+* _Sinónimos: carrito, cesta_
 * _Términos relacionados: reglas del carro de compras_
 
 ### producto simple
 
-_noun_
+_sustantivo_
 
-El tipo de producto más básico, un elemento físico con un único SKU.
-Los productos simples tienen diversos controles de precios y de entrada que permiten vender variaciones del producto.
-Los productos simples se pueden usar en asociación con productos agrupados, agrupados y configurables.
+El tipo de producto más básico, un artículo físico con un solo SKU.
+Los productos simples tienen varios controles de precios y de entrada que permiten vender variaciones del producto.
+Se pueden utilizar productos simples en asociación con productos agrupados, agrupados y configurables.
 Un producto simple con opciones personalizadas a veces se denomina producto compuesto.
 
 _Atributos de término:_
@@ -1255,68 +1255,68 @@ _Atributos de término:_
 
 ### SKU
 
-_noun_
+_sustantivo_
 
-Abreviación de la unidad de mantenimiento de existencias.
-Número o código asignado a un producto para identificar el producto, las opciones, el precio y el fabricante.
-
-_Atributos de término:_
-
-* _Campo: negocio, precio, producto, programación_
-* _Términos relacionados: catálogo compartido_
-
-### página de inicio
-
-_noun_
-
-una página promocional con un producto o anuncio; normalmente se muestra antes de la página principal.
+Abreviatura de la unidad de stock.
+Un número o código asignado a un producto para identificar el producto, las opciones, el precio y el fabricante.
 
 _Atributos de término:_
 
-* _Campo: diseño_
+* _Campo: negocios, precios, producto, programación_
+* _Términos relacionados: shared catalog_
+
+### página de bienvenida
+
+_sustantivo_
+
+Página promocional con un producto o anuncio; normalmente se muestra antes de la página principal.
+
+_Atributos de término:_
+
+* _Field: design_
 
 ### bloque estático
 
-_noun_
+_sustantivo_
 
-Unidad modular de contenido que un usuario puede colocar en el CMS en una página para mostrar texto e imágenes, o ejecutar fragmentos de código.
+Una unidad modular de contenido que un usuario puede colocar en el CMS de una página para mostrar texto e imágenes o ejecutar fragmentos de código.
 Los bloques estáticos contienen contenido editable y pueden actuar como páginas de aterrizaje para categorías de productos.
-Los widgets se pueden agregar a bloques estáticos para proporcionar funcionalidad adicional.
+Los widgets se pueden añadir a bloques estáticos para proporcionar funciones adicionales.
 
 _Atributos de término:_
 
-* _Campo: software de comercio_
-* _Términos relacionados: bloque cms, bloque_
+* _Field: commerce software_
+* _Términos relacionados: cms block, block_
 
 ### contenido estático
 
-_noun_
+_sustantivo_
 
-Contenido generado por el usuario (no generado por código) que no cambia con frecuencia.
+Contenido generado por el usuario (no generado por el código) que no cambia con frecuencia.
 
 _Atributos de término:_
 
-* _Campo: diseño_
-* _Términos relacionados: contenido dinámico_
+* _Field: design_
+* _Términos relacionados: dynamic content_
 
 ### archivos estáticos
 
-_noun_
+_sustantivo_
 
-La colección de recursos, como CSS, fuentes, imágenes y JavaScript que utiliza un tema.
+Colección de recursos, como CSS, fuentes, imágenes y JavaScript, que utiliza una temática.
 
 _Atributos de término:_
 
-* _Campo: software de comercio_
+* _Field: commerce software_
 
 ### almacenar
 
-_noun_
+_sustantivo_
 
-El nivel de ámbito de comercio de &quot;tienda&quot; es el segundo nivel de la jerarquía de su sitio web, que es el siguiente: sitio web > tienda > vista de tienda.
-Las tiendas se pueden organizar en una o varias. Cada tienda, potencialmente, tiene su propia categoría raíz y todos comparten catálogo y datos de clientes.
+El nivel de ámbito comercial de &quot;tienda&quot; es el segundo nivel de la jerarquía del sitio web, que es el siguiente: sitio web > tienda > vista de tienda.
+Las tiendas se pueden organizar en una o varias. Cada tienda, potencialmente, tiene su propia categoría raíz y todos comparten datos de catálogo y de cliente.
 
-Cada tienda puede tener varias vistas de la tienda, que normalmente se utilizan para presentar la tienda en una configuración regional y un idioma diferentes.
+Cada tienda puede tener varias vistas de la tienda, que normalmente se usan para presentar la tienda en una configuración regional y en un idioma diferentes.
 
 _Atributos de término:_
 
@@ -1325,22 +1325,22 @@ _Atributos de término:_
 
 ### vista de tienda
 
-_noun_
+_sustantivo_
 
-El nivel de ámbito de comercio de la &quot;vista de tienda&quot; se refiere al tercer nivel de la jerarquía de sitios web, tiendas y vistas de tiendas.
-Las vistas de la tienda suelen presentar la tienda en una configuración regional y un idioma diferentes.
-Para cambiar las vistas de la tienda, utilice el selector de tiendas del encabezado.
+El nivel de ámbito comercial de &quot;vista de tienda&quot; se refiere al tercer nivel en la jerarquía de sitios web, tiendas y vistas de tiendas.
+Las vistas de tienda suelen presentar la tienda en una configuración regional y en un idioma diferentes.
+Para cambiar las vistas de la tienda, use el selector de tiendas del encabezado.
 
 _Atributos de término:_
 
 * _Campo: software de comercio, producto_
 * _Términos relacionados: tienda, sitio web_
 
-### storefront
+### escaparate
 
-_noun_
+_sustantivo_
 
-La tienda en línea que los clientes experimentan cuando visitan su sitio de comercio.
+Tienda en línea que los clientes ven cuando visitan el sitio de comercio.
 
 _Atributos de término:_
 
@@ -1350,77 +1350,77 @@ _Atributos de término:_
 
 ### regla fiscal
 
-_noun_
+_sustantivo_
 
-Combinación de una clase de impuesto del producto, clase de impuesto del cliente y tasa de impuesto. Esta regla define qué cálculo de impuestos se aplica.
+Una combinación de una clase de impuestos de producto, una clase de impuestos de cliente y un tipo impositivo. Esta regla define qué cálculo de impuestos se aplica.
 
 _Atributos de término:_
 
-* _Campo: negocio_
+* _Field: business_
 
 ### plantilla
 
-_noun_
+_sustantivo_
 
-Abreviatura para plantilla de HTML o plantilla PHTML.
-Un archivo PHTML contiene una mezcla de código HTML y código PHP para insertar contenido dinámico en el HTML.
-La mayoría de los bloques tienen al menos un archivo PHTML (plantilla) que contiene el HTML estático generado por el bloque .
-En las plantillas de administración, correo electrónico y newsletter, se combinan texto, imágenes y variables con el marcado del HTML para producir contenido personalizado que envía el sistema.
+Abreviatura de HTML template o PHTML template.
+Un archivo PHTML contiene una mezcla de marcado de HTML y código PHP para insertar contenido dinámico en el HTML.
+La mayoría de los bloques tienen al menos un archivo PHTML (template) que contiene el HTML estático generado por el bloque.
+En el Administrador, las plantillas de correo electrónico y de newsletter combinan texto, imágenes y variables con marcado de HTML para producir contenido personalizado que envía el sistema.
 
 _Atributos de término:_
 
-* _Campo: software de comercio_
+* _Field: commerce software_
 * _Términos relacionados: block_
 
 ### tema
 
-_noun_
+_sustantivo_
 
-Contiene gráficos e información de aspecto.
+Contiene gráficos e información de apariencia.
 Personaliza el aspecto de la tienda.
-Adobe Commerce puede enviar temas en paquetes (Compositor).
-Sin embargo, los temas pueden colocarse en la aplicación/diseño, que no se envía en un paquete.
-Los paquetes son la unidad de descarga para Composer y, a través de Commerce Marketplace, los usuarios de comercio pueden descargar CE o EE como una serie de paquetes, donde los paquetes contienen módulos, temas o paquetes de idiomas.
+Adobe Commerce puede enviar temáticas en paquetes (Composer).
+Pero los temas se pueden colocar en la aplicación / diseño, que no se envía en un paquete.
+Los paquetes son la unidad de descarga de Composer y, a través del Commerce Marketplace, los usuarios de Commerce pueden descargar CE o EE como una serie de paquetes, donde los paquetes contienen módulos, temáticas o paquetes de idiomas.
 
 _Atributos de término:_
 
-* _Campo: software de comercio_
+* _Field: commerce software_
 
 ## U
 
-### Componente de la interfaz de usuario
+### Componente de IU
 
-_noun_
+_sustantivo_
 
-Etiqueta diseñada para el software de Adobe Commerce que permite un procesamiento de interfaz de usuario (IU) más sencillo y flexible.
-Los objetivos del sistema de componentes de la interfaz de usuario incluyen los siguientes:
+Una etiqueta diseñada para el software de Adobe Commerce con el fin de permitir un procesamiento más sencillo y flexible de la interfaz de usuario (IU).
+Los objetivos del sistema de componentes de la IU incluyen los siguientes:
 
-* Simplificación de los archivos XML del controlador de diseño
-* Mover los elementos de la interfaz de usuario del administrador de HTML+JavaScript a un sistema de widgets personalizado &quot;JavaScript puro&quot;
-* Habilitar la creación de componentes de interfaz de usuario más complejos a partir de componentes más pequeños
-* Procesamiento previo de datos para componentes de interfaz de usuario como JSON, enlace estrecho a objetos de datos del servidor
-* Uso de AJAX para actualizar datos de componentes
-* Presentación de un nuevo DSL para crear los elementos anteriores
+* Simplificar los archivos XML de control de diseño
+* Traslado de elementos de la interfaz de usuario del administrador de HTML+JavaScript a un sistema de widgets personalizados de &quot;JavaScript puro&quot;
+* Habilitar la creación de componentes de IU más complejos a partir de componentes más pequeños
+* Procesamiento previo de datos para componentes de interfaz de usuario como JSON, estrechamente vinculados a objetos de datos back-end
+* AJAX Uso de datos de componentes para actualizar la
+* Introducción de una nueva DSL para crear los elementos anteriores
 
-Más información: [Guía de componentes de interfaz de usuario](https://developer.adobe.com/commerce/frontend-core/ui-components/), [Page Builder](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/introduction.html)
+Más información: [Guía de componentes de IU](https://developer.adobe.com/commerce/frontend-core/ui-components/), [Page Builder](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/introduction.html)
 
 _Atributos de término:_
 
-* _Campo: programación_
-* _Términos relacionados: JavaScript, diseño, componente, creador de páginas_
+* _Field: scheduling_
+* _Términos relacionados: JavaScript, diseño, componente, generador de páginas_
 
-### HACIA ARRIBA
+### ASCENDENTE
 
-_noun_
+_sustantivo_
 
-[PWA Studio](https://github.com/magento/pwa-studio) uses [HACIA ARRIBA](https://developer.adobe.com/commerce/pwa-studio/guides/packages/upward/) en desarrollo.
-UPWARD es un acrónimo para la definición de respuesta progresiva de aplicaciones web unificadas.
+[PWA Studio](https://github.com/magento/pwa-studio) utiliza [ASCENDENTE](https://developer.adobe.com/commerce/pwa-studio/guides/packages/upward/) en desarrollo.
+UPWARD es el acrónimo de Unified Progressive Web App Response Definition (Definición de respuesta de aplicación web progresiva unificada).
 Un archivo de definición UPWARD describe cómo un servidor web ofrece y admite un Progressive Web Application.
 
 Los archivos de definición UPWARD proporcionan detalles sobre el comportamiento del servidor utilizando un lenguaje declarativo independiente de la plataforma.
-Esto permite que un Progressive Web Application se ejecute sobre un servidor compatible con UPWARD en cualquier idioma en cualquier pila tecnológica porque la aplicación solo está preocupada por el comportamiento del extremo HTTP del servidor UPWARD.
+Esto permite que un Progressive Web Application se ejecute sobre un servidor compatible con UPWARD en cualquier idioma de cualquier pila de tecnología, ya que la aplicación solo está preocupada por el comportamiento del extremo HTTP desde el servidor UPWARD.
 
-Un servidor UPWARD utiliza un archivo de definición para determinar el proceso o servicio apropiado para una solicitud desde un shell de aplicación.
+Un servidor UPWARD utiliza un archivo de definición para determinar el proceso o servicio apropiado para una solicitud de un shell de aplicación.
 Describe cómo el servidor debe gestionar una solicitud y crear la respuesta para ella.
 
 Un proyecto de PWA puede incluir un archivo de definición UPWARD para especificar sus dependencias de servicio.
@@ -1428,18 +1428,18 @@ Un proyecto de PWA puede incluir un archivo de definición UPWARD para especific
 _Atributos de término:_
 
 * _Campo: diseño, software de comercio, programación_
-* _Sinónimos: PWA Studio, definición de respuesta de aplicación web progresiva unificada_
+* _Sinónimos: PWA Studio, Definición de respuesta de aplicación web progresiva unificada_
 * _Términos relacionados: pwa_
 
 ## V
 
 ### Extensión agrupada de proveedor
 
-_noun_
+_sustantivo_
 
-El código producido por el proveedor que amplía o personaliza el comportamiento del comercio y funciona como una extensión de terceros se considera una extensión agrupada de proveedores (VBE).
-Los VBE se prueban exhaustivamente y se incluyen en cada versión compatible de Magento Open Source y Adobe Commerce.
-Un VBE puede incluir módulos, temas y paquetes de idiomas.
+El código producido por el proveedor que amplía o personaliza el comportamiento de Commerce y funciona como una extensión de terceros se considera una extensión agrupada por proveedores (VBE).
+Los VBE se prueban exhaustivamente y se incluyen con cada versión compatible de Magento Open Source y Adobe Commerce.
+Un VBE puede incluir módulos, temáticas y paquetes de idiomas.
 
 Obtenga más información en la [Tema de extensión agrupada de proveedor](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/modules/upgrade.html).
 
@@ -1447,28 +1447,28 @@ _Atributos de término:_
 
 * _Campo: extensión de comercio, extensión agrupada de proveedor, extensión, VBE_
 * _Sinónimos: extensión, VBE_
-* _Términos relacionados: extensión, extensión agrupada_
+* _Términos relacionados: extension, bundled extension_
 
 ### escala vertical
 
-_noun_
+_sustantivo_
 
-El escalado vertical (escalado) se refiere al aumento de la potencia de procesamiento de un solo servidor o clúster mediante la adición de E/S de disco o red, CPUs o RAM.
+El escalado vertical (escalado) se refiere al aumento de la potencia de procesamiento de un solo servidor o clúster mediante la adición de E/S de disco o red, CPU o RAM.
 
 _Atributos de término:_
 
-* _Campo: entorno_
+* _Field: environment_
 
 ### producto virtual
 
-_noun_
+_sustantivo_
 
-Representa un producto no físico que se puede vender, como un abono, un servicio, una garantía o una suscripción.
-Los productos virtuales se pueden vender individualmente o incluir como parte de los siguientes tipos de productos: producto agrupado y producto agrupado.
+Representa un producto no físico que se puede vender, como una suscripción, un servicio, una garantía o una suscripción.
+Los productos virtuales se pueden vender por separado o incluir como parte de los siguientes tipos de productos: productos agrupados y paquetes de productos.
 No requiere envío ni inventario.
 
-El proceso de crear un producto virtual y un producto simple es casi el mismo.
-Sin embargo, como no se envía un producto virtual, no hay ningún campo de peso ni opción para incluir una tarjeta de regalo.
+El proceso de creación de un producto virtual y de un producto simple es casi el mismo.
+Sin embargo, como un producto virtual no se envía, no hay ningún campo de Peso ni opción para incluir una tarjeta regalo.
 
 _Atributos de término:_
 
@@ -1477,41 +1477,41 @@ _Atributos de término:_
 
 ### tipo virtual
 
-_noun_
+_sustantivo_
 
 Los tipos virtuales son una forma de insertar diferentes dependencias en clases PHP existentes sin afectar a otras clases y sin tener que crear un archivo de clase.
-Solo se puede hacer referencia a los tipos virtuales mediante anulaciones de argumentos en una `<type>` dentro de archivos di.xml, nunca en código fuente.
-No se pueden ampliar y no pueden ser referencias como dependencias en un constructor de clases.
+Solo se puede hacer referencia a los tipos virtuales mediante las invalidaciones de argumentos en una `<type>` dentro de los archivos di.xml, nunca en el código fuente.
+No se pueden extender y no pueden ser referencias como dependencias en un constructor de clases.
 
 _Atributos de término:_
 
-* _Campo: programación_
+* _Field: scheduling_
 * _Términos relacionados: php_
 
 ## W
 
 ### sitio web
 
-_noun_
+_sustantivo_
 
-En el software Adobe Commerce, el nivel más alto de una jerarquía de sitios web, encima de la vista de tiendas y tiendas.
+En el software de Adobe Commerce, el nivel más alto de una jerarquía de sitios web, por encima de la vista de tienda y tienda.
 Puede tener varios sitios web, y cada sitio web puede tener un nombre de dominio diferente.
 Los sitios web se pueden configurar para compartir datos de clientes o para no compartir datos.
 
 _Atributos de término:_
 
 * _Campo: software de comercio, diseño, producto_
-* _Términos relacionados: almacenar, vista de tienda_
+* _Términos relacionados: store, store view_
 
 ### widget
 
-_noun_
+_sustantivo_
 
-A [widget](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/widgets/widgets.html) es un fragmento de código preparado que se puede utilizar para colocar bloques, vínculos y contenido dinámico en ubicaciones específicas de las páginas de tienda.
-Puede usar utilidades para crear páginas de aterrizaje para campañas de marketing y mostrar contenido promocional en ubicaciones específicas de toda la tienda.
-Las utilidades también se pueden utilizar para agregar elementos interactivos y bloques de acción para sistemas de revisión externos, chats de vídeo, formularios de votación y suscripción, o para proporcionar elementos de navegación para nubes de etiquetas y controles deslizantes de imágenes.
+A [widget](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/widgets/widgets.html) es un fragmento de código preparado que se puede utilizar para colocar bloques, vínculos y contenido dinámico en ubicaciones específicas de páginas de tiendas.
+Puede utilizar widgets para crear páginas de aterrizaje para campañas de marketing y mostrar contenido promocional en ubicaciones específicas de la tienda.
+Los widgets también se pueden utilizar para agregar elementos interactivos y bloques de acción para sistemas de revisión externos, chats de vídeo, votaciones y formularios de suscripción, o para proporcionar elementos de navegación para nubes de etiquetas y reguladores de imagen.
 
 _Atributos de término:_
 
-* _Campo: negocio, software de comercio, diseño_
+* _Campo: negocios, software de comercio, diseño_
 * _Términos relacionados: block_

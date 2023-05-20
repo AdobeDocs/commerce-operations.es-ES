@@ -9,13 +9,13 @@ ht-degree: 14%
 
 ## 2.4.6
 
-La compatibilidad con la línea de versión 2.4.6 finaliza el 14 de marzo de 2026.
+La compatibilidad con la línea de la versión 2.4.6 finaliza el 14 de marzo de 2026.
 
 <table>
   <thead>
     <tr>
       <th>Versión del parche</th>
-      <th>Fecha de la versión</th>
+      <th>Fecha de lanzamiento</th>
     </tr>
   </thead>
   <tbody>
@@ -36,19 +36,19 @@ La compatibilidad con la línea de versión 2.4.5 finaliza el 9 de agosto de 202
   <thead>
     <tr>
       <th>Versión del parche</th>
-      <th>Fecha de la versión</th>
+      <th>Fecha de lanzamiento</th>
     </tr>
   </thead>
   <tbody>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-5-p2.html">2.4.5-p2</a>
+          <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-5-p2.html">2,4,5-p2</a>
         </td>
         <td>14 de marzo de 2023</td>
     </tr>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-5-p1.html">2.4.5-p1</a>
+          <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-5-p1.html">2,4,5-p1</a>
         </td>
         <td>11 de octubre de 2022</td>
     </tr>
@@ -69,7 +69,7 @@ La compatibilidad con la línea de versión 2.4.4 finaliza el 12 de abril de 202
   <thead>
     <tr>
       <th>Versión del parche</th>
-      <th>Fecha de la versión</th>
+      <th>Fecha de lanzamiento</th>
     </tr>
   </thead>
   <tbody>
@@ -108,7 +108,7 @@ La compatibilidad con la línea de versión 2.4.0-2.4.3 finalizó el 28 de novie
   <thead>
     <tr>
       <th>Versión del parche</th>
-      <th>Fecha de la versión</th>
+      <th>Fecha de lanzamiento</th>
     </tr>
   </thead>
   <tbody>
@@ -189,7 +189,7 @@ La compatibilidad con la línea de versión 2.3 finalizó el 8 de septiembre de 
   <thead>
     <tr>
       <th>Versión del parche</th>
-      <th>Fecha de la versión</th>
+      <th>Fecha de lanzamiento</th>
     </tr>
   </thead>
   <tbody>
@@ -207,7 +207,7 @@ La compatibilidad con la línea de versión 2.3 finalizó el 8 de septiembre de 
     </tr>
     <tr>
         <td>
-          <a href="https://devdocs.magento.com/guides/v2.3/release-notes/2-3-7-p2.html">2.3.7-p2</a>
+          <a href="https://devdocs.magento.com/guides/v2.3/release-notes/2-3-7-p2.html">2,3,7-p2</a>
         </td>
         <td>12 de octubre de 2021</td>
     </tr>
@@ -237,13 +237,13 @@ La compatibilidad con la línea de versión 2.3 finalizó el 8 de septiembre de 
     </tr>
     <tr>
         <td>
-          2.3.5-p2
+          2,3,5-p2
         </td>
         <td>28 de julio de 2020</td>
     </tr>
     <tr>
         <td>
-          2.3.5-p1
+          2,3,5-p1
         </td>
         <td>28 de abril de 2020</td>
     </tr>
@@ -312,7 +312,7 @@ La compatibilidad con la línea de versión 2.2 finalizó el 1 de diciembre de 2
   <thead>
     <tr>
       <th>Versión del parche</th>
-      <th>Fecha de la versión</th>
+      <th>Fecha de lanzamiento</th>
     </tr>
   </thead>
   <tbody>
@@ -399,7 +399,7 @@ La compatibilidad con la línea de versión 2.1 finalizó el 30 de junio de 2019
   <thead>
     <tr>
       <th>Versión del parche</th>
-      <th>Fecha de la versión</th>
+      <th>Fecha de lanzamiento</th>
     </tr>
   </thead>
   <tbody>
@@ -522,13 +522,13 @@ La compatibilidad con la línea de versión 2.1 finalizó el 30 de junio de 2019
 
 ## 2.0
 
-La compatibilidad con la línea de la versión 2.0 finalizó el 31 de marzo de 2018.
+La compatibilidad con la línea de versión 2.0 finalizó el 31 de marzo de 2018.
 
 <table>
   <thead>
     <tr>
       <th>Versión del parche</th>
-      <th>Fecha de la versión</th>
+      <th>Fecha de lanzamiento</th>
     </tr>
   </thead>
   <tbody>

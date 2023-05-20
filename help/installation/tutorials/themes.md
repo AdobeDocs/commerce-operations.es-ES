@@ -1,34 +1,34 @@
 ---
-title: Desinstalación de temas
-description: Siga estos pasos para desinstalar un tema de Adobe Commerce o Magento Open Source.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+title: Desinstalar temas
+description: Siga estos pasos para desinstalar una temática de Adobe Commerce o de Magento Open Source.
+exl-id: 73150e8c-2d83-4479-b96b-75f41fd9c842
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '473'
 ht-degree: 0%
 
 ---
 
+# Desinstalar temas
 
-# Desinstalación de temas
+Antes de utilizar este comando, debe conocer la ruta relativa a la temática. Los temas se encuentran en un subdirectorio de `<magento_root>/app/design/<area name>`. Debe especificar la ruta al tema que comienza con el área, que puede ser `frontend` (para temas de tienda) o `adminhtml` (para temas de administración).
 
-Antes de utilizar este comando, debe conocer la ruta relativa a su tema. Los temas se encuentran en un subdirectorio de `<magento_root>/app/design/<area name>`. Debe especificar la ruta al tema empezando por el área, que puede ser `frontend` (para temas de tienda) o `adminhtml` (para temas de administración).
+Por ejemplo, la ruta a la temática de Luma proporcionada con Adobe Commerce y Magento Open Source es `frontend/Magento/luma`.
 
-Por ejemplo, la ruta al tema de Luma que se proporciona con Adobe Commerce y el Magento Open Source es `frontend/Magento/luma`.
+Para obtener más información sobre las temáticas, consulte [estructura del tema](https://developer.adobe.com/commerce/frontend-core/guide/themes/structure/).
 
-Para obtener más información sobre los temas, consulte [estructura del tema](https://developer.adobe.com/commerce/frontend-core/guide/themes/structure/).
+## Información general sobre la desinstalación de temáticas
 
-## Información general sobre la desinstalación de temas
+En esta sección se explica cómo desinstalar una o más temáticas, incluyendo de forma opcional el código de las temáticas del sistema de archivos. Primero puede crear copias de seguridad para poder restaurar los datos más adelante.
 
-En esta sección se explica cómo desinstalar uno o más temas, incluyendo opcionalmente el código de los temas del sistema de archivos. Primero puede crear copias de seguridad para poder restaurar los datos más adelante.
+Este comando desinstala *solamente* temas especificados en `composer.json`; es decir, las temáticas que se proporcionan como paquetes de Compositor. Si la temática no es un paquete de Compositor, debe desinstalarlo manualmente:
 
-Este comando desinstala *only* temas especificados en `composer.json`; en otras palabras, los temas que se proporcionan como paquetes de Composer. Si el tema no es un paquete Composer, debe desinstalarlo manualmente:
+* Actualización del `parent` información del nodo en `theme.xml` para quitar referencias a la temática.
+* Quitando el código de tema del sistema de archivos.
 
-* Actualización del `parent` información de nodo en `theme.xml` para eliminar referencias al tema.
-* Eliminación del código de tema del sistema de archivos.
+   [Más información sobre la herencia de temáticas](https://developer.adobe.com/commerce/frontend-core/guide/themes/inheritance/).
 
-   [Más información sobre la herencia de temas](https://developer.adobe.com/commerce/frontend-core/guide/themes/inheritance/).
-
-## Desinstalación de temas
+## Desinstalar temas
 
 Uso de comandos:
 
@@ -38,41 +38,41 @@ bin/magento theme:uninstall [--backup-code] [-c|--clear-static-content] {theme p
 
 Donde
 
-* `{theme path}` es la ruta relativa al tema, empezando por el nombre del área. Por ejemplo, la ruta al tema en blanco suministrada con Adobe Commerce y el Magento Open Source es `frontend/Magento/blank`.
-* `--backup-code` haga una copia de seguridad del código de base tal como se indica en los párrafos siguientes.
-* `--clear-static-content` limpiadores generados [archivos de vista estáticos](../../configuration/cli/static-view-file-deployment.md), que es necesario para que los archivos de vista estáticos se muestren correctamente.
+* `{theme path}` es la ruta relativa a la temática, empezando por el nombre del área. Por ejemplo, la ruta a la temática en blanco proporcionada con Adobe Commerce y Magento Open Source es `frontend/Magento/blank`.
+* `--backup-code` realiza una copia de seguridad del código base tal como se describe en los párrafos siguientes.
+* `--clear-static-content` limpiezas generadas [archivos de vista estática](../../configuration/cli/static-view-file-deployment.md), que es necesario para que los archivos de vista estática se muestren correctamente.
 
 El comando realiza las siguientes tareas:
 
-1. Comprueba que existen las rutas de tema especificadas; si no es así, el comando finaliza.
-1. Verifica que el tema sea un paquete Composer; si no es así, el comando finaliza.
-1. Comprueba las dependencias y finaliza el comando si hay dependencias no cumplidas.
+1. Comprueba que existen las rutas de acceso de temas especificadas; de lo contrario, el comando finaliza.
+1. Comprueba que la temática es un paquete de Compositor; si no es así, el comando finaliza.
+1. Comprueba las dependencias y finaliza el comando si hay dependencias que no se cumplen.
 
-   Para solucionarlo, puede desinstalar todos los temas al mismo tiempo o puede desinstalar primero según el tema.
+   Para solucionarlo, puede desinstalar todas las temáticas al mismo tiempo o puede desinstalar primero la temática en función de la temática.
 
-1. Comprueba que el tema no se esté utilizando; si se está utilizando, el comando finaliza.
-1. Verifica que el tema no sea la base del tema virtual; si es la base de un tema virtual, el comando finaliza.
-1. Coloca la tienda en modo de mantenimiento.
-1. If `--backup-code` se especifica, haga una copia de seguridad de la base de código, excluyendo la variable `pub/static`, `pub/media`y `var` directorios.
+1. Comprueba que el tema no se está utilizando; si se está utilizando, el comando finaliza.
+1. Comprueba que el tema no es la base del tema virtual; si es la base de un tema virtual, el comando finaliza.
+1. Pone el almacén en modo de mantenimiento.
+1. If `--backup-code` se especifica, haga una copia de seguridad del código base, excluyendo el `pub/static`, `pub/media`, y `var` directorios.
 
    El nombre del archivo de copia de seguridad es `var/backups/<timestamp>_filesystem.tgz`
 
-   Puede restaurar las copias de seguridad en cualquier momento utilizando la variable [`magento setup:rollback`](uninstall-modules.md#roll-back-the-file-system-database-or-media-files) comando.
+   Puede restaurar las copias de seguridad en cualquier momento mediante el [`magento setup:rollback`](uninstall-modules.md#roll-back-the-file-system-database-or-media-files) comando.
 
-1. Elimina los temas del `theme` tabla de base de datos.
-1. Eliminación de temas de la base de código mediante `composer remove`.
+1. Quita los temas del `theme` tabla de base de datos.
+1. Quitar temáticas de la base de código mediante `composer remove`.
 1. Limpia la caché.
 1. Limpia las clases generadas
-1. If `--clear-static-content` se especifica, limpia [archivos de vista estáticos generados](../../configuration/cli/static-view-file-deployment.md).
+1. If `--clear-static-content` se ha especificado, limpia [archivos de vista estática generados](../../configuration/cli/static-view-file-deployment.md).
 
-Por ejemplo, si intenta desinstalar un tema del que dependa otro tema, aparece el siguiente mensaje:
+Por ejemplo, si intenta desinstalar una temática de la que depende otra, se muestra el siguiente mensaje:
 
 ```terminal
 Cannot uninstall frontend/ExampleCorp/SampleModuleTheme because the following package(s) depend on it:
         ExampleCorp/sample-module-theme-depend
 ```
 
-Una alternativa es desinstalar ambos temas al mismo tiempo que se realiza la copia de seguridad del código base:
+Una alternativa es desinstalar ambos temas al mismo tiempo como se indica a continuación, haciendo una copia de seguridad de la base de código:
 
 ```bash
 bin/magento theme:uninstall frontend/ExampleCorp/SampleModuleTheme frontend/ExampleCorp/SampleModuleThemeDepend --backup-code
@@ -102,4 +102,4 @@ Disabling maintenance mode
 
 >[!NOTE]
 >
->Para desinstalar un tema de administración, también debe eliminarlo de la configuración de inyección de dependencias de su componente, `<component root directory>/etc/di.xml`.
+>Para desinstalar un tema de administración, también debe eliminarlo de la configuración de inyección de dependencias del componente. `<component root directory>/etc/di.xml`.

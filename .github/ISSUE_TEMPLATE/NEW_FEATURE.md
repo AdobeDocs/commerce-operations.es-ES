@@ -1,12 +1,12 @@
 ---
 name: New website feature
 about: Request new functionality on the Experience League website
-title: Solicitud de funciones
+title: Solicitud de función
 labels: enhancement
 assignees: dshevtsov
 source-git-commit: b0f4671b8c214397af77cbd316e489dac1ce8601
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '10'
 ht-degree: 0%
 
 ---

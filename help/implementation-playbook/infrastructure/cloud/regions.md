@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Regiones de nube
 
-Las siguientes secciones proporcionan detalles sobre las diferentes regiones de AWS y Azure disponibles para Adobe Commerce en la infraestructura de la nube.
+Las secciones siguientes proporcionan detalles sobre las diferentes regiones de AWS y Azure disponibles para Adobe Commerce en la infraestructura en la nube.
 
 ## Regiones de AWS
 
@@ -19,12 +19,12 @@ Las siguientes secciones proporcionan detalles sobre las diferentes regiones de 
 
 >[!NOTE]
 >
-> Solamente locales en China y Rusia.
+> Solo local en China y Rusia.
 
 ## Regiones de Azure
 
-![Diagrama que muestra regiones de Azure](../../../assets/playbooks/azure-regions.png)
+![Diagrama que muestra las regiones de Azure](../../../assets/playbooks/azure-regions.png)
 
 >[!NOTE]
 >
-> Solamente locales en China y Rusia. Todos los comerciantes que requieren entornos de integración deben utilizar regiones de EE. UU.
+> Solo local en China y Rusia. Todos los comerciantes que requieran entornos de integración deben utilizar regiones de EE. UU.

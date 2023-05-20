@@ -1,50 +1,50 @@
 ---
-title: Establecer una máscara (opcional)
-description: Mejore la postura de seguridad de su instalación local de Adobe Commerce o Magento Open Source restringiendo los permisos del sistema de archivos.
-source-git-commit: 8f05fb6fc212c2b3fda80457bbf27ecf16fb1194
+title: Establecer una máscara de usuario (opcional)
+description: Mejore la postura de seguridad de la instalación local de Adobe Commerce o Magento Open Source restringiendo los permisos del sistema de archivos.
+exl-id: 18d65d75-7be0-4488-bf35-4b058e4ae5ea
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '299'
 ht-degree: 0%
 
 ---
 
+# Establecer una máscara de usuario (opcional)
 
-# Establecer una máscara (opcional)
+El grupo de servidores web debe tener permisos de escritura en determinados directorios del sistema de archivos; sin embargo, es posible que desee una mayor seguridad, especialmente en la producción. Proporcionamos la flexibilidad para que pueda restringir aún más esos permisos mediante una [umask](https://www.cyberciti.biz/tips/understanding-linux-unix-umask-value-usage.html).
 
-El grupo de servidores web debe tener permisos de escritura para ciertos directorios del sistema de archivos; sin embargo, es posible que desee una seguridad más estricta, especialmente en producción. Proporcionamos flexibilidad para que usted restrinja aún más esos permisos mediante una [máscara](https://www.cyberciti.biz/tips/understanding-linux-unix-umask-value-usage.html).
-
-Nuestra solución es permitirle, opcionalmente, crear un archivo llamado `magento_umask` en el directorio raíz de la aplicación que restringe los permisos para el grupo de servidores web y para todos los demás.
+Nuestra solución es permitirle crear opcionalmente un archivo llamado `magento_umask` en el directorio raíz de la aplicación que restringe los permisos para el grupo de servidores web y para todos los demás.
 
 >[!NOTE]
 >
->Se recomienda cambiar la máscara solo en un sistema de alojamiento compartido o de un usuario. Si tiene un servidor de aplicaciones privado, el grupo debe tener acceso de escritura al sistema de archivos; la máscara elimina el acceso de escritura del grupo.
+>Se recomienda cambiar la máscara de usuario en un sistema de alojamiento compartido o de un solo usuario. Si tiene un servidor de aplicaciones privado, el grupo debe tener acceso de escritura al sistema de archivos; umask elimina el acceso de escritura del grupo.
 
-La máscara predeterminada (sin `magento_umask` specified) is `002`, lo que significa que:
+La máscara de usuario predeterminada (sin `magento_umask` especificado) es `002`, lo que significa:
 
-* 775 para directorios, lo que significa control total por parte del usuario, control total por parte del grupo, y permite a todos recorrer el directorio. Estos permisos suelen ser necesarios para proveedores de alojamiento compartidos.
+* 775 para directorios, lo que significa control total por parte del usuario, control total por parte del grupo y permite a todos atravesar el directorio. Estos permisos suelen ser necesarios para los proveedores de alojamiento compartido.
 
-* 664 para archivos, es decir, que el usuario pueda escribir, que el grupo pueda escribirlo y que sea de solo lectura para todos los demás
+* 664 para archivos, lo que significa que el usuario puede escribir, el grupo puede escribir y solo lectura para todos los demás
 
-Una sugerencia común es utilizar un valor de `022` en el `magento_umask` , lo que significa que:
+Una sugerencia habitual es utilizar un valor de `022` en el `magento_umask` archivo, lo que significa:
 
-* 755 para directorios: control total para el usuario, y todos los demás pueden recorrer directorios.
+* 755 para directorios: control total para el usuario y todos los demás pueden atravesar directorios.
 * 644 para archivos: permisos de lectura y escritura para el usuario y de solo lectura para todos los demás.
 
-Para configurar `magento_umask`:
+Para establecer `magento_umask`:
 
-1. En un terminal de línea de comandos, inicie sesión en el servidor de aplicaciones como [propietario del sistema de archivos](../prerequisites/file-system/overview.md).
+1. En un terminal de línea de comandos, inicie sesión en su servidor de aplicaciones como [propietario del sistema de archivos](../prerequisites/file-system/overview.md).
 1. Vaya al directorio de instalación de la aplicación:
 
    ```bash
    cd <Application install directory>
    ```
 
-1. Utilice el siguiente comando para crear un archivo denominado `magento_umask` y escriba el `umask` para él.
+1. Utilice el siguiente comando para crear un archivo denominado `magento_umask` y escriba el `umask` valor para ella.
 
    ```bash
    echo <desired umask number> > magento_umask
    ```
 
-   Ahora debería tener un archivo llamado `magento_umask` en el `<Magento install dir>` con el único contenido que es la variable `umask` número.
+   Ahora debería tener un archivo llamado `magento_umask` en el `<Magento install dir>` con el único contenido que es `umask` número.
 
 1. Cierre la sesión y vuelva a iniciarla como [propietario del sistema de archivos](../prerequisites/file-system/overview.md) para aplicar los cambios.

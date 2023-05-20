@@ -1,13 +1,13 @@
 ---
 title: Revisar cambios de plataforma
 description: Familiarícese con los principales cambios de plataforma de una versión mientras se prepara para actualizar el proyecto de Adobe Commerce.
-source-git-commit: 5e02f300bb0b5601c653fdea1dd5b85f4e18ed9c
+exl-id: 08af5786-8d16-46da-90d4-5cc201288b1f
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '97'
 ht-degree: 0%
 
 ---
-
 
 # Revisar los cambios de plataforma antes de actualizar
 

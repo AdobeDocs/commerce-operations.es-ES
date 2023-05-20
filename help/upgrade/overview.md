@@ -1,13 +1,13 @@
 ---
 title: Descripción general del proceso de actualización
 description: Obtenga información sobre cómo actualizar el proyecto de Adobe Commerce ayuda a mantener la seguridad de su tienda y a funcionar de forma eficaz.
-source-git-commit: 015997bf9aab32c443dd2cc198f2ed41018d7a49
+exl-id: 40bd97ca-6648-40d4-9c61-7d159391976a
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '898'
 ht-degree: 0%
 
 ---
-
 
 # Descripción general del proceso de actualización
 

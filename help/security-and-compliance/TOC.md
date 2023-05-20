@@ -1,6 +1,6 @@
 ---
 user-guide-title: Seguridad y cumplimiento
-user-guide-description: Conozca cómo Adobe Commerce y los comerciantes Magento Open Source son responsables de mantener un entorno seguro y cumplir con los requisitos legales y las prácticas recomendadas para los comerciantes en línea en su jurisdicción.
+user-guide-description: Descubra cómo Adobe Commerce y los comerciantes Magento Open Source son responsables de mantener un entorno seguro y de cumplir los requisitos legales y las prácticas recomendadas para los comerciantes en línea de su jurisdicción.
 feature: Security
 source-git-commit: 68c4cfc29735d2ea296f579ed0a0ff52db3fdd9f
 workflow-type: tm+mt
@@ -10,7 +10,7 @@ ht-degree: 0%
 ---
 
 
-# Seguridad y cumplimiento de normas {#security-and-compliance}
+# Seguridad y cumplimiento {#security-and-compliance}
 
 - [Información general](overview.md)
 - [Política de seguridad de contenido](content-security-policy.md)
@@ -22,4 +22,4 @@ ht-degree: 0%
 - Referencia {#reference}
    - [Información personal del cliente (versión 2.x)](privacy/data-m2.md)
    - [Información personal del cliente (versión 1.x)](privacy/data-m1.md)
-- [Volver a las guías operativas](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
+- [Volver a Guías operativas](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

@@ -1,19 +1,19 @@
 ---
 title: Aplicar parches
 description: Obtenga información sobre los métodos para aplicar parches a un proyecto de Adobe Commerce o de Magento Open Source.
-source-git-commit: e2ddb30da8dd86236e1dcf33a3f911b67384a6d7
+exl-id: 1d5d81ad-0115-4575-adfd-dde7c2826d85
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '326'
 ht-degree: 0%
 
 ---
 
-
 # Aplicar parches
 
-Puede aplicar parches mediante cualquiera de los siguientes métodos:
+Puede aplicar parches utilizando cualquiera de los siguientes métodos:
 
-- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target=&quot;_blank&quot;}
+- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
 - [Línea de comandos](../patches/apply.md#command-line)
 - [Compositor](../patches/apply.md#composer)
 
@@ -21,12 +21,12 @@ Puede aplicar parches mediante cualquiera de los siguientes métodos:
 
 >[!IMPORTANT]
 >
->Para aplicar parches oficiales de calidad, utilice la variable [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target=&quot;_blank&quot;}. Realice pruebas exhaustivas antes de implementar cualquier parche personalizado.
+>Para aplicar parches de calidad oficiales, use el [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}. Realice siempre pruebas exhaustivas antes de implementar cualquier parche personalizado.
 
 Para aplicar un parche personalizado con Composer:
 
 1. Abra la aplicación de línea de comandos y vaya al directorio del proyecto.
-1. Agregue la variable `cweagans/composer-patches` complemento de `composer.json` archivo.
+1. Añada el `cweagans/composer-patches` del complemento a `composer.json` archivo.
 
    ```bash
    composer require cweagans/composer-patches
@@ -34,7 +34,7 @@ Para aplicar un parche personalizado con Composer:
 
 1. Edite el `composer.json` y agregue la siguiente sección para especificar:
    - **Módulo:** *\&quot;magento/module-payment\&quot;*
-   - **Título:** *\&quot;MAGETWO-56934: La página de cierre de compra se bloquea al realizar un pedido con Authorize.net con una tarjeta de crédito no válida\&quot;*
+   - **Título:** *\&quot;MAGETWO-56934: La página de cierre de compra se bloquea al realizar el pedido con Authorize.net con una tarjeta de crédito no válida\&quot;*
    - **Ruta al parche:** *\&quot;patches/composer/github-issue-6474.diff\&quot;*
 
    Por ejemplo:
@@ -52,13 +52,13 @@ Para aplicar un parche personalizado con Composer:
 
    Si un parche afecta a varios módulos, debe crear varios archivos de parche dirigidos a varios módulos.
 
-1. Aplique el parche. Utilice la variable `-v` solo si desea ver la información de depuración.
+1. Aplique el parche. Utilice el `-v` sólo si desea ver información de depuración.
 
    ```bash
    composer -v install
    ```
 
-1. Actualice el `composer.lock` archivo. El archivo de bloqueo rastrea qué parches se han aplicado a cada paquete del Compositor en un objeto.
+1. Actualice el `composer.lock` archivo. El archivo de bloqueo registra qué parches se han aplicado a cada paquete Composer de un objeto.
 
    ```bash
    composer update --lock
@@ -68,20 +68,20 @@ Para aplicar un parche personalizado con Composer:
 
 Para aplicar parches desde la línea de comandos:
 
-1. Cargue el archivo local en el `<Magento_root>` en el servidor mediante FTP, SFTP, SSH o el método de transporte normal.
+1. Cargue el archivo local en `<Magento_root>` en el servidor mediante FTP, SFTP, SSH o el método de transporte normal.
 1. Inicie sesión en el servidor como [usuario administrador](../../configuration/cli/config-cli.md#prerequisites) y compruebe que el archivo se encuentra en el directorio correcto.
-1. En la interfaz de la línea de comandos, ejecute los siguientes comandos según la extensión del parche:
+1. En la interfaz de línea de comandos, ejecute los siguientes comandos según la extensión del parche:
 
    ```bash
    patch < patch_file_name.patch
    ```
 
-   El comando supone que el archivo que se va a parchear se encuentra en relación con el archivo de parche.
+   El comando supone que el archivo al que se va a aplicar el parche se encuentra en relación con el archivo de parche.
 
    >[!NOTE]
    >
-   >Si la línea de comandos muestra: `File to patch:`, significa que no puede localizar el archivo deseado, aunque la ruta parezca correcta. En el cuadro mostrado en el terminal de la línea de comandos, la primera línea muestra el archivo que se va a parchear. Copie la ruta del archivo y péguela en el `File to patch:` solicitud y pulse `Enter` y el parche debe completarse.
+   >Si la línea de comandos muestra: `File to patch:`, significa que no puede localizar el archivo deseado, aunque la ruta parezca correcta. En el cuadro que se muestra en el terminal de la línea de comandos, la primera línea muestra el archivo al que se va a aplicar el parche. Copie la ruta de archivo y péguela en `File to patch:` preguntar y pulsar `Enter` y el parche debe completarse.
 
-1. Para que se reflejen los cambios, actualice la caché en la sección Administración de **Sistema** > Herramientas > **Administración de caché**.
+1. Para que se reflejen los cambios, actualice la caché en el Administrador en **Sistema** > Herramientas > **Administración de caché**.
 
-   Alternativamente, el parche se puede aplicar localmente con el mismo comando, luego se confirma y se empuja normalmente.
+   Como alternativa, el parche se puede aplicar localmente con el mismo comando, luego confirmarse e insertarse normalmente.

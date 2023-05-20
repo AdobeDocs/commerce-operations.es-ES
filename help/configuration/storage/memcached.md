@@ -1,25 +1,25 @@
 ---
-title: Uso almacenado en la memoria caché para el almacenamiento de sesión
-description: Obtenga más información sobre el uso de memcached para el almacenamiento de sesión de Commerce.
-source-git-commit: 0d106b36f479ecf2eda3fecf6740b28d4b6793eb
+title: Usar memcached para el almacenamiento de sesión
+description: Obtenga información acerca del uso de memcached para el almacenamiento de sesiones de Commerce.
+exl-id: 24077929-e732-4579-8d7d-717a4902fc64
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '285'
 ht-degree: 0%
 
 ---
 
+# Usar memcached para el almacenamiento de sesión
 
-# Uso almacenado en la memoria caché para el almacenamiento de sesión
+Memcached es un sistema de almacenamiento en caché de memoria distribuida de uso general. A menudo se utiliza para acelerar los sitios web dinámicos impulsados por bases de datos almacenando en caché datos y objetos en la RAM para reducir el número de veces que se debe leer una fuente de datos externa (como una base de datos o una API).
 
-La memoria en caché es un sistema de almacenamiento en caché distribuido de uso general. A menudo se utiliza para acelerar los sitios web dinámicos impulsados por bases de datos almacenando en caché los datos y objetos en RAM para reducir el número de veces que se debe leer una fuente de datos externa (como una base de datos o API).
+Memcached proporciona una tabla hash de gran tamaño que se puede distribuir entre varios equipos. Cuando la tabla está llena, las inserciones posteriores hacen que los datos más antiguos se purguen en el orden de uso menos reciente (LRU). El tamaño de esta tabla hash suele ser muy grande. (Fuente: [memcached.org](https://www.memcached.org/))
 
-En memoria caché proporciona una tabla hash grande que se puede distribuir entre varios equipos. Cuando la tabla está llena, las inserciones posteriores hacen que los datos más antiguos se purguen en el orden utilizado (LRU) menos recientemente. El tamaño de esta tabla hash a menudo es muy grande. (Fuente: [memcached.org](https://www.memcached.org/))
+Commerce utiliza memcached para el almacenamiento de sesión, pero no para el almacenamiento de páginas en caché. Para el almacenamiento en caché de páginas, recomendamos [Redis](../cache/redis-pg-cache.md) o [Barniz](../cache/config-varnish.md).
 
-El comercio utiliza la memoria caché para el almacenamiento de sesión, pero no para el almacenamiento de páginas. Para el almacenamiento en caché de páginas, se recomienda [Redis](../cache/redis-pg-cache.md) o [Varniz](../cache/config-varnish.md).
+**Para configurar Commerce para que utilice memcached**:
 
-**Para configurar Commerce para que use memcached**:
-
-1. Apertura `<your install dir>/app/etc/env.php` en un editor de texto.
+1. Abrir `<your install dir>/app/etc/env.php` en un editor de texto.
 1. Busque lo siguiente:
 
    ```php
@@ -29,7 +29,7 @@ El comercio utiliza la memoria caché para el almacenamiento de sesión, pero no
    ),
    ```
 
-1. Cambie de la siguiente manera:
+1. Cámbielo como se indica a continuación:
 
    ```php
    'session' =>
@@ -39,11 +39,11 @@ El comercio utiliza la memoria caché para el almacenamiento de sesión, pero no
    ),
    ```
 
-   memcached tiene parámetros de inicio opcionales que están fuera del alcance de esta guía. Puede encontrar más información sobre ellos en la sección [en caché](https://www.php.net/manual/en/memcached.sessions.php) documentación, código fuente y cambios.
+   memcached tiene parámetros de inicio opcionales que están fuera del alcance de esta guía. Puede encontrar más información sobre ellos en la [memcached](https://www.php.net/manual/en/memcached.sessions.php) documentación, código fuente y changelogs.
 
 1. Continúe con la siguiente sección.
 
-**Para verificar que funciona con Commerce**:
+**Para verificar que memcached funcione con Commerce**:
 
 1. Elimine el contenido de los siguientes directorios en el directorio de instalación de Commerce:
 
@@ -53,13 +53,13 @@ El comercio utiliza la memoria caché para el almacenamiento de sesión, pero no
 
 1. Vaya a cualquier página de la tienda.
 
-1. Inicie sesión en el administrador y vaya a varias páginas.
+1. Inicie sesión en Admin y navegue a varias páginas.
 
-   Si no se muestran errores, ¡felicitaciones! memcached está funcionando! Opcionalmente, puede ver el almacenamiento en caché como se describe en el paso siguiente.
+   Si no se muestran errores, ¡enhorabuena! memcached está funcionando. Opcionalmente, puede consultar el almacenamiento en caché de memes como se describe en el siguiente paso.
 
-   Si se muestran errores (como un HTTP 500 (error interno del servidor)), habilite el modo de desarrollador y diagnostique el problema. Asegúrese de que la memoria caché se esté ejecutando, configurada correctamente y que `env.php` no tiene errores de sintaxis.
+   Si se muestran errores (como un HTTP 500 (Error interno del servidor)), habilite el modo de desarrollador y diagnostique el problema. Asegúrese de que memcached se esté ejecutando, que esté configurado correctamente y que `env.php` no tiene errores de sintaxis.
 
-1. (Opcional.) Utilice Telnet para ver el almacenamiento en caché.
+1. (Opcional.) Utilice Telnet para ver el almacenamiento en memoria caché.
 
    ```bash
    telnet <memcached host or ip> <memcached port>

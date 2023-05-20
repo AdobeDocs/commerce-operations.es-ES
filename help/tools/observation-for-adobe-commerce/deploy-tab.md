@@ -1,28 +1,29 @@
 ---
-title: "El [!UICONTROL Deploy] tab"
-description: Obtenga información sobre [!UICONTROL Deploy] pestaña [!DNL Observation for Adobe Commerce].
-source-git-commit: 27ebd472dc4e81e58b36bf5fac529461beae4be1
+title: El [!UICONTROL Deploy] pestaña
+description: Obtenga información acerca de [!UICONTROL Deploy] pestaña de [!DNL Observation for Adobe Commerce].
+exl-id: 3e33f7b0-7a40-4598-ae2e-436118e8d99a
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '320'
 ht-degree: 0%
 
 ---
 
-# La variable [!UICONTROL Deploy] ficha
+# El [!UICONTROL Deploy] pestaña
 
 Esta pestaña es un intento de aislar rápidamente los problemas y las causas de los problemas de implementación.
 
 ## [!UICONTROL Deploy log Deployment Troubleshooter]
 
-![Implementar el Solucionador de problemas de implementación de registros](../../assets/tools/observation-for-adobe-commerce/deploy-tab-1.jpg)
+![Implementar solucionador de problemas de implementación de registro](../../assets/tools/observation-for-adobe-commerce/deploy-tab-1.jpg)
 
-La variable **[!UICONTROL Deploy log Deployment Troubleshooter]** muestra un recuento de eventos de registro de implementación que se produjeron en el intervalo de tiempo seleccionado. La intención es proporcionar una vista rápida de la actividad de implementación y determinar la complejidad de la implementación según el recuento. Cuantos más mensajes se registren, más compleja suele ser la implementación.
+El **[!UICONTROL Deploy log Deployment Troubleshooter]** frame muestra un recuento de los eventos de registro de implementación que se produjeron en el periodo de tiempo seleccionado. La intención es proporcionar una vista rápida de la actividad de implementación y determinar la complejidad de la implementación según el recuento. Cuanto más mensajes registrados, más compleja es la implementación.
 
 ## [!UICONTROL Deploy State]
 
-![Estado de implementación](../../assets/tools/observation-for-adobe-commerce/deploy-tab-2.jpg)
+![Implementar estado](../../assets/tools/observation-for-adobe-commerce/deploy-tab-2.jpg)
 
-La variable **[!UICONTROL Deploy State]** muestra los eventos de implementación que se produjeron en el intervalo de tiempo seleccionado. El analizador de este fotograma está buscando estas señales específicas:
+El **[!UICONTROL Deploy State]** frame muestra los eventos de implementación que se produjeron en el periodo de tiempo seleccionado. El analizador de este fotograma busca estas señales específicas:
 
 * &#39;`%NOTICE: Starting generate command%`&#39;) como &#39;`start_gen`&#39;
 * &#39;`%git apply /app/vendor/magento/ece-tools/patches%`&#39;) como &#39;`apply_patches`&#39;
@@ -38,7 +39,7 @@ La variable **[!UICONTROL Deploy State]** muestra los eventos de implementación
 
 ![Implementación de detalles de registro](../../assets/tools/observation-for-adobe-commerce/deploy-tab-3.jpg)
 
-La variable **[!UICONTROL Deploy Log Detail]** muestra los detalles del resumen del mensaje de registro de implementación que se produjeron en el intervalo de tiempo seleccionado. El marco está analizando las siguientes cadenas en los registros de implementación:
+El **[!UICONTROL Deploy Log Detail]** frame muestra los detalles del resumen del mensaje de registro de implementación que se produjeron en el periodo de tiempo seleccionado. El marco está analizando las siguientes cadenas en los registros de implementación:
 
 * &#39;`%NOTICE: Starting deploy.%`&#39;) como &#39;`start_dply`&#39;
 * &#39;`%INFO: Starting scenario(s): scenario/deploy.xml%`&#39;) como &#39;`start_scenario`&#39;
@@ -77,9 +78,9 @@ La variable **[!UICONTROL Deploy Log Detail]** muestra los detalles del resumen 
 
 ## [!UICONTROL Post Deploy Log Detail]
 
-![Detalles del registro de implementación posterior](../../assets/tools/observation-for-adobe-commerce/deploy-tab-4.jpg)
+![Detalles del registro posterior a la implementación](../../assets/tools/observation-for-adobe-commerce/deploy-tab-4.jpg)
 
-La variable **[!UICONTROL Post Deploy Log Detail]** muestra los detalles del registro posterior a la implementación que se produjeron en el intervalo de tiempo seleccionado. Este marco se centra en determinados mensajes de registro que contienen las siguientes cadenas:
+El **[!UICONTROL Post Deploy Log Detail]** frame muestra los detalles de registro posteriores a la implementación que se produjeron en el periodo de tiempo seleccionado. Este marco se centra en mensajes de registro concretos que contienen las siguientes cadenas:
 
 * &#39;`%Disabled maintenance mode%`&#39;) como &#39;`disabled_maint_mode`&#39;
 * &#39;`%INFO: Starting scenario(s): scenario/post-deploy.xml%`&#39;) como &#39;`start_pstdply_scenario`&#39;
@@ -97,7 +98,7 @@ La variable **[!UICONTROL Post Deploy Log Detail]** muestra los detalles del reg
 
 ![Detalles de registro de nube](../../assets/tools/observation-for-adobe-commerce/deploy-tab-5.jpg)
 
-La variable **[!UICONTROL Cloud Log Detail]** frame muestra los detalles del registro de nube que se produjeron en el intervalo de tiempo seleccionado. Las siguientes cadenas se analizan y se devuelven con la etiqueta &quot;AS&quot; a continuación:
+El **[!UICONTROL Cloud Log Detail]** frame muestra los detalles del registro de nube que se produjeron en el periodo de tiempo seleccionado. Las siguientes cadenas se analizan y se devuelven con la etiqueta &quot;AS&quot; a continuación:
 
 * &#39;`%DEBUG: /bin/bash -c "set -o pipefail; php ./bin/magento setup:upgrade%`&#39;) como &#39;`start_update`&#39;
 * &#39;`%Schema creation/updates:%`&#39;) como &#39;`schema_updates`&#39;
@@ -151,11 +152,10 @@ La variable **[!UICONTROL Cloud Log Detail]** frame muestra los detalles del reg
 
 ![Recuento de módulos importados durante la implementación](../../assets/tools/observation-for-adobe-commerce/deploy-tab-6.jpg)
 
-La variable **[!UICONTROL Count of modules imported during deploy]** frame muestra el número de módulos importados durante la implementación en el intervalo de tiempo seleccionado.
+El **[!UICONTROL Count of modules imported during deploy]** frame muestra el número de módulos importados durante la implementación en el periodo de tiempo seleccionado.
 
 ## [!UICONTROL Deployed module list]
 
 ![Lista de módulos implementados](../../assets/tools/observation-for-adobe-commerce/deploy-tab-7.jpg)
 
-La variable **[!UICONTROL Deployed module list]** muestra los módulos implementados en el intervalo de tiempo seleccionado.
-
+El **[!UICONTROL Deployed module list]** frame muestra los módulos implementados en el periodo de tiempo seleccionado.

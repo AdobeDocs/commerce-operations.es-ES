@@ -1,6 +1,6 @@
 ---
-title: Microservicios de Adobe Commerce
-description: Ser capaz de diferenciar entre microservicios y sin periféricos en lo que se refiere a Adobe Commerce.
+title: Adobe Commerce Microservices
+description: Poder diferenciar entre sin encabezado y microservicios en lo que respecta a Adobe Commerce.
 exl-id: 078e0e8e-7acc-4913-8b78-585a950f3f5e
 source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
 workflow-type: tm+mt
@@ -9,11 +9,11 @@ ht-degree: 0%
 
 ---
 
-# Sin cabeza y microservicios
+# Sin encabezado y microservicios
 
-Es importante no confundir los microservicios sin cabeza. Muchas veces, escuchamos conversaciones sobre microservicios en la misma frase sin cabeza. Son cosas completamente diferentes. Pueden utilizarse juntos, pero son conceptos completamente diferentes.
+Es importante no confundir sin encabezado con los microservicios. Muchas veces, oímos conversaciones sobre microservicios en la misma frase que sin encabezado. Son cosas completamente diferentes. Se pueden usar juntos, pero son conceptos completamente diferentes.
 
-La arquitectura de los microservicios es un término utilizado para describir la práctica de dividir una aplicación en una colección de servicios más pequeños y con poca acoplamiento. Los microservicios permiten que los servicios backend individuales sean:
+Una arquitectura de microservicios es un término que se utiliza para describir la práctica de dividir una aplicación en una colección de servicios más pequeños y de correspondencia imprecisa. Los microservicios permiten que los servicios back-end individuales sean:
 
 - **Aislados unos de otros**: por ejemplo, el servicio de precios no depende del servicio de catálogo.
 
@@ -21,8 +21,8 @@ La arquitectura de los microservicios es un término utilizado para describir la
 
 - **Escalar de forma independiente**: los recursos se pueden asignar a servicios de alta demanda, como la búsqueda de inventario.
 
-- **Desarrollo autónomo**: se puede desarrollar e implementar de forma independiente entre sí.
+- **Desarrollado de forma autónoma**: se puede desarrollar e implementar de forma independiente entre sí.
 
-Los microservicios no tienen nada que ver con cortar la cabeza de la pila de comercio o las API. Cuando pensamos en esos servicios de comercio en el código principal que están en la oficina de administración de Adobe Commerce, se trata de aislar esos servicios entre sí. Por lo tanto, una arquitectura de microservicios está dividiendo, en términos generales, todos esos servicios, como los servicios de precios, el servicio de catálogo y el servicio de inventario, y aislando cada uno de ellos de otro.
+Los microservicios no tienen nada que ver con cortar la cabeza de la pila de comercio o las API. Cuando pensamos en esos servicios de comercio en el código principal que están en el back office de Adobe Commerce, se trata de aislar esos servicios entre sí. Entonces, una arquitectura de microservicios está separando vagamente todos esos servicios como los servicios de precios, el servicio de catálogo y el servicio de inventario, y haciendo que cada uno esté aislado de otro.
 
-Los microservicios pueden escalarse de forma independiente y desarrollarse de forma autónoma. Los microservicios son similares a un proceso de desarrollo SaaS de varios arrendatarios. Muchos de los modernos productos SaaS multiinquilinos se desarrollan con un enfoque multiservicio. Incluso los propios productos SaaS de Adobe, como Order Management, la nueva herramienta Recommendations de productos impulsada por AI y otros componentes SaaS de Adobe Commerce se están desarrollando con un enfoque de microservicios. Para ser claros, Adobe Commerce 2.4.x no es una arquitectura de microservicios, sino una arquitectura sin objetivos.
+Los microservicios pueden ampliarse de forma independiente y desarrollarse de forma autónoma. Los microservicios son similares a un proceso de desarrollo de SaaS de varios inquilinos. Muchos de los productos modernos de SaaS para varios inquilinos se desarrollan con un enfoque multiservicio. Incluso los productos de SaaS propios de Adobe, como Order Management, la nueva herramienta Recommendations de productos impulsada por IA y otros componentes de SaaS de Adobe Commerce, se están desarrollando con un enfoque de microservicios. Para ser muy claros, Adobe Commerce 2.4.x no es una arquitectura de microservicios, sino una arquitectura sin encabezado.

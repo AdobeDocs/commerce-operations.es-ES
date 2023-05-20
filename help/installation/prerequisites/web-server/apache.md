@@ -1,21 +1,21 @@
 ---
 title: Apache
 description: Siga estos pasos para instalar y configurar el servidor web Apache para instalaciones locales de Adobe Commerce y Magento Open Source.
-source-git-commit: 61638d373408d9a7c3c3a935eee61927acfac7a6
+exl-id: a9a394c9-389f-42ef-9029-dd22c979cfb8
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '844'
 ht-degree: 0%
 
 ---
 
-
 # Apache
 
-Adobe Commerce es compatible con Apache 2.4.x.
+Adobe Commerce admite Apache 2.4.x.
 
-## Directivas requeridas de Apache
+## Directivas requeridas por Apache
 
-1. Establezca `AllowEncodedSlashes` en la configuración del servidor (globalmente) o en las configuraciones de host virtual para evitar descodificar las barras codificadas que pueden causar problemas para las direcciones URL. Por ejemplo, al recuperar productos con una barra diagonal en el SKU a través de la API, no desea que se convierta. El bloque de muestra no está completo y se requieren otras directivas.
+1. Establecer `AllowEncodedSlashes` en la configuración del servidor (globalmente) o en las configuraciones del host virtual para evitar la descodificación de las barras codificadas que pueden causar problemas en las direcciones URL. Por ejemplo, al recuperar productos con una barra oblicua en el SKU mediante la API, no desea que se conviertan. El bloque de muestra no está completo y se requieren otras directivas.
 
    ```conf
    <VirtualHost *:443>
@@ -24,19 +24,19 @@ Adobe Commerce es compatible con Apache 2.4.x.
    </VirtualHost>
    ```
 
-## Reescrituras de Apache y acceso remoto
+## Apache reescribe y htaccess
 
-En este tema se explica cómo habilitar las reescrituras de Apache 2.4 y especificar una configuración para [archivo de configuración distribuido, `.htaccess`](https://httpd.apache.org/docs/current/howto/htaccess.html).
+En este tema se explica cómo habilitar las reescrituras de Apache 2.4 y especificar una configuración para [archivo de configuración distribuida, `.htaccess`](https://httpd.apache.org/docs/current/howto/htaccess.html).
 
-Adobe Commerce y el Magento Open Source utilizan reescrituras del servidor y `.htaccess` para proporcionar instrucciones a nivel de directorio para Apache. Las siguientes instrucciones están incluidas también en todas las demás secciones de este tema.
+Adobe Commerce y Magento Open Source usan reescrituras y `.htaccess` para proporcionar instrucciones a nivel de directorio para Apache. Las siguientes instrucciones se incluyen también en todas las demás secciones de este tema.
 
-Utilice esta sección para habilitar las reescrituras de Apache 2.4 y especificar una configuración para [archivo de configuración distribuido, `.htaccess`](https://httpd.apache.org/docs/current/howto/htaccess.html)
+Utilice esta sección para habilitar las reescrituras de Apache 2.4 y especificar una configuración para [archivo de configuración distribuida, `.htaccess`](https://httpd.apache.org/docs/current/howto/htaccess.html)
 
-Adobe Commerce y el Magento Open Source utilizan reescrituras del servidor y `.htaccess` para proporcionar instrucciones a nivel de directorio para Apache.
+Adobe Commerce y Magento Open Source usan reescrituras y `.htaccess` para proporcionar instrucciones a nivel de directorio para Apache.
 
 >[!NOTE]
 >
->Si no se habilita esta configuración, normalmente no se mostrarán estilos en la tienda o en el administrador.
+>Si no se habilita esta configuración, no se muestran estilos en la tienda o el administrador.
 
 1. Habilite el módulo de reescritura de Apache:
 
@@ -44,11 +44,11 @@ Adobe Commerce y el Magento Open Source utilizan reescrituras del servidor y `.h
    a2enmod rewrite
    ```
 
-1. Para permitir que la aplicación utilice el `.htaccess` , consulte las directrices de la sección [Documentación de Apache 2.4](https://httpd.apache.org/docs/current/mod/mod_rewrite.html).
+1. Para permitir que la aplicación use el elemento distribuido `.htaccess` archivo de configuración, consulte las directrices en la [Documentación de Apache 2.4](https://httpd.apache.org/docs/current/mod/mod_rewrite.html).
 
    >[!TIP]
    >
-   >En Apache 2.4, el archivo de configuración de sitio predeterminado del servidor es `/etc/apache2/sites-available/000-default.conf`.
+   >En Apache 2.4, el archivo de configuración del sitio predeterminado del servidor es `/etc/apache2/sites-available/000-default.conf`.
 
    Por ejemplo, puede agregar lo siguiente al final de `000-default.conf`:
 
@@ -60,7 +60,7 @@ Adobe Commerce y el Magento Open Source utilizan reescrituras del servidor y `.h
 
    >[!NOTE]
    >
-   >En ocasiones, pueden ser necesarios parámetros adicionales. Para obtener más información, consulte la [Documentación de Apache 2.4](https://httpd.apache.org/docs/2.4/mod/mod_access_compat.html#order).
+   >A veces, pueden ser necesarios parámetros adicionales. Para obtener más información, consulte la [Documentación de Apache 2.4](https://httpd.apache.org/docs/2.4/mod/mod_access_compat.html#order).
 
 1. Si ha cambiado la configuración de Apache, reinicie Apache:
 
@@ -70,17 +70,17 @@ Adobe Commerce y el Magento Open Source utilizan reescrituras del servidor y `.h
 
    >[!NOTE]
    >
-   >- Si ha actualizado desde una versión anterior de Apache, primero busque `<Directory "/var/www/html">` o `<Directory "/var/www">` en `000-default.conf`.
-   >- Debe cambiar el valor de `AllowOverride` en la directiva para el directorio en el que espera instalar el software Adobe Commerce o Magento Open Source. Por ejemplo, para instalar en el servidor web docroot, edite la directiva en `<Directory /var/www>`.
+   >- Si ha actualizado desde una versión anterior de Apache, busque primero `<Directory "/var/www/html">` o `<Directory "/var/www">` in `000-default.conf`.
+   >- Debe cambiar el valor de `AllowOverride` en la directiva del directorio en el que espera instalar el software Adobe Commerce o de Magento Open Source. Por ejemplo, para instalar en el servidor web docroot, edite la directiva en `<Directory /var/www>`.
 
 
 >[!NOTE]
 >
->Si no se habilita esta configuración, normalmente los estilos no se mostrarán en la tienda o en el Administrador.
+>Si no se habilita esta configuración, los estilos no se mostrarán en la tienda ni en el administrador.
 
 ## Módulos requeridos por Apache
 
-Adobe Commerce y Magento Open Source requieren que se instalen los siguientes módulos de Apache:
+Adobe Commerce y Magento Open Source requieren que se instalen los siguientes módulos Apache:
 
 - [mod_deflate.c](https://httpd.apache.org/docs/2.4/mod/mod_deflate.html)
 - [mod_expires.c](https://httpd.apache.org/docs/2.4/mod/mod_expires.html)
@@ -89,9 +89,9 @@ Adobe Commerce y Magento Open Source requieren que se instalen los siguientes m�
 - [mod_security.c](https://modsecurity.org)
 - [mod_ssl.c](https://httpd.apache.org/docs/2.4/mod/mod_ssl.html)
 
-## Verificar la versión de Apache
+## Verifique la versión de Apache
 
-Para verificar la versión de Apache que está ejecutando, introduzca:
+Para verificar la versión de Apache que está ejecutando actualmente, introduzca:
 
 ```bash
 apache2 -v
@@ -104,7 +104,7 @@ Server version: Apache/2.4.04 (Ubuntu)
 Server built: Jul 22 2020 14:35:32
 ```
 
-- Si Apache es *not* instalado, consulte:
+- Si Apache es *no* instalado, consulte:
    - [Instalación o actualización de Apache en Ubuntu](#installing-apache-on-ubuntu)
    - [Instalación de Apache en CentOS](#installing-apache-on-centos)
 
@@ -112,20 +112,20 @@ Server built: Jul 22 2020 14:35:32
 
 Las siguientes secciones tratan sobre cómo instalar o actualizar Apache:
 
-- Instalación de Apache
+- Instalar Apache
 - Actualice a Apache 2.4 en Ubuntu para utilizar PHP 7.4.
 
 ### Instalación de Apache en Ubuntu
 
 Para instalar la versión predeterminada de Apache:
 
-1. Instalación de Apache
+1. Instalar Apache
 
    ```bash
    apt-get -y install apache2
    ```
 
-1. Verifique la instalación.
+1. Compruebe la instalación.
 
    ```bash
    apache2 -v
@@ -138,13 +138,13 @@ Para instalar la versión predeterminada de Apache:
    Server built: 2020-04-15T18:00:57
    ```
 
-1. Habilitar [reescribe y `.htaccess`](#apache-rewrites-and-htaccess).
+1. Activar [reescribe y `.htaccess`](#apache-rewrites-and-htaccess).
 
-### Actualización de Apache en Ubuntu
+### Actualización de Apache a Ubuntu
 
 Para actualizar a Apache 2.4:
 
-1. Agregue la variable `ppa:ondrej` repositorio, que tiene Apache 2.4:
+1. Añada el `ppa:ondrej` repositorio, que tiene Apache 2.4:
 
    ```bash
    apt-get -y update
@@ -168,7 +168,7 @@ Para actualizar a Apache 2.4:
    >
    >Si el comando &quot;apt-get install&quot; falla debido a dependencias no satisfechas, consulte un recurso como [https://askubuntu.com/](https://askubuntu.com/questions/140246/how-do-i-resolve-unmet-dependencies-after-adding-a-ppa).
 
-1. Verifique la instalación.
+1. Compruebe la instalación.
 
    ```bash
    apache2 -v
@@ -181,13 +181,13 @@ Para actualizar a Apache 2.4:
    Server built: Jul 22 2020 22:46:25
    ```
 
-1. Habilitar [reescribe y `.htaccess`](#apache-rewrites-and-htaccess).
+1. Activar [reescribe y `.htaccess`](#apache-rewrites-and-htaccess).
 
 ## Instalación de Apache en CentOS
 
-Adobe Commerce y Magento Open Source requieren que Apache use reescrituras del servidor. También debe especificar el tipo de directivas que se pueden usar en `.htaccess`, que la aplicación utiliza para especificar reglas de reescritura.
+Adobe Commerce y Magento Open Source requieren que Apache utilice reescrituras de servidor. También debe especificar el tipo de directivas que se pueden utilizar en `.htaccess`, que la aplicación utiliza para especificar reglas de reescritura.
 
-La instalación y configuración de Apache es básicamente un proceso de tres pasos: instalar el software, activar las reescrituras y especificar `.htaccess` directivas.
+La instalación y configuración de Apache es básicamente un proceso de tres pasos: instalar el software, habilitar las reescrituras y especificar `.htaccess` directivas.
 
 ### Instalación de Apache
 
@@ -197,7 +197,7 @@ La instalación y configuración de Apache es básicamente un proceso de tres pa
    yum -y install httpd
    ```
 
-1. Verifique la instalación:
+1. Compruebe la instalación:
 
    ```bash
    httpd -v
@@ -218,19 +218,19 @@ La instalación y configuración de Apache es básicamente un proceso de tres pa
 
 ### Habilitar reescrituras y .htaccess para CentOS
 
-1. Apertura `/etc/httpd/conf/httpd.conf` para editar:
+1. Abrir `/etc/httpd/conf/httpd.conf` archivo para editar:
 
    ```bash
    vim /etc/httpd/conf/httpd.conf`
    ```
 
-1. Busque el bloque que empieza por:
+1. Busque el bloque que comienza con:
 
    ```conf
    <Directory "/var/www/html">
    ```
 
-1. Cambiar el valor de `AllowOverride` a `All`.
+1. Cambiar el valor de `AllowOverride` hasta `All`.
 
    Por ejemplo,
 
@@ -245,7 +245,7 @@ La instalación y configuración de Apache es básicamente un proceso de tres pa
 
    >[!NOTE]
    >
-   >Los valores anteriores de `Order` puede que no funcione en todos los casos. Para obtener más información, consulte la documentación de Apache ([2,4](https://httpd.apache.org/docs/2.4/mod/mod_authz_host.html#order)).
+   >Los valores anteriores de `Order` podría no funcionar en todos los casos. Para obtener más información, consulte la documentación de Apache ([2,4](https://httpd.apache.org/docs/2.4/mod/mod_authz_host.html#order)).
 
 1. Guarde el archivo y salga del editor de texto.
 
@@ -257,21 +257,21 @@ La instalación y configuración de Apache es básicamente un proceso de tres pa
 
 >[!NOTE]
 >
->Si no se habilita esta configuración, normalmente no se mostrarán estilos en la tienda o en el administrador.
+>Si no se habilita esta configuración, no se muestran estilos en la tienda o el administrador.
 
 ### Habilitar reescrituras y .htaccess para Ubuntu
 
-1. Apertura `/etc/apache2/sites-available/default` para editar:
+1. Abrir `/etc/apache2/sites-available/default` archivo para editar:
 
    ```bash
    vim /etc/apache2/sites-available/default
    ```
 
-1. Busque el bloque que empieza por:
+1. Busque el bloque que comienza con:
 
    `<Directory "/var/www/html">`
 
-1. Cambiar el valor de `AllowOverride` a `All`.
+1. Cambiar el valor de `AllowOverride` hasta `All`.
 
    Por ejemplo:
 
@@ -286,7 +286,7 @@ La instalación y configuración de Apache es básicamente un proceso de tres pa
 
 1. Guarde el archivo y salga del editor de texto.
 
-1. Configure Apache para que use el `mod_rewrite` módulo:
+1. Configure Apache para que utilice `mod_rewrite` módulo:
 
    ```bash
    cd /etc/apache2/mods-enabled
@@ -304,11 +304,11 @@ La instalación y configuración de Apache es básicamente un proceso de tres pa
 
 ## Solución de errores 403 (prohibido)
 
-Si encuentra errores prohibidos 403 al intentar acceder al sitio, puede actualizar la configuración de Apache o la configuración del host virtual para permitir que los visitantes accedan al sitio:
+Si encuentra errores 403 prohibidos al intentar acceder al sitio, puede actualizar la configuración de Apache o la configuración del host virtual para permitir a los visitantes del sitio:
 
-### Solución de errores 403 prohibidos en Apache 2.4
+### Solución de errores 403 prohibidos para Apache 2.4
 
-Para permitir que los visitantes del sitio web accedan al sitio, use una de las [Requerir directivas](https://httpd.apache.org/docs/2.4/howto/access.html).
+Para permitir que los visitantes del sitio web accedan al sitio, utilice uno de los [Requerir directivas](https://httpd.apache.org/docs/2.4/howto/access.html).
 
 Por ejemplo:
 
@@ -323,4 +323,4 @@ Por ejemplo:
 
 >[!NOTE]
 >
->Los valores anteriores de `Order` puede que no funcione en todos los casos. Para obtener más información, consulte la [Documentación de Apache](https://httpd.apache.org/docs/2.4/mod/mod_access_compat.html#order).
+>Los valores anteriores de `Order` podría no funcionar en todos los casos. Para obtener más información, consulte la [Documentación de Apache](https://httpd.apache.org/docs/2.4/mod/mod_access_compat.html#order).

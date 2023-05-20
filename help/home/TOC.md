@@ -1,6 +1,6 @@
 ---
 user-guide-title: Guías operativas
-user-guide-description: Obtenga información sobre los aspectos operativos del mantenimiento de la aplicación Adobe Commerce o Magento Open Source.
+user-guide-description: Obtenga información sobre los aspectos operativos del mantenimiento de la aplicación de Adobe Commerce o de Magento Open Source.
 source-git-commit: 6291b6c9e062509e9bb2069050d455783fb06c7a
 workflow-type: tm+mt
 source-wordcount: '118'
@@ -11,16 +11,16 @@ ht-degree: 0%
 
 # Guías operativas de Adobe Commerce {#operational-guides}
 
-- [Página principal](home.md)
-- [Información de la versión](https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html)
+- [Inicio](home.md)
+- [Información de versión](https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html)
 - [Instalación](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/overview.html)
 - [Configuración](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/overview.html)
 - [Migración de datos](https://experienceleague.adobe.com/docs/commerce-operations/tools/data-migration/how-migration-works.html)
-- [Actualización](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/overview.html)
+- [Actualizar](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/overview.html)
 - [Prácticas recomendadas de rendimiento](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/overview.html)
 - [Herramientas](https://experienceleague.adobe.com/docs/commerce-operations/tools/overview.html)
-- [Herramientas de la línea de comandos](https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce.html)
+- [Herramientas de línea de comandos](https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce.html)
 - [Guía de implementación](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/overview.html)
-- [Manual operativo](https://experienceleague.adobe.com/docs/commerce-operations/operational-playbook/overview.html)
+- [Guía de funcionamiento](https://experienceleague.adobe.com/docs/commerce-operations/operational-playbook/overview.html)
 - [Comercio a escala](https://experienceleague.adobe.com/docs/commerce-operations/deliver-commerce-at-scale/overview.html)
-- [Seguridad y cumplimiento de normas](https://experienceleague.adobe.com/docs/commerce-operations/security-and-compliance/overview.html)
+- [Seguridad y cumplimiento](https://experienceleague.adobe.com/docs/commerce-operations/security-and-compliance/overview.html)

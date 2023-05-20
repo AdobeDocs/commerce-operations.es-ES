@@ -1,27 +1,28 @@
 ---
-title: "Empiece a utilizar: Selección de la cuenta y el periodo de tiempo"
-description: Obtenga información sobre cómo empezar a usar la variable [!DNL Observation for Adobe Commerce] nerdlet seleccionando la cuenta y el periodo de tiempo.
-source-git-commit: 86e990e18955cce8ed0917c72ddbe99d8cb3f333
+title: "Empezar a usar: Selección de la cuenta y el periodo de tiempo"
+description: Obtenga información sobre cómo empezar a utilizar el [!DNL Observation for Adobe Commerce] nerdlet seleccionando la cuenta y el periodo de tiempo.
+exl-id: f2364fa4-ef83-42f2-992f-e37ff1ac96a1
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '169'
 ht-degree: 0%
 
 ---
 
-# Selección de la cuenta y el periodo:
+# Selección de la cuenta y el calendario:
 
-Al hacer clic en el botón [!UICONTROL Observation for Adobe Commerce] el icono [!DNL Observation for Adobe Commerce] se abrirá el nerdlet.
+Al hacer clic en [!UICONTROL Observation for Adobe Commerce] , el icono [!DNL Observation for Adobe Commerce] nerdlet se abrirá.
 
-1. Haga clic en el **Seleccionar una cuenta** lista desplegable. Si no ve la variable **Seleccionar una cuenta** , es posible que no tenga acceso a . Haga clic en [here](https://adobe.sharepoint.com/sites/MG/it/IT%20Services%20Wiki/Requesting%20access%20to%20Magento%20Commerce%20New%20Relic.aspx) para solicitar acceso.
+1. Haga clic en **Seleccione una cuenta** desplegable. Si no ve el **Seleccione una cuenta** , es posible que no tenga acceso. Clic [aquí](https://adobe.sharepoint.com/sites/MG/it/IT%20Services%20Wiki/Requesting%20access%20to%20Magento%20Commerce%20New%20Relic.aspx) para solicitar acceso.
 
-   ![Seleccionar una cuenta](../../assets/tools/observation-for-adobe-commerce/start-using-1.jpeg)
+   ![Seleccione una cuenta](../../assets/tools/observation-for-adobe-commerce/start-using-1.jpeg)
 
-1. Puede pegar project_id. Escriba en el [!DNL New Relic] número de cuenta o nombre de cuenta, o busque la lista de cuentas.
+1. Puede pegar project_id, escriba en [!DNL New Relic] número de cuenta o nombre de cuenta, o examine la lista de cuentas.
 
-   ![Buscar en la lista de cuentas](../../assets/tools/observation-for-adobe-commerce/start-using-2.jpg)
+   ![Examinar la lista de cuentas](../../assets/tools/observation-for-adobe-commerce/start-using-2.jpg)
 
-1. Haga clic en el **azul claro** (hacia la parte superior derecha de la ventana de nerdlet), menú desplegable con el icono de reloj.
+1. Haga clic en **azul claro** (hacia la parte superior derecha de la ventana de nerdlet) menú desplegable con el icono del reloj.
 
    ![Haga clic en el menú desplegable](../../assets/tools/observation-for-adobe-commerce/start-using-3.jpg)
 
-1. Debe configurar la hora anterior a la fecha del ticket para ver si hubo eventos/datos anteriores. Puede utilizar los marcos de tiempo preestablecidos de la izquierda o establecer un intervalo de tiempo personalizado seleccionando **Establecer personalizado**.
+1. Debe establecer la hora antes de la fecha y hora del vale para ver si ha habido algún evento o dato anterior. Puede utilizar los marcos de tiempo preestablecidos a la izquierda o establecer un marco de tiempo personalizado seleccionando **Establecer personalizado**.

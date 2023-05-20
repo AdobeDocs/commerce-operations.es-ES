@@ -1,19 +1,19 @@
 ---
 title: Fases de implementación
-description: Obtenga información sobre las prácticas recomendadas para las fases de implementación de los proyectos de Adobe Commerce.
-source-git-commit: bb49e4f239d49393b5b8c82deabe15f6f53c26f7
+description: Conozca las prácticas recomendadas para las fases de implementación de los proyectos de Adobe Commerce.
+exl-id: c5272f79-7315-46dc-a191-a40004aaa812
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '157'
 ht-degree: 0%
 
 ---
 
-
 # Prácticas recomendadas de implementación
 
 Existen muchas maneras de implementar un proyecto de Adobe Commerce. Las prácticas recomendadas que se proporcionan en esta sección describen la forma en que Adobe espera que los clientes y socios implementen casos de uso específicos. Estas recomendaciones están diseñadas para ayudar a evitar problemas comunes y posibles problemas relacionados con la configuración y personalización del sitio, la implementación, las operaciones, el rendimiento y las actualizaciones.
 
-Estas prácticas recomendadas están organizadas por fase de implementación para que pueda encontrar las recomendaciones que se aplican a su caso de uso.
+Estas prácticas recomendadas se organizan por fase de implementación, para que pueda encontrar las recomendaciones que se aplican a su caso de uso.
 
 <table style="table-layout:fixed">
 <tr>
@@ -24,7 +24,7 @@ Estas prácticas recomendadas están organizadas por fase de implementación par
     <div>
     <a href="planning/overview.md"><strong>Planificación</strong></a>
     </div>
-    Recopilación de requisitos, diseño arquitectónico, diseño de catálogo, ámbito de proyecto, aprovisionamiento de cuentas, acceso de usuario, compra de extensiones
+    Recopilación de requisitos, diseño arquitectónico, diseño de catálogo, ámbito del proyecto, aprovisionamiento de cuentas, acceso de usuarios, compra de extensiones
     <br>
   </td>
   <td>
@@ -34,7 +34,7 @@ Estas prácticas recomendadas están organizadas por fase de implementación par
     <div>
     <a href="development/overview.md"><strong>Desarrollo</strong></a>
     </div>
-    Configuración del entorno de ensayo y local, solución de problemas, administración de código, planificación de sprint, revisión de sprint, pruebas de aceptación y cierre de sesión del cliente
+    Configuración del entorno local y de ensayo, solución de problemas, administración de código, planificación de sprint, revisión de sprint, pruebas de aceptación y desactivación del cliente
     <br>
   </td>
   <td>
@@ -44,7 +44,7 @@ Estas prácticas recomendadas están organizadas por fase de implementación par
     <div>
     <a href="launch/overview.md"><strong>Launch</strong></a>
     </div>
-    Revisiones finales de las listas de comprobación anteriores y posteriores al lanzamiento, implementación de producción, configuración de seguridad, verificación de servicios y supervisión del rendimiento  
+    Revisiones finales de listas de comprobación antes y después del inicio, implementación de producción, configuración de seguridad, verificación de servicio y monitorización del rendimiento  
     <br>
   </td>
   <td>

@@ -1,26 +1,27 @@
 ---
-title: Configuración de AWS S3 bucket para almacenamiento remoto
-description: Configure su proyecto de Commerce para utilizar el servicio de almacenamiento AWS S3 para almacenamiento remoto.
-source-git-commit: 31078c836fb088a10712c8c4cf4430a38d1962f2
+title: Configuración del compartimento de AWS S3 para almacenamiento remoto
+description: Configure su proyecto de Commerce para utilizar el servicio de almacenamiento AWS S3 para el almacenamiento remoto.
+exl-id: e8aeade8-2ec4-4844-bd6c-ab9489d10436
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '320'
 ht-degree: 0%
 
 ---
 
-# Configuración de AWS S3 bucket para almacenamiento remoto
+# Configuración del compartimento de AWS S3 para almacenamiento remoto
 
-La variable [Amazon Simple Storage Service (Amazon S3)][AWS S3] es un servicio de almacenamiento de objetos que ofrece escalabilidad, disponibilidad, seguridad y performance líderes en la industria. El servicio AWS S3 utiliza contenedores o contenedores para el almacenamiento de datos. Esta configuración requiere que cree un _private_ cubo. Para obtener Adobe Commerce sobre la infraestructura de nube, consulte [Configuración del almacenamiento remoto para Commerce en la infraestructura de Cloud](cloud-support.md).
+El [Amazon Simple Storage Service (Amazon S3)][AWS S3] es un servicio de almacenamiento de objetos que ofrece escalabilidad, disponibilidad de datos, seguridad y rendimiento líderes en el sector. El servicio AWS S3 utiliza contenedores para el almacenamiento de datos. Esta configuración requiere que cree un _privado_ cubo. Para obtener información sobre la infraestructura en la nube de Adobe Commerce, consulte [Configuración del almacenamiento remoto para Commerce en la infraestructura de Cloud](cloud-support.md).
 
 >[!WARNING]
 >
->El Adobe desalienta enormemente el uso de baldes públicos porque plantea un grave riesgo para la seguridad.
+>El Adobe desalienta enormemente el uso de contenedores públicos porque plantea un grave riesgo para la seguridad.
 
 **Para habilitar el almacenamiento remoto con el adaptador AWS S3**:
 
-1. Inicie sesión en el panel de Amazon S3 y cree un _private_ cubo.
+1. Inicie sesión en el tablero de Amazon S3 y cree una _privado_ cubo.
 
-1. Configuración [AWS IAM] funciones. Como alternativa, genere claves de acceso y de secreto.
+1. Configuración de [AWS IAM] funciones. También puede generar claves de acceso y de secreto.
 
 1. Deshabilite el almacenamiento predeterminado de la base de datos.
 
@@ -28,21 +29,21 @@ La variable [Amazon Simple Storage Service (Amazon S3)][AWS S3] es un servicio d
    bin/magento config:set system/media_storage_configuration/media_database 0
    ```
 
-1. Configure Commerce para utilizar el compartimento privado. Consulte [Opciones de almacenamiento remoto](remote-storage.md#remote-storage-options) para obtener una lista completa de los parámetros.
+1. Configure Commerce para que utilice el bloque privado. Consulte [Opciones de almacenamiento remoto](remote-storage.md#remote-storage-options) para obtener una lista completa de los parámetros.
 
    ```bash
    bin/magento setup:config:set --remote-storage-driver="aws-s3" --remote-storage-bucket="<bucket-name>" --remote-storage-region="<region-name>" --remote-storage-prefix="<optional-prefix>" --remote-storage-key=<optional-access-key> --remote-storage-secret=<optional-secret-key> -n
    ```
 
-1. Sincronice archivos multimedia con almacenamiento remoto.
+1. Sincronizar archivos multimedia con almacenamiento remoto.
 
    ```bash
    bin/magento remote-storage:sync
    ```
 
-## Configurar Nginx
+## Configuración De Nginx
 
-Nginx requiere una configuración adicional para realizar la autenticación con la variable `proxy_pass` directiva. Agregue la siguiente información del proxy al `nginx.conf` archivo:
+Nginx requiere una configuración adicional para realizar la autenticación con `proxy_pass` Directiva. Añada la siguiente información de proxy al `nginx.conf` archivo:
 
 >nginx.conf
 
@@ -65,15 +66,15 @@ location ~* \.(ico|jpg|jpeg|png|gif|svg|js|css|swf|eot|ttf|otf|woff|woff2)$ {
 
 ### Autenticación
 
-Si utiliza claves de acceso y secreto en lugar de [AWS IAM] , debe incluir el [`ngx_aws_auth` Módulo Nginx][ngx repo].
+Si utiliza acceso y claves secretas en lugar de [AWS IAM] funciones, debe incluir las siguientes funciones [`ngx_aws_auth` Módulo Nginx][ngx repo].
 
 ### Permisos
 
-La integración de S3 depende de la capacidad de generar y almacenar imágenes en caché en el sistema de archivos local. Por lo tanto, los permisos de carpeta de `pub/media` y directorios similares son los mismos para S3 que cuando se utiliza almacenamiento local.
+La integración de S3 depende de la capacidad de generar y almacenar imágenes en caché en el sistema de archivos local. Por lo tanto, permisos de carpeta para `pub/media` y directorios similares son los mismos para S3 que cuando se utiliza el almacenamiento local.
 
 ### Operaciones de archivo
 
-Se recomienda encarecidamente que utilice [!DNL Commerce] métodos del adaptador de archivos en el desarrollo de la codificación o extensión, independientemente del tipo de almacenamiento de archivos. Cuando utilice S3 para almacenamiento, no utilice operaciones nativas de E/S de archivos PHP, como `copy`, `rename`o `file_put_contents`, ya que los archivos S3 no se encuentran en el sistema de archivos. Consulte [DriverInterface.php](https://github.com/magento/magento2/blob/2.4-develop/lib/internal/Magento/Framework/Filesystem/DriverInterface.php#L18) para ver ejemplos de código.
+Se recomienda encarecidamente que utilice [!DNL Commerce] métodos de adaptador de archivos en el desarrollo de codificación o extensión, independientemente del tipo de almacenamiento de archivos. Cuando utilice S3 para almacenamiento, no utilice operaciones de E/S de archivos PHP nativas, como `copy`, `rename`, o `file_put_contents`, porque los archivos S3 no se encuentran en el sistema de archivos. Consulte [DriverInterface.php](https://github.com/magento/magento2/blob/2.4-develop/lib/internal/Magento/Framework/Filesystem/DriverInterface.php#L18) para ejemplos de código.
 
 <!-- link definitions -->
 

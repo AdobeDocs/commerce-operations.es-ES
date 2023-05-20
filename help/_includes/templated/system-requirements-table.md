@@ -14,8 +14,8 @@ ht-degree: 70%
         Dependencias de software
       </th>
       <th>2.4.6</th>
-      <th>2.4.5-p2</th>
-      <th>2.4.5-p1</th>
+      <th>2,4,5-p2</th>
+      <th>2,4,5-p1</th>
       <th>2.4.5</th>
       <th>2.4.4-p3</th>
       <th>2.4.4-p2</th>
@@ -663,7 +663,7 @@ ht-degree: 70%
     <tr>
       <td><span class="uicontrol">[!DNL AWS ElastiCache]</span></td>
       <td>
-            Versión 6.2
+            Redis 6.2
       </td>
       <td>
             Redis 6
@@ -800,7 +800,7 @@ ht-degree: 70%
 
 >[!IMPORTANT]
 >
->La versión del servicio y la compatibilidad con Adobe Commerce en la infraestructura de la nube están determinadas por las versiones implementadas en la infraestructura de la nube y, a veces, difieren de las versiones admitidas por las implementaciones locales de Adobe Commerce. Consulte [Software y servicios compatibles](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/cloud-architecture.html#supported-software-and-services) en el _Guía de Cloud_.
+>La compatibilidad y la versión del servicio para Adobe Commerce en la infraestructura en la nube están determinadas por las versiones implementadas en la infraestructura en la nube y, a veces, difieren de las versiones admitidas por las implementaciones locales de Adobe Commerce. Consulte [Software y servicios compatibles](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/cloud-architecture.html#supported-software-and-services) en el _Guía de Cloud_.
 
 >[!NOTE]
 >

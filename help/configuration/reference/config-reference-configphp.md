@@ -1,25 +1,25 @@
 ---
-title: Referencia config.php
-description: Consulte una lista de valores en el archivo config.php .
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+title: config.php reference
+description: Vea una lista de valores en el archivo config.php.
+exl-id: 9b355d6d-ea66-480b-ad96-0ea9e7e61844
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '164'
 ht-degree: 0%
 
 ---
 
+# config.php reference
 
-# Referencia config.php
-
-La variable `config.php` contiene las siguientes secciones:
+El `config.php` contiene las secciones siguientes:
 
 | Nombre | Descripción |
 | --------- | -------------------|
 | `i18n` | Todos los datos de traducción en línea. No se admite la lectura desde esta sección. |
-| `modules` | Lista de módulos habilitados y deshabilitados. |
-| `scopes` | Lista de tiendas, grupos de tiendas y sitios web con información relacionada. |
-| `system` | Las configuraciones del sistema necesarias para la implementación de contenido estático. |
-| `themes` | La configuración de los temas instalados. |
+| `modules` | La lista de módulos habilitados y deshabilitados. |
+| `scopes` | La lista de tiendas, grupos de tiendas y sitios web con información relacionada. |
+| `system` | Configuraciones del sistema necesarias para la implementación de contenido estático. |
+| `themes` | La configuración de las temáticas instaladas. |
 
 ## módulos
 
@@ -43,8 +43,8 @@ Contiene una matriz de valores de configuración de ámbito. Tiene los siguiente
 | Nombre | Descripción |
 | ---------- | -----------------------------------|
 | `websites` | Configuración del sitio web |
-| `groups` | Almacena la configuración |
-| `stores` | Configuración de vistas de almacén |
+| `groups` | Configuración de tiendas |
+| `stores` | Configuración de vistas de tienda |
 
 ```conf
 'scopes' => [
@@ -82,7 +82,7 @@ Contiene una matriz de valores de configuración de ámbito. Tiene los siguiente
 ]
 ```
 
-Más información sobre [Ámbitos comerciales][scopes].
+Más información sobre [Ámbitos de Commerce][scopes].
 
 ## sistema
 
@@ -102,9 +102,9 @@ Contiene una matriz de valores de configuración de campos del sistema.
 
 Más información sobre [Configuraciones específicas del sistema](config-reference-sens.md).
 
-## temáticas
+## temas
 
-Contiene una matriz de valores para la configuración del tema.
+Contiene una matriz de valores para la configuración de temáticas.
 
 ```conf
 'themes' => [

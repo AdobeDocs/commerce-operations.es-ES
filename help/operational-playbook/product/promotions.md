@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Promociones
 
-Con la mayor parte de la población en proceso de compra en línea, los minoristas deben estar un paso por delante para ofrecer la mejor experiencia al cliente. Los minoristas deben pensar en las mejores maneras de sacar sus productos del mercado. Aquí es donde entra en juego la estrategia de marketing. En un aspecto general, la estrategia de marketing consta de seis páginas:
+Con la mayoría de la población pasando a realizar compras en línea, los minoristas deben estar un paso por delante para ofrecer la mejor experiencia al cliente. Los minoristas deben pensar en las mejores formas de sacar sus productos al mercado. Aquí es donde la estrategia de marketing entra en juego. En un aspecto general, la estrategia de marketing consta de seis P:
 
 - Product
 - Precio
@@ -20,27 +20,27 @@ Con la mayor parte de la población en proceso de compra en línea, los minorist
 - People
 - Procesos
 
-Cada una de las seis P es igual de importante, pero para comercializar productos los minoristas necesitan usar las promociones como táctica para aumentar el tráfico en el sitio y llevar a tasas de conversión más altas. Las promociones ayudan a comercializar los productos y servicios que ofrece la marca. Hay varios niveles promocionales, como envío, producto y pedido.
+Cada una de las seis P es igualmente importante, pero para comercializar productos, los minoristas deben utilizar las promociones como táctica para aumentar el tráfico en el sitio y provocar tasas de conversión más altas. Las promociones ayudan a comercializar productos y servicios ofrecidos por la marca. Existen varios niveles promocionales, como envío, producto y pedido.
 
-![ejemplo de publicidad promocional](../../assets/playbooks/promotion-example.png)
+![ejemplo de anuncio promocional](../../assets/playbooks/promotion-example.png)
 
 ## Tipos de promociones
 
 Cada uno de estos niveles de promoción tiene diferentes tipos de promociones, entre las que se incluyen:
 
-- Giveaways
+- Regalos
 - ventas flash
-- Ejemplos libres
-- Comprar X en total
+- Muestras gratuitas
+- Comprar X para el total
 - Comprar 1 obtener 1 gratis
-- Productos de bonificación
-- varias compras
+- Productos adicionales
+- Compra múltiple
 - Venta cruzada
 - Paquetes
 - Conjuntos de productos
 - Cupones
 - Correos electrónicos promocionales
 - Envío gratuito
-- Descuento en el envío
+- Descuento en gastos de envío
 
-Los minoristas enfrentan una intensa competencia. Para tener una ventaja competitiva, los minoristas deben aplicar estrategias de marketing como las promociones. Cada minorista necesita analizar qué promociones funcionan mejor para ellos.
+Los minoristas se enfrentan a una competencia intensa. Para tener una ventaja competitiva, los minoristas deben aplicar estrategias de marketing como las promociones. Cada minorista debe analizar qué promociones funcionan mejor para ellos.

@@ -1,25 +1,25 @@
 ---
-title: Personalizar rutas de directorios base
+title: Personalizar rutas de directorio base
 description: Utilice la variable MAGE_DIRS para establecer una matriz de rutas absolutas.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+exl-id: ee8e1a3a-f1d4-412c-8767-16447113f0cd
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '129'
 ht-degree: 0%
 
 ---
 
-
 # Rutas de directorio base
 
-La variable `MAGE_DIRS` la variable environment permite especificar rutas de directorio base personalizadas y fragmentos de direcciones URL base que usa la aplicación Commerce para crear rutas absolutas a varios archivos o para generar direcciones URL.
+El `MAGE_DIRS` La variable de entorno permite especificar rutas de directorio base personalizadas y fragmentos de direcciones URL base que utiliza la aplicación Commerce para crear rutas absolutas a varios archivos o para generar direcciones URL.
 
 ## Establecer MAGE_DIRS
 
-Especifique una matriz asociativa en la que las claves sean constantes de [\\Magento\\App\\Filesystem\\DirectoryList][directory-list] y son rutas absolutas de directorios o sus rutas URL, respectivamente.
+Especifique una matriz asociativa de la que las claves sean constantes [\\Magento\\App\\Filesystem\\DirectoryList][directory-list] y son rutas absolutas de directorios o sus rutas URL, respectivamente.
 
 Puede establecer `MAGE_DIRS` de cualquiera de las siguientes maneras:
 
-- [Establezca el valor de los parámetros de arranque](../bootstrap/set-parameters.md)
+- [Establecer el valor de los parámetros de arranque](../bootstrap/set-parameters.md)
 - Utilice un script de punto de entrada personalizado como el siguiente:
 
    ```php
@@ -48,7 +48,7 @@ Puede establecer `MAGE_DIRS` de cualquiera de las siguientes maneras:
    $bootstrap->run($app);
    ```
 
-El ejemplo anterior establece rutas para `[cache]` y `[media]` directorios a `/mnt/nfs/cache` y `/mnt/nfs/media`, respectivamente.
+En el ejemplo anterior se establecen las rutas de `[cache]` y `[media]` directorios para `/mnt/nfs/cache` y `/mnt/nfs/media`, respectivamente.
 
 <!-- link definitions -->
 

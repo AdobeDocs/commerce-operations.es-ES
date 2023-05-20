@@ -4,13 +4,13 @@ description: Obtenga información sobre cómo crear y utilizar una lista de comp
 role: Leader
 feature: Best Practices
 feature-set: Commerce
-source-git-commit: 5e02f300bb0b5601c653fdea1dd5b85f4e18ed9c
+exl-id: c9b644fa-290c-4f33-b5a7-19f7122ff08e
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '498'
 ht-degree: 0%
 
 ---
-
 
 # Prácticas recomendadas de lista de comprobación de actualización
 

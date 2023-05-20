@@ -1,55 +1,55 @@
 ---
-title: Múltiples sitios web o tiendas
-description: Aprenda cómo iniciar varios sitios web o implementar vistas de tiendas con diferentes opciones, dominios y contenido.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+title: Varios sitios web o tiendas
+description: Descubra cómo puede iniciar varios sitios web o implementar vistas de tiendas con diferentes opciones, dominios y contenido.
+exl-id: 724d75d9-13fc-40f9-951a-69aa407adb6f
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '433'
 ht-degree: 0%
 
 ---
 
+# Varios sitios web o tiendas
 
-# Múltiples sitios web o tiendas
-
-Una sola instancia del software de Adobe Commerce permite iniciar varios sitios web o almacenar vistas que utilicen atributos y contenido diferentes, como:
+Una sola instancia del software de Adobe Commerce le permite iniciar varios sitios web o almacenar vistas que utilizan atributos y contenido diferentes, como:
 
 - Idiomas predeterminados
 - Nombres de dominio
 - Categorías
 - Productos
-- Monedas
+- Divisas
 
-Esta solución flexible permite que un código de barras de comercio y un administrador administren y muestren diferentes tiendas. Los sitios web, las tiendas y las vistas de las tiendas se configuran en Administración. Utilice ciertas variables en los hosts virtuales para iniciar la aplicación de comercio con estos sitios web o vistas de tienda.
+Esta solución flexible permite que un administrador y un código de Commerce administren y muestren diferentes tiendas. Puede configurar los sitios web, las tiendas y las vistas de las tiendas en el Administrador de. Utilice determinadas variables en hosts virtuales para iniciar la aplicación de Commerce mediante estos sitios web o vistas de tiendas.
 
-Un uso habitual es configurar tiendas con diferentes opciones en distintos dominios. Por ejemplo, puede tener un conjunto de categorías y productos en un dominio y otro conjunto de categorías y productos en un dominio separado en un idioma diferente.
+Un uso típico es configurar tiendas con diferentes opciones en diferentes dominios. Por ejemplo, puede tener un conjunto de categorías y productos en un dominio y otro conjunto de categorías y productos en un dominio independiente en un idioma diferente.
 
-Los sitios web, las tiendas y las vistas de las tiendas se configuran en el Administrador de comercio. Utilice la variable `MAGE_RUN_TYPE` y `MAGE_RUN_CODE` en hosts virtuales para iniciar la aplicación Commerce con estos sitios web o vistas de tienda.
+Puede configurar los sitios web, las tiendas y las vistas de las tiendas en el administrador de Commerce. Utilice el `MAGE_RUN_TYPE` y `MAGE_RUN_CODE` en hosts virtuales para iniciar la aplicación de Commerce mediante estos sitios web o vistas de tiendas.
 
 Tenga en cuenta los siguientes términos:
 
-- **Sitio web**: es el contenedor de nivel superior para sitios, métodos de envío, métodos de pago y mucho más. Para crear sitios completamente separados que no compartan carro, métodos de envío u otros, debe crear sitios web independientes.
+- **Sitio web**: es el contenedor de nivel superior para sitios, métodos de envío, métodos de pago y mucho más. Para crear sitios completamente independientes que no compartan el carro de compras, los métodos de envío u otros, debe crear sitios web independientes.
 
-   Las cuentas de cliente de sitio web se pueden compartir entre varios sitios web dentro de una sola instancia de Commerce. Un sitio web contiene al menos una tienda. Los precios del catálogo deben administrarse a nivel de sitio web.
+   Las cuentas de cliente del sitio web se pueden compartir entre varios sitios web dentro de una sola instancia de Commerce. Un sitio web contiene al menos una tienda. Los precios de catálogo deben gestionarse a nivel de sitio web.
 
-- **Tienda**—está contenido en un sitio web. A su vez, una tienda contiene al menos una *vista de tienda*.
+- **Almacenar**: se encuentra en un sitio web. A su vez, una tienda contiene al menos una *vista de tienda*.
 
-   Varias tiendas pueden compartir carros, sesiones de usuario, puertas de enlace de pago y mucho más, pero tienen estructuras de catálogo y precio de catálogo independientes.
+   Varias tiendas pueden compartir el carro de compras, sesiones de usuarios, puertas de enlace de pago y mucho más, pero tienen estructuras de catálogo y precios de catálogo independientes.
 
-   La cantidad del catálogo (inventario) no se puede administrar en el nivel de tienda. El inventario se administra solo en el sitio web o a nivel global.
+   La cantidad de catálogo (inventario) no se puede administrar en el nivel de tienda. El inventario solo se administra en el nivel del sitio web o global.
 
-   Las vistas de la tienda cambian la forma en que se presentan las páginas y, por lo general, se utilizan para mostrar una tienda con diferentes diseños o idiomas. Puede administrar distintas monedas por vista de tienda.
+   Las vistas de tienda cambian la forma en que se presentan las páginas y, por lo general, se utilizan para mostrar una tienda con diferentes diseños o idiomas. Puede administrar distintas monedas por vista de tienda.
 
-   Cada sitio web y cada vista de tienda deben tener un identificador único. Este identificador es necesario para utilizar la variable `MAGE_RUN_TYPE` y `MAGE_RUN_CODE` de la siguiente manera:
+   Cada sitio web y cada vista de tienda deben tener un identificador único. Este identificador es necesario para utilizar `MAGE_RUN_TYPE` y `MAGE_RUN_CODE` como se indica a continuación:
 
-- `MAGE_RUN_TYPE` puede `store` o `website`
+- `MAGE_RUN_TYPE` puede ser `store` o `website`
 
-   - Uso `website` para cargar un sitio web en tu tienda.
+   - Uso `website` para cargar un sitio web en la tienda.
    - Uso `store` para cargar cualquier vista de tienda en tu tienda.
 
-- `MAGE_RUN_CODE` es el código de vista de tienda o sitio web único que corresponde a `MAGE_RUN_TYPE`
+- `MAGE_RUN_CODE` es el sitio web único o el código de vista de tienda que corresponde a `MAGE_RUN_TYPE`
 
 A continuación se muestra un resumen de las tareas que debe realizar:
 
-1. [Configure sitios web, tiendas y vistas de tienda en Administración.](ms-admin.md)
-1. Cree un host virtual para cargar muchos sitios web o un host virtual por cada sitio web de comercio o vista de tienda para permitir directivas específicas para cada tienda.
-1. Transfiera los valores de `MAGE_RUN_TYPE` y `MAGE_RUN_CODE` al servidor web.
+1. [Configure sitios web, tiendas y vistas de tiendas en el Administrador de.](ms-admin.md)
+1. Cree un host virtual para cargar muchos sitios web o un host virtual por sitio web de Commerce o vista de tienda para permitir directivas específicas para cada tienda.
+1. Pasar los valores de `MAGE_RUN_TYPE` y `MAGE_RUN_CODE` al servidor web.

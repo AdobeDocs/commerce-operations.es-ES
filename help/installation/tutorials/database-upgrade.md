@@ -1,29 +1,29 @@
 ---
-title: Actualización del esquema y los datos de la base de datos
-description: Siga estos pasos para actualizar el esquema de la base de datos de Adobe Commerce o Magento Open Source.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+title: Actualizar el esquema y los datos de la base de datos
+description: Siga estos pasos para actualizar el esquema de base de datos de Adobe Commerce o Magento Open Source.
+exl-id: bef04561-6c6b-4636-a8ab-a1ade44f5a8f
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '173'
 ht-degree: 0%
 
 ---
 
-
-# Actualización del esquema y los datos de la base de datos
+# Actualizar el esquema y los datos de la base de datos
 
 Antes de utilizar este comando, debe [instalar la aplicación](../advanced.md).
 
-## Actualización del esquema y los datos de la base de datos
+## Actualizar el esquema y los datos de la base de datos
 
-Siempre que realice una acción que haga que cambien los datos o el esquema de la base de datos, debe actualizarlos ejecutando el comando analizado en esta sección. A continuación se ofrece una lista parcial de motivos:
+Cada vez que realice una acción que provoque cambios en el esquema o los datos de la base de datos, debe actualizarlos ejecutando el comando que se describe en esta sección. A continuación se ofrece una lista parcial de motivos:
 
-* Ha actualizado la aplicación utilizando la línea de comandos
+* Ha actualizado la aplicación mediante la línea de comandos
 * Ha instalado o actualizado un componente mediante la línea de comandos
 * Ha habilitado o deshabilitado un componente mediante la línea de comandos
 
 >[!NOTE]
 >
->A *componente* puede ser un módulo, tema o paquete de idioma; no importa si el componente viene del Commerce Marketplace o no.
+>A *componente* puede ser un módulo, una temática o un paquete de idioma; no importa si el componente procede del Commerce Marketplace o no.
 
 1. Inicie la actualización:
 
@@ -31,7 +31,7 @@ Siempre que realice una acción que haga que cambien los datos o el esquema de l
    bin/magento setup:upgrade [--keep-generated]
    ```
 
-   Donde `--keep-generated` es un argumento opcional que no se actualiza [archivos de vista estáticos](../../configuration/cli/static-view-file-deployment.md). Este argumento opcional es para su uso *only* en circunstancias limitadas por integradores de sistemas experimentados. Debe usarse *only* en [modo de producción](../../configuration/bootstrap/application-modes.md#production-mode). Debería *not* para usar en [modo de desarrollador](../../configuration/bootstrap/application-modes.md#developer-mode).
+   Donde `--keep-generated` es un argumento opcional que no se actualiza [archivos de vista estática](../../configuration/cli/static-view-file-deployment.md). Este argumento opcional es para uso *solamente* en circunstancias limitadas por integradores de sistemas experimentados. Debe usarse. *solamente* in [modo de producción](../../configuration/bootstrap/application-modes.md#production-mode). Debería *no* se utilizará en [modo de desarrollador](../../configuration/bootstrap/application-modes.md#developer-mode).
 
 1. Limpie la caché:
 

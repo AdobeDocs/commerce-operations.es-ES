@@ -1,13 +1,13 @@
 ---
 title: Modos de aplicación
 description: La aplicación Commerce puede funcionar en diferentes modos según sus necesidades. Vea una lista detallada de los modos de aplicación disponibles.
-source-git-commit: e7c325aef90d4135218b984cc57df2c8d1d921d2
+exl-id: a2a71f43-682f-4fa4-940a-1f6a4d441c41
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '719'
 ht-degree: 0%
 
 ---
-
 
 # Modos de aplicación
 

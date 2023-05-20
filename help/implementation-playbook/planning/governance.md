@@ -1,6 +1,6 @@
 ---
 title: Gobernanza del proyecto
-description: Aplique las recomendaciones de control de proyecto a su implementación de Adobe Commerce.
+description: Aplique nuestras recomendaciones de control de proyectos a su implementación de Adobe Commerce.
 exl-id: adf53a2a-1673-441a-84d3-4cdda47d6aa5
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
@@ -9,99 +9,99 @@ ht-degree: 0%
 
 ---
 
-# Administración de proyectos
+# Gobernanza del proyecto
 
-La gobernanza del proyecto es una función de supervisión que se ajusta a la estructura de gobernanza de la organización y que abarca el ciclo de vida del proyecto. Proporciona al director y al equipo del proyecto estructura, procesos, modelos de toma de decisiones y herramientas para administrar y controlar el proyecto, asegurando al mismo tiempo la entrega exitosa del proyecto. La gobernanza de los proyectos es un elemento crucial, especialmente para proyectos complejos y estratégicos.
+La gobernanza del proyecto es una función de supervisión alineada con la estructura de gobernanza de la organización y abarca el ciclo de vida del proyecto. Proporciona al administrador y al equipo del proyecto la estructura, los procesos, los modelos de toma de decisiones y las herramientas para administrar y controlar el proyecto, al tiempo que garantiza la entrega exitosa del proyecto. La gobernanza de los proyectos es un elemento crucial, especialmente para proyectos complejos y estratégicos.
 
-El modelo de gobernanza define, documenta y comunica prácticas personalizadas y efectivas para proporcionar un método integral de controlar el proyecto y proporcionar visibilidad periódica en todos los niveles para garantizar el éxito. Contiene un marco para la adopción de decisiones; define las funciones, responsabilidades y responsabilidades para la realización del proyecto; y gobierna la eficacia. La estructura de gobierno se resume desde el equipo de ejecución hasta la administración ejecutiva, definiendo las actividades, los informes, la escalación y el flujo de información.
+El modelo de gobernanza define, documenta y comunica prácticas personalizadas y efectivas para proporcionar un método integral de control del proyecto y proporcionar visibilidad periódica en todos los niveles para garantizar el éxito. Contiene un marco para la toma de decisiones; define las funciones, responsabilidades y responsabilidades para la realización del proyecto; y gobierna la efectividad. La estructura de gobernanza se acumula desde el equipo de ejecución hasta la administración ejecutiva, lo que define las actividades, los informes, la escalación y el flujo de información.
 
-![Infografía sobre la gobernanza del proyecto](../../assets/playbooks/project-governance.svg)
+![Infografía de gobernanza del proyecto](../../assets/playbooks/project-governance.svg)
 
-En varios niveles, los equipos analizan métricas específicas de sprint y proyecto para comprender el progreso y tomar las medidas correctivas necesarias. Estas métricas de nivel de sprint pueden incluir la velocidad y la fragmentación de cada sprint.
+En varios niveles, los equipos analizan las métricas específicas de sprint y proyecto para comprender el progreso y tomar las medidas correctivas necesarias. Estas métricas a nivel de sprint pueden incluir la velocidad y la evolución de cada sprint.
 
-## Detalles de la reunión ordinaria
+## Detalles de la reunión regular
 
-- Informe trimestral de las empresas
+- Informe comercial trimestral
 
-   - Analizar las estrategias de escalación del crecimiento
+   - Analizar las estrategias de aumento del crecimiento
 
    - Resaltar el éxito y los objetivos actuales
 
-   - Alinear en los resultados deseados para los próximos trimestres
+   - Alinee los resultados deseados para los próximos trimestres
 
 - Comité directivo mensual
 
-   - Coordinar y examinar la marcha de los proyectos
+   - Coordinación y revisión del progreso del proyecto
 
-   - Adopción de decisiones sobre los principales elementos de impacto (si los hubiere)
+   - Toma de decisiones sobre los principales elementos de impacto (si los hay)
 
-   - Dentsuen garantiza que la satisfacción de los clientes y las preocupaciones se registren y aborden
+   - Dentsuen asegura que la satisfacción del cliente y las preocupaciones son registradas y atendidas
 
 - Comité de proyecto semanal
 
    - Decidir los objetivos, el plan y la organización de la semana
 
-   - Tome las decisiones de arquitectura necesarias
+   - Tome las decisiones de arquitectura que sean necesarias
 
-   - Revisar y actuar en informes de estado del proyecto
+   - Revisar informes de estado del proyecto y actuar en consecuencia
 
-   - Demostración de la plataforma y las funciones
+   - Demostraciones de la plataforma y las funciones
 
    - Escalar solicitudes/problemas/sugerencias
 
 - Reunión diaria
 
-   - Debatir y hacer un seguimiento de los elementos de acción, incluidos los actuales sprint/boards/tickets pendientes
+   - Discutir y dar seguimiento a los elementos de acción, incluyendo sprint/boards/tickets pendientes actuales
 
    - Monitorización del progreso del proyecto
 
 ## KPI de rendimiento
 
-Además de las métricas de sprint, también es esencial medir los KPI de rendimiento de calidad y proyecto. Esto no sólo ayuda a garantizar el nivel de calidad a lo largo del plan, sino que mantiene al equipo en marcha e impide que el proyecto salga fuera de los rieles.
+Además de las métricas de sprint, también es esencial medir los KPI de rendimiento de calidad y del proyecto. Esto no solo ayuda a garantizar el nivel de calidad en todo el plan, sino que mantiene al equipo en marcha y evita que el proyecto se salga de control.
 
 ## Guión gráfico y velocidad
 
-![Ejemplo de placa Kanban](../../assets/playbooks/kanban-board-chart.svg)
+![Ejemplo de panel Kanban](../../assets/playbooks/kanban-board-chart.svg)
 
-## Descarga de impresión y liberación
+## Evolución de Sprint y Release
 
-![Ejemplo de gráfico de resumen de impresión y lanzamiento](../../assets/playbooks/sprint-release-burndown.svg)
+![Ejemplo de gráfico de evolución de sprint y release](../../assets/playbooks/sprint-release-burndown.svg)
 
-Los desafíos o cambios se producen durante la duración de cualquier proyecto. Fortalecer a las personas adecuadas dentro de su organización con la capacidad de rastrear, medir y girar cuando se cumpla un desafío aumentará la probabilidad de que salga del proyecto que haya cumplido sus objetivos y esté satisfecho con el resultado.
+Los desafíos o cambios se producen a lo largo de la duración de cualquier proyecto. Dar a las personas adecuadas dentro de su organización la capacidad de rastrear, medir y pivotar cuando se cumple un desafío aumentará la probabilidad de que salga del proyecto habiendo alcanzado sus objetivos y esté satisfecho con el resultado.
 
 <table>
 <thead>
   <tr>
     <th>Medición de rendimiento clave</th>
     <th>Unidad de medida</th>
-    <th>Métricas de informes</th>
+    <th>Métricas registradas</th>
   </tr>
 </thead>
 <tbody>
   <tr>
-    <td>Cobertura de la prueba</td>
+    <td>Cobertura de prueba</td>
     <td>%</td>
-    <td>N.º de requisitos de pruebas cubiertos por los casos de ensayo frente al total de requisitos de pruebas de base</td>
+    <td>N.º de requisitos comprobables cubiertos por los casos de ensayo VS Total de requisitos comprobables aprobados</td>
   </tr>
   <tr>
-    <td>Densidad de defecto</td>
+    <td>Densidad del defecto</td>
     <td>%</td>
-    <td>N.º de defectos válidos encontrados VS Total de casos de prueba ejecutados</td>
+    <td>Número de defectos válidos encontrados frente al total de casos de prueba ejecutados</td>
   </tr>
   <tr>
-    <td>Filtración de defectos a SIT/UAT/Producción</td>
+    <td>Fuga de defectos a SIT/UAT/Producción</td>
     <td>%</td>
     <td>Defectos notificados en Producción VS Defectos notificados en Producción + Defectos notificados por QA+UAT</td>
   </tr>
   <tr>
-    <td>Eficacia de las pruebas</td>
+    <td>Eficacia de pruebas</td>
     <td>%</td>
-    <td>Defectos válidos elevados/Defectos válidos planteados Defectos rechazados</td>
+    <td>Defectos válidos provocados/Defectos válidos provocados Defectos rechazados</td>
   </tr>
   <tr>
     <td>Calidad de código</td>
     <td># + %</td>
-    <td>Complejidad, LoC, Violaciones, Cobertura de código para la huella digital</td>
+    <td>Complejidad, LoC, Violaciones, Cobertura de código para el sprint</td>
   </tr>
 </tbody>
 </table>

@@ -1,32 +1,32 @@
 ---
 title: Instalación de una extensión
 description: Siga estos pasos para instalar una extensión de Adobe Commerce o Magento Open Source.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: b564662a-2e5f-4fa9-bae1-ca7498478fa9
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '645'
 ht-degree: 0%
 
 ---
 
-
 # Instalación de una extensión
 
-El código que amplía o personaliza el comportamiento de Adobe Commerce y Magento Open Source se denomina extensión. Opcionalmente, puede empaquetar y distribuir extensiones en la variable [Commerce Marketplace](https://marketplace.magento.com) u otro sistema de distribución de extensiones.
+El código que amplía o personaliza el comportamiento de Adobe Commerce y de los Magento Open Source se denomina extensión. Si lo desea, puede empaquetar y distribuir extensiones en [Commerce Marketplace](https://marketplace.magento.com) u otro sistema de distribución de extensiones.
 
 Las extensiones incluyen:
 
 - Módulos (ampliación de las funciones de Adobe Commerce y Magento Open Source)
-- Temas (cambiar la apariencia de su tienda y administrador)
+- Temas (cambia la apariencia de tu tienda y administrador)
 - Paquetes de idioma (localice la tienda y el administrador)
 
 >[!TIP]
 >
->En este tema se explica cómo utilizar la línea de comandos para instalar las extensiones que compra al Commerce Marketplace. Puede utilizar el mismo procedimiento para instalar _any_ extensión; todo lo que necesita es el nombre y la versión del Compositor de la extensión. Para encontrarlo, abra el informe `composer.json` y observe los valores de `"name"` y `"version"`.
+>En este tema se explica cómo utilizar la línea de comandos para instalar extensiones que adquiere del Commerce Marketplace. Puede utilizar el mismo procedimiento para instalar _cualquiera_ Extensión; todo lo que necesita es el nombre y la versión Compositor de la extensión. Para encontrarlo, abra el de la extensión de `composer.json` y anote los valores de `"name"` y `"version"`.
 
 Antes de la instalación, es posible que desee:
 
 1. Haga una copia de seguridad de la base de datos.
-1. Habilitar modo de mantenimiento:
+1. Activar modo de mantenimiento:
 
    ```bash
    bin/magento maintenance:enable
@@ -34,7 +34,7 @@ Antes de la instalación, es posible que desee:
 
 Para instalar una extensión, debe:
 
-1. Obtenga una extensión del Commerce Marketplace o de otro desarrollador de extensiones.
+1. Obtenga una extensión del Commerce Marketplace u otro desarrollador de extensiones.
 1. Si instala una extensión desde el Commerce Marketplace, asegúrese de que la variable `repo.magento.com` el repositorio existe en su `composer.json` archivo:
 
    ```bash
@@ -46,40 +46,40 @@ Para instalar una extensión, debe:
    ]
    ```
 
-1. Obtenga el nombre y la versión del Compositor de extensiones.
+1. Obtenga el nombre y la versión del compositor de la extensión.
 1. Actualice el `composer.json` en el proyecto con el nombre y la versión de la extensión.
-1. Compruebe que la extensión está instalada correctamente.
-1. Habilite y configure la extensión de .
+1. Compruebe que la extensión de está instalada correctamente.
+1. Habilite y configure la extensión de.
 
-## Obtenga el nombre y la versión del Compositor de extensiones
+## Obtener el nombre y la versión de la extensión Compositor
 
-Si ya conoce el nombre y la versión del Compositor de extensiones, omita este paso y continúe con [Actualice su `composer.json` file](#update-your-composer-file).
+Si ya conoce el nombre y la versión del compositor de la extensión, omita este paso y continúe con [Actualice su `composer.json` archivo](#update-your-composer-file).
 
-Para obtener el nombre y la versión del Compositor de la extensión del Commerce Marketplace:
+Para obtener el nombre y la versión del compositor de la extensión desde el Commerce Marketplace:
 
-1. Iniciar sesión en [Commerce Marketplace](https://marketplace.magento.com) con el nombre de usuario y la contraseña que utilizó para comprar la extensión.
+1. Iniciar sesión en [Commerce Marketplace](https://marketplace.magento.com) con el nombre de usuario y la contraseña que utilizó para adquirir la extensión de.
 
 1. En la esquina superior derecha, haga clic en **Su nombre** > **Mi perfil**.
 
-   ![Acceda a su cuenta de Marketplace](../../assets/installation/marketplace-my-profile.png)
+   ![Acceder a su cuenta de Marketplace](../../assets/installation/marketplace-my-profile.png)
 
-1. Haga clic en **Mis compras**.
+1. Clic **Mis compras**.
 
-   ![Historial de compras en Marketplace](../../assets/installation//marketplace-my-purchases.png)
+   ![Historial de compras de Marketplace](../../assets/installation//marketplace-my-purchases.png)
 
 1. Busque la extensión que desea instalar y haga clic en **Detalles técnicos**.
 
-   ![Los detalles técnicos muestran el nombre del Compositor de la extensión](../../assets/installation/marketplace-extension-technical-details.png)
+   ![Los detalles técnicos muestran el nombre de Compositor de la extensión.](../../assets/installation/marketplace-extension-technical-details.png)
 
 >[!TIP]
 >
->También puede encontrar el nombre y la versión del Compositor de _any_ (ya sea que la haya comprado en el Commerce Marketplace o en otro lugar) en la extensión de `composer.json` archivo.
+>También puede encontrar el nombre del compositor y la versión de _cualquiera_ extensión (tanto si la compró en Commerce Marketplace como en otro sitio) en el `composer.json` archivo.
 
-## Actualizar el archivo del Compositor
+## Actualizar el archivo de composición
 
 Añada el nombre y la versión de la extensión a su `composer.json` archivo:
 
-1. Vaya al directorio del proyecto y actualice la `composer.json` archivo.
+1. Vaya al directorio del proyecto y actualice el `composer.json` archivo.
 
    ```bash
    composer require <component-name>:<version>
@@ -91,9 +91,9 @@ Añada el nombre y la versión de la extensión a su `composer.json` archivo:
    composer require j2t/module-payplug:2.0.2
    ```
 
-1. Escriba la [claves de autenticación](../prerequisites/authentication-keys.md). Su clave pública es su nombre de usuario; la clave privada es su contraseña.
+1. Introduzca su [claves de autenticación](../prerequisites/authentication-keys.md). Su clave pública es su nombre de usuario; su clave privada es su contraseña.
 
-1. Espere a que el Compositor termine de actualizar las dependencias del proyecto y asegúrese de que no haya errores:
+1. Espere a que Composer termine de actualizar las dependencias del proyecto y asegúrese de que no hay errores:
 
    ```terminal
    Updating dependencies (including require-dev)
@@ -105,31 +105,31 @@ Añada el nombre y la versión de la extensión a su `composer.json` archivo:
 
 ## Verificar la extensión
 
-Para comprobar que la extensión está instalada correctamente, ejecute el siguiente comando:
+Para comprobar que la extensión de está instalada correctamente, ejecute el siguiente comando:
 
 ```bash
 bin/magento module:status J2t_Payplug
 ```
 
-De forma predeterminada, la extensión probablemente esté deshabilitada:
+De forma predeterminada, la extensión está probablemente deshabilitada:
 
 ```terminal
 Module is disabled
 ```
 
-El nombre de la extensión tiene el formato `<VendorName>_<ComponentName>`; este es un formato diferente al nombre del Compositor. Utilice este formato para activar la extensión de . Si no está seguro del nombre de la extensión, ejecute:
+El nombre de la extensión tiene el formato `<VendorName>_<ComponentName>`; este es un formato diferente del nombre del Compositor. Utilice este formato para activar la extensión de. Si no está seguro del nombre de la extensión, ejecute:
 
 ```bash
 bin/magento module:status
 ```
 
-Y busque la extensión en &quot;Lista de módulos deshabilitados&quot;.
+Y busque la extensión en &quot;Lista de módulos desactivados&quot;.
 
 ## Habilitar la extensión
 
-Algunas extensiones no funcionan correctamente a menos que borre primero los archivos de vista estáticos generados. Utilice la variable `--clear-static-content` para borrar los archivos de vista estáticos al activar una extensión.
+Algunas extensiones no funcionan correctamente a menos que borre primero los archivos de vista estática generados. Utilice el `--clear-static-content` para borrar los archivos de vista estática al activar una extensión.
 
-1. Habilite la extensión y borre los archivos de vista estáticos:
+1. Habilite la extensión y borre los archivos de vista estática:
 
    ```bash
    bin/magento module:enable J2t_Payplug --clear-static-content
@@ -147,13 +147,13 @@ Algunas extensiones no funcionan correctamente a menos que borre primero los arc
    Generated static view files cleared successfully.
    ```
 
-1. Registre la extensión de :
+1. Registre la extensión:
 
    ```bash
    bin/magento setup:upgrade
    ```
 
-1. Recompile el proyecto: En el modo Producción, puede recibir un mensaje para &quot;Vuelva a ejecutar el comando de compilación del Magento&quot;. La aplicación no le solicita que ejecute el comando de compilación en modo de desarrollador.
+1. Vuelva a compilar el proyecto: en el modo de producción, puede recibir un mensaje que indique &quot;Vuelva a ejecutar el comando de compilación del Magento&quot;. La aplicación no le pide que ejecute el comando de compilación en modo de desarrollador.
 
    ```bash
    bin/magento setup:di:compile
@@ -165,7 +165,7 @@ Algunas extensiones no funcionan correctamente a menos que borre primero los arc
    bin/magento module:status J2t_Payplug
    ```
 
-   Debería ver los resultados que verifican que la extensión ya no está deshabilitada:
+   Debería ver la salida que verifica que la extensión ya no está deshabilitada:
 
    ```terminal
    Module is enabled
@@ -177,13 +177,13 @@ Algunas extensiones no funcionan correctamente a menos que borre primero los arc
    bin/magento cache:clean
    ```
 
-1. Configure la extensión en Admin según sea necesario.
+1. Configure la extensión en Administración según sea necesario.
 
 >[!TIP]
 >
 >Si se producen errores al cargar la tienda en un explorador, utilice el siguiente comando para borrar la caché: `bin/magento cache:flush`.
 
-## Actualizar una extensión
+## Actualización de una extensión
 
 Para actualizar o actualizar un módulo o una extensión:
 
@@ -191,7 +191,7 @@ Para actualizar o actualizar un módulo o una extensión:
 
 1. Exporte el contenido al directorio raíz de la aplicación.
 
-1. Si existe un paquete Composer para el módulo, ejecute uno de los siguientes.
+1. Si existe un paquete Composer para el módulo, ejecute una de las siguientes acciones.
 
    Actualización por nombre de módulo:
 

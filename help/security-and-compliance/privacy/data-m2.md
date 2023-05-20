@@ -1,60 +1,60 @@
 ---
 title: Referencia de información personal del cliente (versión 2.x)
 description: Obtenga información sobre los diagramas de flujo de datos y las asignaciones de entidades de base de datos para la información personal del cliente en Adobe Commerce y Magento Open Source 2.x.
-source-git-commit: 2120e5bb912a89c58611ef9e23661a54e40a14f1
+exl-id: f08f4f93-a7b6-4c43-bc07-f159822dc528
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '755'
 ht-degree: 0%
 
 ---
 
-
 # Referencia de información personal del cliente (versión 2.x)
 
 >[!NOTE]
 >
->Este es uno de los temas de una serie para ayudar a los comerciantes y desarrolladores de Adobe Commerce y Magento Open Source a prepararse para el cumplimiento de las normas de privacidad. Consulte con su asesor legal para determinar si su empresa debe cumplir con alguna obligación legal y cómo debe hacerlo.
+>Este es uno de una serie de temas para ayudar a Adobe Commerce y a los comerciantes y desarrolladores Magento Open Source a prepararse para cumplir con las regulaciones de privacidad. Consulte con su asesor legal para determinar si su empresa debe cumplir con alguna obligación legal y cómo debe hacerlo.
 
-Utilice los siguientes diagramas de flujo de datos y asignaciones de entidades de base de datos como referencia al desarrollar programas de cumplimiento de normas para regulaciones de privacidad como:
+Utilice los siguientes diagramas de flujo de datos y asignaciones de entidades de base de datos como referencia al desarrollar programas de cumplimiento de regulaciones de privacidad como:
 
 - [RGPD](gdpr.md)
 - [CCPA](ccpa.md)
 
 ## Diagramas de flujo de datos
 
-Los diagramas de flujo de datos muestran los tipos de datos que los clientes y administradores pueden introducir y recuperar desde la tienda y el administrador.
+Los diagramas de flujo de datos muestran los tipos de datos que los clientes y administradores pueden introducir y recuperar de la tienda y del administrador.
 
-### Puntos de entrada de datos del front-end
+### Puntos de entrada de datos de front-end
 
-Un usuario puede introducir la información de cliente, dirección y pago al registrarse en una cuenta, durante el cierre de compra y eventos similares.
+Un usuario puede introducir información sobre el cliente, la dirección y el pago al registrarse en una cuenta, durante el cierre de compra y eventos similares.
 
-![Puntos de entrada de datos del front-end](../../assets/security-compliance/frontend-data-entry-points.svg)
+![Puntos de entrada de datos de front-end](../../assets/security-compliance/frontend-data-entry-points.svg)
 
-### Puntos de acceso a los datos del front-end
+### Puntos de acceso a datos de front-end
 
-Adobe Commerce y el Magento Open Source cargan la información del cliente cuando el cliente inicia sesión y visualiza varias páginas diferentes o cierra la sesión.
+Adobe Commerce y Magento Open Source cargan la información del cliente cuando este inicia sesión y ve varias páginas diferentes o realiza la retirada.
 
-![Puntos de acceso a los datos del front-end](../../assets/security-compliance/frontend-data-access-points.svg)
+![Puntos de acceso a datos de front-end](../../assets/security-compliance/frontend-data-access-points.svg)
 
-### Puntos de entrada de datos del back-end
+### Puntos de entrada de datos back-end
 
-Un comerciante puede introducir información de clientes, datos de direcciones y datos de pagos al crear un cliente o pedido desde el administrador.
+Un comerciante puede introducir información del cliente, datos de dirección y datos de pago al crear un cliente o pedido desde el administrador.
 
-![Puntos de entrada de datos del back-end](../../assets/security-compliance/backend-data-entry-points.svg)
+![Puntos de entrada de datos back-end](../../assets/security-compliance/backend-data-entry-points.svg)
 
-### Puntos de acceso de datos back-end
+### Puntos de acceso a datos back-end
 
-Adobe Commerce y el Magento Open Source cargan la información del cliente cuando un comerciante ve varios tipos de cuadrículas, hace clic en una cuadrícula para ver información detallada y realiza otras tareas.
+Adobe Commerce y Magento Open Source cargan la información del cliente cuando un comerciante ve varios tipos de cuadrículas, hace clic en una cuadrícula para ver información detallada y realiza otras tareas.
 
-![Puntos de acceso de datos back-end](../../assets/security-compliance/backend-data-access-points.svg)
+![Puntos de acceso a datos back-end](../../assets/security-compliance/backend-data-access-points.svg)
 
 ## Entidades de base de datos
 
-Adobe Commerce y el Magento Open Source almacenan principalmente información específica del cliente en tablas de cliente, dirección, pedido, presupuesto y pago. Otras tablas contienen referencias al ID de cliente.
+Adobe Commerce y Magento Open Source almacenan principalmente información específica del cliente en las tablas de clientes, direcciones, pedidos, presupuestos y pagos. Otras tablas contienen referencias al ID de cliente.
 
 ### Datos del cliente
 
-Adobe Commerce y Magento Open Source se pueden configurar para almacenar los siguientes atributos del cliente:
+Adobe Commerce y Magento Open Source se pueden configurar para almacenar los siguientes atributos de cliente:
 
 - Fecha de nacimiento
 - Correo electrónico
@@ -67,11 +67,11 @@ Adobe Commerce y Magento Open Source se pueden configurar para almacenar los sig
 
 >[!NOTE]
 >
->De acuerdo con las prácticas recomendadas actuales de seguridad y privacidad, asegúrese de conocer cualquier riesgo legal y de seguridad potencial asociado con el almacenamiento de la fecha de nacimiento completa de los clientes (mes, día, año) junto con otros identificadores personales, como el nombre completo, antes de recopilar o procesar dichos datos.
+>De acuerdo con las prácticas recomendadas actuales de seguridad y privacidad, asegúrese de estar al tanto de cualquier posible riesgo legal y de seguridad asociado con el almacenamiento de la fecha de nacimiento completa de los clientes (mes, día, año) junto con otros identificadores personales, como el nombre completo, antes de recopilar o procesar dichos datos.
 
-#### `customer_entity` y referencias de &quot;customer_entity&quot;
+#### `customer_entity` y referencias de &#39;customer_entity&#39;
 
-Las columnas siguientes de la sección `customer_entity` contiene información del cliente:
+Las siguientes columnas de la variable `customer_entity` La tabla contiene información del cliente:
 
 | Columna | Tipo de datos |
 | ------------ | ------------ |
@@ -81,7 +81,7 @@ Las columnas siguientes de la sección `customer_entity` contiene información d
 | `middlename` | varchar(255) |
 | `lastname` | varchar(255) |
 | `suffix` | varchar(40) |
-| `dob` | date |
+| `dob` | fecha |
 | `gender` | smallint(5) |
 
 Estas tablas hacen referencia a `customer_entity` y pueden contener atributos de cliente personalizados:
@@ -91,21 +91,21 @@ Estas tablas hacen referencia a `customer_entity` y pueden contener atributos de
 | `customer_entity_datetime` | `value` | datetime |
 | `customer_entity_decimal` | `value` | decimal(12,4) |
 | `customer_entity_int` | `value` | int(11) |
-| `customer_entity_text` | `value` | text |
+| `customer_entity_text` | `value` | texto |
 | `customer_entity_varchar` | `value` | varchar(255) |
 
 #### `customer_grid_flat` tabla
 
-Las columnas siguientes de la sección `customer_grid_flat` contiene información del cliente:
+Las siguientes columnas de la variable `customer_grid_flat` La tabla contiene información del cliente:
 
 | Columna | Tipo de datos |
 | -------------------- | ------------ |
-| `name` | text |
+| `name` | texto |
 | `email` | varchar(255) |
-| `dob` | date |
+| `dob` | fecha |
 | `gender` | int(11) |
-| `shipping_full` | text |
-| `billing_full` | text |
+| `shipping_full` | texto |
+| `billing_full` | texto |
 | `billing_firstname` | varchar(255) |
 | `billing_lastname` | varchar(255) |
 | `billing_telephone` | varchar(255) |
@@ -117,12 +117,12 @@ Las columnas siguientes de la sección `customer_grid_flat` contiene informació
 | `billing_vat_id` | varchar(255) |
 | `billing_company` | varchar(255) |
 
-### Datos de dirección
+### Datos de direcciones
 
-Adobe Commerce y Magento Open Source almacenan los siguientes atributos del cliente:
+Adobe Commerce y Magento Open Source almacenan los siguientes atributos de cliente:
 
 - Ciudad
-- Empresa
+- Compañía
 - País
 - Fax
 - Nombre
@@ -131,15 +131,15 @@ Adobe Commerce y Magento Open Source almacenan los siguientes atributos del clie
 - Prefijo de nombre
 - Sufijo de nombre
 - Número de teléfono
-- Estado/provincia
-- Estado/ID de provincia
-- Dirección
+- Estado/Provincia
+- ID de estado/provincia
+- Dirección física
 - Número de IVA
 - Código postal
 
 #### `customer_address_entity` y `customer_address_entity` referencias
 
-Las columnas siguientes de la sección `customer_address_entity` contiene información del cliente:
+Las siguientes columnas de la variable `customer_address_entity` La tabla contiene información del cliente:
 
 | Columna | Tipo de datos |
 | ------------ | ------------ |
@@ -153,7 +153,7 @@ Las columnas siguientes de la sección `customer_address_entity` contiene inform
 | `postcode` | varchar(255) |
 | `region` | varchar(255) |
 | `region_id` | int(10) |
-| `street` | text |
+| `street` | texto |
 | `suffix` | varchar(40) |
 | `telephone` | varchar(255) |
 | `vat_id` | varchar(255) |
@@ -165,16 +165,16 @@ Estas tablas hacen referencia a `customer_address_entity` y pueden contener atri
 | `customer_address_entity_datetime` | `value` | datetime |
 | `customer_address_entity_decimal` | `value` | decimal(12,4) |
 | `customer_address_entity_int` | `value` | int(11) |
-| `customer_address_entity_text` | `value` | text |
+| `customer_address_entity_text` | `value` | texto |
 | `customer_address_entity_varchar` | `value` | varchar(255) |
 
-### Ordenar datos
+### Datos del pedido
 
-La variable `sales_order` y las tablas relacionadas contienen el nombre del cliente, las direcciones de facturación y envío y los datos relacionados.
+El `sales_order` y las tablas relacionadas contienen el nombre del cliente, las direcciones de facturación y envío y los datos relacionados.
 
 #### `sales_order` tabla
 
-Las columnas siguientes de la sección `sales_order` contiene información del cliente:
+Las siguientes columnas de la variable `sales_order` La tabla contiene información del cliente:
 
 | Columna | Tipo de datos |
 | --------------------- | ------------ |
@@ -195,7 +195,7 @@ Las columnas siguientes de la sección `sales_order` contiene información del c
 
 #### `sales_order_address` tabla
 
-La variable `sales_order_address` contiene la dirección del cliente.
+El `sales_order_address` contiene la dirección del cliente.
 
 | Columna | Tipo de datos |
 | --------------------- | ------------ |
@@ -218,7 +218,7 @@ La variable `sales_order_address` contiene la dirección del cliente.
 
 #### `sales_order_grid` tabla
 
-Las columnas siguientes de la sección `sales_order_grid` contiene información del cliente:
+Las siguientes columnas de la variable `sales_order_grid` La tabla contiene información del cliente:
 
 | Columna | Tipo de datos |
 | ---------------------- | ------------ |
@@ -231,13 +231,13 @@ Las columnas siguientes de la sección `sales_order_grid` contiene información 
 | `customer_email` | varchar(255) |
 | `customer_name` | varchar(255) |
 
-### Datos de cotización
+### Datos de presupuesto
 
-Las cotizaciones contienen el nombre del cliente, el correo electrónico, la dirección y la información relacionada.
+Las ofertas contienen el nombre, el correo electrónico, la dirección y la información relacionada de un cliente.
 
 #### `quote` tabla
 
-Las columnas siguientes de la sección `quote` contiene información del cliente:
+Las siguientes columnas de la variable `quote` La tabla contiene información del cliente:
 
 | Columna | Tipo de datos |
 | --------------------- | ------------ |
@@ -254,7 +254,7 @@ Las columnas siguientes de la sección `quote` contiene información del cliente
 
 #### `quote_address` tabla
 
-Las columnas siguientes de la sección `quote_address` contiene información del cliente:
+Las siguientes columnas de la variable `quote_address` La tabla contiene información del cliente:
 
 | Columna | Tipo de datos |
 | ------------- | ------------ |
@@ -277,7 +277,7 @@ Las columnas siguientes de la sección `quote_address` contiene información del
 
 ### Datos de pago
 
-La variable `sales_order_payment` incluye información de tarjetas de crédito y otra información transaccional.
+El `sales_order_payment` La tabla incluye información de tarjetas de crédito y otra información transaccional.
 
 | Columna | Tipo de datos |
 | ------------------------ | ------------ |
@@ -291,7 +291,7 @@ La variable `sales_order_payment` incluye información de tarjetas de crédito y
 | `cc_debug_response_body` | varchar(32) |
 | `echeck_account_name` | varchar(32) |
 | `cc_number_enc` | varchar(128) |
-| `additional_information` | text |
+| `additional_information` | texto |
 
 ### Datos de invitación
 
@@ -299,7 +299,7 @@ Adobe Commerce y Magento Open Source se pueden configurar para que los clientes 
 
 #### `magento_invitation` tabla
 
-La variable `magento_invitation` contiene el ID de cliente, el correo electrónico y el ID de referente.
+El `magento_invitation` La tabla contiene el ID de cliente, el correo electrónico y el ID de referencia.
 
 | Columna | Tipo de datos |
 | ------------- | ------------ |
@@ -309,14 +309,14 @@ La variable `magento_invitation` contiene el ID de cliente, el correo electróni
 
 #### `magento_invitation_track` tabla
 
-La variable `magento_invitation_track` también contiene información del cliente.
+El `magento_invitation_track` La tabla también contiene información del cliente.
 
 | Columna | Tipo de datos |
 | ------------- | --------- |
 | `inviter_id` | int(10) |
 | `referral_id` | int(10) |
 
-### Tablas diversas que hacen referencia al cliente
+### Varias tablas que hacen referencia a clientes
 
 Las tablas siguientes contienen un `customer_id` columna:
 

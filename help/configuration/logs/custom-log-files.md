@@ -1,18 +1,18 @@
 ---
-title: Escribir en un archivo de registro personalizado
+title: Escribir en archivo de registro personalizado
 description: Aprenda a configurar archivos de registro personalizados.
-badge: label="Contribuido por Atwix" type="Informative" url="https://www.atwix.com/" tooltip="Atwix"
-source-git-commit: d7f32690b25c61fa31a99e6d02f9f1025de2bb99
+badge: label="Contribuido por Atwix" type="Informativo" url="https://www.atwix.com/" tooltip="Atwix"
+exl-id: 875f45e7-30c9-4b1b-afe9-d1a8d51ccdf0
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '405'
 ht-degree: 0%
 
 ---
 
-
 # Escribir en un archivo de registro personalizado
 
-La variable `Magento\Framework\Logger` contiene las siguientes clases de controlador:
+El `Magento\Framework\Logger` module contiene las siguientes clases de controladores:
 
 | Clase | Archivo de registro |
 | ----- | -------- |
@@ -22,16 +22,16 @@ La variable `Magento\Framework\Logger` contiene las siguientes clases de control
 | [Magento\Framework\Logger\Handler\Syslog][syslog] | - |
 | [Magento\Framework\Logger\Handler\System][system] | `/var/log/system.log` |
 
-Puede encontrarlas en la `lib/internal/Magento/Framework/Logger/Handler` directorio.
+Puede encontrarlos en el `lib/internal/Magento/Framework/Logger/Handler` directorio.
 
 Puede utilizar uno de los siguientes métodos para iniciar sesión en un archivo personalizado:
 
-- Configure un archivo de registro personalizado en la variable `di.xml`
-- Configuración de un archivo personalizado en la clase de controlador del registrador personalizado
+- Configure un archivo de registro personalizado en `di.xml`
+- Configurar un archivo personalizado en la clase de controlador de registrador personalizado
 
-## Configure un archivo de registro personalizado en la variable `di.xml`
+## Configure un archivo de registro personalizado en `di.xml`
 
-Este ejemplo muestra cómo utilizar [tipos virtuales](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types) para registrar `debug` en un archivo de registro personalizado en lugar de en un `/var/log/debug.log`.
+Este ejemplo muestra cómo utilizar [tipos virtuales](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types) para registrar `debug` en un archivo de registro personalizado en lugar de en un archivo de registro estándar `/var/log/debug.log`.
 
 1. En el `di.xml` del módulo, defina un archivo de registro personalizado como [tipo virtual](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types).
 
@@ -43,9 +43,9 @@ Este ejemplo muestra cómo utilizar [tipos virtuales](https://developer.adobe.co
    </virtualType>
    ```
 
-   La variable `name` valor de `Magento\Payment\Model\Method\MyCustomDebug` debe ser único.
+   El `name` valor de `Magento\Payment\Model\Method\MyCustomDebug` debe ser único.
 
-1. Defina el controlador en otro [tipo virtual](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types) con un `name`:
+1. Definir el controlador en otro [tipo virtual](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types) con un único `name`:
 
    ```xml
    <virtualType name="Magento\Payment\Model\Method\MyCustomLogger" type="Magento\Framework\Logger\Monolog">
@@ -67,7 +67,7 @@ Este ejemplo muestra cómo utilizar [tipos virtuales](https://developer.adobe.co
    </type>
    ```
 
-1. La clase virtual `Magento\Payment\Model\Method\MyCustomDebug` se inyecta en la variable `debug` del `$logger` en la variable `Magento\Payment\Model\Method\Logger` Clase .
+1. La clase virtual `Magento\Payment\Model\Method\MyCustomDebug` se inyecta en el `debug` controlador del `$logger` propiedad en el `Magento\Payment\Model\Method\Logger` clase.
 
    ```xml
    ...
@@ -76,11 +76,11 @@ Este ejemplo muestra cómo utilizar [tipos virtuales](https://developer.adobe.co
    </argument>
    ```
 
-Los mensajes de excepción se registran en la `/var/log/payment.log` archivo.
+Los mensajes de excepción se registran en `/var/log/payment.log` archivo.
 
-## Configurar un archivo de registro personalizado en la clase del controlador del registrador
+## Configurar un archivo de registro personalizado en la clase de controlador del registrador
 
-Este ejemplo muestra cómo utilizar una clase de controlador de registro personalizada para registrar `error` en un archivo de registro específico.
+Este ejemplo muestra cómo utilizar una clase de controlador de registrador personalizada para registrar `error` mensajes en un archivo de registro específico.
 
 1. Cree una clase que registre datos. En este ejemplo, la clase se define en `app/code/Vendor/ModuleName/Logger/Handler/ErrorHandler.php`.
 
@@ -116,7 +116,7 @@ Este ejemplo muestra cómo utilizar una clase de controlador de registro persona
    }
    ```
 
-1. Defina el controlador de esta clase como un [tipo virtual](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types) en el `di.xml` archivo.
+1. Defina el controlador para esta clase como un [tipo virtual](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types) en el del módulo `di.xml` archivo.
 
    ```xml
    <virtualType name="MyCustomLogger" type="Magento\Framework\Logger\Monolog">
@@ -130,7 +130,7 @@ Este ejemplo muestra cómo utilizar una clase de controlador de registro persona
 
    `MyCustomLogger` es un identificador único.
 
-1. En el `type` , especifique el nombre de clase donde se inserta el controlador de registro personalizado. Utilice el nombre de tipo virtual del paso anterior como argumento para este tipo.
+1. En el `type` definición, especifique el nombre de clase donde se inserta el controlador de registrador personalizado. Utilice el nombre de tipo virtual del paso anterior como argumento para este tipo.
 
    ```xml
    <type name="Vendor\ModuleName\Observer\MyObserver">
@@ -140,7 +140,7 @@ Este ejemplo muestra cómo utilizar una clase de controlador de registro persona
    </type>
    ```
 
-   Código fuente de `Vendor\ModuleName\Observer\MyObserver` Clase :
+   Código fuente de `Vendor\ModuleName\Observer\MyObserver` clase:
 
    ```php
    <?php
@@ -192,7 +192,7 @@ Este ejemplo muestra cómo utilizar una clase de controlador de registro persona
    }
    ```
 
-1. La clase `Vendor\ModuleName\Logger\Handler\ErrorHandler` se inyecta en la variable `error` del `$logger` en la variable `Vendor\ModuleName\Observer\MyObserver`.
+1. La clase `Vendor\ModuleName\Logger\Handler\ErrorHandler` se inyecta en el `error` controlador del `$logger` propiedad en el `Vendor\ModuleName\Observer\MyObserver`.
 
    ```xml
    ...
@@ -202,7 +202,7 @@ Este ejemplo muestra cómo utilizar una clase de controlador de registro persona
    ...
    ```
 
-Los mensajes de excepción se registran en la `/var/log/my_custom_logger/error.log` archivo.
+Los mensajes de excepción se registran en `/var/log/my_custom_logger/error.log` archivo.
 
 <!-- link definitions -->
 

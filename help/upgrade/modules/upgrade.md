@@ -1,13 +1,13 @@
 ---
 title: Actualización de módulos y extensiones
 description: Utilice la interfaz de línea de comandos y Composer para actualizar Adobe Commerce y los módulos y extensiones de Magento Open Source.
-source-git-commit: 682963fb66519097e54f14f2b84ed71528030054
+exl-id: 017d75df-fd21-4fb4-abc9-80a35fc47d0f
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '191'
 ht-degree: 0%
 
 ---
-
 
 # Actualización de módulos y extensiones
 
@@ -58,4 +58,3 @@ Consulte los siguientes listados de Adobe Commerce Marketplace para obtener más
 - [Klarna](https://marketplace.magento.com/klarna-m2-klarna.html)
 - [Vértice](https://marketplace.magento.com/vertexinc-vertex-tax-module.html)
 - [Yotpo](https://marketplace.magento.com/yotpo-module-yotpo.html)
-

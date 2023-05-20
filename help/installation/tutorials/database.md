@@ -1,19 +1,19 @@
 ---
-title: Crear el esquema de la base de datos
-description: Siga estos pasos para crear una base de datos para su Adobe Commerce o Magento Open Source.
-source-git-commit: f6f438b17478505536351fa20a051d355f5b157a
+title: Creación del esquema de base de datos
+description: Siga estos pasos para crear una base de datos para Adobe Commerce o Magento Open Source.
+exl-id: 860c9918-44c4-4ef1-88a5-12614566307c
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '52'
 ht-degree: 0%
 
 ---
 
-
-# Crear el esquema de la base de datos
+# Creación del esquema de base de datos
 
 Antes de ejecutar este comando, debe [Crear o actualizar la configuración de implementación](deployment.md).
 
-## Configuración de la base de datos y adición de datos
+## Configurar la base de datos y añadir datos
 
 Uso de comandos:
 

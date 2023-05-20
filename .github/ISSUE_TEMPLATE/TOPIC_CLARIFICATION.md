@@ -1,12 +1,12 @@
 ---
 name: Topic clarification/correction
 about: Create a request to clarify or correct a documentation topic
-title: '"Solicitud de actualización de tema"'
+title: "Solicitud de actualización de un tema"
 labels: ''
 assignees: ''
 source-git-commit: b0f4671b8c214397af77cbd316e489dac1ce8601
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '12'
 ht-degree: 0%
 
 ---

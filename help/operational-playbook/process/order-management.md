@@ -1,5 +1,5 @@
 ---
-title: Administración de pedidos
+title: Order Management
 description: Descubra cómo un sistema de gestión de pedidos es esencial para su negocio de comercio electrónico.
 exl-id: 62edc895-d725-4252-9a43-e03427579444
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
@@ -9,25 +9,25 @@ ht-degree: 0%
 
 ---
 
-# Gestión de pedidos
+# Order Management
 
-Para las empresas nuevas, los niveles de pedidos son bajos y es más fácil realizar pedidos a un costo menor. Sin embargo, cuando la demanda aumenta los pedidos aumentan y resulta difícil manejarlos con un equipo pequeño o por usted mismo a un costo menor. Es posible que necesite instalaciones más grandes, como un almacén o más de un almacén, dependiendo de la naturaleza del negocio, lo que puede ser costoso y requiere más personal. Aquí es donde la gestión de pedidos entra en escena.
+Para las empresas completamente nuevas, los niveles de pedido son bajos y es más fácil completar los pedidos a un coste más bajo. Sin embargo, cuando la demanda aumenta, los pedidos aumentan y resulta difícil gestionarlos con un equipo pequeño o por su cuenta a un coste menor. Es posible que necesite una instalación más grande, como un almacén o más de un almacén, según la naturaleza del negocio, lo que puede resultar costoso y requerir más personal. Aquí es donde la gestión de pedidos entra en juego.
 
-La gestión de pedidos ayuda a satisfacer los cambiantes requerimientos operativos para administrar la demanda, el inventario, el empaquetado y el envío. La integración de un sistema de gestión de pedidos con la plataforma puede ayudar a las empresas a satisfacer sus cambiantes necesidades y aumentar la satisfacción del cliente, la retención de clientes, las tasas de conversión más altas y la lealtad de marca. Todos estos factores afectan directa e indirectamente el rendimiento y el crecimiento de los ingresos de su negocio.
+Order Management ayuda a satisfacer los requisitos operativos cambiantes para administrar la demanda, el inventario, el empaquetado y el envío. La integración de un sistema de gestión de pedidos con la plataforma puede ayudar a las empresas a cumplir con sus requisitos cambiantes e impulsar la satisfacción del cliente, la retención del cliente, tasas de conversión más altas y la lealtad de la marca. Todos estos factores afectan directa e indirectamente al rendimiento y al crecimiento de los ingresos de su negocio.
 
-Los sistemas de gestión de pedidos ayudan a centralizar todos los datos cruciales en un sistema, que proporciona una vista única de todos los flujos, incluidos pedidos, productos, clientes, inventario, embalaje, devoluciones y pagos, de modo que pueda satisfacer fácilmente las expectativas de los clientes.
+Los sistemas de gestión de pedidos ayudan a centralizar todos los datos cruciales en un sistema, que proporciona una única vista de todos los flujos, incluidos pedidos, productos, clientes, inventario, embalaje, devoluciones y pagos, de modo que pueda satisfacer fácilmente las expectativas de los clientes.
 
 La gestión de pedidos es esencial en cualquier negocio de comercio electrónico porque forma una cadena y une todos los factores para que el negocio pueda hacer lo siguiente:
 
-- Mantener el inventario en control, ya sea en varios almacenes
-- Mantener el nivel de existencias del producto, de modo que estén preparados para cualquier promoción o período de venta
-- Proporcionar múltiples métodos de pago al cliente para mejorar la experiencia del cliente
-- Proporcionar el seguimiento de pedidos para que el cliente pueda comprobar el estado del pedido y para que su equipo de servicio al cliente interno acelere las consultas
-- Prestar apoyo a todos los departamentos de la empresa para que nadie quede desalineado
+- Mantenga el inventario bajo control, ya sea en varios almacenes
+- Mantener el nivel de stock del producto para mostrar que están preparados para cualquier promoción o periodo de venta
+- Proporcionar al cliente varios métodos de pago para mejorar su experiencia
+- Proporcionar un seguimiento de los pedidos que facilite al cliente comprobar el estado del pedido y a su equipo de servicio de atención al cliente interno agilizar cualquier consulta
+- Proporcionar apoyo a todos los departamentos de la empresa para que nadie se desalinee
 - Mantenga el envío bajo control para saber si hay un requisito de más personal o métodos de envío para acelerar el envío del pedido
-- Monitorice el retorno para comprender por qué los clientes realizan los retornos para que puedan trabajar en ello y mejorar
+- Monitorice el retorno para comprender por qué los clientes realizan las devoluciones y así poder trabajar en eso y mejorar
 - Ayuda a comprender la experiencia general del cliente si está satisfecho con su compra o no y cómo puede mejorar el negocio para servir mejor a los clientes
 
-El sistema de gestión de pedidos correcto y su uso correcto pueden hacer maravillas para la organización en términos de ingresos. Ahorra dinero y tiempo, proporciona una visión general de los diferentes departamentos que trabajan juntos y ayuda a la demanda de previsión del negocio y a trabajar en mejorar la experiencia del cliente para aumentar las tasas de conversión.
+El sistema correcto de Order Management y su uso adecuado pueden hacer maravillas para la organización en términos de ingresos. Ahorra tiempo y dinero, proporciona una visión general de los diferentes departamentos que trabajan juntos y ayuda a las empresas a prever la demanda y a mejorar la experiencia del cliente para aumentar las tasas de conversión.
 
-![Diagrama del proceso de gestión de pedidos](../../assets/playbooks/order-management.png)
+![Diagrama del proceso de Order Management](../../assets/playbooks/order-management.png)

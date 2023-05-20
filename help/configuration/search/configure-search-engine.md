@@ -1,13 +1,13 @@
 ---
 title: Configuración del motor de búsqueda
 description: Configure un motor de búsqueda para implementaciones locales de Adobe Commerce y Magento Open Source.
-source-git-commit: 4c18f00e0b92e49924676274c4ed462a175a7e4b
+exl-id: 61fbe0c2-bdd5-4f57-a518-23e180401804
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '652'
 ht-degree: 0%
 
 ---
-
 
 # Configuración del motor de búsqueda
 
@@ -114,4 +114,3 @@ Para reindexar con la línea de comandos:
    >[!INFO]
    >
    >A diferencia de la caché, los indexadores se actualizan mediante un trabajo cron. Asegúrese de [cron está habilitado](../cli/configure-cron-jobs.md) antes de empezar a utilizar el motor de búsqueda.
-

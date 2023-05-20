@@ -1,87 +1,87 @@
 ---
 title: Prácticas recomendadas
-description: Utilice las prácticas recomendadas por el Adobe para administrar el proceso de actualización de sus proyectos de Adobe Commerce y Magento Open Source.
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+description: Utilice las prácticas recomendadas por el Adobe para administrar el proceso de actualización de los proyectos de Adobe Commerce y de Magento Open Source.
+exl-id: 53c505a3-8b99-4fc3-b1b4-f2f75208a51b
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '1089'
 ht-degree: 0%
 
 ---
 
-
 # Prácticas recomendadas para la actualización
 
-En este tema se enumeran las acciones que debe realizar para administrar la complejidad de actualizar proyectos de Adobe Commerce y Magento Open Source. Su equipo debe pensar en las actualizaciones desde el momento en que comience el desarrollo del proyecto y continúe con cada versión. Al seguir estas prácticas recomendadas, el proceso de actualización será mucho más fácil, rápido y más barato.
+En este tema se enumeran las acciones que debe realizar para administrar la complejidad de actualizar proyectos de Adobe Commerce y de Magento Open Source. Su equipo debe pensar en las actualizaciones desde el momento en que comience el desarrollo del proyecto y continuar con cada versión. Si sigue estas prácticas recomendadas, el proceso de actualización será mucho más fácil, rápido y barato.
 
 >[!TIP]
 >
->Estas recomendaciones se basan en las mejores prácticas, respaldadas por pruebas de su impacto y eficacia por parte de asociados, comerciantes, expertos en Adobe y la comunidad.
+>Estas recomendaciones se basan en las mejores prácticas, respaldadas por pruebas de socios, comerciantes, expertos en Adobe y la comunidad que demuestran su impacto y efectividad.
 
-## ¿Qué afecta a una actualización?
+## ¿Qué impacto tiene una actualización?
 
-Es importante comprender las variables que determinan la complejidad de una actualización. Debe tener en cuenta estas variables al principio de cada proyecto, no solo cuando es el momento de actualizarlo. El desarrollo de un proyecto es clave para garantizar que las futuras actualizaciones sean fluidas y que pueda controlar el esfuerzo necesario para completarlas.
+Es importante comprender las variables que determinan la complejidad de una actualización. Debe tener en cuenta estas variables al principio de cada proyecto, no solo cuando sea el momento de la actualización. El desarrollo de un proyecto es clave para garantizar que las futuras actualizaciones se realicen sin problemas y que pueda controlar los esfuerzos necesarios para completarlas.
 
 El nivel de esfuerzo para actualizar la instancia de Adobe Commerce depende de estos factores:
 
-- **¿Cómo construyó el sitio?** La cantidad de trabajo personalizado y el número de módulos de terceros instalados afectan en gran medida a la complejidad de una actualización. La calidad del trabajo personalizado y los módulos puede determinar si una actualización se realiza sin problemas.
+- **¿Cómo creó el sitio?** La cantidad de trabajo personalizado y el número de módulos de terceros instalados afectan en gran medida a la complejidad de una actualización. La calidad del trabajo personalizado y de los módulos puede determinar si una actualización se realiza sin problemas.
 
-- **¿Está omitiendo varias versiones?** Omitir versiones hace que la siguiente actualización sea más compleja, la actualización de las versiones posteriores facilita y hace más barato el proceso.
+- **¿Se está saltando varias versiones?** Omitir versiones hace que la siguiente actualización sea más compleja, ya que la actualización de las versiones posteriores facilita y abarata el proceso.
 
-- **¿Qué tipo de actualización está realizando?** Una actualización a una versión menor (de 2.3.x a 2.4.0, por ejemplo) es más extensa que una actualización entre versiones de parches (como de 2.4.2 a 2.4.3). Las actualizaciones de seguridad son el tipo más fácil de implementar.
+- **¿Qué tipo de actualización está realizando?** Una actualización a una versión secundaria (de 2.3.x a 2.4.0, por ejemplo) es más extensa que una actualización entre versiones de parches (como de 2.4.2 a 2.4.3). Las actualizaciones de seguridad son el tipo más fácil de implementar.
 
-## Prácticas recomendadas para la planificación de actualizaciones
+## Prácticas recomendadas para planificar las actualizaciones
 
-Si está trabajando en un proyecto que ya está en producción, las actualizaciones son una oportunidad para mejorar la calidad del código y las personalizaciones, y para optimizar para futuras actualizaciones. El tiempo que invierte hoy es tiempo ahorrado a largo plazo.
+Si está trabajando en un proyecto que ya está en producción, las actualizaciones son una oportunidad para mejorar la calidad del código y las personalizaciones, así como para optimizar las futuras actualizaciones. El tiempo que invierte hoy es tiempo ahorrado a largo plazo.
 
-Si administra varios sitios para diferentes comerciantes, el mejor enfoque es tener una instancia base con las principales características y personalizaciones que utiliza normalmente. Utilice esta instancia base como sitio de prueba para completar una actualización y luego hacerlo en otros. Esta práctica le ofrece la flexibilidad de reutilizar módulos personalizados para diferentes clientes y simplificar las actualizaciones entre proyectos.
+Si administra varios sitios para diferentes comerciantes, el mejor enfoque es tener una instancia base con las funciones y personalizaciones principales que utiliza normalmente. Utilice esta instancia base como sitio de prueba para completar una actualización y, a continuación, hágalo en otros. Esta práctica le ofrece la flexibilidad de reutilizar módulos personalizados para distintos clientes y simplificar las actualizaciones entre proyectos.
 
-Si el proyecto está activo, le sugerimos que realice una auditoría para determinar su calidad y que comprenda cómo puede mejorarlo para que las actualizaciones sean más eficientes.
+Si el proyecto está activo, le sugerimos que realice una auditoría para determinar su calidad y comprender cómo puede mejorarlo para que las actualizaciones sean más eficientes.
 
 ### Desarrollo con actualizaciones en mente
 
-Desde el momento en que empiece a trabajar en un proyecto, debe considerar cómo se verán afectadas las futuras actualizaciones por su trabajo actual. Siga siempre las prácticas recomendadas de desarrollo de Adobe Commerce que se describen aquí:
+Desde el momento en que empiece a trabajar en un proyecto, debe tener en cuenta cómo afectarán las futuras actualizaciones a su trabajo actual. Siga siempre las prácticas recomendadas de desarrollo de Adobe Commerce que se describen aquí:
 
 - [Prácticas recomendadas de desarrollo](https://developer.adobe.com/commerce/php/best-practices/)
-- [Normas de codificación](https://developer.adobe.com/commerce/php/coding-standards/)
+- [Estándares de codificación](https://developer.adobe.com/commerce/php/coding-standards/)
 
-Empiece a adoptar la plataforma de extensibilidad de Adobe Commerce, si aún no lo ha hecho. La plataforma le permite personalizar de forma eficiente los procesos, integrar los sistemas e implementar nuevas capacidades, al mismo tiempo que mantiene la capacidad de actualización similar a SaaS. Sus características incluyen:
+Empiece a adoptar la plataforma de extensibilidad de Adobe Commerce, si aún no lo ha hecho. La plataforma le permite personalizar procesos de forma eficaz, integrar sistemas e implementar nuevas funcionalidades al tiempo que mantiene la capacidad de actualización similar a SaaS. Sus características incluyen:
 
-- **Extensión de la interfaz de usuario**. Amplíe y desarrolle su tienda independientemente de su back-end y middleware usando [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/).
+- **Extensibilidad de IU**. Amplíe y evolucione su tienda independientemente de su servidor y middleware usando [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/).
 
-- **Extensión de API**. Uso [GraphQL](https://devdocs.magento.com/guides/v2.4/graphql/index.html) para ampliar la capa de API web mediante la evolución del modelo de datos de gráficos y la ejecución de funciones lambda directamente desde la capa de gráfico.
+- **Extensibilidad de API**. Uso [GraphQL](https://devdocs.magento.com/guides/v2.4/graphql/index.html) ampliar la capa de API web mediante la evolución del modelo de datos de gráfico y la ejecución de funciones lambda directamente desde la capa de gráfico.
 
-- **middleware y servicios de Adobe I/O**. Conecte sus sistemas con Adobe Commerce mediante el middleware de Adobe y un conjunto de conexiones de aplicaciones integradas [Adobe I/O](https://www.adobe.io/). Además, puede ampliar las funciones de la plataforma principal sobrescribiendo el comportamiento predeterminado con su propia lógica empresarial que se ejecuta en Adobe I/O.
+- **middleware y servicios de Adobe I/O**. Conecte sus sistemas con Adobe Commerce mediante el middleware de Adobe y un conjunto de conexiones de aplicaciones integradas en [Adobe I/O](https://www.adobe.io/). Además, puede ampliar las funcionalidades básicas de la plataforma sobrescribiendo el comportamiento predeterminado con su propia lógica empresarial que se ejecuta en el Adobe I/O.
 
 ### Planificación de actualizaciones
 
-A medida que continuamos ampliando las capacidades de Adobe Commerce, es fundamental que desarrolle la última versión disponible y defina una estrategia de actualización en sus planes de proyecto. Esto le ayuda a mantenerse seguro, conforme y actualizado con las últimas mejoras que le permiten aumentar las ventas más rápido, operar con mayor eficacia y mantenerse a la vanguardia de su competencia ahora y en el futuro.
+A medida que ampliamos continuamente las capacidades de Adobe Commerce, es fundamental que desarrolle en función de la versión disponible más reciente y defina una estrategia de actualización en sus planes de proyecto. Al hacerlo, se mantiene seguro, conforme y actualizado con las últimas mejoras, que le permiten aumentar las ventas más rápido, operar de forma más eficaz y adelantarse a la competencia ahora y en el futuro.
 
-Para ayudarle a planificar y presupuestar las actualizaciones, debe supervisar nuestra [programación de versiones](https://devdocs.magento.com/release). Planifique las tareas de actualización dentro del tiempo acumulado de su equipo con antelación. Pretende completar este trabajo con la Asamblea General.
+Para ayudarle a planificar y presupuestar las actualizaciones, debe supervisar nuestras [programación de versiones](https://devdocs.magento.com/release). Planifique con antelación las tareas de actualización dentro del registro de pendientes de su equipo. Objetivo: completar este trabajo con GA.
 
-- Utilice la versión previa al lanzamiento para obtener más información sobre cada nueva versión. El prelanzamiento es un código de disponibilidad general disponible para los comerciantes de Adobe Commerce y todos los socios dos semanas antes de la disponibilidad general. Si tiene varias tiendas, utilice el lanzamiento previo de su tienda base y compruebe que sus módulos y temas personalizados son compatibles con él.
+- Utilice la versión preliminar para obtener más información sobre cada nueva versión. El prelanzamiento es el código de disponibilidad general que está disponible para los comerciantes de Adobe Commerce y todos los socios dos semanas antes de la disponibilidad general. Si tiene varias tiendas, utilice el prelanzamiento en su tienda base y compruebe que sus módulos y temáticas personalizados son compatibles con él.
 
-- Consulte la [Actualizar lista de comprobación del plan](https://support.magento.com/hc/en-us/articles/360057968951) para que Adobe Commerce le ayude a planificar su actualización.
+- Revise la [Lista de comprobación del plan de actualización](https://support.magento.com/hc/en-us/articles/360057968951) para que Adobe Commerce le ayude a planificar la actualización.
 
-- Planifique actualizaciones a principios de año. Debe reservar un presupuesto y recursos para completar cada actualización. Recuerde que el esfuerzo de actualización puede variar significativamente de un proyecto a otro. Use sus experiencias y conocimientos para hacer un plan lo más preciso posible.
+- Planifique las actualizaciones a principios de año. Debe reservar un presupuesto y recursos para completar cada actualización. Recuerde, el esfuerzo de actualización puede variar significativamente de un proyecto a otro. Use sus experiencias y conocimientos para hacer un plan lo más preciso posible.
 
-- Si las actualizaciones están tomando más esfuerzo del que describimos aquí, le recomendamos que audite el proyecto y realice ajustes en su entorno para reducir el mantenimiento a largo plazo.
+- Si las actualizaciones requieren más esfuerzo del que describimos aquí, le recomendamos que audite su proyecto y realice ajustes en su entorno para reducir el mantenimiento a largo plazo.
 
 ### Realización de actualizaciones
 
-Las actualizaciones deben realizarse con regularidad y con un presupuesto predefinido. Se recomienda programar actualizaciones preaprobadas a principios de año para garantizar que las actualizaciones se planifiquen y completen a tiempo.
+Las actualizaciones deben realizarse de forma regular y con un presupuesto predefinido. Recomendamos programar las actualizaciones aprobadas previamente a principios de año para garantizar que las actualizaciones se planifiquen y completen a tiempo.
 
-Evalúe el trabajo a realizar para la actualización:
+Evalúe el trabajo que se debe realizar para la actualización:
 
-- Consulte la [notas de la versión](https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html) para comprender el alcance y el impacto de la nueva versión.
+- Revise la [notas de la versión](https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html) para comprender el alcance y el impacto de la nueva versión.
 
-- Utilice la variable [[!DNL Upgrade Compatibility Tool]](../upgrade-compatibility-tool/overview.md) para identificar posibles problemas que deben solucionarse en el código personalizado antes de intentar actualizar a una versión más reciente.
+- Utilice el [[!DNL Upgrade Compatibility Tool]](../upgrade-compatibility-tool/overview.md) para identificar posibles problemas que deben solucionarse en el código personalizado antes de intentar actualizar a una versión más reciente.
 
 - Si utiliza extensiones de terceros, valide su compatibilidad con la versión de destino a la que planea actualizar.
 
 ### Pruebas posteriores a la actualización
 
-La prueba es la fase de una actualización que requiere la mayor cantidad de tiempo. Como resultado, este proceso debe ser lo más automatizado posible. Puede beneficiarse del uso de las herramientas de prueba principales. La variable [Guía de prueba de aplicaciones](https://developer.adobe.com/commerce/testing/guide/) proporciona detalles.
+Las pruebas son la fase de una actualización que requiere más tiempo. Como resultado, este proceso debe ser lo más automatizado posible. Puede beneficiarse del uso de las herramientas de prueba principales. El [Guía de prueba de aplicaciones](https://developer.adobe.com/commerce/testing/guide/) proporciona detalles.
 
 Utilice un entorno de ensayo para probar y validar la actualización antes de pasar a producción.
 
-Utilice un **página de mantenimiento**. Preparar esta página por adelantado le permite comunicarse con sus clientes, notificándoles que el trabajo se está realizando en segundo plano. Esta página debería estar visible durante unos minutos, pero si hay algún problema, es posible que tenga que usarla más tiempo. Tener el contenido y el diseño adecuados para su página de mantenimiento ofrece a los usuarios una buena experiencia incluso cuando la tienda no está disponible.
+Utilice un de **página de mantenimiento**. La preparación de esta página por adelantado le permite comunicarse con sus clientes y notificarles que el trabajo se está realizando en segundo plano. Esta página debería estar visible durante unos minutos, pero si hay algún problema, es posible que tenga que usarla más tiempo. Tener el contenido y el diseño adecuados para su página de mantenimiento ofrece a sus usuarios una buena experiencia incluso cuando su tienda no está disponible.

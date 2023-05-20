@@ -1,17 +1,17 @@
 ---
 title: Interfaz de registrador
 description: Introducción a la interfaz del registrador.
-source-git-commit: f489c3e68c91c6f2e16bff233cf59472ed684b5c
+exl-id: fdb1b431-405a-4c32-aff1-9e50bf0a2c90
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '186'
 ht-degree: 0%
 
 ---
 
-
 # Interfaz de registrador
 
-Para empezar a trabajar con un registrador, debe crear una instancia de `\Psr\Log\LoggerInterface`. Con esta interfaz, puede llamar a las siguientes funciones para escribir datos en los archivos de registro:
+Para comenzar a trabajar con un registrador, debe crear una instancia de `\Psr\Log\LoggerInterface`. Con esta interfaz, puede llamar a las siguientes funciones para escribir datos en los archivos de registro:
 
 - [alert()](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L43)
 - [critical()](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L55)
@@ -20,12 +20,12 @@ Para empezar a trabajar con un registrador, debe crear una instancia de `\Psr\Lo
 - [error()](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L66)
 - [info()](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L101)
 - [log()](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L122)
-- [notice()](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L89)
+- [notify()](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L89)
 - [warning()](https://github.com/php-fig/log/blob/master/src/LoggerInterface.php#L79)
 
-Una forma de hacerlo se explica en la [Actividad de la base de datos de registro](../logs/database-activity.md) ejemplo.
+Una forma de hacerlo se explica en la sección [Registrar actividad de base de datos](../logs/database-activity.md) ejemplo.
 
-A continuación se muestra otra manera:
+Otra manera sigue:
 
 ```php
 class SomeModel
@@ -48,6 +48,6 @@ class SomeModel
  }
 ```
 
-El ejemplo anterior muestra que `SomeModel` recibe un `\Psr\Log\LoggerInterface` mediante inyección de constructor. En un método `doSomething`, si se ha producido algún error, se registra en un método `critical` (`$this->logger->critical($e);`).
+El ejemplo anterior muestra que `SomeModel` recibe un `\Psr\Log\LoggerInterface` objeto mediante inyección de constructor. En un método `doSomething`, si se produce algún error, se registra en un método `critical` (`$this->logger->critical($e);`).
 
-[RFC 5424](https://datatracker.ietf.org/doc/html/rfc5424) define ocho niveles de registro (depuración, información, aviso, advertencia, error, crítico, alerta y emergencia).
+[RFC 5424](https://datatracker.ietf.org/doc/html/rfc5424) define ocho niveles de registro (depurar, información, aviso, advertencia, error, crítico, alerta y emergencia).

@@ -1,21 +1,21 @@
 ---
 title: Referencia de información personal del cliente (versión 1.x)
-description: Obtenga información sobre el flujo de datos y las asignaciones de entidades de base de datos para la información personal del cliente en el Magento 1.x.
-source-git-commit: 2120e5bb912a89c58611ef9e23661a54e40a14f1
+description: Obtenga información sobre las asignaciones de entidades de flujo de datos y base de datos para la información personal del cliente en Magento 1.x.
+exl-id: 8b01418d-8ca1-48fc-9577-a324ed3109d1
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '606'
 ht-degree: 0%
 
 ---
 
-
 # Referencia de información personal del cliente (versión 1.x)
 
 >[!NOTE]
 >
->Este es uno de los temas de una serie para ayudar a los comerciantes y desarrolladores de Adobe Commerce y Magento Open Source a prepararse para el cumplimiento de las normas de privacidad. Consulte con su asesor legal para determinar si su empresa debe cumplir con alguna obligación legal y cómo debe hacerlo.
+>Este es uno de una serie de temas para ayudar a Adobe Commerce y a los comerciantes y desarrolladores Magento Open Source a prepararse para cumplir con las regulaciones de privacidad. Consulte con su asesor legal para determinar si su empresa debe cumplir con alguna obligación legal y cómo debe hacerlo.
 
-Utilice los siguientes diagramas de flujo de datos y asignaciones de entidades de base de datos como referencia al desarrollar programas de cumplimiento de normas para regulaciones de privacidad como:
+Utilice los siguientes diagramas de flujo de datos y asignaciones de entidades de base de datos como referencia al desarrollar programas de cumplimiento de regulaciones de privacidad como:
 
 - [RGPD](gdpr.md)
 - [CCPA](ccpa.md)
@@ -24,41 +24,41 @@ Utilice los siguientes diagramas de flujo de datos y asignaciones de entidades d
 
 Los diagramas de flujo de datos muestran los tipos de datos que los clientes y administradores pueden introducir y recuperar en la tienda y el administrador.
 
-### Puntos de entrada de datos del front-end
+### Puntos de entrada de datos de front-end
 
-Un usuario puede introducir la información de cliente, dirección y pago al registrarse en una cuenta, durante el cierre de compra y eventos similares.
+Un usuario puede introducir información sobre el cliente, la dirección y el pago al registrarse en una cuenta, durante el cierre de compra y eventos similares.
 
-![Puntos de entrada de datos del front-end](../../assets/security-compliance/frontend-data-entry-points.svg)
+![Puntos de entrada de datos de front-end](../../assets/security-compliance/frontend-data-entry-points.svg)
 
-### Puntos de acceso a los datos del front-end
+### Puntos de acceso a datos de front-end
 
-Commerce carga la información del cliente cuando el cliente inicia sesión y visualiza varias páginas diferentes o cierra la compra.
+Commerce carga la información del cliente cuando este inicia sesión y visualiza varias páginas o cierres de compra diferentes.
 
-![Puntos de acceso a los datos del front-end](../../assets/security-compliance/frontend-data-access-points.svg)
+![Puntos de acceso a datos de front-end](../../assets/security-compliance/frontend-data-access-points.svg)
 
-### Puntos de entrada de datos del back-end
+### Puntos de entrada de datos back-end
 
-Un comerciante puede introducir la información de cliente, dirección y pago desde el Administrador para crear un cliente o pedido.
+Un comerciante puede introducir la información de cliente, dirección y pago del administrador para crear un cliente o pedido.
 
-![Puntos de entrada de datos del back-end](../../assets/security-compliance/backend-data-entry-points.svg)
+![Puntos de entrada de datos back-end](../../assets/security-compliance/backend-data-entry-points.svg)
 
-### Puntos de acceso de datos back-end
+### Puntos de acceso a datos back-end
 
-Comercio carga la información del cliente cuando un comerciante ve varios tipos de cuadrículas, hace clic en una cuadrícula para ver información detallada y realiza otras tareas.
+Commerce carga la información del cliente cuando un comerciante ve varios tipos de cuadrículas, hace clic en una cuadrícula para ver información detallada y realiza otras tareas.
 
-![Puntos de acceso de datos back-end](../../assets/security-compliance/backend-data-access-points.svg)
+![Puntos de acceso a datos back-end](../../assets/security-compliance/backend-data-access-points.svg)
 
 ## Entidades de base de datos
 
-El Magento 1 almacena la información del cliente en las tablas de cliente, ventas y otras bases de datos.
+El Magento 1 almacena información de clientes en tablas de clientes, ventas y otras bases de datos.
 
 ### Datos del cliente
 
-El Magento 1 almacena la información del cliente en la variable `customer_entity` y `customer_address_entity` tablas. Ambas tablas tienen varias tablas de referencia que pueden contener atributos del cliente personalizados.
+El Magento 1 almacena la información de los clientes en `customer_entity` y `customer_address_entity` tablas. Ambas tablas tienen varias tablas de referencia que pueden contener atributos personalizados del cliente.
 
 #### `customer_entity` y tablas de referencia
 
-Las columnas siguientes de la sección `customer_entity`contiene información del cliente:
+Las siguientes columnas de la variable `customer_entity`La tabla contiene información del cliente:
 
 | Columna | Tipo de datos |
 | --- | --- |
@@ -71,7 +71,7 @@ Estas tablas hacen referencia a `customer_entity` y pueden contener atributos de
 | `customer_entity_datetime` | `value` | datetime |
 | `customer_entity_decimal` | `value` | decimal(12,4) |
 | `customer_entity_int` | `value` | int(11) |
-| `customer_entity_text` | `value` | text |
+| `customer_entity_text` | `value` | texto |
 | `customer_entity_varchar` | `value` | varchar(255) |
 
 #### `customer_address_entity` y tablas de referencia
@@ -83,16 +83,16 @@ Las siguientes tablas hacen referencia a `customer_address_entity` y pueden cont
 | `customer_address_entity_datetime` | `value` | datetime |
 | `customer_address_entity_decimal` | `value` | decimal(12,4) |
 | `customer_address_entity_int` | `value` | int(11) |
-| `customer_address_entity_text` | `value` | text |
+| `customer_address_entity_text` | `value` | texto |
 | `customer_address_entity_varchar` | `value` | varchar(255) |
 
-### Ordenar datos
+### Datos del pedido
 
-La variable `sales_flat_order` y las tablas relacionadas contienen el nombre del cliente, las direcciones de facturación y envío y la información relacionada.
+El `sales_flat_order` y las tablas relacionadas contienen el nombre del cliente, las direcciones de facturación y envío, y la información relacionada.
 
 #### `sales_flat_order` tabla
 
-Las columnas siguientes de la sección `sales_order` contiene información del cliente:
+Las siguientes columnas de la variable `sales_order` La tabla contiene información del cliente:
 
 | Columna | Tipo de datos |
 | --- | --- |
@@ -109,7 +109,7 @@ Las columnas siguientes de la sección `sales_order` contiene información del c
 
 #### `sales_flat_order_address` tabla
 
-La variable `sales_flat_order_address` contiene la dirección del cliente.
+El `sales_flat_order_address` contiene la dirección del cliente.
 
 | Columna | Tipo de datos |
 | --- | --- |
@@ -127,11 +127,11 @@ La variable `sales_flat_order_address` contiene la dirección del cliente.
 | `suffix` | varchar(255) |
 | `middlename` | varchar(255) |
 | `company` | varchar(255) |
-| `vat_id` | text |
+| `vat_id` | texto |
 
 #### `sales_flat_order_grid` tabla
 
-Las columnas siguientes de la sección `sales_flat_order_grid` contiene información del cliente:
+Las siguientes columnas de la variable `sales_flat_order_grid` La tabla contiene información del cliente:
 
 | Columna | Tipo de datos |
 | --- | --- |
@@ -141,7 +141,7 @@ Las columnas siguientes de la sección `sales_flat_order_grid` contiene informac
 
 #### `sales_flat_order_payment` tabla
 
-Las columnas siguientes de la sección `sales_flat_order_payment` contiene información del cliente:
+Las siguientes columnas de la variable `sales_flat_order_payment` La tabla contiene información del cliente:
 
 | Columna | Tipo de datos |
 | --- | --- |
@@ -155,13 +155,13 @@ Las columnas siguientes de la sección `sales_flat_order_payment` contiene infor
 | `echeck_routing_number` | varchar(255) |
 | `echeck_account_name` | varchar(255) |
 
-### Datos de cotización
+### Datos de presupuesto
 
-Las cotizaciones contienen el nombre del cliente, el correo electrónico, la dirección y la información relacionada.
+Las ofertas contienen el nombre, el correo electrónico, la dirección y la información relacionada de un cliente.
 
 #### `sales_flat_quote` tabla
 
-Las columnas siguientes de la sección `sales_flat_quote` contiene información del cliente:
+Las siguientes columnas de la variable `sales_flat_quote` La tabla contiene información del cliente:
 
 | Columna | Tipo de datos |
 | --- | --- |
@@ -181,7 +181,7 @@ Las columnas siguientes de la sección `sales_flat_quote` contiene información 
 
 #### `sales_flat_quote_address` tabla
 
-Las columnas siguientes de la sección `sales_flat_quote_address` contiene información del cliente:
+Las siguientes columnas de la variable `sales_flat_quote_address` La tabla contiene información del cliente:
 
 | Columna | Tipo de datos |
 | --- | --- |
@@ -200,7 +200,7 @@ Las columnas siguientes de la sección `sales_flat_quote_address` contiene infor
 
 #### `sales_flat_quote_payment` tabla
 
-La variable `sales_flat_quote_payment` incluye información de tarjetas de crédito y otra información transaccional.
+El `sales_flat_quote_payment` La tabla incluye información de tarjetas de crédito y otra información transaccional.
 
 | Columna | Tipo de datos |
 | --- | --- |
@@ -214,7 +214,7 @@ La variable `sales_flat_quote_payment` incluye información de tarjetas de créd
 
 ### Archivar datos
 
-Las siguientes tablas y columnas contienen información del cliente:
+Las siguientes tablas y columnas contienen información sobre el cliente:
 
 | Tabla | Columna | Tipo de datos |
 | --- | --- | --- |
@@ -227,7 +227,7 @@ Las siguientes tablas y columnas contienen información del cliente:
 
 ### Datos de ventas
 
-Las siguientes tablas y columnas contienen información del cliente:
+Las siguientes tablas y columnas contienen información sobre el cliente:
 
 | Tabla | Columna | Tipo de datos |
 | --- | --- | --- |
@@ -236,7 +236,7 @@ Las siguientes tablas y columnas contienen información del cliente:
 
 ### Datos de RMA
 
-Las siguientes tablas y columnas de RMA contienen información del cliente:
+Las siguientes tablas y columnas de RMA contienen información sobre el cliente:
 
 | Tabla | Columna | Tipo de datos |
 | --- | --- | --- |
@@ -244,9 +244,9 @@ Las siguientes tablas y columnas de RMA contienen información del cliente:
 | `enterprise_rma_grid` | `customer_id` | int(10) |
 | `enterprise_rma_grid` | `customer_name` | varchar(255) |
 
-### Datos diversos
+### Datos varios
 
-Las siguientes tablas y columnas contienen información del cliente:
+Las siguientes tablas y columnas contienen información sobre el cliente:
 
 | Tabla | Columna | Tipo de datos |
 | --- | --- | --- |
@@ -257,7 +257,7 @@ Las siguientes tablas y columnas contienen información del cliente:
 | `enterprise_giftregistry_person` | `email` | varchar(150) |
 | `enterprise_giftregistry_person` | `firstname` | varchar(100) |
 | `enterprise_giftregistry_person` | `lastname` | varchar(100) |
-| `enterprise_giftregistry_person` | `middlename` | text |
+| `enterprise_giftregistry_person` | `middlename` | texto |
 | `enterprise_invitation` | `customer_id` | int(10) |
 | `enterprise_invitation` | `email` | varchar(255) |
 | `enterprise_invitation` | `referral_id` | int(10) |
@@ -271,7 +271,7 @@ Las siguientes tablas y columnas contienen información del cliente:
 | `newsletter_subscriber` | `customer_id` | int(10) |
 | `newsletter_subscriber` | `subscriber_email` | varchar(150) |
 | `persistent_session` | `customer_id` | int(10) |
-| `persistent_session` | `info` | text |
+| `persistent_session` | `info` | texto |
 | `poll_vote` | `customer_id` | int(10) |
 | `poll_vote` | `ip_address` | varbinary(16) |
 | `rating_option_vote` | `customer_id` | int(10) |
@@ -279,7 +279,7 @@ Las siguientes tablas y columnas contienen información del cliente:
 | `rating_option_vote` | `remote_ip_long` | varbinary(516) |
 | `send_friend_log` | `ip` | varbinary(16) |
 
-Otras tablas que hacen referencia a Cliente:
+Otras tablas que hacen referencia a Customer:
 
 - `catalog_compare_item`
 - `downloadable_link_purchased`

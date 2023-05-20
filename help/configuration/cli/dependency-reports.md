@@ -1,27 +1,27 @@
 ---
-title: Informes de dependencia
+title: Informes de dependencias
 description: Cree informes que muestren los totales de las dependencias de módulo, circular y marco.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+exl-id: b7a32fe1-71c5-495f-8276-242503fb50ae
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '240'
 ht-degree: 0%
 
 ---
 
-
-# Informes de dependencia
+# Informes de dependencias
 
 {{file-system-owner}}
 
 Puede ejecutar los siguientes tipos de informes:
 
-- **Dependencias del módulo**: Muestra el número total de dependencias entre módulos y si las dependencias son duras o no.
-- **Dependencias circulares**: Muestra el número total de cadenas de dependencia y el número y la lista de dependencias circulares para cada módulo.
-- **Dependencias del marco**: Muestra el número total de dependencias del marco de comercio por módulo (incluido el número total de entradas del marco para cada biblioteca).
+- **Dependencias de módulo**: Muestra el número total de dependencias entre módulos y si las dependencias son duras o suaves.
+- **Dependencias circulares**: Muestra el número total de cadenas de dependencias y el número y la lista de dependencias circulares de cada módulo.
+- **Dependencias de marco**: Muestra el número total de dependencias en el marco de Commerce por módulo (incluido el número total de entradas del marco de trabajo para cada biblioteca).
 
 Una dependencia en un comentario también es una dependencia.
 
-## Ejecutar informes de dependencia
+## Ejecutar informes de dependencias
 
 Opciones de comando:
 
@@ -34,12 +34,12 @@ En la tabla siguiente se explican las opciones, los parámetros y los valores de
 | Parámetro | Valor | ¿Requerido? |
 | ----------------------- | -------------------------------------------------------------------------------------------------------------------- | --------- |
 | `show-modules` | Informe de dependencias del módulo. | Sí |
-| `show-modules-circular` | Informe de dependencias circulares . | Sí |
+| `show-modules-circular` | Informe de dependencias circulares. | Sí |
 | `show-framework` | Informe de dependencias del marco. | Sí |
-| `-d --directory` | Ruta al directorio base para comenzar a buscar datos de informes. | No |
-| `-o --output` | Especifica la ruta absoluta del sistema de archivos y el nombre de archivo del archivo de salida de valores separados por comas (csv) para el informe. | No |
+| `-d --directory` | Ruta al directorio base para comenzar a buscar datos del informe. | No |
+| `-o --output` | Especifica la ruta de acceso absoluta del sistema de archivos y el nombre del archivo de salida del valor separado por comas (csv) para el informe. | No |
 
-Si no se pasa ningún directorio o nombre de archivo como argumento, se usa la siguiente raíz de aplicación como directorio predeterminado y se usan los siguientes nombres de archivo predeterminados:
+Si no se pasa ningún directorio o nombre de archivo como argumento, se utiliza la siguiente raíz de aplicación como directorio predeterminado y los siguientes nombres de archivo predeterminados:
 
 | Comando | Nombre de archivo |
 | ----------------------------------------------------- | ----------------------------------- |
@@ -47,9 +47,9 @@ Si no se pasa ningún directorio o nombre de archivo como argumento, se usa la s
 | `bin/magento info:dependencies:show-modules-circular` | `modules-circular-dependencies.csv` |
 | `bin/magento info:dependencies:show-framework` | `framework-dependencies.csv` |
 
-### Informe de dependencias del módulo de muestra
+### Informe de dependencias del módulo de ejemplo
 
-A continuación se muestra una parte del resultado de un informe de dependencias de módulo de muestra:
+El siguiente es una parte del resultado de un informe de dependencias de módulo de ejemplo:
 
 ```terminal
 "","All","Hard","Soft"
@@ -73,7 +73,7 @@ A continuación se muestra una parte del resultado de un informe de dependencias
 
 ### Ejemplo de informe de dependencias circulares
 
-A continuación se muestra una parte del resultado de un informe de dependencias circulares de ejemplo:
+El siguiente es una parte del resultado de un ejemplo de informe de dependencias circulares:
 
 ```terminal
 "Circular dependencies:","Total number of chains"
@@ -97,9 +97,9 @@ A continuación se muestra una parte del resultado de un informe de dependencias
 "magento/module-config->magento/module-backend->magento/module-sales->magento/module-checkout->magento/module-customer->magento/module-review->magento/module-catalog->magento/module-catalog-rule->magento/module-rule->magento/module-eav->magento/module-config"
 ```
 
-### Informe de dependencias del marco de ejemplo
+### Ejemplo de informe de dependencias del marco
 
-A continuación se muestra una parte del resultado de un informe de dependencias del marco de ejemplo:
+A continuación se muestra una parte del resultado de un informe de dependencias de marco de trabajo de ejemplo:
 
 ```terminal
 "Dependencies of framework:","Total number"

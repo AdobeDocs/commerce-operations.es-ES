@@ -1,6 +1,6 @@
 ---
-title: Metodología de análisis
-description: Descubra cómo la combinación de metodologías Agile y Scrum puede ayudar a acelerar su proyecto de comercio electrónico.
+title: Metodología de depuración de Agile
+description: Aprenda cómo la combinación de las metodologías Agile y Scrum puede ayudarle a acelerar su proyecto de comercio electrónico.
 exl-id: 2c46acad-bff9-4a9f-acfb-622ffbf97288
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
@@ -9,22 +9,22 @@ ht-degree: 0%
 
 ---
 
-# Metodología de Agile Scrum
+# Metodología de depuración de Agile
 
-Agile es un enfoque iterativo de la administración de proyectos y la entrega de software, con plazos fijos, que se centra en ofrecer valor incremental a los clientes de forma rápida y continua en lugar de un enfoque tradicional que toma mucho más tiempo.
+Agile es un enfoque iterativo y con plazos definidos para la administración de proyectos y la entrega de software que se centra en ofrecer valor incremental a los clientes de forma rápida y continua, en lugar de un enfoque de cascada tradicional que tarda mucho más.
 
-Scrum es un ejemplo de un marco basado en Agile y se utiliza a menudo en muchos equipos de comercio electrónico. Recientemente, ha habido un cambio de los estilos tradicionales de cascada de entrega de proyectos a la entrega basada en Agile o Scrum. Esto se debe a la mayor transparencia, colaboración y un tiempo de comercialización más rápido que ofrecen estos marcos.
+Scrum es un ejemplo de un marco de trabajo basado en Agile y que se utiliza a menudo en muchos equipos de comercio electrónico. Recientemente, se ha producido un cambio de los estilos tradicionales de cascada de entrega de proyectos a la entrega basada en Agile o Scrum. Esto se debe al aumento de la transparencia, la colaboración y el tiempo de salida al mercado más rápido que proporcionan estos marcos.
 
-Scrum anima a los equipos autoorganizados y multifuncionales a resolver los problemas juntos en un período de tiempo fijo llamado &quot;sprint&quot;. El equipo de Scrum se organiza a sí mismo, ya que no hay ningún líder y el equipo es interfuncional, por lo que todos necesitan tomar una función de la idea a la implementación.
+Scrum anima a equipos auto-organizados y multifuncionales a resolver problemas juntos en un período de tiempo limitado llamado &quot;sprint&quot;. El equipo de Scrum es autoorganizado, ya que no hay ningún líder y el equipo es interfuncional, de modo que todos necesitan llevar una característica desde la idea hasta la implementación.
 
 En la metodología Scrum, hay varias reuniones que se utilizan para impulsar la transparencia y el progreso en un proyecto de comercio electrónico:
 
-- **Planificación de impresión**: una reunión de planificación en la que los integrantes del equipo se reúnen para decidir cuánto trabajo se puede completar en un sprint.
+- **Planificación de sprint**: reunión de planificación en la que los miembros del equipo se reúnen para decidir cuánto trabajo se puede completar en un sprint.
 
-- **Examen diario**: reunión de 15 minutos en la que se compartieron actualizaciones sobre el trabajo de cada miembro del equipo.
+- **Scrum diario**: reunión de 15 minutos utilizada para compartir actualizaciones sobre en qué está trabajando cada miembro del equipo.
 
-- **Revisión de Sprint**—Una reunión que se utilizó para demostrar el progreso del sprint.
+- **Revisión de Sprint**: reunión utilizada para mostrar el progreso del sprint.
 
-- **Retrospectiva de Sprint**:: Una reunión que se utilizó para reflexionar sobre el modelo anterior y para identificar oportunidades de mejora.
+- **Retrospectiva de sprint**: reunión utilizada para reflexionar sobre el sprint anterior e identificar oportunidades de mejora.
 
-Al final de cada sprint, se debe entregar y publicar un incremento de valor (por ejemplo, nuevas funciones, correcciones de errores, actualizaciones o actualizaciones generales de código) a los clientes.
+Al final de cada sprint, se debe entregar un incremento de valor (por ejemplo, nuevas funciones, correcciones de errores, actualizaciones o actualizaciones generales de código) y se puede lanzar a los clientes.

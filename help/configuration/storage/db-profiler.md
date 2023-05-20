@@ -1,22 +1,22 @@
 ---
-title: Configurar el perfilador de la base de datos
-description: Consulte un ejemplo de cómo configurar la salida para el perfilador de la base de datos.
-badge: label="Contribuido por Atish Goswami" type="Informative" url="https://github.com/atishgoswami" tooltip="Atish Goswami"
-source-git-commit: bcb995ea417423b0cbc59c035ba5fdedbce3310e
+title: Configurar el analizador de bases de datos
+description: Vea un ejemplo de cómo configurar los resultados del generador de perfiles de base de datos.
+badge: label="Colaborado por Atish Goswami" type="Informativo" url="https://github.com/atishgoswami" tooltip="Atish Goswami"
+exl-id: 87780db5-6e50-4ebb-9591-0cf22ab39af5
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '198'
 ht-degree: 0%
 
 ---
 
+# Configurar el analizador de bases de datos
 
-# Configurar el perfilador de la base de datos
+El generador de perfiles de base de datos de Commerce muestra todas las consultas implementadas en una página, incluida la hora de cada consulta y los parámetros aplicados.
 
-El perfilador de base de datos de comercio muestra todas las consultas implementadas en una página, incluido el tiempo para cada consulta y los parámetros que se aplicaron.
+## Paso 1: Modificar la configuración de implementación
 
-## Paso 1: Modificación de la configuración de implementación
-
-Modificar `<magento_root>/app/etc/env.php` para añadir la siguiente referencia al [clase profiler de base de datos](https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/DB/Profiler.php):
+Modificar `<magento_root>/app/etc/env.php` para añadir la siguiente referencia a [clase de perfil de base de datos](https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/DB/Profiler.php):
 
 ```php?start_inline=1
         'profiler' => [
@@ -54,15 +54,15 @@ A continuación se muestra un ejemplo:
 
 ## Paso 2: Configuración de la salida
 
-Configure el resultado en el archivo de arranque de la aplicación Commerce; puede ser `<magento_root>/pub/index.php` o puede estar ubicado en una configuración de host virtual de servidor web.
+Configure la salida en el archivo de arranque de la aplicación Commerce; podría ser `<magento_root>/pub/index.php` o podría estar ubicado en una configuración de host virtual de servidor web.
 
-El siguiente ejemplo muestra los resultados en una tabla de tres columnas:
+El ejemplo siguiente muestra los resultados en una tabla de tres columnas:
 
-- Tiempo total (muestra la cantidad total de tiempo para ejecutar todas las consultas en la página)
+- Tiempo total (muestra el tiempo total para ejecutar todas las consultas en la página)
 - SQL (muestra todas las consultas SQL; el encabezado de fila muestra el recuento de consultas)
-- Parámetros de consulta (muestra los parámetros de cada consulta SQL)
+- Parámetros de Consulta (muestra los parámetros de cada consulta SQL)
 
-Para configurar la salida, agregue lo siguiente después de la variable `$bootstrap->run($app);` en su archivo de arranque:
+Para configurar la salida, agregue lo siguiente después de `$bootstrap->run($app);` línea en el archivo de bootstrap:
 
 ```php?start_inline=1
 /** @var \Magento\Framework\App\ResourceConnection $res */
@@ -88,6 +88,6 @@ echo "</table>";
 
 ## Paso 3: Ver los resultados
 
-Vaya a cualquier página de su tienda o administrador para ver los resultados. A continuación se muestra una muestra:
+Vaya a cualquier página de su tienda o administrador para ver los resultados. A continuación se muestra un ejemplo:
 
-![Resultados de perfil de base de datos de muestra](../../assets/configuration/db-profiler-results.png)
+![Resultados del generador de perfiles de base de datos](../../assets/configuration/db-profiler-results.png)

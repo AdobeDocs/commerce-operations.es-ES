@@ -6,7 +6,7 @@ labels: bug
 assignees: dshevtsov
 source-git-commit: b0f4671b8c214397af77cbd316e489dac1ce8601
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '17'
 ht-degree: 0%
 
 ---
@@ -16,13 +16,13 @@ ht-degree: 0%
 
 <!-- (REQUIRED) What is the issue or current behavior? -->
 
-### Pasos que seguir
+### Pasos a seguir
 
 <!-- (OPTIONAL) What needs to be done to replicate this issue? You can provide your scenario in a Gist. -->
 
 1. Primer paso
 1. Segundo paso
-1. Etc.
+1. Etc
 
 ## Resultado esperado
 

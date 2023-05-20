@@ -1,52 +1,52 @@
 ---
-title: Configuración de barniz para comercio
-description: Aprenda a actualizar y administrar su archivo de configuración de Varnish para la aplicación Commerce.
-source-git-commit: d451ea025a6f4fc8a4a9f15ca83896a63058a3a0
+title: Configuración de Barniz para Commerce
+description: Obtenga información sobre cómo actualizar y administrar el archivo de configuración de Barniz para la aplicación Commerce.
+exl-id: 6c007ff9-493f-4df2-b7b4-438b41fd7e37
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '377'
 ht-degree: 0%
 
 ---
 
+# Configure la aplicación Commerce para utilizar Barniz
 
-# Configuración de la aplicación Commerce para utilizar Varnish
+Para configurar Commerce para que utilice Barniz:
 
-Para configurar Commerce para utilizar Varnish:
-
-1. Inicie sesión en Admin como administrador.
-1. Haga clic en **[!UICONTROL Stores]** > Configuración > **Configuración** > **Avanzadas** > **Sistema** > **Caché de página completa**.
-1. En el **[!UICONTROL Caching Application]** lista, haga clic en **Almacenamiento en caché de barnices**.
-1. Introduzca un valor en la variable **[!UICONTROL TTL for public content]** campo .
+1. Inicie sesión en el administrador como administrador.
+1. Clic **[!UICONTROL Stores]** > Configuración > **Configuración** > **Avanzadas** > **Sistema** > **Caché de página completa**.
+1. Desde el **[!UICONTROL Caching Application]** , haga clic en **Almacenamiento en caché de barniz**.
+1. Introduzca un valor en la variable **[!UICONTROL TTL for public content]** field.
 1. Expandir **[!UICONTROL Varnish Configuration]** e introduzca la siguiente información:
 
    | Campo | Descripción |
    | ----- | ----------- |
-   | Lista de acceso | Introduzca el nombre de host completo, la dirección IP o [Enrutamiento entre dominios sin clase (CIDR)](https://www.digitalocean.com/community/tutorials/understanding-ip-addresses-subnets-and-cidr-notation-for-networking) rango de direcciones IP de notación para el cual se va a invalidar contenido. Consulte [Depuración de caché de barniz](https://varnish-cache.org/docs/3.0/tutorial/purging.html). |
-   | Host back-end | Introduzca el nombre de host o la dirección IP completa y el puerto de escucha de Varnish. _backend_ o _servidor de origen_; es decir, el servidor que proporciona el contenido se acelera. Normalmente, este es su servidor web. Consulte [Servidores back-end de la caché de Varnish](https://www.varnish-cache.org/docs/trunk/users-guide/vcl-backends.html). |
+   | Lista de acceso | Introduzca el nombre de host completo, la dirección IP o [Enrutamiento entre dominios sin clase (CIDR)](https://www.digitalocean.com/community/tutorials/understanding-ip-addresses-subnets-and-cidr-notation-for-networking) intervalo de direcciones IP de notación para el que se va a invalidar el contenido. Consulte [Depuración de caché de barniz](https://varnish-cache.org/docs/3.0/tutorial/purging.html). |
+   | Host back-end | Introduzca el nombre de host completo o la dirección IP y el puerto de escucha del barniz _servidor_ o _servidor de origen_; es decir, el servidor que proporciona el contenido que Barnish acelera. Normalmente, es su servidor web. Consulte [Servidores back-end de caché de barniz](https://www.varnish-cache.org/docs/trunk/users-guide/vcl-backends.html). |
    | Puerto back-end | Puerto de escucha del servidor de origen. |
-   | Período de gracia | El período de gracia determina cuánto tiempo Varnish sirve contenido obsoleto si el servidor no responde. El valor predeterminado es 300 segundos. |
+   | Período de gracia | El periodo de gracia determina cuánto tiempo sirve Barnish al contenido obsoleto si el backend no responde. El valor predeterminado es 300 segundos. |
 
-1. Haga clic en **Guardar configuración**.
+1. Clic **Guardar configuración**.
 
-También puede activar Varnish desde la línea de comandos (en lugar de iniciar sesión en el administrador) mediante la herramienta de interfaz de línea de comandos C:
+También puede activar Varnish desde la línea de comandos, en lugar de iniciar sesión en Admin, mediante la herramienta de interfaz de línea de comandos de C:
 
 ```bash
 bin/magento config:set --scope=default --scope-code=0 system/full_page_cache/caching_application 2
 ```
 
-## Exportación de un archivo de configuración de barniz
+## Exportar un archivo de configuración de barniz
 
-Para exportar un archivo de configuración de Varnish desde el administrador:
+Para exportar un archivo de configuración de Barniz desde Admin:
 
-1. Haga clic en uno de los botones de exportación para crear una `varnish.vcl` puede usar con Varnish.
+1. Haga clic en uno de los botones de exportación para crear una `varnish.vcl` se puede usar con Barnish.
 
-   Por ejemplo, si tiene Varnish 4, haga clic en **Exportar VCL para Varniz 4**
+   Por ejemplo, si tiene Barniz 4, haga clic en **Exportar VCL para Barniz 4**
 
    La siguiente figura muestra un ejemplo:
 
-   ![Configuración de Commerce para utilizar Varnish en el Administrador](../../assets/configuration/varnish-admin-22.png)
+   ![Configuración de Commerce para utilizar Barniz en el administrador](../../assets/configuration/varnish-admin-22.png)
 
-1. Haga una copia de seguridad de su `default.vcl`. A continuación, cambie el nombre del `varnish.vcl` archivo que acaba de exportar a `default.vcl`. A continuación, copie el archivo en el `/etc/varnish/` directorio.
+1. Haga una copia de seguridad de los existentes `default.vcl`. A continuación, cambie el nombre `varnish.vcl` archivo al que acaba de exportar `default.vcl`. A continuación, copie el archivo en la `/etc/varnish/` directorio.
 
    ```bash
    cp /etc/varnish/default.vcl /etc/varnish/default.vcl.bak2
@@ -60,7 +60,7 @@ Para exportar un archivo de configuración de Varnish desde el administrador:
    cp <download_directory>/default.vcl /etc/varnish/default.vcl
    ```
 
-1. Adobe le recomienda que abra `default.vcl` y cambiar el valor de `acl purge` a la dirección IP del host de Varnish. (Puede especificar varios hosts en líneas separadas o también puede utilizar la notación CIDR).
+1. El Adobe recomienda abrir `default.vcl` y cambie el valor de `acl purge` a la dirección IP del host de Varnish. (Puede especificar varios hosts en líneas independientes o también puede utilizar la notación CIDR).
 
    Por ejemplo,
 
@@ -70,7 +70,7 @@ Para exportar un archivo de configuración de Varnish desde el administrador:
     }
    ```
 
-1. Si desea personalizar las comprobaciones de estado de Vagrant o la configuración del modo de gracia o del modo de santo, consulte [Configuración avanzada de barniz](config-varnish-advanced.md).
+1. Si desea personalizar las comprobaciones de estado de Vagrant para la configuración del modo de gracia o del modo de san, consulte [Configuración avanzada de barniz](config-varnish-advanced.md).
 
 1. Reinicie Varnish y su servidor web:
 
@@ -82,9 +82,9 @@ Para exportar un archivo de configuración de Varnish desde el administrador:
    service httpd restart
    ```
 
-## Almacenar en caché archivos estáticos
+## Archivos estáticos de caché
 
-Los archivos estáticos no deben almacenarse en caché de forma predeterminada, pero si desea almacenarlos en caché, puede editar la sección `Static files caching` en la VCL para tener el siguiente contenido:
+Los archivos estáticos no deben almacenarse en caché de forma predeterminada, pero si desea almacenarlos, puede editar la sección `Static files caching` en la VCL para que tenga el siguiente contenido:
 
 ```conf
 # Static files should not be cached by default
@@ -96,4 +96,4 @@ Los archivos estáticos no deben almacenarse en caché de forma predeterminada, 
   #unset req.http.Cookie;
 ```
 
-Debe realizar estos cambios antes de configurar Commerce para utilizar Varnish.
+Debe realizar estos cambios antes de configurar Commerce para que utilice Barnish.

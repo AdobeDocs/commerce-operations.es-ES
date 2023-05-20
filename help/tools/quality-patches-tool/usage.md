@@ -1,6 +1,6 @@
 ---
 title: Uso
-description: Aprenda a utilizar la variable [!DNL Quality Patches Tool].
+description: Aprenda a utilizar el [!DNL Quality Patches Tool].
 exl-id: f9ad37e9-2d0f-4bc8-a98b-6d60b6f56d42
 source-git-commit: 786be8bfa915fe82d9316f51662b20bde71abbaa
 workflow-type: tm+mt
@@ -11,24 +11,24 @@ ht-degree: 0%
 
 # Uso
 
-La variable [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) ofrece parches individuales desarrollados por Adobe y la comunidad de Magento Open Source. Permite aplicar, revertir y ver información general sobre todos los parches individuales disponibles para la versión instalada de Adobe Commerce o Magento Open Source. Puede aplicar parches a los proyectos de Adobe Commerce y Magento Open Source independientemente de quién desarrolló el parche. Por ejemplo, puede aplicar un parche desarrollado por la comunidad a los proyectos de Adobe Commerce.
+El [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) ofrece parches individuales desarrollados por Adobe y la comunidad de Magento Open Source. Permite aplicar, revertir y ver información general sobre todos los parches individuales que están disponibles para la versión instalada de Adobe Commerce o Magento Open Source. Puede aplicar parches a proyectos de Adobe Commerce y de Magento Open Source independientemente de quién lo haya desarrollado. Por ejemplo, puede aplicar un parche desarrollado por la comunidad a proyectos de Adobe Commerce.
 
 
-Observe esto [vídeo técnico](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/tools/quality-patch-tool.html?lang=en) y aprenda a utilizar la herramienta Parches de calidad para Adobe Commerce y Magento Open Source.
+Ver esto [vídeo técnico](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/tools/quality-patch-tool.html?lang=en) y aprenda a utilizar la herramienta Parches de calidad para Adobe Commerce y Magento Open Source.
 
 >[!INFO]
 >
->Consulte [Aplicar parches individuales](#apply-individual-patches) para obtener instrucciones sobre la aplicación de parches a sus proyectos de Adobe Commerce o Magento Open Source. Consulte [[!DNL Quality Patches Tool]: Buscar parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) para revisar una lista completa de parches liberados.
+>Consulte [Aplicar parches individuales](#apply-individual-patches) para obtener instrucciones sobre cómo aplicar parches a los proyectos de Adobe Commerce o de Magento Open Source. Consulte [[!DNL Quality Patches Tool]: Buscar parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) para revisar una lista completa de parches publicados.
 
 >[!WARNING]
 >
->No se recomienda usar la variable [!DNL Quality Patches Tool] para aplicar un gran número de parches porque aumenta la complejidad del código y dificulta la actualización a una nueva versión.
+>No se recomienda utilizar la variable [!DNL Quality Patches Tool] para aplicar una gran cantidad de parches porque aumenta la complejidad de su código y dificulta la actualización a una nueva versión.
 
 ## Instalar
 
 >[!INFO]
 >
->Si aún no está instalado, debe instalar [[!DNL Git]](https://github.com/git-guides/install-git) o [Parche](https://man7.org/linux/man-pages/man1/patch.1.html) antes de instalar el [!DNL Quality Patches Tool]. Agregue la variable `magento/quality-patches` Paquete de compositor a su `composer.json` archivo:
+>Si aún no está instalado, debe instalar [[!DNL Git]](https://github.com/git-guides/install-git) o [Parche](https://man7.org/linux/man-pages/man1/patch.1.html) antes de instalar el [!DNL Quality Patches Tool]. Añada el `magento/quality-patches` Paquete de Compositor para su `composer.json` archivo:
 
 ```bash
 composer require magento/quality-patches
@@ -46,43 +46,43 @@ Verá un resultado similar al siguiente:
 
 | Id | Título | Tipo | Estado | Detalles |
 |--- |--- |--- |--- |--- |
-| MAGECLOUD-5069 | FPC se desactiva durante las implementaciones | Opcional | No se aplica | Componentes afectados:<br> - magento/module-page-cache |
-| MCLOUD-5650 | Mantener configuración de implementación después de leer el archivo | Opcional | No se aplica | Componentes afectados:<br> - magento/framework |
-| MCLOUD-5684 | La paginación no funciona - product_list_limit=all | Opcional | No se aplica | Componentes afectados: - magento/module-elasticsearch |
-| MCLOUD-5837 | Solución del problema del equilibrador de carga | Obsoleto | Aplicado | Sustitución recomendada: MC-1 <br> Componentes afectados: - magento/framework |
-| BUNDLE-2554 | Configurar error de información de pago | Opcional | No se aplica | Componentes afectados: <br>- amzn/amazon-pay-module |
-| MC-1 | Correcciones del problema 1 | Opcional | Aplicado | Componentes afectados: <br> - magento/module-cms |
-| MC-2 | Correcciones del problema 2 | Opcional | No se aplica | Componentes afectados: <br> - magento/module-cms |
-| MC-3 | Correcciones del problema 3 | Opcional | No se aplica | parches necesarios:<br> - MC-2 <br>Componentes afectados: <br>- magento/module-cms |
-| MC-3-V2 | Corrección actualizada para la versión 3, sustituye al parche MC-3 | Opcional | N/D | Componentes afectados:  <br>- magento/module-cms |
+| MAGECLOUD-5069 | FPC se desactiva durante las implementaciones | Opcional | No aplicado | Componentes afectados:<br> - magento/module-page-cache |
+| MCLOUD-5650 | Mantener la configuración de implementación después de leer el archivo | Opcional | No aplicado | Componentes afectados:<br> - magento/framework |
+| MCLOUD-5684 | La paginación no funciona - product_list_limit=all | Opcional | No aplicado | Componentes afectados: - magento/module-elasticsearch |
+| MCLOUD-5837 | Corregir problema del equilibrador de carga | Obsoleto | Aplicado | Reemplazo recomendado: MC-1 <br> Componentes afectados: - magento/framework |
+| PAQUETE-2554 | Establecer error de información de pago | Opcional | No aplicado | Componentes afectados: <br>- amzn/amazon-pay-module |
+| MC-1 | Soluciona el problema 1 | Opcional | Aplicado | Componentes afectados: <br> - magento/module-cms |
+| MC-2 | Soluciona el problema 2 | Opcional | No aplicado | Componentes afectados: <br> - magento/module-cms |
+| MC-3 | Correcciones del problema 3 | Opcional | No aplicado | Parches necesarios:<br> - MC-2 <br>Componentes afectados: <br>- magento/module-cms |
+| MC-3-V2 | Se ha actualizado la corrección del problema 3, que sustituye al parche de MC-3 | Opcional | N/D | Componentes afectados:  <br>- magento/module-cms |
 
 Adobe Commerce 2.3.5.
 
 La tabla de estado incluye:
 
 - **Tipo**:
-   - `Optional` — Todos los parches de [!DNL Quality Patches Tool] y [Guía de Commerce on Cloud Infrastructure > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) son opcionales para las instalaciones de Adobe Commerce y Magento Open Source.
-   - `Deprecated` — el Adobe ha desaprobado el parche individual. Si ha aplicado el parche, le recomendamos que lo revierta. La operación revertir también elimina el parche de la tabla de estado.
+   - `Optional` — Todos los parches del [!DNL Quality Patches Tool] y el [Guía de Commerce en Cloud Infrastructure > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) son opcionales para las instalaciones de Adobe Commerce y Magento Open Source.
+   - `Deprecated` — el Adobe ha desaprobado el parche individual. Si ha aplicado el parche, le recomendamos que lo revierta. La operación de reversión también elimina el parche de la tabla de estado.
 
 - **Estado**:
    - `Applied` — Se ha aplicado el parche.
    - `Not applied` — No se ha aplicado el parche.
-   - `N/A` — El estado del parche no se puede definir debido a conflictos.
+   - `N/A` — El estado del parche no se puede definir debido a varios conflictos.
 
 - **Detalles**:
    - `Affected components` — La lista de módulos afectados.
    - `Required patches` — La lista de parches que deben aplicarse para que un parche indicado funcione correctamente (dependencias).
-   - `Recommended replacement` — El parche que es un reemplazo recomendado para un parche en desuso.
+   - `Recommended replacement` — El parche que se recomienda para sustituir un parche obsoleto.
 
 >[!INFO]
 >
->Después de actualizar a una nueva versión de Adobe Commerce o Magento Open Source, debe volver a aplicar los parches si no se incluyen en la nueva versión. Consulte [Volver a aplicar parches después de una actualización](#re-apply-patches-after-an-upgrade).
+>Después de actualizar a una nueva versión de Adobe Commerce o Magento Open Source, debe volver a aplicar los parches si estos no se incluyen en la nueva versión. Consulte [Volver a aplicar parches después de una actualización](#re-apply-patches-after-an-upgrade).
 
 ## Aplicar parches individuales {#apply-individual-patches}
 
 >[!WARNING]
 >
->Se recomienda probar todos los parches en un entorno de ensayo o desarrollo antes de implementarlos en producción. También se recomienda realizar una copia de seguridad de los datos antes de aplicar un parche. Consulte [Copia de seguridad y reversión del sistema de archivos, medios y base de datos](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/backup.html).
+>Se recomienda probar todos los parches en un entorno de ensayo o desarrollo antes de implementarlos en producción. También se recomienda realizar una copia de seguridad de los datos antes de aplicar un parche. Consulte [Realizar una copia de seguridad y una reversión del sistema de archivos, medios y base de datos](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/backup.html).
 
 Para aplicar un solo parche, ejecute el siguiente comando donde `MAGETWO-XXXX` es el ID de parche especificado en la tabla de estado:
 
@@ -96,7 +96,7 @@ También puede aplicar varios parches al mismo tiempo separando cada ID de parch
 ./vendor/bin/magento-patches apply MAGETWO-XXXX MAGETWO-YYYY
 ```
 
-Debe limpiar la caché después de aplicar parches para ver los cambios en la aplicación Adobe Commerce:
+Debe limpiar la caché después de aplicar los parches para ver los cambios en la aplicación de Adobe Commerce:
 
 ```bash
 ./bin/magento cache:clean
@@ -104,13 +104,13 @@ Debe limpiar la caché después de aplicar parches para ver los cambios en la ap
 
 >[!INFO]
 >
->Considere la posibilidad de mantener una lista de parches aplicados en una ubicación diferente. Es posible que deba volver a aplicar algunos de ellos después de actualizar a una nueva versión de Adobe Commerce o Magento Open Source. Consulte [Volver a aplicar parches después de una actualización](#re-apply-patches-after-an-upgrade).
+>Considere la posibilidad de mantener una lista de parches aplicados en una ubicación diferente. Es posible que tenga que volver a aplicar algunos de ellos después de actualizar a una nueva versión de Adobe Commerce o Magento Open Source. Consulte [Volver a aplicar parches después de una actualización](#re-apply-patches-after-an-upgrade).
 
-## Revertir parches individuales
+## Reversión de parches individuales
 
 >[!WARNING]
 >
->Se recomienda probar todos los parches en un entorno de ensayo o desarrollo antes de implementarlos en producción. También se recomienda realizar una copia de seguridad de los datos antes de aplicar un parche. Consulte [Copia de seguridad y reversión del sistema de archivos, medios y base de datos](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/backup.html).
+>Se recomienda probar todos los parches en un entorno de ensayo o desarrollo antes de implementarlos en producción. También se recomienda realizar una copia de seguridad de los datos antes de aplicar un parche. Consulte [Realizar una copia de seguridad y una reversión del sistema de archivos, medios y base de datos](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/backup.html).
 
 Para revertir un solo parche, ejecute el siguiente comando donde `MAGETWO-XXXX` es el ID de parche especificado en la tabla de estado:
 
@@ -130,7 +130,7 @@ Para revertir todos los parches aplicados:
 ./vendor/bin/magento-patches revert --all
 ```
 
-Debe limpiar la caché después de revertir los parches para ver los cambios en la aplicación Adobe Commerce:
+Debe limpiar la caché después de revertir los parches para ver los cambios en la aplicación de Adobe Commerce:
 
 ```bash
 ./bin/magento cache:clean
@@ -144,11 +144,11 @@ Adobe Commerce publica periódicamente nuevos parches individuales. Debe actuali
 composer update magento/quality-patches
 ```
 
-Vea los parches añadidos:
+Ver los parches añadidos:
 
 >[!TIP]
 >
->Se muestran nuevos parches en la parte inferior de la tabla.
+>Los nuevos parches de adición se muestran en la parte inferior de la tabla.
 
 ```bash
 ./vendor/bin/magento-patches status
@@ -156,7 +156,7 @@ Vea los parches añadidos:
 
 ## Volver a aplicar parches después de una actualización {#re-apply-patches-after-an-upgrade}
 
-Al actualizar a una nueva versión de Adobe Commerce o Magento Open Source, debe volver a aplicar los parches si no se incluyen en la nueva versión.
+Al actualizar a una nueva versión de Adobe Commerce o Magento Open Source, debe volver a aplicar los parches si estos no se incluyen en la nueva versión.
 
 Para volver a aplicar parches:
 
@@ -166,7 +166,7 @@ Para volver a aplicar parches:
    composer update magento/quality-patches.
    ```
 
-1. Abra la lista de parches aplicados anteriormente, que se recomienda en [Aplicar parches individuales](#apply-individual-patches).
+1. Abra la lista de parches aplicados anteriormente, que se recomendó en [Aplicar parches individuales](#apply-individual-patches).
 
 1. Aplique los parches:
 
@@ -174,7 +174,7 @@ Para volver a aplicar parches:
    ./vendor/bin/magento-patches apply MAGETWO-XXXX
    ```
 
-   La práctica recomendada es aplicar parches de uno en uno.
+   La práctica recomendada es aplicar los parches de uno en uno.
 
 1. Limpie la caché:
 
@@ -184,8 +184,8 @@ Para volver a aplicar parches:
 
    >[!INFO]
    >
-   >Al ejecutar el `status` , los parches incluidos en la nueva versión ya no se muestran en la tabla de parches disponibles.
+   >Cuando ejecute el `status` , los parches que se incluyeron en la nueva versión ya no se muestran en la tabla de parches disponibles.
 
 ## Registro
 
-La variable [!DNL Quality Patches Tool] registra todas las operaciones en el `<Magento_root>/var/log/patch.log` archivo.
+El [!DNL Quality Patches Tool] registra todas las operaciones en `<Magento_root>/var/log/patch.log` archivo.

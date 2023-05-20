@@ -1,13 +1,13 @@
 ---
-title: Fase de inicio de la implementación
-description: Descubra las prácticas recomendadas de implementación para la fase de lanzamiento de los proyectos de Adobe Commerce.
-source-git-commit: 8c86688cd0c7127b6b39c0c605c668288dbe09dc
+title: Fase de lanzamiento de implementación
+description: Conozca las prácticas recomendadas de implementación para la fase de inicio de los proyectos de Adobe Commerce.
+exl-id: 2e85346c-2063-49c9-9b8d-1b5fdd3f1cef
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '101'
 ht-degree: 0%
 
 ---
-
 
 # Fase de lanzamiento
 
@@ -19,17 +19,17 @@ La fase de lanzamiento incluye las siguientes actividades:
 - Verificación del servicio
 - Monitorización del rendimiento
 
-Las siguientes secciones incluyen información sobre las prácticas recomendadas para la fase de lanzamiento.
+Las secciones siguientes incluyen información sobre prácticas recomendadas para la fase de lanzamiento.
 
 ## Configuración de seguridad
 
-- [&#x200B; del servicio de notificaciones de seguridad de Adobe](security-notification-service.md)
-- [Prevención y respuesta de incidentes de seguridad](prevent-respond-security-incident.md)
+- [Servicio de notificación de seguridad de Adobe &#x200B;](security-notification-service.md)
+- [Prevención y respuesta a incidentes de seguridad](prevent-respond-security-incident.md)
 - [Google reCAPTCHA](https://docs.magento.com/user-guide/stores/security-google-recaptcha.html)
-- [Prácticas recomendadas para robots.txt de Adobe Commerce &#x200B;](robots-txt.md)
+- [Prácticas recomendadas para Adobe Commerce robots.txt&#x200B;](robots-txt.md)
 <!-- - [Install the latest security patches](https://helpx.adobe.com/security/products/magento/apsb22-12.html) - CTAG deck -->
-- [Verificar la configuración de seguridad en proyectos de infraestructura en la nube](https://devdocs.magento.com/cloud/live/site-launch-checklist.html#security-configuration)
+- [Verificar la configuración de seguridad en los proyectos de infraestructura en la nube](https://devdocs.magento.com/cloud/live/site-launch-checklist.html#security-configuration)
 
-## Supervisión del rendimiento
+## Monitorización del rendimiento
 
 - [Utilice la herramienta SWAT para garantizar la seguridad y la operabilidad de Adobe Commerce](../../../tools/site-wide-analysis-tool/intro.md#integrations-with-other-adobe-commerce-support-tools)

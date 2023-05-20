@@ -1,16 +1,16 @@
 ---
-title: Barniz ESI
-description: Obtenga más información sobre Edge Side Includes y cómo puede utilizarlas para incrustar páginas web.
-badge: label="Contribuido por Konstantin G." type="Informative" url="https://github.com/goivvy" tooltip="Konstantin G."
-source-git-commit: 90544452f5f0834e096ead6ea3df64dcb5eaea11
+title: Barniz Bloque ESI
+description: Obtenga información acerca de las inclusiones de Edge Side y cómo puede utilizarlas para incrustar páginas web.
+badge: label="Colaborado por Konstantin G." type="Informativo" url="https://github.com/goivvy" tooltip="Konstantin G."
+exl-id: 7dccafa5-df79-4690-be5c-ff774c66bb2a
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '135'
 ht-degree: 0%
 
 ---
 
-
-# Barniz ESI
+# Barniz Bloque ESI
 
 Edge Side Includes (ESI) son directivas especiales que puede utilizar para incluir páginas web en otras páginas web.
 
@@ -22,14 +22,14 @@ Un ejemplo:
 </div>
 ```
 
-Var obtiene contenido de `http://domain.com/index.php/page_cache/block/esi/blocks` y reemplace el `<esi>` con él.
+El barniz obtiene contenido de `http://domain.com/index.php/page_cache/block/esi/blocks` y sustituya el `<esi>` etiqueta con ella.
 
-## Commerce y Varnish ESI
+## Comercio y Barniz ESI
 
-El marco de comercio crea una etiqueta ESI cuando se cumplen las siguientes condiciones:
+El marco de Commerce crea una etiqueta ESI cuando se cumplen las siguientes condiciones:
 
 - La aplicación de almacenamiento en caché está configurada en `Varnish Cache`
-- Un diseño XML `block` se agrega con un `ttl` attribute
+- Un diseño XML `block` se añade con un `ttl` atributo
 
 ### Ejemplo
 
@@ -41,11 +41,11 @@ El marco de comercio crea una etiqueta ESI cuando se cumplen las siguientes cond
    </referenceContainer>
 ```
 
-En el ejemplo anterior, la variable `block` el elemento agrega contenido desde el `esi.phtml` plantilla en una página principal y Varnish la actualiza automáticamente cada 30 segundos.
+En el ejemplo anterior, la variable `block` añade contenido desde el `esi.phtml` plantilla a una página de inicio y Barnish la actualiza automáticamente cada 30 segundos.
 
 ## Limitaciones
 
-Actualmente, Varnish no admite ESI a través de HTTPS, por lo que cambia automáticamente a HTTP.
+Actualmente, Varnish no admite ESI sobre HTTPS, por lo que cambia automáticamente a HTTP.
 
 `Magento\PageCache\Observer\ProcessLayoutRenderElement`:
 

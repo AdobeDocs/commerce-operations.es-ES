@@ -1,39 +1,39 @@
 ---
-title: Optimizar imágenes para un sitio más interactivo
-description: Conozca los pasos para optimizar las imágenes y utilizar la optimización de imágenes Fough para optimizar el tiempo de respuesta en sus sitios de Adobe Commerce.
+title: Optimización de imágenes para un sitio más interactivo
+description: Conozca los pasos para optimizar las imágenes y utilice la Optimización rápida de imágenes para optimizar el tiempo de respuesta en sus sitios de Adobe Commerce.
 role: Developer, Admin
 feature: Best Practices
 feature-set: Commerce
-source-git-commit: e156fcafc5792036b37d9b199b870f1888c3f1ff
+exl-id: ada8b987-97ed-4232-9e1b-7e0a791a0807
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '210'
 ht-degree: 0%
 
 ---
 
+# Optimización de imágenes para un sitio más interactivo
 
-# Optimizar imágenes para un sitio más interactivo
-
-Para Adobe Commerce en implementaciones de infraestructura en la nube, mejore el tiempo de respuesta del sitio optimizando las imágenes antes de cargarlas. A continuación, utilice la optimización de imágenes Fapiente para acelerar la entrega de imágenes y simplificar el mantenimiento de los conjuntos de fuentes de imágenes.
+Para Adobe Commerce en implementaciones de infraestructura en la nube, mejore el tiempo de respuesta del sitio optimizando las imágenes antes de cargarlas. A continuación, utilice la Optimización rápida de imágenes para acelerar la entrega de imágenes y simplificar el mantenimiento de los conjuntos de fuentes de imágenes.
 
 ## Productos y versiones afectados
 
 [Todas las versiones compatibles](../../../release/versions.md) de:
 
-Adobe Commerce en infraestructura en la nube
+Adobe Commerce en la infraestructura en la nube
 
 
-## Optimizar y comprimir imágenes
+## Optimización y compresión de imágenes
 
-Antes de cargar imágenes a sus sitios de comercio, optimice y comprima las imágenes para equilibrar el rendimiento con la calidad de visualización. Esto ayuda a aumentar el espacio y a reducir los tiempos de carga de las páginas.
+Antes de cargar imágenes en los sitios de Commerce, optimícelas y comprímalas para equilibrar el rendimiento y la calidad de visualización. Esto ayuda a aumentar el espacio y reducir los tiempos de carga de la página.
 
-- El formato PNG proporciona imágenes de menor tamaño para imágenes con grandes áreas de color sólido.
+- El formato PNG ofrece imágenes de tamaño más pequeño para imágenes con grandes áreas de color sólido.
 
-- El formato JPEG ofrece imágenes de menor tamaño para todos los demás tipos de imágenes. Utilice la compresión más alta (sin degradación visible). Esto es generalmente del 60% al 80%.
+- El formato JPEG ofrece imágenes de menor tamaño para todos los demás tipos de imagen. Utilice la compresión más alta (sin una degradación apreciable). Esto suele ser del 60 al 80 por ciento.
 
-## Habilitar y configurar la optimización de imagen Fough
+## Habilitar y configurar la optimización rápida de imágenes
 
-Después de configurar el servicio Finfinito para el proyecto de Adobe Commerce Cloud, consulte [Optimización de imágenes más rápidas](https://devdocs.magento.com/cloud/cdn/fastly-image-optimization.html) para obtener instrucciones sobre cómo habilitar y configurar la optimización de imágenes.
+Después de configurar el servicio de Fastly para el proyecto de Adobe Commerce Cloud, consulte [Optimización rápida de imágenes](https://devdocs.magento.com/cloud/cdn/fastly-image-optimization.html) para obtener instrucciones sobre cómo habilitar y configurar la optimización de imágenes.
 
 ## Información adicional
 

@@ -1,47 +1,47 @@
 ---
-title: Configuración automática de bases de datos maestras
+title: Configurar automáticamente bases de datos maestras
 description: Consulte las directrices sobre la configuración automática de la solución de base de datos dividida.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: a27ad097-de60-4cdd-81f9-eb1ae84587e4
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '355'
 ht-degree: 0%
 
 ---
 
-
-# Configuración automática de bases de datos maestras
+# Configurar automáticamente bases de datos maestras
 
 {{ee-only}}
 
 {{deprecate-split-db}}
 
-En este tema se explica cómo empezar a utilizar la solución de división de bases de datos mediante:
+En este tema se explica cómo empezar a utilizar la solución de base de datos dividida mediante:
 
-1. Instalación de Adobe Commerce con una sola base de datos maestra (denominada `magento`)
-1. Creación de dos bases de datos maestras adicionales para cierre de compra y OMS (con nombre `magento_quote` y `magento_sales`)
+1. Instalación de Adobe Commerce con una única base de datos maestra (denominada `magento`)
+1. Creación de dos bases de datos maestras adicionales para retirada y OMS (denominadas `magento_quote` y `magento_sales`)
 1. Configuración de Adobe Commerce para utilizar las bases de datos de cierre de compra y ventas
 
 >[!INFO]
 >
->Esta guía asume que las tres bases de datos están en el mismo host que la aplicación Commerce y que tienen su nombre `magento`, `magento_quote`y `magento_sales`. Sin embargo, usted puede elegir dónde ubicar las bases de datos y cómo se denominan. Esperamos que nuestros ejemplos hagan que las instrucciones sean más fáciles de seguir.
+>En esta guía se da por hecho que las tres bases de datos están en el mismo host que la aplicación Commerce y que tienen el nombre `magento`, `magento_quote`, y `magento_sales`. Sin embargo, la elección de dónde ubicar las bases de datos y sus nombres depende de usted. Esperamos que nuestros ejemplos faciliten el seguimiento de las instrucciones.
 
 ## Instalación del software de Adobe Commerce
 
-Puede habilitar bases de datos divididas en cualquier momento después de instalar el software de Adobe Commerce; en otras palabras, puede agregar bases de datos divididas a un sistema de Adobe Commerce que ya tenga datos de cierre de compra y pedido. Utilice las instrucciones de Adobe Commerce README o la [guía de instalación](../../installation/overview.md) para instalar el software de Adobe Commerce utilizando una única base de datos maestra.
+Puede activar las bases de datos divididas en cualquier momento después de instalar el software de Adobe Commerce; es decir, puede agregar bases de datos divididas a un sistema de Adobe Commerce que ya tiene datos de cierre de compra y pedidos. Siga las instrucciones del archivo LÉAME de Adobe Commerce o [guía de instalación](../../installation/overview.md) para instalar el software de Adobe Commerce mediante una única base de datos maestra.
 
-## Configuración de bases de datos maestras adicionales
+## Configurar bases de datos maestras adicionales
 
-Cree las bases de datos maestras de cierre de compra y OMS de la siguiente manera:
+Cree las bases de datos maestras de OMS y de cierre de compra de la siguiente manera:
 
 1. Inicie sesión en el servidor de la base de datos como cualquier usuario.
-1. Introduzca el siguiente comando para llegar al símbolo del sistema MySQL:
+1. Introduzca el siguiente comando para llegar al símbolo del sistema de MySQL:
 
    ```bash
    mysql -u root -p
    ```
 
-1. Introduzca el MySQL `root` contraseña del usuario cuando se le pida.
-1. Introduzca los siguientes comandos en el orden mostrado para crear instancias de base de datos con el nombre `magento_quote` y `magento_sales` con los mismos nombres de usuario y contraseñas:
+1. Introduzca el MySQL `root` contraseña del usuario cuando se le solicite.
+1. Introduzca los siguientes comandos en el orden mostrado para crear instancias de base de datos denominadas `magento_quote` y `magento_sales` con los mismos nombres de usuario y contraseñas:
 
    ```shell
    create database magento_quote;
@@ -63,7 +63,7 @@ Cree las bases de datos maestras de cierre de compra y OMS de la siguiente maner
 
 1. Compruebe las bases de datos de una en una:
 
-   Base de datos de cierre de compra:
+   Base de datos de extracción:
 
    ```bash
    mysql -u magento_quote -p
@@ -73,7 +73,7 @@ Cree las bases de datos maestras de cierre de compra y OMS de la siguiente maner
    exit
    ```
 
-   Base de datos del sistema de gestión de pedidos:
+   Base de datos del sistema de Order Management:
 
    ```bash
    mysql -u magento_sales -p
@@ -83,19 +83,19 @@ Cree las bases de datos maestras de cierre de compra y OMS de la siguiente maner
    exit
    ```
 
-   Si aparece el monitor MySQL, ha creado la base de datos correctamente. Si aparece un error, repita los comandos anteriores.
+   Si se muestra el monitor MySQL, ha creado correctamente la base de datos. Si aparece un error, repita los comandos anteriores.
 
-## Configuración de Commerce para utilizar las bases de datos maestras
+## Configurar Commerce para que utilice las bases de datos maestras
 
-Después de configurar un total de tres bases de datos maestras, utilice la línea de comandos para configurar Commerce para utilizarlas. (El comando configura conexiones de base de datos y distribuye tablas entre las bases de datos maestras).
+Después de configurar un total de tres bases de datos maestras, utilice la línea de comandos para configurar Commerce y utilizarlas. (El comando configura conexiones de base de datos y distribuye tablas entre las bases de datos maestras.)
 
 ### Primeros pasos
 
 Consulte [Ejecución de comandos](../cli/config-cli.md#running-commands) para iniciar sesión y ejecutar comandos CLI.
 
-### Configuración de la base de datos de cierre de compra
+### Configurar la base de datos de retirada
 
-Sintaxis de comandos:
+Sintaxis del comando:
 
 ```bash
 bin/magento setup:db-schema:split-quote --host="<checkout db host or ip>" --dbname="<name>" --username="<checkout db username>" --password="<password>"
@@ -113,9 +113,9 @@ Se muestra el siguiente mensaje para confirmar que la configuración se ha reali
 Migration has been finished successfully!
 ```
 
-### Configuración de la base de datos OMS
+### Configurar la base de datos de OMS
 
-Sintaxis de comandos:
+Sintaxis del comando:
 
 ```bash
 bin/magento setup:db-schema:split-sales --host="<checkout db host or ip>" --dbname="<name>" --username="<checkout db username>" --password="<password>"

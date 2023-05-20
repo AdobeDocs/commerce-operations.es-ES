@@ -1,13 +1,13 @@
 ---
 title: Título del tema de prácticas recomendadas
-description: Aprenda a ...
+description: Aprenda a...
 role: Developer
 feature: Best Practices
 hide: true
 hidefromtoc: true
 source-git-commit: 4360a3436f013c1b2a8b95a876d2037a6987acac
 workflow-type: tm+mt
-source-wordcount: '78'
+source-wordcount: '89'
 ht-degree: 0%
 
 ---
@@ -36,20 +36,20 @@ Available features: https://git.corp.adobe.com/AdobeDocs/exl-config/blob/master/
 
 [Todas las versiones compatibles](../../../release/versions.md) de:
 
-- Adobe Commerce en infraestructura en la nube
-- Adobe Commerce en las instalaciones
+- Adobe Commerce en la infraestructura en la nube
+- Adobe Commerce local
 
 <!-- Example 2: -->
 
-Adobe Commerce en infraestructura de nube con Adobe Commerce versión 2.3.4 o anterior y MariaDB versión 10.0 o anterior.
+Adobe Commerce en la infraestructura en la nube con Adobe Commerce versión 2.3.4 o anterior y MariaDB versión 10.0 o anterior.
 
-<!-- Business type: B2C and B2B -- specify only if needed/)-->
+&lt;!— Tipo de negocio: B2C y B2B — especifique solo si es necesario/)—>
 
-## Encabezado ...
+## Encabezado...
 
-Fragmente el contenido en secciones para facilitar la lectura. El contenido debe incluir llamadas a la acción con ejemplos (buenos frente a malos) y vínculos a documentación cuando corresponda
+Divida el contenido en secciones para facilitar la lectura. El contenido debe incluir llamadas a la acción con ejemplos (bueno o malo) y vínculos a la documentación, cuando corresponda
 
-## Encabezado ...
+## Encabezado...
 
 Utilice solo tantas secciones como sea necesario
 

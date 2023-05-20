@@ -1,28 +1,28 @@
 ---
-title: Actividad de la base de datos de registro
-description: Configure Commerce para registrar la actividad de la base de datos mediante la interfaz Logger.
-source-git-commit: 6a3995dd24f8e3e8686a8893be9693581d31712b
+title: Registrar actividad de base de datos
+description: Configure Commerce para registrar la actividad de la base de datos mediante la interfaz del registrador.
+exl-id: 2487c5ec-a01e-4d87-bc5e-c33643b032df
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '119'
 ht-degree: 0%
 
 ---
 
+# Registrar actividad de base de datos
 
-# Actividad de la base de datos de registro
+El siguiente ejemplo muestra cómo registrar la actividad de la base de datos utilizando [`Magento\Framework\DB\LoggerInterface`][interface], que tiene dos implementaciones:
 
-El siguiente ejemplo muestra cómo registrar la actividad de la base de datos mediante el [`Magento\Framework\DB\LoggerInterface`][interface], que tiene dos implementaciones:
-
-- Registra nada (predeterminado): [`Magento\Framework\DB\Logger\Quiet`][quiet]
+- No registra nada (predeterminado): [`Magento\Framework\DB\Logger\Quiet`][quiet]
 - Registra en `var/log` directorio: [`Magento\Framework\DB\Logger\File`][file]
 
 >[!TIP]
 >
->Puede utilizar Commerce CLI para [habilitar y deshabilitar el registro de bases de datos](../cli/enable-logging.md#database-logging).
+>Puede utilizar la CLI de Commerce para lo siguiente [habilitar y deshabilitar el registro de base de datos](../cli/enable-logging.md#database-logging).
 
-Para cambiar la configuración predeterminada de `\Magento\Framework\DB\Logger\LoggerProxy`, edite el `app/etc/di.xml`.
+Para cambiar la configuración predeterminada de `\Magento\Framework\DB\Logger\LoggerProxy`, edite su `app/etc/di.xml`.
 
-En primer lugar, cambie los valores predeterminados de `loggerAlias` y `logCallStack` argumentos para:
+Primero, cambie los valores predeterminados de `loggerAlias` y `logCallStack` argumentos para:
 
 ```xml
 <type name="Magento\Framework\DB\Logger\LoggerProxy">
@@ -35,7 +35,7 @@ En primer lugar, cambie los valores predeterminados de `loggerAlias` y `logCallS
 </type>
 ```
 
-Después, proporcione la ruta del archivo para `Magento\Framework\DB\Logger\File`:
+A continuación, proporcione la ruta de archivo para `Magento\Framework\DB\Logger\File`:
 
 ```xml
 <type name="Magento\Framework\DB\Logger\File">

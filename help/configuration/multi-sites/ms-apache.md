@@ -1,63 +1,63 @@
 ---
 title: Configuración de varios sitios web con Apache
 description: Siga este tutorial para configurar varios sitios web con Apache.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+exl-id: 4c6890b3-f15a-46f2-a3e8-6f2a9b57a6ad
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '505'
 ht-degree: 0%
 
 ---
 
-
 # Configuración de varios sitios web con Apache
 
-Asumimos que:
+Suponemos que:
 
-Si es necesario, copie la `index.php` script de punto de entrada para el sitio web o la vista de tienda y añádalo lo siguiente:
+Si es necesario, copie el existente `index.php` script de punto de entrada para su sitio web o vista de tienda y añádale lo siguiente:
 
 - Está trabajando en una máquina de desarrollo (portátil, máquina virtual, etc.)
 
-   Es posible que se necesiten tareas adicionales para implementar varios sitios web en un entorno alojado; consulte con su proveedor de alojamiento para obtener más información.
+   Es posible que se requieran tareas adicionales para implementar varios sitios web en un entorno alojado; póngase en contacto con su proveedor de alojamiento para obtener más información.
 
-   Se requieren tareas adicionales para configurar Adobe Commerce en la infraestructura de la nube. Después de completar las tareas tratadas en este tema, consulte [Configuración de varios sitios web o tiendas](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) en el _Guía de Commerce on Cloud Infrastructure_.
+   Se requieren tareas adicionales para configurar Adobe Commerce en la infraestructura en la nube. Después de completar las tareas descritas en este tema, consulte [Configurar varios sitios web o tiendas](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) en el _Guía de Commerce en infraestructura en la nube_.
 
 - Utiliza un host virtual por sitio web; el archivo de configuración del host virtual es `/etc/httpd/httpd.conf`
 
-   Las diferentes versiones de Apache en diferentes sistemas operativos configuran hosts virtuales de forma diferente. Consulte la [Documentación de Apache](https://httpd.apache.org/docs/2.4/vhosts) o un administrador de red si no está seguro de cómo configurar un host virtual.
+   Las distintas versiones de Apache en diferentes sistemas operativos configuran los hosts virtuales de forma diferente. Consulte la [Documentación de Apache](https://httpd.apache.org/docs/2.4/vhosts) o un administrador de red si no está seguro de cómo configurar un host virtual.
 
-- El software Commerce está instalado en `/var/www/html/magento2`
-- Tiene dos sitios web que no son los predeterminados:
+- El software Commerce se instala en `/var/www/html/magento2`
+- Tiene dos sitios web distintos del predeterminado:
 
-   - `french.mysite.mg` con código del sitio web `french` y almacenar código de vista `fr`
-   - `german.mysite.mg` con código del sitio web `german` y almacenar código de vista `de`
+   - `french.mysite.mg` con código de sitio web `french` y código de vista de tienda `fr`
+   - `german.mysite.mg` con código de sitio web `german` y código de vista de tienda `de`
 
-## Hoja de ruta para configurar varios sitios web con Apache
+## Guía para configurar varios sitios web con Apache
 
-La configuración de varias tiendas consiste en las siguientes tareas:
+La configuración de varios almacenes consta de las siguientes tareas:
 
-1. [Configuración de sitios web, tiendas y vistas de tiendas](ms-admin.md) en el menú
-1. Crear una [Host virtual Apache](#step-2-create-apache-virtual-hosts) por sitio web de Commerce.
+1. [Configuración de sitios web, tiendas y vistas de tiendas](ms-admin.md) en el Administrador.
+1. Crear uno [Host virtual de Apache](#step-2-create-apache-virtual-hosts) por sitio web de Commerce.
 
-## Paso 1: Cree sitios web, tiendas y vistas de tiendas en el administrador
+## Paso 1: crear sitios web, tiendas y vistas de tiendas en el administrador
 
-Consulte [Configure varios sitios web, tiendas y vistas de tienda en el administrador](ms-admin.md).
+Consulte [Configure varios sitios web, tiendas y vistas de tiendas en el Administrador de](ms-admin.md).
 
-## Paso 2: Creación de hosts virtuales de Apache
+## Paso 2: Crear hosts virtuales de Apache
 
 En esta sección se explica cómo establecer valores para `MAGE_RUN_TYPE` y `MAGE_RUN_CODE` uso de la variable del servidor Apache `SetEnvIf` en un host virtual.
 
-Para obtener más información, consulte `SetEnvIf`, consulte:
+Para obtener más información acerca de `SetEnvIf`, consulte:
 
 - [Apache 2.2](https://httpd.apache.org/docs/2.2/mod/mod_setenvif.html)
 - [Apache 2.4](https://httpd.apache.org/docs/2.4/mod/mod_setenvif.html)
 
 **Para crear hosts virtuales de Apache**:
 
-1. Como usuario con `root` privilegios, abra el archivo de configuración de host virtual en un editor de texto.
+1. Como usuario con `root` privilegios, abra el archivo de configuración del host virtual en un editor de texto.
 
    Por ejemplo, abra `/etc/httpd/conf/httpd.conf`
 
-1. Busque la sección que comienza con `<VirtualHost *:80>`.
+1. Busque la sección que comience por `<VirtualHost *:80>`.
 1. Cree los siguientes hosts virtuales después de cualquier host virtual existente:
 
    ```conf
@@ -81,25 +81,25 @@ Para obtener más información, consulte `SetEnvIf`, consulte:
    </VirtualHost>
    ```
 
-1. Guarde los cambios en `httpd.conf` y salga del editor de texto.
+1. Guardar los cambios en `httpd.conf` y salga del editor de texto.
 1. Reinicie Apache:
 
    - CentOS: `service httpd restart`
    - Ubuntu: `service apache2 restart`
 
-## Verificar el sitio
+## Verifique su sitio
 
-A menos que tenga DNS configurado para las URL de sus tiendas, debe agregar una ruta estática al host en su `hosts` archivo:
+A menos que tenga DNS configurado para las direcciones URL de sus tiendas, debe agregar una ruta estática al host en su `hosts` archivo:
 
-1. Localizar el sistema operativo `hosts` archivo.
-1. Añada la ruta estática con el formato :
+1. Localice su sistema operativo `hosts` archivo.
+1. Añada la ruta estática con el formato:
 
    ```conf
    <ip-address> french.mysite.mg
    <ip-address> german.mysite.mg
    ```
 
-1. Vaya a una de las siguientes direcciones URL en su explorador:
+1. Vaya a una de las siguientes direcciones URL en el explorador:
 
    ```http
    http://mysite.mg/admin
@@ -109,12 +109,12 @@ A menos que tenga DNS configurado para las URL de sus tiendas, debe agregar una 
 
 >[!INFO]
 >
->- Es posible que se necesiten tareas adicionales para implementar varios sitios web en un entorno alojado; consulte con su proveedor de alojamiento para obtener más información.
->- Se necesitan tareas adicionales para configurar Adobe Commerce en la infraestructura de la nube; see [Configuración de varios sitios web o tiendas de Cloud](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) en el _Guía de Commerce on Cloud Infrastructure_.
+>- Es posible que se requieran tareas adicionales para implementar varios sitios web en un entorno alojado; póngase en contacto con su proveedor de alojamiento para obtener más información.
+>- Se requieren tareas adicionales para configurar Adobe Commerce en la infraestructura en la nube; consulte [Configurar varios sitios web o tiendas en la nube](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) en el _Guía de Commerce en infraestructura en la nube_.
 
 
-### Resolución de problemas
+### Solución de problemas
 
-- Si sus sitios en francés y alemán devuelven 404 s pero su administrador carga, asegúrese de haber completado [Paso 6: Añadir el código de tienda a la URL base](ms-admin.md#step-6-add-the-store-code-to-the-base-url).
-- Si todas las direcciones URL devuelven 404 s, asegúrese de reiniciar el servidor web.
+- Si sus sitios en francés y alemán devuelven 404 pero su administrador carga, asegúrese de completar [Paso 6: Añadir el código de tienda a la URL base](ms-admin.md#step-6-add-the-store-code-to-the-base-url).
+- Si todas las direcciones URL devuelven 404, asegúrese de reiniciar el servidor web.
 - Si el administrador no funciona correctamente, asegúrese de configurar correctamente los hosts virtuales.

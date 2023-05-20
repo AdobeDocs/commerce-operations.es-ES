@@ -1,15 +1,15 @@
 ---
-title: Desinstalación o reinstalación de Adobe Commerce
-description: Siga estos pasos para desinstalar y volver a instalar las instalaciones locales de Adobe Commerce y Magento Open Source.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+title: Desinstalar o volver a instalar Adobe Commerce
+description: Siga estos pasos para desinstalar y reinstalar instalaciones locales de Adobe Commerce y Magento Open Source.
+exl-id: fbaeee2c-8da0-4c89-a6d1-882a65014520
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '281'
 ht-degree: 0%
 
 ---
 
-
-# Desinstalación o reinstalación de Adobe Commerce
+# Desinstalar o volver a instalar Adobe Commerce
 
 Antes de utilizar estos comandos, debe [instalar la aplicación](../tutorials/install.md).
 
@@ -17,37 +17,37 @@ Antes de utilizar estos comandos, debe [instalar la aplicación](../tutorials/in
 
 Para actualizar la aplicación:
 
-* Si ha instalado el software de un archivo o si ha utilizado &#39;composer-create-project&#39;, consulte la [Guía de actualización](../../upgrade/overview.md).
+* Si ha instalado el software desde un archivo o si ha utilizado &quot;composer-create-project&quot;, consulte la [Guía de actualización](../../upgrade/overview.md).
 * Si es un desarrollador colaborador (es decir, ha utilizado `git clone`), consulte [Actualizar la aplicación](../../upgrade/developer/git-installs.md).
 
 ## Vuelva a instalar la aplicación
 
-La forma de reinstalar la aplicación desde la línea de comandos depende de su función:
+La forma de reinstalar la aplicación desde la línea de comandos depende de la función:
 
-* Si ha instalado el software de un archivo o si ha utilizado &#39;composer-create-project&#39;, consulte [Actualización de dependencias de instalación](https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies/).
-* Si es un desarrollador colaborador (es decir, ha empezado a usar `git clone`), consulte [Actualización de dependencias de instalación](https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies/).
+* Si ha instalado el software desde un archivo o si ha utilizado &#39;composer-create-project&#39;, consulte [Actualizar dependencias de instalación](https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies/).
+* Si es un desarrollador colaborador (es decir, ha empezado a utilizar `git clone`), consulte [Actualizar dependencias de instalación](https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies/).
 
 ## Desinstalar la aplicación
 
-La desinstalación de la aplicación descarta y restaura la base de datos, elimina la configuración de implementación y borra los directorios de `var`.
+Al desinstalar la aplicación, se borra y restaura la base de datos, se quita la configuración de implementación y se borran los directorios de `var`.
 
-Para desinstalar la aplicación, escriba el siguiente comando:
+Para desinstalar la aplicación, introduzca el siguiente comando:
 
 ```bash
 bin/magento setup:uninstall
 ```
 
-Se muestra el siguiente mensaje para confirmar que la desinstalación se ha realizado correctamente:
+El siguiente mensaje se muestra para confirmar que la desinstalación se ha realizado correctamente:
 
 ```terminal
 [SUCCESS]: Magento uninstallation complete.
 ```
 
-## Mantener archivos generados de forma opcional
+## Mantener opcionalmente archivos generados
 
-De forma predeterminada, `bin/magento setup:upgrade` borra el código compilado y la caché. Normalmente, se usa `bin/magento setup:upgrade` para actualizar componentes y cada componente puede requerir diferentes clases compiladas.
+De forma predeterminada, `bin/magento setup:upgrade` borra el código compilado y la caché. Normalmente, se utiliza `bin/magento setup:upgrade` para actualizar componentes y cada componente puede requerir clases compiladas diferentes.
 
-Sin embargo, en algunas situaciones (especialmente, la implementación en producción), es posible que desee evitar borrar el código compilado, ya que puede tardar algún tiempo. (La caché sigue borrada). Para actualizar el esquema y los datos de la base de datos *without* borrando código compilado, escriba:
+Sin embargo, en algunas situaciones (en particular, en la implementación en producción), es posible que desee evitar borrar el código compilado, ya que puede tardar algún tiempo. (La caché sigue borrándose). Para actualizar el esquema y los datos de la base de datos *sin* borrando código compilado, introduzca:
 
 ```bash
 bin/magento setup:upgrade --keep-generated
@@ -55,8 +55,8 @@ bin/magento setup:upgrade --keep-generated
 
 >[!WARNING]
 >
->La opción `--keep-generated` debe utilizarla en circunstancias limitadas integradores de sistemas experimentados *only*. Esta opción debería *never* se utilizará en un entorno de desarrollo. El uso incorrecto de este parámetro opcional puede provocar errores durante la ejecución del código.
+>El opcional `--keep-generated` La opción debe ser utilizada en circunstancias limitadas por integradores de sistemas experimentados *solamente*. Esta opción debería *nunca* se utilizará en un entorno de desarrollo. El uso incorrecto de este parámetro opcional puede provocar errores durante la ejecución del código.
 
 ## Instalación de la aplicación
 
-* [Instalación mediante la línea de comandos](../advanced.md)
+* [Instale mediante la línea de comandos](../advanced.md)

@@ -1,28 +1,28 @@
 ---
-title: Evitar la intoxicación de la caché
-description: Obtenga información sobre cómo evitar la intoxicación en la caché de la página para su tienda de comercio.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+title: Evitar el envenenamiento de caché
+description: Aprenda a evitar el envenenamiento de la caché de la página para su tienda de Commerce.
+exl-id: 947024dd-d59d-480d-bb6c-8e0065054bb6
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '260'
 ht-degree: 0%
 
 ---
 
+# Evitar el envenenamiento de caché
 
-# Evitar la intoxicación de la caché
+En este tema se explica cómo evitar el envenenamiento de caché si utiliza el servidor web de Microsoft Internet Information Server (IIS). _Intoxicación de caché_ es un método de cambiar el contenido de la caché para incluir páginas diferentes del mismo sitio. Por ejemplo, es posible insertar una página de error HTTP 404 (no encontrada) en lugar de alguna página benigna (por ejemplo, la página principal de la tienda), lo que puede provocar una posible denegación de servicio (DoS). Varnish o Redis almacenan en caché las direcciones URL de las páginas malintencionadas, de ahí el nombre _envenenamiento de caché de página_.
 
-En este tema se explica cómo evitar la intoxicación de la caché si utiliza el servidor web de Microsoft Internet Information Server (IIS). _Intoxicación de caché_ es un método para cambiar el contenido de la caché para incluir diferentes páginas del mismo sitio. Por ejemplo, es posible insertar una página de error HTTP 404 (no encontrado) en lugar de una página benigna (por ejemplo, la página principal de la tienda), que puede provocar una posible denegación de servicio (DoS). Las direcciones URL de páginas malintencionadas las almacena en caché Varnish o Redis, de ahí el nombre _envenenamiento de caché de página_.
-
-Estos tipos de ataques pueden ser difíciles de detectar porque no dan lugar a errores en los registros del servidor web.
+Estos tipos de ataques pueden ser difíciles de detectar porque no producen errores en los registros del servidor web.
 
 Esta solución se aplica a las siguientes versiones de Commerce:
 
-- 2.0.10 y posteriores
-- 2.1.2 y posteriores
+- 2.0.10 y posterior
+- 2.1.2 y posterior
 
 >[!INFO]
 >
->Este tema está pensado para administradores de IIS experimentados.
+>Este tema está dirigido a administradores de IIS con experiencia.
 
 ## Descripción
 
@@ -38,11 +38,11 @@ Si se cambian estos encabezados, la dirección URL y el contenido resultantes se
 
 ## Solución
 
-Proporcionamos la opción de eliminar los valores de todos los encabezados anteriores basados en la configuración del servidor IIS para `Enable_IIS_Rewrites`.
+Proporcionamos la opción de quitar los valores de todos los encabezados anteriores en función de la configuración del servidor IIS para `Enable_IIS_Rewrites`.
 
-- If `Enable_IIS_Rewrites` está configurado como `0`, se eliminan los valores de los encabezados.
-- If `Enable_IIS_Rewrites` está configurado como `1`, los valores de los encabezados se dejan intactos.
+- If `Enable_IIS_Rewrites` se establece en `0`, se eliminan los valores de los encabezados.
+- If `Enable_IIS_Rewrites` se establece en `1`, los valores de los encabezados se dejan intactos.
 
 >[!WARNING]
 >
->Si configura `Enable_IIS_Rewrites` a `1`, no debe permitir que los valores de los encabezados anteriores se modifiquen antes de que la solicitud llegue al servidor web IIS.
+>Si establece `Enable_IIS_Rewrites` hasta `1`, no debe permitir que los valores de los encabezados anteriores se modifiquen antes de que la solicitud llegue al servidor web de IIS.

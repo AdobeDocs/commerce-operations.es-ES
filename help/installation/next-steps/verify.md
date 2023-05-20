@@ -1,46 +1,46 @@
 ---
-title: Verifique la instalación
-description: Siga estos pasos para confirmar que la instalación de Adobe Commerce o Magento Open Source local se ha realizado correctamente.
-source-git-commit: 5e072a87480c326d6ae9235cf425e63ec9199684
+title: Compruebe la instalación
+description: Siga estos pasos para confirmar que la instalación local de Adobe Commerce o Magento Open Source se ha realizado correctamente.
+exl-id: 0bd7ec01-c616-4384-ae26-db2ce3668caf
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '259'
 ht-degree: 0%
 
 ---
 
+# Compruebe la instalación
 
-# Verifique la instalación
+Vaya a la tienda en un navegador web. Por ejemplo, si la dirección URL de base de instalación es `http://www.example.com`, introdúzcalo en la dirección o en la barra de ubicación de su navegador.
 
-Vaya a la tienda en un navegador web. Por ejemplo, si la URL base de la instalación es `http://www.example.com`, indíquela en la dirección del navegador o en la barra de ubicación.
+La siguiente figura muestra una página de tienda de muestra. Si se muestra de la siguiente manera, su instalación ha sido un éxito.
 
-La siguiente figura muestra una página de tienda de muestra. Si se muestra de la siguiente manera, la instalación se ha realizado correctamente.
-
-![Tienda con el tema de Luma](../../assets/installation/install-success_store-luma.png)
+![Tienda con la temática de Luma](../../assets/installation/install-success_store-luma.png)
 
 ## Verificar la tienda (sin datos de ejemplo)
 
-Vaya a la tienda en un navegador web. Por ejemplo, si la URL base de la instalación es `http://www.example.com`, indíquela en la dirección del navegador o en la barra de ubicación.
+Vaya a la tienda en un navegador web. Por ejemplo, si la dirección URL de base de instalación es `http://www.example.com`, introdúzcalo en la dirección o en la barra de ubicación de su navegador.
 
-La siguiente figura muestra una página de tienda de muestra. Si se muestra de la siguiente manera, la instalación se ha realizado correctamente.
+La siguiente figura muestra una página de tienda de muestra. Si se muestra de la siguiente manera, su instalación ha sido un éxito.
 
-![Tienda que comprueba una instalación correcta](../../assets/installation/install-success_store.png)
+![Tienda que verifica una instalación correcta](../../assets/installation/install-success_store.png)
 
-Si la página muestra una `404 (Not Found)` error o no muestra estilos, consulte [resolución de problemas](https://support.magento.com/hc/en-us/articles/360032994352).
+Si la página muestra un `404 (Not Found)` error o no muestra los estilos, consulte [solución de problemas](https://support.magento.com/hc/en-us/articles/360032994352).
 
 ## Verificar el administrador
 
-Vaya a Administración en un explorador web. Por ejemplo, si la URL base de la instalación es `http://www.example.com`y el URI de administrador es `admin_au1nT`, introduzca `http://www.example.com/admin_au1nT` en la dirección o barra de ubicación del explorador.
+Vaya a Admin en un explorador web. Por ejemplo, si la dirección URL de base de instalación es `http://www.example.com`y el URI de administrador es `admin_au1nT`, introduzca `http://www.example.com/admin_au1nT` en la dirección o la barra de ubicación del explorador.
 
-(El URI de administración se especifica mediante el valor de la variable `backend-frontname` parámetro de instalación).
+(El URI de administrador se especifica mediante el valor de `backend-frontname` parámetro de instalación.)
 
 Cuando se le solicite, inicie sesión como administrador.
 
-La siguiente figura muestra una página de administración. Si se muestra de la siguiente manera, la instalación se ha realizado correctamente.
+La siguiente figura muestra una página de administración de ejemplo. Si se muestra de la siguiente manera, su instalación ha sido un éxito.
 
-![Administrador que comprueba una instalación correcta](../../assets/installation/install_success_admin.png)
+![Administrador que verifica que la instalación se haya realizado correctamente](../../assets/installation/install_success_admin.png)
 
 Si la página no muestra estilos, consulte [solución de problemas](https://support.magento.com/hc/en-us/articles/360032994352).
 
-Si aparece un error 404 (No encontrado) similar al siguiente, consulte [Error de versión PHP o 404 al acceder a Adobe Commerce en el explorador](https://support.magento.com/hc/en-us/articles/360033117152).
+Si obtiene un error 404 (no encontrado) similar al siguiente, consulte [Error de versión de PHP o 404 al acceder a Adobe Commerce en el explorador](https://support.magento.com/hc/en-us/articles/360033117152).
 
 `The requested URL /magento2index.php/admin/admin/dashboard/index/key/0c81957145a968b697c32a846598dc2e/ was not found on this server.`

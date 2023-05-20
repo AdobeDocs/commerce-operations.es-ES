@@ -1,13 +1,13 @@
 ---
 title: Disponibilidad del producto
 description: Obtenga información sobre las funciones de Adobe Commerce disponibles actualmente, cómo acceder a ellas y comprobar su compatibilidad con versiones específicas de Adobe Commerce.
-source-git-commit: da6741586d0fb8e029ee5a9342e1299176df298e
+exl-id: 7e8e8ac2-a0b9-4023-a813-c0f1293e54c2
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '469'
 ht-degree: 0%
 
 ---
-
 
 # Disponibilidad del producto
 

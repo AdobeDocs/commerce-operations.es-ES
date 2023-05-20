@@ -1,37 +1,37 @@
 ---
-title: Instalar Varniz
-description: Consulte los consejos sobre la instalación de Varnish.
-source-git-commit: c65c065c5f9ac2847caa8898535afdacf089006a
+title: Instalar barniz
+description: Consulte los consejos sobre la instalación de Barnish.
+exl-id: e1881a85-3965-42d9-a46f-c2f5f20fbacc
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '165'
 ht-degree: 0%
 
 ---
 
+# Instalar barniz
 
-# Instalar Varniz
-
-La instalación del software Varnish está fuera del alcance de esta guía. Para obtener más información sobre la instalación de Varnish, consulte:
+La instalación del software Varnish no entra dentro del ámbito de esta guía. Para obtener más información sobre la instalación de Barniz, consulte:
 
 - [guía de instalación](https://www.varnish-software.com/developers/tutorials/installing-varnish-ubuntu/)
 - [Guías de instalación de barniz](https://www.varnish-cache.org/docs)
-- [Instalación de Varnish (Tecmint)](https://www.tecmint.com/install-varnish-cache-web-accelerator/)
+- [Cómo instalar Varnish (Tecmint)](https://www.tecmint.com/install-varnish-cache-web-accelerator/)
 
 >[!INFO]
 >
->Este tema está escrito para Varnish en CentOS y Apache 2.4. Si está configurando Varnish en un entorno diferente, es probable que algunos comandos sean diferentes. Consulte la documentación anterior para obtener más información.
+>Este tema está escrito para Varnish en CentOS y Apache 2.4. Si está configurando Barnish en un entorno diferente, es probable que algunos comandos sean diferentes. Consulte la documentación anterior para obtener más información.
 >
->Si tiene intención de instalar módulos (vmods) de Varnish, como el modo saint, debe instalar Varnish compilando el código, en lugar de instalar desde un paquete. Consulte [Modo Saint](config-varnish-advanced.md#saint-mode) para obtener más información.
+>Si tiene intención de instalar módulos Varnish (vmods), como el modo Saint, debe instalar Varnish compilando el código, en lugar de instalar desde un paquete. Consulte [Modo Saint](config-varnish-advanced.md#saint-mode) para obtener más información.
 
-## Confirmar la versión de Varnish
+## Confirma tu versión de Barniz
 
-Abra un terminal e introduzca el siguiente comando para mostrar la versión de Varnish:
+Abra un terminal e introduzca el siguiente comando para mostrar la versión de Barniz:
 
 ```bash
 varnishd -V
 ```
 
-A continuación se muestra una muestra:
+A continuación se muestra un ejemplo:
 
 ```terminal
 varnishd (varnish-6.3.2 revision 199de9b)
@@ -39,4 +39,4 @@ Copyright (c) 2006 Verdens Gang AS
 Copyright (c) 2006-2019 Varnish Software AS
 ```
 
-Asegúrese de que la versión sea 6.x antes de continuar. Si está ejecutando una versión inferior a 6.x, debe actualizar a una versión compatible. Consulte la documentación de instalación de Varnish para obtener más información.
+Asegúrese de que la versión es 6.x antes de continuar. Si su versión de es anterior a la 6.x, debe actualizar a una versión compatible. Consulte la documentación de instalación de Varnish para obtener más información.

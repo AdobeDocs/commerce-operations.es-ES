@@ -1,24 +1,24 @@
 ---
-title: Planificación anual para actualizaciones
-description: Revise las sugerencias para crear un plan de actualización anual para su proyecto de Adobe Commerce o Magento Open Source.
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+title: Planificación anual de actualizaciones
+description: Consulte sugerencias para crear un plan de actualización anual para su proyecto de Adobe Commerce o de Magento Open Source.
+exl-id: f28e5ad1-28ac-4419-a507-63d79dbd6376
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '232'
 ht-degree: 0%
 
 ---
 
-
 # Planificación anual de actualizaciones
 
-Muchas empresas trabajan con presupuestos anuales y hojas de ruta. Durante estas discusiones anuales es imperativo que hable sobre el estado, la dirección y la estrategia de actualización de su plataforma para el año, junto con cómo encaja en los objetivos generales y los indicadores clave de rendimiento (KPI) del negocio.
+Muchas empresas trabajan con presupuestos anuales y hojas de ruta. Durante estas discusiones anuales, es imperativo que hable sobre el estado, la dirección y la estrategia de actualización de la plataforma durante el año, junto con cómo se adapta a los objetivos generales y a los indicadores clave de rendimiento (KPI) de la empresa.
 
-A continuación se muestra la [programación de versiones](https://devdocs.magento.com/release/), asigne ventanillas de presupuesto y lanzamiento para las actualizaciones, evitando vacaciones, cierres de la empresa y tiempos de espera. Al comprender el calendario de versiones del Adobe y mantenerse informado de los cambios y mejoras que forman parte de cada versión a través del [notas de la versión](https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html), puede planear mejor su año.
+Siguiendo las [programación de versiones](https://devdocs.magento.com/release/), asigne ventanas de presupuesto y de lanzamiento para actualizaciones, evitando festivos, cierres de empresas y horas de mayor actividad. Al comprender el calendario de versiones de Adobe y mantenerse informado de los cambios y las mejoras que forman parte de cada versión a través de [notas de la versión](https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html), puedes planificar mejor tu año.
 
 Durante la planificación, es posible que desee preguntarse:
 
-- ¿Hay personalizaciones o extensiones que se deban crear para cumplir con los objetivos de mi negocio?
-- ¿Estoy comprobando que estas personalizaciones y extensiones no se proporcionan de forma nativa por Adobe y que no están en una próxima versión? Si lo son, podría ahorrar tiempo y dinero a mi compañía.
-- ¿Tengo integraciones de terceros que puedan necesitar mantenimiento durante el próximo año?
+- ¿Hay alguna personalización o extensión que deba crearse para satisfacer los objetivos de mi negocio?
+- ¿Estoy comprobando que estas personalizaciones y extensiones no las proporciona el Adobe de forma nativa y que no están en una próxima versión? Si lo son, podría ahorrarle a mi compañía tiempo de instalación y dinero.
+- ¿Tengo integraciones de terceros que podrían necesitar mantenimiento durante el próximo año?
 
-Para garantizar que su equipo esté en el camino correcto, planifique un punto de comprobación de actualización a mitad de año para revisar sus planes, presupuesto, cronología y la capacidad del equipo.
+Para garantizar que su equipo está en el camino correcto, planifique un punto de comprobación de actualización a mitad del año para revisar sus planes, presupuesto, cronología y la capacidad del equipo.

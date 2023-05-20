@@ -1,17 +1,17 @@
 ---
-title: Reversión después del error de actualización del módulo
-description: Solucione los problemas de la actualización de Adobe Commerce o Magento Open Source después de encontrar un error de actualización de módulo.
-source-git-commit: bbc412f1ceafaa557d223aabfd4b2a381d6ab04a
+title: Revertir tras un error de actualización del módulo
+description: Solucione los problemas de actualización de Adobe Commerce o Magento Open Source después de encontrar un error de actualización de módulo.
+exl-id: 1537a6b1-b450-4f90-bffb-73359fa71598
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '93'
 ht-degree: 0%
 
 ---
 
+# Revertir tras un error de actualización del módulo
 
-# Reversión después del error de actualización del módulo
-
-Si falla la actualización del módulo, en el registro de la consola aparecen mensajes similares a los siguientes:
+Si la actualización del módulo falla, se muestran mensajes similares a los siguientes en el registro de la consola:
 
 ```terminal
 [2015-08-14 12:12:02 CDT] Job "update {"components":[{"name":"example/module","version":"1.1.0"}]}" has been started
@@ -21,6 +21,6 @@ Si falla la actualización del módulo, en el registro de la consola aparecen me
 [{"name":"example/module","version":"1.1.0"}]} successfully: Cannot find component to update
 ```
 
-En el ejemplo anterior, no hay ninguna versión de componente a la que revertir. Póngase en contacto con el proveedor de componentes o intente resolver el problema usted mismo.
+En el ejemplo anterior, no hay ninguna versión de componente a la que se pueda revertir. Póngase en contacto con el proveedor del componente o intente resolver el problema usted mismo.
 
-Mientras tanto, puede volver a una versión anterior haciendo clic en **Reversión**, que recupera los datos aunque no haya realizado una copia de seguridad anteriormente.
+Mientras tanto, puede volver a una versión anterior haciendo clic en **Reversión**, que recupera los datos aunque no haya realizado ninguna copia de seguridad anteriormente.

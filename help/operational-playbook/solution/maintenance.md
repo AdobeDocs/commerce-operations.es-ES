@@ -1,6 +1,6 @@
 ---
-title: Mantenimiento del proyecto de comercio
-description: Establecer normas de alta calidad y establecer mecanismos para mantener esas normas a lo largo del tiempo.
+title: Mantenimiento de proyectos de Commerce
+description: Establecer estándares de alta calidad y establecer mecanismos para mantener esos estándares con el tiempo.
 exl-id: 8f394ae0-02c4-4efc-a313-40b8c48aecbb
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
@@ -11,79 +11,79 @@ ht-degree: 0%
 
 # Actualizaciones, backups y mantenimiento
 
-Mantener una base de código sólida, características y funcionalidad y mantener una postura de seguridad sólida son cruciales para tener un almacén de comercio electrónico competitivo.
+Mantener una base de código, características y funcionalidad sólidas, así como mantener una postura de seguridad sólida, son cruciales para tener una tienda de comercio electrónico competitiva.
 
-Existen varias maneras de actualizar de manera eficiente un sitio de comercio electrónico según la infraestructura disponible, pero este proceso varía de un negocio a otro. Dependiendo de la madurez técnica de la empresa, este puede ser un ejercicio muy difícil y costoso.
+Existen varias formas de actualizar de forma eficaz un sitio de comercio electrónico en función de la infraestructura disponible, pero este proceso varía según la empresa. Dependiendo de la madurez técnica de la empresa, esto puede ser un ejercicio muy difícil y costoso.
 
 >[!NOTE]
 >
->Siempre realice una copia de seguridad de los archivos antes de ejecutar una actualización.
+>Realice siempre una copia de seguridad de los archivos antes de ejecutar una actualización.
 
-## Por qué tiene sentido actualizar
+## Por qué tiene sentido la actualización
 
-Dado que el cambio y la adaptación a los nuevos comportamientos de los clientes es la norma, estar en una plataforma más antigua hace que el alojamiento o la imitación de nuevas tecnologías y comportamientos sean más costosos y consuman más tiempo, o simplemente no será posible. Además, a medida que cada vez más desarrolladores se centren en las nuevas tecnologías, la programación y el costo de los proyectos de remodelación pueden ser prohibitivos.
+Dado que el cambio y la adaptación a nuevos comportamientos de los clientes es la norma, estar en una plataforma antigua hace que acomodar o imitar nuevas tecnologías y comportamientos sea más caro y lleve más tiempo, o puede que simplemente no sea posible. Además, a medida que más y más desarrolladores se enfocan en las nuevas tecnologías, la programación y el costo de los proyectos de remodelación pueden ser prohibitivos.
 
-Al realizar la actualización, usted está probando su negocio en el futuro y dándose la capacidad de atender mejor las cambiantes necesidades de los clientes.
+Al actualizar, está afianzando el futuro de su empresa y dándose a sí mismo la capacidad de prestar un mejor servicio a las cambiantes necesidades de los clientes.
 
 ## Planificación de la actualización
 
-A continuación, le presentamos una lista rápida de preguntas que debe hacer cuando planifique la actualización:
+A continuación se muestra una lista rápida de preguntas que debe hacerse a medida que planea la actualización:
 
-- **Limpieza del sitio**— ¿Qué puedo mantener y qué puedo cambiar? ¿Qué cosas nuevas quiero implementar? Por ejemplo, ¿qué cambios quiero realizar en la taxonomía y la estructura del producto o en el contenido?
+- **Limpieza del sitio**— ¿Qué puedo conservar y qué puedo cambiar? ¿Qué cosas nuevas deseo implementar? Por ejemplo, ¿qué cambios deseo realizar en la taxonomía y estructura del producto o en el contenido?
 
-- **Comprobación de Analytics**—¿Cuáles son mis KPI actuales? ¿Qué me dicen mis datos sobre cómo se puede mejorar mi sitio? ¿Hay nuevos KPI que quiero implementar para mi nuevo sitio?
+- **Comprobación de Analytics**— ¿Cuáles son mis KPI actuales? ¿Qué indican mis datos sobre cómo se puede mejorar mi sitio? ¿Hay nuevos KPI que quiero implementar para mi nuevo sitio?
 
-- **Extensiones**—¿Todavía los necesito? ¿Qué extensiones de terceros cubren mis necesidades?
+- **Extensiones**¿Todavía los necesito? ¿Qué extensiones de terceros cubren mis necesidades?
 
-- **Integraciones**— ¿Con qué sistemas de terceros, como ERP y contabilidad, debo integrarme? ¿Tienen conectores específicos o se necesitan integraciones personalizadas?
+- **Integraciones**— ¿Con qué sistemas de terceros, como ERP y contabilidad, necesito integrarme? ¿Tienen conectores específicos o se necesitan integraciones personalizadas?
 
-- **Capacitación**—¿El equipo de actualización tiene el conocimiento y la formación adecuados? ¿Cuál es mi plan para entrenar a los usuarios finales sobre cómo usar el nuevo administrador antes de que entre en funcionamiento?
+- **Formación**—¿Tiene el equipo de actualización los conocimientos y la formación adecuados? ¿Cuál es mi plan para formar a los usuarios finales sobre cómo utilizar al nuevo administrador antes de que se ponga en marcha?
 
-- **Equipo de actualización**—¿Quién está dedicado al proyecto de actualización (tanto expertos internos como externos)? ¿Tienen el apoyo necesario del liderazgo y otros equipos internos?
+- **Equipo de actualización**— ¿Quién está dedicado al proyecto de actualización (tanto los expertos internos como externos)? ¿Cuentan con el apoyo necesario de la dirección y de otros equipos internos?
 
 ## Preguntas frecuentes sobre la actualización
 
 P: ¿Cuánto tiempo tarda una actualización típica?
 
-A: Depende de la plataforma y la arquitectura. Hay muchas variables, y si también está haciendo un rediseño, lleva más tiempo. Una vez finalizado el proceso de detección, el equipo de implementación puede proporcionarle un intervalo de tiempo más preciso para su proyecto.
+R: Depende de la plataforma y la arquitectura. Hay muchas variables, y si también están haciendo un rediseño, se tarda más. Una vez completado el proceso de detección, el equipo de implementación puede proporcionarle un periodo de tiempo más preciso para su proyecto.
 
 
 P: ¿Cuánto cuesta la actualización?
 
-A: De nuevo, depende de la situación actual y de los requisitos para el nuevo sitio. La buena noticia es que, en general, a medida que los socios y desarrolladores se han vuelto más familiarizados y expertos con su plataforma de comercio, los costes de actualización y la duración de los proyectos han disminuido. Le recomendamos consultar con su socio de soluciones para obtener una estimación.
+R: De nuevo, depende de su situación actual y de sus necesidades para su nuevo sitio. La buena noticia es que, por lo general, como socios y desarrolladores se han familiarizado y adaptado mejor a su plataforma de Commerce, los costes de actualización y la duración de los proyectos se han reducido. Le recomendamos que consulte con su socio de soluciones para obtener una estimación.
 
-P: ¿Están disponibles las versiones de Adobe Commerce 2 de mis extensiones Adobe Commerce 1?
+P: ¿Están disponibles las versiones de Adobe Commerce 2 de mis extensiones de Adobe Commerce 1?
 
-A: Prácticamente se cubren todas las necesidades críticas para el negocio. Desde el contenido y las personalizaciones, el envío y el cumplimiento hasta la optimización del sitio, hemos visto un aumento espectacular en el número, y la diversidad, de extensiones en el Commerce Marketplace, ya que la adopción por parte de los comerciantes y la familiaridad de los socios con Adobe Commerce han aumentado.
+R: Se cubren prácticamente todas las necesidades críticas para el negocio. Desde el contenido y las personalizaciones, el envío y la cumplimentación hasta la optimización del sitio, hemos observado un aumento espectacular en el número y la diversidad de extensiones en el Commerce Marketplace, ya que la adopción comercial de Adobe Commerce y la familiaridad con han aumentado.
 
-Algunos ejemplos de empresas tecnológicas globales líderes que han creado extensiones son:
+Algunos ejemplos de empresas tecnológicas líderes a nivel mundial que han creado extensiones son:
 
 - PayPal
-- dotmailer
+- carterista
 - TaxJar
 - Nosto
 - Adobe
-- Fly
+- Rápido
 - Vértice
-- Amazonas
+- Asombroso
 - Celebros
 - Logicbroker
 
-Además, las comprobaciones de control de calidad implementadas para todas las extensiones garantizan una calidad de producto alta de forma consistente, por lo que existe una alta probabilidad de que su extensión o una alternativa de alta calidad a su extensión ya esté en Commerce Marketplace.
+Además, las comprobaciones de garantía de calidad implementadas para todas las extensiones garantizan una calidad del producto alta y constante, por lo que es muy probable que la extensión o una alternativa de alta calidad a la extensión ya sea Commerce Marketplace.
 
-Muchos comerciantes han descubierto que las funcionalidades nativas de Adobe Commerce han reducido su necesidad y dependencia de las extensiones, simplificando las operaciones de desarrollo y mantenimiento y mejorando el rendimiento general. Si aún no lo ha hecho, le recomendamos que se comprometa a realizar una planificación de actualización exhaustiva para descubrir este tipo de oportunidades.
+Muchos comerciantes han descubierto que las funciones nativas de Adobe Commerce han reducido su necesidad y dependencia de las extensiones, han simplificado las operaciones de desarrollo y mantenimiento y han mejorado el rendimiento general. Si aún no lo ha hecho, le recomendamos que realice una planificación de actualización exhaustiva para descubrir este tipo de oportunidades.
 
 P: ¿Qué sucede si mis extensiones e integraciones no son compatibles con la plataforma?
 
-A: Dependiendo de la flexibilidad de la plataforma y de la solución de alojamiento, las diferentes opciones de personalización pueden ser una opción para la mayoría de los sistemas y software. Estas personalizaciones se pueden desarrollar durante el proceso de actualización.
+R: Según la flexibilidad de la plataforma y la solución de alojamiento, diferentes opciones de personalización pueden ser una opción para la mayoría del software y los sistemas. Estas personalizaciones se pueden desarrollar durante el proceso de actualización.
 
 
 P: ¿Cómo se verá afectado mi SEO?
 
-A: Con una planificación adecuada, su SEO debe mejorarse. Nuestro socio Corra recomienda:
+R: Con una planificación adecuada, tu SEO debería mejorarse. Nuestro socio Corra recomienda:
 
-- Creación de un plan de redireccionamiento 301 específico
-- Creación de una estrategia en torno a la taxonomía de direcciones URL
-- Realización de una comprobación de mapa del sitio XML
+- Creación de un plan de redireccionamiento 301 sucinto
+- Creación de una estrategia en torno a la taxonomía URL
+- Realizar una comprobación de mapa del sitio XML
 - Uso de la administración de etiquetas (Google)
-- Discutir en detalle con su equipo de implementación
+- Discusión en detalle con el equipo de implementación

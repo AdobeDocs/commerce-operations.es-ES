@@ -1,31 +1,31 @@
 ---
-title: Fase de desarrollo de la implementación
-description: Obtenga información sobre las prácticas recomendadas de implementación para la fase de desarrollo de los proyectos de Adobe Commerce.
-source-git-commit: ae9573f3766c59887aea177cb85bf889c2161bfc
+title: Fase de desarrollo de implementación
+description: Obtenga información acerca de las prácticas recomendadas de implementación para la fase de desarrollo de proyectos de Adobe Commerce.
+exl-id: 499c16df-0e4d-4950-8169-96356bdff1a7
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '158'
 ht-degree: 0%
 
 ---
 
-
 # Fase de desarrollo
 
 La fase de desarrollo incluye las siguientes actividades:
 
-- Configuración del entorno de ensayo y local
-- Planificación de impresión
-- Ejecución de vale
-- Resolución de problemas
-- Revisión, combinación y prueba de código
+- Configuración del entorno local y de ensayo
+- Planificación de sprint
+- Ejecución de tickets
+- Solución de problemas
+- Revisión, combinación y prueba del código
 - Revisión de Sprint
 - Cierre de sesión del cliente
 
-Las siguientes secciones incluyen información sobre las prácticas recomendadas para la fase de desarrollo.
+Las secciones siguientes incluyen información sobre las prácticas recomendadas para la fase de desarrollo.
 
 ## Desarrollo de aplicaciones
 
-### Revisión, combinación y prueba de código
+### Revisión, combinación y prueba del código
 
 <!--Assets not yet integrated
 - Guidelines and standards
@@ -54,17 +54,17 @@ Las siguientes secciones incluyen información sobre las prácticas recomendadas
 
 ## Plataforma y servicios
 
-- [Usar con facilidad para la optimización de imágenes](image-optimization.md)
+- [Usar Fastly para la optimización de imágenes](image-optimization.md)
 
-### Configuración del entorno de ensayo y local
+### Configuración del entorno local y de ensayo
 
-- [Flujo de trabajo de desarrollo en la infraestructura de Cloud](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html)
+- [Flujo de trabajo de desarrollo en infraestructura en nube](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html)
 
-## Código, combinar, probar
+## Código, combinación, prueba
 
 - [Prácticas recomendadas para compilaciones e implementación](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices.html)
 - [Implementación de contenido estático: nube](static-content-deployment.md)
 - [Optimización de archivos CSS y JS](optimize-css-js-files.md)
-- [Optimizar imágenes para un sitio más interactivo](image-optimization.md)
-- [Prácticas recomendadas para la resolución de problemas de Adobe Commerce en la infraestructura de la nube](troubleshooting.md)
+- [Optimización de imágenes para un sitio más interactivo](image-optimization.md)
+- [Prácticas recomendadas de solución de problemas para Adobe Commerce en infraestructura en la nube](troubleshooting.md)
 - [Saber cuándo y cómo modificar tablas de base de datos](modifying-core-and-third-party-tables.md)

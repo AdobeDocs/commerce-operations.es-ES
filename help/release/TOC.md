@@ -1,5 +1,5 @@
 ---
-user-guide-title: Información de la versión
+user-guide-title: Información de versión
 user-guide-description: Acceda a toda la información de la versión de los parches y servicios de Adobe Commerce en un solo lugar.
 feature: Release Notes
 recommendations: noDisplay, noCatalog
@@ -11,9 +11,9 @@ ht-degree: 15%
 ---
 
 
-# Información de la versión {#release}
+# Información de versión {#release}
 
-- Notas de la versión {#notes}
+- Notas de versión {#notes}
    - [Información general](release-notes/overview.md)
    - [Cambios incompatibles con versiones anteriores](backward-incompatible-changes.md)
    - Adobe Commerce {#adobe-commerce}
@@ -33,8 +33,8 @@ ht-degree: 15%
       - [2.4.1](release-notes/open-source/2-4-1.md)
       - [2.4.0](release-notes/open-source/2-4-0.md)
    - Versiones de parches de seguridad {#security-patches}
-      - [2.4.5-p2](release-notes/security/2-4-5-p2.md)
-      - [2.4.5-p1](release-notes/security/2-4-5-p1.md)
+      - [2,4,5-p2](release-notes/security/2-4-5-p2.md)
+      - [2,4,5-p1](release-notes/security/2-4-5-p1.md)
       - [2.4.4-p3](release-notes/security/2-4-4-p3.md)
       - [2.4.4-p2](release-notes/security/2-4-4-p2.md)
       - [2.4.4-p1](release-notes/security/2-4-4-p1.md)
@@ -43,15 +43,15 @@ ht-degree: 15%
       - [2.4.3-p1](release-notes/security/2-4-3-p1.md)
       - [2.4.2-p2](release-notes/security/2-4-2-p2.md)
 - [Versiones publicadas](versions.md)
-- [Funciones por versión](features.md)
+- [Características por versión](features.md)
 - [Disponibilidad del producto](product-availability.md)
 - [Versiones beta](beta.md)
 - Planificación y políticas {#planning}
-   - [Política del ciclo vital](lifecycle-policy.md)
-   - [Política de versiones](versioning-policy.md)
-   - [Programación de la versión](schedule.md)
+   - [Política de ciclo vital](lifecycle-policy.md)
+   - [Directiva de versiones](versioning-policy.md)
+   - [Programación de versiones](schedule.md)
 - Paquetes {#packages}
    - [Adobe Commerce](packages/adobe-commerce.md)
    - [Paquetes de nube para Adobe Commerce](packages/cloud.md)
    - [Magento Open Source](packages/magento-open-source.md)
-- [Volver a las guías operativas](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
+- [Volver a Guías operativas](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

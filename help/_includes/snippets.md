@@ -11,7 +11,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->La variable [!DNL Upgrade Compatibility Tool] solo está disponible para instancias de Adobe Commerce.
+>El [!DNL Upgrade Compatibility Tool] solo está disponible para instancias de Adobe Commerce.
 
 <!-- Configuration guide snippets -->
 
@@ -19,13 +19,13 @@ ht-degree: 0%
 
 >[!WARNING]
 >
->Todos los comandos CLI del Magento deben ser ejecutados por [propietario del sistema de archivos](/help/configuration/cli/config-cli.md#prerequisites).
+>Todos los comandos de CLI del Magento deben ser ejecutados por el [propietario del sistema de archivos](/help/configuration/cli/config-cli.md#prerequisites).
 
 ## Comandos de copia de seguridad {#tip-backup-command}
 
 >[!TIP]
 >
->La variable `support:backup` command is _not_ la misma copia de seguridad de código realizada por el `setup:backup` comando. La variable `support:backup` está diseñado para realizar una copia de seguridad del código para que la asistencia de Adobe Commerce lo examine.
+>El `support:backup` el comando es _no_ la misma copia de seguridad de código realizada por el `setup:backup` comando. El `support:backup` El comando está diseñado para realizar una copia de seguridad del código y que el servicio de asistencia de Adobe Commerce lo examine.
 
 ## Solo Adobe Commerce {#ee-only}
 
@@ -33,7 +33,7 @@ ht-degree: 0%
 >
 >Esta función solo está disponible para instancias de Adobe Commerce.
 
-## Dividir base de datos en desuso {#deprecate-split-db}
+## Base de datos dividida en desuso {#deprecate-split-db}
 
 >[!IMPORTANT]
 >
@@ -45,10 +45,10 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Las versiones de Adobe Commerce y Magento Open Source pueden contener cambios incompatibles con versiones anteriores (BIC). Para revisar los cambios incompatibles con versiones anteriores, consulte [Referencia BIC](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/reference/). Los principales problemas incompatibles con versiones anteriores se describen en [Aspectos destacados de BIC](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/highlights/). No todas las versiones introducen BIC importantes.
+>Las versiones de Adobe Commerce y Magento Open Source pueden contener cambios incompatibles con versiones anteriores (BIC). Para revisar los cambios incompatibles con versiones anteriores, consulte [Referencia BIC](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/reference/). Los principales problemas incompatibles con versiones anteriores se describen en [Puntos destacados de BIC](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/highlights/). No todas las versiones introducen BIC importantes.
 
-## Aviso de CVE {#cve-notice}
+## aviso de CVE {#cve-notice}
 
 >[!NOTE]
 >
->A partir de la versión 2.3.2, asignaremos y publicaremos números indexados de Vulnerabilidades y Exposiciones Comunes (CVE) con cada error de seguridad que nos notifiquen partes externas. Esto permite a los usuarios identificar con mayor facilidad las vulnerabilidades no atendidas en su implementación. Puede obtener más información sobre los identificadores CVE en [CVE](https://cve.mitre.org/).
+>A partir de la versión 2.3.2 de, asignaremos y publicaremos números de Vulnerabilidades comunes y exposiciones (CVE) indexados con cada error de seguridad que nos comuniquen partes externas. Esto permite a los usuarios identificar con mayor facilidad las vulnerabilidades sin solucionar en su implementación. Puede obtener más información sobre los identificadores CVE en [CVE](https://cve.mitre.org/).

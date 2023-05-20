@@ -7,10 +7,10 @@ ht-degree: 0%
 ---
 # Instalación segura
 
-Para utilizar Secure Sockets Layer (SSL), también conocida como HTTPS, tanto para el administrador como para la tienda, debe configurar todos los parámetros siguientes:
+Para utilizar Secure Sockets Layer (SSL), también denominado HTTPS, tanto para el administrador como para la tienda, debe establecer todos los parámetros siguientes:
 
-* `--use-secure`: Establecer como `1`
-* `--base-url-secure`: Se establece en una dirección URL segura (es decir, que comienza con `https://`)
-* `--use-secure-admin` Establecer como `1`
+* `--use-secure`: establezca en `1`
+* `--base-url-secure`: establezca en una dirección URL segura (es decir, empezando por `https://`)
+* `--use-secure-admin` Configure como. `1`
 
 Más adelante en este tema se pueden encontrar más detalles sobre estos parámetros.

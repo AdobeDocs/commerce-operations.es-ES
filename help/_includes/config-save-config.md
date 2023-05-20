@@ -9,7 +9,7 @@ ht-degree: 0%
 
 **Para actualizar la configuración**:
 
-1. Inicie sesión en su sistema de desarrollo como propietario del sistema de archivos o cambie a él.
+1. Inicie sesión en el sistema de desarrollo como propietario del sistema de archivos o cambie a.
 
 1. Cambie a la raíz de la aplicación y ejecute el comando dump.
 
@@ -43,9 +43,9 @@ ht-degree: 0%
 
    >[!WARNING]
    >
-   >Do _not_ envíe cambios a `generated`, `pub/media`o `pub/static` directorios para control de código fuente. Los genera en su sistema de compilación. Es probable que el sistema de desarrollo tenga código, temas, etc., que no estén listos para usar en el sistema de producción.
+   >Hacer _no_ enviar cambios al `generated`, `pub/media`, o `pub/static` directorios para el control de código fuente. Estos archivos se generan en el sistema de compilación. Es probable que el sistema de desarrollo tenga código, temas, etc., que no estén listos para usarlos en el sistema de producción.
 
-1. Compruebe los cambios en `app/etc/config.php` solo para control de código fuente.
+1. Proteja sus cambios en `app/etc/config.php` sólo al control de código fuente.
 
    ```bash
    git add app/etc/config.php && git commit -m "Updated shared configuration" && git push mconfig m2.2_deploy

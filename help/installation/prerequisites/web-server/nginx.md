@@ -1,17 +1,17 @@
 ---
 title: Nginx
-description: Siga estos pasos para instalar y configurar el servidor web Nginx para las instalaciones locales de Adobe Commerce y Magento Open Source.
-source-git-commit: 8f05fb6fc212c2b3fda80457bbf27ecf16fb1194
+description: Siga estos pasos para instalar y configurar el servidor web Nginx para instalaciones locales de Adobe Commerce y Magento Open Source.
+exl-id: 041ddb9d-868e-4021-9388-1c9ea11bfd8f
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '1180'
 ht-degree: 0%
 
 ---
 
-
 # Nginx
 
-Adobe Commerce es compatible con nginx 1.18 (o [versión más reciente de mainline](https://nginx.org/en/linux_packages.html#mainline)). También debe instalar la última versión de `php-fpm`.
+Adobe Commerce es compatible con nginx 1.18 (o el [última versión de línea principal](https://nginx.org/en/linux_packages.html#mainline)). También debe instalar la versión más reciente de `php-fpm`.
 
 Las instrucciones de instalación varían en función del sistema operativo que utilice. Consulte [PHP](../php-settings.md) para obtener más información.
 
@@ -25,13 +25,13 @@ En la siguiente sección se describe cómo instalar Adobe Commerce y Magento Ope
 sudo apt -y install nginx
 ```
 
-También puede [compilar nginx desde el origen](https://www.armanism.com/blog/install-nginx-on-ubuntu)
+También puede [generar nginx a partir del origen](https://www.armanism.com/blog/install-nginx-on-ubuntu)
 
-Después de completar las siguientes secciones e instalar la aplicación, utilizaremos un archivo de configuración de ejemplo para [configurar nginx](#configure-nginx).
+Después de completar las siguientes secciones e instalar la aplicación, utilizaremos un archivo de configuración de muestra para [configurar nginx](#configure-nginx).
 
-### Instalación y configuración de php-fpm
+### Instalar y configurar php-fpm
 
-Adobe Commerce y Magento Open Source requieren varias [Extensiones PHP](../php-settings.md) para funcionar correctamente. Además de estas extensiones, también debe instalar y configurar el `php-fpm` extensión si está utilizando nginx.
+Adobe Commerce y Magento Open Source requieren varias [Extensiones de PHP](../php-settings.md) para funcionar correctamente. Además de estas extensiones, también debe instalar y configurar el `php-fpm` extensión si utiliza nginx.
 
 Para instalar y configurar `php-fpm`:
 
@@ -43,7 +43,7 @@ Para instalar y configurar `php-fpm`:
 
    >[!NOTE]
    >
-   >Este comando instala la última versión disponible de PHP 7.2.X. Consulte [requisitos del sistema](../../system-requirements.md) para versiones PHP compatibles.
+   >Este comando instala la última versión disponible de PHP 7.2.X. Consulte [requisitos del sistema](../../system-requirements.md) para versiones compatibles de PHP.
 
 1. Abra el `php.ini` archivos en un editor:
 
@@ -65,7 +65,7 @@ Para instalar y configurar `php-fpm`:
 
    >[!NOTE]
    >
-   >Se recomienda establecer el límite de memoria en 2 G al probar Adobe Commerce y el Magento Open Source. Consulte [Configuración de PHP requerida](../php-settings.md) para obtener más información.
+   >Se recomienda establecer el límite de memoria en 2 G al probar Adobe Commerce y Magento Open Source. Consulte [Configuración de PHP requerida](../php-settings.md) para obtener más información.
 
 1. Guarde y salga del editor.
 
@@ -81,29 +81,29 @@ Consulte [MySQL](../database/mysql.md) para obtener más información.
 
 ### Instalación y configuración
 
-Hay varias formas de descargar Adobe Commerce y Magento Open Source, entre ellas:
+Existen varias formas de descargar Adobe Commerce y Magento Open Source, entre ellas:
 
-* [Obtenga el paquete de metapaversión del Compositor](../../composer.md)
+* [Obtener el metapaquete del Compositor](../../composer.md)
 
-* [Clonar el repositorio de Git](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)
+* [Clone el repositorio de Git](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)
 
-Este ejemplo muestra una instalación basada en Compositor utilizando la línea de comandos.
+Este ejemplo muestra una instalación basada en Composer mediante la línea de comandos.
 
-1. Como [propietario del sistema de archivos](../file-system/overview.md), inicie sesión en el servidor de aplicaciones.
+1. Como el [propietario del sistema de archivos](../file-system/overview.md), inicie sesión en su servidor de aplicaciones.
 
-1. Cambie al directorio docroot del servidor web o a un directorio que haya configurado como docroot de host virtual. Para este ejemplo, se utiliza el valor predeterminado Ubuntu `/var/www/html`.
+1. Cambie al directorio docroot del servidor web o a un directorio que haya configurado como docroot del host virtual. Para este ejemplo, utilizamos el valor predeterminado de Ubuntu `/var/www/html`.
 
    ```bash
    cd /var/www/html
    ```
 
-1. Instale el Compositor globalmente. Se requiere el Compositor para actualizar las dependencias antes de instalar Adobe Commerce o Magento Open Source:
+1. Instale Composer globalmente. Se requiere el Compositor para actualizar las dependencias antes de instalar Adobe Commerce o Magento Open Source:
 
    ```bash
    curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/bin --filename=composer
    ```
 
-1. Cree un proyecto de Compositor utilizando el Magento Open Source o el paquete de metapaídas de Adobe Commerce.
+1. Cree un proyecto de Composer utilizando el metapaquete Magento Open Source o Adobe Commerce.
 
    **Magento Open Source**
 
@@ -117,7 +117,7 @@ Este ejemplo muestra una instalación basada en Compositor utilizando la línea 
    composer create-project --repository=https://repo.magento.com/ magento/project-enterprise-edition <install-directory-name>
    ```
 
-   Cuando se le solicite, introduzca su [claves de autenticación](../authentication-keys.md). Su _clave pública_ es su nombre de usuario; your _clave privada_ es su contraseña.
+   Cuando se le solicite, introduzca su [claves de autenticación](../authentication-keys.md). Su _clave pública_ es su nombre de usuario; su _clave privada_ es su contraseña.
 
 1. Establezca permisos de lectura y escritura para el grupo de servidores web antes de instalar la aplicación. Esto es necesario para que la línea de comandos pueda escribir archivos en el sistema de archivos.
 
@@ -141,7 +141,7 @@ Este ejemplo muestra una instalación basada en Compositor utilizando la línea 
    chmod u+x bin/magento
    ```
 
-1. Instale desde el [línea de comandos](../../advanced.md). Este ejemplo asume que el directorio de instalación tiene el nombre `magento2ee`, el `db-host` está en la misma máquina (`localhost`) y que la variable `db-name`, `db-user`y `db-password` son todos `magento`:
+1. Instale desde el [línea de comandos](../../advanced.md). En este ejemplo se supone que el nombre del directorio de instalación es `magento2ee`, el `db-host` está en el mismo equipo (`localhost`), y que la variable `db-name`, `db-user`, y `db-password` son todos `magento`:
 
    ```bash
    bin/magento setup:install \
@@ -165,7 +165,7 @@ Este ejemplo muestra una instalación basada en Compositor utilizando la línea 
    --elasticsearch-port=9200
    ```
 
-1. Cambie al modo de desarrollador:
+1. Cambiar a modo de desarrollador:
 
    ```bash
    cd /var/www/html/magento2/bin
@@ -175,13 +175,13 @@ Este ejemplo muestra una instalación basada en Compositor utilizando la línea 
    ./magento deploy:mode:set developer
    ```
 
-### Configurar nginx
+### Configuración de nginx
 
-Se recomienda configurar nginx usando la variable `nginx.conf.sample` archivo de configuración proporcionado en el directorio de instalación y en el host virtual nginx.
+Se recomienda configurar nginx con `nginx.conf.sample` archivo de configuración proporcionado en el directorio de instalación y en el host virtual nginx.
 
-Estas instrucciones suponen que está utilizando la ubicación predeterminada de Ubuntu para el host virtual nginx (por ejemplo, `/etc/nginx/sites-available`) y Ubuntu default docroot (por ejemplo, `/var/www/html`), sin embargo, puede cambiar estas ubicaciones para adaptarlas a su entorno.
+Estas instrucciones suponen que está utilizando la ubicación predeterminada de Ubuntu para el host virtual nginx (por ejemplo, `/etc/nginx/sites-available`) y Ubuntu docroot predeterminado (por ejemplo, `/var/www/html`), sin embargo, puede cambiar estas ubicaciones para adaptarlas a su entorno.
 
-1. Cree un nuevo host virtual para su sitio:
+1. Cree un nuevo host virtual para el sitio:
 
    ```bash
    vim /etc/nginx/sites-available/magento
@@ -205,13 +205,13 @@ Estas instrucciones suponen que está utilizando la ubicación predeterminada de
 
    >[!NOTE]
    >
-   >La variable `include` debe apuntar al archivo de configuración nginx de ejemplo en el directorio de instalación.
+   >El `include` debe apuntar al archivo de configuración nginx de ejemplo en el directorio de instalación.
 
 1. Reemplazar `www.magento-dev.com` con su nombre de dominio. Debe coincidir con la dirección URL base especificada al instalar Adobe Commerce o Magento Open Source.
 
 1. Guarde y salga del editor.
 
-1. Active el host virtual recién creado creando un enlace simbólico a él en el `/etc/nginx/sites-enabled` directorio:
+1. Active el host virtual recién creado creando un enlace simbólico con él en la `/etc/nginx/sites-enabled` directorio:
 
    ```bash
    ln -s /etc/nginx/sites-available/magento /etc/nginx/sites-enabled
@@ -223,19 +223,19 @@ Estas instrucciones suponen que está utilizando la ubicación predeterminada de
    nginx -t
    ```
 
-1. Reinicie nginx:
+1. Reiniciar nginx:
 
    ```bash
    systemctl restart nginx
    ```
 
-### Verifique la instalación
+### Compruebe la instalación
 
-Abra un explorador web y vaya a la dirección URL base de su sitio a [verificar la instalación](../../next-steps/verify.md).
+Abra un explorador web y vaya a la URL base del sitio para [verificar la instalación](../../next-steps/verify.md).
 
 ## CentOS 7
 
-En la siguiente sección se describe cómo instalar Adobe Commerce y Magento Open Source 2.x en CentOS 7 utilizando nginx, PHP y MySQL.
+En la siguiente sección se describe cómo instalar Adobe Commerce y Magento Open Source 2.x en CentOS 7 mediante nginx, PHP y MySQL.
 
 ### Instalar nginx
 
@@ -247,7 +247,7 @@ yum -y install epel-release
 yum -y install nginx
 ```
 
-Una vez finalizada la instalación, inicie nginx y configúrelo para que se inicie en el momento del inicio:
+Una vez finalizada la instalación, inicie nginx y configúrelo para que se inicie durante el arranque:
 
 ```bash
 systemctl start nginx
@@ -257,11 +257,11 @@ systemctl start nginx
 systemctl enable nginx
 ```
 
-Después de completar las siguientes secciones e instalar la aplicación, utilizaremos un archivo de configuración de ejemplo para configurar nginx.
+Después de completar las siguientes secciones e instalar la aplicación, utilizaremos un archivo de configuración de muestra para configurar nginx.
 
-### Instalación y configuración de php-fpm
+### Instalar y configurar php-fpm
 
-Adobe Commerce y Magento Open Source requieren varias [PHP](../php-settings.md) para que funcionen correctamente. Además de estas extensiones, también debe instalar y configurar el `php-fpm` extensión si está utilizando nginx.
+Adobe Commerce y Magento Open Source requieren varias [PHP](../php-settings.md) para que funcionen correctamente. Además de estas extensiones, también debe instalar y configurar el `php-fpm` extensión si utiliza nginx.
 
 1. Instalar `php-fpm`:
 
@@ -271,7 +271,7 @@ Adobe Commerce y Magento Open Source requieren varias [PHP](../php-settings.md) 
 
 1. Abra el `/etc/php.ini` en un editor.
 
-1. Descomente el `cgi.fix_pathinfo` línea y cambie el valor a `0`.
+1. Quitar comentarios de `cgi.fix_pathinfo` y cambie el valor a `0`.
 
 1. Edite el archivo para que coincida con las siguientes líneas:
 
@@ -285,7 +285,7 @@ Adobe Commerce y Magento Open Source requieren varias [PHP](../php-settings.md) 
    >
    >Se recomienda establecer el límite de memoria en 2 G al probar Adobe Commerce o Magento Open Source. Consulte [Configuración de PHP requerida](../php-settings.md) para obtener más información.
 
-1. Descomente el directorio de rutas de sesión y establezca la ruta:
+1. Elimine los comentarios del directorio de rutas de sesión y defina la ruta:
 
    ```conf
    session.save_path = "/var/lib/php/session"
@@ -293,7 +293,7 @@ Adobe Commerce y Magento Open Source requieren varias [PHP](../php-settings.md) 
 
 1. Guarde y salga del editor.
 
-1. Apertura `/etc/php-fpm.d/www.conf` en un editor.
+1. Abrir `/etc/php-fpm.d/www.conf` en un editor.
 
 1. Edite el archivo para que coincida con las siguientes líneas:
 
@@ -306,7 +306,7 @@ Adobe Commerce y Magento Open Source requieren varias [PHP](../php-settings.md) 
    listen.mode = 0660
    ```
 
-1. Descomente las líneas de entorno:
+1. Elimine los comentarios de las líneas de entorno:
 
    ```conf
    env[HOSTNAME] = $HOSTNAME
@@ -318,7 +318,7 @@ Adobe Commerce y Magento Open Source requieren varias [PHP](../php-settings.md) 
 
 1. Guarde y salga del editor.
 
-1. Cree un directorio para la ruta de sesión de PHP y cambie el propietario a `apache` usuario y grupo:
+1. Cree un directorio para la ruta de sesión PHP y cambie el propietario a `apache` usuario y grupo:
 
    ```bash
    mkdir -p /var/lib/php/session/
@@ -328,7 +328,7 @@ Adobe Commerce y Magento Open Source requieren varias [PHP](../php-settings.md) 
    chown -R apache:apache /var/lib/php/
    ```
 
-1. Cree un directorio para la ruta de sesión de PHP y cambie el propietario a `apache` usuario y grupo:
+1. Cree un directorio para la ruta de sesión PHP y cambie el propietario a `apache` usuario y grupo:
 
    ```bash
    mkdir -p /run/php-fpm/
@@ -338,7 +338,7 @@ Adobe Commerce y Magento Open Source requieren varias [PHP](../php-settings.md) 
    chown -R apache:apache /run/php-fpm/
    ```
 
-1. Inicie el `php-fpm` y configúrelo para que se inicie en el momento del inicio:
+1. Inicie el `php-fpm` y configúrelo para que se inicie durante el arranque:
 
    ```bash
    systemctl start php-fpm
@@ -348,7 +348,7 @@ Adobe Commerce y Magento Open Source requieren varias [PHP](../php-settings.md) 
    systemctl enable php-fpm
    ```
 
-1. Compruebe que la variable `php-fpm` se está ejecutando el servicio:
+1. Compruebe que la variable `php-fpm` el servicio se está ejecutando:
 
    ```bash
    netstat -pl | grep php-fpm.sock
@@ -360,29 +360,29 @@ Consulte [MySQL](..//database/mysql.md) para obtener más información.
 
 ### Instalación y configuración
 
-Existen varias formas de descargar el Adobe Commerce y el Magento Open Source, entre ellas:
+Existen varias formas de descargar Adobe Commerce y Magento Open Source, entre ellas:
 
-* [Obtenga el paquete de metapaversión del Compositor](../../composer.md)
+* [Obtener el metapaquete del Compositor](../../composer.md)
 
-* [Clonar el repositorio de Git](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)
+* [Clone el repositorio de Git](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)
 
-Este ejemplo muestra una instalación basada en Compositor utilizando la línea de comandos.
+Este ejemplo muestra una instalación basada en Composer mediante la línea de comandos.
 
-1. Como [propietario del sistema de archivos](../file-system/overview.md), inicie sesión en el servidor de aplicaciones.
+1. Como el [propietario del sistema de archivos](../file-system/overview.md), inicie sesión en su servidor de aplicaciones.
 
-1. Cambie al directorio docroot del servidor web o a un directorio que haya configurado como docroot de host virtual. Para este ejemplo, se utiliza el valor predeterminado Ubuntu `/var/www/html`.
+1. Cambie al directorio docroot del servidor web o a un directorio que haya configurado como docroot del host virtual. Para este ejemplo, utilizamos el valor predeterminado de Ubuntu `/var/www/html`.
 
    ```bash
    cd /var/www/html
    ```
 
-1. Instale el Compositor globalmente. Se requiere el Compositor para actualizar las dependencias antes de instalar Adobe Commerce o Magento Open Source:
+1. Instale Composer globalmente. Se requiere el Compositor para actualizar las dependencias antes de instalar Adobe Commerce o Magento Open Source:
 
    ```bash
    curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/bin --filename=composer
    ```
 
-1. Cree un proyecto de Compositor utilizando el Magento Open Source o el paquete de metapaídas de Adobe Commerce.
+1. Cree un proyecto de Composer utilizando el metapaquete Magento Open Source o Adobe Commerce.
 
    **Magento Open Source**
 
@@ -396,7 +396,7 @@ Este ejemplo muestra una instalación basada en Compositor utilizando la línea 
    composer create-project --repository=https://repo.magento.com/ magento/project-enterprise-edition <install-directory-name>
    ```
 
-   Cuando se le solicite, introduzca su [claves de autenticación](../authentication-keys.md). Su _clave pública_ es su nombre de usuario; your _clave privada_ es su contraseña.
+   Cuando se le solicite, introduzca su [claves de autenticación](../authentication-keys.md). Su _clave pública_ es su nombre de usuario; su _clave privada_ es su contraseña.
 
 1. Establezca permisos de lectura y escritura para el grupo de servidores web antes de instalar la aplicación. Esto es necesario para que la línea de comandos pueda escribir archivos en el sistema de archivos.
 
@@ -420,7 +420,7 @@ Este ejemplo muestra una instalación basada en Compositor utilizando la línea 
    chmod u+x bin/magento
    ```
 
-1. Instale desde el [línea de comandos](../../advanced.md). Este ejemplo asume que el directorio de instalación tiene el nombre `magento2ee`, el `db-host` está en la misma máquina (`localhost`) y que la variable `db-name`, `db-user`y `db-password` son todos `magento`:
+1. Instale desde el [línea de comandos](../../advanced.md). En este ejemplo se supone que el nombre del directorio de instalación es `magento2ee`, el `db-host` está en el mismo equipo (`localhost`), y que la variable `db-name`, `db-user`, y `db-password` son todos `magento`:
 
    ```bash
    bin/magento setup:install \
@@ -441,7 +441,7 @@ Este ejemplo muestra una instalación basada en Compositor utilizando la línea 
    --use-rewrites=1
    ```
 
-1. Cambie al modo de desarrollador:
+1. Cambiar a modo de desarrollador:
 
    ```bash
    cd /var/www/html/magento2/bin
@@ -451,13 +451,13 @@ Este ejemplo muestra una instalación basada en Compositor utilizando la línea 
    ./magento deploy:mode:set developer
    ```
 
-### Configurar nginx
+### Configuración de nginx
 
-Se recomienda configurar nginx usando la variable `nginx.conf.sample` archivo de configuración proporcionado en el directorio de instalación y en el host virtual nginx.
+Se recomienda configurar nginx con `nginx.conf.sample` archivo de configuración proporcionado en el directorio de instalación y en el host virtual nginx.
 
 Estas instrucciones suponen que está utilizando la ubicación predeterminada de CentOS para el host virtual nginx (por ejemplo, `/etc/nginx/conf.d`) y docroot predeterminado (por ejemplo, `/usr/share/nginx/html`), sin embargo, puede cambiar estas ubicaciones para adaptarlas a su entorno.
 
-1. Cree un nuevo host virtual para su sitio:
+1. Cree un nuevo host virtual para el sitio:
 
    ```bash
    vim /etc/nginx/conf.d/magento.conf
@@ -481,7 +481,7 @@ Estas instrucciones suponen que está utilizando la ubicación predeterminada de
 
    >[!NOTE]
    >
-   >La variable `include` debe apuntar al archivo de configuración nginx de ejemplo en el directorio de instalación.
+   >El `include` debe apuntar al archivo de configuración nginx de ejemplo en el directorio de instalación.
 
 1. Reemplazar `www.magento-dev.com` con su nombre de dominio.
 
@@ -493,13 +493,13 @@ Estas instrucciones suponen que está utilizando la ubicación predeterminada de
    nginx -t
    ```
 
-1. Reinicie nginx:
+1. Reiniciar nginx:
 
    ```bash
    systemctl restart nginx
    ```
 
-### Configuración de SELinux y Firewalld
+### Configuración de SELinux y Firefox
 
 SELinux está habilitado de forma predeterminada en CentOS 7. Utilice el siguiente comando para ver si se está ejecutando:
 
@@ -507,7 +507,7 @@ SELinux está habilitado de forma predeterminada en CentOS 7. Utilice el siguien
 sestatus
 ```
 
-Para configurar SELinux y firewalld:
+Para configurar SELinux y el cortafuegos:
 
 1. Instale las herramientas de administración de SELinux:
 
@@ -537,13 +537,13 @@ Para configurar SELinux y firewalld:
    restorecon -Rv '/usr/share/nginx/html/magento2/'
    ```
 
-1. Instale el paquete firewalld:
+1. Instale el paquete del cortafuegos:
 
    ```bash
    yum -y install firewalld
    ```
 
-1. Inicie el servicio de firewall y configúrelo para que se inicie en el momento del inicio:
+1. Inicie el servicio de cortafuegos y configúrelo para que se inicie durante el arranque:
 
    ```bash
    systemctl start firewalld
@@ -553,7 +553,7 @@ Para configurar SELinux y firewalld:
    systemctl enable firewalld
    ```
 
-1. Ejecute los siguientes comandos para abrir puertos para HTTP y HTTPS y así poder acceder a la URL base desde un explorador web:
+1. Ejecute los siguientes comandos para abrir los puertos para HTTP y HTTPS y poder acceder a la dirección URL base desde un explorador web:
 
    ```bash
    firewall-cmd --permanent --add-service=http
@@ -567,6 +567,6 @@ Para configurar SELinux y firewalld:
    firewall-cmd --reload
    ```
 
-### Verifique la instalación
+### Compruebe la instalación
 
-Abra un explorador web y vaya a la dirección URL base de su sitio a [verificar la instalación](../../next-steps/verify.md).
+Abra un explorador web y vaya a la URL base del sitio para [verificar la instalación](../../next-steps/verify.md).

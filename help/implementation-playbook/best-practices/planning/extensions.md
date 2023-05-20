@@ -1,40 +1,40 @@
 ---
-title: Prácticas recomendadas de Extensiones
+title: Prácticas recomendadas sobre extensiones
 description: Obtenga información sobre cómo evitar problemas de rendimiento causados por extensiones de Adobe Commerce de terceros.
 role: Admin
 feature: Best Practices
 feature-set: Commerce
-source-git-commit: 510f2d4cdaec1034cb04a01fab0948c4261c6d10
+exl-id: 95d2c7bf-fd2f-4c98-8293-96d69b86341f
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '195'
 ht-degree: 0%
 
 ---
 
+# Prácticas recomendadas sobre extensiones
 
-# Prácticas recomendadas de Extensiones
+Las extensiones de terceros de Adobe Commerce (módulos) pueden causar varios problemas que pueden afectar negativamente al rendimiento de la tienda. Puede evitar estos problemas siguiendo estas prácticas recomendadas:
 
-Las extensiones (módulos) de terceros de Adobe Commerce pueden causar varios problemas que pueden afectar negativamente al rendimiento de la tienda. Puede evitar estos problemas siguiendo estas prácticas recomendadas:
-
-- Descargue y compre extensiones de terceros de una fuente de confianza, como la [Commerce Marketplace](https://marketplace.magento.com/extensions.html).
+- Descargue y compre extensiones de terceros desde una fuente de confianza, como la [Commerce Marketplace](https://marketplace.magento.com/extensions.html).
 - Actualice todas las extensiones de terceros a la versión más reciente.
-- Si no puede mantener actualizadas las extensiones de terceros, considere la posibilidad de utilizar extensiones diferentes.
-- Al planificar una actualización a una nueva versión de Adobe Commerce, compruebe que las extensiones de terceros instaladas sean compatibles con la nueva versión y actualice las extensiones si es necesario.
+- Si no puede mantener actualizadas las extensiones de terceros, considere la posibilidad de utilizar diferentes extensiones.
+- Cuando planee una actualización a una nueva versión de Adobe Commerce, compruebe que las extensiones de terceros instaladas sean compatibles con la nueva versión y actualice las extensiones si es necesario.
 
 >[!NOTE]
 >
-> Todas las extensiones disponibles en Adobe Commerce Marketplace son necesarias para mantener la compatibilidad con las nuevas versiones de Commerce. Consulte [Compatibilidad de versiones](https://developer.adobe.com/commerce/marketplace/guides/sellers/compatibility/releases/).
+> Todas las extensiones disponibles en Adobe Commerce Marketplace son necesarias para mantener la compatibilidad con las nuevas versiones de Commerce. Consulte [Compatibilidad de versión](https://developer.adobe.com/commerce/marketplace/guides/sellers/compatibility/releases/).
 
 ## Productos y versiones afectados
 
 [Todas las versiones compatibles](../../../release/versions.md) de:
 
-- Adobe Commerce en infraestructura en la nube
+- Adobe Commerce en la infraestructura en la nube
 - Adobe Commerce local
 
 ## Información adicional
 
-- [Prácticas recomendadas para la planificación de actualizaciones](../../../upgrade/prepare/best-practices.md)
-- Uso de extensiones de terceros con Adobe Commerce en la infraestructura de la nube
-   - [Tecnologías y requisitos - Desarrollo y pruebas](https://devdocs.magento.com/cloud/requirements/cloud-requirements.html#cloud-req-devtest)
-   - [¿Por qué realizar pruebas completas en Integración y Ensayo?](https://devdocs.magento.com/cloud/live/live.html#whytest)
+- [Prácticas recomendadas para planificar las actualizaciones](../../../upgrade/prepare/best-practices.md)
+- Uso de extensiones de terceros con Adobe Commerce en infraestructuras en la nube
+   - [Tecnologías y requisitos: desarrollo y pruebas](https://devdocs.magento.com/cloud/requirements/cloud-requirements.html#cloud-req-devtest)
+   - [¿Por qué probar completamente en integración y ensayo?](https://devdocs.magento.com/cloud/live/live.html#whytest)

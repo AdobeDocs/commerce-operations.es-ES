@@ -1,50 +1,50 @@
 ---
 title: Información general sobre el alojamiento propio
-description: Obtenga información sobre las prácticas recomendadas de alojamiento propio que debe tener en cuenta. Los temas van desde los elementos de seguridad hasta la recuperación ante desastres de muchos más. Estos temas están aquí para ayudar a una empresa que ha decidido alojar su propia versión de Adobe Commerce. Los artículos presentados no son todos inclusivos, pero deberían proporcionar una buena gama de conceptos para promover un sitio web seguro, estable y flexible.
-landing-page-description: Aprenda algunos conceptos y cosas que debe tener en cuenta al alojar Adobe Commerce por su cuenta.
-short-description: Aprenda estrategias y conceptos para alojar usted mismo Adobe Commerce.
+description: Conozca las prácticas recomendadas sobre el alojamiento propio que debe tener en cuenta. Los temas van desde los elementos de seguridad, hasta la recuperación ante desastres y muchos más. Estos temas están aquí para ayudar a una empresa que ha decidido alojar su propia versión de Adobe Commerce. Los elementos presentados no son inclusivos, pero deben proporcionar una buena gama de conceptos para promover un sitio web seguro, estable y resistente.
+landing-page-description: Aprenda algunos conceptos y cosas a tener en cuenta al alojar Adobe Commerce por su cuenta.
+short-description: Aprenda estrategias y conceptos para alojar Adobe Commerce usted mismo.
 kt: 11420
 doc-type: tutorial
 audience: all
 last-substantial-update: 2023-04-13T00:00:00Z
-source-git-commit: ef89ace2f03d5010384ba759e81695b6ae7e630b
+exl-id: 63f552f3-836c-4a07-96c3-c0e00614fe39
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '738'
 ht-degree: 0%
 
 ---
 
+# Información general sobre el alojamiento propio de Adobe Commerce
 
-# Información general sobre Adobe Commerce de alojamiento propio
+Cuando considere la posibilidad de pasar a una plataforma de comercio electrónico como Adobe Commerce, puede darse el lujo de elegir entre varias opciones. Sin embargo, con estas opciones vienen costos, riesgos y pasivos adicionales a considerar. El alojamiento de un sitio de Commerce se puede realizar mediante una solución empaquetada, como [Adobe Commerce en la infraestructura en la nube](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/getting-started/cloud/1-overview.html){target="_blank"}, donde la infraestructura, los servidores, el correo electrónico, los certificados SSL y muchos más están preconfigurados y listos para su uso. Encontrar una buena solución de alojamiento, como Adobe Commerce en la infraestructura en la nube, facilita todo el proceso. Existen razones convincentes para alojar su sitio de Commerce de forma automática. Dentro de las páginas que lo acompañan, hay muchos temas que proporcionan perspectiva y orientación sobre los servicios, técnicas y conceptos que proporciona el alojamiento propio. La información aquí no es exhaustiva y no se espera que implemente todas las sugerencias. Sin embargo, estos artículos pueden ayudarle a comprender las ideas y los conceptos que pueden hacer que el alojamiento propio de Adobe Commerce sea lo más estable y seguro posible.
 
-Al considerar el paso a una plataforma de comercio electrónico como Adobe Commerce, tiene el lujo de tener opciones. Sin embargo, con estas opciones se incluyen costos, riesgos y pasivos adicionales que considerar. El alojamiento de un sitio de comercio se puede realizar utilizando una solución empaquetada, como [Adobe Commerce en infraestructura en la nube](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/getting-started/cloud/1-overview.html){target="_blank"}, donde la infraestructura, los servidores, el correo electrónico, los certificados SSL y muchos más están preconfigurados y listos para su uso. Encontrar una buena solución de alojamiento, como Adobe Commerce en la infraestructura de la nube, facilita todo el proceso, por lo que hay razones convincentes para alojarse por su cuenta en el sitio de Comercio. Dentro de las páginas de acompañamiento, hay muchos temas que proporcionan información y orientación sobre los servicios, técnicas y conceptos que proporciona el alojamiento propio. La información aquí no es exhaustiva y no se espera que aplique todas las sugerencias. Sin embargo, estos artículos pueden ayudarle a comprender las ideas y conceptos que pueden hacer que el alojamiento propio de Adobe Commerce sea lo más estable y seguro posible.
+Cuando no utiliza Adobe Commerce en una infraestructura en la nube, los términos utilizados son alojamiento propio o local, o incluso local. Local no solo significa en un centro de datos en un edificio que posee una empresa. Este término representa todo lo que no sea soporte administrado por Adobe Commerce en su infraestructura. Hay empresas de alojamiento web que se ocupan de Adobe Commerce y también se consideran autoalojadas o locales.
 
-Cuando no va con Adobe Commerce en la infraestructura de la nube, los términos utilizados son alojamiento propio o local, o incluso se utilizan in situ. local no solo significa en un centro de datos de un edificio que posee una empresa. Este término representa todo aquello que Adobe Commerce no administre como soporte en su infraestructura. Existen empresas de alojamiento que se ocupan de Adobe Commerce, que también se consideran como alojamiento propio o local.
+En cuanto a Adobe Commerce y Magento Open-source, la mayoría de los consejos y sugerencias proporcionados funcionan para cualquiera de las versiones. Aunque no lo indique directamente, se espera que sea aplicable a ambos. Dentro de este tema de opciones de alojamiento propio para Adobe Commerce, se tienen en cuenta ambas versiones. Y finalmente, la mayoría de los temas son relevantes para [Adobe Commerce en la infraestructura en la nube](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/getting-started/cloud/1-overview.html){target="_blank"} está seleccionado como proveedor de alojamiento.
 
-En cuanto a Adobe Commerce y Magento Open-source, la mayoría de los consejos y sugerencias proporcionados funcionan para cualquiera de las versiones. Aunque no lo indique directamente, se espera que sea aplicable a ambos. En este tema de las opciones de alojamiento propio para Adobe Commerce, se tienen en cuenta ambas versiones. Y finalmente, la mayoría de los temas son relevantes para [Adobe Commerce en infraestructura en la nube](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/getting-started/cloud/1-overview.html){target="_blank"} se selecciona como proveedor de alojamiento.
+## Nivel de terminología establecido
 
-## Conjunto de niveles terminológicos
+Los siguientes términos se utilizan comúnmente en todos los artículos de Experience League, cuando se habla con el equipo de DevOps y se trabaja con el soporte de la compañía:
 
-Los siguientes términos se utilizan comúnmente en los artículos de Experience League, cuando se habla con el equipo de DevOps y cuando se trabaja con el soporte técnico de la empresa:
+* **DevOps** es un término que se utiliza para describir los equipos que administran la instalación, configuración, administración, certificados SSL del servidor y todo lo demás acerca de los servidores y servicios reales utilizados para ejecutar un sitio de Adobe Commerce. Este término se utiliza para ayudar a designar cuándo suele finalizar la responsabilidad de un desarrollador y dónde comienza la evaluación y la asistencia de un equipo de infraestructura.
 
-* **Operaciones de desarrollo** es un término que se utiliza para describir los equipos que administran la configuración, la configuración, la administración, los certificados SSL y todo lo demás sobre los servidores y servicios reales utilizados para ejecutar un sitio de Adobe Commerce. Este término se utiliza para ayudar a designar cuándo termina normalmente la responsabilidad de los desarrolladores y dónde comienza la evaluación y el soporte de un equipo de infraestructura.
+* **Conceptos de seguridad** incluya varios temas y consideraciones para crear la base de código, los archivos y el sistema de archivos de Adobe Commerce en los servidores y cualquier configuración o actualización que reduzca la superficie de ataque para muchos patrones de explotación conocidos.
 
-* **Conceptos de seguridad** engloba varios temas y consideraciones para hacer que el código base de Adobe Commerce, los archivos y el sistema de archivos en los servidores y cualquier configuración o actualización que reduzca la superficie de ataque para muchos patrones de explotación conocidos.
-
-* **Herramientas de monitorización** cubre algunas herramientas y servicios existentes que supervisan los sitios web de Adobe Commerce. Estas herramientas a veces pueden proporcionar sugerencias sobre cómo mejorar las cosas o descubrir problemas y vulnerabilidades de seguridad.
+* **Herramientas de monitorización** abarca algunas herramientas y servicios existentes que supervisan sitios web de Adobe Commerce. Estas herramientas a veces pueden proporcionar sugerencias sobre cómo mejorar las cosas o descubrir problemas y vulnerabilidades de seguridad.
 
 * **Recuperación ante desastres** ayuda a proporcionar algunos conceptos y consideraciones para el desafortunado evento de un proyecto dañado o explotado.
 
-* **Sugerencias de rendimiento** proporcione algunas sugerencias y directrices para que la aplicación de Adobe Commerce tenga el máximo rendimiento posible.
+* **Sugerencias de rendimiento** proporcione algunas sugerencias y directrices profesionales para que la aplicación de Adobe Commerce sea lo más eficiente posible.
 
-* **Actor malo** es el término que se usa para una persona o equipo que intenta hacer algo malicioso o no autorizado. No se limita a la aplicación de comercio sino que también se extiende a la infraestructura o a cualquier componente relacionado con el sitio web.
+* **Mal actor** es el término que se utiliza para referirse a una persona o equipo que intenta hacer algo malintencionado o no autorizado. No se limita a la aplicación de comercio, sino que también se extiende a la infraestructura o cualquier componente relacionado con el sitio web.
 
-* **Cortafuegos de aplicaciones web** (WAF) ayuda al observar cada solicitud que se dirige a la aplicación de comercio y bloquea los patrones y usos conocidos. A menudo, un WAF se utiliza junto con filtros personalizados y reglas para ayudar a administrar los ataques de DDOS.
+* **Cortafuegos de aplicación web** (WAF) ayuda a inspeccionar cada solicitud que se dirige a la aplicación de comercio y bloquea los patrones y vulnerabilidades conocidos. A menudo, se utiliza un WAF junto con filtros y reglas personalizados para ayudar a administrar los ataques de DDOS.
 
 * **Denegación de servicio distribuida** (DDoS) es un método de ataque para obligar a los servidores que ejecutan el sitio web a consumirse con solicitudes falsas con el volumen suficiente para que ya no puedan responder a solicitudes legítimas.
 
 ## ¿Qué sigue?
 
-Estos temas no están en ningún orden o secuencia especial. Están pensados para proporcionar puntos de conversación con un ingeniero de DevOps, el arquitecto de comercio y cualquier otra persona involucrada en tomar esta importante decisión de dónde y cómo alojar Adobe Commerce.
+Estos temas no están en ningún orden o secuencia especial. Están pensados para proporcionar puntos de conversación con un ingeniero de DevOps, el arquitecto de Commerce y cualquier otra persona que participe en la toma de esta importante decisión sobre dónde y cómo alojar Adobe Commerce.
 
 {{$include /help/_includes/hosting-related-links.md}}

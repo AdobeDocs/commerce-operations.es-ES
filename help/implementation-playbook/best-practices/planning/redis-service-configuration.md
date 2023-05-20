@@ -1,20 +1,20 @@
 ---
 title: Prácticas recomendadas para la configuración del servicio Redis
-description: Aprenda a mejorar el rendimiento del almacenamiento en caché mediante la implementación de caché de Redis ampliada para Adobe Commerce.
+description: Obtenga información sobre cómo mejorar el rendimiento del almacenamiento en caché mediante la implementación de caché de Redis extendida para Adobe Commerce.
 role: Developer, Admin
 feature-set: Commerce
 feature: Best Practices
-source-git-commit: 92faa85b51a1fd5314a5906e8650b03723118ce1
+exl-id: 8b3c9167-d2fa-4894-af45-6924eb983487
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '439'
 ht-degree: 0%
 
 ---
 
-
 # Prácticas recomendadas para la configuración del servicio Redis
 
-- Utilice la implementación de caché de Redis extendida, que incluye las siguientes optimizaciones para minimizar el número de consultas de Redis que se realizan en cada solicitud de Adobe Commerce:
+- Utilice la implementación de caché de Redis ampliada, que incluye las siguientes optimizaciones para minimizar el número de consultas de Redis que se realizan en cada solicitud de Adobe Commerce:
    - Reduce el tamaño de las transferencias de datos de red entre Redis y Adobe Commerce
    - Reduce el consumo de Redis de los ciclos de CPU al mejorar la capacidad del adaptador para determinar automáticamente lo que debe cargarse
    - Reduce las condiciones de carrera en las operaciones de escritura de Redis
@@ -27,7 +27,7 @@ Actualice la configuración para utilizar la implementación de caché de Redis 
 
 ### Configuración de implementaciones en la nube
 
-Configure la caché mejorada de Redis estableciendo la variable `REDIS_BACKEND` variable de implementación en la variable `.magento.env.yaml` archivo de configuración.
+Configure la caché de Redis mejorada configurando `REDIS_BACKEND` variable de implementación en `.magento.env.yaml` archivo de configuración.
 
 ```yaml
 stage:
@@ -35,23 +35,23 @@ stage:
     REDIS_BACKEND: '\Magento\Framework\Cache\Backend\Redis'
 ```
 
-Para obtener más información, consulte la [`REDIS_BACKEND`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_backend) descripción de la variable _Guía de Commerce on Cloud Infrastructure_.
+Para obtener más información, consulte la [`REDIS_BACKEND`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_backend) descripción de la variable en _Guía de Commerce en la infraestructura de Cloud_.
 
 >[!NOTE]
 >
-> Marque la `ece-tools` versión instalada en el entorno local desde la línea de comandos utilizando la variable `composer show magento/ece-tools` comando. Si es necesario, [actualizar a la versión más reciente](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html).
+> Compruebe la `ece-tools` versión instalada en su entorno local desde la línea de comandos utilizando `composer show magento/ece-tools` comando. Si es necesario, [actualizar a la versión más reciente](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html).
 
 >[!WARNING]
 >
->Do _not_ configurar una conexión esclava de Redis para proyectos de infraestructura en la nube con un [arquitectura escalada](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture.html). Esto provoca errores de conexión de Redis. Consulte [las directrices de configuración de Redis](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_use_slave_connection) en el _Comercio en infraestructura de nube_ guía.
+>Hacer _no_ configurar una conexión esclava de Redis para proyectos de infraestructura en la nube con una [arquitectura a escala](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture.html). Esto provoca errores de conexión de Redis. Consulte [las directrices de configuración de Redis](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_use_slave_connection) en el _Commerce en infraestructura en la nube_ guía.
 
 ### Configuración de implementaciones locales
 
-Para implementaciones locales de Adobe Commerce, configure la nueva implementación de caché de Redis mediante el `bin/magento:setup` comandos. Para obtener instrucciones, consulte [Usar Redis para la caché predeterminada](../../../configuration/cache/redis-pg-cache.md#configure-redis-page-caching).
+Para implementaciones locales de Adobe Commerce, configure la nueva implementación de caché de Redis con el `bin/magento:setup` comandos. Para obtener instrucciones, consulte [Usar Redis para la caché predeterminada](../../../configuration/cache/redis-pg-cache.md#configure-redis-page-caching).
 
-## Separar la caché y las instancias de sesión
+## Instancias de caché y sesión independientes
 
-La separación de la caché de Redis de la sesión de Redis le permite administrar la caché y las sesiones de forma independiente para evitar que los problemas de la caché afecten a las sesiones.
+Separar la caché de Redis de la sesión de Redis le permite administrar la caché y las sesiones de forma independiente para evitar que los problemas de caché afecten a las sesiones.
 
 1. Actualice el `.magento/services.yaml` archivo de configuración.
 
@@ -86,7 +86,7 @@ La separación de la caché de Redis de la sesión de Redis le permite administr
        rabbitmq: "rabbitmq:rabbitmq"
    ```
 
-1. Envíe un [ticket de asistencia de Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) para cambiar la configuración del servicio Redis en los entornos de producción y ensayo Pro. Incluir la `.magento/services.yaml` y `.magento.app.yaml` archivos de configuración.
+1. Enviar un [ticket de asistencia de Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) para cambiar la configuración del servicio Redis en los entornos de producción y ensayo de Pro. Incluir el actualizado `.magento/services.yaml` y `.magento.app.yaml` archivos de configuración.
 
 1. Compruebe que la nueva instancia se esté ejecutando y anote el número de puerto.
 
@@ -97,7 +97,7 @@ La separación de la caché de Redis de la sesión de Redis le permite administr
 1. Agregue el número de puerto al `.magento.env.yaml` archivo de configuración.
 
    >[!NOTE]
-   >`disable_locking` debe estar configurado como `1`.
+   >`disable_locking` se debe establecer en `1`.
 
    ```yaml
    SESSION_CONFIGURATION:
@@ -112,13 +112,13 @@ La separación de la caché de Redis de la sesión de Redis le permite administr
        min_lifetime: 60
    ```
 
-1. Elimine sesiones de la función [base de datos predeterminada](../../../configuration/cache/redis-pg-cache.md) (`db 0`) en la instancia de caché de Redis.
+1. Eliminación de sesiones de [base de datos predeterminada](../../../configuration/cache/redis-pg-cache.md) (`db 0`) en la instancia de caché de Redis.
 
    ```bash
    redis-cli -h 127.0.0.1 -p 6374 -n 0 FLUSHDB
    ```
 
-Durante la implementación, debería ver las siguientes líneas en la sección [registro de compilación e implementación](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html#build-and-deploy-logs):
+Durante la implementación, debería ver las siguientes líneas en la [registro de generación e implementación](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html#build-and-deploy-logs):
 
 ```terminal
 W:   - Downloading colinmollenhour/credis (1.11.1)
@@ -134,7 +134,7 @@ W:   - Installing colinmollenhour/php-redis-session-abstract (v1.4.5): Extractin
 
 ## Compresión de caché
 
-Utilice la compresión de caché, pero tenga en cuenta que existe un equilibrio con el rendimiento del lado del cliente. Si tiene CPUs de reserva, actívelo. Consulte [Usar Redis para almacenamiento de sesión](../../../configuration/cache/redis-session.md).
+Utilice la compresión de caché, pero tenga en cuenta que existe un equilibrio entre el rendimiento del lado del cliente y el de terceros. Si tiene CPU de reserva, actívela. Consulte [Usar Redis para el almacenamiento de sesión](../../../configuration/cache/redis-session.md).
 
 ```yaml
 stage:
@@ -153,5 +153,5 @@ stage:
 
 ## Información adicional
 
-- [Redis Page Cache](../../../configuration/cache/redis-pg-cache.md)
-- [Usar Redis para almacenamiento de sesión](../../../configuration/cache/redis-session.md)
+- [Caché de página de Redis](../../../configuration/cache/redis-pg-cache.md)
+- [Usar Redis para el almacenamiento de sesión](../../../configuration/cache/redis-session.md)

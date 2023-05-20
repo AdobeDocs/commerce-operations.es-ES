@@ -1,6 +1,6 @@
 ---
 title: Administrar colas de mensajes
-description: Obtenga información sobre cómo administrar las colas de mensajes desde la línea de comandos para Adobe Commerce.
+description: Obtenga información sobre cómo administrar colas de mensajes desde la línea de comandos para Adobe Commerce.
 exl-id: 619e5df1-39cb-49b6-b636-618b12682d32
 source-git-commit: caca8df48c498977f830082ef27d9afb6220ae92
 workflow-type: tm+mt
@@ -11,13 +11,13 @@ ht-degree: 0%
 
 # Administrar colas de mensajes
 
-Puede administrar las colas de mensajes desde la línea de comandos mediante trabajos cron o un administrador de procesos externo para asegurarse de que los consumidores estén recuperando mensajes.
+Puede administrar las colas de mensajes desde la línea de comandos mediante trabajos cron o un administrador de procesos externo para garantizar que los consumidores estén recuperando mensajes.
 
 ## Administración de procesos
 
-Los trabajos cron son el mecanismo predeterminado para reiniciar a los consumidores. Procesos iniciados por `cron` consuma el número especificado de mensajes y luego termine. Volver a ejecutar `cron` reinicia al consumidor.
+Los trabajos de Cron son el mecanismo predeterminado para reiniciar a los consumidores. Procesos iniciados por `cron` consuma el número de mensajes especificado y, a continuación, finalice. Repetición `cron` reinicia el consumidor.
 
-El siguiente ejemplo muestra la variable `crontab` configuración para ejecutar consumidores:
+El siguiente ejemplo muestra el `crontab` configuración para consumidores en ejecución:
 
 > /app/code/Magento/MessageQueue/etc/crontab.xml
 
@@ -31,29 +31,29 @@ El siguiente ejemplo muestra la variable `crontab` configuración para ejecutar 
 
 >[!INFO]
 >
->La frecuencia con la que comprueba las colas de mensajes puede depender de la lógica empresarial y de los recursos del sistema disponibles. En general, es posible que desee buscar nuevos clientes y enviar correos electrónicos de bienvenida con más frecuencia que con un proceso que consume más recursos, como actualizar el catálogo. Debe definir `cron` programaciones según sus necesidades comerciales.
+>La frecuencia con la que se comprueban las colas de mensajes puede depender de la lógica empresarial y de los recursos del sistema disponibles. En general, es posible que desee comprobar si hay nuevos clientes y enviar correos electrónicos de bienvenida con más frecuencia que un proceso que requiera más recursos, como actualizar el catálogo. Debe definir `cron` programa según sus necesidades comerciales.
 >
->Se puede configurar en las opciones de configuración de Administración > Configuración > Avanzado > Sistema > Cron del grupo: consumidores.
+>Se puede configurar en las opciones de configuración Admin Stores > Settings > Configuration > Advanced > System > Cron para el grupo: consumidores.
 >
->Consulte [Configuración y ejecución de cron](../cli/configure-cron-jobs.md) para obtener más información sobre el uso de `cron` con Commerce.
+>Consulte [Configurar y ejecutar cron](../cli/configure-cron-jobs.md) para obtener más información sobre el uso de `cron` con Commerce.
 
-También puede utilizar un administrador de procesos como [Supervisor](http://supervisord.org/index.html) para controlar el estado de los procesos. El administrador puede utilizar la línea de comandos para reiniciar los procesos según sea necesario.
+También puede utilizar un administrador de procesos como [Supervisor](http://supervisord.org/index.html) para supervisar el estado de los procesos. El administrador puede utilizar la línea de comandos para reiniciar los procesos según sea necesario.
 
 ## Configuración
 
-### Comportamiento de forma predeterminada
+### Comportamiento predeterminado
 
 - Trabajo cron `consumers_runner` está habilitado
 - Trabajo cron `consumers_runner` ejecuta todos los consumidores definidos
-- Cada consumidor procesa 10000 mensajes y luego finaliza
+- Cada consumidor procesa 10000 mensajes y, a continuación, finaliza
 
 >[!INFO]
 >
->Si la tienda de Adobe Commerce está alojada en la plataforma de Cloud, use la variable [`CRON_CONSUMERS_RUNNER`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#cron_consumers_runner) para configurar la variable `consumers_runner` trabajo de cron.
+>Si la tienda de Adobe Commerce está alojada en Cloud Platform, utilice el [`CRON_CONSUMERS_RUNNER`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#cron_consumers_runner) para configurar el `consumers_runner` trabajo cron.
 
 ### Configuración específica
 
-Edite el `/app/etc/env.php` para configurar el trabajo cron `consumers_runner`.
+Edite el `/app/etc/env.php` archivo para configurar el trabajo cron `consumers_runner`.
 
 ```php
 ...
@@ -72,9 +72,9 @@ Edite el `/app/etc/env.php` para configurar el trabajo cron `consumers_runner`.
 ```
 
 - `cron_run` - Un valor booleano que habilita o deshabilita la variable `consumers_runner` trabajo cron (predeterminado = `true`).
-- `max_messages` - El número máximo de mensajes que cada consumidor debe procesar antes de finalizar (predeterminado = `10000`). Aunque no se recomienda, puede utilizar 0 para evitar que el consumidor finalice. Consulte [`consumers_wait_for_messages`](../reference/config-reference-envphp.md#consumerswaitformessages) para configurar el modo en que los consumidores procesan los mensajes desde la cola de mensajes.
-- `consumers` : matriz de cadenas que especifican qué consumidores se van a ejecutar. Se ejecuta una matriz vacía *all* consumidores.
-- `multiple_processes` : matriz de pares de clave-valor que especifica qué consumidor ejecutar en cuántos procesos. Compatible con Commerce 2.4.4 o buenas.
+- `max_messages` : el número máximo de mensajes que cada consumidor debe procesar antes de finalizar (predeterminado = `10000`). Aunque no lo recomendamos, puede utilizar 0 para evitar que el consumidor finalice. Consulte [`consumers_wait_for_messages`](../reference/config-reference-envphp.md#consumerswaitformessages) para configurar cómo procesan los consumidores los mensajes de la cola de mensajes.
+- `consumers` : matriz de cadenas que especifica qué consumidores ejecutar. Se ejecuta una matriz vacía *todo* consumidores.
+- `multiple_processes` : matriz de pares de clave-valor que especifica qué consumidor se ejecutará en cuántos procesos. Compatible con Commerce 2.4.4 o bueno.
 
    >[!INFO]
    >
@@ -82,6 +82,6 @@ Edite el `/app/etc/env.php` para configurar el trabajo cron `consumers_runner`.
 
    >[!INFO]
    >
-   >Si la tienda de Adobe Commerce está alojada en la plataforma de Cloud, use la variable [`CONSUMERS_WAIT_FOR_MAX_MESSAGES`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#consumers_wait_for_max_messages) para configurar el modo en que los consumidores procesan los mensajes desde la cola de mensajes.
+   >Si la tienda de Adobe Commerce está alojada en Cloud Platform, utilice el [`CONSUMERS_WAIT_FOR_MAX_MESSAGES`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#consumers_wait_for_max_messages) para configurar cómo procesan los consumidores los mensajes de la cola de mensajes.
 
 Consulte [Iniciar consumidores de cola de mensajes](../cli/start-message-queues.md).

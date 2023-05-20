@@ -10,11 +10,11 @@ ht-degree: 0%
 
 # Vínculos relacionados con el alojamiento propio
 
-## Recursos de autoalojamiento
+## Recursos de alojamiento propio
 
 * [Información general](/help/implementation-playbook/infrastructure/self-hosting/overview.md)
 * [Infraestructura local](/help/implementation-playbook/infrastructure/self-hosting/on-premises.md)
 * [Conceptos de seguridad](/help/implementation-playbook/infrastructure/self-hosting/security-concepts.md)
 * [Monitorización de telemetría y herramientas](/help/implementation-playbook/infrastructure/self-hosting/monitoring-tools.md)
-* [Ideas para la recuperación ante desastres](/help/implementation-playbook/infrastructure/self-hosting/disaster-recovery-ideas.md)
+* [Ideas de recuperación ante desastres](/help/implementation-playbook/infrastructure/self-hosting/disaster-recovery-ideas.md)
 * [Sugerencias de rendimiento](/help/implementation-playbook/infrastructure/self-hosting/performance-tips.md)

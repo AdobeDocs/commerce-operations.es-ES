@@ -1,7 +1,8 @@
 ---
 title: Configuración de caché L2
 description: Aprenda a configurar la caché L2.
-source-git-commit: 8102c083bb0216bbdcad2882f39f7711b9cee52b
+exl-id: 0504c6fd-188e-46eb-be8e-968238571f4e
+source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '431'
 ht-degree: 0%
@@ -10,18 +11,18 @@ ht-degree: 0%
 
 # Configuración de caché L2
 
-El almacenamiento en caché permite reducir el tráfico de red entre el almacenamiento en caché remoto y la aplicación Commerce. Una instancia de comercio estándar transfiere alrededor de 300 kb por solicitud, y el tráfico puede crecer rápidamente a más de ~1000 solicitudes en algunas situaciones.
+El almacenamiento en caché permite reducir el tráfico de red entre el almacenamiento de caché remoto y la aplicación de comercio. Una instancia de Commerce estándar transfiere alrededor de 300 kb por solicitud, y el tráfico puede crecer rápidamente a más de ~1000 solicitudes en algunas situaciones.
 
-Para reducir el ancho de banda de la red a Redis, almacene datos de caché localmente en cada nodo web y utilice la caché remota para dos propósitos:
+Para reducir el ancho de banda de red a Redis, almacene los datos de la caché localmente en cada nodo web y utilice la caché remota para dos fines:
 
-- Compruebe la versión de los datos de caché y asegúrese de que la caché más reciente se almacena localmente
-- Transferir la caché más reciente del equipo remoto al equipo local
+- Compruebe la versión de los datos de la caché y asegúrese de que la caché más reciente se almacena localmente
+- Transfiera la última caché del equipo remoto al equipo local
 
-Commerce almacena la versión de datos con hash en Redis, con el sufijo &#39;:hash&#39; anexado a la clave regular. Si hay una caché local obsoleta, los datos se transfieren al equipo local con un adaptador de caché.
+Commerce almacena la versión de los datos con hash en Redis, con el sufijo &quot;:hash&quot; anexado a la clave normal. Si hay una caché local obsoleta, los datos se transfieren al equipo local con un adaptador de caché.
 
 >[!INFO]
 >
->Para Adobe Commerce en infraestructura de nube, puede usar [implementar variables](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_backend) para la configuración de caché L2.
+>Para Adobe Commerce en la infraestructura en la nube, puede utilizar [implementar variables](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_backend) para la configuración de caché L2.
 
 ## Ejemplo de configuración
 
@@ -61,28 +62,28 @@ Utilice el siguiente ejemplo para modificar o reemplazar la sección de caché e
 
 Donde:
 
-- `backend` es la implementación de la caché L2.
+- `backend` es la implementación de caché L2.
 - `backend_options` es la configuración de caché L2.
    - `remote_backend` es la implementación de caché remota: Redis o MySQL.
    - `remote_backend_options` es la configuración de caché remota.
    - `local_backend` es la implementación de caché local: `Cm_Cache_Backend_File`
-   - `local_backend_options` es la configuración de caché local.
-      - `cache_dir` es una opción específica de caché de archivos para el directorio donde se almacena la caché local.
-   - `use_stale_cache` es un indicador que habilita o deshabilita el uso de la caché obsoleta.
+   - `local_backend_options` es la configuración de la caché local.
+      - `cache_dir` es una opción específica de la caché de archivos para el directorio donde se almacena la caché local.
+   - `use_stale_cache` es un indicador que habilita o deshabilita el uso de caché obsoleta.
 
-Adobe recomienda utilizar Redis para el almacenamiento en caché remoto (`\Magento\Framework\Cache\Backend\Redis`) y `Cm_Cache_Backend_File` para el almacenamiento en caché local de datos en la memoria compartida, utilizando: `'local_backend_options' => ['cache_dir' => '/dev/shm/']`
+Adobe recomienda utilizar Redis para el almacenamiento en caché remoto (`\Magento\Framework\Cache\Backend\Redis`) y `Cm_Cache_Backend_File` para el almacenamiento en caché local de datos en la memoria compartida, utilice: `'local_backend_options' => ['cache_dir' => '/dev/shm/']`
 
-El Adobe recomienda el uso de la variable [`cache preload`](redis-pg-cache.md#redis-preload-feature) , ya que disminuye drásticamente la presión sobre Redis. No olvide agregar el sufijo &#39;:hash&#39; para claves de precarga.
+El Adobe recomienda el uso del [`cache preload`](redis-pg-cache.md#redis-preload-feature) función, ya que reduce drásticamente la presión sobre Redis. No olvide agregar el sufijo &quot;:hash&quot; para las claves de precarga.
 
-## Opciones de caché obsoletas
+## Opciones de caché antiguas
 
-Primeros pasos con [!DNL Commerce] 2.4. `use_stale_cache` puede mejorar el rendimiento en algunos casos específicos.
+Primeros pasos con [!DNL Commerce] 2.4, el `use_stale_cache` La opción puede mejorar el rendimiento en algunos casos específicos.
 
-Por lo general, la compensación con la espera de bloqueo es aceptable desde el punto de vista del rendimiento, pero cuanto mayor sea el número de bloques o caché que tenga el comerciante, más tiempo se pasa esperando los bloqueos. En algunos casos, puede esperar un **números de claves** \* **tiempo de espera de búsqueda** cantidad de tiempo para el proceso. En algunos casos excepcionales, el comerciante puede tener cientos de claves en la variable `Block/Config` caché, por lo que incluso el tiempo de espera de búsqueda pequeño para bloqueo puede costar segundos.
+Por lo general, la compensación con la espera de bloqueo es aceptable desde el lado del rendimiento, pero cuanto mayor sea el número de bloques o caché que tiene el comerciante, más tiempo se pasa esperando bloqueos. En algunos casos, puede esperar a que **número de claves** \* **tiempo de espera de búsqueda** cantidad de tiempo para el proceso. En algunos casos excepcionales, el comerciante puede tener cientos de llaves en el `Block/Config` caché, por lo que incluso un pequeño tiempo de espera de búsqueda para el bloqueo puede costar segundos.
 
-La caché obsoleta solo funciona con una caché L2. Con una caché obsoleta, podría enviar una caché obsoleta, mientras que una nueva se está generando en un proceso paralelo. Para habilitar la caché obsoleta, agregue `'use_stale_cache' => true` a la configuración superior de la caché L2.
+La caché antigua solo funciona con una caché L2. Con una caché obsoleta, puede enviar una caché obsoleta, mientras que una nueva se genera en un proceso paralelo. Para habilitar la caché anticuada, agregue. `'use_stale_cache' => true` a la configuración superior de la caché L2.
 
-Adobe recomienda habilitar la variable `use_stale_cache` solo para los tipos de caché que más se benefician de ella, incluidos:
+El Adobe recomienda habilitar la variable `use_stale_cache` solo para los tipos de caché que más se benefician de ella, incluidos:
 
 - `block_html`
 - `config_integration_api`

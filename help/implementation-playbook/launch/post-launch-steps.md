@@ -11,15 +11,15 @@ ht-degree: 0%
 
 # Pasos posteriores al lanzamiento
 
-Una vez que el sitio web esté activo, estas actividades se realizarán lo antes posible para garantizar que el sitio se inicie correctamente:
+Una vez que el sitio web esté activo, estas actividades se realizarían lo antes posible para garantizar que el sitio se haya iniciado correctamente:
 
-- Habilite la herramienta de monitorización de tiempo activo (New Relic), active las comprobaciones y supervise el sitio para asegurarse de que todos los servicios y acceso estén en verde
-- Habilitar el análisis de seguridad de Adobe Commerce periódicamente
-- Etiquete el clúster como activo y cree un ticket de soporte para activar la supervisión de SLA alto
-- El CSE (ingeniero de éxito de los clientes) y TAM (administrador de cuentas técnicas) realizan las siguientes tareas en cuanto se completa la migración:
-   - Etiquete el clúster como High SLA para el cliente de Adobe Commerce y cree un ticket de asistencia para activarlo
-   - Activar las comprobaciones de reino para los nombres de dominio
-   - Revise el estado de supervisión y asegúrese de que todos los elementos estén en verde
-   - Mantenga informadas a las partes interesadas de la duración y los parámetros de la garantía por correo electrónico en el día de lanzamiento
+- Habilite la herramienta de monitorización del tiempo de actividad (New Relic), active las comprobaciones y supervise el sitio para asegurarse de que todos los servicios y accesos estén en verde
+- Activar análisis de seguridad de Adobe Commerce periódicamente
+- Etiquete el clúster como activo y cree un ticket de asistencia para activar la monitorización de alto nivel de SLA
+- El CSE (ingeniero de éxito del cliente) y TAM (administrador técnico de cuentas) realizan las siguientes tareas en cuanto se completa el cambio:
+   - Etiquete el clúster como Alto SLA para el cliente de Adobe Commerce y cree un ticket de asistencia para activarlo
+   - Activar las comprobaciones de PKingdom para nombres de dominio
+   - Revise el estado de monitorización y asegúrese de que todos los elementos estén en verde
+   - Mantenga a las partes interesadas informadas por correo electrónico de la duración y los parámetros de la garantía en el día de lanzamiento
 
-![Diagrama de la fase 4 del proceso de lanzamiento](../../assets/playbooks/launch-steps-4.svg)
+![Diagrama que muestra la fase 4 del proceso de lanzamiento](../../assets/playbooks/launch-steps-4.svg)

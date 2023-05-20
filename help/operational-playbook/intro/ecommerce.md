@@ -11,65 +11,65 @@ ht-degree: 0%
 
 # ¿Qué es el comercio electrónico?
 
-En los mundos superpuestos del comercio electrónico (las ventas sociales y los mercados digitales), la experiencia del cliente ofrece a los consumidores la opción de participar en el canal que prefieren, por lo que nunca ha sido más importante elegir la manera correcta de participar y vender en línea. El comercio electrónico y las compras en línea se utilizan a menudo de manera intercambiable, pero en su núcleo el comercio electrónico es mucho más amplio que esto. Encarna un concepto para hacer negocios en línea, incorporando una multitud de servicios diferentes.
+En los mundos superpuestos del comercio electrónico (ventas sociales y mercados digitales), la experiencia del cliente ofrece a los consumidores la opción de interactuar con el canal que prefieren, por lo que tomar la decisión correcta sobre cómo interactuar y vender en línea nunca ha sido más importante. El comercio electrónico y las compras en línea a menudo se utilizan indistintamente, pero en su núcleo el comercio electrónico es mucho más amplio que esto. Encarna un concepto para hacer negocios en línea, incorporando una multitud de servicios diferentes.
 
-El comercio electrónico está experimentando un crecimiento monumental. Pasó de ser una industria de 1,3 billones de dólares en 2014 a una industria de 3,5 billones de dólares en 2019. Los expertos predicen que para 2023, llegará a más de 6,5 billones, lo que significa que hay una gran oportunidad para que las marcas de comercio electrónico aprovechen la optimización de la conversión. El poder del comercio electrónico no debe subestimarse, ya que sigue invadiendo la vida cotidiana y presenta oportunidades significativas para las pequeñas, medianas y grandes empresas y los inversores en línea.
+El comercio electrónico está experimentando un crecimiento monumental. Pasó de ser una industria de 1,3 billones de dólares en 2014 a una industria de 3,5 billones de dólares en 2019. Los expertos predicen que en 2023, alcanzará más de 6,5 billones, lo que significa que hay una tremenda oportunidad para que las marcas de comercio electrónico capitalicen la optimización de la conversión. No se debe subestimar el poder del comercio electrónico, ya que continúa impregnando la vida cotidiana y presenta oportunidades significativas para pequeñas, medianas y grandes empresas e inversores en línea.
 
-Ya sea que esté iniciando su negocio de comercio electrónico o que haya estado en el negocio durante un tiempo, probablemente sepa que es difícil tener éxito, por lo que hemos compilado esta guía sobre cómo ejecutar un negocio de comercio electrónico exitoso.
+Tanto si acaba de iniciar su negocio de comercio electrónico como si ha estado en el negocio durante un tiempo, probablemente sepa que es difícil tener éxito, por lo que hemos compilado esta guía sobre cómo ejecutar un negocio de comercio electrónico exitoso.
 
-Aquí hay un breve resumen de los tipos de negocios de comercio electrónico según cada categoría diferente:
+Aquí hay un breve resumen de los tipos de negocios de comercio electrónico que hay según cada categoría diferente:
 
-Estos son los diferentes modelos de comercio electrónico:
+Estos son los diferentes modelos de negocio de comercio electrónico:
 
 - De empresa a empresa (B2B)
 - De empresa a consumidor (B2C)
-- Consumidor a consumidor (C2C)
+- De consumidor a consumidor (C2C)
 - Consumidor a empresa (C2B)
 
 Estos son los diferentes modelos de ingresos de comercio electrónico:
 
-- Envío a domicilio
+- Dropshipping
 - Suscripción
-- Etiquetado privado y fabricación
+- Etiquetado y fabricación privados
 - Etiquetado blanco
 - Venta al por mayor
 - Alquiler y préstamo
 
-Estos son los diferentes tipos de sitios web de comercio electrónico:
+Estos son los diferentes tipos de sitio web de comercio electrónico:
 
-- Sitio web de una marca individual (un vendedor)
-- Comerciantes en línea (número seleccionado de vendedores)
+- Sitio web de marca individual (un vendedor)
+- Minoristas en línea (seleccione el número de vendedores)
 - Marketplaces (varios vendedores)
 
 ## Ventajas y desventajas
 
-El comercio electrónico permite a las personas abrir las puertas de sus propias tiendas virtuales. La venta en línea facilita que las tiendas pequeñas y especializadas y las grandes marcas lleguen a una amplia audiencia. Sin embargo, al igual que las empresas tradicionales, el comercio electrónico tiene ventajas y desventajas.
+El comercio electrónico hace posible que la gente abra las puertas de sus propias tiendas virtuales. Vender en línea facilita que las tiendas pequeñas y especializadas y los grandes puntos de venta de marcas lleguen a un amplio público. Sin embargo, al igual que las empresas tradicionales, el comercio electrónico tiene ventajas y desventajas.
 
 ### Ventajas
 
 - La sobrecarga del comercio electrónico es baja en comparación con los ladrillos y el mortero
-- Las tiendas en línea están abiertas las 24 horas.
+- Tiendas en línea están abiertas 24/7
 - La compra es instantánea
 - Personalización y experiencias de usuario personalizadas
-- Potencial de alcance de clientes globales
+- Potencial de alcance de cliente global
 
 ### Desventajas
 
 - La competencia en línea es feroz
 - El envío puede ser impredecible
 
-Las ventajas superan a las desventajas, razón por la cual el mercado, los minoristas y los ingresos de los comerciantes están creciendo rápidamente.
+Las ventajas superan las desventajas, por lo que el mercado, los minoristas y los ingresos de los comerciantes están creciendo rápidamente.
 
-## Desafíos del cliente
+## Retos del cliente
 
-Estos son algunos de los desafíos comunes del comercio electrónico que enfrentan las organizaciones:
+Estos son algunos de los desafíos comunes de comercio electrónico que enfrentan las organizaciones:
 
 - Puede utilizar una plataforma obsoleta que haga que los visitantes abandonen el sitio.
-- Es posible que el sitio no responda, lo que obliga a los visitantes móviles a irse a otro sitio.
-- Su equipo interno puede carecer de estructura y habilidades para poder ejecutar una plataforma de comercio de forma eficaz.
-- Puede preguntarse si su infraestructura es la adecuada para su negocio.
+- Es posible que el sitio no sea adaptable, lo que obliga a los visitantes móviles a dirigirse a otra parte.
+- Es posible que su equipo interno carezca de estructura y habilidades para poder ejecutar de forma eficaz una plataforma de comercio.
+- Podría preguntarse si su infraestructura es la adecuada para su negocio.
 
-Las expectativas de los clientes aumentan y siempre hay nuevas técnicas de crecimiento para aumentar la tasa de conversión. Este manual explicará con más detalle cómo abordar algunos de estos desafíos de los clientes y ejecutar correctamente un sitio de comercio electrónico hasta su potencial.
+Las expectativas de los clientes están aumentando y siempre hay nuevas técnicas de crecimiento para aumentar su tasa de conversión. Este manual tratará de esbozar y explicar en más detalle cómo abordar algunos de estos desafíos para los clientes y ejecutar con éxito un sitio de comercio electrónico en todo su potencial.
 
 ![El valor de la tecnología comercial](../../assets/playbooks/commerce-tech.png)
 
