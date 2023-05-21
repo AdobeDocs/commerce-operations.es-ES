@@ -7,7 +7,7 @@ ht-degree: 0%
 ---
 # Inicio de sesión del servidor
 
-1. Inicie sesión en el servidor.
+1. Inicie sesión en el servidor de.
 1. Cambie a la [propietario del sistema de archivos](../installation/prerequisites/file-system/overview.md).
 1. Cambie al directorio donde clonó la aplicación. Por ejemplo,
 

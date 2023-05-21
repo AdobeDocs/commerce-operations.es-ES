@@ -47,6 +47,6 @@ Adobe Commerce más Adobe Experience Manager es una historia potente en la que e
 
 La opción final que se debe discutir aquí es la opción de crear un front-end personalizado. Esta opción es para empresas que tienen experiencia existente y desarrolladores internos capacitados en una pila de front-end en particular, como React. Si no tienen habilidades en el desarrollo de front-end tradicional de Adobe Commerce, pueden decidir que es más rentable crear su propio front-end React personalizado.
 
-Naturalmente, este modelo requiere habilidades y recursos sólidos de desarrollo de front-end para la integración de clientes o sistemas, y no se obtiene el beneficio de la compatibilidad nativa con elementos como Page Builder que se obtiene con PWA Studio. Cada vez que un comerciante está construyendo algo completamente personalizado, puede perder ventajas de tiempo de comercialización.
+Naturalmente, este modelo requiere habilidades y recursos sólidos de desarrollo de front-end para la integración de clientes o sistemas, y no se obtiene el beneficio de la compatibilidad nativa con elementos como Page Builder que se obtiene con PWA Studio. Cada vez que un comerciante está construyendo algo completamente personalizado, puede perder ventajas de tiempo de salida al mercado.
 
 Los front-end personalizados también permiten innovaciones y experimentación. Se habla mucho sobre RA/VR o comercio de voz, y una arquitectura como la de Adobe Commerce permite a los comerciantes explorar estas opciones sin afectar a sus tiendas web existentes.

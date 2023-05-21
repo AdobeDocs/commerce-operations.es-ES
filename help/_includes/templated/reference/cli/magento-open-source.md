@@ -6031,7 +6031,7 @@ No haga ninguna pregunta interactiva
 
 ## `sampledata:deploy`
 
-Implementación de módulos de datos de ejemplo para instalaciones de Magento basadas en compositor
+Implementación de módulos de datos de ejemplo para instalaciones de Magento basadas en compositores
 
 ```bash
 bin/magento sampledata:deploy [--no-update]
