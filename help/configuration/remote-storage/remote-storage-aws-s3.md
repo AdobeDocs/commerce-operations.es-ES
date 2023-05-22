@@ -1,8 +1,9 @@
 ---
 title: Configuración del compartimento de AWS S3 para almacenamiento remoto
 description: Configure su proyecto de Commerce para utilizar el servicio de almacenamiento AWS S3 para el almacenamiento remoto.
+feature: Configuration, Storage
 exl-id: e8aeade8-2ec4-4844-bd6c-ab9489d10436
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
 workflow-type: tm+mt
 source-wordcount: '320'
 ht-degree: 0%

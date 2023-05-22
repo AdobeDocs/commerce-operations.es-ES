@@ -1,8 +1,9 @@
 ---
 title: Referencia de rutas de configuración de clientes
 description: Consulte una lista de valores de configuración de clientes.
+feature: Configuration, Customers
 exl-id: a0571423-6fbd-4cfc-9797-a13c0c24bb53
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 16e9396f19693436dfc7bdac78d84624a78f0c21
 workflow-type: tm+mt
 source-wordcount: '883'
 ht-degree: 0%

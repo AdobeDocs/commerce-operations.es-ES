@@ -1,8 +1,9 @@
 ---
 title: Referencia de rutas de configuración de la extensión B2B
 description: Consulte la lista de valores de configuración relacionados con B2B.
+feature: Configuration, B2B, Companies, Payments, Quotes
 exl-id: 3414dea1-17c9-4462-8b8a-51a6045b0bc9
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 16e9396f19693436dfc7bdac78d84624a78f0c21
 workflow-type: tm+mt
 source-wordcount: '841'
 ht-degree: 0%

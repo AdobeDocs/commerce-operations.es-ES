@@ -1,8 +1,9 @@
 ---
 title: Tipos de caché
 description: Asociar frontend de caché con tipos de caché.
+feature: Configuration, Cache
 exl-id: 67d4ba06-b48b-4e1a-a7a8-9830490dfe3d
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
 workflow-type: tm+mt
 source-wordcount: '271'
 ht-degree: 0%

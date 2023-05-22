@@ -1,9 +1,10 @@
 ---
 title: Configurar el analizador de bases de datos
 description: Vea un ejemplo de cómo configurar los resultados del generador de perfiles de base de datos.
+feature: Configuration, Storage
 badge: label="Colaborado por Atish Goswami" type="Informativo" url="https://github.com/atishgoswami" tooltip="Atish Goswami"
 exl-id: 87780db5-6e50-4ebb-9591-0cf22ab39af5
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
 workflow-type: tm+mt
 source-wordcount: '198'
 ht-degree: 0%

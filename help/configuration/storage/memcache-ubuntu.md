@@ -1,8 +1,9 @@
 ---
 title: Configuración de memcached en Ubuntu
 description: Instale y configure memcached en Ubuntu.
+feature: Configuration, Cache, Storage
 exl-id: 831193d2-3e81-472c-9b87-78a8d52959b4
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
 workflow-type: tm+mt
 source-wordcount: '449'
 ht-degree: 0%

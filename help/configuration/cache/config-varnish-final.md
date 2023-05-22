@@ -1,10 +1,11 @@
 ---
 title: Verificación final
 description: Compruebe que la configuración de Barnish está configurada correctamente para funcionar con la aplicación de Adobe Commerce.
+feature: Configuration, Cache
 exl-id: 01f28c93-75cd-4969-9142-b8dac0aa2adb
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
 workflow-type: tm+mt
-source-wordcount: '345'
+source-wordcount: '349'
 ht-degree: 0%
 
 ---
@@ -82,4 +83,4 @@ Asegúrese de que la `<magento_root>/var/page_cache` el directorio está vacío:
 
 >[!TIP]
 >
->Si encuentra errores 503 (Fallo en la recuperación del servidor), consulte [Solución de problemas con errores 503 (servicio no disponible)](https://support.magento.com/hc/en-us/articles/360034631211) en el _Centro de ayuda de Adobe Commerce_.
+>Si encuentra errores 503 (Fallo en la recuperación del servidor), consulte [Solución de problemas con errores 503 (servicio no disponible)](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-503-errors.html) en el _Centro de ayuda de Adobe Commerce_.

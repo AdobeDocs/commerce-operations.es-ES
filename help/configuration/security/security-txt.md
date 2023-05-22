@@ -1,9 +1,10 @@
 ---
 title: Security.txt
 description: Aprenda a proporcionar información para ayudar a los investigadores de seguridad a notificar vulnerabilidades.
+feature: Configuration, Security
 badge: label="Contribución de Kalpesh Mehta de Corra" type="Informativo" url="https://solutionpartners.adobe.com/s/directory/detail/corra" tooltip="Kalpesh Mehta"
 exl-id: ddafd03c-77b2-42e8-b593-7d655d08e9c3
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 56a2461edea2799a9d569bd486f995b0fe5b5947
 workflow-type: tm+mt
 source-wordcount: '155'
 ht-degree: 0%

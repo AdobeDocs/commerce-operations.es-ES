@@ -1,8 +1,9 @@
 ---
 title: Referencia de rutas de configuración de ventas
 description: Consulte una lista de valores de configuración de ventas.
+feature: Configuration, Checkout, Gift, Shipping/Delivery, Taxes
 exl-id: 7981f78a-5e5f-422c-9bff-54022e1fb9f3
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 16e9396f19693436dfc7bdac78d84624a78f0c21
 workflow-type: tm+mt
 source-wordcount: '1473'
 ht-degree: 0%
@@ -397,7 +398,7 @@ Estos valores de configuración están disponibles en el Administrador de **Tien
 | Propiedad de lista para el bloque de ampliación de venta | `google/analytics/upsell_block_list_value` | ![Solo de comercio](/help/assets/configuration/cloud-ee.png) |
 | Propiedad de lista para el bloque de productos relacionado | `google/analytics/related_block_list_value` | ![Solo de comercio](/help/assets/configuration/cloud-ee.png) |
 | Propiedad List para la página de resultados de la búsqueda | `google/analytics/search_page_list_value` | ![Solo de comercio](/help/assets/configuration/cloud-ee.png) |
-| ’Promociones internas’ para el campo de promociones &quot;Etiqueta&quot;. | `google/analytics/promotions_list_value` | ![Solo de comercio](/help/assets/configuration/cloud-ee.png) |
+| &quot;Promociones internas&quot; para el campo de promociones &quot;Etiqueta&quot;. | `google/analytics/promotions_list_value` | ![Solo de comercio](/help/assets/configuration/cloud-ee.png) |
 | Activar | `google/adwords/active` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | ID de conversión | `google/adwords/conversion_id` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Idioma de conversión | `google/adwords/conversion_language` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |

@@ -1,8 +1,9 @@
 ---
 title: Implementación de una sola máquina
 description: Obtenga información sobre cómo implementar actualizaciones en Commerce en un servidor de producción mediante la línea de comandos.
+feature: Configuration, Deploy
 exl-id: ca73309c-7584-4506-99de-dd933651eeb6
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: dcc283b901917e3681863370516771763ae87462
 workflow-type: tm+mt
 source-wordcount: '186'
 ht-degree: 0%

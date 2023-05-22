@@ -1,8 +1,9 @@
 ---
 title: Usar Redis para la caché predeterminada
 description: Aprenda a configurar Redis como la memoria caché predeterminada para Adobe Commerce y Magento Open Source.
+feature: Configuration, Cache
 exl-id: 8c097cfc-85d0-4e96-b56e-284fde40d459
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
 workflow-type: tm+mt
 source-wordcount: '1067'
 ht-degree: 0%

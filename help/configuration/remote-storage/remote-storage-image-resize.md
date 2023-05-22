@@ -1,8 +1,9 @@
 ---
 title: Configurar el cambio de tamaño de la imagen para almacenamiento remoto
 description: Optimice los recursos de disco configurando el cambio de tamaño de las imágenes del lado del servidor.
+feature: Configuration, Storage
 exl-id: 51c2b9b3-0f5f-4868-9191-911d5df341ec
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
 workflow-type: tm+mt
 source-wordcount: '247'
 ht-degree: 0%

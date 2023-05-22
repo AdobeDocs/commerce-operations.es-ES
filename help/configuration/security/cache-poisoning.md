@@ -1,8 +1,9 @@
 ---
 title: Evitar el envenenamiento de caché
 description: Aprenda a evitar el envenenamiento de la caché de la página para su tienda de Commerce.
+feature: Configuration, Cache, Security
 exl-id: 947024dd-d59d-480d-bb6c-8e0065054bb6
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 56a2461edea2799a9d569bd486f995b0fe5b5947
 workflow-type: tm+mt
 source-wordcount: '260'
 ht-degree: 0%

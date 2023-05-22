@@ -1,8 +1,9 @@
 ---
 title: Permisos de acceso a sistemas de archivos
 description: Consulte cómo configurar el propietario o los propietarios del sistema de archivos de la aplicación Commerce para un sistema de desarrollo y producción.
+feature: Configuration, Roles/Permissions
 exl-id: 95b27db9-5247-4f58-a9af-1590897d73db
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: dcc283b901917e3681863370516771763ae87462
 workflow-type: tm+mt
 source-wordcount: '866'
 ht-degree: 0%

@@ -1,8 +1,9 @@
 ---
 title: Configuración avanzada de barniz
 description: Configure las funciones avanzadas de Barniz, incluidos los modos de comprobación de estado, gracia y santo.
+feature: Configuration, Cache
 exl-id: 178bd675-6ed0-40cc-9455-08a11b32c054
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
 workflow-type: tm+mt
 source-wordcount: '892'
 ht-degree: 0%
