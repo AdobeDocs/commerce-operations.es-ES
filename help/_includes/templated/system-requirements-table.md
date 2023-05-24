@@ -1,11 +1,19 @@
 ---
-source-git-commit: 20ebf9dc6c7a1aac1d183ed31b1a80a674d633f1
+source-git-commit: 45b3f12d3ea333624a0a8a872b1eb412a98fda6d
 workflow-type: tm+mt
-source-wordcount: '271'
-ht-degree: 70%
+source-wordcount: '289'
+ht-degree: 66%
 
 ---
 # Requisitos del sistema
+
+>[!IMPORTANT]
+>
+>La compatibilidad y la versión del servicio para Adobe Commerce en la infraestructura en la nube están determinadas por las versiones implementadas en la infraestructura en la nube y, a veces, difieren de las versiones admitidas por las implementaciones locales de Adobe Commerce. Consulte [Software y servicios compatibles](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/cloud-architecture.html#supported-software-and-services) en el _Guía de Cloud_. Por ejemplo, Elasticsearch 7.17 es compatible con 2.4.4 para implementaciones locales, pero Open Search 1.2 es compatible con la infraestructura en la nube.
+
+>[!NOTE]
+>
+><sup>*</sup>Adobe Commerce 2.4.5 y versiones anteriores solo admiten MySQL 8.0.28 y versiones anteriores.
 
 <table style="table-layout:auto">
   <thead>
@@ -797,11 +805,3 @@ ht-degree: 70%
     </tr>
   </tbody>
 </table>
-
->[!IMPORTANT]
->
->La compatibilidad y la versión del servicio para Adobe Commerce en la infraestructura en la nube están determinadas por las versiones implementadas en la infraestructura en la nube y, a veces, difieren de las versiones admitidas por las implementaciones locales de Adobe Commerce. Consulte [Software y servicios compatibles](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/cloud-architecture.html#supported-software-and-services) en el _Guía de Cloud_.
-
->[!NOTE]
->
-><sup>*</sup>Adobe Commerce 2.4.5 y versiones anteriores solo admiten MySQL 8.0.28 y versiones anteriores.
