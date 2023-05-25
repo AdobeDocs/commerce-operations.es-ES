@@ -1,5 +1,5 @@
 ---
-source-git-commit: a1f99f839f11ab42356b87a69398999bb03cd544
+source-git-commit: ad7f05eaa5f144b5a8616307d65be635a0c499eb
 workflow-type: tm+mt
 source-wordcount: '19443'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 **Versión**: 2.4.6
 
 Esta referencia contiene 130 comandos disponibles a través del `bin/magento` herramienta de línea de comandos.
-La lista inicial se genera automáticamente utilizando `bin/magento list` en la edición.
+La lista inicial se genera automáticamente utilizando `bin/magento list` en Adobe Commerce.
 Utilice el [&quot;Agregar comandos CLI&quot;](https://developer.adobe.com/commerce/php/development/cli-commands/) para agregar un comando de CLI personalizado.
 
 >[!NOTE]

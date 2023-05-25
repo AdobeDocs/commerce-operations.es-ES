@@ -1,7 +1,7 @@
 ---
-source-git-commit: 27e7a262fd1d8092045f5ebe2f88caaec37a6b0d
+source-git-commit: ad7f05eaa5f144b5a8616307d65be635a0c499eb
 workflow-type: tm+mt
-source-wordcount: '29783'
+source-wordcount: '29786'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 **Versión**: 1.42.0
 
 Esta referencia contiene 134 comandos disponibles a través del `magento-cloud` herramienta de línea de comandos.
-La lista inicial se genera automáticamente utilizando `magento-cloud list` en la edición.
+La lista inicial se genera automáticamente utilizando `magento-cloud list` en Adobe Commerce en la infraestructura en la nube.
 
 >[!NOTE]
 >
