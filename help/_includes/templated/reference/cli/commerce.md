@@ -1,7 +1,7 @@
 ---
-source-git-commit: ad7f05eaa5f144b5a8616307d65be635a0c499eb
+source-git-commit: adb585771fb1353614ea600117f18ba8b55b65f0
 workflow-type: tm+mt
-source-wordcount: '29786'
+source-wordcount: '21307'
 ht-degree: 0%
 
 ---
@@ -10,135 +10,14 @@ ht-degree: 0%
 <!-- All the assigned and captured content is used in the included template -->
 
 <!-- The template to render with above values -->
-**Versión**: 1.42.0
+**Versión**: 1.43.0
 
-Esta referencia contiene 134 comandos disponibles a través del `magento-cloud` herramienta de línea de comandos.
+Esta referencia contiene 115 comandos disponibles a través del `magento-cloud` herramienta de línea de comandos.
 La lista inicial se genera automáticamente utilizando `magento-cloud list` en Adobe Commerce en la infraestructura en la nube.
 
 >[!NOTE]
 >
 >Esta referencia se genera a partir del código base de la aplicación. Para cambiar el contenido, puede actualizar el código fuente para la implementación del comando correspondiente en la [código base](https://github.com/magento) y envíe los cambios para que se revisen. Otra forma es _Danos tu opinión_ (busque el vínculo en la parte superior derecha). Para ver las directrices de contribución, consulte [Contribuciones de código](https://developer.adobe.com/commerce/contributor/guides/code-contributions/).
-
-## `_completion`
-
-Gancho de terminación BASH.
-
-```bash
-_completion [-g|--generate-hook] [-p|--program PROGRAM] [-m|--multiple] [--shell-type [SHELL-TYPE]]
-```
-
-### `--generate-hook`, `-g`
-
-Genere el código BASH que configure la finalización para esta aplicación.
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--program`, `-p`
-
-Nombre de programa que debe alcanzar el déclencheur de finalización &lt;comment>(toma como valor predeterminado la ruta absoluta de la aplicación)&lt;/comment>.
-
-- Requiere un valor
-
-### `--multiple`, `-m`
-
-El vínculo generado se puede utilizar para varias aplicaciones.
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--shell-type`
-
-Establezca el tipo de shell (zsh o bash). De lo contrario, esto se determina automáticamente.
-
-- Acepta un valor
-
-
-## `bot`
-
-El bot de Magento Cloud
-
-```bash
-magento-cloud bot [--party] [--parrot]
-```
-
-### `--party`
-
-
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--parrot`
-
-
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--help`, `-h`
-
-Mostrar este mensaje de ayuda
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar el detalle de los mensajes
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--version`, `-V`
-
-Mostrar esta versión de la aplicación
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--yes`, `-y`
-
-Responder &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-interaction`
-
-No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equivale a usar la variable de entorno: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 
 ## `clear-cache`
 
@@ -148,16 +27,6 @@ Borre la caché de CLI
 magento-cloud clear-cache
 ```
 
-
-```bash
-clearcache
-```
-
-
-```bash
-cc
-```
-
 ### `--help`, `-h`
 
 Mostrar este mensaje de ayuda
@@ -189,34 +58,6 @@ Responder &quot;sí&quot; a las preguntas de confirmación; aceptar el valor pre
 ### `--no-interaction`
 
 No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equivale a usar la variable de entorno: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -274,34 +115,6 @@ Responder &quot;sí&quot; a las preguntas de confirmación; aceptar el valor pre
 ### `--no-interaction`
 
 No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equivale a usar la variable de entorno: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -372,34 +185,6 @@ No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equiva
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 
 ## `help`
 
@@ -419,7 +204,7 @@ El nombre del comando
 
 ### `--format`
 
-El formato de salida (txt, xml, json o md)
+El formato de salida (txt, json o md)
 
 - Predeterminado: `txt`
 - Requiere un valor
@@ -462,113 +247,6 @@ Responder &quot;sí&quot; a las preguntas de confirmación; aceptar el valor pre
 ### `--no-interaction`
 
 No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equivale a usar la variable de entorno: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
-
-## `legacy-migrate`
-
-Migrar desde la estructura de archivos heredada
-
-```bash
-magento-cloud legacy-migrate [--no-backup]
-```
-
-### `--no-backup`
-
-No cree una copia de seguridad del proyecto.
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--help`, `-h`
-
-Mostrar este mensaje de ayuda
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar el detalle de los mensajes
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--version`, `-V`
-
-Mostrar esta versión de la aplicación
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--yes`, `-y`
-
-Responder &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-interaction`
-
-No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equivale a usar la variable de entorno: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -646,34 +324,6 @@ Responder &quot;sí&quot; a las preguntas de confirmación; aceptar el valor pre
 ### `--no-interaction`
 
 No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equivale a usar la variable de entorno: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -759,34 +409,6 @@ No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equiva
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 
 ## `web`
 
@@ -815,12 +437,6 @@ El ID o la URL del proyecto
 
 - Requiere un valor
 
-### `--host`
-
-Opción obsoleta, ya no se utiliza
-
-- Requiere un valor
-
 ### `--environment`, `-e`
 
 El ID de entorno
@@ -858,178 +474,6 @@ Responder &quot;sí&quot; a las preguntas de confirmación; aceptar el valor pre
 ### `--no-interaction`
 
 No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equivale a usar la variable de entorno: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
-
-## `welcome`
-
-Bienvenido a Magento Cloud
-
-```bash
-magento-cloud welcome
-```
-
-### `--help`, `-h`
-
-Mostrar este mensaje de ayuda
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar el detalle de los mensajes
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--version`, `-V`
-
-Mostrar esta versión de la aplicación
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--yes`, `-y`
-
-Responder &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-interaction`
-
-No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equivale a usar la variable de entorno: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
-
-## `winky`
-
-
-
-```bash
-magento-cloud winky
-```
-
-### `--help`, `-h`
-
-Mostrar este mensaje de ayuda
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar el detalle de los mensajes
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--version`, `-V`
-
-Mostrar esta versión de la aplicación
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--yes`, `-y`
-
-Responder &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-interaction`
-
-No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equivale a usar la variable de entorno: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -1051,14 +495,14 @@ El ID de actividad. El valor predeterminado es la actividad cancelable más reci
 
 ### `--type`
 
-Filtre por tipo (al seleccionar una actividad predeterminada). Si una lista se proporciona como un valor único (por ejemplo, &quot;a,b,c&quot;), se divide por comas o espacios en blanco. El carácter % se puede usar como comodín para el tipo, p. ej. &#39;%var%&#39; para seleccionar actividades relacionadas con variables.
+Filtre por tipo (al seleccionar una actividad predeterminada). Si una lista se proporciona como un valor único (por ejemplo, &quot;a,b,c&quot;), se divide por comas o espacios en blanco. Los caracteres % o * se pueden usar como comodín para el tipo, p. ej. &#39;%var%&#39; para seleccionar actividades relacionadas con variables.
 
 - Predeterminado: `[]`
 - Requiere un valor
 
 ### `--exclude-type`
 
-Excluir por tipo (al seleccionar una actividad predeterminada). Si una lista se proporciona como un valor único (por ejemplo, &quot;a,b,c&quot;), se divide por comas o espacios en blanco. El carácter % se puede utilizar como comodín para excluir tipos.
+Excluir por tipo (al seleccionar una actividad predeterminada). Si una lista se proporciona como un valor único (por ejemplo, &quot;a,b,c&quot;), se divide por comas o espacios en blanco. Los caracteres % o * se pueden usar como comodín para excluir tipos.
 
 - Predeterminado: `[]`
 - Requiere un valor
@@ -1073,12 +517,6 @@ Compruebe las actividades recientes en todos los entornos (al seleccionar una ac
 ### `--project`, `-p`
 
 El ID o la URL del proyecto
-
-- Requiere un valor
-
-### `--host`
-
-Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -1119,34 +557,6 @@ Responder &quot;sí&quot; a las preguntas de confirmación; aceptar el valor pre
 ### `--no-interaction`
 
 No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equivale a usar la variable de entorno: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -1174,14 +584,14 @@ La propiedad que se va a ver
 
 ### `--type`
 
-Filtre por tipo (al seleccionar una actividad predeterminada). Si una lista se proporciona como un valor único (por ejemplo, &quot;a,b,c&quot;), se divide por comas o espacios en blanco. El carácter % se puede usar como comodín para el tipo, p. ej. &#39;%var%&#39; para seleccionar actividades relacionadas con variables.
+Filtre por tipo (al seleccionar una actividad predeterminada). Si una lista se proporciona como un valor único (por ejemplo, &quot;a,b,c&quot;), se divide por comas o espacios en blanco. Los caracteres % o * se pueden usar como comodín para el tipo, p. ej. &#39;%var%&#39; para seleccionar actividades relacionadas con variables.
 
 - Predeterminado: `[]`
 - Requiere un valor
 
 ### `--exclude-type`
 
-Excluir por tipo (al seleccionar una actividad predeterminada). Si una lista se proporciona como un valor único (por ejemplo, &quot;a,b,c&quot;), se divide por comas o espacios en blanco. El carácter % se puede utilizar como comodín para excluir tipos.
+Excluir por tipo (al seleccionar una actividad predeterminada). Si una lista se proporciona como un valor único (por ejemplo, &quot;a,b,c&quot;), se divide por comas o espacios en blanco. Los caracteres % o * se pueden usar como comodín para excluir tipos.
 
 - Predeterminado: `[]`
 - Requiere un valor
@@ -1219,12 +629,6 @@ El ID o la URL del proyecto
 
 - Requiere un valor
 
-### `--host`
-
-Opción obsoleta, ya no se utiliza
-
-- Requiere un valor
-
 ### `--environment`, `-e`
 
 El ID de entorno
@@ -1240,7 +644,7 @@ El formato de salida: tabla, csv, tsv o sin formato
 
 ### `--columns`, `-c`
 
-Columnas para mostrar. Si una lista se proporciona como un valor único (por ejemplo, &quot;a,b,c&quot;), se divide por comas o espacios en blanco.
+Columnas para mostrar. Los caracteres % o * se pueden usar como comodín. Si una lista se proporciona como un valor único (por ejemplo, &quot;a,b,c&quot;), se divide por comas o espacios en blanco.
 
 - Predeterminado: `[]`
 - Requiere un valor
@@ -1294,34 +698,6 @@ No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equiva
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 
 ## `activity:list`
 
@@ -1331,26 +707,16 @@ Obtener una lista de actividades de un entorno o proyecto
 magento-cloud activity:list [-t|--type TYPE] [-x|--exclude-type EXCLUDE-TYPE] [--limit LIMIT] [--start START] [--state STATE] [--result RESULT] [-i|--incomplete] [-a|--all] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT]
 ```
 
-
-```bash
-activities
-```
-
-
-```bash
-act
-```
-
 ### `--type`, `-t`
 
-Filtrar actividades por tipo Si una lista se proporciona como un valor único (por ejemplo, &quot;a,b,c&quot;), se dividirá por comas o espacios en blanco. El carácter % se puede usar como comodín para el tipo, p. ej. &#39;%var%&#39; para seleccionar actividades relacionadas con variables.
+Filtrar actividades por tipo Si una lista se proporciona como un valor único (por ejemplo, &quot;a,b,c&quot;), se dividirá por comas o espacios en blanco. Los caracteres % o * se pueden usar como comodín para el tipo, p. ej. &#39;%var%&#39; para seleccionar actividades relacionadas con variables.
 
 - Predeterminado: `[]`
 - Requiere un valor
 
 ### `--exclude-type`, `-x`
 
-Excluir actividades por tipo. Si una lista se proporciona como un valor único (por ejemplo, &quot;a,b,c&quot;), se divide por comas o espacios en blanco. El carácter % se puede utilizar como comodín para excluir tipos.
+Excluir actividades por tipo. Si una lista se proporciona como un valor único (por ejemplo, &quot;a,b,c&quot;), se divide por comas o espacios en blanco. Los caracteres % o * se pueden usar como comodín para excluir tipos.
 
 - Predeterminado: `[]`
 - Requiere un valor
@@ -1404,7 +770,7 @@ El formato de salida: tabla, csv, tsv o sin formato
 
 ### `--columns`, `-c`
 
-Columnas para mostrar. Columnas disponibles: id*, created*, description*, progress*, state*, result*, completed, environment, type (* = columnas predeterminadas). El carácter &quot;+&quot; se puede utilizar como marcador de posición para las columnas predeterminadas. Si una lista se proporciona como un valor único (por ejemplo, &quot;a,b,c&quot;), se divide por comas o espacios en blanco.
+Columnas para mostrar. Columnas disponibles: id*, created*, description*, progress*, state*, result*, completed, environment, type (* = columnas predeterminadas). El carácter &quot;+&quot; se puede utilizar como marcador de posición para las columnas predeterminadas. Los caracteres % o * se pueden usar como comodín. Si una lista se proporciona como un valor único (por ejemplo, &quot;a,b,c&quot;), se divide por comas o espacios en blanco.
 
 - Predeterminado: `[]`
 - Requiere un valor
@@ -1426,12 +792,6 @@ El formato de fecha (como una cadena de formato de fecha PHP)
 ### `--project`, `-p`
 
 El ID o la URL del proyecto
-
-- Requiere un valor
-
-### `--host`
-
-Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -1476,34 +836,6 @@ No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equiva
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 
 ## `activity:log`
 
@@ -1535,14 +867,14 @@ Mostrar una marca de tiempo junto a cada mensaje
 
 ### `--type`
 
-Filtre por tipo (al seleccionar una actividad predeterminada). Si una lista se proporciona como un valor único (por ejemplo, &quot;a,b,c&quot;), se divide por comas o espacios en blanco. El carácter % se puede usar como comodín para el tipo, p. ej. &#39;%var%&#39; para seleccionar actividades relacionadas con variables.
+Filtre por tipo (al seleccionar una actividad predeterminada). Si una lista se proporciona como un valor único (por ejemplo, &quot;a,b,c&quot;), se divide por comas o espacios en blanco. Los caracteres % o * se pueden usar como comodín para el tipo, p. ej. &#39;%var%&#39; para seleccionar actividades relacionadas con variables.
 
 - Predeterminado: `[]`
 - Requiere un valor
 
 ### `--exclude-type`
 
-Excluir por tipo (al seleccionar una actividad predeterminada). Si una lista se proporciona como un valor único (por ejemplo, &quot;a,b,c&quot;), se divide por comas o espacios en blanco. El carácter % se puede utilizar como comodín para excluir tipos.
+Excluir por tipo (al seleccionar una actividad predeterminada). Si una lista se proporciona como un valor único (por ejemplo, &quot;a,b,c&quot;), se divide por comas o espacios en blanco. Los caracteres % o * se pueden usar como comodín para excluir tipos.
 
 - Predeterminado: `[]`
 - Requiere un valor
@@ -1587,12 +919,6 @@ El ID o la URL del proyecto
 
 - Requiere un valor
 
-### `--host`
-
-Opción obsoleta, ya no se utiliza
-
-- Requiere un valor
-
 ### `--environment`, `-e`
 
 El ID de entorno
@@ -1634,172 +960,6 @@ No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equiva
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
-
-## `api:curl`
-
-Ejecute una solicitud de cURL autenticada en la API de Magento Cloud
-
-```bash
-magento-cloud api:curl [-X|--request REQUEST] [-d|--data DATA] [--json JSON] [-i|--include] [-I|--head] [--disable-compression] [--enable-glob] [-f|--fail] [-H|--header HEADER] [--] [<path>]
-```
-
-
-### `path`
-
-La ruta de API
-
-
-### `--request`, `-X`
-
-El método de solicitud que se va a utilizar
-
-- Requiere un valor
-
-### `--data`, `-d`
-
-Datos para enviar
-
-- Requiere un valor
-
-### `--json`
-
-Datos JSON para enviar
-
-- Requiere un valor
-
-### `--include`, `-i`
-
-Incluir encabezados en la salida
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--head`, `-I`
-
-Recuperar solo encabezados
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--disable-compression`
-
-No utilice el indicador curl —compressed
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--enable-glob`
-
-Habilitar globbing curl (eliminar el indicador —globoff)
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--fail`, `-f`
-
-Error sin salida en respuesta a error
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--header`, `-H`
-
-Encabezado(s) adicional(es)
-
-- Predeterminado: `[]`
-- Requiere un valor
-
-### `--help`, `-h`
-
-Mostrar este mensaje de ayuda
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar el detalle de los mensajes
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--version`, `-V`
-
-Mostrar esta versión de la aplicación
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--yes`, `-y`
-
-Responder &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-interaction`
-
-No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equivale a usar la variable de entorno: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 
 ## `app:config-get`
 
@@ -1825,12 +985,6 @@ Si se actualiza la caché
 ### `--project`, `-p`
 
 El ID o la URL del proyecto
-
-- Requiere un valor
-
-### `--host`
-
-Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -1887,46 +1041,13 @@ No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equiva
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 
 ## `app:list`
 
 Enumerar aplicaciones en el proyecto
 
 ```bash
-magento-cloud apps [--refresh] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header]
-```
-
-
-```bash
-apps
+magento-cloud app:list [--refresh] [--pipe] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header]
 ```
 
 ### `--refresh`
@@ -1936,15 +1057,16 @@ Si se actualiza la caché
 - Predeterminado: `false`
 - No acepta un valor
 
+### `--pipe`
+
+Mostrar solo una lista de nombres de aplicaciones
+
+- Predeterminado: `false`
+- No acepta un valor
+
 ### `--project`, `-p`
 
 El ID o la URL del proyecto
-
-- Requiere un valor
-
-### `--host`
-
-Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -1963,7 +1085,7 @@ El formato de salida: tabla, csv, tsv o sin formato
 
 ### `--columns`, `-c`
 
-Columnas para mostrar. Columnas disponibles: nombre*, tipo*, disco, ruta, tamaño (* = columnas predeterminadas). El carácter &quot;+&quot; se puede utilizar como marcador de posición para las columnas predeterminadas. Si una lista se proporciona como un valor único (por ejemplo, &quot;a,b,c&quot;), se divide por comas o espacios en blanco.
+Columnas para mostrar. Columnas disponibles: nombre*, tipo*, disco, ruta, tamaño (* = columnas predeterminadas). El carácter &quot;+&quot; se puede utilizar como marcador de posición para las columnas predeterminadas. Los caracteres % o * se pueden usar como comodín. Si una lista se proporciona como un valor único (por ejemplo, &quot;a,b,c&quot;), se divide por comas o espacios en blanco.
 
 - Predeterminado: `[]`
 - Requiere un valor
@@ -2006,34 +1128,6 @@ Responder &quot;sí&quot; a las preguntas de confirmación; aceptar el valor pre
 ### `--no-interaction`
 
 No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equivale a usar la variable de entorno: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -2082,46 +1176,13 @@ No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equiva
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 
 ## `auth:browser-login`
 
 Inicie sesión en Magento Cloud mediante un explorador
 
 ```bash
-magento-cloud login [-f|--force] [--browser BROWSER] [--pipe]
-```
-
-
-```bash
-login
+magento-cloud auth:browser-login [-f|--force] [--browser BROWSER] [--pipe]
 ```
 
 ### `--force`, `-f`
@@ -2179,34 +1240,6 @@ No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equiva
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 
 ## `auth:info`
 
@@ -2251,7 +1284,7 @@ El formato de salida: tabla, csv, tsv o sin formato
 
 ### `--columns`, `-c`
 
-Columnas para mostrar. Si una lista se proporciona como un valor único (por ejemplo, &quot;a,b,c&quot;), se divide por comas o espacios en blanco.
+Columnas para mostrar. Los caracteres % o * se pueden usar como comodín. Si una lista se proporciona como un valor único (por ejemplo, &quot;a,b,c&quot;), se divide por comas o espacios en blanco.
 
 - Predeterminado: `[]`
 - Requiere un valor
@@ -2298,46 +1331,13 @@ No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equiva
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 
 ## `auth:logout`
 
 Cerrar sesión en Magento Cloud
 
 ```bash
-magento-cloud logout [-a|--all] [--other]
-```
-
-
-```bash
-logout
+magento-cloud auth:logout [-a|--all] [--other]
 ```
 
 ### `--all`, `-a`
@@ -2389,197 +1389,6 @@ No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equiva
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
-
-## `auth:password-login`
-
-&lt;fg white=&quot;&quot; bg=&quot;red&quot;>[ OBSOLETO ]&lt;/> Inicie sesión en Magento Cloud con un nombre de usuario y una contraseña
-
-```bash
-magento-cloud auth:password-login
-```
-
-
-```bash
-auth:login
-```
-
-### `--help`, `-h`
-
-Mostrar este mensaje de ayuda
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar el detalle de los mensajes
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--version`, `-V`
-
-Mostrar esta versión de la aplicación
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--yes`, `-y`
-
-Responder &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-interaction`
-
-No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equivale a usar la variable de entorno: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
-
-## `auth:token`
-
-Obtenga un token de acceso de OAuth 2 para solicitudes a las API de Magento Cloud
-
-```bash
-magento-cloud auth:token [-H|--header] [-W|--no-warn]
-```
-
-### `--header`, `-H`
-
-Agregue al token el prefijo &quot;Autorización: Portador&quot; para crear un encabezado RFC 6750
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-warn`, `-W`
-
-Suprima la advertencia que se imprime de forma predeterminada en stderr. Esta opción es preferible a redirigir stderr, ya que esto ocultaría otros mensajes potencialmente útiles.
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--help`, `-h`
-
-Mostrar este mensaje de ayuda
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar el detalle de los mensajes
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--version`, `-V`
-
-Mostrar esta versión de la aplicación
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--yes`, `-y`
-
-Responder &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-interaction`
-
-No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equivale a usar la variable de entorno: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 
 ## `blackfire:setup`
 
@@ -2604,12 +1413,6 @@ El token del servidor
 ### `--project`, `-p`
 
 El ID o la URL del proyecto
-
-- Requiere un valor
-
-### `--host`
-
-Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -2658,318 +1461,6 @@ Responder &quot;sí&quot; a las preguntas de confirmación; aceptar el valor pre
 ### `--no-interaction`
 
 No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equivale a usar la variable de entorno: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
-
-## `blue-green:conclude`
-
-&lt;fg white=&quot;&quot; bg=&quot;red&quot;>[ ALFA ]&lt;/> Finalizar una implementación azul/verde
-
-```bash
-magento-cloud blue-green:conclude [-p|--project PROJECT] [-e|--environment ENVIRONMENT]
-```
-
-### `--project`, `-p`
-
-El ID o la URL del proyecto
-
-- Requiere un valor
-
-### `--host`
-
-Opción obsoleta, ya no se utiliza
-
-- Requiere un valor
-
-### `--environment`, `-e`
-
-El ID de entorno
-
-- Requiere un valor
-
-### `--help`, `-h`
-
-Mostrar este mensaje de ayuda
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar el detalle de los mensajes
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--version`, `-V`
-
-Mostrar esta versión de la aplicación
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--yes`, `-y`
-
-Responder &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-interaction`
-
-No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equivale a usar la variable de entorno: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
-
-## `blue-green:deploy`
-
-&lt;fg white=&quot;&quot; bg=&quot;red&quot;>[ ALFA ]&lt;/> Realizar una implementación azul/verde
-
-```bash
-magento-cloud blue-green:deploy [--routing-percentage ROUTING-PERCENTAGE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT]
-```
-
-### `--routing-percentage`
-
-Establecer el porcentaje de enrutamiento de la última versión
-
-- Predeterminado: `100`
-- Requiere un valor
-
-### `--project`, `-p`
-
-El ID o la URL del proyecto
-
-- Requiere un valor
-
-### `--host`
-
-Opción obsoleta, ya no se utiliza
-
-- Requiere un valor
-
-### `--environment`, `-e`
-
-El ID de entorno
-
-- Requiere un valor
-
-### `--help`, `-h`
-
-Mostrar este mensaje de ayuda
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar el detalle de los mensajes
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--version`, `-V`
-
-Mostrar esta versión de la aplicación
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--yes`, `-y`
-
-Responder &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-interaction`
-
-No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equivale a usar la variable de entorno: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
-
-## `blue-green:enable`
-
-&lt;fg white=&quot;&quot; bg=&quot;red&quot;>[ ALFA ]&lt;/> Habilitar implementaciones azules/verdes
-
-```bash
-magento-cloud blue-green:enable [-%|--routing-percentage ROUTING-PERCENTAGE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT]
-```
-
-### `--routing-percentage`, `-%`
-
-Establecer el porcentaje de enrutamiento de la última versión
-
-- Predeterminado: `100`
-- Requiere un valor
-
-### `--project`, `-p`
-
-El ID o la URL del proyecto
-
-- Requiere un valor
-
-### `--host`
-
-Opción obsoleta, ya no se utiliza
-
-- Requiere un valor
-
-### `--environment`, `-e`
-
-El ID de entorno
-
-- Requiere un valor
-
-### `--help`, `-h`
-
-Mostrar este mensaje de ayuda
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar el detalle de los mensajes
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--version`, `-V`
-
-Mostrar esta versión de la aplicación
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--yes`, `-y`
-
-Responder &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-interaction`
-
-No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equivale a usar la variable de entorno: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -3008,12 +1499,6 @@ El ID o la URL del proyecto
 
 - Requiere un valor
 
-### `--host`
-
-Opción obsoleta, ya no se utiliza
-
-- Requiere un valor
-
 ### `--no-wait`, `-W`
 
 No espere a que se complete la operación
@@ -3059,34 +1544,6 @@ Responder &quot;sí&quot; a las preguntas de confirmación; aceptar el valor pre
 ### `--no-interaction`
 
 No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equivale a usar la variable de entorno: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -3113,12 +1570,6 @@ El ID o la URL del proyecto
 
 - Requiere un valor
 
-### `--host`
-
-Opción obsoleta, ya no se utiliza
-
-- Requiere un valor
-
 ### `--no-wait`, `-W`
 
 No espere a que se complete la operación
@@ -3164,34 +1615,6 @@ Responder &quot;sí&quot; a las preguntas de confirmación; aceptar el valor pre
 ### `--no-interaction`
 
 No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equivale a usar la variable de entorno: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -3231,12 +1654,6 @@ El ID o la URL del proyecto
 
 - Requiere un valor
 
-### `--host`
-
-Opción obsoleta, ya no se utiliza
-
-- Requiere un valor
-
 ### `--help`, `-h`
 
 Mostrar este mensaje de ayuda
@@ -3272,34 +1689,6 @@ No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equiva
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 
 ## `certificate:list`
 
@@ -3307,16 +1696,6 @@ Enumerar certificados de proyecto
 
 ```bash
 magento-cloud certificate:list [--domain DOMAIN] [--exclude-domain EXCLUDE-DOMAIN] [--issuer ISSUER] [--only-auto] [--no-auto] [--ignore-expiry] [--only-expired] [--no-expired] [--pipe-domains] [--date-fmt DATE-FMT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT]
-```
-
-
-```bash
-certificates
-```
-
-
-```bash
-certs
 ```
 
 ### `--domain`
@@ -3395,7 +1774,7 @@ El formato de salida: tabla, csv, tsv o sin formato
 
 ### `--columns`, `-c`
 
-Columnas para mostrar. Columnas disponibles: creado, dominios, caduca, id, emisor. Si una lista se proporciona como un valor único (por ejemplo, &quot;a,b,c&quot;), se divide por comas o espacios en blanco.
+Columnas para mostrar. Columnas disponibles: creado, dominios, caduca, id, emisor. Los caracteres % o * se pueden usar como comodín. Si una lista se proporciona como un valor único (por ejemplo, &quot;a,b,c&quot;), se divide por comas o espacios en blanco.
 
 - Predeterminado: `[]`
 - Requiere un valor
@@ -3410,12 +1789,6 @@ No generar el encabezado de tabla
 ### `--project`, `-p`
 
 El ID o la URL del proyecto
-
-- Requiere un valor
-
-### `--host`
-
-Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -3450,34 +1823,6 @@ Responder &quot;sí&quot; a las preguntas de confirmación; aceptar el valor pre
 ### `--no-interaction`
 
 No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equivale a usar la variable de entorno: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -3511,12 +1856,6 @@ El ID o la URL del proyecto
 
 - Requiere un valor
 
-### `--host`
-
-Opción obsoleta, ya no se utiliza
-
-- Requiere un valor
-
 ### `--environment`, `-e`
 
 El ID de entorno
@@ -3529,26 +1868,6 @@ El formato de fecha (como una cadena de formato de fecha PHP)
 
 - Predeterminado: `c`
 - Requiere un valor
-
-### `--format`
-
-OBSOLETO
-
-- Requiere un valor
-
-### `--columns`
-
-OBSOLETO
-
-- Predeterminado: `[]`
-- Requiere un valor
-
-### `--no-header`
-
-OBSOLETO
-
-- Predeterminado: `false`
-- No acepta un valor
 
 ### `--help`, `-h`
 
@@ -3585,46 +1904,13 @@ No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equiva
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 
 ## `commit:list`
 
 Enumerar confirmaciones
 
 ```bash
-magento-cloud commits [--limit LIMIT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [--] [<commit>]
-```
-
-
-```bash
-commits
+magento-cloud commit:list [--limit LIMIT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [--] [<commit>]
 ```
 
 
@@ -3646,12 +1932,6 @@ El ID o la URL del proyecto
 
 - Requiere un valor
 
-### `--host`
-
-Opción obsoleta, ya no se utiliza
-
-- Requiere un valor
-
 ### `--environment`, `-e`
 
 El ID de entorno
@@ -3667,7 +1947,7 @@ El formato de salida: tabla, csv, tsv o sin formato
 
 ### `--columns`, `-c`
 
-Columnas para mostrar. Columnas disponibles: autor, fecha, sha, resumen. Si una lista se proporciona como un valor único (por ejemplo, &quot;a,b,c&quot;), se divide por comas o espacios en blanco.
+Columnas para mostrar. Columnas disponibles: autor, fecha, sha, resumen. Los caracteres % o * se pueden usar como comodín. Si una lista se proporciona como un valor único (por ejemplo, &quot;a,b,c&quot;), se divide por comas o espacios en blanco.
 
 - Predeterminado: `[]`
 - Requiere un valor
@@ -3721,34 +2001,6 @@ No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equiva
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 
 ## `db:dump`
 
@@ -3756,16 +2008,6 @@ Crear un volcado local de la base de datos remota
 
 ```bash
 magento-cloud db:dump [--schema SCHEMA] [-f|--file FILE] [-d|--directory DIRECTORY] [-z|--gzip] [-t|--timestamp] [-o|--stdout] [--table TABLE] [--exclude-table EXCLUDE-TABLE] [--schema-only] [--charset CHARSET] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE]
-```
-
-
-```bash
-sql-dump
-```
-
-
-```bash
-environment:sql-dump
 ```
 
 ### `--schema`
@@ -3840,12 +2082,6 @@ El ID o la URL del proyecto
 
 - Requiere un valor
 
-### `--host`
-
-Opción obsoleta, ya no se utiliza
-
-- Requiere un valor
-
 ### `--environment`, `-e`
 
 El ID de entorno
@@ -3901,34 +2137,6 @@ Responder &quot;sí&quot; a las preguntas de confirmación; aceptar el valor pre
 ### `--no-interaction`
 
 No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equivale a usar la variable de entorno: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -3962,12 +2170,6 @@ El ID o la URL del proyecto
 
 - Requiere un valor
 
-### `--host`
-
-Opción obsoleta, ya no se utiliza
-
-- Requiere un valor
-
 ### `--environment`, `-e`
 
 El ID de entorno
@@ -3995,7 +2197,7 @@ El formato de salida: tabla, csv, tsv o sin formato
 
 ### `--columns`, `-c`
 
-Columnas para mostrar. Columnas disponibles: max, percent_used, used. Si una lista se proporciona como un valor único (por ejemplo, &quot;a,b,c&quot;), se divide por comas o espacios en blanco.
+Columnas para mostrar. Columnas disponibles: max, percent_used, used. Los caracteres % o * se pueden usar como comodín. Si una lista se proporciona como un valor único (por ejemplo, &quot;a,b,c&quot;), se divide por comas o espacios en blanco.
 
 - Predeterminado: `[]`
 - Requiere un valor
@@ -4048,51 +2250,13 @@ No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equiva
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 
 ## `db:sql`
 
 Ejecutar SQL en la base de datos remota
 
 ```bash
-magento-cloud sql [--raw] [--schema SCHEMA] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [--] [<query>]
-```
-
-
-```bash
-sql
-```
-
-
-```bash
-environment:sql
+magento-cloud db:sql [--raw] [--schema SCHEMA] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [--] [<query>]
 ```
 
 
@@ -4120,12 +2284,6 @@ El ID o la URL del proyecto
 
 - Requiere un valor
 
-### `--host`
-
-Opción obsoleta, ya no se utiliza
-
-- Requiere un valor
-
 ### `--environment`, `-e`
 
 El ID de entorno
@@ -4185,41 +2343,13 @@ No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equiva
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 
 ## `domain:add`
 
 Añadir un nuevo dominio al proyecto
 
 ```bash
-magento-cloud domain:add [--cert CERT] [--key KEY] [--chain CHAIN] [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] <name>
+magento-cloud domain:add [--cert CERT] [--key KEY] [--chain CHAIN] [-r|--replace REPLACE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <name>
 ```
 
 
@@ -4248,15 +2378,21 @@ Ruta de acceso al archivo o archivos de cadena de certificados para el certifica
 - Predeterminado: `[]`
 - Requiere un valor
 
+### `--replace`, `-r`
+
+El dominio de producción al que este reemplaza en las rutas del entorno (requerido para los dominios de entorno que no son de producción)
+
+- Requiere un valor
+
 ### `--project`, `-p`
 
 El ID o la URL del proyecto
 
 - Requiere un valor
 
-### `--host`
+### `--environment`, `-e`
 
-Opción obsoleta, ya no se utiliza
+El ID de entorno
 
 - Requiere un valor
 
@@ -4309,41 +2445,13 @@ No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equiva
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 
 ## `domain:delete`
 
 Eliminar un dominio del proyecto
 
 ```bash
-magento-cloud domain:delete [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] <name>
+magento-cloud domain:delete [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <name>
 ```
 
 
@@ -4359,9 +2467,9 @@ El ID o la URL del proyecto
 
 - Requiere un valor
 
-### `--host`
+### `--environment`, `-e`
 
-Opción obsoleta, ya no se utiliza
+El ID de entorno
 
 - Requiere un valor
 
@@ -4414,41 +2522,13 @@ No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equiva
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 
 ## `domain:get`
 
 Mostrar información detallada de un dominio
 
 ```bash
-magento-cloud domain:get [-P|--property PROPERTY] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [-p|--project PROJECT] [--] [<name>]
+magento-cloud domain:get [-P|--property PROPERTY] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] [<name>]
 ```
 
 
@@ -4472,7 +2552,7 @@ El formato de salida: tabla, csv, tsv o sin formato
 
 ### `--columns`, `-c`
 
-Columnas para mostrar. Si una lista se proporciona como un valor único (por ejemplo, &quot;a,b,c&quot;), se divide por comas o espacios en blanco.
+Columnas para mostrar. Los caracteres % o * se pueden usar como comodín. Si una lista se proporciona como un valor único (por ejemplo, &quot;a,b,c&quot;), se divide por comas o espacios en blanco.
 
 - Predeterminado: `[]`
 - Requiere un valor
@@ -4497,9 +2577,9 @@ El ID o la URL del proyecto
 
 - Requiere un valor
 
-### `--host`
+### `--environment`, `-e`
 
-Opción obsoleta, ya no se utiliza
+El ID de entorno
 
 - Requiere un valor
 
@@ -4538,46 +2618,13 @@ No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equiva
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 
 ## `domain:list`
 
 Obtener una lista de todos los dominios
 
 ```bash
-magento-cloud domains [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT]
-```
-
-
-```bash
-domains
+magento-cloud domain:list [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT] [-e|--environment ENVIRONMENT]
 ```
 
 ### `--format`
@@ -4589,7 +2636,7 @@ El formato de salida: tabla, csv, tsv o sin formato
 
 ### `--columns`, `-c`
 
-Columnas para mostrar. Columnas disponibles: name*, ssl*, created_at*, updated_at (* = columnas predeterminadas). El carácter &quot;+&quot; se puede utilizar como marcador de posición para las columnas predeterminadas. Si una lista se proporciona como un valor único (por ejemplo, &quot;a,b,c&quot;), se divide por comas o espacios en blanco.
+Columnas para mostrar. Columnas disponibles: name*, ssl*, created_at*, registered_name, replace_for, type, updated_at (* = columnas predeterminadas). El carácter &quot;+&quot; se puede utilizar como marcador de posición para las columnas predeterminadas. Los caracteres % o * se pueden usar como comodín. Si una lista se proporciona como un valor único (por ejemplo, &quot;a,b,c&quot;), se divide por comas o espacios en blanco.
 
 - Predeterminado: `[]`
 - Requiere un valor
@@ -4607,9 +2654,9 @@ El ID o la URL del proyecto
 
 - Requiere un valor
 
-### `--host`
+### `--environment`, `-e`
 
-Opción obsoleta, ya no se utiliza
+El ID de entorno
 
 - Requiere un valor
 
@@ -4648,41 +2695,13 @@ No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equiva
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 
 ## `domain:update`
 
 Actualización de un dominio
 
 ```bash
-magento-cloud domain:update [--cert CERT] [--key KEY] [--chain CHAIN] [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] <name>
+magento-cloud domain:update [--cert CERT] [--key KEY] [--chain CHAIN] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <name>
 ```
 
 
@@ -4717,9 +2736,9 @@ El ID o la URL del proyecto
 
 - Requiere un valor
 
-### `--host`
+### `--environment`, `-e`
 
-Opción obsoleta, ya no se utiliza
+El ID de entorno
 
 - Requiere un valor
 
@@ -4768,34 +2787,6 @@ Responder &quot;sí&quot; a las preguntas de confirmación; aceptar el valor pre
 ### `--no-interaction`
 
 No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equivale a usar la variable de entorno: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -4830,12 +2821,6 @@ El ID o la URL del proyecto
 
 - Requiere un valor
 
-### `--host`
-
-Opción obsoleta, ya no se utiliza
-
-- Requiere un valor
-
 ### `--environment`, `-e`
 
 El ID de entorno
@@ -4891,46 +2876,13 @@ No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equiva
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 
 ## `environment:branch`
 
 Rama de un entorno
 
 ```bash
-magento-cloud branch [--title TITLE] [--type TYPE] [--force] [--no-clone-parent] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [-i|--identity-file IDENTITY-FILE] [--] [<id>] [<parent>]
-```
-
-
-```bash
-branch
+magento-cloud environment:branch [--title TITLE] [--type TYPE] [--force] [--no-clone-parent] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [-i|--identity-file IDENTITY-FILE] [--] [<id>] [<parent>]
 ```
 
 
@@ -4976,12 +2928,6 @@ El ID o la URL del proyecto
 
 - Requiere un valor
 
-### `--host`
-
-Opción obsoleta, ya no se utiliza
-
-- Requiere un valor
-
 ### `--environment`, `-e`
 
 El ID de entorno
@@ -5043,46 +2989,13 @@ No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equiva
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 
 ## `environment:checkout`
 
 Desproteger un entorno
 
 ```bash
-magento-cloud checkout [-i|--identity-file IDENTITY-FILE] [--] [<id>]
-```
-
-
-```bash
-checkout
+magento-cloud environment:checkout [-i|--identity-file IDENTITY-FILE] [--] [<id>]
 ```
 
 
@@ -5132,190 +3045,6 @@ No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equiva
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
-
-## `environment:curl`
-
-Ejecutar una solicitud cURL autenticada en la API de un entorno
-
-```bash
-magento-cloud environment:curl [-X|--request REQUEST] [-d|--data DATA] [--json JSON] [-i|--include] [-I|--head] [--disable-compression] [--enable-glob] [-f|--fail] [-H|--header HEADER] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] [<path>]
-```
-
-
-### `path`
-
-La ruta de API
-
-
-### `--request`, `-X`
-
-El método de solicitud que se va a utilizar
-
-- Requiere un valor
-
-### `--data`, `-d`
-
-Datos para enviar
-
-- Requiere un valor
-
-### `--json`
-
-Datos JSON para enviar
-
-- Requiere un valor
-
-### `--include`, `-i`
-
-Incluir encabezados en la salida
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--head`, `-I`
-
-Recuperar solo encabezados
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--disable-compression`
-
-No utilice el indicador curl —compressed
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--enable-glob`
-
-Habilitar globbing curl (eliminar el indicador —globoff)
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--fail`, `-f`
-
-Error sin salida en respuesta a error
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--header`, `-H`
-
-Encabezado(s) adicional(es)
-
-- Predeterminado: `[]`
-- Requiere un valor
-
-### `--project`, `-p`
-
-El ID o la URL del proyecto
-
-- Requiere un valor
-
-### `--host`
-
-Opción obsoleta, ya no se utiliza
-
-- Requiere un valor
-
-### `--environment`, `-e`
-
-El ID de entorno
-
-- Requiere un valor
-
-### `--help`, `-h`
-
-Mostrar este mensaje de ayuda
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar el detalle de los mensajes
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--version`, `-V`
-
-Mostrar esta versión de la aplicación
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--yes`, `-y`
-
-Responder &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-interaction`
-
-No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equivale a usar la variable de entorno: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 
 ## `environment:delete`
 
@@ -5326,14 +3055,9 @@ magento-cloud environment:delete [--delete-branch] [--no-delete-branch] [--type 
 ```
 
 
-```bash
-environment:deactivate
-```
-
-
 ### `environment`
 
-Los entornos que se van a eliminar. El carácter % puede utilizarse como comodín. Si una lista se proporciona como un valor único (por ejemplo, &quot;a,b,c&quot;), se divide por comas o espacios en blanco.
+Los entornos que se van a eliminar. Los caracteres % o * se pueden usar como comodín. Si una lista se proporciona como un valor único (por ejemplo, &quot;a,b,c&quot;), se divide por comas o espacios en blanco.
 
 - Predeterminado: `[]`
 
@@ -5369,7 +3093,7 @@ Eliminar solo los entornos de un tipo específico Si una lista se proporciona co
 
 ### `--exclude`
 
-Entornos que no se van a eliminar. El carácter % puede utilizarse como comodín. Si una lista se proporciona como un valor único (por ejemplo, &quot;a,b,c&quot;), se divide por comas o espacios en blanco.
+Entornos que no se van a eliminar. Los caracteres % o * se pueden usar como comodín. Si una lista se proporciona como un valor único (por ejemplo, &quot;a,b,c&quot;), se divide por comas o espacios en blanco.
 
 - Predeterminado: `[]`
 - Requiere un valor
@@ -5401,12 +3125,6 @@ El ID o la URL del proyecto
 
 - Requiere un valor
 
-### `--host`
-
-Opción obsoleta, ya no se utiliza
-
-- Requiere un valor
-
 ### `--environment`, `-e`
 
 El ID de entorno
@@ -5462,46 +3180,13 @@ No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equiva
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 
 ## `environment:http-access`
 
 Actualizar la configuración de acceso HTTP de un entorno
 
 ```bash
-magento-cloud httpaccess [--access ACCESS] [--auth AUTH] [--enabled ENABLED] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait]
-```
-
-
-```bash
-httpaccess
+magento-cloud environment:http-access [--access ACCESS] [--auth AUTH] [--enabled ENABLED] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait]
 ```
 
 ### `--access`
@@ -5530,12 +3215,6 @@ El ID o la URL del proyecto
 
 - Requiere un valor
 
-### `--host`
-
-Opción obsoleta, ya no se utiliza
-
-- Requiere un valor
-
 ### `--environment`, `-e`
 
 El ID de entorno
@@ -5591,34 +3270,6 @@ No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equiva
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 
 ## `environment:info`
 
@@ -5626,11 +3277,6 @@ Leer o establecer propiedades para un entorno
 
 ```bash
 magento-cloud environment:info [--refresh] [--date-fmt DATE-FMT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<property>] [<value>]
-```
-
-
-```bash
-environment:metadata
 ```
 
 
@@ -5667,7 +3313,7 @@ El formato de salida: tabla, csv, tsv o sin formato
 
 ### `--columns`, `-c`
 
-Columnas para mostrar. Si una lista se proporciona como un valor único (por ejemplo, &quot;a,b,c&quot;), se divide por comas o espacios en blanco.
+Columnas para mostrar. Los caracteres % o * se pueden usar como comodín. Si una lista se proporciona como un valor único (por ejemplo, &quot;a,b,c&quot;), se divide por comas o espacios en blanco.
 
 - Predeterminado: `[]`
 - Requiere un valor
@@ -5682,12 +3328,6 @@ No generar el encabezado de tabla
 ### `--project`, `-p`
 
 El ID o la URL del proyecto
-
-- Requiere un valor
-
-### `--host`
-
-Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -5742,34 +3382,6 @@ Responder &quot;sí&quot; a las preguntas de confirmación; aceptar el valor pre
 ### `--no-interaction`
 
 No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equivale a usar la variable de entorno: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -5802,12 +3414,6 @@ El ID o la URL del proyecto
 
 - Requiere un valor
 
-### `--host`
-
-Opción obsoleta, ya no se utiliza
-
-- Requiere un valor
-
 ### `--environment`, `-e`
 
 El ID de entorno
@@ -5863,34 +3469,6 @@ No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equiva
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 
 ## `environment:list`
 
@@ -5898,16 +3476,6 @@ Obtener una lista de entornos
 
 ```bash
 magento-cloud environment:list [-I|--no-inactive] [--pipe] [--refresh REFRESH] [--sort SORT] [--reverse] [--type TYPE] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT]
-```
-
-
-```bash
-environments
-```
-
-
-```bash
-env
 ```
 
 ### `--no-inactive`, `-I`
@@ -5961,7 +3529,7 @@ El formato de salida: tabla, csv, tsv o sin formato
 
 ### `--columns`, `-c`
 
-Columnas para mostrar. Columnas disponibles: id*, title*, status*, type*, created, machine_name, updated (* = columnas predeterminadas). El carácter &quot;+&quot; se puede utilizar como marcador de posición para las columnas predeterminadas. Si una lista se proporciona como un valor único (por ejemplo, &quot;a,b,c&quot;), se divide por comas o espacios en blanco.
+Columnas para mostrar. Columnas disponibles: id*, title*, status*, type*, created, machine_name, updated (* = columnas predeterminadas). El carácter &quot;+&quot; se puede utilizar como marcador de posición para las columnas predeterminadas. Los caracteres % o * se pueden usar como comodín. Si una lista se proporciona como un valor único (por ejemplo, &quot;a,b,c&quot;), se divide por comas o espacios en blanco.
 
 - Predeterminado: `[]`
 - Requiere un valor
@@ -5976,12 +3544,6 @@ No generar el encabezado de tabla
 ### `--project`, `-p`
 
 El ID o la URL del proyecto
-
-- Requiere un valor
-
-### `--host`
-
-Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -6020,51 +3582,13 @@ No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equiva
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 
 ## `environment:logs`
 
 Leer los registros de un entorno
 
 ```bash
-magento-cloud log [--lines LINES] [--tail] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE] [--] [<type>]
-```
-
-
-```bash
-log
-```
-
-
-```bash
-logs
+magento-cloud environment:logs [--lines LINES] [--tail] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE] [--] [<type>]
 ```
 
 
@@ -6090,12 +3614,6 @@ Seguir continuamente el registro
 ### `--project`, `-p`
 
 El ID o la URL del proyecto
-
-- Requiere un valor
-
-### `--host`
-
-Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -6158,46 +3676,13 @@ No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equiva
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 
 ## `environment:merge`
 
 Combinar un entorno
 
 ```bash
-magento-cloud merge [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<environment>]
-```
-
-
-```bash
-merge
+magento-cloud environment:merge [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<environment>]
 ```
 
 
@@ -6209,12 +3694,6 @@ El entorno para combinar
 ### `--project`, `-p`
 
 El ID o la URL del proyecto
-
-- Requiere un valor
-
-### `--host`
-
-Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -6273,46 +3752,13 @@ No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equiva
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 
 ## `environment:push`
 
 Insertar código en un entorno
 
 ```bash
-magento-cloud push [--target TARGET] [-f|--force] [--force-with-lease] [-u|--set-upstream] [--activate] [--parent PARENT] [--type TYPE] [--no-clone-parent] [-W|--no-wait] [--wait] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-i|--identity-file IDENTITY-FILE] [--] [<source>]
-```
-
-
-```bash
-push
+magento-cloud environment:push [--target TARGET] [-f|--force] [--force-with-lease] [-u|--set-upstream] [--activate] [--parent PARENT] [--type TYPE] [--no-clone-parent] [-W|--no-wait] [--wait] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-i|--identity-file IDENTITY-FILE] [--] [<source>]
 ```
 
 
@@ -6357,13 +3803,6 @@ Activar el entorno antes de insertar
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--branch`
-
-DEPRECATED: alias de —activate
-
-- Predeterminado: `false`
-- No acepta un valor
-
 ### `--parent`
 
 Establecer el nuevo entorno principal (solo se usa con —activate)
@@ -6403,12 +3842,6 @@ El ID o la URL del proyecto
 
 - Requiere un valor
 
-### `--host`
-
-Opción obsoleta, ya no se utiliza
-
-- Requiere un valor
-
 ### `--environment`, `-e`
 
 El ID de entorno
@@ -6456,57 +3889,18 @@ No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equiva
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 
 ## `environment:redeploy`
 
 Volver a implementar un entorno
 
 ```bash
-magento-cloud redeploy [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait]
-```
-
-
-```bash
-redeploy
+magento-cloud environment:redeploy [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait]
 ```
 
 ### `--project`, `-p`
 
 El ID o la URL del proyecto
-
-- Requiere un valor
-
-### `--host`
-
-Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -6565,46 +3959,13 @@ No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equiva
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 
 ## `environment:relationships`
 
 Mostrar las relaciones de un entorno
 
 ```bash
-magento-cloud relationships [-P|--property PROPERTY] [--refresh] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [-i|--identity-file IDENTITY-FILE] [--] [<environment>]
-```
-
-
-```bash
-relationships
+magento-cloud environment:relationships [-P|--property PROPERTY] [--refresh] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [-i|--identity-file IDENTITY-FILE] [--] [<environment>]
 ```
 
 
@@ -6629,12 +3990,6 @@ Si se actualizan las relaciones
 ### `--project`, `-p`
 
 El ID o la URL del proyecto
-
-- Requiere un valor
-
-### `--host`
-
-Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -6691,46 +4046,13 @@ No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equiva
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 
 ## `environment:scp`
 
-Copiar archivos desde y hacia el entorno actual mediante scp
+Copiar archivos a y desde un entorno mediante scp
 
 ```bash
-magento-cloud scp [-r|--recursive] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE] [-i|--identity-file IDENTITY-FILE] [--] [<files>]...
-```
-
-
-```bash
-scp
+magento-cloud environment:scp [-r|--recursive] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE] [-i|--identity-file IDENTITY-FILE] [--] [<files>]...
 ```
 
 
@@ -6752,12 +4074,6 @@ Copiar directorios completos de forma recursiva
 ### `--project`, `-p`
 
 El ID o la URL del proyecto
-
-- Requiere un valor
-
-### `--host`
-
-Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -6826,130 +4142,13 @@ No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equiva
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
-
-## `environment:set-remote`
-
-Configurar el entorno remoto para que se asigne a una rama
-
-```bash
-magento-cloud environment:set-remote <environment> [<branch>]
-```
-
-
-### `environment`
-
-El nombre de la máquina del entorno. Establezca el valor en 0 para eliminar la asignación de una rama
-
-- Requerido
-
-### `branch`
-
-La rama Git que se va a asignar (el valor predeterminado es la rama actual)
-
-
-### `--help`, `-h`
-
-Mostrar este mensaje de ayuda
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar el detalle de los mensajes
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--version`, `-V`
-
-Mostrar esta versión de la aplicación
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--yes`, `-y`
-
-Responder &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-interaction`
-
-No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equivale a usar la variable de entorno: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 
 ## `environment:ssh`
 
 SSH al entorno actual
 
 ```bash
-magento-cloud ssh [--pipe] [--all] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE] [-i|--identity-file IDENTITY-FILE] [--] [<cmd>]...
-```
-
-
-```bash
-ssh
+magento-cloud environment:ssh [--pipe] [--all] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE] [-i|--identity-file IDENTITY-FILE] [--] [<cmd>]...
 ```
 
 
@@ -6981,12 +4180,6 @@ El ID o la URL del proyecto
 
 - Requiere un valor
 
-### `--host`
-
-Opción obsoleta, ya no se utiliza
-
-- Requiere un valor
-
 ### `--environment`, `-e`
 
 El ID de entorno
@@ -7052,46 +4245,13 @@ No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equiva
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 
 ## `environment:synchronize`
 
 Sincronizar el código o los datos de un entorno desde su elemento principal
 
 ```bash
-magento-cloud sync [--rebase] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<synchronize>]...
-```
-
-
-```bash
-sync
+magento-cloud environment:synchronize [--rebase] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<synchronize>]...
 ```
 
 
@@ -7113,12 +4273,6 @@ Sincronizar el código cambiando el nombre en lugar de combinarlo
 ### `--project`, `-p`
 
 El ID o la URL del proyecto
-
-- Requiere un valor
-
-### `--host`
-
-Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -7177,46 +4331,13 @@ No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equiva
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 
 ## `environment:url`
 
 Obtener las direcciones URL públicas de un entorno
 
 ```bash
-magento-cloud url [-1|--primary] [--browser BROWSER] [--pipe] [-p|--project PROJECT] [-e|--environment ENVIRONMENT]
-```
-
-
-```bash
-url
+magento-cloud environment:url [-1|--primary] [--browser BROWSER] [--pipe] [-p|--project PROJECT] [-e|--environment ENVIRONMENT]
 ```
 
 ### `--primary`, `-1`
@@ -7242,12 +4363,6 @@ Envíe la URL a stdout.
 ### `--project`, `-p`
 
 El ID o la URL del proyecto
-
-- Requiere un valor
-
-### `--host`
-
-Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -7292,46 +4407,13 @@ No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equiva
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 
 ## `environment:xdebug`
 
 Abrir un túnel a Xdebug en el entorno
 
 ```bash
-magento-cloud xdebug [--port PORT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE] [-i|--identity-file IDENTITY-FILE]
-```
-
-
-```bash
-xdebug
+magento-cloud environment:xdebug [--port PORT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE] [-i|--identity-file IDENTITY-FILE]
 ```
 
 ### `--port`
@@ -7344,12 +4426,6 @@ El puerto local
 ### `--project`, `-p`
 
 El ID o la URL del proyecto
-
-- Requiere un valor
-
-### `--host`
-
-Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -7414,34 +4490,6 @@ Responder &quot;sí&quot; a las preguntas de confirmación; aceptar el valor pre
 ### `--no-interaction`
 
 No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equivale a usar la variable de entorno: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -7478,12 +4526,6 @@ El ID o la URL del proyecto
 
 - Requiere un valor
 
-### `--host`
-
-Opción obsoleta, ya no se utiliza
-
-- Requiere un valor
-
 ### `--environment`, `-e`
 
 [Opción obsoleta, no utilizada]
@@ -7499,7 +4541,7 @@ El formato de salida: tabla, csv, tsv o sin formato
 
 ### `--columns`, `-c`
 
-Columnas para mostrar. Si una lista se proporciona como un valor único (por ejemplo, &quot;a,b,c&quot;), se divide por comas o espacios en blanco.
+Columnas para mostrar. Los caracteres % o * se pueden usar como comodín. Si una lista se proporciona como un valor único (por ejemplo, &quot;a,b,c&quot;), se divide por comas o espacios en blanco.
 
 - Predeterminado: `[]`
 - Requiere un valor
@@ -7553,51 +4595,13 @@ No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equiva
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 
 ## `integration:activity:list`
 
 Obtener una lista de actividades para una integración
 
 ```bash
-magento-cloud i:act [--type TYPE] [-x|--exclude-type EXCLUDE-TYPE] [--limit LIMIT] [--start START] [--state STATE] [--result RESULT] [-i|--incomplete] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] [<id>]
-```
-
-
-```bash
-i:act
-```
-
-
-```bash
-integration:activities
+magento-cloud integration:activity:list [--type TYPE] [-x|--exclude-type EXCLUDE-TYPE] [--limit LIMIT] [--start START] [--state STATE] [--result RESULT] [-i|--incomplete] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] [<id>]
 ```
 
 
@@ -7615,7 +4619,7 @@ Filtrar actividades por tipo. Si una lista se proporciona como un valor único (
 
 ### `--exclude-type`, `-x`
 
-Excluir actividades por tipo. Si una lista se proporciona como un valor único (por ejemplo, &quot;a,b,c&quot;), se divide por comas o espacios en blanco. El carácter % se puede utilizar como comodín para excluir tipos.
+Excluir actividades por tipo. Si una lista se proporciona como un valor único (por ejemplo, &quot;a,b,c&quot;), se divide por comas o espacios en blanco. Los caracteres % o * se pueden usar como comodín para excluir tipos.
 
 - Predeterminado: `[]`
 - Requiere un valor
@@ -7662,7 +4666,7 @@ El formato de salida: tabla, csv, tsv o sin formato
 
 ### `--columns`, `-c`
 
-Columnas para mostrar. Columnas disponibles: id*, created*, description*, type*, state*, result*, completed (* = columnas predeterminadas). El carácter &quot;+&quot; se puede utilizar como marcador de posición para las columnas predeterminadas. Si una lista se proporciona como un valor único (por ejemplo, &quot;a,b,c&quot;), se divide por comas o espacios en blanco.
+Columnas para mostrar. Columnas disponibles: id*, created*, description*, type*, state*, result*, completed (* = columnas predeterminadas). El carácter &quot;+&quot; se puede utilizar como marcador de posición para las columnas predeterminadas. Los caracteres % o * se pueden usar como comodín. Si una lista se proporciona como un valor único (por ejemplo, &quot;a,b,c&quot;), se divide por comas o espacios en blanco.
 
 - Predeterminado: `[]`
 - Requiere un valor
@@ -7684,12 +4688,6 @@ El formato de fecha (como una cadena de formato de fecha PHP)
 ### `--project`, `-p`
 
 El ID o la URL del proyecto
-
-- Requiere un valor
-
-### `--host`
-
-Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -7730,34 +4728,6 @@ Responder &quot;sí&quot; a las preguntas de confirmación; aceptar el valor pre
 ### `--no-interaction`
 
 No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equivale a usar la variable de entorno: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -7802,12 +4772,6 @@ El ID o la URL del proyecto
 
 - Requiere un valor
 
-### `--host`
-
-Opción obsoleta, ya no se utiliza
-
-- Requiere un valor
-
 ### `--environment`, `-e`
 
 [Opción obsoleta, no utilizada]
@@ -7849,52 +4813,30 @@ No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equiva
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 
 ## `integration:add`
 
 Añadir una integración al proyecto
 
 ```bash
-magento-cloud integration:add [--type TYPE] [--base-url BASE-URL] [--username USERNAME] [--token TOKEN] [--key KEY] [--secret SECRET] [--license-key LICENSE-KEY] [--server-project SERVER-PROJECT] [--repository REPOSITORY] [--build-merge-requests BUILD-MERGE-REQUESTS] [--build-pull-requests BUILD-PULL-REQUESTS] [--build-draft-pull-requests BUILD-DRAFT-PULL-REQUESTS] [--build-pull-requests-post-merge BUILD-PULL-REQUESTS-POST-MERGE] [--build-wip-merge-requests BUILD-WIP-MERGE-REQUESTS] [--merge-requests-clone-parent-data MERGE-REQUESTS-CLONE-PARENT-DATA] [--pull-requests-clone-parent-data PULL-REQUESTS-CLONE-PARENT-DATA] [--resync-pull-requests RESYNC-PULL-REQUESTS] [--fetch-branches FETCH-BRANCHES] [--prune-branches PRUNE-BRANCHES] [--url URL] [--shared-key SHARED-KEY] [--file FILE] [--events EVENTS] [--states STATES] [--environments ENVIRONMENTS] [--excluded-environments EXCLUDED-ENVIRONMENTS] [--from-address FROM-ADDRESS] [--recipients RECIPIENTS] [--channel CHANNEL] [--routing-key ROUTING-KEY] [--category CATEGORY] [--index INDEX] [--sourcetype SOURCETYPE] [--protocol PROTOCOL] [--syslog-host SYSLOG-HOST] [--syslog-port SYSLOG-PORT] [--facility FACILITY] [--message-format MESSAGE-FORMAT] [--auth-mode AUTH-MODE] [--auth-token AUTH-TOKEN] [--verify-tls VERIFY-TLS] [-p|--project PROJECT] [-W|--no-wait] [--wait]
+magento-cloud integration:add [--type TYPE] [--base-url BASE-URL] [--bitbucket-url BITBUCKET-URL] [--username USERNAME] [--token TOKEN] [--key KEY] [--secret SECRET] [--license-key LICENSE-KEY] [--server-project SERVER-PROJECT] [--repository REPOSITORY] [--build-merge-requests BUILD-MERGE-REQUESTS] [--build-pull-requests BUILD-PULL-REQUESTS] [--build-draft-pull-requests BUILD-DRAFT-PULL-REQUESTS] [--build-pull-requests-post-merge BUILD-PULL-REQUESTS-POST-MERGE] [--build-wip-merge-requests BUILD-WIP-MERGE-REQUESTS] [--merge-requests-clone-parent-data MERGE-REQUESTS-CLONE-PARENT-DATA] [--pull-requests-clone-parent-data PULL-REQUESTS-CLONE-PARENT-DATA] [--resync-pull-requests RESYNC-PULL-REQUESTS] [--fetch-branches FETCH-BRANCHES] [--prune-branches PRUNE-BRANCHES] [--url URL] [--shared-key SHARED-KEY] [--file FILE] [--events EVENTS] [--states STATES] [--environments ENVIRONMENTS] [--excluded-environments EXCLUDED-ENVIRONMENTS] [--from-address FROM-ADDRESS] [--recipients RECIPIENTS] [--channel CHANNEL] [--routing-key ROUTING-KEY] [--category CATEGORY] [--index INDEX] [--sourcetype SOURCETYPE] [--protocol PROTOCOL] [--syslog-host SYSLOG-HOST] [--syslog-port SYSLOG-PORT] [--facility FACILITY] [--message-format MESSAGE-FORMAT] [--auth-mode AUTH-MODE] [--auth-token AUTH-TOKEN] [--verify-tls VERIFY-TLS] [--header HEADER] [-p|--project PROJECT] [-W|--no-wait] [--wait]
 ```
 
 ### `--type`
 
-El tipo de integración (&quot;bitbucket&quot;, &quot;bitbucket_server&quot;, &quot;github&quot;, &quot;gitlab&quot;, &quot;webhook&quot;, &quot;health.email&quot;, &quot;health.pagerduty&quot;, &quot;health.slack&quot;, &quot;health.webhook&quot;, &quot;script&quot;, &quot;newrelic&quot;, &quot;splunk&quot;, &quot;sumologic&quot;, &quot;syslog&quot;)
+El tipo de integración (&quot;bitbucket&quot;, &quot;bitbucket_server&quot;, &quot;github&quot;, &quot;gitlab&quot;, &quot;webhook&quot;, &quot;health.email&quot;, &quot;health.pagerduty&quot;, &quot;health.slack&quot;, &quot;health.webhook&quot;, &quot;httplog&quot;, &quot;script&quot;, &quot;newrelic&quot;, &quot;splunk&quot;, &quot;sumologic&quot;, &quot;syslog&quot;)
 
 - Requiere un valor
 
 ### `--base-url`
 
 La URL base de la instalación del servidor
+
+- Requiere un valor
+
+### `--bitbucket-url`
+
+La URL base de la instalación del servidor Bitbucket
 
 - Requiere un valor
 
@@ -8152,15 +5094,16 @@ Si la verificación de certificados HTTPS debe habilitarse (recomendado)
 - Predeterminado: `true`
 - Requiere un valor
 
+### `--header`
+
+Encabezados HTTP para su uso en solicitudes de POST. Separe los nombres y valores con dos puntos (:).
+
+- Predeterminado: `[]`
+- Requiere un valor
+
 ### `--project`, `-p`
 
 El ID o la URL del proyecto
-
-- Requiere un valor
-
-### `--host`
-
-Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -8209,34 +5152,6 @@ Responder &quot;sí&quot; a las preguntas de confirmación; aceptar el valor pre
 ### `--no-interaction`
 
 No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equivale a usar la variable de entorno: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -8262,12 +5177,6 @@ El ID o la URL del proyecto
 
 - Requiere un valor
 
-### `--host`
-
-Opción obsoleta, ya no se utiliza
-
-- Requiere un valor
-
 ### `--no-wait`, `-W`
 
 No espere a que se complete la operación
@@ -8313,34 +5222,6 @@ Responder &quot;sí&quot; a las preguntas de confirmación; aceptar el valor pre
 ### `--no-interaction`
 
 No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equivale a usar la variable de entorno: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -8375,7 +5256,7 @@ El formato de salida: tabla, csv, tsv o sin formato
 
 ### `--columns`, `-c`
 
-Columnas para mostrar. Si una lista se proporciona como un valor único (por ejemplo, &quot;a,b,c&quot;), se divide por comas o espacios en blanco.
+Columnas para mostrar. Los caracteres % o * se pueden usar como comodín. Si una lista se proporciona como un valor único (por ejemplo, &quot;a,b,c&quot;), se divide por comas o espacios en blanco.
 
 - Predeterminado: `[]`
 - Requiere un valor
@@ -8390,12 +5271,6 @@ No generar el encabezado de tabla
 ### `--project`, `-p`
 
 El ID o la URL del proyecto
-
-- Requiere un valor
-
-### `--host`
-
-Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -8434,46 +5309,13 @@ No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equiva
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 
 ## `integration:list`
 
 Ver una lista de las integraciones del proyecto
 
 ```bash
-magento-cloud integrations [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT]
-```
-
-
-```bash
-integrations
+magento-cloud integration:list [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT]
 ```
 
 ### `--format`
@@ -8485,7 +5327,7 @@ El formato de salida: tabla, csv, tsv o sin formato
 
 ### `--columns`, `-c`
 
-Columnas para mostrar. Columnas disponibles: ID, resumen, tipo. Si una lista se proporciona como un valor único (por ejemplo, &quot;a,b,c&quot;), se divide por comas o espacios en blanco.
+Columnas para mostrar. Columnas disponibles: ID, resumen, tipo. Los caracteres % o * se pueden usar como comodín. Si una lista se proporciona como un valor único (por ejemplo, &quot;a,b,c&quot;), se divide por comas o espacios en blanco.
 
 - Predeterminado: `[]`
 - Requiere un valor
@@ -8500,12 +5342,6 @@ No generar el encabezado de tabla
 ### `--project`, `-p`
 
 El ID o la URL del proyecto
-
-- Requiere un valor
-
-### `--host`
-
-Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -8544,41 +5380,13 @@ No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equiva
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 
 ## `integration:update`
 
 Actualización de una integración
 
 ```bash
-magento-cloud integration:update [--type TYPE] [--base-url BASE-URL] [--username USERNAME] [--token TOKEN] [--key KEY] [--secret SECRET] [--license-key LICENSE-KEY] [--server-project SERVER-PROJECT] [--repository REPOSITORY] [--build-merge-requests BUILD-MERGE-REQUESTS] [--build-pull-requests BUILD-PULL-REQUESTS] [--build-draft-pull-requests BUILD-DRAFT-PULL-REQUESTS] [--build-pull-requests-post-merge BUILD-PULL-REQUESTS-POST-MERGE] [--build-wip-merge-requests BUILD-WIP-MERGE-REQUESTS] [--merge-requests-clone-parent-data MERGE-REQUESTS-CLONE-PARENT-DATA] [--pull-requests-clone-parent-data PULL-REQUESTS-CLONE-PARENT-DATA] [--resync-pull-requests RESYNC-PULL-REQUESTS] [--fetch-branches FETCH-BRANCHES] [--prune-branches PRUNE-BRANCHES] [--url URL] [--shared-key SHARED-KEY] [--file FILE] [--events EVENTS] [--states STATES] [--environments ENVIRONMENTS] [--excluded-environments EXCLUDED-ENVIRONMENTS] [--from-address FROM-ADDRESS] [--recipients RECIPIENTS] [--channel CHANNEL] [--routing-key ROUTING-KEY] [--category CATEGORY] [--index INDEX] [--sourcetype SOURCETYPE] [--protocol PROTOCOL] [--syslog-host SYSLOG-HOST] [--syslog-port SYSLOG-PORT] [--facility FACILITY] [--message-format MESSAGE-FORMAT] [--auth-mode AUTH-MODE] [--auth-token AUTH-TOKEN] [--verify-tls VERIFY-TLS] [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] [<id>]
+magento-cloud integration:update [--type TYPE] [--base-url BASE-URL] [--bitbucket-url BITBUCKET-URL] [--username USERNAME] [--token TOKEN] [--key KEY] [--secret SECRET] [--license-key LICENSE-KEY] [--server-project SERVER-PROJECT] [--repository REPOSITORY] [--build-merge-requests BUILD-MERGE-REQUESTS] [--build-pull-requests BUILD-PULL-REQUESTS] [--build-draft-pull-requests BUILD-DRAFT-PULL-REQUESTS] [--build-pull-requests-post-merge BUILD-PULL-REQUESTS-POST-MERGE] [--build-wip-merge-requests BUILD-WIP-MERGE-REQUESTS] [--merge-requests-clone-parent-data MERGE-REQUESTS-CLONE-PARENT-DATA] [--pull-requests-clone-parent-data PULL-REQUESTS-CLONE-PARENT-DATA] [--resync-pull-requests RESYNC-PULL-REQUESTS] [--fetch-branches FETCH-BRANCHES] [--prune-branches PRUNE-BRANCHES] [--url URL] [--shared-key SHARED-KEY] [--file FILE] [--events EVENTS] [--states STATES] [--environments ENVIRONMENTS] [--excluded-environments EXCLUDED-ENVIRONMENTS] [--from-address FROM-ADDRESS] [--recipients RECIPIENTS] [--channel CHANNEL] [--routing-key ROUTING-KEY] [--category CATEGORY] [--index INDEX] [--sourcetype SOURCETYPE] [--protocol PROTOCOL] [--syslog-host SYSLOG-HOST] [--syslog-port SYSLOG-PORT] [--facility FACILITY] [--message-format MESSAGE-FORMAT] [--auth-mode AUTH-MODE] [--auth-token AUTH-TOKEN] [--verify-tls VERIFY-TLS] [--header HEADER] [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] [<id>]
 ```
 
 
@@ -8589,13 +5397,19 @@ El ID de la integración que se va a actualizar
 
 ### `--type`
 
-El tipo de integración (&quot;bitbucket&quot;, &quot;bitbucket_server&quot;, &quot;github&quot;, &quot;gitlab&quot;, &quot;webhook&quot;, &quot;health.email&quot;, &quot;health.pagerduty&quot;, &quot;health.slack&quot;, &quot;health.webhook&quot;, &quot;script&quot;, &quot;newrelic&quot;, &quot;splunk&quot;, &quot;sumologic&quot;, &quot;syslog&quot;)
+El tipo de integración (&quot;bitbucket&quot;, &quot;bitbucket_server&quot;, &quot;github&quot;, &quot;gitlab&quot;, &quot;webhook&quot;, &quot;health.email&quot;, &quot;health.pagerduty&quot;, &quot;health.slack&quot;, &quot;health.webhook&quot;, &quot;httplog&quot;, &quot;script&quot;, &quot;newrelic&quot;, &quot;splunk&quot;, &quot;sumologic&quot;, &quot;syslog&quot;)
 
 - Requiere un valor
 
 ### `--base-url`
 
 La URL base de la instalación del servidor
+
+- Requiere un valor
+
+### `--bitbucket-url`
+
+La URL base de la instalación del servidor Bitbucket
 
 - Requiere un valor
 
@@ -8853,15 +5667,16 @@ Si la verificación de certificados HTTPS debe habilitarse (recomendado)
 - Predeterminado: `true`
 - Requiere un valor
 
+### `--header`
+
+Encabezados HTTP para su uso en solicitudes de POST. Separe los nombres y valores con dos puntos (:).
+
+- Predeterminado: `[]`
+- Requiere un valor
+
 ### `--project`, `-p`
 
 El ID o la URL del proyecto
-
-- Requiere un valor
-
-### `--host`
-
-Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -8914,34 +5729,6 @@ No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equiva
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 
 ## `integration:validate`
 
@@ -8960,12 +5747,6 @@ Un ID de integración. Déjelo en blanco para elegir de una lista.
 ### `--project`, `-p`
 
 El ID o la URL del proyecto
-
-- Requiere un valor
-
-### `--host`
-
-Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -9004,46 +5785,13 @@ No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equiva
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 
 ## `local:build`
 
 Generar el proyecto actual localmente
 
 ```bash
-magento-cloud build [-a|--abslinks] [-s|--source SOURCE] [-d|--destination DESTINATION] [-c|--copy] [--clone] [--run-deploy-hooks] [--no-clean] [--no-archive] [--no-backup] [--no-cache] [--no-build-hooks] [--no-deps] [--working-copy] [--concurrency CONCURRENCY] [--lock] [--] [<app>]...
-```
-
-
-```bash
-build
+magento-cloud local:build [-a|--abslinks] [-s|--source SOURCE] [-d|--destination DESTINATION] [-c|--copy] [--clone] [--run-deploy-hooks] [--no-clean] [--no-archive] [--no-backup] [--no-cache] [--no-build-hooks] [--no-deps] [--working-copy] [--concurrency CONCURRENCY] [--lock] [--] [<app>]...
 ```
 
 
@@ -9193,143 +5941,13 @@ No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equiva
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
-
-## `local:clean`
-
-Eliminar compilaciones de proyecto antiguas
-
-```bash
-magento-cloud clean [--keep KEEP] [--max-age MAX-AGE] [--include-active]
-```
-
-
-```bash
-clean
-```
-
-### `--keep`
-
-Número máximo de compilaciones que se deben mantener
-
-- Predeterminado: `5`
-- Requiere un valor
-
-### `--max-age`
-
-La antigüedad máxima de las compilaciones, en segundos. Se ignora si no se establece.
-
-- Requiere un valor
-
-### `--include-active`
-
-Eliminar las compilaciones activas también
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--help`, `-h`
-
-Mostrar este mensaje de ayuda
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar el detalle de los mensajes
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--version`, `-V`
-
-Mostrar esta versión de la aplicación
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--yes`, `-y`
-
-Responder &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-interaction`
-
-No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equivale a usar la variable de entorno: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 
 ## `local:dir`
 
 Buscar la raíz del proyecto local
 
 ```bash
-magento-cloud dir [<subdir>]
-```
-
-
-```bash
-dir
+magento-cloud local:dir [<subdir>]
 ```
 
 
@@ -9373,59 +5991,14 @@ No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equiva
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--ansi`
 
-Forzar salida ANSI
+## `metrics:all`
 
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
-
-## `metrics:disk-usage`
-
-Mostrar el uso del disco en un servicio
+&lt;fg white=&quot;&quot; bg=&quot;red&quot;> BETA &lt;/> Muestra las métricas de CPU, disco y memoria de un entorno
 
 ```bash
-magento-cloud disk [-s|--service SERVICE] [--type TYPE] [-r|--range RANGE] [-i|--interval INTERVAL] [--to TO] [-B|--bytes] [-1|--latest] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT]
+magento-cloud metrics [-r|--range RANGE] [-i|--interval INTERVAL] [--to TO] [-1|--latest] [-s|--service SERVICE] [--type TYPE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT]
 ```
-
-
-```bash
-disk
-```
-
-### `--service`, `-s`
-
-El nombre del servicio
-
-- Requiere un valor
-
-### `--type`
-
-El tipo de servicio (si no se proporciona el nombre del servicio), por ejemplo, mysql, pgsql, mongodb, etc. No se requiere la versión del tipo.
-
-- Requiere un valor
 
 ### `--range`, `-r`
 
@@ -9445,13 +6018,6 @@ La hora final. El valor predeterminado es ahora.
 
 - Requiere un valor
 
-### `--bytes`, `-B`
-
-Mostrar tamaños en bytes
-
-- Predeterminado: `false`
-- No acepta un valor
-
 ### `--latest`, `-1`
 
 Mostrar solo el último punto de datos individual
@@ -9459,15 +6025,23 @@ Mostrar solo el último punto de datos individual
 - Predeterminado: `false`
 - No acepta un valor
 
+### `--service`, `-s`
+
+Filtrar por nombre de aplicación o servicio Los caracteres % o * se pueden utilizar como comodín.
+
+- Predeterminado: `[]`
+- Requiere un valor
+
+### `--type`
+
+Filtrar por tipo de servicio (si no se proporciona —service). La versión no es obligatoria. Los caracteres % o * se pueden usar como comodín.
+
+- Predeterminado: `[]`
+- Requiere un valor
+
 ### `--project`, `-p`
 
 El ID o la URL del proyecto
-
-- Requiere un valor
-
-### `--host`
-
-Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -9486,7 +6060,7 @@ El formato de salida: tabla, csv, tsv o sin formato
 
 ### `--columns`, `-c`
 
-Columnas para mostrar. Columnas disponibles: timestamp*, used*, limit*, percent*, ipercent*, limit, interval, iused (* = columnas predeterminadas). El carácter &quot;+&quot; se puede utilizar como marcador de posición para las columnas predeterminadas. Si una lista se proporciona como un valor único (por ejemplo, &quot;a,b,c&quot;), se divide por comas o espacios en blanco.
+Columnas para mostrar. Columnas disponibles: timestamp*, service*, cpu_percent*, mem_percent*, disk_percent*, tmp_disk_percent*, cpu_limit, cpu_used, disk_limit, disk_used, inodes_limit, inodes_percent, inodes_used, mem_limit, mem_used, tmp_disk_limit, tmp_disk_used, tmp_inodes_limit, tmp_inodes_percent, tmp_inodes_used, type (* = columnas predeterminadas). El carácter &quot;+&quot; se puede utilizar como marcador de posición para las columnas predeterminadas. Los caracteres % o * se pueden usar como comodín. Si una lista se proporciona como un valor único (por ejemplo, &quot;a,b,c&quot;), se divide por comas o espacios en blanco.
 
 - Predeterminado: `[]`
 - Requiere un valor
@@ -9540,30 +6114,392 @@ No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equiva
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--ansi`
 
-Forzar salida ANSI
+## `metrics:cpu`
+
+&lt;fg white=&quot;&quot; bg=&quot;red&quot;> BETA &lt;/> Mostrar el uso de CPU de un entorno
+
+```bash
+magento-cloud metrics:cpu [-r|--range RANGE] [-i|--interval INTERVAL] [--to TO] [-1|--latest] [-s|--service SERVICE] [--type TYPE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT]
+```
+
+### `--range`, `-r`
+
+El intervalo de tiempo. Las métricas se cargarán durante esta duración hasta la hora de finalización (—to). Puede especificar unidades: horas (h), minutos (m) o segundos (s). Mínimo &lt;comment>5 m&lt;/comment>, máximo &lt;comment>8 h&lt;/comment> o más (según el proyecto), predeterminado &lt;comment>10 m&lt;/comment>.
+
+- Requiere un valor
+
+### `--interval`, `-i`
+
+El intervalo de tiempo. El valor predeterminado es una división del intervalo. Puede especificar unidades: horas (h), minutos (m) o segundos (s). Mínimo &lt;comment>1 m&lt;/comment>, máximo &lt;comment>1 h&lt;/comment>.
+
+- Requiere un valor
+
+### `--to`
+
+La hora final. El valor predeterminado es ahora.
+
+- Requiere un valor
+
+### `--latest`, `-1`
+
+Mostrar solo el último punto de datos individual
 
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--no-ansi`
+### `--service`, `-s`
 
-Deshabilitar salida ANSI
+Filtrar por nombre de aplicación o servicio Los caracteres % o * se pueden utilizar como comodín.
+
+- Predeterminado: `[]`
+- Requiere un valor
+
+### `--type`
+
+Filtrar por tipo de servicio (si no se proporciona —service). La versión no es obligatoria. Los caracteres % o * se pueden usar como comodín.
+
+- Predeterminado: `[]`
+- Requiere un valor
+
+### `--project`, `-p`
+
+El ID o la URL del proyecto
+
+- Requiere un valor
+
+### `--environment`, `-e`
+
+El ID de entorno
+
+- Requiere un valor
+
+### `--format`
+
+El formato de salida: tabla, csv, tsv o sin formato
+
+- Predeterminado: `table`
+- Requiere un valor
+
+### `--columns`, `-c`
+
+Columnas para mostrar. Columnas disponibles: marca de tiempo*, servicio*, utilizadas*, límite*, porcentaje*, tipo (* = columnas predeterminadas). El carácter &quot;+&quot; se puede utilizar como marcador de posición para las columnas predeterminadas. Los caracteres % o * se pueden usar como comodín. Si una lista se proporciona como un valor único (por ejemplo, &quot;a,b,c&quot;), se divide por comas o espacios en blanco.
+
+- Predeterminado: `[]`
+- Requiere un valor
+
+### `--no-header`
+
+No generar el encabezado de tabla
 
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--no`, `-n`
+### `--date-fmt`
 
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
+El formato de fecha (como una cadena de formato de fecha PHP)
+
+- Predeterminado: `c`
+- Requiere un valor
+
+### `--help`, `-h`
+
+Mostrar este mensaje de ayuda
 
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--quiet`, `-q`
+### `--verbose`, `-v|-vv|-vvv`
 
-No generar ningún mensaje
+Aumentar el detalle de los mensajes
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--version`, `-V`
+
+Mostrar esta versión de la aplicación
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--yes`, `-y`
+
+Responder &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equivale a usar la variable de entorno: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+
+## `metrics:disk-usage`
+
+Mostrar el uso del disco de un entorno
+
+```bash
+magento-cloud metrics:disk-usage [-B|--bytes] [-r|--range RANGE] [-i|--interval INTERVAL] [--to TO] [-1|--latest] [-s|--service SERVICE] [--type TYPE] [--tmp] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT]
+```
+
+### `--bytes`, `-B`
+
+Mostrar tamaños en bytes
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--range`, `-r`
+
+El intervalo de tiempo. Las métricas se cargarán durante esta duración hasta la hora de finalización (—to). Puede especificar unidades: horas (h), minutos (m) o segundos (s). Mínimo &lt;comment>5 m&lt;/comment>, máximo &lt;comment>8 h&lt;/comment> o más (según el proyecto), predeterminado &lt;comment>10 m&lt;/comment>.
+
+- Requiere un valor
+
+### `--interval`, `-i`
+
+El intervalo de tiempo. El valor predeterminado es una división del intervalo. Puede especificar unidades: horas (h), minutos (m) o segundos (s). Mínimo &lt;comment>1 m&lt;/comment>, máximo &lt;comment>1 h&lt;/comment>.
+
+- Requiere un valor
+
+### `--to`
+
+La hora final. El valor predeterminado es ahora.
+
+- Requiere un valor
+
+### `--latest`, `-1`
+
+Mostrar solo el último punto de datos individual
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--service`, `-s`
+
+Filtrar por nombre de aplicación o servicio Los caracteres % o * se pueden utilizar como comodín.
+
+- Predeterminado: `[]`
+- Requiere un valor
+
+### `--type`
+
+Filtrar por tipo de servicio (si no se proporciona —service). La versión no es obligatoria. Los caracteres % o * se pueden usar como comodín.
+
+- Predeterminado: `[]`
+- Requiere un valor
+
+### `--tmp`
+
+Informar del uso temporal del disco (muestra columnas: timestamp, service, tmp_used, tmp_limit, tmp_percent, tmp_ipercent)
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--project`, `-p`
+
+El ID o la URL del proyecto
+
+- Requiere un valor
+
+### `--environment`, `-e`
+
+El ID de entorno
+
+- Requiere un valor
+
+### `--format`
+
+El formato de salida: tabla, csv, tsv o sin formato
+
+- Predeterminado: `table`
+- Requiere un valor
+
+### `--columns`, `-c`
+
+Columnas para mostrar. Columnas disponibles: timestamp*, service*, used*, limit*, percent*, ipercent*, tmp_percent*, limit, iused, tmp_limit, tmp_ipercent, tmp_iused, tmp_limit, tmp_used, type (* = columnas predeterminadas). El carácter &quot;+&quot; se puede utilizar como marcador de posición para las columnas predeterminadas. Los caracteres % o * se pueden usar como comodín. Si una lista se proporciona como un valor único (por ejemplo, &quot;a,b,c&quot;), se divide por comas o espacios en blanco.
+
+- Predeterminado: `[]`
+- Requiere un valor
+
+### `--no-header`
+
+No generar el encabezado de tabla
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--date-fmt`
+
+El formato de fecha (como una cadena de formato de fecha PHP)
+
+- Predeterminado: `c`
+- Requiere un valor
+
+### `--help`, `-h`
+
+Mostrar este mensaje de ayuda
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--verbose`, `-v|-vv|-vvv`
+
+Aumentar el detalle de los mensajes
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--version`, `-V`
+
+Mostrar esta versión de la aplicación
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--yes`, `-y`
+
+Responder &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equivale a usar la variable de entorno: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+
+## `metrics:memory`
+
+&lt;fg white=&quot;&quot; bg=&quot;red&quot;> BETA &lt;/> Mostrar el uso de memoria de un entorno
+
+```bash
+magento-cloud metrics:memory [-B|--bytes] [-r|--range RANGE] [-i|--interval INTERVAL] [--to TO] [-1|--latest] [-s|--service SERVICE] [--type TYPE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT]
+```
+
+### `--bytes`, `-B`
+
+Mostrar tamaños en bytes
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--range`, `-r`
+
+El intervalo de tiempo. Las métricas se cargarán durante esta duración hasta la hora de finalización (—to). Puede especificar unidades: horas (h), minutos (m) o segundos (s). Mínimo &lt;comment>5 m&lt;/comment>, máximo &lt;comment>8 h&lt;/comment> o más (según el proyecto), predeterminado &lt;comment>10 m&lt;/comment>.
+
+- Requiere un valor
+
+### `--interval`, `-i`
+
+El intervalo de tiempo. El valor predeterminado es una división del intervalo. Puede especificar unidades: horas (h), minutos (m) o segundos (s). Mínimo &lt;comment>1 m&lt;/comment>, máximo &lt;comment>1 h&lt;/comment>.
+
+- Requiere un valor
+
+### `--to`
+
+La hora final. El valor predeterminado es ahora.
+
+- Requiere un valor
+
+### `--latest`, `-1`
+
+Mostrar solo el último punto de datos individual
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--service`, `-s`
+
+Filtrar por nombre de aplicación o servicio Los caracteres % o * se pueden utilizar como comodín.
+
+- Predeterminado: `[]`
+- Requiere un valor
+
+### `--type`
+
+Filtrar por tipo de servicio (si no se proporciona —service). La versión no es obligatoria. Los caracteres % o * se pueden usar como comodín.
+
+- Predeterminado: `[]`
+- Requiere un valor
+
+### `--project`, `-p`
+
+El ID o la URL del proyecto
+
+- Requiere un valor
+
+### `--environment`, `-e`
+
+El ID de entorno
+
+- Requiere un valor
+
+### `--format`
+
+El formato de salida: tabla, csv, tsv o sin formato
+
+- Predeterminado: `table`
+- Requiere un valor
+
+### `--columns`, `-c`
+
+Columnas para mostrar. Columnas disponibles: marca de tiempo*, servicio*, utilizadas*, límite*, porcentaje*, tipo (* = columnas predeterminadas). El carácter &quot;+&quot; se puede utilizar como marcador de posición para las columnas predeterminadas. Los caracteres % o * se pueden usar como comodín. Si una lista se proporciona como un valor único (por ejemplo, &quot;a,b,c&quot;), se divide por comas o espacios en blanco.
+
+- Predeterminado: `[]`
+- Requiere un valor
+
+### `--no-header`
+
+No generar el encabezado de tabla
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--date-fmt`
+
+El formato de fecha (como una cadena de formato de fecha PHP)
+
+- Predeterminado: `c`
+- Requiere un valor
+
+### `--help`, `-h`
+
+Mostrar este mensaje de ayuda
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--verbose`, `-v|-vv|-vvv`
+
+Aumentar el detalle de los mensajes
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--version`, `-V`
+
+Mostrar esta versión de la aplicación
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--yes`, `-y`
+
+Responder &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equivale a usar la variable de entorno: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -9637,12 +6573,6 @@ El ID o la URL del proyecto
 
 - Requiere un valor
 
-### `--host`
-
-Opción obsoleta, ya no se utiliza
-
-- Requiere un valor
-
 ### `--environment`, `-e`
 
 El ID de entorno
@@ -9708,46 +6638,13 @@ No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equiva
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 
 ## `mount:list`
 
 Obtener una lista de montajes
 
 ```bash
-magento-cloud mounts [--paths] [--refresh] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE]
-```
-
-
-```bash
-mounts
+magento-cloud mount:list [--paths] [--refresh] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--worker WORKER] [-I|--instance INSTANCE]
 ```
 
 ### `--paths`
@@ -9773,7 +6670,7 @@ El formato de salida: tabla, csv, tsv o sin formato
 
 ### `--columns`, `-c`
 
-Columnas para mostrar. Columnas disponibles: definición, ruta. Si una lista se proporciona como un valor único (por ejemplo, &quot;a,b,c&quot;), se divide por comas o espacios en blanco.
+Columnas para mostrar. Columnas disponibles: definición, ruta. Los caracteres % o * se pueden usar como comodín. Si una lista se proporciona como un valor único (por ejemplo, &quot;a,b,c&quot;), se divide por comas o espacios en blanco.
 
 - Predeterminado: `[]`
 - Requiere un valor
@@ -9788,12 +6685,6 @@ No generar el encabezado de tabla
 ### `--project`, `-p`
 
 El ID o la URL del proyecto
-
-- Requiere un valor
-
-### `--host`
-
-Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -9852,34 +6743,6 @@ Responder &quot;sí&quot; a las preguntas de confirmación; aceptar el valor pre
 ### `--no-interaction`
 
 No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equivale a usar la variable de entorno: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -9916,7 +6779,7 @@ El formato de salida: tabla, csv, tsv o sin formato
 
 ### `--columns`, `-c`
 
-Columnas para mostrar. Columnas disponibles: available, max, mounts, percent_used, tamaños, used. Si una lista se proporciona como un valor único (por ejemplo, &quot;a,b,c&quot;), se divide por comas o espacios en blanco.
+Columnas para mostrar. Columnas disponibles: available, max, mounts, percent_used, tamaños, used. Los caracteres % o * se pueden usar como comodín. Si una lista se proporciona como un valor único (por ejemplo, &quot;a,b,c&quot;), se divide por comas o espacios en blanco.
 
 - Predeterminado: `[]`
 - Requiere un valor
@@ -9937,12 +6800,6 @@ Una identidad SSH (clave privada) que utilizar
 ### `--project`, `-p`
 
 El ID o la URL del proyecto
-
-- Requiere un valor
-
-### `--host`
-
-Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -10001,34 +6858,6 @@ Responder &quot;sí&quot; a las preguntas de confirmación; aceptar el valor pre
 ### `--no-interaction`
 
 No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equivale a usar la variable de entorno: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -10088,12 +6917,6 @@ El ID o la URL del proyecto
 
 - Requiere un valor
 
-### `--host`
-
-Opción obsoleta, ya no se utiliza
-
-- Requiere un valor
-
 ### `--environment`, `-e`
 
 El ID de entorno
@@ -10159,34 +6982,6 @@ No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equiva
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 
 ## `project:clear-build-cache`
 
@@ -10202,12 +6997,6 @@ El ID o la URL del proyecto
 
 - Requiere un valor
 
-### `--host`
-
-Opción obsoleta, ya no se utiliza
-
-- Requiere un valor
-
 ### `--help`, `-h`
 
 Mostrar este mensaje de ayuda
@@ -10239,184 +7028,6 @@ Responder &quot;sí&quot; a las preguntas de confirmación; aceptar el valor pre
 ### `--no-interaction`
 
 No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equivale a usar la variable de entorno: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
-
-## `project:curl`
-
-Ejecutar una solicitud cURL autenticada en la API de un proyecto
-
-```bash
-magento-cloud project:curl [-X|--request REQUEST] [-d|--data DATA] [--json JSON] [-i|--include] [-I|--head] [--disable-compression] [--enable-glob] [-f|--fail] [-H|--header HEADER] [-p|--project PROJECT] [--] [<path>]
-```
-
-
-### `path`
-
-La ruta de API
-
-
-### `--request`, `-X`
-
-El método de solicitud que se va a utilizar
-
-- Requiere un valor
-
-### `--data`, `-d`
-
-Datos para enviar
-
-- Requiere un valor
-
-### `--json`
-
-Datos JSON para enviar
-
-- Requiere un valor
-
-### `--include`, `-i`
-
-Incluir encabezados en la salida
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--head`, `-I`
-
-Recuperar solo encabezados
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--disable-compression`
-
-No utilice el indicador curl —compressed
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--enable-glob`
-
-Habilitar globbing curl (eliminar el indicador —globoff)
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--fail`, `-f`
-
-Error sin salida en respuesta a error
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--header`, `-H`
-
-Encabezado(s) adicional(es)
-
-- Predeterminado: `[]`
-- Requiere un valor
-
-### `--project`, `-p`
-
-El ID o la URL del proyecto
-
-- Requiere un valor
-
-### `--host`
-
-Opción obsoleta, ya no se utiliza
-
-- Requiere un valor
-
-### `--help`, `-h`
-
-Mostrar este mensaje de ayuda
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar el detalle de los mensajes
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--version`, `-V`
-
-Mostrar esta versión de la aplicación
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--yes`, `-y`
-
-Responder &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-interaction`
-
-No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equivale a usar la variable de entorno: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -10427,12 +7038,7 @@ No generar ningún mensaje
 Clonar un proyecto localmente
 
 ```bash
-magento-cloud get [-e|--environment ENVIRONMENT] [--depth DEPTH] [--build] [-p|--project PROJECT] [-i|--identity-file IDENTITY-FILE] [--] [<project>] [<directory>]
-```
-
-
-```bash
-get
+magento-cloud project:get [-e|--environment ENVIRONMENT] [--depth DEPTH] [--build] [-p|--project PROJECT] [-i|--identity-file IDENTITY-FILE] [--] [<project>] [<directory>]
 ```
 
 
@@ -10468,12 +7074,6 @@ Cree el proyecto después de la clonación
 ### `--project`, `-p`
 
 El ID o la URL del proyecto
-
-- Requiere un valor
-
-### `--host`
-
-Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -10518,34 +7118,6 @@ No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equiva
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 
 ## `project:info`
 
@@ -10553,11 +7125,6 @@ Leer o establecer las propiedades de un proyecto
 
 ```bash
 magento-cloud project:info [--refresh] [--date-fmt DATE-FMT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] [<property>] [<value>]
-```
-
-
-```bash
-project:metadata
 ```
 
 
@@ -10594,7 +7161,7 @@ El formato de salida: tabla, csv, tsv o sin formato
 
 ### `--columns`, `-c`
 
-Columnas para mostrar. Si una lista se proporciona como un valor único (por ejemplo, &quot;a,b,c&quot;), se divide por comas o espacios en blanco.
+Columnas para mostrar. Los caracteres % o * se pueden usar como comodín. Si una lista se proporciona como un valor único (por ejemplo, &quot;a,b,c&quot;), se divide por comas o espacios en blanco.
 
 - Predeterminado: `[]`
 - Requiere un valor
@@ -10609,12 +7176,6 @@ No generar el encabezado de tabla
 ### `--project`, `-p`
 
 El ID o la URL del proyecto
-
-- Requiere un valor
-
-### `--host`
-
-Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -10667,34 +7228,6 @@ No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equiva
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 
 ## `project:list`
 
@@ -10702,16 +7235,6 @@ Obtener una lista de todos los proyectos activos
 
 ```bash
 magento-cloud project:list [--pipe] [--host HOST] [--title TITLE] [--my] [--refresh REFRESH] [--sort SORT] [--reverse] [--page PAGE] [-c|--count COUNT] [--format FORMAT] [--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT]
-```
-
-
-```bash
-projects
-```
-
-
-```bash
-pro
 ```
 
 ### `--pipe`
@@ -10782,7 +7305,7 @@ El formato de salida: tabla, csv, tsv o sin formato
 
 ### `--columns`
 
-Columnas para mostrar. Columnas disponibles: id*, title*, region*, created_at, endpoint, organization_id, organization_label, organization_name, region_label, status, ui_url (* = columnas predeterminadas). El carácter &quot;+&quot; se puede utilizar como marcador de posición para las columnas predeterminadas. Si una lista se proporciona como un valor único (por ejemplo, &quot;a,b,c&quot;), se divide por comas o espacios en blanco.
+Columnas para mostrar. Columnas disponibles: id*, title*, region*, created_at, endpoint, organization_id, organization_label, organization_name, region_label, status, ui_url (* = columnas predeterminadas). El carácter &quot;+&quot; se puede utilizar como marcador de posición para las columnas predeterminadas. Los caracteres % o * se pueden usar como comodín. Si una lista se proporciona como un valor único (por ejemplo, &quot;a,b,c&quot;), se divide por comas o espacios en blanco.
 
 - Predeterminado: `[]`
 - Requiere un valor
@@ -10832,34 +7355,6 @@ Responder &quot;sí&quot; a las preguntas de confirmación; aceptar el valor pre
 ### `--no-interaction`
 
 No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equivale a usar la variable de entorno: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -10914,409 +7409,6 @@ No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equiva
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
-
-## `project:variable:delete`
-
-&lt;fg white=&quot;&quot; bg=&quot;red&quot;>[ OBSOLETO ]&lt;/> Eliminar una variable de un proyecto
-
-```bash
-magento-cloud project:variable:delete [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] <name>
-```
-
-
-### `name`
-
-El nombre de la variable
-
-- Requerido
-
-### `--project`, `-p`
-
-El ID o la URL del proyecto
-
-- Requiere un valor
-
-### `--host`
-
-Opción obsoleta, ya no se utiliza
-
-- Requiere un valor
-
-### `--no-wait`, `-W`
-
-No espere a que se complete la operación
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--wait`
-
-Espere a que se complete la operación (valor predeterminado)
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--help`, `-h`
-
-Mostrar este mensaje de ayuda
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar el detalle de los mensajes
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--version`, `-V`
-
-Mostrar esta versión de la aplicación
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--yes`, `-y`
-
-Responder &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-interaction`
-
-No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equivale a usar la variable de entorno: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
-
-## `project:variable:get`
-
-&lt;fg white=&quot;&quot; bg=&quot;red&quot;>[ OBSOLETO ]&lt;/> Ver las variables de un proyecto
-
-```bash
-magento-cloud project:variable:get [--pipe] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT] [--] [<name>]
-```
-
-
-```bash
-project-variables
-```
-
-
-```bash
-pvget
-```
-
-
-```bash
-project:variable:list
-```
-
-
-### `name`
-
-Nombre de la variable
-
-
-### `--pipe`
-
-Mostrar solo el valor completo de la variable (se debe especificar un &quot;nombre&quot;)
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--format`
-
-El formato de salida: tabla, csv, tsv o sin formato
-
-- Predeterminado: `table`
-- Requiere un valor
-
-### `--columns`, `-c`
-
-Columnas para mostrar. Si una lista se proporciona como un valor único (por ejemplo, &quot;a,b,c&quot;), se divide por comas o espacios en blanco.
-
-- Predeterminado: `[]`
-- Requiere un valor
-
-### `--no-header`
-
-No generar el encabezado de tabla
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--project`, `-p`
-
-El ID o la URL del proyecto
-
-- Requiere un valor
-
-### `--host`
-
-Opción obsoleta, ya no se utiliza
-
-- Requiere un valor
-
-### `--help`, `-h`
-
-Mostrar este mensaje de ayuda
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar el detalle de los mensajes
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--version`, `-V`
-
-Mostrar esta versión de la aplicación
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--yes`, `-y`
-
-Responder &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-interaction`
-
-No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equivale a usar la variable de entorno: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
-
-## `project:variable:set`
-
-&lt;fg white=&quot;&quot; bg=&quot;red&quot;>[ OBSOLETO ]&lt;/> Establecer una variable para un proyecto
-
-```bash
-magento-cloud pvset [--json] [--no-visible-build] [--no-visible-runtime] [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] <name> <value>
-```
-
-
-```bash
-pvset
-```
-
-
-### `name`
-
-El nombre de la variable
-
-- Requerido
-
-### `value`
-
-El valor de variable
-
-- Requerido
-
-### `--json`
-
-Marcar el valor como JSON
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-visible-build`
-
-No exponer esta variable en el momento de la compilación
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-visible-runtime`
-
-No exponer esta variable durante la ejecución
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--project`, `-p`
-
-El ID o la URL del proyecto
-
-- Requiere un valor
-
-### `--host`
-
-Opción obsoleta, ya no se utiliza
-
-- Requiere un valor
-
-### `--no-wait`, `-W`
-
-No espere a que se complete la operación
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--wait`
-
-Espere a que se complete la operación (valor predeterminado)
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--help`, `-h`
-
-Mostrar este mensaje de ayuda
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar el detalle de los mensajes
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--version`, `-V`
-
-Mostrar esta versión de la aplicación
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--yes`, `-y`
-
-Responder &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-interaction`
-
-No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equivale a usar la variable de entorno: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 
 ## `repo:cat`
 
@@ -11342,12 +7434,6 @@ El SHA de compromiso. Esto también puede aceptar sufijos de &quot;HEAD&quot; y 
 ### `--project`, `-p`
 
 El ID o la URL del proyecto
-
-- Requiere un valor
-
-### `--host`
-
-Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -11388,34 +7474,6 @@ Responder &quot;sí&quot; a las preguntas de confirmación; aceptar el valor pre
 ### `--no-interaction`
 
 No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equivale a usar la variable de entorno: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -11468,12 +7526,6 @@ El ID o la URL del proyecto
 
 - Requiere un valor
 
-### `--host`
-
-Opción obsoleta, ya no se utiliza
-
-- Requiere un valor
-
 ### `--environment`, `-e`
 
 El ID de entorno
@@ -11515,46 +7567,13 @@ No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equiva
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 
 ## `repo:read`
 
 Leer un directorio o archivo en el repositorio del proyecto
 
 ```bash
-magento-cloud read [-c|--commit COMMIT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] [<path>]
-```
-
-
-```bash
-read
+magento-cloud repo:read [-c|--commit COMMIT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] [<path>]
 ```
 
 
@@ -11575,12 +7594,6 @@ El ID o la URL del proyecto
 
 - Requiere un valor
 
-### `--host`
-
-Opción obsoleta, ya no se utiliza
-
-- Requiere un valor
-
 ### `--environment`, `-e`
 
 El ID de entorno
@@ -11618,34 +7631,6 @@ Responder &quot;sí&quot; a las preguntas de confirmación; aceptar el valor pre
 ### `--no-interaction`
 
 No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equivale a usar la variable de entorno: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -11704,12 +7689,6 @@ El ID o la URL del proyecto
 
 - Requiere un valor
 
-### `--host`
-
-Opción obsoleta, ya no se utiliza
-
-- Requiere un valor
-
 ### `--environment`, `-e`
 
 El ID de entorno
@@ -11763,51 +7742,13 @@ No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equiva
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 
 ## `route:list`
 
 Enumerar todas las rutas de un entorno
 
 ```bash
-magento-cloud routes [--refresh] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] [<environment>]
-```
-
-
-```bash
-routes
-```
-
-
-```bash
-environment:routes
+magento-cloud route:list [--refresh] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--] [<environment>]
 ```
 
 
@@ -11832,7 +7773,7 @@ El formato de salida: tabla, csv, tsv o sin formato
 
 ### `--columns`, `-c`
 
-Columnas para mostrar. Columnas disponibles: route*, type*, to*, url (* = columnas predeterminadas). El carácter &quot;+&quot; se puede utilizar como marcador de posición para las columnas predeterminadas. Si una lista se proporciona como un valor único (por ejemplo, &quot;a,b,c&quot;), se divide por comas o espacios en blanco.
+Columnas para mostrar. Columnas disponibles: route*, type*, to*, url (* = columnas predeterminadas). El carácter &quot;+&quot; se puede utilizar como marcador de posición para las columnas predeterminadas. Los caracteres % o * se pueden usar como comodín. Si una lista se proporciona como un valor único (por ejemplo, &quot;a,b,c&quot;), se divide por comas o espacios en blanco.
 
 - Predeterminado: `[]`
 - Requiere un valor
@@ -11847,12 +7788,6 @@ No generar el encabezado de tabla
 ### `--project`, `-p`
 
 El ID o la URL del proyecto
-
-- Requiere un valor
-
-### `--host`
-
-Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -11897,34 +7832,6 @@ No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equiva
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 
 ## `self:install`
 
@@ -11932,11 +7839,6 @@ Instalar o actualizar archivos de configuración de CLI
 
 ```bash
 magento-cloud self:install [--shell-type SHELL-TYPE]
-```
-
-
-```bash
-local:install
 ```
 
 ### `--shell-type`
@@ -11980,165 +7882,13 @@ No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equiva
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
-
-## `self:stats`
-
-Ver estadísticas de descargas de paquetes de GitHub
-
-```bash
-magento-cloud self:stats [-p|--page PAGE] [-c|--count COUNT] [--format FORMAT] [--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT]
-```
-
-### `--page`, `-p`
-
-Número de página
-
-- Predeterminado: `1`
-- Requiere un valor
-
-### `--count`, `-c`
-
-Resultados por página (máximo: 100)
-
-- Predeterminado: `20`
-- Requiere un valor
-
-### `--format`
-
-El formato de salida: tabla, csv, tsv o sin formato
-
-- Predeterminado: `table`
-- Requiere un valor
-
-### `--columns`
-
-Columnas para mostrar. Columnas disponibles: recurso, fecha, descargas, versión. Si una lista se proporciona como un valor único (por ejemplo, &quot;a,b,c&quot;), se divide por comas o espacios en blanco.
-
-- Predeterminado: `[]`
-- Requiere un valor
-
-### `--no-header`
-
-No generar el encabezado de tabla
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--date-fmt`
-
-El formato de fecha (como una cadena de formato de fecha PHP)
-
-- Predeterminado: `c`
-- Requiere un valor
-
-### `--help`, `-h`
-
-Mostrar este mensaje de ayuda
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar el detalle de los mensajes
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--version`, `-V`
-
-Mostrar esta versión de la aplicación
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--yes`, `-y`
-
-Responder &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-interaction`
-
-No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equivale a usar la variable de entorno: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 
 ## `self:update`
 
 Actualice la CLI a la versión más reciente
 
 ```bash
-magento-cloud self-update [--no-major] [--unstable] [--manifest MANIFEST] [--current-version CURRENT-VERSION] [--timeout TIMEOUT]
-```
-
-
-```bash
-self-update
-```
-
-
-```bash
-update
+magento-cloud self:update [--no-major] [--unstable] [--manifest MANIFEST] [--current-version CURRENT-VERSION] [--timeout TIMEOUT]
 ```
 
 ### `--no-major`
@@ -12209,46 +7959,13 @@ No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equiva
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 
 ## `service:list`
 
 Enumerar servicios en el proyecto
 
 ```bash
-magento-cloud services [--refresh] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header]
-```
-
-
-```bash
-services
+magento-cloud service:list [--refresh] [--pipe] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header]
 ```
 
 ### `--refresh`
@@ -12258,15 +7975,16 @@ Si se actualiza la caché
 - Predeterminado: `false`
 - No acepta un valor
 
+### `--pipe`
+
+Mostrar solo una lista de nombres de servicio
+
+- Predeterminado: `false`
+- No acepta un valor
+
 ### `--project`, `-p`
 
 El ID o la URL del proyecto
-
-- Requiere un valor
-
-### `--host`
-
-Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -12285,7 +8003,7 @@ El formato de salida: tabla, csv, tsv o sin formato
 
 ### `--columns`, `-c`
 
-Columnas para mostrar. Columnas disponibles: disco, nombre, tamaño, tipo. Si una lista se proporciona como un valor único (por ejemplo, &quot;a,b,c&quot;), se divide por comas o espacios en blanco.
+Columnas para mostrar. Columnas disponibles: disco, nombre, tamaño, tipo. Los caracteres % o * se pueden usar como comodín. Si una lista se proporciona como un valor único (por ejemplo, &quot;a,b,c&quot;), se divide por comas o espacios en blanco.
 
 - Predeterminado: `[]`
 - Requiere un valor
@@ -12332,46 +8050,13 @@ No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equiva
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 
 ## `service:mongo:dump`
 
 Crear un volcado de archivo binario de datos de MongoDB
 
 ```bash
-magento-cloud mongodump [-c|--collection COLLECTION] [-z|--gzip] [-o|--stdout] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP]
-```
-
-
-```bash
-mongodump
+magento-cloud service:mongo:dump [-c|--collection COLLECTION] [-z|--gzip] [-o|--stdout] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP]
 ```
 
 ### `--collection`, `-c`
@@ -12409,12 +8094,6 @@ Una identidad SSH (clave privada) que utilizar
 ### `--project`, `-p`
 
 El ID o la URL del proyecto
-
-- Requiere un valor
-
-### `--host`
-
-Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -12465,46 +8144,13 @@ No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equiva
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 
 ## `service:mongo:export`
 
 Exportación de datos de MongoDB
 
 ```bash
-magento-cloud mongoexport [-c|--collection COLLECTION] [--jsonArray] [--type TYPE] [-f|--fields FIELDS] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP]
-```
-
-
-```bash
-mongoexport
+magento-cloud service:mongo:export [-c|--collection COLLECTION] [--jsonArray] [--type TYPE] [-f|--fields FIELDS] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP]
 ```
 
 ### `--collection`, `-c`
@@ -12551,12 +8197,6 @@ El ID o la URL del proyecto
 
 - Requiere un valor
 
-### `--host`
-
-Opción obsoleta, ya no se utiliza
-
-- Requiere un valor
-
 ### `--environment`, `-e`
 
 El ID de entorno
@@ -12604,46 +8244,13 @@ No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equiva
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 
 ## `service:mongo:restore`
 
 Restaurar un archivo binario volcado de datos en MongoDB
 
 ```bash
-magento-cloud mongorestore [-c|--collection COLLECTION] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP]
-```
-
-
-```bash
-mongorestore
+magento-cloud service:mongo:restore [-c|--collection COLLECTION] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP]
 ```
 
 ### `--collection`, `-c`
@@ -12670,12 +8277,6 @@ El ID o la URL del proyecto
 
 - Requiere un valor
 
-### `--host`
-
-Opción obsoleta, ya no se utiliza
-
-- Requiere un valor
-
 ### `--environment`, `-e`
 
 El ID de entorno
@@ -12723,46 +8324,13 @@ No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equiva
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 
 ## `service:mongo:shell`
 
 Usar el shell de MongoDB
 
 ```bash
-magento-cloud mongo [--eval EVAL] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP]
-```
-
-
-```bash
-mongo
+magento-cloud service:mongo:shell [--eval EVAL] [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP]
 ```
 
 ### `--eval`
@@ -12789,12 +8357,6 @@ El ID o la URL del proyecto
 
 - Requiere un valor
 
-### `--host`
-
-Opción obsoleta, ya no se utiliza
-
-- Requiere un valor
-
 ### `--environment`, `-e`
 
 El ID de entorno
@@ -12842,46 +8404,13 @@ No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equiva
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 
 ## `service:redis-cli`
 
 Acceso a la CLI de Redis
 
 ```bash
-magento-cloud redis [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--] [<args>]
-```
-
-
-```bash
-redis
+magento-cloud service:redis-cli [-r|--relationship RELATIONSHIP] [-i|--identity-file IDENTITY-FILE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--] [<args>]
 ```
 
 
@@ -12908,12 +8437,6 @@ El ID o la URL del proyecto
 
 - Requiere un valor
 
-### `--host`
-
-Opción obsoleta, ya no se utiliza
-
-- Requiere un valor
-
 ### `--environment`, `-e`
 
 El ID de entorno
@@ -12961,134 +8484,13 @@ No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equiva
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
-
-## `session:switch`
-
-&lt;fg white=&quot;&quot; bg=&quot;red&quot;>[ BETA ]&lt;/> Cambio entre sesiones
-
-```bash
-magento-cloud session:switch [<id>]
-```
-
-
-### `id`
-
-El nuevo ID de sesión
-
-
-### `--help`, `-h`
-
-Mostrar este mensaje de ayuda
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar el detalle de los mensajes
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--version`, `-V`
-
-Mostrar esta versión de la aplicación
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--yes`, `-y`
-
-Responder &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-interaction`
-
-No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equivale a usar la variable de entorno: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 
 ## `snapshot:create`
 
 Crear una instantánea de un entorno
 
 ```bash
-magento-cloud backup [--live] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<environment>]
-```
-
-
-```bash
-backup
-```
-
-
-```bash
-backup:create
-```
-
-
-```bash
-environment:backup
+magento-cloud snapshot:create [--live] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<environment>]
 ```
 
 
@@ -13107,12 +8509,6 @@ Copia de seguridad en vivo: no detenga el entorno. Si se establece, el entorno s
 ### `--project`, `-p`
 
 El ID o la URL del proyecto
-
-- Requiere un valor
-
-### `--host`
-
-Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -13136,9 +8532,78 @@ Espere a que se complete la operación (valor predeterminado)
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--unsafe`
+### `--help`, `-h`
 
-Opción obsoleta: usar —live en su lugar
+Mostrar este mensaje de ayuda
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--verbose`, `-v|-vv|-vvv`
+
+Aumentar el detalle de los mensajes
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--version`, `-V`
+
+Mostrar esta versión de la aplicación
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--yes`, `-y`
+
+Responder &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equivale a usar la variable de entorno: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
+
+- Predeterminado: `false`
+- No acepta un valor
+
+
+## `snapshot:delete`
+
+Eliminar una instantánea de entorno
+
+```bash
+magento-cloud snapshot:delete [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<id>]
+```
+
+
+### `id`
+
+El ID de la instantánea. Necesario en modo no interactivo.
+
+
+### `--project`, `-p`
+
+El ID o la URL del proyecto
+
+- Requiere un valor
+
+### `--environment`, `-e`
+
+El ID de entorno
+
+- Requiere un valor
+
+### `--no-wait`, `-W`
+
+No espere a que se complete la operación
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--wait`
+
+Espere a que se complete la operación (valor predeterminado)
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -13178,30 +8643,77 @@ No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equiva
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--ansi`
 
-Forzar salida ANSI
+## `snapshot:get`
+
+Ver una instantánea de entorno
+
+```bash
+magento-cloud snapshot:get [-P|--property PROPERTY] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--date-fmt DATE-FMT] [--] [<id>]
+```
+
+
+### `id`
+
+El ID de la instantánea. El valor predeterminado es el más reciente.
+
+
+### `--property`, `-P`
+
+Propiedad que se va a mostrar.
+
+- Requiere un valor
+
+### `--project`, `-p`
+
+El ID o la URL del proyecto
+
+- Requiere un valor
+
+### `--environment`, `-e`
+
+El ID de entorno
+
+- Requiere un valor
+
+### `--date-fmt`
+
+El formato de fecha (como una cadena de formato de fecha PHP)
+
+- Predeterminado: `c`
+- Requiere un valor
+
+### `--help`, `-h`
+
+Mostrar este mensaje de ayuda
 
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--no-ansi`
+### `--verbose`, `-v|-vv|-vvv`
 
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
+Aumentar el detalle de los mensajes
 
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--quiet`, `-q`
+### `--version`, `-V`
 
-No generar ningún mensaje
+Mostrar esta versión de la aplicación
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--yes`, `-y`
+
+Responder &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equivale a usar la variable de entorno: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -13212,35 +8724,8 @@ No generar ningún mensaje
 Enumerar las instantáneas disponibles de un entorno
 
 ```bash
-magento-cloud snapshots [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT]
+magento-cloud snapshot:list [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [--date-fmt DATE-FMT] [-p|--project PROJECT] [-e|--environment ENVIRONMENT]
 ```
-
-
-```bash
-snapshots
-```
-
-
-```bash
-backups
-```
-
-
-```bash
-backup:list
-```
-
-### `--limit`
-
-[Obsoleto] - esta opción no se utiliza
-
-- Requiere un valor
-
-### `--start`
-
-[Obsoleto] - esta opción no se utiliza
-
-- Requiere un valor
 
 ### `--format`
 
@@ -13251,7 +8736,7 @@ El formato de salida: tabla, csv, tsv o sin formato
 
 ### `--columns`, `-c`
 
-Columnas para mostrar. Si una lista se proporciona como un valor único (por ejemplo, &quot;a,b,c&quot;), se divide por comas o espacios en blanco.
+Columnas para mostrar. Los caracteres % o * se pueden usar como comodín. Si una lista se proporciona como un valor único (por ejemplo, &quot;a,b,c&quot;), se divide por comas o espacios en blanco.
 
 - Predeterminado: `[]`
 - Requiere un valor
@@ -13276,12 +8761,6 @@ El ID o la URL del proyecto
 
 - Requiere un valor
 
-### `--host`
-
-Opción obsoleta, ya no se utiliza
-
-- Requiere un valor
-
 ### `--environment`, `-e`
 
 El ID de entorno
@@ -13323,34 +8802,6 @@ No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equiva
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 
 ## `snapshot:restore`
 
@@ -13358,16 +8809,6 @@ Restaurar una instantánea de entorno
 
 ```bash
 magento-cloud snapshot:restore [--target TARGET] [--branch-from BRANCH-FROM] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<snapshot>]
-```
-
-
-```bash
-environment:restore
-```
-
-
-```bash
-backup:restore
 ```
 
 
@@ -13394,12 +8835,6 @@ El ID o la URL del proyecto
 
 - Requiere un valor
 
-### `--host`
-
-Opción obsoleta, ya no se utiliza
-
-- Requiere un valor
-
 ### `--environment`, `-e`
 
 El ID de entorno
@@ -13455,30 +8890,86 @@ No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equiva
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--ansi`
 
-Forzar salida ANSI
+## `source-operation:list`
 
-- Predeterminado: `false`
-- No acepta un valor
+Enumerar operaciones de origen en un entorno
 
-### `--no-ansi`
+```bash
+magento-cloud source-operation:list [--full] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header]
+```
 
-Deshabilitar salida ANSI
+### `--full`
 
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
+No limite la longitud del comando que se va a mostrar. El límite predeterminado es de 24 líneas.
 
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--quiet`, `-q`
+### `--project`, `-p`
 
-No generar ningún mensaje
+El ID o la URL del proyecto
+
+- Requiere un valor
+
+### `--environment`, `-e`
+
+El ID de entorno
+
+- Requiere un valor
+
+### `--format`
+
+El formato de salida: tabla, csv, tsv o sin formato
+
+- Predeterminado: `table`
+- Requiere un valor
+
+### `--columns`, `-c`
+
+Columnas para mostrar. Columnas disponibles: aplicación, comando, operación. Los caracteres % o * se pueden usar como comodín. Si una lista se proporciona como un valor único (por ejemplo, &quot;a,b,c&quot;), se divide por comas o espacios en blanco.
+
+- Predeterminado: `[]`
+- Requiere un valor
+
+### `--no-header`
+
+No generar el encabezado de tabla
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--help`, `-h`
+
+Mostrar este mensaje de ayuda
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--verbose`, `-v|-vv|-vvv`
+
+Aumentar el detalle de los mensajes
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--version`, `-V`
+
+Mostrar esta versión de la aplicación
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--yes`, `-y`
+
+Responder &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`
+
+No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equivale a usar la variable de entorno: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -13486,10 +8977,10 @@ No generar ningún mensaje
 
 ## `source-operation:run`
 
-&lt;fg white=&quot;&quot; bg=&quot;red&quot;>[ BETA ]&lt;/> Ejecutar una operación de origen
+Ejecutar una operación de origen
 
 ```bash
-magento-cloud source-operation:run [--variable VARIABLE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <operation>
+magento-cloud source-operation:run [--variable VARIABLE] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<operation>]
 ```
 
 
@@ -13497,7 +8988,6 @@ magento-cloud source-operation:run [--variable VARIABLE] [-p|--project PROJECT] 
 
 El nombre de la operación
 
-- Requerido
 
 ### `--variable`
 
@@ -13512,12 +9002,6 @@ El ID o la URL del proyecto
 
 - Requiere un valor
 
-### `--host`
-
-Opción obsoleta, ya no se utiliza
-
-- Requiere un valor
-
 ### `--environment`, `-e`
 
 El ID de entorno
@@ -13569,126 +9053,6 @@ Responder &quot;sí&quot; a las preguntas de confirmación; aceptar el valor pre
 ### `--no-interaction`
 
 No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equivale a usar la variable de entorno: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
-
-## `ssh-cert:info`
-
-Mostrar información sobre el certificado SSH actual
-
-```bash
-magento-cloud ssh-cert:info [--no-refresh] [-P|--property PROPERTY] [--date-fmt DATE-FMT]
-```
-
-### `--no-refresh`
-
-No actualice el certificado si no es válido
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--property`, `-P`
-
-Propiedad del certificado que se va a mostrar
-
-- Requiere un valor
-
-### `--date-fmt`
-
-El formato de fecha (como una cadena de formato de fecha PHP)
-
-- Predeterminado: `c`
-- Requiere un valor
-
-### `--help`, `-h`
-
-Mostrar este mensaje de ayuda
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar el detalle de los mensajes
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--version`, `-V`
-
-Mostrar esta versión de la aplicación
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--yes`, `-y`
-
-Responder &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-interaction`
-
-No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equivale a usar la variable de entorno: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -13758,34 +9122,6 @@ No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equiva
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 
 ## `ssh-key:add`
 
@@ -13842,34 +9178,6 @@ No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equiva
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 
 ## `ssh-key:delete`
 
@@ -13920,46 +9228,13 @@ No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equiva
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 
 ## `ssh-key:list`
 
 Obtenga una lista de claves SSH en su cuenta
 
 ```bash
-magento-cloud ssh-keys [--format FORMAT] [-c|--columns COLUMNS] [--no-header]
-```
-
-
-```bash
-ssh-keys
+magento-cloud ssh-key:list [--format FORMAT] [-c|--columns COLUMNS] [--no-header]
 ```
 
 ### `--format`
@@ -13971,7 +9246,7 @@ El formato de salida: tabla, csv, tsv o sin formato
 
 ### `--columns`, `-c`
 
-Columnas para mostrar. Columnas disponibles: id*, title*, path*, huella digital (* = columnas predeterminadas). El carácter &quot;+&quot; se puede utilizar como marcador de posición para las columnas predeterminadas. Si una lista se proporciona como un valor único (por ejemplo, &quot;a,b,c&quot;), se divide por comas o espacios en blanco.
+Columnas para mostrar. Columnas disponibles: id*, title*, path*, huella digital (* = columnas predeterminadas). El carácter &quot;+&quot; se puede utilizar como marcador de posición para las columnas predeterminadas. Los caracteres % o * se pueden usar como comodín. Si una lista se proporciona como un valor único (por ejemplo, &quot;a,b,c&quot;), se divide por comas o espacios en blanco.
 
 - Predeterminado: `[]`
 - Requiere un valor
@@ -14014,34 +9289,6 @@ Responder &quot;sí&quot; a las preguntas de confirmación; aceptar el valor pre
 ### `--no-interaction`
 
 No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equivale a usar la variable de entorno: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -14088,7 +9335,7 @@ El formato de salida: tabla, csv, tsv o sin formato
 
 ### `--columns`, `-c`
 
-Columnas para mostrar. Si una lista se proporciona como un valor único (por ejemplo, &quot;a,b,c&quot;), se divide por comas o espacios en blanco.
+Columnas para mostrar. Los caracteres % o * se pueden usar como comodín. Si una lista se proporciona como un valor único (por ejemplo, &quot;a,b,c&quot;), se divide por comas o espacios en blanco.
 
 - Predeterminado: `[]`
 - Requiere un valor
@@ -14103,12 +9350,6 @@ No generar el encabezado de tabla
 ### `--project`, `-p`
 
 El ID o la URL del proyecto
-
-- Requiere un valor
-
-### `--host`
-
-Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -14147,34 +9388,6 @@ No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equiva
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 
 ## `tunnel:close`
 
@@ -14194,12 +9407,6 @@ Cerrar todos los túneles
 ### `--project`, `-p`
 
 El ID o la URL del proyecto
-
-- Requiere un valor
-
-### `--host`
-
-Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -14246,34 +9453,6 @@ Responder &quot;sí&quot; a las preguntas de confirmación; aceptar el valor pre
 ### `--no-interaction`
 
 No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equivale a usar la variable de entorno: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -14306,12 +9485,6 @@ El ID o la URL del proyecto
 
 - Requiere un valor
 
-### `--host`
-
-Opción obsoleta, ya no se utiliza
-
-- Requiere un valor
-
 ### `--environment`, `-e`
 
 El ID de entorno
@@ -14333,7 +9506,7 @@ El formato de salida: tabla, csv, tsv o sin formato
 
 ### `--columns`
 
-Columnas para mostrar. Si una lista se proporciona como un valor único (por ejemplo, &quot;a,b,c&quot;), se divide por comas o espacios en blanco.
+Columnas para mostrar. Los caracteres % o * se pueden usar como comodín. Si una lista se proporciona como un valor único (por ejemplo, &quot;a,b,c&quot;), se divide por comas o espacios en blanco.
 
 - Predeterminado: `[]`
 - Requiere un valor
@@ -14380,46 +9553,13 @@ No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equiva
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 
 ## `tunnel:list`
 
 Enumeración de túneles SSH
 
 ```bash
-magento-cloud tunnels [-a|--all] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--format FORMAT] [-c|--columns COLUMNS] [--no-header]
-```
-
-
-```bash
-tunnels
+magento-cloud tunnel:list [-a|--all] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-A|--app APP] [--format FORMAT] [-c|--columns COLUMNS] [--no-header]
 ```
 
 ### `--all`, `-a`
@@ -14432,12 +9572,6 @@ Ver todos los túneles
 ### `--project`, `-p`
 
 El ID o la URL del proyecto
-
-- Requiere un valor
-
-### `--host`
-
-Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -14462,7 +9596,7 @@ El formato de salida: tabla, csv, tsv o sin formato
 
 ### `--columns`, `-c`
 
-Columnas para mostrar. Si una lista se proporciona como un valor único (por ejemplo, &quot;a,b,c&quot;), se divide por comas o espacios en blanco.
+Columnas para mostrar. Los caracteres % o * se pueden usar como comodín. Si una lista se proporciona como un valor único (por ejemplo, &quot;a,b,c&quot;), se divide por comas o espacios en blanco.
 
 - Predeterminado: `[]`
 - Requiere un valor
@@ -14509,34 +9643,6 @@ No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equiva
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 
 ## `tunnel:open`
 
@@ -14556,12 +9662,6 @@ Permitir que los hosts remotos se conecten a los puertos reenviados locales
 ### `--project`, `-p`
 
 El ID o la URL del proyecto
-
-- Requiere un valor
-
-### `--host`
-
-Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -14618,34 +9718,6 @@ No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equiva
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 
 ## `tunnel:single`
 
@@ -14671,12 +9743,6 @@ Permitir que los hosts remotos se conecten a los puertos reenviados locales
 ### `--project`, `-p`
 
 El ID o la URL del proyecto
-
-- Requiere un valor
-
-### `--host`
-
-Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -14739,41 +9805,13 @@ No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equiva
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 
 ## `user:add`
 
 Agregar un usuario al proyecto
 
 ```bash
-magento-cloud user:add [-r|--role ROLE] [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] [<email>]
+magento-cloud user:add [-r|--role ROLE] [--force-invite] [-p|--project PROJECT] [-W|--no-wait] [--wait] [--] [<email>]
 ```
 
 
@@ -14784,20 +9822,21 @@ La dirección de correo electrónico del usuario
 
 ### `--role`, `-r`
 
-La función de proyecto del usuario (&quot;administrador&quot; o &quot;visualizador&quot;) o la función de tipo de entorno (por ejemplo, &quot;ensayo:colaborador&quot; o &quot;producción:visualizador&quot;). Para quitar un usuario de un tipo de entorno, establezca la función como &quot;ninguno&quot;. El carácter % se puede usar como comodín para el tipo de entorno, p. ej. &#39;%:viewer&#39; para dar al usuario la función &#39;viewer&#39; en todos los tipos. La función puede abreviarse, por ejemplo, &quot;producción:v&quot;.
+La función de proyecto del usuario (&quot;administrador&quot; o &quot;visualizador&quot;) o la función de tipo de entorno (por ejemplo, &quot;ensayo:colaborador&quot; o &quot;producción:visualizador&quot;). Para quitar un usuario de un tipo de entorno, establezca la función como &quot;ninguno&quot;. Los caracteres % o * se pueden usar como comodín para el tipo de entorno, p. ej. &#39;%:viewer&#39; para dar al usuario la función &#39;viewer&#39; en todos los tipos. La función puede abreviarse, por ejemplo, &quot;producción:v&quot;.
 
 - Predeterminado: `[]`
 - Requiere un valor
 
+### `--force-invite`
+
+Enviar una invitación, incluso si ya se ha enviado una
+
+- Predeterminado: `false`
+- No acepta un valor
+
 ### `--project`, `-p`
 
 El ID o la URL del proyecto
-
-- Requiere un valor
-
-### `--host`
-
-Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -14846,34 +9885,6 @@ Responder &quot;sí&quot; a las preguntas de confirmación; aceptar el valor pre
 ### `--no-interaction`
 
 No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equivale a usar la variable de entorno: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -14900,12 +9911,6 @@ El ID o la URL del proyecto
 
 - Requiere un valor
 
-### `--host`
-
-Opción obsoleta, ya no se utiliza
-
-- Requiere un valor
-
 ### `--no-wait`, `-W`
 
 No espere a que se complete la operación
@@ -14955,34 +9960,6 @@ No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equiva
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 
 ## `user:get`
 
@@ -14990,11 +9967,6 @@ Ver las funciones de un usuario
 
 ```bash
 magento-cloud user:get [-l|--level LEVEL] [--pipe] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [-r|--role ROLE] [--] [<email>]
-```
-
-
-```bash
-user:role
 ```
 
 
@@ -15019,12 +9991,6 @@ Enviar la función a stdout (después de realizar cualquier cambio)
 ### `--project`, `-p`
 
 El ID o la URL del proyecto
-
-- Requiere un valor
-
-### `--host`
-
-Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -15089,46 +10055,13 @@ No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equiva
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 
 ## `user:list`
 
 Enumerar usuarios de proyecto
 
 ```bash
-magento-cloud users [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT]
-```
-
-
-```bash
-users
+magento-cloud user:list [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT]
 ```
 
 ### `--format`
@@ -15140,7 +10073,7 @@ El formato de salida: tabla, csv, tsv o sin formato
 
 ### `--columns`, `-c`
 
-Columnas para mostrar. Columnas disponibles: correo electrónico, ID, nombre, función. Si una lista se proporciona como un valor único (por ejemplo, &quot;a,b,c&quot;), se divide por comas o espacios en blanco.
+Columnas para mostrar. Columnas disponibles: correo electrónico, ID, nombre, función. Los caracteres % o * se pueden usar como comodín. Si una lista se proporciona como un valor único (por ejemplo, &quot;a,b,c&quot;), se divide por comas o espacios en blanco.
 
 - Predeterminado: `[]`
 - Requiere un valor
@@ -15155,12 +10088,6 @@ No generar el encabezado de tabla
 ### `--project`, `-p`
 
 El ID o la URL del proyecto
-
-- Requiere un valor
-
-### `--host`
-
-Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -15199,34 +10126,6 @@ No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equiva
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 
 ## `user:update`
 
@@ -15244,7 +10143,7 @@ La dirección de correo electrónico del usuario
 
 ### `--role`, `-r`
 
-La función de proyecto del usuario (&quot;administrador&quot; o &quot;visualizador&quot;) o la función de tipo de entorno (por ejemplo, &quot;ensayo:colaborador&quot; o &quot;producción:visualizador&quot;). Para quitar un usuario de un tipo de entorno, establezca la función como &quot;ninguno&quot;. El carácter % se puede usar como comodín para el tipo de entorno, p. ej. &#39;%:viewer&#39; para dar al usuario la función &#39;viewer&#39; en todos los tipos. La función puede abreviarse, por ejemplo, &quot;producción:v&quot;.
+La función de proyecto del usuario (&quot;administrador&quot; o &quot;visualizador&quot;) o la función de tipo de entorno (por ejemplo, &quot;ensayo:colaborador&quot; o &quot;producción:visualizador&quot;). Para quitar un usuario de un tipo de entorno, establezca la función como &quot;ninguno&quot;. Los caracteres % o * se pueden usar como comodín para el tipo de entorno, p. ej. &#39;%:viewer&#39; para dar al usuario la función &#39;viewer&#39; en todos los tipos. La función puede abreviarse, por ejemplo, &quot;producción:v&quot;.
 
 - Predeterminado: `[]`
 - Requiere un valor
@@ -15252,12 +10151,6 @@ La función de proyecto del usuario (&quot;administrador&quot; o &quot;visualiza
 ### `--project`, `-p`
 
 El ID o la URL del proyecto
-
-- Requiere un valor
-
-### `--host`
-
-Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -15310,41 +10203,13 @@ No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equiva
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 
 ## `variable:create`
 
 Crear una variable
 
 ```bash
-magento-cloud variable:create [-l|--level LEVEL] [--name NAME] [--value VALUE] [--json JSON] [--sensitive SENSITIVE] [--prefix PREFIX] [--enabled ENABLED] [--inheritable INHERITABLE] [--visible-build VISIBLE-BUILD] [--visible-runtime VISIBLE-RUNTIME] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<name>]
+magento-cloud variable:create [-u|--update] [-l|--level LEVEL] [--name NAME] [--value VALUE] [--json JSON] [--sensitive SENSITIVE] [--prefix PREFIX] [--enabled ENABLED] [--inheritable INHERITABLE] [--visible-build VISIBLE-BUILD] [--visible-runtime VISIBLE-RUNTIME] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] [<name>]
 ```
 
 
@@ -15352,6 +10217,13 @@ magento-cloud variable:create [-l|--level LEVEL] [--name NAME] [--value VALUE] [
 
 El nombre de la variable
 
+
+### `--update`, `-u`
+
+Actualizar la variable si ya existe
+
+- Predeterminado: `false`
+- No acepta un valor
 
 ### `--level`, `-l`
 
@@ -15373,28 +10245,28 @@ El valor de la variable
 
 ### `--json`
 
-Si la variable tiene formato JSON
+Si el valor de la variable tiene formato JSON
 
 - Predeterminado: `false`
 - Requiere un valor
 
 ### `--sensitive`
 
-Si la variable es confidencial
+Si el valor de la variable es confidencial
 
 - Predeterminado: `false`
 - Requiere un valor
 
 ### `--prefix`
 
-Prefijo del nombre de la variable (por ejemplo, &quot;none&quot; o &quot;env:&quot;)
+El prefijo del nombre de la variable que puede determinar su tipo, por ejemplo &quot;env&quot;. Solo es aplicable si el nombre aún no contiene un prefijo. (p. ej. &#39;ninguno&#39; o &#39;env:&#39;)
 
 - Predeterminado: `none`
 - Requiere un valor
 
 ### `--enabled`
 
-Si la variable debe habilitarse
+Si la variable debe habilitarse en el entorno
 
 - Predeterminado: `true`
 - Requiere un valor
@@ -15422,12 +10294,6 @@ Si la variable debe ser visible durante la ejecución
 ### `--project`, `-p`
 
 El ID o la URL del proyecto
-
-- Requiere un valor
-
-### `--host`
-
-Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -15482,34 +10348,6 @@ Responder &quot;sí&quot; a las preguntas de confirmación; aceptar el valor pre
 ### `--no-interaction`
 
 No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equivale a usar la variable de entorno: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -15542,12 +10380,6 @@ El ID o la URL del proyecto
 
 - Requiere un valor
 
-### `--host`
-
-Opción obsoleta, ya no se utiliza
-
-- Requiere un valor
-
 ### `--environment`, `-e`
 
 El ID de entorno
@@ -15599,256 +10431,6 @@ Responder &quot;sí&quot; a las preguntas de confirmación; aceptar el valor pre
 ### `--no-interaction`
 
 No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equivale a usar la variable de entorno: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
-
-## `variable:disable`
-
-&lt;fg white=&quot;&quot; bg=&quot;red&quot;>[ OBSOLETO ]&lt;/> Deshabilitar una variable de nivel de entorno habilitada
-
-```bash
-magento-cloud variable:disable [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <name>
-```
-
-
-### `name`
-
-Nombre de la variable
-
-- Requerido
-
-### `--project`, `-p`
-
-El ID o la URL del proyecto
-
-- Requiere un valor
-
-### `--host`
-
-Opción obsoleta, ya no se utiliza
-
-- Requiere un valor
-
-### `--environment`, `-e`
-
-El ID de entorno
-
-- Requiere un valor
-
-### `--no-wait`, `-W`
-
-No espere a que se complete la operación
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--wait`
-
-Espere a que se complete la operación (valor predeterminado)
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--help`, `-h`
-
-Mostrar este mensaje de ayuda
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar el detalle de los mensajes
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--version`, `-V`
-
-Mostrar esta versión de la aplicación
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--yes`, `-y`
-
-Responder &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-interaction`
-
-No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equivale a usar la variable de entorno: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
-
-## `variable:enable`
-
-&lt;fg white=&quot;&quot; bg=&quot;red&quot;>[ OBSOLETO ]&lt;/> Habilitar una variable de entorno deshabilitada
-
-```bash
-magento-cloud variable:enable [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <name>
-```
-
-
-### `name`
-
-Nombre de la variable
-
-- Requerido
-
-### `--project`, `-p`
-
-El ID o la URL del proyecto
-
-- Requiere un valor
-
-### `--host`
-
-Opción obsoleta, ya no se utiliza
-
-- Requiere un valor
-
-### `--environment`, `-e`
-
-El ID de entorno
-
-- Requiere un valor
-
-### `--no-wait`, `-W`
-
-No espere a que se complete la operación
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--wait`
-
-Espere a que se complete la operación (valor predeterminado)
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--help`, `-h`
-
-Mostrar este mensaje de ayuda
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar el detalle de los mensajes
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--version`, `-V`
-
-Mostrar esta versión de la aplicación
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--yes`, `-y`
-
-Responder &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-interaction`
-
-No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equivale a usar la variable de entorno: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -15859,12 +10441,7 @@ No generar ningún mensaje
 Ver una variable
 
 ```bash
-magento-cloud vget [-P|--property PROPERTY] [-l|--level LEVEL] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--pipe] [--] [<name>]
-```
-
-
-```bash
-vget
+magento-cloud variable:get [-P|--property PROPERTY] [-l|--level LEVEL] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--pipe] [--] [<name>]
 ```
 
 
@@ -15894,7 +10471,7 @@ El formato de salida: tabla, csv, tsv o sin formato
 
 ### `--columns`, `-c`
 
-Columnas para mostrar. Si una lista se proporciona como un valor único (por ejemplo, &quot;a,b,c&quot;), se divide por comas o espacios en blanco.
+Columnas para mostrar. Los caracteres % o * se pueden usar como comodín. Si una lista se proporciona como un valor único (por ejemplo, &quot;a,b,c&quot;), se divide por comas o espacios en blanco.
 
 - Predeterminado: `[]`
 - Requiere un valor
@@ -15909,12 +10486,6 @@ No generar el encabezado de tabla
 ### `--project`, `-p`
 
 El ID o la URL del proyecto
-
-- Requiere un valor
-
-### `--host`
-
-Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -15966,34 +10537,6 @@ No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equiva
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 
 ## `variable:list`
 
@@ -16001,16 +10544,6 @@ Variables de lista
 
 ```bash
 magento-cloud variable:list [-l|--level LEVEL] [--format FORMAT] [-c|--columns COLUMNS] [--no-header] [-p|--project PROJECT] [-e|--environment ENVIRONMENT]
-```
-
-
-```bash
-variables
-```
-
-
-```bash
-var
 ```
 
 ### `--level`, `-l`
@@ -16028,7 +10561,7 @@ El formato de salida: tabla, csv, tsv o sin formato
 
 ### `--columns`, `-c`
 
-Columnas para mostrar. Columnas disponibles: is_enabled, level, name, value. Si una lista se proporciona como un valor único (por ejemplo, &quot;a,b,c&quot;), se divide por comas o espacios en blanco.
+Columnas para mostrar. Columnas disponibles: is_enabled, level, name, value. Los caracteres % o * se pueden usar como comodín. Si una lista se proporciona como un valor único (por ejemplo, &quot;a,b,c&quot;), se divide por comas o espacios en blanco.
 
 - Predeterminado: `[]`
 - Requiere un valor
@@ -16046,12 +10579,6 @@ El ID o la URL del proyecto
 
 - Requiere un valor
 
-### `--host`
-
-Opción obsoleta, ya no se utiliza
-
-- Requiere un valor
-
 ### `--environment`, `-e`
 
 El ID de entorno
@@ -16089,170 +10616,6 @@ Responder &quot;sí&quot; a las preguntas de confirmación; aceptar el valor pre
 ### `--no-interaction`
 
 No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equivale a usar la variable de entorno: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
-
-## `variable:set`
-
-&lt;fg white=&quot;&quot; bg=&quot;red&quot;>[ OBSOLETO ]&lt;/> Establecer una variable para un entorno
-
-```bash
-magento-cloud vset [--json] [--disabled] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <name> <value>
-```
-
-
-```bash
-vset
-```
-
-
-### `name`
-
-El nombre de la variable
-
-- Requerido
-
-### `value`
-
-El valor de variable
-
-- Requerido
-
-### `--json`
-
-Marcar el valor como JSON
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--disabled`
-
-Marcar la variable como deshabilitada
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--project`, `-p`
-
-El ID o la URL del proyecto
-
-- Requiere un valor
-
-### `--host`
-
-Opción obsoleta, ya no se utiliza
-
-- Requiere un valor
-
-### `--environment`, `-e`
-
-El ID de entorno
-
-- Requiere un valor
-
-### `--no-wait`, `-W`
-
-No espere a que se complete la operación
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--wait`
-
-Espere a que se complete la operación (valor predeterminado)
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--help`, `-h`
-
-Mostrar este mensaje de ayuda
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar el detalle de los mensajes
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--version`, `-V`
-
-Mostrar esta versión de la aplicación
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--yes`, `-y`
-
-Responder &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-interaction`
-
-No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equivale a usar la variable de entorno: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -16263,7 +10626,7 @@ No generar ningún mensaje
 Actualización de una variable
 
 ```bash
-magento-cloud variable:update [-l|--level LEVEL] [--value VALUE] [--json JSON] [--sensitive SENSITIVE] [--enabled ENABLED] [--inheritable INHERITABLE] [--visible-build VISIBLE-BUILD] [--visible-runtime VISIBLE-RUNTIME] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <name>
+magento-cloud variable:update [--allow-no-change] [-l|--level LEVEL] [--value VALUE] [--json JSON] [--sensitive SENSITIVE] [--enabled ENABLED] [--inheritable INHERITABLE] [--visible-build VISIBLE-BUILD] [--visible-runtime VISIBLE-RUNTIME] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [-W|--no-wait] [--wait] [--] <name>
 ```
 
 
@@ -16272,6 +10635,13 @@ magento-cloud variable:update [-l|--level LEVEL] [--value VALUE] [--json JSON] [
 El nombre de la variable
 
 - Requerido
+
+### `--allow-no-change`
+
+Devolver correctamente (código de salida cero) si no se proporcionaron cambios
+
+- Predeterminado: `false`
+- No acepta un valor
 
 ### `--level`, `-l`
 
@@ -16287,21 +10657,21 @@ El valor de la variable
 
 ### `--json`
 
-Si la variable tiene formato JSON
+Si el valor de la variable tiene formato JSON
 
 - Predeterminado: `false`
 - Requiere un valor
 
 ### `--sensitive`
 
-Si la variable es confidencial
+Si el valor de la variable es confidencial
 
 - Predeterminado: `false`
 - Requiere un valor
 
 ### `--enabled`
 
-Si la variable debe habilitarse
+Si la variable debe habilitarse en el entorno
 
 - Predeterminado: `true`
 - Requiere un valor
@@ -16332,12 +10702,6 @@ El ID o la URL del proyecto
 
 - Requiere un valor
 
-### `--host`
-
-Opción obsoleta, ya no se utiliza
-
-- Requiere un valor
-
 ### `--environment`, `-e`
 
 El ID de entorno
@@ -16393,162 +10757,13 @@ No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equiva
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
-
-## `version:list`
-
-&lt;fg white=&quot;&quot; bg=&quot;red&quot;>[ ALFA ]&lt;/> Enumerar versiones de entornos
-
-```bash
-magento-cloud versions [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header]
-```
-
-
-```bash
-versions
-```
-
-### `--project`, `-p`
-
-El ID o la URL del proyecto
-
-- Requiere un valor
-
-### `--host`
-
-Opción obsoleta, ya no se utiliza
-
-- Requiere un valor
-
-### `--environment`, `-e`
-
-El ID de entorno
-
-- Requiere un valor
-
-### `--format`
-
-El formato de salida: tabla, csv, tsv o sin formato
-
-- Predeterminado: `table`
-- Requiere un valor
-
-### `--columns`, `-c`
-
-Columnas para mostrar. Si una lista se proporciona como un valor único (por ejemplo, &quot;a,b,c&quot;), se divide por comas o espacios en blanco.
-
-- Predeterminado: `[]`
-- Requiere un valor
-
-### `--no-header`
-
-No generar el encabezado de tabla
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--help`, `-h`
-
-Mostrar este mensaje de ayuda
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--verbose`, `-v|-vv|-vvv`
-
-Aumentar el detalle de los mensajes
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--version`, `-V`
-
-Mostrar esta versión de la aplicación
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--yes`, `-y`
-
-Responder &quot;sí&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-interaction`
-
-No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equivale a usar la variable de entorno: &lt;comment>MAGENTO_CLOUD_CLI_NO_INTERACTION=1&lt;/comment>
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
-
 
 ## `worker:list`
 
 Obtener una lista de todos los trabajadores implementados
 
 ```bash
-magento-cloud workers [--refresh] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header]
-```
-
-
-```bash
-workers
+magento-cloud worker:list [--refresh] [--pipe] [-p|--project PROJECT] [-e|--environment ENVIRONMENT] [--format FORMAT] [-c|--columns COLUMNS] [--no-header]
 ```
 
 ### `--refresh`
@@ -16558,15 +10773,16 @@ Si se actualiza la caché
 - Predeterminado: `false`
 - No acepta un valor
 
+### `--pipe`
+
+Mostrar solo una lista de nombres de trabajador
+
+- Predeterminado: `false`
+- No acepta un valor
+
 ### `--project`, `-p`
 
 El ID o la URL del proyecto
-
-- Requiere un valor
-
-### `--host`
-
-Opción obsoleta, ya no se utiliza
 
 - Requiere un valor
 
@@ -16585,7 +10801,7 @@ El formato de salida: tabla, csv, tsv o sin formato
 
 ### `--columns`, `-c`
 
-Columnas para mostrar. Columnas disponibles: comandos, nombre, tipo. Si una lista se proporciona como un valor único (por ejemplo, &quot;a,b,c&quot;), se divide por comas o espacios en blanco.
+Columnas para mostrar. Columnas disponibles: comandos, nombre, tipo. Los caracteres % o * se pueden usar como comodín. Si una lista se proporciona como un valor único (por ejemplo, &quot;a,b,c&quot;), se divide por comas o espacios en blanco.
 
 - Predeterminado: `[]`
 - Requiere un valor
@@ -16632,30 +10848,3 @@ No haga ninguna pregunta interactiva; acepte los valores predeterminados. Equiva
 - Predeterminado: `false`
 - No acepta un valor
 
-### `--ansi`
-
-Forzar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no-ansi`
-
-Deshabilitar salida ANSI
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--no`, `-n`
-
-Responder &quot;no&quot; a las preguntas de confirmación; aceptar el valor predeterminado para otras preguntas; deshabilitar la interacción
-
-- Predeterminado: `false`
-- No acepta un valor
-
-### `--quiet`, `-q`
-
-No generar ningún mensaje
-
-- Predeterminado: `false`
-- No acepta un valor
