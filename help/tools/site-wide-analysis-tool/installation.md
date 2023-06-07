@@ -2,9 +2,9 @@
 title: Guía de instalación
 description: Utilice esta guía para instalar [!DNL Site-Wide Analysis Tool] para su sitio web
 exl-id: ba36dc74-806d-49c5-b4d1-ba53ed4076fb
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 4210746509be99bb3c943906c99f70ea420ba74a
 workflow-type: tm+mt
-source-wordcount: '1074'
+source-wordcount: '1168'
 ht-degree: 0%
 
 ---
@@ -184,7 +184,7 @@ Si no desea utilizar nuestra [shell script](https://github.com/magento-swat/inst
    1. Descargue el archivo del lanzador.
 
       ```bash
-      curl -O https://updater.swat.magento.com/launcher/launcher.linux-amd64.tar.gz
+      curl -O https://updater.supportinsights.adobe.com/launcher/launcher.linux-amd64.tar.gz
       ```
 
    1. Desempaquete el archivo del lanzador.
@@ -197,7 +197,7 @@ Si no desea utilizar nuestra [shell script](https://github.com/magento-swat/inst
    1. Descargue el archivo del lanzador.
 
       ```bash
-      curl -O https://updater.swat.magento.com/launcher/launcher.linux-arm64.tar.gz
+      curl -O https://updater.supportinsights.adobe.com/launcher/launcher.linux-arm64.tar.gz
       ```
 
    1. Desempaquete el archivo del lanzador.
@@ -390,7 +390,7 @@ Puede ver el siguiente error si las claves de acceso no se analizan correctament
 
 ```terminal
 ERRO[2022-10-10 00:01:41] Error while refreshing token: error while getting jwt from magento: invalid character 'M' looking for beginning of value
-FATA[2022-12-10 20:38:44] bad http status from https://updater.swat.magento.com/linux-amd64.json: 403 Forbidden
+FATA[2022-12-10 20:38:44] bad http status from https://updater.supportinsights.adobe.com/linux-amd64.json: 403 Forbidden
 ```
 
 Para resolver este error, intente los siguientes pasos:
@@ -403,6 +403,12 @@ Para resolver este error, intente los siguientes pasos:
 1. Ejecute el planificador y compruebe si sigue recibiendo el mismo error.
 1. Si sigue recibiendo el mismo error, aumente el nivel de registro en `config.yaml` para depurar y abrir un ticket de asistencia.
 
+### *SIGFAULT* Error
+
+Si ve un *SIGFAULT* error al ejecutar el archivo binario, probablemente no lo ejecute como propietario de los archivos de Adobe Commerce y del agente.
+Para resolverlo, compruebe si todos los archivos dentro del directorio del agente que tienen el mismo usuario que el propietario del archivo que tienen los archivos Adobe Commerce, y el binario también deben ejecutarse bajo ese usuario.
+Puede usar el complemento `chown` para cambiar el propietario de los archivos y cambiar al usuario apropiado.
+Asegúrese de que el mecanismo de daemonización (Cron o System.d) ejecuta el proceso con el usuario adecuado.
 
 >[!INFO]
 >
