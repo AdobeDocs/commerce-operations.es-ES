@@ -2,9 +2,9 @@
 title: Notas de versión
 description: Obtenga información acerca de los parches disponibles para Adobe Commerce y los problemas que resuelven.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 205a0b67fab14a313d28355eed668d60ce477e64
+source-git-commit: 86f95d8fff53ab0857a3a276ba785ad26eb71241
 workflow-type: tm+mt
-source-wordcount: '12066'
+source-wordcount: '12426'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,25 @@ El [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) ofr
 >[!INFO]
 >
 >Para obtener información acerca de [!DNL quality patches] creado por la Comunidad para el Magento Open Source, consulte las [notas de la versión](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.32 {#v1-1-32}
+
+* **ACSD-49628** (para Adobe Commerce y Magento Open Source >=2.4.2 &lt;2.4.7): corrige el problema en el que la variable [!UICONTROL Page Builder's] varios errores impiden que el administrador guarde un producto sin permisos de contenido.
+* **ACSD-51305** (para Adobe Commerce y Magento Open Source >=2.4.6 &lt;2.4.7): corrige el problema en el que los productos secundarios configurables sin existencias no están disponibles en la respuesta de GraphQL.
+* **ACSD-50621** (para Adobe Commerce >=2.3.7 &lt;2.4.7): corrige el problema donde [!UICONTROL Tier Prices] para diferentes sitios web en el catálogo compartido no son visibles al intentar editarlos en un entorno de varios sitios web.
+* **ACSD-51041** (para Adobe Commerce y Magento Open Source >=2.3.7 &lt;2.4.0 || >=2.4.1 &lt;2.4.6): mejora el rendimiento del indexador de precios.
+* **ACSD-51379** (para Adobe Commerce y Magento Open Source >=2.3.7 &lt;2.4.7): corrige el problema por el que se realizan cambios en el contenido de texto de la página a través de [!UICONTROL Page Builder] no se han guardado.
+* **ACSD-49480** (para Adobe Commerce y Magento Open Source >=2.4.4 &lt;2.4.6): corrige el problema en el que solo se aplica una regla de precio del carro de compras.
+* **ACSD-51230** (para Adobe Commerce >=2.3.7 &lt;2.4.7): corrige el problema en el que la cuenta de la tarjeta de regalo se elimina cuando se procesa un reembolso parcial de un producto simple a partir de un pedido.
+* **ACSD-51238** (para Adobe Commerce y Magento Open Source >=2.4.4 &lt;2.4.7): corrige el problema en el que se elimina el origen de inventario al actualizar productos configurables y editar el precio.
+* **ACSD-50794** (para Adobe Commerce >=2.4.1 &lt;2.4.7): corrige el problema en el que los detalles del mensaje o el envoltorio de regalo no se actualizan en la base de datos al eliminarlos a través de GraphQL.
+* **ACSD-51528** (para Adobe Commerce y Magento Open Source >=2.4.5 &lt;2.4.7): corrige el problema en el que la variable *x_forwarded_for* tiene valores nulos en la columna *sales_order* tabla.
+* **ACSD-50849** (para Adobe Commerce >=2.4.4 &lt;2.4.6): corrige el problema en el que, al añadir un nuevo producto a la categoría después de borrar la caché, no coinciden las posiciones y selecciones de los productos existentes.
+* **ACSD-51294** (para Adobe Commerce y Magento Open Source >=2.4.5 &lt;2.4.7): corrige el problema por el que el precio, la cantidad, los impuestos, el envío y los ingresos de GTM/GA se envían como una cadena a [!DNL Google Analytics] y GTM.
+* **ACSD-51204** (para Adobe Commerce y Magento Open Source >=2.4.3 &lt;2.4.7): corrige el problema en el que un producto totalmente vendido no vuelve a estar disponible después de crear una nota de crédito.
+* **ACSD-51291** (para Adobe Commerce y Magento Open Source >=2.4.4 &lt;2.4.4-p4) || >=2.4.5 &lt;2.4.5-p3): corrige el problema en el que un administrador restringido con acceso a un sitio web puede agregar imágenes o vídeos al producto asignado a varios sitios web.
+* Se han añadido nuevas versiones para ACSD-50336.
+* Se reemplazaron los parches ACSD-49970.
 
 ## v1.1.31 {#v1-1-31}
 
