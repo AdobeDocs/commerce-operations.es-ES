@@ -1,9 +1,9 @@
 ---
 user-guide-title: Prácticas recomendadas de rendimiento
 user-guide-description: Optimice el rendimiento de su implementación de producción de Adobe Commerce o Magento Open Source con nuestras recomendaciones.
-source-git-commit: 338a99f4f047640ac4bb944ac8599301cba5f646
+source-git-commit: c61f33a7159424e5f9018ebf37b9d17072246536
 workflow-type: tm+mt
-source-wordcount: '56'
+source-wordcount: '61'
 ht-degree: 0%
 
 ---
@@ -22,4 +22,5 @@ ht-degree: 0%
 - Conceptos avanzados {#performance-best-practices}
    - [Configuración avanzada](advanced-setup.md)
    - [Avanzadas [!DNL JavaScript] agrupamiento](advanced-js-bundling.md)
+   - [Servidor de aplicaciones para API de GraphQL](application-server.md)
 - [Volver a Guías operativas](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

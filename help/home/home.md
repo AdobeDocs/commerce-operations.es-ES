@@ -3,7 +3,7 @@ keywords: Adobe Commerce;inicio;temas populares
 title: Inicio
 description: Examine un índice de la administración del sistema de Adobe Commerce y la documentación operativa del producto.
 exl-id: 45ec4948-338f-4276-8a70-d0db720322d9
-source-git-commit: 9e010b68f6458bafda5119308531e62477f046a9
+source-git-commit: 2b1fa24471cda7cc01ef5fdafeedbec0315d68c7
 workflow-type: tm+mt
 source-wordcount: '243'
 ht-degree: 0%
@@ -64,11 +64,11 @@ Obtenga información práctica sobre conceptos, procesos, herramientas y prácti
     </div>
   </td>
   <td valign="top">
-    <a href="https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce.html">
+    <a href="https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises.html">
        <img alt="Referencia de herramientas de la línea de comandos" src="../assets/icons/page-rule.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce.html"><strong>Referencia de herramientas de la línea de comandos</strong></a>
+      <a href="https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises.html"><strong>Referencia de herramientas de la línea de comandos</strong></a>
       <p>Obtenga información acerca de los comandos, argumentos y opciones de las herramientas de línea de comandos de Adobe Commerce.</p>
     </div>
   </td>
