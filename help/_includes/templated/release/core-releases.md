@@ -1,11 +1,32 @@
 ---
-source-git-commit: 89c3b0bf5e70ef10708ace403c073a64dadf9903
+source-git-commit: 14f4346f4b0bfd1fa0fa44bd62c7d3611a7ffdea
 workflow-type: tm+mt
-source-wordcount: '501'
-ht-degree: 14%
+source-wordcount: '563'
+ht-degree: 13%
 
 ---
 # Versiones publicadas
+
+## 2.4.7
+
+La fecha en la que finaliza la línea de versión 2.4.7 de aún no se ha establecido.
+
+<table>
+  <thead>
+    <tr>
+      <th>Versión del parche</th>
+      <th>Fecha de lanzamiento</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+        <td>
+          <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-7.html">2.4.7-beta1</a>
+        </td>
+        <td>13 de junio de 2023</td>
+    </tr><!-- patch_releases -->
+  </tbody>
+</table>
 
 ## 2.4.6
 
@@ -19,6 +40,12 @@ La compatibilidad con la línea de la versión 2.4.6 finaliza el 14 de marzo de 
     </tr>
   </thead>
   <tbody>
+    <tr>
+        <td>
+          <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-6-p1.html">2.4.6-p1</a>
+        </td>
+        <td>13 de junio de 2023</td>
+    </tr>
     <tr>
         <td>
           <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-6.html">2.4.6</a>
@@ -40,6 +67,12 @@ La compatibilidad con la línea de versión 2.4.5 finaliza el 9 de agosto de 202
     </tr>
   </thead>
   <tbody>
+    <tr>
+        <td>
+          <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-5-p3.html">2,4,5-p3</a>
+        </td>
+        <td>13 de junio de 2023</td>
+    </tr>
     <tr>
         <td>
           <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-5-p2.html">2,4,5-p2</a>
@@ -73,6 +106,12 @@ La compatibilidad con la línea de versión 2.4.4 finaliza el 12 de abril de 202
     </tr>
   </thead>
   <tbody>
+    <tr>
+        <td>
+          <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-4-p4.html">2.4.4-p4</a>
+        </td>
+        <td>13 de junio de 2023</td>
+    </tr>
     <tr>
         <td>
           <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-3-p3.html">2.4.4-p3</a>
