@@ -1,8 +1,9 @@
 ---
 title: Motor de búsqueda actual no admitido
 description: Solucione los problemas de actualización de Adobe Commerce o de Magento Open Source después de encontrar un error sobre un motor de búsqueda no compatible.
+feature: Upgrade, Search
 exl-id: 11479d23-53a5-4086-9f9a-c3420ccad073
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 012cba58b336b032b1c911539008c1fb961c2e07
 workflow-type: tm+mt
 source-wordcount: '416'
 ht-degree: 0%
@@ -34,13 +35,11 @@ El error se produce si el valor devuelto es `mysql`, `elasticsearch`, o `elastic
 >
 >Si ha recibido este error, la instalación está en un estado incoherente y no puede acceder al administrador. Le recomendamos que vuelva a su versión anterior mientras resuelve este error. Para ello, ejecute uno de los siguientes comandos:
 >
->
-```bash
+>```bash
 >composer require-commerce magento/product-enterprise-edition=<version>
 >```
 >
->
-```bash
+>```bash
 >composer require-commerce magento/product-community-edition=<version>
 >```
 >
