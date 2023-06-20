@@ -2,9 +2,9 @@
 title: Lectura recomendada para las actualizaciones
 description: Revise la lectura recomendada para planificar la actualización de Adobe Commerce.
 exl-id: 24ca57c0-1a68-46c4-b2fa-4a114250d0e3
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 83ee645269b4fb0b63bb11f6d2255ef7fa52bc4f
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '383'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Siga aprendiendo sobre las actualizaciones de Adobe Commerce y Magento Open Sour
           <ul>
             <li><a href="https://blog.adobe.com/">Blog de Adobe</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html">Adobe Help Center</a></li>
-            <li><a href="https://helpx.adobe.com/security/products/magento/apsb22-12.html">Boletín de seguridad del Adobe</a></li>
+            <li><a href="https://helpx.adobe.com/security/security-bulletin.html">Boletín de seguridad del Adobe</a></li>
             <li><a href="https://community.magento.com/t5/Magento-DevBlog/bg-p/devblog">Devblog</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html">Notas de versión</a></li>
             <li><a href="https://solutionpartners.adobe.com/solution-partners.html">Portal de socios de soluciones</a></li>
