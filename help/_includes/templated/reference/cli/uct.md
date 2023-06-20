@@ -1,5 +1,5 @@
 ---
-source-git-commit: adb585771fb1353614ea600117f18ba8b55b65f0
+source-git-commit: 64c453adabb092075854b2c20bf7da73c4a5146e
 workflow-type: tm+mt
 source-wordcount: '1529'
 ht-degree: 0%
@@ -56,7 +56,7 @@ La versión del script de finalización
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -126,7 +126,7 @@ Seguimiento del registro de depuración de finalización
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -205,7 +205,7 @@ Para generar la ayuda del comando raw
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -289,7 +289,7 @@ Para omitir la descripción de argumentos de comandos
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -353,7 +353,7 @@ Ruta para resolver problemas en.
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -428,7 +428,7 @@ Ruta del archivo donde se exportará la salida (formato Json)
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -499,7 +499,7 @@ versión de target (p. ej. 2.4.5).
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -575,7 +575,7 @@ Ruta del archivo donde se exportará la salida (formato JSON)
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -683,7 +683,7 @@ Contexto de ejecución. Esta opción se utiliza con fines de integración y no a
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor

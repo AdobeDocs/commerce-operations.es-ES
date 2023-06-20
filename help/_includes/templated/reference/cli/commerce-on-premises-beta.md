@@ -1,5 +1,5 @@
 ---
-source-git-commit: 78ef0e6343601f06d1d2f4a0d90dcb492ed8ca84
+source-git-commit: 64c453adabb092075854b2c20bf7da73c4a5146e
 workflow-type: tm+mt
 source-wordcount: '19899'
 ht-degree: 0%
@@ -60,7 +60,7 @@ La versión del script de finalización
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -130,7 +130,7 @@ Seguimiento del registro de depuración de finalización
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -209,7 +209,7 @@ Para generar la ayuda del comando raw
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -293,7 +293,7 @@ Para omitir la descripción de argumentos de comandos
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -350,7 +350,7 @@ bin/magento admin:adobe-ims:disable
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -431,7 +431,7 @@ Compruebe si 2FA está habilitado para la organización en Adobe Admin Console. 
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -488,7 +488,7 @@ bin/magento admin:adobe-ims:info
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -545,7 +545,7 @@ bin/magento admin:adobe-ims:status
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -638,7 +638,7 @@ Añada a cualquier comando para personalizar los parámetros de inicialización 
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -702,7 +702,7 @@ El nombre de usuario del administrador que desbloquear
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -768,7 +768,7 @@ Lista separada por espacios de los tipos de configuración u omitir para volcar 
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -825,7 +825,7 @@ bin/magento app:config:import
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -882,7 +882,7 @@ bin/magento app:config:status
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -963,7 +963,7 @@ Contraseña
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -1035,7 +1035,7 @@ añadir o anular parámetros del bootstrap
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -1107,7 +1107,7 @@ añadir o anular parámetros del bootstrap
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -1179,7 +1179,7 @@ añadir o anular parámetros del bootstrap
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -1251,7 +1251,7 @@ añadir o anular parámetros del bootstrap
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -1314,7 +1314,7 @@ añadir o anular parámetros del bootstrap
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -1385,7 +1385,7 @@ No procesar imágenes marcadas como ocultas en la página del producto
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -1442,7 +1442,7 @@ bin/magento catalog:product:attributes:cleanup
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -1506,7 +1506,7 @@ y\n
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -1595,7 +1595,7 @@ Código de ámbito de la configuración, cadena vacía de forma predeterminada
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -1699,7 +1699,7 @@ En desuso, utilice la opción —lock-env en su lugar.
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -1776,7 +1776,7 @@ Código de ámbito (requerido solo si el ámbito no es `default`)
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -1847,7 +1847,7 @@ Instalar solo las tareas no opcionales (predeterminadas)
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -1904,7 +1904,7 @@ bin/magento cron:remove
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -1980,7 +1980,7 @@ Agregar o anular parámetros del bootstrap
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -2037,7 +2037,7 @@ bin/magento customer:hash:upgrade
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -2108,7 +2108,7 @@ Omite la eliminación y regeneración del contenido estático (código generado,
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -2165,7 +2165,7 @@ bin/magento deploy:mode:show
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -2229,7 +2229,7 @@ Nombre de clase
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -2286,7 +2286,7 @@ bin/magento dev:email:newsletter-compatibility-check
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -2343,7 +2343,7 @@ bin/magento dev:email:override-compatibility-check
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -2400,7 +2400,7 @@ bin/magento dev:profiler:disable
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -2463,7 +2463,7 @@ Tipo de generador de perfiles
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -2520,7 +2520,7 @@ bin/magento dev:query-log:disable
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -2598,7 +2598,7 @@ Incluir pila de llamadas. [true\|false]
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -2692,7 +2692,7 @@ Tema: [Proveedor/tema]
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -2749,7 +2749,7 @@ bin/magento dev:template-hints:disable
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -2806,7 +2806,7 @@ bin/magento dev:template-hints:enable
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -2863,7 +2863,7 @@ bin/magento dev:template-hints:status
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -2935,7 +2935,7 @@ Argumentos adicionales para PHPUnit. Ejemplo: &quot;-c&#39;—filter=MyTest&#39;
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -3006,7 +3006,7 @@ Formato en el que se generará el catálogo. Admitido: [phpstorm, vscode]
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -3083,7 +3083,7 @@ Sobrescribir archivo XML
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -3149,7 +3149,7 @@ Nombre de dominios
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -3215,7 +3215,7 @@ Nombres de dominio
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -3272,7 +3272,7 @@ bin/magento downloadable:domains:show
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -3329,7 +3329,7 @@ bin/magento encryption:payment-data:update
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -3403,7 +3403,7 @@ Una descripción de su proveedor.
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -3460,7 +3460,7 @@ bin/magento events:generate:module
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -3531,7 +3531,7 @@ El número de niveles de la carga útil de evento que se van a devolver
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -3588,7 +3588,7 @@ bin/magento events:list
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -3652,7 +3652,7 @@ Nombre de módulo
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -3709,7 +3709,7 @@ bin/magento events:metadata:populate
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -3807,7 +3807,7 @@ Acelera la transmisión de este evento. Especifique esta opción para los evento
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -3871,7 +3871,7 @@ Ya no es necesario eliminar metadatos de eventos
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -3935,7 +3935,7 @@ Código de evento desde el que cancelar suscripción
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -4011,7 +4011,7 @@ Utilice el parámetro —magento para analizar el código base del Magento actua
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -4095,7 +4095,7 @@ Utilice el parámetro —allow-duplicates para permitir el guardado de duplicado
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -4169,7 +4169,7 @@ Realizar copia de seguridad de archivos de código y configuración (excepto arc
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -4226,7 +4226,7 @@ bin/magento indexer:info
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -4292,7 +4292,7 @@ Lista separada por espacios de los tipos de índice o omita aplicar a todos los 
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -4358,7 +4358,7 @@ Lista separada por espacios de los tipos de índice o omita aplicar a todos los 
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -4426,7 +4426,7 @@ Modos de dimensión de indizador catalog_product_price none,sitio web,customer_g
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -4497,7 +4497,7 @@ Lista separada por espacios de los tipos de índice o omita aplicar a todos los 
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -4563,7 +4563,7 @@ Lista separada por espacios de los tipos de índice u omitir para aplicar a todo
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -4629,7 +4629,7 @@ Lista separada por espacios de los tipos de índice o omita aplicar a todos los 
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -4695,7 +4695,7 @@ Lista separada por espacios de los tipos de índice o omita aplicar a todos los 
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -4752,7 +4752,7 @@ bin/magento info:adminuri
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -4809,7 +4809,7 @@ bin/magento info:backups:list
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -4866,7 +4866,7 @@ bin/magento info:currency:list
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -4930,7 +4930,7 @@ Nombre del informe
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -4994,7 +4994,7 @@ Nombre del informe
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -5058,7 +5058,7 @@ Nombre del informe
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -5115,7 +5115,7 @@ bin/magento info:language:list
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -5172,7 +5172,7 @@ bin/magento info:timezone:list
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -5230,7 +5230,7 @@ bin/magento inventory:reservation:create-compensations [-r|--raw] [--] [<compens
 
 ### `compensations`
 
-Lista de argumentos de compensación en formato &quot;&lt;order_increment_id>:&lt;sku>:&lt;quantity>:&lt;stock-id>&quot;
+Lista de argumentos de compensación en formato &quot;\&lt;order_increment_id>:\&lt;sku>:\&lt;quantity>:\&lt;stock-id>&quot;
 
 - Predeterminado: `[]`
 
@@ -5245,7 +5245,7 @@ Salida en bruto
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -5330,7 +5330,7 @@ Salida en bruto
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -5397,7 +5397,7 @@ Lista de códigos de país para importar
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -5483,7 +5483,7 @@ Añada a cualquier comando para personalizar los parámetros de inicialización 
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -5553,7 +5553,7 @@ Añada a cualquier comando para personalizar los parámetros de inicialización 
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -5623,7 +5623,7 @@ Añada a cualquier comando para personalizar los parámetros de inicialización 
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -5686,7 +5686,7 @@ Añada a cualquier comando para personalizar los parámetros de inicialización 
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -5743,7 +5743,7 @@ bin/magento media-content:sync
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -5800,7 +5800,7 @@ bin/magento media-gallery:sync
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -5857,7 +5857,7 @@ bin/magento module:config:status
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -5950,7 +5950,7 @@ Añada a cualquier comando para personalizar los parámetros de inicialización 
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -6043,7 +6043,7 @@ Añada a cualquier comando para personalizar los parámetros de inicialización 
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -6129,7 +6129,7 @@ Añada a cualquier comando para personalizar los parámetros de inicialización 
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -6244,7 +6244,7 @@ Añada a cualquier comando para personalizar los parámetros de inicialización 
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -6324,7 +6324,7 @@ Revisión
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -6381,7 +6381,7 @@ bin/magento queue:consumers:list
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -6438,7 +6438,7 @@ bin/magento queue:consumers:restart
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -6539,7 +6539,7 @@ Ruta de archivo para guardar el PID (esta opción está obsoleta; utilice —sin
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -6596,7 +6596,7 @@ bin/magento remote-storage:sync
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -6673,7 +6673,7 @@ Forzar la limpieza de la tabla del indexador de fuentes antes de sincronizar.
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -6737,7 +6737,7 @@ Actualizar composer.json sin ejecutar la actualización del compositor
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -6801,7 +6801,7 @@ Actualizar composer.json sin ejecutar la actualización del compositor
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -6858,7 +6858,7 @@ bin/magento sampledata:reset
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -6915,7 +6915,7 @@ bin/magento security:recaptcha:disable-for-user-forgot-password
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -6972,7 +6972,7 @@ bin/magento security:recaptcha:disable-for-user-login
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -7042,7 +7042,7 @@ Secreto
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -7099,7 +7099,7 @@ bin/magento security:tfa:providers
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -7169,7 +7169,7 @@ Código de proveedor
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -7254,7 +7254,7 @@ parámetros init de bootstrap de magento
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -7338,7 +7338,7 @@ Añada a cualquier comando para personalizar los parámetros de inicialización 
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -7982,7 +7982,7 @@ Añada a cualquier comando para personalizar los parámetros de inicialización 
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -8045,7 +8045,7 @@ Añada a cualquier comando para personalizar los parámetros de inicialización 
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -8129,7 +8129,7 @@ Averigüe qué tipo de parche se debe generar. Valores disponibles: `data`, `sch
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -8193,7 +8193,7 @@ Nombre del módulo donde se generará la lista de admitidos
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -8303,7 +8303,7 @@ Añada a cualquier comando para personalizar los parámetros de inicialización 
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -8404,7 +8404,7 @@ Añada a cualquier comando para personalizar los parámetros de inicialización 
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -8505,7 +8505,7 @@ Añada a cualquier comando para personalizar los parámetros de inicialización 
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -8575,7 +8575,7 @@ Añada a cualquier comando para personalizar los parámetros de inicialización 
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -8638,7 +8638,7 @@ Añada a cualquier comando para personalizar los parámetros de inicialización 
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -8695,7 +8695,7 @@ bin/magento setup:di:compile
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -9578,7 +9578,7 @@ Añada a cualquier comando para personalizar los parámetros de inicialización 
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -9649,7 +9649,7 @@ Omitir reindexación
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -9730,7 +9730,7 @@ Añada a cualquier comando para personalizar los parámetros de inicialización 
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -9956,7 +9956,7 @@ No compilar temáticas principales. Compatible solo con estrategias rápidas y e
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -10073,7 +10073,7 @@ Añada a cualquier comando para personalizar los parámetros de inicialización 
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -10136,7 +10136,7 @@ Añada a cualquier comando para personalizar los parámetros de inicialización 
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -10232,7 +10232,7 @@ Añada a cualquier comando para personalizar los parámetros de inicialización 
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -10289,7 +10289,7 @@ bin/magento store:list
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -10346,7 +10346,7 @@ bin/magento store:website:list
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -10422,7 +10422,7 @@ Incluir registros
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -10505,7 +10505,7 @@ Ignorar sanear
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -10569,7 +10569,7 @@ Compruebe solo las utilidades de consola requeridas
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -10633,7 +10633,7 @@ Forzar
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -10714,7 +10714,7 @@ Borrar archivos de vista estática generados.
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -10812,7 +10812,7 @@ Ruta al archivo para escribir vcl
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el &lt;info>lista&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
 
 - Predeterminado: `false`
 - No acepta un valor
