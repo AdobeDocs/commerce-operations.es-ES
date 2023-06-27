@@ -2,7 +2,9 @@
 title: AEM Optimización del rendimiento de
 description: Optimice la configuración predeterminada de Adobe Experience Manager para admitir cargas altas en Adobe Commerce.
 exl-id: 923a709f-9048-4e67-a5b0-ece831d2eb91
-source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
+feature: Integration, Cache
+topic: Commerce, Performance
+source-git-commit: 76ccc5aa8e5e3358dc52a88222fd0da7c4eb9ccb
 workflow-type: tm+mt
 source-wordcount: '2248'
 ht-degree: 0%
@@ -25,11 +27,11 @@ Si se habilita, Dispatcher evaluará los encabezados de respuesta del backend y,
 
 ## Almacenamiento en caché del explorador
 
-El método TTL del distribuidor anterior reducirá en gran medida las solicitudes y la carga en el editor, pero hay algunos recursos que es muy improbable que cambien y, por lo tanto, incluso las solicitudes al distribuidor se pueden reducir almacenando en caché los archivos relevantes localmente en el explorador del usuario. Por ejemplo, el logotipo del sitio, que se muestra en todas las páginas del sitio en la plantilla de sitio, no tendría que solicitarse cada vez al distribuidor. En su lugar, esto se puede almacenar en la caché del explorador del usuario. La reducción en los requisitos de ancho de banda para cada carga de página tendría un gran impacto en la capacidad de respuesta del sitio y los tiempos de carga de la página.
+El método TTL del distribuidor anterior reducirá en gran medida las solicitudes y la carga en el editor, pero hay algunos recursos que es muy improbable que cambien y, por lo tanto, incluso las solicitudes al distribuidor se pueden reducir almacenando en caché los archivos relevantes localmente en el explorador del usuario. Por ejemplo, el logotipo del sitio, que se muestra en todas las páginas del sitio en la plantilla del sitio, no tendría que solicitarse cada vez al distribuidor. En su lugar, esto se puede almacenar en la caché del explorador del usuario. La reducción en los requisitos de ancho de banda para cada carga de página tendría un gran impacto en la capacidad de respuesta del sitio y los tiempos de carga de la página.
 
 El almacenamiento en caché a nivel de explorador se suele realizar mediante el encabezado de respuesta &quot;Cache-Control: max-age=&quot;. La configuración maxage indica al explorador durante cuántos segundos debe almacenar el archivo en caché antes de intentar &quot;revalidarlo&quot; o solicitarlo de nuevo desde el sitio. Este concepto de max-age de caché se conoce comúnmente como &quot;Caducidad de caché&quot; o TTL (&quot;Tiempo de vida&quot;). Entrega de experiencias de comercio a escala: con Adobe Experience Manager, Commerce Integration Framework, Adobe Commerce 7
 
-AEM Algunas áreas de un sitio del cliente, del CIF o del Adobe Commerce que se pueden configurar para que se almacene en caché en el explorador del cliente son las siguientes:
+AEM Algunas áreas de un sitio del CIF/Adobe Commerce, que se puede configurar para que se almacene en caché en el explorador del cliente, son las siguientes:
 
 - AEM Las imágenes (dentro de la plantilla de la plantilla en sí, por ejemplo, las imágenes de diseño de plantilla y logotipo del sitio; las imágenes de producto del catálogo se solicitarían desde Adobe Commerce a través de Fastly y se analiza más adelante el almacenamiento en caché de estas imágenes)
 - Archivos de HTML (para páginas poco cambiadas: página de términos y condiciones, etc.)
@@ -84,12 +86,12 @@ El ejemplo siguiente almacena en caché las últimas 100 opciones de búsqueda c
 com.adobe.cq.commerce.core.search.services.SearchFilterService:true:100:3600
 ```
 
-La solicitud, incluidos todos los encabezados http y variables personalizadas, debe coincidir exactamente para que la caché se &quot;acierte&quot; y para evitar que se repita la llamada a Adobe Commerce. Debe tenerse en cuenta que una vez configurada, no hay una manera fácil de invalidar manualmente esta caché. Esto podría significar que, si se agrega una nueva categoría en Adobe Commerce, no empezaría a aparecer en la navegación hasta que la hora de caducidad establecida en la caché anterior haya caducado y se actualice la solicitud de GraphQL. Lo mismo para las facetas de búsqueda. Sin embargo, dadas las ventajas de rendimiento que se pueden conseguir con este almacenamiento en caché, este suele ser un compromiso aceptable.
+La solicitud, incluidos todos los encabezados http y variables personalizadas, debe coincidir exactamente para que la caché sea &quot;hit&quot; y para evitar que se repita la llamada a Adobe Commerce. Debe tenerse en cuenta que una vez configurada, no hay una manera fácil de invalidar manualmente esta caché. Esto podría significar que, si se agrega una nueva categoría en Adobe Commerce, no empezaría a aparecer en la navegación hasta que la hora de caducidad establecida en la caché anterior haya caducado y se actualice la solicitud de GraphQL. Lo mismo para las facetas de búsqueda. Sin embargo, dadas las ventajas de rendimiento que se pueden conseguir con este almacenamiento en caché, este suele ser un compromiso aceptable.
 
 Las opciones de almacenamiento en caché anteriores se pueden configurar mediante la consola de configuración OSGi de la aplicación en &quot;GraphQL Client Configuration Factory&quot; (Fábrica de configuración del cliente de AEM). Cada entrada de configuración de caché se puede especificar con el siguiente formato:
 
 ```
-• NAME:ENABLE:MAXSIZE:TIMEOUT like for example mycache:true:1000:60 where each attribute is defined as:
+* NAME:ENABLE:MAXSIZE:TIMEOUT like for example mycache:true:1000:60 where each attribute is defined as:
     › NAME (String): name of the cache
     › ENABLE (true|false): enables or disables that cache entry
     › MAXSIZE (Integer): maximum size of the cache (in number of entries)
@@ -98,7 +100,7 @@ Las opciones de almacenamiento en caché anteriores se pueden configurar mediant
 
 ## Almacenamiento en caché híbrido: solicitudes de GraphQL del lado del cliente dentro de páginas de Dispatcher en caché
 
-También es posible un enfoque híbrido para el almacenamiento en caché de páginas: es posible que una página de CIF contenga componentes que siempre solicitarían la información más reciente de Adobe Commerce directamente desde el explorador del cliente. Esto puede resultar útil para áreas específicas de la página dentro de una plantilla que son importantes para mantenerse actualizadas con información en tiempo real: precios de productos dentro de una PDP, por ejemplo. Cuando los precios cambian con frecuencia debido a la coincidencia dinámica de precios, esa información se puede configurar para que no se almacene en caché en el despachante, sino que los precios se pueden recuperar del lado del cliente en el explorador del cliente desde Adobe Commerce directamente a través de las API de GraphQL AEM con los componentes web del CIF de la.
+También es posible un enfoque híbrido para el almacenamiento en caché de páginas: es posible que una página de CIF contenga componentes que siempre soliciten la información más reciente de Adobe Commerce directamente desde el explorador del cliente. Esto puede resultar útil para áreas específicas de la página dentro de una plantilla que son importantes para mantenerse actualizadas con información en tiempo real: precios de productos dentro de una PDP, por ejemplo. Cuando los precios cambian con frecuencia debido a la coincidencia dinámica de precios, esa información se puede configurar para que no se almacene en caché en el despachante, sino que los precios se pueden recuperar del lado del cliente en el explorador del cliente desde Adobe Commerce directamente a través de las API de GraphQL AEM con los componentes web del CIF de la.
 
 AEM Esto se puede configurar a través de la configuración de componentes del producto: para obtener información sobre el precio en las páginas de lista de productos, esto se puede configurar en la plantilla de lista de productos, seleccionando el componente de lista de productos en la configuración de página y marcando la opción &quot;cargar precios&quot;. El mismo enfoque funcionaría para los niveles de existencias.
 
@@ -106,7 +108,7 @@ Los métodos anteriores solo deben utilizarse en caso de que se requiera informa
 
 ## Solicitudes de GraphQL no almacenables en caché
 
-Los componentes de datos dinámicos específicos de las páginas no deben almacenarse en caché y siempre requerirán una llamada de GraphQL a Adobe Commerce, como para el carro de compras y las llamadas a través de las páginas de cierre de compra. Esta información es específica de un usuario y cambia constantemente debido a la actividad del cliente en el sitio, por ejemplo añadiendo productos al carro de compras.
+Los componentes de datos dinámicos específicos de las páginas no deben almacenarse en caché y siempre requerirán una llamada de GraphQL a Adobe Commerce, como para el carro de compras y las llamadas a través de las páginas de cierre de compra. Esta información es específica de un usuario y cambia constantemente debido a la actividad del cliente en el sitio, por ejemplo, al añadir productos al carro de compras.
 
 Los resultados de la consulta de GraphQL no deben almacenarse en caché para los clientes que iniciaron sesión si el diseño del sitio proporcionara respuestas diferentes según la función del usuario. Por ejemplo, puede crear varios grupos de clientes y configurar diferentes precios de productos o visibilidad de categorías de productos para cada grupo. Almacenar en caché resultados como estos puede hacer que los clientes vean los precios de otro grupo de clientes o que se muestren categorías incorrectas.
 

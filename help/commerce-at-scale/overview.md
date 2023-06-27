@@ -2,8 +2,7 @@
 title: Ofrecer Experiencias A Escala
 description: Aprenda a ofrecer experiencias a escala con Adobe Commerce y Adobe Experience Manager.
 exl-id: e3166c46-fc9d-4ff4-a3a9-2cd740a95e9b
-debug: true
-source-git-commit: 442bb3f2c448de2ed70a3033d399025cc39e8744
+source-git-commit: 76ccc5aa8e5e3358dc52a88222fd0da7c4eb9ccb
 workflow-type: tm+mt
 source-wordcount: '581'
 ht-degree: 0%
@@ -18,7 +17,7 @@ AEM En un entorno de/CIF/Adobe Commerce AEM, los visitantes del sitio de comerci
 
 ![Diagrama general de la arquitectura de Adobe de Experience Manager y Adobe Commerce](../assets/commerce-at-scale/overview.png)
 
-AEM Se puede utilizar una combinación de procesamiento del lado del servidor y procesamiento del lado del cliente en el modelo del lado del servidor/CIF/Adobe Commerce: Procesamiento del lado del servidor para ofrecer contenido estático y procesamiento del lado del cliente para ofrecer contenido dinámico personal o que cambia con frecuencia llamando directamente a Adobe Commerce para componentes específicos desde el explorador del usuario.
+AEM Se puede utilizar una combinación de procesamiento del lado del servidor y procesamiento del lado del cliente en el modelo de cliente/CIF/Adobe Commerce: Procesamiento del lado del servidor para ofrecer contenido estático y procesamiento del lado del cliente para ofrecer contenido dinámico personal o que cambia con frecuencia llamando directamente a Adobe Commerce para componentes específicos desde el explorador del usuario.
 
 AEM En el siguiente ejemplo se muestra un ejemplo de los diferentes componentes de una página de detalles del producto en una tienda de comercio electrónico de ejemplo:
 

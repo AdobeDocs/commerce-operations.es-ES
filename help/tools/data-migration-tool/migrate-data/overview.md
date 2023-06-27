@@ -2,7 +2,8 @@
 title: Resumen de migración
 description: Obtenga información sobre cómo empezar a migrar datos del Magento 1 al Magento 2 con la [!DNL Data Migration Tool].
 exl-id: b775ede1-9d1d-49d5-ad0f-763404b48278
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+topic: Commerce, Migration
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '303'
 ht-degree: 0%

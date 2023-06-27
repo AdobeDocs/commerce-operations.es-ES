@@ -2,7 +2,8 @@
 title: Guía de instalación
 description: Utilice esta guía para instalar [!DNL Site-Wide Analysis Tool] para su sitio web
 exl-id: ba36dc74-806d-49c5-b4d1-ba53ed4076fb
-source-git-commit: 4210746509be99bb3c943906c99f70ea420ba74a
+feature: Configuration, Install
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '1168'
 ht-degree: 0%
@@ -46,9 +47,10 @@ Su infraestructura local debe cumplir los siguientes requisitos antes de instala
 - Sistemas operativos
 
    - [!DNL Linux x86-64] distribuciones, como [!DNL Red Hat® Enterprise Linux (RHEL)], [!DNL CentOS], [!DNL Ubuntu], [!DNL Debian], y similares
-   >[!IMPORTANT]
-   >
-   >Adobe Commerce no es compatible con [!DNL Microsoft Windows] o [!DNL macOS].
+
+  >[!IMPORTANT]
+  >
+  >Adobe Commerce no es compatible con [!DNL Microsoft Windows] o [!DNL macOS].
 
 - Adobe Commerce 2.4.1 o posterior
 
@@ -192,6 +194,7 @@ Si no desea utilizar nuestra [shell script](https://github.com/magento-swat/inst
       ```bash
       tar -xf launcher.linux-amd64.tar.gz
       ```
+
    Para el **ARM64** arquitectura:
 
    1. Descargue el archivo del lanzador.
@@ -205,7 +208,6 @@ Si no desea utilizar nuestra [shell script](https://github.com/magento-swat/inst
       ```bash
       tar -xf launcher.linux-arm64.tar.gz
       ```
-
 
 1. *(Opcional)* Compruebe la firma del archivo de suma de comprobación.
 

@@ -2,7 +2,8 @@
 title: El [!DNL QuickView] pestaña
 description: El [!DNL QuickView] La pestaña explica los diferentes tipos de alerta que puede ver, incluidos los que se producen con un espacio de disco bajo y el uso del servidor.
 exl-id: 34405f9b-30de-4fab-acca-64a8e308ca90
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+feature: Configuration, Observability
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '128'
 ht-degree: 0%

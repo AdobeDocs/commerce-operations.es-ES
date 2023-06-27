@@ -2,7 +2,8 @@
 title: Personalización de [!DNL Data Migration Tool]
 description: Aprenda a personalizar la variable [!DNL Data Migration Tool] para transferir datos creados por extensiones entre Magento 1 y Magento 2.
 exl-id: a5c1575f-9d77-416e-91fe-a82905ef2e1c
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+topic: Commerce, Migration
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '821'
 ht-degree: 0%

@@ -2,7 +2,8 @@
 title: Puertas de pago
 description: Elija un proveedor de pasarela de pago para su proyecto de comercio electrónico en función de las necesidades de su empresa.
 exl-id: eab50191-0744-41da-99ba-2e06ea61da27
-source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
+feature: Best Practices, Payments
+source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '554'
 ht-degree: 0%
@@ -15,11 +16,11 @@ Hubo un tiempo en que el efectivo era la principal fuente de transacciones, pero
 
 ![Logotipos de proveedor de pasarela de pago](../../assets/playbooks/payment-gateways.png)
 
-Una pasarela de pago es un proveedor de servicios que conecta y procesa pagos para sitios web de comercio electrónico. Desempeñan un papel vital en la experiencia de compra de los clientes y en las tasas de conversión. Los sistemas de pago complicados tienden a hacer que los clientes abandonen sus carros de compras. Es importante proporcionar a los clientes un sistema de pago fácil de usar, donde incluso si un método de pago falla, tengan un método alternativo para motivarlos a completar la compra.
+Una pasarela de pago es un proveedor de servicios que conecta y procesa pagos para sitios web de comercio electrónico. Desempeñan un papel vital en la experiencia de compra de los clientes y en las tasas de conversión. Los sistemas de pago complicados tienden a hacer que los clientes abandonen sus carros de compras. Es importante proporcionar a los clientes un sistema de pago fácil de usar, donde incluso si un método de pago falla, tienen un método alternativo para motivarlos a completar la compra.
 
 ## Revisar requisitos
 
-Los minoristas necesitan seleccionar la mejor pasarela de pago que cumpla con sus requisitos. Hay muchas puertas de enlace de pago en el mercado, como Braintree y Stripe, pero antes de decidir sobre una puerta de enlace de pago, hágase las siguientes preguntas:
+Los minoristas necesitan seleccionar la mejor pasarela de pago que cumpla con sus requisitos. Hay muchas puertas de enlace de pago en el mercado, como Braintree y Stripe, pero antes de decidir sobre una puerta de enlace de pago, pregúntese lo siguiente:
 
 - ¿Cuál es mi requisito empresarial?
 - ¿Está dentro de mi presupuesto?
