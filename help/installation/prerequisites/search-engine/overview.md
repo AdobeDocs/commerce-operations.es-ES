@@ -1,8 +1,9 @@
 ---
 title: Requisitos previos del motor de búsqueda
 description: Siga estos pasos para instalar y configurar el software de motor de búsqueda admitido para las instalaciones locales de Adobe Commerce y Magento Open Source.
+feature: Install, Search
 exl-id: 44ea638a-7200-4269-be1b-b0851de2c4f4
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
 workflow-type: tm+mt
 source-wordcount: '786'
 ht-degree: 0%
@@ -40,15 +41,15 @@ El diagrama anterior muestra:
 
 * La aplicación Commerce y el motor de búsqueda están instalados en hosts diferentes.
 
-   La ejecución en hosts independientes requiere el funcionamiento del proxy. (La agrupación en clúster del motor de búsqueda excede el ámbito de esta guía, pero puede encontrar más información en la sección [Documentación de clúster de Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/guide/current/distributed-cluster.html).)
+  La ejecución en hosts independientes requiere el funcionamiento del proxy. (La agrupación en clúster del motor de búsqueda excede el ámbito de esta guía, pero puede encontrar más información en la sección [Documentación de clúster de Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/guide/current/distributed-cluster.html).)
 
 * Cada host tiene su propio servidor web; los servidores web no tienen por qué ser iguales.
 
-   Por ejemplo, la aplicación Commerce puede ejecutar Apache y el motor de búsqueda puede ejecutar nginx.
+  Por ejemplo, la aplicación Commerce puede ejecutar Apache y el motor de búsqueda puede ejecutar nginx.
 
 * Ambos servidores web utilizan Transport Layer Security (TLS).
 
-   La configuración de TLS está fuera del ámbito de nuestra documentación.
+  La configuración de TLS está fuera del ámbito de nuestra documentación.
 
 Las solicitudes de búsqueda se procesan de la siguiente manera:
 
