@@ -2,7 +2,8 @@
 title: Seguridad de infraestructura en nube
 description: Obtenga información sobre cómo mantenemos seguro Adobe Commerce en la infraestructura en la nube.
 exl-id: cd5d1106-c8db-4b70-b1c7-12378d7d77a7
-source-git-commit: 50882bebb4712e6cf095a81297684f37e15b1a6b
+feature: Cloud, Security
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '1644'
 ht-degree: 0%
@@ -23,7 +24,7 @@ Proporciona rápidamente una protección de CDN y denegación de servicio distri
 
 ## Firewall de aplicaciones web (WAF)
 
-El firewall de aplicaciones web de Fastly (WAF) se utiliza para proporcionar protección adicional. El WAF basado en la nube de Fastly utiliza reglas de terceros de fuentes comerciales y de código abierto como el conjunto de reglas principal de OWASP. Además, se emplean reglas específicas de Adobe Commerce. Los clientes están protegidos de ataques clave en la capa de aplicación, incluidos ataques de inyección e entradas malintencionadas, scripts entre sitios, exfiltración de datos, violaciones del protocolo HTTP y otras amenazas del Top 10 de OWASP.
+El firewall de aplicaciones web de Fastly (WAF) se utiliza para proporcionar protección adicional. El WAF basado en la nube de Fastly utiliza reglas de terceros de fuentes comerciales y de código abierto como el Conjunto de reglas principal de OWASP. Además, se emplean reglas específicas de Adobe Commerce. Los clientes están protegidos de ataques clave en la capa de aplicación, incluidos ataques de inyección e entradas malintencionadas, scripts entre sitios, exfiltración de datos, violaciones del protocolo HTTP y otras amenazas del Top 10 de OWASP.
 
 Adobe Commerce actualiza las reglas WAF en caso de que se detecten nuevas vulnerabilidades que permitan a Managed Services &quot;aplicar parches virtuales&quot; a los problemas de seguridad antes de aplicar los parches de software. Fastly WAF no proporciona servicios de limitación de velocidad o detección de bots. Si lo desea, los clientes pueden obtener una licencia de un servicio de detección de bots de terceros compatible con Fastly.
 
@@ -92,7 +93,7 @@ El RGPD es un marco legal que establece directrices para la recopilación y el p
 
 Básicamente, se debe notificar a los visitantes los datos que el sitio recopila de ellos y dar su consentimiento explícito a la recopilación de información. Los sitios deben notificar a los visitantes si se infringen los datos personales que mantiene el sitio.
 
-El comerciante o empresa que gestione el sitio también debe tener un responsable de protección de datos dedicado que supervise la seguridad de datos del sitio, y esta persona (o equipo de administración del sitio web) debe estar disponible para ponerse en contacto si un visitante solicita que se borren sus datos.
+El comerciante o empresa que gestione el sitio también debe tener un responsable de la protección de datos que supervise la seguridad de los datos del sitio, y esta persona (o equipo de administración del sitio web) debe estar disponible para ponerse en contacto si un visitante solicita que se borren sus datos.
 
 El RGPD también exige que cualquier información de identificación personal (como nombres, raza y fecha de nacimiento) recopilada sea anónima o seudónima.
 

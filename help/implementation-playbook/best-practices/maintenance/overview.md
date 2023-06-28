@@ -2,7 +2,8 @@
 title: Fase de mantenimiento de implementación
 description: Conozca las prácticas recomendadas de implementación para la fase de mantenimiento de los proyectos de Adobe Commerce.
 exl-id: bd052412-a41c-4dbd-9aba-ba2fcac31f2d
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+feature: Best Practices
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '277'
 ht-degree: 0%
@@ -51,7 +52,6 @@ Las secciones siguientes incluyen información sobre prácticas recomendadas par
 - [Cómo reindexar](https://developer.adobe.com/commerce/php/development/components/indexing/#how-to-reindex)
 - [Prácticas recomendadas de configuración para indexadores&#x200B;](indexer-configuration.md)
 - [Prácticas recomendadas de configuración para el procesamiento de pedidos](order-processing-configuration.md)
-
 <!-- Asset not yet integrated from CTAG deck:
 - Plan upsizing for planned traffic increases during promotions or holidays -->
 

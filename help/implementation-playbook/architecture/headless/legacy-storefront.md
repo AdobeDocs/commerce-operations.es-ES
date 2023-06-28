@@ -2,7 +2,8 @@
 title: Arquitectura de tienda emparejada
 description: Obtenga información sobre lo que significa una tienda emparejada en el contexto de las arquitecturas de Adobe Commerce sin encabezado.
 exl-id: 978e6853-4fbe-45b8-8e46-f491c6724fc6
-source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
+feature: Integration
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '315'
 ht-degree: 0%
@@ -31,7 +32,7 @@ La opción de implementación predeterminada actual para la mayoría de los clie
 
 Antes de entrar en las opciones sin encabezado, vamos a empezar con la arquitectura de tienda más familiar. Si sin encabezado está disociado, esta sería la arquitectura de tienda emparejada, más comúnmente vista con nuestras demostraciones de Luma.
 
-Aquí es donde las funcionalidades de la tienda están estrechamente integradas con los servicios principales de comercio, no separados por esa capa de API de GraphQL. Por lo tanto, hay mucha lógica empresarial asociada a ese tema. Este enfoque no es sin encabezado y no es PWA.
+Aquí es donde las funcionalidades de la tienda están estrechamente integradas con los servicios principales de comercio, no separados por esa capa de API de GraphQL. Por lo tanto, hay mucha lógica empresarial asociada a ese tema. Este enfoque no es sin encabezado, y no es PWA.
 
 Actualmente, esta es la opción más común que utilizan los comerciantes porque tiene una compatibilidad de funciones del 100 % con las capacidades de comercio B2B y B2C. La comunidad está familiarizada con él, existe un ecosistema de experiencia maduro a su alrededor y tiene una amplia compatibilidad con las extensiones de Adobe Commerce Marketplace.
 

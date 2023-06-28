@@ -2,7 +2,8 @@
 title: Funcionalidades de Adobe Commerce
 description: Descubra cómo las funcionalidades de Adobe Commerce nos diferencian de la competencia.
 exl-id: 6d2196b4-56ee-4048-b5e5-930811e7e50b
-source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
+feature: Paas
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '360'
 ht-degree: 0%
@@ -11,9 +12,9 @@ ht-degree: 0%
 
 # Funciones de Adobe Commerce
 
-Adobe Commerce es una de las plataformas de comercio electrónico más fiables y fiables del mercado. Esa confianza y fiabilidad han quedado demostradas en el crecimiento de las empresas que la utilizan. Según[Tribunal de alojamiento](https://hostingtribunal.com/blog/magento-statistics/#gref), las marcas que aprovechan Adobe Commerce como plataforma de comercio electrónico crecen tres veces más rápido en comparación con las marcas de otras plataformas.
+Adobe Commerce es una de las plataformas de comercio electrónico más fiables y fiables del mercado. Esa confianza y fiabilidad han quedado demostradas en el crecimiento de las empresas que la utilizan. Según [Tribunal de alojamiento](https://hostingtribunal.com/blog/magento-statistics/#gref), las marcas que aprovechan Adobe Commerce como plataforma de comercio electrónico crecen tres veces más rápido en comparación con las marcas de otras plataformas.
 
-La capacidad de Adobe Commerce para gestionar cualquier complejidad que pueda tener su marca la ha convertido en una opción popular a medida que las empresas aumentan su sofisticación. Tanto si las marcas se centran en un único sitio de una región como si necesitan conectar varios sitios o tiendas en todo el mundo, Adobe Commerce cuenta con la infraestructura para crear una experiencia perfecta y conectada. Como socio, aprovechamos nuestra experiencia para personalizar el sitio y adaptarlo a sus necesidades únicas.
+La capacidad de Adobe Commerce para gestionar cualquier complejidad a la que se pueda enfrentar su marca la ha convertido en una opción popular a medida que las empresas aumentan su sofisticación. Tanto si las marcas se centran en un único sitio de una región como si necesitan conectar varios sitios o tiendas en todo el mundo, Adobe Commerce cuenta con la infraestructura para crear una experiencia perfecta y conectada. Como socio, aprovechamos nuestra experiencia para personalizar el sitio y adaptarlo a sus necesidades únicas.
 
 El Adobe es bien conocido gracias a los productos creativos, pero también tiene un negocio digital significativo que proporciona administración de contenido, análisis, orquestación de campañas, capacidades de personalización de marketing basadas en cuentas y, por supuesto, comercio.
 

@@ -2,10 +2,9 @@
 title: Prácticas recomendadas para configurar promociones
 description: Conozca las prácticas recomendadas para configurar reglas de ventas y códigos de cupones para optimizar el rendimiento de la tienda de Commerce.
 role: User
-feature: Best Practices
-feature-set: Commerce
+feature: Best Practices, Price Rules, Shopping Cart
 exl-id: 6e177836-b8da-4e55-842c-e12ff54ffaf5
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '252'
 ht-degree: 0%

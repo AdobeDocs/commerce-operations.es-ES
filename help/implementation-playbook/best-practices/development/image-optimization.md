@@ -3,9 +3,8 @@ title: Optimización de imágenes para un sitio más interactivo
 description: Conozca los pasos para optimizar las imágenes y utilice la Optimización rápida de imágenes para optimizar el tiempo de respuesta en sus sitios de Adobe Commerce.
 role: Developer, Admin
 feature: Best Practices
-feature-set: Commerce
 exl-id: ada8b987-97ed-4232-9e1b-7e0a791a0807
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '210'
 ht-degree: 0%

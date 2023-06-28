@@ -2,7 +2,8 @@
 title: Optimización del rendimiento
 description: Obtenga información sobre la optimización del rendimiento y los pasos a seguir para revisar el rendimiento de su implementación de Adobe Commerce.
 exl-id: 506ef2cc-c6fd-4401-afa5-a71e7b9871e6
-source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
+feature: Cloud
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '306'
 ht-degree: 0%
@@ -24,7 +25,7 @@ El rendimiento es un gran tema. Cuando los usuarios experimentan un sitio lento 
 
 El impacto de una experiencia lenta suele definirse por dos indicadores, y cada factor puede ser causado por toneladas de razones.
 
-El tiempo de espera alto hasta el primer byte (TTFB) suele considerarse un indicador que define la velocidad de respuesta del servidor. El tiempo no solo proviene de la ejecución del código fuente para administrar la solicitud, sino que también puede verse afectado por los siguientes factores:
+El tiempo de espera alto para el primer byte (TTFB) suele considerarse como un indicador que define la velocidad de respuesta del servidor. El tiempo no solo proviene de la ejecución del código fuente para administrar la solicitud, sino que también puede verse afectado por los siguientes factores:
 
 - Búsqueda de DNS
 - Consultas lentas desde la capa DB

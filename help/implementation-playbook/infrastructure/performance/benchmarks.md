@@ -2,7 +2,8 @@
 title: Parámetros de rendimiento
 description: Revise los resultados de las pruebas de rendimiento de las implementaciones de Adobe Commerce alojadas en la infraestructura de la nube de Adobe.
 exl-id: cc9b090a-a504-4df3-aa32-81882f431dd9
-source-git-commit: eeb7146a8051e8692ebf974d65db75a4999cf2e6
+feature: Cloud
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '594'
 ht-degree: 0%
@@ -49,13 +50,13 @@ Las mediciones de rendimiento se basan en actividades simuladas de tiendas diari
    - 3000 usuarios simultáneos en la tienda
    - Establezca en Tasa de aciertos de caché de CDN del 30 %
 
-      El uso efectivo de la capa de caché aumenta el número de vistas de página por hora.
+     El uso efectivo de la capa de caché aumenta el número de vistas de página por hora.
 
 - **API de GraphQL**
    - 250 hilos simultáneos
    - Establezca en Tasa de aciertos de caché de CDN al 0%
 
-      Los tiempos de respuesta mejoran significativamente con una capa de almacenamiento en caché delante de GraphQL.
+     Los tiempos de respuesta mejoran significativamente con una capa de almacenamiento en caché delante de GraphQL.
 
 - **Web del administrador**
    - 500 usuarios simultáneos

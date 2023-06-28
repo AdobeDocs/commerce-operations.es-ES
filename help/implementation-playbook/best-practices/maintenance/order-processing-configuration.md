@@ -3,9 +3,8 @@ title: Prácticas recomendadas de configuración para el procesamiento de pedido
 description: Conozca las prácticas recomendadas de configuración para mejorar el rendimiento de cierre de compra y procesamiento de pedidos.
 role: Admin, User
 feature: Best Practices
-feature-set: Commerce
 exl-id: d15fe845-670f-4f7e-9645-7e111e6e809f
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '249'
 ht-degree: 0%
@@ -33,17 +32,17 @@ Los pasos para habilitar el procesamiento asincrónico de pedidos dependen del m
 
 - Para Adobe Commerce en infraestructura en la nube y sitios locales en modo de producción, utilice el siguiente comando de CLI de Magento para habilitar la indexación asíncrona:
 
-   ```php
-   php bin/magento config:set dev/grid/async_indexing 1
-   ```
+  ```php
+  php bin/magento config:set dev/grid/async_indexing 1
+  ```
 
 - Para los sitios locales de Adobe Commerce en modo predeterminado o de producción, habilite la indexación asíncrona actualizando la configuración de la cuadrícula en el Administrador.
 
-   Consulte [Habilitar las actualizaciones y reindexaciones programadas de la cuadrícula](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-scheduled-operations.html#enable-scheduled-grid-updates-and-reindexing)
+  Consulte [Habilitar las actualizaciones y reindexaciones programadas de la cuadrícula](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-scheduled-operations.html#enable-scheduled-grid-updates-and-reindexing)
 
-   >[!WARNING]
-   >
-   >Pruebe siempre los cambios de configuración en el entorno de ensayo antes de actualizar el entorno de producción.
+  >[!WARNING]
+  >
+  >Pruebe siempre los cambios de configuración en el entorno de ensayo antes de actualizar el entorno de producción.
 
 ## Información adicional
 

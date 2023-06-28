@@ -3,9 +3,8 @@ title: Práctica recomendada para el tamaño de memoria de OPcache
 description: Describe cómo evitar la degradación del rendimiento mediante la configuración específica del consumo de memoria OPcache en proyectos de Adobe Commerce.
 role: Developer
 feature: Best Practices
-feature-set: Commerce
 exl-id: d1e10068-e4e8-4e75-9f30-f3a89a08d791
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '147'
 ht-degree: 0%

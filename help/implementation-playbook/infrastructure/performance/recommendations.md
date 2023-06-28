@@ -2,7 +2,9 @@
 title: Recommendations de optimización de rendimiento
 description: Optimice el rendimiento de su implementación de Adobe Commerce siguiendo estas recomendaciones.
 exl-id: c5d62e23-be43-4eea-afdb-bb1b156848f9
-source-git-commit: 821ef18c1b0f00a6b9574be968ad76f0c230335c
+feature: Cloud
+topic: Performance
+source-git-commit: 7c2e2bdabf47e1367ffb6761230d3d43f0f9d0cf
 workflow-type: tm+mt
 source-wordcount: '1290'
 ht-degree: 0%
@@ -81,7 +83,7 @@ innodb-thread-concurrency = 2 * (NumCPUs+NumDisks)
 
 ### Almacenamiento en caché de sesión
 
-El almacenamiento en caché de sesión es un buen candidato para configurar para una instancia independiente de Redis. La configuración de memoria para este tipo de caché debe tener en cuenta la estrategia de abandono del carro de compras del sitio y el tiempo que debe esperar una sesión para permanecer en la caché.
+El almacenamiento en caché de sesión es un buen candidato para configurar para una instancia independiente de Redis. La configuración de memoria para este tipo de caché debe tener en cuenta la estrategia de abandono del carro de compras del sitio y el tiempo que una sesión debería esperar permanecer en la caché.
 
 Redis debería tener suficiente memoria asignada para guardar todas las demás cachés en la memoria para un rendimiento óptimo. La caché de bloques será el factor clave para determinar la cantidad de memoria que se va a configurar. La caché de bloques aumenta en relación con el número de páginas de un sitio (número de SKU x número de vistas de tiendas).
 
@@ -127,7 +129,7 @@ Por ejemplo, en 2020, Adobe lanzó una optimización para la capa de Redis, que 
 
 Muchos de los problemas se originan en los datos, incluidos los modelos de datos incorrectos, los datos que no están estructurados correctamente y los datos a los que les falta un índice.
 
-Se ve bien si está probando algunas conexiones, pero se ve en producción cuando el tráfico real llega y aquí es donde entra en juego la lentitud. Es muy importante que los integradores de sistemas sepan cómo diseñar un modelo de datos (especialmente para los atributos de producto), evitar añadir atributos innecesarios y mantener atributos obligatorios que afecten a la lógica empresarial (como precios, disponibilidad de existencias y búsqueda).
+Se ve bien si está probando algunas conexiones, pero se ve en producción cuando el tráfico real llega y aquí es donde entra en juego la lentitud. Es muy importante que los integradores de sistemas sepan cómo diseñar un modelo de datos (especialmente para los atributos de producto), evitar añadir atributos innecesarios y mantener atributos obligatorios que afecten a la lógica empresarial (como precios, disponibilidad de stock y búsqueda).
 
 Para aquellos atributos que no afectan a la lógica empresarial pero que aún necesitan estar presentes en la tienda, combínelos en unos pocos atributos (por ejemplo, formato JSON).
 

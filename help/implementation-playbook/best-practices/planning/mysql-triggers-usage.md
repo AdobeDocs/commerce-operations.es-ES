@@ -2,10 +2,9 @@
 title: Uso de déclencheur MySQL
 description: Aprenda a utilizar las déclencheur MySQL de forma eficaz con Adobe Commerce.
 role: Developer
-feature-set: Commerce
 feature: Best Practices
 exl-id: acac3e47-67c8-4eea-80e3-e26f2854391a
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '320'
 ht-degree: 0%

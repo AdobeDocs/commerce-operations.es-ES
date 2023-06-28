@@ -2,7 +2,8 @@
 title: Partes interesadas clave
 description: Revise las partes interesadas clave involucradas en una implementación de Adobe Commerce y quién es el propietario de los diferentes aspectos del proyecto.
 exl-id: 04d8270f-3f68-445a-8e7a-e17905a6f77c
-source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
+feature: Best Practices
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '390'
 ht-degree: 0%
@@ -38,6 +39,6 @@ La mayoría de las implementaciones de comercio requieren varias plataformas dif
 
 ## ¿Quién es el patrocinador ejecutivo?
 
-Digital Commerce 360 ha informado que la razón número uno por la que las organizaciones aún no han invertido en una nueva transformación del comercio es porque carecen de apoyo de liderazgo. El grado en que el equipo de liderazgo está involucrado es crucial para el éxito de una marca. Se recomienda el soporte total de las siguientes funciones, incluidas las reuniones periódicas de puntos de comprobación a lo largo de la duración de una implementación comercial:
+Digital Commerce 360 ha informado que la razón número uno por la que las organizaciones aún no han invertido en una nueva transformación del comercio es porque carecen de apoyo de liderazgo. El grado de participación del equipo de liderazgo es crucial para el éxito de una marca. Se recomienda el soporte total de las siguientes funciones, incluidas las reuniones periódicas de puntos de comprobación a lo largo de la duración de una implementación comercial:
 
 - Toda la suite C

@@ -2,7 +2,8 @@
 title: Managed Services
 description: Revise las responsabilidades de Adobe Managed Services, los clientes y los proveedores de servicios en la nube para su Adobe Commerce en la implementación de la infraestructura en la nube.
 exl-id: b1442e31-06f4-4aa6-b24a-b6cda630d52f
-source-git-commit: 6509c939c7abc5462bffbe104466b2ff9e6fadc9
+feature: Cloud, Services
+source-git-commit: 7c2e2bdabf47e1367ffb6761230d3d43f0f9d0cf
 workflow-type: tm+mt
 source-wordcount: '521'
 ht-degree: 0%
@@ -65,4 +66,4 @@ El cliente es el principal responsable de la seguridad de su implementación per
 
 - El cliente debe realizar pruebas de penetración de su aplicación personalizada. El cliente, los socios de implementación o los servicios profesionales de Adobe Commerce pueden hacerse cargo de estas responsabilidades mediante recursos técnicos.
 
-- Los clientes son responsables de los requisitos de PCI de su aplicación personalizada y de sus propios procesos. La conformidad con PCI del cliente se basa en las certificaciones PCI de AWS y Adobe Commerce para minimizar las áreas que se deben revisar.
+- Los clientes son responsables de los requisitos de PCI de su aplicación personalizada y de sus propios procesos. La conformidad con PCI del cliente se basa en las certificaciones PCI de AWS y Adobe Commerce para minimizar las áreas que deben revisarse.

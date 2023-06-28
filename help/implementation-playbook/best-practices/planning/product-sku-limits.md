@@ -2,10 +2,9 @@
 title: Prácticas recomendadas sobre límites de productos
 description: Conozca las prácticas recomendadas para configurar las unidades de mantenimiento de stock (SKU) de los productos para maximizar el rendimiento del sitio.
 role: Admin
-feature: Best Practices
-feature-set: Commerce
+feature: Best Practices, Catalogs
 exl-id: 37af7b92-05ac-4a4f-9009-11e8d9f95c2f
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '356'
 ht-degree: 0%

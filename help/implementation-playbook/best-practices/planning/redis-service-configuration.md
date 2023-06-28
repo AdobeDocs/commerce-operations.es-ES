@@ -2,10 +2,9 @@
 title: Prácticas recomendadas para la configuración del servicio Redis
 description: Obtenga información sobre cómo mejorar el rendimiento del almacenamiento en caché mediante la implementación de caché de Redis extendida para Adobe Commerce.
 role: Developer, Admin
-feature-set: Commerce
-feature: Best Practices
+feature: Best Practices, Cache
 exl-id: 8b3c9167-d2fa-4894-af45-6924eb983487
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
 source-wordcount: '439'
 ht-degree: 0%
@@ -98,6 +97,7 @@ Separar la caché de Redis de la sesión de Redis le permite administrar la cach
 
    >[!NOTE]
    >`disable_locking` se debe establecer en `1`.
+   >   
 
    ```yaml
    SESSION_CONFIGURATION:
