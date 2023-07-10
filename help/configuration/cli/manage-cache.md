@@ -2,9 +2,9 @@
 title: Administrar la caché
 description: Administrar tipos de caché y ver su estado.
 exl-id: bbd76c00-727b-412e-a8e5-1e013a83a29a
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 5c316ade0619603eafa7ece8a7cd8c1595dee713
 workflow-type: tm+mt
-source-wordcount: '870'
+source-wordcount: '901'
 ht-degree: 0%
 
 ---
@@ -119,15 +119,19 @@ Resultado de muestra:
 
 ## Limpiar y vaciar tipos de caché
 
+>[!NOTE]
+>
+>La caché de varias páginas se puede invalidar simultánea y automáticamente **_sin_** estas entidades están editando. Por ejemplo, cuando cualquier producto del catálogo se asigna a una categoría o cuando [!UICONTROL related product rule] se ha modificado.
+
 Para eliminar de la caché elementos que no estén actualizados, puede _limpio_ o _vaciar_ tipos de caché:
 
 - Al limpiar un tipo de caché, se eliminan todos los elementos de los tipos de caché de Commerce habilitados únicamente. En otras palabras, esta opción no afecta a otros procesos o aplicaciones porque limpia únicamente la caché que utiliza Commerce.
 
-   Los tipos de caché deshabilitados no se limpian.
+  Los tipos de caché deshabilitados no se limpian.
 
-   >[!TIP]
-   >
-   >Limpie siempre la caché después de actualizar versiones de Magento Open Source o Adobe Commerce, actualizar de Magento Open Source a Adobe Commerce o instalar B2B para Adobe Commerce o cualquier módulo.
+  >[!TIP]
+  >
+  >Limpie siempre la caché después de actualizar versiones de Magento Open Source o Adobe Commerce, actualizar de Magento Open Source a Adobe Commerce o instalar B2B para Adobe Commerce o cualquier módulo.
 
 - Al vaciar un tipo de caché, se depura el almacenamiento de caché, lo que podría afectar a otros procesos y aplicaciones que estén utilizando el mismo almacenamiento.
 
