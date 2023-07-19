@@ -2,9 +2,9 @@
 title: Establecer valores de configuración
 description: Obtenga información sobre cómo establecer valores de configuración y cambiar valores que están bloqueados en el Administrador.
 exl-id: 1dc2412d-50b3-41fb-ab22-3eccbb086302
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 064be78a16142fc18bf64256eafde4b14c3ad529
 workflow-type: tm+mt
-source-wordcount: '982'
+source-wordcount: '1040'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ Para establecer un valor de configuración, debe conocer al menos una de las sig
 - La ruta de configuración
 - Para establecer un valor de configuración para un ámbito en particular, debe conocer el código de ámbito.
 
-   Para establecer un valor de configuración para el ámbito predeterminado, no es necesario que haga nada.
+  Para establecer un valor de configuración para el ámbito predeterminado, no es necesario que haga nada.
 
 ### Buscar la ruta de configuración
 
@@ -289,3 +289,8 @@ Resultado:
 ```terminal
 web/unsecure/base_url - http://example-for-store.com/
 ```
+
+>[!INFO]
+>
+>El código de ámbito solo puede incluir letras (a-z o A-Z), números (0-9) y guiones bajos (_). Además, el primer carácter debe ser una letra. Si se utilizan mayúsculas o minúsculas al crear un nuevo sitio web o vista de tienda, internamente la coincidencia no distinguirá entre mayúsculas y minúsculas para dar cabida a la anulación de los ajustes de configuración a través de variables de entorno. Consulte [Utilice variables de entorno para anular los ajustes de configuración](../reference/override-config-settings.md#environment-variables).
+
