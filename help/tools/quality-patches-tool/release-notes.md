@@ -2,9 +2,9 @@
 title: Notas de versión
 description: Obtenga información acerca de los parches disponibles para Adobe Commerce y los problemas que resuelven.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 6299aa825c04a5afd31728e763269cee46cfe513
+source-git-commit: 7649f4ffb0a04053d9a674aae7c29eb09ed02006
 workflow-type: tm+mt
-source-wordcount: '13230'
+source-wordcount: '13737'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,32 @@ El [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) ofr
 >[!INFO]
 >
 >Para obtener información acerca de [!DNL quality patches] creado por la Comunidad para el Magento Open Source, consulte las [notas de la versión](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.35 {#v1-1-35}
+
+* **ACSD-51899** (para Adobe Commerce y Magento Open Source >=2.4.0 &lt;2.4.7): corrige el problema por el que la dirección de envío predeterminada en el paso de envío de pago se rellena automáticamente con una dirección de recogida en tienda seleccionada anteriormente.
+* **ACSD-52041** (para Adobe Commerce y Magento Open Source >=2.4.4 &lt;2.4.7): corrige el problema en el que el mensaje de error: *[ERROR] [!DNL Page Builder] se ha procesado durante 5 segundos sin liberar bloqueos.* aparece en el navegador Chrome al guardar contenido editado con [!DNL Page Builder].
+* **ACSD-52095** (para Adobe Commerce y Magento Open Source >=2.3.7 &lt;2.4.6): corrige el problema en el que la variable `manage_stock` el valor se ha definido incorrectamente como 0 en el archivo CSV después de la exportación del producto.
+* **ACSD-51358** (para Adobe Commerce >=2.4.5 &lt;2.4.7): corrige el problema en el que al eliminar una actualización programada sin una fecha de finalización se eliminan otras actualizaciones programadas para la misma entidad.
+* **ACSD-48070** (para Adobe Commerce >=2.3.7 &lt;2.4.7): corrige el problema en el que la edición de una actualización programada déclencheur una excepción.
+* **ACSD-51890** (para Adobe Commerce y Magento Open Source >=2.4.0 &lt;2.4.7): corrige el problema en el que la variable [!UICONTROL Submit review] se puede hacer clic varias veces sin [!DNL Google reCAPTCHA] validación v3.
+* **ACSD-51984** (para Adobe Commerce >=2.4.5 &lt;2.4.7): corrige el problema donde no está marcado *[!UICONTROL Use Default Value]* y *[!UICONTROL non-default product field]* Los valores de no se guardan para el segundo sitio web, tienda y vista de tienda.
+* **ACSD-52398** (para Adobe Commerce y Magento Open Source >=2.4.0 &lt;2.4.7): corrige el error *La cantidad solicitada no está disponible* que se produce al intentar actualizar la cantidad de un producto agrupado en el carro de compras de la tienda.
+* **ACSD-52786** (para Adobe Commerce y Magento Open Source >=2.4.5 &lt;2.4.6): corrige el problema en el que una condición de regla de catálogo *El SKU es* se aplica a todos los productos que comienzan con el SKU determinado.
+* **ACSD-52921** (para Adobe Commerce y Magento Open Source >=2.4.5 &lt;2.4.7): corrige el problema en el que se produce un error interno al solicitar detalles del carro de compras a GraphQL cuando hay un producto configurable sin existencias en el carro de compras.
+* **ACSD-51683** (para Adobe Commerce y Magento Open Source >=2.4.6 &lt;2.4.7): corrige el problema en el que una opción personalizable no se puede agregar al carro de compras mediante GraphQL.
+* **ACSD-52133** (para Adobe Commerce y Magento Open Source >=2.4.6 &lt;2.4.7): corrige el problema en el que una cuenta de cliente no se puede guardar después de una actualización.
+* **ACSD-52202** (para Adobe Commerce y Magento Open Source >=2.4.3 &lt;2.4.7): corrige el problema en el que la cantidad comercializable de existencias por defecto cambia incorrectamente a 0 cuando se cambia una existencias por defecto a 0 cant. en el cumplimiento del pedido.
+* **ACSD-51265** (para Adobe Commerce y Magento Open Source >=2.4.2 &lt;2.4.7): corrige el problema con `catalog_product_price` rendimiento de reindexación cuando hay demasiados productos agrupados en el sistema.
+* **ACSD-52831** (para Adobe Commerce >=2.3.7 &lt;2.4.7): corrige el problema en el que los clientes no pueden realizar pedidos de presupuesto negociables cuando [!DNL Google reCAPTCHA v3 Invisible] está activada.
+* **ACSD-51845** (para Adobe Commerce y Magento Open Source >=2.4.4 &lt;2.4.7): corrige el problema en el que los productos subsiguientes con precios de nivel y diferentes conjuntos de atributos no se pueden actualizar a través de la API de REST masiva asincrónica.
+* **ACSD-52815** (para Adobe Commerce y Magento Open Source >=2.3.7 &lt;2.4.7): corrige el problema en el que la entrada del campo quantity de un origen no predeterminado solo admite hasta 6 dígitos, a diferencia de 8 para un stock predeterminado.
+* **ACSD-51149** (para Adobe Commerce >=2.3.7 &lt;2.4.7): corrige el problema en el que Importación programadaExport con permisos de catálogo habilitados invalida los indexadores y luego los vaciados de caché por parte de cron.
+* **ACSD-50815** (para Adobe Commerce y Magento Open Source >=2.4.5 &lt;2.4.6): corrige el problema en el que la cantidad decimal de un producto simple no se puede utilizar para una nueva opción de producto agrupado.
+* Versiones actualizadas para ACSD-47803.
+* Se ha actualizado el título de ACSD-51892.
+* Se ha actualizado ACSD-51379.
+* Se ha actualizado ACSD-49970-v2.
 
 ## v1.1.34 {#v1-1-34}
 
