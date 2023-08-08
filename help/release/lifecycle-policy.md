@@ -2,10 +2,10 @@
 title: Directiva de ciclo vital de software
 description: Obtenga información acerca de las fechas clave de fin de compatibilidad de software para las versiones de Adobe Commerce.
 exl-id: 9ee4ecc8-d893-412a-a605-5a8606a1b9a9
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: f5ab11a43bb90fa96c20cea8d8c85eb2a4c98826
 workflow-type: tm+mt
-source-wordcount: '315'
-ht-degree: 10%
+source-wordcount: '326'
+ht-degree: 12%
 
 ---
 
@@ -22,10 +22,11 @@ Para Adobe Commerce 2.4.4 y versiones posteriores:
 ## Fin del soporte de software
 
 | Versión | Disponibilidad general | Fin del soporte de software<sup>1</sup> | Versión de PHP dependiente |
-|----------------------------|----------------------|-------------------------------------|-----------------------|
-| Adobe Commerce 2.4.4 | 12 de abril de 2022 | 24 de abril de 2025 | PHP 8.1 |
-| Adobe Commerce 2.4.5 | 9 de agosto de 2022 | 9 de agosto de 2025 | PHP 8.1 |
-| Adobe Commerce 2.4.6 | 14 de marzo de 2023 | 14 de marzo de 2026 | PHP 8.1 y PHP 8.2 |
+|----------------------|----------------------|-------------------------------------|-----------------------|
+| Adobe Commerce 2.4.7 | 19 de abril de 2024 | 19 de abril de 2027 | 8.2 y 8.3 |
+| Adobe Commerce 2.4.6 | 14 de marzo de 2023 | 14 de marzo de 2026 | 8.1 y 8.2 |
+| Adobe Commerce 2.4.5 | 9 de agosto de 2022 | 9 de agosto de 2025 | 8.1 |
+| Adobe Commerce 2.4.4 | 12 de abril de 2022 | 24 de abril de 2025 | 8.1 |
 
 {style="table-layout:auto"}
 
@@ -44,6 +45,7 @@ Para Adobe Commerce 2.4.4 y versiones posteriores:
     <th colspan="4">2024</th>
     <th colspan="4">2025</th>
     <th colspan="4">2026</th>
+    <th colspan="4">2027</th>
   </tr>
 </thead>
 <tbody>
@@ -70,32 +72,49 @@ Para Adobe Commerce 2.4.4 y versiones posteriores:
     <td>Q2</td>
     <td>Q3</td>
     <td>Q4</td>
+    <td>Q1</td>
+    <td>Q2</td>
+    <td>Q3</td>
+    <td>Q4</td>
   </tr>
   <tr>
     <td>2.4.4</td>
     <td>8.1</td>
     <td></td>
     <td colspan="13" style="background-color:#67ac68;"></td>
-    <td colspan="6"></td>
+    <td colspan="10"></td>
   </tr>
   <tr>
     <td>2.4.5</td>
     <td>8.1</td>
     <td colspan="2"></td>
     <td colspan="13" style="background-color:#67ac68;"></td>
-    <td colspan="5"></td>
+    <td colspan="9"></td>
   </tr>
   <tr>
     <td rowspan="2">2.4.6</td>
     <td>8.1</td>
-    <td colspan="5"></td>
+    <td colspan="4"></td>
     <td colspan="13" style="background-color:#67ac68;"></td>
-    <td colspan="2"></td>
+    <td colspan="8"></td>
   </tr>
   <tr>
     <td>8.2</td>
-    <td colspan="5"></td>
+    <td colspan="4"></td>
     <td colspan="13" style="background-color:#67ac68;"></td>
+    <td colspan="8"></td>
+  </tr>
+  <tr>
+    <td rowspan="2">2.4.7</td>
+    <td>8.2</td>
+    <td colspan="5"></td>
+    <td colspan="17" style="background-color:#67ac68;"></td>
+    <td colspan="2"></td>
+  </tr>
+  <tr>
+    <td>8.3</td>
+    <td colspan="5"></td>
+    <td colspan="17" style="background-color:#67ac68;"></td>
     <td colspan="2"></td>
   </tr>
 </tbody>

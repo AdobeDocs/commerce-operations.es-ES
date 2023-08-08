@@ -2,9 +2,9 @@
 title: Directiva de versión
 description: Obtenga información acerca de los distintos tipos de versiones de Adobe Commerce, incluidos los parches menores, los parches, los parches de seguridad, las funciones, las revisiones, los parches individuales y los parches personalizados.
 exl-id: 61a83de6-6a7b-4a88-8fff-1638b4fe472a
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: f5ab11a43bb90fa96c20cea8d8c85eb2a4c98826
 workflow-type: tm+mt
-source-wordcount: '818'
+source-wordcount: '832'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Uso de Adobe Commerce y Magento Open Source [versiones semánticas](https://semv
       - Corrección de errores de seguridad
       - Mejora de seguridad
 - **Lanzamiento del parche BETA**—2.4.7-beta1
-- **Versión de funciones**
+- **Extensibilidad, infraestructura y versión de servicios**
 - **Revisión**
 - **Parche individual**
 - **Parche personalizado**
@@ -62,9 +62,9 @@ Las versiones de disponibilidad general previas de las funciones de Adobe Commer
 
 Las versiones beta pueden contener defectos y se proporcionan &quot;TAL CUAL&quot; sin garantía de ningún tipo. Adobe no tendrá ninguna obligación de mantener, corregir, actualizar, cambiar, modificar o apoyar de otro modo (a través de los Servicios de Soporte de Adobe o de otro modo) las Versiones Beta. Se aconseja a los clientes que tengan cuidado y no dependan en modo alguno del correcto funcionamiento o rendimiento de las versiones beta y/o de la documentación o los materiales adjuntos. Por lo tanto, cualquier uso de las versiones beta es bajo el propio riesgo del cliente.
 
-## Versión de funciones
+## Extensibilidad, infraestructura y versión de servicios
 
-Las versiones de funciones contienen nuevas funciones y actualizaciones de funciones que se entregan como servicios independientes, independientes de las versiones de parches. Algunos ejemplos son servicios como Product Recommendations y Live Search, módulos independientes como PWA Studio y Inventory management (MSI) y actualizaciones de nuestros servicios e infraestructura en la nube.
+Versiones de funcionalidades que contienen nuevas funciones y actualizaciones de funcionalidades que se entregan como servicios independientes, independientes de las versiones de parches. Algunos ejemplos son la tecnología de extensibilidad como API Mesh and Eventing, productos SaaS como Product Recommendations y Live Search, módulos independientes como B2B y PWA Studio y actualizaciones de nuestra infraestructura y servicios de alojamiento en la nube.
 
 ## Revisión
 
