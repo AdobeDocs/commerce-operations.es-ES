@@ -1,15 +1,15 @@
 ---
-source-git-commit: 14f4346f4b0bfd1fa0fa44bd62c7d3611a7ffdea
+source-git-commit: 0ef5d741cf718a36f11850e3dd8a81e1f09f5bc2
 workflow-type: tm+mt
-source-wordcount: '563'
-ht-degree: 13%
+source-wordcount: '590'
+ht-degree: 12%
 
 ---
 # Versiones publicadas
 
 ## 2.4.7
 
-La fecha en la que finaliza la línea de versión 2.4.7 de aún no se ha establecido.
+La compatibilidad con la línea de versión 2.4.7 finaliza el 19 de abril de 2027.
 
 <table>
   <thead>
@@ -42,6 +42,12 @@ La compatibilidad con la línea de la versión 2.4.6 finaliza el 14 de marzo de 
   <tbody>
     <tr>
         <td>
+          <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-6-p2.html">2.4.6-p2</a>
+        </td>
+        <td>8 de agosto de 2023</td>
+    </tr>
+    <tr>
+        <td>
           <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-6-p1.html">2.4.6-p1</a>
         </td>
         <td>13 de junio de 2023</td>
@@ -67,6 +73,12 @@ La compatibilidad con la línea de versión 2.4.5 finaliza el 9 de agosto de 202
     </tr>
   </thead>
   <tbody>
+    <tr>
+        <td>
+          <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-5-p4.html">2.4.5-p4</a>
+        </td>
+        <td>8 de agosto de 2023</td>
+    </tr>
     <tr>
         <td>
           <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-5-p3.html">2,4,5-p3</a>
@@ -106,6 +118,12 @@ La compatibilidad con la línea de versión 2.4.4 finaliza el 12 de abril de 202
     </tr>
   </thead>
   <tbody>
+    <tr>
+        <td>
+          <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-4-p5.html">2.4.4-p5</a>
+        </td>
+        <td>8 de agosto de 2023</td>
+    </tr>
     <tr>
         <td>
           <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-4-p4.html">2.4.4-p4</a>
