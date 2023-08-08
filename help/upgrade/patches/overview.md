@@ -2,9 +2,9 @@
 title: Cómo funcionan los parches
 description: Obtenga información sobre los distintos tipos de parches para Adobe Commerce y Magento Open Source y cómo funcionan.
 exl-id: d7072ed4-7d51-41fe-881a-aae3b2000b55
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 915cac8c8d436105c4ae25f95bcaefbe19cc50c1
 workflow-type: tm+mt
-source-wordcount: '602'
+source-wordcount: '607'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ Utilice el [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tool
 
 A veces, el equipo de ingeniería de Adobe tarda un tiempo en incluir una corrección de errores realizada en GitHub en una versión de Adobe Commerce o de Compositor de Magento Open Source. Mientras tanto, puede crear un parche desde GitHub y utilizar el [`cweagans/composer-patches`](https://github.com/cweagans/composer-patches/) para aplicarlo a su instalación basada en Composer.
 
-Utilice el [línea de comandos] o [Compositor] para aplicar parches personalizados.
+Utilice el [línea de comandos](apply.md#command-line) o [Compositor](apply.md#composer) para aplicar parches personalizados.
 
 Existen muchas maneras de crear archivos de parche personalizados. El siguiente ejemplo se centra en la creación de un parche a partir de una confirmación de Git conocida.
 
@@ -96,4 +96,4 @@ Puede aplicar parches utilizando cualquiera de los siguientes métodos:
 
 >[!NOTE]
 >
->Para aplicar un parche a un proyecto de Adobe Commerce en la nube, consulte [Aplicar parches](https://devdocs.magento.com/cloud/project/project-patch.html) en el _Guía de Cloud_.
+>Para aplicar un parche a un proyecto de Adobe Commerce en la nube, consulte [Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) en el _Guía de Commerce en Cloud_.
