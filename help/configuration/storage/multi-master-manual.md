@@ -36,11 +36,11 @@ En este tema se utilizan las siguientes convenciones de nomenclatura:
 - El nombre de la base de datos principal es `magento` y su nombre de usuario y contraseña son `magento`
 - El nombre de la base de datos de comillas es `magento_quote` y su nombre de usuario y contraseña son `magento_quote`
 
-   La base de datos de presupuestos también se denomina _pago y envío_ base de datos.
+  La base de datos de presupuestos también se denomina _pago y envío_ base de datos.
 
 - El nombre de la base de datos de ventas es `magento_sales` y su nombre de usuario y contraseña son `magento_sales`
 
-   La base de datos de ventas también se denomina base de datos OMS.
+  La base de datos de ventas también se denomina base de datos OMS.
 
 >[!INFO]
 >
@@ -297,7 +297,7 @@ Donde
 
 - `<your sales DB name>` con el nombre de su base de datos de ventas.
 
-   En este tema, el nombre de la base de datos de ejemplo es `magento_sales`.
+  En este tema, el nombre de la base de datos de ejemplo es `magento_sales`.
 
 - `<root username>` con su nombre de usuario raíz MySQL
 - `<root user password>` con la contraseña del usuario
@@ -305,7 +305,7 @@ Donde
 
 ## Configurar la base de datos de presupuestos
 
-En esta sección se describen las tareas necesarias para eliminar claves externas de las tablas de la base de datos de ventas y mover las tablas a la base de datos de ventas.
+En esta sección se describen las tareas necesarias para colocar claves externas de las tablas de la base de datos de ventas y mover tablas a la base de datos de ventas.
 
 >[!INFO]
 >

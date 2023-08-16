@@ -1,6 +1,6 @@
 ---
 title: Adobe Managed Services
-description: Descubra cómo Adobe Managed Services puede ayudarle a mantener su implementación de Adobe Commerce.
+description: Descubra cómo Adobe Managed Services puede ayudarle a respaldar y mantener su implementación de Adobe Commerce.
 exl-id: b600b0e3-c6fd-4b86-ad2a-a445e599f1bd
 feature: Services
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
@@ -19,7 +19,7 @@ Adobe Managed Services proporciona aplicaciones e infraestructura alojadas y adm
 
 ## Ventajas
 
-![Infografía que muestra las ventajas de Adobe Managed Services](../../assets/playbooks/managed-services-benefits.png)
+![Infografía que muestra los beneficios de Adobe Managed Services](../../assets/playbooks/managed-services-benefits.png)
 
 ### Comparación de las opciones de implementación
 
@@ -374,7 +374,7 @@ La pila de seguridad de Adobe para Managed Services crea seguridad en en todos l
 
 Los socios de plataforma, como Amazon Web Service y Microsoft Azure, garantizan la máxima cobertura de seguridad al aplicar las personalizaciones de plataforma, mientras que el equipo de Managed Services de Adobe proporciona servicios de seguridad principales, como conformidad, registro, autenticación, análisis y monitorización, y seguridad del servidor y configuración de aplicaciones seguras. Consulte [Seguridad de Adobe Commerce](https://business.adobe.com/products/magento/secure-ecommerce.html) para obtener más información.
 
-El diagrama siguiente muestra la pila de tecnología de seguridad de Adobe Managed Services:
+El diagrama siguiente muestra el Adobe de la pila de tecnología de seguridad de Managed Services:
 
 ![Diagrama que muestra la pila de seguridad de Adobe Managed Services](../../assets/playbooks/managed-services-security-stack.svg)
 

@@ -21,7 +21,7 @@ El diagrama siguiente ilustra el marco de trabajo de Message Queue:
 
 - Un intercambio recibe mensajes de los editores y los envía a las colas. Aunque [!DNL RabbitMQ] admite varios tipos de intercambios, Commerce solo utiliza intercambios de temas. Un tema incluye una clave de enrutamiento, que contiene cadenas de texto separadas por puntos. El formato del nombre de un tema es `string1.string2`: por ejemplo, `customer.created` o `customer.sent.email`.
 
-   El agente de permite utilizar caracteres comodín al establecer reglas para reenviar mensajes. Puede utilizar un asterisco (`*`) para reemplazar _uno_ cadena o signo de almohadilla (`#`) para reemplazar 0 o más cadenas. Por ejemplo, `customer.*` filtraría por `customer.create` y `customer.delete`, pero no `customer.sent.email`. Sin embargo `customer.#` filtraría por `customer.create`,  `customer.delete`, y `customer.sent.email`.
+  El agente de permite utilizar caracteres comodín al establecer reglas para reenviar mensajes. Puede utilizar un asterisco (`*`) para reemplazar _uno_ cadena o signo de almohadilla (`#`) para reemplazar 0 o más cadenas. Por ejemplo, `customer.*` filtraría por `customer.create` y `customer.delete`, pero no `customer.sent.email`. Sin embargo `customer.#` filtraría por `customer.create`,  `customer.delete`, y `customer.sent.email`.
 
 - Una cola es un búfer que almacena mensajes.
 

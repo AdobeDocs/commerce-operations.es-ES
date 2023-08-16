@@ -50,7 +50,7 @@ Siga estas directrices para configurar conexiones a bases de datos remotas si el
 * Debe configurar una conexión para cada nodo de servidor web.
 * Normalmente, se configura una conexión de base de datos con el equilibrador de carga de base de datos; sin embargo, la agrupación en clúster de base de datos puede ser compleja y su configuración depende de usted. El Adobe no realiza recomendaciones específicas para la agrupación en clúster de bases de datos.
 
-   Para obtener más información, consulte [Documentación de MySQL](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html).
+  Para obtener más información, consulte [Documentación de MySQL](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html).
 
 ### Solución de problemas de conexión
 
@@ -97,6 +97,7 @@ Para crear una conexión remota:
    * CentOS: `service mysqld restart`
 
    * Ubuntu: `service mysql restart`
+
    >[!NOTE]
    >
    >Si MySQL no se inicia, busque en syslog el origen del problema. Resuelva el problema utilizando [Documentación de MySQL](https://dev.mysql.com/doc/refman/5.6/en/server-options.html#option_mysqld_bind-address) u otra fuente autorizada.

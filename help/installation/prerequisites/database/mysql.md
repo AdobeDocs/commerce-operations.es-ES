@@ -67,15 +67,15 @@ Describir admin_user en mysql 8.19
 | Campo | Tipo | Nulo | Clave | Predeterminado | Extra |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | user\_id | `int unsigned` | NO | PRI | `NULL` | `auto_increment` |
-| `firstname` | `varchar(32)` | SÍ |  | `NULL` |  |
-| `lastname` | `varchar(32`) | SÍ |  | `NULL` |  |
-| `email` | `varchar(128)` | SÍ |  | `NULL` |  |
-| `username` | `varchar(40)` | SÍ | UNI | `NULL` |  |
-| `password` | `varchar(255)` | NO |  | `NULL` |  |
-| `created` | `timestamp` | NO |  | `CURRENT_TIMESTAMP` | `DEFAULT_GENERATED` |
-| `modified` | `timestamp` | NO |  | `CURRENT_TIMESTAMP` | `DEFAULT_GENERATED` al actualizar `CURRENT_TIMESTAMP` |
-| `logdate` | `timestamp` | SÍ |  | `NULL` |  |
-| `lognum` | `smallint unsigned` | NO |  | `0` |  |
+| `firstname` | `varchar(32)` | SÍ | | `NULL` | |
+| `lastname` | `varchar(32`) | SÍ | | `NULL` | |
+| `email` | `varchar(128)` | SÍ | | `NULL` | |
+| `username` | `varchar(40)` | SÍ | UNI | `NULL` | |
+| `password` | `varchar(255)` | NO | | `NULL` | |
+| `created` | `timestamp` | NO | | `CURRENT_TIMESTAMP` | `DEFAULT_GENERATED` |
+| `modified` | `timestamp` | NO | | `CURRENT_TIMESTAMP` | `DEFAULT_GENERATED` al actualizar `CURRENT_TIMESTAMP` |
+| `logdate` | `timestamp` | SÍ | | `NULL` | |
+| `lognum` | `smallint unsigned` | NO | | `0` | |
 
 Excepto para _CAMISETA DE ALTA CALIDAD(1)_, todo el relleno entero (TINYINT > 1, SMALLINT, MEDIUMINT, INT, BIGINT) debe eliminarse del `db_schema.xml` archivo.
 

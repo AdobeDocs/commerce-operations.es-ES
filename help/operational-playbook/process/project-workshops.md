@@ -65,7 +65,7 @@ Los siguientes pasos de un proyecto de comercio electrónico se refieren a la de
 
 Se lleva a cabo una fase de descubrimiento en comercio electrónico con los posibles clientes, incluidos el propietario del producto, el jefe del equipo del proyecto y el posible cliente digital. Las partes interesadas de nivel C a veces se involucran.
 
-Desde el lado del equipo, el administrador de proyectos, el arquitecto funcional y el arquitecto técnico asisten al taller de descubrimiento. Esta fase está pensada para ir a través de todos los requisitos del cliente en bueno detalle para comprender sus necesidades y expectativas comerciales.
+Desde el lado del equipo, el administrador de proyectos, el arquitecto funcional y el arquitecto técnico asisten al taller de descubrimiento. Esta fase está pensada para ir a través de todos los requisitos del cliente en mayor detalle para comprender sus necesidades y expectativas empresariales.
 
 ## Diseño
 

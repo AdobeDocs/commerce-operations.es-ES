@@ -58,20 +58,19 @@ Debido al diseño de la solución de rendimiento de la base de datos dividida, e
 >- Usar los componentes tal cual _sin_ la solución split database.
 >- Quite los componentes para poder utilizar la solución de base de datos dividida.
 
-
 Esto también significa que puede:
 
 - Configuración de la solución de base de datos dividida _antes_ poner Commerce en producción.
 
-   Adobe recomienda configurar las bases de datos divididas lo antes posible después de instalar el software Commerce.
+  Adobe recomienda configurar las bases de datos divididas lo antes posible después de instalar el software Commerce.
 
 - [Configurar manualmente](multi-master-manual.md) la solución split database.
 
-   Debe realizar esta tarea si ya ha instalado componentes o si Commerce ya está en producción. (_No hacer_ actualizar un sistema de producción; realizar las actualizaciones en un sistema de desarrollo y sincronizar los cambios después de probarlos.)
+  Debe realizar esta tarea si ya ha instalado componentes o si Commerce ya está en producción. (_No hacer_ actualizar un sistema de producción; realizar las actualizaciones en un sistema de desarrollo y sincronizar los cambios después de probarlos.)
 
-   >[!WARNING]
-   >
-   >Debe realizar una copia de seguridad de las dos instancias de base de datos adicionales manualmente. Commerce realiza una copia de seguridad solo de la instancia de base de datos principal. El [`magento setup:backup --db`](../../installation/tutorials/backup.md) Las opciones de comando y administración no hacen una copia de seguridad de las tablas adicionales.
+  >[!WARNING]
+  >
+  >Debe realizar una copia de seguridad de las dos instancias de base de datos adicionales manualmente. Commerce realiza una copia de seguridad solo de la instancia de base de datos principal. El [`magento setup:backup --db`](../../installation/tutorials/backup.md) Las opciones de comando y administración no hacen una copia de seguridad de las tablas adicionales.
 
 ## Requisitos previos
 

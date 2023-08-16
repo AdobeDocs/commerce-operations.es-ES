@@ -129,7 +129,7 @@ redis-cli ping
 
 `PONG` debería ser la respuesta.
 
-Si ambos comandos se ejecutaron correctamente, Redis está configurado correctamente.
+Si ambos comandos se ejecutan correctamente, Redis se configura correctamente.
 
 ### Inspección de datos comprimidos
 

@@ -1,11 +1,11 @@
 ---
 title: Programación de versiones
-description: Descubra cuándo planea Adobe anunciar el lanzamiento de nuevas funciones sustanciales para Adobe Commerce.
+description: Descubra cuándo Adobe tiene previsto anunciar el lanzamiento de nuevas funciones sustanciales para Adobe Commerce.
 exl-id: ae1e09cd-966f-44a3-9e4d-b90bb838429d
 source-git-commit: 12b4f619673414f18d9697450e867681c6cb3194
 workflow-type: tm+mt
 source-wordcount: '752'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -63,7 +63,7 @@ La siguiente tabla proporciona las fechas de los lanzamientos programados (las f
   </tr>
   <tr>
     <td>19 de marzo de 2024</td>
-    <td>--</td>
+    <td>—</td>
     <td><img alt="Icono de revisión" src="../assets/icons/file-code.svg"></img> <a href="release-notes/commerce/overview.md">Parche beta</a>: 2.4.7-beta3</td>
   </tr>
   <tr>

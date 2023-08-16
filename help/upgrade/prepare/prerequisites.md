@@ -138,7 +138,7 @@ La compatibilidad con Elasticsearch 8.x se introdujo en Adobe Commerce 2.4.6. La
 
 Si actualiza de forma involuntaria la versión de Elasticsearch en el servidor o determina que necesita degradarla por cualquier otro motivo, también debe actualizar las dependencias del proyecto de Adobe Commerce. Por ejemplo, para reducir de Elasticsearch 8.x a 7.x
 
-1. Cambie el servidor de Elasticsearch 8.x a 7.x y asegúrese de que está en funcionamiento. Consulte la [Documentación del Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html).
+1. Reduzca el servidor de Elasticsearch 8.x a 7.x y asegúrese de que está en funcionamiento. Consulte la [Documentación del Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html).
 
 1. En el directorio raíz del proyecto de Adobe Commerce, actualice las dependencias del Compositor para eliminar el `Magento_Elasticsearch8` y sus dependencias de Compositor, e instale el `Magento_Elasticsearch7` módulo.
 

@@ -35,7 +35,7 @@ Con los siguientes parámetros:
 | `cache-backend-redis-server` | server | Nombre de host completo, dirección IP o ruta absoluta a un socket UNIX. El valor predeterminado de 127.0.0.1 indica que Redis está instalado en el servidor de Commerce. | `127.0.0.1` |
 | `cache-backend-redis-port` | puerto | Puerto de escucha del servidor Redis | `6379` |
 | `cache-backend-redis-db` | database | Necesario si utiliza Redis tanto para la caché predeterminada como para la caché de página completa. Debe especificar el número de base de datos de una de las cachés; la otra caché utiliza 0 de forma predeterminada.<br><br>**Importante**: Si utiliza Redis para más de un tipo de almacenamiento en caché, los números de la base de datos deben ser diferentes. Se recomienda asignar el número de base de datos de almacenamiento en caché predeterminado a 0, el número de base de datos de almacenamiento en caché de páginas a 1 y el número de base de datos de almacenamiento de sesión a 2. | `0` |
-| `cache-backend-redis-password` | contraseña | La configuración de una contraseña de Redis habilita una de sus funciones de seguridad integradas: `auth` , que requiere que los clientes se autentiquen para acceder a la base de datos. La contraseña se configura directamente en el archivo de configuración de Redis: `/etc/redis/redis.conf` |  |
+| `cache-backend-redis-password` | contraseña | La configuración de una contraseña de Redis habilita una de sus funciones de seguridad integradas: `auth` , que requiere que los clientes se autentiquen para acceder a la base de datos. La contraseña se configura directamente en el archivo de configuración de Redis: `/etc/redis/redis.conf` | |
 
 ### Ejemplo, comando
 
@@ -64,7 +64,7 @@ Con los siguientes parámetros:
 | `page-cache-redis-server` | server | Nombre de host completo, dirección IP o ruta absoluta a un socket UNIX. El valor predeterminado de 127.0.0.1 indica que Redis está instalado en el servidor de Commerce. | `127.0.0.1` |
 | `page-cache-redis-port` | puerto | Puerto de escucha del servidor Redis | `6379` |
 | `page-cache-redis-db` | database | Necesario si utiliza Redis tanto para la caché predeterminada como para la caché de página completa. Debe especificar el número de base de datos de una de las cachés; la otra caché utiliza 0 de forma predeterminada.<br/>**Importante**: Si utiliza Redis para más de un tipo de almacenamiento en caché, los números de la base de datos deben ser diferentes. Se recomienda asignar el número de base de datos de almacenamiento en caché predeterminado a 0, el número de base de datos de almacenamiento en caché de páginas a 1 y el número de base de datos de almacenamiento de sesión a 2. | `0` |
-| `page-cache-redis-password` | contraseña | La configuración de una contraseña de Redis habilita una de sus funciones de seguridad integradas: `auth` , que requiere que los clientes se autentiquen para acceder a la base de datos. Configure la contraseña en el archivo de configuración de Redis: `/etc/redis/redis.conf` |  |
+| `page-cache-redis-password` | contraseña | La configuración de una contraseña de Redis habilita una de sus funciones de seguridad integradas: `auth` , que requiere que los clientes se autentiquen para acceder a la base de datos. Configure la contraseña en el archivo de configuración de Redis: `/etc/redis/redis.conf` | |
 
 ### Ejemplo, comando
 
@@ -120,17 +120,17 @@ Después [configuración de un clúster de Redis en AWS](https://aws.amazon.com/
    - Abra una conexión SSH a la instancia EC2.
    - En la instancia EC2, instale el cliente Redis:
 
-      ```bash
-      sudo apt-get install redis
-      ```
+     ```bash
+     sudo apt-get install redis
+     ```
 
    - Agregar una regla de entrada al grupo de seguridad EC2: Tipo `- Custom TCP, port - 6379, Source - 0.0.0.0/0`
    - Añada una regla de entrada al grupo de seguridad ElastiCache Cluster: Tipo `- Custom TCP, port - 6379, Source - 0.0.0.0/0`
    - Conéctese a la CLI de Redis:
 
-      ```bash
-      redis-cli -h <ElastiCache Primary Endpoint host> -p <ElastiCache Primary Endpoint port>
-      ```
+     ```bash
+     redis-cli -h <ElastiCache Primary Endpoint host> -p <ElastiCache Primary Endpoint port>
+     ```
 
 ### Configure Commerce para utilizar el clúster
 
@@ -312,7 +312,7 @@ redis-cli ping
 
 La respuesta esperada es: `PONG`
 
-Si ambos comandos se ejecutaron correctamente, Redis está configurado correctamente.
+Si ambos comandos se ejecutan correctamente, Redis se configura correctamente.
 
 ### Inspección de datos comprimidos
 

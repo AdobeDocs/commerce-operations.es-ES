@@ -1,6 +1,6 @@
 ---
 title: El conocimiento es poder
-description: Descubra por qué es tan importante que todos los miembros de su organización inviertan en su implementación de Adobe Commerce.
+description: Descubra por qué es tan importante que todos los miembros de su organización inviertan en la implementación de Adobe Commerce.
 exl-id: a3929586-5ad2-4b30-8bc4-84da8f8b9eb5
 feature: Best Practices
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9

@@ -20,7 +20,7 @@ ht-degree: 0%
 
 La seguridad siempre debe ser una consideración importante para cualquier cosa relacionada con un proyecto de comercio electrónico. Sin una fuerte postura de seguridad, la superficie que puede ser atacada es exponencialmente mayor. Los conceptos e ideas presentados proporcionan métodos que están probados para reducir las vulnerabilidades comunes típicamente explotadas.
 
-Los siguientes conceptos no están en ningún orden en particular. Están pensados para proporcionar algunas ideas y conceptos a considerar. Muchas son gratuitas o requerirían una instalación y configuración mínimas y una monitorización posterior. Investigue estos temas fuera de este tutorial para asegurarse de que tiene una comprensión lo suficientemente profunda de los conceptos presentados aquí.
+Los siguientes conceptos no están en ningún orden en particular. Están pensados para proporcionar algunas ideas y conceptos a considerar. Muchas son gratuitas o requerirían una configuración y un control mínimos. Investigue estos temas fuera de este tutorial para asegurarse de que tiene una comprensión lo suficientemente profunda de los conceptos presentados aquí.
 
 ## Sistema de archivos de solo lectura
 

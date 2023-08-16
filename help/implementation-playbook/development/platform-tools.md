@@ -31,7 +31,7 @@ La siguiente tabla incluye soluciones que recomendamos y que pueden utilizarse e
 
 ## Base de datos
 
-Existen tres herramientas diferentes que utilizamos en función de las necesidades de la marca. MySQL es una buena solución de línea base como base de datos de Adobe Commerce si no espera que su tienda gestione cargas extremas.
+Existen tres herramientas diferentes que utilizamos en función de las necesidades de la marca. MySQL es una gran solución de línea base como la base de datos de Adobe Commerce si no espera que su tienda gestione cargas extremas.
 
 MariaDB se centra más en la comunidad y funciona mejor para los usuarios que se preocupan más por las características que por el rendimiento puro. MariaDB admite una gran variedad de motores de base de datos, cifrado de disco, interconectividad horizontal compleja y características de escalado, que podrían ser interesantes para grandes tiendas Adobe Commerce.
 

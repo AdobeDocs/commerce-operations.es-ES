@@ -2,7 +2,7 @@
 source-git-commit: 4c18f00e0b92e49924676274c4ed462a175a7e4b
 workflow-type: tm+mt
 source-wordcount: '146'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 # Verifique que la comunicación sea segura

@@ -230,4 +230,4 @@ Los siguientes argumentos son comunes a todos los comandos. Estos comandos se pu
 
 >[!NOTE]
 >
->¡Felicitaciones! Ha completado la instalación rápida. ¿Necesita ayuda más avanzada? Consulte nuestra [Instalación avanzada](advanced.md) guía.
+>¡Felicidades! Ha completado la instalación rápida. ¿Necesita ayuda más avanzada? Consulte nuestra [Instalación avanzada](advanced.md) guía.

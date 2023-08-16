@@ -28,7 +28,7 @@ El **[!UICONTROL Inode usage by mount]** muestra de cuadros [!DNL inode] uso por
 
 ## [!UICONTROL vCPU tier view over timeline GREATER 2 weeks]
 
-![Vista del nivel de vCPU en el cronograma en las BUENAS dos semanas](../../assets/tools/observation-for-adobe-commerce/vCPU-tier.jpg)
+![Vista del nivel de vCPU en el cronograma MÁS DE 2 semanas](../../assets/tools/observation-for-adobe-commerce/vCPU-tier.jpg)
 
 El **[!UICONTROL vCPU tier view over timeline GREATER 2 weeks]** El fotograma muestra la vista del nivel de vCPU en el periodo de tiempo seleccionado de más de dos semanas. Este marco examina el número de vCPU asignadas a la [!DNL New Relic] nombre de la aplicación mostrado.
 

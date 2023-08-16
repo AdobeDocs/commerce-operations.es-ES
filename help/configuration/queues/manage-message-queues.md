@@ -74,7 +74,7 @@ Edite el `/app/etc/env.php` archivo para configurar el trabajo cron `consumers_r
 - `cron_run` - Un valor booleano que habilita o deshabilita la variable `consumers_runner` trabajo cron (predeterminado = `true`).
 - `max_messages` : el número máximo de mensajes que cada consumidor debe procesar antes de finalizar (predeterminado = `10000`). Aunque no lo recomendamos, puede utilizar 0 para evitar que el consumidor finalice. Consulte [`consumers_wait_for_messages`](../reference/config-reference-envphp.md#consumerswaitformessages) para configurar cómo procesan los consumidores los mensajes de la cola de mensajes.
 - `consumers` : matriz de cadenas que especifica qué consumidores ejecutar. Se ejecuta una matriz vacía *todo* consumidores.
-- `multiple_processes` : matriz de pares de clave-valor que especifica qué consumidor se ejecutará en cuántos procesos. Compatible con Commerce 2.4.4 o bueno.
+- `multiple_processes` : matriz de pares de clave-valor que especifica qué consumidor se ejecutará en cuántos procesos. Compatible con Commerce 2.4.4 o superior.
 
   >[!INFO]
   >

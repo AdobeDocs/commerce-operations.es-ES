@@ -168,26 +168,26 @@ Por ejemplo, para restaurar una copia de seguridad de un código (es decir, un s
 
 * Mostrar una lista de copias de seguridad:
 
-   ```bash
-   magento info:backups:list
-   ```
+  ```bash
+  magento info:backups:list
+  ```
 
 * Restaurar una copia de seguridad de archivos denominada `1433876616_filesystem.tgz`:
 
-   ```bash
-   magento setup:rollback --code-file="1433876616_filesystem.tgz"
-   ```
+  ```bash
+  magento setup:rollback --code-file="1433876616_filesystem.tgz"
+  ```
 
-   Se muestran mensajes similares a los siguientes:
+  Se muestran mensajes similares a los siguientes:
 
-   ```terminal
-   Enabling maintenance mode
-   Code rollback is starting ...
-   Code rollback filename: 1433876616_filesystem.tgz
-   Code rollback file path: /var/www/html/magento2/var/backups/1433876616_filesystem.tgz
-   [SUCCESS]: Code rollback has completed successfully.
-   Disabling maintenance mode
-   ```
+  ```terminal
+  Enabling maintenance mode
+  Code rollback is starting ...
+  Code rollback filename: 1433876616_filesystem.tgz
+  Code rollback file path: /var/www/html/magento2/var/backups/1433876616_filesystem.tgz
+  [SUCCESS]: Code rollback has completed successfully.
+  Disabling maintenance mode
+  ```
 
 >[!NOTE]
 >

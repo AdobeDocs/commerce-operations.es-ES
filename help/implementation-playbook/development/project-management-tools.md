@@ -28,11 +28,11 @@ En la tabla siguiente se incluyen las herramientas de administración de proyect
 
 ## administración de SLA
 
-Jira Service Management permite que los equipos de desarrollo y operaciones colaboren a gran velocidad para que puedan responder a los cambios empresariales y ofrecer experiencias de servicio de buenos clientes y empleados con rapidez.
+Jira Service Management permite que los equipos de desarrollo y operaciones colaboren a gran velocidad para que puedan responder a los cambios empresariales y ofrecer experiencias de servicio excelentes para clientes y empleados con rapidez.
 
 ## Administración de documentos
 
-La confluencia es una buena herramienta para construir, organizar y colaborar en el trabajo en un solo lugar desde prácticamente cualquier lugar. La confluencia viene equipada con plantillas de prácticas recomendadas, por lo que no es necesario reinventar la rueda. Empiece fácilmente y mantenga la coherencia en todos los equipos y proyectos.
+La confluencia es una gran herramienta para construir, organizar y colaborar en el trabajo en un solo lugar desde prácticamente cualquier lugar. La confluencia viene equipada con plantillas de prácticas recomendadas, por lo que no es necesario reinventar la rueda. Empiece fácilmente y mantenga la coherencia en todos los equipos y proyectos.
 
 ## Gestión de tickets
 

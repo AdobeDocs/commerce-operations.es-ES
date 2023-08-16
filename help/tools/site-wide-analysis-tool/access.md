@@ -58,7 +58,7 @@ Para la función personalizada que necesita [!DNL Site-Wide Analysis Tool] para 
    ![Tablero de análisis de todo el sitio](../../assets/tools/swat-role-access.png)
    *[!DNL Site-Wide Analysis Tool]permiso seleccionado para el rol*
 
-1. Clic **[!UICONTROL Save Role]**.
+1. Haga clic **[!UICONTROL Save Role]**.
 
 1. Notificar a los usuarios que tengan asignada esa función para que cierren sesión en [!DNL Admin]y vuelva a iniciar sesión.
 
@@ -89,7 +89,7 @@ Para la función personalizada que necesita [!DNL Site-Wide Analysis Tool] para 
 
 1. Seleccione la casilla de verificación de cada **[!UICONTROL Type]** y **[!UICONTROL Priority]** configuración que desea incluir en el informe.
 
-1. Clic **[!UICONTROL Generate Report]**.
+1. Haga clic **[!UICONTROL Generate Report]**.
 
    ![Tablero de análisis de todo el sitio](../../assets/tools/swat-report-settings.png)
    *Configuración de informes*

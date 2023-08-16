@@ -51,9 +51,9 @@ La duración predeterminada de la caché del archivo de palabras de parada es de
 
    - Línea de comandos: Como propietario del sistema de archivos, introduzca el siguiente comando:
 
-      ```bash
-      php <magento_root>/bin/magento cache:clean config
-      ```
+     ```bash
+     php <magento_root>/bin/magento cache:clean config
+     ```
 
 1. Comprueba los resultados buscando términos en tu tienda.
 
@@ -89,9 +89,9 @@ La duración predeterminada de la caché del archivo de palabras de parada es de
 
    - Línea de comandos: Como propietario del sistema de archivos, introduzca el siguiente comando:
 
-      ```bash
-      php <magento_root>/bin/magento magento cache:clean config
-      ```
+     ```bash
+     php <magento_root>/bin/magento magento cache:clean config
+     ```
 
 1. Comprueba los resultados buscando términos en tu tienda.
 

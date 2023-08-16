@@ -5,7 +5,7 @@ exl-id: dd4694e7-5437-440c-bb67-804ae36149de
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '334'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -27,23 +27,23 @@ Introduzca los siguientes comandos como usuario con `root` privilegios:
 
 * Ubuntu
 
-   ```bash
-   apt-get update
-   ```
+  ```bash
+  apt-get update
+  ```
 
-   ```bash
-   apt-get upgrade
-   ```
+  ```bash
+  apt-get upgrade
+  ```
 
 * CentOS
 
-   ```bash
-   yum -y update
-   ```
+  ```bash
+  yum -y update
+  ```
 
-   ```bash
-   yum -y upgrade
-   ```
+  ```bash
+  yum -y upgrade
+  ```
 
 ## Comprobación de requisitos previos
 

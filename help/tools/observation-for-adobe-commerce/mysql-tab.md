@@ -34,7 +34,7 @@ El **[!UICONTROL MySQL Node Summary]** La tabla muestra detalles del nodo de la 
 
 ![Número de nodos de la galera en el clúster](../../assets/tools/observation-for-adobe-commerce/mysql-tab-4.jpg)
 
-El **[!UICONTROL Galera Number of Nodes in cluster]** frame muestra información de los registros de MySQL. A medida que los nodos se unen y salen de un clúster, solo se mostrarán los mensajes del periodo de tiempo seleccionado. Si un nodo abandona el clúster antes del periodo de tiempo, no aparecerá ningún mensaje durante ese periodo de tiempo. Si sospecha que la base de datos puede estar ejecutando poco de un nodo, expanda el periodo de tiempo a un periodo mayor para ver si puede ver información adicional. Si hay información durante el período de tiempo que indica menos que todos los nodos de la [!DNL Galera] , expanda el periodo de tiempo para ver si puede determinar cuándo abandonó el nodo el clúster.
+El **[!UICONTROL Galera Number of Nodes in cluster]** frame muestra información de los registros de MySQL. A medida que los nodos se unen y salen de un clúster, solo se mostrarán los mensajes del periodo de tiempo seleccionado. Si un nodo abandona el clúster antes del periodo de tiempo, no aparecerá ningún mensaje durante ese periodo de tiempo. Si cree que la base de datos puede estar quedando corta de un nodo, expanda el periodo de tiempo a un periodo mayor para ver si puede ver información adicional. Si hay información durante el período de tiempo que indica menos que todos los nodos de la [!DNL Galera] , expanda el periodo de tiempo para ver si puede determinar cuándo abandonó el nodo el clúster.
 
 ## [!UICONTROL MySQL shutdowns and starts]
 

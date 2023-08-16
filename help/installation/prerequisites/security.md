@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Seguridad de instalación local
 
-[Seguridad mejorada Linux (SELinux)](https://selinuxproject.org/page/Main_Page) habilita el control de acceso de los administradores de CentOS y Ubuntu a sus servidores en bueno momento. Si utiliza SELinux *y* Apache debe iniciar una conexión con otro host, debe ejecutar los comandos mencionados en esta sección.
+[Seguridad mejorada Linux (SELinux)](https://selinuxproject.org/page/Main_Page) permite a los administradores de CentOS y Ubuntu un mayor control de acceso sobre sus servidores. Si utiliza SELinux *y* Apache debe iniciar una conexión con otro host, debe ejecutar los comandos mencionados en esta sección.
 
 >[!NOTE]
 >

@@ -46,9 +46,9 @@ Donde
 * `-f` o `--force` para forzar que un módulo se habilite o deshabilite a pesar de las dependencias. Antes de utilizar esta opción, consulte [Acerca de la activación y desactivación de módulos](#about-enabling-and-disabling-modules).
 * `-c` o `--clear-static-content` limpia [archivos de vista estática generados](../../configuration/cli/static-view-file-deployment.md).
 
-   Si no se borran los archivos de vista estática, podrían producirse problemas si hay varios archivos con el mismo nombre y no se borran todos.
+  Si no se borran los archivos de vista estática, podrían producirse problemas si hay varios archivos con el mismo nombre y no se borran todos.
 
-   En otras palabras, debido a la [reserva de archivo estático](../../configuration/cli/static-view-file-deployment.md) , si no borra los archivos estáticos y hay más de un archivo con el nombre `logo.svg` que son diferentes, la reserva podría provocar la visualización del archivo incorrecto.
+  En otras palabras, debido a la [reserva de archivo estático](../../configuration/cli/static-view-file-deployment.md) , si no borra los archivos estáticos y hay más de un archivo con el nombre `logo.svg` que son diferentes, la reserva podría provocar la visualización del archivo incorrecto.
 
 Por ejemplo, para deshabilitar la variable `Magento_Weee` , introduzca:
 

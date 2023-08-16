@@ -29,19 +29,19 @@ Como resultado de la ejecución del comando, se actualizan los siguientes archiv
 
 - `app/etc/config.php`
 
-   Este es el archivo de configuración compartida para todas las instancias de Commerce.
+  Este es el archivo de configuración compartida para todas las instancias de Commerce.
 Incluya esto en el control de código fuente para que se pueda compartir entre los sistemas de desarrollo, compilación y producción.
 
-   Consulte [config.php reference](../reference/config-reference-configphp.md).
+  Consulte [config.php reference](../reference/config-reference-configphp.md).
 
 - `app/etc/env.php`
 
-   Este es el archivo de configuración específico del entorno.
+  Este es el archivo de configuración específico del entorno.
 Contiene configuraciones sensibles y específicas del sistema para entornos individuales.
 
-   Hacer _no_ incluir este archivo en el control de código fuente.
+  Hacer _no_ incluir este archivo en el control de código fuente.
 
-   Consulte [referencia env.php](../reference/config-reference-envphp.md).
+  Consulte [referencia env.php](../reference/config-reference-envphp.md).
 
 ## Configuración confidencial o específica del sistema
 

@@ -5,7 +5,7 @@ mini-toc-levels: 3
 source-git-commit: 5aa1669e556e5b7bf5ed3777db0f026ccfff5e70
 workflow-type: tm+mt
 source-wordcount: '269'
-ht-degree: 0%
+ht-degree: 10%
 
 ---
 
@@ -98,7 +98,7 @@ ht-degree: 0%
    - Desarrollo {#development}
       - [Información general](best-practices/development/overview.md)
       - [Optimización de imagen](best-practices/development/image-optimization.md)
-      - [Solución de problemas](best-practices/development/troubleshooting.md)
+      - [Resolución de problemas](best-practices/development/troubleshooting.md)
       - [Optimización de archivos CSS y JS](best-practices/development/optimize-css-js-files.md)
       - [Bloques de contenido privado](best-practices/development/private-content-block-configuration.md)
       - [Implementación de contenido estático](best-practices/development/static-content-deployment.md)

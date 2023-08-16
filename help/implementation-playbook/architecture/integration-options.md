@@ -30,7 +30,7 @@ La única diferencia entre el enfoque monolítico y el sin encabezado es la inte
 
 ## Sistemas de terceros
 
-Algunos servicios populares ya tienen buenas extensiones para admitir Adobe Commerce o soluciones de tienda populares, como PWA Studio, Adobe Experience Manager y Vue Storefront, que se pueden encontrar desde su mercado de extensiones o desde sitios web de terceros relacionados. Incluso si no hay ninguna extensión existente, el esfuerzo por implementar la integración entre Adobe Commerce y otras tiendas sin encabezado es similar. Todos los servicios de terceros suelen tener documentos que explican cómo integrarse con ellos. Esos servicios son solo algunos ejemplos; varios países y mercados pueden tener diferentes opciones.
+Algunos servicios populares ya tienen grandes extensiones para admitir Adobe Commerce o soluciones de tienda populares, como PWA Studio, Adobe Experience Manager y Vue Storefront, que se pueden encontrar desde su mercado de extensiones o desde sitios web de terceros relacionados. Incluso si no hay ninguna extensión existente, el esfuerzo por implementar la integración entre Adobe Commerce y otras tiendas sin encabezado es similar. Todos los servicios de terceros suelen tener documentos que explican cómo integrarse con ellos. Esos servicios son solo algunos ejemplos; varios países y mercados pueden tener diferentes opciones.
 
 ## Integraciones empresariales
 

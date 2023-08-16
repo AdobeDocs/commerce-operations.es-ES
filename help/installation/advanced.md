@@ -44,7 +44,7 @@ El instalador se puede ejecutar varias veces si es necesario para que pueda:
 
 * Proporcionar valores diferentes
 
-   Por ejemplo, después de configurar el servidor web para Secure Sockets Layer (SSL), puede ejecutar el instalador para establecer las opciones de SSL.
+  Por ejemplo, después de configurar el servidor web para Secure Sockets Layer (SSL), puede ejecutar el instalador para establecer las opciones de SSL.
 
 * Corrección de errores en instalaciones anteriores
 * Instalar Adobe Commerce o Magento Open Source en una instancia de base de datos diferente
@@ -134,7 +134,7 @@ Las siguientes tablas proporcionan muchos parámetros de instalación disponible
 | Nombre | Valor | ¿Requerido? |
 |--- |--- |--- |
 | `--base-url` | Dirección URL base que se utilizará para acceder al administrador y a la tienda en cualquiera de los siguientes formatos:<br><br>`http[s]://<host or ip>/<your install dir>/`.<br><br>**Nota:** El esquema (http:// o https://) y una barra diagonal son obligatorios.<br><br>`<your install dir>` es la ruta relativa a docroot en la que se instala el software Adobe Commerce o de Magento Open Source. Según la configuración del servidor web y los hosts virtuales, la ruta puede ser magento2 o estar en blanco.<br><br>Para acceder a Adobe Commerce o a Magento Open Source en localhost, puede utilizar `http://127.0.0.1/<your install dir>/` o `http://127.0.0.1/<your install dir>/`.<br><br>- `{{base_url}}` que representa una URL base definida por una configuración de host virtual o por un entorno de virtualización como Docker. Por ejemplo, si configura un host virtual con el nombre de host `magento.example.com`, puede instalar el software con `--base-url={{base_url}}` y acceder al administrador con una dirección URL como `http://magento.example.com/admin`. | Sí |
-| `--backend-frontname` | Identificador uniforme de recursos (URI) para acceder al administrador. Puede omitir este parámetro para permitir que la aplicación genere un URI aleatorio con el siguiente patrón admin_jkhgdfq</code>.<br><br>Recomendamos un URI aleatorio por motivos de seguridad. Un URI aleatorio es más difícil de explotar para los piratas informáticos o para el software malintencionado.<br><br>El URI se muestra al final de la instalación. Puede mostrarlo más tarde en cualquier momento utilizando la variable `bin/magento info:adminuri` comando.<br><br>Si decide introducir un valor, le recomendamos que no utilice una palabra común como administrador o backend. El URI de administrador puede contener valores alfanuméricos y el carácter de subrayado (`_`) únicamente. | No |
+| `--backend-frontname` | Identificador uniforme de recursos (URI) para acceder al administrador. Puede omitir este parámetro para permitir que la aplicación genere un URI aleatorio con el siguiente patrón <code>admin_jkhgdfq</code>.<br><br>Recomendamos un URI aleatorio por motivos de seguridad. Un URI aleatorio es más difícil de explotar para los piratas informáticos o para el software malintencionado.<br><br>El URI se muestra al final de la instalación. Puede mostrarlo más tarde en cualquier momento utilizando la variable `bin/magento info:adminuri` comando.<br><br>Si decide introducir un valor, le recomendamos que no utilice una palabra común como administrador o backend. El URI de administrador puede contener valores alfanuméricos y el carácter de subrayado (`_`) únicamente. | No |
 | `--db-host` | Utilice cualquiera de las siguientes opciones:<br><br>: Nombre de host o dirección IP completos del servidor de base de datos.<br><br>- `localhost` (predeterminado) o `127.0.0.1` si el servidor de la base de datos está en el mismo host que el servidor web.localhost significa que la biblioteca de cliente MySQL utiliza sockets UNIX para conectarse a la base de datos. `127.0.0.1` hace que la biblioteca cliente utilice el protocolo TCP. Para obtener más información sobre los sockets, consulte la [Documentación de PHP PDO_MYSQL](https://www.php.net/manual/en/ref.pdo-mysql.php).<br><br>**Nota:** Si lo desea, puede especificar el puerto del servidor de la base de datos en su nombre de host como www.example.com:9000 | Sí |
 | `--db-name` | Nombre de la instancia de base de datos en la que desea instalar las tablas de base de datos.<br><br>El valor predeterminado es `magento2`. | Sí |
 | `--db-user` | Nombre de usuario del propietario de la instancia de base de datos.<br><br>El valor predeterminado es `root`. | Sí |
@@ -221,11 +221,11 @@ El siguiente ejemplo instala Adobe Commerce o Magento Open Source con las siguie
 
 * La aplicación se instala en `magento2` directorio relativo al servidor web docroot en `localhost` y la ruta al administrador es `admin`; por lo tanto:
 
-   La URL de la tienda es `http://127.0.0.1`
+  La URL de la tienda es `http://127.0.0.1`
 
 * El servidor de base de datos está en el mismo host que el servidor web.
 
-   El nombre de la base de datos es `magento`y el nombre de usuario y la contraseña son `magento`
+  El nombre de la base de datos es `magento`y el nombre de usuario y la contraseña son `magento`
 
 * Utiliza reescrituras del servidor
 
@@ -291,11 +291,11 @@ El siguiente ejemplo instala Adobe Commerce o Magento Open Source con las siguie
 
 * La aplicación se instala en `magento2` directorio relativo al servidor web docroot en `localhost` y la ruta al administrador es `admin`; por lo tanto:
 
-   La URL de la tienda es `http://127.0.0.1`
+  La URL de la tienda es `http://127.0.0.1`
 
 * El servidor de base de datos está en el mismo host que el servidor web.
 
-   El nombre de la base de datos es `magento`y el nombre de usuario y la contraseña son `magento`
+  El nombre de la base de datos es `magento`y el nombre de usuario y la contraseña son `magento`
 
 * El administrador tiene las siguientes propiedades:
 

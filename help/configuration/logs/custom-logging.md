@@ -22,15 +22,15 @@ Adobe recomienda utilizar el registro centralizado de aplicaciones por los sigui
 
 - Hace que el procesamiento de los datos de registro sea más eficaz mediante el uso de herramientas especiales, como [Logstash], [Logplex], o [fluido]: sin impacto en un servidor de producción.
 
-   >[!INFO]
-   >
-   >El Adobe no recomienda ni respalda ninguna solución de registro en particular.
+  >[!INFO]
+  >
+  >El Adobe no recomienda ni respalda ninguna solución de registro en particular.
 
 ## Compatibilidad con PSR-3
 
 El [PSR-3 estándar][laminas] define una interfaz PHP común para bibliotecas de registro. El objetivo principal de la PSR-3 es permitir que las bibliotecas reciban una `Psr\Log\LoggerInterface` y escribir registros en él de una manera simple y universal.
 
-Esto permite reemplazar la implementación fácilmente sin tener que preocuparse de que el reemplazo pueda dañar el código de la aplicación. También garantiza que un componente personalizado funcionará incluso cuando la implementación de registro se cambie en una versión futura del sistema.
+Esto permite reemplazar la implementación fácilmente sin tener que preocuparse de que dicha sustitución pueda dañar el código de la aplicación. También garantiza que un componente personalizado funcionará incluso cuando la implementación de registro se cambie en una versión futura del sistema.
 
 ## Monólogo
 

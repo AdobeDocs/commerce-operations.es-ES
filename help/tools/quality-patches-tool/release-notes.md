@@ -235,7 +235,7 @@ El [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) ofr
 * **ACSD-47137** (para Adobe Commerce y Magento Open Source >=2.4.4 &lt;2.4.6): mejora la velocidad de carga de la galería de imágenes cuando la carpeta pub/media es muy grande.
 * **ACSD-46770** (para Adobe Commerce y Magento Open Source >=2.4.0 &lt;2.4.6): corrige el problema por el que se envían correos electrónicos de pedidos de administración incluso cuando la variable *Confirmación de pedido por correo electrónico* está desmarcada.
 * **ACSD-47955** (para Adobe Commerce y Magento Open Source >=2.4.4 &lt;2.4.6): corrige el problema en el que GraphQL no muestra correctamente el descuento del carro de compras.
-* **ACSD-46617** (para Adobe Commerce y Magento Open Source >=2.4.0 &lt;2.4.6): corrige el problema en el que la variable *Continuar a cierre de compra* aparece en gris aunque el subtotal sea bueno al configurado *Cantidad mínima del pedido*.
+* **ACSD-46617** (para Adobe Commerce y Magento Open Source >=2.4.0 &lt;2.4.6): corrige el problema en el que la variable *Continuar a cierre de compra* aparece en gris aunque el subtotal sea mayor que el configurado *Cantidad mínima del pedido*.
 * **ACSD-47079** (para Adobe Commerce y Magento Open Source >=2.4.4 &lt;2.4.5): corrige el problema en el que el estado de las existencias de los productos compuestos (paquete, agrupados y configurables) no se actualiza cuando el estado de las existencias de subproductos cambia a través del POST de API de REST /rest/V1/inventory/source-items.
 * **ACSD-47336** (para Adobe Commerce y Magento Open Source >=2.4.0 &lt;2.4.6): correcciones *Se ha producido un error.* error al descartar las notificaciones en el administrador de Commerce.
 * **ACSD-47559** (para Adobe Commerce y Magento Open Source >=2.4.0 &lt;2.4.6): corrige el problema en el que el área Vista previa de plantilla de correo electrónico no es totalmente visible.
@@ -515,7 +515,7 @@ El [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) ofr
 
 ## v1.1.1 {#v1-1-1}
 
-* **MDVA-36021** (*para Adobe Commerce y Magento Open Source >=2.4.0 &lt;2.4.4*): corrige el problema en el que las variables *Llamada a una función de miembro getId()* El error se muestra en la página de detalles del pedido en el Administrador.
+* **MDVA-36021** (*para Adobe Commerce y Magento Open Source >=2.4.0 &lt;2.4.4*): corrige el problema en el que las variables *Llamada a una función de miembro getId()* El error se muestra en la página de detalles del pedido en Admin.
 * **MDVA-34948** (*para Adobe Commerce y Magento Open Source >=2.3.6 &lt;=2.3.6-p1 || >=2.4.0 &lt;=2.4.0-p1*): soluciona el problema de las consultas de larga duración, como `GET_LOCK`.
 * **MDVA-39305** (*para Adobe Commerce y Magento Open Source >=2.4.0 &lt;=2.4.2-p1*): corrige el problema en el cual los clientes registrados no pueden iniciar sesión con Google ReCaptcha habilitado.
 * **MDVA-37897** (*para Adobe Commerce y Magento Open Source >=2.3.0 &lt;2.4.4*): corrige el problema con una redirección incorrecta cuando un cliente intenta agregar productos con opciones del widget Vistos recientemente.
@@ -650,7 +650,7 @@ El [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) ofr
 * **MDVA-34469** (*para Adobe Commerce >=2.4.1 &lt;2.4.2*): corrige el problema en el que las mutaciones de GraphQL en el carro de compras de un cliente fallan al usar varias vistas de la tienda.
 * **MDVA-33976** (*para Adobe Commerce >=2.3.0 &lt;2.3.7*): Corrige el problema en el que el producto del paquete se muestra Sin existencias en la tienda después de eliminar la segunda opción del producto del paquete.
 * **MDVA-33894** (*para Adobe Commerce >=2.4.0 &lt;2.4.1 con extensión B2B*): soluciona varios problemas relacionados con la funcionalidad de pedidos rápidos, incluida la adición y eliminación de varios productos y la distinción entre mayúsculas y minúsculas de SKU.
-* **MDVA-27664** (*para Adobe Commerce >=2.3.4 &lt;2.3.6*): corrige el problema en el formulario de registro de cliente, que provocaba que se mostrara un error: *BUENA ERROR: la fecha de nacimiento no debe ser posterior a la de hoy.*
+* **MDVA-27664** (*para Adobe Commerce >=2.3.4 &lt;2.3.6*): corrige el problema en el formulario de registro de cliente, que provocaba que se mostrara un error: *ERROR: la fecha de nacimiento no debe ser posterior a hoy.*
 * **MDVA-33970** (*para Adobe Commerce >=2.3.4 &lt;2.4.2*): corrige el problema en el que hay un signo de moneda incorrecto en la nota de crédito cuando el ámbito del atributo de precio se establece en sitio web.
 * **MDVA-33992** (*para Adobe Commerce >=2.3.0 &lt;2.4.2*): corrige el problema de los precios especiales B2B que se muestran incorrectamente durante el cierre de compra.
 * **MDVA-34100** (*para Adobe Commerce >=2.3.4 &lt;2.4.2 con extensión B2B*): corrige el problema en el que no se puede crear una cuenta de compañía desde la página de estructura de la compañía.

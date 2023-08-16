@@ -21,11 +21,11 @@ Antes de ejecutar este comando, haga lo siguiente _debe_ ser verdadero:
 
 - El `Magento_Developer` El módulo debe estar habilitado. Puede habilitarlo de la siguiente manera:
 
-   ```bash
-   bin/magento module:enable [--force] Magento_Developer
-   ```
+  ```bash
+  bin/magento module:enable [--force] Magento_Developer
+  ```
 
-   Utilice el `--force` solo si es necesario.
+  Utilice el `--force` solo si es necesario.
 
 - El sistema debe estar configurado para ejecutar las pruebas deseadas.
 

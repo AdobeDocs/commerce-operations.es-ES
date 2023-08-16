@@ -200,7 +200,7 @@ Para establecer `opcache.ini` opciones:
    - Apache, CentOS: `service httpd restart`
    - nginx, Ubuntu y CentOS: `service nginx restart`
 
-## Solución de problemas
+## Resolución de problemas
 
 Consulte los siguientes artículos de soporte de Adobe Commerce para obtener ayuda con la resolución de problemas de PHP:
 

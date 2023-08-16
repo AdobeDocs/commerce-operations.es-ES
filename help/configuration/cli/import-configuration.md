@@ -128,4 +128,3 @@ Ejemplo completo:
 >
 >- _Registro de temas_. Si los datos de una temática se definen en `config.php` pero el código fuente de la temática no está presente en el sistema de archivos, la temática se ignora (es decir, no se registra).
 >- _Eliminación de temas_. Si una temática no está presente en `config.php` pero el código fuente está presente en el sistema de archivos, el tema no se elimina.
-

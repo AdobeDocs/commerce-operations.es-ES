@@ -22,7 +22,7 @@ En las secciones siguientes se describen los requisitos de uno o dos propietario
 
 - **Dos usuarios**: recomendamos dos usuarios si ejecuta su propio servidor de Commerce: uno para transferir archivos y ejecutar utilidades de línea de comandos y otro para el software del servidor web. Cuando sea posible, es preferible porque es más seguro.
 
-   En su lugar, tiene usuarios independientes:
+  En su lugar, tiene usuarios independientes:
 
    - El usuario del servidor web, que ejecuta el administrador y la tienda.
 
@@ -112,15 +112,15 @@ Si utiliza su propio servidor (incluida la configuración del servidor privado d
 
 - El **usuario de servidor web**, que ejecuta el administrador y la tienda.
 
-   Los sistemas Linux no suelen proporcionar un shell para este usuario; no puede iniciar sesión en el servidor de Commerce como usuario del servidor web ni cambiar a él.
+  Los sistemas Linux no suelen proporcionar un shell para este usuario; no puede iniciar sesión en el servidor de Commerce como usuario del servidor web ni cambiar a él.
 
 - El **usuario de línea de comandos**, con el que inicia sesión en su servidor de Commerce o cambia a.
 
-   Commerce utiliza este usuario para ejecutar comandos de CLI y cron.
+  Commerce utiliza este usuario para ejecutar comandos de CLI y cron.
 
-   >[!INFO]
-   >
-   >El usuario de la línea de comandos también se denomina _propietario del sistema de archivos_.
+  >[!INFO]
+  >
+  >El usuario de la línea de comandos también se denomina _propietario del sistema de archivos_.
 
 Dado que estos usuarios requieren acceso a los mismos archivos, le recomendamos que cree un [grupo compartido](../../installation/prerequisites/file-system/configure-permissions.md#about-the-shared-group) a la que ambos pertenecen. Los siguientes procedimientos suponen que ya lo ha hecho.
 

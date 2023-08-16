@@ -41,7 +41,7 @@ Aunque la generación de plomo puede no ser fácil, es necesario si desea que su
 
 La generación de posibles clientes es diferente entre las empresas B2B y B2C:
 
-- **Ciclo de ventas**—La generación de plomo para las empresas B2B es mucho más larga en comparación con las empresas B2C porque los contratos B2B son para períodos de tiempo a largo plazo en comparación con las transacciones B2C. Los precios, el tiempo y los recursos asignados para las transacciones B2B son buenos. Los ciclos de ventas B2C son mucho más cortos y requieren menos tiempo, dinero y recursos.
+- **Ciclo de ventas**—La generación de plomo para las empresas B2B es mucho más larga en comparación con las empresas B2C porque los contratos B2B son para períodos de tiempo a largo plazo en comparación con las transacciones B2C. Los precios, el tiempo y los recursos asignados para las transacciones B2B son mayores. Los ciclos de ventas B2C son mucho más cortos y requieren menos tiempo, dinero y recursos.
 
 - **Contenido**: Los clientes B2B generalmente tienen más conocimiento sobre los productos porque investigan más sobre ellos, mientras que los clientes B2C generalmente compran en función del contenido de tendencias del mercado.
 

@@ -27,19 +27,19 @@ En el modo de desarrollo, no ejecute comandos para compilación, generación de 
 
 * `setup:di:compile` genera clases generadas automáticamente y cachés de configuración optimizadas.
 
-   ```bash
-   bin/magento setup:di:compile
-   ```
+  ```bash
+  bin/magento setup:di:compile
+  ```
 
-   En el modo de desarrollo, Magento realiza la generación bajo demanda; no es necesario ejecutarla. Si ha modificado una firma de una clase y necesita volver a generar su firma generada automáticamente `factories/proxies/interceptors`, elimine esas clases o el _generado_ carpeta.
+  En el modo de desarrollo, Magento realiza la generación bajo demanda; no es necesario ejecutarla. Si ha modificado una firma de una clase y necesita volver a generar su firma generada automáticamente `factories/proxies/interceptors`, elimine esas clases o el _generado_ carpeta.
 
 * `setup:static-content:deploy` implementa contenido estático para un almacén.
 
-   ```bash
-   bin/magento setup:static-content:deploy
-   ```
+  ```bash
+  bin/magento setup:static-content:deploy
+  ```
 
-   En el modo de desarrollo, Magento lo realiza bajo demanda; no es necesario ejecutarlo.
+  En el modo de desarrollo, Magento lo realiza bajo demanda; no es necesario ejecutarlo.
 
 ## Tiempo normal de carga de la página en una máquina virtual
 

@@ -76,15 +76,15 @@ El administrador muestra el siguiente comportamiento mientras está en modo de p
    - Como se ha mencionado anteriormente, cualquier configuración en `config.php` o `env.php` está bloqueado y no se puede editar en el administrador.
    - Puede cambiar la configuración regional del administrador solo a los idiomas utilizados por las temáticas implementadas
 
-      En la siguiente figura se muestra un ejemplo de la función **Configuración de cuenta** > **Configuración regional de interfaz** en la lista Administrador solo se muestran dos configuraciones regionales implementadas:
+     En la siguiente figura se muestra un ejemplo de la función **Configuración de cuenta** > **Configuración regional de interfaz** en la lista Administrador solo se muestran dos configuraciones regionales implementadas:
 
-      ![Solo puede cambiar la configuración regional de administración a configuraciones regionales implementadas](../../assets/configuration/split-deploy-admin-locale.png)
+     ![Solo puede cambiar la configuración regional de administración a configuraciones regionales implementadas](../../assets/configuration/split-deploy-admin-locale.png)
 
 - No puede cambiar las configuraciones de configuración regional de ningún ámbito mediante el Administrador.
 
-   Se recomienda realizar estos cambios antes de cambiar al modo de producción.
+  Se recomienda realizar estos cambios antes de cambiar al modo de producción.
 
-   Puede seguir configurando la configuración regional mediante variables de entorno o la variable `config:set` Comando CLI con la ruta `general/locale/code`.
+  Puede seguir configurando la configuración regional mediante variables de entorno o la variable `config:set` Comando CLI con la ruta `general/locale/code`.
 
 ## Instalar y eliminar cron
 
@@ -167,7 +167,7 @@ Proporcionamos los siguientes comandos para ayudarle a administrar la configurac
 - [`magento app:config:dump`](../cli/export-configuration.md) para escribir las opciones de configuración de administración en `config.php` y `env.php` (excepto para configuraciones confidenciales)
 - [`magento config:set`](../cli/set-configuration-values.md) para establecer los valores de la configuración específica del sistema en el sistema de producción.
 
-   Utilice el opcional `--lock` para bloquear la opción en Admin (es decir, hacer que la configuración no se pueda editar). Si una configuración ya está bloqueada, use el `--lock` para cambiar la configuración.
+  Utilice el opcional `--lock` para bloquear la opción en Admin (es decir, hacer que la configuración no se pueda editar). Si una configuración ya está bloqueada, use el `--lock` para cambiar la configuración.
 
 - [`magento config:sensitive:set`](../cli/set-configuration-values.md) para establecer los valores de configuración confidencial en el sistema de producción.
 - [`magento app:config:import`](../cli/import-configuration.md) para importar los cambios de configuración de `config.php` y `env.php` al sistema de producción.

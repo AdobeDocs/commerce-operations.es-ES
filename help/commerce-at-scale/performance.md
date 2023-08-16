@@ -42,7 +42,7 @@ AEM Algunas áreas de un sitio del CIF/Adobe Commerce, que se puede configurar p
 
 La configuración predeterminada de Dispatcher utiliza la configuración /statfilelevel &quot;0&quot;, lo que significa que se coloca un solo archivo &quot;.stat&quot; en la raíz del directorio htdocs (directorio raíz del documento). AEM Si se realiza un cambio en una página o archivo en, el tiempo de modificación de este archivo .stat se actualiza al tiempo del cambio. Si la hora es posterior a la hora de modificación del recurso, Dispatcher considerará que todos los recursos están invalidados y cualquier solicitud posterior de un recurso invalidado almacenará en déclencheur una llamada a la instancia de publicación. Básicamente, con esta configuración, cada activación invalidará toda la caché.
 
-Para cualquier sitio, especialmente los sitios de comercio con una carga pesada, esto colocaría una cantidad innecesaria de carga en el nivel de publicación de AEM para que toda la estructura del sitio se invalide con una sola actualización de página.
+AEM Para cualquier sitio, especialmente los sitios de comercio con una carga pesada, esto colocaría una cantidad innecesaria de carga en el nivel de publicación de la para que toda la estructura del sitio se invalide con una sola actualización de página.
 
 En su lugar, la configuración statfilelevel se puede modificar a un valor mayor, correspondiente a la profundidad de los subdirectorios del directorio htdocs desde el directorio raíz del documento, de modo que cuando se invalide un archivo ubicado en un nivel determinado, solo se actualicen los archivos de ese nivel de directorio .stat y posteriores.
 

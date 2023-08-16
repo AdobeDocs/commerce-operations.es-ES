@@ -56,7 +56,7 @@ Este comando combina todas las propiedades sincrónicas [!DNL JavaScript] archiv
 
 ## Tiempos de procesamiento reales
 
-Los tiempos de carga agrupados y combinados anteriores parecen buenos en un entorno de desarrollo. Pero en el mundo real, muchas cosas pueden ralentizar el renderizado: conexiones lentas, umbrales de conexión grandes, redes limitadas. Además, los dispositivos móviles no se representan tan rápido como los equipos de escritorio.
+Los tiempos de carga agrupados y combinados anteriores tienen un aspecto excelente en un entorno de desarrollo. Pero en el mundo real, muchas cosas pueden ralentizar el renderizado: conexiones lentas, umbrales de conexión grandes, redes limitadas. Además, los dispositivos móviles no se representan tan rápido como los equipos de escritorio.
 
 Para probar y preparar tu implementación de tienda para el mundo real, te recomendamos que pruebes con el perfil de regulación nativo de Chrome de &quot;Slow 3G&quot;. Con Slow 3G, nuestros tiempos de salida agrupados anteriores ahora reflejan las realidades de conexión de muchos usuarios:
 

@@ -43,7 +43,7 @@ Para configurar el sistema para que utilice Elasticsearch u OpenSearch:
    | **[!UICONTROL Enable HTTP Auth]** | Clic **[!UICONTROL Yes]** solo si ha habilitado la autenticación para el servidor del motor de búsqueda. Si es así, proporcione un nombre de usuario y una contraseña en los campos proporcionados. |
    | **[!UICONTROL Server Timeout]** | Especifique la cantidad de tiempo (en segundos) de espera al intentar establecer una conexión con el Elasticsearch o el servidor de OpenSearch. |
 
-1. Clic **[!UICONTROL Test Connection]**.
+1. Haga clic **[!UICONTROL Test Connection]**.
 
    Respuesta de ejemplo:
 
@@ -67,17 +67,17 @@ Si es así, intente lo siguiente:
 - Compruebe el valor del **[!UICONTROL Server Hostname]** field. Asegúrese de que el servidor esté disponible. En su lugar, puede probar la dirección IP del servidor.
 - Utilice el `netstat -an | grep <listen-port>` para comprobar que el puerto especificado en la variable **[!UICONTROL Server Port]** Este campo no está siendo utilizado por otro proceso.
 
-   Por ejemplo, para ver si el motor de búsqueda se está ejecutando en el puerto predeterminado, utilice el siguiente comando:
+  Por ejemplo, para ver si el motor de búsqueda se está ejecutando en el puerto predeterminado, utilice el siguiente comando:
 
-   ```bash
-   netstat -an | grep 9200
-   ```
+  ```bash
+  netstat -an | grep 9200
+  ```
 
-   Si se ejecuta en el puerto 9200, se muestra de forma similar a la siguiente:
+  Si se ejecuta en el puerto 9200, se muestra de forma similar a la siguiente:
 
-   ```terminal
-   `tcp        0      0 :::9200            :::-         LISTEN`
-   ```
+  ```terminal
+  `tcp        0      0 :::9200            :::-         LISTEN`
+  ```
 
 ## Reindexe la búsqueda en el catálogo y actualice la caché de la página completa
 

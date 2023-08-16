@@ -72,9 +72,9 @@ Otras opciones que se pueden utilizar con este comando son:
 
 - `--vanilla-dir`: permite verificar el código principal para cualquier implementación no estándar de funciones o personalizaciones. Es importante que estos se limpien de antemano. Se descarga automáticamente una instancia de vainilla de su versión para referencia.
 
-   >[!NOTE]
-   >
-   > Esto también se puede hacer con la variable `core:code:changes` en la herramienta).
+  >[!NOTE]
+  >
+  > Esto también se puede hacer con la variable `core:code:changes` en la herramienta).
 
 ### Analizar la salida
 

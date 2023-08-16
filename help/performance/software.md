@@ -219,7 +219,7 @@ Consulte [Avanzadas [!DNL Varnish] configuración](../configuration/cache/config
 
 En general, recomendamos almacenar los recursos (imágenes, JS, CSS, etc.) en una CDN para obtener un rendimiento óptimo.
 
-Si su sitio no requiere la implementación de un gran número de configuraciones regionales y los servidores se encuentran en la misma región que la mayoría de sus clientes, puede obtener mejoras de rendimiento significativas a un coste menor almacenando los recursos en [!DNL Varnish] en lugar de utilizar una CDN.
+Si su sitio no requiere la implementación de un gran número de configuraciones regionales y los servidores se encuentran en la misma región que la mayoría de los clientes, puede obtener mejoras de rendimiento significativas a un coste menor almacenando los recursos en [!DNL Varnish] en lugar de utilizar una CDN.
 
 Para almacenar los recursos en [!DNL Varnish], agregue las siguientes entradas VCL en su `default.vcl` archivo generado por [!DNL Commerce] para [!DNL Varnish] 5.
 

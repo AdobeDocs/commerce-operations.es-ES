@@ -49,17 +49,17 @@ El formato general de los nombres de las variables de configuración del sistema
 
 - Ámbito global (es decir, la configuración global para _todo_ ámbitos)
 
-   Las variables de ámbito global tienen el formato siguiente:
+  Las variables de ámbito global tienen el formato siguiente:
 
-   `CONFIG__DEFAULT__<SYSTEM__VARIABLE__NAME>`
+  `CONFIG__DEFAULT__<SYSTEM__VARIABLE__NAME>`
 
 - Un ámbito específico (es decir, la configuración solo afecta a una vista de tienda o sitio web especificados)
 
-   Las variables de ámbito de vista de tienda, por ejemplo, tienen el formato siguiente:
+  Las variables de ámbito de vista de tienda, por ejemplo, tienen el formato siguiente:
 
-   `CONFIG__STORES__ <STORE_VIEW_CODE>__<SYSTEM__VARIABLE__NAME>`
+  `CONFIG__STORES__ <STORE_VIEW_CODE>__<SYSTEM__VARIABLE__NAME>`
 
-   Para obtener más información sobre los ámbitos, consulte:
+  Para obtener más información sobre los ámbitos, consulte:
 
    - [Paso 1: Encuentre el valor de ámbito de vista del sitio web o tienda](#step-1-find-the-website-or-store-view-scope-value)
    - [Tema de la Guía del usuario de Commerce sobre el ámbito](https://docs.magento.com/user-guide/configuration/scope.html)
@@ -97,11 +97,11 @@ Cómo leer la tabla:
 
 - `Path in Admin` columna
 
-   Los valores anteriores a la coma son rutas en la navegación del administrador. Los valores después de la coma son opciones del panel derecho.
+  Los valores anteriores a la coma son rutas en la navegación del administrador. Los valores después de la coma son opciones del panel derecho.
 
 - `Variable name` es el nombre de la variable de entorno correspondiente.
 
-   Si lo desea, tiene la opción de especificar los valores del sistema para estos parámetros de configuración como variables de entorno.
+  Si lo desea, tiene la opción de especificar los valores del sistema para estos parámetros de configuración como variables de entorno.
 
    - El nombre completo de la variable siempre está en MAYÚSCULAS
    - Iniciar un nombre de variable con `CONFIG__` (nota dos caracteres de subrayado)

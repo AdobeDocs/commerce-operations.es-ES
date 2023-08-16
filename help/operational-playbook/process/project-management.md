@@ -17,7 +17,7 @@ En el diagrama siguiente se describen las cinco fases de la administración de p
 
 ![Diagrama del ciclo vital de administración de proyectos](../../assets/playbooks/project-management-lifecycle.png)
 
-El ciclo de vida de la administración de proyectos proporciona un proceso de entrega oportuno y controlado que beneficia a los interesados en el proyecto. El primer paso para ofrecer un proyecto de comercio electrónico exitoso es la administración de proyectos. Se necesitan el enfoque y la metodología adecuados para que el equipo pueda llevar a cabo el proyecto de forma eficaz y eficiente.
+El ciclo de vida de la administración de proyectos proporciona un proceso de entrega oportuno y controlado que beneficia a los interesados en el proyecto. El primer paso para ofrecer un proyecto de comercio electrónico exitoso es la administración de proyectos. Se necesitan el enfoque y la metodología adecuados para que el equipo pueda ejecutar el proyecto de manera eficaz y eficiente.
 
 
 Algunos equipos eligen la metodología de administración de proyectos de Scrum para sus proyectos de comercio electrónico. Las funciones de Scrum que se mencionan a continuación ayudan a facilitar y administrar el proyecto:

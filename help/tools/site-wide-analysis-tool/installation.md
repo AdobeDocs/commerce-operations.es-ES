@@ -90,7 +90,7 @@ Si ha instalado la extensión de y la ha configurado con una clave de API existe
    >
    > Si tiene problemas para acceder a su cuenta, consulte [No se puede iniciar sesión en la asistencia de Adobe Commerce o en la cuenta de la nube](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/unable-to-log-in-to-support-or-cloud-project.html) para obtener ayuda sobre solución de problemas.
 
-1. Clic **[!UICONTROL API Portal]**.
+1. Haga clic **[!UICONTROL API Portal]**.
 
 1. Clic **[!UICONTROL Delete]** junto a la clave de API existente.
 
@@ -384,7 +384,7 @@ Si configuró el agente para que se ejecute con cron en su lugar, siga las sigui
    rm -rf swat-agent
    ```
 
-## Solución de problemas
+## Resolución de problemas
 
 ### Claves de acceso no analizadas correctamente
 

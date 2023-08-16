@@ -18,7 +18,7 @@ La ventaja de la arquitectura de Adobe Commerce es que no es una propuesta de to
 
 Cada enfoque no es mutuamente excluyente. Los clientes pueden crear su propio front-end (principal), utilizar PWA Studio para experiencias web/móviles o utilizar Adobe Experience Manager para el vidrio (en una implementación completa o híbrida).
 
-Adobe Commerce siempre ha permitido implementaciones sin encabezado con API de REST. Aunque REST es potente, especialmente para el procesamiento masivo, cuando se trata de sin encabezado, las API de GraphQL permiten un desarrollo más rápido a través de una experiencia intuitiva para desarrolladores, lo que bueno permite la flexibilidad al permitir cambios que no afectan a las API existentes y un mejor rendimiento al minimizar la cantidad de datos recuperados a solo lo que se necesita exactamente.
+Adobe Commerce siempre ha permitido implementaciones sin encabezado con API de REST. Aunque REST es potente, especialmente para el procesamiento masivo, cuando se trata de sin encabezado, las API de GraphQL permiten un desarrollo más rápido a través de una experiencia de desarrollador intuitiva, una mayor flexibilidad al permitir cambios que no afectan a las API existentes y un mejor rendimiento al minimizar la cantidad de datos recuperados a solo lo que se necesita exactamente.
 
 GraphQL es un estándar del sector para las API con rendimiento, que utilizan muchas de las principales plataformas de comercio electrónico. Eso es bueno ya que esto significa que es una solución probada y la experiencia existe en el mercado.
 

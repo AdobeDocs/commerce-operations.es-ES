@@ -18,15 +18,15 @@ Este ejemplo utiliza las opciones de configuración siguientes:
 
 - **Número de iva** y **Nombre del almacén** para los ajustes de configuración compartidos.
 
-   Se encuentran en **Tiendas** > Configuración > **Configuración** > General > **General**.
+  Se encuentran en **Tiendas** > Configuración > **Configuración** > General > **General**.
 
 - **Envío de correos electrónicos a** para el valor de configuración confidencial.
 
-   Esto se encuentra en **Tiendas** > Configuración > **Configuración** > General > **Contactos**.
+  Esto se encuentra en **Tiendas** > Configuración > **Configuración** > General > **Contactos**.
 
 - **Dominio de correo electrónico predeterminado** para el valor de configuración específico del sistema.
 
-   Esto se encuentra en **Tiendas** > Configuración > **Configuración** > Clientes > **Configuración del cliente** > **Crear nuevas opciones de cuenta**.
+  Esto se encuentra en **Tiendas** > Configuración > **Configuración** > Clientes > **Configuración del cliente** > **Crear nuevas opciones de cuenta**.
 
 Puede utilizar el mismo procedimiento mostrado en este ejemplo para configurar cualquier configuración en las siguientes referencias:
 
@@ -108,20 +108,20 @@ Para establecer la configuración confidencial y específica del sistema mediant
 
 - Ámbito de cada configuración
 
-   Si ha seguido las instrucciones del paso 1, el ámbito de **Envío de correos electrónicos a** es un sitio web y el ámbito para **Dominio de correo electrónico predeterminado** es global (es decir, el ámbito de configuración predeterminado).
+  Si ha seguido las instrucciones del paso 1, el ámbito de **Envío de correos electrónicos a** es un sitio web y el ámbito para **Dominio de correo electrónico predeterminado** es global (es decir, el ámbito de configuración predeterminado).
 
-   Necesita el código del sitio web para establecer la variable **Envío de correos electrónicos a** valor de configuración.
+  Necesita el código del sitio web para establecer la variable **Envío de correos electrónicos a** valor de configuración.
 
-   Para obtener más información sobre cómo encontrar este valor, consulte: [Utilice variables de entorno para anular los ajustes de configuración](../reference/override-config-settings.md#environment-variables).
+  Para obtener más información sobre cómo encontrar este valor, consulte: [Utilice variables de entorno para anular los ajustes de configuración](../reference/override-config-settings.md#environment-variables).
 
 - Rutas de configuración para las opciones utilizadas en este ejemplo:
 
-   | Nombre de configuración | Ruta de configuración |
-   | -------------------- | -------------------------------------- |
-   | Envío de correos electrónicos a | `contact/email/recipient_email` |
-   | Dominio de correo electrónico predeterminado | `customer/create_account/email_domain` |
+  | Nombre de configuración | Ruta de configuración |
+  | -------------------- | -------------------------------------- |
+  | Envío de correos electrónicos a | `contact/email/recipient_email` |
+  | Dominio de correo electrónico predeterminado | `customer/create_account/email_domain` |
 
-   Para todas las rutas de configuración confidenciales y específicas del sistema, consulte: [Referencia de rutas de configuración confidenciales y específicas del sistema](../reference/config-reference-sens.md).
+  Para todas las rutas de configuración confidenciales y específicas del sistema, consulte: [Referencia de rutas de configuración confidenciales y específicas del sistema](../reference/config-reference-sens.md).
 
 ### Establecer las variables mediante comandos CLI
 

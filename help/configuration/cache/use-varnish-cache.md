@@ -24,21 +24,21 @@ Después de instalar y configurar Varnish para trabajar con Commerce, las siguie
 
 - Mantener un sitio web.
 
-   Por ejemplo, cualquier cosa que haga en el Administrador de:
+  Por ejemplo, cualquier cosa que haga en el Administrador de:
 
    - **TIENDAS** > **Configuración** > **Configuración** > GENERAL > **General**
    - **TIENDAS** > **Configuración** > **Configuración** > GENERAL > **Configuración de moneda**
    - **TIENDAS** > **Configuración** > **Configuración** > GENERAL > **Almacenar direcciones de correo electrónico**
 
-   Cuando Commerce detecta un cambio de este tipo, aparece un mensaje que le informa de que debe actualizar la caché.
+  Cuando Commerce detecta un cambio de este tipo, aparece un mensaje que le informa de que debe actualizar la caché.
 
 - Mantener una tienda (por ejemplo, añadir o editar categorías, precios, productos y reglas de precios promocionales).
 
-   El barniz se depura automáticamente cuando se realiza cualquiera de estas tareas.
+  El barniz se depura automáticamente cuando se realiza cualquiera de estas tareas.
 
 - Mantener el código fuente.
 
-   Debe actualizar la caché y también eliminar periódicamente todo lo que hay en la `generated/code` y `generated/metadata` directorios. Para obtener información sobre cómo actualizar la caché, consulte la siguiente sección.
+  Debe actualizar la caché y también eliminar periódicamente todo lo que hay en la `generated/code` y `generated/metadata` directorios. Para obtener información sobre cómo actualizar la caché, consulte la siguiente sección.
 
 ## Configurar Commerce para depurar Varnish
 

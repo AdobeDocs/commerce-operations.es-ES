@@ -39,7 +39,7 @@ La actualización permite a su empresa mantenerse ágil en el acelerado y cambia
 
 ### Seguridad
 
-La seguridad es una de las principales razones para la actualización, ya que el 83 % de los incidentes de seguridad se producen en software obsoleto. Según [IBM](https://www.ibm.com/reports/data-breach)buena Sin embargo, el costo promedio de una violación de datos es de 3,86 millones de dólares, mucho más de lo que cuesta mitigar este riesgo a través de la actualización. Adobe ofrece dos maneras de mantener tu tienda segura durante todo el año:
+La seguridad es una de las principales razones para la actualización, ya que el 83 % de los incidentes de seguridad se producen en software obsoleto. Según [IBM](https://www.ibm.com/reports/data-breach)Sin embargo, el costo promedio de una violación de datos es de 3,86 millones de dólares, mucho más de lo que cuesta mitigar este riesgo a través de la actualización. Adobe ofrece dos maneras de mantener tu tienda segura durante todo el año:
 
 - **Versiones de parches**: incluye correcciones de errores de seguridad, rendimiento, calidad y alta prioridad.
 - **Versiones de parches de seguridad**: incluye correcciones y mejoras para mantener el sitio seguro y es más fácil de implementar.
@@ -63,6 +63,6 @@ Algunos de los factores generales que afectan el nivel de esfuerzo para actualiz
 | Alcance de las personalizaciones | Claridad de los requisitos, decisiones dudosas y alcance lento |
 | Número de extensiones | Su frecuencia de actualización |
 | Número de integraciones con terceros (OMS, ERP) | Su estrategia de prueba |
-| Codificación según las prácticas recomendadas |  |
+| Codificación según las prácticas recomendadas |                                                              |
 
 El crecimiento continuo en el espacio del comercio digital ha ejercido una mayor presión sobre las empresas para que evolucionen más rápido, con más frecuencia y de formas impredecibles. El no mantenerse al día y anticipar el comportamiento de compra de los clientes ha nivelado el campo de juego incluso para las marcas más grandes y establecidas. Debe poder proporcionar experiencias personalizadas y sólidas en todos los puntos de contacto, sin interrupciones en el rendimiento y el tiempo de actividad. Debe ser capaz de innovar más rápido, sin límites, para mantenerse por delante de los competidores globales. Al actualizar, está afianzando su empresa en el futuro y configurándose para atender mejor las necesidades dinámicas de los clientes.

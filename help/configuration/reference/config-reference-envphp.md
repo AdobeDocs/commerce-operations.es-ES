@@ -114,11 +114,11 @@ Estas son las opciones disponibles:
 
 - `1`: los consumidores continúan procesando mensajes de la cola de mensajes hasta alcanzar la `max_messages` valor especificado en `env.php` antes de cerrar la conexión TCP y finalizar el proceso de consumidor. Si la cola se vacía antes de alcanzar el `max_messages` , el consumidor espera a que lleguen más mensajes.
 
-   Recomendamos esta configuración para los grandes comerciantes porque se espera un flujo de mensaje constante y los retrasos en el procesamiento no son deseables.
+  Recomendamos esta configuración para los grandes comerciantes porque se espera un flujo de mensaje constante y los retrasos en el procesamiento no son deseables.
 
 - `0`: los consumidores procesan los mensajes disponibles en la cola, cierran la conexión TCP y finalizan. Los consumidores no esperan a que los mensajes adicionales entren en la cola, aunque el número de mensajes procesados sea menor que el `max_messages` valor especificado en `env.php` archivo. Esto puede ayudar a evitar problemas con los trabajos cron causados por largos retrasos en el procesamiento de colas de mensajes.
 
-   Recomendamos esta configuración para los comerciantes más pequeños que no esperan un flujo de mensajes constante y prefieren conservar los recursos informáticos a cambio de pequeños retrasos de procesamiento cuando no puede haber mensajes durante días.
+  Recomendamos esta configuración para los comerciantes más pequeños que no esperan un flujo de mensajes constante y prefieren conservar los recursos informáticos a cambio de pequeños retrasos de procesamiento cuando no puede haber mensajes durante días.
 
 ## cron
 

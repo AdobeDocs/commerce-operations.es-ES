@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Software como servicio (SaaS)
 
-Cada vez más empresas recurren a aplicaciones y sistemas de software como servicio (SaaS) para optimizar y forjar funciones empresariales y, al mismo tiempo, gestionar mejor sus operaciones de comercio electrónico.
+Más empresas están recurriendo a aplicaciones y sistemas de software como servicio (SaaS) para optimizar y forjar funciones empresariales al tiempo que administran mejor sus operaciones de comercio electrónico.
 
 El uso de una plataforma de comercio electrónico SaaS en lugar de software de código abierto o local puede parecer abrumador para organizaciones de cualquier tamaño. Se siente como una decisión aún más desalentadora si planeas cambiar de plataforma.
 

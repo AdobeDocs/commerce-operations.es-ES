@@ -101,7 +101,7 @@ Cuando se redirige la solicitud al punto de entrada, la aplicación de comercio 
 - Entrada [promotor](application-modes.md#developer-mode) modo, el contenido del archivo se devuelve de modo que cada vez que se solicita el recurso, el contenido devuelto esté actualizado.
 - Entrada [predeterminado](application-modes.md#default-mode) , el recurso recuperado se publica para que la dirección URL solicitada anteriormente pueda acceder a él.
 
-   El servidor procesa todas las solicitudes futuras del recurso estático de la misma manera que los archivos estáticos; es decir, sin involucrar el punto de entrada. Si es necesario sincronizar los archivos publicados con los originales, la variable `pub/static` debe eliminarse; como resultado, los archivos se vuelven a publicar automáticamente con la siguiente solicitud.
+  El servidor procesa todas las solicitudes futuras del recurso estático de la misma manera que los archivos estáticos; es decir, sin involucrar el punto de entrada. Si es necesario sincronizar los archivos publicados con los originales, la variable `pub/static` debe eliminarse; como resultado, los archivos se vuelven a publicar automáticamente con la siguiente solicitud.
 
 ### Punto de entrada de medios
 

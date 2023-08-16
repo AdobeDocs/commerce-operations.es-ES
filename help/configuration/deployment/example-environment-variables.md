@@ -100,20 +100,20 @@ Para establecer la configuración confidencial y específica del sistema mediant
 
 - Ámbito de cada configuración
 
-   Si ha seguido las instrucciones del paso 1, el ámbito de Envío de correos electrónicos a es global (es decir, el ámbito de Configuración predeterminada) y el ámbito de Dominio de correo electrónico predeterminado es sitio web.
+  Si ha seguido las instrucciones del paso 1, el ámbito de Envío de correos electrónicos a es global (es decir, el ámbito de Configuración predeterminada) y el ámbito de Dominio de correo electrónico predeterminado es sitio web.
 
-   Debe conocer el código del sitio web para establecer el valor de configuración Predeterminado del dominio de correo electrónico. Consulte [Utilice variables de entorno para anular los ajustes de configuración](../reference/override-config-settings.md#environment-variables) para obtener más información sobre cómo encontrarlo.
+  Debe conocer el código del sitio web para establecer el valor de configuración Predeterminado del dominio de correo electrónico. Consulte [Utilice variables de entorno para anular los ajustes de configuración](../reference/override-config-settings.md#environment-variables) para obtener más información sobre cómo encontrarlo.
 
 - Ruta de configuración para cada configuración
 
-   Las rutas de configuración utilizadas en este ejemplo son las siguientes:
+  Las rutas de configuración utilizadas en este ejemplo son las siguientes:
 
-   | Nombre de configuración | Ruta de configuración |
-   |--------------|--------------|
-   | Envío de correos electrónicos a | `contact/email/recipient_email` |
-   | Dominio de correo electrónico predeterminado | `customer/create_account/email_domain` |
+  | Nombre de configuración | Ruta de configuración |
+  |--------------|--------------|
+  | Envío de correos electrónicos a | `contact/email/recipient_email` |
+  | Dominio de correo electrónico predeterminado | `customer/create_account/email_domain` |
 
-   Puede encontrar todas las rutas de configuración confidenciales y específicas del sistema en [Referencia de rutas de configuración confidenciales y específicas del sistema](../reference/config-reference-sens.md).
+  Puede encontrar todas las rutas de configuración confidenciales y específicas del sistema en [Referencia de rutas de configuración confidenciales y específicas del sistema](../reference/config-reference-sens.md).
 
 #### Convertir rutas de configuración en nombres de variables
 

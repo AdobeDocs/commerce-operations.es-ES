@@ -1,11 +1,11 @@
 ---
 user-guide-title: Guías operativas
-user-guide-description: Obtenga información sobre los aspectos operativos del mantenimiento de la aplicación de Adobe Commerce o de Magento Open Source.
+user-guide-description: Obtenga información acerca de los aspectos operativos del mantenimiento de la aplicación Adobe Commerce o Magento Open Source.
 feature: Configuration, Best Practices, Install, Integration, Security, Release Notes, Upgrade
 source-git-commit: e8b41f25cfd5b707d701016e65db43826a7f26d6
 workflow-type: tm+mt
 source-wordcount: '118'
-ht-degree: 0%
+ht-degree: 17%
 
 ---
 
@@ -22,6 +22,6 @@ ht-degree: 0%
 - [Herramientas](https://experienceleague.adobe.com/docs/commerce-operations/tools/overview.html)
 - [Herramientas de línea de comandos](https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises.html)
 - [Guía de implementación](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/overview.html)
-- [Guía de funcionamiento](https://experienceleague.adobe.com/docs/commerce-operations/operational-playbook/overview.html)
+- [Manual operativo](https://experienceleague.adobe.com/docs/commerce-operations/operational-playbook/overview.html)
 - [Comercio a escala](https://experienceleague.adobe.com/docs/commerce-operations/deliver-commerce-at-scale/overview.html)
 - [Seguridad y cumplimiento](https://experienceleague.adobe.com/docs/commerce-operations/security-and-compliance/overview.html)

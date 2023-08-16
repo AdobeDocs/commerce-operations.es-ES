@@ -139,7 +139,7 @@ Puede utilizar estas interfaces si [crear un tipo de configuración](../referenc
 - [Framework\Config\FileResolverInterface](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Config/FileResolverInterface.php), que identifica la ubicación de los archivos que va a leer [Magento\Framework\Config\ReaderInterface](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Config/ReaderInterface.php).
 - [Framework\Config\ReaderInterface](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Config/ReaderInterface.php), que lee los datos de configuración del almacenamiento y selecciona el almacenamiento desde el que se leen.
 
-Es decir, el sistema de archivos, la base de datos y otro almacenamiento combinan los archivos de configuración según las reglas de combinación y valida los archivos de configuración con los esquemas de validación.
+Es decir, el sistema de archivos, la base de datos y otro almacenamiento combinan los archivos de configuración según las reglas de combinación y validan los archivos de configuración con los esquemas de validación.
 
 - [Framework\Config\SchemaLocatorInterface](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Config/SchemaLocatorInterface.php), que localiza el esquema XSD.
 - [Framework\Config\ScopeListInterface](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Config/ScopeListInterface.php), que devuelve una lista de ámbitos.

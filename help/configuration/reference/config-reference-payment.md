@@ -1400,6 +1400,6 @@ Estas opciones solo están disponibles si elige Reino Unido como [país comercia
 | Tipos de tarjeta de crédito | `payment_us/eway/cctypes` | ![Solo de comercio](/help/assets/configuration/cloud-ee.png) |
 | Pago de países aplicables | `payment_us/eway/allowspecific` | ![Solo de comercio](/help/assets/configuration/cloud-ee.png) |
 | Pago desde países específicos | `payment_us/eway/specificcountry` | ![Solo de comercio](/help/assets/configuration/cloud-ee.png) |
-| Orden de clasificación | `payment_us/eway/sort_order` |  |
+| Orden de clasificación | `payment_us/eway/sort_order` | |
 
 {style="table-layout:auto"}

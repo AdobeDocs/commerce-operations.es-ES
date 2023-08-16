@@ -17,13 +17,13 @@ Si es necesario, copie el existente `index.php` script de punto de entrada para 
 
 - Está trabajando en una máquina de desarrollo (portátil, máquina virtual, etc.)
 
-   Es posible que se requieran tareas adicionales para implementar varios sitios web en un entorno alojado; póngase en contacto con su proveedor de alojamiento para obtener más información.
+  Es posible que se requieran tareas adicionales para implementar varios sitios web en un entorno alojado; póngase en contacto con su proveedor de alojamiento para obtener más información.
 
-   Se requieren tareas adicionales para configurar Adobe Commerce en la infraestructura en la nube. Después de completar las tareas descritas en este tema, consulte [Configurar varios sitios web o tiendas](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) en el _Guía de Commerce en infraestructura en la nube_.
+  Se requieren tareas adicionales para configurar Adobe Commerce en la infraestructura en la nube. Después de completar las tareas descritas en este tema, consulte [Configurar varios sitios web o tiendas](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) en el _Guía de Commerce en infraestructura en la nube_.
 
 - Utiliza un host virtual por sitio web; el archivo de configuración del host virtual es `/etc/httpd/httpd.conf`
 
-   Las distintas versiones de Apache en diferentes sistemas operativos configuran los hosts virtuales de forma diferente. Consulte la [Documentación de Apache](https://httpd.apache.org/docs/2.4/vhosts) o un administrador de red si no está seguro de cómo configurar un host virtual.
+  Las distintas versiones de Apache en diferentes sistemas operativos configuran los hosts virtuales de forma diferente. Consulte la [Documentación de Apache](https://httpd.apache.org/docs/2.4/vhosts) o un administrador de red si no está seguro de cómo configurar un host virtual.
 
 - El software Commerce se instala en `/var/www/html/magento2`
 - Tiene dos sitios web distintos del predeterminado:
@@ -112,8 +112,7 @@ A menos que tenga DNS configurado para las direcciones URL de sus tiendas, debe 
 >- Es posible que se requieran tareas adicionales para implementar varios sitios web en un entorno alojado; póngase en contacto con su proveedor de alojamiento para obtener más información.
 >- Se requieren tareas adicionales para configurar Adobe Commerce en la infraestructura en la nube; consulte [Configurar varios sitios web o tiendas en la nube](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) en el _Guía de Commerce en infraestructura en la nube_.
 
-
-### Solución de problemas
+### Resolución de problemas
 
 - Si sus sitios en francés y alemán devuelven 404 pero su administrador carga, asegúrese de completar [Paso 6: Añadir el código de tienda a la URL base](ms-admin.md#step-6-add-the-store-code-to-the-base-url).
 - Si todas las direcciones URL devuelven 404, asegúrese de reiniciar el servidor web.

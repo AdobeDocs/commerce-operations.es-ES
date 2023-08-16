@@ -49,7 +49,7 @@ El `vcl_hit` La subrutina define cómo Varnish responde a una solicitud de objet
 
 ### Cuando el back-end de Commerce está en buen estado
 
-Cuando las comprobaciones de estado determinan que el back-end de Commerce está en buen estado, Varnish comprueba si el tiempo permanece en el período de gracia. El período de gracia predeterminado es de 300 segundos, pero un comerciante puede establecer el valor desde el administrador, tal como se describe en [Configuración de Commerce para utilizar Barniz](configure-varnish-commerce.md). Si el período de gracia no ha caducado, Varnish envía el contenido obsoleto y actualiza asincrónicamente el objeto desde el servidor de Commerce. Si el periodo de gracia ha caducado, Varnish proporciona el contenido obsoleto y actualiza sincrónicamente el objeto desde el backend de Commerce.
+Cuando las comprobaciones de estado determinan que el back-end de Commerce está en buen estado, Varnish comprueba si el tiempo permanece en el período de gracia. El período de gracia predeterminado es de 300 segundos, pero un comerciante puede establecer el valor desde el administrador, tal como se describe en [Configuración de Commerce para utilizar Barniz](configure-varnish-commerce.md). Si el período de gracia no ha caducado, Varnish envía el contenido obsoleto y actualiza asincrónicamente el objeto desde el servidor de Commerce. Si el periodo de gracia ha caducado, Varnish proporciona el contenido obsoleto y actualiza sincrónicamente el objeto desde el servidor de Commerce.
 
 La cantidad máxima de tiempo que Varnish proporciona un objeto obsoleto es la suma del período de gracia (300 segundos de forma predeterminada) y el valor TTL (86400 segundos de forma predeterminada).
 

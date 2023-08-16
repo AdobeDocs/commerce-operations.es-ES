@@ -29,17 +29,17 @@ Tenga en cuenta los siguientes términos:
 
 - **Sitio web**: es el contenedor de nivel superior para sitios, métodos de envío, métodos de pago y mucho más. Para crear sitios completamente independientes que no compartan el carro de compras, los métodos de envío u otros, debe crear sitios web independientes.
 
-   Las cuentas de cliente del sitio web se pueden compartir entre varios sitios web dentro de una sola instancia de Commerce. Un sitio web contiene al menos una tienda. Los precios de catálogo deben gestionarse a nivel de sitio web.
+  Las cuentas de cliente del sitio web se pueden compartir entre varios sitios web dentro de una sola instancia de Commerce. Un sitio web contiene al menos una tienda. Los precios de catálogo deben gestionarse a nivel de sitio web.
 
 - **Almacenar**: se encuentra en un sitio web. A su vez, una tienda contiene al menos una *vista de tienda*.
 
-   Varias tiendas pueden compartir el carro de compras, sesiones de usuarios, puertas de enlace de pago y mucho más, pero tienen estructuras de catálogo y precios de catálogo independientes.
+  Varias tiendas pueden compartir el carro de compras, sesiones de usuarios, puertas de enlace de pago y mucho más, pero tienen estructuras de catálogo y precios de catálogo independientes.
 
-   La cantidad de catálogo (inventario) no se puede administrar en el nivel de tienda. El inventario solo se administra en el nivel del sitio web o global.
+  La cantidad de catálogo (inventario) no se puede administrar en el nivel de tienda. El inventario solo se administra en el nivel del sitio web o global.
 
-   Las vistas de tienda cambian la forma en que se presentan las páginas y, por lo general, se utilizan para mostrar una tienda con diferentes diseños o idiomas. Puede administrar distintas monedas por vista de tienda.
+  Las vistas de tienda cambian la forma en que se presentan las páginas y, por lo general, se utilizan para mostrar una tienda con diferentes diseños o idiomas. Puede administrar distintas monedas por vista de tienda.
 
-   Cada sitio web y cada vista de tienda deben tener un identificador único. Este identificador es necesario para utilizar `MAGE_RUN_TYPE` y `MAGE_RUN_CODE` como se indica a continuación:
+  Cada sitio web y cada vista de tienda deben tener un identificador único. Este identificador es necesario para utilizar `MAGE_RUN_TYPE` y `MAGE_RUN_CODE` como se indica a continuación:
 
 - `MAGE_RUN_TYPE` puede ser `store` o `website`
 

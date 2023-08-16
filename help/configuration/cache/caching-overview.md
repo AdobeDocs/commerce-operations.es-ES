@@ -31,19 +31,19 @@ ht-degree: 0%
 - **Servidor**: permite especificar detalles acerca de [almacenamiento en caché](https://framework.zend.com/manual/1.12/en/zend.cache.backends.html), implementado por [Magento\Framework\Cache\Backend](https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/Cache/Backend)
 - **Servidor de dos niveles**: permite almacenar los registros de caché en dos backends: uno más rápido y uno más lento.
 
-   >[!INFO]
-   >
-   >La configuración de caché back-end de dos niveles está fuera del ámbito de esta guía.
+  >[!INFO]
+  >
+  >La configuración de caché back-end de dos niveles está fuera del ámbito de esta guía.
 
 ## Opciones de configuración
 
 - Modificación del proporcionado `default` front-end de caché—
 
-   Solo se modifica la variable `<magento_root>/app/etc/di.xml` , la configuración de inyección de dependencia global de la aplicación Commerce.
+  Solo se modifica la variable `<magento_root>/app/etc/di.xml` , la configuración de inyección de dependencia global de la aplicación Commerce.
 
 - Configurar su propio front-end de caché personalizado:
 
-   Solo se modifica la variable `<magento_root>/app/etc/env.php` porque anula la configuración equivalente en el archivo `di.xml` archivo.
+  Solo se modifica la variable `<magento_root>/app/etc/env.php` porque anula la configuración equivalente en el archivo `di.xml` archivo.
 
 >[!TIP]
 >

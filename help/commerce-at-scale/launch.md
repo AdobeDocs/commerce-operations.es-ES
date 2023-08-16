@@ -39,7 +39,7 @@ AEM Las siguientes directrices de alto nivel de Jmeter deben tenerse en cuenta a
    - Ver productos configurables: 2 bucles dentro de cada iteración
       - Por ejemplo, establezca los pasos anteriores en 60 % del tráfico
    - Búsqueda de productos
-      - Por ejemplo, defina la búsqueda en el catálogo en el 37 % del tráfico
+      - Por ejemplo, configure la búsqueda en el catálogo en el 37 % del tráfico
    - Carro y cierre de compra
       - Por ejemplo: un usuario que completa la parte del script de carro de compras y cierre de compra debe tener de forma predeterminada una tasa de conversión del sitio de comercio electrónico estándar del sector de alrededor del 3 %
       - Dado que el flujo de cierre de compra no se almacena en caché y suele ser una operación que consume muchos recursos, establecer una cifra demasiado alta para el número de personas que completan pedidos en comparación con el número de exploradores del sitio daría un resultado poco fiable para el volumen de tráfico que podría gestionar el sitio.

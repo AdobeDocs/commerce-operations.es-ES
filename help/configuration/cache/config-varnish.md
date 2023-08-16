@@ -52,9 +52,10 @@ El proceso puede resumirse de la siguiente manera:
    Si no hay nada en su `<magento_root>/var/page_cache` , ha configurado correctamente Varnish con Commerce.
 
 >[!NOTE]
+>
 - Salvo que se indique lo contrario, debe introducir todos los comandos mencionados en este tema como usuario con `root` privilegios.
+>
 - Este tema está escrito para Varnish en CentOS y Apache 2.4. Si está configurando Barniz en un entorno diferente, algunos comandos pueden ser diferentes. Consulte la documentación de Barniz para obtener más información.
-
 
 ## Problemas conocidos
 
@@ -62,28 +63,28 @@ Sabemos de los siguientes problemas con Varnish:
 
 - [El barniz no admite SSL]
 
-   Como alternativa, utilice la terminación SSL o un proxy de terminación SSL.
+  Como alternativa, utilice la terminación SSL o un proxy de terminación SSL.
 
 - Si elimina manualmente el contenido del `<magento_root>/var/cache` , debe reiniciar Varnish.
 
 - Posible error al instalar Commerce:
 
-   ```terminal
-   Error 503 Service Unavailable
-   Service Unavailable
-   XID: 303394517
-   Varnish cache server
-   ```
+  ```terminal
+  Error 503 Service Unavailable
+  Service Unavailable
+  XID: 303394517
+  Varnish cache server
+  ```
 
-   Si experimenta este error, edite `default.vcl` y añada un tiempo de espera a `backend` estrofa como sigue:
+  Si experimenta este error, edite `default.vcl` y añada un tiempo de espera a `backend` estrofa como sigue:
 
-   ```conf
-   backend default {
-       .host = "127.0.0.1";
-       .port = "8080";
-       .first_byte_timeout = 600s;
-   }
-   ```
+  ```conf
+  backend default {
+      .host = "127.0.0.1";
+      .port = "8080";
+      .first_byte_timeout = 600s;
+  }
+  ```
 
 ## Descripción general del almacenamiento en caché de Varnish
 
@@ -94,6 +95,7 @@ El almacenamiento en caché de barniz funciona con Commerce mediante:
 - `default.vcl` configuración de barniz generada mediante el [Administrador](../cache/configure-varnish-commerce.md)
 
 >[!INFO]
+>
 En este tema se tratan únicamente las opciones predeterminadas de la lista anterior. Existen muchas otras formas de configurar el almacenamiento en caché en escenarios complejos (por ejemplo, mediante una red de distribución de contenido); estos métodos están fuera del ámbito de esta guía.
 
 En la primera solicitud del explorador, los recursos almacenables en caché se entregan al explorador del cliente desde Varnish y se almacenan en la caché del explorador.
@@ -117,6 +119,7 @@ En la siguiente figura se muestra un ejemplo utilizando un inspector del explora
 El ejemplo anterior muestra una solicitud para la página principal de la tienda (`m2_ce_my`). Los recursos CSS y JavaScript se almacenan en la caché del explorador del cliente.
 
 >[!NOTE]
+>
 La mayoría de los recursos estáticos tienen un código de estado HTTP 200 (OK), que indica que el recurso se recuperó del servidor.
 
 ### Segunda solicitud de explorador

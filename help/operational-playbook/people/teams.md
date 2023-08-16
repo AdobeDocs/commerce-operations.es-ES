@@ -25,7 +25,7 @@ Un equipo de éxito puede utilizar cualquier formato, pero debe estar claramente
 
 ## Marketing
 
-Hay un montón de consejos y trucos por ahí que puede utilizar para comercializar su marca en línea. Algunos pueden ser buenos, pero otros pueden no funcionar para usted. No es solo publicar contenido en las redes sociales o enviar correos electrónicos a los clientes. Son las personas las que crean todo esto para la empresa, es el equipo de marketing el que ayuda a generar tráfico en el sitio, ayuda a impulsar el retorno de la inversión, produce campañas y promociones, administra influencias, crea estrategias de marketing en línea, etc.
+Hay un montón de consejos y trucos por ahí que puede utilizar para comercializar su marca en línea. Algunos pueden ser grandiosos, pero otros pueden no funcionar para ti. No es solo publicar contenido en las redes sociales o enviar correos electrónicos a los clientes. Son las personas las que crean todo esto para la empresa, es el equipo de marketing el que ayuda a generar tráfico en el sitio, ayuda a impulsar el retorno de la inversión, produce campañas y promociones, administra influencias, crea estrategias de marketing en línea, etc.
 
 El equipo de marketing es una parte integral del comercio electrónico, al igual que los demás equipos. Mantienen en funcionamiento el SEO, el SEM, los programas de fidelidad, las recompensas y otras tareas relacionadas. La coordinación con el equipo de marketing ayuda a aumentar la tasa de conversión en el sitio.
 

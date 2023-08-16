@@ -63,7 +63,7 @@ Se pueden utilizar distintos tipos de imágenes según los requisitos de la empr
 
 - **Contenido sencillo**: no complicar en exceso el contenido. Intente que el contenido sea simple y atractivo donde el enfoque es el producto. Por ejemplo, una práctica recomendada es tener la imagen del producto sobre un fondo blanco para mejorar la imagen del producto.
 
-- **Imagen del producto real**: cuando un cliente compra un producto en línea, espera ver el producto tal y como está en el sitio web. Evite aplicar filtros o mejorar la imagen para alterar el aspecto del producto. Es importante ser transparente con el cliente, de lo contrario podría tener una alta tasa de devoluciones.
+- **Imagen del producto real**: Cuando un cliente compra un producto en línea, espera ver el producto tal y como está en el sitio web. Evite aplicar filtros o mejorar la imagen para alterar el aspecto del producto. Es importante ser transparente con el cliente, de lo contrario podría tener una alta tasa de devoluciones.
 
 >[!TIP]
 >

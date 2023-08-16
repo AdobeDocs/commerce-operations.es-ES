@@ -1,12 +1,12 @@
 ---
 title: Barniz Bloque ESI
 description: Obtenga información acerca de las inclusiones de Edge Side y cómo puede utilizarlas para incrustar páginas web.
-badge: label="Colaborado por Konstantin G." type="Informativo" url="https://github.com/goivvy" tooltip="Konstantin G."
+badge: label="Colaboró Konstantin G." type="Informative" url="https://github.com/goivvy" tooltip="Konstantin G."
 feature: Configuration, Cache
 exl-id: 7dccafa5-df79-4690-be5c-ff774c66bb2a
 source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
 workflow-type: tm+mt
-source-wordcount: '135'
+source-wordcount: '130'
 ht-degree: 0%
 
 ---

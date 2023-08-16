@@ -1,16 +1,16 @@
 ---
-user-guide-title: Guía de funcionamiento
+user-guide-title: Manual operativo
 user-guide-description: Aprenda a preparar operacionalmente sus empresas para ejecutar un sitio de comercio electrónico exitoso.
 feature: Best Practices
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
 source-wordcount: '143'
-ht-degree: 0%
+ht-degree: 13%
 
 ---
 
 
-# Guía de funcionamiento {#operational-playbook}
+# Manual operativo {#operational-playbook}
 
 - [Información general](overview.md)
 - Comercio {#intro}

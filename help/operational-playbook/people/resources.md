@@ -13,7 +13,7 @@ ht-degree: 0%
 
 La implementación digital requiere recursos internos (internos) y externos (de terceros), o ambos. Una empresa debe analizar su equipo interno y sus capacidades a la hora de decidir si desea ejecutar todo el proyecto internamente o si necesita el apoyo de un tercero externo.
 
-En la mayoría de los casos, las empresas con menos experiencia en implementación digital eligen externalizar a un tercero externo. Si una empresa desea utilizar un equipo interno, debe tener un equipo capaz. Pueden contratar nuevos empleados sin perder su talento digital.
+En la mayoría de los casos, las empresas con menos experiencia en implementación digital eligen externalizar a un tercero externo. Si una empresa desea utilizar un equipo interno, debe tener un equipo capaz. Pueden contratar nuevos empleados y conservar su talento digital.
 
 ## Equipos internos
 

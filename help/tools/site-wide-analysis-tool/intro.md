@@ -54,7 +54,7 @@ El [[!DNL Security Scan Tool]](https://experienceleague.adobe.com/docs/commerce-
 
 ## ¿Para quién es esta guía?
 
-Comerciantes y socios que deseen tener una buena visibilidad de sus sitios web de Adobe Commerce. Permite a los comerciantes mejorar la experiencia de sus clientes y estar más alineados con las recomendaciones de las prácticas recomendadas y los problemas básicos.
+Comerciantes y socios que deseen tener una mayor visibilidad de sus sitios web de Adobe Commerce. Permite a los comerciantes mejorar la experiencia de sus clientes y estar más alineados con las recomendaciones de las prácticas recomendadas y los problemas básicos.
 
 ## [!DNL Site-Wide Analysis Tool] demostración
 

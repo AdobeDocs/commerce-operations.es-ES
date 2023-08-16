@@ -21,16 +21,17 @@ Existen dos tipos de propietarios del sistema de archivos:
 
 - **Alojamiento compartido con un solo usuario**
 
-   Los proveedores de alojamiento compartido permiten iniciar sesión en el servidor de aplicaciones como un usuario. Como usuario único, puede iniciar sesión, transferir archivos mediante FTP y ejecutar el servidor web. Tiene la opción de configurar una [`umask`](#restrict-access-with-a-umask) para restringir aún más el acceso, especialmente en un entorno de producción.
+  Los proveedores de alojamiento compartido permiten iniciar sesión en el servidor de aplicaciones como un usuario. Como usuario único, puede iniciar sesión, transferir archivos mediante FTP y ejecutar el servidor web. Tiene la opción de configurar una [`umask`](#restrict-access-with-a-umask) para restringir aún más el acceso, especialmente en un entorno de producción.
 
 - **Alojamiento privado con dos usuarios**
 
-   El alojamiento privado es útil si administra un servidor de aplicaciones. Cada usuario tiene una responsabilidad específica:
+  El alojamiento privado es útil si administra un servidor de aplicaciones. Cada usuario tiene una responsabilidad específica:
 
    - El _usuario de servidor web_ ejecuta el administrador y la tienda.
 
    - El _usuario de línea de comandos_ ejecuta trabajos cron y utilidades de línea de comandos.
-   Ambos usuarios requieren los mismos permisos para el sistema de archivos, por lo que es mejor utilizar un [grupo compartido](configure-permissions.md#set-ownership-and-permissions-for-two-users) y establezca un [`umask`](#restrict-access-with-a-umask).
+
+  Ambos usuarios requieren los mismos permisos para el sistema de archivos, por lo que es mejor utilizar un [grupo compartido](configure-permissions.md#set-ownership-and-permissions-for-two-users) y establezca un [`umask`](#restrict-access-with-a-umask).
 
 ### Restringir el acceso con una máscara de usuario
 

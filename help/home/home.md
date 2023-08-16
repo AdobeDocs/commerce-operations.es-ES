@@ -6,7 +6,7 @@ exl-id: 45ec4948-338f-4276-8a70-d0db720322d9
 source-git-commit: 2b1fa24471cda7cc01ef5fdafeedbec0315d68c7
 workflow-type: tm+mt
 source-wordcount: '243'
-ht-degree: 0%
+ht-degree: 18%
 
 ---
 
@@ -106,7 +106,7 @@ Obtenga información práctica sobre conceptos, procesos, herramientas y prácti
        <img alt="Operaciones" src="../assets/icons/refresh.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="../operational-playbook/overview.md"><strong>Guía de funcionamiento</strong></a>
+      <a href="../operational-playbook/overview.md"><strong>Manual operativo</strong></a>
       <p>Aprenda a preparar operacionalmente sus empresas para ejecutar un sitio de comercio electrónico exitoso.</p>
     </div>
   </td>

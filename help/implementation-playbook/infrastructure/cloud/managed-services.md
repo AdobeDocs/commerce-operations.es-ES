@@ -22,7 +22,7 @@ Los planes de Adobe Commerce Pro dependen de un modelo de seguridad de responsab
 
 ![Diagrama que muestra el modelo de responsabilidad compartida de Adobe Commerce](../../../assets/playbooks/shared-responsibility.svg)
 
-### Responsabilidades de Adobe Managed Services
+### Adobe Responsabilidades de Managed Services
 
 Adobe Managed Services es responsable de la seguridad y disponibilidad del entorno de nube de Adobe Commerce Pro, el código de aplicación principal de Adobe Commerce Pro y los sistemas de comercio interno. Esto incluye, entre otras cosas:
 

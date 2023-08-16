@@ -2,7 +2,7 @@
 source-git-commit: 631735eceb3609edd743c682291f373f6b01b399
 workflow-type: tm+mt
 source-wordcount: '143'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 # Ajustes de configuración de MariaDB

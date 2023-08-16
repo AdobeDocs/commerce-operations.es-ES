@@ -15,13 +15,13 @@ Con los perfiles de Commerce, puede:
 
 - Habilite un generador de perfiles integrado.
 
-   Puede utilizar un generador de perfiles integrado con Commerce para realizar tareas como analizar el rendimiento. La naturaleza de los perfiles depende de las herramientas analíticas que utilice. Admitimos varios formatos, incluido el HTML. Al habilitar el generador de perfiles, se crea un `var/profiler.flag` genera un archivo que indica que el generador de perfiles está habilitado y las configuraciones. Cuando está desactivado, este archivo se elimina.
+  Puede utilizar un generador de perfiles integrado con Commerce para realizar tareas como analizar el rendimiento. La naturaleza de los perfiles depende de las herramientas analíticas que utilice. Admitimos varios formatos, incluido el HTML. Al habilitar el generador de perfiles, se crea un `var/profiler.flag` genera un archivo que indica que el generador de perfiles está habilitado y las configuraciones. Cuando está desactivado, este archivo se elimina.
 
 - Mostrar gráficos de dependencias en una página de Commerce.
 
-   A _gráfico de dependencias_ es una lista de dependencias de objetos y todas sus dependencias, y todas las dependencias para esas dependencias, etc.
+  A _gráfico de dependencias_ es una lista de dependencias de objetos y todas sus dependencias, y todas las dependencias para esas dependencias, etc.
 
-   Debería estar especialmente interesado en la lista de _dependencias no utilizadas_, que son objetos que se crearon porque se solicitaron en algún constructor, pero que nunca se utilizaron (es decir, no se llamó a ninguno de sus métodos). Como resultado, se desperdician el tiempo y la memoria del procesador empleados para crear estas dependencias.
+  Debería estar especialmente interesado en la lista de _dependencias no utilizadas_, que son objetos que se crearon porque se solicitaron en algún constructor, pero que nunca se utilizaron (es decir, no se llamó a ninguno de sus métodos). Como resultado, se desperdician el tiempo y la memoria del procesador empleados para crear estas dependencias.
 
 Commerce proporciona la funcionalidad base en [`Magento\Framework\Profiler`][profiler].
 
@@ -35,16 +35,16 @@ Puede establecer el valor de `MAGE_PROFILER` de cualquiera de las formas descrit
 
 - `1` para habilitar la salida de un generador de perfiles específico.
 
-   Puede utilizar uno de los siguientes valores para habilitar un generador de perfiles específico:
+  Puede utilizar uno de los siguientes valores para habilitar un generador de perfiles específico:
 
    - `csvfile` que utiliza [`Magento\Framework\Profiler\Driver\Standard\Output\Csvfile`][csvfile]
    - Cualquier otro valor (excepto `2`), incluido un valor vacío, que utiliza [`Magento\Framework\Profiler\Driver\Standard\Output\Html`][html]
 
 - `2` para habilitar los gráficos de dependencias.
 
-   Los gráficos de dependencias generalmente se muestran en la parte inferior de una página. La siguiente figura muestra una parte del resultado:
+  Los gráficos de dependencias generalmente se muestran en la parte inferior de una página. La siguiente figura muestra una parte del resultado:
 
-   ![Gráficos de dependencias](../../assets/configuration/depend-graphs.png)
+  ![Gráficos de dependencias](../../assets/configuration/depend-graphs.png)
 
 ## Comandos CLI
 

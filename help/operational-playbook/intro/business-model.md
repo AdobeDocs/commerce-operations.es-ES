@@ -61,7 +61,7 @@ Servicio al cliente para B2C:
 
 | Variable | B2B | B2C |
 |----------|-----|-----|
-| Audiencia | Empresas | Consumidores individuales |
+| Público | Empresas | Consumidores individuales |
 | Partes interesadas implicadas en la toma de decisiones | Representantes de ventas, gerentes | Consumidores finales individuales |
 | Volumen de compra | Pedidos masivos | Volumen pequeño |
 | Precio | El precio dinámico cambia según el cliente, la cantidad del producto y/o los plazos de pago | Precios consistentes |

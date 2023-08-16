@@ -49,7 +49,6 @@ La aplicación Commerce utiliza tareas cron que se pueden ejecutar con diferente
 >- Para evitar problemas durante la instalación y actualización, recomendamos encarecidamente que aplique la misma configuración de PHP tanto a la configuración de la línea de comandos de PHP como a la configuración del complemento del servidor web de PHP. Para obtener más información, consulte [Configuración de PHP requerida](../../installation/prerequisites/php-settings.md).
 >- En un sistema de varios nodos, crontab puede ejecutarse en un solo nodo. Esto solo se aplica si configura más de un nodo web por motivos relacionados con el rendimiento o la escalabilidad.
 
-
 ### Creación del crontab de Commerce
 
 A partir de la versión 2.2, Commerce crea un crontab para usted. Añadimos el crontab de Commerce a cualquier crontab configurado para el propietario del sistema de archivos de Commerce. En otras palabras, si ya configura crontab para otras extensiones o aplicaciones, le agregamos el crontab de Commerce.
@@ -72,7 +71,6 @@ Uso `--force` para reescribir un crontab existente.
 >
 >- `magento cron:install` no reescribe un crontab existente dentro de `#~ MAGENTO START` y `#~ MAGENTO END` comentarios en su crontab.
 >- `magento cron:install --force` no tiene ningún efecto en ningún trabajo cron fuera de los comentarios de Commerce.
-
 
 Para ver el crontab, introduzca el siguiente comando como propietario del sistema de archivos:
 

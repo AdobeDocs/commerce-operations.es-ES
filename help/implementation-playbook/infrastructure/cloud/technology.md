@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Tecnologías
 
-Como hemos mencionado, Adobe Commerce aprovecha una serie de soluciones de software para admitir la plataforma. En concreto, en lo que respecta a la producción, hemos desglosado algunas de las soluciones y funciones técnicas incluidas en Adobe Commerce en la infraestructura en la nube que ayudan a sacar el máximo partido a su entorno de producción.
+Como hemos mencionado, Adobe Commerce aprovecha una serie de soluciones de software para admitir la plataforma. En concreto, en lo que respecta a la producción, hemos desglosado algunas de las soluciones y funciones técnicas incluidas en Adobe Commerce en infraestructuras en la nube que ayudan a sacar el máximo partido a su entorno de producción.
 
 ![Diagrama que muestra Adobe Commerce sobre la tecnología de la infraestructura en la nube](../../../assets/playbooks/infrastructure-technology.svg)
 

@@ -153,8 +153,7 @@ Para clonar el repositorio de GitHub de datos de ejemplo utilizando el protocolo
 >
 >Si va a instalar datos de ejemplo *después* Al instalar Adobe Commerce o Magento Open Source, también debe ejecutar el siguiente comando para actualizar la base de datos y el esquema:
 >
->
-```bash
+>```bash
 ><magento_root>/bin/magento setup:upgrade
 >```
 

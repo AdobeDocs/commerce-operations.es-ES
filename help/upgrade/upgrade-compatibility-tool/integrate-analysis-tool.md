@@ -23,7 +23,7 @@ Vaya a [!DNL Site-Wide Analysis Tool] tablero del proyecto y busque el [!DNL Upg
 
 ![Widget SWAT UCT - Inicial](../../assets/upgrade-guide/uct-swat-initial.png)
 
-Clic **[!UICONTROL Run Upgrade Scan]**. El análisis puede tardar algún tiempo en función del tamaño del proyecto. Un control de número indica que el análisis está en curso.
+Haga clic **[!UICONTROL Run Upgrade Scan]**. El análisis puede tardar algún tiempo en función del tamaño del proyecto. Un control de número indica que el análisis está en curso.
 
 ![Widget SWAT de UCT: en curso](../../assets/upgrade-guide/uct-swat-progress.png)
 

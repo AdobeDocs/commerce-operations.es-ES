@@ -60,7 +60,7 @@ Las secciones siguientes proporcionan recomendaciones y consideraciones para cad
 ### Almacenamiento
 
 * Considere utilizar GFS o GlusterFS para el almacenamiento de medios/pubs
-* También puede utilizar el almacenamiento de BD para sitios de poco tráfico
+* Como alternativa, utilice el almacenamiento de BD para sitios de poco tráfico
 
 ### Recomendado [!DNL Varnish] arquitectura de referencia
 

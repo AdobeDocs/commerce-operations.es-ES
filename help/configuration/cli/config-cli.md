@@ -17,7 +17,7 @@ Commerce tiene una interfaz de línea de comandos (CLI):`<magento_root>/bin/mage
 - Borrando la caché
 - Administración de índices, incluida la reindexación
 - Creación de diccionarios de traducción y paquetes de traducción
-- Generación de clases inexistentes, como fábricas e interceptores para complementos, y generación de la configuración de inyección de dependencias para el administrador de objetos
+- Generación de clases inexistentes como fábricas e interceptores para complementos, generación de la configuración de inyección de dependencias para el administrador de objetos
 - Implementación de archivos de vista estática
 - Creación de CSS a partir de Less
 

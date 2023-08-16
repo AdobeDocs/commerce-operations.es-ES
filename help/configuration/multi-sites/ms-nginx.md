@@ -15,9 +15,9 @@ Suponemos que:
 
 - Está trabajando en una máquina de desarrollo (portátil, máquina virtual o similar).
 
-   Es posible que se requieran tareas adicionales para implementar varios sitios web en un entorno alojado; póngase en contacto con su proveedor de alojamiento para obtener más información.
+  Es posible que se requieran tareas adicionales para implementar varios sitios web en un entorno alojado; póngase en contacto con su proveedor de alojamiento para obtener más información.
 
-   Se requieren tareas adicionales para configurar Adobe Commerce en la infraestructura en la nube. Después de completar las tareas descritas en este tema, consulte [Configurar varios sitios web o tiendas](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) en el _Guía de Commerce en infraestructura en la nube_.
+  Se requieren tareas adicionales para configurar Adobe Commerce en la infraestructura en la nube. Después de completar las tareas descritas en este tema, consulte [Configurar varios sitios web o tiendas](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) en el _Guía de Commerce en infraestructura en la nube_.
 
 - Acepte varios dominios en un archivo host virtual o utilice un host virtual por sitio web; los archivos de configuración de host virtual se encuentran en `/etc/nginx/sites-available`.
 - Utilice el `nginx.conf.sample` proporcionado por Commerce solo con las modificaciones descritas en este tutorial.
@@ -42,8 +42,8 @@ A continuación se muestra una hoja de ruta para configurar varios sitios web co
 
       - Uso `website` para cargar el sitio web en la tienda.
       - Uso `store` para cargar cualquier vista de tienda en tu tienda.
-   - `$MAGE_RUN_CODE` es el sitio web único o el código de vista de tienda que corresponde a `$MAGE_RUN_TYPE`.
 
+   - `$MAGE_RUN_CODE` es el sitio web único o el código de vista de tienda que corresponde a `$MAGE_RUN_TYPE`.
 
 1. Actualice la configuración de la URL base en el administrador de Commerce.
 
@@ -282,8 +282,7 @@ A menos que tenga DNS configurado para las direcciones URL de sus tiendas, debe 
 >- Es posible que se requieran tareas adicionales para implementar varios sitios web en un entorno alojado; póngase en contacto con su proveedor de alojamiento para obtener más información.
 >- Se requieren tareas adicionales para configurar Adobe Commerce en la infraestructura en la nube; consulte [Configurar varios sitios web o tiendas en la nube](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) en el _Guía de Commerce en infraestructura en la nube_.
 
-
-### Solución de problemas
+### Resolución de problemas
 
 - Si sus sitios en francés y alemán devuelven 404 pero su administrador carga, asegúrese de completar [Paso 6: Añadir el código de tienda a la URL base](ms-admin.md#step-6-add-the-store-code-to-the-base-url).
 - Si todas las direcciones URL devuelven 404, asegúrese de reiniciar el servidor web.

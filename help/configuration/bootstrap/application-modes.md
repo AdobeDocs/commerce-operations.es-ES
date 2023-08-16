@@ -30,7 +30,7 @@ Si utiliza Cloud Docker para Commerce como herramienta de desarrollo, puede impl
 
 ## Modo predeterminado
 
-El _predeterminado_ Este modo permite implementar la aplicación Commerce en un solo servidor sin cambiar la configuración. Sin embargo, el modo predeterminado no está optimizado para la producción debido al impacto negativo en el rendimiento de los archivos estáticos. Crear archivos estáticos y almacenarlos en caché tiene un bueno impacto en el rendimiento que generarlos con la herramienta de creación de archivos estáticos.
+El _predeterminado_ Este modo permite implementar la aplicación Commerce en un solo servidor sin cambiar la configuración. Sin embargo, el modo predeterminado no está optimizado para la producción debido al impacto negativo en el rendimiento de los archivos estáticos. La creación de archivos estáticos y su almacenamiento en caché tienen un mayor impacto en el rendimiento que su generación con la herramienta de creación de archivos estáticos.
 
 En modo predeterminado:
 

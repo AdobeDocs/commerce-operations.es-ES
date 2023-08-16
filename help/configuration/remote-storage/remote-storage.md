@@ -55,15 +55,15 @@ Puede instalar el almacenamiento remoto durante una instalación de Adobe Commer
 
 - Ejemplo: Instalación de Commerce con almacenamiento remoto
 
-   ```bash
-   bin/magento setup:install --remote-storage-driver="aws-s3" --remote-storage-bucket="myBucket" --remote-storage-region="us-east-1"
-   ```
+  ```bash
+  bin/magento setup:install --remote-storage-driver="aws-s3" --remote-storage-bucket="myBucket" --remote-storage-region="us-east-1"
+  ```
 
 - Ejemplo: Habilitar el almacenamiento remoto en Commerce existente
 
-   ```bash
-   bin/magento setup:config:set --remote-storage-driver="aws-s3" --remote-storage-bucket="myBucket" --remote-storage-region="us-east-1"
-   ```
+  ```bash
+  bin/magento setup:config:set --remote-storage-driver="aws-s3" --remote-storage-bucket="myBucket" --remote-storage-region="us-east-1"
+  ```
 
 >[!TIP]
 >

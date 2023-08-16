@@ -17,7 +17,7 @@ La fase de desarrollo incluye las siguientes actividades:
 - Configuración del entorno local y de ensayo
 - Planificación de sprint
 - Ejecución de tickets
-- Solución de problemas
+- Resolución de problemas
 - Revisión, combinación y prueba del código
 - Revisión de Sprint
 - Cierre de sesión del cliente

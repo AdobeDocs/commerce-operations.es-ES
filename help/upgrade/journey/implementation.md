@@ -36,27 +36,27 @@ Los siguientes son elementos que puede que desee incluir en un análisis exhaust
 - Actualización de servicios para admitir la versión de destino. Utilice la siguiente plantilla de tabla para asignar los servicios que debe actualizar. Utilice el [requisitos del sistema](../../installation/system-requirements.md) para determinar qué añadir al _Actualizar a_ columna.
 
 
-   | Servicio | Versión actual | Actualizar a | Notas |
-   |-----------------|-----------------|------------|----------------------------------------------------------|
-   | PHP | 7.4 | 8.1 |  |
-   | Redis | 6.0 | 6.2 |  |
-   | [!DNL RabbitMQ] | 3.8 | 3.9 | No se está utilizando actualmente, pero deberíamos considerar su uso |
-   | MariaDB (Cloud) | 10.4 | 10.6 |  |
-   | MySQL | 8.0 | -/-/ |  |
-   | Compositor | 1.9.2 | 2.2 |  |
-   | Elasticsearch | 7.10 | 7.17 |  |
+  | Servicio | Versión actual | Actualizar a | Notas |
+  |-----------------|-----------------|------------|----------------------------------------------------------|
+  | PHP | 7.4 | 8.1 |                                                          |
+  | Redis | 6.0 | 6.2 |                                                          |
+  | [!DNL RabbitMQ] | 3.8 | 3.9 | No se está utilizando actualmente, pero deberíamos considerar su uso |
+  | MariaDB (Cloud) | 10.4 | 10.6 |                                                          |
+  | MySQL | 8.0 | -/-/ |                                                          |
+  | Compositor | 1.9.2 | 2.2 |                                                          |
+  | Elasticsearch | 7.10 | 7.17 |                                                          |
 
 - **Extensiones y módulos de terceros**: utilice esta plantilla de tabla para comprender el estado de las extensiones y personalizaciones, de modo que pueda tomar decisiones estratégicas y definir acciones. Esta es una oportunidad para reemplazar cualquier extensión que pueda ser nativa de Adobe Commerce o Magento Open Source para minimizar la complejidad del proyecto. Utilice el `bin/magento module:status` para ver una lista de módulos y extensiones.
 
-   | # | Extensión/<br>nombre del módulo | Paquete Composer | Proveedor | Versión actual | Funcionalidad | Compatible con lo último<br>¿Versión de Commerce? | Problemas | ¿Nativo de Commerce? | Acción | Notas |
-   |---|-----------------------------|------------------------------------|-------------|-------------------|-----------------------|---------------------------------------------|--------------------------------------------------|---------------------|-------------------------|-------|
-   | 1 | Nombre de la extensión y vínculo | extension/<br>extensionx-magento-2 | Nombre del proveedor | Versión instalada | Requisitos empresariales | Sí/No | Enumerar los problemas identificados que enfrenta esta extensión | Sí/No | Conservar/Reemplazar/<br>Eliminar |  |
+  | # | Extensión/<br>nombre del módulo | Paquete Composer | Proveedor | Versión actual | Funcionalidad | Compatible con lo último<br>¿Versión de Commerce? | Problemas | ¿Nativo de Commerce? | Acción | Notas |
+  |---|-----------------------------|------------------------------------|-------------|-------------------|-----------------------|---------------------------------------------|--------------------------------------------------|---------------------|-------------------------|-------|
+  | 1 | Nombre de la extensión y vínculo | extension/<br>extensionx-magento-2 | Nombre del proveedor | Versión instalada | Requisitos empresariales | Sí/No | Enumerar los problemas identificados que enfrenta esta extensión | Sí/No | Conservar/Reemplazar/<br>Eliminar |       |
 
 - **Módulos personalizados**: similar a la tabla de módulos de terceros, esta plantilla le ayuda a realizar un seguimiento y comprender el estado y las acciones necesarias para actualizar módulos personalizados.
 
-   | # | Nombre de módulo | Funcionalidad | ¿Requerido? | ¿Nativo de Commerce? | Acción | Notas |
-   |---|--------------|-----------------------|-----------|---------------------|---------------------|-------|
-   | 1 | Nombre de módulo | Requisitos empresariales | Sí/No | Sí/No | Conservar/Reemplazar/Quitar |  |
+  | # | Nombre de módulo | Funcionalidad | ¿Requerido? | ¿Nativo de Commerce? | Acción | Notas |
+  |---|--------------|-----------------------|-----------|---------------------|---------------------|-------|
+  | 1 | Nombre de módulo | Requisitos empresariales | Sí/No | Sí/No | Conservar/Reemplazar/Quitar |       |
 
 - **Paquetes del compositor y dependencias en composer.json que requieren una actualización.**
 

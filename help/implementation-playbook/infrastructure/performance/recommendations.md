@@ -93,7 +93,7 @@ Recomendamos encarecidamente usar Barnish para almacenar toda la información de
 
 Instale Varnish en un servidor separado frente al nivel web. Debe aceptar todas las solicitudes entrantes y proporcionar copias de las páginas en caché. Para permitir que Varnish funcione eficazmente con páginas seguras, se puede colocar un proxy de terminación SSL delante de Varnish. Nginx se puede utilizar para este fin.
 
-Aunque la invalidación de la memoria caché de la página completa de Varnish es efectiva, recomendamos asignar suficiente memoria a Varnish para guardar las páginas más populares en la memoria.
+Aunque la invalidación de la memoria caché de la página completa de Varnish es efectiva, recomendamos asignar suficiente memoria a Varnish para mantener las páginas más populares en la memoria.
 
 ### Colas de mensajes
 

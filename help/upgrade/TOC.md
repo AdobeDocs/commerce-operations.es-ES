@@ -6,7 +6,7 @@ topic: Administration, Commerce, Development, Upgrade
 source-git-commit: ee69fcec4986fc85f93e336dc654a9bfff486d8b
 workflow-type: tm+mt
 source-wordcount: '144'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
@@ -47,7 +47,7 @@ ht-degree: 0%
 - Colaboración de desarrolladores {#developer}
    - [Actualización de una instalación basada en Git](developer/git-installs.md)
    - [Administración de módulos](developer/manage-modules.md)
-- Solución de problemas {#troubleshooting}
+- Resolución de problemas {#troubleshooting}
    - [Motor de búsqueda actual no admitido](troubleshooting/search-engine-not-supported.md)
    - [Revertir tras un error de actualización del módulo](troubleshooting/roll-back-after-update-failure.md)
    - [Opciones de modo de mantenimiento para la actualización](troubleshooting/maintenance-mode-options.md)

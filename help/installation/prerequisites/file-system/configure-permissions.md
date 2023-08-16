@@ -133,15 +133,15 @@ Para buscar el grupo del usuario del servidor web:
 
 * CentOS:
 
-   ```bash
-   grep -E -i '^user|^group' /etc/httpd/conf/httpd.conf
-   ```
+  ```bash
+  grep -E -i '^user|^group' /etc/httpd/conf/httpd.conf
+  ```
 
-   o
+  o
 
-   ```bash
-   grep -Ei '^user|^group' /etc/httpd/conf/httpd.conf
-   ```
+  ```bash
+  grep -Ei '^user|^group' /etc/httpd/conf/httpd.conf
+  ```
 
 Normalmente, el nombre de usuario y el nombre de grupo son `apache`.
 

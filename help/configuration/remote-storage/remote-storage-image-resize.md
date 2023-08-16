@@ -6,7 +6,7 @@ exl-id: 51c2b9b3-0f5f-4868-9191-911d5df341ec
 source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
 workflow-type: tm+mt
 source-wordcount: '247'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -36,7 +36,7 @@ Para cambiar el tamaño de las imágenes en el servidor, debe configurar Adobe C
 
 1. Seleccione el `Image optimization based on query parameters` URL en **_Formato de URL de medios de catálogo_** field.
 
-1. Clic **[!UICONTROL Save Config]**.
+1. Haga clic **[!UICONTROL Save Config]**.
 
 1. Continúe con el [Configuración de Nginx](#configure-nginx).
 
