@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo configurar la base de datos y la c
 role: Developer, Admin
 feature: Best Practices
 exl-id: ca377dc8-c8bd-4f77-a24b-22a298e2bba4
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: 3e0187b7eeb6475ea9c20bc1da11c496b57853d1
 workflow-type: tm+mt
-source-wordcount: '687'
+source-wordcount: '680'
 ht-degree: 0%
 
 ---
@@ -72,7 +72,7 @@ Los déclencheur se utilizan para registrar cambios en tablas de auditoría. Ado
 - Los déclencheur se interpretan como código y MySQL no los precompila. Al conectarse al espacio de transacción de la consulta, agregan la sobrecarga a un analizador e intérprete para cada consulta realizada con la tabla.
 - Los déclencheur comparten el mismo espacio de transacciones que las consultas originales y, mientras que estas consultas compiten por bloqueos en la tabla, los déclencheur compiten de forma independiente en bloqueos en otra tabla.
 
-Para obtener más información sobre alternativas al uso de déclencheur personalizados, consulte [Uso eficaz de déclencheur MySQL](mysql-triggers-usage.md) en nuestra base de conocimiento de soporte.
+Para obtener más información sobre alternativas al uso de déclencheur personalizados, consulte [Déclencheur MySQL](mysql-configuration.md#triggers).
 
 ## Actualizar [!DNL ECE-Tools] a la versión 2002.0.21 o superior {#ece-tools-version}
 
