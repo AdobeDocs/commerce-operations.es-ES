@@ -2,9 +2,9 @@
 title: Aplicar parches
 description: Obtenga información sobre los métodos para aplicar parches a un proyecto de Adobe Commerce o de Magento Open Source.
 exl-id: 1d5d81ad-0115-4575-adfd-dde7c2826d85
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 454f586737292341b3e6dd9a57cc92b3472c4b31
 workflow-type: tm+mt
-source-wordcount: '326'
+source-wordcount: '340'
 ht-degree: 0%
 
 ---
@@ -16,6 +16,11 @@ Puede aplicar parches utilizando cualquiera de los siguientes métodos:
 - [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
 - [Línea de comandos](../patches/apply.md#command-line)
 - [Compositor](../patches/apply.md#composer)
+
+
+>[!TIP]
+>
+>Consulte [prácticas recomendadas](../../implementation-playbook/best-practices/maintenance/patching-at-scale.md) para obtener información sobre los parches centralizados para Adobe Commerce a escala empresarial.
 
 ## Compositor
 
