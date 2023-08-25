@@ -2,9 +2,9 @@
 user-guide-title: Guía de implementación
 user-guide-description: Obtenga información acerca de las estrategias para planificar e implementar un sitio de Adobe Commerce con éxito.
 mini-toc-levels: 3
-source-git-commit: 7ab0342e3897e2804f5a43876197308c69ac1bb7
+source-git-commit: 42d027a3aedb8d395097d872a97998e76e547966
 workflow-type: tm+mt
-source-wordcount: '250'
+source-wordcount: '253'
 ht-degree: 11%
 
 ---
@@ -102,6 +102,7 @@ ht-degree: 11%
    - Mantenimiento {#maintenance}
       - [Información general](best-practices/maintenance/overview.md)
       - [Auditar el rendimiento de front-end](best-practices/maintenance/frontend-performance.md)
+      - [Optimización del rendimiento back-end](best-practices/maintenance/backend-performance.md)
       - [Configuración del indizador](best-practices/maintenance/indexer-configuration.md)
       - [Parches a escala](best-practices/maintenance/patching-at-scale.md)
       - [Procesamiento de pedidos](best-practices/maintenance/order-processing-configuration.md)
