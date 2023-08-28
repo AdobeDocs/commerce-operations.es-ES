@@ -2,10 +2,10 @@
 user-guide-title: Guía de implementación
 user-guide-description: Obtenga información acerca de las estrategias para planificar e implementar un sitio de Adobe Commerce con éxito.
 mini-toc-levels: 3
-source-git-commit: 42d027a3aedb8d395097d872a97998e76e547966
+source-git-commit: d33d1e24c38984d0abf0c7f8f5ad2eb804ff621d
 workflow-type: tm+mt
-source-wordcount: '253'
-ht-degree: 11%
+source-wordcount: '278'
+ht-degree: 10%
 
 ---
 
@@ -36,7 +36,13 @@ ht-degree: 11%
    - [Estrategia de integración](architecture/integration-strategy.md)
    - [Estrategia de extensibilidad](architecture/extensibility-strategy.md)
    - [Opciones de integración](architecture/integration-options.md)
-   - [Arquitectura de referencia global](architecture/global-reference.md)
+   - Arquitectura de referencia global {#global-reference-architecture}
+      - [Información general](architecture/global-reference/overview.md)
+      - [Ejemplos](architecture/global-reference/examples.md)
+      - Desarrollo del compositor {#composer}
+         - [Información general](architecture/global-reference/composer/overview.md)
+         - [Estructura del proyecto](architecture/global-reference/composer/project-structure.md)
+         - [Sugerencias y trucos](architecture/global-reference/composer/tips-and-tricks.md)
    - Comercio sin encabezado {#headless}
       - [Ventajas](architecture/headless/benefits.md)
       - [Recorrido a sin encabezado](architecture/headless/journey-to-headless.md)
@@ -89,6 +95,13 @@ ht-degree: 11%
       - [Procesamiento de almacenamiento de pagos](best-practices/planning/payment-processing-storage.md)
    - Desarrollo {#development}
       - [Información general](best-practices/development/overview.md)
+      - [Prácticas recomendadas generales](best-practices/development/general.md)
+      - [Administración de código](best-practices/development/code-management.md)
+      - [Revisión de código](best-practices/development/code-review.md)
+      - [Depuración](best-practices/development/debugging.md)
+      - [Control de excepciones](best-practices/development/exception-handling.md)
+      - [Ramificación Git](best-practices/development/git-branching.md)
+      - [Cambio de tamaño de imagen de catálogo](best-practices/development/catalog-image-resizing.md)
       - [Optimización de imagen](best-practices/development/image-optimization.md)
       - [Resolución de problemas](best-practices/development/troubleshooting.md)
       - [Optimización de archivos CSS y JS](best-practices/development/optimize-css-js-files.md)
