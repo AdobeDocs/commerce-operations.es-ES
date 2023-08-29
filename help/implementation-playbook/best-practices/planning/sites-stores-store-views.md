@@ -4,20 +4,16 @@ description: Conozca las prácticas recomendadas para configurar sitios, tiendas
 role: Admin
 feature: Best Practices
 exl-id: 3ea0c6c5-15a9-4e77-b4d0-ce15721c7167
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: a81e88a4293880ae90cd531ce60c5a2b177188f2
 workflow-type: tm+mt
-source-wordcount: '280'
+source-wordcount: '237'
 ht-degree: 0%
 
 ---
 
 # Práctica recomendada para configurar sitios, tiendas y vistas de tiendas
 
-Para obtener el mejor rendimiento del sitio, configure un máximo de 50 sitios, 50 tiendas y 50 vistas de tiendas para Adobe Commerce en proyectos de infraestructura en la nube.
-
->[!NOTE]
->
->Para Adobe Commerce en infraestructuras en la nube, las prácticas recomendadas se aplican específicamente al entorno de producción (y posiblemente a la arquitectura de ensayo en Pro, sujeta a restricciones de recursos), que tendría más recursos que los entornos de integración y desarrollo. Para los entornos de integración (Pro y Starter) y ensayo (Starter), reduzca el número de vistas de tienda a menos de 5 o 10 (sujeto a revisión técnica).
+Para Adobe Commerce en infraestructuras en la nube, las prácticas recomendadas se aplican específicamente al entorno de producción (y posiblemente a la arquitectura de ensayo en Pro, sujeta a restricciones de recursos), que tendría más recursos que los entornos de integración y desarrollo.
 
 ## Productos y versiones afectados
 
