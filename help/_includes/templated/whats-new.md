@@ -1,7 +1,7 @@
 ---
-source-git-commit: f67737451f12c17f3253582b44c2c504cbf98fb2
+source-git-commit: 525ac7ae2481be8c52b32471d14ceefba7b855a2
 workflow-type: tm+mt
-source-wordcount: '484'
+source-wordcount: '692'
 ht-degree: 1%
 
 ---
@@ -10,6 +10,46 @@ ht-degree: 1%
 ## Novedades de la versión
 
 Obtenga información sobre la nueva documentación y las actualizaciones significativas de la documentación existente.
+
+### 28 de agosto de 2023
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descripción</th>
+      <th>Tipo</th>
+      <th>Origen</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Se agregaron los siguientes temas nuevos:<br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development/catalog-image-resizing.html">Prácticas recomendadas de cambio de tamaño de imagen de catálogo</a><br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development/code-management.html">Prácticas recomendadas de administración de código</a><br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development/code-review.html">Prácticas recomendadas de revisión de código</a><br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development/debugging.html">Prácticas recomendadas de depuración</a><br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development/exception-handling.html">Prácticas recomendadas de gestión de excepciones</a><br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development/general.html">Prácticas recomendadas generales de desarrollo</a><br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development/git-branching.html">Prácticas recomendadas de ramificación Git</a><br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/architecture/global-reference-architecture/examples.html">Ejemplos de arquitectura de referencia global (GRA)</a><br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/architecture/global-reference-architecture/composer/overview.html">Desarrollo de compositores para GRA</a><br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/architecture/global-reference-architecture/composer/project-structure.html">Estructura del proyecto Compositor para GRA</a><br />- <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/architecture/global-reference-architecture/composer/tips-and-tricks.html">Consejos y sugerencias del compositor para GRA</a></p>
+</td>
+      <td>new-topic</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/fd708ce4c1ab69f2d6e3a3b10dcd2387ae829368">fd708c</a> (compromiso)</td>
+    </tr>
+  </tbody>
+</table>
+
+### 25 de agosto de 2023
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descripción</th>
+      <th>Tipo</th>
+      <th>Origen</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Se ha añadido un <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/backend-performance.html">nuevo tema</a> acerca de la optimización del rendimiento back-end de los sitios de Adobe Commerce.</p>
+</td>
+      <td>new-topic</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/ecbb71ad8745e4589856c6cbf283212ed61a3664">bce71</a> (compromiso)</td>
+    </tr>
+  </tbody>
+</table>
 
 ### 23 de agosto de 2023
 
