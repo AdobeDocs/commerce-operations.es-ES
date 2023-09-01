@@ -3,10 +3,10 @@ title: Fase de mantenimiento de implementación
 description: Conozca las prácticas recomendadas de implementación para la fase de mantenimiento de los proyectos de Adobe Commerce.
 exl-id: bd052412-a41c-4dbd-9aba-ba2fcac31f2d
 feature: Best Practices
-source-git-commit: d0cb3b81ee50ebd7cbf65a4dddbf5c58acf04f0d
+source-git-commit: aad06c1c2def87a319426860b47b8e5ff5e96780
 workflow-type: tm+mt
-source-wordcount: '280'
-ht-degree: 0%
+source-wordcount: '446'
+ht-degree: 1%
 
 ---
 
@@ -14,65 +14,71 @@ ht-degree: 0%
 
 La fase de mantenimiento incluye las siguientes actividades:
 
-- Monitorización del sitio
+- Corrección de errores
 - Administración de catálogos
-- Indexación
 - Configuración
 - Mejoras de funciones
-- Corrección de errores
+- Indexación
 - Managed Services
+- Monitorización del sitio
 - Actualizaciones
 
 Las secciones siguientes incluyen información sobre prácticas recomendadas para la fase de mantenimiento.
 
-## Monitorización del sitio
+## Correcciones de errores
 
-- [Auditar el rendimiento de front-end](frontend-performance.md)
-- [Listo, Configurar, Mantener](https://business.adobe.com/blog/basics/ready-set-maintain)
-- [Utilice la herramienta SWAT para garantizar la seguridad y la operabilidad de Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/intro.html?lang=en#integrations-with-other-adobe-commerce-support-tools) - Plataforma CTAG
-- [Utilice las notificaciones de New Relic y de estado para monitorizar el rendimiento, el espacio en disco y los registros de los sitios de Adobe Commerce implementados en la infraestructura de la nube](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/performance.html)
-
-## Administración de bases de datos
-
-- [Resuelva los problemas de rendimiento de base de datos&#x200B;](resolve-database-performance-issues.md)
-- [Requisitos previos de actualización de Adobe Commerce 2.3.5 para MariaDB&#x200B;](commerce-235-upgrade-prerequisites-mariadb.md)
+| Práctica recomendada | Descripción |
+|-----------------------------------------------------------------------------------|-------------------------------------------------------------------------------|
+| [[!DNL Quality Patches Tool] uso](../../../tools/quality-patches-tool/usage.md) | Aplicar, revertir y ver información general sobre todos los parches de Adobe Commerce. |
 
 ## Administración de catálogos
 
-<!-- Asset not yet integrated
-- [Catalog Image Resizing](https://wiki.corp.adobe.com/x/oj4ykw) (wiki)
--->
-- [Administración del catálogo de productos](https://www.gotostage.com/channel/fca90f7960be436f9b849215d9e06026/recording/2eea2782fc874047a020391000519f8b/watch?source=CHANNEL)
-
-## Indexación
-
-<!-- Asset not yet integrated
-- [Reindexing - the safe way](https://wiki.corp.adobe.com/x/oj4ykw)(wiki)
--->
-- [Cómo reindexar](https://developer.adobe.com/commerce/php/development/components/indexing/#how-to-reindex)
-- [Prácticas recomendadas de configuración para indexadores&#x200B;](indexer-configuration.md)
-- [Prácticas recomendadas de configuración para el procesamiento de pedidos](order-processing-configuration.md)
-<!-- Asset not yet integrated from CTAG deck:
-- Plan upsizing for planned traffic increases during promotions or holidays -->
+| Práctica recomendada | Descripción |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
+| [Administración del catálogo de productos](https://www.gotostage.com/channel/fca90f7960be436f9b849215d9e06026/recording/2eea2782fc874047a020391000519f8b/watch?source=CHANNEL) | Registro de Commerce &amp; Coffee que describe las estrategias para administrar los catálogos de productos. |
 
 ## Configuración
 
-- [Programación de actualizaciones de administración en sitios de producción](scheduling-admin-updates-in-production.md)
+| Práctica recomendada | Descripción |
+|-------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
+| [Programación de actualizaciones de administración en sitios de producción](scheduling-admin-updates-in-production.md) | Administre las actualizaciones críticas de Adobe Commerce para evitar interrupciones y un rendimiento lento. |
 
-<!-- Asset not yet integrated from CTAG deck: Planning for peak season and promotional periods (upsizing)-->
+## Administración de bases de datos
 
-## Correcciones de errores
-
-- [Uso de la herramienta Parches de calidad](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html)
+| Práctica recomendada | Descripción |
+|----------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
+| [Resuelva los problemas de rendimiento de base de datos&#x200B;](resolve-database-performance-issues.md) | Solucionar problemas de bases de datos que ralentizan el rendimiento en sitios de Adobe Commerce implementados en la infraestructura en la nube. |
+| [Requisitos previos de actualización de Adobe Commerce 2.3.5 para MariaDB&#x200B;](commerce-235-upgrade-prerequisites-mariadb.md) | Prepare la base de datos de MariaDB para una actualización. |
 
 ## Mejoras de funciones
 
-- [Personalización](https://www.gotostage.com/channel/fca90f7960be436f9b849215d9e06026/recording/e218545a77de490fb5102eca07d0580a/watch?source=CHANNEL)
-- [Tendencias del comercio electrónico](https://www.gotostage.com/channel/fca90f7960be436f9b849215d9e06026/recording/9a772468d7b64409a3d5dff4d67e656d/watch?source=CHANNEL)
-- [Automatización de IA](https://www.gotostage.com/channel/fca90f7960be436f9b849215d9e06026/recording/27ae23699c2847be981a23ca098e548f/watch?source=CHANNEL)
+| Práctica recomendada | Descripción |
+|---------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
+| [Personalización](https://www.gotostage.com/channel/fca90f7960be436f9b849215d9e06026/recording/e218545a77de490fb5102eca07d0580a/watch?source=CHANNEL) | Grabación de Commerce &amp; Coffee que describe estrategias de personalización. |
+| [Tendencias del comercio electrónico](https://www.gotostage.com/channel/fca90f7960be436f9b849215d9e06026/recording/9a772468d7b64409a3d5dff4d67e656d/watch?source=CHANNEL) | Grabación de Commerce &amp; Coffee que describe las tendencias de comercio electrónico. |
+| [Automatización de IA](https://www.gotostage.com/channel/fca90f7960be436f9b849215d9e06026/recording/27ae23699c2847be981a23ca098e548f/watch?source=CHANNEL) | Grabación de Commerce &amp; Coffee que describe las posibilidades de personalización con inteligencia artificial y automatización. |
+
+## Indexación
+
+| Práctica recomendada | Descripción |
+|------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------|
+| [Cómo reindexar](https://developer.adobe.com/commerce/php/development/components/indexing/#how-to-reindex) | Utilice los trabajos cron o la herramienta CLI para ejecutar la reindexación. |
+| [Configure los indexadores&#x200B;](indexer-configuration.md) | Optimice el rendimiento del sitio siguiendo las prácticas recomendadas para la configuración del indexador. |
+| [Procesamiento de pedidos](order-processing-configuration.md) | Mejore el rendimiento de cierre de compra y procesamiento de pedidos. |
+
+## Monitorización del sitio
+
+| Práctica recomendada | Descripción |
+|-------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
+| [Auditar el rendimiento de front-end](frontend-performance.md) | Identificar y abordar los problemas que afectan negativamente al rendimiento del sitio mediante herramientas de rendimiento web. |
+| [Listo, Configurar, Mantener](https://business.adobe.com/blog/basics/ready-set-maintain) | Sugerencias para mantener los sitios de Adobe Commerce a fin de maximizar el valor comercial y el tiempo de actividad. |
+| [Utilice el [!DNL Site-Wide Analysis Tool]](../../../tools/site-wide-analysis-tool/intro.md#integrations-with-other-adobe-commerce-support-tools) | Vea información importante sobre el sitio de Adobe Commerce en un solo lugar. |
+| [Monitorización del rendimiento, espacio en disco y registros](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/performance.html) | Utilice New Relic para monitorizar las perspectivas de rendimiento clave sobre su Adobe Commerce en el sitio de infraestructura en la nube. |
 
 ### Actualizaciones
 
-- [Parches a escala](patching-at-scale.md)
-- [Actualice los servicios y componentes a la versión más reciente&#x200B;](update-services.md)
-- [Lista de comprobación de actualización para Adobe Commerce&#x200B;](upgrade-checklist.md)
+| Práctica recomendada | Descripción |
+|-------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
+| [Parches a escala](patching-at-scale.md) | Descubra cómo la aplicación centralizada de parches para Adobe Commerce puede ayudarle a administrar proyectos empresariales. |
+| [Actualice los servicios y componentes a la versión más reciente&#x200B;](update-services.md) | mantenga su pila de tecnología de Adobe Commerce en la infraestructura de la nube actualizada. |
+| [Lista de comprobación de actualización para Adobe Commerce&#x200B;](upgrade-checklist.md) | Cree y utilice una lista de comprobación de actualización para planificar su estrategia de actualización de Adobe Commerce. |
