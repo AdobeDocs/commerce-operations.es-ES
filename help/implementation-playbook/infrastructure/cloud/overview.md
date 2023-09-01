@@ -1,24 +1,30 @@
 ---
-title: Información general sobre infraestructura en nube
-description: Obtenga información sobre Adobe Commerce en la infraestructura en la nube.
+title: Resumen de infraestructura en nube
+description: Obtenga información acerca de Adobe Commerce en la infraestructura en la nube.
 exl-id: 94cf1505-0853-4e01-ba55-befc1117fbdb
 feature: Cloud
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: c737a8e902c960c933e54e2521107475bb1e5a22
 workflow-type: tm+mt
-source-wordcount: '537'
+source-wordcount: '557'
 ht-degree: 0%
 
 ---
+
 
 # Información general
 
 Una de las opciones de alojamiento administrado más populares para Adobe Commerce en AWS la ofrece el propio Adobe Commerce. Adobe Commerce en la infraestructura en la nube es una plataforma de alojamiento automatizado y totalmente gestionada para el software Adobe Commerce.
 
-Adobe Commerce en la infraestructura en la nube es una oferta de plataforma como servicio (PaaS) que permite una implementación rápida de tiendas web totalmente personalizables, seguras y escalables combinadas con una infraestructura de alojamiento y servicios administrados líder. Ofrece dos planes con diferentes infraestructuras. Adobe Commerce Starter es más adecuado para tiendas más pequeñas con menos complejidad y catálogos más pequeños. Adobe Commerce Pro está diseñado para tiendas más grandes con más complejidad, catálogos de productos más grandes o tráfico que alcanza su punto máximo. Adobe Commerce determinará la arquitectura adecuada con los comentarios de los socios.
+Adobe Commerce en la infraestructura en la nube es una oferta de plataforma como servicio (PaaS) que permite una implementación rápida de tiendas web totalmente personalizables, seguras y escalables combinadas con una infraestructura de alojamiento y Managed Services líder. Ofrece dos planes con diferentes infraestructuras. Adobe Commerce [Starter](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/cloud-architecture.html#starter-projects) Los planes de son más adecuados para tiendas más pequeñas con menos complejidad y catálogos más pequeños. Adobe Commerce [Pro](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/cloud-architecture.html#pro-projects) los planes están diseñados para tiendas más grandes con más complejidad, catálogos de productos más grandes o tráfico que alcanza su punto máximo. El Adobe determina la arquitectura adecuada con la entrada de los socios.
 
 Adobe Commerce está preparado para la nube con una infraestructura de alojamiento de varias nubes totalmente redundante que proporciona un rendimiento optimizado, resiliencia y escalabilidad elástica. Puede ejecutar de forma eficaz su plataforma de comercio en la red de distribución de contenido (CDN) de Fastly, y con New Relic para la monitorización y la administración, puede mantener el entorno de su tienda funcionando sin problemas.
 
-Adobe Commerce ofrece todas las ventajas de la cloud computing moderna que suelen asociarse con las soluciones SaaS: escalabilidad elástica, alta flexibilidad y disponibilidad, conformidad con PCI, disponibilidad global y parches automatizados, sin dejar de mantener la flexibilidad en la personalización de software que nuestros comerciantes necesitan.
+Adobe Commerce ofrece todas las ventajas de la computación en la nube moderna que normalmente se asocian con las soluciones SaaS y, al mismo tiempo, mantiene la flexibilidad en la personalización del software:
+
+- Adaptación elástica
+- Alta resiliencia y disponibilidad
+- Conformidad con PCI
+- Disponibilidad global y aplicación automatizada de parches
 
 ![Diagrama que muestra los elementos arquitectónicos de Adobe Commerce en la infraestructura en la nube](../../../assets/playbooks/adobe-commerce-cloud-infrastructure.svg)
 
@@ -38,18 +44,16 @@ Otras ventajas de Adobe Commerce son:
 
 ## Servicios de terceros
 
-Echemos también un vistazo al software que hace realidad los beneficios de Adobe Commerce.
+Esta sección resume los servicios y las herramientas clave de terceros para Adobe Commerce en proyectos de infraestructura en la nube. Consulte [Pila de tecnología](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/tech-stack.html) en el _Guía de Cloud_ para obtener más información.
 
-![Diagrama que muestra Adobe Commerce en la pila de tecnología de infraestructura en la nube](../../../assets/playbooks/cloud-tech-stack.svg)
+- **Fastly CDN**: A medida que los clientes acceden al sitio y a las tiendas, las solicitudes llegan rápidamente para cargar las páginas en caché más rápido. Fastly WAF también proporciona un servicio de protección DDoS.
 
-- Fastly CDN: A medida que los clientes acceden a su sitio y tiendas, las solicitudes llegan a Fastly para cargar páginas en caché más rápido. Fastly WAF también proporciona servicio de protección DDoS.
+- **New Relic**: proporciona una vista completa de las aplicaciones y del entorno operativo. New Relic le permite combinar métricas clave de aplicaciones móviles y de explorador con servicios de soporte, almacenes de datos y hosts de modo que pueda optimizar el rendimiento de forma integral y garantizar el éxito de cada iniciativa.
 
-- New Relic le ofrece una vista completa de sus aplicaciones y del entorno operativo. Permite combinar métricas clave de aplicaciones móviles y de explorador con servicios de soporte, almacenes de datos y hosts de modo que se pueda optimizar el rendimiento de forma integral y garantizar el éxito de cada iniciativa.
+- **Compositor**: administra dependencias y actualizaciones en Adobe Commerce y proporciona contexto sobre los paquetes incluidos, qué hacen los paquetes y cómo encajan.
 
-- Composer administra dependencias y actualizaciones en Adobe Commerce y proporciona contexto sobre los paquetes incluidos, qué hacen los paquetes y cómo encajan.
+- **Git**: Proporciona administración del código fuente. Git permite la ramificación local, áreas de ensayo cómodas y varios flujos de trabajo con generación e implementación automáticas para un desarrollo rápido y eficiente y una implementación continua.
 
-- Git es su código en los repositorios. Permite la ramificación local, áreas de ensayo cómodas y varios flujos de trabajo con generación e implementación automáticas para un desarrollo rápido y eficiente y una implementación continua.
+- **Plataforma como servicio (PaaS)**: Proporciona una infraestructura aprovisionada previamente que incluye PHP, MySQL, Redis, [!DNL RabbitMQ]y las tecnologías OpenSearch o Elasticsearch.
 
-- Platform-as-a-Service (PaaS) proporciona una infraestructura preaprovisionada que incluye PHP, MySQL, Redis, [!DNL RabbitMQ]y las tecnologías OpenSearch o Elasticsearch.
-
-- El alojamiento en la nube de AWS o Azure alimenta la infraestructura como servicio (IaaS) subyacente, que ofrece un entorno escalable y seguro para las ventas y la venta minorista en línea.
+- **Alojamiento en la nube de AWS o Azure**: Impulsa la infraestructura como servicio (IaaS) subyacente, que ofrece un entorno escalable y seguro para las ventas y la venta minorista en línea.
