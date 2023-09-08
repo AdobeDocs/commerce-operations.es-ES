@@ -4,9 +4,9 @@ description: Descubra cómo el archivo XML del sistema administra la configuraci
 feature: Configuration, System
 badge: label="Colaboró David Lambauer" type="Informative" url="https://github.com/DavidLambauer" tooltip="David Lambauer"
 exl-id: a6c5de6c-e8da-4eca-bbfb-592904b2c53f
-source-git-commit: 16e9396f19693436dfc7bdac78d84624a78f0c21
+source-git-commit: 37c23d7a410cdb664710880d3d89cb72efa164e9
 workflow-type: tm+mt
-source-wordcount: '2680'
+source-wordcount: '2669'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,6 @@ A `<tab>`La etiqueta puede tener los atributos siguientes:
 |-------------|------------------------------------------------------------------------------------------------------------------------------------------|----------|----------|
 | `id` | Define el identificador que se utiliza para hacer referencia a la sección. | `typeId` | obligatorio |
 | `translate` | Define el campo que debe traducirse. Proporcionar `label` para que la etiqueta sea traducible. | `string` | opcional |
-| `type` | Define el tipo de entrada del elemento de HTML procesado; el valor predeterminado es `text`. | `string` | opcional |
 | `sortOrder` | Define el orden de la sección. Los números altos empujan la sección al final de la página; los números bajos empujan la sección al principio. | `float` | opcional |
 | `class` | Agrega una clase CSS definida al elemento de HTML de pestañas procesado. | `string` | opcional |
 
