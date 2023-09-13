@@ -2,9 +2,9 @@
 title: Obtener las claves de autenticación
 description: Siga estos pasos para recuperar las credenciales de acceso a los paquetes de Adobe Commerce y Magento Open Source Composer en repo.magento.com.
 exl-id: 7ec2a410-d81f-476a-bf6a-f3c61982a734
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 3d9b7c5352f91308dd315a7195ee2cb1c4b191ee
 workflow-type: tm+mt
-source-wordcount: '512'
+source-wordcount: '516'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,8 @@ Para tener acceso a los paquetes de Adobe Commerce y Magento Open Source, debe u
 
 Para crear claves de autenticación:
 
-1. Inicie sesión en [Commerce Marketplace](https://marketplace.magento.com). Si no tiene una cuenta de, haga clic en **Registrar**.
+1. Inicie sesión en [Commerce Marketplace](https://commercemarketplace.adobe.com/). Si no tiene una cuenta de, haga clic en **Registrar**.
+
 1. Haga clic en el nombre de su cuenta en la parte superior derecha de la página y seleccione **Mi perfil**.
 
 1. Clic **Claves de acceso** en la pestaña Marketplace.
@@ -45,7 +46,7 @@ También puede deshabilitar o eliminar las claves de autenticación. Por ejemplo
 
 ### Administrar token de acceso SSH
 
-Para descargar versiones de Adobe Commerce mediante SSH, debe generar un token de acceso de descargas. Para generar un token:
+Para descargar versiones de Adobe Commerce y Magento Open Source mediante SSH, debe generar un token de acceso de descargas. Para generar un token:
 
 1. Inicie sesión en su [cuenta de magento.com](https://account.magento.com/customer/account/login).
 1. Clic **Mi cuenta** en la parte superior de la página.

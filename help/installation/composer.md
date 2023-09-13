@@ -2,16 +2,18 @@
 title: Instalación local de inicio rápido
 description: Siga estos pasos para instalar Adobe Commerce o Magento Open Source en la infraestructura de su propiedad.
 exl-id: a93476e8-2b30-461a-91df-e73eb1a14d3c
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 3d9b7c5352f91308dd315a7195ee2cb1c4b191ee
 workflow-type: tm+mt
-source-wordcount: '990'
+source-wordcount: '975'
 ht-degree: 0%
 
 ---
 
 # Instalación local de inicio rápido
 
-Utilizamos [Compositor](https://getcomposer.org/) para administrar los componentes de Adobe Commerce y Magento Open Source y sus dependencias. Usar Composer para obtener el metapaquete de Adobe Commerce y Magento Open Source ofrece las siguientes ventajas:
+Las instrucciones de esta página describen cómo instalar Adobe Commerce y Magento Open Source en [autoalojado](../implementation-playbook/infrastructure/self-hosting/overview.md) infraestructura. Para obtener instrucciones sobre cómo actualizar una instalación existente, consulte la [_Guía de actualización_](../upgrade/overview.md).
+
+El Adobe utiliza [Compositor](https://getcomposer.org/) para administrar los componentes de Adobe Commerce y Magento Open Source y sus dependencias. Usar Composer para obtener el metapaquete de Adobe Commerce y Magento Open Source ofrece las siguientes ventajas:
 
 - Reutilice bibliotecas de terceros sin agruparlas con el código fuente
 - Reduzca los conflictos de extensiones y los problemas de compatibilidad utilizando una arquitectura basada en componentes con una sólida administración de dependencias
@@ -33,7 +35,7 @@ Antes de continuar, debe hacer lo siguiente:
 
 ## Iniciar sesión como propietario del sistema de archivos
 
-Obtenga información acerca de la propiedad, los permisos y el propietario del sistema de archivos en nuestra [Tema de información general sobre propiedad y permisos](prerequisites/file-system/overview.md).
+Obtenga información acerca de la propiedad, los permisos y el propietario del sistema de archivos en la [Tema de información general sobre propiedad y permisos](prerequisites/file-system/overview.md).
 
 Para cambiar al propietario del sistema de archivos:
 
@@ -53,7 +55,7 @@ Para cambiar al propietario del sistema de archivos:
 
 1. Para ejecutar comandos CLI desde cualquier directorio, agregue `<app_root>/bin` a su sistema `PATH`.
 
-   Dado que los shells tienen una sintaxis diferente, consulte una referencia como [unix.stackexchange.com](https://unix.stackexchange.com/questions/117467/how-to-permanently-set-environmental-variables).
+   Dado que los shells tienen sintaxis diferente, consulte una referencia como [unix.stackexchange.com](https://unix.stackexchange.com/questions/117467/how-to-permanently-set-environmental-variables).
 
    Ejemplo de shell de bash para CentOS:
 
@@ -73,7 +75,7 @@ Para obtener el metapaquete de Adobe Commerce o Magento Open Source:
 
 1. Inicie sesión en el servidor de aplicaciones como, o cambie a, [propietario del sistema de archivos](prerequisites/file-system/overview.md).
 1. Cambie al directorio docroot del servidor web o a un directorio que haya configurado como docroot del host virtual.
-1. Cree un proyecto de Composer utilizando el metapaquete Adobe Commerce o Magento Open Source.
+1. Cree un proyecto de Composer utilizando el metapaquete de Adobe Commerce o Magento Open Source.
 
    **Magento Open Source**
 
@@ -87,40 +89,36 @@ Para obtener el metapaquete de Adobe Commerce o Magento Open Source:
    composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition <install-directory-name>
    ```
 
-   Cuando se le solicite, introduzca sus claves de autenticación. Las claves pública y privada se crean y configuran en su [Commerce Marketplace](https://marketplace.magento.com/customer/account/login/).
+   Cuando se le solicite, introduzca sus claves de autenticación. Las claves pública y privada se crean y configuran en su [Commerce Marketplace](https://commercemarketplace.adobe.com/customer/account/login/).
 
    Si se producen errores, como `Could not find package...` o `...no matching package found`, asegúrese de que no haya errores tipográficos en el comando. Si sigue encontrando errores, es posible que no tenga autorización para descargar Adobe Commerce. Contacto [Asistencia de Adobe Commerce](https://support.magento.com/hc/en-us) para obtener ayuda.
 
    Consulte [Solución de problemas](https://support.magento.com/hc/en-us/articles/360033818091) para obtener ayuda con más errores.
 
-   >[!NOTE]
-   >
-   >Los clientes de Adobe Commerce pueden acceder a los parches dos semanas antes de la fecha de disponibilidad general (GA). Los paquetes previos al lanzamiento solo están disponibles mediante Composer. No puede acceder a las versiones previas en el portal del desarrollador o GitHub hasta GA. Si no encuentra estos paquetes en Composer, póngase en contacto con el Soporte técnico de Adobe Commerce.
-
 ### Ejemplo: versión menor
 
-Las versiones menores contienen nuevas funciones, correcciones de calidad y correcciones de seguridad. Use Compositor para especificar una versión secundaria. Por ejemplo, para especificar el metapaquete de Adobe Commerce 2.4.5:
+Las versiones menores contienen nuevas funciones, correcciones de calidad y correcciones de seguridad. Use Compositor para especificar una versión secundaria. Por ejemplo, para especificar el metapaquete de Adobe Commerce 2.4.6:
 
 ```bash
-composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.5 <install-directory-name>
+composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.6 <install-directory-name>
 ```
 
 ### Ejemplo: parche de calidad
 
-Los parches de calidad contienen principalmente parches funcionales _y_ correcciones de seguridad. Sin embargo, a veces también pueden contener nuevas funciones compatibles con versiones anteriores. Use Composer para descargar un parche de calidad. Por ejemplo, para especificar el metapaquete de Adobe Commerce 2.4.5:
+Los parches de calidad contienen principalmente parches funcionales _y_ correcciones de seguridad. Sin embargo, a veces también pueden contener nuevas funciones compatibles con versiones anteriores. Use Composer para descargar un parche de calidad. Por ejemplo, para especificar el metapaquete de Adobe Commerce 2.4.6:
 
 ```bash
-composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.5 <install-directory-name>
+composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.6 <install-directory-name>
 ```
 
 ### Ejemplo: parche de seguridad
 
 Los parches de seguridad solo contienen correcciones de seguridad. Están diseñadas para que el proceso de actualización sea más rápido y sencillo.
 
-Los parches de seguridad utilizan la convención de nombres del Compositor `2.4.5-px`. Use el Compositor para especificar un parche. Por ejemplo, para descargar el metapaquete Adobe Commerce 2.4.5-p1:
+Los parches de seguridad utilizan la convención de nombres del Compositor `2.4.6-px`. Use el Compositor para especificar un parche. Por ejemplo, para descargar el metapaquete Adobe Commerce 2.4.6-p1:
 
 ```bash
-composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.5-p1 <install-directory-name>
+composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition=2.4.6-p1 <install-directory-name>
 ```
 
 ## Definición de permisos de archivo
@@ -166,7 +164,7 @@ bin/magento setup:install \
 
 >[!TIP]
 >
->Puede personalizar el URI de administrador con la variable `--backend-frontname` opción. Sin embargo, se recomienda omitir esta opción y permitir que el comando de instalación genere automáticamente un URI aleatorio. Un URI aleatorio es más difícil de explotar para los piratas informáticos o para el software malintencionado. El URI se muestra en la consola cuando se completa la instalación.
+>Puede personalizar el URI de administrador con la variable `--backend-frontname` opción. Sin embargo, Adobe recomienda omitir esta opción y permitir que el comando de instalación genere automáticamente un URI aleatorio. Un URI aleatorio es más difícil de explotar para los piratas informáticos o para el software malintencionado. El URI se muestra en la consola cuando se completa la instalación.
 
 >[!TIP]
 >
@@ -230,4 +228,4 @@ Los siguientes argumentos son comunes a todos los comandos. Estos comandos se pu
 
 >[!NOTE]
 >
->¡Felicidades! Ha completado la instalación rápida. ¿Necesita ayuda más avanzada? Consulte nuestra [Instalación avanzada](advanced.md) guía.
+>¡Felicidades! Ha completado la instalación rápida. ¿Necesita ayuda más avanzada? Consulte la [Instalación avanzada](advanced.md) guía.
