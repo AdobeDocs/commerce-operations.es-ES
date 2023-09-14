@@ -1,7 +1,7 @@
 ---
-source-git-commit: 525ac7ae2481be8c52b32471d14ceefba7b855a2
+source-git-commit: 366180602621742c40184192633863c5ce9a8e9f
 workflow-type: tm+mt
-source-wordcount: '692'
+source-wordcount: '639'
 ht-degree: 1%
 
 ---
@@ -10,6 +10,46 @@ ht-degree: 1%
 ## Novedades de la versión
 
 Obtenga información sobre la nueva documentación y las actualizaciones significativas de la documentación existente.
+
+### 11 de septiembre de 2023
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descripción</th>
+      <th>Tipo</th>
+      <th>Origen</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Se ha actualizado el <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/architecture/extensibility-strategy.html">estrategia de extensibilidad</a> con información sobre App Builder, API Mesh y Eventos de Adobe I/O.</p>
+</td>
+      <td>major-update</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/f4f420cee5f9241f56107c4218793af394ba1193">f4f420</a> (compromiso)</td>
+    </tr>
+  </tbody>
+</table>
+
+### 6 de septiembre de 2023
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descripción</th>
+      <th>Tipo</th>
+      <th>Origen</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Publicado <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html">notas de la versión</a> para la versión del paquete Quality Patches Tool (QPT) 1.1.37.</p>
+</td>
+      <td>major-update</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/3290e58436259a7af81ed81b691a3ad032c812a5">3290e5</a> (compromiso)</td>
+    </tr>
+  </tbody>
+</table><!-- date_group -->
 
 ### 28 de agosto de 2023
 
@@ -151,66 +191,6 @@ Obtenga información sobre la nueva documentación y las actualizaciones signifi
 </td>
       <td>major-update</td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/fd3b93aaa79e84d356217b6adfe7181895e84f07">fd3b93</a> (compromiso)</td>
-    </tr>
-  </tbody>
-</table><!-- date_group -->
-
-### 27 de julio de 2023
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descripción</th>
-      <th>Tipo</th>
-      <th>Origen</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Se ha rediseñado el <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html">disponibilidad de productos</a> para mejorar el diseño y la legibilidad.</p>
-</td>
-      <td>major-update</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/6ed2a3e42cd0b85aae29652b8e36acbbda1b9e72">6ed2a3</a> (compromiso)</td>
-    </tr>
-  </tbody>
-</table>
-
-### 25 de julio de 2023
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descripción</th>
-      <th>Tipo</th>
-      <th>Origen</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Publicado <a href="https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html">notas de la versión</a> para la versión del paquete 1.1.35 Quality Patches Tool (QPT).</p>
-</td>
-      <td>major-update</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/ac0f04b7a04c5c7d3b3880b8231ffece05718558">ac0f04</a> (compromiso)</td>
-    </tr>
-  </tbody>
-</table>
-
-### 11 de julio de 2023
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descripción</th>
-      <th>Tipo</th>
-      <th>Origen</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Se ha añadido una descripción de un nuevo problema conocido que afecta a las etiquetas de reglas de ventas organizadas de Adobe Commerce <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-5.html">2.4.5</a> y <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-6.html">2.4.6</a>.</p>
-</td>
-      <td>major-update</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/9e833dad884fa6146bb5e6ce6dd5ebcb23208b80">9e833d</a> (compromiso)</td>
     </tr>
   </tbody>
 </table><!-- date_group --><!-- month_group --><!-- year_group -->
