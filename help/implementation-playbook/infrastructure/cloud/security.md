@@ -3,7 +3,7 @@ title: Seguridad de infraestructura en nube
 description: Obtenga información sobre cómo el Adobe mantiene seguro Adobe Commerce en la infraestructura en la nube.
 exl-id: cd5d1106-c8db-4b70-b1c7-12378d7d77a7
 feature: Cloud, Security
-source-git-commit: afe70569796c056cd0ecab82898f0dec016e7a3f
+source-git-commit: 8d8cd0d33c1a3a95186948e670df6d9865b9a871
 workflow-type: tm+mt
 source-wordcount: '1739'
 ht-degree: 0%
@@ -41,7 +41,7 @@ Los clientes pueden utilizar túneles SSH para asegurar las comunicaciones con l
 
 ## Cifrado
 
-Almacén de bloques elásticos de Amazon (EBS) se utiliza para el almacenamiento. Todos los volúmenes EBS se cifran con el algoritmo AES-265, lo que significa que los datos se cifran en reposo. El sistema también cifra los datos en tránsito entre la CDN y el origen, y entre los servidores de origen. Las contraseñas de los clientes se almacenan como hashes. Las credenciales confidenciales, incluidas las credenciales de la puerta de enlace de pago, se cifran mediante el algoritmo SHA-256.
+Almacén de bloques elásticos de Amazon (EBS) se utiliza para el almacenamiento. Todos los volúmenes EBS se cifran con el algoritmo AES-256, lo que significa que los datos se cifran en reposo. El sistema también cifra los datos en tránsito entre la CDN y el origen, y entre los servidores de origen. Las contraseñas de los clientes se almacenan como hashes. Las credenciales confidenciales, incluidas las credenciales de la puerta de enlace de pago, se cifran mediante el algoritmo SHA-256.
 
 La aplicación Adobe Commerce no admite el cifrado o cifrado de nivel de columna o fila cuando los datos no están en reposo o no están en tránsito entre los servidores. El cliente puede administrar las claves de cifrado desde la aplicación. Las claves que utiliza el sistema se almacenan en el sistema de administración de claves de AWS y Managed Services debe administrarlas para proporcionar partes del servicio.
 
