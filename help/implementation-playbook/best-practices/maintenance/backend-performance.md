@@ -4,7 +4,8 @@ description: Obtenga información sobre cómo optimizar el rendimiento back-end 
 badge: label="Contribuido por objectsource" type="Informative" url="https://objectsource.co.uk/" tooltip="objectsource"
 role: Admin, User, Developer
 feature: Best Practices
-source-git-commit: 1ba9325feaa47d767ec7991919fd5ecd53ae6226
+exl-id: 18bc97a0-3d34-4d48-a3e2-84af2da7d0d3
+source-git-commit: e5df5a7242dbe8ceff548257daeb39f7c9fc5c69
 workflow-type: tm+mt
 source-wordcount: '1075'
 ht-degree: 0%
@@ -38,7 +39,7 @@ Una herramienta que puede usar para las pruebas de esfuerzo es GTmetrix. Medir l
 
 Obtenga más información sobre la preparación de proyectos de Commerce para periodos de alto tráfico:
 
-- [Preparación para las vacaciones](https://experienceleague.adobe.com/docs/events/mbi-webinars-recordings/2021/holiday-readiness.html)
+- [Preparación para las vacaciones](https://experienceleague.adobe.com/docs/events/commerce-intelligence-webinar-recordings/2021/holiday-readiness.html)
 - [Análisis de compras de vacaciones](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/analyze/performance/holiday-season-perf.html)
 - [Aumento de capacidad de sobretensión](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/2021-holiday-surge-capacity-requests-for-magento-commerce-cloud.html)
 
