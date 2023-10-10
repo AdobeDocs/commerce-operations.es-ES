@@ -2,7 +2,7 @@
 title: Consumidores de cola de mensajes
 description: Obtenga información acerca de los consumidores de colas de mensajes de Adobe Commerce y Magento Open Source, incluidas las funciones y las opciones de configuración del sistema asociadas a ellos.
 exl-id: 7fd7ab3f-581f-493c-956c-731f111d1b14
-source-git-commit: 1d7f5f58f8c21013c2ab0d68ab93a125ba0f3764
+source-git-commit: 11ccc59230a7a0d1768c043c39df43c7df031efd
 workflow-type: tm+mt
 source-wordcount: '1014'
 ht-degree: 0%
@@ -65,7 +65,7 @@ La siguiente tabla identifica a todos los consumidores de colas de mensajes, des
 | Envía correos electrónicos de pedidos de compra. Necesario cuando el [**[!UICONTROL Purchase Order]**](https://experienceleague.adobe.com/docs/commerce-admin/b2b/purchase-orders/purchase-order-flow.html) está activada en las opciones de configuración del sistema de administración. |                |                         |                     |
 | `purchaseorder.validation` |                | + |                     |
 | Valida el pedido de compra con los datos relevantes [reglas de aprobación](https://docs.magento.com/user-guide/customers/account-dashboard-approval-rules.html). Necesario cuando el [**[!UICONTROL Purchase Order]**](https://experienceleague.adobe.com/docs/commerce-admin/b2b/purchase-orders/purchase-order-flow.html) está activada en las opciones de configuración del sistema de administración. |                |                         |                     |
-| `saveConfigProcessor` [!BADGE 2.4.7-beta1]{type=Informative url="/help/release/release-notes/commerce/2-4-7.md" tooltip="Disponible solo en 2.4.7-beta1"} | + |                         | + |
+| `saveConfigProcessor` [!BADGE 2.4.7-beta]{type=Informative url="/help/release/release-notes/commerce/2-4-7.md" tooltip="Disponible solo en la versión beta 2.4.7"} | + |                         | + |
 | Guarda asincrónicamente los cambios de configuración del almacén colocando los trabajos de guardado en una cola de mensajes, lo que puede mejorar el rendimiento en implementaciones que contienen un gran número de configuraciones de nivel de almacén. Necesario para utilizar [`AsyncConfig`](../../performance/configuration.md#asynchronous-configuration-save) módulo. |                |                         |                     |
 | `sales.rule.update.coupon.usage` | + | + | + |
 | Evita la [problema](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/coupon-code-used-more-than-once-adobe-commerce.html) donde los cupones de un solo uso pueden utilizarse varias veces. |                |                         |                     |

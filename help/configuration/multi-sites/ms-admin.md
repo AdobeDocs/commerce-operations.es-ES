@@ -2,9 +2,9 @@
 title: Configure varios sitios web, tiendas y vistas de tiendas en el Administrador de
 description: Configure sitios web, tiendas y vistas de tiendas adicionales en el administrador de Commerce.
 exl-id: e6b4d14d-7504-48f9-a2e1-7e9a1bc76ab9
-source-git-commit: 78a7e99ecaba6a6f7982123f5bd67efc740ec2ef
+source-git-commit: f7c82844fd6d006e4ebbcf56f6e10338f67d0bdd
 workflow-type: tm+mt
-source-wordcount: '1013'
+source-wordcount: '1066'
 ht-degree: 0%
 
 ---
@@ -172,3 +172,7 @@ Para cambiar la URL de base de vista de tienda predeterminada:
    >Si está configurando una dirección URL base para Adobe Commerce en una infraestructura en la nube, debe reemplazar el primer periodo con tres guiones. Por ejemplo, si la dirección URL base es `french.branch-sbg7pPa-f3dueAiM03tpy.us.magentosite.cloud`, introduzca `http://french---branch-sbg7pPa-f3dueAiM03tpy.us.magentosite.cloud`
 
 1. Clic **Guardar configuración**.
+
+>[!INFO]
+>
+>El sitio web, la tienda y el código de vista de tienda solo pueden incluir letras (a-z o A-Z), números (0-9) y guiones bajos (_). Además, el primer carácter debe ser una letra. Si se utilizan mayúsculas o minúsculas, internamente la coincidencia no distingue entre mayúsculas y minúsculas para dar cabida a la anulación de los ajustes de configuración mediante variables de entorno. Consulte [Utilice variables de entorno para anular los ajustes de configuración](../reference/override-config-settings.md#environment-variables).

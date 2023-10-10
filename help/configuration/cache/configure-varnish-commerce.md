@@ -3,9 +3,9 @@ title: Configuración de Barniz para Commerce
 description: Obtenga información sobre cómo actualizar y administrar el archivo de configuración de Barniz para la aplicación Commerce.
 feature: Configuration, Cache, SCD
 exl-id: 6c007ff9-493f-4df2-b7b4-438b41fd7e37
-source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
+source-git-commit: 11ccc59230a7a0d1768c043c39df43c7df031efd
 workflow-type: tm+mt
-source-wordcount: '377'
+source-wordcount: '421'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,8 @@ Para configurar Commerce para que utilice Barniz:
    | Lista de acceso | Introduzca el nombre de host completo, la dirección IP o [Enrutamiento entre dominios sin clase (CIDR)](https://www.digitalocean.com/community/tutorials/understanding-ip-addresses-subnets-and-cidr-notation-for-networking) intervalo de direcciones IP de notación para el que se va a invalidar el contenido. Consulte [Depuración de caché de barniz](https://varnish-cache.org/docs/3.0/tutorial/purging.html). |
    | Host back-end | Introduzca el nombre de host completo o la dirección IP y el puerto de escucha del barniz _servidor_ o _servidor de origen_; es decir, el servidor que proporciona el contenido que Barnish acelera. Normalmente, es su servidor web. Consulte [Servidores back-end de caché de barniz](https://www.varnish-cache.org/docs/trunk/users-guide/vcl-backends.html). |
    | Puerto back-end | Puerto de escucha del servidor de origen. |
-   | Período de gracia | El periodo de gracia determina cuánto tiempo sirve Barnish al contenido obsoleto si el backend no responde. El valor predeterminado es 300 segundos. |
+   | Período de gracia | Determina cuánto tiempo sirve Barnish al contenido obsoleto si el backend no responde. El valor predeterminado es 300 segundos. |
+   | Tamaño de parámetros de identificadores  [!BADGE 2.4.7-beta]{type=Informative url="/help/release/release-notes/commerce/2-4-7.md" tooltip="Disponible solo en la versión beta 2.4.7"} | Especifica el número máximo de [controladores de diseño](https://developer.adobe.com/commerce/frontend-core/guide/layouts/#layout-handles) para procesar en [`{BASE-URL}/page_cache/block/esi`](use-varnish-esi.md) Punto final HTTP para el almacenamiento en caché de página completa. Restringir el tamaño puede mejorar la seguridad y el rendimiento. El valor predeterminado es 100. |
 
 1. Clic **Guardar configuración**.
 

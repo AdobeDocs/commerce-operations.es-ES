@@ -1,7 +1,7 @@
 ---
-source-git-commit: 64c453adabb092075854b2c20bf7da73c4a5146e
+source-git-commit: d720b64f315d1e4b6fb7868d911eb3af089e3fa4
 workflow-type: tm+mt
-source-wordcount: '19899'
+source-wordcount: '20131'
 ht-degree: 0%
 
 ---
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 <!-- The template to render with above values -->
 
-**Versión**: 2.4.7-beta1
+**Versión**: 2.4.7-beta2
 
-Esta referencia contiene 132 comandos disponibles a través del `bin/magento` herramienta de línea de comandos.
+Esta referencia contiene 134 comandos disponibles a través del `bin/magento` herramienta de línea de comandos.
 La lista inicial se genera automáticamente utilizando `bin/magento list` en Adobe Commerce.
 Utilice el [&quot;Agregar comandos CLI&quot;](https://developer.adobe.com/commerce/php/development/cli-commands/) para agregar un comando de CLI personalizado.
 
@@ -3756,6 +3756,120 @@ No haga ninguna pregunta interactiva
 - No acepta un valor
 
 
+## `events:provider:info`
+
+Devuelve detalles acerca del proveedor de eventos configurado
+
+```bash
+bin/magento events:provider:info
+```
+
+### `--help`, `-h`
+
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No generar ningún mensaje
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--verbose`, `-v|-vv|-vvv`
+
+Aumente el nivel de detalle de los mensajes: 1 para un resultado normal, 2 para un resultado más detallado y 3 para una depuración
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--version`, `-V`
+
+Mostrar esta versión de la aplicación
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar (o deshabilitar —sin ansi) la salida ANSI
+
+- No acepta un valor
+
+### `--no-ansi`
+
+Anule la opción &quot;—ansi&quot;
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`, `-n`
+
+No haga ninguna pregunta interactiva
+
+- Predeterminado: `false`
+- No acepta un valor
+
+
+## `events:registrations:list`
+
+Enumera los registros de eventos en su proyecto de App Builder
+
+```bash
+bin/magento events:registrations:list
+```
+
+### `--help`, `-h`
+
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--quiet`, `-q`
+
+No generar ningún mensaje
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--verbose`, `-v|-vv|-vvv`
+
+Aumente el nivel de detalle de los mensajes: 1 para un resultado normal, 2 para un resultado más detallado y 3 para una depuración
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--version`, `-V`
+
+Mostrar esta versión de la aplicación
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--ansi`
+
+Forzar (o deshabilitar —sin ansi) la salida ANSI
+
+- No acepta un valor
+
+### `--no-ansi`
+
+Anule la opción &quot;—ansi&quot;
+
+- Predeterminado: `false`
+- No acepta un valor
+
+### `--no-interaction`, `-n`
+
+No haga ninguna pregunta interactiva
+
+- Predeterminado: `false`
+- No acepta un valor
+
+
 ## `events:subscribe`
 
 Suscribe al evento
@@ -7221,7 +7335,7 @@ No haga ninguna pregunta interactiva
 Ejecutar servidor de aplicaciones
 
 ```bash
-bin/magento server:run [-p|--port [PORT]] [-b|--background [BACKGROUND]] [-a|--area [AREA]] [-mip|--magento-init-params [MAGENTO-INIT-PARAMS]]
+bin/magento server:run [-p|--port [PORT]] [-b|--background [BACKGROUND]] [-a|--area [AREA]] [-mip|--magento-init-params [MAGENTO-INIT-PARAMS]] [-mwt|--maxWaitTime [MAXWAITTIME]]
 ```
 
 ### `--port`, `-p`
@@ -7250,6 +7364,13 @@ indicador de modo de fondo
 parámetros init de bootstrap de magento
 
 - Predeterminado: &quot;
+- Acepta un valor
+
+### `--maxWaitTime`, `-mwt`
+
+cuánto tiempo esperar a los trabajadores después de la recarga (p. ej., cambio de configuración) antes de eliminarlos
+
+- Predeterminado: `3600`
 - Acepta un valor
 
 ### `--help`, `-h`
@@ -9417,7 +9538,7 @@ Apellidos del administrador
 
 ### `--search-engine`
 
-Motor de búsqueda. Valores: elasticsearch5, elasticsearch7, elasticsearch8, opensearch
+Motor de búsqueda. Valores: elasticsearch7, elasticsearch8, opensearch
 
 - Requiere un valor
 
