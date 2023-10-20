@@ -384,7 +384,7 @@ El **[!UICONTROL Order transactions (default?)]** marco busca transacciones `req
 * &#39;%Puede solucionar este problema actualizando el servicio de Elasticsearch en su infraestructura de Magento Cloud a la versión%&#39; como &#39;ver_err&#39;
 * &#39;%el estado de mantenimiento del clúster ha cambiado de \[AMARILLO\] a \[ROJO\] (motivo:%&#39; como &#39;yel_red&#39;
 * &#39;%No queda espacio en el dispositivo%&#39; como &#39;no_space&#39;
-* &#39;% no pudo ejecutar [SearchRequest{searchType=%&#39; como &#39;failed_query&#39;
+* &#39;% no pudo ejecutar &lbrack;SearchRequest&lbrace;searchType=%&#39; como &#39;failed_query&#39;
 
 ## [!UICONTROL Cron view]
 
