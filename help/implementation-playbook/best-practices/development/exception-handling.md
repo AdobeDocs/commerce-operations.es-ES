@@ -3,13 +3,13 @@ title: Prácticas recomendadas de gestión de excepciones
 description: Conozca los métodos recomendados para registrar excepciones al desarrollar proyectos de Adobe Commerce.
 feature: Best Practices
 role: Developer
-source-git-commit: 94d37b6a95cae93f465daf8eb96363a198833e27
+exl-id: e7ad685b-3eaf-485b-8ab1-702f2e7ab89e
+source-git-commit: 4bf8dd5c5320cc9a34cfaa552ec5e91d517d3617
 workflow-type: tm+mt
 source-wordcount: '571'
 ht-degree: 0%
 
 ---
-
 
 # Prácticas recomendadas de gestión de excepciones
 
@@ -88,7 +88,7 @@ Los siguientes ejemplos muestran un control de excepciones incorrecto.
 
 ### ![incorrecto](../../../assets/no.svg) Lógica antes del registro
 
-La lógica anterior al registro puede provocar otra excepción o error irrecuperable, que impide que se registre la excepción y debe reemplazarse por [ejemplo correcto](#correct-logging-always-comes-first).
+La lógica anterior al registro puede provocar otra excepción o error irrecuperable, que impide que se registre la excepción y debe reemplazarse por [ejemplo correcto](#logging-always-comes-first).
 
 ```php
 try {
@@ -101,7 +101,7 @@ try {
 
 ### ![incorrecto](../../../assets/no.svg) Empty `catch`
 
-Empty `catch` Los bloqueos pueden ser un signo de silencio no intencionado y deben reemplazarse por el [ejemplo correcto](#correct-mute-signals).
+Empty `catch` Los bloqueos pueden ser un signo de silencio no intencionado y deben reemplazarse por el [ejemplo correcto](#mute-signals).
 
 ```php
 try {
@@ -137,11 +137,11 @@ try {
 
 Este método introduce saltos de línea en el mensaje, que no es compatible con PSR-3. La excepción, incluido el seguimiento de pila, debe formar parte del contexto del mensaje para garantizar que se guarda correctamente con el mensaje en New Relic u otro almacenamiento de registro compatible con monólogos PSR-3.
 
-Para solucionar este problema, sustituya el código siguiente por los ejemplos correctos que se muestran en [Escribir en el registro de excepciones](#correct-write-to-the-exception-log) o [Degradar excepciones](#correct-downgrade-exceptions).
+Para solucionar este problema, sustituya el código siguiente por los ejemplos correctos que se muestran en [Escribir en el registro de excepciones](#write-to-the-exception-log) o [Degradar excepciones](#downgrade-exceptions).
 
 ### ![incorrecto](../../../assets/no.svg) Degradar excepciones sin contexto
 
-La excepción se reduce a un error, que no permite que se pase un objeto, sino solo una cadena, por lo que el `getMessage()`. Esto provoca que se pierda el rastro y debe reemplazarse por los ejemplos correctos que se muestran en [Escribir en el registro de excepciones](#correct-write-to-the-exception-log) o [Degradar excepciones](#correct-downgrade-exceptions).
+La excepción se reduce a un error, que no permite que se pase un objeto, sino solo una cadena, por lo que el `getMessage()`. Esto provoca que se pierda el rastro y debe reemplazarse por los ejemplos correctos que se muestran en [Escribir en el registro de excepciones](#write-to-the-exception-log) o [Degradar excepciones](#downgrade-exceptions).
 
 ```php
 try {
@@ -153,7 +153,7 @@ try {
 
 ### ![incorrecto](../../../assets/no.svg) Registrar solo el mensaje en el registro de excepciones
 
-En lugar de pasar el objeto `$e`, solo `$e->getMessage()` se ha aprobado. Esto provoca que se pierda el rastro y debe reemplazarse por los ejemplos correctos que se muestran [Escribir en el registro de excepciones](#correct-write-to-the-exception-log) o [Degradar excepciones](#correct-downgrade-exceptions).
+En lugar de pasar el objeto `$e`, solo `$e->getMessage()` se ha aprobado. Esto provoca que se pierda el rastro y debe reemplazarse por los ejemplos correctos que se muestran [Escribir en el registro de excepciones](#write-to-the-exception-log) o [Degradar excepciones](#downgrade-exceptions).
 
 ```php
 try {
@@ -165,7 +165,7 @@ try {
 
 ### ![incorrecto](../../../assets/no.svg) Falta `// phpcs:ignore Magento2.CodeAnalysis.EmptyBlock.DetectedCatch`
 
-Omitir el `phpcs:ignore` line déclencheur una advertencia en PHPCS y no debe pasar su CI. Este debe sustituirse por el ejemplo correcto que se muestra en [Silenciar señales](#correct-mute-signals).
+Omitir el `phpcs:ignore` line déclencheur una advertencia en PHPCS y no debe pasar su CI. Este debe sustituirse por el ejemplo correcto que se muestra en [Silenciar señales](#mute-signals).
 
 ```php
 try {
