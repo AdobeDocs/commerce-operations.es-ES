@@ -4,9 +4,9 @@ description: Aprenda a procesar y almacenar datos de pago de forma segura
 role: Developer
 feature: Best Practices
 exl-id: 635f38d3-0199-4d96-ba75-9edd0cb94b5c
-source-git-commit: 1887d7b285008fc98579955274bbc4affb766d0c
+source-git-commit: db0fce79b22d409e8d639b959dc5a04693e72659
 workflow-type: tm+mt
-source-wordcount: '522'
+source-wordcount: '500'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Uno de los principios clave para mantener [Conformidad con PCI](https://experien
 
 El almacenamiento de datos del titular de la tarjeta en Adobe Commerce es **estrictamente prohibido** y hacerlo podría ser una violación de sus obligaciones como comerciante según el Estándar de Seguridad de Datos de la Industria de Tarjetas de Pago (PCI-DSS). Encontrará más información sobre el modelo de responsabilidad compartida y las directrices para las obligaciones de los comerciantes en el [Guía del modelo de responsabilidad compartida de Adobe Commerce](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-commerce-shared-responsibilities-guide.pdf) en el Centro de confianza de Adobe.
 
-Siga las prácticas recomendadas a continuación para asegurarse de que está procesando correctamente la información de pago en su sitio de comercio electrónico. Puede encontrar más información sobre las prácticas recomendadas generales de seguridad en nuestra [guía de prácticas recomendadas de seguridad para Adobe Commerce](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-commerce-best-practices-guide.pdf) en el Centro de confianza de Adobe
+Siga las prácticas recomendadas a continuación para asegurarse de que está procesando correctamente la información de pago en su sitio de comercio electrónico. Para obtener más información sobre las prácticas recomendadas de seguridad, consulte [Proteja su sitio e infraestructura](../launch/security-best-practices.md).
 
 ## Productos y versiones afectados
 

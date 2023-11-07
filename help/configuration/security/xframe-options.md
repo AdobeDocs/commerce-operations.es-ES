@@ -1,20 +1,20 @@
 ---
-title: Encabezado X-Frame-Options
-description: Utilice X-Frame-Options para controlar las representaciones de páginas.
+title: Evitar ataques de clickjacking
+description: Evite las vulnerabilidades de secuestro de clics utilizando el encabezado "X-Frame-Options" para controlar las representaciones de páginas.
 feature: Configuration, Security
 exl-id: 83cf5fd2-3eb8-4bd9-99e2-1c701dcd1382
-source-git-commit: 56a2461edea2799a9d569bd486f995b0fe5b5947
+source-git-commit: 6cc04211fedddab68087bcf2f3603ae0403862b9
 workflow-type: tm+mt
-source-wordcount: '225'
+source-wordcount: '226'
 ht-degree: 0%
 
 ---
 
-# Encabezado X-Frame-Options
+# Evitar ataques de clickjacking
 
-Para ayudar a prevenir [Clickjacking](https://owasp.org/www-community/attacks/Clickjacking) exploits, hemos añadido una opción para utilizar el [X-Frame-Options](https://datatracker.ietf.org/doc/html/rfc7034) Encabezado de solicitud HTTP en solicitudes a su tienda.
+Impedir [Clickjacking](https://owasp.org/www-community/attacks/Clickjacking) exploits al incluir el [X-Frame-Options](https://datatracker.ietf.org/doc/html/rfc7034) Encabezado de solicitud HTTP en solicitudes a su tienda.
 
-El `X-Frame-Options` permite especificar si se debe permitir a un explorador procesar una página en un `<frame>`, `<iframe>`, o `<object>` como sigue:
+El `X-Frame-Options` permite especificar si un explorador puede procesar una página en un `<frame>`, `<iframe>`, o `<object>` como sigue:
 
 - `DENY`: la página no se puede mostrar en un marco.
 - `SAMEORIGIN`: (predeterminado) La página solo se puede mostrar en un marco del mismo origen que la propia página.
