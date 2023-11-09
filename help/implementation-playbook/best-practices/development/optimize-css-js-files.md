@@ -4,7 +4,7 @@ description: Aprenda a combinar y minificar archivos CSS y JavaScript (JS) para 
 role: Developer
 feature: Best Practices
 exl-id: ff0bc407-b563-418b-9d6a-7c1dc8f235df
-source-git-commit: 409bd4795704b9daec7773459e5a1f9f42ef5128
+source-git-commit: 2662ced484fb42bf2d32609e4e82364c1e47c8f0
 workflow-type: tm+mt
 source-wordcount: '407'
 ht-degree: 0%
@@ -34,7 +34,7 @@ El tiempo que se tarda en cargar archivos CSS y JavaScript (JS) se puede reducir
 >
 >Adobe Commerce en la infraestructura en la nube siempre se ejecuta en el modo de producción y no es posible configurarlo de otra manera, por lo que debe utilizar el método de línea de comandos para habilitar la combinación, la minificación y el agrupamiento.
 
-No combine ni agrupe archivos si la implementación utiliza HTTP2. HTTP2 descarga los archivos estáticos de forma asíncrona. Los exploradores deben descargar un archivo combinado completo antes de procesar el contenido del archivo.
+No combine ni agrupe archivos si la implementación utiliza HTTP/2. HTTP/2 descarga los archivos estáticos de forma asíncrona. Los exploradores deben descargar un archivo combinado completo antes de procesar el contenido del archivo.
 
 ### Uso de Admin
 
