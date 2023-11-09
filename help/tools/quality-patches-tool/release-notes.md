@@ -1,15 +1,15 @@
 ---
-title: Notas de versión
+title: Notas de la versión
 description: Obtenga información acerca de los parches disponibles para Adobe Commerce y los problemas que resuelven.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 6e82738ab9b3ea106b7987fac2f6f4a026ddc4f0
+source-git-commit: b1c258b33898ec07a0d0d805843bea1b3e9de478
 workflow-type: tm+mt
-source-wordcount: '15145'
+source-wordcount: '15346'
 ht-degree: 0%
 
 ---
 
-# Notas de versión
+# Notas de la versión
 
 El [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) ofrece parches individuales desarrollados por Adobe y la comunidad de Magento Open Source. Permite aplicar, revertir y ver información general sobre todos los parches individuales que están disponibles para la versión instalada de Adobe Commerce o Magento Open Source. Puede aplicar parches a proyectos de Adobe Commerce y de Magento Open Source independientemente de quién lo haya desarrollado. Por ejemplo, puede aplicar un parche desarrollado por la comunidad a proyectos de Adobe Commerce.
 
@@ -20,6 +20,18 @@ El [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) ofr
 >[!INFO]
 >
 >Para obtener información acerca de [!DNL quality patches] creado por la Comunidad para el Magento Open Source, consulte las [notas de la versión](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.41 {#v1-1-41}
+
+* **ACSD-54376** (para Adobe Commerce >=2.4.2 &lt;2.4.7): corrige el problema que se produce en el carro de compras cuando un producto se elimina del catálogo compartido después de que ya se haya agregado al carro de compras.
+* **ACSD-53722** (para Adobe Commerce >=2.4.4 &lt;2.4.7): corrige el problema en el que el precio de las opciones de productos agrupados cambia a 0 $ cuando se activan actualizaciones programadas para diferentes ámbitos.
+* **ACSD-53643** (para Adobe Commerce >=2.4.3 &lt;2.4.7): corrige el problema en el que el pedido tiene un total incorrecto al realizar un pedido de compra con productos desactivados o sin existencias. Se corrige ocultando la variable *[!UICONTROL Place Order]* botón para estos pedidos de compra.
+* **ACSD-54067** (para Adobe Commerce y Magento Open Source >=2.4.0 &lt;2.4.7): corrige el problema por el que el vídeo de un producto no se reproduce en un dispositivo móvil.
+* **ACSD-55414** (para Adobe Commerce y Magento Open Source >=2.4.0 &lt;2.4.6): mejora el rendimiento cuando MariaDB intenta convertir el entity_id de EAV de cadena a entero.
+* **ACSD-51819** (para Adobe Commerce >=2.4.4 &lt;2.4.4-p4): corrige el problema en el que se pueden realizar varios pedidos con el mismo ID de oferta.
+* **ACSD-53118** (para Adobe Commerce >=2.4.0 &lt;2.4.7): corrige el problema en el que la variable *[!UICONTROL Cart Price Rule]* se aplica mediante un código de cupón mientras el producto tiene un atributo vacío.
+* **ACSD-54324** (para Adobe Commerce >=2.4.5 &lt;2.4.7): corrige el problema en el que la solicitud GraphQL request_lists no tiene en cuenta la configuración de paginación y devuelve todos los resultados.
+* Revisiones actualizadas: MDVA-42855-v2
 
 ## v1.1.40 {#v1-1-40}
 
