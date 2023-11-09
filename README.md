@@ -1,8 +1,8 @@
 ---
-source-git-commit: 8b82081057af7d134528988d3f9f7cf53f4d7525
+source-git-commit: 2727ddb18995ac2163276a0aa8573161add48971
 workflow-type: tm+mt
-source-wordcount: '475'
-ht-degree: 5%
+source-wordcount: '760'
+ht-degree: 3%
 
 ---
 # Documentación técnica de Adobe Commerce
@@ -54,25 +54,75 @@ Todos los artículos de este repositorio utilizan GitHub Flavored Markdown. Si n
 
 ## Plantillas
 
-El `_jekyll` El directorio contiene temas con plantillas y recursos necesarios.
-Las plantillas que utilizan el lenguaje de plantilla Liquid residen en la variable `_jekyll/templated` como archivos de HTML.
-El `_jekyll/_data` contiene archivos con los datos que se utilizan para procesar las plantillas.
+Para algunos temas, utilizamos archivos de datos y plantillas para generar contenido publicado. Los casos de uso de este enfoque incluyen:
 
-Para procesar todas las plantillas:
+* Publicación de grandes conjuntos de contenido generado mediante programación
+* Proporciona una única fuente fiable para los clientes de varios sistemas que requieren formatos de archivo legibles por máquina, como YAML, para la integración (por ejemplo, Site-Wide Analysis Tool)
+
+Algunos ejemplos de contenido con plantillas son, entre otros, los siguientes:
+
+* [Referencia de herramientas de CLI](https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises.html)
+* [Tablas de disponibilidad de productos](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html)
+* [Tablas de requisitos del sistema](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html)
+
+### Generación de contenido con plantilla
+
+En general, la mayoría de los redactores solo necesitan añadir una versión de lanzamiento a las tablas de disponibilidad del producto y requisitos del sistema. El mantenimiento del resto del contenido con plantillas se automatiza o se administra mediante un miembro del equipo dedicado. Estas instrucciones están destinadas a la &quot;mayoría&quot; de los escritores.
+
+>**NOTA:**
+>
+>* La generación de contenido con plantillas requiere trabajar en la línea de comandos de un terminal.
+>* Debe tener instalado Ruby para ejecutar el script de procesamiento. Consulte [_jekyll/.ruby-version](_jekyll/.ruby-version) para la versión requerida.
+
+Consulte lo siguiente para obtener una descripción de la estructura de archivos del contenido con plantillas:
+
+* `_jekyll`: contiene temas con plantillas y recursos necesarios.
+* `_jekyll/_data`: contiene los formatos de fichero legibles por máquina utilizados para procesar plantillas.
+* `_jekyll/templated`: contiene ficheros de plantilla basados en HTML que utilizan el lenguaje de plantilla Liquid
+* `help/_includes/templated`: contiene la salida generada para el contenido con plantilla en `.md` formato de archivo para que se pueda publicar en temas de Experience League; el script de procesamiento escribe automáticamente la salida generada en este directorio
+
+Para actualizar el contenido con plantillas:
+
+1. En el editor de texto, abra un archivo de datos en la `/jekyll/_data` directorio. Por ejemplo:
+
+   * [Tablas de disponibilidad de productos](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html): `/jekyll/_data/product-availability.yml`
+   * [Tablas de requisitos del sistema](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html): `/jekyll/_data/system-requirements.yml`
+
+1. Utilice la estructura YAML existente para crear entradas.
+
+   Por ejemplo, para agregar una versión de Adobe Commerce a las tablas de disponibilidad del producto, agregue lo siguiente a cada entrada de la `extensions` y `services` secciones de la `/jekyll/_data/product-availability.yml` (modifique los números de versión según sea necesario):
+
+   ```
+   support:
+      - core: 1.2.3
+        version: 4.5.6
+   ```
 
 1. Vaya a `_jekyll` directorio.
 
+   ```
    cd _jekyll
+   ```
 
-1. Ejecute el script de renderización.
+1. Genere contenido con plantilla y escriba el resultado en `help/_includes/templated` directorio.
 
-```
-_scripts/render
-```
+   ```
+   rake render
+   ```
 
-> **NOTA:** Debe ejecutar el script desde el `_jekyll` directorio.
-> **NOTA:** Debe tener Ruby instalado para ejecutar este script.
+   >**NOTA:** Debe ejecutar el script desde el `_jekyll` directorio. Si es la primera vez que ejecuta el script, debe instalar primero las dependencias de Ruby con `bundle install` comando.
 
-El script ejecuta el procesamiento y escribe las plantillas procesadas en `help/_includes/templated` directorio.
+1. Compruebe que el `help/_includes/templated` archivos modificados.
+
+   ```
+   git status
+   ```
+
+   Debería ver un resultado similar al siguiente:
+
+   ```
+   modified:   _data/product-availability.yml
+   modified:   ../help/_includes/templated/product-availability-extensions.md
+   ```
 
 Consulte la documentación de Jekyll para obtener más información sobre [Archivos de datos](https://jekyllrb.com/docs/datafiles), [Filtros líquidos](https://jekyllrb.com/docs/liquid/filters/)y otras funciones de.
