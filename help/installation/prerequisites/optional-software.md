@@ -2,9 +2,9 @@
 title: Software opcional
 description: Obtenga más información sobre el software opcional que puede instalar para admitir instalaciones locales de Adobe Commerce y Magento Open Source.
 exl-id: 533ff52b-3301-4624-b691-3dfddde6ce0b
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 40d850add2ef8c51e9192758135768306b163780
 workflow-type: tm+mt
-source-wordcount: '635'
+source-wordcount: '637'
 ht-degree: 0%
 
 ---
@@ -128,7 +128,7 @@ Si aparece un error 404 (no encontrado), compruebe lo siguiente:
 
   [Ayuda de Ubuntu](https://help.ubuntu.com/community/UFW)
 
-  [Ayuda de CentOS](https://wiki.centos.org/HowTos/Network/IPTables)
+  [Ayuda de CentOS](https://wiki.centos.org/HowTos%282f%29Network%282f%29IPTables.html)
 
 ## phpMyAdmin
 

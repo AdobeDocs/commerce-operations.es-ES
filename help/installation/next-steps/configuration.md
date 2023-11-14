@@ -3,9 +3,9 @@ title: Configuración de la aplicación
 description: Obtenga información acerca de la configuración posterior a la instalación necesaria para las implementaciones locales de Adobe Commerce y Magento Open Source.
 feature: Install, Configuration
 exl-id: b1808664-10ec-4147-8251-a99f8b58f4be
-source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
+source-git-commit: 40d850add2ef8c51e9192758135768306b163780
 workflow-type: tm+mt
-source-wordcount: '728'
+source-wordcount: '730'
 ht-degree: 0%
 
 ---
@@ -66,7 +66,7 @@ Tanto si tiene un servidor como si tiene varios, debe abrir puertos en el cortaf
 Más información:
 
 * Ubuntu: [Página de documentación de Ubuntu](https://help.ubuntu.com/community/IptablesHowTo).
-* CentOS: [Procedimientos de CentOS](https://wiki.centos.org/HowTos/Network/IPTables).
+* CentOS: [Procedimientos de CentOS](https://wiki.centos.org/HowTos%282f%29Network%282f%29IPTables.html).
 
 ### Reglas de seguridad mejorada de Linux (SELinux)
 
