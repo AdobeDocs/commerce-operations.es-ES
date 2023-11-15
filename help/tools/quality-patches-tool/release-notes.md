@@ -2,9 +2,9 @@
 title: Notas de la versión
 description: Obtenga información acerca de los parches disponibles para Adobe Commerce y los problemas que resuelven.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: b1c258b33898ec07a0d0d805843bea1b3e9de478
+source-git-commit: 704c3e2934c74ee4b06499bbfc4cb68b0a007a1e
 workflow-type: tm+mt
-source-wordcount: '15346'
+source-wordcount: '15669'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,23 @@ El [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) ofr
 >[!INFO]
 >
 >Para obtener información acerca de [!DNL quality patches] creado por la Comunidad para el Magento Open Source, consulte las [notas de la versión](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.42 {#v1-1-42}
+
+* **ACSD-53658** (para Adobe Commerce y Magento Open Source >=2.4.4 &lt;2.4.7): corrige el problema donde *[!UICONTROL Recently Viewed]* los datos del producto no se actualizan correctamente en la vista de tienda.
+* **ACSD-54626** (para Adobe Commerce >=2.4.6 &lt;2.4.7): corrige el problema en el que no se puede crear una nueva regla de pedido de compra (`createPurchaseOrderApprovalRule`) con el `NUMBER_OF_SKUS` attribute mediante [!DNL GraphQL].
+* **ACSD-53845** (para Adobe Commerce y Magento Open Source >=2.4.0 &lt;2.4.7): corrige el [!DNL MySQL] problema de tiempo de espera de conexión al `consumer max_messages` = 0.
+* **ACSD-54890** (para Adobe Commerce y Magento Open Source >=2.4.0 &lt;2.4.7): corrige el problema donde `aggregate_sales_report_bestsellers_data` causas [!DNL MySQL] errores debido a `/tmp` el disco no tiene espacio.
+* **ACSD-55112** (para Adobe Commerce y Magento Open Source >=2.4.0 &lt;2.4.7): corrige el problema en el que la variable *[!UICONTROL Submit review]* se puede hacer clic varias veces sin [!DNL Google reCAPTCHA v3] validación.
+* **ACSD-54264** (para Adobe Commerce >=2.4.4-p5 &lt;2.4.5 || >=2.4.5-p4 &lt;2.4.6 || >=2.4.6-p2 &lt;2.4.7): corrige el problema en el que el mensaje de error *&quot;No se puede actualizar el atributo solicitado. ID de fila: &quot;store_id&quot;* aparece cuando un cliente intenta cerrar la compra con una oferta negociable de otra vista de tienda.
+* **ACSD-54418** (para Adobe Commerce y Magento Open Source >=2.4.0 &lt;2.4.7): corrige el problema en el que se aplica incorrectamente una cantidad fija de descuento a cada producto secundario del paquete al que se le asigna un precio dinámico.
+* **ACSD-55238** (para Adobe Commerce y Magento Open Source >=2.4.4 &lt;2.4.7): correcciones que guardan el producto vacío *[!UICONTROL Meta Description]*.
+* **ACSD-54966** (para Adobe Commerce y Magento Open Source >=2.4.5 &lt;2.4.7): corrige la emisión en la que un código de cupón con un uso limitado por cliente no se puede reutilizar si falla el pedido anterior.
+* **ACSD-54060** (para Adobe Commerce y Magento Open Source >=2.4.3 &lt;2.4.7): corrige el problema en el que un administrador restringido no puede guardar un producto si es hijo de otro producto asignado a un ámbito diferente.
+* **ACSD-48910** (para Adobe Commerce y Magento Open Source >=2.4.5 &lt;2.4.6): se ha corregido el problema por el que un producto agrupado asignado a varios orígenes se queda sin existencias después de que se factura y envía un pedido, incluso si aún tiene una cantidad distinta de cero.
+* **ACSD-55381** (para Adobe Commerce >=2.4.2 &lt;2.4.7): corrige un error interno del servidor al consultar `configurable_product_option_uid` y `configurable_product_option_value_uid` campos de un [!DNL B2B] *[!UICONTROL Requisition list]* mediante [!DNL GraphQL].
+* **ACSD-55628** (para Adobe Commerce >=2.4.4-p2 &lt; 2.4.5 || >=2.4.5-p1 &lt; 2.4.6): corrige la carga de un archivo en el formulario de registro de empresa y reemplaza un archivo para un atributo de cliente en la tienda.
+* Revisiones actualizadas: ACSD-51240, ACSD-51890, ACSD-53098
 
 ## v1.1.41 {#v1-1-41}
 
