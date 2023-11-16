@@ -2,22 +2,25 @@
 title: Directiva de ciclo vital de software
 description: Obtenga información sobre las fechas clave de fin de compatibilidad de software para las versiones de Adobe Commerce.
 exl-id: 9ee4ecc8-d893-412a-a605-5a8606a1b9a9
-source-git-commit: e8222bd06b917e21513ede99d46617107dd2d847
+source-git-commit: bb90d7903eafe01b42d8c056db771769f9e4e752
 workflow-type: tm+mt
-source-wordcount: '326'
-ht-degree: 16%
+source-wordcount: '383'
+ht-degree: 12%
 
 ---
+
 
 # directiva de ciclo vital de Adobe Commerce
 
 Para Adobe Commerce 2.4.4 y versiones posteriores:
 
-- Para racionalizar mejor nuestra política de ciclo de vida y satisfacer las necesidades esenciales de los clientes de Adobe Commerce, estamos ampliando nuestra ventana de asistencia a tres años desde la fecha de disponibilidad general (GA) para Adobe Commerce 2.4.4 y versiones posteriores. Adobe proporciona correcciones de calidad a la versión 2.4.4 y posteriores para un periodo de compatibilidad de tres años. Los clientes pueden acceder a las correcciones de calidad poniéndose en contacto con [Asistencia de Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html) o a través del autoservicio [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) si su versión sigue siendo apta para el soporte de calidad. Consulte la tabla siguiente para ver las fechas de fin de compatibilidad de software para las líneas de versión de Adobe Commerce.
+- Para optimizar la política del ciclo vital de Adobe Commerce y satisfacer las necesidades esenciales de los clientes, Adobe amplió el período de asistencia a tres años desde la fecha de Disponibilidad general (GA) para Adobe Commerce 2.4.4 y versiones posteriores. Adobe proporciona correcciones de calidad a la versión 2.4.4 y posteriores para un periodo de compatibilidad de tres años. Los clientes pueden acceder a las correcciones de calidad poniéndose en contacto con [Asistencia de Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html) o a través del autoservicio [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) si su versión sigue siendo apta para el soporte de calidad. Consulte la tabla siguiente para ver las fechas de fin de compatibilidad de software para las líneas de versión de Adobe Commerce.
 
 - El Adobe de proporciona correcciones de seguridad a través de una versión de parche de seguridad para el período de compatibilidad de tres años.
 
 - Para problemas de seguridad críticos, como vulnerabilidades de día cero, el Adobe proporciona [revisiones](https://support.magento.com/hc/en-us/sections/360003869892-Known-issues-patches-attached-) para todos los clientes en una versión compatible, aunque no estén en la última versión del parche o del parche de seguridad. Es importante tener en cuenta que una revisión no es una red global y no aborda todos los problemas de seguridad que se solucionarían al actualizar a la última versión.
+
+- Adobe no proporciona correcciones de seguridad y calidad para servicios de terceros y dependencias de software, como PHP. Es su responsabilidad mantener la seguridad y el cumplimiento (por ejemplo, PCI, ISO, SOC) de las dependencias de software de terceros. Adobe recomienda actualizar sus entornos para utilizar la última versión de PHP compatible con Adobe Commerce lo antes posible. No utilice una versión de PHP que haya llegado al final del soporte.
 
 ## Fin del soporte de software
 
@@ -51,7 +54,6 @@ Para Adobe Commerce 2.4.4 y versiones posteriores:
 <tbody>
   <tr>
     <td>Comercio</td>
-    <td>PHP</td>
     <td>Q1</td>
     <td>Q2</td>
     <td>Q3</td>
@@ -79,40 +81,24 @@ Para Adobe Commerce 2.4.4 y versiones posteriores:
   </tr>
   <tr>
     <td>2.4.4</td>
-    <td>8.1</td>
     <td></td>
     <td colspan="13" style="background-color:#67ac68;"></td>
     <td colspan="10"></td>
   </tr>
   <tr>
     <td>2.4.5</td>
-    <td>8.1</td>
     <td colspan="2"></td>
     <td colspan="13" style="background-color:#67ac68;"></td>
     <td colspan="9"></td>
   </tr>
   <tr>
-    <td rowspan="2">2.4.6</td>
-    <td>8.1</td>
+    <td>2.4.6</td>
     <td colspan="4"></td>
     <td colspan="13" style="background-color:#67ac68;"></td>
     <td colspan="8"></td>
   </tr>
   <tr>
-    <td>8.2</td>
-    <td colspan="4"></td>
-    <td colspan="13" style="background-color:#67ac68;"></td>
-    <td colspan="8"></td>
-  </tr>
-  <tr>
-    <td rowspan="2">2.4.7</td>
-    <td>8.2</td>
-    <td colspan="9"></td>
-    <td colspan="13" style="background-color:#67ac68;"></td>
-    <td colspan="2"></td>
-  </tr>
-  <tr>
-    <td>8.3</td>
+    <td>2.4.7</td>
     <td colspan="9"></td>
     <td colspan="13" style="background-color:#67ac68;"></td>
     <td colspan="2"></td>
@@ -126,7 +112,7 @@ Para Adobe Commerce 2.4.4 y versiones posteriores:
  <tbody>
   <tr>
    <td style="background-color:#67ac68;">Admitido</td>
-   <td>Parches de seguridad y calidad para Adobe Commerce y PHP.</td>
+   <td>Parches de seguridad y calidad para Adobe Commerce</td>
   </tr>
   <!-- <tr>
    <td style="background-color:#cd3c3c;">End of software support</td>
