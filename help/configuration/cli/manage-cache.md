@@ -2,9 +2,9 @@
 title: Administrar la caché
 description: Administrar tipos de caché y ver su estado.
 exl-id: bbd76c00-727b-412e-a8e5-1e013a83a29a
-source-git-commit: 9476a8ee2ce49e635e17fbb25c74656ba30bf930
+source-git-commit: 604e2a1461e2cbbcc498dfed6018ba640efe8cde
 workflow-type: tm+mt
-source-wordcount: '926'
+source-wordcount: '941'
 ht-degree: 0%
 
 ---
@@ -34,6 +34,7 @@ Commerce 2 tiene los siguientes tipos de caché:
 | Configuración de servicios web | config_webservice | Almacenar en caché la estructura de la API web. |
 | Notificación al cliente | customer_notification | Notificaciones temporales que aparecen en la interfaz de usuario. |
 | Caché del SDK de IU de administración | admin_ui_sdk | Personalizaciones de administración de cachés agregadas con el complemento [Adobe Commerce Admin UI SDK](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/). |
+| Caché de respuestas de Webhooks | webhooks_response | Almacena en caché respuestas a [solicitudes de webhook](https://developer.adobe.com/commerce/extensibility/webhooks/). |
 
 ## Ver el estado de la caché
 
