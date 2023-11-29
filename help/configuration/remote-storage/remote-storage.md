@@ -3,9 +3,9 @@ title: Configurar almacenamiento remoto
 description: Obtenga información sobre cómo configurar el módulo Almacenamiento remoto para la aplicación de comercio local.
 feature: Configuration, Storage
 exl-id: 0428f889-46b0-44c9-8bd9-98c1be797011
-source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
+source-git-commit: 2a45fe77d5a6fac089ae2c55d0ad047064dd07b0
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '526'
 ht-degree: 0%
 
 ---
@@ -91,7 +91,7 @@ Después de habilitar el almacenamiento remoto para un adaptador específico, pu
 
 >[!INFO]
 >
->El comando sync solo migra archivos en la variable `pub/media` directorio, _no_ los archivos de importación y exportación de la `var` directorio. Consulte [Importación/Exportación programada][import-export] en el _Guía del usuario de Commerce 2.4_.
+>El comando sync solo migra archivos en la variable `pub/media` directorio, _no_ los archivos de importación y exportación de la `var` directorio. Consulte [Importación/Exportación programada](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-scheduled-import-export.html) en el _Guía del usuario de Commerce 2.4_.
 
 <!-- link definitions -->
 

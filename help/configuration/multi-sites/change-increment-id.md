@@ -2,9 +2,9 @@
 title: Cambiar ID de incremento
 description: Cambiar el ID de incremento de una entidad de la base de datos de Commerce.
 exl-id: 039fc34c-d9cf-42f4-af5d-16a26a3e8171
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 2a45fe77d5a6fac089ae2c55d0ad047064dd07b0
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '380'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Es posible que tenga que cambiar el ID de incremento de las nuevas entidades de 
 
 >[!INFO]
 >
->También puedes solucionar el problema de la pasarela de pago de PayPal permitiendo varios pagos por ID de factura en las Preferencias de recepción de pagos de PayPal. Consulte [Solicitud rechazada de puerta de enlace de PayPal: emisión de factura duplicada] en el _Base de conocimiento_.
+>También puedes solucionar el problema de la pasarela de pago de PayPal permitiendo varios pagos por ID de factura en las Preferencias de recepción de pagos de PayPal. Consulte [Solicitud rechazada de puerta de enlace de PayPal: emisión de factura duplicada](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/paypal-gateway-rejected-request-duplicate-invoice-issue.html) en el _Base de conocimiento_.
 
 ## Pasos previos necesarios
 
@@ -55,7 +55,7 @@ ALTER TABLE sequence_{entity_type}_{store_id} AUTO_INCREMENT = {new_increment_va
 
 >[!INFO]
 >
-Importante: El nuevo valor de incremento debe ser mayor que el actual.
+>Importante: El nuevo valor de incremento debe ser mayor que el actual.
 
 Después de ejecutar la siguiente consulta:
 
@@ -74,6 +74,6 @@ Antes de ejecutar `ALTER TABLE` consulte en un entorno de producción de Adobe C
 
 <!-- Link Definitions -->
 
-[Solicitud rechazada de puerta de enlace de PayPal: emisión de factura duplicada]: https://support.magento.com/hc/en-us/articles/115002457473
+[PayPal gateway rejected request - duplicate invoice issue]: https://support.magento.com/hc/en-us/articles/115002457473
 [Creación de una copia de seguridad DB]: https://support.magento.com/hc/en-us/articles/360003254334
 [cualquier versión compatible]
