@@ -4,9 +4,9 @@ description: Obtenga información acerca de las prácticas recomendadas de imple
 exl-id: 499c16df-0e4d-4950-8169-96356bdff1a7
 feature: Best Practices
 role: Developer
-source-git-commit: 291c3f5ea3c58678c502d34c2baee71519a5c6dc
+source-git-commit: ce386611834c4199e34b5d95ce76254957821f46
 workflow-type: tm+mt
-source-wordcount: '340'
+source-wordcount: '349'
 ht-degree: 2%
 
 ---
@@ -48,7 +48,7 @@ Las secciones siguientes incluyen información sobre las prácticas recomendadas
 ## Optimización de archivos
 
 | Práctica recomendada | Descripción |
-|-----------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
+|-----------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | [Cambio de tamaño de imagen de catálogo](catalog-image-resizing.md) | Proporciona instrucciones sobre el cambio de tamaño de las imágenes antes de que una tienda entre en producción para garantizar un rendimiento óptimo |
 | [CSS y JS](optimize-css-js-files.md) | Combine y minifique archivos de hoja de estilos en cascada (CSS) y JavaScript (JS) desde el administrador o la línea de comandos |
 | [Imágenes](image-optimization.md) | Optimizar imágenes y utilizar Fastly para optimizar el tiempo de respuesta |
@@ -62,10 +62,11 @@ Las secciones siguientes incluyen información sobre las prácticas recomendadas
 ## Desarrollo de PHP
 
 | Práctica recomendada | Descripción |
-|-----------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
+|-----------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Control de excepciones](exception-handling.md) | Describe los métodos recomendados para registrar excepciones |
 | [Extensiones](https://developer.adobe.com/commerce/php/best-practices/){target="_blank"} | Describe los patrones de desarrollo para garantizar la compatibilidad entre su extensión, las versiones futuras de Adobe Commerce y otras extensiones personalizadas |
 | [Bloques de contenido privado](private-content-block-configuration.md) | Configurar bloques de contenido privado para optimizar el rendimiento de la tienda |
+| [Modificar código PHP principal y de terceros](modifying-core-and-third-party-code.md) | Modifique la funcionalidad, el resultado o la entrada de cualquier código que no haya creado o que no controle directamente |
 
 ## Plataforma y servicios
 
@@ -74,4 +75,4 @@ Las secciones siguientes incluyen información sobre las prácticas recomendadas
 | [Compilaciones e implementación](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices.html){target="_blank"} | Describe las prácticas recomendadas para las fases de compilación e implementación de Adobe Commerce en proyectos de infraestructura en la nube |
 | Depuración | Depurar el marco de trabajo de Adobe Commerce de forma sistemática y eficaz |
 | [Implementación de contenido estático](static-content-deployment.md) | Evite los problemas con el contenido estático que no aparezca en la tienda |
-| [Resolución de problemas](troubleshooting.md) | Solución de problemas comunes de implementación de Adobe Commerce |
+| [Solución de problemas](troubleshooting.md) | Solución de problemas comunes de implementación de Adobe Commerce |
