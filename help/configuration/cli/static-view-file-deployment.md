@@ -2,9 +2,9 @@
 title: Implementación de archivos de vista estática
 description: Aprenda a escribir archivos estáticos en el sistema de archivos de Commerce durante el modo de producción.
 exl-id: 51954738-b999-4982-954b-70f7a70c5a17
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 0a72bc492dfec0a9014a518282a97ab21e59f96d
 workflow-type: tm+mt
-source-wordcount: '1132'
+source-wordcount: '1124'
 ht-degree: 0%
 
 ---
@@ -60,7 +60,7 @@ En la tabla siguiente se explican los parámetros y valores de este comando.
 | `--exclude-theme <theme>` | Temas que se deben excluir al implementar contenido estático. El valor predeterminado es **ninguno**.<br>Por ejemplo, `--exclude-theme Magento/blank` | No |
 | `--area (-a)` | Genere archivos solo para las áreas especificadas. El valor predeterminado, sin especificar ninguna opción, es generar archivos para todas las áreas. Los valores válidos son `adminhtml` y `frontend`. El valor predeterminado es **todo**.<br>Por ejemplo: `--area adminhtml` | No |
 | `--exclude-area` | No genere archivos para las áreas especificadas. El valor predeterminado, sin especificar ninguna opción, es no excluir nada. El valor predeterminado es **ninguno**. | No |
-| `--jobs (-j)` | Habilite el procesamiento en paralelo con el número de trabajos especificado. El valor predeterminado es 0 (no ejecutar en procesos en paralelo). El valor predeterminado es **0**. | No |
+| `--jobs (-j)` | Activar [procesamiento paralelo](manage-indexers.md#reindexing-in-parallel-mode) con el número de trabajos especificado. El valor predeterminado es 0 (no ejecutar en procesos en paralelo). El valor predeterminado es **0**. | No |
 | `--symlink-locale` | Cree enlaces simbólicos para los archivos de esas configuraciones regionales, que se pasan para su implementación, pero no tienen personalizaciones. | No |
 | `--content-version=CONTENT-VERSION` | Se puede utilizar una versión personalizada del contenido estático si se ejecuta la implementación en varios nodos para garantizar que la versión del contenido estático sea idéntica y que el almacenamiento en caché funcione correctamente. | No |
 | `--no-javascript` | No implementar archivos JavaScript | No |

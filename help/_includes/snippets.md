@@ -1,7 +1,7 @@
 ---
-source-git-commit: 20add0a748e8df38dff48a779c63e1177d2a022d
+source-git-commit: 8b9e4de2799532e4654fce63d856c2d301025f09
 workflow-type: tm+mt
-source-wordcount: '263'
+source-wordcount: '273'
 ht-degree: 0%
 
 ---
@@ -58,3 +58,7 @@ ht-degree: 0%
 >[!NOTE]
 >
 >Aunque el código para mejoras y correcciones de errores descrito en estas notas de la versión está incorporado en Adobe Commerce, varios de estos proyectos (por ejemplo, B2B, Page Builder y Progressive Web Application (PWA) Studio) también se publican de forma independiente. Las correcciones de errores para estos proyectos se documentan en la información de versión independiente y específica del proyecto que está disponible en la documentación de cada proyecto. Consulte [información general de versión del producto](/help/release/release-notes/overview.md).
+
+## Control de procesos PHP {#php-process-control}
+
+Para poder ejecutar indizadores en modo paralelo, debe habilitar la compatibilidad con Control de procesos (`pcntl`) en PHP. Consulte [Instalación](https://www.php.net/manual/en/pcntl.installation.php) en la documentación de PHP.
