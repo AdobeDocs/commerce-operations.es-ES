@@ -2,9 +2,9 @@
 title: Administrar los indexadores
 description: Consulte ejemplos de cómo ver y administrar los indexadores de Commerce.
 exl-id: d2cd1399-231e-4c42-aa0c-c2ed5d7557a0
-source-git-commit: 8b9e4de2799532e4654fce63d856c2d301025f09
+source-git-commit: 41082413e24733dde34542a2c9cb3cabbfdd4a35
 workflow-type: tm+mt
-source-wordcount: '643'
+source-wordcount: '690'
 ht-degree: 0%
 
 ---
@@ -225,11 +225,17 @@ Product Price:                                     Update on Save
 Catalog Search:                                    Update on Save
 ```
 
-### Configuración de indexadores
+### Establecer el modo del indizador
+
+>[!IMPORTANT]
+>
+>Asegúrese de configurar el [!DNL Customer Grid] con `realtime` en lugar de `schedule`. El [!DNL Customer Grid] solo se puede reindexar con la variable [!UICONTROL Update on Save] opción. Este índice no admite el `Update by Schedule` opción. Utilice la siguiente línea de comandos para configurar este indexador para que se actualice al guardar: `php bin/magento indexer:set-mode realtime customer_grid`
+>
+>Consulte [Prácticas recomendadas para la configuración del indexador](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/indexer-configuration.html) en el _Guía de implementación_.
 
 >[!INFO]
 >
->Antes de cambiar los modos del indexador, recomendamos colocar el sitio web en [mantenimiento](../../installation/tutorials/maintenance-mode.md) modo y [deshabilitar trabajos de cron](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html#disable-cron-jobs). Esto garantiza que no sufra bloqueos de base de datos.
+>Antes de cambiar a los modos del indizador, establezca el sitio web en [mantenimiento](../../installation/tutorials/maintenance-mode.md) modo y [deshabilitar trabajos de cron](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html#disable-cron-jobs). Esto garantiza que no sufra bloqueos de base de datos.
 
 Para especificar la configuración del indexador:
 
