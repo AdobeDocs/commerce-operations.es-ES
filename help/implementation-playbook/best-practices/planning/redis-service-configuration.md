@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo mejorar el rendimiento del almacen
 role: Developer, Admin
 feature: Best Practices, Cache
 exl-id: 8b3c9167-d2fa-4894-af45-6924eb983487
-source-git-commit: 156e6412b9f94b74bad040b698f466808b0360e3
+source-git-commit: 6772c4fe31cfcd18463b9112f12a2dc285b39324
 workflow-type: tm+mt
-source-wordcount: '589'
+source-wordcount: '800'
 ht-degree: 0%
 
 ---
@@ -37,6 +37,49 @@ Para instalaciones locales, consulte [Configurar el almacenamiento en caché de 
 >[!NOTE]
 >
 >Compruebe que está utilizando la versión más reciente de `ece-tools` paquete. Si no es así, [actualizar a la versión más reciente](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html). Puede comprobar la versión instalada en el entorno local mediante el complemento `composer show magento/ece-tools` Comando CLI.
+
+
+### Tamaño de la memoria caché L2 (Adobe Commerce Cloud)
+
+La caché L2 utiliza un [sistema de archivos temporal](https://en.wikipedia.org/wiki/Tmpfs) como mecanismo de almacenamiento. En comparación con los sistemas de base de datos de clave-valor especializados, un sistema de archivos temporal no tiene una política de expulsión de claves para controlar el uso de la memoria.
+
+La falta de control de uso de memoria puede hacer que el uso de memoria caché L2 crezca con el tiempo al acumular la caché antigua.
+
+Para evitar el agotamiento de la memoria de las implementaciones de caché L2, Adobe Commerce borra el almacenamiento cuando se alcanza un determinado umbral. El valor de umbral predeterminado es 95 %.
+
+Es importante ajustar el uso máximo de memoria caché L2 en función de los requisitos del proyecto para el almacenamiento en caché. Utilice uno de los siguientes métodos para configurar el tamaño de la caché de memoria:
+
+- Cree un ticket de asistencia para solicitar cambios de tamaño del `/dev/shm` monte.
+- Ajuste de `cleanup_percentage` propiedad en el nivel de aplicación para limitar el porcentaje máximo de llenado del almacenamiento. La memoria libre restante puede ser utilizada por otros servicios.
+Puede ajustar la configuración en la configuración de implementación en el grupo de configuración de caché `cache/frontend/default/backend_options/cleanup_percentage`.
+
+>[!NOTE]
+>
+>El `cleanup_percentage` La opción configurable de se introdujo en Adobe Commerce 2.4.4.
+
+El siguiente código muestra un ejemplo de configuración en `.magento.env.yaml` archivo:
+
+```yaml
+stage:
+  deploy:
+    REDIS_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
+    CACHE_CONFIGURATION:
+      _merge: true
+      frontend:
+        default:
+          backend_options:
+            cleanup_percentage: 90
+```
+
+Los requisitos de caché pueden variar en función de la configuración del proyecto y el código de terceros personalizado. El ámbito del tamaño de la memoria caché L2 permite que la caché L2 funcione sin demasiadas visitas de umbral.
+Lo ideal es que el uso de memoria caché L2 se estabilice en un determinado nivel por debajo del umbral, solo para evitar la limpieza frecuente del almacenamiento.
+
+Puede comprobar el uso de la memoria de almacenamiento en caché L2 en cada nodo del clúster mediante el siguiente comando de CLI y buscando el `/dev/shm` línea.
+El uso puede variar en distintos nodos, pero debe converger al mismo valor.
+
+```bash
+df -h
+```
 
 ## Activar conexión esclava de Redis
 
