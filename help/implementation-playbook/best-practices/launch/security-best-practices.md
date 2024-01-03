@@ -2,13 +2,13 @@
 title: Proteja su sitio e infraestructura de Commerce.
 description: Mantenga la seguridad implementando las prácticas recomendadas de seguridad al configurar y actualizar instalaciones de Adobe Commerce.
 feature: Best Practices
-source-git-commit: cea5868ee37317ae9adfd8b580cd38c33c19761e
+exl-id: 50d8a464-6496-4e9a-b642-0c6d0eb51ba0
+source-git-commit: cbfd19efd9f489fefa16d93cbd8116eefb57a900
 workflow-type: tm+mt
-source-wordcount: '2151'
+source-wordcount: '2008'
 ht-degree: 0%
 
 ---
-
 
 # Proteja su sitio e infraestructura de Commerce.
 
@@ -148,14 +148,15 @@ Sin embargo, el Adobe ha descubierto que la mayoría de los compromisos del siti
 En los ataques que se producen con más frecuencia, se inserta código malintencionado en el encabezado o pie de página absoluto de un almacén de clientes. En este caso, el código recopila los datos de formulario que un cliente introduce en la tienda, incluidas las credenciales de inicio de sesión del cliente y los datos del formulario de cierre de compra. A continuación, estos datos se envían a otra ubicación con fines malintencionados en lugar de al servidor de Commerce. Además, el malware puede comprometer al administrador a ejecutar código que reemplace el formulario de pago original con un formulario falso que anula cualquier protección establecida por el proveedor de pagos.
 
 Los skimmers de tarjetas de crédito del lado del cliente son un tipo de malware que incrusta código en el contenido del sitio web del comerciante que se puede ejecutar en el explorador de un usuario, como se muestra en la siguiente figura.
-Después de que se producen determinadas acciones, como que un usuario envíe un formulario o modifique un valor de campo, el simulador serializa los datos y los envía a extremos de terceros. Estos extremos suelen ser otros sitios web comprometidos que actúan como relé para enviar los datos a su destino final.
 
 ![Flujo de datos para ataques de malware dirigidos a sitios de comercio electrónico](../../../assets/playbooks/malware-data-flow.svg)
 
 Después de que se producen determinadas acciones, como que un usuario envíe un formulario o modifique un valor de campo, el simulador serializa los datos y los envía a extremos de terceros. Estos extremos suelen ser otros sitios web comprometidos que actúan como relé para enviar los datos a su destino final.
 
 
-Si el sitio de Commerce ha sido atacado, siga las prácticas recomendadas de Adobe Commerce para [respuesta a un incidente de seguridad](../maintenance/respond-to-security-incident.md).
+>[!TIP]
+>
+>Si un sitio de Commerce se ve afectado por un ataque de malware, siga las prácticas recomendadas de Adobe Commerce para [respuesta a un incidente de seguridad](../maintenance/respond-to-security-incident.md).
 
 ### Conocer los ataques más comunes
 
