@@ -3,10 +3,10 @@ title: Generar datos para pruebas de rendimiento
 description: Obtenga información sobre cómo generar una gran cantidad de datos para utilizarlos en pruebas de rendimiento.
 feature: Configuration, Orders
 exl-id: 2f54701d-88c4-464a-b4dc-56db14d54160
-source-git-commit: 403a5937561d82b02fd126c95af3f70b0ded0747
+source-git-commit: a2dc85232aa10761a6729fe66f5548f644cb5bd4
 workflow-type: tm+mt
-source-wordcount: '749'
-ht-degree: 9%
+source-wordcount: '788'
+ht-degree: 8%
 
 ---
 
@@ -33,24 +33,26 @@ La siguiente tabla proporciona detalles sobre los perfiles del generador de dato
 | `websites` | 1 | 3 | 25 | 5 | 5 |
 | `store_groups` | 1 | 3 | 25 | 5 | 5 |
 | `store_views` | 1 | 3 | 50 | 5 | 5 |
-| `simple_products` | 800 | 24,000 | 4,000 | 300,000 | 600,000 |
+| `simple_products` | 800 | 24.000 | 4.000 | 300.000 | 600.000 |
 | `configurable_products` | 16 con 24 opciones | 640 con 24 opciones | 800 con 24 opciones y 79 con 200 opciones | 8.000 con 24 opciones | 16.000 con 24 opciones |
 | `product_images` | 100 imágenes / 3 imágenes por producto | 1000 imágenes / 3 imágenes por producto | 1000 imágenes / 3 imágenes por producto | 2000 imágenes / 3 imágenes por producto | 2000 imágenes / 3 imágenes por producto |
-| `categories` | 30 | 300 | 100 | 3,000 | 6,000 |
+| `categories` | 30 | 300 | 100 | 3.000 | 6.000 |
 | `categories_nesting_level` | 3 | 3 | 3 | 5 | 5 |
 | `catalog_price_rules` | 20 | 20 | 20 | 20 | 20 |
 | `catalog_target_rules` | 5 | 5 | 5 | 5 | 5 |
 | `cart_price_rules` | 20 | 20 | 20 | 20 | 20 |
 | `cart_price_rules_floor` | 2 | 2 | 2 | 2 | 2 |
-| `customers` | 200 | 2,000 | 2,000 | 5,000 | 10,000 |
-| `tax rates` | 130 | 40,000 | 40,000 | 40,000 | 40,000 |
-| `orders` | 80 | 50,000 | 50,000 | 100,000 | 150,000 |
+| `customers` | 200 | 2.000 | 2.000 | 5.000 | 10.000 |
+| `tax rates` | 130 | 40.000 | 40.000 | 40.000 | 40.000 |
+| `orders` | 80 | 50.000 | 50.000 | 100.000 | 150.000 |
 
 ### Ejecute el generador de datos
 
 >[!WARNING]
 >
 >Antes de ejecutar el generador de datos, deshabilite todos los trabajos cron que se ejecuten en el servidor. Deshabilitar los trabajos cron impide que el generador de datos realice acciones que entren en conflicto con los trabajos cron activos y evita errores innecesarios.
+>
+>Si tiene intención de implementar eventos con [!DNL Adobe I/O Events for Adobe Commerce] al probar el rendimiento, ejecute este comando antes de suscribirse [eventos](https://developer.adobe.com/commerce/extensibility/events/). La suscripción de eventos primero puede provocar errores.
 
 Ejecute el comando tal como se describe en esta sección. Una vez ejecutado el comando, debe [reindexar todos los indexadores](../cli/manage-indexers.md).
 
