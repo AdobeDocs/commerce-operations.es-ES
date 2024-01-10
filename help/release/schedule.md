@@ -2,9 +2,9 @@
 title: Programación de versiones
 description: Descubra cuándo Adobe tiene previsto anunciar el lanzamiento de nuevas funciones sustanciales para Adobe Commerce.
 exl-id: ae1e09cd-966f-44a3-9e4d-b90bb838429d
-source-git-commit: 7edf6d5a8dfe58a86f27e97816e4d850bc21babc
+source-git-commit: 7771c4f225f7f6f9729c432ad1bcb1dcd8b2dc40
 workflow-type: tm+mt
-source-wordcount: '623'
+source-wordcount: '505'
 ht-degree: 2%
 
 ---
@@ -45,7 +45,7 @@ La siguiente tabla proporciona las fechas de los lanzamientos programados (las f
 <tbody>
   <tr>
     <td>13 de febrero de 2024</td>
-    <td><img alt="Icono de función B2B" src="../assets/icons/enterprise.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html">B2B</a><br><img alt="Icono de función de extensibilidad" src="../assets/icons/brackets.svg"></img> <a href="https://developer.adobe.com/commerce/extensibility/">Extensibilidad</a><br><img alt="Icono de función Infraestructura" src="../assets/icons/servers.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite.html">Infraestructura</a><br><img alt="Icono de funcionalidad Servicios" src="../assets/icons/feature.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/release-information/release-notes-all.html">Servicios</a></td>
+    <td><img alt="Icono de función de extensibilidad" src="../assets/icons/brackets.svg"></img> <a href="https://developer.adobe.com/commerce/extensibility/">Extensibilidad</a><br><img alt="Icono de función Infraestructura" src="../assets/icons/servers.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite.html">Infraestructura</a><br><img alt="Icono de funcionalidad Servicios" src="../assets/icons/feature.svg"></img> <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/release-information/release-notes-all.html">Servicios</a></td>
     <td><img alt="Icono de revisión" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">Parches de seguridad</a>: 2.4.6-p4, 2.4.5-p6, 2.4.4-p7</td>
   </tr>
   <tr>
