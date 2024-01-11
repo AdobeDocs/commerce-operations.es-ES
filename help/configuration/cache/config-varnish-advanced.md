@@ -3,9 +3,9 @@ title: Configuración avanzada de barniz
 description: Configure las funciones avanzadas de Barniz, incluidos los modos de comprobación de estado, gracia y santo.
 feature: Configuration, Cache
 exl-id: 178bd675-6ed0-40cc-9455-08a11b32c054
-source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
+source-git-commit: ec3ab7e3c6c3835e73653b0d4f74aadc861016d3
 workflow-type: tm+mt
-source-wordcount: '892'
+source-wordcount: '871'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 El barniz proporciona varias funciones que impiden que los clientes experimenten largos retrasos y tiempos de espera cuando el servidor de Commerce no funciona correctamente. Estas funciones se pueden configurar en la variable `default.vcl` archivo. En este tema se describen las adiciones que proporciona Commerce en el archivo VCL (Varnish Configuration Language) que descarga del administrador.
 
-Consulte la [Manual de referencia del barniz](https://varnish-cache.org/docs/6.3/reference/index.html) para obtener más información sobre el uso del lenguaje de configuración de barniz.
+Consulte la [Manual de referencia del barniz](https://varnish-cache.org/docs/index.html) para obtener más información sobre el uso del lenguaje de configuración de barniz.
 
 ## Comprobación de estado
 
@@ -36,7 +36,7 @@ Cada 5 segundos, esta comprobación de estado llama a la función `pub/health_ch
 
 El `health_check.php` El script se encuentra en `pub` directorio. Si el directorio raíz de Commerce es `pub`, luego asegúrese de cambiar la ruta en el `url` parámetro de `/pub/health_check.php` hasta `health_check.php`.
 
-Para obtener más información, consulte la [Barniz de controles de estado](https://varnish-cache.org/docs/6.3/users-guide/vcl-backends.html?highlight=health%20check#health-checks) documentación.
+Para obtener más información, consulte la [Barniz de controles de estado](https://varnish-cache.org/docs/7.4/users-guide/vcl-backends.html#health-checks) documentación.
 
 ## Modo de gracia
 
@@ -85,10 +85,7 @@ bin/magento cache:flush
 
 ### Instalación
 
-El modo Saint no forma parte del paquete principal de barniz. Es una versión separada `vmod` que deben descargarse e instalarse. Como resultado, debe volver a compilar Varnish desde el origen, tal como se describe en los siguientes artículos:
-
-- [Instalación de Varnish 6.4](https://varnish-cache.org/docs/6.4/installation/install.html)
-- [Instalación de Varnish 6.0](https://varnish-cache.org/docs/6.0/installation/install.html) (LTS)
+El modo Saint no forma parte del paquete principal de barniz. Es una versión separada `vmod` que deben descargarse e instalarse. Como resultado, debe volver a compilar Varnish desde el origen, tal como se describe en la sección [instrucciones de instalación](https://varnish-cache.org/docs/index.html) para su versión de Varnish.
 
 Después de volver a compilar, puede instalar el módulo del modo Saint. En general, siga estos pasos:
 

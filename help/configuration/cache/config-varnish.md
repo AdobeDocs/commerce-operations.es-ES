@@ -3,9 +3,9 @@ title: Configuración y uso de Barniz
 description: Entender cómo Varnish almacena archivos y mejora el tráfico HTTP.
 feature: Configuration, Cache
 exl-id: 57614878-e349-43bb-b22b-1aa321907be1
-source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
+source-git-commit: ec3ab7e3c6c3835e73653b0d4f74aadc861016d3
 workflow-type: tm+mt
-source-wordcount: '1079'
+source-wordcount: '1049'
 ht-degree: 0%
 
 ---
@@ -14,11 +14,11 @@ ht-degree: 0%
 
 [Caché de barniz] es un acelerador de aplicaciones web de código abierto (también denominado _acelerador HTTP_ o _almacenamiento en caché del proxy inverso HTTP_). Varnish almacena (o almacena en caché) archivos o fragmentos de archivos en la memoria, lo que permite a Varnish reducir el tiempo de respuesta y el consumo de ancho de banda de la red en solicitudes futuras y equivalentes. A diferencia de los servidores web como Apache y nginx, Varnish fue diseñado para usarse exclusivamente con el protocolo HTTP.
 
-Commerce 2.4.2 se prueba con Varnish 6.4. Commerce 2.4.x es compatible con Varnish 6.x
+[Requisitos del sistema](../../installation/system-requirements.md) enumera las versiones compatibles de Barnish.
 
 >[!WARNING]
 >
->Nosotros _recomendar_ Se utiliza Barnish en la producción. El almacenamiento en caché de página completa integrado: para el sistema de archivos o [database]: es mucho más lento que Varnish, y Varnish está diseñado para acelerar el tráfico HTTP.
+>Nosotros _recomendar_ Se utiliza Barnish en la producción. El almacenamiento en caché de página completa integrado: para el sistema de archivos o [database](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/): es mucho más lento que Varnish, y Varnish está diseñado para acelerar el tráfico HTTP.
 
 Para obtener más información sobre Barniz, consulte:
 
@@ -53,9 +53,9 @@ El proceso puede resumirse de la siguiente manera:
 
 >[!NOTE]
 >
-- Salvo que se indique lo contrario, debe introducir todos los comandos mencionados en este tema como usuario con `root` privilegios.
+>- Salvo que se indique lo contrario, debe introducir todos los comandos mencionados en este tema como usuario con `root` privilegios.
 >
-- Este tema está escrito para Varnish en CentOS y Apache 2.4. Si está configurando Barniz en un entorno diferente, algunos comandos pueden ser diferentes. Consulte la documentación de Barniz para obtener más información.
+>- Este tema está escrito para Varnish en CentOS y Apache 2.4. Si está configurando Barniz en un entorno diferente, algunos comandos pueden ser diferentes. Consulte la documentación de Barniz para obtener más información.
 
 ## Problemas conocidos
 
@@ -96,7 +96,7 @@ El almacenamiento en caché de barniz funciona con Commerce mediante:
 
 >[!INFO]
 >
-En este tema se tratan únicamente las opciones predeterminadas de la lista anterior. Existen muchas otras formas de configurar el almacenamiento en caché en escenarios complejos (por ejemplo, mediante una red de distribución de contenido); estos métodos están fuera del ámbito de esta guía.
+>En este tema se tratan únicamente las opciones predeterminadas de la lista anterior. Existen muchas otras formas de configurar el almacenamiento en caché en escenarios complejos (por ejemplo, mediante una red de distribución de contenido); estos métodos están fuera del ámbito de esta guía.
 
 En la primera solicitud del explorador, los recursos almacenables en caché se entregan al explorador del cliente desde Varnish y se almacenan en la caché del explorador.
 
@@ -120,7 +120,7 @@ El ejemplo anterior muestra una solicitud para la página principal de la tienda
 
 >[!NOTE]
 >
-La mayoría de los recursos estáticos tienen un código de estado HTTP 200 (OK), que indica que el recurso se recuperó del servidor.
+>La mayoría de los recursos estáticos tienen un código de estado HTTP 200 (OK), que indica que el recurso se recuperó del servidor.
 
 ### Segunda solicitud de explorador
 
@@ -148,7 +148,6 @@ Si el contenido cambia en el servidor, el cliente descarga el recurso estático 
 
 <!-- Link Definitions -->
 
-[database]: https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/
 [El cuadro de barniz grande]: https://www.varnish-cache.org/docs/trunk/users-guide/intro.html
 [Caché de barniz]: https://varnish-cache.org
 [Opciones de inicio de barniz]: https://www.varnish-cache.org/docs/trunk/reference/varnishd.html#ref-varnishd-options
