@@ -3,9 +3,9 @@ title: El [!UICONTROL CDN] pestaña
 description: Obtenga información acerca de [!UICONTROL CDN] pestaña de [!DNL Observation for Adobe Commerce].
 exl-id: db22bbca-2033-4e9a-8799-b47d84bdd720
 feature: Configuration, Observability
-source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
+source-git-commit: e753528a1d74eda0a1393e2cc455f33f529db739
 workflow-type: tm+mt
-source-wordcount: '699'
+source-wordcount: '739'
 ht-degree: 0%
 
 ---
@@ -63,6 +63,8 @@ Este fotograma muestra la duración en segundos de las solicitudes que se pueden
 ## [!UICONTROL Fastly Cache Average Response for selected time period in seconds, faceted by POP]
 
 ![Respuesta promedio de caché rápida para el período de tiempo seleccionado en segundos faceteado por POP](../../assets/tools/observation-for-adobe-commerce/cdn-tab-10.png)
+
+*GOLPEAR* en este contexto hace referencia a un punto de presencia (POP) configurado para funcionar como grupo para el almacenamiento en caché. Consulte [Puntos de presencia](https://developer.fastly.com/learning/concepts/pop/).
 
 ## [!UICONTROL Total Bandwidth (All POPs) during the selected timeframe, compared with 1 week ago (% increase/decrease)]
 
