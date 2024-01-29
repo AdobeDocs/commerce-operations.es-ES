@@ -2,9 +2,9 @@
 title: Notas de la versión
 description: Obtenga información acerca de los parches disponibles para Adobe Commerce y los problemas que resuelven.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 9d75675aed671b995f7bdda43abc5a06f2c03ee8
+source-git-commit: 6f0a3434d4730b4d2bcf0aecdacfae58025824cd
 workflow-type: tm+mt
-source-wordcount: '19551'
+source-wordcount: '19799'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,17 @@ El [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) ofr
 >[!INFO]
 >
 >Para obtener información acerca de [!DNL quality patches] creado por la Comunidad para el Magento Open Source, consulte las [notas de la versión](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.45 {#v1-1-45}
+
+* **ACSD-56886** (para Adobe Commerce y Magento Open Source >=2.4.2 &lt;2.4.7): corrige el problema en el que un producto configurable se queda sin existencias cuando una actualización programada desactiva uno de los dos productos secundarios.
+* **ACSD-56616** (para Adobe Commerce y Magento Open Source >=2.4.5 &lt;2.4.6): corrige el problema en el que los productos agrupados se muestran como en stock en la tienda cuando sus productos simples están agotados.
+* **ACSD-56515** (para Adobe Commerce >=2.4.2 &lt;2.4.7): corrige el problema en el que los administradores con permisos de nivel de sitio web no pueden agregar ni editar un bloque dinámico.
+* **ACSD-56447** (para Adobe Commerce y Magento Open Source >=2.4.2 &lt;2.4.7): corrige el problema en el que, al agregar el mismo producto al carro de compras mediante solicitudes de API web REST paralelas, se generan dos elementos independientes en el carro de compras.
+* **ACSD-56415** (para Adobe Commerce y Magento Open Source >=2.4.5 &lt;2.4.7): corrige el problema en el que el rendimiento de la indexación de precios parcial se ralentiza debido a un error de `DELETE` consulta cuando la base de datos tiene muchos datos de precios parciales para indexar.
+* **ACSD-54965** (para Adobe Commerce >=2.4.5 &lt;2.4.6): corrige el problema en el que la cuadrícula de comercialización visual no muestra las existencias correctas cuando un producto se asigna solo a las existencias personalizadas.
+* **ACSD-52824** (para Adobe Commerce >=2.4.5 &lt;2.4.7): corrige el problema en el que se muestran los botones PayPal Express, Google Pay y Apple Pay a los clientes de la empresa cuando estos métodos de pago están desactivados en la configuración de la empresa.
+* Revisiones actualizadas: ACSD-56193
 
 ## v1.1.44 {#v1-1-44}
 
