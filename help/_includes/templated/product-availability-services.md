@@ -1,8 +1,8 @@
 ---
-source-git-commit: 1e1899426416df8526e58a50ad1e58b67d5b4196
+source-git-commit: 4e836797fa021c16b24ca95ab8df096e0cdf5e7e
 workflow-type: tm+mt
-source-wordcount: '164'
-ht-degree: 21%
+source-wordcount: '137'
+ht-degree: 6%
 
 ---
 # Disponibilidad de productos de Commerce Services
@@ -33,10 +33,10 @@ ht-degree: 21%
       </tr>
       <tr>
           <td>Servicio de catálogo para Adobe Commerce</td>
-          <td>1.13</td>
-          <td>1.13</td>
-          <td>1.13</td>
-          <td>1.13</td>
+          <td>1,13</td>
+          <td>1,13</td>
+          <td>1,13</td>
+          <td>1,13</td>
           <td>
               <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/guide-overview.html">Información general</a><br/>
               <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/release-notes.html">Notas de versión</a><br/>
@@ -55,10 +55,10 @@ ht-degree: 21%
       </tr>
       <tr>
           <td>Live Search</td>
-          <td>3.1.1</td>
-          <td>3.1.1</td>
-          <td>3.1.1</td>
-          <td>3.1.1</td>
+          <td>4.0.0</td>
+          <td>4.0.0</td>
+          <td>4.0.0</td>
+          <td>4.0.0</td>
           <td>
               <a href="https://commercemarketplace.adobe.com/magento-live-search.html">Marketplace</a><br/>
               <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/release-notes.html">Notas de versión</a><br/>
