@@ -3,20 +3,20 @@ title: Entregables
 description: Obtenga información sobre los diferentes entregables asociados a una implementación de Adobe Commerce.
 exl-id: 6f5e603b-bbe5-411d-ad72-696cb4eae246
 feature: Best Practices
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: 903c8bfc7c341c46d98026f0a02fbefba22c8f5d
 workflow-type: tm+mt
-source-wordcount: '266'
+source-wordcount: '265'
 ht-degree: 0%
 
 ---
 
 # Entregables
 
-El proceso de detección identifica los resultados específicos de la implementación de Adobe Commerce. Consulte las secciones siguientes para obtener más información.
+El proceso de detección identifica los resultados específicos de la implementación de Adobe Commerce. Para obtener más información, consulte las siguientes secciones.
 
 ## Requisitos empresariales
 
-Este documento registra las aprobaciones de requisitos empresariales para especificaciones funcionales y la facilidad de uso de la experiencia del cliente. Se utiliza para impulsar la experiencia del usuario, el diseño visual y los planes de prueba detallados.
+Un documento de requisitos empresariales registra las aprobaciones para las especificaciones funcionales y la facilidad de uso de la experiencia del cliente. Se utiliza para impulsar la experiencia del usuario, el diseño visual y los planes de prueba detallados.
 
 ## Diagrama del sistema
 
@@ -24,11 +24,11 @@ Un diagrama de sistemas debe mostrar los datos (por ejemplo, pedidos, productos 
 
 ## Especificaciones técnicas
 
-Este documento define el enfoque de implementación técnica y los detalles aplicables sobre todas las integraciones y sistemas de terceros que deben modificarse. Esto puede incluir API que actualmente no existen y que deben desarrollarse.
+Las especificaciones técnicas definen el enfoque de implementación y los detalles aplicables sobre todas las integraciones y sistemas de terceros que deben modificarse. Esto puede incluir API que actualmente no existen y que deben desarrollarse.
 
 ## Asignación de datos
 
-Un documento de asignación de datos cubre categorías, productos, recomendaciones, datos de precios e inventario, e incluye los atributos necesarios para asignar los productos y las categorías actuales al catálogo de productos de Adobe Commerce.
+Un documento de asignación de datos abarca categorías, productos, recomendaciones, datos de precios e inventario, e incluye los atributos necesarios para asignar los productos y las categorías actuales al catálogo de productos de Adobe Commerce.
 
 ## Diagrama de flujo
 
@@ -36,11 +36,11 @@ Muestra los flujos de usuario para procesos críticos o únicos, especialmente c
 
 ## Ámbito y proveedores
 
-Se trata de una lista final de proveedores de terceros designados para su integración en la solución Adobe Commerce.
+Un documento de proveedores y ámbito debe contener una lista completa de proveedores externos designados para integrarlos en la solución de Adobe Commerce.
 
 ## Datos del producto
 
-Una revisión de los productos existentes, los precios y los datos de inventario de una organización, así como un plan para asignar los atributos de datos utilizados para rellenar Adobe Commerce.
+Una revisión de los datos de productos, precios e inventario existentes de una organización y un plan para asignar los atributos de datos utilizados para rellenar Adobe Commerce.
 
 ## Plan del proyecto
 
