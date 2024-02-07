@@ -4,9 +4,9 @@ description: Mantenga y optimice el rendimiento del sitio siguiendo las práctic
 role: Admin, User
 feature: Best Practices
 exl-id: b35806f9-4bc6-407e-bedd-5ce3f09c1b9f
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: af66d47279245f8ee105030bbb33d77b1b35c3e5
 workflow-type: tm+mt
-source-wordcount: '280'
+source-wordcount: '298'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Adobe Commerce tiene dos tipos de modos de indizador: [!UICONTROL Update on Save
 
 - **[!UICONTROL Update on Save]** El modo actualiza los índices inmediatamente cada vez que cambia el catálogo u otros datos. Por ejemplo, si un usuario administrador agrega nuevos productos a una categoría, el índice de productos de la categoría se reindexa inmediatamente cuando se guarda la actualización.
 
-- **[!UICONTROL Update on Schedule]** El modo almacena información sobre las actualizaciones de datos, y las operaciones de reindexación y las actualizaciones de índice se administran mediante un trabajo cron que se ejecuta en segundo plano a intervalos programados.
+- **[!UICONTROL Update on Schedule]** El modo almacena información sobre las actualizaciones de datos, y las operaciones de reindexación y las actualizaciones de índice se administran mediante un trabajo cron que se ejecuta en segundo plano a intervalos programados. El trabajo cron no siempre realiza una reindexación cada vez que se ejecuta. Solo vuelve a indexar cuando hay nuevas entradas en los registros de cambios del indexador (por ejemplo, hay un registro de pendientes en los indexadores).
 
 Tener un almacén grande con varios administradores trabajando en el backend o tener muchos déclencheur de importación y exportación con actualizaciones frecuentes de índice. Si la configuración del índice del sitio está establecida en [!UICONTROL Update on Save] En este modo, la reindexación frecuente degrada el rendimiento de la base de datos, lo que ralentiza el rendimiento del sitio y provoca largos retrasos en el proceso de reindexación, especialmente en grandes almacenes.
 
