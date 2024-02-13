@@ -1,8 +1,8 @@
 ---
-source-git-commit: ac8be2ccb192765ab4633e9fce8684547a9363ac
+source-git-commit: 9f80bf4de9112cc986708266565c96515e85554c
 workflow-type: tm+mt
-source-wordcount: '633'
-ht-degree: 11%
+source-wordcount: '499'
+ht-degree: 0%
 
 ---
 # Versiones publicadas
@@ -48,6 +48,12 @@ La compatibilidad con la línea de la versión 2.4.6 finaliza el 14 de marzo de 
   <tbody>
     <tr>
         <td>
+          <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-6-p4.html">2.4.6-p4</a>
+        </td>
+        <td>13 de febrero de 2024</td>
+    </tr>
+    <tr>
+        <td>
           <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-6-p3.html">2.4.6-p3</a>
         </td>
         <td>10 de octubre de 2023</td>
@@ -85,6 +91,12 @@ La compatibilidad con la línea de versión 2.4.5 finaliza el 9 de agosto de 202
     </tr>
   </thead>
   <tbody>
+    <tr>
+        <td>
+          <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-5-p6.html">2.4.5-p6</a>
+        </td>
+        <td>13 de febrero de 2024</td>
+    </tr>
     <tr>
         <td>
           <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-5-p5.html">2,4,5-p5</a>
@@ -136,6 +148,12 @@ La compatibilidad con la línea de versión 2.4.4 finaliza el 12 de abril de 202
     </tr>
   </thead>
   <tbody>
+    <tr>
+        <td>
+          <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-4-p7.html">2.4.4-p7</a>
+        </td>
+        <td>13 de febrero de 2024</td>
+    </tr>
     <tr>
         <td>
           <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/2-4-4-p6.html">2.4.4-p6</a>
@@ -262,7 +280,7 @@ La compatibilidad con la línea de versión 2.4.0-2.4.3 finalizó el 28 de novie
   </tbody>
 </table>
 
-## 2.3
+## 2,3
 
 La compatibilidad con la línea de versión 2.3 finalizó el 8 de septiembre de 2022.
 
@@ -372,7 +390,7 @@ La compatibilidad con la línea de versión 2.3 finalizó el 8 de septiembre de 
     </tr>
     <tr>
         <td>
-          <a href="https://devdocs.magento.com/guides/v2.3/release-notes/ReleaseNotes2.3.1Commerce.html">2.3.1</a>
+          <a href="https://devdocs.magento.com/guides/v2.3/release-notes/ReleaseNotes2.3.1Commerce.html">2.3.1.</a>
         </td>
         <td>26 de marzo de 2019</td>
     </tr>
@@ -385,7 +403,7 @@ La compatibilidad con la línea de versión 2.3 finalizó el 8 de septiembre de 
   </tbody>
 </table>
 
-## 2.2
+## 2,2
 
 La compatibilidad con la línea de versión 2.2 finalizó el 1 de diciembre de 2019.
 
@@ -472,7 +490,7 @@ La compatibilidad con la línea de versión 2.2 finalizó el 1 de diciembre de 2
   </tbody>
 </table>
 
-## 2.1
+## 2,1
 
 La compatibilidad con la línea de versión 2.1 finalizó el 30 de junio de 2019.
 
@@ -601,7 +619,7 @@ La compatibilidad con la línea de versión 2.1 finalizó el 30 de junio de 2019
   </tbody>
 </table>
 
-## 2.0
+## 2,0
 
 La compatibilidad con la línea de versión 2.0 finalizó el 31 de marzo de 2018.
 
