@@ -3,10 +3,10 @@ title: Fase de mantenimiento de implementación
 description: Conozca las prácticas recomendadas de implementación para la fase de mantenimiento de los proyectos de Adobe Commerce.
 exl-id: bd052412-a41c-4dbd-9aba-ba2fcac31f2d
 feature: Best Practices
-source-git-commit: 00036391366625ab256a4dc682d1ecbe9e46fa23
+source-git-commit: fb449f0ee7d503d0c7ba60bf6bfbe3f528060606
 workflow-type: tm+mt
-source-wordcount: '468'
-ht-degree: 2%
+source-wordcount: '371'
+ht-degree: 3%
 
 ---
 
@@ -48,7 +48,7 @@ Las secciones siguientes incluyen información sobre prácticas recomendadas par
 | Práctica recomendada | Descripción |
 |--------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
 | [Resuelva los problemas de rendimiento de base de datos&#x200B;](resolve-database-performance-issues.md) | Solucionar problemas de bases de datos que ralentizan el rendimiento en sitios de Adobe Commerce implementados en la infraestructura en la nube. |
-| [Requisitos previos de actualización de Adobe Commerce 2.3.5 para MariaDB&#x200B;](commerce-235-upgrade-prerequisites-mariadb.md) | Prepare la base de datos de MariaDB para una actualización. |
+| [Requisitos previos de actualización de Adobe Commerce para MariaDB&#x200B;](mariadb-upgrade.md) | Prepare la base de datos de MariaDB para una actualización. |
 
 ## Mejoras de funciones
 
