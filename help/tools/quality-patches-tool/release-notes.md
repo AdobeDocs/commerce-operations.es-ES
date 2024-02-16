@@ -2,9 +2,9 @@
 title: Notas de la versión
 description: Obtenga información acerca de los parches disponibles para Adobe Commerce y los problemas que resuelven.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 6f0a3434d4730b4d2bcf0aecdacfae58025824cd
+source-git-commit: 26bde6684b3f38ed16ede6ec9c63cc90fa849fd9
 workflow-type: tm+mt
-source-wordcount: '19799'
+source-wordcount: '19990'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,16 @@ El [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) ofr
 >[!INFO]
 >
 >Para obtener información acerca de [!DNL quality patches] creado por la Comunidad para el Magento Open Source, consulte las [notas de la versión](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.46 {#v1-1-46}
+
+* **ACSD-46767** (para Adobe Commerce y Magento Open Source >=2.4.4 &lt;2.4.6): corrige el problema en el que la página de categoría almacena en caché la información no válida cuando cambia la cantidad de existencias, incluso si el producto sigue en existencias.
+* **ACSD-54656** (para Adobe Commerce >=2.4.5 &lt;2.4.6): corrige el problema en el que el Recaptcha invisible falla durante el cierre de compra, lo que impide que se realice un pedido.
+* **ACSD-55100** (para Adobe Commerce >=2.4.6 &lt;2.4.7): corrige el problema en el que GraphQL no devuelve más de 10 000 productos en los resultados de búsqueda.
+* **ACSD-56621** (para Adobe Commerce >=2.4.2 &lt;2.4.7): corrige el problema en el que el nombre y los apellidos actualizados no se reflejan en la sección del encabezado de saludos del usuario administrador de la compañía.
+* **ACSD-56842** (para Adobe Commerce y Magento Open Source >=2.4.2 &lt;2.4.7): corrige el problema por el que faltan los proxies diferidos y las fábricas de proxy diferidos después de ejecutarse `setup:di:compile`.
+* **ACSD-57003** (para Adobe Commerce y Magento Open Source >=2.4.6 &lt;2.4.7): corrige el problema en el que el estado del pedido se cambia a *[!UICONTROL Complete]* en lugar de cambiarse a *[!UICONTROL Processing]* cuando un pedido se reembolsa parcialmente y se envía parcialmente.
+* Revisiones actualizadas: ACSD-50260-v2, ACSD-54966
 
 ## v1.1.45 {#v1-1-45}
 
