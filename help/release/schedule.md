@@ -1,11 +1,11 @@
 ---
 title: Programación de versiones
-description: Descubra cuándo planea Adobe anunciar el lanzamiento de nuevas funciones para Adobe Commerce.
+description: Descubra cuándo Adobe tiene previsto anunciar lanzar nuevas funciones de Adobe Commerce.
 exl-id: ae1e09cd-966f-44a3-9e4d-b90bb838429d
 source-git-commit: cbcc688fb5b356b99d103259e85117bda82f36b9
 workflow-type: tm+mt
 source-wordcount: '504'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
