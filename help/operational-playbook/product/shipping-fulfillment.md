@@ -3,9 +3,9 @@ title: Envío y cumplimiento
 description: Determine los métodos de envío y los costes antes de completar su proyecto de comercio electrónico.
 exl-id: 07d303ab-f229-4b6a-b35a-b6d2a3be89b3
 feature: Best Practices, Shipping/Delivery
-source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
+source-git-commit: 766bd4e4e6a31157836770270cc3ba310f142161
 workflow-type: tm+mt
-source-wordcount: '628'
+source-wordcount: '622'
 ht-degree: 0%
 
 ---
@@ -60,7 +60,7 @@ En la tabla siguiente se describen las diferencias entre el envío y el cumplimi
 | B2B | B2C |
 |----------------------------------------------------------------------------------------------|------------------------------------------------------|
 | La entrega y el envío tardan más en completarse debido a los costes implicados y a la cantidad | Puede ser envío el mismo día y / o envío gratuito |
-| Requiere una conexión individualizada entre la empresa y el cliente | Por lo general, relaciones breves |
+| Requiere una conexión individualizada entre la empresa y el cliente | Normalmente, relaciones a corto plazo |
 | Normalmente, relaciones a largo plazo | Business proporciona tarjetas de fidelización para retener clientes |
 | El proceso puede ser largo y complejo | La oferta de promociones y campañas ofrece a los clientes |
 | Es necesario aplicar reglas sólidas | Se pueden aplicar reglas básicas |
