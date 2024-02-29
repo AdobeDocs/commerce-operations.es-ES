@@ -3,9 +3,9 @@ title: Prácticas recomendadas de configuración
 description: Optimizar el tiempo de respuesta de la implementación de Adobe Commerce o Magento Open Source mediante estas prácticas recomendadas.
 feature: Best Practices, Configuration
 exl-id: 4cb0f5e7-49d5-4343-a8c7-b8e351170f91
-source-git-commit: 2fa587557db214ed2fbeb5e6c175a9a209883f94
+source-git-commit: 5a49aff28f1a7c87cd6135ca19b4436da41cbb1b
 workflow-type: tm+mt
-source-wordcount: '1428'
+source-wordcount: '1437'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Todas las operaciones asincrónicas de [!DNL Commerce] se realizan utilizando Li
 
 ## Indexadores
 
-Un indexador puede ejecutarse en **[!UICONTROL Update on Save]** o **[!UICONTROL Update on Schedule]** modo. El **[!UICONTROL Update on Save]** El modo de inmediatamente indexa cada vez que cambian el catálogo u otros datos. Este modo asume una baja intensidad de las operaciones de actualización y navegación en su tienda. Esto puede provocar retrasos significativos y la falta de disponibilidad de los datos durante cargas altas. Se recomienda utilizar **Actualización según lo programado** en producción, porque almacena información sobre las actualizaciones de datos y realiza la indexación por partes en segundo plano a través de un trabajo cron específico. Puede cambiar el modo de cada [!DNL Commerce] indexador por separado en la  **[!UICONTROL System]** > [!UICONTROL Tools] > **[!UICONTROL Index Management]** página de configuración de.
+Un indexador puede ejecutarse en **[!UICONTROL Update on Save]** o **[!UICONTROL Update on Schedule]** modo. El **[!UICONTROL Update on Save]** El modo de inmediatamente indexa cada vez que cambian el catálogo u otros datos. Este modo asume una baja intensidad de las operaciones de actualización y navegación en su tienda. Esto puede provocar retrasos significativos y la falta de disponibilidad de los datos durante cargas altas. Se recomienda utilizar **Actualización según lo programado** para fines de rendimiento, ya que almacena información sobre actualizaciones de datos y realiza la indexación por partes en segundo plano a través de un trabajo cron específico. Puede cambiar el modo de cada [!DNL Commerce] indexador por separado en la  **[!UICONTROL System]** > [!UICONTROL Tools] > **[!UICONTROL Index Management]** página de configuración de. El [!UICONTROL Customer Grid] index siempre debe establecerse en **[!UICONTROL Update on Save]** modo.
 
 >[!TIP]
 >
