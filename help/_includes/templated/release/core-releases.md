@@ -1,7 +1,7 @@
 ---
-source-git-commit: 9f80bf4de9112cc986708266565c96515e85554c
+source-git-commit: 93ec4b59b4c26e31ee117bc13f98d21ce23d586f
 workflow-type: tm+mt
-source-wordcount: '499'
+source-wordcount: '501'
 ht-degree: 0%
 
 ---
@@ -9,7 +9,7 @@ ht-degree: 0%
 
 ## 2.4.7
 
-La compatibilidad con la línea de versión 2.4.7 finaliza el 19 de abril de 2027.
+La compatibilidad con la línea de versión 2.4.7 finaliza el 9 de abril de 2027.
 
 <table>
   <thead>
@@ -138,7 +138,7 @@ La compatibilidad con la línea de versión 2.4.5 finaliza el 9 de agosto de 202
 
 ## 2.4.4
 
-La compatibilidad con la línea de versión 2.4.4 finaliza el 12 de abril de 2025.
+La compatibilidad con la línea de versión 2.4.4 finaliza el 24 de abril de 2025.
 
 <table>
   <thead>
