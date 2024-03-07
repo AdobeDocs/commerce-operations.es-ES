@@ -2,7 +2,7 @@
 title: Programación de versiones
 description: Descubra cuándo Adobe tiene previsto anunciar lanzar nuevas funciones de Adobe Commerce.
 exl-id: ae1e09cd-966f-44a3-9e4d-b90bb838429d
-source-git-commit: cbcc688fb5b356b99d103259e85117bda82f36b9
+source-git-commit: c9e7a8926c7003d34a62d2defb62c09d58919ddd
 workflow-type: tm+mt
 source-wordcount: '504'
 ht-degree: 2%
@@ -31,7 +31,7 @@ La siguiente tabla proporciona las fechas de los lanzamientos programados (las f
 </thead>
 <tfoot>
    <tr>
-      <td colspan="3"><strong>Leyenda</strong>:
+      <td colspan="3"><strong>Leyenda:</strong>
          <ul>
             <li><strong><img alt="Icono de función B2B" src="../assets/icons/enterprise.svg"></img> B2B</strong>: nuevas funciones, mejoras y correcciones de errores para la extensión B2B para Adobe Commerce.</li>
             <li><strong><img alt="Icono de función de extensibilidad" src="../assets/icons/brackets.svg"></img> Extensibilidad</strong>: nuevas herramientas y servicios para desarrolladores para la extensibilidad fuera de proceso que se entregan independientemente de las versiones de parches. Por ejemplo, el SDK de la IU de administración, los eventos de Adobe I/O para Commerce y la malla de API.</li>
