@@ -2,9 +2,9 @@
 title: Requisitos del sistema
 description: Utilice esta referencia para identificar las dependencias de software necesarias que se han probado con las versiones de Adobe Commerce y Magento Open Source.
 exl-id: 008c9edc-7d72-403c-847f-0e3b77bbb197
-source-git-commit: 8b9e4de2799532e4654fce63d856c2d301025f09
+source-git-commit: 56052a5777b8719d5a9257d0c48e5640a6812a5f
 workflow-type: tm+mt
-source-wordcount: '788'
+source-wordcount: '761'
 ht-degree: 0%
 
 ---
@@ -112,9 +112,8 @@ Tienda y administrador:
 - Firefox (versión principal más reciente y anterior; cualquier sistema operativo)
 - Chrome (última versión principal y anterior; cualquier sistema operativo)
 - Safari (versión principal más reciente y anterior; solo macOS)
-- Safari Mobile para iPad 2, iPad Mini, iPad con pantalla Retina (iOS 12 o posterior), para tienda de escritorio
-- Safari Mobile para iPhone 6 o posterior; iOS 12 o posterior, para tienda móvil
-- Chrome para móviles (versión principal más reciente y anterior) [Android™ 4 o posterior] para tienda móvil)
+- Safari para iOS (versión principal más reciente y anterior, para tienda)
+- Chrome para Android (versión principal más reciente y anterior, para tienda)
 
 ### Servidor de correo
 
