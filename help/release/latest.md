@@ -4,13 +4,13 @@ description: Obtenga información acerca de las últimas herramientas de desarro
 level: Intermediate, Experienced
 role: Admin, User, Developer
 mini-toc-levels: 1
-source-git-commit: 2e17313c0a2c87ce4d2ee43e9b40277fda25edb9
+exl-id: 176886bc-733a-48d9-94dc-58fd8b24f54e
+source-git-commit: 1f2c2ca98ba7076cdc3512e30fdd7a8c76f86200
 workflow-type: tm+mt
 source-wordcount: '3078'
 ht-degree: 0%
 
 ---
-
 
 # Anuncios de productos de febrero de Adobe Commerce
 
@@ -22,7 +22,7 @@ Adobe Commerce ha estado trabajando estrechamente con sus clientes para desarrol
 
 Únase a nosotros en estos eventos virtuales y en persona para obtener más información acerca de Adobe Commerce de parte de los líderes y profesionales del comercio electrónico:
 
-- **15 de marzo de 2024**: Adobe Commerce: Creación de la plataforma de comercio basada en Experience, 10:00 PDT/18:00 GMT. [Regístrese para unirse al seminario web en directo](https://engage.adobe.com/BdgxpComWBR-register.html).
+- **14 de marzo de 2024**: Adobe Commerce: Creación de la plataforma de comercio basada en Experience, 10:00 PDT/17:00 GMT. [Regístrese para unirse al seminario web en directo](https://engage.adobe.com/BdgxpComWBR-register.html).
 
 - **Del 26 al 28 de marzo de 2024**: Únase a miles de líderes y profesionales del comercio electrónico que viven en el Adobe Summit en Las Vegas. Obtenga más información sobre [Adobe Summit](https://business.adobe.com/summit/adobe-summit.html) y el [Seguimiento de Commerce](https://reg.adobe.com/flow/adobe/as24/sessions/page/catalog?tab.allsessions=1643149273691001NFtR&amp;search.track=1601680652403006TXuG) con altavoces desde [Hanesmarks](https://reg.adobe.com/flow/adobe/as24/sessions/page/catalog?tab.allsessions=1643149273691001NFtR&amp;search=S435), [Coca Cola](https://reg.adobe.com/flow/adobe/as24/sessions/page/catalog?tab.allsessions=1643149273691001NFtR&amp;search=S434), [Unilever](https://reg.adobe.com/flow/adobe/as24/sessions/page/catalog?tab.allsessions=1643149273691001NFtR&amp;search=s430), y [Nestlé Purina](https://reg.adobe.com/flow/adobe/as24/sessions/page/catalog?tab.allsessions=1643149273691001NFtR&amp;search=S437).
 
@@ -116,7 +116,7 @@ Además, también estamos organizando un evento práctico [sesión de laboratori
 
 [!BADGE Disponible ahora]{type=Informative tooltip="Disponible ahora"}
 
-Adobe tiene una amplia experiencia en la implementación de servicios preparados para HIPAA con clientes del sector sanitario de todos los tamaños. Desde pagadores hasta proveedores y proveedores de tecnología farmacéutica y médica, el Adobe establece el estándar para la gestión responsable de los datos de los consumidores. Esta experiencia se está extendiendo ahora al mercado de comercio digital de la atención sanitaria, que crece rápidamente, con una versión compatible con HIPPA de la plataforma en la nube de Adobe Commerce.
+Adobe tiene una amplia experiencia en la implementación de servicios preparados para HIPAA con clientes del sector sanitario de todos los tamaños. Desde pagadores hasta proveedores y proveedores de tecnología farmacéutica y médica, el Adobe establece el estándar para la gestión responsable de los datos de los consumidores. Esta experiencia se está extendiendo ahora al mercado de comercio digital de atención médica de rápido crecimiento con una versión compatible con HIPAA de la plataforma en la nube de Adobe Commerce.
 
 La oferta compatible con HIPAA está disponible para los clientes de Adobe Commerce Cloud y Managed Service. Incluye controles adicionales de seguridad y privacidad para garantizar la protección de la información electrónica de salud personal (ePHI), de modo que las organizaciones de atención médica y de ciencias de la vida puedan cumplir con mayor facilidad sus obligaciones de cumplimiento. La solución admite una amplia gama de casos de uso, incluidas ventas en línea rápidas y convenientes de cobertura de atención médica, recetas, dispositivos médicos recetados y suministros médicos. Adobe Commerce ahora se une a [Adobe Experience Cloud para Sanidad](https://business.adobe.com/solutions/industries/healthcare.html) conjunto de soluciones, que permite a los clientes ofrecer experiencias del paciente seguras y excepcionales a la vez que respetan las preferencias del consumidor.
 
