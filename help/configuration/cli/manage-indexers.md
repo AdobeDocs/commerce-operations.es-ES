@@ -2,9 +2,9 @@
 title: Administrar los indexadores
 description: Consulte ejemplos de cómo ver y administrar los indexadores de Commerce.
 exl-id: d2cd1399-231e-4c42-aa0c-c2ed5d7557a0
-source-git-commit: 41082413e24733dde34542a2c9cb3cabbfdd4a35
+source-git-commit: a8f845813971eb32053cc5b2e390883abf3a104e
 workflow-type: tm+mt
-source-wordcount: '690'
+source-wordcount: '955'
 ht-degree: 0%
 
 ---
@@ -263,3 +263,51 @@ Index mode for Indexer Product Categories was changed from 'Update on Save' to '
 ```
 
 Los déclencheur de base de datos relacionados con los indexadores se agregan cuando el modo de indexador se establece en `schedule` y se quita cuando el modo del indexador está configurado en `realtime`. Si faltan los déclencheur en la base de datos mientras los indexadores están configurados en `schedule`, cambie los indexadores a `realtime` y, a continuación, vuelva a cambiarlos por `schedule`. Esto restablece los déclencheur.
+
+### Establecer estado del indizador [!BADGE 2.4.7-beta]{type=Informative url="/help/release/release-notes/commerce/2-4-7.md" tooltip="Disponible solo en la versión beta 2.4.7"}
+
+Este comando permite a los administradores modificar el estado operativo de uno o más indexadores, optimizando el rendimiento del sistema durante operaciones extensas como importaciones de datos, actualizaciones o mantenimiento.
+
+Sintaxis del comando:
+
+```bash
+bin/magento indexer:set-status {invalid|suspended|valid} [indexer]
+```
+
+Donde:
+
+- `invalid`: marca los indexadores como obsoletos y provoca la reindexación en la siguiente ejecución de cron a menos que se suspendan.
+- `suspended`: detiene temporalmente las actualizaciones automáticas activadas por cron para los indexadores. Este estado se aplica tanto a los modos de tiempo real como a los de programación, lo que garantiza que las actualizaciones automáticas se detengan durante las operaciones intensivas.
+- `valid`: indica que los datos del indexador están actualizados y no es necesario volver a indexar.
+- `indexer`: es una lista de indexadores separados por espacios. Omitir `indexer` para configurar todos los indexadores del mismo modo.
+
+Por ejemplo, para suspender indexadores específicos, introduzca:
+
+```bash
+bin/magento indexer:set-status suspended catalog_category_product catalog_product_category
+```
+
+Resultado de muestra:
+
+```terminal
+Index status for Indexer 'Category Products' was changed from 'valid' to 'suspended'.
+Index status for Indexer 'Product Categories' was changed from 'valid' to 'suspended'.
+```
+
+#### Administración del estado del indexador suspendido
+
+Cuando un indizador está establecido en un `suspended` estado, afecta principalmente a la reindexación automática y a las actualizaciones de vistas materializadas. A continuación se muestra una breve descripción general:
+
+**Reindexación omitida**: la reindexación automática se omite para `suspended` los indexadores y cualquier indexador que comparta el mismo `shared_index`. Esto garantiza que los recursos del sistema se conserven al no reindexar los datos relacionados con los procesos suspendidos.
+
+**Actualizaciones de Vista Materializada Omitidas**: Similar a la reindexación, las actualizaciones de vistas materializadas relacionadas con `suspended` los indexadores o sus índices compartidos también se pausan. Esta acción reduce aún más la carga del sistema durante los períodos de suspensión.
+
+>[!INFO]
+>
+>El `indexer:reindex` El comando reindexa todos los indexadores, incluidos los marcados como `suspended`, por lo que resulta útil para las actualizaciones manuales cuando se pausan las automáticas.
+
+>[!IMPORTANT]
+>
+>Cambiar el estado de un indizador a `valid` de `suspended` o `invalid` requiere precaución. Esta acción puede provocar una degradación del rendimiento si se acumulan datos sin indexar.
+>
+>Es crucial asegurarse de que todos los datos estén indexados con precisión antes de actualizar manualmente el estado a `valid` para mantener el rendimiento del sistema y la integridad de los datos.
