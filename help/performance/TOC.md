@@ -3,9 +3,9 @@ user-guide-title: Prácticas recomendadas de rendimiento
 user-guide-description: Optimice el rendimiento de su implementación de producción de Adobe Commerce o Magento Open Source con nuestras recomendaciones.
 feature: Best Practices
 topic: Administration, Commerce, Development, Performance
-source-git-commit: ee69fcec4986fc85f93e336dc654a9bfff486d8b
+source-git-commit: cb843dbb3759d9ce5e94317ae977cfe8acfa4432
 workflow-type: tm+mt
-source-wordcount: '61'
+source-wordcount: '56'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 1%
 - [Prácticas recomendadas de configuración](configuration.md)
 - [Flujo de implementación](deployment-flow.md)
 - [Procesamiento de pedidos de alto rendimiento](high-throughput-order-processing.md)
-- Conceptos avanzados {#performance-best-practices}
+- Conceptos avanzados {#concepts}
    - [Configuración avanzada](advanced-setup.md)
    - [Avanzadas [!DNL JavaScript] agrupamiento](advanced-js-bundling.md)
    - [Servidor de aplicaciones para API de GraphQL](application-server.md)
