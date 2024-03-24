@@ -2,10 +2,10 @@
 user-guide-title: Guía de implementación
 user-guide-description: Obtenga información acerca de las estrategias para planificar e implementar un sitio de Adobe Commerce con éxito.
 mini-toc-levels: 3
-source-git-commit: fb449f0ee7d503d0c7ba60bf6bfbe3f528060606
+source-git-commit: 36a2a86cbafab1e4913573b1c8431524ba43dc6a
 workflow-type: tm+mt
-source-wordcount: '277'
-ht-degree: 11%
+source-wordcount: '257'
+ht-degree: 12%
 
 ---
 
@@ -32,10 +32,7 @@ ht-degree: 11%
    - [Responsabilidad y propiedad](planning/ownership.md)
    - [Gobernanza del proyecto](planning/governance.md)
 - Arquitectura e integraciones {#architecture}
-   - [Funcionalidades](architecture/capabilities.md)
-   - [Estrategia de integración](architecture/integration-strategy.md)
-   - [Estrategia de extensibilidad](architecture/extensibility-strategy.md)
-   - [Opciones de integración](architecture/integration-options.md)
+   - [Referencia empresarial](architecture/enterprise-blueprint.md)
    - Arquitectura de referencia global {#global-reference-architecture}
       - [Información general](architecture/global-reference/overview.md)
       - [Ejemplos](architecture/global-reference/examples.md)
@@ -43,13 +40,6 @@ ht-degree: 11%
          - [Información general](architecture/global-reference/composer/overview.md)
          - [Estructura del proyecto](architecture/global-reference/composer/project-structure.md)
          - [Sugerencias y trucos](architecture/global-reference/composer/tips-and-tricks.md)
-   - Comercio sin encabezado {#headless}
-      - [Ventajas](architecture/headless/benefits.md)
-      - [Recorrido a sin encabezado](architecture/headless/journey-to-headless.md)
-      - [Microservicios](architecture/headless/microservices.md)
-      - [Evolución de sin encabezado](architecture/headless/evolution.md)
-      - [Arquitectura de tienda emparejada](architecture/headless/legacy-storefront.md)
-      - [Arquitectura sin encabezado](architecture/headless/adobe-commerce.md)
 - Infraestructura e implementación {#infrastructure}
    - [Información general](infrastructure/overview.md)
    - Alojamiento propio {#self-hosting}

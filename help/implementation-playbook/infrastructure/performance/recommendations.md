@@ -4,9 +4,9 @@ description: Optimice el rendimiento de su implementación de Adobe Commerce sig
 exl-id: c5d62e23-be43-4eea-afdb-bb1b156848f9
 feature: Cloud
 topic: Performance
-source-git-commit: 31c71af854a59381c7793f26ed9b121cd9bcac83
+source-git-commit: 8b09d734d8ac4490cd88af5673acd0a41b6cdf66
 workflow-type: tm+mt
-source-wordcount: '1279'
+source-wordcount: '1282'
 ht-degree: 0%
 
 ---
@@ -122,7 +122,7 @@ Aparte de las recomendaciones comunes de optimización de la infraestructura men
 
 ### Arquitectura sin encabezado
 
-Hay una sección separada dedicada a [acéfalo](../../architecture/headless/adobe-commerce.md). En resumen, separa la capa de tienda de la propia plataforma. Sigue siendo el mismo servidor, pero Adobe Commerce ya no procesa solicitudes directamente y, en su lugar, solo admite tiendas personalizadas a través de la API de GraphQL.
+Hay una sección separada dedicada a [acéfalo](../../architecture/enterprise-blueprint.md#headless-storefront). En resumen, separa la capa de tienda de la propia plataforma. Sigue siendo el mismo servidor, pero Adobe Commerce ya no procesa solicitudes directamente y, en su lugar, solo admite tiendas personalizadas a través de la API de GraphQL.
 
 ### Mantener Adobe Commerce actualizado
 
