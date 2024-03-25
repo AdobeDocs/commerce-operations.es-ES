@@ -2,13 +2,13 @@
 title: Arquitectura de referencia empresarial
 description: Aprenda a implementar Adobe Commerce utilizando la tecnología de comercio componible más reciente de Adobe.
 feature: App Builder, Cloud, GraphQL, Integration, Paas, Saas
-source-git-commit: 96afb0ccf5ea872cb42320babfd04ba51fa7dbf6
+exl-id: d066ab43-20e2-4e0b-8348-0c52d6a7ac8a
+source-git-commit: 8eab688ed98eb1b9fcf4fc25f90fe2bbf99c02d6
 workflow-type: tm+mt
 source-wordcount: '799'
 ht-degree: 0%
 
 ---
-
 
 # Arquitectura de referencia empresarial de Adobe Commerce
 
@@ -78,3 +78,4 @@ Adobe proporciona un completo conjunto de servicios de comercialización intelig
 El comercio sin encabezado es un comercio con prioridad de API. Adobe Commerce no tiene encabezado con una arquitectura disociada que proporciona todos los servicios y datos de comercio a través de una capa de API de GraphQL. Esta arquitectura permite a los equipos desarrollar sus front-end de forma independiente de la aplicación principal, lo que proporciona la agilidad para crear y probar rápidamente nuevos puntos de contacto con tecnologías emergentes.
 
 Adobe proporciona una tecnología moderna de tienda sin encabezado que incluye las mismas ventajas y capacidades que ofrece [Edge Delivery Services](https://www.aem.live/home) con la creación basada en documentos, una arquitectura que da prioridad al rendimiento y la experimentación nativa predeterminada. Utiliza la escala y el rendimiento de Adobe Commerce [servicios de tienda](#storefront-services) y la flexibilidad y comodidad de [componentes integrados](https://experienceleague.adobe.com/developer/commerce/storefront/) para ofrecer funcionalidades de comercio.
+
