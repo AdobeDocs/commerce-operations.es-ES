@@ -3,14 +3,18 @@ title: Guía de instalación
 description: Utilice esta guía para instalar [!DNL Site-Wide Analysis Tool] para su sitio web
 exl-id: ba36dc74-806d-49c5-b4d1-ba53ed4076fb
 feature: Configuration, Install
-source-git-commit: 163d12b1f30a3098932c62e11f24784422002c67
+source-git-commit: 2501630bdbeb9a80c247fd39dcbe57c327b3244d
 workflow-type: tm+mt
-source-wordcount: '1176'
+source-wordcount: '1136'
 ht-degree: 0%
 
 ---
 
 # Guía de instalación
+
+>[!IMPORTANT]
+>
+>Efectivo el 23 de abril de 2024, la [!DNL Site-Wide Analysis Tool] se retirará del mercado para todos los clientes locales de Adobe Commerce.
 
 El [!DNL Site-Wide Analysis Tool] proporciona monitorización del rendimiento, informes y recomendaciones en tiempo real las 24 horas del día, los 7 días de la semana, para garantizar la seguridad y la operabilidad de Adobe Commerce en las instalaciones de infraestructura en la nube. También proporciona información detallada sobre los parches disponibles e instalados, las extensiones de terceros y la instalación de Adobe Commerce.
 
@@ -90,7 +94,7 @@ Si ha instalado la extensión de y la ha configurado con una clave de API existe
    >
    > Si tiene problemas para acceder a su cuenta, consulte [No se puede iniciar sesión en la asistencia de Adobe Commerce o en la cuenta de la nube](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/unable-to-log-in-to-support-or-cloud-project.html) para obtener ayuda sobre solución de problemas.
 
-1. Haga clic **[!UICONTROL API Portal]**.
+1. Clic **[!UICONTROL API Portal]**.
 
 1. Clic **[!UICONTROL Delete]** junto a la clave de API existente.
 
