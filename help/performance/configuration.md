@@ -3,9 +3,9 @@ title: Prácticas recomendadas de configuración
 description: Optimizar el tiempo de respuesta de la implementación de Adobe Commerce o Magento Open Source mediante estas prácticas recomendadas.
 feature: Best Practices, Configuration
 exl-id: 4cb0f5e7-49d5-4343-a8c7-b8e351170f91
-source-git-commit: 5a49aff28f1a7c87cd6135ca19b4436da41cbb1b
+source-git-commit: 602a1ef82fcb8d30ff027db0fe0aacb981c7e08e
 workflow-type: tm+mt
-source-wordcount: '1437'
+source-wordcount: '1425'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ Puede haber momentos en que las ventas intensivas en una tienda ocurren al mismo
 >
 >El **[!UICONTROL Developer]** Las pestañas y opciones de solo están disponibles en [Modo de desarrollador](../configuration/cli/set-mode.md). [Adobe Commerce en la infraestructura en la nube](https://devdocs.magento.com/cloud/requirements/cloud-requirements.html#cloud-req-test) no admite `Developer` modo.
 
-## Guardado de configuración asíncrona [!BADGE 2.4.7-beta]{type=Informative url="/help/release/release-notes/commerce/2-4-7.md" tooltip="Disponible solo en la versión beta 2.4.7"}
+## Guardado de configuración asíncrona
 
 Para los proyectos con un gran número de configuraciones en el nivel de almacén, guardar una configuración de almacén puede llevar una cantidad excesiva de tiempo o provocar un tiempo de espera. El _Configuración asincrónica_ Este módulo habilita los ahorros de configuración asincrónica ejecutando un trabajo cron que utiliza un consumidor para procesar el guardado en una cola de mensajes. AsyncConfig es **inhabilitado** de forma predeterminada.
 

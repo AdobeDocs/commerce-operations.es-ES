@@ -1,10 +1,10 @@
 ---
 title: Administrar la caché
-description: Administrar tipos de caché y ver su estado.
+description: Administre los tipos de caché y vea el estado de la caché desde la línea de comandos mediante la CLI de Commerce
 exl-id: bbd76c00-727b-412e-a8e5-1e013a83a29a
-source-git-commit: 6e0e7f209b265e5b924e0092fec020e0cefc165d
+source-git-commit: 1070291396144f866cadd5e42ebca3e77a484a9b
 workflow-type: tm+mt
-source-wordcount: '941'
+source-wordcount: '616'
 ht-degree: 0%
 
 ---
@@ -15,29 +15,17 @@ ht-degree: 0%
 
 ## Tipos de caché
 
-Commerce tiene los siguientes tipos de caché:
+Puede utilizar el sistema de administración de caché de Adobe Commerce para mejorar el rendimiento del sitio. En este tema se explica cómo los administradores de sistema o los desarrolladores con acceso al servidor de aplicaciones de Commerce pueden administrar las cachés desde la línea de comandos.
 
-| Nombre &quot;descriptivo&quot; del tipo de caché | Nombre de código de tipo de caché | Descripción |
-|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Configuración | config | Commerce recopila la configuración de todos los módulos, la combina y guarda el resultado combinado en la caché. Esta caché también contiene la configuración específica del almacén almacenada en el sistema de archivos y en la base de datos. Limpie o vacíe este tipo de caché después de modificar los archivos de configuración. |
-| Diseño | layout | Diseños de página compilados (es decir, los componentes de diseño de todos los componentes). Limpie o vacíe este tipo de caché después de modificar los archivos de diseño. |
-| Bloquear salida del HTML | block_html | Fragmentos de página del HTML por bloque. Limpie o vacíe este tipo de caché después de modificar la capa de visualización. |
-| Datos de colecciones | colecciones | Resultados de consultas de base de datos. Si es necesario, Commerce limpia esta caché automáticamente, pero los desarrolladores de terceros pueden colocar cualquier dato en cualquier segmento de la caché. Limpie o vacíe este tipo de caché si el módulo personalizado utiliza una lógica que genere entradas de caché que Commerce no pueda limpiar. |
-| DDL | db_ddl | Esquema de base de datos. Si es necesario, Commerce limpia esta caché automáticamente, pero los desarrolladores de terceros pueden colocar cualquier dato en cualquier segmento de la caché. Limpie o vacíe este tipo de caché después de realizar cambios personalizados en el esquema de la base de datos. (En otras palabras, actualizaciones que Commerce no se hace a sí mismo). Una forma de actualizar el esquema de la base de datos automáticamente es utilizar `magento setup:db-schema:upgrade` comando. |
-| Configuración compilada | compilation_config | Configuración de compilación |
-| Valor de atributo de entidad (EAV) | alero | Metadatos relacionados con atributos EAV (por ejemplo: etiquetas de tienda, vínculos a código PHP relacionado, renderización de atributos, configuración de búsqueda, etc.). Normalmente, no es necesario limpiar ni vaciar este tipo de caché. |
-| Caché de página | full_page | Páginas de HTML generadas. Si es necesario, Commerce limpia esta caché automáticamente, pero los desarrolladores de terceros pueden colocar cualquier dato en cualquier segmento de la caché. Limpie o vacíe este tipo de caché después de modificar el nivel de código que afecta a la salida del HTML. Se recomienda mantener esta caché habilitada porque el HTML de almacenamiento en caché mejora significativamente el rendimiento. |
-| Reflexión | reflexión | Elimina una dependencia entre el módulo Webapi y el módulo Cliente. |
-| Traducciones | traducir | Después de combinar las traducciones de todos los módulos, la caché de la fusión se limpiará. |
-| Configuración de integración | config_integration | Integraciones compiladas. Limpie o vacíe esta caché después de cambiar o agregar integraciones. |
-| Configuración de API de integración | config_integration_api | Configuración de las API de integración compiladas de las integraciones de la tienda. |
-| Resultados de GraphQL Query Resolver [!BADGE 2.4.7-beta]{type=Informative url="/help/release/release-notes/commerce/2-4-7.md" tooltip="Disponible solo en versión 2.4.7-beta"} | graphql_query_resolver_result | Almacena en caché los resultados de las resoluciones de consultas de GraphQL para entidades de cliente, página CMS, bloque CMS y galería de medios de productos. Mantenga esta caché habilitada para mejorar el rendimiento de GraphQL. |
-| Configuración de servicios web | config_webservice | Almacenar en caché la estructura de la API web. |
-| Notificación al cliente | customer_notification | Notificaciones temporales que aparecen en la interfaz de usuario. |
+>[!NOTE]
+>
+>
+>Los administradores del sitio de Commerce pueden administrar la caché desde el Administrador mediante la herramienta Cache Management System (Sistema de administración de caché). Consulte [Administración de caché](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management) en el _Guía de sistemas de administración_.
+
 
 ## Ver el estado de la caché
 
-Para ver el estado de la caché, introduzca.
+Desde la línea de comandos del servidor de aplicaciones de Commerce, vea el estado de la caché mediante el `cache:status` Comando de CLI de Commerce.
 
 ```bash
    bin/magento cache:status
@@ -56,16 +44,23 @@ Current status:
                     reflection: 1
                         db_ddl: 1
                compiled_config: 1
+             webhooks_response: 1
                            eav: 1
          customer_notification: 1
-                     full_page: 1
+ graphql_query_resolver_result: 1
             config_integration: 1
         config_integration_api: 1
+                  admin_ui_sdk: 1
+                     full_page: 1
                    target_rule: 1
- graphql_query_resolver_result: 1
              config_webservice: 1
                      translate: 1
 ```
+
+>[!TIP]
+>
+>Para obtener una descripción detallada de los tipos de caché predeterminados admitidos por Adobe Commerce, consulte [Cachés](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management#caches) en el _Guía de sistemas de administración_.
+
 
 ## Habilitar o deshabilitar tipos de caché
 

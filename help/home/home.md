@@ -3,9 +3,9 @@ keywords: Adobe Commerce;inicio;temas populares
 title: Inicio
 description: Examine un índice de la administración del sistema de Adobe Commerce y la documentación operativa del producto.
 exl-id: 45ec4948-338f-4276-8a70-d0db720322d9
-source-git-commit: 2b1fa24471cda7cc01ef5fdafeedbec0315d68c7
+source-git-commit: c8093c4575eccc1d012da0e1502eb618c9b048e5
 workflow-type: tm+mt
-source-wordcount: '243'
+source-wordcount: '225'
 ht-degree: 18%
 
 ---
@@ -17,7 +17,7 @@ Obtenga información práctica sobre conceptos, procesos, herramientas y prácti
 <table>
 <tr>
   <td valign="top">
-    <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html">
+    <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/latest.html">
       <img alt="Información de versión" src="../assets/icons/promote.svg" width="40" height="40"/>
     </a>
     <div>
@@ -106,7 +106,7 @@ Obtenga información práctica sobre conceptos, procesos, herramientas y prácti
        <img alt="Operaciones" src="../assets/icons/refresh.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="../operational-playbook/overview.md"><strong>Manual operativo</strong></a>
+      <a href="../operational-playbook/overview.md"><strong>Guía de funcionamiento</strong></a>
       <p>Aprenda a preparar operacionalmente sus empresas para ejecutar un sitio de comercio electrónico exitoso.</p>
     </div>
   </td>
