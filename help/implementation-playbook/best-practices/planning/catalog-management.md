@@ -3,13 +3,13 @@ title: Prácticas recomendadas de administración de catálogos
 description: Conozca las recomendaciones para configurar los límites del carro de compras y los atributos del producto, enumerar la paginación, las opciones, las promociones y las variaciones.
 role: Developer
 feature: Best Practices, Catalog Management
-source-git-commit: a81e88a4293880ae90cd531ce60c5a2b177188f2
+exl-id: 9a672017-9122-4841-a67b-a183224b67dc
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '1420'
+source-wordcount: '1403'
 ht-degree: 0%
 
 ---
-
 
 # Prácticas recomendadas de administración de catálogos
 
@@ -25,7 +25,7 @@ Las prácticas recomendadas de administración del catálogo que se describen aq
 
 ## Límites del carro
 
-Para obtener el mejor rendimiento, utilice las siguientes directrices para administrar los límites del carro de compras para Adobe Commerce y Magento Open Source.
+Para obtener el mejor rendimiento, utilice las siguientes directrices para administrar los límites del carro de compras para Adobe Commerce.
 
 ### Productos y versiones afectados
 
@@ -262,4 +262,3 @@ Tener más del número máximo recomendado de reglas de precios de carro de comp
 - Se ha aumentado el tiempo para cargar y procesar la minicart.
 - Tiempo aumentado para procesar la página del carro de compras.
 - Mayor tiempo para procesar **Totales** en la página Cierre de compra.
-

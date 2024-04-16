@@ -1,11 +1,11 @@
 ---
 title: Configuración de la aplicación
-description: Obtenga información acerca de la configuración posterior a la instalación necesaria para las implementaciones locales de Adobe Commerce y Magento Open Source.
+description: Obtenga información acerca de la configuración posterior a la instalación necesaria para las implementaciones locales de Adobe Commerce.
 feature: Install, Configuration
 exl-id: b1808664-10ec-4147-8251-a99f8b58f4be
-source-git-commit: 40d850add2ef8c51e9192758135768306b163780
+source-git-commit: 35664c30e438305036d3cfdd1dd1924966f6ced6
 workflow-type: tm+mt
-source-wordcount: '730'
+source-wordcount: '671'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Ahora que ha terminado de instalar Adobe Commerce o Magento Open Source, debe co
 
 El programador de tareas de UNIX, cron, es fundamental para las operaciones diarias de la aplicación. Programa cosas como la reindexación, los boletines informativos, los correos electrónicos y los mapas del sitio. A *crontab* es una configuración de cron.
 
-Debe instalar Adobe Commerce y los servicios de Magento Open Source en *crontab*, o algunas funciones principales (y algunas extensiones de terceros) no funcionan correctamente.
+Debe instalar los servicios de Adobe Commerce en *crontab*, o algunas funciones principales (y algunas extensiones de terceros) no funcionan correctamente.
 
 Para obtener más información acerca de cron, incluido cómo quitar un crontab y ejecutar cron desde la línea de comandos, consulte [Configurar y ejecutar cron](../../configuration/cli/configure-cron-jobs.md).
 
@@ -79,7 +79,7 @@ Más información:
 
 ### Configurar un servidor de correo electrónico
 
-Adobe Commerce y Magento Open Source requieren un servidor de correo electrónico. No recomendamos un servidor en particular, pero puede probar cualquiera de los siguientes métodos:
+Adobe Commerce requiere un servidor de correo electrónico. No recomendamos un servidor en particular, pero puede probar cualquiera de los siguientes métodos:
 
 * Postfijo para CentOS ([Tutorial de Digital Ocean](https://www.digitalocean.com/community/tutorials/how-to-install-postfix-on-centos-6), [Documentación de CentOS](https://www.centos.org))
 * Postfijo para Ubuntu ([Tutorial de Digital Ocean](https://www.digitalocean.com/community/tutorials/how-to-install-and-setup-postfix-on-ubuntu-14-04), [Documentación de Ubuntu](https://help.ubuntu.com/community/MailServer))
@@ -92,7 +92,7 @@ Se requiere Elasticsearch o OpenSearch para todas las instalaciones a partir de 
 
 ### Configuración de una cola de mensajes
 
-Desde la versión 2.3.0, Adobe Commerce y Magento Open Source incluyen la funcionalidad de cola de mensajes. En versiones anteriores, solo está disponible para Adobe Commerce.
+Desde la versión 2.3.0, Adobe Commerce ha incluido la funcionalidad de cola de mensajes. En versiones anteriores, solo está disponible para Adobe Commerce.
 
 * [[!DNL RabbitMQ]](../../configuration/queues/message-queue-framework.md)
 

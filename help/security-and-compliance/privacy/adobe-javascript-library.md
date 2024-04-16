@@ -1,12 +1,12 @@
 ---
 title: Biblioteca JavaScript de privacidad de Adobe
-description: Aprenda a utilizar herramientas personalizadas para acceder a información personal de los clientes y eliminarla, recopilada por Adobe Commerce y Magento Open Source.
+description: Aprenda a utilizar herramientas personalizadas para acceder a información personal de los clientes y eliminarla, recopilada por Adobe Commerce.
 hide: true
 hidefromtoc: true
 exl-id: 5080e03b-0a83-405c-a232-b93311e284a3
-source-git-commit: 40d850add2ef8c51e9192758135768306b163780
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '338'
+source-wordcount: '300'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 El [Biblioteca JavaScript de privacidad de Adobe](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html) es un conjunto de herramientas que le ayudarán a crear un proceso para acceder a datos privados y eliminarlos.
 
-Los servicios de seguimiento de datos de Adobe Commerce y Magento Open Source pueden almacenar información privada aplicable a las normas de privacidad, como la [Reglamento General de Protección de Datos (RGPD)](gdpr.md) y [California Consumer Privacy Act (CCPA)](ccpa.md).
+Los servicios de seguimiento de datos de Adobe Commerce pueden almacenar información privada aplicable a las regulaciones de privacidad, como la [Reglamento General de Protección de Datos (RGPD)](gdpr.md) y [California Consumer Privacy Act (CCPA)](ccpa.md).
 
 Esta biblioteca proporciona un conjunto unificado de funciones para crear solicitudes de datos de privacidad, enviarlas a las implementaciones de cada producto y recopilar las respuestas. Utilice esta biblioteca para recuperar y eliminar los datos almacenados en el explorador por estos servicios de seguimiento de datos.
 
@@ -28,7 +28,7 @@ Utilice uno de los siguientes métodos para descargar el archivo de biblioteca:
 - npm: `npm install @adobe/adobe-privacy`
 - GitHub: [https://github.com/Adobe-Marketing-Cloud/adobe-privacy](https://github.com/Adobe-Marketing-Cloud/adobe-privacy)
 
-Una vez que tenga el archivo, deberá agregarlo a un módulo o tema personalizado instalado en la instancia de Adobe Commerce y Magento Open Source. Siga las instrucciones descritas en la [Usar JavaScript personalizado](https://developer.adobe.com/commerce/frontend-core/javascript/custom/) tema para realizar esta tarea.
+Una vez que tenga el archivo, deberá agregarlo a un módulo o tema personalizado instalado en la instancia de Adobe Commerce. Siga las instrucciones descritas en la [Usar JavaScript personalizado](https://developer.adobe.com/commerce/frontend-core/javascript/custom/) tema para realizar esta tarea.
 
 ## Uso
 

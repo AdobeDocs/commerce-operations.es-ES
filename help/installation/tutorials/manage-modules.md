@@ -2,9 +2,9 @@
 title: Habilitar o deshabilitar módulos
 description: Siga estos pasos para administrar los módulos de Adobe Commerce o de Magento Open Source.
 exl-id: 7155950a-a66a-4254-a71c-1a9aeab47606
-source-git-commit: 6e87d68df97adf47b5a61e8b6683ac11f600806c
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '584'
+source-wordcount: '576'
 ht-degree: 0%
 
 ---
@@ -78,7 +78,7 @@ bin/magento cache:clean
 
 ## Acerca de la activación y desactivación de módulos
 
-Adobe Commerce y Magento Open Source permiten habilitar o deshabilitar los módulos disponibles actualmente; es decir, cualquier módulo proporcionado por el Adobe o cualquier módulo de terceros disponible actualmente.
+Adobe Commerce le permite habilitar o deshabilitar los módulos disponibles actualmente; es decir, cualquier módulo proporcionado por el Adobe o cualquier módulo de terceros disponible actualmente.
 
 Algunos módulos dependen de otros módulos, en cuyo caso es posible que no pueda habilitar o deshabilitar un módulo porque depende de otros módulos.
 
@@ -92,7 +92,7 @@ Ejemplos:
 
 * El módulo A entra en conflicto con el módulo B. Puede desactivar el módulo A y el módulo B, o bien puede desactivar cualquiera de los módulos pero *no puede* habilite los módulos A y B al mismo tiempo.
 
-* Las dependencias se declaran en la `require` en el Magento Open Source de Adobe Commerce y `composer.json` para cada módulo. Los conflictos se declaran en la `conflict` en los módulos de `composer.json` archivos. Utilizamos esa información para construir un gráfico de dependencias: `A->B` significa que el módulo A depende del módulo B.
+* Las dependencias se declaran en la `require` en el Adobe Commerce `composer.json` para cada módulo. Los conflictos se declaran en la `conflict` en los módulos de `composer.json` archivos. Utilizamos esa información para construir un gráfico de dependencias: `A->B` significa que el módulo A depende del módulo B.
 
 * A *cadena de dependencia* es la ruta de un módulo a otro. Por ejemplo, si el módulo A depende del módulo B y el módulo B depende del módulo C, la cadena de dependencias es `A->B->C`.
 

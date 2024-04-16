@@ -1,16 +1,16 @@
 ---
-title: Proteja su sitio e infraestructura de Commerce.
+title: Proteja su sitio e infraestructura de Commerce
 description: Mantenga la seguridad implementando las prácticas recomendadas de seguridad al configurar y actualizar instalaciones de Adobe Commerce.
 feature: Best Practices
 exl-id: 50d8a464-6496-4e9a-b642-0c6d0eb51ba0
-source-git-commit: cbfd19efd9f489fefa16d93cbd8116eefb57a900
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '2008'
+source-wordcount: '2004'
 ht-degree: 0%
 
 ---
 
-# Proteja su sitio e infraestructura de Commerce.
+# Proteja su sitio e infraestructura de Commerce
 
 El establecimiento y mantenimiento de un entorno seguro para los proyectos de Adobe Commerce implementados en la infraestructura en la nube es una responsabilidad compartida entre los clientes de Adobe Commerce, los socios de soluciones y el Adobe. La intención de esta guía es proporcionar prácticas recomendadas para el cliente en la ecuación.
 
@@ -49,7 +49,7 @@ Cuando MFA está habilitado en un proyecto, todas las cuentas de infraestructura
 
 ![Lista de comprobación](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Actualice a la última versión de Adobe Commerce**
 
-Mantenga su código actualizado por [actualización del proyecto de Commerce a la última versión](#upgrade-to-the-latest-release) de Adobe Commerce, Commerce Services y extensiones, incluidos parches de seguridad, revisiones y otros parches proporcionados por Adobe.
+Mantenga su código actualizado por [actualizar el proyecto de Commerce a la última versión](#upgrade-to-the-latest-release) de Adobe Commerce, Commerce Services y extensiones, incluidos parches de seguridad, revisiones y otros parches proporcionados por Adobe.
 
 ![Lista de comprobación](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Valores de configuración confidenciales seguros**
 
@@ -59,7 +59,7 @@ El `lock config` y `lock env` Los comandos de CLI configuran variables de entorn
 
 ![Lista de comprobación](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Ejecutar análisis de seguridad**
 
-Utilice el [Servicio de análisis de Commerce Security](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-scan.html) para supervisar todos los sitios de Adobe Commerce y Magento Open Source en busca de riesgos de seguridad y malware conocidos, y regístrese para recibir actualizaciones de parches y notificaciones de seguridad.
+Utilice el [Servicio de análisis de seguridad de Commerce](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-scan.html) para supervisar todos los sitios de Adobe Commerce en busca de riesgos de seguridad y malware conocidos, y regístrese para recibir actualizaciones de parches y notificaciones de seguridad.
 
 ## Garantizar la seguridad de las extensiones y el código personalizado
 
@@ -67,13 +67,13 @@ Cuando amplíe Adobe Commerce agregando extensiones de terceros desde Adobe Comm
 
 ![Lista de comprobación](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Elija un socio o un integrador de soluciones (SI) con amplia experiencia en seguridad**: garantice integraciones seguras y la entrega segura del código personalizado seleccionando organizaciones que sigan prácticas de desarrollo seguras y que tengan un historial sólido de prevención y tratamiento de problemas de seguridad.
 
-![Lista de comprobación](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Uso de extensiones seguras**: identifique las extensiones más adecuadas y seguras para las implementaciones de Commerce consultando al integrador o desarrollador de soluciones y haciendo lo siguiente [Prácticas recomendadas de extensiones de Adobe](../planning/extensions.md).
+![Lista de comprobación](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Uso de extensiones seguras**: identifique las extensiones más apropiadas y seguras para implementaciones de Commerce consultando al integrador o desarrollador de soluciones y haciendo lo siguiente [Prácticas recomendadas de extensiones de Adobe](../planning/extensions.md).
 
 - Solo extensiones de origen de Adobe Commerce Marketplace o a través del integrador de soluciones. Si la extensión se obtiene a través de un integrador, asegúrese de que la propiedad de la licencia de extensión sea transferible, en caso de que el integrador cambie.
 
 - Reduzca la exposición al riesgo limitando el número de extensiones y proveedores.
 
-- Si es posible, revise el código de extensión para la seguridad antes de integrarlo con la aplicación de Commerce.
+- Si es posible, revise el código de extensión para comprobar la seguridad antes de integrarlo con la aplicación de Commerce.
 
 - Asegúrese de que los desarrolladores de extensiones de PHP sigan las directrices de desarrollo, los procesos y las prácticas recomendadas de seguridad de Adobe Commerce. Específicamente, los desarrolladores deben evitar el uso de funcionalidades de PHP que pueden llevar a la ejecución de código remoto o a una criptografía débil. Consulte [Seguridad](https://developer.adobe.com/commerce/php/best-practices/security/) en el *Guía de prácticas recomendadas para desarrolladores de extensiones*.
 
@@ -99,9 +99,9 @@ Consulte los siguientes recursos para obtener información sobre las versiones d
 
 ## Desarrollar un plan de recuperación ante desastres
 
-Si su sitio de Commerce se ve comprometido, controle los daños y restaure rápidamente las operaciones comerciales normales mediante el desarrollo y la implementación de un plan de recuperación ante desastres integral.
+Si su sitio de Commerce está comprometido, controle los daños y restaure rápidamente las operaciones normales de la empresa mediante el desarrollo y la implementación de un plan de recuperación ante desastres integral.
 
-Si un cliente requiere la restauración de una instancia de Commerce debido a un desastre, el Adobe puede proporcionar al cliente archivos de copia de seguridad. El cliente y el integrador de soluciones, si corresponde, pueden realizar la restauración.
+Si un cliente necesita restaurar una instancia de Commerce debido a un desastre, el Adobe puede proporcionarle archivos de copia de seguridad. El cliente y el integrador de soluciones, si corresponde, pueden realizar la restauración.
 
 Como parte de un plan de recuperación ante desastres, Adobe recomienda encarecidamente a los clientes que [exportar la configuración de la aplicación de Adobe Commerce](../../../configuration/cli/export-configuration.md) para facilitar la reimplementación si es necesario por motivos de continuidad del negocio. El motivo principal para exportar la configuración al sistema de archivos es que la configuración del sistema tiene prioridad sobre la configuración de la base de datos. En un sistema de archivos de solo lectura, la aplicación debe volver a implementarse para cambiar los ajustes de configuración confidenciales, lo que proporciona una capa adicional de protección.
 
@@ -137,7 +137,7 @@ Las instalaciones de Adobe Commerce implementadas en la infraestructura de la nu
 
 ![Lista de comprobación](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Configurar la configuración avanzada de seguridad de contraseñas**: configure contraseñas seguras y cámbielas al menos cada 90 días, según lo recomendado por el estándar de seguridad de datos PCI en la sección 8.2.4. Consulte [Configuración de seguridad de administración](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-admin.html).
 
-![Lista de comprobación](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Utilizar HTTPS**: si el sitio de Commerce se ha implementado recientemente, inicie todo el sitio utilizando HTTPS. Google no solo utiliza HTTPS como factor de clasificación, sino que muchos usuarios ni siquiera consideran comprar en un sitio a menos que esté protegido con HTTPS.
+![Lista de comprobación](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Utilizar HTTPS**: si el sitio de Commerce está recién implementado, inicie todo el sitio utilizando HTTPS. Google no solo utiliza HTTPS como factor de clasificación, sino que muchos usuarios ni siquiera consideran comprar en un sitio a menos que esté protegido con HTTPS.
 
 ## Protect contra malware
 
@@ -160,11 +160,11 @@ Después de que se producen determinadas acciones, como que un usuario envíe un
 
 ### Conocer los ataques más comunes
 
-A continuación se muestra una lista de categorías comunes de ataques de los que el Adobe recomienda que todos los clientes de Commerce sean conscientes y tomen medidas para protegerse:
+A continuación se muestra una lista de categorías comunes de ataques que el Adobe recomienda que todos los clientes de Commerce tengan en cuenta y tomen medidas de protección contra:
 
 - **Desfiguración del sitio**: un atacante daña un sitio web al cambiar el aspecto visual del sitio o al añadir sus propios mensajes. Aunque el acceso al sitio y a las cuentas de usuario se ha visto comprometido, la información de pago a menudo sigue siendo segura.
 
-- **Botnets**: el servidor de comercio del cliente pasa a formar parte de una botnet que envía correos electrónicos no deseados. Aunque los datos de usuario no suelen estar en peligro, el nombre de dominio del cliente puede verse incluido en la lista de bloqueados por filtros de correo no deseado, lo que impide la entrega de cualquier correo electrónico desde el dominio. Alternativamente, el sitio del cliente pasa a formar parte de una botnet y provoca un ataque de denegación de servicio (DDoS) distribuido en otro sitio o sitios. La botnet puede bloquear el tráfico IP entrante al servidor de Commerce, lo que impide que los clientes puedan realizar compras.
+- **Botnets**: el servidor Commerce del cliente pasa a formar parte de una botnet que envía correos electrónicos no deseados. Aunque los datos de usuario no suelen estar en peligro, el nombre de dominio del cliente puede verse incluido en la lista de bloqueados por filtros de correo no deseado, lo que impide la entrega de cualquier correo electrónico desde el dominio. Alternativamente, el sitio del cliente pasa a formar parte de una botnet y provoca un ataque de denegación de servicio (DDoS) distribuido en otro sitio o sitios. La botnet puede bloquear el tráfico IP entrante al servidor de Commerce, lo que impide que los clientes puedan realizar compras.
 
 - **Ataques directos al servidor**: los datos se ven comprometidos, las puertas traseras y el malware se instalan y las operaciones del sitio se ven afectadas. La información de pago que no se almacena en el servidor tiene menos probabilidades de verse comprometida a través de estos ataques.
 
@@ -176,7 +176,7 @@ A continuación se muestra una lista de categorías comunes de ataques de los qu
 
 Los ataques de adivinación de contraseña por fuerza bruta pueden resultar en acceso no autorizado del administrador. Protect Proteja su sitio frente a estos ataques siguiendo estas prácticas recomendadas:
 
-- Identifique y proteja todos los puntos donde se pueda acceder a la instalación de Commerce desde el mundo exterior.
+- Identifique y proteja todos los puntos desde donde se pueda acceder a la instalación de Commerce desde el mundo exterior.
 
   Puede proteger el acceso al administrador, que generalmente requiere la mayor protección, siguiendo el Adobe de [recomendaciones prioritarias](#priority-recommendations) al configurar el proyecto de Commerce.
 

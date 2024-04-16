@@ -1,10 +1,10 @@
 ---
 title: Instalación local avanzada
-description: Obtenga información acerca de los escenarios de instalación avanzada para Adobe Commerce o Magento Open Source en la infraestructura de su propiedad.
+description: Obtenga información acerca de los escenarios de instalación avanzada de Adobe Commerce en la infraestructura de su propiedad.
 exl-id: e16e750a-e068-4a63-8ad9-62043e2a8231
-source-git-commit: c9e7a8926c7003d34a62d2defb62c09d58919ddd
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '2383'
+source-wordcount: '2375'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## Interfaz de línea de comandos (CLI)
 
-Adobe Commerce y Magento Open Source tienen una sola interfaz de línea de comandos para las tareas de instalación y configuración: `<magento_root>/bin/magento`. La interfaz realiza varias tareas, entre las que se incluyen:
+Adobe Commerce tiene una interfaz de línea de comandos única para las tareas de instalación y configuración: `<magento_root>/bin/magento`. La interfaz realiza varias tareas, entre las que se incluyen:
 
 * Instalación (y tareas relacionadas como crear o actualizar el esquema de la base de datos, crear la configuración de implementación).
 * Borrando la caché.

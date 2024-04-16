@@ -2,9 +2,9 @@
 title: Referencia de información personal del cliente (versión 1.x)
 description: Obtenga información sobre las asignaciones de entidades de flujo de datos y base de datos para la información personal del cliente en Magento 1.x.
 exl-id: 8b01418d-8ca1-48fc-9577-a324ed3109d1
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '606'
+source-wordcount: '715'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Este es uno de una serie de temas para ayudar a Adobe Commerce y a los comerciantes y desarrolladores Magento Open Source a prepararse para cumplir con las regulaciones de privacidad. Consulte con su asesor legal para determinar si su empresa debe cumplir con alguna obligación legal y cómo debe hacerlo.
+>Este es uno de una serie de temas para ayudar a los comerciantes y desarrolladores de Adobe Commerce a prepararse para el cumplimiento de las normas de privacidad. Consulte con su asesor legal para determinar si su empresa debe cumplir con alguna obligación legal y cómo debe hacerlo.
 
 Utilice los siguientes diagramas de flujo de datos y asignaciones de entidades de base de datos como referencia al desarrollar programas de cumplimiento de regulaciones de privacidad como:
 
@@ -32,7 +32,7 @@ Un usuario puede introducir información sobre el cliente, la dirección y el pa
 
 ### Puntos de acceso a datos de front-end
 
-Commerce carga la información del cliente cuando este inicia sesión y visualiza varias páginas o cierres de compra diferentes.
+Commerce carga la información del cliente cuando este inicia sesión y ve varias páginas o cierres de compra diferentes.
 
 ![Puntos de acceso a datos de front-end](../../assets/security-compliance/frontend-data-access-points.svg)
 

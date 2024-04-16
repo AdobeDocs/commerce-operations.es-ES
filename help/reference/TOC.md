@@ -1,10 +1,10 @@
 ---
 user-guide-title: Referencia de herramientas de la línea de comandos
-user-guide-description: Obtenga información acerca de todos los comandos, argumentos y opciones disponibles para las herramientas de línea de comandos de Adobe Commerce y Magento Open Source.
+user-guide-description: Obtenga información acerca de todos los comandos, argumentos y opciones disponibles para las herramientas de línea de comandos de Adobe Commerce.
 feature: Configuration
-source-git-commit: 3ac6f1bfd88a142a0f5913a5f4090c91159c0e46
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '37'
+source-wordcount: '33'
 ht-degree: 0%
 
 ---

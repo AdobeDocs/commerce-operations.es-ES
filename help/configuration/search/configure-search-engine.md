@@ -1,18 +1,18 @@
 ---
 title: Configuración del motor de búsqueda
-description: Configure un motor de búsqueda para implementaciones locales de Adobe Commerce y Magento Open Source.
+description: Configure un motor de búsqueda para implementaciones locales de Adobe Commerce.
 feature: Configuration, Search
 exl-id: 61fbe0c2-bdd5-4f57-a518-23e180401804
-source-git-commit: 789b7d9dc400b1f669de0067a59e2036c2977a19
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '652'
+source-wordcount: '643'
 ht-degree: 0%
 
 ---
 
 # Configuración del motor de búsqueda
 
-En esta sección se analiza la configuración mínima que debe elegir para probar Elasticsearch o OpenSearch con implementaciones locales de Adobe Commerce y Magento Open Source.
+En esta sección se analiza la configuración mínima que debe elegir para probar Elasticsearch o OpenSearch con implementaciones locales de Adobe Commerce.
 
 >[!TIP]
 >
@@ -43,7 +43,7 @@ Para configurar el sistema para que utilice Elasticsearch u OpenSearch:
    | **[!UICONTROL Enable HTTP Auth]** | Clic **[!UICONTROL Yes]** solo si ha habilitado la autenticación para el servidor del motor de búsqueda. Si es así, proporcione un nombre de usuario y una contraseña en los campos proporcionados. |
    | **[!UICONTROL Server Timeout]** | Especifique la cantidad de tiempo (en segundos) de espera al intentar establecer una conexión con el Elasticsearch o el servidor de OpenSearch. |
 
-1. Haga clic **[!UICONTROL Test Connection]**.
+1. Clic **[!UICONTROL Test Connection]**.
 
    Respuesta de ejemplo:
 
@@ -61,7 +61,7 @@ Para configurar el sistema para que utilice Elasticsearch u OpenSearch:
 Si es así, intente lo siguiente:
 
 - Asegúrese de que el servidor del motor de búsqueda se esté ejecutando.
-- Si el servidor está en un host diferente de Commerce, inicie sesión en el servidor de Commerce y haga ping en el host del motor de búsqueda. Resuelva los problemas de conectividad de red y vuelva a probar la conexión.
+- Si el servidor se encuentra en un host diferente al de Commerce, inicie sesión en el servidor de Commerce y haga ping en el host del motor de búsqueda. Resuelva los problemas de conectividad de red y vuelva a probar la conexión.
 - Examine la ventana de comandos en la que inició Elasticsearch o OpenSearch para buscar los seguimientos de pila y las excepciones. Debe resolverlos antes de continuar. En particular, asegúrese de iniciar el motor de búsqueda como usuario con `root` privilegios.
 - Asegúrese de que [Firewall de UNIX y SELinux](../../installation/prerequisites/search-engine/overview.md#firewall-and-selinux) están desactivadas o configure reglas para permitir que el motor de búsqueda y Commerce se comuniquen entre sí.
 - Compruebe el valor del **[!UICONTROL Server Hostname]** field. Asegúrese de que el servidor esté disponible. En su lugar, puede probar la dirección IP del servidor.
@@ -95,7 +95,7 @@ Para limpiar la caché mediante la línea de comandos: [`bin/magento cache:clean
 
 Para reindexar con la línea de comandos:
 
-1. Inicie sesión en su servidor de Commerce como, o cambie a, la [propietario del sistema de archivos](../../installation/prerequisites/file-system/overview.md).
+1. Inicie sesión en el servidor de Commerce como o cambie a [propietario del sistema de archivos](../../installation/prerequisites/file-system/overview.md).
 1. Introduzca cualquiera de los siguientes comandos:
 
    Introduzca el siguiente comando para reindexar solo el índice de búsqueda del catálogo:

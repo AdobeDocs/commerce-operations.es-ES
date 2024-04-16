@@ -3,19 +3,18 @@ title: Uso
 description: Aprenda a utilizar el [!DNL Quality Patches Tool].
 exl-id: f9ad37e9-2d0f-4bc8-a98b-6d60b6f56d42
 feature: Configuration, Install
-source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '910'
+source-wordcount: '869'
 ht-degree: 0%
 
 ---
 
 # Uso
 
-El [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) ofrece parches individuales desarrollados por Adobe y la comunidad de Magento Open Source. Permite aplicar, revertir y ver información general sobre todos los parches individuales que están disponibles para la versión instalada de Adobe Commerce o Magento Open Source. Puede aplicar parches a proyectos de Adobe Commerce y de Magento Open Source independientemente de quién lo haya desarrollado. Por ejemplo, puede aplicar un parche desarrollado por la comunidad a proyectos de Adobe Commerce.
+El [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) ofrece parches individuales desarrollados por Adobe y la comunidad de Magento Open Source. Permite aplicar, revertir y ver información general sobre todos los parches individuales que están disponibles para la versión instalada de Adobe Commerce o Magento Open Source. Puede aplicar parches a proyectos de Adobe Commerce independientemente de quién lo haya desarrollado. Por ejemplo, puede aplicar un parche desarrollado por la comunidad a proyectos de Adobe Commerce.
 
-
-Ver esto [vídeo técnico](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/tools/quality-patch-tool.html?lang=en) y aprenda a utilizar la herramienta Parches de calidad para Adobe Commerce y Magento Open Source.
+Ver esto [vídeo técnico](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/tools/quality-patch-tool.html?lang=en) y aprenda a utilizar la herramienta Parches de calidad para Adobe Commerce.
 
 >[!INFO]
 >
@@ -62,7 +61,7 @@ Adobe Commerce 2.3.5.
 La tabla de estado incluye:
 
 - **Tipo**:
-   - `Optional` — Todos los parches del [!DNL Quality Patches Tool] y el [Guía de Commerce en Cloud Infrastructure > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) son opcionales para las instalaciones de Adobe Commerce y Magento Open Source.
+   - `Optional` — Todos los parches del [!DNL Quality Patches Tool] y el [Guía de Commerce en la infraestructura de la nube > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) son opcionales para las instalaciones de Adobe Commerce.
    - `Deprecated` — el Adobe ha desaprobado el parche individual. Si ha aplicado el parche, le recomendamos que lo revierta. La operación de reversión también elimina el parche de la tabla de estado.
 
 - **Estado**:

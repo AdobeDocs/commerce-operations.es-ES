@@ -1,11 +1,11 @@
 ---
 user-guide-title: Guía de instalación
-user-guide-description: Obtenga información sobre cómo instalar Adobe Commerce y Magento Open Source para implementaciones locales.
+user-guide-description: Obtenga información sobre cómo instalar Adobe Commerce para implementaciones locales.
 feature: Install
-source-git-commit: 68c4cfc29735d2ea296f579ed0a0ff52db3fdd9f
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '178'
-ht-degree: 3%
+source-wordcount: '169'
+ht-degree: 2%
 
 ---
 
@@ -47,7 +47,7 @@ ht-degree: 3%
       - [Descargar paquetes de Compositor](sample-data/composer-packages.md)
       - [Clonar repositorios Git](sample-data/git-repositories.md)
       - [Eliminación o actualización de módulos](sample-data/remove-or-update.md)
-- Tutoriales {#tutorials}
+- Tutorials {#tutorials}
    - [Realizar una copia de seguridad y una reversión del sistema de archivos, medios y base de datos](tutorials/backup.md)
    - [Comprobar el estado de la base de datos](tutorials/database-status.md)
    - [Configuración del comportamiento del consumidor de mensajes](tutorials/message-consumers.md)
@@ -60,7 +60,7 @@ ht-degree: 3%
    - [Habilitar o deshabilitar el modo de mantenimiento](tutorials/maintenance-mode.md)
    - [Habilitar o deshabilitar módulos](tutorials/manage-modules.md)
    - [Instalación de una extensión](tutorials/extensions.md)
-   - [Instalar Commerce](tutorials/install.md)
+   - [Instalación de Commerce](tutorials/install.md)
    - [Modifique docroot para mejorar la seguridad](tutorials/docroot.md)
    - [Desinstalación de paquetes de idioma](tutorials/language-packages.md)
    - [Desinstalación de módulos](tutorials/uninstall-modules.md)

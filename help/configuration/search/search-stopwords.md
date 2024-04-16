@@ -3,9 +3,9 @@ title: Configurar palabras de parada de búsqueda
 description: Obtenga información sobre cómo administrar palabras de detención para Adobe Commerce mediante archivos CSV.
 feature: Configuration, Search
 exl-id: 75320868-9939-4a6e-8dbb-73ca68c9f0ee
-source-git-commit: 789b7d9dc400b1f669de0067a59e2036c2977a19
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '652'
+source-wordcount: '616'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ En general, _palabras de parada_ son palabras comunes que los motores de búsque
 
 Aunque hoy tenemos más almacenamiento, el rendimiento sigue siendo importante. Elasticsearch y OpenSearch, al igual que otros motores de búsqueda, siguen utilizando palabras de detención para mejorar el rendimiento.
 
-Debe administrar las palabras de detención mediante archivos CSV ubicados en la variable `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords` o el `<magento_root>/app/code/Magento/Elasticsearch/etc/stopwords/` , en función de cómo haya instalado el software Commerce.
+Debe administrar las palabras de detención mediante archivos CSV ubicados en la variable `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords` o el `<magento_root>/app/code/Magento/Elasticsearch/etc/stopwords/` , en función de cómo haya instalado el software de Commerce.
 
 Para obtener más información sobre cómo Elasticsearch y OpenSearch utilizan palabras de parada, consulte los siguientes recursos:
 
@@ -27,7 +27,7 @@ Para obtener más información sobre cómo Elasticsearch y OpenSearch utilizan p
 
 ## Configurar palabras de parada
 
-Las palabras de parada se encuentran en `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords` directorio. Adobe Commerce y Magento Open Source se envían con un archivo CSV que contiene palabras de parada para las configuraciones regionales predeterminadas y un archivo adicional, `stopwords.csv`, que tiene palabras de parada para cualquier configuración regional que no esté representada por otro archivo CSV.
+Las palabras de parada se encuentran en `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords` directorio. Adobe Commerce se envía con un archivo CSV que contiene palabras de parada para las configuraciones regionales predeterminadas y un archivo adicional, `stopwords.csv`, que tiene palabras de parada para cualquier configuración regional que no esté representada por otro archivo CSV.
 
 La duración predeterminada de la caché del archivo de palabras de parada es de 15 minutos.
 
@@ -35,7 +35,7 @@ La duración predeterminada de la caché del archivo de palabras de parada es de
 
 **Para editar palabras de detención**:
 
-1. Inicie sesión en el servidor de Commerce o cambie a, [propietario del sistema de archivos](../../installation/prerequisites/file-system/overview.md).
+1. Inicie sesión en el servidor de Commerce o cambie a la [propietario del sistema de archivos](../../installation/prerequisites/file-system/overview.md).
 1. Use un editor de texto para abrir un archivo de palabra de detención en `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords` directorio.
 
    Los archivos CSV utilizan la convención de nombres `stopwords_<locale_code>.csv`. Por ejemplo, el nombre del archivo de palabras de detención en alemán es `stopwords_de_DE.csv`.
@@ -61,7 +61,7 @@ La duración predeterminada de la caché del archivo de palabras de parada es de
 
 **Para agregar palabras de parada para una configuración regional**:
 
-1. Inicie sesión en el servidor de Commerce o cambie a, [propietario del sistema de archivos](../../installation/prerequisites/file-system/overview.md).
+1. Inicie sesión en el servidor de Commerce o cambie a la [propietario del sistema de archivos](../../installation/prerequisites/file-system/overview.md).
 
 1. Utilice un editor de texto para crear un archivo de palabras de detención denominado `stopwords_<locale_code>.csv` en el `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords` directorio.
 
@@ -102,7 +102,7 @@ En esta sección se explica cómo cambiar de forma opcional el directorio de pal
 - `<magento_root>/vendor/magento/module-elasticsearch/etc/stopwords`
 - `<magento_root>/app/code/Magento/Elasticsearch/etc/stopwords/`
 
-La ubicación depende de cómo haya instalado el software Commerce. Si ha clonado el repositorio de GitHub de Magento 2, la ruta se encuentra en `app/code`. Si ha instalado un archivo comprimido o un metapaquete, la ruta se encuentra en `vendor`.
+La ubicación depende de cómo haya instalado el software de Commerce. Si ha clonado el repositorio de GitHub de Magento 2, la ruta se encuentra en `app/code`. Si ha instalado un archivo comprimido o un metapaquete, la ruta se encuentra en `vendor`.
 
 **Para cambiar el directorio**:
 

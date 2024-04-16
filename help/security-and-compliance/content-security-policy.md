@@ -2,16 +2,16 @@
 title: Información general sobre política de seguridad de contenido
 description: Aprenda a mejorar la postura de seguridad de su tienda de Adobe Commerce o Magento Open Source mediante una política de seguridad de contenido.
 exl-id: 81070a09-5f8f-48b1-b542-1443dbd43f5f
-source-git-commit: 8bb692518536f5e7403ed308328e6532c020a230
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '501'
+source-wordcount: '497'
 ht-degree: 0%
 
 ---
 
 # Información general sobre política de seguridad de contenido
 
-Una política de seguridad de contenido (CSP) puede proporcionar capas adicionales de defensa para las instalaciones de Adobe Commerce y Magento Open Source al ayudar a detectar y mitigar los ataques de inyección de datos relacionados y los scripts entre sitios (XSS). Este vector de ataque común funciona mediante la inyección de contenido malicioso que afirma falsamente originarse desde el sitio web. Una vez cargado y ejecutado el contenido malicioso, puede iniciar la transferencia no autorizada de datos.
+Una política de seguridad de contenido (CSP) puede proporcionar capas adicionales de defensa para las instalaciones de Adobe Commerce al ayudar a detectar y mitigar los ataques de inyección de datos relacionados y los scripts entre sitios (XSS). Este vector de ataque común funciona mediante la inyección de contenido malicioso que afirma falsamente originarse desde el sitio web. Una vez cargado y ejecutado el contenido malicioso, puede iniciar la transferencia no autorizada de datos.
 
 CSP proporciona un conjunto estandarizado de directivas que indican al explorador en qué recursos de contenido se puede confiar y cuáles se deben bloquear. Mediante directivas cuidadosamente definidas, el CSP puede restringir el contenido del explorador para permitir que solo aparezcan los recursos en la lista blanca.
 

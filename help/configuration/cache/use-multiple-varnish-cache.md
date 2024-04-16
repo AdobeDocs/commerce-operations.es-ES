@@ -3,18 +3,18 @@ title: Borrado de caché con varias instancias de barniz
 description: Descubra cómo funciona la limpieza de caché con varias instancias de Barniz.
 feature: Configuration, Cache
 exl-id: 289a4e54-9e73-454c-bfb9-e78e405af56c
-source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '179'
+source-wordcount: '176'
 ht-degree: 1%
 
 ---
 
 # Caché que borra varias instancias de Varnish
 
-Adobe Commerce y Magento Open Source admiten varias instancias de Barniz listas para usarse.
+Adobe Commerce admite varias instancias de Barniz de forma predeterminada.
 
-Este tema muestra los conceptos básicos para configurar varias instancias de Varnish con Commerce.
+En este tema se muestran los conceptos básicos para configurar varias instancias de Varnish con Commerce.
 
 ## Configuración para depurar varias instancias de Barniz
 
@@ -30,7 +30,7 @@ Por ejemplo,
 bin/magento setup:config:set --http-cache-hosts=192.0.2.100,192.0.2.155:8080
 ```
 
-A continuación, puede purgar todos los hosts de Varnish al actualizar la caché de Commerce (también denominada _limpieza_ la caché) en Admin o mediante la línea de comandos.
+A continuación, puede purgar todos los hosts de Barniz al actualizar la caché de Commerce (también denominada _limpieza_ la caché) en Admin o mediante la línea de comandos.
 
 Para actualizar la caché con el administrador, haga clic en **SISTEMA** > Herramientas > **Administración de caché**, luego haga clic en **Vaciar caché del Magento** en la parte superior de la página. (También puede actualizar tipos de caché individuales).
 

@@ -1,18 +1,18 @@
 ---
 title: Requisitos previos del motor de búsqueda
-description: Siga estos pasos para instalar y configurar el software de motor de búsqueda admitido para las instalaciones locales de Adobe Commerce y Magento Open Source.
+description: Siga estos pasos para instalar y configurar el software de motor de búsqueda compatible para las instalaciones locales de Adobe Commerce.
 feature: Install, Search
 exl-id: 44ea638a-7200-4269-be1b-b0851de2c4f4
-source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '786'
+source-wordcount: '723'
 ht-degree: 0%
 
 ---
 
 # Requisitos previos del motor de búsqueda
 
-A partir de Adobe Commerce y Magento Open Source 2.4, todas las instalaciones deben configurarse para utilizar [Elasticsearch](https://www.elastic.co) o [OpenSearch](https://opensearch.org/) como solución de búsqueda en el catálogo.
+A partir de Adobe Commerce 2.4, todas las instalaciones deben configurarse para utilizar [Elasticsearch](https://www.elastic.co) o [OpenSearch](https://opensearch.org/) como solución de búsqueda en el catálogo.
 
 >[!NOTE]
 >
@@ -39,13 +39,13 @@ Las siguientes tareas suponen que ha configurado el sistema según el diagrama s
 
 El diagrama anterior muestra:
 
-* La aplicación Commerce y el motor de búsqueda están instalados en hosts diferentes.
+* La aplicación de Commerce y el motor de búsqueda están instalados en hosts diferentes.
 
   La ejecución en hosts independientes requiere el funcionamiento del proxy. (La agrupación en clúster del motor de búsqueda excede el ámbito de esta guía, pero puede encontrar más información en la sección [Documentación de clúster de Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/guide/current/distributed-cluster.html).)
 
 * Cada host tiene su propio servidor web; los servidores web no tienen por qué ser iguales.
 
-  Por ejemplo, la aplicación Commerce puede ejecutar Apache y el motor de búsqueda puede ejecutar nginx.
+  Por ejemplo, la aplicación de Commerce puede ejecutar Apache y el motor de búsqueda puede ejecutar nginx.
 
 * Ambos servidores web utilizan Transport Layer Security (TLS).
 

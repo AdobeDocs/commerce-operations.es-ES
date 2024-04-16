@@ -1,17 +1,17 @@
 ---
 title: Arquitectura de referencia
-description: Revise los diagramas de la arquitectura de referencia recomendada para las implementaciones de Adobe Commerce y Magento Open Source.
+description: Revise los diagramas de la arquitectura de referencia recomendada para las implementaciones de Adobe Commerce.
 exl-id: 85a6d3d6-f47f-4806-97bd-fa7a73605f4c
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '426'
+source-wordcount: '414'
 ht-degree: 0%
 
 ---
 
 # Arquitectura de referencia
 
-En este tema se describe una configuración genérica recomendada para Adobe Commerce e instancias de Magento Open Source que utilizan servidores simples alojados físicamente en un centro de datos (no virtualizado) en el que los recursos no se comparten con otros usuarios. Su proveedor de alojamiento, especialmente si se especializa en alojamiento de alto rendimiento comercial, puede recomendarle una configuración diferente que sea igual o más eficaz para sus necesidades.
+En este tema se describe una configuración recomendada genérica para instancias de Adobe Commerce que utilizan servidores simples alojados físicamente en un centro de datos (no virtualizado) en el que los recursos no se comparten con otros usuarios. Su proveedor de alojamiento, especialmente si se especializa en alojamiento de alto rendimiento de Commerce, puede recomendarle una configuración diferente que sea igual o más eficaz para sus necesidades.
 
 Para conocer Adobe Commerce sobre entornos de infraestructura en la nube, consulte [Arquitectura de inicio](https://devdocs.magento.com/cloud/architecture/starter-architecture.html).
 
@@ -25,9 +25,9 @@ El color de cada elemento del diagrama indica si el elemento forma parte de Mage
 * Los elementos grises son opcionales para Magento Open Source
 * Los elementos azules son opcionales para Adobe Commerce
 
-![Diagrama de arquitectura de referencia comercial](../assets/performance/images/ref-architecture-2.3.png)
+![Diagrama de arquitectura de referencia de Commerce](../assets/performance/images/ref-architecture-2.3.png)
 
-Las secciones siguientes proporcionan recomendaciones y consideraciones para cada sección del diagrama de arquitectura de referencia comercial.
+En las siguientes secciones se proporcionan recomendaciones y consideraciones para cada sección del diagrama de arquitectura de referencia de Commerce.
 
 ### [!DNL Varnish]
 

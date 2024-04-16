@@ -2,9 +2,9 @@
 title: Instalación de Adobe Commerce
 description: Siga estos pasos para instalar Adobe Commerce o Magento Open Source en la infraestructura de su propiedad.
 exl-id: 25f3c56e-0654-4f8b-a69d-f4152f68aca3
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '2106'
+source-wordcount: '2102'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ Puede ejecutar el instalador varias veces con diferentes opciones para completar
 
 >[!NOTE]
 >
->De forma predeterminada, el instalador no sobrescribe la base de datos si instala el software Commerce en la misma instancia de base de datos. Puede utilizar el opcional `cleanup-database` para cambiar este comportamiento.
+>De forma predeterminada, el instalador no sobrescribe la base de datos si instala el software de Commerce en la misma instancia de base de datos. Puede utilizar el opcional `cleanup-database` para cambiar este comportamiento.
 
 Consulte también [Actualizar, reinstalar, desinstalar](uninstall.md).
 
@@ -97,7 +97,7 @@ En la versión 2.2.8 y posteriores de Adobe Commerce, puede crear el usuario adm
 | `--db-name` | Nombre de la instancia de base de datos en la que desea instalar las tablas de base de datos.<br><br>El valor predeterminado es `magento2`. | Sí |
 | `--db-user` | Nombre de usuario del propietario de la instancia de base de datos.<br><br>El valor predeterminado es `root`. | Sí |
 | `--db-password` | Contraseña del propietario de la instancia de base de datos. | Sí |
-| `--db-prefix` | Utilícelo únicamente si va a instalar las tablas de base de datos en una instancia de base de datos que ya contiene tablas de Adobe Commerce o de Magento Open Source.<br><br>En ese caso, utilice un prefijo para identificar las tablas de esta instalación. Algunos clientes tienen más de una instancia de Adobe Commerce y Magento Open Source ejecutándose en un servidor con todas las tablas de la misma base de datos.<br><br>El prefijo puede tener una longitud máxima de cinco caracteres. Debe comenzar por una letra y solo puede incluir letras, números y caracteres de subrayado.<br><br>Esta opción permite a estos clientes compartir el servidor de base de datos con más de una instalación. | No |
+| `--db-prefix` | Utilícelo únicamente si va a instalar las tablas de base de datos en una instancia de base de datos que ya contiene tablas de Adobe Commerce o de Magento Open Source.<br><br>En ese caso, utilice un prefijo para identificar las tablas de esta instalación. Algunos clientes tienen más de una instancia de Adobe Commerce ejecutándose en un servidor con todas las tablas de la misma base de datos.<br><br>El prefijo puede tener una longitud máxima de cinco caracteres. Debe comenzar por una letra y solo puede incluir letras, números y caracteres de subrayado.<br><br>Esta opción permite a estos clientes compartir el servidor de base de datos con más de una instalación. | No |
 | `--db-ssl-key` | Ruta a la clave de cliente. | No |
 | `--db-ssl-cert` | Ruta al certificado de cliente. | No |
 | `--db-ssl-ca` | Ruta al certificado del servidor. | No |

@@ -3,16 +3,16 @@ title: Modifique docroot para mejorar la seguridad
 description: Impida el acceso no autorizado basado en explorador a Adobe Commerce o al sistema de archivos local de Magento Open Source.
 feature: Install, Security
 exl-id: aabe148d-00c8-4011-a629-aa5abfa6c682
-source-git-commit: 32dd5005422b98923ce1bdf6c3fb3f55c2ec15bd
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '586'
+source-wordcount: '585'
 ht-degree: 0%
 
 ---
 
 # Modifique docroot para mejorar la seguridad
 
-En una instalación estándar con un servidor web Apache, Adobe Commerce y Magento Open Source se instalan en la raíz web predeterminada: `/var/www/html/magento2`.
+En una instalación estándar con un servidor web Apache, Adobe Commerce se instala en la raíz web predeterminada: `/var/www/html/magento2`.
 
 El `magento2/` El directorio contiene lo siguiente:
 

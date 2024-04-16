@@ -1,10 +1,10 @@
 ---
 title: Configurar una conexión de base de datos MySQL remota
-description: Siga estos pasos para configurar una conexión de base de datos remota para instalaciones locales de Adobe Commerce y Magento Open Source.
+description: Siga estos pasos para configurar una conexión de base de datos remota para instalaciones locales de Adobe Commerce.
 exl-id: 5fe304bd-ff38-4066-a1fd-8937575e4de4
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '743'
+source-wordcount: '716'
 ht-degree: 0%
 
 ---
@@ -13,13 +13,13 @@ ht-degree: 0%
 
 A veces puede que desee alojar la base de datos en un servidor independiente en lugar de ejecutar el servidor de base de datos y el servidor web en el mismo equipo.
 
-El Adobe ha proporcionado una forma de conectarse a un servidor MySQL en un equipo diferente. A partir de Adobe Commerce y Magento Open Source 2.4.3, también puede configurar la aplicación para que utilice una base de datos de Amazon Web Service (AWS) Aurora sin cambios de código.
+El Adobe ha proporcionado una forma de conectarse a un servidor MySQL en un equipo diferente. A partir de Adobe Commerce 2.4.3, también puede configurar la aplicación para que utilice una base de datos de Amazon Web Service (AWS) Aurora sin cambios de código.
 
 Aurora es un servidor MySQL totalmente compatible y de alto rendimiento alojado en AWS.
 
 ## Conexión a una base de datos de AWS Aurora
 
-Usar Aurora como base de datos es tan fácil como especificar la base de datos en la configuración de configuración normal de Adobe Commerce y Magento Open Source, utilizando el conector de base de datos predeterminado.
+Usar Aurora como base de datos es tan fácil como especificar la base de datos en la configuración de configuración normal de Adobe Commerce, utilizando el conector de base de datos predeterminado.
 
 Al ejecutar `bin/magento setup:install`, use la información de Aurora en el `db-` campos:
 

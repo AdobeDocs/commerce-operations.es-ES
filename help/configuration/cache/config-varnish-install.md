@@ -3,9 +3,9 @@ title: Instalar barniz
 description: Consulte los consejos sobre la instalación de Barnish.
 feature: Configuration, Cache
 exl-id: e1881a85-3965-42d9-a46f-c2f5f20fbacc
-source-git-commit: ec3ab7e3c6c3835e73653b0d4f74aadc861016d3
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '162'
+source-wordcount: '158'
 ht-degree: 0%
 
 ---
@@ -32,4 +32,4 @@ Abra un terminal e introduzca el siguiente comando para mostrar la versión de B
 varnishd -V
 ```
 
-Asegúrese de que [Compatibilidad con Adobe Commerce y Magento Open Source](../../installation/system-requirements.md) Seleccione la versión instalada de Varnish antes de continuar. Si está ejecutando una versión no compatible, debe actualizar a una versión compatible. Consulte la documentación de instalación de Varnish para obtener más información.
+Asegúrese de que [Adobe Commerce admite](../../installation/system-requirements.md) Seleccione la versión instalada de Varnish antes de continuar. Si está ejecutando una versión no compatible, debe actualizar a una versión compatible. Consulte la documentación de instalación de Varnish para obtener más información.

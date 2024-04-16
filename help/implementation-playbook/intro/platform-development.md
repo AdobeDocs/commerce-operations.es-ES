@@ -3,9 +3,9 @@ title: Principios del desarrollo de plataformas
 description: Comprender los principios fundamentales del desarrollo de plataformas al trabajar con Adobe Commerce.
 exl-id: 3d822a8c-0e81-4a80-a820-46cf2702e0bf
 feature: Cloud
-source-git-commit: 3c1a49c2dc3dc0d3d47e16c724d4099b6a456c77
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '219'
+source-wordcount: '206'
 ht-degree: 0%
 
 ---
@@ -30,4 +30,4 @@ Al igual que cualquier proyecto de TI de gran tamaño, Adobe Commerce se basa en
 
 ## Adobe Commerce en la infraestructura en la nube
 
-Adobe Commerce en la infraestructura en la nube es una plataforma de alojamiento automatizada y administrada para el software de Adobe Commerce. Adobe Commerce en la infraestructura en la nube incluye varias funciones que lo diferencian de las implementaciones locales de Adobe Commerce y Magento Open Source. Consulte la [Guía de Cloud](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/overview.html).
+Adobe Commerce en la infraestructura en la nube es una plataforma de alojamiento automatizada y administrada para el software de Adobe Commerce. Adobe Commerce en la infraestructura en la nube incluye varias funciones que lo diferencian de las implementaciones locales de Adobe Commerce. Consulte la [Guía de Cloud](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/overview.html).

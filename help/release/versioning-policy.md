@@ -2,16 +2,16 @@
 title: Directiva de versión
 description: Obtenga información acerca de los distintos tipos de versiones de Adobe Commerce, incluidos los parches menores, los parches, los parches de seguridad, las funciones, las revisiones, los parches individuales y los parches personalizados.
 exl-id: 61a83de6-6a7b-4a88-8fff-1638b4fe472a
-source-git-commit: 9a74f87e0da5a7f11cd0930c8265556d80e3d1de
+source-git-commit: f7db6b65d74c605976a3a338c98eebda2dc46a43
 workflow-type: tm+mt
-source-wordcount: '832'
+source-wordcount: '799'
 ht-degree: 0%
 
 ---
 
 # directiva de versión de Adobe Commerce
 
-Uso de Adobe Commerce y Magento Open Source [versiones semánticas](https://semver.org/) en el nivel de módulo individual (por ejemplo, `magento/framework 101.1.1`), pero no para el número de versión de marketing. Por ejemplo:
+Adobe Commerce utiliza [versiones semánticas](https://semver.org/) en el nivel de módulo individual (por ejemplo, `magento/framework 101.1.1`), pero no para el número de versión de marketing. Por ejemplo:
 
 - **Versión principal**—2
 - **Versión secundaria**—2,4

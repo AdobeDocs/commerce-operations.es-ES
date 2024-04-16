@@ -2,20 +2,20 @@
 title: Instalación de una extensión
 description: Siga estos pasos para instalar una extensión de Adobe Commerce o Magento Open Source.
 exl-id: b564662a-2e5f-4fa9-bae1-ca7498478fa9
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '645'
+source-wordcount: '635'
 ht-degree: 0%
 
 ---
 
 # Instalación de una extensión
 
-El código que amplía o personaliza el comportamiento de Adobe Commerce y de los Magento Open Source se denomina extensión. Si lo desea, puede empaquetar y distribuir extensiones en [Commerce Marketplace](https://marketplace.magento.com) u otro sistema de distribución de extensiones.
+El código que amplía o personaliza el comportamiento de Adobe Commerce se denomina extensión. Si lo desea, puede empaquetar y distribuir extensiones en [Commerce Marketplace](https://marketplace.magento.com) u otro sistema de distribución de extensiones.
 
 Las extensiones incluyen:
 
-- Módulos (ampliación de las funciones de Adobe Commerce y Magento Open Source)
+- Módulos (ampliación de las funciones de Adobe Commerce)
 - Temas (cambia la apariencia de tu tienda y administrador)
 - Paquetes de idioma (localice la tienda y el administrador)
 

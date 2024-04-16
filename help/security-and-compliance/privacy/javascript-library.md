@@ -1,10 +1,10 @@
 ---
 title: Biblioteca JavaScript de privacidad
-description: Aprenda a utilizar herramientas personalizadas para acceder a información personal de los clientes y eliminarla, recopilada por Adobe Commerce y Magento Open Source.
+description: Aprenda a utilizar herramientas personalizadas para acceder a información personal de los clientes y eliminarla, recopilada por Adobe Commerce.
 exl-id: bcfea656-2cf0-48ae-9049-d91679166d05
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '298'
+source-wordcount: '274'
 ht-degree: 0%
 
 ---
@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # Biblioteca JavaScript de privacidad
 
-La biblioteca JavaScript de privacidad es un conjunto de herramientas que ayudan a crear un proceso para acceder y eliminar datos privados recopilados por Adobe Commerce y Magento Open Source.
+La biblioteca JavaScript de privacidad es un conjunto de herramientas que le ayudarán a crear un proceso para acceder a datos privados recopilados por Adobe Commerce y eliminarlos.
 
 Los servicios de seguimiento de datos de Commerce pueden almacenar información privada aplicable a las regulaciones de privacidad, como la [Reglamento General de Protección de Datos (RGPD)](gdpr.md) y [California Consumer Privacy Act (CCPA)](ccpa.md).
 
-Esta biblioteca proporciona un conjunto de funciones para crear solicitudes de datos de privacidad y recopilar sus respuestas. Utilice esta biblioteca para recuperar y eliminar los datos almacenados en el explorador por Adobe Commerce y los servicios de seguimiento de datos de Magento Open Source.
+Esta biblioteca proporciona un conjunto de funciones para crear solicitudes de datos de privacidad y recopilar sus respuestas. Utilice esta biblioteca para recuperar y eliminar los datos almacenados en el explorador por los servicios de seguimiento de datos de Adobe Commerce.
 
 >[!NOTE]
 >

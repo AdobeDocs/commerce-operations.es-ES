@@ -1,12 +1,12 @@
 ---
 title: Prácticas recomendadas de lista de comprobación de actualización
-description: Obtenga información sobre cómo crear y utilizar una lista de comprobación de actualización para planificar su estrategia de actualización de Adobe Commerce y Magento Open Source.
+description: Obtenga información sobre cómo crear y utilizar una lista de comprobación de actualización para planificar su estrategia de actualización de Adobe Commerce.
 role: Leader
 feature: Best Practices
 exl-id: c9b644fa-290c-4f33-b5a7-19f7122ff08e
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '498'
+source-wordcount: '511'
 ht-degree: 0%
 
 ---

@@ -1,11 +1,11 @@
 ---
 title: Configurar almacenamiento en caché
-description: Obtenga información sobre el almacenamiento en caché y cómo configurarlo para la aplicación de Adobe Commerce y de Magento Open Source.
+description: Obtenga información sobre el almacenamiento en caché y cómo configurar los mecanismos de caché para la aplicación de Adobe Commerce.
 feature: Configuration, Cache
 exl-id: 6effa069-c043-411a-b161-01210be17391
-source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '245'
+source-wordcount: '203'
 ht-degree: 0%
 
 ---

@@ -1,11 +1,11 @@
 ---
 title: Descripción general de la seguridad
-description: Lea una breve descripción general de la configuración de seguridad de la aplicación Adobe Commerce y Magento Open Source.
+description: Lea una breve descripción general de la configuración de seguridad de la aplicación Adobe Commerce.
 feature: Configuration, Security
 exl-id: e596d03f-8428-4ad7-a563-8b7f371ed5b4
-source-git-commit: 56a2461edea2799a9d569bd486f995b0fe5b5947
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '184'
+source-wordcount: '154'
 ht-degree: 0%
 
 ---
@@ -16,9 +16,9 @@ La sección Seguridad incluye la configuración de las funciones relacionadas co
 
 ## Recursos de seguridad
 
-Los temas de la sección Seguridad de la guía de Configuración no son completos en todas las funciones de Commerce. Existen muchos temas importantes relacionados con la seguridad en otras guías de Commerce, como:
+Los temas de la sección Seguridad de la guía de configuración no son completos en todas las funciones de Commerce. Hay muchos temas importantes relacionados con la seguridad en otras guías de Commerce, como:
 
-- [Guía para desarrolladores de PHP](https://developer.adobe.com/commerce/php/development/security/) para obtener información que los desarrolladores de Adobe Commerce y de Magento Open Source pueden utilizar para mejorar la seguridad de los componentes que crean.
+- [Guía para desarrolladores de PHP](https://developer.adobe.com/commerce/php/development/security/) para obtener información que los desarrolladores de Adobe Commerce pueden utilizar para mejorar la seguridad de los componentes que crean.
 - [Guía de seguridad y cumplimiento](https://devdocs.magento.com/security/security-and-compliance.html) para obtener información sobre la seguridad, la privacidad y el cumplimiento de las regulaciones, con vínculos a recursos técnicos.
 
 Varios temas relacionados con la seguridad que se incluían en la guía de configuración al mismo tiempo, ahora se encuentran en las siguientes guías:

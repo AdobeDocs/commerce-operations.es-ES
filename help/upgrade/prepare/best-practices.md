@@ -1,18 +1,18 @@
 ---
 title: Prácticas recomendadas
-description: Utilice las prácticas recomendadas por el Adobe para administrar el proceso de actualización de los proyectos de Adobe Commerce y de Magento Open Source.
+description: Siga las prácticas recomendadas por el Adobe para administrar el proceso de actualización de sus proyectos de Adobe Commerce.
 feature: Upgrade, Best Practices
 exl-id: 53c505a3-8b99-4fc3-b1b4-f2f75208a51b
-source-git-commit: 012cba58b336b032b1c911539008c1fb961c2e07
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '1089'
+source-wordcount: '1055'
 ht-degree: 0%
 
 ---
 
 # Prácticas recomendadas para la actualización
 
-En este tema se enumeran las acciones que debe realizar para administrar la complejidad de actualizar proyectos de Adobe Commerce y de Magento Open Source. Su equipo debe pensar en las actualizaciones desde el momento en que comience el desarrollo del proyecto y continuar con cada versión. Si sigue estas prácticas recomendadas, el proceso de actualización será mucho más fácil, rápido y barato.
+En este tema se enumeran las acciones que debe realizar para administrar la complejidad de actualizar proyectos de Adobe Commerce. Su equipo debe pensar en las actualizaciones desde el momento en que comience el desarrollo del proyecto y continuar con cada versión. Si sigue estas prácticas recomendadas, el proceso de actualización será mucho más fácil, rápido y barato.
 
 >[!TIP]
 >

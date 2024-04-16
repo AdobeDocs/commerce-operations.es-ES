@@ -3,16 +3,16 @@ title: Limpieza de caché con barniz
 description: Aprenda cómo funciona la limpieza de caché con Varnish y cómo utilizarla como acelerador de almacenamiento en caché web para la aplicación de Adobe Commerce.
 feature: Configuration, Cache
 exl-id: 866da415-c428-4092-a045-c3079493cdc4
-source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '382'
+source-wordcount: '367'
 ht-degree: 0%
 
 ---
 
 # Limpieza de caché con barniz
 
-En este tema se tratan los conceptos básicos del uso de Varnish como acelerador de almacenamiento en caché web para Adobe Commerce y Magento Open Source.
+En este tema se tratan los conceptos básicos del uso de Varnish como acelerador de almacenamiento en caché web para Adobe Commerce.
 
 ## Depuración de barniz
 
@@ -20,7 +20,7 @@ Según [Documentación de barniz](https://www.varnish-cache.org/docs/trunk/users
 
 De hecho, cuando se limpia, vacía o actualiza la caché de Commerce, Varnish también se depura.
 
-Después de instalar y configurar Varnish para trabajar con Commerce, las siguientes acciones pueden resultar en una depuración de Varnish:
+Una vez instalado y configurado el barniz para que funcione con Commerce, las siguientes acciones pueden dar como resultado una depuración de barniz:
 
 - Mantener un sitio web.
 
@@ -40,7 +40,7 @@ Después de instalar y configurar Varnish para trabajar con Commerce, las siguie
 
   Debe actualizar la caché y también eliminar periódicamente todo lo que hay en la `generated/code` y `generated/metadata` directorios. Para obtener información sobre cómo actualizar la caché, consulte la siguiente sección.
 
-## Configurar Commerce para depurar Varnish
+## Configuración de Commerce para depurar Barniz
 
 Commerce purga los hosts de Varnish después de configurar los hosts de Varnish mediante el [`magento setup:config:set`](https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html#setupconfigset) comando.
 
@@ -54,7 +54,7 @@ Por ejemplo,
 bin/magento setup:config:set --http-cache-hosts=192.0.2.100,192.0.2.155:6081
 ```
 
-A continuación, puede purgar los hosts de Varnish al actualizar la caché de Commerce (también denominada *limpieza* la caché) en Admin o mediante la línea de comandos.
+A continuación, puede depurar Varnish hosts al actualizar la caché de Commerce (también denominada *limpieza* la caché) en Admin o mediante la línea de comandos.
 
 Para actualizar la caché con el administrador, haga clic en **[!UICONTROL SYSTEM]** > Herramientas > **Administración de caché**, luego haga clic en **Vaciar caché del Magento** en la parte superior de la página. (También puede actualizar tipos de caché individuales).
 

@@ -1,11 +1,11 @@
 ---
 title: Software Recommendations
-description: Revise la lista de software recomendado relacionado con el rendimiento óptimo de las implementaciones de Adobe Commerce y Magento Open Source.
+description: Revise la lista de software recomendado relacionado con el rendimiento óptimo de las implementaciones de Adobe Commerce.
 feature: Best Practices, Install
 exl-id: b091a733-7655-4e91-a988-93271872c5d5
-source-git-commit: 012cba58b336b032b1c911539008c1fb961c2e07
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '1415'
+source-wordcount: '1392'
 ht-degree: 0%
 
 ---
@@ -197,7 +197,7 @@ Se han realizado muchas mejoras en [!DNL MySQL] 5.7.9 Confiamos en que [!DNL MyS
 | Parámetro | Predeterminado | Descripción |
 |--- | --- | ---|
 | `innodb_buffer_pool_instances` | 8 | El valor predeterminado se establece en 8 para evitar problemas con varios subprocesos que intentan acceder a la misma instancia. |
-| `innodb_buffer_pool_size` | 128MB | En combinación con las instancias de grupo múltiples descritas anteriormente, esto significa una asignación de memoria predeterminada de 1024 MB. El tamaño total se divide entre todos los grupos de búferes. Para obtener la mejor eficiencia, especifique una combinación de `innodb_buffer_pool_instances` y `innodb_buffer_pool_size` de forma que cada instancia del grupo de búferes tenga al menos 1 GB. |
+| `innodb_buffer_pool_size` | 128 MB | En combinación con las instancias de grupo múltiples descritas anteriormente, esto significa una asignación de memoria predeterminada de 1024 MB. El tamaño total se divide entre todos los grupos de búferes. Para obtener la mejor eficiencia, especifique una combinación de `innodb_buffer_pool_instances` y `innodb_buffer_pool_size` de forma que cada instancia del grupo de búferes tenga al menos 1 GB. |
 | `max_connections` | 150 | El valor del `max_connections` Este parámetro debe correlacionarse con el número total de hilos PHP configurados en el servidor de aplicaciones. Una recomendación general sería 300 para un entorno pequeño y 1.000 para un medio ambiente mediano. |
 | `innodb_thread_concurrency` | 0 | El mejor valor para esta configuración debe calcularse con la fórmula: `innodb_thread_concurrency = 2 * (NumCPUs + NumDisks)` |
 

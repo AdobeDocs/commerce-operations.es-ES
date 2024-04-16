@@ -1,11 +1,11 @@
 ---
 title: Solución de rendimiento de base de datos dividida
-description: Obtenga información sobre la solución de base de datos dividida para Adobe Commerce y Magento Open Source.
+description: Obtenga información sobre la solución de base de datos dividida para Adobe Commerce.
 recommendations: noCatalog
 exl-id: 922a9af7-2c46-4bf3-b1ad-d966f5564ec0
-source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '623'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 {{deprecate-split-db}}
 
-Adobe Commerce ofrece varias ventajas de escalabilidad, incluida la capacidad de utilizar tres bases de datos maestras independientes para diferentes áreas funcionales de la aplicación Commerce.
+Adobe Commerce ofrece varias ventajas de escalabilidad, incluida la capacidad de utilizar tres bases de datos maestras independientes para diferentes áreas funcionales de la aplicación de Commerce.
 
 Los datos de cierres de compra, pedidos y productos pueden utilizar una base de datos maestra independiente que puede replicar de forma opcional. Esta separación puede escalar de forma independiente la carga de las cierres de compra de sitios web, las actividades de administración de pedidos, la navegación por sitios web y las actividades de comercialización, según sus necesidades. Estos cambios proporcionan una flexibilidad considerable en la forma de escalar el nivel de la base de datos.
 
@@ -62,7 +62,7 @@ Esto también significa que puede:
 
 - Configuración de la solución de base de datos dividida _antes_ poner Commerce en producción.
 
-  Adobe recomienda configurar las bases de datos divididas lo antes posible después de instalar el software Commerce.
+  El Adobe recomienda configurar las bases de datos divididas lo antes posible después de instalar el software de Commerce.
 
 - [Configurar manualmente](multi-master-manual.md) la solución split database.
 
@@ -74,11 +74,11 @@ Esto también significa que puede:
 
 ## Requisitos previos
 
-La base de datos dividida requiere que configure tres bases de datos maestras MySQL en cualquier host (las tres en el servidor de Commerce, cada base de datos en un servidor independiente, etc.). Estas son las _principal_ y se utilizan de la siguiente manera:
+La base de datos dividida requiere que configure tres bases de datos maestras MySQL en cualquier host (las tres en el servidor de Commerce, cada base de datos en un servidor separado, etc.). Estas son las _principal_ y se utilizan de la siguiente manera:
 
 - Una base de datos maestra para tablas de cierre
 - Una base de datos maestra para tablas de ventas (también denominada _Sistema de Order Management_, o _OMS_, tablas)
-- Una base de datos maestra para el resto de las tablas de la aplicación Commerce 2
+- Una base de datos maestra para el resto de las tablas de aplicación de Commerce 2
 
 Además, si lo desea, puede configurar cualquier número de _esclavo_ que sirven como equilibradores de carga y copias de seguridad.
 

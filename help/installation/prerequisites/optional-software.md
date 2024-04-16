@@ -1,10 +1,10 @@
 ---
 title: Software opcional
-description: Obtenga más información sobre el software opcional que puede instalar para admitir instalaciones locales de Adobe Commerce y Magento Open Source.
+description: Obtenga más información acerca del software opcional que puede instalar para admitir instalaciones locales de Adobe Commerce.
 exl-id: 533ff52b-3301-4624-b691-3dfddde6ce0b
-source-git-commit: 40d850add2ef8c51e9192758135768306b163780
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '637'
+source-wordcount: '605'
 ht-degree: 0%
 
 ---

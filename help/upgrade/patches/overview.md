@@ -1,10 +1,10 @@
 ---
 title: Cómo funcionan los parches
-description: Obtenga información sobre los distintos tipos de parches para Adobe Commerce y Magento Open Source y cómo funcionan.
+description: Obtenga información sobre los distintos tipos de parches para Adobe Commerce y cómo funcionan.
 exl-id: d7072ed4-7d51-41fe-881a-aae3b2000b55
-source-git-commit: 915cac8c8d436105c4ae25f95bcaefbe19cc50c1
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '607'
+source-wordcount: '537'
 ht-degree: 0%
 
 ---
@@ -96,4 +96,4 @@ Puede aplicar parches utilizando cualquiera de los siguientes métodos:
 
 >[!NOTE]
 >
->Para aplicar un parche a un proyecto de Adobe Commerce en la nube, consulte [Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) en el _Guía de Commerce en Cloud_.
+>Para aplicar un parche a un proyecto de Adobe Commerce en la nube, consulte [Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) en el _Guía de Commerce en la nube_.

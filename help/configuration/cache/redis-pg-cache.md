@@ -1,11 +1,11 @@
 ---
 title: Usar Redis para la caché predeterminada
-description: Aprenda a configurar Redis como la memoria caché predeterminada para Adobe Commerce y Magento Open Source.
+description: Aprenda a configurar Redis como la memoria caché predeterminada para Adobe Commerce.
 feature: Configuration, Cache
 exl-id: 8c097cfc-85d0-4e96-b56e-284fde40d459
-source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '1067'
+source-wordcount: '1069'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ bin/magento setup:config:set --cache-backend=redis --cache-backend-redis-server=
 
 ## Configurar el almacenamiento en caché de páginas Redis
 
-Para configurar el almacenamiento en caché de la página Redis en Commerce, ejecute el `setup:config:set` con parámetros adicionales.
+Para configurar el almacenamiento en caché de páginas de Redis en Commerce, ejecute el `setup:config:set` con parámetros adicionales.
 
 ```bash
 bin/magento setup:config:set --page-cache=redis --page-cache-redis-<parameter>=<value>...
@@ -104,7 +104,7 @@ Como resultado de los dos comandos de ejemplo, Commerce agrega líneas similares
 
 ## Uso de AWS ElastiCache con la instancia EC2
 
-A partir de Commerce 2.4.3, las instancias alojadas en Amazon EC2 pueden utilizar un AWS ElastiCache en lugar de una instancia local de Redis.
+A partir de Commerce 2.4.3, las instancias alojadas en Amazon EC2 pueden utilizar una AWS ElastiCache en lugar de una instancia local de Redis.
 
 >[!WARNING]
 >
@@ -132,7 +132,7 @@ Después [configuración de un clúster de Redis en AWS](https://aws.amazon.com/
      redis-cli -h <ElastiCache Primary Endpoint host> -p <ElastiCache Primary Endpoint port>
      ```
 
-### Configure Commerce para utilizar el clúster
+### Configuración de Commerce para utilizar el clúster
 
 Commerce admite varios tipos de configuraciones de almacenamiento en caché. Por lo general, las configuraciones de almacenamiento en caché se dividen entre front-end y back-end. El almacenamiento en caché de front-end se clasifica como `default`, se utiliza para cualquier tipo de caché. Puede personalizar o dividir en cachés de nivel inferior para lograr un mejor rendimiento. Una configuración común de Redis es separar la caché predeterminada y la caché de página en su propia base de datos de Redis (RDB).
 
@@ -144,7 +144,7 @@ Para configurar Commerce para Redis como almacenamiento en caché predeterminado
 bin/magento setup:config:set --cache-backend=redis --cache-backend-redis-server=<ElastiCache Primary Endpoint host> --cache-backend-redis-port=<ElastiCache Primary Endpoint port> --cache-backend-redis-db=0
 ```
 
-Para configurar Commerce para el almacenamiento en caché de la página Redis:
+Para configurar Commerce para el almacenamiento en caché de páginas de Redis:
 
 ```bash
 bin/magento setup:config:set --page-cache=redis --page-cache-redis-server=<ElastiCache Primary Endpoint host> --page-cache-redis-port=<ElastiCache Primary Endpoint port> --page-cache-redis-db=1
@@ -158,9 +158,9 @@ bin/magento setup:config:set --session-save=redis --session-save-redis-host=<Ela
 
 ### Verificar conectividad
 
-**Para verificar que Commerce está hablando con ElastiCache**:
+**Para comprobar que Commerce está hablando con ElastiCache**:
 
-1. Abra una conexión SSH a la instancia Commerce EC2.
+1. Abra una conexión SSH a la instancia de Commerce EC2.
 1. Inicie el monitor de Redis.
 
    ```bash
@@ -190,7 +190,7 @@ A partir de Commerce 2.3.5, se recomienda utilizar la implementación de caché 
 
 ## Función de precarga Redis
 
-Dado que Commerce almacena los datos de configuración en la caché de Redis, podemos cargar previamente datos que se reutilizan entre páginas. Para buscar las claves que deben precargarse, analice los datos que se transfieren de Redis a Commerce. Se recomienda cargar previamente los datos que se cargan en cada página, como `SYSTEM_DEFAULT`, `EAV_ENTITY_TYPES`, `DB_IS_UP_TO_DATE`.
+Dado que Commerce almacena datos de configuración en la caché de Redis, podemos cargar previamente datos que se reutilizan entre páginas. Para buscar las claves que deben cargarse previamente, analice los datos que se transfieren de Redis a Commerce. Se recomienda cargar previamente los datos que se cargan en cada página, como `SYSTEM_DEFAULT`, `EAV_ENTITY_TYPES`, `DB_IS_UP_TO_DATE`.
 
 Redis utiliza el `pipeline` para crear solicitudes de carga compuestas. Las claves deben incluir el prefijo de base de datos; por ejemplo, si el prefijo de base de datos es `061_`, la clave de precarga tiene este aspecto: `061_SYSTEM_DEFAULT`
 

@@ -1,10 +1,10 @@
 ---
 title: Propiedad de archivos y permisos
-description: Obtenga información acerca de la importancia de los permisos del sistema de archivos al trabajar con instalaciones locales de Adobe Commerce y Magento Open Source.
+description: Obtenga información acerca de la importancia de los permisos del sistema de archivos al trabajar con instalaciones locales de Adobe Commerce.
 exl-id: a84784bf-afd6-4dba-9745-3fefc0ecafcb
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '457'
+source-wordcount: '449'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ Para reforzar la seguridad, especialmente en un entorno de producción en un sis
 >
 >La seguridad del sistema de archivos es compleja e importante. Le recomendamos encarecidamente que consulte con un administrador de sistema o de red experimentado antes de decidir el nivel de permisos que desea establecer. Proporcionamos un mecanismo para que lo utilice, pero la creación de una estrategia de permisos es su responsabilidad.
 
-Adobe Commerce y Magento Open Source utilizan una máscara predeterminada de tres bits: `002`. Reste la máscara predeterminada de los valores predeterminados de UNIX de 666 para archivos y 777 para directorios.
+Adobe Commerce utiliza una máscara predeterminada de tres bits: `002`. Reste la máscara predeterminada de los valores predeterminados de UNIX de 666 para archivos y 777 para directorios.
 
 Por ejemplo:
 
@@ -53,7 +53,7 @@ Para obtener más información sobre la creación de un `magento_umask` archivo,
 
 ## Permisos, propiedad y modos de aplicación
 
-Se recomiendan diferentes permisos y propiedad cuando se utilizan los distintos modos de aplicación de Adobe Commerce y Magento Open Source:
+Se recomiendan diferentes permisos y propiedad al utilizar los diferentes modos de aplicación de Adobe Commerce:
 
 - Predeterminado
 - Desarrollador

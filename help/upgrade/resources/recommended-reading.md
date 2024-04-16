@@ -2,33 +2,33 @@
 title: Lectura recomendada para las actualizaciones
 description: Revise la lectura recomendada para planificar su actualización a Adobe Commerce.
 exl-id: 24ca57c0-1a68-46c4-b2fa-4a114250d0e3
-source-git-commit: 83ee645269b4fb0b63bb11f6d2255ef7fa52bc4f
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '383'
-ht-degree: 2%
+source-wordcount: '264'
+ht-degree: 4%
 
 ---
 
 # Lectura recomendada para planificar la actualización
 
-Siga aprendiendo sobre las actualizaciones de Adobe Commerce y Magento Open Source mediante los recursos de esta página.
+Siga aprendiendo sobre las actualizaciones de Adobe Commerce con los recursos de esta página.
 
 <table>
   <tbody>
     <tr>
       <td><strong>Notas y anuncios de la versión</strong>
-        <p>Obtenga información sobre los últimos desarrollos en Adobe Commerce y Magento Open Source, incluida la estrategia del producto, la seguridad, las correcciones de errores y los problemas conocidos.</p>
+        <p>Obtenga información sobre los últimos desarrollos en Adobe Commerce, incluida la estrategia del producto, la seguridad, las correcciones de errores y los problemas conocidos.</p>
           <ul>
             <li><a href="https://blog.adobe.com/">Blog de Adobe</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html">Adobe Help Center</a></li>
             <li><a href="https://helpx.adobe.com/security/security-bulletin.html">Boletín de seguridad del Adobe</a></li>
             <li><a href="https://community.magento.com/t5/Magento-DevBlog/bg-p/devblog">Devblog</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html">Notas de versión</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html">Notas de la versión</a></li>
             <li><a href="https://solutionpartners.adobe.com/solution-partners.html">Portal de socios de soluciones</a></li>
           </ul>
         </td>
       <td><strong>Herramientas</strong>
-        <p>Examine las herramientas diseñadas para facilitar la búsqueda y el uso del software de Adobe Commerce y Magento Open Source.</p>
+        <p>Examine las herramientas diseñadas para facilitar la búsqueda y el uso del software de Adobe Commerce.</p>
           <ul>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-learn/tutorials/uct-phpstorm.html">Actualizar complemento de compatibilidad de la herramienta PhpStorm</a> (vídeo)</li>
             <li><a href="../upgrade-compatibility-tool/overview.md">Actualizar herramienta de compatibilidad</a></li>
@@ -39,7 +39,7 @@ Siga aprendiendo sobre las actualizaciones de Adobe Commerce y Magento Open Sour
     </tr>
     <tr>
       <td><strong>Calendarios y directiva</strong>
-        <p>Revise los detalles sobre Adobe Commerce y las versiones y políticas de Magento Open Source.</p>
+        <p>Revise los detalles sobre las versiones y directivas de Adobe Commerce.</p>
           <ul>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/adobe-commerce-eos-policy-faq.html">Preguntas frecuentes sobre el fin de la asistencia del software Adobe Commerce</a></li>
             <li><a href="https://marketplacesupport.magento.com/hc/en-us/articles/4413722432653">directiva de Commerce Marketplace</a></li>
@@ -50,7 +50,7 @@ Siga aprendiendo sobre las actualizaciones de Adobe Commerce y Magento Open Sour
           </ul>
         </td>
       <td><strong>Características y servicios independientes</strong>
-        <p>Explore los innovadores servicios de Commerce disponibles como Adobe Commerce y las extensiones para Magento Open Source y dónde obtenerlos.</p>
+        <p>Explore los innovadores servicios de Commerce disponibles como extensiones de Adobe Commerce y dónde obtenerlos.</p>
           <ul>
             <li><a href="https://marketplace.magento.com/">Commerce Marketplace</a></li>
             <li><a href="https://marketplace.magento.com/magento-live-search.html">Live Search</a></li>

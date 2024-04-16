@@ -3,9 +3,9 @@ title: Desinstalar temas
 description: Siga estos pasos para desinstalar una temática de Adobe Commerce o de Magento Open Source.
 feature: Install, Themes
 exl-id: 73150e8c-2d83-4479-b96b-75f41fd9c842
-source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
+source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '473'
+source-wordcount: '453'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Antes de utilizar este comando, debe conocer la ruta relativa a la temática. Los temas se encuentran en un subdirectorio de `<magento_root>/app/design/<area name>`. Debe especificar la ruta al tema que comienza con el área, que puede ser `frontend` (para temas de tienda) o `adminhtml` (para temas de administración).
 
-Por ejemplo, la ruta a la temática de Luma proporcionada con Adobe Commerce y Magento Open Source es `frontend/Magento/luma`.
+Por ejemplo, la ruta al tema de Luma que se proporciona con Adobe Commerce es `frontend/Magento/luma`.
 
 Para obtener más información sobre las temáticas, consulte [estructura del tema](https://developer.adobe.com/commerce/frontend-core/guide/themes/structure/).
 
@@ -39,7 +39,7 @@ bin/magento theme:uninstall [--backup-code] [-c|--clear-static-content] {theme p
 
 Donde
 
-* `{theme path}` es la ruta relativa a la temática, empezando por el nombre del área. Por ejemplo, la ruta a la temática en blanco proporcionada con Adobe Commerce y Magento Open Source es `frontend/Magento/blank`.
+* `{theme path}` es la ruta relativa a la temática, empezando por el nombre del área. Por ejemplo, la ruta a la temática en blanco proporcionada con Adobe Commerce es `frontend/Magento/blank`.
 * `--backup-code` realiza una copia de seguridad del código base tal como se describe en los párrafos siguientes.
 * `--clear-static-content` limpiezas generadas [archivos de vista estática](../../configuration/cli/static-view-file-deployment.md), que es necesario para que los archivos de vista estática se muestren correctamente.
 
