@@ -3,9 +3,9 @@ title: El [!UICONTROL Summary] pestaña
 description: Obtenga información acerca de [!UICONTROL Summary] pestaña de [!DNL Observation for Adobe Commerce].
 exl-id: b07ed898-a211-4353-a1d4-1b71d4898b93
 feature: Configuration, Observability
-source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
+source-git-commit: 790089c178570ee69f33cc04b17800db5563741e
 workflow-type: tm+mt
-source-wordcount: '2653'
+source-wordcount: '2462'
 ht-degree: 0%
 
 ---
@@ -257,7 +257,7 @@ El **[!UICONTROL Database mysql-slow.log]** marco hace un recuento de entradas e
 
 ![redis sincronización desde registro](../../assets/tools/redis-synchronization-from-log.jpg)
 
-[[!DNL Redis]](https://redis.io/docs/about/) es un almacén de estructura de datos en memoria de código abierto (con licencia BSD) que se utiliza como base de datos, caché y agente de mensajes. Puede realizar el almacenamiento en caché de sesión y base de datos si está configurado. El **[!UICONTROL Redis synchronization from Log]** frame se centra en [[!DNL Redis] sincronización](https://redis.io/docs/manual/replication/). Cuanto más grande sea el [!DNL Redis] conjunto de datos, es más probable que haya problemas con la sincronización (más datos para mantener sincronizados).
+[[!DNL Redis]](https://redis.io/docs/about/) es un almacén de estructura de datos en memoria de código abierto (con licencia BSD) que se utiliza como base de datos, caché y agente de mensajes. Puede realizar el almacenamiento en caché de sesión y base de datos si está configurado. El **[!UICONTROL Redis synchronization from Log]** frame se centra en [[!DNL Redis] sincronización](https://redis.io/docs/latest/operate/oss_and_stack/management/replication/). Cuanto más grande sea el [!DNL Redis] conjunto de datos, es más probable que haya problemas con la sincronización (más datos para mantener sincronizados).
 
 **[!DNL Redis]errores y mensajes:**
 
@@ -384,7 +384,7 @@ El **[!UICONTROL Order transactions (default?)]** marco busca transacciones `req
 * &#39;%Puede solucionar este problema actualizando el servicio de Elasticsearch en su infraestructura de Magento Cloud a la versión%&#39; como &#39;ver_err&#39;
 * &#39;%el estado de mantenimiento del clúster ha cambiado de \[AMARILLO\] a \[ROJO\] (motivo:%&#39; como &#39;yel_red&#39;
 * &#39;%No queda espacio en el dispositivo%&#39; como &#39;no_space&#39;
-* &#39;% no pudo ejecutar &lbrack;SearchRequest&lbrace;searchType=%&#39; como &#39;failed_query&#39;
+* &#39;% no pudo ejecutar [SearchRequest{searchType=%&#39; como &#39;failed_query&#39;
 
 ## [!UICONTROL Cron view]
 

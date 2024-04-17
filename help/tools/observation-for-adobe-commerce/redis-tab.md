@@ -3,9 +3,9 @@ title: El [!UICONTROL Redis] pestaña
 description: Obtenga información acerca de [!UICONTROL Redis] pestaña de [!DNL Observation for Adobe Commerce].
 exl-id: 9c52350d-45a7-4afe-9dd7-c3968bd84d71
 feature: Configuration, Observability
-source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
+source-git-commit: 06f015139683f319f11317f8d7f0029cbd2548e3
 workflow-type: tm+mt
-source-wordcount: '248'
+source-wordcount: '242'
 ht-degree: 0%
 
 ---
@@ -58,7 +58,7 @@ El **[!UICONTROL Redis used memory]** La trama muestra el uso de nodos de memori
 
 ![Redis cambios desde el último guardado de la base de datos](../../assets/tools/observation-for-adobe-commerce/redis-tab-8.jpg)
 
-[!DNL Redis] es residente en memoria y guarda la información en el almacenamiento. El **[!UICONTROL Redis changes since last db save]** frame indica el número de cambios realizados en la memoria desde que se guardó la última base de datos en el almacenamiento. Consulte [Persistencia de Redis](https://redis.io/docs/manual/persistence/) para obtener más información sobre [!DNL Redis's] persistencia.
+[!DNL Redis] es residente en memoria y guarda la información en el almacenamiento. El **[!UICONTROL Redis changes since last db save]** frame indica el número de cambios realizados en la memoria desde que se guardó la última base de datos en el almacenamiento. Consulte [Persistencia de Redis](https://redis.io/docs/latest/operate/oss_and_stack/management/persistence/) para obtener más información sobre [!DNL Redis's] persistencia.
 
 ## [!UICONTROL Redis synchronization from Log]
 
