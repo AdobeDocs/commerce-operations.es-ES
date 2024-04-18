@@ -3,7 +3,7 @@ title: Arquitectura de referencia empresarial
 description: Aprenda a implementar Adobe Commerce utilizando la tecnología de comercio componible más reciente de Adobe.
 feature: App Builder, Cloud, GraphQL, Integration, Paas, Saas
 exl-id: d066ab43-20e2-4e0b-8348-0c52d6a7ac8a
-source-git-commit: 8eab688ed98eb1b9fcf4fc25f90fe2bbf99c02d6
+source-git-commit: c2f6b7125f1a611e94f807999787fee48a0e5ece
 workflow-type: tm+mt
 source-wordcount: '799'
 ht-degree: 0%
@@ -14,11 +14,11 @@ ht-degree: 0%
 
 Adobe Commerce es la plataforma basada en experiencias que combina de forma exclusiva la flexibilidad técnica con la facilidad de uso, todo al servicio de la creación de experiencias excepcionales que impulsen los resultados empresariales.
 
-El comercio ha evolucionado para satisfacer los requisitos empresariales de rendimiento, escala y seguridad. La adopción de un enfoque de implementación moderno que utilice las últimas soluciones de comercio componible de Adobe es crítica para el éxito de los negocios empresariales. Esta página describe el enfoque moderno de implementación de Commerce con detalles técnicos.
+Commerce ha evolucionado para satisfacer los requisitos empresariales de rendimiento, escala y seguridad. La adopción de un enfoque de implementación moderno que utilice las últimas soluciones de comercio componible de Adobe es crítica para el éxito de los negocios empresariales. Esta página describe el enfoque moderno de implementación de Commerce con detalles técnicos.
 
 El diagrama de arquitectura siguiente ilustra el flujo de datos entre Adobe Commerce y todas las soluciones de Adobe Experience Cloud.
 
-![Diagrama arquitectónico que muestra cómo se conecta Adobe Commerce a las soluciones de Experience Cloud](../../assets/playbooks/commerce-architecture-v2.svg){zoomable=&quot;yes&quot;}
+![Diagrama arquitectónico que muestra cómo se conecta Adobe Commerce a las soluciones de Experience Cloud](../../assets/playbooks/commerce-architecture-v3.svg){zoomable=&quot;yes&quot;}
 
 >[!NOTE]
 >
@@ -26,7 +26,7 @@ El diagrama de arquitectura siguiente ilustra el flujo de datos entre Adobe Comm
 
 ## Cloud foundation
 
-[Adobe Commerce en la infraestructura en la nube](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/overview) es la base de su implementación de Commerce. Proporciona un [secure](../../security-and-compliance/shared-responsibility.md) plataforma de alojamiento automatizada con un enfoque de autoservicio para crear, implementar, monitorizar y administrar su aplicación de Commerce en un entorno nativo de la nube.
+[Adobe Commerce en la infraestructura en la nube](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/overview) es la base de la implementación de Commerce. Proporciona un [secure](../../security-and-compliance/shared-responsibility.md) plataforma de alojamiento automatizada con un enfoque de autoservicio para crear, implementar, monitorizar y administrar su aplicación de Commerce en un entorno nativo de la nube.
 
 Consulte los siguientes detalles técnicos de Cloud Foundation:
 
@@ -35,7 +35,7 @@ Consulte los siguientes detalles técnicos de Cloud Foundation:
 - [**Administración de configuración**](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/overview): archivos de configuración de entorno personalizables e interfaz de línea de comandos (CLI) para administrar la configuración de la aplicación, las rutas, las acciones de generación e implementación y las notificaciones.
 - [**Flujo de trabajo basado en Git**](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow): cree e implemente automáticamente después de insertar los cambios del código para un desarrollo rápido y una implementación continua.
 - [**Observabilidad integrada**](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/monitor/performance): herramientas que combinan datos de registro de varias fuentes para ayudarle a administrar el rendimiento del sitio y diagnosticar problemas
-- [**Cobertura completa de API**](https://developer.adobe.com/commerce/webapi/get-started/)—[GraphQL](https://developer.adobe.com/commerce/webapi/graphql/) y [REST](https://developer.adobe.com/commerce/webapi/rest) API para integrar la aplicación principal de Commerce con sistemas de terceros y ampliar las capacidades de Commerce
+- [**Cobertura completa de API**](https://developer.adobe.com/commerce/webapi/get-started/)—[GraphQL](https://developer.adobe.com/commerce/webapi/graphql/) y [REST](https://developer.adobe.com/commerce/webapi/rest) API para integrar la aplicación principal de Commerce con sistemas de terceros y ampliar las funcionalidades de Commerce
 
 ## Integración con Experience Cloud
 
