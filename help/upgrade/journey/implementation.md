@@ -2,9 +2,9 @@
 title: Implementación de actualización
 description: Obtenga información acerca de las diferentes fases de la implementación de actualización para proyectos de Adobe Commerce.
 exl-id: d64855a7-73ee-463f-a314-6a8d4ebe4726
-source-git-commit: 1ba9325feaa47d767ec7991919fd5ecd53ae6226
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '825'
+source-wordcount: '812'
 ht-degree: 1%
 
 ---
@@ -38,23 +38,23 @@ Los siguientes son elementos que puede que desee incluir en un análisis exhaust
 
   | Servicio | Versión actual | Actualizar a | Notas |
   |-----------------|-----------------|------------|----------------------------------------------------------|
-  | PHP | 7.4 | 8.1 |                                                          |
-  | Redis | 6.0 | 6.2 |                                                          |
-  | [!DNL RabbitMQ] | 3.8 | 3.9 | No se está utilizando actualmente, pero deberíamos considerar su uso |
-  | MariaDB (Cloud) | 10.4 | 10.6 |                                                          |
-  | MySQL | 8.0 | -/-/ |                                                          |
-  | Compositor | 1.9.2 | 2.2 |                                                          |
-  | Elasticsearch | 7.10 | 7.17 |                                                          |
+  | PHP | 7,4 | 8,1 |                                                          |
+  | Redis | 6,0 | 6,2 |                                                          |
+  | [!DNL RabbitMQ] | 3,8 | 3,9 | No se está utilizando actualmente, pero deberíamos considerar su uso |
+  | MariaDB (Cloud) | 10,4 | 10,6 |                                                          |
+  | MySQL | 8,0 | -/-/ |                                                          |
+  | Compositor | 1.9.2 | 2,2 |                                                          |
+  | Elasticsearch | 7,10 | 7,17 |                                                          |
 
-- **Extensiones y módulos de terceros**: utilice esta plantilla de tabla para comprender el estado de las extensiones y personalizaciones, de modo que pueda tomar decisiones estratégicas y definir acciones. Esta es una oportunidad para reemplazar cualquier extensión que pueda ser nativa de Adobe Commerce o Magento Open Source para minimizar la complejidad del proyecto. Utilice el `bin/magento module:status` para ver una lista de módulos y extensiones.
+- **Extensiones y módulos de terceros**: utilice esta plantilla de tabla para comprender el estado de las extensiones y personalizaciones, de modo que pueda tomar decisiones estratégicas y definir acciones. Esta es una oportunidad para reemplazar cualquier extensión que pueda ser nativa de Adobe Commerce para minimizar la complejidad del proyecto. Utilice el `bin/magento module:status` para ver una lista de módulos y extensiones.
 
-  | # | Extensión/<br>nombre del módulo | Paquete Composer | Proveedor | Versión actual | Funcionalidad | Compatible con lo último<br>¿Versión de Commerce? | Problemas | ¿Nativo de Commerce? | Acción | Notas |
+  | # | Extensión/<br>nombre del módulo | Paquete Composer | Proveedor | Versión actual | Funcionalidad | Compatible con lo último<br>¿Versión de Commerce? | Problemas | ¿Es nativo de Commerce? | Acción | Notas |
   |---|-----------------------------|------------------------------------|-------------|-------------------|-----------------------|---------------------------------------------|--------------------------------------------------|---------------------|-------------------------|-------|
   | 1 | Nombre de la extensión y vínculo | extension/<br>extensionx-magento-2 | Nombre del proveedor | Versión instalada | Requisitos empresariales | Sí/No | Enumerar los problemas identificados que enfrenta esta extensión | Sí/No | Conservar/Reemplazar/<br>Eliminar |       |
 
 - **Módulos personalizados**: similar a la tabla de módulos de terceros, esta plantilla le ayuda a realizar un seguimiento y comprender el estado y las acciones necesarias para actualizar módulos personalizados.
 
-  | # | Nombre de módulo | Funcionalidad | ¿Requerido? | ¿Nativo de Commerce? | Acción | Notas |
+  | # | Nombre de módulo | Funcionalidad | ¿Requerido? | ¿Es nativo de Commerce? | Acción | Notas |
   |---|--------------|-----------------------|-----------|---------------------|---------------------|-------|
   | 1 | Nombre de módulo | Requisitos empresariales | Sí/No | Sí/No | Conservar/Reemplazar/Quitar |       |
 

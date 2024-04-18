@@ -1,11 +1,11 @@
 ---
 title: Seguridad de instalación local
-description: Obtenga información acerca de las formas de mejorar la postura de seguridad de la instalación local de Adobe Commerce o Magento Open Source.
+description: Obtenga información acerca de las formas de mejorar la postura de seguridad de la instalación local de Adobe Commerce.
 feature: Install, Security
 exl-id: 56724a72-c64d-44d4-a886-90d97ae5fb6d
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '306'
+source-wordcount: '302'
 ht-degree: 0%
 
 ---

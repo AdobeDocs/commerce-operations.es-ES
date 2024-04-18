@@ -3,22 +3,22 @@ title: Uso
 description: Aprenda a utilizar el [!DNL Quality Patches Tool].
 exl-id: f9ad37e9-2d0f-4bc8-a98b-6d60b6f56d42
 feature: Configuration, Install
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '869'
+source-wordcount: '845'
 ht-degree: 0%
 
 ---
 
 # Uso
 
-El [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) ofrece parches individuales desarrollados por Adobe y la comunidad de Magento Open Source. Permite aplicar, revertir y ver información general sobre todos los parches individuales que están disponibles para la versión instalada de Adobe Commerce o Magento Open Source. Puede aplicar parches a proyectos de Adobe Commerce independientemente de quién lo haya desarrollado. Por ejemplo, puede aplicar un parche desarrollado por la comunidad a proyectos de Adobe Commerce.
+El [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) ofrece parches individuales desarrollados por Adobe y la comunidad de Magento Open Source. Permite aplicar, revertir y ver información general sobre todos los parches individuales disponibles para la versión instalada de Adobe Commerce. Puede aplicar parches a proyectos de Adobe Commerce independientemente de quién lo haya desarrollado. Por ejemplo, puede aplicar un parche desarrollado por la comunidad a proyectos de Adobe Commerce.
 
 Ver esto [vídeo técnico](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/tools/quality-patch-tool.html?lang=en) y aprenda a utilizar la herramienta Parches de calidad para Adobe Commerce.
 
 >[!INFO]
 >
->Consulte [Aplicar parches individuales](#apply-individual-patches) para obtener instrucciones sobre cómo aplicar parches a los proyectos de Adobe Commerce o de Magento Open Source. Consulte [[!DNL Quality Patches Tool]: Buscar parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) para revisar una lista completa de parches publicados.
+>Consulte [Aplicar parches individuales](#apply-individual-patches) para obtener instrucciones sobre cómo aplicar parches a los proyectos de Adobe Commerce. Consulte [[!DNL Quality Patches Tool]: Buscar parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) para revisar una lista completa de parches publicados.
 
 >[!WARNING]
 >
@@ -36,7 +36,7 @@ composer require magento/quality-patches
 
 ## Ver parches individuales
 
-Para ver la lista de parches individuales disponibles para su versión de Adobe Commerce o Magento Open Source:
+Para ver la lista de parches individuales disponibles para su versión de Adobe Commerce:
 
 ```bash
 ./vendor/bin/magento-patches status
@@ -76,7 +76,7 @@ La tabla de estado incluye:
 
 >[!INFO]
 >
->Después de actualizar a una nueva versión de Adobe Commerce o Magento Open Source, debe volver a aplicar los parches si estos no se incluyen en la nueva versión. Consulte [Volver a aplicar parches después de una actualización](#re-apply-patches-after-an-upgrade).
+>Después de actualizar a una nueva versión de Adobe Commerce, debe volver a aplicar los parches si estos no están incluidos en la nueva versión. Consulte [Volver a aplicar parches después de una actualización](#re-apply-patches-after-an-upgrade).
 
 ## Aplicar parches individuales {#apply-individual-patches}
 
@@ -104,7 +104,7 @@ Debe limpiar la caché después de aplicar los parches para ver los cambios en l
 
 >[!INFO]
 >
->Considere la posibilidad de mantener una lista de parches aplicados en una ubicación diferente. Es posible que tenga que volver a aplicar algunos de ellos después de actualizar a una nueva versión de Adobe Commerce o Magento Open Source. Consulte [Volver a aplicar parches después de una actualización](#re-apply-patches-after-an-upgrade).
+>Considere la posibilidad de mantener una lista de parches aplicados en una ubicación diferente. Es posible que tenga que volver a aplicar algunos de ellos después de actualizar a una nueva versión de Adobe Commerce. Consulte [Volver a aplicar parches después de una actualización](#re-apply-patches-after-an-upgrade).
 
 ## Reversión de parches individuales
 
@@ -156,7 +156,7 @@ Ver los parches añadidos:
 
 ## Volver a aplicar parches después de una actualización {#re-apply-patches-after-an-upgrade}
 
-Al actualizar a una nueva versión de Adobe Commerce o Magento Open Source, debe volver a aplicar los parches si estos no se incluyen en la nueva versión.
+Al actualizar a una nueva versión de Adobe Commerce, debe volver a aplicar los parches si estos no se incluyen en la nueva versión.
 
 Para volver a aplicar parches:
 

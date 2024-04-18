@@ -2,9 +2,9 @@
 title: Biblioteca JavaScript de privacidad
 description: Aprenda a utilizar herramientas personalizadas para acceder a información personal de los clientes y eliminarla, recopilada por Adobe Commerce.
 exl-id: bcfea656-2cf0-48ae-9049-d91679166d05
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '274'
+source-wordcount: '270'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Esta biblioteca proporciona un conjunto de funciones para crear solicitudes de d
 
 La biblioteca JavaScript de privacidad está disponible en la siguiente ubicación de CDN: `commerce.adobe.net/magentoprivacy.js`
 
-Una vez que tenga el archivo, deberá agregarlo a un módulo o tema personalizado instalado en la instancia de Adobe Commerce o de Magento Open Source. Siga las instrucciones descritas en la [Usar JavaScript personalizado](https://developer.adobe.com/commerce/frontend-core/javascript/custom/) tema para realizar esta tarea.
+Una vez que tenga el archivo, deberá agregarlo a un módulo o tema personalizado instalado en la instancia de Adobe Commerce. Siga las instrucciones descritas en la [Usar JavaScript personalizado](https://developer.adobe.com/commerce/frontend-core/javascript/custom/) tema para realizar esta tarea.
 
 ### Inicialización
 

@@ -1,11 +1,11 @@
 ---
 title: Procesamiento de pedidos de alto rendimiento
-description: Optimice la realización de pedidos y la experiencia de cierre de compra para su implementación de Adobe Commerce o de Magento Open Source.
+description: Optimice la realización de pedidos y la experiencia de cierre de compra para su implementación de Adobe Commerce.
 feature: Best Practices, Orders
 exl-id: dc2d0399-0d7f-42d8-a6cf-ce126e0b052d
-source-git-commit: 012cba58b336b032b1c911539008c1fb961c2e07
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '1048'
+source-wordcount: '983'
 ht-degree: 0%
 
 ---
@@ -172,7 +172,7 @@ Cuando está desactivada, la comprobación de inventario no se produce al añadi
 
 Puede ayudar a equilibrar la carga entre los distintos nodos activando conexiones secundarias para la base de datos MySQL y la instancia de Redis.
 
-Adobe Commerce puede leer varias bases de datos o instancias de Redis de forma asincrónica. Si utiliza Commerce en la infraestructura de la nube, puede configurar las conexiones secundarias editando la [MYSQL_USE_SLAVE_CONNECTION](https://devdocs.magento.com/cloud/env/variables-deploy.html#mysql_use_slave_connection) y [REDIS_USE_SLAVE_CONNECTION](https://devdocs.magento.com/cloud/env/variables-deploy.html#redis_use_slave_connection) valores en la `.magento.env.yaml` archivo. Solo un nodo debe gestionar el tráfico de lectura-escritura, por lo que las variables se deben configurar como `true` da como resultado la creación de una conexión secundaria para el tráfico de solo lectura. Establezca los valores en `false` para quitar cualquier matriz de conexión de solo lectura existente de `env.php` archivo.
+Adobe Commerce puede leer varias bases de datos o instancias de Redis de forma asincrónica. Si utiliza Commerce en la infraestructura de la nube, puede configurar las conexiones secundarias editando el [MYSQL_USE_SLAVE_CONNECTION](https://devdocs.magento.com/cloud/env/variables-deploy.html#mysql_use_slave_connection) y [REDIS_USE_SLAVE_CONNECTION](https://devdocs.magento.com/cloud/env/variables-deploy.html#redis_use_slave_connection) valores en la `.magento.env.yaml` archivo. Solo un nodo debe gestionar el tráfico de lectura-escritura, por lo que las variables se deben configurar como `true` da como resultado la creación de una conexión secundaria para el tráfico de solo lectura. Establezca los valores en `false` para quitar cualquier matriz de conexión de solo lectura existente de `env.php` archivo.
 
 Ejemplo de `.magento.env.yaml` archivo:
 

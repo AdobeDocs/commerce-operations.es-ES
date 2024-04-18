@@ -1,11 +1,11 @@
 ---
 title: Establecer una máscara de usuario (opcional)
-description: Mejore la postura de seguridad de la instalación local de Adobe Commerce o Magento Open Source restringiendo los permisos del sistema de archivos.
+description: Mejore la postura de seguridad de su instalación local de Adobe Commerce restringiendo los permisos del sistema de archivos.
 feature: Install, Configuration
 exl-id: 18d65d75-7be0-4488-bf35-4b058e4ae5ea
-source-git-commit: ce405a6bb548b177427e4c02640ce13149c48aff
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '299'
+source-wordcount: '296'
 ht-degree: 0%
 
 ---

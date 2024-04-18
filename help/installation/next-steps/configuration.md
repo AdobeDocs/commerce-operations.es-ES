@@ -3,16 +3,16 @@ title: Configuración de la aplicación
 description: Obtenga información acerca de la configuración posterior a la instalación necesaria para las implementaciones locales de Adobe Commerce.
 feature: Install, Configuration
 exl-id: b1808664-10ec-4147-8251-a99f8b58f4be
-source-git-commit: 35664c30e438305036d3cfdd1dd1924966f6ced6
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '671'
+source-wordcount: '667'
 ht-degree: 0%
 
 ---
 
 # Configuración de la aplicación
 
-Ahora que ha terminado de instalar Adobe Commerce o Magento Open Source, debe configurarlo. En este tema se proporcionan algunas opciones de configuración recomendadas.
+Ahora que ha terminado de instalar Adobe Commerce, debe configurarlo. En este tema se proporcionan algunas opciones de configuración recomendadas.
 
 ## Configuración de cron
 

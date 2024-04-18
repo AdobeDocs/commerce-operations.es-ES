@@ -2,9 +2,9 @@
 title: Configuración avanzada
 description: Revise las prácticas recomendadas y las recomendaciones para sistemas de grandes empresas diseñados para procesar grandes volúmenes de datos.
 exl-id: eb9ca9fa-b099-4e77-ab33-16cd0f382ffe
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '1192'
+source-wordcount: '1173'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ También puede utilizar un clúster de Redis que realice operaciones de lectura 
 
 ## Configuración de [!DNL RabbitMQ]
 
-MAGENTO OPEN SOURCE y ADOBE [!DNL Commerce] colas de mensajes de soporte implementadas mediante [!DNL RabbitMQ]. [!DNL Commerce] utiliza este servicio para ejecutar numerosas operaciones asincrónicas, incluidas las operaciones de catálogo B2B y las actualizaciones asincrónicas de existencias. Todas las interfaces para agregar más trabajos al servidor de trabajos se distribuyen con el producto y están disponibles para la implementación de lógica asincrónica personalizada en el ámbito de las extensiones de terceros. Al igual que con cualquier otra integración, [!DNL Commerce] proporciona un archivo de configuración de ejemplo para [!DNL RabbitMQ] que contiene todas las configuraciones recomendadas y está totalmente listo para el uso en producción.
+Adobe Commerce admite colas de mensajes implementadas mediante [!DNL RabbitMQ]. [!DNL Commerce] utiliza este servicio para ejecutar numerosas operaciones asincrónicas, incluidas las operaciones de catálogo B2B y las actualizaciones asincrónicas de existencias. Todas las interfaces para agregar más trabajos al servidor de trabajos se distribuyen con el producto y están disponibles para la implementación de lógica asincrónica personalizada en el ámbito de las extensiones de terceros. Al igual que con cualquier otra integración, [!DNL Commerce] proporciona un archivo de configuración de ejemplo para [!DNL RabbitMQ] que contiene todas las configuraciones recomendadas y está totalmente listo para el uso en producción.
 
 ## Dividir la base de datos
 

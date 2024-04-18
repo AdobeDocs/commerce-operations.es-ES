@@ -1,10 +1,10 @@
 ---
 title: Configuración del proveedor de bloqueos
-description: Siga estos pasos para evitar que los trabajos cron y los grupos cron duplicados se ejecuten en la implementación de Adobe Commerce o de Magento Open Source.
+description: Siga estos pasos para evitar que los trabajos cron y los grupos cron duplicados se ejecuten en la implementación de Adobe Commerce.
 exl-id: c54e05b7-38fd-4731-bc77-a873b44d0ae8
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '232'
+source-wordcount: '224'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Antes de ejecutar este comando, debe hacer lo siguiente *o* usted debe [instalar
 
 ## Configuración del bloqueo
 
-Configure un proveedor de bloqueo para evitar el inicio de trabajos cron y grupos cron duplicados. (Requiere Adobe Commerce o Magento Open Source 2.2.x, 2.2.5 y posterior, y 2.3.3 y posterior).
+Configure un proveedor de bloqueo para evitar el inicio de trabajos cron y grupos cron duplicados. (Requiere Adobe Commerce 2.2.x, 2.2.5 y posterior, y 2.3.3 y posterior).
 
 Adobe Commerce utiliza la base de datos para guardar bloqueos de forma predeterminada. Si tiene varios nodos en sus servidores, le recomendamos que utilice Zookeeper como proveedor de bloqueos.
 

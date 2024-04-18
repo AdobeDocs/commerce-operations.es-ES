@@ -1,10 +1,10 @@
 ---
 title: Opciones de modo de mantenimiento para la actualización
-description: Cree una página de modo de mantenimiento personalizada que los clientes vean en la tienda de Adobe Commerce o de Magento Open Source mientras ejecuta una actualización.
+description: Cree una página de modo de mantenimiento personalizada que sus clientes vean en su tienda de Adobe Commerce mientras ejecuta una actualización.
 exl-id: 77e6d82d-5cc6-4d14-8b5c-1d2108f27b29
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '382'
 ht-degree: 0%
 
 ---

@@ -1,11 +1,11 @@
 ---
 title: Crear o actualizar la configuración de implementación
-description: Siga estos pasos para administrar la configuración de implementación de Adobe Commerce o Magento Open Source.
+description: Siga estos pasos para administrar la configuración de implementación de Adobe Commerce.
 feature: Install, Deploy, Configuration
 exl-id: 2cdde735-0c70-44e8-b2ee-ffb874c1c443
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '680'
+source-wordcount: '668'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ En la tabla siguiente se describen los significados de los parámetros y valores
 | `--db-name` | Nombre de la instancia de base de datos en la que desea instalar las tablas de base de datos.<br><br>El valor predeterminado es `magento2`. | No |
 | `--db-user` | Nombre de usuario del propietario de la instancia de base de datos.<br><br>El valor predeterminado es `root`. | No |
 | `--db-password` | Contraseña del propietario de la instancia de base de datos. | No |
-| `--db-prefix` | Utilícelo únicamente si va a instalar las tablas de base de datos en una instancia de base de datos que ya contiene tablas de Adobe Commerce.<br><br>En ese caso, utilice un prefijo para identificar las tablas de esta instalación. Algunos clientes tienen más de una instancia de Adobe Commerce o de Magento Open Source ejecutándose en un servidor con todas las tablas de la misma base de datos.<br><br>El prefijo puede tener una longitud máxima de cinco caracteres. Debe comenzar por una letra y solo puede incluir letras, números y caracteres de subrayado.<br><br>Esta opción permite a estos clientes compartir el servidor de base de datos con más de una instalación de Adobe Commerce o de Magento Open Source. | No |
+| `--db-prefix` | Utilícelo únicamente si va a instalar las tablas de base de datos en una instancia de base de datos que ya contiene tablas de Adobe Commerce.<br><br>En ese caso, utilice un prefijo para identificar las tablas de esta instalación. Algunos clientes tienen más de una instancia de Adobe Commerce ejecutándose en un servidor con todas las tablas de la misma base de datos.<br><br>El prefijo puede tener una longitud máxima de cinco caracteres. Debe comenzar por una letra y solo puede incluir letras, números y caracteres de subrayado.<br><br>Esta opción permite a estos clientes compartir el servidor de base de datos con más de una instalación de Adobe Commerce. | No |
 | `--session-save` | Utilice cualquiera de las siguientes opciones:<br><br>- `db` para almacenar datos de sesión en [database](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/). Elija el almacenamiento de la base de datos si tiene una base de datos en clúster; de lo contrario, es posible que no haya muchas ventajas con respecto al almacenamiento basado en archivos.<br><br>- `files` para almacenar datos de sesión en el sistema de archivos. El almacenamiento de sesión basado en archivos es adecuado a menos que el acceso al sistema de archivos sea lento, tenga una base de datos en clúster o desee almacenar los datos de sesión en Redis.<br><br>- `redis` para almacenar datos de sesión en [Usar Redis para el almacenamiento de sesión](../../configuration/cache/config-redis.md). Si utiliza Redis para el almacenamiento en caché predeterminado o de página, debe estar instalado. | No |
 | `--key` | Si tiene una, especifique la clave que desea cifrar [datos confidenciales](#sensitive-data) en la base de datos. Si no tiene ninguna, la aplicación generará una para usted. | No |
 | `--db-init-statements` | Parámetro de configuración avanzado de MySQL. Utiliza sentencias de inicialización de base de datos para ejecutarse al conectarse a la base de datos MySQL.<br><br>El valor predeterminado es `SET NAMES utf8;`.<br><br>Consulte una referencia similar a [este](https://dev.mysql.com/doc/refman/5.6/en/server-options.html) antes de establecer cualquier valor. | No |

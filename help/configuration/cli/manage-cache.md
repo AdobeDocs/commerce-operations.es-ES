@@ -2,9 +2,9 @@
 title: Administrar la caché
 description: Administre los tipos de caché y vea el estado de la caché desde la línea de comandos mediante la CLI de Commerce
 exl-id: bbd76c00-727b-412e-a8e5-1e013a83a29a
-source-git-commit: 1070291396144f866cadd5e42ebca3e77a484a9b
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '616'
+source-wordcount: '612'
 ht-degree: 0%
 
 ---
@@ -128,7 +128,7 @@ Para eliminar de la caché elementos que no estén actualizados, puede _limpio_ 
 
   >[!TIP]
   >
-  >Limpie siempre la caché después de actualizar versiones de Magento Open Source o Adobe Commerce, actualizar de Magento Open Source a Adobe Commerce o instalar B2B para Adobe Commerce o cualquier módulo.
+  >Limpie siempre la caché después de actualizar versiones de Adobe Commerce, actualizar de Magento Open Source a Adobe Commerce o instalar B2B para Adobe Commerce o cualquier módulo.
 
 - Al vaciar un tipo de caché, se depura el almacenamiento de caché, lo que podría afectar a otros procesos y aplicaciones que estén utilizando el mismo almacenamiento.
 

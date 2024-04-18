@@ -1,10 +1,10 @@
 ---
 title: Revertir tras un error de actualización del módulo
-description: Solucione los problemas de actualización de Adobe Commerce o Magento Open Source después de encontrar un error de actualización de módulo.
+description: Solucione los problemas de la actualización de Adobe Commerce después de encontrar un error de actualización de módulo.
 exl-id: 1537a6b1-b450-4f90-bffb-73359fa71598
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '93'
+source-wordcount: '89'
 ht-degree: 0%
 
 ---

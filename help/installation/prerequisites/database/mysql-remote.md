@@ -2,9 +2,9 @@
 title: Configurar una conexión de base de datos MySQL remota
 description: Siga estos pasos para configurar una conexión de base de datos remota para instalaciones locales de Adobe Commerce.
 exl-id: 5fe304bd-ff38-4066-a1fd-8937575e4de4
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '716'
+source-wordcount: '700'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ Antes de empezar, debe:
 
 * [Instalar el servidor MySQL](mysql.md) en el servidor de base de datos.
 * [Crear una instancia de base de datos](mysql.md#configuring-the-database-instance) en el servidor de base de datos.
-* Instale el cliente MySQL en su nodo web Adobe Commerce o Magento Open Source. Consulte la documentación de MySQL para obtener más detalles.
+* Instale el cliente MySQL en su nodo web de Adobe Commerce. Consulte la documentación de MySQL para obtener más detalles.
 
 ### Alta disponibilidad
 
@@ -136,7 +136,7 @@ En el host del nodo web, introduzca el siguiente comando para comprobar que la c
 mysql -u <local database username> -h <database server ip address> -p
 ```
 
-Si el monitor MySQL se muestra de la siguiente manera, la base de datos está lista para Adobe Commerce o Magento Open Source:
+Si el monitor MySQL se muestra de la siguiente manera, la base de datos está lista para Adobe Commerce:
 
 ```terminal
 Welcome to the MySQL monitor.  Commands end with ; or \g.
@@ -151,9 +151,9 @@ Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
 
 Si el servidor web está agrupado, introduzca el comando en cada host de servidor web.
 
-## Instalación de Adobe Commerce o Magento Open Source
+## Instalación de Adobe Commerce
 
-Al instalar Adobe Commerce o Magento Open Source, debe especificar lo siguiente:
+Al instalar Adobe Commerce, debe especificar lo siguiente:
 
 * La dirección URL base (también denominada *dirección del almacén*) especifica el nombre de host o la dirección IP del *nodo web*
 * El host de base de datos es *servidor de base de datos remoto* Dirección IP (o equilibrador de carga si el servidor de la base de datos está agrupado)

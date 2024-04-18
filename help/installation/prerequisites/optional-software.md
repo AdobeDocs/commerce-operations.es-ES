@@ -2,9 +2,9 @@
 title: Software opcional
 description: Obtenga más información acerca del software opcional que puede instalar para admitir instalaciones locales de Adobe Commerce.
 exl-id: 533ff52b-3301-4624-b691-3dfddde6ce0b
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '605'
+source-wordcount: '597'
 ht-degree: 0%
 
 ---
@@ -13,13 +13,13 @@ ht-degree: 0%
 
 Le recomendamos encarecidamente que instale NTP para garantizar que las tareas relacionadas con cron se realicen correctamente. (Las fechas del servidor pueden ser pasadas o futuras, por ejemplo).
 
-Las otras utilidades opcionales que se tratan en este tema pueden ayudarle con la instalación; sin embargo, no son necesarias para instalar o utilizar Adobe Commerce o Magento Open Source.
+Las otras utilidades opcionales que se tratan en este tema pueden ayudarle con la instalación; sin embargo, no son necesarias para instalar o utilizar Adobe Commerce.
 
 ## Instalación y configuración del Protocolo de tiempo de red (NTP)
 
 [NTP](https://www.ntp.org/) permite a los servidores sincronizar sus relojes del sistema mediante [servidores de grupo disponibles globalmente](https://www.ntppool.org/en/). Le recomendamos que utilice servidores NTP en los que confíe, ya sean soluciones de hardware dedicadas para su red interna o servidores públicos externos.
 
-Si va a implementar Adobe Commerce o Magento Open Source en varios hosts, NTP es una forma sencilla de garantizar que todos sus relojes estén sincronizados, independientemente del huso horario en el que se encuentren los servidores. Además, las tareas relacionadas con cron (como la indexación y los correos electrónicos transaccionales) dependen de que el reloj del servidor sea preciso.
+Si implementa Adobe Commerce en varios hosts, NTP es una forma sencilla de garantizar que todos sus relojes estén sincronizados, independientemente del huso horario en el que se encuentren los servidores. Además, las tareas relacionadas con cron (como la indexación y los correos electrónicos transaccionales) dependen de que el reloj del servidor sea preciso.
 
 ### Instalar y configurar NTP en Ubuntu
 

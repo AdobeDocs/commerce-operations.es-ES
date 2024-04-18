@@ -1,7 +1,7 @@
 ---
-source-git-commit: 405c1d7073e5936aefc7fb3c6eb1d5dd4d69a066
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '6574'
+source-wordcount: '6363'
 ht-degree: 0%
 
 ---
@@ -128,13 +128,13 @@ _Atributos de término:_
 _sustantivo_
 
 Característica o propiedad de un producto que describe algún aspecto del producto.
-Los usuarios de Adobe Commerce o Magento Open Source pueden crear atributos personalizados para agregarlos al conjunto de atributos predeterminado o a un conjunto de atributos personalizado.
+Los usuarios de Adobe Commerce pueden crear atributos personalizados para agregarlos al conjunto de atributos predeterminado o a un conjunto de atributos personalizado.
 Cree estos atributos mediante el administrador o mediante programación.
 Ejemplos: color, tamaño, peso, precio, edad, sexo, etc.
 
 Los atributos personalizados son un tipo de atributo Entity-Attribute-Value (EAV).
 
-Para integraciones como el canal de anuncios de compras de Google y la Sales Channel de Amazon, asigne atributos de comercio a atributos de terceros para mostrar y vender correctamente productos y anuncios.
+Para integraciones como el canal de anuncios de compra de Google y la Sales Channel de Amazon, los atributos de Commerce se asignan a atributos de terceros para mostrar y vender correctamente productos y anuncios de visualización.
 
 Más información: [Atributos de extensión de EAV y extension](https://developer.adobe.com/commerce/php/development/components/attributes/)
 
@@ -392,7 +392,7 @@ _sustantivo_
 Para los comerciantes, el catálogo representa su inventario de productos.
 Dentro de la arquitectura de Adobe Commerce, el catálogo consta de categorías, productos y atributos de productos.
 
-Cada tienda de Commerce tiene un solo catálogo de productos, que comparten todas las vistas de la tienda.
+Cada tienda Commerce tiene un solo catálogo de productos, que comparten todas las vistas de la tienda.
 En una instalación de varias tiendas, cada tienda puede tener un catálogo independiente o compartirlo.
 El catálogo de tiendas actual está determinado por la categoría raíz predeterminada, visible para el usuario en la barra de navegación superior (menú principal) de la tienda.
 (El término &quot;categoría raíz&quot; puede resultar confuso, ya que la &quot;categoría raíz&quot; no es en realidad una categoría, sino un contenedor del menú, que consta de categorías y subcategorías.)
@@ -686,7 +686,7 @@ _Atributos de término:_
 
 _sustantivo_
 
-Un conjunto de scripts y herramientas diseñadas para administrar e implementar la aplicación de Commerce. Este paquete simplifica muchos procesos de infraestructura en la nube de Adobe Commerce, incluida la implementación en un entorno Docker, la administración de crons, la verificación de la configuración del proyecto y la aplicación de parches de Adobe.
+Conjunto de scripts y herramientas diseñados para administrar e implementar la aplicación de Commerce. Este paquete simplifica muchos procesos de infraestructura en la nube de Adobe Commerce, incluida la implementación en un entorno Docker, la administración de crons, la verificación de la configuración del proyecto y la aplicación de parches de Adobe.
 
 Más información: [paquete ece-tools](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/package-overview.html)
 
@@ -1013,7 +1013,7 @@ _Atributos de término:_
 _sustantivo_
 
 MFTF es un [Marco de prueba funcional](https://developer.adobe.com/commerce/testing/functional-testing-framework/).
-Proporciona un marco de prueba para desarrolladores de Commerce e ingenieros de software, como especialistas en control de calidad, desarrolladores de PHP e integradores de sistemas.
+Proporciona un marco de pruebas para desarrolladores e ingenieros de software de Commerce, como especialistas en control de calidad, desarrolladores de PHP e integradores de sistemas.
 Los desarrolladores y el control de calidad pueden escribir pruebas para intentar las interacciones del usuario con aplicaciones web, verificar la funcionalidad y automatizar las pruebas de regresión.
 
 _Atributos de término:_
@@ -1313,7 +1313,7 @@ _Atributos de término:_
 
 _sustantivo_
 
-El nivel de ámbito comercial de &quot;tienda&quot; es el segundo nivel de la jerarquía del sitio web, que es el siguiente: sitio web > tienda > vista de tienda.
+El nivel de ámbito de Commerce de &quot;tienda&quot; es el segundo nivel de la jerarquía del sitio web, que es el siguiente: sitio web > tienda > vista de tienda.
 Las tiendas se pueden organizar en una o varias. Cada tienda, potencialmente, tiene su propia categoría raíz y todos comparten datos de catálogo y de cliente.
 
 Cada tienda puede tener varias vistas de la tienda, que normalmente se usan para presentar la tienda en una configuración regional y en un idioma diferentes.
@@ -1327,7 +1327,7 @@ _Atributos de término:_
 
 _sustantivo_
 
-El nivel de ámbito comercial de &quot;vista de tienda&quot; se refiere al tercer nivel en la jerarquía de sitios web, tiendas y vistas de tiendas.
+El nivel de ámbito de Commerce de &quot;vista de tienda&quot; se refiere al tercer nivel en la jerarquía de sitios web, tiendas y vistas de tiendas.
 Las vistas de tienda suelen presentar la tienda en una configuración regional y en un idioma diferentes.
 Para cambiar las vistas de la tienda, use el selector de tiendas del encabezado.
 
@@ -1340,7 +1340,7 @@ _Atributos de término:_
 
 _sustantivo_
 
-Tienda en línea que los clientes ven cuando visitan el sitio de comercio.
+Tienda en línea que los clientes ven cuando visitan el sitio de Commerce.
 
 _Atributos de término:_
 
@@ -1437,8 +1437,8 @@ _Atributos de término:_
 
 _sustantivo_
 
-El código producido por el proveedor que amplía o personaliza el comportamiento de Commerce y funciona como una extensión de terceros se considera una extensión agrupada por proveedores (VBE).
-Los VBE se prueban exhaustivamente y se incluyen con cada versión compatible de Magento Open Source y Adobe Commerce.
+El código producido por el proveedor que amplía o personaliza el comportamiento de Commerce y funciona como una extensión de terceros se considera una extensión agrupada por proveedor (VBE).
+Los VBE se prueban exhaustivamente y se incluyen con cada versión compatible de Adobe Commerce.
 Un VBE puede incluir módulos, temáticas y paquetes de idiomas.
 
 Obtenga más información en la [Tema de extensión agrupada de proveedor](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/modules/upgrade.html).

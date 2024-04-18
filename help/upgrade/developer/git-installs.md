@@ -1,17 +1,17 @@
 ---
 title: Actualización de una instalación basada en Git
-description: Actualice una instalación de Adobe Commerce o Magento Open Source que haya clonado desde un repositorio de Git.
+description: Actualice una instalación de Adobe Commerce que haya clonado desde un repositorio de Git.
 exl-id: a8c42857-7221-4b21-8377-4bfb6308c418
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '122'
+source-wordcount: '110'
 ht-degree: 0%
 
 ---
 
 # Actualización de una instalación basada en Git
 
-En este tema se explica cómo un desarrollador colaborador puede actualizar Adobe Commerce o Magento Open Source sin volver a instalarlo. Si no es un desarrollador colaborador, consulte [Realización de una actualización](../implementation/perform-upgrade.md).
+En este tema se explica cómo un desarrollador colaborador puede actualizar Adobe Commerce sin volver a instalarlo. Si no es un desarrollador colaborador, consulte [Realización de una actualización](../implementation/perform-upgrade.md).
 
 Para actualizar si es un desarrollador colaborador:
 

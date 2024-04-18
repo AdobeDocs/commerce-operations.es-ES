@@ -1,7 +1,7 @@
 ---
-source-git-commit: 475dbc056ac3e6a00c8f794259bb0fbf04143687
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '345'
+source-wordcount: '318'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Recomendamos lo siguiente:
 
 * El motor de búsqueda se ejecuta en el mismo host que un servidor web. La ejecución del motor de búsqueda y del servidor web en hosts diferentes está fuera del ámbito de este tema.
 
-  La ventaja de colocar el motor de búsqueda y el servidor web en el mismo host es que hace imposible interceptar la comunicación cifrada. El servidor web del motor de búsqueda no tiene por qué ser el mismo que el servidor web de Adobe Commerce o de Magento Open Source; por ejemplo, Adobe Commerce puede ejecutar Apache y Elasticsearch/OpenSearch puede ejecutar nginx.
+  La ventaja de colocar el motor de búsqueda y el servidor web en el mismo host es que hace imposible interceptar la comunicación cifrada. El servidor web del motor de búsqueda no tiene por qué ser el mismo que el servidor web de Adobe Commerce; por ejemplo, Adobe Commerce puede ejecutar Apache y Elasticsearch/OpenSearch puede ejecutar nginx.
 
   Si el motor de búsqueda está expuesto a la web pública, debe configurar la autenticación. Si la instancia del motor de búsqueda está protegida dentro de la red, es posible que no sea necesario. Póngase en contacto con su proveedor de alojamiento para determinar qué medidas de seguridad debe implementar para proteger su instancia.
 

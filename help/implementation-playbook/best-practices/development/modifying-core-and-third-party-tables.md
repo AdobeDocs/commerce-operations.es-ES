@@ -5,9 +5,9 @@ role: Developer, Architect
 feature: Best Practices
 last-substantial-update: 2022-11-15T00:00:00Z
 exl-id: 9e7adaaa-b165-4293-aa98-5dc4b8c23022
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '1438'
+source-wordcount: '1405'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ Para obtener más información sobre el uso de API mesh con GraphQL, consulte [�
 Si determina que los datos heredados requieren migración o que es necesario guardar nuevos datos en [!DNL Adobe Commerce], el Adobe recomienda utilizar [atributos de extensión](https://developer.adobe.com/commerce/php/development/components/add-attributes/){target="_blank"}. El uso de atributos de extensión para guardar datos adicionales ofrece las siguientes ventajas:
 
 - Puede controlar los datos que se mantienen y la estructura de la base de datos, que garantiza que los datos se guarden con el tipo de columna correcto y los índices adecuados.
-- La mayoría de entidades de [!DNL Adobe Commerce] y [!DNL Magento Open Source] admiten el uso de atributos de extensión.
+- La mayoría de entidades de [!DNL Adobe Commerce] admiten el uso de atributos de extensión.
 - Los atributos de extensión son un mecanismo independiente del almacenamiento que proporciona la flexibilidad para guardar los datos en la ubicación óptima para su proyecto.
 
 Dos ejemplos de ubicaciones de almacenamiento son las tablas de base de datos y [!DNL Redis]. Las cosas clave que hay que tener en cuenta al elegir una ubicación son si la ubicación presenta una complejidad adicional o afecta al rendimiento.

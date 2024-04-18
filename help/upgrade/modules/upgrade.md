@@ -2,9 +2,9 @@
 title: Actualización de módulos y extensiones
 description: Utilice la interfaz de línea de comandos y el Compositor para actualizar los módulos y las extensiones de Adobe Commerce.
 exl-id: 017d75df-fd21-4fb4-abc9-80a35fc47d0f
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '177'
+source-wordcount: '173'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Para actualizar o actualizar un módulo o una extensión:
 
 1. Descargue el archivo actualizado desde Marketplace u otro desarrollador de extensiones. Tome nota del nombre y la versión del módulo.
 
-1. Exporte el contenido al directorio de instalación raíz de Adobe Commerce o de Magento Open Source.
+1. Exporte el contenido al directorio de instalación raíz de Adobe Commerce.
 
 1. Si existe un paquete Composer para el módulo, ejecute una de las siguientes acciones.
 

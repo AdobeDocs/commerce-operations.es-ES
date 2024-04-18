@@ -1,24 +1,24 @@
 ---
 title: Motor de búsqueda actual no admitido
-description: Solucione los problemas de actualización de Adobe Commerce o de Magento Open Source después de encontrar un error sobre un motor de búsqueda no compatible.
+description: Solucione el problema de la actualización de Adobe Commerce después de encontrar un error sobre un motor de búsqueda no compatible.
 feature: Upgrade, Search
 exl-id: 11479d23-53a5-4086-9f9a-c3420ccad073
-source-git-commit: 012cba58b336b032b1c911539008c1fb961c2e07
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '416'
+source-wordcount: '400'
 ht-degree: 0%
 
 ---
 
 # Motor de búsqueda actual no admitido
 
-El siguiente mensaje de error indica que la versión de Adobe Commerce o del Magento Open Source desde la que está actualizando está configurada para utilizar un motor de búsqueda en el catálogo que no es compatible con la versión a la que está actualizando:
+El siguiente mensaje de error indica que la versión de Adobe Commerce desde la que está actualizando está configurada para utilizar un motor de búsqueda en el catálogo que no es compatible con la versión a la que está actualizando:
 
 ```terminal
 Your current search engine, <Engine Name>, is not supported. You must install a supported search engine before upgrading. See the System Upgrade Guide for more information.
 ```
 
-Este error significa que una de las siguientes condiciones es verdadera en la versión de nivel inferior de Adobe Commerce o Magento Open Source:
+Este error significa que una de las siguientes condiciones es verdadera en la versión de nivel inferior de Adobe Commerce:
 
 - El motor de búsqueda se establece en MySQL.
 - El motor de búsqueda está configurado con una versión de Elasticsearch que ya no es compatible.
@@ -62,7 +62,7 @@ Después de configurar el motor de búsqueda y reindexar, está listo para actua
 
 Ya no se admite el Elasticsearch 6 y versiones anteriores de.
 
-Un valor de `elasticsearch` indica que la versión de nivel inferior de Adobe Commerce o Magento Open Source está configurada para utilizar Elasticsearch 2.x. Esta versión de Elasticsearch ya no es compatible.
+Un valor de `elasticsearch` indica que la versión de nivel inferior de Adobe Commerce está configurada para utilizar Elasticsearch 2.x. Esta versión de Elasticsearch ya no es compatible.
 
 Debe realizar las siguientes tareas antes de actualizar a la versión 2.4:
 

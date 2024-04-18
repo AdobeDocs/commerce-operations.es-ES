@@ -1,11 +1,11 @@
 ---
 title: Flujo de implementación
-description: Obtenga información acerca de los pasos necesarios para implementar Adobe Commerce o Magento Open Source en un entorno de producción.
+description: Obtenga información acerca de los pasos necesarios para implementar Adobe Commerce en un entorno de producción.
 feature: Best Practices, Deploy
 exl-id: 88da0b1b-5aa7-4f1c-9d01-ae58324b2754
-source-git-commit: 012cba58b336b032b1c911539008c1fb961c2e07
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '468'
+source-wordcount: '467'
 ht-degree: 0%
 
 ---

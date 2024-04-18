@@ -1,10 +1,10 @@
 ---
 title: Compruebe la instalación
-description: Siga estos pasos para confirmar que la instalación local de Adobe Commerce o Magento Open Source se ha realizado correctamente.
+description: Siga estos pasos para confirmar que la instalación local de Adobe Commerce se ha realizado correctamente.
 exl-id: 0bd7ec01-c616-4384-ae26-db2ce3668caf
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '259'
+source-wordcount: '245'
 ht-degree: 0%
 
 ---

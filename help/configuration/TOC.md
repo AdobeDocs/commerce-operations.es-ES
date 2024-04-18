@@ -1,10 +1,10 @@
 ---
 user-guide-title: Guía de configuración
-user-guide-description: Configure las funciones y servicios de la aplicación de Adobe Commerce o de Magento Open Source.
+user-guide-description: Configure las funciones y los servicios de la aplicación de Adobe Commerce.
 feature: Configuration
-source-git-commit: b61a2726e1a26229515d28332bbd88ba3d416a98
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '364'
+source-wordcount: '354'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ ht-degree: 0%
       + [Descripción general del barniz](cache/config-varnish.md)
       + [Instalar barniz](cache/config-varnish-install.md)
    + [Servidor web](cache/config-varnish-server.md)
-   + [Configurar la aplicación de Commerce](cache/configure-varnish-commerce.md)
+   + [Configuración de la aplicación Commerce](cache/configure-varnish-commerce.md)
    + [Configuración avanzada de barniz](cache/config-varnish-advanced.md)
    + [Borrado de caché](cache/use-varnish-cache.md)
    + [Caché que borra varias instancias de Varnish](cache/use-multiple-varnish-cache.md)

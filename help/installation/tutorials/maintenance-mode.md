@@ -1,10 +1,10 @@
 ---
 title: Habilitar o deshabilitar el modo de mantenimiento
-description: Siga estos pasos para personalizar lo que ven los clientes cuando la implementación de Adobe Commerce o de Magento Open Source está inactiva por motivos de mantenimiento.
+description: Siga estos pasos para personalizar lo que los clientes ven cuando la implementación de Adobe Commerce está inactiva por motivos de mantenimiento.
 exl-id: 5d9f1493-e771-47b4-b906-3771026cf07a
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '551'
+source-wordcount: '547'
 ht-degree: 0%
 
 ---

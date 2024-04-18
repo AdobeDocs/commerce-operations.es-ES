@@ -1,10 +1,10 @@
 ---
 title: Entorno de desarrollo Recommendations
-description: Obtenga información acerca de las recomendaciones de rendimiento para configurar su Adobe Commerce local o entorno de desarrollo de Magento Open Source.
+description: Obtenga información acerca de las recomendaciones de rendimiento para configurar su entorno de desarrollo local de Adobe Commerce.
 exl-id: f57396c0-86be-4933-8066-eb51c42fb9e4
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '235'
+source-wordcount: '232'
 ht-degree: 0%
 
 ---

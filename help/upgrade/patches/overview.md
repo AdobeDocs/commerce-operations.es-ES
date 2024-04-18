@@ -2,9 +2,9 @@
 title: Cómo funcionan los parches
 description: Obtenga información sobre los distintos tipos de parches para Adobe Commerce y cómo funcionan.
 exl-id: d7072ed4-7d51-41fe-881a-aae3b2000b55
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '537'
+source-wordcount: '533'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ Utilice el [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tool
 
 ## Parches personalizados
 
-A veces, el equipo de ingeniería de Adobe tarda un tiempo en incluir una corrección de errores realizada en GitHub en una versión de Adobe Commerce o de Compositor de Magento Open Source. Mientras tanto, puede crear un parche desde GitHub y utilizar el [`cweagans/composer-patches`](https://github.com/cweagans/composer-patches/) para aplicarlo a su instalación basada en Composer.
+A veces, el equipo de ingeniería de Adobe tarda un tiempo en incluir una corrección de errores realizada en GitHub en una versión del Compositor de Adobe Commerce. Mientras tanto, puede crear un parche desde GitHub y utilizar el [`cweagans/composer-patches`](https://github.com/cweagans/composer-patches/) para aplicarlo a su instalación basada en Composer.
 
 Utilice el [línea de comandos](apply.md#command-line) o [Compositor](apply.md#composer) para aplicar parches personalizados.
 

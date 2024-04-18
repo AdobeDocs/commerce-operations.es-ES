@@ -1,11 +1,11 @@
 ---
 title: Prácticas recomendadas de configuración
-description: Optimizar el tiempo de respuesta de la implementación de Adobe Commerce o Magento Open Source mediante estas prácticas recomendadas.
+description: Optimizar el tiempo de respuesta de la implementación de Adobe Commerce mediante estas prácticas recomendadas.
 feature: Best Practices, Configuration
 exl-id: 4cb0f5e7-49d5-4343-a8c7-b8e351170f91
-source-git-commit: 602a1ef82fcb8d30ff027db0fe0aacb981c7e08e
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '1425'
+source-wordcount: '1417'
 ht-degree: 0%
 
 ---
@@ -32,11 +32,11 @@ Cuando inicie la tienda en producción, active todas las cachés del **[!UICONTR
 
 ## Notificaciones de correo electrónico asincrónicas
 
-Al habilitar la configuración &quot;Notificaciones por correo electrónico asincrónicas&quot; se mueven al segundo plano los procesos que administran las notificaciones por correo electrónico de cierre de compra y procesamiento de pedidos. Para habilitar esta función, vaya a **[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Sales] > [!UICONTROL Sales Emails] > [!UICONTROL General Settings] >[!UICONTROL Asynchronous Sending]**. Consulte [Correos electrónicos de ventas](https://docs.magento.com/user-guide/configuration/sales/sales-emails.html) en el _Guía del usuario de Magento Open Source_ para obtener más información.
+Al habilitar la configuración &quot;Notificaciones por correo electrónico asincrónicas&quot; se mueven al segundo plano los procesos que administran las notificaciones por correo electrónico de cierre de compra y procesamiento de pedidos. Para habilitar esta función, vaya a **[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Sales] > [!UICONTROL Sales Emails] > [!UICONTROL General Settings] >[!UICONTROL Asynchronous Sending]**. Consulte [Correos electrónicos de ventas](https://docs.magento.com/user-guide/configuration/sales/sales-emails.html) en el _Guía del usuario de administración_ para obtener más información.
 
 ## Procesamiento asincrónico de datos de pedidos
 
-Puede haber momentos en que las ventas intensivas en una tienda ocurren al mismo tiempo que [!DNL Commerce] está realizando un procesamiento intensivo de pedidos. Puede configurar [!DNL Commerce] para distinguir estos dos patrones de tráfico en el nivel de base de datos a fin de evitar conflictos entre las operaciones de lectura y escritura en las tablas correspondientes. Puede almacenar e indexar datos de pedido de forma asíncrona. Los pedidos se almacenan temporalmente y se mueven de forma masiva a la cuadrícula de Order Management sin que se produzcan conflictos. Puede activar esta opción desde **[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Advanced] > [!UICONTROL Developer] > [!UICONTROL Grid Settings] >[!UICONTROL Asynchronous indexing]**. Consulte [Actualizaciones programadas de cuadrícula](https://docs.magento.com/user-guide/sales/order-grid-updates-schedule.html) en el _Guía del usuario de Magento Open Source_ para obtener más información.
+Puede haber momentos en que las ventas intensivas en una tienda ocurren al mismo tiempo que [!DNL Commerce] está realizando un procesamiento intensivo de pedidos. Puede configurar [!DNL Commerce] para distinguir estos dos patrones de tráfico en el nivel de base de datos a fin de evitar conflictos entre las operaciones de lectura y escritura en las tablas correspondientes. Puede almacenar e indexar datos de pedido de forma asíncrona. Los pedidos se almacenan temporalmente y se mueven de forma masiva a la cuadrícula de Order Management sin que se produzcan conflictos. Puede activar esta opción desde **[!UICONTROL Stores]> [!UICONTROL Settings] > [!UICONTROL Configuration] > [!UICONTROL Advanced] > [!UICONTROL Developer] > [!UICONTROL Grid Settings] >[!UICONTROL Asynchronous indexing]**. Consulte [Actualizaciones programadas de cuadrícula](https://docs.magento.com/user-guide/sales/order-grid-updates-schedule.html) en el _Guía del usuario de administración_ para obtener más información.
 
 >[!WARNING]
 >

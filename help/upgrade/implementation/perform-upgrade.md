@@ -2,9 +2,9 @@
 title: Realización de una actualización
 description: Siga estos pasos para actualizar las implementaciones locales de Adobe Commerce.
 exl-id: 9183f1d2-a8dd-4232-bdee-7c431e0133df
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '738'
+source-wordcount: '730'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Realización de una actualización
 
-Puede actualizar _local_ implementaciones de la aplicación Adobe Commerce o Magento Open Source desde la línea de comandos si instaló el software mediante:
+Puede actualizar _local_ implementaciones de la aplicación de Adobe Commerce desde la línea de comandos si instaló el software mediante:
 
 - Descarga del metapaquete Composer mediante el `composer create-project` comando.
 - Instalación del archivo comprimido.
@@ -110,7 +110,7 @@ Debe completar la [requisitos previos de actualización](../prepare/prerequisite
 
    - `<product>` —(Obligatorio) El paquete que desea actualizar. Para instalaciones locales, este valor debe ser `product-community-edition` o `product-enterprise-edition`.
 
-   - `<version>` —(Obligatorio) La versión de Adobe Commerce o Magento Open Source a la que está actualizando. Por ejemplo, `2.4.3`.
+   - `<version>` —(Obligatorio) La versión de Adobe Commerce a la que está actualizando. Por ejemplo, `2.4.3`.
 
    - `--no-update` —(Obligatorio) Deshabilita la actualización automática de las dependencias.
 
