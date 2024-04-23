@@ -3,7 +3,7 @@ keywords: Adobe Commerce;inicio;temas populares
 title: Inicio
 description: Examine un índice de la administración del sistema de Adobe Commerce y la documentación operativa del producto.
 exl-id: 45ec4948-338f-4276-8a70-d0db720322d9
-source-git-commit: c8093c4575eccc1d012da0e1502eb618c9b048e5
+source-git-commit: 5b294d586b58689a576f411b33d95e4dfa76076e
 workflow-type: tm+mt
 source-wordcount: '225'
 ht-degree: 18%
@@ -21,7 +21,7 @@ Obtenga información práctica sobre conceptos, procesos, herramientas y prácti
       <img alt="Información de versión" src="../assets/icons/promote.svg" width="40" height="40"/>
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html"><strong>Información de versión</strong></a>
+      <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/latest.html"><strong>Información de versión</strong></a>
       <p>Revise toda la información de la versión de los parches y servicios de Adobe Commerce.</p>
     </div>
   </td>
