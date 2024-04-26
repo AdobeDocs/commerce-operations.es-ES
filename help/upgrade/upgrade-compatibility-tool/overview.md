@@ -2,7 +2,7 @@
 title: Descripción general de [!DNL Upgrade Compatibility Tool]
 description: Obtenga información acerca de [!DNL Upgrade Compatibility Tool] y cómo puede ayudarle con su proyecto de Adobe Commerce.
 exl-id: 9493406a-1690-462b-b119-1b685b026c0b
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: fc1be3362863d3b0fa3468380fe62ca698abac43
 workflow-type: tm+mt
 source-wordcount: '329'
 ht-degree: 0%
@@ -23,7 +23,7 @@ El [!DNL Upgrade Compatibility Tool] es una herramienta que compara una instanci
 
 Puede usar el complemento [!DNL Upgrade Compatibility Tool] mediante:
 
-- Como independiente [interfaz de línea de comandos](../upgrade-compatibility-tool/run.md) herramienta. Para ver la lista completa de comandos disponibles, consulte la [`bin/uct` reference](/help/reference/uct.md).
+- Como independiente [interfaz de línea de comandos](../upgrade-compatibility-tool/run.md) herramienta. Para ver la lista completa de comandos disponibles, consulte la [`bin/uct` reference](../../tools/reference/uct.md).
 - Integración de [!DNL Upgrade Compatibility Tool] con el [[!DNL Site-Wide Analysis Tool]](../upgrade-compatibility-tool/integrate-analysis-tool.md).
 - Una configuración de ejecución dentro de [Complemento Magento PHPStorm](../upgrade-compatibility-tool/run-configuration-phpstorm-plugin.md).
 
