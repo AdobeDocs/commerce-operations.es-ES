@@ -2,9 +2,9 @@
 title: Obtener las claves de autenticación
 description: Siga estos pasos para recuperar las credenciales y poder acceder a los paquetes de Adobe Commerce Composer en repo.magento.com.
 exl-id: 7ec2a410-d81f-476a-bf6a-f3c61982a734
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: fc63ca58cd2ff7c5ec597751980a39bfbe68aa5f
 workflow-type: tm+mt
-source-wordcount: '473'
+source-wordcount: '470'
 ht-degree: 0%
 
 ---
@@ -17,10 +17,10 @@ Para tener acceso a los paquetes de Adobe Commerce, debe utilizar las claves aso
 
 >[!TIP]
 >
->Si se encuentra con [errores](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html)Sin embargo, es posible que no tenga autorización para acceder al paquete o que el derecho de acceso haya caducado debido a una factura pendiente en su cuenta.
+>Si se encuentra con [errores](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html), es posible que no tenga autorización para acceder al paquete o que el derecho de acceso haya caducado debido a una factura pendiente en su cuenta.
 >
 >* Si es la persona de contacto principal de la cuenta, asegúrese de que no haya ninguna factura pendiente en la cuenta.
->* Si las claves proporcionadas por el contacto principal no funcionan y no hay facturas pendientes en la cuenta, póngase en contacto con [Asistencia de Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) para obtener ayuda sobre el uso del MAGEID del Contacto primario.
+>* Si las claves proporcionadas por el contacto principal no funcionan y no hay facturas pendientes en la cuenta, el contacto principal debe ponerse en contacto con [Asistencia de Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) para obtener asistencia.
 
 Para crear claves de autenticación:
 
