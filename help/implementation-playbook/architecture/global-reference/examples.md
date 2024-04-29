@@ -3,13 +3,15 @@ title: Ejemplos de arquitectura de referencia global
 description: Consulte ejemplos de administración de código para proyectos de Adobe Commerce a gran escala.
 role: Developer, Architect
 level: Experienced
-source-git-commit: 64f330919abab9644de1163c9a6d6501a9c50cc1
+hide: true
+hidefromtoc: true
+exl-id: 2a85b9bf-e547-4a2a-9234-210865f55609
+source-git-commit: 80cf4dc2b5c9dd690aee1b224fbe6c766fe8f2ab
 workflow-type: tm+mt
-source-wordcount: '825'
+source-wordcount: '816'
 ht-degree: 0%
 
 ---
-
 
 # Ejemplos de arquitectura de referencia global
 

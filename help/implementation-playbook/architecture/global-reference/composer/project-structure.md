@@ -3,13 +3,15 @@ title: Estructura del proyecto del Compositor
 description: Aprenda a configurar y mantener la opción de paquetes independientes descrita en los ejemplos de arquitectura de referencia global.
 feature: Best Practices
 role: Developer
-source-git-commit: b4213c40fdf903fd962a15fc99b143f31aedbcde
+hide: true
+hidefromtoc: true
+exl-id: 8757d5b8-8309-452f-bfb3-1188a816d14f
+source-git-commit: 80cf4dc2b5c9dd690aee1b224fbe6c766fe8f2ab
 workflow-type: tm+mt
 source-wordcount: '498'
 ht-degree: 0%
 
 ---
-
 
 # Estructura del proyecto del Compositor
 
