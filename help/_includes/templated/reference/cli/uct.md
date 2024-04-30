@@ -1,7 +1,7 @@
 ---
-source-git-commit: 68ea73d407dd3e6daf880a66de8ef4b7bbef2360
+source-git-commit: 19d19ef385cf4aaee3a255930af8e6d3b81de23a
 workflow-type: tm+mt
-source-wordcount: '1656'
+source-wordcount: '1638'
 ht-degree: 0%
 
 ---
@@ -23,11 +23,12 @@ Obtenga más información acerca de la herramienta en [Información general](/he
 
 ## `_complete`
 
-Comando interno para proporcionar sugerencias de finalización de shell
-
 ```bash
 bin/uct _complete [-s|--shell SHELL] [-i|--input INPUT] [-c|--current CURRENT] [-S|--symfony SYMFONY]
 ```
+
+Comando interno para proporcionar sugerencias de finalización de shell
+
 
 ### `--shell`, `-s`
 
@@ -56,7 +57,7 @@ La versión del script de finalización
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el comando de lista
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -105,10 +106,40 @@ No haga ninguna pregunta interactiva
 
 ## `completion`
 
-Volcar el script de finalización de shell
-
 ```bash
 bin/uct completion [--debug] [--] [<shell>]
+```
+
+Volcar el script de finalización de shell
+
+
+```
+The completion command dumps the shell completion script required
+to use shell autocompletion (currently only bash completion is supported).
+
+Static installation
+-------------------
+
+Dump the script to a global completion file and restart your shell:
+
+    uct/bin/uct completion bash | sudo tee /etc/bash_completion.d/uct
+
+Or dump the script to a local file and source it:
+
+    uct/bin/uct completion bash > completion.sh
+
+    # source the file whenever you use the project
+    source completion.sh
+
+    # or add this line at the end of your "~/.bashrc" file:
+    source /path/to/completion.sh
+
+Dynamic installation
+--------------------
+
+Add this to the end of your shell configuration file (e.g. "~/.bashrc"):
+
+    eval "$(/var/jenkins/workspace/gendocs-uct-cli/uct/bin/uct completion bash)"
 ```
 
 
@@ -126,7 +157,7 @@ Seguimiento del registro de depuración de finalización
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el comando de lista
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -175,10 +206,23 @@ No haga ninguna pregunta interactiva
 
 ## `help`
 
-Mostrar la ayuda de un comando
-
 ```bash
 bin/uct help [--format FORMAT] [--raw] [--] [<command_name>]
+```
+
+Mostrar la ayuda de un comando
+
+
+```
+The help command displays help for a given command:
+
+  uct/bin/uct help list
+
+You can also output the help in other formats by using the --format option:
+
+  uct/bin/uct help --format=xml list
+
+To display the list of available commands, please use the list command.
 ```
 
 
@@ -205,7 +249,7 @@ Para generar la ayuda del comando raw
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el comando de lista
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -254,10 +298,29 @@ No haga ninguna pregunta interactiva
 
 ## `list`
 
-Comandos de lista
-
 ```bash
 bin/uct list [--raw] [--format FORMAT] [--short] [--] [<namespace>]
+```
+
+Comandos de lista
+
+
+```
+The list command lists all commands:
+
+  uct/bin/uct list
+
+You can also display the commands for a specific namespace:
+
+  uct/bin/uct list test
+
+You can also output the information in other formats by using the --format option:
+
+  uct/bin/uct list --format=xml
+
+It's also possible to get raw list of commands (useful for embedding command runner):
+
+  uct/bin/uct list --raw
 ```
 
 
@@ -289,7 +352,7 @@ Para omitir la descripción de argumentos de comandos
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el comando de lista
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -338,11 +401,12 @@ No haga ninguna pregunta interactiva
 
 ## `refactor`
 
-Resuelve los problemas que se pueden solucionar automáticamente. Se actualizará el código de la ruta proporcionada.
-
 ```bash
 bin/uct refactor <path>
 ```
+
+Resuelve los problemas que se pueden solucionar automáticamente. Se actualizará el código de la ruta proporcionada.
+
 
 
 ### `path`
@@ -353,7 +417,7 @@ Ruta para resolver problemas en.
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el comando de lista
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -402,11 +466,12 @@ No haga ninguna pregunta interactiva
 
 ## `core:code:changes`
 
-La herramienta de compatibilidad de actualización es una herramienta de línea de comandos que compara una instancia de Adobe Commerce con una versión específica analizando todos los módulos que no son de Adobe Commerce instalados en ella. Devuelve una lista de errores y advertencias que debe corregir antes de actualizar a una nueva versión del código Adobe Commerce.
-
 ```bash
 bin/uct core:code:changes [-o|--output [OUTPUT]] [--] <dir> [<vanilla-dir>]
 ```
+
+La herramienta de compatibilidad de actualización es una herramienta de línea de comandos que compara una instancia de Adobe Commerce con una versión específica analizando todos los módulos que no son de Adobe Commerce instalados en ella. Devuelve una lista de errores y advertencias que debe corregir antes de actualizar a una nueva versión del código Adobe Commerce.
+
 
 
 ### `dir`
@@ -428,7 +493,7 @@ Ruta del archivo donde se exportará la salida (formato Json)
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el comando de lista
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -477,11 +542,12 @@ No haga ninguna pregunta interactiva
 
 ## `dbschema:diff`
 
-Permitir la lista de diferencias de esquema de Adobe Commerce DB entre dos versiones seleccionadas. Versiones disponibles: 2.3.0 | 2.3.1. | 2.3.2 | 2.3.2-p2 | 2.3.3 | 2.3.3-p1 | 2.3.4 | 2.3.4-p1 | 2.3.4-p2 | 2.3.5 | 2,3,5-p1 | 2,3,5-p2 | 2.3.6 | 2.3.6-p1 | 2.3.7 | 2.3.7-p1 | 2,3,7-p2 | 2.3.7-p3 | 2.3.7-p4 | 2.4.0 | 2.4.0-p1 | 2.4.1 | 2.4.1-p1 | 2.4.2 | 2.4.2-p1 | 2.4.2-p2 | 2.4.3 | 2.4.3-p1 | 2.4.3-p2 | 2.4.3-p3 | 2.4.4 | 2.4.4-p1 | 2.4.5 | 2.4.4-p2 | 2,4,5-p1 | 2.4.4-p3 | 2.4.4-p4 | 2.4.4-p5 | 2,4,5-p2 | 2,4,5-p3 | 2.4.5-p4 | 2.4.6 | 2.4.6-p1 | 2.4.6-p2 | 2.4.7-beta1 | 2.4.4-p6 | 2,4,5-p5 | 2.4.6-p3 | 2.4.7-beta2 | 2.4.4-p7 | 2.4.5-p6 | 2.4.6-p4 | 2.4.7-beta3 | 2.4.7 | 2.4.6-p5 | 2.4.5-p7 | 2.4.4-p8
-
 ```bash
 bin/uct dbschema:diff <current-version> <target-version>
 ```
+
+Permitir la lista de diferencias de esquema de Adobe Commerce DB entre dos versiones seleccionadas. Versiones disponibles: 2.3.0 | 2.3.1. | 2.3.2 | 2.3.2-p2 | 2.3.3 | 2.3.3-p1 | 2.3.4 | 2.3.4-p1 | 2.3.4-p2 | 2.3.5 | 2,3,5-p1 | 2,3,5-p2 | 2.3.6 | 2.3.6-p1 | 2.3.7 | 2.3.7-p1 | 2,3,7-p2 | 2.3.7-p3 | 2.3.7-p4 | 2.4.0 | 2.4.0-p1 | 2.4.1 | 2.4.1-p1 | 2.4.2 | 2.4.2-p1 | 2.4.2-p2 | 2.4.3 | 2.4.3-p1 | 2.4.3-p2 | 2.4.3-p3 | 2.4.4 | 2.4.4-p1 | 2.4.5 | 2.4.4-p2 | 2,4,5-p1 | 2.4.4-p3 | 2.4.4-p4 | 2.4.4-p5 | 2,4,5-p2 | 2,4,5-p3 | 2.4.5-p4 | 2.4.6 | 2.4.6-p1 | 2.4.6-p2 | 2.4.7-beta1 | 2.4.4-p6 | 2,4,5-p5 | 2.4.6-p3 | 2.4.7-beta2 | 2.4.4-p7 | 2.4.5-p6 | 2.4.6-p4 | 2.4.7-beta3 | 2.4.7 | 2.4.6-p5 | 2.4.5-p7 | 2.4.4-p8
+
 
 
 ### `current-version`
@@ -498,7 +564,7 @@ versión de target (p. ej. 2.4.5).
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el comando de lista
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -547,11 +613,12 @@ No haga ninguna pregunta interactiva
 
 ## `graphql:compare`
 
-Verificación de la compatibilidad del esquema GraphQL
-
 ```bash
 bin/uct graphql:compare [-o|--output [OUTPUT]] [--] <schema1> <schema2>
 ```
+
+Verificación de la compatibilidad del esquema GraphQL
+
 
 
 ### `schema1`
@@ -574,7 +641,7 @@ Ruta del archivo donde se exportará la salida (formato JSON)
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el comando de lista
 
 - Predeterminado: `false`
 - No acepta un valor
@@ -623,11 +690,12 @@ No haga ninguna pregunta interactiva
 
 ## `upgrade:check`
 
-La herramienta de compatibilidad de actualización es una herramienta de línea de comandos que compara una instancia personalizada de Adobe Commerce con una versión específica analizando todos los módulos instalados en ella. Devuelve una lista de errores y advertencias que deben solucionarse antes de actualizar a la última versión de Adobe Commerce.
-
 ```bash
 bin/uct upgrade:check [-a|--current-version [CURRENT-VERSION]] [-c|--coming-version [COMING-VERSION]] [--json-output-path [JSON-OUTPUT-PATH]] [--html-output-path [HTML-OUTPUT-PATH]] [--min-issue-level [MIN-ISSUE-LEVEL]] [-i|--ignore-current-version-compatibility-issues] [--context CONTEXT] [--] <dir>
 ```
+
+La herramienta de compatibilidad de actualización es una herramienta de línea de comandos que compara una instancia personalizada de Adobe Commerce con una versión específica analizando todos los módulos instalados en ella. Devuelve una lista de errores y advertencias que deben solucionarse antes de actualizar a la última versión de Adobe Commerce.
+
 
 
 ### `dir`
@@ -682,7 +750,7 @@ Contexto de ejecución. Esta opción se utiliza con fines de integración y no a
 
 ### `--help`, `-h`
 
-Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para \&lt;info>lista\&lt;/info> mando
+Muestra la ayuda del comando especificado. Cuando no se proporciona ningún comando, se muestra la ayuda para el comando de lista
 
 - Predeterminado: `false`
 - No acepta un valor
