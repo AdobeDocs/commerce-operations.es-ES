@@ -3,9 +3,9 @@ user-guide-title: Información de versión
 user-guide-description: Acceda a toda la información de la versión de los parches y servicios de Adobe Commerce en un solo lugar.
 feature: Release Notes
 recommendations: noDisplay, noCatalog
-source-git-commit: 5b294d586b58689a576f411b33d95e4dfa76076e
+source-git-commit: 1eb4ac6e9f1cb0fda9b7a8daaa5696c2c1ed862c
 workflow-type: tm+mt
-source-wordcount: '124'
+source-wordcount: '122'
 ht-degree: 3%
 
 ---
@@ -13,7 +13,6 @@ ht-degree: 3%
 
 # Información de versión {#release}
 
-- [Última versión](latest.md)
 - Notas de versión {#notes}
    - [Información general](release-notes/overview.md)
    - [Cambios incompatibles con versiones anteriores](backward-incompatible-changes.md)

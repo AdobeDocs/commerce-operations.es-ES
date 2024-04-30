@@ -2,7 +2,7 @@
 title: Inicio de guías operativas
 description: Examine un índice de la administración del sistema de Adobe Commerce y la documentación operativa del producto.
 exl-id: 45ec4948-338f-4276-8a70-d0db720322d9
-source-git-commit: 0e3d5c0f7c0636bb690eea8643afdace074f0ffd
+source-git-commit: a33d12a055db0cb4a4c8f64992d6ebf77842cbe7
 workflow-type: tm+mt
 source-wordcount: '198'
 ht-degree: 20%
@@ -19,11 +19,11 @@ Utilice esta colección de guías para obtener más información sobre los conce
 <table>
 <tr>
   <td valign="top">
-    <a href="../release/latest.md">
+    <a href="../release/release-notes/overview.md">
       <img alt="Información de versión" src="../assets/icons/promote.svg" width="40"/>
     </a>
     <div>
-      <a href="../release/latest.md"><strong>Información de versión</strong></a>
+      <a href="../release/release-notes/overview.md"><strong>Información de versión</strong></a>
       <p>Revise toda la información de la versión de los parches y servicios de Adobe Commerce.</p>
     </div>
   </td>
