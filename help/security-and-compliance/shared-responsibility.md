@@ -2,9 +2,9 @@
 title: Modelo operativo y de seguridad de responsabilidad compartida
 description: Obtenga información sobre las responsabilidades de seguridad de cada parte involucrada en su proyecto de infraestructura de Adobe Commerce en la nube.
 exl-id: f3cc1685-e469-4e30-b18e-55ce10dd69ce
-source-git-commit: 75eafe97a69668e43818f1c01639956e9b677a69
+source-git-commit: e188dad17ccb7d6ae10ed1457e86cc4551deaa75
 workflow-type: tm+mt
-source-wordcount: '2804'
+source-wordcount: '2805'
 ht-degree: 0%
 
 ---
@@ -900,6 +900,6 @@ Los comerciantes son responsables de sincronizar los datos entre los entornos de
 | Disponibilidad de recursos de CPU, centro de datos, espacio en disco | R |   |
 | Disponibilidad y ejecución de capacidad de sobretensión o de ampliación de emergencia | R |   |
 | Solicitando capacidad de sobretensión |     | R |
-| Supervisión del uso de vCPU con respecto a los límites | R |   |
+| Monitorización del uso de vCPU con respecto a los límites | R |   |
 
 {style="table-layout:auto"}
