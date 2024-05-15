@@ -1,24 +1,32 @@
 ---
-title: Procesamiento de pedidos de alto rendimiento
-description: Optimice la realización de pedidos y la experiencia de cierre de compra para su implementación de Adobe Commerce.
+title: Prácticas recomendadas de rendimiento de Checkout
+description: Obtenga información sobre cómo optimizar el rendimiento de las experiencias de cierre de compra en el sitio de Adobe Commerce.
 feature: Best Practices, Orders
 exl-id: dc2d0399-0d7f-42d8-a6cf-ce126e0b052d
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: e4c1832076bb81cd3e70ff279a6921ffb29ea631
 workflow-type: tm+mt
-source-wordcount: '983'
+source-wordcount: '1132'
 ht-degree: 0%
 
 ---
 
-# Procesamiento de pedidos de alto rendimiento
 
-Puede optimizar la experiencia de realización y cierre de compra del pedido configurando el siguiente conjunto de módulos para **procesamiento de pedidos de alto rendimiento**:
+# Prácticas recomendadas de rendimiento de Checkout
+
+El [pago y envío](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/checkout/checkout-process) El proceso de en Adobe Commerce es un aspecto crítico de la experiencia de la tienda. Se basa en el integrado [carrito](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront#shopping-cart) y [pago y envío](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront#checkout-page) funciones.
+
+El rendimiento es clave para mantener una buena experiencia de usuario. Revise la [resumen de evaluación de rendimiento](../implementation-playbook/infrastructure/performance/benchmarks.md) para obtener más información sobre las expectativas de rendimiento. Puede optimizar el rendimiento del cierre de compra configurando las siguientes opciones para **procesamiento de pedidos de alto rendimiento**:
 
 - [AsyncOrder](#asynchronous-order-placement): permite procesar pedidos de forma asíncrona mediante una cola.
 - [Cálculo de total diferido](#deferred-total-calculation): permite aplazar los cálculos de totales de pedidos hasta que comience el cierre de compra.
-- [Comprobación de inventario al cargar la oferta](#disable-inventory-check): permite omitir la validación de inventario de los artículos del carro de compras.
+- [Comprobación de inventario al cargar el carro](#disable-inventory-check): permite omitir la validación de inventario de los artículos del carro de compras.
+- [Equilibrio de carga](#load-balancing): permite activar conexiones secundarias para la base de datos MySQL y la instancia de Redis.
 
-Todas las funciones (AsyncOrder, Cálculo total diferido y Comprobación de inventario) funcionan de forma independiente. Puede utilizar las tres funciones simultáneamente o habilitar y deshabilitar funciones en cualquier combinación.
+Las opciones de configuración AsyncOrder, Cálculo de totales diferidos y Comprobación de inventario de carga de carro de compras funcionan de forma independiente. Puede utilizar las tres funciones simultáneamente o habilitar y deshabilitar las funciones en cualquier combinación.
+
+>[!NOTE]
+>
+>No utilice código PHP personalizado para personalizar las capacidades integradas de carrito y pago. Además de los posibles problemas de rendimiento, el uso de código PHP personalizado puede resultar en actualizaciones complejas y desafíos de mantenimiento. Estos problemas aumentan el coste total de propiedad. Si la personalización del carrito y del checkout basada en PHP es inevitable, utilice [Adobe Commerce Marketplace](https://commercemarketplace.adobe.com/)Solo extensiones aprobadas por. Todas las extensiones de Marketplace están sujetas a [amplia revisión](https://developer.adobe.com/commerce/marketplace/guides/sellers/extension-quality-program/) para comprobar que cumplen los estándares de codificación y las prácticas recomendadas de Adobe Commerce.
 
 ## Colocación de pedido asincrónica
 
@@ -29,7 +37,7 @@ Por ejemplo, un cliente agrega un producto al carro de compras y selecciona **[!
 - **Producto disponible**: el estado del pedido cambia a _Pendiente_, se ajusta la cantidad del producto, se envía un correo electrónico con los detalles del pedido al cliente y los detalles del pedido correctos están disponibles para su visualización en la **Pedidos y devoluciones** lista con opciones procesables, como reordenar.
 - **Producto agotado o con bajo suministro**: el estado del pedido cambia a _Rechazado_, la cantidad del producto no se ajusta, se envía un correo electrónico con detalles del pedido sobre el problema al cliente y los detalles del pedido rechazado están disponibles en la **Pedidos y devoluciones** lista sin opciones procesables.
 
-Utilice la interfaz de la línea de comandos para habilitar estas funciones o editar la variable `app/etc/env.php` archivo según los archivos README correspondientes definidos en la variable [_Guía de referencia del módulo_][mrg].
+Utilice la interfaz de la línea de comandos para habilitar estas funciones o editar la variable `app/etc/env.php` archivo según los archivos README correspondientes definidos en la variable [_Guía de referencia del módulo_](https://developer.adobe.com/commerce/php/module-reference/).
 
 **Para habilitar AsyncOrder**:
 
@@ -48,7 +56,7 @@ El `set` El comando escribe lo siguiente en `app/etc/env.php` archivo:
    ]
 ```
 
-Consulte [AsyncOrder] en el _Guía de referencia del módulo_.
+Consulte [AsyncOrder](https://developer.adobe.com/commerce/php/module-reference/module-async-order/) en el _Guía de referencia del módulo_.
 
 **Para deshabilitar AsyncOrder**:
 
@@ -73,7 +81,7 @@ El `set` El comando escribe lo siguiente en `app/etc/env.php` archivo:
 
 ### Compatibilidad con AsyncOrder
 
-AsyncOrder admite un conjunto limitado de [!DNL Commerce] funciones.
+AsyncOrder admite un conjunto limitado de características de Adobe Commerce.
 
 | Categoría | Función admitida |
 |------------------|--------------------------------------------------------------------------|
@@ -93,14 +101,14 @@ Cuando el módulo AsyncOrder está habilitado, los siguientes extremos REST y mu
 
 **REST:**
 
-- `POST /V1/carts/mine/payment-information`
-- `POST /V1/guest-carts/:cartId/payment-information`
-- `POST /V1/negotiable-carts/:cartId/payment-information`
+- [`POST /V1/carts/mine/payment-information`](https://adobe-commerce.redoc.ly/2.4.7-admin/tag/cartsminepayment-information#operation/PostV1CartsMinePaymentinformation)
+- [`POST /V1/guest-carts/{cartId}/payment-information`](https://adobe-commerce.redoc.ly/2.4.7-admin/tag/guest-cartscartIdpayment-information#operation/PostV1GuestcartsCartIdPaymentinformation)
+- [`POST /V1/negotiable-carts/{cartId}/payment-information`](https://adobe-commerce.redoc.ly/2.4.7-admin/tag/negotiable-cartscartIdpayment-information#operation/PostV1NegotiablecartsCartIdPaymentinformation)
 
 **GraphQL:**
 
-- [`placeOrder`](https://devdocs.magento.com/guides/v2.4/graphql/mutations/place-order.html)
-- [`setPaymentMethodAndPlaceOrder`](https://devdocs.magento.com/guides/v2.4/graphql/mutations/set-payment-place-order.html)
+- [`placeOrder`](https://developer.adobe.com/commerce/webapi/graphql/schema/cart/mutations/place-order/)
+- [`setPaymentMethodAndPlaceOrder`](https://developer.adobe.com/commerce/webapi/graphql/schema/cart/mutations/set-payment-place-order/)
 
 >[!INFO]
 >
@@ -108,7 +116,7 @@ Cuando el módulo AsyncOrder está habilitado, los siguientes extremos REST y mu
 
 #### Exclusión de métodos de pago
 
-Los desarrolladores pueden excluir explícitamente ciertos métodos de pago de la colocación de pedidos asincrónicos añadiéndolos al `Magento\AsyncOrder\Model\OrderManagement::paymentMethods` matriz. Los pedidos que utilizan métodos de pago excluidos se procesan sincrónicamente.
+Los desarrolladores pueden excluir explícitamente ciertos métodos de pago de la colocación asincrónica de pedidos añadiéndolos al `Magento\AsyncOrder\Model\OrderManagement::paymentMethods` matriz. Los pedidos que utilizan métodos de pago excluidos se procesan sincrónicamente.
 
 ### Pedido asíncrono de oferta negociable
 
@@ -118,7 +126,7 @@ El _Pedido asíncrono de oferta negociable_ El módulo B2B permite guardar eleme
 
 El _Cálculo de total diferido_ El módulo optimiza el proceso de cierre de compra al aplazar el cálculo total hasta que se solicite para el carro de compras o durante los pasos finales de cierre de compra. Cuando está habilitado, solo el subtotal se calcula cuando un cliente agrega productos al carro de compras.
 
-El cálculo total diferido es **inhabilitado** de forma predeterminada. Utilice la interfaz de la línea de comandos para habilitar estas funciones o editar la variable `app/etc/env.php` archivo según los archivos README correspondientes definidos en la variable [_Guía de referencia del módulo_][mrg].
+El cálculo total diferido es **inhabilitado** de forma predeterminada. Utilice la interfaz de la línea de comandos para habilitar estas funciones o editar la variable `app/etc/env.php` archivo según los archivos README correspondientes definidos en la variable [_Guía de referencia del módulo_](https://developer.adobe.com/commerce/php/module-reference/).
 
 **Para habilitar DeferredTotalCalculation**:
 
@@ -154,11 +162,11 @@ El `set` El comando escribe lo siguiente en `app/etc/env.php` archivo:
    ]
 ```
 
-Consulte [DeferredTotalCalculating] en el _Guía de referencia del módulo_.
+Consulte [DeferredTotalCalculating](https://developer.adobe.com/commerce/php/module-reference/module-deferred-total-calculating/) en el _Guía de referencia del módulo_.
 
 ### Impuesto de producto fijo
 
-Cuando se habilita el cálculo total diferido, el impuesto sobre el producto fijo (FPT) no se incluye en el precio del producto ni en el subtotal del carro de compras después de agregar el producto al carro de compras. El cálculo de FTP se difiere al agregar un producto al minicarrito. El FTP se muestra correctamente en el carro de compras después de pasar al cierre de compra final.
+Cuando el cálculo del total diferido está habilitado, el impuesto sobre el producto fijo (FPT) no se incluye en el precio del producto y en el subtotal del carro de compras después de agregar el producto al carro de compras. El cálculo de FTP se difiere al agregar un producto al minicarrito. El FTP se muestra correctamente en el carro de compras después de pasar al cierre de compra final.
 
 ## Desactivar comprobación de inventario
 
@@ -166,13 +174,13 @@ El _Habilitar inventario al cargar el carro_ la configuración global determina 
 
 Cuando está desactivada, la comprobación de inventario no se produce al añadir un producto al carro de compras. Si se omite esta comprobación de inventario, algunos escenarios sin existencias podrían generar otros tipos de errores. Una comprobación de inventario _siempre_ se produce en el paso de colocación del pedido, incluso cuando está desactivado.
 
-**Habilitar comprobación de inventario al cargar el carro** está habilitado (establecido en Sí) de forma predeterminada. Para desactivar la comprobación de inventario al cargar el carro, establezca **[!UICONTROL Enable Inventory Check On Cart Load]** hasta `No` en la IU de administración **Tiendas** > **Configuración** > **Catálogo** > **Inventario** > **Opciones de Stock** sección. Consulte [Configurar opciones globales][global] y [Inventario de catálogo][inventory] en el _Guía del usuario_.
+**Habilitar comprobación de inventario al cargar el carro** está habilitado (establecido en Sí) de forma predeterminada. Para desactivar la comprobación de inventario al cargar el carro, establezca **[!UICONTROL Enable Inventory Check On Cart Load]** hasta `No` en la IU de administración **Tiendas** > **Configuración** > **Catálogo** > **Inventario** > **Opciones de Stock** sección. Consulte [Configurar opciones globales](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/configuration/global-options) y [Inventario de catálogo](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/guide-overview) en el _Guía del usuario_.
 
 ## Equilibrio de carga
 
 Puede ayudar a equilibrar la carga entre los distintos nodos activando conexiones secundarias para la base de datos MySQL y la instancia de Redis.
 
-Adobe Commerce puede leer varias bases de datos o instancias de Redis de forma asincrónica. Si utiliza Commerce en la infraestructura de la nube, puede configurar las conexiones secundarias editando el [MYSQL_USE_SLAVE_CONNECTION](https://devdocs.magento.com/cloud/env/variables-deploy.html#mysql_use_slave_connection) y [REDIS_USE_SLAVE_CONNECTION](https://devdocs.magento.com/cloud/env/variables-deploy.html#redis_use_slave_connection) valores en la `.magento.env.yaml` archivo. Solo un nodo debe gestionar el tráfico de lectura-escritura, por lo que las variables se deben configurar como `true` da como resultado la creación de una conexión secundaria para el tráfico de solo lectura. Establezca los valores en `false` para quitar cualquier matriz de conexión de solo lectura existente de `env.php` archivo.
+Adobe Commerce puede leer varias bases de datos o instancias de Redis de forma asincrónica. Si utiliza Commerce en la infraestructura de la nube, puede configurar las conexiones secundarias editando el [MYSQL_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy#mysql_use_slave_connection) y [REDIS_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy#redis_use_slave_connection) valores en la `.magento.env.yaml` archivo. Solo un nodo debe gestionar el tráfico de lectura-escritura, por lo que las variables se deben configurar como `true` da como resultado la creación de una conexión secundaria para el tráfico de solo lectura. Establezca los valores en `false` para quitar cualquier matriz de conexión de solo lectura existente de `env.php` archivo.
 
 Ejemplo de `.magento.env.yaml` archivo:
 
@@ -182,11 +190,3 @@ stage:
     MYSQL_USE_SLAVE_CONNECTION: true
     REDIS_USE_SLAVE_CONNECTION: true
 ```
-
-<!-- link definitions -->
-
-[global]: https://experienceleague.adobe.com/docs/commerce-admin/inventory/configuration/global-options.html
-[inventory]: https://experienceleague.adobe.com/docs/commerce-admin/inventory/guide-overview.html
-[mrg]: https://developer.adobe.com/commerce/php/module-reference/
-[AsyncOrder]: https://developer.adobe.com/commerce/php/module-reference/module-async-order/
-[DeferredTotalCalculating]: https://developer.adobe.com/commerce/php/module-reference/module-deferred-total-calculating/

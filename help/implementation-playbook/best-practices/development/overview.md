@@ -4,9 +4,9 @@ description: Obtenga información acerca de las prácticas recomendadas de imple
 exl-id: 499c16df-0e4d-4950-8169-96356bdff1a7
 feature: Best Practices
 role: Developer
-source-git-commit: ce386611834c4199e34b5d95ce76254957821f46
+source-git-commit: cca301a72b972d843b878fae28901a47c8fc0489
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '336'
 ht-degree: 2%
 
 ---
@@ -37,7 +37,15 @@ Las secciones siguientes incluyen información sobre las prácticas recomendadas
 | [Revisión de código](code-review.md) | Proceso de validación recomendado para garantizar que la funcionalidad implementada cumpla los requisitos |
 | [Compositor frente a Git](code-management.md) | Determine cómo distribuir código personalizado teniendo en cuenta la administración de versiones, la complejidad del código y la administración de dependencias |
 | [Estrategia de ramas](git-branching.md) | Administrar código fuente en repositorios Git |
-| [Ejemplos de GRA](../../architecture/global-reference/examples.md) | Comprender los métodos comunes para organizar una [arquitectura de referencia global](../../architecture/global-reference/overview.md) código base |
+
+## Plataforma y servicios
+
+| Práctica recomendada | Descripción |
+|--------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
+| [Compilaciones e implementación](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices.html){target="_blank"} | Describe las prácticas recomendadas para las fases de compilación e implementación de Adobe Commerce en proyectos de infraestructura en la nube |
+| Depuración | Depurar el marco de trabajo de Adobe Commerce de forma sistemática y eficaz |
+| [Implementación de contenido estático](static-content-deployment.md) | Evite los problemas con el contenido estático que no aparezca en la tienda |
+| [Solución de problemas](troubleshooting.md) | Solución de problemas comunes de implementación de Adobe Commerce |
 
 ## Base de datos
 
@@ -67,12 +75,3 @@ Las secciones siguientes incluyen información sobre las prácticas recomendadas
 | [Extensiones](https://developer.adobe.com/commerce/php/best-practices/){target="_blank"} | Describe los patrones de desarrollo para garantizar la compatibilidad entre su extensión, las versiones futuras de Adobe Commerce y otras extensiones personalizadas |
 | [Bloques de contenido privado](private-content-block-configuration.md) | Configurar bloques de contenido privado para optimizar el rendimiento de la tienda |
 | [Modificar código PHP principal y de terceros](modifying-core-and-third-party-code.md) | Modifique la funcionalidad, el resultado o la entrada de cualquier código que no haya creado o que no controle directamente |
-
-## Plataforma y servicios
-
-| Práctica recomendada | Descripción |
-|--------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
-| [Compilaciones e implementación](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices.html){target="_blank"} | Describe las prácticas recomendadas para las fases de compilación e implementación de Adobe Commerce en proyectos de infraestructura en la nube |
-| Depuración | Depurar el marco de trabajo de Adobe Commerce de forma sistemática y eficaz |
-| [Implementación de contenido estático](static-content-deployment.md) | Evite los problemas con el contenido estático que no aparezca en la tienda |
-| [Solución de problemas](troubleshooting.md) | Solución de problemas comunes de implementación de Adobe Commerce |

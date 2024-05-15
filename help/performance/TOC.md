@@ -1,12 +1,12 @@
 ---
 user-guide-title: Prácticas recomendadas de rendimiento
-user-guide-description: Optimice el rendimiento de su implementación de producción de Adobe Commerce con nuestras recomendaciones.
+user-guide-description: Optimice el rendimiento de su implementación de producción de Adobe Commerce con estas recomendaciones.
 feature: Best Practices
 topic: Administration, Commerce, Development, Performance
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: cca301a72b972d843b878fae28901a47c8fc0489
 workflow-type: tm+mt
-source-wordcount: '50'
-ht-degree: 2%
+source-wordcount: '46'
+ht-degree: 4%
 
 ---
 
@@ -17,10 +17,10 @@ ht-degree: 2%
 - [Recomendaciones de hardware](hardware.md)
 - [Recomendaciones de software](software.md)
 - [Arquitectura de referencia](reference-architecture.md)
-- [Recomendaciones del entorno de desarrollo](development-environment.md)
-- [Prácticas recomendadas de configuración](configuration.md)
+- [Entorno de desarrollo](development-environment.md)
+- [Proceso de cierre de compra](high-throughput-order-processing.md)
+- [Configuración](configuration.md)
 - [Flujo de implementación](deployment-flow.md)
-- [Procesamiento de pedidos de alto rendimiento](high-throughput-order-processing.md)
 - Conceptos avanzados {#concepts}
    - [Configuración avanzada](advanced-setup.md)
    - [Avanzadas [!DNL JavaScript] agrupamiento](advanced-js-bundling.md)
