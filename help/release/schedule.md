@@ -2,7 +2,7 @@
 title: Programación de versiones
 description: Descubra cuándo Adobe tiene previsto anunciar lanzar nuevas funciones de Adobe Commerce.
 exl-id: ae1e09cd-966f-44a3-9e4d-b90bb838429d
-source-git-commit: 4d57c979e8e65e1463f4f16829104cfbde730cb2
+source-git-commit: 1eac85dd1cf90f6cb064dc68a4622a6343c84b4d
 workflow-type: tm+mt
 source-wordcount: '498'
 ht-degree: 2%
@@ -33,7 +33,7 @@ La siguiente tabla proporciona las fechas de los lanzamientos programados (las f
    <tr>
       <td colspan="3"><strong>Leyenda</strong>
          <ul>
-           <li><strong><img alt="Icono de función B2B" src="../assets/icons/enterprise.svg"></img> B2B</strong>: nuevas funciones, mejoras y correcciones de errores para la extensión B2B para Adobe Commerce. Para obtener más información sobre las versiones de la extensión B2B, consulte las [Notas de la versión B2B](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes).</li>
+           <li><strong><img alt="Icono de función B2B" src="../assets/icons/enterprise.svg"></img> B2B</strong>: nuevas funciones, mejoras y correcciones de errores para la extensión B2B para Adobe Commerce. Para obtener más información sobre las versiones de la extensión B2B, consulte las [Notas de la versión B2B](https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html).</li>
             <li><strong><img alt="Icono de función de extensibilidad" src="../assets/icons/brackets.svg"></img> Extensibilidad</strong>: nuevas herramientas y servicios para desarrolladores para la extensibilidad fuera de proceso que se entregan independientemente de las versiones de parches. Por ejemplo, el SDK de la IU de administración, los eventos de Adobe I/O para Commerce y la malla de la API.</li>
             <li><strong><img alt="Icono de función Infraestructura" src="../assets/icons/servers.svg"></img> Infraestructura</strong>: nuevas funciones y mejoras en la infraestructura en la nube de Adobe Commerce y en los paquetes de Cloud Tools Suite para Commerce, diseñados para implementar y administrar las instalaciones y actualizaciones de Adobe Commerce en la plataforma en la nube.</li>
             <li><strong><img alt="Icono de revisión" src="../assets/icons/file-code.svg"></img> Parches</strong>: actualizaciones de la aplicación principal de Adobe Commerce PHP que incluyen correcciones de seguridad, conformidad, rendimiento y calidad de alta prioridad.</li>
