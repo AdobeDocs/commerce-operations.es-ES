@@ -2,9 +2,9 @@
 title: Directiva de versión
 description: Obtenga información acerca de los distintos tipos de versiones de Adobe Commerce, incluidos los parches menores, los parches, los parches de seguridad, las funciones, las revisiones, los parches individuales y los parches personalizados.
 exl-id: 61a83de6-6a7b-4a88-8fff-1638b4fe472a
-source-git-commit: f7db6b65d74c605976a3a338c98eebda2dc46a43
+source-git-commit: 1eaf2329c16e6dbe3e93cb7fff3a6920b4b8379d
 workflow-type: tm+mt
-source-wordcount: '799'
+source-wordcount: '621'
 ht-degree: 0%
 
 ---
@@ -46,15 +46,7 @@ Las siguientes directrices se aplican a las versiones de parches:
 
 ### Versión del parche de SEGURIDAD
 
-**Corrección de errores de seguridad**: cambio de código de software que resuelve un problema de seguridad identificado y proporciona los resultados esperados en un área de producto afectada. Estas correcciones suelen ser compatibles con versiones anteriores.
-
-**Mejora de seguridad**: una mejora de software o un cambio de configuración para mejorar de forma proactiva la seguridad dentro de la aplicación. Estas mejoras de seguridad ayudan a abordar los riesgos de seguridad que afectan a la postura de seguridad de la aplicación de Adobe Commerce, pero que pueden ser incompatibles con versiones anteriores.
-
-Con las versiones de parches de seguridad, puede mantener su sitio más seguro sin aplicar correcciones y mejoras de calidad adicionales que se incluyen en una versión de parche completa. Las versiones de parches de seguridad se anexan con &#39;-pN&#39;, donde N es la versión de parche incremental que comienza con 1 (por ejemplo, 2.3.5-p1). Las versiones de parches de seguridad también pueden incluir revisiones necesarias para solucionar problemas críticos que afectan a la aplicación de Adobe Commerce.
-
-Cada versión del parche de seguridad se basa en la versión completa anterior del parche. Contiene correcciones de calidad y seguridad de versiones anteriores de parches y correcciones de seguridad creadas entre la versión anterior completa de parches y la versión de parches de seguridad.
-
-Para obtener instrucciones sobre cómo descargar y aplicar parches de seguridad, consulte [Instalación rápida de](../installation/composer.md#example---security-patch).
+{{$include /help/_includes/security-patch-release-overview.md}}
 
 ## Lanzamiento del parche BETA
 
