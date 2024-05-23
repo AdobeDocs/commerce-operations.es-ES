@@ -1,11 +1,11 @@
 ---
 title: Descripción general del proceso de actualización
-description: Obtenga información sobre cómo actualizar el proyecto de Adobe Commerce ayuda a mantener la seguridad de su tienda y a funcionar de forma eficaz.
+description: Obtenga información sobre cómo la actualización del proyecto de Adobe Commerce le ayuda a mantener la seguridad de su escaparate y a funcionar de forma eficaz.
 exl-id: 40bd97ca-6648-40d4-9c61-7d159391976a
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
 source-wordcount: '895'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
