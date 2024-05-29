@@ -1,7 +1,7 @@
 ---
-source-git-commit: 580a15c908fc8ac4ef5d62582dfdd87d75dde994
+source-git-commit: 7dd6322370b976d8edea51fd94099e6dc4c082b7
 workflow-type: tm+mt
-source-wordcount: '766'
+source-wordcount: '719'
 ht-degree: 3%
 
 ---
@@ -112,6 +112,12 @@ Para actualizar el contenido con plantillas:
 
    >**NOTA:** Debe ejecutar el script desde el `_jekyll` directorio. Si es la primera vez que ejecuta el script, debe instalar primero las dependencias de Ruby con `bundle install` comando.
 
+1. Vaya de nuevo a `root` directorio.
+
+   ```
+   cd ..
+   ```
+
 1. Compruebe que el `help/_includes/templated` archivos modificados.
 
    ```
@@ -122,7 +128,15 @@ Para actualizar el contenido con plantillas:
 
    ```
    modified:   _data/product-availability.yml
-   modified:   ../help/_includes/templated/product-availability-extensions.md
+   modified:   help/_includes/templated/product-availability-extensions.md
+   ```
+
+1. Presione los cambios.
+
+   ```
+   git add
+   git commit -m "_descriptive message of the intended commit_"
+   git push
    ```
 
 Consulte la documentación de Jekyll para obtener más información sobre [Archivos de datos](https://jekyllrb.com/docs/datafiles), [Filtros líquidos](https://jekyllrb.com/docs/liquid/filters/)y otras funciones de.
