@@ -2,9 +2,9 @@
 title: Versiones beta
 description: Obtenga información sobre las versiones beta de Adobe Commerce y cómo participar.
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
-source-git-commit: d761bd089fbd2046e993d4652e9e0e2b3c4d2777
+source-git-commit: 0e2dfc376a049a47348a7a913bd5181436227cc2
 workflow-type: tm+mt
-source-wordcount: '596'
+source-wordcount: '818'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 Los programas beta de Adobe Commerce son una forma para que los comerciantes accedan a las funciones y el código de la versión preliminar, proporcionen comentarios y guíen el futuro de Adobe Commerce. Existen dos tipos de programas beta:
 
 - Beta pública: hay un programa beta público disponible para todos los clientes y socios de Adobe Commerce
-- Beta privada: un programa beta privado puede requerir una aprobación basada en criterios de calificación para poder participar
+- Beta privada: un programa beta privado puede requerir una aprobación basada en los criterios necesarios para participar
 
 >[!IMPORTANT]
 >
@@ -27,6 +27,22 @@ El acceso anticipado a las funciones que Adobe está desarrollando permite a los
 ## Programas beta actuales
 
 Consulte las secciones siguientes para obtener una lista de los programas beta activos.
+
+### Integración de Experience Manager Assets para Commerce (versión beta privada)
+
+La integración de Experience Manager Assets para Commerce permite una gestión y un envío eficientes de un gran volumen de imágenes de productos de Experience Manager Assets a Adobe Commerce con un esfuerzo operativo bajo o nulo.
+
+Características principales:
+
+- Integración Plug and Play: proporcione una integración entre Experience Manager Assets y Adobe Commerce con tecnología de Adobe para que los comerciantes puedan centrarse en lo que más importa, con costes operativos reducidos y una mayor eficacia.
+
+- Personalizar imágenes de productos a escala: utilice Experience Manager Assets para generar millones de variaciones de productos para experiencias de Commerce personalizadas con herramientas de edición sencillas basadas en la interfaz de usuario, creación de contenido generativa mediante el Adobe Firefly y flujos de trabajo de recursos asignados para garantizar la coherencia de la marca. Una vez que esté satisfecho con los recursos, envíelos sin problemas a sus tiendas de Commerce mediante la integración de Experience Manager Assets.
+
+- Incorporación sencilla: simplifique la incorporación del comerciante con un proceso de sincronización configurable que permita la sincronización completa entre el repositorio de Experience Manager Assets y el catálogo de Commerce.
+
+- Estrategia de coincidencia flexible: la integración incluye algoritmos de coincidencia de recursos predeterminados basados en SKU de productos que sincronizan imágenes entre AEM Assets y Commerce, y es extensible mediante Adobe Developer App Builder. Trabaje con su socio de soluciones para crear una estrategia de coincidencia de recursos personalizada sobre la integración para dar cabida a cualquier estructura de repositorio de administración de recursos.
+
+Para participar en la versión beta, envíe una solicitud por correo electrónico a [Shaun McCran](mailto:mccran@adobe.com).
 
 ### Integración del sistema IBM Sterling Order Management (versión beta privada)
 
