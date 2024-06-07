@@ -1,17 +1,18 @@
 ---
-title: Instalación de una extensión
-description: Siga estos pasos para instalar una extensión de Adobe Commerce.
+title: Administración de extensiones de terceros
+description: Siga estos pasos para instalar, habilitar, actualizar y desinstalar una extensión de Adobe Commerce.
 exl-id: b564662a-2e5f-4fa9-bae1-ca7498478fa9
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 6da0e70acc77d2171d6336ab632e6a9a8dd16c67
 workflow-type: tm+mt
-source-wordcount: '631'
+source-wordcount: '785'
 ht-degree: 0%
 
 ---
 
-# Instalación de una extensión
 
-El código que amplía o personaliza el comportamiento de Adobe Commerce se denomina extensión. Si lo desea, puede empaquetar y distribuir extensiones en [Commerce Marketplace](https://marketplace.magento.com) u otro sistema de distribución de extensiones.
+# Administración de extensiones de terceros
+
+El código que amplía o personaliza el comportamiento de Adobe Commerce se denomina extensión. Si lo desea, puede empaquetar y distribuir extensiones en [Commerce Marketplace](https://commercemarketplace.adobe.com/) u otro sistema de distribución de extensiones.
 
 Las extensiones incluyen:
 
@@ -21,7 +22,9 @@ Las extensiones incluyen:
 
 >[!TIP]
 >
->En este tema se explica cómo utilizar la línea de comandos para instalar extensiones que adquiere del Commerce Marketplace. Puede utilizar el mismo procedimiento para instalar _cualquiera_ Extensión; todo lo que necesita es el nombre y la versión Compositor de la extensión. Para encontrarlo, abra el de la extensión de `composer.json` y anote los valores de `"name"` y `"version"`.
+>En este tema se explica cómo utilizar la interfaz de línea de comandos para administrar las extensiones de terceros que compra al Commerce Marketplace. Puede utilizar el mismo procedimiento para instalar _cualquiera_ Extensión; todo lo que necesita es el nombre y la versión Compositor de la extensión. Para encontrarlo, abra el de la extensión de `composer.json` y anote los valores de `"name"` y `"version"`.
+
+## Instalar
 
 Antes de la instalación, es posible que desee:
 
@@ -51,13 +54,13 @@ Para instalar una extensión, debe:
 1. Compruebe que la extensión de está instalada correctamente.
 1. Habilite y configure la extensión de.
 
-## Obtener el nombre y la versión de la extensión Compositor
+### Obtener información de extensión
 
-Si ya conoce el nombre y la versión del compositor de la extensión, omita este paso y continúe con [Actualice su `composer.json` archivo](#update-your-composer-file).
+Si ya conoce el nombre y la versión del compositor de la extensión, omita este paso y continúe con [Actualice su `composer.json` archivo](#update-composer-dependencies).
 
 Para obtener el nombre y la versión del compositor de la extensión desde el Commerce Marketplace:
 
-1. Iniciar sesión en [Commerce Marketplace](https://marketplace.magento.com) con el nombre de usuario y la contraseña que utilizó para adquirir la extensión de.
+1. Iniciar sesión en [Commerce Marketplace](https://commercemarketplace.adobe.com/) con el nombre de usuario y la contraseña que utilizó para adquirir la extensión de.
 
 1. En la esquina superior derecha, haga clic en **Su nombre** > **Mi perfil**.
 
@@ -75,7 +78,7 @@ Para obtener el nombre y la versión del compositor de la extensión desde el Co
 >
 >También puede encontrar el nombre del compositor y la versión de _cualquiera_ extensión (tanto si la compró en Commerce Marketplace como en otro sitio) en el `composer.json` archivo.
 
-## Actualizar el archivo de composición
+### Actualizar dependencias del Compositor
 
 Añada el nombre y la versión de la extensión a su `composer.json` archivo:
 
@@ -103,7 +106,7 @@ Añada el nombre y la versión de la extensión a su `composer.json` archivo:
    Generating autoload files
    ```
 
-## Verificar la extensión
+### Verificar instalación
 
 Para comprobar que la extensión de está instalada correctamente, ejecute el siguiente comando:
 
@@ -125,7 +128,7 @@ bin/magento module:status
 
 Y busque la extensión en &quot;Lista de módulos desactivados&quot;.
 
-## Habilitar la extensión
+### Activar
 
 Algunas extensiones no funcionan correctamente a menos que borre primero los archivos de vista estática generados. Utilice el `--clear-static-content` para borrar los archivos de vista estática al activar una extensión.
 
@@ -183,7 +186,7 @@ Algunas extensiones no funcionan correctamente a menos que borre primero los arc
 >
 >Si se producen errores al cargar la tienda en un explorador, utilice el siguiente comando para borrar la caché: `bin/magento cache:flush`.
 
-## Actualización de una extensión
+## Actualizar
 
 Para actualizar o actualizar un módulo o una extensión:
 
@@ -218,3 +221,39 @@ Para actualizar o actualizar un módulo o una extensión:
    ```bash
    bin/magento cache:clean
    ```
+
+## Desinstalar
+
+Debe ponerse en contacto con el proveedor de la extensión para obtener instrucciones sobre cómo quitar una extensión de terceros. Las instrucciones deben proporcionar la siguiente información:
+
+- Cómo revertir los cambios de la tabla de base de datos
+- Cómo revertir los cambios de datos de la base de datos
+- Qué archivos se deben eliminar o revertir
+
+>[!CAUTION]
+>
+>Realice los pasos de desinstalación en un entorno que no sea de producción _primero_ y realice pruebas exhaustivas antes de su implementación en el entorno de producción de.
+
+Las siguientes instrucciones proporcionan información general para desinstalar extensiones de terceros:
+
+1. Elimine la extensión del repositorio del proyecto de Adobe Commerce.
+
+   - Para las extensiones basadas en Compositor, elimine la extensión de su Adobe Commerce `composer.json` archivo.
+
+     ```bash
+     composer remove <package-name>
+     ```
+
+   - Para las extensiones no basadas en Compositor, elimine los archivos físicos del repositorio del proyecto de Adobe Commerce.
+
+     ```bash
+     rm -rf app/code/<vendor-name>/<module-name>
+     ```
+
+1. Si la variable `config.php` está bajo control de código fuente en el repositorio del proyecto de Adobe Commerce, elimine la extensión de la `config.php` archivo.
+
+1. Pruebe la base de datos local para asegurarse de que las instrucciones proporcionadas por el proveedor funcionan según lo esperado.
+
+1. Compruebe que la extensión de está correctamente deshabilitada y que el sitio web funciona según lo esperado en el entorno de ensayo.
+
+1. Implemente los cambios en el entorno de producción.
