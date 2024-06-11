@@ -2,17 +2,27 @@
 title: Notas de la versión de Adobe Commerce 2.4.5 Security Patch
 description: Obtenga información acerca de las correcciones de errores de seguridad, las mejoras de seguridad y otras actualizaciones relacionadas con la seguridad incluidas en las versiones de parches de seguridad para Adobe Commerce 2.4.5.
 exl-id: 1b5f6d84-877a-45ea-8ff5-db83e3d360dd
-source-git-commit: e1c5b5e5c1a8800aa5aa2657060f61c16743cbda
+source-git-commit: 7705e750a466ab134ae2616a40a32880ee0c45de
 workflow-type: tm+mt
-source-wordcount: '1001'
+source-wordcount: '1092'
 ht-degree: 0%
 
 ---
 
 
-# Notas de la versión de los parches de seguridad de Adobe Commerce 2.4.5
+# Notas de la versión de parches de seguridad de Adobe Commerce 2.4.5
 
 {{$include /help/_includes/security-patch-release-notes-intro.md}}
+
+## Adobe Commerce 2.4.5-p8
+
+La versión de seguridad de Adobe Commerce 2.4.5-p7 proporciona correcciones de errores de seguridad para vulnerabilidades que se han identificado en versiones anteriores de 2.4.5.
+
+Para obtener la información más reciente sobre las correcciones de errores de seguridad, consulte [Boletín de Seguridad del Adobe APSB24-40](https://helpx.adobe.com/security/products/magento/apsb24-40.html).
+
+### Actualizaciones de plataforma
+
+* **Compatibilidad con MariaDB 10.5**. Esta versión del parche presenta compatibilidad con MariaDB versión 10.5. Adobe Commerce sigue siendo compatible con MariaDB versión 10.4, pero Adobe recomienda utilizar Adobe Commerce 2.4.5-p8 y todas las próximas versiones de parches solo de seguridad 2.4.5 solo con MariaDB versión 10.5 porque el mantenimiento de MariaDB 10.4 finaliza el 18 de junio de 2024. <!--AC-11530-->
 
 ## Adobe Commerce 2.4.5-p7
 
@@ -107,5 +117,3 @@ La versión de seguridad de Adobe Commerce 2.4.5-p1 proporciona correcciones de 
 Para obtener la información más reciente sobre las correcciones de errores de seguridad, consulte [Boletín de Seguridad del Adobe APSB22-48](https://helpx.adobe.com/security/products/magento/apsb22-48.html).
 
 Una de las correcciones de errores de seguridad incluía la creación de una nueva configuración. El **Requerir confirmación por correo electrónico si el correo electrónico se ha cambiado** La configuración de permite a los administradores solicitar confirmación por correo electrónico cuando un usuario administrador cambia su dirección de correo electrónico. <!-- AC-6292-->
-
-

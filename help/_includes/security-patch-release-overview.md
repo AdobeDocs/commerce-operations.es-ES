@@ -1,11 +1,11 @@
 ---
-source-git-commit: 1eaf2329c16e6dbe3e93cb7fff3a6920b4b8379d
+source-git-commit: d532402e2d65a1f34558fc3c283d4291be5b006b
 workflow-type: tm+mt
 source-wordcount: '184'
 ht-degree: 0%
 
 ---
-# Acerca de las versiones de parches de seguridad de Adobe Commerce
+# Acerca de los parches de seguridad de Adobe Commerce
 
 **Corrección de errores de seguridad**: cambio de código de software que resuelve un problema de seguridad identificado y proporciona los resultados esperados en un área de producto afectada. Estas correcciones suelen ser compatibles con versiones anteriores.
 

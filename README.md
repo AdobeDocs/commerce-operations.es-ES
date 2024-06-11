@@ -1,5 +1,5 @@
 ---
-source-git-commit: 7dd6322370b976d8edea51fd94099e6dc4c082b7
+source-git-commit: 0709cd6510adce0f513894fdecb2de5ac88d0e87
 workflow-type: tm+mt
 source-wordcount: '719'
 ht-degree: 3%
@@ -7,7 +7,7 @@ ht-degree: 3%
 ---
 # Documentación técnica de Adobe Commerce
 
-Agradecemos las contribuciones de nuestra comunidad, así como de los empleados de Adobe ajenos a los equipos de documentación.
+Agradecemos las contribuciones de la comunidad, así como de los empleados de Adobe ajenos a los equipos de documentación.
 
 ## Código de conducta de código abierto de Adobe
 
@@ -67,7 +67,7 @@ Algunos ejemplos de contenido con plantillas son, entre otros, los siguientes:
 
 ### Generación de contenido con plantilla
 
-En general, la mayoría de los redactores solo necesitan añadir una versión de lanzamiento a las tablas de disponibilidad del producto y requisitos del sistema. El mantenimiento del resto del contenido con plantillas se automatiza o se administra mediante un miembro del equipo dedicado. Estas instrucciones están destinadas a la &quot;mayoría&quot; de los escritores.
+En general, la mayoría de los redactores solo necesitan añadir una versión de lanzamiento a las tablas de disponibilidad del producto y requisitos del sistema. El mantenimiento del resto del contenido con plantillas se automatiza o se administra mediante un miembro del equipo dedicado. Estas instrucciones están destinadas a la mayoría de los escritores.
 
 >**NOTA:**
 >

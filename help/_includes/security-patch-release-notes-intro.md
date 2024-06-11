@@ -1,5 +1,5 @@
 ---
-source-git-commit: 1eaf2329c16e6dbe3e93cb7fff3a6920b4b8379d
+source-git-commit: d532402e2d65a1f34558fc3c283d4291be5b006b
 workflow-type: tm+mt
 source-wordcount: '85'
 ht-degree: 0%
@@ -7,7 +7,7 @@ ht-degree: 0%
 ---
 # Introducción a las notas de revisión de seguridad
 
-Estas notas de la versión del parche de seguridad capturan actualizaciones para mejorar la seguridad de su implementación de Adobe Commerce. La información incluye, entre otras, lo siguiente:
+Estas notas de la versión del parche de seguridad capturan actualizaciones para mejorar la seguridad de su implementación de Adobe Commerce. La información incluye, entre otras cosas, lo siguiente:
 
 * Correcciones de errores de seguridad
 * Elementos destacados de seguridad que proporcionan más detalles sobre las mejoras y actualizaciones incluidas en el parche de seguridad
