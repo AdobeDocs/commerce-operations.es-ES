@@ -2,9 +2,9 @@
 title: Notas de la versión de los parches de seguridad de Adobe Commerce 2.4.4
 description: Obtenga información acerca de las correcciones de errores de seguridad, las mejoras de seguridad y otras actualizaciones relacionadas con la seguridad incluidas en las versiones de parches de seguridad para Adobe Commerce 2.4.4.
 exl-id: 136d7090-6bf2-41e3-8445-b07bdc67f12b
-source-git-commit: 7705e750a466ab134ae2616a40a32880ee0c45de
+source-git-commit: 59a5306c8329ddc3ca2a2e086f5ebe81b49eab3a
 workflow-type: tm+mt
-source-wordcount: '1429'
+source-wordcount: '1432'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,10 @@ Para obtener la información más reciente sobre las correcciones de errores de 
 ### Actualizaciones de plataforma
 
 * **Compatibilidad con MariaDB 10.5**. Esta versión del parche presenta compatibilidad con MariaDB versión 10.5. Adobe Commerce sigue siendo compatible con MariaDB versión 10.4, pero Adobe recomienda utilizar Adobe Commerce 2.4.4-p9 y todas las próximas versiones de parches solo de seguridad 2.4.4 solo con MariaDB versión 10.5 porque el mantenimiento de MariaDB 10.4 finaliza el 18 de junio de 2024. <!--AC-11530-->
+
+### Mejoras de seguridad adicionales
+
+{{$include /help/_includes/release-notes/2-4-7-security.md}}
 
 ## 2.4.4-p8
 
