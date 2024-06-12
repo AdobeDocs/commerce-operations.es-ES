@@ -2,9 +2,9 @@
 title: GraphQL Application Server
 description: Siga estas instrucciones para activar GraphQL Application Server en la implementación de Adobe Commerce.
 exl-id: 9b223d92-0040-4196-893b-2cf52245ec33
-source-git-commit: 70d86569bef5c656fff3a8c6b4af142c81c81f10
+source-git-commit: c2f48db87f40498a84b2bf41569bb46202565701
 workflow-type: tm+mt
-source-wordcount: '2079'
+source-wordcount: '2088'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ GraphQL Application Server solo está disponible para Adobe Commerce. No está d
 
 ## Arquitectura
 
-GraphQL Application Server mantiene el estado entre las solicitudes de la API de Commerce GraphQL y elimina la necesidad del arranque. Al compartir el estado de la aplicación entre procesos, las solicitudes de GraphQL se vuelven considerablemente más eficientes, lo que reduce los tiempos de respuesta en hasta un 30 %.
+El servidor de aplicaciones de GraphQL mantiene el estado entre las solicitudes de API de GraphQL de Commerce y elimina la necesidad del arranque. Al compartir el estado de la aplicación entre procesos, las solicitudes de GraphQL se vuelven considerablemente más eficientes, lo que reduce los tiempos de respuesta en hasta un 30 %.
 
 El modelo de ejecución de PHP que no comparte nada proporciona un desafío desde la perspectiva de la latencia porque cada solicitud requiere el arranque del marco de trabajo. Este proceso de arranque incluye tareas que llevan mucho tiempo, como leer la configuración, configurar el proceso de arranque y crear objetos de clase de servicio.
 
@@ -30,7 +30,7 @@ La transición de la lógica de gestión de solicitudes a un bucle de eventos de
 
 ## Ventajas
 
-GraphQL Application Server permite que Adobe Commerce mantenga el estado entre solicitudes consecutivas de la API de Commerce GraphQL. Compartir el estado de la aplicación entre solicitudes mejora la eficacia de las solicitudes de API al minimizar la sobrecarga de procesamiento y optimizar la administración de solicitudes. Como resultado, el tiempo de respuesta de las solicitudes de GraphQL se puede reducir hasta un 30 %.
+El servidor de aplicaciones de GraphQL permite que Adobe Commerce mantenga el estado entre solicitudes consecutivas de la API de Commerce GraphQL. Compartir el estado de la aplicación entre solicitudes mejora la eficacia de las solicitudes de API al minimizar la sobrecarga de procesamiento y optimizar la administración de solicitudes. Como resultado, el tiempo de respuesta de las solicitudes de GraphQL se puede reducir hasta un 30 %.
 
 ## Requisitos del sistema
 
@@ -53,7 +53,7 @@ El `ApplicationServer` módulo (`Magento/ApplicationServer/`) habilita GraphQL A
 Una vez habilitada la función Servidor de aplicaciones en el proyecto Pro, complete los siguientes pasos antes de implementar GraphQL Application Server:
 
 1. Implemente Adobe Commerce en la infraestructura de la nube mediante la plantilla de la nube desde [2.4.7-appserver branch](https://github.com/magento/magento-cloud/tree/2.4.7-appserver).
-1. Asegúrese de que todas las personalizaciones y extensiones de Commerce sean [compatible](https://developer.adobe.com/commerce/php/development/components/app-server/) con GraphQL Application Server.
+1. Asegúrese de que todas las personalizaciones y extensiones de Commerce estén [compatible](https://developer.adobe.com/commerce/php/development/components/app-server/) con GraphQL Application Server.
 1. Clone el proyecto de Commerce Cloud.
 1. Ajuste la configuración en el archivo &quot;application-server/nginx.conf.sample&quot; si es necesario.
 1. Comente la sección &quot;web&quot; activa en `project_root/.magento.app.yaml` archivo completo.
@@ -66,6 +66,12 @@ Una vez habilitada la función Servidor de aplicaciones en el proyecto Pro, comp
            protocol: http
        commands:
            start: ./application-server/start.sh > var/log/application-server-status.log 2>&1
+   ```
+
+1. Asegúrese de que `/application-server/start.sh` es ejecutable ejecutando el siguiente comando:
+
+   ```bash
+   chmod +x application-server/start.sh
    ```
 
 1. Añada archivos actualizados al índice de Git con este comando:
