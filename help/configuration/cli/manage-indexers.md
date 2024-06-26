@@ -2,9 +2,9 @@
 title: Administrar los indexadores
 description: Consulte ejemplos de cómo ver y administrar los indexadores de Commerce.
 exl-id: d2cd1399-231e-4c42-aa0c-c2ed5d7557a0
-source-git-commit: 602a1ef82fcb8d30ff027db0fe0aacb981c7e08e
+source-git-commit: 5e1684d4d910f2ea52e12eeccdc291a54372f8d6
 workflow-type: tm+mt
-source-wordcount: '943'
+source-wordcount: '951'
 ht-degree: 0%
 
 ---
@@ -266,7 +266,7 @@ Los déclencheur de base de datos relacionados con los indexadores se agregan cu
 
 ### Establecer estado del indizador
 
-Este comando permite a los administradores modificar el estado operativo de uno o más indexadores, optimizando el rendimiento del sistema durante operaciones extensas como importaciones de datos, actualizaciones o mantenimiento.
+El `bin/magento indexer:set-status` Este comando se introdujo en Adobe Commerce 2.4.7. Permite a los administradores modificar el estado operativo de uno o más indexadores, optimizando el rendimiento del sistema durante operaciones extensas como importaciones de datos, actualizaciones o mantenimiento.
 
 Sintaxis del comando:
 
