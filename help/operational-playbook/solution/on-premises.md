@@ -1,9 +1,11 @@
 ---
-title: Commerce Hosting On-Premies
+title: Alojamiento de Commerce local
 description: Las soluciones de alojamiento basadas en la nube son muy populares, pero el alojamiento local puede tener sentido para su proyecto de comercio electrónico.
 exl-id: e505c216-2d6c-4ca4-a4ec-4853cd9347fe
 feature: Best Practices, Install
-source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
+hide: true
+hidefromtoc: true
+source-git-commit: 26284eea58151929c9ac5e72b0fb6cd5b02a3384
 workflow-type: tm+mt
 source-wordcount: '183'
 ht-degree: 0%
