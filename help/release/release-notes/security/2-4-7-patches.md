@@ -2,7 +2,7 @@
 title: Notas de la versión de Adobe Commerce 2.4.7 Security Patch
 description: Obtenga información acerca de las correcciones de errores de seguridad, las mejoras de seguridad y otras actualizaciones relacionadas con la seguridad incluidas en las versiones de parches de seguridad para Adobe Commerce 2.4.7.
 exl-id: 38e5632b-c795-47d8-89dd-26bbaeb34e67
-source-git-commit: e5f659cc3bee2d116222c15549fb3d6094644531
+source-git-commit: 368776904b6396b870ab040ccd58fe2e006fc5d7
 workflow-type: tm+mt
 source-wordcount: '232'
 ht-degree: 0%
@@ -23,7 +23,7 @@ Para obtener la información más reciente sobre la corrección de errores de se
 
 * **Actualizar la configuración de contraseña de un solo uso [OTP](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/2fa/security-two-factor-authentication#google) para Google Authenticator**: esta actualización es necesaria para resolver un error que se introdujo mediante un [cambio incompatible con versiones anteriores](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/highlights/#new-system-configuration-validation-for-two-factor-authentication-otp_window-value) en 2.4.7. La descripción del campo **[!UICONTROL OTP Window]** ahora proporciona una explicación precisa de la configuración y el valor predeterminado se ha cambiado de `1` a `29`.
 
-* **Compatibilidad de la versión B2B**: para la compatibilidad con Commerce versión 2.4.7-p1, los comerciantes que tengan la extensión Adobe Commerce B2B deben actualizar a [B2B versión 1.4.2-p1](https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes#b2b-v142p1.html).
+* **Compatibilidad de la versión B2B**: para la compatibilidad con Commerce versión 2.4.7-p1, los comerciantes que tengan la extensión Adobe Commerce B2B deben actualizar a [B2B versión 1.4.2-p1](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes#b2b-v142-p1).
 
 ### Revisiones incluidas en esta versión
 
