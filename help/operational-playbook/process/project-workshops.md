@@ -79,7 +79,7 @@ El propósito del taller de diseño es hacer una lluvia de ideas sobre cómo el 
 - Establecer una meta
 - Haga una lluvia de ideas
 - Definición de los resultados
-- ¡Sketch Sketch Sketch!
+- Sketch Sketch Sketch!
 - Hacer que los equipos del lado del cliente obtengan comentarios sobre el trabajo de cada uno
 - Tenga en cuenta los gustos y los disgustos
 - Tiempo de seguimiento
@@ -110,7 +110,7 @@ La configuración de un sitio de comercio electrónico es compleja y requiere pr
 - Page load
 - Copia de seguridad
 - Transacciones
-- Procesando
+- Procesamiento
 - Integración
 - Iniciar sesión
 - Seguridad

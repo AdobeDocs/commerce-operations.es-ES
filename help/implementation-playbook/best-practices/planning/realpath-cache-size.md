@@ -6,8 +6,8 @@ feature: Best Practices, Cache
 exl-id: 1cd48155-5d60-48b2-b07b-9b5784b81681
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
-source-wordcount: '181'
-ht-degree: 0%
+source-wordcount: '182'
+ht-degree: 1%
 
 ---
 
@@ -15,12 +15,12 @@ ht-degree: 0%
 
 La caché Realpath almacena en caché las rutas reales del sistema de archivos de los nombres de archivo a los que se hace referencia en lugar de buscarlos cada vez. Cada vez que se realizan varias funciones de archivo o se requiere un archivo y se utiliza una ruta relativa, PHP tiene que buscar donde realmente existe ese archivo.
 
-Para mejorar el rendimiento de Commerce, utilice la siguiente configuración recomendada para configurar el `realpath_cache` configuración en la `php.ini` archivo:
+Para mejorar el rendimiento de Commerce, use la siguiente configuración recomendada para establecer la configuración de `realpath_cache` en el archivo `php.ini`:
 
-- Establezca el tamaño de la caché en 10 MB (`realpath cache_size=10M`)
+- Establecer el tamaño de la caché en 10 MB (`realpath cache_size=10M`)
 - Establezca el tiempo de vida (ttl) en 7200 segundos (`realpath_cache_ttl=7200`)
 
-Para obtener instrucciones de configuración, consulte [Cómo configurar las opciones de PHP](../../../installation/prerequisites/php-settings.md#how-to-set-php-options).
+Para obtener instrucciones de configuración, consulte [Cómo establecer las opciones de PHP](../../../installation/prerequisites/php-settings.md#how-to-set-php-options).
 
 ## Productos y versiones afectados
 
@@ -31,7 +31,7 @@ Para obtener instrucciones de configuración, consulte [Cómo configurar las opc
 
 Si los valores de configuración de caché de Realpath son demasiado bajos o demasiado altos, añade una sobrecarga adicional durante la generación de caché, lo que ralentiza el rendimiento.
 
-## Información adicional
+## Más información
 
 - [On-premise: Configuración de PHP](../../../performance/software.md#php-settings)
 - En la infraestructura en la nube:

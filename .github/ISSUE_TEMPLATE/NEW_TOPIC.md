@@ -6,8 +6,8 @@ labels: New Topic
 assignees: ''
 source-git-commit: b0f4671b8c214397af77cbd316e489dac1ce8601
 workflow-type: tm+mt
-source-wordcount: '33'
-ht-degree: 0%
+source-wordcount: '36'
+ht-degree: 8%
 
 ---
 
@@ -22,12 +22,12 @@ ht-degree: 0%
 
 <!-- Use the following checklist template as a starting point -->
 
-- [ ] En el tema se explica cómo funciona ____.
-- [ ] En el tema se proporcionan los pasos para la ____.
+- [ ] El tema proporciona una explicación del funcionamiento de ____.
+- [ ] El tema proporciona pasos para la ____.
 - [ ] El tema contiene ejemplos de código que muestran ____.
-- [ ] Otros (especifique)
+- [ ] más (especifique)
 
-## Información adicional
+## Más información
 
 <!-- (OPTIONAL) Any information you already know or other online resources that cover this topic -->
 

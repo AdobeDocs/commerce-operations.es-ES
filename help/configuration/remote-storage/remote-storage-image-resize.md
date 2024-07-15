@@ -5,8 +5,8 @@ feature: Configuration, Storage
 exl-id: 51c2b9b3-0f5f-4868-9191-911d5df341ec
 source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
 workflow-type: tm+mt
-source-wordcount: '247'
-ht-degree: 1%
+source-wordcount: '238'
+ht-degree: 0%
 
 ---
 
@@ -16,43 +16,43 @@ De forma predeterminada, Adobe Commerce admite el cambio de tamaño de las imág
 
 El diagrama siguiente muestra cómo Nginx recupera, cambia de tamaño y almacena imágenes en la caché. El cambio de tamaño viene determinado por los parámetros incluidos en la dirección URL, como la altura y la anchura.
 
-![redimensionar imagen](../../assets/configuration/remote-storage-nginx-image-resize.png)
+![cambio de tamaño de imagen](../../assets/configuration/remote-storage-nginx-image-resize.png)
 
 >[!TIP]
 >
->Para conocer Adobe Commerce sobre proyectos de infraestructura en la nube, consulte [Configuración del almacenamiento remoto para Commerce en la infraestructura de Cloud](cloud-support.md)
+>Para Adobe Commerce sobre proyectos de infraestructura en la nube, consulte [Configuración del almacenamiento remoto para Commerce en la infraestructura en la nube](cloud-support.md)
 
 ## Configuración del formato de URL en Adobe Commerce
 
 Para cambiar el tamaño de las imágenes en el servidor, debe configurar Adobe Commerce para que proporcione argumentos para la altura, la anchura y la ubicación (URL) de la imagen.
 
-**Para configurar Commerce para el cambio de tamaño de las imágenes del lado del servidor**:
+**Para configurar Commerce para cambiar el tamaño de las imágenes del lado del servidor**:
 
-1. En el _Administrador_ , haga clic en **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL General]** > **[!UICONTROL Web]**.
+1. En el panel _Admin_, haga clic en **[!UICONTROL Stores]** > **[!UICONTROL Settings]** > **[!UICONTROL Configuration]** > **[!UICONTROL General]** > **[!UICONTROL Web]**.
 
 1. En el panel derecho, expanda **[!UICONTROL Url options]**.
 
-1. En el _Formato de URL de medios de catálogo_ sección, borrar **[!UICONTROL Use system value]**.
+1. En la sección _Formato de URL de medios de catálogo_, borre **[!UICONTROL Use system value]**.
 
-1. Seleccione el `Image optimization based on query parameters` URL en **_Formato de URL de medios de catálogo_** field.
+1. Seleccione la URL `Image optimization based on query parameters` en el campo **_Formato de URL de medios del catálogo_**.
 
-1. Haga clic **[!UICONTROL Save Config]**.
+1. Haga clic en **[!UICONTROL Save Config]**.
 
-1. Continúe con el [Configuración de Nginx](#configure-nginx).
+1. Continúe con la [configuración de Nginx](#configure-nginx).
 
 ## Configuración De Nginx
 
-Para seguir configurando el cambio de tamaño de la imagen del lado del servidor, debe preparar la variable `nginx.conf` y proporcione un `proxy_pass` valor para el adaptador elegido.
+Para seguir configurando el cambio de tamaño de las imágenes del lado del servidor, debe preparar el archivo `nginx.conf` y proporcionar un valor `proxy_pass` para el adaptador seleccionado.
 
-**Para permitir a Nginx cambiar el tamaño de las imágenes**:
+**Para permitir que Nginx cambie el tamaño de las imágenes**:
 
-1. Instale el [Módulo de filtro de imagen Nginx][nginx-module].
+1. Instale [Nginx image filter module][nginx-module].
 
    ```shell
    load_module /etc/nginx/modules/ngx_http_image_filter_module.so;
    ```
 
-1. Crear un `nginx.conf` archivo basado en la plantilla incluida `nginx.conf.sample` archivo. Por ejemplo:
+1. Crear un archivo de `nginx.conf` basado en el archivo de plantilla `nginx.conf.sample` incluido. Por ejemplo:
 
    ```conf
    location ~* \.(jpg|jpeg|png|gif|webp)$ {
@@ -69,7 +69,7 @@ Para seguir configurando el cambio de tamaño de la imagen del lado del servidor
    }
    ```
 
-1. [_Opcional_] Configurar un `proxy_pass` valor para el adaptador específico.
+1. [_Opcional_] Configure un valor de `proxy_pass` para su adaptador específico.
 
    - [Amazon Simple Storage Service (Amazon S3)](remote-storage-aws-s3.md)
 

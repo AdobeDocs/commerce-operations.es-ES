@@ -4,7 +4,7 @@ description: Aplique marcos de trabajo conocidos para administrar su proyecto de
 exl-id: 514e2317-f409-4079-bdee-1596f6635467
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '378'
+source-wordcount: '377'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ La administración de proyectos es la aplicación de conocimientos, habilidades,
 
 En el diagrama siguiente se describen las cinco fases de la administración de proyectos y el ciclo de vida de la administración de proyectos:
 
-![Diagrama del ciclo vital de administración de proyectos](../../assets/playbooks/project-management-lifecycle.png)
+![Diagrama del ciclo de vida de administración de proyectos](../../assets/playbooks/project-management-lifecycle.png)
 
 El ciclo de vida de la administración de proyectos proporciona un proceso de entrega oportuno y controlado que beneficia a los interesados en el proyecto. El primer paso para ofrecer un proyecto de comercio electrónico exitoso es la administración de proyectos. Se necesitan el enfoque y la metodología adecuados para que el equipo pueda ejecutar el proyecto de manera eficaz y eficiente.
 
@@ -28,7 +28,7 @@ Algunos equipos eligen la metodología de administración de proyectos de Scrum 
 - Sesión de planificación para cada sprint
 - Retrospectivas de Sprint
 
-![Diagrama del ciclo vital de Scrum Agile](../../assets/playbooks/scrum-lifecycle.png)
+![Diagrama del ciclo de vida de Scrum Agile](../../assets/playbooks/scrum-lifecycle.png)
 
 Scrum ayuda a gestionar los cambios durante el proyecto, permite a los equipos mostrar resultados rápidos, es flexible y aumenta la colaboración.
 
@@ -36,17 +36,17 @@ Scrum ayuda a gestionar los cambios durante el proyecto, permite a los equipos m
 
 Un plan básico de administración de proyectos de comercio electrónico incluye:
 
-- **Análisis**—En la fase inicial de un proyecto, la empresa necesita llevar a cabo análisis, incluyendo análisis de mercado y de la competencia para comprender las fortalezas y debilidades de la organización.
+- **Análisis**: en la fase inicial de un proyecto, la empresa necesita realizar análisis, incluido el análisis de mercado y de la competencia, para comprender las fortalezas y debilidades de la organización.
 
-- **Requisitos**: defina los requisitos detallados de lo que la organización desea al final del proyecto en términos de mejorar las habilidades existentes o implementar nuevas funciones o integraciones.
+- **Requisitos**: defina los requisitos detallados de lo que la organización desea al final del proyecto en términos de mejorar las habilidades existentes o implementar nuevas características o integraciones.
 
 - **Proveedores de terceros**: en esta fase, asigne las integraciones de terceros necesarias (por ejemplo, pagos, envíos, clasificaciones y revisiones).
 
-- **Diseño**—Haga una lluvia de ideas sobre los requisitos específicos de diseño para plantillas y el libro de marca de la empresa.
+- **Diseño**—Haga una lluvia de ideas sobre requisitos específicos de diseño para plantillas y el libro de marcas de la compañía.
 
-- **Migración**: planifique los pasos para migrar contenido y datos.
+- **Migración**: Planifique los pasos para migrar contenido y datos.
 
-- **Plataforma de comercio electrónico**: permite analizar y finalizar la plataforma necesaria para que la empresa cumpla los requisitos.
+- **Plataforma de comercio electrónico**: Analice y finalice la plataforma necesaria para que la empresa cumpla los requisitos.
 
 ## Prácticas recomendadas
 

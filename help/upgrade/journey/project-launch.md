@@ -13,4 +13,4 @@ ht-degree: 0%
 
 Mantener un sitio de comercio electrónico saludable es tan crítico para el éxito de su negocio como su primer lanzamiento, y un aspecto clave de esto es planificar y prepararse proactivamente para actualizaciones que ayuden a su sitio a funcionar de la manera más fluida posible.
 
-Si no se establecen las expectativas de actualización correctas durante este tiempo, se producirá una insatisfacción futura. Asegúrese de conocer y comprender el [cadencia de lanzamiento](https://devdocs.magento.com/release/)y utilice esta guía para definir cómo y cuándo planificar las actualizaciones.
+Si no se establecen las expectativas de actualización correctas durante este tiempo, se producirá una insatisfacción futura. Asegúrese de conocer y comprender la cadencia de la versión [y use esta guía para definir cómo y cuándo planear las actualizaciones.](https://devdocs.magento.com/release/)

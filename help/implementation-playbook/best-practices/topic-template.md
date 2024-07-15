@@ -7,8 +7,8 @@ hide: true
 hidefromtoc: true
 source-git-commit: 4360a3436f013c1b2a8b95a876d2037a6987acac
 workflow-type: tm+mt
-source-wordcount: '89'
-ht-degree: 0%
+source-wordcount: '92'
+ht-degree: 2%
 
 ---
 
@@ -53,7 +53,7 @@ Divida el contenido en secciones para facilitar la lectura. El contenido debe in
 
 Utilice solo tantas secciones como sea necesario
 
-## Información adicional
+## Más información
 
 <!-- If applicable, add links to additional, more detailed documentation that provides more context about this best practices content.-->
 

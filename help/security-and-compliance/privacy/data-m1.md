@@ -54,17 +54,17 @@ El Magento 1 almacena información de clientes en tablas de clientes, ventas y o
 
 ### Datos del cliente
 
-El Magento 1 almacena la información de los clientes en `customer_entity` y `customer_address_entity` tablas. Ambas tablas tienen varias tablas de referencia que pueden contener atributos personalizados del cliente.
+El Magento 1 almacena información de clientes en las tablas `customer_entity` y `customer_address_entity`. Ambas tablas tienen varias tablas de referencia que pueden contener atributos personalizados del cliente.
 
 #### `customer_entity` y tablas de referencia
 
-Las siguientes columnas de la variable `customer_entity`La tabla contiene información del cliente:
+Las siguientes columnas de la tabla `customer_entity` contienen información del cliente:
 
 | Columna | Tipo de datos |
 | --- | --- |
 | `email` | varchar(255) |
 
-Estas tablas hacen referencia a `customer_entity` y pueden contener atributos de cliente personalizados:
+Estas tablas hacen referencia a `customer_entity` y pueden contener atributos personalizados del cliente:
 
 | Tabla | Columna | Tipo de datos |
 | --- | --- | --- |
@@ -76,7 +76,7 @@ Estas tablas hacen referencia a `customer_entity` y pueden contener atributos de
 
 #### `customer_address_entity` y tablas de referencia
 
-Las siguientes tablas hacen referencia a `customer_address_entity` y pueden contener atributos de cliente personalizados:
+Las tablas siguientes hacen referencia a `customer_address_entity` y pueden contener atributos personalizados del cliente:
 
 | Tabla | Columna | Tipo de datos |
 | --- | --- | --- |
@@ -88,11 +88,11 @@ Las siguientes tablas hacen referencia a `customer_address_entity` y pueden cont
 
 ### Datos del pedido
 
-El `sales_flat_order` y las tablas relacionadas contienen el nombre del cliente, las direcciones de facturación y envío, y la información relacionada.
+`sales_flat_order` y las tablas relacionadas contienen el nombre del cliente, las direcciones de facturación y envío y la información relacionada.
 
 #### `sales_flat_order` tabla
 
-Las siguientes columnas de la variable `sales_order` La tabla contiene información del cliente:
+Las siguientes columnas de la tabla `sales_order` contienen información del cliente:
 
 | Columna | Tipo de datos |
 | --- | --- |
@@ -109,7 +109,7 @@ Las siguientes columnas de la variable `sales_order` La tabla contiene informaci
 
 #### `sales_flat_order_address` tabla
 
-El `sales_flat_order_address` contiene la dirección del cliente.
+La tabla `sales_flat_order_address` contiene la dirección del cliente.
 
 | Columna | Tipo de datos |
 | --- | --- |
@@ -131,7 +131,7 @@ El `sales_flat_order_address` contiene la dirección del cliente.
 
 #### `sales_flat_order_grid` tabla
 
-Las siguientes columnas de la variable `sales_flat_order_grid` La tabla contiene información del cliente:
+Las siguientes columnas de la tabla `sales_flat_order_grid` contienen información del cliente:
 
 | Columna | Tipo de datos |
 | --- | --- |
@@ -141,7 +141,7 @@ Las siguientes columnas de la variable `sales_flat_order_grid` La tabla contiene
 
 #### `sales_flat_order_payment` tabla
 
-Las siguientes columnas de la variable `sales_flat_order_payment` La tabla contiene información del cliente:
+Las siguientes columnas de la tabla `sales_flat_order_payment` contienen información del cliente:
 
 | Columna | Tipo de datos |
 | --- | --- |
@@ -161,7 +161,7 @@ Las ofertas contienen el nombre, el correo electrónico, la dirección y la info
 
 #### `sales_flat_quote` tabla
 
-Las siguientes columnas de la variable `sales_flat_quote` La tabla contiene información del cliente:
+Las siguientes columnas de la tabla `sales_flat_quote` contienen información del cliente:
 
 | Columna | Tipo de datos |
 | --- | --- |
@@ -181,7 +181,7 @@ Las siguientes columnas de la variable `sales_flat_quote` La tabla contiene info
 
 #### `sales_flat_quote_address` tabla
 
-Las siguientes columnas de la variable `sales_flat_quote_address` La tabla contiene información del cliente:
+Las siguientes columnas de la tabla `sales_flat_quote_address` contienen información del cliente:
 
 | Columna | Tipo de datos |
 | --- | --- |
@@ -200,7 +200,7 @@ Las siguientes columnas de la variable `sales_flat_quote_address` La tabla conti
 
 #### `sales_flat_quote_payment` tabla
 
-El `sales_flat_quote_payment` La tabla incluye información de tarjetas de crédito y otra información transaccional.
+La tabla `sales_flat_quote_payment` incluye información de tarjetas de crédito y otra información transaccional.
 
 | Columna | Tipo de datos |
 | --- | --- |

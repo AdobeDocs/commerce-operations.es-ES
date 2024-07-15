@@ -5,35 +5,35 @@ feature: Configuration, B2B, Companies, Payments, Quotes
 exl-id: 3414dea1-17c9-4462-8b8a-51a6045b0bc9
 source-git-commit: 16e9396f19693436dfc7bdac78d84624a78f0c21
 workflow-type: tm+mt
-source-wordcount: '841'
+source-wordcount: '837'
 ht-degree: 0%
 
 ---
 
 # Referencia de rutas de configuración de la extensión B2B
 
-_Esta opción está disponible para instancias con B2B para Adobe Commerce instalado._
+_Esto está disponible para instancias con B2B para Adobe Commerce instalado._
 
-En este tema se enumeran las rutas de configuración para la extensión B2B de Commerce Enterprise. El [`magento app:config:dump` mando](../cli/export-configuration.md) escribe estos valores en el archivo de configuración compartida, `app/etc/config.php`, que debe estar en el control de código fuente.
+En este tema se enumeran las rutas de configuración para la extensión B2B de Commerce Enterprise. El comando [`magento app:config:dump` ](../cli/export-configuration.md) escribe estos valores en el archivo de configuración compartida, `app/etc/config.php`, que debe estar en el control de código fuente.
 
 >[!INFO]
 >
->Esta lista de referencias _solamente_ rutas de configuración únicas para B2B para Adobe Commerce. Esta extensión incluye todas las rutas de configuración para Adobe Commerce.
+>Esta referencia enumera _solamente_ rutas de configuración únicas de B2B para Adobe Commerce. Esta extensión incluye todas las rutas de configuración para Adobe Commerce.
 
 Para ver esas rutas de configuración, consulte:
 
 - [Rutas de configuración de pago](config-reference-payment.md)
 - [Referencia de rutas de configuración confidenciales y específicas del sistema](config-reference-sens.md)
 
-Para anular cualquier configuración de configuración o definir configuraciones confidenciales, consulte [Utilice variables de entorno para anular los ajustes de configuración](override-config-settings.md#environment-variables).
+Para anular opcionalmente las opciones de configuración o establecer opciones confidenciales, vea [Usar variables de entorno para anular las opciones de configuración](override-config-settings.md#environment-variables).
 
 ## Categoría general
 
-Esta sección enumera los nombres de las variables y las rutas de configuración disponibles para las opciones de la sección Administración de **[!UICONTROL Stores]** > Configuración > **[!UICONTROL Configuration]** > **[!UICONTROL General]**.
+Esta sección enumera los nombres de las variables y las rutas de configuración disponibles para las opciones de Administración en **[!UICONTROL Stores]** > Configuración > **[!UICONTROL Configuration]** > **[!UICONTROL General]**.
 
 ### Rutas de funciones B2B
 
-Estos valores de configuración están disponibles en el Administrador de **[!UICONTROL Stores]** > Configuración > **[!UICONTROL Configuration]** > **[!UICONTROL General]** > **[!UICONTROL B2B Features]**.
+Estos valores de configuración están disponibles en el Administrador en **[!UICONTROL Stores]** > Configuración > **[!UICONTROL Configuration]** > **[!UICONTROL General]** > **[!UICONTROL B2B Features]**.
 
 | Nombre | Ruta de configuración | ¿Cifrado? | ¿Específico del sistema? | ¿Sensible? |
 | -------------- | -------------- | -------------- | -------------- | -------------- |
@@ -49,11 +49,11 @@ Estos valores de configuración están disponibles en el Administrador de **[!UI
 
 ## Categoría de clientes
 
-Esta sección enumera los nombres de las variables y las rutas de configuración disponibles para las opciones de Admin en **[!UICONTROL Stores]** > Configuración > **[!UICONTROL Configuration]** > **[!UICONTROL Customers]**.
+En esta sección se enumeran los nombres de las variables y las rutas de configuración disponibles para las opciones de Administración en **[!UICONTROL Stores]** > Configuración > **[!UICONTROL Configuration]** > **[!UICONTROL Customers]**.
 
 ### Rutas de configuración de empresa
 
-Estos valores de configuración están disponibles en el Administrador de **[!UICONTROL Stores]** > Configuración > **[!UICONTROL Configuration]** > **[!UICONTROL Customers]** > **[!UICONTROL Company Configuration]**.
+Estos valores de configuración están disponibles en el Administrador en **[!UICONTROL Stores]** > Configuración > **[!UICONTROL Configuration]** > **[!UICONTROL Customers]** > **[!UICONTROL Company Configuration]**.
 
 | Nombre | Ruta de configuración | ¿Cifrado? | ¿Específico del sistema? | ¿Sensible? |
 |--------------|--------------|--------------|--------------|--------------|
@@ -103,11 +103,11 @@ Estos valores de configuración están disponibles en el Administrador de **Tien
 
 ## Categoría de ventas
 
-Esta sección enumera los nombres de las variables y las rutas de configuración disponibles para las opciones de Admin en **Tiendas** > Configuración > **Configuración** > **Ventas**.
+Esta sección enumera los nombres de las variables y las rutas de configuración disponibles para las opciones del Administrador en **Tiendas** > Configuración > **Configuración** > **Ventas**.
 
 ### Rutas de correos electrónicos de ventas
 
-Estos valores de configuración están disponibles en el Administrador de **Tiendas** > Configuración > **Configuración** > **Ventas** > **Correos electrónicos de ventas**.
+Estos valores de configuración están disponibles en el Administrador en **Tiendas** > Configuración > **Configuración** > **Ventas** > **Correos electrónicos de ventas**.
 
 | Nombre | Ruta de configuración | ¿Cifrado? | ¿Específico del sistema? | ¿Sensible? |
 | -------------- | -------------- | -------------- | -------------- | -------------- |
@@ -126,7 +126,7 @@ Estos valores de configuración están disponibles en el Administrador de **Tien
 
 ### Rutas de comillas
 
-Estos valores de configuración están disponibles en el Administrador de **Tiendas** > Configuración > **Configuración** > **Ventas** > **Comillas**.
+Estos valores de configuración están disponibles en el Administrador en **Tiendas** > Configuración > **Configuración** > **Ventas** > **Ofertas**.
 
 | Nombre | Ruta de configuración | ¿Cifrado? | ¿Específico del sistema? | ¿Sensible? |
 | -------------- | -------------- | -------------- | -------------- | -------------- |
@@ -145,7 +145,7 @@ Estos valores de configuración están disponibles en el Administrador de **Tien
 
 ## Rutas de métodos de pago
 
-Estos valores de configuración están disponibles en el Administrador de **Tiendas** > Configuración > **Configuración** > **Ventas** > **Métodos de pago**.
+Estos valores de configuración están disponibles en el Administrador en **Tiendas** > Configuración > **Configuración** > **Ventas** > **Métodos de pago**.
 
 >[!INFO]
 >

@@ -4,14 +4,14 @@ description: Vea un ejemplo de cómo establecer valores compartidos, específico
 exl-id: 98438674-e7f8-4143-9a76-3cc8bf0a73dc
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '1085'
+source-wordcount: '1089'
 ht-degree: 0%
 
 ---
 
 # Ejemplo con variables de entorno
 
-Este ejemplo muestra cómo establecer valores compartidos, específicos del sistema y confidenciales en el sistema de desarrollo y, a continuación, establecer todos los valores en el sistema de producción mediante una combinación de la configuración compartida. `config.php`y variables de entorno PHP.
+Este ejemplo muestra cómo establecer valores compartidos, específicos del sistema y confidenciales en el sistema de desarrollo y, a continuación, establecer todos los valores en el sistema de producción mediante una combinación de las variables de entorno shared configuration, `config.php` y PHP.
 
 Estos ajustes de configuración se pueden compartir entre los sistemas de desarrollo y producción:
 
@@ -48,29 +48,29 @@ Para los fines de este ejemplo, suponemos lo siguiente:
 Para establecer la configuración regional y las unidades de peso predeterminadas en el sistema de desarrollo:
 
 1. Inicie sesión en Admin.
-1. Clic **Tiendas** > Configuración > **Configuración** > General > **General**.
-1. Si tiene más de un sitio web disponible, utilice el **Vista de tienda** en la esquina superior izquierda para cambiar a un sitio web diferente, como se muestra en la siguiente ilustración.
+1. Haga clic en **Tiendas** > Configuración > **Configuración** > General > **General**.
+1. Si tiene más de un sitio web disponible, use la lista **Vista de tienda** en la esquina superior izquierda para cambiar a otro sitio web, como se muestra en la siguiente ilustración.
 
-   ![Cambiar sitios web](../../assets/configuration/split-deploy-switch-website.png)
+   ![Cambiar de sitio web](../../assets/configuration/split-deploy-switch-website.png)
 
-1. En el panel derecho, expanda **Información de tienda**.
-1. Si es necesario, borre la **Usar valor predeterminado** junto a la casilla de verificación **Número de IVA** field.
-1. Introduzca un número en el campo (por ejemplo, `12345`).
-1. En el **Nombre del almacén** , introduzca un valor (como `My Store`).
-1. Clic **Guardar configuración**.
-1. Utilice el **Vista de tienda** para seleccionar el **Configuración predeterminada** como se muestra en la siguiente figura.
+1. En el panel derecho, expanda **Información de almacén**.
+1. Si es necesario, borre la casilla de verificación **Usar predeterminado** junto al campo **Número de IVA**.
+1. Escriba un número en el campo (por ejemplo, `12345`).
+1. En el campo **Nombre de tienda**, escriba un valor (como `My Store`).
+1. Haga clic en **Guardar configuración**.
+1. Use la lista **Vista de tienda** para seleccionar la **configuración predeterminada**, como se muestra en la siguiente ilustración.
 
    ![Cambiar a la configuración predeterminada](../../assets/configuration/split-deploy-default-config.png)
 
-1. En el panel de navegación izquierdo, en General, haga clic en **Contactos**.
-1. Borre la **Usar valor predeterminado** junto a la casilla de verificación **Envío de correos electrónicos a** field.
+1. En el panel de navegación izquierdo, debajo de General, haga clic en **Contactos**.
+1. Desactive la casilla de verificación **Usar predeterminado** junto al campo **Enviar correos electrónicos a**.
 1. Introduzca una dirección de correo electrónico en el campo.
-1. Clic **Guardar configuración**.
+1. Haga clic en **Guardar configuración**.
 1. En el panel izquierdo, haga clic en Clientes > **Configuración del cliente**.
 1. En el panel derecho, expanda **Crear nuevas opciones de cuenta**.
-1. Borre la **Usar valor del sistema** junto a la casilla de verificación **Dominio de correo electrónico predeterminado** field.
+1. Desactive la casilla de verificación **Usar valor del sistema** junto al campo **Dominio de correo electrónico predeterminado**.
 1. Introduzca un nombre de dominio en el campo.
-1. Clic **Guardar configuración**.
+1. Haga clic en **Guardar configuración**.
 1. Si se le solicita, vacíe la caché.
 
 ## Paso 2: Actualizar la configuración
@@ -79,7 +79,7 @@ Ahora que ha cambiado la configuración en el Administrador, escriba la configur
 
 {{$include /help/_includes/config-save-config.md}}
 
-Tenga en cuenta que `app/etc/env.php` (la configuración específica del sistema), no la proteja en el control de código fuente. Creará las mismas opciones de configuración en el sistema de producción más adelante en este procedimiento.
+Tenga en cuenta que aunque `app/etc/env.php` (la configuración específica del sistema) se actualizó, no la proteja en el control de código fuente. Creará las mismas opciones de configuración en el sistema de producción más adelante en este procedimiento.
 
 ## Paso 3: Actualizar el sistema de compilación y generar archivos
 
@@ -102,7 +102,7 @@ Para establecer la configuración confidencial y específica del sistema mediant
 
   Si ha seguido las instrucciones del paso 1, el ámbito de Envío de correos electrónicos a es global (es decir, el ámbito de Configuración predeterminada) y el ámbito de Dominio de correo electrónico predeterminado es sitio web.
 
-  Debe conocer el código del sitio web para establecer el valor de configuración Predeterminado del dominio de correo electrónico. Consulte [Utilice variables de entorno para anular los ajustes de configuración](../reference/override-config-settings.md#environment-variables) para obtener más información sobre cómo encontrarlo.
+  Debe conocer el código del sitio web para establecer el valor de configuración Predeterminado del dominio de correo electrónico. Consulte [Usar variables de entorno para anular las opciones de configuración](../reference/override-config-settings.md#environment-variables) para obtener más información sobre cómo encontrarlas.
 
 - Ruta de configuración para cada configuración
 
@@ -117,7 +117,7 @@ Para establecer la configuración confidencial y específica del sistema mediant
 
 #### Convertir rutas de configuración en nombres de variables
 
-Como se explica en [Utilice variables de entorno para anular los ajustes de configuración](../reference/override-config-settings.md#environment-variables), el formato de las variables es:
+Como se describe en [Usar variables de entorno para anular las opciones de configuración](../reference/override-config-settings.md#environment-variables), el formato de las variables es:
 
 ```text
 <SCOPE>__<SYSTEM__VARIABLE__NAME>
@@ -125,7 +125,7 @@ Como se explica en [Utilice variables de entorno para anular los ajustes de conf
 
 El valor de `<SCOPE>` es `CONFIG__DEFAULT__` para el ámbito global o `CONFIG__WEBSITES__<WEBSITE CODE>` para el ámbito del sitio web.
 
-Para buscar el valor de `<SYSTEM__VARIABLE__NAME>`, reemplace cada `/` en la ruta de configuración con dos guiones bajos.
+Para encontrar el valor de `<SYSTEM__VARIABLE__NAME>`, reemplace cada carácter `/` en la ruta de configuración con dos guiones bajos.
 
 Los nombres de las variables son:
 
@@ -136,11 +136,11 @@ Los nombres de las variables son:
 
 >[!INFO]
 >
->La tabla anterior tiene un ejemplo de código de sitio web, `BASE`, para la configuración predeterminada Dominio de correo electrónico. Reemplazar `BASE` con el código de sitio web apropiado para su tienda.
+>La tabla anterior tiene un código de sitio web de ejemplo, `BASE`, para la configuración predeterminada del dominio de correo electrónico. Reemplace `BASE` por el código de sitio web apropiado para su tienda.
 
 #### Configurar las variables mediante variables de entorno
 
-Puede establecer los valores de las variables en `index.php` utilizando el siguiente formato:
+Puede establecer los valores de las variables en `index.php` con el siguiente formato:
 
 ```php
 $_ENV['VARIABLE'] = 'value';
@@ -149,7 +149,7 @@ $_ENV['VARIABLE'] = 'value';
 **Para establecer valores de variables**:
 
 1. Inicie sesión en el sistema de producción como propietario del sistema de archivos o cambie a.
-1. Abrir `<Commerce root dir>/pub/index.php` en un editor de texto.
+1. Abra `<Commerce root dir>/pub/index.php` en un editor de texto.
 1. En cualquier lugar de `index.php`, establezca valores para las variables similares a los siguientes:
 
    ```php
@@ -157,7 +157,7 @@ $_ENV['VARIABLE'] = 'value';
    $_ENV['CONFIG__WEBSITES__BASE__CUSTOMER__CREATE_ACCOUNT__EMAIL_DOMAIN'] = 'magento.com';
    ```
 
-1. Guardar los cambios en `pub/index.php` y salga del editor de texto.
+1. Guarde los cambios en `pub/index.php` y salga del editor de texto.
 1. Continúe con la siguiente sección.
 
 ### Actualizar la configuración compartida
@@ -173,27 +173,27 @@ En esta sección se explica cómo puede comprobar los ajustes de configuración 
 **Para comprobar las opciones de configuración**:
 
 1. Inicie sesión en el administrador del sistema de producción.
-1. Clic **Tiendas** > Configuración > **Configuración** > General > **General**.
-1. Utilice el **Vista de tienda** en la esquina superior izquierda para cambiar a un sitio web diferente.
+1. Haga clic en **Tiendas** > Configuración > **Configuración** > General > **General**.
+1. Use la lista **Vista de tienda** en la esquina superior izquierda para cambiar a otro sitio web.
 
    Las opciones de configuración compartida establecidas en el sistema de desarrollo se muestran de forma similar a la siguiente.
 
-   ![Compruebe la configuración en el sistema de producción](../../assets/configuration/split-deploy-verify-storeinfo.png)
+   ![Comprobar la configuración del sistema de producción](../../assets/configuration/split-deploy-verify-storeinfo.png)
 
    >[!INFO]
    >
-   >El **Nombre del almacén** El campo es editable en el ámbito del sitio web, pero si cambia al ámbito de configuración predeterminado, no es editable. Este es el resultado de cómo se establecen las opciones en el sistema de desarrollo. El valor de **Número de IVA** no se puede editar en el ámbito del sitio web.
+   >El campo **Store Name** se puede editar en el ámbito del sitio web, pero si cambia al ámbito de configuración predeterminado, no se puede editar. Este es el resultado de cómo se establecen las opciones en el sistema de desarrollo. El valor de **Número de IVA** no se puede editar en el ámbito del sitio web.
 
 1. Si aún no lo ha hecho, cambie al ámbito de configuración predeterminada.
-1. En el panel de navegación izquierdo, en General, haga clic en **Contactos**.
+1. En el panel de navegación izquierdo, debajo de General, haga clic en **Contactos**.
 
-   El **Envío de correos electrónicos a** El campo no se puede editar, como se muestra en la figura siguiente. Esta es una configuración confidencial.
+   El campo **Enviar correos electrónicos a** no se puede editar, como se muestra en la siguiente ilustración. Esta es una configuración confidencial.
 
-   ![Compruebe la configuración en el sistema de producción](../../assets/configuration/split-deploy-verify-contacts.png)
+   ![Comprobar la configuración del sistema de producción](../../assets/configuration/split-deploy-verify-contacts.png)
 
 1. En el panel izquierdo, haga clic en Clientes > **Configuración del cliente**.
 1. En el panel derecho, expanda **Crear nuevas opciones de cuenta**.
 
-   El valor del **Dominio de correo electrónico predeterminado** El campo se muestra de la siguiente manera. Esta es una configuración específica del sistema.
+   El valor del campo **Dominio de correo electrónico predeterminado** se muestra de la siguiente manera. Esta es una configuración específica del sistema.
 
-   ![Compruebe la configuración en el sistema de producción](../../assets/configuration/split-default-domain.png)
+   ![Comprobar la configuración del sistema de producción](../../assets/configuration/split-default-domain.png)

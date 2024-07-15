@@ -6,7 +6,7 @@ feature: Best Practices
 exl-id: 62aeffe3-b5a6-49f8-a39b-3219b46cd486
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
-source-wordcount: '264'
+source-wordcount: '232'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Actualice los servicios y componentes que utiliza Adobe Commerce antes de que ll
 
 Los clientes con planes de inicio pueden autoabastecerse con actualizaciones de servicios. Consulte [Cambiar la versión del servicio](https://devdocs.magento.com/cloud/project/services.html#change-service-version) para obtener más información sobre cómo hacerlo.
 
-Los clientes con planes Pro solo pueden autoabastecerse con actualizaciones de servicios en sus [Entorno de integración](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/integration-environment-enhancement-request-pro-and-starter.html). Para actualizar los servicios en Producción, debe [enviar un ticket de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) solicitando la actualización.
+Los clientes con planes Pro solo pueden autoabastecerse con actualizaciones de servicios en su [entorno de integración](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/integration-environment-enhancement-request-pro-and-starter.html). Para las actualizaciones de servicios en Producción, debe [enviar un vale de soporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) solicitando la actualización.
 
 >[!WARNING]
 >
@@ -37,6 +37,6 @@ Puede ver la lista de versiones del servicio y las fechas de finalización de la
 >
 >Este archivo no puede considerarse una única fuente de verdad. Consulte los sitios web oficiales de los proveedores para conocer estas tecnologías si tiene alguna duda.
 
-## Información adicional
+## Más información
 
 [Requisitos del sistema](../../../installation/system-requirements.md)

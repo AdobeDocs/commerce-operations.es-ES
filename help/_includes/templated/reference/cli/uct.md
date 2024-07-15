@@ -12,14 +12,14 @@ ht-degree: 0%
 <!-- The template to render with above values -->
 **Versión**: 3.0.17
 
-Esta referencia contiene 9 comandos disponibles a través del `bin/uct` herramienta de línea de comandos.
-La lista inicial se genera automáticamente utilizando `bin/uct list` en Adobe Commerce.
+Esta referencia contiene 9 comandos disponibles mediante la herramienta de línea de comandos `bin/uct`.
+La lista inicial se genera automáticamente usando el comando `bin/uct list` en Adobe Commerce.
 
 Obtenga más información acerca de la herramienta en [Información general](/help/upgrade/upgrade-compatibility-tool/overview.md).
 
 >[!NOTE]
 >
->Esta referencia se genera a partir del código base de la aplicación. Para cambiar el contenido, puede actualizar el código fuente para la implementación del comando correspondiente en la [código base](https://github.com/magento) y envíe los cambios para que se revisen. Otra forma es _Danos tu opinión_ (busque el vínculo en la parte superior derecha). Para ver las directrices de contribución, consulte [Contribuciones de código](https://developer.adobe.com/commerce/contributor/guides/code-contributions/).
+>Esta referencia se genera a partir del código base de la aplicación. Para cambiar el contenido, puede actualizar el código fuente de la implementación de comandos correspondiente en el repositorio [codebase](https://github.com/magento) y enviar los cambios para su revisión. Otra forma es _Proporcionarnos comentarios_ (busque el vínculo en la esquina superior derecha). Para ver las directrices de contribución, consulte [Contribuciones de código](https://developer.adobe.com/commerce/contributor/guides/code-contributions/).
 
 ## `_complete`
 
@@ -38,7 +38,7 @@ El tipo de shell (&quot;bash&quot;)
 
 ### `--input`, `-i`
 
-Una matriz de tokens de entrada (por ejemplo, COMP_WORDS o argv)
+Matriz de tokens de entrada (por ejemplo, COMP_WORDS o argv)
 
 - Predeterminado: `[]`
 - Requiere un valor

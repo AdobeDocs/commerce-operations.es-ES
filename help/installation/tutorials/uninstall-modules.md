@@ -17,7 +17,7 @@ Solo debe desinstalar un módulo si está seguro de que no lo utilizará. En lug
 
 >[!NOTE]
 >
->Este comando comprueba que solo las dependencias declaradas en la variable `composer.json` archivo. Si desinstala un módulo que es _no_ definida en la variable `composer.json` , este comando desinstala el módulo sin comprobar las dependencias. Este comando hace lo siguiente _no_, sin embargo, elimine el código del módulo del sistema de archivos. Debe utilizar las herramientas del sistema de archivos para quitar el código del módulo (por ejemplo, `rm -rf <path to module>`). Como alternativa, puede hacer lo siguiente [disable](manage-modules.md) módulos que no son de Compositor.
+>Este comando comprueba que solo las dependencias declaradas en el archivo `composer.json`. Si desinstala un módulo que está _no_ definido en el archivo `composer.json`, este comando desinstala el módulo sin comprobar las dependencias. Sin embargo, este comando _no_ quita el código del módulo del sistema de archivos. Debe utilizar las herramientas del sistema de archivos para quitar el código del módulo (por ejemplo, `rm -rf <path to module>`). Como alternativa, puede [deshabilitar](manage-modules.md) módulos que no sean de Compositor.
 
 Uso de comandos:
 
@@ -26,13 +26,13 @@ bin/magento module:uninstall [--backup-code] [--backup-media] [--backup-db] [-r|
   {ModuleName} ... {ModuleName}
 ```
 
-Donde `{ModuleName}` especifica el nombre del módulo en `<VendorName>_<ModuleName>` formato. Por ejemplo, el nombre del módulo Cliente es `Magento_Customer`. Para obtener una lista de nombres de módulos, escriba `magento module:status`
+Donde `{ModuleName}` especifica el nombre del módulo en formato `<VendorName>_<ModuleName>`. Por ejemplo, el nombre del módulo Cliente es `Magento_Customer`. Para obtener una lista de nombres de módulos, escriba `magento module:status`
 
 El comando de desinstalación del módulo realiza las siguientes tareas:
 
 1. Comprueba que los módulos especificados existen en la base de código y que son paquetes instalados por Composer.
 
-   Este comando funciona _solamente_ con módulos definidos como paquetes de Compositor.
+   Este comando funciona _solamente_ con módulos definidos como paquetes de composición.
 
 1. Comprueba las dependencias con otros módulos y finaliza el comando si hay dependencias que no se cumplen.
 
@@ -44,25 +44,25 @@ El comando de desinstalación del módulo realiza las siguientes tareas:
 
    | Opción | Significado | Nombre y ubicación del archivo de copia de seguridad |
    | ---------------- | -------------------------------------------------------------------------------- | -------------------------------------------- |
-   | `--backup-code` | Realiza una copia de seguridad del sistema de archivos (excluyendo `var` y `pub/static` directorios). | `var/backups/<timestamp>_filesystem.tgz` |
+   | `--backup-code` | Realiza una copia de seguridad del sistema de archivos (excluyendo los directorios `var` y `pub/static`). | `var/backups/<timestamp>_filesystem.tgz` |
    | `--backup-media` | Realiza una copia de seguridad del directorio pub/media. | `var/backups/<timestamp>_filesystem_media.tgz` |
    | `--backup-db` | Copia de seguridad de la base de datos. | `var/backups/<timestamp>_db.gz` |
 
-1. If `--remove-data` se especifica, quite el esquema de la base de datos y los datos definidos en el `Uninstall` clases.
+1. Si se especifica `--remove-data`, quite el esquema de base de datos y los datos definidos en las clases `Uninstall` del módulo.
 
-   Para que se desinstale cada módulo especificado, invoca el `uninstall` método en su `Uninstall` clase. Esta clase debe heredar de [Magento\Framework\Setup\UninstallInterface](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Setup/UninstallInterface.php).
+   Para que se desinstale cada módulo especificado, invoca el método `uninstall` en su clase `Uninstall`. Esta clase debe heredar de [Magento\Framework\Setup\UninstallInterface](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Setup/UninstallInterface.php).
 
-1. Quita los módulos especificados del `setup_module` tabla de base de datos.
-1. Quita los módulos especificados de la lista de módulos de [configuración de implementación](../../configuration/reference/deployment-files.md).
+1. Quita los módulos especificados de la tabla de base de datos `setup_module`.
+1. Quita los módulos especificados de la lista de módulos de la [configuración de implementación](../../configuration/reference/deployment-files.md).
 1. Quita el código de la base de código mediante `composer remove`.
 
    >[!NOTE]
    >
-   >Desinstalación de un módulo _siempre_ ejecuciones `composer remove`. El `--remove-data` elimina los datos de la base de datos y el esquema definidos por el módulo `Uninstall` clase.
+   >Al desinstalar un módulo _always_ se ejecuta `composer remove`. La opción `--remove-data` quita los datos de la base de datos y el esquema definidos por la clase `Uninstall` del módulo.
 
 1. Limpia la caché.
 1. Actualiza las clases generadas.
-1. If `--clear-static-content` se ha especificado, limpia [archivos de vista estática generados](../../configuration/cli/static-view-file-deployment.md).
+1. Si se especifica `--clear-static-content`, limpia [los archivos de vista estática generados](../../configuration/cli/static-view-file-deployment.md).
 1. Elimina el almacén del modo de mantenimiento.
 
 Por ejemplo, si intenta desinstalar un módulo del que depende otro módulo, aparecerá el siguiente mensaje:
@@ -73,7 +73,7 @@ magento module:uninstall Magento_SampleMinimal
         Magento_SampleModifyContent
 ```
 
-Una alternativa es desinstalar ambos módulos después de realizar una copia de seguridad del sistema de archivos del módulo, `pub/media` archivos y tablas de base de datos pero _no_ eliminando el esquema o los datos de la base de datos del módulo:
+Una alternativa es desinstalar ambos módulos después de hacer una copia de seguridad del sistema de archivos de módulos, `pub/media` archivos y tablas de base de datos, pero _no_ quitando el esquema o los datos de base de datos del módulo:
 
 ```bash
 bin/magento module:uninstall Magento_SampleMinimal Magento_SampleModifyContent --backup-code --backup-media --backup-db
@@ -126,11 +126,11 @@ Para restaurar el código base al estado en el que realizó la copia de segurida
 bin/magento setup:rollback [-c|--code-file="<filename>"] [-m|--media-file="<filename>"] [-d|--db-file="<filename>"]
 ```
 
-Donde `<filename>` es el nombre del archivo de copia de seguridad en `<app_root>/var/backups` directorio. Para mostrar una lista de archivos de copia de seguridad, escriba `magento info:backups:list`
+Donde `<filename>` es el nombre del archivo de copia de seguridad en el directorio `<app_root>/var/backups`. Para mostrar una lista de archivos de copia de seguridad, escriba `magento info:backups:list`
 
 >[!WARNING]
 >
->Este comando elimina los archivos especificados o la base de datos antes de restaurarlos. Por ejemplo, la variable `--media-file` elimina los recursos de medios en la opción `pub/media` antes de restaurar desde el archivo de reversión especificado. Asegúrese de no haber cambiado el sistema de archivos o la base de datos que desea conservar antes de utilizar este comando.
+>Este comando elimina los archivos especificados o la base de datos antes de restaurarlos. Por ejemplo, la opción `--media-file` elimina los recursos multimedia del directorio `pub/media` antes de restaurarlos a partir del archivo de reversión especificado. Asegúrese de no haber cambiado el sistema de archivos o la base de datos que desea conservar antes de utilizar este comando.
 
 >[!NOTE]
 >
@@ -142,7 +142,7 @@ Este comando realiza las tareas siguientes:
 1. Comprueba el nombre del archivo de copia de seguridad.
 1. Si especifica un archivo de reversión de código:
 
-   a. Comprueba que las ubicaciones de destino de reversión pueden escribirse (tenga en cuenta que la variable `pub/static` y `var` carpetas se ignoran).
+   a. Comprueba que las ubicaciones de destino de reversión pueden escribirse (tenga en cuenta que las carpetas `pub/static` y `var` se omiten).
 
    b. Elimina todos los archivos y directorios del directorio de instalación de la aplicación.
 
@@ -172,7 +172,7 @@ Por ejemplo, para restaurar una copia de seguridad de un código (es decir, un s
   magento info:backups:list
   ```
 
-* Restaurar una copia de seguridad de archivos denominada `1433876616_filesystem.tgz`:
+* Restaurar una copia de seguridad de archivos con el nombre `1433876616_filesystem.tgz`:
 
   ```bash
   magento setup:rollback --code-file="1433876616_filesystem.tgz"
@@ -191,4 +191,4 @@ Por ejemplo, para restaurar una copia de seguridad de un código (es decir, un s
 
 >[!NOTE]
 >
->Para ejecutar el `magento` vuelva a ejecutar el comando sin cambiar los directorios, es posible que tenga que introducir `cd pwd`.
+>Para volver a ejecutar el comando `magento` sin cambiar los directorios, es posible que tenga que escribir `cd pwd`.

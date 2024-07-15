@@ -21,7 +21,7 @@ Utilice esta lista de comprobación durante sus conversaciones anuales y trimest
 
 >[!NOTE]
 >
->Para obtener una descripción detallada de los pasos técnicos para una actualización correcta, consulte [Completar requisitos previos de actualización](../../../upgrade/prepare/prerequisites.md) en nuestra documentación de usuario.
+>Para obtener una descripción detallada de los pasos técnicos para una actualización correcta, consulte [Requisitos previos de actualización completos](../../../upgrade/prepare/prerequisites.md) en nuestra documentación de usuario.
 
 ## Productos y versiones afectados
 
@@ -46,7 +46,7 @@ Utilice esta lista de comprobación durante sus conversaciones anuales y trimest
 
 ## Presupuesto y calendario
 
-▢ Uso de Adobe Commerce [programación de versiones](../../../release/schedule.md) para planificar su próxima actualización y prepararse con antelación.
+▢ Use la [programación de versiones](../../../release/schedule.md) de Adobe Commerce para planificar su próxima actualización y prepararse con antelación.
 
 ▢ Analice qué versión cree que adoptará (completa o solo de seguridad) en función de las necesidades previstas.
 
@@ -61,13 +61,13 @@ Utilice esta lista de comprobación durante sus conversaciones anuales y trimest
 ▢ Actividades de acceso anticipado
 
 - El socio participa en [Beta](../../../release/beta.md)
-- Revisión de notas de la versión beta.
+- Revisión de las notas de la versión de Beta.
 
 ▢ Acordar el presupuesto, el calendario y el alcance.
 
-▢ Ejecutar [Actualizar herramienta de compatibilidad](../../../upgrade/upgrade-compatibility-tool/overview.md)
+▢ Ejecutar la [herramienta de compatibilidad de actualización](../../../upgrade/upgrade-compatibility-tool/overview.md)
 
-▢ Considere la posibilidad de utilizar la actualización para abordar los problemas identificados por el [Herramienta de análisis de todo el sitio](../../../tools/site-wide-analysis-tool/intro.md).
+▢ Considere la posibilidad de utilizar la actualización para resolver los problemas identificados por la [Herramienta de análisis de todo el sitio](../../../tools/site-wide-analysis-tool/intro.md).
 
 ▢ Dependencias de documentos y cualquier cambio técnico de pila necesario, como versiones de PHP o Elastic Search.
 
@@ -77,17 +77,17 @@ Utilice esta lista de comprobación durante sus conversaciones anuales y trimest
 
 ▢ Período de mantenimiento del plan si se prevé tiempo de inactividad.
 
-▢ Revise y apruebe la estrategia de prueba; considere la posibilidad de utilizar Adobe Commerce. [marco de prueba](https://developer.adobe.com/commerce/testing/) o un grupo de automatización de terceros.
+▢ Revise y apruebe la estrategia de prueba; considere la posibilidad de usar el [marco de prueba](https://developer.adobe.com/commerce/testing/) de Adobe Commerce o un grupo de automatización de terceros.
 
 ▢ Confirme que todas las extensiones y personalizaciones son compatibles.
 
 ▢ Revise y actualice el manual posterior al inicio; se utilizará si se detectan problemas durante o después de la actualización.
 
-## Después de la implementación
+## Implementación de Post
 
 ▢ Supervisar el sitio para ver si hay problemas de rendimiento, procesamiento de pedidos, análisis y otros.
 
-▢ una Adobe Commerce [análisis de seguridad](https://account.magento.com/scanner/dashboard/) u otros exploradores de terceros y revisan posibles vulnerabilidades de seguridad.
+▢ Realizar un análisis de seguridad de Adobe Commerce [security scan](https://account.magento.com/scanner/dashboard/) u otro análisis de terceros y revisar posibles vulnerabilidades de seguridad.
 
 ▢ Realice una retrospectiva con todas las partes interesadas y documente lo que salió bien y lo que no y cómo mejorar.
 

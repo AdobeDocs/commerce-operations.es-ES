@@ -18,7 +18,7 @@ ht-degree: 0%
    php bin/magento app:config:dump
    ```
 
-   Por ejemplo, si Commerce está instalado en `/var/www/html/magento2`, introduzca:
+   Por ejemplo, si Commerce está instalado en `/var/www/html/magento2`, escriba:
 
    ```bash
    cd /var/www/html/magento2
@@ -43,9 +43,9 @@ ht-degree: 0%
 
    >[!WARNING]
    >
-   >Hacer _no_ enviar cambios al `generated`, `pub/media`, o `pub/static` directorios para el control de código fuente. Estos archivos se generan en el sistema de compilación. Es probable que el sistema de desarrollo tenga código, temas, etc., que no estén listos para usarlos en el sistema de producción.
+   >_no_ envía cambios a los directorios `generated`, `pub/media` o `pub/static` al control de código fuente. Estos archivos se generan en el sistema de compilación. Es probable que el sistema de desarrollo tenga código, temas, etc., que no estén listos para usarlos en el sistema de producción.
 
-1. Proteja sus cambios en `app/etc/config.php` sólo al control de código fuente.
+1. Proteja sus cambios en `app/etc/config.php` solo para el control de código fuente.
 
    ```bash
    git add app/etc/config.php && git commit -m "Updated shared configuration" && git push mconfig m2.2_deploy

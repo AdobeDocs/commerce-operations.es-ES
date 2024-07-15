@@ -26,7 +26,7 @@ Esta fase implica comenzar con el usuario, comprender sus necesidades, el desarr
 
 Esta fase implica la creación de contenido. Esto incluye la creación de contenido, la creación, la edición, la producción de recursos y la optimización de contenido: accesibilidad, SEO, etiquetado y clasificación, el recurso a la subcontratación en la producción, el papel de las herramientas y la tecnología de terceros y la reutilización de contenido.
 
-### Posproducción
+### Post-production
 
 Esta fase implica la revisión y evaluación de contenido, adaptación y optimización. Esto incluye evaluación, optimización, prueba, aprendizaje y experiencia del usuario de Analytics.
 
@@ -38,10 +38,10 @@ Tanto si administra contenido web básico como contenido que se publicará en la
 
 Adobe Experience Manager combina una serie de funciones de nivel de infraestructura y de nivel de aplicación en un único paquete integrado. Las direcciones de la oferta:
 
-- **Sites**: cree y entregue rápidamente sitios web y aplicaciones móviles relevantes, y actualice el contenido en cualquier momento sin sobrecargar a su departamento de TI.
-- **Assets**: administre fácilmente imágenes, vídeos y otros recursos en todos los canales digitales para ofrecer experiencias de cliente personalizadas.
-- **Communities**: cree comunidades prósperas y conversaciones atractivas en todas sus propiedades sociales para que pueda inspirar nuevos niveles de aprendizaje y lealtad a los clientes.
-- **Forms**: integre formularios de nivel empresarial en sus sitios web y experiencias móviles y simplifique la creación de formularios y la finalización de transacciones.
-- **Aplicaciones**: cree y entregue aplicaciones móviles con una solución que cierre la brecha entre los especialistas en marketing y TI para que los especialistas en marketing puedan actualizar fácilmente el contenido (incluso después del lanzamiento).
+- **Sites**: cree y envíe rápidamente sitios web y aplicaciones móviles relevantes, y actualice el contenido en cualquier momento sin sobrecargar a su departamento de TI.
+- **Assets**: administra fácilmente imágenes, vídeos y otros recursos en todos los canales digitales para ofrecer experiencias personalizadas a los clientes.
+- **Comunidades**: crea comunidades prósperas y conversaciones atractivas en todas tus propiedades sociales para que puedas inspirar nuevos niveles de aprendizaje y lealtad a tus clientes.
+- **Forms**: integra formularios de nivel empresarial en tus sitios web y experiencias móviles y simplifica la creación de formularios y la finalización de transacciones.
+- **Aplicaciones**: cree y ofrezca aplicaciones móviles con una solución que reduzca la distancia entre los especialistas en marketing y TI para que los especialistas en marketing puedan actualizar fácilmente el contenido (incluso después del inicio).
 
 ![Diagrama del marco de estrategia de contenido](../../assets/playbooks/content-strategy-framework2.png)

@@ -12,13 +12,13 @@ ht-degree: 0%
 
 # Configuración avanzada de barniz
 
-El barniz proporciona varias funciones que impiden que los clientes experimenten largos retrasos y tiempos de espera cuando el servidor de Commerce no funciona correctamente. Estas funciones se pueden configurar en la variable `default.vcl` archivo. En este tema se describen las adiciones que proporciona Commerce en el archivo VCL (Varnish Configuration Language) que descarga del administrador.
+El barniz proporciona varias funciones que evitan que los clientes experimenten retrasos y tiempos de espera largos cuando el servidor de Commerce no funciona correctamente. Estas características se pueden configurar en el archivo `default.vcl`. En este tema se describen las adiciones que Commerce proporciona al archivo VCL (Varnish Configuration Language) que se descarga desde el administrador.
 
-Consulte la [Manual de referencia del barniz](https://varnish-cache.org/docs/index.html) para obtener más información sobre el uso del lenguaje de configuración de barniz.
+Consulte el [Manual de referencia de barniz](https://varnish-cache.org/docs/index.html) para obtener más información acerca del uso del lenguaje de configuración de barniz.
 
 ## Comprobación de estado
 
-La función de comprobación de estado de Varnish sondea el servidor de Commerce para determinar si responde a tiempo. Si responde con normalidad, el contenido nuevo se regenera después de que caduque el período de tiempo de vida (TTL). Si no es así, Varnish siempre ofrece contenido anticuado.
+La función de comprobación de estado de Varnish sondea el servidor de Commerce para determinar si está respondiendo a tiempo. Si responde con normalidad, el contenido nuevo se regenera después de que caduque el período de tiempo de vida (TTL). Si no es así, Varnish siempre ofrece contenido anticuado.
 
 Commerce define la siguiente comprobación de estado predeterminada:
 
@@ -32,40 +32,40 @@ Commerce define la siguiente comprobación de estado predeterminada:
     }
 ```
 
-Cada 5 segundos, esta comprobación de estado llama a la función `pub/health_check.php` script. Este script comprueba la disponibilidad del servidor, cada base de datos y Redis (si están instalados). La secuencia de comandos debe devolver una respuesta en 2 segundos. Si la secuencia de comandos determina que cualquiera de estos recursos está inactivo, devuelve un código de error HTTP 500. Si este código de error se recibe en seis de cada diez intentos, el backend se considera no saludable.
+Cada 5 segundos, esta comprobación de estado llama al script `pub/health_check.php`. Este script comprueba la disponibilidad del servidor, cada base de datos y Redis (si están instalados). La secuencia de comandos debe devolver una respuesta en 2 segundos. Si la secuencia de comandos determina que cualquiera de estos recursos está inactivo, devuelve un código de error HTTP 500. Si este código de error se recibe en seis de cada diez intentos, el backend se considera no saludable.
 
-El `health_check.php` El script se encuentra en `pub` directorio. Si el directorio raíz de Commerce es `pub`, luego asegúrese de cambiar la ruta en el `url` parámetro de `/pub/health_check.php` hasta `health_check.php`.
+El script `health_check.php` se encuentra en el directorio `pub`. Si el directorio raíz de Commerce es `pub`, asegúrese de cambiar la ruta de acceso en el parámetro `url` de `/pub/health_check.php` a `health_check.php`.
 
-Para obtener más información, consulte la [Barniz de controles de estado](https://varnish-cache.org/docs/7.4/users-guide/vcl-backends.html#health-checks) documentación.
+Para obtener más información, consulte la [documentación de las comprobaciones de estado de Varnish](https://varnish-cache.org/docs/7.4/users-guide/vcl-backends.html#health-checks).
 
 ## Modo de gracia
 
 El modo de gracia permite a Varnish mantener un objeto en caché más allá de su valor TTL. A continuación, el barniz puede servir el contenido caducado (obsoleto) mientras obtiene una nueva versión. Esto mejora el flujo de tráfico y disminuye los tiempos de carga. Se utiliza en las siguientes situaciones:
 
-- Cuando el back-end de Commerce está en buen estado, pero una solicitud está tardando más de lo normal
+- Cuando el servidor de Commerce está en buen estado, pero una solicitud está tardando más de lo normal
 - Cuando el servidor de Commerce no está en buen estado.
 
-El `vcl_hit` La subrutina define cómo Varnish responde a una solicitud de objetos que se han almacenado en caché.
+La subrutina `vcl_hit` define cómo Varnish responde a una solicitud de objetos que se han almacenado en caché.
 
-### Cuando el back-end de Commerce está en buen estado
+### Cuando el servidor de Commerce está en buen estado
 
-Cuando las comprobaciones de estado determinan que el back-end de Commerce está en buen estado, Varnish comprueba si el tiempo permanece en el período de gracia. El período de gracia predeterminado es de 300 segundos, pero un comerciante puede establecer el valor desde el administrador, tal como se describe en [Configuración de Commerce para utilizar Barniz](configure-varnish-commerce.md). Si el período de gracia no ha caducado, Varnish envía el contenido obsoleto y actualiza asincrónicamente el objeto desde el servidor de Commerce. Si el periodo de gracia ha caducado, Varnish proporciona el contenido obsoleto y actualiza sincrónicamente el objeto desde el servidor de Commerce.
+Cuando las comprobaciones de estado determinan que el back-end de Commerce está en buen estado, Varnish comprueba si el tiempo permanece en el período de gracia. El período de gracia predeterminado es de 300 segundos, pero un comerciante puede establecer el valor desde el administrador como se describe en [Configurar Commerce para que use Barnish](configure-varnish-commerce.md). Si el período de gracia no ha caducado, Varnish entrega el contenido obsoleto y actualiza asincrónicamente el objeto desde el servidor de Commerce. Si el período de gracia ha caducado, Varnish proporciona el contenido obsoleto y actualiza sincrónicamente el objeto desde el servidor de Commerce.
 
 La cantidad máxima de tiempo que Varnish proporciona un objeto obsoleto es la suma del período de gracia (300 segundos de forma predeterminada) y el valor TTL (86400 segundos de forma predeterminada).
 
-Para cambiar el período de gracia predeterminado desde dentro de `default.vcl` , edite la línea siguiente en la `vcl_hit` subrutina:
+Para cambiar el período de gracia predeterminado desde el archivo `default.vcl`, edite la línea siguiente en la subrutina `vcl_hit`:
 
 ```conf
 if (obj.ttl + 300s > 0s) {
 ```
 
-### Cuando el back-end de Commerce no está en buen estado
+### Cuando el servidor de Commerce no está en buen estado
 
-Si el servidor de Commerce no responde, Varnish proporciona contenido obsoleto desde la caché durante tres días (o como se define en `beresp.grace`) más el TTL restante (que de forma predeterminada es un día), a menos que el contenido almacenado en caché se purgue manualmente.
+Si el servidor de Commerce no responde, Varnish proporciona contenido obsoleto de la caché durante tres días (o como se define en `beresp.grace`) más el TTL restante (que de forma predeterminada es un día), a menos que el contenido almacenado en caché se purgue manualmente.
 
 ## Modo Saint
 
-El modo Saint excluye los backends no saludables durante una cantidad de tiempo configurable. Como resultado, los backends no saludables no pueden servir tráfico cuando se usa Barnish como equilibrador de carga. El modo Saint se puede utilizar con el modo de gracia para permitir una gestión compleja de servidores back-end en mal estado. Por ejemplo, si un servidor back-end no está en buen estado, los reintentos se pueden redirigir a otro servidor. Si todos los demás servidores están inactivos, proporcione objetos en caché obsoletos. Los hosts del backend y los períodos de interrupción del modo Saint se definen en la variable `default.vcl` archivo.
+El modo Saint excluye los backends no saludables durante una cantidad de tiempo configurable. Como resultado, los backends no saludables no pueden servir tráfico cuando se usa Barnish como equilibrador de carga. El modo Saint se puede utilizar con el modo de gracia para permitir una gestión compleja de servidores back-end en mal estado. Por ejemplo, si un servidor back-end no está en buen estado, los reintentos se pueden redirigir a otro servidor. Si todos los demás servidores están inactivos, proporcione objetos en caché obsoletos. Los hosts back-end y los períodos de interrupción del modo Saint se definen en el archivo `default.vcl`.
 
 El modo Saint también se puede utilizar cuando las instancias de Commerce se desconectan individualmente para realizar tareas de mantenimiento y actualización sin afectar a la disponibilidad del sitio de Commerce.
 
@@ -75,9 +75,9 @@ Designar un equipo como instalación principal. En este equipo, instale la insta
 
 En todos los demás equipos, la instancia de Commerce debe tener acceso a la base de datos mySQL del equipo principal. Los equipos secundarios también deben tener acceso a los archivos de la instancia principal de Commerce.
 
-Como alternativa, el control de versiones de archivos estáticos se puede desactivar en todos los equipos. Se puede acceder a desde el administrador en **Tiendas** > Configuración > **Configuración** > **Avanzadas** > **Desarrollador** > **Configuración de archivos estáticos** > **Firmar archivos estáticos** = **No**.
+Como alternativa, el control de versiones de archivos estáticos se puede desactivar en todos los equipos. Se puede acceder a esta opción desde el administrador en **Tiendas** > Configuración > **Configuración** > **Avanzado** > **Desarrollador** > **Configuración de archivos estáticos** > **Firmar archivos estáticos** = **No**.
 
-Finalmente, todas las instancias de Commerce deben estar en modo de producción. Antes de iniciar Varnish, borre la caché en cada instancia. En el Administrador, vaya a **Sistema** > Herramientas > **Administración de caché** y haga clic en **Vaciar caché del Magento**. También puede ejecutar el siguiente comando para borrar la caché:
+Finalmente, todas las instancias de Commerce deben estar en modo de producción. Antes de iniciar Varnish, borre la caché en cada instancia. En el Administrador, vaya a **Sistema** > Herramientas > **Administración de caché** y haga clic en **Vaciar caché de Magento**. También puede ejecutar el siguiente comando para borrar la caché:
 
 ```bash
 bin/magento cache:flush
@@ -85,11 +85,11 @@ bin/magento cache:flush
 
 ### Instalación
 
-El modo Saint no forma parte del paquete principal de barniz. Es una versión separada `vmod` que deben descargarse e instalarse. Como resultado, debe volver a compilar Varnish desde el origen, tal como se describe en la sección [instrucciones de instalación](https://varnish-cache.org/docs/index.html) para su versión de Varnish.
+El modo Saint no forma parte del paquete principal de barniz. Es un(a) `vmod` con versiones por separado que debe descargarse e instalarse. Como resultado, debe volver a compilar Varnish desde el origen, tal como se describe en las [instrucciones de instalación](https://varnish-cache.org/docs/index.html) para su versión de Varnish.
 
 Después de volver a compilar, puede instalar el módulo del modo Saint. En general, siga estos pasos:
 
-1. Obtener el código fuente de [Módulos de barniz](https://github.com/varnish/varnish-modules). Clone la versión de Git (versión maestra) ya que las versiones 0.9.x contienen un error de código fuente.
+1. Obtenga el código fuente de [módulos Varnish](https://github.com/varnish/varnish-modules). Clone la versión de Git (versión maestra) ya que las versiones 0.9.x contienen un error de código fuente.
 1. Genere el código fuente con autotools:
 
    ```bash
@@ -101,11 +101,11 @@ Después de volver a compilar, puede instalar el módulo del modo Saint. En gene
    sudo make install
    ```
 
-Consulte [Colección del módulo de barniz](https://github.com/varnish/varnish-modules) para obtener información sobre la instalación del módulo de modo Saint.
+Consulte [Colección de módulos de barniz](https://github.com/varnish/varnish-modules) para obtener información sobre cómo instalar el módulo de modo Saint.
 
 ### Archivo VCL de muestra
 
-En el ejemplo de código siguiente se muestra el código que debe añadirse al fichero VCL para activar el modo san. Coloque el `import` extractos y `backend` definiciones en la parte superior del archivo.
+En el ejemplo de código siguiente se muestra el código que debe añadirse al fichero VCL para activar el modo san. Coloque las instrucciones `import` y las definiciones `backend` en la parte superior del archivo.
 
 ```cpp
 import saintmode;

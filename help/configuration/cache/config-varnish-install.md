@@ -32,4 +32,4 @@ Abra un terminal e introduzca el siguiente comando para mostrar la versión de B
 varnishd -V
 ```
 
-Asegúrese de que [Adobe Commerce admite](../../installation/system-requirements.md) Seleccione la versión instalada de Varnish antes de continuar. Si está ejecutando una versión no compatible, debe actualizar a una versión compatible. Consulte la documentación de instalación de Varnish para obtener más información.
+Asegúrese de que [Adobe Commerce admite](../../installation/system-requirements.md) la versión instalada de Varnish antes de continuar. Si está ejecutando una versión no compatible, debe actualizar a una versión compatible. Consulte la documentación de instalación de Varnish para obtener más información.

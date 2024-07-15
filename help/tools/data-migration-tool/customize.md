@@ -1,29 +1,29 @@
 ---
-title: Personalización de [!DNL Data Migration Tool]
-description: Aprenda a personalizar la variable [!DNL Data Migration Tool] para transferir datos creados por extensiones entre Magento 1 y Magento 2.
+title: Personalizar  [!DNL Data Migration Tool]
+description: Aprenda a personalizar  [!DNL Data Migration Tool]  para transferir datos creados por extensiones entre el Magento 1 y el Magento 2.
 exl-id: a5c1575f-9d77-416e-91fe-a82905ef2e1c
 topic: Commerce, Migration
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
-source-wordcount: '821'
+source-wordcount: '836'
 ht-degree: 0%
 
 ---
 
-# Configure las variables [!DNL Data Migration Tool]
+# Configurar [!DNL Data Migration Tool]
 
-En ocasiones, el formato de datos y la estructura creados por [extensiones](https://marketplace.magento.com/extensions.html) o el código personalizado es diferente entre el Magento 1 y el Magento 2. Utilice puntos de extensión dentro de [!DNL Data Migration Tool] para migrar estos datos. Si el formato y la estructura de los datos son los mismos, la herramienta puede migrar automáticamente los datos sin la intervención del usuario.
+A veces, el formato de datos y la estructura creados por [extensiones](https://marketplace.magento.com/extensions.html) o código personalizado son diferentes entre el Magento 1 y el Magento 2. Utilice puntos de extensión dentro de [!DNL Data Migration Tool] para migrar estos datos. Si el formato y la estructura de los datos son los mismos, la herramienta puede migrar automáticamente los datos sin la intervención del usuario.
 
-Durante la migración, la variable [Etapa de mapa](technical-specification.md#map-step) analiza y compara todas las tablas de Magento 1 y Magento 2, incluidas las creadas por extensiones. Si las tablas son iguales, la herramienta migra automáticamente los datos. Si las tablas difieren, la herramienta finaliza y se lo comunica al usuario.
+Durante la migración, el [Paso de asignación](technical-specification.md#map-step) analiza y compara todas las tablas de Magento 1 y Magento 2, incluidas las creadas por las extensiones. Si las tablas son iguales, la herramienta migra automáticamente los datos. Si las tablas difieren, la herramienta finaliza y se lo comunica al usuario.
 
 >[!NOTE]
 >
->Lea el [Especificaciones técnicas](technical-specification.md) antes de intentar ampliar el [!DNL Data Migration Tool]. Además, revise la [Guía de migración](../overview.md) para obtener información general sobre el uso de la herramienta de migración.
+>Lea la [especificación técnica](technical-specification.md) antes de intentar extender [!DNL Data Migration Tool]. Además, revise la [Guía de migración](../overview.md) para obtener información general acerca del uso de la herramienta de migración.
 
 
 ## Pequeños cambios de formato y estructura de datos
 
-En la mayoría de los casos, la variable [Etapa de mapa](technical-specification.md#map-step) resuelve suficientemente los cambios menores de formato y estructura de los datos utilizando los siguientes métodos en la `map.xml` archivo:
+En la mayoría de los casos, el [paso de asignación](technical-specification.md#map-step) resuelve suficientemente los cambios menores de formato y estructura de datos mediante los siguientes métodos en el archivo `map.xml`:
 
 - Cambiar nombres de tablas o campos con reglas de asignación
 - Transformar formatos de datos con controladores existentes o con un controlador personalizado
@@ -71,28 +71,28 @@ A continuación se muestra un ejemplo de uso de reglas de asignación y de un co
 </destination>
 ```
 
-- No migre los datos innecesarios del `great_blog_index` tabla de índice.
-- La tabla `great_blog_publication` cambió el nombre a `great_blog_post` en el Magento 2, por lo que los datos se migran a la nueva tabla.
-   - El `summary` se cambió el nombre del campo a `title`, de modo que los datos se migran al nuevo campo.
-   - El `priority` El campo se ha eliminado y ya no existe en el Magento 2.
-   - Los datos de la `body` el campo ha cambiado de formato y el controlador personalizado debe procesarlo: `\Migration\Handler\GreatBlog\NewFormat`.
+- No migre datos innecesarios de la tabla de índice `great_blog_index`.
+- Se cambió el nombre de la tabla `great_blog_publication` a `great_blog_post` en el Magento 2, por lo que los datos se migran a la nueva tabla.
+   - Se cambió el nombre del campo `summary` a `title`, por lo que los datos se migran al nuevo campo.
+   - El campo `priority` se eliminó y ya no existe en el Magento 2.
+   - Los datos del campo `body` han cambiado de formato y el controlador personalizado debe procesarlos: `\Migration\Handler\GreatBlog\NewFormat`.
 - Se ha desarrollado una nueva función de clasificación para la extensión &quot;GreatBlog&quot; en Magento 2.
-   - Un nuevo `great_blog_rating` se ha creado la tabla.
-   - Un nuevo `great_blog_post.rating` se ha creado el campo.
+   - Se creó una nueva tabla `great_blog_rating`.
+   - Se creó un nuevo campo `great_blog_post.rating`.
 
 ### Ampliación de la asignación en otros pasos
 
-Otros pasos admiten la asignación de, como [Paso EAV](technical-specification.md#eav-step) y el paso Atributos del cliente. Estos pasos migran una lista predefinida de tablas de Magento. Por ejemplo, supongamos que la extensión &quot;GreatBlog&quot; tiene un campo adicional en la variable `eav_attribute` y el nombre cambió en el Magento 2. Dado que la tabla es procesada por el [Paso EAV](technical-specification.md#eav-step), las reglas de asignación deben escribirse para `map-eav.xml` archivo. El `map.xml` y `map-eav.xml` Los archivos utilizan lo mismo `map.xsd` , por lo que las reglas de asignación siguen siendo las mismas.
+Otros pasos admiten la asignación, como el [paso EAV](technical-specification.md#eav-step) y el paso Atributos del cliente. Estos pasos migran una lista predefinida de tablas de Magento. Por ejemplo, supongamos que la extensión &quot;GreatBlog&quot; tiene un campo adicional en la tabla `eav_attribute` y el nombre ha cambiado en el Magento 2. Dado que el [paso EAV](technical-specification.md#eav-step) procesa la tabla, las reglas de asignación deben escribirse para el archivo `map-eav.xml`. Los archivos `map.xml` y `map-eav.xml` utilizan el mismo esquema `map.xsd`, por lo que las reglas de asignación siguen siendo las mismas.
 
 ## Principales cambios de formato y estructura de datos
 
-Además del paso Asignar, hay otros pasos en la `config.xml` que migran datos con cambios importantes de formato y estructura, incluidos:
+Además del paso Asignar, hay otros pasos en el archivo `config.xml` que migran datos con cambios importantes de formato y estructura, entre los que se incluyen:
 
 - [Paso de reescritura de URL](technical-specification.md#url-rewrite-step)
 - Paso de OrderGrids
 - [Paso EAV](technical-specification.md#eav-step)
 
-A diferencia del [Etapa de mapa](technical-specification.md#map-step), estos pasos exploran una lista predefinida de tablas en lugar de todas las tablas.
+A diferencia del [Paso de asignación](technical-specification.md#map-step), estos pasos exploran una lista predefinida de tablas en lugar de todas las tablas.
 
 Para realizar cambios importantes en el formato y la estructura de los datos, cree un paso personalizado.
 
@@ -100,7 +100,7 @@ Para realizar cambios importantes en el formato y la estructura de los datos, cr
 
 En el mismo ejemplo de &quot;GreatBlog&quot;, supongamos que la extensión tiene una tabla en el Magento 1, pero se ha rediseñado para tener dos tablas en el Magento 2.
 
-En el Magento 1, había un único `greatblog_post` tabla:
+En el Magento 1, había una sola tabla `greatblog_post`:
 
 ```text
 | Field     | Type     |
@@ -112,7 +112,7 @@ En el Magento 1, había un único `greatblog_post` tabla:
 | tags      | TEXT     |
 ```
 
-En el Magento 2, una nueva tabla para las etiquetas `greatblog_post_tags` se introdujo:
+En el Magento 2, se creó una nueva tabla para las etiquetas `greatblog_post_tags`:
 
 ```text
 | Field      | Type     |
@@ -122,7 +122,7 @@ En el Magento 2, una nueva tabla para las etiquetas `greatblog_post_tags` se int
 | sort_order | SMALLINT |
 ```
 
-MAGENTO 2 `greatblog_post` ahora tiene este aspecto:
+La tabla del Magento 2 `greatblog_post` ahora tiene este aspecto:
 
 ```text
 | Field     | Type     |
@@ -133,7 +133,7 @@ MAGENTO 2 `greatblog_post` ahora tiene este aspecto:
 | author_id | SMALLINT |
 ```
 
-Para migrar todos los datos de la estructura de tablas antigua a una nueva, puede crear un paso personalizado en la `config.xml` archivo. Por ejemplo:
+Para migrar todos los datos de la estructura de tablas antigua a una nueva, puede crear un paso personalizado en el archivo `config.xml`. Por ejemplo:
 
 ```xml
 <steps mode="data">
@@ -153,7 +153,7 @@ Para migrar todos los datos de la estructura de tablas antigua a una nueva, pued
 </steps>
 ```
 
-La herramienta ejecuta pasos según su posición en `config.xml` archivo; de arriba abajo. En nuestro ejemplo, la variable `GreatBlog Step` se ejecuta la última.
+La herramienta ejecuta pasos de acuerdo con su posición en el archivo `config.xml`; de arriba abajo. En nuestro ejemplo, `GreatBlog Step` se ejecuta en último lugar.
 
 Los pasos pueden incluir cuatro tipos de clases:
 
@@ -164,12 +164,12 @@ Los pasos pueden incluir cuatro tipos de clases:
 
 >[!NOTE]
 >
->Consulte [Configuración](technical-specification.md#configuration), [Pasos internos](technical-specification.md#step-internals), [Fases](technical-specification.md#step-stages), y [Modos de ejecución](technical-specification.md#running-modes) para obtener más información.
+>Consulte [Configuración](technical-specification.md#configuration), [Pasos internos](technical-specification.md#step-internals), [Etapas](technical-specification.md#step-stages) y [Modos de ejecución](technical-specification.md#running-modes) para obtener más información.
 
 
-Las consultas SQL complejas se pueden ensamblar dentro de estas clases para recuperar y migrar datos. Además, estas tablas deben &quot;ignorarse&quot; en el [Etapa de mapa](technical-specification.md#map-step) porque analiza todas las tablas existentes e intenta migrar los datos a menos que se encuentren en el `<ignore>` etiqueta del `map.xml` archivo.
+Las consultas SQL complejas se pueden ensamblar dentro de estas clases para recuperar y migrar datos. Además, estas tablas deben &quot;ignorarse&quot; en el [Paso de asignación](technical-specification.md#map-step) porque analiza todas las tablas existentes e intenta migrar los datos a menos que se encuentren en la etiqueta `<ignore>` del archivo `map.xml`.
 
-Para la comprobación de integridad, defina un archivo de asignación adicional en la variable `config.xml` para comprobar que la estructura de las tablas es la esperada.
+Para la comprobación de integridad, defina un archivo de asignación adicional en el archivo `config.xml` para comprobar que la estructura de las tablas es la esperada.
 
 ```xml
 <config xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
@@ -205,7 +205,7 @@ Asignar archivo `map-greatblog.xml`:
 </map>
 ```
 
-Clase de comprobación de integridad `Vendor\Migration\Step\GreatBlog\Integrity` extiende `Migration\App\Step\AbstractIntegrity` y contiene el `perform` método en el que verificamos la estructura de la tabla:
+La clase de comprobación de integridad `Vendor\Migration\Step\GreatBlog\Integrity` extiende `Migration\App\Step\AbstractIntegrity` y contiene el método `perform` donde se comprueba la estructura de la tabla:
 
 ```php
 class Integrity extends \Migration\App\Step\AbstractIntegrity
@@ -248,7 +248,7 @@ class Integrity extends \Migration\App\Step\AbstractIntegrity
 }
 ```
 
-A continuación, debe crear una clase para procesar y guardar datos en la base de datos de Magento 2 `Vendor\Migration\Step\GreatBlog\Data`:
+A continuación, debe crear una clase para procesar y guardar datos en la base de datos del Magento 2 `Vendor\Migration\Step\GreatBlog\Data`:
 
 ```php
 class Data implements \Migration\App\Step\StageInterface
@@ -326,7 +326,7 @@ class Data implements \Migration\App\Step\StageInterface
 }
 ```
 
-En una clase Volume `Vendor\Migration\Step\GreatBlog\Volume`, comprobamos si los datos se han migrado completamente:
+En una clase de volumen `Vendor\Migration\Step\GreatBlog\Volume`, comprobamos si los datos se han migrado completamente:
 
 ```php
 class Volume extends \Migration\App\Step\AbstractVolume
@@ -355,7 +355,7 @@ class Volume extends \Migration\App\Step\AbstractVolume
 }
 ```
 
-Para agregar la funcionalidad de migración delta, agregue un nuevo grupo al `deltalog.xml` archivo. Entrada `group`, especifique el nombre de las tablas en las que se deben comprobar los cambios:
+Para agregar la funcionalidad de migración delta, agregue un nuevo grupo al archivo `deltalog.xml`. En `group`, especifique el nombre de las tablas en las que se deben comprobar los cambios:
 
 ```xml
 <groups>
@@ -366,7 +366,7 @@ Para agregar la funcionalidad de migración delta, agregue un nuevo grupo al `de
 </groups>
 ```
 
-A continuación, cree el `Delta` clase `Vendor\Migration\Step\GreatBlog\Delta` que extiende `Migration\App\Step\AbstractDelta`:
+A continuación, cree la clase `Delta` `Vendor\Migration\Step\GreatBlog\Delta` que extiende `Migration\App\Step\AbstractDelta`:
 
 ```php
 class Delta extends \Migration\App\Step\AbstractDelta
@@ -406,10 +406,11 @@ class Delta extends \Migration\App\Step\AbstractDelta
 }
 ```
 
-Después de la implementación de los pasos personalizados que se proporciona en los ejemplos, el sistema toma los datos de la tabla del Magento único 1 y los procesa mediante `Vendor\Migration\Step\GreatBlog\Data` clasifique y almacene los datos en dos tablas de Magento 2. Los registros nuevos y modificados se entregan en la migración delta utilizando `Vendor\Migration\Step\GreatBlog\Delta` clase.
+Después de la implementación de los pasos personalizados que se proporciona en los ejemplos, el sistema toma los datos de la tabla del Magento único 1,
+procesarlo con la clase `Vendor\Migration\Step\GreatBlog\Data` y almacenar los datos en dos tablas de Magento 2. Los registros nuevos y modificados se entregan en la migración delta mediante la clase `Vendor\Migration\Step\GreatBlog\Delta`.
 
 ## Métodos de extensión prohibidos
 
-Dado que la variable [!DNL Data Migration Tool] y Magento 2 evolucionan constantemente, y los pasos y controladores existentes están sujetos a cambios. Recomendamos no anular el comportamiento de pasos como el [Etapa de mapa](technical-specification.md#map-step), [Paso de reescritura de URL](technical-specification.md#url-rewrite-step)y ampliando sus clases.
+Dado que [!DNL Data Migration Tool] y el Magento 2 evolucionan constantemente, los pasos y controladores existentes están sujetos a cambios. Recomendamos encarecidamente no anular el comportamiento de pasos como el [Paso de asignación](technical-specification.md#map-step), el [Paso de reescritura de URL](technical-specification.md#url-rewrite-step) y los controladores ampliando sus clases.
 
-Algunos pasos no admiten la asignación y no se pueden cambiar sin modificar el código. Puede escribir un paso adicional que cambie los datos al final de la migración o crear un [Problema de GitHub](https://github.com/magento/data-migration-tool/issues) y solicite un nuevo punto de extensión en el paso existente.
+Algunos pasos no admiten la asignación y no se pueden cambiar sin modificar el código. Puede escribir un paso adicional que cambie los datos al final de la migración o crear un [problema de GitHub](https://github.com/magento/data-migration-tool/issues) y solicitar un nuevo punto de extensión en el paso existente.

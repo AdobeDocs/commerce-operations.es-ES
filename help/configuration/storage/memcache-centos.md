@@ -5,14 +5,14 @@ feature: Configuration, Cache, Storage
 exl-id: fc4ad18b-7e99-496e-aebc-1d7640d8716c
 source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
 workflow-type: tm+mt
-source-wordcount: '561'
+source-wordcount: '550'
 ht-degree: 0%
 
 ---
 
 # Configuración de memcached en CentOS
 
-Esta sección proporciona instrucciones para instalar memcached en CentOS. Para obtener más información, consulte la [wiki memcached](https://github.com/memcached/old-wiki).
+Esta sección proporciona instrucciones para instalar memcached en CentOS. Para obtener más información, consulte la [wiki en memoria caché](https://github.com/memcached/old-wiki).
 
 >[!INFO]
 >
@@ -20,18 +20,18 @@ Esta sección proporciona instrucciones para instalar memcached en CentOS. Para 
 
 Debido a que PHP no tiene soporte nativo para memcache, debe instalar una extensión para que PHP la use. Hay dos extensiones PHP disponibles y es importante descodificar cuál utilizar:
 
-- `memcache` (_sin d_): una extensión antigua pero popular que no se mantiene con regularidad.
-El `memcache` extensión actualmente _no tiene_ trabajar con PHP 7. Consulte [Documentación de PHP para memcache](https://www.php.net/manual/en/book.memcache.php).
+- `memcache` (_no d_): una extensión antigua pero popular que no se mantiene con regularidad.
+La extensión `memcache` actualmente _no_ funciona con PHP 7. Consulte la [documentación de PHP para memcache](https://www.php.net/manual/en/book.memcache.php).
 
   El nombre exacto es `php-pecl-memcache` para CentOS.
 
-- `memcached` (_con un`d`_): una extensión más reciente y mantenida que es compatible con PHP 7. Consulte [Documentación de PHP para memcached](https://www.php.net/manual/en/book.memcached.php).
+- `memcached` (_con`d`_), una extensión más reciente y mantenida que es compatible con PHP 7. Consulte la [documentación de PHP para memcached](https://www.php.net/manual/en/book.memcached.php).
 
   El nombre exacto es `php-pecl-memcached` para CentOS.
 
 ## Instalación y configuración de memcached en CentOS
 
-Para instalar memcached en CentOS, realice las siguientes tareas como usuario con `root` privilegios:
+Para instalar memcached en CentOS, realice las siguientes tareas como usuario con privilegios de `root`:
 
 1. Instale memcached y sus dependencias:
 
@@ -53,21 +53,21 @@ Para instalar memcached en CentOS, realice las siguientes tareas como usuario co
 
    >[!INFO]
    >
-   >La sintaxis de los comandos anteriores puede depender de los repositorios de paquetes que utilice. Por ejemplo, si utiliza webtatic y PHP 5.6, introduzca `yum install -y php56w-pecl-memcache`. Uso `yum search memcache|grep php` para encontrar el nombre de paquete apropiado.
+   >La sintaxis de los comandos anteriores puede depender de los repositorios de paquetes que utilice. Por ejemplo, si usa webtatic y PHP 5.6, escriba `yum install -y php56w-pecl-memcache`. Use `yum search memcache|grep php` para encontrar el nombre de paquete apropiado.
 
 
-1. Cambiar la configuración de memcached para `CACHESIZE` y `OPTIONS`:
+1. Cambie el parámetro de configuración memcached para `CACHESIZE` y `OPTIONS`:
 
-   1. Abrir `/etc/sysconfig/memcached` en un editor de texto.
+   1. Abra `/etc/sysconfig/memcached` en un editor de texto.
    1. Busque el valor de `CACHESIZE` y cámbielo por lo menos a 1 GB. Por ejemplo:
 
       ```config
       CACHESIZE="1GB"
       ```
 
-   1. Busque el valor de `OPTIONS` y cámbielo por `localhost` o `127.0.0.1`
+   1. Busque el valor de `OPTIONS` y cámbielo a `localhost` o `127.0.0.1`
 
-1. Guardar los cambios en `memcached` y salga del editor de texto.
+1. Guarde los cambios en `memcached` y salga del editor de texto.
 1. Reinicie memcached.
 
    ```bash
@@ -92,7 +92,7 @@ Adobe recomienda probar memcached para asegurarse de que funciona antes de insta
 
 Para comprobar que el servidor web reconoce memcached:
 
-1. Crear un `phpinfo.php` en el docroot del servidor web:
+1. Crear un archivo de `phpinfo.php` en el docroot del servidor web:
 
    ```php
    <?php
@@ -106,15 +106,15 @@ Para comprobar que el servidor web reconoce memcached:
 
 1. Asegúrese de que memcache se muestre de la siguiente manera:
 
-![Confirme que el servidor web reconoce memcache.](../../assets/configuration/memcache.png)
+![El servidor web reconoce memcache](../../assets/configuration/memcache.png)
 
 Compruebe que está utilizando memcached versión 3.0.5 o posterior.
 
-Si no se muestra memcache, reinicie el servidor web y actualice la página del navegador. Si sigue sin mostrarse, compruebe que ha instalado el `php-pecl-memcache` extensión.
+Si no se muestra memcache, reinicie el servidor web y actualice la página del navegador. Si sigue sin mostrarse, compruebe que ha instalado la extensión `php-pecl-memcache`.
 
 ### Cree una prueba memcache que consista en una base de datos MySQL y un script PHP
 
-La prueba utiliza una base de datos, tabla y datos MySQL para comprobar que puede recuperar los datos de la base de datos y almacenarlos en memcache. Un script PHP busca primero en la caché. Si el resultado no existe, el script consulta la base de datos. Una vez que la base de datos original ha completado la consulta, la secuencia de comandos almacena el resultado en memcache, utilizando `set` comando.
+La prueba utiliza una base de datos, tabla y datos MySQL para comprobar que puede recuperar los datos de la base de datos y almacenarlos en memcache. Un script PHP busca primero en la caché. Si el resultado no existe, el script consulta la base de datos. Una vez que la base de datos original ha completado la consulta, el script almacena el resultado en memcache, utilizando el comando `set`.
 
 [Más detalles acerca de esta prueba](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-memcache-on-ubuntu-12-04)
 
@@ -124,7 +124,7 @@ Cree la base de datos MySQL:
 mysql -u root -p
 ```
 
-En el `mysql` , introduzca los siguientes comandos:
+En el símbolo del sistema `mysql`, escriba los siguientes comandos:
 
 ```sql
 create database memcache_test;
@@ -135,7 +135,7 @@ insert into example values (1, "new_data");
 exit
 ```
 
-Crear `cache-test.php` en el docroot del servidor web:
+Cree `cache-test.php` en el docroot de su servidor web:
 
 ```php
 $meminstance = new Memcached();
@@ -163,7 +163,7 @@ print "got result from memcached\n";
 return 0;
 ```
 
-Donde `<memcached hostname or ip>` es o bien `localhost`, `127.0.0.1`o el nombre de host o la dirección IP memcache. El `<memcached port>` es el puerto de escucha; de forma predeterminada, `11211`.
+Donde `<memcached hostname or ip>` es `localhost`, `127.0.0.1` o el nombre de host o la dirección IP de memcache. `<memcached port>` es el puerto de escucha; de forma predeterminada, `11211`.
 
 Ejecute la secuencia de comandos desde la línea de comandos.
 
@@ -213,4 +213,4 @@ flush_all
 quit
 ```
 
-[Información adicional sobre la prueba Telnet](https://darkcoding.net/software/memcached-list-all-keys/)
+[Información adicional acerca de la prueba Telnet](https://darkcoding.net/software/memcached-list-all-keys/)

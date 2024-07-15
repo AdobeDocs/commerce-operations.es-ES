@@ -12,11 +12,11 @@ ht-degree: 0%
 
 # Mostrar o cambiar el URI de administrador
 
-Antes de ejecutar este comando, debe [Crear o actualizar la configuración de implementación](deployment.md).
+Antes de ejecutar este comando, debe [crear o actualizar la configuración de implementación](deployment.md).
 
 ## Mostrar el URI de administrador
 
-En esta sección se explica cómo utilizar la línea de comandos para mostrar el Identificador uniforme de recursos de administración ([URI](https://www.w3.org/Protocols/rfc2616/rfc2616-sec3.html#sec3.2)).
+En esta sección se explica cómo usar la línea de comandos para mostrar el identificador uniforme de recursos de administración ([URI](https://www.w3.org/Protocols/rfc2616/rfc2616-sec3.html#sec3.2)).
 
 Opciones de comando:
 
@@ -41,4 +41,4 @@ También puede ver el URI de administrador en `<magento_root>/app/etc/env.php`. 
 
 ## Cambio de la URL de administración
 
-Para cambiar el URI de administrador, utilice el [`magento setup:config:set`](deployment.md) comando.
+Para cambiar el URI de administrador, use el comando [`magento setup:config:set`](deployment.md).

@@ -15,18 +15,18 @@ ht-degree: 0%
 
 # Desarrollo del compositor
 
-En este tema se describe el método recomendado para desarrollar módulos Composer in situ (como repositorios Git en el `vendor/` ) y agregando esos módulos al proyecto Git principal.
+En este tema se describe el método recomendado para desarrollar módulos Composer in situ (como repositorios Git en el directorio `vendor/`) y agregar esos módulos al proyecto Git principal.
 
 >[!NOTE]
 >
->Estas directrices se aplican principalmente a [arquitectura de referencia global (GRA)](../overview.md) proyectos.
+>Estas directrices se aplican principalmente a [proyectos de arquitectura de referencia global (GRA)](../overview.md).
 
 ## Preparación de una rama de desarrollo
 
 1. Cree o retire la rama de desarrollo en su repositorio principal de Git.
 1. Requerir versiones de desarrollo para cada módulo que mantenga.
 
-   En este ejemplo, cada rama del repositorio principal de Git representa una versión del paquete Composer. La convención de nombres recomendada para las versiones de Compositor en este escenario es `dev-` seguido del nombre de la rama. Por ejemplo:
+   En este ejemplo, cada rama del repositorio principal de Git representa una versión del paquete Composer. La convención de nombres recomendada para las versiones de Compositor en este escenario es `dev-` seguida del nombre de la rama. Por ejemplo:
 
    - `dev-develop`
    - `dev-qa`
@@ -41,19 +41,19 @@ En este tema se describe el método recomendado para desarrollar módulos Compos
    composer require 'client/module-example:dev-develop as 1.0.12'
    ```
 
-   Para el `qa` bifurcación, reemplazar `dev-develop` con `dev-qa`.
+   Para la rama `qa`, reemplace `dev-develop` por `dev-qa`.
 
 ## Conversión de paquetes a repositorios Git
 
-De forma predeterminada, los paquetes no contienen un `.git/` directorio. Composer puede extraer paquetes de Git en lugar de usar los paquetes predefinidos de Composer. La ventaja de este enfoque es que puede modificar fácilmente los paquetes durante el desarrollo.
+De manera predeterminada, los paquetes no contienen un directorio `.git/`. Composer puede extraer paquetes de Git en lugar de usar los paquetes predefinidos de Composer. La ventaja de este enfoque es que puede modificar fácilmente los paquetes durante el desarrollo.
 
-1. Retire el módulo de la `vendor/` directorio.
+1. Quite el módulo del directorio `vendor/`.
 
    ```bash
    rm -rf vendor/client/module-example
    ```
 
-1. Vuelva a instalar el módulo utilizando [origen de Git especificado](#prepare-a-development-branch).
+1. Vuelva a instalar el módulo con el origen Git [especificado](#prepare-a-development-branch).
 
    ```bash
    composer install --prefer-source
@@ -92,7 +92,7 @@ De forma predeterminada, los paquetes no contienen un `.git/` directorio. Compos
 
 ## Actualizar el proyecto principal con el desarrollo
 
-Actualice el repositorio principal de Git modificando la variable `composer.lock` archivo. Si el módulo es nuevo, actívelo.
+Actualice el repositorio principal de Git modificando el archivo `composer.lock`. Si el módulo es nuevo, actívelo.
 
 ```bash
 # to update your packages and all dependencies of the package

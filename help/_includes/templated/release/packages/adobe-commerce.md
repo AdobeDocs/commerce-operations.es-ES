@@ -21,13 +21,13 @@ ht-degree: 0%
 
 Adobe Commerce usa Composer para administrar paquetes PHP.
 
-El `composer.json` declara la lista de paquetes, mientras que la variable `composer.lock` El archivo almacena una lista completa de los paquetes (una versión completa de cada paquete y sus dependencias) utilizados para crear una instalación de Adobe Commerce.
+El archivo `composer.json` declara la lista de paquetes, mientras que el archivo `composer.lock` almacena una lista completa de los paquetes (una versión completa de cada paquete y sus dependencias) utilizados para generar una instalación de Adobe Commerce.
 
-La siguiente documentación de referencia se genera a partir de las `composer.lock` y cubre los paquetes necesarios incluidos en Adobe Commerce 2.4.7-p1.
+La siguiente documentación de referencia se genera a partir del archivo `composer.lock` y cubre los paquetes necesarios incluidos en Adobe Commerce 2.4.7-p1.
 
 ## Dependencias
 
-`magento/product-enterprise-edition 2.4.7-p1` tiene las siguientes dependencias:
+`magento/product-enterprise-edition 2.4.7-p1` tiene las dependencias siguientes:
 
 ```config
 adobe-commerce/extensions-metapackage: ~2.0
@@ -397,7 +397,7 @@ wikimedia/less.php: ^3.2
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/laminas/laminas-code.git">laminas/código laminas</a>
+      <a href="https://github.com/laminas/laminas-code.git">código laminas/laminas</a>
     </td>
     <td>biblioteca</td>
     <td>Extensiones a la API de PHP Reflection, escaneo de código estático y generación de código</td>
@@ -411,7 +411,7 @@ wikimedia/less.php: ^3.2
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/laminas/laminas-crypt.git">laminas/laminas-cripta</a>
+      <a href="https://github.com/laminas/laminas-crypt.git">laminas/laminas-crypt</a>
     </td>
     <td>biblioteca</td>
     <td>Herramientas criptográficas sólidas y hash de contraseñas</td>
@@ -435,7 +435,7 @@ wikimedia/less.php: ^3.2
       <a href="https://github.com/laminas/laminas-escaper.git">laminas/laminas-escaper</a>
     </td>
     <td>biblioteca</td>
-    <td>Escape de forma segura del HTML, los atributos de HTML, JavaScript, CSS y direcciones URL</td>
+    <td>Escape de forma segura del HTML, los atributos del HTML, JavaScript, CSS y direcciones URL</td>
   </tr>
   <tr>
     <td>
@@ -446,21 +446,21 @@ wikimedia/less.php: ^3.2
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/laminas/laminas-feed.git">laminas/pienso laminas</a>
+      <a href="https://github.com/laminas/laminas-feed.git">laminas/laminas-feed</a>
     </td>
     <td>biblioteca</td>
     <td>proporciona funcionalidad para crear y consumir fuentes RSS y Atom</td>
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/laminas/laminas-file.git">laminas/laminas-file</a>
+      <a href="https://github.com/laminas/laminas-file.git">archivo laminas/laminas</a>
     </td>
     <td>biblioteca</td>
     <td>Localizar archivos de clase PHP</td>
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/laminas/laminas-filter.git">laminas/filtro laminas</a>
+      <a href="https://github.com/laminas/laminas-filter.git">filtro laminas/laminas</a>
     </td>
     <td>biblioteca</td>
     <td>Filtrar y normalizar datos y archivos mediante programación</td>
@@ -488,7 +488,7 @@ wikimedia/less.php: ^3.2
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/laminas/laminas-loader.git">laminas/cargador de laminas</a>
+      <a href="https://github.com/laminas/laminas-loader.git">laminas/laminas-loader</a>
     </td>
     <td>biblioteca</td>
     <td>Estrategias de carga automática y de complementos</td>
@@ -502,7 +502,7 @@ wikimedia/less.php: ^3.2
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/laminas/laminas-math.git">laminas/laminas-matemáticas</a>
+      <a href="https://github.com/laminas/laminas-math.git">laminas/laminas-math</a>
     </td>
     <td>biblioteca</td>
     <td>Cree números pseudoaleatorios criptográficamente seguros y administre números enteros grandes</td>
@@ -558,7 +558,7 @@ wikimedia/less.php: ^3.2
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/laminas/laminas-server.git">laminas/laminas-server</a>
+      <a href="https://github.com/laminas/laminas-server.git">servidor laminas/laminas</a>
     </td>
     <td>biblioteca</td>
     <td>Crear servidores RPC basados en reflexión</td>
@@ -579,7 +579,7 @@ wikimedia/less.php: ^3.2
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/laminas/laminas-soap.git">laminas/jabón laminado</a>
+      <a href="https://github.com/laminas/laminas-soap.git">jabón laminas/laminas</a>
     </td>
     <td>biblioteca</td>
     <td></td>
@@ -607,7 +607,7 @@ wikimedia/less.php: ^3.2
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/laminas/laminas-validator.git">laminas/laminas-validador</a>
+      <a href="https://github.com/laminas/laminas-validator.git">laminas/laminas-validator</a>
     </td>
     <td>biblioteca</td>
     <td>Clases de validación para una amplia gama de dominios y la capacidad de encadenar validadores para crear criterios de validación complejos</td>
@@ -733,7 +733,7 @@ wikimedia/less.php: ^3.2
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/brick/math.git">ladrillo/matemáticas</a>
+      <a href="https://github.com/brick/math.git">brick/math</a>
     </td>
     <td>biblioteca</td>
     <td>Biblioteca aritmética de precisión arbitraria</td>
@@ -761,14 +761,14 @@ wikimedia/less.php: ^3.2
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/composer/ca-bundle.git">composer/ca-bundle</a>
+      <a href="https://github.com/composer/ca-bundle.git">compositor/ca-paquete</a>
     </td>
     <td>biblioteca</td>
     <td>Le permite encontrar una ruta al paquete de CA del sistema e incluye una alternativa al paquete de CA de Mozilla.</td>
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/composer/class-map-generator.git">composer/class-map-generator</a>
+      <a href="https://github.com/composer/class-map-generator.git">compositor/generador de mapas de clase</a>
     </td>
     <td>biblioteca</td>
     <td>Utilidades para escanear código PHP y generar mapas de clase.</td>
@@ -782,7 +782,7 @@ wikimedia/less.php: ^3.2
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/composer/metadata-minifier.git">composer/metadata-minifier</a>
+      <a href="https://github.com/composer/metadata-minifier.git">compositor/minificador de metadatos</a>
     </td>
     <td>biblioteca</td>
     <td>Pequeña biblioteca de utilidades que gestiona la minificación y expansión de metadatos.</td>
@@ -803,7 +803,7 @@ wikimedia/less.php: ^3.2
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/composer/spdx-licenses.git">composer/spdx-licenses</a>
+      <a href="https://github.com/composer/spdx-licenses.git">licencias de composición/spdx</a>
     </td>
     <td>biblioteca</td>
     <td>Lista de licencias SPDX y biblioteca de validación.</td>
@@ -866,7 +866,7 @@ wikimedia/less.php: ^3.2
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/thephpleague/flysystem.git">liga/sistema de vuelo</a>
+      <a href="https://github.com/thephpleague/flysystem.git">liga/sistema de archivos</a>
     </td>
     <td>biblioteca</td>
     <td>Abstracción de almacenamiento de archivos para PHP</td>
@@ -1118,7 +1118,7 @@ wikimedia/less.php: ^3.2
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/symfony/deprecation-contracts.git">symfony/deprecation-contacts</a>
+      <a href="https://github.com/symfony/deprecation-contracts.git">contratos de Symfony/deprecation</a>
     </td>
     <td>biblioteca</td>
     <td>Una función y convención genéricas para almacenar en déclencheur los avisos de desaprobación</td>
@@ -1139,7 +1139,7 @@ wikimedia/less.php: ^3.2
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/symfony/event-dispatcher-contracts.git">symfony/event-dispatcher-contacts</a>
+      <a href="https://github.com/symfony/event-dispatcher-contracts.git">contratos de Symfony/event-dispatcher</a>
     </td>
     <td>biblioteca</td>
     <td>Abstracciones genéricas relacionadas con el evento de envío</td>
@@ -1167,7 +1167,7 @@ wikimedia/less.php: ^3.2
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/symfony/http-client-contracts.git">symfony/http-client-contacts</a>
+      <a href="https://github.com/symfony/http-client-contracts.git">contratos de cliente/Symfony/http</a>
     </td>
     <td>biblioteca</td>
     <td>Abstracciones genéricas relacionadas con clientes HTTP</td>
@@ -1272,7 +1272,7 @@ wikimedia/less.php: ^3.2
   </tr>
   <tr>
     <td>
-      <a href="https://github.com/symfony/service-contracts.git">symfony/service-contacts</a>
+      <a href="https://github.com/symfony/service-contracts.git">contratos de servicio/symfony</a>
     </td>
     <td>biblioteca</td>
     <td>Abstracciones genéricas relacionadas con los servicios de escritura</td>

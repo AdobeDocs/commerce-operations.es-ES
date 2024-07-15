@@ -12,13 +12,13 @@ ht-degree: 0%
 
 # Usar Redis para la caché predeterminada
 
-Commerce proporciona opciones de línea de comandos para configurar la página Redis y el almacenamiento en caché predeterminado. Aunque puede configurar el almacenamiento en caché editando el `<Commerce-install-dir>app/etc/env.php` , el método recomendado es usar la línea de comandos, especialmente para las configuraciones iniciales. La línea de comandos proporciona validación, lo que garantiza que la configuración sea sintácticamente correcta.
+Commerce proporciona opciones de línea de comandos para configurar la página Redis y el almacenamiento en caché predeterminado. Aunque puede configurar el almacenamiento en caché mediante la edición del archivo `<Commerce-install-dir>app/etc/env.php`, el método recomendado es utilizar la línea de comandos, especialmente para las configuraciones iniciales. La línea de comandos proporciona validación, lo que garantiza que la configuración sea sintácticamente correcta.
 
-Usted debe [instalar Redis](config-redis.md#install-redis) antes de continuar.
+Debe [instalar Redis](config-redis.md#install-redis) antes de continuar.
 
 ## Configurar el almacenamiento en caché predeterminado de Redis
 
-Ejecute el `setup:config:set` y especifique los parámetros específicos de Redis para el almacenamiento en caché predeterminado.
+Ejecute el comando `setup:config:set` y especifique los parámetros específicos para Redis el almacenamiento en caché predeterminado.
 
 ```bash
 bin/magento setup:config:set --cache-backend=redis --cache-backend-redis-<parameter>=<value>...
@@ -34,12 +34,12 @@ Con los siguientes parámetros:
 | ------------------------------ | --------- | ------- | ------------- |
 | `cache-backend-redis-server` | server | Nombre de host completo, dirección IP o ruta absoluta a un socket UNIX. El valor predeterminado de 127.0.0.1 indica que Redis está instalado en el servidor de Commerce. | `127.0.0.1` |
 | `cache-backend-redis-port` | puerto | Puerto de escucha del servidor Redis | `6379` |
-| `cache-backend-redis-db` | database | Necesario si utiliza Redis tanto para la caché predeterminada como para la caché de página completa. Debe especificar el número de base de datos de una de las cachés; la otra caché utiliza 0 de forma predeterminada.<br><br>**Importante**: Si utiliza Redis para más de un tipo de almacenamiento en caché, los números de la base de datos deben ser diferentes. Se recomienda asignar el número de base de datos de almacenamiento en caché predeterminado a 0, el número de base de datos de almacenamiento en caché de páginas a 1 y el número de base de datos de almacenamiento de sesión a 2. | `0` |
-| `cache-backend-redis-password` | contraseña | La configuración de una contraseña de Redis habilita una de sus funciones de seguridad integradas: `auth` , que requiere que los clientes se autentiquen para acceder a la base de datos. La contraseña se configura directamente en el archivo de configuración de Redis: `/etc/redis/redis.conf` | |
+| `cache-backend-redis-db` | database | Necesario si utiliza Redis tanto para la caché predeterminada como para la caché de página completa. Debe especificar el número de base de datos de una de las cachés; la otra caché utiliza 0 de forma predeterminada.<br><br>**Importante**: Si usa Redis para más de un tipo de almacenamiento en caché, los números de la base de datos deben ser diferentes. Se recomienda asignar el número de base de datos de almacenamiento en caché predeterminado a 0, el número de base de datos de almacenamiento en caché de páginas a 1 y el número de base de datos de almacenamiento de sesión a 2. | `0` |
+| `cache-backend-redis-password` | contraseña | La configuración de una contraseña de Redis habilita una de sus características de seguridad integradas: el comando `auth`, que requiere que los clientes se autentiquen para tener acceso a la base de datos. La contraseña está configurada directamente en el archivo de configuración de Redis: `/etc/redis/redis.conf` | |
 
 ### Ejemplo, comando
 
-El siguiente ejemplo habilita el almacenamiento en caché predeterminado de Redis y establece el host en `127.0.0.1`y asigna el número de base de datos a 0. Redis utiliza valores predeterminados para el resto de parámetros.
+En el siguiente ejemplo se habilita el almacenamiento en caché predeterminado de Redis, se establece el host en `127.0.0.1` y se asigna el número de base de datos a 0. Redis utiliza valores predeterminados para el resto de parámetros.
 
 ```bash
 bin/magento setup:config:set --cache-backend=redis --cache-backend-redis-server=127.0.0.1 --cache-backend-redis-db=0
@@ -47,7 +47,7 @@ bin/magento setup:config:set --cache-backend=redis --cache-backend-redis-server=
 
 ## Configurar el almacenamiento en caché de páginas Redis
 
-Para configurar el almacenamiento en caché de páginas de Redis en Commerce, ejecute el `setup:config:set` con parámetros adicionales.
+Para configurar el almacenamiento en caché de la página Redis en Commerce, ejecute el comando `setup:config:set` con parámetros adicionales.
 
 ```bash
 bin/magento setup:config:set --page-cache=redis --page-cache-redis-<parameter>=<value>...
@@ -63,12 +63,12 @@ Con los siguientes parámetros:
 | ------------------------------ | --------- | ------- | ------------- |
 | `page-cache-redis-server` | server | Nombre de host completo, dirección IP o ruta absoluta a un socket UNIX. El valor predeterminado de 127.0.0.1 indica que Redis está instalado en el servidor de Commerce. | `127.0.0.1` |
 | `page-cache-redis-port` | puerto | Puerto de escucha del servidor Redis | `6379` |
-| `page-cache-redis-db` | database | Necesario si utiliza Redis tanto para la caché predeterminada como para la caché de página completa. Debe especificar el número de base de datos de una de las cachés; la otra caché utiliza 0 de forma predeterminada.<br/>**Importante**: Si utiliza Redis para más de un tipo de almacenamiento en caché, los números de la base de datos deben ser diferentes. Se recomienda asignar el número de base de datos de almacenamiento en caché predeterminado a 0, el número de base de datos de almacenamiento en caché de páginas a 1 y el número de base de datos de almacenamiento de sesión a 2. | `0` |
-| `page-cache-redis-password` | contraseña | La configuración de una contraseña de Redis habilita una de sus funciones de seguridad integradas: `auth` , que requiere que los clientes se autentiquen para acceder a la base de datos. Configure la contraseña en el archivo de configuración de Redis: `/etc/redis/redis.conf` | |
+| `page-cache-redis-db` | database | Necesario si utiliza Redis tanto para la caché predeterminada como para la caché de página completa. Debe especificar el número de base de datos de una de las cachés; la otra caché utiliza 0 de forma predeterminada.<br/>**Importante**: Si usa Redis para más de un tipo de almacenamiento en caché, los números de la base de datos deben ser diferentes. Se recomienda asignar el número de base de datos de almacenamiento en caché predeterminado a 0, el número de base de datos de almacenamiento en caché de páginas a 1 y el número de base de datos de almacenamiento de sesión a 2. | `0` |
+| `page-cache-redis-password` | contraseña | La configuración de una contraseña de Redis habilita una de sus características de seguridad integradas: el comando `auth`, que requiere que los clientes se autentiquen para tener acceso a la base de datos. Configure la contraseña en el archivo de configuración de Redis: `/etc/redis/redis.conf` | |
 
 ### Ejemplo, comando
 
-El siguiente ejemplo habilita el almacenamiento en caché de páginas de Redis, establece el host en `127.0.0.1`y asigna el número de base de datos a 1. El resto de parámetros se definen con el valor predeterminado.
+El ejemplo siguiente habilita el almacenamiento en caché de páginas de Redis, establece el host en `127.0.0.1` y asigna el número de base de datos a 1. El resto de parámetros se definen con el valor predeterminado.
 
 ```bash
 bin/magento setup:config:set --page-cache=redis --page-cache-redis-server=127.0.0.1 --page-cache-redis-db=1
@@ -112,9 +112,9 @@ A partir de Commerce 2.4.3, las instancias alojadas en Amazon EC2 pueden utiliza
 
 ### Configurar un clúster de Redis
 
-Después [configuración de un clúster de Redis en AWS](https://aws.amazon.com/getting-started/hands-on/setting-up-a-redis-cluster-with-amazon-elasticache/), configure la instancia EC2 para utilizar ElastiCache.
+Después de [configurar un clúster de Redis en AWS](https://aws.amazon.com/getting-started/hands-on/setting-up-a-redis-cluster-with-amazon-elasticache/), configure la instancia EC2 para que use ElastiCache.
 
-1. [Crear un clúster de ElastiCache](https://docs.aws.amazon.com/AmazonElastiCache/latest/red-ug/set-up.html) en la misma región y VPC de la instancia EC2.
+1. [Cree un clúster de ElastiCache](https://docs.aws.amazon.com/AmazonElastiCache/latest/red-ug/set-up.html) en la misma región y VPC de la instancia EC2.
 1. Compruebe la conexión.
 
    - Abra una conexión SSH a la instancia EC2.
@@ -125,7 +125,7 @@ Después [configuración de un clúster de Redis en AWS](https://aws.amazon.com/
      ```
 
    - Agregar una regla de entrada al grupo de seguridad EC2: Tipo `- Custom TCP, port - 6379, Source - 0.0.0.0/0`
-   - Añada una regla de entrada al grupo de seguridad ElastiCache Cluster: Tipo `- Custom TCP, port - 6379, Source - 0.0.0.0/0`
+   - Agregue una regla de entrada al grupo de seguridad de clúster de ElastiCache: Tipo `- Custom TCP, port - 6379, Source - 0.0.0.0/0`
    - Conéctese a la CLI de Redis:
 
      ```bash
@@ -134,9 +134,9 @@ Después [configuración de un clúster de Redis en AWS](https://aws.amazon.com/
 
 ### Configuración de Commerce para utilizar el clúster
 
-Commerce admite varios tipos de configuraciones de almacenamiento en caché. Por lo general, las configuraciones de almacenamiento en caché se dividen entre front-end y back-end. El almacenamiento en caché de front-end se clasifica como `default`, se utiliza para cualquier tipo de caché. Puede personalizar o dividir en cachés de nivel inferior para lograr un mejor rendimiento. Una configuración común de Redis es separar la caché predeterminada y la caché de página en su propia base de datos de Redis (RDB).
+Commerce admite varios tipos de configuraciones de almacenamiento en caché. Por lo general, las configuraciones de almacenamiento en caché se dividen entre front-end y back-end. El almacenamiento en caché de front-end se clasifica como `default` y se usa para cualquier tipo de caché. Puede personalizar o dividir en cachés de nivel inferior para lograr un mejor rendimiento. Una configuración común de Redis es separar la caché predeterminada y la caché de página en su propia base de datos de Redis (RDB).
 
-Ejecutar `setup` para especificar los extremos de Redis.
+Ejecute `setup` comandos para especificar los extremos de Redis.
 
 Para configurar Commerce para Redis como almacenamiento en caché predeterminado:
 
@@ -168,11 +168,11 @@ bin/magento setup:config:set --session-save=redis --session-save-redis-host=<Ela
    ```
 
 1. Abra una página en la interfaz de usuario de Commerce.
-1. Compruebe el [salida de caché](#verify-redis-connection) en su terminal.
+1. Compruebe la [salida de caché](#verify-redis-connection) en su terminal.
 
 ## Nueva implementación de caché de Redis
 
-A partir de Commerce 2.3.5, se recomienda utilizar la implementación de caché de Redis ampliada: `\Magento\Framework\Cache\Backend\Redis`.
+A partir de Commerce 2.3.5, se recomienda utilizar la implementación de caché de Redis extendida: `\Magento\Framework\Cache\Backend\Redis`.
 
 ```php
 'cache' => [
@@ -190,9 +190,9 @@ A partir de Commerce 2.3.5, se recomienda utilizar la implementación de caché 
 
 ## Función de precarga Redis
 
-Dado que Commerce almacena datos de configuración en la caché de Redis, podemos cargar previamente datos que se reutilizan entre páginas. Para buscar las claves que deben cargarse previamente, analice los datos que se transfieren de Redis a Commerce. Se recomienda cargar previamente los datos que se cargan en cada página, como `SYSTEM_DEFAULT`, `EAV_ENTITY_TYPES`, `DB_IS_UP_TO_DATE`.
+Dado que Commerce almacena datos de configuración en la caché de Redis, podemos cargar previamente datos que se reutilizan entre páginas. Para buscar las claves que deben cargarse previamente, analice los datos que se transfieren de Redis a Commerce. Se recomienda cargar previamente los datos cargados en todas las páginas, como `SYSTEM_DEFAULT`, `EAV_ENTITY_TYPES`, `DB_IS_UP_TO_DATE`.
 
-Redis utiliza el `pipeline` para crear solicitudes de carga compuestas. Las claves deben incluir el prefijo de base de datos; por ejemplo, si el prefijo de base de datos es `061_`, la clave de precarga tiene este aspecto: `061_SYSTEM_DEFAULT`
+Redis utiliza `pipeline` para componer solicitudes de carga. Las claves deben incluir el prefijo de base de datos; por ejemplo, si el prefijo de base de datos es `061_`, la clave de precarga tiene el siguiente aspecto: `061_SYSTEM_DEFAULT`
 
 ```php
 'cache' => [
@@ -222,7 +222,7 @@ Redis utiliza el `pipeline` para crear solicitudes de carga compuestas. Las clav
 ]
 ```
 
-Si utiliza la función de precarga con la caché L2, no olvide añadir la variable `:hash` sufijo a sus claves, ya que la caché L2 solo transfiere el hash de los datos, no los datos en sí:
+Si utiliza la función de precarga con la caché L2, no olvide agregar el sufijo `:hash` a las claves, ya que la caché L2 solo transfiere el hash de los datos, no los datos en sí:
 
 ```php
 'preload_keys' => [
@@ -235,7 +235,7 @@ Si utiliza la función de precarga con la caché L2, no olvide añadir la variab
 
 ## Generación paralela
 
-A partir de la versión 2.4.0 de, presentamos el `allow_parallel_generation` para los usuarios que desean eliminar las esperas de bloqueos.
+A partir de la versión 2.4.0, presentamos la opción `allow_parallel_generation` para los usuarios que desean eliminar las esperas de bloqueos.
 Está desactivada de forma predeterminada y se recomienda desactivarla hasta que tenga configuraciones o bloques excesivos.
 
 **Para habilitar la generación paralela**:
@@ -316,4 +316,4 @@ Si ambos comandos se ejecutan correctamente, Redis se configura correctamente.
 
 ### Inspección de datos comprimidos
 
-Para inspeccionar los datos de sesión comprimidos y la caché de página, la variable [RESP.app](https://flathub.org/apps/details/app.resp.RESP) admite la descompresión automática de la caché de páginas y sesiones de Commerce 2 y muestra los datos de sesión de PHP en un formato legible en lenguaje natural.
+Para inspeccionar los datos de sesión comprimidos y la caché de página, [RESP.app](https://flathub.org/apps/details/app.resp.RESP) admite la descompresión automática de la caché de página y sesión de Commerce 2 y muestra los datos de sesión PHP en un formato legible en lenguaje natural.

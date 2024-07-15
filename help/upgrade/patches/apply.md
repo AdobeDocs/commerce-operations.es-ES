@@ -20,27 +20,27 @@ Puede aplicar parches utilizando cualquiera de los siguientes métodos:
 
 >[!TIP]
 >
->Consulte [prácticas recomendadas](../../implementation-playbook/best-practices/maintenance/patching-at-scale.md) para obtener información sobre los parches centralizados para Adobe Commerce a escala empresarial.
+>Consulte las [prácticas recomendadas](../../implementation-playbook/best-practices/maintenance/patching-at-scale.md) para obtener información sobre los parches centralizados para Adobe Commerce a escala empresarial.
 
 ## Compositor
 
 >[!IMPORTANT]
 >
->Para aplicar parches de calidad oficiales, use el [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}. Realice siempre pruebas exhaustivas antes de implementar cualquier parche personalizado.
+>Para aplicar parches de calidad oficiales, use [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}. Realice siempre pruebas exhaustivas antes de implementar cualquier parche personalizado.
 
 Para aplicar un parche personalizado con Composer:
 
 1. Abra la aplicación de línea de comandos y vaya al directorio del proyecto.
-1. Añada el `cweagans/composer-patches` del complemento a `composer.json` archivo.
+1. Agregar el complemento `cweagans/composer-patches` al archivo `composer.json`.
 
    ```bash
    composer require cweagans/composer-patches
    ```
 
-1. Edite el `composer.json` y agregue la siguiente sección para especificar:
+1. Edite el archivo `composer.json` y agregue la siguiente sección para especificar:
    - **Módulo:** *\&quot;magento/module-payment\&quot;*
-   - **Título:** *\&quot;MAGETWO-56934: La página de cierre de compra se bloquea al realizar el pedido con Authorize.net con una tarjeta de crédito no válida\&quot;*
-   - **Ruta al parche:** *\&quot;patches/composer/github-issue-6474.diff\&quot;*
+   - **Título:** *\&quot;MAGETWO-56934: La página de cierre de compra se bloquea al realizar pedidos con Authorize.net con tarjeta de crédito no válida\&quot;*
+   - **Ruta de acceso al parche:** *\&quot;patches/composer/github-issue-6474.diff\&quot;*
 
    Por ejemplo:
 
@@ -57,13 +57,13 @@ Para aplicar un parche personalizado con Composer:
 
    Si un parche afecta a varios módulos, debe crear varios archivos de parche dirigidos a varios módulos.
 
-1. Aplique el parche. Utilice el `-v` sólo si desea ver información de depuración.
+1. Aplique el parche. Utilice la opción `-v` solo si desea ver información de depuración.
 
    ```bash
    composer -v install
    ```
 
-1. Actualice el `composer.lock` archivo. El archivo de bloqueo registra qué parches se han aplicado a cada paquete Composer de un objeto.
+1. Actualizar el archivo `composer.lock`. El archivo de bloqueo registra qué parches se han aplicado a cada paquete Composer de un objeto.
 
    ```bash
    composer update --lock
@@ -73,7 +73,7 @@ Para aplicar un parche personalizado con Composer:
 
 Para aplicar parches desde la línea de comandos:
 
-1. Cargue el archivo local en `<Magento_root>` en el servidor mediante FTP, SFTP, SSH o el método de transporte normal.
+1. Cargue el archivo local en el directorio `<Magento_root>` del servidor mediante FTP, SFTP, SSH o el método de transporte normal.
 1. Inicie sesión en el servidor como [usuario administrador](../../configuration/cli/config-cli.md#prerequisites) y compruebe que el archivo se encuentra en el directorio correcto.
 1. En la interfaz de línea de comandos, ejecute los siguientes comandos según la extensión del parche:
 
@@ -85,7 +85,7 @@ Para aplicar parches desde la línea de comandos:
 
    >[!NOTE]
    >
-   >Si la línea de comandos muestra: `File to patch:`, significa que no puede localizar el archivo deseado, aunque la ruta parezca correcta. En el cuadro que se muestra en el terminal de la línea de comandos, la primera línea muestra el archivo al que se va a aplicar el parche. Copie la ruta de archivo y péguela en `File to patch:` preguntar y pulsar `Enter` y el parche debe completarse.
+   >Si la línea de comandos muestra: `File to patch:`, significa que no puede encontrar el archivo deseado, aunque la ruta de acceso parezca correcta. En el cuadro que se muestra en el terminal de la línea de comandos, la primera línea muestra el archivo al que se va a aplicar el parche. Copie la ruta de acceso del archivo y péguela en el símbolo del sistema `File to patch:`, presione `Enter` y la revisión debería completarse.
 
 1. Para que se reflejen los cambios, actualice la caché en el Administrador en **Sistema** > Herramientas > **Administración de caché**.
 

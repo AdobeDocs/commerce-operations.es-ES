@@ -14,7 +14,7 @@ topic: Administration, Commerce, Development
 type: Documentation
 source-git-commit: aaca7ead9923b676718f6e371caa797d6c0d412f
 workflow-type: tm+mt
-source-wordcount: '131'
+source-wordcount: '129'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 # Metadatos para uso interno
 
-El `metadata.md` el archivo incluye metadatos de repositorios que pasan a la guía del usuario `TOC.md` archivos en el repositorio. Si desea cambiar el contenido de metadata.md para cualquier guía del usuario, hágalo en cualquier `TOC.md` archivo.
+El archivo `metadata.md` incluye metadatos de nivel de repositorio que pasan a los archivos de la guía del usuario `TOC.md` en el repositorio. Si desea cambiar el contenido de metadata.md para cualquier guía del usuario, hágalo en cualquier archivo de `TOC.md`.
 
 | metadatos | lo que hace |
 |--- |--- |

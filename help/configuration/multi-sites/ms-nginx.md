@@ -4,7 +4,7 @@ description: Siga este tutorial para configurar varios sitios web con Nginx.
 exl-id: f13926a2-182c-4ce2-b091-19c5f978f267
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '959'
+source-wordcount: '943'
 ht-degree: 0%
 
 ---
@@ -17,11 +17,11 @@ Suponemos que:
 
   Es posible que se requieran tareas adicionales para implementar varios sitios web en un entorno alojado; póngase en contacto con su proveedor de alojamiento para obtener más información.
 
-  Se requieren tareas adicionales para configurar Adobe Commerce en la infraestructura en la nube. Después de completar las tareas descritas en este tema, consulte [Configurar varios sitios web o tiendas](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) en el _Guía de Commerce en infraestructura en la nube_.
+  Se requieren tareas adicionales para configurar Adobe Commerce en la infraestructura en la nube. Después de completar las tareas que se describen en este tema, vea [Configurar varios sitios web o tiendas](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) en la guía _Commerce en infraestructura de nube_.
 
-- Acepte varios dominios en un archivo host virtual o utilice un host virtual por sitio web; los archivos de configuración de host virtual se encuentran en `/etc/nginx/sites-available`.
-- Utilice el `nginx.conf.sample` proporcionado por Commerce solo con las modificaciones descritas en este tutorial.
-- El software Commerce se instala en `/var/www/html/magento2`.
+- Acepta varios dominios en un archivo host virtual o utiliza un host virtual por sitio web; los archivos de configuración de host virtual se encuentran en `/etc/nginx/sites-available`.
+- Utiliza el(la) `nginx.conf.sample` proporcionado(a) por Commerce solo con las modificaciones descritas en este tutorial.
+- El software de Commerce está instalado en `/var/www/html/magento2`.
 - Tiene dos sitios web distintos del predeterminado:
 
    - `french.mysite.mg` con código de sitio web `french` y código de vista de tienda `fr`
@@ -30,38 +30,38 @@ Suponemos que:
 
 >[!TIP]
 >
->Consulte [Creación de sitios web](ms-admin.md#step-2-create-websites) y [Crear vistas de tienda](ms-admin.md#step-4-create-store-views) para obtener ayuda sobre cómo localizar estos valores.
+>Consulte [Crear sitios web](ms-admin.md#step-2-create-websites) y [Crear vistas de tiendas](ms-admin.md#step-4-create-store-views) para obtener ayuda con la localización de estos valores.
 
 A continuación se muestra una hoja de ruta para configurar varios sitios web con nginx:
 
-1. [Configuración de sitios web, tiendas y vistas de tiendas](ms-admin.md) en el Administrador.
-1. Crear un [Host virtual Nginx](#step-2-create-nginx-virtual-hosts)) para asignar muchos sitios web o un host virtual Nginx por sitio web de Commerce (los pasos se detallan a continuación).
-1. Pasar los valores del [Variables MAGE](ms-overview.md) `$MAGE_RUN_TYPE` y `$MAGE_RUN_CODE` a nginx utilizando el Magento proporcionado `nginx.conf.sample` (pasos detallados a continuación).
+1. [Configurar sitios web, tiendas y vistas de tiendas](ms-admin.md) en el administrador.
+1. Cree un [host virtual Nginx](#step-2-create-nginx-virtual-hosts)) para asignar muchos sitios web o un host virtual Nginx por sitio web de Commerce (los pasos se detallan a continuación).
+1. Pase los valores de las [variables MAGE](ms-overview.md) `$MAGE_RUN_TYPE` y `$MAGE_RUN_CODE` a nginx utilizando `nginx.conf.sample` proporcionadas por el Magento (los pasos se detallan a continuación).
 
    - `$MAGE_RUN_TYPE` puede ser `store` o `website`:
 
-      - Uso `website` para cargar el sitio web en la tienda.
-      - Uso `store` para cargar cualquier vista de tienda en tu tienda.
+      - Use `website` para cargar el sitio web en la tienda.
+      - Use `store` para cargar cualquier vista de tienda en su tienda.
 
    - `$MAGE_RUN_CODE` es el sitio web único o el código de vista de tienda que corresponde a `$MAGE_RUN_TYPE`.
 
-1. Actualice la configuración de la URL base en el administrador de Commerce.
+1. Actualice la configuración de la URL básica en el administrador de Commerce.
 
 ## Paso 1: crear sitios web, tiendas y vistas de tiendas en el administrador
 
-Consulte [Configure varios sitios web, tiendas y vistas de tiendas en el Administrador de](ms-admin.md).
+Ver [Configurar varios sitios web, tiendas y vistas de tiendas en el administrador](ms-admin.md).
 
 ## Paso 2: Crear hosts virtuales nginx
 
-Este paso explica cómo cargar sitios web en la tienda. Puede utilizar sitios web o vistas de tiendas; si utiliza las vistas de tiendas, debe ajustar los valores de los parámetros en consecuencia. Debe completar las tareas de esta sección como usuario con `sudo` privilegios.
+Este paso explica cómo cargar sitios web en la tienda. Puede utilizar sitios web o vistas de tiendas; si utiliza las vistas de tiendas, debe ajustar los valores de los parámetros en consecuencia. Debe completar las tareas de esta sección como usuario con privilegios de `sudo`.
 
-Utilizando solo una [archivo host virtual nginx](#step-2-create-nginx-virtual-hosts), puede mantener la configuración de nginx simple y limpia. Con varios archivos host virtuales, puede personalizar cada almacén (para utilizar una ubicación personalizada para `french.mysite.mg` por ejemplo).
+Solo con un [archivo host virtual nginx](#step-2-create-nginx-virtual-hosts), puede mantener la configuración nginx simple y limpia. Mediante varios archivos host virtuales, puede personalizar cada almacén (para utilizar una ubicación personalizada para `french.mysite.mg`, por ejemplo).
 
 **Para crear un host virtual** (simplificado):
 
-Esta configuración se amplía [configuración de nginx](../../installation/prerequisites/web-server/nginx.md).
+Esta configuración se amplía en [nginx configuration](../../installation/prerequisites/web-server/nginx.md).
 
-1. Abra un editor de texto y agregue el siguiente contenido a un nuevo archivo denominado `/etc/nginx/sites-available/magento`:
+1. Abra un editor de texto y agregue el siguiente contenido a un nuevo archivo de nombre `/etc/nginx/sites-available/magento`:
 
    ```conf
    map $http_host $MAGE_RUN_CODE {
@@ -95,7 +95,7 @@ Esta configuración se amplía [configuración de nginx](../../installation/prer
 
    Si se muestran errores, compruebe la sintaxis de los archivos de configuración del host virtual.
 
-1. Cree un vínculo simbólico en `/etc/nginx/sites-enabled` directorio:
+1. Crear un vínculo simbólico en el directorio `/etc/nginx/sites-enabled`:
 
    ```bash
    cd /etc/nginx/sites-enabled
@@ -105,12 +105,12 @@ Esta configuración se amplía [configuración de nginx](../../installation/prer
    ln -s /etc/nginx/sites-available/magento magento
    ```
 
-Para obtener más información sobre la directiva de mapa, consulte [documentación de nginx sobre la directiva de mapa](http://nginx.org/en/docs/http/ngx_http_map_module.html#map).
+Para obtener más información sobre la directiva de asignación, consulte [documentación de nginx en la directiva de asignación](http://nginx.org/en/docs/http/ngx_http_map_module.html#map).
 
 
 **Para crear varios hosts virtuales**:
 
-1. Abra un editor de texto y agregue el siguiente contenido a un nuevo archivo denominado `/etc/nginx/sites-available/french.mysite.mg`:
+1. Abra un editor de texto y agregue el siguiente contenido a un nuevo archivo de nombre `/etc/nginx/sites-available/french.mysite.mg`:
 
    ```conf
    server {
@@ -124,7 +124,7 @@ Para obtener más información sobre la directiva de mapa, consulte [documentaci
    }
    ```
 
-1. Cree otro archivo llamado `german.mysite.mg` en el mismo directorio con el siguiente contenido:
+1. Cree otro archivo con el nombre `german.mysite.mg` en el mismo directorio con el siguiente contenido:
 
    ```conf
    server {
@@ -153,7 +153,7 @@ Para obtener más información sobre la directiva de mapa, consulte [documentaci
 
    Si se muestran errores, compruebe la sintaxis de los archivos de configuración del host virtual.
 
-1. Creación de vínculos simbólicos en `/etc/nginx/sites-enabled` directorio:
+1. Cree vínculos simbólicos en el directorio `/etc/nginx/sites-enabled`:
 
    ```bash
    cd /etc/nginx/sites-enabled
@@ -171,13 +171,13 @@ Para obtener más información sobre la directiva de mapa, consulte [documentaci
 
 >[!TIP]
 >
->No edite el `nginx.conf.sample` es un archivo principal de Commerce que se puede actualizar con cada nueva versión. En su lugar, copie el `nginx.conf.sample` archivo, cambie su nombre y, a continuación, edite el archivo copiado.
+>No edite el archivo `nginx.conf.sample`; se trata de un archivo Commerce principal que puede actualizarse con cada nueva versión. En su lugar, copie el archivo `nginx.conf.sample`, cambie su nombre y, a continuación, edite el archivo copiado.
 
 **Para editar el punto de entrada de PHP para la aplicación principal**:
 
-Para modificar `nginx.conf.sample` archivo**:
+Para modificar el archivo `nginx.conf.sample`**:
 
-1. Abra un editor de texto y revise la `nginx.conf.sample` archivo ,`<magento2_installation_directory>/nginx.conf.sample`. Busque la siguiente sección:
+1. Abra un editor de texto y revise el archivo `nginx.conf.sample` ,`<magento2_installation_directory>/nginx.conf.sample`. Busque la siguiente sección:
 
    ```conf
    # PHP entry point for main application
@@ -197,7 +197,7 @@ Para modificar `nginx.conf.sample` archivo**:
    }
    ```
 
-1. Actualice el `nginx.conf.sample` con las dos líneas siguientes antes de la instrucción include:
+1. Actualice el archivo `nginx.conf.sample` con las dos líneas siguientes antes de la instrucción include:
 
    ```conf
    fastcgi_param MAGE_RUN_TYPE $MAGE_RUN_TYPE;
@@ -231,27 +231,27 @@ location ~ (index|get|static|report|404|503|health_check)\.php$ {
 
 ## Paso 4: Actualizar la configuración de la URL base
 
-Debe actualizar la dirección URL base del `french` y el `german` sitios web en el administrador de Commerce.
+Debe actualizar la dirección URL base de los sitios web `french` y `german` en el administrador de Commerce.
 
 ### Actualizar URL base del sitio web francés
 
-1. Inicie sesión en el administrador de Commerce y navegue hasta **Tiendas** > **Configuración** > **Configuración** > **General** > **Web**.
-1. Cambie el _ámbito de configuración_ a la `french` sitio web.
-1. Expandir **Direcciones URL base** y actualice la sección **URL básica** y **URL de vínculo base** valor hasta `http://french.magento24.com/`.
-1. Expandir **URL básicas (seguras)** y actualice la sección **URL base segura** y **URL de vínculo base seguro** valor hasta `https://french.magento24.com/`.
-1. Clic **Guardar configuración** y guarde los cambios de configuración.
+1. Inicie sesión en el administrador de Commerce y vaya a **Tiendas** > **Configuración** > **Configuración** > **General** > **Web**.
+1. Cambiar el _ámbito de configuración_ al sitio web `french`.
+1. Expanda la sección **URL básicas** y actualice el valor de **URL base** y **URL de vínculo base** a `http://french.magento24.com/`.
+1. Expanda la sección **URL básicas (seguras)** y actualice el valor **URL base segura** y **URL de vínculo base seguro** a `https://french.magento24.com/`.
+1. Haga clic en **Guardar configuración** y guarde los cambios de configuración.
 
 ### Actualizar URL base del sitio web en alemán
 
-1. Inicie sesión en el administrador de Commerce y navegue hasta **Tiendas** > **Configuración** > **Configuración** > **General** > **Web**.
-1. Cambie el _ámbito de configuración_ a la `german` sitio web.
-1. Expandir **Direcciones URL base** y actualice la sección **URL básica** y **URL de vínculo base** valor hasta `http://german.magento24.com/`.
-1. Expandir **URL básicas (seguras)** y actualice la sección **URL base segura** y **URL de vínculo base seguro** valor hasta `https://german.magento24.com/`.
-1. Clic **Guardar configuración** y guarde los cambios de configuración.
+1. Inicie sesión en el administrador de Commerce y vaya a **Tiendas** > **Configuración** > **Configuración** > **General** > **Web**.
+1. Cambiar el _ámbito de configuración_ al sitio web `german`.
+1. Expanda la sección **URL básicas** y actualice el valor de **URL base** y **URL de vínculo base** a `http://german.magento24.com/`.
+1. Expanda la sección **URL básicas (seguras)** y actualice el valor **URL base segura** y **URL de vínculo base seguro** a `https://german.magento24.com/`.
+1. Haga clic en **Guardar configuración** y guarde los cambios de configuración.
 
 ### Limpiar la caché
 
-Ejecute el siguiente comando para limpiar `config` y `full_page` cachés.
+Ejecute el siguiente comando para limpiar las cachés de `config` y `full_page`.
 
 ```bash
 bin/magento cache:clean config full_page
@@ -259,9 +259,9 @@ bin/magento cache:clean config full_page
 
 ## Verifique su sitio
 
-A menos que tenga DNS configurado para las direcciones URL de sus tiendas, debe agregar una ruta estática al host en su `hosts` archivo:
+A menos que tenga DNS configurado para las direcciones URL de las tiendas, debe agregar una ruta estática al host en el archivo `hosts`:
 
-1. Localice su sistema operativo `hosts` archivo.
+1. Busque el archivo del sistema operativo `hosts`.
 1. Añada la ruta estática con el formato:
 
    ```conf
@@ -280,10 +280,10 @@ A menos que tenga DNS configurado para las direcciones URL de sus tiendas, debe 
 >[!INFO]
 >
 >- Es posible que se requieran tareas adicionales para implementar varios sitios web en un entorno alojado; póngase en contacto con su proveedor de alojamiento para obtener más información.
->- Se requieren tareas adicionales para configurar Adobe Commerce en la infraestructura en la nube; consulte [Configurar varios sitios web o tiendas en la nube](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) en el _Guía de Commerce en infraestructura en la nube_.
+>- Se requieren tareas adicionales para configurar Adobe Commerce en la infraestructura en la nube. Consulte [Configurar varios sitios web o tiendas en la nube](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) en la guía _Commerce en la infraestructura en la nube_.
 
 ### Resolución de problemas
 
-- Si sus sitios en francés y alemán devuelven 404 pero su administrador carga, asegúrese de completar [Paso 6: Añadir el código de tienda a la URL base](ms-admin.md#step-6-add-the-store-code-to-the-base-url).
+- Si tus sitios en francés y alemán devuelven 404s pero tu administrador carga, asegúrate de completar [Paso 6: Agrega el código de la tienda a la URL base](ms-admin.md#step-6-add-the-store-code-to-the-base-url).
 - Si todas las direcciones URL devuelven 404, asegúrese de reiniciar el servidor web.
 - Si el administrador no funciona correctamente, asegúrese de configurar correctamente los hosts virtuales.

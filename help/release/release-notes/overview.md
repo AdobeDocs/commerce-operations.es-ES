@@ -16,8 +16,8 @@ Utilice la siguiente tabla para buscar notas de la versión e información impor
 
 >[!TIP]
 >
->- Si no tiene experiencia previa con Adobe Commerce, consulte las [arquitectura empresarial](../../implementation-playbook/architecture/enterprise-blueprint.md) y [acerca de Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/start/about) temas para orientarse.
->- Para obtener información sobre las actualizaciones, consulte [lectura recomendada](../../upgrade/resources/recommended-reading.md).
+>- Si es nuevo en Adobe Commerce, vea los temas sobre la [arquitectura empresarial](../../implementation-playbook/architecture/enterprise-blueprint.md) y [acerca de Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/start/about) para orientarse.
+>- Para obtener información acerca de las actualizaciones, consulte [lectura recomendada](../../upgrade/resources/recommended-reading.md).
 
 <table>
   <tbody>
@@ -32,7 +32,7 @@ Utilice la siguiente tabla para buscar notas de la versión e información impor
             <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html">B2B para Adobe Commerce</a></li>
           </ul>
         </td>
-      <td><strong>Adobe Commerce en la infraestructura en la nube</strong>
+      <td><strong>Adobe Commerce en la infraestructura de la nube</strong>
         <p>Obtenga información sobre las últimas mejoras de los paquetes de Cloud Suite para Adobe Commerce, diseñados para implementar y administrar las instalaciones y actualizaciones de Adobe Commerce en la plataforma en la nube.</p>
           <ul>
             <li><a href="https://devdocs.magento.com/cloud/release-notes/backward-incompatible-changes.html">Cambios incompatibles con versiones anteriores</a></li>
@@ -62,7 +62,7 @@ Utilice la siguiente tabla para buscar notas de la versión e información impor
       <td><strong>Herramientas</strong>
         <p>Obtenga información sobre las mejoras más recientes en las herramientas diseñadas para facilitar la búsqueda y el uso del software de Adobe Commerce.</p>
           <ul>
-            <li><a href="https://developer.adobe.com/graphql-mesh-gateway/">Malla de API para Adobe APP Builder Developer</a></li>
+            <li><a href="https://developer.adobe.com/graphql-mesh-gateway/">API Mesh para Adobe App Builder Developer</a></li>
             <li><a href="https://developer.adobe.com/commerce/events/get-started/release-notes/">Eventos de Adobe I/O para Adobe Commerce</a></li>
             <li><a href="https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/release-notes/">SDK de IU de administración</a></li>
             <li><a href="../../tools/quality-patches-tool/release-notes.md">Herramienta Parches de calidad</a></li>

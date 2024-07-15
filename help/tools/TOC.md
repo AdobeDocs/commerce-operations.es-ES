@@ -27,7 +27,7 @@ ht-degree: 3%
    - [Alertas](site-wide-analysis-tool/alerts.md)
    - [Parches](site-wide-analysis-tool/patches.md)
 - Herramienta Parches de calidad {#quality-patches-tool}
-   - [[!DNL Quality Patches Tool]: Buscar parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
+   - [[!DNL Quality Patches Tool]: buscar parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
    - [Uso](quality-patches-tool/usage.md)
    - [Notas de la versión](quality-patches-tool/release-notes.md)
 - Referencia de herramientas de la línea de comandos {#cli-reference}
@@ -40,7 +40,7 @@ ht-degree: 3%
    - [Elección de las pestañas de enfoque](observation-for-adobe-commerce/choosing-focus-tabs.md)
    - [La pestaña Resumen](observation-for-adobe-commerce/summary.md)
    - [La pestaña Elasticsearch](observation-for-adobe-commerce/elasticsearch.md)
-   - [La pestaña Redis](observation-for-adobe-commerce/redis-tab.md)
+   - [La ficha Redis](observation-for-adobe-commerce/redis-tab.md)
    - [La pestaña MySQL](observation-for-adobe-commerce/mysql-tab.md)
    - [La pestaña PHP](observation-for-adobe-commerce/php-tab.md)
    - [La pestaña Bots](observation-for-adobe-commerce/bots.md)
@@ -48,11 +48,11 @@ ht-degree: 3%
    - [La pestaña Alertas](observation-for-adobe-commerce/alerts-tab.md)
    - [La pestaña WAF](observation-for-adobe-commerce/waf-tab.md)
    - [La pestaña CDN](observation-for-adobe-commerce/cdn-tab.md)
-   - [El [!DNL RabbitMQ] pestaña](observation-for-adobe-commerce/rabbitmq-tab.md)
+   - [La  [!DNL RabbitMQ] pestaña](observation-for-adobe-commerce/rabbitmq-tab.md)
    - [La pestaña Cron](observation-for-adobe-commerce/cron-tab.md)
    - [La pestaña Indexación](observation-for-adobe-commerce/indexing-tab.md)
    - [La ficha Vista rápida](observation-for-adobe-commerce/oac-quickview-tab.md)
-   - [La pestaña Seguridad](observation-for-adobe-commerce/security-tab.md)
+   - [La ficha Seguridad](observation-for-adobe-commerce/security-tab.md)
    - [La pestaña Infra](observation-for-adobe-commerce/oac-infra.md)
    - [Cómo usar Observation for Adobe Commerce](observation-for-adobe-commerce/how-to-use.md)
 - Herramienta de migración de datos {#data-migration}
@@ -67,15 +67,15 @@ ht-degree: 3%
       - [Configurar](data-migration-tool/configure.md)
       - [Personalizar](data-migration-tool/customize.md)
       - [Especificación técnica](data-migration-tool/technical-specification.md)
-   - Migración de datos {#migrate-data}
+   - Migrar datos {#migrate-data}
       - [Información general](data-migration-tool/migrate-data/overview.md)
       - [Configuración](data-migration-tool/migrate-data/settings.md)
       - [Datos](data-migration-tool/migrate-data/data.md)
       - [Cambios](data-migration-tool/migrate-data/delta.md)
       - [Seguimiento](data-migration-tool/migrate-data/follow-up.md)
       - [Datos que requieren una migración manual](data-migration-tool/migrate-data/manual.md)
-      - [Pasos de la migración posterior a los datos](data-migration-tool/migrate-data/post-migration.md)
+      - [Pasos de migración de datos de Post](data-migration-tool/migrate-data/post-migration.md)
    - Recursos {#resources}
       - [Solución de problemas](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html)
-      - [Changelog](https://github.com/magento/data-migration-tool/blob/2.4/CHANGELOG.md)
-- [Volver a Guías operativas](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
+      - [Registro de cambios](https://github.com/magento/data-migration-tool/blob/2.4/CHANGELOG.md)
+- [Volver a las guías operativas](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

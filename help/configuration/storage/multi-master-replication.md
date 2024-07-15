@@ -5,7 +5,7 @@ recommendations: noCatalog
 exl-id: 0e41dca0-5a23-4d12-96fe-241c511ae366
 source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
 workflow-type: tm+mt
-source-wordcount: '175'
+source-wordcount: '166'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ En esta guía no se aborda en profundidad la replicación de bases de datos. Par
 - [Documentación de MySQL](https://dev.mysql.com/doc/refman/5.6/en/replication.html)
 - [Cómo configurar la replicación de esclavos maestros en MySQL (digitalocean)](https://www.digitalocean.com/community/tutorials/how-to-set-up-replication-in-mysql)
 
-Commerce proporciona configuraciones MySQL de muestra para sus bases de datos esclavas. Se proporciona una configuración sencilla con el `ResourceConnections` clase `README.md`.
+Commerce proporciona configuraciones MySQL de ejemplo para las bases de datos esclavas. Se ha proporcionado una configuración simple con la clase `ResourceConnections` `README.md`.
 
 Lo siguiente es más avanzado y se proporciona solo para su información:
 
@@ -122,9 +122,9 @@ Lo siguiente es más avanzado y se proporciona solo para su información:
 
 ## Mejora del rendimiento
 
-Para mejorar el rendimiento de la replicación maestro-esclavo, puede filtrar algunas tablas en instancias esclavas. Se recomienda filtrar todas las tablas temporales con el patrón de nombre `search\_tmp\_%` que se utilizan para la búsqueda en el catálogo.
+Para mejorar el rendimiento de la replicación maestro-esclavo, puede filtrar algunas tablas en instancias esclavas. Se recomienda filtrar todas las tablas temporales con el patrón de nombre `search\_tmp\_%` que se usan para la búsqueda en el catálogo.
 
-Para ello, añada la línea siguiente a su `my.cnf` en las instancias de esclavos:
+Para ello, agregue la línea siguiente al archivo `my.cnf` en las instancias esclavas:
 
 ```conf
 replicate-wild-ignore-table=%.search\_tmp\_%

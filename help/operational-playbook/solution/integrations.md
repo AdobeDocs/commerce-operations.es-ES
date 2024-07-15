@@ -16,7 +16,8 @@ La mayoría de las empresas entienden que muchas estrategias y procesos únicos 
 
 La mayoría de las necesidades operativas se pueden satisfacer utilizando diferentes plataformas de software, como ERP, Marketplace, herramientas de inteligencia empresarial, software de contabilidad, grupos de informes y mucho más. El software adicional se selecciona para reducir el tiempo y el esfuerzo de la organización a la vez que se optimiza la experiencia del cliente y las operaciones comerciales.
 
-Al seleccionar un proveedor de terceros, las empresas deben utilizar un enfoque sencillo y eficaz para la integración que satisfaga sus necesidades. Después de comprender las necesidades del cliente, decida un plan detallado con la ayuda de la parte interesada. Después de decidir el plan, configure un documento de especificación que defina cómo se comunica el sistema y qué tipo de datos se requieren y se pasan al tercero.
+Al seleccionar un proveedor de terceros, las empresas deben utilizar un
+y un enfoque eficaz para la integración que satisfaga sus necesidades. Después de comprender las necesidades del cliente, decida un plan detallado con la ayuda de la parte interesada. Después de decidir el plan, configure un documento de especificación que defina cómo se comunica el sistema y qué tipo de datos se requieren y se pasan al tercero.
 
 >[!NOTE]
 >

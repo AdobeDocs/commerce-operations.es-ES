@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Requisitos previos del motor de búsqueda
 
-A partir de Adobe Commerce 2.4, todas las instalaciones deben configurarse para utilizar [Elasticsearch](https://www.elastic.co) o [OpenSearch](https://opensearch.org/) como solución de búsqueda en el catálogo.
+A partir de Adobe Commerce 2.4, todas las instalaciones deben estar configuradas para usar [Elasticsearch](https://www.elastic.co) o [OpenSearch](https://opensearch.org/) como solución de búsqueda en el catálogo.
 
 >[!NOTE]
 >
@@ -22,7 +22,7 @@ A partir de Adobe Commerce 2.4, todas las instalaciones deben configurarse para 
 
 Debe instalar y configurar Elasticsearch o OpenSearch antes de instalar Adobe Commerce 2.4.4 y posteriores.
 
-Consulte la [Requisitos del sistema](../../system-requirements.md) para obtener información específica sobre la versión.
+Consulte [Requisitos del sistema](../../system-requirements.md) para obtener información específica sobre la versión.
 
 ## Configuración recomendada
 
@@ -41,7 +41,7 @@ El diagrama anterior muestra:
 
 * La aplicación de Commerce y el motor de búsqueda están instalados en hosts diferentes.
 
-  La ejecución en hosts independientes requiere el funcionamiento del proxy. (La agrupación en clúster del motor de búsqueda excede el ámbito de esta guía, pero puede encontrar más información en la sección [Documentación de clúster de Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/guide/current/distributed-cluster.html).)
+  La ejecución en hosts independientes requiere el funcionamiento del proxy. (La agrupación en clúster del motor de búsqueda excede el ámbito de esta guía, pero puede encontrar más información en la [documentación de agrupación en clúster de Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/guide/current/distributed-cluster.html).)
 
 * Cada host tiene su propio servidor web; los servidores web no tienen por qué ser iguales.
 
@@ -59,7 +59,7 @@ Las solicitudes de búsqueda se procesan de la siguiente manera:
 
 1. El servidor web del motor de búsqueda (que escucha en el puerto 443) envía la solicitud al servidor del motor de búsqueda (de forma predeterminada, escucha en el puerto 9200).
 
-1. El acceso al motor de búsqueda está aún más protegido por la autenticación HTTP Basic. Para que una solicitud llegue al motor de búsqueda, debe viajar por SSL *y* proporcione un nombre de usuario y una contraseña válidos.
+1. El acceso al motor de búsqueda está aún más protegido por la autenticación HTTP Basic. Para que una solicitud llegue al motor de búsqueda, debe viajar a través de SSL *y* proporcionar un nombre de usuario y una contraseña válidos.
 
 1. El motor de búsqueda procesa la solicitud.
 
@@ -82,10 +82,10 @@ El software relacionado con la seguridad (iptables, SELinux, AppArmor) puede con
 
 Para configurar reglas que permitan la comunicación con el cortafuegos o con SELinux activado, consulte los siguientes recursos:
 
-* [procedimiento de iptables](https://help.ubuntu.com/community/IptablesHowTo)
+* [procedimientos de iptables](https://help.ubuntu.com/community/IptablesHowTo)
 * [Cómo editar reglas iptables (proyecto fedora)](https://fedoraproject.org/wiki/How_to_edit_iptables_rules)
 * [Introducción a SELinux (CentOS.org)](https://www.centos.org)
-* [Wiki de procedimientos de SELinux (CentOS.org)](https://wiki.centos.org/HowTos/SELinux)
+* [Wiki de procedimientos para SELinux (CentOS.org)](https://wiki.centos.org/HowTos/SELinux)
 
 ### Instalación del kit de desarrollo de software de Java
 
@@ -95,7 +95,7 @@ Para determinar si Java ya está instalado, introduzca el siguiente comando:
 java -version
 ```
 
-Si el mensaje `java: command not found` Si se muestra, debe instalar el SDK de Java como se describe en la siguiente sección.
+Si se muestra el mensaje `java: command not found`, debe instalar el SDK de Java como se describe en la sección siguiente.
 
 Consulte una de las siguientes secciones:
 
@@ -104,7 +104,7 @@ Consulte una de las siguientes secciones:
 
 #### Instalación del JDK en CentOS
 
-Ver esto [Tutorial de Digital Ocean](https://www.digitalocean.com/community/tutorials/how-to-install-java-on-centos-and-fedora#install-oracle-java-8).
+Ver este [tutorial de Digital Ocean](https://www.digitalocean.com/community/tutorials/how-to-install-java-on-centos-and-fedora#install-oracle-java-8).
 
 Asegúrese de instalar el JDK y *no* el JRE.
 
@@ -114,11 +114,11 @@ yum -y install java-1.8.0-openjdk
 
 >[!NOTE]
 >
->Es posible que la versión 8 de Java no esté disponible para todos los sistemas operativos. Por ejemplo, puede [buscar la lista de paquetes disponibles para Ubuntu](https://packages.ubuntu.com/).
+>Es posible que la versión 8 de Java no esté disponible para todos los sistemas operativos. Por ejemplo, puede [buscar en la lista de paquetes disponibles para Ubuntu](https://packages.ubuntu.com/).
 
 #### Instalación del JDK en Ubuntu
 
-Para instalar JDK 1.8 en Ubuntu, introduzca los siguientes comandos como usuario con `root` privilegios:
+Para instalar JDK 1.8 en Ubuntu, introduzca los siguientes comandos como usuario con privilegios de `root`:
 
 ```bash
 apt-get -y update
@@ -128,11 +128,11 @@ apt-get -y update
 apt-get install -y openjdk-8-jdk
 ```
 
-Para ver otras opciones, consulte [documentación del oracle](https://docs.oracle.com/javase/8/docs/technotes/guides/install/install_overview.html).
+Para ver otras opciones, consulte [documentación de Oracle](https://docs.oracle.com/javase/8/docs/technotes/guides/install/install_overview.html).
 
 ### Instalación del motor de búsqueda
 
-Seguir [Elasticsearch de instalación](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html) o [Instalación y configuración de OpenSearch](https://opensearch.org/docs/latest/opensearch/install/index/) para los pasos específicos de la plataforma.
+Siga [Elasticsearch de instalación](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html) o [Instale y configure OpenSearch](https://opensearch.org/docs/latest/opensearch/install/index/) para los pasos específicos de su plataforma.
 
 Para comprobar que Elasticsearch funciona, introduzca el siguiente comando en el servidor en el que se está ejecutando:
 
@@ -159,10 +159,10 @@ curl -XGET https://<host>:9200/_cat/plugins?v -u 'admin:admin' --insecure
 
 ## Elasticsearch de actualización
 
-Consulte [Elasticsearch de actualización](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) para obtener instrucciones completas sobre la realización de copias de seguridad de los datos, la detección de posibles problemas de migración y la prueba de actualizaciones antes de su implementación en producción. Según la versión actual del Elasticsearch, puede que sea necesario o no reiniciar el clúster por completo.
+Consulte [Actualización del Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) para obtener instrucciones completas sobre cómo realizar copias de seguridad de los datos, detectar posibles problemas de migración y probar las actualizaciones antes de implementarlas en producción. Según la versión actual del Elasticsearch, puede que sea necesario o no reiniciar el clúster por completo.
 
-Elasticsearch requiere JDK 1.8 o superior. Consulte [Instalación del kit de desarrollo de software de Java](#install-the-java-software-development-kit) para comprobar qué versión de JDK está instalada.
+Elasticsearch requiere JDK 1.8 o superior. Consulte [Instalar el kit de desarrollo de software de Java](#install-the-java-software-development-kit) para comprobar qué versión de JDK está instalada.
 
 ## Recursos adicionales
 
-Consulte la [Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html) o [OpenSearch](https://opensearch.org/docs/latest/) documentación.
+Consulte la documentación de [Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html) o [OpenSearch](https://opensearch.org/docs/latest/).

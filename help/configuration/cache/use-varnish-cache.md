@@ -16,7 +16,7 @@ En este tema se tratan los conceptos básicos del uso de Varnish como acelerador
 
 ## Depuración de barniz
 
-Según [Documentación de barniz](https://www.varnish-cache.org/docs/trunk/users-guide/purging.html), &quot;A *purgar* Esto es lo que sucede cuando se elige un objeto de la caché y se descarta junto con sus variantes&quot;. Una depuración de barniz es similar a un comando de limpieza de caché (o hacer clic en **Vaciar caché del Magento** en el Administrador).
+Según la [documentación de Varnish](https://www.varnish-cache.org/docs/trunk/users-guide/purging.html), &quot;Una *depuración* es lo que sucede cuando se elige un objeto de la caché y se descarta junto con sus variantes&quot;. Una depuración de barniz es similar a un comando de limpieza de caché (o hacer clic en **Vaciar caché de Magento** en el administrador).
 
 De hecho, cuando se limpia, vacía o actualiza la caché de Commerce, Varnish también se depura.
 
@@ -38,13 +38,13 @@ Una vez instalado y configurado el barniz para que funcione con Commerce, las si
 
 - Mantener el código fuente.
 
-  Debe actualizar la caché y también eliminar periódicamente todo lo que hay en la `generated/code` y `generated/metadata` directorios. Para obtener información sobre cómo actualizar la caché, consulte la siguiente sección.
+  Debe actualizar la caché y también eliminar periódicamente todo lo que se encuentre en los directorios `generated/code` y `generated/metadata`. Para obtener información sobre cómo actualizar la caché, consulte la siguiente sección.
 
 ## Configuración de Commerce para depurar Barniz
 
-Commerce purga los hosts de Varnish después de configurar los hosts de Varnish mediante el [`magento setup:config:set`](https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html#setupconfigset) comando.
+Commerce purga los hosts de Varnish después de configurar los hosts de Varnish mediante el comando [`magento setup:config:set`](https://devdocs.magento.com/guides/v2.4/reference/cli/magento.html#setupconfigset).
 
-Puede utilizar el parámetro opcional `--http-cache-hosts` para especificar una lista separada por comas de hosts de barniz y puertos de escucha. Configure todos los hosts de Varnish, independientemente de si tiene uno o varios. (No separe los hosts con caracteres de espacio.)
+Puede usar el parámetro opcional `--http-cache-hosts` para especificar una lista separada por comas de hosts de Barnish y puertos de escucha. Configure todos los hosts de Varnish, independientemente de si tiene uno o varios. (No separe los hosts con caracteres de espacio.)
 
 El formato del parámetro debe ser `<hostname or ip>:<listen port>`, donde puede omitir `<listen port>` si es el puerto 80.
 
@@ -54,8 +54,8 @@ Por ejemplo,
 bin/magento setup:config:set --http-cache-hosts=192.0.2.100,192.0.2.155:6081
 ```
 
-A continuación, puede depurar Varnish hosts al actualizar la caché de Commerce (también denominada *limpieza* la caché) en Admin o mediante la línea de comandos.
+A continuación, puede purgar los hosts de Varnish cuando actualice la caché de Commerce (también conocida como *limpieza* de la caché) en Admin o mediante la línea de comandos.
 
-Para actualizar la caché con el administrador, haga clic en **[!UICONTROL SYSTEM]** > Herramientas > **Administración de caché**, luego haga clic en **Vaciar caché del Magento** en la parte superior de la página. (También puede actualizar tipos de caché individuales).
+Para actualizar la caché con el Administrador, haga clic en **[!UICONTROL SYSTEM]** > Herramientas > **Administración de caché** y, a continuación, haga clic en **Vaciar la caché del Magento** en la parte superior de la página. (También puede actualizar tipos de caché individuales).
 
-Para actualizar la caché mediante la línea de comandos, normalmente se utiliza la variable [`magento cache:clean <type>`](../cli/manage-cache.md#clean-and-flush-cache-types) como el [propietario del sistema de archivos](../../installation/prerequisites/file-system/overview.md).
+Para actualizar la caché mediante la línea de comandos, normalmente se usa el comando [`magento cache:clean <type>`](../cli/manage-cache.md#clean-and-flush-cache-types) como [propietario del sistema de archivos](../../installation/prerequisites/file-system/overview.md).

@@ -11,16 +11,16 @@ ht-degree: 0%
 
 # directiva de versión de Adobe Commerce
 
-Adobe Commerce utiliza [versiones semánticas](https://semver.org/) en el nivel de módulo individual (por ejemplo, `magento/framework 101.1.1`), pero no para el número de versión de marketing. Por ejemplo:
+Adobe Commerce usa [versiones semánticas](https://semver.org/) en el nivel de módulo individual (por ejemplo `magento/framework 101.1.1`), pero no para el número de versión de marketing. Por ejemplo:
 
 - **Versión principal**—2
-- **Versión secundaria**—2,4
-- **Versión del PATCH**—2.4.5
+- **Versión menor**—2.4
+- **Versión de PATCH**—2.4.5
    - **Versión del parche de SEGURIDAD**—2.4.5-p1
       - Corrección de errores de seguridad
       - Mejora de seguridad
-- **Lanzamiento del parche BETA**—2.4.7-beta2
-- **Extensibilidad, infraestructura y versión de servicios**
+- **Versión de parche de BETA**—2.4.7-beta2
+- **Extensibilidad, infraestructura y servicios**
 - **Revisión**
 - **Parche individual**
 - **Parche personalizado**
@@ -48,11 +48,11 @@ Las siguientes directrices se aplican a las versiones de parches:
 
 {{$include /help/_includes/security-patch-release-overview.md}}
 
-## Lanzamiento del parche BETA
+## Versión del parche de Beta
 
 Las versiones de disponibilidad general previas de las funciones de Adobe Commerce se ponen a disposición de todos los clientes y socios de Adobe de Adobe Commerce. Permite un tiempo adicional antes de la disponibilidad general para revisar el código y los componentes afectados.
 
-Las versiones beta pueden contener defectos y se proporcionan &quot;TAL CUAL&quot; sin garantía de ningún tipo. Adobe no tendrá ninguna obligación de mantener, corregir, actualizar, cambiar, modificar o apoyar de otro modo (a través de los Servicios de Soporte de Adobe o de otro modo) las Versiones Beta. Se aconseja a los clientes que tengan cuidado y no dependan en modo alguno del correcto funcionamiento o rendimiento de las versiones beta y/o de la documentación o los materiales adjuntos. Por lo tanto, cualquier uso de las versiones beta es bajo el propio riesgo del cliente.
+Las Versiones de Beta pueden contener defectos y se proporcionan &quot;TAL CUAL&quot; sin garantía de ningún tipo. Adobe no tendrá ninguna obligación de mantener, corregir, actualizar, cambiar, modificar o apoyar de otro modo (a través de los Servicios de Soporte de Adobe o de otro modo) las Versiones de Beta. Se aconseja a los clientes que tengan cuidado y no dependan en modo alguno del correcto funcionamiento o rendimiento de las Versiones de Beta y/o de la documentación o los materiales adjuntos. Por lo tanto, cualquier uso de las Versiones de Beta es bajo el propio riesgo del cliente.
 
 ## Extensibilidad, infraestructura y versión de servicios
 
@@ -60,7 +60,7 @@ Versiones de funcionalidades que contienen nuevas funciones y actualizaciones de
 
 ## Revisión
 
-Las revisiones son parches que contienen correcciones de alta calidad o seguridad de impacto, como correcciones a vulnerabilidades de día cero, que afectan a muchos comerciantes. El Adobe publica revisiones para versiones de Adobe Commerce que siguen siendo compatibles y se ven afectadas por problemas críticos de seguridad o calidad, según sea necesario. Las revisiones se publican en [Sección Problemas conocidos](https://support.magento.com/hc/en-us/sections/360003869892-Known-issues-patches-attached-) de nuestra base de conocimientos. Estas correcciones se incluyen en la próxima versión planificada del parche.
+Las revisiones son parches que contienen correcciones de alta calidad o seguridad de impacto, como correcciones a vulnerabilidades de día cero, que afectan a muchos comerciantes. El Adobe publica revisiones para versiones de Adobe Commerce que siguen siendo compatibles y se ven afectadas por problemas críticos de seguridad o calidad, según sea necesario. Las revisiones se han publicado en la [sección de problemas conocidos](https://support.magento.com/hc/en-us/sections/360003869892-Known-issues-patches-attached-) de nuestra base de conocimiento. Estas correcciones se incluyen en la próxima versión planificada del parche.
 
 >[!NOTE]
 >
@@ -68,7 +68,7 @@ Las revisiones son parches que contienen correcciones de alta calidad o segurida
 
 ## Parche individual
 
-Los parches individuales contienen correcciones de calidad de bajo impacto para un problema específico. Estas correcciones se aplican a las versiones secundarias compatibles de Adobe Commerce. Adobe publica parches individuales según sea necesario para Adobe Commerce de acuerdo con nuestras [Política de ciclo vital de software](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf).
+Los parches individuales contienen correcciones de calidad de bajo impacto para un problema específico. Estas correcciones se aplican a las versiones secundarias compatibles de Adobe Commerce. El Adobe publica parches individuales según sea necesario para Adobe Commerce de acuerdo con nuestra [Política de ciclo de vida del software](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf).
 
 >[!NOTE]
 >
@@ -76,10 +76,10 @@ Los parches individuales contienen correcciones de calidad de bajo impacto para 
 
 ## Parche personalizado
 
-Creado por personal que no es de Adobe para solucionar un problema o modificar el código de Adobe Commerce por varios motivos. Los parches personalizados se entregan a través del [Herramienta Parches de calidad](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html).
+Creado por personal que no es de Adobe para solucionar un problema o modificar el código de Adobe Commerce por varios motivos. Los parches personalizados se entregan a través de la [Herramienta de parches de calidad](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html).
 
 ## Temas relacionados
 
-- [Versiones](https://developer.adobe.com/commerce/php/development/versioning/)
+- [Creación de versiones](https://developer.adobe.com/commerce/php/development/versioning/)
 - [Próximas versiones](schedule.md)
-- [Política de ciclo vital de software](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
+- [Política de ciclo de vida de software](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)

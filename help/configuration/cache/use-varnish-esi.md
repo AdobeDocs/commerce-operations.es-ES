@@ -1,12 +1,12 @@
 ---
 title: Barniz Bloque ESI
-description: Obtenga información acerca de las inclusiones de Edge Side y cómo puede utilizarlas para incrustar páginas web.
+description: Obtenga información sobre las inclusiones laterales de Edge y cómo puede utilizarlas para incrustar páginas web.
 badge: label="Colaboró Konstantin G." type="Informative" url="https://github.com/goivvy" tooltip="Konstantin G."
 feature: Configuration, Cache
 exl-id: 7dccafa5-df79-4690-be5c-ff774c66bb2a
 source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
 workflow-type: tm+mt
-source-wordcount: '130'
+source-wordcount: '129'
 ht-degree: 0%
 
 ---
@@ -23,14 +23,14 @@ Un ejemplo:
 </div>
 ```
 
-El barniz obtiene contenido de `http://domain.com/index.php/page_cache/block/esi/blocks` y sustituya el `<esi>` etiqueta con ella.
+El barniz recupera contenido de `http://domain.com/index.php/page_cache/block/esi/blocks` y reemplaza la etiqueta `<esi>` por ella.
 
-## Comercio y Barniz ESI
+## Commerce y Varnish ESI
 
-El marco de Commerce crea una etiqueta ESI cuando se cumplen las siguientes condiciones:
+El marco de trabajo de Commerce crea una etiqueta ESI cuando se cumplen las siguientes condiciones:
 
-- La aplicación de almacenamiento en caché está configurada en `Varnish Cache`
-- Un diseño XML `block` se añade con un `ttl` atributo
+- La aplicación de almacenamiento en caché está establecida en `Varnish Cache`
+- Se agregó un elemento `block` de diseño XML con un atributo `ttl`
 
 ### Ejemplo
 
@@ -42,7 +42,7 @@ El marco de Commerce crea una etiqueta ESI cuando se cumplen las siguientes cond
    </referenceContainer>
 ```
 
-En el ejemplo anterior, la variable `block` añade contenido desde el `esi.phtml` plantilla a una página de inicio y Barnish la actualiza automáticamente cada 30 segundos.
+En el ejemplo anterior, el elemento `block` agrega contenido de la plantilla `esi.phtml` a una página principal y Varnish lo actualiza automáticamente cada 30 segundos.
 
 ## Limitaciones
 

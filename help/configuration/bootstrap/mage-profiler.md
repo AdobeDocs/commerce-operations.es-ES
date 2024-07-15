@@ -4,7 +4,7 @@ description: Obtenga más información sobre cómo habilitar el analizador de im
 exl-id: a46289ed-16dc-4a72-84ff-85fe825dac11
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '410'
+source-wordcount: '373'
 ht-degree: 0%
 
 ---
@@ -15,13 +15,13 @@ Con los perfiles de Commerce, puede:
 
 - Habilite un generador de perfiles integrado.
 
-  Puede utilizar un generador de perfiles integrado con Commerce para realizar tareas como analizar el rendimiento. La naturaleza de los perfiles depende de las herramientas analíticas que utilice. Admitimos varios formatos, incluido el HTML. Al habilitar el generador de perfiles, se crea un `var/profiler.flag` genera un archivo que indica que el generador de perfiles está habilitado y las configuraciones. Cuando está desactivado, este archivo se elimina.
+  Puede utilizar un generador de perfiles integrado con Commerce para realizar tareas como analizar el rendimiento. La naturaleza de los perfiles depende de las herramientas analíticas que utilice. Admitimos varios formatos, incluido el HTML. Cuando se habilita el generador de perfiles, se genera un archivo de `var/profiler.flag` que indica que el generador de perfiles está habilitado y que hay configuraciones. Cuando está desactivado, este archivo se elimina.
 
 - Mostrar gráficos de dependencias en una página de Commerce.
 
-  A _gráfico de dependencias_ es una lista de dependencias de objetos y todas sus dependencias, y todas las dependencias para esas dependencias, etc.
+  Un gráfico de dependencias _1} es una lista de dependencias de objetos y todas sus dependencias, todas las dependencias de esas dependencias, etc._
 
-  Debería estar especialmente interesado en la lista de _dependencias no utilizadas_, que son objetos que se crearon porque se solicitaron en algún constructor, pero que nunca se utilizaron (es decir, no se llamó a ninguno de sus métodos). Como resultado, se desperdician el tiempo y la memoria del procesador empleados para crear estas dependencias.
+  Debería interesarle especialmente la lista de _dependencias sin usar_, que son objetos que se crearon porque se solicitaron en algún constructor, pero que nunca se utilizaron (es decir, no se llamó a ninguno de sus métodos). Como resultado, se desperdician el tiempo y la memoria del procesador empleados para crear estas dependencias.
 
 Commerce proporciona la funcionalidad base en [`Magento\Framework\Profiler`][profiler].
 
@@ -37,8 +37,8 @@ Puede establecer el valor de `MAGE_PROFILER` de cualquiera de las formas descrit
 
   Puede utilizar uno de los siguientes valores para habilitar un generador de perfiles específico:
 
-   - `csvfile` que utiliza [`Magento\Framework\Profiler\Driver\Standard\Output\Csvfile`][csvfile]
-   - Cualquier otro valor (excepto `2`), incluido un valor vacío, que utiliza [`Magento\Framework\Profiler\Driver\Standard\Output\Html`][html]
+   - `csvfile` que usa [`Magento\Framework\Profiler\Driver\Standard\Output\Csvfile`][csvfile]
+   - Cualquier otro valor (excepto `2`), incluido un valor vacío, que utilice [`Magento\Framework\Profiler\Driver\Standard\Output\Html`][html]
 
 - `2` para habilitar los gráficos de dependencias.
 
@@ -50,30 +50,30 @@ Puede establecer el valor de `MAGE_PROFILER` de cualquiera de las formas descrit
 
 Puede habilitar o deshabilitar el generador de perfiles mediante comandos CLI:
 
-- `dev:profiler:enable <type>` habilita el generador de perfiles con `type` de `html` (predeterminado) o `csvfile`. Cuando está habilitado, un archivo de indicador `var/profiler.flag` se ha creado.
-- `dev:profiler:disable` deshabilita el generador de perfiles. Cuando está desactivado, el archivo de indicador `var/profiler.flag` se ha eliminado.
+- `dev:profiler:enable <type>` habilita el generador de perfiles con `type` de `html` (predeterminado) o `csvfile`. Cuando se habilita, se crea un archivo de indicador `var/profiler.flag`.
+- `dev:profiler:disable` deshabilita el generador de perfiles. Cuando está deshabilitado, se quita el archivo de indicador `var/profiler.flag`.
 
 Para habilitar los gráficos de dependencias, utilice la opción de variable.
 
-**Para habilitar o deshabilitar el generador de perfiles**:
+**Para habilitar o deshabilitar el analizador**:
 
-1. Inicie sesión en su servidor de Commerce.
+1. Inicie sesión en el servidor de Commerce.
 1. Cambie al directorio de instalación de Commerce.
 1. Habilite el analizador como propietario del sistema de archivos:
 
-   Para habilitar el generador de perfiles mediante el tipo `html` y cree un archivo de indicador:
+   Para habilitar el generador de perfiles con el tipo `html` y crear un archivo de indicador:
 
    ```bash
    bin/magento dev:profiler:enable html
    ```
 
-   Para habilitar el generador de perfiles mediante el tipo `csvfile` y cree un archivo de indicador:
+   Para habilitar el generador de perfiles con el tipo `csvfile` y crear un archivo de indicador:
 
    ```bash
    bin/magento dev:profiler:enable csvfile
    ```
 
-   La salida se guarda en `<project-root>/var/log/profiler.csv`. El `profiler.csv` se anula en cada actualización de página.
+   El resultado se guardó en `<project-root>/var/log/profiler.csv`. `profiler.csv` se reemplaza en cada actualización de página.
 
    Para deshabilitar el generador de perfiles y quitar el archivo de indicador:
 

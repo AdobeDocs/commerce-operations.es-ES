@@ -13,7 +13,7 @@ ht-degree: 3%
 
 # Información de versión {#release}
 
-- Notas de versión {#notes}
+- Notas de la versión {#notes}
    - [Información general](release-notes/overview.md)
    - [Cambios incompatibles con versiones anteriores](backward-incompatible-changes.md)
    - Adobe Commerce {#adobe-commerce}
@@ -36,7 +36,7 @@ ht-degree: 3%
       - [2.4.2](release-notes/open-source/2-4-2.md)
       - [2.4.1](release-notes/open-source/2-4-1.md)
       - [2.4.0](release-notes/open-source/2-4-0.md)
-   - Versiones de parches de seguridad {#security-patches}
+   - Versiones de revisión de seguridad {#security-patches}
       - [Información general](release-notes/security/overview.md)
       - [2.4.7](release-notes/security/2-4-7-patches.md)
       - [2.4.6](release-notes/security/2-4-6-patches.md)
@@ -45,8 +45,8 @@ ht-degree: 3%
       - [2.4.3](release-notes/security/2-4-3-patches.md)
       - [2.4.2](release-notes/security/2-4-2-patches.md)
 - [Disponibilidad del producto](product-availability.md)
-- [Versiones beta](beta.md)
-- Planificación y políticas {#planning}
+- [Versiones de Beta](beta.md)
+- Planificación y directivas {#planning}
    - [Política de ciclo vital](lifecycle-policy.md)
    - [Directiva de versiones](versioning-policy.md)
    - [Programación de versiones](schedule.md)
@@ -55,4 +55,4 @@ ht-degree: 3%
 - Paquetes {#packages}
    - [Adobe Commerce](packages/adobe-commerce.md)
    - [Magento Open Source](packages/magento-open-source.md)
-- [Volver a Guías operativas](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
+- [Volver a las guías operativas](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

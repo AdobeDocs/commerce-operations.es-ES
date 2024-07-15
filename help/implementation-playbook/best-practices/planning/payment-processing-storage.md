@@ -6,18 +6,18 @@ feature: Best Practices
 exl-id: 635f38d3-0199-4d96-ba75-9edd0cb94b5c
 source-git-commit: db0fce79b22d409e8d639b959dc5a04693e72659
 workflow-type: tm+mt
-source-wordcount: '500'
+source-wordcount: '478'
 ht-degree: 0%
 
 ---
 
 # Prácticas recomendadas para el procesamiento y almacenamiento de pagos
 
-Uno de los principios clave para mantener [Conformidad con PCI](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/payments/compliance-pci.html) está teniendo una estrategia para procesar y almacenar correctamente los pagos con tarjeta de crédito.
+Uno de los principios clave para mantener el [cumplimiento de PCI](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/payments/compliance-pci.html) es contar con una estrategia para procesar y almacenar correctamente los pagos con tarjeta de crédito.
 
-El almacenamiento de datos del titular de la tarjeta en Adobe Commerce es **estrictamente prohibido** y hacerlo podría ser una violación de sus obligaciones como comerciante según el Estándar de Seguridad de Datos de la Industria de Tarjetas de Pago (PCI-DSS). Encontrará más información sobre el modelo de responsabilidad compartida y las directrices para las obligaciones de los comerciantes en el [Guía del modelo de responsabilidad compartida de Adobe Commerce](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-commerce-shared-responsibilities-guide.pdf) en el Centro de confianza de Adobe.
+Almacenar datos del titular de la tarjeta en Adobe Commerce está **estrictamente prohibido** y hacerlo podría ser una violación de sus obligaciones como comerciante según el Estándar de seguridad de datos de la industria de tarjetas de pago (PCI-DSS). Encontrará más información sobre el modelo de responsabilidad compartida y las directrices para las obligaciones de comerciantes en la [Guía del modelo de responsabilidad compartida de Adobe Commerce](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-commerce-shared-responsibilities-guide.pdf) en el Centro de confianza de Adobe.
 
-Siga las prácticas recomendadas a continuación para asegurarse de que está procesando correctamente la información de pago en su sitio de comercio electrónico. Para obtener más información sobre las prácticas recomendadas de seguridad, consulte [Proteja su sitio e infraestructura](../launch/security-best-practices.md).
+Siga las prácticas recomendadas a continuación para asegurarse de que está procesando correctamente la información de pago en su sitio de comercio electrónico. Para obtener instrucciones adicionales sobre las prácticas recomendadas de seguridad, consulte [Proteger el sitio y la infraestructura](../launch/security-best-practices.md).
 
 ## Productos y versiones afectados
 
@@ -51,6 +51,6 @@ Transmitir los datos del titular de la tarjeta mediante protocolos y prácticas 
 
 El método recomendado para gestionar los datos del titular de la tarjeta es tokenizar los datos en lugar de almacenarlos. Tokenize la tarjeta con un proveedor de procesamiento de pagos específico y almacenar el token, el tipo de tarjeta y la fecha de caducidad cifrada. Puede utilizar el token como credencial registrada para uso futuro, ya que solo es único para cada comerciante. Dado que el token es único, si hay un problema de seguridad, el token se invalida, lo que ayuda a evitar actividades fraudulentas.
 
-## Información adicional
+## Más información
 
-Si está buscando soluciones de pago recomendadas por Adobe, considere [Adobe Payment Services](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html).
+Si está buscando soluciones de pago recomendadas por Adobe, considere [Servicios de pago de Adobe](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html).

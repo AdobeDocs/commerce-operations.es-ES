@@ -20,13 +20,13 @@ En este tema se profundiza en algunos de los principales estándares de desarrol
 - Consideraciones arquitectónicas, incluyendo GRA
 - Estándares de seguridad contra scripts y exploits
 - Prácticas recomendadas de desarrollo de extensiones
-- Integraciones de API web con REST, SOAP y GraphQL
+- SOAP Integraciones de API web con REST, y GraphQL
 - Mejoras de rendimiento para codificación e infraestructura
 - Herramientas, estrategias y metodologías de prueba
 
 Aunque algunos implementadores de soluciones pueden tener sus propias preferencias en metodologías, procesos y herramientas, este manual se centra en prácticas recomendadas y metodologías aceptadas que se pueden compartir en la mayoría de las implementaciones.
 
-Al igual que cualquier proyecto de TI de gran tamaño, Adobe Commerce se basa en estándares de codificación que utilizan prácticas recomendadas y estandarizaciones, así como en estándares establecidos dentro de Adobe Commerce [Codificación estándar](https://developer.adobe.com/commerce/php/coding-standards/). Seguir estos estándares es importante para eliminar errores y mejorar la calidad y mantenimiento del código creado a medida.
+Al igual que cualquier proyecto de TI de gran tamaño, Adobe Commerce se basa en estándares de codificación que utilizan prácticas recomendadas y estandarizaciones, así como en estándares establecidos dentro del [Estándar de codificación](https://developer.adobe.com/commerce/php/coding-standards/) de Adobe Commerce. Seguir estos estándares es importante para eliminar errores y mejorar la calidad y mantenimiento del código creado a medida.
 
 ## Adobe Commerce en la infraestructura en la nube
 

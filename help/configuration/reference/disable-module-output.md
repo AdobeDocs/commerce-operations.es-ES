@@ -4,7 +4,7 @@ description: Obtenga información sobre cómo deshabilitar la salida del módulo
 exl-id: af556bf5-8454-4d65-8ac8-4a64c108f092
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '348'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 De forma predeterminada, todos los módulos se configuran para que la salida del módulo se pueda escribir en una vista. La desactivación de la salida ofrece una forma de deshabilitar esencialmente un módulo que no se puede deshabilitar debido a las dependencias del hardware.
 
-Por ejemplo, la variable `Customer` El módulo depende del `Review` módulo, de modo que `Review` El módulo no se puede desactivar. Sin embargo, si no desea que los clientes proporcionen comentarios, puede desactivar el resultado del `Review` módulo.
+Por ejemplo, el módulo `Customer` depende del módulo `Review`, por lo que el módulo `Review` no se puede deshabilitar. Sin embargo, si no desea que los clientes proporcionen revisiones, puede desactivar el resultado del módulo `Review`.
 
 >[!INFO]
 >
@@ -30,15 +30,15 @@ La deshabilitación de Output se realiza en las siguientes clases:
 
 ## Deshabilitar la salida del módulo en una implementación de canalización
 
-Para deshabilitar la salida del módulo en la implementación de la canalización o en cualquier otra implementación, con varias instancias de la aplicación Commerce:
+Para deshabilitar los resultados de los módulos en la implementación de la canalización o en cualquier otra implementación, con varias instancias de la aplicación de Commerce:
 
-1. Edite el `Backend` del módulo `config.xml` archivo.
+1. Edite el archivo `config.xml` del módulo `Backend`.
 1. Exporte los cambios de configuración.
 
-### Edite el `Backend` módulo `config.xml` archivo
+### Editar el archivo `config.xml` del módulo `Backend`
 
-1. Archivar el original `config.xml` archivo.
-1. Añada líneas similares a las siguientes al `<Magento_install_dir>/vendor/magento/module-backend/etc/config.xml` , directamente debajo de `<default>` elemento:
+1. Archivar el archivo `config.xml` original.
+1. Agregue líneas similares a las siguientes al archivo `<Magento_install_dir>/vendor/magento/module-backend/etc/config.xml`, directamente debajo del elemento `<default>`:
 
    ```xml
    <advanced>
@@ -52,7 +52,7 @@ Para deshabilitar la salida del módulo en la implementación de la canalizació
 
    - `<modules_disable_output>` contiene una lista de módulos.
    - `<Magento_Newsletter></Magento_Newsletter>` especifica para qué módulo deshabilitar la salida.
-   - `1` es el indicador que deshabilita la salida para `Magento_Newsletter` módulo.
+   - `1` es el indicador que deshabilita la salida para el módulo `Magento_Newsletter`.
 
 Como resultado de esta configuración, los clientes ya no pueden suscribirse para recibir boletines.
 
@@ -64,7 +64,7 @@ Ejecute el siguiente comando para exportar los cambios de configuración:
 bin/magento app:config:dump
 ```
 
-Los resultados se escriben en `<Magento_install_dir>/app/etc/config.php` archivo.
+Los resultados se escriben en el archivo `<Magento_install_dir>/app/etc/config.php`.
 
 A continuación, borre la caché para habilitar la nueva configuración:
 
@@ -78,8 +78,8 @@ Consulte [Exportar la configuración](../cli/export-configuration.md).
 
 El procedimiento para deshabilitar la salida del módulo en una sola instancia de Commerce es más sencillo porque los cambios no tienen que distribuirse.
 
-1. Archivar el original `<Magento_install_dir>/app/etc/config.php` archivo.
-1. Añada el `advanced` y `modules_disable_output` secciones a la `config.php` (si no existen):
+1. Archivar el archivo `<Magento_install_dir>/app/etc/config.php` original.
+1. Agregue las secciones `advanced` y `modules_disable_output` al archivo `config.php` (si no existen):
 
    ```php
    'system' =>
@@ -100,5 +100,5 @@ El procedimiento para deshabilitar la salida del módulo en una sola instancia d
      ),
    ```
 
-En este ejemplo, la salida para `Magento_Review` El módulo se ha desactivado y los clientes ya no pueden revisar los productos.
+En este ejemplo, la salida del módulo `Magento_Review` se ha deshabilitado y los clientes ya no pueden revisar los productos.
 Para volver a habilitar la salida, establezca el valor en `0`.

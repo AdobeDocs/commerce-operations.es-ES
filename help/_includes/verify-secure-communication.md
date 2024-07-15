@@ -1,7 +1,7 @@
 ---
 source-git-commit: 4c18f00e0b92e49924676274c4ed462a175a7e4b
 workflow-type: tm+mt
-source-wordcount: '146'
+source-wordcount: '147'
 ht-degree: 1%
 
 ---
@@ -9,10 +9,10 @@ ht-degree: 1%
 
 En esta sección se describen dos formas de comprobar que la autenticación HTTP Basic funciona:
 
-* Uso de un `curl` para comprobar que debe escribir un nombre de usuario y una contraseña para obtener el estado del clúster
+* Utilizando un comando `curl` para comprobar, debe escribir un nombre de usuario y una contraseña para obtener el estado del clúster
 * Configuración de la autenticación HTTP Basic en el administrador
 
-## Utilice un `curl` comando para comprobar el estado del clúster
+## Usar un comando `curl` para comprobar el estado del clúster
 
 Introduzca el siguiente comando:
 
@@ -68,8 +68,8 @@ Connection: keep-alive
 
 ## Configure la autenticación HTTP Basic en el administrador
 
-Realice las mismas tareas que se describen en [Configuración del motor de búsqueda](../configuration/search/configure-search-engine.md) *excepto* click **[!UICONTROL Yes]** desde el **[!UICONTROL Enable HTTP Auth]** e introduzca su nombre de usuario y contraseña en los campos proporcionados.
+Realice las mismas tareas que se describen en [Configuración del motor de búsqueda](../configuration/search/configure-search-engine.md) *excepto*, haga clic en **[!UICONTROL Yes]** en la lista **[!UICONTROL Enable HTTP Auth]** e introduzca su nombre de usuario y contraseña en los campos proporcionados.
 
-Clic **[!UICONTROL Test Connection]** para asegurarse de que funciona y haga clic en **[!UICONTROL Save Config]**.
+Haga clic en **[!UICONTROL Test Connection]** para asegurarse de que funciona y luego haga clic en **[!UICONTROL Save Config]**.
 
 Debe vaciar la caché y reindexar antes de continuar.

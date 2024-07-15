@@ -1,11 +1,11 @@
 ---
 title: Archivos de configuración para implementación
-description: Comprenda cómo funcionan los archivos de configuración para instalar la aplicación de Commerce.
+description: Comprender cómo funcionan los archivos de configuración para instalar la aplicación de Commerce.
 feature: Configuration, Deploy
 exl-id: 772a6814-6b18-4f8f-b31e-72faf790ff37
 source-git-commit: b40d2bd4d466782ba5bc1b29ee8681756d9e85cc
 workflow-type: tm+mt
-source-wordcount: '457'
+source-wordcount: '435'
 ht-degree: 0%
 
 ---
@@ -14,26 +14,26 @@ ht-degree: 0%
 
 Adobe Commerce proporciona archivos de configuración que permiten personalizar fácilmente un componente y crear tipos de configuración para ampliar la funcionalidad predeterminada. El proceso de configuración de la implementación consiste en la configuración compartida y específica del sistema para la instalación. La configuración de implementación de Commerce se divide entre [`app/etc/config.php`](../reference/config-reference-configphp.md) y [`app/etc/env.php`](../reference/config-reference-envphp.md).
 
-- `app/etc/config.php` es el _compartido_ archivo de configuración.
+- `app/etc/config.php` es el archivo de configuración _compartido_.
 Este archivo contiene la lista de módulos, temáticas y paquetes de idiomas instalados, así como las opciones de configuración compartidas.
 
   Proteja este archivo para controlar el código fuente y utilícelo en los sistemas de desarrollo, ensayo y producción.
 
-- `app/etc/env.php` contiene opciones específicas del entorno de instalación.
+- `app/etc/env.php` contiene configuraciones específicas del entorno de instalación.
 
-Juntos, `config.php` y `env.php` se denominan &quot;Commerce&quot; _configuración de implementación_ porque los archivos se crean durante la instalación y son necesarios para iniciar la aplicación de Commerce.
+En conjunto, `config.php` y `env.php` se denominan la _configuración de implementación_ de Commerce porque los archivos se crean durante la instalación y son necesarios para iniciar la aplicación de Commerce.
 
 >[!INFO]
 >
->El [!DNL Commerce 2] la configuración de implementación reemplaza `local.xml` in [!DNL Magento 1.x].
+>La configuración de implementación [!DNL Commerce 2] reemplaza a `local.xml` en [!DNL Magento 1.x].
 
-A diferencia de otros [archivos de configuración del módulo](../reference/module-files.md), la configuración de implementación de Commerce se carga en la memoria durante la inicialización, no se combina con ningún otro archivo y no se puede ampliar. (`config.php` y `env.php` sin embargo, se combinan entre sí).
+A diferencia de otros [archivos de configuración del módulo](../reference/module-files.md), la configuración de la implementación de Commerce se carga en la memoria durante la inicialización, no se combina con ningún otro archivo y no se puede ampliar. (`config.php` y `env.php` se combinan entre sí, sin embargo).
 
 ## Detalles sobre la configuración de implementación
 
-`config.php` y `env.php` son archivos PHP que devuelven un [matriz asociativa multidimensional](https://www.w3schools.com:443/php/php_arrays.asp), que es básicamente una disposición jerárquica de parámetros y valores de configuración.
+`config.php` y `env.php` son archivos PHP que devuelven una [matriz asociativa multidimensional](https://www.w3schools.com:443/php/php_arrays.asp), que es básicamente una disposición jerárquica de parámetros y valores de configuración.
 
-En el nivel superior de esta matriz se encuentran _segmentos de configuración_. Un segmento tiene contenido arbitrario (un valor escalar o una matriz anidada) que se distingue por una clave arbitraria (donde el marco comercial define tanto el par clave como valor).
+En el nivel superior de esta matriz se encuentran _segmentos de configuración_. Un segmento tiene contenido arbitrario (un valor escalar o una matriz anidada) que se distingue por una clave arbitraria (donde el marco de trabajo de Commerce define tanto el par clave como valor).
 
 [Magento\Framework\App\DeploymentConfig](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/DeploymentConfig.php) simplemente proporciona acceso a estas secciones, pero no le permite ampliarlas.
 
@@ -46,7 +46,7 @@ Las secciones siguientes describen la estructura y el contenido de la configurac
 
 ## Administrar módulos instalados
 
-El `config.php` contiene una lista de los módulos instalados. Adobe Commerce proporciona utilidades basadas en la línea de comandos y en la web para administrar módulos (instalar, desinstalar, habilitar, deshabilitar o actualizar).
+El archivo `config.php` contiene una lista de módulos instalados. Adobe Commerce proporciona utilidades basadas en la línea de comandos y en la web para administrar módulos (instalar, desinstalar, habilitar, deshabilitar o actualizar).
 
 Ejemplos:
 
@@ -76,6 +76,6 @@ return array (
 
 El valor `1` o `0` indica si un módulo está habilitado o deshabilitado.
 
-La aplicación Commerce no reconoce los módulos desactivados; es decir, no participan en la combinación de configuraciones, en la inyección de dependencias, en eventos, complementos, etc. Los módulos desactivados no modifican la tienda ni el administrador y no afectan al enrutamiento.
+La aplicación de Commerce no reconoce los módulos desactivados; es decir, no participan en la combinación de configuraciones, en la inyección de dependencias, en eventos, complementos, etc. Los módulos desactivados no modifican la tienda ni el administrador y no afectan al enrutamiento.
 
 La única diferencia práctica entre un módulo deshabilitado y un módulo ausente en la base de código es que el cargador automático encuentra un módulo deshabilitado y sus clases y constantes están disponibles para su reutilización en otro código.

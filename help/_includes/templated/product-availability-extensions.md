@@ -28,7 +28,7 @@ ht-degree: 0%
           <td>1.5+</td>
           <td>
               <a href="https://developer.adobe.com/commerce/extensibility/events/installation/">Compositor</a><br/>
-              <a href="https://developer.adobe.com/commerce/extensibility/events/release-notes/">Notas de versión</a><br/>
+              <a href="https://developer.adobe.com/commerce/extensibility/events/release-notes/">Notas de la versión</a><br/>
           </td>
       </tr>
       <tr>
@@ -39,7 +39,7 @@ ht-degree: 0%
           <td>-</td>
           <td>
               <a href="https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/installation/">Compositor</a><br/>
-              <a href="https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/release-notes/">Notas de versión</a><br/>
+              <a href="https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/release-notes/">Notas de la versión</a><br/>
           </td>
       </tr>
       <tr>
@@ -50,7 +50,7 @@ ht-degree: 0%
           <td>1.2+</td>
           <td>
               <a href="https://developer.adobe.com/commerce/extensibility/webhooks/installation/">Compositor</a><br/>
-              <a href="https://developer.adobe.com/commerce/extensibility/webhooks/release-notes/">Notas de versión</a><br/>
+              <a href="https://developer.adobe.com/commerce/extensibility/webhooks/release-notes/">Notas de la versión</a><br/>
           </td>
       </tr>
       <tr>
@@ -61,7 +61,7 @@ ht-degree: 0%
           <td>1.3.3</td>
           <td>
               <a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/install.html">Compositor</a><br/>
-              <a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html">Notas de versión</a><br/>
+              <a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html">Notas de la versión</a><br/>
           </td>
       </tr>
       <tr>
@@ -71,8 +71,8 @@ ht-degree: 0%
           <td>1.0.0+</td>
           <td>1.0.0+</td>
           <td>
-              <a href="https://commercemarketplace.adobe.com/magento-experience-platform-connector.html">Marketplace</a><br/>
-              <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/release-notes.html">Notas de versión</a><br/>
+              <a href="https://commercemarketplace.adobe.com/magento-experience-platform-connector.html">Mercado</a><br/>
+              <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/release-notes.html">Notas de la versión</a><br/>
           </td>
       </tr>
       <tr>
@@ -82,8 +82,8 @@ ht-degree: 0%
           <td>1.7.2</td>
           <td>1.7.1</td>
           <td>
-              <a href="https://experienceleague.adobe.com/docs/commerce-admin/page-builder/guide-overview.html">Guía del usuario</a><br/>
-              <a href="https://experienceleague.adobe.com/docs/commerce-admin/page-builder/release-notes.html">Notas de versión</a><br/>
+              <a href="https://experienceleague.adobe.com/docs/commerce-admin/page-builder/guide-overview.html">Guía de usuario</a><br/>
+              <a href="https://experienceleague.adobe.com/docs/commerce-admin/page-builder/release-notes.html">Notas de la versión</a><br/>
           </td>
       </tr>
   </tbody>

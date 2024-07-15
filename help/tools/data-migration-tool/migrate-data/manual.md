@@ -5,7 +5,7 @@ exl-id: 830abd81-4c6d-418b-9da4-b6acd95f5ec8
 topic: Commerce, Migration
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
-source-wordcount: '278'
+source-wordcount: '287'
 ht-degree: 0%
 
 ---
@@ -33,25 +33,25 @@ En esta sección se explica cómo migrar manualmente archivos multimedia.
 >El método de almacenamiento de medios de la base de datos está obsoleto a partir del Magento 2.4.3.
 
 
-Esta sección se aplica a usted *solamente* si almacena archivos multimedia en la base de datos de Magento. Este paso debe realizarse antes de [migración de datos](data.md):
+Esta sección se aplica a usted *solamente* si almacena archivos multimedia en la base de datos del Magento. Este paso se debe realizar antes de la [migración de datos](data.md):
 
 1. Inicie sesión en el Panel de administración de Magento 1 como administrador.
 
-1. Clic **Sistema** > **Configuración** > AVANZADO > **Sistema**.
+1. Haga clic en **Sistema** > **Configuración** > AVANZADA > **Sistema**.
 
 1. En el panel derecho, desplácese hasta **Configuración de almacenamiento para medios**.
 
-1. Desde el **Seleccionar base de datos de medios** , haga clic en el nombre de la base de datos de almacenamiento de medios.
+1. En la lista **Seleccionar base de datos de medios**, haga clic en el nombre de la base de datos de almacenamiento de medios.
 
-1. Clic **Sincronizar**.
+1. Haga clic en **Sincronizar**.
 
 A continuación, repita los mismos pasos en el panel de administración de Magento 2.
 
 ### Archivos multimedia en el sistema de archivos
 
-Todos los archivos multimedia (imágenes para productos, categorías, el editor WYSIWYG, etc.) deben copiarse manualmente de `<your Magento 1 install dir>/media` hasta `<your Magento 2 install dir>/pub/media`.
+Todos los archivos multimedia (imágenes para productos, categorías, el editor WYSIWYG, etc.) se deben copiar manualmente de `<your Magento 1 install dir>/media` a `<your Magento 2 install dir>/pub/media`.
 
-Sin embargo, haga lo siguiente *no* copie el `.htaccess` archivos ubicados en Magento 1 `media` carpeta. El Magento 2 tiene su propio `.htaccess` que debe ser preservado.
+Sin embargo, *no* copia los archivos de `.htaccess` ubicados en la carpeta del Magento 1 `media`. El Magento 2 tiene su propio(a) `.htaccess` que se debe conservar.
 
 ## Diseño de tienda
 
@@ -63,10 +63,10 @@ Sin embargo, haga lo siguiente *no* copie el `.htaccess` archivos ubicados en Ma
 
 Debe volver a crear manualmente todos los elementos:
 
-* credenciales para las API de servicios web (SOAP, XML-RPC y REST)
+* SOAP credenciales para las API del servicio web (, XML-RPC y REST)
 
 * cuentas de usuario administrativas y asociarlas a privilegios de acceso
 
 >[!NOTE]
 >
->Puede ajustar la zona horaria de una entidad de la base de datos mediante la variable `\Migration\Handler\Timezone` controlador. Consulte la [seguimiento](follow-up.md) para obtener más información.
+>Puede ajustar la zona horaria de una entidad de base de datos mediante el controlador `\Migration\Handler\Timezone`. Consulte la sección [seguimiento](follow-up.md) para obtener más información.

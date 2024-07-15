@@ -7,11 +7,11 @@ kt: 11420
 doc-type: tutorial
 audience: all
 last-substantial-update: 2023-04-13T00:00:00Z
-exl-id: cab6213b-da44-498f-b5c1-e7f89e95038e
+exl-id: cd546571-0241-4619-8696-3c5ebead9939
 feature: Install
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: 823498f041a6d12cfdedd6757499d62ac2aced3d
 workflow-type: tm+mt
-source-wordcount: '1771'
+source-wordcount: '1779'
 ht-degree: 0%
 
 ---
@@ -55,7 +55,7 @@ El uso de una base de datos secundaria puede resultar útil por varios motivos:
 * Permitir que se produzca mysqldump y permitir que se produzcan transacciones normales sin bloquear la base de datos
 * Permite el acceso a los datos desde una fuente de datos externa sin reducir la capacidad de los sitios web para realizar transacciones de información cuando los clientes lo solicitan.
 
-La base de datos secundaria se puede utilizar como `warm standby`. Esto puede entrar en juego cuando esté considerando cómo recuperarse de un error de base de datos principal. La promoción de la base de datos secundaria a la principal es menos compleja que la reconstrucción y restauración de una base de datos en una instancia de Mysql recién creada. Esto reduce el tiempo de inactividad real durante una operación de recuperación.
+La base de datos secundaria se puede usar como `warm standby`. Esto puede entrar en juego cuando esté considerando cómo recuperarse de un error de base de datos principal. La promoción de la base de datos secundaria a la principal es menos compleja que la reconstrucción y restauración de una base de datos en una instancia de Mysql recién creada. Esto reduce el tiempo de inactividad real durante una operación de recuperación.
 
 Existe la oportunidad de desviar algunas de las solicitudes a la base de datos secundaria. Si se utiliza este método, se recomienda hacer que la base de datos secundaria sea de solo lectura. Permitir que la aplicación de Adobe Commerce utilice esta base de datos secundaria para operaciones de lectura ayuda tomando algunas de las solicitudes de lectura y permitiendo que la base de datos secundaria responda. Sin embargo, este cambio solo representa el 30-50 % de todas las solicitudes, pero cualquier carga que pueda retirar de la base de datos principal es una victoria.
 

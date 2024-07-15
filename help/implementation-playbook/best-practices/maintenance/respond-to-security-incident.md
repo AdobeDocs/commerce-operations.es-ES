@@ -5,7 +5,7 @@ feature: Best Practices
 exl-id: 77275d37-4f1d-462d-ba11-29432791da6a
 source-git-commit: e63f68dd469564e70269154810cbfbd95d2b2e57
 workflow-type: tm+mt
-source-wordcount: '1239'
+source-wordcount: '1172'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Las siguientes prácticas recomendadas pueden ayudar a evitar el acceso no autor
 
 >[!TIP]
 >
->El Adobe ha descubierto que la mayoría de los incidentes de seguridad ocurren cuando los actores se aprovechan de las vulnerabilidades existentes, sin parches, contraseñas deficientes y configuraciones débiles de propiedad y permisos en la aplicación Commerce y la configuración de la infraestructura. Minimice la ocurrencia de incidentes de seguridad revisando y siguiendo las prácticas recomendadas de seguridad de Adobe al configurar, configurar y actualizar instalaciones de Adobe Commerce. Consulte [Proteja su sitio e infraestructura de Commerce.](../launch/security-best-practices.md).
+>El Adobe ha descubierto que la mayoría de los incidentes de seguridad ocurren cuando los actores se aprovechan de las vulnerabilidades existentes, sin parches, contraseñas deficientes y configuraciones débiles de propiedad y permisos en la aplicación de Commerce y la configuración de la infraestructura. Minimice la ocurrencia de incidentes de seguridad revisando y siguiendo las prácticas recomendadas de seguridad de Adobe al configurar, configurar y actualizar instalaciones de Adobe Commerce. Ver [Proteja su sitio e infraestructura de Commerce](../launch/security-best-practices.md).
 
 
 ## Productos y versiones afectados
@@ -63,43 +63,43 @@ En el desafortunado caso de un compromiso con el sitio, estas son algunas recome
 
 El primer paso del análisis de incidentes es recopilar tantos hechos como sea posible y con la mayor rapidez posible. La recopilación de información sobre el incidente puede ayudar a determinar la causa potencial del mismo. Adobe Commerce proporciona las herramientas siguientes para ayudarle con el análisis de incidentes.
 
-- [Registros de acciones de administración de auditoría](https://experienceleague.adobe.com/docs/commerce-admin/systems/action-logs/action-log-report.html).
+- [Registros De Acciones De Administración De Auditoría](https://experienceleague.adobe.com/docs/commerce-admin/systems/action-logs/action-log-report.html).
 
   El informe Registros de acciones muestra un registro detallado de todas las acciones de administración habilitadas para el registro. Cada registro tiene una marca de hora y registra la dirección IP y el nombre del usuario. El detalle del registro incluye los datos de usuario de administración y los cambios relacionados que se realizaron durante la acción.
 
-- Analizar eventos con [Herramienta Observación para Adobe Commerce](../../../tools/observation-for-adobe-commerce/intro.md).
+- Analice eventos con la [herramienta Observación para Adobe Commerce](../../../tools/observation-for-adobe-commerce/intro.md).
 
   La herramienta Observación para Adobe Commerce le permite analizar problemas complejos para ayudar a identificar causas básicas. En lugar de rastrear datos dispares, puede dedicar su tiempo a correlacionar eventos y errores para obtener información más detallada sobre las causas de los cuellos de botella del rendimiento.
 
-  Utilice el **Seguridad** en la herramienta para obtener una visión clara de los posibles problemas de seguridad y ayudar a identificar las causas básicas y mantener el rendimiento óptimo de los sitios.
+  Use la ficha **Seguridad** de la herramienta para tener una visión clara de los posibles problemas de seguridad y ayudar a identificar las causas principales y mantener el rendimiento óptimo de los sitios.
 
 - Analizar registros con [Registros de New Relic](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service.html)
 
-  Los proyectos Pro de Adobe Commerce en infraestructura en la nube incluyen [Registros de New Relic](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/log-management.html) servicio. El servicio está preconfigurado para agregar todos los datos de registro de los entornos de ensayo y producción y mostrarlos en un panel de administración de registros centralizado, donde puede buscar y visualizar los datos agregados.
+  Los proyectos Pro de Adobe Commerce en infraestructura en la nube incluyen el servicio [Registros de New Relic](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/log-management.html). El servicio está preconfigurado para agregar todos los datos de registro de los entornos de ensayo y producción y mostrarlos en un panel de administración de registros centralizado, donde puede buscar y visualizar los datos agregados.
 
-  Para otros proyectos de Commerce, puede configurar y utilizar el [Registros de New Relic](https://docs.newrelic.com/docs/logs/get-started/get-started-log-management/) para completar las siguientes tareas:
-   - Uso [Consultas de New Relic](https://docs.newrelic.com/docs/logs/new-relic-logs/ui-data/query-syntax-logs) para buscar datos de registro agregados.
+  Para otros proyectos de Commerce, puede configurar y utilizar el servicio [Registros de New Relic](https://docs.newrelic.com/docs/logs/get-started/get-started-log-management/) para completar las tareas siguientes:
+   - Use [consultas de New Relic](https://docs.newrelic.com/docs/logs/new-relic-logs/ui-data/query-syntax-logs) para buscar datos de registro agregados.
    - Visualice los datos de registro mediante la aplicación New Relic Logs.
 
 ## Cuentas de auditoría, código y base de datos
 
-Revise la configuración y los registros de las cuentas de administración y de usuario de Commerce, el código de la aplicación y la base de datos para identificar y limpiar el código sospechoso y garantizar la seguridad del acceso a la cuenta, el sitio y la base de datos. A continuación, vuelva a implementar según sea necesario.
+Revise la configuración y los registros de las cuentas de administrador y de usuario de Commerce, el código de aplicación y la base de datos para identificar y limpiar el código sospechoso y garantizar la seguridad del acceso a la cuenta, el sitio y la base de datos. A continuación, vuelva a implementar según sea necesario.
 
 Continúe monitorizando de cerca el sitio después del incidente, ya que muchos sitios se comprometen de nuevo en cuestión de horas. Garantice la revisión continua del registro y la monitorización de la integridad de los archivos para detectar rápidamente cualquier señal de nuevo compromiso.
 
 ### Auditar cuentas de usuario de administración
 
-- [Revisar acceso de usuario administrador](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions-users-all.html): elimine las cuentas antiguas, no utilizadas o sospechosas y gire las contraseñas de todos los usuarios administradores.
+- [Revisar el acceso de los usuarios administradores](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions-users-all.html): elimine las cuentas antiguas, no utilizadas o sospechosas y gire las contraseñas de todos los usuarios administradores.
 
-- [Revisar configuración de seguridad de administración](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-admin.html): compruebe que la configuración de seguridad de administración sigue las prácticas recomendadas de seguridad.
+- [Revisar la configuración de seguridad de administración](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-admin.html): compruebe que la configuración de seguridad de administración sigue las prácticas recomendadas de seguridad.
 
-- [Revisar las cuentas de usuario de Adobe Commerce en los proyectos de infraestructura en la nube](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html): elimine las cuentas antiguas, no utilizadas o sospechosas y gire las contraseñas de todos los usuarios administradores de proyectos en la nube. Asegúrese de que la configuración de seguridad de la cuenta es correcta.
+- [Revise las cuentas de usuario de Adobe Commerce en los proyectos de infraestructura en la nube](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html): elimine las cuentas antiguas, no utilizadas o sospechosas y gire las contraseñas de todos los usuarios administradores de proyectos en la nube. Asegúrese de que la configuración de seguridad de la cuenta es correcta.
 
-- [Auditoría de claves SSH](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html) para Adobe Commerce en la infraestructura en la nube: revise, elimine y gire las claves SSH.
+- [Auditar claves SSH](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html) para Adobe Commerce en la infraestructura en la nube: revise, elimine y gire las claves SSH.
 
 ### Código de auditoría
 
-- En el Administrador, revise las [Configuración del encabezado y pie de página del HTML](https://experienceleague.adobe.com/docs/commerce-admin/content-design/design/page-setup.html) en todos los niveles de ámbito, incluido `website` y `store view`. Elimine cualquier código JavaScript desconocido de las secuencias de comandos y las hojas de estilos, así como otras configuraciones de HTML. Conservar solo código reconocido, como fragmentos de seguimiento.
+- Desde el administrador, revise la [configuración del encabezado y pie de página del HTML](https://experienceleague.adobe.com/docs/commerce-admin/content-design/design/page-setup.html) en todos los niveles de ámbito, incluidos `website` y `store view`. Elimine cualquier código JavaScript desconocido de los scripts y las hojas de estilos, así como la configuración de varios HTML. Conservar solo código reconocido, como fragmentos de seguimiento.
 
 - Compare el código base de producción actual con el código base almacenado en el Sistema de control de versiones (VCS).
 
@@ -115,13 +115,13 @@ Continúe monitorizando de cerca el sitio después del incidente, ya que muchos 
 
 - Verificar que el malware ya no está presente analizando el sitio con herramientas de análisis de malware disponibles públicamente.
 
-- Proteja el panel de administración cambiando su nombre y comprobando que el sitio `app/etc/local.xml` y `var` Las direcciones URL no son de acceso público.
+- Proteja el panel de administración cambiando su nombre y comprobando que las direcciones URL del sitio `app/etc/local.xml` y `var` no son de acceso público.
 
 - Continúe monitorizando de cerca el sitio después del incidente, ya que muchos sitios se comprometen de nuevo en cuestión de horas. Garantice la revisión continua del registro y la monitorización de la integridad de los archivos para detectar rápidamente cualquier señal de nuevo compromiso.
 
 ## Eliminar advertencias de Google
 
-Si Google ha marcado el sitio como que contiene código malicioso, solicite una revisión una vez que se haya limpiado el sitio. Las revisiones de los sitios infectados con malware tardan unos días. Una vez que Google determina que el sitio está limpio, las advertencias de los resultados de búsqueda y los exploradores deben desaparecer en un plazo de 72 horas. Consulte [Solicitar una revisión](https://web.dev/articles/request-a-review).
+Si Google ha marcado el sitio como que contiene código malicioso, solicite una revisión una vez que se haya limpiado el sitio. Las revisiones de los sitios infectados con malware tardan unos días. Una vez que Google determina que el sitio está limpio, las advertencias de los resultados de búsqueda y los exploradores deben desaparecer en un plazo de 72 horas. Ver [Solicitar revisión](https://web.dev/articles/request-a-review).
 
 ## Revisar lista de comprobación de resultados de malware
 
@@ -131,6 +131,6 @@ Si las herramientas de análisis de malware disponibles públicamente confirman 
 
 Cuando se trata de ataques sofisticados, el mejor curso de acción es trabajar con un desarrollador experimentado, un experto de terceros o un integrador de soluciones para reparar completamente el sitio y revisar las prácticas de seguridad. Trabajar con profesionales de seguridad experimentados garantiza que se tomen medidas completas y avanzadas para garantizar la seguridad de su negocio y de sus clientes.
 
-## Información adicional
+## Más información
 
 - [Marco de análisis de causa raíz](https://sansec.io/kb/incident-response/magento-root-cause-analysis).

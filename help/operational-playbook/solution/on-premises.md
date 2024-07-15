@@ -14,7 +14,8 @@ ht-degree: 0%
 
 # Alojamiento local
 
-Las soluciones de alojamiento basadas en la nube son extremadamente populares y sin duda desempeñan un papel importante en muchas organizaciones, sin embargo, la infraestructura local sigue siendo una opción adecuada para algunas organizaciones y comerciantes.
+Las soluciones de alojamiento basadas en la nube son extremadamente populares y sin duda sirve un
+Sin embargo, en muchas organizaciones, la infraestructura local sigue siendo una opción adecuada para algunas organizaciones y comerciantes.
 
 Debe tener en cuenta varios factores antes de elegir el alojamiento local, incluidos los costes irrecuperables significativos, un conjunto de expertos informáticos competentes/rentables de fácil acceso y el hecho de que las aplicaciones locales a menudo se pueden adaptar y adaptar más fácilmente a las necesidades de una organización.
 

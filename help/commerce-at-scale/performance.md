@@ -6,7 +6,7 @@ feature: Integration, Cache
 topic: Commerce, Performance
 source-git-commit: 76ccc5aa8e5e3358dc52a88222fd0da7c4eb9ccb
 workflow-type: tm+mt
-source-wordcount: '2248'
+source-wordcount: '2246'
 ht-degree: 0%
 
 ---
@@ -15,13 +15,13 @@ ht-degree: 0%
 
 AEM El Dispatcher es un proxy inverso, que ayuda a ofrecer un entorno que es rápido y dinámico. Funciona como parte de un servidor HTML estático, como Apache HTTP Server, con el objetivo de almacenar (o &quot;almacenar en caché&quot;) la mayor parte posible del contenido del sitio, en forma de recursos estáticos. AEM Este método pretende minimizar en la medida de lo posible la necesidad de acceder a la funcionalidad de renderización de páginas de la y al servicio GraphQL de Adobe Commerce. El resultado de servir gran parte de las páginas como HTML estático, CSS y JS ofrece ventajas de rendimiento a los usuarios y reduce los requisitos de infraestructura en el entorno. Cualquier página o consulta que probablemente se repita de forma idéntica de usuario a usuario debe considerarse para el almacenamiento en caché.
 
-AEM Las secciones siguientes muestran a alto nivel el área de enfoque técnico recomendada que se debe revisar para permitir un almacenamiento en caché efectivo de los recursos en un entorno de CIF/Adobe Commerce.
+AEM CIF Las siguientes secciones muestran a alto nivel el área de enfoque técnico recomendada que se debe revisar para permitir un almacenamiento en caché efectivo de los recursos en un entorno de/Adobe Commerce.
 
 ## AEM Almacenamiento en caché basado en TTL en Dispatcher de
 
-AEM El almacenamiento en caché de la mayor parte posible del sitio en las instancias de Dispatcher es una práctica recomendada para cualquier proyecto de. El uso de la invalidación de caché basada en el tiempo almacenará en caché las páginas del CIF procesadas del lado del servidor, durante un tiempo limitado establecido. AEM Una vez transcurrido el tiempo establecido, la siguiente solicitud reconstruirá la página desde el editor de y Adobe Commerce GraphQL y la almacenará de nuevo en la caché de Dispatcher hasta la siguiente invalidación.
+AEM El almacenamiento en caché de la mayor parte posible del sitio en las instancias de Dispatcher es una práctica recomendada para cualquier proyecto de. CIF El uso de la invalidación de caché basada en el tiempo almacenará en caché las páginas procesadas del lado del servidor durante un período de tiempo limitado. AEM Una vez transcurrido el tiempo establecido, la siguiente solicitud reconstruirá la página desde el editor de y Adobe Commerce GraphQL y la almacenará de nuevo en la caché de Dispatcher hasta la siguiente invalidación.
 
-AEM AEM La función de almacenamiento en caché de TTL se puede configurar de forma predeterminada mediante el uso del componente &quot;TTL de Dispatcher&quot; en el paquete ACS Commons y la configuración /enableTTL &quot;1&quot; en el archivo de configuración dispatcher.any.
+AEM La función de almacenamiento en caché de TTL se puede configurar de forma predeterminada mediante el uso del componente &quot;Dispatcher AEM TTL&quot; en el paquete ACS Commons y la configuración /enableTTL &quot;1&quot; en el archivo de configuración dispatcher.any.
 
 Si se habilita, Dispatcher evaluará los encabezados de respuesta del backend y, si contienen una fecha Cache-Control max-age o Expires, se creará un archivo auxiliar vacío junto al archivo de caché, con una hora de modificación igual a la fecha de caducidad. Cuando se solicita el archivo en caché pasado el tiempo de modificación, se vuelve a solicitar automáticamente desde el backend. Esto proporciona un mecanismo de almacenamiento en caché efectivo que no requiere intervención manual ni mantenimiento, una vez que las partes interesadas empresariales han reconocido y aceptado el retraso de la actualización del producto (TTL).
 
@@ -29,20 +29,20 @@ Si se habilita, Dispatcher evaluará los encabezados de respuesta del backend y,
 
 El método TTL del distribuidor anterior reducirá en gran medida las solicitudes y la carga en el editor, pero hay algunos recursos que es muy improbable que cambien y, por lo tanto, incluso las solicitudes al distribuidor se pueden reducir almacenando en caché los archivos relevantes localmente en el explorador del usuario. Por ejemplo, el logotipo del sitio, que se muestra en todas las páginas del sitio en la plantilla del sitio, no tendría que solicitarse cada vez al distribuidor. En su lugar, esto se puede almacenar en la caché del explorador del usuario. La reducción en los requisitos de ancho de banda para cada carga de página tendría un gran impacto en la capacidad de respuesta del sitio y los tiempos de carga de la página.
 
-El almacenamiento en caché a nivel de explorador se suele realizar mediante el encabezado de respuesta &quot;Cache-Control: max-age=&quot;. La configuración maxage indica al explorador durante cuántos segundos debe almacenar el archivo en caché antes de intentar &quot;revalidarlo&quot; o solicitarlo de nuevo desde el sitio. Este concepto de max-age de caché se conoce comúnmente como &quot;Caducidad de caché&quot; o TTL (&quot;Tiempo de vida&quot;). Entrega de experiencias de comercio a escala: con Adobe Experience Manager, Commerce Integration Framework, Adobe Commerce 7
+El almacenamiento en caché a nivel de explorador se suele realizar mediante el encabezado de respuesta &quot;Cache-Control: max-age=&quot;. La configuración maxage indica al explorador durante cuántos segundos debe almacenar el archivo en caché antes de intentar &quot;revalidarlo&quot; o solicitarlo de nuevo desde el sitio. Este concepto de max-age de caché se conoce comúnmente como &quot;Caducidad de caché&quot; o TTL (&quot;Tiempo de vida&quot;). Entrega de experiencias comerciales a escala: con Adobe Experience Manager, Commerce integration framework, Adobe Commerce 7
 
-AEM Algunas áreas de un sitio del CIF/Adobe Commerce, que se puede configurar para que se almacene en caché en el explorador del cliente, son las siguientes:
+AEM CIF Algunas áreas de un sitio de//Adobe Commerce que se pueden configurar para que se almacene en caché en el explorador del cliente son las siguientes:
 
 - AEM Las imágenes (dentro de la plantilla de la plantilla en sí, por ejemplo, las imágenes de diseño de plantilla y logotipo del sitio; las imágenes de producto del catálogo se solicitarían desde Adobe Commerce a través de Fastly y se analiza más adelante el almacenamiento en caché de estas imágenes)
 - Archivos de HTML (para páginas poco cambiadas: página de términos y condiciones, etc.)
 - Archivos CSS
-- Todos los archivos JavaScript del sitio, incluidos los archivos JavaScript del CIF
+- Todos los archivos de JavaScript CIF del sitio, incluidos los archivos de JavaScript de
 
-## Optimización del nivel de estado y período de gracia de Dispatcher
+## Optimización del período de gracia y del nivel de estado de Dispatcher
 
-La configuración predeterminada de Dispatcher utiliza la configuración /statfilelevel &quot;0&quot;, lo que significa que se coloca un solo archivo &quot;.stat&quot; en la raíz del directorio htdocs (directorio raíz del documento). AEM Si se realiza un cambio en una página o archivo en, el tiempo de modificación de este archivo .stat se actualiza al tiempo del cambio. Si la hora es posterior a la hora de modificación del recurso, Dispatcher considerará que todos los recursos están invalidados y cualquier solicitud posterior de un recurso invalidado almacenará en déclencheur una llamada a la instancia de publicación. Básicamente, con esta configuración, cada activación invalidará toda la caché.
+La configuración predeterminada de Dispatcher utiliza la configuración /statfilelevel &quot;0&quot;, lo que significa que se coloca un solo archivo &quot;.stat&quot; en la raíz del directorio htdocs (directorio raíz del documento). AEM Si se realiza un cambio en una página o archivo en, el tiempo de modificación de este archivo .stat se actualiza al tiempo del cambio. Si la hora es posterior a la hora de modificación del recurso, Dispatcher considerará que todos los recursos están invalidados y cualquier solicitud posterior de un recurso invalidado almacenará en déclencheur una llamada a la instancia de Publish. Básicamente, con esta configuración, cada activación invalidará toda la caché.
 
-AEM Para cualquier sitio, especialmente los sitios de comercio con una carga pesada, esto colocaría una cantidad innecesaria de carga en el nivel de publicación de la para que toda la estructura del sitio se invalide con una sola actualización de página.
+AEM Para cualquier sitio, especialmente los sitios de comercio con una carga pesada, esto colocaría una cantidad innecesaria de carga en el nivel de Publish de la para que toda la estructura del sitio se invalide con una sola actualización de página.
 
 En su lugar, la configuración statfilelevel se puede modificar a un valor mayor, correspondiente a la profundidad de los subdirectorios del directorio htdocs desde el directorio raíz del documento, de modo que cuando se invalide un archivo ubicado en un nivel determinado, solo se actualicen los archivos de ese nivel de directorio .stat y posteriores.
 
@@ -68,11 +68,12 @@ Otra configuración de Dispatcher para optimizar al configurar statfilelevel es 
 
 >[!NOTE]
 >
-> Encontrará más información detallada sobre este tema en la [aem-dispatcher-experiments](https://github.com/adobe/aem-dispatcher-experiments/tree/main/experiments/gracePeriod) Repositorio de GitHub.
+> Encontrará más información detallada sobre este tema en el repositorio de GitHub [aem-dispatcher-experiments](https://github.com/adobe/aem-dispatcher-experiments/tree/main/experiments/gracePeriod).
 
-## CIF: almacenamiento en caché de GraphQL a través de componentes
+## CIF - Almacenamiento en caché de GraphQL mediante componentes
 
-AEM Los componentes individuales dentro de los componentes se pueden configurar para que se almacenen en caché, lo que significa que la solicitud de GraphQL a Adobe Commerce AEM se llama una vez y, a continuación, las solicitudes subsiguientes, hasta el límite de tiempo configurado, se recuperan de la caché de la y no se volverán a cargar en Adobe Commerce. Algunos ejemplos son la navegación del sitio basada en un árbol de categorías que se muestra en todas las páginas y las opciones dentro de una funcionalidad de búsqueda con facetas: estas son solo dos áreas que requieren consultas que consuman muchos recursos en Adobe Commerce para crearlas; sin embargo, es poco probable que cambien con regularidad y, por lo tanto, serían buenas opciones para el almacenamiento en caché. De este modo, por ejemplo, incluso cuando el editor está reconstruyendo un PDP o PLP, la solicitud de GraphQL que consume muchos recursos para la compilación de navegación no afectaría a Adobe Commerce y se podría recuperar de la caché de GraphQL AEM en el CIF en el que se encuentra el.
+AEM Los componentes individuales dentro de la se pueden configurar para que se almacenen en caché, lo que significa que la petición GraphQL a la Adobe
+Se llama a Commerce AEM una vez y, después, las solicitudes posteriores, hasta el límite de tiempo configurado, se recuperan de la memoria caché de la y no se volverán a cargar en Adobe Commerce. Algunos ejemplos son la navegación del sitio basada en un árbol de categorías que se muestra en todas las páginas y las opciones dentro de una funcionalidad de búsqueda con facetas: estas son solo dos áreas que requieren consultas que consuman muchos recursos en Adobe Commerce para crearlas; sin embargo, es poco probable que cambien con regularidad y, por lo tanto, serían buenas opciones para el almacenamiento en caché. De este modo, por ejemplo, incluso cuando el editor está reconstruyendo un PDP o PLP, la solicitud de GraphQL que consume muchos recursos para la compilación de navegación no afectaría a Adobe Commerce y se podría recuperar de la caché de GraphQL AEM CIF en el momento de la publicación de la.
 
 Un ejemplo siguiente es para que el componente de navegación se almacene en caché porque envía la misma consulta de GraphQL a todas las páginas del sitio. La solicitud siguiente almacena en caché las 100 entradas pasadas durante 10 minutos para la estructura de navegación:
 
@@ -88,7 +89,8 @@ com.adobe.cq.commerce.core.search.services.SearchFilterService:true:100:3600
 
 La solicitud, incluidos todos los encabezados http y variables personalizadas, debe coincidir exactamente para que la caché sea &quot;hit&quot; y para evitar que se repita la llamada a Adobe Commerce. Debe tenerse en cuenta que una vez configurada, no hay una manera fácil de invalidar manualmente esta caché. Esto podría significar que, si se agrega una nueva categoría en Adobe Commerce, no empezaría a aparecer en la navegación hasta que la hora de caducidad establecida en la caché anterior haya caducado y se actualice la solicitud de GraphQL. Lo mismo para las facetas de búsqueda. Sin embargo, dadas las ventajas de rendimiento que se pueden conseguir con este almacenamiento en caché, este suele ser un compromiso aceptable.
 
-Las opciones de almacenamiento en caché anteriores se pueden configurar mediante la consola de configuración OSGi de la aplicación en &quot;GraphQL Client Configuration Factory&quot; (Fábrica de configuración del cliente de AEM). Cada entrada de configuración de caché se puede especificar con el siguiente formato:
+AEM Las opciones de almacenamiento en caché anteriores se pueden configurar mediante la consola de configuración OSGi de la aplicación de configuración en el cliente de GraphQL
+Configuration Factory&quot;. Cada entrada de configuración de caché se puede especificar con el siguiente formato:
 
 ```
 * NAME:ENABLE:MAXSIZE:TIMEOUT like for example mycache:true:1000:60 where each attribute is defined as:
@@ -100,7 +102,7 @@ Las opciones de almacenamiento en caché anteriores se pueden configurar mediant
 
 ## Almacenamiento en caché híbrido: solicitudes de GraphQL del lado del cliente dentro de páginas de Dispatcher en caché
 
-También es posible un enfoque híbrido para el almacenamiento en caché de páginas: es posible que una página de CIF contenga componentes que siempre soliciten la información más reciente de Adobe Commerce directamente desde el explorador del cliente. Esto puede resultar útil para áreas específicas de la página dentro de una plantilla que son importantes para mantenerse actualizadas con información en tiempo real: precios de productos dentro de una PDP, por ejemplo. Cuando los precios cambian con frecuencia debido a la coincidencia dinámica de precios, esa información se puede configurar para que no se almacene en caché en el despachante, sino que los precios se pueden recuperar del lado del cliente en el explorador del cliente desde Adobe Commerce directamente a través de las API de GraphQL AEM con los componentes web del CIF de la.
+CIF También es posible un enfoque híbrido para el almacenamiento en caché de páginas: es posible que una página contenga componentes que siempre soliciten la información más reciente de Adobe Commerce directamente desde el explorador del cliente. Esto puede resultar útil para áreas específicas de la página dentro de una plantilla que son importantes para mantenerse actualizadas con información en tiempo real: precios de productos dentro de una PDP, por ejemplo. Cuando los precios cambian con frecuencia debido a la coincidencia dinámica de precios, esa información se puede configurar para que no se almacene en caché en el despachante, sino que los precios se pueden recuperar del lado del cliente en el explorador del cliente desde Adobe Commerce directamente a través de las API de GraphQL AEM CIF con componentes web de.
 
 AEM Esto se puede configurar a través de la configuración de componentes del producto: para obtener información sobre el precio en las páginas de lista de productos, esto se puede configurar en la plantilla de lista de productos, seleccionando el componente de lista de productos en la configuración de página y marcando la opción &quot;cargar precios&quot;. El mismo enfoque funcionaría para los niveles de existencias.
 
@@ -128,7 +130,7 @@ AEM Durante un evento de sobrecarga, esto incluso puede provocar que los editore
 
 >[!NOTE]
 >
->Más información sobre la importancia de la configuración `ignoreUrlParams` está disponible en la [aem-dispatcher-experiments](https://github.com/adobe/aem-dispatcher-experiments/tree/main/experiments/ignoreUrlParams) Repositorio de GitHub.
+>Encontrará más información sobre la importancia de establecer `ignoreUrlParams` en el repositorio de GitHub [aem-dispatcher-experiments](https://github.com/adobe/aem-dispatcher-experiments/tree/main/experiments/ignoreUrlParams).
 
 Por lo tanto, debe configurarse para que ignore todos los parámetros de forma predeterminada en &quot;ignoreUrlParams&quot;, excepto cuando se utilice un parámetro de GET que cambie la estructura del HTML de una página. Un ejemplo de esto sería con una página de búsqueda donde el término de búsqueda está en la URL como parámetro de GET GET - en este caso debe configurar manualmente ignoreUrlParams para ignorar parámetros como gclid, fbclid y cualquier otro parámetro de seguimiento que estén utilizando sus canales publicitarios, dejando los parámetros necesarios para las operaciones normales del sitio sin verse afectados.
 

@@ -1,6 +1,6 @@
 ---
-title: El [!UICONTROL Indexing] pestaña
-description: Obtenga información acerca de [!UICONTROL Indexing] pestaña de [!DNL Observation for Adobe Commerce].
+title: La ficha [!UICONTROL Indexing]
+description: Obtenga información acerca de la ficha [!UICONTROL Indexing] de  [!DNL Observation for Adobe Commerce].
 exl-id: c7e123b7-2d0c-49d4-9f76-128939dc02a8
 feature: Configuration, Observability
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
@@ -10,15 +10,15 @@ ht-degree: 0%
 
 ---
 
-# El [!UICONTROL Indexing] pestaña
+# La ficha [!UICONTROL Indexing]
 
-El **[!UICONTROL Indexing]** La pestaña intenta explicar los problemas con la indexación e identificar las causas potenciales.
+La pestaña **[!UICONTROL Indexing]** intenta explicar los problemas con la indexación e identificar las posibles causas.
 
 ## [!UICONTROL Core index invalidated]
 
 ![Índice principal invalidado](../../assets/tools/observation-for-adobe-commerce/indexing-tab-1.jpg)
 
-El **[!UICONTROL Core index invalidated]** frame busca la invalidación de la indexación en un periodo de tiempo seleccionado. Si la indexación se produce al mismo tiempo que otros recursos intensivos [!DNL crons], supondrá una carga pesada en los recursos del sitio.
+El fotograma **[!UICONTROL Core index invalidated]** busca la invalidación de la indexación en un periodo de tiempo seleccionado. Si la indización se realiza al mismo tiempo que otros [!DNL crons] que requieren muchos recursos, supondrá una carga pesada en los recursos del sitio.
 
 * `%Catalog Product Rule indexer has been invalidated%`) como `catalog_product_rule_idx_reset`
 * `%Catalog Rule Product indexer has been invalidated%`) como `catalog_rule_product_idx_reset`
@@ -36,9 +36,9 @@ El **[!UICONTROL Core index invalidated]** frame busca la invalidación de la in
 
 ## [!UICONTROL Core index rebuilds]
 
-![Reconstruciones de índices principales](../../assets/tools/observation-for-adobe-commerce/indexing-tab-2.jpg)
+![Recompilaciones del índice principal](../../assets/tools/observation-for-adobe-commerce/indexing-tab-2.jpg)
 
-El **[!UICONTROL Core index rebuilds]** frame busca las reconstrucciones de índices principales en un periodo de tiempo seleccionado. Estas son las cadenas que se analizan desde los registros para indicar la finalización de la regeneración del índice.
+El fotograma **[!UICONTROL Core index rebuilds]** observa las recompilaciones de índice principal en un periodo de tiempo seleccionado. Estas son las cadenas que se analizan desde los registros para indicar la finalización de la regeneración del índice.
 
 * `%Catalog Product Rule index has been rebuilt%`) como `catalog_product_rule_idx`
 * `%Catalog Rule Product index has been rebuilt%`) como `catalog_rule_product_idx`
@@ -59,10 +59,10 @@ El **[!UICONTROL Core index rebuilds]** frame busca las reconstrucciones de índ
 
 ![tabla(s) de índice de catalogsearch](../../assets/tools/observation-for-adobe-commerce/indexing-tab-3.jpg)
 
-El **[!UICONTROL catalogsearch index table(s)]** frame busca las tablas de índice de catalogsearch en un periodo de tiempo seleccionado. Esta consulta busca la duración de cualquier operación del almacén de datos con tablas con `%catalogsearch%` en el nombre de la tabla.
+El fotograma **[!UICONTROL catalogsearch index table(s)]** busca las tablas de índice de catalogsearch en un periodo de tiempo seleccionado. Esta consulta está buscando la duración de cualquier operación de almacén de datos contra tablas con `%catalogsearch%` en el nombre de tabla.
 
 ## [!UICONTROL product index table(s)]
 
-![tabla(s) de índice de productos](../../assets/tools/observation-for-adobe-commerce/indexing-tab-4.jpg)
+![tabla(s) de índice de producto](../../assets/tools/observation-for-adobe-commerce/indexing-tab-4.jpg)
 
-El **[!UICONTROL product index table(s)]** frame busca las tablas de índice de productos en un periodo de tiempo seleccionado. Esta consulta busca la duración de cualquier operación del almacén de datos con tablas con `%product%` en el nombre de la tabla.
+El marco **[!UICONTROL product index table(s)]** consulta las tablas de índice de productos en un intervalo de tiempo seleccionado. Esta consulta está buscando la duración de cualquier operación de almacén de datos contra tablas con `%product%` en el nombre de tabla.

@@ -5,7 +5,7 @@ exl-id: eab50191-0744-41da-99ba-2e06ea61da27
 feature: Best Practices, Payments
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
-source-wordcount: '554'
+source-wordcount: '541'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Hubo un tiempo en que el efectivo era la principal fuente de transacciones, pero el mundo en línea se ha hecho cargo y los métodos de pago en línea están reemplazando a los antiguos métodos de pago. Todo está ahora en línea, lo que hace que las cosas sean más fáciles y accesibles, incluyendo tarjetas de crédito, billeteras electrónicas y transferencias bancarias.
 
-![Logotipos de proveedor de pasarela de pago](../../assets/playbooks/payment-gateways.png)
+![Logotipos de proveedor de puerta de enlace de pago](../../assets/playbooks/payment-gateways.png)
 
 Una pasarela de pago es un proveedor de servicios que conecta y procesa pagos para sitios web de comercio electrónico. Desempeñan un papel vital en la experiencia de compra de los clientes y en las tasas de conversión. Los sistemas de pago complicados tienden a hacer que los clientes abandonen sus carros de compras. Es importante proporcionar a los clientes un sistema de pago fácil de usar, donde incluso si un método de pago falla, tienen un método alternativo para motivarlos a completar la compra.
 
@@ -43,7 +43,8 @@ Cuando una empresa decide integrar una pasarela de pago con su plataforma siempr
 
 Las empresas B2B y B2C tienen sistemas de pago similares, pero las empresas B2B tienen más reglas, regulaciones y procesos. Las empresas B2B tienden a operar en mayores volúmenes en comparación con las empresas B2C.
 
-Los clientes de B2C compran productos o servicios para uso individual. Los clientes suelen pagar el mismo precio que otros clientes y no hay negociación implicada. Los clientes B2B incluyen varias partes interesadas, lo que hace que la aprobación sea más compleja y costosa.
+Los clientes de B2C compran productos o servicios para uso individual. Los clientes suelen pagar el mismo precio que otros clientes y no hay negociación implicada. Los clientes B2B incluyen varias
+partes interesadas, lo que hace que la aprobación sea más compleja y costosa.
 
 Los clientes B2B tienen diferentes pedidos y requisitos que deben ser procesados y aprobados por el representante de ventas o un representante de ventas debe participar cuando un cliente compra en línea utilizando una solicitud de propuesta (RFP) o una orden de compra (PO).
 

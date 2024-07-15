@@ -20,6 +20,6 @@ Para habilitar o deshabilitar un módulo, consulte [Habilitar o deshabilitar mó
 
 ## Desinstalación de un módulo
 
-Para desinstalar un módulo, consulte [Desinstalación de módulos](../../installation/tutorials/uninstall-modules.md).
+Para desinstalar un módulo, consulte [Desinstalar módulos](../../installation/tutorials/uninstall-modules.md).
 
-Para desinstalar una temática, utilice el [`theme:uninstall`](../../installation/tutorials/themes.md) comando.
+Para desinstalar una temática, use el comando [`theme:uninstall`](../../installation/tutorials/themes.md).

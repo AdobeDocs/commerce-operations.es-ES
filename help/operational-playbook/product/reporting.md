@@ -4,7 +4,7 @@ description: Monitorice los KPI, realice un seguimiento de las ventas y mida el 
 exl-id: 7b57c11b-ff32-440f-85bd-6b6d09c522b7
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '497'
+source-wordcount: '490'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 El comercio electrónico es un buen caso de uso en lo que respecta a los informes y los paneles. En el comercio electrónico, todo está en línea, lo que permite a los minoristas aprovechar el poder de diferentes herramientas para recopilar datos y analizarlos para mejorar sus procesos de negocio, equipos, ofertas de productos y mucho más.
 
-![Ejemplo del tablero de informes](../../assets/playbooks/dashboard-example.png)
+![Ejemplo de tablero de informes](../../assets/playbooks/dashboard-example.png)
 
 Cada empresa tiene unos requisitos de informes diferentes. Por ejemplo, si desea rastrear una promoción específica, puede crear un panel específico para ver el progreso de la promoción, como cuántas personas utilizaron la promoción, qué productos se vendieron mejor, etc. También puede utilizar un tablero para rastrear las actividades diarias en el sitio, el tráfico, la tasa de conversión, el producto más vendido, el producto más vendido y las devoluciones.
 
@@ -37,13 +37,13 @@ Hay tanto en un negocio de comercio electrónico que puede ser difícil seguir l
 
 Los cuatro informes y paneles principales que utilizan las empresas B2B son:
 
-- **Perfil de empresa**: las empresas B2B necesitan rastrear los perfiles de sus clientes para comprender su historial de compras, detalles de pago y qué canal utilizaron para comprar. Este tablero puede ayudar a identificar posibles riesgos y problemas.
+- **Perfil de compañía**: las empresas B2B necesitan rastrear los perfiles de sus clientes para comprender su historial de compras, detalles de pago y qué canal utilizaron para comprar. Este tablero puede ayudar a identificar posibles riesgos y problemas.
 
-- **Catálogo**: un informe de catálogo y un tablero ayudan a las empresas B2B a ver el rendimiento de cada producto en los niveles de catálogo, promociones e inventario, lo que ayuda a identificar qué tipo de promoción funciona mejor y qué productos están en demanda. Esto ayuda a las empresas a abastecerse de inventario y a obtener una ventaja competitiva.
+- **Catálogo**: un informe de catálogo y un tablero ayudan a las empresas B2B a ver el rendimiento de cada producto en los niveles de catálogo, promociones e inventario, lo que ayuda a identificar qué tipo de promoción funciona mejor y qué productos hay en demanda. Esto ayuda a las empresas a abastecerse de inventario y a obtener una ventaja competitiva.
 
-- **Comillas**: el modelo de negocio B2B funciona con cotizaciones y precios. Las empresas B2B deben pasar por un proceso en el que analizan una cotización para que puedan aprobarla o intentar negociar. Un informe y un tablero de oferta ayudan a mejorar la tasa de conversión de la oferta mediante el seguimiento de la tasa de éxito, las tasas de competencia, el rendimiento y la retención general del cliente.
+- **Ofertas**: el modelo de negocio B2B funciona con las ofertas y los precios. Las empresas B2B deben pasar por un proceso en el que analizan una cotización para que puedan aprobarla o intentar negociar. Un informe y un tablero de oferta ayudan a mejorar la tasa de conversión de la oferta mediante el seguimiento de la tasa de éxito, las tasas de competencia, el rendimiento y la retención general del cliente.
 
-- **Ventas**—Aunque las empresas B2B pueden trabajar en línea, un representante de ventas sigue siendo necesario para que las cosas se muevan en términos de identificación de ofertas que necesitan negociación, seguimiento de ofertas que están a punto de caducar, seguimiento de contratos que están listos para la renovación, seguimiento del rendimiento del equipo, y ayudar a optimizar las actividades comerciales diarias.
+- **Ventas**: aunque las empresas B2B pueden trabajar en línea, un representante de ventas sigue siendo necesario para que las cosas se muevan en términos de identificación de ofertas que necesitan negociación, seguimiento de ofertas que están a punto de caducar, seguimiento de contratos que están listos para renovación, seguimiento del rendimiento del equipo y ayudar a optimizar las actividades comerciales diarias.
 
 ## Mejor juntos
 

@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Estructura del proyecto del Compositor
 
-Esta guía describe cómo configurar y mantener el [opción separar paquetes](../examples.md#option-1-separate-packages) descrito en los ejemplos de la arquitectura de referencia global (GRA).
+Esta guía describe cómo configurar y mantener la opción [paquetes separados](../examples.md#option-1-separate-packages) descrita en los ejemplos de arquitectura de referencia global (GRA).
 
 ## Requisitos previos
 
@@ -23,7 +23,7 @@ Antes de empezar, compruebe lo siguiente:
 
 - Tiene un repositorio de Git
 - Tiene un repositorio de Compositor (en este tema se resalta Private Packagist)
-- Ha configurado su repositorio de Composer para que refleje el `repo.magento.com` y `packagist.org` repositorios
+- Ha configurado su repositorio Composer para reflejar los repositorios `repo.magento.com` y `packagist.org`
 
 ## Repositorio de proyectos de Git principal
 
@@ -37,7 +37,7 @@ El repositorio del proyecto Git principal solo debe contener un proyecto Compose
 └─ composer.lock
 ```
 
-Añada el siguiente contenido a `.gitignore` archivo:
+Agregue el siguiente contenido al archivo `.gitignore`:
 
 ```tree
 /*
@@ -71,11 +71,11 @@ Añada el siguiente contenido a `.gitignore` archivo:
 
 ## Guardar archivos que no son de módulo
 
-1. Añada el `app/etc/config.xml` al repositorio de Git.
+1. Agregue el archivo `app/etc/config.xml` al repositorio Git.
 
-   Puede utilizar el módulo que va a crear para instalar otros archivos de región o específicos de la marca, como `.htaccess`, archivos de texto de autenticación de Google o Bing, ejecutables u otros archivos estáticos que no son administrados por módulos de Adobe Commerce.
+   Puede utilizar el módulo que va a crear para instalar otros archivos de región o específicos de marca, como `.htaccess`, archivos de texto de autenticación de Google o Bing, ejecutables u otros archivos estáticos que no administren los módulos de Adobe Commerce.
 
-   Uso `magento2-component` escriba paquetes para crear una asignación de archivos para copiar archivos en el repositorio principal de Git durante `composer install` y `composer update` operaciones.
+   Use `magento2-component` paquetes de tipo para crear una asignación de archivos y copiar los archivos en el repositorio principal de Git durante `composer install` y `composer update` operaciones.
 
 1. Cree un repositorio Git que siga la convención de nomenclatura `component-environment-<region/country/brand>`:
 
@@ -94,7 +94,7 @@ Añada el siguiente contenido a `.gitignore` archivo:
    composer config -e
    ```
 
-1. Añada el `app/etc/config.php` archivo como asignación en la `extra.map` atributo de su `composer.json` archivo:
+1. Agregue el archivo `app/etc/config.php` como una asignación en el atributo `extra.map` de su archivo `composer.json`:
 
    ```json
    {
@@ -115,7 +115,7 @@ Añada el siguiente contenido a `.gitignore` archivo:
    }
    ```
 
-1. Valide su `composer.json` y configúrelo en el repositorio Git:
+1. Valide el archivo `composer.json` y configúrelo en el repositorio Git:
 
    ```bash
    composer validate
@@ -203,7 +203,7 @@ Añada el siguiente contenido a `.gitignore` archivo:
    git push --tags
    ```
 
-1. Compruebe que Composer ha copiado el `app/etc/config.php` archivo de `<client>/component-environment-<region/country/brand>`.
+1. Compruebe que Composer copió el archivo `app/etc/config.php` de `<client>/component-environment-<region/country/brand>`.
 
 ## Implementación de código
 
@@ -211,24 +211,24 @@ En el servidor web, puede implementar código mediante Composer, pero no puede a
 
 ## Añadir otras instancias y paquetes
 
-Cada instancia (región, marca o instalación única de Adobe Commerce) debe tener su propia **proyecto principal** ejemplo, **metapaquete específico**, y **paquete de componentes de entorno**. El **Metapaquete GRA** debería ser **compartido** en todas las instancias.
+Cada instancia (región, marca o instalación única de Adobe Commerce) debe obtener su propia instancia de **proyecto principal**, **metapaquete específico** y **paquete de componentes de entorno**. El **metapaquete GRA** debe **compartirse** en todas las instancias.
 
 Los paquetes funcionales (como módulos, temáticas, paquetes de idiomas y bibliotecas de Adobe Commerce) y los paquetes de terceros deben ser requeridos por:
 
-- **Metapaquete GRA**: para la instalación en _todo_ instances
-- **metapaquete específico de instancia**: para su instalación en una sola marca o región
+- **Metapackage de GRA**: para la instalación en _todas_ las instancias
+- **metapackage específico de instancia**: para su instalación en una sola marca o región
 
 >[!IMPORTANT]
 >
->No requiere paquetes en el del proyecto principal `composer.json` archivo en el `main` o `release` ramas.
+>No requiere paquetes en el archivo `composer.json` del proyecto principal en las ramas `main` o `release`.
 
 ## Preparación para el desarrollo
 
-Para desarrollo, instale `develop` versiones de todos los módulos que mantiene.
+Para desarrollo, instale `develop` versiones de todos los módulos que mantenga.
 
-Según su estrategia de ramificación, es posible que tenga `develop`, `qa`, `uat`, y `main` ramas. Cada rama existe en Composer con una `dev-` prefijo. Por lo tanto, `develop` La rama se puede requerir a través del Compositor como versión `dev-develop`.
+Según su estrategia de ramificación, podría tener `develop`, `qa`, `uat` y `main` ramas. Cada rama existe en el Compositor con un prefijo `dev-`. Por lo tanto, la rama `develop` se puede requerir a través del Compositor como la versión `dev-develop`.
 
-1. Crear `develop` ramas en todos los módulos y repositorios de proyectos.
+1. Cree `develop` ramas en todos los módulos y repositorios de proyectos.
 
    ```bash
    cd ../component-environment-<region/country/brand>
@@ -262,7 +262,7 @@ Según su estrategia de ramificación, es posible que tenga `develop`, `qa`, `ua
    "magento-services/component-environment-fantasy-corp:dev-develop as 0.999"
    ```
 
-   El paso anterior genera las siguientes líneas en su `composer.json` archivo:
+   El paso anterior genera las líneas siguientes en el archivo `composer.json`:
 
    ```json
    "require": {
@@ -274,4 +274,4 @@ Según su estrategia de ramificación, es posible que tenga `develop`, `qa`, `ua
 
    >[!IMPORTANT]
    >
-   >**No combinar** estos `composer.json` cambios de archivo en la rama de producción. Instalar solo versiones estables de paquetes en `release` y `main` ramas. Puede definir estas dependencias para `qa` ramas y otras ramas no principales.
+   >**No combine** estos `composer.json` cambios de archivo en la rama de producción. Instalar solo versiones estables de paquetes en las ramas `release` y `main`. Puede definir estas dependencias para `qa` ramas y otras ramas que no sean principales.

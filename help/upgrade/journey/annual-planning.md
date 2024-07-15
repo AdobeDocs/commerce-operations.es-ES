@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Muchas empresas trabajan con presupuestos anuales y hojas de ruta. Durante estas discusiones anuales, es imperativo que hable sobre el estado, la dirección y la estrategia de actualización de la plataforma durante el año, junto con cómo se adapta a los objetivos generales y a los indicadores clave de rendimiento (KPI) de la empresa.
 
-Siguiendo las [programación de versiones](https://devdocs.magento.com/release/), asigne ventanas de presupuesto y de lanzamiento para actualizaciones, evitando festivos, cierres de empresas y horas de mayor actividad. Al comprender el calendario de versiones de Adobe y mantenerse informado de los cambios y las mejoras que forman parte de cada versión a través de [notas de la versión](https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html), puedes planificar mejor tu año.
+Siguiendo la [programación de versiones](https://devdocs.magento.com/release/), asigne las ventanas de presupuesto y lanzamiento para las actualizaciones, evitando festivos, cierres de empresas y horas punta. Si comprende la programación de versiones de Adobe y se mantiene informado de los cambios y las mejoras que forman parte de cada versión a través de las [notas de la versión](https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html), podrá planificar mejor su año.
 
 Durante la planificación, es posible que desee preguntarse:
 

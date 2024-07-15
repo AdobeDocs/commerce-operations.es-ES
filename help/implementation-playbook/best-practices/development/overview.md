@@ -26,7 +26,7 @@ La fase de desarrollo incluye las siguientes actividades:
 
 >[!TIP]
 >
->Consulte [prácticas recomendadas generales](general.md) para obtener recomendaciones de alto nivel sobre la gestión general del proceso de desarrollo.
+>Consulte [prácticas recomendadas generales](general.md) para obtener recomendaciones de alto nivel sobre la administración general del proceso de desarrollo.
 
 Las secciones siguientes incluyen información sobre las prácticas recomendadas para la fase de desarrollo.
 
@@ -35,8 +35,8 @@ Las secciones siguientes incluyen información sobre las prácticas recomendadas
 | Práctica recomendada | Descripción |
 |-----------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|
 | [Revisión de código](code-review.md) | Proceso de validación recomendado para garantizar que la funcionalidad implementada cumpla los requisitos |
-| [Compositor frente a Git](code-management.md) | Determine cómo distribuir código personalizado teniendo en cuenta la administración de versiones, la complejidad del código y la administración de dependencias |
-| [Estrategia de ramas](git-branching.md) | Administrar código fuente en repositorios Git |
+| [Compositor vs. Git](code-management.md) | Determine cómo distribuir código personalizado teniendo en cuenta la administración de versiones, la complejidad del código y la administración de dependencias |
+| [Estrategia de ramificación](git-branching.md) | Administrar código fuente en repositorios Git |
 
 ## Plataforma y servicios
 
@@ -58,14 +58,14 @@ Las secciones siguientes incluyen información sobre las prácticas recomendadas
 | Práctica recomendada | Descripción |
 |-----------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | [Cambio de tamaño de imagen de catálogo](catalog-image-resizing.md) | Proporciona instrucciones sobre el cambio de tamaño de las imágenes antes de que una tienda entre en producción para garantizar un rendimiento óptimo |
-| [CSS y JS](optimize-css-js-files.md) | Combine y minifique archivos de hoja de estilos en cascada (CSS) y JavaScript (JS) desde el administrador o la línea de comandos |
+| [CSS y JS](optimize-css-js-files.md) | Combine y minifique archivos de hojas de estilos en cascada (CSS) y JavaScript (JS) desde Admin o la línea de comandos |
 | [Imágenes](image-optimization.md) | Optimizar imágenes y utilizar Fastly para optimizar el tiempo de respuesta |
 
 ## Desarrollo de front-end
 
 | Práctica recomendada | Descripción |
 |----------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
-| [Desarrollo del tema](https://developer.adobe.com/commerce/frontend-core/guide/best-practices/){target="_blank"} | Describe los patrones de desarrollo para garantizar la compatibilidad entre el tema, las versiones futuras de Adobe Commerce y las extensiones personalizadas |
+| [Desarrollo de tema](https://developer.adobe.com/commerce/frontend-core/guide/best-practices/){target="_blank"} | Describe los patrones de desarrollo para garantizar la compatibilidad entre el tema, las versiones futuras de Adobe Commerce y las extensiones personalizadas |
 
 ## Desarrollo de PHP
 

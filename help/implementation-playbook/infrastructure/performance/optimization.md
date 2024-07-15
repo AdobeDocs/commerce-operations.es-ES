@@ -44,7 +44,7 @@ Los recursos de carga lenta suelen considerarse como un indicador que define el 
 
 Adobe Commerce se puede ampliar con su empresa a través de sus funciones:
 
-![Diagrama que muestra las funciones escalables de Adobe Commerce](../../../assets/playbooks/scalable-capabilities.svg)
+![Diagrama que muestra las capacidades escalables de Adobe Commerce](../../../assets/playbooks/scalable-capabilities.svg)
 
 También hay factores clave que impulsan la escala en el comercio, que también afectan el rendimiento general.
 
@@ -57,4 +57,4 @@ También hay factores clave que impulsan la escala en el comercio, que también 
 
 Para las arquitecturas por capas y almacenables en caché creadas para escalar, puede utilizar este gráfico como referencia.
 
-![Diagrama que muestra cómo utilizar la API de GraphQL de Adobe Commerce en una arquitectura almacenable en caché](../../../assets/playbooks/cacheable-architecture.svg)
+![Diagrama que muestra cómo usar la API de GraphQL de Adobe Commerce en una arquitectura almacenable en caché](../../../assets/playbooks/cacheable-architecture.svg)

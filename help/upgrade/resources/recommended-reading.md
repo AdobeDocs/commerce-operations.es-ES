@@ -30,7 +30,7 @@ Siga aprendiendo sobre las actualizaciones de Adobe Commerce con los recursos de
       <td><strong>Herramientas</strong>
         <p>Examine las herramientas diseñadas para facilitar la búsqueda y el uso del software de Adobe Commerce.</p>
           <ul>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-learn/tutorials/uct-phpstorm.html">Actualizar complemento de compatibilidad de la herramienta PhpStorm</a> (vídeo)</li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-learn/tutorials/uct-phpstorm.html">Actualizar el complemento PhpStorm de la herramienta de compatibilidad</a> (vídeo)</li>
             <li><a href="../upgrade-compatibility-tool/overview.md">Actualizar herramienta de compatibilidad</a></li>
             <li><a href="https://magentocommeng.slack.com/archives/C019Y143U9F">#UpgradeCompatibilityTool canal de Slack</a></li>
             <li><a href="../../tools/quality-patches-tool/usage.md">Herramienta Parches de calidad</a></li>
@@ -38,7 +38,7 @@ Siga aprendiendo sobre las actualizaciones de Adobe Commerce con los recursos de
       </td>
     </tr>
     <tr>
-      <td><strong>Calendarios y directiva</strong>
+      <td><strong>Calendarios y directivas</strong>
         <p>Revise los detalles sobre las versiones y directivas de Adobe Commerce.</p>
           <ul>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/adobe-commerce-eos-policy-faq.html">Preguntas frecuentes sobre el fin de la asistencia del software Adobe Commerce</a></li>
@@ -66,7 +66,7 @@ Siga aprendiendo sobre las actualizaciones de Adobe Commerce con los recursos de
             <li><a href="recommended-upgrade-paths.md">Rutas de actualización recomendadas</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-learn/tutorials/upgrade-workshop.html?lang=en">2.4 Grabación del taller de actualización técnica</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cannot-access-the-latest-magento-commerce-pre-release.html">Acceso a las versiones anteriores</a></li>
-            <li><a href="../../release/beta.md">Información general sobre versiones beta</a></li>
+            <li><a href="../../release/beta.md">Información general sobre versiones de Beta</a></li>
             <li><a href="https://developer.adobe.com/commerce/contributor/guides/code-contributions/backward-compatibility-policy/">Desarrollo incompatible con versiones anteriores</a></li>
             <li><a href="https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/highlights/">Cambios incompatibles con versiones anteriores</a></li>
             <li><a href="../../implementation-playbook/best-practices/maintenance/upgrade-checklist.md">Lista de comprobación del plan de actualización</a></li>

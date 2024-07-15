@@ -3,13 +3,13 @@ title: Prácticas recomendadas de administración de código
 description: Conozca las prácticas recomendadas de administración de código para la fase de desarrollo de proyectos de Adobe Commerce.
 feature: Best Practices
 role: Developer
-source-git-commit: 0902997fb0bf862b37a5e29026f462bf8c86c96b
+exl-id: 0bff4c7a-1082-4b3e-b19c-bc8ad529b131
+source-git-commit: 823498f041a6d12cfdedd6757499d62ac2aced3d
 workflow-type: tm+mt
-source-wordcount: '668'
+source-wordcount: '670'
 ht-degree: 0%
 
 ---
-
 
 # Prácticas recomendadas de administración de código para Adobe Commerce
 
@@ -26,7 +26,7 @@ Este tema se ha diseñado para ayudarle a decidir si desea utilizar Git o Compos
 - Adobe Commerce en la infraestructura en la nube
 - Adobe Commerce local
 
-Abarca ambas [arquitectura de referencia global (GRA)](../../architecture/global-reference/overview.md) y las instalaciones de instancia única.
+Abarca tanto la [arquitectura de referencia global (GRA)](../../architecture/global-reference/overview.md) como las instalaciones de instancia única.
 
 ## Definiciones
 
@@ -80,10 +80,10 @@ Abarca ambas [arquitectura de referencia global (GRA)](../../architecture/global
 
 | Función | Git | Compositor |
 |------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| Repositorio de código principal | Todo el código reside en un único repositorio Git o en unos pocos | Todo el código reside en los paquetes de un repositorio de Composer<br>Cada paquete Composer individual está representado por un repositorio Git |
-| Ubicación del código | El desarrollo se produce en `app/` directorio | El desarrollo se produce en `vendor/` directorio |
+| Repositorio de código principal | Todo el código reside en un único repositorio Git o en unos pocos | Todo el código reside en los paquetes de un repositorio Composer<br>Cada paquete Composer individual está representado por un repositorio Git |
+| Ubicación del código | El desarrollo se produce en el directorio `app/` | El desarrollo se produce en el directorio `vendor/` |
 | Administración de actualización principal | Adobe Commerce Core se instala y actualiza con Composer y el resultado se confirma en Git | Adobe Commerce Core se instala y actualiza con Composer; el resultado se confirma en Git |
-| Administración de módulos de terceros | Los módulos de terceros están instalados en `vendor/` si se instalan a través del marketplace o packagist.org. De lo contrario, se instalan en `app/` | Todos los módulos de terceros están instalados en `vendor/` directorio |
+| Administración de módulos de terceros | Los módulos de terceros se instalan en `vendor/` si se instalan a través del mercado o packagist.org. De lo contrario, se instalarán en `app/` | Todos los módulos de terceros están instalados en el directorio `vendor/` |
 | Versiones | La liberación se caracteriza por `git merge` y `git pull` o `git checkout` comandos | La liberación se caracteriza por `composer update` y `git pull` o `git checkout` comandos |
 | Número de repositorios Git | Pocas | Muchos |
 | Complejidad de desarrollo | Sencilla | Complejo |
@@ -93,7 +93,7 @@ Abarca ambas [arquitectura de referencia global (GRA)](../../architecture/global
 | Compatibilidad con GRA | ![Icono Sí](../../../assets/yes.svg) | ![Icono Sí](../../../assets/yes.svg) |
 | Los módulos pueden instalar automáticamente bibliotecas externas | ![Sin icono](../../../assets/no.svg) | ![Icono Sí](../../../assets/yes.svg) |
 | Flexibilidad en la composición GRA | ![Sin icono](../../../assets/no.svg) | ![Icono Sí](../../../assets/yes.svg) |
-| Administración de dependencias del módulo | ![Icono Sí](../../../assets/yes.svg) Solo mediante `module.xml`, funcionalidad limitada | ![Icono Sí](../../../assets/yes.svg) Administración completa de dependencias mediante `composer.json` |
+| Administración de dependencias del módulo | ![Icono Sí](../../../assets/yes.svg) Solo a través de `module.xml`, funcionalidad limitada | ![Icono Sí](../../../assets/yes.svg) Administración de dependencias completa a través de `composer.json` |
 | Versiones de módulo | ![Icono Sí](../../../assets/yes.svg) Puede definir una versión, pero no puede instalar una versión específica | ![Icono Sí](../../../assets/yes.svg) Compatibilidad con la versión completa |
 | Se necesitan servicios de pago | Repositorio de Git | Repositorio Git, Packagist privado (± 600 € al año) |
 | Posibilidad de integración de Bitbucket con Jira | ![Icono Sí](../../../assets/yes.svg) | ![Icono Sí](../../../assets/yes.svg) |
@@ -107,13 +107,13 @@ Abarca ambas [arquitectura de referencia global (GRA)](../../architecture/global
 
    Por ejemplo:
    - Explique los flujos de trabajo de Git y Composer (en lugar de solo uno de ellos) al equipo de desarrollo.
-   - Instalación de módulos incompatibles en `app/code` ya que no hay nada en el lugar para evitar que eso ocurra.
-   - Mover un módulo desde `app/code` Compositor (o a la inversa) es engorroso, especialmente con el desarrollo en curso.
+   - Instale módulos incompatibles en `app/code`, ya que no hay nada que impida que esto ocurra.
+   - Mover un módulo de `app/code` a Compositor (o a la inversa) es engorroso, especialmente con el desarrollo en curso.
 
 1. **Administrador de paquetes Satis**
 
    Packagist privado cuesta ± € 600 por año. Este coste es para todo el GRA combinado, no por marca. No trate de evitar estos costos utilizando la solución gratuita Satis. Satis no actualiza automáticamente sus paquetes cada vez que inserta confirmaciones en Git. Además, Satis no tiene una autorización integrada. Debe mantener un servidor web para ejecutar Satis. Usted acaba gastando una multitud de la cuota de suscripción de Packagist privado manteniendo Satis.
 
-1. **Empiece con Git y, a continuación, cambie a Compositor**
+1. **Empiece con Git y, a continuación, pase a Composer**
 
    Elija un método de administración de código al principio del proyecto. Cambiar de Git a Compositor o, a la inversa, con un desarrollo en curso es engorroso y podría provocar la pérdida del código o la pérdida del historial de revisiones.

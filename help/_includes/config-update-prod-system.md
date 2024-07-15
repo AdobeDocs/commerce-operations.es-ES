@@ -20,9 +20,9 @@ ht-degree: 0%
    bin/magento maintenance:enable
    ```
 
-   Para ver opciones adicionales, como la posibilidad de establecer una lista blanca de direcciones IP, consulte [`magento maintenance:enable`](../installation/tutorials/maintenance-mode.md).
+   Para obtener opciones adicionales, como la posibilidad de establecer una lista blanca de direcciones IP, vea [`magento maintenance:enable`](../installation/tutorials/maintenance-mode.md).
 
-1. Detenga los trabajadores de cola en ejecución mediante la configuración `cron_run` hasta `false` in `app/etc/env.php` como sigue:
+1. Detenga los trabajadores de cola en ejecución estableciendo `cron_run` en `false` en `app/etc/env.php` de la siguiente manera:
 
    ```php?start_inline=1
    'cron_consumers_runner' => [

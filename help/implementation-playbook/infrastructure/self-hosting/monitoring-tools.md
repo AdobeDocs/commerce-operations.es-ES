@@ -7,11 +7,11 @@ kt: 11420
 doc-type: tutorial
 audience: all
 last-substantial-update: 2023-04-13T00:00:00Z
-exl-id: 728e9439-63d0-4481-b014-7ba2ce97b9d0
+exl-id: 5aa03f91-1240-47f6-8d06-b06e64973266
 feature: Install, Logs, Observability
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: 823498f041a6d12cfdedd6757499d62ac2aced3d
 workflow-type: tm+mt
-source-wordcount: '1716'
+source-wordcount: '1710'
 ht-degree: 0%
 
 ---
@@ -49,11 +49,11 @@ Los paneles proporcionan un acceso rápido a los aspectos frecuentes o important
 
 Los archivos de registro se encuentran en servidores de aplicaciones que procesan solicitudes o registros MySQL cuando las cosas tardan demasiado en ejecutarse. Lo difícil de los registros es que están separados entre sí y encontrarlos todos, analizar la información de cada registro puede ser engorroso. Hace muchos años, este problema se resolvió mediante una técnica llamada _agregación de registros_. Esto toma archivos de registro de todas las ubicaciones de registro y los lleva a una ubicación centralizada. Una vez que se mueven los datos, un programa puede leerlos y proporcionar formas de buscar, filtrar y revisar la información. Esto puede ser un proceso difícil para hacer las cosas bien. Hay muchas opciones, pero si tiene suerte, las herramientas de monitorización pueden leer y agregar sus archivos de registro, como New Relic. Al encontrar una buena herramienta, puede ahorrarse una cantidad de tiempo inmensurable en el futuro. A menos que tenga un solo servidor que haga todo lo posible para que el sitio funcione y funcione, es esencial disponer de agregación de registros. Esto es especialmente útil cuando intenta averiguar si está bajo un ataque DDoS o experimentando un pico de tráfico legítimo, o cuando investiga por qué una determinada solicitud está fallando.
 
-Otra pieza clave para los registros es garantizar que la rotación se produzca. Históricamente, esto se refiere a `run-away logs` que accidentalmente puede llenar el disco duro y hacer que el sitio se desplome. Se puede producir una versión de rotación del registro cuando un archivo de registro alcanza un tamaño determinado, como 1 GB. Hay herramientas de nivel de servidor como `logrotate` que pueden eliminarse automáticamente. Por ejemplo, puede eliminar archivos de registro excesivamente grandes una vez que superen los 1 GB o archivos de registro anteriores a 90 días. Define una directiva de registro, por lo que es importante comprender sus limitaciones de recursos.
+Otra pieza clave para los registros es garantizar que la rotación se produzca. Históricamente, esto pertenece a `run-away logs`, que puede rellenar accidentalmente el disco duro y provocar que el sitio se cierre. Se puede producir una versión de rotación del registro cuando un archivo de registro alcanza un tamaño determinado, como 1 GB. Hay herramientas de nivel de servidor como `logrotate` que pueden eliminarlas automáticamente. Por ejemplo, puede eliminar archivos de registro excesivamente grandes una vez que superen los 1 GB o archivos de registro anteriores a 90 días. Define una directiva de registro, por lo que es importante comprender sus limitaciones de recursos.
 
 ## Análisis de malware
 
-Muchas empresas de alojamiento web dedicadas a Adobe Commerce tendrían una biblioteca de vulnerabilidades y malware conocidos. Deben ofrecer un análisis automáticamente o bajo petición. Cuando estos son efectivos, son reaccionarios y solo funcionan cuando se detecta nuevo malware. Puede ser una buena idea tener una herramienta proactiva que pueda buscar en el código y la base de datos malware conocido. Hay algunas opciones disponibles, como [InformeDeImagen](https://www.magereport.com){target="_blank"}, [Sansec](https://sansec.io){target="_blank"}, or [Magento Malware Scanner](https://github.com/gwillem/magento-malware-scanner){target="_blank"}. Pueden realizar un análisis remoto desde el exterior o instalarse y actualizar/analizar/monitorizar de forma proactiva después de configurarse en los servidores. Estas pueden ser una gran opción, ya que su biblioteca se actualiza constantemente, ya que se instalan y monitorizan miles de sitios si elige una solución proporcionada, como Sansec. A medida que se detecta un nuevo malware, cada proyecto que monitorizan se beneficia de la información y ahora son alertados si se detecta.
+Muchas empresas de alojamiento web dedicadas a Adobe Commerce tendrían una biblioteca de vulnerabilidades y malware conocidos. Deben ofrecer un análisis automáticamente o bajo petición. Cuando estos son efectivos, son reaccionarios y solo funcionan cuando se detecta nuevo malware. Puede ser una buena idea tener una herramienta proactiva que pueda buscar en el código y la base de datos malware conocido. Hay algunas opciones disponibles, como [MageReport](https://www.magereport.com){target="_blank"}, [Sansec](https://sansec.io){target="_blank"} o [analizador de malware para Magento](https://github.com/gwillem/magento-malware-scanner){target="_blank"}. Pueden realizar un análisis remoto desde el exterior o instalarse y actualizar/analizar/monitorizar de forma proactiva después de configurarse en los servidores. Estas pueden ser una gran opción, ya que su biblioteca se actualiza constantemente, ya que se instalan y monitorizan miles de sitios si elige una solución proporcionada, como Sansec. A medida que se detecta un nuevo malware, cada proyecto que monitorizan se beneficia de la información y ahora son alertados si se detecta.
 
 Hay algunas versiones gratuitas a tener en cuenta, pero para el malware, realmente debe considerar una solución de pago. Esta puede ser la diferencia entre que su sitio esté infectado durante unos minutos y que haya estado infectado durante unos pocos meses. Tener una explotación en su sitio causa enormes dolores de cabeza, esta es una área que debe considerar pagar por un servicio.
 
@@ -65,7 +65,7 @@ La página de Recommendations de la herramienta de análisis de todo el sitio en
 
 Conozca las prácticas recomendadas para mejorar el rendimiento del sitio. Rastree e implemente las recomendaciones enumeradas según su prioridad.
 
-Para obtener más información sobre cómo instalar esto en el proyecto, visite [Guía de instalación de Site-Wide Analysis Tool](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/installation.html){target="_blank"}.
+Para obtener más información sobre cómo instalar esto en su proyecto, visite [Guía de instalación de la herramienta de análisis de todo el sitio](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/installation.html){target="_blank"}.
 
 ## Supervisión SSL
 
@@ -77,9 +77,9 @@ Realizar pruebas automatizadas, como pruebas funcionales o pruebas unitarias, su
 
 Las pruebas de carga pueden ser difíciles de hacer correctamente. Gran parte de la complejidad se debe al uso y la implementación del front-end. Si su sitio tiene un front-end sin encabezado, es posible que desee cargar y probar las API de GraphQL y REST. La forma en que termine la prueba de carga depende de usted y del equipo de DevOps. Tenga en cuenta que cada prueba de carga, realizada lo antes posible, proporciona una perspectiva del estado del proyecto. También proporciona puntos de referencia para pruebas futuras a fin de ver si hay algún cambio drástico en los resultados de las pruebas de carga. Si es así y son negativos, esta es una buena oportunidad para revisar los cambios de código más recientes y buscar secciones que afectan al rendimiento para mejorar.
 
-Adobe Commerce ofrece instrucciones adecuadas para comprender cómo ejecutar pruebas unitarias. Consulte [Prueba de la unidad PHP](https://developer.adobe.com/commerce/testing/guide/unit/){target="_blank"} en el _Guía de prueba de aplicaciones_ en el sitio de documentación de Adobe Developer.
+Adobe Commerce ofrece instrucciones útiles para comprender cómo ejecutar pruebas unitarias. Consulte [Pruebas unitarias de PHP](https://developer.adobe.com/commerce/testing/guide/unit/){target="_blank"} en la _Guía de pruebas de aplicaciones_ en el sitio de documentación de Adobe Developer.
 
-Para obtener más información sobre las pruebas funcionales, visite [Introducción al marco de pruebas funcionales](https://developer.adobe.com/commerce/testing/functional-testing-framework/){target="_blank"}.
+Para obtener más información acerca de las pruebas funcionales, visite [Introducción al marco de pruebas funcionales](https://developer.adobe.com/commerce/testing/functional-testing-framework/){target="_blank"}.
 
 
 {{$include /help/_includes/hosting-related-links.md}}

@@ -18,6 +18,6 @@ Esto suele ocurrir debido a la falta de claridad sobre las funciones y responsab
 
 ## ¿Cómo colaboramos colectivamente?
 
-Una matriz responsable, responsable, consultada e informada (RACI), como mencionamos en el [ámbito del proyecto](../project-scope/deliverables.md) sección: es una herramienta útil que define y documenta la propiedad y la responsabilidad en cada fase del proyecto. Dentro de la matriz, cada tarea, hito y decisión del proyecto se asigna a funciones o personas específicas. Ayuda a la administración de proyectos a optimizar los procesos, ya que garantiza que cada miembro del equipo y cada parte interesada comprenda sus funciones específicas. Esto debe definirse en la fase de planificación del proyecto y ser aceptado por cada parte interesada.
+Una matriz responsable, responsable, consultada e informada (RACI), como mencionamos en la sección [ámbito del proyecto](../project-scope/deliverables.md), es una herramienta útil que define y documenta la propiedad y la responsabilidad en cada etapa del proyecto. Dentro de la matriz, cada tarea, hito y decisión del proyecto se asigna a funciones o personas específicas. Ayuda a la administración de proyectos a optimizar los procesos, ya que garantiza que cada miembro del equipo y cada parte interesada comprenda sus funciones específicas. Esto debe definirse en la fase de planificación del proyecto y ser aceptado por cada parte interesada.
 
-![Cuadro que describe el marco RACI](../../assets/playbooks/raci.svg)
+![Tabla que describe el marco RACI](../../assets/playbooks/raci.svg)

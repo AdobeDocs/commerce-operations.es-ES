@@ -77,7 +77,7 @@ El proceso de control de calidad en el diagrama anterior se puede describir brev
   <tr>
     <td></td>
     <td></td>
-    <td>Enviar errores al sistema de seguimiento de errores (Jira/Redmine/Trello)</td>
+    <td>Errores de Post al sistema de seguimiento de errores (Jira/Redmine/Trello)</td>
     <td>Priorizar/programar pruebas para alinearlas con la planificación del proyecto definida por el PM</td>
   </tr>
   <tr>
@@ -143,7 +143,7 @@ El proceso de control de calidad en el diagrama anterior se puede describir brev
 </tbody>
 </table>
 
-Similar a la [herramientas](project-management-tools.md) nos identificamos para el proceso de desarrollo, hemos seleccionado un puñado de soluciones y plataformas de elección que a menudo utilizamos para las pruebas de control de calidad.
+De manera similar a las [herramientas](project-management-tools.md) que identificamos para el proceso de desarrollo, hemos seleccionado un puñado de soluciones y plataformas preferidas que solemos utilizar para las pruebas de control de calidad.
 
 | Finalidad | Herramienta |
 |---------------------------|---------------------------------------------------|
@@ -181,7 +181,7 @@ BrowserStack es una plataforma de pruebas móviles y web en la nube que permite 
 
 Postman es la plataforma de colaboración para el desarrollo de API. Postman simplifica cada paso de la creación de una API y optimiza la colaboración para que pueda crear mejores API.
 
-SoapUI es una aplicación de prueba de servicio web de código abierto para el Protocolo simple de acceso a objetos (SOAP) y las transferencias de estado de representación (REST). Su funcionalidad abarca la inspección de servicios web; invocación, desarrollo, simulación y burla; pruebas funcionales; pruebas de carga y conformidad.
+SoapUI es una aplicación de prueba de servicio web de código abierto para Simple Object Access Protocol SOAP () y transferencias de estado representacionales (REST). Su funcionalidad abarca la inspección de servicios web; invocación, desarrollo, simulación y burla; pruebas funcionales; pruebas de carga y conformidad.
 
 ## Pruebas de automatización
 

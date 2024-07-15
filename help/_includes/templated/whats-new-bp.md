@@ -18,15 +18,15 @@ Esta página contiene cambios recientes que creemos que desea ver. Excluimos tod
     <tr>
       <th>Descripción</th>
       <th>Tipo</th>
-      <th>Origen</th>
+      <th>Source</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td><p>Práctica recomendada añadida para <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/mariadb-upgrade.html">actualizar MariaDB</a> a 10.5.1 y posterior.</p>
+      <td><p>Se agregó la práctica recomendada para <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/mariadb-upgrade.html">actualizar MariaDB</a> a 10.5.1 y versiones posteriores.</p>
 </td>
       <td>prácticas recomendadas</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/7199e74f82cef6dd682f5e240ee2b6fc56da18c8">7199e7</a> (compromiso)</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/7199e74f82cef6dd682f5e240ee2b6fc56da18c8">7199e7</a> (confirmación)</td>
     </tr>
   </tbody>
 </table><!-- date_group -->
@@ -38,15 +38,15 @@ Esta página contiene cambios recientes que creemos que desea ver. Excluimos tod
     <tr>
       <th>Descripción</th>
       <th>Tipo</th>
-      <th>Origen</th>
+      <th>Source</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td><p>Se han añadido detalles acerca de <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-service-configuration.html">Opciones de configuración de tamaño de memoria caché L2</a> para Adobe Commerce en la infraestructura en la nube.</p>
+      <td><p>Se agregaron detalles sobre las <a href="https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-service-configuration.html">opciones de configuración de tamaño de memoria caché L2</a> para Adobe Commerce en la infraestructura en la nube.</p>
 </td>
       <td>prácticas recomendadas</td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/21da4c22744dbb3b27b0dbe184b946788748a52e">21da4c</a> (compromiso)</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/21da4c22744dbb3b27b0dbe184b946788748a52e">21da4c</a> (confirmación)</td>
     </tr>
   </tbody>
 </table><!-- date_group --><!-- month_group --><!-- year_group -->

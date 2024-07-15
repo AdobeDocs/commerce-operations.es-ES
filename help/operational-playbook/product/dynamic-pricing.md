@@ -4,7 +4,7 @@ description: Obtener una ventaja competitiva mediante la creación de una estrat
 exl-id: 913dba96-d939-4e9a-b382-f22c6669fed1
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '480'
 ht-degree: 0%
 
 ---
@@ -15,11 +15,11 @@ La asignación dinámica de precios es una estrategia de asignación de precios 
 
 Existen tres factores que impulsan la fijación dinámica de precios, entre ellos:
 
-- **Industria**—Los minoristas necesitan comprobar cuál es el precio más básico de un producto entre otras marcas.
+- **Sector**: los minoristas deben comprobar cuál es el precio más básico de un producto, entre otras marcas.
 
-- **Mercado**— ¿Cuál es la oferta y demanda actual? ¿Cuál es la oferta y la demanda previstas?
+- **Mercado**: ¿Cuál es la oferta y la demanda actuales? ¿Cuál es la oferta y la demanda previstas?
 
-- **Clientes**— ¿Cuál es el comportamiento de compra del cliente? ¿Cuál es el precio que el cliente está dispuesto a pagar por un producto?
+- **Clientes**: ¿Cuál es el comportamiento de compra de los clientes? ¿Cuál es el precio que el cliente está dispuesto a pagar por un producto?
 
 Debe tener en cuenta todos los aspectos al trabajar en una estrategia de precios dinámica.
 

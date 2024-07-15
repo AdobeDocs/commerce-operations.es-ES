@@ -15,9 +15,9 @@ Esta página proporciona recomendaciones para entornos de desarrollo de Commerce
 
 ## Limpie las cachés en lugar de deshabilitar
 
-Muchos desarrolladores tienden a deshabilitar todas las cachés en sus instancias de desarrollador. Solo recomendamos limpiar las cachés, sin deshabilitar todas las cachés. [!DNL Commerce] funciona de forma más eficaz cuando [limpiar las cachés](../configuration/cli/manage-cache.md#clean-and-flush-cache-types) en lugar de desactivarlos por completo. La mayoría de los tipos de cachés rara vez se invalidan durante el desarrollo.
+Muchos desarrolladores tienden a deshabilitar todas las cachés en sus instancias de desarrollador. Solo recomendamos limpiar las cachés, sin deshabilitar todas las cachés. [!DNL Commerce] se ejecuta de manera más eficiente cuando [limpia las cachés](../configuration/cli/manage-cache.md#clean-and-flush-cache-types) en lugar de deshabilitarlas por completo. La mayoría de los tipos de cachés rara vez se invalidan durante el desarrollo.
 
-Si usted [deshabilitar las cachés](../configuration/cli/manage-cache.md#enable-or-disable-cache-types), recomendamos que solo deshabilite las cachés de Página y Bloque en las instancias de desarrollo. Recuerde habilitar todas las cachés durante la prueba.
+Si [deshabilita las cachés](../configuration/cli/manage-cache.md#enable-or-disable-cache-types), recomendamos que solo deshabilite las cachés de página y bloque en las instancias de desarrollo. Recuerde habilitar todas las cachés durante la prueba.
 
 ## Comandos que se deben evitar en el modo de desarrollo
 
@@ -31,7 +31,7 @@ En el modo de desarrollo, no ejecute comandos para compilación, generación de 
   bin/magento setup:di:compile
   ```
 
-  En el modo de desarrollo, Magento realiza la generación bajo demanda; no es necesario ejecutarla. Si ha modificado una firma de una clase y necesita volver a generar su firma generada automáticamente `factories/proxies/interceptors`, elimine esas clases o el _generado_ carpeta.
+  En el modo de desarrollo, Magento realiza la generación bajo demanda; no es necesario ejecutarla. Si ha modificado una firma de una clase y necesita volver a generar su `factories/proxies/interceptors` generado automáticamente, quite esas clases o la carpeta _generated_.
 
 * `setup:static-content:deploy` implementa contenido estático para un almacén.
 

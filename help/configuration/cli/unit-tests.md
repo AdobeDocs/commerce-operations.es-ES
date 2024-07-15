@@ -4,7 +4,7 @@ description: Ejecute pruebas unitarias definidas en la base de código de Adobe 
 exl-id: 23200420-d15c-4910-8ce6-abd0cc070777
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '141'
+source-wordcount: '142'
 ht-degree: 0%
 
 ---
@@ -17,19 +17,19 @@ Este comando ejecuta un conjunto de pruebas definidas en la base de código de C
 
 ## Requisitos previos
 
-Antes de ejecutar este comando, haga lo siguiente _debe_ ser verdadero:
+Antes de ejecutar este comando, el siguiente _debe_ ser verdadero:
 
-- El `Magento_Developer` El módulo debe estar habilitado. Puede habilitarlo de la siguiente manera:
+- El módulo `Magento_Developer` debe estar habilitado. Puede habilitarlo de la siguiente manera:
 
   ```bash
   bin/magento module:enable [--force] Magento_Developer
   ```
 
-  Utilice el `--force` solo si es necesario.
+  Utilice la opción `--force` solo si es necesario.
 
 - El sistema debe estar configurado para ejecutar las pruebas deseadas.
 
-Por ejemplo, para ejecutar pruebas de integración, debe copiar `dev/tests/integration/etc/install-config-mysql.php.dist` hasta `dev/tests/integration/etc/install-config-mysql.php` y modifíquelo para que se adapte a su entorno.
+Por ejemplo, para ejecutar pruebas de integración, debe copiar `dev/tests/integration/etc/install-config-mysql.php.dist` en `dev/tests/integration/etc/install-config-mysql.php` y modificarlo para adaptarlo a su entorno.
 
 ## Ejecución de pruebas
 

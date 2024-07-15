@@ -11,9 +11,9 @@ ht-degree: 1%
 
 # Prácticas recomendadas de rendimiento
 
-El _Prácticas recomendadas de rendimiento_ Esta guía proporciona recomendaciones e instrucciones para optimizar el rendimiento de la implementación de producción. Los usuarios técnicos responsables de mantener las tiendas en modo de producción deben utilizar las prácticas recomendadas descritas en esta guía para garantizar que sus tiendas funcionen con la máxima eficiencia en todo momento.
+La guía de _Prácticas recomendadas de rendimiento_ proporciona recomendaciones e instrucciones para optimizar el rendimiento de la implementación de producción. Los usuarios técnicos responsables de mantener las tiendas en modo de producción deben utilizar las prácticas recomendadas descritas en esta guía para garantizar que sus tiendas funcionen con la máxima eficiencia en todo momento.
 
 ## Suposiciones
 
-* Ha instalado Adobe Commerce mediante [Compositor](../installation/composer.md).
+* Ha instalado Adobe Commerce con [Composer](../installation/composer.md).
 * Esta instalación se utiliza para ejecutar una instancia de producción activa de Adobe Commerce.

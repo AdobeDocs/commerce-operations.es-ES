@@ -96,7 +96,7 @@ ht-degree: 0%
    + [Servicios](reference/config-reference-services.md)
    + [Configuración confidencial y específica del sistema](reference/config-reference-sens.md)
    + [Anular los ajustes de configuración](reference/override-config-settings.md)
-+ Cron Jobs {#crons}
++ Trabajos Cron {#crons}
    + [Trabajos y grupos de Cron](cron/custom-cron.md)
    + [Personalización de la referencia de crons](cron/custom-cron-reference.md)
    + [Configuración de un trabajo cron personalizado](cron/custom-cron-tutorial.md)
@@ -146,4 +146,4 @@ ht-degree: 0%
       + [Verificar base de datos dividida](storage/multi-master-verify.md)
       + [Replicación de base de datos](storage/multi-master-replication.md)
       + [Revertir a base de datos única](storage/revert-split-database.md)
-+ [Volver a Guías operativas](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
++ [Volver a las guías operativas](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

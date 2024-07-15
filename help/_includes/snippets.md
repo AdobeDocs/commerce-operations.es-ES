@@ -11,7 +11,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->El [!DNL Upgrade Compatibility Tool] solo está disponible para instancias de Adobe Commerce.
+>[!DNL Upgrade Compatibility Tool] solo está disponible para instancias de Adobe Commerce.
 
 <!-- Configuration guide snippets -->
 
@@ -19,13 +19,13 @@ ht-degree: 0%
 
 >[!WARNING]
 >
->Todos los comandos de CLI del Magento deben ser ejecutados por el [propietario del sistema de archivos](/help/configuration/cli/config-cli.md#prerequisites).
+>Todos los comandos CLI del Magento deben ser ejecutados por el [propietario del sistema de archivos](/help/configuration/cli/config-cli.md#prerequisites).
 
 ## Comandos de copia de seguridad {#tip-backup-command}
 
 >[!TIP]
 >
->El `support:backup` el comando es _no_ la misma copia de seguridad de código realizada por el `setup:backup` comando. El `support:backup` El comando está diseñado para realizar una copia de seguridad del código y que el servicio de asistencia de Adobe Commerce lo examine.
+>El comando `support:backup` es _no_ la misma copia de seguridad de código realizada por el comando `setup:backup`. El comando `support:backup` está diseñado para hacer una copia de seguridad del código y que el soporte técnico de Adobe Commerce lo examine.
 
 ## Solo Adobe Commerce {#ee-only}
 
@@ -37,7 +37,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->La función de base de datos dividida era [obsoleto](https://community.magento.com/t5/Magento-DevBlog/Deprecation-of-Split-Database-in-Magento-Commerce/ba-p/465187?_ga=2.128934671.2024864496.1657558157-1596100530.1657558157) en la versión 2.4.2 de Adobe Commerce. Consulte [Revertir de una base de datos dividida a una única base de datos](/help/configuration/storage/revert-split-database.md).
+>La función de base de datos dividida estaba [obsoleta](https://community.magento.com/t5/Magento-DevBlog/Deprecation-of-Split-Database-in-Magento-Commerce/ba-p/465187?_ga=2.128934671.2024864496.1657558157-1596100530.1657558157) en la versión 2.4.2 de Adobe Commerce. Ver [Revertir de una base de datos dividida a una sola base de datos](/help/configuration/storage/revert-split-database.md).
 
 <!-- End of Configuration guide snippets -->
 
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Las versiones de Adobe Commerce pueden contener cambios incompatibles con versiones anteriores (BIC). Para revisar los cambios incompatibles con versiones anteriores, consulte [Referencia BIC](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/reference/). Los principales problemas incompatibles con versiones anteriores se describen en [Puntos destacados de BIC](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/highlights/). No todas las versiones introducen BIC importantes.
+>Las versiones de Adobe Commerce pueden contener cambios incompatibles con versiones anteriores (BIC). Para revisar los cambios incompatibles con versiones anteriores, consulte [Referencia de BIC](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/reference/). Los principales problemas incompatibles con versiones anteriores se describen en [resaltados de BIC](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/highlights/). No todas las versiones introducen BIC importantes.
 
 ## aviso de CVE {#cve-notice}
 
@@ -57,7 +57,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Aunque el código para mejoras y correcciones de errores descrito en estas notas de la versión está incorporado en Adobe Commerce, varios de estos proyectos (por ejemplo, B2B, Page Builder y Progressive Web Application (PWA) Studio) también se publican de forma independiente. Las correcciones de errores para estos proyectos se documentan en la información de versión independiente y específica del proyecto que está disponible en la documentación de cada proyecto. Consulte [información general de versión del producto](/help/release/release-notes/overview.md).
+>Aunque el código para mejoras y correcciones de errores descrito en estas notas de la versión está incorporado en Adobe Commerce, varios de estos proyectos (por ejemplo, B2B, Page Builder y Progressive Web Application (PWA) Studio) también se publican de forma independiente. Las correcciones de errores para estos proyectos se documentan en la información de versión independiente y específica del proyecto que está disponible en la documentación de cada proyecto. Ver [descripción general de la versión del producto](/help/release/release-notes/overview.md).
 
 ## Control de procesos PHP {#php-process-control}
 

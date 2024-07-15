@@ -15,23 +15,23 @@ ht-degree: 0%
 
 La biblioteca JavaScript de privacidad es un conjunto de herramientas que le ayudarán a crear un proceso para acceder a datos privados recopilados por Adobe Commerce y eliminarlos.
 
-Los servicios de seguimiento de datos de Commerce pueden almacenar información privada aplicable a las regulaciones de privacidad, como la [Reglamento General de Protección de Datos (RGPD)](gdpr.md) y [California Consumer Privacy Act (CCPA)](ccpa.md).
+Los servicios de seguimiento de datos de Commerce pueden almacenar información privada que sea aplicable a ciertas normas de privacidad, tales como el [Reglamento General de Protección de Datos (RGPD)](gdpr.md) y la [Ley de Privacidad del Consumidor de California (CCPA)](ccpa.md).
 
 Esta biblioteca proporciona un conjunto de funciones para crear solicitudes de datos de privacidad y recopilar sus respuestas. Utilice esta biblioteca para recuperar y eliminar los datos almacenados en el explorador por los servicios de seguimiento de datos de Adobe Commerce.
 
 >[!NOTE]
 >
->If [Modo de restricción de cookies](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html) está activada, Commerce no recopila datos de comportamiento hasta que el comprador da su consentimiento. If [!UICONTROL **Modo de restricción de cookies**] está desactivada, Commerce recopila datos de comportamiento de forma predeterminada.
+>Si el [Modo de restricción de cookies](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html) está habilitado, Commerce no recopilará datos de comportamiento hasta que el comprador dé su consentimiento. Si el [!UICONTROL **Modo de restricción de cookies**] está deshabilitado, Commerce recopila datos de comportamiento de forma predeterminada.
 
 ## Instalación
 
 La biblioteca JavaScript de privacidad está disponible en la siguiente ubicación de CDN: `commerce.adobe.net/magentoprivacy.js`
 
-Una vez que tenga el archivo, deberá agregarlo a un módulo o tema personalizado instalado en la instancia de Adobe Commerce. Siga las instrucciones descritas en la [Usar JavaScript personalizado](https://developer.adobe.com/commerce/frontend-core/javascript/custom/) tema para realizar esta tarea.
+Una vez que tenga el archivo, deberá agregarlo a un módulo o tema personalizado instalado en la instancia de Adobe Commerce. Siga las instrucciones descritas en el tema [Usar JavaScript personalizado](https://developer.adobe.com/commerce/frontend-core/javascript/custom/) para realizar esta tarea.
 
 ### Inicialización
 
-Importar y crear una instancia de un nuevo `MagentoPrivacy` objeto o utilice el `window` para acceder a las funciones de privacidad de JavaScript.
+Importe y cree una instancia de un nuevo objeto `MagentoPrivacy` o use el objeto `window` para tener acceso a las funciones de JavaScript de privacidad.
 
 Ejemplo con `import`:
 
@@ -61,7 +61,7 @@ magePriv.retrieveIdentity().then((ids)=>console.log(ids))
 
 `removeIdentity()`
 : elimina los datos de identidad de un servicio en el explorador.
-Esta función devuelve una promesa de JavaScript para un objeto de identidad con una `isDeleted` propiedad booleana para indicar si se han eliminado los datos.
+Esta función devuelve una promesa de JavaScript para un objeto de identidad con una propiedad booleana `isDeleted` para indicar si los datos se han eliminado.
 
 ```js
 magePriv.removeIdentity().then((ids)=>console.log(ids))

@@ -12,13 +12,13 @@ ht-degree: 0%
 
 # Flujo de implementación
 
-El [!DNL Commerce] el flujo de implementación de producción ayuda a que una tienda alcance el máximo rendimiento.
+El flujo de implementación de producción [!DNL Commerce] ayuda a que un almacén alcance el máximo rendimiento.
 
 ## Instalar dependencias
 
-El `composer.json` y `composer.lock` archivos administrar [!DNL Commerce] e instale la versión adecuada para cada paquete. Debe instalar las dependencias antes de [instrucciones de inyección de dependencia de preprocesamiento](#preprocess-dependency-injection-instructions) si tiene pensado actualizar el [autocargador](#update-the-autoloader).
+Los archivos `composer.json` y `composer.lock` administran las dependencias de [!DNL Commerce] e instalan la versión adecuada para cada paquete. Debe instalar dependencias antes de [instrucciones de inyección de dependencias de preprocesamiento](#preprocess-dependency-injection-instructions) si tiene pensado actualizar el [cargador automático](#update-the-autoloader).
 
-Para instalar [!DNL Commerce] dependencias:
+Para instalar dependencias [!DNL Commerce]:
 
 ```bash
 composer install --no-dev
@@ -47,7 +47,7 @@ Para actualizar el cargador automático:
 
 >[!INFO]
 >
->El `-o` convierte la carga automática de PSR-0/4 en classmap para obtener un autocargador más rápido. El `--apcu` utiliza APCu para almacenar en caché las clases encontradas/no encontradas.
+>La opción `-o` convierte la carga automática de PSR-0/4 en un mapa de clases para obtener un cargador automático más rápido. La opción `--apcu` usa APCu para almacenar en caché las clases encontradas o no encontradas.
 
 ```bash
 composer dump-autoload -o --apcu
@@ -73,7 +73,7 @@ bin/magento setup:static-content:deploy
 
 ## Implementación de contenido estático
 
-Implementación de causas de contenido estático [!DNL Commerce] para realizar las siguientes acciones:
+La implementación de contenido estático hace que [!DNL Commerce] realice las siguientes acciones:
 
 * Analizar todos los recursos estáticos
 * Realizar combinación, minimización y agrupamiento de contenido
@@ -81,9 +81,9 @@ Implementación de causas de contenido estático [!DNL Commerce] para realizar l
 * Analizar reserva de tema
 * Almacene todo el contenido procesado y materializado en una carpeta específica para su uso posterior
 
-Si el contenido estático no está implementado, [!DNL Commerce] realiza todas las operaciones enumeradas sobre la marcha, lo que produce un aumento significativo del tiempo de respuesta.
+Si el contenido estático no se implementa, [!DNL Commerce] realiza todas las operaciones enumeradas sobre la marcha, lo que produce un aumento significativo del tiempo de respuesta.
 
-Puede utilizar una variedad de opciones para personalizar las operaciones de implementación en función del tamaño del almacén y las necesidades de satisfacción. El más común es la estrategia de implementación compacta. Consulte [Estrategias de implementación de archivos estáticos](../configuration/cli/static-view-file-strategy.md)
+Puede utilizar una variedad de opciones para personalizar las operaciones de implementación en función del tamaño del almacén y las necesidades de satisfacción. El más común es la estrategia de implementación compacta. Ver [estrategias de implementación de archivos estáticos](../configuration/cli/static-view-file-strategy.md)
 
 Para implementar contenido estático:
 
@@ -97,9 +97,9 @@ Este comando permite al Compositor reconstruir la asignación a los archivos de 
 
 >[!INFO]
 >
->La configuración del modo en producción se ejecuta automáticamente `setup:di:compile` y `setup:static-content:deploy`.
+>Al establecer el modo en producción, se ejecuta `setup:di:compile` y `setup:static-content:deploy` automáticamente.
 
-Por último, debe colocar la tienda en modo de producción. El modo de producción está optimizado específicamente para el máximo rendimiento de su tienda. También desactiva todas las funciones específicas del desarrollador. Esto se puede hacer en su `.htaccess` o `nginx.conf` archivo:
+Por último, debe colocar la tienda en modo de producción. El modo de producción está optimizado específicamente para el máximo rendimiento de su tienda. También desactiva todas las funciones específicas del desarrollador. Esto se puede hacer en el archivo `.htaccess` o `nginx.conf`:
 
 `SetEnv MAGE_MODE production`
 

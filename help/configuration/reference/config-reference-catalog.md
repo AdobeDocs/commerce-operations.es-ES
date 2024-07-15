@@ -5,22 +5,22 @@ feature: Configuration, Catalog Management
 exl-id: 19451443-228e-437d-a3eb-7dc968b9fb0d
 source-git-commit: df8878a3fea19b8f1780b5037273e18b5a3f1373
 workflow-type: tm+mt
-source-wordcount: '814'
+source-wordcount: '815'
 ht-degree: 0%
 
 ---
 
 # Referencia de rutas de configuración de catálogo
 
-Esta sección enumera los nombres de las variables y las rutas de configuración disponibles para las opciones de Admin en **Tiendas** > Configuración > **Configuración** > **Catálogo**.
+Esta sección enumera los nombres de las variables y las rutas de configuración disponibles para las opciones del Administrador en **Tiendas** > Configuración > **Configuración** > **Catálogo**.
 
-El [`magento app:config:dump` mando](../cli/export-configuration.md) escribe estos valores en el archivo de configuración compartida, `app/etc/config.php`, que debe estar en el control de código fuente. Para anular cualquier configuración de configuración o definir configuraciones confidenciales, consulte [Utilice variables de entorno para anular los ajustes de configuración](override-config-settings.md#environment-variables). Este tema sí _no_ lista [valores confidenciales y específicos del sistema](config-reference-sens.md).
+El comando [`magento app:config:dump` ](../cli/export-configuration.md) escribe estos valores en el archivo de configuración compartida, `app/etc/config.php`, que debe estar en el control de código fuente. Para anular opcionalmente las opciones de configuración o establecer opciones confidenciales, vea [Usar variables de entorno para anular las opciones de configuración](override-config-settings.md#environment-variables). Este tema _no_ enumera [valores confidenciales y específicos del sistema](config-reference-sens.md).
 
 ## Rutas de catálogo
 
 Estos valores de configuración están disponibles en el Administrador de **Tiendas** > Configuración > **Configuración** > **Catálogo** > **Catálogo**.
 
-| Nombre | Ruta de configuración | ¿Solo comercio? |
+| Nombre | Ruta de configuración | ¿Solo Commerce? |
 |--------------|--------------|--------------|
 | Máscara para SKU | `catalog/fields_masks/sku` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Máscara para metatítulo | `catalog/fields_masks/meta_title` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -53,7 +53,7 @@ Estos valores de configuración están disponibles en el Administrador de **Tien
 | Mostrar vídeo relacionado | `catalog/product_video/show_related` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Reinicio automático de vídeo | `catalog/product_video/video_auto_restart` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Precios de catálogo | `catalog/price/scope` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Precio de producto predeterminado | `catalog/price/default_product_price` | ![Solo de comercio](/help/assets/configuration/cloud-ee.png) |
+| Precio de producto predeterminado | `catalog/price/default_product_price` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
 | Mostrar recuento de productos | `catalog/layered_navigation/display_product_count` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Cálculo de Paso de Navegación de Precio | `catalog/layered_navigation/price_range_calculation` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Paso de navegación de precio predeterminado | `catalog/layered_navigation/price_range_step` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -64,14 +64,14 @@ Estos valores de configuración están disponibles en el Administrador de **Tien
 | Longitud mínima de la consulta | `catalog/search/min_query_length` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Longitud máxima de la consulta | `catalog/search/max_query_length` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Motor de búsqueda | `catalog/search/engine` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Tiempo de espera del servidor Solr | `catalog/search/solr_server_timeout` | ![Solo de comercio](/help/assets/configuration/cloud-ee.png) |
+| Tiempo de espera del servidor Solr | `catalog/search/solr_server_timeout` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
 | Modo de indexación | `catalog/search/engine_commit_mode` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Activar sugerencias de búsqueda | `catalog/search/search_suggestion_enabled` | ![Solo de comercio](/help/assets/configuration/cloud-ee.png) |
-| Recuento de sugerencias de búsqueda | `catalog/search/search_suggestion_count` | ![Solo de comercio](/help/assets/configuration/cloud-ee.png) |
-| Mostrar recuento de resultados de cada sugerencia | `catalog/search/search_suggestion_count_results_enabled` | ![Solo de comercio](/help/assets/configuration/cloud-ee.png) |
-| Habilitar Search Recommendations | `catalog/search/search_recommendations_enabled` | ![Solo de comercio](/help/assets/configuration/cloud-ee.png) |
-| Buscar recuento de Recommendations | `catalog/search/search_recommendations_count` | ![Solo de comercio](/help/assets/configuration/cloud-ee.png) |
-| Mostrar recuento de resultados de cada recomendación | `catalog/search/search_recommendations_count_results_enabled` | ![Solo de comercio](/help/assets/configuration/cloud-ee.png) |
+| Activar sugerencias de búsqueda | `catalog/search/search_suggestion_enabled` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
+| Recuento de sugerencias de búsqueda | `catalog/search/search_suggestion_count` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
+| Mostrar recuento de resultados de cada sugerencia | `catalog/search/search_suggestion_count_results_enabled` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
+| Habilitar Search Recommendations | `catalog/search/search_recommendations_enabled` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
+| Buscar recuento de Recommendations | `catalog/search/search_recommendations_count` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
+| Mostrar recuento de resultados de cada recomendación | `catalog/search/search_recommendations_count_results_enabled` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
 | Términos mínimos que deben cumplirse | `catalog/search/minimum_should_match` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Generar reescrituras de URL de &quot;categoría/producto&quot; | `catalog/seo/generate_category_product_rewrites` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Términos de búsqueda populares | `catalog/seo/search_terms` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -82,15 +82,15 @@ Estos valores de configuración están disponibles en el Administrador de **Tien
 | Separador de título de página | `catalog/seo/title_separator` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Usar Meta Etiqueta De Vínculo Canónico Para Las Categorías | `catalog/seo/category_canonical_tag` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Uso De La Meta Etiqueta De Vínculo Canónico Para Productos | `catalog/seo/product_canonical_tag` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Activar | `catalog/magento_catalogpermissions/enabled` | ![Solo de comercio](/help/assets/configuration/cloud-ee.png) |
-| Permitir categoría de exploración | `catalog/magento_catalogpermissions/grant_catalog_category_view` | ![Solo de comercio](/help/assets/configuration/cloud-ee.png) |
-| Grupos de clientes | `catalog/magento_catalogpermissions/grant_catalog_category_view_groups` | ![Solo de comercio](/help/assets/configuration/cloud-ee.png) |
-| Página de aterrizaje | `catalog/magento_catalogpermissions/restricted_landing_page` | ![Solo de comercio](/help/assets/configuration/cloud-ee.png) |
-| Mostrar precios de productos | `catalog/magento_catalogpermissions/grant_catalog_product_price` | ![Solo de comercio](/help/assets/configuration/cloud-ee.png) |
-| Grupos de clientes | `catalog/magento_catalogpermissions/grant_catalog_product_price_groups` | ![Solo de comercio](/help/assets/configuration/cloud-ee.png) |
-| Permitir la adición al carro | `catalog/magento_catalogpermissions/grant_checkout_items` | ![Solo de comercio](/help/assets/configuration/cloud-ee.png) |
-| Grupos de clientes | `catalog/magento_catalogpermissions/grant_checkout_items_groups` | ![Solo de comercio](/help/assets/configuration/cloud-ee.png) |
-| No permitir búsqueda en el catálogo por | `catalog/magento_catalogpermissions/deny_catalog_search` | ![Solo de comercio](/help/assets/configuration/cloud-ee.png) |
+| Activar | `catalog/magento_catalogpermissions/enabled` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
+| Permitir categoría de exploración | `catalog/magento_catalogpermissions/grant_catalog_category_view` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
+| Grupos de clientes | `catalog/magento_catalogpermissions/grant_catalog_category_view_groups` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
+| Página de aterrizaje | `catalog/magento_catalogpermissions/restricted_landing_page` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
+| Mostrar precios de productos | `catalog/magento_catalogpermissions/grant_catalog_product_price` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
+| Grupos de clientes | `catalog/magento_catalogpermissions/grant_catalog_product_price_groups` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
+| Permitir la adición al carro | `catalog/magento_catalogpermissions/grant_checkout_items` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
+| Grupos de clientes | `catalog/magento_catalogpermissions/grant_checkout_items_groups` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
+| No permitir búsqueda en el catálogo por | `catalog/magento_catalogpermissions/deny_catalog_search` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
 | Estado del artículo del pedido para activar las descargas | `catalog/downloadable/order_item_status` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Número máximo predeterminado de descargas | `catalog/downloadable/downloads_number` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Compartible | `catalog/downloadable/shareable` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -99,23 +99,23 @@ Estos valores de configuración están disponibles en el Administrador de **Tien
 | Abrir vínculos en una ventana nueva | `catalog/downloadable/links_target_new_window` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Utilizar Content-Disposition | `catalog/downloadable/content_disposition` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Deshabilitar la desprotección de invitados si el carro contiene elementos descargables | `catalog/downloadable/disable_guest_checkout` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Usar calendario JavaScript | `catalog/custom_options/use_calendar` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Usar JavaScript Calendar | `catalog/custom_options/use_calendar` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Orden de campos de fecha | `catalog/custom_options/date_fields_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Formato de tiempo | `catalog/custom_options/time_format` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Intervalo de años | `catalog/custom_options/year_range` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Habilitar funcionalidad de eventos de catálogo | `catalog/magento_catalogevent/enabled` | ![Solo de comercio](/help/assets/configuration/cloud-ee.png) |
-| Habilitar el widget de evento de catálogo en tienda | `catalog/magento_catalogevent/lister_output` | ![Solo de comercio](/help/assets/configuration/cloud-ee.png) |
-| Número de eventos que se mostrarán en el widget deslizador de eventos | `catalog/magento_catalogevent/lister_widget_limit` | ![Solo de comercio](/help/assets/configuration/cloud-ee.png) |
-| Eventos que se desplazarán por clic en el widget deslizador de eventos | `catalog/magento_catalogevent/lister_widget_scroll` | ![Solo de comercio](/help/assets/configuration/cloud-ee.png) |
-| Número máximo de productos en la lista de productos relacionados | `catalog/magento_targetrule/related_position_limit` | ![Solo de comercio](/help/assets/configuration/cloud-ee.png) |
-| Mostrar productos relacionados | `catalog/magento_targetrule/related_position_behavior` | ![Solo de comercio](/help/assets/configuration/cloud-ee.png) |
-| Modo de rotación para productos en la lista de productos relacionados | `catalog/magento_targetrule/related_rotation_mode` | ![Solo de comercio](/help/assets/configuration/cloud-ee.png) |
-| Número máximo de productos en la lista de productos de venta cruzada | `catalog/magento_targetrule/crosssell_position_limit` | ![Solo de comercio](/help/assets/configuration/cloud-ee.png) |
-| Mostrar productos de venta cruzada | `catalog/magento_targetrule/crosssell_position_behavior` | ![Solo de comercio](/help/assets/configuration/cloud-ee.png) |
-| Modo de rotación para productos en la lista de productos de venta cruzada | `catalog/magento_targetrule/crosssell_rotation_mode` | ![Solo de comercio](/help/assets/configuration/cloud-ee.png) |
-| Número máximo de productos en la lista de productos ampliados | `catalog/magento_targetrule/upsell_position_limit` | ![Solo de comercio](/help/assets/configuration/cloud-ee.png) |
-| Mostrar productos de ampliación de venta | `catalog/magento_targetrule/upsell_position_behavior` | ![Solo de comercio](/help/assets/configuration/cloud-ee.png) |
-| Modo de rotación de productos en la lista de productos ampliados | `catalog/magento_targetrule/upsell_rotation_mode` | ![Solo de comercio](/help/assets/configuration/cloud-ee.png) |
+| Habilitar funcionalidad de eventos de catálogo | `catalog/magento_catalogevent/enabled` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
+| Habilitar el widget de evento de catálogo en tienda | `catalog/magento_catalogevent/lister_output` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
+| Número de eventos que se mostrarán en el widget deslizador de eventos | `catalog/magento_catalogevent/lister_widget_limit` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
+| Eventos que se desplazarán por clic en el widget deslizador de eventos | `catalog/magento_catalogevent/lister_widget_scroll` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
+| Número máximo de productos en la lista de productos relacionados | `catalog/magento_targetrule/related_position_limit` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
+| Mostrar productos relacionados | `catalog/magento_targetrule/related_position_behavior` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
+| Modo de rotación para productos en la lista de productos relacionados | `catalog/magento_targetrule/related_rotation_mode` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
+| Número máximo de productos en la lista de productos de venta cruzada | `catalog/magento_targetrule/crosssell_position_limit` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
+| Mostrar productos de venta cruzada | `catalog/magento_targetrule/crosssell_position_behavior` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
+| Modo de rotación para productos en la lista de productos de venta cruzada | `catalog/magento_targetrule/crosssell_rotation_mode` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
+| Número máximo de productos en la lista de productos ampliados | `catalog/magento_targetrule/upsell_position_limit` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
+| Mostrar productos de ampliación de venta | `catalog/magento_targetrule/upsell_position_behavior` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
+| Modo de rotación de productos en la lista de productos ampliados | `catalog/magento_targetrule/upsell_rotation_mode` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
 
 {style="table-layout:auto"}
 
@@ -123,17 +123,17 @@ Estos valores de configuración están disponibles en el Administrador de **Tien
 
 Estos valores de configuración están disponibles en el Administrador de **Tiendas** > Configuración > **Configuración** > **Catálogo** > **Inventario**.
 
-| Nombre | Ruta de configuración | ¿Solo comercio? |
+| Nombre | Ruta de configuración | ¿Solo Commerce? |
 |--------------|--------------|--------------|
 | Disminuir stock al realizar el pedido | `cataloginventory/options/can_subtract` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Definir el estado de los artículos como En stock cuando se cancela el pedido | `cataloginventory/options/can_back_in_stock` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Mostrar productos sin existencias | `cataloginventory/options/show_out_of_stock` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Solo el umbral izquierdo X | `cataloginventory/options/stock_threshold_qty` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Mostrar disponibilidad de productos en stock en tienda | `cataloginventory/options/display_product_stock_status` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Sincronizar con el catálogo | `cataloginventory/options/synchronize_with_catalog` | ![Solo de comercio](/help/assets/configuration/cloud-ee.png) |
+| Sincronizar con el catálogo | `cataloginventory/options/synchronize_with_catalog` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
 | Administrar stock | `cataloginventory/item_options/manage_stock` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Pedidos no satisfechos | `cataloginventory/item_options/backorders` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Usar actualización de Stock diferida | `cataloginventory/item_options/use_deferred_stock_update` | ![Solo de comercio](/help/assets/configuration/cloud-ee.png) |
+| Usar actualización de Stock diferida | `cataloginventory/item_options/use_deferred_stock_update` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
 | Cantidad máxima permitida en el carro de compras | `cataloginventory/item_options/max_sale_qty` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Umbral de falta de stock | `cataloginventory/item_options/min_qty` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Cantidad mínima permitida en el carro de compras | `cataloginventory/item_options/min_sale_qty` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -141,8 +141,8 @@ Estos valores de configuración están disponibles en el Administrador de **Tien
 | Activar incrementos de cantidad | `cataloginventory/item_options/enable_qty_increments` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Incrementos de cantidad | `cataloginventory/item_options/qty_increments` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Devolver automáticamente el artículo de nota de abono a stock | `cataloginventory/item_options/auto_return` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Ejecutar asincrónicamente | `cataloginventory/bulk_operations/async` | ![Solo de comercio](/help/assets/configuration/cloud-ee.png) |
-| Tamaño de lote asincrónico | `cataloginventory/bulk_operations/batch_size` | ![Solo de comercio](/help/assets/configuration/cloud-ee.png) |
+| Ejecutar asincrónicamente | `cataloginventory/bulk_operations/async` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
+| Tamaño de lote asincrónico | `cataloginventory/bulk_operations/batch_size` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
 | Proveedor | `cataloginventory/source_selection_distance_based/provider` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Modo de cálculo | `cataloginventory/source_selection_distance_based_google/mode` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Valor | `cataloginventory/source_selection_distance_based_google/value` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -153,12 +153,12 @@ Estos valores de configuración están disponibles en el Administrador de **Tien
 
 Estos valores de configuración están disponibles en el Administrador de **Tiendas** > Configuración > **Configuración** > **Catálogo** > **Visual Merchandiser**.
 
-| Nombre | Ruta de configuración | ¿Solo comercio? |
+| Nombre | Ruta de configuración | ¿Solo Commerce? |
 |--------------|--------------|--------------|
-| Atributos visibles para reglas de categoría | `visualmerchandiser/options/smart_attributes` | ![Solo de comercio](/help/assets/configuration/cloud-ee.png) |
-| Umbral de stock mínimo | `visualmerchandiser/options/minimum_stock_threshold` | ![Solo de comercio](/help/assets/configuration/cloud-ee.png) |
-| Código de atributo de color | `visualmerchandiser/options/color_attribute_code` | ![Solo de comercio](/help/assets/configuration/cloud-ee.png) |
-| Orden de color | `visualmerchandiser/options/color_order` | ![Solo de comercio](/help/assets/configuration/cloud-ee.png) |
+| Atributos visibles para reglas de categoría | `visualmerchandiser/options/smart_attributes` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
+| Umbral de stock mínimo | `visualmerchandiser/options/minimum_stock_threshold` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
+| Código de atributo de color | `visualmerchandiser/options/color_attribute_code` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
+| Orden de color | `visualmerchandiser/options/color_order` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
 
 {style="table-layout:auto"}
 
@@ -166,7 +166,7 @@ Estos valores de configuración están disponibles en el Administrador de **Tien
 
 Estos valores de configuración están disponibles en el Administrador de **Tiendas** > Configuración > **Configuración** > **Catálogo** > **Mapa del sitio XML**.
 
-| Nombre | Ruta de configuración | ¿Solo comercio? |
+| Nombre | Ruta de configuración | ¿Solo Commerce? |
 |--------------|--------------|--------------|
 | Frecuencia | `sitemap/category/changefreq` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Prioridad | `sitemap/category/priority` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -190,7 +190,7 @@ Estos valores de configuración están disponibles en el Administrador de **Tien
 
 Estos valores de configuración están disponibles en el Administrador de **Tiendas** > Configuración > **Configuración** > **Catálogo** > **Fuentes RSS**.
 
-| Nombre | Ruta de configuración | ¿Solo comercio? |
+| Nombre | Ruta de configuración | ¿Solo Commerce? |
 |--------------|--------------|--------------|
 | Habilitar RSS | `rss/config/active` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Habilitar RSS | `rss/wishlist/active` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -204,9 +204,9 @@ Estos valores de configuración están disponibles en el Administrador de **Tien
 
 ## Correo electrónico a las rutas de un amigo
 
-Estos valores de configuración están disponibles en el Administrador de **Tiendas** > Configuración > **Configuración** > **Catálogo** > **Enviar por correo a un amigo**.
+Estos valores de configuración están disponibles en el Administrador de **Tiendas** > Configuración > **Configuración** > **Catálogo** > **Enviar correo electrónico a un amigo**.
 
-| Nombre | Ruta de configuración | ¿Solo comercio? |
+| Nombre | Ruta de configuración | ¿Solo Commerce? |
 |--------------|--------------|--------------|
 | Habilitado | `sendfriend/email/enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Seleccionar plantilla de correo electrónico | `sendfriend/email/template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |

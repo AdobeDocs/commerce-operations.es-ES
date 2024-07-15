@@ -1,5 +1,5 @@
 ---
-title: Operaciones comerciales
+title: Operaciones de Commerce
 description: Aprenda lo que se necesita para tener una estrategia operativa exitosa para su negocio de comercio electrónico.
 exl-id: 21123987-0508-4d52-8af4-837b7a3ba1cb
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
@@ -9,9 +9,9 @@ ht-degree: 0%
 
 ---
 
-# Operaciones comerciales
+# Operaciones de Commerce
 
-Las operaciones comerciales consisten en centralizar las operaciones back-end para que funcionen de forma más inteligente, rápida y eficiente. Una estrategia operativa exitosa requiere una infraestructura de TI sólida capaz de admitir operaciones de comercio electrónico de extremo a extremo; catálogo de productos, administración de inventario, cierre de compra y envío. Las operaciones de comercio electrónico se basan en varias cosas, como una tienda fácil de usar, una variedad de productos, una administración adecuada del inventario, promociones, un cierre de compra fácil y métodos de pago y envío convenientes.
+Las operaciones de Commerce consisten en centralizar las operaciones back-end para que funcionen de forma más inteligente, rápida y eficaz. Una estrategia operativa exitosa requiere una infraestructura de TI sólida capaz de admitir operaciones de comercio electrónico de extremo a extremo; catálogo de productos, administración de inventario, cierre de compra y envío. Las operaciones de comercio electrónico se basan en varias cosas, como una tienda fácil de usar, una variedad de productos, una administración adecuada del inventario, promociones, un cierre de compra fácil y métodos de pago y envío convenientes.
 
 ## ¿Por qué es importante la estrategia de operación de comercio electrónico?
 

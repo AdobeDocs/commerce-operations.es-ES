@@ -4,7 +4,7 @@ description: Conozca las diferentes funciones y responsabilidades que conlleva u
 exl-id: 6e61dcce-ad71-4380-bae4-48be1a3d88b9
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '1170'
+source-wordcount: '1166'
 ht-degree: 0%
 
 ---
@@ -130,12 +130,12 @@ El equipo de contenido se encuentra dentro del equipo de marketing, del equipo d
 
 El equipo de contenido es responsable de lo siguiente:
 
-- **Organización del contenido**: los elementos, las direcciones URL, la navegación y la estructura de la página deben ser directos y fáciles de usar. Si el sitio es demasiado complicado, entonces los clientes se pierden.
+- **La organización del contenido**: los elementos, las direcciones URL, la navegación y la estructura de la página deben ser sencillos y fáciles de usar. Si el sitio es demasiado complicado, entonces los clientes se pierden.
 
-- **Corrección de contenido dañado**: las imágenes rotas, las páginas, las páginas que faltan, el flujo de cierre de compra roto y los mensajes de error hacen que los clientes abandonen el sitio y dejen una impresión negativa.
+- **Corrección de contenido dañado**: las imágenes, las páginas, las páginas que faltan, el flujo de cierre de compra dañado y los mensajes de error rotos hacen que los clientes abandonen el sitio y dejen una impresión negativa.
 
-- **Actualización de contenido**: el contenido del sitio web debe estar actualizado. Si el sitio incluye contenido obsoleto, esto afecta a la experiencia del cliente y aumenta la carga de trabajo para el equipo de servicio al cliente. Por ejemplo, deben responder a preguntas de los clientes que el contenido del sitio web debería haberles respondido.
+- **Actualizando contenido**: el contenido del sitio web debe estar actualizado. Si el sitio incluye contenido obsoleto, esto afecta a la experiencia del cliente y aumenta la carga de trabajo para el equipo de servicio al cliente. Por ejemplo, deben responder a preguntas de los clientes que el contenido del sitio web debería haberles respondido.
 
-- **Simplificación del contenido**: el equipo de contenido debe crear contenido simple y directo. El lenguaje sencillo funciona mejor cuando se interactúa con los clientes.
+- **Simplificar contenido**: el equipo de contenido debe crear contenido sencillo y directo. El lenguaje sencillo funciona mejor cuando se interactúa con los clientes.
 
 El equipo de contenido crea, prueba, administra y optimiza todo el contenido del sitio web, lo que genera un retorno de la inversión.

@@ -18,9 +18,9 @@ Desde las versiones 2.4.4, 2.4.3-p2 y 2.3.7-p3, Adobe Commerce admite OpenSearch
 
 ## Ruta de migración
 
-Los pasos para migrar a OpenSearch son sencillos y siguen en gran medida los pasos para la configuración del Elasticsearch. En estos pasos se da por hecho que Adobe Commerce es la única aplicación que utiliza el motor de búsqueda. En los casos en los que varias aplicaciones utilicen el motor de búsqueda, siga la guía oficial de migración [Cambio del Elasticsearch de código abierto a OpenSearch](https://opensearch.org/blog/technical-posts/2021/10/moving-from-opensource-elasticsearch-to-opensearch/).
+Los pasos para migrar a OpenSearch son sencillos y siguen en gran medida los pasos para la configuración del Elasticsearch. En estos pasos se da por hecho que Adobe Commerce es la única aplicación que utiliza el motor de búsqueda. En los casos en que varias aplicaciones usen el motor de búsqueda, siga la guía de migración oficial [Cambio del Elasticsearch de código abierto a OpenSearch](https://opensearch.org/blog/technical-posts/2021/10/moving-from-opensource-elasticsearch-to-opensearch/).
 
-1. Asegúrese de que la instalación cumple los [requisitos previos del motor de búsqueda](../../installation/prerequisites/search-engine/overview.md).
+1. Asegúrese de que la instalación cumpla los [requisitos previos del motor de búsqueda](../../installation/prerequisites/search-engine/overview.md).
 
 1. Coloque el sitio en [Modo de mantenimiento](../../installation/tutorials/maintenance-mode.md).
 
@@ -28,6 +28,6 @@ Los pasos para migrar a OpenSearch son sencillos y siguen en gran medida los pas
 
 1. [Instalar OpenSearch](https://opensearch.org/docs/latest/opensearch/install/important-settings/).
 
-1. [Configuración del motor de búsqueda](../../configuration/search/configure-search-engine.md) y realizar tareas relacionadas, como vaciar la caché y reindexar el índice de búsqueda del catálogo.
+1. [Configure el motor de búsqueda](../../configuration/search/configure-search-engine.md) y realice tareas relacionadas, como vaciar la caché y reindexar el índice de búsqueda del catálogo.
 
 No es necesario realizar más cambios en el valor de configuración.

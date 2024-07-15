@@ -22,12 +22,12 @@ Haga clic en un vínculo para descargar una lista de comprobación:
 - [Rendimiento](../../assets/playbooks/checklists/performance.pptx)
 - [Migración de la plataforma Commerce](../../assets/playbooks/checklists/commerce-platform-migration.pptx)
 
-## Plantillas de comercio
+## Commerce templates
 
 Haga clic en un vínculo para descargar una plantilla:
 
 - [Cuestionario previo al taller sobre requisitos](../../assets/playbooks/templates/requirements-questionnaire.pptx)
-- [Documento de estrategia comercial](../../assets/playbooks/templates/commerce-strategy-document.pptx)
+- [documento de estrategia de Commerce](../../assets/playbooks/templates/commerce-strategy-document.pptx)
 - [Preparación operativa de comercio electrónico](../../assets/playbooks/templates/ecommerce-operational-readiness.pptx)
 - [Funciones de plataforma de comercio electrónico](../../assets/playbooks/templates/ecommerce-platform-features.pptx)
 - [Evaluación de la ubicación del comerciante](../../assets/playbooks/templates/merchant-self-site-assessment.pptx)

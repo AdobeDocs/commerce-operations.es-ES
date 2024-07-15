@@ -1,10 +1,10 @@
 ---
-title: Mantenimiento de proyectos de Commerce
+title: Mantenimiento del proyecto de Commerce
 description: Establecer estándares de alta calidad y establecer mecanismos para mantener esos estándares con el tiempo.
 exl-id: 8f394ae0-02c4-4efc-a313-40b8c48aecbb
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '709'
+source-wordcount: '712'
 ht-degree: 0%
 
 ---
@@ -29,17 +29,18 @@ Al actualizar, está afianzando el futuro de su empresa y dándose a sí mismo l
 
 A continuación se muestra una lista rápida de preguntas que debe hacerse a medida que planea la actualización:
 
-- **Limpieza del sitio**— ¿Qué puedo conservar y qué puedo cambiar? ¿Qué cosas nuevas deseo implementar? Por ejemplo, ¿qué cambios deseo realizar en la taxonomía y estructura del producto o en el contenido?
+- **Limpieza del sitio**: ¿Qué puedo conservar y qué puede cambiar? ¿Qué cosas nuevas deseo implementar? Por ejemplo, ¿qué cambios deseo realizar en la taxonomía y estructura del producto o en el contenido?
 
-- **Comprobación de Analytics**— ¿Cuáles son mis KPI actuales? ¿Qué indican mis datos sobre cómo se puede mejorar mi sitio? ¿Hay nuevos KPI que quiero implementar para mi nuevo sitio?
+- **Comprobación de Analytics**: ¿Cuáles son mis KPI actuales? ¿Qué indican mis datos sobre cómo se puede mejorar mi sitio? ¿Hay nuevos KPI que quiero implementar para mi nuevo sitio?
 
-- **Extensiones**¿Todavía los necesito? ¿Qué extensiones de terceros cubren mis necesidades?
+- **Extensiones**: ¿Todavía las necesito? ¿Qué extensiones de terceros cubren mis necesidades?
 
-- **Integraciones**— ¿Con qué sistemas de terceros, como ERP y contabilidad, necesito integrarme? ¿Tienen conectores específicos o se necesitan integraciones personalizadas?
+- **Integraciones**: ¿Con qué sistemas de terceros, como ERP y contabilidad, necesito integrarme? ¿Tienen conectores específicos o se necesitan integraciones personalizadas?
 
-- **Formación**—¿Tiene el equipo de actualización los conocimientos y la formación adecuados? ¿Cuál es mi plan para formar a los usuarios finales sobre cómo utilizar al nuevo administrador antes de que se ponga en marcha?
+- **Formación**: ¿Tiene el equipo de actualización los conocimientos y la formación adecuados? ¿Qué es?
+¿mi plan para formar a los usuarios finales sobre cómo utilizar al nuevo administrador antes de que se ponga en marcha?
 
-- **Equipo de actualización**— ¿Quién está dedicado al proyecto de actualización (tanto los expertos internos como externos)? ¿Cuentan con el apoyo necesario de la dirección y de otros equipos internos?
+- **Equipo de actualización**: ¿Quién está dedicado al proyecto de actualización (expertos internos y externos)? ¿Cuentan con el apoyo necesario de la dirección y de otros equipos internos?
 
 ## Preguntas frecuentes sobre la actualización
 
@@ -50,7 +51,7 @@ R: Depende de la plataforma y la arquitectura. Hay muchas variables, y si tambi�
 
 P: ¿Cuánto cuesta la actualización?
 
-R: De nuevo, depende de su situación actual y de sus necesidades para su nuevo sitio. La buena noticia es que, por lo general, como socios y desarrolladores se han familiarizado y adaptado mejor a su plataforma de Commerce, los costes de actualización y la duración de los proyectos se han reducido. Le recomendamos que consulte con su socio de soluciones para obtener una estimación.
+R: De nuevo, depende de su situación actual y de sus necesidades para su nuevo sitio. La buena noticia es que, por lo general, a medida que los socios y desarrolladores se han familiarizado y adaptado a su plataforma de Commerce, los costes de actualización y la duración de los proyectos se han reducido. Le recomendamos que consulte con su socio de soluciones para obtener una estimación.
 
 P: ¿Están disponibles las versiones de Adobe Commerce 2 de mis extensiones de Adobe Commerce 1?
 

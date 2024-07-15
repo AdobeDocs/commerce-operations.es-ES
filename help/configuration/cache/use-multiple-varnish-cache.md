@@ -18,9 +18,9 @@ En este tema se muestran los conceptos básicos para configurar varias instancia
 
 ## Configuración para depurar varias instancias de Barniz
 
-Commerce purga los hosts de Varnish después de configurar los hosts de Varnish mediante el [`magento setup:config:set`](../../installation/tutorials/deployment.md) comando.
+Commerce purga los hosts de Varnish después de configurar los hosts de Varnish mediante el comando [`magento setup:config:set`](../../installation/tutorials/deployment.md).
 
-Debe usar el `--http-cache-hosts` para especificar una lista separada por comas de hosts de barniz y puertos de escucha. (No separe los hosts con caracteres de espacio.)
+Debe usar el parámetro `--http-cache-hosts` para especificar una lista separada por comas de hosts de Varnish y puertos de escucha. (No separe los hosts con caracteres de espacio.)
 
 El formato del parámetro debe ser `<hostname or ip>:<listen port>`, donde puede omitir `<listen port>` si es el puerto 80.
 
@@ -30,8 +30,8 @@ Por ejemplo,
 bin/magento setup:config:set --http-cache-hosts=192.0.2.100,192.0.2.155:8080
 ```
 
-A continuación, puede purgar todos los hosts de Barniz al actualizar la caché de Commerce (también denominada _limpieza_ la caché) en Admin o mediante la línea de comandos.
+A continuación, puede purgar todos los hosts de Varnish cuando actualice la caché de Commerce (también conocida como _limpieza_ de la caché) en Admin o mediante la línea de comandos.
 
-Para actualizar la caché con el administrador, haga clic en **SISTEMA** > Herramientas > **Administración de caché**, luego haga clic en **Vaciar caché del Magento** en la parte superior de la página. (También puede actualizar tipos de caché individuales).
+Para actualizar la caché con el administrador, haga clic en **SISTEMA** > Herramientas > **Administración de caché** y, a continuación, haga clic en **Vaciar caché del Magento** en la parte superior de la página. (También puede actualizar tipos de caché individuales).
 
-Para actualizar la caché de varias instancias de Barniz desde cli, utilice el [`magento cache:clean <type>`](../cli/manage-cache.md#clean-and-flush-cache-types) como el [propietario del sistema de archivos](../../installation/prerequisites/file-system/overview.md).
+Para actualizar la caché de varias instancias de Varnish desde cli, use el comando [`magento cache:clean <type>`](../cli/manage-cache.md#clean-and-flush-cache-types) como [propietario del sistema de archivos](../../installation/prerequisites/file-system/overview.md).

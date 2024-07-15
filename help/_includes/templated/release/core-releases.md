@@ -9,7 +9,7 @@ ht-degree: 0%
 
 ## 2.4.7
 
-La compatibilidad con la línea de versión 2.4.7 finaliza el 9 de abril de 2027.
+La compatibilidad con la línea de la versión 2.4.7 finaliza el abril  9 de febrero de 2027.
 
 <table>
   <thead>
@@ -29,7 +29,7 @@ La compatibilidad con la línea de versión 2.4.7 finaliza el 9 de abril de 2027
         <td>
           <a href="https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-7.html">2.4.7</a>
         </td>
-        <td>9 de abril de 2024</td>
+        <td>Abril  9 de febrero de 2024</td>
     </tr><!-- patch_releases -->
   </tbody>
 </table>
@@ -56,7 +56,7 @@ La compatibilidad con la línea de la versión 2.4.6 finaliza el 14 de marzo de 
         <td>
           <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches#adobe-commerce-246-p5">2.4.6-p5</a>
         </td>
-        <td>9 de abril de 2024</td>
+        <td>Abril  9 de febrero de 2024</td>
     </tr>
     <tr>
         <td>
@@ -74,7 +74,7 @@ La compatibilidad con la línea de la versión 2.4.6 finaliza el 14 de marzo de 
         <td>
           <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches#p2">2.4.6-p2</a>
         </td>
-        <td>8 de agosto de 2023</td>
+        <td>agosto  8 de febrero de 2023</td>
     </tr>
     <tr>
         <td>
@@ -93,7 +93,7 @@ La compatibilidad con la línea de la versión 2.4.6 finaliza el 14 de marzo de 
 
 ## 2.4.5
 
-La compatibilidad con la línea de versión 2.4.5 finaliza el 9 de agosto de 2025.
+La compatibilidad con la línea de la versión 2.4.5 finaliza en agosto  9 de febrero de 2025.
 
 <table>
   <thead>
@@ -105,7 +105,7 @@ La compatibilidad con la línea de versión 2.4.5 finaliza el 9 de agosto de 202
   <tbody>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#adobe-commerce-245-p8">2,4,5-p8</a>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#adobe-commerce-245-p8">2.4.5-p8</a>
         </td>
         <td>11 de junio de 2024</td>
     </tr>
@@ -113,7 +113,7 @@ La compatibilidad con la línea de versión 2.4.5 finaliza el 9 de agosto de 202
         <td>
           <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#adobe-commerce-245-p7">2.4.5-p7</a>
         </td>
-        <td>9 de abril de 2024</td>
+        <td>Abril  9 de febrero de 2024</td>
     </tr>
     <tr>
         <td>
@@ -123,7 +123,7 @@ La compatibilidad con la línea de versión 2.4.5 finaliza el 9 de agosto de 202
     </tr>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#adobe-commerce-245-p5">2,4,5-p5</a>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#adobe-commerce-245-p5">2.4.5-p5</a>
         </td>
         <td>10 de octubre de 2023</td>
     </tr>
@@ -131,23 +131,23 @@ La compatibilidad con la línea de versión 2.4.5 finaliza el 9 de agosto de 202
         <td>
           <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#adobe-commerce-245-p4">2.4.5-p4</a>
         </td>
-        <td>8 de agosto de 2023</td>
+        <td>agosto  8 de febrero de 2023</td>
     </tr>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#adobe-commerce-245-p3">2,4,5-p3</a>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#adobe-commerce-245-p3">2.4.5-p3</a>
         </td>
         <td>13 de junio de 2023</td>
     </tr>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#adobe-commerce-245-p2-release-notes">2,4,5-p2</a>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#adobe-commerce-245-p2-release-notes">2.4.5-p2</a>
         </td>
         <td>14 de marzo de 2023</td>
     </tr>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#adobe-commerce-245-p1">2,4,5-p1</a>
+          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#adobe-commerce-245-p1">2.4.5-p1</a>
         </td>
         <td>11 de octubre de 2022</td>
     </tr>
@@ -155,7 +155,7 @@ La compatibilidad con la línea de versión 2.4.5 finaliza el 9 de agosto de 202
         <td>
           <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-5">2.4.5</a>
         </td>
-        <td>9 de agosto de 2022</td>
+        <td>agosto  9 de septiembre de 2022</td>
     </tr><!-- patch_releases -->
   </tbody>
 </table>
@@ -182,7 +182,7 @@ La compatibilidad con la línea de versión 2.4.4 finaliza el 24 de abril de 202
         <td>
           <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches#p8">2.4.4-p8</a>
         </td>
-        <td>9 de abril de 2024</td>
+        <td>Abril  9 de febrero de 2024</td>
     </tr>
     <tr>
         <td>
@@ -200,7 +200,7 @@ La compatibilidad con la línea de versión 2.4.4 finaliza el 24 de abril de 202
         <td>
           <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches#p5">2.4.4-p5</a>
         </td>
-        <td>8 de agosto de 2023</td>
+        <td>agosto  8 de febrero de 2023</td>
     </tr>
     <tr>
         <td>
@@ -224,7 +224,7 @@ La compatibilidad con la línea de versión 2.4.4 finaliza el 24 de abril de 202
         <td>
           <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches#p1">2.4.4-p1</a>
         </td>
-        <td>9 de agosto de 2022</td>
+        <td>agosto  9 de septiembre de 2022</td>
     </tr>
     <tr>
         <td>
@@ -251,7 +251,7 @@ La compatibilidad con la línea de versión 2.4.0-2.4.3 finalizó el 28 de novie
         <td>
           <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-3-patches#adobe-commerce-243-p3">2.4.3-p3</a>
         </td>
-        <td>9 de agosto de 2022</td>
+        <td>agosto  9 de septiembre de 2022</td>
     </tr>
     <tr>
         <td>
@@ -287,13 +287,13 @@ La compatibilidad con la línea de versión 2.4.0-2.4.3 finalizó el 28 de novie
         <td>
           <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-2">2.4.2</a>
         </td>
-        <td>9 de febrero de 2021</td>
+        <td>Febrero  9 de febrero de 2021</td>
     </tr>
     <tr>
         <td>
           2.4.1-p1
         </td>
-        <td>9 de febrero de 2021</td>
+        <td>Febrero  9 de febrero de 2021</td>
     </tr>
     <tr>
         <td>
@@ -318,7 +318,7 @@ La compatibilidad con la línea de versión 2.4.0-2.4.3 finalizó el 28 de novie
 
 ## 2,3
 
-La compatibilidad con la línea de versión 2.3 finalizó el 8 de septiembre de 2022.
+La compatibilidad con la línea de versión 2.3 finalizó el 9 de septiembre  8 de febrero de 2022.
 
 <table>
   <thead>
@@ -332,7 +332,7 @@ La compatibilidad con la línea de versión 2.3 finalizó el 8 de septiembre de 
         <td>
           <a href="https://devdocs.magento.com/guides/v2.3/release-notes/2-3-7-p4.html">2.3.7-p4</a>
         </td>
-        <td>9 de agosto de 2022</td>
+        <td>agosto  9 de septiembre de 2022</td>
     </tr>
     <tr>
         <td>
@@ -342,7 +342,7 @@ La compatibilidad con la línea de versión 2.3 finalizó el 8 de septiembre de 
     </tr>
     <tr>
         <td>
-          <a href="https://devdocs.magento.com/guides/v2.3/release-notes/2-3-7-p2.html">2,3,7-p2</a>
+          <a href="https://devdocs.magento.com/guides/v2.3/release-notes/2-3-7-p2.html">2.3.7-p2</a>
         </td>
         <td>12 de octubre de 2021</td>
     </tr>
@@ -362,7 +362,7 @@ La compatibilidad con la línea de versión 2.3 finalizó el 8 de septiembre de 
         <td>
           2.3.6-p1
         </td>
-        <td>9 de febrero de 2021</td>
+        <td>Febrero  9 de febrero de 2021</td>
     </tr>
     <tr>
         <td>
@@ -410,13 +410,13 @@ La compatibilidad con la línea de versión 2.3 finalizó el 8 de septiembre de 
         <td>
           2.3.2-p2
         </td>
-        <td>9 de octubre de 2019</td>
+        <td>Octubre  9 de septiembre de 2019</td>
     </tr>
     <tr>
         <td>
           <a href="https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-3-commerce.html">2.3.3</a>
         </td>
-        <td>8 de octubre de 2019</td>
+        <td>Octubre  8 de octubre de 2019</td>
     </tr>
     <tr>
         <td>
@@ -426,7 +426,7 @@ La compatibilidad con la línea de versión 2.3 finalizó el 8 de septiembre de 
     </tr>
     <tr>
         <td>
-          <a href="https://devdocs.magento.com/guides/v2.3/release-notes/ReleaseNotes2.3.1Commerce.html">2.3.1.</a>
+          <a href="https://devdocs.magento.com/guides/v2.3/release-notes/ReleaseNotes2.3.1Commerce.html">2.3.1</a>
         </td>
         <td>26 de marzo de 2019</td>
     </tr>
@@ -441,7 +441,7 @@ La compatibilidad con la línea de versión 2.3 finalizó el 8 de septiembre de 
 
 ## 2,2
 
-La compatibilidad con la línea de versión 2.2 finalizó el 1 de diciembre de 2019.
+La compatibilidad con la línea de versión 2.2 finalizó el 1 de diciembre  1 de enero de 2019.
 
 <table>
   <thead>
@@ -461,7 +461,7 @@ La compatibilidad con la línea de versión 2.2 finalizó el 1 de diciembre de 2
         <td>
           2.2.10
         </td>
-        <td>8 de octubre de 2019</td>
+        <td>Octubre  8 de octubre de 2019</td>
     </tr>
     <tr>
         <td>
@@ -497,7 +497,7 @@ La compatibilidad con la línea de versión 2.2 finalizó el 1 de diciembre de 2
         <td>
           2.2.4
         </td>
-        <td>2 de mayo de 2018</td>
+        <td>Mayo  2 DE FEBRERO DE 2018</td>
     </tr>
     <tr>
         <td>
@@ -515,7 +515,7 @@ La compatibilidad con la línea de versión 2.2 finalizó el 1 de diciembre de 2
         <td>
           2.2.1
         </td>
-        <td>7 de noviembre de 2017</td>
+        <td>noviembre  7 de octubre de 2017</td>
     </tr>
     <tr>
         <td>
@@ -572,7 +572,7 @@ La compatibilidad con la línea de versión 2.1 finalizó el 30 de junio de 2019
         <td>
           2.1.13
         </td>
-        <td>2 de mayo de 2018</td>
+        <td>Mayo  2 DE FEBRERO DE 2018</td>
     </tr>
     <tr>
         <td>
@@ -590,7 +590,7 @@ La compatibilidad con la línea de versión 2.1 finalizó el 30 de junio de 2019
         <td>
           2.1.10
         </td>
-        <td>7 de noviembre de 2017</td>
+        <td>noviembre  7 de octubre de 2017</td>
     </tr>
     <tr>
         <td>
@@ -602,7 +602,7 @@ La compatibilidad con la línea de versión 2.1 finalizó el 30 de junio de 2019
         <td>
           2.1.8
         </td>
-        <td>9 de agosto de 2017</td>
+        <td>agosto  9 de septiembre de 2017</td>
     </tr>
     <tr>
         <td>
@@ -626,7 +626,7 @@ La compatibilidad con la línea de versión 2.1 finalizó el 30 de junio de 2019
         <td>
           2.1.4
         </td>
-        <td>7 de febrero de 2017</td>
+        <td>Febrero  7 de octubre de 2017</td>
     </tr>
     <tr>
         <td>
@@ -677,7 +677,7 @@ La compatibilidad con la línea de versión 2.0 finalizó el 31 de marzo de 2018
         <td>
           2.0.17
         </td>
-        <td>7 de noviembre de 2017</td>
+        <td>noviembre  7 de octubre de 2017</td>
     </tr>
     <tr>
         <td>
@@ -707,7 +707,7 @@ La compatibilidad con la línea de versión 2.0 finalizó el 31 de marzo de 2018
         <td>
           2.0.12
         </td>
-        <td>7 de febrero de 2017</td>
+        <td>Febrero  7 de octubre de 2017</td>
     </tr>
     <tr>
         <td>

@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Completar requisitos previos de actualización
 
-Es importante comprender lo necesario para ejecutar Adobe Commerce. Primero debe revisar la [requisitos del sistema](../../installation/system-requirements.md) para la versión a la que planea actualizar.
+Es importante comprender lo necesario para ejecutar Adobe Commerce. Primero debe revisar los [requisitos del sistema](../../installation/system-requirements.md) para la versión a la que planea actualizar.
 
 Después de revisar los requisitos del sistema, debe completar los siguientes requisitos previos antes de actualizar el sistema:
 
@@ -22,32 +22,32 @@ Después de revisar los requisitos del sistema, debe completar los siguientes re
 * Verificar que los trabajos cron se estén ejecutando
 * Establecer `DATA_CONVERTER_BATCH_SIZE`
 * Comprobar permisos del sistema de archivos
-* Configure las variables `pub/` raíz de directorio
+* Establecer la raíz del directorio `pub/`
 * Instalación del complemento de actualización del Compositor
 
 ## Actualizar todo el software
 
-El [requisitos del sistema](../../installation/system-requirements.md) describa exactamente qué versiones de software de terceros se han probado con las versiones de Adobe Commerce.
+Los [requisitos del sistema](../../installation/system-requirements.md) describen exactamente qué versiones de software de terceros se han probado con las versiones de Adobe Commerce.
 
-Asegúrese de haber actualizado todos los requisitos y dependencias del sistema de su entorno. Consulte PHP [7,4](https://www.php.net/manual/en/migration74.php), PHP [8,0](https://www.php.net/manual/en/migration80.php), PHP [8,1](https://www.php.net/manual/en/migration81.php), y [configuración de PHP requerida](../../installation/prerequisites/php-settings.md#php-settings).
+Asegúrese de haber actualizado todos los requisitos y dependencias del sistema de su entorno. Consulte PHP [7.4](https://www.php.net/manual/en/migration74.php), PHP [8.0](https://www.php.net/manual/en/migration80.php), PHP [8.1](https://www.php.net/manual/en/migration81.php) y [configuración de PHP requerida](../../installation/prerequisites/php-settings.md#php-settings).
 
 >[!NOTE]
 >
->Para los proyectos Pro de Adobe Commerce en la infraestructura en la nube, debe crear un [Asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) para instalar o actualizar servicios en entornos de ensayo y producción. Indique los cambios de servicio necesarios e incluya su `.magento.app.yaml` y `services.yaml` archivos y versión de PHP en el ticket. El equipo de infraestructura en la nube puede tardar hasta 48 horas en actualizar el proyecto. Consulte [Software y servicios compatibles](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/cloud-architecture.html#supported-software-and-services).
+>Para los proyectos Pro de Adobe Commerce en la nube, debe crear un ticket de [Soporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) para instalar o actualizar servicios en entornos de Ensayo y Producción. Indique los cambios de servicio necesarios e incluya los `.magento.app.yaml` y `services.yaml` archivos actualizados y la versión de PHP en el ticket. El equipo de infraestructura en la nube puede tardar hasta 48 horas en actualizar el proyecto. Consulte [Software y servicios compatibles](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/cloud-architecture.html#supported-software-and-services).
 
 ## Compruebe que haya instalado un motor de búsqueda compatible
 
 Adobe Commerce requiere que Elasticsearch u OpenSearch estén instalados para utilizar el software.
 
-**Si actualiza de 2.3.x a 2.4**, debe comprobar si está utilizando MySQL, Elasticsearch o una extensión de terceros como motor de búsqueda del catálogo en la instancia 2.3.x. El resultado determina lo que debe hacer _antes_ actualización a 2.4.
+**Si está actualizando de 2.3.x a 2.4**, debe comprobar si está utilizando MySQL, Elasticsearch o una extensión de terceros como motor de búsqueda del catálogo en su instancia de 2.3.x. El resultado determina lo que debe hacer _antes de_ actualizar a 2.4.
 
-**Si actualiza versiones de parches dentro de las líneas de versión 2.3.x o 2.4.x**, si Elasticsearch 7.x ya está instalado, puede [migrar a OpenSearch](opensearch-migration.md).
+**Si está actualizando revisiones en las líneas de versión 2.3.x o 2.4.x**, si el Elasticsearch 7.x ya está instalado, puede [migrar de forma opcional a OpenSearch](opensearch-migration.md).
 
 Puede utilizar la línea de comandos o el administrador para determinar el motor de búsqueda del catálogo:
 
-* Introduzca el `bin/magento config:show catalog/search/engine` comando. El comando devuelve un valor de `mysql`, `elasticsearch` (lo que indica que el Elasticsearch 2 está configurado), `elasticsearch5`, `elasticsearch6`, `elasticsearch7`o un valor personalizado, que indica que ha instalado un motor de búsqueda de terceros. Para versiones anteriores a la 2.4.6, utilice la variable `elasticsearch7` para el Elasticsearch 7 o el motor OpenSearch. Para la versión 2.4.6 y posterior de, utilice el `opensearch` para el motor OpenSearch.
+* Escriba el comando `bin/magento config:show catalog/search/engine`. El comando devuelve un valor de `mysql`, `elasticsearch` (que indica que el Elasticsearch 2 está configurado), `elasticsearch5`, `elasticsearch6`, `elasticsearch7` o un valor personalizado, lo que indica que ha instalado un motor de búsqueda de terceros. Para las versiones anteriores a 2.4.6, utilice el valor `elasticsearch7` para el Elasticsearch 7 o el motor OpenSearch. Para la versión 2.4.6 y posterior, utilice el valor `opensearch` para el motor OpenSearch.
 
-* En Admin, compruebe el valor de **[!UICONTROL Stores]** > [!UICONTROL Settings] > **[!UICONTROL Configuration]** > **[!UICONTROL Catalog]** > **[!UICONTROL Catalog]** > **[!UICONTROL Catalog Search]** > **[!UICONTROL Search Engine]** field.
+* En Admin, compruebe el valor del campo **[!UICONTROL Stores]** > [!UICONTROL Settings] > **[!UICONTROL Configuration]** > **[!UICONTROL Catalog]** > **[!UICONTROL Catalog]** > **[!UICONTROL Catalog Search]** > **[!UICONTROL Search Engine]**.
 
 Las secciones siguientes describen qué acciones debe realizar antes de actualizar a 2.4.0.
 
@@ -57,8 +57,8 @@ A partir de la versión 2.4, MySQL ya no es un motor de búsqueda de catálogo c
 
 * [Elasticsearch de instalación y configuración](../../configuration/search/overview-search.md)
 * [Elasticsearch de instalación](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html)
-* Configurar [nginx](../../installation/prerequisites/search-engine/configure-nginx.md) o [Apache](../../installation/prerequisites/search-engine/configure-apache.md) para trabajar con el motor de búsqueda
-* [Configuración de Commerce para utilizar Elasticsearch](../../configuration/search/configure-search-engine.md) y reindexar
+* Configure [nginx](../../installation/prerequisites/search-engine/configure-nginx.md) o [Apache](../../installation/prerequisites/search-engine/configure-apache.md) para que funcionen con el motor de búsqueda
+* [Configurar Commerce para que use el Elasticsearch](../../configuration/search/configure-search-engine.md) y reindexe
 
 Algunos motores de búsqueda de catálogos de terceros se ejecutan sobre el motor de búsqueda de Adobe Commerce. Póngase en contacto con el proveedor para determinar si debe actualizar la extensión.
 
@@ -68,11 +68,11 @@ Algunos motores de búsqueda de catálogos de terceros se ejecutan sobre el moto
 
 ### Motor de búsqueda
 
-Debe instalar y configurar Elasticsearch 7.6 o superior o OpenSearch 1.2 antes de actualizar a 2.4.0. Adobe ya no es compatible con Elasticsearch 2.x, 5.x y 6.x. [Configuración del motor de búsqueda](../../configuration/search/configure-search-engine.md) en el _Guía de configuración_ describe las tareas que debe realizar después de actualizar Elasticsearch a una versión compatible.
+Debe instalar y configurar Elasticsearch 7.6 o superior o OpenSearch 1.2 antes de actualizar a 2.4.0. Adobe ya no es compatible con Elasticsearch 2.x, 5.x y 6.x. [Configuración del motor de búsqueda](../../configuration/search/configure-search-engine.md) en la _Guía de configuración_ describe las tareas que debe realizar después de actualizar el Elasticsearch a una versión compatible.
 
-Consulte [Elasticsearch de actualización](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) para obtener instrucciones completas sobre la realización de copias de seguridad de los datos, la detección de posibles problemas de migración y la prueba de actualizaciones antes de su implementación en producción. Según la versión actual del Elasticsearch, puede que sea necesario o no reiniciar el clúster por completo.
+Consulte [Actualización del Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) para obtener instrucciones completas sobre cómo realizar copias de seguridad de los datos, detectar posibles problemas de migración y probar las actualizaciones antes de implementarlas en producción. Según la versión actual del Elasticsearch, puede que sea necesario o no reiniciar el clúster por completo.
 
-Elasticsearch requiere Java Development Kit (JDK) 1.8 o superior. Consulte [Instale el Kit de desarrollo de software de Java (JDK)](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk) para comprobar qué versión de JDK está instalada.
+Elasticsearch requiere Java Development Kit (JDK) 1.8 o superior. Consulte [Instalar el Kit de desarrollo de software de Java (JDK)](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk) para comprobar qué versión de JDK está instalada.
 
 #### OpenSearch
 
@@ -84,9 +84,9 @@ OpenSearch es una ramificación de código abierto de Elasticsearch 7.10.2, tras
 * 2.4.3-p2
 * 2.3.7-p3
 
-Puede [migrar del Elasticsearch a OpenSearch](opensearch-migration.md) solo si actualiza a una versión de Adobe Commerce de la lista anterior (o posterior).
+Solo puede [migrar de Elasticsearch a OpenSearch](opensearch-migration.md) si está actualizando a una versión de Adobe Commerce de la lista anterior (o superior).
 
-OpenSearch requiere JDK 1.8 o superior. Consulte [Instale el Kit de desarrollo de software de Java (JDK)](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk) para comprobar qué versión de JDK está instalada.
+OpenSearch requiere JDK 1.8 o superior. Consulte [Instalar el Kit de desarrollo de software de Java (JDK)](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk) para comprobar qué versión de JDK está instalada.
 
 [Configuración del motor de búsqueda](../../configuration/search/configure-search-engine.md) describe las tareas que debe realizar después de cambiar los motores de búsqueda.
 
@@ -94,9 +94,9 @@ OpenSearch requiere JDK 1.8 o superior. Consulte [Instale el Kit de desarrollo d
 
 La compatibilidad con Elasticsearch 8.x se introdujo en Adobe Commerce 2.4.6. Las siguientes instrucciones muestran un ejemplo de actualización de Elasticsearch de 7.x a 8.x:
 
-1. Actualice el servidor de Elasticsearch 7.x a 8.x y asegúrese de que está en funcionamiento. Consulte la [Documentación del Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html).
+1. Actualice el servidor de Elasticsearch 7.x a 8.x y asegúrese de que está en funcionamiento. Consulte la [documentación del Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html).
 
-1. Habilite la `id_field_data` al añadir la siguiente configuración a su `elasticsearch.yml` y reiniciar el servicio de Elasticsearch 8.x.
+1. Habilite el campo `id_field_data` agregando la siguiente configuración al archivo `elasticsearch.yml` y reiniciando el servicio de Elasticsearch 8.x.
 
    ```yaml
    indices:
@@ -106,9 +106,9 @@ La compatibilidad con Elasticsearch 8.x se introdujo en Adobe Commerce 2.4.6. La
 
    >[!INFO]
    >
-   >Para admitir el Elasticsearch 8.x, Adobe Commerce 2.4.6 deshabilita la `indices.id_field_data` de forma predeterminada y utiliza la propiedad `_id` en el campo `docvalue_fields` propiedad.
+   >Para admitir el Elasticsearch 8.x, Adobe Commerce 2.4.6 deshabilita la propiedad `indices.id_field_data` de forma predeterminada y utiliza el campo `_id` en la propiedad `docvalue_fields`.
 
-1. En el directorio raíz del proyecto de Adobe Commerce, actualice las dependencias del Compositor para eliminar el `Magento_Elasticsearch7` e instale el `Magento_Elasticsearch8` módulo.
+1. En el directorio raíz del proyecto de Adobe Commerce, actualice las dependencias del Compositor para quitar el módulo `Magento_Elasticsearch7` e instalar el módulo `Magento_Elasticsearch8`.
 
    ```bash
    composer require magento/module-elasticsearch-8 --update-with-all-dependencies
@@ -120,7 +120,7 @@ La compatibilidad con Elasticsearch 8.x se introdujo en Adobe Commerce 2.4.6. La
    bin/magento setup:upgrade
    ```
 
-1. [Configuración del Elasticsearch](../../configuration/search/configure-search-engine.md#configure-your-search-engine-from-the-admin) en el [!DNL Admin].
+1. [Configurar Elasticsearch](../../configuration/search/configure-search-engine.md#configure-your-search-engine-from-the-admin) en [!DNL Admin].
 
 1. Reindexe el índice del catálogo.
 
@@ -138,9 +138,9 @@ La compatibilidad con Elasticsearch 8.x se introdujo en Adobe Commerce 2.4.6. La
 
 Si actualiza de forma involuntaria la versión de Elasticsearch en el servidor o determina que necesita degradarla por cualquier otro motivo, también debe actualizar las dependencias del proyecto de Adobe Commerce. Por ejemplo, para reducir de Elasticsearch 8.x a 7.x
 
-1. Reduzca el servidor de Elasticsearch 8.x a 7.x y asegúrese de que está en funcionamiento. Consulte la [Documentación del Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html).
+1. Reduzca el servidor de Elasticsearch 8.x a 7.x y asegúrese de que está en funcionamiento. Consulte la [documentación del Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html).
 
-1. En el directorio raíz del proyecto de Adobe Commerce, actualice las dependencias del Compositor para eliminar el `Magento_Elasticsearch8` y sus dependencias de Compositor, e instale el `Magento_Elasticsearch7` módulo.
+1. En el directorio raíz del proyecto de Adobe Commerce, actualice las dependencias de Composer para quitar el módulo `Magento_Elasticsearch8` y sus dependencias de Composer e instale el módulo `Magento_Elasticsearch7`.
 
    ```bash
    composer remove magento/module-elasticsearch-8
@@ -152,7 +152,7 @@ Si actualiza de forma involuntaria la versión de Elasticsearch en el servidor o
    bin/magento setup:upgrade
    ```
 
-1. [Configuración del Elasticsearch](../../configuration/search/configure-search-engine.md#configure-your-search-engine-from-the-admin) en el [!DNL Admin].
+1. [Configurar Elasticsearch](../../configuration/search/configure-search-engine.md#configure-your-search-engine-from-the-admin) en [!DNL Admin].
 
 1. Reindexe el índice del catálogo.
 
@@ -172,18 +172,18 @@ Le recomendamos que se ponga en contacto con el proveedor del motor de búsqueda
 
 ## Convertir formato de tabla de base de datos
 
-Debe convertir el formato de todas las tablas de base de datos de `COMPACT` hasta `DYNAMIC`. También debe convertir el tipo de motor de almacenamiento de `MyISAM` hasta `InnoDB`. Consulte [prácticas recomendadas](../../implementation-playbook/best-practices/maintenance/mariadb-upgrade.md).
+Debe convertir el formato de todas las tablas de base de datos de `COMPACT` a `DYNAMIC`. También debe convertir el tipo de motor de almacenamiento de `MyISAM` a `InnoDB`. Ver [prácticas recomendadas](../../implementation-playbook/best-practices/maintenance/mariadb-upgrade.md).
 
 ## Establecer el límite de archivos abiertos
 
-Establecer el límite (ulimit) de archivos abiertos puede ayudar a evitar errores en varias llamadas recursivas de cadenas de consulta largas o problemas con el uso del `bin/magento setup:rollback` comando. Este comando es diferente para diferentes shells de UNIX. Consulte su sabor individual para obtener detalles específicos sobre el `ulimit` comando.
+Establecer el límite (ulimit) de archivos abiertos puede ayudar a evitar errores en varias llamadas recursivas de cadenas de consulta largas o problemas con el uso del comando `bin/magento setup:rollback`. Este comando es diferente para diferentes shells de UNIX. Consulte su sabor individual para obtener detalles específicos sobre el comando `ulimit`.
 
-El Adobe recomienda configurar los archivos abiertos [ulimit](https://ss64.com/bash/ulimit.html) hasta un valor de `65536` o más, pero puede utilizar un valor mayor si es necesario. Puede establecer el ulimit en la línea de comandos o convertirlo en un ajuste permanente para el shell del usuario.
+El Adobe recomienda establecer los archivos abiertos [ulimit](https://ss64.com/bash/ulimit.html) a un valor de `65536` o más, pero puede usar un valor mayor si es necesario. Puede establecer el ulimit en la línea de comandos o convertirlo en un ajuste permanente para el shell del usuario.
 
 Para establecer el ulimit desde la línea de comandos:
 
-1. Cambie a la [propietario del sistema de archivos](../../installation/prerequisites/file-system/overview.md).
-1. Establezca ulimit en `65536`.
+1. Cambiar al [propietario del sistema de archivos](../../installation/prerequisites/file-system/overview.md).
+1. Establezca el ulimit en `65536`.
 
    ```bash
    ulimit -n 65536
@@ -191,23 +191,23 @@ Para establecer el ulimit desde la línea de comandos:
 
 Para establecer el valor en su shell de Bash:
 
-1. Cambie a la [propietario del sistema de archivos](../../installation/prerequisites/file-system/overview.md).
-1. Abrir `/home/<username>/.bashrc` en un editor de texto.
+1. Cambiar al [propietario del sistema de archivos](../../installation/prerequisites/file-system/overview.md).
+1. Abra `/home/<username>/.bashrc` en un editor de texto.
 1. Añada la línea siguiente:
 
    ```bash
    ulimit -n 65536
    ```
 
-1. Guarde los cambios en `.bashrc` y salga del editor de texto.
+1. Guarde los cambios en el archivo `.bashrc` y salga del editor de texto.
 
 >[!IMPORTANT]
 >
->Se recomienda evitar establecer un valor para `pcre.recursion_limit` propiedad en el `php.ini` porque puede provocar reversiones incompletas sin previo aviso de error.
+>Le recomendamos que evite establecer un valor para la propiedad `pcre.recursion_limit` en el archivo `php.ini`, ya que puede provocar reversiones incompletas sin previo aviso de error.
 
 ## Verificar que los trabajos cron se estén ejecutando
 
-El planificador de tareas UNIX `cron` es fundamental para las operaciones diarias de Adobe Commerce. Programa cosas como la reindexación, los boletines informativos, los correos electrónicos y los mapas del sitio. Varias funciones requieren que al menos un trabajo cron se ejecute como propietario del sistema de archivos.
+El programador de tareas de UNIX `cron` es fundamental para las operaciones diarias de Adobe Commerce. Programa cosas como la reindexación, los boletines informativos, los correos electrónicos y los mapas del sitio. Varias funciones requieren que al menos un trabajo cron se ejecute como propietario del sistema de archivos.
 
 Para comprobar que el trabajo de cron está configurado correctamente, compruebe el crontab introduciendo el siguiente comando como propietario del sistema de archivos:
 
@@ -231,7 +231,7 @@ Otro síntoma de que cron no se está ejecutando es el siguiente error en el adm
 
 ![](../../assets/upgrade-guide/cron-not-running.png)
 
-Para ver el error, haga clic en **Mensajes del sistema** en la parte superior de la ventana, como se indica a continuación:
+Para ver el error, haga clic en **Mensajes del sistema** en la parte superior de la ventana de la siguiente manera:
 
 ![](../../assets/upgrade-guide/system-messages.png)
 
@@ -253,11 +253,11 @@ Las siguientes tablas son las más afectadas:
 * `salesrule`
 * `url_rewrite`
 
-Si tiene una gran cantidad de datos, puede mejorar el rendimiento configurando el valor de una variable de entorno, `DATA_CONVERTER_BATCH_SIZE`. El valor predeterminado es `50,000`.
+Si tiene una gran cantidad de datos, puede mejorar el rendimiento estableciendo el valor de una variable de entorno, `DATA_CONVERTER_BATCH_SIZE`. De manera predeterminada, el valor se establece en `50,000`.
 
 Para establecer la variable de entorno:
 
-1. Cambie a la [propietario del sistema de archivos](../../installation/prerequisites/file-system/overview.md).
+1. Cambiar al [propietario del sistema de archivos](../../installation/prerequisites/file-system/overview.md).
 1. Configure la variable:
 
    ```bash
@@ -278,11 +278,11 @@ Para establecer la variable de entorno:
 
 Por motivos de seguridad, Adobe Commerce requiere ciertos permisos en el sistema de archivos. Los permisos son diferentes de _[propiedad](../../upgrade/prepare/prerequisites.md#verify-file-system-permissions)_. La propiedad determina quién puede realizar acciones en el sistema de archivos; los permisos determinan lo que el usuario puede hacer.
 
-Los directorios del sistema de archivos deben poder escribirse mediante el [propietario del sistema de archivos](../../installation/prerequisites/file-system/overview.md) grupo.
+El grupo [propietario del sistema de archivos](../../installation/prerequisites/file-system/overview.md) debe poder escribir en los directorios del sistema de archivos.
 
 Para comprobar que los permisos del sistema de archivos están correctamente configurados, inicie sesión en el servidor de aplicaciones o utilice la aplicación de administrador de archivos del proveedor de alojamiento.
 
-Por ejemplo, introduzca el siguiente comando si la aplicación está instalada en `/var/www/html/magento2`:
+Por ejemplo, escriba el siguiente comando si la aplicación está instalada en `/var/www/html/magento2`:
 
 ```bash
 ls -l /var/www/html/magento2
@@ -337,23 +337,23 @@ Para obtener información más detallada, puede introducir el siguiente comando:
 ls -la /var/www/html/magento2/pub
 ```
 
-Dado que Adobe Commerce implementa recursos de archivos estáticos en subdirectorios de `pub`Sin embargo, es una buena idea verificar los permisos y la propiedad allí también.
+Dado que Adobe Commerce implementa recursos de archivos estáticos en subdirectorios de `pub`, es aconsejable comprobar allí también los permisos y la propiedad.
 
 Para obtener más información, consulte [Permisos y propiedad del sistema de archivos](../../installation/prerequisites/file-system/overview.md).
 
-## Configure las variables `pub/` raíz de directorio
+## Establecer la raíz del directorio `pub/`
 
-Consulte [Modifique docroot para mejorar la seguridad](../../installation/tutorials/docroot.md) para obtener más información.
+Consulte [Modificar docroot para mejorar la seguridad](../../installation/tutorials/docroot.md) para obtener más información.
 
 ## Instalación del complemento de actualización del Compositor
 
-El [`magento/composer-root-update-plugin`](https://github.com/magento/composer-root-update-plugin) El complemento Compositor resuelve los cambios que deben realizarse en el proyecto raíz `composer.json` antes de actualizar a un nuevo requisito de producto.
+El complemento [`magento/composer-root-update-plugin`](https://github.com/magento/composer-root-update-plugin) Composer resuelve los cambios que deben realizarse en el archivo del proyecto raíz `composer.json` antes de actualizar a un nuevo requisito de producto.
 
 El complemento automatiza parcialmente la actualización manual al identificar y ayudarle a resolver conflictos de dependencia en lugar de requerir que los identifique y corrija manualmente.
 
 Para instalar el complemento:
 
-1. Añada el paquete a su `composer.json` archivo.
+1. Agregue el paquete a su archivo `composer.json`.
 
    ```bash
    composer require magento/composer-root-update-plugin ~2.0 --no-update

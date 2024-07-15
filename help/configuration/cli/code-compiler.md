@@ -4,7 +4,7 @@ description: Aprenda a ejecutar el compilador de código desde la línea de coma
 exl-id: 08dbf808-ea79-4956-a0bc-f464bb80eee7
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '174'
+source-wordcount: '161'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ La compilación de código incluye lo siguiente (sin ningún orden en particular
 - Generación de código de repositorios (código generado para las API)
 - Generación de atributos de datos del servicio (clases de extensión generadas para objetos de datos)
 
-Puede encontrar clases de compilación de código en el [\Magento\Setup\Module\Di\App\Task\Operation][operation] namespace.
+Puede encontrar clases de compilación de código en el espacio de nombres [\Magento\Setup\Module\Di\App\Task\Operation][operation].
 
 Para ejecutar el compilador de un solo inquilino:
 
@@ -44,7 +44,7 @@ En algunos casos, es posible que desee compilar el código antes de instalar la 
    bin/magento module:enable --all [-c|--clear-static-content]
    ```
 
-   Utilice el `[-c|--clear-static-content]` para borrar el contenido estático. Esto es necesario si ha habilitado o deshabilitado los módulos anteriormente y debe borrar el contenido estático generado anteriormente para ellos.
+   Utilice la opción `[-c|--clear-static-content]` para borrar el contenido estático. Esto es necesario si ha habilitado o deshabilitado los módulos anteriormente y debe borrar el contenido estático generado anteriormente para ellos.
 
    Consulte [Habilitar módulos](../../installation/tutorials/manage-modules.md).
 
@@ -58,7 +58,7 @@ En algunos casos, es posible que desee compilar el código antes de instalar la 
    Generated code and dependency injection configuration successfully.
    ```
 
-Para compilar código sin base de datos, consulte [Implementar archivos de vista estática sin instalar el Magento](../cli/static-view-file-deployment.md).
+Para compilar código sin base de datos, vea [Implementar archivos de vista estática sin instalar el Magento](../cli/static-view-file-deployment.md).
 
 <!-- link definitions -->
 

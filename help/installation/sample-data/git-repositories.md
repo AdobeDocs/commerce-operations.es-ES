@@ -18,26 +18,26 @@ Si no es un desarrollador colaborador, elija una de las otras opciones que se mu
 Los desarrolladores colaboradores pueden utilizar este método para instalar datos de ejemplo *solamente* si se cumple lo siguiente:
 
 * Utiliza Magento Open Source
-* Usted [clonado del repositorio de GitHub](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)
+* Usted [clonó el repositorio de GitHub](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)
 
 >[!WARNING]
 >
->Puede utilizar datos de ejemplo con las API `develop` rama (más actual) o una rama liberada (como `2.4` (más estable). Le recomendamos que utilice una rama liberada porque es más estable. Si va a contribuir con código al repositorio y necesita el código más reciente, utilice el `develop` Rama. Independientemente de la sucursal que elija, debe [clonar](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/) la rama correspondiente del repositorio de GitHub del Magento Open Source. Por ejemplo, datos de ejemplo para `develop` se puede utilizar la rama *solamente* con el Magento Open Source `develop` Rama.
+>Puede utilizar datos de ejemplo con la rama `develop` (más actual) o con una rama liberada (como `2.4` (más estable)). Le recomendamos que utilice una rama liberada porque es más estable. Si está contribuyendo código al repositorio y necesita el código más reciente, utilice la rama `develop`. Independientemente de la rama que elija, debe [clonar](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/) la rama correspondiente del repositorio de GitHub del Magento Open Source. Por ejemplo, los datos de ejemplo de la rama `develop` se pueden usar *solamente* con la rama del Magento Open Source `develop`.
 
 ## Clonar el repositorio de datos de ejemplo
 
 En esta sección se explica cómo instalar datos de ejemplo mediante la clonación del repositorio de datos de ejemplo. Puede clonar el repositorio de datos de ejemplo de cualquiera de las siguientes maneras:
 
-* Clonar con [protocolo SSH](#clone-with-ssh)
-* Clonar con [Protocolo HTTPS](#clone-with-https)
+* Clonar con el [protocolo SSH](#clone-with-ssh)
+* Clonar con el [protocolo HTTPS](#clone-with-https)
 
 ### Clonar con SSH
 
 Para clonar el repositorio de GitHub de datos de ejemplo utilizando el protocolo SSH:
 
-1. En un explorador web, vaya a la [repositorio de datos de ejemplo](https://github.com/magento/magento2-sample-data).
-1. Junto al nombre de la rama, haga clic en **SSH** de la lista.
-1. Clic **Copiar al portapapeles**
+1. En un explorador web, vaya a [repositorio de datos de ejemplo](https://github.com/magento/magento2-sample-data).
+1. Junto al nombre de la rama, haga clic en **SSH** en la lista.
+1. Haga clic en **Copiar al portapapeles**
 
    La siguiente figura muestra un ejemplo.
 
@@ -47,7 +47,7 @@ Para clonar el repositorio de GitHub de datos de ejemplo utilizando el protocolo
 
    Normalmente, para Ubuntu, es `/var/www` y para CentOS es `/var/www/html`.
 
-1. Entrar `git clone` y pegue el valor obtenido anteriormente.
+1. Escriba `git clone` y pegue el valor que obtuvo anteriormente.
 
    A continuación se muestra un ejemplo:
 
@@ -67,13 +67,13 @@ Para clonar el repositorio de GitHub de datos de ejemplo utilizando el protocolo
    fatal: The remote end hung up unexpectedly
    ```
 
-1. Asegúrese de extraer la rama del repositorio de datos de ejemplo que corresponda con la rama utilizada desde el repositorio principal `magento2` repositorio.
+1. Asegúrese de desproteger la rama del repositorio de datos de ejemplo que corresponda a la rama utilizada del repositorio principal `magento2`.
 
    Por ejemplo:
 
-   Si ha utilizado la variable `2.4-develop` rama del repositorio de GitHub del Magento Open Source, la rama de datos de ejemplo debe ser `2.4-develop`.
+   Si ha utilizado la rama `2.4-develop` del repositorio de GitHub del Magento Open Source, la rama de datos de ejemplo debe ser `2.4-develop`.
 
-   Para extraer la rama correcta, ejecute el siguiente comando desde el directorio raíz del repositorio de datos de ejemplo (suponiendo que necesite la rama `2.4-develop` rama):
+   Para extraer la rama correcta, ejecute el siguiente comando desde el directorio raíz del repositorio de datos de ejemplo (suponiendo que necesite la rama `2.4-develop`):
 
    ```bash
    git checkout 2.4-develop
@@ -100,19 +100,19 @@ Para clonar el repositorio de GitHub de datos de ejemplo utilizando el protocolo
 
 Para clonar el repositorio de GitHub de datos de ejemplo utilizando el protocolo HTTPS:
 
-1. En un explorador web, vaya a la [repositorio de datos de ejemplo](https://github.com/magento/magento2-sample-data).
-1. En el lado derecho de la página, debajo de **clonar URL** , haga clic en **HTTPS**.
-1. Clic **Copiar al portapapeles**.
+1. En un explorador web, vaya a [repositorio de datos de ejemplo](https://github.com/magento/magento2-sample-data).
+1. En el lado derecho de la página, en el campo **clonar URL**, haga clic en **HTTPS**.
+1. Haga clic en **Copiar al portapapeles**.
 
    La siguiente figura muestra un ejemplo.
 
-   ![Clone el repositorio de GitHub mediante HTTPS](../../assets/installation/install_mage2_clone-https.png)
+   ![Clonar el repositorio de GitHub mediante HTTPS](../../assets/installation/install_mage2_clone-https.png)
 
 1. Cambie al directorio docroot del servidor web.
 
    Normalmente, para Ubuntu, es `/var/www` y para CentOS es `/var/www/html`.
 
-1. Entrar `git clone` y pegue el valor obtenido anteriormente.
+1. Escriba `git clone` y pegue el valor que obtuvo anteriormente.
 
    A continuación se muestra un ejemplo:
 
@@ -121,13 +121,13 @@ Para clonar el repositorio de GitHub de datos de ejemplo utilizando el protocolo
    ```
 
 1. Espere a que el repositorio se clone en el servidor.
-1. Asegúrese de extraer la rama del repositorio de datos de ejemplo que corresponda con la rama utilizada desde el repositorio principal `magento2` repositorio.
+1. Asegúrese de desproteger la rama del repositorio de datos de ejemplo que corresponda a la rama utilizada del repositorio principal `magento2`.
 
    Por ejemplo:
 
-   Si ha utilizado la variable `2.4-develop` rama del repositorio de GitHub del Magento Open Source, la rama de datos de ejemplo debe ser `2.4-develop`.
+   Si ha utilizado la rama `2.4-develop` del repositorio de GitHub del Magento Open Source, la rama de datos de ejemplo debe ser `2.4-develop`.
 
-   Para extraer la rama correcta, ejecute el siguiente comando desde el directorio raíz del repositorio de datos de ejemplo (suponiendo que necesite la rama `2.4-develop` rama):
+   Para extraer la rama correcta, ejecute el siguiente comando desde el directorio raíz del repositorio de datos de ejemplo (suponiendo que necesite la rama `2.4-develop`):
 
    ```bash
    git checkout 2.4-develop
@@ -151,7 +151,7 @@ Para clonar el repositorio de GitHub de datos de ejemplo utilizando el protocolo
 
 >[!WARNING]
 >
->Si va a instalar datos de ejemplo *después* Al instalar Adobe Commerce, también debe ejecutar el siguiente comando para actualizar la base de datos y el esquema:
+>Si va a instalar los datos de ejemplo *después de* de instalar Adobe Commerce, también debe ejecutar el siguiente comando para actualizar la base de datos y el esquema:
 >
 >```bash
 ><magento_root>/bin/magento setup:upgrade
@@ -159,7 +159,7 @@ Para clonar el repositorio de GitHub de datos de ejemplo utilizando el protocolo
 
 ## Establecer propiedad y permisos del sistema de archivos
 
-Debido a que el `php build-sample-data.php` La secuencia de comandos crea enlaces simbólicos entre el repositorio de datos de ejemplo y el repositorio de Magento Open Source. Debe definir los permisos y la propiedad del sistema de archivos en el repositorio de datos de ejemplo. Si no se hace esto, se producen errores al acceder a la tienda.
+Dado que el script `php build-sample-data.php` crea enlaces simbólicos entre el repositorio de datos de ejemplo y el repositorio de Magento Open Source, debe establecer los permisos y la propiedad del sistema de archivos en el repositorio de datos de ejemplo. Si no se hace esto, se producen errores al acceder a la tienda.
 
 Para establecer los permisos y la propiedad del sistema de archivos en el repositorio de datos de ejemplo:
 

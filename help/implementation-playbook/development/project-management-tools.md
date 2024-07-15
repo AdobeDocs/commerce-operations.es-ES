@@ -5,7 +5,7 @@ exl-id: 5c87d762-06ce-4716-946a-f0fe5348fa18
 feature: System
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '372'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ En la tabla siguiente se incluyen las herramientas de administración de proyect
 | Administración de tickets | JIRA de Atlassian |
 | administración de SLA | Administración de servicios JIRA de Atlassian |
 | Administración de documentos | Confluencia de Atlassian |
-| Administración del código fuente | Atlassian Bitbucket, GitHub |
+| Administración de código Source | Atlassian Bitbucket, GitHub |
 | Integración continua (CI)/Entrega continua (CD) | Jenkins |
 | Comunicación | Correo electrónico, Microsofts Teams, Teléfono, Slack |
 | Reunión | Zoom, Microsofts Teams |
@@ -43,7 +43,7 @@ Jira es un sistema de seguimiento y administración de tickets (que incluye la a
 - Fácil visualización de tickets y movimiento con Agile/Scrum
 - Información transparente entre el equipo del cliente y el equipo de desarrollo
 
-## Administración del código fuente
+## Administración de código Source
 
 Bitbucket es más que solo la administración de código Git. Bitbucket proporciona a los equipos un lugar para planificar proyectos, colaborar en el código, probar e implementar. Con Bitbucket, puede aprobar revisiones de código de forma más eficaz con solicitudes de extracción. También puede crear una lista de comprobación combinada con aprobadores designados y mantener conversaciones directamente en el código fuente con comentarios en línea.
 

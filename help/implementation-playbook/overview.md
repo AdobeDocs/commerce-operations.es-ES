@@ -37,16 +37,16 @@ Aunque el éxito de un proyecto de TI depende en gran medida de la experiencia y
 
 La estructura de este manual sigue el ciclo de vida típico de un proyecto de implementación de Adobe Commerce. Esto simplifica la navegación a lo largo de este documento, ya que los lectores pueden saltar inmediatamente a la sección correspondiente de un proyecto para obtener toda la información relevante.
 
-- **Ámbito del proyecto**: desglose de las partes interesadas clave, los procesos, los plazos y los requisitos esenciales para que las marcas los comprendan y completen para una implementación exitosa.
+- **Ámbito del proyecto**: desglose de las partes interesadas clave, los procesos, los plazos y los requisitos que son esenciales para que las marcas los entiendan y completen para que la implementación se realice correctamente.
 
-- **Desarrollo y control de calidad**: observe las herramientas, soluciones, procesos y metodologías que se han probado y perfeccionado en varias implementaciones de Adobe Commerce, así como nuestras recomendaciones para las que las soluciones son más adecuadas para las necesidades y los objetivos específicos del negocio.
+- **Desarrollo y control de calidad**: Eche un vistazo a las herramientas, soluciones, procesos y metodologías que se han probado y perfeccionado en varias implementaciones de Adobe Commerce, así como a nuestras recomendaciones sobre qué soluciones se ajustan mejor a las necesidades y objetivos específicos de la empresa.
 
-- **Planificación y gobernanza**—Una inmersión en la creación de un plan para ofrecer una solución a tiempo, según el presupuesto, y que satisfaga sus necesidades es fundamental para el éxito.
+- **Planificación y administración**: una inmersión en la creación de un plan para ofrecer una solución a tiempo, dentro del presupuesto y que satisfaga sus necesidades es fundamental para el éxito.
 
-- **Arquitectura e integraciones**: las funciones, la arquitectura y las integraciones que hacen de Adobe Commerce una de las plataformas de comercio electrónico más fiables y fiables del mercado.
+- **Arquitectura e integraciones**: las funciones, la arquitectura y las integraciones que hacen de Adobe Commerce una de las plataformas de comercio electrónico más fiables del mercado.
 
-- **Infraestructura e implementación**—Más allá de la plataforma en sí, destacamos las infraestructuras y entornos que alimentan Adobe Commerce y las soluciones de software que la convierten en una plataforma tan robusta.
+- **Infraestructura e implementación**: si nos adentramos más en la propia plataforma, destacamos la infraestructura y los entornos que alimentan Adobe Commerce y las soluciones de software que la convierten en una plataforma tan sólida.
 
-- **Inicio y proceso de corte**: las tácticas y acciones desde antes del lanzamiento hasta después del lanzamiento que deben llevarse a cabo para garantizar que el sitio se ponga en marcha y mantenga su nivel de eficacia desde el primer día en adelante.
+- **Proceso de lanzamiento y migración**: Las tácticas y acciones desde el inicio hasta el lanzamiento que deben llevarse a cabo para garantizar que el sitio se publique y mantenga su nivel de eficacia a partir del primer día.
 
-- **Asistencia y mantenimiento continuos**: detalles sobre la fase de transición y los tipos de modelos y SLA en torno a un plan de asistencia en curso para seguir impulsando la marca después del lanzamiento.
+- **Soporte y mantenimiento continuos**: detalles sobre la fase de transición y los tipos de modelos y SLA en torno a un plan de soporte continuo para seguir impulsando su marca después del lanzamiento.

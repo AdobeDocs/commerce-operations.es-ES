@@ -11,22 +11,22 @@ ht-degree: 0%
 
 # Directrices generales de MySQL
 
-Consulte [Requisitos del sistema](../../system-requirements.md) para versiones compatibles de MySQL.
+Consulte [Requisitos del sistema](../../system-requirements.md) para ver las versiones compatibles de MySQL.
 
-Adobe _enérgico_ recomienda que observe el siguiente estándar al configurar la base de datos:
+El Adobe _strong_ recomienda que cumpla el estándar siguiente al configurar la base de datos:
 
-* Adobe Commerce utiliza [Déclencheur de base de datos MySQL](https://dev.mysql.com/doc/refman/8.0/en/triggers.html) para mejorar el acceso a la base de datos durante la reindexación. Se crean cuando el modo del indizador se establece en [programación](../../../configuration/cli/manage-indexers.md#configure-indexers). La aplicación no admite ningún déclencheur personalizado en la base de datos porque los déclencheur personalizados pueden producir incompatibilidades con versiones futuras de Adobe Commerce.
+* Adobe Commerce usa [déclencheur de base de datos MySQL](https://dev.mysql.com/doc/refman/8.0/en/triggers.html) para mejorar el acceso a la base de datos durante la reindexación. Estas se crean cuando el modo de indizador se establece en [schedule](../../../configuration/cli/manage-indexers.md#configure-indexers). La aplicación no admite ningún déclencheur personalizado en la base de datos porque los déclencheur personalizados pueden producir incompatibilidades con versiones futuras de Adobe Commerce.
 * Familiarícese con [estas posibles limitaciones de déclencheur de MySQL](https://dev.mysql.com/doc/mysql-reslimits-excerpt/8.0/en/stored-program-restrictions.html) antes de continuar.
-* Para mejorar la postura de seguridad de la base de datos, habilite la opción [`STRICT_ALL_TABLES`](https://dev.mysql.com/doc/refman/5.7/en/sql-mode.html#sqlmode_strict_all_tables) Modo SQL para evitar almacenar valores de datos no válidos, lo que podría provocar interacciones de base de datos no deseadas.
-* Adobe Commerce lo hace _no_ admite la replicación basada en instrucciones MySQL. Asegúrese de utilizar _solamente_ [replicación basada en filas](https://dev.mysql.com/doc/refman/8.0/en/replication-formats.html).
+* Para mejorar la postura de seguridad de la base de datos, habilite el modo SQL [`STRICT_ALL_TABLES`](https://dev.mysql.com/doc/refman/5.7/en/sql-mode.html#sqlmode_strict_all_tables) para evitar almacenar valores de datos no válidos, lo que podría provocar interacciones de base de datos no deseadas.
+* Adobe Commerce _no_ admite la replicación basada en instrucciones MySQL. Asegúrese de usar _solo_ [replicación basada en filas](https://dev.mysql.com/doc/refman/8.0/en/replication-formats.html).
 
 >[!WARNING]
 >
->Adobe Commerce utiliza actualmente `CREATE TEMPORARY TABLE` instrucciones dentro de transacciones, que son [incompatible](https://dev.mysql.com/doc/refman/5.7/en/replication-gtids-restrictions.html) con implementaciones de base de datos que utilizan replicación basada en GTID, como [Instancias de segunda generación de SQL de Google Cloud](https://cloud.google.com/sql/docs/features#differences). Considere MySQL para Cloud SQL 8.0 como alternativa.
+>Adobe Commerce actualmente usa instrucciones `CREATE TEMPORARY TABLE` dentro de transacciones, que son [incompatibles](https://dev.mysql.com/doc/refman/5.7/en/replication-gtids-restrictions.html) con implementaciones de base de datos que usan replicación basada en GTID, como [instancias de segunda generación de SQL de Google Cloud](https://cloud.google.com/sql/docs/features#differences). Considere MySQL para Cloud SQL 8.0 como alternativa.
 
 >[!NOTE]
 >
->Si el servidor web y el servidor de base de datos están en hosts diferentes, realice las tareas descritas en este tema en el host del servidor de base de datos y, a continuación, consulte [Configurar una conexión de base de datos MySQL remota](mysql-remote.md).
+>Si el servidor web y el servidor de base de datos están en hosts diferentes, realice las tareas descritas en este tema en el host del servidor de base de datos y, a continuación, vea [Configurar una conexión de base de datos MySQL remota](mysql-remote.md).
 
 ## Instalación de MySQL en Ubuntu
 
@@ -35,21 +35,21 @@ Adobe Commerce 2.4 requiere una instalación limpia de MySQL 8.0. Siga los enlac
 * [Ubuntu](https://ubuntu.com/server/docs/databases-mysql)
 * [CentOS](https://dev.mysql.com/doc/refman/8.0/en/linux-installation-yum-repo.html)
 
-Si espera importar grandes cantidades de productos, puede aumentar el valor de [`max_allowed_packet`](https://dev.mysql.com/doc/refman/5.6/en/program-variables.html) que es mayor que el valor predeterminado, 16 MB.
+Si espera importar una gran cantidad de productos, puede aumentar el valor de [`max_allowed_packet`](https://dev.mysql.com/doc/refman/5.6/en/program-variables.html) que sea mayor que el valor predeterminado de 16 MB.
 
 >[!NOTE]
 >
->El valor predeterminado se aplica a Adobe Commerce en la infraestructura en la nube _y_ proyectos locales. Los clientes de Adobe Commerce en la infraestructura en la nube Pro deben abrir un ticket de asistencia para aumentar el `max_allowed_packet` valor. Los clientes de Adobe Commerce en la infraestructura en la nube Starter pueden aumentar el valor al actualizar la configuración en `/etc/mysql/mysql.cnf` archivo.
+>El valor predeterminado se aplica a Adobe Commerce en la infraestructura en la nube _y_ proyectos locales. Los clientes de Adobe Commerce en la infraestructura en la nube Pro deben abrir un ticket de asistencia para aumentar el valor de `max_allowed_packet`. Los clientes de Adobe Commerce on cloud Infrastructure Starter pueden aumentar el valor al actualizar la configuración en el archivo `/etc/mysql/mysql.cnf`.
 
-Para aumentar el valor, abra el `/etc/mysql/mysql.cnf` en un editor de texto y busque el valor para `max_allowed_packet`. Guarde los cambios en `mysql.cnf` , cierre el editor de texto y reinicie MySQL (`service mysql restart`).
+Para aumentar el valor, abra el archivo `/etc/mysql/mysql.cnf` en un editor de texto y busque el valor de `max_allowed_packet`. Guarde los cambios en el archivo `mysql.cnf`, cierre el editor de texto y reinicie MySQL (`service mysql restart`).
 
-Para comprobar de forma opcional el valor que ha establecido, introduzca el siguiente comando en un `mysql>` preguntar:
+Para comprobar de forma opcional el valor que ha establecido, escriba el siguiente comando en el símbolo del sistema `mysql>`:
 
 ```sql
 SHOW VARIABLES LIKE 'max_allowed_packet';
 ```
 
-A continuación, [Configurar la instancia de base de datos](#configuring-the-database-instance).
+A continuación, [configure la instancia de base de datos](#configuring-the-database-instance).
 
 ## Cambios de MySQL 8
 
@@ -73,11 +73,11 @@ Describir admin_user en mysql 8.19
 | `username` | `varchar(40)` | SÍ | UNI | `NULL` | |
 | `password` | `varchar(255)` | NO | | `NULL` | |
 | `created` | `timestamp` | NO | | `CURRENT_TIMESTAMP` | `DEFAULT_GENERATED` |
-| `modified` | `timestamp` | NO | | `CURRENT_TIMESTAMP` | `DEFAULT_GENERATED` al actualizar `CURRENT_TIMESTAMP` |
+| `modified` | `timestamp` | NO | | `CURRENT_TIMESTAMP` | `DEFAULT_GENERATED` en la actualización `CURRENT_TIMESTAMP` |
 | `logdate` | `timestamp` | SÍ | | `NULL` | |
 | `lognum` | `smallint unsigned` | NO | | `0` | |
 
-Excepto para _CAMISETA DE ALTA CALIDAD(1)_, todo el relleno entero (TINYINT > 1, SMALLINT, MEDIUMINT, INT, BIGINT) debe eliminarse del `db_schema.xml` archivo.
+Excepto _TINYINT(1)_, todo el relleno entero (TINYINT > 1, SMALLINT, MEDIUMINT, INT, BIGINT) debe quitarse del archivo `db_schema.xml`.
 
 Para obtener más información, consulte [https://dev.mysql.com/doc/relnotes/mysql/8.0/en/news-8-0-19.html#mysqld-8-0-19-feature](https://dev.mysql.com/doc/relnotes/mysql/8.0/en/news-8-0-19.html#mysqld-8-0-19-feature).
 
@@ -88,7 +88,7 @@ Especifique siempre un criterio de ordenación si el código depende de un crite
 
 ### Calificadores ASC y DESC obsoletos para GROUP BY
 
-A partir de MySQL 8.0.13, el obsoleto `ASC` o `DESC` calificadores para `GROUP BY` se han eliminado las cláusulas. Consultas que anteriormente dependían de `GROUP BY` ordenar puede producir resultados que difieren de las versiones anteriores de MySQL. Para generar un criterio de ordenación determinado, proporcione un `ORDER BY` Cláusula.
+A partir de MySQL 8.0.13, se han eliminado los calificadores obsoletos `ASC` o `DESC` para las cláusulas `GROUP BY`. Las consultas que anteriormente dependían de la ordenación `GROUP BY` pueden producir resultados diferentes de las versiones anteriores de MySQL. Para generar un criterio de ordenación determinado, proporcione una cláusula `ORDER BY`.
 
 ## Commerce y MySQL 8
 
@@ -102,7 +102,8 @@ Adobe Commerce deshabilitó el comportamiento de validación normal al establece
 
 Para actualizar correctamente MySQL de la versión 5.7 a la versión 8, debe seguir estos pasos en orden:
 
-1. Actualice Adobe Commerce a 2.4.0. Pruebe todo y asegúrese de que el sistema funciona según lo esperado.
+1. Actualice Adobe Commerce a 2.4.0.
+Pruebe todo y asegúrese de que el sistema funciona según lo esperado.
 1. Activar modo de mantenimiento:
 
    ```bash
@@ -142,8 +143,8 @@ Para configurar una instancia de base de datos MySQL:
    mysql -u root -p
    ```
 
-1. Introduzca el MySQL `root` contraseña del usuario cuando se le solicite.
-1. Introduzca los siguientes comandos en el orden mostrado para crear una instancia de base de datos denominada `magento` con nombre de usuario `magento`:
+1. Escriba la contraseña del usuario MySQL `root` cuando se le solicite.
+1. Introduzca los siguientes comandos en el orden mostrado para crear una instancia de base de datos denominada `magento` con el nombre de usuario `magento`:
 
    ```sql
    create database magento;
@@ -161,7 +162,7 @@ Para configurar una instancia de base de datos MySQL:
    flush privileges;
    ```
 
-1. Entrar `exit` para salir del símbolo del sistema.
+1. Escriba `exit` para salir del símbolo del sistema.
 
 1. Compruebe la base de datos:
 
@@ -171,31 +172,31 @@ Para configurar una instancia de base de datos MySQL:
 
    Si se muestra el monitor MySQL, ha creado correctamente la base de datos. Si aparece un error, repita los comandos anteriores.
 
-1. Si el servidor web y el servidor de base de datos están en hosts diferentes, realice las tareas descritas en este tema en el host del servidor de base de datos y, a continuación, consulte [Configurar una conexión de base de datos MySQL remota](mysql-remote.md).
+1. Si el servidor web y el servidor de base de datos están en hosts diferentes, realice las tareas descritas en este tema en el host del servidor de base de datos y, a continuación, vea [Configurar una conexión de base de datos MySQL remota](mysql-remote.md).
 
    Le recomendamos que configure la instancia de la base de datos según corresponda para su negocio. Al configurar la base de datos, tenga en cuenta lo siguiente:
 
-   * Los indizadores requieren mayor `tmp_table_size` y `max_heap_table_size` valores (por ejemplo, 64 M). Si configura la variable `batch_size` , puede ajustar ese valor junto con la configuración del tamaño de la tabla para mejorar el rendimiento del indizador. Consulte la [Guía de optimización](../../../performance/configuration.md) para obtener más información.
+   * Los indizadores requieren valores superiores de `tmp_table_size` y `max_heap_table_size` (por ejemplo, 64 M). Si configura el parámetro `batch_size`, puede ajustar ese valor junto con la configuración del tamaño de la tabla para mejorar el rendimiento del indizador. Consulte la [Guía de optimización](../../../performance/configuration.md) para obtener más información.
 
    * Para obtener un rendimiento óptimo, asegúrese de que todas las tablas de índice MySQL y Adobe Commerce se puedan conservar en memoria (por ejemplo, configure `innodb_buffer_pool_size`).
 
    * La reindexación en MariaDB 10.4 tarda más tiempo en comparación con otras versiones de MariaDB o MySQL. Consulte [Prácticas recomendadas de configuración](../../../performance/configuration.md#indexers).
 
-1. Para MySQL `TIMESTAMP` para seguir las preferencias y la composición esperadas por la arquitectura de esquema declarativo de la aplicación, la variable del sistema `explicit_defaults_for_timestamp` se debe establecer en `on`.
+1. Para que los campos MySQL `TIMESTAMP` sigan las preferencias y la composición esperadas por la arquitectura de esquema declarativo de la aplicación, la variable del sistema `explicit_defaults_for_timestamp` debe establecerse en `on`.
 
    Referencias:
 
    * [MySQL 5.7](https://dev.mysql.com/doc/refman/5.7/en/server-system-variables.html#sysvar_explicit_defaults_for_timestamp)
    * [MariaDB](https://mariadb.com/kb/en/server-system-variables/#explicit_defaults_for_timestamp)
 
-   Si esta configuración no está habilitada, `bin/magento setup:db:status` siempre informa de que la variable `Declarative Schema is not up to date`.
+   Si esta configuración no está habilitada, `bin/magento setup:db:status` siempre informa que `Declarative Schema is not up to date`.
 
 >[!NOTE]
 >
->El `explicit_defaults_for_timestamp` Esta configuración está obsoleta. Esta opción controla los comportamientos de TIMESTAMP obsoletos que se eliminarán en una versión futura de MySQL. Cuando se eliminan estos comportamientos, la variable `explicit_defaults_for_timestamp` también se elimina la configuración de.
+>La configuración `explicit_defaults_for_timestamp` está obsoleta. Esta opción controla los comportamientos de TIMESTAMP obsoletos que se eliminarán en una versión futura de MySQL. Cuando se eliminan esos comportamientos, también se elimina la configuración `explicit_defaults_for_timestamp`.
 
 >[!WARNING]
 >
->Para Adobe Commerce en proyectos de infraestructura en la nube, la variable `explicit_defaults_for_timestamp` La configuración de MySQL (MariaDB) predeterminada es _DESACTIVADO_.
+>Para Adobe Commerce en proyectos de infraestructura en la nube, la configuración de `explicit_defaults_for_timestamp` para MySQL (MariaDB) tiene el valor predeterminado _OFF_.
 
 {{$include /help/_includes/maria-db-config.md}}

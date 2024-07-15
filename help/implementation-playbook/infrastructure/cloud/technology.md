@@ -5,7 +5,7 @@ exl-id: de1b3a64-d32b-455f-bdb0-ad883dedd6d4
 feature: Cloud
 source-git-commit: c737a8e902c960c933e54e2521107475bb1e5a22
 workflow-type: tm+mt
-source-wordcount: '128'
+source-wordcount: '114'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 Adobe Commerce en la infraestructura en la nube utiliza varias soluciones de software para admitir la plataforma. Consulte los siguientes temas en la _Guía de Cloud_ para obtener más información:
 
 - [Arquitectura de entorno profesional](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-architecture.html#production-technology-stack)
-- [Arquitectura del entorno de inicio](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/starter-architecture.html#production-and-staging-technology-stack)
+- [Arquitectura de entorno de inicio](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/starter-architecture.html#production-and-staging-technology-stack)
 
 ## Características y ventajas
 

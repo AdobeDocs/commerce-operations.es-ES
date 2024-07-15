@@ -5,7 +5,7 @@ exl-id: a6b38975-ff85-4cc1-86e3-9792562369ab
 feature: Best Practices, Promotions/Events
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
-source-wordcount: '492'
+source-wordcount: '493'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Dar la primera impresión al final es esencial en un negocio de comercio electr�
 
 El correo electrónico depurado es una de las mejores formas de correo electrónico, ya que permite a los suscriptores obtener más información sobre el producto. También puede enviar correos electrónicos depurados en función de la segmentación de clientes.
 
-![Ejemplo de correo electrónico de marketing depurado](../../assets/playbooks/marketing-email-curated.png)
+![Ejemplo de correo electrónico de marketing seleccionado](../../assets/playbooks/marketing-email-curated.png)
 
 ## Correo electrónico de participación
 

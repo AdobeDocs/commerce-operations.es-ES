@@ -11,7 +11,7 @@ ht-degree: 3%
 
 # Comprobar el estado de la base de datos
 
-Antes de ejecutar este comando, debe [Crear o actualizar la configuración de implementación](deployment.md).
+Antes de ejecutar este comando, debe [crear o actualizar la configuración de implementación](deployment.md).
 
 ## Uso de comandos
 
@@ -34,5 +34,5 @@ El comando devuelve uno de los siguientes códigos de salida:
 | Código de salida | Descripción | Acción sugerida |
 |--------------|--------------|---------------|
 | 0 | Normal | Ninguno |
-| 1 | Algunos módulos utilizan versiones de código más recientes o anteriores que la base de datos | Ejecutar [`magento setup:upgrade`](database-upgrade.md) para actualizar el esquema de la base de datos y ejecutar `composer update` del directorio raíz de la aplicación para actualizar las dependencias del componente |
-| 2 | `magento setup:upgrade` es obligatorio | [`magento setup:upgrade`](database-upgrade.md) para actualizar el esquema de la base de datos |
+| 1 | Algunos módulos utilizan versiones de código más recientes o anteriores que la base de datos | Ejecute [`magento setup:upgrade`](database-upgrade.md) para actualizar el esquema de la base de datos y ejecute `composer update` desde el directorio raíz de la aplicación para actualizar las dependencias del componente |
+| 2 | Se requiere `magento setup:upgrade`. | [`magento setup:upgrade`](database-upgrade.md) para actualizar el esquema de la base de datos |

@@ -5,25 +5,25 @@ feature: Configuration, Logs, Storage
 exl-id: 2487c5ec-a01e-4d87-bc5e-c33643b032df
 source-git-commit: 991bd5fb34a2ffe61aa194ec46e2b04b4ce5b3e7
 workflow-type: tm+mt
-source-wordcount: '119'
+source-wordcount: '87'
 ht-degree: 0%
 
 ---
 
 # Registrar actividad de base de datos
 
-El siguiente ejemplo muestra cómo registrar la actividad de la base de datos utilizando [`Magento\Framework\DB\LoggerInterface`][interface], que tiene dos implementaciones:
+El ejemplo siguiente muestra cómo registrar la actividad de la base de datos utilizando [`Magento\Framework\DB\LoggerInterface`][interface], que tiene dos implementaciones:
 
 - No registra nada (predeterminado): [`Magento\Framework\DB\Logger\Quiet`][quiet]
-- Registra en `var/log` directorio: [`Magento\Framework\DB\Logger\File`][file]
+- Registra en el directorio `var/log`: [`Magento\Framework\DB\Logger\File`][file]
 
 >[!TIP]
 >
->Puede utilizar la CLI de Commerce para lo siguiente [habilitar y deshabilitar el registro de base de datos](../cli/enable-logging.md#database-logging).
+>Puede usar la CLI de Commerce para [habilitar y deshabilitar el registro en la base de datos](../cli/enable-logging.md#database-logging).
 
 Para cambiar la configuración predeterminada de `\Magento\Framework\DB\Logger\LoggerProxy`, edite su `app/etc/di.xml`.
 
-Primero, cambie los valores predeterminados de `loggerAlias` y `logCallStack` argumentos para:
+En primer lugar, cambie los valores predeterminados de los argumentos `loggerAlias` y `logCallStack` a:
 
 ```xml
 <type name="Magento\Framework\DB\Logger\LoggerProxy">
@@ -36,7 +36,7 @@ Primero, cambie los valores predeterminados de `loggerAlias` y `logCallStack` ar
 </type>
 ```
 
-A continuación, proporcione la ruta de archivo para `Magento\Framework\DB\Logger\File`:
+Después, proporcione la ruta de acceso de archivo para `Magento\Framework\DB\Logger\File`:
 
 ```xml
 <type name="Magento\Framework\DB\Logger\File">

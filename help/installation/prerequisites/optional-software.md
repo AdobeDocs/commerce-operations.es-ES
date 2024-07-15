@@ -17,7 +17,7 @@ Las otras utilidades opcionales que se tratan en este tema pueden ayudarle con l
 
 ## Instalación y configuración del Protocolo de tiempo de red (NTP)
 
-[NTP](https://www.ntp.org/) permite a los servidores sincronizar sus relojes del sistema mediante [servidores de grupo disponibles globalmente](https://www.ntppool.org/en/). Le recomendamos que utilice servidores NTP en los que confíe, ya sean soluciones de hardware dedicadas para su red interna o servidores públicos externos.
+[NTP](https://www.ntp.org/) permite que los servidores sincronicen sus relojes del sistema usando [servidores de grupo disponibles globalmente](https://www.ntppool.org/en/). Le recomendamos que utilice servidores NTP en los que confíe, ya sean soluciones de hardware dedicadas para su red interna o servidores públicos externos.
 
 Si implementa Adobe Commerce en varios hosts, NTP es una forma sencilla de garantizar que todos sus relojes estén sincronizados, independientemente del huso horario en el que se encuentren los servidores. Además, las tareas relacionadas con cron (como la indexación y los correos electrónicos transaccionales) dependen de que el reloj del servidor sea preciso.
 
@@ -59,9 +59,9 @@ Para instalar y configurar NTP:
 
 ### Usar servidores de grupo NTP
 
-La selección de los servidores de grupo depende de usted. Si utiliza servidores de grupo NTP, ntp.org recomienda utilizar [servidores de grupo](https://www.ntppool.org/en/) que están cerca de la zona horaria de los servidores, tal como se describe en la [página de proyecto de grupo NTP](https://www.ntppool.org/en/use.html). Si tiene un servidor NTP privado disponible para todos los hosts de la implementación, puede utilizar ese servidor en su lugar.
+La selección de los servidores de grupo depende de usted. Si usa servidores de grupo NTP, ntp.org recomienda usar [servidores de grupo](https://www.ntppool.org/en/) que estén cerca de la zona horaria de los servidores, tal como se describe en la [página del proyecto de grupo NTP](https://www.ntppool.org/en/use.html). Si tiene un servidor NTP privado disponible para todos los hosts de la implementación, puede utilizar ese servidor en su lugar.
 
-1. Abrir `/etc/ntp.conf` en un editor de texto.
+1. Abra `/etc/ntp.conf` en un editor de texto.
 
 1. Busque líneas similares a las siguientes:
 
@@ -81,7 +81,7 @@ La selección de los servidores de grupo depende de usted. Si utiliza servidores
    server 2.us.pool.ntp.org
    ```
 
-1. Guardar los cambios en `/etc/ntp.conf` y salga del editor de texto.
+1. Guarde los cambios en `/etc/ntp.conf` y salga del editor de texto.
 
 1. Reinicie el servicio.
 
@@ -89,21 +89,21 @@ La selección de los servidores de grupo depende de usted. Si utiliza servidores
 
    * CentOS: `service ntpd restart`
 
-1. Entrar `date` para comprobar la fecha del servidor.
+1. Escriba `date` para comprobar la fecha del servidor.
 
    Si la fecha es incorrecta, asegúrese de que el puerto cliente NTP (normalmente UDP 123) esté abierto en el cortafuegos.
 
-   Pruebe el `ntpdate _[pool server hostname]_` comando. Si falla, busque el error que devuelve.
+   Pruebe el comando `ntpdate _[pool server hostname]_`. Si falla, busque el error que devuelve.
 
    Si todo lo demás falla, intente reiniciar el servidor.
 
 ## Crear phpinfo.php
 
-El [`phpinfo.php`](https://www.php.net/manual/en/function.phpinfo.php) Este archivo muestra una gran cantidad de información sobre PHP y sus extensiones.
+El archivo [`phpinfo.php`](https://www.php.net/manual/en/function.phpinfo.php) muestra una gran cantidad de información acerca de PHP y sus extensiones.
 
 >[!NOTE]
 >
->Uso `phpinfo.php` en un sistema de desarrollo _solamente_. Puede ser un problema de seguridad en producción.
+>Usar `phpinfo.php` en un sistema de desarrollo _solamente_. Puede ser un problema de seguridad en producción.
 
 Agregue el siguiente código en cualquier parte del docroot del servidor web:
 
@@ -113,7 +113,7 @@ Agregue el siguiente código en cualquier parte del docroot del servidor web:
 phpinfo();
 ```
 
-Para obtener más información, consulte la [página de manual de phpinfo](https://www.php.net/manual/en/function.phpinfo.php).
+Para obtener más información, consulte la [página del manual phpinfo](https://www.php.net/manual/en/function.phpinfo.php).
 
 Para ver los resultados, introduzca la siguiente URL en el campo de ubicación o dirección del explorador:
 
@@ -126,9 +126,9 @@ Si aparece un error 404 (no encontrado), compruebe lo siguiente:
 * Inicie el servidor web si es necesario.
 * Asegúrese de que el cortafuegos permite el tráfico en el puerto 80.
 
-  [Ayuda de Ubuntu](https://help.ubuntu.com/community/UFW)
+  [Ayuda para Ubuntu](https://help.ubuntu.com/community/UFW)
 
-  [Ayuda de CentOS](https://wiki.centos.org/HowTos%282f%29Network%282f%29IPTables.html)
+  [Ayuda para CentOS](https://wiki.centos.org/HowTos%282f%29Network%282f%29IPTables.html)
 
 ## phpMyAdmin
 
@@ -140,7 +140,7 @@ Para obtener información más detallada sobre la instalación, consulte la [doc
 
 >[!NOTE]
 >
->Uso de phpMyAdmin en un sistema de desarrollo _solamente_. Puede ser un problema de seguridad en producción.
+>Use phpMyAdmin en un sistema de desarrollo _solamente_. Puede ser un problema de seguridad en producción.
 
 1. Para usar phpMyAdmin, introduzca el siguiente comando en el campo de dirección o ubicación de su navegador:
 
@@ -148,4 +148,4 @@ Para obtener información más detallada sobre la instalación, consulte la [doc
    http://<web server host or IP>/phpmyadmin
    ```
 
-1. Cuando se le solicite, inicie sesión con la base de datos MySQL `root` o el nombre de usuario y la contraseña del usuario administrativo.
+1. Cuando se le solicite, inicie sesión usando su base de datos MySQL `root` o el nombre de usuario y contraseña del usuario administrativo.

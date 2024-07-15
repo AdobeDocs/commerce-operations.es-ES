@@ -12,9 +12,9 @@ ht-degree: 0%
 
 # Personalización
 
-La línea de base del crecimiento del negocio de comercio electrónico es la lealtad del cliente. Mantener a los clientes satisfechos es una combinación de muchos factores, desde productos, contenido, cierre de compra, cliente y experiencia de servicio. La personalización depende de la IA, que realiza un seguimiento de la información del cliente en tiempo real y ofrece una experiencia única y personalizada. Es posible que la personalización no funcione para todos los tipos de empresas, pero es una función adicional que puede ayudar a dirigir el tráfico al sitio.
+La línea de base del crecimiento del negocio de comercio electrónico es la lealtad del cliente. Mantener a los clientes satisfechos es una combinación de muchos factores, desde productos, contenido, cierre de compra, cliente y experiencia de servicio. Personalization depende de la IA, que realiza un seguimiento de la información del cliente en tiempo real y ofrece una experiencia única y personalizada. Es posible que Personalization no funcione para todos los tipos de empresas, pero es una función adicional que puede ayudar a dirigir el tráfico al sitio.
 
-La personalización debe incluir:
+Personalization debe incluir:
 
 - Satisfacer las necesidades del cliente
 
@@ -26,21 +26,21 @@ La personalización debe incluir:
 
 Algunos ejemplos de personalización son:
 
-- **Interés del cliente**: permite cambiar la página principal y la navegación según el perfil del cliente. Por ejemplo, si un usuario ha visitado el sitio anteriormente y ha explorado la sección para mujeres, la próxima vez que introduzca la URL, se desplaza a la página principal de las mujeres.
+- **Interés del cliente**: cambiando la página principal y la navegación en función del perfil del cliente. Por ejemplo, si un usuario ha visitado el sitio anteriormente y ha explorado la sección para mujeres, la próxima vez que introduzca la URL, se desplaza a la página principal de las mujeres.
 
-- **Productos recomendados**: permite recomendar productos en función del comportamiento de navegación de los clientes.
+- **Productos recomendados**: recomienda productos según el comportamiento de navegación de los clientes.
 
-- **Buscar**: permite mostrar resultados de búsqueda personalizados basados en un comportamiento de búsqueda anterior de los clientes.
+- **Buscar**: muestra resultados de búsqueda personalizados basados en un comportamiento de búsqueda anterior de los clientes.
 
-- **Correo electrónico**: envíe correos electrónicos personalizados sobre productos si un cliente ha dejado el artículo en el carro de compras o si el producto estaba agotado, envíe una notificación cuando vuelva a estar disponible.
+- **Correo electrónico**: envía correos electrónicos personalizados sobre productos si un cliente ha dejado el artículo en el carro de compras o si el producto está agotado, envía una notificación cuando vuelva a estar disponible.
 
-- **Ubicación geográfica**: permite mostrar varias geolocalizaciones para el sitio. Por ejemplo, un cliente visita el sitio de la UA, pero también se muestra la opción de sitio de EE. UU. para dar al cliente una opción.
+- **Ubicación geográfica**: se muestran varias ubicaciones geográficas para el sitio. Por ejemplo, un cliente visita el sitio de la UA, pero también se muestra la opción de sitio de EE. UU. para dar al cliente una opción.
 
-- **Código de descuento**: permite mostrar códigos de descuento de categoría específicos para promocionar productos de una categoría concreta.
+- **Código de descuento**: muestra códigos de descuento de categoría específicos para promocionar productos de una categoría en particular.
 
-- **Productos complementarios**: permite mostrar productos complementarios cuando el cliente visita un producto. Por ejemplo, un cliente ve un vestido y puede ver productos complementarios como zapatos, bolsos y accesorios que acompañan al vestido.
+- **Productos complementarios**: muestran productos complementarios cuando el cliente visita un producto. Por ejemplo, un cliente ve un vestido y puede ver productos complementarios como zapatos, bolsos y accesorios que acompañan al vestido.
 
-- **Página principal personalizada**: muestra una página principal personalizada para un usuario registrado para que se sienta especial.
+- **Página de inicio personalizada**: muestra una página de inicio personalizada para un usuario registrado a fin de que se sienta especial.
 
 ![Ejemplo de productos personalizados](../../assets/playbooks/personalization-example.png)
 

@@ -4,7 +4,7 @@ description: Siga este tutorial para configurar varios sitios web con Apache.
 exl-id: 4c6890b3-f15a-46f2-a3e8-6f2a9b57a6ad
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '505'
+source-wordcount: '485'
 ht-degree: 0%
 
 ---
@@ -13,19 +13,19 @@ ht-degree: 0%
 
 Suponemos que:
 
-Si es necesario, copie el existente `index.php` script de punto de entrada para su sitio web o vista de tienda y añádale lo siguiente:
+Si es necesario, copie el script de punto de entrada `index.php` existente para su sitio web o vista de tienda y agréguele lo siguiente:
 
 - Está trabajando en una máquina de desarrollo (portátil, máquina virtual, etc.)
 
   Es posible que se requieran tareas adicionales para implementar varios sitios web en un entorno alojado; póngase en contacto con su proveedor de alojamiento para obtener más información.
 
-  Se requieren tareas adicionales para configurar Adobe Commerce en la infraestructura en la nube. Después de completar las tareas descritas en este tema, consulte [Configurar varios sitios web o tiendas](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) en el _Guía de Commerce en infraestructura en la nube_.
+  Se requieren tareas adicionales para configurar Adobe Commerce en la infraestructura en la nube. Después de completar las tareas que se describen en este tema, vea [Configurar varios sitios web o tiendas](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) en la guía _Commerce en infraestructura de nube_.
 
 - Utiliza un host virtual por sitio web; el archivo de configuración del host virtual es `/etc/httpd/httpd.conf`
 
-  Las distintas versiones de Apache en diferentes sistemas operativos configuran los hosts virtuales de forma diferente. Consulte la [Documentación de Apache](https://httpd.apache.org/docs/2.4/vhosts) o un administrador de red si no está seguro de cómo configurar un host virtual.
+  Las distintas versiones de Apache en diferentes sistemas operativos configuran los hosts virtuales de forma diferente. Consulte la [documentación de Apache](https://httpd.apache.org/docs/2.4/vhosts) o con un administrador de red si no está seguro de cómo configurar un host virtual.
 
-- El software Commerce se instala en `/var/www/html/magento2`
+- El software de Commerce está instalado en `/var/www/html/magento2`
 - Tiene dos sitios web distintos del predeterminado:
 
    - `french.mysite.mg` con código de sitio web `french` y código de vista de tienda `fr`
@@ -35,25 +35,25 @@ Si es necesario, copie el existente `index.php` script de punto de entrada para 
 
 La configuración de varios almacenes consta de las siguientes tareas:
 
-1. [Configuración de sitios web, tiendas y vistas de tiendas](ms-admin.md) en el Administrador.
-1. Crear uno [Host virtual de Apache](#step-2-create-apache-virtual-hosts) por sitio web de Commerce.
+1. [Configurar sitios web, tiendas y vistas de tiendas](ms-admin.md) en el administrador.
+1. Cree un [host virtual Apache](#step-2-create-apache-virtual-hosts) por sitio web de Commerce.
 
 ## Paso 1: crear sitios web, tiendas y vistas de tiendas en el administrador
 
-Consulte [Configure varios sitios web, tiendas y vistas de tiendas en el Administrador de](ms-admin.md).
+Ver [Configurar varios sitios web, tiendas y vistas de tiendas en el administrador](ms-admin.md).
 
 ## Paso 2: Crear hosts virtuales de Apache
 
-En esta sección se explica cómo establecer valores para `MAGE_RUN_TYPE` y `MAGE_RUN_CODE` uso de la variable del servidor Apache `SetEnvIf` en un host virtual.
+En esta sección se explica cómo establecer los valores de `MAGE_RUN_TYPE` y `MAGE_RUN_CODE` mediante la variable del servidor Apache `SetEnvIf` en un host virtual.
 
-Para obtener más información acerca de `SetEnvIf`, consulte:
+Para obtener más información sobre `SetEnvIf`, consulte:
 
 - [Apache 2.2](https://httpd.apache.org/docs/2.2/mod/mod_setenvif.html)
 - [Apache 2.4](https://httpd.apache.org/docs/2.4/mod/mod_setenvif.html)
 
-**Para crear hosts virtuales de Apache**:
+**Para crear hosts virtuales Apache**:
 
-1. Como usuario con `root` privilegios, abra el archivo de configuración del host virtual en un editor de texto.
+1. Como usuario con privilegios de `root`, abra el archivo de configuración del host virtual en un editor de texto.
 
    Por ejemplo, abra `/etc/httpd/conf/httpd.conf`
 
@@ -81,7 +81,7 @@ Para obtener más información acerca de `SetEnvIf`, consulte:
    </VirtualHost>
    ```
 
-1. Guardar los cambios en `httpd.conf` y salga del editor de texto.
+1. Guarde los cambios en `httpd.conf` y salga del editor de texto.
 1. Reinicie Apache:
 
    - CentOS: `service httpd restart`
@@ -89,9 +89,9 @@ Para obtener más información acerca de `SetEnvIf`, consulte:
 
 ## Verifique su sitio
 
-A menos que tenga DNS configurado para las direcciones URL de sus tiendas, debe agregar una ruta estática al host en su `hosts` archivo:
+A menos que tenga DNS configurado para las direcciones URL de las tiendas, debe agregar una ruta estática al host en el archivo `hosts`:
 
-1. Localice su sistema operativo `hosts` archivo.
+1. Busque el archivo del sistema operativo `hosts`.
 1. Añada la ruta estática con el formato:
 
    ```conf
@@ -110,10 +110,10 @@ A menos que tenga DNS configurado para las direcciones URL de sus tiendas, debe 
 >[!INFO]
 >
 >- Es posible que se requieran tareas adicionales para implementar varios sitios web en un entorno alojado; póngase en contacto con su proveedor de alojamiento para obtener más información.
->- Se requieren tareas adicionales para configurar Adobe Commerce en la infraestructura en la nube; consulte [Configurar varios sitios web o tiendas en la nube](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) en el _Guía de Commerce en infraestructura en la nube_.
+>- Se requieren tareas adicionales para configurar Adobe Commerce en la infraestructura en la nube. Consulte [Configurar varios sitios web o tiendas en la nube](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) en la guía _Commerce en la infraestructura en la nube_.
 
 ### Resolución de problemas
 
-- Si sus sitios en francés y alemán devuelven 404 pero su administrador carga, asegúrese de completar [Paso 6: Añadir el código de tienda a la URL base](ms-admin.md#step-6-add-the-store-code-to-the-base-url).
+- Si tus sitios en francés y alemán devuelven 404s pero tu administrador carga, asegúrate de completar [Paso 6: Agrega el código de la tienda a la URL base](ms-admin.md#step-6-add-the-store-code-to-the-base-url).
 - Si todas las direcciones URL devuelven 404, asegúrese de reiniciar el servidor web.
 - Si el administrador no funciona correctamente, asegúrese de configurar correctamente los hosts virtuales.

@@ -4,7 +4,7 @@ description: Obtenga información sobre las funciones de Adobe Commerce que se a
 exl-id: 7e8e8ac2-a0b9-4023-a813-c0f1293e54c2
 source-git-commit: 9761e3827add0e8b60e1bb53664ff65170608317
 workflow-type: tm+mt
-source-wordcount: '286'
+source-wordcount: '285'
 ht-degree: 0%
 
 ---
@@ -31,13 +31,13 @@ En la tabla siguiente se muestra la compatibilidad con las versiones de cada ext
 
 ## Servicios de Commerce
 
-[Servicios de Commerce](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html) son un conjunto de funciones alojadas en el Adobe que proporcionan una funcionalidad sólida y tiempos de respuesta rápidos, junto con su instancia de Commerce.
+[Servicios de Commerce](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html) son un conjunto de características hospedadas en el Adobe que proporcionan una funcionalidad sólida y tiempos de respuesta rápidos, junto con su instancia de Commerce.
 
 Se recomienda que los comerciantes utilicen la versión más reciente de un servicio para garantizar la máxima estabilidad y funcionalidad. La documentación describe la versión lanzada actualmente.
 
 * Actualmente, los servicios de Adobe Commerce son compatibles con Commerce 2.4.4 y versiones posteriores. Se recomienda que los comerciantes utilicen la última versión del servicio.
 * Los servicios se consideran compatibles con versiones anteriores de Commerce 2.4.x, pero no son compatibles oficialmente.
-* Los servicios no son compatibles con Commerce 2.3.x, excepto con Product Recommendations 3.3.7 y versiones anteriores.
+* Los servicios no son compatibles con Commerce 2.3.x, excepto con Product Recommendations 3.3.7 y anteriores.
 
 La siguiente tabla muestra la compatibilidad con la versión de cada servicio en relación con la versión de Adobe Commerce.
 

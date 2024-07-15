@@ -17,7 +17,7 @@ La creación de una página personalizada a la que redirigir a los usuarios impi
 
 >[!NOTE]
 >
->Debe realizar las tareas de esta sección como usuario con `root` privilegios. Las páginas de mantenimiento personalizadas no se pueden establecer en el modo de desarrollador.
+>Debe realizar las tareas de esta sección como usuario con privilegios de `root`. Las páginas de mantenimiento personalizadas no se pueden establecer en el modo de desarrollador.
 
 ## Creación de la página de mantenimiento personalizada
 
@@ -105,9 +105,9 @@ En esta sección se explica cómo crear una página de mantenimiento personaliza
 Para redirigir el tráfico a una página de mantenimiento personalizada:
 
 1. Utilice un editor de texto para abrir el archivo de configuración de nginx que contiene el bloque de servidor.
-1. Agregue lo siguiente al bloque de servidor (`server` solo se muestra para una mayor claridad; no agregue un segundo bloque de servidor).
+1. Agregue lo siguiente al bloque de servidor (`server` se muestra solo para una mayor claridad; no agregue un segundo bloque de servidor).
 
-   Las siguientes listas de permitidos indican las direcciones IP 192.0.2.110 y 192.0.2.115 en un sistema donde Magento está instalado en `/var/www/html/magento2`:
+   La siguiente lista de permitidos las direcciones IP 192.0.2.110 y 192.0.2.115 en un sistema donde Magento está instalado en `/var/www/html/magento2`:
 
    ```conf
    server {
@@ -156,7 +156,7 @@ Para redirigir el tráfico a una página de mantenimiento personalizada:
 
 1. [Actualice su sistema](../implementation/perform-upgrade.md).
 1. Pruebe el sitio para asegurarse de que funciona correctamente.
-1. Una vez completada la actualización, elimine o cambie el nombre `maintenance.enable`
+1. Una vez completada la actualización, elimine `maintenance.enable` o cambie su nombre
 1. Vuelva a cargar la configuración de nginx:
 
    ```bash

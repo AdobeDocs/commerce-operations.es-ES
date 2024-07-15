@@ -17,7 +17,7 @@ Adobe Commerce 2.4.5 es compatible con el uso de clústeres del servicio OpenSea
 ## Crear un dominio de servicio OpenSearch de AWS
 
 Primero debe establecer una instancia de OpenSearch en AWS.
-Leer [Creación y administración de dominios del servicio OpenSearch de Amazon](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/createupdatedomains.html) para obtener instrucciones detalladas.
+Lea [Creación y administración de dominios del servicio OpenSearch de Amazon](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/createupdatedomains.html) para obtener instrucciones detalladas.
 
 ## Obtener datos en AWS OpenSearch
 
@@ -33,11 +33,11 @@ Es posible que las instalaciones más grandes deseen considerar la migración de
 No es necesario migrar índices, ya que se pueden volver a crear fácilmente en la instancia de AWS.
 Sin embargo, al migrar índices de datos, asegúrese de que las versiones de Elasticsearch/OpenSearch sean compatibles.
 
-Consulte el de Amazon [Migración al servicio Amazon OpenSearch](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/migration.html) para obtener más información.
+Consulte las instrucciones de Amazon [Migración al servicio OpenSearch de Amazon](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/migration.html) para obtener más información.
 
 ### Configuración de Commerce para OpenSearch
 
-Los pasos para configurar OpenSearch se tratan en la sección [Instalación avanzada](../../advanced.md) tema.
+Los pasos para configurar OpenSearch se tratan en el tema [Instalación avanzada](../../advanced.md).
 
 Para probar que la nueva configuración funciona, pruebe directamente el punto de conexión de OpenSearch:
 
@@ -45,10 +45,10 @@ Para probar que la nueva configuración funciona, pruebe directamente el punto d
 1. Reindexe mediante el administrador.
 1. Consulte el extremo de OpenSearch (que se encuentra en la interfaz de usuario de AWS):
 
-   Para obtener los índices, añada: `/_cat/indices/*?v=true` a la dirección URL:
+   Para obtener índices, anexe: `/_cat/indices/*?v=true` a la dirección URL:
    `<AWS OS endpoint>/_cat/indices/*?v=true`
 
-Para obtener productos del índice, agregue lo siguiente: `/magento2docker_product_1/_search?q=*` a la dirección URL:
+Para obtener productos del índice, anexe: `/magento2docker_product_1/_search?q=*` a la dirección URL:
 `<AWS OS endpoint>/magento2docker_product_1/_search?q=testproduct1`
 
 ## Recursos adicionales

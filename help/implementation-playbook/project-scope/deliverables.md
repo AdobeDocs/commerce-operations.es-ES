@@ -44,4 +44,4 @@ Una revisión de los datos de productos, precios e inventario existentes de una 
 
 ## Plan del proyecto
 
-Un plan de proyecto detalla las tareas de alto nivel y los plazos asociados con la iniciativa de implementación, incluidas las integraciones superpuestas y las dependencias de terceros. El plan también puede incluir una matriz de responsabilidades, o [RACI](../planning/ownership.md), un gráfico que muestra quién es responsable, responsable, consultado e informado.
+Un plan de proyecto detalla las tareas de alto nivel y los plazos asociados con la iniciativa de implementación, incluidas las integraciones superpuestas y las dependencias de terceros. El plan también puede incluir una matriz de responsabilidades o [RACI](../planning/ownership.md), que muestra quién es responsable, responsable, consultado e informado.

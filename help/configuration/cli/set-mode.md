@@ -4,7 +4,7 @@ description: Obtenga información sobre cómo configurar los modos de funcionami
 exl-id: 62d183fa-d4ff-441d-b8bd-64ef5ae10978
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '383'
+source-wordcount: '385'
 ht-degree: 0%
 
 ---
@@ -13,15 +13,15 @@ ht-degree: 0%
 
 {{file-system-owner}}
 
-Para mejorar la seguridad y la facilidad de uso, hemos añadido un comando que cambia [modos de aplicación](../bootstrap/application-modes.md) del desarrollador a la producción y viceversa.
+Para mejorar la seguridad y la facilidad de uso, hemos agregado un comando que cambia [modos de aplicación](../bootstrap/application-modes.md) de desarrollador a producción y viceversa.
 
-El modo de producción tiene un mejor rendimiento porque los archivos de vista estática se rellenan en la variable `pub/static` y debido a la compilación del código.
+El modo de producción tiene un mejor rendimiento porque los archivos de vista estática se rellenan en el directorio `pub/static` y debido a la compilación de código.
 
 >[!INFO]
 >
->En la versión 2.0.6 y posteriores, Commerce no establece explícitamente permisos de archivos o directorios al cambiar entre los modos de producción, desarrollo y predeterminado. A diferencia de otros modos, los modos de desarrollador y producción se establecen en la variable `env.php` archivo. Adobe Commerce en la infraestructura en la nube solo admite modos de producción y mantenimiento.
+>En la versión 2.0.6 y posteriores, Commerce no establece explícitamente permisos de archivo o directorio al cambiar entre los modos predeterminado, de desarrollo y de producción. A diferencia de otros modos, los modos de desarrollo y producción se establecen en el archivo `env.php`. Adobe Commerce en la infraestructura en la nube solo admite modos de producción y mantenimiento.
 >
->Consulte [Propiedad comercial y permisos en desarrollo y producción](../deployment/file-system-permissions.md).
+>Ver [Propiedad y permisos de Commerce en desarrollo y producción](../deployment/file-system-permissions.md).
 
 Cuando cambie al modo de desarrollo o producción, borraremos el contenido de los siguientes directorios:
 
@@ -35,16 +35,16 @@ pub/static
 
 Excepciones:
 
-- `.htaccess` los archivos no se eliminan
-- `pub/static` contiene un archivo que especifica la versión del contenido estático; este archivo no se elimina
+- `.htaccess` archivos no se han eliminado
+- `pub/static` contiene un archivo que especifica la versión del contenido estático; este archivo no se quita
 
 >[!INFO]
 >
->De forma predeterminada, Commerce utiliza la variable `var` para almacenar la caché, los registros y el código compilado. Puede personalizar este directorio, pero en esta guía se supone que es `var`.
+>De manera predeterminada, Commerce usa los directorios `var` para almacenar la caché, los registros y el código compilado. Puede personalizar este directorio, pero en esta guía, se supone que es `var`.
 
 ## Mostrar el modo actual
 
-La forma más sencilla de hacerlo es ejecutar este comando como [propietario del sistema de archivos](../../installation/prerequisites/file-system/overview.md). Si tiene un alojamiento compartido, este es el usuario que su proveedor le proporciona para iniciar sesión en el servidor. Si tiene un servidor privado, suele ser una cuenta de usuario local en el servidor de Commerce.
+La manera más fácil de hacerlo es ejecutar este comando como [propietario del sistema de archivos](../../installation/prerequisites/file-system/overview.md). Si tiene un alojamiento compartido, este es el usuario que su proveedor le proporciona para iniciar sesión en el servidor. Si tiene un servidor privado, suele ser una cuenta de usuario local en el servidor de Commerce.
 
 Uso de comandos:
 
@@ -60,7 +60,7 @@ Current application mode: {mode}. (Note: Environment variables may override this
 
 donde:
 
-- **`{mode}`** puede ser `default`, `developer`, o `production`
+- **`{mode}`** puede ser `default`, `developer` o `production`
 
 ## Cambiar modos
 
@@ -72,9 +72,9 @@ bin/magento deploy:mode:set {mode} [-s|--skip-compilation]
 
 donde:
 
-- **`{mode}`** es obligatorio; puede ser lo siguiente `developer` o `production`
+- Se requiere **`{mode}`**; puede ser `developer` o `production`
 
-- **`--skip-compilation`** es un parámetro opcional que puede utilizar para omitir [compilación de código](../cli/code-compiler.md) cuando cambie al modo de producción.
+- **`--skip-compilation`** es un parámetro opcional que puede usar para omitir la [compilación de código](../cli/code-compiler.md) al cambiar al modo de producción.
 
 A continuación se muestran ejemplos.
 
@@ -129,7 +129,7 @@ Enabled production mode.
 
 Cuando cambie del modo de producción al modo de desarrollador, debe borrar las clases generadas y las entidades del Administrador de objetos como los proxies para evitar errores inesperados. Después de hacerlo, puede cambiar de modo. Siga estos pasos:
 
-1. Si está cambiando del modo de producción al modo de desarrollador, elimine el contenido del `generated/code` y `generated/metadata` directorios:
+1. Si está cambiando del modo de producción al modo de desarrollador, elimine el contenido de los directorios `generated/code` y `generated/metadata`:
 
    ```bash
    rm -rf <magento_root>/generated/metadata/* <magento_root>/generated/code/*
@@ -163,4 +163,4 @@ Enabled default mode.
 
 [Ejecute comandos CLI desde cualquier lugar](../cli/config-cli.md#config-install-cli-first).
 
-Si no ha añadido `<Commerce-install-directory>/bin` a su sistema `PATH`, entonces puede esperar un error al ejecutar el comando por sí solo.
+Si no ha agregado `<Commerce-install-directory>/bin` a su sistema `PATH`, recibirá un error cuando ejecute el comando por sí solo.

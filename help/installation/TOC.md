@@ -38,11 +38,11 @@ ht-degree: 2%
    - [Software opcional](prerequisites/optional-software.md)
 - [Instalación de inicio rápido](composer.md)
 - [Instalación avanzada](advanced.md)
-- Pasos posteriores a la instalación {#next-steps}
+- Pasos de instalación de Post {#next-steps}
    - [Compruebe la instalación](next-steps/verify.md)
    - [Configuración de la aplicación](next-steps/configuration.md)
    - [Establecer una máscara de usuario (opcional)](next-steps/set-umask.md)
-   - Instalar datos de ejemplo (opcional). {#sample-data}
+   - Instalar datos de ejemplo (opcional) {#sample-data}
       - [Información general](sample-data/overview.md)
       - [Descargar paquetes de Compositor](sample-data/composer-packages.md)
       - [Clonar repositorios Git](sample-data/git-repositories.md)
@@ -67,4 +67,4 @@ ht-degree: 2%
    - [Desinstalar o volver a instalar Commerce](tutorials/uninstall.md)
    - [Desinstalar temas](tutorials/themes.md)
    - [Actualizar el esquema de base de datos](tutorials/database-upgrade.md)
-- [Volver a Guías operativas](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
+- [Volver a las guías operativas](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

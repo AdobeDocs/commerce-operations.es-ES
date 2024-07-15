@@ -1,5 +1,5 @@
 ---
-title: Servicios de Commerce Platform
+title: Commerce Platform Services
 description: Revise las ventajas y desventajas de utilizar las soluciones PaaS para su infraestructura de alojamiento para determinar qué es lo correcto para su proyecto de comercio electrónico.
 exl-id: 071e6e9b-6874-4d08-90b4-036d6cdca4c2
 feature: Best Practices, Paas
@@ -18,9 +18,9 @@ PaaS se proporciona como un servicio alojado en la infraestructura del proveedor
 
 PaaS funciona en nubes privadas, públicas e híbridas:
 
-- **Nube privada**: PaaS se entrega dentro del cortafuegos del cliente para la seguridad, donde los datos se almacenan de forma local.
+- **Nube privada**: PaaS se entrega dentro del firewall del cliente por motivos de seguridad, donde los datos se almacenan de forma local.
 - **Nube pública**: el cliente controla las implementaciones y el proveedor es responsable de todos los demás componentes, como la red y el sistema operativo.
-- **Nube híbrida**: híbrido mezcla las funciones de privado y público para que el cliente pueda tener flexibilidad.
+- **Nube híbrida**: híbrida mezcla las funciones de privada y pública para que el cliente pueda tener flexibilidad.
 
 ## Ventajas
 
@@ -40,7 +40,8 @@ PaaS funciona en nubes privadas, públicas e híbridas:
 
 - Podría provocar una amenaza a la seguridad, ya que todo está almacenado en la nube
 - Depende del proveedor de servicios
-- Si el proveedor experimenta un tiempo de inactividad, sería un problema para el cliente
+- Si el proveedor experimenta un tiempo de inactividad, sería un problema para el
+cliente
 - Permite actualizaciones sencillas y rápidas
 
 Cuando el cliente utiliza PaaS en comercio electrónico, no necesita administrar el sistema y el software operativo. Se proporciona al cliente una plataforma para configurar su sitio de comercio electrónico, donde puede generar y configurar contenido, datos de código y productos. que es independiente de la administración de las cosas relacionadas con PaaS.

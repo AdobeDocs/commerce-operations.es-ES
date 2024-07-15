@@ -1,7 +1,7 @@
 ---
 source-git-commit: 85e9a890f8ccb0f4d8b63c9c96971cf6e011f992
 workflow-type: tm+mt
-source-wordcount: '1321'
+source-wordcount: '615'
 ht-degree: 0%
 
 ---
@@ -9,7 +9,7 @@ ht-degree: 0%
 
 | Miembro de la comunidad colaborador | Solicitudes de extracción | Problemas relacionados con GitHub |
 | ------- | ------- | ------- |
-| rehén | [magento/magento2#34873](https://github.com/magento/magento2/pull/34873) | [magento/magento-beta n.º 47](https://github.com/magento/magento-beta/issues/47) |
+| rehén | [magento/magento2#34873](https://github.com/magento/magento2/pull/34873) | [magento/magento-beta#47](https://github.com/magento/magento-beta/issues/47) |
 | rehén | [magento/magento2#34555](https://github.com/magento/magento2/pull/34555) | [bitExpert/phpstan-magento#152](https://github.com/bitExpert/phpstan-magento/issues/152) |
 | kate-kyzyma | [magento/magento2#34491](https://github.com/magento/magento2/pull/34491) | [magento/magento2#34579](https://github.com/magento/magento2/issues/34579) |
 | kate-kyzyma | [magento/magento2#34470](https://github.com/magento/magento2/pull/34470) | [magento/magento2#34490](https://github.com/magento/magento2/issues/34490) |

@@ -6,7 +6,7 @@ feature: Best Practices
 exl-id: 3ea0c6c5-15a9-4e77-b4d0-ce15721c7167
 source-git-commit: a81e88a4293880ae90cd531ce60c5a2b177188f2
 workflow-type: tm+mt
-source-wordcount: '237'
+source-wordcount: '228'
 ht-degree: 0%
 
 ---
@@ -34,12 +34,12 @@ Si el proyecto requiere muchos sitios, tiendas o vistas de tiendas, puede utiliz
 
 Los sitios web y las tiendas son multiplicadores de los datos del catálogo, por lo que tener muchos sitios web y tiendas puede afectar negativamente al rendimiento del sitio de las siguientes maneras:
 
-- Las tablas de índice más grandes aumentan el tiempo necesario para completar las operaciones de indexación [Índice de precios].
+- Las tablas de índice más grandes aumentan el tiempo necesario para completar las operaciones de indización [Índice de precios].
 - El tiempo aumentado para recuperar la configuración de la aplicación degrada el tiempo de respuesta de la tienda para las páginas de catálogo no almacenadas en caché.
 - Se han producido aumentos significativos en el tiempo necesario para completar las operaciones de guardado en Admin, ya que los datos se guardan por separado para cada sitio web.
 
 
-## Información adicional
+## Más información
 
 - [Explicación de sitios web, tiendas y vistas de tiendas](https://devdocs.magento.com/cloud/configure/configure-best-practices.html#sites)
 - [Configurar varios sitios web o tiendas](https://devdocs.magento.com/cloud/project/project-multi-sites.html)

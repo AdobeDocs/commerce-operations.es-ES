@@ -5,7 +5,7 @@ feature: Configuration, Build, Deploy
 exl-id: f6daf5c6-6d12-46b0-b775-76791bacea53
 source-git-commit: dcc283b901917e3681863370516771763ae87462
 workflow-type: tm+mt
-source-wordcount: '376'
+source-wordcount: '367'
 ht-degree: 0%
 
 ---
@@ -14,27 +14,27 @@ ht-degree: 0%
 
 Puede tener un sistema de compilación que cumpla los siguientes requisitos:
 
-- Todo el código de Commerce está bajo control de código fuente en el mismo repositorio que los sistemas de desarrollo y producción
-- Asegúrese de que todas las opciones siguientes son _incluido_ en el control de código fuente:
+- Todo el código Commerce está bajo control de código fuente en el mismo repositorio que los sistemas de desarrollo y producción
+- Asegúrese de que todos los elementos siguientes estén _incluidos_ en el control de código fuente:
 
    - `app/etc/config.php`
-   - `generated` directorio (y subdirectorios)
+   - Directorio `generated` (y subdirectorios)
    - `pub/media` directorio
-   - `pub/media/wysiwyg` directorio (y subdirectorios)
-   - `pub/static` directorio (y subdirectorios)
+   - Directorio `pub/media/wysiwyg` (y subdirectorios)
+   - Directorio `pub/static` (y subdirectorios)
 
 - Debe tener instalada una versión compatible de PHP
 - Debe tener Composer instalado
-- Tiene la propiedad del sistema de archivos y los permisos establecidos, tal como se describe en [Requisito previo para los sistemas de desarrollo, compilación y producción](../deployment/technical-details.md).
+- Tiene la propiedad del sistema de archivos y los permisos establecidos como se describe en [Requisito previo para los sistemas de desarrollo, compilación y producción](../deployment/technical-details.md).
 - El sistema de compilación no necesita que Commerce esté instalado, pero el código debe estar disponible para él.
 
 >[!WARNING]
 >
->La conexión a base de datos no es necesaria si ya está contenida en `config.php`; consulte [Exportar la configuración](../cli/export-configuration.md). De lo contrario, se requiere la conexión a base de datos.
+>No se requiere la conexión a la base de datos si ya se encuentra en `config.php`; consulte [Exportar la configuración](../cli/export-configuration.md). De lo contrario, se requiere la conexión a base de datos.
 
 >[!INFO]
 >
->La máquina de compilación puede estar en su propio host o en el mismo host que un sistema de Commerce instalado.
+>El equipo de generación puede estar en su propio host o en el mismo host que un sistema Commerce instalado.
 
 ## Configurar el equipo de generación
 
@@ -55,7 +55,7 @@ Si se muestra un error, siga los siguientes pasos para instalar Composer.
 
 Para instalar Composer:
 
-1. Cambie a o cree un directorio vacío en su servidor de Commerce.
+1. Cambie a o cree un directorio vacío en el servidor de Commerce.
 
 1. Introduzca los siguientes comandos:
 
@@ -67,18 +67,18 @@ Para instalar Composer:
    mv composer.phar /usr/local/bin/composer
    ```
 
-Para ver opciones de instalación adicionales, consulte la [Documentación de instalación del Compositor][composer].
+Para obtener más opciones de instalación, consulte la [documentación de instalación del Compositor][composer].
 
 ### Instalar PHP
 
-Instalar PHP en [CentOS] o [Ubuntu].
+Instala PHP en [CentOS] o [Ubuntu].
 
 ### Configurar el sistema de compilación
 
 Para configurar el sistema de compilación:
 
 1. Inicie sesión en el sistema de generación como propietario del sistema de archivos o cambie a él.
-1. Recupere el código Commerce desde el control de código fuente.
+1. Recupere el código Commerce del control de código fuente.
 
    Si utiliza Git, utilice el siguiente comando:
 
@@ -106,7 +106,7 @@ Para configurar el sistema de compilación:
    ```
 
 1. Si usa Git, abra `.gitignore` en un editor de texto.
-1. Comience cada una de las siguientes líneas con un `#` para comentarlos: No hay comentarios
+1. Comience cada una de las siguientes líneas con un carácter `#` para comentarlas:
 
    ```conf
    # app/etc/config.php
@@ -117,22 +117,22 @@ Para configurar el sistema de compilación:
    # pub/static/*
    ```
 
-1. Guardar los cambios en `.gitignore` y salga del editor de texto.
+1. Guarde los cambios en `.gitignore` y salga del editor de texto.
 1. Si utiliza Git, utilice los siguientes comandos para confirmar el cambio:
 
    ```bash
    git add .gitignore && git commit -m "Modify .gitignore for build and production"
    ```
 
-   Consulte la [`.gitignore` reference](../reference/config-reference-gitignore.md) para obtener más información.
+   Consulte la [`.gitignore` referencia](../reference/config-reference-gitignore.md) para obtener más información.
 
-1. El sistema de compilación debe utilizar [modo predeterminado](../bootstrap/application-modes.md#default-mode) o [modo de desarrollador](../bootstrap/application-modes.md#developer-mode):
+1. El sistema de compilación debe usar [modo predeterminado](../bootstrap/application-modes.md#default-mode) o [modo de desarrollador](../bootstrap/application-modes.md#developer-mode):
 
    ```bash
    bin/magento deploy:mode:set <mode>
    ```
 
-   `<mode>` es obligatorio. Puede ser cualquiera de las siguientes `default` o `developer`.
+   Se requiere `<mode>`. Puede ser `default` o `developer`.
 
 <!-- Link Definitions -->
 

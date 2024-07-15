@@ -8,7 +8,7 @@ ht-degree: 8%
 # Inicio de sesión del servidor
 
 1. Inicie sesión en el servidor.
-1. Cambie a la [propietario del sistema de archivos](../installation/prerequisites/file-system/overview.md).
+1. Cambiar al [propietario del sistema de archivos](../installation/prerequisites/file-system/overview.md).
 1. Cambie al directorio donde clonó la aplicación. Por ejemplo,
 
    ```bash

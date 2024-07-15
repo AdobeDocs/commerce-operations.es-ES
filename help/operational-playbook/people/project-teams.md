@@ -4,7 +4,7 @@ description: Cree el equipo adecuado para su proyecto de comercio electrónico.
 exl-id: 57aee5ac-db27-4c2a-8e08-3e926d7658d3
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '404'
+source-wordcount: '402'
 ht-degree: 0%
 
 ---
@@ -35,10 +35,10 @@ Cada una de estas funciones es responsable de planificar y ejecutar el proyecto 
 
 Las organizaciones tienden a pasar por alto las dependencias externas que directa o indirectamente desempeñan un papel importante en el éxito del proyecto, entre ellas:
 
-- **Equipo de almacén**-Si el sitio web está funcionando pero el personal en el almacén es limitado, eso podría retrasar el embalaje y el envío. También podría haber un problema de sistema en el almacén que le impidiera rastrear pedidos que también podrían retrasar el embalaje y el envío.
+- **Equipo de almacén**: si el sitio web está en funcionamiento pero el personal del almacén es limitado, podría retrasar el embalaje y el envío. También podría haber un problema de sistema en el almacén que le impidiera rastrear pedidos que también podrían retrasar el embalaje y el envío.
 
-- **Equipo de servicio al cliente**: este equipo está en contacto directo con los clientes. Conocen los puntos problemáticos de los clientes, pero suelen ser el equipo menos valorado de una organización. Por ejemplo, si ejecuta una nueva promoción en su sitio web y el equipo no lo sabe, es posible que no puedan proporcionar a los clientes la información correcta o que no puedan gestionar el volumen de llamadas si es un equipo pequeño. Estos ejemplos pueden provocar una experiencia del cliente negativa.
+- **Equipo de servicio al cliente**—Este equipo está en contacto directo con los clientes. Conocen los puntos problemáticos de los clientes, pero suelen ser el equipo menos valorado de una organización. Por ejemplo, si ejecuta una nueva promoción en su sitio web y el equipo no lo sabe, es posible que no puedan proporcionar a los clientes la información correcta o que no puedan gestionar el volumen de llamadas si es un equipo pequeño. Estos ejemplos pueden provocar una experiencia del cliente negativa.
 
-- **Equipo de marketing**: los equipos de marketing gestionan ventas, ofertas, promociones y campañas. Si envía correos electrónicos sobre un producto pero no sabe que el stock es limitado, podría crear una mala experiencia del cliente y reducir la tasa de conversión.
+- **Equipo de mercadotecnia**: los equipos de mercadotecnia administran ventas, ofertas, promociones y campañas. Si envía correos electrónicos sobre un producto pero no sabe que el stock es limitado, podría crear una mala experiencia del cliente y reducir la tasa de conversión.
 
 Al establecer el equipo del proyecto, no solo es esencial contar con las personas adecuadas con el conjunto de aptitudes necesarias, sino también garantizar que los equipos externos estén informados y alineados para lograr un resultado satisfactorio.

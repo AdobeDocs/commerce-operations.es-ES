@@ -3,13 +3,13 @@ title: Prácticas recomendadas de cambio de tamaño de imagen de catálogo
 description: Obtenga información sobre cómo evitar la degradación del rendimiento antes del lanzamiento de producción del sitio de Adobe Commerce.
 feature: Best Practices
 role: Developer
-source-git-commit: 94d37b6a95cae93f465daf8eb96363a198833e27
+exl-id: 591b1a62-bdba-4301-858a-77620ee657a9
+source-git-commit: 823498f041a6d12cfdedd6757499d62ac2aced3d
 workflow-type: tm+mt
-source-wordcount: '479'
+source-wordcount: '464'
 ht-degree: 0%
 
 ---
-
 
 # Prácticas recomendadas de cambio de tamaño de imagen de catálogo
 
@@ -64,14 +64,14 @@ Hay otra forma de cambiar el tamaño de las imágenes mediante el front-end.
 Las ventajas de este enfoque incluyen:
 
 - El proceso es multiproceso
-- El proceso es de varios servidores (si tiene varios nodos web, un equilibrador de carga y espacio en disco compartido para `media/` directory)
+- El proceso es de varios servidores (si tiene varios nodos web, un equilibrador de carga y espacio en disco compartido para el directorio `media/`)
 - El proceso omite las imágenes cuyo tamaño ya se ha cambiado
 
 Este enfoque cambia el tamaño de 100 000 imágenes en menos de 8 horas, mientras que el comando CLI tarda 6 días en completarse.
 
 1. Inicie sesión en el servidor de.
 1. Vaya a `pub/media/catalog/product` y anote uno de los hash (por ejemplo, 0047d83143a5a3a4683afdf1116df680).
-1. En los ejemplos siguientes, reemplace `www.example.com` con el dominio de su tienda y reemplace el hash por el que anotó.
+1. En los ejemplos siguientes, reemplace `www.example.com` por el dominio de su tienda y reemplace el hash por el que anotó.
 
 >[!BEGINTABS]
 
@@ -82,39 +82,39 @@ cd pub/
 find ./media/catalog/product -path ./media/catalog/product/cache -prune -o -type f -print | sed 's~./media/catalog/product/~https://www.example.com/media/catalog/product/cache/0047d83143a5a3a4683afdf1116df680/~g' > images.txt
 ```
 
->[!TAB sitiar]
+>[!TAB sitio]
 
-La desventaja de `siege` Esto significa que visita todas las direcciones URL del servidor 10 veces si la concurrencia se establece en 10.
+La desventaja de `siege` es que visita todas las direcciones URL del servidor 10 veces si la concurrencia está establecida en 10.
 
 ```bash
 siege --file=./images.txt --user-agent="image-resizer" --no-follow --no-parser --concurrent=10 --reps=once
 ```
 
->[!TAB rizar]
+>[!TAB curl]
 
 ```bash
 xargs -0 -n 1 -P 10 curl -X HEAD -s -w "%{http_code} %{time_starttransfer} %{url_effective}\n" < <(tr \\n \\0 <images.txt)
 ```
 
-El `-P` determina el número de subprocesos.
+El argumento `-P` determina el número de subprocesos.
 
->[!TAB bash one-liner]
+>[!TAB bash de una línea]
 
-La línea de una para la `find/curl` Por ejemplo, en caso de que pueda ejecutar `curl` desde el mismo equipo en el que se encuentran las imágenes:
+El marcador de una línea para el ejemplo `find/curl`, en caso de que pueda ejecutar `curl` desde el mismo equipo en el que se encuentran las imágenes:
 
 ```bash
 find ./media/catalog/product -path ./media/catalog/product/cache -prune -o -type f -print | sed 's~./media/catalog/product/~https://www.example.com/media/catalog/product/cache/0047d83143a5a3a4683afdf1116df680/~g' | xargs -n 1 -P 10 curl -X HEAD -s -w "%{http_code} %{time_starttransfer} %{url_effective}\n"
 ```
 
-De nuevo, reemplace `www.example.com` con el dominio y el conjunto del sitio web `-P` al número de subprocesos que el servidor puede gestionar sin que se bloqueen.
+De nuevo, reemplace `www.example.com` por el dominio de su sitio web y establezca `-P` en el número de subprocesos que su servidor puede controlar sin que se bloqueen.
 
 >[!ENDTABS]
 
-La salida devuelve una lista de todas las imágenes de producto de la tienda. Puede rastrear las imágenes (con `siege` o cualquier otro rastreador) utilizando todos los servidores y núcleos de procesador disponibles para usted y genere la caché de cambio de tamaño a una velocidad significativamente mayor que otros enfoques.
+La salida devuelve una lista de todas las imágenes de producto de la tienda. Puede rastrear las imágenes (con `siege` o cualquier otro rastreador) utilizando todos los servidores y núcleos de procesador disponibles y generar la caché de cambio de tamaño a una velocidad significativamente mayor que otros enfoques.
 
 Al visitar una URL de caché de imagen, se generan todos los tamaños de imagen en segundo plano, si aún no existen. Además, omite los archivos que ya han cambiado de tamaño.
 
 >[!NOTE]
 >
->- Adobe Commerce en proyectos de infraestructura en la nube puede descargar el cambio de tamaño de la imagen del producto en el servicio Fastly. Consulte [Optimización de imagen profunda](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization.html?lang=en#deep-image-optimization) en el _Guía de Cloud_.
->- Si utiliza el módulo de almacenamiento remoto, también puede intentar descargar el cambio de tamaño de la imagen a nginx. Consulte [Configurar el cambio de tamaño de la imagen para almacenamiento remoto](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/storage/remote-storage/remote-storage-image-resize.html) en el _Guía de configuración_.
+>- Adobe Commerce en proyectos de infraestructura en la nube puede descargar el cambio de tamaño de la imagen del producto en el servicio Fastly. Consulte [Optimización de imagen profunda](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization.html?lang=en#deep-image-optimization) en la _Guía de Cloud_.
+>- Si utiliza el módulo de almacenamiento remoto, también puede intentar descargar el cambio de tamaño de la imagen a nginx. Consulte [Configurar el cambio de tamaño de la imagen para almacenamiento remoto](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/storage/remote-storage/remote-storage-image-resize.html) en la _Guía de configuración_.

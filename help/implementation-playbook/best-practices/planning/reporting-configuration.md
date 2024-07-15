@@ -6,14 +6,14 @@ feature: Best Practices, Configuration
 exl-id: 8c991b8a-affb-4a9e-9383-671f595ff89e
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
-source-wordcount: '133'
-ht-degree: 0%
+source-wordcount: '121'
+ht-degree: 1%
 
 ---
 
 # Práctica recomendada para la configuración de informes
 
-Si su empresa no requiere la funcionalidad de creación de informes o segmentos dinámicos de clientes, deshabilite la [Funcionalidad de informes](https://docs.magento.com/user-guide/configuration/general/reports.html) para mejorar el rendimiento de la tienda.
+Si tu empresa no requiere informes o la funcionalidad de segmentos dinámicos del cliente, deshabilita la funcionalidad [Informes](https://docs.magento.com/user-guide/configuration/general/reports.html) para mejorar el rendimiento de la tienda.
 
 ## Productos y versiones afectados
 
@@ -26,11 +26,11 @@ Si su empresa no requiere la funcionalidad de creación de informes o segmentos 
 
 Si no utiliza los informes o los segmentos dinámicos de clientes, deshabilite la funcionalidad Informes.
 
-1. Desde Admin, vaya a **Tiendas** > **Configuración** > **Configuración** > **General** > **Informes**.
-1. En **Opciones generales**, configurado **Habilitar informes** hasta *No*.
-1. Vaciar la caché ejecutando `php bin/magento cache:flush` o en el Administrador de **Sistema** > **Herramientas** > **Administración de caché**.
+1. Desde el administrador, vaya a **Tiendas** > **Configuración** > **Configuración** > **General** > **Informes**.
+1. En **Opciones generales**, establezca **Habilitar informes** en *No*.
+1. Vaciar la caché ejecutando `php bin/magento cache:flush` o en el administrador en **Sistema** > **Herramientas** > **Administración de caché**.
 
-## Información adicional
+## Más información
 
-- [Generación de informes en Adobe Commerce](https://docs.magento.com/user-guide/reports.html)
-- [Segmentos dinámicos de cliente](https://docs.magento.com/user-guide/marketing/customer-segments.html)
+- [Generar informes en Adobe Commerce](https://docs.magento.com/user-guide/reports.html)
+- [Segmentos dinámicos del cliente](https://docs.magento.com/user-guide/marketing/customer-segments.html)

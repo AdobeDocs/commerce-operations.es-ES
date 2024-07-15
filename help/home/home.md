@@ -23,7 +23,7 @@ Utilice esta colección de guías para obtener más información sobre los conce
       <img alt="Información de versión" src="../assets/icons/promote.svg" width="40"/>
     </a>
     <div>
-      <a href="../release/release-notes/overview.md"><strong>Información de versión</strong></a>
+      <a href="../release/release-notes/overview.md"><strong>Información de la versión</strong></a>
       <p>Revise toda la información de la versión de los parches y servicios de Adobe Commerce.</p>
     </div>
   </td>
@@ -61,7 +61,7 @@ Utilice esta colección de guías para obtener más información sobre los conce
        <img alt="Operaciones" src="../assets/icons/refresh.svg" width="40"/>
     </a>
     <div>
-      <a href="../operational-playbook/overview.md"><strong>Guía de funcionamiento</strong></a>
+      <a href="../operational-playbook/overview.md"><strong>Guía operativa</strong></a>
       <p>Aprenda a preparar operacionalmente sus empresas para ejecutar un sitio de comercio electrónico exitoso.</p>
     </div>
   </td>
@@ -70,7 +70,7 @@ Utilice esta colección de guías para obtener más información sobre los conce
        <img alt="Empresa" src="../assets/icons/enterprise.svg" width="40"/>
     </a>
     <div>
-      <a href="../commerce-at-scale/overview.md"><strong>Comercio a escala</strong></a>
+      <a href="../commerce-at-scale/overview.md"><strong>Commerce a escala</strong></a>
       <p>Aprenda a ofrecer experiencias a escala utilizando Adobe Commerce con Adobe Experience Manager.</p>
     </div>
   </td>

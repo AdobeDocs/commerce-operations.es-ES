@@ -7,7 +7,7 @@ ht-degree: 0%
 ---
 # Actualizar sistema de compilación
 
-**Para actualizar el sistema de generación**:
+**Para actualizar el sistema de compilación**:
 
 1. Inicie sesión en el sistema de generación como propietario del sistema de archivos.
 1. Cambie al directorio raíz de la aplicación.
@@ -16,7 +16,7 @@ ht-degree: 0%
    cd <Magento root dir>
    ```
 
-1. Extraer los cambios a `app/etc/config.php` desde el control de código fuente.
+1. Extraer los cambios de `app/etc/config.php` del control de código fuente.
 
    ```bash
    git pull mconfig m2.2_deploy

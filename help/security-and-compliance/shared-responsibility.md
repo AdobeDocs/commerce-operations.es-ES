@@ -132,7 +132,7 @@ La siguiente tabla de resumen utiliza el modelo RACI para mostrar las responsabi
     <td></td>
   </tr>
   <tr>
-    <td>Aplicación de parches a servicios de soporte<br>(Por ejemplo, Nginx o MySQL).</td>
+    <td>Aplicando parches a los servicios compatibles<br>(por ejemplo, Nginx o MySQL).</td>
     <td>R</td>
     <td>I</td>
     <td></td>
@@ -230,7 +230,7 @@ La siguiente tabla de resumen utiliza el modelo RACI para mostrar las responsabi
     <td></td>
   </tr>
   <tr>
-    <td>Configuración del repositorio de origen<sup>1</sup></td>
+    <td>Configurando el repositorio de origen<sup>1</sup></td>
     <td>R</td>
     <td>I</td>
     <td></td>
@@ -328,7 +328,7 @@ La siguiente tabla de resumen utiliza el modelo RACI para mostrar las responsabi
     <td></td>
   </tr>
   <tr>
-    <td>CDN de soporte<sup>2</sup></td>
+    <td>Admitiendo CDN<sup>2</sup></td>
     <td>R</td>
     <td>I</td>
     <td></td>
@@ -356,7 +356,7 @@ La siguiente tabla de resumen utiliza el modelo RACI para mostrar las responsabi
     <td></td>
   </tr>
   <tr>
-    <td>Configuración De Nginx<sup>3</sup></td>
+    <td>Configurando Nginx<sup>3</sup></td>
     <td>R</td>
     <td>R</td>
     <td></td>
@@ -440,7 +440,7 @@ La siguiente tabla de resumen utiliza el modelo RACI para mostrar las responsabi
     <td></td>
   </tr>
   <tr>
-    <td>Remediación de Adobe Commerce en exploraciones PCI de infraestructura en la nube<sup>4</sup></td>
+    <td>Remediando Adobe Commerce en exploraciones PCI de infraestructura en la nube<sup>4</sup></td>
     <td>R</td>
     <td>R</td>
     <td></td>
@@ -520,9 +520,9 @@ La siguiente tabla de resumen utiliza el modelo RACI para mostrar las responsabi
 <tfoot>
   <tr>
     <td colspan="5">
-      <p><sup><strong>1</strong></sup> Solo si el repositorio de Adobe Commerce en la nube se utiliza como repositorio principal. El uso de otros repositorios externos es responsabilidad exclusiva del comerciante.</p>
-      <p><sup><strong>2</strong></sup> El Adobe de proporciona compatibilidad de nivel 1 para problemas con proveedores de CDN.</p>
-      <p><sup><strong>3</strong></sup> El comerciante es responsable de cualquier control Ngnix que configure para sus aplicaciones.</p>
+      <p><sup><strong>1</strong></sup> Solo si el repositorio de Adobe Commerce en la nube se usa como repositorio principal. El uso de otros repositorios externos es responsabilidad exclusiva del comerciante.</p>
+      <p>El Adobe <sup><strong>2</strong></sup> proporciona compatibilidad de nivel 1 para problemas con proveedores CDN.</p>
+      <p><sup><strong>3</strong></sup> El comerciante es responsable de los controles Ngnix que configure para sus aplicaciones.</p>
       <p><sup><strong>4</strong></sup> Para PCI, los requisitos de prueba de penetración se comparten entre el Adobe y el comerciante.</p>
     </td>
   </tr>
@@ -639,7 +639,7 @@ Los comerciantes son responsables de sincronizar datos entre entornos.
 | --- | --- | --- |
 | Rotación de registros | R |   |
 | Aplicación de Adobe Commerce personalizada | | R |
-| Disponibilidad de los servicios de New Relic:<br>aplicación APM e integración de agentes, aplicación de infraestructura,<br>Registro e integración | R |   |
+| Disponibilidad de los servicios de New Relic:<br>integración de aplicaciones y agentes de APM, aplicación de infraestructura,<br>Registro e integración | R |   |
 | Configuración de alertas de New Relic |     | R |
 | Implementación del agente de New Relic en servidores PaaS |     | R |
 
@@ -662,7 +662,7 @@ Los comerciantes son responsables de sincronizar datos entre entornos.
 | --- | --- | --- |
 | Configuración de aplicación |     | R |
 | Adición de dominios a la aplicación de Adobe Commerce (URL base) |     | R |
-| Configuración de PaaS para utilizar las versiones de servicios admitidas por la versión de Adobe Commerce implementada<br><br>Por ejemplo, diferentes versiones de Commerce son compatibles con versiones específicas de PHP, Redis, etc. |     | R |
+| Configuración de PaaS para utilizar versiones de servicios compatibles con la versión implementada de Adobe Commerce<br><br>Por ejemplo, las distintas versiones de Commerce son compatibles con versiones específicas de PHP, Redis, etc. |     | R |
 
 {style="table-layout:auto"}
 
@@ -702,8 +702,8 @@ Los comerciantes son responsables de sincronizar datos entre entornos.
 |     | Adobe | Comerciante |
 | --- | --- | --- |
 | Disponibilidad de los servicios de Galera y MariaDB | R | |
-| Mantenimiento continuo de la configuración predeterminada de la base de datos<br><br>(indexación y optimización de tablas principales, optimización de la configuración predeterminada de sys-admin) | R |   |
-| Mantenimiento continuo de los datos del comerciante y la configuración modificada<br><br>(configuración de tablas normalizadas y planas, indexación y optimización de tablas personalizadas y de terceros, archivado o eliminación de datos, configuración de la administración del sistema) |     | R |
+| Mantenimiento continuo de la configuración predeterminada de la base de datos <br><br> (indexando y optimizando las tablas principales, optimizando la configuración predeterminada de sys-admin) | R |   |
+| Mantenimiento continuo de los datos del comerciante y de la configuración modificada<br><br>(configuración de tablas normalizadas frente a tablas planas, indización y optimización de tablas personalizadas y de terceros, archivado o eliminación de datos, configuración de la administración del sistema) |     | R |
 | Configuración de Galera y MySQL | R |   |
 | Calidad y parches continuos de Galera y MariaDB | R |   |
 | Optimización de la infraestructura en curso | R |   |
@@ -755,7 +755,7 @@ Los comerciantes son responsables de sincronizar datos entre entornos.
 | --- | --- | --- |
 | Disponibilidad del servicio de correo electrónico SendGrid y su integración | R |   |
 | Monitorización del uso de SendGrid del comerciante con respecto a los límites | R |   |
-| El comerciante es responsable de utilizar el servicio solo para correos electrónicos transaccionales salientes<br>El servicio no admite el envío de correos electrónicos de marketing. |     | R |
+| El comerciante es responsable de usar el servicio solamente para correos electrónicos transaccionales salientes<br>El servicio no admite el envío de correos electrónicos de marketing. |     | R |
 | Configuración de servicios de correo electrónico opcionales de terceros |     | R |
 
 {style="table-layout:auto"}
@@ -779,15 +779,15 @@ Los comerciantes son responsables de sincronizar datos entre entornos.
 
 {style="table-layout:auto"}
 
-#### Inteligencia comercial
+#### Commerce Intelligence
 
 |     | Adobe | Comerciante |
 | --- | --- | --- |
 | Disponibilidad de los servicios de Business Intelligence de Adobe Commerce | R |   |
 | Procesos de sincronización de datos MBI | R |   |
 | Detectando problemas de sincronización de MBI | R |   |
-| Configuración de la sincronización de datos de MBI para Adobe Commerce Cloud Pro, Starter, On-Premies o non-Adobe Commerce<br>(API, calidad de datos y formato, red de comerciantes,<br>Conexiones de BD dentro y fuera de Adobe Commerce Cloud DB, por encima de los umbrales de datos) |     | R |
-| Configuración de la sincronización de datos de MBI para Adobe Commerce Cloud Pro<br>(Configuración de la base de datos Adobe Commerce Cloud) | R |   |
+| Configuración de la sincronización de datos de MBI para Adobe Commerce Cloud Pro, Starter, On-Premies o non-Adobe Commerce<br>(API, calidad y formato de datos, red comercial,<br>conexiones de base de datos dentro y fuera de Adobe Commerce Cloud DB, por encima de los umbrales de datos) |     | R |
+| Configuración de la sincronización de datos de MBI para Adobe Commerce Cloud Pro<br> (configuración de la base de datos de Adobe Commerce Cloud) | R |   |
 
 {style="table-layout:auto"}
 
@@ -857,7 +857,7 @@ Los comerciantes son responsables de sincronizar datos entre entornos.
 | Configuración de PrivateLink entrante al extremo del servicio VPC del comerciante |     | R |
 | Aceptación de PrivateLink entrante al punto final del servicio VPC del comerciante | R |   |
 | Configuración de integraciones de PrivateLink (extremo a cuenta) |     | R |
-| Configuración del VPC de propiedad del comerciante para el extremo PrivateLink<br><br> (incluidas las conexiones VPN) |     | R |
+| Configuración del VPC propiedad del comerciante para el extremo PrivateLink <br><br> (incluidas las conexiones VPN) |     | R |
 
 {style="table-layout:auto"}
 

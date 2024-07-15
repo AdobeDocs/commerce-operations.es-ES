@@ -13,7 +13,7 @@ ht-degree: 12%
 # Guía de implementación {#implementation-playbook}
 
 - [Información general](overview.md)
-- Comercio {#intro}
+- Commerce {#intro}
    - [Acerca de Adobe Commerce](intro/about-commerce.md)
    - [Principios del desarrollo de plataformas](intro/platform-development.md)
 - Ámbito del proyecto {#project-scope}
@@ -27,7 +27,7 @@ ht-degree: 12%
    - [Herramientas de administración de proyectos](development/project-management-tools.md)
    - [Metodología de ejecución del proyecto](development/delivery.md)
    - [Control de calidad](development/quality-control.md)
-- Planificación y gobernanza {#planning}
+- Planificación y administración {#planning}
    - [Enfoque de entrega y planificación](planning/delivery.md)
    - [Responsabilidad y propiedad](planning/ownership.md)
    - [Gobernanza del proyecto](planning/governance.md)
@@ -49,26 +49,26 @@ ht-degree: 12%
       - [Monitorización de telemetría y herramientas](infrastructure/self-hosting/monitoring-tools.md)
       - [Ideas de recuperación ante desastres](infrastructure/self-hosting/disaster-recovery-ideas.md)
       - [Sugerencias de rendimiento](infrastructure/self-hosting/performance-tips.md)
-   - Infraestructura en nube {#cloud}
+   - Infraestructura en la nube {#cloud}
       - [Información general](infrastructure/cloud/overview.md)
       - [Regiones](infrastructure/cloud/regions.md)
       - [Tecnologías](infrastructure/cloud/technology.md)
       - [Seguridad y cumplimiento](infrastructure/cloud/security.md)
-   - Optimización del rendimiento {#performance}
+   - Optimización de rendimiento {#performance}
       - [Problemas habituales](infrastructure/performance/optimization.md)
       - [Puntos de referencia](infrastructure/performance/benchmarks.md)
       - [Recommendations](infrastructure/performance/recommendations.md)
-- Preparación para el lanzamiento {#launch}
+- Preparación para el inicio {#launch}
    - [Información general](launch/overview.md)
    - [Pasos previos al lanzamiento](launch/pre-launch-steps.md)
    - [Pasos del inicio](launch/launch-steps.md)
-   - [Pasos posteriores al lanzamiento](launch/post-launch-steps.md)
-- Mantenimiento y asistencia {#maintenance}
+   - [Pasos del inicio de Post](launch/post-launch-steps.md)
+- Mantenimiento y soporte técnico {#maintenance}
    - [Información general](maintenance/overview.md)
    - [Adobe Managed Services](maintenance/adobe-managed-services.md)
 - Prácticas recomendadas {#best-practices}
    - [Información general](best-practices/phases.md)
-   - Planificación {#planning}
+   - Planificando {#planning}
       - [Información general](best-practices/planning/overview.md)
       - [Administración de catálogos](best-practices/planning/catalog-management.md)
       - [Configuración de sitios, tiendas y vistas de tiendas](best-practices/planning/sites-stores-store-views.md)
@@ -96,8 +96,8 @@ ht-degree: 12%
       - [Bloques de contenido privado](best-practices/development/private-content-block-configuration.md)
       - [Implementación de contenido estático](best-practices/development/static-content-deployment.md)
       - [Modificación de tablas de base de datos](best-practices/development/modifying-core-and-third-party-tables.md)
-      - [Modificación del código principal y de terceros](best-practices/development/modifying-core-and-third-party-code.md)
-   - Launch {#launch}
+      - [Modificar código principal y de terceros](best-practices/development/modifying-core-and-third-party-code.md)
+   - Iniciar {#launch}
       - [Información general](best-practices/launch/overview.md)
       - [Configuración de rastreadores web](best-practices/launch/robots-txt.md)
       - [Proteja su sitio e infraestructura](best-practices/launch/security-best-practices.md)
@@ -114,4 +114,4 @@ ht-degree: 12%
       - [Actualizar servicios](best-practices/maintenance/update-services.md)
       - [Lista de comprobación de actualización](best-practices/maintenance/upgrade-checklist.md)
       - [Actualizar los requisitos previos de MariaDB](best-practices/maintenance/mariadb-upgrade.md)
-- [Volver a Guías operativas](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
+- [Volver a las guías operativas](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

@@ -5,7 +5,7 @@ exl-id: ef798b1b-96d0-493e-b125-1d67aa7644a1
 feature: Best Practices, Customers
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '470'
 ht-degree: 0%
 
 ---
@@ -18,11 +18,11 @@ El comercio electrónico está basado en el digital y el único equipo que inter
 
 Los minoristas deben ser proactivos en términos de servicio al cliente, ya que no solo está en juego el nombre de la marca, sino que lo más importante es la lealtad del cliente. Para que los minoristas tengan éxito a la hora de ofrecer la mejor experiencia al cliente, hay algunas prácticas recomendadas que pueden seguir:
 
-- **Canal de compatibilidad múltiple**—Proporcionar servicio a través de correo electrónico o teléfono solamente no es suficiente en la era actual. El servicio al cliente debe proporcionarse en varios canales, como chats en directo, correos electrónicos, llamadas telefónicas, medios sociales o mensajes de texto. Cada una de ellas tiene sus propias ventajas y desventajas que los minoristas deben analizar.
+- **Canal de asistencia múltiple**: proporcionar servicio por correo electrónico o por teléfono no es suficiente en la era actual. El servicio al cliente debe proporcionarse en varios canales, como chats en directo, correos electrónicos, llamadas telefónicas, medios sociales o mensajes de texto. Cada una de ellas tiene sus propias ventajas y desventajas que los minoristas deben analizar.
 
-- **Servicio personalizado**: toda la actividad del cliente se realiza en línea, lo que los minoristas pueden rastrear para comprender el comportamiento del cliente. Por ejemplo, cuando un cliente se pone en contacto con el equipo de Servicio al cliente, el equipo tiene su información de antemano, como su nombre, dirección de correo electrónico, historial de pedidos y devoluciones. Esto ayuda al Servicio de atención al cliente a proporcionar un servicio rápido y preciso, además de proporcionar a los clientes un servicio personalizado.
+- **Servicio personalizado**: toda la actividad de los clientes se realiza en línea, lo que los minoristas pueden rastrear para comprender el comportamiento de los clientes. Por ejemplo, cuando un cliente se pone en contacto con el equipo de Servicio al cliente, el equipo tiene su información de antemano, como su nombre, dirección de correo electrónico, historial de pedidos y devoluciones. Esto ayuda al Servicio de atención al cliente a proporcionar un servicio rápido y preciso, además de proporcionar a los clientes un servicio personalizado.
 
-- **Autoservicio**: los clientes también pueden recibir autoservicio, como preguntas frecuentes, política de privacidad, términos y condiciones y foros.
+- **Autoservicio**: a los clientes también se les puede proporcionar autoservicio, como preguntas frecuentes, políticas de privacidad, términos y condiciones y foros.
 
 Los minoristas deben ponerse en el lugar del cliente para comprender su problema y ofrecer la mejor experiencia. La experiencia del cliente mantiene al cliente fiel y promociona la marca.
 

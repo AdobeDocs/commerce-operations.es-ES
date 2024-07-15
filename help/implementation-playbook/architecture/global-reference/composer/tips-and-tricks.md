@@ -19,11 +19,11 @@ Puede encontrar problemas al desarrollar módulos Adobe Commerce con Composer. E
 
 >[!NOTE]
 >
->Estas directrices se aplican principalmente a [arquitectura de referencia global (GRA)](../overview.md) proyectos.
+>Estas directrices se aplican principalmente a [proyectos de arquitectura de referencia global (GRA)](../overview.md).
 
 ## Acelere el uso de Composer
 
-Instalar [https://github.com/hirak/prestissimo](https://github.com/hirak/prestissimo) para acelerar las descargas de paquetes asincrónicos de Composer.
+Instale [https://github.com/hirak/prestissimo](https://github.com/hirak/prestissimo) para acelerar el Compositor con descargas asincrónicas de paquetes.
 
 ```bash
 composer global require hirak/prestissimo
@@ -45,7 +45,7 @@ Composer a veces se bloquea con las versiones de paquetes. Puede ver mensajes so
    composer clearcache
    ```
 
-1. Retire el `composer.lock` para todos los paquetes.
+1. Quitar el archivo `composer.lock` para todos los paquetes.
 
    ```bash
    rm -rf vendor/* composer.lock
@@ -59,7 +59,7 @@ Composer a veces se bloquea con las versiones de paquetes. Puede ver mensajes so
 
 >[!TIP]
 >
->Estos pasos actualizan todos los paquetes a la última versión disponible. Revertir el `composer.lock` de Git para deshacer estas actualizaciones.
+>Estos pasos actualizan todos los paquetes a la última versión disponible. Revertir el archivo `composer.lock` de Git para deshacer estas actualizaciones.
 
 ## Buscar posibles actualizaciones en los paquetes de cliente
 
@@ -69,7 +69,7 @@ Composer a veces se bloquea con las versiones de paquetes. Puede ver mensajes so
    composer outdated
    ```
 
-1. Filtre usando caracteres comodín o el `--minor-only` para omitir actualizaciones incompatibles con versiones anteriores:
+1. Filtre con caracteres comodín o con la opción `--minor-only` para omitir las actualizaciones incompatibles con versiones anteriores:
 
    ```bash
    composer outdated 'magento/*'
@@ -84,7 +84,7 @@ Ver detalles acerca de todos los paquetes instalados en una rama Git.
 composer info
 ```
 
-Ejecutar `composer install` después de cambiar las ramas de Git y antes de ejecutar `composer info`. De lo contrario, Composer muestra los detalles de la rama anterior que se ha extraído.
+Ejecute `composer install` después de cambiar las ramas de Git y antes de ejecutar `composer info`. De lo contrario, Composer muestra los detalles de la rama anterior que se ha extraído.
 
 >[!TIP]
 >
@@ -123,24 +123,24 @@ composer why-not client/module-example
 
 ## Aloje un repositorio privado de Composer.
 
-Si necesita un repositorio privado de Composer, utilice [Empaquetador privado](https://packagist.com/) o [JFrog Artifactory](https://jfrog.com/integration/php-composer-repository/). No use [Satis](https://github.com/composer/satis).
+Si necesita un repositorio privado de Composer, use [Packagist privado](https://packagist.com/) o [JFrog Artifactory](https://jfrog.com/integration/php-composer-repository/). No use [Satis](https://github.com/composer/satis).
 
-- **Empaquetador privado** es seguro, cuesta alrededor de $ 600 USD por año con tres usuarios administradores y está alojado.
+- **El Packagist Privado** es seguro, cuesta alrededor de $600 USD por año con tres usuarios administradores y está hospedado.
 
-- **JFrog Artifactory** comienza en $1,176 USD por año. No se usa tan comúnmente como Packagist, pero soporta más lenguajes que PHP.
+- **JFrog Artifactory** empieza en $1,176 USD al año. No se usa tan comúnmente como Packagist, pero soporta más lenguajes que PHP.
 
-- **Satis** no tiene seguridad integrada ni automatización y requiere alojamiento adicional. Solo es gratis si tu tiempo también es gratis.
+- **Satis** no tiene seguridad integrada, no tiene automatización y requiere alojamiento adicional. Solo es gratis si tu tiempo también es gratis.
 
 ## Versiones de paquetes
 
-Uso [Versiones semánticas 2.0.0](https://semver.org/spec/v2.0.0.html) como se describe en Adobe Commerce [esquema de versiones](https://developer.adobe.com/commerce/php/development/versioning/). No reinvente la rueda.
+Use [versiones semánticas 2.0.0](https://semver.org/spec/v2.0.0.html) como se describe en el [esquema de versiones](https://developer.adobe.com/commerce/php/development/versioning/) de Adobe Commerce. No reinvente la rueda.
 
-Para las dependencias del módulo Adobe Commerce, siga las [dependencias de versión del módulo](https://developer.adobe.com/commerce/php/development/versioning/dependencies/) documentación.
+Para las dependencias del módulo Adobe Commerce, siga la [documentación de dependencias de la versión del módulo](https://developer.adobe.com/commerce/php/development/versioning/dependencies/).
 
-No utilice la definición de versión dentro de `composer.json` archivo. En su lugar, utilice etiquetas Git para las versiones. Consulte [Versiones del compositor y restricciones](https://getcomposer.org/doc/articles/versions.md#versions-and-constraints).
+No use la definición de versión dentro del archivo `composer.json`. En su lugar, utilice etiquetas Git para las versiones. Ver [versiones de composición y restricciones](https://getcomposer.org/doc/articles/versions.md#versions-and-constraints).
 
 ## Dónde colocar los módulos que se incluyen en un archivo y no a través de Composer
 
-Cree un repositorio Git para los módulos de un archivo y alojarlos. Cada módulo de Adobe Commerce tiene un `composer.json` archivo. Después de alojarlo en Git y sincronizarlo con Private Packagist, puede instalarlo con Composer.
+Cree un repositorio Git para los módulos de un archivo y alojarlos. Cada módulo de Adobe Commerce tiene un archivo `composer.json`. Después de alojarlo en Git y sincronizarlo con Private Packagist, puede instalarlo con Composer.
 
 Cuando reciba una nueva versión del paquete, cargue el código en Git, etiquete e instale la nueva versión con Composer.

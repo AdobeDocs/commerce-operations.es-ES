@@ -1,5 +1,5 @@
 ---
-title: Principios comerciales
+title: Principios de Commerce
 description: Utilice estos principios de liderazgo importantes para garantizar que el proyecto de Adobe Commerce funcione de forma eficaz.
 exl-id: 70b7346a-8536-428f-a980-b240bd5eb5ab
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
@@ -15,21 +15,21 @@ Recomendamos seguir algunos principios básicos de liderazgo al operar un proyec
 
 ## Patrocinio
 
-![Corazón plegable a mano](../../assets/playbooks/sponsorship.png)
+![Corazón plegable de manos](../../assets/playbooks/sponsorship.png)
 Contar con un patrocinador ejecutivo eficaz ayuda al proyecto a lograr el máximo éxito. Para ser verdaderamente eficaz, este patrocinador ejecutivo interno debe tener suficiente antigüedad e influencia dentro de la empresa como para contar con la aprobación de otras partes interesadas de la organización. También deberían tener un alto nivel de interés propio en el éxito de la tienda en línea y una pasión por la transformación digital y el comercio electrónico; creer verdaderamente en cómo Adobe Commerce va a transformar el negocio también es crítico.
 
 Un patrocinador ejecutivo eficaz debe garantizar que la gestión, la hoja de ruta y el crecimiento continuo de la plataforma de comercio electrónico se mantengan en línea con la estrategia corporativa; protegiéndola de iniciativas en conflicto o de la política interna y ayudando a abordar cualquier factor limitante, como la escasez de recursos, habilidades o restricciones presupuestarias.
 
 ## Buy-in
 
-![El billete sale de la máquina](../../assets/playbooks/buyin.png)
+![Ticket sobresaliendo de la máquina](../../assets/playbooks/buyin.png)
 Lograr la aceptación de la administración en todo su equipo de liderazgo también es clave. Tener varios agentes de cambio para impulsar el crecimiento le ayuda a impulsarlo de manera más fácil y rápida. Todo el equipo directivo debe compartir la responsabilidad de gestionar Adobe Commerce con éxito. Es responsabilidad del patrocinador ejecutivo ganarse al equipo ejecutivo compartiendo ejemplos que prueben el valor general de Adobe Commerce. Normalmente, esto se centra en ofrecer una mejor experiencia del cliente y los beneficios posteriores para la empresa.
 
 Al administrar sitios de comercio electrónico o implementar proyectos digitales como Adobe Commerce, los líderes son responsables de monitorizar los diferentes departamentos y equipos que poseen diferentes partes de las iniciativas de comercio electrónico. Es fundamental asegurarse de que todos los grupos compartan una estrategia común para lograr objetivos comunes. Tener una gira interna para obtener el apoyo de los ejecutivos ayuda a crear conciencia, alinear equipos y obtener los recursos necesarios para una implementación óptima.
 
 ## Responsabilidad
 
-![figuras reunidas alrededor de una mesa](../../assets/playbooks/accountability.png)
+![cifras reunidas alrededor de una tabla](../../assets/playbooks/accountability.png)
 El liderazgo del proyecto es el acto de dirigir a un equipo hacia la finalización exitosa de un objetivo. A menudo puede ser una de las áreas más críticas para acertar con el fin de entregar con éxito un proyecto de comercio electrónico. El éxito del liderazgo del proyecto requiere habilidades tanto en la gestión como en el liderazgo para garantizar la aceptación de las personas adecuadas, al tiempo que se dirige al equipo en la dirección correcta.
 
 ## Nivel C
@@ -72,8 +72,10 @@ Responsable de garantizar que el proyecto se centre en lograr sus objetivos y se
 
 - Diseña y designa los equipos de administración de proyectos
 - Supervisa el desarrollo del caso empresarial y garantiza la alineación estratégica de la empresa
-- Supervisa y controla el progreso a nivel estratégico, en particular revisando regularmente el caso empresarial
-- Escala problemas y riesgos (es el punto de escalación de problemas y riesgos, y garantiza que se identifiquen, evalúen y controlen todos los riesgos asociados con el caso comercial)
+- Supervisa y controla el progreso a nivel estratégico, en particular
+revisión periódica del caso empresarial
+- Escala problemas y riesgos (es el punto de escalación para problemas y
+riesgos y garantiza que se identifiquen, evalúen y controlen todos los riesgos asociados con el caso comercial)
 - Toma decisiones sobre problemas escalonados, con especial énfasis en la justificación comercial continua
 - Garantiza la seguridad comercial general del proyecto y garantiza que se mantenga el objetivo de ofrecer productos que logren los beneficios comerciales esperados
 
@@ -157,4 +159,5 @@ La gestión eficaz de un sitio de comercio electrónico requiere que el equipo d
 
 Para conseguir que la organización esté a bordo, siempre es una buena idea compartir la visión y reforzar repetidamente la razón por la que su empresa está invirtiendo en tecnología de comercio electrónico articulando tanto los beneficios para el cliente como los beneficios para el negocio.
 
-Compartir documentación, como los casos prácticos de implementaciones digitales, ayuda a validar por qué y cómo esta inversión lleva a la organización a un nuevo nivel. Si desea que la organización adopte la transformación digital, es importante que los empleados sepan que es una prioridad.
+Uso compartido de documentación, como casos prácticos de éxito de
+, le ayuda a validar por qué y cómo esta inversión lleva a la organización a un nuevo nivel. Si desea que la organización adopte la transformación digital, es importante que los empleados sepan que es una prioridad.

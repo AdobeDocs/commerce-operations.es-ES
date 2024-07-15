@@ -38,7 +38,7 @@ Para obtener el mejor rendimiento, utilice las siguientes directrices para admin
 
 Utilice las siguientes estrategias para administrar el número de elementos del carro de compras
 
-- Divida los pedidos en varios pedidos más pequeños con un número menor de filas utilizando [!UICONTROL Add Item by SKU] función.
+- Divida los pedidos en varios pedidos más pequeños con un número menor de filas mediante la característica [!UICONTROL Add Item by SKU].
 - Agregue únicamente la lógica personalizada y la personalización del carro de compras necesarias para cargar una lista de elementos.
 
 ## Límites de categoría
@@ -100,7 +100,7 @@ Elimine los conjuntos de atributos de productos no utilizados mediante MySQL.
 
 #### Revisar configuración de conjunto de atributos
 
-1. [Conexión a la base de datos del sitio](https://devdocs.magento.com/cloud/project/services-mysql.html#connect-to-the-database).
+1. [Conectarse a la base de datos del sitio](https://devdocs.magento.com/cloud/project/services-mysql.html#connect-to-the-database).
 
 1. Buscar el número de conjuntos de atributos usando MySQL
 
@@ -112,7 +112,7 @@ Elimine los conjuntos de atributos de productos no utilizados mediante MySQL.
 
 ### Impacto potencial en el rendimiento
 
-Configuración de varios **atributos del producto** aumenta el tamaño de la plantilla de producto para cada producto (estructura EAV) y la cantidad de datos que deben recuperarse. Este aumento afecta a las operaciones de las siguientes maneras:
+Al configurar muchos **atributos de producto**, aumenta el tamaño de la plantilla de producto para cada producto (estructura EAV) y la cantidad de datos que se deben recuperar. Este aumento afecta a las operaciones de las siguientes maneras:
 
 - Aumento del tráfico de consultas SQL relacionado con la recuperación de datos EAV y la cantidad de datos procesados, lo que resulta en un menor rendimiento de la base de datos
 - Aumento significativo del tamaño de los índices Adobe Commerce y del índice de búsqueda de texto completo
@@ -125,7 +125,7 @@ El aumento de los datos de productos y de los tamaños de los índices puede afe
 - La funcionalidad Acciones masivas de productos se puede bloquear.
 - El tiempo de reconstrucción de índices para catálogos de tamaño medio y grande no se puede realizar diariamente debido a los largos tiempos de ejecución.
 
-Configuración de varios **opciones de atributo** puede afectar al rendimiento del sitio de las siguientes maneras:
+Configurar muchas **opciones de atributos** puede afectar el rendimiento del sitio de las siguientes maneras:
 
 - Tiempos de solicitud y procesamiento largos en las páginas de detalles del producto (PDP) y de categorías que contienen productos complejos.
 - El tiempo de respuesta de las operaciones de guardado del producto del administrador aumenta por encima de los objetivos de rendimiento óptimos.
@@ -155,7 +155,7 @@ Utilice las siguientes estrategias para reducir el número de opciones de produc
 
 La configuración de muchas opciones de producto aumenta la cantidad de datos recuperados para cada producto en todas las operaciones de lectura y escritura, lo que da como resultado:
 
-- Mayor tráfico de consultas SQL y más `JOIN` las operaciones aumentan el rendimiento de la base de datos.
+- El mayor tráfico de consultas SQL y las operaciones de `JOIN` más pesadas aumentan el rendimiento de la base de datos.
 - Tamaño aumentado para los índices de Adobe Commerce y el índice de búsqueda de texto completo.
 
 Los incrementos enumerados anteriormente pueden afectar al rendimiento del sitio de las siguientes maneras:
@@ -177,9 +177,9 @@ La visualización de demasiados productos por página puede afectar al rendimien
 
 ### Actualizar la configuración de la lista de productos
 
-Si hay demasiados productos en una categoría, actualice la configuración del catálogo de tiendas para deshabilitar la opción a **Permitir todos los productos por página**.
+Si tiene demasiados productos en una categoría, actualice la configuración del catálogo de tiendas para deshabilitar la opción a **Permitir todos los productos por página**.
 
-Después de deshabilitar esta opción, Adobe Commerce usa los controles de paginación de tienda de listas de productos para administrar el número de productos que se muestran en los componentes de tienda. Para obtener instrucciones, consulte [Configuración de controles de paginación](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-product-listings.html#configure-the-pagination-controls).
+Después de deshabilitar esta opción, Adobe Commerce usa los controles de paginación de tienda de listas de productos para administrar el número de productos que se muestran en los componentes de tienda. Para obtener instrucciones, consulte [Configurar controles de paginación](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-product-listings.html#configure-the-pagination-controls).
 
 ## Límites de SKU de productos
 
@@ -205,7 +205,7 @@ Utilice las siguientes estrategias para reducir el número de productos (SKU):
    - Reduzca el número de SKU al reducir el número de sitios web, grupos de clientes, catálogos compartidos, número de productos o número de opciones de productos configurables
 - Proporcione más variaciones de productos utilizando opciones personalizadas en lugar de crear productos separados.
 - Teniendo en cuenta que un SKU efectivo podría incluir una serie de posibles permutaciones de precios, ya que los precios se pueden especificar de forma diferente para cada tienda o grupo de clientes.
-- Desactive o elimine componentes del sistema no utilizados como módulos. Consulte  [Desinstalación de módulos](../../../installation/tutorials/uninstall-modules.md).
+- Desactive o elimine componentes del sistema no utilizados como módulos. Consulte [Desinstalar módulos](../../../installation/tutorials/uninstall-modules.md).
 - Administre productos en un sistema de administración de plataformas (PMS) externo.
 
 ## Variaciones de productos
@@ -261,4 +261,4 @@ Tener más del número máximo recomendado de reglas de precios de carro de comp
 - Se ha aumentado el tiempo de respuesta cuando se añaden productos al carro de compras.
 - Se ha aumentado el tiempo para cargar y procesar la minicart.
 - Tiempo aumentado para procesar la página del carro de compras.
-- Mayor tiempo para procesar **Totales** en la página Cierre de compra.
+- Se ha aumentado el tiempo para procesar el bloque **Totales** en la página Cierre de compra.

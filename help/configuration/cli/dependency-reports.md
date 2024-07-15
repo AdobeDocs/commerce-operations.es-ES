@@ -17,7 +17,7 @@ Puede ejecutar los siguientes tipos de informes:
 
 - **Dependencias de módulo**: Muestra el número total de dependencias entre módulos y si las dependencias son duras o suaves.
 - **Dependencias circulares**: Muestra el número total de cadenas de dependencias y el número y la lista de dependencias circulares de cada módulo.
-- **Dependencias de marco**: Muestra el número total de dependencias en el marco de Commerce por módulo (incluido el número total de entradas del marco de trabajo para cada biblioteca).
+- **Dependencias de marco de trabajo**: Muestra el número total de dependencias en el marco de trabajo de Commerce por módulo (incluido el número total de entradas de marco de trabajo para cada biblioteca).
 
 Una dependencia en un comentario también es una dependencia.
 

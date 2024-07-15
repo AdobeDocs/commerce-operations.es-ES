@@ -12,15 +12,15 @@ ht-degree: 0%
 
 # Referencia de rutas de configuración de servicios
 
-Esta sección enumera los nombres de las variables y las rutas de configuración disponibles para las opciones de Admin en **Tiendas** > Configuración > **Configuración** > **Servicios**.
+Esta sección enumera los nombres de las variables y las rutas de configuración disponibles para las opciones del Administrador en **Tiendas** > Configuración > **Configuración** > **Servicios**.
 
-El [`magento app:config:dump` mando](../cli/export-configuration.md) escribe estos valores en el archivo de configuración compartida, `app/etc/config.php`, que debe estar en el control de código fuente. Para anular cualquier configuración de configuración o definir configuraciones confidenciales, consulte [Utilice variables de entorno para anular los ajustes de configuración](override-config-settings.md#environment-variables). Este tema sí _no_ lista [valores confidenciales y específicos del sistema](config-reference-sens.md).
+El comando [`magento app:config:dump` ](../cli/export-configuration.md) escribe estos valores en el archivo de configuración compartida, `app/etc/config.php`, que debe estar en el control de código fuente. Para anular opcionalmente las opciones de configuración o establecer opciones confidenciales, vea [Usar variables de entorno para anular las opciones de configuración](override-config-settings.md#environment-variables). Este tema _no_ enumera [valores confidenciales y específicos del sistema](config-reference-sens.md).
 
 ## Rutas de API web de Commerce
 
 Estos valores de configuración están disponibles en el Administrador de **Tiendas** > Configuración > **Configuración** > **Servicios** > **API web**.
 
-| Nombre | Ruta de configuración | ¿Solo comercio? |
+| Nombre | Ruta de configuración | ¿Solo Commerce? |
 |--------------|--------------|--------------|
 | Conjunto de caracteres de respuesta predeterminado | `webapi/soap/charset` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Permitir acceso anónimo a invitados | `webapi/webapisecurity/allow_insecure` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -29,9 +29,9 @@ Estos valores de configuración están disponibles en el Administrador de **Tien
 
 ## Rutas de OAuth
 
-Estos valores de configuración están disponibles en el Administrador de **Tiendas** > Configuración > **Configuración** > **Servicios** > **OAuth**.
+Estos valores de configuración están disponibles en el Administrador en **Tiendas** > Configuración > **Configuración** > **Servicios** > **OAuth**.
 
-| Nombre | Ruta de configuración | ¿Solo comercio? |
+| Nombre | Ruta de configuración | ¿Solo Commerce? |
 |--------------|--------------|--------------|
 | Duración del token del cliente (horas) | `oauth/access_token_lifetime/customer` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Duración del token de administrador (horas) | `oauth/access_token_lifetime/admin` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -39,6 +39,6 @@ Estos valores de configuración están disponibles en el Administrador de **Tien
 | Período de caducidad | `oauth/cleanup/expiration_period` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Período de caducidad | `oauth/consumer/expiration_period` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | credenciales de consumidor de OAuth HTTP Post maxredirects | `oauth/consumer/post_maxredirects` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Tiempo de espera de publicación HTTP de credenciales de consumidor de OAuth | `oauth/consumer/post_timeout` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Tiempo de espera de Post HTTP de credenciales de consumidor de OAuth | `oauth/consumer/post_timeout` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
 {style="table-layout:auto"}

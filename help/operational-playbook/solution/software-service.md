@@ -1,5 +1,5 @@
 ---
-title: Servicios de software de Commerce
+title: Servicios de software Commerce
 description: Obtenga información sobre las diferencias clave entre las aplicaciones SaaS y otras opciones de comercio electrónico de código abierto autoalojadas (locales).
 exl-id: 9be70e1e-76d5-4696-862e-f2b71eb1abb0
 feature: Best Practices, Saas
@@ -50,4 +50,5 @@ Aunque las plataformas de comercio electrónico son el núcleo de la mayoría de
 
 Recomendamos que los minoristas usen los mejores sistemas de su clase, lo que significa que utilizan el mejor sistema para cada parte de su negocio. La mayoría de las veces, elegir una plataforma para realizar todos los aspectos y funciones de su negocio no cumple con sus expectativas.
 
-En su lugar, las empresas deben poder utilizar cualquier número de sistemas para sus sistemas de ERP, POS, 3PL y comercio electrónico e integrar esos sistemas para sincronizar inventario, pedidos, clientes, artículos y datos de envío/seguimiento y automatizar sus procesos empresariales. Las plataformas SaaS basadas en la nube suelen satisfacer estos requisitos empresariales con flexibilidad y facilidad.
+En su lugar, las empresas deben poder utilizar cualquier número de sistemas para
+sus sistemas ERP, POS, 3PL y comercio electrónico e integran esos sistemas para sincronizar el inventario, los pedidos, los clientes, los artículos y los datos de envío y seguimiento automatizan sus procesos empresariales. Las plataformas SaaS basadas en la nube suelen satisfacer estos requisitos empresariales con flexibilidad y facilidad.

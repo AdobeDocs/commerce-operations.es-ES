@@ -4,7 +4,7 @@ description: Proporcione a sus clientes imágenes y vídeos de productos de alta
 exl-id: 080f177e-f668-4154-8a05-ea4724c29c5f
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '490'
+source-wordcount: '488'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Se pueden utilizar distintos tipos de imágenes según los requisitos de la empr
 
 ## Imágenes de productos con modelos
 
-![Imagen del producto con modelo](../../assets/playbooks/product-image-model.png)
+![Imagen de producto con modelo](../../assets/playbooks/product-image-model.png)
 
 ## Imágenes de productos destacadas
 
@@ -31,11 +31,11 @@ Se pueden utilizar distintos tipos de imágenes según los requisitos de la empr
 
 ## Imágenes de estilo de vida
 
-![Imagen del producto con modelo](../../assets/playbooks/product-image-lifestyle.png)
+![Imagen de producto con modelo](../../assets/playbooks/product-image-lifestyle.png)
 
 ## Imágenes cargadas por el usuario
 
-![Imagen del producto con modelo](../../assets/playbooks/product-image-user-upload.png)
+![Imagen de producto con modelo](../../assets/playbooks/product-image-user-upload.png)
 
 ## Imágenes de empaquetado de productos
 
@@ -55,15 +55,15 @@ Se pueden utilizar distintos tipos de imágenes según los requisitos de la empr
 
 - **Promocionar imágenes generadas por el usuario**: los usuarios cargan sus imágenes con el producto como una revisión, lo que motiva a otros compradores a comprar el producto.
 
-- **Vista de 360 grados del producto**: la carga de un vídeo de 360 grados o de un GIF del producto puede proporcionar una vista detallada al cliente y motivarle a comprar el producto.
+- **Vista de 360 grados del producto**: cargar un vídeo de 360 grados o un GIF del producto puede proporcionar una vista detallada al cliente y motivarlo a comprar el producto.
 
-- **Convenciones de nomenclatura**: Convierta en regla seguir una convención de nombres para la imagen del producto, lo que ayuda a minimizar el error de cargar una imagen incorrecta para un producto y ayuda al equipo a administrar fácilmente las imágenes.
+- **Convenciones de nombres**: establezca como regla seguir una convención de nombres para la imagen del producto, lo que ayuda a minimizar el error al cargar una imagen incorrecta para un producto y a administrar las imágenes con facilidad.
 
-- **Page load**: no cargue imágenes que aumenten el tiempo de carga de la página. Si un cliente debe esperar a que se muestre la imagen, es posible que abandone el sitio.
+- **Carga de página**: no cargue imágenes que aumentarán el tiempo de carga de la página. Si un cliente debe esperar a que se muestre la imagen, es posible que abandone el sitio.
 
-- **Contenido sencillo**: no complicar en exceso el contenido. Intente que el contenido sea simple y atractivo donde el enfoque es el producto. Por ejemplo, una práctica recomendada es tener la imagen del producto sobre un fondo blanco para mejorar la imagen del producto.
+- **Contenido sencillo**: no complique en exceso el contenido. Intente que el contenido sea simple y atractivo donde el enfoque es el producto. Por ejemplo, una práctica recomendada es tener la imagen del producto sobre un fondo blanco para mejorar la imagen del producto.
 
-- **Imagen del producto real**: Cuando un cliente compra un producto en línea, espera ver el producto tal y como está en el sitio web. Evite aplicar filtros o mejorar la imagen para alterar el aspecto del producto. Es importante ser transparente con el cliente, de lo contrario podría tener una alta tasa de devoluciones.
+- **Imagen real del producto**: cuando un cliente compra un producto en línea, espera ver el producto tal y como está en el sitio web. Evite aplicar filtros o mejorar la imagen para alterar el aspecto del producto. Es importante ser transparente con el cliente, de lo contrario podría tener una alta tasa de devoluciones.
 
 >[!TIP]
 >

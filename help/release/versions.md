@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Versiones publicadas
 
-Esta página enumera las versiones publicadas de Adobe Commerce. Contiene fechas de lanzamiento de cada versión menor, de parche y de seguridad, así como fechas de finalización de la asistencia. Consulte [Política de ciclo vital](lifecycle-policy.md).
+Esta página enumera las versiones publicadas de Adobe Commerce. Contiene fechas de lanzamiento de cada versión menor, de parche y de seguridad, así como fechas de finalización de la asistencia. Consulte [Política de ciclo de vida](lifecycle-policy.md).
 
 >[!NOTE]
 >

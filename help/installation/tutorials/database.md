@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Creación del esquema de base de datos
 
-Antes de ejecutar este comando, debe [Crear o actualizar la configuración de implementación](deployment.md).
+Antes de ejecutar este comando, debe [crear o actualizar la configuración de implementación](deployment.md).
 
 ## Configurar la base de datos y añadir datos
 

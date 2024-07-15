@@ -5,7 +5,7 @@ feature: Configuration, Cache
 exl-id: f93f500d-65b0-4788-96ab-f1c3d2d40a38
 source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
 workflow-type: tm+mt
-source-wordcount: '724'
+source-wordcount: '712'
 ht-degree: 1%
 
 ---
@@ -14,12 +14,12 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->Usted debe [instalar Redis](config-redis.md#install-redis) antes de continuar.
+>Debe [instalar Redis](config-redis.md#install-redis) antes de continuar.
 
 
-Commerce ahora proporciona opciones de línea de comandos para configurar el almacenamiento de sesión de Redis. En versiones anteriores, se editaba el `<Commerce install dir>app/etc/env.php` archivo. La línea de comandos proporciona validación y es el método de configuración recomendado, pero aún puede editar el `env.php` archivo.
+Commerce ahora proporciona opciones de línea de comandos para configurar el almacenamiento de sesión de Redis. En versiones anteriores, editó el archivo `<Commerce install dir>app/etc/env.php`. La línea de comandos proporciona validación y es el método de configuración recomendado, pero aún puede editar el archivo `env.php`.
 
-Ejecute el `setup:config:set` y especifique los parámetros específicos de Redis.
+Ejecute el comando `setup:config:set` y especifique los parámetros específicos de Redis.
 
 ```bash
 bin/magento setup:config:set --session-save=redis --session-save-redis-<parameter_name>=<parameter_value>...
@@ -36,9 +36,9 @@ donde
 | session-save-redis-host | host | Nombre de host completo, dirección IP o ruta de acceso absoluta si se utilizan sockets UNIX. | localhost |
 | session-save-redis-port | puerto | Puerto de escucha del servidor Redis. | 6379 |
 | session-save-redis-password | contraseña | Especifica una contraseña si el servidor Redis requiere autenticación. | vaciar |
-| session-save-redis-timeout | timeout | Tiempo de espera de conexión, en segundos. | 2.5 |
+| session-save-redis-timeout | timeout | Tiempo de espera de conexión, en segundos. | 2,5 |
 | session-save-redis-persistent-id | persistent_identifier | Cadena única para habilitar conexiones persistentes (por ejemplo, sess-db0).<br>[Problemas conocidos con phpredis y php-fpm](https://github.com/phpredis/phpredis/issues/70). |
-| session-save-redis-db | database | Número único de la base de datos de Redis, recomendado para protegerse contra la pérdida de datos.<br><br>**Importante**: Si utiliza Redis para más de un tipo de almacenamiento en caché, los números de la base de datos deben ser diferentes. Se recomienda asignar el número de base de datos de almacenamiento en caché predeterminado a 0, el número de base de datos de almacenamiento en caché de páginas a 1 y el número de base de datos de almacenamiento de sesión a 2. | 0 |
+| session-save-redis-db | database | Número único de la base de datos de Redis, recomendado para protegerse contra la pérdida de datos.<br><br>**Importante**: Si usa Redis para más de un tipo de almacenamiento en caché, los números de la base de datos deben ser diferentes. Se recomienda asignar el número de base de datos de almacenamiento en caché predeterminado a 0, el número de base de datos de almacenamiento en caché de páginas a 1 y el número de base de datos de almacenamiento de sesión a 2. | 0 |
 | session-save-redis-compression-threshold | compression_threshold | Establezca el valor en 0 para deshabilitar la compresión (recomendado cuando `suhosin.session.encrypt = On`).<br>[Problema conocido con cadenas de más de 64 KB](https://github.com/colinmollenhour/Cm_Cache_Backend_Redis/issues/18). | 2048 |
 | session-save-redis-compression-lib | compression_library | Opciones: gzip, lzf, lz4 o snappy. | gzip |
 | session-save-redis-log-level | log_level | Establezca cualquiera de las siguientes opciones, enumeradas en orden de menos detallado a más detallado:<ul><li>0 (emergencia: solo los errores más graves)<li>1 (alerta: acción inmediata requerida)<li>2 (crítico: componente de aplicación no disponible)<li>3 (error: errores de tiempo de ejecución, no críticos, pero deben monitorizarse)<li>4 (advertencia: información adicional, recomendada)<li>5 (aviso: condición normal pero significativa)<li>6 (información: mensajes informativos)<li>7 (depurar: la información más importante solo para desarrollo o pruebas)</ul> | 1 |
@@ -58,7 +58,7 @@ donde
 
 ## Ejemplo
 
-En el ejemplo siguiente se establece Redis como almacén de datos de sesión y se establece el host en `127.0.0.1`, establece el nivel de registro en 4 y establece el número de base de datos en 2. El resto de parámetros se definen con el valor predeterminado.
+En el ejemplo siguiente se establece Redis como almacén de datos de sesión, se establece el host en `127.0.0.1`, se establece el nivel de registro en 4 y se establece el número de base de datos en 2. El resto de parámetros se definen con el valor predeterminado.
 
 ```bash
 bin/magento setup:config:set --session-save=redis --session-save-redis-host=127.0.0.1 --session-save-redis-log-level=4 --session-save-redis-db=2
@@ -66,7 +66,7 @@ bin/magento setup:config:set --session-save=redis --session-save-redis-host=127.
 
 ### Resultado
 
-Commerce agrega líneas similares a las siguientes `<magento_root>app/etc/env.php`:
+Commerce agrega líneas similares a las siguientes a `<magento_root>app/etc/env.php`:
 
 ```php
     'session' =>
@@ -127,10 +127,10 @@ Salida de almacenamiento de sesión de muestra:
 redis-cli ping
 ```
 
-`PONG` debería ser la respuesta.
+`PONG` debe ser la respuesta.
 
 Si ambos comandos se ejecutan correctamente, Redis se configura correctamente.
 
 ### Inspección de datos comprimidos
 
-Para inspeccionar los datos de sesión comprimidos y la caché de página, la variable [RESP.app](https://flathub.org/apps/details/app.resp.RESP) admite la descompresión automática de la caché de páginas y sesiones de Commerce 2 y muestra los datos de sesión de PHP en un formato legible en lenguaje natural.
+Para inspeccionar los datos de sesión comprimidos y la caché de página, [RESP.app](https://flathub.org/apps/details/app.resp.RESP) admite la descompresión automática de la caché de página y sesión de Commerce 2 y muestra los datos de sesión PHP en un formato legible en lenguaje natural.

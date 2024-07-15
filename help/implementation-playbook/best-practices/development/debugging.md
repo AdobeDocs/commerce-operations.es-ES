@@ -3,13 +3,13 @@ title: Prácticas recomendadas de depuración
 description: Conozca las técnicas para resolver los problemas comunes de desarrollo de Adobe Commerce.
 feature: Best Practices
 role: Developer
-source-git-commit: 291c3f5ea3c58678c502d34c2baee71519a5c6dc
+exl-id: 78fbea7b-28e8-4713-990d-b4cae159250c
+source-git-commit: 823498f041a6d12cfdedd6757499d62ac2aced3d
 workflow-type: tm+mt
-source-wordcount: '1143'
+source-wordcount: '1139'
 ht-degree: 0%
 
 ---
-
 
 # Prácticas recomendadas de depuración para Adobe Commerce
 
@@ -22,7 +22,7 @@ En esta sección se describen los problemas más comunes que pueden producirse d
 ### Caché
 
 - Vaciar la caché antes de continuar con la investigación
-- Considere la caché de APC, CDN, Barniz, código generado y la `var/view_preprocessed` y `pub/static/` directorios
+- Considere la caché de APC, CDN, Varnish, el código generado y los directorios `var/view_preprocessed` y `pub/static/`
 - Detener y reiniciar los controladores de cola después de vaciar la caché o modificar el código
 
 El siguiente ejemplo de código proporciona comandos útiles relacionados con la administración de la caché (no se ejecute en entornos de producción):
@@ -96,7 +96,7 @@ bin/magento cache:flush
 
 ### Modo de desarrollador
 
-Asegúrese de que la instalación local se encuentra en `developer` modo.
+Asegúrese de que la instalación local esté en modo `developer`.
 
 ### Nuevo módulo
 
@@ -108,9 +108,9 @@ Si ha creado un módulo, compruebe los siguientes problemas:
   bin/magento module --enable Your_Module
   ```
 
-  Compruebe la `app/etc/config.php` para su nuevo módulo.
+  Compruebe el archivo `app/etc/config.php` para su nuevo módulo.
 
-- Compruebe el anidamiento de la estructura de archivos y directorios. Por ejemplo, son archivos de diseño en la variable `view/layout/` en lugar del `view/frontend/layout` directorio? ¿Las plantillas están en la `view/frontend/template` en lugar del `view/frontend/templates` directorio?
+- Compruebe el anidamiento de la estructura de archivos y directorios. Por ejemplo, ¿los archivos de diseño se encuentran en el directorio `view/layout/` en lugar del directorio `view/frontend/layout`? ¿Se encuentran las plantillas en el directorio `view/frontend/template` en lugar del directorio `view/frontend/templates`?
 
 ## Solución de problemas: división a medias
 
@@ -132,11 +132,11 @@ Existen varios métodos para dividir en dos partes, pero el Adobe recomienda seg
 
 Si el problema no está relacionado con el código, elimine primero los fragmentos grandes. Algunos de los grandes trozos a pensar incluyen:
 
-- **Marco de Adobe Commerce**—¿El problema está relacionado con Adobe Commerce o podría estar relacionado con otro sistema conectado?
-- **Servidor y cliente**: permite borrar la caché y el almacenamiento del explorador. ¿Se ha resuelto el problema? Eso podría descartar una causa relacionada con el servidor. ¿Persiste el problema? No es necesario perder más tiempo en la depuración del explorador.
-- **Session**—¿Ocurre el problema con cada usuario? Si no es así, es posible que el problema se limite a temas relacionados con la sesión o el explorador.
-- **Caché**: ¿La desactivación de todas las cachés cambia algo? Si es así, puede centrarse en los temas relacionados con la caché.
-- **Base de datos**: ¿Se produce el problema en todos los entornos que ejecutan el mismo código? Si no es así, busque problemas en la configuración y otros temas relacionados con la base de datos.
+- **Adobe Commerce framework**: ¿el problema está relacionado con Adobe Commerce o podría estar relacionado con otro sistema conectado?
+- **Servidor y cliente**: borre la memoria caché y el almacenamiento del explorador. ¿Se ha resuelto el problema? Eso podría descartar una causa relacionada con el servidor. ¿Persiste el problema? No es necesario perder más tiempo en la depuración del explorador.
+- **Sesión**: ¿Ocurre el problema con cada usuario? Si no es así, es posible que el problema se limite a temas relacionados con la sesión o el explorador.
+- **Caché**: ¿La deshabilitación de todas las cachés cambia algo? Si es así, puede centrarse en los temas relacionados con la caché.
+- **Base de datos**: ¿Ocurre el problema en todos los entornos que ejecutan el mismo código? Si no es así, busque problemas en la configuración y otros temas relacionados con la base de datos.
 - **Código**: busque problemas de código si ninguno de los anteriores ha resuelto el problema.
 
 ### Paso 2: Bisectar por confirmaciones
@@ -148,7 +148,7 @@ Puede sustituir semanas y días por confirmaciones. Por ejemplo, revertir 100 co
 ### Paso 3: Bisectar por archivos
 
 - Divida Adobe Commerce por tipos de archivo (principal y no principal). En primer lugar, deshabilite todos los módulos de cliente y mercado. ¿Persiste el problema? Es muy probable que sea un problema no central.
-- Vuelva a activar (aproximadamente) la mitad de los módulos en la `app/etc/config.php` archivo. Tenga en cuenta las dependencias. Es mejor habilitar clústeres de módulos con el mismo tema a la vez. ¿Persiste el problema?
+- Vuelva a habilitar (aproximadamente) la mitad de los módulos en el archivo `app/etc/config.php`. Tenga en cuenta las dependencias. Es mejor habilitar clústeres de módulos con el mismo tema a la vez. ¿Persiste el problema?
 - Habilite una cuarta parte de los módulos restantes. ¿Persiste el problema? Deshabilite la mitad de lo que ha habilitado. Este método puede ayudarle a aislar la causa raíz en un solo módulo.
 
 ## Ahorradores de tiempo
@@ -169,7 +169,7 @@ A veces, un paso fácil de olvidar entre todo el código y el trabajo técnico: 
 
 ### búsqueda en Internet
 
-Realice una búsqueda en Internet con términos relacionados con el problema. Es probable que alguien más ya haya encontrado el mismo problema. Busque en la [Problemas de GitHub en Adobe Commerce](https://github.com/magento/magento2/issues).
+Realice una búsqueda en Internet con términos relacionados con el problema. Es probable que alguien más ya haya encontrado el mismo problema. Busque [problemas de GitHub en Adobe Commerce](https://github.com/magento/magento2/issues).
 
 ### Tómese un descanso
 
@@ -177,7 +177,7 @@ Si está viendo un problema durante demasiado tiempo, puede ser difícil encontr
 
 ## Herramientas
 
-Herramientas n98 magerun CLI ([https://github.com/netz98/n98-magerun2](https://github.com/netz98/n98-magerun2)) proporciona funciones útiles para trabajar con Adobe Commerce desde la línea de comandos. Especialmente estos comandos:
+Las herramientas de CLI de magerun n98 ([https://github.com/netz98/n98-magerun2](https://github.com/netz98/n98-magerun2)) proporcionan capacidades útiles para trabajar con Adobe Commerce desde la línea de comandos. Especialmente estos comandos:
 
 ```bash
 n98-magerun2.phar dev:console

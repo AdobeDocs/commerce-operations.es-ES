@@ -39,7 +39,7 @@ salesrule_rule                           Sales Rule
 ```
 
 >[!NOTE]
-> Los comerciantes de Adobe Commerce que utilizan Live Search, el servicio de catálogo o Product Recommendations tienen la opción de usar [Indexación de precios basada en SaaS](https://experienceleague.adobe.com/docs/commerce-merchant-services/price-indexer/index.html).
+> Los comerciantes de Adobe Commerce que usen Live Search, el servicio de catálogo o Product Recommendations tienen la opción de usar la indexación de precios basada en [SaaS](https://experienceleague.adobe.com/docs/commerce-merchant-services/price-indexer/index.html).
 
 ## Ver estado del indexador
 
@@ -51,7 +51,7 @@ Opciones de comando:
 bin/magento indexer:status [indexer]
 ```
 
-Donde `[indexer]` es una lista de indizadores separados por espacios. Omitir `[indexer]` para ver el estado de todos los indexadores.
+Donde `[indexer]` es una lista de indizadores separados por espacios. Omita `[indexer]` para ver el estado de todos los indizadores.
 
 Resultado de muestra:
 
@@ -79,7 +79,7 @@ Utilice este comando para reindexar todos los indexadores o los seleccionados un
 
 >[!INFO]
 >
->Este comando reindexa solo una vez. Para mantener los indexadores actualizados, debe configurar un [trabajo cron](../cli/configure-cron-jobs.md).
+>Este comando reindexa solo una vez. Para mantener los indizadores actualizados, debe configurar un [trabajo cron](../cli/configure-cron-jobs.md).
 
 Opciones de comando:
 
@@ -87,7 +87,7 @@ Opciones de comando:
 bin/magento indexer:reindex [indexer]
 ```
 
-Donde `[indexer]` es una lista de indizadores separados por espacios. Omitir `[indexer]` para reindexar todos los indexadores.
+Donde `[indexer]` es una lista de indizadores separados por espacios. Omita `[indexer]` para reindexar todos los indexadores.
 
 Resultado de muestra:
 
@@ -115,16 +115,16 @@ Catalog Search index has been rebuilt successfully in <time>
 
 Los indizadores tienen ámbitos y subprocesos múltiples para admitir la reindexación en modo paralelo. Se paraleliza por la dimensión del indexador y se ejecuta en varios subprocesos, lo que reduce el tiempo de procesamiento.
 
-En este contexto, `dimension` es el ámbito de la reindexación, por ejemplo, una `website` o solo un específico `customer_group`.
+En este contexto, `dimension` es el ámbito de la reindexación, por ejemplo `website` o simplemente un `customer_group` específico.
 
 La paralelización de índices afecta únicamente a los indexadores con ámbito, lo que significa que Commerce divide los datos en varias tablas utilizando el indexador como ámbito en lugar de mantener todos los datos en una tabla.
 
 Puede ejecutar los siguientes índices en modo paralelo:
 
-- `Catalog Search Fulltext` puede ir paralelo a las vistas de tienda.
-- `Category Product` puede ir paralelo a las vistas de tienda.
-- `Catalog Price` puede ir paralelo a los grupos de sitios web y clientes.
-- `Catalog Permissions` pueden ser paralelos a los grupos de clientes.
+- `Catalog Search Fulltext` se puede comparar con las vistas de tiendas.
+- `Category Product` se puede comparar con las vistas de tiendas.
+- `Catalog Price` puede estar en paralelo con los grupos de sitios web y clientes.
+- `Catalog Permissions` puede estar en paralelo en los grupos de clientes.
 
 >[!INFO]
 >
@@ -154,9 +154,9 @@ O para comprobar el modo actual:
 bin/magento indexer:show-dimensions-mode
 ```
 
-Para reindexar en modo paralelo, ejecute el comando reindex utilizando la variable de entorno `MAGE_INDEXER_THREADS_COUNT`o agregue una variable de entorno a `env.php` archivo. Esta variable establece el número de subprocesos para el procesamiento de reindexación.
+Para reindexar en modo paralelo, ejecute el comando reindex usando la variable de entorno `MAGE_INDEXER_THREADS_COUNT` o agregue una variable de entorno al archivo `env.php`. Esta variable establece el número de subprocesos para el procesamiento de reindexación.
 
-Por ejemplo, el siguiente comando ejecuta el `Catalog Search Fulltext` indexador en tres hilos:
+Por ejemplo, el comando siguiente ejecuta el indizador `Catalog Search Fulltext` en tres subprocesos:
 
 ```bash
 MAGE_INDEXER_THREADS_COUNT=3 php -f bin/magento indexer:reindex catalogsearch_fulltext
@@ -172,7 +172,7 @@ Opciones de comando:
 bin/magento indexer:reset [indexer]
 ```
 
-Donde ```[indexer]``` es una lista de indizadores separados por espacios. Omitir `[indexer]` para invalidar todos los indexadores.
+Donde ```[indexer]``` es una lista de indizadores separados por espacios. Omita `[indexer]` para invalidar todos los indizadores.
 
 Resultado de muestra:
 
@@ -194,8 +194,8 @@ Catalog Search indexer has been invalidated.
 
 Utilice este comando para establecer las siguientes opciones del indizador:
 
-- **Actualización al guardar (`realtime`)**: los datos indexados se actualizan cuando se realiza un cambio en el administrador. (Por ejemplo, el índice de productos de la categoría se reindexará después de agregar los productos a una categoría en el Administrador). Esta es la opción predeterminada.
-- **Actualización según lo programado (`schedule`)**: Los datos se indexan según la programación establecida por el trabajo cron.
+- **Actualización al guardar (`realtime`)**: los datos indizados se actualizan cuando se realiza un cambio en el administrador. (Por ejemplo, el índice de productos de la categoría se reindexará después de agregar los productos a una categoría en el Administrador). Esta es la opción predeterminada.
+- **Actualización por programación (`schedule`)**: los datos se indizan según la programación establecida por el trabajo cron.
 
 [Más información sobre la indexación](https://developer.adobe.com/commerce/php/development/components/indexing/).
 
@@ -207,7 +207,7 @@ Para ver la configuración actual del indizador:
 bin/magento indexer:show-mode [indexer]
 ```
 
-Donde `[indexer]` es una lista de indizadores separados por espacios. Omitir `[indexer]` para mostrar todos los modos de los indexadores. Por ejemplo, para mostrar el modo de todos los indexadores:
+Donde `[indexer]` es una lista de indizadores separados por espacios. Omita `[indexer]` para mostrar todos los modos de los indizadores. Por ejemplo, para mostrar el modo de todos los indexadores:
 
 Resultado de muestra:
 
@@ -229,13 +229,13 @@ Catalog Search:                                    Update on Save
 
 >[!IMPORTANT]
 >
->Asegúrese de configurar el [!DNL Customer Grid] con `realtime` en lugar de `schedule`. El [!DNL Customer Grid] solo se puede reindexar con la variable [!UICONTROL Update on Save] opción. Este índice no admite el `Update by Schedule` opción. Utilice la siguiente línea de comandos para configurar este indexador para que se actualice al guardar: `php bin/magento indexer:set-mode realtime customer_grid`
+>Asegúrese de establecer [!DNL Customer Grid] con `realtime` en lugar de `schedule`. [!DNL Customer Grid] solo se puede reindexar usando la opción [!UICONTROL Update on Save]. Este índice no admite la opción `Update by Schedule`. Utilice la siguiente línea de comandos para establecer este indizador para que se actualice al guardar: `php bin/magento indexer:set-mode realtime customer_grid`
 >
->Consulte [Prácticas recomendadas para la configuración del indexador](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/indexer-configuration.html) en el _Guía de implementación_.
+>Consulte las [Prácticas recomendadas para la configuración del indizador](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/indexer-configuration.html) en el _Manual de implementación_.
 
 >[!INFO]
 >
->Antes de cambiar a los modos del indizador, establezca el sitio web en [mantenimiento](../../installation/tutorials/maintenance-mode.md) modo y [deshabilitar trabajos de cron](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html#disable-cron-jobs). Esto garantiza que no sufra bloqueos de base de datos.
+>Antes de cambiar los modos del indizador, establezca su sitio web en el modo [mantenimiento](../../installation/tutorials/maintenance-mode.md) y [deshabilite los trabajos cron](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html#disable-cron-jobs). Esto garantiza que no sufra bloqueos de base de datos.
 
 Para especificar la configuración del indexador:
 
@@ -245,9 +245,9 @@ bin/magento indexer:set-mode {realtime|schedule} [indexer]
 
 Donde:
 
-- `realtime`: permite definir los indexadores seleccionados para que se actualicen al guardar.
-- `schedule`: permite definir los indexadores especificados para que se guarden según la programación de cron.
-- `indexer`: es una lista de indexadores separados por espacios. Omitir `indexer` para configurar todos los indexadores del mismo modo.
+- `realtime`: define los indexadores seleccionados para que se actualicen al guardar.
+- `schedule`: establece los indizadores especificados para que se guarden según la programación de cron.
+- `indexer`: es una lista de indizadores separados por espacios. Omita `indexer` para configurar todos los indizadores de la misma manera.
 
 Por ejemplo, para cambiar únicamente los indexadores de productos de categoría y categorías de productos para actualizar según lo programado, introduzca:
 
@@ -262,11 +262,11 @@ Index mode for Indexer Category Products was changed from 'Update on Save' to 'U
 Index mode for Indexer Product Categories was changed from 'Update on Save' to 'Update by Schedule'
 ```
 
-Los déclencheur de base de datos relacionados con los indexadores se agregan cuando el modo de indexador se establece en `schedule` y se quita cuando el modo del indexador está configurado en `realtime`. Si faltan los déclencheur en la base de datos mientras los indexadores están configurados en `schedule`, cambie los indexadores a `realtime` y, a continuación, vuelva a cambiarlos por `schedule`. Esto restablece los déclencheur.
+Los déclencheur de base de datos relacionados con los indizadores se agregan cuando el modo de indizador se establece en `schedule` y se quitan cuando el modo de indizador se establece en `realtime`. Si faltan los déclencheur en la base de datos mientras los indizadores están establecidos en `schedule`, cambie los indizadores a `realtime` y vuelva a cambiarlos a `schedule`. Esto restablece los déclencheur.
 
 ### Establecer estado del indizador
 
-El `bin/magento indexer:set-status` Este comando se introdujo en Adobe Commerce 2.4.7. Permite a los administradores modificar el estado operativo de uno o más indexadores, optimizando el rendimiento del sistema durante operaciones extensas como importaciones de datos, actualizaciones o mantenimiento.
+El comando `bin/magento indexer:set-status` se introdujo en Adobe Commerce 2.4.7. Permite a los administradores modificar el estado operativo de uno o más indexadores, optimizando el rendimiento del sistema durante operaciones extensas como importaciones de datos, actualizaciones o mantenimiento.
 
 Sintaxis del comando:
 
@@ -276,10 +276,10 @@ bin/magento indexer:set-status {invalid|suspended|valid} [indexer]
 
 Donde:
 
-- `invalid`: marca los indexadores como obsoletos y provoca la reindexación en la siguiente ejecución de cron a menos que se suspendan.
+- `invalid`: marca los indizadores como desactualizados y solicita la reindexación en la siguiente ejecución de cron a menos que se suspendan.
 - `suspended`: detiene temporalmente las actualizaciones automáticas activadas por cron para los indexadores. Este estado se aplica tanto a los modos de tiempo real como a los de programación, lo que garantiza que las actualizaciones automáticas se detengan durante las operaciones intensivas.
-- `valid`: indica que los datos del indexador están actualizados y no es necesario volver a indexar.
-- `indexer`: es una lista de indexadores separados por espacios. Omitir `indexer` para configurar todos los indexadores del mismo modo.
+- `valid`: indica que los datos del indizador están actualizados y no es necesario volver a indexarlos.
+- `indexer`: es una lista de indizadores separados por espacios. Omita `indexer` para configurar todos los indizadores de la misma manera.
 
 Por ejemplo, para suspender indexadores específicos, introduzca:
 
@@ -296,15 +296,15 @@ Index status for Indexer 'Product Categories' was changed from 'valid' to 'suspe
 
 #### Administración del estado del indexador suspendido
 
-Cuando un indizador está establecido en un `suspended` estado, afecta principalmente a la reindexación automática y a las actualizaciones de vistas materializadas. A continuación se muestra una breve descripción general:
+Cuando un indizador se establece en un estado `suspended`, afecta principalmente a la reindexación automática y a las actualizaciones de la vista materializada. A continuación se muestra una breve descripción general:
 
-**Reindexación omitida**: la reindexación automática se omite para `suspended` los indexadores y cualquier indexador que comparta el mismo `shared_index`. Esto garantiza que los recursos del sistema se conserven al no reindexar los datos relacionados con los procesos suspendidos.
+**Se ha omitido la reindexación**: la reindexación automática se ha omitido para los indexadores `suspended` y cualquier indexador que comparta el mismo `shared_index`. Esto garantiza que los recursos del sistema se conserven al no reindexar los datos relacionados con los procesos suspendidos.
 
-**Actualizaciones de Vista Materializada Omitidas**: Similar a la reindexación, las actualizaciones de vistas materializadas relacionadas con `suspended` los indexadores o sus índices compartidos también se pausan. Esta acción reduce aún más la carga del sistema durante los períodos de suspensión.
+**Actualizaciones de vista materializada omitidas**: de forma similar a la reindexación, las actualizaciones de vistas materializadas relacionadas con indexadores `suspended` o sus índices compartidos también se pausan. Esta acción reduce aún más la carga del sistema durante los períodos de suspensión.
 
 >[!INFO]
 >
->El `indexer:reindex` El comando reindexa todos los indexadores, incluidos los marcados como `suspended`, por lo que resulta útil para las actualizaciones manuales cuando se pausan las automáticas.
+>El comando `indexer:reindex` vuelve a indexar todos los indexadores, incluidos los marcados como `suspended`, lo que hace que sea útil para las actualizaciones manuales cuando se pausan las automáticas.
 
 >[!IMPORTANT]
 >

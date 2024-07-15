@@ -6,18 +6,18 @@ feature: Best Practices
 exl-id: d15fe845-670f-4f7e-9645-7e111e6e809f
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
-source-wordcount: '249'
+source-wordcount: '236'
 ht-degree: 0%
 
 ---
 
 # Prácticas recomendadas de configuración para el procesamiento de pedidos
 
-A medida que aumenta el volumen de pedidos en los sitios de Commerce, puede optimizar el rendimiento de cierre de compra y el procesamiento de pedidos activando las siguientes opciones de configuración de tienda:
+A medida que aumenta el volumen de pedidos en los sitios de Commerce, puede optimizar el rendimiento de cierre de compra y el procesamiento de pedidos si habilita las siguientes opciones de configuración de tienda:
 
-- **[!UICONTROL Asynchronous indexing]**: permite activar esta opción para evitar bloqueos de la base de datos y un procesamiento lento que puede producirse cuando se realizan simultáneamente grandes cantidades de pedidos.
-- **[!UICONTROL Asynchronous email notifications]**: active esta opción para acelerar el rendimiento del cierre de compra enviando notificaciones por correo electrónico de cierre de compra y procesamiento de pedidos a intervalos designados en lugar de enviarlas inmediatamente.
-- **[!UICONTROL Enable Archiving]**: active esta opción para mejorar el rendimiento de los pedidos, facturas, envíos y notas de abono, y mantener su espacio de trabajo libre de información innecesaria, de modo que pueda centrarse en el negocio actual. Consulte [Habilitar archivado](https://docs.magento.com/user-guide/sales/order-archive.html#to-enable-archiving).
+- **[!UICONTROL Asynchronous indexing]**: habilite esta opción para evitar bloqueos de base de datos y procesos lentos que pueden producirse cuando se realizan simultáneamente grandes cantidades de pedidos.
+- **[!UICONTROL Asynchronous email notifications]**: habilite esta opción para acelerar el rendimiento del cierre de compra enviando notificaciones de cierre de compra y procesamiento de pedidos por correo electrónico a intervalos designados en lugar de enviarlas inmediatamente.
+- **[!UICONTROL Enable Archiving]**: habilita esta opción para mejorar el rendimiento de pedidos, facturas, envíos y notas de crédito, y para mantener el espacio de trabajo libre de información innecesaria, de modo que pueda centrarse en el negocio actual. Consulte [Habilitar archivado](https://docs.magento.com/user-guide/sales/order-archive.html#to-enable-archiving).
 
 ## Productos y versiones afectados
 
@@ -38,13 +38,13 @@ Los pasos para habilitar el procesamiento asincrónico de pedidos dependen del m
 
 - Para los sitios locales de Adobe Commerce en modo predeterminado o de producción, habilite la indexación asíncrona actualizando la configuración de la cuadrícula en el Administrador.
 
-  Consulte [Habilitar las actualizaciones y reindexaciones programadas de la cuadrícula](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-scheduled-operations.html#enable-scheduled-grid-updates-and-reindexing)
+  Ver [Habilitar las actualizaciones programadas de la cuadrícula y la reindexación](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-scheduled-operations.html#enable-scheduled-grid-updates-and-reindexing)
 
   >[!WARNING]
   >
   >Pruebe siempre los cambios de configuración en el entorno de ensayo antes de actualizar el entorno de producción.
 
-## Información adicional
+## Más información
 
 - [Prácticas recomendadas de configuración](../../../performance/configuration.md)
 - [Referencia de rutas de configuración generales y avanzadas](../../../configuration/reference/config-reference-general.md)

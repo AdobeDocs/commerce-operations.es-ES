@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Administración de extensiones de terceros
 
-El código que amplía o personaliza el comportamiento de Adobe Commerce se denomina extensión. Si lo desea, puede empaquetar y distribuir extensiones en [Commerce Marketplace](https://commercemarketplace.adobe.com/) u otro sistema de distribución de extensiones.
+El código que amplía o personaliza el comportamiento de Adobe Commerce se denomina extensión. Opcionalmente, puede empaquetar y distribuir extensiones en el [Commerce Marketplace](https://commercemarketplace.adobe.com/) u otro sistema de distribución de extensiones.
 
 Las extensiones incluyen:
 
@@ -22,7 +22,7 @@ Las extensiones incluyen:
 
 >[!TIP]
 >
->En este tema se explica cómo utilizar la interfaz de línea de comandos para administrar las extensiones de terceros que compra al Commerce Marketplace. Puede utilizar el mismo procedimiento para instalar _cualquiera_ Extensión; todo lo que necesita es el nombre y la versión Compositor de la extensión. Para encontrarlo, abra el de la extensión de `composer.json` y anote los valores de `"name"` y `"version"`.
+>En este tema se explica cómo utilizar la interfaz de línea de comandos para administrar las extensiones de terceros que compra al Commerce Marketplace. Puede usar el mismo procedimiento para instalar la extensión _any_; todo lo que necesita es el nombre y la versión del Compositor de la extensión. Para encontrarlo, abra el archivo `composer.json` de la extensión y anote los valores de `"name"` y `"version"`.
 
 ## Instalar
 
@@ -38,7 +38,7 @@ Antes de la instalación, es posible que desee:
 Para instalar una extensión, debe:
 
 1. Obtenga una extensión del Commerce Marketplace u otro desarrollador de extensiones.
-1. Si instala una extensión desde el Commerce Marketplace, asegúrese de que la variable `repo.magento.com` el repositorio existe en su `composer.json` archivo:
+1. Si instala una extensión desde el Commerce Marketplace, asegúrese de que el repositorio `repo.magento.com` existe en el archivo `composer.json`:
 
    ```bash
    "repositories": [
@@ -50,39 +50,39 @@ Para instalar una extensión, debe:
    ```
 
 1. Obtenga el nombre y la versión del compositor de la extensión.
-1. Actualice el `composer.json` en el proyecto con el nombre y la versión de la extensión.
+1. Actualice el archivo `composer.json` del proyecto con el nombre y la versión de la extensión.
 1. Compruebe que la extensión de está instalada correctamente.
 1. Habilite y configure la extensión de.
 
 ### Obtener información de extensión
 
-Si ya conoce el nombre y la versión del compositor de la extensión, omita este paso y continúe con [Actualice su `composer.json` archivo](#update-composer-dependencies).
+Si ya conoce el nombre y la versión del compositor de la extensión, omita este paso y continúe con [Actualice el archivo `composer.json`](#update-composer-dependencies).
 
 Para obtener el nombre y la versión del compositor de la extensión desde el Commerce Marketplace:
 
-1. Iniciar sesión en [Commerce Marketplace](https://commercemarketplace.adobe.com/) con el nombre de usuario y la contraseña que utilizó para adquirir la extensión de.
+1. Inicie sesión en [Commerce Marketplace](https://commercemarketplace.adobe.com/) con el nombre de usuario y la contraseña que utilizó para adquirir la extensión.
 
-1. En la esquina superior derecha, haga clic en **Su nombre** > **Mi perfil**.
+1. En la esquina superior derecha, haz clic en **Tu nombre** > **Mi perfil**.
 
-   ![Acceder a su cuenta de Marketplace](../../assets/installation/marketplace-my-profile.png)
+   ![Acceda a su cuenta de Marketplace](../../assets/installation/marketplace-my-profile.png)
 
-1. Clic **Mis compras**.
+1. Haga clic en **Mis compras**.
 
-   ![Historial de compras de Marketplace](../../assets/installation//marketplace-my-purchases.png)
+   ![Historial de compras en el mercado](../../assets/installation//marketplace-my-purchases.png)
 
 1. Busque la extensión que desea instalar y haga clic en **Detalles técnicos**.
 
-   ![Los detalles técnicos muestran el nombre de Compositor de la extensión.](../../assets/installation/marketplace-extension-technical-details.png)
+   ![Los detalles técnicos muestran el nombre de autor de la extensión](../../assets/installation/marketplace-extension-technical-details.png)
 
 >[!TIP]
 >
->También puede encontrar el nombre del compositor y la versión de _cualquiera_ extensión (tanto si la compró en Commerce Marketplace como en otro sitio) en el `composer.json` archivo.
+>También puede encontrar el nombre del Compositor y la versión de _cualquier_ extensión (tanto si la compró en Commerce Marketplace como en otro lugar) en el archivo `composer.json` de la extensión.
 
 ### Actualizar dependencias del Compositor
 
-Añada el nombre y la versión de la extensión a su `composer.json` archivo:
+Agregue el nombre y la versión de la extensión a su archivo `composer.json`:
 
-1. Vaya al directorio del proyecto y actualice el `composer.json` archivo.
+1. Vaya al directorio del proyecto y actualice el archivo `composer.json`.
 
    ```bash
    composer require <component-name>:<version>
@@ -94,7 +94,7 @@ Añada el nombre y la versión de la extensión a su `composer.json` archivo:
    composer require j2t/module-payplug:2.0.2
    ```
 
-1. Introduzca su [claves de autenticación](../prerequisites/authentication-keys.md). Su clave pública es su nombre de usuario; su clave privada es su contraseña.
+1. Escriba sus [claves de autenticación](../prerequisites/authentication-keys.md). Su clave pública es su nombre de usuario; su clave privada es su contraseña.
 
 1. Espere a que Composer termine de actualizar las dependencias del proyecto y asegúrese de que no hay errores:
 
@@ -120,7 +120,7 @@ De forma predeterminada, la extensión está probablemente deshabilitada:
 Module is disabled
 ```
 
-El nombre de la extensión tiene el formato `<VendorName>_<ComponentName>`; este es un formato diferente del nombre del Compositor. Utilice este formato para activar la extensión de. Si no está seguro del nombre de la extensión, ejecute:
+El nombre de la extensión tiene el formato `<VendorName>_<ComponentName>`; es un formato diferente del nombre del Compositor. Utilice este formato para activar la extensión de. Si no está seguro del nombre de la extensión, ejecute:
 
 ```bash
 bin/magento module:status
@@ -130,7 +130,7 @@ Y busque la extensión en &quot;Lista de módulos desactivados&quot;.
 
 ### Activar
 
-Algunas extensiones no funcionan correctamente a menos que borre primero los archivos de vista estática generados. Utilice el `--clear-static-content` para borrar los archivos de vista estática al activar una extensión.
+Algunas extensiones no funcionan correctamente a menos que borre primero los archivos de vista estática generados. Utilice la opción `--clear-static-content` para borrar los archivos de vista estática cuando habilite una extensión.
 
 1. Habilite la extensión y borre los archivos de vista estática:
 
@@ -184,7 +184,7 @@ Algunas extensiones no funcionan correctamente a menos que borre primero los arc
 
 >[!TIP]
 >
->Si se producen errores al cargar la tienda en un explorador, utilice el siguiente comando para borrar la caché: `bin/magento cache:flush`.
+>Si encuentra errores al cargar la tienda en un explorador, use el siguiente comando para borrar la caché: `bin/magento cache:flush`.
 
 ## Actualizar
 
@@ -232,13 +232,13 @@ Debe ponerse en contacto con el proveedor de la extensión para obtener instrucc
 
 >[!CAUTION]
 >
->Realice los pasos de desinstalación en un entorno que no sea de producción _primero_ y realice pruebas exhaustivas antes de su implementación en el entorno de producción de.
+>Realice los pasos de desinstalación en un entorno que no sea de producción _first_ y realice pruebas exhaustivas antes de implementar en el entorno de producción.
 
 Las siguientes instrucciones proporcionan información general para desinstalar extensiones de terceros:
 
 1. Elimine la extensión del repositorio del proyecto de Adobe Commerce.
 
-   - Para las extensiones basadas en Compositor, elimine la extensión de su Adobe Commerce `composer.json` archivo.
+   - Para las extensiones basadas en Compositor, quite la extensión del archivo de Adobe Commerce `composer.json`.
 
      ```bash
      composer remove <package-name>
@@ -250,7 +250,7 @@ Las siguientes instrucciones proporcionan información general para desinstalar 
      rm -rf app/code/<vendor-name>/<module-name>
      ```
 
-1. Si la variable `config.php` está bajo control de código fuente en el repositorio del proyecto de Adobe Commerce, elimine la extensión de la `config.php` archivo.
+1. Si el archivo `config.php` está bajo control de código fuente en el repositorio del proyecto de Adobe Commerce, quite la extensión del archivo `config.php`.
 
 1. Pruebe la base de datos local para asegurarse de que las instrucciones proporcionadas por el proveedor funcionan según lo esperado.
 

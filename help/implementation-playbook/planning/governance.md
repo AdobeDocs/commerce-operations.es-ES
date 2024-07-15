@@ -16,7 +16,7 @@ La gobernanza del proyecto es una función de supervisión alineada con la estru
 
 El modelo de gobernanza define, documenta y comunica prácticas personalizadas y efectivas para proporcionar un método integral de control del proyecto y proporcionar visibilidad periódica en todos los niveles para garantizar el éxito. Contiene un marco para la toma de decisiones; define las funciones, responsabilidades y responsabilidades para la realización del proyecto; y gobierna la efectividad. La estructura de gobernanza se acumula desde el equipo de ejecución hasta la administración ejecutiva, lo que define las actividades, los informes, la escalación y el flujo de información.
 
-![Infografía de gobernanza del proyecto](../../assets/playbooks/project-governance.svg)
+![Infografía del control del proyecto](../../assets/playbooks/project-governance.svg)
 
 En varios niveles, los equipos analizan las métricas específicas de sprint y proyecto para comprender el progreso y tomar las medidas correctivas necesarias. Estas métricas a nivel de sprint pueden incluir la velocidad y la evolución de cada sprint.
 

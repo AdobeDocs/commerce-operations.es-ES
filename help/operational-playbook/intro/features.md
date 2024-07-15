@@ -15,4 +15,4 @@ Para ofrecer las mejores experiencias de comercio del mundo, es necesario admiti
 
 ## Una plataforma abierta para apoyar su evolución
 
-![El valor de la tecnología comercial](../../assets/playbooks/commerce-features.png)
+![El valor de la tecnología de comercio](../../assets/playbooks/commerce-features.png)

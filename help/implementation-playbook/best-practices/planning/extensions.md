@@ -6,8 +6,8 @@ feature: Best Practices, Extensions
 exl-id: 95d2c7bf-fd2f-4c98-8293-96d69b86341f
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
-source-wordcount: '195'
-ht-degree: 0%
+source-wordcount: '176'
+ht-degree: 1%
 
 ---
 
@@ -15,14 +15,14 @@ ht-degree: 0%
 
 Las extensiones de terceros de Adobe Commerce (módulos) pueden causar varios problemas que pueden afectar negativamente al rendimiento de la tienda. Puede evitar estos problemas siguiendo estas prácticas recomendadas:
 
-- Descargue y compre extensiones de terceros desde una fuente de confianza, como la [Commerce Marketplace](https://marketplace.magento.com/extensions.html).
+- Descargue y compre extensiones de terceros de una fuente de confianza, como el [Commerce Marketplace](https://marketplace.magento.com/extensions.html).
 - Actualice todas las extensiones de terceros a la versión más reciente.
 - Si no puede mantener actualizadas las extensiones de terceros, considere la posibilidad de utilizar diferentes extensiones.
 - Cuando planee una actualización a una nueva versión de Adobe Commerce, compruebe que las extensiones de terceros instaladas sean compatibles con la nueva versión y actualice las extensiones si es necesario.
 
 >[!NOTE]
 >
-> Todas las extensiones disponibles en Adobe Commerce Marketplace son necesarias para mantener la compatibilidad con las nuevas versiones de Commerce. Consulte [Compatibilidad de versión](https://developer.adobe.com/commerce/marketplace/guides/sellers/compatibility/releases/).
+> Todas las extensiones disponibles en Adobe Commerce Marketplace son necesarias para mantener la compatibilidad con las nuevas versiones de Commerce. Consulte [Compatibilidad de la versión](https://developer.adobe.com/commerce/marketplace/guides/sellers/compatibility/releases/).
 
 ## Productos y versiones afectados
 
@@ -31,7 +31,7 @@ Las extensiones de terceros de Adobe Commerce (módulos) pueden causar varios pr
 - Adobe Commerce en la infraestructura en la nube
 - Adobe Commerce local
 
-## Información adicional
+## Más información
 
 - [Prácticas recomendadas para planificar las actualizaciones](../../../upgrade/prepare/best-practices.md)
 - Uso de extensiones de terceros con Adobe Commerce en infraestructuras en la nube

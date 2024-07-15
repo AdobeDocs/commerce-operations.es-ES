@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Actualizar el esquema y los datos de la base de datos
 
-Antes de utilizar este comando, debe [instalar la aplicación](../advanced.md).
+Antes de usar este comando, debe [instalar la aplicación](../advanced.md).
 
 ## Actualizar el esquema y los datos de la base de datos
 
@@ -23,7 +23,7 @@ Cada vez que realice una acción que provoque cambios en el esquema o los datos 
 
 >[!NOTE]
 >
->A *componente* puede ser un módulo, una temática o un paquete de idioma; no importa si el componente procede del Commerce Marketplace o no.
+>Un *componente* puede ser un módulo, un tema o un paquete de idioma; no importa si el componente procede del Commerce Marketplace o no.
 
 1. Inicie la actualización:
 
@@ -31,7 +31,7 @@ Cada vez que realice una acción que provoque cambios en el esquema o los datos 
    bin/magento setup:upgrade [--keep-generated]
    ```
 
-   Donde `--keep-generated` es un argumento opcional que no se actualiza [archivos de vista estática](../../configuration/cli/static-view-file-deployment.md). Este argumento opcional es para uso *solamente* en circunstancias limitadas por integradores de sistemas experimentados. Debe usarse. *solamente* in [modo de producción](../../configuration/bootstrap/application-modes.md#production-mode). Debería *no* se utilizará en [modo de desarrollador](../../configuration/bootstrap/application-modes.md#developer-mode).
+   Donde `--keep-generated` es un argumento opcional que no actualiza [los archivos de vista estática](../../configuration/cli/static-view-file-deployment.md). Este argumento opcional es para uso *solamente* en circunstancias limitadas por integradores de sistemas experimentados. Debe usarse *solamente* en [modo de producción](../../configuration/bootstrap/application-modes.md#production-mode). Debería *no* usarse en [modo de desarrollador](../../configuration/bootstrap/application-modes.md#developer-mode).
 
 1. Limpie la caché:
 

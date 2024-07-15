@@ -4,7 +4,7 @@ description: Crear o ampliar tipos de configuración.
 exl-id: 4390c310-b35a-431a-859f-3fd46d8ba6bf
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '591'
+source-wordcount: '525'
 ht-degree: 0%
 
 ---
@@ -15,11 +15,11 @@ ht-degree: 0%
 
 Para ampliar un tipo de configuración existente, solo es necesario crear un archivo de configuración en el módulo.
 
-Por ejemplo, para añadir un observador de eventos, debe crear `app/code/{VendorName}/{ModuleName}/etc/events.xml` y declarar un nuevo observador.
+Por ejemplo, para agregar un observador de eventos, cree `app/code/{VendorName}/{ModuleName}/etc/events.xml` y declare un nuevo observador.
 
-Dado que el tipo de configuración de evento existe en Commerce, el cargador y el `events.xsd` los esquemas de validación ya están presentes y funcionan.
+Dado que el tipo de configuración de evento existe en Commerce, el cargador y el esquema de validación `events.xsd` ya están presentes y funcionan.
 
-Su nuevo `events.xml` se recopila automáticamente del módulo y se combina con otros `events.xml` para otros módulos.
+El nuevo `events.xml` se recopila automáticamente del módulo y se combina con otros `events.xml` archivos de otros módulos.
 
 ## Crear tipos de configuración
 
@@ -38,7 +38,7 @@ Por ejemplo, para introducir un adaptador para un nuevo servidor de búsqueda qu
 
 >[!INFO]
 >
->Si los nuevos módulos tienen un `search.xml` , se combinan con el archivo cuando se carga.
+>Si los módulos nuevos tienen un archivo `search.xml`, se combinarán con el archivo cuando se cargue.
 
 ### Ejemplos de uso
 
@@ -48,7 +48,7 @@ Para crear un tipo de configuración:
 1. Cree su archivo XML.
 1. Defina el objeto de configuración en su `di.xml`.
 
-   El siguiente ejemplo del módulo Magento_Sales [di.xml](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Sales/etc/di.xml) ilustra el aspecto que debería tener un objeto de configuración.
+   El siguiente ejemplo del [di.xml](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Sales/etc/di.xml) del módulo Magento_Sales ilustra el aspecto que debería tener un objeto de configuración.
 
    ```xml
    <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
@@ -76,11 +76,11 @@ Para crear un tipo de configuración:
    </config>
    ```
 
-   - El primer nodo de tipo establece el nombre de archivo del Reader, asociado `Converter` y `SchemaLocator` clases.
-   - A continuación, el `pdfConfigDataStorage` el nodo de tipo virtual adjunta la clase reader a una instancia de [Magento\Framework\Config\Data](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Config/Data.php).
-   - Y, por último, el último nodo de tipo adjunta ese tipo virtual de datos de configuración al [Magento\Sales\Model\Order\Pdf\Config](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Sales/Model/Order/Pdf/Config.php) , que se utiliza para leer valores en de esos [pdf.xml](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Sales/etc/pdf.xml) archivos.
+   - El primer nodo de tipo establece el nombre de archivo del Reader, asociado con las clases `Converter` y `SchemaLocator`.
+   - A continuación, el nodo de tipo virtual `pdfConfigDataStorage` adjunta la clase de lector a una instancia de [Magento\Framework\Config\Data](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Config/Data.php).
+   - Y, por último, el último nodo de tipo adjunta ese tipo virtual de datos de configuración a la clase [Magento\Sales\Model\Order\Pdf\Config](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Sales/Model/Order/Pdf/Config.php), que se utiliza para leer valores en de esos archivos [pdf.xml](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Sales/etc/pdf.xml).
 
-1. Definir un lector ampliando [Magento\Framework\Config\Reader\Filesystem](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Config/Reader/Filesystem.php) y vuelva a escribir los parámetros siguientes:
+1. Defina un lector ampliando la clase [Magento\Framework\Config\Reader\Filesystem](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Config/Reader/Filesystem.php) y vuelva a escribir los parámetros siguientes:
 
    ```php
    $_idAttributes // Array of node attribute IDs.
@@ -115,13 +115,13 @@ class Reader extends Filesystem
 
 >[!INFO]
 >
->Si prefiere crear su propia versión del lector, puede hacerlo implementando `\Magento\Framework\Config\ReaderInterface`. Consulte [Lector de configuración de Magento_Analytics](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Analytics/ReportXml/Config/Reader.php)
+>Si prefiere crear su propia versión del lector, puede hacerlo implementando `\Magento\Framework\Config\ReaderInterface`. Ver [Magento de configuración de Analytics](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Analytics/ReportXml/Config/Reader.php)
 
 Después de definir el lector, utilícelo para recopilar, combinar, validar y convertir los archivos de configuración en una representación de matriz interna.
 
 ## Validación de un tipo de configuración
 
-Cada archivo de configuración se valida con un esquema específico para su tipo de configuración. Ejemplo: eventos que, en versiones anteriores de Commerce, se configuraban en `config.xml`, ahora están configuradas en `events.xml`.
+Cada archivo de configuración se valida con un esquema específico para su tipo de configuración. Ejemplo: los eventos que, en versiones anteriores de Commerce, se configuraban en `config.xml`, ahora se configuran en `events.xml`.
 
 Los archivos de configuración se pueden validar antes (opcional) y después de cualquier combinación de varios archivos que afecten al mismo tipo de configuración. A menos que las reglas de validación para los archivos individuales y combinados sean idénticas, debe proporcionar dos esquemas para validar los archivos de configuración:
 
@@ -131,7 +131,7 @@ Los archivos de configuración se pueden validar antes (opcional) y después de 
 Los nuevos archivos de configuración deben ir acompañados de esquemas de validación XSD. Un archivo de configuración XML y su archivo de validación XSD deben tener el mismo nombre.
 
 Si debe utilizar dos archivos XSD para un solo archivo XML, los nombres de los esquemas deben ser reconocibles y asociados al archivo XML.
-Si tiene un `events.xml` archivo y una primera `events.xsd` archivo, los archivos XSD para el combinado `events.xml` el nombre del archivo podría ser `events_merged.xsd`.
+Si tiene un archivo `events.xml` y un primer archivo `events.xsd`, los archivos XSD del archivo `events.xml` combinado podrían llamarse `events_merged.xsd`.
 Para garantizar la validación de un archivo XML mediante el archivo XSD adecuado, debe agregar el Nombre de recurso uniforme (URN) al archivo XSD en el archivo XML. Por ejemplo:
 
 ```xml

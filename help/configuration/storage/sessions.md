@@ -5,7 +5,7 @@ feature: Configuration, Storage
 exl-id: 43cab98a-5b68-492e-b891-8db4cc99184e
 source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
 workflow-type: tm+mt
-source-wordcount: '260'
+source-wordcount: '257'
 ht-degree: 0%
 
 ---
@@ -14,8 +14,8 @@ ht-degree: 0%
 
 En este tema se explica cómo buscar dónde se almacenan los archivos de sesión. El sistema utiliza la siguiente lógica para almacenar los archivos de sesión:
 
-- Si configuró memcached, las sesiones se almacenan en RAM; consulte [Usar memcached para el almacenamiento de sesión](memcached.md).
-- Si configuró Redis, las sesiones se almacenan en el servidor Redis; consulte [Usar Redis para el almacenamiento de sesión](../cache/redis-session.md).
+- Si configuró memcached, las sesiones se almacenan en RAM; consulte [Usar memcached para almacenar sesiones](memcached.md).
+- Si configuró Redis, las sesiones se almacenan en el servidor Redis; consulte [Usar Redis para el almacenamiento de sesiones](../cache/redis-session.md).
 - Si utiliza el almacenamiento predeterminado de sesiones basado en archivos, las sesiones se almacenan en las siguientes ubicaciones en el orden mostrado:
 
    1. Directorio definido en [`env.php`](#example-in-envphp)
@@ -24,7 +24,7 @@ En este tema se explica cómo buscar dónde se almacenan los archivos de sesión
 
 ## Ejemplo en `env.php`
 
-Un fragmento de muestra de `<magento_root>/app/etc/env.php` sigue:
+A continuación se muestra un fragmento de ejemplo de `<magento_root>/app/etc/env.php`:
 
 ```php
  'session' => [
@@ -37,21 +37,21 @@ El ejemplo anterior almacena los archivos de sesión en `/var/www/session`
 
 ## Ejemplo en `php.ini`
 
-Como usuario con `root` privilegios, abra su `php.ini` y busque el valor de. `session.save_path`. Esto identifica dónde se almacenan las sesiones.
+Como usuario con privilegios de `root`, abra el archivo `php.ini` y busque el valor de `session.save_path`. Esto identifica dónde se almacenan las sesiones.
 
 ## Administrar tamaño de sesión
 
-Consulte la [Administración de sesiones](https://docs.magento.com/user-guide/stores/security-session-management.html) en el _Guía del usuario_.
+Consulte [Administración de sesión](https://docs.magento.com/user-guide/stores/security-session-management.html) en la _Guía del usuario_.
 
 ## Configuración de recolección de basura
 
-Para limpiar sesiones caducadas, el sistema llama a `gc` (_recolección de basura_) de forma aleatoria de acuerdo con una probabilidad calculada por el `gc_probability / gc_divisor` Directiva. Por ejemplo, si establece estas directivas en `1/100` respectivamente, significa una probabilidad de `1%` (_probabilidad de una llamada de recolección de elementos no utilizados por cada 100 solicitudes_).
+Para limpiar sesiones caducadas, el sistema llama al controlador `gc` (_recolección de elementos no utilizados_) de forma aleatoria según una probabilidad calculada por la directiva `gc_probability / gc_divisor`. Por ejemplo, si establece estas directivas en `1/100` respectivamente, significa una probabilidad de `1%` (_probabilidad de una llamada de recolección de basura por cada 100 solicitudes_).
 
-El controlador de recolección de elementos no utilizados utiliza `gc_maxlifetime` directiva: el número de segundos después de los cuales las sesiones se ven como _basura_ y potencialmente limpiado.
+El controlador de recolección de elementos no utilizados usa la directiva `gc_maxlifetime`, es decir, el número de segundos después de los cuales las sesiones se ven como _elementos no utilizados_ y se pueden limpiar.
 
-En algunos sistemas operativos (Debian/Ubuntu), la opción predeterminada `session.gc_probability` la directiva es `0`, que impide que se ejecute el controlador de recolección de elementos no utilizados.
+En algunos sistemas operativos (Debian/Ubuntu), la directiva predeterminada `session.gc_probability` es `0`, lo que impide que se ejecute el controlador de recolección de elementos no utilizados.
 
-Puede sobrescribir el `session.gc_` directivas del `php.ini` archivo en el `<magento_root>/app/etc/env.php` archivo:
+Puede sobrescribir las directivas `session.gc_` del archivo `php.ini` en el archivo `<magento_root>/app/etc/env.php`:
 
 ```php
  'session' => [

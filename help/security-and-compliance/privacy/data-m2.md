@@ -69,9 +69,9 @@ Adobe Commerce se puede configurar para almacenar los siguientes atributos del c
 >
 >De acuerdo con las prácticas recomendadas actuales de seguridad y privacidad, asegúrese de estar al tanto de cualquier posible riesgo legal y de seguridad asociado con el almacenamiento de la fecha de nacimiento completa de los clientes (mes, día, año) junto con otros identificadores personales, como el nombre completo, antes de recopilar o procesar dichos datos.
 
-#### `customer_entity` y referencias de &#39;customer_entity&#39;
+#### Referencias de `customer_entity` y &#39;customer_entity&#39;
 
-Las siguientes columnas de la variable `customer_entity` La tabla contiene información del cliente:
+Las siguientes columnas de la tabla `customer_entity` contienen información del cliente:
 
 | Columna | Tipo de datos |
 | ------------ | ------------ |
@@ -84,7 +84,7 @@ Las siguientes columnas de la variable `customer_entity` La tabla contiene infor
 | `dob` | fecha |
 | `gender` | smallint(5) |
 
-Estas tablas hacen referencia a `customer_entity` y pueden contener atributos de cliente personalizados:
+Estas tablas hacen referencia a `customer_entity` y pueden contener atributos personalizados del cliente:
 
 | Tabla | Columna | Tipo de datos |
 | -------------------------- | ------- | ------------- |
@@ -96,7 +96,7 @@ Estas tablas hacen referencia a `customer_entity` y pueden contener atributos de
 
 #### `customer_grid_flat` tabla
 
-Las siguientes columnas de la variable `customer_grid_flat` La tabla contiene información del cliente:
+Las siguientes columnas de la tabla `customer_grid_flat` contienen información del cliente:
 
 | Columna | Tipo de datos |
 | -------------------- | ------------ |
@@ -139,7 +139,7 @@ Adobe Commerce almacena los siguientes atributos de cliente:
 
 #### `customer_address_entity` y `customer_address_entity` referencias
 
-Las siguientes columnas de la variable `customer_address_entity` La tabla contiene información del cliente:
+Las siguientes columnas de la tabla `customer_address_entity` contienen información del cliente:
 
 | Columna | Tipo de datos |
 | ------------ | ------------ |
@@ -158,7 +158,7 @@ Las siguientes columnas de la variable `customer_address_entity` La tabla contie
 | `telephone` | varchar(255) |
 | `vat_id` | varchar(255) |
 
-Estas tablas hacen referencia a `customer_address_entity` y pueden contener atributos de cliente personalizados:
+Estas tablas hacen referencia a `customer_address_entity` y pueden contener atributos personalizados del cliente:
 
 | Tabla | Columna | Tipo de datos |
 | ---------------------------------- | ------- | ------------- |
@@ -170,11 +170,11 @@ Estas tablas hacen referencia a `customer_address_entity` y pueden contener atri
 
 ### Datos del pedido
 
-El `sales_order` y las tablas relacionadas contienen el nombre del cliente, las direcciones de facturación y envío y los datos relacionados.
+`sales_order` y las tablas relacionadas contienen el nombre del cliente, las direcciones de facturación y envío y los datos relacionados.
 
 #### `sales_order` tabla
 
-Las siguientes columnas de la variable `sales_order` La tabla contiene información del cliente:
+Las siguientes columnas de la tabla `sales_order` contienen información del cliente:
 
 | Columna | Tipo de datos |
 | --------------------- | ------------ |
@@ -195,7 +195,7 @@ Las siguientes columnas de la variable `sales_order` La tabla contiene informaci
 
 #### `sales_order_address` tabla
 
-El `sales_order_address` contiene la dirección del cliente.
+La tabla `sales_order_address` contiene la dirección del cliente.
 
 | Columna | Tipo de datos |
 | --------------------- | ------------ |
@@ -218,7 +218,7 @@ El `sales_order_address` contiene la dirección del cliente.
 
 #### `sales_order_grid` tabla
 
-Las siguientes columnas de la variable `sales_order_grid` La tabla contiene información del cliente:
+Las siguientes columnas de la tabla `sales_order_grid` contienen información del cliente:
 
 | Columna | Tipo de datos |
 | ---------------------- | ------------ |
@@ -237,7 +237,7 @@ Las ofertas contienen el nombre, el correo electrónico, la dirección y la info
 
 #### `quote` tabla
 
-Las siguientes columnas de la variable `quote` La tabla contiene información del cliente:
+Las siguientes columnas de la tabla `quote` contienen información del cliente:
 
 | Columna | Tipo de datos |
 | --------------------- | ------------ |
@@ -254,7 +254,7 @@ Las siguientes columnas de la variable `quote` La tabla contiene información de
 
 #### `quote_address` tabla
 
-Las siguientes columnas de la variable `quote_address` La tabla contiene información del cliente:
+Las siguientes columnas de la tabla `quote_address` contienen información del cliente:
 
 | Columna | Tipo de datos |
 | ------------- | ------------ |
@@ -277,7 +277,7 @@ Las siguientes columnas de la variable `quote_address` La tabla contiene informa
 
 ### Datos de pago
 
-El `sales_order_payment` La tabla incluye información de tarjetas de crédito y otra información transaccional.
+La tabla `sales_order_payment` incluye información de tarjetas de crédito y otra información transaccional.
 
 | Columna | Tipo de datos |
 | ------------------------ | ------------ |
@@ -299,7 +299,7 @@ Adobe Commerce se puede configurar para que los clientes puedan enviar invitacio
 
 #### `magento_invitation` tabla
 
-El `magento_invitation` La tabla contiene el ID de cliente, el correo electrónico y el ID de referencia.
+La tabla `magento_invitation` contiene el ID de cliente, el correo electrónico y el ID de referencia.
 
 | Columna | Tipo de datos |
 | ------------- | ------------ |
@@ -309,7 +309,7 @@ El `magento_invitation` La tabla contiene el ID de cliente, el correo electróni
 
 #### `magento_invitation_track` tabla
 
-El `magento_invitation_track` La tabla también contiene información del cliente.
+La tabla `magento_invitation_track` también contiene información del cliente.
 
 | Columna | Tipo de datos |
 | ------------- | --------- |
@@ -318,7 +318,7 @@ El `magento_invitation_track` La tabla también contiene información del client
 
 ### Varias tablas que hacen referencia a clientes
 
-Las tablas siguientes contienen un `customer_id` columna:
+Las tablas siguientes contienen una columna `customer_id`:
 
 - `catalog_compare_item`
 - `catalog_product_frontend_action`

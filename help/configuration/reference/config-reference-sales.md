@@ -12,15 +12,15 @@ ht-degree: 0%
 
 # Referencia de rutas de configuración de ventas
 
-Esta sección enumera los nombres de las variables y las rutas de configuración disponibles para las opciones de Admin en **Tiendas** > Configuración > **Configuración** > **Ventas**.
+Esta sección enumera los nombres de las variables y las rutas de configuración disponibles para las opciones del Administrador en **Tiendas** > Configuración > **Configuración** > **Ventas**.
 
-El [`magento app:config:dump` mando](../cli/export-configuration.md) escribe estos valores en el archivo de configuración compartida, `app/etc/config.php`, que debe estar en el control de código fuente. Para anular cualquier configuración de configuración o definir configuraciones confidenciales, consulte [Utilice variables de entorno para anular los ajustes de configuración](override-config-settings.md#environment-variables). Este tema sí _no_ lista [valores confidenciales y específicos del sistema](config-reference-sens.md).
+El comando [`magento app:config:dump` ](../cli/export-configuration.md) escribe estos valores en el archivo de configuración compartida, `app/etc/config.php`, que debe estar en el control de código fuente. Para anular opcionalmente las opciones de configuración o establecer opciones confidenciales, vea [Usar variables de entorno para anular las opciones de configuración](override-config-settings.md#environment-variables). Este tema _no_ enumera [valores confidenciales y específicos del sistema](config-reference-sens.md).
 
 ## Rutas de ventas
 
-Estos valores de configuración están disponibles en el Administrador de **Tiendas** > Configuración > **Configuración** > **Ventas** > **Ventas**.
+Estos valores de configuración están disponibles en el Administrador en **Tiendas** > Configuración > **Configuración** > **Ventas** > **Ventas**.
 
-| Nombre | Ruta de configuración | ¿Solo comercio? |
+| Nombre | Ruta de configuración | ¿Solo Commerce? |
 |--------------|--------------|--------------|
 | Ocultar IP del cliente | `sales/general/hide_customer_ip` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Subtotal | `sales/totals_sort/subtotal` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -29,8 +29,8 @@ Estos valores de configuración están disponibles en el Administrador de **Tien
 | Impuestos | `sales/totals_sort/tax` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Impuesto de producto fijo | `sales/totals_sort/weee` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Total general | `sales/totals_sort/grand_total` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Tarjetas de regalo | `sales/totals_sort/giftcardaccount` | ![Solo de comercio](/help/assets/configuration/cloud-ee.png) |
-| Crédito de tienda | `sales/totals_sort/customerbalance` | ![Solo de comercio](/help/assets/configuration/cloud-ee.png) |
+| Tarjetas de regalo | `sales/totals_sort/giftcardaccount` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
+| Crédito de tienda | `sales/totals_sort/customerbalance` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
 | Permitir reordenar | `sales/reorder/allow` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Logotipo para copias impresas en PDF (200 x 50) | `sales/identity/logo` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Logotipo para vista de impresión de HTML | `sales/identity/logo_html` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -47,33 +47,33 @@ Estos valores de configuración están disponibles en el Administrador de **Tien
 | Duración de la orden de pago pendiente (minutos) | `sales/orders/delete_pending_after` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Permitir mensajes de regalo en el nivel de pedido | `sales/gift_options/allow_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Permitir mensajes de regalo para artículos de pedido | `sales/gift_options/allow_items` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Permitir ajuste de regalo en el nivel de pedido | `sales/gift_options/wrapping_allow_order` | ![Solo de comercio](/help/assets/configuration/cloud-ee.png) |
-| Permitir ajuste de regalo para artículos de pedido | `sales/gift_options/wrapping_allow_items` | ![Solo de comercio](/help/assets/configuration/cloud-ee.png) |
-| Permitir recibo de regalo | `sales/gift_options/allow_gift_receipt` | ![Solo de comercio](/help/assets/configuration/cloud-ee.png) |
-| Permitir tarjeta impresa | `sales/gift_options/allow_printed_card` | ![Solo de comercio](/help/assets/configuration/cloud-ee.png) |
-| Precio predeterminado para la tarjeta impresa | `sales/gift_options/printed_card_price` | ![Solo de comercio](/help/assets/configuration/cloud-ee.png) |
+| Permitir ajuste de regalo en el nivel de pedido | `sales/gift_options/wrapping_allow_order` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
+| Permitir ajuste de regalo para artículos de pedido | `sales/gift_options/wrapping_allow_items` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
+| Permitir recibo de regalo | `sales/gift_options/allow_gift_receipt` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
+| Permitir tarjeta impresa | `sales/gift_options/allow_printed_card` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
+| Precio predeterminado para la tarjeta impresa | `sales/gift_options/printed_card_price` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
 | Habilitar MAP | `sales/msrp/enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Mostrar precio real | `sales/msrp/display_price_type` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Mensaje de texto emergente predeterminado | `sales/msrp/explanation_message` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Mensaje de texto predeterminado &quot;Qué es esto&quot; | `sales/msrp/explanation_message_whats_this` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Habilitar pedido por SKU en Mi cuenta en Tienda | `sales/product_sku/my_account_enable` | ![Solo de comercio](/help/assets/configuration/cloud-ee.png) |
+| Habilitar pedido por SKU en Mi cuenta en Tienda | `sales/product_sku/my_account_enable` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
 | Habilitado | `sales/instant_purchase/active` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Texto del botón | `sales/instant_purchase/button_text` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Grupos de clientes | `sales/product_sku/allowed_groups` | ![Solo de comercio](/help/assets/configuration/cloud-ee.png) |
-| Habilitar archivado | `sales/magento_salesarchive/active` | ![Solo de comercio](/help/assets/configuration/cloud-ee.png) |
-| Archivar pedidos adquiridos | `sales/magento_salesarchive/age` | ![Solo de comercio](/help/assets/configuration/cloud-ee.png) |
-| Estados de pedidos que se archivarán | `sales/magento_salesarchive/order_statuses` | ![Solo de comercio](/help/assets/configuration/cloud-ee.png) |
-| Habilitar RMA en tienda | `sales/magento_rma/enabled` | ![Solo de comercio](/help/assets/configuration/cloud-ee.png) |
-| Habilitar RMA en el nivel de producto | `sales/magento_rma/enabled_on_product` | ![Solo de comercio](/help/assets/configuration/cloud-ee.png) |
-| Usar dirección de la tienda | `sales/magento_rma/use_store_address` | ![Solo de comercio](/help/assets/configuration/cloud-ee.png) |
+| Grupos de clientes | `sales/product_sku/allowed_groups` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
+| Habilitar archivado | `sales/magento_salesarchive/active` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
+| Archivar pedidos adquiridos | `sales/magento_salesarchive/age` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
+| Estados de pedidos que se archivarán | `sales/magento_salesarchive/order_statuses` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
+| Habilitar RMA en tienda | `sales/magento_rma/enabled` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
+| Habilitar RMA en el nivel de producto | `sales/magento_rma/enabled_on_product` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
+| Usar dirección de la tienda | `sales/magento_rma/use_store_address` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
 
 {style="table-layout:auto"}
 
 ## Rutas de correos electrónicos de ventas
 
-Estos valores de configuración están disponibles en el Administrador de **Tiendas** > Configuración > **Configuración** > **Ventas** > **Correos electrónicos de ventas**.
+Estos valores de configuración están disponibles en el Administrador en **Tiendas** > Configuración > **Configuración** > **Ventas** > **Correos electrónicos de ventas**.
 
-| Nombre | Ruta de configuración | ¿Solo comercio? |
+| Nombre | Ruta de configuración | ¿Solo Commerce? |
 |--------------|--------------|--------------|
 | Envío asincrónico | `sales_email/general/async_sending` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Habilitado | `sales_email/order/enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -116,26 +116,26 @@ Estos valores de configuración están disponibles en el Administrador de **Tien
 | Plantilla de correo electrónico de comentario de abono | `sales_email/creditmemo_comment/template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Plantilla de correo electrónico de comentario de nota de abono para invitado | `sales_email/creditmemo_comment/guest_template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Enviar comentarios de nota de abono Método de copia de correo electrónico | `sales_email/creditmemo_comment/copy_method` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Habilitado | `sales_email/magento_rma/enabled` | ![Solo de comercio](/help/assets/configuration/cloud-ee.png) |
-| Remitente de correo electrónico RMA | `sales_email/magento_rma/identity` | ![Solo de comercio](/help/assets/configuration/cloud-ee.png) |
-| Plantilla de correo electrónico de RMA | `sales_email/magento_rma/template` | ![Solo de comercio](/help/assets/configuration/cloud-ee.png) |
-| Plantilla de correo electrónico de RMA para invitado | `sales_email/magento_rma/guest_template` | ![Solo de comercio](/help/assets/configuration/cloud-ee.png) |
-| Método Enviar copia de correo electrónico RMA | `sales_email/magento_rma/copy_method` | ![Solo de comercio](/help/assets/configuration/cloud-ee.png) |
-| Habilitado | `sales_email/magento_rma_auth/enabled` | ![Solo de comercio](/help/assets/configuration/cloud-ee.png) |
-| Remitente de correo electrónico de autorización RMA | `sales_email/magento_rma_auth/identity` | ![Solo de comercio](/help/assets/configuration/cloud-ee.png) |
-| Plantilla de correo electrónico de autorización RMA | `sales_email/magento_rma_auth/template` | ![Solo de comercio](/help/assets/configuration/cloud-ee.png) |
-| Plantilla de correo electrónico de autorización de RMA para invitado | `sales_email/magento_rma_auth/guest_template` | ![Solo de comercio](/help/assets/configuration/cloud-ee.png) |
-| Método Enviar copia de correo electrónico de autorización RMA | `sales_email/magento_rma_auth/copy_method` | ![Solo de comercio](/help/assets/configuration/cloud-ee.png) |
-| Habilitado | `sales_email/magento_rma_comment/enabled` | ![Solo de comercio](/help/assets/configuration/cloud-ee.png) |
-| Remitente de correo electrónico de comentario RMA | `sales_email/magento_rma_comment/identity` | ![Solo de comercio](/help/assets/configuration/cloud-ee.png) |
-| Plantilla de correo electrónico de comentario RMA | `sales_email/magento_rma_comment/template` | ![Solo de comercio](/help/assets/configuration/cloud-ee.png) |
-| Plantilla de correo electrónico de comentario de RMA para invitado | `sales_email/magento_rma_comment/guest_template` | ![Solo de comercio](/help/assets/configuration/cloud-ee.png) |
-| Método Enviar copia de correo electrónico RMA | `sales_email/magento_rma_comment/copy_method` | ![Solo de comercio](/help/assets/configuration/cloud-ee.png) |
-| Habilitado | `sales_email/magento_rma_customer_comment/enabled` | ![Solo de comercio](/help/assets/configuration/cloud-ee.png) |
-| Remitente de correo electrónico de comentario RMA | `sales_email/magento_rma_customer_comment/identity` | ![Solo de comercio](/help/assets/configuration/cloud-ee.png) |
-| Destinatario de correo electrónico de comentario RMA | `sales_email/magento_rma_customer_comment/recipient` | ![Solo de comercio](/help/assets/configuration/cloud-ee.png) |
-| Plantilla de correo electrónico de comentario RMA | `sales_email/magento_rma_customer_comment/template` | ![Solo de comercio](/help/assets/configuration/cloud-ee.png) |
-| Método Enviar copia de correo electrónico RMA | `sales_email/magento_rma_customer_comment/copy_method` | ![Solo de comercio](/help/assets/configuration/cloud-ee.png) |
+| Habilitado | `sales_email/magento_rma/enabled` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
+| Remitente de correo electrónico RMA | `sales_email/magento_rma/identity` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
+| Plantilla de correo electrónico de RMA | `sales_email/magento_rma/template` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
+| Plantilla de correo electrónico de RMA para invitado | `sales_email/magento_rma/guest_template` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
+| Método Enviar copia de correo electrónico RMA | `sales_email/magento_rma/copy_method` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
+| Habilitado | `sales_email/magento_rma_auth/enabled` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
+| Remitente de correo electrónico de autorización RMA | `sales_email/magento_rma_auth/identity` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
+| Plantilla de correo electrónico de autorización RMA | `sales_email/magento_rma_auth/template` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
+| Plantilla de correo electrónico de autorización de RMA para invitado | `sales_email/magento_rma_auth/guest_template` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
+| Método Enviar copia de correo electrónico de autorización RMA | `sales_email/magento_rma_auth/copy_method` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
+| Habilitado | `sales_email/magento_rma_comment/enabled` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
+| Remitente de correo electrónico de comentario RMA | `sales_email/magento_rma_comment/identity` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
+| Plantilla de correo electrónico de comentario RMA | `sales_email/magento_rma_comment/template` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
+| Plantilla de correo electrónico de comentario de RMA para invitado | `sales_email/magento_rma_comment/guest_template` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
+| Método Enviar copia de correo electrónico RMA | `sales_email/magento_rma_comment/copy_method` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
+| Habilitado | `sales_email/magento_rma_customer_comment/enabled` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
+| Remitente de correo electrónico de comentario RMA | `sales_email/magento_rma_customer_comment/identity` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
+| Destinatario de correo electrónico de comentario RMA | `sales_email/magento_rma_customer_comment/recipient` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
+| Plantilla de correo electrónico de comentario RMA | `sales_email/magento_rma_customer_comment/template` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
+| Método Enviar copia de correo electrónico RMA | `sales_email/magento_rma_customer_comment/copy_method` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
 | Mostrar ID de pedido en el encabezado | `sales_pdf/invoice/put_order_id` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Mostrar ID de pedido en el encabezado | `sales_pdf/shipment/put_order_id` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Mostrar ID de pedido en el encabezado | `sales_pdf/creditmemo/put_order_id` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -144,12 +144,12 @@ Estos valores de configuración están disponibles en el Administrador de **Tien
 
 ## Rutas fiscales
 
-Estos valores de configuración están disponibles en el Administrador de **Tiendas** > Configuración > **Configuración** > **Ventas** > **Impuestos**.
+Estos valores de configuración están disponibles en el Administrador en **Tiendas** > Configuración > **Configuración** > **Ventas** > **Impuestos**.
 
-| Nombre | Ruta de configuración | ¿Solo comercio? |
+| Nombre | Ruta de configuración | ¿Solo Commerce? |
 |--------------|--------------|--------------|
 | Clase de Impuesto para Envío | `tax/classes/shipping_tax_class` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Clase de Impuesto para Opciones de Regalo | `tax/classes/wrapping_tax_class` | ![Solo de comercio](/help/assets/configuration/cloud-ee.png) |
+| Clase de Impuesto para Opciones de Regalo | `tax/classes/wrapping_tax_class` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
 | Clase de impuesto predeterminada para el producto | `tax/classes/default_product_tax_class` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Clase de Impuesto por Defecto para Cliente | `tax/classes/default_customer_tax_class` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Método de cálculo de impuestos basado en | `tax/calculation/algorithm` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -162,22 +162,22 @@ Estos valores de configuración están disponibles en el Administrador de **Tien
 | Habilitar el comercio transfronterizo | `tax/calculation/cross_border_trade_enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | País predeterminado | `tax/defaults/country` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Estado predeterminado | `tax/defaults/region` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Código postal predeterminado | `tax/defaults/postcode` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Código Post predeterminado | `tax/defaults/postcode` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Mostrar precios de productos en el catálogo | `tax/display/type` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Mostrar precios de envío | `tax/display/shipping` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Mostrar precios | `tax/cart_display/price` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Mostrar subtotal | `tax/cart_display/subtotal` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Mostrar importe de envío | `tax/cart_display/shipping` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Mostrar precios de envoltorio para regalos | `tax/cart_display/gift_wrapping` | ![Solo de comercio](/help/assets/configuration/cloud-ee.png) |
-| Mostrar precios de tarjetas impresas | `tax/cart_display/printed_card` | ![Solo de comercio](/help/assets/configuration/cloud-ee.png) |
+| Mostrar precios de envoltorio para regalos | `tax/cart_display/gift_wrapping` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
+| Mostrar precios de tarjetas impresas | `tax/cart_display/printed_card` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
 | Incluir impuestos en el total del pedido | `tax/cart_display/grandtotal` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Mostrar resumen completo de impuestos | `tax/cart_display/full_summary` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Mostrar subtotal de impuestos cero | `tax/cart_display/zero_tax` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Mostrar precios | `tax/sales_display/price` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Mostrar subtotal | `tax/sales_display/subtotal` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Mostrar importe de envío | `tax/sales_display/shipping` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Mostrar precios de envoltorio para regalos | `tax/sales_display/gift_wrapping` | ![Solo de comercio](/help/assets/configuration/cloud-ee.png) |
-| Mostrar precios de tarjetas impresas | `tax/sales_display/printed_card` | ![Solo de comercio](/help/assets/configuration/cloud-ee.png) |
+| Mostrar precios de envoltorio para regalos | `tax/sales_display/gift_wrapping` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
+| Mostrar precios de tarjetas impresas | `tax/sales_display/printed_card` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
 | Incluir impuestos en el total del pedido | `tax/sales_display/grandtotal` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Mostrar resumen completo de impuestos | `tax/sales_display/full_summary` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Mostrar subtotal de impuestos cero | `tax/sales_display/zero_tax` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -193,9 +193,9 @@ Estos valores de configuración están disponibles en el Administrador de **Tien
 
 ## Rutas de cierre
 
-Estos valores de configuración están disponibles en el Administrador de **Tiendas** > Configuración > **Configuración** > **Ventas** > **Finalizar compra**.
+Estos valores de configuración están disponibles en el Administrador de **Tiendas** > Configuración > **Configuración** > **Ventas** > **Cierre de compra**.
 
-| Nombre | Ruta de configuración | ¿Solo comercio? |
+| Nombre | Ruta de configuración | ¿Solo Commerce? |
 |--------------|--------------|--------------|
 | Habilitar cierre de compra de una página | `checkout/options/onepage_checkout_enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Permitir cierre de compra de invitado | `checkout/options/guest_checkout` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -205,7 +205,7 @@ Estos valores de configuración están disponibles en el Administrador de **Tien
 | Después de agregar una redirección de producto al carro de compras | `checkout/cart/redirect_to_cart` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Imagen de producto agrupada | `checkout/cart/grouped_product_image` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Imagen de producto configurable | `checkout/cart/configurable_product_image` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Previsualizar duración de la cotización (minutos) | `checkout/cart/preview_quota_lifetime` | ![Solo de comercio](/help/assets/configuration/cloud-ee.png) |
+| Previsualizar duración de la cotización (minutos) | `checkout/cart/preview_quota_lifetime` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
 | Mostrar resumen del carro | `checkout/cart_link/use_qty` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Mostrar barra lateral del carro de compras | `checkout/sidebar/display` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Mostrar máximo de elementos añadidos recientemente | `checkout/sidebar/count` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -218,9 +218,9 @@ Estos valores de configuración están disponibles en el Administrador de **Tien
 
 ## Rutas de configuración de envío
 
-Estos valores de configuración están disponibles en el Administrador de **Tiendas** > Configuración > **Configuración** > **Ventas** > **Configuración de envío**.
+Estos valores de configuración están disponibles en el Administrador en **Tiendas** > Configuración > **Configuración** > **Ventas** > **Configuración de envío**.
 
-| Nombre | Ruta de configuración | ¿Solo comercio? |
+| Nombre | Ruta de configuración | ¿Solo Commerce? |
 |--------------|--------------|--------------|
 | Aplicar política de envío personalizada | `shipping/shipping_policy/enable_shipping_policy` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Política de envío | `shipping/shipping_policy/shipping_policy_content` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -229,9 +229,9 @@ Estos valores de configuración están disponibles en el Administrador de **Tien
 
 ## Rutas de configuración de multienvío
 
-Estos valores de configuración están disponibles en el Administrador de **Tiendas** > Configuración > **Configuración** > **Ventas** > **Configuración de envío múltiple**.
+Estos valores de configuración están disponibles en el Administrador en **Tiendas** > Configuración > **Configuración** > **Ventas** > **Configuración de envío múltiple**.
 
-| Nombre | Ruta de configuración | ¿Solo comercio? |
+| Nombre | Ruta de configuración | ¿Solo Commerce? |
 |--------------|--------------|--------------|
 | Permitir el envío a varias direcciones | `multishipping/options/checkout_multiple` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Cantidad máxima permitida para el envío a varias direcciones | `multishipping/options/checkout_multiple_maximum_qty` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -242,7 +242,7 @@ Estos valores de configuración están disponibles en el Administrador de **Tien
 
 Estos valores de configuración están disponibles en el Administrador de **Tiendas** > Configuración > **Configuración** > **Ventas** > **Métodos de envío**.
 
-| Nombre | Ruta de configuración | ¿Solo comercio? |
+| Nombre | Ruta de configuración | ¿Solo Commerce? |
 |--------------|--------------|--------------|
 | Habilitado | `carriers/flatrate/active` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Título | `carriers/flatrate/title` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -280,7 +280,7 @@ Estos valores de configuración están disponibles en el Administrador de **Tien
 | Mostrar método si no es aplicable | `carriers/tablerate/showmethod` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Orden de clasificación | `carriers/tablerate/sort_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Activado para cierre de compra | `carriers/ups/active` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Activado para RMA | `carriers/ups/active_rma` | ![Solo de comercio](/help/assets/configuration/cloud-ee.png) |
+| Activado para RMA | `carriers/ups/active_rma` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
 | Tipo de UPS | `carriers/ups/type` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Modo | `carriers/ups/mode_xml` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Origen del envío | `carriers/ups/origin_shipment` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -307,7 +307,7 @@ Estos valores de configuración están disponibles en el Administrador de **Tien
 | Mostrar método si no es aplicable | `carriers/ups/showmethod` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Orden de clasificación | `carriers/ups/sort_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Activado para cierre de compra | `carriers/usps/active` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Activado para RMA | `carriers/usps/active_rma` | ![Solo de comercio](/help/assets/configuration/cloud-ee.png) |
+| Activado para RMA | `carriers/usps/active_rma` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
 | Modo | `carriers/usps/mode` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Tipo de solicitud de paquetes | `carriers/usps/shipment_requesttype` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Contenedor | `carriers/usps/container` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -332,7 +332,7 @@ Estos valores de configuración están disponibles en el Administrador de **Tien
 | Mostrar método si no es aplicable | `carriers/usps/showmethod` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Orden de clasificación | `carriers/usps/sort_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Activado para cierre de compra | `carriers/fedex/active` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Activado para RMA | `carriers/fedex/active_rma` | ![Solo de comercio](/help/assets/configuration/cloud-ee.png) |
+| Activado para RMA | `carriers/fedex/active_rma` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
 | Título | `carriers/fedex/title` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | URL de servicios web (producción) | `carriers/fedex/production_webservices_url` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | URL de servicios web (zona protegida) | `carriers/fedex/sandbox_webservices_url` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -357,7 +357,7 @@ Estos valores de configuración están disponibles en el Administrador de **Tien
 | Mostrar método si no es aplicable | `carriers/fedex/showmethod` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Orden de clasificación | `carriers/fedex/sort_order` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Activado para cierre de compra | `carriers/dhl/active` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Activado para RMA | `carriers/dhl/active_rma` | ![Solo de comercio](/help/assets/configuration/cloud-ee.png) |
+| Activado para RMA | `carriers/dhl/active_rma` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
 | Título | `carriers/dhl/title` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Tipo de contenido | `carriers/dhl/content_type` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Calcular tarifa de manejo | `carriers/dhl/handling_type` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -388,17 +388,17 @@ Estos valores de configuración están disponibles en el Administrador de **Tien
 
 Estos valores de configuración están disponibles en el Administrador de **Tiendas** > Configuración > **Configuración** > **Ventas** > **API de Google**.
 
-| Nombre | Ruta de configuración | ¿Solo comercio? |
+| Nombre | Ruta de configuración | ¿Solo Commerce? |
 |--------------|--------------|--------------|
 | Activar | `google/analytics/active` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Tipo de cuenta | `google/analytics/type` | ![Solo de comercio](/help/assets/configuration/cloud-ee.png) |
+| Tipo de cuenta | `google/analytics/type` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
 | Habilitar experimentos de contenido | `google/analytics/experiments` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Propiedad de lista para la página del catálogo | `google/analytics/catalog_page_list_value` | ![Solo de comercio](/help/assets/configuration/cloud-ee.png) |
-| Propiedad de lista para el bloque de venta cruzada | `google/analytics/crosssell_block_list_value` | ![Solo de comercio](/help/assets/configuration/cloud-ee.png) |
-| Propiedad de lista para el bloque de ampliación de venta | `google/analytics/upsell_block_list_value` | ![Solo de comercio](/help/assets/configuration/cloud-ee.png) |
-| Propiedad de lista para el bloque de productos relacionado | `google/analytics/related_block_list_value` | ![Solo de comercio](/help/assets/configuration/cloud-ee.png) |
-| Propiedad List para la página de resultados de la búsqueda | `google/analytics/search_page_list_value` | ![Solo de comercio](/help/assets/configuration/cloud-ee.png) |
-| &quot;Promociones internas&quot; para el campo de promociones &quot;Etiqueta&quot;. | `google/analytics/promotions_list_value` | ![Solo de comercio](/help/assets/configuration/cloud-ee.png) |
+| Propiedad de lista para la página del catálogo | `google/analytics/catalog_page_list_value` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
+| Propiedad de lista para el bloque de venta cruzada | `google/analytics/crosssell_block_list_value` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
+| Propiedad de lista para el bloque de ampliación de venta | `google/analytics/upsell_block_list_value` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
+| Propiedad de lista para el bloque de productos relacionado | `google/analytics/related_block_list_value` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
+| Propiedad List para la página de resultados de la búsqueda | `google/analytics/search_page_list_value` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
+| &quot;Promociones internas&quot; para el campo de promociones &quot;Etiqueta&quot;. | `google/analytics/promotions_list_value` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
 | Activar | `google/adwords/active` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | ID de conversión | `google/adwords/conversion_id` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Idioma de conversión | `google/adwords/conversion_language` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -412,9 +412,9 @@ Estos valores de configuración están disponibles en el Administrador de **Tien
 
 ## Rutas de tarjetas regalo
 
-Estos valores de configuración están disponibles en el Administrador de **Tiendas** > Configuración > **Configuración** > **Ventas** > **Tarjetas de regalo**.
+Estos valores de configuración están disponibles en el Administrador en **Tiendas** > Configuración > **Configuración** > **Ventas** > **Tarjetas de regalo**.
 
-| Nombre | Ruta de configuración | ¿Solo comercio? |
+| Nombre | Ruta de configuración | ¿Solo Commerce? |
 |--------------|--------------|--------------|
 | Remitente de correo electrónico de notificación de tarjeta regalo | `giftcard/email/identity` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Plantilla de correo electrónico de notificación de tarjeta regalo | `giftcard/email/template` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |

@@ -29,7 +29,7 @@ Entrega continua (CD) implementa inmediatamente el código fuente en el servidor
 
 A medida que la compilación se ejecuta en el sistema de compilación, no solo minimiza el tiempo de inactividad de la implementación, sino que también reduce la carga en el servidor. Como resultado, las actividades de control de calidad, que se producen en el servidor, se ven menos afectadas.
 
-![Infografía de entrega continua](../../assets/playbooks/cicd.svg)
+![Infografía de envío continuo](../../assets/playbooks/cicd.svg)
 
 El proceso de CI/CD del diagrama anterior puede describirse brevemente de la siguiente manera:
 

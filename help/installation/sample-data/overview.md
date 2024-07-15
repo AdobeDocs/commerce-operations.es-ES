@@ -17,7 +17,7 @@ Los datos de muestra proporcionan una tienda basada en el tema de Luma equipado 
 >
 >Para revisar y analizar la base de datos y varias funciones, considere la posibilidad de utilizar datos reales en lugar de datos de ejemplo. Los datos de muestra están diseñados como una simulación de tienda generada previamente para demostrar el diseño del tema y el comportamiento básico de la tienda. Todas las entidades de datos de ejemplo se escriben directamente en las tablas de la base de datos, mientras que los datos de ejemplo se instalan.
 
-Puede instalar datos de ejemplo antes o después de instalar el software de Commerce. Cuando haya terminado con los datos de ejemplo, puede eliminarlos o instalarlos de nuevo, tal como se describe en [Quitar módulos de datos de ejemplo o actualizar datos de ejemplo](remove-or-update.md).
+Puede instalar datos de ejemplo antes o después de instalar el software de Commerce. Cuando haya terminado con los datos de ejemplo, puede eliminarlos o instalarlos de nuevo tal como se describe en [Quitar módulos de datos de ejemplo o actualizar datos de ejemplo](remove-or-update.md).
 
 >[!WARNING]
 >
@@ -27,5 +27,5 @@ Puede instalar datos de ejemplo opcionales de cualquiera de las siguientes maner
 
 | Método de instalación | Descripción | Nivel de habilidad requerido |
 |--- |--- |--- |
-| Uso del compositor | [Ejecutar `magento sampledata:deploy` para modificar la raíz de la aplicación `composer.json`](composer-packages.md) para habilitar los módulos de datos de ejemplo. | Requiere conocimientos de composición y acceso al sistema de archivos de Commerce. |
-| Clonación de repositorios | [Clone el repositorio de GitHub](git-repositories.md) y el repositorio de datos de ejemplo y, a continuación, vincúlelos. | Solo para desarrolladores colaboradores. Todos los demás deben utilizar uno de los métodos anteriores. |
+| Uso del compositor | [Ejecute `magento sampledata:deploy` para modificar la raíz de la aplicación `composer.json`](composer-packages.md) y habilitar los módulos de datos de ejemplo. | Requiere conocimientos de composición y acceso al sistema de archivos de Commerce. |
+| Clonación de repositorios | [Clona el repositorio de GitHub](git-repositories.md) y el repositorio de datos de ejemplo y, a continuación, vincúlelos. | Solo para desarrolladores colaboradores. Todos los demás deben utilizar uno de los métodos anteriores. |

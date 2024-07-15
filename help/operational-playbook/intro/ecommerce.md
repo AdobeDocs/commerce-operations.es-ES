@@ -4,7 +4,7 @@ description: Descripción del comercio electrónico
 exl-id: b418d36b-7dc6-49c7-95a8-03a55c69cb6f
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '490'
+source-wordcount: '494'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ El comercio electrónico hace posible que la gente abra las puertas de sus propi
 - La sobrecarga del comercio electrónico es baja en comparación con los ladrillos y el mortero
 - Tiendas en línea están abiertas 24/7
 - La compra es instantánea
-- Personalización y experiencias de usuario personalizadas
+- Personalization y experiencias de usuario personalizadas
 - Potencial de alcance de cliente global
 
 ### Desventajas
@@ -71,8 +71,8 @@ Estos son algunos de los desafíos comunes de comercio electrónico que enfrenta
 
 Las expectativas de los clientes están aumentando y siempre hay nuevas técnicas de crecimiento para aumentar su tasa de conversión. Este manual tratará de esbozar y explicar en más detalle cómo abordar algunos de estos desafíos para los clientes y ejecutar con éxito un sitio de comercio electrónico en todo su potencial.
 
-![El valor de la tecnología comercial](../../assets/playbooks/commerce-tech.png)
+![El valor de la tecnología de comercio](../../assets/playbooks/commerce-tech.png)
 
-## Industrias comerciales
+## Industrias Commerce
 
-![El valor de la tecnología comercial](../../assets/playbooks/commerce-industries.png)
+![El valor de la tecnología de comercio](../../assets/playbooks/commerce-industries.png)

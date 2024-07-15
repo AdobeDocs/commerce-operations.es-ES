@@ -20,27 +20,27 @@ Se dedica un gran esfuerzo a proporcionar a los clientes la mejor experiencia en
 
 El envío y el cumplimiento tienen algunos factores básicos que actúan como base, entre ellos:
 
-- **Métodos de envío y coste**—Las empresas necesitan analizar y dividir el coste total del envío y determinar si absorben los costes de envío, si transfieren los costes a los clientes o si comparten los costes. ¿Cómo proporcionará la empresa ofertas de envío o envío gratis? ¿Cómo se enviarán los productos? ¿Habrá más de un método de envío y gastos de envío?
+- **Métodos y costo de envío**: las empresas necesitan analizar y dividir todo el costo de envío y determinar si absorben los costos de envío, transfieren los costos a los clientes o comparten el costo. ¿Cómo proporcionará la empresa ofertas de envío o envío gratis? ¿Cómo se enviarán los productos? ¿Habrá más de un método de envío y gastos de envío?
 
-- **Product**: cada producto es diferente en términos de número de artículos, peso, destino y durabilidad. Las empresas necesitan analizar estos detalles para comprender el coste total del envío, ya que los distintos productos tienen diferentes costes de envío.
+- **Producto**: cada producto es diferente en términos de número de artículos, peso, destino y durabilidad. Las empresas necesitan analizar estos detalles para comprender el coste total del envío, ya que los distintos productos tienen diferentes costes de envío.
 
-- **Empaquetando**—El empaquetado también juega un papel importante en la comprensión del método de envío y el costo. Por ejemplo, ¿el producto es frágil o está envasado como regalo?
+- **Empaquetado**: el empaquetado también desempeña un papel importante para comprender el método y el costo de envío. Por ejemplo, ¿el producto es frágil o está envasado como regalo?
 
-- **Temporada**—Qué cambios deberían introducirse durante las estaciones pico, como el frenesí de clics y los festivales.
+- **Temporada**: qué cambios se deben introducir durante las estaciones pico, como el frenesí de clics y los festivales.
 
-- **Portadoras**— ¿Qué compañía de envío de terceros se adapta mejor al negocio? ¿Cuáles son los servicios proporcionados por las compañías navieras? ¿Cuál es el coste?
+- **Transportistas**: ¿Qué compañía de envío de terceros se adapta mejor a la empresa? ¿Cuáles son los servicios proporcionados por las compañías navieras? ¿Cuál es el coste?
 
 ## Métodos de envío
 
 Antes de que una empresa envíe su producto, la empresa debe decidir los métodos de envío y los costes. Existen varias opciones para los métodos de envío, entre las que se incluyen:
 
-- **Envío gratuito**—Proporcionar envío gratuito a los clientes puede ser la mejor experiencia del cliente, pero puede que no se adapte a la empresa.
+- **Envío gratuito**: Proporcionar envío gratuito a los clientes puede ser la mejor experiencia, pero puede que no se adapte a la empresa.
 
-- **Tasas en tiempo real**: la colaboración con proveedores de envío de terceros permite a los minoristas publicar el método de envío y el coste que la empresa de envío está cobrando actualmente. Esto permite a los clientes elegir el método de envío que prefieran.
+- **Tarifas en tiempo real**: la colaboración con proveedores de envío de terceros permite a los minoristas publicar el método de envío y el costo que la compañía de envío está cobrando actualmente. Esto permite a los clientes elegir el método de envío que prefieran.
 
-- **Tarifa plana**—Una de las opciones de envío más populares. El truco aquí es garantizar que los minoristas no cobren demasiado o menos a los clientes. Esto también funciona si los minoristas tienen un producto estándar, pero puede complicarse si tienen una variedad de productos.
+- **Tarifa fija**—Una de las opciones de envío más populares. El truco aquí es garantizar que los minoristas no cobren demasiado o menos a los clientes. Esto también funciona si los minoristas tienen un producto estándar, pero puede complicarse si tienen una variedad de productos.
 
-- **Envío gratuito por más de un importe**: los minoristas pueden proporcionar envío gratuito cuando el cliente compra por encima de una determinada cantidad. Los minoristas deben calcular esa cantidad para proporcionar este servicio.
+- **Envío gratuito por más de un importe**: los minoristas pueden proporcionar envío gratuito cuando el cliente compre por encima de un determinado importe. Los minoristas deben calcular esa cantidad para proporcionar este servicio.
 
 El envío y el cumplimiento requerían la coordinación del equipo tanto interna como externamente. Una estrategia de envío y cumplimiento debe compartirse con toda la organización para que estén alineadas. Por ejemplo, si el equipo de marketing desea enviar una promoción que incluya el envío gratuito, debe alinearla con la estrategia de envío y cumplimiento y con el equipo para eliminar cualquier experiencia negativa del cliente.
 

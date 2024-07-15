@@ -5,14 +5,14 @@ exl-id: 04d8270f-3f68-445a-8e7a-e17905a6f77c
 feature: Best Practices
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '388'
 ht-degree: 0%
 
 ---
 
 # Partes interesadas clave
 
-Muchas empresas en 2021 se han dado cuenta de que convertirse en &quot;a prueba de pandemias&quot; está directamente relacionado con la fortaleza digital de una organización. Basado en los datos de Forrester,[McKinsey](https://www.mckinsey.com/business-functions/strategy-and-corporate-finance/our-insights/five-fifty-the-quickening)encontró que el comercio electrónico ha experimentado un crecimiento de 10 años en tan solo 3 meses, impulsado por la necesidad de conectarse digitalmente con los clientes mientras las puertas de ladrillo y mortero estaban cerradas.
+Muchas empresas en 2021 se han dado cuenta de que convertirse en &quot;a prueba de pandemias&quot; está directamente relacionado con la fortaleza digital de una organización. Con base en los datos de Forrester,[McKinsey](https://www.mckinsey.com/business-functions/strategy-and-corporate-finance/our-insights/five-fifty-the-quickening)descubrió que el comercio electrónico ha crecido durante 10 años en tan solo 3 meses, impulsado por la necesidad de conectarse digitalmente con los clientes mientras las puertas de ladrillo y mortero estaban cerradas.
 
 Cuando se toma la decisión de invertir en una transformación del comercio, uno de los pasos más importantes es determinar quién de la organización está involucrado en el proceso. Para las empresas más pequeñas, a veces el equipo de comercio electrónico o digital es solo un puñado de personas, por lo que todo el equipo se hace cargo de la tarea. Sin embargo, para las organizaciones más grandes, un enfoque es dividir esto en tres áreas diferentes, incluyendo:
 

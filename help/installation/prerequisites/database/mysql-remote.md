@@ -21,25 +21,25 @@ Aurora es un servidor MySQL totalmente compatible y de alto rendimiento alojado 
 
 Usar Aurora como base de datos es tan fácil como especificar la base de datos en la configuración de configuración normal de Adobe Commerce, utilizando el conector de base de datos predeterminado.
 
-Al ejecutar `bin/magento setup:install`, use la información de Aurora en el `db-` campos:
+Al ejecutar `bin/magento setup:install`, use la información de Aurora en los campos `db-`:
 
 ```bash
 bin/magento setup:install ... --db-host='database-aurora.us-east-1.rds.amazonaws.com' --db-name='magento2' --db-user='username' --db-password='password' ...
 ```
 
-El `db-host` El valor es la URL de Aurora con el `https://` y final `:portnumber`  eliminado.
+El valor `db-host` es la URL de Aurora con `https://` y `:portnumber` al final eliminados.
 
 ## Configurar una conexión de base de datos remota
 
 >[!NOTE]
 >
->Se trata de un tema avanzado que sólo debe utilizar un administrador de red o de base de datos experimentado. Debe tener `root` tener acceso al sistema de archivos y debe poder iniciar sesión en MySQL como `root`.
+>Se trata de un tema avanzado que sólo debe utilizar un administrador de red o de base de datos experimentado. Debe tener acceso de `root` al sistema de archivos y poder iniciar sesión en MySQL como `root`.
 
 ### Requisitos previos
 
 Antes de empezar, debe:
 
-* [Instalar el servidor MySQL](mysql.md) en el servidor de base de datos.
+* [Instale el servidor MySQL](mysql.md) en el servidor de base de datos.
 * [Crear una instancia de base de datos](mysql.md#configuring-the-database-instance) en el servidor de base de datos.
 * Instale el cliente MySQL en su nodo web de Adobe Commerce. Consulte la documentación de MySQL para obtener más detalles.
 
@@ -60,7 +60,7 @@ Si tiene problemas para conectarse a cualquiera de los hosts, primero haga ping 
 
 Para crear una conexión remota:
 
-1. En el servidor de la base de datos, como usuario con `root` privilegios, abra su archivo de configuración MySQL.
+1. En el servidor de base de datos, como usuario con privilegios de `root`, abra el archivo de configuración de MySQL.
 
    Para localizarlo, introduzca el siguiente comando:
 
@@ -77,13 +77,13 @@ Para crear una conexión remota:
 
    >[!NOTE]
    >
-   >En Ubuntu 16, la ruta es generalmente `/etc/mysql/mysql.conf.d/mysqld.cnf`.
+   >En Ubuntu 16, la ruta suele ser `/etc/mysql/mysql.conf.d/mysqld.cnf`.
 
-1. Buscar en el archivo de configuración `bind-address`.
+1. Busque `bind-address` en el archivo de configuración.
 
    Si existe, cambie el valor de la siguiente manera.
 
-   Si no existe, agréguela al `[mysqld]` sección.
+   Si no existe, agréguela a la sección `[mysqld]`.
 
    ```conf
    bind-address = <ip address of your web node>
@@ -100,18 +100,18 @@ Para crear una conexión remota:
 
    >[!NOTE]
    >
-   >Si MySQL no se inicia, busque en syslog el origen del problema. Resuelva el problema utilizando [Documentación de MySQL](https://dev.mysql.com/doc/refman/5.6/en/server-options.html#option_mysqld_bind-address) u otra fuente autorizada.
+   >Si MySQL no se inicia, busque en syslog el origen del problema. Resuelva el problema usando [documentación MySQL](https://dev.mysql.com/doc/refman/5.6/en/server-options.html#option_mysqld_bind-address) u otro origen autorizado.
 
 ## Conceder acceso a un usuario de base de datos
 
 Para permitir que el nodo web se conecte al servidor de base de datos, debe conceder a un usuario de base de datos de nodo web acceso a la base de datos en el servidor remoto.
 
-En este ejemplo se concede la `root` acceso completo del usuario de la base de datos a la base de datos en el host remoto.
+Este ejemplo concede al usuario de la base de datos `root` acceso completo a la base de datos en el host remoto.
 
 Para conceder acceso a un usuario de base de datos:
 
 1. Inicie sesión en el servidor de la base de datos.
-1. Conéctese a la base de datos MySQL como `root` usuario.
+1. Conéctese a la base de datos MySQL como usuario `root`.
 1. Introduzca el siguiente comando:
 
    ```shell
@@ -155,8 +155,8 @@ Si el servidor web está agrupado, introduzca el comando en cada host de servido
 
 Al instalar Adobe Commerce, debe especificar lo siguiente:
 
-* La dirección URL base (también denominada *dirección del almacén*) especifica el nombre de host o la dirección IP del *nodo web*
-* El host de base de datos es *servidor de base de datos remoto* Dirección IP (o equilibrador de carga si el servidor de la base de datos está agrupado)
-* El nombre de usuario es *nodo web local* usuario de base de datos al que ha dado acceso
+* La dirección URL base (también denominada *dirección de almacén*) especifica el nombre de host o la dirección IP del *nodo web*
+* El host de base de datos es la dirección IP *servidor de base de datos remoto* (o equilibrador de carga si el servidor de base de datos está en clúster)
+* El nombre de usuario de la base de datos es el usuario de la base de datos *nodo web local* al que ha dado acceso
 * Contraseña de base de datos es la contraseña del usuario del nodo web local
 * Nombre de base de datos es el nombre de la base de datos en el servidor remoto

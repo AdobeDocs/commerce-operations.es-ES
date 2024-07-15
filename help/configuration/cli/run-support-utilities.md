@@ -1,10 +1,10 @@
 ---
 title: Ejecutar las utilidades de soporte
-description: Solucione los problemas del proyecto de Commerce con la utilidad de asistencia integrada.
+description: Solucione los problemas del proyecto de Commerce mediante la utilidad de soporte integrada.
 exl-id: 021b795f-e00d-43b5-9cbb-5b57a4795be7
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '465'
+source-wordcount: '461'
 ht-degree: 0%
 
 ---
@@ -15,17 +15,17 @@ ht-degree: 0%
 
 {{file-system-owner}}
 
-Las utilidades de Soporte de Adobe Commerce, también denominadas [Recopilador de datos](https://docs.magento.com/user-guide/system/support-data-collector.html): permite a los usuarios recopilar información de solución de problemas sobre el sistema que puede utilizar nuestro equipo de asistencia.
+Las utilidades de soporte de Adobe Commerce, también denominadas [Recopilador de datos](https://docs.magento.com/user-guide/system/support-data-collector.html), permiten a los usuarios recopilar información de solución de problemas acerca del sistema que puede usar nuestro equipo de soporte.
 
-Adobe Commerce utiliza estas copias de seguridad, también denominadas _volcados_, para analizar los problemas que requieren acceso al código. A continuación se muestra un escenario típico:
+Adobe Commerce usa estas copias de seguridad, también denominadas _volcados_, para analizar los problemas que requieren acceso al código. A continuación se muestra un escenario típico:
 
-1. Tiene un problema con su tienda de Commerce y se pone en contacto con el soporte de Adobe Commerce.
+1. Tiene un problema con su tienda de Commerce y se pone en contacto con el servicio de asistencia de Adobe Commerce.
 1. La asistencia determina que necesitan ver el código o la base de datos para reproducir el problema.
-1. Hace una copia de seguridad del código en un `.tar.gz` archivo.
+1. Hace una copia de seguridad del código en un archivo de `.tar.gz`.
 
    Esta copia de seguridad _excluye los archivos multimedia para acelerar el proceso y dar como resultado un archivo mucho más pequeño.
 
-1. La copia de seguridad de la base de datos en un `.tar.gz` archivo.
+1. Hace una copia de seguridad de la base de datos en un archivo de `.tar.gz`.
 
    De forma predeterminada, los datos confidenciales se colocan en un hash al realizar la copia de seguridad.
 
@@ -36,7 +36,7 @@ Las utilidades pueden tardar varios minutos en completarse.
 
 ## Crear una copia de seguridad de código
 
-Este comando copia el código y lo comprime `tar.gz` formato.
+Este comando realiza una copia de seguridad del código y lo comprime en formato `tar.gz`.
 
 {{tip-backup-command}}
 
@@ -52,7 +52,7 @@ Donde:
 - **`-o|--output=<path>`** es la ruta absoluta del sistema de archivos para almacenar la copia de seguridad (obligatorio).
 - **`-l|--logs`** incluye archivos de registro (opcional).
 
-Por ejemplo, para crear una copia de seguridad de código denominada `/var/www/html/magento2/var/log/mycodebackup.tar.gz`:
+Por ejemplo, para crear una copia de seguridad de código con el nombre `/var/www/html/magento2/var/log/mycodebackup.tar.gz`:
 
 ```bash
 bin/magento support:backup:code --name mycodebackup -o /var/www/html/magento2/var/log
@@ -62,7 +62,7 @@ Una vez completado el comando, proporcione la copia de seguridad de código al S
 
 ## Crear una copia de seguridad
 
-Este comando realiza una copia de seguridad de la base de datos de Commerce y la comprime `tar.gz` formato.
+Este comando realiza una copia de seguridad de la base de datos de Commerce y la comprime en formato `tar.gz`.
 
 {{tip-backup-command}}
 
@@ -114,8 +114,8 @@ Ejecute los siguientes comandos en el orden mostrado para mostrar las rutas a la
    >
    >Los comandos se ejecutan correctamente _solamente_ desde el directorio de instalación.
 
-1. `bin/magento support:utility:paths` crea `<magento_root>/var/support/Paths.php`, que enumera las rutas a todas las aplicaciones utilizadas por la utilidad.
-1. `bin/magento support:utility:check` muestra las rutas del sistema de archivos.
+1. `bin/magento support:utility:paths` crea `<magento_root>/var/support/Paths.php`, que enumera las rutas de acceso a todas las aplicaciones utilizadas por la utilidad.
+1. `bin/magento support:utility:check` muestra las rutas de acceso al sistema de archivos.
 
 A continuación se muestra un ejemplo:
 
@@ -131,4 +131,4 @@ A continuación se muestra un ejemplo:
    mysql => /usr/bin/mysql
 ```
 
-Para resolver los problemas relacionados con la ejecución de las herramientas, asegúrese de que estas aplicaciones estén instaladas y se encuentren en el directorio del usuario del servidor web `$PATH` variable de entorno.
+Para resolver los problemas relacionados con la ejecución de las herramientas, asegúrese de que estas aplicaciones estén instaladas y se encuentren en la variable de entorno `$PATH` del usuario del servidor web.

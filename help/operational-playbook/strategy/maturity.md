@@ -4,7 +4,7 @@ description: Evalúe en qué fase se encuentra su negocio en función de este mo
 exl-id: 5cf9f080-0ac4-4426-837f-3c245d10e504
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '1045'
+source-wordcount: '1044'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Piense en un modelo de madurez como un informe sólido que le ayuda a determinar
 
 El siguiente diagrama resume las diferentes necesidades en los distintos niveles de madurez:
 
-![Necesidades en el diagrama de niveles de madurez](../../assets/playbooks/maturity-levels.png)
+![Necesidades en el diagrama de niveles de vencimiento](../../assets/playbooks/maturity-levels.png)
 
 ## Niveles de madurez
 

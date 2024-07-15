@@ -1,6 +1,6 @@
 ---
-title: Instale el [!DNL Data Migration Tool]
-description: Obtenga información sobre cómo instalar el [!DNL Data Migration Tool] para transferir datos entre Magento 1 y Magento 2.
+title: Instalar  [!DNL Data Migration Tool]
+description: Aprenda a instalar  [!DNL Data Migration Tool]  para transferir datos entre el Magento 1 y el Magento 2.
 exl-id: 5f57067b-3ce8-4b51-b9ae-f60ae089c4ba
 topic: Commerce, Migration
 feature: Configuration, Install
@@ -11,14 +11,14 @@ ht-degree: 0%
 
 ---
 
-# Instale el [!DNL Data Migration Tool]
+# Instalar [!DNL Data Migration Tool]
 
 >[!INFO]
 >
->Versiones de Magento y [!DNL Data Migration Tool] debe coincidir.
+>Las versiones del Magento y [!DNL Data Migration Tool] deben coincidir.
 
 
-Asegúrese de que está utilizando *la misma versión lanzada* del Magento 2 y del [!DNL Data Migration Tool]. Por ejemplo, para la versión de Magento 2.2.0, también debe utilizar la variable [!DNL Data Migration Tool] versión 2.2.0.
+Asegúrese de que está usando *la misma versión lanzada* del Magento 2 y el [!DNL Data Migration Tool]. Por ejemplo, para la versión de Magento 2.2.0, también debe utilizar la versión 2.2.0 de [!DNL Data Migration Tool].
 
 ## Compruebe su versión
 
@@ -47,32 +47,32 @@ cd <your Magento 2 clone directory>
 git branch
 ```
 
-Si actualmente está en el `develop` rama, debe cambiar a una [rama liberada](https://developer.adobe.com/commerce/contributor/guides/install/change-version/) antes de continuar.
+Si actualmente se encuentra en la rama `develop`, debe cambiar a una [rama liberada](https://developer.adobe.com/commerce/contributor/guides/install/change-version/) antes de continuar.
 
 Si aún no ha instalado el software de Adobe Commerce, [instálelo ahora](../../installation/prerequisites/commerce.md).
-Si va a clonar el repositorio de GitHub, asegúrese de retirar una etiqueta de versión como se describe en [(Colaborador) Clonar el repositorio de GitHub](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/).
+Si está clonando el repositorio de GitHub, asegúrese de retirar una etiqueta de versión como se describe en [(Colaborador) Clone el repositorio de GitHub](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/).
 
 ## Buscar versiones publicadas de [!DNL Data Migration Tool]
 
-Vaya a la [Versiones](https://github.com/magento/data-migration-tool/releases) página de la [!DNL Data Migration Tool] El repositorio de GitHub para buscar las versiones disponibles.
+Vaya a la página [Versiones](https://github.com/magento/data-migration-tool/releases) del repositorio de GitHub [!DNL Data Migration Tool] para ver las versiones disponibles.
 
-## Instale el [!DNL Data Migration Tool]
+## Instalar [!DNL Data Migration Tool]
 
-Puede instalar el [!DNL Data Migration Tool] de:
+Puede instalar [!DNL Data Migration Tool] desde:
 
 - [`repo.magento.com`](#install-from-repomagentocom)
 - [GitHub](#install-from-github)
 
 Antes de instalar, asegúrese de que dispone de lo siguiente:
 
-- Se han completado todas las tareas mencionadas en la [Condiciones previas](prerequisites.md) sección
-- [Verificación de la versión](install.md#check-your-version) del software Magento 2
+- Se han completado todas las tareas mencionadas en la sección [Condiciones previas](prerequisites.md)
+- [Comprobó la versión](install.md#check-your-version) del software de Magento 2
 
 ### Instalar desde `repo.magento.com`
 
-Para instalar el [!DNL Data Migration Tool], debe actualizar `composer.json` en el directorio de instalación raíz del Magento para proporcionar la ubicación del [!DNL Data Migration Tool] paquete.
+Para instalar [!DNL Data Migration Tool], debe actualizar `composer.json` en el directorio de instalación raíz del Magento para proporcionar la ubicación del paquete [!DNL Data Migration Tool].
 
-1. Inicie sesión en el servidor de aplicaciones como, o cambie a, [propietario del sistema de archivos](../../installation/prerequisites/file-system/overview.md).
+1. Inicie sesión en el servidor de aplicaciones como [propietario del sistema de archivos](../../installation/prerequisites/file-system/overview.md) o cambie a él.
 1. Cambie al directorio raíz de la aplicación.
 1. Introduzca los siguientes comandos:
 
@@ -84,7 +84,7 @@ Para instalar el [!DNL Data Migration Tool], debe actualizar `composer.json` en 
    composer require magento/data-migration-tool:<version>
    ```
 
-   Donde `<version>` debe coincidir con la versión del código de base de Magento 2.
+   Donde `<version>` debe coincidir con la versión del código base de Magento 2.
 
    Por ejemplo, para la versión 2.2.0, introduzca:
 
@@ -96,13 +96,13 @@ Para instalar el [!DNL Data Migration Tool], debe actualizar `composer.json` en 
    composer require magento/data-migration-tool:2.2.0
    ```
 
-1. Cuando se le solicite, introduzca su [claves de autenticación](../../installation/prerequisites/authentication-keys.md). Su clave pública es su nombre de usuario; su clave privada es su contraseña.
+1. Cuando se le solicite, escriba sus [claves de autenticación](../../installation/prerequisites/authentication-keys.md). Su clave pública es su nombre de usuario; su clave privada es su contraseña.
 
 ### Instalar desde GitHub
 
-Si ha clonado el repositorio de GitHub, siga los pasos a continuación para instalar el [!DNL Data Migration Tool].
+Si ha clonado el repositorio de GitHub, siga los pasos a continuación para instalar [!DNL Data Migration Tool].
 
-1. Inicie sesión en el servidor de aplicaciones como, o cambie a, [propietario del sistema de archivos](../../installation/prerequisites/file-system/overview.md).
+1. Inicie sesión en el servidor de aplicaciones como [propietario del sistema de archivos](../../installation/prerequisites/file-system/overview.md) o cambie a él.
 1. Cambie al directorio raíz de la aplicación.
 1. Introduzca los siguientes comandos:
 
@@ -126,10 +126,10 @@ Si ha clonado el repositorio de GitHub, siga los pasos a continuación para inst
    composer require magento/data-migration-tool:2.2.0
    ```
 
-### Compruebe la versión de instalada [!DNL Data Migration Tool]
+### Comprobar versión de [!DNL Data Migration Tool] instalado
 
-1. Cambiar a su [!DNL Data Migration Tool] directorio: `<vendor>/magento/data-migration-tool`.
+1. Cambie a su directorio [!DNL Data Migration Tool]: `<vendor>/magento/data-migration-tool`.
 
-1. Abrir [`composer.json`](https://github.com/magento/data-migration-tool/blob/2.4/composer.json) en un editor de texto.
+1. Abra [`composer.json`](https://github.com/magento/data-migration-tool/blob/2.4/composer.json) en un editor de texto.
 
-1. El `version` la entrada de ese archivo es la versión de [!DNL Data Migration Tool].
+1. La entrada `version` de ese archivo es la versión de [!DNL Data Migration Tool].

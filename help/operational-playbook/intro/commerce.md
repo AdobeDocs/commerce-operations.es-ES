@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Adobe Commerce es la plataforma líder para la innovación en comercio abierto. Cada año, Adobe Commerce gestiona más de 100.000 millones de dólares en volumen bruto de mercancía. Adobe Commerce ofrece a los clientes la capacidad de crear experiencias de compra únicas y atractivas, funciones integradas y la capacidad de personalización ilimitada, una arquitectura flexible sin encabezado e integraciones de terceros sin problemas.
 
-Existen dos versiones de [!DNL Commerce]:
+Hay dos versiones de [!DNL Commerce]:
 
 _Magento Open Source_ es la versión gratuita, anteriormente denominada Comunidad de Magento. Puede descargar, personalizar y ejecutar la plataforma en su propio servidor o proveedor de alojamiento de su elección.
 
@@ -29,7 +29,7 @@ Adobe Commerce es una solución de comercio electrónico con todas las funciones
 - Paneles de informes de Adobe Commerce con visualización y Report Builder personalizado
 - Chat del Magento (con tecnología dotdigital)
 - Herramientas de marketing avanzadas
-- [!DNL Product Recommendations] equipado con Adobe Sensei
+- [!DNL Product Recommendations] con tecnología de Adobe Sensei
 - Page Builder WYSIWYG
 - Segmentación de clientes
 - Herramientas para fidelizar clientes, como cupones fáciles de canjear

@@ -5,40 +5,40 @@ feature: Configuration, Install, Media
 exl-id: 46d1ffc0-7870-4dd1-beec-0a9ff858ab62
 source-git-commit: 403a5937561d82b02fd126c95af3f70b0ded0747
 workflow-type: tm+mt
-source-wordcount: '863'
+source-wordcount: '792'
 ht-degree: 0%
 
 ---
 
 # Información general sobre inicialización y bootstrap
 
-Para ejecutar la aplicación Commerce, se implementan las siguientes acciones en [pub/index.php][index]:
+Para ejecutar la aplicación Commerce, se han implementado las siguientes acciones en [pub/index.php][index]:
 
-- Incluir [app/bootstrap.php][bootinitial], que realiza rutinas de inicialización esenciales como la gestión de errores, la inicialización del cargador automático, la definición de opciones de perfil y la definición de la zona horaria predeterminada.
-- Cree una instancia de [\Magento\Framework\App\Bootstrap.php][bootstrap] <!-- It requires initialization parameters to be specified in constructor. Normally, the $_SERVER super-global variable is supposed to be passed there. -->
-- Cree una instancia de aplicación de Commerce: [\Magento\Framework\AppInterface][app-face]
+- Incluya [app/bootstrap.php][bootinitial], que realiza rutinas de inicialización esenciales como la gestión de errores, la inicialización del cargador automático, la configuración de opciones de generación de perfiles y la configuración de la zona horaria predeterminada.
+- Crear una instancia de [\Magento\Framework\App\Bootstrap.php][bootstrap] <!-- It requires initialization parameters to be specified in constructor. Normally, the $_SERVER super-global variable is supposed to be passed there. -->
+- Crear una instancia de aplicación de Commerce: [\Magento\Framework\AppInterface][app-face]
 - Ejecutar Commerce
 
 ## Bootstrap run logic
 
-[El objeto de bootstrap][bootinitial] utiliza el siguiente algoritmo para ejecutar la aplicación Commerce:
+[El objeto de arranque][bootinitial] usa el siguiente algoritmo para ejecutar la aplicación Commerce:
 
 1. Inicializa el controlador de errores.
-1. Crea el [administrador de objetos][object] y servicios compartidos básicos que se utilizan en todas partes y se ven afectados por el medio ambiente. Los parámetros de entorno se insertan correctamente en estos objetos.
-1. Afirma que el modo de mantenimiento es _no_ habilitado; de lo contrario, finaliza.
-1. Afirma que la aplicación Commerce está instalada; de lo contrario, finaliza.
-1. Inicia la aplicación Commerce.
+1. Crea el [administrador de objetos][object] y los servicios compartidos básicos que se usan en todas partes y se ven afectados por el entorno. Los parámetros de entorno se insertan correctamente en estos objetos.
+1. Afirma que el modo de mantenimiento está habilitado para _not_; de lo contrario, finaliza.
+1. Afirma que la aplicación de Commerce está instalada; de lo contrario, finaliza.
+1. Inicia la aplicación de Commerce.
 
-   Cualquier excepción no detectada durante el inicio de la aplicación se vuelve a pasar automáticamente a Commerce en el `catchException()` método que puede utilizar para controlar la excepción. Este último debe devolver `true` o `false`:
+   Cualquier excepción no detectada durante el inicio de la aplicación se vuelve a pasar automáticamente a Commerce en el método `catchException()`, que puede utilizar para controlar la excepción. Este último debe devolver `true` o `false`:
 
-   - If `true`: el comercio gestionó la excepción correctamente. No hay necesidad de hacer nada más.
-   - If `false`: (o cualquier otro resultado vacío) Commerce no gestionó la excepción. El objeto de bootstrap realiza la subrutina predeterminada de control de excepciones.
+   - Si `true`: Commerce administró la excepción correctamente. No hay necesidad de hacer nada más.
+   - Si `false`: (o cualquier otro resultado vacío) Commerce no controló la excepción. El objeto de bootstrap realiza la subrutina predeterminada de control de excepciones.
 
 1. Envía la respuesta proporcionada por el objeto de aplicación.
 
    >[!INFO]
    >
-   >Las afirmaciones de que la aplicación Commerce está instalada y no en modo de mantenimiento son el comportamiento predeterminado del `\Magento\Framework\App\Bootstrap` clase. Puede modificarlo con un script de punto de entrada al crear el objeto de bootstrap.
+   >Las afirmaciones de que la aplicación de Commerce está instalada y no está en modo de mantenimiento son el comportamiento predeterminado de la clase `\Magento\Framework\App\Bootstrap`. Puede modificarlo con un script de punto de entrada al crear el objeto de bootstrap.
 
    Ejemplo de script de punto de entrada que modifica el objeto de bootstrap:
 
@@ -59,9 +59,9 @@ Para ejecutar la aplicación Commerce, se implementan las siguientes acciones en
 
 ## Tratamiento de excepciones predeterminado
 
-El objeto de bootstrap especifica cómo gestiona la aplicación Commerce las excepciones no capturadas de la siguiente manera:
+El objeto de bootstrap especifica cómo gestiona la aplicación Commerce las excepciones no detectadas de la siguiente manera:
 
-- Entrada [modo de desarrollador](../bootstrap/application-modes.md#developer-mode), muestra la excepción tal cual.
+- En [modo de desarrollador](../bootstrap/application-modes.md#developer-mode), muestra la excepción tal cual.
 - En cualquier otro modo, intenta registrar la excepción y mostrar un mensaje de error genérico.
 - Termina Commerce con código de error `1`
 
@@ -78,11 +78,11 @@ Tenemos las siguientes aplicaciones de punto de entrada (es decir, aplicaciones 
 1. Utiliza un objeto de respuesta HTTP para devolver el resultado obtenido de la acción del controlador.
 1. Tratamiento de errores (en el siguiente orden de prioridad):
 
-   1. Si está utilizando [modo de desarrollador](../bootstrap/application-modes.md#developer-mode):
-      - Si la aplicación Commerce no está instalada, redirija al Asistente de configuración.
-      - Si la aplicación Commerce está instalada, se muestra un error y el código de estado HTTP 500 (Error interno del servidor).
-   1. Si la aplicación Commerce se encuentra en modo de mantenimiento, muestre una página de aterrizaje &quot;Servicio no disponible&quot; de uso sencillo con el código de estado HTTP 503 (Servicio no disponible).
-   1. Si la aplicación de Commerce es _no_ instalado, redirija al Asistente para la instalación.
+   1. Si está usando [modo de desarrollador](../bootstrap/application-modes.md#developer-mode):
+      - Si la aplicación Commerce no está instalada, redirija al Asistente para la instalación.
+      - Si la aplicación de Commerce está instalada, mostrar un error y el código de estado HTTP 500 (Error interno del servidor).
+   1. Si la aplicación de Commerce está en modo de mantenimiento, muestre una página de aterrizaje &quot;Servicio no disponible&quot; de fácil manejo con el código de estado HTTP 503 (Servicio no disponible).
+   1. Si la aplicación Commerce está _no_ instalada, redirija al Asistente para la instalación.
    1. Si la sesión no es válida, redirija a la página principal.
    1. Si hay algún otro error de inicialización de la aplicación, muestre una página &quot;Página no encontrada&quot; fácil de usar con el código de estado HTTP 404 (No encontrada).
    1. En cualquier otro error, muestre una página &quot;Servicio no disponible&quot; fácil de usar con la respuesta HTTP 503 y genere un informe de errores y muestre su ID en la página.
@@ -93,21 +93,21 @@ Tenemos las siguientes aplicaciones de punto de entrada (es decir, aplicaciones 
 
 >[!INFO]
 >
->El punto de entrada para archivos de vista estática no se utiliza en [modo de producción](application-modes.md#production-mode) para evitar posibles vulnerabilidades en el servidor. En el modo de producción, la aplicación Commerce espera que todos los recursos necesarios existan en la `<your Commerce install dir>/pub/static` directorio.
+>El punto de entrada de los archivos de vista estática no se usa en [modo de producción](application-modes.md#production-mode) para evitar posibles ataques en el servidor. En el modo de producción, la aplicación de Commerce espera que existan todos los recursos necesarios en el directorio `<your Commerce install dir>/pub/static`.
 
-En el modo predeterminado o de desarrollador, una solicitud para un recurso estático inexistente se redirige al punto de entrada estático según las reglas de reescritura especificadas por el `.htaccess`.
-Cuando se redirige la solicitud al punto de entrada, la aplicación de comercio analiza la dirección URL solicitada en función de los parámetros recuperados y encuentra el recurso solicitado.
+En modo predeterminado o de desarrollador, una solicitud para un recurso estático inexistente se redirige al punto de entrada estático según las reglas de reescritura especificadas por el `.htaccess` apropiado.
+Cuando se redirige la solicitud al punto de entrada, la aplicación de Commerce analiza la dirección URL solicitada en función de los parámetros recuperados y encuentra el recurso solicitado.
 
-- Entrada [promotor](application-modes.md#developer-mode) modo, el contenido del archivo se devuelve de modo que cada vez que se solicita el recurso, el contenido devuelto esté actualizado.
-- Entrada [predeterminado](application-modes.md#default-mode) , el recurso recuperado se publica para que la dirección URL solicitada anteriormente pueda acceder a él.
+- En el modo [developer](application-modes.md#developer-mode), se devuelve el contenido del archivo para que el contenido devuelto esté actualizado cada vez que se solicite el recurso.
+- En el modo [default](application-modes.md#default-mode), el recurso recuperado se publica para que la dirección URL solicitada anteriormente pueda obtener acceso a él.
 
-  El servidor procesa todas las solicitudes futuras del recurso estático de la misma manera que los archivos estáticos; es decir, sin involucrar el punto de entrada. Si es necesario sincronizar los archivos publicados con los originales, la variable `pub/static` debe eliminarse; como resultado, los archivos se vuelven a publicar automáticamente con la siguiente solicitud.
+  El servidor procesa todas las solicitudes futuras del recurso estático de la misma manera que los archivos estáticos; es decir, sin involucrar el punto de entrada. Si es necesario sincronizar los archivos publicados con los originales, se debe quitar el directorio `pub/static`; como resultado, los archivos se vuelven a publicar automáticamente con la siguiente solicitud.
 
 ### Punto de entrada de medios
 
-[Magento\MediaStorage\App\Media][media] recupera recursos multimedia (es decir, cualquier archivo cargado en el almacenamiento de medios) de la base de datos. Se utiliza siempre que la base de datos está configurada como almacenamiento de medios.
+[Magento\MediaStorage\App\Media][media] recupera recursos multimedia (es decir, cualquier archivo cargado en el almacenamiento multimedia) de la base de datos. Se utiliza siempre que la base de datos está configurada como almacenamiento de medios.
 
-`\Magento\Core\App\Media` intenta encontrar el archivo de medios en el almacenamiento de base de datos configurado y escribirlo en la `pub/static` y, a continuación, devuelva su contenido. Si se produce un error, devuelve un código de estado HTTP 404 (no encontrado) en el encabezado sin contenido.
+`\Magento\Core\App\Media` intenta encontrar el archivo multimedia en el almacenamiento de base de datos configurado, escribirlo en el directorio `pub/static` y devolver su contenido. Si se produce un error, devuelve un código de estado HTTP 404 (no encontrado) en el encabezado sin contenido.
 
 <!-- Link Definitions -->
 

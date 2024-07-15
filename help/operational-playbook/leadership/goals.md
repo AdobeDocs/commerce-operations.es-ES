@@ -1,5 +1,5 @@
 ---
-title: Metas de comercio
+title: Objetivos de Commerce
 description: Establezca metas a corto y largo plazo para ayudar a su equipo a alinearse con los objetivos estratégicos y aumentar la eficacia organizativa.
 exl-id: 749f6a9a-c06f-4f51-a19c-9e4181e002f7
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776

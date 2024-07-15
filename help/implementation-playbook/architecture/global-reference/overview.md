@@ -19,9 +19,9 @@ ht-degree: 0%
 
 Cuando se gestionan empresas que tienen varios sitios para varias marcas en varios mercados locales (con monedas, idiomas, medios, catálogos compartidos y carros de compras únicos localizados) y que desean evitar costes innecesarios para implementar las mismas funciones e integraciones, la arquitectura de referencia global (GRA) siempre es una buena opción.
 
-![Tabla que explica el coste de la divergencia en la arquitectura](../../../assets/playbooks/divergent-architecture.svg)
+![Tabla que explica el costo de la divergencia en la arquitectura](../../../assets/playbooks/divergent-architecture.svg)
 
-![Tabla que explica el coste de los archivos consolidados en arquitectura](../../../assets/playbooks/consolidated-architecture.svg)
+![Tabla que explica el costo de los archivos consolidados en la arquitectura](../../../assets/playbooks/consolidated-architecture.svg)
 
 El GRA es:
 
@@ -55,4 +55,4 @@ Impactos de GRA:
 
 >[!TIP]
 >
->Consulte [Ejemplos de GRA](examples.md).
+>Consulte [ejemplos de GRA](examples.md).

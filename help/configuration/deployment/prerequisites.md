@@ -1,6 +1,6 @@
 ---
 title: Requisitos previos para la implementación
-description: Consulte una lista de requisitos previos para implementar Commerce en un sistema de desarrollo, compilación o producción.
+description: Vea una lista de requisitos previos para implementar Commerce en un sistema de desarrollo, compilación o producción.
 feature: Configuration, Deploy
 exl-id: 9ea0eeff-e0f8-4532-887c-5d7f07d89ddd
 source-git-commit: dcc283b901917e3681863370516771763ae87462
@@ -20,10 +20,10 @@ Los permisos y la propiedad de los archivos deben ser coherentes en los sistemas
    - Asegúrese de que el servidor web se ejecuta como el mismo usuario en todos los sistemas
    - Asegúrese de que el propietario del sistema de archivos está en el grupo de servidores web de todos los sistemas
 
-- Cambie los permisos y la propiedad del sistema de archivos de Commerce en cada sistema según sea necesario siguiendo las siguientes directrices:
+- Cambie los permisos y la propiedad del sistema de archivos Commerce en cada sistema según sea necesario siguiendo las siguientes directrices:
 
-   - Desarrollo y compilación: [Establecer propiedad y permisos previos a la instalación (dos usuarios)](file-system-permissions.md#set-up-two-owners-for-default-or-developer-mode)
-   - Producción: [Propiedad comercial y permisos en desarrollo y producción](file-system-permissions.md)
+   - Desarrollo y compilación: [Establezca la propiedad y los permisos previos a la instalación (dos usuarios)](file-system-permissions.md#set-up-two-owners-for-default-or-developer-mode)
+   - Producción: [Propiedad de Commerce y permisos en desarrollo y producción](file-system-permissions.md)
 
 >[!INFO]
 >

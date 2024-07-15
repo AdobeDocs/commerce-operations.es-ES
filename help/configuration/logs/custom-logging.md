@@ -5,7 +5,7 @@ feature: Configuration, Logs
 exl-id: 6c94ebcf-70df-4818-a17b-32512eba516d
 source-git-commit: 991bd5fb34a2ffe61aa194ec46e2b04b4ce5b3e7
 workflow-type: tm+mt
-source-wordcount: '409'
+source-wordcount: '394'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Adobe recomienda utilizar el registro centralizado de aplicaciones por los sigui
 
 - Permite el almacenamiento de registros en un servidor distinto del servidor de aplicaciones y disminuye las operaciones de E/S del disco, lo que simplifica la compatibilidad con el servidor de aplicaciones.
 
-- Hace que el procesamiento de los datos de registro sea más eficaz mediante el uso de herramientas especiales, como [Logstash], [Logplex], o [fluido]: sin impacto en un servidor de producción.
+- Hace que el procesamiento de los datos de registros sea más eficaz mediante herramientas especiales, como [Logstash], [Logplex] o [fluentd], sin afectar a un servidor de producción.
 
   >[!INFO]
   >
@@ -28,17 +28,17 @@ Adobe recomienda utilizar el registro centralizado de aplicaciones por los sigui
 
 ## Compatibilidad con PSR-3
 
-El [PSR-3 estándar][laminas] define una interfaz PHP común para bibliotecas de registro. El objetivo principal de la PSR-3 es permitir que las bibliotecas reciban una `Psr\Log\LoggerInterface` y escribir registros en él de una manera simple y universal.
+El [estándar PSR-3][laminas] define una interfaz PHP común para las bibliotecas de registro. El objetivo principal de PSR-3 es permitir que las bibliotecas reciban un objeto `Psr\Log\LoggerInterface` y escriban registros en él de una manera simple y universal.
 
 Esto permite reemplazar la implementación fácilmente sin tener que preocuparse de que dicha sustitución pueda dañar el código de la aplicación. También garantiza que un componente personalizado funcionará incluso cuando la implementación de registro se cambie en una versión futura del sistema.
 
 ## Monólogo
 
-Commerce 2 cumple con el estándar PSR-3. De forma predeterminada, Commerce utiliza [Monólogo]. Monólogo implementado como preferencia para `Psr\Log\LoggerInterface` en la aplicación Commerce [`di.xml`][di].
+Commerce 2 cumple con el estándar PSR-3. De manera predeterminada, Commerce usa [Monólogo]. Monólogo implementado como preferencia para `Psr\Log\LoggerInterface` en la aplicación de Commerce [`di.xml`][di].
 
 Monolog es una popular solución de registro de PHP con una amplia gama de controladores que le permiten construir estrategias de registro avanzadas. A continuación se muestra un resumen del funcionamiento de Monolog.
 
-Un monólogo _logger_ es un canal que tiene su propio conjunto de _controladores_. Monólogo tiene muchos controladores, incluidos:
+Un registrador _logger_ en monólogo es un canal que tiene su propio conjunto de _controladores_. Monólogo tiene muchos controladores, incluidos:
 
 - Registro en archivos y syslog
 - Envío de alertas y correos electrónicos

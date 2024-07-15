@@ -7,13 +7,13 @@ ht-degree: 0%
 ---
 # Comunicación segura con el servidor web
 
-En este tema se describe un ejemplo de cómo proteger la comunicación entre el servidor web y el motor de búsqueda (Elasticsearch u OpenSearch) mediante una combinación de cifrado de Seguridad de la capa de transporte (TLS) y [Autenticación básica HTTP](https://datatracker.ietf.org/doc/html/rfc2617). Si lo desea, también puede configurar otros tipos de autenticación. Proporcionamos referencias para esa información.
+En este tema se describe un ejemplo de cómo proteger la comunicación entre el servidor web y el motor de búsqueda (Elasticsearch u OpenSearch) mediante una combinación de cifrado de Seguridad de la capa de transporte (TLS) y [autenticación básica HTTP](https://datatracker.ietf.org/doc/html/rfc2617). Si lo desea, también puede configurar otros tipos de autenticación. Proporcionamos referencias para esa información.
 
 (Un término más antiguo, Capa de sockets seguros (SSL), se utiliza con frecuencia indistintamente con TLS. En este tema, nos referimos a *TLS*.)
 
 >[!WARNING]
 >
->A menos que se indique lo contrario, todos los comandos de este tema deben escribirse como un usuario con `root` privilegios.
+>A menos que se indique lo contrario, todos los comandos de este tema deben escribirse como un usuario con privilegios de `root`.
 
 ## Recommendations
 
@@ -35,7 +35,7 @@ Consulte uno de los siguientes recursos:
 
 * Apache
 
-   * [Procedimientos para el cifrado fuerte de Apache 2.4](https://httpd.apache.org/docs/2.4/ssl/ssl_howto.html)
+   * [Procedimientos para el cifrado seguro de Apache 2.4](https://httpd.apache.org/docs/2.4/ssl/ssl_howto.html)
    * [Cómo crear un certificado SSL en Apache para Ubuntu 14.04 (tutorial de Digitalocean)](https://www.digitalocean.com/community/tutorials/how-to-create-a-ssl-certificate-on-apache-for-ubuntu-14-04)
    * [Configuración de un servidor web seguro para SSL con CentOS (wiki de CentOS)](https://wiki.centos.org/HowTos/Https)
 
@@ -43,4 +43,4 @@ Consulte uno de los siguientes recursos:
 
    * [Terminación SSL de Nginx](https://www.nginx.com/resources/admin-guide/nginx-ssl-termination/)
    * [Cómo crear un certificado SSL en Nginx para Ubuntu 14.04 (tutorial de Digitalocean)](https://www.digitalocean.com/community/tutorials/how-to-create-an-ssl-certificate-on-nginx-for-ubuntu-14-04)
-   * [Instalación del certificado SSL de Nginx (digicert)](https://www.digicert.com/ssl-certificate-installation-nginx.htm)
+   * [Instalación de certificado SSL Nginx (digicert)](https://www.digicert.com/ssl-certificate-installation-nginx.htm)

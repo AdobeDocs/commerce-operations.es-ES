@@ -15,7 +15,7 @@ ht-degree: 0%
 >
 >Este es uno de una serie de temas para ayudar a los comerciantes y desarrolladores de Adobe Commerce a comprender las implicaciones del Reglamento General de Protección de Datos (RGPD). La información está destinada únicamente a fines informativos y no debe interpretarse como asesoramiento jurídico. Consulte con su asesor legal para determinar si su empresa debe cumplir con alguna obligación legal y cómo debe hacerlo.
 
-La Unión Europea (UE) aprobó [Reglamento general de protección de datos](https://ec.europa.eu/info/law/law-topic/data-protection_en) (RGPD) para dar a sus ciudadanos más control sobre sus datos personales. El RGPD se aplica a cualquier organización que opere dentro de la UE. También se aplica a organizaciones fuera de la UE que ofrecen bienes o servicios a clientes o empresas en la UE.
+La Unión Europea (UE) promulgó el [Reglamento General de Protección de Datos](https://ec.europa.eu/info/law/law-topic/data-protection_en) (RGPD) para dar a sus ciudadanos más control sobre sus datos personales. El RGPD se aplica a cualquier organización que opere dentro de la UE. También se aplica a organizaciones fuera de la UE que ofrecen bienes o servicios a clientes o empresas en la UE.
 
 Los integradores de sistemas pueden utilizar los diagramas de flujo de datos y la información de la base de datos de la Referencia de información personal para crear secuencias de comandos para resolver casos de uso similares a los siguientes:
 

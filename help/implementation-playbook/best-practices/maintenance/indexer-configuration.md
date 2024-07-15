@@ -26,23 +26,23 @@ Para optimizar y mantener el rendimiento del sitio, revise y actualice la config
 
 Adobe Commerce tiene dos tipos de modos de indizador: [!UICONTROL Update on Save] (configuración predeterminada) y [!DNL Update on Schedule].
 
-- **[!UICONTROL Update on Save]** El modo actualiza los índices inmediatamente cada vez que cambia el catálogo u otros datos. Por ejemplo, si un usuario administrador agrega nuevos productos a una categoría, el índice de productos de la categoría se reindexa inmediatamente cuando se guarda la actualización.
+- El modo **[!UICONTROL Update on Save]** actualiza los índices inmediatamente cada vez que cambia el catálogo u otros datos. Por ejemplo, si un usuario administrador agrega nuevos productos a una categoría, el índice de productos de la categoría se reindexa inmediatamente cuando se guarda la actualización.
 
-- **[!UICONTROL Update on Schedule]** El modo almacena información sobre las actualizaciones de datos, y las operaciones de reindexación y las actualizaciones de índice se administran mediante un trabajo cron que se ejecuta en segundo plano a intervalos programados. El trabajo cron no siempre realiza una reindexación cada vez que se ejecuta. Solo vuelve a indexar cuando hay nuevas entradas en los registros de cambios del indexador (por ejemplo, hay un registro de pendientes en los indexadores).
+- El modo **[!UICONTROL Update on Schedule]** almacena información sobre actualizaciones de datos, y las operaciones de reindexación y las actualizaciones de índice son administradas por un trabajo cron que se ejecuta en segundo plano a intervalos programados. El trabajo cron no siempre realiza una reindexación cada vez que se ejecuta. Solo vuelve a indexar cuando hay nuevas entradas en los registros de cambios del indexador (por ejemplo, hay un registro de pendientes en los indexadores).
 
-Tener un almacén grande con varios administradores trabajando en el backend o tener muchos déclencheur de importación y exportación con actualizaciones frecuentes de índice. Si la configuración del índice del sitio está establecida en [!UICONTROL Update on Save] En este modo, la reindexación frecuente degrada el rendimiento de la base de datos, lo que ralentiza el rendimiento del sitio y provoca largos retrasos en el proceso de reindexación, especialmente en grandes almacenes.
+Tener un almacén grande con varios administradores trabajando en el backend o tener muchos déclencheur de importación y exportación con actualizaciones frecuentes de índice. Si la configuración del índice del sitio se establece en modo [!UICONTROL Update on Save], la reindexación frecuente degrada el rendimiento de la base de datos, lo que ralentiza el rendimiento del sitio y provoca largos retrasos en el proceso de reindexación, especialmente en tiendas grandes.
 
 Para maximizar el rendimiento del sitio, siga estas prácticas recomendadas para la indexación:
 
 - Revise la configuración del índice.
-- Establezca los indexadores en _[!UICONTROL Update on Schedule]_para sitios grandes y con actualizaciones frecuentes y mucho tráfico. Consulte [Administración de índices](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode).
-- Seguir [prácticas recomendadas de rendimiento](../../../performance/configuration.md) para administrar índices.
+- Establezca los indexadores en _[!UICONTROL Update on Schedule]_para sitios grandes y sitios con actualizaciones frecuentes y tráfico intenso. Consulte [Administración de índices](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode).
+- Siga [prácticas recomendadas de rendimiento](../../../performance/configuration.md) para administrar índices.
 
 >[!IMPORTANT]
 >
->El [!DNL Customer Grid] solo se puede reindexar con la variable [!UICONTROL Update on Save] opción. Este índice no admite el `Update by Schedule` opción.
+>[!DNL Customer Grid] solo se puede reindexar usando la opción [!UICONTROL Update on Save]. Este índice no admite la opción `Update by Schedule`.
 
-## Información adicional
+## Más información
 
 - [Administración de índices para usuarios administradores](../../../configuration/cli/manage-indexers.md#configure-indexers)
 - [Administración de índices mediante la CLI de Magento](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html)

@@ -4,7 +4,7 @@ description: Revise las recomendaciones para planificar la actualización de Ado
 exl-id: f776b000-0085-4b77-860f-623837c3c902
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '211'
+source-wordcount: '228'
 ht-degree: 0%
 
 ---
@@ -20,17 +20,17 @@ Una implementación de comercio electrónico es una evolución; nunca ha termina
 - Mejor experiencia y mejores herramientas para desarrolladores
 - Posibilidad de integración más profunda con otras aplicaciones de Adobe Experience Cloud
 
-Para proporcionar a nuestros comerciantes más flexibilidad a la hora de planificar las actualizaciones, hemos actualizado recientemente Adobe Commerce [programación de versiones](../../release/schedule.md), amplió la fecha de fin de soporte (EOS) 2.3 y anunció nuevas opciones de soporte ampliado para versiones seleccionadas de nuestro software. Para obtener más información sobre estas actualizaciones, consulte [Compatibilidad ampliada con Adobe Commerce](https://business.adobe.com/blog/the-latest/adobe-announces-expanded-support).
+Para proporcionar a nuestros comerciantes más flexibilidad a la hora de planificar las actualizaciones, hemos actualizado recientemente la [programación de versiones](../../release/schedule.md) de Adobe Commerce, hemos ampliado la fecha de fin de soporte (EOS) de la versión 2.3 y hemos anunciado nuevas opciones de soporte ampliado para determinadas versiones de nuestro software. Para obtener más información sobre estas actualizaciones, consulte [Compatibilidad ampliada con Adobe Commerce](https://business.adobe.com/blog/the-latest/adobe-announces-expanded-support).
 
 Las siguientes son rutas de actualización recomendadas por Adobe Commerce para mantener el sitio seguro y con rendimiento al actualizar a una de las versiones más recientes.
 
 ## Actualización de 2.3.7
 
-![Ruta de actualización de 2.3.7](../../assets/upgrade-guide/2.3.7.png)
+![Ruta de actualización de la versión 2.3.7](../../assets/upgrade-guide/2.3.7.png)
 
 ## Actualización de 2.4.0-2.4.3
 
-![Ruta de actualización de 2.4.0 a 2.4.3](../../assets/upgrade-guide/2.4.0-2.4.3.png)
+![Ruta de actualización de la versión 2.4.0 a la versión 2.4.3](../../assets/upgrade-guide/2.4.0-2.4.3.png)
 
 ## Actualización de 2.4.4 y 2.4.5
 

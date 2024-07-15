@@ -5,7 +5,7 @@ exl-id: 466f2f83-ea19-4230-b33b-4435974effb7
 feature: Best Practices, Promotions/Events
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
-source-wordcount: '255'
+source-wordcount: '243'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 En el comercio electrónico, las campañas definen una serie de acciones o tareas que están vinculadas entre sí, lo que beneficia la visión y el objetivo del negocio. Puede configurar estas acciones o tareas de forma que puedan funcionar de forma individual, secuencial, simultánea o en cualquier combinación. Las campañas desempeñan un papel importante en una estrategia empresarial.
 
-![Imagen de campaña de ejemplo](../../assets/playbooks/campaign-example.png)
+![Ejemplo de imagen de campaña](../../assets/playbooks/campaign-example.png)
 
 ## Tipos de campaña
 
@@ -35,10 +35,10 @@ Todo el modelo de comercio electrónico se establece en el sitio web, lo que sig
 
 Diferencias entre la administración de campañas B2B y B2C:
 
-- **Desarrollar relación**: B2B utiliza la administración de campañas para crear relaciones a largo plazo, mientras que B2C utiliza la administración de campañas para crear relaciones a corto plazo
+- **Desarrollar relación**: B2B usa la administración de campañas para generar relaciones a largo plazo, mientras que B2C usa la administración de campañas para generar relaciones a corto plazo
 
-- **Marca**: la administración de campañas B2B se centra más en la generación de posibles clientes, mientras que B2C se centra en el valor de marca
+- **Promoción de marca**: la administración de campañas B2B se centra más en generar posibles clientes, mientras que B2C se centra en el valor de la marca
 
-- **Toma de decisiones**—Las decisiones de campaña B2B son lógicas, mientras que las decisiones de campaña B2C son emocionales
+- **Toma de decisiones**: las decisiones de campaña B2B son lógicas, mientras que las decisiones de campaña B2C son emocionales
 
 - **Audiencia**: la administración de campañas B2B incluye varias partes interesadas, mientras que la administración de campañas B2C se dirige a usuarios finales individuales

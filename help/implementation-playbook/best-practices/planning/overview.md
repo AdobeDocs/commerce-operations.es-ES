@@ -108,7 +108,7 @@ Las secciones siguientes incluyen información sobre las prácticas recomendadas
 | [Configuración del producto&#x200B;](catalog-management.md#product-sku-limits) | Configure las SKU de los productos para obtener un rendimiento óptimo. |
 | [Configuración de variación del producto](catalog-management.md#product-variations) | Configure las variaciones de productos para obtener un rendimiento óptimo. |
 | [Configuración de opciones de producto](catalog-management.md#product-options) | Configure las opciones del producto para obtener un rendimiento óptimo. |
-| [Configuración de atributos del producto&#x200B;](catalog-management.md#product-attributes) | Configure los atributos del producto para obtener un rendimiento óptimo. |
+| [Configuración de atributos de producto&#x200B;](catalog-management.md#product-attributes) | Configure los atributos del producto para obtener un rendimiento óptimo. |
 | [Configuración de paginación para listados de productos](catalog-management.md#product-listing-pagination) | Configure la paginación de la lista de productos para obtener un rendimiento óptimo. |
 
 ## Extensiones
@@ -121,12 +121,12 @@ Las secciones siguientes incluyen información sobre las prácticas recomendadas
 
 | Práctica recomendada | Descripción |
 |--------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
-| [Escalaciones de Partner](partner-escalation.md) | Prepárese para escalar un problema con un socio con un equipo de cuenta de Adobe o aprenda a evitar una escalación. |
+| [Escalaciones de socios](partner-escalation.md) | Prepárese para escalar un problema con un socio con un equipo de cuenta de Adobe o aprenda a evitar una escalación. |
 | [Procesamiento de almacenamiento de pagos](payment-processing-storage.md) | Procese y almacene los datos de pago de forma segura. |
 
 ## Ventas y marketing
 
 | Práctica recomendada | Descripción |
 |------------------------------------------------------------|--------------------------------------------------------------|
-| [Límites del carro de productos](catalog-management.md#cart-limits) | Administre los límites del carro de compras para obtener un rendimiento óptimo. |
+| [Límites del carro de compras del producto](catalog-management.md#cart-limits) | Administre los límites del carro de compras para obtener un rendimiento óptimo. |
 | [Configuración de promociones](catalog-management.md#promotions) | Configurar ventas y promociones de artículos en un carro de compras. |

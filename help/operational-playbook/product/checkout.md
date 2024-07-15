@@ -5,7 +5,7 @@ exl-id: 692236fd-b909-4061-8038-0db19e0ed72b
 feature: Best Practices, Checkout
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
-source-wordcount: '680'
+source-wordcount: '672'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ Checkout es una parte crítica de las compras en línea. Aquí es donde se hace 
 
 El flujo de cierre de compra es como la línea de llegada, donde los compradores se convierten en clientes que realizan transacciones. Pero incluso un pequeño inconveniente en el cierre de compra puede tener un gran impacto negativo en la tasa de conversión y el retorno de la inversión, por lo tanto, mejorar la tasa de conversión incluso ligeramente puede ayudar al aumento de retorno de la inversión de forma masiva. La mejora de los flujos y procesos de cierre de compra comienza incluso antes de la página de cierre de compra.
 
-![Diagrama de flujo del proceso de extracción](../../assets/playbooks/checkout-diagram.png)
+![Diagrama de flujo del proceso de cierre de compra](../../assets/playbooks/checkout-diagram.png)
 
 ## Páginas de producto
 
@@ -69,7 +69,7 @@ No fuerce un tipo de opción al usuario.
 
 Los minoristas deben proporcionar diferentes métodos de envío para satisfacer las necesidades de diferentes clientes.
 
-Además de las opciones de pago, los minoristas también pueden proporcionar opciones como [haga clic en y recopile](click-collect.md).
+Además de las opciones de pago, los minoristas también pueden proporcionar opciones como [hacer clic y cobrar](click-collect.md).
 
 ## Datos de pago
 

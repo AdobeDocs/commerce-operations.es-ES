@@ -1,10 +1,10 @@
 ---
-title: '[!DNL Upgrade Compatibility Tool] Mensajes de error'
-description: Obtenga más información acerca de los mensajes de error que aparecen al usar el [!DNL Upgrade Compatibility Tool] en el proyecto de Adobe Commerce.
+title: '[!DNL Upgrade Compatibility Tool] mensajes de error'
+description: Obtenga más información acerca de los mensajes de error que aparecen al usar  [!DNL Upgrade Compatibility Tool]  en su proyecto de Adobe Commerce.
 exl-id: fe4a17a9-a807-4315-b3cd-e35f34e39f6d
 source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
 workflow-type: tm+mt
-source-wordcount: '4113'
+source-wordcount: '4105'
 ht-degree: 4%
 
 ---
@@ -13,13 +13,13 @@ ht-degree: 4%
 
 {{commerce-only}}
 
-Esta referencia de mensaje de error proporciona información sobre los errores que pueden producirse al ejecutar el [!DNL Upgrade Compatibility Tool].
+Esta referencia de mensaje de error proporciona información sobre los errores que pueden producirse al ejecutar [!DNL Upgrade Compatibility Tool].
 
 Los mensajes de error se clasifican por nivel (problemas críticos, errores y advertencias) y tipo (código principal, código personalizado y esquemas de GraphQL). Cada tipo contiene la siguiente información:
 
-- **Código de error**: Identificador asignado por el Adobe Commerce al mensaje de error.
+- **Código de error**: el identificador asignado por Adobe Commerce para el mensaje de error.
 - **Descripción del error**: Una descripción que resume la causa del error.
-- **Error al sugerir una acción**: si corresponde, proporciona instrucciones para solucionar y resolver el error.
+- **Error al sugerir la acción**: si procede, proporciona instrucciones para solucionar y resolver el error.
 
 ## Problemas críticos
 
@@ -29,10 +29,10 @@ Estos errores se registran cuando faltan algunos de los archivos principales o n
 
 | Código de error | Descripción del error | Acción sugerida |
 | --- | --- | --- |
-| 2001 | No se ha encontrado el archivo principal | Ejecute el `composer install` desde el directorio raíz del proyecto. |
-| 2002 | Se modificó el archivo principal | Ejecute el `composer install` desde el directorio raíz del proyecto. |
+| 2001 | No se ha encontrado el archivo principal | Ejecute el comando `composer install` desde el directorio raíz del proyecto. |
+| 2002 | Se modificó el archivo principal | Ejecute el comando `composer install` desde el directorio raíz del proyecto. |
 | 2003 | La dependencia del compositor no está instalada | La falta de dependencia del compositor puede provocar problemas. Restaurar dependencia ejecutando `composer require package_name`. |
-| 2005 | No se ha encontrado la carpeta principal | Ejecute el `composer install` desde el directorio raíz del proyecto. |
+| 2005 | No se ha encontrado la carpeta principal | Ejecute el comando `composer install` desde el directorio raíz del proyecto. |
 
 {style="table-layout:auto"}
 
@@ -42,11 +42,11 @@ Se generan errores críticos cuando el código personalizado hace referencia a e
 
 | Código de error | Descripción del error | Acción sugerida |
 | --- | --- | --- |
-| 1110 | Creación de una instancia de clase/interfaz de Adobe Commerce inexistente | Actualizar código para utilizar una clase marcada como `@api`. Crear una instancia de una clase o interfaz de Adobe Commerce inexistente. |
-| 1111 | Ampliación desde una clase Adobe Commerce inexistente | La clase extendida ya no está presente en el código base. No se recomienda la herencia para ampliar la funcionalidad de Adobe Commerce. Actualizar código para utilizar una clase marcada como `@api`. |
-| 1112 | Importación de una clase de Adobe Commerce inexistente | Actualizar código para utilizar una clase marcada como `@api`. |
-| 1113 | Cargando clase de Adobe Commerce inexistente | Actualizar código para utilizar una clase marcada como `@api`. |
-| 1114 | Uso de una clase de Adobe Commerce inexistente | Actualizar código para utilizar una clase marcada como `@api`. |
+| 1110 | Creación de una instancia de clase/interfaz de Adobe Commerce inexistente | Actualice el código para utilizar una clase marcada como `@api`. Crear una instancia de una clase o interfaz de Adobe Commerce inexistente. |
+| 1111 | Ampliación desde una clase Adobe Commerce inexistente | La clase extendida ya no está presente en el código base. No se recomienda la herencia para ampliar la funcionalidad de Adobe Commerce. Actualice el código para utilizar una clase marcada como `@api`. |
+| 1112 | Importación de una clase de Adobe Commerce inexistente | Actualice el código para utilizar una clase marcada como `@api`. |
+| 1113 | Cargando clase de Adobe Commerce inexistente | Actualice el código para utilizar una clase marcada como `@api`. |
+| 1114 | Uso de una clase de Adobe Commerce inexistente | Actualice el código para utilizar una clase marcada como `@api`. |
 | 1214 | Uso de constantes de Adobe Commerce inexistentes | Considere la posibilidad de introducir y utilizar una constante privada del valor requerido dentro del código personalizado en su lugar. |
 | 1215 | Anular una constante Adobe Commerce inexistente | Considere la posibilidad de introducir y utilizar una constante privada del valor requerido dentro del código personalizado en su lugar. |
 | 1216 | Asignación de una constante Adobe Commerce inexistente | Considere la posibilidad de introducir y utilizar una constante privada del valor requerido dentro del código personalizado en su lugar. |
@@ -54,10 +54,10 @@ Se generan errores críticos cuando el código personalizado hace referencia a e
 | 1314 | Interfaz de Adobe Commerce utilizada inexistente | Considere la posibilidad de eliminar la herencia o reemplazarla por la interfaz introducida en el ámbito de la personalización. |
 | 1317 | Interfaz heredada de Adobe Commerce inexistente | Considere la posibilidad de eliminar la herencia o reemplazarla por la interfaz introducida en el ámbito de la personalización. |
 | 1318 | Se ha implementado una interfaz de Adobe Commerce inexistente | Considere la posibilidad de eliminar la herencia o reemplazarla por la interfaz introducida en el ámbito de la personalización. |
-| 1410 | Llamar a un método de Adobe Commerce inexistente | Actualizar código para utilizar una clase marcada como `@api`. |
-| 1514 | Uso de una propiedad de Adobe Commerce inexistente | Actualizar código para utilizar una clase marcada como `@api`. |
-| 1515 | Omisión de una propiedad de Adobe Commerce inexistente | Actualizar código para utilizar una clase marcada como `@api`. |
-| 1516 | Asignación de una propiedad de Adobe Commerce inexistente | Actualizar código para utilizar una clase marcada como `@api`. Actualice el nivel de acceso de la propiedad a private si solo se puede utilizar dentro de una sola clase. |
+| 1410 | Llamar a un método de Adobe Commerce inexistente | Actualice el código para utilizar una clase marcada como `@api`. |
+| 1514 | Uso de una propiedad de Adobe Commerce inexistente | Actualice el código para utilizar una clase marcada como `@api`. |
+| 1515 | Omisión de una propiedad de Adobe Commerce inexistente | Actualice el código para utilizar una clase marcada como `@api`. |
+| 1516 | Asignación de una propiedad de Adobe Commerce inexistente | Actualice el código para utilizar una clase marcada como `@api`. Actualice el nivel de acceso de la propiedad a private si solo se puede utilizar dentro de una sola clase. |
 | 5002 | La etiqueta PHP de apertura debe ser el primer contenido del archivo | Asegúrese de que no haya contenido en el archivo antes de la etiqueta de apertura PHP. |
 | 5003 | La función ha quedado obsoleta | Utilice un reemplazo sugerido en el mensaje de error. Si el mensaje no sugiere un reemplazo, se necesita una revisión minuciosa para seleccionar una función o implementación alternativa. |
 | 5005 | Error de sintaxis de PHP | El código debe ser actualizado para cumplir con los estándares de sintaxis PHP. |
@@ -107,64 +107,64 @@ Se generan problemas críticos del esquema de GraphQL si los elementos de esquem
 
 ### Custom Code
 
-Los errores de código personalizado se generan cuando el código personalizado utiliza puntos de entrada de Adobe Commerce que no se consideran o marcan como `@api`. No se garantiza el comportamiento conservado de estos puntos de entrada. La personalización debe depender de `@api` puntos de entrada en su lugar. La funcionalidad basada en código Adobe Commerce no API debe probarse después de la actualización. Estos errores también se notifican cuando se han roto los principales estándares de codificación.
+Se generan errores de código personalizado cuando el código personalizado utiliza puntos de entrada de Adobe Commerce que no se consideran o marcan como `@api`. No se garantiza el comportamiento conservado de estos puntos de entrada. La personalización debería depender de `@api` puntos de entrada en su lugar. La funcionalidad basada en código Adobe Commerce no API debe probarse después de la actualización. Estos errores también se notifican cuando se han roto los principales estándares de codificación.
 
 | Código de error | Descripción del error | Acción sugerida |
 | --- | --- | --- |
-| 1104 | Utilizar una clase que no es de API y que hereda la interfaz de API de | Clases que no están marcadas como `@api` se puede cambiar. Considere la posibilidad de actualizar el código para depender de la interfaz marcada como `@api` en su lugar. De lo contrario, la funcionalidad que depende de esta implementación debe probarse después de la actualización. |
-| 1121 | Ampliación desde una clase de API que no es Adobe Commerce | La clase extendida ya no está presente en el código base. No se recomienda la herencia para ampliar la funcionalidad de Adobe Commerce. Actualizar código para utilizar una clase marcada como `@api`. |
-| 1122 | Importación de clases de API que no son de Adobe Commerce | La clase extendida ya no está presente en el código base. Actualizar código para utilizar una clase marcada como `@api`. De lo contrario, la funcionalidad que depende de esta implementación debe probarse después de la actualización. |
-| 1123 | Carga de una clase de API que no es Adobe Commerce | La clase extendida ya no está presente en el código base. Actualizar código para utilizar una clase marcada como `@api`. De lo contrario, la funcionalidad que depende de esta implementación debe probarse después de la actualización. |
-| 1124 | Uso de clases de API que no son de Adobe Commerce | La clase extendida ya no está presente en el código base. Actualizar código para utilizar una clase marcada como `@api`. De lo contrario, la funcionalidad que depende de esta implementación debe probarse después de la actualización. |
-| 1224 | Uso de constantes de API que no son de Adobe Commerce | Constantes que no están marcadas como `@api` se puede cambiar. Considere la posibilidad de introducir y utilizar una constante privada del valor requerido dentro del código personalizado en su lugar. |
-| 1225 | Anulación de una constante de API que no es Adobe Commerce | Constantes que no están marcadas como `@api` se puede cambiar. Considere la posibilidad de introducir y utilizar una constante privada del valor requerido dentro del código personalizado en su lugar. |
-| 1226 | Asignación de una constante de API que no sea de Adobe Commerce | Constantes que no están marcadas como `@api` se puede cambiar. Considere la posibilidad de introducir y utilizar una constante privada del valor requerido dentro del código personalizado en su lugar. |
-| 1322 | Interfaz de API importada que no es de Adobe Commerce | Interfaces no marcadas como `@api` se puede cambiar. Considere la posibilidad de eliminar esta herencia o sustituirla por herencia de la interfaz de Adobe Commerce marcada como `@api` o una interfaz introducida en el ámbito del código de personalización. |
-| 1324 | Interfaz de API no utilizada de Adobe Commerce | Interfaces no marcadas como `@api` se puede cambiar. Considere la posibilidad de eliminar esta herencia o sustituirla por herencia de la interfaz de Adobe Commerce marcada como `@api` o una interfaz introducida en el ámbito del código de personalización. |
-| 1327 | Interfaz de API heredada que no es de Adobe Commerce | Constantes que no están marcadas como `@api` se puede cambiar. Considere la posibilidad de introducir y utilizar una constante privada del valor requerido dentro del código personalizado en su lugar. |
-| 1328 | Interfaz de API no implementada en Adobe Commerce | Interfaces no marcadas como `@api` se puede cambiar. Considere la posibilidad de eliminar esta herencia o sustituirla por herencia de la interfaz de Adobe Commerce marcada como `@api` o una interfaz introducida en el ámbito del código de personalización. |
-| 1420 | Creación de una instancia de clase/interfaz de API que no sea Adobe Commerce | Clases que no están marcadas como `@api` se puede cambiar. Considere la posibilidad de actualizar el código para depender de la interfaz marcada como `@api` en su lugar. De lo contrario, la funcionalidad que depende de esta implementación debe probarse después de la actualización. Además, la forma recomendada de recuperar una instancia de la clase es utilizar ID. Considere la posibilidad de utilizar una fábrica si es necesaria una nueva instancia de la clase. |
-| 1428 | Posible dependencia de los detalles de implementación. | Clases que no están marcadas como `@api` se puede cambiar. Considere la posibilidad de actualizar el código para depender de la interfaz marcada como `@api` en su lugar. De lo contrario, la funcionalidad que depende de esta implementación debe probarse después de la actualización. |
-| 1429 | Llamar a métodos de API que no son de Adobe Commerce | Métodos no marcados como. `@api` o no se declaran dentro de la clase/interfaz API se pueden cambiar. Incluso si la interfaz del método no se actualiza en la nueva versión, su comportamiento o resultado puede ser diferente. Considere confiar en un método de interfaz. De lo contrario, la funcionalidad que depende de esta implementación debe probarse después de la actualización. |
+| 1104 | Utilizar una clase que no es de API y que hereda la interfaz de API de | Las clases que no están marcadas como `@api` se pueden cambiar. Considere la posibilidad de actualizar el código para que dependa de la interfaz marcada como `@api`. De lo contrario, la funcionalidad que depende de esta implementación debe probarse después de la actualización. |
+| 1121 | Ampliación desde una clase de API que no es Adobe Commerce | La clase extendida ya no está presente en el código base. No se recomienda la herencia para ampliar la funcionalidad de Adobe Commerce. Actualice el código para utilizar una clase marcada como `@api`. |
+| 1122 | Importación de clases de API que no son de Adobe Commerce | La clase extendida ya no está presente en el código base. Actualice el código para utilizar una clase marcada como `@api`. De lo contrario, la funcionalidad que depende de esta implementación debe probarse después de la actualización. |
+| 1123 | Carga de una clase de API que no es Adobe Commerce | La clase extendida ya no está presente en el código base. Actualice el código para utilizar una clase marcada como `@api`. De lo contrario, la funcionalidad que depende de esta implementación debe probarse después de la actualización. |
+| 1124 | Uso de clases de API que no son de Adobe Commerce | La clase extendida ya no está presente en el código base. Actualice el código para utilizar una clase marcada como `@api`. De lo contrario, la funcionalidad que depende de esta implementación debe probarse después de la actualización. |
+| 1224 | Uso de constantes de API que no son de Adobe Commerce | Las constantes que no están marcadas como `@api` pueden cambiar. Considere la posibilidad de introducir y utilizar una constante privada del valor requerido dentro del código personalizado en su lugar. |
+| 1225 | Anulación de una constante de API que no es Adobe Commerce | Las constantes que no están marcadas como `@api` pueden cambiar. Considere la posibilidad de introducir y utilizar una constante privada del valor requerido dentro del código personalizado en su lugar. |
+| 1226 | Asignación de una constante de API que no sea de Adobe Commerce | Las constantes que no están marcadas como `@api` pueden cambiar. Considere la posibilidad de introducir y utilizar una constante privada del valor requerido dentro del código personalizado en su lugar. |
+| 1322 | Interfaz de API importada que no es de Adobe Commerce | Las interfaces no marcadas como `@api` se pueden cambiar. Considere la posibilidad de quitar esta herencia o reemplazarla por la herencia de la interfaz de Adobe Commerce marcada como `@api` o una interfaz incluida en el ámbito del código de personalización. |
+| 1324 | Interfaz de API no utilizada de Adobe Commerce | Las interfaces no marcadas como `@api` se pueden cambiar. Considere la posibilidad de quitar esta herencia o reemplazarla por la herencia de la interfaz de Adobe Commerce marcada como `@api` o una interfaz incluida en el ámbito del código de personalización. |
+| 1327 | Interfaz de API heredada que no es de Adobe Commerce | Las constantes que no están marcadas como `@api` pueden cambiar. Considere la posibilidad de introducir y utilizar una constante privada del valor requerido dentro del código personalizado en su lugar. |
+| 1328 | Interfaz de API no implementada en Adobe Commerce | Las interfaces no marcadas como `@api` se pueden cambiar. Considere la posibilidad de quitar esta herencia o reemplazarla por la herencia de la interfaz de Adobe Commerce marcada como `@api` o una interfaz incluida en el ámbito del código de personalización. |
+| 1420 | Creación de una instancia de clase/interfaz de API que no sea Adobe Commerce | Las clases que no están marcadas como `@api` se pueden cambiar. Considere la posibilidad de actualizar el código para que dependa de la interfaz marcada como `@api`. De lo contrario, la funcionalidad que depende de esta implementación debe probarse después de la actualización. Además, la forma recomendada de recuperar una instancia de la clase es utilizar ID. Considere la posibilidad de utilizar una fábrica si es necesaria una nueva instancia de la clase. |
+| 1428 | Posible dependencia de los detalles de implementación. | Las clases que no están marcadas como `@api` se pueden cambiar. Considere la posibilidad de actualizar el código para que dependa de la interfaz marcada como `@api`. De lo contrario, la funcionalidad que depende de esta implementación debe probarse después de la actualización. |
+| 1429 | Llamar a métodos de API que no son de Adobe Commerce | Los métodos que no están marcados como `@api` o que no están declarados dentro de la clase/interfaz de API se pueden cambiar. Incluso si la interfaz del método no se actualiza en la nueva versión, su comportamiento o resultado puede ser diferente. Considere confiar en un método de interfaz. De lo contrario, la funcionalidad que depende de esta implementación debe probarse después de la actualización. |
 | 1449 | Llamada a un método que no es de interfaz (presente en la implementación) | Los métodos que no se declaran en la interfaz se pueden cambiar. Considere confiar en un método de interfaz. De lo contrario, la funcionalidad que depende de esta implementación debe probarse después de la actualización. |
-| 1524 | Uso de una propiedad de API que no es Adobe Commerce | Valores de las propiedades que no están marcadas como `@api` se puede cambiar. Considere utilizar el método de interfaz de API en su lugar. |
-| 1525 | Anulación de una propiedad de API que no es Adobe Commerce | Valores de las propiedades que no están marcadas como `@api` se puede cambiar. Considere utilizar el método de interfaz de API en su lugar. |
-| 1526 | Asignación de una propiedad de API que no es de Adobe Commerce | Valores de las propiedades que no están marcadas como `@api` se puede cambiar. Considere utilizar el método de interfaz de API en su lugar. |
+| 1524 | Uso de una propiedad de API que no es Adobe Commerce | Los valores de las propiedades que no están marcadas como `@api` se pueden cambiar. Considere utilizar el método de interfaz de API en su lugar. |
+| 1525 | Anulación de una propiedad de API que no es Adobe Commerce | Los valores de las propiedades que no están marcadas como `@api` se pueden cambiar. Considere utilizar el método de interfaz de API en su lugar. |
+| 1526 | Asignación de una propiedad de API que no es de Adobe Commerce | Los valores de las propiedades que no están marcadas como `@api` se pueden cambiar. Considere utilizar el método de interfaz de API en su lugar. |
 | 5004 | La función sin argumento ha quedado obsoleta | Pase la entrada para validar como el primer argumento de la función. |
 | 5007 | Se desaconseja el uso de ciertas funciones | Evite utilizar estas funciones. |
 | 5009 | Las directivas de plantilla no pueden invocar métodos. Solo se permite el acceso a la matriz escalar | Elimine las invocaciones de método de la plantilla. |
-| 5010 | Plantilla `@vars` El bloque de comentarios contiene un JSON no válido | Se ha corregido un JSON no válido. |
-| 5011 | Plantilla `@vars` el bloque de comentarios contiene una etiqueta no válida | Se ha corregido una etiqueta no válida. |
-| 5012 | Plantilla `@vars` en el bloque de comentarios falta una variable utilizada en la plantilla | Añada la variable que falta @vars bloque de comentarios. |
+| 5010 | El bloque de comentarios de la plantilla `@vars` contiene un JSON no válido | Se ha corregido un JSON no válido. |
+| 5011 | El bloque de comentarios de la plantilla `@vars` contiene una etiqueta no válida | Se ha corregido una etiqueta no válida. |
+| 5012 | Al bloque de comentarios de la plantilla `@vars` le falta una variable utilizada en la plantilla | Añada la variable que falta @vars bloque de comentarios. |
 | 5013 | Evite utilizar etiquetas de cierre automático con elementos html no nulos | En su lugar, utilice una etiqueta de cierre. |
-| 5014 | El `"active"` el atributo está obsoleto | La lista de módulos activos se define en la configuración de implementación. |
-| 5015 | El `<param>` el nodo está obsoleto | Uso `<argument name="..." xsi:type="...">` en su lugar. |
-| 5016 | El `<instance>` el nodo está obsoleto | Uso `<argument name="..." xsi:type="object">` en su lugar. |
-| 5017 | El `<array>` el nodo está obsoleto | Uso `<argument name="..." xsi:type="array">` en su lugar. |
-| 5018 | El `<item key="...">` el nodo está obsoleto | Uso `<item name="..." xsi:type="...">` en su lugar. |
-| 5019 | El `<value>` el nodo está obsoleto | En su lugar, proporcione el valor real como un literal de texto. |
-| 5020 | Nodo obsoleto: `<supported_blocks>` | Para reemplazar con `<supported_containers>`. |
-| 5021 | Nodo obsoleto: `<block_name>` | Para reemplazar con `<container_name>`. |
+| 5014 | El atributo `"active"` está obsoleto | La lista de módulos activos se define en la configuración de implementación. |
+| 5015 | El nodo `<param>` está obsoleto | Utilice `<argument name="..." xsi:type="...">` en su lugar. |
+| 5016 | El nodo `<instance>` está obsoleto | Utilice `<argument name="..." xsi:type="object">` en su lugar. |
+| 5017 | El nodo `<array>` está obsoleto | Utilice `<argument name="..." xsi:type="array">` en su lugar. |
+| 5018 | El nodo `<item key="...">` está obsoleto | Utilice `<item name="..." xsi:type="...">` en su lugar. |
+| 5019 | El nodo `<value>` está obsoleto | En su lugar, proporcione el valor real como un literal de texto. |
+| 5020 | Nodo obsoleto: `<supported_blocks>` | Se reemplazará con `<supported_containers>`. |
+| 5021 | Nodo obsoleto: `<block_name>` | Se reemplazará con `<container_name>`. |
 | 5022 | Nombre de fábrica detectado | El tipo de widget no debe comenzar por /. |
 | 5023 | Se detectó una estructura ACL obsoleta en la línea | Consulte lib/internal/Magento/Framework/Acl/etc/acl.xsd. |
 | 5024 | Estructura de menú obsoleta detectada en la línea | Consulte app/code/Magento/Backend/etc/menu.xsd. |
 | 5025 | Estructura de configuración del sistema obsoleta detectada en el archivo | Consulte app/code/Magento/Config/etc/system_file.xsd. |
-| 5026 | No use `"text/javascript"` atributo type | Usar sólo miembros públicos. |
-| 5028 | Acceso a miembros protegidos y privados de `Block` la clase está obsoleta en plantillas phtml | Usar sólo miembros públicos. |
-| 5031 | Contiene un método obsoleto | Uso `getConnection()` en su lugar. |
+| 5026 | No use el atributo de tipo `"text/javascript"` | Usar sólo miembros públicos. |
+| 5028 | El acceso a los miembros protegidos y privados de la clase `Block` está obsoleto en las plantillas phtml | Usar sólo miembros públicos. |
+| 5031 | Contiene un método obsoleto | En su lugar, utilice el método `getConnection()`. |
 | 5042 | Formato incorrecto de referencia de clase PHP | Compruebe que se hace referencia a esta clase utilizando solo letras en minúscula, números y sin barra diagonal. |
 | 5043 | Formato incorrecto de referencia de módulo | Compruebe que solo se hace referencia al módulo mediante letras, números, guiones bajos y sin barra diagonal. |
-| 5044 | Clase `Zend_Db_Select` está restringido | Reemplazo sugerido: `\Magento\Framework\DB\Select`. |
-| 5045 | Clase `Zend_Db_Adapter_Pdo_Mysql` está restringido | Reemplazo sugerido: `\Magento\Framework\DB\Adapter\Pdo\Mysql`. |
-| 5046 | Clase `Magento\Framework\Serialize\Serializer\Serialize` está restringido | Reemplazo sugerido: `Magento\Framework\Serialize\SerializerInterface`. |
-| 5047 | Clase `ArrayObject` está restringido | Reemplazo sugerido: Clase personalizada, extendido desde `ArrayObject` con métodos serialize/unserialize sobrescritos. |
-| 5048 | Clase `Magento\Framework\View\Element\UiComponent\ArrayObjectFactory` está restringido | Sustitución sugerida: Fábrica que crea una clase personalizada, ampliada desde `ArrayObject` con métodos serialize/unserialize sobrescritos. |
+| 5044 | La clase `Zend_Db_Select` está restringida | Reemplazo sugerido: `\Magento\Framework\DB\Select`. |
+| 5045 | La clase `Zend_Db_Adapter_Pdo_Mysql` está restringida | Reemplazo sugerido: `\Magento\Framework\DB\Adapter\Pdo\Mysql`. |
+| 5046 | La clase `Magento\Framework\Serialize\Serializer\Serialize` está restringida | Reemplazo sugerido: `Magento\Framework\Serialize\SerializerInterface`. |
+| 5047 | La clase `ArrayObject` está restringida | Reemplazo sugerido: Clase personalizada, extendida desde `ArrayObject` con métodos serialize/unserialize sobrescritos. |
+| 5048 | La clase `Magento\Framework\View\Element\UiComponent\ArrayObjectFactory` está restringida | Reemplazo sugerido: Fábrica que crea la clase personalizada, extendida desde `ArrayObject` con métodos serialize/unserialize sobrescritos. |
 | 5050 | Se elimina el bloque al que se hace referencia | Quitar referencia al bloque. |
-| 5051 | `output="toHtml"` está obsoleto | Uso `output="1"`. |
-| 5052 | La clase `\Magento\Framework\View\Element\Text\ListText` ya no se supone que debe usarse en el diseño | Quitar clase `\Magento\Framework\View\Element\Text\ListText` desde el diseño. |
-| 5053 | Llamada al método a través de la instrucción de diseño `<action>` no está permitido | Evite utilizar un método ofensivo en `<action>`. |
-| 5054 | `helper` attribute contiene `/` | Eliminar `/` del atributo de ayuda. |
-| 5055 | `helper` el atributo no contiene `::` | Añadir `::` al atributo de ayuda. |
+| 5051 | `output="toHtml"` está obsoleto | Usar `output="1"`. |
+| 5052 | Se supone que la clase `\Magento\Framework\View\Element\Text\ListText` ya no se debe usar en el diseño | Quitar la clase `\Magento\Framework\View\Element\Text\ListText` del diseño. |
+| 5053 | No se permite la llamada al método mediante la instrucción de diseño `<action>` | Evite utilizar un método ofensivo en `<action>`. |
+| 5054 | `helper` atributo contiene `/` | Quitar a `/` del atributo de ayuda. |
+| 5055 | El atributo `helper` no contiene `::` | Agregar `::` al atributo de ayuda. |
 | 5056 | Los scripts de instalación están obsoletos | Utilice el método de esquema declarativo en el archivo etc/db_schema.xml de module\. |
 | 5057 | Los scripts InstallSchema están obsoletos | Utilice el método de esquema declarativo en el archivo etc/db_schema.xml de module\. |
 | 5058 | Los scripts InstallData están obsoletos | Utilice el método de parches de datos en el directorio Setup/Patch/Data del módulo. |
@@ -177,8 +177,8 @@ Los errores de código personalizado se generan cuando el código personalizado 
 | 5065 | &#39;data&#39; está en un directorio no válido | Cree un parche de datos en la carpeta Setup/Patch/Data del módulo para actualizar los datos o utilice el método de esquema declarativo en el archivo etc/db_schema.xml del módulo para realizar cambios en el esquema. |
 | 5066 | &#39;sql&#39; está en un directorio no válido | Cree un parche de datos en la carpeta Setup/Patch/Data del módulo para actualizar los datos o utilice el método de esquema declarativo en el archivo etc/db_schema.xml del módulo para realizar cambios en el esquema. |
 | 5067 | Los nodos identificados por XPath están obsoletos | El XML obsoleto señalado en el error debe actualizarse. Siga las sugerencias del mensaje de error. |
-| 5068 | Directriz `{{htmlescape}}` está obsoleto | Uso `{{var}}` en su lugar. |
-| 5069 | Directriz `{{escapehtml}}` está obsoleto | Uso `{{var}}` en su lugar. |
+| 5068 | La directiva `{{htmlescape}}` está obsoleta | Utilice `{{var}}` en su lugar. |
+| 5069 | La directiva `{{escapehtml}}` está obsoleta | Utilice `{{var}}` en su lugar. |
 | 5070 | El tercer parámetro ya no es necesario para `getChildHtml()` | Quitar el tercer parámetro de la llamada a `getChildHtml()`. |
 | 5071 | El cuarto parámetro ya no es necesario para `getChildHtml()` | Quitar el cuarto parámetro de la llamada a `getChildHtml()`. |
 | 5073 | Los nombres de tablas heredadas con barra diagonal deben corregirse para dirigir los nombres de tablas | En su lugar, utilice un nombre de tabla directo. |
@@ -190,23 +190,23 @@ Los errores de código personalizado se generan cuando el código personalizado 
 | 5082 | El uso de $this en plantillas está obsoleto | En su lugar, utilice $block. |
 | 5083 | No se permiten constantes como el primer argumento de la función de traducción | En su lugar, utilice un literal de cadena. |
 | 5085 | Se desaconseja el uso de ciertas funciones | En su lugar, utilice la función alternativa que se indica en el mensaje. |
-| 5087 | Problema de compatibilidad entre versiones de PHP | Siga las sugerencias del mensaje y marque la [guía de migración](https://www.php.net/manual/en/migration81.php). |
+| 5087 | Problema de compatibilidad entre versiones de PHP | Siga las sugerencias del mensaje y consulte la [guía de migración](https://www.php.net/manual/en/migration81.php). |
 | 5088 | Parámetros opcionales encontrados después de los necesarios | Mueva los parámetros necesarios después de los opcionales. |
-| 5089 | Visibilidad del método `final private` fundar | Cambiar visibilidad de método de `final private` a solo `private`. |
-| 5090 | Método mágico `__set_state` no se define como `static` | Método mágico `__set_state` debe definirse como `static`. |
-| 5091 | Clase con `__toString()` método que no hereda de `Stringable` interfaz | Añadir `Stringable` interfaz para clase con `__toString()` método. |
-| 5092 | `is_resource()` método utilizado para funciones que ahora devuelven Object | Cambiar `is_resource()` hasta `instanceof` Objeto. |
-| 6001 | `jQuery.andSelf()` eliminado | Uso `jQuery.addBack()`. |
-| 6002 | jQuery `$.bind` y `$.unbind` están obsoletos | Uso `$.on` y `$.off` en su lugar. |
-| 6003 | El método jQuery para suscribirse al evento está obsoleto y no debe usarse | Uso `.on("event name", fn)` en lugar de suscribirse a ese evento. |
-| 6003 | El método jQuery para el evento de déclencheur está obsoleto y no debe usarse | Uso `.trigger("event name")` en lugar de almacenar en déclencheur ese evento. |
-| 6004 | jQuery `$.delegate` y `$.undelegate` están obsoletos | Uso `$.on` y `$.off` en su lugar. |
-| 6005 | (`jQuery.load()` / `jQuery.unload()` / `jQuery.error()`) se ha eliminado | Utilice (`.on("load", fn)` / `.on("unload", fn)` / `.on("error", fn)`) en su lugar. |
-| 6006 | `jQuery.size()` eliminado | Uso `jQuery.length`. |
-| 6007 | `jQuery.trim` está obsoleto | Uso `String.prototype.trim`. |
-| 6008 | (`addButton`, `addContextToolbar`, `addMenuItem`, `addSidebar`, `file_browser_callback`, `insert_button_items`, el tema &quot;ilimitado&quot;, el tema &quot;móvil&quot; y el tema &quot;moderno&quot;) se ha eliminado | Actualice el código para que sea compatible con tinymce5. |
-| 6009 | `jQuery.isFunction()` está obsoleto | En la mayoría de los casos, se puede reemplazar por [type of x === &quot;function&quot;]. |
-| 6009 | `jQuery.type()` está obsoleto | Reemplazar por una comprobación de tipo adecuada como [type of x === &quot;function&quot;]. |
+| 5089 | Se encontró la visibilidad del método `final private` | Cambie la visibilidad del método de `final private` a solo `private`. |
+| 5090 | El método mágico `__set_state` no está definido como `static` | El método mágico `__set_state` debe definirse como `static`. |
+| 5091 | La clase con el método `__toString()` no se hereda de la interfaz `Stringable` | Agregar la interfaz `Stringable` a la clase con el método `__toString()`. |
+| 5092 | Método `is_resource()` utilizado para funciones que ahora devuelven Object | Cambiar `is_resource()` a objeto `instanceof`. |
+| 6001 | `jQuery.andSelf()` eliminado | Usar `jQuery.addBack()`. |
+| 6002 | jQuery `$.bind` y `$.unbind` están obsoletos | En su lugar, use `$.on` y `$.off`. |
+| 6003 | El método jQuery para suscribirse al evento está obsoleto y no debe usarse | En su lugar, utilice el método `.on("event name", fn)` para suscribirse a ese evento. |
+| 6003 | El método jQuery para el evento de déclencheur está obsoleto y no debe usarse | En su lugar, utilice el método `.trigger("event name")` para almacenar en déclencheur ese evento. |
+| 6004 | jQuery `$.delegate` y `$.undelegate` están obsoletos | En su lugar, use `$.on` y `$.off`. |
+| 6005 | (`jQuery.load()` / `jQuery.unload()` / `jQuery.error()`) se eliminó | Use (`.on("load", fn)` / `.on("unload", fn)` / `.on("error", fn)`) en su lugar. |
+| 6006 | `jQuery.size()` eliminado | Usar `jQuery.length`. |
+| 6007 | `jQuery.trim` está obsoleto | Usar `String.prototype.trim`. |
+| 6008 | (`addButton`, `addContextToolbar`, `addMenuItem`, `addSidebar`, `file_browser_callback`, `insert_button_items`, tema &#39;inlite&#39;, tema &#39;mobile&#39;, tema &#39;modern&#39;) se ha eliminado | Actualice el código para que sea compatible con tinymce5. |
+| 6009 | `jQuery.isFunction()` está obsoleto | En la mayoría de los casos, se puede reemplazar por [type de x === &quot;function&quot;]. |
+| 6009 | `jQuery.type()` está obsoleto | Reemplazar por una comprobación de tipo adecuada como [typeof x === &quot;function&quot;]. |
 | 6009 | `jQuery.isArray()` está obsoleto | En su lugar, utilice el método nativo Array.isArray. |
 | 6009 | `jQuery.parseJSON()` está obsoleto | Para analizar cadenas JSON, utilice el método nativo JSON.parse en su lugar. |
 | 6010 | (`jQuery.expr[":"]`, `jQuery.expr.filters`) está obsoleto | En su lugar, utilice jQuery.expr.pseudos. |
@@ -244,29 +244,29 @@ Estas advertencias se registran cuando hay incoherencias menores en la base de c
 
 ### Custom Code
 
-Se generan advertencias de código personalizado cuando se detectan las referencias a código obsoleto. Estas referencias deben sustituirse por los puntos de extensión admitidos. Preste atención al `@see` anotación de elemento obsoleto para recomendaciones. Estos errores también se notifican cuando se han roto estándares de codificación menores.
+Se generan advertencias de código personalizado cuando se detectan las referencias a código obsoleto. Estas referencias deben sustituirse por los puntos de extensión admitidos. Preste atención a la anotación `@see` del elemento obsoleto para recomendaciones. Estos errores también se notifican cuando se han roto estándares de codificación menores.
 
 | Código de error | Descripción del error | Acción sugerida |
 | --- | --- | --- |
-| 1131 | Ampliación desde Adobe Commerce ``@deprecated`` clase | La clase extendida se eliminará en las próximas versiones. No se recomienda la herencia para ampliar la funcionalidad de Adobe Commerce. Actualizar código para utilizar una clase marcada como `@api`. |
-| 1132 | Importación de Adobe Commerce `@deprecated` clase | La clase extendida se eliminará en las próximas versiones. Considere utilizar la clase Adobe Commerce marcada como `@api` en su lugar. |
-| 1133 | Cargando Adobe Commerce `@deprecated` clase | La clase extendida se eliminará en las próximas versiones. Considere utilizar la clase Adobe Commerce marcada como `@api` en su lugar. |
-| 1134 | Uso de Adobe Commerce `@deprecated` clase | La clase extendida se eliminará en las próximas versiones. Considere utilizar la clase Adobe Commerce marcada como `@api` en su lugar. |
-| 1234 | Uso de Adobe Commerce `@deprecated` constante | La constante obsoleta se eliminará en las próximas versiones. Considere utilizar una constante marcada como `@api` o una constante privada dentro de la implementación. |
-| 1235 | Anulando Adobe Commerce `@deprecated` constante | La constante obsoleta se eliminará en las próximas versiones. Considere utilizar una constante marcada como `@api` o una constante privada dentro de la implementación. |
-| 1236 | Asignación de Adobe Commerce `@deprecated` constante | La constante obsoleta se eliminará en las próximas versiones. Considere utilizar una constante marcada como `@api` o una constante privada dentro de la implementación. |
-| 1332 | Adobe Commerce importado `@deprecated` interfaz | La interfaz obsoleta se eliminará en las próximas versiones. Considere utilizar una interfaz o clase marcada como `@api` en su lugar. |
-| 1334 | Adobe Commerce utilizado `@deprecated` interfaz | La interfaz obsoleta se eliminará en las próximas versiones. Considere utilizar una interfaz o clase marcada como `@api` en su lugar. |
-| 1337 | Heredado de Adobe Commerce `@deprecated` interfaz | La interfaz obsoleta se eliminará en las próximas versiones. Considere la posibilidad de eliminar la herencia de la interfaz mediante una interfaz marcada como `@api` o una interfaz introducida en su implementación. |
-| 1338 | Implementación de Adobe Commerce `@deprecated` interfaz | La interfaz obsoleta se eliminará en las próximas versiones. Considere la posibilidad de eliminar la herencia de la interfaz mediante una interfaz marcada como `@api` o una interfaz introducida en su implementación. |
+| 1131 | Ampliando desde la clase ``@deprecated`` de Adobe Commerce | La clase extendida se eliminará en las próximas versiones. No se recomienda la herencia para ampliar la funcionalidad de Adobe Commerce. Actualice el código para utilizar una clase marcada como `@api`. |
+| 1132 | Importando clase de Adobe Commerce `@deprecated` | La clase extendida se eliminará en las próximas versiones. Considere utilizar la clase Adobe Commerce marcada como `@api` en su lugar. |
+| 1133 | Cargando clase `@deprecated` de Adobe Commerce | La clase extendida se eliminará en las próximas versiones. Considere utilizar la clase Adobe Commerce marcada como `@api` en su lugar. |
+| 1134 | Usando la clase `@deprecated` de Adobe Commerce | La clase extendida se eliminará en las próximas versiones. Considere utilizar la clase Adobe Commerce marcada como `@api` en su lugar. |
+| 1234 | Usando la constante `@deprecated` de Adobe Commerce | La constante obsoleta se eliminará en las próximas versiones. Considere utilizar una constante marcada como `@api` o una constante privada en su implementación. |
+| 1235 | Anulando constante de Adobe Commerce `@deprecated` | La constante obsoleta se eliminará en las próximas versiones. Considere utilizar una constante marcada como `@api` o una constante privada en su implementación. |
+| 1236 | Asignación de la constante `@deprecated` de Adobe Commerce | La constante obsoleta se eliminará en las próximas versiones. Considere utilizar una constante marcada como `@api` o una constante privada en su implementación. |
+| 1332 | Interfaz de Adobe Commerce `@deprecated` importada | La interfaz obsoleta se eliminará en las próximas versiones. Considere utilizar una interfaz o clase marcada como `@api` en su lugar. |
+| 1334 | Interfaz de Adobe Commerce `@deprecated` usada | La interfaz obsoleta se eliminará en las próximas versiones. Considere utilizar una interfaz o clase marcada como `@api` en su lugar. |
+| 1337 | Heredado de la interfaz de Adobe Commerce `@deprecated` | La interfaz obsoleta se eliminará en las próximas versiones. Considere la posibilidad de eliminar la herencia de la interfaz, utilizando una interfaz marcada como `@api` o una interfaz introducida en su implementación en su lugar. |
+| 1338 | Se implementó la interfaz de Adobe Commerce `@deprecated` | La interfaz obsoleta se eliminará en las próximas versiones. Considere la posibilidad de eliminar la herencia de la interfaz, utilizando una interfaz marcada como `@api` o una interfaz introducida en su implementación en su lugar. |
 | 1430 | Llamada a método dataobject no declarado | Los métodos mágicos que no se declaran pueden cambiarse. Considere la posibilidad de confiar en los métodos de interfaz en su lugar. |
-| 1439 | Llamar a Adobe Commerce `@deprecated` método | El método obsoleto se eliminará en las próximas versiones. Considere la posibilidad de confiar en los métodos declarados en las interfaces de API en su lugar. |
+| 1439 | Llamar al método de Adobe Commerce `@deprecated` | El método obsoleto se eliminará en las próximas versiones. Considere la posibilidad de confiar en los métodos declarados en las interfaces de API en su lugar. |
 | 1440 | No coinciden las firmas de método | Se detecta una llamada o anulación del método principal con parámetros, argumentos o tipo de valor devuelto que no coincide con la firma del método. |
-| 1534 | Uso de Adobe Commerce `@deprecated` propiedad | El método obsoleto se eliminará en las próximas versiones. Considere la posibilidad de confiar en los métodos declarados en las interfaces de API en su lugar. |
-| 1535 | Anulando Adobe Commerce `@deprecated` propiedad | La propiedad obsoleta se eliminará en las próximas versiones. Considere la posibilidad de confiar en los métodos declarados en las interfaces de API o utilizar una propiedad privada dentro de la implementación. |
-| 1536 | Asignación de Adobe Commerce `@deprecated` propiedad | El método obsoleto se eliminará en las próximas versiones. Considere la posibilidad de confiar en los métodos declarados en las interfaces de API en su lugar. |
+| 1534 | Usando la propiedad de Adobe Commerce `@deprecated` | El método obsoleto se eliminará en las próximas versiones. Considere la posibilidad de confiar en los métodos declarados en las interfaces de API en su lugar. |
+| 1535 | Anulando propiedad de Adobe Commerce `@deprecated` | La propiedad obsoleta se eliminará en las próximas versiones. Considere la posibilidad de confiar en los métodos declarados en las interfaces de API o utilizar una propiedad privada dentro de la implementación. |
+| 1536 | Asignación de la propiedad de Adobe Commerce `@deprecated` | El método obsoleto se eliminará en las próximas versiones. Considere la posibilidad de confiar en los métodos declarados en las interfaces de API en su lugar. |
 | 5006 | Los proxies e interceptores nunca DEBEN solicitarse explícitamente en constructores | La clase original debe declararse como un tipo del parámetro constructor. La implementación de inyección de dependencia de marco pasará la clase Interceptor/Proxy. |
-| 5074 | Uso del método obsoleto `getResource()` Se han detectado datos que se van a guardar/cargar/eliminar. | En su lugar, utilice un repositorio. |
+| 5074 | Se ha detectado el uso del método obsoleto `getResource()` para (guardar/cargar/eliminar) datos. | En su lugar, utilice un repositorio. |
 | 5086 | La visibilidad no se declara en una constante | Declare la visibilidad en todas las constantes. |
 
 {style="table-layout:auto"}

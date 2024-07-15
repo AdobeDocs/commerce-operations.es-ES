@@ -29,7 +29,7 @@ Donde
 
 >[!NOTE]
 >
->No puede habilitar ni deshabilitar módulos directamente en proyectos en la nube. Debe ejecutar estos comandos localmente y, a continuación, insertar los cambios en el `app/etc/config.php` para un entorno. Consulte [Flujo de trabajo del proyecto profesional: Flujo de trabajo de implementación](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html#deployment-workflow).
+>No puede habilitar ni deshabilitar módulos directamente en proyectos en la nube. Debe ejecutar estos comandos localmente y, a continuación, insertar los cambios en el archivo `app/etc/config.php` para un entorno. Vea [Flujo de trabajo de proyecto profesional: flujo de trabajo de implementación](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html#deployment-workflow).
 
 ## Módulo habilitado, deshabilitar
 
@@ -45,22 +45,22 @@ bin/magento module:disable [-c|--clear-static-content] [-f|--force] [--all] <mod
 
 Donde
 
-* `<module-list>` es una lista de módulos delimitados por espacios para habilitar o deshabilitar. Si algún nombre de módulo contiene caracteres especiales, escríbalo entre comillas simples o dobles.
+* `<module-list>` es una lista de módulos delimitados por espacios que se deben habilitar o deshabilitar. Si algún nombre de módulo contiene caracteres especiales, escríbalo entre comillas simples o dobles.
 * `--all` para habilitar o deshabilitar todos los módulos al mismo tiempo.
-* `-f` o `--force` para forzar que un módulo se habilite o deshabilite a pesar de las dependencias. Antes de utilizar esta opción, consulte [Acerca de la activación y desactivación de módulos](#about-enabling-and-disabling-modules).
+* `-f` o `--force` para forzar que un módulo se habilite o deshabilite a pesar de las dependencias. Antes de usar esta opción, consulte [Acerca de la activación y desactivación de módulos](#about-enabling-and-disabling-modules).
 * `-c` o `--clear-static-content` limpia [archivos de vista estática generados](../../configuration/cli/static-view-file-deployment.md).
 
   Si no se borran los archivos de vista estática, podrían producirse problemas si hay varios archivos con el mismo nombre y no se borran todos.
 
-  En otras palabras, debido a la [reserva de archivo estático](../../configuration/cli/static-view-file-deployment.md) , si no borra los archivos estáticos y hay más de un archivo con el nombre `logo.svg` que son diferentes, la reserva podría provocar la visualización del archivo incorrecto.
+  En otras palabras, debido a las reglas [static file fallback](../../configuration/cli/static-view-file-deployment.md), si no borra los archivos estáticos y hay más de un archivo de nombre `logo.svg` que son diferentes, la reserva podría hacer que se muestre un archivo incorrecto.
 
-Por ejemplo, para deshabilitar la variable `Magento_Weee` , introduzca:
+Por ejemplo, para deshabilitar el módulo `Magento_Weee`, escriba:
 
 ```bash
 bin/magento module:disable Magento_Weee
 ```
 
-Para obtener información importante sobre cómo activar y desactivar módulos, consulte [Acerca de la activación y desactivación de módulos](#about-enabling-and-disabling-modules).
+Para obtener información importante acerca de cómo habilitar y deshabilitar módulos, vea [Acerca de la habilitación y deshabilitación de módulos](#about-enabling-and-disabling-modules).
 
 ## Actualizar la base de datos
 
@@ -82,7 +82,7 @@ Adobe Commerce le permite habilitar o deshabilitar los módulos disponibles actu
 
 Algunos módulos dependen de otros módulos, en cuyo caso es posible que no pueda habilitar o deshabilitar un módulo porque depende de otros módulos.
 
-Además, podría haber *contradictorio* módulos que no se pueden activar a la vez.
+Además, podría haber *módulos en conflicto* que no se pueden habilitar a la vez.
 
 Ejemplos:
 
@@ -90,20 +90,20 @@ Ejemplos:
 
 * El módulo A depende del módulo B, y ambos están desactivados. Debe habilitar el módulo B para poder habilitar el módulo A.
 
-* El módulo A entra en conflicto con el módulo B. Puede desactivar el módulo A y el módulo B, o bien puede desactivar cualquiera de los módulos pero *no puede* habilite los módulos A y B al mismo tiempo.
+* El módulo A entra en conflicto con el módulo B. Puede deshabilitar el Módulo A y el Módulo B, o bien puede deshabilitar cualquiera de los módulos, pero *no puede* habilitar el Módulo A y el Módulo B al mismo tiempo.
 
-* Las dependencias se declaran en la `require` en el Adobe Commerce `composer.json` para cada módulo. Los conflictos se declaran en la `conflict` en los módulos de `composer.json` archivos. Utilizamos esa información para construir un gráfico de dependencias: `A->B` significa que el módulo A depende del módulo B.
+* Las dependencias se declaran en el campo `require` del archivo de Adobe Commerce `composer.json` para cada módulo. Se declaran conflictos en el campo `conflict` de los archivos `composer.json` de los módulos. Utilizamos esa información para generar un gráfico de dependencias: `A->B` significa que el módulo A depende del módulo B.
 
-* A *cadena de dependencia* es la ruta de un módulo a otro. Por ejemplo, si el módulo A depende del módulo B y el módulo B depende del módulo C, la cadena de dependencias es `A->B->C`.
+* Una *cadena de dependencias* es la ruta de acceso de un módulo a otro. Por ejemplo, si el módulo A depende del módulo B y el módulo B depende del módulo C, la cadena de dependencias es `A->B->C`.
 
 Si intenta habilitar o deshabilitar un módulo que depende de otros módulos, el gráfico de dependencias se muestra en el mensaje de error.
 
 >[!NOTE]
 >
->Es posible que el módulo A `composer.json` declara un conflicto con el módulo B, pero no a la inversa.
+>Es posible que el módulo A `composer.json` declare un conflicto con el módulo B, pero no a la inversa.
 
-*Solo línea de comandos:* Para forzar que un módulo se habilite o deshabilite independientemente de sus dependencias, utilice la opción `--force` argumento.
+*Solo línea de comandos:* Para forzar que un módulo se habilite o deshabilite independientemente de sus dependencias, use el argumento `--force` opcional.
 
 >[!NOTE]
 >
->Uso de `--force` puede deshabilitar su tienda y causar problemas al acceder al administrador.
+>Usar `--force` puede deshabilitar su tienda y causar problemas al acceder al administrador.

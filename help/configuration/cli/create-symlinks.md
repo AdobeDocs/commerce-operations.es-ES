@@ -23,19 +23,19 @@ bin/magento dev:source-theme:deploy [--type="..."] [--locale="..."] [--area="...
 
 >[!INFO]
 >
->Durante el desarrollo, este comando crea enlaces simbólicos para los archivos LESS en el `var/view_preprocessed` y `pub/static` carpetas. Este proceso no compila archivos LESS en archivos CSS.
+>Durante el desarrollo, este comando crea enlaces simbólicos para los archivos LESS en las carpetas `var/view_preprocessed` y `pub/static`. Este proceso no compila archivos LESS en archivos CSS.
 
 En la tabla siguiente se explican los parámetros y valores de este comando.
 
 | Parámetro | Valor | ¿Requerido? |
 | --------- | ----- | --------- |
-| `--type` | Tipo de archivos de origen: [menos] (valor predeterminado: &quot;less&quot;)<br>Actualmente, LESS es el único tipo de archivo compatible. | No |
+| `--type` | Tipo de archivos de origen: [less] (predeterminado: &quot;less&quot;)<br>Actualmente, LESS es el único tipo de archivo compatible. | No |
 | `--locale` | Código de configuración regional.<br>Para mostrar la lista de códigos de configuración regional, escriba `bin/magento info:language:list` | No |
 | `--area` | Área (`adminhtml` para el área administrativa, `frontend` para la tienda). | No |
-| `--theme` | Nombre del tema en `<VendorName>/<theme-name>` formato. Por ejemplo, `Magento/blank` o `Magento/backend`. | No |
+| `--theme` | Nombre del tema en formato `<VendorName>/<theme-name>`. Por ejemplo, `Magento/blank` o `Magento/backend`. | No |
 | `<file>` | Lista separada por espacios de archivos CSS para convertirlos en LESS sin la extensión CSS. (El valor predeterminado es `css/styles-m css/styles-l`, para el tipo adminhtml `css/styles css/styles-old`) | No |
 
-Por ejemplo, para crear archivos LESS para el tema de front-end denominado `VendorName/themeName` en el `en_US` configuración regional mediante un archivo CSS denominado `<magento_root>/pub/static/frontend/VendorName/themeName/en_US/css/styles-l.css`, introduzca el siguiente comando:
+Por ejemplo, para crear archivos LESS para el tema de front-end denominado `VendorName/themeName` en la configuración regional `en_US` mediante un archivo CSS denominado `<magento_root>/pub/static/frontend/VendorName/themeName/en_US/css/styles-l.css`, escriba el siguiente comando:
 
 ```bash
 bin/magento dev:source-theme:deploy --type="less" --locale="en_US" --area="frontend" --theme="VendorName/themeName" css/styles-l

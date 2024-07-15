@@ -6,8 +6,8 @@ feature: Best Practices
 exl-id: ada8b987-97ed-4232-9e1b-7e0a791a0807
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
-source-wordcount: '210'
-ht-degree: 0%
+source-wordcount: '197'
+ht-degree: 1%
 
 ---
 
@@ -24,7 +24,7 @@ Adobe Commerce en la infraestructura en la nube
 
 ## Optimización y compresión de imágenes
 
-Antes de cargar imágenes en los sitios de Commerce, optimícelas y comprímalas para equilibrar el rendimiento y la calidad de visualización. Esto ayuda a aumentar el espacio y reducir los tiempos de carga de la página.
+Antes de cargar imágenes en los sitios de Commerce, optimícelas y comprímelas para equilibrar el rendimiento con la calidad de visualización. Esto ayuda a aumentar el espacio y reducir los tiempos de carga de la página.
 
 - El formato PNG ofrece imágenes de tamaño más pequeño para imágenes con grandes áreas de color sólido.
 
@@ -32,9 +32,9 @@ Antes de cargar imágenes en los sitios de Commerce, optimícelas y comprímalas
 
 ## Habilitar y configurar la optimización rápida de imágenes
 
-Después de configurar el servicio de Fastly para el proyecto de Adobe Commerce Cloud, consulte [Optimización rápida de imágenes](https://devdocs.magento.com/cloud/cdn/fastly-image-optimization.html) para obtener instrucciones sobre cómo habilitar y configurar la optimización de imágenes.
+Después de configurar el servicio Fastly para su proyecto de Adobe Commerce Cloud, consulte [Optimización de imagen Fastly](https://devdocs.magento.com/cloud/cdn/fastly-image-optimization.html) para obtener instrucciones para habilitar y configurar la optimización de imágenes.
 
-## Información adicional
+## Más información
 
-- [Configuración rápida](https://devdocs.magento.com/cloud/cdn/configure-fastly.html)
+- [Configurar rápidamente](https://devdocs.magento.com/cloud/cdn/configure-fastly.html)
 - [Las imágenes mal optimizadas pueden provocar problemas de rendimiento](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/file-storage-low-specific-page-loads-are-slow.html)

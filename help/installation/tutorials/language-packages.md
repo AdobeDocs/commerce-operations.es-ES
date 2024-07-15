@@ -13,9 +13,9 @@ ht-degree: 0%
 
 En esta sección se explica cómo desinstalar uno o más paquetes de idioma, incluyendo opcionalmente el código de los paquetes de idioma del sistema de archivos. Primero puede crear copias de seguridad para poder restaurar los datos más adelante.
 
-Este comando desinstala *solamente* paquetes de idioma especificados en `composer.json`; en otras palabras, paquetes de idiomas que se proporcionan como paquetes de Compositor. Si el paquete de idioma no es un paquete de Compositor, debe desinstalarlo manualmente eliminando el código del paquete de idioma del sistema de archivos.
+Este comando desinstala *solamente* paquetes de idioma especificados en `composer.json`; en otras palabras, paquetes de idioma que se proporcionan como paquetes de Compositor. Si el paquete de idioma no es un paquete de Compositor, debe desinstalarlo manualmente eliminando el código del paquete de idioma del sistema de archivos.
 
-Puede restaurar las copias de seguridad en cualquier momento mediante el [`magento setup:rollback`](uninstall-modules.md#roll-back-the-file-system-database-or-media-files) comando.
+Puede restaurar copias de seguridad en cualquier momento mediante el comando [`magento setup:rollback`](uninstall-modules.md#roll-back-the-file-system-database-or-media-files).
 
 Uso de comandos:
 
@@ -29,8 +29,8 @@ El comando de desinstalación del paquete de idioma realiza las siguientes tarea
 
    Para solucionarlo, puede desinstalar todos los paquetes de idiomas dependientes al mismo tiempo o puede desinstalar primero los paquetes de idiomas dependientes.
 
-1. If `--backup code` se especifica, realizar una copia de seguridad del sistema de archivos (excluyendo `var` y `pub/static` directorios) a `var/backups/<timestamp>_filesystem.tgz`
-1. Elimina los archivos de paquetes de idioma de la base de código mediante `composer remove`.
+1. Si se especifica `--backup code`, haga una copia de seguridad del sistema de archivos (excluyendo los directorios `var` y `pub/static`) en `var/backups/<timestamp>_filesystem.tgz`
+1. Quita los archivos de paquetes de idioma de la base de código mediante `composer remove`.
 1. Limpia la caché.
 
 Por ejemplo, si intenta desinstalar un paquete de idioma del que depende otro paquete de idioma, se muestra el siguiente mensaje:

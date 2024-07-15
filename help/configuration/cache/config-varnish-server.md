@@ -5,7 +5,7 @@ feature: Configuration, Cache, Install, Logs
 exl-id: b31179ef-3c0e-4a6b-a118-d3be1830ba4e
 source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
 workflow-type: tm+mt
-source-wordcount: '740'
+source-wordcount: '738'
 ht-degree: 0%
 
 ---
@@ -18,16 +18,16 @@ Las siguientes secciones utilizan el puerto 8080 como ejemplo.
 
 **Para cambiar el puerto de escucha Apache 2.4**:
 
-1. Abrir `/etc/httpd/conf/httpd.conf` en un editor de texto.
-1. Busque el `Listen` Directiva.
+1. Abra `/etc/httpd/conf/httpd.conf` en un editor de texto.
+1. Busque la directiva `Listen`.
 1. Cambie el valor del puerto de escucha a `8080`. (Puede utilizar cualquier puerto de escucha disponible).
-1. Guardar los cambios en `httpd.conf` y salga del editor de texto.
+1. Guarde los cambios en `httpd.conf` y salga del editor de texto.
 
 ## Modifique la configuración del sistema de barniz
 
 Para modificar la configuración del sistema de barniz:
 
-1. Como usuario con `root` privilegios, abra el archivo de configuración de Desvanecimiento en un editor de texto:
+1. Como usuario con privilegios de `root`, abra el archivo de configuración de Desvanecer en un editor de texto:
 
    - CentOS 6: `/etc/sysconfig/varnish`
    - CentOS 7: `/etc/varnish/varnish.params`
@@ -40,7 +40,7 @@ Para modificar la configuración del sistema de barniz:
    VARNISH_LISTEN_PORT=80
    ```
 
-   Para Varnish 4.x, asegúrese de que DAEMON_OPTS contiene el puerto de escucha correcto para `-a` parámetro (incluso si VARNISH_LISTEN_PORT está establecido en el valor correcto):
+   Para Varnish 4.x, asegúrese de que DAEMON_OPTS contiene el puerto de escucha correcto para el parámetro `-a` (incluso si VARNISH_LISTEN_PORT está establecido en el valor correcto):
 
    ```conf
    DAEMON_OPTS="-a :80 \
@@ -54,17 +54,17 @@ Para modificar la configuración del sistema de barniz:
 
 ### Modificación del VCL predeterminado
 
-En esta sección se explica cómo proporcionar una configuración mínima para que Varnish devuelva encabezados de respuesta HTTP. Esto le permite comprobar que Barniz funciona antes de configurar el [!DNL Commerce] aplicación para utilizar Barniz.
+En esta sección se explica cómo proporcionar una configuración mínima para que Varnish devuelva encabezados de respuesta HTTP. Esto le permite comprobar que Varnish funciona antes de configurar la aplicación [!DNL Commerce] para que use Varnish.
 
 Para configurar mínimamente el barniz:
 
-1. Copia de seguridad `default.vcl`:
+1. Copia de seguridad de `default.vcl`:
 
    ```bash
    cp /etc/varnish/default.vcl /etc/varnish/default.vcl.bak
    ```
 
-1. Abrir `/etc/varnish/default.vcl` en un editor de texto.
+1. Abra `/etc/varnish/default.vcl` en un editor de texto.
 1. Busque la siguiente estrofa:
 
    ```conf
@@ -74,11 +74,11 @@ Para configurar mínimamente el barniz:
    }
    ```
 
-1. Reemplace el valor de `.host` con el nombre de host completo o la dirección IP y el puerto de escucha del barniz _servidor_ o _servidor de origen_; es decir, el servidor que proporciona el contenido Varnish se acelerará.
+1. Reemplace el valor de `.host` por el nombre de host o la dirección IP completos y el puerto de escucha del servidor Varnish _backend_ o _origin server_; es decir, el servidor que proporciona el contenido que Varnish acelerará.
 
-   Normalmente, es su servidor web. Consulte [Servidores back-end](https://varnish-cache.org/docs/trunk/users-guide/vcl-backends.html) en el _Guía de barniz_.
+   Normalmente, es su servidor web. Consulte [Servidores back-end](https://varnish-cache.org/docs/trunk/users-guide/vcl-backends.html) en la _guía de barniz_.
 
-1. Reemplace el valor de `.port` con el puerto de escucha del servidor web (8080 en este ejemplo).
+1. Reemplace el valor de `.port` por el puerto de escucha del servidor web (8080 en este ejemplo).
 
    Ejemplo: Apache está instalado en el host 192.0.2.55 y Apache escucha en el puerto 8080:
 
@@ -93,7 +93,7 @@ Para configurar mínimamente el barniz:
    >
    >Si Varnish y Apache se ejecutan en el mismo host, Adobe recomienda que utilice una dirección IP o un nombre de host y no `localhost`.
 
-1. Guardar los cambios en `default.vcl` y salga del editor de texto.
+1. Guarde los cambios en `default.vcl` y salga del editor de texto.
 
 1. Reiniciar barniz:
 
@@ -116,7 +116,7 @@ Esto debería mostrar mensajes de error.
 
 ## Verificar que el barniz funcione
 
-En las siguientes secciones se explica cómo puede comprobar que Varnish funciona, pero _sin_ Configuración de Commerce para utilizarlo. Debe intentarlo antes de configurar Commerce.
+En las secciones siguientes se explica cómo comprobar que Varnish funciona pero _sin_ configurar Commerce para usarlo. Debe intentarlo antes de configurar Commerce.
 
 Realice las tareas descritas en las siguientes secciones en el orden mostrado:
 
@@ -125,7 +125,7 @@ Realice las tareas descritas en las siguientes secciones en el orden mostrado:
 
 ### Barniz inicial
 
-Introduzca: `service varnish start`
+Escriba: `service varnish start`
 
 Si Varnish no puede iniciarse como servicio, inícielo desde la línea de comandos de la siguiente manera:
 
@@ -137,7 +137,7 @@ Si Varnish no puede iniciarse como servicio, inícielo desde la línea de comand
 
 1. Iniciar el proceso secundario Barniz:
 
-   Cuando se le solicite, introduzca `start`
+   Cuando se le solicite, escriba `start`
 
    Se muestran los siguientes mensajes para confirmar que el inicio se ha realizado correctamente:
 
@@ -168,13 +168,13 @@ tcp        0      0 ::1:48509                   :::*                        LIST
 
 El anterior muestra Varnish ejecutándose en el puerto 80 y Apache ejecutándose en el puerto 8080.
 
-Si no ve el resultado de `varnishd`, asegúrese de que Varnish se está ejecutando.
+Si no ve el resultado de `varnishd`, asegúrese de que Varnish se esté ejecutando.
 
-Consulte [`netstat` opciones](https://tldp.org/LDP/nag2/x-087-2-iface.netstat.html).
+Ver [`netstat` opciones](https://tldp.org/LDP/nag2/x-087-2-iface.netstat.html).
 
-## Instalación del software Commerce
+## Instalación del software de Commerce
 
-Instale el software Commerce si aún no lo ha hecho. Cuando se le pida una URL base, utilice el host Varnish y el puerto 80 (para Varnish) porque Varnish recibe todas las solicitudes HTTP entrantes.
+Instale el software de Commerce si aún no lo ha hecho. Cuando se le pida una URL base, utilice el host Varnish y el puerto 80 (para Varnish) porque Varnish recibe todas las solicitudes HTTP entrantes.
 
 Posible error al instalar Commerce:
 
@@ -185,7 +185,7 @@ XID: 303394517
 Varnish cache server
 ```
 
-Si experimenta este error, edite `default.vcl` y añada un tiempo de espera a `backend` estrofa como sigue:
+Si experimenta este error, edite `default.vcl` y agregue un tiempo de espera a la estrofa `backend` de la siguiente manera:
 
 ```conf
 backend default {
@@ -199,11 +199,11 @@ backend default {
 
 Ahora puede comprobar que Varnish sirve páginas mirando los encabezados de respuesta del HTML devueltos desde cualquier página.
 
-Para poder ver los encabezados, debe establecer Commerce para el modo de desarrollador. Existen varias formas de hacerlo, la más sencilla de las cuales es modificarla `.htaccess` en la raíz de la aplicación de Commerce. También puede utilizar la variable [`magento deploy:mode:set`](../cli/set-mode.md) comando.
+Para poder ver los encabezados, debe establecer Commerce para el modo de desarrollador. Hay varias formas de hacerlo, la más sencilla de las cuales es modificar `.htaccess` en la raíz de la aplicación de Commerce. También puede usar el comando [`magento deploy:mode:set`](../cli/set-mode.md).
 
-### Establecer Commerce para el modo de desarrollador
+### Definir Commerce para el modo de desarrollador
 
-Para establecer Commerce en modo de desarrollador, utilice el [`magento deploy:mode:set`](../cli/set-mode.md#change-to-developer-mode) comando.
+Para establecer Commerce para el modo de desarrollador, use el comando [`magento deploy:mode:set`](../cli/set-mode.md#change-to-developer-mode).
 
 ### Mira el registro de barniz
 
@@ -232,13 +232,13 @@ Se muestra una larga lista de encabezados de respuesta en la ventana del símbol
 -   ReqHeader      Origin: http://10.249.151.10
 ```
 
-Si encabezados como estos lo hacen _no_ pantalla, parada Varnish, compruebe su `default.vcl`, e inténtelo de nuevo.
+Si se muestran encabezados como este _no_, detenga Varnish, compruebe su `default.vcl` y vuelva a intentarlo.
 
 ### Ver encabezados de respuesta del HTML
 
 Existen varias formas de ver los encabezados de respuesta, incluido el uso de un complemento del explorador o un inspector del explorador.
 
-El siguiente ejemplo utiliza `curl`. Puede introducir este comando desde cualquier equipo que pueda acceder al servidor de Commerce mediante HTTP.
+El ejemplo siguiente utiliza `curl`. Puede introducir este comando desde cualquier equipo que pueda acceder al servidor de Commerce mediante HTTP.
 
 ```bash
 curl -I -v --location-trusted '<your Commerce base URL>'

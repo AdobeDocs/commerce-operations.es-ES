@@ -13,7 +13,7 @@ Adobe Commerce utiliza su clave de cifrado para cifrar lo siguiente:
 * Nombres de usuario y contraseñas especificados en la configuración de administración (por ejemplo, inicios de sesión en puertas de enlace de pago)
 * Valores CAPTCHA enviados a través de la red
 
-Adobe Commerce do *no* cifrar:
+Adobe Commerce *no* cifra:
 
 * Nombres de usuario y contraseñas administrativos y de clientes (estas contraseñas tienen un cifrado hash)
 * Dirección

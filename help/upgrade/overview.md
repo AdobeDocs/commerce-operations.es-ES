@@ -13,14 +13,14 @@ ht-degree: 1%
 
 La actualización de su proyecto de Adobe Commerce es fundamental para garantizar que su tienda esté segura, sea compatible con PCI y funcione con la máxima eficiencia. Esta guía le explica las consideraciones clave al prepararse para una actualización.
 
-La guía proporciona información general sobre el recorrido de actualización típico de Adobe Commerce y las prácticas recomendadas que deben seguirse a lo largo de ese recorrido. También se describen detalles técnicos del proceso de actualización con un ejemplo oportuno e instrucciones paso a paso para actualizar a la versión más reciente de Adobe Commerce. Es importante revisar el Adobe Commerce [programación de versiones](../release/schedule.md) y comience a prepararse para las actualizaciones antes de tiempo. Adobe publica el programa de versiones anualmente para facilitar el proceso de planificación de los comerciantes y recomienda actualizar cada ciclo de lanzamiento de parches. Para seguir siendo compatible con PCI, los comerciantes deben estar en el último parche o parche de seguridad.
+La guía proporciona información general sobre el recorrido de actualización típico de Adobe Commerce y las prácticas recomendadas que deben seguirse a lo largo de ese recorrido. También se describen detalles técnicos del proceso de actualización con un ejemplo oportuno e instrucciones paso a paso para actualizar a la versión más reciente de Adobe Commerce. Es importante revisar la [programación de versiones](../release/schedule.md) de Adobe Commerce y comenzar a prepararse para las actualizaciones tempranas. Adobe publica el programa de versiones anualmente para facilitar el proceso de planificación de los comerciantes y recomienda actualizar cada ciclo de lanzamiento de parches. Para seguir siendo compatible con PCI, los comerciantes deben estar en el último parche o parche de seguridad.
 
 ## ¿Para quién es esta guía?
 
 La audiencia de destino de esta guía incluye:
 
-- **Administradores y directores técnicos de comercio electrónico**: comprenda el recorrido de actualización, la importancia de la actualización regular y cómo planificar y preparar mejor una actualización.
-- **Equipos de operaciones y desarrollo**—Conozca los pasos técnicos necesarios para actualizar a la última versión de Adobe Commerce y las herramientas disponibles que hacen que el proceso sea más fácil, rápido y asequible.
+- **Administradores de comercio electrónico y directores técnicos**: comprenda el recorrido de la actualización, la importancia de actualizarla regularmente y cómo planificarla y prepararla mejor para una actualización.
+- **Equipos de operaciones y desarrollo**: Conozca los pasos técnicos necesarios para actualizar a la versión más reciente de Adobe Commerce y las herramientas disponibles que hacen que el proceso sea más fácil, rápido y asequible.
 
 ## Proceso de actualización explicado
 
@@ -39,14 +39,14 @@ La actualización permite a su empresa mantenerse ágil en el acelerado y cambia
 
 ### Seguridad
 
-La seguridad es una de las principales razones para la actualización, ya que el 83 % de los incidentes de seguridad se producen en software obsoleto. Según [IBM](https://www.ibm.com/reports/data-breach)Sin embargo, el costo promedio de una violación de datos es de 3,86 millones de dólares, mucho más de lo que cuesta mitigar este riesgo a través de la actualización. Adobe ofrece dos maneras de mantener tu tienda segura durante todo el año:
+La seguridad es una de las principales razones para la actualización, ya que el 83 % de los incidentes de seguridad se producen en software obsoleto. Según [IBM](https://www.ibm.com/reports/data-breach), el costo promedio de una violación de datos es de 3,86 millones de dólares, mucho más de lo que cuesta mitigar este riesgo mediante la actualización. Adobe ofrece dos maneras de mantener tu tienda segura durante todo el año:
 
-- **Versiones de parches**: incluye correcciones de errores de seguridad, rendimiento, calidad y alta prioridad.
-- **Versiones de parches de seguridad**: incluye correcciones y mejoras para mantener el sitio seguro y es más fácil de implementar.
+- **Versiones de parches**: incluye correcciones de errores de alta prioridad, de seguridad, de rendimiento y de calidad.
+- **Versiones de parches de seguridad**: incluye correcciones y mejoras para mantener el sitio seguro y son más fáciles de implementar.
 
 ### Rendimiento
 
-El rendimiento es otro de los principales motivos para la actualización. Según [HubSpot](https://blog.hubspot.com/marketing/page-load-time-conversion-rates)Sin embargo, los primeros cinco segundos de tiempo de carga tienen un efecto significativo en las tasas de conversión y cada segundo de latencia a partir de entonces tiene un impacto de -4,4 %. Esto, junto con el hecho de que la velocidad de la página es un factor de clasificación SEO líder, demuestra por qué el rendimiento del sitio es un elemento crítico de su sitio para mantener y mejorar regularmente. Cada versión del parche incluye mejoras de rendimiento, por lo que aprovechar las nuevas versiones es compatible con sus planes de crecimiento y mantiene a su empresa competitiva.
+El rendimiento es otro de los principales motivos para la actualización. Según [HubSpot](https://blog.hubspot.com/marketing/page-load-time-conversion-rates), los primeros cinco segundos de tiempo de carga tienen un efecto significativo en las tasas de conversión y cada segundo de latencia a partir de entonces tiene un impacto de -4.4%. Esto, junto con el hecho de que la velocidad de la página es un factor de clasificación SEO líder, demuestra por qué el rendimiento del sitio es un elemento crítico de su sitio para mantener y mejorar regularmente. Cada versión del parche incluye mejoras de rendimiento, por lo que aprovechar las nuevas versiones es compatible con sus planes de crecimiento y mantiene a su empresa competitiva.
 
 ### Coste del retraso
 
@@ -54,7 +54,7 @@ El motivo para retrasar o aplazar las actualizaciones de la plataforma a menudo 
 
 Puede parecer ilógico, pero realizar actualizaciones regulares de la plataforma requiere menos esfuerzo general que realizar actualizaciones poco frecuentes debido a la cantidad de deuda técnica acumulada que resulta del retraso. Adobe trabajó recientemente con un socio que tiene un comerciante minorista que solía realizar actualizaciones de forma poco frecuente e incoherente (anualmente o más tiempo). Al transformar la forma en que abordan las actualizaciones y seguir una ruta de actualización regular recomendada por el Adobe en el transcurso de 12 meses, el socio pudo ahorrar al cliente cuatro semanas de tiempo de desarrollo acumulado, esfuerzo y costes asociados. Estos costes podrían entonces redirigirse a iniciativas para impulsar el crecimiento del negocio.
 
-Cuando las actualizaciones se realizan regularmente, los cambios son incrementales y el esfuerzo de actualización correspondiente lo refleja. Cuando las actualizaciones de la plataforma se aplazan durante un periodo prolongado, pueden convertirse en un proceso mucho más involucrado. Además, las extensiones que utiliza de [Adobe Commerce Marketplace](https://marketplace.magento.com/) y otras integraciones de terceros también pueden verse afectadas. Por último, el tiempo que se tarda en investigar, planificar y realizar una actualización retrasada se amplía, lo que añade esfuerzo y costes que se pueden evitar.
+Cuando las actualizaciones se realizan regularmente, los cambios son incrementales y el esfuerzo de actualización correspondiente lo refleja. Cuando las actualizaciones de la plataforma se aplazan durante un periodo prolongado, pueden convertirse en un proceso mucho más involucrado. Además, las extensiones que utilice de [Adobe Commerce Marketplace](https://marketplace.magento.com/) y otras integraciones de terceros también pueden verse afectadas. Por último, el tiempo que se tarda en investigar, planificar y realizar una actualización retrasada se amplía, lo que añade esfuerzo y costes que se pueden evitar.
 
 Algunos de los factores generales que afectan el nivel de esfuerzo para actualizar su proyecto incluyen, entre otros:
 

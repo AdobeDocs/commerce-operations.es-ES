@@ -13,17 +13,17 @@ ht-degree: 0%
 
 Este comando le permite realizar una copia de seguridad:
 
-* El sistema de archivos (excepto `var` y `pub/static` directorios)
-* El `pub/media` directorio
+* El sistema de archivos (excluyendo `var` y `pub/static` directorios)
+* El directorio `pub/media`
 * La base de datos
 
-Las copias de seguridad se almacenan en `var/backups` y se pueden restaurar en cualquier momento utilizando la variable [`magento setup:rollback`](uninstall-modules.md#roll-back-the-file-system-database-or-media-files) comando.
+Las copias de seguridad se almacenan en el directorio `var/backups` y se pueden restaurar en cualquier momento mediante el comando [`magento setup:rollback`](uninstall-modules.md#roll-back-the-file-system-database-or-media-files).
 
-Después de realizar una copia de seguridad, puede [reversión](#rollback) más tarde.
+Después de hacer la copia de seguridad, puedes [revertir](#rollback) más tarde.
 
 >[!TIP]
 >
->Para conocer Adobe Commerce sobre proyectos de infraestructura en la nube, consulte [Administración de instantáneas y copias de seguridad](https://devdocs.magento.com/cloud/project/project-webint-snap.html) en el _Guía de Cloud_.
+>Para Adobe Commerce sobre proyectos de infraestructura en la nube, consulte [Administración de instantáneas y copias de seguridad](https://devdocs.magento.com/cloud/project/project-webint-snap.html) en la _Guía de la nube_.
 
 ## Habilitar copias de seguridad
 
@@ -35,22 +35,22 @@ bin/magento config:set system/backup/functionality_enabled 1
 
 >[!WARNING]
 >
->**Aviso de desuso:**
+>**Aviso de obsolescencia:**
 >La funcionalidad de copia de seguridad quedará obsoleta a partir de las versiones 2.1.16, 2.2.7 y 2.3.0. Recomendamos investigar tecnologías de copia de seguridad adicionales y herramientas de copia de seguridad binaria (como Percona XtraBackup).
 
 ## Establecer el límite de archivos abiertos
 
-Si se vuelve a una copia de seguridad anterior, puede producirse un error silencioso, lo que provoca que se escriban datos incompletos en el sistema de archivos o en la base de datos utilizando [`magento setup:rollback`](uninstall-modules.md#roll-back-the-file-system-database-or-media-files) comando.
+Si se vuelve a una copia de seguridad anterior, se pueden producir errores de forma silenciosa, lo que hace que se escriban datos incompletos en el sistema de archivos o en la base de datos con el comando [`magento setup:rollback`](uninstall-modules.md#roll-back-the-file-system-database-or-media-files).
 
 A veces, una cadena de consulta larga hace que el espacio de memoria asignado al usuario se quede sin memoria debido a demasiadas llamadas recursivas.
 
-## Cómo establecer archivos abiertos `ulimit`
+## Cómo establecer los archivos abiertos `ulimit`
 
-Se recomienda configurar los archivos abiertos [`ulimit`](https://ss64.com/bash/ulimit.html) para que el usuario del sistema de archivos tenga un valor de `65536` o más.
+Se recomienda establecer los archivos abiertos [`ulimit`](https://ss64.com/bash/ulimit.html) para el usuario del sistema de archivos en un valor de `65536` o más.
 
 Puede hacerlo en la línea de comandos o puede convertirlo en un ajuste permanente para el usuario editando su script shell.
 
-Antes de continuar, si aún no lo ha hecho, cambie a la [propietario del sistema de archivos](../prerequisites/file-system/overview.md).
+Antes de continuar, si aún no lo ha hecho, cambie al [propietario del sistema de archivos](../prerequisites/file-system/overview.md).
 
 Comando:
 
@@ -62,23 +62,23 @@ Puede cambiarlo a un valor mayor si es necesario.
 
 >[!NOTE]
 >
->Sintaxis de los archivos abiertos `ulimit` depende del shell de UNIX que utilice. La configuración anterior debería funcionar con CentOS y Ubuntu con el shell de Bash. Sin embargo, para macOS, la configuración correcta es `ulimit -S 65532`. Consulte una página de comando man o una referencia del sistema operativo para obtener más información.
+>La sintaxis de los archivos abiertos `ulimit` depende del shell de UNIX que utilice. La configuración anterior debería funcionar con CentOS y Ubuntu con el shell de Bash. Sin embargo, para macOS, la configuración correcta es `ulimit -S 65532`. Consulte una página de comando man o una referencia del sistema operativo para obtener más información.
 
 Para establecer de forma opcional el valor en el shell de Bash del usuario:
 
-1. Si aún no lo ha hecho, cambie a la [propietario del sistema de archivos](../prerequisites/file-system/overview.md).
-1. Abrir `/home/<username>/.bashrc` en un editor de texto.
+1. Si aún no lo ha hecho, cambie al [propietario del sistema de archivos](../prerequisites/file-system/overview.md).
+1. Abra `/home/<username>/.bashrc` en un editor de texto.
 1. Añada la línea siguiente:
 
    ```bash
    ulimit -s 65536
    ```
 
-1. Guardar los cambios en `.bashrc` y salga del editor de texto.
+1. Guarde los cambios en `.bashrc` y salga del editor de texto.
 
 >[!WARNING]
 >
->Se recomienda evitar establecer un valor para [`pcre.recursion_limit`](https://www.php.net/manual/en/pcre.configuration.php) en el `php.ini` porque puede provocar reversiones incompletas sin previo aviso de error.
+>Le recomendamos que evite establecer un valor para [`pcre.recursion_limit`](https://www.php.net/manual/en/pcre.configuration.php) en el archivo `php.ini`, ya que puede provocar reversiones incompletas sin previo aviso de error.
 
 ## Copia de seguridad
 
@@ -140,7 +140,7 @@ Para revertir a una copia de seguridad anterior, introduzca:
 bin/magento setup:rollback [-c|--code-file="<name>"] [-m|--media-file="<name>"] [-d|--db-file="<name>"]
 ```
 
-Por ejemplo, para restaurar una copia de seguridad de medios denominada `1440611839_filesystem_media.tgz`, introduzca
+Por ejemplo, para restaurar una copia de seguridad de medios denominada `1440611839_filesystem_media.tgz`, escriba
 
 ```bash
 bin/magento setup:rollback -m 1440611839_filesystem_media.tgz

@@ -1,11 +1,11 @@
 ---
 title: Migración de datos
-description: Obtenga información sobre cómo empezar a migrar datos del Magento 1 al Magento 2 con la [!DNL Data Migration Tool].
+description: Obtenga información sobre cómo empezar a migrar datos del Magento 1 al Magento 2 con  [!DNL Data Migration Tool].
 exl-id: f4ea8f6a-21f8-4db6-b598-c5efecec254f
 topic: Commerce, Migration
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '331'
 ht-degree: 0%
 
 ---
@@ -14,10 +14,10 @@ ht-degree: 0%
 
 Antes de empezar, siga estos pasos para prepararse:
 
-1. Inicie sesión en el servidor de aplicaciones como [el propietario del sistema de archivos](../../../installation/prerequisites/file-system/overview.md).
+1. Inicie sesión en el servidor de aplicaciones como [propietario del sistema de archivos](../../../installation/prerequisites/file-system/overview.md).
 1. Cambie al directorio de instalación de la aplicación o asegúrese de que se agrega al sistema `PATH`.
 
-Consulte la [primeros pasos](overview.md#first-steps) para obtener más información.
+Consulte la sección [primeros pasos](overview.md#first-steps) para obtener más información.
 
 ## Ejecute el comando de migración de datos
 
@@ -29,20 +29,20 @@ bin/magento migrate:data [-r|--reset] [-a|--auto] {<path to config.xml>}
 
 Donde:
 
-* `[-a|--auto]` es un argumento opcional que evita que la migración se detenga cuando encuentre errores de comprobación de integridad.
+* `[-a|--auto]` es un argumento opcional que impide que se detenga la migración cuando encuentra errores de comprobación de integridad.
 
 * `[-r|--reset]` es un argumento opcional que inicia la migración desde el principio. Puede utilizar este argumento para probar la migración.
 
 * `{<path to config.xml>}` es la ruta absoluta del sistema de archivos a `config.xml`; este argumento es obligatorio
 
-En este paso, la variable [!DNL Data Migration Tool] crea tablas y déclencheur adicionales para las tablas de migración en la base de datos de Magento 1. Se utilizan en el [incremental/delta](delta.md) paso de migración. Las tablas adicionales contienen información sobre los registros modificados después de la ejecución final de la migración. Los déclencheur de base de datos se utilizan para rellenar estas tablas adicionales, por lo que si se está realizando una nueva operación en la tabla concreta (se agrega, modifica o elimina un registro), estos déclencheur de base de datos guardan información sobre esta operación en la tabla adicional. Cuando ejecutamos un proceso de migración delta, la variable [!DNL Data Migration Tool] comprueba si hay registros sin procesar en estas tablas y migra el contenido necesario a la base de datos de Magento 2.
+Dentro de este paso, [!DNL Data Migration Tool] crea tablas y déclencheur adicionales para las tablas de migración en la base de datos de Magento 1. Se utilizan en el paso de migración [incremental/delta](delta.md). Las tablas adicionales contienen información sobre los registros modificados después de la ejecución final de la migración. Los déclencheur de base de datos se utilizan para rellenar estas tablas adicionales, por lo que si se está realizando una nueva operación en la tabla concreta (se agrega, modifica o elimina un registro), estos déclencheur de base de datos guardan información sobre esta operación en la tabla adicional. Cuando ejecutamos un proceso de migración delta, [!DNL Data Migration Tool] comprueba si hay registros sin procesar en estas tablas y migra el contenido necesario a la base de datos de Magento 2.
 
 Cada nueva tabla contiene:
 
-* `m2_cl` prefijo
-* `INSERT`, `UPDATE`, `DELETE` déclencheur de eventos.
+* Prefijo `m2_cl`
+* `INSERT`, `UPDATE`, `DELETE` déclencheur de evento.
 
-Por ejemplo, para `sales_flat_order` el [!DNL Data Migration Tool] crea:
+Por ejemplo, para `sales_flat_order`, [!DNL Data Migration Tool] crea:
 
 * `m2_cl_sales_flat_order` tabla:
 
@@ -85,12 +85,12 @@ Por ejemplo, para `sales_flat_order` el [!DNL Data Migration Tool] crea:
 
 >[!NOTE]
 >
->El [!DNL Data Migration Tool] guarda su progreso actual mientras se ejecuta. Si hay errores o una intervención del usuario impide que se ejecute, la herramienta reanuda el progreso en el último estado correcto conocido. Para forzar la [!DNL Data Migration Tool] para ejecutar desde el principio, utilice el `--reset` argumento. En ese caso, le recomendamos que restaure el volcado de la base de datos de Magento 2 para evitar la duplicación de datos migrados anteriormente.
+>[!DNL Data Migration Tool] guarda su progreso actual mientras se ejecuta. Si hay errores o una intervención del usuario impide que se ejecute, la herramienta reanuda el progreso en el último estado correcto conocido. Para forzar la ejecución de [!DNL Data Migration Tool] desde el principio, use el argumento `--reset`. En ese caso, le recomendamos que restaure el volcado de la base de datos de Magento 2 para evitar la duplicación de datos migrados anteriormente.
 
 
 ## Posibles errores de coherencia
 
-Mientras se ejecuta, la variable [!DNL Data Migration Tool] puede notificar incoherencias entre las bases de datos del Magento 1 y del Magento 2 y mostrar mensajes como los siguientes:
+Mientras se ejecuta, [!DNL Data Migration Tool] puede notificar incoherencias entre las bases de datos de Magento 1 y Magento 2, y mostrar mensajes como los siguientes:
 
 * `Source documents are missing: <EXTENSION_TABLE_1>,<EXTENSION_TABLE_2>,...<EXTENSION_TABLE_N>`
 * `Destination documents are missing: <EXTENSION_TABLE_1>,<EXTENSION_TABLE_2>,...<EXTENSION_TABLE_N>`
@@ -105,7 +105,7 @@ Mientras se ejecuta, la variable [!DNL Data Migration Tool] puede notificar inco
 * `Incompatibility in data. Source document: <EXTENSION_TABLE>. Field: <FIELD>. Error: <ERROR_MESSAGE>`
 * `Incompatibility in data. Destination document: <EXTENSION_TABLE>. Field: <FIELD>. Error: <ERROR_MESSAGE>`
 
-Consulte la [Solución de problemas](https://support.magento.com/hc/en-us/articles/360033020451) de esta guía para obtener más información y recomendaciones.
+Consulte la sección [Solución de problemas](https://support.magento.com/hc/en-us/articles/360033020451) de esta guía para obtener más información y recomendaciones.
 
 ## Siguiente paso de migración
 

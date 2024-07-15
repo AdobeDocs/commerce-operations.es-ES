@@ -5,7 +5,7 @@ exl-id: cd5d1106-c8db-4b70-b1c7-12378d7d77a7
 feature: Cloud, Security
 source-git-commit: 8d8cd0d33c1a3a95186948e670df6d9865b9a871
 workflow-type: tm+mt
-source-wordcount: '1739'
+source-wordcount: '1691'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Seguridad
 
-El Adobe Commerce [Arquitectura de plan profesional](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-architecture.html) está diseñado para proporcionar un entorno altamente seguro. Cada cliente se implementa en su propio entorno de servidor aislado, separado de otros clientes. A continuación se describen los detalles de seguridad del entorno de producción.
+La arquitectura del plan Adobe Commerce [Pro](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-architecture.html) está diseñada para proporcionar un entorno altamente seguro. Cada cliente se implementa en su propio entorno de servidor aislado, separado de otros clientes. A continuación se describen los detalles de seguridad del entorno de producción.
 
 ## Exploradores web
 
@@ -23,7 +23,7 @@ La mayor parte del tráfico que entra y sale del entorno de la nube proviene de 
 
 Proporciona rápidamente una protección de red de entrega de contenido (CDN) y de denegación de servicio distribuido (DDoS). Fastly CDN ayuda a aislar el acceso directo a los servidores de origen. El DNS público solo apunta a la red de Fastly. La solución Fastly DDoS protege contra ataques de capa 3 y capa 4 altamente disruptivos, y ataques de capa 7 más complejos. Los ataques de nivel 7 se pueden bloquear mediante reglas personalizadas basadas en todas las solicitudes HTTP/HTTPS y en criterios de cliente y solicitud, incluidos encabezados, cookies, ruta de solicitud e IP de cliente, o indicadores como la geolocalización.
 
-Consulte [Resumen de servicios rápidos](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly.html) en el _Guía de Cloud_.
+Consulte [Información general sobre los servicios de Fastly](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly.html) en la _Guía de Cloud_.
 
 ## Cortafuegos de aplicación web
 
@@ -31,7 +31,7 @@ El firewall de aplicaciones web de Fastly (WAF) se utiliza para proporcionar pro
 
 Adobe Commerce actualiza las reglas WAF en caso de que se detecten nuevas vulnerabilidades que permitan a Managed Services &quot;aplicar parches virtuales&quot; a los problemas de seguridad antes de aplicar parches de software. Fastly WAF no proporciona servicios de limitación de velocidad o detección de bots. Si lo desea, los clientes pueden obtener una licencia de un servicio de detección de bots de terceros compatible con Fastly.
 
-Consulte [Firewall de aplicaciones web (WAF)](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly-waf-service.html) en el _Guía de Cloud_.
+Consulte [Firewall de aplicaciones web (WAF)](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly-waf-service.html) en la _Guía de nube_.
 
 ## Virtual Private Cloud
 
@@ -70,13 +70,13 @@ El Adobe prueba regularmente el código de la aplicación principal para detecta
 
 La base de código completa se analiza con estas herramientas cada dos semanas. Los parches de seguridad se notifican a los clientes por correo electrónico directo, en la aplicación y en el [Centro de seguridad](https://helpx.adobe.com/security.html).
 
-Los clientes deben asegurarse de que estos parches se aplican a su aplicación personalizada dentro de los 30 días posteriores al lanzamiento, según las directrices de PCI. El Adobe también proporciona un [Herramienta de exploración de seguridad](https://docs.magento.com/user-guide/magento/security-scan.html) que permite a los comerciantes supervisar con regularidad sus sitios y recibir actualizaciones sobre riesgos de seguridad conocidos, malware y acceso no autorizado. Security Scan Tool es un servicio gratuito que se puede ejecutar en cualquier versión de Adobe Commerce.
+Los clientes deben asegurarse de que estos parches se aplican a su aplicación personalizada dentro de los 30 días posteriores al lanzamiento, según las directrices de PCI. El Adobe también proporciona una [Herramienta de análisis de seguridad](https://docs.magento.com/user-guide/magento/security-scan.html) que permite a los comerciantes supervisar sus sitios con regularidad y recibir actualizaciones sobre riesgos de seguridad conocidos, malware y acceso no autorizado. Security Scan Tool es un servicio gratuito que se puede ejecutar en cualquier versión de Adobe Commerce.
 
-Para animar a los investigadores de seguridad a identificar y notificar vulnerabilidades, Adobe Commerce tiene un [programa de devolución de errores](https://hackerone.com/magento) además de las pruebas internas. Además, se proporciona al cliente el código fuente completo de la aplicación para su propia revisión si lo desea.
+Para animar a los investigadores de seguridad a identificar y notificar vulnerabilidades, Adobe Commerce tiene un [programa de devolución de errores](https://hackerone.com/magento), además de pruebas internas. Además, se proporciona al cliente el código fuente completo de la aplicación para su propia revisión si lo desea.
 
 ## Sistema de archivos de solo lectura
 
-Todo el código ejecutable se implementa en una imagen de sistema de archivos de solo lectura, lo que reduce drásticamente las superficies disponibles para el ataque. El proceso de implementación crea una imagen Squash-FS para reducir las oportunidades de insertar código PHP o JavaScript en el sistema o modificar los archivos de la aplicación de Adobe Commerce.
+Todo el código ejecutable se implementa en una imagen de sistema de archivos de solo lectura, lo que reduce drásticamente las superficies disponibles para el ataque. El proceso de implementación crea una imagen Squash-FS para reducir las oportunidades de insertar código PHP o JavaScript en el sistema o modificar los archivos de la aplicación Adobe Commerce.
 
 ## Implementación remota
 
@@ -84,9 +84,9 @@ La única manera de obtener código ejecutable en el entorno de producción de M
 
 ## Registro
 
-Todas las actividades de AWS están registradas en AWS CloudTrail. Los registros del sistema operativo, del servidor de aplicaciones y de la base de datos se almacenan en los servidores de producción y se almacenan en copias de seguridad. Todos los cambios en el código fuente se registran en un repositorio Git. El historial de implementación está disponible en Adobe Commerce [Interfaz web de Project](https://devdocs.magento.com/cloud/project/projects.html#login). Todo el acceso de asistencia se registra y las sesiones de asistencia se registran.
+Todas las actividades de AWS están registradas en AWS CloudTrail. Los registros del sistema operativo, del servidor de aplicaciones y de la base de datos se almacenan en los servidores de producción y se almacenan en copias de seguridad. Todos los cambios en el código fuente se registran en un repositorio Git. El historial de implementación está disponible en la [interfaz web de proyectos](https://devdocs.magento.com/cloud/project/projects.html#login) de Adobe Commerce. Todo el acceso de asistencia se registra y las sesiones de asistencia se registran.
 
-Consulte [Visualización y administración de registros](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html) en el _Guía de Cloud_.
+Consulte [Ver y administrar registros](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html) en la _Guía de Cloud_.
 
 ## Datos confidenciales
 
@@ -110,14 +110,14 @@ El RGPD requiere que toda información de identificación personal (como nombres
 
 >[!NOTE]
 >
->Esta página proporciona una visión general de lo que hay que tener en cuenta para el RGPD. Consulte la _[Guía de seguridad y cumplimiento](../../../security-and-compliance/privacy/gdpr.md)_ para obtener más información sobre cómo Adobe Commerce almacena la información personal. Para determinar cómo su empresa debe cumplir con cualquier obligación legal, consulte con su asesor legal o consulte la [texto oficial](https://eur-lex.europa.eu/eli/reg/2016/679/oj).
+>Esta página proporciona una visión general de lo que hay que tener en cuenta para el RGPD. Consulte la _[Guía de seguridad y cumplimiento](../../../security-and-compliance/privacy/gdpr.md)_ para obtener más información sobre cómo Adobe Commerce almacena la información personal. Para determinar cómo su empresa debe cumplir con las obligaciones legales, consulte con su asesor legal o consulte el [texto oficial](https://eur-lex.europa.eu/eli/reg/2016/679/oj).
 
 ## Copias de seguridad
 
-Las copias de seguridad se realizan cada hora durante las últimas 24 horas de funcionamiento. Después del período de 24 horas, las copias de seguridad se conservan según una programación mediante el servicio de instantáneas de AWS EBS. Consulte [Política de retención](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-architecture.html#retention-policy) en el _Guía de Cloud_.
+Las copias de seguridad se realizan cada hora durante las últimas 24 horas de funcionamiento. Después del período de 24 horas, las copias de seguridad se conservan según una programación mediante el servicio de instantáneas de AWS EBS. Consulte [Política de retención](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-architecture.html#retention-policy) en la _Guía de nube_.
 
 El servicio crea una copia de seguridad independiente en el almacenamiento redundante. Como los volúmenes EBS están cifrados, las copias de seguridad también están cifradas. Además, Managed Services realiza copias de seguridad bajo demanda según lo solicitado por los clientes.
 
 Su enfoque de backup y recuperación de Managed Services utiliza una arquitectura de alta disponibilidad combinada con backups de todo el sistema. Cada proyecto se duplica (todos los datos, el código y los recursos) en tres zonas de disponibilidad de AWS independientes; cada zona tiene un centro de datos independiente.
 
-Consulte [Administración de instantáneas y copias de seguridad](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/snapshots.html) en el _Guía de Cloud_.
+Consulte [Administración de instantáneas y copias de seguridad](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/snapshots.html) en la _Guía de Cloud_.

@@ -1,15 +1,15 @@
 ---
-title: Estrategia de comercio
+title: Estrategia de Commerce
 description: Desbloquee las capacidades principales de comercio electrónico mediante nuestro marco de estrategia sugerido.
 exl-id: 0efb424b-9026-439d-a50c-d2d935c07c8c
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '350'
+source-wordcount: '347'
 ht-degree: 0%
 
 ---
 
-# Estrategia de comercio
+# Estrategia de Commerce
 
 El comercio digital es una fuerza en rápido movimiento que evoluciona rápidamente cada año. Si bien esto puede ser emocionante para las personas, también conlleva muchos desafíos para las organizaciones que intentan navegar por el terreno que es el comercio electrónico.
 
@@ -79,4 +79,4 @@ La siguiente lista incluye objetivos clave que se deben tener en cuenta al plani
 
 Consulte el siguiente diagrama para ver un marco de estrategia de comercio electrónico sugerido:
 
-![Diagrama del marco de estrategia comercial](../../assets/playbooks/commerce-strategy-framework.png)
+![Diagrama del marco de estrategia de Commerce](../../assets/playbooks/commerce-strategy-framework.png)

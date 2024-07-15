@@ -12,24 +12,24 @@ ht-degree: 0%
 
 # Modifique docroot para mejorar la seguridad
 
-En una instalación estándar con un servidor web Apache, Adobe Commerce se instala en la raíz web predeterminada: `/var/www/html/magento2`.
+En una instalación estándar con un servidor web Apache, Adobe Commerce está instalado en la raíz web predeterminada: `/var/www/html/magento2`.
 
-El `magento2/` El directorio contiene lo siguiente:
+El directorio `magento2/` contiene lo siguiente:
 
 - `pub/`
 - `setup/`
 - `var/`
 
-La aplicación se suministra desde `/var/www/html/magento2/pub`. El resto del sistema de archivos es vulnerable porque es accesible desde un explorador.
-Configuración de la raíz web en `pub/` evita que los visitantes del sitio tengan acceso a áreas confidenciales del sistema de archivos desde un explorador.
+La aplicación se proporcionó desde `/var/www/html/magento2/pub`. El resto del sistema de archivos es vulnerable porque es accesible desde un explorador.
+Al establecer la raíz web en el directorio `pub/`, se impide que los visitantes del sitio tengan acceso a áreas confidenciales del sistema de archivos desde un explorador.
 
-En este tema se describe cómo cambiar el docroot de Apache en una instancia existente para que sirva archivos desde el `pub/` , que es más seguro.
+En este tema se describe cómo cambiar el docroot de Apache en una instancia existente para que sirva archivos del directorio `pub/`, que es más seguro.
 
 ## Una nota sobre nginx
 
-Si está utilizando [nginx](../prerequisites/web-server/nginx.md) y el [`nginx.conf.sample`](https://github.com/magento/magento2/blob/2.4/nginx.conf.sample) archivo incluido en el directorio de instalación, probablemente ya esté sirviendo archivos desde el `pub/` directorio.
+Si está usando [nginx](../prerequisites/web-server/nginx.md) y el archivo [`nginx.conf.sample`](https://github.com/magento/magento2/blob/2.4/nginx.conf.sample) incluido en el directorio de instalación, probablemente ya esté sirviendo archivos del directorio `pub/`.
 
-Cuando se utiliza en el bloque de servidor que define el sitio, la variable `nginx.conf.sample` reemplaza la configuración docroot del servidor para servir archivos desde el `pub/` directorio. Por ejemplo, consulte la última línea de la siguiente configuración:
+Cuando se usa en el bloque de servidor que define el sitio, la configuración de `nginx.conf.sample` anula la configuración de docroot del servidor para servir archivos del directorio `pub/`. Por ejemplo, consulte la última línea de la siguiente configuración:
 
 ```conf
 # /etc/nginx/sites-available/magento
@@ -60,7 +60,7 @@ Para completar este tutorial, necesita acceder a una instalación en funcionamie
 
 >[!NOTE]
 >
->Consulte [Requisitos previos](../prerequisites/overview.md) y el [Guía de instalación](../overview.md) para obtener más información.
+>Consulte [Requisitos previos](../prerequisites/overview.md) y la [Guía de instalación](../overview.md) para obtener más información.
 
 ## 1. Edite la configuración del servidor
 
@@ -73,7 +73,7 @@ El nombre y la ubicación del archivo host virtual dependen de la versión de Ap
    vim /etc/apache2/sites-available/000-default.conf
    ```
 
-1. Añada la ruta a su `pub/` al directorio `DocumentRoot` directiva:
+1. Agregue la ruta de acceso al directorio `pub/` a la directiva `DocumentRoot`:
 
    ```conf
    <VirtualHost *:80>
@@ -98,11 +98,11 @@ El nombre y la ubicación del archivo host virtual dependen de la versión de Ap
 
 ## 2. Actualice la dirección URL base
 
-Si agregó un nombre de directorio al nombre de host o la dirección IP del servidor para crear la dirección URL base al instalar la aplicación (por ejemplo, `http://192.168.33.10/magento2`), debe eliminarlo.
+Si agregó un nombre de directorio al nombre de host o la dirección IP del servidor para crear la dirección URL base al instalar la aplicación (por ejemplo, `http://192.168.33.10/magento2`), debe quitarla.
 
 >[!NOTE]
 >
->Reemplazar `192.168.33.10` con el nombre de host del servidor.
+>Reemplace `192.168.33.10` con el nombre de host del servidor.
 
 1. Inicie sesión en la base de datos:
 
@@ -124,7 +124,7 @@ Si agregó un nombre de directorio al nombre de host o la dirección IP del serv
 
 ## 3. Actualice el archivo env.php
 
-Anexe el siguiente nodo al `env.php` archivo.
+Anexe el siguiente nodo al archivo `env.php`.
 
 ```conf
 'directories' => [
@@ -136,12 +136,12 @@ Consulte la [referencia env.php](../../configuration/reference/config-reference-
 
 ## 4. Cambiar de modo
 
-[Modos de aplicación](../../configuration/bootstrap/application-modes.md), que incluyen `production` y `developer`, están diseñadas para mejorar la seguridad y facilitar el desarrollo. Como sugieren los nombres, debe cambiar a `developer` al ampliar o personalizar la aplicación y cambiar a `production` cuando se ejecuta en un entorno en directo.
+[Los modos de aplicación](../../configuration/bootstrap/application-modes.md), que incluyen `production` y `developer`, están diseñados para mejorar la seguridad y facilitar el desarrollo. Como sugieren los nombres, debe cambiar al modo `developer` al ampliar o personalizar la aplicación y cambiar al modo `production` cuando se ejecute en un entorno activo.
 
 Cambiar entre modos es un paso importante para comprobar que la configuración del servidor funciona correctamente. Puede cambiar entre los modos con la herramienta CLI:
 
 1. Vaya al directorio de instalación.
-1. Cambiar a `production` modo.
+1. Cambiar a modo `production`.
 
    ```bash
    bin/magento deploy:mode:set production
@@ -152,7 +152,7 @@ Cambiar entre modos es un paso importante para comprobar que la configuración d
    ```
 
 1. Actualice el explorador y compruebe que la tienda se muestra correctamente.
-1. Cambiar a `developer` modo.
+1. Cambiar a modo `developer`.
 
    ```bash
    bin/magento deploy:mode:set developer
@@ -174,7 +174,7 @@ Vaya a la tienda en un navegador web para comprobar que todo funciona.
 
    ![Tienda que verifica una instalación correcta](../../assets/installation/install-success_store.png)
 
-   Consulte la [sección solución de problemas](https://support.magento.com/hc/en-us/articles/360032994352) si la página muestra un archivo 404 (no encontrado) o no puede cargar otros recursos, como imágenes, CSS y JS.
+   Consulte la [sección de solución de problemas](https://support.magento.com/hc/en-us/articles/360032994352) si la página muestra un archivo 404 (no encontrado) o no puede cargar otros recursos, como imágenes, CSS y JS.
 
 1. Intente acceder a un directorio de aplicaciones desde un explorador. Añada el nombre del directorio al nombre de host o a la dirección IP del servidor en la barra de direcciones:
 

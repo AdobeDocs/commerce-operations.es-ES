@@ -12,17 +12,17 @@ ht-degree: 0%
 
 # Información general de seguridad
 
-La sección Seguridad incluye la configuración de las funciones relacionadas con la seguridad, como el hash de las contraseñas, el envenenamiento de la caché y la protección del `cron.php` archivo.
+La sección Seguridad incluye la configuración de características relacionadas con la seguridad, como el hash de contraseñas, el envenenamiento de la caché y la protección del archivo `cron.php`.
 
 ## Recursos de seguridad
 
 Los temas de la sección Seguridad de la guía de configuración no son completos en todas las funciones de Commerce. Hay muchos temas importantes relacionados con la seguridad en otras guías de Commerce, como:
 
-- [Guía para desarrolladores de PHP](https://developer.adobe.com/commerce/php/development/security/) para obtener información que los desarrolladores de Adobe Commerce pueden utilizar para mejorar la seguridad de los componentes que crean.
-- [Guía de seguridad y cumplimiento](https://devdocs.magento.com/security/security-and-compliance.html) para obtener información sobre la seguridad, la privacidad y el cumplimiento de las regulaciones, con vínculos a recursos técnicos.
+- [Guía para desarrolladores de PHP](https://developer.adobe.com/commerce/php/development/security/) para obtener información que los desarrolladores de Adobe Commerce pueden usar para mejorar la seguridad de los componentes que crean.
+- [Guía de seguridad y cumplimiento](https://devdocs.magento.com/security/security-and-compliance.html) para obtener información acerca de la seguridad, la privacidad y el cumplimiento normativo, con vínculos a recursos técnicos.
 
 Varios temas relacionados con la seguridad que se incluían en la guía de configuración al mismo tiempo, ahora se encuentran en las siguientes guías:
 
-- [Google reCAPTCHA](https://devdocs.magento.com/guides/v2.4/security/google-recaptcha.html) en el _Guía de extensión_.
-- [Autenticación de doble factor](https://devdocs.magento.com/guides/v2.4/security/two-factor-authentication.html) en el _Guía de extensión_.
-- [Cumplimiento del Reglamento General de Protección de Datos (RGPD)](https://devdocs.magento.com/compliance/privacy/gdpr.html) en el _Guía de seguridad y cumplimiento_.
+- [Google reCAPTCHA](https://devdocs.magento.com/guides/v2.4/security/google-recaptcha.html) en la _guía de extensión_.
+- [Autenticación de doble factor](https://devdocs.magento.com/guides/v2.4/security/two-factor-authentication.html) en la _guía de extensión_.
+- [Cumplimiento del Reglamento General de Protección de Datos (RGPD)](https://devdocs.magento.com/compliance/privacy/gdpr.html) en la _Guía de seguridad y cumplimiento_.

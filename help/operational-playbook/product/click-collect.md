@@ -4,7 +4,7 @@ description: Siga estos diez consejos para ofrecer un clic encantador y recopila
 exl-id: 5f5743ac-75a5-41f1-8819-2de088f56387
 source-git-commit: e76f101df47116f7b246f21f0fe0fa72769d2776
 workflow-type: tm+mt
-source-wordcount: '802'
+source-wordcount: '798'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Hacer clic y recopilar se ha convertido en una parte integral de las estrategias omnicanal, ya que promueve el aumento de los ingresos, la experiencia del cliente y el retorno de la inversión. Click and collect ya no es solo para los grandes supermercados, sino que se está convirtiendo en parte de las organizaciones B2B y B2C.
 
-![Zapatos en un círculo](../../assets/playbooks/shoes.png)
+![Zapatos en círculo](../../assets/playbooks/shoes.png)
 
 ## Sugerencias
 
@@ -34,13 +34,13 @@ Las empresas deben seguir estos diez consejos para ofrecer un buen clic y recoge
 
 Al decidir implementar la función de clic y recopilación, las empresas deben tener en cuenta cómo piensan ofrecer funciones de clic y recopilación a los clientes, como los tipos de servicio:
 
-- **Pago en línea y cobro en tienda**—El usuario paga el producto en línea y después de que se confirme el pago, la tienda notifica al cliente cuando el producto está listo para ser recogido en función de la selección de la tienda de los clientes. El cobro del pago ayuda a reservar el producto.
+- **Pago en línea y cobro en la tienda**: el usuario paga el producto en línea y después de que se confirme el pago, la tienda notifica al cliente cuando el producto está listo para ser cobrado en función de la selección de la tienda de los clientes. El cobro del pago ayuda a reservar el producto.
 
-- **Reservar el producto en línea, pago y cobro en tienda**—En este tipo de servicio el cliente no paga en línea al reservar un producto. En este tipo de servicio, el cliente puede cambiar de opinión y es posible que no compre el producto.
+- **Reservar el producto en línea, el pago y la colección en la tienda**: en este tipo de servicio, el cliente no paga en línea al reservar un producto. En este tipo de servicio, el cliente puede cambiar de opinión y es posible que no compre el producto.
 
-- **Integración**: una vez seleccionado el tipo de entrega, las empresas deben decidir la estructura de integración (dónde se envían los pedidos, dónde se cumplen los pedidos). Las existencias se pueden entregar desde un almacén central o directamente desde tiendas individuales.
+- **Integración**: una vez seleccionado el tipo de entrega, las empresas deben decidir la estructura de integración (a dónde se envían los pedidos y dónde se cumplen los pedidos). Las existencias se pueden entregar desde un almacén central o directamente desde tiendas individuales.
 
-- **Devuelve**: los retornos pueden ser complejos. Las empresas necesitan tener una estrategia clara para administrar las devoluciones de los productos entregados y los productos pedidos mediante clic y recopilar. Las empresas necesitan permitir que los clientes devuelvan los productos que solicitan a través de clics y cobros para proporcionar un servicio integral al cliente.
+- **Devuelve**: las devoluciones pueden ser complejas. Las empresas necesitan tener una estrategia clara para administrar las devoluciones de los productos entregados y los productos pedidos mediante clic y recopilar. Las empresas necesitan permitir que los clientes devuelvan los productos que solicitan a través de clics y cobros para proporcionar un servicio integral al cliente.
 
 ## Promoción
 

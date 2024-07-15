@@ -13,7 +13,7 @@ ht-degree: 0%
 
 A continuación se resumen las dependencias y servicios de software probados para Adobe Commerce.
 
-Existen algunas diferencias en las dependencias para Commerce en la infraestructura en la nube. La compatibilidad y la versión de los servicios para Adobe Commerce en la infraestructura en la nube están determinadas por los servicios probados e implementados en los entornos en la nube alojados y, a veces, difieren de las versiones admitidas por las implementaciones locales de Adobe Commerce. Por ejemplo, el Elasticsearch 7.17 es compatible con Commerce 2.4.4 para implementaciones on-premise, pero OpenSearch 1.2 es compatible con Commerce 2.4.4 en infraestructura en la nube.
+Existen algunas diferencias en las dependencias de Commerce en la infraestructura en la nube. La compatibilidad y la versión de los servicios para Adobe Commerce en la infraestructura en la nube están determinadas por los servicios probados e implementados en los entornos en la nube alojados y, a veces, difieren de las versiones admitidas por las implementaciones locales de Adobe Commerce. Por ejemplo, Elasticsearch 7.17 es compatible con Commerce 2.4.4 para implementaciones locales, pero OpenSearch 1.2 es compatible con Commerce 2.4.4 en infraestructura en la nube.
 
 Las siguientes tablas muestran versiones de dependencias de software de terceros que Adobe ha probado con versiones específicas de Adobe Commerce.
 
@@ -23,11 +23,11 @@ El Adobe solo admite la combinación de requisitos del sistema que se describen 
 
 >[!TAB Commerce en la nube]
 
-El [Plantilla de Commerce on Cloud](https://github.com/magento/magento-cloud) proporciona una configuración predeterminada para servicios compatibles con una versión específica de Commerce.
+La [plantilla de Commerce en la nube](https://github.com/magento/magento-cloud) proporciona una configuración predeterminada para los servicios compatibles con una versión específica de Commerce.
 
 {{$include /help/_includes/templated/cloud-requirements-table.md}}
 
-Los servicios y las versiones se definen en [el `services.yaml` archivo](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml). A continuación se muestra la configuración de servicio predeterminada para Commerce 2.4.6 en la infraestructura en la nube:
+Los servicios y las versiones se definen en [el archivo `services.yaml`](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml). A continuación se muestra la configuración de servicio predeterminada para Commerce 2.4.6 en infraestructura en la nube:
 
 ```yaml
 mysql:
@@ -42,7 +42,7 @@ opensearch:
     disk: 1024
 ```
 
-Consulte [Configurar servicios](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/services-yaml.html) en el _Commerce en infraestructura en la nube_ guía.
+Consulte [Configurar servicios](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/services-yaml.html) en la guía de _Commerce en infraestructura en la nube_.
 
 >[!TAB Commerce local]
 
@@ -52,17 +52,17 @@ Consulte [Configurar servicios](https://experienceleague.adobe.com/docs/commerce
 
 ## Configuración de PHP
 
-Hay ciertas configuraciones de PHP, como la `memory_limit` , que puede ayudarle a evitar problemas comunes al utilizar Adobe Commerce. Consulte [Configuración de PHP requerida](prerequisites/php-settings.md).
+Hay ciertas opciones de configuración de PHP, como la configuración de `memory_limit`, que pueden ayudarle a evitar problemas comunes al usar Adobe Commerce. Consulte [Configuración de PHP requerida](prerequisites/php-settings.md).
 
-Para obtener instrucciones de configuración de Cloud, consulte [Configuración de PHP](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html) en el _Commerce en infraestructura en la nube_ guía.
+Para obtener instrucciones de configuración de Cloud, consulte [Configuración de PHP](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html) en la guía de _Commerce en infraestructura en la nube_.
 
 ### OPcache de PHP
 
-Se recomienda verificar que [OPcache de PHP](https://www.php.net/manual/en/intro.opcache.php) está habilitado por motivos de rendimiento. OPcache está habilitado en muchas distribuciones PHP. El `opcache` La extensión de se instala de forma predeterminada en la infraestructura de Commerce en la nube.
+Se recomienda verificar que [PHP OPcache](https://www.php.net/manual/en/intro.opcache.php) está habilitado por motivos de rendimiento. OPcache está habilitado en muchas distribuciones PHP. La extensión `opcache` está instalada de manera predeterminada en Commerce en la infraestructura de la nube.
 
-Para obtener información local, compruebe que está instalado el OPcache de PHP, consulte [Configuración de PHP](prerequisites/php-settings.md). O para obtener instrucciones específicas sobre la configuración de rendimiento, consulte las recomendaciones de software para [Configuración de PHP](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/software.html#php-settings) en el _Prácticas recomendadas de rendimiento_ guía.
+Para obtener información local, compruebe si está instalada la caché de PHP OPcache, consulte [Configuración de PHP](prerequisites/php-settings.md). O para obtener instrucciones específicas sobre la configuración de rendimiento, consulte las recomendaciones de software para [configuración de PHP](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/software.html#php-settings) en la guía de _Prácticas recomendadas de rendimiento_.
 
-Si debe instalar OPcache por separado, consulte la [Documentación de PHP OPcache](https://www.php.net/manual/en/opcache.setup.php).
+Si debe instalar OPcache por separado, consulte la [documentación de OPcache de PHP](https://www.php.net/manual/en/opcache.setup.php).
 
 ### Control de procesos PHP
 
@@ -74,11 +74,11 @@ PHPUnit v9 (como herramienta de línea de comandos).
 
 ### Extensiones de PHP
 
-El [Instrucciones de instalación de PHP](prerequisites/php-settings.md) incluya un paso para instalar estas extensiones.
+Las [instrucciones de instalación de PHP](prerequisites/php-settings.md) incluyen un paso para instalar estas extensiones.
 
 >[!TIP]
 >
->Para ver las extensiones PHP en la infraestructura de Cloud, consulte [Habilitar extensiones PHP](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html#enable-extensions) en el _Commerce en infraestructura en la nube_ guía.
+>Para las extensiones PHP en la infraestructura en la nube, consulte [Habilitar extensiones PHP](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html#enable-extensions) en la guía de _Commerce en la infraestructura en la nube_.
 
 >[!BEGINTABS]
 
@@ -92,7 +92,7 @@ La siguiente tabla muestra las extensiones PHP compatibles al implementar Adobe 
 
 {{$include /help/_includes/templated/php-extensions.md}}
 
-Consulte [documentación oficial de PHP](https://www.php.net/manual/en/extensions.php) para obtener más información sobre la instalación.
+Consulte [documentación oficial de PHP](https://www.php.net/manual/en/extensions.php) para obtener detalles de instalación.
 
 >[!ENDTABS]
 
@@ -102,7 +102,7 @@ En esta sección se describe la compatibilidad con todos los demás tipos de sof
 
 >[!NOTE]
 >
->Los siguientes requisitos se aplican a la última versión del parche 2.4.x de Adobe Commerce. Cuando es relevante, se proporciona orientación sobre la infraestructura de Commerce en la nube.
+>Los siguientes requisitos se aplican a la última versión del parche 2.4.x de Adobe Commerce. Si es relevante, se proporciona orientación sobre la infraestructura de Commerce en la nube.
 
 ### Navegadores
 
@@ -110,18 +110,18 @@ Tienda y administrador:
 
 - Microsoft Edge (versión principal más reciente y anterior)
 - Firefox (versión principal más reciente y anterior; cualquier sistema operativo)
-- Chrome (última versión principal y anterior; cualquier sistema operativo)
+- Chrome (última versión y anterior; cualquier sistema operativo)
 - Safari (versión principal más reciente y anterior; solo macOS)
 - Safari para iOS (versión principal más reciente y anterior, para tienda)
 - Chrome para Android (versión principal más reciente y anterior, para tienda)
 
 ### Servidor de correo
 
-Agente de transferencia de correo (MTA) o un servidor SMTP. La infraestructura de Commerce en Cloud utiliza [Servicio de correo electrónico SendGrid](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/sendgrid.html).
+Agente de transferencia de correo (MTA) o un servidor SMTP. La infraestructura de Commerce en la nube usa el [servicio de correo electrónico SendGrid](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/sendgrid.html).
 
 ### Memoria
 
-La actualización de las aplicaciones y extensiones que obtiene del Commerce Marketplace y de otras fuentes puede requerir hasta 2 GB de RAM. Si utiliza un sistema con menos de 2 GB de RAM, cree un [archivo de intercambio](https://support.magento.com/hc/en-us/articles/360032980432); de lo contrario, es posible que la actualización falle.
+La actualización de las aplicaciones y extensiones que obtiene del Commerce Marketplace y de otras fuentes puede requerir hasta 2 GB de RAM. Si usa un sistema con menos de 2 GB de RAM, cree un [archivo de intercambio](https://support.magento.com/hc/en-us/articles/360032980432); de lo contrario, podría producirse un error en la actualización.
 
 ### Sistemas operativos (Linux x86-64)
 
@@ -143,16 +143,16 @@ Adobe Commerce requiere las siguientes herramientas del sistema para algunas ope
 
 - Se requiere un certificado de seguridad válido para HTTPS.
 - No se admiten certificados SSL firmados automáticamente.
-- Requisito de seguridad de la capa de transporte (TLS): PayPal y `repo.magento.com` ambos requieren TLS 1.2 o posterior.
+- Requisito de seguridad de la capa de transporte (TLS): PayPal y `repo.magento.com` requieren TLS 1.2 o posterior.
 
-Para Commerce en la infraestructura en la nube, consulte [Configuración rápida](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html) en el _Commerce en infraestructura en la nube_ guía.
+Para Commerce sobre la infraestructura en la nube, consulte [Configuración rápida](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html) en la guía de _Commerce sobre la infraestructura en la nube_.
 
 ### Xdebug
 
-Para Adobe Commerce, utilice [php_xdebug 2.5.x](https://xdebug.org/download) o posterior (solo entornos de desarrollo; puede tener un efecto adverso en el rendimiento).
+Para Adobe Commerce, use [php_xdebug 2.5.x](https://xdebug.org/download) o posterior (solo para entornos de desarrollo; puede tener un efecto adverso en el rendimiento).
 
-Para Adobe Commerce en la nube, consulte [Configurar Xdebug](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/debug.html) en el _Commerce en infraestructura en la nube_ guía.
+Para Adobe Commerce en la nube, consulte [Configuración de Xdebug](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/debug.html) en la guía de _Commerce en infraestructura en la nube_.
 
 >[!NOTE]
 >
->Hay un problema conocido con `xdebug` que pueden afectar a las instalaciones de Adobe Commerce o al acceso a la tienda o al administrador después de la instalación. Consulte [Problema conocido que afecta a `xdebug` instalación](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/known-issues-that-affect-installation.html) en el _Base de conocimiento de asistencia de Commerce_.
+>Hay un problema conocido con `xdebug` que puede afectar las instalaciones de Adobe Commerce o el acceso a la tienda o al administrador después de la instalación. Ver [Problema conocido que afecta a la instalación de `xdebug`](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/known-issues-that-affect-installation.html) en la _Base de conocimiento de soporte técnico de Commerce_.

@@ -18,17 +18,17 @@ ht-degree: 1%
 
 En este tema se explica cómo empezar a utilizar la solución de base de datos dividida mediante:
 
-1. Instalación de Adobe Commerce con una única base de datos maestra (denominada `magento`)
+1. Instalación de Adobe Commerce con una sola base de datos maestra (denominada `magento`)
 1. Creación de dos bases de datos maestras adicionales para retirada y OMS (denominadas `magento_quote` y `magento_sales`)
 1. Configuración de Adobe Commerce para utilizar las bases de datos de cierre de compra y ventas
 
 >[!INFO]
 >
->En esta guía se da por hecho que las tres bases de datos están en el mismo host que la aplicación Commerce y que tienen el nombre `magento`, `magento_quote`, y `magento_sales`. Sin embargo, la elección de dónde ubicar las bases de datos y sus nombres depende de usted. Esperamos que nuestros ejemplos faciliten el seguimiento de las instrucciones.
+>Esta guía supone que las tres bases de datos están en el mismo host que la aplicación Commerce y que se denominan `magento`, `magento_quote` y `magento_sales`. Sin embargo, la elección de dónde ubicar las bases de datos y sus nombres depende de usted. Esperamos que nuestros ejemplos faciliten el seguimiento de las instrucciones.
 
 ## Instalación del software de Adobe Commerce
 
-Puede activar las bases de datos divididas en cualquier momento después de instalar el software de Adobe Commerce; es decir, puede agregar bases de datos divididas a un sistema de Adobe Commerce que ya tiene datos de cierre de compra y pedidos. Siga las instrucciones del archivo LÉAME de Adobe Commerce o [guía de instalación](../../installation/overview.md) para instalar el software de Adobe Commerce mediante una única base de datos maestra.
+Puede activar las bases de datos divididas en cualquier momento después de instalar el software de Adobe Commerce; es decir, puede agregar bases de datos divididas a un sistema de Adobe Commerce que ya tiene datos de cierre de compra y pedidos. Utilice las instrucciones del archivo LÉAME de Adobe Commerce o la [guía de instalación](../../installation/overview.md) para instalar el software de Adobe Commerce mediante una única base de datos maestra.
 
 ## Configurar bases de datos maestras adicionales
 
@@ -41,8 +41,8 @@ Cree las bases de datos maestras de OMS y de cierre de compra de la siguiente ma
    mysql -u root -p
    ```
 
-1. Introduzca el MySQL `root` contraseña del usuario cuando se le solicite.
-1. Introduzca los siguientes comandos en el orden mostrado para crear instancias de base de datos denominadas `magento_quote` y `magento_sales` con los mismos nombres de usuario y contraseñas:
+1. Escriba la contraseña del usuario MySQL `root` cuando se le solicite.
+1. Escriba los siguientes comandos en el orden mostrado para crear instancias de base de datos denominadas `magento_quote` y `magento_sales` con los mismos nombres de usuario y contraseñas:
 
    ```shell
    create database magento_quote;
@@ -60,7 +60,7 @@ Cree las bases de datos maestras de OMS y de cierre de compra de la siguiente ma
    GRANT ALL ON magento_sales.* TO magento_sales@localhost IDENTIFIED BY 'magento_sales';
    ```
 
-1. Entrar `exit` para salir del símbolo del sistema.
+1. Escriba `exit` para salir del símbolo del sistema.
 
 1. Compruebe las bases de datos de una en una:
 
@@ -86,13 +86,13 @@ Cree las bases de datos maestras de OMS y de cierre de compra de la siguiente ma
 
    Si se muestra el monitor MySQL, ha creado correctamente la base de datos. Si aparece un error, repita los comandos anteriores.
 
-## Configurar Commerce para que utilice las bases de datos maestras
+## Configuración de Commerce para utilizar las bases de datos maestras
 
-Después de configurar un total de tres bases de datos maestras, utilice la línea de comandos para configurar Commerce y utilizarlas. (El comando configura conexiones de base de datos y distribuye tablas entre las bases de datos maestras.)
+Después de configurar un total de tres bases de datos maestras, utilice la línea de comandos para configurar Commerce para que las utilice. (El comando configura conexiones de base de datos y distribuye tablas entre las bases de datos maestras.)
 
 ### Primeros pasos
 
-Consulte [Ejecución de comandos](../cli/config-cli.md#running-commands) para iniciar sesión y ejecutar comandos CLI.
+Vea [Ejecutar comandos](../cli/config-cli.md#running-commands) para iniciar sesión y ejecutar comandos CLI.
 
 ### Configurar la base de datos de retirada
 

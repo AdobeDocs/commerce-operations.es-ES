@@ -23,7 +23,7 @@ La audiencia de destino de este manual incluye:
 
 - Director de marketing
 - Director de Digital, Director de Estrategia, Director de Marketing
-- Responsable de contenido, Responsable de UX, Responsable de producción de contenido, Estratega de contenido, Productores de contenido, Diseñador de UX
+- Responsable de contenido, Responsable de UX, Responsable de producción de contenido, Estratega de contenido, Productores de contenido, UX Designer
 - Arquitecto de soluciones, responsable de implementación, desarrollador principal
 - Administrador de programas, Administrador de proyectos
 - Administrador de comercio electrónico, analista empresarial
@@ -32,17 +32,17 @@ La audiencia de destino de este manual incluye:
 
 Este documento sigue una estructura diseñada para ayudarle a comprender las áreas de enfoque clave para obtener el máximo valor de su inversión en Adobe Commerce. Esta estructura se basa en el marco de trabajo de gobernanza de Deloitte y Adobe Commerce, que crea el entorno empresarial adecuado para que las operaciones y transformaciones digitales tengan éxito. Incluye:
 
-- **Liderazgo**—Inclusión ejecutiva y soporte para la gestión exitosa de una plataforma de comercio electrónico.
+- **Liderazgo**: Inclusión del ejecutivo y soporte para la administración exitosa de una plataforma de comercio electrónico.
 
-- **Estrategia**: claridad y alineación en torno a los objetivos empresariales clave para evaluar el rendimiento digital y las operaciones de comercio electrónico.
+- **Estrategia**: claridad y alineación en torno a objetivos empresariales clave para evaluar el rendimiento digital y las operaciones de comercio electrónico.
 
-- **Solución**—Alojamiento y evaluación de la infraestructura para los diferentes requisitos de negocios y comercio electrónico.
+- **Solución**: alojamiento y evaluación de la infraestructura según los distintos requisitos empresariales y de comercio electrónico.
 
-- **People**: Recursos, experiencia y la estructura de equipo adecuada para ejecutar las operaciones de comercio electrónico de forma eficaz.
+- **Personas**: recursos, experiencia y la estructura de equipo adecuada para ejecutar las operaciones de comercio electrónico de forma eficaz.
 
 - **Proceso**: procedimientos, administración de proyectos y flujos de trabajo para administrar un sitio de comercio electrónico de forma eficaz.
 
-- **Product**: soluciones generales de comercio electrónico, integraciones comunes y automatizaciones.
+- **Producto**: soluciones generales de comercio electrónico, integraciones comunes y automatizaciones.
 
 >[!NOTE]
 >

@@ -24,7 +24,7 @@ Las secciones siguientes proporcionan detalles sobre las diferentes regiones de 
 
 ## Regiones de Azure
 
-![Diagrama que muestra las regiones de Azure](../../../assets/playbooks/azure-regions.png)
+![Diagrama que muestra regiones de Azure](../../../assets/playbooks/azure-regions.png)
 
 >[!NOTE]
 >

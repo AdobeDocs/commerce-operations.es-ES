@@ -21,7 +21,7 @@ Adobe Commerce en la infraestructura en la nube
 
 ## Convertir todas las tablas MyISAM a InnoDB
 
-Adobe recomienda utilizar el motor de base de datos InnoDB. En una instalación predeterminada de Adobe Commerce, todas las tablas de la base de datos se almacenan mediante el motor InnoDB. Sin embargo, algunos módulos de terceros (extensiones) pueden introducir tablas en formato MyISAM. Después de instalar un módulo de terceros, compruebe la base de datos para identificar cualquier tabla en `myisam` formatearlos y convertirlos en `innodb` formato.
+Adobe recomienda utilizar el motor de base de datos InnoDB. En una instalación predeterminada de Adobe Commerce, todas las tablas de la base de datos se almacenan mediante el motor InnoDB. Sin embargo, algunos módulos de terceros (extensiones) pueden introducir tablas en formato MyISAM. Después de instalar un módulo de terceros, compruebe la base de datos para identificar cualquier tabla en formato `myisam` y convertirla al formato `innodb`.
 
 ### Determinar si un módulo incluye tablas MyISAM
 
@@ -37,7 +37,7 @@ SELECT table_schema, CONCAT(ROUND((index_length+data_length)/1024/1024),'MB')
 
 ### Cambie el motor de almacenamiento a InnoDB
 
-En el `db_schema.xml` archivo que declara la tabla, establezca el `engine` valor de atributo para el correspondiente `table` nodo a `innodb`. Para ver una referencia, consulte [Configure el esquema declarativo > nodo de tabla](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration/) en nuestra documentación para desarrolladores.
+En el archivo `db_schema.xml` que declara la tabla, establezca el valor del atributo `engine` para el nodo `table` correspondiente en `innodb`. Como referencia, consulte [Configurar esquema declarativo > nodo de tabla](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration/) en nuestra documentación para desarrolladores.
 
 El esquema declarativo se introdujo en Adobe Commerce en la versión 2.3 de la infraestructura en la nube.
 
@@ -61,7 +61,7 @@ Para obtener instrucciones de configuración, consulte la Guía del desarrollado
 
 - [Configurar el servicio OpenSearch](https://devdocs.magento.com/cloud/project/services-opensearch.html)
 
-- [Configuración del servicio de Elasticsearch](https://devdocs.magento.com/cloud/project/services-elastic.html)
+- [Configurar el servicio de Elasticsearch](https://devdocs.magento.com/cloud/project/services-elastic.html)
 
 ## Evitar déclencheur personalizados
 
@@ -72,22 +72,22 @@ Los déclencheur se utilizan para registrar cambios en tablas de auditoría. Ado
 - Los déclencheur se interpretan como código y MySQL no los precompila. Al conectarse al espacio de transacción de la consulta, agregan la sobrecarga a un analizador e intérprete para cada consulta realizada con la tabla.
 - Los déclencheur comparten el mismo espacio de transacciones que las consultas originales y, mientras que estas consultas compiten por bloqueos en la tabla, los déclencheur compiten de forma independiente en bloqueos en otra tabla.
 
-Para obtener más información sobre alternativas al uso de déclencheur personalizados, consulte [Déclencheur MySQL](mysql-configuration.md#triggers).
+Para obtener más información sobre alternativas al uso de déclencheur personalizados, consulte [déclencheur MySQL](mysql-configuration.md#triggers).
 
 ## Actualizar [!DNL ECE-Tools] a la versión 2002.0.21 o superior {#ece-tools-version}
 
-Para evitar posibles problemas con los interbloqueos de cron, actualice ECE-Tools a la versión 2002.0.21 o superior. Para obtener instrucciones, consulte [Actualizar `ece-tools` version](https://devdocs.magento.com/cloud/project/ece-tools-update.html) en nuestra documentación para desarrolladores.
+Para evitar posibles problemas con los interbloqueos de cron, actualice ECE-Tools a la versión 2002.0.21 o superior. Para obtener instrucciones, consulte [Actualizar `ece-tools` versión](https://devdocs.magento.com/cloud/project/ece-tools-update.html) en nuestra documentación para desarrolladores.
 
 ## Cambiar el modo del indexador con seguridad
 
 <!--This best practice might belong in the Maintenance phase. Database lock prevention might be consolidated under a single heading-->
 
-Cambiar indexadores genera [!DNL data definition language] Instrucciones (DDL) para crear déclencheur que puedan bloquear la base de datos. Puede evitar este problema poniendo su sitio web en modo de mantenimiento y deshabilitando los trabajos cron antes de cambiar la configuración.
-Para obtener instrucciones, consulte [Configuración de indexadores](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html#configure-indexers-1) en el *Guía de configuración de Adobe Commerce*.
+Cambiar los indizadores genera instrucciones [!DNL data definition language] (DDL) para crear déclencheur que pueden bloquear la base de datos. Puede evitar este problema poniendo su sitio web en modo de mantenimiento y deshabilitando los trabajos cron antes de cambiar la configuración.
+Para obtener instrucciones, consulte [Configuración de indizadores](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html#configure-indexers-1) en la *Guía de configuración de Adobe Commerce*.
 
 ## No ejecutar instrucciones DDL en producción
 
-Evite ejecutar instrucciones DDL en el entorno de producción para evitar conflictos (como modificaciones y creaciones de tablas). El `setup:upgrade` El proceso de es una excepción.
+Evite ejecutar instrucciones DDL en el entorno de producción para evitar conflictos (como modificaciones y creaciones de tablas). El proceso `setup:upgrade` es una excepción.
 
 Si necesita ejecutar una instrucción DDL, ponga el sitio web en modo de mantenimiento y deshabilite cron (consulte las instrucciones para cambiar los índices de forma segura en la sección anterior).
 
@@ -97,7 +97,7 @@ Active el archivado de pedidos desde el administrador para reducir el espacio ne
 
 Consulte [Habilitar archivado](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-archive.html) en la documentación de Adobe Commerce Merchant.
 
-## Información adicional
+## Más información
 
 - [Motores de almacenamiento MySQL](https://dev.mysql.com/doc/refman/8.0/en/storage-engines.html)
 - [Requisitos previos de actualización de Adobe Commerce 2.3.5 para MariaDB](../maintenance/mariadb-upgrade.md)

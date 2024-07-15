@@ -4,7 +4,8 @@ description: Aprenda cómo y cuándo modificar el código principal de Adobe Com
 role: Developer, Architect
 feature: Best Practices
 last-substantial-update: 2023-12-8
-source-git-commit: ab02552939d595627f0de83b8508c7cd21777642
+exl-id: 32b3137d-fc00-4be8-ba02-5d8d48a51fe1
+source-git-commit: d47567a8d69ccdae3db01e964f1db12e8ae26717
 workflow-type: tm+mt
 source-wordcount: '1747'
 ht-degree: 0%
@@ -46,7 +47,7 @@ index 51b68411d40..ac4a3468322 100644
 
 #### Qué se puede cambiar con un parche
 
-Cualquier cosa. Literalmente, cualquier carácter dentro de cualquier archivo de destino puede cambiarse. Los parches no se limitan a ningún tipo de archivo o lenguaje de código en particular. Normalmente, utilizaría un parche para segmentar archivos dentro de la variable `vendor` directorio. 
+Cualquier cosa. Literalmente, cualquier carácter dentro de cualquier archivo de destino puede cambiarse. Los parches no se limitan a ningún tipo de archivo o lenguaje de código en particular. Normalmente, utilizaría un parche para los archivos de destino dentro del directorio `vendor`. 
 
 #### Cuándo usar un parche
 
@@ -69,7 +70,7 @@ Cabe señalar que (por lo general) la nueva clase PHP que reemplaza la clase PHP
 
 #### Declarar una preferencia
 
-Declarar una preferencia es un proceso bastante sencillo. Habría que añadir una sola línea de código a un `di.xml` dentro de un módulo. Esto se puede hacer a nivel global o dentro de cualquier &quot;área&quot; de Adobe Commerce, como `frontend`, `adminhtml`, `graphql`, `webapi_rest`, y `crontab`.
+Declarar una preferencia es un proceso bastante sencillo. Una sola línea de código necesitaría ser agregada a un archivo `di.xml` dentro de un módulo. Esto se puede hacer de forma global o en cualquier &quot;área&quot; de Adobe Commerce, como `frontend`, `adminhtml`, `graphql`, `webapi_rest` y `crontab`.
 
 ```xml
 <preference for="Magento\Elasticsearch7\SearchAdapter\Adapter" type="Vendor\Namespace\Adapter\AlgoliaElasticSearch7Adapter"/>
@@ -105,11 +106,11 @@ Las preferencias son una forma voraz de modificar el código y solo deben utiliz
 
 Un observador es el concepto de oyente de eventos, tal como se encuentra en muchas aplicaciones, plataformas, bibliotecas y lenguajes de codificación. El concepto no es exclusivo de la plataforma Adobe Commerce. Los observadores han estado en la plataforma desde los días del Magento 1 y se consideran una opción principal de cómo modificar el código principal y el código de terceros. 
 
-El código base principal y cualquier módulo de terceros pueden distribuir un evento en un lugar elegido del código. El observador, que se declara en un `events.xml` y escucha el evento enviado por su nombre, puede trabajar a nivel global o estar limitado a cualquier &quot;área&quot; de Adobe Commerce, como `frontend`, `adminhtml`, `graphql`, `webapi_rest`, y `crontab`.
+El código base principal y cualquier módulo de terceros pueden distribuir un evento en un lugar elegido del código. El observador, que está declarado en un archivo `events.xml` y escucha el evento enviado por su nombre, puede trabajar a nivel global o estar restringido a cualquier &quot;área&quot; de Adobe Commerce, como `frontend`, `adminhtml`, `graphql`, `webapi_rest` y `crontab`.
 
 #### Cómo declarar un observador
 
-Los observadores pueden configurarse en una configuración global o específica de área `events.xml` archivo.
+Los observadores se pueden configurar en un archivo `events.xml` global o de área específica.
 
 ```xml
     <event name="sales_model_service_quote_submit_before">
@@ -164,11 +165,11 @@ Además, otro factor limitante de los observadores es que el evento enviado solo
 
 ### Complemento
 
-Un complemento es un concepto flexible introducido en la plataforma de Adobe Commerce. Le permite interceptar, reemplazar y modificar cualquier método PHP público. Los complementos le permiten modificar los argumentos que van a un método antes de que se ejecute el método de destino, modificar el resultado después de ejecutar el método de destino o reemplazar completamente el método de destino. Puede modificar muchos métodos de una clase PHP dirigida dentro de un solo archivo de plugin. Además, puede usar el complemento `$subject` para ejecutar cualquier método público que exista en la clase PHP de destino.
+Un complemento es un concepto flexible introducido en la plataforma de Adobe Commerce. Le permite interceptar, reemplazar y modificar cualquier método PHP público. Los complementos le permiten modificar los argumentos que van a un método antes de que se ejecute el método de destino, modificar el resultado después de ejecutar el método de destino o reemplazar completamente el método de destino. Puede modificar muchos métodos de una clase PHP dirigida dentro de un solo archivo de plugin. Además, puede utilizar el argumento `$subject` para ejecutar cualquier método público que exista en la clase PHP de destino.
 
 #### Cómo declarar un complemento
 
-Los complementos se pueden configurar en una configuración global o específica de área `di.xml` archivo.
+Los complementos se pueden configurar en un archivo `di.xml` global o de área específica.
 
 ```xml
     <type name="Magento\Catalog\Api\CategoryRepositoryInterface">

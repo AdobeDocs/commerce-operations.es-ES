@@ -6,7 +6,7 @@ feature: Integration, Cache
 topic: Commerce, Performance
 source-git-commit: 76ccc5aa8e5e3358dc52a88222fd0da7c4eb9ccb
 workflow-type: tm+mt
-source-wordcount: '1143'
+source-wordcount: '1142'
 ht-degree: 0%
 
 ---
@@ -19,13 +19,14 @@ AEM Para reducir la latencia entre el editor y Adobe Commerce GraphQL al crear p
 
 ## Almacenamiento en caché de GraphQL en Adobe Commerce
 
-AEM Cuando el explorador o el editor del usuario llama a GraphQL de Adobe Commerce, ciertas llamadas se almacenan en caché en Fastly. Las consultas que se almacenan en caché son generalmente las que contienen datos no personales y no es probable que cambien a menudo. Son, por ejemplo: categorías, categoryList y products. Las que no se almacenan explícitamente en caché son las que cambian regularmente y si se almacenan en caché podrían suponer riesgos para los datos personales y las operaciones del sitio, por ejemplo consultas como cart y customerPaymentTokens.
+AEM Cuando el explorador o el editor del usuario llama a GraphQL de Adobe Commerce, se almacenan en caché determinadas llamadas
+en Fastly. Las consultas que se almacenan en caché son generalmente las que contienen datos no personales y no es probable que cambien a menudo. Son, por ejemplo: categorías, categoryList y products. Las que no se almacenan explícitamente en caché son las que cambian regularmente y si se almacenan en caché podrían suponer riesgos para los datos personales y las operaciones del sitio, por ejemplo consultas como cart y customerPaymentTokens.
 
 GraphQL le permite realizar varias consultas en una sola llamada. Es importante tener en cuenta que si especifica incluso una consulta que Adobe Commerce no almacena en caché con muchas otras que no se pueden almacenar en caché, Adobe Commerce omitirá la caché para todas las consultas de la llamada. Los desarrolladores deben tener esto en cuenta esto al combinar varias consultas para garantizar que las consultas potencialmente almacenables en caché no se omitan de forma involuntaria‡.
 
 >[!NOTE]
 >
-> Para obtener más información sobre las consultas almacenables en caché y no almacenables en caché, consulte Adobe Commerce [documentación para desarrolladores](https://devdocs.magento.com/guides/v2.4/graphql/caching.html).
+> Para obtener más información sobre las consultas almacenables en caché y no almacenables en caché, consulte la [documentación para desarrolladores de Adobe Commerce](https://devdocs.magento.com/guides/v2.4/graphql/caching.html).
 
 ## Tabla plana del catálogo
 
@@ -41,7 +42,7 @@ El blindaje de origen de Fastly se puede habilitar en la configuración del serv
 
 Una vez habilitado el blindaje de origen de Fastly, esto le permite activar también Fastly Image Optimizer. Cuando las imágenes del catálogo de productos se almacenan en Adobe Commerce, este servicio permite descargar todo el procesamiento de transformación de imágenes del catálogo de productos, que consume muchos recursos, en Rápido y fuera del origen de Adobe Commerce. Los tiempos de respuesta del usuario final también se mejoran para los tiempos de carga de la página, ya que las imágenes se transforman en la ubicación del perímetro, lo que elimina la latencia al reducir el número de solicitudes de vuelta al origen de Adobe Commerce.
 
-La optimización de imágenes de Fastly se puede habilitar mediante &quot;habilitar la optimización de imágenes profundas&quot; en la configuración de Fastly en la administración, aunque solo después de que se haya activado el escudo de origen. Encontrará más detalles sobre las configuraciones para la optimización de imágenes rápida en Adobe Commerce [documentación para desarrolladores](https://devdocs.magento.com/cloud/cdn/fastly-image-optimization.html).
+La optimización de imágenes de Fastly se puede habilitar mediante &quot;habilitar la optimización de imágenes profundas&quot; en la configuración de Fastly en la administración, aunque solo después de que se haya activado el escudo de origen. Encontrará más detalles sobre las configuraciones para la optimización de imágenes de Fastly en la [documentación para desarrolladores](https://devdocs.magento.com/cloud/cdn/fastly-image-optimization.html) de Adobe Commerce.
 
 ![Captura de pantalla de la configuración de optimización de imágenes de Fastly en el administrador de Adobe Commerce](../assets/commerce-at-scale/image-optimization.svg)
 
@@ -57,7 +58,7 @@ Si la instancia de Adobe Commerce espera una carga extrema, la activación del m
 
 Como guía, en entornos con carga normal, habilitar Slave Connections ralentiza el rendimiento en un 10-15 %. Sin embargo, en los clústeres con carga y tráfico intensos, existe un aumento del rendimiento de alrededor del 10-15 %. Por lo tanto, es importante cargar y probar el entorno con los niveles de tráfico esperados para evaluar si esta configuración sería beneficiosa para los tiempos de rendimiento bajo carga.
 
-Para habilitar/deshabilitar conexiones esclavas para mysql y redis debe editar su `.magento.env.yaml` para incluir lo siguiente:
+Para habilitar/deshabilitar las conexiones esclavas para mysql y redis, debe editar el archivo `.magento.env.yaml` para incluir lo siguiente:
 
 ```
 stage:
