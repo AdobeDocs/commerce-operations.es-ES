@@ -2,7 +2,7 @@
 title: Configurar una conexión de base de datos MySQL remota
 description: Siga estos pasos para configurar una conexión de base de datos remota para instalaciones locales de Adobe Commerce.
 exl-id: 5fe304bd-ff38-4066-a1fd-8937575e4de4
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '700'
 ht-degree: 0%
@@ -70,7 +70,7 @@ Para crear una conexión remota:
 
    La ubicación se muestra de forma similar a la siguiente:
 
-   ```terminal
+   ```
    Default options are read from the following files in the given order:
    /etc/my.cnf /etc/mysql/my.cnf /usr/etc/my.cnf ~/.my.cnf
    ```
@@ -138,7 +138,7 @@ mysql -u <local database username> -h <database server ip address> -p
 
 Si el monitor MySQL se muestra de la siguiente manera, la base de datos está lista para Adobe Commerce:
 
-```terminal
+```
 Welcome to the MySQL monitor.  Commands end with ; or \g.
 Your MySQL connection id is 213 Server version: 5.6.26 MySQL Community Server (GPL)
 

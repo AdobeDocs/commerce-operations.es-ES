@@ -3,7 +3,7 @@ title: Crear, editar o desbloquear una cuenta de administrador
 description: Siga estos pasos para administrar la cuenta de administrador de la aplicación de administración de Adobe Commerce.
 feature: Install, User Account
 exl-id: d87871a1-717d-4662-b84d-98a018518286
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '319'
 ht-degree: 0%
@@ -53,7 +53,7 @@ Ejemplo de uso:
 bin/magento admin:user:create --admin-firstname=John --admin-lastname=Doe --admin-email=j.doe@example.com --admin-user=j.doe --admin-password=A0b9%t3g
 ```
 
-```terminal
+```
 Created Magento administrator user named j.doe
 ```
 
@@ -63,7 +63,7 @@ Si no especifica ninguno de los parámetros requeridos, la aplicación pregunta 
 bin/magento admin:user:create
 ```
 
-```terminal
+```
 Admin user: John
 Admin password:
 Admin email: j.doe.young@example.com
@@ -71,7 +71,7 @@ Admin first name: John
 Admin last name: Doe Young
 ```
 
-```terminal
+```
 Created Magento administrator user named John
 ```
 
@@ -81,7 +81,7 @@ El siguiente ejemplo actualiza `first name`, `last name` y `password` de `j.doe`
 bin/magento admin:user:create --admin-firstname="John X" --admin-lastname="Doe X" --admin-email=j.doe@example.com --admin-user=j.doe --admin-password=A1234567
 ```
 
-```terminal
+```
 Created Magento administrator user named j.doe
 ```
 
@@ -99,13 +99,13 @@ Debe especificar el nombre de usuario del administrador. Ejemplo:
 bin/magento admin:user:unlock admin
 ```
 
-```terminal
+```
 The user account "admin" has been unlocked
 ```
 
 Si la cuenta no está desbloqueada o si se ha producido un problema, se muestra el siguiente mensaje:
 
-```terminal
+```
 The user account "admin" was not locked or could not be unlocked
 ```
 
@@ -113,6 +113,6 @@ Compruebe que el usuario es un administrador, que está activo y que la cuenta e
 
 Si la cuenta no existe, aparece el siguiente mensaje:
 
-```terminal
+```
 Couldn't find the user account "bob"
 ```

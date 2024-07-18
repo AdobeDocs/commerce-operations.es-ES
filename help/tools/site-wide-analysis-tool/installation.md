@@ -3,7 +3,7 @@ title: Guía de instalación
 description: Usa esta guía para instalar [!DNL Site-Wide Analysis Tool] para tu sitio web
 exl-id: ba36dc74-806d-49c5-b4d1-ba53ed4076fb
 feature: Configuration, Install
-source-git-commit: f72316b3baee52ef6b000afa281a2e146f560ead
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '1136'
 ht-degree: 0%
@@ -394,7 +394,7 @@ Si configuró el agente para que se ejecute con cron en su lugar, siga las sigui
 
 Puede ver el siguiente error si las claves de acceso no se analizan correctamente:
 
-```terminal
+```
 ERRO[2022-10-10 00:01:41] Error while refreshing token: error while getting jwt from magento: invalid character 'M' looking for beginning of value
 FATA[2022-12-10 20:38:44] bad http status from https://updater.supportinsights.adobe.com/linux-amd64.json: 403 Forbidden
 ```

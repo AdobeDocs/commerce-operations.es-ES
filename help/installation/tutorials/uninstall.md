@@ -2,7 +2,7 @@
 title: Desinstalar o volver a instalar Adobe Commerce
 description: Siga estos pasos para desinstalar y reinstalar las instalaciones locales de Adobe Commerce.
 exl-id: fbaeee2c-8da0-4c89-a6d1-882a65014520
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '265'
 ht-degree: 0%
@@ -39,7 +39,7 @@ bin/magento setup:uninstall
 
 El siguiente mensaje se muestra para confirmar que la desinstalación se ha realizado correctamente:
 
-```terminal
+```
 [SUCCESS]: Magento uninstallation complete.
 ```
 

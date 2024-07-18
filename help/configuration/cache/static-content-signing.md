@@ -3,7 +3,7 @@ title: Caché de contenido estático
 description: Obtenga información sobre la firma de contenido estático y cómo habilitar o deshabilitar la función.
 feature: Configuration, Cache, SCD
 exl-id: b54ceea2-b3a1-4dbb-ba87-743f2af0d2fb
-source-git-commit: d099d60bcf3c960b2e40b48c386041d8865cfb50
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '462'
 ht-degree: 0%
@@ -26,7 +26,7 @@ Commerce lo consigue añadiendo una versión de implementación a la dirección 
 
 El siguiente es un ejemplo de una dirección URL firmada con una versión:
 
-```terminal
+```
 http://magento2.com/pub/static/version1475604434/frontend/Magento/luma/en_US/images/logo.svg
 ```
 

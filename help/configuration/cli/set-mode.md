@@ -2,7 +2,7 @@
 title: Definición del modo de funcionamiento
 description: Obtenga información sobre cómo configurar los modos de funcionamiento de Adobe Commerce.
 exl-id: 62d183fa-d4ff-441d-b8bd-64ef5ae10978
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '385'
 ht-degree: 0%
@@ -25,7 +25,7 @@ El modo de producción tiene un mejor rendimiento porque los archivos de vista e
 
 Cuando cambie al modo de desarrollo o producción, borraremos el contenido de los siguientes directorios:
 
-```terminal
+```
 var/cache
 generated/metadata
 generated/code
@@ -54,7 +54,7 @@ bin/magento deploy:mode:show
 
 Aparece un mensaje similar al siguiente:
 
-```terminal
+```
 Current application mode: {mode}. (Note: Environment variables may override this value.)
 ```
 
@@ -86,7 +86,7 @@ bin/magento deploy:mode:set production
 
 Se muestran mensajes similares a los siguientes:
 
-```terminal
+```
 Enabled maintenance mode
 Requested languages: en_US
 === frontend -> Magento/luma -> en_US ===
@@ -143,7 +143,7 @@ Cuando cambie del modo de producción al modo de desarrollador, debe borrar las 
 
    Se muestra el siguiente mensaje:
 
-   ```terminal
+   ```
    Enabled developer mode.
    ```
 
@@ -155,7 +155,7 @@ bin/magento deploy:mode:set default
 
 Se muestra el siguiente mensaje:
 
-```terminal
+```
 Enabled default mode.
 ```
 

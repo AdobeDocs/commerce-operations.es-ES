@@ -2,7 +2,7 @@
 title: Establecer el valor de los parámetros de arranque
 description: Obtenga información sobre cómo establecer parámetros de bootstrap para la aplicación de Commerce.
 exl-id: 4e1e4e5e-e1bc-49a5-8a2a-2e6b91ca9175
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '568'
 ht-degree: 1%
@@ -35,7 +35,7 @@ Puede especificar variables de bootstrap como variables de entorno de todo el si
 
 Por ejemplo, puede usar la variable de entorno del sistema `MAGE_PROFILER` para especificar un modo de la siguiente manera:
 
-```terminal
+```
 MAGE_PROFILER={firebug|csv|<custom value>}
 ```
 
@@ -80,7 +80,7 @@ Puede modificar `.htaccess` en cualquiera de las siguientes ubicaciones, según 
 
 1. Establezca el valor de `MAGE_PROFILER` en cualquiera de las siguientes opciones:
 
-   ```terminal
+   ```
    firebug
    csvfile
    <custom value>

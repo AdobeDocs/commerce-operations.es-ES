@@ -2,7 +2,7 @@
 title: Paquete  [!DNL JavaScript] avanzado
 description: Obtenga información sobre cómo el paquete de JavaScript puede reducir el tamaño y la frecuencia de las solicitudes de servidor.
 exl-id: 81a313f8-e541-4da6-801b-8bbd892d6252
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: f9f8aea1a77ef062d7076a61bbafd12433f15edf
 workflow-type: tm+mt
 source-wordcount: '2134'
 ht-degree: 0%
@@ -212,7 +212,7 @@ phantomjs deps.js <i>url-to-specific-page</i> &gt; <i>text-file-representation-p
 
 Por ejemplo, aquí hay cuatro páginas de la tienda de muestras con temas de Luma que representan los cuatro tipos de página que utilizaremos para crear nuestros cuatro paquetes (página principal, categoría, producto, carro de compras):
 
-```terminal
+```
 phantomjs deps.js http://m2.loc/ > bundle/homepage.txt
 phantomjs deps.js http://m2.loc/women/tops-women/jackets-women.html > bundle/category.txt
 phantomjs deps.js http://m2.loc/beaumont-summit-kit.html > bundle/product.txt
@@ -234,7 +234,7 @@ Este comando (utilizado en el script [!DNL PhantomJS]) crea la misma lista de de
 
 Después de combinar las dependencias [!DNL RequireJS] en archivos de texto de tipo de página, puede utilizar el siguiente comando en cada archivo de dependencia de tipo de página para reemplazar las comas de los archivos por líneas nuevas:
 
-```terminal
+```bash
 sed -i -e $'s/,/\\\n/g' bundle/category.txt
 sed -i -e $'s/,/\\\n/g' bundle/homepage.txt
 sed -i -e $'s/,/\\\n/g' bundle/product.txt
@@ -243,7 +243,7 @@ sed -i -e $'s/,/\\\n/g' bundle/product.txt
 
 También debe quitar todos los mixins de cada archivo porque los mixins duplican dependencias. Utilice el siguiente comando en cada archivo de dependencia:
 
-```terminal
+```bash
 sed -i -e 's/mixins\!.*$//g' bundle/homepage.txt
 sed -i -e 's/mixins\!.*$//g' bundle/category.txt
 sed -i -e 's/mixins\!.*$//g' bundle/product.txt
@@ -262,7 +262,7 @@ sort bundle/*.txt |uniq -c |sort -n
 
 Este comando combina y ordena las dependencias encontradas en los archivos `bundle/*.txt`.  El resultado también muestra el número de archivos que contienen cada dependencia:
 
-```terminal
+```
 1 buildTools,
 1 jquery/jquery.parsequery,
 1 jsbuild,
@@ -317,7 +317,7 @@ bash deps-map.sh
 
 El resultado de este script, aplicado a nuestros tres tipos de página de ejemplo, debería tener un aspecto similar al siguiente (pero mucho más largo):
 
-```terminal
+```
 bundle/product.txt   -->   buildTools,
 bundle/category.txt  -->   jquery/jquery.parsequery,
 bundle/product.txt   -->   jsbuild,
@@ -427,7 +427,7 @@ La lista del contenido del nuevo directorio de paquetes puede tener este aspecto
 ll pub/static/frontend/Magento/luma/en_US/bundles
 ```
 
-```terminal
+```
 total 1900
 drwxr-xr-x  2 root root    4096 Mar 28 11:24 ./
 drwxr-xr-x 70 root root    4096 Mar 28 11:24 ../

@@ -2,7 +2,7 @@
 title: Informes de dependencias
 description: Cree informes que muestren los totales de las dependencias de módulo, circular y marco.
 exl-id: b7a32fe1-71c5-495f-8276-242503fb50ae
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '240'
 ht-degree: 0%
@@ -51,7 +51,7 @@ Si no se pasa ningún directorio o nombre de archivo como argumento, se utiliza 
 
 El siguiente es una parte del resultado de un informe de dependencias de módulo de ejemplo:
 
-```terminal
+```
 "","All","Hard","Soft"
 "Total number of dependencies","602","587","15"
 
@@ -75,7 +75,7 @@ El siguiente es una parte del resultado de un informe de dependencias de módulo
 
 El siguiente es una parte del resultado de un ejemplo de informe de dependencias circulares:
 
-```terminal
+```
 "Circular dependencies:","Total number of chains"
 "","848"
 
@@ -101,7 +101,7 @@ El siguiente es una parte del resultado de un ejemplo de informe de dependencias
 
 A continuación se muestra una parte del resultado de un informe de dependencias de marco de trabajo de ejemplo:
 
-```terminal
+```
 "Dependencies of framework:","Total number"
 "","111"
 

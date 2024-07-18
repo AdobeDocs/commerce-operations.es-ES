@@ -3,7 +3,7 @@ title: Usar memcached para el almacenamiento de sesión
 description: Obtenga información acerca del uso de memcached para el almacenamiento de sesiones de Commerce.
 feature: Configuration, Cache, Storage
 exl-id: 24077929-e732-4579-8d7d-717a4902fc64
-source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '281'
 ht-degree: 0%
@@ -72,7 +72,7 @@ Commerce utiliza memcached para el almacenamiento de sesión, pero no para el al
 
    Los resultados son similares a los siguientes:
 
-   ```terminal
+   ```
    STAT items:3:number 1
    STAT items:3:age 7714
    STAT items:3:evicted 0

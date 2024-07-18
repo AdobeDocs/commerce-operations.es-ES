@@ -2,7 +2,7 @@
 title: Ejecutar las utilidades de soporte
 description: Solucione los problemas del proyecto de Commerce mediante la utilidad de soporte integrada.
 exl-id: 021b795f-e00d-43b5-9cbb-5b57a4795be7
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '461'
 ht-degree: 0%
@@ -81,7 +81,7 @@ Donde:
 
 Los datos confidenciales incluyen información del cliente de las siguientes tablas de base de datos:
 
-```terminal
+```
 'customer_entity',
 'customer_entity_varchar',
 'customer_address_entity',
@@ -100,7 +100,7 @@ Una vez finalizado el comando, proporcione la copia de seguridad de la base de d
 
 Proporcionamos comandos que muestran las rutas a las utilidades requeridas por el Recopilador de datos y la línea de comandos. Puede utilizar estos comandos, por ejemplo, si se muestran errores como los siguientes en Admin o en la línea de comandos:
 
-```terminal
+```
 Utility lsof not found
 ```
 
@@ -119,7 +119,7 @@ Ejecute los siguientes comandos en el orden mostrado para mostrar las rutas a la
 
 A continuación se muestra un ejemplo:
 
-```terminal
+```
    gzip => /bin/gzip
    lsof => /usr/sbin/lsof
    mysqldump => /usr/bin/mysqldump

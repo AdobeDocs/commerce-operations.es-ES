@@ -3,7 +3,7 @@ title: Configuración de Apache para el motor de búsqueda
 description: Siga estos pasos para configurar un motor de búsqueda con el servidor web Apache para instalaciones locales de Adobe Commerce.
 feature: Install, Search
 exl-id: b35c95a7-0c00-48e5-b37d-7c9e17feebec
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '643'
 ht-degree: 0%
@@ -72,7 +72,7 @@ En esta sección se explica cómo configurar un proxy mediante un host virtual.
 
    Se muestran mensajes similares a los siguientes para indicar que se ha realizado correctamente:
 
-   ```terminal
+   ```
    HTTP/1.1 200 OK
    Date: Tue, 23 Feb 2019 20:38:03 GMT
    Content-Type: application/json; charset=UTF-8

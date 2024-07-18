@@ -2,7 +2,7 @@
 title: Implementación de archivos de vista estática
 description: Aprenda a escribir archivos estáticos en el sistema de archivos de Commerce durante el modo de producción.
 exl-id: 51954738-b999-4982-954b-70f7a70c5a17
-source-git-commit: 0a72bc492dfec0a9014a518282a97ab21e59f96d
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '1124'
 ht-degree: 0%
@@ -93,7 +93,7 @@ bin/magento setup:static-content:deploy en_US --exclude-theme Magento/luma --no-
 
 Salida de ejemplo:
 
-```terminal
+```
 Requested languages: en_US
 Requested areas: frontend, adminhtml
 Requested themes: Magento/blank, Magento/backend
@@ -132,7 +132,7 @@ bin/magento setup:static-content:deploy --area frontend --no-fonts --theme Magen
 
 Salida de ejemplo:
 
-```terminal
+```
 Requested languages: en_US
 Requested areas: frontend
 Requested themes: Magento/luma
@@ -162,7 +162,7 @@ Para ello, siga los siguientes pasos:
 
 **Síntoma**: se muestra el siguiente error al ejecutar la herramienta de implementación de archivos de vista estática:
 
-```terminal
+```
 ERROR: You need to install the Commerce application before running this utility.
 ```
 

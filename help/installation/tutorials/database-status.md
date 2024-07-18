@@ -2,7 +2,7 @@
 title: Comprobar el estado de la base de datos
 description: Siga estos pasos para comprobar el estado de la base de datos de Adobe Commerce.
 exl-id: 33d9b30a-4504-4955-b11a-0a642f23209b
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
 source-wordcount: '104'
 ht-degree: 3%
@@ -25,7 +25,7 @@ Este comando no tiene argumentos ni opciones.
 
 Salida de ejemplo:
 
-```terminal
+```
 All modules are up to date.
 ```
 
