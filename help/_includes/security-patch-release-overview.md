@@ -1,7 +1,7 @@
 ---
-source-git-commit: d532402e2d65a1f34558fc3c283d4291be5b006b
+source-git-commit: 50b87e6f2f604d195c2d079bd18451754edaa11c
 workflow-type: tm+mt
-source-wordcount: '184'
+source-wordcount: '188'
 ht-degree: 0%
 
 ---
@@ -15,4 +15,4 @@ Con las versiones de parches de seguridad, puede mantener su sitio más seguro s
 
 Cada versión del parche de seguridad se basa en la versión completa anterior del parche. Contiene correcciones de calidad y seguridad de versiones anteriores de parches y correcciones de seguridad creadas entre la versión anterior completa de parches y la versión de parches de seguridad.
 
-Para obtener instrucciones sobre cómo descargar y aplicar parches de seguridad, consulte [Instalación rápida](../installation/composer.md#example---security-patch).
+Para obtener instrucciones sobre cómo descargar y aplicar parches de seguridad, consulte [Realizar y actualizar](../installation/composer.md#example---security-patch) en la _Guía de actualización_.
