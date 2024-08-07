@@ -2,9 +2,9 @@
 title: GraphQL Application Server
 description: Siga estas instrucciones para activar GraphQL Application Server en la implementación de Adobe Commerce.
 exl-id: 9b223d92-0040-4196-893b-2cf52245ec33
-source-git-commit: f9f8aea1a77ef062d7076a61bbafd12433f15edf
+source-git-commit: 620be59a5b66bd4f55997951c59e473ac14a5c21
 workflow-type: tm+mt
-source-wordcount: '2088'
+source-wordcount: '2085'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Commerce GraphQL Application Server permite a Adobe Commerce mantener el estado entre las solicitudes de API de Commerce GraphQL. GraphQL Application Server, que se basa en la extensión Swoole, funciona como un proceso con subprocesos de trabajo que administran el procesamiento de solicitudes. Al preservar un estado de aplicación de arranque entre las solicitudes de API de GraphQL, GraphQL Application Server mejora la gestión de solicitudes y el rendimiento general del producto. Las solicitudes de API son mucho más eficientes.
 
-GraphQL Application Server solo está disponible para Adobe Commerce. No está disponible para el Magento Open Source. Debe [enviar un ticket de asistencia de Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) para habilitar GraphQL Application Server en proyectos Pro.
+GraphQL Application Server solo está disponible para Adobe Commerce. No está disponible para el Magento Open Source. Para los proyectos de Cloud Pro, debe [enviar un vale de soporte técnico de Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) para habilitar el servidor de aplicaciones de GraphQL.
 
 >[!NOTE]
 >
@@ -30,12 +30,13 @@ La transición de la lógica de gestión de solicitudes a un bucle de eventos de
 
 ## Ventajas
 
-El servidor de aplicaciones de GraphQL permite que Adobe Commerce mantenga el estado entre solicitudes consecutivas de la API de Commerce GraphQL. Compartir el estado de la aplicación entre solicitudes mejora la eficacia de las solicitudes de API al minimizar la sobrecarga de procesamiento y optimizar la administración de solicitudes. Como resultado, el tiempo de respuesta de las solicitudes de GraphQL se puede reducir hasta un 30 %.
+El servidor de aplicaciones de GraphQL permite que Adobe Commerce mantenga el estado entre solicitudes consecutivas de la API de Commerce GraphQL. Compartir el estado de la aplicación entre solicitudes mejora la eficacia de las solicitudes de API al minimizar la sobrecarga de procesamiento y optimizar la administración de solicitudes. Como resultado, el tiempo de respuesta de las solicitudes de GraphQL se puede reducir hasta en un 30 %.
 
 ## Requisitos del sistema
 
 La ejecución de GraphQL Application Server requiere lo siguiente:
 
+* Commerce versión 2.4.7+
 * PHP 8.2 o superior
 * Instalación de la extensión PHP v5+
 * RAM y CPU adecuadas en función de la carga esperada
@@ -125,11 +126,11 @@ Complete los siguientes pasos antes de implementar GraphQL Application Server en
 
 >[!NOTE]
 >
->Asegúrese de que todas las configuraciones personalizadas del archivo raíz `.magento.app.yaml` se migren correctamente al archivo `application-server/.magento/.magento.app.yaml`. Una vez agregado el archivo `application-server/.magento/.magento.app.yaml` al proyecto, debe mantenerlo además del archivo raíz `.magento.app.yaml`. Por ejemplo, si necesita [configurar rabbitmq](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/rabbitmq) o [administrar propiedades web](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/properties/web-property), también debe agregar la misma configuración a `application-server/.magento/.magento.app.yaml`.
+>Asegúrese de que todas las configuraciones personalizadas del archivo raíz `.magento.app.yaml` se migren correctamente al archivo `application-server/.magento/.magento.app.yaml`. Una vez agregado el archivo `application-server/.magento/.magento.app.yaml` al proyecto, debe mantenerlo además del archivo raíz `.magento.app.yaml`. Por ejemplo, si necesita [configurar el servicio RabbitMQ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/rabbitmq) o [administrar propiedades web](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/properties/web-property), también debe agregar la misma configuración a `application-server/.magento/.magento.app.yaml`.
 
 ### Implementar proyectos iniciales
 
-Después de completar los [pasos](#before-you-begin-a-cloud-starter-deployment) de habilitación, inserte los cambios en el repositorio de Git para implementar GraphQL Application Server:
+Después de completar los [pasos](#before-you-begin-a-cloud-starter-deployment) de habilitación, inserte los cambios en el repositorio Git para implementar GraphQL Application Server:
 
 ```bash
 git push
@@ -182,7 +183,7 @@ Complete los siguientes pasos antes de habilitar el módulo `ApplicationServer`:
 
 #### Configuración De Nginx
 
-Su implementación específica de Commerce determina cómo configurar Nginx. En general, el archivo de configuración Nginx se denomina de forma predeterminada `nginx.conf` y se coloca en uno de estos directorios: `/usr/local/nginx/conf`, `/etc/nginx` o `/usr/local/etc/nginx`. Consulte [Guía para principiantes](https://nginx.org/en/docs/beginners_guide.html) para obtener más información sobre cómo configurar Nginx.
+Su implementación específica de Commerce determina cómo configurar Nginx. En general, el archivo de configuración Nginx se denomina de forma predeterminada `nginx.conf` y se coloca en uno de estos directorios: `/usr/local/nginx/conf`, `/etc/nginx` o `/usr/local/etc/nginx`. Consulte la _[Guía para principiantes](https://nginx.org/en/docs/beginners_guide.html)_ para obtener más información sobre cómo configurar Nginx.
 
 Ejemplo de configuración de Nginx:
 
@@ -292,7 +293,7 @@ GraphQL Application Server agrega el encabezado de respuesta `X-Backend` con el 
 
 ### Confirmar la compatibilidad de extensiones y personalizaciones
 
-Los desarrolladores y comerciantes de extensiones deben comprobar primero que su código de extensión y personalización cumple las directrices técnicas descritas en [Directrices técnicas](https://developer.adobe.com/commerce/php/coding-standards/technical-guidelines/).
+Los desarrolladores y comerciantes de extensiones deben comprobar primero que su código de personalización y extensión cumple las directrices descritas en _[Directrices técnicas](https://developer.adobe.com/commerce/php/coding-standards/technical-guidelines/)_.
 
 Tenga en cuenta estas directrices durante la evaluación del código:
 
@@ -324,11 +325,11 @@ Los procedimientos para desactivar GraphQL Application Server varían en funció
 1. Convierta en comentario la sección `/graphql` del archivo `nginx.conf` que agregó al habilitar GraphQL Application Server.
 1. Reinicie nginx.
 
-Este método de deshabilitar GraphQL Application Server puede resultar útil para probar o comparar rápidamente el rendimiento.
+Este método de deshabilitar GraphQL Application Server puede resultar útil para probar o comparar el rendimiento rápidamente.
 
 ### Confirme que GraphQL Application Server está desactivado.
 
-Para confirmar que `php-fpm` está procesando las solicitudes de GraphQL en lugar de GraphQL Application Server, escriba este comando: `ps aux | grep php`.
+Para confirmar que `php-fpm` está procesando solicitudes de GraphQL en lugar de GraphQL Application Server, escriba este comando: `ps aux | grep php`.
 
 Después de deshabilitar GraphQL Application Server:
 
@@ -343,11 +344,11 @@ Los desarrolladores de extensiones pueden ejecutar dos pruebas de integración p
 
 `GraphQlStateTest` detecta el estado en objetos compartidos que no deben reutilizarse para varias solicitudes.
 
-Esta prueba está diseñada para detectar cambios de estado en los objetos de servicio producidos por `ObjectManager`. La prueba ejecuta consultas de GraphQL idénticas dos veces y compara el estado del objeto de servicio antes y después de la segunda consulta.
+Esta prueba está diseñada para detectar cambios de estado en los objetos de servicio que produce `ObjectManager`. La prueba ejecuta consultas de GraphQL idénticas dos veces y compara el estado del objeto de servicio antes y después de la segunda consulta.
 
 #### Errores de GraphQlStateTest y posible corrección
 
-* **No se puede agregar, omitir ni filtrar una lista**. Si se produce un error que sugiere que no es seguro agregar, omitir o filtrar una lista, considere si la clase se puede refactorizar de una manera compatible con versiones anteriores para utilizar las fábricas de las clases de servicio que tienen estado mutable.
+* **No se puede agregar, omitir ni filtrar una lista**. Si ve un error acerca de agregar, omitir o filtrar una lista, considere si puede refactorizar la clase de una manera compatible con versiones anteriores para utilizar las fábricas de clases de servicio que tienen estado mutable.
 
 * **La clase muestra un estado mutable**. Si la propia clase muestra un estado mutable, intente reescribir el código para evitar este estado. Si el estado mutable es necesario por motivos de rendimiento, implemente `ResetAfterRequestInterface` y use `_resetState()` para restablecer el objeto a su estado construido inicial.
 
@@ -369,11 +370,11 @@ Ejecute `GraphQlStateTest` ejecutando `vendor/bin/phpunit -c $(pwd)/dev/tests/in
 
 ### Pruebas funcionales
 
-Los desarrolladores de extensiones deben ejecutar pruebas funcionales de WebAPI para GraphQL, así como cualquier prueba funcional automática o manual personalizada para GraphQL, al implementar GraphQL Application Server. Estas pruebas funcionales ayudan a los desarrolladores a identificar posibles errores o problemas de compatibilidad.
+Al implementar GraphQL Application Server, los desarrolladores de extensiones deben ejecutar pruebas funcionales de WebAPI y cualquier prueba funcional automática o manual personalizada para GraphQL. Estas pruebas funcionales ayudan a los desarrolladores a identificar posibles errores o problemas de compatibilidad.
 
 #### Modo de monitor de estado
 
-Al ejecutar pruebas funcionales (o pruebas manuales), el servidor de aplicaciones puede ejecutarse con `--state-monitor mode` habilitado para ayudar a encontrar clases en las que el estado se esté reutilizando de forma involuntaria. Inicie Application Server normalmente, excepto si agrega el parámetro `--state-monitor`.
+Al ejecutar pruebas funcionales (o pruebas manuales), GraphQL Application Server puede ejecutarse con `--state-monitor mode` habilitado para ayudar a encontrar clases en las que el estado se esté reutilizando de forma involuntaria. Inicie Application Server normalmente, excepto si agrega el parámetro `--state-monitor`.
 
 ```
 bin/magento server:run --state-monitor
@@ -388,7 +389,7 @@ Ejemplos:
 /var/workspace/var/tmp/StateMonitor-junit-2024-04-10T18:50:39Z-oreUco.xml
 ```
 
-Estos archivos se pueden inspeccionar con cualquier herramienta que utilice para ver XML o JSON, que mostrarán las propiedades modificadas de los objetos de servicio como lo hace GraphQlStateTest. El modo `--state-monitor` utiliza la misma lista de omisión y lista de filtros que GraphQlStateTest.
+Estos archivos se pueden inspeccionar con cualquier herramienta que utilice para ver XML o JSON que muestre las propiedades modificadas de los objetos de servicio, como hace `GraphQlStateTest`. El modo `--state-monitor` utiliza la misma lista de omisión y lista de filtros que GraphQlStateTest.
 
 >[!NOTE]
 >
@@ -396,4 +397,4 @@ Estos archivos se pueden inspeccionar con cualquier herramienta que utilice para
 
 >[!NOTE]
 >
->`--state-monitor` no es compatible con las versiones de PHP `8.3.0` - `8.3.4` debido a un error en el recolector de elementos no utilizados de PHP. Si usa PHP 8.3, debe actualizar a `8.3.5` o posterior para poder usar esta característica.
+>`--state-monitor` no es compatible con las versiones de PHP `8.3.0` - `8.3.4` debido a un error en el recolector de elementos no utilizados de PHP. Si usa PHP 8.3, debe actualizar a `8.3.5` o posterior para usar esta característica.
