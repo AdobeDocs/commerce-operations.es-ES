@@ -2,9 +2,9 @@
 title: Notas de la versión de Adobe Commerce 2.4.7 Security Patch
 description: Obtenga información acerca de las correcciones de errores de seguridad, las mejoras de seguridad y otras actualizaciones relacionadas con la seguridad incluidas en las versiones de parches de seguridad para Adobe Commerce 2.4.7.
 exl-id: 38e5632b-c795-47d8-89dd-26bbaeb34e67
-source-git-commit: 2269c99908c0f8292ad62bd5837b1b8cebd50cb3
+source-git-commit: 3a2d104f0a689ac3715af302d470a1660857543c
 workflow-type: tm+mt
-source-wordcount: '238'
+source-wordcount: '283'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,21 @@ ht-degree: 0%
 
 {{$include /help/_includes/security-patch-release-notes-intro.md}}
 
-## Adobe Commerce 2.4.7-p1
+## 2,4,7-p2
+
+La versión de seguridad de Adobe Commerce 2.4.7-p2 proporciona correcciones de errores de seguridad para vulnerabilidades identificadas en versiones anteriores de 2.4.7.
+
+Para obtener la información más reciente sobre la corrección de errores de seguridad, consulte [Boletín de seguridad del Adobe APSB24-61](https://helpx.adobe.com/security/products/magento/apsb24-61.html).
+
+### Características destacadas
+
+{{$include /help/_includes/release-notes/2024-08/security.md}}
+
+### Revisiones incluidas en esta versión
+
+{{$include /help/_includes/release-notes/2024-08/hotfixes-included.md}}
+
+## 2.4.7-p1
 
 La versión de seguridad de Adobe Commerce 2.4.7-p1 proporciona correcciones de errores de seguridad para vulnerabilidades que se han identificado en versiones anteriores de 2.4.7.
 
@@ -23,7 +37,9 @@ Para obtener la información más reciente sobre la corrección de errores de se
 
 {{$include /help/_includes/release-notes/2024-06/hotfixes-not-included.md}}
 
-### Aspectos destacados de seguridad
+### Características destacadas
+
+Esta versión incluye los siguientes aspectos destacados:
 
 * **Actualizar la configuración de contraseña de un solo uso [OTP](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/2fa/security-two-factor-authentication#google) para Google Authenticator**: esta actualización es necesaria para resolver un error que se introdujo mediante un [cambio incompatible con versiones anteriores](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/highlights/#new-system-configuration-validation-for-two-factor-authentication-otp_window-value) en 2.4.7. La descripción del campo **[!UICONTROL OTP Window]** ahora proporciona una explicación precisa de la configuración y el valor predeterminado se ha cambiado de `1` a `29`.
 

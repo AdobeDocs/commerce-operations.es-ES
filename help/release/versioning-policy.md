@@ -2,9 +2,9 @@
 title: Directiva de versión
 description: Obtenga información acerca de los distintos tipos de versiones de Adobe Commerce, incluidos los parches menores, los parches, los parches de seguridad, las funciones, las revisiones, los parches individuales y los parches personalizados.
 exl-id: 61a83de6-6a7b-4a88-8fff-1638b4fe472a
-source-git-commit: 1eaf2329c16e6dbe3e93cb7fff3a6920b4b8379d
+source-git-commit: b5d120893668f4315e289a204649270db4f7a6bc
 workflow-type: tm+mt
-source-wordcount: '621'
+source-wordcount: '638'
 ht-degree: 0%
 
 ---
@@ -54,9 +54,9 @@ Las versiones de disponibilidad general previas de las funciones de Adobe Commer
 
 Las Versiones de Beta pueden contener defectos y se proporcionan &quot;TAL CUAL&quot; sin garantía de ningún tipo. Adobe no tendrá ninguna obligación de mantener, corregir, actualizar, cambiar, modificar o apoyar de otro modo (a través de los Servicios de Soporte de Adobe o de otro modo) las Versiones de Beta. Se aconseja a los clientes que tengan cuidado y no dependan en modo alguno del correcto funcionamiento o rendimiento de las Versiones de Beta y/o de la documentación o los materiales adjuntos. Por lo tanto, cualquier uso de las Versiones de Beta es bajo el propio riesgo del cliente.
 
-## Extensibilidad, infraestructura y versión de servicios
+## Funciones, infraestructura en la nube y versión de extensibilidad
 
-Versiones de funcionalidades que contienen nuevas funciones y actualizaciones de funcionalidades que se entregan como servicios independientes, independientes de las versiones de parches. Algunos ejemplos son la tecnología de extensibilidad como API Mesh and Eventing, productos SaaS como Product Recommendations y Live Search, módulos independientes como B2B y PWA Studio y actualizaciones de nuestra infraestructura y servicios de alojamiento en la nube.
+La infraestructura de la nube y las versiones de funciones contienen nuevas funciones y actualizaciones de funciones que se entregan como servicios independientes, independientes de las versiones de parches. Algunos ejemplos son las actualizaciones de nuestros servicios e infraestructura de alojamiento en la nube, productos B2B, SaaS (servicio de catálogo, conexión de datos, Recommendations de producto y Live Search) y tecnología de extensibilidad (malla de API, kit de inicio de integración y eventos).
 
 ## Revisión
 
@@ -74,12 +74,10 @@ Los parches individuales contienen correcciones de calidad de bajo impacto para 
 >
 >Los parches individuales no contienen cambios incompatibles con versiones anteriores.
 
+## Parche aislado
+
+Contiene una corrección independiente que se incluye en el último parche de solo seguridad o en un próximo parche de solo seguridad, que se lanzará por separado para una implementación más rápida.
+
 ## Parche personalizado
 
 Creado por personal que no es de Adobe para solucionar un problema o modificar el código de Adobe Commerce por varios motivos. Los parches personalizados se entregan a través de la [Herramienta de parches de calidad](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html).
-
-## Temas relacionados
-
-- [Creación de versiones](https://developer.adobe.com/commerce/php/development/versioning/)
-- [Próximas versiones](schedule.md)
-- [Política de ciclo de vida de software](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
