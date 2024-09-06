@@ -2,9 +2,9 @@
 title: Modelo operativo y de seguridad de responsabilidad compartida
 description: Obtenga información sobre las responsabilidades de seguridad de cada parte involucrada en su proyecto de infraestructura de Adobe Commerce en la nube.
 exl-id: f3cc1685-e469-4e30-b18e-55ce10dd69ce
-source-git-commit: 76aafb88855f7f41db8e57b06cf0e82370b57302
+source-git-commit: 9d0ab29be70c5638296694f90755fedac41b6a77
 workflow-type: tm+mt
-source-wordcount: '2802'
+source-wordcount: '2791'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ El Adobe es responsable de la seguridad y disponibilidad de Adobe Commerce en el
 - Configuración de servidores de seguridad perimetrales y de servidor
 - Conexión y configuración de Adobe Commerce en el repositorio de la infraestructura en la nube
 - Definir, probar, implementar y documentar planes de recuperación ante desastres (DR) para las áreas dentro del ámbito de responsabilidad de Adobe
-- Definición de reglas de firewall de aplicaciones web de plataforma global (WAF)
+- Definición de reglas de cortafuegos de aplicaciones web de plataforma global (WAF)
 - Protección del sistema operativo (SO)
 - Implementación y mantenimiento de la integración de soluciones de red de distribución de contenido (CDN) y administración del rendimiento de las aplicaciones (APM) con Adobe Commerce en la infraestructura en la nube
 - Emisión de actualizaciones periódicas de seguridad y de otro tipo para el código de infraestructura central de Adobe Commerce en la nube (la aplicación de parches es responsabilidad del comerciante)
@@ -51,13 +51,13 @@ El Adobe es responsable de la seguridad y disponibilidad de Adobe Commerce en el
 - Monitorización de las operaciones de la plataforma y asistencia las 24 horas del día y los 7 días de la semana para Adobe Commerce en comerciantes de infraestructura en la nube
 - Aprovisionamiento de los entornos de producción y ensayo
 - Evaluación de posibles amenazas de seguridad para las operaciones e infraestructura de la plataforma
-- Escalar la computación, el almacenamiento, la red y otros recursos, tal como se describe en el contrato de nivel de servicio (SLA) con el comerciante
+- Escalar la computación, el almacenamiento, la cuadrícula y otros recursos, tal como se describe en el acuerdo de nivel de servicio (SLA) con el comerciante
 - Configuración de DNS (Adobe Commerce solo en la infraestructura de la plataforma de la nube)
 - Prueba de la plataforma para detectar vulnerabilidades de seguridad
 
 Adobe mantiene la certificación PCI para la infraestructura y los servicios utilizados para la solución Adobe Commerce.  Los comerciantes son responsables de la conformidad de los procesos de código personalizado, sistema y red, y de la organización.
 
-El Adobe también garantiza la disponibilidad de la infraestructura del comerciante según lo acordado en el SLA aplicable.
+El Adobe también garantiza la disponibilidad de la infraestructura del comerciante según lo acordado en la SLA aplicable.
 
 ## Responsabilidades del comerciante
 
@@ -70,12 +70,12 @@ El comerciante es responsable de seguir las prácticas recomendadas de seguridad
 - Diseñar, asignar temas, instalar, integrar y proteger la solución de Adobe Commerce personalizada en infraestructura en la nube, incluidas todas las extensiones y el código personalizados
 - Concesión y revocación del acceso de usuario a la instancia de Adobe Commerce del comerciante en la configuración, aplicación y plataforma de la infraestructura en la nube
 - Gestión de los problemas de seguridad relacionados con la red interna del comerciante, los servidores, la infraestructura y cualquier aplicación personalizada creada en Adobe Commerce en la plataforma de infraestructura en la nube
-- Instalación de la herramienta de integración de la línea de comandos (CLI) de Adobe Commerce en la infraestructura de la nube
-- Mantener el nivel requerido de conformidad con PCI de la aplicación personalizada y otros procesos internos, según se define en las directrices de PCI-DSS
+- Instalación de Adobe Systems Commerce en infraestructura en la nube herramienta de integración de línea de comandos (CLI)
+- Mantener el nivel requerido de cumplimiento de PCI del aplicación personalizado y otros procesos internos, según lo definido por las directrices de PCI-DSS
 
   >[!NOTE]
   >
-  >Para minimizar las áreas que deben revisarse, la conformidad con PCI para el comerciante se basa en las certificaciones PCI de Adobe Commerce y el proveedor de alojamiento en la nube.
+  >Para minimizar las áreas que deben revisarse, PCI cumplimiento de la comerciante se basa en las certificaciones PCI de Adobe Systems Commerce y del proveedor de alojamiento en la nube.
 
 - Ejecución de análisis ASV de PCI y corrección de problemas en el Adobe Commerce principal en el código y la plataforma de la infraestructura en la nube
 - Monitorización de todas las actividades de la aplicación que puedan revelar una posible amenaza para la seguridad, incluidas las pruebas de penetración, los análisis de vulnerabilidades y los registros
@@ -98,7 +98,7 @@ Los proveedores de servicios en la nube también son responsables de:
 
 ## Responsabilidades del proveedor de CDN
 
-La solución de Adobe Commerce en la nube utiliza proveedores de CDN para acelerar el tiempo de carga de página, almacenar en caché el contenido y purgar instantáneamente el contenido obsoleto. Estos proveedores también son responsables de los problemas de seguridad directamente relacionados con su CDN o que afectan a ella, y de definir y mantener las reglas WAF de CDN.
+La solución de Adobe Commerce en la nube utiliza proveedores de CDN para acelerar el tiempo de carga de página, almacenar en caché el contenido y purgar instantáneamente el contenido obsoleto. Estos proveedores también son responsables de los problemas de seguridad directamente relacionados con su CDN o que afectan a ella, y de definir y mantener las reglas de WAF de CDN.
 
 ## Resumen de responsabilidades de seguridad
 
@@ -146,14 +146,14 @@ La siguiente tabla de resumen utiliza el modelo RACI para mostrar las responsabi
     <td></td>
   </tr>
   <tr>
-    <td>Definición de reglas WAF de CDN</td>
+    <td>Definición de reglas de CDN WAF</td>
     <td>A</td>
     <td></td>
     <td></td>
     <td>R</td>
   </tr>
   <tr>
-    <td>Implementación de reglas WAF de plataforma</td>
+    <td>Implementación de reglas de Platform WAF</td>
     <td>R</td>
     <td>I</td>
     <td></td>
@@ -202,14 +202,14 @@ La siguiente tabla de resumen utiliza el modelo RACI para mostrar las responsabi
     <td></td>
   </tr>
   <tr>
-    <td>Instalación de Adobe Commerce en la herramienta CLI de infraestructura en la nube</td>
+    <td>Instalación de Adobe Systems Commerce en infraestructura en la nube herramienta CLI</td>
     <td></td>
     <td>R</td>
     <td></td>
     <td></td>
   </tr>
   <tr>
-    <td>Añadir archivos de configuración de Adobe Commerce en la nube al repositorio</td>
+    <td>Agregar Adobe Systems Commerce en infraestructura en la nube archivos de configuración a repositorio</td>
     <td>C</td>
     <td>R</td>
     <td></td>
@@ -363,14 +363,14 @@ La siguiente tabla de resumen utiliza el modelo RACI para mostrar las responsabi
     <td></td>
   </tr>
   <tr>
-    <td>Obtención de un proveedor DNS (solo Pro)</td>
+    <td>Obtención de un proveedor de DNS (solo Pro)</td>
     <td>C</td>
     <td>R</td>
     <td></td>
     <td></td>
   </tr>
   <tr>
-    <td>Protección del sistema operativo</td>
+    <td>Endurecimiento del sistema operativo</td>
     <td>R</td>
     <td></td>
     <td></td>
@@ -533,13 +533,13 @@ La siguiente tabla de resumen utiliza el modelo RACI para mostrar las responsabi
 
 >[!BEGINSHADEBOX]
 
-Las siguientes tablas de resumen aclaran las responsabilidades operativas de Adobe y Comerciantes a la hora de desarrollar, implementar, mantener y proteger Adobe Commerce en la infraestructura en la nube.
+Las siguientes tablas resumen aclaran las responsabilidades operativas de Adobe Systems y comerciantes al desarrollar, implementar, mantener y asegurar Adobe Systems Commerce en infraestructura en la nube.
 
 >[!ENDSHADEBOX]
 
 ### Codificación y desarrollo
 
-#### Código principal de Adobe Commerce
+#### Código de Core Adobe Systems Commerce
 
 |     | Adobe | Comerciante |
 | --- | --- | --- |
@@ -641,7 +641,7 @@ Los comerciantes son responsables de sincronizar datos entre entornos.
 | Aplicación de Adobe Commerce personalizada | | R |
 | Disponibilidad de los servicios de New Relic:<br>integración de aplicaciones y agentes de APM, aplicación de infraestructura,<br>Registro e integración | R |   |
 | Configuración de alertas de New Relic |     | R |
-| Implementación del agente de New Relic en servidores PaaS |     | R |
+| Implementación del agente de New Relic en servidores PaaS | R |  |
 
 {style="table-layout:auto"}
 
@@ -724,7 +724,7 @@ Los comerciantes son responsables de sincronizar datos entre entornos.
 | Optimización de caché de página |     | R |
 | Adición de dominios a servicios, a CDN y a infraestructura | R |   |
 | Fragmentos de VCL personalizados |     | R |
-| Reglas WAF y WAF | R |   |
+| Reglas de WAF y WAF | R |   |
 
 {style="table-layout:auto"}
 
@@ -825,9 +825,9 @@ Los comerciantes son responsables de sincronizar datos entre entornos.
 |     | Adobe | Comerciante |
 | --- | --- | --- |
 | Disponibilidad y configuración de WAF | R |  |
-| Direccionamiento de falsos positivos para reglas WAF | R | |
-| Informe de falsos positivos de regla WAF |     | R |
-| Ajuste de reglas WAF (NO ADMITIDO) |     |     |
+| Direccionamiento de falsos positivos para reglas de WAF | R | |
+| Falsos positivos en la regla WAF de informes |     | R |
+| Ajuste de reglas de WAF (NO COMPATIBLE) |     |     |
 | Registros de WAF/CDN |     | R |
 
 {style="table-layout:auto"}
@@ -841,7 +841,6 @@ Los comerciantes son responsables de sincronizar datos entre entornos.
 | Detección de DDOS: capa 3-4 | R |   |
 | Detección de DDOS: capa 7 |     | R |
 | Respuesta de DDOS | R |   |
-| Configuración de la limitación de velocidad de extensión rápida y protección para bots (limitada) |     | R |
 
 {style="table-layout:auto"}
 
@@ -850,14 +849,14 @@ Los comerciantes son responsables de sincronizar datos entre entornos.
 |     | Adobe | Comerciante |
 | --- | --- | --- |
 | Configuración y mantenimiento de conexiones PrivateLink (si se utilizan) con un VPC propiedad del Adobe | R |   |
-| Configuración y mantenimiento de conexiones PrivateLink (si se utilizan) con un VPC de propiedad del comerciante |     | R |
+| Configuración y mantenimiento de conexiones de PrivateLink (si se utilizan) con un VPC de propiedad del comerciante |     | R |
 | Disponibilidad de SSH (vínculo no privado) | R |   |
 | Configuración de PrivateLink entrante al extremo del servicio Adobe Commerce Cloud | R |   |
 | Aceptación de PrivateLink entrante al extremo del servicio Adobe Commerce Cloud |     | R |
 | Configuración de PrivateLink entrante al extremo del servicio VPC del comerciante |     | R |
-| Aceptación de PrivateLink entrante al punto final del servicio VPC del comerciante | R |   |
+| Aceptación de PrivateLink entrante al extremo del servicio VPC del comerciante | R |   |
 | Configuración de integraciones de PrivateLink (extremo a cuenta) |     | R |
-| Configuración del VPC propiedad del comerciante para el extremo PrivateLink <br><br> (incluidas las conexiones VPN) |     | R |
+| Configuración de VPC propiedad del comerciante para el extremo PrivateLink <br><br> (incluidas las conexiones VPN) |     | R |
 
 {style="table-layout:auto"}
 
