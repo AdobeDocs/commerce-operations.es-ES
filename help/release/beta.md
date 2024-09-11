@@ -2,9 +2,9 @@
 title: Versiones de Beta
 description: Obtenga información sobre las versiones beta de Adobe Commerce y cómo participar.
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
-source-git-commit: 0e2dfc376a049a47348a7a913bd5181436227cc2
+source-git-commit: 050d5877fae4cb9caaee06598f4429ea8857b1d2
 workflow-type: tm+mt
-source-wordcount: '818'
+source-wordcount: '803'
 ht-degree: 0%
 
 ---
@@ -47,6 +47,7 @@ Para participar en la versión beta, envía una solicitud por correo electrónic
 ### Integración del sistema IBM Sterling Order Management (Private Beta)
 
 Este acelerador de integración para IBM Sterling Order Management permite a los clientes de Adobe Commerce empezar a utilizar las funciones avanzadas de gestión de pedidos con tecnología IBM Sterling OMS. Con esta integración, los comerciantes obtienen:
+
 - Visibilidad en tiempo real de los niveles de inventario y fechas de entrega precisas para sus clientes.
 - Abastecimiento automatizado de pedidos basado en reglas configurables, para que pueda optimizar su red de satisfacción de pedidos y su inventario.
 - Una vista universal de los pedidos en todos los canales desde un único panel para que sus equipos de asistencia puedan ofrecer un servicio excepcional e identificar y gestionar las excepciones rápidamente.
@@ -57,10 +58,9 @@ Para participar en esta versión beta, envía una solicitud por correo electrón
 ### Conexión de datos y Audience Activation (Beta público)
 
 Se ha ampliado el uso compartido de datos entre Adobe Commerce y Adobe Experience Platform para impulsar experiencias personalizadas más potentes. Esta capacidad permite a los comerciantes:
+
 - Compartir perfiles de clientes de Commerce
 - Crear atributos personalizados
-- Obtenga información de Commerce en Real-Time CDP y Adobe Journey Optimizer
-- Compatibilidad con varios conjuntos y flujos de datos
 
 Para participar en esta versión beta, envía una solicitud por correo electrónico a [DataConnection@adobe.com](mailto:DataConnection@adobe.com).
 
