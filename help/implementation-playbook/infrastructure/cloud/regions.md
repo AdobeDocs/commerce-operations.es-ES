@@ -3,7 +3,7 @@ title: Regiones de infraestructura de nube
 description: Revise los diagramas que muestran las regiones de AWS y Azure disponibles para Adobe Commerce.
 exl-id: d8f59845-8281-4c9f-8101-51f9c35a0455
 feature: Cloud
-source-git-commit: 4b42fc5deb12c97c2c078d0a25992ba23735747e
+source-git-commit: b53cb97af72c262e236e4f2d103f70968386bdb1
 workflow-type: tm+mt
 source-wordcount: '73'
 ht-degree: 0%
@@ -17,7 +17,7 @@ Las secciones siguientes proporcionan detalles sobre las diferentes regiones de 
 
 ## Regiones de AWS
 
-![Diagrama que muestra las regiones de AWS](../../../assets/playbooks/aws-regions.png){zoomable="yes"}
+![Diagrama que muestra las regiones de AWS](../../../assets/playbooks/aws-regions.svg){zoomable="yes"}
 
 >[!NOTE]
 >
@@ -25,7 +25,7 @@ Las secciones siguientes proporcionan detalles sobre las diferentes regiones de 
 
 ## Regiones de Azure
 
-![Diagrama que muestra regiones de Azure](../../../assets/playbooks/azure-regions.png){zoomable="yes"}
+![Diagrama que muestra regiones de Azure](../../../assets/playbooks/azure-regions.svg){zoomable="yes"}
 
 >[!NOTE]
 >
