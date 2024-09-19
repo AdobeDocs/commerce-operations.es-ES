@@ -1,7 +1,7 @@
 ---
-source-git-commit: 08c42f87d550cf5666413b452efe0bb3b5403b36
+source-git-commit: b5bb4c27b9aa0b911805249ea169d372266606a4
 workflow-type: tm+mt
-source-wordcount: '540'
+source-wordcount: '528'
 ht-degree: 0%
 
 ---
@@ -354,31 +354,31 @@ La compatibilidad con la línea de versión 2.3 finalizó el 9 de septiembre  8
   <tbody>
     <tr>
         <td>
-          <a href="https://devdocs.magento.com/guides/v2.3/release-notes/2-3-7-p4.html">2.3.7-p4</a>
+          2.3.7-p4
         </td>
         <td>agosto  9 de septiembre de 2022</td>
     </tr>
     <tr>
         <td>
-          <a href="https://devdocs.magento.com/guides/v2.3/release-notes/2-3-7-p3.html">2.3.7-p3</a>
+          2.3.7-p3
         </td>
         <td>12 de abril de 2022</td>
     </tr>
     <tr>
         <td>
-          <a href="https://devdocs.magento.com/guides/v2.3/release-notes/2-3-7-p2.html">2.3.7-p2</a>
+          2,3,7-p2
         </td>
         <td>12 de octubre de 2021</td>
     </tr>
     <tr>
         <td>
-          <a href="https://devdocs.magento.com/guides/v2.3/release-notes/2-3-7-p1.html">2.3.7-p1</a>
+          2.3.7-p1
         </td>
         <td>10 de agosto de 2021</td>
     </tr>
     <tr>
         <td>
-          <a href="https://devdocs.magento.com/guides/v2.3/release-notes/commerce-2-3-7.html">2.3.7</a>
+          2.3.7
         </td>
         <td>11 de mayo de 2021</td>
     </tr>
@@ -390,7 +390,7 @@ La compatibilidad con la línea de versión 2.3 finalizó el 9 de septiembre  8
     </tr>
     <tr>
         <td>
-          <a href="https://devdocs.magento.com/guides/v2.3/release-notes/commerce-2-3-6.html">2.3.6</a>
+          2.3.6
         </td>
         <td>15 de octubre de 2020</td>
     </tr>
@@ -414,7 +414,7 @@ La compatibilidad con la línea de versión 2.3 finalizó el 9 de septiembre  8
     </tr>
     <tr>
         <td>
-          <a href="https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-5-commerce.html">2.3.5</a>
+          2.3.5
         </td>
         <td>28 de abril de 2020</td>
     </tr>
@@ -426,7 +426,7 @@ La compatibilidad con la línea de versión 2.3 finalizó el 9 de septiembre  8
     </tr>
     <tr>
         <td>
-          <a href="https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-4-commerce.html">2.3.4</a>
+          2.3.4
         </td>
         <td>28 de enero de 2020</td>
     </tr>
@@ -438,25 +438,25 @@ La compatibilidad con la línea de versión 2.3 finalizó el 9 de septiembre  8
     </tr>
     <tr>
         <td>
-          <a href="https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-3-commerce.html">2.3.3</a>
+          2.3.3
         </td>
         <td>Octubre  8 de octubre de 2019</td>
     </tr>
     <tr>
         <td>
-          <a href="https://devdocs.magento.com/guides/v2.3/release-notes/ReleaseNotes2.3.2Commerce.html">2.3.2</a>
+          2.3.2
         </td>
         <td>25 de junio de 2019</td>
     </tr>
     <tr>
         <td>
-          <a href="https://devdocs.magento.com/guides/v2.3/release-notes/ReleaseNotes2.3.1Commerce.html">2.3.1</a>
+          2.3.1.
         </td>
         <td>26 de marzo de 2019</td>
     </tr>
     <tr>
         <td>
-          <a href="https://devdocs.magento.com/guides/v2.3/release-notes/ReleaseNotes2.3.0Commerce.html">2.3.0</a>
+          2.3.0
         </td>
         <td>28 de noviembre de 2018</td>
     </tr><!-- patch_releases -->
