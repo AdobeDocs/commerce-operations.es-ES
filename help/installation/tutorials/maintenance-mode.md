@@ -2,9 +2,9 @@
 title: Habilitar o deshabilitar el modo de mantenimiento
 description: Siga estos pasos para personalizar lo que los clientes ven cuando la implementación de Adobe Commerce está inactiva por motivos de mantenimiento.
 exl-id: 5d9f1493-e771-47b4-b906-3771026cf07a
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: a5dbefda6b77d993756143ef0e7270425f824c44
 workflow-type: tm+mt
-source-wordcount: '547'
+source-wordcount: '533'
 ht-degree: 0%
 
 ---
@@ -17,10 +17,8 @@ Adobe Commerce usa [modo de mantenimiento](../../configuration/bootstrap/applica
 
 La aplicación detecta el modo de mantenimiento de la siguiente manera:
 
-* Si `var/.maintenance.flag` no existe, el modo de mantenimiento está desactivado y la aplicación funciona normalmente.
-* De lo contrario, el modo de mantenimiento está activado a menos que exista `var/.maintenance.ip`.
-
-  `var/.maintenance.ip` puede contener una lista de direcciones IP. Si se accede a un punto de entrada mediante HTTP y la dirección IP del cliente corresponde a una de las entradas de esa lista, el modo de mantenimiento está desactivado.
+* Si existe `var/.maintenance.flag`, el modo de mantenimiento está activado y la aplicación devolverá una página de mantenimiento 503.
+* Si `var/.maintenance.ip` existe y la dirección IP del cliente corresponde a una de las entradas de dirección IP de este archivo, se omite la página de mantenimiento de la solicitud.
 
 ## Instalación de la aplicación
 
