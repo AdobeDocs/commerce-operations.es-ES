@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo mejorar el rendimiento del almacen
 role: Developer, Admin
 feature: Best Practices, Cache
 exl-id: 8b3c9167-d2fa-4894-af45-6924eb983487
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 7f277fe6245aba851aba7ddc70be40343bdaecc7
 workflow-type: tm+mt
-source-wordcount: '800'
+source-wordcount: '821'
 ht-degree: 0%
 
 ---
@@ -156,6 +156,10 @@ stage:
         translate:
           frontend: "stale_cache_enabled"
 ```
+
+>[!NOTE]
+>
+>En el ejemplo anterior, la caché de `full_page` no es relevante para Adobe Commerce en proyectos de infraestructura en la nube, ya que utilizan [Fastly](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly).
 
 Para configurar instalaciones locales, consulte [Opciones de caché antiguas](../../../configuration/cache/level-two-cache.md#stale-cache-options) en la _Guía de configuración_.
 
