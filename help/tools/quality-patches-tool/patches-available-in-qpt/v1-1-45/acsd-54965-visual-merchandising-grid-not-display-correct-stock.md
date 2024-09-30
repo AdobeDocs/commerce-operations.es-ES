@@ -3,9 +3,9 @@ title: "ACSD-54965: la cuadrícula [!UICONTROL Visual Merchandising] no muestra 
 description: Aplique el parche ACSD-54965 para corregir el problema de Adobe Commerce en el que la cuadrícula [!UICONTROL Visual Merchandising] no muestra las existencias correctas cuando se asigna un producto a las existencias personalizadas.
 feature: Merchandising, Categories
 role: Admin, Developer
-source-git-commit: d722ba5ba25ffc03d87b9eddeb2830353124055d
+source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '383'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ La cuadrícula muestra toda la información de existencias si el ámbito es *[!U
 
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
-* Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) en la guía [!DNL Quality Patches Tool].
+* Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía [!DNL Quality Patches Tool].
 * Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) en la guía Commerce en la infraestructura de la nube.
 
 ## Lectura relacionada

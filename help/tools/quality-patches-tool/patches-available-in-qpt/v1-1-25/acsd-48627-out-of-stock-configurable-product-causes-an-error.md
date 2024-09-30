@@ -3,9 +3,9 @@ title: "ACSD-48627: el producto configurable agotado causa un error"
 description: Aplique el parche ACSD-48627 para corregir el problema de Adobe Commerce en el que el producto configurable sin existencias provoca un error al enviar una solicitud de GraphQL para obtener los detalles del carro de compras.
 feature: Admin Workspace, Configuration, Orders, Products
 role: Admin
-source-git-commit: e4744df378c3436598e49500d68cf4ef45d64f8c
+source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
 workflow-type: tm+mt
-source-wordcount: '406'
+source-wordcount: '405'
 ht-degree: 0%
 
 ---
@@ -275,7 +275,7 @@ Hay un *error interno del servidor* en la respuesta.
 
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
-* Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) en la guía [!DNL Quality Patches Tool].
+* Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía [!DNL Quality Patches Tool].
 * Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) en la guía Commerce en la infraestructura de la nube.
 
 ## Lectura relacionada

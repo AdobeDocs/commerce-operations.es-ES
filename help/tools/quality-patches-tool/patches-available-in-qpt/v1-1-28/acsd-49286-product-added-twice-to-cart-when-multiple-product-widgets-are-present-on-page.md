@@ -3,9 +3,9 @@ title: "ACSD-49286: producto añadido dos veces al carro de compras cuando hay v
 description: Aplique el parche ACSD-49286 para corregir el problema de Adobe Commerce por el que el producto se agrega dos veces al carro de compras cuando hay varios widgets de producto en la página.
 feature: Admin Workspace, Orders, Products, Shopping Cart
 role: Admin
-source-git-commit: 49ac8ad1f174546fcc0454645b2480a40ead2924
+source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
 workflow-type: tm+mt
-source-wordcount: '415'
+source-wordcount: '414'
 ht-degree: 0%
 
 ---
@@ -55,7 +55,7 @@ La cantidad de productos se duplica después de agregar un producto al carro de 
 
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
-* Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) en la guía [!DNL Quality Patches Tool].
+* Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía [!DNL Quality Patches Tool].
 * Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) en la guía Commerce en la infraestructura de la nube. 
 
 ## Lectura relacionada

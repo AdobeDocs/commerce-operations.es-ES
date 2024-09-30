@@ -3,9 +3,9 @@ title: "ACSD-52041: El procesamiento de Page Builder no libera bloqueos"
 description: Aplique el parche ACSD-52041 para corregir el problema de Adobe Commerce en el que Page Builder se procesa durante cinco segundos sin liberar bloqueos.
 feature: Page Builder
 role: Admin, Developer
-source-git-commit: 49ac8ad1f174546fcc0454645b2480a40ead2924
+source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
 workflow-type: tm+mt
-source-wordcount: '350'
+source-wordcount: '349'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ Error en la consola: ``Page Builder was rendering for 5 seconds without releasin
 
 Para aplicar parches individuales para las versiones **2.4.4 - 2.4.4-p5, 2.4.5 - 2.4.5-p4 y 2.4.6 - 2.4.6-p2**, utilice los siguientes vínculos según el método de implementación:
 
-* Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](<https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html>) en la guía [!DNL Quality Patches Tool].
+* Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](</help/tools/quality-patches-tool/usage.md>) en la guía [!DNL Quality Patches Tool].
 * Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) en la guía Commerce en la infraestructura de la nube.
 
 ## Lectura relacionada

@@ -3,9 +3,9 @@ title: "ACSD-55238: Guardando la metadescripción del producto vacío"
 description: Aplique el parche ACSD-55238 para corregir el problema de Adobe Commerce donde siempre se muestra en la metadescripción una descripción de producto que contiene código de HTML generado por  [!DNL Page Builder] u otro editor de HTML y no hay forma de establecerla en empty.
 feature: Products, Page Builder, Page Content
 role: Admin, Developer
-source-git-commit: d722ba5ba25ffc03d87b9eddeb2830353124055d
+source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
 workflow-type: tm+mt
-source-wordcount: '406'
+source-wordcount: '405'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ Cuando un producto tiene un bloque en su descripción, se utiliza para la metade
 
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
-* Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) en la guía [!DNL Quality Patches Tool].
+* Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía [!DNL Quality Patches Tool].
 * Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) en la guía Commerce en la infraestructura de la nube.
 
 ## Lectura relacionada

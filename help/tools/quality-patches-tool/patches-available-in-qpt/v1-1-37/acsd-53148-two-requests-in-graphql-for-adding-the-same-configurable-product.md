@@ -3,9 +3,9 @@ title: "ACSD-53148: dos solicitudes paralelas en GraphQL para agregar el mismo p
 description: Aplique el parche ACSD-53148 para solucionar el problema de Adobe Commerce, donde dos solicitudes paralelas en GraphQL para agregar el mismo producto configurable al carro de compras tuvieron como resultado dos elementos independientes en el carro de compras con el mismo SKU de producto.
 feature: GraphQL, Shopping Cart
 role: Admin, Developer
-source-git-commit: 49ac8ad1f174546fcc0454645b2480a40ead2924
+source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
 workflow-type: tm+mt
-source-wordcount: '417'
+source-wordcount: '416'
 ht-degree: 0%
 
 ---
@@ -81,7 +81,7 @@ Elemento enumerado dos veces con [!UICONTROL qty] = 1.
 
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
-* Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) en la guía [!DNL Quality Patches Tool].
+* Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía [!DNL Quality Patches Tool].
 * Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) en la guía Commerce en la infraestructura de la nube.
 
 ## Lectura relacionada

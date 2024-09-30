@@ -3,9 +3,9 @@ title: "ACSD-47497: falta ACL para la tienda/configuración/servicios [!UICONTRO
 description: Aplique el parche ACSD-47497 para solucionar el problema de Adobe Commerce cuando los permisos están configurados para una función en particular y no puede definir el acceso a la sección de configuración.
 feature: Configuration, Identity Management, Services
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
 workflow-type: tm+mt
-source-wordcount: '345'
+source-wordcount: '344'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,7 @@ En **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Serv
 
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
-* Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) en la guía [!DNL Quality Patches Tool].
+* Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía [!DNL Quality Patches Tool].
 * Adobe Commerce en la infraestructura en la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) en nuestra documentación para desarrolladores.
 
 ## Lectura relacionada

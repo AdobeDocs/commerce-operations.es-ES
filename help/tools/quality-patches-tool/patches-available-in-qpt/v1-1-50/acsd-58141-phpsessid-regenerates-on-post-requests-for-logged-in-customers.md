@@ -3,9 +3,9 @@ title: "ACSD-58141: PHPSESSID se regenera en solicitudes de POST para clientes q
 description: Aplique el parche ACSD-58141 para corregir el problema de Adobe Commerce en el que PHPSESSID se regenera en solicitudes de POST en el área de Storefront para un cliente que ha iniciado sesión con la caché L2 Redis habilitada y el cliente se actualiza desde Administración.
 feature: Customers, Cache
 role: Admin, Developer
-source-git-commit: 52742cbc2098958f8e4cddf8534e0c2bf79d5c3e
+source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '448'
 ht-degree: 0%
 
 ---
@@ -61,7 +61,7 @@ El entorno debe configurarse con Redis que tenga al menos 3 nodos.
 
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
-* Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) en la guía [!DNL Quality Patches Tool].
+* Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía [!DNL Quality Patches Tool].
 * Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) en la guía Commerce en la infraestructura de la nube.
 
 ## Lectura relacionada

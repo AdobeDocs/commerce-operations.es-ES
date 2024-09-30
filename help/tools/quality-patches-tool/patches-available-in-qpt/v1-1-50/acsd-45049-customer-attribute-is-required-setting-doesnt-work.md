@@ -3,16 +3,16 @@ title: "ACSD-45049: La configuración de atributos 'Es obligatorio' del cliente 
 description: Aplique el parche ACSD-45049 para corregir el problema de Adobe Commerce en el que el atributo del cliente "[!UICONTROL Is required]" no se ha anulado correctamente según el ámbito del sitio web en Administración.
 feature: Attributes, Customers
 role: Admin, Developer
-source-git-commit: d722ba5ba25ffc03d87b9eddeb2830353124055d
+source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
 workflow-type: tm+mt
-source-wordcount: '385'
+source-wordcount: '383'
 ht-degree: 0%
 
 ---
 
 # ACSD-45049: la configuración de atributos del cliente *[!UICONTROL Is required]* no funciona según el ámbito del sitio web en el administrador
 
-El parche ACSD-45049 corrige el problema en el que la configuración de atributos del cliente *[!UICONTROL Is required]* no funciona correctamente según el ámbito del sitio web en Administración. Esta revisión está disponible cuando está instalado [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) 1.1.50. El ID del parche es ACSD-45049. Tenga en cuenta que el problema se solucionó en Adobe Commerce 2.4.6.
+El parche ACSD-45049 corrige el problema en el que la configuración de atributos del cliente *[!UICONTROL Is required]* no funciona correctamente según el ámbito del sitio web en Administración. Esta revisión está disponible cuando está instalado [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/usage.md) 1.1.50. El ID del parche es ACSD-45049. Tenga en cuenta que el problema se solucionó en Adobe Commerce 2.4.6.
 
 ## Productos y versiones afectados
 
@@ -53,7 +53,7 @@ El atributo no es necesario para el sitio web no predeterminado.
 
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
-* Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) en la guía [!DNL Quality Patches Tool].
+* Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía [!DNL Quality Patches Tool].
 * Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) en la guía Commerce en la infraestructura de la nube.
 
 ## Lectura relacionada

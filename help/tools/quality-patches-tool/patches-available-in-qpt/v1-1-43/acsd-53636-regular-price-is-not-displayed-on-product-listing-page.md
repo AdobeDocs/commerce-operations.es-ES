@@ -3,9 +3,9 @@ title: "ACSD-53636: El precio normal no se muestra en [!UICONTROL Product Listin
 description: Aplique el parche ACSD-53636 para corregir el problema de Adobe Commerce en el que el precio normal no se muestra en páginas *[!UICONTROL Product Listing]* para productos configurables que tienen productos secundarios con precios especiales.
 feature: Catalog Management, Products
 role: Admin, Developer
-source-git-commit: d722ba5ba25ffc03d87b9eddeb2830353124055d
+source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
 workflow-type: tm+mt
-source-wordcount: '442'
+source-wordcount: '441'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ En la página *[!UICONTROL Product Listing]*, el producto configurable no muestr
 
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
-* Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) en la guía [!DNL Quality Patches Tool].
+* Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía [!DNL Quality Patches Tool].
 * Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) en la guía Commerce en la infraestructura de la nube.
 
 ## Lectura relacionada

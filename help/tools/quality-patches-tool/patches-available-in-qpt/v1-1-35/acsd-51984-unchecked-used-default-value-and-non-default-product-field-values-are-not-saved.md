@@ -3,9 +3,9 @@ title: "ACSD-51984: Los valores de campo de producto [!UICONTROL Use Default Val
 description: Aplique el parche ACSD-51984 para corregir el problema de Adobe Commerce en el que los valores de los campos de producto [!UICONTROL Use Default Value] y no predeterminados no marcados no se guardan para la segunda vista del sitio web, la tienda y la tienda.
 feature: Products
 role: Admin
-source-git-commit: 49ac8ad1f174546fcc0454645b2480a40ead2924
+source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
 workflow-type: tm+mt
-source-wordcount: '435'
+source-wordcount: '434'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ Los valores de los campos y de las casillas de verificación no se guardan.
 
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
-* Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](<https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html>) en la guía [!DNL Quality Patches Tool].
+* Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](</help/tools/quality-patches-tool/usage.md>) en la guía [!DNL Quality Patches Tool].
 * Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) en la guía Commerce en la infraestructura de la nube.
 
 ## Lectura relacionada

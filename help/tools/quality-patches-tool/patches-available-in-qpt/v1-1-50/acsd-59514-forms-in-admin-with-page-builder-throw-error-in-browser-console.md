@@ -3,9 +3,9 @@ title: "ACSD-59514: Forms en el administrador con  [!DNL Page Builder] error de 
 description: Aplique el parche ACSD-59514 para corregir el problema de Adobe Commerce en el que los formularios en el administrador con  [!DNL Page Builder] emiten el error "[!DNL Page Builder] se representaban durante 5 segundos sin liberar bloqueos". en la consola del explorador después de enviar el formulario, y los cambios no se pueden guardar.
 feature: Page Builder
 role: Admin, Developer
-source-git-commit: 52742cbc2098958f8e4cddf8534e0c2bf79d5c3e
+source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
 workflow-type: tm+mt
-source-wordcount: '420'
+source-wordcount: '419'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ El cargador no deja de girar y el bloque no se guarda. El siguiente error se mue
 
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
-* Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) en la guía [!DNL Quality Patches Tool].
+* Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía [!DNL Quality Patches Tool].
 * Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) en la guía Commerce en la infraestructura de la nube.
 
 ## Lectura relacionada

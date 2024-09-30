@@ -3,9 +3,9 @@ title: "ACSD-50260: Los resultados de búsqueda de productos de GraphQL son limi
 description: Aplique el parche ACSD-50260 para solucionar el problema de Adobe Commerce, donde los resultados de búsqueda de productos de GraphQL están limitados a 10 000 resultados únicamente.
 feature: Admin Workspace, Categories, GraphQL, Products, Search
 role: Admin
-source-git-commit: 49ac8ad1f174546fcc0454645b2480a40ead2924
+source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
 workflow-type: tm+mt
-source-wordcount: '326'
+source-wordcount: '325'
 ht-degree: 0%
 
 ---
@@ -95,7 +95,7 @@ No hay posibilidad de obtener productos siguiendo este lote de 10.000 en los res
 
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
-* Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) en la guía [!DNL Quality Patches Tool].
+* Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía [!DNL Quality Patches Tool].
 * Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) en la guía Commerce en la infraestructura de la nube.
 
 ## Lectura relacionada

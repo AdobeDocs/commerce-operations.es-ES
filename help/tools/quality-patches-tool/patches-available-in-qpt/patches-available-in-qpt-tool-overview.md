@@ -3,9 +3,9 @@ title: Parches disponibles en la descripción general de la herramienta QPT
 description: Este artículo proporciona información general sobre  [!DNL Quality Patches Tool] (QPT) y vínculos a recursos que explican cómo utilizarlo.
 feature: Support, Tools and External Services
 role: Admin
-source-git-commit: 6f311fc4c20caca8b98d4c3c06642e5f61dc614f
+source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
 workflow-type: tm+mt
-source-wordcount: '377'
+source-wordcount: '376'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ Los comandos de instalación y uso son diferentes para Adobe Commerce local y pa
 
 ### Cómo instalar y utilizar QPT para Adobe Commerce local
 
-Consulte [Commerce > Herramientas > Uso](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) en nuestra documentación para desarrolladores para obtener más información sobre cómo instalar y utilizar QPT para aplicar y revertir parches.
+Consulte [Commerce > Herramientas > Uso](/help/tools/quality-patches-tool/usage.md) en nuestra documentación para desarrolladores para obtener más información sobre cómo instalar y utilizar QPT para aplicar y revertir parches.
 
 ### Cómo instalar y utilizar QPT para Adobe Commerce en la infraestructura en la nube
 
