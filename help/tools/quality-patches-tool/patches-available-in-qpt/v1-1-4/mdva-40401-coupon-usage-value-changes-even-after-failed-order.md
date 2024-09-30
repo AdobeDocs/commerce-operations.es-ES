@@ -3,7 +3,7 @@ title: "MDVA-40401: El valor de uso del cupón cambia después de un pedido fall
 description: El parche MDVA-40401 corrige el problema en el que el valor de uso de cupones cambia incluso después de un pedido fallido. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.4. El ID del parche es MDVA-40401. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.4.
 feature: Orders
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+source-git-commit: 1fb76b8d648cbbe2a9f602d2b1a0149f1f4f0e46
 workflow-type: tm+mt
 source-wordcount: '424'
 ht-degree: 0%
@@ -65,4 +65,4 @@ Para obtener más información sobre la herramienta Parches de calidad, consulte
 * [Lanzamiento de la herramienta Parches de calidad: una nueva herramienta para autodistribuir parches de calidad](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) en la base de conocimiento de asistencia.
 * [Compruebe si el parche está disponible para su problema de Adobe Commerce mediante la herramienta Parches de calidad](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) en la guía [!DNL Quality Patches Tool].
 
-Para obtener información sobre otros parches disponibles en QPT, consulte la sección [Parches disponibles en QPT](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html-).
+Para obtener información sobre otros parches disponibles en QPT, consulte la sección [Parches disponibles en QPT](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html).
