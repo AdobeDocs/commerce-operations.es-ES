@@ -2,9 +2,9 @@
 title: Versiones de Beta
 description: Obtenga información sobre las versiones beta de Adobe Commerce y cómo participar.
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
-source-git-commit: f90279e0e152204ac976db307ca14d4418cbcba8
+source-git-commit: a6c0a7f8c2a2bd6156f19838e05f8046209177e4
 workflow-type: tm+mt
-source-wordcount: '1094'
+source-wordcount: '1102'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ Esta versión beta admite tres nuevas funciones en la consulta [`productSearch` 
 
       - Nota: este tipo de búsqueda es diferente de la búsqueda de frases [existente](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#phrase), que realiza una búsqueda de autocompletar. Por ejemplo, si el valor de atributo del producto es &quot;pantalones de exterior&quot;, una búsqueda de frase devuelve una respuesta para &quot;sin bandeja&quot;, pero no devuelve una respuesta para &quot;u hormigas&quot;. Sin embargo, una búsqueda contiene sí devuelve una respuesta para &quot;o hormigas&quot;.
 
-Estas nuevas condiciones mejoran el mecanismo de filtrado de consultas de búsqueda para restringir los resultados de búsqueda. Estas nuevas condiciones no afectan a la consulta de búsqueda principal. Para obtener acceso a la versión beta, envíe un correo electrónico a `sagonzal@adobe.com` o `alexj@adobe.com`.
+Estas nuevas condiciones mejoran el mecanismo de filtrado de consultas de búsqueda para restringir los resultados de búsqueda. Estas nuevas condiciones no afectan a la consulta de búsqueda principal. Para participar en la versión beta, envía una solicitud por correo electrónico a [Sandra Gonzales Mangana](mailto:sagonzal@adobe.com) o [Alex Jose](mailto:alexj@adobe.com).
 
 Para instalar la versión beta de Live Search, consulta la [guía de Live Search](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/install#install-the-live-search-beta).
 
