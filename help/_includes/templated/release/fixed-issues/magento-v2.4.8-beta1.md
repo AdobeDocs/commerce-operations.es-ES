@@ -1,7 +1,7 @@
 ---
-source-git-commit: cb3392b7716667201305b7502f6c9c31bc7d1a23
+source-git-commit: d2fe92c778cb90912062c5f318332a02f6a4131e
 workflow-type: tm+mt
-source-wordcount: '14443'
+source-wordcount: '14792'
 ht-degree: 0%
 
 ---
@@ -144,7 +144,7 @@ garantizar la compatibilidad y la funcionalidad actualizada. Anteriormente, la a
 
 ## Problemas solucionados
 
-Hemos corregido 253 problemas en el código principal de Magento Open Source 2.4.8. A continuación, se describe un subconjunto de los problemas corregidos que se incluyen en esta versión.
+Hemos corregido 254 problemas en el código principal de Magento Open Source 2.4.8. A continuación, se describe un subconjunto de los problemas corregidos que se incluyen en esta versión.
 
 ### API
 
@@ -207,6 +207,10 @@ Anteriormente, era posible crear el grupo de clientes de precios de grupo de sit
    * _Nota de corrección_: el sistema ahora acepta cargas de imágenes de productos con extensiones de archivo en mayúsculas, lo que garantiza un proceso de creación de productos sin problemas. Anteriormente, las cargas de imágenes con extensiones de archivo de mayúsculas se rechazaban, lo que obligaba a los usuarios a cambiar la extensión del archivo a minúsculas.
    * _Problema de GitHub_: <https://github.com/magento/magento2/issues/38831>
    * _Contribución de código de GitHub_: <https://github.com/magento/magento2/commit/c8f87c25>
+* _AC-6975_: [Problema] Establecer el modo de indizador predeterminado en &#39;horario&#39;
+   * _Nota de corrección_: todos los indizadores nuevos se encuentran de manera predeterminada en el modo **[!UICONTROL Update by Schedule]**.  Anteriormente, el modo predeterminado era **[!UICONTROL Update on Save]**. Los indexadores existentes no se ven afectados. [GitHub-36419](https://github.com/magento/magento2/issues/36419)
+   * _Problema de GitHub_: <https://github.com/magento/magento2/issues/36419>
+   * _Contribución de código de GitHub_: <https://github.com/magento/magento2/commit/0b410856>
 * _AC-7700_: [Problema] Eliminar tablas de registro de cambios del indizador al cancelar la suscripción de mview
    * _Nota de corrección_: El sistema ahora elimina automáticamente las tablas de registro de cambios no utilizadas cuando se cambia un índice de &#39;actualizar según lo programado&#39; a &#39;actualizar al guardar&#39;, marcando el índice como no válido para garantizar que no se pierdan entradas. Anteriormente, cambiar un índice a &quot;actualizar al guardar&quot; dejaba tablas de registro de cambios no utilizadas en el sistema y marcaba todos los índices cambiados como &quot;válidos&quot;.
    * _Problema de GitHub_: <https://github.com/magento/magento2/issues/29789>
@@ -300,18 +304,24 @@ Ahora podemos actualizar los estados de los pedidos creados a medida, mientras q
 ### Braintree
 
 * _PAQUETE-3367_: Paga a través de LPM
+   * _Nota de corrección_: El sistema ahora procesa correctamente los Métodos de pago locales (LPM) en la carga inicial, incluso cuando las direcciones de envío y facturación de un cliente que inició sesión no coinciden, lo que garantiza un proceso de cierre de compra sin problemas. Anteriormente, una discrepancia entre las direcciones de envío y facturación de un cliente impedía que LPM se representara, lo que causaba posibles interrupciones durante el cierre de compra.
    * _Contribución de código de GitHub_: <https://github.com/magento/ext-braintree/pull/204>
 * _PAQUETE-3368_: configurable con producto virtual como secundario
+   * _Nota de corrección_: El sistema ahora permite métodos de pago exprés para productos configurables que tienen un producto secundario virtual, lo que garantiza un proceso de cierre de compra sin problemas. Anteriormente, los métodos de pago exprés no estaban disponibles cuando se agregaba al carro de compras un producto configurable con un producto secundario virtual.
    * _Contribución de código de GitHub_: <https://github.com/magento/ext-braintree/pull/204>
 * _PAQUETE-3369_: Error de comprobación de CSV
    * _Contribución de código de GitHub_: <https://github.com/magento/ext-braintree/pull/204>
 * _PAQUETE-3370_: problemas en el área de la cuenta para el almacenamiento en bóveda 247
+   * _Nota de corrección_: el sistema ahora permite a los clientes guardar información de nuevas tarjetas o cuentas de PayPal en varios sitios web sin encontrar errores de autorización. Anteriormente, los clientes no podían guardar nuevos métodos de pago en diferentes sitios web y se les presentaba un mensaje de error de autorización.
    * _Contribución de código de GitHub_: <https://github.com/magento/ext-braintree/pull/204>
 * _PAQUETE-3371_: Enviar a una dirección de un país diferente
+   * _Nota de corrección_: el sistema ahora permite que las transacciones se procesen sin errores al realizar envíos a una dirección de un país diferente, lo que garantiza un proceso de cierre de compra sin problemas. Anteriormente, intentar enviar a una dirección de un país diferente resultaba en errores de consola, a pesar de que no había errores visibles en el front-end.
    * _Contribución de código de GitHub_: <https://github.com/magento/ext-braintree/pull/204>
 * _PAQUETE-3372_: Tarjeta de crédito - Función de desmontaje
+   * _Nota de corrección_: El sistema ahora gestiona correctamente el desmontaje de los componentes de PayPal del Braintree cuando un cliente vuelve de la página de pago a la página de envío, lo que evita cualquier error y garantiza que los botones de PayPal Express se muestren correctamente. Anteriormente, al volver a la página de envío desde la página de pago, a veces se producía un error al intentar desmontar los componentes de PayPal del Braintree.
    * _Contribución de código de GitHub_: <https://github.com/magento/ext-braintree/pull/204>
 * _PAQUETE-3373_: devolución de llamada de envío para PayPal Express
+   * _Nota de corrección_: el sistema ahora muestra correctamente los métodos de envío disponibles en el modal PayPal Express, lo que permite a los clientes seleccionar el método de envío preferido antes de pasar a la página de revisión o completar su transacción. Anteriormente, no había métodos de envío disponibles para seleccionar en el modal PayPal Express, lo que requería que los clientes seleccionaran un método de envío en una página de revisión independiente antes de poder completar su transacción.
    * _Contribución de código de GitHub_: <https://github.com/magento/ext-braintree/pull/204>
 
 ### Carro y cierre de compra
