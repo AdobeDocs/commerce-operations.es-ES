@@ -1,7 +1,7 @@
 ---
-source-git-commit: 1eaf2329c16e6dbe3e93cb7fff3a6920b4b8379d
+source-git-commit: ab3401c2629b550655c7b2a382b998ce2c8ac6f0
 workflow-type: tm+mt
-source-wordcount: '269'
+source-wordcount: '377'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,12 @@ ht-degree: 0%
 >
 >El comando `support:backup` es _no_ la misma copia de seguridad de código realizada por el comando `setup:backup`. El comando `support:backup` está diseñado para hacer una copia de seguridad del código y que el soporte técnico de Adobe Commerce lo examine.
 
+## Parches B2B {#b2b-patches}
+
+>[!NOTE]
+>
+>Después de instalar este parche de seguridad, los comerciantes de Adobe Commerce B2B también deben actualizar a la última versión del parche de seguridad B2B compatible. Ver [notas de la versión B2B](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes).
+
 ## Solo Adobe Commerce {#ee-only}
 
 >[!NOTE]
@@ -46,6 +52,12 @@ ht-degree: 0%
 >[!NOTE]
 >
 >Las versiones de Adobe Commerce pueden contener cambios incompatibles con versiones anteriores (BIC). Para revisar los cambios incompatibles con versiones anteriores, consulte [Referencia de BIC](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/reference/). Los principales problemas incompatibles con versiones anteriores se describen en [resaltados de BIC](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/highlights/). No todas las versiones introducen BIC importantes.
+
+## exención de responsabilidad de Beta {#beta}
+
+>[!IMPORTANT]
+>
+>Las versiones de Beta pueden contener defectos y se proporcionan &quot;TAL CUAL&quot; sin garantía de ningún tipo. Adobe no tiene ninguna obligación de mantener, corregir, actualizar, cambiar, modificar o de otro modo apoyar (desde Servicios de Soporte de Adobe o cualquier otro servicio) las versiones beta. Los clientes deben tener cuidado y no confiar en modo alguno en el funcionamiento o el rendimiento correctos de las versiones beta ni en la documentación o los materiales adjuntos. Por lo tanto, cualquier uso de las versiones beta es totalmente bajo el propio riesgo del cliente.
 
 ## aviso de CVE {#cve-notice}
 

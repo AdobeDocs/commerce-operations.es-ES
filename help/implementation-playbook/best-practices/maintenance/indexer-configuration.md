@@ -4,9 +4,9 @@ description: Mantenga y optimice el rendimiento del sitio siguiendo las práctic
 role: Admin, User
 feature: Best Practices
 exl-id: b35806f9-4bc6-407e-bedd-5ce3f09c1b9f
-source-git-commit: af66d47279245f8ee105030bbb33d77b1b35c3e5
+source-git-commit: 153cf3bae74a78d7a41176e0216203d354d2513b
 workflow-type: tm+mt
-source-wordcount: '298'
+source-wordcount: '296'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Para optimizar y mantener el rendimiento del sitio, revise y actualice la config
 
 ## Configurar indizadores para que se actualicen según una programación
 
-Adobe Commerce tiene dos tipos de modos de indizador: [!UICONTROL Update on Save] (configuración predeterminada) y [!DNL Update on Schedule].
+Adobe Commerce tiene dos tipos de modos de indizador: [!UICONTROL Update on Save] y [!DNL Update on Schedule].
 
 - El modo **[!UICONTROL Update on Save]** actualiza los índices inmediatamente cada vez que cambia el catálogo u otros datos. Por ejemplo, si un usuario administrador agrega nuevos productos a una categoría, el índice de productos de la categoría se reindexa inmediatamente cuando se guarda la actualización.
 

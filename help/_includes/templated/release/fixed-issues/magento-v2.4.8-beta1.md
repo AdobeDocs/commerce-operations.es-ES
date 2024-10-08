@@ -1,11 +1,146 @@
 ---
-source-git-commit: cd4655cf45df5293ef82a9fa2f411e8630524603
+source-git-commit: cb3392b7716667201305b7502f6c9c31bc7d1a23
 workflow-type: tm+mt
-source-wordcount: '13175'
+source-wordcount: '14443'
 ht-degree: 0%
 
 ---
-# Problemas corregidos por el Magento Open Source (versión 2.4.8-beta1)
+# Notas de la versión de Magento Open Source (versión 2.4.8-beta1)
+
+## Características destacadas
+
+Los 49 aspectos destacados siguientes se aplican a la versión de Magento Open Source 2.4.8.
+
+### Marco
+
+* _AC-10721_: actualice las dependencias del Compositor de sistemas de archivos/liga a la versión más reciente
+   * _Nota de corrección_: Actualice las dependencias del Compositor de sistemas de archivo/liga 2.x a la última versión 3.x
+   * _Contribución de código de GitHub_: <https://github.com/magento/magento2/commit/91cb4d46>
+* _AC-11495_: Actualización de componentes de plataforma 2.4.8-beta1
+* _AC-11673_: Investigue las últimas versiones de php-amqplib/php-amqplib
+   * _Nota de corrección_: Se ha actualizado la versión más reciente php-amqplib/php-amqplib :^3.x
+   * _Contribución de código de GitHub_: <https://github.com/magento/magento2/commit/de4dfb8e>
+* _AC-11723_: Refactorización del marco de prueba de integración para la compatibilidad con phpunit 10 - IntegrationTest.php no encontrado
+   * _Nota de corrección_: PHPUnit 9 se ha actualizado a PHPUnit 10 con los cambios del módulo de pruebas de integración y WebAPI de Adobe Commerce. Los cambios de PHPUnit 10 son compatibles con versiones anteriores.
+   * _Contribución de código de GitHub_: &lt;https://github.com/magento/magento2/ (interno, sin combinar)>
+* _AC-11813_: Marco de prueba de WebApi para la compatibilidad con phpunit 10. Problema relacionado con la conectividad de RabbitMQ SOAP con módulos B2B y con los módulos B2B.
+   * _Nota de corrección_: PHPUnit 9 se ha actualizado a PHPUnit 10 con los cambios del módulo de pruebas de integración y WebAPI de Adobe Commerce. Los cambios de PHPUnit 10 son compatibles con versiones anteriores.
+   * _Contribución de código de GitHub_: &lt;https://github.com/magento/magento2/ (interno, sin combinar)>
+* _AC-11816_: Agregar compatibilidad con MySQL 8.4 LTS
+* _AC-11911_: limpieza de css de jQuery/fileuploader después de la migración a la biblioteca de carga
+   * _Nota de corrección_: se quitó la biblioteca jQuery/fileUploader porque se migró a la biblioteca de actualización
+   * _Contribución de código de GitHub_: <https://github.com/magento/magento2/commit/7cabfb46>
+* _AC-11995_: Agregar compatibilidad con MySQL 8.4 LTS para Magento CE
+   * _Contribución de código de GitHub_: <https://github.com/magento/magento2/commit/672a2e61>
+* _AC-12014_: marcar el módulo elasticsearch 8 como obsoleto
+* _AC-12015_: limpieza de la carpeta ExtJs después de la migración a la biblioteca jsTree
+   * _Nota de corrección_: se ha eliminado la carpeta extJs porque la funcionalidad relacionada se ha migrado a jsTree
+   * _Contribución de código de GitHub_: <https://github.com/magento/magento2/commit/7cabfb46>
+* _AC-12022_: actualizar la dependencia del sistema monólogo/monólogo a la última versión principal
+   * _Nota de corrección_: el sistema se ha actualizado para utilizar la última versión principal de la biblioteca &quot;monólogo/monólogo:^3.x&quot;, lo que garantiza la compatibilidad y mejora el rendimiento. Anteriormente, el sistema utilizaba una versión obsoleta de la biblioteca &quot;monólogo/monólogo&quot; que podría haber provocado posibles problemas y limitaciones.
+   * _Contribución de código de GitHub_: <https://github.com/magento/magento2/commit/edcd0dcc>
+* _AC-12023_: actualice la dependencia de wikimedia/less.php a la última versión principal
+   * _Nota de corrección_: El sistema se ha actualizado para utilizar la última versión principal 5.x de la biblioteca &quot;wikimedia/less.php&quot;, lo que garantiza la compatibilidad y la funcionalidad actualizada. Anteriormente, el sistema utilizaba una versión obsoleta de la biblioteca que podría haber provocado problemas de seguridad.
+   * _Contribución de código de GitHub_: <https://github.com/magento/magento2/commit/edcd0dcc>
+* _AC-12024_: actualice la dependencia de biblioteca jquery/validate a la última versión secundaria
+   * _Nota de corrección_: Actualice la dependencia de biblioteca jquery/validate a la última versión secundaria 1.20.0
+   * _Contribución de código de GitHub_: <https://github.com/magento/magento2/commit/de4dfb8e>
+* _AC-12025_: actualice la dependencia del sistema moment.js a la última versión secundaria
+   * _Nota de corrección_: Actualice la dependencia del sistema moment.js a la última versión secundaria 2.30.1
+   * _Contribución de código de GitHub_: <https://github.com/magento/magento2/commit/de4dfb8e>
+* _AC-12032_: Agregar compatibilidad con MySQL 8.4 LTS para EE
+   * _Contribución de código de GitHub_: <https://github.com/magento/magento2/commit/672a2e61>
+* _AC-12034_: Agregar compatibilidad con MySQL 8.4 LTS para B2B
+   * _Contribución de código de GitHub_: <https://github.com/magento/magento2/commit/672a2e61>
+* _AC-12074_: Agregar compatibilidad con MySQL 8.4 LTS para extensiones de paquete
+   * _Contribución de código de GitHub_: <https://github.com/magento/magento2/commit/672a2e61>
+* _AC-12085_: Agregar compatibilidad con MariaDB 11.4 LTS para CE
+   * _Nota de corrección_: se ha agregado compatibilidad con MariaDB 11.4 con Adobe Commerce y extensiones
+   * _Contribución de código de GitHub_: <https://github.com/magento/magento2/commit/b34c0a75>
+* _AC-12165_: Optimización de suscriptores - PhpUnit10
+   * _Contribución de código de GitHub_: <https://github.com/magento/magento2/commit/90e25b6b>
+* _AC-12267_: admite reintentos de conexión para la sesión de Redis y compatible con colinmollenhour/php-redis-session-abstract v2.0.0
+   * _Nota de corrección_: Se ha actualizado la última versión de colinmollenhour/php-redis-session-abstract v2.0.0 compatible con adobe commerce
+   * _Contribución de código de GitHub_: <https://github.com/magento/magento2/commit/672a2e61>
+* _AC-12268_: actualizar las dependencias del Compositor de sistemas de archivos/liga a la versión más reciente
+   * _Nota de corrección_: Actualice las dependencias del Compositor de sistemas de archivo/liga 2.x a la última versión 3.x
+* _AC-12576_: Investigue los errores de las pruebas de automatización con MySQL 8.4 LTS
+   * _Contribución de código de GitHub_: <https://github.com/magento/magento2/commit/672a2e61>
+* _AC-12595_: Agregar compatibilidad con MariaDB 11.4 LTS For EE
+   * _Nota de corrección_: se ha agregado compatibilidad con MariaDB 11.4 con Adobe Commerce y extensiones
+   * _Contribución de código de GitHub_: <https://github.com/magento/magento2/commit/b34c0a75>
+* _AC-12693_: Investigue la herramienta de migración de datos (DMT) con MySQL 8.4 LTS
+* _AC-12715_: actualizar las dependencias del Compositor de láminas a la versión más reciente
+   * _Nota de corrección_: el sistema ahora admite las últimas versiones de las dependencias del compositor de láminas:
+laminas/laminas-servicemanager
+laminas/laminas-server
+laminas/laminas-stdlib
+laminas/laminas-validador
+garantizar la compatibilidad y la funcionalidad actualizada. Anteriormente, la actualización a las versiones más recientes de estas dependencias podría provocar problemas de incompatibilidad con versiones anteriores y errores de prueba.
+   * _Contribución de código de GitHub_: <https://github.com/magento/magento2/commit/b34c0a75>
+* _AC-12752_: Agregar compatibilidad con MariaDB 11.4 LTS para la herramienta de migración de datos
+   * _Nota de corrección_: se ha agregado compatibilidad con MariaDB 11.4 con Adobe Commerce y extensiones
+* _AC-12823_: Investigue el error de prueba de unidad debido a la actualización del parche de phpunit durante la actualización del componente
+   * _Contribución de código de GitHub_: <https://github.com/magento/magento2/commit/b34c0a75>
+* _AC-12897_: compatibilidad de las herramientas SVC y EAT con MySQL 8.4
+* _AC-12898_: compatibilidad de la herramienta UCT con MySQL 8.4
+   * _Nota de corrección_: La herramienta de compatibilidad de actualización (UCT) ahora es compatible con MySQL 8.4, lo que garantiza un funcionamiento sin problemas y comprobaciones de compatibilidad para las instancias que se ejecutan en esta versión. Anteriormente, la herramienta UCT no se probaba y comprobaba para la compatibilidad con MySQL 8.4.
+* _AC-9749_: actualización a PHPUnit 10
+   * _Nota de corrección_: Se han actualizado las dependencias del compositor phpunit/phpunit a una versión compatible - &quot;phpunit/phpunit&quot;:&quot;10.x&quot;
+
+### Instalar y administrar
+
+* _AC-6819_: establezca los indizadores en &quot;Actualizar según lo programado&quot; de forma predeterminada
+
+### Pedido
+
+* _ACP2E-2709_: [Solicitud de característica] El cliente sugiere que el botón Enviar comentario en la página Detalles del pedido es confuso y debería cambiarse por otra cosa
+   * _Nota de corrección_: para minimizar la confusión, la etiqueta del botón &quot;Enviar comentario&quot; cambió a &quot;Actualizar&quot; en la página de detalles del pedido.
+   * _Contribución de código de GitHub_: <https://github.com/magento/magento2/commit/488c1034>
+
+### Otros
+
+* _AC-11420_: los indizadores establecidos aparecen en el estado Listo de forma predeterminada cuando se instala una nueva versión de Adobe Commerce
+   * Magento _Nota de corrección_: después de la instalación, el estado del indizador debe estar en el estado *Listo* de forma predeterminada.
+   * _Contribución de código de GitHub_: <https://github.com/magento/magento2/commit/71432aeb>
+* _AC-11421_: en la instalación de Magento existente al instalar un módulo de indizador de terceros, los indizadores se actualizan de forma predeterminada según lo programado.
+   * _Nota de corrección_: todos los indizadores nuevos se encuentran de forma predeterminada en el modo [Actualizar mediante programación]. Anteriormente, el modo predeterminado era [Actualizar al guardar]. Lo mismo ocurre con los indexadores personalizados.
+   * _Contribución de código de GitHub_: <https://github.com/magento/magento2/commit/71432aeb>
+* _AC-12480_: las opciones de Elasticsearch 7 y 8 deben incluir opciones obsoletas en la configuración del administrador.
+   * _Nota de corrección_: la opción Elasticsearch 8 de la Configuración de administración se mostrará con texto obsoleto para informar a los usuarios de que ya no se recomienda utilizar la opción Elasticsearch 8.
+   * _Contribución de código de GitHub_: <https://github.com/magento/magento2/commit/0611e750>
+* _AC-12481_: agregar nota de texto cuando la opción Elasticsearch está seleccionada en Configuración de administración
+   * _Nota de corrección_: Se agrega una nota de texto para informar a los usuarios administradores de Adobe Commerce que elasticsearch ya no es compatible con el Adobe y que está obsoleto.
+   * _Contribución de código de GitHub_: <https://github.com/magento/magento2/commit/0611e750>
+* _AC-12870_: compatibilidad de las herramientas SVC y EAT con MariaDB 11.4
+   * _Nota de corrección_: compatibilidad de las herramientas SVC y EAT con MariaDB 11.4
+* _AC-12876_: compatibilidad de la herramienta UCT con MariaDB 11.4
+* _LYNX-374_: documente la confirmación por correo electrónico mediante GraphQL
+* _LYNX-376_: documento que obtiene configuraciones para reCAPTCHA en GraphQL
+* _LYNX-409_: optimizaciones de consulta de base de datos para la mutación de elementos del carro de compras de actualización
+
+### Seguridad
+
+* _AC-11041_: mejoras de seguridad para 2.4.8-beta1 a partir de la versión de junio de 2024
+* _AC-11864_: mejoras de seguridad para 2.4.8-beta1 a partir de la versión de agosto de 2024
+* _AC-12346_: mejoras de seguridad para 2.4.8-beta1 a partir de la versión de octubre de 2024
+* _AC-12691_: [2.4.8-beta1] El extremo de la API de REST de actualización del cliente no funciona
+   * _Contribución de código de GitHub_: <https://github.com/magento/magento2/commit/a4102373>, <https://github.com/magento/magento2/commit/a4102373>
+
+### Marco de IU
+
+* _AC-12726_: [2.4.8-beta1] TinyMCE 5 migración a TinyMCE 7
+   * _Nota de corrección_: Se migró TinyMCE 5 a TinyMCE 7.3.0 para que fuera una versión compatible con Adobe Commerce; anteriormente el sistema utilizaba 5.10.2, que estaba obsoleto y notificó una vulnerabilidad de seguridad
+   * _Contribución de código de GitHub_: <https://github.com/magento/magento2/commit/edcd0dcc>
+* _AC-12825_: [2.4.8-beta1] Migración de TinyMCE 5 a Page Builder de TinyMCE 7
+   * _Nota de corrección_: Se migró TinyMCE 5 a TinyMCE 7.3.0 para que fuera una versión compatible con Adobe Commerce; anteriormente el sistema utilizaba 5.10.2, que estaba obsoleto y notificó una vulnerabilidad de seguridad
+   * _Contribución de código de GitHub_: <https://github.com/magento/magento2/commit/edcd0dcc>
+* _AC-12844_: [2.4.8-beta1] TinyMCE 5 migración a TinyMCE 7 - Magento 2-infra - palabras prohibidas
+   * _Nota de corrección_: Se migró TinyMCE 5 a TinyMCE 7.3.0 para que fuera una versión compatible con Adobe Commerce; anteriormente el sistema utilizaba 5.10.2, que estaba obsoleto y notificó una vulnerabilidad de seguridad
+   * _Contribución de código de GitHub_: <https://github.com/magento/magento2/commit/edcd0dcc>
+* _AC-12901_: Requiere la actualización de .js a la versión 2.3.7 más reciente (vulnerabilidad de seguridad CVE-2024-38999)
+   * _Nota de corrección_: Se ha actualizado require.js a la versión más reciente 2.3.7. En la versión anterior, se notificó vulnerabilidad de seguridad
+   * _Contribución de código de GitHub_: <https://github.com/magento/magento2/commit/b34c0a75>
 
 ## Problemas solucionados
 
