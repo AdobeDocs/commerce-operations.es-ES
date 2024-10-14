@@ -2,9 +2,9 @@
 user-guide-title: Herramientas
 user-guide-description: Obtenga información sobre las distintas herramientas que puede utilizar con Adobe Commerce, sus usos, el proceso de instalación y cómo obtener acceso.
 feature: Configuration
-source-git-commit: 07d7aafc25c9d9cdf9b6adfe6ff09f1088c53749
+source-git-commit: d53bc380e3bb0a2e6e510f8e73f327c035088aab
 workflow-type: tm+mt
-source-wordcount: '5948'
+source-wordcount: '5959'
 ht-degree: 0%
 
 ---
@@ -634,6 +634,7 @@ ht-degree: 0%
          - [ACSD-61322: los productos no asignados a [!UICONTROL Shared Catalogue] se incluyen en el mapa del sitio XML](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-61322-products-not-assigned-to-shared-catalogue.md)
          - [ACSD-60590: Mejora del rendimiento de la generación de informes diarios agregados de éxito de ventas](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-60590-optimized-bestseller-report-generation.md)
          - [ACSD-59925: ordenando elementos en [!UICONTROL Media Gallery]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-59925-sorting-items-in-media-gallery.md)
+         - [ACSD-59865: [!UICONTROL Cart Price Rule] no puede cancelar las reglas anteriores debido a una cantidad insuficiente](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-59865-cart-price-rule-fix-for-insufficient-quantity-issue.md)
       - [Comprobar parche para el problema de Adobe Commerce con la herramienta Parches de calidad](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 
 - Referencia de herramientas de la línea de comandos {#cli-reference}
