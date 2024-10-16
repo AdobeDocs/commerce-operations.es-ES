@@ -2,9 +2,9 @@
 title: Notas de la versión
 description: Obtenga información acerca de los parches disponibles para Adobe Commerce y los problemas que resuelven.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: e951ffec9b6b6178f58a1721095b7d62e4f006d3
+source-git-commit: f10eb87efbda20899574486f1e9db01f2a66f855
 workflow-type: tm+mt
-source-wordcount: '21987'
+source-wordcount: '22258'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,19 @@ ht-degree: 0%
 >[!INFO]
 >
 >Para obtener información acerca de [!DNL quality patches] creado por la comunidad para Magento Open Source, consulte las [notas de la versión](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.53 {#v1-1-53}
+
+* **ACSD-48318** (para Adobe Commerce y Magento Open Source >=2.4.4 &lt;2.4.7): corrige el problema en el que no se permite anidar la emulación de entorno. Ahora, la emulación se inicia durante la llamada de `send()` una vez que la emulación se detiene durante la llamada de `getInfoBlockHtml()`.
+* **ACSD-59930** (para Adobe Commerce >=2.4.6 &lt;2.4.8): mejora el rendimiento de los flujos **[!UICONTROL Create]**, **[!UICONTROL Save]** y **[!UICONTROL Delete]** de la compañía.
+* **ACSD-60584** (para Adobe Commerce y Magento Open Source >=2.4.5 &lt;2.4.7): corrige el problema en el cual se permite que un token de acceso creado para el usuario en un sitio web acceda o cambie la información del cliente en otros sitios web.
+* **ACSD-60804** (para Adobe Commerce >=2.4.4 &lt;2.4.8): corrige el problema en el que al editar un cliente vinculado a una compañía eliminada se produce el error *Llamada a una función de miembro `getSuperUserId()` en null*.
+* **ACSD-61133** (para Adobe Commerce >=2.4.4-p5 &lt;2.4.5 || >=2.4.5-p4 &lt;2.4.6 || >=2.4.6-p2 &lt;2.4.8): corrige el problema por el que `sales_clean_quotes` [!DNL cron] elimina las ofertas de pedidos de compra no aprobados.
+* **ACSD-61528** (para Adobe Commerce >=2.4.6 &lt;2.4.8): corrige el problema en el cual al recuperar funciones de [!UICONTROL Admin] mediante [!DNL GraphQL] no se obtienen resultados.
+* **ACSD-61553** (para Adobe Commerce y Magento Open Source >=2.4.5 &lt;2.4.7): corrige el problema en el cual los descuentos de **[!UICONTROL Cart Price Rule]** se calculan incorrectamente cuando se aplican al producto varios descuentos con diferentes  y **[!UICONTROL Maximum Qty Discount is Applied To]**.
+* **ACSD-61667** (para Adobe Commerce y Magento Open Source >=2.4.4 &lt;2.4.8): mejora el rendimiento del inventario para crear envíos en el caso de muchos orígenes con recogida en tienda.
+* **ACSD-61969** (para Adobe Commerce >=2.4.7 &lt;2.4.8): corrige el problema en el que el usuario debe escribir un código de cupón que distingue entre mayúsculas y minúsculas para que coincida exactamente como se configuró el código de cupón.
+* Revisiones actualizadas: ACSD-54989, ACSD-60632
 
 ## v1.1.52 {#v1-1-52}
 
