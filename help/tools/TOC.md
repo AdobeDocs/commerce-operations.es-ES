@@ -2,9 +2,9 @@
 user-guide-title: Herramientas
 user-guide-description: Obtenga información sobre las distintas herramientas que puede utilizar con Adobe Commerce, sus usos, el proceso de instalación y cómo obtener acceso.
 feature: Configuration
-source-git-commit: 593d2f2fc5850e08f9568dba56d7b0c3378d9fbe
+source-git-commit: 3efc57161e30a17dae50a52060a78698997649f0
 workflow-type: tm+mt
-source-wordcount: '6050'
+source-wordcount: '6061'
 ht-degree: 0%
 
 ---
@@ -640,6 +640,7 @@ ht-degree: 0%
          - [ACSD-60590: Mejora del rendimiento de la generación de informes diarios agregados de éxito de ventas](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-60590-optimized-bestseller-report-generation.md)
          - [ACSD-59925: ordenando elementos en [!UICONTROL Media Gallery]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-59925-sorting-items-in-media-gallery.md)
          - [ACSD-59865: [!UICONTROL Cart Price Rule] no puede cancelar las reglas anteriores debido a una cantidad insuficiente](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-59865-cart-price-rule-fix-for-insufficient-quantity-issue.md)
+         - [ACSD-60788: no se ejecutaron los scripts personalizados para  [!DNL Google Tag Manager] debido a errores de CSP](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-60788-fixes-issue-where-custom-scripts-for-google-tag-manager-are-not-executed-due-to-content-security-policy-errors.md)
          - [ACSD-59952: Error al eliminar el catálogo compartido con el mismo ID de grupo que otro catálogo compartido](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-59952-error-on-deleting-shared-catalog-with-same-group-id-as-another-shared-catalog.md)
       - v1.1.53 {#v1-1-53}
          - [Información general:  [!DNL Quality Patches Tool] (QPT) v1.1.53](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/overview.md)
