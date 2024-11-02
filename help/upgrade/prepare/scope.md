@@ -2,7 +2,7 @@
 title: Comprender el ámbito de actualización
 description: Obtenga información acerca de los cambios incompatibles con versiones anteriores en una versión que podrían afectar a los módulos personalizados de Adobe Commerce o a las extensiones de terceros.
 exl-id: dab2a14f-dbf0-422e-afb4-642e2220ec7a
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '897'
 ht-degree: 0%
@@ -11,14 +11,14 @@ ht-degree: 0%
 
 # Comprender el ámbito de la actualización
 
-Revise las [notas de la versión](https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html) para comprender el ámbito de una versión, incluidas las mejoras, las correcciones de errores y los problemas conocidos que podrían afectar a los módulos personalizados y de terceros.
+Revise las [notas de la versión](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview) para comprender el ámbito de una versión, incluidas las mejoras, las correcciones de errores y los problemas conocidos que podrían afectar a los módulos personalizados y de terceros.
 
 ## Cambios incompatibles con versiones anteriores
 
 Las versiones de Adobe Commerce pueden contener cambios incompatibles con versiones anteriores. Revise la documentación de cambios incompatibles con versiones anteriores, consulte lo siguiente:
 
-- **[Cambios importantes](https://devdocs.magento.com/guides/v2.4/release-notes/backward-incompatible-changes/index.html)**: cambios que tienen un impacto importante y requieren una explicación detallada e instrucciones especiales para garantizar que los módulos de terceros sigan funcionando.
-- **[Referencia de cambio menor](https://devdocs.magento.com/guides/v2.4/release-notes/backward-incompatible-changes/reference.html)**: documentación de referencia generada a partir de la base de código que describe cambios menores en las clases, pertenencia a API, base de datos, inyección de dependencias, interfaces, diseños, sistema y XSD.
+- **[Cambios importantes](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/highlights/)**: cambios que tienen un impacto importante y requieren una explicación detallada e instrucciones especiales para garantizar que los módulos de terceros sigan funcionando.
+- **[Referencia de cambio menor](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/reference/)**: documentación de referencia generada a partir de la base de código que describe cambios menores en las clases, pertenencia a API, base de datos, inyección de dependencias, interfaces, diseños, sistema y XSD.
 
 ## Extensiones de terceros
 
@@ -26,7 +26,7 @@ La nueva directiva de compatibilidad de Adobe Commerce Marketplace garantiza que
 
 ## Módulos personalizados
 
-Todos los módulos personalizados deben comprobarse con la versión de destino a la que desee actualizar. Este es el proceso de actualización que requiere más tiempo y recursos. Al evaluar los módulos personalizados, debe buscar cambios incompatibles con versiones anteriores y tener en cuenta las nuevas prácticas, como la descomposición del controlador. Puede obtener más información sobre esto en [notas de la versión](https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html). Además, asegúrese de seguir las [prácticas recomendadas](https://developer.adobe.com/commerce/php/best-practices/extensions/) para el desarrollo de módulos.
+Todos los módulos personalizados deben comprobarse con la versión de destino a la que desee actualizar. Este es el proceso de actualización que requiere más tiempo y recursos. Al evaluar los módulos personalizados, debe buscar cambios incompatibles con versiones anteriores y tener en cuenta las nuevas prácticas, como la descomposición del controlador. Puede obtener más información sobre esto en [notas de la versión](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview). Además, asegúrese de seguir las [prácticas recomendadas](https://developer.adobe.com/commerce/php/best-practices/extensions/) para el desarrollo de módulos.
 
 ## [!DNL Upgrade Compatibility Tool]
 

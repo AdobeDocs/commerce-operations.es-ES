@@ -2,7 +2,7 @@
 title: Ejecutar las utilidades de soporte
 description: Solucione los problemas del proyecto de Commerce mediante la utilidad de soporte integrada.
 exl-id: 021b795f-e00d-43b5-9cbb-5b57a4795be7
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '461'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 {{file-system-owner}}
 
-Las utilidades de soporte de Adobe Commerce, también denominadas [Recopilador de datos](https://docs.magento.com/user-guide/system/support-data-collector.html), permiten a los usuarios recopilar información de solución de problemas acerca del sistema que puede usar nuestro equipo de soporte.
+Las utilidades de soporte de Adobe Commerce, también denominadas [Recopilador de datos](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/support#data-collector), permiten a los usuarios recopilar información de solución de problemas acerca del sistema que puede usar nuestro equipo de soporte.
 
 Adobe Commerce usa estas copias de seguridad, también denominadas _volcados_, para analizar los problemas que requieren acceso al código. A continuación se muestra un escenario típico:
 

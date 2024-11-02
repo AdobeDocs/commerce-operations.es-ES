@@ -2,7 +2,7 @@
 title: Cómo acceder a  [!DNL Site-Wide Analysis Tool]
 description: Obtenga información sobre cómo obtener acceso a  [!DNL Site-Wide Analysis Tool]
 exl-id: b691fb2c-8d66-4cf9-8612-bbcb4df5b95f
-source-git-commit: 18416ae29cee182a5d088069065d73814fc7d860
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '529'
 ht-degree: 0%
@@ -15,7 +15,7 @@ Existen dos maneras de tener acceso a [!DNL Site-Wide Analysis Tool Dashboard].
 
 Puede acceder a [!DNL dashboard] desde el [[!DNL Site-Wide Analysis Tool] sitio web](https://supportinsights.adobe.com/commerce) directamente **(solo para Adobe Commerce en la infraestructura en la nube)** e iniciar sesión con su Adobe ID, o acceder a través de [!DNL dashboard] desde el [!DNL Admin Panel] de su tienda.
 
-El servicio [!DNL Site-Wide Analysis Tool] está disponible en [modo de producción](https://docs.magento.com/user-guide/magento/installation-modes.html) para [!DNL Admin] usuarios con permiso para obtener acceso al usuario [recursos de rol](https://docs.magento.com/user-guide/system/permissions-user-roles.html).
+El servicio [!DNL Site-Wide Analysis Tool] está disponible en [modo de producción](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/developer-tools#operation-modes) para [!DNL Admin] usuarios con permiso para obtener acceso al usuario [recursos de rol](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/user-accounts/permissions-user-roles).
 
 >[!NOTE]
 >
@@ -46,7 +46,7 @@ Consulta más detalles en [Compartir una [!DNL Commerce] cuenta](https://experie
 
 ### Paso 1: Verificar los permisos
 
-Compruebe que la cuenta de usuario [!DNL Admin] tiene permiso para obtener acceso a [!DNL Site-Wide Analysis Tool] a través de su [función de usuario asignada](https://docs.magento.com/user-guide/system/permissions-user-roles.html).
+Compruebe que la cuenta de usuario [!DNL Admin] tiene permiso para obtener acceso a [!DNL Site-Wide Analysis Tool] a través de su [función de usuario asignada](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/user-accounts/permissions-user-roles).
 
 >[!IMPORTANT]
 >

@@ -2,7 +2,7 @@
 title: Configure varios sitios web, tiendas y vistas de tiendas en el Administrador de
 description: Configure sitios web, tiendas y vistas de tiendas adicionales en el administrador de Commerce.
 exl-id: e6b4d14d-7504-48f9-a2e1-7e9a1bc76ab9
-source-git-commit: f7c82844fd6d006e4ebbcf56f6e10338f67d0bdd
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '1052'
 ht-degree: 0%
@@ -13,10 +13,10 @@ ht-degree: 0%
 
 Esta tarea requiere que cree una categoría raíz (y categorías adicionales, si lo desea) para cada tienda. Las tareas que se tratan en este tema proporcionan una forma de configurar varias tiendas. Para obtener más información, consulte los siguientes recursos en la Guía del usuario de Commerce:
 
-- [Categorías](https://docs.magento.com/user-guide/catalog/categories.html)
-- [Agregando sitios web](https://docs.magento.com/user-guide/stores/stores-all-create-website.html)
-- [URL de almacenamiento](https://docs.magento.com/user-guide/stores/store-urls.html)
-- [Contenido](https://docs.magento.com/user-guide/cms/content-menu.html)
+- [Categorías](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/categories)
+- [Agregando sitios web](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/stores#add-websites)
+- [URL de almacenamiento](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-urls)
+- [Contenido](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/content-menu)
 
 >[!INFO]
 >
@@ -34,7 +34,7 @@ Para crear una categoría raíz:
 1. En el campo **Nombre de categoría**, escriba un nombre único para identificar esta categoría.
 1. Asegúrese de que Habilitar categoría está establecida en **Sí**.
 
-   Para obtener información acerca de las demás opciones de esta página, vea [Categorías raíz](https://docs.magento.com/user-guide/catalog/category-root.html).
+   Para obtener información acerca de las demás opciones de esta página, vea [Categorías raíz](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/category-root).
 
    La siguiente figura muestra un ejemplo.
 
@@ -131,7 +131,7 @@ Commerce le da la opción de agregar el código de tienda a la dirección URL de
 
 Esto evita que `index.php` y `.htaccess` se desincronicen con el código base de Commerce en futuras actualizaciones.
 
-Consulte la [Guía del usuario de Commerce](https://docs.magento.com/user-guide/stores/store-urls.html).
+Consulte la [Guía del usuario de Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-urls).
 
 Para agregar el código de tienda a la dirección URL base:
 

@@ -3,7 +3,7 @@ title: "ACSD-44938: VAT_ID no se puede aplicar en la solicitud de GraphQL para e
 description: El parche ACSD-44938 corrige el problema en el que el VAT_ID no se puede aplicar en una solicitud de GraphQL para un usuario invitado. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.18. El ID del parche es ACSD-44938. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.6.
 feature: Admin Workspace, GraphQL
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+source-git-commit: 79c8a15fb9686dd26d73805e9d0fd18bb987770d
 workflow-type: tm+mt
 source-wordcount: '412'
 ht-degree: 0%
@@ -34,12 +34,12 @@ VAT_ID no se puede aplicar en una petición GraphQL para un usuario invitado.
 
 <u>Pasos a seguir</u>:
 
-1. Siga los pasos mencionados en el [tutorial de GraphQL](https://devdocs.magento.com/guides/v2.4/graphql/tutorials/checkout/checkout-shopping-cart.html) en nuestra documentación para desarrolladores para crear un carro de compras de invitado.
+1. Siga los pasos mencionados en el [tutorial de GraphQL](https://developer.adobe.com/commerce/webapi/graphql/tutorials/checkout/checkout-shopping-cart.html) en nuestra documentación para desarrolladores para crear un carro de compras de invitado.
 1. Intente aplicar VAT_ID al usuario invitado que utiliza GraphQL.
 
 <u>Resultados esperados</u>:
 
-VAT_ID se puede aplicar de la misma manera que para un cliente registrado. Consulte el artículo [createCustomerAddress mutation](https://devdocs.magento.com/guides/v2.4/graphql/mutations/create-customer-address.html) en nuestra documentación para desarrolladores.
+VAT_ID se puede aplicar de la misma manera que para un cliente registrado. Consulte el artículo [createCustomerAddress mutation](https://developer.adobe.com/commerce/webapi/graphql/mutations/create-customer-address.html) en nuestra documentación para desarrolladores.
 
 <u>Resultados reales</u>:
 

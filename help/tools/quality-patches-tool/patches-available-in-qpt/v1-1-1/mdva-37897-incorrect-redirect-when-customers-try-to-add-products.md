@@ -3,7 +3,7 @@ title: "MDVA-37897: Redirección incorrecta al añadir productos de Vistos recie
 description: El parche MDVA-37897 resuelve el problema de la redirección incorrecta cuando los usuarios intentan agregar productos con opciones del widget de elementos visualizados recientemente. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.1. El ID del parche es MDVA-37897. Tenga en cuenta que está programado que el problema se corrija en la versión 2.4.4 de Adobe Commerce.
 feature: Products
 role: Admin
-source-git-commit: c1055ed10813aa6e585f93ec3091d216af06affd
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '449'
 ht-degree: 0%
@@ -51,8 +51,8 @@ Se le redirigirá a la página de lista de productos.
 
 Para aplicar parches individuales, utilice los siguientes vínculos en función del tipo de implementación:
 
-* Adobe Commerce on-premise: [Guía de actualización de software > Aplicar parches](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) en nuestra documentación para desarrolladores.
-* Adobe Commerce en nuestra infraestructura de nube: [Actualizaciones y parches > Aplicar parches](https://devdocs.magento.com/cloud/project/project-patch.html) en nuestra documentación para desarrolladores.
+* Adobe Commerce on-premise: [Guía de actualización de software > Aplicar parches](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage) en nuestra documentación para desarrolladores.
+* Adobe Commerce en nuestra infraestructura de nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) en nuestra documentación para desarrolladores.
 
 ## Lectura relacionada
 

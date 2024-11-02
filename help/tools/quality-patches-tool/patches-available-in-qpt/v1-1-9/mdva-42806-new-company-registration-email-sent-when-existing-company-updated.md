@@ -3,7 +3,7 @@ title: "MDVA-42806: Se envía un nuevo correo electrónico de registro de empres
 description: El parche MDVA-42806 soluciona el problema de enviar un nuevo correo electrónico de registro de empresa cada vez que se actualiza una empresa existente mediante la API de REST. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.9. El ID del parche es MDVA-42806. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.5.
 feature: REST, B2B, Communications, Companies
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '431'
 ht-degree: 0%
@@ -39,7 +39,7 @@ Módulos B2B instalados.
 <u>Pasos a seguir</u>:
 
 1. Cree una cuenta de compañía.
-1. Usar extremo `/V1&#x200B;/company&#x200B;/<company_id>`. Para actualizar la compañía creada, consulta [actualizar la compañía](https://devdocs.magento.com/guides/v2.4/b2b/company-object.html#update-the-company) en nuestra documentación para desarrolladores. A continuación se muestra un ejemplo de carga útil:
+1. Usar extremo `/V1&#x200B;/company&#x200B;/<company_id>`. Para actualizar la compañía creada, consulta [actualizar la compañía](https://developer.adobe.com/commerce/webapi/rest/b2b/company-object/#update-the-company) en nuestra documentación para desarrolladores. A continuación se muestra un ejemplo de carga útil:
 
 ```php
 {

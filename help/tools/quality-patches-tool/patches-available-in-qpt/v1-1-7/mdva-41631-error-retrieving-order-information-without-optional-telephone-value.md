@@ -3,7 +3,7 @@ title: 'MDVA-41631: Error al recuperar la información del pedido sin el valor "
 description: El parche MDVA-41631 corrige el problema en el que los usuarios obtienen un error al recuperar la información del pedido sin el valor "phone" opcional a través de GraphQL. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.7. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.4.
 feature: Orders
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+source-git-commit: 79c8a15fb9686dd26d73805e9d0fd18bb987770d
 workflow-type: tm+mt
 source-wordcount: '415'
 ht-degree: 0%
@@ -36,8 +36,8 @@ Los usuarios obtienen un error al recuperar la información del pedido sin el va
 
 1. Vaya a **Tienda** > **Configuración** > **Clientes** > **Configuración del cliente** > **Opciones de nombre y dirección** > **Mostrar teléfono** y establezca el número de teléfono como opcional.
 1. Realice un pedido utilizando la API de GraphQL como cliente registrado.
-   * No configure el número de teléfono al configurar las direcciones de facturación y envío. Siga las instrucciones que se dan en [Tutorial de cierre de compra de GraphQL](https://devdocs.magento.com/guides/v2.4/graphql/tutorials/checkout/checkout-customer.html) en nuestra documentación para desarrolladores.
-1. Recupere el pedido mediante la consulta de GraphQL [customerOrders](https://devdocs.magento.com/guides/v2.4/graphql/queries/customer-orders.html).
+   * No configure el número de teléfono al configurar las direcciones de facturación y envío. Siga las instrucciones que se dan en [Tutorial de cierre de compra de GraphQL](https://developer.adobe.com/commerce/webapi/graphql/tutorials/checkout/checkout-customer.html) en nuestra documentación para desarrolladores.
+1. Recupere el pedido mediante la consulta de GraphQL [customerOrders](https://developer.adobe.com/commerce/webapi/graphql/queries/customer-orders.html).
 
 <pre>
 <code class="language-graphql">

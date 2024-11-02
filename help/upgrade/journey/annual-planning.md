@@ -2,7 +2,7 @@
 title: Planificación anual de actualizaciones
 description: Revise sugerencias para crear un plan de actualización anual para su proyecto de Adobe Commerce.
 exl-id: f28e5ad1-28ac-4419-a507-63d79dbd6376
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '221'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Muchas empresas trabajan con presupuestos anuales y hojas de ruta. Durante estas discusiones anuales, es imperativo que hable sobre el estado, la dirección y la estrategia de actualización de la plataforma durante el año, junto con cómo se adapta a los objetivos generales y a los indicadores clave de rendimiento (KPI) de la empresa.
 
-Siguiendo la [programación de versiones](https://devdocs.magento.com/release/), asigne las ventanas de presupuesto y lanzamiento para las actualizaciones, evitando festivos, cierres de empresas y horas punta. Si comprende la programación de versiones de Adobe y se mantiene informado de los cambios y las mejoras que forman parte de cada versión a través de las [notas de la versión](https://devdocs.magento.com/guides/v2.4/release-notes/bk-release-notes.html), podrá planificar mejor su año.
+Siguiendo la [programación de versiones](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule), asigne las ventanas de presupuesto y lanzamiento para las actualizaciones, evitando festivos, cierres de empresas y horas punta. Si comprende la programación de versiones de Adobe y se mantiene informado de los cambios y las mejoras que forman parte de cada versión a través de las [notas de la versión](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview), podrá planificar mejor su año.
 
 Durante la planificación, es posible que desee preguntarse:
 

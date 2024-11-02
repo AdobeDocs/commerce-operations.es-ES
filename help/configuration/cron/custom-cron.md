@@ -2,7 +2,7 @@
 title: Trabajos cron
 description: Obtenga información acerca de los grupos de cron y la creación de un trabajo de cron personalizado.
 exl-id: a9d83af7-9979-4653-adc9-30ffeb13a5ce
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '155'
 ht-degree: 0%
@@ -21,5 +21,5 @@ La aplicación de Commerce proporciona los siguientes grupos cron:
 - `index`, que actualiza [indexadores](../cli/manage-indexers.md)
 - `consumers`, que ejecuta la cola de mensajes [consumidores](../cli/start-message-queues.md)
 - Estos temas solo están disponibles en Adobe Commerce
-   - `staging`, que ejecuta [tareas relacionadas con el ensayo](https://docs.magento.com/user-guide/cms/content-staging.html)
+   - `staging`, que ejecuta [tareas relacionadas con el ensayo](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/staging/content-staging)
    - `catalog_event`, que ejecuta tareas para el destino y reglas del carro de compras

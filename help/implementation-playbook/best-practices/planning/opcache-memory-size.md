@@ -4,7 +4,7 @@ description: Describe cómo evitar la degradación del rendimiento mediante la c
 role: Developer
 feature: Best Practices
 exl-id: d1e10068-e4e8-4e75-9f30-f3a89a08d791
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '138'
 ht-degree: 1%
@@ -27,7 +27,7 @@ Asigne al menos **2 GB** de memoria para el [módulo PHP de OPcache](https://www
 ## Más información
 
 * [Prácticas recomendadas de rendimiento - Configuración de PHP](../../../performance/software.md#php-settings)
-* [Configurar opciones de PHP](https://devdocs.magento.com/cloud/project/project-conf-files_magento-app.html#customize-phpini-settings)
+* [Configurar opciones de PHP](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/start/overview)
 * [Prácticas recomendadas de bases de datos para Adobe Commerce en infraestructura en la nube](database-on-cloud.md)
 * [Problemas más comunes de las bases de datos en Adobe Commerce sobre la infraestructura en la nube](../maintenance/resolve-database-performance-issues.md)
 * [Indexadores &quot;Actualización según lo programado&quot; optimiza el rendimiento de Adobe Commerce](../maintenance/indexer-configuration.md)

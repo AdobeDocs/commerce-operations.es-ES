@@ -4,7 +4,7 @@ description: Obtenga información sobre cómo configurar la base de datos y la c
 role: Developer, Admin
 feature: Best Practices
 exl-id: ca377dc8-c8bd-4f77-a24b-22a298e2bba4
-source-git-commit: fb449f0ee7d503d0c7ba60bf6bfbe3f528060606
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '651'
 ht-degree: 0%
@@ -59,9 +59,9 @@ Para determinar qué motor de búsqueda está actualmente en uso, ejecute el sig
 
 Para obtener instrucciones de configuración, consulte la Guía del desarrollador de Adobe Commerce en la nube:
 
-- [Configurar el servicio OpenSearch](https://devdocs.magento.com/cloud/project/services-opensearch.html)
+- [Configurar el servicio OpenSearch](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/opensearch)
 
-- [Configurar el servicio de Elasticsearch](https://devdocs.magento.com/cloud/project/services-elastic.html)
+- [Configurar el servicio de Elasticsearch](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/elasticsearch)
 
 ## Evitar déclencheur personalizados
 
@@ -76,7 +76,7 @@ Para obtener más información sobre alternativas al uso de déclencheur persona
 
 ## Actualizar [!DNL ECE-Tools] a la versión 2002.0.21 o superior {#ece-tools-version}
 
-Para evitar posibles problemas con los interbloqueos de cron, actualice ECE-Tools a la versión 2002.0.21 o superior. Para obtener instrucciones, consulte [Actualizar `ece-tools` versión](https://devdocs.magento.com/cloud/project/ece-tools-update.html) en nuestra documentación para desarrolladores.
+Para evitar posibles problemas con los interbloqueos de cron, actualice ECE-Tools a la versión 2002.0.21 o superior. Para obtener instrucciones, consulte [Actualizar `ece-tools` versión](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package) en nuestra documentación para desarrolladores.
 
 ## Cambiar el modo del indexador con seguridad
 

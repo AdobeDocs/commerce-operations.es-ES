@@ -4,7 +4,7 @@ description: Mantenga y optimice el rendimiento del sitio siguiendo las práctic
 role: Admin, User
 feature: Best Practices
 exl-id: b35806f9-4bc6-407e-bedd-5ce3f09c1b9f
-source-git-commit: 153cf3bae74a78d7a41176e0216203d354d2513b
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '296'
 ht-degree: 0%
@@ -35,7 +35,7 @@ Tener un almacén grande con varios administradores trabajando en el backend o t
 Para maximizar el rendimiento del sitio, siga estas prácticas recomendadas para la indexación:
 
 - Revise la configuración del índice.
-- Establezca los indexadores en _[!UICONTROL Update on Schedule]_para sitios grandes y sitios con actualizaciones frecuentes y tráfico intenso. Consulte [Administración de índices](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode).
+- Establezca los indexadores en _[!UICONTROL Update on Schedule]_para sitios grandes y sitios con actualizaciones frecuentes y tráfico intenso. Consulte [Administración de índices](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management#change-the-index-mode).
 - Siga [prácticas recomendadas de rendimiento](../../../performance/configuration.md) para administrar índices.
 
 >[!IMPORTANT]

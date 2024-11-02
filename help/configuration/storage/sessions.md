@@ -3,7 +3,7 @@ title: Ubicación de almacenamiento de sesión
 description: Descubra dónde se almacenan los archivos de sesión.
 feature: Configuration, Storage
 exl-id: 43cab98a-5b68-492e-b891-8db4cc99184e
-source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '257'
 ht-degree: 0%
@@ -41,7 +41,7 @@ Como usuario con privilegios de `root`, abra el archivo `php.ini` y busque el va
 
 ## Administrar tamaño de sesión
 
-Consulte [Administración de sesión](https://docs.magento.com/user-guide/stores/security-session-management.html) en la _Guía del usuario_.
+Consulte [Administración de sesión](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-session-management) en la _Guía del usuario_.
 
 ## Configuración de recolección de basura
 

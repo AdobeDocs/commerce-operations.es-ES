@@ -2,7 +2,7 @@
 title: Realizar una copia de seguridad y una reversión del sistema de archivos, medios y base de datos
 description: Siga estos pasos para realizar una copia de seguridad y restaurar la aplicación de Adobe Commerce.
 exl-id: b9925198-37b4-4456-aa82-7c55d060c9eb
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '506'
 ht-degree: 0%
@@ -23,7 +23,7 @@ Después de hacer la copia de seguridad, puedes [revertir](#rollback) más tarde
 
 >[!TIP]
 >
->Para Adobe Commerce sobre proyectos de infraestructura en la nube, consulte [Administración de instantáneas y copias de seguridad](https://devdocs.magento.com/cloud/project/project-webint-snap.html) en la _Guía de la nube_.
+>Para Adobe Commerce sobre proyectos de infraestructura en la nube, consulte [Administración de instantáneas y copias de seguridad](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots) en la _Guía de la nube_.
 
 ## Habilitar copias de seguridad
 

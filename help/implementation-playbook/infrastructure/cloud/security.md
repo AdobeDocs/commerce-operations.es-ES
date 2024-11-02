@@ -3,7 +3,7 @@ title: Seguridad de infraestructura en nube
 description: Obtenga información sobre cómo el Adobe mantiene seguro Adobe Commerce en la infraestructura en la nube.
 exl-id: cd5d1106-c8db-4b70-b1c7-12378d7d77a7
 feature: Cloud, Security
-source-git-commit: 8d8cd0d33c1a3a95186948e670df6d9865b9a871
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '1691'
 ht-degree: 0%
@@ -27,9 +27,9 @@ Consulte [Información general sobre los servicios de Fastly](https://experience
 
 ## Cortafuegos de aplicación web
 
-El firewall de aplicaciones web de Fastly (WAF) se utiliza para proporcionar protección adicional. El WAF basado en la nube de Fastly utiliza reglas de terceros de fuentes comerciales y de código abierto como el Conjunto de reglas principal de OWASP. Además, se emplean reglas específicas de Adobe Commerce. Los clientes están protegidos de ataques clave en la capa de aplicación, incluidos ataques de inyección e entradas malintencionadas, scripts entre sitios, exfiltración de datos, violaciones del protocolo HTTP y otras diez amenazas principales de OWASP.
+El firewall de aplicaciones web de Fastly (WAF) se utiliza para proporcionar protección adicional. WAF, basado en la nube de Fastly, utiliza reglas de terceros de fuentes comerciales y de código abierto como el conjunto de reglas principal de OWASP. Además, se emplean reglas específicas de Adobe Commerce. Los clientes están protegidos frente a ataques clave en el nivel de la aplicación, incluidos ataques de inyección e entradas malintencionadas, scripts entre sitios, exfiltración de datos, infracciones del protocolo HTTP y otras diez amenazas principales de OWASP.
 
-Adobe Commerce actualiza las reglas WAF en caso de que se detecten nuevas vulnerabilidades que permitan a Managed Services &quot;aplicar parches virtuales&quot; a los problemas de seguridad antes de aplicar parches de software. Fastly WAF no proporciona servicios de limitación de velocidad o detección de bots. Si lo desea, los clientes pueden obtener una licencia de un servicio de detección de bots de terceros compatible con Fastly.
+Adobe Commerce actualiza las reglas de WAF en caso de que se detecten nuevas vulnerabilidades que permitan a Managed Services &quot;aplicar parches virtuales&quot; a los problemas de seguridad antes de aplicar parches de software. Fastly WAF no proporciona servicios de limitación de velocidad o detección de bots. Si lo desea, los clientes pueden obtener una licencia de un servicio de detección de bots de terceros compatible con Fastly.
 
 Consulte [Firewall de aplicaciones web (WAF)](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly-waf-service.html) en la _Guía de nube_.
 
@@ -59,7 +59,7 @@ Adobe Commerce requiere integraciones de puerta de enlace de pago en las que los
 
 ## aplicación de Adobe Commerce
 
-El Adobe prueba regularmente el código de la aplicación principal para detectar vulnerabilidades de seguridad. Los parches para defectos y problemas de seguridad se proporcionan a los clientes. El equipo de seguridad del producto valida los productos de Adobe Commerce siguiendo las directrices de seguridad de la aplicación OWASP. Para probar y verificar el cumplimiento se utilizan varias herramientas de evaluación de vulnerabilidades de seguridad y proveedores externos. Las herramientas de seguridad incluyen:
+El Adobe prueba regularmente el código de la aplicación principal para detectar vulnerabilidades de seguridad. Los parches para defectos y problemas de seguridad se proporcionan a los clientes. El equipo de seguridad del producto valida los productos de Adobe Commerce siguiendo las directrices de seguridad de la aplicación de OWASP. Para probar y verificar el cumplimiento se utilizan varias herramientas de evaluación de vulnerabilidades de seguridad y proveedores externos. Las herramientas de seguridad incluyen:
 
 - Escaneado estático y dinámico de Veracode
 - Análisis del código fuente RIPS
@@ -70,7 +70,7 @@ El Adobe prueba regularmente el código de la aplicación principal para detecta
 
 La base de código completa se analiza con estas herramientas cada dos semanas. Los parches de seguridad se notifican a los clientes por correo electrónico directo, en la aplicación y en el [Centro de seguridad](https://helpx.adobe.com/security.html).
 
-Los clientes deben asegurarse de que estos parches se aplican a su aplicación personalizada dentro de los 30 días posteriores al lanzamiento, según las directrices de PCI. El Adobe también proporciona una [Herramienta de análisis de seguridad](https://docs.magento.com/user-guide/magento/security-scan.html) que permite a los comerciantes supervisar sus sitios con regularidad y recibir actualizaciones sobre riesgos de seguridad conocidos, malware y acceso no autorizado. Security Scan Tool es un servicio gratuito que se puede ejecutar en cualquier versión de Adobe Commerce.
+Los clientes deben asegurarse de que estos parches se aplican a su aplicación personalizada dentro de los 30 días posteriores al lanzamiento, según las directrices de PCI. El Adobe también proporciona una [Herramienta de análisis de seguridad](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-scan) que permite a los comerciantes supervisar sus sitios con regularidad y recibir actualizaciones sobre riesgos de seguridad conocidos, malware y acceso no autorizado. Security Scan Tool es un servicio gratuito que se puede ejecutar en cualquier versión de Adobe Commerce.
 
 Para animar a los investigadores de seguridad a identificar y notificar vulnerabilidades, Adobe Commerce tiene un [programa de devolución de errores](https://hackerone.com/magento), además de pruebas internas. Además, se proporciona al cliente el código fuente completo de la aplicación para su propia revisión si lo desea.
 
@@ -84,7 +84,7 @@ La única manera de obtener código ejecutable en el entorno de producción de M
 
 ## Registro
 
-Todas las actividades de AWS están registradas en AWS CloudTrail. Los registros del sistema operativo, del servidor de aplicaciones y de la base de datos se almacenan en los servidores de producción y se almacenan en copias de seguridad. Todos los cambios en el código fuente se registran en un repositorio Git. El historial de implementación está disponible en la [interfaz web de proyectos](https://devdocs.magento.com/cloud/project/projects.html#login) de Adobe Commerce. Todo el acceso de asistencia se registra y las sesiones de asistencia se registran.
+Todas las actividades de AWS están registradas en AWS CloudTrail. Los registros del sistema operativo, del servidor de aplicaciones y de la base de datos se almacenan en los servidores de producción y se almacenan en copias de seguridad. Todos los cambios en el código fuente se registran en un repositorio Git. El historial de implementación está disponible en la [interfaz web de proyectos](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/project/overview) de Adobe Commerce. Todo el acceso de asistencia se registra y las sesiones de asistencia se registran.
 
 Consulte [Ver y administrar registros](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html) en la _Guía de Cloud_.
 

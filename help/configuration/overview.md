@@ -2,7 +2,7 @@
 title: Información general sobre la guía de configuración
 description: Obtenga información sobre todas las funciones y servicios configurables para su aplicación de Adobe Commerce.
 exl-id: c4997792-5a47-4ae5-903a-7e5d7235e42e
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '144'
 ht-degree: 9%
@@ -25,7 +25,7 @@ La guía _Configuración_ proporciona material de referencia e instrucciones lim
 
 ## Configuración de administración de Commerce
 
-Hay temas correspondientes en la [Guía del usuario de Commerce](https://docs.magento.com/user-guide/stores/configuration.html) que pueden ayudarle a comprender las descripciones de los campos de cada configuración en el Administrador de Commerce.
+Hay temas correspondientes en la [Guía del usuario de Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/config/guide-overview) que pueden ayudarle a comprender las descripciones de los campos de cada configuración en el Administrador de Commerce.
 
 ## Configuración de nube
 

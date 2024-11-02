@@ -3,7 +3,7 @@ title: Configurar almacenamiento remoto
 description: Obtenga información sobre cómo configurar el módulo Almacenamiento remoto para la aplicación Commerce local.
 feature: Configuration, Storage
 exl-id: 0428f889-46b0-44c9-8bd9-98c1be797011
-source-git-commit: 2a45fe77d5a6fac089ae2c55d0ad047064dd07b0
+source-git-commit: 419a21604d1fda0a76dd0375ae2340fd6e59ec89
 workflow-type: tm+mt
 source-wordcount: '510'
 ht-degree: 0%
@@ -12,15 +12,27 @@ ht-degree: 0%
 
 # Configurar almacenamiento remoto
 
-El módulo Almacenamiento remoto proporciona la opción de almacenar archivos multimedia y programar importaciones y exportaciones en un contenedor de almacenamiento remoto persistente mediante un servicio de almacenamiento, como AWS S3. De forma predeterminada, la aplicación de Adobe Commerce almacena los archivos multimedia en el mismo sistema de archivos que contiene la aplicación. Esto no es eficaz para configuraciones complejas de varios servidores y puede provocar una reducción del rendimiento al compartir recursos. Con el módulo Almacenamiento remoto, puede almacenar archivos multimedia en el directorio `pub/media` e importar o exportar archivos en el directorio `var` del almacenamiento de objetos remotos para aprovechar el cambio de tamaño de las imágenes del lado del servidor.
+El módulo Almacenamiento remoto proporciona la opción de almacenar archivos multimedia y programar importaciones y exportaciones en un contenedor de almacenamiento remoto persistente mediante un servicio de almacenamiento, como AWS S3.
+
+De forma predeterminada, la aplicación de Adobe Commerce almacena los archivos multimedia en el mismo sistema de archivos que contiene la aplicación. Esto no es eficaz para configuraciones complejas de varios servidores y puede provocar una reducción del rendimiento al compartir recursos. Con el módulo Almacenamiento remoto, puede almacenar archivos multimedia en el directorio `pub/media` e importar o exportar archivos en el directorio `var` del almacenamiento de objetos remotos para aprovechar el cambio de tamaño de las imágenes del lado del servidor.
+
+>[!BEGINSHADEBOX]
+
+No puede tener habilitado simultáneamente el almacenamiento remoto _y el almacenamiento de la base de datos_. Debe deshabilitar el almacenamiento de la base de datos antes de habilitar el almacenamiento remoto.
+
+```bash
+bin/magento config:set system/media_storage_configuration/media_database 0
+```
+
+Si habilita el almacenamiento remoto, podría afectar a su experiencia de desarrollo establecida. Por ejemplo, algunas funciones de archivo PHP podrían no funcionar como se esperaba. Se debe aplicar el uso de Commerce Framework para operaciones de archivo. La lista de funciones nativas de PHP prohibidas está disponible en el repositorio [magento-coding-standard](https://github.com/magento/magento-coding-standard/blob/develop/Magento2/Sniffs/Functions/DiscouragedFunctionSniff.php).
+
+>[!ENDSHADEBOX]
 
 >[!INFO]
 >
->El almacenamiento remoto solo está disponible para la versión 2.4.2 y posteriores de Commerce. Ver las [notas de la versión 2.4.2](https://devdocs.magento.com/guides/v2.4/release-notes/open-source-2-4-2.html).
-
->[!INFO]
+>- El almacenamiento remoto solo está disponible para la versión 2.4.2 y posteriores de Commerce. Ver las [notas de la versión 2.4.2](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/magento-open-source/2-4-2).
 >
->El módulo de almacenamiento remoto tiene compatibilidad con _limited_ en Adobe Commerce en la infraestructura en la nube. El Adobe no puede solucionar por completo el problema del servicio del adaptador de almacenamiento de terceros. Consulte [Configuración del almacenamiento remoto para Commerce en la infraestructura en la nube](cloud-support.md) para obtener instrucciones sobre la implementación del almacenamiento remoto para proyectos en la nube.
+>- El módulo de almacenamiento remoto tiene compatibilidad con _limited_ en Adobe Commerce en la infraestructura en la nube. El Adobe no puede solucionar por completo el problema del servicio del adaptador de almacenamiento de terceros. Consulte [Configuración del almacenamiento remoto para Commerce en la infraestructura en la nube](cloud-support.md) para obtener instrucciones sobre la implementación del almacenamiento remoto para proyectos en la nube.
 
 ![imagen de esquema](../../assets/configuration/remote-storage-schema.png)
 
@@ -69,18 +81,6 @@ Puede instalar almacenamiento remoto durante una instalación de Adobe Commerce 
 >
 >Para Adobe Commerce sobre la infraestructura en la nube, consulte [Configuración del almacenamiento remoto para Commerce en la infraestructura en la nube](cloud-support.md).
 
-## Limitaciones
-
-No puede tener habilitados simultáneamente el almacenamiento remoto y el almacenamiento de base de datos. Deshabilite el almacenamiento de la base de datos si utiliza el almacenamiento remoto.
-
-```bash
-bin/magento config:set system/media_storage_configuration/media_database 0
-```
-
-Si habilita el almacenamiento remoto, podría afectar a su experiencia de desarrollo establecida. Por ejemplo, algunas funciones de archivo PHP podrían no funcionar como se esperaba. Se debe aplicar el uso de Commerce Framework para operaciones de archivo.
-
-La lista de funciones nativas de PHP prohibidas está disponible en [repositorio magento-coding-standard][code-standard].
-
 ## Migrar contenido
 
 Después de habilitar el almacenamiento remoto para un adaptador específico, puede usar la CLI para migrar los archivos _media_ existentes al almacenamiento remoto.
@@ -96,4 +96,3 @@ Después de habilitar el almacenamiento remoto para un adaptador específico, pu
 <!-- link definitions -->
 
 [import-export]: https://docs.magento.com/user-guide/system/data-scheduled-import-export.html
-[code-standard]: https://github.com/magento/magento-coding-standard/blob/develop/Magento2/Sniffs/Functions/DiscouragedFunctionSniff.php

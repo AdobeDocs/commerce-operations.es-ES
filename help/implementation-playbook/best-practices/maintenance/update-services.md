@@ -4,7 +4,7 @@ description: Obtenga información sobre cómo mantener su Adobe Commerce en la p
 role: Developer
 feature: Best Practices
 exl-id: 62aeffe3-b5a6-49f8-a39b-3219b46cd486
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
 source-wordcount: '232'
 ht-degree: 0%
@@ -23,7 +23,7 @@ Adobe Commerce en la infraestructura en la nube 2.4.x y posterior
 
 Actualice los servicios y componentes que utiliza Adobe Commerce antes de que lleguen a la fecha de fin de vida útil o estén cerca de ella. Esto ayuda a cumplir con PCI y a disminuir las vulnerabilidades de seguridad.
 
-Los clientes con planes de inicio pueden autoabastecerse con actualizaciones de servicios. Consulte [Cambiar la versión del servicio](https://devdocs.magento.com/cloud/project/services.html#change-service-version) para obtener más información sobre cómo hacerlo.
+Los clientes con planes de inicio pueden autoabastecerse con actualizaciones de servicios. Consulte [Cambiar la versión del servicio](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/services-yaml#change-service-version) para obtener más información sobre cómo hacerlo.
 
 Los clientes con planes Pro solo pueden autoabastecerse con actualizaciones de servicios en su [entorno de integración](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/integration-environment-enhancement-request-pro-and-starter.html). Para las actualizaciones de servicios en Producción, debe [enviar un vale de soporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) solicitando la actualización.
 
