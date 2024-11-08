@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo mantener su Adobe Commerce en la p
 role: Developer
 feature: Best Practices
 exl-id: 62aeffe3-b5a6-49f8-a39b-3219b46cd486
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 5e3289b328b51eb50354efdc1571283791175b9a
 workflow-type: tm+mt
-source-wordcount: '232'
+source-wordcount: '243'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Los clientes con planes Pro solo pueden autoabastecerse con actualizaciones de s
 
 >[!WARNING]
 >
->Las actualizaciones de servicios no se pueden insertar en el entorno de producción sin un aviso de 48 horas laborables a nuestro equipo de infraestructura. Esto es necesario, ya que tenemos que asegurarnos de tener un ingeniero de asistencia técnica de infraestructura disponible para actualizar la configuración dentro de un periodo de tiempo deseado con un tiempo de inactividad mínimo en el entorno de producción.
+>Las actualizaciones de servicios no se pueden insertar en un entorno de producción sin un aviso de 48 horas laborables al equipo de infraestructura del Adobe. Esto es necesario para que el Adobe pueda garantizar que haya un ingeniero de asistencia técnica de infraestructura disponible para actualizar la configuración dentro de un periodo de tiempo deseado con un tiempo de inactividad mínimo en el entorno de producción. Adobe recomienda poner el sitio en modo de mantenimiento durante la actualización del servicio.
 
 Puede ver la lista de versiones del servicio y las fechas de finalización de la vida útil en el siguiente archivo: [https://github.com/magento/ece-tools/blob/develop/config/eol.yaml](https://github.com/magento/ece-tools/blob/develop/config/eol.yaml).
 
