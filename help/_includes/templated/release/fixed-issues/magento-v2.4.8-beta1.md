@@ -1,7 +1,7 @@
 ---
-source-git-commit: 2d46933005b9848fee526d0a9f96e2e5ff58cbb8
+source-git-commit: e05e4e4ef547bfb95fdcc53c2095ef0725b0a6e1
 workflow-type: tm+mt
-source-wordcount: '14732'
+source-wordcount: '14731'
 ht-degree: 0%
 
 ---
@@ -809,10 +809,10 @@ garantizar la compatibilidad y la funcionalidad actualizada. Anteriormente, la a
    * _Nota de corrección_: El sistema ahora solo agrega el país modificado a la configuración &#39;general/region/state_required&#39; cuando se agrega un nuevo país con estados requeridos, lo que evita cualquier interrupción en el código personalizado que supone que la región está deshabilitada. Anteriormente, si se agregaba un nuevo país con estados requeridos, se restablecía la configuración &quot;general/region/state_required&quot; a los países predeterminados con un estado requerido, lo que podría romper la tienda.
    * _Problema de GitHub_: <https://github.com/magento/magento2/issues/37796>
    * _Contribución de código de GitHub_: <https://github.com/magento/magento2/pull/38076>
-* _AC-9712_: https://github.com/magento/magento2/issues/37841
-   * _Nota de corrección_: Diferencia en menos compilación entre php y nodejs library (grunt) con expresiones `calc` complicadas
-   * _Problema de GitHub_: &lt;<https://github.com/magento/magento2/commit/b34c0a75>>
-   * _Contribución de código de GitHub_: Corrija la diferencia en menos compilación entre php y nodejs library (grunt) después de actualizar wikimedia/less.php:^5.x
+* _AC-9712_: Diferencia en menos compilación entre php y nodejs library (grunt) con expresiones `calc` complicadas
+   * _Nota de corrección_: Corrija la diferencia en menos compilación entre la biblioteca php y nodejs (grunt) después de la actualización wikimedia/less.php:^5.x
+   * _Problema de GitHub_: <https://github.com/magento/magento2/issues/37841>
+   * _Contribución de código de GitHub_: <https://github.com/magento/magento2/commit/b34c0a75>
 * _ACP2E-2692_: Error &quot;No se encontró la tabla o vista base&quot; al ejecutar la indexación parcial
    * _Nota de corrección_: el reíndice parcial ahora funciona correctamente con el registro de cambios grande en caso de conexión de base de datos secundaria
    * _Contribución de código de GitHub_: <https://github.com/magento/magento2/commit/ba25af8a>
