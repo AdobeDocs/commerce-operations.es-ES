@@ -2,9 +2,9 @@
 user-guide-title: Herramientas
 user-guide-description: Obtenga información sobre las distintas herramientas que puede utilizar con Adobe Commerce, sus usos, el proceso de instalación y cómo obtener acceso.
 feature: Configuration
-source-git-commit: 8fa763e2c5ec006f638b7265c49f4576a6ab3b32
+source-git-commit: 737c3195b775e5385065fdf0789addfa21aa81e3
 workflow-type: tm+mt
-source-wordcount: '6137'
+source-wordcount: '6151'
 ht-degree: 0%
 
 ---
@@ -652,6 +652,7 @@ ht-degree: 0%
          - [ACSD-60584: el token de acceso creado para un sitio web permite acceder a la información de otros sitios web](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-60584-access-token-created-for-one-website-is-allowed-to-access-information-on-other-websites.md)
          - [ACSD-61528: La recuperación de funciones mediante GraphQL no devuelve resultados](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-61528-retrieving-roles-using-graphql-returns-no-results.md)
          - [ACSD-48318: error de anidación de emulación de entorno en &quot;system.log&quot;](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-48318-environment-emulation-nesting-error-in-system-log.md)
+         - [ACSD-60804: La edición de un cliente asociado con una empresa eliminada provoca un error](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-60804-editing-customer-linked-to-deleted-company-causes-error.md)
       - v1.1.54 {#v1-1-54}
          - [Información general:  [!DNL Quality Patches Tool] (QPT) v1.1.54](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/overview.md)
       - [Comprobar parche para el problema de Adobe Commerce con la herramienta Parches de calidad](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
