@@ -1,7 +1,7 @@
 ---
-source-git-commit: d2fe92c778cb90912062c5f318332a02f6a4131e
+source-git-commit: 2d46933005b9848fee526d0a9f96e2e5ff58cbb8
 workflow-type: tm+mt
-source-wordcount: '14792'
+source-wordcount: '14732'
 ht-degree: 0%
 
 ---
@@ -144,7 +144,7 @@ garantizar la compatibilidad y la funcionalidad actualizada. Anteriormente, la a
 
 ## Problemas solucionados
 
-Hemos corregido 254 problemas en el código principal de Magento Open Source 2.4.8. A continuación, se describe un subconjunto de los problemas corregidos que se incluyen en esta versión.
+Hemos corregido 253 problemas en el código principal de Magento Open Source 2.4.8. A continuación, se describe un subconjunto de los problemas corregidos que se incluyen en esta versión.
 
 ### API
 
@@ -1143,10 +1143,6 @@ a bin/magento config:set twofactorauth/google/leeway VALUE
 * _AC-12128_: corrección de la vulnerabilidad de seguridad Prototype.js CVE-2020-27511
    * _Nota de corrección_: el sistema se ha actualizado para solucionar la vulnerabilidad de seguridad CVE-2020-27511 en Prototype.js 1.7.3, lo que mejora la seguridad general del sistema. Antes de esta actualización, el sistema era susceptible a una Denegación de servicio de expresión regular (ReDOS) mediante la eliminación de etiquetas de HTML creadas.
    * _Contribución de código de GitHub_: <https://github.com/magento/magento2/commit/de4dfb8e>
-* _AC-12128_:
-   * _Nota de corrección_: corrección de la vulnerabilidad de seguridad Prototype.js CVE-2020-27511
-   * _Problema de GitHub_: &lt;<https://github.com/magento/magento2/commit/de4dfb8e>>
-   * _Contribución de código de GitHub_: el sistema se ha actualizado para solucionar la vulnerabilidad de seguridad CVE-2020-27511 en Prototype.js 1.7.3, lo que mejora la seguridad general del sistema. Antes de esta actualización, el sistema era susceptible a una Denegación de servicio de expresión regular (ReDOS) mediante la eliminación de etiquetas de HTML creadas.
 * _AC-12189_: Grunt Less usa pub/ prefix para los mapas de origen
    * _Nota de corrección_: El sistema ahora genera mapas de origen de less/css sin el prefijo /pub para las rutas al usar grunt, lo que elimina la necesidad de una solución alternativa en la configuración del servidor web. Anteriormente, el uso del prefijo /pub en las rutas de mapas de origen requería una configuración específica en el servidor web para funcionar correctamente.
    * _Problema de GitHub_: <https://github.com/magento/magento2/issues/38837>
