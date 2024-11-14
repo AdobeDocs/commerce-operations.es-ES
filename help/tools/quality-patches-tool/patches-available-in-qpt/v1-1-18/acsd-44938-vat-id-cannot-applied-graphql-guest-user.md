@@ -1,18 +1,19 @@
 ---
-title: "ACSD-44938: VAT_ID no se puede aplicar en la solicitud de GraphQL para el usuario invitado"
-description: El parche ACSD-44938 corrige el problema en el que el VAT_ID no se puede aplicar en una solicitud de GraphQL para un usuario invitado. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.18. El ID del parche es ACSD-44938. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.6.
+title: "ACSD-44938: VAT_ID no se puede aplicar en  [!DNL GraphQL] solicitud de usuario invitado"
+description: El parche ACSD-44938 soluciona el problema en el que VAT_ID no se puede aplicar en una  [!DNL GraphQL] solicitud para un usuario invitado. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.18. El ID del parche es ACSD-44938. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.6.
 feature: Admin Workspace, GraphQL
 role: Admin
-source-git-commit: 79c8a15fb9686dd26d73805e9d0fd18bb987770d
+exl-id: 62d36c27-545a-4c32-be69-a92e4b3ca2ca
+source-git-commit: 3fdefc6201714c441d63574d293863e83205894b
 workflow-type: tm+mt
-source-wordcount: '412'
+source-wordcount: '396'
 ht-degree: 0%
 
 ---
 
-# ACSD-44938: VAT_ID no se puede aplicar en una solicitud de GraphQL para un usuario invitado
+# ACSD-44938: VAT_ID no se puede aplicar en la solicitud de [!DNL GraphQL] para el usuario invitado
 
-El parche ACSD-44938 corrige el problema en el que el VAT_ID no se puede aplicar en una solicitud de GraphQL para un usuario invitado. Este parche está disponible cuando está instalada la [Herramienta Parches de calidad (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.18. El ID del parche es ACSD-44938. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.6.
+La revisión ACSD-44938 corrige el problema en el cual `VAT_ID` no se puede aplicar en una solicitud [!DNL GraphQL] para un usuario invitado. Este parche está disponible cuando está instalada la [Herramienta Parches de calidad (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.18. El ID del parche es ACSD-44938. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.6.
 
 ## Productos y versiones afectados
 
@@ -30,20 +31,20 @@ El parche ACSD-44938 corrige el problema en el que el VAT_ID no se puede aplicar
 
 ## Problema
 
-VAT_ID no se puede aplicar en una petición GraphQL para un usuario invitado.
+`VAT_ID` no se puede aplicar en una solicitud [!DNL GraphQL] para un usuario invitado.
 
 <u>Pasos a seguir</u>:
 
-1. Siga los pasos mencionados en el [tutorial de GraphQL](https://developer.adobe.com/commerce/webapi/graphql/tutorials/checkout/checkout-shopping-cart.html) en nuestra documentación para desarrolladores para crear un carro de compras de invitado.
-1. Intente aplicar VAT_ID al usuario invitado que utiliza GraphQL.
+1. Siga los pasos mencionados en el [[!DNL GraphQL] tutorial](https://developer.adobe.com/commerce/webapi/graphql/tutorials/checkout/) de nuestra documentación para desarrolladores para crear un carro de compras de invitado.
+1. Intente aplicar `VAT_ID` para el usuario invitado que usa [!DNL GraphQL].
 
 <u>Resultados esperados</u>:
 
-VAT_ID se puede aplicar de la misma manera que para un cliente registrado. Consulte el artículo [createCustomerAddress mutation](https://developer.adobe.com/commerce/webapi/graphql/mutations/create-customer-address.html) en nuestra documentación para desarrolladores.
+`VAT_ID` se puede aplicar del mismo modo que para un cliente registrado. Consulte el artículo [`createCustomerAddress` mutation](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/mutations/create-address/) en nuestra documentación para desarrolladores.
 
 <u>Resultados reales</u>:
 
-VAT_ID no se puede aplicar a un usuario invitado que usa GraphQL.
+`VAT_ID` no se puede aplicar a un usuario invitado que usa [!DNL GraphQL].
 
 ## Aplicar el parche
 
@@ -54,7 +55,7 @@ Para aplicar parches individuales, utilice los siguientes vínculos según el m�
 
 ## Lectura relacionada
 
-Para obtener más información sobre la herramienta Parches de calidad, consulte:
+Para obtener más información sobre [!DNL Quality Patches Tool], consulte:
 
 * [Lanzamiento de la herramienta Parches de calidad: una nueva herramienta para autodistribuir parches de calidad](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) en la base de conocimiento de asistencia.
 * [Compruebe si el parche está disponible para su problema de Adobe Commerce mediante la herramienta Parches de calidad](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) en la guía [!DNL Quality Patches Tool].
