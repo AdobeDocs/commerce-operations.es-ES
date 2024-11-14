@@ -2,9 +2,9 @@
 user-guide-title: Herramientas
 user-guide-description: Obtenga información sobre las distintas herramientas que puede utilizar con Adobe Commerce, sus usos, el proceso de instalación y cómo obtener acceso.
 feature: Configuration
-source-git-commit: 247be06de65e4d6216419f8da0326ad5c150f20e
+source-git-commit: 6e89a3f7143ba0c19e2ac5da1f6578511b5d5955
 workflow-type: tm+mt
-source-wordcount: '6177'
+source-wordcount: '6187'
 ht-degree: 0%
 
 ---
@@ -656,6 +656,7 @@ ht-degree: 0%
          - [ACSD-60804: La edición de un cliente asociado con una empresa eliminada provoca un error](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-60804-editing-customer-linked-to-deleted-company-causes-error.md)
       - v1.1.54 {#v1-1-54}
          - [Información general:  [!DNL Quality Patches Tool] (QPT) v1.1.54](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/overview.md)
+         - [ACSD-61200: corrige la compensación de impuestos de descuento en los cálculos totales de ventas](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61200-fixes-discount-tax-compensation-in-sales-total-calculations.md)
          - [ACSD-61522: Las direcciones de correo electrónico de los campos Nombre y Apellido envían confirmaciones de pedido no válidas](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61522-email-in-name-fields-sends-invalid-order-confirmations.md)
       - [Comprobar parche para el problema de Adobe Commerce con la herramienta Parches de calidad](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 
