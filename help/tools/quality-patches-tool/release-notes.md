@@ -2,9 +2,9 @@
 title: Notas de la versión
 description: Obtenga información acerca de los parches disponibles para Adobe Commerce y los problemas que resuelven.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: efa483b3e5a09bf2f4a472f9ee9e30512a0ca211
+source-git-commit: fb884f895cb03dcc920dc3de9baa63deb8737cd3
 workflow-type: tm+mt
-source-wordcount: '22642'
+source-wordcount: '23125'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,25 @@ ht-degree: 0%
 >
 >Para obtener información acerca de [!DNL quality patches] creado por la comunidad para Magento Open Source, consulte las [notas de la versión](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
 
+## v1.1.55 {#v1-1-55}
+
+* **ACSD-58383** (para Adobe Commerce y Magento Open Source >=2.4.4 &lt;2.4.8): corrige el problema en el que al emitir un reembolso a través de [!DNL REST API] con dos solicitudes idénticas que se ejecutan simultáneamente, se crean notas de crédito duplicadas.
+* **ACSD-58471** (para Adobe Commerce >=2.4.4 &lt;2.4.8): corrige el problema en el cual el contenido dinámico no se carga en la página de detalles del producto, cuando se programaron las reglas de precios de catálogo asociadas.
+* **ACSD-58566** (para Adobe Commerce >=2.4.6 &lt;2.4.8): corrige el problema en el cual [!DNL GraphQL] devuelve un error interno del servidor al consultar el campo `created_at` en la mutación `addPurchaseOrderComment`.
+* **ACSD-58685** (para Adobe Commerce y Magento Open Source >=2.4.4 &lt;2.4.8): corrige el problema en el cual los correos electrónicos de ventas iniciados mientras la comunicación por correo electrónico estaba deshabilitada, se enviarían una vez que se volviera a habilitar la comunicación por correo electrónico.
+* **ACSD-58735** (para Adobe Commerce y Magento Open Source >=2.4.4 &lt;2.4.8): corrige el problema en el cual un administrador restringido no podía ver los carros de compras abandonados en la página de cuenta de cliente en [!UICONTROL Admin] para un sitio web asociado.
+* **ACSD-58828** (para Adobe Commerce y Magento Open Source >=2.4.6 &lt;2.4.8): corrige el problema en el que se requiere el mensaje de validación del lado del servidor *address is required* si algún campo requerido se deja vacío, junto con el mensaje de validación del lado del cliente. La validación del lado del servidor no mostrará el mensaje de los campos obligatorios vacíos y la validación del lado del cliente gestionará la notificación de error, indicando *Este es un campo obligatorio.*
+* **ACSD-60344** (para Adobe Commerce >=2.4.4 &lt;2.4.8): corrige el problema por el que se envían correos electrónicos de confirmación de pedidos duplicados al usar **[!UICONTROL Purchase Order]** con aprobación automática.
+* **ACSD-61348** (para Adobe Commerce y Magento Open Source >=2.4.4 &lt;2.4.8): corrige el problema en el cual los elementos de la lista de deseos son visibles a través de [!DNL GraphQL], pero no en la tienda cuando se encuentran en un entorno de varios sitios web.
+* **ACSD-61534** (para Adobe Commerce y Magento Open Source >=2.4.7 &lt;2.4.8): corrige el problema en el cual la configuración de diseño no se podía establecer con el comando `bin/magento config:set` y los valores bloqueados se podían modificar mediante la manipulación de formularios. Ahora los valores bloqueados establecidos desde [!DNL CLI] con `--lock-env` o `--lock-conf` no se pueden actualizar.
+* **ACSD-61785** (para Adobe Commerce >=2.4.4 &lt;2.4.8): corrige el problema en el cual la actualización del atributo `reward_warning_notification` no era posible a través de la mutación [!DNL GraphQL] y las llamadas [!DNL REST API], y alinea su comportamiento con `reward_update_notification`.
+* **ACSD-62591** (para Adobe Commerce y Magento Open Source >=2.4.7 &lt;2.4.8): se corrigió un problema en el cual la temática no cambia correctamente cuando se configuran **[!UICONTROL User Agent Rules]**.
+* **ACSD-62793** (para Adobe Commerce y Magento Open Source >=2.4.7 &lt;2.4.8): corrige el problema en el cual los atributos `datetime` de los datos exportados no incluyen el componente de tiempo. Además, si **[!UICONTROL Fields Enclosure]** está *habilitado*, los valores de atributo de la columna `additional_attributes` se escribirán entre comillas dobles.
+* **ACSD-62332** (para Adobe Commerce >=2.4.6 &lt;2.4.7): corrige el problema en el cual la consulta de lista de productos [!DNL GraphQL] estaba limitada a `total_count` de 10 000 productos. Corrige el problema en el cual [!DNL Live Search] establece la página actual en *1* en lugar de la página *2* en los criterios de búsqueda cuando se consulta a través de [!DNL GraphQL].
+* Versiones actualizadas: **ACSD-46581**, **ACSD-49513**, **ACSD-52801**, **ACSD-59514**
+* Revisiones reemplazadas: **ACSD-52801**, **ACSD-55100**
+* Revisiones obsoletas: **ACSD-52085**, **ACSD-57854**
+
 ## v1.1.54 {#v1-1-54}
 
 * **AC-13283** (para Adobe Commerce y Magento Open Source 2.4.6-p8): revierte los cambios incompatibles con versiones anteriores de Realizar pedido incluidos en 2.4.6-p8.
@@ -35,8 +54,8 @@ ht-degree: 0%
 * **ACSD-61845** (para Adobe Commerce y Magento Open Source >=2.4.7-p1 &lt;2.4.8): corrige el error que se produce cuando se envía una solicitud con solo *text/html* aceptar encabezado.
 * **ACSD-62056** (para Adobe Commerce y Magento Open Source >=2.4.4 &lt;2.4.8): corrige el problema en el que la carga de imágenes para un producto configurable falla si MSI está instalado.
 * **ACSD-62485** (para Adobe Commerce >=2.4.4 &lt;2.4.6-p8 || >=2.4.7 &lt;2.4.8): corrige el problema en el que el consumidor de `async.operations.all` deja de funcionar cuando se crea una compañía.
-* Revisiones actualizadas: ACSD-48661, ACSD-51846, ACSD-55100, ACSD-61553
-* Parches obsoletos: ACSD-51846
+* Versiones actualizadas: **ACSD-48661**, **ACSD-55100**, **ACSD-61553**
+* Revisiones obsoletas: **ACSD-51846**
 
 ## v1.1.53 {#v1-1-53}
 
@@ -64,7 +83,7 @@ ht-degree: 0%
 * **ACSD-60788** (para Adobe Commerce >=2.4.7 &lt;2.4.8): corrige el problema en el cual los scripts personalizados para [!DNL Google Tag Manager] no se ejecutan debido a errores de la Política de seguridad de contenido (CSP).
 * **ACSD-61322** (para Adobe Commerce >=2.4.6 &lt;2.4.8): corrige el problema en el cual [!UICONTROL Products/Categories] no asignado a [!UICONTROL Shared Catalog] para el predeterminado (grupo general) sigue incluido en el mapa del sitio XML.
 * **ACSD-61366** (para Adobe Commerce y Magento Open Source >=2.4.7 &lt;2.4.8): corrige el problema en el que el comando `setup:static-content:deploy --jobs 4` se ejecuta con varios trabajos que producen errores con el error *El puerto debe configurarse dentro del parámetro de host* cuando el puerto se especifica para la conexión DB.
-* Revisiones actualizadas: ACSD-51857, ACSD-57394
+* Versiones actualizadas: **ACSD-54989**, **ACSD-60632**
 
 ## v1.1.51 {#v1-1-51}
 
