@@ -2,7 +2,7 @@
 title: Notas de la versión
 description: Obtenga información acerca de los parches disponibles para Adobe Commerce y los problemas que resuelven.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: fb884f895cb03dcc920dc3de9baa63deb8737cd3
+source-git-commit: 3f6093b55c7bbfaf8666438ac1fef8f90432d947
 workflow-type: tm+mt
 source-wordcount: '23125'
 ht-degree: 0%
@@ -68,7 +68,7 @@ ht-degree: 0%
 * **ACSD-61553** (para Adobe Commerce y Magento Open Source >=2.4.5 &lt;2.4.7): corrige el problema en el cual los descuentos de **[!UICONTROL Cart Price Rule]** se calculan incorrectamente cuando se aplican al producto varios descuentos con diferentes  y **[!UICONTROL Maximum Qty Discount is Applied To]**.
 * **ACSD-61667** (para Adobe Commerce y Magento Open Source >=2.4.4 &lt;2.4.8): mejora el rendimiento del inventario para crear envíos en el caso de muchos orígenes con recogida en tienda.
 * **ACSD-61969** (para Adobe Commerce >=2.4.7 &lt;2.4.8): corrige el problema en el que el usuario debe escribir un código de cupón que distingue entre mayúsculas y minúsculas para que coincida exactamente como se configuró el código de cupón.
-* Revisiones actualizadas: ACSD-54989, ACSD-60632
+* Versiones actualizadas: **ACSD-54989**, **ACSD-60632**
 
 ## v1.1.52 {#v1-1-52}
 
@@ -83,7 +83,7 @@ ht-degree: 0%
 * **ACSD-60788** (para Adobe Commerce >=2.4.7 &lt;2.4.8): corrige el problema en el cual los scripts personalizados para [!DNL Google Tag Manager] no se ejecutan debido a errores de la Política de seguridad de contenido (CSP).
 * **ACSD-61322** (para Adobe Commerce >=2.4.6 &lt;2.4.8): corrige el problema en el cual [!UICONTROL Products/Categories] no asignado a [!UICONTROL Shared Catalog] para el predeterminado (grupo general) sigue incluido en el mapa del sitio XML.
 * **ACSD-61366** (para Adobe Commerce y Magento Open Source >=2.4.7 &lt;2.4.8): corrige el problema en el que el comando `setup:static-content:deploy --jobs 4` se ejecuta con varios trabajos que producen errores con el error *El puerto debe configurarse dentro del parámetro de host* cuando el puerto se especifica para la conexión DB.
-* Versiones actualizadas: **ACSD-54989**, **ACSD-60632**
+* Revisiones actualizadas: ACSD-51857, ACSD-57394
 
 ## v1.1.51 {#v1-1-51}
 
