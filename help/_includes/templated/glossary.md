@@ -1,7 +1,7 @@
 ---
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 0d5eeb691281d7c62aa64a9d8cd042f18504a67f
 workflow-type: tm+mt
-source-wordcount: '6363'
+source-wordcount: '6370'
 ht-degree: 0%
 
 ---
@@ -248,7 +248,7 @@ _adjetivo_
 
 Un negocio minorista con una ubicación física permanente, a diferencia de los negocios que funcionan de forma virtual o exclusiva a través de Internet.
 
-Para [Inventory management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/sources/sources-manage.html) y [Order Management](https://omsdocs.magento.com/getting-started/terminology/), esta tienda es una fuente para rastrear cantidades de productos, enviar pedidos y admitir la recogida en la tienda.
+Para [Inventory management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/sources/sources-manage.html) y [Order Management](#oms), esta tienda es una fuente para rastrear cantidades de productos, enviar pedidos y admitir la recogida en la tienda.
 
 _Atributos de término:_
 
@@ -454,7 +454,7 @@ _Atributos de término:_
 
 * _Campo: nube_
 
-### Bloque CMS
+### Bloque de CMS
 
 _sustantivo_
 
@@ -981,7 +981,7 @@ En marketing y venta minorista, un porcentaje añadido al coste de un artículo 
 [Configurar el marcado](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/settings/settings-advanced-custom-options.html), o markdown, de un producto a través de opciones personalizables de producto.
 
 En el desarrollo, lenguaje informático que controla el procesamiento, la presentación y el formato del texto.
-Además, las etiquetas de marcado son fragmentos de código que agregan funcionalidad o contenido a una página o bloque CMS.
+Además, las etiquetas de marcado son fragmentos de código que agregan funcionalidad o contenido a una página o bloque de CMS.
 
 _Atributos de término:_
 
@@ -1046,7 +1046,11 @@ _Atributos de término:_
 
 _sustantivo_
 
-[OMS](https://omsdocs.magento.com) es la oferta del sistema Order Management de Adobe.
+OMS es la oferta del sistema Order Management de Adobe.
+
+>[!IMPORTANT]
+>
+>Adobe Commerce Order Management (OMS) ha llegado al final de su vida útil y ya no es compatible.
 
 OMS es una solución flexible y asequible para administrar, vender y cumplir el inventario de cualquier canal de ventas.
 OMS ofrece una experiencia de cliente perfecta, que aumenta las ventas al tiempo que reduce los costes y acelera el tiempo de comercialización.
@@ -1058,7 +1062,7 @@ Las funciones de OMS incluyen:
 * Servicio al cliente más fácil y interactivo
 * Mejor experiencia y lealtad del cliente
 
-Más información: [Introducción a OMS](https://omsdocs.magento.com/en/getting-started/), [sitio de documentos de OMS](https://omsdocs.magento.com/en/)
+Más información: [Sitio de documentos OMS archivado](https://commerce-docs.github.io/oms-documentation-archive/)
 
 _Atributos de término:_
 
@@ -1279,7 +1283,7 @@ _Atributos de término:_
 
 _sustantivo_
 
-Una unidad modular de contenido que un usuario puede colocar en el CMS de una página para mostrar texto e imágenes o ejecutar fragmentos de código.
+Una unidad modular de contenido que un usuario puede colocar en CMS en una página para mostrar texto e imágenes, o ejecutar fragmentos de código.
 Los bloques estáticos contienen contenido editable y pueden actuar como páginas de aterrizaje para categorías de productos.
 Los widgets se pueden añadir a bloques estáticos para proporcionar funciones adicionales.
 
