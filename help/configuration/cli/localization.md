@@ -2,7 +2,7 @@
 title: Diccionarios de traducción y paquetes de idiomas
 description: Obtenga información sobre cómo generar diccionarios de traducción y paquetes de idiomas.
 exl-id: dd27ccdd-158d-40a6-a2e2-563857820ae9
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 02c69e890b40643781ab8f48c3133527dd79386a
 workflow-type: tm+mt
 source-wordcount: '1432'
 ht-degree: 0%
@@ -92,7 +92,7 @@ En esta sección se explica cómo crear un paquete de idioma, que escribe archiv
 1. [Recopilar y traducir palabras y frases](#generate-a-translation-dictionary). (El parámetro `--magento` es obligatorio).
 1. [Ejecute el comando del paquete de idioma](#run-the-language-package-command).
 1. [Crear directorios y archivos](#create-directories-and-files).
-1. (Opcional.) [Configurar varios paquetes para un idioma](#configure-multiple-packages-for-a-language).
+1. (Opcional.) [Configure varios paquetes para un idioma](#configure-multiple-packages-for-a-language).
 
 ### Ejecute el comando del paquete de idioma
 
@@ -284,8 +284,8 @@ De forma similar al ejemplo anterior, genere un archivo CSV, pero en lugar de es
    ```php
    <?php
    /**
-    * Copyright &copy; Magento, Inc. All rights reserved.
-    * See COPYING.txt for license details.
+    * Copyright Adobe
+    * All Rights Reserved.
     */
    
    use Magento\Framework\Component\ComponentRegistrar;
@@ -301,11 +301,10 @@ De forma similar al ejemplo anterior, genere un archivo CSV, pero en lugar de es
 
    ```xml
    <?xml version="1.0"?>
-   /**
-   * Copyright &copy; Magento, Inc. All rights reserved.
-   * See COPYING.txt for license details.
-   */
-   
+   <!--
+   Copyright Adobe
+   All Rights Reserved.
+   -->
    <language xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/Language/package.xsd">
        <code>xx_YY</code>
        <vendor>examplecorp</vendor>
