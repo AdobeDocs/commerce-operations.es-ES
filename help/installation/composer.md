@@ -2,7 +2,7 @@
 title: Instalación local de inicio rápido
 description: Siga estos pasos para instalar Adobe Commerce en la infraestructura de su propiedad.
 exl-id: a93476e8-2b30-461a-91df-e73eb1a14d3c
-source-git-commit: f9f8aea1a77ef062d7076a61bbafd12433f15edf
+source-git-commit: ee7551374aa6d4ad462dd64ee3d05b934b43ce45
 workflow-type: tm+mt
 source-wordcount: '933'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Instalación local de inicio rápido
 
-Las instrucciones de esta página describen cómo instalar Adobe Commerce en una infraestructura de [alojamiento propio](../implementation-playbook/infrastructure/self-hosting/overview.md). Para obtener instrucciones sobre cómo actualizar una instalación existente, consulte la [_Guía de actualización_](../upgrade/overview.md).
+Las instrucciones de esta página describen cómo instalar Adobe Commerce en una infraestructura autoalojada. Para obtener instrucciones sobre cómo actualizar una instalación existente, consulte la [_Guía de actualización_](../upgrade/overview.md).
 
 El Adobe usa [Composer](https://getcomposer.org/) para administrar los componentes de Adobe Commerce y sus dependencias. Usar Composer para obtener el metapaquete de Adobe Commerce ofrece las siguientes ventajas:
 

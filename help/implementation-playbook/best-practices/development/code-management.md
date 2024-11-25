@@ -4,9 +4,9 @@ description: Conozca las prácticas recomendadas de administración de código p
 feature: Best Practices
 role: Developer
 exl-id: 0bff4c7a-1082-4b3e-b19c-bc8ad529b131
-source-git-commit: 823498f041a6d12cfdedd6757499d62ac2aced3d
+source-git-commit: ee7551374aa6d4ad462dd64ee3d05b934b43ce45
 workflow-type: tm+mt
-source-wordcount: '670'
+source-wordcount: '659'
 ht-degree: 0%
 
 ---
@@ -25,8 +25,6 @@ Este tema se ha diseñado para ayudarle a decidir si desea utilizar Git o Compos
 
 - Adobe Commerce en la infraestructura en la nube
 - Adobe Commerce local
-
-Abarca tanto la [arquitectura de referencia global (GRA)](../../architecture/global-reference/overview.md) como las instalaciones de instancia única.
 
 ## Definiciones
 

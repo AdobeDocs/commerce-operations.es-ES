@@ -3,9 +3,9 @@ title: Prácticas recomendadas de rendimiento de Checkout
 description: Obtenga información sobre cómo optimizar el rendimiento de las experiencias de cierre de compra en el sitio de Adobe Commerce.
 feature: Best Practices, Orders
 exl-id: dc2d0399-0d7f-42d8-a6cf-ce126e0b052d
-source-git-commit: e4c1832076bb81cd3e70ff279a6921ffb29ea631
+source-git-commit: ee7551374aa6d4ad462dd64ee3d05b934b43ce45
 workflow-type: tm+mt
-source-wordcount: '1132'
+source-wordcount: '1121'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 El proceso de [pago y envío](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/checkout/checkout-process) en Adobe Commerce es un aspecto crítico de la experiencia de la tienda. Se basa en las capacidades integradas de [carrito](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront#shopping-cart) y [cierre de compra](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront#checkout-page).
 
-El rendimiento es clave para mantener una buena experiencia de usuario. Revise el [resumen de evaluación de rendimiento](../implementation-playbook/infrastructure/performance/benchmarks.md) para obtener más información acerca de las expectativas de rendimiento. Puede optimizar el rendimiento del cierre de compra configurando las siguientes opciones para **procesamiento de pedidos de alto rendimiento**:
+El rendimiento es clave para mantener una buena experiencia de usuario. Puede optimizar el rendimiento del cierre de compra configurando las siguientes opciones para **procesamiento de pedidos de alto rendimiento**:
 
 - [AsyncOrder](#asynchronous-order-placement): procesa pedidos de forma asincrónica mediante una cola.
 - [Cálculo total diferido](#deferred-total-calculation): aplace los cálculos de totales de pedidos hasta que comience el cierre de compra.

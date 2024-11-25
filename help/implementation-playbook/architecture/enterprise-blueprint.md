@@ -3,9 +3,9 @@ title: Arquitectura de referencia empresarial
 description: Aprenda a implementar Adobe Commerce utilizando la tecnología de comercio componible más reciente de Adobe.
 feature: App Builder, Cloud, GraphQL, Integration, Paas, Saas
 exl-id: d066ab43-20e2-4e0b-8348-0c52d6a7ac8a
-source-git-commit: c2f6b7125f1a611e94f807999787fee48a0e5ece
+source-git-commit: 581a7dbcc19c31df80e03cb9f321a6adb5fa1a73
 workflow-type: tm+mt
-source-wordcount: '797'
+source-wordcount: '836'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,10 @@ Adobe Commerce se integra con todas las soluciones de Experience Cloud para ofre
 
 >[!NOTE]
 >
->Consulte [Modelos de experiencia digital](https://experienceleague.adobe.com/en/docs/blueprints-learn/architecture/overview) para obtener más información técnica.
+>Consulte los siguientes recursos para obtener más información:
+>
+>- [Modelos de experiencia digital](https://experienceleague.adobe.com/en/docs/blueprints-learn/architecture/overview) para obtener más detalles técnicos.
+>- Ver [Personalización de la experiencia del cliente](https://experienceleague.adobe.com/en/docs/events/the-skill-exchange-recordings/commerce/aug2024/personalization).
 
 
 ## Integración con sistemas de terceros
@@ -63,6 +66,11 @@ Adobe proporciona las siguientes herramientas para desarrolladores para crear in
 - [**Eventos**](https://developer.adobe.com/commerce/extensibility/events/): utilice déclencheur de eventos personalizados para interactuar con otras herramientas de desarrollo ampliables.
 - [**Webhooks**](https://developer.adobe.com/commerce/extensibility/webhooks/): utilice los webhooks para almacenar automáticamente en déclencheur las interacciones entre Commerce y sistemas de terceros.
 - [**SDK de IU de administración**](https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/): personalice y mejore el administrador de Commerce con nuevas páginas y características para sus comerciantes.
+- [**Kit de inicio de integración**](https://developer.adobe.com/commerce/extensibility/starter-kit/): acelere las integraciones de back-office con integraciones de referencia, scripts de incorporación y una arquitectura estandarizada.
+
+>[!NOTE]
+>
+>Ver [El enfoque moderno: extensibilidad efectiva en Adobe Commerce](https://experienceleague.adobe.com/en/docs/events/the-skill-exchange-recordings/commerce/aug2024/extensibility).
 
 ## Servicios de tienda
 
