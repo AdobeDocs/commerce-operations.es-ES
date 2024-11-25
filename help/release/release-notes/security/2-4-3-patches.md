@@ -2,7 +2,7 @@
 title: Notas de la versión de los parches de seguridad de Adobe Commerce 2.4.3
 description: Obtenga información acerca de las correcciones de errores de seguridad, las mejoras de seguridad y otras actualizaciones relacionadas con la seguridad incluidas en las versiones de parches de seguridad para Adobe Commerce 2.4.3.
 exl-id: 72d343cd-83d7-48ce-976a-e26ba1b8db27
-source-git-commit: 79c8a15fb9686dd26d73805e9d0fd18bb987770d
+source-git-commit: 95ea96a566b0579a22b2ba738bd4a4bceef8cd9c
 workflow-type: tm+mt
 source-wordcount: '931'
 ht-degree: 0%
@@ -80,7 +80,7 @@ Se han eliminado **ID de sesión de la base de datos**. Este cambio de código p
 
 **Acceso de administrador restringido a las carpetas de la Galería multimedia**. Los permisos predeterminados de la Galería multimedia ahora solo permiten operaciones de directorio (ver, cargar, eliminar y crear) permitidas explícitamente por la configuración. Los usuarios administradores ya no pueden acceder a los recursos multimedia a través de la Galería multimedia que se cargaron fuera de los directorios `catalog/category` o `wysiwyg`. Los administradores que deseen acceder a los recursos de medios deben moverlos a una carpeta permitida explícitamente o ajustar su configuración. Ver [Modificar permisos de carpeta de Media Library](https://developer.adobe.com/commerce/php/tutorials/backend/modify-image-library-permissions/). <!-- B2B-1897-->
 
-**Límites reducidos a la complejidad de las consultas de GraphQL**. Se ha reducido la complejidad máxima de consulta permitida de GraphQL para evitar ataques de denegación de servicio (DOS). Ver [configuración de seguridad de GraphQL](https://developer.adobe.com/commerce/webapi/graphql/security-configuration.html). <!-- PWA-1700-->
+**Límites reducidos a la complejidad de las consultas de GraphQL**. Se ha reducido la complejidad máxima de consulta permitida de GraphQL para evitar ataques de denegación de servicio (DOS). Ver [configuración de seguridad de GraphQL](https://developer.adobe.com/commerce/webapi/graphql/usage/security-configuration/). <!-- PWA-1700-->
 
 **Las vulnerabilidades recientes de la prueba de penetración** se han corregido en esta versión. <!-- MC-42431-->
 

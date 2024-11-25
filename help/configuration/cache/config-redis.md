@@ -3,7 +3,7 @@ title: Configurar Redis
 description: Obtenga información general sobre las funciones de Redis e inicie la configuración de Redis.
 feature: Configuration, Cache
 exl-id: e037c382-334a-4096-a417-a25fdb61a9ce
-source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
+source-git-commit: 95ea96a566b0579a22b2ba738bd4a4bceef8cd9c
 workflow-type: tm+mt
 source-wordcount: '372'
 ht-degree: 0%
@@ -41,7 +41,7 @@ Para las sesiones, Adobe recomienda habilitar la persistencia para copiar datos 
 
 También puede activar las opciones RDB y AOF al mismo tiempo. Para obtener más información, incluidas las ventajas y desventajas de las opciones de persistencia, consulte la [documentación de Redis Persistence](https://redis.io/topics/persistence).
 
-Para la instancia de caché, configúrela de modo que sea lo suficientemente grande como para almacenar toda la caché de Commerce. Los requisitos de tamaño dependen de diferentes factores, como el número de productos y las vistas de la tienda. Como punto de partida, puede utilizar el tamaño de la carpeta de caché en el sistema de archivos. Por ejemplo, si la carpeta `var/cache` del sistema de archivos tiene 5 GB, configure la instancia de Redis con al menos 5 GB para que se inicie. No se requiere persistencia para la instancia de caché porque se puede restaurar la caché de Commerce. Consulte [Guía de caché de Redis](https://redis.io/docs/manual/eviction/).
+Para la instancia de caché, configúrela de modo que sea lo suficientemente grande como para almacenar toda la caché de Commerce. Los requisitos de tamaño dependen de diferentes factores, como el número de productos y las vistas de la tienda. Como punto de partida, puede utilizar el tamaño de la carpeta de caché en el sistema de archivos. Por ejemplo, si la carpeta `var/cache` del sistema de archivos tiene 5 GB, configure la instancia de Redis con al menos 5 GB para que se inicie. No se requiere persistencia para la instancia de caché porque se puede restaurar la caché de Commerce. Consulte [Guía de caché de Redis](https://redis.io/docs/latest/develop/use/).
 
 Para ajustar el rendimiento, puede habilitar la siguiente configuración para la eliminación asincrónica. Esta configuración no cambia el comportamiento de Redis.
 
