@@ -2,9 +2,9 @@
 user-guide-title: Herramientas
 user-guide-description: Obtenga información sobre las distintas herramientas que puede utilizar con Adobe Commerce, sus usos, el proceso de instalación y cómo obtener acceso.
 feature: Configuration
-source-git-commit: 3c1c16839612aa70b2798ac1aaf0d352a8c4a972
+source-git-commit: 1699b863c80febd762c0d34f33f7af72777e82f2
 workflow-type: tm+mt
-source-wordcount: '6286'
+source-wordcount: '6301'
 ht-degree: 0%
 
 ---
@@ -662,6 +662,7 @@ ht-degree: 0%
          - [ACSD-61199: La pestaña [!UICONTROL Hierarchy] de la página de CMS no muestra la estructura de árbol adecuada](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61199-cms-page-hierarchy-tab-doesnt-display-proper-tree-structure.md)
          - [ACSD-61200: corrige la compensación de impuestos de descuento en los cálculos totales de ventas](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61200-fixes-discount-tax-compensation-in-sales-total-calculations.md)
          - [ACSD-61522: Las direcciones de correo electrónico de los campos Nombre y Apellido envían confirmaciones de pedido no válidas](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61522-email-in-name-fields-sends-invalid-order-confirmations.md)
+         - [ACSD-61799: cálculo de descuento total incorrecto con varias reglas de carro de descuentos fijos aplicadas al presupuesto](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61799-incorrect-total-discount-calculation-with-multiple-fixed-discount-rules.md)
          - [ACSD-62485: async.operations.all consumidor deja de funcionar cuando se crea la compañía](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-62485-async-operations-all-consumer-stops-working-when-company-is-created.md)
          - [ACSD-61845: Se produce un error en las solicitudes con encabezado de aceptación de texto/html](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61845-error-occurs-for-requests-with-text-html-accept-header.md)
       - v1.1.55 {#v1-1-55}
