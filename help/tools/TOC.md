@@ -2,9 +2,9 @@
 user-guide-title: Herramientas
 user-guide-description: Obtenga información sobre las distintas herramientas que puede utilizar con Adobe Commerce, sus usos, el proceso de instalación y cómo obtener acceso.
 feature: Configuration
-source-git-commit: d7106427b7c666995e62c6a51377497d01c2a9db
+source-git-commit: d0fe699d99f630a07702373599547638316103af
 workflow-type: tm+mt
-source-wordcount: '6315'
+source-wordcount: '6329'
 ht-degree: 0%
 
 ---
@@ -668,6 +668,7 @@ ht-degree: 0%
          - [ACSD-61845: Se produce un error en las solicitudes con encabezado de aceptación de texto/html](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61845-error-occurs-for-requests-with-text-html-accept-header.md)
       - v1.1.55 {#v1-1-55}
          - [Información general:  [!DNL Quality Patches Tool] (QPT) v1.1.55](/help//tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/overview.md)
+         - [ACSD-61785: la actualización del atributo premio_advertencia_notificación no es posible mediante la mutación de GraphQL y las llamadas a la API REST](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-61785-updating-reward-warning-notification-attribute-not-possible-via-graphql.md)
          - [ACSD-58471: el contenido dinámico no se carga en la página de detalles del producto, cuando se programan las reglas de precios de catálogo](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58471-dynamic-content-fails-load-product-detail-page.md)
          - [ACSD-58383: duplicar notas de crédito de solicitudes de reembolso simultáneas a través de  [!DNL REST API]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58383-duplicate-credit-memos-from-simultaneous-refund-requests-via-rest-api.md)
          - [ACSD-58735: el administrador restringido no puede ver los carros de compras abandonados en la cuenta de cliente del sitio web asociado](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58735-restricted-admin-cant-view-abandoned-shopping-carts.md)
