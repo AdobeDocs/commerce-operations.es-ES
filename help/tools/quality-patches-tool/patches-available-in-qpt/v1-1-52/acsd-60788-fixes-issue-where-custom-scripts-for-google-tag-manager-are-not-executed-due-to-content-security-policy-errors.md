@@ -1,9 +1,10 @@
 ---
-title: "ACSD-60788: Los scripts personalizados para  [!DNL Google Tag Manager] no se ejecutaron debido a errores de CSP"
+title: 'ACSD-60788: no se ejecutaron los scripts personalizados para  [!DNL Google Tag Manager] debido a errores de CSP'
 description: Aplique el parche ACSD-60788 para corregir el problema de Adobe Commerce en el que los scripts personalizados para [!DNL Google Tag Manager] no se ejecutan debido a errores de Política de seguridad de contenido (CSP).
 feature: Security
 role: Admin, Developer
-source-git-commit: d1c643da36a200c6fb0a17139b12b6b91d9568e1
+exl-id: 3392da76-86cb-4357-8658-c95d914a5829
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '363'
 ht-degree: 0%

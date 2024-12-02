@@ -1,9 +1,10 @@
 ---
-title: "ACSD-48417: Error SQL después de crear un cambio de programación"
+title: 'ACSD-48417: Error SQL después de crear un cambio de programación'
 description: Aplique el parche ACSD-48417 para corregir el problema de Adobe Commerce en el que aparece un error SQL después de crear un cambio de programación para un producto y guardar otro.
 feature: Storage
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: c8e7c7aa-ac53-4218-8c3c-ea2240af17c9
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '409'
 ht-degree: 0%

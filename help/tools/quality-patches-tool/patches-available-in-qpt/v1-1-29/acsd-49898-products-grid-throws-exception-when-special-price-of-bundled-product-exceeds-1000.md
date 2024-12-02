@@ -1,9 +1,10 @@
 ---
-title: "ACSD-49898: La cuadrícula de productos genera una excepción"
+title: 'ACSD-49898: La cuadrícula de productos genera una excepción'
 description: Aplique el parche ACSD-49898 para corregir el problema de Adobe Commerce en el que la cuadrícula de productos presenta una excepción cuando un producto agrupado tiene un precio especial que supera los 1000.
 feature: Admin Workspace, Orders, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: adc8f12e-73e4-4ed5-8081-a9907ec13342
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '383'
 ht-degree: 0%

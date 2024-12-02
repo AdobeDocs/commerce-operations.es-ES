@@ -1,9 +1,10 @@
 ---
-title: "ACSD-54680: no se puede procesar la cotización B2B de un producto con varias fuentes asignadas"
+title: 'ACSD-54680: no se puede procesar la cotización B2B de un producto con varias fuentes asignadas'
 description: Aplique el parche ACSD-54680 para solucionar el problema de Adobe Commerce en el que no se puede procesar la cotización B2B de un producto con varios orígenes asignados.
 feature: B2B
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: c5307785-a4c6-4d0c-9009-0d0caee97b3d
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '442'
 ht-degree: 0%

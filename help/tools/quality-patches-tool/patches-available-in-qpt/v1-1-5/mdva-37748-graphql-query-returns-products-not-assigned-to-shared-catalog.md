@@ -1,9 +1,10 @@
 ---
-title: "MDVA-37748: La consulta de GraphQL devuelve productos no asignados al catálogo compartido"
+title: 'MDVA-37748: La consulta de GraphQL devuelve productos no asignados al catálogo compartido'
 description: El parche MDVA-37748 corrige el problema en el que una consulta de GraphQL devuelve productos no asignados a un catálogo compartido. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.5. El ID del parche es MDVA-37748. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.4.
 feature: B2B, GraphQL, Catalog Management, Categories, Products
 role: Admin
-source-git-commit: 1fb76b8d648cbbe2a9f602d2b1a0149f1f4f0e46
+exl-id: 8aa00953-dbf0-4533-9b53-b809bf59ec20
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '494'
 ht-degree: 0%

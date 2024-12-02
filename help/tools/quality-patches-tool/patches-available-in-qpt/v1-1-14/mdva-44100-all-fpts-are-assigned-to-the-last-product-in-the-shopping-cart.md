@@ -1,9 +1,10 @@
 ---
-title: "MDVA-44100: todos los FTP se asignan al último producto del carro de compras"
+title: 'MDVA-44100: todos los FTP se asignan al último producto del carro de compras'
 description: El parche MDVA-44100 resuelve el problema de asignación de todos los FTP al último producto del carro de compras. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.14. El ID del parche es MDVA-44100. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.5.
 feature: Orders, Products, Shopping Cart
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: b370dcbb-cbe9-4f5d-9b8f-1722ab521fcb
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '469'
 ht-degree: 0%

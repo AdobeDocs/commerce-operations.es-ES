@@ -1,9 +1,10 @@
 ---
-title: "ACSD-48300: no se puede crear una devolución si se elimina un producto configurable"
+title: 'ACSD-48300: no se puede crear una devolución si se elimina un producto configurable'
 description: Aplique el parche ACSD-48300 para corregir el problema de Adobe Commerce en el que no se puede crear una devolución si se elimina el producto configurable.
 feature: Admin Workspace, Configuration, Orders, Products, Returns
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 50139364-e2ea-47a8-9bca-09876dd0e70d
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '381'
 ht-degree: 0%

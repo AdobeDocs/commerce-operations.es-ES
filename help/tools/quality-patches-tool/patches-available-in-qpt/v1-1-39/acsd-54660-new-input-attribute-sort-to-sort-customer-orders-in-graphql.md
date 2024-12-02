@@ -1,9 +1,10 @@
 ---
-title: "ACSD-54660: nuevo orden de atributos de entrada para ordenar los pedidos de los clientes en  [!DNL GraphQL]"
+title: 'ACSD-54660: nuevo orden de atributos de entrada para ordenar los pedidos de los clientes en  [!DNL GraphQL]'
 description: Aplique el parche ACSD-54660 para corregir el problema de Adobe Commerce en el que se agregó un nuevo atributo de entrada sort para ordenar los pedidos de los clientes en  [!DNL GraphQL]  por sort_field y sort_direction.
 feature: GraphQL, Orders
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 3962d4b6-634e-4164-adae-fa840ca7d869
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '321'
 ht-degree: 0%

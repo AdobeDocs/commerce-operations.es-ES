@@ -1,9 +1,10 @@
 ---
-title: "ACSD-60590: Mejora del rendimiento de la generación de informes diarios agregados de best sellers"
+title: 'ACSD-60590: Mejora del rendimiento de la generación de informes diarios agregados de éxito de ventas'
 description: Aplique el parche ACSD-60590 para solucionar el problema de Adobe Commerce, en el que el informe diario agregado de productos más vendidos tarda una cantidad de tiempo considerable en generarse para un gran volumen de pedidos realizados.
 feature: Reporting
 role: Admin, Developer
-source-git-commit: 4fe3f205754c040b60b6b7f01c7109cb31f70af8
+exl-id: 3b2b92eb-d4fc-4cd7-a117-a2c1caac72ec
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '354'
 ht-degree: 0%

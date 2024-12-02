@@ -1,9 +1,10 @@
 ---
-title: "ACSD-52095: La administración del valor de stock es incorrecta al exportar el CSV"
+title: 'ACSD-52095: La administración del valor de stock es incorrecta al exportar el CSV'
 description: Aplique el parche ACSD-52095 para corregir el problema de Adobe Commerce en el que el valor de stock de administración de productos es incorrecto al exportar CSV.
 feature: Inventory, Products
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 1f8415aa-23c6-480a-b54d-37b2b2d3199a
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 0%

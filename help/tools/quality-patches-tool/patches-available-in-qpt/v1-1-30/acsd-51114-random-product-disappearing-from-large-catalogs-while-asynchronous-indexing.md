@@ -1,9 +1,10 @@
 ---
-title: "ACSD-51114: Los productos aleatorios desaparecieron de los catálogos grandes cuando la indexación asíncrona está habilitada"
+title: 'ACSD-51114: Los productos aleatorios desaparecieron de los catálogos grandes cuando la indexación asíncrona está habilitada'
 description: Aplique el parche ACSD-51114 para solucionar el problema de Adobe Commerce Los productos aleatorios desaparecieron de los catálogos grandes cuando la indexación asíncrona está habilitada.
 feature: Catalog Management, Categories, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: ab1816ef-fb09-46e7-8102-32865f806874
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '376'
 ht-degree: 0%

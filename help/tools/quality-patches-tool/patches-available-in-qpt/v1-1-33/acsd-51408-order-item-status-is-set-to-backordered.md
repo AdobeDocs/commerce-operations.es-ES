@@ -1,9 +1,10 @@
 ---
-title: "ACSD-51408: el estado del elemento de pedido no se ha establecido correctamente en [!UICONTROL backordered]"
+title: 'ACSD-51408: el estado del elemento de pedido se ha establecido incorrectamente en [!UICONTROL backordered]'
 description: Aplique el parche ACSD-51408 para corregir el problema de Adobe Commerce en el que el estado del elemento de pedido está establecido incorrectamente en [!UICONTROL backordered].
 feature: B2B, Orders
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 51abb4c6-5618-43a5-89ca-a3879be2c3c4
+source-git-commit: f6abbbb28a3077f7bf26a393388c5059fcd8c599
 workflow-type: tm+mt
 source-wordcount: '467'
 ht-degree: 0%

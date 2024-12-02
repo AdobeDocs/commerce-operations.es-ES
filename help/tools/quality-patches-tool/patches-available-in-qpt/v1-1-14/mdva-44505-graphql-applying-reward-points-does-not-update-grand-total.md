@@ -1,9 +1,10 @@
 ---
-title: "MDVA-44505: La consulta de GraphQL para el carro de compras que aplica puntos de recompensa no actualiza el total general"
+title: 'MDVA-44505: La consulta de GraphQL para el carro de compras que aplica puntos de recompensa no actualiza el total general'
 description: El parche MDVA-44505 resuelve el problema en el que la consulta de GraphQL para un carro de compras que aplica puntos de recompensa no considera los puntos de recompensa y devuelve un total general incorrecto. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.14. El ID del parche es MDVA-44505. Tenga en cuenta que el problema se solucionó en Adobe Commerce 2.4.3.
 feature: GraphQL, Orders, Rewards, Shopping Cart
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 543698d8-8963-4bf7-af82-11c2498e882e
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '442'
 ht-degree: 0%

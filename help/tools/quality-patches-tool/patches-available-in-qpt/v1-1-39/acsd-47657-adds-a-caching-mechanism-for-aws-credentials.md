@@ -1,9 +1,10 @@
 ---
-title: "ACSD-47657: agrega un mecanismo de almacenamiento en caché para las credenciales de AWS"
+title: 'ACSD-47657: agrega un mecanismo de almacenamiento en caché para las credenciales de AWS'
 description: Aplique el parche ACSD-47657 para corregir el problema de Adobe Commerce que se produce durante una carga alta de solicitudes a AWS S3 añadiendo un mecanismo de almacenamiento en caché para las credenciales de AWS.
 feature: Cache
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 2851d511-a9b0-49f8-94ba-ad63d2397ca5
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '333'
 ht-degree: 0%

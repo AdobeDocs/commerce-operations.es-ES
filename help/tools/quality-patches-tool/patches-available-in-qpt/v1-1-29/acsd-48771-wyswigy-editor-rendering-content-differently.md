@@ -1,16 +1,17 @@
 ---
-title: "ACSD-48771: el editor de WYSIWYG procesa el contenido de forma diferente"
+title: 'ACSD-48771: el editor de WYSIWYG procesa el contenido de forma diferente'
 description: Aplique el parche ACSD-48771 para corregir el problema de Adobe Commerce en el que el editor de WYSIWYG procesa el contenido de forma diferente.
 feature: Cache, Page Content
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 9480af54-800b-4802-b1a3-65d1a6e169ec
+source-git-commit: f6abbbb28a3077f7bf26a393388c5059fcd8c599
 workflow-type: tm+mt
 source-wordcount: '349'
 ht-degree: 0%
 
 ---
 
-# ACSD-48771: el editor WYSIWYG procesa el contenido de forma diferente
+# ACSD-48771: el editor de WYSIWYG procesa el contenido de forma diferente
 
 El parche ACSD-48771 corrige el problema en el que el editor de WYSIWYG procesa el contenido de forma diferente. Esta revisión está disponible cuando está instalado [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.29. El ID del parche es ACSD-48771. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.7.
 

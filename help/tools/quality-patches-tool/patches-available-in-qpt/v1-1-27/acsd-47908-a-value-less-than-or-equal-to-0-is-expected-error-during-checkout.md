@@ -1,9 +1,10 @@
 ---
-title: "ACSD-47908: *Se espera un valor menor o igual a 0* error durante la desprotección"
+title: 'ACSD-47908: *Se espera un valor menor o igual a 0* error durante el cierre de compra'
 description: Aplique el parche ACSD-47908 para corregir el error de Adobe Commerce *Se espera un valor menor o igual a 0* al seleccionar el origen y la cantidad en el paso de envío durante el cierre de compra.
 feature: Admin Workspace, Checkout, Orders
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: f1429bd9-652d-43c0-af52-b2258e2a7643
+source-git-commit: f6abbbb28a3077f7bf26a393388c5059fcd8c599
 workflow-type: tm+mt
 source-wordcount: '472'
 ht-degree: 0%

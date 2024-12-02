@@ -1,9 +1,10 @@
 ---
-title: "ACSD-47520: los clientes pierden puntos de recompensa cuando se crea una nota de crédito"
+title: 'ACSD-47520: los clientes pierden puntos de recompensa cuando se crea una nota de crédito'
 description: Aplique el parche ACSD-47520 para solucionar el problema de Adobe Commerce en el que los clientes pierden puntos de recompensa cuando se crea un abono.
 feature: Admin Workspace, Cache, Orders, Rewards, Returns
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 09104451-e9f0-4ddb-b019-8aa34630edb9
+source-git-commit: f6abbbb28a3077f7bf26a393388c5059fcd8c599
 workflow-type: tm+mt
 source-wordcount: '414'
 ht-degree: 0%

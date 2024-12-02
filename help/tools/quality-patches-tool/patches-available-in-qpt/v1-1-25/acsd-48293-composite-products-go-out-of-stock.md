@@ -1,9 +1,10 @@
 ---
-title: "ACSD-48293: productos compuestos agotados al agotarse los productos infantiles repuestos"
+title: 'ACSD-48293: productos compuestos agotados al agotarse los productos infantiles repuestos'
 description: Aplique el parche ACSD-48293 para corregir el problema de Adobe Commerce en el que los productos compuestos no están en existencias cuando los productos secundarios agotados vuelven a estar en existencias.
 feature: Admin Workspace, Orders, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 2aa75e97-373e-4e4a-a545-69bce807ca4d
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '436'
 ht-degree: 0%

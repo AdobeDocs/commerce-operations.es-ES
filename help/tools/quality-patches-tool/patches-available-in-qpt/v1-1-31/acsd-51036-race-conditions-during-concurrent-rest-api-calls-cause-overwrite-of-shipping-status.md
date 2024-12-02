@@ -1,9 +1,10 @@
 ---
-title: "ACSD-51036: Las condiciones de carrera durante las llamadas simultáneas a la API REST resultan en una sobrescritura del estado de envío"
+title: 'ACSD-51036: Las condiciones de carrera durante las llamadas simultáneas a la API de REST resultan en una sobrescritura del estado de envío'
 description: Aplique el parche ACSD-51036 para corregir el problema de Adobe Commerce donde hay condiciones de carrera durante las llamadas simultáneas a la API de REST, lo que provoca una sobrescritura del estado de envío en la tabla de artículos pedidos.
 feature: REST, Orders, Shipping/Delivery
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 6150d072-05fe-4010-b31b-8ccde9cab656
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '394'
 ht-degree: 0%

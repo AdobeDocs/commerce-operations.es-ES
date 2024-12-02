@@ -1,9 +1,10 @@
 ---
-title: "ACSD-61199: La ficha de la página de CMS [!UICONTROL Hierarchy] no muestra la estructura de árbol adecuada"
+title: 'ACSD-61199: La pestaña de la página de CMS [!UICONTROL Hierarchy] no muestra la estructura de árbol adecuada'
 description: Aplique el parche ACSD-61199 para corregir el problema de Adobe Commerce en el que la pestaña *[!UICONTROL Hierarchy]* de la página de CMS no muestra una estructura de árbol adecuada al editar una página de CMS con un *[!UICONTROL Hierarchy]* existente.
 feature: Page Content
 role: Admin, Developer
-source-git-commit: bbe4e272d3a8bd82163bdd718d006a314287b650
+exl-id: f541d001-9680-431a-9a62-816c2d10b6d5
+source-git-commit: 5568b2f574c7e90e641513c3c0ea4574648770ac
 workflow-type: tm+mt
 source-wordcount: '331'
 ht-degree: 0%

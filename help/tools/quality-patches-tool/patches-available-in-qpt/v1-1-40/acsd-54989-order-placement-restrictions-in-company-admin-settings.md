@@ -1,9 +1,10 @@
 ---
-title: "ACSD-54989: el administrador de la compañía no puede realizar pedidos cuando [!UICONTROL Enable Purchase Orders] se establece en Yes y [!UICONTROL Purchase Order] se establece en No"
+title: 'ACSD-54989: el administrador de la compañía no puede realizar pedidos cuando [!UICONTROL Enable Purchase Orders] se establece en Yes y [!UICONTROL Purchase Order] se establece en No'
 description: Aplique el parche ACSD-54989 para solucionar el problema de Adobe Commerce en el que el administrador de la empresa no puede realizar pedidos si [!UICONTROL Enable Purchase Orders] está establecido en Sí y [!UICONTROL Purchase Order] en No.
 feature: Orders, Companies, Purchase Orders
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 13830361-dd0c-486f-b07f-34280a17ab76
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '388'
 ht-degree: 0%

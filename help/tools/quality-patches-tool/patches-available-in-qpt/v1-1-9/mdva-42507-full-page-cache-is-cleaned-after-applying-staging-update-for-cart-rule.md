@@ -1,9 +1,10 @@
 ---
-title: "MDVA-42507: La caché de página completa se limpia después de aplicar la actualización de ensayo para la regla del carro de compras"
+title: 'MDVA-42507: la caché de página completa se limpia después de aplicar la actualización de ensayo para la regla del carro de compras'
 description: El parche MDVA-42507 resuelve el problema de limpieza de la caché de página completa después de aplicar la actualización de ensayo para la regla del carro de compras. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.9. El ID del parche es MDVA-42507. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.5.
 feature: Cache, Categories, Orders, Shopping Cart, Staging
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 19f61e31-67da-4bd6-bce7-a9250f3946c7
+source-git-commit: f6abbbb28a3077f7bf26a393388c5059fcd8c599
 workflow-type: tm+mt
 source-wordcount: '416'
 ht-degree: 0%

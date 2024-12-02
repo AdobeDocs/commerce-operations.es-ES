@@ -1,9 +1,10 @@
 ---
-title: "ACSD-50116: un usuario administrador no puede crear una reescritura de URL para las subcategorías de nivel tres o inferior"
+title: 'ACSD-50116: un usuario administrador no puede crear una reescritura de URL para las subcategorías de nivel tres o inferior'
 description: Aplique el parche ACSD-50116 para corregir el problema de Adobe Commerce en el que un usuario administrador no puede crear una reescritura de URL para las subcategorías de nivel tres o inferior.
 feature: Admin Workspace, Categories
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: b2a248eb-a6c4-4596-acac-04a52c5c2a61
+source-git-commit: f6abbbb28a3077f7bf26a393388c5059fcd8c599
 workflow-type: tm+mt
 source-wordcount: '375'
 ht-degree: 0%

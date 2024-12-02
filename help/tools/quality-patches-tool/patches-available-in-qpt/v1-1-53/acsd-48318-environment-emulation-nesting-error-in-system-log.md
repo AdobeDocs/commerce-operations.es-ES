@@ -1,9 +1,10 @@
 ---
-title: "ACSD-48318: Error de anidación de emulación de entorno en system.log"
+title: 'ACSD-48318: error de anidación de emulación de entorno en "system.log"'
 description: Aplique el parche ACSD-48318 para corregir el problema de Adobe Commerce donde aparece un mensaje de error *main.ERROR:No se permite el anidamiento de emulación de entorno* en "system.log" cada vez que se envía un correo electrónico de factura.
 feature: System, Orders
 role: Admin, Developer
-source-git-commit: 94b68d18bc46065b5803a2eb88f0e844f71f0386
+exl-id: 24af18de-80dd-4e0a-bdf9-5b9c075fc608
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '314'
 ht-degree: 0%

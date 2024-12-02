@@ -1,9 +1,10 @@
 ---
-title: "ACSD-60538: los atributos no se muestran correctamente si el producto está deshabilitado en [!UICONTROL All Store Views]"
+title: 'ACSD-60538: los atributos no se muestran correctamente si el producto está deshabilitado en [!UICONTROL All Store Views]'
 description: Aplique el parche ACSD-60538 para solucionar el problema de Adobe Commerce donde, si un producto está deshabilitado en *Todas las vistas de tienda* y solo está habilitado en ámbitos específicos de vista de tienda, los atributos del producto no se muestran correctamente en la respuesta de GraphQL, lo que provoca que el producto no se muestre correctamente.
 feature: Attributes, GraphQL
 role: Admin, Developer
-source-git-commit: c394e003797d8095c17a0f6047024231e26a8321
+exl-id: 2ea9de11-b750-4ab6-9cc7-e940e1791f22
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '453'
 ht-degree: 0%

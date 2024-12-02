@@ -1,9 +1,10 @@
 ---
-title: "ACSD-55241: **Utilizado** y **Tiempos utilizado** muestran valores incorrectos para los cupones generados"
+title: 'Los atributos ACSD-55241: **Utilizado** y **Utilizado** muestran valores incorrectos para los cupones generados'
 description: Aplique el parche ACSD-55241 para solucionar el problema de Adobe Commerce donde los atributos **Utilizado** y **Tiempos utilizado** muestran valores incorrectos para los cupones generados
 feature: Price Rules
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: a156f03c-c939-4ea7-bd34-03c2234edbff
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '460'
 ht-degree: 0%

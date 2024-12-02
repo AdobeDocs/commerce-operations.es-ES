@@ -1,9 +1,10 @@
 ---
-title: "ACSD-54026: Mensaje de error incorrecto para la solicitud de GraphQL updateCompanyRole"
+title: 'ACSD-54026: Mensaje de error incorrecto para la solicitud de GraphQL updateCompanyRole'
 description: Aplique el parche ACSD-54026 para corregir el problema de Adobe Commerce donde haya un mensaje de error incorrecto para una solicitud de GraphQL updateCompanyRole para un usuario no autorizado.
 feature: Roles/Permissions
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 21695333-5f18-48db-acde-246f269dd691
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '355'
 ht-degree: 0%

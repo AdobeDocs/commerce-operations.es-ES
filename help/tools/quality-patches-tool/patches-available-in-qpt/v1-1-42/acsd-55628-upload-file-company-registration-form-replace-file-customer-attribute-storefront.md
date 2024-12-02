@@ -1,9 +1,10 @@
 ---
-title: "ACSD-55628: cargando archivo en el formulario de registro de la empresa; reemplazando archivo para atributo del cliente en tienda"
+title: 'ACSD-55628: cargando archivo en el formulario de registro de la empresa; reemplazando archivo para atributo del cliente en tienda'
 description: Aplique el parche ACSD-55628 para solucionar el problema de Adobe Commerce cargando un archivo en el formulario de registro de la empresa y reemplazando un archivo para un atributo de cliente en la tienda.
 feature: Storefront, Attributes, B2B, Customers
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: a008a205-ec1d-4a1d-9cd2-75f10a937057
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 0%

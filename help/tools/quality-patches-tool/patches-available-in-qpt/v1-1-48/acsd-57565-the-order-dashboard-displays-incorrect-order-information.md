@@ -1,9 +1,10 @@
 ---
-title: "ACSD-57565: El panel de pedidos muestra información de pedidos incorrecta"
+title: 'ACSD-57565: El panel de pedidos muestra información de pedidos incorrecta'
 description: Aplique el parche ACSD-57565 para corregir el problema de Adobe Commerce en el que el panel de pedidos muestra información de pedidos incorrecta hasta que se actualiza el periodo de tiempo.
 feature: Roles/Permissions
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: dc4ad263-725e-4605-9b85-fc4305ab9a29
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '368'
 ht-degree: 0%

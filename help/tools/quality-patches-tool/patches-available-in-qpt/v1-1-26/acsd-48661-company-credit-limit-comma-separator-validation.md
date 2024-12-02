@@ -1,9 +1,10 @@
 ---
-title: "ACSD-48661: problema de validación del separador de comas del límite de crédito de la empresa"
+title: 'ACSD-48661: problema de validación del separador de comas del límite de crédito de la empresa'
 description: Aplique el parche ACSD-48661 para corregir el problema de Adobe Commerce en el que, cuando el límite de crédito de la empresa es mayor que 999, el separador de comas impide que se guarde la empresa debido a un error de validación.
 feature: Admin Workspace, B2B, Companies, Orders
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 7115226e-5942-4a8f-9dec-b1b6f665eef8
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '416'
 ht-degree: 0%

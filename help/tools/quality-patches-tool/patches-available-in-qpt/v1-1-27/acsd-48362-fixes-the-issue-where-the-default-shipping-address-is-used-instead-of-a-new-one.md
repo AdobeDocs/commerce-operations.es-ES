@@ -1,9 +1,10 @@
 ---
-title: '"ACSD-48362: se utiliza la dirección de envío predeterminada en lugar de una nueva".'
+title: 'ACSD-48362: se utiliza la dirección de envío predeterminada en lugar de una nueva.'
 description: Aplique el parche ACSD-48362 para solucionar el problema de Adobe Commerce en el que se utiliza la dirección de envío predeterminada en lugar de una nueva al realizar un pedido con una oferta negociable.
 feature: Admin Workspace, B2B, Orders, Shipping/Delivery
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 6f0717a6-1e29-4059-9640-5b92586c36e4
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '478'
 ht-degree: 0%

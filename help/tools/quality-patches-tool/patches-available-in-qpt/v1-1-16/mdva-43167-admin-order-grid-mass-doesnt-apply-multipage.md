@@ -1,9 +1,10 @@
 ---
-title: "MDVA-43167: La acción masiva de cuadrícula de orden de administrador no se aplica a páginas múltiples"
+title: 'MDVA-43167: La acción masiva de cuadrícula de orden de administración no se aplica a páginas múltiples'
 description: El parche MDVA-43167 corrige el problema en el que la acción masiva de la cuadrícula de pedidos de administrador no se aplica a varias páginas cuando el usuario administrador selecciona todas las solicitudes. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.16. El ID del parche es MDVA-43167. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.6.
 feature: Admin Workspace, Orders
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 992f8a90-300e-41aa-b03d-b8a647dddd51
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '409'
 ht-degree: 0%

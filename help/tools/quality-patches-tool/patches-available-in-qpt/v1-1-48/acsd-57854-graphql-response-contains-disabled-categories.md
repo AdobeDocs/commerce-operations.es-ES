@@ -1,9 +1,10 @@
 ---
-title: "ACSD-57854: la respuesta *GraphQL* contiene categorías deshabilitadas que no deben enumerarse en las agregaciones de categorías"
+title: 'ACSD-57854: la respuesta *GraphQL* contiene categorías desactivadas que no deberían aparecer en las agregaciones de categorías'
 description: Aplique el parche ACSD-57854 para solucionar el problema de Adobe Commerce donde la respuesta *GraphQL* contiene categorías desactivadas que no deberían aparecer en las agregaciones de categorías.
 feature: GraphQL
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 216aad2a-f470-49f9-b8ca-79107ca07891
+source-git-commit: f6abbbb28a3077f7bf26a393388c5059fcd8c599
 workflow-type: tm+mt
 source-wordcount: '379'
 ht-degree: 0%

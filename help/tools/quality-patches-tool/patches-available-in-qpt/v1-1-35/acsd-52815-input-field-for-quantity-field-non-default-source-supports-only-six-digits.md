@@ -1,9 +1,10 @@
 ---
-title: "ACSD-52815: El campo de entrada para el campo de cantidad de origen no predeterminado solo admite hasta 6 dígitos"
+title: 'ACSD-52815: el campo de entrada para el campo de cantidad de origen no predeterminado solo admite hasta 6 dígitos'
 description: Aplique el parche ACSD-52815 para solucionar el problema de rendimiento de Adobe Commerce, donde el campo de entrada del campo de cantidad de un origen no predeterminado solo admite hasta 6 dígitos, a diferencia de 8 para un stock predeterminado.
 feature: Inventory, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: d863af1f-8a7f-4a43-893e-54525ab68cd7
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 0%

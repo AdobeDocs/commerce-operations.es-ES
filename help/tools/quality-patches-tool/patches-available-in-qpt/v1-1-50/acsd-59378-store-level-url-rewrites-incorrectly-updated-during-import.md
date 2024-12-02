@@ -1,9 +1,10 @@
 ---
-title: "ACSD-59378: Store-level [!DNL URL] reescribe incorrectamente actualizado durante la importación"
+title: 'ACSD-59378: el nivel de almacenamiento  [!DNL URL] reescribe incorrectamente actualizado durante la importación'
 description: Aplique el parche ACSD-59378 para corregir el problema de Adobe Commerce donde las reescrituras a nivel de tienda [!DNL URL] se actualizan incorrectamente durante la importación.
 feature: Data Import/Export
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: dc54d810-dcc6-42c6-a877-d00d3cf4f9a5
+source-git-commit: f6abbbb28a3077f7bf26a393388c5059fcd8c599
 workflow-type: tm+mt
 source-wordcount: '367'
 ht-degree: 0%

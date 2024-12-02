@@ -1,9 +1,10 @@
 ---
-title: "ACSD-50336: Correos electrónicos de alerta de producto no enviados"
+title: 'ACSD-50336: Correos electrónicos de alerta de producto no enviados'
 description: Aplique el parche ACSD-50336 para corregir el problema de Adobe Commerce donde los correos electrónicos de alerta de producto no se envían cuando un producto vuelve a estar en stock o se cambia el precio.
 feature: Communications, Personalization, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 45dd12af-a3b2-4cfa-be90-af1c7b5f74b3
+source-git-commit: f6abbbb28a3077f7bf26a393388c5059fcd8c599
 workflow-type: tm+mt
 source-wordcount: '398'
 ht-degree: 0%

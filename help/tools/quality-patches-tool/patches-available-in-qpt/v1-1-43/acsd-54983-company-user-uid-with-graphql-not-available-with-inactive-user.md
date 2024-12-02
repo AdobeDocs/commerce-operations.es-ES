@@ -1,9 +1,10 @@
 ---
-title: "ACSD-54983: El UID del usuario de la empresa con GraphQL no está disponible con el usuario inactivo"
+title: 'ACSD-54983: El UID del usuario de la empresa con GraphQL no está disponible con el usuario inactivo'
 description: Aplique el parche ACSD-54983 para corregir el problema de Adobe Commerce en el que no es posible obtener el UID del usuario de la empresa con la solicitud de GraphQL cuando el estado del usuario se establece en inactivo.
 feature: GraphQL
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: b188270f-5454-41c9-8370-f4c396095297
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '420'
 ht-degree: 0%

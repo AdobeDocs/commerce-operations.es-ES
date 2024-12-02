@@ -1,9 +1,10 @@
 ---
-title: "ACSD-45754: puntos de recompensa no añadidos después de aplicar el cupón al carro de compras"
+title: 'ACSD-45754: puntos de recompensa no añadidos después de aplicar un cupón al carro de compras'
 description: El parche ACSD-45754 resuelve el problema en el que no se añaden puntos de recompensa después de aplicar un cupón al carro de compras. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.18. El ID del parche es ACSD-45754. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.6.
 feature: Orders, Rewards, Shopping Cart
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 02f3bfc4-440b-4d77-adf5-0824d1b21073
+source-git-commit: f6abbbb28a3077f7bf26a393388c5059fcd8c599
 workflow-type: tm+mt
 source-wordcount: '432'
 ht-degree: 0%

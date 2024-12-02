@@ -1,9 +1,10 @@
 ---
-title: "ACSD-51899: Dirección de envío predeterminada rellenada automáticamente incorrectamente"
+title: 'ACSD-51899: la dirección de envío predeterminada se rellena automáticamente de forma incorrecta'
 description: Aplique el parche ACSD-51899 para corregir el problema de Adobe Commerce en el que la dirección de envío predeterminada se rellena automáticamente con una dirección incorrecta.
 feature: Checkout
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 14e48613-6af8-476c-978d-87c27a0b0d15
+source-git-commit: f6abbbb28a3077f7bf26a393388c5059fcd8c599
 workflow-type: tm+mt
 source-wordcount: '409'
 ht-degree: 0%

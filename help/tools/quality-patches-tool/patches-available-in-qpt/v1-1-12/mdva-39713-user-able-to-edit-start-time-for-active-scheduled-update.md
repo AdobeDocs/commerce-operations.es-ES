@@ -1,9 +1,10 @@
 ---
-title: "MDVA-39713: el usuario puede editar la hora de inicio de la actualización programada activa"
+title: 'MDVA-39713: el usuario puede editar la hora de inicio de la actualización programada activa'
 description: El parche de MDVA-39713 soluciona el problema en el que un usuario puede editar la hora de inicio de una actualización programada activa. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.12. El ID del parche es MDVA-39713. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.5.
 feature: CMS
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 450a968f-a5ed-478f-a857-579fea1eb3b7
+source-git-commit: f6abbbb28a3077f7bf26a393388c5059fcd8c599
 workflow-type: tm+mt
 source-wordcount: '476'
 ht-degree: 0%

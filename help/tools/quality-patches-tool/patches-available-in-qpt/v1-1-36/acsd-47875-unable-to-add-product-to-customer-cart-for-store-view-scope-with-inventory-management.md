@@ -1,9 +1,10 @@
 ---
-title: "ACSD-47875: No se puede agregar un producto al carro para el ámbito de vista de tienda con la administración de inventario"
+title: 'ACSD-47875: no se puede agregar un producto al carro para el ámbito de vista de tienda con la administración de inventario'
 description: Aplique el parche ACSD-47875 para corregir el problema de Adobe Commerce en el que un producto no se puede agregar a un carro de compras de clientes desde el administrador para un ámbito de vista de tienda determinado con administración de inventario.
 feature: Inventory, Shopping Cart, Products
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 10862e09-d561-4ed5-ab6f-cf002fae6850
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '477'
 ht-degree: 0%

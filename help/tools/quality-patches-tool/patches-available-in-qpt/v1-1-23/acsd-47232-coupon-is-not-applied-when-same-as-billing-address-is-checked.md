@@ -1,9 +1,10 @@
 ---
-title: "ACSD-47232: el cupón no se aplica cuando se comprueba [!UICONTROL Same as Billing Address]"
+title: 'ACSD-47232: el cupón no se aplica cuando se comprueba [!UICONTROL Same as Billing Address]'
 description: Aplique el parche ACSD-47232 para corregir el problema de Adobe Commerce en el que el cupón no se aplica cuando se marca [!UICONTROL Same as Billing Address].
 feature: Orders, Shipping/Delivery
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: d8050f6e-00a9-4aa3-bb8b-1631e0e7a714
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '367'
 ht-degree: 0%

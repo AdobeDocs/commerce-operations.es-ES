@@ -1,9 +1,10 @@
 ---
-title: "ACSD-49433: Cantidad predeterminada que se muestra como subtotal en el carro de compras para la tarjeta de regalo"
+title: 'ACSD-49433: cantidad predeterminada que se muestra como subtotal en el carro de compras para la tarjeta regalo.'
 description: Aplique el parche ACSD-49433 para corregir el problema de Adobe Commerce en el que la cantidad predeterminada se muestra como subtotal en el carro de compras para la tarjeta regalo con una cantidad abierta.
 feature: Admin Workspace, Gift, Orders, Shopping Cart
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 22691e35-0491-4935-8e7c-148900706491
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '391'
 ht-degree: 0%

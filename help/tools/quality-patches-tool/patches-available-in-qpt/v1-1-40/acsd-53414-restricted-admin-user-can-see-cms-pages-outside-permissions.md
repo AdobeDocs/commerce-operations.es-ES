@@ -1,9 +1,10 @@
 ---
-title: "ACSD-53414: Los usuarios administradores restringidos pueden ver páginas de CMS fuera de su ámbito de permisos"
+title: 'ACSD-53414: los usuarios administradores restringidos pueden ver páginas de CMS fuera de su ámbito de permisos'
 description: Aplique el parche ACSD-53414 para corregir el problema de Adobe Commerce en el que un usuario administrador restringido puede ver páginas de CMS fuera de su ámbito de permisos.
 feature: CMS
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 86658336-679b-4fe0-9d26-56064ff0c604
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '389'
 ht-degree: 0%

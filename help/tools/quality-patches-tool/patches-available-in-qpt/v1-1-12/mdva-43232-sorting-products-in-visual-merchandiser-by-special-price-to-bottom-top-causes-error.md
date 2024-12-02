@@ -1,9 +1,10 @@
 ---
-title: "MDVA-43232: La ordenación de productos en el comerciante visual por precio especial a superior (o inferior) provoca un error"
+title: 'MDVA-43232: La ordenación de productos en el comerciante visual por precio especial a superior (o inferior) causa un error'
 description: El parche de MDVA-43232 soluciona el problema de que la clasificación de productos en Visual Merchandiser por Precio especial al principio (o al final) provoca un error al guardar la categoría. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.12. El ID del parche es MDVA-43232. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.5.
 feature: Categories, Merchandising, Orders, Personalization, Products
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: c977bec8-f99c-4799-abce-26aad49b77e8
+source-git-commit: f6abbbb28a3077f7bf26a393388c5059fcd8c599
 workflow-type: tm+mt
 source-wordcount: '509'
 ht-degree: 0%

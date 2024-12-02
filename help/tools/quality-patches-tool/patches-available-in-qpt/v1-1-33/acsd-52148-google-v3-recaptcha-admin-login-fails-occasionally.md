@@ -1,9 +1,10 @@
 ---
-title: "ACSD-52148: el inicio de sesión del administrador de Google v3 reCAPTCHA falla ocasionalmente"
+title: 'ACSD-52148: el inicio de sesión del administrador de Google v3 reCAPTCHA falla ocasionalmente'
 description: Aplique el parche ACSD-52148 para solucionar el problema de Adobe Commerce donde el inicio de sesión del administrador de reCAPTCHA de Google v3 falla ocasionalmente.
 feature: Admin Workspace
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: a114d39e-0aad-45c8-9e64-2b559373b228
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '314'
 ht-degree: 0%

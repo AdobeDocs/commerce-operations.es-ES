@@ -1,9 +1,10 @@
 ---
-title: "ACSD-56158: Valor fiscal incorrecto en la respuesta de GraphQL cuando se aplican varias reglas fiscales al carro de compras"
+title: 'ACSD-56158: Valor fiscal incorrecto en la respuesta de GraphQL cuando se aplican varias reglas fiscales al carro de compras'
 description: Aplique el parche ACSD-56158 para corregir el problema de Adobe Commerce en el que la representación del valor de impuestos en la respuesta de GraphQL es incorrecta cuando se aplican varias reglas fiscales al carro de compras.
 feature: GraphQL, Taxes
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: dc22861c-cd41-402f-be37-d02c02b59433
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '438'
 ht-degree: 0%

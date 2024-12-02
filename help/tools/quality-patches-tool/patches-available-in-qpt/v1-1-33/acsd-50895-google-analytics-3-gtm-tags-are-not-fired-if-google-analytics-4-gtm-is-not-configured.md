@@ -1,8 +1,9 @@
 ---
-title: 'ACSD-50895: [!DNL Google Analytics] 3 etiquetas GTM no se activan si  [!DNL Google Analytics] 4 GTM no está configurado'
+title: 'ACSD-50895: [!DNL Google Analytics] 3 etiquetas GTM no se activan si no se ha configurado  [!DNL Google Analytics] 4 GTM'
 description: Aplique el parche ACSD-50895 para solucionar el problema de Adobe Commerce donde  [!DNL Google Analytics] 3 etiquetas GTM no se activan si  [!DNL Google Analytics] 4 GTM no está configurada.
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 871e2ca1-dc10-435c-9325-62f5b9b673ad
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '357'
 ht-degree: 0%

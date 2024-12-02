@@ -1,15 +1,15 @@
 ---
-title: "ACSD-59952: Error al eliminar el catálogo compartido con el mismo ID de grupo que otro catálogo compartido"
+title: 'ACSD-59952: Error al eliminar el catálogo compartido con el mismo ID de grupo que otro catálogo compartido'
 description: Aplique el parche ACSD-59952 para solucionar el problema de Adobe Commerce en el que se produce un error al eliminar un catálogo compartido con el mismo customer_group_id que otro catálogo compartido.
 feature: B2B, REST
 role: Admin, Developer
-source-git-commit: a67f31aa905b420dcd2a17645734632d3f94520c
+exl-id: 11cba2e6-dd62-4063-a38c-b98ea70a72e9
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '428'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-59952: Error al eliminar el catálogo compartido con el mismo ID de grupo que otro catálogo compartido
 

@@ -1,9 +1,10 @@
 ---
-title: "ACSD-52041: El procesamiento de Page Builder no libera bloqueos"
+title: 'ACSD-52041: El procesamiento de Page Builder no libera bloqueos'
 description: Aplique el parche ACSD-52041 para corregir el problema de Adobe Commerce en el que Page Builder se procesa durante cinco segundos sin liberar bloqueos.
 feature: Page Builder
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 48a7fc36-e98a-4a4e-bed3-248d7d73f6cb
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '349'
 ht-degree: 0%

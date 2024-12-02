@@ -1,9 +1,10 @@
 ---
-title: "ACSD-54060: el administrador restringido no puede guardar el producto si es hijo de otro producto"
+title: 'ACSD-54060: el administrador restringido no puede guardar el producto si es hijo de otro producto'
 description: Aplique el parche ACSD-54060 para corregir el problema de Adobe Commerce en el que un administrador restringido no puede guardar un producto si es hijo de otro producto asignado a un ámbito diferente.
 feature: Admin Workspace, Roles/Permissions, Products
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 2af24cbf-65a1-4bd6-aad3-19b613bee7f2
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '419'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
-title: "ACSD-56447: Añadir el mismo producto al carro de compras mediante la API de REST web paralela da como resultado dos elementos independientes en el carro de compras"
+title: 'ACSD-56447: Añadir el mismo producto al carro de compras mediante la API de REST web paralela resulta en dos elementos independientes en el carro de compras'
 description: Aplique el parche ACSD-56447 para corregir el problema de Adobe Commerce, donde al agregar el mismo producto al carro de compras a través de solicitudes de API de REST web paralelas, se generan dos elementos independientes en el carro de compras.
 feature: Shopping Cart, REST
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: ef0b2ce7-74f5-47b6-a44c-bda898c444b2
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '416'
 ht-degree: 0%

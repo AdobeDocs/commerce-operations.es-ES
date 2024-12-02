@@ -1,9 +1,10 @@
 ---
-title: "MDVA-27239: No se muestran los productos de venta cruzada"
+title: 'MDVA-27239: No se muestran los productos de venta cruzada'
 description: El parche MDVA-27239 soluciona el problema de que no se muestran los productos de venta cruzada. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.7. Tenga en cuenta que el problema se solucionó en Adobe Commerce 2.3.6.
 feature: Products
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: ab8fe64d-adbe-4756-be43-1a35ba6b4123
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '402'
 ht-degree: 0%

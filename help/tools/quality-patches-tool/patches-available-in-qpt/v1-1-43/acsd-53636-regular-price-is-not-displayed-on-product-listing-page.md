@@ -1,9 +1,10 @@
 ---
-title: "ACSD-53636: El precio normal no se muestra en [!UICONTROL Product Listing] página"
+title: 'ACSD-53636: el precio normal no se muestra en la página [!UICONTROL Product Listing]'
 description: Aplique el parche ACSD-53636 para corregir el problema de Adobe Commerce en el que el precio normal no se muestra en páginas *[!UICONTROL Product Listing]* para productos configurables que tienen productos secundarios con precios especiales.
 feature: Catalog Management, Products
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: e6d66ae4-2c21-466a-b03c-a1f486e7fa29
+source-git-commit: f6abbbb28a3077f7bf26a393388c5059fcd8c599
 workflow-type: tm+mt
 source-wordcount: '441'
 ht-degree: 0%

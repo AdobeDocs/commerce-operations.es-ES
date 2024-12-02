@@ -1,9 +1,10 @@
 ---
-title: "ACSD-56090: la respuesta de GraphQL no es específica del almacén"
+title: 'ACSD-56090: la respuesta de GraphQL no es específica del almacén'
 description: Aplique el parche ACSD-56090 para solucionar el problema de Adobe Commerce, donde la respuesta de GraphQL contiene todos los almacenes de datos en lugar de los específicos del almacén de datos.
 feature: GraphQL
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 0909c09c-3260-43d2-8eac-0e5d7639f24b
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '376'
 ht-degree: 0%

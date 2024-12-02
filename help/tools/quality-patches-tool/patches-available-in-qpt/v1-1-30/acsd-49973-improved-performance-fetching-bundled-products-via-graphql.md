@@ -1,9 +1,10 @@
 ---
-title: "ACSD-49973: rendimiento mejorado al recuperar productos agrupados mediante  [!DNL GraphQL]"
+title: 'ACSD-49973: rendimiento mejorado al recuperar productos agrupados mediante  [!DNL GraphQL]'
 description: Aplique el parche ACSD-49973 para corregir el problema de Adobe Commerce donde se produce una degradación del rendimiento al recuperar productos agrupados mediante  [!DNL GraphQL].
 feature: GraphQL, Products
 role: Admin
-source-git-commit: 809defe75d7b218d8085f85ff815472a531040cf
+exl-id: d4817522-65dd-4ac8-8759-8518818684ed
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
-title: "ACSD-48694: Error solicitado de cambio de estado no válido que impide al cliente realizar el pedido"
+title: 'ACSD-48694: Error solicitado de cambio de estado no válido que impide al cliente realizar el pedido'
 description: Aplique el parche ACSD-48694 para solucionar el problema de Adobe Commerce donde el error *Se ha solicitado un cambio de estado no válido* impide que un cliente realice un pedido.
 feature: Admin Workspace, Orders
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 6b9fa474-1d9d-411d-bbca-ce7463cfeb0d
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '458'
 ht-degree: 0%

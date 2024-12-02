@@ -1,9 +1,10 @@
 ---
-title: "MDVA-42950: Los vídeos no se reproducen en la página de producto"
+title: 'MDVA-42950: Los vídeos no se reproducen en la página de producto'
 description: El parche MDVA-42950 soluciona el problema de que los vídeos no se reproducen en la página del producto. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.12. El ID del parche es MDVA-42950. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.5.
 feature: Products
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 61c36dc5-0015-431d-84c1-0726bb310cd6
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '403'
 ht-degree: 0%

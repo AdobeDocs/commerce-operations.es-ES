@@ -1,15 +1,15 @@
 ---
-title: "ACSD-58163: [!UICONTROL Cart Price Rule] no aplica descuento del carro de compras [!UICONTROL Customer Segment] coincidente sin código de cupón"
+title: 'ACSD-58163: [!UICONTROL Cart Price Rule] no aplica descuento del carro de compras [!UICONTROL Customer Segment] coincidente sin código de cupón'
 description: Aplique el parche ACSD-58163 para corregir el problema de Adobe Commerce en el cual [!UICONTROL Cart Price Rule] no aplica un descuento a un invitado del carro de compras [!UICONTROL Customer Segment] coincidente sin un código de cupón.
 feature: Products
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 209a50f7-32d9-40e9-bfd5-4658e4ca392d
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-58163: [!UICONTROL Cart Price Rule] no aplica descuento del carro de compras [!UICONTROL Customer Segment] coincidente sin código de cupón
 

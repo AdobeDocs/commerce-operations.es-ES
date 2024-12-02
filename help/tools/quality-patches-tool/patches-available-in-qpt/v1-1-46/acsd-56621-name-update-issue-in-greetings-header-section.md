@@ -1,9 +1,10 @@
 ---
-title: "ACSD-56621: Los nombres actualizados no se muestran en el encabezado de saludos para el usuario administrador de la empresa"
+title: 'ACSD-56621: los nombres actualizados no se muestran en el encabezado de saludos para el usuario administrador de la empresa'
 description: Aplique el parche ACSD-56621 para solucionar el problema de Adobe Commerce donde el nombre y los apellidos actualizados del usuario administrador de la empresa no se reflejan en la sección del encabezado de saludos.
 feature: Companies, B2B, User Account
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 739c1c8c-e079-4ad7-be97-7c60b0347e12
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '402'
 ht-degree: 0%

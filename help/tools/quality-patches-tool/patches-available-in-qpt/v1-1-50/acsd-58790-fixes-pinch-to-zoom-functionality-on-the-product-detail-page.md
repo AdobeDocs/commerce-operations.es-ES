@@ -1,15 +1,15 @@
 ---
-title: "ACSD-58790: corrige la funcionalidad de pellizco a zoom en las imágenes de la página de detalles del producto en la vista móvil en  [!DNL Chrome]"
+title: 'ACSD-58790: corrige la funcionalidad de pellizco a zoom en las imágenes de la página de detalles del producto en la vista móvil en  [!DNL Chrome]'
 description: ACSD-58790 corrige el problema de Adobe Commerce donde la imagen en la vista móvil de  [!DNL Chrome] no hizo zoom en la imagen como se esperaba.
 feature: Storefront
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 46b324bf-c2a0-4086-87ee-96e8c4883494
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '385'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-58790: corrige la funcionalidad de pellizco a zoom en las imágenes de la página de detalles del producto en la vista móvil de [!DNL Chrome]
 

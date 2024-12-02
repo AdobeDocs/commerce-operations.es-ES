@@ -1,5 +1,5 @@
 ---
-title: "ACSD-60804: La edición de un cliente asociado con una empresa eliminada produce un error"
+title: 'ACSD-60804: La edición de un cliente asociado con una empresa eliminada provoca un error'
 description: Aplique el parche ACSD-60804 para solucionar el problema de Adobe Commerce en el que la edición de un cliente asociado con una empresa eliminada provoca un error *La llamada a una función de miembro getSuperUserId() es nula*.
 feature: Companies, Customers, B2B
 role: Admin, Developer

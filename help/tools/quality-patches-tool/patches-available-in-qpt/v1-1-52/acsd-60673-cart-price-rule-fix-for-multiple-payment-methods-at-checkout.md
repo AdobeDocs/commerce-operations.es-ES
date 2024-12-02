@@ -1,9 +1,10 @@
 ---
-title: "ACSD-60673: [!UICONTROL Cart Price Rule] problema corregido para varios métodos de pago al finalizar la compra"
+title: 'ACSD-60673: [!UICONTROL Cart Price Rule] problema corregido para varios métodos de pago al finalizar la compra'
 description: Aplique el parche ACSD-60673 para solucionar el problema de Adobe Commerce donde los descuentos de un [!UICONTROL Cart Price Rule] que utilizan una condición de método de pago no siempre aparecen en los totales.
 feature: Price Rules
 role: Admin, Developer
-source-git-commit: 9334b0bb7aa32cd14622c6dcef799dffe7e35fdc
+exl-id: 2fe27959-5e5f-4d25-9f56-b0f8319fd562
+source-git-commit: f6abbbb28a3077f7bf26a393388c5059fcd8c599
 workflow-type: tm+mt
 source-wordcount: '428'
 ht-degree: 0%

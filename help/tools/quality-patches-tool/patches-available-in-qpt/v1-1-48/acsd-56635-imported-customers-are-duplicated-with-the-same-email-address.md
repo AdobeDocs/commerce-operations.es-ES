@@ -1,9 +1,10 @@
 ---
-title: "ACSD-56635: Los clientes importados se duplican cuando el uso compartido de cuentas se establece en  [!DNL Global]"
+title: 'ACSD-56635: los clientes importados se duplican cuando el uso compartido de cuentas se establece en  [!DNL Global]'
 description: Aplique el parche ACSD-56635 para corregir el problema de Adobe Commerce en el que el cliente importado se duplica con la misma dirección de correo electrónico cuando la importación se utiliza con el uso compartido de cuentas establecido en  [!DNL Global].
 feature: Customers, Attributes
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 73abec4a-03b0-45d4-bfc6-f3c6862e733c
+source-git-commit: f6abbbb28a3077f7bf26a393388c5059fcd8c599
 workflow-type: tm+mt
 source-wordcount: '440'
 ht-degree: 0%

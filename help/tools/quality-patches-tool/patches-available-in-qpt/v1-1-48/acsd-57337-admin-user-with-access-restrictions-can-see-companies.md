@@ -1,9 +1,10 @@
 ---
-title: "ACSD-57337: El usuario administrador con restricciones de acceso puede ver todas las compañías en la cuadrícula *Compañías*"
+title: 'ACSD-57337: el usuario administrador con restricciones de acceso puede ver todas las compañías en la cuadrícula Compañías'
 description: Aplique el parche ACSD-57337 para solucionar el problema de Adobe Commerce, en el que un usuario administrador con restricciones de acceso a sitios web específicos puede ver compañías de todos los sitios web en la cuadrícula Compañías.
 feature: Companies, B2B, Configuration
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 7a05d335-5ed8-460e-80c4-dbc51d06c5bd
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 0%

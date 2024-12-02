@@ -1,9 +1,10 @@
 ---
-title: "ACSD-47292: los productos agrupados agotados no están disponibles en la respuesta de GraphQL"
+title: 'ACSD-47292: los productos agrupados agotados no están disponibles en la respuesta de GraphQL'
 description: Aplique el parche ACSD-47292 para solucionar el problema de Adobe Commerce en el que los productos agrupados sin existencias no están disponibles en la respuesta de GraphQL aunque "mostrar productos sin existencias" esté establecido en Sí.
 feature: Admin Workspace, Categories, GraphQL, Orders, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 3b8114a3-cc45-4d65-af74-cb3e905d7f75
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '442'
 ht-degree: 0%

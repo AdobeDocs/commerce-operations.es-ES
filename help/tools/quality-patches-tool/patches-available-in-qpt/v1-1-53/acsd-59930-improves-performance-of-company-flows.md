@@ -1,9 +1,10 @@
 ---
-title: "ACSD-59930: Mejora el rendimiento de los flujos de la empresa"
+title: 'ACSD-59930: Mejora el rendimiento de los flujos de la empresa'
 description: Aplique el parche ACSD-59930 para resolver el problema de Adobe Commerce en el que se muestra un error *Timeout* en el panel de administración al crear, guardar o eliminar una compañía con un administrador que tenga direcciones *1000+* en la libreta de direcciones.
 feature: Customers, B2B
 role: Admin, Developer
-source-git-commit: bff014ede6ab7e8e72700814bb4edda2e733557a
+exl-id: eaa6c78d-13e3-439d-90f7-70c1c96c3197
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '367'
 ht-degree: 0%

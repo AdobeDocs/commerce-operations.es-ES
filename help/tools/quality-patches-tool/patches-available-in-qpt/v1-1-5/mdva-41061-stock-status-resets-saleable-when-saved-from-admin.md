@@ -1,9 +1,10 @@
 ---
-title: "MDVA-41061: El estado de las existencias se restablece como vendible cuando el producto se guarda desde el administrador"
+title: 'MDVA-41061: El estado de las existencias se restablece como vendible cuando el producto se guarda desde el administrador'
 description: El parche MDVA-41061 corrige el problema en el que el estado de las existencias se restablece como comercializable cuando el producto se guarda desde el administrador. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.5. El ID del parche es MDVA-41061. La última versión del parche está disponible en QPT 1.1.15 con ID de parche MDVA-41061-V3. Tenga en cuenta que el problema se corrige en Adobe Commerce 2.4.4.
 feature: Admin Workspace, Orders, Products
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: ddbc30ef-bc88-4878-8bd8-6880823819a2
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '487'
 ht-degree: 0%

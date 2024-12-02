@@ -1,9 +1,10 @@
 ---
-title: "MDVA-40399: Las facturas parciales para el mismo pedido no se pueden crear simultáneamente mediante API"
+title: 'MDVA-40399: Las facturas parciales para el mismo pedido no se pueden crear simultáneamente mediante API'
 description: El parche MDVA-40399 corrige el problema en el que las facturas parciales del mismo pedido no se pueden crear simultáneamente mediante la API de REST. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.4. El ID del parche es MDVA-40399. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.4.
 feature: REST, Invoices, Orders
 role: Admin
-source-git-commit: 1fb76b8d648cbbe2a9f602d2b1a0149f1f4f0e46
+exl-id: aa400a15-57b9-4f80-a49f-f4680b7e4705
+source-git-commit: f6abbbb28a3077f7bf26a393388c5059fcd8c599
 workflow-type: tm+mt
 source-wordcount: '440'
 ht-degree: 0%

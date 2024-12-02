@@ -1,9 +1,10 @@
 ---
-title: "MDVA-39482: El producto se queda sin existencias si se importa con una cantidad '0' con los pedidos pendientes habilitados"
+title: 'MDVA-39482: El producto se queda sin existencias si se importa con una cantidad "0" con los pedidos pendientes habilitados'
 description: El MDVA-39482 corrige el problema en el que el producto se queda sin existencias si se importa con una cantidad "0" cuando MSI y los pedidos no satisfechos están activados y el umbral de falta de existencias se establece en un valor negativo. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.4. El ID del parche es MDVA-39482. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.4.
 feature: Data Import/Export, Orders, Products
 role: Admin
-source-git-commit: 1fb76b8d648cbbe2a9f602d2b1a0149f1f4f0e46
+exl-id: 9d705ebf-2372-4e59-b447-cdb5b0db32f4
+source-git-commit: f6abbbb28a3077f7bf26a393388c5059fcd8c599
 workflow-type: tm+mt
 source-wordcount: '476'
 ht-degree: 0%

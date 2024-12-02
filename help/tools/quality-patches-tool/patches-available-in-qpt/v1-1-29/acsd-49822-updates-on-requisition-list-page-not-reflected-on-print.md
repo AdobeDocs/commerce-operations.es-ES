@@ -1,9 +1,10 @@
 ---
-title: "ACSD-49822: las actualizaciones en la página de lista de solicitudes no se reflejan en la lista de solicitudes de impresión"
+title: 'ACSD-49822: las actualizaciones en la página de lista de solicitudes no se reflejan en la lista de solicitudes de impresión'
 description: Aplique el parche ACSD-49822 para solucionar el problema de Adobe Commerce en el que las actualizaciones de la página de lista de solicitudes no se reflejan en la lista de solicitudes de impresión.
 feature: Admin Workspace, B2B
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 053b8900-0900-4b7e-ba1b-ad4b88ca3f35
+source-git-commit: f6abbbb28a3077f7bf26a393388c5059fcd8c599
 workflow-type: tm+mt
 source-wordcount: '428'
 ht-degree: 0%

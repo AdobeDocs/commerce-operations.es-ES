@@ -1,7 +1,8 @@
 ---
-title: "ACSD-51907: El usuario administrador restringido no puede crear un abono para el reembolso sin conexión"
+title: 'ACSD-51907: el usuario administrador restringido no puede crear un abono para el reembolso sin conexión'
 description: Aplique el parche ACSD-51907 para solucionar el problema de Adobe Commerce en el que el usuario administrador restringido no puede crear un abono con un reembolso sin conexión.
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 1c44d99b-7633-4768-b7e7-332f3666a5d9
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '455'
 ht-degree: 0%

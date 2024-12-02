@@ -1,9 +1,10 @@
 ---
-title: "MDVA-31763: Las reglas de precios de catálogo se revierten hasta la reindexación manual"
+title: 'MDVA-31763: Las reglas de precios de catálogo se revierten hasta la reindexación manual'
 description: El parche MDVA-31763 resuelve el problema en el que las reglas de precios de catálogo se revierten hasta la reindexación manual. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.5. El ID del parche es MDVA-31763. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.4.
 feature: Catalog Management, Orders, Price Rules
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 1d144bfc-c26b-43d0-a80c-26a9c2d8ef32
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '484'
 ht-degree: 0%

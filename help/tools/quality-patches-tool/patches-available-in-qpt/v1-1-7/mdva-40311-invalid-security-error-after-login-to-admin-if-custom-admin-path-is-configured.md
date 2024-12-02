@@ -1,9 +1,10 @@
 ---
-title: '"MDVA-40311: Error "Seguridad no válida o clave de formulario" después de iniciar sesión en el administrador si se ha configurado la ruta de administración personalizada"'
-description: '''El parche de MDVA-40311 corrige el problema en el que el usuario administrador recibe un mensaje de error: *Seguridad o clave de formulario no válidas. Actualice la página*, después de iniciar sesión en el administrador, si la ruta de administración personalizada está configurada y la clave secreta está habilitada. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.7. El ID del parche es MDVA-40311. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.4."'
+title: 'MDVA-40311: Error "Seguridad no válida o clave de formulario" después de iniciar sesión en el administrador si se ha configurado la ruta de administración personalizada'
+description: 'El parche de MDVA-40311 corrige el problema en el que el usuario administrador recibe un mensaje de error: *Seguridad o clave de formulario no válidas. Actualice la página*, después de iniciar sesión en el administrador, si la ruta de administración personalizada está configurada y la clave secreta está habilitada. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.7. El ID del parche es MDVA-40311. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.4.'
 feature: Admin Workspace, Compliance, Security
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: dce4914b-e32e-4af0-be24-e55680191fa3
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '461'
 ht-degree: 0%

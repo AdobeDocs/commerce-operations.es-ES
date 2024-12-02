@@ -1,9 +1,10 @@
 ---
-title: "ACSD-54324: La solicitud de GraphQL request_lists no tiene en cuenta la configuración de paginación"
+title: 'ACSD-54324: La solicitud de GraphQL request_lists no tiene en cuenta la configuración de paginación'
 description: Aplique el parche ACSD-54324 para solucionar el problema de Adobe Commerce en el que la solicitud de GraphQL "request_lists" no tiene en cuenta la configuración de paginación y devuelve todos los resultados.
 feature: B2B, Customers, GraphQL
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 60f82602-1cfc-4523-a50d-46af5d5f10d9
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '431'
 ht-degree: 0%

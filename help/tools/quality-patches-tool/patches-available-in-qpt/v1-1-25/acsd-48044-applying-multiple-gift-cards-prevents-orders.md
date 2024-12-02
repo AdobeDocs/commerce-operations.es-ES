@@ -1,9 +1,10 @@
 ---
-title: "ACSD-48044: la aplicación de varias tarjetas regalo evita que se realicen pedidos"
+title: 'ACSD-48044: la aplicación de varias tarjetas regalo evita que se realicen pedidos'
 description: Aplique el parche ACSD-48044 para solucionar el problema de Adobe Commerce cuando la aplicación de varias tarjetas regalo a un único pedido con envío múltiple impide que se realicen pedidos.
 feature: Admin Workspace, Gift, Orders
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: c7b72b1f-2f1b-4445-b842-5847d05d5ae9
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '485'
 ht-degree: 0%

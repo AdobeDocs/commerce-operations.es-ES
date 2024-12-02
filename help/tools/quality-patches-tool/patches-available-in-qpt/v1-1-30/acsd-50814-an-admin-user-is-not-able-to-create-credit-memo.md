@@ -1,9 +1,10 @@
 ---
-title: "ACSD-50814: El usuario administrador no puede crear una nota de crédito"
+title: 'ACSD-50814: el usuario administrador no puede crear una nota de crédito'
 description: Aplique el parche ACSD-50814 para solucionar el problema de Adobe Commerce en el que un usuario administrador no puede crear un abono.
 feature: Admin Workspace, Orders, Returns
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 87ee7166-7492-4948-9a85-a183ecf54fa7
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '368'
 ht-degree: 0%

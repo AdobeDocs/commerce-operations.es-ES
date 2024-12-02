@@ -1,9 +1,10 @@
 ---
-title: "MDVA-40545: Solo se recupera el primer nodo de una página"
+title: 'MDVA-40545: Solo se recupera el primer nodo de una página'
 description: El parche MDVA-40545 resuelve el problema de que solo se recupera el primer nodo de una página, aunque haya más de un nodo para la misma página. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.5. El ID del parche es MDVA-40545. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.4.
 feature: CMS, Cache
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: f87344e9-5a63-4c38-af2b-1500ef053dec
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '448'
 ht-degree: 0%

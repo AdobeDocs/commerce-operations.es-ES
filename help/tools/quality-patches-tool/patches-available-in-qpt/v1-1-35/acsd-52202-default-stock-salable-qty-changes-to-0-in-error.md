@@ -1,9 +1,10 @@
 ---
-title: "ACSD-52202: La cantidad vendible de stock predeterminada cambia a 0 por error cuando las existencias no predeterminadas se establecen en 0 cantidad en orden"
+title: 'ACSD-52202: La cantidad vendible de stock predeterminada cambia a 0 por error cuando las existencias no predeterminadas se establecen en 0 cant en orden'
 description: Aplique el parche ACSD-52202 para corregir el problema de Adobe Commerce en el que una cantidad vendible de stock predeterminada cambia a 0 por error cuando el stock no predeterminado se establece en 0 en un pedido.
 feature: Inventory, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 2ba5cc3b-9774-49f6-948f-371ab3c0c9df
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '420'
 ht-degree: 0%

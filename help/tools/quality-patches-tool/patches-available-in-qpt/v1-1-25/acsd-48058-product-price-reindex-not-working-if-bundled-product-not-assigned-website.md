@@ -1,9 +1,10 @@
 ---
-title: "ACSD-48058: el reíndice de precios del producto no funciona si el producto agrupado no está asignado a un sitio web"
+title: 'ACSD-48058: el reíndice de precios del producto no funciona si el producto agrupado no está asignado a un sitio web'
 description: Aplique el parche ACSD-48058 para corregir el problema de Adobe Commerce en el que el reíndice de precios del producto no funciona si el producto agrupado no está asignado a ningún sitio web.
 feature: Admin Workspace, Orders, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 270e1b5d-75e0-4374-973a-2bb37161ceec
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '365'
 ht-degree: 0%

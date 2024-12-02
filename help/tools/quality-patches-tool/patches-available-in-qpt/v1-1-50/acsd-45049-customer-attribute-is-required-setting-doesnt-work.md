@@ -1,9 +1,10 @@
 ---
-title: "ACSD-45049: La configuración de atributos 'Es obligatorio' del cliente no funciona según el ámbito del sitio web en Administración"
+title: 'ACSD-45049: la configuración de atributos "Es necesario" del cliente no funciona según el ámbito del sitio web en el administrador'
 description: Aplique el parche ACSD-45049 para corregir el problema de Adobe Commerce en el que el atributo del cliente "[!UICONTROL Is required]" no se ha anulado correctamente según el ámbito del sitio web en Administración.
 feature: Attributes, Customers
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 368af877-a3ec-431f-8f41-5d51354be571
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '383'
 ht-degree: 0%

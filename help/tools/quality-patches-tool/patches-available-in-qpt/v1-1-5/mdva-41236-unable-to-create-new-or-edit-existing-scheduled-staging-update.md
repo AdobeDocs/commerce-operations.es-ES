@@ -1,9 +1,10 @@
 ---
-title: "MDVA-41236: No se pueden crear nuevas actualizaciones programadas o editar las existentes para el producto"
+title: 'MDVA-41236: No se pueden crear nuevas actualizaciones programadas o editar las existentes para el producto'
 description: El parche de MDVA-41236 soluciona el problema en el que los usuarios no pueden crear actualizaciones programadas nuevas o editar las existentes para el producto si se ha eliminado anteriormente la "Fecha de finalización". Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.5. El ID del parche es MDVA-41236. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.5.
 feature: Products, Staging
 role: Admin
-source-git-commit: 1fb76b8d648cbbe2a9f602d2b1a0149f1f4f0e46
+exl-id: 82192778-4f25-40a0-882e-d52d32c433c2
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '535'
 ht-degree: 0%

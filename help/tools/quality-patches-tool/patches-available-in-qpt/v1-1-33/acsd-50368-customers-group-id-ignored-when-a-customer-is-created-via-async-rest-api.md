@@ -1,9 +1,10 @@
 ---
-title: "ACSD-50368: Customers group_id se omite cuando se crea un cliente mediante la API de REST asíncrona o la API de REST asíncrona masiva"
+title: 'ACSD-50368: se ignora el group_id de los clientes cuando se crea un cliente mediante la API de REST asincrónica o la API de REST asincrónica masiva'
 description: Aplique el parche ACSD-50368 para corregir el problema de Adobe Commerce en el que el group_id de los clientes se ignora cuando se crea un cliente mediante la API de REST asíncrona o la API de REST asíncrona masiva.
 feature: REST
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 1ca78717-2144-4410-a398-764864ee182f
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '388'
 ht-degree: 0%

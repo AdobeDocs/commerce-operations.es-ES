@@ -1,9 +1,10 @@
 ---
-title: "ACSD-53722: el precio de las opciones de productos agrupadas cambia a 0 $"
+title: 'ACSD-53722: el precio de las opciones de productos agrupadas cambia a 0 $'
 description: Aplique el parche ACSD-53722 para corregir el problema de Adobe Commerce en el que el precio de las opciones del producto agrupadas cambia a 0 $ cuando se activan actualizaciones programadas para diferentes ámbitos.
 feature: Products
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 2e974a6a-0c79-442f-9b45-b4edf831a052
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '424'
 ht-degree: 0%

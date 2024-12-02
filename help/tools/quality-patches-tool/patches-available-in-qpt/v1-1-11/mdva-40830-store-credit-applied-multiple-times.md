@@ -1,9 +1,10 @@
 ---
-title: "MDVA-40830: crédito de tienda aplicado varias veces durante el pedido"
+title: 'MDVA-40830: crédito de tienda aplicado varias veces durante el pedido'
 description: El parche MDVA-40830 soluciona el problema de que el crédito de la tienda se aplica varias veces durante la realización del pedido. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.11. El ID del parche es MDVA-40830. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.5.
 feature: Orders, Returns
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 4ee952c8-2736-47b2-84f6-a7a0556608dd
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '414'
 ht-degree: 0%

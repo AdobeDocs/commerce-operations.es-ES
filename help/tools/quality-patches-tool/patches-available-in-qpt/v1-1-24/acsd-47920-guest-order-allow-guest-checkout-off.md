@@ -1,9 +1,10 @@
 ---
-title: "ACSD-47920: un usuario invitado puede realizar pedidos a través de la API de REST incluso cuando [!UICONTROL Allow Guest Checkout] está desactivado"
+title: 'ACSD-47920: un usuario invitado puede realizar pedidos a través de la API de REST incluso cuando [!UICONTROL Allow Guest Checkout] está desactivado'
 description: Aplique el parche ACSD-47920 para corregir el problema de Adobe Commerce en el que los pedidos se pueden realizar mediante la API de REST como usuario invitado incluso cuando [!UICONTROL Allow Guest Checkout] está desactivado.
 feature: REST, Checkout, Orders
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 27c74803-a3f3-46bc-9eb8-8e2c72c30cd9
+source-git-commit: f6abbbb28a3077f7bf26a393388c5059fcd8c599
 workflow-type: tm+mt
 source-wordcount: '373'
 ht-degree: 0%

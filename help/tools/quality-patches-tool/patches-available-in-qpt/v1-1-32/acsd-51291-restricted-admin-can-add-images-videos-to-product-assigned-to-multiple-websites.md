@@ -1,9 +1,10 @@
 ---
-title: "ACSD-51291: el administrador restringido puede agregar imágenes/vídeos al producto asignado a varios sitios web"
+title: 'ACSD-51291: un administrador restringido puede añadir imágenes/vídeos al producto asignado a varios sitios web'
 description: Aplique el parche ACSD-51291 para solucionar el problema de Adobe Commerce, donde los administradores restringidos con acceso a un sitio web pueden agregar imágenes/vídeos a un producto asignado a varios sitios web.
 feature: Admin Workspace, Products, Page Content
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: a4edd034-f718-4559-9993-11609f0d0efa
+source-git-commit: f6abbbb28a3077f7bf26a393388c5059fcd8c599
 workflow-type: tm+mt
 source-wordcount: '474'
 ht-degree: 0%

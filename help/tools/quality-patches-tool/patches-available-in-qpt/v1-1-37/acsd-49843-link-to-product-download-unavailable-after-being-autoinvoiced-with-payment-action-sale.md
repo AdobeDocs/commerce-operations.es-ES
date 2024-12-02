@@ -1,9 +1,10 @@
 ---
-title: "49843 ACSD: el vínculo de descarga de producto no está disponible después de facturarse automáticamente con [!UICONTROL Payment Action] = [!UICONTROL Intent Sale]"
+title: '49843 ACSD: el vínculo de descarga de producto no está disponible después de facturarse automáticamente con [!UICONTROL Payment Action] = [!UICONTROL Intent Sale]'
 description: Aplique el parche ACSD-49843 para solucionar el problema de Adobe Commerce en el que el vínculo de descarga de productos no está disponible después de que un método de pago en línea factura automáticamente el artículo pedido cuando [!UICONTROL Payment Action] se establece en [!UICONTROL Intent Sale].
 feature: Catalog Management, Configuration, Invoices, Orders, Storefront
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: e990b550-fb32-48d2-9c39-2176d7ab34c9
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '485'
 ht-degree: 0%

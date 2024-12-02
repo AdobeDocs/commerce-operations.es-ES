@@ -1,9 +1,10 @@
 ---
-title: "ACSD-52399: Producto con cantidad salable 0 se muestra en stock"
+title: 'ACSD-52399: Producto con cantidad salable 0 muestra en stock'
 description: Aplique el parche ACSD-52399 para solucionar el problema de Adobe Commerce donde la opción de producto configurable con una cantidad escalable de 0 muestra *En stock* en la página del producto.
 feature: Products, Configuration
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 7b7332bb-15ae-44b6-a347-38ac7c9001db
+source-git-commit: f6abbbb28a3077f7bf26a393388c5059fcd8c599
 workflow-type: tm+mt
 source-wordcount: '369'
 ht-degree: 0%

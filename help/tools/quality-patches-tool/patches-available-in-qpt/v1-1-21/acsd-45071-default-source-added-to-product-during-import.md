@@ -1,9 +1,10 @@
 ---
-title: "ACSD-45071: origen predeterminado agregado al producto durante la importación"
+title: 'ACSD-45071: origen predeterminado añadido al producto durante la importación'
 description: El parche ACSD-45071 soluciona el problema de añadir el origen predeterminado al producto durante la importación. Esta revisión está disponible cuando está instalado [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.21. El ID del parche es ACSD-45071. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.6.
 feature: Data Import/Export, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: d28cbfb1-ad6b-4ccf-a877-6db763cea61b
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '400'
 ht-degree: 0%

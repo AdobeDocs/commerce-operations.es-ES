@@ -1,9 +1,10 @@
 ---
-title: "ACSD-52689: Las imágenes no se pueden cargar en el almacenamiento de Amazon S3 mediante la API de REST"
+title: 'ACSD-52689: Las imágenes no se pueden cargar en el almacenamiento de Amazon S3 mediante la API de REST'
 description: Aplique el parche ACSD-52689 para corregir el problema de Adobe Commerce en el que las imágenes no se pueden cargar en el almacenamiento de Amazon S3 a través de la API de REST.
 feature: REST, Storage, Iaas
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 4d7a8ea7-2856-4b40-a922-fdd356dcaea4
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 0%

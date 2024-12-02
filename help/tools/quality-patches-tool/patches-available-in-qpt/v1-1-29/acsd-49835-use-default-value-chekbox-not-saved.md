@@ -1,9 +1,10 @@
 ---
-title: "ACSD-49835: la casilla de verificación [!UICONTROL Use Default Value] no se ha guardado"
+title: 'ACSD-49835: la casilla de verificación [!UICONTROL Use Default Value] no se ha guardado'
 description: Aplique el parche ACSD-49835 para corregir el problema de Adobe Commerce en el que la casilla de verificación [!UICONTROL Use Default Value] no se guarda correctamente en un nivel de almacén para un atributo de selección múltiple.
 feature: Storefront
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: e8d5a95f-b17d-49fc-a6d3-e03554667438
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '352'
 ht-degree: 0%

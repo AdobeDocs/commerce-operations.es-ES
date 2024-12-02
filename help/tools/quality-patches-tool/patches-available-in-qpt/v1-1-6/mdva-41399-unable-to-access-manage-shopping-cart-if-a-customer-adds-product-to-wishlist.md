@@ -1,9 +1,10 @@
 ---
-title: "MDVA-41399: No se puede acceder a Administrar carro de compras si un cliente agrega un producto a la lista de deseos"
+title: 'MDVA-41399: No se puede acceder a Administrar carro de compras si un cliente agrega un producto a la lista de deseos'
 description: El parche MDVA-41399 resuelve el problema en el que los usuarios administradores no pueden acceder a la página Administrar carro de compras si un cliente agrega un producto a la lista de deseos. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.6. El ID del parche es MDVA-41399. Tenga en cuenta que el problema se solucionó en Adobe Commerce 2.4.2.
 feature: Orders, Products, Shopping Cart
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 81a128b5-0c38-4f8f-b297-1f264952d431
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '452'
 ht-degree: 0%

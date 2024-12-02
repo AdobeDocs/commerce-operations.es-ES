@@ -1,9 +1,10 @@
 ---
-title: "MC-42528: la consulta GraphQL de categoryList muestra todas las categorías"
+title: 'MC-42528: la consulta GraphQL de categoryList muestra todas las categorías'
 description: El parche MC-42528 resuelve el problema en el que la consulta GraphQL de categoryList devuelve categorías asignadas y no asignadas cuando la categoría de navegación de una categoría en particular está establecida en Denegar. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.4. El ID del parche es MC-42528. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.4.
 feature: Catalog Management, Categories, GraphQL, Customer Service
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 0611a7ff-9d55-4d95-9d4e-9ce1d9096bb6
+source-git-commit: f6abbbb28a3077f7bf26a393388c5059fcd8c599
 workflow-type: tm+mt
 source-wordcount: '465'
 ht-degree: 0%

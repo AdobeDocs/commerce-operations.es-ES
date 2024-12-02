@@ -1,9 +1,10 @@
 ---
-title: "ACSD-49464: facturas, envíos y notas de abono que no se han movido del archivo"
+title: 'ACSD-49464: facturas, envíos y notas de abono que no se han movido del archivo'
 description: Aplique el parche ACSD-49464 para solucionar el problema de Adobe Commerce en el que las facturas, los envíos y los abonos no se mueven de vuelta del archivo cuando orderId es diferente.
 feature: Admin Workspace, Invoices, Orders, Returns, Shipping/Delivery
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: d9ccd043-cbd3-4be5-ab29-c5351da53030
+source-git-commit: f6abbbb28a3077f7bf26a393388c5059fcd8c599
 workflow-type: tm+mt
 source-wordcount: '425'
 ht-degree: 0%

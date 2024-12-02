@@ -1,15 +1,15 @@
 ---
-title: "ACSD-61522: Las direcciones de correo electrónico de los campos *Nombre y Apellido* envían confirmaciones de pedido no válidas"
+title: 'ACSD-61522: Las direcciones de correo electrónico de los campos *Nombre y Apellido* envían confirmaciones de pedido no válidas'
 description: Aplique el parche ACSD-61522 para corregir el problema de Adobe Commerce donde es posible introducir direcciones de correo electrónico en los campos *[!UICONTROL First Name]* y *[!UICONTROL Last Name]* de un cliente invitado, lo que provoca que se envíen correos electrónicos de confirmación de pedido no válidos.
 feature: Checkout, Customers
 role: Admin, Developer
-source-git-commit: d56f4fda007c1499bdba82ac3db9ac5ea1d34b0e
+exl-id: e1ed7a57-4054-44db-bc17-9b9056096fce
+source-git-commit: f6abbbb28a3077f7bf26a393388c5059fcd8c599
 workflow-type: tm+mt
 source-wordcount: '361'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-61522: las direcciones de correo electrónico de los campos *Nombre y Apellido* envían confirmaciones de pedidos no válidas
 

@@ -1,9 +1,10 @@
 ---
-title: "ACSD-54264: Error cuando el cliente intenta cerrar la compra con un presupuesto negociable"
+title: 'ACSD-54264: Error cuando el cliente intenta pagar con un presupuesto negociable'
 description: 'Aplique el parche ACSD-54264 para corregir el problema de Adobe Commerce donde aparece un mensaje de error "No puede actualizar el atributo solicitado. ID de fila: "store_id" aparece cuando un cliente intenta realizar una compra con una oferta negociable de otra vista de tienda.'
 feature: B2B, Checkout
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: b1696228-b2ed-44eb-9e75-bf25ccf2f1cd
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '445'
 ht-degree: 0%

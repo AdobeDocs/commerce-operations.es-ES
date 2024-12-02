@@ -1,9 +1,10 @@
 ---
-title: '"MDVA-43859: Error "No existe esa entidad con customerId =" registrado cuando el cliente eliminado inicia sesión"'
+title: 'MDVA-43859: Error "No existe esa entidad con customerId =" registrado cuando el cliente eliminado inicia sesión'
 description: El parche MDVA-43859 corrige el problema por el que el error *No existe dicha entidad con el =* customerId cuando un cliente eliminado intenta iniciar sesión. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.14. El ID del parche es MDVA-43859. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.5.
 feature: Variables
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: b8451b08-978a-44a2-8664-4369e832423b
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '443'
 ht-degree: 0%

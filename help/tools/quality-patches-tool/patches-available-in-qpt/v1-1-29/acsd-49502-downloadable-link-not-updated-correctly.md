@@ -3,7 +3,8 @@ title: 'ACSD-49502: el vínculo descargable no se actualizó correctamente despu
 description: Aplique el parche ACSD-49502 para corregir el problema de Adobe Commerce donde el vínculo descargable no se actualiza correctamente después de que se aplique una  [!DNL staging] actualización al producto descargable.
 feature: Staging
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 9bdc9a7e-4291-4438-9ba0-65fcab1f95bb
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '385'
 ht-degree: 0%

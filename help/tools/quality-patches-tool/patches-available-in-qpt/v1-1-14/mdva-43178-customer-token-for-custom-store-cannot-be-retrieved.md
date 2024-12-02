@@ -1,9 +1,10 @@
 ---
-title: "MDVA-43178: El token de cliente para la tienda personalizada no se puede recuperar en GraphQL"
+title: 'MDVA-43178: el token de cliente para la tienda personalizada no se puede recuperar en GraphQL'
 description: El parche MDVA-43178 corrige el problema en el que el token de cliente para una tienda personalizada no se puede recuperar en GraphQL. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.14. El ID del parche es MDVA-43178. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.5.
 feature: GraphQL
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 8dd9c9e7-573c-4c7a-8fd0-3b3886649af3
+source-git-commit: f6abbbb28a3077f7bf26a393388c5059fcd8c599
 workflow-type: tm+mt
 source-wordcount: '424'
 ht-degree: 0%

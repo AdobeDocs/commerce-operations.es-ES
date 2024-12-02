@@ -1,9 +1,10 @@
 ---
-title: "ACSD-45675: la exportación de productos utiliza nombres de categoría desde el ámbito de vista de tienda predeterminado"
+title: 'ACSD-45675: la exportación de productos utiliza nombres de categoría del ámbito de vista de tienda predeterminado'
 description: El parche de ACSD-45675 corrige el problema en el que la exportación del producto utiliza nombres de categoría desde el ámbito de vista de tienda predeterminado. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.20. El ID del parche es ACSD-45675. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.6.
 feature: Categories, Data Import/Export, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: ebe72038-511d-43e1-bd65-e5b468342f05
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '429'
 ht-degree: 0%

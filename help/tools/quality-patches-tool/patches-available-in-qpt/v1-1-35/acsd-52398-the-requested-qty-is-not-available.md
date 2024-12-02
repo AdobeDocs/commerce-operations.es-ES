@@ -1,9 +1,10 @@
 ---
-title: "ACSD-52398: la cantidad solicitada no está disponible al intentar actualizar la cantidad del producto agrupado"
+title: 'ACSD-52398: la cantidad solicitada no está disponible al intentar actualizar la cantidad del producto agrupado'
 description: Aplique el parche ACSD-52398 para solucionar el problema de Adobe Commerce en el que la cantidad solicitada no está disponible al intentar actualizar la cantidad de un producto agrupado en el carro de compras de la tienda.
 feature: Shopping Cart, Quotes, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 75fa5f96-22e7-40a2-8b8a-f44452e5124d
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '407'
 ht-degree: 0%

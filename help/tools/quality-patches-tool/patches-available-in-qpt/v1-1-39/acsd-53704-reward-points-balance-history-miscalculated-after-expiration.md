@@ -1,9 +1,10 @@
 ---
-title: "ACSD-53704: El historial de saldo de puntos de recompensa se ha calculado incorrectamente tras la caducidad"
+title: 'ACSD-53704: el historial de saldo de puntos de recompensa se ha calculado mal tras la caducidad'
 description: Aplique el parche ACSD-53704 para corregir el problema de Adobe Commerce en el que el historial de saldo de puntos de recompensa se calcula de forma incorrecta después de la fecha de caducidad de los puntos de recompensa.
 feature: Rewards
 role: Admin, Developer
-source-git-commit: 809defe75d7b218d8085f85ff815472a531040cf
+exl-id: 8cd297cc-9e9d-4615-b817-283065a79c2f
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 0%

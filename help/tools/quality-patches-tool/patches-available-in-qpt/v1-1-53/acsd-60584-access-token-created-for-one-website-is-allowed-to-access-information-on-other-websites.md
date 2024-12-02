@@ -1,9 +1,10 @@
 ---
-title: "ACSD-60584: El token de acceso creado para un sitio web permite acceder a la información de otros sitios web"
+title: 'ACSD-60584: el token de acceso creado para un sitio web permite acceder a la información de otros sitios web'
 description: Aplique el parche ACSD-60584 para solucionar el problema en el que el token de acceso creado para el usuario en un sitio web puede acceder o cambiar la información del cliente en otros sitios web.
 feature: Customers, GraphQL
 role: Admin, Developer
-source-git-commit: eba4a8fd7bbf52fbc4295feab0d5bb79e7383b66
+exl-id: ea30ba92-4b7b-44f9-a1b1-97946061d9e6
+source-git-commit: f6abbbb28a3077f7bf26a393388c5059fcd8c599
 workflow-type: tm+mt
 source-wordcount: '430'
 ht-degree: 0%

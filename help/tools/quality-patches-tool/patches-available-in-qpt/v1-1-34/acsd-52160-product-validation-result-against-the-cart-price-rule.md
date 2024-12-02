@@ -1,7 +1,8 @@
 ---
-title: "ACSD-52160: resultado de validación del producto frente a la regla de precio del carro de compras"
+title: 'ACSD-52160: resultado de validación del producto frente a la regla de precio del carro de compras'
 description: Aplique el parche ACSD-52160 para corregir el problema de Adobe Commerce en el que el resultado de validación del producto con la regla de precio del carro de compras no se evalúa correctamente en función de la condición de regla *[!UICONTROL If an item is FOUND/NOT FOUND in the cart with All/Any of these conditions true]*.
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 8f8799c9-850a-4c8f-bde4-68df64e46c85
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '373'
 ht-degree: 0%

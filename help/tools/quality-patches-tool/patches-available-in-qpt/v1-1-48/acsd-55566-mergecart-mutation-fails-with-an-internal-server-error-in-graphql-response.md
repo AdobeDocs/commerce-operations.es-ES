@@ -1,9 +1,10 @@
 ---
-title: "ACSD-55566: la mutación [!UICONTROL mergeCart] falla con un error interno del servidor en  [!DNL GraphQL] response"
+title: 'ACSD-55566: la mutación [!UICONTROL mergeCart] falla con un error interno del servidor en  [!DNL GraphQL] respuesta'
 description: Aplique el parche ACSD-55566 para solucionar el problema de Adobe Commerce donde la mutación mergeCart falla con un error interno del servidor en la respuesta  [!DNL GraphQL]  al combinar los carros de compras de origen y destino que tienen los mismos elementos de paquete.
 feature: GraphQL, Shopping Cart
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 84c6fbb9-73b3-4197-aff3-49743f0ebb2c
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '428'
 ht-degree: 0%

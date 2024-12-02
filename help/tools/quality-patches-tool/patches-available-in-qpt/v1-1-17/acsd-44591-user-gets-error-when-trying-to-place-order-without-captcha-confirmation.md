@@ -1,9 +1,10 @@
 ---
-title: "ACSD-44591: Errores al realizar el pedido sin confirmación CAPTCHA"
+title: 'ACSD-44591: Errores al realizar un pedido sin confirmación de CAPTCHA'
 description: El parche ACSD-44591 resuelve el problema en el que el usuario obtiene errores al intentar realizar un pedido sin confirmación CAPTCHA.
 feature: Orders
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 4b8a8090-a2ba-428c-9a04-7c0842e94a6f
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '382'
 ht-degree: 0%

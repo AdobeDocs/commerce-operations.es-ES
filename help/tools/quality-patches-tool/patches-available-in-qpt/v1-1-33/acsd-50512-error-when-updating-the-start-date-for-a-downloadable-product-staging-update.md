@@ -1,9 +1,10 @@
 ---
-title: "ACSD-50512: Error al actualizar la fecha de inicio de una actualización de ensayo de producto descargable"
+title: 'ACSD-50512: Error al actualizar la fecha de inicio de una actualización de ensayo de producto descargable'
 description: Aplique el parche ACSD-51892 para corregir el problema de rendimiento de Adobe Commerce donde el error *El vínculo descargable no está relacionado con el producto.Compruebe el vínculo e inténtelo de nuevo*, se produce al actualizar la fecha de inicio de una actualización de ensayo de producto descargable.
 feature: Products, Staging
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 9c3b4d45-c500-46a7-8679-a8aa9e0a66d6
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '416'
 ht-degree: 0%

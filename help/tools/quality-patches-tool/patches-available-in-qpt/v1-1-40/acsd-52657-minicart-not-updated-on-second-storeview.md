@@ -1,9 +1,10 @@
 ---
-title: "ACSD-52657: Minicart no se ha actualizado en la segunda vista de tienda que utiliza el subdominio"
+title: 'ACSD-52657: Minicart no se actualiza en la segunda vista de tienda que utiliza un subdominio'
 description: Aplique el parche ACSD-52657 para corregir el problema de Adobe Commerce en el que la minicart no se actualiza en la segunda vista de tienda que utiliza un subdominio.
 feature: Shopping Cart
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: feec9dde-5532-481b-9410-7f6be9df4be7
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '388'
 ht-degree: 0%

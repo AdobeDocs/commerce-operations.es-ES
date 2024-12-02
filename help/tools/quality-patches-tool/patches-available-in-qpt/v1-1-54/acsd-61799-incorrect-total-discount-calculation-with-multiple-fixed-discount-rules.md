@@ -1,15 +1,15 @@
 ---
-title: "ACSD-61799: cálculo de descuento total incorrecto con varias reglas de carro de descuentos fijos aplicadas al presupuesto"
+title: 'ACSD-61799: cálculo de descuento total incorrecto con varias reglas de carro de descuentos fijos aplicadas al presupuesto'
 description: Aplique el parche ACSD-61799 para corregir el problema de Adobe Commerce en el que el descuento total se calcula incorrectamente cuando se aplican varias reglas del carro de compras con descuentos fijos a la oferta.
 feature: Price Rules
 role: Admin, Developer
-source-git-commit: 0b4c46e0db3dbd7ce5914490ae20471709be261d
+exl-id: a87ec1cd-f141-43b9-bde1-eca354c12d4e
+source-git-commit: 737204ae7418f49fdebfffbf351304796e9f5eb0
 workflow-type: tm+mt
 source-wordcount: '445'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-61799: cálculo de descuento total incorrecto con varias reglas de carro de descuentos fijos aplicadas al presupuesto
 
@@ -66,4 +66,3 @@ Para aplicar parches individuales, utilice los siguientes vínculos según el m�
 Para obtener más información sobre [!DNL Quality Patches Tool], consulte:
 
 * [[!DNL Quality Patches Tool]: herramienta de autoservicio para parches de calidad](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) en la guía Herramientas.
-

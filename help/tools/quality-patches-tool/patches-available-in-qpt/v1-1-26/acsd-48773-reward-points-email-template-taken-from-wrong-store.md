@@ -1,9 +1,10 @@
 ---
-title: "ACSD-48773: La plantilla de correo electrónico de puntos de recompensa se ha tomado de una tienda incorrecta"
+title: 'ACSD-48773: la plantilla de correo electrónico de puntos de recompensa se ha tomado de una tienda incorrecta'
 description: Aplique el parche ACSD-48773 para solucionar el problema de Adobe Commerce donde la plantilla de correo electrónico de puntos de recompensa se toma de la tienda incorrecta.
 feature: Admin Workspace, Communications, Marketing Tools, Orders, Personalization, Rewards
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: db8b6196-3e13-4c1b-8ae8-040487180817
+source-git-commit: f6abbbb28a3077f7bf26a393388c5059fcd8c599
 workflow-type: tm+mt
 source-wordcount: '453'
 ht-degree: 0%

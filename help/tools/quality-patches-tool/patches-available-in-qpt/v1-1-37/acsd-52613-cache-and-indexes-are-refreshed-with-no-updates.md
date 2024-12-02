@@ -1,9 +1,10 @@
 ---
-title: "ACSD-52613: La caché y los índices se actualizan sin actualizaciones"
+title: 'ACSD-52613: la caché y los índices se actualizan sin actualizaciones'
 description: Aplique el parche ACSD-52613 para corregir el problema de Adobe Commerce en el que la caché y los índices se actualizan cuando  [!DNL REST API] no se realizan actualizaciones en los elementos "Inventory_source".
 feature: REST
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 18878161-da4e-4d6e-9f58-706519f837f8
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '440'
 ht-degree: 0%

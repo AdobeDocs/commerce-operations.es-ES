@@ -1,9 +1,10 @@
 ---
-title: "MDVA-41136: La fecha de caducidad de mage-cache-sessid no se amplía"
+title: 'MDVA-41136: La fecha de caducidad de mage-cache-sessid no se amplía'
 description: El parche MDVA-41136 resuelve el problema de que la fecha de caducidad de la cookie "mage-cache-sessid" no se amplía, lo que da como resultado la limpieza de datos del cliente. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.12. El ID del parche es MDVA-41136. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.5.
 feature: Cache
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: f9fbbbdb-b440-4e94-a5b0-c03cdad9f010
+source-git-commit: f6abbbb28a3077f7bf26a393388c5059fcd8c599
 workflow-type: tm+mt
 source-wordcount: '411'
 ht-degree: 0%

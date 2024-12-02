@@ -1,9 +1,10 @@
 ---
-title: "ACSD-55352: Creación de notas de crédito con puntos de recompensa"
+title: 'ACSD-55352: Creación de notas de crédito con puntos de recompensa'
 description: Aplique el parche ACSD-55352 para solucionar el problema de Adobe Commerce en el que, después de crear una nota de crédito parcial con puntos de recompensa del cliente, el estado del pedido cambia a *cerrado* y las opciones de nota de crédito desaparecen de la página de orden del administrador.
 feature: Checkout, Orders
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: bee0c4be-11ec-4dcb-9b3c-7af26676cee9
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '479'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
-title: '"MDVA-38447: Los productos secundarios configurables "no visibles individualmente" se devuelven en la respuesta de GraphQL y en la consulta MySQL lenta"'
+title: 'MDVA-38447: Los productos secundarios configurables "no visibles individualmente" se devuelven en la respuesta de GraphQL y en la consulta MySQL lenta'
 description: El parche de MDVA-38447 Adobe Commerce corrige el problema en el que los productos secundarios configurables "No visibles individualmente" se devuelven en la respuesta de GraphQL y ralentizan la consulta MySQL para productos de GraphQL con el filtro de categoría. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.2. El ID del parche es MDVA-38447. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.4.
 feature: B2B, GraphQL, Categories, Configuration, Products, Services
 role: Admin
-source-git-commit: c1055ed10813aa6e585f93ec3091d216af06affd
+exl-id: d97297c5-e8e8-407b-b43b-033937426fe2
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '491'
 ht-degree: 0%

@@ -1,7 +1,8 @@
 ---
-title: "ACSD-50478: Problema de JS para la acción de reversión en la cuadrícula de copias de seguridad y el comando de reversión de base de datos"
+title: 'ACSD-50478: problema de JS para la acción de reversión en la cuadrícula de copias de seguridad y el comando de reversión de base de datos'
 description: Aplique el parche ACSD-50478 para corregir el problema de JS para la acción de reversión en la cuadrícula de copias de seguridad y el comando de reversión de la base de datos para un caso en el que el volcado de la base de datos contenga déclencheur y un comando SQL *delimiter*.
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 2f47fbf6-44fc-487c-91fe-6e2e52fcdb2b
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '428'
 ht-degree: 0%

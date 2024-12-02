@@ -1,9 +1,10 @@
 ---
-title: "ACSD-51305: productos secundarios compuestos sin existencias no disponibles en la respuesta de GraphQL"
+title: 'ACSD-51305: productos secundarios compuestos sin existencias no disponibles en la respuesta de GraphQL'
 description: Aplique el parche ACSD-51305 para corregir el problema de Adobe Commerce en el que los productos secundarios compuestos sin existencias no están disponibles en la respuesta de GraphQL.
 feature: Categories, GraphQL, Orders, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 110bb332-2032-4aaf-b95e-971fc3382262
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '399'
 ht-degree: 0%

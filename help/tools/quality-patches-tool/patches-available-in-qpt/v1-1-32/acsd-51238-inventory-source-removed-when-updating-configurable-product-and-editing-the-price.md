@@ -1,9 +1,10 @@
 ---
-title: "ACSD-51238: El origen de inventario se elimina al actualizar un producto configurable y editar el precio"
+title: 'ACSD-51238: el origen de inventario se elimina al actualizar un producto configurable y editar el precio'
 description: Aplique el parche ACSD-51238 para solucionar el problema de Adobe Commerce en el que se elimina el origen de inventario al actualizar un producto configurable y editar el precio.
 feature: Configuration, Inventory, Orders, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 785f012f-e064-4ac6-b559-9e9aa42c679c
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '381'
 ht-degree: 0%

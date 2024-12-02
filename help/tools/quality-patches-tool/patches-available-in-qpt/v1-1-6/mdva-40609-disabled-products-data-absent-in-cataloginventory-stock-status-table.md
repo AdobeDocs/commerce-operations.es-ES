@@ -1,9 +1,10 @@
 ---
-title: "MDVA-40609: Datos de productos desactivados ausentes en la tabla cataloginventory_stock_status"
+title: 'MDVA-40609: datos de productos desactivados ausentes en la tabla cataloginventory_stock_status'
 description: El parche MDVA-40609 resuelve el problema en el que los datos de productos desactivados no se muestran en la tabla de índice cataloginventory_stock_status, lo que provoca la visualización de cantidades de productos incorrectas. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.6. El ID del parche es MDVA-40609. Tenga en cuenta que el problema se solucionó en Adobe Commerce 2.4.3.
 feature: Catalog Management, Inventory, Orders, Products
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: e207ee55-b6ce-4065-bae1-2be89dcf5092
+source-git-commit: f6abbbb28a3077f7bf26a393388c5059fcd8c599
 workflow-type: tm+mt
 source-wordcount: '418'
 ht-degree: 0%

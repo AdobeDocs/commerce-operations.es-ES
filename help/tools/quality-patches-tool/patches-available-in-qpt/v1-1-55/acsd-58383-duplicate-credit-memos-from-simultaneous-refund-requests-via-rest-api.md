@@ -1,5 +1,5 @@
 ---
-title: "ACSD-58383: duplicar notas de crédito de solicitudes de reembolso simultáneas a través de  [!DNL REST API]"
+title: 'ACSD-58383: duplicar notas de crédito de solicitudes de reembolso simultáneas a través de  [!DNL REST API]'
 description: Aplique el parche ACSD-58383 para corregir el problema de Adobe Commerce donde al emitir un reembolso a través de  [!DNL REST API]  con dos solicitudes idénticas que se ejecutan simultáneamente, se crean notas de crédito duplicadas.
 feature: REST, Payments, Returns
 role: Admin, Developer

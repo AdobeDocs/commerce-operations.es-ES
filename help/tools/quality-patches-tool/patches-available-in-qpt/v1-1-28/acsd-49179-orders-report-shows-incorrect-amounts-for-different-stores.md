@@ -1,9 +1,10 @@
 ---
-title: "ACSD-49179: El informe Pedidos muestra cantidades incorrectas para diferentes tiendas."
+title: 'ACSD-49179: el informe Pedidos muestra importes incorrectos para diferentes tiendas.'
 description: Aplique el parche ACSD-49179 para corregir el problema de Adobe Commerce en el que el informe de pedidos muestra importes incorrectos en el caso de monedas diferentes para tiendas diferentes.
 feature: Admin Workspace, Orders
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: b10653ef-c4b1-40df-8bfe-7da755db621b
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '473'
 ht-degree: 0%

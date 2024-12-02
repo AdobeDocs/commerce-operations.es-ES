@@ -1,9 +1,10 @@
 ---
-title: "ACSD-51884: Ruta incorrecta de la caché de imágenes de producto en el comando resize"
+title: 'ACSD-51884: ruta incorrecta de la caché de imágenes de producto en el comando resize'
 description: Aplique el parche ACSD-51884 para corregir el problema de Adobe Commerce en el que la ruta de acceso de la caché de la imagen del producto se vuelve incorrecta después de ejecutar el comando resize.
 feature: Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: a3779e4b-2749-460e-a0a8-656b26bb06fa
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '369'
 ht-degree: 0%

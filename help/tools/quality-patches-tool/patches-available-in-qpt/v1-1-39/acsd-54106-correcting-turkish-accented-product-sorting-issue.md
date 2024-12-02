@@ -1,9 +1,10 @@
 ---
-title: "ACSD-54106: rectificación de la clasificación de caracteres acentuados turcos en la categoría del producto"
+title: 'ACSD-54106: rectificación de la clasificación de caracteres acentuados turcos en la categoría del producto'
 description: Aplique el parche ACSD-54106 para solucionar el problema de Adobe Commerce donde la ordenación de productos de categoría por nombre para caracteres acentuados turcos es incorrecta.
 feature: Categories, Products, Search
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 45c8efbb-85d0-4d25-9d7e-9c41a97e80fa
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '402'
 ht-degree: 0%

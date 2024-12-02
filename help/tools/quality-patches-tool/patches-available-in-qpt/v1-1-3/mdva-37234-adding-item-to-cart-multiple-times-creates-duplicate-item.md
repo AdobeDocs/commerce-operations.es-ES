@@ -1,9 +1,10 @@
 ---
-title: "MDVA-37234: al agregar un elemento al carro de compras varias veces, se crea un elemento de línea duplicado"
+title: 'MDVA-37234: al agregar un elemento al carro de compras varias veces, se crea un elemento de línea duplicado'
 description: El parche de MDVA-37234 soluciona el problema de que, al añadir un artículo al carro de compras varias veces (solicitud paralela) para la misma SKU, se crea un elemento de línea duplicado para la misma ID de carro de compras. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.3. El ID del parche es MDVA-37234. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.4.
 feature: Orders, Shopping Cart
 role: Admin
-source-git-commit: c1055ed10813aa6e585f93ec3091d216af06affd
+exl-id: d4e9fca1-7fba-4a33-9c5e-c9695cbfc61c
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '477'
 ht-degree: 0%

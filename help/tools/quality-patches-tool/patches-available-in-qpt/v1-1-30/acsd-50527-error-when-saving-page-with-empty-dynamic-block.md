@@ -1,9 +1,10 @@
 ---
-title: "ACSD-50527: Error al guardar una página con un bloque dinámico vacío"
+title: 'ACSD-50527: Error al guardar una página con un bloque dinámico vacío'
 description: Aplique el parche ACSD-50527 para solucionar el problema de Adobe Commerce donde se produce un error al guardar una página con un bloque dinámico vacío.
 feature: Page Content
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: d4943772-cbb8-4b6e-b553-7d3f5a50500e
+source-git-commit: f6abbbb28a3077f7bf26a393388c5059fcd8c599
 workflow-type: tm+mt
 source-wordcount: '354'
 ht-degree: 0%

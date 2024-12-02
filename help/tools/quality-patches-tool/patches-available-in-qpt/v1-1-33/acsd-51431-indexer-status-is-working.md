@@ -1,9 +1,10 @@
 ---
-title: "ACSD-51431: el estado del indizador es *[!UICONTROL Working]* aunque no haya entradas en el registro de cambios"
+title: 'ACSD-51431: el estado del indizador es *[!UICONTROL Working]* aunque no haya entradas en el registro de cambios'
 description: Aplique el parche ACSD-51431 para corregir el problema de Adobe Commerce en el que el estado del indexador es *[!UICONTROL Working]* aunque no haya entradas en el registro de cambios.
 feature: Logs, Price Indexer
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: c87c059b-f435-468d-a7fe-e6786fdba1f8
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '359'
 ht-degree: 0%

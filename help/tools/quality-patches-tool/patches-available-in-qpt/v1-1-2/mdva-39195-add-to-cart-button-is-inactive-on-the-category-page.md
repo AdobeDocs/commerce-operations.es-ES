@@ -1,9 +1,10 @@
 ---
-title: "MDVA-39195: Agregar al carro de compras está inactivo en la página de categoría"
+title: 'MDVA-39195: Agregar al carro está inactivo en la página de categoría'
 description: El parche MDVA-39195 resuelve el problema de que el botón **Agregar al carro de compras** esté inactivo en la página Categoría cuando se habilita la redirección al carro de compras. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.2. El ID del parche es MDVA-39195. Tenga en cuenta que el problema se solucionó en Adobe Commerce 2.4.3.
 feature: Categories, Orders, Shopping Cart
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 2c391f54-3b9e-4e72-944b-b003e4ade9b9
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '403'
 ht-degree: 0%

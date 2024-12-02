@@ -1,9 +1,10 @@
 ---
-title: "MDVA-40488: Los productos configurables con productos secundarios agotados no se muestran en el rango de precios correcto"
+title: 'MDVA-40488: los productos configurables con productos secundarios agotados no se muestran en el rango de precios correcto'
 description: El parche MDVA-40488 resuelve el problema en el que los productos configurables con productos secundarios agotados no se muestran en su rango de precios correcto. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.9. El ID del parche es MDVA-40488. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.4.
 feature: Configuration, Orders, Products
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 9a843d1b-88df-4bd7-a358-3aa34c436bdf
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '583'
 ht-degree: 0%

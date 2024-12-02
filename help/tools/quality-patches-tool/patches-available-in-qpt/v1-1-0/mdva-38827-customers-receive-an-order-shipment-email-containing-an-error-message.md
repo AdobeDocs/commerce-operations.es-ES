@@ -1,9 +1,10 @@
 ---
-title: "MDVA-38827: Los clientes reciben un error de envío de pedidos por correo electrónico"
-description: '"El parche de MDVA-38827 soluciona el problema en el que los clientes reciben un correo electrónico de envío de pedidos que contiene el siguiente mensaje de error: *Lo sentimos, se ha producido un error al generar este contenido*. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.0. El ID del parche es MDVA-38827. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.4".'
+title: 'MDVA-38827: Los clientes reciben un error de envío de pedidos por correo electrónico'
+description: 'El parche de MDVA-38827 soluciona el problema en el que los clientes reciben un correo electrónico de envío de pedidos que contiene el siguiente mensaje de error: *Lo sentimos, se ha producido un error al generar este contenido*. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.0. El ID del parche es MDVA-38827. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.4.'
 feature: Communications, Marketing Tools, Orders, Shipping/Delivery
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: ab522c9c-2983-4c2f-b341-4487bdbee34d
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '535'
 ht-degree: 0%

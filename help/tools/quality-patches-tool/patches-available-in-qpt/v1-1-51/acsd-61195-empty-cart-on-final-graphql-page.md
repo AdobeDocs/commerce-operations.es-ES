@@ -1,9 +1,10 @@
 ---
-title: "ACSD-61195: La solicitud de GraphQL del carro de compras no devuelve elementos en la página final"
+title: 'ACSD-61195: la solicitud de GraphQL del carro de compras no devuelve elementos en la página final'
 description: Aplique el parche ACSD-61195 para corregir el problema de Adobe Commerce en el que no se devuelven elementos del carro de compras en la última página de la solicitud de GraphQL del carro de compras.
 feature: GraphQL
 role: Admin, Developer
-source-git-commit: f6e410e0787e56717b3910b7f3938108a7af9cd8
+exl-id: 15f0f29c-8517-4f1e-9370-772572e75c9a
+source-git-commit: f6abbbb28a3077f7bf26a393388c5059fcd8c599
 workflow-type: tm+mt
 source-wordcount: '328'
 ht-degree: 0%

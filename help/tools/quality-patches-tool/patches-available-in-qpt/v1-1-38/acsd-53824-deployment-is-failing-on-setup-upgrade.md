@@ -1,9 +1,10 @@
 ---
-title: "ACSD-53824: la implementación falla al actualizar la instalación"
+title: 'ACSD-53824: la implementación falla al actualizar la instalación'
 description: Aplique el parche ACSD-53824 para corregir el problema de Adobe Commerce en el que la implementación falla al actualizar la instalación
 feature: Attributes, Upgrade
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 9038190b-5779-47b5-b4fb-ccd0a769dc61
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '324'
 ht-degree: 0%

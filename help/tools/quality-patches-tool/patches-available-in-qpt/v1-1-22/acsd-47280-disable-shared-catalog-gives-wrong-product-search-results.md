@@ -1,5 +1,5 @@
 ---
-title: '[!DNL ACSD-47280]: deshabilitar el catálogo compartido proporciona resultados de búsqueda de productos incorrectos'
+title: '[!DNL ACSD-47280]: al deshabilitar el catálogo compartido se obtienen resultados de búsqueda de productos incorrectos'
 description: Aplique el  [!DNL ACSD-47280] parche para corregir la visualización de los resultados de búsqueda correctos cuando la función de catálogo compartido esté deshabilitada.
 source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
 workflow-type: tm+mt

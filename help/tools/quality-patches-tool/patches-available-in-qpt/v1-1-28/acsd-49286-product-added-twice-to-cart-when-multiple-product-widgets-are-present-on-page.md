@@ -1,9 +1,10 @@
 ---
-title: "ACSD-49286: producto añadido dos veces al carro de compras cuando hay varios widgets de producto presentes"
+title: 'ACSD-49286: producto añadido dos veces al carro de compras cuando hay varios widgets de producto presentes.'
 description: Aplique el parche ACSD-49286 para corregir el problema de Adobe Commerce por el que el producto se agrega dos veces al carro de compras cuando hay varios widgets de producto en la página.
 feature: Admin Workspace, Orders, Products, Shopping Cart
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 03fdaafe-5566-4b75-a0eb-e0cba3dad3e7
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '414'
 ht-degree: 0%

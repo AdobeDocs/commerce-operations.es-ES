@@ -1,9 +1,10 @@
 ---
-title: "ACSD-50794: No se puede eliminar el envoltorio para regalos del pedido del cliente a través de GraphQL"
+title: 'ACSD-50794: no se puede eliminar el envoltorio para regalos del pedido del cliente mediante GraphQL'
 description: Aplique el parche ACSD-50794 para solucionar el problema de Adobe Commerce en el que los usuarios no pueden eliminar el envoltorio para regalos del pedido del cliente a través de GraphQL.
 feature: Gift, GraphQL, Orders
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: e088fb18-89d3-47e4-ad02-54068c1ab653
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '412'
 ht-degree: 0%

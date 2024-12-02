@@ -1,9 +1,10 @@
 ---
-title: "ACSD-47079: el estado de existencias de los productos compuestos no se actualiza cuando cambia el estado de existencias de subproductos"
+title: 'ACSD-47079: el estado de las existencias de los productos compuestos no se actualiza cuando cambia el estado de las existencias de subproductos'
 description: Aplique el parche ACSD-47079 para corregir el problema de Adobe Commerce en el que el estado de las existencias de los productos compuestos (paquete, agrupados y configurables) no se actualiza cuando el estado de las existencias de subproductos cambia a través del POST de API de REST /rest/V1/inventory/source-items.
 feature: Orders, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: f035f530-fae5-4b61-8af9-044f6ec02284
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '383'
 ht-degree: 0%

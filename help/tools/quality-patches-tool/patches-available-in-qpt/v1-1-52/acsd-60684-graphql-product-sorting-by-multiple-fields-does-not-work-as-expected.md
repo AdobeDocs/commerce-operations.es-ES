@@ -1,9 +1,10 @@
 ---
-title: "ACSD-60684: [!DNL GraphQL] la ordenación de productos por varios campos no funciona según lo esperado"
+title: 'ACSD-60684: [!DNL GraphQL] la ordenación de productos por varios campos no funciona según lo esperado'
 description: Aplique el parche ACSD-60684 para solucionar el problema de Adobe Commerce donde la ordenación de  [!DNL GraphQL] productos por varios campos no funciona cuando se pasa la ordenación en variables.
 feature: GraphQL, Products, Search
 role: Admin, Developer
-source-git-commit: 279036e9e7247ce915820a4b00173644ee7252b1
+exl-id: 1c29299b-c85f-4166-886b-357a1486e67e
+source-git-commit: a5dda25e502889ee0a23e99b412aeeb863de452c
 workflow-type: tm+mt
 source-wordcount: '303'
 ht-degree: 0%

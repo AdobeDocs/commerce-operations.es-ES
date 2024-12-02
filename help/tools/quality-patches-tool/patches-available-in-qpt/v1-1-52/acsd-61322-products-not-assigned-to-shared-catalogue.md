@@ -1,9 +1,10 @@
 ---
-title: "ACSD-61322: los productos no asignados a [!UICONTROL Shared Catalogue] se incluyen en el mapa del sitio XML"
+title: 'ACSD-61322: los productos no asignados a [!UICONTROL Shared Catalogue] se incluyen en el mapa del sitio XML'
 description: Aplique el parche ACSD-61322 para solucionar el problema de Adobe Commerce en el que los productos o las categorías que no están asignados al [!UICONTROL Shared Catalog] para el grupo Predeterminado (General) siguen incluyéndose en el mapa del sitio XML.
 feature: Site Navigation, B2B
 role: Admin, Developer
-source-git-commit: 1eed4f1f6484112a0ec728659aa4b79855bf9612
+exl-id: 4698ba5a-673e-4bf0-b36c-39f6122dab26
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '446'
 ht-degree: 0%

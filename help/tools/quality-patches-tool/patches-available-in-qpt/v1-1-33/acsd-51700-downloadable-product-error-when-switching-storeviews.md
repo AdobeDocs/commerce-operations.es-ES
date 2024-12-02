@@ -1,9 +1,10 @@
 ---
-title: "ACSD-51700: Error al cambiar las vistas de tienda en la página de edición de productos descargable"
+title: 'ACSD-51700: Error al cambiar las vistas de tienda en la página de edición descargable del producto'
 description: Aplique el parche ACSD-51700 para corregir el problema de Adobe Commerce donde se produce un error al cambiar de vista de tienda en una página de edición de producto descargable en el administrador.
 feature: Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: dd3da026-ac72-440c-8632-8a3ca27fc134
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 0%

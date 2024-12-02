@@ -1,9 +1,10 @@
 ---
-title: "ACSD-56546: Los productos configurables y agrupados se muestran como agotados en la tienda"
+title: 'ACSD-56546: los productos configurables y agrupados se muestran como agotados en la tienda'
 description: Aplique el parche ACSD-56546 para corregir el problema de Adobe Commerce en el que los productos configurables y del paquete se muestran como agotados en la tienda cuando la opción de configuración *[!UICONTROL Display Out of Stock Products]* está deshabilitada.
 feature: Storefront, Products
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: d9bb05ca-a84e-48bb-957e-55b28631b3cb
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '427'
 ht-degree: 0%

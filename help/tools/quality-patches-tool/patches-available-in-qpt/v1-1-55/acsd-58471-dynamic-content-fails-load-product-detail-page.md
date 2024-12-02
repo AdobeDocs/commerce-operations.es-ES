@@ -1,5 +1,5 @@
 ---
-title: "ACSD-58471: el contenido dinámico no se puede cargar en la página de detalles del producto, cuando se programaron las reglas de precios de catálogo asociadas"
+title: 'ACSD-58471: el contenido dinámico no se puede cargar en la página de detalles del producto, cuando se programaron las reglas de precio del catálogo asociadas'
 description: Aplique el parche ACSD-58471 para corregir el problema de Adobe Commerce en el que el contenido dinámico no se carga en la página de detalles del producto cuando se programan las reglas de precios del catálogo asociadas.
 feature: Catalog Management
 role: Admin, Developer

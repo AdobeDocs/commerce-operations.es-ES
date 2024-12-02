@@ -1,9 +1,10 @@
 ---
-title: "ACSD-50949: El filtro de precio de la búsqueda avanzada no devuelve los resultados adecuados cuando se utiliza junto con el filtro SKU"
+title: 'ACSD-50949: El filtro de precios de la búsqueda avanzada no devuelve los resultados adecuados cuando se utiliza junto con el filtro SKU'
 description: Aplique el parche ACSD-50949 para corregir el problema de Adobe Commerce en el que el filtro de precio en la búsqueda avanzada no devuelve los resultados adecuados cuando se utiliza junto con el filtro SKU.
 feature: Orders, Search
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 89e54940-e763-4554-8641-a162516bcabd
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '426'
 ht-degree: 1%

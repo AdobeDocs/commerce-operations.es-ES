@@ -1,9 +1,10 @@
 ---
-title: "ACSD-50234: Nombre de cliente incorrecto en el correo electrónico de confirmación para pedidos realizados con  [!DNL PayPal]"
+title: 'ACSD-50234: nombre de cliente incorrecto en el correo electrónico de confirmación para pedidos realizados con  [!DNL PayPal]'
 description: Aplique el parche ACSD-50234 para corregir el problema de Adobe Commerce en el que el nombre del cliente se muestra incorrectamente en el correo electrónico de confirmación para los pedidos realizados con  [!DNL PayPal].
 feature: Admin Workspace, Communications, Orders, Payments
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 9a8a7cef-0166-4b4b-96a0-87fd4f1a0ef3
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '357'
 ht-degree: 0%

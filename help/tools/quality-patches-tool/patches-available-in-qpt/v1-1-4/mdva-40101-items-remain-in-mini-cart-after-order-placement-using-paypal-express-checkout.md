@@ -1,9 +1,10 @@
 ---
-title: "MDVA-40101: Los artículos permanecen en el minicarrito después de la colocación del pedido PayPal Express Checkout"
+title: 'MDVA-40101: Los artículos permanecen en el minicarrito después de la realización del pedido'
 description: El parche de MDVA-40101 soluciona el problema de no eliminar artículos del minicarrito tras realizar correctamente un pedido con PayPal Express Checkout. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.4. El ID del parche es MDVA-40101. Tenga en cuenta que el problema se solucionó en Adobe Commerce 2.4.0.
 feature: Checkout, Orders, Payments, Shopping Cart
 role: Admin
-source-git-commit: 1fb76b8d648cbbe2a9f602d2b1a0149f1f4f0e46
+exl-id: 8d3fa92e-39ed-4d8f-8dbe-9c08f787c6f1
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 0%

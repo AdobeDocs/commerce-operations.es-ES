@@ -1,9 +1,10 @@
 ---
-title: "ACSD-51041: El índice de precios tarda mucho en completarse"
+title: 'ACSD-51041: El índice de precios tarda mucho en completarse'
 description: Aplique el parche ACSD-51041 para solucionar el problema de Adobe Commerce, donde el índice de precios tarda mucho tiempo en completarse con un conjunto de productos muy grande.
 feature: Configuration
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: d45d4042-06a1-445d-bed3-803085626dd3
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '347'
 ht-degree: 0%

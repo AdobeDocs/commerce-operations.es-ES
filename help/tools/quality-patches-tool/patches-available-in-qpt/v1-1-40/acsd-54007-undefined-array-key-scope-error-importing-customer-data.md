@@ -1,9 +1,10 @@
 ---
-title: "ACSD-54007: error _scope de clave de matriz no definida al importar datos del cliente"
+title: 'ACSD-54007: error de _ámbito de clave de matriz no definido al importar datos de clientes'
 description: Aplique el parche ACSD-54007 para solucionar el problema de Adobe Commerce donde se muestra un error Undefined array key _scope al importar datos del cliente.
 feature: Data Import/Export
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: df0fc9f4-1d42-47bc-b161-d2f109996684
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '371'
 ht-degree: 0%

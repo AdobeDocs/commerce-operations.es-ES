@@ -1,9 +1,10 @@
 ---
-title: "ACSD-51846: error interno, ya que  [!DNL REST API] los niveles de carga útil no se validan"
+title: 'ACSD-51846: error interno, ya que  [!DNL REST API] los niveles de carga útil no se validan'
 description: Aplique el parche ACSD-51846 para corregir el problema de Adobe Commerce donde se produce un "error interno" ya que no se validan todos los niveles de  [!DNL REST API] carga útil.
 feature: REST
 role: Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 436b075c-d9df-4bf2-94a2-52f2e66e8a4c
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '340'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
-title: "MDVA-39711: No se puede acceder a la cuadrícula de los clientes después de eliminar el sitio web"
+title: 'MDVA-39711: No se puede acceder a la cuadrícula de los clientes después de eliminar el sitio web'
 description: El parche de MDVA-39711 corrige el problema en el que el usuario administrador no puede acceder a la cuadrícula de los clientes después de eliminar el sitio web. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.7. El ID del parche es MDVA-39711. Tenga en cuenta que el problema se solucionó en Adobe Commerce 2.4.3.
 feature: Configuration
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 7ddca2e7-86f5-4ffd-9c00-ea4c511ab663
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '416'
 ht-degree: 0%

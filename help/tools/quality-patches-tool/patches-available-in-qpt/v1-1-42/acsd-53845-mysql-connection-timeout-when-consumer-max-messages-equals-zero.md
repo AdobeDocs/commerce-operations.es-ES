@@ -1,9 +1,10 @@
 ---
-title: "ACSD-53845: problema de tiempo de espera de conexión MySQL cuando el consumidor max_messages = 0"
+title: 'ACSD-53845: problema de tiempo de espera de conexión MySQL cuando el consumidor max_messages = 0'
 description: Aplique el parche ACSD-53845 para corregir el problema de Adobe Commerce donde la conexión MySQL excede el tiempo de espera cuando el consumidor "max_messages = 0".
 feature: REST, Configuration
 role: Admin, Developer
-source-git-commit: 809defe75d7b218d8085f85ff815472a531040cf
+exl-id: 437e29f4-b11a-466c-9928-3867821d2b8d
+source-git-commit: f6abbbb28a3077f7bf26a393388c5059fcd8c599
 workflow-type: tm+mt
 source-wordcount: '333'
 ht-degree: 0%

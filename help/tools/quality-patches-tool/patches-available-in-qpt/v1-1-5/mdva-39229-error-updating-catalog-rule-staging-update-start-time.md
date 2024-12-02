@@ -1,9 +1,10 @@
 ---
-title: "MDVA-39229: Error tras actualizar la hora de inicio de la actualización de ensayo de la regla de catálogo"
+title: 'MDVA-39229: Error tras actualizar la hora de inicio de la actualización de ensayo de la regla de catálogo'
 description: El parche MDVA-39229 corrige el problema en el que los usuarios reciben un error después de actualizar la hora de inicio de la actualización del ensayo de la regla del catálogo. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.5. El ID del parche es MDVA-39229. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.4.
 feature: Catalog Management, Staging
 role: Admin
-source-git-commit: 1fb76b8d648cbbe2a9f602d2b1a0149f1f4f0e46
+exl-id: 633123bc-634c-4943-a2f1-9a48999774f4
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '446'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
-title: "ACSD-57941: las opciones de producto se asignan incorrectamente al almacén de administración"
+title: 'ACSD-57941: las opciones de producto se asignan incorrectamente al almacén de administración'
 description: Aplique el parche ACSD-57941 para corregir el problema de Adobe Commerce donde las opciones de producto se asignan incorrectamente al almacén de administración en lugar de a sus respectivas tiendas.
 feature: Products
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: a78c1797-c366-4931-b036-966d3dcf59bb
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '350'
 ht-degree: 0%

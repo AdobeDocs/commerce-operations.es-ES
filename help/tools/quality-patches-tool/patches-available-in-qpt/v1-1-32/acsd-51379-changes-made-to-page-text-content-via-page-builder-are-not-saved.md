@@ -1,9 +1,10 @@
 ---
-title: "ACSD-51379: Los cambios realizados en el contenido de texto de la página mediante  [!DNL Page Builder] no se guardan"
+title: 'ACSD-51379: los cambios realizados en el contenido de texto de la página mediante  [!DNL Page Builder] no se guardan'
 description: Aplique el parche ACSD-51379 para corregir el problema de Adobe Commerce en el que los cambios realizados en el contenido de texto de una página mediante  [!DNL Page Builder]  no se guardan.
 feature: Page Builder, Page Content
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 03fc2865-04b6-4330-b80c-8d694baa8c88
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '394'
 ht-degree: 0%

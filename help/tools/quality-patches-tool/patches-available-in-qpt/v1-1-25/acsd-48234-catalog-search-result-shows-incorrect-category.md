@@ -1,9 +1,10 @@
 ---
-title: "ACSD-48234: resultado de la búsqueda en el catálogo recuento de elementos de categoría incorrecto cuando [!UICONTROL Display Out of Stock Products] está habilitado"
+title: 'ACSD-48234: resultado de la búsqueda en el catálogo recuento incorrecto de elementos de categoría cuando [!UICONTROL Display Out of Stock Products] está habilitado'
 description: Aplique el parche ACSD-48234 para solucionar el problema de Adobe Commerce donde el resultado de la búsqueda en el catálogo muestra un recuento incorrecto de elementos de categoría cuando la opción [!UICONTROL Display Out of Stock Products] está habilitada.
 feature: Admin Workspace, Categories, Catalog Management, Orders, Products, Search
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: c177f12d-2db5-48e2-8f88-ff589cea4dd4
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '385'
 ht-degree: 0%

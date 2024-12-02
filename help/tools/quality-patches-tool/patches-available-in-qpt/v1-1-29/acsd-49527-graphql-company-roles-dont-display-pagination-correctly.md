@@ -1,9 +1,10 @@
 ---
-title: "ACSD-49527: Las funciones de empresa de GraphQL no muestran la paginación correctamente"
+title: 'ACSD-49527: Los roles de compañía de GraphQL no muestran la paginación correctamente'
 description: Aplique el parche ACSD-49527 para corregir el problema de Adobe Commerce en el que los roles de compañía de GraphQL no muestran la paginación correctamente.
 feature: B2B, GraphQL, Companies, Roles/Permissions
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 2fbc80ad-5a15-471b-99f0-213609ab3978
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 0%

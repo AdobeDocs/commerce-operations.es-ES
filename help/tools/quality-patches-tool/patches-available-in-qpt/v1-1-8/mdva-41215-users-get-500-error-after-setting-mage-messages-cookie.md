@@ -1,9 +1,10 @@
 ---
-title: '"MDVA-41215: Los usuarios reciben un error 500 después de configurar la cookie "mage-messages"'
+title: 'MDVA-41215: Los usuarios reciben un error 500 después de configurar la cookie "mage-messages"'
 description: El parche de MDVA-41215 soluciona el problema en el que los usuarios reciben un error 500 después de configurar la cookie "mage-messages" si ya existe, pero no hay mensajes nuevos. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.8. El ID del parche es MDVA-41215. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.4.
 feature: Configuration
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 6724b7ed-31d4-4dbc-9b80-6799fb3b8f3c
+source-git-commit: f6abbbb28a3077f7bf26a393388c5059fcd8c599
 workflow-type: tm+mt
 source-wordcount: '433'
 ht-degree: 0%

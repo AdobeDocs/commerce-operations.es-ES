@@ -1,9 +1,10 @@
 ---
-title: '"ACSD-53750: Error de "Tubería rota o conexión cerrada" durante el reíndice catalog_product_price multiproceso"'
+title: 'ACSD-53750: Error de "Tubería rota o conexión cerrada" durante el reíndice catalog_product_price multiproceso'
 description: Aplique el parche ACSD-53750 para corregir el problema de Adobe Commerce en el que se produce un error de *Conexión rota o Conexión cerrada* durante el reíndice catalog_product_price multiproceso.
 feature: Products
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 6c2f092f-a98e-4990-839c-a7291635f8af
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '353'
 ht-degree: 0%

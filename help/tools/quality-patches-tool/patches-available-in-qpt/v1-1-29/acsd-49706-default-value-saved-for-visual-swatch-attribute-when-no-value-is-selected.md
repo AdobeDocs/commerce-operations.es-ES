@@ -1,9 +1,10 @@
 ---
-title: "ACSD-49706: valor predeterminado guardado para el atributo de muestra visual cuando no se selecciona ningún valor"
+title: 'ACSD-49706: valor predeterminado guardado para el atributo de muestra visual cuando no se selecciona ningún valor'
 description: Aplique el parche ACSD-49706 para corregir el problema de Adobe Commerce en el que se guarda un valor predeterminado para un atributo de muestra visual cuando no se selecciona ningún valor.
 feature: Admin Workspace, Attributes
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: fa3cb0a1-f898-4826-aa64-efeba1af58a8
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 0%

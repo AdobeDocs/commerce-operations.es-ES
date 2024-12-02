@@ -1,15 +1,15 @@
 ---
-title: "ACSD-57045: las reescrituras de URL provocan bucles de página infinitos después de que [!UICONTROL Website Root] se desmarque de [!UICONTROL Hierarchy]"
+title: 'ACSD-57045: las reescrituras de URL provocan bucles de página infinitos después de que [!UICONTROL Website Root] se desmarque de [!UICONTROL Hierarchy]'
 description: Aplique el parche ACSD-57045 para corregir el problema de Adobe Commerce donde las reescrituras de URL causan bucles de página infinitos después de que [!UICONTROL Website Root] esté desmarcado de [!UICONTROL Hierarchy].
 feature: CMS
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 7beaee40-a392-4644-917e-c507e79bddcc
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '494'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-57045: las reescrituras de URL provocan bucles de página infinitos después de que [!UICONTROL Website Root] se desmarque de [!UICONTROL Hierarchy]
 

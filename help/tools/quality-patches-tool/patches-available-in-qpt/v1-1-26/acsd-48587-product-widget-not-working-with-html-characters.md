@@ -1,9 +1,10 @@
 ---
-title: "ACSD-48587: el widget de producto no funciona con SKU que contienen caracteres de HTML"
+title: 'ACSD-48587: el widget de producto no funciona con SKU que contienen caracteres de HTML'
 description: Aplique el parche ACSD-48587 para solucionar el problema de Adobe Commerce, donde los caracteres especiales del HTML en las reglas de coincidencia del widget de productos impiden que se muestren los productos coincidentes.
 feature: Admin Workspace, CMS, Orders, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: c3e31835-03be-46b4-a080-09edf55b5b4e
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '396'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
-title: "MDVA-41628: Los usuarios administradores restringidos obtienen acceso a nuevos recursos"
+title: 'MDVA-41628: Los usuarios administradores restringidos obtienen acceso a nuevos recursos'
 description: El parche MDVA-41628 corrige el problema en el que los usuarios administradores restringidos pueden acceder a los nuevos recursos cuando se añaden nuevos módulos. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.12. El ID del parche es MDVA-41628. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.5.
 feature: Admin Workspace
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 774a4329-fa1f-4cca-aa97-1b8ef03c11d1
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '443'
 ht-degree: 0%

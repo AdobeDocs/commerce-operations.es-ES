@@ -1,9 +1,10 @@
 ---
-title: "ACSD-61667: mejora el rendimiento del inventario para crear envíos"
+title: 'ACSD-61667: mejora el rendimiento del inventario para crear envíos'
 description: Aplique el parche ACSD-60584 para mejorar el rendimiento del inventario a fin de crear envíos en caso de que existan muchos orígenes con recogida en tienda.
 feature: Customers, Shipping/Delivery
 role: Admin, Developer
-source-git-commit: 29748a439992c0e3efbbc84c5ab9c8239f460b73
+exl-id: 47682daf-9117-45f1-ab09-a66c13132ff3
+source-git-commit: c32684a09e4a99733feb198b1d353b090c68a7f5
 workflow-type: tm+mt
 source-wordcount: '342'
 ht-degree: 0%
@@ -65,4 +66,3 @@ Para aplicar parches individuales, utilice los siguientes vínculos según el m�
 Para obtener más información sobre [!DNL Quality Patches Tool], consulte:
 
 * [[!DNL Quality Patches Tool]: herramienta de autoservicio para parches de calidad](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) en la guía Herramientas.
-

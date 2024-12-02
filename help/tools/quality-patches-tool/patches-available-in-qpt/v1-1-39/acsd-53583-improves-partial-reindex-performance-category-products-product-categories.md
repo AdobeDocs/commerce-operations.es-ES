@@ -1,9 +1,10 @@
 ---
-title: "ACSD-53583: mejorar el rendimiento de reindexación parcial para los indexadores [!UICONTROL Category Products] y [!UICONTROL Product Categories]"
+title: 'ACSD-53583: mejorar el rendimiento de reindexación parcial para los indexadores [!UICONTROL Category Products] y [!UICONTROL Product Categories]'
 description: Aplique el parche ACSD-53585 para mejorar el rendimiento de reindexación parcial para los indexadores de productos de categoría y de categorías de productos.
 feature: Products, Categories
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 11e60cc2-1f7e-4e4a-a5eb-0f1dbe399ef2
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '385'
 ht-degree: 0%

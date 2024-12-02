@@ -1,9 +1,10 @@
 ---
-title: "ACSD-48910: El producto agrupado asignado a varias fuentes se queda sin existencias después de la factura y el envío"
+title: 'ACSD-48910: el producto agrupado asignado a varias fuentes se queda sin existencias después de la factura y el envío'
 description: Aplique el parche ACSD-48910 para solucionar el problema de Adobe Commerce en el que el producto agrupado asignado a varios orígenes se queda sin existencias después de facturar y enviar un pedido, incluso si sigue teniendo una cantidad distinta de cero.
 feature: Products, Inventory
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: c8d86531-2db5-4115-92d5-a8d391c4f75d
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '431'
 ht-degree: 0%

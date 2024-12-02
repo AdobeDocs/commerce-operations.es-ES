@@ -3,7 +3,8 @@ title: 'ACSD-61785: la actualización del atributo premio_advertencia_notificaci
 description: Aplique el parche ACSD-61785 para solucionar el problema de Adobe Commerce donde la actualización del atributo "premio_advertencia_notificación" no es posible mediante la mutación de GraphQL y las llamadas a la API REST.
 feature: REST, GraphQL, Rewards
 role: Admin, Developer
-source-git-commit: 87ce6004a632f860447d55c13c08f78533ab093e
+exl-id: 41f40452-4240-4b4a-b1bc-0da23139f19f
+source-git-commit: f6abbbb28a3077f7bf26a393388c5059fcd8c599
 workflow-type: tm+mt
 source-wordcount: '316'
 ht-degree: 0%

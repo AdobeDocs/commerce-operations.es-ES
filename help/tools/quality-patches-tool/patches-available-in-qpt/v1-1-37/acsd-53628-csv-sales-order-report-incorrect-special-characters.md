@@ -1,9 +1,10 @@
 ---
-title: "ACSD-53628: El informe de pedidos de ventas CSV muestra caracteres especiales incorrectos"
+title: 'ACSD-53628: el informe de pedidos de ventas CSV muestra caracteres especiales incorrectos'
 description: Aplique el parche ACSD-53628 para corregir el problema de Adobe Commerce en el que el informe CSV de pedidos de venta muestra caracteres especiales incorrectos.
 feature: Orders, Data Import/Export
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: b6293efe-fbeb-4b1e-b408-34dc86228b8e
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '331'
 ht-degree: 0%

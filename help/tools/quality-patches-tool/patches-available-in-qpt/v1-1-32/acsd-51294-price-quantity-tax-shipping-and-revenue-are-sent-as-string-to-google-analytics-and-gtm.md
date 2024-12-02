@@ -1,9 +1,10 @@
 ---
-title: "ACSD-51294: precio, cantidad, impuestos, envío, ingresos enviados como cadena a  [!DNL Google Analytics] y GTM"
+title: 'ACSD-51294: precio, cantidad, impuestos, envío, ingresos enviados como cadena a  [!DNL Google Analytics]  y GTM'
 description: Aplique el parche ACSD-51294 para corregir el problema de Adobe Commerce donde el precio, la cantidad, los impuestos, el envío y los ingresos se envían como una cadena a  [!DNL Google Analytics]  y GTM.
 feature: Orders, Shipping/Delivery, Variables
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 99d2a311-2543-4007-99fd-6c34a2950773
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 0%

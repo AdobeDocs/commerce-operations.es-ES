@@ -1,15 +1,15 @@
 ---
-title: "ACSD-61103: El recuento de errores no se restablece a cero después del inicio de sesión correcto del cliente mediante la API"
+title: 'ACSD-61103: el recuento de errores no se restablece a cero después del inicio de sesión correcto del cliente mediante la API'
 description: Aplique el parche ACSD-61103 para corregir el problema de Adobe Commerce en el que el recuento de errores de la tabla customer_entity no se restablece a cero después de que un cliente inicie sesión correctamente a través de los extremos de la API.
 feature: GraphQL, REST, Customers
 role: Admin, Developer
-source-git-commit: d53b747c3b2021e842647de5371a5f0f2a760f09
+exl-id: 9f5aac1f-c8a3-4255-8ebc-2268283b3384
+source-git-commit: acb5ff9656d7391de1e9b936909ce5a8a73d5d67
 workflow-type: tm+mt
 source-wordcount: '379'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-61103: el recuento de errores no se restablece a cero después del inicio de sesión correcto del cliente mediante la API
 
@@ -61,4 +61,3 @@ Para aplicar parches individuales, utilice los siguientes vínculos según el m�
 Para obtener más información sobre [!DNL Quality Patches Tool], consulte:
 
 * [[!DNL Quality Patches Tool]: herramienta de autoservicio para parches de calidad](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) en la guía Herramientas.
-

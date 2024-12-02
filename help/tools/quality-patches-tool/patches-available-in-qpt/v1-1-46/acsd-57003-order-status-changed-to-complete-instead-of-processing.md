@@ -1,9 +1,10 @@
 ---
-title: "ACSD-57003: El estado del pedido cambia a *Completo* en lugar de cambiar a *Procesando*"
+title: 'ACSD-57003: el estado del pedido cambia a *Completo* en lugar de cambiar a *Procesando*'
 description: Aplique el parche ACSD-57003 para corregir el problema de Adobe Commerce en el que el estado del pedido cambia a *Completado* en lugar de cambiar a *Procesando*.
 feature: Orders, Invoices, Shipping/Delivery
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: a28ecc35-5c9a-4bba-b0b9-67fbe37ed8c3
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '362'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
-title: "ACSD-46617: el botón **[!UICONTROL Continue to Checkout]** aparece atenuado cuando el subtotal es mayor que la cantidad mínima de pedido configurada"
+title: 'ACSD-46617: el botón **[!UICONTROL Continue to Checkout]** aparece atenuado cuando el subtotal es mayor que la cantidad mínima de pedido configurada'
 description: Aplique el parche ACSD-46617 para resolver el problema de Adobe Commerce donde el botón **[!UICONTROL Continue to Checkout]** aparece atenuado aunque el subtotal sea mayor que la cantidad mínima de pedido configurada.
 feature: Checkout, Orders
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 8e808fce-d31c-49ef-94e5-f5c89fffaa73
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '428'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
-title: "ACSD-54472: los clientes de una empresa rechazada aún pueden autenticarse"
+title: 'ACSD-54472: los clientes de una compañía rechazada aún pueden autenticarse'
 description: Aplique el parche ACSD-54472 para corregir el problema de Adobe Commerce en el que los clientes de una compañía rechazada aún pueden autenticarse y los clientes de una compañía bloqueada y rechazada pueden realizar pedidos.
 feature: B2B
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: c0bd960f-609b-4253-9fc8-dc47fbbddc93
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '452'
 ht-degree: 0%

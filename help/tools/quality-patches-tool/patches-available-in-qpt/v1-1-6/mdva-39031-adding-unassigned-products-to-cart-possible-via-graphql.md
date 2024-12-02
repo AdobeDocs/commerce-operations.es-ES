@@ -1,9 +1,10 @@
 ---
-title: "MDVA-39031: Añadir productos sin asignar al carro de compras es posible mediante GraphQL"
+title: 'MDVA-39031: Añadir productos sin asignar al carro de compras es posible mediante GraphQL'
 description: El parche MDVA-39031 soluciona el problema de que es posible añadir un producto al carro de compras mediante GraphQL aunque no esté asignado al sitio web de destino. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.6. El ID del parche es MDVA-39031. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.4.
 feature: GraphQL, Orders, Products, Shopping Cart
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 6250c6f6-b74b-4713-a704-d252270693d4
+source-git-commit: f6abbbb28a3077f7bf26a393388c5059fcd8c599
 workflow-type: tm+mt
 source-wordcount: '440'
 ht-degree: 0%

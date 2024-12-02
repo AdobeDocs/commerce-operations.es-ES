@@ -1,9 +1,10 @@
 ---
-title: "ACSD-56790: **[!UICONTROL move out of stock to bottom]** opción no funciona al ordenar productos en  [!DNL Visual Merchandiser]"
+title: 'ACSD-56790: **[!UICONTROL move out of stock to bottom]** opción no funciona al ordenar productos en  [!DNL Visual Merchandiser]'
 description: Aplique el parche ACSD-56790 para corregir el problema de Adobe Commerce en el que la opción Mover fuera de stock a la parte inferior no funciona al ordenar productos en Visual Merchandiser.
 feature: Products, Categories
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: a5e5f208-793d-45a5-a000-f8ff1c31d049
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '465'
 ht-degree: 0%

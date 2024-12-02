@@ -1,9 +1,10 @@
 ---
-title: "ACSD-48807: Reseñas de productos no filtradas por storeview"
+title: 'ACSD-48807: Reseñas de productos no filtradas por storeview'
 description: Aplique el parche ACSD-48807 para corregir el problema de Adobe Commerce en el que las críticas de productos no se filtran por la vista de tienda a través de GraphQL.
 feature: Admin Workspace, Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: ce2cf5a1-a650-4eaa-8caf-f34dd0111c36
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '367'
 ht-degree: 0%

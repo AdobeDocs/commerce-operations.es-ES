@@ -1,9 +1,10 @@
 ---
-title: "ACSD-46520: Estado de pedido incorrecto al reembolsarlo mediante créditos de la tienda"
+title: 'ACSD-46520: Estado de pedido incorrecto al reembolsarlo mediante créditos de la tienda'
 description: Este artículo proporciona una solución para el problema en el que los usuarios obtienen un estado de pedido incorrecto cuando se les reembolsa mediante créditos de la tienda.
 feature: Orders, Returns
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 67740003-a71e-41bf-afda-ca3e32290115
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '375'
 ht-degree: 0%

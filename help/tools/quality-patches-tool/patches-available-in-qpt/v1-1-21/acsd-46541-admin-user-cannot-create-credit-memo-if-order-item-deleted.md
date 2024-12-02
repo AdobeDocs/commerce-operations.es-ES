@@ -1,9 +1,10 @@
 ---
-title: "ACSD-46541: un usuario administrador no puede crear un abono si se elimina un artículo de pedido"
+title: 'ACSD-46541: un usuario administrador no puede crear un abono si se elimina un artículo de pedido'
 description: Aplique el parche ACSD-46541 para solucionar el problema de Adobe Commerce, donde una vez eliminado un producto no puede crear un abono en el administrador de Adobe Commerce.
 feature: Admin Workspace, Orders, Returns
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: c46ee888-92b1-4798-bd2b-1a082fd1406a
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '371'
 ht-degree: 0%

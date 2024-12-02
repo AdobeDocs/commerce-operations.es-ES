@@ -1,9 +1,10 @@
 ---
-title: "ACSD-51265: Optimizar la reindexación para productos agrupados"
+title: 'ACSD-51265: optimizar la reindexación para productos agrupados'
 description: Aplique el parche ACSD-51265 para corregir el problema de Adobe Commerce en el que el rendimiento de reindexación de catalog_product_price es bajo cuando hay demasiados productos agrupados en el sistema.
 feature: Products, Price Indexer
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 1a173ca7-f99e-42d8-87d7-81a6b33f2d4d
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '338'
 ht-degree: 0%

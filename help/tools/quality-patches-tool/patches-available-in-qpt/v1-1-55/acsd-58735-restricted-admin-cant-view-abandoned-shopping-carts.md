@@ -1,16 +1,15 @@
 ---
-title: "ACSD-58735: el administrador restringido no puede ver los carros de compras abandonados en la cuenta del cliente para el sitio web asociado"
+title: 'ACSD-58735: el administrador restringido no puede ver los carros de compras abandonados en la cuenta de cliente del sitio web asociado'
 description: Aplique el parche ACSD-58735 para solucionar el problema de Adobe Commerce en el que un administrador restringido no puede ver los carros de compras abandonados en la página de cuenta del cliente en el Administrador de Commerce de un sitio web asociado.
 feature: Shopping Cart, Admin Workspace, Customers
 role: Admin, Developer
-source-git-commit: 35bae8cff40235957f8fea418a43ccead13536da
+exl-id: b5dcc12f-325d-4de5-bae5-ff938ec77b13
+source-git-commit: f6abbbb28a3077f7bf26a393388c5059fcd8c599
 workflow-type: tm+mt
 source-wordcount: '389'
 ht-degree: 0%
 
 ---
-
-
 
 # ACSD-58735: el administrador restringido no puede ver los carros de compras abandonados en la cuenta de cliente del sitio web asociado
 

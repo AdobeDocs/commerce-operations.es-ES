@@ -1,9 +1,10 @@
 ---
-title: "MDVA-43201: Error al utilizar el campo DOB con la configuración regional PT"
+title: 'MDVA-43201: Error al utilizar el campo DOB con la configuración regional PT'
 description: El parche MDVA-43201 resuelve el problema en el que se produce un error al utilizar el atributo de cliente DOB en el formulario de registro de cliente para la configuración regional en portugués. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.10. El ID del parche es MDVA-43201. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.4.
 feature: B2B, Cache
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: be087420-1ee3-40cc-8ff7-62c5641609cc
+source-git-commit: f6abbbb28a3077f7bf26a393388c5059fcd8c599
 workflow-type: tm+mt
 source-wordcount: '469'
 ht-degree: 0%

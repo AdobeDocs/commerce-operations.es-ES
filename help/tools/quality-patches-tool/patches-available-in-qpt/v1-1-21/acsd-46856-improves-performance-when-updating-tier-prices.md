@@ -1,9 +1,10 @@
 ---
-title: "ACSD-46856: mejora el rendimiento al actualizar los precios de los niveles"
+title: 'ACSD-46856: mejora el rendimiento al actualizar los precios de nivel'
 description: Aplique el parche ACSD-46856 para mejorar el rendimiento al actualizar los precios de nivel mediante System &gt; Configuration &gt; Import &gt; Advanced Pricing.
 feature: Orders
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 5c954f2c-a55c-43ba-919f-406f4b173d30
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '329'
 ht-degree: 0%

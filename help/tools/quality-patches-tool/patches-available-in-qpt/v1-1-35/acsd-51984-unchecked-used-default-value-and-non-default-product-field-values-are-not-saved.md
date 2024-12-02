@@ -1,9 +1,10 @@
 ---
-title: "ACSD-51984: Los valores de campo de producto [!UICONTROL Use Default Value] sin marcar y no predeterminados no se guardan para el segundo sitio web, tienda y vista de tienda"
+title: 'ACSD-51984: los valores de campo de producto [!UICONTROL Use Default Value] sin marcar y no predeterminados no se guardan para el segundo sitio web, tienda y vista de tienda'
 description: Aplique el parche ACSD-51984 para corregir el problema de Adobe Commerce en el que los valores de los campos de producto [!UICONTROL Use Default Value] y no predeterminados no marcados no se guardan para la segunda vista del sitio web, la tienda y la tienda.
 feature: Products
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 51a810fa-d416-4b37-b5bd-66eed9fe4626
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '434'
 ht-degree: 0%

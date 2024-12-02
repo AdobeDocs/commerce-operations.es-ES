@@ -1,9 +1,10 @@
 ---
-title: "ACSD-49839: La estructura y los precios del catálogo compartido generan un error"
+title: 'ACSD-49839: La estructura y los precios del catálogo compartido generan un error'
 description: Aplique el parche ACSD-49839 para corregir el problema de Adobe Commerce en el que la estructura y los precios del catálogo compartido generan un error en el administrador cuando los productos tienen comillas simples o dobles en el SKU.
 feature: Admin Workspace, Catalog Management, Categories
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: b74e3926-16c8-4222-b642-ed1b7095dea4
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '413'
 ht-degree: 0%

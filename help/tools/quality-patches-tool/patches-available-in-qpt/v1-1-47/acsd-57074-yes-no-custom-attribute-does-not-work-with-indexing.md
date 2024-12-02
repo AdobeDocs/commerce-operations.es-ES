@@ -1,9 +1,10 @@
 ---
-title: '"ACSD-57074: *Sí/No* el atributo personalizado con el prefijo "price_*" en el atributo "attribute_code" no funciona con la indexación"'
+title: 'ACSD-57074: *Sí/No* el atributo personalizado con el prefijo "price_*" en el atributo "attribute_code" no funciona con la indexación'
 description: Aplique el parche ACSD-57074 para solucionar el problema de Adobe Commerce donde el atributo personalizado *Yes/No* con el prefijo "price_* en el atributo "attribute_code" no funciona con la indexación.
 feature: Products, Categories, Catalog Management
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 718b8f2d-4d3d-4755-8a91-5c2f97114813
+source-git-commit: f6abbbb28a3077f7bf26a393388c5059fcd8c599
 workflow-type: tm+mt
 source-wordcount: '375'
 ht-degree: 0%

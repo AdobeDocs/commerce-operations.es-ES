@@ -1,9 +1,10 @@
 ---
-title: "ACSD-46683: El precio de envío se muestra *Aún no se ha calculado*"
+title: 'ACSD-46683: El precio de envío se muestra *Aún no se ha calculado*'
 description: Aplique el parche ACSD-46683 para solucionar el problema de Adobe Commerce donde el precio de envío indica *Aún no se ha calculado*.
 feature: Marketing Tools, Orders, Shipping/Delivery
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: ebd79187-2835-403b-945d-80ac34d6fb9c
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '478'
 ht-degree: 0%

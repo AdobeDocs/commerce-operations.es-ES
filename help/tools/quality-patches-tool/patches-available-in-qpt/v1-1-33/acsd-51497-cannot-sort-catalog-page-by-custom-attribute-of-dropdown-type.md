@@ -1,9 +1,10 @@
 ---
-title: "ACSD-51497: No se puede ordenar la página del catálogo por atributo personalizado de tipo Desplegable"
+title: 'ACSD-51497: No se puede ordenar la página del catálogo por atributo personalizado de tipo desplegable'
 description: Aplique el parche ACSD-51497 para solucionar el problema de Adobe Commerce en el que un cliente no puede ordenar una página de catálogo por atributo personalizado del tipo desplegable.
 feature: Attributes, Cache, Catalog Management, Categories
 role: Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: c66a7e04-fd2a-47be-8f7a-7982780a5414
+source-git-commit: f6abbbb28a3077f7bf26a393388c5059fcd8c599
 workflow-type: tm+mt
 source-wordcount: '448'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
-title: "MDVA-38666: El usuario administrador no puede cambiar las opciones de productos configurables"
+title: 'MDVA-38666: El usuario administrador no puede cambiar las opciones configurables del producto'
 description: El parche MDVA-38666 resuelve el problema en el que el usuario administrador no puede cambiar las opciones de productos configurables en el carro de compras del cliente. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.9. El ID del parche es MDVA-38666. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.5.
 feature: Admin Workspace, Configuration, Products
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: 8e72f6a4-b36f-4fe4-bc01-2254984dd512
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '485'
 ht-degree: 0%

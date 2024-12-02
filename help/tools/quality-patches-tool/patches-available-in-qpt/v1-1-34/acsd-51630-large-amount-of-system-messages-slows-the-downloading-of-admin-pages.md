@@ -1,9 +1,10 @@
 ---
-title: "ACSD-51630: Numerosos mensajes del sistema ralentizan la descarga de las páginas de administración"
+title: 'ACSD-51630: Numerosos mensajes del sistema ralentizan la descarga de las páginas de administración'
 description: Aplique el parche ACSD-51630 para solucionar el problema de rendimiento de Adobe Commerce, donde una gran cantidad de mensajes del sistema ralentiza la descarga de las páginas de administración.
 feature: Admin Workspace, System
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 8f39afea-551a-4306-994a-cb8ce5bd5b4a
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '335'
 ht-degree: 0%

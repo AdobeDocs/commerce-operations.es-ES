@@ -1,9 +1,10 @@
 ---
-title: "ACSD-56280: Las compras en el registro de regalos no se han completado"
+title: 'ACSD-56280: las compras en el registro de regalos no se han completado'
 description: Aplique el parche ACSD-56280 para corregir el problema de Adobe Commerce en el que las compras del registro de regalos no se hayan completado
 feature: Checkout
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: a79f789f-999f-4d11-b7ee-2c065b681efb
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '353'
 ht-degree: 0%

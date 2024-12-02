@@ -1,9 +1,10 @@
 ---
-title: "ACSD-52906: resolviendo el problema de cookie X-Magento-Vary para el almacenamiento en caché de clientes que iniciaron sesión"
+title: 'ACSD-52906: resolviendo el problema de la cookie X-Magento-Vary para el almacenamiento en caché de clientes que iniciaron sesión'
 description: Aplique el parche ACSD-52906 para corregir el problema de Adobe Commerce en el que la cookie X-Magento-Vary se establece incorrectamente para los clientes que iniciaron sesión.
 feature: Cache
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 487b7588-7131-4502-b714-05f37520991f
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '393'
 ht-degree: 0%

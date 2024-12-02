@@ -1,9 +1,10 @@
 ---
-title: "ACSD-52824: Métodos de pago desactivados mostrados para los clientes de la empresa"
+title: 'ACSD-52824: métodos de pago desactivados mostrados para los clientes de la empresa'
 description: Aplique el parche ACSD-52824 para solucionar el problema de Adobe Commerce donde aparecen  [!DNL PayPal Express], [!DNL Google Pay], and [!DNL Apple Pay] métodos de pago para clientes de la empresa a pesar de estar deshabilitados en la configuración de la empresa.
 feature: Payments, B2B, Shopping Cart
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 39d67de6-1796-4067-ae7a-ef17fcf794e5
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '421'
 ht-degree: 0%

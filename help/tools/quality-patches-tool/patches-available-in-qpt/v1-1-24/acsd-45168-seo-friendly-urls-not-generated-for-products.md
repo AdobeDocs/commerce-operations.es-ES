@@ -1,9 +1,10 @@
 ---
-title: "ACSD-45168: URL compatibles con SEO no generadas para productos que tienen atributos url_key anulados"
+title: 'ACSD-45168: URL compatibles con SEO no generadas para productos que tienen atributos url_key anulados'
 description: Aplique el parche ACSD-45168 para corregir el problema de Adobe Commerce en el que las direcciones URL compatibles con SEO no se generan para los productos que tienen atributos url_key anulados en el nivel de vista de tienda.
 feature: Attributes, Cache, Categories, Marketing Tools, Products
 role: Admin
-source-git-commit: 809defe75d7b218d8085f85ff815472a531040cf
+exl-id: 7d908307-f60c-4758-ad0f-f108ebb94558
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '397'
 ht-degree: 0%

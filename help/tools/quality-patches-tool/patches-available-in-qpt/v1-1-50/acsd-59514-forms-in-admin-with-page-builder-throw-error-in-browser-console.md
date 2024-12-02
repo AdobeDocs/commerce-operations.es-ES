@@ -1,15 +1,15 @@
 ---
-title: "ACSD-59514: Forms en el administrador con  [!DNL Page Builder] error de activación en la consola del explorador"
+title: 'ACSD-59514: Forms en el administrador con  [!DNL Page Builder] error de lanzamiento en la consola del explorador'
 description: Aplique el parche ACSD-59514 para corregir el problema de Adobe Commerce en el que los formularios en el administrador con  [!DNL Page Builder] emiten el error "[!DNL Page Builder] se representaban durante 5 segundos sin liberar bloqueos". en la consola del explorador después de enviar el formulario, y los cambios no se pueden guardar.
 feature: Page Builder
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 3d1167d2-0a75-48ac-bc31-5bbd3c4a409e
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '419'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-59514: Forms en el administrador con error de lanzamiento [!DNL Page Builder] en la consola del explorador
 

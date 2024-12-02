@@ -1,9 +1,10 @@
 ---
-title: "ACSD-61845: Se produce un error en las solicitudes con encabezado de aceptación de texto/html"
+title: 'ACSD-61845: Se produce un error en las solicitudes con encabezado de aceptación de texto/html'
 description: Aplique el parche ACSD-61845 para solucionar el problema de Adobe Commerce donde el envío de una solicitud HTTP con solo un encabezado de aceptación *text/html* provoca un error 500, con módulos B2B instalados.
 feature: B2B
 role: Admin, Developer
-source-git-commit: 8dbf91806097281fb4f7c74e182f10b09b18e925
+exl-id: 6fa6c3ff-bb45-4b9e-afd4-95692acb0a90
+source-git-commit: 29845fd4a8c1c744aa780e60bb4154dfc3c1a02c
 workflow-type: tm+mt
 source-wordcount: '335'
 ht-degree: 0%

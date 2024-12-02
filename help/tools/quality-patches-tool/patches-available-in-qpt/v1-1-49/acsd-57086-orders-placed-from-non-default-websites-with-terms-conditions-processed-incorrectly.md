@@ -1,9 +1,10 @@
 ---
-title: "ACSD-57086: los pedidos de sitios web no predeterminados con los términos y condiciones habilitados se procesan incorrectamente"
+title: 'ACSD-57086: los pedidos de sitios web no predeterminados con los términos y condiciones habilitados se procesan incorrectamente'
 description: Aplique el parche ACSD-57086 para corregir el problema de Adobe Commerce en el que los pedidos realizados desde sitios web no predeterminados con los términos y condiciones habilitados no se procesan correctamente.
 feature: Orders
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: d9f2ef50-12c4-4a2d-b140-dfd0e8948fd3
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '509'
 ht-degree: 0%

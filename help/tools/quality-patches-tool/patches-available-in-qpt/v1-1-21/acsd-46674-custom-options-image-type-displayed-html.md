@@ -1,9 +1,10 @@
 ---
-title: "ACSD-46674: opciones personalizadas de tipo de imagen mostradas como HTML en los correos electrónicos de los clientes"
+title: 'ACSD-46674: opciones personalizadas de tipo de imagen mostradas como HTML en los correos electrónicos de los clientes'
 description: Aplique el parche ACSD-46674 para corregir el problema de Adobe Commerce donde las opciones personalizadas de tipo de imagen se muestran como HTML en los correos electrónicos de los clientes.
 feature: Communications, Personalization
 role: Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 123ca7b5-02da-4573-897f-ff8adb184389
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '376'
 ht-degree: 0%

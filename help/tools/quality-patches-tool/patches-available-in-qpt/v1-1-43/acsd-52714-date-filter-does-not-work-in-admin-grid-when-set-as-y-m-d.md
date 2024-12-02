@@ -1,9 +1,10 @@
 ---
-title: "ACSD-52714: El filtro de fecha no funciona en la cuadrícula de administración cuando se establece como d-m-a"
+title: 'ACSD-52714: El filtro de fecha no funciona en la cuadrícula de administración cuando se establece como d-m-a'
 description: Aplique el parche ACSD-52714 para corregir el problema de Adobe Commerce en el que el filtro de fecha no funciona en la cuadrícula de administración cuando el formato de fecha se establece como d-m-a.
 feature: Attributes
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 4a34900b-9566-41bb-8d3e-18a440117907
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '381'
 ht-degree: 0%

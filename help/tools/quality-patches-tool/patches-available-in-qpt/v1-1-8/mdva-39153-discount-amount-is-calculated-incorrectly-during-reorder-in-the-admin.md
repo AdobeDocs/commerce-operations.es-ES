@@ -1,9 +1,10 @@
 ---
-title: "MDVA-39153: La cantidad de descuento se calcula incorrectamente durante el repedido en el administrador"
+title: 'MDVA-39153: La cantidad de descuento se calcula incorrectamente durante el repedido en el administrador'
 description: El parche MDVA-39153 corrige el problema en el que la cantidad de descuento se calcula incorrectamente durante el repedido en el administrador. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.8. El ID del parche es MDVA-39153. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.4.
 feature: Admin Workspace, Orders, Personalization, Payments
 role: Admin
-source-git-commit: 7f17f1b286f635b8f65ac877e9de5f1d1a6a6461
+exl-id: e8fe58ca-1218-4e76-b5fb-c7f935029cd2
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '477'
 ht-degree: 0%

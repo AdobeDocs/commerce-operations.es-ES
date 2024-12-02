@@ -1,9 +1,10 @@
 ---
-title: "ACSD-54966: Corrección para reutilizar códigos de cupones después de pedidos fallidos"
+title: 'ACSD-54966: Corrección para reutilizar códigos de cupones después de pedidos fallidos'
 description: Aplique el parche ACSD-54966 para corregir el problema de Adobe Commerce que impide la reutilización de códigos de cupones limitados por promociones y carro de compras después de un pedido fallido anteriormente.
 feature: Promotions/Events, Shopping Cart, Orders
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: e08062e5-62ff-4da6-918f-896af36edccc
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '390'
 ht-degree: 0%

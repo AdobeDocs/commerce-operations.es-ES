@@ -1,9 +1,10 @@
 ---
-title: "ACSD-49773: La exportación del producto falla cuando AWS S3 se utiliza como almacenamiento remoto"
+title: 'ACSD-49773: la exportación del producto falla cuando AWS S3 se utiliza como almacenamiento remoto'
 description: Aplique el parche ACSD-49773 para corregir el problema de Adobe Commerce en el que la exportación del producto falla cuando AWS S3 se utiliza como almacenamiento remoto.
 feature: Data Import/Export, Iaas, Products, Storage
 role: Admin
-source-git-commit: 809defe75d7b218d8085f85ff815472a531040cf
+exl-id: 82f1299f-52b6-4f87-b01c-072d1661c022
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '368'
 ht-degree: 0%

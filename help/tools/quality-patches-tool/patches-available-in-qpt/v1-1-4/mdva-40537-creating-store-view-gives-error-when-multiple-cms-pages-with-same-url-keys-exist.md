@@ -1,9 +1,10 @@
 ---
-title: '"MDVA-40537: La creación de la vista de tienda da error cuando varias páginas de CMS tienen la misma clave URL".'
+title: 'MDVA-40537: La creación de la vista de tienda da error cuando varias páginas de CMS tienen la misma clave URL.'
 description: El parche de MDVA-40537 corrige el problema en el que los usuarios reciben un error al crear una vista de tienda si varias páginas de CMS tienen la misma clave de URL. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.4. El ID del parche es MDVA-40537. Tenga en cuenta que el problema se solucionó en Adobe Commerce 2.4.1.
 feature: CMS
 role: Admin
-source-git-commit: 1fb76b8d648cbbe2a9f602d2b1a0149f1f4f0e46
+exl-id: 10c3d935-dbc9-4033-85a1-041b8af74d78
+source-git-commit: f6abbbb28a3077f7bf26a393388c5059fcd8c599
 workflow-type: tm+mt
 source-wordcount: '433'
 ht-degree: 0%

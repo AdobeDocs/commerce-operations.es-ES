@@ -1,9 +1,10 @@
 ---
-title: "ACSD-56023: El contenido del widget no se actualiza en la página de CMS"
+title: 'ACSD-56023: el contenido del widget no se actualiza en la página de CMS'
 description: Aplique el parche ACSD-56023 para solucionar el problema de Adobe Commerce donde el contenido del widget no se actualiza en la página de CMS
 feature: CMS
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 723b7f64-ed8a-45f9-9151-f99169cd1a04
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '369'
 ht-degree: 0%

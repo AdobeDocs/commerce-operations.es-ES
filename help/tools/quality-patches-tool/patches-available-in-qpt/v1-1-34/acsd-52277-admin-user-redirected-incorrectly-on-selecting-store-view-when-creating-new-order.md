@@ -1,7 +1,8 @@
 ---
-title: "ACSD-52277: El usuario administrador redirigió incorrectamente al seleccionar la vista de la tienda al crear un nuevo pedido"
+title: 'ACSD-52277: el usuario administrador redireccionaba incorrectamente al seleccionar la vista de la tienda al crear un nuevo pedido'
 description: Aplique el parche ACSD-52277 para corregir el problema de Adobe Commerce en el que un usuario administrador no se redirige correctamente después de seleccionar la vista de tienda al crear un nuevo pedido en Administración.
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 61ef59a9-7a31-441f-a763-2d8016498fa7
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '371'
 ht-degree: 0%

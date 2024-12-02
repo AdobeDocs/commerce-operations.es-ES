@@ -1,9 +1,10 @@
 ---
-title: "MDVA-37725: Los correos electrónicos enviados a través de sitios no predeterminados contienen las URL del logotipo del sitio predeterminado"
+title: 'MDVA-37725: Los correos electrónicos enviados a través de sitios no predeterminados contienen las direcciones URL del logotipo del sitio predeterminado'
 description: El parche MDVA-37725 corrige el problema de que los correos electrónicos de pedido asincrónico se envían a través de sitios web no predeterminados que contienen direcciones URL de logotipo del sitio web predeterminado.
 feature: Communications, Orders
 role: Admin
-source-git-commit: 1fb76b8d648cbbe2a9f602d2b1a0149f1f4f0e46
+exl-id: 6e72897c-7652-4b5a-8575-090e94188daf
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '423'
 ht-degree: 0%

@@ -1,9 +1,10 @@
 ---
-title: "ACSD-53998: El bloque dinámico basado en el segmento del cliente funciona incorrectamente después de cerrar sesión"
+title: 'ACSD-53998: El bloque dinámico basado en el segmento del cliente funciona incorrectamente después de cerrar sesión'
 description: Aplique el parche ACSD-53998 para solucionar el problema de Adobe Commerce en el que un bloque dinámico basado en un segmento de clientes no funciona correctamente después de cerrar sesión en una cuenta de cliente.
 feature: Customers, Page Builder, Personalization
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: aa7001c7-bb35-4e5c-8ac9-3ed84b75d7cd
+source-git-commit: f6abbbb28a3077f7bf26a393388c5059fcd8c599
 workflow-type: tm+mt
 source-wordcount: '416'
 ht-degree: 0%

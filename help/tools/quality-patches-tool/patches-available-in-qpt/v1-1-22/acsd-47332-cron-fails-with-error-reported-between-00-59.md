@@ -1,9 +1,10 @@
 ---
-title: "ACSD-47332: cron falla con un error notificado solo entre las 00:00 y las 00:59 UTC"
+title: 'ACSD-47332: cron falla con un error notificado solo entre las 00:00 y las 00:59 UTC'
 description: Aplique el parche ACSD-47332 para corregir el problema de Adobe Commerce en el que cron falla con un error que se registra solo cuando se ejecuta entre 00:00 y 00:59 UTC.
 feature: Configuration
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: ffe6c8f7-0e4c-4a22-853a-45d708bf8164
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '340'
 ht-degree: 0%

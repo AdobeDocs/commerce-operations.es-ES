@@ -1,5 +1,5 @@
 ---
-title: "ACSD-44938: VAT_ID no se puede aplicar en  [!DNL GraphQL] solicitud de usuario invitado"
+title: 'ACSD-44938: VAT_ID no se puede aplicar en  [!DNL GraphQL] solicitud de usuario invitado'
 description: El parche ACSD-44938 soluciona el problema en el que VAT_ID no se puede aplicar en una  [!DNL GraphQL] solicitud para un usuario invitado. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.18. El ID del parche es ACSD-44938. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.6.
 feature: Admin Workspace, GraphQL
 role: Admin

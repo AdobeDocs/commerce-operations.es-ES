@@ -1,9 +1,10 @@
 ---
-title: "ACSD-47497: falta ACL para la tienda/configuración/servicios [!UICONTROL OAuth]"
+title: 'ACSD-47497: falta ACL para almacenamiento/configuración/servicios [!UICONTROL OAuth]'
 description: Aplique el parche ACSD-47497 para solucionar el problema de Adobe Commerce cuando los permisos están configurados para una función en particular y no puede definir el acceso a la sección de configuración.
 feature: Configuration, Identity Management, Services
 role: Admin
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 4dbbd7df-f34b-4db8-a207-3de40fb39c6f
+source-git-commit: f6abbbb28a3077f7bf26a393388c5059fcd8c599
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 0%

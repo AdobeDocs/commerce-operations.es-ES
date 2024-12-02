@@ -1,15 +1,15 @@
 ---
-title: 'ACSD-58352: las etiquetas de atributo devueltas para el almacén predeterminado se devuelven mediante [!DNL GraphQL] API'
+title: 'ACSD-58352: las etiquetas de atributo devueltas para la tienda predeterminada se devuelven mediante la API  [!DNL GraphQL] API'
 description: Aplique el parche ACSD-58352 para solucionar el problema de Adobe Commerce donde las etiquetas de atributos de devolución para el almacén predeterminado se devuelven mediante la API  [!DNL GraphQL]  cuando se especifica una vista de almacén no predeterminada en el encabezado de la solicitud.
 feature: GraphQL, Returns
 role: Admin, Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: e513039e-42cd-4dac-963b-3068ba8bf7ee
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '393'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-58352: las etiquetas de atributo devueltas para el almacén predeterminado se devuelven mediante la API [!DNL GraphQL]
 
