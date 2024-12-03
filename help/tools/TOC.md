@@ -2,9 +2,9 @@
 user-guide-title: Herramientas
 user-guide-description: Obtenga información sobre las distintas herramientas que puede utilizar con Adobe Commerce, sus usos, el proceso de instalación y cómo obtener acceso.
 feature: Configuration
-source-git-commit: 948881a32a1723398e71c9bd3c2173336878ee0d
+source-git-commit: 46c7053368bfab9c5975c5616be9b67050b93105
 workflow-type: tm+mt
-source-wordcount: '6399'
+source-wordcount: '6415'
 ht-degree: 0%
 
 ---
@@ -672,6 +672,7 @@ ht-degree: 0%
          - [ACSD-61845: Se produce un error en las solicitudes con encabezado de aceptación de texto/html](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61845-error-occurs-for-requests-with-text-html-accept-header.md)
       - v1.1.55 {#v1-1-55}
          - [Información general:  [!DNL Quality Patches Tool] (QPT) v1.1.55](/help//tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/overview.md)
+         - [ACSD-58828: Aparece el mensaje &quot;la dirección es obligatoria&quot; del lado del servidor para cualquier campo obligatorio vacío, junto con la validación del lado del cliente](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58828-server-side-address-required-message-appears-for-any-empty-required-field-alongside-client-side-validation.md)
          - [ACSD-61534: La configuración de diseño no se puede establecer con bin/magento config:set](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-61534-design-configuration-cannot-set-using-bin-magento-config-set.md)
          - [ACSD-61348: elementos de la lista de deseos visibles a través de GraphQL pero no en la tienda](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-61348-wishlist-items-visible-via-graphql-but-not-on-storefront.md)
          - [ACSD-61785: la actualización del atributo premio_advertencia_notificación no es posible mediante la mutación de GraphQL y las llamadas a la API REST](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-61785-updating-reward-warning-notification-attribute-not-possible-via-graphql.md)
