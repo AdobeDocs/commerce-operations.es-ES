@@ -4,7 +4,7 @@ description: Aplique el parche ACSD-51408 para corregir el problema de Adobe Com
 feature: B2B, Orders
 role: Admin
 exl-id: 51abb4c6-5618-43a5-89ca-a3879be2c3c4
-source-git-commit: f6abbbb28a3077f7bf26a393388c5059fcd8c599
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '467'
 ht-degree: 0%

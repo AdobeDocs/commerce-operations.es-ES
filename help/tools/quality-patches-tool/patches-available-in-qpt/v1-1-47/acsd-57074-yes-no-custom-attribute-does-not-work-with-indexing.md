@@ -4,7 +4,7 @@ description: Aplique el parche ACSD-57074 para solucionar el problema de Adobe C
 feature: Products, Categories, Catalog Management
 role: Admin, Developer
 exl-id: 718b8f2d-4d3d-4755-8a91-5c2f97114813
-source-git-commit: f6abbbb28a3077f7bf26a393388c5059fcd8c599
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '375'
 ht-degree: 0%

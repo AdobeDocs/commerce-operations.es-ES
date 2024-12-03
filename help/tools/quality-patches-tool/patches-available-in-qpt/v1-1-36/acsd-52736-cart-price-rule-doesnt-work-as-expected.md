@@ -4,7 +4,7 @@ description: Aplique el parche ACSD-52736 para solucionar el problema de Adobe C
 feature: Shopping Cart, Products
 role: Admin, Developer
 exl-id: 80c3b14e-62ce-4cfc-b1ff-968e70e3a6f8
-source-git-commit: f6abbbb28a3077f7bf26a393388c5059fcd8c599
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '377'
 ht-degree: 0%

@@ -4,7 +4,7 @@ description: Aplique el parche ACSD-51291 para solucionar el problema de Adobe C
 feature: Admin Workspace, Products, Page Content
 role: Admin
 exl-id: a4edd034-f718-4559-9993-11609f0d0efa
-source-git-commit: f6abbbb28a3077f7bf26a393388c5059fcd8c599
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '474'
 ht-degree: 0%

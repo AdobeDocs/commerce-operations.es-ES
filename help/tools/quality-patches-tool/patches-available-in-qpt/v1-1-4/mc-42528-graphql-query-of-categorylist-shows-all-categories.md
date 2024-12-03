@@ -4,7 +4,7 @@ description: El parche MC-42528 resuelve el problema en el que la consulta Graph
 feature: Catalog Management, Categories, GraphQL, Customer Service
 role: Admin
 exl-id: 0611a7ff-9d55-4d95-9d4e-9ce1d9096bb6
-source-git-commit: f6abbbb28a3077f7bf26a393388c5059fcd8c599
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '465'
 ht-degree: 0%

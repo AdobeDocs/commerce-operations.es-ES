@@ -3,7 +3,7 @@ title: 'ACSD-56760: el usuario administrador está restringido a un sitio web es
 description: Aplique el parche ACSD-56760 para solucionar el problema de Adobe Commerce en el que el usuario administrador, que está restringido a un sitio web específico y no puede ordenar o agregar nuevos productos dentro de una categoría en caso de que la tienda web tenga su propia categoría raíz.
 role: Admin
 exl-id: 2d75164e-c463-4e1a-aa6f-f420dbe0aaeb
-source-git-commit: f6abbbb28a3077f7bf26a393388c5059fcd8c599
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '495'
 ht-degree: 0%

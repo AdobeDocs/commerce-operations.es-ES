@@ -4,7 +4,7 @@ description: El parche de MDVA-41215 soluciona el problema en el que los usuario
 feature: Configuration
 role: Admin
 exl-id: 6724b7ed-31d4-4dbc-9b80-6799fb3b8f3c
-source-git-commit: f6abbbb28a3077f7bf26a393388c5059fcd8c599
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '433'
 ht-degree: 0%

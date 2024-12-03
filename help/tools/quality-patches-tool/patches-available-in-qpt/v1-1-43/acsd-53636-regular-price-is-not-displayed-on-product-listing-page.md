@@ -4,7 +4,7 @@ description: Aplique el parche ACSD-53636 para corregir el problema de Adobe Com
 feature: Catalog Management, Products
 role: Admin, Developer
 exl-id: e6d66ae4-2c21-466a-b03c-a1f486e7fa29
-source-git-commit: f6abbbb28a3077f7bf26a393388c5059fcd8c599
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '441'
 ht-degree: 0%

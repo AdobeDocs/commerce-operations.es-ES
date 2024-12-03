@@ -4,7 +4,7 @@ description: Aplique el parche ACSD-46815 para solucionar el problema de Adobe C
 feature: Deploy, Page Content, SCD
 role: Admin
 exl-id: 66941a83-daf8-4bb2-a575-b615e1c5dc7c
-source-git-commit: f6abbbb28a3077f7bf26a393388c5059fcd8c599
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 0%

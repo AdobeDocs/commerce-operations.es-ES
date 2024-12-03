@@ -4,7 +4,7 @@ description: Aplique el parche ACSD-50116 para corregir el problema de Adobe Com
 feature: Admin Workspace, Categories
 role: Admin
 exl-id: b2a248eb-a6c4-4596-acac-04a52c5c2a61
-source-git-commit: f6abbbb28a3077f7bf26a393388c5059fcd8c599
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '375'
 ht-degree: 0%

@@ -4,7 +4,7 @@ description: El parche MDVA-43178 corrige el problema en el que el token de clie
 feature: GraphQL
 role: Admin
 exl-id: 8dd9c9e7-573c-4c7a-8fd0-3b3886649af3
-source-git-commit: f6abbbb28a3077f7bf26a393388c5059fcd8c599
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '424'
 ht-degree: 0%

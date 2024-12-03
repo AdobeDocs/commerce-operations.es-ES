@@ -4,7 +4,7 @@ description: El parche MDVA-43201 resuelve el problema en el que se produce un e
 feature: B2B, Cache
 role: Admin
 exl-id: be087420-1ee3-40cc-8ff7-62c5641609cc
-source-git-commit: f6abbbb28a3077f7bf26a393388c5059fcd8c599
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '469'
 ht-degree: 0%

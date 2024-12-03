@@ -4,7 +4,7 @@ description: El parche ACSD-45257 soluciona el problema de que GraphQL no muestr
 feature: GraphQL, Marketing Tools, Orders, Personalization, Shopping Cart
 role: Admin
 exl-id: 3d546768-7f7e-4724-a6d7-c88ca6b67e8c
-source-git-commit: f6abbbb28a3077f7bf26a393388c5059fcd8c599
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '393'
 ht-degree: 0%

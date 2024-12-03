@@ -4,7 +4,7 @@ description: Aplique el parche ACSD-58735 para solucionar el problema de Adobe C
 feature: Shopping Cart, Admin Workspace, Customers
 role: Admin, Developer
 exl-id: b5dcc12f-325d-4de5-bae5-ff938ec77b13
-source-git-commit: f6abbbb28a3077f7bf26a393388c5059fcd8c599
+source-git-commit: 8a33e0aadf3aab2b267f18b20a5195538b6990ef
 workflow-type: tm+mt
 source-wordcount: '389'
 ht-degree: 0%

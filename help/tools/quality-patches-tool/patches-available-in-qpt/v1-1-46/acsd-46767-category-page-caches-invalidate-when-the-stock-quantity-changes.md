@@ -4,7 +4,7 @@ description: Aplique el parche ACSD-46767 para corregir el problema de Adobe Com
 feature: Cache, Products, Inventory
 role: Admin, Developer
 exl-id: 5872dca7-fdef-47ad-8718-bf343cd3a42a
-source-git-commit: f6abbbb28a3077f7bf26a393388c5059fcd8c599
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '372'
 ht-degree: 0%

@@ -4,7 +4,7 @@ description: Aplique el parche ACSD-50336 para corregir el problema de Adobe Com
 feature: Communications, Personalization, Products
 role: Admin
 exl-id: 45dd12af-a3b2-4cfa-be90-af1c7b5f74b3
-source-git-commit: f6abbbb28a3077f7bf26a393388c5059fcd8c599
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '398'
 ht-degree: 0%

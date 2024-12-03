@@ -4,7 +4,7 @@ description: Aplique el parche ACSD-51636 para solucionar el problema de Adobe C
 feature: Admin Workspace, B2B, Companies, Customer Service
 role: Admin
 exl-id: 46e79ae3-ea24-4cb2-b06e-e82cec33b16c
-source-git-commit: f6abbbb28a3077f7bf26a393388c5059fcd8c599
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '398'
 ht-degree: 0%

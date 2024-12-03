@@ -4,7 +4,7 @@ description: Aplique el parche ACSD-53998 para solucionar el problema de Adobe C
 feature: Customers, Page Builder, Personalization
 role: Admin, Developer
 exl-id: aa7001c7-bb35-4e5c-8ac9-3ed84b75d7cd
-source-git-commit: f6abbbb28a3077f7bf26a393388c5059fcd8c599
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '416'
 ht-degree: 0%

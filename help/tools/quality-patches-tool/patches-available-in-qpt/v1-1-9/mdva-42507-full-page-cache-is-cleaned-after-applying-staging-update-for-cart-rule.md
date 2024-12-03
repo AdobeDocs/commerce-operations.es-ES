@@ -4,7 +4,7 @@ description: El parche MDVA-42507 resuelve el problema de limpieza de la caché 
 feature: Cache, Categories, Orders, Shopping Cart, Staging
 role: Admin
 exl-id: 19f61e31-67da-4bd6-bce7-a9250f3946c7
-source-git-commit: f6abbbb28a3077f7bf26a393388c5059fcd8c599
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '416'
 ht-degree: 0%

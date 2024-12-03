@@ -4,7 +4,7 @@ description: El parche MDVA-42689 resuelve el problema en el que los usuarios re
 feature: Categories, Data Import/Export, Products
 role: Admin
 exl-id: 3f81f195-5a95-45f6-8970-403b8398e759
-source-git-commit: f6abbbb28a3077f7bf26a393388c5059fcd8c599
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '461'
 ht-degree: 0%

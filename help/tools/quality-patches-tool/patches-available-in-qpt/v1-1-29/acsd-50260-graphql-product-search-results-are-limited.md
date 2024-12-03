@@ -4,7 +4,7 @@ description: Aplique el parche ACSD-50260 para solucionar el problema de Adobe C
 feature: Admin Workspace, Categories, GraphQL, Products, Search
 role: Admin
 exl-id: a9099fab-226d-439b-b2d0-f354d6b5638f
-source-git-commit: f6abbbb28a3077f7bf26a393388c5059fcd8c599
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '325'
 ht-degree: 0%

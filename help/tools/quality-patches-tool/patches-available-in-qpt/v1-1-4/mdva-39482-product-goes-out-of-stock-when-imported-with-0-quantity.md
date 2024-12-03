@@ -4,7 +4,7 @@ description: El MDVA-39482 corrige el problema en el que el producto se queda si
 feature: Data Import/Export, Orders, Products
 role: Admin
 exl-id: 9d705ebf-2372-4e59-b447-cdb5b0db32f4
-source-git-commit: f6abbbb28a3077f7bf26a393388c5059fcd8c599
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '476'
 ht-degree: 0%

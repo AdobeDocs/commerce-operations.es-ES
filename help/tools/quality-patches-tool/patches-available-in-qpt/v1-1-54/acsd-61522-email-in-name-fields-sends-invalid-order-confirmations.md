@@ -4,7 +4,7 @@ description: Aplique el parche ACSD-61522 para corregir el problema de Adobe Com
 feature: Checkout, Customers
 role: Admin, Developer
 exl-id: e1ed7a57-4054-44db-bc17-9b9056096fce
-source-git-commit: f6abbbb28a3077f7bf26a393388c5059fcd8c599
+source-git-commit: a5dda25e502889ee0a23e99b412aeeb863de452c
 workflow-type: tm+mt
 source-wordcount: '361'
 ht-degree: 0%

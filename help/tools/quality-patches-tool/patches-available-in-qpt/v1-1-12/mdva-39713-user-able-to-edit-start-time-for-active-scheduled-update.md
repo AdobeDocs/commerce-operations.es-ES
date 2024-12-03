@@ -4,7 +4,7 @@ description: El parche de MDVA-39713 soluciona el problema en el que un usuario 
 feature: CMS
 role: Admin
 exl-id: 450a968f-a5ed-478f-a857-579fea1eb3b7
-source-git-commit: f6abbbb28a3077f7bf26a393388c5059fcd8c599
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '476'
 ht-degree: 0%

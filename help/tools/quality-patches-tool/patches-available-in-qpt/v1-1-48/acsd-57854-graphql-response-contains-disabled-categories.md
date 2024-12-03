@@ -4,7 +4,7 @@ description: Aplique el parche ACSD-57854 para solucionar el problema de Adobe C
 feature: GraphQL
 role: Admin, Developer
 exl-id: 216aad2a-f470-49f9-b8ca-79107ca07891
-source-git-commit: f6abbbb28a3077f7bf26a393388c5059fcd8c599
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '379'
 ht-degree: 0%

@@ -4,7 +4,7 @@ description: El parche MDVA-41136 resuelve el problema de que la fecha de caduci
 feature: Cache
 role: Admin
 exl-id: f9fbbbdb-b440-4e94-a5b0-c03cdad9f010
-source-git-commit: f6abbbb28a3077f7bf26a393388c5059fcd8c599
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '411'
 ht-degree: 0%

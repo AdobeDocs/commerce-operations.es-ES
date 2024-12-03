@@ -4,7 +4,7 @@ description: El parche de MDVA-40537 corrige el problema en el que los usuarios 
 feature: CMS
 role: Admin
 exl-id: 10c3d935-dbc9-4033-85a1-041b8af74d78
-source-git-commit: f6abbbb28a3077f7bf26a393388c5059fcd8c599
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '433'
 ht-degree: 0%

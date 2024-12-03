@@ -4,7 +4,7 @@ description: Aplique el parche ACSD-59378 para corregir el problema de Adobe Com
 feature: Data Import/Export
 role: Admin, Developer
 exl-id: dc54d810-dcc6-42c6-a877-d00d3cf4f9a5
-source-git-commit: f6abbbb28a3077f7bf26a393388c5059fcd8c599
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '367'
 ht-degree: 0%

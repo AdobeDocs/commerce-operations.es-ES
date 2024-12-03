@@ -4,7 +4,7 @@ description: Aplique el parche ACSD-53845 para corregir el problema de Adobe Com
 feature: REST, Configuration
 role: Admin, Developer
 exl-id: 437e29f4-b11a-466c-9928-3867821d2b8d
-source-git-commit: f6abbbb28a3077f7bf26a393388c5059fcd8c599
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '333'
 ht-degree: 0%

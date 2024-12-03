@@ -4,7 +4,7 @@ description: Aplique el parche ACSD-51899 para corregir el problema de Adobe Com
 feature: Checkout
 role: Admin
 exl-id: 14e48613-6af8-476c-978d-87c27a0b0d15
-source-git-commit: f6abbbb28a3077f7bf26a393388c5059fcd8c599
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '409'
 ht-degree: 0%

@@ -4,7 +4,7 @@ description: El parche MDVA-44703 corrige el problema en el que los totales de p
 feature: Orders
 role: Admin
 exl-id: bdd38ba6-f282-4026-8f65-b76543859123
-source-git-commit: f6abbbb28a3077f7bf26a393388c5059fcd8c599
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '431'
 ht-degree: 0%

@@ -4,7 +4,7 @@ description: El parche MDVA-43491 soluciona el problema de que la `base_image_la
 feature: Data Import/Export
 role: Admin
 exl-id: f6a5f641-aaf0-4b6e-afa9-7f436f8f59e6
-source-git-commit: f6abbbb28a3077f7bf26a393388c5059fcd8c599
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '491'
 ht-degree: 0%

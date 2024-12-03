@@ -4,7 +4,7 @@ description: Aplique el parche ACSD-47520 para solucionar el problema de Adobe C
 feature: Admin Workspace, Cache, Orders, Rewards, Returns
 role: Admin
 exl-id: 09104451-e9f0-4ddb-b019-8aa34630edb9
-source-git-commit: f6abbbb28a3077f7bf26a393388c5059fcd8c599
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '414'
 ht-degree: 0%

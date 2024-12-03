@@ -4,7 +4,7 @@ description: Aplique el parche ACSD-61785 para solucionar el problema de Adobe C
 feature: REST, GraphQL, Rewards
 role: Admin, Developer
 exl-id: 41f40452-4240-4b4a-b1bc-0da23139f19f
-source-git-commit: f6abbbb28a3077f7bf26a393388c5059fcd8c599
+source-git-commit: c1d3d3056d1ee3c33db6c14ed10a1df08f962795
 workflow-type: tm+mt
 source-wordcount: '316'
 ht-degree: 0%

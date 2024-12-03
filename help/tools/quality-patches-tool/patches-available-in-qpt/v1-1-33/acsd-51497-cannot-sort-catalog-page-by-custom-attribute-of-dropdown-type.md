@@ -4,7 +4,7 @@ description: Aplique el parche ACSD-51497 para solucionar el problema de Adobe C
 feature: Attributes, Cache, Catalog Management, Categories
 role: Developer
 exl-id: c66a7e04-fd2a-47be-8f7a-7982780a5414
-source-git-commit: f6abbbb28a3077f7bf26a393388c5059fcd8c599
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '448'
 ht-degree: 0%

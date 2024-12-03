@@ -4,7 +4,7 @@ description: Aplique el parche ACSD-57588 para corregir el problema de Adobe Com
 feature: Orders, Shipping/Delivery
 role: Admin, Developer
 exl-id: 9a455d32-47d3-4d29-b12e-068bbee98f89
-source-git-commit: f6abbbb28a3077f7bf26a393388c5059fcd8c599
+source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 0%
