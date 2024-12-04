@@ -2,9 +2,9 @@
 title: Notas de la versión
 description: Obtenga información acerca de los parches disponibles para Adobe Commerce y los problemas que resuelven.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 3f6093b55c7bbfaf8666438ac1fef8f90432d947
+source-git-commit: dd6824c3f030d76e93372b8410e42ac5cd2f04c6
 workflow-type: tm+mt
-source-wordcount: '23125'
+source-wordcount: '23648'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,29 @@ ht-degree: 0%
 >[!INFO]
 >
 >Para obtener información acerca de [!DNL quality patches] creado por la comunidad para Magento Open Source, consulte las [notas de la versión](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## Versión 1.1.56 {#v1-1-56}
+
+* **ACSD-63244** (para Adobe Commerce y Magento Open Source >=2.4.4 &lt;2.4.8): corrige el problema en el cual un error [!DNL JavaScript] impide que [!DNL Google Maps] se represente correctamente. Corrige el problema donde hay muchos *TypeError no detectados: este._each no es un error de function* en la consola del panel [!UICONTROL Admin].
+* **ACSD-63242** (para Adobe Commerce y Magento Open Source >=2.4.6-p8 &lt;2.4.7 || >=2.4.7-p3 &lt;2.4.8): corrige el problema de lentitud de importación al añadir productos de catálogo con más de 10 000 entradas.
+* **ACSD-63062** (para Adobe Commerce y Magento Open Source >=2.4.7 &lt;2.4.8): corrige el problema en el cual se producen cálculos de descuento en el carro de compras incorrectos cuando se aplican varias reglas superpuestas.
+* **ACSD-62979** (para Adobe Commerce y Magento Open Source >=2.4.4 &lt;2.4.7): corrige el problema en el cual el uso del [!UICONTROL Store ID] incorrecto en el encabezado [!DNL GraphQL] provoca un error grave de memoria.
+* **ACSD-62971** (para Adobe Commerce y Magento Open Source >=2.4.4 &lt;2.4.8): corrige el problema en el cual la importación de orígenes de existencias con valores no numéricos en la columna **quantity** da como resultado que **quantity** se establezca en *0*.
+* **ACSD-62872** (para Adobe Commerce y Magento Open Source >=2.4.4 &lt;2.4.8): corrige el problema con la validación de atributos únicos en el que las actualizaciones de programación se validan incorrectamente.
+* **ACSD-62755** (para Adobe Commerce y Magento Open Source >=2.4.4-p11 &lt;2.4.5 || >=2.4.5-p10 &lt;2.4.6 || >=2.4.6-p8 &lt;2.4.7 || >=2.4.7-p3 &lt;2.4.8): corrige el problema en el cual [!DNL TinyMCE] 7 requiere que el tamaño y la fuente se agreguen específicamente dentro de la configuración de inicialización del editor.
+* **ACSD-62670** (para Adobe Commerce y Magento Open Source >=2.4.4-p11 &lt;2.4.5 || >=2.4.5-p10 &lt;2.4.6 || >=2.4.6-p8 &lt;2.4.7 || >=2.4.7-p3 &lt;2.4.8): corrige el problema por el que la exportación de informe de [!UICONTROL Products Ordered] a [!DNL CSV] y [!DNL XML] devuelve un error.
+* **ACSD-62577** (para Adobe Commerce y Magento Open Source >=2.4.4 &lt;2.4.8): corrige el problema con el bajo rendimiento de las consultas de búsqueda de tienda al optimizar tanto los índices de tabla como los de consulta.
+* **ACSD-62475** (para Adobe Commerce y Magento Open Source >=2.4.7 &lt;2.4.8): corrige el problema en el cual los productos [!UICONTROL Gift Card] se combinan incorrectamente en el carro de compras.
+* **ACSD-62428** (para Adobe Commerce y Magento Open Source >=2.4.6 &lt;2.4.7): corrige el problema en el cual `is_out_of_stock` se establece en un valor incorrecto en el índice de búsqueda en el catálogo cuando [!DNL SKU] no se establece como atributo en el que se puede buscar.
+* **ACSD-62355** (para Adobe Commerce y Magento Open Source >=2.4.6 &lt;2.4.8): mejora el tiempo de carga de la página de edición del producto configurable cuando el producto configurable se basa en muchos atributos con muchos valores.
+* **ACSD-61805** (para Adobe Commerce y Magento Open Source >=2.4.4 &lt;2.4.8): corrige el problema en el cual los productos permanecen sin existencias en la tienda después de actualizar el estado del pedido pendiente a través de [!DNL REST API].
+* **ACSD-60811** (para Adobe Commerce y Magento Open Source >=2.4.7 &lt;2.4.8): corrige el problema en el cual actualizar el estado del pedido con un valor o comentario personalizado solo es posible si el estado actual es *procesando* o *fraude*.
+* **ACSD-62952** (para Adobe Commerce >=2.4.4 &lt;2.4.8): corrige el problema en el que la fecha de [!UICONTROL Gift Registry] se muestra de forma inexacta en la tienda.
+* **ACSD-55339** (para Adobe Commerce >=2.4.4 &lt;2.4.8): corrige el problema en el cual un producto [!DNL SKU] que comience por &quot;0&quot; (cero) quita el &quot;0&quot;, lo que impide que se actualice la cotización.
+**
+* Revisiones actualizadas: **ACSD-59514**
+* Versiones actualizadas: **ACSD-60816**
+* Revisiones reemplazadas: **ACSD-59967**
 
 ## v1.1.55 {#v1-1-55}
 
