@@ -2,9 +2,9 @@
 user-guide-title: Herramientas
 user-guide-description: Obtenga información sobre las distintas herramientas que puede utilizar con Adobe Commerce, sus usos, el proceso de instalación y cómo obtener acceso.
 feature: Configuration
-source-git-commit: c03b0b3c81556f1c75ad5259a5905a5dd5b0224e
+source-git-commit: 73953020c85ffb0a941602e1dafe5de6a6175cff
 workflow-type: tm+mt
-source-wordcount: '6425'
+source-wordcount: '6437'
 ht-degree: 0%
 
 ---
@@ -670,6 +670,7 @@ ht-degree: 0%
          - [ACSD-61799: cálculo de descuento total incorrecto con varias reglas de carro de descuentos fijos aplicadas al presupuesto](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61799-incorrect-total-discount-calculation-with-multiple-fixed-discount-rules.md)
          - [ACSD-62485: async.operations.all consumidor deja de funcionar cuando se crea la compañía](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-62485-async-operations-all-consumer-stops-working-when-company-is-created.md)
          - [ACSD-61845: Se produce un error en las solicitudes con encabezado de aceptación de texto/html](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-61845-error-occurs-for-requests-with-text-html-accept-header.md)
+         - [ACSD-62056: la carga de imágenes para el producto configurable falla si MSI está instalado](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-54/acsd-62056-image-upload-for-configurable-products-fail-msi-installed.md)
       - v1.1.55 {#v1-1-55}
          - [Información general:  [!DNL Quality Patches Tool] (QPT) v1.1.55](/help//tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/overview.md)
          - [ACSD-58828: Aparece el mensaje &quot;la dirección es obligatoria&quot; del lado del servidor para cualquier campo obligatorio vacío, junto con la validación del lado del cliente](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58828-server-side-address-required-message-appears-for-any-empty-required-field-alongside-client-side-validation.md)
