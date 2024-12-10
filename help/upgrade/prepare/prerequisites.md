@@ -2,9 +2,9 @@
 title: Completar requisitos previos
 description: Prepare su proyecto de Adobe Commerce para una actualización completando estos pasos previos.
 exl-id: f7775900-1d10-4547-8af0-3d1283d9b89e
-source-git-commit: fb449f0ee7d503d0c7ba60bf6bfbe3f528060606
+source-git-commit: 4c84710da62fbb31214a0de2adc8adbd68880a76
 workflow-type: tm+mt
-source-wordcount: '1604'
+source-wordcount: '1612'
 ht-degree: 0%
 
 ---
@@ -229,11 +229,11 @@ Se deben mostrar resultados similares a los siguientes:
 
 Otro síntoma de que cron no se está ejecutando es el siguiente error en el administrador:
 
-![](../../assets/upgrade-guide/cron-not-running.png)
+![Mensajes del sistema - cron no se está ejecutando](../../assets/upgrade-guide/cron-not-running.png)
 
 Para ver el error, haga clic en **Mensajes del sistema** en la parte superior de la ventana de la siguiente manera:
 
-![](../../assets/upgrade-guide/system-messages.png)
+![Notificación de mensajes del sistema](../../assets/upgrade-guide/system-messages.png)
 
 Consulte [Configurar y ejecutar cron](../../configuration/cli/configure-cron-jobs.md) para obtener más información.
 
