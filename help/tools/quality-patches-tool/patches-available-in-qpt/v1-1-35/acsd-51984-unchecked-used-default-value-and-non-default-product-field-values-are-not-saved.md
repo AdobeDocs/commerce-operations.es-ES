@@ -4,7 +4,7 @@ description: Aplique el parche ACSD-51984 para corregir el problema de Adobe Com
 feature: Products
 role: Admin
 exl-id: 51a810fa-d416-4b37-b5bd-66eed9fe4626
-source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
+source-git-commit: 1a78b2afa6e751d430700e72f512f7d82d1c1bdd
 workflow-type: tm+mt
 source-wordcount: '434'
 ht-degree: 0%
@@ -58,7 +58,7 @@ Los valores de los campos y de las casillas de verificación no se guardan.
 
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
-* Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](</help/tools/quality-patches-tool/usage.md>) en la guía [!DNL Quality Patches Tool].
+* Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía [!DNL Quality Patches Tool].
 * Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) en la guía Commerce en la infraestructura de la nube.
 
 ## Lectura relacionada

@@ -1,7 +1,8 @@
 ---
-title: "ACSD-51645: Guardar una nueva regla de precio del carro de compras si la extensión Magento_OfflineShipping está deshabilitada"
+title: 'ACSD-51645: Guardar una nueva regla de precio del carro de compras si la extensión Magento_OfflineShipping está desactivada'
 description: Aplique el parche ACSD-51645 para corregir el problema de Adobe Commerce en el que se produce un error al guardar una nueva regla de precio del carro de compras si la extensión Magento_OfflineShipping está desactivada.
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: ce747ae4-6d2f-41c0-ba75-7da72be359c7
+source-git-commit: 1a78b2afa6e751d430700e72f512f7d82d1c1bdd
 workflow-type: tm+mt
 source-wordcount: '347'
 ht-degree: 0%
@@ -52,7 +53,7 @@ Se produce el siguiente error:
 
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
-* Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](</help/tools/quality-patches-tool/usage.md>) en la guía [!DNL Quality Patches Tool].
+* Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía [!DNL Quality Patches Tool].
 * Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) en la guía Commerce en la infraestructura de la nube.
 
 ## Lectura relacionada

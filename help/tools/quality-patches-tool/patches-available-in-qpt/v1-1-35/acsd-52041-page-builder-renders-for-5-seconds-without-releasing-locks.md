@@ -4,7 +4,7 @@ description: Aplique el parche ACSD-52041 para corregir el problema de Adobe Com
 feature: Page Builder
 role: Admin, Developer
 exl-id: 48a7fc36-e98a-4a4e-bed3-248d7d73f6cb
-source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
+source-git-commit: 1a78b2afa6e751d430700e72f512f7d82d1c1bdd
 workflow-type: tm+mt
 source-wordcount: '349'
 ht-degree: 0%
@@ -55,7 +55,7 @@ Error en la consola: ``Page Builder was rendering for 5 seconds without releasin
 
 Para aplicar parches individuales para las versiones **2.4.4 - 2.4.4-p5, 2.4.5 - 2.4.5-p4 y 2.4.6 - 2.4.6-p2**, utilice los siguientes vínculos según el método de implementación:
 
-* Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](</help/tools/quality-patches-tool/usage.md>) en la guía [!DNL Quality Patches Tool].
+* Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía [!DNL Quality Patches Tool].
 * Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) en la guía Commerce en la infraestructura de la nube.
 
 ## Lectura relacionada
