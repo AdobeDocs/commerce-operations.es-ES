@@ -4,14 +4,18 @@ description: Aplique el parche ACSD-52801 para corregir el problema de Adobe Com
 feature: Products
 role: Admin, Developer
 exl-id: 946a7189-60b2-4812-92ca-ed7ba35b2488
-source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
+source-git-commit: ec05b041c7af477abd6d3ade6ea95fed5065f2fa
 workflow-type: tm+mt
-source-wordcount: '350'
+source-wordcount: '385'
 ht-degree: 0%
 
 ---
 
 # ACSD-52801: la consulta del filtro de producto de GraphQL no muestra resultados de coincidencia parciales
+
+>[!NOTE]
+>
+>Se ha lanzado un parche actualizado ([ACSD-62332](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-62332-product-listing-graphql-query-limit-plus-live-search-current-page.md)) para resolver el mismo problema en las versiones 2.4.6 - 2.4.6-p8. Sustituye al parche ACSD-52801 en las versiones 2.4.6 y posteriores. Para obtener más información, consulte [ACSD-62332](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-62332-product-listing-graphql-query-limit-plus-live-search-current-page.md).
 
 El parche ACSD-52801 corrige el problema en el que la consulta del filtro de producto de GraphQL no muestra resultados de coincidencia parciales. Esta revisión está disponible cuando está instalado [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.40. El ID del parche es ACSD-52801. Tenga en cuenta que el problema se corrige en Adobe Commerce 2.4.7.
 

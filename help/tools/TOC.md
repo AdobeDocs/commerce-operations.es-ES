@@ -2,9 +2,9 @@
 user-guide-title: Herramientas
 user-guide-description: Obtenga información sobre las distintas herramientas que puede utilizar con Adobe Commerce, sus usos, el proceso de instalación y cómo obtener acceso.
 feature: Configuration
-source-git-commit: 981de02b37590366e75eb605c671f0f0ec89feec
+source-git-commit: 089ef6e52b45a69455b80d0a43668e3250fb4b4f
 workflow-type: tm+mt
-source-wordcount: '6469'
+source-wordcount: '6485'
 ht-degree: 0%
 
 ---
@@ -683,6 +683,7 @@ ht-degree: 0%
          - [ACSD-58383: duplicar notas de crédito de solicitudes de reembolso simultáneas a través de  [!DNL REST API]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58383-duplicate-credit-memos-from-simultaneous-refund-requests-via-rest-api.md)
          - [ACSD-58735: el administrador restringido no puede ver los carros de compras abandonados en la cuenta del cliente del sitio web asociado](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-58735-restricted-admin-cant-view-abandoned-shopping-carts.md)
          - [ACSD-60344: duplicar correos electrónicos de confirmación de pedido al usar [!UICONTROL Purchase Order] con aprobación automática](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-60344-duplicate-order-confirmation-emails-for-purchase-order-with-auto-approval.md)
+         - [ACSD-62332: la consulta de GraphQL de la lista de productos está limitada a 10 000 productos y  [!DNL Live Search] establece la página actual en 1](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-62332-product-listing-graphql-query-limit-plus-live-search-current-page.md)
       - v1.1.56 {#v1-1-56}
          - [Información general:  [!DNL Quality Patches Tool] (QPT) v1.1.56](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/overview.md)
          - [ACSD-62428: Errores de estado de stock en el índice de búsqueda del catálogo](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62428-fixes-stock-status-errors-in-catalog-search-index.md)
