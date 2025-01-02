@@ -2,9 +2,9 @@
 user-guide-title: Herramientas
 user-guide-description: Obtenga información sobre las distintas herramientas que puede utilizar con Adobe Commerce, sus usos, el proceso de instalación y cómo obtener acceso.
 feature: Configuration
-source-git-commit: 5e705bd71b9229e7040ed3c8fccd8057512ac710
+source-git-commit: f79af1e15a763fa9f9b8050a73b160e5741c435d
 workflow-type: tm+mt
-source-wordcount: '6582'
+source-wordcount: '6595'
 ht-degree: 0%
 
 ---
@@ -698,6 +698,7 @@ ht-degree: 0%
       - [Comprobar parche para el problema de Adobe Commerce con la herramienta Parches de calidad](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
       - v1.1.57 {#v1-1-57}
          - [Información general:  [!DNL Quality Patches Tool] (QPT) v1.1.57](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/overview.md)
+         - [ACSD-63326: corrija el problema de redirección de administradores después de realizar un pedido desde el backend](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-63326-fix-admin-redirection-issue-after-placing-an-order-from-the-backend.md)
 - Referencia de herramientas de la línea de comandos {#cli-reference}
    - [Adobe Commerce (local)](reference/commerce-on-premises.md)
    - [Actualizar herramienta de compatibilidad](reference/uct.md)
