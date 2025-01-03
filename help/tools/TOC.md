@@ -2,9 +2,9 @@
 user-guide-title: Herramientas
 user-guide-description: Obtenga información sobre las distintas herramientas que puede utilizar con Adobe Commerce, sus usos, el proceso de instalación y cómo obtener acceso.
 feature: Configuration
-source-git-commit: 5ab49f669cf333a1a7444b11b75807505cbca2f4
+source-git-commit: 31f3dfa8efcf3ae32efabff5982db340b60d98b4
 workflow-type: tm+mt
-source-wordcount: '6632'
+source-wordcount: '6641'
 ht-degree: 0%
 
 ---
@@ -703,6 +703,7 @@ ht-degree: 0%
          - [ACSD-62965: corrige el mensaje LocalizedException que falta en la respuesta de colocación de pedidos de GraphQL](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62965-fixes-missing-localizedexception-message-in-graphql-order-placement-response.md)
          - [ACSD-62758: problema de procesamiento de vídeo resuelto en páginas de producto configurables](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62758-resolved-video-rendering-issue-on-configurable-product-pages.md)
          - [ACSD-63326: corrija el problema de redirección de administradores después de realizar un pedido desde el backend](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-63326-fix-admin-redirection-issue-after-placing-an-order-from-the-backend.md)
+         - [ACSD-58325: botón [!UICONTROL Import] disponible incluso después de un error de validación](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-58325-import-button-available-even-after-a-validation-error.md)
 - Referencia de herramientas de la línea de comandos {#cli-reference}
    - [Adobe Commerce (local)](reference/commerce-on-premises.md)
    - [Actualizar herramienta de compatibilidad](reference/uct.md)
