@@ -2,9 +2,9 @@
 user-guide-title: Herramientas
 user-guide-description: Obtenga información sobre las distintas herramientas que puede utilizar con Adobe Commerce, sus usos, el proceso de instalación y cómo obtener acceso.
 feature: Configuration
-source-git-commit: 31f3dfa8efcf3ae32efabff5982db340b60d98b4
+source-git-commit: 5537079eff80496f8f4906ba22220a9a3ac3402a
 workflow-type: tm+mt
-source-wordcount: '6641'
+source-wordcount: '6651'
 ht-degree: 0%
 
 ---
@@ -694,6 +694,7 @@ ht-degree: 0%
          - [ACSD-63242: importación lenta al añadir más de 10 000 productos de catálogo](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-63242-slow-import-when-adding-catalog-products.md)
          - [ACSD-63062: cálculos de descuento del carro de compras incorrectos con varias reglas superpuestas](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-63062-incorrect-cart-discount-calculations-when-multiple-overlapping-rules.md)
          - [ACSD-62428: Errores de estado de stock en el índice de búsqueda del catálogo](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62428-fixes-stock-status-errors-in-catalog-search-index.md)
+         - [AACSD-62355: mejora el rendimiento de edición de productos configurables en Adobe Commerce](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62355-improves-configurable-product-edit-performance-in-adobe-commerce.md)
          - [ACSD-62872: programar actualizaciones validadas incorrectamente](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62872-schedule-updates-validated-incorrectly.md)
          - [ACSD-62952: la fecha del registro de regalos se muestra de forma inexacta en la tienda](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62952-gift-registry-date-inaccurate-storefront.md)
          - [ACSD-62577: Optimización del rendimiento de búsqueda en tiendas](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62577-storefront-search-performance-optimization.md)
