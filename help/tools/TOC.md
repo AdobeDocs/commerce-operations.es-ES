@@ -2,9 +2,9 @@
 user-guide-title: Herramientas
 user-guide-description: Obtenga información sobre las distintas herramientas que puede utilizar con Adobe Commerce, sus usos, el proceso de instalación y cómo obtener acceso.
 feature: Configuration
-source-git-commit: f2b773bdae1a892216d4384b85d1d929553529ea
+source-git-commit: d0a1da302c3e50b3b73a89d5d6326ef638005fec
 workflow-type: tm+mt
-source-wordcount: '6662'
+source-wordcount: '6674'
 ht-degree: 0%
 
 ---
@@ -705,6 +705,7 @@ ht-degree: 0%
          - [ACSD-62965: corrige el mensaje LocalizedException que falta en la respuesta de colocación de pedidos de GraphQL](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62965-fixes-missing-localizedexception-message-in-graphql-order-placement-response.md)
          - [ACSD-62758: problema de procesamiento de vídeo resuelto en páginas de producto configurables](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62758-resolved-video-rendering-issue-on-configurable-product-pages.md)
          - [ACSD-63326: corrija el problema de redirección de administradores después de realizar un pedido desde el backend](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-63326-fix-admin-redirection-issue-after-placing-an-order-from-the-backend.md)
+         - [ACSD-63286: los productos asignados al catálogo compartido deben reindexarse manualmente para que aparezcan](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-63286-products-in-shared-catalog-need-manual-reindexing-to-appear.md)
          - [ACSD-58325: botón [!UICONTROL Import] disponible incluso después de un error de validación](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-58325-import-button-available-even-after-a-validation-error.md)
 - Referencia de herramientas de la línea de comandos {#cli-reference}
    - [Adobe Commerce (local)](reference/commerce-on-premises.md)
