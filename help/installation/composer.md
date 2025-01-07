@@ -2,9 +2,9 @@
 title: Instalación local de inicio rápido
 description: Siga estos pasos para instalar Adobe Commerce en la infraestructura de su propiedad.
 exl-id: a93476e8-2b30-461a-91df-e73eb1a14d3c
-source-git-commit: ee7551374aa6d4ad462dd64ee3d05b934b43ce45
+source-git-commit: 60db3da9154e76032c88d687b6b6e22d7b81f9ae
 workflow-type: tm+mt
-source-wordcount: '933'
+source-wordcount: '957'
 ht-degree: 0%
 
 ---
@@ -89,11 +89,11 @@ Para obtener el metapaquete de Adobe Commerce:
    composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition <install-directory-name>
    ```
 
-   Cuando se le solicite, introduzca sus claves de autenticación. Las claves pública y privada se crean y configuran en su [Commerce Marketplace](https://commercemarketplace.adobe.com/customer/account/login/).
+   Cuando se le solicite, introduzca sus claves de autenticación. Se crean y configuran claves públicas y privadas desde el Commerce Marketplace [Claves de acceso](https://commercemarketplace.adobe.com/customer/account/login/). Para `[!UICONTROL username]`, copie y pegue el valor de clave pública. Para `[!UICONTROL password]`, copie y pegue el valor de clave privada.
 
    >[!NOTE]
    >
-   > Al utilizar un archivo del Compositor `auth.json` o una variable de entorno, no se le pedirá que escriba las claves de autenticación.
+   > Si usa un archivo del Compositor `[auth.json](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/authentication-keys)` o una variable de entorno configurada con las claves de autenticación de Commerce, no se le pedirá que especifique las claves de autenticación.
 
    Si encuentra errores, como `Could not find package...` o `...no matching package found`, asegúrese de que no haya errores tipográficos en el comando. Si sigue encontrando errores, es posible que no tenga autorización para descargar Adobe Commerce. Póngase en contacto con el [Soporte técnico de Adobe Commerce](https://support.magento.com/hc/en-us) para obtener ayuda.
 
