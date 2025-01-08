@@ -2,9 +2,9 @@
 user-guide-title: Herramientas
 user-guide-description: Obtenga información sobre las distintas herramientas que puede utilizar con Adobe Commerce, sus usos, el proceso de instalación y cómo obtener acceso.
 feature: Configuration
-source-git-commit: 5f161057bba76d208d363d33e6c09d1780c2e74b
+source-git-commit: ae2d0a48898063ce93efb7dce889f7485562f936
 workflow-type: tm+mt
-source-wordcount: '6716'
+source-wordcount: '6729'
 ht-degree: 0%
 
 ---
@@ -700,6 +700,7 @@ ht-degree: 0%
          - [ACSD-62872: programar actualizaciones validadas incorrectamente](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62872-schedule-updates-validated-incorrectly.md)
          - [ACSD-62952: la fecha del registro de regalos se muestra de forma inexacta en la tienda](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62952-gift-registry-date-inaccurate-storefront.md)
          - [ACSD-62577: Optimización del rendimiento de búsqueda en tiendas](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62577-storefront-search-performance-optimization.md)
+         - [ACSD-62755: [!DNL TinyMCE] 7 necesita que se agreguen el tamaño y la fuente a la configuración de inicialización del editor](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62755-tinymce-7-needs-font-size-added-in-editor-initialization-setting.md)
       - [Comprobar parche para el problema de Adobe Commerce con la herramienta Parches de calidad](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
       - v1.1.57 {#v1-1-57}
          - [Información general:  [!DNL Quality Patches Tool] (QPT) v1.1.57](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/overview.md)
