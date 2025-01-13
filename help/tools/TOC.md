@@ -2,9 +2,9 @@
 user-guide-title: Herramientas
 user-guide-description: Obtenga información sobre las distintas herramientas que puede utilizar con Adobe Commerce, sus usos, el proceso de instalación y cómo obtener acceso.
 feature: Configuration
-source-git-commit: b6c055dc3fec27db450f629d4c09f526c57676e2
+source-git-commit: ad941810716f34f252e401455fb3db64ae35f35f
 workflow-type: tm+mt
-source-wordcount: '6772'
+source-wordcount: '6784'
 ht-degree: 0%
 
 ---
@@ -701,6 +701,7 @@ ht-degree: 0%
          - [ACSD-62872: programar actualizaciones validadas incorrectamente](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62872-schedule-updates-validated-incorrectly.md)
          - [ACSD-62952: la fecha del registro de regalos se muestra de forma inexacta en la tienda](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62952-gift-registry-date-inaccurate-storefront.md)
          - [ACSD-62577: Optimización del rendimiento de búsqueda en tiendas](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62577-storefront-search-performance-optimization.md)
+         - [ACSD-55339: solución del problema de recorte de SKU en presupuestos negociables para Adobe Commerce](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-55339-resolving-sku-trimming-issue-in-negotiable-quotes-for-adobe-commerce.md)
          - [ACSD-62670: error al exportar el informe de [!UICONTROL Products Ordered] a CSV y XML](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62670-products-ordered-report-export-to-csv-xml-throws-error.md)
          - [ACSD-62755: [!DNL TinyMCE] 7 necesita que se agreguen el tamaño y la fuente a la configuración de inicialización del editor](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62755-tinymce-7-needs-font-size-added-in-editor-initialization-setting.md)
       - [Comprobar parche para el problema de Adobe Commerce con la herramienta Parches de calidad](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
