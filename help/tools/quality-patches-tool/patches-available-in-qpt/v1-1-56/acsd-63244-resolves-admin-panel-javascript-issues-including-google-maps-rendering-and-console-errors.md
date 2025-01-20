@@ -3,14 +3,15 @@ title: 'ACSD-63244: resuelva los problemas de JavaScript del panel de administra
 description: El parche ACSD-63244 corrige varios problemas de JavaScript en el panel de administración, incluidos problemas con el procesamiento  [!DNL Google Maps] y el error de tipo no capturado recurrente._each no es un error de function en la consola del navegador.
 feature: Admin Workspace
 role: Admin, Developer
-source-git-commit: 01d6d74bfb9a9491bc006f140a2eebf4bbee004b
+exl-id: 1985c845-219e-4af4-8f70-62dd57722494
+source-git-commit: 6b623811440238deee7a7fe859d887830f89782c
 workflow-type: tm+mt
-source-wordcount: '325'
+source-wordcount: '323'
 ht-degree: 0%
 
 ---
 
-# ACSD-63244: ACSD-63244: Resuelva los problemas de JavaScript del panel de administración, incluidos los errores de procesamiento y consola de [!DNL Google Maps]
+# ACSD-63244: resolver los problemas de JavaScript del panel de administración, incluidos los errores de procesamiento y consola de [!DNL Google Maps]
 
 La revisión ACSD-63244 corrige varios problemas de JavaScript en el panel de administración, incluidos problemas con el procesamiento de [!DNL Google Maps] y errores recurrentes de `Uncaught TypeError: this._each is not a function` en la consola del explorador. Este parche está disponible con [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.56. El ID del parche es ACSD-63244. Tenga en cuenta que el problema estaba programado para solucionarse en Adobe Commerce 2.4.8.
 
