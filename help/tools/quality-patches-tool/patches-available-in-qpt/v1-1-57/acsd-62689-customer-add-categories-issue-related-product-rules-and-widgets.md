@@ -3,17 +3,17 @@ title: 'ACSD-62689: no se pueden agregar categorías en [!UICONTROL Related Prod
 description: Aplique el parche ACSD-62689 para corregir el problema de Adobe Commerce en el que un cliente no puede agregar categorías en [!UICONTROL Related Product Rules] y widgets después del anidamiento de profundidad cuatro.
 feature: Categories
 role: Admin, Developer
-source-git-commit: 154a017fbc6e069e8e59651db46955922c004955
+exl-id: 2506744a-01c8-462b-9a27-cd0bdb5664f9
+source-git-commit: e18a41c5abb1cc8b407ff6c188acdeed0e8a7659
 workflow-type: tm+mt
-source-wordcount: '374'
+source-wordcount: '373'
 ht-degree: 0%
 
 ---
 
-
 # ACSD-62689: no se pueden agregar categorías en *[!UICONTROL Related Product Rules]* y widgets después de la profundidad 4
 
-La revisión ACSD-62689 corrige el problema en el cual un cliente no puede agregar categorías en *[!UICONTROL Related Product Rules]* y widgets después del anidamiento de profundidad cuatro. Esta revisión está disponible cuando está instalado [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/docs/commerce-operations/patches/release-notes.html) 1.1.57. El ID del parche es ACSD-62689. Este problema está programado para solucionarse en Adobe Commerce 2.4.8.
+La revisión ACSD-62689 corrige el problema en el cual un cliente no puede agregar categorías en *[!UICONTROL Related Product Rules]* y widgets después del anidamiento de profundidad cuatro. Esta revisión está disponible cuando está instalado [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.57. El ID del parche es ACSD-62689. Este problema está programado para solucionarse en Adobe Commerce 2.4.8.
 
 ## Productos y versiones afectados
 
@@ -67,3 +67,4 @@ Para aplicar parches individuales, utilice los siguientes vínculos según el m�
 Para obtener más información sobre [!DNL Quality Patches Tool], consulte:
 
 * [[!DNL Quality Patches Tool]: herramienta de autoservicio para parches de calidad](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) en la guía Herramientas.
+

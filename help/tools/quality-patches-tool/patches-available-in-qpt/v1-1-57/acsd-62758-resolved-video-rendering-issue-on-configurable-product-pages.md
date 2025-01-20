@@ -3,16 +3,17 @@ title: 'ACSD-62758: problema de procesamiento de vídeo resuelto en páginas de 
 description: Aplique el parche ACSD-62758 para corregir el problema de Adobe Commerce en el que los vídeos de producto en páginas de detalles de producto configurables no se representan correctamente cuando las direcciones URL contienen opciones de muestra preseleccionadas.
 feature: Catalog Management
 role: Admin, Developer
-source-git-commit: 313709361ee86e39b89c416f71a92b078318f4fb
+exl-id: 084b497d-4471-4458-bc1d-2a452bfe2662
+source-git-commit: e18a41c5abb1cc8b407ff6c188acdeed0e8a7659
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '485'
 ht-degree: 0%
 
 ---
 
 # ACSD-62758: problema de procesamiento de vídeo resuelto en páginas de producto configurables
 
-El parche ACSD-62758 corrige el problema de que los vídeos de productos en páginas de detalles de productos configurables no se representan correctamente cuando las direcciones URL contienen opciones de muestra preseleccionadas. Esta revisión está disponible cuando está instalado [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.57. El ID del parche es ACSD-62758. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.8.
+El parche ACSD-62758 corrige el problema de que los vídeos de productos en páginas de detalles de productos configurables no se representan correctamente cuando las direcciones URL contienen opciones de muestra preseleccionadas. Esta revisión está disponible cuando está instalado [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.57. El ID del parche es ACSD-62758. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.8.
 
 ## Productos y versiones afectados
 
@@ -70,3 +71,4 @@ Para aplicar parches individuales, utilice los siguientes vínculos según el m�
 Para obtener más información sobre [!DNL Quality Patches Tool], consulte:
 
 * [[!DNL Quality Patches Tool]: herramienta de autoservicio para parches de calidad](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) en la guía Herramientas.
+
