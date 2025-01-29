@@ -4,9 +4,9 @@ description: El parche de ACSD-45675 corrige el problema en el que la exportaci�
 feature: Categories, Data Import/Export, Products
 role: Admin
 exl-id: ebe72038-511d-43e1-bd65-e5b468342f05
-source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
+source-git-commit: a1c5898626fb8419af017a29a009a0a2c069326e
 workflow-type: tm+mt
-source-wordcount: '429'
+source-wordcount: '426'
 ht-degree: 0%
 
 ---
@@ -68,6 +68,6 @@ Para aplicar parches individuales, utilice los siguientes vínculos según el m�
 Para obtener más información sobre [!DNL Quality Patches Tool], consulte:
 
 * [[!DNL Quality Patches Tool] publicado: nueva herramienta para autodistribuir parches de calidad](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) en la base de conocimiento de soporte.
-* [Comprueba si el parche está disponible para tu problema de Adobe Commerce usando [!DNL Quality Patches Tool]](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/patches/check-patch-for-magento-issue-with-magento-quality-patches.html) en nuestra base de conocimiento de soporte.
+* [Compruebe si el parche está disponible para su problema de Adobe Commerce usando [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) en la guía [!UICONTROL Quality Patches Tool].
 
 Para obtener información sobre otros parches disponibles en [!DNL QPT], consulte [Parches disponibles en [!DNL QPT]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) en la guía de la herramienta Parches de calidad.

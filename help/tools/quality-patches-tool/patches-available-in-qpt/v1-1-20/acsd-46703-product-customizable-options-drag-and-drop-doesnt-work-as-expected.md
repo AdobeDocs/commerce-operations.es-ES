@@ -1,11 +1,12 @@
 ---
-title: "ACSD-46703: La función de arrastrar y soltar para personalizar el producto no funciona"
+title: 'ACSD-46703: La función de arrastrar y soltar para personalizar el producto no funciona'
 description: Este artículo proporciona una solución al problema en el que las opciones personalizables de producto de arrastrar y soltar no funcionan según lo esperado.
 feature: Products
 role: Developer
-source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a
+exl-id: 38b9490a-c9d4-4f8e-b90f-69bf50a6b571
+source-git-commit: a1c5898626fb8419af017a29a009a0a2c069326e
 workflow-type: tm+mt
-source-wordcount: '425'
+source-wordcount: '419'
 ht-degree: 0%
 
 ---
@@ -60,6 +61,6 @@ Para aplicar parches individuales, utilice los siguientes vínculos según el m�
 Para obtener más información sobre la herramienta Parches de calidad, consulte:
 
 * [Lanzamiento de la herramienta Parches de calidad: una nueva herramienta para autodistribuir parches de calidad](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) en la base de conocimiento de asistencia.
-* [Compruebe si el parche está disponible para su problema de Adobe Commerce mediante la herramienta Parches de calidad](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/patches/check-patch-for-magento-issue-with-magento-quality-patches.html) en nuestra base de conocimiento de soporte.
+* [Compruebe si el parche está disponible para su problema de Adobe Commerce usando [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) en la guía [!UICONTROL Quality Patches Tool].
 
 Para obtener información sobre otros parches disponibles en QPT, consulte [[!DNL Quality Patches Tool]: Buscar parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) en la guía de la herramienta Parches de calidad.

@@ -4,9 +4,9 @@ description: Este artículo proporciona una solución al problema en el que el u
 feature: Categories
 role: Admin
 exl-id: c1ad13d8-94e1-47cf-ad65-9bc5ce1c26ad
-source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
+source-git-commit: a1c5898626fb8419af017a29a009a0a2c069326e
 workflow-type: tm+mt
-source-wordcount: '392'
+source-wordcount: '386'
 ht-degree: 0%
 
 ---
@@ -62,6 +62,6 @@ Para aplicar parches individuales, utilice los siguientes vínculos según el m�
 Para obtener más información sobre la herramienta Parches de calidad, consulte:
 
 * [Lanzamiento de la herramienta Parches de calidad: una nueva herramienta para autodistribuir parches de calidad](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) en la base de conocimiento de asistencia.
-* [Compruebe si el parche está disponible para su problema de Adobe Commerce mediante la herramienta Parches de calidad](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/patches/check-patch-for-magento-issue-with-magento-quality-patches.html) en nuestra base de conocimiento de soporte.
+* [Compruebe si el parche está disponible para su problema de Adobe Commerce usando [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) en la guía [!UICONTROL Quality Patches Tool].
 
 Para obtener información sobre otros parches disponibles en QPT, consulte [[!DNL Quality Patches Tool]: Buscar parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) en la guía de la herramienta Parches de calidad.
