@@ -2,9 +2,9 @@
 user-guide-title: Herramientas
 user-guide-description: Obtenga información sobre las distintas herramientas que puede utilizar con Adobe Commerce, sus usos, el proceso de instalación y cómo obtener acceso.
 feature: Configuration
-source-git-commit: 79f587e1ed2f4117141cd29c7a512a6b677047d6
+source-git-commit: ef50c80723bdef72df5319f29069ddfc0814807b
 workflow-type: tm+mt
-source-wordcount: '6904'
+source-wordcount: '6915'
 ht-degree: 0%
 
 ---
@@ -726,6 +726,7 @@ ht-degree: 0%
       - v1.1.58 {#v1-1-58}
          - [Información general:  [!DNL Quality Patches Tool] (QPT) v1.1.58](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/overview.md)
          - [ACSD-63067: resolución de problemas de validación de cantidades en productos agrupados en tienda](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63067-resolving-quantity-validation-issues-in-grouped-products-on-storefront.md)
+         - [ACSD-63283: resolución de [!UICONTROL Gift Registry] problemas de correo electrónico y ubicación de pedidos en Adobe Commerce](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63283-resolving-gift-registry-email-and-order-placement-issues-in-adobe-commerce.md)
          - [ACSD-62118: la tabla sales_order_tax_item no se ha actualizado completamente para los pedidos B2B realizados con el método [!UICONTROL Purchase Order]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-62118-tax-item-table-not-updated-po-method.md)
          - [ACSD-63182: Error al guardar un producto después de la duplicación de productos del paquete](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63182-error-occurs-while-saving-a-product-after-bundle-product-duplication.md)
    - [Comprobar parche para el problema de Adobe Commerce con la herramienta Parches de calidad](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
