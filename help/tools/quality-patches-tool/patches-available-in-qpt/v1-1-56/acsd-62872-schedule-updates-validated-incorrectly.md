@@ -3,13 +3,13 @@ title: 'ACSD-62872: programar actualizaciones validadas incorrectamente'
 description: Aplique el parche ACSD-62872 para corregir el problema de Adobe Commerce con validación de atributos únicos en el que las actualizaciones programadas se validan incorrectamente.
 feature: Catalog Management, Admin Workspace
 role: Admin, Developer
-source-git-commit: f734dab2316237d60164a430eeabed17782b0ae6
+exl-id: bd0d452b-aae3-4682-8a2c-471a7f8bf132
+source-git-commit: 4727a94178c642922224cb37ad5c1b2b4f6002cb
 workflow-type: tm+mt
-source-wordcount: '319'
+source-wordcount: '336'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-62872: programar actualizaciones validadas incorrectamente
 
@@ -23,7 +23,11 @@ El parche ACSD-62872 corrige el problema de validación de atributos únicos en 
 
 **Compatible con versiones de Adobe Commerce:**
 
-* Adobe Commerce (todos los métodos de implementación) 2.4.4 - 2.4.7-p3
+* Adobe Commerce (todos los métodos de implementación) 2.4.7 - 2.4.7-p3
+
+>[!NOTE]
+>
+>El parche está marcado como obsoleto para las versiones 2.4.4 - 2.4.6-p8 en la versión 1.1.58 QPT.
 
 >[!NOTE]
 >
@@ -55,8 +59,7 @@ Se genera un error: *El valor del atributo &quot;Atributo personalizado&quot; no
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
 * Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía [!DNL Quality Patches Tool].
-* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) en la guía Commerce en la infraestructura de la nube.
-
+* Adobe Commerce en infraestructura de nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) en la guía Commerce en infraestructura de nube.
 
 ## Lectura relacionada
 
