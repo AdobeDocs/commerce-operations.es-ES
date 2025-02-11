@@ -2,56 +2,68 @@
 title: Notas de la versión de Adobe Commerce 2.4.7 Security Patch
 description: Obtenga información acerca de las correcciones de errores de seguridad, las mejoras de seguridad y otras actualizaciones relacionadas con la seguridad incluidas en las versiones de parches de seguridad para Adobe Commerce 2.4.7.
 exl-id: 38e5632b-c795-47d8-89dd-26bbaeb34e67
-source-git-commit: cb4f388c90902c2fe1df4a5d84841280fa740104
+source-git-commit: 9397740c608e4f0521018d6f6c918ca267197c6c
 workflow-type: tm+mt
-source-wordcount: '325'
+source-wordcount: '362'
 ht-degree: 0%
 
 ---
 
 # Notas de la versión de parches de seguridad de Adobe Commerce 2.4.7
 
-{{$include /help/_includes/security-patch-release-notes-intro.md}}
+{{$include /help/_includes/release-notes/security-patch-intro.md}}
 
-## 2.4.7-p3
+## 2.4.7-p4
 
-La versión de seguridad de Adobe Commerce 2.4.7-p3 proporciona correcciones de errores de seguridad para vulnerabilidades identificadas en versiones anteriores de 2.4.7.
+La versión de seguridad de Adobe Commerce 2.4.7-p4 proporciona correcciones de errores de seguridad para vulnerabilidades identificadas en versiones anteriores de 2.4.7.
 
-Para obtener la información más reciente sobre la corrección de errores de seguridad, consulte [Boletín de seguridad del Adobe APSB24-73](https://helpx.adobe.com/security/products/magento/apsb24-73.html).
+Para obtener la información más reciente sobre la corrección de errores de seguridad, consulte [Boletín de seguridad de Adobe APSB25-08](https://helpx.adobe.com/security/products/magento/apsb25-08.html).
 
 {{b2b-patches}}
 
 ### Características destacadas
 
-{{$include /help/_includes/release-notes/2024-10/security-foo.md}}
+{{$include /help/_includes/release-notes/highlights/security-2025-02.md}}
+
+## 2.4.7-p3
+
+La versión de seguridad de Adobe Commerce 2.4.7-p3 proporciona correcciones de errores de seguridad para vulnerabilidades identificadas en versiones anteriores de 2.4.7.
+
+Para obtener la información más reciente sobre la corrección de errores de seguridad, consulte [Boletín de seguridad de Adobe APSB24-73](https://helpx.adobe.com/security/products/magento/apsb24-73.html).
+
+{{b2b-patches}}
+
+### Características destacadas
+
+{{$include /help/_includes/release-notes/highlights/security-2024-10.md}}
 
 ### Revisiones incluidas en esta versión
 
-{{$include /help/_includes/release-notes/2024-10/hotfixes-included-foo.md}}
+{{$include /help/_includes/release-notes/hotfixes/included-2024-10.md}}
 
 ## 2,4,7-p2
 
 La versión de seguridad de Adobe Commerce 2.4.7-p2 proporciona correcciones de errores de seguridad para vulnerabilidades identificadas en versiones anteriores de 2.4.7.
 
-Para obtener la información más reciente sobre la corrección de errores de seguridad, consulte [Boletín de seguridad del Adobe APSB24-61](https://helpx.adobe.com/security/products/magento/apsb24-61.html).
+Para obtener la información más reciente sobre la corrección de errores de seguridad, consulte [Boletín de seguridad de Adobe APSB24-61](https://helpx.adobe.com/security/products/magento/apsb24-61.html).
 
 ### Características destacadas
 
-{{$include /help/_includes/release-notes/2024-08/security.md}}
+{{$include /help/_includes/release-notes/highlights/security-2024-08.md}}
 
 ### Revisiones incluidas en esta versión
 
-{{$include /help/_includes/release-notes/2024-08/hotfixes-included.md}}
+{{$include /help/_includes/release-notes/hotfixes/included-2024-08.md}}
 
 ## 2.4.7-p1
 
 La versión de seguridad de Adobe Commerce 2.4.7-p1 proporciona correcciones de errores de seguridad para vulnerabilidades que se han identificado en versiones anteriores de 2.4.7.
 
-Para obtener la información más reciente sobre la corrección de errores de seguridad, consulte [Boletín de seguridad del Adobe APSB24-40](https://helpx.adobe.com/security/products/magento/apsb24-40.html).
+Para obtener la información más reciente sobre la corrección de errores de seguridad, consulte [Boletín de seguridad de Adobe APSB24-40](https://helpx.adobe.com/security/products/magento/apsb24-40.html).
 
 ### Aplicar revisión para CVE-2024-34102
 
-{{$include /help/_includes/release-notes/2024-06/hotfixes-not-included.md}}
+{{$include /help/_includes/release-notes/hotfixes/not-included-2024-06.md}}
 
 ### Características destacadas
 
@@ -63,4 +75,4 @@ Esta versión incluye los siguientes aspectos destacados:
 
 ### Revisiones incluidas en esta versión
 
-Adobe Commerce SOAP 2.4.7-p1 resuelve un problema que se introdujo en el ámbito de la migración de la integración de UPS de la API de REST a la API de. Este problema afectaba a los clientes que realizaban envíos fuera de los EE. UU. e impedía que utilizaran las mediciones del sistema métrico/SI de kilogramos y centímetros para los paquetes con el fin de crear envíos con UPS. SOAP Consulte el artículo de la base de conocimiento [Migración de la integración del método de envío UPS de a la API de RESTful](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/ups-shipping-method-integration-migration-from-soap-to-restful-api) para obtener más detalles.
+Adobe Commerce 2.4.7-p1 resuelve un problema introducido en el ámbito de la migración de la integración de UPS de SOAP a la API de REST. Este problema afectaba a los clientes que realizaban envíos fuera de los EE. UU. e impedía que utilizaran las mediciones del sistema métrico/SI de kilogramos y centímetros para los paquetes con el fin de crear envíos con UPS. Consulte el artículo de la base de conocimiento [Migración del método de envío UPS de SOAP a la API RESTful](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/ups-shipping-method-integration-migration-from-soap-to-restful-api) para obtener más detalles.

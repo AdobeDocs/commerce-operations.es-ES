@@ -2,7 +2,7 @@
 title: Notas de la versión de Adobe Commerce 2.4.2 Security Patch
 description: Obtenga información acerca de las correcciones de errores de seguridad, las mejoras de seguridad y otras actualizaciones relacionadas con la seguridad incluidas en las versiones de parches de seguridad para Adobe Commerce 2.4.2.
 exl-id: e6058e96-b810-4a78-8804-15783afef951
-source-git-commit: d532402e2d65a1f34558fc3c283d4291be5b006b
+source-git-commit: b63fa9a8b2b59f6e8dfd7003e75c66caf99d5e81
 workflow-type: tm+mt
 source-wordcount: '165'
 ht-degree: 0%
@@ -12,13 +12,13 @@ ht-degree: 0%
 
 # Notas de la versión de parches de seguridad de Adobe Commerce 2.4.2
 
-{{$include /help/_includes/security-patch-release-notes-intro.md}}
+{{$include /help/_includes/release-notes/security-patch-intro.md}}
 
 ## Adobe Commerce 2.4.2-p2
 
 La versión de seguridad de Adobe Commerce 2.4.2-p2 proporciona correcciones de errores de seguridad para vulnerabilidades identificadas en versiones anteriores de 2.4.2.
 
-Para obtener la información más reciente sobre la corrección de errores de seguridad, consulte [Boletín de seguridad del Adobe APSB21-64](https://helpx.adobe.com/security/products/magento/apsb21-64.html).
+Para obtener la información más reciente sobre la corrección de errores de seguridad, consulte [Boletín de seguridad de Adobe APSB21-64](https://helpx.adobe.com/security/products/magento/apsb21-64.html).
 
 ## Aplicar `AC-3022.patch` para seguir ofreciendo DHL como transportista
 

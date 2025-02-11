@@ -2,7 +2,7 @@
 title: Notas de la versión de los parches de seguridad de Adobe Commerce 2.4.3
 description: Obtenga información acerca de las correcciones de errores de seguridad, las mejoras de seguridad y otras actualizaciones relacionadas con la seguridad incluidas en las versiones de parches de seguridad para Adobe Commerce 2.4.3.
 exl-id: 72d343cd-83d7-48ce-976a-e26ba1b8db27
-source-git-commit: 95ea96a566b0579a22b2ba738bd4a4bceef8cd9c
+source-git-commit: b63fa9a8b2b59f6e8dfd7003e75c66caf99d5e81
 workflow-type: tm+mt
 source-wordcount: '931'
 ht-degree: 0%
@@ -12,13 +12,13 @@ ht-degree: 0%
 
 # Notas de la versión de los parches de seguridad de Adobe Commerce 2.4.3
 
-{{$include /help/_includes/security-patch-release-notes-intro.md}}
+{{$include /help/_includes/release-notes/security-patch-intro.md}}
 
 ## Adobe Commerce 2.4.3-p3
 
 La versión de seguridad de Adobe Commerce 2.4.3-p3 proporciona correcciones de seguridad para vulnerabilidades identificadas en versiones anteriores de 2.4.3. Esta versión también incluye mejoras de seguridad que mejoran el cumplimiento de las prácticas recomendadas de seguridad más recientes.
 
-Para obtener la información más reciente sobre la corrección de errores de seguridad, consulte [Boletín de seguridad del Adobe APSB22-38](https://helpx.adobe.com/security/products/magento/apsb22-38.html).
+Para obtener la información más reciente sobre la corrección de errores de seguridad, consulte [Boletín de seguridad de Adobe APSB22-38](https://helpx.adobe.com/security/products/magento/apsb22-38.html).
 
 ### Aplicar `AC-3022.patch` para seguir ofreciendo DHL como transportista
 
@@ -33,7 +33,7 @@ DHL ha introducido la versión de esquema 6.2 y dejará de utilizar la versión 
 
 La versión de seguridad de Adobe Commerce 2.4.3-p2 proporciona correcciones de errores de seguridad para vulnerabilidades que se han identificado en versiones anteriores. Esta versión también incluye mejoras de seguridad que mejoran el cumplimiento de las prácticas recomendadas de seguridad más recientes.
 
-Para obtener la información más reciente sobre la corrección de errores de seguridad, consulte [Boletín de seguridad del Adobe APSB22-13](https://helpx.adobe.com/security/products/magento/apsb22-13.html).  La versión del parche también resuelve la vulnerabilidad a la que se refieren `MDVA-43395_EE_2.4.3-p1_COMPOSER_v1.patch.zip`, `MDVA-43443_EE_2.4.3-p1_COMPOSER_v1.patch.zip`, `MDVA-43395_EE_2.4.3-p1_COMPOSER_v1.patch` y `MDVA-43443_EE_2.4.3-p1_COMPOSER_v1.patch`.
+Para obtener la información más reciente sobre la corrección de errores de seguridad, consulte [Boletín de seguridad de Adobe APSB22-13](https://helpx.adobe.com/security/products/magento/apsb22-13.html).  La versión del parche también resuelve la vulnerabilidad a la que se refieren `MDVA-43395_EE_2.4.3-p1_COMPOSER_v1.patch.zip`, `MDVA-43443_EE_2.4.3-p1_COMPOSER_v1.patch.zip`, `MDVA-43395_EE_2.4.3-p1_COMPOSER_v1.patch` y `MDVA-43443_EE_2.4.3-p1_COMPOSER_v1.patch`.
 
 
 ### Aplicar `AC-3022.patch` para seguir ofreciendo DHL como transportista
@@ -62,7 +62,7 @@ DHL ha introducido la versión de esquema 6.2 y dejará de utilizar la versión 
 La versión de seguridad de Adobe Commerce 2.4.3-p1 proporciona correcciones de errores de seguridad para vulnerabilidades identificadas en la versión anterior (Adobe Commerce 2.4.3 y Magento Open Source 2.4.3). Esta versión también incluye mejoras de seguridad que mejoran el cumplimiento de las prácticas recomendadas de seguridad más recientes.
 
 
-Para obtener la información más reciente sobre la corrección de errores de seguridad, consulte [Boletín de seguridad del Adobe APSB21-86](https://helpx.adobe.com/security/products/magento/apsb21-86.html). La versión del parche también proporciona correcciones de errores para las extensiones desarrolladas por el proveedor [Braintree](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/braintree.html), [Klarna](https://marketplace.magento.com/klarna-m2-klarna.html) y [Vertex](https://marketplace.magento.com/vertexinc-vertex-tax-module.html).
+Para obtener la información más reciente sobre la corrección de errores de seguridad, consulte [Boletín de seguridad de Adobe APSB21-86](https://helpx.adobe.com/security/products/magento/apsb21-86.html). La versión del parche también proporciona correcciones de errores para las extensiones desarrolladas por el proveedor de [Braintree](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/braintree.html), [Klarna](https://marketplace.magento.com/klarna-m2-klarna.html) y [Vertex](https://marketplace.magento.com/vertexinc-vertex-tax-module.html).
 
 ### Aplicar `AC-3022.patch` para seguir ofreciendo DHL como transportista
 
@@ -78,7 +78,7 @@ Esta versión incluye la siguiente revisión y todas las revisiones publicadas p
 
 Se han eliminado **ID de sesión de la base de datos**. Este cambio de código puede provocar cambios importantes si los comerciantes tienen personalizaciones o extensiones instaladas que utilizan los ID de sesión sin procesar almacenados en la base de datos. <!-- MC-40976-->
 
-**Acceso de administrador restringido a las carpetas de la Galería multimedia**. Los permisos predeterminados de la Galería multimedia ahora solo permiten operaciones de directorio (ver, cargar, eliminar y crear) permitidas explícitamente por la configuración. Los usuarios administradores ya no pueden acceder a los recursos multimedia a través de la Galería multimedia que se cargaron fuera de los directorios `catalog/category` o `wysiwyg`. Los administradores que deseen acceder a los recursos de medios deben moverlos a una carpeta permitida explícitamente o ajustar su configuración. Ver [Modificar permisos de carpeta de Media Library](https://developer.adobe.com/commerce/php/tutorials/backend/modify-image-library-permissions/). <!-- B2B-1897-->
+**Acceso de administrador restringido a las carpetas de la Galería multimedia**. Los permisos predeterminados de la Galería multimedia ahora solo permiten operaciones de directorio (ver, cargar, eliminar y crear) permitidas explícitamente por la configuración. Los usuarios administradores ya no pueden acceder a los recursos multimedia a través de la Galería multimedia que se cargaron fuera de los directorios `catalog/category` o `wysiwyg`. Los administradores que deseen acceder a los recursos de medios deben moverlos a una carpeta permitida explícitamente o ajustar su configuración. Consulte [Modificar permisos de la carpeta Biblioteca de medios](https://developer.adobe.com/commerce/php/tutorials/backend/modify-image-library-permissions/). <!-- B2B-1897-->
 
 **Límites reducidos a la complejidad de las consultas de GraphQL**. Se ha reducido la complejidad máxima de consulta permitida de GraphQL para evitar ataques de denegación de servicio (DOS). Ver [configuración de seguridad de GraphQL](https://developer.adobe.com/commerce/webapi/graphql/usage/security-configuration/). <!-- PWA-1700-->
 

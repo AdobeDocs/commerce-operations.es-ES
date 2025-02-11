@@ -2,9 +2,9 @@
 title: Notas de la versión de Adobe Commerce
 description: Descubra dónde encontrar información sobre versiones específicas de Adobe Commerce.
 exl-id: f6385e12-5c3d-425f-939c-9dfd7ef6c4f5
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: a2c93cb8481a3d843bc3be186d682f1d5e7974f6
 workflow-type: tm+mt
-source-wordcount: '288'
+source-wordcount: '275'
 ht-degree: 3%
 
 ---
@@ -28,7 +28,7 @@ Utilice la siguiente tabla para buscar notas de la versión e información impor
             <li><a href="https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/">Cambios incompatibles con versiones anteriores</a></li>
             <li><a href="commerce/overview.md">Adobe Commerce</a></li>
             <li><a href="security/overview.md">Parches de seguridad</a></li>
-            <li><a href="https://helpx.adobe.com/security/products/magento.html">Boletín de seguridad del Adobe</a></li>
+            <li><a href="https://helpx.adobe.com/security/products/magento.html">Boletín de seguridad de Adobe</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html">B2B para Adobe Commerce</a></li>
           </ul>
         </td>
@@ -48,23 +48,20 @@ Utilice la siguiente tabla para buscar notas de la versión e información impor
         <p>Obtenga información sobre las últimas mejoras de los innovadores servicios de comercialización de Commerce.</p>
           <ul>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html">Audience Activation</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-channels/amazon/release-notes.html">Sales Channel Amazon</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/release-notes.html">Servicio de catálogo</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/release-notes.html">Administrador de canales (ventas de Walmart Marketplace)</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/release-notes.html">Conector del Experience Platform</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/release-notes.html">Conector de Experience Platform</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/release-notes.html">Live Search</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/release-notes.html">Servicios de pago</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/release-notes.html">Product Recommendations</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/release-notes.html">Recomendaciones de productos</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html">Conector de servicios</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/release-notes.html?lang=en">Satisfacción de tienda</a></li>
           </ul>
         </td>
       <td><strong>Herramientas</strong>
         <p>Obtenga información sobre las mejoras más recientes en las herramientas diseñadas para facilitar la búsqueda y el uso del software de Adobe Commerce.</p>
           <ul>
-            <li><a href="https://developer.adobe.com/graphql-mesh-gateway/">API Mesh para Adobe App Builder Developer</a></li>
-            <li><a href="https://developer.adobe.com/commerce/events/get-started/release-notes/">Eventos de Adobe I/O para Adobe Commerce</a></li>
-            <li><a href="https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/release-notes/">SDK de IU de administración</a></li>
+            <li><a href="https://developer.adobe.com/graphql-mesh-gateway/">Malla de API para desarrolladores de Adobe App Builder</a></li>
+            <li><a href="https://developer.adobe.com/commerce/events/get-started/release-notes/">Adobe I/O Events para Adobe Commerce</a></li>
+            <li><a href="https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/release-notes/">IU de administración de SDK</a></li>
             <li><a href="../../tools/quality-patches-tool/release-notes.md">Herramienta Parches de calidad</a></li>
             <li><a href="../../tools/site-wide-analysis-tool/intro.md">Herramienta de análisis de todo el sitio</a></li>
             <li><a href="../../upgrade/upgrade-compatibility-tool/overview.md">Actualizar herramienta de compatibilidad</a></li>
