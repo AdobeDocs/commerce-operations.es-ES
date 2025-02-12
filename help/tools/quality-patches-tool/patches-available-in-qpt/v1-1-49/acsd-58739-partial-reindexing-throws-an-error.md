@@ -1,9 +1,10 @@
 ---
-title: "ACSD-58739: La reindexación parcial genera un error"
+title: 'ACSD-58739: la reindexación parcial genera un error'
 description: Aplique el parche ACSD-55241 para corregir el problema de Adobe Commerce en el que la reindexación parcial genera un error.
 feature: Inventory, Products
 role: Admin, Developer
-source-git-commit: 809defe75d7b218d8085f85ff815472a531040cf
+exl-id: b4e6b8b4-43de-4434-94fb-6269a75e1c28
+source-git-commit: c643d55823ae0791ecfa0f2220116bbcbd02668a
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 0%
@@ -34,7 +35,7 @@ La reindexación parcial genera un error.
 
 <u>Pasos a seguir</u>:
 
-1. Agregar configuración de conexión esclava a `app/etc/ev.php`.
+1. Agregar configuración de conexión esclava a `app/etc/env.php`.
 1. Genere hasta 10000 productos y ejecute el siguiente comando:
 
    ```
