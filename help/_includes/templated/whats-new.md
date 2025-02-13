@@ -1,7 +1,7 @@
 ---
-source-git-commit: 06c3dd1b383b39c60734ea4e464dedb14fdba111
+source-git-commit: 317a1f5d9a6b1ed4713fd7564f8afce12e519c90
 workflow-type: tm+mt
-source-wordcount: '1053'
+source-wordcount: '1105'
 ht-degree: 1%
 
 ---
@@ -10,6 +10,38 @@ ht-degree: 1%
 ## Novedades de la versión
 
 Esta página contiene los cambios realizados en los últimos 60 días. Excluimos todas las actualizaciones menores, como la edición de copias, de esta lista.
+
+### 11 de febrero de 2025
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descripción</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Se agregaron <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements">requisitos del sistema</a> para la versión de febrero de 2025.</p>
+</td>
+      <td>major-update</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/2004b40fafb74b0af2a82f618bb04ca13e9372c8">2004b4</a> (confirmación)</td>
+    </tr>
+    <tr>
+      <td><p>Notas de la versión publicadas para los parches de seguridad y beta de febrero de 2025: <br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-8">2.4.8-beta2</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-7-patches">2.4.7-p4</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-6-patches">2.4.6-p9</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-5-patches">2.4.5-p11</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/security-patches/2-4-4-patches">2.4.4-p12</a></p>
+</td>
+      <td>major-update</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/12562e72703651b48cc506d587732e896573c7bc">12562e</a> (confirmación)</td>
+    </tr>
+    <tr>
+      <td><p>Se ha actualizado la <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/uct">referencia de CLI de UCT</a>.</p>
+</td>
+      <td>técnico</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/8c45d89c610a5b319352d202057d010b0450c848">8c45d8</a> (confirmación)</td>
+    </tr>
+  </tbody>
+</table>
 
 ### 7 de febrero de 2025
 
