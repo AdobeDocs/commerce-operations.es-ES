@@ -2,9 +2,9 @@
 user-guide-title: Herramientas
 user-guide-description: Obtenga información sobre las distintas herramientas que puede utilizar con Adobe Commerce, sus usos, el proceso de instalación y cómo obtener acceso.
 feature: Configuration
-source-git-commit: fcff1ac0ed1b36952adb54098154fd039c7013a4
+source-git-commit: 92d2edd72f19e0b70f6ed7ffa2f19714ae02c523
 workflow-type: tm+mt
-source-wordcount: '6994'
+source-wordcount: '7005'
 ht-degree: 0%
 
 ---
@@ -737,6 +737,7 @@ ht-degree: 0%
          - [ACSD-63329: los valores predeterminados de los campos de fecha y hora no se establecen al crear productos con la API de REST](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63329-date-and-time-attributes-arent-set-when-creating-products-with-the-rest-api.md)
       - v1.1.59 {#v1-1-59}
          - [Información general:  [!DNL Quality Patches Tool] (QPT) v1.1.59](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/overview.md)
+         - [ACSD-63870: el cliente no ha cerrado sesión correctamente durante el cambio de estado de la empresa](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63870-customer-not-logged-out-properly-during-company-status-change.md)
    - [Comprobar parche para el problema de Adobe Commerce con la herramienta Parches de calidad](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Referencia de herramientas de la línea de comandos {#cli-reference}
    - [Adobe Commerce (local)](reference/commerce-on-premises.md)
