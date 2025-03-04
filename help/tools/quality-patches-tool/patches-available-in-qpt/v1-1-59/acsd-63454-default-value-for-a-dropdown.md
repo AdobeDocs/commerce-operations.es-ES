@@ -3,13 +3,13 @@ title: 'ACSD-63454: El valor predeterminado para los atributos Desplegable y Sel
 description: Aplique el parche ACSD-63454 para solucionar el problema de Adobe Commerce en el que el valor predeterminado de los atributos Desplegable y Selección múltiple no se guarda correctamente en la base de datos.
 feature: Attributes, Products
 role: Admin, Developer
-source-git-commit: 1c872ebeff05c0c84756d7abd7f43c4652032d3f
+exl-id: fa79a3bb-e615-44cb-8d84-da892f924fd0
+source-git-commit: cb73a5a346ec0e8acd59accf73605e25ef35c3ca
 workflow-type: tm+mt
-source-wordcount: '403'
+source-wordcount: '401'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-63454: el valor predeterminado de los atributos [!UICONTROL Dropdown] y [!UICONTROL Multiple Select] no se ha guardado correctamente en la base de datos
 
@@ -35,19 +35,19 @@ El valor predeterminado de los atributos [!UICONTROL Dropdown] y [!UICONTROL Mul
 
 <u>Pasos a seguir</u>:
 
-1. Inicie sesión en el servidor, vaya a **[!UICONTROL Stores]** > [!UICONTROL Attributes] > **[!UICONTROL Product]**.
+1. Inicie sesión en el servidor, vaya a **[!UICONTROL Stores]** > *[!UICONTROL Attributes]* > **[!UICONTROL Product]**.
 1. Haga clic en **[!UICONTROL Add New Attribute]**.
 1. En la ficha **[!UICONTROL Properties]**, establezca lo siguiente:
-   * [!UICONTROL Default Label] = prueba
-   * [!UICONTROL Catalog Input Type for Store Owner]= [!UICONTROL Multiple Select]
-   * [!UICONTROL Manage Options]: agregar 2 opciones sin seleccionar **[!UICONTROL Is Default]**.
+   * **[!UICONTROL Default Label]**: *prueba*
+   * **[!UICONTROL Catalog Input Type for Store Owner]**: *[!UICONTROL Multiple Select]*
+   * **[!UICONTROL Manage Options]**: agregar dos opciones sin seleccionar **[!UICONTROL Is Default]**.
 1. Haga clic en **[!UICONTROL Save Attribute]**.
-1. Compruebe en la base de datos que la columna *default_value* esté vacía.
+1. Compruebe en la base de datos que la columna `default_value` está vacía.
 
    `select attribute_code, default_value from eav_attribute where attribute_code = 'test';`
 
 1. Vuelva atrás y establezca una de las dos opciones como **[!UICONTROL Is Default]**.
-1. Vuelva a comprobar la base de datos para asegurarse de que *default_value* contiene ahora el identificador de opción seleccionado.
+1. Vuelva a comprobar la base de datos para asegurarse de que `default_value` contiene ahora el identificador de opción seleccionado.
 1. Vuelva y seleccione la otra opción para cambiar la opción predeterminada.
 
 <u>Resultados esperados</u>:
