@@ -2,9 +2,9 @@
 user-guide-title: Herramientas
 user-guide-description: Obtenga información sobre las distintas herramientas que puede utilizar con Adobe Commerce, sus usos, el proceso de instalación y cómo obtener acceso.
 feature: Configuration
-source-git-commit: f59d574087a4eaa33643d6de16e702a19a3606f9
+source-git-commit: 2dc974d2887fb725e1854aef2cbdd63616e3846d
 workflow-type: tm+mt
-source-wordcount: '7094'
+source-wordcount: '7108'
 ht-degree: 0%
 
 ---
@@ -735,6 +735,7 @@ ht-degree: 0%
          - [ACSD-63325: &quot;Error de sintaxis: &lt; EOF > inesperado&quot; al enviar la solicitud  [!DNL GraphQL] vacía](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63325-syntax-error-when-submitting-graphql-request.md)
          - [ACSD-63578: al hacer clic en el icono [!UICONTROL Delete] en [!UICONTROL Add to Order by SKU], no se elimina la SKU](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63578-clicking-delete-in-add-to-order-by-sku-doesnot-remove-sku.md)
          - [ACSD-63329: los valores predeterminados de los campos de fecha y hora no se establecen al crear productos con la API de REST](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63329-date-and-time-attributes-arent-set-when-creating-products-with-the-rest-api.md)
+         - [ACSD-63572: las tablas temporales del indexador de catálogos no se limpian si el proceso del indexador termina](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63572-catalogrule-indexer-temporary-tables-arent-cleaned-if-the-indexer-process-is-terminated.md)
       - v1.1.59 {#v1-1-59}
          - [Información general:  [!DNL Quality Patches Tool] (QPT) v1.1.59](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/overview.md)
          - [ACSD-64112: la ejecución de cron indexer_update_all_views falla cuando se establece MAGE_INDEXER_THREADS_COUNT](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-64112-indexer-update-all-views-cron-execution-fails.md)
