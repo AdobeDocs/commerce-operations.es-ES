@@ -4,9 +4,9 @@ description: Aplique el parche ACSD-46815 para solucionar el problema de Adobe C
 feature: Deploy, Page Content, SCD
 role: Admin
 exl-id: 66941a83-daf8-4bb2-a575-b615e1c5dc7c
-source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
+source-git-commit: 94fba368c799f4584e27331e852c0f8abeeabbd6
 workflow-type: tm+mt
-source-wordcount: '344'
+source-wordcount: '309'
 ht-degree: 0%
 
 ---
@@ -60,8 +60,4 @@ Para aplicar parches individuales, utilice los siguientes vínculos según el m�
 
 Para obtener más información sobre [!DNL Quality Patches Tool], consulte:
 
-* [[!DNL Quality Patches Tool] publicado: nueva herramienta para autodistribuir parches de calidad](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) en la base de conocimiento de soporte.
-* [Compruebe si el parche está disponible para su problema de Adobe Commerce usando [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) en la guía [!UICONTROL Quality Patches Tool].
-
-
-Para obtener información sobre otros parches disponibles en QPT, consulte [[!DNL Quality Patches Tool]: Buscar parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) en la guía [!DNL Quality Patches Tool].
+* [[!DNL Quality Patches Tool]: herramienta de autoservicio para parches de calidad](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) en la guía Herramientas.

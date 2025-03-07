@@ -4,9 +4,9 @@ description: Este artículo proporciona una solución para el problema en el que
 feature: Orders, Returns
 role: Admin
 exl-id: 67740003-a71e-41bf-afda-ca3e32290115
-source-git-commit: a1c5898626fb8419af017a29a009a0a2c069326e
+source-git-commit: ab6d0a9814fe5f9dae368a1adbf99d622cdc9d92
 workflow-type: tm+mt
-source-wordcount: '372'
+source-wordcount: '334'
 ht-degree: 0%
 
 ---
@@ -62,7 +62,4 @@ Para aplicar parches individuales, utilice los siguientes vínculos según el m�
 
 Para obtener más información sobre [!DNL Quality Patches Tool], consulte:
 
-* [[!DNL Quality Patches Tool] publicado: nueva herramienta para autodistribuir parches de calidad](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) en la base de conocimiento de soporte.
-* [Compruebe si el parche está disponible para su problema de Adobe Commerce usando [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) en la guía [!UICONTROL Quality Patches Tool].
-
-Para obtener información sobre otros parches disponibles en QPT, consulte [[!DNL Quality Patches Tool]: Buscar parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) en la guía de la herramienta Parches de calidad.
+* [[!DNL Quality Patches Tool]: herramienta de autoservicio para parches de calidad](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) en la guía Herramientas.
