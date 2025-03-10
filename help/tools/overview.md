@@ -2,7 +2,7 @@
 title: Herramientas
 description: Optimiza tu tienda Adobe Commerce con estas herramientas.
 exl-id: e2770019-d879-4685-bcbe-791550f49cf0
-source-git-commit: 66cd2717d95424c9738c54fdc18fb439ea18ea5f
+source-git-commit: 60f85dfb889e1e6d15aaf45f95115705b090ccad
 workflow-type: tm+mt
 source-wordcount: '69'
 ht-degree: 0%
@@ -20,6 +20,7 @@ Esta guía está diseñada para comerciantes, desarrolladores e integradores con
 ## ¿Qué hay en la guía?
 
 * [[!DNL Site-Wide Analysis Tool]](../tools/site-wide-analysis-tool/intro.md)
+* [[!DNL Managed alerts for Adobe Commerce]](../tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce.md)
 * [[!DNL Quality Patches Tool]: buscar parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
 * [`bin/magento`](reference/commerce-on-premises.md)
 * [`bin/uct`](reference/commerce-on-premises.md)
