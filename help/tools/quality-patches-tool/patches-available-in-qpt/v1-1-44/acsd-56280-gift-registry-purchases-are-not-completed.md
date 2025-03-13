@@ -4,14 +4,18 @@ description: Aplique el parche ACSD-56280 para corregir el problema de Adobe Com
 feature: Checkout
 role: Admin
 exl-id: a79f789f-999f-4d11-b7ee-2c065b681efb
-source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
+source-git-commit: ab02be3396e68044e9356f89fba6b55aa880056f
 workflow-type: tm+mt
-source-wordcount: '353'
+source-wordcount: '360'
 ht-degree: 0%
 
 ---
 
 # ACSD-56280: las compras en el registro de regalos no se han completado
+
+>[!NOTE]
+>
+>Este parche se reemplazó por [ACSD-63283](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63283-resolving-gift-registry-email-and-order-placement-issues-in-adobe-commerce.md).
 
 El parche ACSD-56280 corrige el problema en el que las compras del registro de regalos no se completan. Esta revisión está disponible cuando está instalado [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.44. El ID del parche es ACSD-56280. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.7.
 
