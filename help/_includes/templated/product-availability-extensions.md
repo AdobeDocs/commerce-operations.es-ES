@@ -1,7 +1,7 @@
 ---
-source-git-commit: 7f7d8ca9ade089b305f0259d1caee8e20a1265a2
+source-git-commit: 1d192966d457d7f1b95254a3b9c59054e8b03629
 workflow-type: tm+mt
-source-wordcount: '104'
+source-wordcount: '124'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
   </thead>
   <tbody>
       <tr>
-          <td>Eventos de Adobe I/O para Adobe Commerce</td>
+          <td>Adobe I/O Events para Adobe Commerce</td>
           <td>1.5+</td>
           <td>1.5+</td>
           <td>1.5+</td>
@@ -32,7 +32,7 @@ ht-degree: 0%
           </td>
       </tr>
       <tr>
-          <td>Adobe Commerce Admin UI SDK</td>
+          <td>IU de administración de Adobe Commerce SDK</td>
           <td>1.3+</td>
           <td>1.3+</td>
           <td>1.3+</td>
@@ -51,6 +51,17 @@ ht-degree: 0%
           <td>
               <a href="https://developer.adobe.com/commerce/extensibility/webhooks/installation/">Compositor</a><br/>
               <a href="https://developer.adobe.com/commerce/extensibility/webhooks/release-notes/">Notas de la versión</a><br/>
+          </td>
+      </tr>
+      <tr>
+          <td>Integración de Adobe Experience Manager Assets para Commerce</td>
+          <td>1.0.20+</td>
+          <td>1.0.20+</td>
+          <td>1.0.20+</td>
+          <td>1.0.20+</td>
+          <td>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/aem-asset-management/getting-started/aem-assets-configure-commerce">Compositor</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/aem-asset-management/aem-assets-release-notes">Notas de la versión</a><br/>
           </td>
       </tr>
       <tr>
