@@ -2,9 +2,9 @@
 title: Requisitos del sistema
 description: Utilice esta referencia para identificar las dependencias de software necesarias que se han probado con las versiones de Adobe Commerce.
 exl-id: 008c9edc-7d72-403c-847f-0e3b77bbb197
-source-git-commit: 0d8dcfd7064488787ddd0ff54c82c77f3e4d1cfb
+source-git-commit: ca0c47cf9882bccbc55aca786f3e6615503662f3
 workflow-type: tm+mt
-source-wordcount: '760'
+source-wordcount: '759'
 ht-degree: 0%
 
 ---
@@ -64,7 +64,7 @@ Para obtener instrucciones de configuración de Cloud, consulte [Configuración 
 
 Se recomienda verificar que [PHP OPcache](https://www.php.net/manual/en/intro.opcache.php) está habilitado por motivos de rendimiento. OPcache está habilitado en muchas distribuciones PHP. La extensión `opcache` está instalada de manera predeterminada en Commerce en la infraestructura de la nube.
 
-Para obtener información local, compruebe si está instalada la caché de PHP OPcache, consulte [Configuración de PHP](prerequisites/php-settings.md). O para obtener instrucciones específicas sobre la configuración de rendimiento, consulte las recomendaciones de software para [configuración de PHP](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/software.html#php-settings) en la guía de _Prácticas recomendadas de rendimiento_.
+Para obtener información local, compruebe que PHP OPcache está instalado. Consulte [Configuración de PHP](prerequisites/php-settings.md). O para obtener instrucciones específicas sobre la configuración de rendimiento, consulte las recomendaciones de software para [configuración de PHP](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/software.html#php-settings) en la guía de _Prácticas recomendadas de rendimiento_.
 
 Si debe instalar OPcache por separado, consulte la [documentación de OPcache de PHP](https://www.php.net/manual/en/opcache.setup.php).
 
@@ -129,7 +129,9 @@ La actualización de las aplicaciones y extensiones que obtiene de Commerce Mark
 
 ### Sistemas operativos (Linux x86-64)
 
-Distribuciones de Linux, como RedHat Enterprise Linux (RHEL), CentOS, Ubuntu, Debian y similares. Microsoft Windows y macOS no son compatibles.
+Distribuciones de Linux, como RedHat Enterprise Linux (RHEL), CentOS, Ubuntu, Debian y similares.
+
+Microsoft Windows y macOS **no son compatibles**.
 
 Adobe Commerce requiere las siguientes herramientas del sistema para algunas operaciones:
 
