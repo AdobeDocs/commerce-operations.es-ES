@@ -2,9 +2,9 @@
 user-guide-title: Herramientas
 user-guide-description: Obtenga información sobre las distintas herramientas que puede utilizar con Adobe Commerce, sus usos, el proceso de instalación y cómo obtener acceso.
 feature: Configuration
-source-git-commit: a45b8e687d186f7a5ae540037dd3645a510f626a
+source-git-commit: 4860a9f950849eb2735e02f6b51d1fce61cc3d1b
 workflow-type: tm+mt
-source-wordcount: '7217'
+source-wordcount: '7223'
 ht-degree: 0%
 
 ---
@@ -748,6 +748,7 @@ ht-degree: 0%
          - [ACSD-63325: &quot;Error de sintaxis: &lt; EOF > inesperado&quot; al enviar la solicitud  [!DNL GraphQL] vacía](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63325-syntax-error-when-submitting-graphql-request.md)
          - [ACSD-63578: al hacer clic en el icono [!UICONTROL Delete] en [!UICONTROL Add to Order by SKU], no se elimina la SKU](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63578-clicking-delete-in-add-to-order-by-sku-doesnot-remove-sku.md)
          - [ACSD-63329: los valores predeterminados de los campos de fecha y hora no se establecen al crear productos con la API de REST](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63329-date-and-time-attributes-arent-set-when-creating-products-with-the-rest-api.md)
+         - [MDVA-39305-V3: problema de inicio de sesión con habilitado [!DNL Google reCAPTCHA]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/mdva-39305-v3-login-issue-with-enabled-google-recaptcha.md)
          - [ACSD-63572: las tablas temporales del indexador de catálogos no se limpian si el proceso del indexador termina](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63572-catalogrule-indexer-temporary-tables-arent-cleaned-if-the-indexer-process-is-terminated.md)
       - v1.1.59 {#v1-1-59}
          - [Información general:  [!DNL Quality Patches Tool] (QPT) v1.1.59](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/overview.md)
