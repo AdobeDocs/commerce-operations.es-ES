@@ -2,9 +2,9 @@
 title: Completar requisitos previos
 description: Prepare su proyecto de Adobe Commerce para una actualización completando estos pasos previos.
 exl-id: f7775900-1d10-4547-8af0-3d1283d9b89e
-source-git-commit: 4c84710da62fbb31214a0de2adc8adbd68880a76
+source-git-commit: d19051467efe7dcf7aedfa7a29460c72d896f5d4
 workflow-type: tm+mt
-source-wordcount: '1612'
+source-wordcount: '1717'
 ht-degree: 0%
 
 ---
@@ -41,11 +41,11 @@ Adobe Commerce requiere que Elasticsearch u OpenSearch estén instalados para ut
 
 **Si está actualizando de 2.3.x a 2.4**, debe comprobar si está utilizando MySQL, Elasticsearch o una extensión de terceros como motor de búsqueda del catálogo en su instancia de 2.3.x. El resultado determina lo que debe hacer _antes de_ actualizar a 2.4.
 
-**Si está actualizando revisiones en las líneas de versión 2.3.x o 2.4.x**, si el Elasticsearch 7.x ya está instalado, puede [migrar de forma opcional a OpenSearch](opensearch-migration.md).
+**Si está actualizando revisiones en las líneas de versión 2.3.x o 2.4.x**, si Elasticsearch 7.x ya está instalado, puede [migrar de forma opcional a OpenSearch](opensearch-migration.md).
 
 Puede utilizar la línea de comandos o el administrador para determinar el motor de búsqueda del catálogo:
 
-* Escriba el comando `bin/magento config:show catalog/search/engine`. El comando devuelve un valor de `mysql`, `elasticsearch` (que indica que el Elasticsearch 2 está configurado), `elasticsearch5`, `elasticsearch6`, `elasticsearch7` o un valor personalizado, lo que indica que ha instalado un motor de búsqueda de terceros. Para las versiones anteriores a 2.4.6, utilice el valor `elasticsearch7` para el Elasticsearch 7 o el motor OpenSearch. Para la versión 2.4.6 y posterior, utilice el valor `opensearch` para el motor OpenSearch.
+* Escriba el comando `bin/magento config:show catalog/search/engine`. El comando devuelve un valor de `mysql`, `elasticsearch` (que indica que Elasticsearch 2 está configurado), `elasticsearch5`, `elasticsearch6`, `elasticsearch7` o un valor personalizado, lo que indica que ha instalado un motor de búsqueda de terceros. Para las versiones anteriores a 2.4.6, utilice el valor `elasticsearch7` para el motor Elasticsearch 7 u OpenSearch. Para la versión 2.4.6 y posterior, utilice el valor `opensearch` para el motor OpenSearch.
 
 * En Admin, compruebe el valor del campo **[!UICONTROL Stores]** > [!UICONTROL Settings] > **[!UICONTROL Configuration]** > **[!UICONTROL Catalog]** > **[!UICONTROL Catalog]** > **[!UICONTROL Catalog Search]** > **[!UICONTROL Search Engine]**.
 
@@ -53,12 +53,12 @@ Las secciones siguientes describen qué acciones debe realizar antes de actualiz
 
 ### MySQL
 
-A partir de la versión 2.4, MySQL ya no es un motor de búsqueda de catálogo compatible. Debe instalar y configurar Elasticsearch u OpenSearch antes de actualizar. Utilice los siguientes recursos para guiarle a través de este proceso:
+A partir de la versión 2.4, MySQL ya no es un motor de búsqueda de catálogo compatible. Debe instalar y configurar Elasticsearch o OpenSearch antes de actualizar. Utilice los siguientes recursos para guiarle a través de este proceso:
 
-* [Elasticsearch de instalación y configuración](../../configuration/search/overview-search.md)
-* [Elasticsearch de instalación](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html)
+* [Instalación y configuración de Elasticsearch](../../configuration/search/overview-search.md)
+* [Instalando Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html)
 * Configure [nginx](../../installation/prerequisites/search-engine/configure-nginx.md) o [Apache](../../installation/prerequisites/search-engine/configure-apache.md) para que funcionen con el motor de búsqueda
-* [Configurar Commerce para que use el Elasticsearch](../../configuration/search/configure-search-engine.md) y reindexe
+* [Configurar Commerce para usar Elasticsearch](../../configuration/search/configure-search-engine.md) y reindexar
 
 Algunos motores de búsqueda de catálogos de terceros se ejecutan sobre el motor de búsqueda de Adobe Commerce. Póngase en contacto con el proveedor para determinar si debe actualizar la extensión.
 
@@ -68,9 +68,9 @@ Algunos motores de búsqueda de catálogos de terceros se ejecutan sobre el moto
 
 ### Motor de búsqueda
 
-Debe instalar y configurar Elasticsearch 7.6 o superior o OpenSearch 1.2 antes de actualizar a 2.4.0. Adobe ya no es compatible con Elasticsearch 2.x, 5.x y 6.x. [Configuración del motor de búsqueda](../../configuration/search/configure-search-engine.md) en la _Guía de configuración_ describe las tareas que debe realizar después de actualizar el Elasticsearch a una versión compatible.
+Debe instalar y configurar Elasticsearch 7.6 o superior o OpenSearch 1.2 antes de actualizar a 2.4.0. Adobe ya no es compatible con Elasticsearch 2.x, 5.x y 6.x. [Configuración del motor de búsqueda](../../configuration/search/configure-search-engine.md) en la _Guía de configuración_ describe las tareas que debe realizar después de actualizar Elasticsearch a una versión compatible.
 
-Consulte [Actualización del Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) para obtener instrucciones completas sobre cómo realizar copias de seguridad de los datos, detectar posibles problemas de migración y probar las actualizaciones antes de implementarlas en producción. Según la versión actual del Elasticsearch, puede que sea necesario o no reiniciar el clúster por completo.
+Consulte [Actualización de Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) para obtener instrucciones completas sobre cómo realizar copias de seguridad de los datos, detectar posibles problemas de migración y probar actualizaciones antes de implementarlas en producción. Según la versión actual de Elasticsearch, puede que sea necesario o no reiniciar el clúster por completo.
 
 Elasticsearch requiere Java Development Kit (JDK) 1.8 o superior. Consulte [Instalar el Kit de desarrollo de software de Java (JDK)](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk) para comprobar qué versión de JDK está instalada.
 
@@ -90,13 +90,17 @@ OpenSearch requiere JDK 1.8 o superior. Consulte [Instalar el Kit de desarrollo 
 
 [Configuración del motor de búsqueda](../../configuration/search/configure-search-engine.md) describe las tareas que debe realizar después de cambiar los motores de búsqueda.
 
-#### Elasticsearch de actualización
+#### Actualizar Elasticsearch
 
 La compatibilidad con Elasticsearch 8.x se introdujo en Adobe Commerce 2.4.6. Las siguientes instrucciones muestran un ejemplo de actualización de Elasticsearch de 7.x a 8.x:
 
-1. Actualice el servidor de Elasticsearch 7.x a 8.x y asegúrese de que está en funcionamiento. Consulte la [documentación del Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html).
+>[!NOTE]
+>
+>En la próxima versión de 2.4.8, estos pasos no serán necesarios porque el módulo de Elasticsearch 8 está incluido de forma predeterminada y no es necesario instalarlo por separado.
 
-1. Habilite el campo `id_field_data` agregando la siguiente configuración al archivo `elasticsearch.yml` y reiniciando el servicio de Elasticsearch 8.x.
+1. Actualice el servidor de Elasticsearch 7.x a 8.x y asegúrese de que está en funcionamiento. Consulte la [documentación de Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html).
+
+1. Habilite el campo `id_field_data` agregando la siguiente configuración al archivo `elasticsearch.yml` y reiniciando el servicio Elasticsearch 8.x.
 
    ```yaml
    indices:
@@ -106,13 +110,35 @@ La compatibilidad con Elasticsearch 8.x se introdujo en Adobe Commerce 2.4.6. La
 
    >[!INFO]
    >
-   >Para admitir el Elasticsearch 8.x, Adobe Commerce 2.4.6 deshabilita la propiedad `indices.id_field_data` de forma predeterminada y utiliza el campo `_id` en la propiedad `docvalue_fields`.
+   >Para admitir Elasticsearch 8.x, Adobe Commerce 2.4.6 deshabilita la propiedad `indices.id_field_data` de forma predeterminada y utiliza el campo `_id` en la propiedad `docvalue_fields`.
 
 1. En el directorio raíz del proyecto de Adobe Commerce, actualice las dependencias del Compositor para quitar el módulo `Magento_Elasticsearch7` e instalar el módulo `Magento_Elasticsearch8`.
 
    ```bash
    composer require magento/module-elasticsearch-8 --update-with-all-dependencies
    ```
+
+   Si encuentra un error de dependencia para `psr/http-message`, haga clic para expandir la siguiente sección de solución de problemas:
+
+   +++Solución de problemas
+
+   Si encuentra conflictos de dependencia al instalar Elasticsearch 8, especialmente con `psr/http-message`, puede resolverlos siguiendo estos pasos:
+
+   1. En primer lugar, requiera el módulo de Elasticsearch 8 sin actualizar otras dependencias:
+
+      ```bash
+      composer require magento/module-elasticsearch-8 --no-update
+      ```
+
+   1. A continuación, actualice el módulo Elasticsearch 8 y los paquetes `aws/aws-sdk-php`:
+
+      ```bash
+      composer update magento/module-elasticsearch-8 aws/aws-sdk-php -W
+      ```
+
+   Este enfoque funciona para 2.4.7-p4 con PHP 8.3. El problema se debe a que `aws/aws-sdk-php` requiere `psr/http-message >= 2.0`, lo que puede causar conflictos. Los pasos anteriores ayudan a resolver estos problemas de dependencia.
+
++++
 
 1. Actualice los componentes del proyecto.
 
@@ -134,11 +160,11 @@ La compatibilidad con Elasticsearch 8.x se introdujo en Adobe Commerce 2.4.6. La
    bin/magento cache:clean
    ```
 
-#### Elasticsearch de downgrade
+#### Degradar Elasticsearch
 
 Si actualiza de forma involuntaria la versión de Elasticsearch en el servidor o determina que necesita degradarla por cualquier otro motivo, también debe actualizar las dependencias del proyecto de Adobe Commerce. Por ejemplo, para reducir de Elasticsearch 8.x a 7.x
 
-1. Reduzca el servidor de Elasticsearch 8.x a 7.x y asegúrese de que está en funcionamiento. Consulte la [documentación del Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html).
+1. Actualice el servidor de Elasticsearch 8.x a 7.x y asegúrese de que está en funcionamiento. Consulte la [documentación de Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html).
 
 1. En el directorio raíz del proyecto de Adobe Commerce, actualice las dependencias de Composer para quitar el módulo `Magento_Elasticsearch8` y sus dependencias de Composer e instale el módulo `Magento_Elasticsearch7`.
 
@@ -178,7 +204,7 @@ Debe convertir el formato de todas las tablas de base de datos de `COMPACT` a `D
 
 Establecer el límite (ulimit) de archivos abiertos puede ayudar a evitar errores en varias llamadas recursivas de cadenas de consulta largas o problemas con el uso del comando `bin/magento setup:rollback`. Este comando es diferente para diferentes shells de UNIX. Consulte su sabor individual para obtener detalles específicos sobre el comando `ulimit`.
 
-El Adobe recomienda establecer los archivos abiertos [ulimit](https://ss64.com/bash/ulimit.html) a un valor de `65536` o más, pero puede usar un valor mayor si es necesario. Puede establecer el ulimit en la línea de comandos o convertirlo en un ajuste permanente para el shell del usuario.
+Adobe recomienda establecer los archivos abiertos [ulimit](https://ss64.com/bash/ulimit.html) en un valor de `65536` o más, pero puede usar un valor mayor si es necesario. Puede establecer el ulimit en la línea de comandos o convertirlo en un ajuste permanente para el shell del usuario.
 
 Para establecer el ulimit desde la línea de comandos:
 
