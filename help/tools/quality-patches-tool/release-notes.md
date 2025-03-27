@@ -2,9 +2,9 @@
 title: Notas de la versión
 description: Obtenga información acerca de los parches disponibles para Adobe Commerce y los problemas que resuelven.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 0073f5e1b6de110ff640748457b7c644d71fcbe8
+source-git-commit: 93c9eb8865aa53ec784d47fd66ca97d1941b4604
 workflow-type: tm+mt
-source-wordcount: '25431'
+source-wordcount: '25682'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,16 @@ ht-degree: 0%
 >[!INFO]
 >
 >Para obtener información acerca de [!DNL quality patches] creado por la comunidad para Magento Open Source, consulte las [notas de la versión](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## Versión 1.1.62 {#v1-1-62}
+
+* **ACSD-63406** (para Adobe Commerce y Magento Open Source >=2.4.4-p9 &lt;2.4.5 || >=2.4.5-p8 &lt;2.4.6 || >=2.4.6-p6 &lt;2.4.8): corrige el problema en el que ningún trabajo cron borra las comillas persistentes caducadas cuando se ejecuta el trabajo cron `persistent_clear_expired`.
+* **ACSD-63520** (para Adobe Commerce y Magento Open Source >=2.4.7 &lt;2.4.8): corrige el problema en el cual las imágenes agregadas a través de **[!UICONTROL Configurations]** en el panel de administración no respetan el límite máximo de tamaño de carga.
+* **ACSD-64523** (para Adobe Commerce y Magento Open Source >=2.4.7 &lt;2.4.8): corrige el problema en el que era posible crear nuevos productos sin un nombre a través del proceso de importación (administrador o API), lo que rompería la interfaz de administración y produciría productos no válidos.
+* **ACSD-64532** (para Adobe Commerce y Magento Open Source >=2.4.6-p2 &lt;2.4.8): corrige el problema en el que una variable ENV configurada como &quot;false&quot; se trata como una cadena &quot;false&quot; en lugar de como un valor booleano false.
+* **ACSD-64592** (para Adobe Commerce >=2.4.4 &lt;2.4.8): corrige el problema en el cual el vínculo de notificación del correo electrónico para una tarjeta regalo en tiendas no predeterminadas siempre redireccionaba la notificación de tarjeta regalo al sitio web predeterminado.
+* **ACSD-65164** (para Adobe Commerce y Magento Open Source >=2.4.6 &lt;2.4.8): corrige el problema en el que el mensaje de error *Algunas de las opciones del elemento seleccionado no están disponibles actualmente* se produce al reordenar un producto configurable con una sola opción personalizada de casilla de verificación seleccionada.
+* **ACSD-64732** (para Adobe Commerce >=2.4.4 &lt;2.4.8): corrige el problema en el cual los controladores de terceros no se almacenaban correctamente en la caché con segmentos de clientes.
 
 ## v1.1.61 {#v1-1-61}
 
