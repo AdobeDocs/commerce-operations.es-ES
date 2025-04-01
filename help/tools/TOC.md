@@ -2,9 +2,9 @@
 user-guide-title: Herramientas
 user-guide-description: Obtenga información sobre las distintas herramientas que puede utilizar con Adobe Commerce, sus usos, el proceso de instalación y cómo obtener acceso.
 feature: Configuration
-source-git-commit: 3155d85215dc9d63e855470d384bf216949a951b
+source-git-commit: 0800285df83eb3e3ffcfb003bf984248b750db32
 workflow-type: tm+mt
-source-wordcount: '7238'
+source-wordcount: '7242'
 ht-degree: 0%
 
 ---
@@ -764,6 +764,8 @@ ht-degree: 0%
          - [Información general: [!DNL Quality Patches Tool] (QPT) v1.1.60](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/overview.md)
          - [ACSD-63323: resuelve la funcionalidad [!UICONTROL Select All] y mejora la paginación y el recuento de registros en la ventana emergente de categoría de producto](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-63323-resolves-select-all-functionality-and-enhances-pagination-and-record-count-in-product-category-popup.md)
          - [ACSD-63992: [!UICONTROL Cart Price Rule] con error de condición de método de envío y cupón en la IU de administración](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-63992-admin-ui-cart-rule-shipping-method.md)
+      - v1.1.61 {#v1-1-61}
+         - [Información general: [!DNL Quality Patches Tool] (QPT) v1.1.61](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/overview.md)
    - [Comprobar parche para el problema de Adobe Commerce con la herramienta Parches de calidad](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Referencia de herramientas de la línea de comandos {#cli-reference}
    - [Adobe Commerce (local)](reference/commerce-on-premises.md)
