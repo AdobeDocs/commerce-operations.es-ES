@@ -4,14 +4,18 @@ description: Aplique el parche ACSD-62689 para corregir el problema de Adobe Com
 feature: Categories
 role: Admin, Developer
 exl-id: 2506744a-01c8-462b-9a27-cd0bdb5664f9
-source-git-commit: e18a41c5abb1cc8b407ff6c188acdeed0e8a7659
+source-git-commit: 7aefd4f20580529a9da14776368bf2c3bbb3ff3c
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '380'
 ht-degree: 0%
 
 ---
 
 # ACSD-62689: no se pueden agregar categorías en *[!UICONTROL Related Product Rules]* y widgets después de la profundidad 4
+
+>[!NOTE]
+>
+>Este parche se ha reemplazado por [ACP2E-3689](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acp2e-3689-issues-with-category-tree-display-reflect-anchor-non-anchor-relationships.md).
 
 La revisión ACSD-62689 corrige el problema en el cual un cliente no puede agregar categorías en *[!UICONTROL Related Product Rules]* y widgets después del anidamiento de profundidad cuatro. Esta revisión está disponible cuando está instalado [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.57. El ID del parche es ACSD-62689. Este problema está programado para solucionarse en Adobe Commerce 2.4.8.
 
