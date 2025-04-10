@@ -4,14 +4,18 @@ description: El parche ACSD-46192 corrige el problema con el punto de conexión 
 feature: Configuration, Products
 role: Admin
 exl-id: 5a54f4b5-8467-40de-9d8f-ba46880ed5ad
-source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
+source-git-commit: 2cd5a55d95fad071fe872fa466aaeb56c439dad1
 workflow-type: tm+mt
-source-wordcount: '348'
+source-wordcount: '366'
 ht-degree: 0%
 
 ---
 
 # ACSD-46192: problema con el extremo async/bulk/V1/configurable-products/bySku/options
+
+>[!NOTE]
+>
+>El parche ACSD-46192 está parcialmente obsoleto, ya que este problema se soluciona con el parche de seguridad obligatorio [APSB25-08](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-08).
 
 La revisión ACSD-46192 corrige el problema con el extremo `async/bulk/V1/configurable-products/bySku/options`. Este parche está disponible cuando está instalada la [Herramienta Parches de calidad (QPT)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.19. El ID del parche es ACSD-46192. Tenga en cuenta que el problema se solucionó en Adobe Commerce 2.4.5.
 
@@ -23,7 +27,7 @@ La revisión ACSD-46192 corrige el problema con el extremo `async/bulk/V1/config
 
 **Compatible con versiones de Adobe Commerce:**
 
-* Adobe Commerce (todos los métodos de implementación) 2.4.3 y 2.4.4
+* Adobe Commerce (todos los métodos de implementación) 2.3.6 - 2.4.3-p3
 
 >[!NOTE]
 >
@@ -31,11 +35,11 @@ La revisión ACSD-46192 corrige el problema con el extremo `async/bulk/V1/config
 
 ## Problema
 
-Se produce un error cuando se envía una solicitud de POST a `async/bulk/V1/configurable-products/bySku/`.
+Se produce un error cuando se envía una petición POST a `async/bulk/V1/configurable-products/bySku/`.
 
 <u>Pasos a seguir</u>:
 
-1. Envíe una solicitud de POST a `async/bulk/V1/configurable-products/bySku/`.
+1. Enviar una solicitud POST a `async/bulk/V1/configurable-products/bySku/`.
 
 ```JSON
 [{
