@@ -4,14 +4,18 @@ description: Aplique el parche ACSD-49392 para solucionar el problema de Adobe C
 feature: Orders
 role: Admin
 exl-id: e12cbf2d-219e-4cb5-a226-6c7ae4929549
-source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
+source-git-commit: 67e050b4ceccc3f30bf8cd49125525b2e8d8b0dd
 workflow-type: tm+mt
-source-wordcount: '410'
+source-wordcount: '425'
 ht-degree: 0%
 
 ---
 
 # ACSD-49392: El estado del pedido cambia a cerrado después del reembolso parcial
+
+>[!NOTE]
+>
+>El parche ACSD-49392 se reemplazó con el parche [ACSD-57003](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-46/acsd-57003-order-status-changed-to-complete-instead-of-processing) para las versiones 2.4.6-p7 a 2.4.6-p10.
 
 El parche ACSD-49392 corrige el problema en el que el estado del pedido cambia a cerrado después de un reembolso parcial de un producto agrupado. Esta revisión está disponible cuando está instalado [!DNL Quality Patches Tool (QPT)] 1.1.31. El ID del parche es ACSD-49392. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.7.
 
@@ -23,7 +27,7 @@ El parche ACSD-49392 corrige el problema en el que el estado del pedido cambia a
 
 **Compatible con versiones de Adobe Commerce:**
 
-* Adobe Commerce (todos los métodos de implementación) 2.3.7 - 2.3.7-p4 y 2.4.1 - 2.4.6
+* Adobe Commerce (todos los métodos de implementación) 2.3.7 - 2.3.7-p4 y 2.4.1 - 2.4.6-p6
 
 >[!NOTE]
 >
