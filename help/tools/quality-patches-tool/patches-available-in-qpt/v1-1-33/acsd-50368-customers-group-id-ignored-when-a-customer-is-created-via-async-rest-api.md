@@ -4,14 +4,18 @@ description: Aplique el parche ACSD-50368 para corregir el problema de Adobe Com
 feature: REST
 role: Admin
 exl-id: 1ca78717-2144-4410-a398-764864ee182f
-source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
+source-git-commit: 9039635038bee9083fa3ed009e79c76e3655b357
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '413'
 ht-degree: 0%
 
 ---
 
 # ACSD-50368: se ignora el group_id de los clientes cuando se crea un cliente mediante la API de REST asincrónica o la API de REST asincrónica masiva
+
+>[!NOTE]
+>
+>El parche ACSD-50368 está parcialmente obsoleto, ya que este problema se soluciona con el parche de seguridad obligatorio [APSB25-08](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-08) para las versiones superiores a 2.4.4.
 
 El parche ACSD-50368 corrige el problema en el que los clientes de group_id se ignoran cuando se crea un cliente mediante la API de REST asíncrona o la API de REST asíncrona masiva. Esta revisión está disponible cuando está instalado [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.33. El ID del parche es ACSD-50368. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.7.
 
@@ -23,7 +27,7 @@ El parche ACSD-50368 corrige el problema en el que los clientes de group_id se i
 
 **Compatible con versiones de Adobe Commerce:**
 
-* Adobe Commerce (todos los métodos de implementación) 2.4.3 - 2.4.4-p4
+* Adobe Commerce (todos los métodos de implementación) 2.4.3 - 2.4.3-p3
 
 >[!NOTE]
 >
