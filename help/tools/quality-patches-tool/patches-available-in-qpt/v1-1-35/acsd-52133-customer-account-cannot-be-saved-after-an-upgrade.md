@@ -4,14 +4,18 @@ description: Aplique el parche ACSD-52133 para corregir el problema de Adobe Com
 feature: Customers, Upgrade
 role: Admin
 exl-id: 4a0e6ed8-3e35-40ce-bb49-8ccfcde437a0
-source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
+source-git-commit: 82667023bbaa9d725eb52dacb8bd47042bdfe028
 workflow-type: tm+mt
-source-wordcount: '383'
+source-wordcount: '399'
 ht-degree: 0%
 
 ---
 
 # ACSD-52133: la cuenta de cliente no se puede guardar después de una actualización
+
+>[!NOTE]
+>
+>Este parche ha quedado obsoleto debido a un conflicto con el parche de seguridad [APSB25-08](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-08).
 
 El parche ACSD-52133 corrige el problema en el que una cuenta de cliente no se puede guardar después de una actualización. Esta revisión está disponible cuando está instalado [!DNL Quality Patches Tool (QPT)] 1.1.35. El ID del parche es ACSD-52133. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.7.
 
