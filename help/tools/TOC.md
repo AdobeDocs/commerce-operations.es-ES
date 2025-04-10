@@ -2,9 +2,9 @@
 user-guide-title: Herramientas
 user-guide-description: Obtenga información sobre las distintas herramientas que puede utilizar con Adobe Commerce, sus usos, el proceso de instalación y cómo obtener acceso.
 feature: Configuration
-source-git-commit: fd76886406710d98dafa22953950424d2037477a
+source-git-commit: 7358d2aca927c94505e7a99b5ee390aa6a7f5fc9
 workflow-type: tm+mt
-source-wordcount: '7312'
+source-wordcount: '7359'
 ht-degree: 0%
 
 ---
@@ -47,18 +47,18 @@ ht-degree: 0%
    - [Notas de la versión](quality-patches-tool/release-notes.md)
    - Parches disponibles en la herramienta Parches de calidad {#patches-available-in-qpt}
       - [Información general](quality-patches-tool/patches-available-in-qpt/patches-available-in-qpt-tool-overview.md)
-      - Versión 1.1.0 {#v1-1-0}
+      - v1.1.0 {#v1-1-0}
          - [Información general: Herramienta Parches de calidad (QPT) v1.1.0](quality-patches-tool/patches-available-in-qpt/v1-1-0/overview.md)
          - [MDVA-37592: Ordenar por precio no funciona para productos con precio cero](quality-patches-tool/patches-available-in-qpt/v1-1-0/mdva-37592-sorting-by-price-does-not-work-correctly.md)
          - [MDVA-38799: Los productos descargables no se guardan después de crear una actualización de ensayo](quality-patches-tool/patches-available-in-qpt/v1-1-0/mdva-38799-downloadable-products-were-not-saved-after-creating-a-staging-update.md)
          - [MDVA-38827: Los clientes reciben un error de envío de pedidos por correo electrónico](quality-patches-tool/patches-available-in-qpt/v1-1-0/mdva-38827-customers-receive-an-order-shipment-email-containing-an-error-message.md)
-      - Versión 1.1.1 {#v1-1-1}
+      - v1.1.1 {#v1-1-1}
          - [Información general: Herramienta Parches de calidad (QPT) v1.1.1](quality-patches-tool/patches-available-in-qpt/v1-1-1/overview.md)
          - [MDVA-34948: Ralentización del sitio web](quality-patches-tool/patches-available-in-qpt/v1-1-1/mdva-34948-slow-site-and-operations.md)
          - [MDVA-36021: Los usuarios reciben un mensaje de error al abrir los detalles del pedido](quality-patches-tool/patches-available-in-qpt/v1-1-1/mdva-36021-call-to-a-member-function-getid-error-on-the-order-details-page.md)
          - [MDVA-37897: redirección incorrecta al añadir productos de productos vistos recientemente](quality-patches-tool/patches-available-in-qpt/v1-1-1/mdva-37897-incorrect-redirect-when-customers-try-to-add-products.md)
          - [MDVA-39305: Problema de inicio de sesión con Google reCAPTCHA habilitado](quality-patches-tool/patches-available-in-qpt/v1-1-1/mdva-39305-login-issues-with-enabled-google-recaptcha.md)
-      - Versión 1.1.2 {#v1-1-2}
+      - v1.1.2 {#v1-1-2}
          - [Información general: Herramienta Parches de calidad (QPT) v1.1.2](quality-patches-tool/patches-available-in-qpt/v1-1-2/overview.md)
          - [MDVA-37115: El aviso &quot;Solo quedan 0&quot; aparece en la página del producto](quality-patches-tool/patches-available-in-qpt/v1-1-2/mdva-37115-unnecessary-only-0-left-notice-is-shown-on-the-configurable-product-page.md)
          - [MDVA-37364: atributo de cliente personalizado de tipo de fecha rompe la IU de la cuadrícula](quality-patches-tool/patches-available-in-qpt/v1-1-2/mdva-37364-custom-customer-attribute-of-date-type-breaks-the-customer-grid-ui.md)
@@ -74,7 +74,7 @@ ht-degree: 0%
          - [MDVA-39966: No se pueden implementar configuraciones regionales que no sean en_US](quality-patches-tool/patches-available-in-qpt/v1-1-2/mdva-39966-unable-to-deploy-locales-other-than-en-us.md)
          - [MDVA-39986: No se pueden realizar pedidos en el administrador en el explorador Safari en macOS](quality-patches-tool/patches-available-in-qpt/v1-1-2/mdva-39986-unable-to-place-order-in-admin-using-safari-browser-in-macos.md)
          - [MDVA-40134: GraphQL no devuelve productos relacionados cuando el catálogo compartido está habilitado](quality-patches-tool/patches-available-in-qpt/v1-1-2/mdva-40134-graphql-does-not-return-related-products-when-shared-catalog-is-enabled.md)
-      - Versión 1.1.3 {#v1-1-3}
+      - v1.1.3 {#v1-1-3}
          - [Información general: Herramienta Parches de calidad (QPT) v1.1.3](quality-patches-tool/patches-available-in-qpt/v1-1-3/overview.md)
          - [MDVA-31590: No se pueden actualizar atributos por lotes mediante colas asíncronas de MySQL](quality-patches-tool/patches-available-in-qpt/v1-1-3/mdva-31590-unable-to-update-attributes-in-bulk-using-mysql-async-queues.md)
          - [MDVA-33606: Los usuarios reciben un error al guardar la página de CMS asignada a una jerarquía](quality-patches-tool/patches-available-in-qpt/v1-1-3/mdva-33606-users-get-error-when-saving-cms-page-assigned-to-hierarchy.md)
@@ -82,23 +82,23 @@ ht-degree: 0%
          - [MDVA-37234: al agregar un elemento al carro de compras varias veces, se crea un elemento de línea duplicado](quality-patches-tool/patches-available-in-qpt/v1-1-3/mdva-37234-adding-item-to-cart-multiple-times-creates-duplicate-item.md)
          - [MDVA-40262: Las consultas de GraphQL no se muestran en términos de búsqueda populares en administración](quality-patches-tool/patches-available-in-qpt/v1-1-3/mdva-40262-graphql-queries-dont-show-in-popular-search-terms-in-admin.md)
          - [MDVA-40601: no se pueden recuperar datos sobre la categoría modificada por la actualización programada a través de GraphQL](quality-patches-tool/patches-available-in-qpt/v1-1-3/mdva-40601-users-get-error-retrieving-info-about-category.md)
-      - Versión 1.1.4 {#v1-1-4}
+      - v1.1.4 {#v1-1-4}
          - [Información general: Herramienta Parches de calidad (QPT) v1.1.4](quality-patches-tool/patches-available-in-qpt/v1-1-4/overview.md)
          - [MC-42528: la consulta GraphQL de categoryList muestra todas las categorías](quality-patches-tool/patches-available-in-qpt/v1-1-4/mc-42528-graphql-query-of-categorylist-shows-all-categories.md)
          - [MDVA-25631: No se pueden guardar y actualizar los segmentos del cliente](quality-patches-tool/patches-available-in-qpt/v1-1-4/mdva-25631-unable-to-save-and-refresh-customer-segments.md)
          - [MDVA-26005: No se puede seleccionar la categoría en el árbol para las condiciones de regla de precio del carro de compras](quality-patches-tool/patches-available-in-qpt/v1-1-4/mdva-26005-unable-to-select-category-in-tree-for-cart-price-rule-conditions.md)
          - [MDVA-29400: pedidos duplicados realizados con el pago y envío de PayPal Express](quality-patches-tool/patches-available-in-qpt/v1-1-4/mdva-29400-duplicated-orders-placed-with-paypal-express-checkout.md)
-         - [MDVA-37725: Los correos electrónicos enviados a través de sitios no predeterminados contienen las URL del logotipo del sitio predeterminado](quality-patches-tool/patches-available-in-qpt/v1-1-4/mdva-37725-asynchronous-order-emails-sent-via-non-default-websites.md)
-         - [MDVA-39482: El producto se agota si se importa con el cantidad &quot;0&quot; con los pedidos pendientes habilitados](quality-patches-tool/patches-available-in-qpt/v1-1-4/mdva-39482-product-goes-out-of-stock-when-imported-with-0-quantity.md)
+         - [MDVA-37725: Los correos electrónicos enviados a través de sitios no predeterminados contienen las direcciones URL del logotipo del sitio predeterminado](quality-patches-tool/patches-available-in-qpt/v1-1-4/mdva-37725-asynchronous-order-emails-sent-via-non-default-websites.md)
+         - [MDVA-39482: El producto se queda sin existencias si se importa con una cantidad &quot;0&quot; con los pedidos pendientes habilitados](quality-patches-tool/patches-available-in-qpt/v1-1-4/mdva-39482-product-goes-out-of-stock-when-imported-with-0-quantity.md)
          - [MDVA-40101: Los artículos permanecen en el minicarrito después de la realización del pedido](quality-patches-tool/patches-available-in-qpt/v1-1-4/mdva-40101-items-remain-in-mini-cart-after-order-placement-using-paypal-express-checkout.md)
          - [MDVA-40399: Las facturas parciales para el mismo pedido no se pueden crear simultáneamente mediante API](quality-patches-tool/patches-available-in-qpt/v1-1-4/mdva-40399-partial-invoices-for-same-order-cannot-be-created-simultaneously-via-rest-api.md)
          - [MDVA-40401: El valor de uso del cupón cambia después de un pedido fallido](quality-patches-tool/patches-available-in-qpt/v1-1-4/mdva-40401-coupon-usage-value-changes-even-after-failed-order.md)
-         - [MDVA-40435: El descuento en paquete producto no se aplica correctamente a través de GraphQL](quality-patches-tool/patches-available-in-qpt/v1-1-4/mdva-40435-discount-on-bundle-product-is-not-applied-correctly-via-graphql.md)
-         - [MDVA-40537: La creación de tienda vista da error cuando varias páginas CMS tienen la misma clave de URL.](quality-patches-tool/patches-available-in-qpt/v1-1-4/mdva-40537-creating-store-view-gives-error-when-multiple-cms-pages-with-same-url-keys-exist.md)
-      - Versión 1.1.5 {#v1-1-5}
-         - [Descripción general: Quality Patches Tool (QPT) v1.1.5](quality-patches-tool/patches-available-in-qpt/v1-1-5/overview.md)
-         - [MDVA-31763: Las reglas de precios de catálogo se revierten hasta que se reindexe manualmente](quality-patches-tool/patches-available-in-qpt/v1-1-5/mdva-31763-catalog-price-rules-are-reverted-until-manual-reindex.md)
-         - [MDVA-37748: GraphQL consulta devuelve productos no asignados al catálogo compartido](quality-patches-tool/patches-available-in-qpt/v1-1-5/mdva-37748-graphql-query-returns-products-not-assigned-to-shared-catalog.md)
+         - [MDVA-40435: El descuento en el paquete no se aplica correctamente a través de GraphQL](quality-patches-tool/patches-available-in-qpt/v1-1-4/mdva-40435-discount-on-bundle-product-is-not-applied-correctly-via-graphql.md)
+         - [MDVA-40537: La creación de la vista de tienda da error cuando varias páginas de CMS tienen la misma clave URL.](quality-patches-tool/patches-available-in-qpt/v1-1-4/mdva-40537-creating-store-view-gives-error-when-multiple-cms-pages-with-same-url-keys-exist.md)
+      - v1.1.5 {#v1-1-5}
+         - [Información general: Herramienta Parches de calidad (QPT) v1.1.5](quality-patches-tool/patches-available-in-qpt/v1-1-5/overview.md)
+         - [MDVA-31763: Las reglas de precios de catálogo se revierten hasta la reindexación manual](quality-patches-tool/patches-available-in-qpt/v1-1-5/mdva-31763-catalog-price-rules-are-reverted-until-manual-reindex.md)
+         - [MDVA-37748: La consulta de GraphQL devuelve productos no asignados al catálogo compartido](quality-patches-tool/patches-available-in-qpt/v1-1-5/mdva-37748-graphql-query-returns-products-not-assigned-to-shared-catalog.md)
          - [MDVA-39229: Error tras actualizar la hora de inicio de la actualización de ensayo de la regla de catálogo](quality-patches-tool/patches-available-in-qpt/v1-1-5/mdva-39229-error-updating-catalog-rule-staging-update-start-time.md)
          - [MDVA-40545: Solo se recupera el primer nodo de una página](quality-patches-tool/patches-available-in-qpt/v1-1-5/mdva-40545-only-the-first-node-for-a-page-retrieved.md)
          - [MDVA-40619: Los cambios de jerarquía rompen la edición en línea de la página de CMS y generan un error 500](quality-patches-tool/patches-available-in-qpt/v1-1-5/mdva-40619-hierarchy-changes-break-cms-page-inline-edit-and-throw-500-error.md)
@@ -106,7 +106,7 @@ ht-degree: 0%
          - [MDVA-41061: El estado de las existencias se restablece como vendible cuando el producto se guarda desde el administrador](quality-patches-tool/patches-available-in-qpt/v1-1-5/mdva-41061-stock-status-resets-saleable-when-saved-from-admin.md)
          - [MDVA-41164: No se puede guardar ni editar la compañía con atributos de cliente personalizados](quality-patches-tool/patches-available-in-qpt/v1-1-5/mdva-41164-admin-user-cannot-save-or-edit-company-with-custom-customer-attributes.md)
          - [MDVA-41236: No se pueden crear nuevas actualizaciones programadas o editar las existentes para el producto](quality-patches-tool/patches-available-in-qpt/v1-1-5/mdva-41236-unable-to-create-new-or-edit-existing-scheduled-staging-update.md)
-      - Versión 1.1.6 {#v1-1-6}
+      - v1.1.6 {#v1-1-6}
          - [Información general: Herramienta Parches de calidad (QPT) v1.1.6](quality-patches-tool/patches-available-in-qpt/v1-1-6/overview.md)
          - [MDVA-27456: Los usuarios reciben un error al cargar Swagger](quality-patches-tool/patches-available-in-qpt/v1-1-6/mdva-27456-users-get-error-when-loading-swagger.md)
          - [MDVA-30862: Fecha de pedido incorrecta en la factura impresa de PDF](quality-patches-tool/patches-available-in-qpt/v1-1-6/mdva-30862-incorrect-order-date-on-printed-pdf-invoice.md)
@@ -115,15 +115,15 @@ ht-degree: 0%
          - [MDVA-40120: La ordenación DESC/ASC del producto de GraphQL no funciona](quality-patches-tool/patches-available-in-qpt/v1-1-6/mdva-40120-graphql-product-desc-asc-sort-doesnt-work.md)
          - [MDVA-40550: Productos que faltan en el front-end después de la reindexación](quality-patches-tool/patches-available-in-qpt/v1-1-6/mdva-40550-products-missing-on-the-frontend-after-reindexing.md)
          - [MDVA-40609: datos de productos desactivados ausentes en la tabla cataloginventory_stock_status](quality-patches-tool/patches-available-in-qpt/v1-1-6/mdva-40609-disabled-products-data-absent-in-cataloginventory-stock-status-table.md)
-         - [MDVA-41399: No se puede acceder a Administrar carro de compras si un cliente agrega un producto a la lista de artículos deseados](quality-patches-tool/patches-available-in-qpt/v1-1-6/mdva-41399-unable-to-access-manage-shopping-cart-if-a-customer-adds-product-to-wishlist.md)
-         - [MDVA-41597: Error agregar más de un producto configurable a carro de compras](quality-patches-tool/patches-available-in-qpt/v1-1-6/mdva-41597-error-adding-more-than-one-configurable-product-to-cart.md)
-      - Versión 1.1.7 {#v1-1-7}
-         - [Descripción general: Quality Patches Tool (QPT) v1.1.7](quality-patches-tool/patches-available-in-qpt/v1-1-7/overview.md)
+         - [MDVA-41399: No se puede acceder a Administrar carro de compras si un cliente agrega un producto a la lista de deseos](quality-patches-tool/patches-available-in-qpt/v1-1-6/mdva-41399-unable-to-access-manage-shopping-cart-if-a-customer-adds-product-to-wishlist.md)
+         - [MDVA-41597: Error al añadir más de un producto configurable al carro de compras](quality-patches-tool/patches-available-in-qpt/v1-1-6/mdva-41597-error-adding-more-than-one-configurable-product-to-cart.md)
+      - v1.1.7 {#v1-1-7}
+         - [Información general: Herramienta Parches de calidad (QPT) v1.1.7](quality-patches-tool/patches-available-in-qpt/v1-1-7/overview.md)
          - [MDVA-27239: No se muestran los productos de venta cruzada](quality-patches-tool/patches-available-in-qpt/v1-1-7/mdva-27239-cross-sell-products-are-not-displayed.md)
-         - [MDVA-39711: No se puede acceder a la red de clientes después de eliminar el sitio web](quality-patches-tool/patches-available-in-qpt/v1-1-7/mdva-39711-unable-to-access-customers-grid-after-deleting-website.md)
+         - [MDVA-39711: No se puede acceder a la cuadrícula de los clientes después de eliminar el sitio web](quality-patches-tool/patches-available-in-qpt/v1-1-7/mdva-39711-unable-to-access-customers-grid-after-deleting-website.md)
          - [MDVA-40311: Error &quot;Seguridad no válida o clave de formulario&quot; después de iniciar sesión en el administrador si se ha configurado la ruta de administración personalizada](quality-patches-tool/patches-available-in-qpt/v1-1-7/mdva-40311-invalid-security-error-after-login-to-admin-if-custom-admin-path-is-configured.md)
          - [MDVA-41631: Error al recuperar la información del pedido sin el valor &quot;phone&quot; opcional](quality-patches-tool/patches-available-in-qpt/v1-1-7/mdva-41631-error-retrieving-order-information-without-optional-telephone-value.md)
-      - Versión 1.1.8 {#v1-1-8}
+      - v1.1.8 {#v1-1-8}
          - [Información general: Herramienta Parches de calidad (QPT) v1.1.8](quality-patches-tool/patches-available-in-qpt/v1-1-8/overview.md)
          - [MDVA-38393: Las reglas de catálogo dejan de funcionar para productos configurables si se cambia el nombre de su producto simple](quality-patches-tool/patches-available-in-qpt/v1-1-8/mdva-38393-catalog-rules-stop-working-for-configurable-product-if-its-simple-product-is-renamed.md)
          - [MDVA-39153: La cantidad de descuento se calcula incorrectamente durante el repedido en el administrador](quality-patches-tool/patches-available-in-qpt/v1-1-8/mdva-39153-discount-amount-is-calculated-incorrectly-during-reorder-in-the-admin.md)
@@ -131,7 +131,7 @@ ht-degree: 0%
          - [MDVA-41215: Los usuarios reciben un error 500 después de configurar la cookie &quot;mage-messages&quot;](quality-patches-tool/patches-available-in-qpt/v1-1-8/mdva-41215-users-get-500-error-after-setting-mage-messages-cookie.md)
          - [MDVA-42326: Los clientes obtienen un error al cerrar la compra después del tiempo de espera de sesión](quality-patches-tool/patches-available-in-qpt/v1-1-8/mdva-42326-customers-get-error-on-checkout-after-session-timeout.md)
          - [MDVA-42341: &quot;categoryList&quot; La consulta GraphQL no filtra los resultados](quality-patches-tool/patches-available-in-qpt/v1-1-8/mdva-42341-categorylist-graphql-query-does-not-filter-results.md)
-      - Versión 1.1.9 {#v1-1-9}
+      - v1.1.9 {#v1-1-9}
          - [Información general: Herramienta Parches de calidad (QPT) v1.1.9](quality-patches-tool/patches-available-in-qpt/v1-1-9/overview.md)
          - [MDVA-37984: Visual Merchandiser no funciona correctamente cuando se aplican actualizaciones de ensayo](quality-patches-tool/patches-available-in-qpt/v1-1-9/mdva-37984-visual-match-product-by-rule-functionality-not-filtering-products-correctly.md)
          - [MDVA-38346: Los filtros de fecha no funcionan cuando la zona horaria de Adobe Commerce es diferente de la local](quality-patches-tool/patches-available-in-qpt/v1-1-9/mdva-38346-date-filters-not-working-properly-when-adobe-commerce-timezone-is-different-from-local.md)
@@ -143,7 +143,7 @@ ht-degree: 0%
          - [MDVA-42507: la caché de página completa se limpia después de aplicar la actualización de ensayo para la regla del carro de compras](quality-patches-tool/patches-available-in-qpt/v1-1-9/mdva-42507-full-page-cache-is-cleaned-after-applying-staging-update-for-cart-rule.md)
          - [MDVA-42657: No se pueden seleccionar categorías en las condiciones de segmentos del cliente](quality-patches-tool/patches-available-in-qpt/v1-1-9/mdva-42657-unable-to-select-categories-in-customer-segment-conditions.md)
          - [MDVA-42806: Se envía un nuevo correo electrónico de registro de empresa cada vez que se actualiza la empresa existente](quality-patches-tool/patches-available-in-qpt/v1-1-9/mdva-42806-new-company-registration-email-sent-when-existing-company-updated.md)
-      - Versión 1.1.10 {#v1-1-10}
+      - v1.1.10 {#v1-1-10}
          - [Información general: Herramienta Parches de calidad (QPT) v1.1.10](quality-patches-tool/patches-available-in-qpt/v1-1-10/overview.md)
          - [MDVA-38728: Cambiar la visibilidad del producto crea una reescritura de URL para el sitio web principal](quality-patches-tool/patches-available-in-qpt/v1-1-10/mdva-38728-changing-product-visibility-creates-url-rewrite-for-the-main-website.md)
          - [MDVA-39181: Las reglas de producto relacionadas muestran productos de la categoría sin definir en la regla](quality-patches-tool/patches-available-in-qpt/v1-1-10/mdva-39181-related-product-rules-show-products-from-category-not-defined-in-rule.md)
@@ -162,7 +162,7 @@ ht-degree: 0%
          - [MDVA-42269: el usuario administrador no puede iniciar sesión en el administrador debido al error &quot;TypeError&quot;](quality-patches-tool/patches-available-in-qpt/v1-1-11/mdva-42269-admin-user-cannot-log-in-to-admin-due-to-the-typeerror.md)
          - [MDVA-42520: tipo impositivo aplicado dos veces cuando se utiliza &quot;Habilitar comercio transfronterizo&quot;](quality-patches-tool/patches-available-in-qpt/v1-1-11/mdva-42520-tax-rate-applied-twice-when-enable-cross-border-trade-is-used.md)
          - [MDVA-42790: Los atributos de precio del producto no se pueden actualizar para un sitio web específico mediante la API de REST](quality-patches-tool/patches-available-in-qpt/v1-1-11/mdva-42790-product-price-attributes-cannot-be-updated-for-specific-website-via-rest-api.md)
-      - Versión 1.1.12 {#v1-1-12}
+      - v1.1.12 {#v1-1-12}
          - [Información general: Herramienta Parches de calidad (QPT) v1.1.12](quality-patches-tool/patches-available-in-qpt/v1-1-12/overview.md)
          - [MDVA-39546: la fecha de inicio de la actualización de ensayo se puede establecer en una fecha anterior a la fecha actual](quality-patches-tool/patches-available-in-qpt/v1-1-12/mdva-39546-staging-update-start-date-set-to-earlier-date-than-current-date.md)
          - [MDVA-39713: el usuario puede editar la hora de inicio de la actualización programada activa](quality-patches-tool/patches-available-in-qpt/v1-1-12/mdva-39713-user-able-to-edit-start-time-for-active-scheduled-update.md)
@@ -180,7 +180,7 @@ ht-degree: 0%
          - [MDVA-43414: Error grave de PHP al ejecutar &quot;inventory.booking.updateSalabilityStatus&quot;](quality-patches-tool/patches-available-in-qpt/v1-1-12/mdva-43414-php-fatal-error-when-running-the-inventory-reservations-update-salability-status.md)
          - [MDVA-43726: La regla de precios de catálogo no se aplica después de una reindexación parcial](quality-patches-tool/patches-available-in-qpt/v1-1-12/mdva-43726-catalog-price-rule-fails-to-apply-after-partial-reindex.md)
          - [MDVA-43731: Los sinónimos de búsqueda no funcionan cuando se agrega un valor en &quot;Términos mínimos de coincidencia&quot;](quality-patches-tool/patches-available-in-qpt/v1-1-12/mdva-43731-search-synonyms-dont-work-when-value-added-in-minimum-terms-to-match.md)
-      - Versión 1.1.13 {#v1-1-13}
+      - v1.1.13 {#v1-1-13}
          - [Información general: Herramienta Parches de calidad (QPT) v1.1.13](quality-patches-tool/patches-available-in-qpt/v1-1-13/overview.md)
          - [La fecha de caducidad del TTL de la caché de MDVA-39605 Redis tiene un valor incorrecto](quality-patches-tool/patches-available-in-qpt/v1-1-13/mdva-39605-redis-cache-ttl-expiration-date-has-wrong-value.md)
          - [MDVA-42046: Valor incorrecto asignado para el atributo del producto](quality-patches-tool/patches-available-in-qpt/v1-1-13/mdva-42046-incorrect-value-assigned-for-product-attribute.md)
@@ -193,7 +193,7 @@ ht-degree: 0%
          - [MDVA-43862: El cliente no puede actualizar los elementos del carro de compras debido a un error de mutación de GraphQL UpdateCartItems](quality-patches-tool/patches-available-in-qpt/v1-1-13/mdva-43862-unable-to-update-cart-items-because-of-graphql-updatecartitems-mutation-error.md)
          - [MDVA-43935: Producto de ampliación de venta mostrado dos veces en la página del producto](quality-patches-tool/patches-available-in-qpt/v1-1-13/mdva-43935-upsell-product-shown-twice-on-product-page.md)
          - [MDVA-44188: Los correos electrónicos no se envían a los ID que contienen &quot;.-&quot;](quality-patches-tool/patches-available-in-qpt/v1-1-13/mdva-44188-emails-are-not-sent.md)
-      - Versión 1.1.14 {#v1-1-14}
+      - v1.1.14 {#v1-1-14}
          - [Información general: Herramienta Parches de calidad (QPT) v1.1.14](quality-patches-tool/patches-available-in-qpt/v1-1-14/overview.md)
          - [MDVA-43102: La cantidad vendible no se ha actualizado correctamente](quality-patches-tool/patches-available-in-qpt/v1-1-14/mdva-43102-salable-quantity-not-updated-correctly.md)
          - [MDVA-43178: el token de cliente para la tienda personalizada no se puede recuperar en GraphQL](quality-patches-tool/patches-available-in-qpt/v1-1-14/mdva-43178-customer-token-for-custom-store-cannot-be-retrieved.md)
@@ -203,7 +203,7 @@ ht-degree: 0%
          - [MDVA-44100: todos los FTP se asignan al último producto del carro de compras](quality-patches-tool/patches-available-in-qpt/v1-1-14/mdva-44100-all-fpts-are-assigned-to-the-last-product-in-the-shopping-cart.md)
          - [MDVA-44147: La solicitud de GraphQL no devuelve listas de solicitudes](quality-patches-tool/patches-available-in-qpt/v1-1-14/mdva-44147-graphql-request-doesnt-return-requisition-lists.md)
          - [MDVA-44505: La consulta de GraphQL para el carro de compras que aplica puntos de recompensa no actualiza el total general](quality-patches-tool/patches-available-in-qpt/v1-1-14/mdva-44505-graphql-applying-reward-points-does-not-update-grand-total.md)
-      - Versión 1.1.15 {#v1-1-15}
+      - v1.1.15 {#v1-1-15}
          - [Información general: Herramienta Parches de calidad (QPT) v1.1.15](quality-patches-tool/patches-available-in-qpt/v1-1-15/overview.md)
          - [MDVA-38559: /V1/customers/search API devuelve un error](quality-patches-tool/patches-available-in-qpt/v1-1-15/mdva-38559-v1-customers-search-api-error.md)
          - [MDVA-40896: Error &quot;Error: TypeError: Argumento 3&quot; en el producto asíncrono](quality-patches-tool/patches-available-in-qpt/v1-1-15/mdva-40896-error-typeerror-in-async-product.md)
@@ -212,7 +212,7 @@ ht-degree: 0%
          - [MDVA-44533: descuento aplicado incorrectamente al producto secundario empaquetado](quality-patches-tool/patches-available-in-qpt/v1-1-15/mdva-44533-discount-incorrectly-applied-to-bundle-child-product.md)
          - [MDVA-44660: no se puede utilizar el carácter de acento grave para el nombre del cliente](quality-patches-tool/patches-available-in-qpt/v1-1-15/mdva-44660-grave-accent-character-cannot-be-used-for-customer-name.md)
          - [MDVA-44887: Error &quot;SyntaxError no capturado: contenido de token inesperado&quot; en el panel de administración](quality-patches-tool/patches-available-in-qpt/v1-1-15/mdva-44887-uncaught-syntaxerror-unexpected-token-const-error-in-admin-panel.md)
-      - Versión 1.1.16 {#v1-1-16}
+      - v1.1.16 {#v1-1-16}
          - [Información general: Herramienta Parches de calidad (QPT) v1.1.16](quality-patches-tool/patches-available-in-qpt/v1-1-16/overview.md)
          - [MDVA-42509: No se ha podido cargar el CSV para un pedido rápido, lo que provoca el error &quot;No se puede enviar la cookie&quot;](quality-patches-tool/patches-available-in-qpt/v1-1-16/mdva-42509-csv-could-not-be-uploaded-for-quick-order-resulting-in-unable-to-send-the-cookie-error.md)
          - [MDVA-43167: La acción masiva de cuadrícula de orden de administración no se aplica a páginas múltiples](quality-patches-tool/patches-available-in-qpt/v1-1-16/mdva-43167-admin-order-grid-mass-doesnt-apply-multipage.md)
@@ -220,7 +220,7 @@ ht-degree: 0%
          - [MDVA-44562: el ID de tienda de los artículos de presupuesto se sobrescribe por el ID de tienda predeterminado](quality-patches-tool/patches-available-in-qpt/v1-1-16/mdva-44562-store-id-quote-items-overridden-by-default-store-id.md)
          - [MDVA-44703: Los totales de pedidos en el informe Pedidos se calculan de forma incorrecta](quality-patches-tool/patches-available-in-qpt/v1-1-16/mdva-44703-order-totals-in-order-report-miscalculated.md)
          - [MDVA-44940: Error SQL al guardar la categoría del administrador](quality-patches-tool/patches-available-in-qpt/v1-1-16/mdva-44940-sql-error-while-saving-category-from-admin.md)
-      - Versión 1.1.17 {#v1-1-17}
+      - v1.1.17 {#v1-1-17}
          - [Información general: Herramienta Parches de calidad (QPT) v1.1.17](quality-patches-tool/patches-available-in-qpt/v1-1-17/overview.md)
          - [ACSD-42807: el signo de moneda personalizado no se muestra en la tienda](quality-patches-tool/patches-available-in-qpt/v1-1-17/acsd-42807-custom-currency-sign-not-displayed-on-store-front.md)
          - [ACSD-43887: detalles incorrectos mostrados en la página de pago del cierre de compra](quality-patches-tool/patches-available-in-qpt/v1-1-17/acsd-43887-incorrect-details-displayed-on-checkout-payment-page.md)
@@ -230,23 +230,23 @@ ht-degree: 0%
          - [ACSD-45241: la cantidad de existencias del producto virtual se ha calculado incorrectamente](quality-patches-tool/patches-available-in-qpt/v1-1-17/acsd-45241-stock-quantity-for-virtual-product-miscalculated.md)
          - [ACSD-45424: Compensación de reserva incorrecta creada tras un reembolso parcial](quality-patches-tool/patches-available-in-qpt/v1-1-17/acsd-45424-incorrect-reservation-compensation-created-after-partial-refund.md)
          - [ACSD-45520: las opciones de muestra no están seleccionadas en la página de detalles del producto](quality-patches-tool/patches-available-in-qpt/v1-1-17/acsd-45520-swatch-options-not-pre-selected-on-product-detail-page.md)
-      - Versión 1.1.18 {#v1-1-18}
+      - v1.1.18 {#v1-1-18}
          - [Información general: Herramienta Parches de calidad (QPT) v1.1.18](quality-patches-tool/patches-available-in-qpt/v1-1-18/overview.md)
          - [ACSD-44938: VAT_ID no se puede aplicar en una solicitud de GraphQL para un usuario invitado](quality-patches-tool/patches-available-in-qpt/v1-1-18/acsd-44938-vat-id-cannot-applied-graphql-guest-user.md)
          - [ACSD-45255: Excepción en la página de informe de Stock bajo para el usuario administrador restringido](quality-patches-tool/patches-available-in-qpt/v1-1-18/acsd-45255-exception-on-low-stock-report-page-for-restricted-admin-user.md)
          - [ACSD-45257: GraphQL no muestra correctamente el descuento del carro de compras](quality-patches-tool/patches-available-in-qpt/v1-1-18/acsd-45257-graphql-doesnt-display-cart-discount-correctly.md)
          - [ACSD-45488: producto configurable con varios orígenes que no se devuelve en stock automáticamente](quality-patches-tool/patches-available-in-qpt/v1-1-18/acsd-45488-configurable-product-with-multiple-sources-not-returned-to-in-stock.md)
-         - [ACSD-45754: Puntos de recompensa no sumados después de aplicar cupón a carro de compras](quality-patches-tool/patches-available-in-qpt/v1-1-18/acsd-45754-reward-points-not-added-after-applying-coupon-to-the-cart.md)
-         - [ACSD-45817: La mutación de los productos GraphQL da todas las variantes configurables](quality-patches-tool/patches-available-in-qpt/v1-1-18/acsd-45817-graphql-products-mutation-gives-all-configurable-variants.md)
-         - [ACSD-45849: metadatos de Vídeo se pierde después de la actualización del ensayo](quality-patches-tool/patches-available-in-qpt/v1-1-18/acsd-45849-video-metadata-lost-after-staging-update.md)
-         - [ACSD-46146: Dos correos electrónicos de confirmación de pedido enviados después de realizar un pedido del administrador](quality-patches-tool/patches-available-in-qpt/v1-1-18/acsd-46146-two-order-confirmation-emails-are-sent-after-placing-order-from-admin.md)
+         - [ACSD-45754: puntos de recompensa no añadidos después de aplicar un cupón al carro de compras](quality-patches-tool/patches-available-in-qpt/v1-1-18/acsd-45754-reward-points-not-added-after-applying-coupon-to-the-cart.md)
+         - [ACSD-45817: la mutación de productos de GraphQL proporciona todas las variantes configurables](quality-patches-tool/patches-available-in-qpt/v1-1-18/acsd-45817-graphql-products-mutation-gives-all-configurable-variants.md)
+         - [ACSD-45849: los metadatos de vídeo se pierden tras la actualización del ensayo](quality-patches-tool/patches-available-in-qpt/v1-1-18/acsd-45849-video-metadata-lost-after-staging-update.md)
+         - [ACSD-46146: Dos correos electrónicos de confirmación de pedido enviados después de realizar el pedido desde el administrador](quality-patches-tool/patches-available-in-qpt/v1-1-18/acsd-46146-two-order-confirmation-emails-are-sent-after-placing-order-from-admin.md)
       - v1.1.19 {#v1-1-19}
          - [Información general: Herramienta Parches de calidad (QPT) v1.1.19](quality-patches-tool/patches-available-in-qpt/v1-1-19/overview.md)
          - [ACSD-45781: el campo de búsqueda principal de la tienda no se muestra en el móvil](quality-patches-tool/patches-available-in-qpt/v1-1-19/acsd-45781-store-front-search-field-not-displayed-on-mobile.md)
          - [ACSD-46213: solicitud de árbol de categorías limitada a 20 categorías](quality-patches-tool/patches-available-in-qpt/v1-1-19/acsd-46213-category-tree-limited-20-categories.md)
          - [ACSD-46404: el usuario administrador no puede iniciar sesión después de actualizar a 2.4.4](quality-patches-tool/patches-available-in-qpt/v1-1-19/acsd-46404-admin-user-cannot-log-in-after-upgrading-to-2-4-4.md)
          - [ACSD-46192: problema con el extremo async/bulk/V1/configurable-products/bySku/options](quality-patches-tool/patches-available-in-qpt/v1-1-19/acsd-46192-async-bulk-v1-configurable-products-bysku-options-endpoint-issue.md)
-      - Versión 1.1.20 {#v1-1-20}
+      - v1.1.20 {#v1-1-20}
          - [Información general: Herramienta Parches de calidad (QPT) v1.1.20](quality-patches-tool/patches-available-in-qpt/v1-1-20/overview.md)
          - [ACSD-44851: categoría con subcategorías que no se pueden abrir o expandir](quality-patches-tool/patches-available-in-qpt/v1-1-20/acsd-44851-category-with-subcategories-not-able-to-open-or-expand.md)
          - [ACSD-45675: la exportación de productos utiliza nombres de categoría del ámbito de vista de tienda predeterminado](quality-patches-tool/patches-available-in-qpt/v1-1-20/acsd-45675-product-export-uses-category-names-from-default-storeview-scope.md)
@@ -260,8 +260,8 @@ ht-degree: 0%
          - [ACSD-46541: el usuario administrador no puede crear una nota de abono si se elimina un artículo de pedido](quality-patches-tool/patches-available-in-qpt/v1-1-21/acsd-46541-admin-user-cannot-create-credit-memo-if-order-item-deleted.md)
          - [ACSD-46581: el total de impuestos estimado no se actualiza después de seleccionar un país en el carro de compras](quality-patches-tool/patches-available-in-qpt/v1-1-21/acsd-46581-estimated-tax-total-is-not-updated-after-selecting-a-country-in-the-shopping-cart.md)
          - [ACSD-46618: El widget de lista de productos muestra precios en caché incorrectos para clientes que iniciaron sesión](quality-patches-tool/patches-available-in-qpt/v1-1-21/acsd-46618-product-list-widget-shows-incorrect-cached-prices-logged-in-customer.md)
-         - [ACSD-46674: Opciones personalizadas del tipo de imagen mostradas como HTML en los correos electrónicos de los clientes](quality-patches-tool/patches-available-in-qpt/v1-1-21/acsd-46674-custom-options-image-type-displayed-html.md)
-         - [ACSD-46809: El usuario obtiene un error al asignar un gran número de orígenes de producto](quality-patches-tool/patches-available-in-qpt/v1-1-21/acsd-46809-the-user-gets-an-error-when-assigning-a-large-number-of-product-sources.md)
+         - [ACSD-46674: opciones personalizadas de tipo de imagen mostradas como HTML en correos electrónicos de clientes](quality-patches-tool/patches-available-in-qpt/v1-1-21/acsd-46674-custom-options-image-type-displayed-html.md)
+         - [ACSD-46809: El usuario recibe un error al asignar un gran número de orígenes de producto](quality-patches-tool/patches-available-in-qpt/v1-1-21/acsd-46809-the-user-gets-an-error-when-assigning-a-large-number-of-product-sources.md)
          - [ACSD-46856: mejora el rendimiento al actualizar los precios de nivel](quality-patches-tool/patches-available-in-qpt/v1-1-21/acsd-46856-improves-performance-when-updating-tier-prices.md)
          - [ACSD-46988: La solicitud de API de divisa de GraphQL devuelve valores nulos](quality-patches-tool/patches-available-in-qpt/v1-1-21/acsd-46988-graphql-currency-api-request-returns-null-values.md)
          - [ACSD-47076: Los vídeos de Vimeo no se pueden reproducir en la tienda](quality-patches-tool/patches-available-in-qpt/v1-1-21/acsd-47076-venmo-videos-cannot-be-played-on-the-storefront.md)
@@ -293,7 +293,7 @@ ht-degree: 0%
          - [ACSD-47336: [!UICONTROL Something went wrong] notificaciones de error descartadas por el administrador de Adobe Commerce](quality-patches-tool/patches-available-in-qpt/v1-1-24/acsd-47336-something-went-wrong-error-when-dismissing-notifications-adobe-commerce-admin.md)
          - [ACSD-47803: muestras de productos configurables y agotadas que se muestran como disponibles](quality-patches-tool/patches-available-in-qpt/v1-1-24/acsd-47803-out-of-stock-configurable-product-swatches-displayed-as-available.md)
          - [ACSD-46617: el botón Continuar con el cierre de compra aparece atenuado cuando el subtotal es superior a la cantidad mínima de pedido](quality-patches-tool/patches-available-in-qpt/v1-1-24/acsd-46617-continue-to-checkout-button-greyed-out.md)
-      - Versión 1.1.25 {#v1-1-25}
+      - v1.1.25 {#v1-1-25}
          - [Información general: Herramienta Parches de calidad (QPT) v1.1.25](quality-patches-tool/patches-available-in-qpt/v1-1-25/overview.md)
          - [ACSD-48627: El producto configurable sin existencias causa un error](quality-patches-tool/patches-available-in-qpt/v1-1-25/acsd-48627-out-of-stock-configurable-product-causes-an-error.md)
          - [ACSD-48234: el resultado de la búsqueda en el catálogo muestra un recuento incorrecto de elementos de categoría cuando [!UICONTROL Display Out of Stock Products] está habilitado](quality-patches-tool/patches-available-in-qpt/v1-1-25/acsd-48234-catalog-search-result-shows-incorrect-category.md)
@@ -306,7 +306,7 @@ ht-degree: 0%
          - [ACSD-48262: productos no visibles en la tienda cuando Permitir todos los productos por página está establecido en Sí](quality-patches-tool/patches-available-in-qpt/v1-1-25/acsd-48262-products-not-visible-on-storefront-when-allow-all-products-per-page-is-set-yes.md)
          - [ACSD-48058: el reíndice de precios del producto no funciona si el producto agrupado no está asignado a un sitio web](quality-patches-tool/patches-available-in-qpt/v1-1-25/acsd-48058-product-price-reindex-not-working-if-bundled-product-not-assigned-website.md)
          - [ACSD-48293: productos compuestos agotados al agotarse los productos infantiles repuestos](quality-patches-tool/patches-available-in-qpt/v1-1-25/acsd-48293-composite-products-go-out-of-stock.md)
-      - Versión 1.1.26 {#v1-1-26}
+      - v1.1.26 {#v1-1-26}
          - [Información general: Herramienta Parches de calidad (QPT) v1.1.26](quality-patches-tool/patches-available-in-qpt/v1-1-26/overview.md)
          - [ACSD-48773: la plantilla de correo electrónico de puntos de recompensa se ha tomado de una tienda incorrecta](quality-patches-tool/patches-available-in-qpt/v1-1-26/acsd-48773-reward-points-email-template-taken-from-wrong-store.md)
          - [ACSD-47937: Las notificaciones de bajada de precios no se envían debido al almacenamiento en caché de nivel de aplicación](quality-patches-tool/patches-available-in-qpt/v1-1-26/acsd-47937-price-drop-notifications-are-not-sent.md)
@@ -316,7 +316,7 @@ ht-degree: 0%
          - [ACSD-47988: la exportación de productos recorta las etiquetas de HTML de la descripción del producto del generador de páginas](quality-patches-tool/patches-available-in-qpt/v1-1-26/acsd-47988-product-export-trims-html-tags.md)
          - [ACSD-48366: la imagen del producto no se muestra en la plantilla de correo electrónico Volver a stock](quality-patches-tool/patches-available-in-qpt/v1-1-26/acsd-48366-product-image-not-displayed-back-stock-email-template.md)
          - [ACSD-48417: Error SQL después de crear un cambio de programación](quality-patches-tool/patches-available-in-qpt/v1-1-26/acsd-48417-sql-error-after-creating-a-schedule-change.md)
-      - VERSIÓN 1.1.27 {#v1-1-27}
+      - V1.1.27 {#v1-1-27}
          - [Información general](quality-patches-tool/patches-available-in-qpt/v1-1-27/overview.md)
          - [ACSD-48404: Recordar paginación de categoría = sí causa un error](quality-patches-tool/patches-available-in-qpt/v1-1-27/acsd-48404-fixes-the-issue-where-remember-category-pagination-yes-causes-an-error.md)
          - [ACSD-48634: [!DNL JS] errores al [!DNL Google Analytics Content Experiments] habilitar](quality-patches-tool/patches-available-in-qpt/v1-1-27/acsd-48634-js-errors-when-google-analytics-content-experiments-enabled.md)
@@ -330,7 +330,7 @@ ht-degree: 0%
          - [ACSD-49497: el pedido se sigue procesando después del envío y el reembolso parcial](quality-patches-tool/patches-available-in-qpt/v1-1-27/acsd-49497-order-is-still-processing-after-shipment-and-partial-refund.md)
          - [ACSD-48694: Error solicitado de cambio de estado no válido que impide al cliente realizar el pedido](quality-patches-tool/patches-available-in-qpt/v1-1-27/acsd-48694-invalid-state-change-requested-error-prevents-customer-from-placing-order.md)
       - v1.1.28 {#v1-1-28}
-         - [Descripción general: [!DNL Quality Patches Tool] (QPT) v1.1.28](quality-patches-tool/patches-available-in-qpt/v1-1-28/overview.md)
+         - [Información general:  [!DNL Quality Patches Tool] (QPT) v1.1.28](quality-patches-tool/patches-available-in-qpt/v1-1-28/overview.md)
          - [ACSD-49179: el informe de pedidos muestra importes incorrectos para diferentes tiendas](quality-patches-tool/patches-available-in-qpt/v1-1-28/acsd-49179-orders-report-shows-incorrect-amounts-for-different-stores.md)
          - [ACSD-49065: Los elementos de oferta no son visibles en el administrador si se asignan a existencias personalizadas](quality-patches-tool/patches-available-in-qpt/v1-1-28/acsd-49065-quote-items-are-not-visible-in-admin-if-assigned-to-custom-stock.md)
          - [ACSD-48866: Error al solicitar la fuente RSS para las categorías](quality-patches-tool/patches-available-in-qpt/v1-1-28/acsd-48866-error-when-requesting-rss-feed-for-categories.md)
@@ -363,31 +363,31 @@ ht-degree: 0%
          - [ACSD-49464: facturas, envíos y notas de abono que no se han movido del archivo](quality-patches-tool/patches-available-in-qpt/v1-1-29/acsd-49464-invoices-shipments-credit-memos-not-moved-back-from-archive.md)
          - [ACSD-48771: el editor de WYSIWYG procesa el contenido de forma diferente](quality-patches-tool/patches-available-in-qpt/v1-1-29/acsd-48771-wyswigy-editor-rendering-content-differently.md)
          - [ACSD-49527: Los roles de compañía de GraphQL no muestran la paginación correctamente](quality-patches-tool/patches-available-in-qpt/v1-1-29/acsd-49527-graphql-company-roles-dont-display-pagination-correctly.md)
-      - Versión 1.1.30 {#v1-1-30}
+      - v1.1.30 {#v1-1-30}
          - [Información general:  [!DNL Quality Patches Tool] (QPT) v1.1.30](quality-patches-tool/patches-available-in-qpt/v1-1-30/overview.md)
          - [ACSD-50367: La exportación de direcciones de clientes no funciona](quality-patches-tool/patches-available-in-qpt/v1-1-30/acsd-50367-customer-address-export-does-not-work.md)
-         - [BB2B-2598: Agrega almacenamiento en caché capacidad a storeConfig, moneda, país, países, disponibilidadStores consultas GraphQl](quality-patches-tool/patches-available-in-qpt/v1-1-30/bb2b-2598-add-caching-capability.md)
-         - [B2B-2674: Agrega almacenamiento en caché capacidad a la consulta customAttributeMetadata GraphQL](quality-patches-tool/patches-available-in-qpt/v1-1-30/b2b-2674-add-caching-capability.md)
-         - [ACSD-49973: Rendimiento mejorado al obtener productos agrupados a través de [!DNL GraphQL]](quality-patches-tool/patches-available-in-qpt/v1-1-30/acsd-49973-improved-performance-fetching-bundled-products-via-graphql.md)
-         - [ACSD-50116: Un administrador usuario no puede crear una URL reescribir](quality-patches-tool/patches-available-in-qpt/v1-1-30/acsd-50116-admin-user-cannot-create-a-url-rewrite.md)
+         - [BB2B-2598: Añade capacidad de almacenamiento en caché a storeConfig, moneda, país, países, availableStores y consultas de GraphQl](quality-patches-tool/patches-available-in-qpt/v1-1-30/bb2b-2598-add-caching-capability.md)
+         - [B2B-2674: Añade la capacidad de almacenamiento en caché a la consulta customAttributeMetadata de GraphQL](quality-patches-tool/patches-available-in-qpt/v1-1-30/b2b-2674-add-caching-capability.md)
+         - [ACSD-49973: rendimiento mejorado al recuperar productos agrupados mediante  [!DNL GraphQL]](quality-patches-tool/patches-available-in-qpt/v1-1-30/acsd-49973-improved-performance-fetching-bundled-products-via-graphql.md)
+         - [ACSD-50116: un usuario administrador no puede crear una reescritura de URL](quality-patches-tool/patches-available-in-qpt/v1-1-30/acsd-50116-admin-user-cannot-create-a-url-rewrite.md)
          - [ACSD-50276: El formulario de registro de cliente no funciona en la tienda si se crean atributos de cliente de selección múltiple](quality-patches-tool/patches-available-in-qpt/v1-1-30/acsd-50276-customer-registration-form-does-not-work-on-the-storefront.md)
-         - [ACSD-50527: Error al guardar un Página con un bloque dinámico vacío](quality-patches-tool/patches-available-in-qpt/v1-1-30/acsd-50527-error-when-saving-page-with-empty-dynamic-block.md)
-         - [ACSD-49513: Error en la sincronización remota almacenamiento](quality-patches-tool/patches-available-in-qpt/v1-1-30/acsd-49513-remote-storage-synchronization-fails.md)
-         - [ACSD-50336: no se han enviado mensajes de correo electrónico de alerta de producto](quality-patches-tool/patches-available-in-qpt/v1-1-30/acsd-50336-product-alert-emails-not-sent.md)
-         - [ACSD-46683: El precio de envío muestra no haberse calculado todavía](quality-patches-tool/patches-available-in-qpt/v1-1-30/acsd-46683-shipping-price-shows-not-yet-calculated.md)
+         - [ACSD-50527: Error al guardar una página con un bloque dinámico vacío](quality-patches-tool/patches-available-in-qpt/v1-1-30/acsd-50527-error-when-saving-page-with-empty-dynamic-block.md)
+         - [ACSD-49513: la sincronización de almacenamiento remoto falla](quality-patches-tool/patches-available-in-qpt/v1-1-30/acsd-49513-remote-storage-synchronization-fails.md)
+         - [ACSD-50336: Correos electrónicos de alerta de producto no enviados](quality-patches-tool/patches-available-in-qpt/v1-1-30/acsd-50336-product-alert-emails-not-sent.md)
+         - [ACSD-46683: el precio de envío aún no se ha calculado](quality-patches-tool/patches-available-in-qpt/v1-1-30/acsd-46683-shipping-price-shows-not-yet-calculated.md)
          - [ACSD-49129: atributo de contenido no devuelto en las respuestas de API de medios del producto](quality-patches-tool/patches-available-in-qpt/v1-1-30/acsd-49129-the-content-attribute-is-not-returned-in-product-media-api-responses.md)
          - [ACSD-49737: El cupón se marca incorrectamente como utilizado después de un pago con tarjeta fallido](quality-patches-tool/patches-available-in-qpt/v1-1-30/acsd-49737-coupon-is-incorrectly-marked-as-used-after-a-failed-card-payment.md)
          - [ACSD-50814: El usuario administrador no puede crear notas de crédito](quality-patches-tool/patches-available-in-qpt/v1-1-30/acsd-50814-an-admin-user-is-not-able-to-create-credit-memo.md)
          - [ACSD-49877: La reproducción automática de vídeo no funciona en Safari móvil](quality-patches-tool/patches-available-in-qpt/v1-1-30/acsd-49877-the-video-autoplay-option-does-not-work-on-mobile-safari.md)
          - [ACSD-51114: el producto aleatorio desaparece de los catálogos grandes durante la indexación asíncrona](quality-patches-tool/patches-available-in-qpt/v1-1-30/acsd-51114-random-product-disappearing-from-large-catalogs-while-asynchronous-indexing.md)
       - v1.1.31 {#v1-1-31}
-         - [Descripción general: [!DNL Quality Patches Tool] (QPT) v1.1.31](quality-patches-tool/patches-available-in-qpt/v1-1-31/overview.md)
+         - [Información general:  [!DNL Quality Patches Tool] (QPT) v1.1.31](quality-patches-tool/patches-available-in-qpt/v1-1-31/overview.md)
          - [ACSD-50858: rendimiento mejorado para cargar contenido de titulares](quality-patches-tool/patches-available-in-qpt/v1-1-31/acsd-50858-improved-performance-for-loading-banners-content.md)
          - [ACSD-49392: El estado del pedido cambia a cerrado después del reembolso parcial](quality-patches-tool/patches-available-in-qpt/v1-1-31/acsd-49392-order-status-changes-to-closed-after-partial-refund.md)
          - [ACSD-50817: optimiza las ofertas limpias de ventas de trabajos de cron para ejecutarse más rápido](quality-patches-tool/patches-available-in-qpt/v1-1-31/acsd-50817-optimizes-cron-job-sales-clean-quotes-to-run-faster.md)
          - [ACSD-50345: problemas de reCAPTCHA durante el cierre de compra](quality-patches-tool/patches-available-in-qpt/v1-1-31/acsd-50345-recaptcha-issues-during-checkout.md)
          - [ACSD-51036: Las condiciones de carrera durante las llamadas simultáneas a la API de REST resultan en una sobrescritura del estado de envío](quality-patches-tool/patches-available-in-qpt/v1-1-31/acsd-51036-race-conditions-during-concurrent-rest-api-calls-cause-overwrite-of-shipping-status.md)
-      - Versión 1.1.32 {#v1-1-32}
+      - v1.1.32 {#v1-1-32}
          - [Información general:  [!DNL Quality Patches Tool] (QPT) v1.1.32](quality-patches-tool/patches-available-in-qpt/v1-1-32/overview.md)
          - [ACSD-49628:  [!DNL Page Builder] Los errores de CORS impiden el guardado del producto](quality-patches-tool/patches-available-in-qpt/v1-1-32/acsd-49628-page-builder-cors-errors-prevent-product-save.md)
          - [ACSD-50621: Los precios de nivel de diferentes sitios web en el catálogo compartido no son visibles](quality-patches-tool/patches-available-in-qpt/v1-1-32/acsd-50621-tier-prices-different-websites-shared-catalog-not-visible.md)
@@ -400,7 +400,7 @@ ht-degree: 0%
          - [ACSD-51305: productos secundarios compuestos sin existencias no disponibles en la respuesta de GraphQL](quality-patches-tool/patches-available-in-qpt/v1-1-32/acsd-51305-out-of-stock-composite-child-products-unavailable-in-graphql-response.md)
          - [ACSD-51294: precio, cantidad, impuestos, envío, ingresos enviados como cadena a  [!DNL Google Analytics]  y GTM](quality-patches-tool/patches-available-in-qpt/v1-1-32/acsd-51294-price-quantity-tax-shipping-and-revenue-are-sent-as-string-to-google-analytics-and-gtm.md)
          - [ACSD-51291: un administrador restringido puede añadir imágenes/vídeos al producto asignado a varios sitios web](quality-patches-tool/patches-available-in-qpt/v1-1-32/acsd-51291-restricted-admin-can-add-images-videos-to-product-assigned-to-multiple-websites.md)
-         - [ACSD-50849: Agregar un nuevo producto a categoría después de borrar la caché produce una falta de coincidencia en las posiciones y las selecciones](quality-patches-tool/patches-available-in-qpt/v1-1-32/acsd-50849-adding-new-product-to-category-after-clearing-cache.md)
+         - [ACSD-50849: Añadir un nuevo producto a la categoría después de borrar la caché provoca que no coincidan las posiciones y las selecciones](quality-patches-tool/patches-available-in-qpt/v1-1-32/acsd-50849-adding-new-product-to-category-after-clearing-cache.md)
          - [ACSD-51204: El producto no vuelve a estar disponible después de crear la nota de crédito](quality-patches-tool/patches-available-in-qpt/v1-1-32/acsd-51204-product-does-not-return-back-in-stock-after-creating-credit-memo.md)
          - [ACSD-51238: origen de inventario eliminado al actualizar un producto configurable y editar el precio](quality-patches-tool/patches-available-in-qpt/v1-1-32/acsd-51238-inventory-source-removed-when-updating-configurable-product-and-editing-the-price.md)
       - v1.1.33 {#v1-1-33}
@@ -436,7 +436,7 @@ ht-degree: 0%
          - [ACSD-51857: El trabajo cron lento de aggregate_sales_report_bestsellers_data afecta al rendimiento](quality-patches-tool/patches-available-in-qpt/v1-1-34/acsd-51857-slow-cron-job-of-aggregate-sales-report-bestsellers-data-affects-performance.md)
          - [ACSD-51739: error al solicitar structure_id en la solicitud de CompanyTeam GraphQL](quality-patches-tool/patches-available-in-qpt/v1-1-34/acsd-51739-error-on-requesting-structure-id-in-company-team-graphql-request.md)
          - [ACSD-48448: Problema de condición de carrera durante las cancelaciones de pedidos que causan entradas duplicadas en la tabla inventory_reservation](quality-patches-tool/patches-available-in-qpt/v1-1-34/acsd-48448-race-condition-issue-happening-during-order-cancellations.md)
-      - Versión 1.1.35{#v1-1-35}
+      - v1.1.35{#v1-1-35}
          - [Información general:  [!DNL Quality Patches Tool] (QPT) v1.1.35](quality-patches-tool/patches-available-in-qpt/v1-1-35/overview.md)
          - [ACSD-52095: La administración del valor de stock es incorrecta al exportar el csv](quality-patches-tool/patches-available-in-qpt/v1-1-35/acsd-52095-manage-stock-value-wrong-while-exporting-csv.md)
          - [ACSD-51358: faltan actualizaciones programadas](quality-patches-tool/patches-available-in-qpt/v1-1-35/acsd-51358-schedule-updates-are-missing.md)
@@ -450,15 +450,15 @@ ht-degree: 0%
          - [ACSD-52815: el campo de entrada para el campo de cantidad de origen no predeterminado solo admite hasta 6 dígitos](quality-patches-tool/patches-available-in-qpt/v1-1-35/acsd-52815-input-field-for-quantity-field-non-default-source-supports-only-six-digits.md)
          - [ACSD-51899: la dirección de envío predeterminada se rellena automáticamente de forma incorrecta](quality-patches-tool/patches-available-in-qpt/v1-1-35/acsd-51899-default-shipping-address-auto-populated-incorrectly.md)
          - [ACSD-48070: excepción al editar una actualización programada](quality-patches-tool/patches-available-in-qpt/v1-1-35/acsd-48070-exception-while-editing-a-scheduled-update.md)
-         - [ACSD-52786: la regla [!UICONTROL SKU is] de catálogo se aplica a todos los productos que empiezan por el unidad de almacén](quality-patches-tool/patches-available-in-qpt/v1-1-35/acsd-52786-catalog-rule-sku-is-applies-to-all-products-starting-with-it.md)
-         - [ACSD-52041: Page Builder procesamiento no libera bloqueos](quality-patches-tool/patches-available-in-qpt/v1-1-35/acsd-52041-page-builder-renders-for-5-seconds-without-releasing-locks.md)
+         - [ACSD-52786: La regla de catálogo [!UICONTROL SKU is] se aplica a todos los productos que comienzan con el SKU](quality-patches-tool/patches-available-in-qpt/v1-1-35/acsd-52786-catalog-rule-sku-is-applies-to-all-products-starting-with-it.md)
+         - [ACSD-52041: El procesamiento de Page Builder no libera bloqueos](quality-patches-tool/patches-available-in-qpt/v1-1-35/acsd-52041-page-builder-renders-for-5-seconds-without-releasing-locks.md)
          - [ACSD-51890: se puede hacer clic en el botón Enviar revisión varias veces](quality-patches-tool/patches-available-in-qpt/v1-1-35/acsd-51890-submit-review-button-can-be-clicked-multiple-times.md)
          - [ACSD-52921: Error al solicitar los detalles del carro de compras de GraphQL para un producto configurable sin existencias](quality-patches-tool/patches-available-in-qpt/v1-1-35/acsd-52921-internal-error-requesting-cart-details-from-graphql.md)
          - [ACSD-51984: No se guardan el valor predeterminado utilizado y los valores de campo de producto no predeterminados](quality-patches-tool/patches-available-in-qpt/v1-1-35/acsd-51984-unchecked-used-default-value-and-non-default-product-field-values-are-not-saved.md)
          - [ACSD-52831: no se pueden realizar pedidos de presupuesto negociables cuando  [!DNL Google reCAPTCHA v3 Invisible] está habilitado](quality-patches-tool/patches-available-in-qpt/v1-1-35/acsd-52831-cannot-place-negotiable-quote-orders.md)
          - [ACSD-51265: optimizar la reindexación para productos agrupados](quality-patches-tool/patches-available-in-qpt/v1-1-35/acsd-51265-catalog-product-price.md)
          - [ACSD-52399: Producto con cantidad salable 0 muestra en stock](quality-patches-tool/patches-available-in-qpt/v1-1-35/acsd-52399-product-with-salable-qty-0-shows-in-stock.md)
-      - Versión 1.1.36{#v1-1-36}
+      - v1.1.36{#v1-1-36}
          - [Información general:  [!DNL Quality Patches Tool] (QPT) v1.1.36](quality-patches-tool/patches-available-in-qpt/v1-1-36/overview.md)
          - [ASCD-52736: [!UICONTROL Cart Price Rule] no funciona como se esperaba](quality-patches-tool/patches-available-in-qpt/v1-1-36/acsd-52736-cart-price-rule-doesnt-work-as-expected.md)
          - [ACSD-53239: el indexador de inventario limpia todas las cachés en el modo [!UICONTROL Update on Schedule]](quality-patches-tool/patches-available-in-qpt/v1-1-36/acsd-53239-inventory-indexer-cleans-all-caches.md)
@@ -468,7 +468,7 @@ ht-degree: 0%
          - [ACSD-47875: no se puede agregar un producto al carro para el ámbito de vista de tienda con la administración de inventario](quality-patches-tool/patches-available-in-qpt/v1-1-36/acsd-47875-unable-to-add-product-to-customer-cart-for-store-view-scope-with-inventory-management.md)
          - [ACSD-51666: Error &quot;La sesión ha caducado, vuelva a iniciar sesión&quot;. después de iniciar sesión](quality-patches-tool/patches-available-in-qpt/v1-1-36/acsd-51666-error-session-has-expired-please-login-again.md)
          - [ACSD-52906: resolviendo el problema de cookies X-Magento-Vary para el almacenamiento en caché de clientes que iniciaron sesión](quality-patches-tool/patches-available-in-qpt/v1-1-36/acsd-52906-resolving-x-magento-vary-cookie-issue-logged-in-customer-caching.md)
-      - Versión 1.1.37 {#v1-1-37}
+      - v1.1.37 {#v1-1-37}
          - [Información general:  [!DNL Quality Patches Tool] (QPT) v1.1.37](quality-patches-tool/patches-available-in-qpt/v1-1-37/overview.md)
          - [ACSD-52613: la caché y los índices se actualizan sin actualizaciones](quality-patches-tool/patches-available-in-qpt/v1-1-37/acsd-52613-cache-and-indexes-are-refreshed-with-no-updates.md)
          - [ACSD-52606: mensaje de error que se muestra cuando el usuario hace clic en &quot;Notificar pedido está listo para su recogida&quot;](quality-patches-tool/patches-available-in-qpt/v1-1-37/acsd-52606-troubleshooting-order-pickup-notification-error.md)
@@ -484,42 +484,42 @@ ht-degree: 0%
          - [49843 ACSD: el vínculo de descarga de producto no está disponible después de facturarse automáticamente con [!UICONTROL Payment Action] = Venta](quality-patches-tool/patches-available-in-qpt/v1-1-37/acsd-49843-link-to-product-download-unavailable-after-being-autoinvoiced-with-payment-action-sale.md)
       - v1.1.38 {#v1-1-38}
          - [Información general:  [!DNL Quality Patches Tool] (QPT) v1.1.38](quality-patches-tool/patches-available-in-qpt/v1-1-38/overview.md)
-         - [ACSD-54018: Problema de rendimiento con la lista de productos del widget del catálogo](quality-patches-tool/patches-available-in-qpt/v1-1-38/acsd-54018-performance-issue-with-catalog-widget-product-list.md)
-         - [ACSD-54111: No se muestra la imagen en miniatura del producto](quality-patches-tool/patches-available-in-qpt/v1-1-38/acsd-54111-production-product-thumbnail-image-not-displaying-on-product-grid.md)
-         - [ACSD-52287: Estado de pedidos archivados no cambia](quality-patches-tool/patches-available-in-qpt/v1-1-38/acsd-52287-status-of-archived-orders-does-not-change.md)
-         - [ACSD-52929: solicitud redundante para volver a indexar los elementos de origen predeterminados](quality-patches-tool/patches-available-in-qpt/v1-1-38/acsd-52929-redundant-request-to-re-index-default-source-items.md)
-         - [ACSD-53824: Error de implementación al actualizar el programa de instalación](quality-patches-tool/patches-available-in-qpt/v1-1-38/acsd-53824-deployment-is-failing-on-setup-upgrade.md)
+         - [ACSD-54018: problema de rendimiento con la lista de productos del widget de catálogo](quality-patches-tool/patches-available-in-qpt/v1-1-38/acsd-54018-performance-issue-with-catalog-widget-product-list.md)
+         - [ACSD-54111: la imagen en miniatura del producto no se muestra](quality-patches-tool/patches-available-in-qpt/v1-1-38/acsd-54111-production-product-thumbnail-image-not-displaying-on-product-grid.md)
+         - [ACSD-52287: El estado de los pedidos archivados no cambia](quality-patches-tool/patches-available-in-qpt/v1-1-38/acsd-52287-status-of-archived-orders-does-not-change.md)
+         - [ACSD-52929: Solicitud redundante para reindexar elementos de origen predeterminados](quality-patches-tool/patches-available-in-qpt/v1-1-38/acsd-52929-redundant-request-to-re-index-default-source-items.md)
+         - [ACSD-53824: la implementación falla al actualizar la instalación](quality-patches-tool/patches-available-in-qpt/v1-1-38/acsd-53824-deployment-is-failing-on-setup-upgrade.md)
          - [ACSD-53098: los productos del catálogo compartido no se reflejan en el front-end](quality-patches-tool/patches-available-in-qpt/v1-1-38/acsd-53098-products-assigned-to-shared-catalog-not-reflecting-on-frontend-after-partial-index.md)
          - [ACSD-53347: El rendimiento de la indexación de precios se degrada gradualmente](quality-patches-tool/patches-available-in-qpt/v1-1-38/acsd-53347-price-indexing-performance-gradually-degrades.md)
          - [ACSD-47669: Error interno del servidor al importar productos con opciones personalizables](quality-patches-tool/patches-available-in-qpt/v1-1-38/acsd-47669-customizable-product-import-error.md)
       - v1.1.39 {#v1-1-39}
-         - [Descripción general: [!DNL Quality Patches Tool] (QPT) v1.1.39](quality-patches-tool/patches-available-in-qpt/v1-1-39/overview.md)
+         - [Información general:  [!DNL Quality Patches Tool] (QPT) v1.1.39](quality-patches-tool/patches-available-in-qpt/v1-1-39/overview.md)
          - [ACSD-54342: Mensaje de error al importar el archivo CSV sin datos válidos](quality-patches-tool/patches-available-in-qpt/v1-1-39/acsd-54342-error-message-when-importing-csv-file-without-valid-data.md)
          - [ACSD-54660: nuevo orden de atributos de entrada para ordenar los pedidos de los clientes en  [!DNL GraphQL]](quality-patches-tool/patches-available-in-qpt/v1-1-39/acsd-54660-new-input-attribute-sort-to-sort-customer-orders-in-graphql.md)
          - [ACSD-53583: mejore el rendimiento de reindexación parcial para los indexadores de Productos de categoría y Categorías de productos](quality-patches-tool/patches-available-in-qpt/v1-1-39/acsd-53583-improves-partial-reindex-performance-category-products-product-categories.md)
          - [ACSD-54026: Mensaje de error incorrecto para la solicitud de GraphQL updateCompanyRole](quality-patches-tool/patches-available-in-qpt/v1-1-39/acsd-54026-incorrect-error-message-for-updatecompanyrole-graphql-request.md)
          - [ACSD-47657: agrega un mecanismo de almacenamiento en caché para las credenciales de AWS](quality-patches-tool/patches-available-in-qpt/v1-1-39/acsd-47657-adds-a-caching-mechanism-for-aws-credentials.md)
-         - [ACSD-52219: Resolución de problemas de filtro de cuadrículas de administración en marcador conmutación de vista](quality-patches-tool/patches-available-in-qpt/v1-1-39/acsd-52219-resolving-saved-filters-issue.md)
-         - [ACSD-53204: El producto no se puede guardar error en solicitudes simultáneas para agregar imágenes a la galería](quality-patches-tool/patches-available-in-qpt/v1-1-39/acsd-53204-product-cant-be-saved-error-when-making-concurrent-requests.md)
-         - [ACSD-53704: Historial de saldo de puntos de recompensa calculado incorrectamente después del vencimiento](quality-patches-tool/patches-available-in-qpt/v1-1-39/acsd-53704-reward-points-balance-history-miscalculated-after-expiration.md)
+         - [ACSD-52219: resolviendo el problema de filtro de las cuadrículas de administración en el cambio de vista de marcadores](quality-patches-tool/patches-available-in-qpt/v1-1-39/acsd-52219-resolving-saved-filters-issue.md)
+         - [ACSD-53204: Error &quot;El producto no se puede guardar&quot; en solicitudes simultáneas para agregar imágenes a la galería](quality-patches-tool/patches-available-in-qpt/v1-1-39/acsd-53204-product-cant-be-saved-error-when-making-concurrent-requests.md)
+         - [ACSD-53704: el historial de saldo de puntos de recompensa se ha calculado mal tras la caducidad](quality-patches-tool/patches-available-in-qpt/v1-1-39/acsd-53704-reward-points-balance-history-miscalculated-after-expiration.md)
          - [ACSD-54106: rectificación de la clasificación de caracteres acentuados turcos en la categoría del producto](quality-patches-tool/patches-available-in-qpt/v1-1-39/acsd-54106-correcting-turkish-accented-product-sorting-issue.md)
          - [ACSD-53998: El bloque dinámico basado en el segmento del cliente funciona incorrectamente después de cerrar sesión](quality-patches-tool/patches-available-in-qpt/v1-1-39/acsd-53998-dynamic-block-based-on-customer-segment-doesnt-work-correctly-on-logging-out.md)
          - [ACSD-54776: no se guardan los valores predeterminados utilizados y los valores de campo de producto no predeterminados](quality-patches-tool/patches-available-in-qpt/v1-1-39/acsd-54776-unchecked-used-default-value-and-non-default-product-field-values-are-not-saved.md)
-      - Versión 1.1.40 {#v1-1-40}
+      - v1.1.40 {#v1-1-40}
          - [Información general:  [!DNL Quality Patches Tool] (QPT) v1.1.40](quality-patches-tool/patches-available-in-qpt/v1-1-40/overview.md)
          - [ACSD-54472: los clientes de una compañía rechazada aún pueden autenticarse y realizar pedidos](quality-patches-tool/patches-available-in-qpt/v1-1-40/acsd-54472-customers-of-rejected-company-can-still-authenticate-and-place-orders.md)
          - [ACSD-54680: no se puede procesar la cotización B2B de un producto con varias fuentes asignadas](quality-patches-tool/patches-available-in-qpt/v1-1-40/acsd-54680-b2b-quote-submitted-for-a-product-with-multiple-assigneda-sources.md)
          - [ACSD-55004: El validador se bloquea al cargar un archivo de importación que supera el valor](quality-patches-tool/patches-available-in-qpt/v1-1-40/acsd-55004-validator-crashes-while-uploading-an-import-file-larger-than-the-value.md)
-         - [ACSD-53414: los usuarios administradores restringidos pueden ver páginas de CMS fuera de sus permisos ámbito](quality-patches-tool/patches-available-in-qpt/v1-1-40/acsd-53414-restricted-admin-user-can-see-cms-pages-outside-permissions.md)
-         - [ACSD-52657: Minicart no actualizado en el segundo storeview que usa subdominio](quality-patches-tool/patches-available-in-qpt/v1-1-40/acsd-52657-minicart-not-updated-on-second-storeview.md)
+         - [ACSD-53414: los usuarios administradores restringidos pueden ver páginas de CMS fuera de su ámbito de permisos](quality-patches-tool/patches-available-in-qpt/v1-1-40/acsd-53414-restricted-admin-user-can-see-cms-pages-outside-permissions.md)
+         - [ACSD-52657: Minicart no se actualiza en la segunda vista de tienda que utiliza un subdominio](quality-patches-tool/patches-available-in-qpt/v1-1-40/acsd-52657-minicart-not-updated-on-second-storeview.md)
          - [ACSD-54007: error de _ámbito de clave de matriz no definido al importar datos de clientes](quality-patches-tool/patches-available-in-qpt/v1-1-40/acsd-54007-undefined-array-key-scope-error-importing-customer-data.md)
          - [ACSD-54040: el campo [!UICONTROL Created] está en blanco para ver los detalles del pedido cuando los módulos B2B están habilitados](quality-patches-tool/patches-available-in-qpt/v1-1-40/acsd-54040-created-field-is-blank-in-order-details-page.md)
          - [ACSD-52801: la consulta del filtro de producto de GraphQL no muestra resultados de coincidencia parciales](quality-patches-tool/patches-available-in-qpt/v1-1-40/acsd-52801-graphql-product-filter-query-not-showing-partial-match-results.md)
          - [ACSD-54961: el usuario administrador restringido no puede realizar una actualización masiva [!DNL Product Review status]](quality-patches-tool/patches-available-in-qpt/v1-1-40/acsd-54961-restricted-admin-user-cant-mass-update-product-review-status.md)
-         - [ACSD-55031: Error &quot;El tipo &quot;mixto&quot; no puede ser anulable&quot; durante la compilación](quality-patches-tool/patches-available-in-qpt/v1-1-40/acsd-55031-type-mixed-cannot-be-nullable-error-during-compilation.md)
-         - [ACSD-54319: el precio del producto muestra cero en el [!UICONTROL Products in Carts] informe](quality-patches-tool/patches-available-in-qpt/v1-1-40/acsd-54319-product-price-shows-zero-in-product-in-cart-report.md)
-         - [ACSD-54989: el administrador de la empresa no puede ordenar cuando [!UICONTROL Enable Purchase Orders] se establece en Sí y [!UICONTROL Purchase Order] se establece en No](quality-patches-tool/patches-available-in-qpt/v1-1-40/acsd-54989-order-placement-restrictions-in-company-admin-settings.md)
-         - [ACSD-53378: experiencia de pago mejorada para clientes con amplias libretas de direcciones](quality-patches-tool/patches-available-in-qpt/v1-1-40/acsd-53378-swift-checkout-for-users-with-extensive-address-books.md)
+         - [ACSD-55031: el tipo &quot;mixto&quot; no puede admitir valores NULL durante la compilación](quality-patches-tool/patches-available-in-qpt/v1-1-40/acsd-55031-type-mixed-cannot-be-nullable-error-during-compilation.md)
+         - [ACSD-54319: el precio del producto muestra cero en el informe [!UICONTROL Products in Carts]](quality-patches-tool/patches-available-in-qpt/v1-1-40/acsd-54319-product-price-shows-zero-in-product-in-cart-report.md)
+         - [ACSD-54989: el administrador de la compañía no puede realizar pedidos cuando [!UICONTROL Enable Purchase Orders] se establece en Yes y [!UICONTROL Purchase Order] se establece en No](quality-patches-tool/patches-available-in-qpt/v1-1-40/acsd-54989-order-placement-restrictions-in-company-admin-settings.md)
+         - [ACSD-53378: experiencia de pago mejorada para clientes con libretas de direcciones extensas](quality-patches-tool/patches-available-in-qpt/v1-1-40/acsd-53378-swift-checkout-for-users-with-extensive-address-books.md)
       - v1.1.41 {#v1-1-41}
          - [Información general:  [!DNL Quality Patches Tool] (QPT) v1.1.41](quality-patches-tool/patches-available-in-qpt/v1-1-41/overview.md)
          - [ACSD-54376: excepción en el carro de compras al eliminar el producto de [!UICONTROL shared catalog]](quality-patches-tool/patches-available-in-qpt/v1-1-41/acsd-54376-exception-shopping-cart-product-removed-from-shared-catalog.md)
@@ -588,7 +588,7 @@ ht-degree: 0%
          - [ACSD-55100: [!DNL GraphQL] no devuelve productos superiores a 10.000 en los resultados de búsqueda](quality-patches-tool/patches-available-in-qpt/v1-1-46/acsd-55100-graphql-does-not-return-products-beyond-10k-in-the-search-results.md)
          - [ACSD-56842: Faltan proxies diferidos y fábricas de proxy](quality-patches-tool/patches-available-in-qpt/v1-1-46/acsd-56842-deferred-proxies-and-proxy-factories-are-missing.md)
          - [ACSD-57003: el estado del pedido cambia a Completo en lugar de cambiar a Procesamiento](quality-patches-tool/patches-available-in-qpt/v1-1-46/acsd-57003-order-status-changed-to-complete-instead-of-processing.md)
-      - Versión 1.1.47 {#v1-1-47}
+      - v1.1.47 {#v1-1-47}
          - [Información general:  [!DNL Quality Patches Tool] (QPT) v1.1.47](quality-patches-tool/patches-available-in-qpt/v1-1-47/overview.md)
          - [ACSD-57074: El atributo personalizado Sí/No funciona con la indexación](quality-patches-tool/patches-available-in-qpt/v1-1-47/acsd-57074-yes-no-custom-attribute-does-not-work-with-indexing.md)
          - [ACSD-56760: el usuario administrador está restringido a un sitio web específico y no puede ordenar ni agregar nuevos productos](quality-patches-tool/patches-available-in-qpt/v1-1-47/acsd-56760-admin-user-restricted-to-specific-website.md)
@@ -620,7 +620,7 @@ ht-degree: 0%
          - [ACSD-57045: las reescrituras de URL provocan bucles de página infinitos después de que [!UICONTROL Website Root] se desmarque de [!UICONTROL Hierarchy]](quality-patches-tool/patches-available-in-qpt/v1-1-49/acsd-57045-url-rewrites-cause-infinite-page-looping-after-website-root-unchecked-hierarchy.md)
          - [ACSD-58446: La eliminación de un equipo con usuarios o equipos secundarios a través de GraphQL da un mensaje de error no informativo](quality-patches-tool/patches-available-in-qpt/v1-1-49/ascd-58446-deleting-team-with-child-users-via-graphql-gives-error.md)
          - [ACSD-58375: La clave de API de YouTube configurada incorrectamente provoca un error al añadir vídeo en el nivel de vista de tienda](quality-patches-tool/patches-available-in-qpt/v1-1-49/acsd-58375-wrong-youtube-api-key-configuration-causes-an-error.md)
-      - Versión 1.1.50 {#v1-1-50}
+      - v1.1.50 {#v1-1-50}
          - [Información general:  [!DNL Quality Patches Tool] (QPT) v1.1.50](quality-patches-tool/patches-available-in-qpt/v1-1-50/overview.md)
          - [ACSD-59036: Se produce una excepción al cargar precios de productos](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-59036-exception-occurs-when-loading-product-prices.md)
          - [ACSD-45049: la configuración de atributos del cliente [!UICONTROL Is required] no funciona según el ámbito del sitio web en el administrador](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-45049-customer-attribute-is-required-setting-doesnt-work.md)
@@ -631,17 +631,17 @@ ht-degree: 0%
          - [ACSD-59229: asignación incorrecta de datos del grupo de clientes debido a un valor X-Magento-Vary obsoleto](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-59229-customer-group-segmentation-fix.md)
          - [ACSD-60441: La actualización de clientes a través de V1/customers [!DNL REST] extremo de API genera un error](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-60441-updating-customers-via-v1-customers-rest-api.md)
          - [ACSD-58352: las etiquetas de atributo devueltas para la tienda predeterminada se devuelven mediante la API  [!DNL GraphQL] API](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-58352-return-attribute-labels-for-the-default-store-are-returned-via-graphql-api.md)
-         - [ACSD-59514: Forms en Administración con [!DNL Page Builder] error de lanzamiento en la consola explorador](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-59514-forms-in-admin-with-page-builder-throw-error-in-browser-console.md)
-         - [ACSD-58790: Correcciones de pellizco para acercar funcionalidad los detalles del producto Página las imágenes en el vista móvil en [!DNL Chrome]](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-58790-fixes-pinch-to-zoom-functionality-on-the-product-detail-page.md)
+         - [ACSD-59514: Forms en el administrador con  [!DNL Page Builder] error de lanzamiento en la consola del explorador](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-59514-forms-in-admin-with-page-builder-throw-error-in-browser-console.md)
+         - [ACSD-58790: corrige el bloqueo para ampliar la funcionalidad de las imágenes de la página de detalles del producto en la vista móvil en  [!DNL Chrome]](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-58790-fixes-pinch-to-zoom-functionality-on-the-product-detail-page.md)
          - [ACSD-58442: corrige el problema en el que los dispositivos con una anchura de 768 píxeles se tratan como móviles, lo que provoca que el menú y el encabezado se carguen en la vista móvil, no en el escritorio](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-58442-fixes-issue-devices-768px-mobile-view-instead-desktop.md)
          - [ACSD-48210: el atributo de ámbito específico de la vista de tienda anula los valores globales](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-48210-store-view-specific-scope-attribute-overrides-global-values.md)
          - [ACSD-59280: error ReflectionUnionType::getName() en instalaciones 2.4.4-pX](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-59280-fix-for-reflection-union-type-error.md)
          - [ACSD-60303: problema de colocación de orden de administrador resuelto con la minificación de HTML habilitada](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-60303-admin-order-placement-fix.md)
       - v1.1.51 {#v1-1-51}
-         - [Descripción general: [!DNL Quality Patches Tool] (QPT) v1.1.51](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/overview.md)
-         - [ACSD-60234: [!DNL PayPal] muestra un importe incorrecto cuando se aplica el descuento](quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-60234-paypal-shows-an-incorrect-amount-when-discount-is-applied.md)
-         - [ACSD-60632: Dirección guardada en cada intento de pedido](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-60632-address-saved-on-every-order-attempt.md)
-         - [ACSD-61195: El solicitud GraphQL del carro de compras no devuelve elementos en el Página final](quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-61195-empty-cart-on-final-graphql-page.md)
+         - [Información general:  [!DNL Quality Patches Tool] (QPT) v1.1.51](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/overview.md)
+         - [ACSD-60234: [!DNL PayPal] muestra una cantidad incorrecta cuando se aplica el descuento](quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-60234-paypal-shows-an-incorrect-amount-when-discount-is-applied.md)
+         - [ACSD-60632: Dirección guardada con cada intento de pedido](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-60632-address-saved-on-every-order-attempt.md)
+         - [ACSD-61195: la solicitud de GraphQL del carro de compras no devuelve elementos en la página final](quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-61195-empty-cart-on-final-graphql-page.md)
          - [ACSD-60538: los atributos no muestran si un producto está deshabilitado](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-60538-if-product-is-disabled-attributes-dont-show.md)
          - [ACSD-60631: GraphQL devuelve un error cuando el mismo producto se asigna a varios productos configurables](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-60631-graphql-returns-an-error-when-same-product-is-assigned-to-multiple-configurable-products.md)
          - [ACSD-60816: [!DNL New Relic] los scripts de supervisión del explorador insertados por el agente de APM no son compatibles con el CSP](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-51/acsd-60816-newrelic-browser-monitoring-scripts-injected-by-apm-agent-are-not-compliant-with-csp.md)
@@ -659,11 +659,11 @@ ht-degree: 0%
          - [ACSD-60788: no se ejecutaron los scripts personalizados para  [!DNL Google Tag Manager] debido a errores de CSP](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-60788-fixes-issue-where-custom-scripts-for-google-tag-manager-are-not-executed-due-to-content-security-policy-errors.md)
          - [ACSD-59952: Error al eliminar el catálogo compartido con el mismo ID de grupo que otro catálogo compartido](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-59952-error-on-deleting-shared-catalog-with-same-group-id-as-another-shared-catalog.md)
          - [ACSD-60673: [!UICONTROL Cart Price Rule] problema corregido para varios métodos de pago al finalizar la compra](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-60673-cart-price-rule-fix-for-multiple-payment-methods-at-checkout.md)
-         - [ACSD-60684: [!DNL GraphQL] la ordenación de productos por varios campos no funciona como se esperaba](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-60684-graphql-product-sorting-by-multiple-fields-does-not-work-as-expected.md)
+         - [ACSD-60684: [!DNL GraphQL] la ordenación de productos por varios campos no funciona según lo esperado](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-52/acsd-60684-graphql-product-sorting-by-multiple-fields-does-not-work-as-expected.md)
       - v1.1.53 {#v1-1-53}
-         - [Descripción general: [!DNL Quality Patches Tool] (QPT) v1.1.53](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/overview.md)
-         - [ACSD-59930: Mejora el rendimiento de los flujos de compañía](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-59930-improves-performance-of-company-flows.md)
-         - [ACSD-61553: [!UICONTROL Cart Price Rule] no se ha calculado correctamente](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-61553-cart-price-rule-discounts-are-incorrectly-calculated-when-multiple-discounts-with-different-priorities-are-applied.md)
+         - [Información general:  [!DNL Quality Patches Tool] (QPT) v1.1.53](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/overview.md)
+         - [ACSD-59930: mejora el rendimiento de los flujos de la empresa](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-59930-improves-performance-of-company-flows.md)
+         - [ACSD-61553: [!UICONTROL Cart Price Rule] se ha calculado incorrectamente](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-61553-cart-price-rule-discounts-are-incorrectly-calculated-when-multiple-discounts-with-different-priorities-are-applied.md)
          - [ACSD-60584: el token de acceso creado para un sitio web permite acceder a la información de otros sitios web](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-60584-access-token-created-for-one-website-is-allowed-to-access-information-on-other-websites.md)
          - [ACSD-61528: La recuperación de funciones mediante GraphQL no devuelve resultados](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-61528-retrieving-roles-using-graphql-returns-no-results.md)
          - [ACSD-48318: error de anidación de emulación de entorno en &quot;system.log&quot;](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-53/acsd-48318-environment-emulation-nesting-error-in-system-log.md)
@@ -699,7 +699,7 @@ ht-degree: 0%
          - [ACSD-60344: duplicar correos electrónicos de confirmación de pedido al usar [!UICONTROL Purchase Order] con aprobación automática](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-60344-duplicate-order-confirmation-emails-for-purchase-order-with-auto-approval.md)
          - [ACSD-62332: la consulta de GraphQL de la lista de productos está limitada a 10 000 productos y  [!DNL Live Search] establece la página actual en 1](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-62332-product-listing-graphql-query-limit-plus-live-search-current-page.md)
          - [ACSD-62591: el tema no cambia correctamente cuando se configura [!UICONTROL User Agent Rules]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-55/acsd-62591-fixes-theme-doesnt-switch.md)
-      - Versión 1.1.56 {#v1-1-56}
+      - v1.1.56 {#v1-1-56}
          - [Información general:  [!DNL Quality Patches Tool] (QPT) v1.1.56](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/overview.md)
          - [ACSD-61805: corrige un problema de stock en la tienda después de actualizar el estado del pedido pendiente mediante la API de REST](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-61805-stock-status-issue-storefront-backorder-status-update-rest-api.md)
          - [ACSD-60811: corrige la limitación al actualizar el estado del pedido a valores personalizados](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-60811-fixes-limitation-in-updating-order-status-to-custom-values.md)
@@ -717,7 +717,7 @@ ht-degree: 0%
          - [ACSD-55339: solución del problema de recorte de SKU en presupuestos negociables para Adobe Commerce](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-55339-resolving-sku-trimming-issue-in-negotiable-quotes-for-adobe-commerce.md)
          - [ACSD-62670: error al exportar el informe de [!UICONTROL Products Ordered] a CSV y XML](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62670-products-ordered-report-export-to-csv-xml-throws-error.md)
          - [ACSD-62755: [!DNL TinyMCE] 7 necesita que se agreguen el tamaño y la fuente a la configuración de inicialización del editor](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-56/acsd-62755-tinymce-7-needs-font-size-added-in-editor-initialization-setting.md)
-      - Versión 1.1.57 {#v1-1-57}
+      - v1.1.57 {#v1-1-57}
          - [Información general:  [!DNL Quality Patches Tool] (QPT) v1.1.57](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/overview.md)
          - [ACSD-59083: Errores de &quot;Tabla base o vista no encontrada&quot; durante actualizaciones simultáneas de mview](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-59083-fix-base-table-or-view-not-found-errors-during-simultaneous-mview-updates.md)
          - [ACSD-62951: corrige los elementos y totales que faltan en [!UICONTROL Credit Memo] correos electrónicos enviados mediante la API de REST](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-62951-fixes-missing-items-and-totals-in-credit-memo-emails-sent-via-rest-api.md)
@@ -752,17 +752,18 @@ ht-degree: 0%
          - [ACSD-63572: las tablas temporales del indexador de catálogos no se limpian si el proceso del indexador termina](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-58/acsd-63572-catalogrule-indexer-temporary-tables-arent-cleaned-if-the-indexer-process-is-terminated.md)
       - v1.1.59 {#v1-1-59}
          - [Información general:  [!DNL Quality Patches Tool] (QPT) v1.1.59](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/overview.md)
-         - [ACSD-64112: error en indexer_update_all_views ejecución cron al configurar MAGE_INDEXER_THREADS_COUNT](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-64112-indexer-update-all-views-cron-execution-fails.md)
-         - [ACSD-63454: El valor predeterminado de un atributo desplegable y de selección múltiple no se guarda correctamente en la base de datos](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63454-default-value-for-a-dropdown.md)
+         - [ACSD-64112: la ejecución de cron indexer_update_all_views falla cuando se establece MAGE_INDEXER_THREADS_COUNT](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-64112-indexer-update-all-views-cron-execution-fails.md)
+         - [ACSD-63454: El valor predeterminado para los atributos Desplegable y Selección múltiple no se guarda correctamente en la base de datos](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63454-default-value-for-a-dropdown.md)
          - [ACSD-63870: el cliente no ha cerrado sesión correctamente durante el cambio de estado de la empresa](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63870-customer-not-logged-out-properly-during-company-status-change.md)
          - [ACSD-63469: Los descuentos del carro de compras de cantidad fija no se aplican correctamente con varias reglas](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63469-whole-carts-fixed-amount-discount-not-applied-correctly.md)
          - [ACSD-64113: error del administrador al cargar una imagen con una anchura menor que la altura mediante  [!DNL Media Gallery]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-64113-errors-in-the-admin-when-uploading-images.md)
          - [ACSD-64212: el pedido no está vinculado a una cuenta de cliente creada mediante  [!DNL GraphQL]  después de realizar el pedido](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-64212-order-is-not-associated-with-a-customer-account.md)
          - [ACSD-63793: los procesos de importación interfieren entre sí en diferentes pestañas del explorador](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63793-import-processes-are-interfering-with-each-other-in-different-browser-tabs.md)
          - [ACSD-63574: agregar el listado [!UICONTROL Bundle Product] al bloque mediante  [!DNL Page Builder] genera un error](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63574-adding-bundle-product-listing-to-block-via-page-builder-results-in-error.md)
-      - Versión 1.1.60 {#v1-1-60}
+      - v1.1.60 {#v1-1-60}
          - [Información general: [!DNL Quality Patches Tool] (QPT) v1.1.60](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/overview.md)
          - [ACSD-63323: resuelve la funcionalidad [!UICONTROL Select All] y mejora la paginación y el recuento de registros en la ventana emergente de categoría de producto](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-63323-resolves-select-all-functionality-and-enhances-pagination-and-record-count-in-product-category-popup.md)
+         - [ACSD-64149: el segmento de cliente con una condición [!UICONTROL Date range] se puede guardar cuando solo se edita una fecha](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/ascd-64149-customer-segment-with-a-date-range-condition.md)
          - [ACSD-64111: corrige el error InvalidArgumentException: la clase no existe al establecer condiciones anidadas para un componente de producto en  [!DNL Page Builder]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-64111-fixes-issue-where-invalidargumentexceptionclass-does-not-exist-error-occurs-in-vendor-magento-module-rule-model-conditionfactoryphp50-when-setting-nested-conditions-for-a-product-component-in-page-builder.md)
          - [ACSD-63992: [!UICONTROL Cart Price Rule] con error de condición de método de envío y cupón en la IU de administración](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-60/acsd-63992-admin-ui-cart-rule-shipping-method.md)
       - v1.1.61 {#v1-1-61}
@@ -770,6 +771,9 @@ ht-degree: 0%
          - [Información general:  [!DNL Quality Patches Tool] (QPT) v1.1.61](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/overview.md)
          - [ACP2E-3689: Varios problemas con la visualización del árbol de categorías en niveles más profundos y que reflejan relaciones de anclaje/no anclaje](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acp2e-3689-issues-with-category-tree-display-reflect-anchor-non-anchor-relationships.md)
          - [ACSD-64178: [!UICONTROL Edit Attribute Set] la página se carga lentamente con miles de atributos de producto](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64178-attribute-set-edit-page-loads-slow-with-thousands-of-attributes.md)
+         - [ACSD-63883: corrigiendo items_count incorrectos en [!DNL GraphQL] respuesta para [!UICONTROL Requisition List]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-63883-fixes-the-issue-where-the-requisition-list.md)
+         - [ACP2E-3705: la ejecución de cron indexer_update_all_views falla cuando se establece MAGE_INDEXER_THREADS_COUNT](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acp2e-3705-fixes-an-issue-where-the-indexer.md)
+         - [ACSD-64467: el editor de WYSIWYG está vacío después de guardar la descripción de la categoría en el nivel de vista de tienda](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64467-wysiwyg-editor-empty-after-saving-category-description.md)
          - [ACSD-63974: corrige el tiempo de carga de [!UICONTROL Requisition List] lento con la paginación](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-63974-fixes-the-issue-where-the-requisition-list-page-takes-a-long-time.md)
    - [Comprobar parche para el problema de Adobe Commerce con la herramienta Parches de calidad](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Referencia de herramientas de la línea de comandos {#cli-reference}
@@ -779,12 +783,12 @@ ht-degree: 0%
    - [Introducción](observation-for-adobe-commerce/intro.md)
    - [Cómo acceder a](observation-for-adobe-commerce/access.md)
    - [Selección de la cuenta y el periodo de tiempo](observation-for-adobe-commerce/selecting-the-account.md)
-   - [Selección de las pestañas enfocar](observation-for-adobe-commerce/choosing-focus-tabs.md)
-   - [El resumen pestaña](observation-for-adobe-commerce/summary.md)
-   - [El Elasticsearch pestaña](observation-for-adobe-commerce/elasticsearch.md)
-   - [El pestaña de Redis](observation-for-adobe-commerce/redis-tab.md)
-   - [El pestaña MySQL](observation-for-adobe-commerce/mysql-tab.md)
-   - [El PHP pestaña](observation-for-adobe-commerce/php-tab.md)
+   - [Elección de las pestañas de enfoque](observation-for-adobe-commerce/choosing-focus-tabs.md)
+   - [La pestaña Resumen](observation-for-adobe-commerce/summary.md)
+   - [La pestaña Elasticsearch](observation-for-adobe-commerce/elasticsearch.md)
+   - [La ficha Redis](observation-for-adobe-commerce/redis-tab.md)
+   - [La pestaña MySQL](observation-for-adobe-commerce/mysql-tab.md)
+   - [La pestaña PHP](observation-for-adobe-commerce/php-tab.md)
    - [La pestaña Bots](observation-for-adobe-commerce/bots.md)
    - [La pestaña Implementar](observation-for-adobe-commerce/deploy-tab.md)
    - [La pestaña Alertas](observation-for-adobe-commerce/alerts-tab.md)
@@ -809,7 +813,7 @@ ht-degree: 0%
       - [Configurar](data-migration-tool/configure.md)
       - [Personalizar](data-migration-tool/customize.md)
       - [Especificación técnica](data-migration-tool/technical-specification.md)
-   - Migración de datos {#migrate-data}
+   - Migrar datos {#migrate-data}
       - [Información general](data-migration-tool/migrate-data/overview.md)
       - [Configuración](data-migration-tool/migrate-data/settings.md)
       - [Datos](data-migration-tool/migrate-data/data.md)
