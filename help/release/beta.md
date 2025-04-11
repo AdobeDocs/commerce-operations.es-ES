@@ -1,116 +1,116 @@
 ---
-title: Versiones Beta
-description: Obtenga más información sobre las versiones beta de Adobe Systems Commerce y aprenda a participar.
+title: Versiones de Beta
+description: Obtenga información sobre las versiones beta de Adobe Commerce y cómo participar.
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
-source-git-commit: c523b57270370d87be0f2ab0513f7908bb0a7173
+source-git-commit: ea4f340540e57b282657a44502d80f1d5c409c6a
 workflow-type: tm+mt
-source-wordcount: '931'
+source-wordcount: '930'
 ht-degree: 0%
 
 ---
 
-# Versiones beta de Adobe Systems Commerce
+# Versiones beta de Adobe Commerce
 
-Adobe Systems programas beta de Commerce son una forma para que los comerciantes obtengan acceso a funciones y código de prelanzamiento, proporcionen comentarios y guía el futuro de Adobe Systems Commerce. Hay dos tipos de programas beta:
+Los programas beta de Adobe Commerce son una forma para que los comerciantes accedan a las funciones y el código de la versión preliminar, proporcionen comentarios y guíen el futuro de Adobe Commerce. Existen dos tipos de programas beta:
 
-- Beta público: hay una programa beta pública disponible para todos los clientes y socios de Adobe Systems Commerce
-- Beta privado: un programa beta privado puede requerir una aprobación basada en los criterios de calificación para participar
+- Beta público: Hay un programa beta público disponible para todos los clientes y socios de Adobe Commerce
+- Private Beta: Un programa beta privado puede requerir una aprobación basada en los criterios de calificación para participar
 
 >[!IMPORTANT]
 >
->Beta lanzamientos pueden contener defectos y se proporcionan &quot;TAL CUAL&quot; sin garantía de ningún tipo. Adobe Systems no tendrá ninguna obligación de mantener, corregir, actualizar, cambiar, modificar o apoyar (a través de Adobe Systems Servicios de soporte o de otro modo) las versiones beta. Se recomienda a los clientes que tengan cuidado y que no confíen de ninguna manera en el correcto funcionamiento o rendimiento de las versiones beta y/o de cualquier documentación o material que lo acompañe. Las funciones y las API en versión beta están sujetas a cambios sin previo aviso. En consecuencia, cualquier uso de las versiones beta es bajo el propio riesgo del cliente.
+>Las versiones de Beta pueden contener defectos y se proporcionan &quot;TAL CUAL&quot; sin garantía de ningún tipo. Adobe no tendrá ninguna obligación de mantener, corregir, actualizar, cambiar, modificar o admitir de otro modo (a través de los servicios de soporte de Adobe o de otro modo) las versiones beta. Se recomienda a los clientes que tengan cuidado y no dependan en modo alguno del correcto funcionamiento o rendimiento de las versiones beta y/o de la documentación o los materiales adjuntos. Las funciones y las API de la versión beta están sujetas a cambios sin previo aviso. Por lo tanto, cualquier uso de las versiones beta es totalmente bajo el propio riesgo del cliente.
 
-## Beneficios de participar
+## Ventajas de participar
 
-Obtener acceso temprano a las funciones que Adobe Systems está desarrollando proporciona a los clientes y socios la capacidad de proporcionar comentarios, dar forma al desarrollo de productos y prepararse para adoptar nuevas capacidades antes de la disponibilidad general.
+El acceso anticipado a las funciones que Adobe está desarrollando permite a los clientes y socios proporcionar comentarios, dar forma al desarrollo de productos y prepararse para adoptar nuevas funciones antes de la disponibilidad general.
 
-## Programas de Beta actuales
+## Programas actuales de Beta
 
-Consulte las siguientes secciones para obtener una lista de los programas beta activos.
+Consulte las secciones siguientes para obtener una lista de los programas beta activos.
 
 ### Adobe Commerce Optimizer
 
-Adobe Systems Commerce Optimizer mejora su experiencia comercio electrónico con un escaparate de alto rendimiento, lo que aumenta la tráfico orgánica, el participación al cliente y la ingresos.
+Adobe Commerce Optimizer mejora su experiencia de comercio electrónico con una tienda de alto rendimiento, lo que aumenta el tráfico orgánico, la participación de los clientes y los ingresos.
 
-Con Adobe Systems Commerce Optimizer puedes:
+Con Adobe Commerce Optimizer, puede:
 
-- Haga crecer y escale su catálogo sin tener que cambiar la plataforma de toda su pila de comercio.
-- Ingiera datos de catálogo de cualquier origen.
-- Definir canales de negocio y políticas.
-- Crear recomendaciones y búsqueda personalizados mediante IA y ML.
-- Ver disponibilidad crucial de los datos del producto, incluidos el estado de sincronización y los datos de eventos del escaparate para una implementación y solución de problemas precisos.
+- Amplíe y escale su catálogo sin volver a plataformas toda su pila de comercio.
+- Introduzca datos de catálogo de cualquier fuente.
+- Definir canales y directivas empresariales.
+- Cree búsquedas y recomendaciones personalizadas con IA y ML.
+- Vea la disponibilidad de datos de productos cruciales, incluido el estado de sincronización y los datos de eventos de tienda para una implementación y solución de problemas precisas.
 
-[Obtén más](https://experienceleague.adobe.com/docs/commerce/optimizer/overview.html) información sobre Adobe Systems Commerce Optimizer. Si desea gustar participar en el programa de acceso anticipado de Adobe Systems Commerce Optimizer, envíe un solicitud de correo electrónico a [commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com).
+[Más información](https://experienceleague.adobe.com/docs/commerce/optimizer/overview.html) sobre Adobe Commerce Optimizer. Si está interesado en obtener más información sobre el programa de acceso anticipado [!DNL Adobe Commerce Optimizer], complete el [formulario de solicitud de acceso anticipado](https://forms.office.com/Pages/ResponsePage.aspx?id=Wht7-jR7h0OUrtLBeN7O4WOxhjY2doZPikS2hIbfmL5UMlhTMTYzVDhPQVFNTUFYUjJHNlRKTE5TWS4u).
 
-### Capacidades de búsqueda mejoradas para Search en vivo (Beta públicas)
+### Funciones de búsqueda mejoradas para Live Search (Beta público)
 
-Esta versión beta admite tres nuevas capacidades en la [`productSearch` consulta](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/):
+Esta versión beta admite tres nuevas funciones en la consulta [`productSearch` ](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/):
 
-- **El búsqueda** en capas (Search dentro de otro contexto búsqueda) Con esta capacidad, puede realizar hasta dos capas de búsqueda para sus consultas búsqueda. Por ejemplo:
+- **Búsqueda por niveles** - Buscar en otro contexto de búsqueda - Con esta capacidad, puede realizar hasta dos niveles de búsqueda para sus consultas de búsqueda. Por ejemplo:
 
-   - **Capa 1 búsqueda** - Search para &quot;motor&quot; en &quot;product_attribute_1&quot;.
-   - **Capa 2 búsqueda** - Search para &quot;número de pieza 123&quot; en &quot;product_attribute_2&quot;. Este ejemplo busca &quot;número de pieza 123&quot; dentro de los resultados de &quot;motor&quot;.
+   - **Búsqueda de nivel 1** - Busque &quot;motor&quot; en &quot;product_attribute_1&quot;.
+   - **Búsqueda de nivel 2** - Busque &quot;número de pieza 123&quot; en &quot;product_attribute_2&quot;. En este ejemplo se busca &quot;número de pieza 123&quot; dentro de los resultados para &quot;motor&quot;.
 
-  La búsqueda estratificada está disponible tanto para la indexación `contains` búsqueda como `startsWith` para la indexación búsqueda, tal y como se describe a continuación:
+  La búsqueda por capas está disponible tanto para la indexación de búsqueda `startsWith` como para la indexación de búsqueda `contains`, tal como se describe a continuación:
 
-- **startsWith búsqueda indexación** : Search utilizar `startsWith` la indexación. Esta nueva capacidad permite:
+- **comienza con la indexación de búsqueda** - La búsqueda usa la indexación `startsWith`. Esta nueva capacidad permite:
 
-   - Buscar productos en los que el valor del atributo comience con una cadena determinada.
-   - La configuración de un búsqueda &quot;termina con&quot; para que los compradores puedan búsqueda productos donde el valor del atributo termina con una cadena en particular. Para habilitar una búsqueda &quot;termina con&quot;, el atributo del producto debe ingerirse a la inversa y la llamada a la API también debe ser una cadena invertida.
+   - Búsqueda de productos en los que el valor del atributo empieza con una cadena determinada.
+   - Configuración de una búsqueda &quot;termina con&quot; para que los compradores puedan buscar productos en los que el valor del atributo termine con una cadena en particular. Para habilitar una búsqueda &quot;termina con&quot;, el atributo del producto debe ingerirse a la inversa y la llamada de API también debe ser una cadena invertida.
 
-- **contiene búsqueda indexación** -Search un atributo que utiliza contiene indexación. Esta nueva capacidad permite:
+- **contiene indización de búsqueda**: la búsqueda de un atributo mediante contiene indización. Esta nueva capacidad permite:
 
-   - Buscar un consulta dentro de una cadena más grande. Por ejemplo, si un comprador busca el número de producto &quot;PE-123&quot; en la cadena &quot;HAPE-123&quot;.
+   - Búsqueda de una consulta dentro de una cadena más grande. Por ejemplo, si un comprador busca el número de producto PE-123 en la cadena HAPE-123.
 
-      - Nota: Este tipo de búsqueda es diferente del búsqueda](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#phrase) de frases existente[, que realiza un búsqueda de autocompletado. Por ejemplo, si el valor de atributo del producto es &quot;pantalones al aire libre&quot;, una frase búsqueda devuelve una respuesta para &quot;out pan&quot;, pero no devuelve una respuesta para &quot;oor ants&quot;. A contiene búsqueda, sin embargo, devuelve una respuesta para &quot;oor ants&quot;.
+      - Nota: este tipo de búsqueda es diferente de la búsqueda de frases [existente](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#phrase), que realiza una búsqueda de autocompletar. Por ejemplo, si el valor de atributo del producto es &quot;pantalones de exterior&quot;, una búsqueda de frase devuelve una respuesta para &quot;sin bandeja&quot;, pero no devuelve una respuesta para &quot;u hormigas&quot;. Sin embargo, una búsqueda contiene sí devuelve una respuesta para &quot;o hormigas&quot;.
 
-Estas nuevas condiciones mejoran el mecanismo de filtrado de consulta de búsqueda para restringir búsqueda resultados. Estas nuevas condiciones no afectan a la consulta de búsqueda principal. Para participar en la versión beta, envíe un solicitud de correo electrónico a [commerce-store-services](mailto:commerce-storefront-services@adobe.com).
+Estas nuevas condiciones mejoran el mecanismo de filtrado de consultas de búsqueda para restringir los resultados de búsqueda. Estas nuevas condiciones no afectan a la consulta de búsqueda principal. Para participar en la versión beta, envía una solicitud por correo electrónico a [commerce-storefront-services](mailto:commerce-storefront-services@adobe.com).
 
-Para instalar la versión beta de Live Search, consulte el [guía de Live Search](https://experienceleague.adobe.com/en/docs/commerce/live-search/install#install-the-live-search-beta).
+Para instalar la versión beta de Live Search, consulta la [guía de Live Search](https://experienceleague.adobe.com/en/docs/commerce/live-search/install#install-the-live-search-beta).
 
-### Integración del sistema de gestión de pedidos de IBM Sterling (Beta privado)
+### Integración del sistema IBM Sterling Order Management (Private Beta)
 
-Este acelerador de integración para IBM Sterling Order Management permite a los clientes de Adobe Systems Commerce comenzar con capacidades avanzadas de gestión de pedidos impulsadas por IBM Sterling OMS. Con esta integración, los comerciantes obtienen:
+Este acelerador de integración para IBM Sterling Order Management permite a los clientes de Adobe Commerce empezar a utilizar las funciones avanzadas de gestión de pedidos con tecnología IBM Sterling OMS. Con esta integración, los comerciantes obtienen:
 
-- Visibilidad en tiempo real de los niveles de inventario y fechas de envío precisas para sus clientes.
-- Abastecimiento automatizado para pedidos basado en reglas configurables, para que pueda optimizar su red de cumplimiento y inventario.
-- Una vista universal de pedidos a través de canales desde un solo panel para que sus equipos de soporte puedan ofrecer un servicio excepcional e identificar y manejar excepciones rápidamente.
-- Un flujo de gestión de devoluciones con plantillas para simplificar la gestión de devoluciones.
+- Visibilidad en tiempo real de los niveles de inventario y fechas de entrega precisas para sus clientes.
+- Abastecimiento automatizado de pedidos basado en reglas configurables, para que pueda optimizar su red de satisfacción de pedidos y su inventario.
+- Una vista universal de los pedidos en todos los canales desde un único panel para que sus equipos de asistencia puedan ofrecer un servicio excepcional e identificar y gestionar las excepciones rápidamente.
+- Flujo de administración de devoluciones con plantillas para simplificar la administración de devoluciones.
 
-Para participar en esta versión beta, envíe un solicitud de correo electrónico a [sbieber@adobe.com](mailto:sbieber@adobe.com).
+Para participar en esta versión beta, envía una solicitud por correo electrónico a [sbieber@adobe.com](mailto:sbieber@adobe.com).
 
-### Adobe Systems Fundación de Comercio (Beta Pública)
+### Adobe Commerce Foundation (Beta público)
 
-Cada versión beta de Adobe Systems Commerce Foundation incluye todos los cambios entregados al código principal de Adobe Systems Commerce en la fecha de lanzamiento programada, incluidas, entre otras, las siguientes áreas funcionales:
+Cada versión beta de Adobe Commerce Foundation incluye todos los cambios entregados al código principal de Adobe Commerce en la fecha programada de lanzamiento, incluidas, entre otras, las siguientes áreas funcionales:
 
 - Últimas correcciones de seguridad
-- Mejoras en el rendimiento
+- Mejoras de rendimiento
 - Mejoras de GraphQL
-- Correcciones de errores de calidad general
-- Contribuciones de la comunidad
-- Cambios necesarios para admitir la compatibilidad con [los servicios de Adobe Systems Commerce](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)
+- Correcciones de errores de calidad generales
+- Contribuciones comunitarias
+- Cambios necesarios para admitir la compatibilidad con [servicios de Adobe Commerce](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html)
 
-#### Convención de nomenclatura y programación
+#### Convenciones y programación de nombres
 
-Adobe Systems generalmente lanza parches beta dos veces al año.
+Adobe suele publicar parches beta dos veces al año.
 
-Beta paquetes de lanzamiento tienen un `-betaX` sufijo. Por ejemplo, los paquetes de la versión beta de Adobe Systems Commerce 2.4.7 utilizan la siguiente convención de nomenclatura:
+Los paquetes de la versión de Beta tienen un sufijo `-betaX`. Por ejemplo, los paquetes de la versión beta de Adobe Commerce 2.4.7 utilizan la siguiente convención de nombres:
 
 - `2.4.7-beta1`
 - `2.4.7-beta2`
 
-Consulte el [calendario](schedule.md) de lanzamiento para conocer la lista de las próximas fechas de lanzamiento de la versión beta pública.
+Consulte la [programación de versiones](schedule.md) para ver la lista de próximas fechas de lanzamiento de la versión beta pública.
 
 #### Acceso a la versión de Beta
 
-Adobe Systems versiones beta de Commerce se distribuyen de la misma manera que cualquier otra versión de parche de Adobe Systems Commerce: como metapaquetes de Composer en `https://repo.magento.com`. El código fuente está disponible en [GitHub](https://github.com/magento/magento2).
+Las versiones beta de Adobe Commerce se distribuyen de la misma manera que cualquier otra versión de parche de Adobe Commerce: como metapaquetes de Compositor en `https://repo.magento.com`. El código fuente está disponible en [GitHub](https://github.com/magento/magento2).
 
-Consulte [la inicio](../installation/composer.md) de instalación rápida de Composer para obtener más información.
+Consulte [Inicio rápido de la instalación del compositor](../installation/composer.md) para obtener más información.
 
-#### Problema sistema de informes
+#### Informe de problemas
 
-Adobe Systems no proporciona el servicio de asistencia estándar de Adobe Systems para las versiones beta.
+Adobe no proporciona el servicio de asistencia estándar de Adobe para las versiones beta.
 
-Para enviar comentarios relacionados con las versiones beta, seguir nuestro [flujo regular de sistema de informes de](https://developer.adobe.com/commerce/contributor/guides/code-contributions/) edición en [GitHub](https://github.com/magento/magento2).
+Para enviar comentarios relacionados con las versiones beta, sigue nuestro [flujo regular de informes de problemas](https://developer.adobe.com/commerce/contributor/guides/code-contributions/) en [GitHub](https://github.com/magento/magento2).
 
-Nuestros equipos internos monitor todos los problemas esencial reportados en relación con la última versión beta y priorizarán que se resuelvan antes de la fecha de lanzamiento de GA.
+Nuestros equipos internos monitorizarán todos los problemas críticos notificados en relación con la última versión beta y les darán prioridad para que se resuelvan antes de la fecha de lanzamiento de GA.
