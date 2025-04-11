@@ -1,9 +1,9 @@
 ---
 title: Guía de instalación
-description: Usa esta guía para instalar [!DNL Site-Wide Analysis Tool] para tu sitio web
+description: Utilice este guía para instalar [!DNL Site-Wide Analysis Tool] en su sitio Web
 exl-id: ba36dc74-806d-49c5-b4d1-ba53ed4076fb
 feature: Configuration, Install
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 16feb8ec7ecc88a6ef03a769d45b1a3a2fe88d97
 workflow-type: tm+mt
 source-wordcount: '1136'
 ht-degree: 0%
@@ -14,27 +14,27 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->A partir del 23 de abril de 2024, [!DNL Site-Wide Analysis Tool] se retirará del mercado para todos los clientes locales de Adobe Commerce.
+>A partir del 23 de abril de 2024, el se retirará del [!DNL Site-Wide Analysis Tool] mercado para todos los clientes locales de Adobe Systems Commerce.
 
-[!DNL Site-Wide Analysis Tool] proporciona supervisión de rendimiento, informes y recomendaciones en tiempo real las 24 horas del día, los 7 días de la semana para garantizar la seguridad y la operabilidad de Adobe Commerce en instalaciones de infraestructura en la nube. También proporciona información detallada sobre los parches disponibles e instalados, las extensiones de terceros y la instalación de Adobe Commerce.
+Proporciona [!DNL Site-Wide Analysis Tool] monitoreo de rendimiento en tiempo real las 24 horas del día, los 7 días de la semana, informes y recomendaciones para garantizar la seguridad y operatividad de Adobe Systems Commerce en instalaciones infraestructura en la nube. También proporciona información detallada sobre los parches disponibles e instalados, las extensiones de terceros y la instalación de Adobe Systems Commerce.
 
 >[!INFO]
 >
->Obtenga información sobre [cómo habilitar](../site-wide-analysis-tool/access.md) [!DNL Site-Wide Analysis Tool] y generar informes.
+>Aprenda [a habilitar](../site-wide-analysis-tool/access.md) y [!DNL Site-Wide Analysis Tool] generar informes.
 
-Si tiene una instalación local de Adobe Commerce, instale un agente en su infraestructura para utilizar la herramienta. No es necesario instalar el agente en Adobe Commerce en proyectos de infraestructura en la nube.
+Si tiene una instalación local de Adobe Systems Commerce, instale un agente en su infraestructura para usar el herramienta. No es necesario instalar el agente en Adobe Systems Commerce en infraestructura en la nube proyectos.
 
 ## Agente
 
-El agente [!DNL Site-Wide Analysis Tool] le permite usar [!DNL Site-Wide Analysis Tool] para instalaciones locales de Adobe Commerce.
+El [!DNL Site-Wide Analysis Tool] agente le permite usar el [!DNL Site-Wide Analysis Tool] para instalaciones locales de Adobe Systems Commerce.
 
-El agente [!DNL Site-Wide Analysis Tool] recopila datos empresariales y de aplicaciones, los analiza y proporciona información adicional sobre el estado de la instalación para que pueda mejorar la experiencia del cliente. Supervisa la aplicación y le ayuda a identificar problemas de rendimiento, seguridad, disponibilidad y aplicaciones.
+El [!DNL Site-Wide Analysis Tool] agente recopila datos aplicación y empresariales, los analiza y proporciona información adicional sobre el estado de su instalación para que pueda mejorar experiencia del cliente. Supervisa su aplicación y le ayuda a identificar problemas de rendimiento, seguridad, disponibilidad y aplicación.
 
 La instalación del agente requiere los siguientes pasos:
 
 1. Compruebe los requisitos del sistema.
 
-1. Configure las claves API en la extensión [!UICONTROL Commerce Services Connector].
+1. Configure las claves de API en la [!UICONTROL Commerce Services Connector] extensión.
 
 1. Instale el agente.
 
@@ -42,27 +42,27 @@ La instalación del agente requiere los siguientes pasos:
 
 >[!INFO]
 >
->El agente admite instalaciones de Adobe Commerce de varios nodos. Instale y configure el agente en cada nodo.
+>El agente admite instalaciones de comercio Adobe Systems nodo múltiples. Instale y configure el agente en cada nodo.
 
-## Requisitos del sistema
+## requisitos del sistema
 
-Su infraestructura local debe cumplir los siguientes requisitos antes de instalar el agente:
+La infraestructura local debe cumplir los siguientes requisitos antes de instalar el agente:
 
 - Sistemas operativos
 
-   - Distribuciones de [!DNL Linux x86-64], como [!DNL Red Hat® Enterprise Linux (RHEL)], [!DNL CentOS], [!DNL Ubuntu], [!DNL Debian] y similares
+   - [!DNL Linux x86-64] distribuciones, como [!DNL Red Hat® Enterprise Linux (RHEL)], [!DNL CentOS], [!DNL Ubuntu], [!DNL Debian], y similares
 
   >[!IMPORTANT]
   >
-  >Adobe Commerce no es compatible con [!DNL Microsoft Windows] ni [!DNL macOS].
+  >Adobe Systems El comercio no es compatible con [!DNL Microsoft Windows] o [!DNL macOS].
 
-- Adobe Commerce 2.4.5-p1 o posterior (debido a la dependencia del conector de servicio)
+- Adobe Systems Commerce 2.4.5-p1 o posterior (debido a la dependencia de Service Connector)
 
 - [!DNL Commerce Services Connector extension]
 
-- CLI DE PHP
+- PHP CLI
 
-- Utilidades de Bash/Shell
+- Utilidades Bash/shell
 
    - `php`
 
@@ -78,41 +78,41 @@ Su infraestructura local debe cumplir los siguientes requisitos antes de instala
 
 ## [!DNL Commerce Services Connector]
 
-El agente requiere que la extensión [[!DNL Commerce Services Connector]](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) esté instalada en el sistema y [configurada](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) con claves API. Para comprobar que la extensión está instalada, ejecute el siguiente comando:
+El agente requiere que la [[!DNL Commerce Services Connector]](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html) extensión esté instalada en el sistema y [configurada](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html) con claves API. Para comprobar que la extensión está instalada, ejecute el siguiente comando:
 
 ```bash
 bin/magento module:status Magento_ServicesId
 ```
 
-Si ha instalado la extensión y la ha configurado con una clave de API existente para un servicio diferente, **DEBE volver a generar la clave de API** y actualizarla en el administrador de Adobe Commerce para el agente.
+Si ha instalado la extensión y la ha configurado con una clave de API existente para un servicio diferente, **DEBE volver a generar la clave** de API y actualizarla en el Administrador de Adobe Systems Commerce del agente.
 
-1. Ponga su sitio web en [modo de mantenimiento](../../installation/tutorials/maintenance-mode.md).
+1. Ponga su sitio web en [modo](../../installation/tutorials/maintenance-mode.md) de mantenimiento.
 
 1. Inicie sesión en [account.magento.com](https://account.magento.com/customer/account/login?_ga=2.164207871.117144580.1649172612-1623400270.1640858671).
 
    >[!NOTE]
    >
-   > Si tiene problemas para acceder a su cuenta, consulte [No se puede iniciar sesión en la asistencia de Adobe Commerce o en la cuenta de la nube](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/unable-to-log-in-to-support-or-cloud-project.html) para obtener ayuda sobre la solución de problemas.
+   > Si tiene problemas para acceder a su cuenta, consulte [No se puede iniciar sesión en el soporte de Adobe Systems Commerce o nube cuenta](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/unable-to-log-in-to-support-or-cloud-project.html) para obtener ayuda sobre la solución de problemas.
 
 1. Haga clic en **[!UICONTROL API Portal]**.
 
-1. Haga clic en **[!UICONTROL Delete]** junto a la clave de API existente.
+1. Haga clic **[!UICONTROL Delete]** junto a la clave de API existente.
 
-1. [Configurar](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) una nueva clave de API.
+1. [Configure](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html) una nueva clave de API.
 
 >[!IMPORTANT]
 >
-> Si genera claves nuevas en el portal de API, actualice inmediatamente las claves de API en [!DNL Admin configuration]. Si genera claves nuevas y no las actualiza en [!DNL Admin], las extensiones SaaS dejarán de funcionar y perderá datos valiosos.
+> Si genera nuevas claves en API Portal, actualice inmediatamente las claves de API en el [!DNL Admin configuration]archivo . Si genera nuevas claves y no actualiza las claves en , [!DNL Admin]sus extensiones SaaS dejarán de funcionar y perderá datos valiosos.
 
-Si la extensión no está instalada, siga las siguientes instrucciones para instalarla:
+Si la extensión no está instalada, siga estas instrucciones para instalarla:
 
-1. Agregue la extensión al archivo `composer.json` e instálelo.
+1. añadir la extensión del `composer.json` archivo e instálela.
 
    ```bash
    composer require magento/services-id
    ```
 
-1. Active la extensión de.
+1. Habilite la extensión.
 
    ```bash
    bin/magento module:enable Magento_ServicesId
@@ -130,19 +130,19 @@ Si la extensión no está instalada, siga las siguientes instrucciones para inst
    bin/magento cache:clean
    ```
 
-1. [Configure las claves API](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) para conectar la extensión a su sistema.
+1. [Configure las claves](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html) de API para conectar la extensión al sistema.
 
-## Instalación del agente
+## Instale el agente
 
-Hemos creado [shell script](https://github.com/magento-swat/install-agent-helpers/blob/main/install.sh) para simplificar la instalación. Se recomienda usar el script shell, pero puede seguir el método de [instalación manual](#manual) si es necesario.
+Hemos creado un [script](https://github.com/magento-swat/install-agent-helpers/blob/main/install.sh) de shell para simplificar la instalación. Se recomienda utilizar la secuencia de comandos de shell, pero puede seguir el método de [instalación](#manual) manual si es necesario.
 
 >[!INFO]
 >
->Una vez instalado el agente, se actualizará automáticamente cuando haya una nueva versión disponible.
+>Una vez instalado el agente, se actualizará automáticamente cuando haya una versión nueva disponible.
 
-### Con scripts
+### Guión
 
-1. Descargue y ejecute el script shell.
+1. Descargue y ejecute la secuencia de comandos del shell.
 
    ```bash
    bash -c "$(wget -qO - https://raw.githubusercontent.com/magento-swat/install-agent-helpers/main/install.sh)"
@@ -150,9 +150,9 @@ Hemos creado [shell script](https://github.com/magento-swat/install-agent-helper
 
    >[!TIP]
    >
-   >Se recomienda instalar el agente fuera del directorio raíz del proyecto de Adobe Commerce.
+   >Se recomienda instalar el agente fuera del directorio del proyecto de Adobe Systems Commerce raíz.
 
-1. Compruebe la instalación.
+1. Verifique la instalación.
 
    ```bash
    ./scheduler -v
@@ -165,49 +165,49 @@ Hemos creado [shell script](https://github.com/magento-swat/install-agent-helper
 
 1. Después de descargar e instalar el agente, [configúrelo para que se ejecute](#run-the-agent) mediante uno de los métodos siguientes:
 
-   - [Servicio](#service) (preferido si tiene acceso raíz)
+   - [Servicio](#service) (preferido si tiene acceso root)
 
    - [Cron](#cron)
 
 ### Manual {#manual}
 
-Si no desea usar nuestro [script shell](https://github.com/magento-swat/install-agent-helpers/blob/main/install.sh) para instalar el agente, debe instalarlo manualmente siguiendo estos pasos:
+Si no desea utilizar nuestro [script](https://github.com/magento-swat/install-agent-helpers/blob/main/install.sh) de shell para instalar el agente, debe instalarlo manualmente siguiendo estos pasos:
 
-1. Cree un directorio en el que quiera descargar el agente.
+1. Crear un directorio al que desee descargar el agente.
 
    >[!TIP]
    >
-   >Se recomienda instalar el agente fuera del directorio raíz del proyecto de Adobe Commerce.
+   >Se recomienda instalar el agente fuera del directorio del proyecto de Adobe Systems Commerce raíz.
 
-1. Descargue el archivo binario y desempaquete.
+1. Descargue el archivo binario y descomprímalo.
 
    >[!INFO]
    >
-   >Para usar [!DNL Site-Wide Analysis Tool], primero debe leer y aceptar los Términos de uso que se presentan al acceder al panel desde el Administrador de Adobe Commerce.
+   >Para usar el [!DNL Site-Wide Analysis Tool], primero debe leer y aceptar los Condiciones de uso que se presentan cuando accede al panel desde el Administrador de comercio de Adobe Systems.
 
-   Para la arquitectura **AMD64**:
+   Para la **arquitectura AMD64** :
 
-   1. Descargue el archivo del lanzador.
+   1. Descargue el archivo lanzador.
 
       ```bash
       curl -O https://updater.supportinsights.adobe.com/launcher/launcher.linux-amd64.tar.gz
       ```
 
-   1. Desempaquete el archivo del lanzador.
+   1. Descomprima el archivo lanzador.
 
       ```bash
       tar -xf launcher.linux-amd64.tar.gz
       ```
 
-   Para la arquitectura **ARM64**:
+   Para la **arquitectura ARM64** :
 
-   1. Descargue el archivo del lanzador.
+   1. Descargue el archivo lanzador.
 
       ```bash
       curl -O https://updater.supportinsights.adobe.com/launcher/launcher.linux-arm64.tar.gz
       ```
 
-   1. Desempaquete el archivo del lanzador.
+   1. Descomprima el archivo lanzador.
 
       ```bash
       tar -xf launcher.linux-arm64.tar.gz
@@ -223,13 +223,13 @@ Si no desea usar nuestro [script shell](https://github.com/magento-swat/install-
    openssl dgst -sha256 -verify release.pub -signature launcher.sha256 launcher.checksum
    ```
 
-1. *(Opcional)* Compruebe la suma de comprobación.
+1. *(Opcional)* Verificar la suma de comprobación.
 
    ```bash
    shasum -a 512 -c launcher.checksum
    ```
 
-1. Cree el archivo `config.yaml` con el siguiente contenido.
+1. Crear el `config.yaml` archivo con el siguiente contenido.
 
    ```yaml
    project:
@@ -262,19 +262,19 @@ Si no desea usar nuestro [script shell](https://github.com/magento-swat/install-
    Success exit.
    ```
 
-1. Después de descargar e instalar el agente, debe [configurarlo para que se ejecute](#run-the-agent) mediante uno de los siguientes métodos:
+1. Después de descargar e instalar el agente, debe [configurarlo para que se ejecute](#run-the-agent) mediante uno de los métodos siguientes:
 
-   - [Servicio](#service) (preferido si tiene acceso raíz)
+   - [Servicio](#service) (preferido si tiene acceso root)
 
    - [Cron](#cron)
 
 ## Ejecutar el agente {#run-the-agent}
 
-Se recomienda configurar el agente para que se ejecute como servicio. Si tiene acceso limitado a su infraestructura y no tiene permisos de root, debe usar [cron](#cron) en su lugar.
+Se recomienda configurar el agente para que se ejecute como un servicio. Si tiene acceso limitado a su infraestructura y no tiene permisos de root, debe usar [cron](#cron) en su lugar.
 
 ### Servicio {#service}
 
-1. Cree un archivo de unidad del sistema `(/etc/systemd/system/scheduler.service)` con la siguiente configuración (reemplace `<filesystemowner>` por el usuario de UNIX® que posee el directorio donde están instalados el agente y el software de Adobe Commerce). Si ha descargado el agente como usuario raíz, cambie el propietario del directorio y de los archivos anidados.
+1. Crear un archivo `(/etc/systemd/system/scheduler.service)` de unidad systemd con la siguiente configuración (reemplácelo `<filesystemowner>` con el usuario UNIX® que posee el directorio donde están instalados el agente y el software de Adobe Systems Commerce). Si ha descargado el agente como usuario raíz, cambie el directorio y los archivos anidados propietario.
 
    ```config
    [Unit]
@@ -292,7 +292,7 @@ Se recomienda configurar el agente para que se ejecute como servicio. Si tiene a
    WantedBy=multi-user.target
    ```
 
-1. Inicie el servicio.
+1. Launch el servicio.
 
    ```bash
    systemctl daemon-reload
@@ -306,7 +306,7 @@ Se recomienda configurar el agente para que se ejecute como servicio. Si tiene a
    systemctl enable scheduler
    ```
 
-1. Compruebe que el servicio esté en funcionamiento.
+1. Valide que el servicio está en funcionamiento.
 
    ```bash
    journalctl -u scheduler | grep "Application is going to update" | tail -1 && echo "Agent is successfully installed"
@@ -314,9 +314,9 @@ Se recomienda configurar el agente para que se ejecute como servicio. Si tiene a
 
 ### Cron {#cron}
 
-Si no tiene permisos de raíz o no tiene permisos para configurar un servicio como raíz, puede utilizar cron en su lugar.
+Si no tiene permisos de root o no tiene permisos para configurar un servicio como root, puede usar cron en su lugar.
 
-Actualice la programación de cron:
+Actualiza tu cron schedule:
 
 ```bash
 ( crontab -l ; echo "* * * * * flock -n /tmp/swat-agent.lockfile -c '/path/to/agent/scheduler' >> /path/to/agent/errors.log 2>&1" ) | sort - | uniq - | crontab -
@@ -324,9 +324,9 @@ Actualice la programación de cron:
 
 ## Desinstalar
 
-Ejecute los siguientes comandos para desinstalar el servicio del sistema y eliminar todos los archivos generados:
+Ejecute los siguientes comandos para desinstalar el servicio de su sistema y eliminar todos los archivos generados:
 
-1. Detenga el planificador.
+1. Parada el planificador.
 
    ```bash
    systemctl stop scheduler
@@ -338,51 +338,51 @@ Ejecute los siguientes comandos para desinstalar el servicio del sistema y elimi
    systemctl disable scheduler
    ```
 
-1. Elimine el archivo de unidad `systemd` del servicio del programador.
+1. Quitar el archivo unitario del `systemd` servicio de planificador.
 
    ```bash
    rm /etc/systemd/system/scheduler.service
    ```
 
-1. Vuelva a cargar la configuración del administrador `systemd`.
+1. Vuelva a cargar la configuración del `systemd` administrador.
 
    ```bash
    systemctl daemon-reload
    ```
 
-1. Restablecer cualquier unidad `systemd` de un estado de error.
+1. Restablecer unidades `systemd` de un estado con errores.
 
    ```bash
    systemctl reset-failed
    ```
 
-1. Elimine el directorio de servicio del planificador.
+1. Quitar el directorio del servicio planificador.
 
    ```bash
    rm -rf <CHECK_REGISTRY_PATH> #see SWAT_AGENT_APPLICATION_CHECK_REGISTRY_PATH in /etc/systemd/system/scheduler.service
    ```
 
-1. Elimine el archivo binario del programador.
+1. Quitar el archivo binario planificador.
 
    ```bash
    rm /usr/local/bin/scheduler
    ```
 
-Si configuró el agente para que se ejecute con cron en su lugar, siga las siguientes instrucciones:
+Si ha configurado el agente para que se ejecute con cron en su lugar, utilice las siguientes instrucciones:
 
-1. Elimine el agente de la lista de crontab.
+1. Quitar el agente desde el lista crontab.
 
    ```bash
    crontab -e
    ```
 
-1. Detenga el trabajo en ejecución.
+1. Parada el trabajo en ejecución.
 
    ```bash
    ps aux | grep scheduler
    ```
 
-1. Elimine el directorio en el que instaló el agente.
+1. Quitar el directorio donde instaló el agente.
 
    ```bash
    rm -rf swat-agent
@@ -390,32 +390,32 @@ Si configuró el agente para que se ejecute con cron en su lugar, siga las sigui
 
 ## Resolución de problemas
 
-### Claves de acceso no analizadas correctamente
+### Las teclas de acceso no se analizan correctamente
 
-Puede ver el siguiente error si las claves de acceso no se analizan correctamente:
+Puede ver el siguiente error si sus claves de acceso no se analizan correctamente:
 
 ```
 ERRO[2022-10-10 00:01:41] Error while refreshing token: error while getting jwt from magento: invalid character 'M' looking for beginning of value
 FATA[2022-12-10 20:38:44] bad http status from https://updater.supportinsights.adobe.com/linux-amd64.json: 403 Forbidden
 ```
 
-Para resolver este error, intente los siguientes pasos:
+Para resolver este error, pruebe los siguientes pasos:
 
-1. Realice una [instalación mediante script](#scripted), guarde la salida y revise la salida en busca de errores.
-1. Revise el archivo `config.yaml` generado y verifique que la ruta a su instancia de Commerce y PHP sea correcta.
-1. Asegúrese de que el usuario que está ejecutando el programador esté en el grupo Unix [propietario del sistema de archivos](../../installation/prerequisites/file-system/overview.md) o sea el mismo usuario que el propietario del sistema de archivos.
-1. Asegúrese de que las claves de [Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) estén instaladas correctamente e intente actualizarlas para conectar la extensión al sistema.
-1. [Desinstale](#uninstall) el agente después de actualizar las claves y vuelva a instalar con el [script de instalación](#scripted).
+1. Realice una [instalación](#scripted) programada, guarde el resultado y revise el resultado en busca de errores.
+1. Revise el archivo generado `config.yaml` y compruebe que la ruta de acceso a su instancia de comercio y PHP es correcta.
+1. Asegúrese de que el usuario que ejecuta el planificador está en el sistema de [archivos propietario](../../installation/prerequisites/file-system/overview.md) Unix grupo o es el mismo usuario que el sistema de archivos propietario.
+1. Asegúrese de que las claves del [conector de Commerce Services estén](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html) instaladas correctamente e intente actualizarlas para conectar la extensión al sistema.
+1. [Desinstale](#uninstall) el agente después de actualizar las claves y vuelva a instalarlo con el script](#scripted) de [instalación.
 1. Ejecute el planificador y compruebe si sigue recibiendo el mismo error.
-1. Si sigue recibiendo el mismo error, aumente el nivel de registro en `config.yaml` para depurar y abrir un ticket de asistencia.
+1. Si sigue recibiendo el mismo error, aumente el nivel de registro en la `config.yaml` depurar y abra un vale de soporte.
 
-### Error *SIGFAULT*
+### *Error SIGFAULT*
 
-Si ve un error *SIGFAULT* al ejecutar el archivo binario, probablemente no lo ejecute como propietario de los archivos de Adobe Commerce y del agente.
-Para resolverlo, compruebe si todos los archivos dentro del directorio del agente que tienen el mismo usuario que el propietario del archivo que tienen los archivos Adobe Commerce, y el binario también deben ejecutarse bajo ese usuario.
-Puede usar el comando `chown` para cambiar el propietario de los archivos y cambiar al usuario apropiado.
-Asegúrese de que el mecanismo de daemonización (Cron o System.d) ejecuta el proceso con el usuario adecuado.
+Si ve un *error SIGFAULT* al ejecutar binario, probablemente no lo ejecute como el propietario de archivo de Adobe Systems archivos Commerce y Agent.
+Para resolverlo, compruebe si todos los archivos dentro del directorio del agente que tienen el mismo usuario que el propietario del archivo que tienen los archivos Adobe Systems Commerce y binarios también deben ejecutarse bajo esa usuario.
+Puede utilizar el `chown` comando para cambiar el propietario de archivos y cambiar al usuario adecuado.
+Asegúrese de que su mecanismo de demonización (Cron o System.d) ejecuta el proceso bajo la usuario apropiada.
 
 >[!INFO]
 >
->Ver [Cómo acceder [!DNL Site-Wide Analysis Tool] y generar informes](../site-wide-analysis-tool/access.md).
+>Consulte [Cómo acceder [!DNL Site-Wide Analysis Tool] y generar informes](../site-wide-analysis-tool/access.md).

@@ -1,17 +1,17 @@
 ---
-source-git-commit: fb08fb139e975d6f8d0837a5370fed531ee97e0f
+source-git-commit: c523b57270370d87be0f2ab0513f7908bb0a7173
 workflow-type: tm+mt
 source-wordcount: '95'
 ht-degree: 5%
 
 ---
-# Disponibilidad de productos de los servicios de Commerce
+# Disponibilidad de productos de los Servicios de comercio
 
 
 <table style="table-layout:auto">
   <thead>
     <tr>
-      <th>Versiones de Adobe Commerce</th>
+      <th>Versiones de Adobe Systems Commerce</th>
       <th>2.4.8</th>
       <th>2.4.7</th>
       <th>2.4.6</th>
@@ -22,15 +22,15 @@ ht-degree: 5%
   </thead>
   <tbody>
       <tr>
-          <td>Servicio de catálogo para Adobe Commerce</td>
+          <td>Servicio de catálogo para Adobe Systems comercio</td>
           <td>1,32</td>
           <td>1,32</td>
           <td>1,32</td>
           <td>1,32</td>
           <td>1,32</td>
           <td>
-              <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/guide-overview.html">Información general</a><br/>
-              <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/release-notes.html">Notas de la versión</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce/catalog-service/guide-overview">Información general</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce/catalog-service/release-notes">de las notas de la versión</a><br/>
           </td>
       </tr>
       <tr>
@@ -41,8 +41,8 @@ ht-degree: 5%
           <td>4.3.0</td>
           <td>4.3.0</td>
           <td>
-              <a href="https://commercemarketplace.adobe.com/magento-live-search.html">Mercado</a><br/>
-              <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/release-notes.html">Notas de la versión</a><br/>
+              <a href="https://commercemarketplace.adobe.com/magento-live-search.html">Notas de la versión de Marketplace</a><br/><a href="https://experienceleague.adobe.com/en/docs/commerce/live-search/release-notes">
+              </a><br/>
           </td>
       </tr>
       <tr>
@@ -53,20 +53,20 @@ ht-degree: 5%
           <td>2.4.0 (PHP 8.1)</td>
           <td>2.4.0 (PHP 8.1)</td>
           <td>
-              <a href="https://commercemarketplace.adobe.com/magento-payment-services.html">Mercado</a><br/>
-              <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/release-notes.html">Notas de la versión</a><br/>
+              <a href="https://commercemarketplace.adobe.com/magento-payment-services.html">Notas de la versión de Marketplace</a><br/><a href="https://experienceleague.adobe.com/en/docs/commerce/payment-services/release-notes">
+              </a><br/>
           </td>
       </tr>
       <tr>
-          <td>Recomendaciones de productos</td>
+          <td>Recommendations del producto</td>
           <td>6.2.0</td>
           <td>6.2.0</td>
           <td>6.2.0</td>
           <td>6.2.0</td>
           <td>6.2.0</td>
           <td>
-              <a href="https://commercemarketplace.adobe.com/magento-product-recommendations.html">Mercado</a><br/>
-              <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/release-notes.html">Notas de la versión</a><br/>
+              <a href="https://commercemarketplace.adobe.com/magento-product-recommendations.html">Notas de la versión de Marketplace</a><br/><a href="https://experienceleague.adobe.com/en/docs/commerce/product-recommendations/release-notes">
+              </a><br/>
           </td>
       </tr>
   </tbody>

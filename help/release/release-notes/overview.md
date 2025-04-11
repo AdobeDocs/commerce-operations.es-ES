@@ -1,8 +1,8 @@
 ---
-title: Notas de la versión de Adobe Commerce
+title: Adobe Systems Notas de la versión de comercio
 description: Descubra dónde encontrar información sobre versiones específicas de Adobe Commerce.
 exl-id: f6385e12-5c3d-425f-939c-9dfd7ef6c4f5
-source-git-commit: a2c93cb8481a3d843bc3be186d682f1d5e7974f6
+source-git-commit: 16feb8ec7ecc88a6ef03a769d45b1a3a2fe88d97
 workflow-type: tm+mt
 source-wordcount: '275'
 ht-degree: 3%
@@ -10,67 +10,67 @@ ht-degree: 3%
 ---
 
 
-# Notas de la versión de Adobe Commerce
+# Notas de la versión de Adobe Systems Commerce
 
-Utilice la siguiente tabla para buscar notas de la versión e información importante relacionada con versiones específicas de todos los productos, servicios y herramientas de Adobe Commerce.
+Use la siguiente tabla para encontrar información importante Notas de la versión relacionada con versiones específicas de todos los productos, servicios y herramientas de Adobe Systems Commerce.
 
 >[!TIP]
 >
->- Si es nuevo en Adobe Commerce, vea los temas sobre la [arquitectura empresarial](../../implementation-playbook/architecture/enterprise-blueprint.md) y [acerca de Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/start/about) para orientarse.
->- Para obtener información acerca de las actualizaciones, consulte [lectura recomendada](../../upgrade/resources/recommended-reading.md).
+>- Si es nuevo en Adobe Systems comercio, consulte la [arquitectura empresarial y [acerca de Adobe Systems temas de comercio](https://experienceleague.adobe.com/en/docs/commerce-admin/start/about)](../../implementation-playbook/architecture/enterprise-blueprint.md) para orientarse.
+>- Para obtener información sobre las actualizaciones, consulte [Lectura](../../upgrade/resources/recommended-reading.md) recomendada.
 
 <table>
   <tbody>
     <tr>
-      <td><strong>Adobe Commerce</strong>
-        <p>Obtenga información sobre las últimas mejoras de Adobe Commerce, incluidas mejoras, seguridad, correcciones de errores y problemas conocidos.</p>
+      <td><strong>Adobe Systems comercio</strong>
+        <p>Obtén información sobre las últimas mejoras en Adobe Systems Commerce, incluidas mejoras, seguridad, correcciones de errores y problemas conocidos.</p>
           <ul>
             <li><a href="https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/">Cambios incompatibles con versiones anteriores</a></li>
-            <li><a href="commerce/overview.md">Adobe Commerce</a></li>
+            <li><a href="commerce/overview.md">Adobe Systems comercio</a></li>
             <li><a href="security/overview.md">Parches de seguridad</a></li>
-            <li><a href="https://helpx.adobe.com/security/products/magento.html">Boletín de seguridad de Adobe</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html">B2B para Adobe Commerce</a></li>
+            <li><a href="https://helpx.adobe.com/security/products/magento.html">Adobe Systems boletín de seguridad</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html">B2B para Adobe Systems comercio</a></li>
           </ul>
         </td>
-      <td><strong>Adobe Commerce en la infraestructura de la nube</strong>
-        <p>Obtenga información sobre las últimas mejoras de los paquetes de Cloud Suite para Adobe Commerce, diseñados para implementar y administrar las instalaciones y actualizaciones de Adobe Commerce en la plataforma en la nube.</p>
+      <td><strong>Adobe Systems Commerce en infraestructura en la nube</strong>
+        <p>Obtén información sobre las últimas mejoras en los paquetes de Cloud Suite para Adobe Systems Commerce, que están diseñados para implementar y administrar instalaciones y actualizaciones de Adobe Systems Commerce en la plataforma nube.</p>
           <ul>
             <li><a href="https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/backward-incompatible-changes">Cambios incompatibles con versiones anteriores</a></li>
-            <li><a href="https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches">Parches de nube para Commerce</a></li>
-            <li><a href="https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/cloud-docker">Cloud Docker para Commerce</a></li>
-            <li><a href="https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/cloud-components">Componentes de nube para Commerce</a></li>
-            <li><a href="https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/ece-tools-package">ece-tools</a></li>
+            <li><a href="https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches">Parches en la nube para el comercio</a></li>
+            <li><a href="https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/cloud-docker">Cloud Docker para el comercio</a></li>
+            <li><a href="https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/cloud-components">Componentes de nube para el comercio</a></li>
+            <li><a href="https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/ece-tools-package">Herramientas ECE</a></li>
           </ul>
       </td>
     </tr>
     <tr>
-      <td><strong>Servicios para Adobe Commerce</strong>
-        <p>Obtenga información sobre las últimas mejoras de los innovadores servicios de comercialización de Commerce.</p>
+      <td><strong>Servicios para Adobe Systems Comercio</strong>
+        <p>Conozca las últimas mejoras en los innovadores servicios de comercialización de comercio.</p>
           <ul>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html">Audience Activation</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/release-notes.html">Servicio de catálogo</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/release-notes.html">Conector de Experience Platform</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/release-notes.html">Live Search</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/release-notes.html">Servicios de pago</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/release-notes.html">Recomendaciones de productos</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html">Conector de servicios</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce/catalog-service/release-notes.html">Servicio de catálogo</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce/experience-platform-connector/release-notes.html">Conector Experience Platform</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce/live-search/release-notes.html">Live Search</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce/payment-services/release-notes.html">Servicios de pago</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce/product-recommendations/release-notes.html">Recommendations del producto</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html">Conector de servicios</a></li>
           </ul>
         </td>
       <td><strong>Herramientas</strong>
-        <p>Obtenga información sobre las mejoras más recientes en las herramientas diseñadas para facilitar la búsqueda y el uso del software de Adobe Commerce.</p>
+        <p>Conozca las últimas mejoras en las herramientas diseñadas para facilitarle la búsqueda y el uso del software Adobe Systems Commerce.</p>
           <ul>
-            <li><a href="https://developer.adobe.com/graphql-mesh-gateway/">Malla de API para desarrolladores de Adobe App Builder</a></li>
-            <li><a href="https://developer.adobe.com/commerce/events/get-started/release-notes/">Adobe I/O Events para Adobe Commerce</a></li>
-            <li><a href="https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/release-notes/">IU de administración de SDK</a></li>
-            <li><a href="../../tools/quality-patches-tool/release-notes.md">Herramienta Parches de calidad</a></li>
+            <li><a href="https://developer.adobe.com/graphql-mesh-gateway/">API Mesh para Adobe Systems desarrollador APP Builder</a></li>
+            <li><a href="https://developer.adobe.com/commerce/events/get-started/release-notes/">Adobe Systems eventos de E/S para Adobe Systems comercio</a></li>
+            <li><a href="https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/release-notes/">SDK de IU de administración</a></li>
+            <li><a href="../../tools/quality-patches-tool/release-notes.md">Herramienta de parches de calidad</a></li>
             <li><a href="../../tools/site-wide-analysis-tool/intro.md">Herramienta de análisis de todo el sitio</a></li>
-            <li><a href="../../upgrade/upgrade-compatibility-tool/overview.md">Actualizar herramienta de compatibilidad</a></li>
+            <li><a href="../../upgrade/upgrade-compatibility-tool/overview.md">Actualizar Compatibilidad herramienta</a></li>
           </ul>
       </td>
     </tr>
     <tr>
-       <td><strong>Experiencia en tienda</strong>
-        <p>Obtenga información sobre las últimas mejoras en la tecnología de tiendas que puede utilizar para crear experiencias únicas para sus clientes.</p>
+       <td><strong>Experiencia en escaparate</strong>
+        <p>Conozca las últimas mejoras en la tecnología de escaparates que puede utilizar para versión experiencias únicas para sus clientes.</p>
           <ul>
             <li><a href="https://experienceleague.adobe.com/developer/commerce/storefront/">Adobe Commerce Storefront</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/page-builder/release-notes.html">Page Builder</a></li>

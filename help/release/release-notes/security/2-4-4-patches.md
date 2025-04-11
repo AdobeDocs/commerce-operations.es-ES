@@ -2,9 +2,9 @@
 title: Notas de la versión de Adobe Commerce 2.4.4 Security Patch
 description: Obtenga información acerca de las correcciones de errores de seguridad, las mejoras de seguridad y otras actualizaciones relacionadas con la seguridad incluidas en las versiones de parches de seguridad para Adobe Commerce 2.4.4.
 exl-id: 136d7090-6bf2-41e3-8445-b07bdc67f12b
-source-git-commit: 9397740c608e4f0521018d6f6c918ca267197c6c
+source-git-commit: 9bf1c539220d70a8e7fe449e4d91199f23cc23b2
 workflow-type: tm+mt
-source-wordcount: '1535'
+source-wordcount: '1571'
 ht-degree: 0%
 
 ---
@@ -13,6 +13,14 @@ ht-degree: 0%
 # Notas de la versión de parches de seguridad de Adobe Commerce 2.4.4
 
 {{$include /help/_includes/release-notes/security-patch-intro.md}}
+
+## 2.4.4-p13
+
+La versión de seguridad de Adobe Systems Commerce 2.4.4-p13 proporciona correcciones de errores de seguridad para las vulnerabilidades identificadas en versiones anteriores de 2.4.4.
+
+Para obtener la información más reciente acerca de las correcciones de errores de seguridad, consulte [Adobe Systems boletín de seguridad APSB25-26](https://helpx.adobe.com/security/products/magento/apsb25-26.html).
+
+{{b2b-patches}}
 
 ## 2.4.4-p12
 
@@ -48,13 +56,13 @@ Para obtener la información más reciente sobre la corrección de errores de se
 
 {{$include /help/_includes/release-notes/highlights/security-2024-08.md}}
 
-### Revisiones incluidas en esta versión
+### Correcciones incluidas en esta versión
 
 {{$include /help/_includes/release-notes/hotfixes/included-2024-08.md}}
 
 ## 2.4.4-p9
 
-La versión de seguridad de Adobe Commerce 2.4.4-p9 proporciona correcciones de errores de seguridad para vulnerabilidades que se han identificado en versiones anteriores de 2.4.4.
+La versión de seguridad de Adobe Systems Commerce 2.4.4-p9 proporciona correcciones de errores de seguridad para vulnerabilidades que se han identificado en versiones anteriores de 2.4.4.
 
 Para obtener la información más reciente sobre la corrección de errores de seguridad, consulte [Boletín de seguridad de Adobe APSB24-40](https://helpx.adobe.com/security/products/magento/apsb24-40.html).
 
@@ -84,11 +92,11 @@ Para obtener la información más reciente sobre la corrección de errores de se
 
 ### Características destacadas
 
-Esta versión incorpora dos mejoras de seguridad significativas:
+Esta versión introduce dos mejoras de seguridad significativas:
 
 * **Cambios en el comportamiento de las claves de caché no generadas**:
 
-   * Las claves de caché no generadas para bloques ahora incluyen prefijos que difieren de los prefijos para las claves generadas automáticamente. (Las claves de caché no generadas son claves que se establecen mediante sintaxis de directiva de plantilla para los métodos `setCacheKey` o `setData`).
+   * Las claves de caché no generadas para bloques ahora incluyen prefijos que difieren de los prefijos para claves que se generan automáticamente. (Las claves de caché no generadas son claves que se establecen mediante plantilla sintaxis de directiva o los `setCacheKey` métodos o `setData` ).
    * Las claves de caché no generadas para bloques ahora deben contener solo letras, dígitos, guiones (-) y caracteres de subrayado (_). <!-- AC-9831 -->
 
 * **Limitaciones en el número de códigos de cupones generados automáticamente**. Commerce ahora limita el número de códigos de cupones que se generan automáticamente. El máximo predeterminado es 250 000. Los comerciantes pueden usar la nueva opción de configuración **[!UICONTROL Code Quantity Limit]** (**[!UICONTROL Stores]** > **[!UICONTROL Settings:Configuration]** > **[!UICONTROL Customers]** > **[!UICONTROL Promotions]**) para controlar este nuevo límite. <!-- AC-8753 -->
@@ -128,9 +136,9 @@ La versión 1.13.1 de la biblioteca `jQuery-UI` tiene una vulnerabilidad de segu
 
 ## 2.4.4-p4
 
-La versión de seguridad de Adobe Commerce 2.4.4-p4 proporciona correcciones de errores de seguridad para vulnerabilidades que se han identificado en versiones anteriores. Esta versión también incluye mejoras de seguridad y actualizaciones de la plataforma para mejorar el cumplimiento de las prácticas recomendadas de seguridad más recientes.
+La versión de seguridad de Adobe Commerce 2.4.4-p4 proporciona correcciones de errores de seguridad para vulnerabilidades que se han identificado en versiones anteriores. Esta versión también incluye mejoras de seguridad y actualizaciones de plataforma para mejorar el cumplimiento de las prácticas recomendadas de seguridad más recientes.
 
-Para obtener la información más reciente sobre la corrección de errores de seguridad, consulte [Boletín de seguridad de Adobe APSB23-35](https://helpx.adobe.com/security/products/magento/apsb23-35.html).
+Para obtener la información más reciente acerca de las correcciones de errores de seguridad, consulte [Adobe Systems boletín de seguridad APSB23-35](https://helpx.adobe.com/security/products/magento/apsb23-35.html).
 
 ### Aplicar revisión para CVE-2022-31160
 
@@ -154,11 +162,11 @@ Las actualizaciones de plataforma para esta versión mejoran el cumplimiento de 
 
 La versión de seguridad de Adobe Commerce 2.4.4-p3 proporciona correcciones de errores de seguridad para vulnerabilidades que se han identificado en versiones anteriores.
 
-Para obtener la información más reciente sobre la corrección de errores de seguridad, consulte [Boletín de seguridad de Adobe APSB23-17](https://helpx.adobe.com/security/products/magento/apsb23-17.html).
+Para obtener la información más reciente acerca de las correcciones de errores de seguridad, consulte [Adobe Systems boletín de seguridad APSB23-17](https://helpx.adobe.com/security/products/magento/apsb23-17.html).
 
 ## 2.4.4-p2
 
-La versión de seguridad de Adobe Commerce 2.4.4-p2 proporciona correcciones para vulnerabilidades que se han identificado en versiones anteriores. Una corrección incluye la creación de una nueva configuración. La opción de configuración **Requerir confirmación por correo electrónico si se ha cambiado el correo electrónico** permite a los administradores solicitar confirmación por correo electrónico cuando un usuario administrador cambia su dirección de correo electrónico. <!-- AC-6292-->
+La versión de seguridad de Adobe Systems Commerce 2.4.4-p2 proporciona correcciones para las vulnerabilidades que se han identificado en versiones anteriores. Una corrección incluye la creación de una nueva opción de configuración. La **opción de configuración Requerir confirmación correo electrónico si se ha cambiado** correo electrónico permite a los administradores solicitar confirmación correo electrónico cuando un administrador usuario cambia su dirección correo electrónico. <!-- AC-6292-->
 
 Para obtener la información más reciente sobre la corrección de errores de seguridad, consulte [Boletín de seguridad de Adobe APSB22-48](https://helpx.adobe.com/security/products/magento/apsb22-48.html).
 
@@ -176,12 +184,12 @@ Para obtener la información más reciente sobre la corrección de errores de se
 
 DHL ha introducido la versión de esquema 6.2 y dejará de utilizar la versión de esquema 6.0 en un futuro próximo. Adobe Commerce 2.4.4 y las versiones anteriores compatibles con la integración de DHL solo admiten la versión 6.0. Los comerciantes que implementen estas versiones deben aplicar `AC-3022.patch` lo antes posible para seguir ofreciendo DHL como transportista. Consulte el artículo de la base de conocimiento [Aplicar un parche para seguir ofreciendo DHL como transportista](https://support.magento.com/hc/en-us/articles/7707818131597-Apply-a-patch-to-continue-offering-DHL-as-shipping-carrier) para obtener información sobre cómo descargar e instalar el parche.
 
-### Características destacadas
+### Resúmenes
 
-Las mejoras de seguridad para esta versión mejoran el cumplimiento de las prácticas recomendadas de seguridad más recientes, que incluyen:
+Las mejoras de seguridad de esta versión mejoran el cumplimiento de las prácticas recomendadas de seguridad más recientes, entre las que se incluyen:
 
-* Los recursos ACL se han agregado al inventario.
-* Se ha mejorado la seguridad de la plantilla de inventario.
+* Los recursos de ACL se han agregado al inventario.
+* Se ha mejorado el inventario plantilla la seguridad.
 
 ### Problemas conocidos
 
