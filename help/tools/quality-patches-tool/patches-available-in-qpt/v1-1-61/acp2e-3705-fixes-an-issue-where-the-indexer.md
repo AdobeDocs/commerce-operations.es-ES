@@ -1,21 +1,21 @@
 ---
-title: 'ACP2E-3705: Se produce un error en la ejecución cron de "indexer_update_all_views" cuando se establece "MAGE_INDEXER_THREADS_COUNT".'
-description: Aplicar el parche ACP2E-3705 para solucionar el problema de Adobe Systems Commerce, donde la ejecución cron de "indexer_update_all_views" falla cuando se establece "MAGE_INDEXER_THREADS_COUNT".
+title: 'ACP2E-3705: `indexer_update_all_views` La ejecución de cron falla cuando se establece "MAGE_INDEXER_THREADS_COUNT"'
+description: Aplique el parche ACP2E-3705 para corregir el problema de Adobe Commerce donde la ejecución de cron "indexer_update_all_views" falla cuando se establece "MAGE_INDEXER_THREADS_COUNT".
 feature: Catalog Management, B2B
 role: Admin, Developer
-exl-id: 111325fa-8ed5-45f9-9e68-b52f4425d253
-source-git-commit: 7ef772510274bc8681c395656437d64f8b40e70a
+source-git-commit: 4f719c62fdd9fd960548799c9872f73c76997278
 workflow-type: tm+mt
 source-wordcount: '326'
 ht-degree: 0%
 
 ---
 
-# ACP2E-3705: `indexer_update_all_views` error en la ejecución de cron cuando `MAGE_INDEXER_THREADS_COUNT` se configura
+
+# ACP2E-3705: `indexer_update_all_views` falla la ejecución de cron cuando se establece `MAGE_INDEXER_THREADS_COUNT`
 
 >[!NOTE]
 >
->Este parche reemplaza al [ACSD-64112](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-64112-indexer-update-all-views-cron-execution-fails.md) para las versiones 2.4.7 y superiores.
+>Este parche reemplaza el [ACSD-64112](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-64112-indexer-update-all-views-cron-execution-fails.md) para las versiones 2.4.7 y posteriores.
 
 El parche ACP2E-3705 corrige el problema donde la ejecución cron `indexer_update_all_views` falla cuando `MAGE_INDEXER_THREADS_COUNT` está configurada. Este parche está disponible cuando está instalado 1.1.61 [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) . El ID de parche es ACP2E-3705. Tenga en cuenta que este problema está programado para solucionarse en Adobe Systems Commerce 2.4.9.
 
@@ -31,9 +31,9 @@ El parche ACP2E-3705 corrige el problema donde la ejecución cron `indexer_updat
 
 >[!NOTE]
 >
->El parche podría aplicarse a otras versiones con nuevas [!DNL Quality Patches Tool] versiones. Para comprobar si el parche es compatible con su versión de Adobe Systems Commerce, actualice el `magento/quality-patches` paquete a la versión más reciente y compruebe la compatibilidad en la [[!DNL Quality Patches Tool]Search para parches Página](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
-## Emitir
+## Problema
 
 La `indexer_update_all_views` ejecución de cron falla cuando `MAGE_INDEXER_THREADS_COUNT` se establece en un valor mayor que *2*, afectando específicamente al indexador con B2B [!UICONTROL Customer Segments] habilitado.
 
@@ -50,8 +50,8 @@ La `indexer_update_all_views` ejecución de cron falla cuando `MAGE_INDEXER_THRE
 
 1. Crear algunos productos y asígnelos a una categoría.
 1. Ejecute un reindexado completo.
-1. Vaya a un categoría y establezca **[!UICONTROL Category Permissions]**.
-1. Ejecutar `indexer_update_all_views` trabajo cron con `MAGE_INDEXER_THREADS_COUNT` establecido en *8*.
+1. Vaya a una categoría y establezca **[!UICONTROL Category Permissions]**.
+1. Ejecutar trabajo cron `indexer_update_all_views` con `MAGE_INDEXER_THREADS_COUNT` establecido en *8*.
 
 <u>Resultados esperados</u>:
 
@@ -77,4 +77,4 @@ Para aplicar parches individuales, utilice los siguientes vínculos en función 
 
 Para obtener más información sobre [!DNL Quality Patches Tool], consulte:
 
-* [[!DNL Quality Patches Tool]: Un herramienta de autoservicio para parches](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) de calidad en el Herramientas guía.
+* [[!DNL Quality Patches Tool]: herramienta de autoservicio para parches de calidad](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) en la guía Herramientas.
