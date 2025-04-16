@@ -3,15 +3,15 @@ title: 'ACSD-64431: La mutación "placeOrder" con código de cupón en la solici
 description: Aplique el parche ACSD-64431 para solucionar el problema de Adobe Commerce donde la mutación "placeOrder" que contiene la información del código de cupón en la solicitud genera un error interno del servidor en lugar de realizar el pedido correctamente.
 feature: GraphQL, Orders, Promotions/Events
 role: Admin, Developer
-source-git-commit: 883b9db12308c8832afbf709bc188edab746618f
+exl-id: 13918f3e-842b-4b2e-b2e2-2d8add542a87
+source-git-commit: 43f4055d7c6bf681fde851d5132860ea7b68b677
 workflow-type: tm+mt
-source-wordcount: '416'
+source-wordcount: '392'
 ht-degree: 0%
 
 ---
 
-
-# ACSD-64431: La mutación &quot;placeOrder&quot; con código de cupón en la solicitud genera un error interno
+# ACSD-64431: La mutación &quot;placeOrder&quot; con código de cupón en la solicitud genera un error interno del servidor
 
 El parche ACSD-64431 corrige el problema en el que la mutación `placeOrder` que contiene la información del código de cupón en la solicitud genera un error interno del servidor en lugar de realizar el pedido correctamente. Esta revisión está disponible cuando está instalado [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.61. El ID del parche es ACSD-64431. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.8.
 
@@ -341,10 +341,6 @@ Para aplicar parches individuales, utilice los siguientes vínculos según el m�
 
 * Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía [!DNL Quality Patches Tool].
 * Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) en la guía Commerce en la infraestructura de la nube.
-
-## Pasos adicionales necesarios tras la instalación del parche
-
-(Esta sección es opcional; es posible que se requieran algunos pasos después de aplicar el parche para solucionar el problema). 
 
 ## Lectura relacionada
 
