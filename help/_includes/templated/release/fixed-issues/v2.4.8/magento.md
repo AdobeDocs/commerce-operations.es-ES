@@ -1,7 +1,7 @@
 ---
-source-git-commit: 2f8ca1dd3289c1a24e33198c95d38c1a04a507ff
+source-git-commit: ae8701cf2486ef0a79c96bd264e16b0e7803a8f6
 workflow-type: tm+mt
-source-wordcount: '26047'
+source-wordcount: '26039'
 ht-degree: 0%
 
 ---
@@ -195,8 +195,8 @@ Anteriormente, era posible crear el grupo de clientes de precios de grupo de sit
    * _Nota de corrección_: el sistema ahora alinea correctamente los botones de acción de página a la derecha del encabezado adhesivo en el panel de administración, lo que mejora la apariencia profesional. Anteriormente, estos botones flotaban incorrectamente en el lado izquierdo del encabezado adhesivo.
    * _Problema de GitHub_: <https://github.com/magento/magento2/issues/38701>
    * _Contribución de código de GitHub_: <https://github.com/magento/magento2/commit/44cef3a9>
-* _AC-11999_: dev:di:error de información en magento 2.4.7
-   * _Nota de corrección_: El sistema ahora muestra correctamente los parámetros del constructor al ejecutar el comando dev:di:info, lo que evita que se produzcan errores. Anteriormente, al ejecutar este comando, se producía un error debido a una discrepancia de tipos en el argumento.
+* _AC-11999_: error de `dev:di:info` en Magento 2.4.7
+   * _Nota de corrección_: El sistema ahora muestra correctamente los parámetros del constructor al ejecutar el comando `dev:di:info`, lo que evita que se produzcan errores. Anteriormente, al ejecutar este comando, se producía un error debido a una discrepancia de tipos en el argumento.
    * _Problema de GitHub_: <https://github.com/magento/magento2/issues/38740>
    * _Contribución de código de GitHub_: <https://github.com/magento/magento2/commit/0c53bbf7>
 * _AC-13000_: la casilla de verificación de inclusión de Iniciar sesión como cliente no se puede traducir
@@ -331,7 +331,7 @@ Ahora podemos actualizar los estados de los pedidos creados a medida, mientras q
    * _Nota de corrección_: después de la corrección, si el dominio de administración personalizado es un subdominio del dominio principal, el administrador solo es accesible desde el subdominio configurado.
    * _Problema de GitHub_: <https://github.com/magento/magento2/issues/37663>
    * _Contribución de código de GitHub_: <https://github.com/magento/magento2/commit/3f12d152>
-* _ACP2E-3392_: validación dañada para &quot;Cantidad máxima permitida en el carro de compras&quot;
+* _ACP2E-3392_: validación dañada para &#39;Cantidad máxima permitida en el carro de compras&#39;
    * _Nota de corrección_: anteriormente, cuando dejamos `Maximum Qty Allowed in Shopping Cart` vacío, no arrojó ninguna excepción, aunque no se acepta un valor vacío aquí. Una vez aplicada esta corrección, al colocar una cadena vacía se producirán excepciones y no se permitirá guardar el producto.
    * _Contribución de código de GitHub_: <https://github.com/magento/magento2/commit/d50f6b5d>
 * _ACP2E-3408_: [Problema de IU de vista previa de Pagebuilder] Los botones de la columna Page Builder no se alinean correctamente
@@ -1084,8 +1084,8 @@ Ahora podemos actualizar los estados de los pedidos creados a medida, mientras q
    * _Nota de corrección_: El sistema ahora hace referencia correctamente a las clases en módulos, lo que garantiza un funcionamiento más suave y evita bloqueos debido a clases no existentes. Esto incluye una corrección de errores en los módulos Indexer y CreditMemo, y la implementación de HttpGetActionInterface en la clase PrintAction. Anteriormente, las referencias de clase incorrectas provocaban errores y posibles bloqueos del sistema, y algunas funcionalidades, como el nombre de archivo de los archivos PDF de memo de crédito y la reindexación de existencias, no funcionaban según lo esperado.
    * _Problema de GitHub_: <https://github.com/magento/magento2/issues/39126>
    * _Contribución de código de GitHub_: <https://github.com/magento/magento2/pull/37784>
-* _AC-12964_: capacidad para definir el área para el comando dev:di:info CLI
-   * _Nota de corrección_: El sistema ahora permite a los desarrolladores definir un área para el comando dev:di:info CLI, lo que mejora el proceso de desarrollo y depuración. Anteriormente, este comando solo podía mostrar información del área GLOBAL.
+* _AC-12964_: capacidad para definir el área para el comando CLI `dev:di:info`
+   * _Nota de corrección_: El sistema ahora permite a los desarrolladores definir un área para el comando CLI `dev:di:info`, lo que mejora el proceso de desarrollo y depuración. Anteriormente, este comando solo podía mostrar información del área GLOBAL.
    * _Problema de GitHub_: <https://github.com/magento/magento2/issues/38758>
    * _Contribución de código de GitHub_: <https://github.com/magento/magento2/pull/38759>
 * _AC-13149_: [Problema] agrega la propiedad isMultipleFiles a la plantilla de elemento del formulario de imagen
@@ -1506,25 +1506,25 @@ Anteriormente, se asignaba al almacén de administración en lugar de a su respe
 * _LYNX-399_: la miniatura del marcador de posición se devuelve cuando se agrega un producto simple al carro de compras dentro de un producto agrupado
    * _Nota de corrección_: se corrigió un problema por el que al agregar un producto simple (parte de un producto agrupado) al carro de compras se devolvía una imagen en miniatura de marcador de posición, incluso cuando el producto tenía una imagen asignada.
 Detalles de la corrección:
-· La miniatura del producto ahora muestra correctamente la imagen asignada si está disponible.
-· La selección de miniaturas respeta la configuración de administración en:
+* La miniatura del producto ahora muestra correctamente la imagen asignada si está disponible.
+* La selección de miniaturas respeta la configuración de administración en:
 Tiendas > Configuración > Ventas > Cierre de compra > Carro de compra > Imagen de producto agrupada.
 Esto garantiza un comportamiento de miniaturas coherente para los productos agrupados en función de la configuración de la tienda.
 * _LYNX-400_: los atributos de opción personalizados del cliente no funcionan con valores enteros
-   * _Nota de corrección_: se ha corregido un problema por el que los atributos de opción personalizados del cliente no funcionaban cuando el valor devuelto era un número entero. Las opciones personalizadas ahora administran correctamente y devuelven valores enteros como se espera.
+   * _Nota de corrección_: se corrigió un problema en el que los atributos de opción personalizados del cliente no funcionaban cuando el valor devuelto era un número entero. Las opciones personalizadas ahora administran correctamente y devuelven valores enteros como se espera.
 * _LYNX-402_: error interno del servidor al intentar obtener priceDetails para productos en paquete con precio dinámico
    * _Nota de corrección_: se ha resuelto un problema por el que al consultar price_details para productos agrupados con precios dinámicos a través de GraphQL se producía un error interno del servidor. Esta mejora garantiza consultas de carro estables al trabajar con productos de paquete configurados con precios dinámicos.
 * _LYNX-403_: only_x_left_in_stock siempre devuelve 0 para los productos configurables
    * _Nota de corrección_: se ha resuelto un problema por el que el atributo only_x_left_in_stock siempre devolvía 0 para los productos configurables cuando se añadía usando el SKU principal con opciones.
 Detalles de la corrección:
-· El valor only_x_left_in_stock ahora refleja con precisión el stock de la variante secundaria seleccionada en lugar del SKU principal.
-· Esto garantiza que los niveles de stock se muestren correctamente para las variaciones de productos configurables en el carro de compras y las páginas de productos.
+* El valor only_x_left_in_stock ahora refleja con precisión el stock de la variante secundaria seleccionada en lugar del SKU principal.
+* Esto garantiza que los niveles de stock se muestren correctamente para las variaciones de productos configurables en el carro de compras y las páginas de productos.
 * _LYNX-411_: la consulta de GraphQL no devuelve el precio normal calculado correcto para los productos personalizables
    * _Nota de corrección_: se ha corregido un problema por el que GraphQL no devolvía el precio normal calculado correcto para los productos personalizables. La consulta ahora incluye correctamente el precio normal calculado con valores personalizables aplicados (por ejemplo, 125 $) en la propiedad precios, lo que refleja tanto el precio base como cualquier coste de personalización adicional.
 * _LYNX-412_: AppliedTaxes vía EstimatedTotals persiste con mutaciones actualizadas
    * _Nota de corrección_: se ha corregido un problema con la mutación EstimatedTotals por el que los impuestos aplicados persistían en un carro de compras incluso después de actualizar la región o el código postal. La mutación ahora actualiza correctamente los impuestos aplicados al cambiar entre los valores de región y código postal, asegurándose de que solo se aplique la regla fiscal correcta en función de los datos del carro de compras actual.
 * _LYNX-420_: el atributo is_available en CartItemInterface devuelve true incluso cuando el stock vendible es menor que la cantidad del producto
-   * _Nota de corrección_: se ha corregido un problema por el que el atributo is_available de CartItemInterface devolvía incorrectamente true incluso cuando el stock vendible era inferior a la cantidad de producto solicitada. El campo is_available ahora devuelve correctamente el valor &quot;false&quot; cuando la cantidad del producto supera el stock disponible.
+   * _Nota de corrección_: se ha corregido un problema por el que el atributo is_available de CartItemInterface devolvía incorrectamente true incluso cuando el stock vendible era inferior a la cantidad de producto solicitada. El campo is_available ahora devuelve correctamente el valor false cuando la cantidad del producto supera el stock disponible.
 * _LYNX-425_: precio normal del producto con 12 decimales y valor incorrecto
    * _Nota de corrección_: se ha corregido un problema por el que el valor regular_price de las rutas de GraphQL product.price_range.maximum_price y minimum_price no coincidían con el precio de catálogo cuando se aplicaban varios tipos impositivos. Ahora, el valor regular_price refleja de forma coherente el precio de catálogo en todas las configuraciones de impuestos, lo que garantiza una precisión en los precios unitarios, los cálculos de coste total de las filas y las comprobaciones de descuentos en el Resumen del carro de compras.
 * _LYNX-430_: error del servidor de GraphQL en el carro de compras con un producto agrupado agotado
@@ -1534,9 +1534,9 @@ Detalles de la corrección:
 * _LYNX-447_: error del servidor de GraphQL en el carro de compras con only_x_left_in_stock en el producto agrupado
    * _Nota de corrección_: se corrigió un problema en el cual al recuperar un carro de compras que contenía un producto agrupado con el campo only_x_left_in_stock en la consulta de GraphQL, se producía un error interno del servidor. GraphQL ahora devuelve correctamente un valor flotante o nulo para el campo only_x_left_in_stock sin errores.
 * _LYNX-464_: error de GraphQL al eliminar otros productos con un producto configurable insuficiente en el carro de compras
-   * _Nota de corrección_: se ha corregido un problema por el que al intentar eliminar los productos en existencias del carro de compras se producía el error GraphQL &quot;La cantidad solicitada no está disponible&quot; si el carro de compras también contenía productos configurables con existencias insuficientes. La eliminación ahora funciona según lo esperado sin activar errores.
+   * _Nota de corrección_: se corrigió un problema por el que al intentar eliminar los productos en existencias del carro de compras se producía un error de GraphQL &#39;La cantidad solicitada no está disponible&#39; si el carro de compras también contenía productos configurables con existencias insuficientes. La eliminación ahora funciona según lo esperado sin activar errores.
 * _LYNX-469_: no se pueden agregar productos debido a SKU en una mutación que distingue entre mayúsculas y minúsculas
-   * _Nota de corrección_: se ha resuelto un problema en el que la mutación addProductsToCart devolvía un error &quot;PRODUCT_NOT_FOUND&quot; al usar SKU con mayúsculas y minúsculas diferentes. La mutación ahora gestiona los SKU sin distinción de mayúsculas y minúsculas, lo que garantiza la coherencia con las consultas del servicio de catálogo y el comportamiento de PDP.
+   * _Nota de corrección_: se ha resuelto un problema en el que la mutación addProductsToCart devolvía un error &#39;PRODUCT_NOT_FOUND&#39; al usar SKU con mayúsculas y minúsculas diferentes. La mutación ahora gestiona los SKU sin distinción de mayúsculas y minúsculas, lo que garantiza la coherencia con las consultas del servicio de catálogo y el comportamiento de PDP.
 * _LYNX-603_: el atributo del producto > la ™ de forma corta de la marca comercial se devuelve como ™
    * _Nota de corrección_: se ha resuelto un problema de codificación de caracteres con el nombre del producto para la API de GraphQL
 * _LYNX-619_: problema de mutación de updateCustomerEmail
