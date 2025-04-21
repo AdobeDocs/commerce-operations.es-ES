@@ -3,17 +3,17 @@ title: 'ACSD-63323: resuelve la funcionalidad [!UICONTROL Select All] y mejora l
 description: Aplique el parche ACSD-63323 para corregir el problema de Adobe Commerce en el que la opción [!UICONTROL Select All] no funciona al agregar productos a una categoría. Además, garantiza que la paginación y la etiqueta de recuento de registros funcionen correctamente al añadir productos a una categoría a través de la cuadrícula emergente.
 feature: Products
 role: Admin, Developer
-source-git-commit: f3f0cc93adf83b485ca50811adcc561638e3c5c2
+exl-id: 96e318fd-f1dd-4b15-b171-78ae1c8e4e0d
+source-git-commit: d24909ea2571eacafac1ff6b225e87bc40d320bc
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '388'
 ht-degree: 0%
 
 ---
 
-
 # ACSD-63323: resuelve la funcionalidad [!UICONTROL Select All] y mejora la paginación y el recuento de registros en la ventana emergente de categoría de producto
 
-El parche ACSD-63323 corrige el problema en el que la opción **[!UICONTROL Select All]** no funciona al agregar productos a una categoría. Además, garantiza que la paginación y la etiqueta de recuento de registros funcionen correctamente al añadir productos a una categoría a través de la cuadrícula emergente. Esta revisión está disponible cuando [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) está instalado. El ID del parche es ACSD-63323. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.8.
+El parche ACSD-63323 corrige el problema en el que la opción **[!UICONTROL Select All]** no funciona al agregar productos a una categoría. Además, garantiza que la paginación y la etiqueta de recuento de registros funcionen correctamente al añadir productos a una categoría a través de la cuadrícula emergente. Esta revisión está disponible cuando está instalado [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.60. El ID del parche es ACSD-63323. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.8.
 
 ## Productos y versiones afectados
 
@@ -68,5 +68,3 @@ Para aplicar parches individuales, utilice los siguientes vínculos según el m�
 Para obtener más información sobre [!DNL Quality Patches Tool], consulte:
 
 * [[!DNL Quality Patches Tool]: herramienta de autoservicio para parches de calidad](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) en la guía Herramientas.
-
-
