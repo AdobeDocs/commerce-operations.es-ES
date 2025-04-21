@@ -2,9 +2,9 @@
 title: GraphQL Application Server
 description: Siga estas instrucciones para activar GraphQL Application Server en la implementación de Adobe Commerce.
 exl-id: 9b223d92-0040-4196-893b-2cf52245ec33
-source-git-commit: c5446f0273705b158297c0a253054742ec95b44e
+source-git-commit: 2f8396a367cbe1191bdf67aec75bd56f64d3fda8
 workflow-type: tm+mt
-source-wordcount: '2082'
+source-wordcount: '2074'
 ht-degree: 0%
 
 ---
@@ -14,11 +14,11 @@ ht-degree: 0%
 
 Commerce GraphQL Application Server permite a Adobe Commerce mantener el estado entre las solicitudes de API de Commerce GraphQL. GraphQL Application Server, que se basa en la extensión Swoole, funciona como un proceso con subprocesos de trabajo que administran el procesamiento de solicitudes. Al preservar un estado de aplicación de arranque entre las solicitudes de API de GraphQL, GraphQL Application Server mejora la gestión de solicitudes y el rendimiento general del producto. Las solicitudes de API son mucho más eficientes.
 
-GraphQL Application Server solo está disponible para Adobe Commerce. No está disponible para el Magento Open Source. Para los proyectos de Cloud Pro, debe [enviar un vale de soporte técnico de Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) para habilitar el servidor de aplicaciones de GraphQL.
+GraphQL Application Server solo está disponible para Adobe Commerce. No está disponible para Magento Open Source. Para los proyectos de Cloud Pro, debe [enviar un vale de soporte técnico de Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) para habilitar el servidor de aplicaciones de GraphQL.
 
 >[!NOTE]
 >
->GraphQL Application Server no es compatible actualmente con [[!DNL Amazon Simple Storage Service (AWS S3)]](https://aws.amazon.com/s3/). Los clientes de Adobe Commerce en la infraestructura en la nube que actualmente usan [!DNL AWS S3] para [almacenamiento remoto](../configuration/remote-storage/cloud-support.md) no pueden usar GraphQL Application Server hasta que Adobe publique una revisión más adelante en 2024.
+>GraphQL Application Server no es compatible actualmente con [[!DNL Amazon Simple Storage Service (AWS S3)]](https://aws.amazon.com/s3/). Los clientes de Adobe Commerce en la infraestructura en la nube que actualmente usan [!DNL AWS S3] para [almacenamiento remoto](../configuration/remote-storage/cloud-support.md) no pueden usar GraphQL Application Server.
 
 ## Arquitectura
 
@@ -39,7 +39,7 @@ La ejecución de GraphQL Application Server requiere lo siguiente:
 * Commerce versión 2.4.7+
 * PHP 8.2 o superior
 * Instalación de la extensión PHP v5+
-* RAM y CPU adecuadas en función de la carga esperada
+* RAM y CPU adecuados en función de la carga esperada
 
 ## Habilitar e implementar en la infraestructura en la nube
 
@@ -55,7 +55,7 @@ Una vez habilitada la función Servidor de aplicaciones en el proyecto Pro, comp
 
 1. Implemente Adobe Commerce en la infraestructura de la nube mediante la plantilla de la nube desde la rama [2.4.7-appserver](https://github.com/magento/magento-cloud/tree/2.4.7-appserver).
 1. Asegúrese de que todas las personalizaciones y extensiones de Commerce sean [compatibles](https://developer.adobe.com/commerce/php/development/components/app-server/) con GraphQL Application Server.
-1. Clone el proyecto de Commerce Cloud.
+1. Clone su proyecto de Commerce Cloud.
 1. Ajuste la configuración en el archivo &quot;application-server/nginx.conf.sample&quot; si es necesario.
 1. Comente completamente la sección &quot;web&quot; activa en el archivo `project_root/.magento.app.yaml`.
 1. Elimine los comentarios de la siguiente configuración de sección &quot;web&quot; en el archivo `project_root/.magento.app.yaml` que incluye el comando `start` del servidor de aplicaciones de GraphQL.
@@ -102,7 +102,7 @@ Complete los siguientes pasos antes de implementar GraphQL Application Server en
 1. Implemente Adobe Commerce en la infraestructura de la nube mediante la plantilla de la nube desde la rama [2.4.7-appserver](https://github.com/magento/magento-cloud/tree/2.4.7-appserver).
 1. Asegúrese de que todas las personalizaciones y extensiones de Commerce sean compatibles con GraphQL Application Server.
 1. Confirme que la variable de entorno `CRYPT_KEY` esté configurada para su instancia. Puede comprobar el estado de esta variable en la consola de Cloud.
-1. Clone el proyecto de Commerce Cloud.
+1. Clone su proyecto de Commerce Cloud.
 1. Cambie el nombre de `application-server/.magento/.magento.app.yaml.sample` a `application-server/.magento/.magento.app.yaml` y ajuste la configuración en .magento.app.yaml si es necesario.
 1. Elimine los comentarios de la configuración de la siguiente ruta en el archivo `project_root/.magento/routes.yaml` para redirigir el tráfico de `/graphql` a GraphQL Application Server.
 
