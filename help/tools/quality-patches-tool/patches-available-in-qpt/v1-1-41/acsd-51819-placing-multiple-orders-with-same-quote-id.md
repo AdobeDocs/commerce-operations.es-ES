@@ -4,9 +4,9 @@ description: Aplique el parche ACSD-51819 para solucionar el problema de Adobe C
 feature: Orders, Checkout
 role: Admin, Developer
 exl-id: dbca8790-d947-4104-bba9-b29abcfc0344
-source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
+source-git-commit: 5f22591c499f0f5d349994195731c7c87512f5f0
 workflow-type: tm+mt
-source-wordcount: '376'
+source-wordcount: '389'
 ht-degree: 0%
 
 ---
@@ -19,11 +19,11 @@ El parche ACSD-51819 corrige el problema en el que se pueden realizar varios ped
 
 **El parche se ha creado para la versión de Adobe Commerce:**
 
-* Adobe Commerce (todos los métodos de implementación) 2.4.4-p2
+* Adobe Commerce (todos los métodos de implementación) 2.4.4-p2, 2.4.5-p5, 2.4.6, 2.4.6-p4, 2.4.7-p1
 
 **Compatible con versiones de Adobe Commerce:**
 
-* Adobe Commerce (todos los métodos de implementación) 2.4.4 - 2.4.4-p3
+* Adobe Commerce (todos los métodos de implementación) 2.4.4 - 2.4.4-p11, 2.4.5-p3 - 2.4.5-p10, 2.4.6 - 2.4.6-p8, 2.4.7 - 2.4.7-p3
 
 >[!NOTE]
 >
