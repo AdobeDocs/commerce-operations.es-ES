@@ -4,14 +4,18 @@ description: Aplique el parche ACSD-55241 para corregir el problema de Adobe Com
 feature: Inventory, Products
 role: Admin, Developer
 exl-id: b4e6b8b4-43de-4434-94fb-6269a75e1c28
-source-git-commit: c643d55823ae0791ecfa0f2220116bbcbd02668a
+source-git-commit: e29b177fec7c5cc411c3495ce635e08fa6540ab8
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '337'
 ht-degree: 0%
 
 ---
 
 # ACSD-58739: la reindexación parcial genera un error
+
+>[!NOTE]
+>
+>Este parche se ha reemplazado por [ACP2E-3705](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acp2e-3705-fixes-an-issue-where-the-indexer.md).
 
 El parche ACSD-58739 corrige el problema en el que la reindexación parcial genera un error. Esta revisión está disponible cuando está instalado [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches) 1.1.49. El ID del parche es ACSD-58739. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.8.
 
