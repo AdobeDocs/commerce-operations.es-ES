@@ -2,9 +2,9 @@
 title: Requisitos previos de instalación local
 description: Obtenga más información acerca de las dependencias de software necesarias para las instalaciones locales de Adobe Commerce.
 exl-id: dd4694e7-5437-440c-bb67-804ae36149de
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: db2256f5327897a4376a0d038ce697e8f93235af
 workflow-type: tm+mt
-source-wordcount: '316'
+source-wordcount: '332'
 ht-degree: 1%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 Antes de instalar Adobe Commerce, debe hacer lo siguiente:
 
-* Configure uno o más hosts que cumplan [los requisitos del sistema](../system-requirements.md).
+* Configure uno o más hosts que cumplan los [requisitos del sistema](../system-requirements.md) indicados en la ficha *Commerce local*.
 * Si está configurando más de un nodo web con equilibrio de carga, configure y pruebe esa parte del sistema _antes_ de instalar la aplicación.
 * Asegúrese de que puede realizar copias de seguridad de todo el sistema en distintos puntos durante la instalación para poder revertirlo si hay problemas.
 
@@ -66,11 +66,11 @@ Para instalar o actualizar Apache, consulte [Apache](web-server/apache.md).
 
 ### PHP
 
-Consulte [requisitos del sistema](../system-requirements.md) para ver las versiones compatibles de PHP y [PHP](../system-requirements.md#php-settings) para ver los requisitos de PHP.
+Consulte la ficha *Commerce local* en [requisitos del sistema](../system-requirements.md) para ver las versiones compatibles de PHP y [PHP](../system-requirements.md#php-settings) para los requisitos de PHP.
 
 ### MySQL
 
-Compruebe que tiene una versión compatible de MySQL para la versión de Adobe Commerce que está instalando. Consulte [Requisitos del sistema](../system-requirements.md) para ver las versiones compatibles.
+Compruebe que tiene una versión compatible de MySQL para la versión de Adobe Commerce que está instalando. Consulte la pestaña *Commerce local* en [Requisitos del sistema](../system-requirements.md) para ver las versiones compatibles.
 
 ```bash
 mysql -u <database root user or database owner name> -p
@@ -110,7 +110,7 @@ Para comprobar la instalación de OpenSearch:
 curl -XGET '<opensearch-hostname>:<opensearch-port>'
 ```
 
-Para comprobar la instalación del Elasticsearch:
+Para comprobar la instalación de Elasticsearch:
 
 ```bash
 curl -XGET '<elasticsearch-hostname>:<elasticsearch-port>'
