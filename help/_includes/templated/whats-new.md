@@ -1,7 +1,7 @@
 ---
-source-git-commit: f756964406f101a93a513600f668edbffec17cb1
+source-git-commit: 736e2b53cc6df0083fc02c7e6e88da1e7ca00b0d
 workflow-type: tm+mt
-source-wordcount: '965'
+source-wordcount: '822'
 ht-degree: 2%
 
 ---
@@ -10,6 +10,50 @@ ht-degree: 2%
 ## Novedades de la versión
 
 Esta página contiene los cambios realizados en los últimos 60 días. Excluimos todas las actualizaciones menores, como la edición de copias, de esta lista.
+
+### 18 de abril de 2025
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descripción</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Se ha agregado la versión 2.4.8 a la <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy">política de ciclo vital</a>.</p>
+</td>
+      <td>
+        Actualización importante
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/915f5f61c27bedeafdceee7a8c2e0cd474765418">915f5f</a> (confirmación)</td>
+    </tr>
+  </tbody>
+</table>
+
+### 15 de abril de 2025
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descripción</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Se agregó <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-61/acsd-64431-placeorder-mutation-with-coupon-code-throws-error">descripción detallada del problema corregido por el parche ACSD-64431 en la versión QPT 1.1.61</a>.</p>
+</td>
+      <td>
+        Nuevo tema
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/13f5f1c06e5c60047ed246bee766b7f515b0661f">13f5f1</a> (confirmar)</td>
+    </tr>
+  </tbody>
+</table>
 
 ### 11 de abril de 2025
 
@@ -33,7 +77,7 @@ Esta página contiene los cambios realizados en los últimos 60 días. Excluimos
   </tbody>
 </table>
 
-### abril 10, 2025
+### 10 de abril de 2025
 
 <table style="table-layout:auto;">
   <thead>
@@ -145,7 +189,7 @@ Esta página contiene los cambios realizados en los últimos 60 días. Excluimos
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/6661088b3f6cfad2c5afca3e8ac3d76c07ae3237">666108</a> (confirmación)</td>
     </tr>
     <tr>
-      <td><p>Se actualizaron <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/versions">las versiones</a> publicadas.</p>
+      <td><p>Se han actualizado <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/versions">versiones publicadas</a>.</p>
 </td>
       <td>
         Técnico
@@ -158,7 +202,7 @@ Esta página contiene los cambios realizados en los últimos 60 días. Excluimos
       <td>
         Actualización importante
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/cba45d45b7b7051551e6bec981b66989091cff54">CBA45D</a> (confirmar)</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/cba45d45b7b7051551e6bec981b66989091cff54">cba45d</a> (confirmación)</td>
     </tr>
     <tr>
       <td><p>Se agregaron <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements">requisitos del sistema</a> para las nuevas versiones.</p>
@@ -265,7 +309,7 @@ Esta página contiene los cambios realizados en los últimos 60 días. Excluimos
   </thead>
   <tbody>
     <tr>
-      <td><p>Se ha añadido Nuevo Relic a la tabla de requisitos</a> del sistema de nube<a href="https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements">.</p>
+      <td><p>Se agregó New Relic a la tabla <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements">requisitos del sistema en la nube</a>.</p>
 </td>
       <td>
         Técnico
@@ -312,7 +356,7 @@ Esta página contiene los cambios realizados en los últimos 60 días. Excluimos
     <tr>
       <th>Descripción</th>
       <th>Tipo</th>
-      <th>Fuente</th>
+      <th>Source</th>
     </tr>
   </thead>
   <tbody>
@@ -396,7 +440,7 @@ Esta página contiene los cambios realizados en los últimos 60 días. Excluimos
       <td>
         Técnico
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/e1a681a66014e70d9e41fd98ea0b2bbca1377d9d">E1A681</a> (confirmar)</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/e1a681a66014e70d9e41fd98ea0b2bbca1377d9d">e1a681</a> (confirmación)</td>
     </tr>
   </tbody>
 </table>
@@ -413,12 +457,12 @@ Esta página contiene los cambios realizados en los últimos 60 días. Excluimos
   </thead>
   <tbody>
     <tr>
-      <td><p>Se migraron las <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce">alertas administradas para Adobe Systems Commerce</a> debido a la migración de Commerce Base de conocimiento:<br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-memory-warning-alert">Advertencia de memoria alerta</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-redis-memory-warning-alert">Advertencia de memoria de Redis alerta</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-redis-memory-critical-alert">Memoria de Redis esencial alerta</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-disk-warning-alert">Advertencia de disco alerta</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-disk-critical-alert">esencial de disco alerta</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-cpu-critical-alert">esencial de CPU alerta</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-on-magento-commerce-memory-critical-alert">esencial de memoria alerta</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-for-magento-commerce-apdex-critical-alert">Apdex esencial alerta</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-on-magento-commerce-mariadb-alerts">Alertas</a><br /> MariaDB- <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-for-magento-commerce-cpu-warning-alert">Advertencia de CPU alerta</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-for-magento-commerce-apdex-warning-alert">Advertencia de Apdex alerta</a></p>
+      <td><p>Se migraron <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce">Alertas administradas para Adobe Commerce</a> debido a la migración de Commerce Knowledge base:<br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-memory-warning-alert">Alerta de advertencia de memoria</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-redis-memory-warning-alert">Alerta de advertencia de memoria Redis</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-redis-memory-critical-alert">Alerta crítica de memoria Redis</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-disk-warning-alert">Alerta de advertencia de disco</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-disk-critical-alert">Alerta crítica de disco</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-cpu-critical-alert">Alerta crítica de CPU</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-on-magento-commerce-memory-critical-alert">Alerta crítica de memoria</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-for-magento-commerce-apdex-critical-alert">Alerta crítica de Apdex</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-on-magento-commerce-mariadb-alerts">MariaDB alertas</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-for-magento-commerce-cpu-warning-alert">alerta de advertencia de CPU</a><br />- <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-for-magento-commerce-apdex-warning-alert">alerta de advertencia de Apdex</a></p>
 </td>
       <td>
         Nuevo tema
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/c265c6348697c5a07f5990a5e2ffeba9d4dfe358">C265C6</a> (confirmar)</td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/c265c6348697c5a07f5990a5e2ffeba9d4dfe358">c265c6</a> (confirmación)</td>
     </tr>
   </tbody>
 </table>
@@ -463,132 +507,6 @@ Esta página contiene los cambios realizados en los últimos 60 días. Excluimos
         Nuevo tema
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/dab020c6b176717a38b5a81a8710217b0feab0eb">dab020</a> (confirmación)</td>
-    </tr>
-  </tbody>
-</table>
-
-### 28 de febrero de 2025
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descripción</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Se agregó <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-64212-order-is-not-associated-with-a-customer-account">descripción detallada del problema corregido por el parche ACSD-64212 en la versión QPT 1.1.59</a></p>
-</td>
-      <td>
-        Nuevo tema
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/60f62d00afe94c1e9874c623d6703162c35791c2">60f62d</a> (confirmación)</td>
-    </tr>
-    <tr>
-      <td><p>Se agregó <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-64113-errors-in-the-admin-when-uploading-images">descripción detallada del problema corregido por el parche ACSD-64113 en la versión QPT 1.1.59</a></p>
-</td>
-      <td>
-        Nuevo tema
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/8b71fc097d50209786beda72cfc5a7eae6a0449f">8b71fc</a> (confirmación)</td>
-    </tr>
-  </tbody>
-</table>
-
-### 27 de febrero de 2025
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descripción</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Se agregó <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63574-adding-bundle-product-listing-to-block-via-page-builder-results-in-error">descripción detallada del problema corregido por el parche ACSD-63574 en la versión QPT 1.1.59</a></p>
-</td>
-      <td>
-        Nuevo tema
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/7477a28c5db13e5c2daabea4f36dc9de784581a5">7477a2</a> (confirmación)</td>
-    </tr>
-    <tr>
-      <td><p>Se agregó <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63793-import-processes-are-interfering-with-each-other-in-different-browser-tabs">descripción detallada del problema corregido por el parche ACSD-63793 en la versión QPT 1.1.59</a></p>
-</td>
-      <td>
-        Nuevo tema
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/dae40520a0b5584a0627ddccaeaa7faed37e42bd">date405</a> (confirmación)</td>
-    </tr>
-  </tbody>
-</table>
-
-### 21 de febrero de 2025
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descripción</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Se agregó <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-64112-indexer-update-all-views-cron-execution-fails">descripción detallada del problema corregido por el parche ACSD-64112 en la versión QPT 1.1.59</a>.</p>
-</td>
-      <td>
-        Nuevo tema
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/c22cffcbac34ed45d0252a879fa714cf283be4fe">c22cff</a> (confirmación)</td>
-    </tr>
-  </tbody>
-</table>
-
-### 20 de febrero de 2025
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descripción</th>
-      <th>Tipo</th>
-      <th>Fuente</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Se ha añadido <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63454-default-value-for-a-dropdown">una descripción detallada del problema corregido por el parche ACSD-63454 en la versión</a> QPT 1.1.59.</p>
-</td>
-      <td>
-        Nuevo tema
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/ee04269b7b443d9a75bc905e4dde2470e2c9eb7d">ee0426</a> (confirmación)</td>
-    </tr>
-  </tbody>
-</table>
-
-### 19 de febrero de 2025
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descripción</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Se agregó <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-59/acsd-63870-customer-not-logged-out-properly-during-company-status-change">descripción detallada del problema corregido por el parche ACSD-63870 en la versión QPT 1.1.59</a></p>
-</td>
-      <td>
-        Nuevo tema
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/826125b9e176639a53c79ec7fea825b6963ffa3c">826125</a> (confirmación)</td>
     </tr>
   </tbody>
 </table>
