@@ -2,9 +2,9 @@
 title: Notas de la versión de Adobe Commerce 2.4.7 Security Patch
 description: Obtenga información acerca de las correcciones de errores de seguridad, las mejoras de seguridad y otras actualizaciones relacionadas con la seguridad incluidas en las versiones de parches de seguridad para Adobe Commerce 2.4.7.
 exl-id: 38e5632b-c795-47d8-89dd-26bbaeb34e67
-source-git-commit: 9bf1c539220d70a8e7fe449e4d91199f23cc23b2
+source-git-commit: 331a76e8389b1779dda402f506ddb9b76bea95b9
 workflow-type: tm+mt
-source-wordcount: '410'
+source-wordcount: '533'
 ht-degree: 0%
 
 ---
@@ -15,15 +15,23 @@ ht-degree: 0%
 
 ## 2.4.7-p5
 
-La versión de seguridad de Adobe Systems Commerce 2.4.7-p5 proporciona correcciones de errores de seguridad para vulnerabilidades identificadas en versiones anteriores de 2.4.7.
+La versión de seguridad de Adobe Commerce 2.4.7-p5 proporciona correcciones de errores de seguridad para vulnerabilidades identificadas en versiones anteriores de 2.4.7.
 
-Para obtener la información más reciente acerca de las correcciones de errores de seguridad, consulte [Adobe Systems boletín de seguridad APSB25-26](https://helpx.adobe.com/security/products/magento/apsb25-26.html).
+Para obtener la información más reciente sobre la corrección de errores de seguridad, consulte [Boletín de seguridad de Adobe APSB25-26](https://helpx.adobe.com/security/products/magento/apsb25-26.html).
 
 {{b2b-patches}}
 
 ### Características destacadas
 
 Esta versión incorpora compatibilidad con la [extensión compatible con HIPAA](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/hipaa-ready-service/overview) de Adobe Commerce.
+
+### Problemas conocidos
+
+**Problema**: al instalar 2.4.7-p5 con PHP 8.2 o superior, el sistema instala `paypal/module-braintree` versión 4.7.0, que está destinada a 2.4.8 y versiones posteriores. Para PHP 8.1, se utiliza la versión correcta de Braintree 4.6.1-p5. Esta discrepancia se debe a la dependencia holgada de `adobe-commerce/extensions-metapackage: ~2.0` en el metapaquete. Esto afecta a la compatibilidad y al conjunto de características compatibles para implementaciones de PHP 8.2+.<!-- ACPLTSRV-6276) -->
+
+Además, para las versiones 2.4.7-p3, 2.4.7-p4 y 2.4.7-p5, puede estar instalada la extensión de Braintree versión 4.6.1-p5, mientras que algunos usuarios esperan 4.6.1-p3 o p4, debido a que las dependencias anteriores más estrictas se han relajado para permitir actualizaciones de extensión dentro de una línea de versión. <!-- AC-14430 -->
+
+**Solución alternativa**: Para asegurarse de que dispone de la versión de Braintree correcta para su versión de PHP, ejecute `composer update` para instalar la versión adecuada según lo dictado por la dependencia `adobe-commerce/extensions-metapackage:2.0.0`.
 
 ## 2.4.7-p4
 
@@ -41,15 +49,15 @@ Para obtener la información más reciente sobre la corrección de errores de se
 
 La versión de seguridad de Adobe Commerce 2.4.7-p3 proporciona correcciones de errores de seguridad para vulnerabilidades identificadas en versiones anteriores de 2.4.7.
 
-Para obtener la información más reciente acerca de las correcciones de errores de seguridad, consulte [Adobe Systems boletín de seguridad APSB24-73](https://helpx.adobe.com/security/products/magento/apsb24-73.html).
+Para obtener la información más reciente sobre la corrección de errores de seguridad, consulte [Boletín de seguridad de Adobe APSB24-73](https://helpx.adobe.com/security/products/magento/apsb24-73.html).
 
 {{b2b-patches}}
 
-### Resúmenes
+### Características destacadas
 
 {{$include /help/_includes/release-notes/highlights/security-2024-10.md}}
 
-### Correcciones incluidas en esta versión
+### Revisiones incluidas en esta versión
 
 {{$include /help/_includes/release-notes/hotfixes/included-2024-10.md}}
 
@@ -71,15 +79,15 @@ Para obtener la información más reciente sobre la corrección de errores de se
 
 La versión de seguridad de Adobe Commerce 2.4.7-p1 proporciona correcciones de errores de seguridad para vulnerabilidades que se han identificado en versiones anteriores de 2.4.7.
 
-Para obtener la información más reciente acerca de las correcciones de errores de seguridad, consulte [Adobe Systems boletín de seguridad APSB24-40](https://helpx.adobe.com/security/products/magento/apsb24-40.html).
+Para obtener la información más reciente sobre la corrección de errores de seguridad, consulte [Boletín de seguridad de Adobe APSB24-40](https://helpx.adobe.com/security/products/magento/apsb24-40.html).
 
 ### Aplicar revisión para CVE-2024-34102
 
 {{$include /help/_includes/release-notes/hotfixes/not-included-2024-06.md}}
 
-### Resúmenes
+### Características destacadas
 
-Esta versión incluye los siguientes elementos destacados:
+Esta versión incluye los siguientes aspectos destacados:
 
 * **Actualizar la configuración de contraseña de un solo uso [OTP](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/2fa/security-two-factor-authentication#google) para Google Authenticator**: esta actualización es necesaria para resolver un error que se introdujo mediante un [cambio incompatible con versiones anteriores](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/highlights/#new-system-configuration-validation-for-two-factor-authentication-otp_window-value) en 2.4.7. La descripción del campo **[!UICONTROL OTP Window]** ahora proporciona una explicación precisa de la configuración y el valor predeterminado se ha cambiado de `1` a `29`.
 
