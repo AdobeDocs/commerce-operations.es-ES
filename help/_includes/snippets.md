@@ -1,5 +1,5 @@
 ---
-source-git-commit: ab3401c2629b550655c7b2a382b998ce2c8ac6f0
+source-git-commit: 9eeb0e3a1c75b25cc70b092d23f02ebfe355d6bd
 workflow-type: tm+mt
 source-wordcount: '377'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 >[!WARNING]
 >
->Todos los comandos CLI del Magento deben ser ejecutados por el [propietario del sistema de archivos](/help/configuration/cli/config-cli.md#prerequisites).
+>Todos los comandos CLI de Magento deben ser ejecutados por el [propietario del sistema de archivos](/help/configuration/cli/config-cli.md#prerequisites).
 
 ## Comandos de copia de seguridad {#tip-backup-command}
 
@@ -51,13 +51,13 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Las versiones de Adobe Commerce pueden contener cambios incompatibles con versiones anteriores (BIC). Para revisar los cambios incompatibles con versiones anteriores, consulte [Referencia de BIC](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/reference/). Los principales problemas incompatibles con versiones anteriores se describen en [resaltados de BIC](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/highlights/). No todas las versiones introducen BIC importantes.
+>Las versiones de Adobe Commerce pueden contener cambios incompatibles con versiones anteriores (BIC). Para revisar los cambios incompatibles con versiones anteriores, consulte [Referencia de BIC](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/reference/). Los principales problemas incompatibles con versiones anteriores se describen en [resaltados de BIC](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/). No todas las versiones introducen BIC importantes.
 
 ## exención de responsabilidad de Beta {#beta}
 
 >[!IMPORTANT]
 >
->Las versiones de Beta pueden contener defectos y se proporcionan &quot;TAL CUAL&quot; sin garantía de ningún tipo. Adobe no tiene ninguna obligación de mantener, corregir, actualizar, cambiar, modificar o de otro modo apoyar (desde Servicios de Soporte de Adobe o cualquier otro servicio) las versiones beta. Los clientes deben tener cuidado y no confiar en modo alguno en el funcionamiento o el rendimiento correctos de las versiones beta ni en la documentación o los materiales adjuntos. Por lo tanto, cualquier uso de las versiones beta es totalmente bajo el propio riesgo del cliente.
+>Las versiones de Beta pueden contener defectos y se proporcionan &quot;TAL CUAL&quot; sin garantía de ningún tipo. Adobe no tiene ninguna obligación de mantener, corregir, actualizar, cambiar, modificar o apoyar de otro modo (desde los Servicios de Soporte de Adobe o cualquier otro servicio) las versiones beta. Los clientes deben tener cuidado y no confiar en modo alguno en el funcionamiento o el rendimiento correctos de las versiones beta ni en la documentación o los materiales adjuntos. Por lo tanto, cualquier uso de las versiones beta es totalmente bajo el propio riesgo del cliente.
 
 ## aviso de CVE {#cve-notice}
 
@@ -69,7 +69,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Aunque el código para mejoras y correcciones de errores descrito en estas notas de la versión está incorporado en Adobe Commerce, varios de estos proyectos (por ejemplo, B2B, Page Builder y Progressive Web Application (PWA) Studio) también se publican de forma independiente. Las correcciones de errores para estos proyectos se documentan en la información de versión independiente y específica del proyecto que está disponible en la documentación de cada proyecto. Ver [descripción general de la versión del producto](/help/release/release-notes/overview.md).
+>Aunque el código para mejoras y correcciones de errores descrito en estas notas de la versión está incorporado en Adobe Commerce, varios de estos proyectos (por ejemplo, B2B, Page Builder y Progressive Web Applications (PWA) Studio) también se publican de forma independiente. Las correcciones de errores para estos proyectos se documentan en la información de versión independiente y específica del proyecto que está disponible en la documentación de cada proyecto. Ver [descripción general de la versión del producto](/help/release/release-notes/overview.md).
 
 ## Control de procesos PHP {#php-process-control}
 

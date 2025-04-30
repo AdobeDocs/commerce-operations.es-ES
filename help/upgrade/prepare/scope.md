@@ -2,7 +2,7 @@
 title: Comprender el ámbito de actualización
 description: Obtenga información acerca de los cambios incompatibles con versiones anteriores en una versión que podrían afectar a los módulos personalizados de Adobe Commerce o a las extensiones de terceros.
 exl-id: dab2a14f-dbf0-422e-afb4-642e2220ec7a
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 9eeb0e3a1c75b25cc70b092d23f02ebfe355d6bd
 workflow-type: tm+mt
 source-wordcount: '897'
 ht-degree: 0%
@@ -17,7 +17,7 @@ Revise las [notas de la versión](https://experienceleague.adobe.com/en/docs/com
 
 Las versiones de Adobe Commerce pueden contener cambios incompatibles con versiones anteriores. Revise la documentación de cambios incompatibles con versiones anteriores, consulte lo siguiente:
 
-- **[Cambios importantes](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/highlights/)**: cambios que tienen un impacto importante y requieren una explicación detallada e instrucciones especiales para garantizar que los módulos de terceros sigan funcionando.
+- **[Cambios importantes](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/)**: cambios que tienen un impacto importante y requieren una explicación detallada e instrucciones especiales para garantizar que los módulos de terceros sigan funcionando.
 - **[Referencia de cambio menor](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/reference/)**: documentación de referencia generada a partir de la base de código que describe cambios menores en las clases, pertenencia a API, base de datos, inyección de dependencias, interfaces, diseños, sistema y XSD.
 
 ## Extensiones de terceros
@@ -103,7 +103,7 @@ El resultado siguiente muestra un informe de resumen de ejemplo:
 
 ### Sugerencias y consejos
 
-Todos los problemas identificados por la herramienta se enumeran en el informe con códigos de error específicos. Use la [referencia de mensaje de error](../upgrade-compatibility-tool/error-messages.md) para obtener más detalles sobre cada problema. El Adobe también proporciona sugerencias para solucionar cada tipo de problema de modo que pueda planificar los pasos de corrección.
+Todos los problemas identificados por la herramienta se enumeran en el informe con códigos de error específicos. Use la [referencia de mensaje de error](../upgrade-compatibility-tool/error-messages.md) para obtener más detalles sobre cada problema. Adobe también proporciona sugerencias para solucionar cada tipo de problema de modo que pueda planificar los pasos de corrección.
 
 Utilice el informe para calcular la cantidad de esfuerzo que se tardará en actualizar el código para la actualización. En función de su experiencia, puede estimar el esfuerzo necesario para actualizar en función del número total de problemas identificados y de la gravedad de los mismos. Como se trata de una herramienta de línea de comandos, puede incorporarla a grupos de pruebas automatizadas y comprobación de código, y utilizar la salida JSON para generar informes.
 
@@ -111,4 +111,4 @@ Se recomienda guardar los resultados de cada proyecto de actualización para pod
 
 También le recomendamos que ejecute la herramienta regularmente mientras trabaja en la actualización para tener visibilidad de su progreso. El número de problemas debe disminuir a medida que los soluciona. Esto también ayuda a su equipo a decidir cuál es el mejor enfoque para distribuir el trabajo.
 
-Se sigue mejorando [!DNL Upgrade Compatibility Tool] y las futuras versiones incluirán características como correcciones automáticas para ayudarle a solucionar los problemas lo más rápido posible. Las últimas mejoras publicadas en enero de 2022 incluyen pruebas de compatibilidad con PHP 8.1 y funcionalidades de visualización HTML que le ayudan a identificar rápidamente las áreas que pueden requerir un mayor esfuerzo para la actualización.
+Se sigue mejorando [!DNL Upgrade Compatibility Tool] y las futuras versiones incluirán características como correcciones automáticas para ayudarle a solucionar los problemas lo más rápido posible. Las últimas mejoras publicadas en enero de 2022 incluyen pruebas de compatibilidad con PHP 8.1 y funcionalidades de visualización de HTML que le ayudan a identificar rápidamente las áreas que pueden requerir un mayor esfuerzo para la actualización.
