@@ -2,9 +2,9 @@
 title: Notas de la versión
 description: Obtenga información acerca de los parches disponibles para Adobe Commerce y los problemas que resuelven.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: 93c9eb8865aa53ec784d47fd66ca97d1941b4604
+source-git-commit: db6ccbcf16786c1987f3d84e86582fe048edd2e4
 workflow-type: tm+mt
-source-wordcount: '25682'
+source-wordcount: '25802'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,14 @@ ht-degree: 0%
 >[!INFO]
 >
 >Para obtener información acerca de [!DNL quality patches] creado por la comunidad para Magento Open Source, consulte las [notas de la versión](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.63 {#v1-1-63}
+
+* **ACSD-64627** (para Adobe Commerce >=2.4.6-p8 &lt;2.4.8): corrige el problema en el cual los atributos personalizados del cliente no se pueden guardar al agregar o editar usuarios dentro de la estructura de la compañía.
+* **ACSD-64753** (para Adobe Commerce y Magento Open Source >=2.4.4 &lt;2.4.8): corrige el problema en el cual la tienda preseleccionada en &quot;Recogida en tienda&quot; no se actualiza cuando cambia la dirección de envío, aunque esté fuera del radio de la tienda.
+* **ACSD-65195** (para Adobe Commerce >=2.4.4 &lt;2.4.8): corrige el problema en el cual la mutación de GraphQL `createCompany` genera un error para un país sin una región requerida.
+* **LYNX-839** (para Adobe Commerce 2.4.8): se ha eliminado la exposición de información sobre grupos de clientes, segmentos y reglas promocionales a través de GraphQL.
+* Versiones actualizadas: **MDVA-12304**, **ACSD-48234**, **ACSD-58054**
 
 ## Versión 1.1.62 {#v1-1-62}
 
