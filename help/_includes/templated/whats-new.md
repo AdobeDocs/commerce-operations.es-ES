@@ -1,7 +1,7 @@
 ---
-source-git-commit: a2c060d3bbc0b22034cd4deea382412426376fef
+source-git-commit: d755cea4bef9328a5e9ebb6d610922c70d8e4288
 workflow-type: tm+mt
-source-wordcount: '881'
+source-wordcount: '938'
 ht-degree: 2%
 
 ---
@@ -10,6 +10,50 @@ ht-degree: 2%
 ## Novedades de la versión
 
 Esta página contiene los cambios realizados en los últimos 60 días. Excluimos todas las actualizaciones menores, como la edición de copias, de esta lista.
+
+### 1 de mayo de 2025
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descripción</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Se ha mejorado el formato de las notas de la versión para solucionar problemas en <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-8">Adobe Commerce</a> y <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-8">Magento Open Source</a> 2.4.8. (Créditos a <a href="https://github.com/hostep">@hostep</a>)</p>
+</td>
+      <td>
+        Técnico
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/35df05be16d3da775b9cead47d2895b63d575892">35df05</a> (confirmación)</td>
+    </tr>
+  </tbody>
+</table>
+
+### 30 de abril de 2025
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descripción</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Se corrigió la representación de texto en las notas de la versión de <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-8">Adobe Commerce</a> y <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-8">Magento Open Source</a>. (Créditos a <a href="https://github.com/hostep">@hostep</a>)</p>
+</td>
+      <td>
+        Técnico
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/ce23f97dfa62e9b9b57b6db62a7d0c97d3faf7a6">ce23f9</a> (confirmar)</td>
+    </tr>
+  </tbody>
+</table>
 
 ### 29 de abril de 2025
 
