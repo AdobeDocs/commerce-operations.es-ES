@@ -3,9 +3,9 @@ title: Referencia de rutas de configuración de catálogo
 description: Consulte una lista de valores de configuración del catálogo.
 feature: Configuration, Catalog Management
 exl-id: 19451443-228e-437d-a3eb-7dc968b9fb0d
-source-git-commit: df8878a3fea19b8f1780b5037273e18b5a3f1373
+source-git-commit: 47bda51cdcab964c37d9f652d467d69d795d8641
 workflow-type: tm+mt
-source-wordcount: '815'
+source-wordcount: '832'
 ht-degree: 0%
 
 ---
@@ -69,8 +69,8 @@ Estos valores de configuración están disponibles en el Administrador de **Tien
 | Activar sugerencias de búsqueda | `catalog/search/search_suggestion_enabled` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
 | Recuento de sugerencias de búsqueda | `catalog/search/search_suggestion_count` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
 | Mostrar recuento de resultados de cada sugerencia | `catalog/search/search_suggestion_count_results_enabled` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
-| Habilitar Search Recommendations | `catalog/search/search_recommendations_enabled` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
-| Buscar recuento de Recommendations | `catalog/search/search_recommendations_count` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
+| Activar recomendaciones de búsqueda | `catalog/search/search_recommendations_enabled` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
+| Recuento de recomendaciones de búsqueda | `catalog/search/search_recommendations_count` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
 | Mostrar recuento de resultados de cada recomendación | `catalog/search/search_recommendations_count_results_enabled` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
 | Términos mínimos que deben cumplirse | `catalog/search/minimum_should_match` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Generar reescrituras de URL de &quot;categoría/producto&quot; | `catalog/seo/generate_category_product_rewrites` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -150,6 +150,8 @@ Estos valores de configuración están disponibles en el Administrador de **Tien
 {style="table-layout:auto"}
 
 ## Rutas de Visual Merchandiser
+
+[!BADGE Solo PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe) y a proyectos locales."}
 
 Estos valores de configuración están disponibles en el Administrador de **Tiendas** > Configuración > **Configuración** > **Catálogo** > **Visual Merchandiser**.
 
