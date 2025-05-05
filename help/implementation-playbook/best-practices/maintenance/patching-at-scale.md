@@ -34,7 +34,7 @@ Dado que hay muchos tipos diferentes de parches y muchas maneras de aplicarlos, 
 1. **Los parches de seguridad** forman parte de la base de código estático de una versión de Adobe Commerce.
 1. **Revisiones del compositor** a través de `composer install` y `composer update` complementos como [cweagans/composer-patch](https://packagist.org/packages/cweagans/composer-patches).
 1. **Todos los parches necesarios** están incluidos en el paquete [Parches de nube para Commerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches.html).
-1. **parches de calidad** seleccionados incluidos en [!DNL [Quality Patches Tool]](../../../tools/quality-patches-tool/usage.md).
+1. **parches de calidad** seleccionados incluidos en [[!DNL [Quality Patches Tool]]](../../../tools/quality-patches-tool/usage.md).
 1. **Parches personalizados** y parches de soporte de Adobe Commerce en el directorio `/m2-hotfixes` en orden alfabético por nombre de parche.
 
    >[!IMPORTANT]

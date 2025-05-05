@@ -1,5 +1,5 @@
 ---
-title: 'ACSD-55031: `El tipo "mixto" no puede admitir valores NULL durante la compilación'
+title: 'ACSD-55031: &grave;El tipo "mixto" no puede admitir valores NULL durante la compilación'
 description: Aplique el parche ACSD-55031 para corregir el problema de Adobe Commerce en el que el error *Type "mixed" cannot be nullable* durante la compilación después de instalar una extensión personalizada.
 feature: Extensions
 role: Admin, Developer

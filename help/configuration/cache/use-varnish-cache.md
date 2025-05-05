@@ -58,4 +58,4 @@ A continuación, puede purgar los hosts de Barnish actualizando la caché de Com
 
 Para actualizar la caché con el administrador, haga clic en **[!UICONTROL SYSTEM]** > Herramientas > **Administración** de caché y, a continuación, haga clic en **Vaciar caché Magento** en la parte superior del Página. (También puede actualizar tipos de caché individuales).
 
-Para actualizar la caché mediante la línea de comandos, normalmente se utiliza el [`magento cache:clean <type>`](../cli/manage-cache.md#clean-and-flush-cache-types) comando como propietario](../../installation/prerequisites/file-system/overview.md) el sistema de [archivos.
+Para actualizar la caché mediante la línea de comandos, normalmente se utiliza el [`magento cache:clean <type>`](../cli/manage-cache.md#clean-and-flush-cache-types) comando como propietario[&#128279;](../../installation/prerequisites/file-system/overview.md) el sistema de archivos.

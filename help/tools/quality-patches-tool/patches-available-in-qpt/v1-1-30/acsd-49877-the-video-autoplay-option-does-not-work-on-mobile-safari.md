@@ -27,7 +27,7 @@ ACSD-49877 corrige el problema en el cual la opción de reproducción automátic
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete [!magento/quality-patch] a la versión más reciente y compruebe la compatibilidad en [[!DNL Quality Patches Tool]: Buscar parches]. Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete [ !magento/quality-patch] a la versión más reciente y compruebe la compatibilidad en [[!DNL Quality Patches Tool]: Buscar parches]. Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 

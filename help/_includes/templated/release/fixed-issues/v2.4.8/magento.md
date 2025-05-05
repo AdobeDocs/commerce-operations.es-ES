@@ -267,7 +267,7 @@ El sistema ahora muestra correctamente el campo &quot;created_at&quot; de los co
 * __i18n:collect-phrases rompe la integridad de las traducciones__
 El comando `bin/magento i18n:collect-phrases -o` ahora recopila y agrega correctamente nuevas frases de archivos JavaScript y .phtml, lo que garantiza que las traducciones se reflejen con precisión en el archivo de traducción. Anteriormente, el sistema no incluía frases de traducción multilínea de archivos JavaScript ni frases de archivos .phtml en el archivo de traducción, lo que provocaba traducciones incompletas o incorrectas.
   _AC-9843 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/0c53bbf7)_
-* __El apóstrofo del nombre de la vista de tienda se ha reemplazado por &amp;#039;__
+* __El apóstrofo del nombre de la vista de tienda se ha reemplazado por &#039;__
 Los filtros de vista de tienda de la cuadrícula ahora muestran correctamente los apóstrofos
   _ACP2E-2787 - [Problema de GitHub](https://github.com/magento/magento2/issues/38395) - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/39d54c2d)_
 * __La carga de Favicon no puede validar los archivos .ico__
@@ -1449,7 +1449,7 @@ Se ha corregido un problema por el cual al intentar eliminar productos en stock 
 * __No se pueden agregar productos debido a que la mutación del SKU distingue entre mayúsculas y minúsculas__
 Se ha resuelto un problema en el que la mutación addProductsToCart devolvía un error &quot;PRODUCT_NOT_FOUND&quot; al utilizar SKU con mayúsculas y minúsculas diferentes. La mutación ahora gestiona los SKU sin distinción de mayúsculas y minúsculas, lo que garantiza la coherencia con las consultas del servicio de catálogo y el comportamiento de PDP.
   _LYNX-469_
-* __Atributo de producto > marca comercial abreviada &amp;trade; se devuelve como &amp;trade;__
+* __Atributo de producto > marca comercial abreviada &trade; se devuelve como &trade;__
 Se ha resuelto un problema de codificación de caracteres con el nombre del producto para la API de GraphQL
   _LYNX-603_
 * __problema de mutación de updateCustomerEmail__

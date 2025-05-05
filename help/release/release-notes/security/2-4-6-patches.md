@@ -188,4 +188,4 @@ Platform upgrades for this release improve compliance with the latest security b
   Installation failed, reverting ./composer.json and ./composer.lock to their original content.
   ```
 
-  This issue can be resolved by adding manual dependencies for the B2B security package with a [stability tag](https://getcomposer.org/doc/04-schema.md#package-links). Para obtener más información, consulte la Notas de la versión B2B[](https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html#known-issue).
+  This issue can be resolved by adding manual dependencies for the B2B security package with a [stability tag](https://getcomposer.org/doc/04-schema.md#package-links). Para obtener más información, consulte la Notas de la versión B2B[&#128279;](https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html#known-issue).

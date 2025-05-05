@@ -1,6 +1,6 @@
 ---
 title: '"ACSD-53176: La regla de producto con "es una de" condición no coincide"'
-description: Aplique el parche ACSD-53176 para solucionar el problema de Adobe Commerce donde la regla de producto relacionada `is one of` no funciona correctamente para "Productos que coinciden".
+description: Aplique el parche ACSD-53176 para solucionar el problema de Adobe Commerce donde la regla de producto relacionada &grave;is one of&grave; no funciona correctamente para "Productos que coinciden".
 feature: Marketing Tools
 role: Admin
 source-git-commit: fe11599dbef283326db029b0312ad290cde0ba0a

@@ -405,7 +405,7 @@ Para resolver este error, pruebe los siguientes pasos:
 1. Revise el archivo generado `config.yaml` y compruebe que la ruta de acceso a su instancia de comercio y PHP es correcta.
 1. Asegúrese de que el usuario que ejecuta el planificador está en el sistema de [archivos propietario](../../installation/prerequisites/file-system/overview.md) Unix grupo o es el mismo usuario que el sistema de archivos propietario.
 1. Asegúrese de que las claves del [conector de Commerce Services estén](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html) instaladas correctamente e intente actualizarlas para conectar la extensión al sistema.
-1. [Desinstale](#uninstall) el agente después de actualizar las claves y vuelva a instalarlo con el script](#scripted) de [instalación.
+1. [Desinstale](#uninstall) el agente después de actualizar las claves y vuelva a instalarlo con el script[&#128279;](#scripted) de instalación.
 1. Ejecute el planificador y compruebe si sigue recibiendo el mismo error.
 1. Si sigue recibiendo el mismo error, aumente el nivel de registro en la `config.yaml` depurar y abra un vale de soporte.
 

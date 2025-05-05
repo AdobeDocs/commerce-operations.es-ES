@@ -16,7 +16,7 @@ Use la siguiente tabla para encontrar información importante Notas de la versi�
 
 >[!TIP]
 >
->- Si es nuevo en Adobe Systems comercio, consulte la [arquitectura empresarial y [acerca de Adobe Systems temas de comercio](https://experienceleague.adobe.com/en/docs/commerce-admin/start/about)](../../implementation-playbook/architecture/enterprise-blueprint.md) para orientarse.
+>- Si es nuevo en Adobe Systems comercio, consulte la [&#128279;](../../implementation-playbook/architecture/enterprise-blueprint.md)arquitectura empresarial y [acerca de Adobe Systems temas de comercio](https://experienceleague.adobe.com/en/docs/commerce-admin/start/about) para orientarse.
 >- Para obtener información sobre las actualizaciones, consulte [Lectura](../../upgrade/resources/recommended-reading.md) recomendada.
 
 <table>

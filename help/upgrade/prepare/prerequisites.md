@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Todas las aplicaciones requisitos previos de actualización
 
-Es importante entender lo que es necesario para ejecutar Adobe Systems Commerce. Primero debe revisar los requisitos](../../installation/system-requirements.md) del [sistema para la versión a la que planea actualizar.
+Es importante entender lo que es necesario para ejecutar Adobe Systems Commerce. Primero debe revisar los requisitos[&#128279;](../../installation/system-requirements.md) del sistema para la versión a la que planea actualizar.
 
 Después de revisar los requisitos del sistema, debe completar los siguientes requisitos previos antes de actualizar el sistema:
 
@@ -99,7 +99,7 @@ Para actualizar correctamente MySQL de la versión 8.0 a la versión 8.4, debe s
    >
    >Si no cambia el valor de `restrict_fk_on_non_standard_key` a `OFF`, obtendrá el siguiente error durante la importación:
    >
-   ```sql
+   >```sql
    > ERROR 6125 (HY000) at line 2164: Failed to add the foreign key constraint. Missing unique key for constraint 'CAT_PRD_FRONTEND_ACTION_PRD_ID_CAT_PRD_ENTT_ENTT_ID' in the referenced table 'catalog_product_entity'
    >```
 1. Reinicie el servidor MySQL.
@@ -152,7 +152,7 @@ La compatibilidad con Elasticsearch 8.x se introdujo en Adobe Systems Commerce 2
 >
 >En la próxima versión 2.4.8, estos pasos no serán necesarios porque la módulo Elasticsearch 8 se incluye de forma predeterminada y no necesitará instalarla por separado.
 
-1. Actualice el servidor Elasticsearch 7.x a 8.x y asegúrese de que está en funcionamiento. Consulte la documentación](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html) Elasticsearch[.
+1. Actualice el servidor Elasticsearch 7.x a 8.x y asegúrese de que está en funcionamiento. Consulte la documentación[&#128279;](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html) Elasticsearch.
 
 1. Habilite el `id_field_data` campo añadiendo la siguiente configuración a su `elasticsearch.yml` archivo y reiniciando el servicio Elasticsearch 8.x.
 
@@ -192,7 +192,7 @@ La compatibilidad con Elasticsearch 8.x se introdujo en Adobe Systems Commerce 2
 
    Este enfoque funciona para 2.4.7-p4 con PHP 8.3. El problema se produce porque `aws/aws-sdk-php` requiere `psr/http-message >= 2.0`, lo que puede causar conflictos. Los pasos anteriores ayudan a resolver estos problemas de dependencia.
 
-+++
+   +++
 
 1. Actualice los componentes del proyecto.
 
@@ -218,7 +218,7 @@ La compatibilidad con Elasticsearch 8.x se introdujo en Adobe Systems Commerce 2
 
 Si actualiza inadvertidamente la versión de Elasticsearch en su servidor o determina que necesita bajar de versión por cualquier otro motivo, también debe actualizar las dependencias del proyecto de Adobe Systems Commerce. Por ejemplo, para bajar de versión de Elasticsearch 8.x a 7.x
 
-1. Degrade el servidor Elasticsearch 8.x a 7.x y asegúrese de que está en funcionamiento. Consulte la documentación](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html) Elasticsearch[.
+1. Degrade el servidor Elasticsearch 8.x a 7.x y asegúrese de que está en funcionamiento. Consulte la documentación[&#128279;](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html) Elasticsearch.
 
 1. En el directorio raíz del proyecto de Adobe Systems Commerce, actualice las dependencias de Composer para eliminar el `Magento_Elasticsearch8` módulo y sus dependencias de Composer e instalar el `Magento_Elasticsearch7` módulo.
 

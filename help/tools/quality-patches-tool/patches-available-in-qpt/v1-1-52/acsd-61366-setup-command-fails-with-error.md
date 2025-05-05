@@ -1,6 +1,6 @@
 ---
-title: 'ACSD-61366: el comando `bin/magento setup:static-content:deploy —jobs 4` encuentra varios errores de trabajo con un error'
-description: Aplique el parche ACSD-61366 para corregir el problema de Adobe Commerce en el que el comando `bin/magento setup:static-content:deploy —jobs 4` encuentra varios errores de trabajo con el error *Port debe configurarse dentro del parámetro host*, a pesar de especificar el puerto para la conexión DB.
+title: 'ACSD-61366: el comando &grave;bin/magento setup:static-content:deploy —jobs 4&grave; encuentra varios errores de trabajo con un error'
+description: Aplique el parche ACSD-61366 para corregir el problema de Adobe Commerce en el que el comando &grave;bin/magento setup:static-content:deploy —jobs 4&grave; encuentra varios errores de trabajo con el error *Port debe configurarse dentro del parámetro host*, a pesar de especificar el puerto para la conexión DB.
 feature: SCD
 role: Admin, Developer
 exl-id: d71a4833-a236-429b-a4e5-7d7d51c2caeb

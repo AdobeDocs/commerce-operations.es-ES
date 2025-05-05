@@ -37,7 +37,7 @@ No combine ni paquete archivos si el implementación utiliza HTTP/2. HTTP/2 desc
 
 ### Uso de Administración
 
-Para habilitar la fusión o minimización de CSS, vaya a Admin [!UICONTROL **** > **Stores** > **Setting** > **Configuration** > **Avanzadas** > **Developer** > **CSS Configuración**].
+Para habilitar la fusión o minimización de CSS, vaya a Admin [!UICONTROL **&#x200B;**&#x200B;> **Stores** > **Setting** > **Configuration** > **Avanzadas** > **Developer** > **CSS Configuración**].
 
 ### Uso de la línea de comandos
 
@@ -65,7 +65,7 @@ Para habilitar la minificación CSS en Adobe Commerce en la infraestructura en l
 
 ### Uso de Administración
 
-En la *barra lateral del administrador*, ve a **Tiendas** > **Configuración >** Configuración **>****Avanzadas** > **>** de desarrollador **JavaScript Configuración**.
+En la *barra lateral del administrador*, ve a **Tiendas** > **Configuración >** Configuración **>**&#x200B;**Avanzadas** > **>** de desarrollador **JavaScript Configuración**.
 
 ### Uso de la línea de comandos
 

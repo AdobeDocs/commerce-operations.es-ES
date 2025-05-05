@@ -44,43 +44,43 @@ Instale el módulo B2B.
 1. Ahora envíe la siguiente solicitud [!DNL GraphQL] (el ID es el ID de rol codificado [!UICONTROL base64]):
 
    <pre><code>
-   mutation {
+   mutation &lbrace;
    updateCompanyRole(
-      input: {
+      input: &lbrace;
          id: "Mg=="
-         permissions: [
+         permissions: &lbrack;
          "Magento_Company::view"
          "Magento_Company::view_account"
          "Magento_Company::user_management"
          "Magento_Company::roles_view"
-        ]
-      }
-    ) {
-      role {
+        &rbrack;
+      &rbrace;
+    ) &lbrace;
+      role &lbrace;
          id
 
          name
 
-         permissions {
+         permissions &lbrace;
          id
 
          text
 
-         children {
+         children &lbrace;
             id
 
             text
 
-            children {
+            children &lbrace;
                id
 
                text
-             }
-           }
-         }
-       }
-     }
-   }
+             &rbrace;
+           &rbrace;
+         &rbrace;
+       &rbrace;
+     &rbrace;
+   &rbrace;
    </code></pre>
 
 1. Compruebe el registro de consultas.

@@ -1,5 +1,5 @@
 ---
-title: 'ACP2E-3705: `indexer_update_all_views` La ejecución de cron falla cuando se establece "MAGE_INDEXER_THREADS_COUNT"'
+title: 'ACP2E-3705: &grave;indexer_update_all_views&grave; La ejecución de cron falla cuando se establece "MAGE_INDEXER_THREADS_COUNT"'
 description: Aplique el parche ACP2E-3705 para corregir el problema de Adobe Commerce donde la ejecución de cron "indexer_update_all_views" falla cuando se establece "MAGE_INDEXER_THREADS_COUNT".
 feature: Catalog Management, B2B
 role: Admin, Developer

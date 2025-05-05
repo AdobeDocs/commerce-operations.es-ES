@@ -22,7 +22,7 @@ En el diagrama de arquitectura siguiente se ilustra el flujo de datos entre Adob
 
 >[!NOTE]
 >
->Los flujos de datos de alto nivel mostrados en el diagrama son coherentes en la mayoría de las implementaciones empresariales. El componente clave que puede hacer que las implementaciones sean únicas es la forma en que versión su catálogo (especialmente para B2B). Debe asignar cuidadosamente la arquitectura del catálogo a las API](https://developer.adobe.com/commerce/webapi/get-started/) web de [comercio.
+>Los flujos de datos de alto nivel mostrados en el diagrama son coherentes en la mayoría de las implementaciones empresariales. El componente clave que puede hacer que las implementaciones sean únicas es la forma en que versión su catálogo (especialmente para B2B). Debe asignar cuidadosamente la arquitectura del catálogo a las API[&#128279;](https://developer.adobe.com/commerce/webapi/get-started/) web de comercio.
 
 ## Base de nube
 
@@ -85,5 +85,5 @@ Adobe Systems proporciona un amplio conjunto de servicios de comercialización i
 
 El comercio sin cabeza es el comercio con prioridad de API. Adobe Systems Commerce es totalmente headless con una arquitectura desacoplada que proporciona todos los servicios y datos de comercio a través de una capa API GraphQL. Esta arquitectura permite a los equipos desarrollar sus frontends independientemente del aplicación central, proporcionando la agilidad para versión rápidamente y prueba nuevos puntos de contacto con tecnologías emergentes.
 
-Adobe Systems proporciona una moderna tecnología de escaparate sin cabeza que incluye los mismos beneficios y capacidades que ofrecen [los servicios](https://www.aem.live/home) de entrega perimetral con creación basada en documento, una arquitectura de rendimiento y experimentación nativa lista para usar. Aprovecha la escala y el rendimiento de los servicios](#storefront-services) de escaparate de Adobe Systems Commerce [y la flexibilidad y conveniencia de [los componentes](https://experienceleague.adobe.com/developer/commerce/storefront/) directos para ofrecer capacidades comerciales.
+Adobe Systems proporciona una moderna tecnología de escaparate sin cabeza que incluye los mismos beneficios y capacidades que ofrecen [los servicios](https://www.aem.live/home) de entrega perimetral con creación basada en documento, una arquitectura de rendimiento y experimentación nativa lista para usar. Aprovecha la escala y el rendimiento de los servicios[&#128279;](#storefront-services) de escaparate de Adobe Systems Commerce y la flexibilidad y conveniencia de [los componentes](https://experienceleague.adobe.com/developer/commerce/storefront/) directos para ofrecer capacidades comerciales.
 

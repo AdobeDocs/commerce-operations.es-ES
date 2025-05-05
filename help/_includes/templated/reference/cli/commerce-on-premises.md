@@ -24,7 +24,7 @@ Utilice el [guía &quot;añadir comandos CLI&quot;](https://developer.adobe.com/
 
 Puede llamar a `bin/magento` comandos CLI utilizando accesos directos en lugar del nombre completo del comando. Por ejemplo, puede llamar `bin/magento setup:upgrade` mediante `bin/magento s:up`, `bin/magento s:upg`. Consulte [la sintaxis](https://symfony.com/doc/current/components/console/usage.html#shortcut-syntax) de acceso directo para comprender cómo usar los accesos directos con cualquier comando de CLI.
 
-Esta documentación de referencia se genera a partir del código fuente aplicación. Para cambiar la documentación, debe abrir una solicitud de recibir para el comando correspondiente en el repositorio de la base](https://github.com/magento) de código correspondiente[. Consulte [Code contribuciones](https://developer.adobe.com/commerce/contributor/guides/code-contributions/) para obtener más información.
+Esta documentación de referencia se genera a partir del código fuente aplicación. Para cambiar la documentación, debe abrir una solicitud de recibir para el comando correspondiente en el repositorio de la base[&#128279;](https://github.com/magento) de código correspondiente. Consulte [Code contribuciones](https://developer.adobe.com/commerce/contributor/guides/code-contributions/) para obtener más información.
 
 ### Opciones globales
 

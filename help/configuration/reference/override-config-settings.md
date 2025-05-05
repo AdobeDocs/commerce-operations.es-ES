@@ -224,7 +224,7 @@ Para buscar el nombre de variable del origen del país de envío:
 
 1. Determine el ámbito.
 
-   Busque el ámbito en la [base de datos](#find-a-website-or-store-view-scope-in-the-database) como se describe en el paso 1: Encuentre el sitio web o el valor del ámbito de la vista de la tienda. (También puede encontrar el valor en Admin, como se muestra en la [tabla del paso 2: establecer variables de vista globales, de sitio web o de tienda](#step-2-set-global-website-or-store-view-variables.
+   Busque el ámbito en la [base de datos](#find-a-website-or-store-view-scope-in-the-database) como se describe en el paso 1: Encuentre el sitio web o el valor del ámbito de la vista de la tienda. (También puede encontrar el valor en Admin, como se muestra en la [tabla del paso 2: establecer variables de vista globales, de sitio web o de tienda] (#step-2-set-global-website-or-store-view-variables.
 
    Por ejemplo, el ámbito podría ser `CONFIG__WEBSITES__DEFAULT`.
 

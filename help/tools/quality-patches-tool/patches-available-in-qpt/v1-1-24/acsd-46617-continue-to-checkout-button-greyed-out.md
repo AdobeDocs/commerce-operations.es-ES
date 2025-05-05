@@ -37,7 +37,8 @@ El botón **[!UICONTROL Continue to Checkout]** aparece atenuado incluso si el s
 
 1. Vaya a Adobe Commerce Admin > **[!UICONTROL Store]** > **[!UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL Minimum Order Amount]** y establezca lo siguiente:
    * [!UICONTROL Enable]: *[!UICONTROL Yes]*
-   * 
+   * &#x200B;
+
      [!UICONTROL Minimum Amount]: *2*
 
 1. Crear un [!UICONTROL Cart Price Rule].
@@ -45,7 +46,8 @@ El botón **[!UICONTROL Continue to Checkout]** aparece atenuado incluso si el s
    * [!UICONTROL Conditions]: *[!UICONTROL Keep empty]*
    * [!UICONTROL Actions]:
       * [!UICONTROL Apply]: *[!UICONTROL Percent of product price discount]*
-      * 
+      * &#x200B;
+
         [!UICONTROL Discount Amount]: *92*
       * [!UICONTROL Apply to Shipping Amount]: *[!UICONTROL Yes]*
 1. Cree un producto con el precio de 25 $.

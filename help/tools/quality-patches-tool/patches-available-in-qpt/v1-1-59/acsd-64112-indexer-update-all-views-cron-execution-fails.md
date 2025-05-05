@@ -1,5 +1,5 @@
 ---
-title: 'ACSD-64112: `indexer_update_all_views` la ejecución de cron falla cuando se establece "MAGE_INDEXER_THREADS_COUNT"'
+title: 'ACSD-64112: &grave;indexer_update_all_views&grave; la ejecución de cron falla cuando se establece "MAGE_INDEXER_THREADS_COUNT"'
 description: Aplique el parche ACSD-64112 para corregir el problema de Adobe Commerce donde la ejecución de cron "indexer_update_all_views" falla cuando se establece "MAGE_INDEXER_THREADS_COUNT".
 feature: Catalog Management, B2B
 role: Admin, Developer
