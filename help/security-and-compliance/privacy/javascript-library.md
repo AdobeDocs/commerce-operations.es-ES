@@ -21,7 +21,7 @@ Esta biblioteca proporciona un conjunto de funciones para crear solicitudes de d
 
 >[!NOTE]
 >
->Si el [Modo de restricción de cookies](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html) está habilitado, Commerce no recopilará datos de comportamiento hasta que el comprador dé su consentimiento. Si el [!UICONTROL **Modo de restricción de cookies**] está deshabilitado, Commerce recopila datos de comportamiento de forma predeterminada.
+>Si el [Modo de restricción de cookies](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html?lang=es) está habilitado, Commerce no recopilará datos de comportamiento hasta que el comprador dé su consentimiento. Si el [!UICONTROL **Modo de restricción de cookies**] está deshabilitado, Commerce recopila datos de comportamiento de forma predeterminada.
 
 ## Instalación
 

@@ -31,7 +31,7 @@ Las acciones críticas producen operaciones de invalidación y reindexación de 
 
 ## Más información
 
-- [Prácticas recomendadas para el almacenamiento en caché](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management#best-practices-for-caching)
+- [Prácticas recomendadas para el almacenamiento en caché](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/tools/cache-management#best-practices-for-caching)
 - [Contenido privado: invalidar contenido privado](https://developer.adobe.com/commerce/php/development/cache/page/private-content/#invalidate-private-content)
 - [Recomendaciones de hardware: cachés](../../../performance/hardware.md#caches)
 - [Configuración avanzada: Configurar Redis](../../../performance/advanced-setup.md#set-up-redis)

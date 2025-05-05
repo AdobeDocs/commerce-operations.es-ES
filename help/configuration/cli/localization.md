@@ -316,7 +316,7 @@ De forma similar al ejemplo anterior, genere un archivo CSV, pero en lugar de es
 
 [Resumen de traducciones]: https://developer.adobe.com/commerce/frontend-core/guide/translations/
 [diccionario de traducción]: https://developer.adobe.com/commerce/frontend-core/guide/translations/#translation-dictionaries
-[configura las traducciones]: https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-localize
+[configura las traducciones]: https://experienceleague.adobe.com/es/docs/commerce-admin/stores-sales/site-store/store-localize
 [Más información sobre los paquetes de idiomas]: https://developer.adobe.com/commerce/frontend-core/guide/translations/#language-packages
 [ISO 639-1]: https://www.iso.org/iso-639-language-codes.html
 [ISO 3166]: https://www.iso.org/iso-3166-country-codes.html

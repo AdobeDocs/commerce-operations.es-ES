@@ -17,7 +17,7 @@ A medida que aumenta el volumen de pedidos en los sitios de Commerce, puede opti
 
 - **[!UICONTROL Asynchronous indexing]**: habilite esta opción para evitar bloqueos de base de datos y procesos lentos que pueden producirse cuando se realizan simultáneamente grandes cantidades de pedidos.
 - **[!UICONTROL Asynchronous email notifications]**: habilite esta opción para acelerar el rendimiento del cierre de compra enviando notificaciones de cierre de compra y procesamiento de pedidos por correo electrónico a intervalos designados en lugar de enviarlas inmediatamente.
-- **[!UICONTROL Enable Archiving]**: habilita esta opción para mejorar el rendimiento de pedidos, facturas, envíos y notas de crédito, y para mantener el espacio de trabajo libre de información innecesaria, de modo que pueda centrarse en el negocio actual. Consulte [Habilitar archivado](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-archive).
+- **[!UICONTROL Enable Archiving]**: habilita esta opción para mejorar el rendimiento de pedidos, facturas, envíos y notas de crédito, y para mantener el espacio de trabajo libre de información innecesaria, de modo que pueda centrarse en el negocio actual. Consulte [Habilitar archivado](https://experienceleague.adobe.com/es/docs/commerce-admin/stores-sales/order-management/orders/order-archive).
 
 ## Productos y versiones afectados
 
@@ -38,7 +38,7 @@ Los pasos para habilitar el procesamiento asincrónico de pedidos dependen del m
 
 - Para los sitios locales de Adobe Commerce en modo predeterminado o de producción, habilite la indexación asíncrona actualizando la configuración de la cuadrícula en el Administrador.
 
-  Ver [Habilitar las actualizaciones programadas de la cuadrícula y la reindexación](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-scheduled-operations.html#enable-scheduled-grid-updates-and-reindexing)
+  Ver [Habilitar las actualizaciones programadas de la cuadrícula y la reindexación](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-scheduled-operations.html?lang=es#enable-scheduled-grid-updates-and-reindexing)
 
   >[!WARNING]
   >

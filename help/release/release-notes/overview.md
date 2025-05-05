@@ -16,7 +16,7 @@ Use la siguiente tabla para encontrar información importante Notas de la versi�
 
 >[!TIP]
 >
->- Si es nuevo en Adobe Systems comercio, consulte la [&#128279;](../../implementation-playbook/architecture/enterprise-blueprint.md)arquitectura empresarial y [acerca de Adobe Systems temas de comercio](https://experienceleague.adobe.com/en/docs/commerce-admin/start/about) para orientarse.
+>- Si es nuevo en Adobe Systems comercio, consulte la [&#128279;](../../implementation-playbook/architecture/enterprise-blueprint.md)arquitectura empresarial y [acerca de Adobe Systems temas de comercio](https://experienceleague.adobe.com/es/docs/commerce-admin/start/about) para orientarse.
 >- Para obtener información sobre las actualizaciones, consulte [Lectura](../../upgrade/resources/recommended-reading.md) recomendada.
 
 <table>
@@ -28,18 +28,18 @@ Use la siguiente tabla para encontrar información importante Notas de la versi�
             <li><a href="https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/">Cambios incompatibles con versiones anteriores</a></li>
             <li><a href="commerce/overview.md">Adobe Systems comercio</a></li>
             <li><a href="security/overview.md">Parches de seguridad</a></li>
-            <li><a href="https://helpx.adobe.com/security/products/magento.html">Adobe Systems boletín de seguridad</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html">B2B para Adobe Systems comercio</a></li>
+            <li><a href="https://helpx.adobe.com/es/security/products/magento.html">Adobe Systems boletín de seguridad</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html?lang=es">B2B para Adobe Systems comercio</a></li>
           </ul>
         </td>
       <td><strong>Adobe Systems Commerce en infraestructura en la nube</strong>
         <p>Obtén información sobre las últimas mejoras en los paquetes de Cloud Suite para Adobe Systems Commerce, que están diseñados para implementar y administrar instalaciones y actualizaciones de Adobe Systems Commerce en la plataforma nube.</p>
           <ul>
-            <li><a href="https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/backward-incompatible-changes">Cambios incompatibles con versiones anteriores</a></li>
-            <li><a href="https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches">Parches en la nube para el comercio</a></li>
-            <li><a href="https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/cloud-docker">Cloud Docker para el comercio</a></li>
-            <li><a href="https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/cloud-components">Componentes de nube para el comercio</a></li>
-            <li><a href="https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/ece-tools-package">Herramientas ECE</a></li>
+            <li><a href="https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/release-notes/backward-incompatible-changes">Cambios incompatibles con versiones anteriores</a></li>
+            <li><a href="https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches">Parches en la nube para el comercio</a></li>
+            <li><a href="https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/release-notes/cloud-docker">Cloud Docker para el comercio</a></li>
+            <li><a href="https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/release-notes/cloud-components">Componentes de nube para el comercio</a></li>
+            <li><a href="https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/release-notes/ece-tools-package">Herramientas ECE</a></li>
           </ul>
       </td>
     </tr>
@@ -47,13 +47,13 @@ Use la siguiente tabla para encontrar información importante Notas de la versi�
       <td><strong>Servicios para Adobe Systems Comercio</strong>
         <p>Conozca las últimas mejoras en los innovadores servicios de comercialización de comercio.</p>
           <ul>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html">Audience Activation</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce/catalog-service/release-notes.html">Servicio de catálogo</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html?lang=es">Audience Activation</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce/catalog-service/release-notes.html?lang=es">Servicio de catálogo</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce/experience-platform-connector/release-notes.html">Conector Experience Platform</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce/live-search/release-notes.html">Live Search</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce/payment-services/release-notes.html">Servicios de pago</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce/product-recommendations/release-notes.html">Recommendations del producto</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html">Conector de servicios</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce/live-search/release-notes.html?lang=es">Live Search</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce/payment-services/release-notes.html?lang=es">Servicios de pago</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce/product-recommendations/release-notes.html?lang=es">Recommendations del producto</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html?lang=es">Conector de servicios</a></li>
           </ul>
         </td>
       <td><strong>Herramientas</strong>
@@ -72,8 +72,8 @@ Use la siguiente tabla para encontrar información importante Notas de la versi�
        <td><strong>Experiencia en escaparate</strong>
         <p>Conozca las últimas mejoras en la tecnología de escaparates que puede utilizar para versión experiencias únicas para sus clientes.</p>
           <ul>
-            <li><a href="https://experienceleague.adobe.com/developer/commerce/storefront/">Adobe Commerce Storefront</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/page-builder/release-notes.html">Page Builder</a></li>
+            <li><a href="https://experienceleague.adobe.com/developer/commerce/storefront/?lang=es">Adobe Commerce Storefront</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/page-builder/release-notes.html?lang=es">Page Builder</a></li>
             <li><a href="https://github.com/magento/pwa-studio/releases/latest">PWA Studio</a></li>
           </ul>
       </td>

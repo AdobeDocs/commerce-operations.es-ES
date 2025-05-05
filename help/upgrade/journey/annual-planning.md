@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Muchas empresas trabajan con presupuestos anuales y hojas de ruta. Durante estas discusiones anuales, es imperativo que hable sobre el estado, la dirección y la estrategia de actualización de la plataforma durante el año, junto con cómo se adapta a los objetivos generales y a los indicadores clave de rendimiento (KPI) de la empresa.
 
-Siguiendo la [programación de versiones](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule), asigne las ventanas de presupuesto y lanzamiento para las actualizaciones, evitando festivos, cierres de empresas y horas punta. Si comprende la programación de versiones de Adobe y se mantiene informado de los cambios y las mejoras que forman parte de cada versión a través de las [notas de la versión](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview), podrá planificar mejor su año.
+Siguiendo la [programación de versiones](https://experienceleague.adobe.com/es/docs/commerce-operations/release/planning/schedule), asigne las ventanas de presupuesto y lanzamiento para las actualizaciones, evitando festivos, cierres de empresas y horas punta. Si comprende la programación de versiones de Adobe y se mantiene informado de los cambios y las mejoras que forman parte de cada versión a través de las [notas de la versión](https://experienceleague.adobe.com/es/docs/commerce-operations/release/notes/overview), podrá planificar mejor su año.
 
 Durante la planificación, es posible que desee preguntarse:
 

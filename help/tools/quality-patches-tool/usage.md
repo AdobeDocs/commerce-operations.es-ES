@@ -14,11 +14,11 @@ ht-degree: 0%
 
 [[!DNL Quality Patches Tool]](https://github.com/magento/quality-patches) ofrece parches individuales desarrollados por el Adobe y la comunidad de Magento Open Source. Permite aplicar, revertir y ver información general sobre todos los parches individuales disponibles para la versión instalada de Adobe Commerce. Puede aplicar parches a proyectos de Adobe Commerce independientemente de quién lo haya desarrollado. Por ejemplo, puede aplicar un parche desarrollado por la comunidad a proyectos de Adobe Commerce.
 
-Vea este [vídeo técnico](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/tools/quality-patch-tool.html?lang=en) y aprenda a utilizar la herramienta Parches de calidad para Adobe Commerce.
+Vea este [vídeo técnico](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/tools/quality-patch-tool.html?lang=es) y aprenda a utilizar la herramienta Parches de calidad para Adobe Commerce.
 
 >[!INFO]
 >
->Consulte [Aplicar parches individuales](#apply-individual-patches) para obtener instrucciones sobre cómo aplicar parches a sus proyectos de Adobe Commerce. Ver [[!DNL Quality Patches Tool]: buscar parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) para revisar una lista completa de parches publicados.
+>Consulte [Aplicar parches individuales](#apply-individual-patches) para obtener instrucciones sobre cómo aplicar parches a sus proyectos de Adobe Commerce. Ver [[!DNL Quality Patches Tool]: buscar parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es) para revisar una lista completa de parches publicados.
 
 >[!WARNING]
 >
@@ -61,7 +61,7 @@ Adobe Commerce 2.3.5.
 La tabla de estado incluye:
 
 - **Tipo**:
-   - `Optional`: todos los parches del paquete [!DNL Quality Patches Tool] y [Commerce en la guía de infraestructura en la nube > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) son opcionales para las instalaciones de Adobe Commerce.
+   - `Optional`: todos los parches del paquete [!DNL Quality Patches Tool] y [Commerce en la guía de infraestructura en la nube > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=es) son opcionales para las instalaciones de Adobe Commerce.
    - `Deprecated`: el Adobe ha desaprobado el parche individual. Si ha aplicado el parche, le recomendamos que lo revierta. La operación de reversión también elimina el parche de la tabla de estado.
 
 - **Estado**:
@@ -82,7 +82,7 @@ La tabla de estado incluye:
 
 >[!WARNING]
 >
->Se recomienda probar todos los parches en un entorno de ensayo o desarrollo antes de implementarlos en producción. También se recomienda realizar una copia de seguridad de los datos antes de aplicar un parche. Consulte [Copia de seguridad y reversión del sistema de archivos, medios y base de datos](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/backup.html).
+>Se recomienda probar todos los parches en un entorno de ensayo o desarrollo antes de implementarlos en producción. También se recomienda realizar una copia de seguridad de los datos antes de aplicar un parche. Consulte [Copia de seguridad y reversión del sistema de archivos, medios y base de datos](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/backup.html?lang=es).
 
 Para aplicar un solo parche, ejecute el siguiente comando donde `MAGETWO-XXXX` es el ID de parche especificado en la tabla de estado:
 
@@ -110,7 +110,7 @@ Debe limpiar la caché después de aplicar los parches para ver los cambios en l
 
 >[!WARNING]
 >
->Se recomienda probar todos los parches en un entorno de ensayo o desarrollo antes de implementarlos en producción. También se recomienda realizar una copia de seguridad de los datos antes de aplicar un parche. Consulte [Copia de seguridad y reversión del sistema de archivos, medios y base de datos](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/backup.html).
+>Se recomienda probar todos los parches en un entorno de ensayo o desarrollo antes de implementarlos en producción. También se recomienda realizar una copia de seguridad de los datos antes de aplicar un parche. Consulte [Copia de seguridad y reversión del sistema de archivos, medios y base de datos](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/backup.html?lang=es).
 
 Para revertir una única revisión, ejecute el siguiente comando donde `MAGETWO-XXXX` es el identificador de revisión especificado en la tabla de estado:
 

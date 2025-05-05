@@ -54,7 +54,7 @@ En el software, una función de usuario con privilegios de administrador complet
 En Adobe Commerce, los usuarios administradores tienen permisos y acceso completos a todas las funciones, opciones y funcionalidades de la variable Administración.
 También pueden crear usuarios y funciones.
 
-Más información: [Agregando usuarios](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions-users-all.html)
+Más información: [Agregando usuarios](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions-users-all.html?lang=es)
 
 _Atributos de término:_
 
@@ -70,7 +70,7 @@ El back office protegido por contraseña de su tienda donde se administran los p
 Los usuarios acceden al área de Administración para administrar la tienda, incluidos productos, pedidos, envíos, contenido de CMS, diseño de la tienda, información del cliente, etc.
 Los usuarios administradores tienen una función asociada con permisos que controlan el acceso a las funciones, opciones y funcionalidades.
 
-Más información: [Guía del usuario de Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html)
+Más información: [Guía del usuario de Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html?lang=es)
 
 _Atributos de término:_
 
@@ -84,7 +84,7 @@ _sustantivo_
 
 Las variables ADMIN son variables de entorno de proyecto para anular los ajustes de configuración de la cuenta de usuario Administrador para acceder a la IU de Administración.
 
-Más información: [Variables de administrador](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-admin.html)
+Más información: [Variables de administrador](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-admin.html?lang=es)
 
 _Atributos de término:_
 
@@ -96,7 +96,7 @@ _sustantivo_
 
 El nombre de área interna asignado al administrador.
 
-Más información: [Guía del usuario de Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html)
+Más información: [Guía del usuario de Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html?lang=es)
 
 _Atributos de término:_
 
@@ -190,7 +190,7 @@ La tienda proporciona un selector de moneda para varias monedas aceptadas en un 
 Los símbolos de moneda aparecen en los precios de los productos y en los documentos de venta, como pedidos y facturas.
 Puede personalizar los símbolos de moneda según sea necesario y establecer la visualización del precio por separado para cada tienda o vista.
 
-Más información: [Moneda](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency.html)
+Más información: [Moneda](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency.html?lang=es)
 
 _Atributos de término:_
 
@@ -212,13 +212,13 @@ _Atributos de término:_
 _sustantivo_
 
 Una unidad de salida de página que procesa contenido distintivo (un fragmento de información, un elemento de interfaz de usuario) o cualquier cosa visualmente tangible para el usuario final.
-Los módulos implementaron [bloques](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/blocks/blocks.html) y los proporcionaron.
+Los módulos implementaron [bloques](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/blocks/blocks.html?lang=es) y los proporcionaron.
 Los bloques utilizan plantillas para generar HTML.
 Algunos ejemplos de bloques son una lista de categorías, un minicarrito, etiquetas de productos y una lista de productos.
 
-[Los bloques dinámicos](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/dynamic-blocks/dynamic-blocks.html) proporcionan contenido basado en lógica, como reglas de precios.
+[Los bloques dinámicos](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/dynamic-blocks/dynamic-blocks.html?lang=es) proporcionan contenido basado en lógica, como reglas de precios.
 
-Page Builder amplía la interactividad y la creación de [bloques](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/block.html) y [bloques dinámicos](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/dynamic-block.html).
+Page Builder amplía la interactividad y la creación de [bloques](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/block.html?lang=es) y [bloques dinámicos](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/dynamic-block.html?lang=es).
 
 _Atributos de término:_
 
@@ -248,7 +248,7 @@ _adjetivo_
 
 Un negocio minorista con una ubicación física permanente, a diferencia de los negocios que funcionan de forma virtual o exclusiva a través de Internet.
 
-Para [Inventory management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/sources/sources-manage.html) y [Order Management](#oms), esta tienda es una fuente para rastrear cantidades de productos, enviar pedidos y admitir la recogida en la tienda.
+Para [Inventory management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/sources/sources-manage.html?lang=es) y [Order Management](#oms), esta tienda es una fuente para rastrear cantidades de productos, enviar pedidos y admitir la recogida en la tienda.
 
 _Atributos de término:_
 
@@ -274,7 +274,7 @@ _sustantivo_
 Permite a los clientes ensamblar un producto personalizable &quot;crear el suyo propio&quot; a partir de diversas opciones y configuraciones.
 Cada elemento del paquete es un producto simple o virtual independiente.
 
-Más información: [Productos configurables](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/types/product-create-configurable.html)
+Más información: [Productos configurables](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/types/product-create-configurable.html?lang=es)
 
 _Atributos de término:_
 
@@ -448,7 +448,7 @@ _sustantivo_
 
 Las variables de nube son variables de entorno específicas de Adobe Commerce en la infraestructura de la nube y utilizan el prefijo **`MAGENTO_CLOUD`**.
 
-Más información: [Variables de nube](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud.html)
+Más información: [Variables de nube](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud.html?lang=es)
 
 _Atributos de término:_
 
@@ -458,7 +458,7 @@ _Atributos de término:_
 
 _sustantivo_
 
-Una variante especial de [block](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/blocks/blocks.html) que solamente se puede crear en el administrador y no se puede hacer referencia a ella a través de archivos de diseño.
+Una variante especial de [block](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/blocks/blocks.html?lang=es) que solamente se puede crear en el administrador y no se puede hacer referencia a ella a través de archivos de diseño.
 
 _Atributos de término:_
 
@@ -619,7 +619,7 @@ _sustantivo_
 
 Una clave de implementación es la clave pública SSH del proyecto y habilita el acceso de solo lectura o de lectura-escritura (si está habilitado) a un repositorio Git.
 
-Más información: [Conexiones seguras](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html)
+Más información: [Conexiones seguras](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html?lang=es)
 
 _Atributos de término:_
 
@@ -688,7 +688,7 @@ _sustantivo_
 
 Conjunto de scripts y herramientas diseñados para administrar e implementar la aplicación de Commerce. Este paquete simplifica muchos procesos de infraestructura en la nube de Adobe Commerce, incluida la implementación en un entorno Docker, la administración de crons, la verificación de la configuración del proyecto y la aplicación de parches de Adobe.
 
-Más información: [paquete ece-tools](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/package-overview.html)
+Más información: [paquete ece-tools](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/package-overview.html?lang=es)
 
 _Atributos de término:_
 
@@ -967,7 +967,7 @@ _sustantivo_
 MAGEID suele ser el contacto de facturación de la cuenta de Adobe Commerce (y puede no ser el propietario del proyecto del proyecto de Adobe Commerce en la nube).
 Para acceder a los derechos de Adobe Commerce y Adobe Commerce en paquetes de infraestructura en la nube, debe utilizar las claves de acceso asociadas con un MAGEID al que se haya concedido acceso a esos paquetes.
 
-Más información: [Obtener las claves de autenticación](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/authentication-keys.html)
+Más información: [Obtener las claves de autenticación](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/authentication-keys.html?lang=es)
 
 _Atributos de término:_
 
@@ -978,7 +978,7 @@ _Atributos de término:_
 _sustantivo_
 
 En marketing y venta minorista, un porcentaje añadido al coste de un artículo para determinar el precio de venta minorista.
-[Configurar el marcado](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/settings/settings-advanced-custom-options.html), o markdown, de un producto a través de opciones personalizables de producto.
+[Configurar el marcado](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/settings/settings-advanced-custom-options.html?lang=es), o markdown, de un producto a través de opciones personalizables de producto.
 
 En el desarrollo, lenguaje informático que controla el procesamiento, la presentación y el formato del texto.
 Además, las etiquetas de marcado son fragmentos de código que agregan funcionalidad o contenido a una página o bloque de CMS.
@@ -1076,7 +1076,7 @@ _sustantivo_
 
 El encubrimiento de origen es una función de seguridad que permite a Adobe Commerce en la infraestructura de la nube bloquear cualquier tráfico que no sea de Fastly para evitar ataques DDoS, dirigiéndose a la infraestructura de la nube (origen).
 
-Más información: [Ocultación de origen facial](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/fastly-origin-cloaking-enablement-faq.html)
+Más información: [Ocultación de origen facial](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/fastly-origin-cloaking-enablement-faq.html?lang=es)
 
 _Atributos de término:_
 
@@ -1094,7 +1094,7 @@ Estos controles también se conocen como &quot;tipos de contenido&quot;.
 Los comerciantes pueden diseñar diseños y páginas sin experiencia de codificación.
 Se proporciona compatibilidad con extensiones para que los desarrolladores amplíen Page Builder.
 
-Más información: [Guía del usuario de Page Builder](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/introduction.html), [DevDocs de Page Builder](https://developer.adobe.com/commerce/frontend-core/page-builder/)
+Más información: [Guía del usuario de Page Builder](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/introduction.html?lang=es), [DevDocs de Page Builder](https://developer.adobe.com/commerce/frontend-core/page-builder/)
 
 _Atributos de término:_
 
@@ -1406,7 +1406,7 @@ Los objetivos del sistema de componentes de la IU incluyen los siguientes:
 * AJAX Uso de datos de componentes para actualizar la
 * Introducción de una nueva DSL para crear los elementos anteriores
 
-Más información: [Guía de componentes de la interfaz de usuario](https://developer.adobe.com/commerce/frontend-core/ui-components/), [Page Builder](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/introduction.html)
+Más información: [Guía de componentes de la interfaz de usuario](https://developer.adobe.com/commerce/frontend-core/ui-components/), [Page Builder](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/introduction.html?lang=es)
 
 _Atributos de término:_
 
@@ -1445,7 +1445,7 @@ El código producido por el proveedor que amplía o personaliza el comportamient
 Los VBE se prueban exhaustivamente y se incluyen con cada versión compatible de Adobe Commerce.
 Un VBE puede incluir módulos, temáticas y paquetes de idiomas.
 
-Obtenga más información en el tema [Extensión de paquetes de proveedores](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/modules/upgrade.html).
+Obtenga más información en el tema [Extensión de paquetes de proveedores](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/modules/upgrade.html?lang=es).
 
 _Atributos de término:_
 
@@ -1511,7 +1511,7 @@ _Atributos de término:_
 
 _sustantivo_
 
-Un [widget](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/widgets/widgets.html) es un fragmento de código preparado que se puede usar para colocar bloques, vínculos y contenido dinámico en ubicaciones específicas en páginas de tiendas.
+Un [widget](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/widgets/widgets.html?lang=es) es un fragmento de código preparado que se puede usar para colocar bloques, vínculos y contenido dinámico en ubicaciones específicas en páginas de tiendas.
 Puede utilizar widgets para crear páginas de aterrizaje para campañas de marketing y mostrar contenido promocional en ubicaciones específicas de la tienda.
 Los widgets también se pueden utilizar para agregar elementos interactivos y bloques de acción para sistemas de revisión externos, chats de vídeo, votaciones y formularios de suscripción, o para proporcionar elementos de navegación para nubes de etiquetas y reguladores de imagen.
 

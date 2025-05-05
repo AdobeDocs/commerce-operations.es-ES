@@ -41,5 +41,5 @@ Los sitios web y las tiendas son multiplicadores de los datos del catálogo, por
 
 ## Más información
 
-- [Explicación de sitios web, tiendas y vistas de tiendas](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/best-practices)
-- [Configurar varios sitios web o tiendas](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites)
+- [Explicación de sitios web, tiendas y vistas de tiendas](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/configure-store/best-practices)
+- [Configurar varios sitios web o tiendas](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites)

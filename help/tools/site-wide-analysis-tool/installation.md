@@ -78,7 +78,7 @@ La infraestructura local debe cumplir los siguientes requisitos antes de instala
 
 ## [!DNL Commerce Services Connector]
 
-El agente requiere que la [[!DNL Commerce Services Connector]](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html) extensión esté instalada en el sistema y [configurada](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html) con claves API. Para comprobar que la extensión está instalada, ejecute el siguiente comando:
+El agente requiere que la [[!DNL Commerce Services Connector]](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html?lang=es) extensión esté instalada en el sistema y [configurada](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html?lang=es) con claves API. Para comprobar que la extensión está instalada, ejecute el siguiente comando:
 
 ```bash
 bin/magento module:status Magento_ServicesId
@@ -92,13 +92,13 @@ Si ha instalado la extensión y la ha configurado con una clave de API existente
 
    >[!NOTE]
    >
-   > Si tiene problemas para acceder a su cuenta, consulte [No se puede iniciar sesión en el soporte de Adobe Systems Commerce o nube cuenta](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/unable-to-log-in-to-support-or-cloud-project.html) para obtener ayuda sobre la solución de problemas.
+   > Si tiene problemas para acceder a su cuenta, consulte [No se puede iniciar sesión en el soporte de Adobe Systems Commerce o nube cuenta](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/unable-to-log-in-to-support-or-cloud-project.html?lang=es) para obtener ayuda sobre la solución de problemas.
 
 1. Haga clic en **[!UICONTROL API Portal]**.
 
 1. Haga clic **[!UICONTROL Delete]** junto a la clave de API existente.
 
-1. [Configure](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html) una nueva clave de API.
+1. [Configure](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html?lang=es) una nueva clave de API.
 
 >[!IMPORTANT]
 >
@@ -130,7 +130,7 @@ Si la extensión no está instalada, siga estas instrucciones para instalarla:
    bin/magento cache:clean
    ```
 
-1. [Configure las claves](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html) de API para conectar la extensión al sistema.
+1. [Configure las claves](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html?lang=es) de API para conectar la extensión al sistema.
 
 ## Instale el agente
 
@@ -404,7 +404,7 @@ Para resolver este error, pruebe los siguientes pasos:
 1. Realice una [instalación](#scripted) programada, guarde el resultado y revise el resultado en busca de errores.
 1. Revise el archivo generado `config.yaml` y compruebe que la ruta de acceso a su instancia de comercio y PHP es correcta.
 1. Asegúrese de que el usuario que ejecuta el planificador está en el sistema de [archivos propietario](../../installation/prerequisites/file-system/overview.md) Unix grupo o es el mismo usuario que el sistema de archivos propietario.
-1. Asegúrese de que las claves del [conector de Commerce Services estén](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html) instaladas correctamente e intente actualizarlas para conectar la extensión al sistema.
+1. Asegúrese de que las claves del [conector de Commerce Services estén](https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html?lang=es) instaladas correctamente e intente actualizarlas para conectar la extensión al sistema.
 1. [Desinstale](#uninstall) el agente después de actualizar las claves y vuelva a instalarlo con el script[&#128279;](#scripted) de instalación.
 1. Ejecute el planificador y compruebe si sigue recibiendo el mismo error.
 1. Si sigue recibiendo el mismo error, aumente el nivel de registro en la `config.yaml` depurar y abra un vale de soporte.

@@ -18,7 +18,7 @@ ht-degree: 0%
 
 La versión de seguridad de Adobe Systems Commerce 2.4.6-p10 proporciona correcciones de errores de seguridad para vulnerabilidades identificadas en versiones anteriores de 2.4.6.
 
-Para obtener la información más reciente acerca de las correcciones de errores de seguridad, consulte [Adobe Systems boletín de seguridad APSB25-26](https://helpx.adobe.com/security/products/magento/apsb25-26.html).
+Para obtener la información más reciente acerca de las correcciones de errores de seguridad, consulte [Adobe Systems boletín de seguridad APSB25-26](https://helpx.adobe.com/es/security/products/magento/apsb25-26.html).
 
 {{b2b-patches}}
 
@@ -26,7 +26,7 @@ Para obtener la información más reciente acerca de las correcciones de errores
 
 The Adobe Commerce 2.4.6-p9 security release provides security bug fixes for vulnerabilities identified in previous releases of 2.4.6.
 
-For the latest information about the security bug fixes, see [Adobe Security Bulletin APSB25-08](https://helpx.adobe.com/security/products/magento/apsb25-08.html).
+For the latest information about the security bug fixes, see [Adobe Security Bulletin APSB25-08](https://helpx.adobe.com/es/security/products/magento/apsb25-08.html).
 
 {{b2b-patches}}
 
@@ -38,7 +38,7 @@ For the latest information about the security bug fixes, see [Adobe Security Bul
 
 The Adobe Commerce 2.4.6-p8 security release provides security bug fixes for vulnerabilities identified in previous releases of 2.4.6.
 
-Para obtener la información más reciente acerca de las correcciones de errores de seguridad, consulte [Adobe Systems boletín de seguridad APSB24-73](https://helpx.adobe.com/security/products/magento/apsb24-73.html).
+Para obtener la información más reciente acerca de las correcciones de errores de seguridad, consulte [Adobe Systems boletín de seguridad APSB24-73](https://helpx.adobe.com/es/security/products/magento/apsb24-73.html).
 
 {{b2b-patches}}
 
@@ -54,7 +54,7 @@ Para obtener la información más reciente acerca de las correcciones de errores
 
 La versión de seguridad de Adobe Systems Commerce 2.4.6-p7 proporciona correcciones de errores de seguridad para vulnerabilidades identificadas en versiones anteriores de 2.4.6.
 
-Para obtener la información más reciente acerca de las correcciones de errores de seguridad, consulte [Adobe Systems boletín de seguridad APSB24-61](https://helpx.adobe.com/security/products/magento/apsb24-61.html).
+Para obtener la información más reciente acerca de las correcciones de errores de seguridad, consulte [Adobe Systems boletín de seguridad APSB24-61](https://helpx.adobe.com/es/security/products/magento/apsb24-61.html).
 
 ### Resúmenes
 
@@ -68,15 +68,15 @@ Para obtener la información más reciente acerca de las correcciones de errores
 
 La versión de seguridad de Adobe Systems Commerce 2.4.6-p6 proporciona correcciones de errores de seguridad para vulnerabilidades que se han identificado en versiones anteriores de 2.4.6.
 
-Para obtener la información más reciente acerca de las correcciones de errores de seguridad, consulte [Adobe Systems boletín de seguridad APSB24-40](https://helpx.adobe.com/security/products/magento/apsb24-40.html).
+Para obtener la información más reciente acerca de las correcciones de errores de seguridad, consulte [Adobe Systems boletín de seguridad APSB24-40](https://helpx.adobe.com/es/security/products/magento/apsb24-40.html).
 
-Para ser compatibles con la versión 2.4.6-p6 de Commerce, los comerciantes que tengan la extensión Adobe Systems Commerce B2B deben actualizar a [B2B versión 1.4.2-p1](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes#b2b-v142-p1).
+Para ser compatibles con la versión 2.4.6-p6 de Commerce, los comerciantes que tengan la extensión Adobe Systems Commerce B2B deben actualizar a [B2B versión 1.4.2-p1](https://experienceleague.adobe.com/es/docs/commerce-admin/b2b/release-notes#b2b-v142-p1).
 
 ### Aplicar revisión para CVE-2024-34102
 
 {{$include /help/_includes/release-notes/hotfixes/not-included-2024-06.md}}
 
-Para ser compatibles con la versión 2.4.6-p6 de Commerce, los comerciantes que tengan la extensión Adobe Systems Commerce B2B deben actualizar a [B2B versión 1.4.2-p1](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes#b2b-v142-p1).
+Para ser compatibles con la versión 2.4.6-p6 de Commerce, los comerciantes que tengan la extensión Adobe Systems Commerce B2B deben actualizar a [B2B versión 1.4.2-p1](https://experienceleague.adobe.com/es/docs/commerce-admin/b2b/release-notes#b2b-v142-p1).
 
 ### Resúmenes
 
@@ -86,13 +86,13 @@ Para ser compatibles con la versión 2.4.6-p6 de Commerce, los comerciantes que 
 
 La versión de seguridad de Adobe Systems Commerce 2.4.6-p5 proporciona correcciones de errores de seguridad para vulnerabilidades que se han identificado en versiones anteriores de 2.4.6.
 
-Para obtener la información más reciente acerca de estas correcciones, consulte [Adobe Systems boletín de seguridad APSB24-18](https://helpx.adobe.com/security/products/magento/apsb24-18.html).
+Para obtener la información más reciente acerca de estas correcciones, consulte [Adobe Systems boletín de seguridad APSB24-18](https://helpx.adobe.com/es/security/products/magento/apsb24-18.html).
 
 ## 2.4.6-p4
 
 La versión de seguridad Adobe Systems Commerce 2.4.6-p4 proporciona correcciones de errores de seguridad para vulnerabilidades que se han identificado en versiones anteriores. Esta versión también incluye mejoras de seguridad que mejoran el cumplimiento de las prácticas recomendadas de seguridad más recientes.
 
-Para obtener la información más reciente acerca de las correcciones de errores de seguridad, consulte [Adobe Systems boletín de seguridad APSB24-03](https://helpx.adobe.com/security/products/magento/apsb24-03.html).
+Para obtener la información más reciente acerca de las correcciones de errores de seguridad, consulte [Adobe Systems boletín de seguridad APSB24-03](https://helpx.adobe.com/es/security/products/magento/apsb24-03.html).
 
 ### Resúmenes
 
@@ -109,7 +109,7 @@ Esta versión introduce dos mejoras de seguridad significativas:
 
 La versión de seguridad Adobe Systems Commerce 2.4.6-p3 proporciona correcciones de errores de seguridad para vulnerabilidades que se han identificado en versiones anteriores. Esta versión también incluye mejoras de seguridad para mejorar el cumplimiento de las prácticas recomendadas de seguridad más recientes.
 
-Para obtener la información más reciente acerca de las correcciones de seguridad, consulte [Adobe Systems boletín de seguridad APSB23-50](https://helpx.adobe.com/security/products/magento/apsb23-50.html).
+Para obtener la información más reciente acerca de las correcciones de seguridad, consulte [Adobe Systems boletín de seguridad APSB23-50](https://helpx.adobe.com/es/security/products/magento/apsb23-50.html).
 
 ### Resúmenes
 
@@ -117,7 +117,7 @@ Esta versión introduce una nueva opción de configuración de caché de Página
 
 ### Correcciones incluidas en esta versión
 
-Adobe Systems Commerce 2.4.6-p3 incluye la resolución de la degradación del rendimiento corregida por parche ACSD-51892. Los comerciantes no se ven afectados por el problema que se aborda en este parche, que se describe en el artículo de Knowledge Base ACSD-51892: Problema de rendimiento donde los [archivos de configuración se cargan varias veces](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/patches/v1-1-33/acsd-51892-performance-issue-where-config-files-load-multiple-times.html) veces.
+Adobe Systems Commerce 2.4.6-p3 incluye la resolución de la degradación del rendimiento corregida por parche ACSD-51892. Los comerciantes no se ven afectados por el problema que se aborda en este parche, que se describe en el artículo de Knowledge Base ACSD-51892: Problema de rendimiento donde los [archivos de configuración se cargan varias veces](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/patches/v1-1-33/acsd-51892-performance-issue-where-config-files-load-multiple-times.html?lang=es) veces.
 
 ### Problemas conocidos
 
@@ -134,11 +134,11 @@ Si el problema de suma de comprobación persiste, elimine el `composer.lock` arc
 
 La versión de seguridad Adobe Systems Commerce 2.4.6-p2 proporciona correcciones de errores de seguridad para vulnerabilidades que se han identificado en versiones anteriores. Esta versión también proporciona mejoras de seguridad para mejorar el cumplimiento de las prácticas recomendadas de seguridad más recientes.
 
-Para obtener la información más reciente acerca de las correcciones de errores de seguridad, consulte [Adobe Systems boletín de seguridad APSB23-42](https://helpx.adobe.com/security/products/magento/apsb23-42.html).
+Para obtener la información más reciente acerca de las correcciones de errores de seguridad, consulte [Adobe Systems boletín de seguridad APSB23-42](https://helpx.adobe.com/es/security/products/magento/apsb23-42.html).
 
 ### Apply hotfix for CVE-2022-31160
 
-`jQuery-UI` library version 1.13.1 has a known security vulnerability (CVE-2022-31160) that affects multiple versions of Adobe Commerce and Magento Open Source. Este biblioteca es una dependencia de Adobe Systems Commerce y Magento Open Source 2.4.4, 2.4.5 y 2.4.6. Los comerciantes que ejecutan implementaciones afectadas deben aplicar el parche especificado en el artículo de la Base de conocimiento sobre la vulnerabilidad de seguridad de IU de jQuery CVE-2022-31160 para las [versiones](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/jquery-cve-2022-31160-fix-2.4.4-2.4.5-2.4.6.html) 2.4.4, 2.4.5 y 2.4.6.
+`jQuery-UI` library version 1.13.1 has a known security vulnerability (CVE-2022-31160) that affects multiple versions of Adobe Commerce and Magento Open Source. Este biblioteca es una dependencia de Adobe Systems Commerce y Magento Open Source 2.4.4, 2.4.5 y 2.4.6. Los comerciantes que ejecutan implementaciones afectadas deben aplicar el parche especificado en el artículo de la Base de conocimiento sobre la vulnerabilidad de seguridad de IU de jQuery CVE-2022-31160 para las [versiones](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/jquery-cve-2022-31160-fix-2.4.4-2.4.5-2.4.6.html?lang=es) 2.4.4, 2.4.5 y 2.4.6.
 
 ### Resúmenes
 
@@ -146,17 +146,17 @@ El valor de `fastcgi_pass` en el `nginx.sample` archivo se ha devuelto a su valo
 
 ### Hotfixes included in this release
 
-Adobe Commerce 2.4.6-p2 includes resolution of the performance degradation that was addressed by patch ACSD-51892. Merchants are not affected by the issue addressed by this patch, which is described in the [ACSD-51892: Performance issue where config files load multiple times](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/patches/v1-1-33/acsd-51892-performance-issue-where-config-files-load-multiple-times.html) Knowledge Base article.
+Adobe Commerce 2.4.6-p2 includes resolution of the performance degradation that was addressed by patch ACSD-51892. Merchants are not affected by the issue addressed by this patch, which is described in the [ACSD-51892: Performance issue where config files load multiple times](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/patches/v1-1-33/acsd-51892-performance-issue-where-config-files-load-multiple-times.html?lang=es) Knowledge Base article.
 
 ## 2.4.6-p1
 
 The Adobe Commerce 2.4.6-p1 security release provides security bug fixes for vulnerabilities that have been identified in previous releases. This release also includes security enhancements and platform upgrades to improve compliance with the latest security best practices.
 
-For the latest information about the security bug fixes, see [Adobe Security Bulletin APSB23-35](https://helpx.adobe.com/security/products/magento/apsb23-35.html).
+For the latest information about the security bug fixes, see [Adobe Security Bulletin APSB23-35](https://helpx.adobe.com/es/security/products/magento/apsb23-35.html).
 
 ### Aplicar revisión para CVE-2022-31160
 
-`jQuery-UI` biblioteca versión 1.13.1 tiene una vulnerabilidad de seguridad conocida (CVE-2022-31160) que afecta a varias versiones de Adobe Systems Commerce y Magento Open Source. Este biblioteca es una dependencia de Adobe Systems Commerce y Magento Open Source 2.4.4, 2.4.5 y 2.4.6. Los comerciantes que ejecutan implementaciones afectadas deben aplicar el parche especificado en el artículo de Knowledge Base CVE-2022-31160 [sobre la vulnerabilidad de seguridad de Query IU para las versiones](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/jquery-cve-2022-31160-fix-2.4.4-2.4.5-2.4.6.html) 2.4.4, 2.4.5 y 2.4.6.
+`jQuery-UI` biblioteca versión 1.13.1 tiene una vulnerabilidad de seguridad conocida (CVE-2022-31160) que afecta a varias versiones de Adobe Systems Commerce y Magento Open Source. Este biblioteca es una dependencia de Adobe Systems Commerce y Magento Open Source 2.4.4, 2.4.5 y 2.4.6. Los comerciantes que ejecutan implementaciones afectadas deben aplicar el parche especificado en el artículo de Knowledge Base CVE-2022-31160 [sobre la vulnerabilidad de seguridad de Query IU para las versiones](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/jquery-cve-2022-31160-fix-2.4.4-2.4.5-2.4.6.html?lang=es) 2.4.4, 2.4.5 y 2.4.6.
 
 #### Destacar
 
@@ -188,4 +188,4 @@ Platform upgrades for this release improve compliance with the latest security b
   Installation failed, reverting ./composer.json and ./composer.lock to their original content.
   ```
 
-  This issue can be resolved by adding manual dependencies for the B2B security package with a [stability tag](https://getcomposer.org/doc/04-schema.md#package-links). Para obtener más información, consulte la Notas de la versión B2B[&#128279;](https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html#known-issue).
+  This issue can be resolved by adding manual dependencies for the B2B security package with a [stability tag](https://getcomposer.org/doc/04-schema.md#package-links). Para obtener más información, consulte la Notas de la versión B2B[&#128279;](https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html?lang=es#known-issue).

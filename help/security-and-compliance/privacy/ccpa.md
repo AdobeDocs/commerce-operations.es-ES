@@ -26,7 +26,7 @@ La CCPA otorga los siguientes derechos nuevos a los consumidores:
 
 ## Cumplimiento de CCPA
 
-El desarrollo y la aplicación de un plan de cumplimiento de la CCPA requieren un esfuerzo coordinado. Recomendamos a los comerciantes que reúnan un equipo multifuncional y sigan la hoja de ruta descrita en [Guía de cumplimiento de la CCPA](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-ccpa.html) para que su compañía cumpla con la normativa. Como desarrollador, se le podría invitar a participar como parte interesada, haciendo hincapié en los pasos 2 al 5 del proceso. Consulte la [Guía de cumplimiento de CCPA](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-ccpa.html) para obtener más información.
+El desarrollo y la aplicación de un plan de cumplimiento de la CCPA requieren un esfuerzo coordinado. Recomendamos a los comerciantes que reúnan un equipo multifuncional y sigan la hoja de ruta descrita en [Guía de cumplimiento de la CCPA](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-ccpa.html?lang=es) para que su compañía cumpla con la normativa. Como desarrollador, se le podría invitar a participar como parte interesada, haciendo hincapié en los pasos 2 al 5 del proceso. Consulte la [Guía de cumplimiento de CCPA](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-ccpa.html?lang=es) para obtener más información.
 
 1. Organice un equipo interfuncional para abordar el cumplimiento de la CCPA.
 

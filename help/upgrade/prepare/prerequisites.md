@@ -33,7 +33,7 @@ Asegúrese de haber actualizado todos los requisitos del sistema y las dependenc
 
 >[!NOTE]
 >
->Para Adobe Systems Commerce en proyectos infraestructura en la nube Pro, debe crear un ticket de [soporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) técnico para instalar o actualizar servicios en entornos de ensayo y producción. Indique los cambios de servicio necesarios e incluya sus archivos y actualizados `.magento.app.yaml` `services.yaml` y la versión de PHP en el ticket. El equipo de infraestructura de nube puede tardar hasta 48 horas en actualizar el proyecto. Consulte [Software y servicios compatibles](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/cloud-architecture.html#supported-software-and-services).
+>Para Adobe Systems Commerce en proyectos infraestructura en la nube Pro, debe crear un ticket de [soporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=es#submit-ticket) técnico para instalar o actualizar servicios en entornos de ensayo y producción. Indique los cambios de servicio necesarios e incluya sus archivos y actualizados `.magento.app.yaml` `services.yaml` y la versión de PHP en el ticket. El equipo de infraestructura de nube puede tardar hasta 48 horas en actualizar el proyecto. Consulte [Software y servicios compatibles](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/cloud-architecture.html?lang=es#supported-software-and-services).
 
 ## Compruebe que está instalado un motor de búsqueda compatible
 
