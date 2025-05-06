@@ -12,9 +12,10 @@ solution: Commerce
 solution-title: Commerce
 topic: Administration, Commerce, Development
 type: Documentation
-source-git-commit: aaca7ead9923b676718f6e371caa797d6c0d412f
+badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe) y a proyectos locales."
+source-git-commit: ca842f16660c568d8d690bbcef06777e68ceac2c
 workflow-type: tm+mt
-source-wordcount: '129'
+source-wordcount: '146'
 ht-degree: 0%
 
 ---
