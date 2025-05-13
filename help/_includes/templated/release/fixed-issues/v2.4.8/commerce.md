@@ -1,5 +1,5 @@
 ---
-source-git-commit: 5d6d60b99d883f0a83cdcfc1c65c04d2f4ef09b7
+source-git-commit: 290e79e329d5809b0cbb756a53ee935af95c86c5
 workflow-type: tm+mt
 source-wordcount: '27937'
 ht-degree: 0%
@@ -9,7 +9,7 @@ ht-degree: 0%
 
 ## Se han corregido problemas en la versión 2.4.8
 
-Hemos corregido 582 problemas en el código principal de Adobe Commerce 2.4.8. A continuación, se describe un subconjunto de los problemas corregidos que se incluyen en esta versión.
+Hemos corregido 581 problemas en el código principal de Adobe Commerce 2.4.8. A continuación, se describe un subconjunto de los problemas corregidos que se incluyen en esta versión.
 
 ### API
 
@@ -192,7 +192,7 @@ El comando `bin/magento i18n:collect-phrases -o` ahora recopila y agrega correct
 * __Problema de permiso para acceder al bloque dinámico__
 Anteriormente, para el administrador restringido, al agregar un nuevo bloque dinámico, se producía un error. Después de implementar esta corrección, el administrador restringido puede agregar correctamente el bloque dinámico y editar el bloque sin ningún error
   _ACP2E-2687_
-* __El apóstrofo del nombre de la vista de tienda se ha reemplazado por &#039;__
+* __El apóstrofo del nombre de la vista de tienda se ha reemplazado por &amp;#039;__
 Los filtros de vista de tienda de la cuadrícula ahora muestran correctamente los apóstrofos
   _ACP2E-2787 - [Problema de GitHub](https://github.com/magento/magento2/issues/38395) - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/39d54c2d)_
 * __La carga de Favicon no puede validar los archivos .ico__
@@ -1537,7 +1537,7 @@ Se ha corregido un problema por el cual al intentar eliminar productos en stock 
 * __No se pueden agregar productos debido a que la mutación del SKU distingue entre mayúsculas y minúsculas__
 Se ha resuelto un problema en el que la mutación addProductsToCart devolvía un error &quot;PRODUCT_NOT_FOUND&quot; al utilizar SKU con mayúsculas y minúsculas diferentes. La mutación ahora gestiona los SKU sin distinción de mayúsculas y minúsculas, lo que garantiza la coherencia con las consultas del servicio de catálogo y el comportamiento de PDP.
   _LYNX-469_
-* __Atributo de producto > marca comercial abreviada &trade; se devuelve como &trade;__
+* __Atributo de producto > marca comercial abreviada &amp;trade; se devuelve como &amp;trade;__
 Se ha resuelto un problema de codificación de caracteres con el nombre del producto para la API de GraphQL
   _LYNX-603_
 * __problema de mutación de updateCustomerEmail__
