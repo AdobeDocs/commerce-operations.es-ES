@@ -2,9 +2,9 @@
 title: Notas de la versión
 description: Obtenga información acerca de los parches disponibles para Adobe Commerce y los problemas que resuelven.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
-source-git-commit: db6ccbcf16786c1987f3d84e86582fe048edd2e4
+source-git-commit: 729670154dcca1df590f60d534af162fbcc57c94
 workflow-type: tm+mt
-source-wordcount: '25802'
+source-wordcount: '26107'
 ht-degree: 0%
 
 ---
@@ -15,11 +15,24 @@ ht-degree: 0%
 
 >[!INFO]
 >
->Consulte [Aplicar parches](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=es#apply-individual-patches) para obtener instrucciones sobre cómo aplicar parches a sus proyectos de Adobe Commerce. Consulte [[!DNL Quality Patches Tool]: busque parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es) en la Guía de actualización de software para revisar una lista completa de parches publicados.
+>Consulte [Aplicar parches](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches) para obtener instrucciones sobre cómo aplicar parches a sus proyectos de Adobe Commerce. Consulte [[!DNL Quality Patches Tool]: busque parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) en la Guía de actualización de software para revisar una lista completa de parches publicados.
 
 >[!INFO]
 >
 >Para obtener información acerca de [!DNL quality patches] creado por la comunidad para Magento Open Source, consulte las [notas de la versión](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.64 {#v1-1-64}
+
+* **ACP2E-3838** (para Adobe Commerce y Magento Open Source >=2.4.4-p9 &lt;2.4.4-p13 || >=2,4,5-p8 &lt;2,4,5-p12 || >=2.4.6-p6 &lt;2.4.6-p10 || >=2.4.7 &lt;2.4.7-p5): corrige el problema en el que los errores CORS de [!DNL Page Builder] impiden guardar cambios en el panel Administración en el modo de producción.
+* **ACP2E-3841** (para Adobe Commerce y Magento Open Source >=2.4.5 &lt;2.4.8): corrige el problema en el que las reglas de precios del carro de compras para productos de envío múltiple no se aplican correctamente cuando se utilizan condiciones de subselección y el envío gratuito está habilitado.
+* **ACSD-63139** (para Adobe Commerce y Magento Open Source >=2.4.6 &lt;2.4.7): corrige el problema en el que la exportación de productos falla cuando los atributos de productos contienen miles de valores de opción.
+* **ACSD-65100** (para Adobe Commerce y Magento Open Source >=2.4.4 &lt;2.4.8): corrige el problema en el cual al eliminar los valores de [!UICONTROL Maximum Width] y [!UICONTROL Maximum Height] en la configuración de [!UICONTROL Media Gallery Image Optimization] se produce un error durante el proceso de optimización de imágenes.
+* **ACSD-65127** (para Adobe Commerce y Magento Open Source >=2.4.4 &lt;2.4.8): corrige el problema en el que al habilitar la minificación de JavaScript en el modo de producción, [!DNL TinyMCE] 6 genera errores en la consola del explorador, lo que afecta a la funcionalidad y a la experiencia del usuario.
+* **ACSD-65787** (para Adobe Commerce y Magento Open Source >=2.4.7-p5 &lt;2.4.8): corrige el problema en el que la clase SchemaBuilder se bloquea durante la creación del esquema o se actualiza debido a una &quot;columna&quot; de clave de matriz no definida al procesar los datos de tabla.
+* **ACSD-65223** (para Adobe Commerce, B2B 1.5.1): corrige el problema en el que los términos y acuerdos seleccionados manualmente para [!DNL B2B] pedidos de compra resultan en un error.
+* **ACSD-65540** (para Adobe Commerce, B2B 1.5.2): corrige el problema en el que se produce un error de sintaxis SQL debido a la ausencia de la función `REGEXP_LIKE` al actualizar la tabla `company_structure`.
+* **ACSD-65684** (para Adobe Commerce, B2B 1.5.2): corrige el problema de rendimiento por el que se tardaba demasiado tiempo en actualizar el módulo `Magento_Company` después de actualizar a [!DNL B2B] 1.5.2 al procesar un gran número de registros (~100.000+) en la tabla `company_structure`.
+* Versiones actualizadas: **ACSD-48234**, **ACSD-51819**, **ACSD-57570**, **ACSD-56415**
 
 ## v1.1.63 {#v1-1-63}
 
