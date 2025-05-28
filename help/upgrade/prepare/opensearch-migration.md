@@ -3,7 +3,7 @@ title: Migrar de Elasticsearch a OpenSearch
 description: Obtenga información acerca de cómo reemplazar el motor de búsqueda utilizado para las instalaciones locales de Adobe Commerce.
 feature: Upgrade, Search
 exl-id: 56f1e609-83d2-4705-99d8-b395bb511411
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: 54aef3d7db7b8333721fb56db0ba8f098aea030b
 workflow-type: tm+mt
 source-wordcount: '185'
 ht-degree: 0%
@@ -18,13 +18,13 @@ Desde las versiones 2.4.4, 2.4.3-p2 y 2.3.7-p3, Adobe Commerce admite OpenSearch
 
 ## Ruta de migración
 
-Los pasos para migrar a OpenSearch son sencillos y siguen en gran medida los pasos para la configuración del Elasticsearch. En estos pasos se da por hecho que Adobe Commerce es la única aplicación que utiliza el motor de búsqueda. En los casos en que varias aplicaciones usen el motor de búsqueda, siga la guía de migración oficial [Cambio del Elasticsearch de código abierto a OpenSearch](https://opensearch.org/blog/technical-posts/2021/10/moving-from-opensource-elasticsearch-to-opensearch/).
+Los pasos para migrar a OpenSearch son sencillos y siguen en gran medida los pasos de la configuración de Elasticsearch. En estos pasos se da por hecho que Adobe Commerce es la única aplicación que utiliza el motor de búsqueda. En los casos en que varias aplicaciones usen el motor de búsqueda, siga la guía de migración oficial [Cambio de Elasticsearch de código abierto a OpenSearch](https://opensearch.org/blog/moving-from-opensource-elasticsearch-to-opensearch/).
 
 1. Asegúrese de que la instalación cumpla los [requisitos previos del motor de búsqueda](../../installation/prerequisites/search-engine/overview.md).
 
 1. Coloque el sitio en [Modo de mantenimiento](../../installation/tutorials/maintenance-mode.md).
 
-1. Elasticsearch de desinstalación opcional.
+1. Si lo desea, desinstale Elasticsearch.
 
 1. [Instalar OpenSearch](https://opensearch.org/docs/latest/opensearch/install/important-settings/).
 

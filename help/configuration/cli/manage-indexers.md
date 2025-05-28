@@ -2,7 +2,7 @@
 title: Administrar los indexadores
 description: Consulte ejemplos de cómo ver y administrar los indexadores de Commerce.
 exl-id: d2cd1399-231e-4c42-aa0c-c2ed5d7557a0
-source-git-commit: 16feb8ec7ecc88a6ef03a769d45b1a3a2fe88d97
+source-git-commit: 54aef3d7db7b8333721fb56db0ba8f098aea030b
 workflow-type: tm+mt
 source-wordcount: '947'
 ht-degree: 0%
@@ -39,7 +39,8 @@ salesrule_rule                           Sales Rule
 ```
 
 >[!NOTE]
-> Los comerciantes de Adobe Commerce que usan Live Search, Servicio de catálogo o Product Recommendations tienen la opción de usar la [indexación de precios basada en SaaS](https://experienceleague.adobe.com/docs/commerce/price-indexer/index.html).
+>
+> Los comerciantes de Adobe Commerce que usan Live Search, Servicio de catálogo o Product Recommendations tienen la opción de usar la [indexación de precios basada en SaaS](https://experienceleague.adobe.com/en/docs/commerce/price-indexer/price-indexing).
 
 ## Ver estado del indexador
 
@@ -124,28 +125,28 @@ Puede ejecutar los siguientes índices en modo paralelo:
 - `Catalog Search Fulltext` se puede comparar con las vistas de tiendas.
 - `Category Product` se puede comparar con las vistas de tiendas.
 - `Catalog Price` puede estar en paralelo con los grupos de sitios web y clientes.
-- `Catalog Permissions` se pueden comparar con grupos de clientes.
+- `Catalog Permissions` puede estar en paralelo en los grupos de clientes.
 
 >[!INFO]
 >
->La paralelización para Catálogo Search Texto completo y Categoría producto está activada de forma predeterminada.
+>La paralelización para la búsqueda en el catálogo de texto completo y categoría de producto está habilitada de forma predeterminada.
 
-Para utilizar la paralelización, defina uno de los modos de dimensiones disponibles para el indexador de precios del producto:
+Para utilizar la paralelización, establezca uno de los modos de dimensión disponibles para el indexador de precios de producto:
 
-- `none` (valor predeterminado)
+- `none` (predeterminado)
 - `website`
 - `customer_group`
 - `website_and_customer_group`
 
-Por ejemplo, para configurar el modo por sitio web:
+Por ejemplo, para establecer el modo por sitio web:
 
 ```bash
 bin/magento indexer:set-dimensions-mode catalog_product_price website
 ```
 
-Para utilizar la paralelización para los permisos de catálogo, establezca uno de los modos de dimensiones disponibles para el indizador de permisos de catálogo:
+Para utilizar la paralelización para los permisos de Catálogo, establezca uno de los modos de dimensiones disponibles para el indexador Permisos de catálogo:
 
-- `none` (valor predeterminado)
+- `none` (predeterminado)
 - `customer_group`
 
 O para comprobar el modo actual:
@@ -154,9 +155,9 @@ O para comprobar el modo actual:
 bin/magento indexer:show-dimensions-mode
 ```
 
-Para reindexar en modo paralelo, ejecute el comando reindex utilizando el variable `MAGE_INDEXER_THREADS_COUNT`entorno o agregue un variable entorno al `env.php` archivo. Este variable establece el número de subprocesos para el procesamiento del reindexado.
+Para reindexar en modo paralelo, ejecute el comando reindex usando la variable de entorno `MAGE_INDEXER_THREADS_COUNT` o agregue una variable de entorno al archivo `env.php`. Esta variable establece el número de subprocesos para el procesamiento de reindexación.
 
-Por ejemplo, el siguiente comando ejecuta el `Catalog Search Fulltext` indizador a través de tres subprocesos:
+Por ejemplo, el comando siguiente ejecuta el indizador `Catalog Search Fulltext` en tres subprocesos:
 
 ```bash
 MAGE_INDEXER_THREADS_COUNT=3 php -f bin/magento indexer:reindex catalogsearch_fulltext
@@ -192,22 +193,22 @@ Catalog Search indexer has been invalidated.
 
 ## Configuración de indexadores
 
-Utilice este comando para establecer las siguientes opciones del indexador:
+Utilice este comando para establecer las siguientes opciones del indizador:
 
-- **Actualizar al guardar (`realtime`)**: los datos indexados se actualizan cuando se realiza un cambio en la administración. (Por ejemplo, el índice de productos categoría se reindexa después de agregar productos a un categoría en la Administración).
-- **Actualización por programación (`schedule`)**: Los datos se indexan de acuerdo con la programación establecida por su cron job.
+- **Actualización al guardar (`realtime`)**: los datos indizados se actualizan cuando se realiza un cambio en el administrador. (Por ejemplo, el índice de productos de la categoría se reindexará después de agregar los productos a una categoría en el Administrador).
+- **Actualización por programación (`schedule`)**: los datos se indizan según la programación establecida por el trabajo cron.
 
 [Más información sobre la indexación](https://developer.adobe.com/commerce/php/development/components/indexing/).
 
 ### Mostrar la configuración actual
 
-Para vista la configuración actual del indexador:
+Para ver la configuración actual del indizador:
 
 ```bash
 bin/magento indexer:show-mode [indexer]
 ```
 
-Donde `[indexer]` es un lista de indexadores separados por espacios. Omita `[indexer]` mostrar todos los modos de los indizadores. Por ejemplo, para mostrar el modo de todos los indexadores:
+Donde `[indexer]` es una lista de indizadores separados por espacios. Omita `[indexer]` para mostrar todos los modos de los indizadores. Por ejemplo, para mostrar el modo de todos los indexadores:
 
 Resultado de muestra:
 
@@ -225,17 +226,17 @@ Product Price:                                     Update on Save
 Catalog Search:                                    Update on Save
 ```
 
-### Establecer el modo de indexador
+### Establecer el modo del indizador
 
 >[!IMPORTANT]
 >
 >Asegúrese de establecer [!DNL Customer Grid] con `realtime` en lugar de `schedule`. [!DNL Customer Grid] solo se puede reindexar usando la opción [!UICONTROL Update on Save]. Este índice no admite la opción `Update by Schedule`. Utilice la siguiente línea de comandos para establecer este indizador para que se actualice al guardar: `php bin/magento indexer:set-mode realtime customer_grid`
 >
->Consulte las [Prácticas recomendadas para la configuración del indizador](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/indexer-configuration.html?lang=es) en el _Manual de implementación_.
+>Consulte las [Prácticas recomendadas para la configuración del indizador](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/indexer-configuration.html) en el _Manual de implementación_.
 
 >[!INFO]
 >
->Antes de cambiar los modos del indizador, establezca su sitio web en el modo [mantenimiento](../../installation/tutorials/maintenance-mode.md) y [deshabilite los trabajos cron](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html?lang=es#disable-cron-jobs). Esto garantiza que no sufra bloqueos de base de datos.
+>Antes de cambiar los modos del indizador, establezca su sitio web en el modo [mantenimiento](../../installation/tutorials/maintenance-mode.md) y [deshabilite los trabajos cron](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html#disable-cron-jobs). Esto garantiza que no sufra bloqueos de base de datos.
 
 Para especificar la configuración del indexador:
 
@@ -266,7 +267,7 @@ Los déclencheur de base de datos relacionados con los indizadores se agregan cu
 
 ### Establecer estado del indizador
 
-El `bin/magento indexer:set-status` comando se introdujo en Adobe Systems Commerce 2.4.7. Permite a los administradores modificar el estado operativo de uno o más indexadores, optimizando el rendimiento del sistema durante operaciones extensas gustar importaciones de datos, actualizaciones o mantenimiento.
+El comando `bin/magento indexer:set-status` se introdujo en Adobe Commerce 2.4.7. Permite a los administradores modificar el estado operativo de uno o más indexadores, optimizando el rendimiento del sistema durante operaciones extensas como importaciones de datos, actualizaciones o mantenimiento.
 
 Sintaxis del comando:
 
@@ -308,6 +309,6 @@ Cuando un indizador se establece en un estado `suspended`, afecta principalmente
 
 >[!IMPORTANT]
 >
->Cambiar el estado de un indizador a `valid` de `suspended` o `invalid` requiere precaución. Esta acción puede posible cliente a una degradación del rendimiento si hay datos acumulados sin indexar.
+>Cambiar el estado de un indizador a `valid` de `suspended` o `invalid` requiere precaución. Esta acción puede provocar una degradación del rendimiento si se acumulan datos sin indexar.
 >
->Es crucial asegurarse de que todos los datos se indexan con precisión antes de actualizar manualmente el estado para `valid` mantener el rendimiento del sistema y la integridad de los datos.
+>Es crucial asegurarse de que todos los datos estén indexados con precisión antes de actualizar manualmente el estado a `valid` para mantener el rendimiento del sistema y la integridad de los datos.
