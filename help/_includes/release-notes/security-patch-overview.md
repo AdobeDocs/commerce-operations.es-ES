@@ -1,7 +1,7 @@
 ---
-source-git-commit: 9514f6655bb6d99205c3799a164b6db62887362c
+source-git-commit: 0eb7528ebcc1515defd672830b8f00e460819aa1
 workflow-type: tm+mt
-source-wordcount: '228'
+source-wordcount: '234'
 ht-degree: 0%
 
 ---
@@ -17,4 +17,4 @@ Las versiones de parches de seguridad también pueden incluir cambios relacionad
 
 Cada versión del parche de seguridad se basa en la versión completa anterior del parche. Contiene correcciones de calidad y seguridad de versiones anteriores de parches y correcciones de seguridad creadas entre la versión anterior completa de parches y la versión de parches de seguridad.
 
-Para obtener instrucciones sobre cómo descargar y aplicar parches de seguridad, consulte [Realizar y actualizar](../../installation/composer.md#example---security-patch) en la _Guía de actualización_.
+Para obtener instrucciones sobre cómo descargar y aplicar parches de seguridad, consulte [Cómo obtener y aplicar parches de seguridad](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/how-to-obtain-and-apply-security-patches) en la _base de conocimiento de Adobe Commerce_.
