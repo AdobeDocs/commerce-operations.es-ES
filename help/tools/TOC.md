@@ -2,9 +2,9 @@
 user-guide-title: Herramientas
 user-guide-description: Obtenga información sobre las distintas herramientas que puede utilizar con Adobe Commerce, sus usos, el proceso de instalación y cómo obtener acceso.
 feature: Configuration
-source-git-commit: 4024b32bad2d6f07d8d4931d25898e28ea55b0b9
+source-git-commit: 5ac7d661cacd4bd7ce8c1f336a964854e9ff3cf5
 workflow-type: tm+mt
-source-wordcount: '7580'
+source-wordcount: '7595'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ ht-degree: 0%
    - [Alertas administradas para Adobe Commerce: alerta de advertencia de CPU](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-cpu-warning-alert.md)
 - Herramienta Parches de calidad {#quality-patches-tool}
    - [[!DNL Quality Patches Tool]: herramienta de autoservicio para parches de calidad](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)
-   - [[!DNL Quality Patches Tool]: buscar parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es){target="_blank"}
+   - [[!DNL Quality Patches Tool]: buscar parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
    - [Uso](quality-patches-tool/usage.md)
    - [Notas de la versión](quality-patches-tool/release-notes.md)
    - Parches disponibles en la herramienta Parches de calidad {#patches-available-in-qpt}
@@ -793,6 +793,7 @@ ht-degree: 0%
          - [ACSD-64753: La tienda preseleccionada en &quot;Recogida en tienda&quot; no se actualiza cuando se cambian las direcciones de envío](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-63/pre-selected-store-in-pickup-in-store-doesnt-update-when-shipping-address-changes.md)
       - v1.1.64 {#v1-1-64}
          - [Información general:  [!DNL Quality Patches Tool] (QPT) v1.1.64](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/overview.md)
+         - [ACSD-65223: Las condiciones y los acuerdos seleccionados manualmente para los pedidos de compra B2B dan como resultado un error](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/acsd-65223-manually-selected-terms-and-agreements-for-b2b-purchase-orders-result-in-an-error.md)
          - [ACP2E-3841: Las reglas de precios de carrito para productos de envío múltiple no se aplican correctamente cuando se utilizan condiciones de subselección y el envío gratuito está habilitado](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/acp2e-3841-cart-price-rules-for-multi-shipping-products-do-not-apply-correctly-when-subselect-conditions-are-used-and-free-shipping-is-enabled.md)
    - [Comprobar parche para el problema de Adobe Commerce con la herramienta Parches de calidad](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Referencia de herramientas de la línea de comandos {#cli-reference}
@@ -841,6 +842,6 @@ ht-degree: 0%
       - [Datos que requieren una migración manual](data-migration-tool/migrate-data/manual.md)
       - [Pasos de la migración posterior a los datos](data-migration-tool/migrate-data/post-migration.md)
    - Recursos {#resources}
-      - [Solución de problemas](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html?lang=es)
+      - [Solución de problemas](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html)
       - [Registro de cambios](https://github.com/magento/data-migration-tool/blob/2.4/CHANGELOG.md)
-- [Volver a las guías operativas](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=es)
+- [Volver a las guías operativas](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
