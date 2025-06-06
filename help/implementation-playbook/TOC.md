@@ -2,10 +2,10 @@
 user-guide-title: Guía de implementación
 user-guide-description: Obtenga información acerca de las estrategias para planificar e implementar un sitio de Adobe Commerce con éxito.
 mini-toc-levels: 3
-source-git-commit: 3f6bf86091885ffa0c557b0c43ce3ff024076a45
+source-git-commit: 8d2dd409741717b534e4aef5e252a614ccb81f4a
 workflow-type: tm+mt
-source-wordcount: '160'
-ht-degree: 15%
+source-wordcount: '163'
+ht-degree: 14%
 
 ---
 
@@ -15,12 +15,12 @@ ht-degree: 15%
 - [Información general](overview.md)
 - Arquitectura e integraciones {#architecture}
    - [Referencia empresarial](architecture/enterprise-blueprint.md)
-- Mantenimiento y soporte técnico {#maintenance}
+- Mantenimiento y asistencia {#maintenance}
    - [Información general](maintenance/overview.md)
    - [Adobe Managed Services](maintenance/adobe-managed-services.md)
 - Prácticas recomendadas {#best-practices}
    - [Información general](best-practices/phases.md)
-   - Planificando {#planning}
+   - Planificación {#planning}
       - [Información general](best-practices/planning/overview.md)
       - [Administración de catálogos](best-practices/planning/catalog-management.md)
       - [Configuración de sitios, tiendas y vistas de tiendas](best-practices/planning/sites-stores-store-views.md)
@@ -28,6 +28,7 @@ ht-degree: 15%
       - [Configuración de bases de datos para implementaciones en la nube&#x200B;](best-practices/planning/database-on-cloud.md)
       - [Configuración de MySQL](best-practices/planning/mysql-configuration.md)
       - [Configuración del servicio Redis](best-practices/planning/redis-service-configuration.md)
+      - [Configuración del servicio Valkey](best-practices/planning/valkey-service-configuration.md)
       - [Tamaño de memoria de OPcache](best-practices/planning/opcache-memory-size.md)
       - [Tamaño de caché de RealPath](best-practices/planning/realpath-cache-size.md)
       - [Extensiones](best-practices/planning/extensions.md)
@@ -49,7 +50,7 @@ ht-degree: 15%
       - [Implementación de contenido estático](best-practices/development/static-content-deployment.md)
       - [Modificación de tablas de base de datos](best-practices/development/modifying-core-and-third-party-tables.md)
       - [Modificar código principal y de terceros](best-practices/development/modifying-core-and-third-party-code.md)
-   - Iniciar {#launch}
+   - Launch {#launch}
       - [Información general](best-practices/launch/overview.md)
       - [Configuración de rastreadores web](best-practices/launch/robots-txt.md)
       - [Proteja su sitio e infraestructura](best-practices/launch/security-best-practices.md)
@@ -68,4 +69,4 @@ ht-degree: 15%
       - [Lista de comprobación de actualización](best-practices/maintenance/upgrade-checklist.md)
       - [Actualizar los requisitos previos de MariaDB](best-practices/maintenance/mariadb-upgrade.md)
 - [Glosario](glossary.md)
-- [Volver a las guías operativas](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=es)
+- [Volver a las guías operativas](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
