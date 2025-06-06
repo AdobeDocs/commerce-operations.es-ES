@@ -2,9 +2,9 @@
 title: referencia env.php
 description: Vea una lista de valores para el archivo env.php.
 exl-id: cf02da8f-e0de-4f0e-bab6-67ae02e9166f
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 3f46ee08bb4edc08775bf986804772b88ca35f45
 workflow-type: tm+mt
-source-wordcount: '693'
+source-wordcount: '944'
 ht-degree: 0%
 
 ---
@@ -146,7 +146,7 @@ Commerce utiliza una clave de cifrado para proteger contraseñas y otros datos c
 ]
 ```
 
-Obtenga más información acerca de la [clave de cifrado](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/security/encryption-key) en la _guía del usuario de Commerce_.
+Obtenga más información acerca de la [clave de cifrado](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/encryption-key) en la _guía del usuario de Commerce_.
 
 ## db
 
@@ -203,7 +203,7 @@ Una lista de dominios descargables disponibles en este nodo. Se pueden agregar, 
 ]
 ```
 
-Más información sobre [Dominios descargables](https://experienceleague.adobe.com/es/docs/commerce-operations/tools/cli-reference/commerce-on-premises#downloadabledomainsadd).
+Más información sobre [Dominios descargables](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#downloadabledomainsadd).
 
 ## instalar
 
@@ -300,3 +300,74 @@ Obtenga más información en [env-php-config-set](../cli/set-configuration-value
 <!-- Link definitions -->
 
 [message-queue]: https://developer.adobe.com/commerce/php/development/components/message-queues/
+
+
+## Agregar variables a la configuración de archivo
+
+Puede establecer o anular todas las opciones de configuración (variables con valor) con variables de entorno del sistema operativo (SO).
+
+La configuración de `env.php` se almacena en una matriz con niveles anidados. Para convertir una ruta de acceso de matriz anidada en una cadena para las variables de entorno del sistema operativo, concatene cada clave en la ruta con caracteres de subrayado dobles `__`, en mayúsculas y con el prefijo `MAGENTO_DC_`.
+
+Por ejemplo, vamos a convertir el controlador de guardado de sesión de la configuración `env.php` en una variable de entorno del sistema operativo.
+
+```conf
+'session' => [
+  'save' => 'files'
+],
+```
+
+La concatenación de `__` y las claves en mayúsculas se convertirán en `SESSION__SAVE`.
+
+A continuación, se agrega el prefijo `MAGENTO_DC_` para obtener el nombre de la variable de entorno `MAGENTO_DC_SESSION__SAVE` del sistema operativo resultante.
+
+```shell
+export MAGENTO_DC_SESSION__SAVE=files
+```
+
+Otro ejemplo: vamos a convertir una ruta de opciones de configuración escalar `env.php`.
+
+```conf
+'x-frame-options' => 'SAMEORIGIN'
+```
+
+>[!INFO]
+>
+>Aunque el nombre de la variable debe estar en mayúsculas, el valor distingue entre mayúsculas y minúsculas y debe conservarse tal y como se documenta.
+
+Simplemente lo ponemos en mayúsculas y agregamos el prefijo `MAGENTO_DC_` para recibir el nombre de la variable de entorno `MAGENTO_DC_X-FRAME-OPTIONS` del sistema operativo final.
+
+```shell
+export MAGENTO_DC_X-FRAME-OPTIONS=SAMEORIGIN
+```
+
+>[!INFO]
+>
+>Tenga en cuenta que el contenido de `env.php` tendrá prioridad sobre las variables de entorno del sistema operativo.
+
+## Anular la configuración del archivo con variables
+
+Para anular las opciones de configuración de `env.php` existentes con una variable de entorno de sistema operativo, el elemento de matriz de la configuración debe estar codificado en JSON y establecerse como un valor de la variable de sistema operativo `MAGENTO_DC__OVERRIDE`.
+
+Si necesita anular varias opciones de configuración, asígnelas todas en una sola matriz antes de la codificación JSON.
+
+Por ejemplo, vamos a anular las siguientes `env.php` configuraciones:
+
+```conf
+'session' => [
+  'save' => 'files'
+],
+'x-frame-options' => 'SAMEORIGIN'
+```
+
+El texto con codificación JSON de la matriz anterior sería
+`{"session":{"save":"files"},"x-frame-options":"SAMEORIGIN"}`.
+
+A continuación, configúrelo como el valor de la variable del sistema operativo `MAGENTO_DC__OVERRIDE`.
+
+```shell
+export MAGENTO_DC__OVERRIDE='{"session":{"save":"files"},"x-frame-options":"SAMEORIGIN"}'
+```
+
+>[!INFO]
+>
+>Asegúrese de que la matriz codificada con JSON esté correctamente citada o se haya escapado si es necesario para evitar que el sistema operativo dañe la cadena codificada.
