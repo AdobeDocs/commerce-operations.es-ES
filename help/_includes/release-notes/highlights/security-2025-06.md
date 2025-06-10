@@ -1,7 +1,7 @@
 ---
-source-git-commit: f9cc5ab0cb1b64455e12081ffbf719e0f2a791ad
+source-git-commit: cbf41054a2a8ffefa38049e1bf6e4a2f09e06ce1
 workflow-type: tm+mt
-source-wordcount: '153'
+source-wordcount: '142'
 ht-degree: 0%
 
 ---
@@ -21,10 +21,8 @@ Esta versión incluye los siguientes aspectos destacados:
 
 * **Corrección para CVE-2025-47110**: resuelve una vulnerabilidad de las plantillas de correo electrónico.<!-- AC-14695 -->
 
-* **Corrección para VULN-31547**: resuelve una vulnerabilidad de vínculo canónico de categoría.<!-- AC-14713 -->
-
 >[!BEGINSHADEBOX]
 
-Las correcciones para CVE-2025-47110 VULN-31547 también están disponibles como parche aislado. Consulte el [artículo de la Base de conocimiento](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-50) para obtener detalles.
+La corrección para CVE-2025-47110 también está disponible como parche aislado. Consulte el [artículo de la Base de conocimiento](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-50) para obtener detalles.
 
 >[!ENDSHADEBOX]
