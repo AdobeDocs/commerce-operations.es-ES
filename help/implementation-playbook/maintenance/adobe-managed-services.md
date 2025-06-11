@@ -3,9 +3,9 @@ title: Adobe Managed Services
 description: Descubra cómo Adobe Managed Services puede ayudarle a respaldar y mantener su implementación de Adobe Commerce.
 exl-id: b600b0e3-c6fd-4b86-ad2a-a445e599f1bd
 feature: Services
-source-git-commit: c93dd37d6e196a09c9e7f4b376e421ca5886c7e0
+source-git-commit: e5a50707463bb7b36b4285889b10353faf9ba09f
 workflow-type: tm+mt
-source-wordcount: '1181'
+source-wordcount: '1168'
 ht-degree: 0%
 
 ---
@@ -53,8 +53,6 @@ Consulte la siguiente tabla para obtener una comparación más detallada de las 
 | Coordinación del proceso de Go-live | | | |
 | Administración de escalación dedicada | | | |
 | Supervisión y asistencia de aplicaciones | | | |
-
-Avíseme si desea exportar este archivo a Excel u otro formato.
 
 ## Funciones y responsabilidades
 
