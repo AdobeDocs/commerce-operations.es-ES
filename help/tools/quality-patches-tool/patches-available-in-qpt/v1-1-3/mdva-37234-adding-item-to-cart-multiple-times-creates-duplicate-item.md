@@ -41,15 +41,15 @@ Si agrega un artículo al carro de compras varias veces (solicitud paralela) par
 
    <pre>
     <code class="language-graphql">
-    mutation {
+    mutation &lbrace;
         generateCustomerToken(
             email: "customer email"
             password: "customer password"
         )
-        {
+        &lbrace;
             token
-        }
-    }
+        &rbrace;
+    &rbrace;
     </code>
     </pre>
 
@@ -57,9 +57,9 @@ Si agrega un artículo al carro de compras varias veces (solicitud paralela) par
 
    <pre>
     <code class="language-graphql">
-    mutation{
+    mutation&lbrace;
      createEmptyCart
-    }
+    &rbrace;
     </code>
     </pre>
 

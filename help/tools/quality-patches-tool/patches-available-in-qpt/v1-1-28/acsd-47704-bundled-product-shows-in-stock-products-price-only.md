@@ -37,7 +37,7 @@ El precio de un producto agrupado con la asignación de precios dinámica activa
 
 1. Vaya al panel de administración de Commerce.
 1. Vaya a **[!UICONTROL CATALOG]** > **[!UICONTROL Products]** > **[!UICONTROL Add Product]** > **[!UICONTROL Bundle Product]**.
-1. Establezca **[UICONTROL Dynamic Price]** en **[!UICONTROL Yes]**.
+1. Establezca **[!UICONTROL Dynamic Price]** en **[!UICONTROL Yes]**.
 1. Elementos de paquete:
    * Establecer **[!UICONTROL Ship bundle items]** en **[!UICONTROL Together]**
    * Seleccionar **[!UICONTROL Add Option]**

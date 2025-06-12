@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# ACSD-47336: error _[!UICONTROL Something went wrong]_al descartar las notificaciones en el administrador de Adobe Commerce
+# ACSD-47336: error _[!UICONTROL Something went wrong]_&#x200B;al descartar las notificaciones en el administrador de Adobe Commerce
 
-El parche ACSD-47336 corrige el problema en el que el usuario ve el error _[!UICONTROL Something went wrong]_al descartar las notificaciones en el administrador de [!DNL Commerce]. Esta revisión está disponible cuando está instalado [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.24. El ID del parche es ACSD-47336. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.6.
+El parche ACSD-47336 corrige el problema en el que el usuario ve el error _[!UICONTROL Something went wrong]_&#x200B;al descartar las notificaciones en el administrador de [!DNL Commerce]. Esta revisión está disponible cuando está instalado [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.24. El ID del parche es ACSD-47336. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.6.
 
 ## Productos y versiones afectados
 
@@ -31,7 +31,7 @@ El parche ACSD-47336 corrige el problema en el que el usuario ve el error _[!UIC
 
 ## Problema
 
-El usuario ve un error de _[!UICONTROL Something went wrong]_al descartar las notificaciones en el administrador de [!DNL Commerce].
+El usuario ve un error de _[!UICONTROL Something went wrong]_&#x200B;al descartar las notificaciones en el administrador de [!DNL Commerce].
 
 <u>Pasos a seguir</u>:
 
@@ -41,7 +41,7 @@ El usuario ve un error de _[!UICONTROL Something went wrong]_al descartar las no
 
 <u>Resultados esperados</u>:
 
-El error _[!UICONTROL Something went wrong]_no debería mostrarse al borrar las tareas completadas.
+El error _[!UICONTROL Something went wrong]_&#x200B;no debería mostrarse al borrar las tareas completadas.
 
 <u>Resultados reales</u>:
 

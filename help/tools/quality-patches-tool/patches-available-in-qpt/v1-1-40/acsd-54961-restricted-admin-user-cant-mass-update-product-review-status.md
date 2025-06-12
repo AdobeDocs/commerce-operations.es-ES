@@ -38,7 +38,7 @@ Un usuario administrador restringido no puede actualizar [!UICONTROL Product Rev
 1. Cree un sitio web, una tienda y una vista de tienda adicionales.
 1. Agregue un producto a la segunda tienda y, a continuación, agregue una revisión.
 1. Cree un usuario administrador restringido con acceso solo a la segunda tienda.
-1. Inicie sesión como usuario administrador restringido, luego vaya a **[!UICONTROL  Marketings]** > **[!UICONTROL Reviews]** > **[!UICONTROL Mass Update]** y establezca **Estado** en *Aprobado* o *Pendiente*.
+1. Inicie sesión como usuario administrador restringido, luego vaya a **[!UICONTROL &#x200B; Marketings]** > **[!UICONTROL Reviews]** > **[!UICONTROL Mass Update]** y establezca **Estado** en *Aprobado* o *Pendiente*.
 
 <u>Resultados esperados</u>:
 
