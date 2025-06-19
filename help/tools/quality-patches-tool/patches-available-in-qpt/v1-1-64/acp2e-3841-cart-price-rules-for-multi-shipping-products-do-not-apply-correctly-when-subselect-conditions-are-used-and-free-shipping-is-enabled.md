@@ -51,6 +51,7 @@ Las reglas de precio del carro de compras para productos de envío múltiple no 
 1. Prueba del producto 2:
    1. Categorías: Prueba de categoría 2
    1. Precio: $ 56,25 
+
       **(los precios deben ser los mismos que se muestran aquí para garantizar que la prueba funcione correctamente)**
 
 **Regla de precio del carro de compras:**

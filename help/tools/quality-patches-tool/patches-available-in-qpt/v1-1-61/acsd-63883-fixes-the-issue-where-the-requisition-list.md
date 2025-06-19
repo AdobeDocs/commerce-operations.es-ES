@@ -1,5 +1,5 @@
 ---
-title: 'ACSD-63883: corrigiendo `items_count` incorrecto en  [!DNL GraphQL] respuesta para [!UICONTROL Requisition List]'
+title: 'ACSD-63883: corrigiendo &grave;items_count&grave; incorrecto en  [!DNL GraphQL] respuesta para [!UICONTROL Requisition List]'
 description: Aplique el parche ACSD-63883 para corregir el problema en el que [!UICONTROL Requisition List] devuelve un valor "items_count" incorrecto en la respuesta  [!DNL GraphQL] s.
 feature: B2B, GraphQL
 role: Admin, Developer

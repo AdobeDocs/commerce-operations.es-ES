@@ -38,8 +38,8 @@ La exportación del producto falla cuando los atributos del producto contienen m
 
 1. Instale Adobe Commerce con el módulo B2B.
 1. Importar un volcado de base de datos grande con:
-   - ~7.000 productos
-   - ~450 atributos del producto
+   &#x200B;- ~7.000 productos
+   &#x200B;- ~450 atributos del producto
    : Algunos atributos con más de 100 opciones
 1. Ejecute el siguiente comando para instalar cron (si no está instalado):
 
