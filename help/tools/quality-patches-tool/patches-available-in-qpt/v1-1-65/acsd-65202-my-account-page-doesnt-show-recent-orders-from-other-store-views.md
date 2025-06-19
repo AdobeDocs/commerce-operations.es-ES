@@ -3,13 +3,14 @@ title: 'ACSD-65202: la página Mi cuenta no muestra pedidos recientes de otras v
 description: Aplique el parche ACSD-65202 para solucionar el problema de Adobe Commerce en el que la página Mi cuenta no muestra pedidos recientes de otras vistas de tienda dentro de la misma tienda.
 feature: Orders, User Account
 role: Admin, Developer
-source-git-commit: 0af6ab4ef15e8aa56354886b341b70a080662eae
+type: Troubleshooting
+exl-id: 031f12f2-1b70-4cbc-92a0-8eb561e34067
+source-git-commit: b1912bbc5aabd36067563326ee5c6bb84e14441d
 workflow-type: tm+mt
 source-wordcount: '411'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-65202: la página [!UICONTROL My Account] no muestra pedidos recientes de otras vistas de tiendas
 
@@ -27,7 +28,7 @@ El parche ACSD-65202 corrige el problema en el que la página **[!UICONTROL My A
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
@@ -60,7 +61,7 @@ El comportamiento es inconsistente. Los pedidos no aparecen en la vista de la se
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
 * Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía [!DNL Quality Patches Tool].
-* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=es) en la guía Commerce en la infraestructura de la nube.
+* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) en la guía Commerce en la infraestructura de la nube.
 
 ## Lectura relacionada
 

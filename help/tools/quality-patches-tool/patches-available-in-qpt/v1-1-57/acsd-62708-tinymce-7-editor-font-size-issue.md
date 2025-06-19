@@ -3,13 +3,14 @@ title: 'ACSD-62708: [!DNL TinyMCE] 7 tamaño de fuente del editor en el panel de
 description: Aplique el parche ACSD-62708 para solucionar el problema de Adobe Commerce donde el tamaño de fuente del editor  [!DNL TinyMCE] 7 en el administrador muestra PT y no PX. Ahora, también puede establecer el tamaño de fuente en PX en lugar de PT.
 feature: Admin Workspace
 role: Admin, Developer
-source-git-commit: ecb04a058e858580dfbc7a1edcd319423be9eeaa
+exl-id: 037a5831-dbc7-4834-ab8e-9b1f765b92b2
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '327'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-62708: [!DNL TinyMCE] 7 tamaño de fuente del editor en el panel de administración muestra PT
 
@@ -27,7 +28,7 @@ El parche ACSD-62708 resuelve el problema por el que el tamaño de fuente del ed
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
@@ -52,7 +53,7 @@ El tamaño de fuente es en formato PT.
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
 * Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía [!DNL Quality Patches Tool].
-* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=es) en la guía Commerce en la infraestructura de la nube.
+* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) en la guía Commerce en la infraestructura de la nube.
 
 ## Lectura relacionada
 

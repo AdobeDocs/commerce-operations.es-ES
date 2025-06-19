@@ -3,13 +3,14 @@ title: 'ACSD-62118: la tabla "sales_order_tax_item" no se ha actualizado complet
 description: Aplique el parche ACSD-62118 para corregir el problema de Adobe Commerce en el que la tabla sales_order_tax_item no se actualiza completamente cuando los pedidos B2B se realizan mediante el método [!UICONTROL Purchase Order].
 feature: Purchase Orders, B2B
 role: Admin, Developer
-source-git-commit: 5812b90fe07a084a1d3487784d0f36a2b7958286
+exl-id: 8ace73ad-f5a5-47ab-aca7-62c818775d2f
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '405'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-62118: la tabla `sales_order_tax_item` no se ha actualizado completamente para los pedidos B2B realizados con el método [!UICONTROL Purchase Order]
 
@@ -27,7 +28,7 @@ El parche ACSD-62118 corrige el problema en el que la tabla `sales_order_tax_ite
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
@@ -57,7 +58,7 @@ Cuando se realizan pedidos B2B utilizando el método *[!UICONTROL Purchase Order
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
 * Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía [!DNL Quality Patches Tool].
-* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=es) en la guía Commerce en la infraestructura de la nube.
+* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) en la guía Commerce en la infraestructura de la nube.
 
 ## Lectura relacionada
 

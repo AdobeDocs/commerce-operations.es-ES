@@ -4,7 +4,8 @@ description: Esta subsección proporciona una descripción detallada de los prob
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 3e252a71-f35f-4046-9353-169060451ffe
-source-git-commit: fc5c790108a3c62d4591631128743259824c4c6b
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '428'
 ht-degree: 0%
@@ -20,7 +21,7 @@ QPT v1.1.57 incluye los siguientes parches:
 1. **ACSD-57570**: corrige el problema en el cual un usuario administrador restringido con acceso a un almacén en particular no siempre puede ver todos los catálogos compartidos a los que están asignados los productos o puede ver clientes que no pueden guardar, lo que provoca incoherencias en el sistema.
 1. **ACSD-58325**: corrige el problema en el que el botón [!UICONTROL Import] está disponible incluso después de un error de validación.
 1. **ACSD-59083**: corrige el problema en el que algunas operaciones de actualización de la base de datos dan como resultado el error _No se encontró la tabla o vista base_ si la actualización [!DNL mview] se está ejecutando al mismo tiempo.
-1. **ACSD-61622**: corrige el problema en el que faltan [!DNL FedEx] tasas específicas de cuenta en la respuesta. ACSD-61622 reemplaza la corrección documentada en [[!DNL FedEx] migración de la integración del método de envío de [!DNL SOAP] a [!DNL RESTful API]](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/fedex-shipping-method-integration-migration-soap-restful-api).
+1. **ACSD-61622**: corrige el problema en el que faltan [!DNL FedEx] tasas específicas de cuenta en la respuesta. ACSD-61622 reemplaza la corrección documentada en [[!DNL FedEx] migración de la integración del método de envío de [!DNL SOAP] a [!DNL RESTful API]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/fedex-shipping-method-integration-migration-soap-restful-api).
 1. **ACSD-61895**: corrige el problema en el que la consulta de categorías [!DNL GraphQL] devuelve categorías con el permiso *allow* aunque la categoría raíz no tenga el permiso *allow*.
 1. **ACSD-62212**: corrige el problema en el cual el contenido del correo electrónico [!UICONTROL Forgot Password] no se traduce al idioma de la vista de tienda.
 1. **ACSD-62481**: corrige el problema en el que el carro de compras del cliente queda vacío aunque [!UICONTROL Persistence] esté habilitado.

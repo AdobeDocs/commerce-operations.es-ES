@@ -3,13 +3,14 @@ title: 'ACP2E-3841: Las reglas de precios de carrito para productos de envío m�
 description: Aplique el parche ACP2E-3841 para corregir el problema de Adobe Commerce en el que las reglas de precio del carro de compras para productos de envío múltiple no se aplican correctamente cuando se utilizan condiciones de subselección y el envío gratuito está habilitado.
 feature: Shopping Cart, Price Rules
 role: Admin, Developer
-source-git-commit: 1abb32109d5ca4a90cdd1d210d1fae6a728699fd
+exl-id: 73979b71-9b15-4a4b-a1c9-37d3213c177f
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '441'
 ht-degree: 0%
 
 ---
-
 
 # ACP2E-3841: Las reglas de precios de carrito para productos de envío múltiple no se aplican correctamente cuando se utilizan condiciones de subselección y el envío gratuito está habilitado
 
@@ -27,7 +28,7 @@ El parche ACP2E-3841 corrige el problema en el que las reglas de precio del carr
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
@@ -50,7 +51,6 @@ Las reglas de precio del carro de compras para productos de envío múltiple no 
 1. Prueba del producto 2:
    1. Categorías: Prueba de categoría 2
    1. Precio: $ 56,25 
-
       **(los precios deben ser los mismos que se muestran aquí para garantizar que la prueba funcione correctamente)**
 
 **Regla de precio del carro de compras:**
@@ -103,7 +103,7 @@ Sin errores.
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
 * Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía [!DNL Quality Patches Tool].
-* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=es) en la guía Commerce en la infraestructura de la nube.
+* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) en la guía Commerce en la infraestructura de la nube.
 
 ## Lectura relacionada
 

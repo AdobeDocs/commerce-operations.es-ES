@@ -1,43 +1,44 @@
 ---
-title: 'ACSD-64467: WYSIWYG editor vacía después de guardar categoría descripción en tienda nivel vista'
-description: Aplicar el ACSD-64467 parche para solucionar el problema de Adobe Systems Commerce donde el editor WYSIWYG aparece vacío después de guardar una descripción categoría en el nivel tienda vista.
+title: 'ACSD-64467: el editor de WYSIWYG está vacío después de guardar la descripción de la categoría en el nivel de vista de tienda'
+description: Aplique el parche ACSD-64467 para corregir el problema de Adobe Commerce en el que el editor de WYSIWYG aparece vacío después de guardar una descripción de categoría en el nivel de vista de tienda.
 feature: Page Content
 role: Admin, Developer
 exl-id: 8bc1794f-ace1-4719-9fff-194dbd701ab6
-source-git-commit: b71447d5dac3208e537b29204dc8d47e8838f584
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '320'
 ht-degree: 0%
 
 ---
 
-# ACSD-64467: WYSIWYG editor vacía después de guardar categoría descripción en tienda nivel vista
+# ACSD-64467: el editor de WYSIWYG está vacío después de guardar la descripción de la categoría en el nivel de vista de tienda
 
-El parche ACSD-64467 corrige el problema por el cual el editor WYSIWYG aparece vacío después de guardar una descripción categoría en el nivel de vista tienda. Este parche está disponible cuando está instalado 1.1.61 [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) . El ID de parche es ACSD-64467. Tenga en cuenta que el problema está programado para solucionarse en Adobe Systems Commerce 2.4.8.
+El parche ACSD-64467 corrige el problema en el que el editor de WYSIWYG aparece vacío después de guardar una descripción de categoría en el nivel de vista de tienda. Esta revisión está disponible cuando está instalado [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.61. El ID del parche es ACSD-64467. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.8.
 
 ## Productos y versiones afectados
 
-**El parche se crea para Adobe Systems versión de Commerce:**
+**El parche se ha creado para la versión de Adobe Commerce:**
 
-* Adobe Systems Commerce (todos los métodos implementación) 2.4.7-p3
+* Adobe Commerce (todos los métodos de implementación) 2.4.7-p3
 
-**Compatible con las versiones de Adobe Systems Commerce:**
+**Compatible con versiones de Adobe Commerce:**
 
-* Adobe Systems Commerce (todos los métodos implementación) 2.4.7 - 2.4.7-p4
+* Adobe Commerce (todos los métodos de implementación) 2.4.7 - 2.4.7-p4
 
 >[!NOTE]
 >
->El parche podría aplicarse a otras versiones con nuevas [!DNL Quality Patches Tool] versiones. Para comprobar si el parche es compatible con su versión de Adobe Systems Commerce, actualice el `magento/quality-patches` paquete a la versión más reciente y compruebe la compatibilidad en la [[!DNL Quality Patches Tool]Search para parches Página](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
-## Emitir
+## Problema
 
-El editor WYSIWYG aparece vacío después de guardar una descripción categoría en el nivel tienda vista.
+El editor de WYSIWYG aparece vacío después de guardar una descripción de categoría en el nivel de vista de tienda.
 
-<u>Procedimiento</u>:
+<u>Pasos a seguir</u>:
 
-1. Editar un categoría en la Administración de comercio a nivel tienda vista.
-1. Anule la selección de la *[!UICONTROL Use default value]* casilla de verificación situada junto a la descripción del categoría.
-1. Introduzca una descripción en la editor WYSIWYG.
+1. Edite una categoría en el Administrador de Commerce en el nivel de vista de tienda.
+1. Anule la selección de la casilla de verificación *[!UICONTROL Use default value]* junto a la descripción de la categoría.
+1. Introduzca una descripción en el editor de WYSIWYG.
 1. Haga clic en **[!UICONTROL Save]**.
 
 <u>Resultados esperados</u>:
@@ -46,17 +47,17 @@ La descripción se guarda y se muestra correctamente.
 
 <u>Resultados reales</u>:
 
-La descripción queda vacía después de que se vuelva a cargar el Página.
+La descripción está vacía después de que la página se vuelva a cargar.
 
 ## Aplicar el parche
 
-Para aplicar parches individuales, utilice los siguientes vínculos en función de su método implementación:
+Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
-* Adobe Systems de comercio o Magento Open Source local: [[!DNL Quality Patches Tool] uso >](/help/tools/quality-patches-tool/usage.md) en el [!DNL Quality Patches Tool] guía.
-* Adobe Systems Commerce on infraestructura en la nube: [Upgrades and Patches > Aplicar Patches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=es) in the Commerce on Cloud Infrastructure guía.
+* Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía [!DNL Quality Patches Tool].
+* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) en la guía Commerce en la infraestructura de la nube.
 
-## Lecturas relacionadas
+## Lectura relacionada
 
 Para obtener más información sobre [!DNL Quality Patches Tool], consulte:
 
-* [[!DNL Quality Patches Tool]: Un herramienta de autoservicio para parches](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) de calidad en el Herramientas guía.
+* [[!DNL Quality Patches Tool]: herramienta de autoservicio para parches de calidad](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) en la guía Herramientas.

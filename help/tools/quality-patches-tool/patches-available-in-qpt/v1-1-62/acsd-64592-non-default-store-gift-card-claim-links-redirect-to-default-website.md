@@ -3,13 +3,14 @@ title: 'ACSD-64592: los vínculos de solicitud de tarjeta de regalo de tienda no
 description: Aplique el parche ACSD-64592 para solucionar el problema en el que, en una configuración de varios sitios web, cuando se compra una tarjeta de regalo virtual desde el sitio web secundario (no predeterminado), el vínculo Código de tarjeta de regalo del correo electrónico tiene la dirección URL predeterminada del sitio web.
 feature: Gift, Products
 role: Admin, Developer
-source-git-commit: 39866e1cf8f2afd892c9e151259a446d0277d58f
+exl-id: 1cc026c0-7487-48e8-a092-3e72085ca38a
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '409'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-64592: los vínculos de solicitud de tarjeta de regalo de tienda no predeterminados se redirigen al sitio web predeterminado
 
@@ -27,7 +28,7 @@ El parche ACSD-64592 corrige un problema en el que, en un entorno de varios siti
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
@@ -56,7 +57,7 @@ El vínculo Código de tarjeta regalo tiene la dirección URL predeterminada del
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
 * Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía [!DNL Quality Patches Tool].
-* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=es) en la guía Commerce en la infraestructura de la nube.
+* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) en la guía Commerce en la infraestructura de la nube.
 
 ## Lectura relacionada
 

@@ -3,13 +3,14 @@ title: 'ACSD-63139: La exportación de productos falla cuando los atributos de p
 description: Aplique el parche ACSD-63139 para corregir el problema de Adobe Commerce en el que la exportación del producto falla cuando los atributos del producto contienen miles de valores de opción.
 feature: Data Import/Export
 role: Admin, Developer
-source-git-commit: 57970acb07948f0792856e5f60df6c297a26780a
+exl-id: 785907dc-aa3f-49e2-bd52-c3afe4393456
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '369'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-63139: La exportación de productos falla cuando los atributos de productos contienen miles de valores de opción
 
@@ -27,7 +28,7 @@ El parche ACSD-63139 corrige el problema en el que la exportación del producto 
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
@@ -37,8 +38,8 @@ La exportación del producto falla cuando los atributos del producto contienen m
 
 1. Instale Adobe Commerce con el módulo B2B.
 1. Importar un volcado de base de datos grande con:
-   &#x200B;- ~7.000 productos
-   &#x200B;- ~450 atributos del producto
+   - ~7.000 productos
+   - ~450 atributos del producto
    : Algunos atributos con más de 100 opciones
 1. Ejecute el siguiente comando para instalar cron (si no está instalado):
 
@@ -46,7 +47,7 @@ La exportación del producto falla cuando los atributos del producto contienen m
    bin/magento cron:install
    ```
 
-1. Configure [!DNL RabbitMQ] siguiendo las instrucciones de [[!DNL RabbitMQ] requisitos previos](https://experienceleague.adobe.com/es/docs/commerce-operations/installation-guide/prerequisites/rabbitmq).
+1. Configure [!DNL RabbitMQ] siguiendo las instrucciones de [[!DNL RabbitMQ] requisitos previos](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/rabbitmq).
 1. Abra el archivo `php.ini`, establezca el límite de memoria en 4G y reinicie el servicio PHP.
 1. En el panel de administración, vaya a **[!UICONTROL System]** > *[!UICONTROL Data Transfer]* > **[!UICONTROL Export]**.
 1. En la sección *[!UICONTROL Export Settings]*, establezca **[!UICONTROL Entity Type]** en *Productos*, desplácese hacia abajo y haga clic en **[!UICONTROL Continue]**.
@@ -73,7 +74,7 @@ Fatal error: Allowed memory size of 4294967296 bytes exhausted (tried to allocat
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
 * Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía [!DNL Quality Patches Tool].
-* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=es) en la guía Commerce en la infraestructura de la nube.
+* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) en la guía Commerce en la infraestructura de la nube.
 
 ## Lectura relacionada
 

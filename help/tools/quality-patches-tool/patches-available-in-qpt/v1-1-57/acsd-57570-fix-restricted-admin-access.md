@@ -3,13 +3,14 @@ title: 'ACSD-57570: corrección para el acceso restringido de usuarios administr
 description: Aplique el parche ACSD-57570 para corregir el problema de Adobe Commerce en el que un usuario administrador restringido con acceso a un almacén determinado no puede ver de forma coherente todos los catálogos compartidos asignados a productos o guardar información del cliente, lo que provoca incoherencias en el sistema.
 feature: B2B, Companies, Roles/Permissions
 role: Admin, Developer
-source-git-commit: 6147a028e2ce783809b5c2c32c65784611d03f0e
+exl-id: 3eeaf1f1-0338-459f-99ec-53764f3f12db
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '538'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-57570: corrección para el acceso restringido de usuarios administradores a catálogos compartidos
 
@@ -27,7 +28,7 @@ El parche ACSD-57570 soluciona el problema de que un usuario administrador restr
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
@@ -68,7 +69,7 @@ Si crea únicamente un sitio web, una tienda y una vista de tienda adicionales, 
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
 * Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía [!DNL Quality Patches Tool].
-* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=es) en la guía Commerce en la infraestructura de la nube.
+* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) en la guía Commerce en la infraestructura de la nube.
 
 ## Lectura relacionada
 

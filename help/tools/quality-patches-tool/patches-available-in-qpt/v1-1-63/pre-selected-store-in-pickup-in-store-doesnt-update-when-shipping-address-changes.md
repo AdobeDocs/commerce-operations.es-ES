@@ -3,13 +3,14 @@ title: La tienda preseleccionada en "Recogida en tienda" no se actualiza cuando 
 description: Aplique el parche ACSD-64753 para solucionar el problema de Adobe Commerce en el que la tienda preseleccionada no se actualizaba cuando se introducía una nueva dirección de envío fuera del radio de servicio de la tienda seleccionada.
 feature: Inventory
 role: Admin, Developer
-source-git-commit: 9d76014fb86fd92b2fffbf2de35b25a7f6d1cbae
+exl-id: 4efc99d6-88a3-43f9-88d4-dedb9d8a269e
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '438'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-64753: La tienda preseleccionada en &quot;Recogida en tienda&quot; no se actualiza cuando se cambian las direcciones de envío
 
@@ -27,7 +28,7 @@ El parche de ACSD-64753 soluciona el problema de que la tienda preseleccionada n
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
@@ -66,7 +67,7 @@ Se puede seleccionar la fuente de Illinois y el cliente puede continuar con el c
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
 * Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía [!DNL Quality Patches Tool].
-* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=es) en la guía Commerce en la infraestructura de la nube.
+* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) en la guía Commerce en la infraestructura de la nube.
 
 ## Lectura relacionada
 

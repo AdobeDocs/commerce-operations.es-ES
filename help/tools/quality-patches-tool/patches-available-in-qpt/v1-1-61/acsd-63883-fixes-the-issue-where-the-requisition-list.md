@@ -1,9 +1,11 @@
 ---
-title: 'ACSD-63883: corrigiendo &grave;items_count&grave; incorrecto en  [!DNL GraphQL] respuesta para [!UICONTROL Requisition List]'
+title: 'ACSD-63883: corrigiendo `items_count` incorrecto en  [!DNL GraphQL] respuesta para [!UICONTROL Requisition List]'
 description: Aplique el parche ACSD-63883 para corregir el problema en el que [!UICONTROL Requisition List] devuelve un valor "items_count" incorrecto en la respuesta  [!DNL GraphQL] s.
 feature: B2B, GraphQL
 role: Admin, Developer
-source-git-commit: 5d8b78588b11534828a9b925cbab0cc945860367
+exl-id: 8946d7fb-558a-4867-a843-a61715416f25
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '298'
 ht-degree: 0%
@@ -26,7 +28,7 @@ El parche ACSD-63883 corrige el problema en el que **[!UICONTROL Requisition Lis
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
@@ -72,7 +74,7 @@ El **[!UICONTROL Requisition List]** devuelve un `items_count` incorrecto en la 
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
 * Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía [!DNL Quality Patches Tool].
-* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=es) en la guía Commerce en la infraestructura de la nube.
+* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) en la guía Commerce en la infraestructura de la nube.
 
 
 ## Lectura relacionada

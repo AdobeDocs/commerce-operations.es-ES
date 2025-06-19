@@ -3,7 +3,9 @@ title: 'ACSD-61534: la configuración de diseño no se puede establecer con bin/
 description: Aplique el parche ACSD-61534 para corregir el problema de Adobe Commerce en el que la configuración de diseño no se puede establecer con el comando bin/magento config:set y los valores bloqueados se pueden modificar mediante la manipulación de formularios.
 feature: Configuration
 role: Admin, Developer
-source-git-commit: ef00c05593ad319caab8bb9e0f5090959786513f
+exl-id: 5bba3f05-e017-42b2-8a89-5471afb84ff3
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '376'
 ht-degree: 0%
@@ -26,7 +28,7 @@ Adobe Commerce (todos los métodos de implementación) 2.4.7 - 2.4.7-p3
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
@@ -39,7 +41,7 @@ La configuración de diseño no se puede establecer con el comando `bin/magento 
 1. Vaya a **[!UICONTROL Content]** > **[!UICONTROL Design]** > **[!UICONTROL Configuration]**.
 1. Haga clic en **[!UICONTROL Edit]** cerca de **[!UICONTROL Global/Main website]** en la segunda fila.
 1. Editar tema para una vista de tienda.
-1. Abra la cabeza del HTML.
+1. Abra el encabezado de HTML.
 1. Habilite el campo **[!UICONTROL Scripts and Style Sheets]** deshabilitado con las herramientas para desarrolladores.
 1. Cambie el valor y guárdelo.
 
@@ -56,7 +58,7 @@ La tabla `core_config_data` contiene un valor actualizado para `design/head/incl
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
 * Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía [!DNL Quality Patches Tool].
-* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=es) en la guía Commerce en la infraestructura de la nube.
+* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) en la guía Commerce en la infraestructura de la nube.
 
 ## Lectura relacionada
 

@@ -3,13 +3,14 @@ title: 'ACSD-66093: los campos de nombre de cliente invitado permiten la entrada
 description: Aplique el parche ACSD-66093 para corregir el problema de Adobe Commerce donde es posible introducir direcciones de correo electrónico en los campos Cliente invitado **[!UICONTROL First Name]** y **[!UICONTROL Last Name]** y enviar correos electrónicos de confirmación de pedido no válidos.
 feature: Checkout
 role: Admin, Developer
-source-git-commit: 6ee2f99b53424071fda4cba9396aa039621135fc
+type: Troubleshooting
+exl-id: 30790492-330e-4810-8069-fce87b40ebb2
+source-git-commit: b1912bbc5aabd36067563326ee5c6bb84e14441d
 workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-66093: los campos de nombre de cliente invitado permiten la entrada de correo electrónico, lo que provoca correos electrónicos de pedido no válidos
 
@@ -27,7 +28,7 @@ El parche ACSD-66093 corrige el problema en el que se podían introducir direcci
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
@@ -58,7 +59,7 @@ El correo electrónico de confirmación de pedido se envía a los tres correos e
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
 * Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía [!DNL Quality Patches Tool].
-* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=es) en la guía Commerce en la infraestructura de la nube.
+* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) en la guía Commerce en la infraestructura de la nube.
 
 ## Lectura relacionada
 

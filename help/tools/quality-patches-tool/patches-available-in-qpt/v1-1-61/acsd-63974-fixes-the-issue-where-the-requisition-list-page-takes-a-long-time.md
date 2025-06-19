@@ -1,51 +1,52 @@
 ---
-title: 'ACSD-63974: Corrige el tiempo de carga lento [!UICONTROL Requisition List] con paginación'
+title: 'ACSD-63974: corrige el tiempo de carga de [!UICONTROL Requisition List] lento con la paginación'
 description: Aplique el parche ACSD-63974 para solucionar el problema en el que la página [!UICONTROL Requisition List] tarda mucho tiempo en cargarse cuando hay demasiados elementos.
 feature: B2B
 role: Admin, Developer
-source-git-commit: e5f8112b870e3550b4f3a9113be48428a54d454a
+exl-id: 1798baa3-da2f-44eb-8312-1f1b3f75b24d
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '339'
 ht-degree: 0%
 
 ---
 
-
 # ACSD-63974: corrige el tiempo de carga de [!UICONTROL Requisition List] lento con la paginación
 
-La revisión ACSD-63974 corrige el problema en el cual la página **[!UICONTROL Requisition List]** tarda mucho tiempo en cargarse cuando hay demasiados elementos. Este parche está disponible cuando está instalado 1.1.61 [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) . El ID parche es ACSD-63974. Tenga en cuenta que el problema está programado para solucionarse en Adobe Systems Commerce 2.4.8.
+La revisión ACSD-63974 corrige el problema en el cual la página **[!UICONTROL Requisition List]** tarda mucho tiempo en cargarse cuando hay demasiados elementos. Esta revisión está disponible cuando está instalado [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.61. El ID del parche es ACSD-63974. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.8.
 
 ## Productos y versiones afectados
 
-**El parche se crea para Adobe Systems versión de Commerce:**
+**El parche se ha creado para la versión de Adobe Commerce:**
 
-* Adobe Systems Commerce (todos los métodos implementación) 2.4.7-p4
+* Adobe Commerce (todos los métodos de implementación) 2.4.7-p4
 
-**Compatible con las versiones de Adobe Systems Commerce:**
+**Compatible con versiones de Adobe Commerce:**
 
-* Adobe Systems Commerce (todos los métodos implementación) 2.4.4 - 2.4.7-p4
+* Adobe Commerce (todos los métodos de implementación) 2.4.4 - 2.4.7-p4
 
 >[!NOTE]
 >
->El parche podría aplicarse a otras versiones con nuevas [!DNL Quality Patches Tool] versiones. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
 La página **[!UICONTROL Requisition List]** tarda mucho tiempo en cargarse cuando hay muchos elementos (más de 2000). Esto se debe a la ausencia de paginación, lo que provoca que todos los elementos se carguen a la vez.
 
-<u>Procedimiento</u>:
+<u>Pasos a seguir</u>:
 
-1. Vaya a la **[!UICONTROL Admin]** > **[!UICONTROL Stores]** > *[!UICONTROL Settings]* > **[!UICONTROL Configuration]** > *[!UICONTROL General]* > **[!UICONTROL B2B features]**.
-1. Configúrelo **[!UICONTROL Enable Requisition List]** en *Sí*.
-1. Genera 2000+ productos editando `simple_products` nodo en `setup/performance-toolkit/profiles/ce/small.xml`.
+1. Vaya a **[!UICONTROL Admin]** > **[!UICONTROL Stores]** > *[!UICONTROL Settings]* > **[!UICONTROL Configuration]** > *[!UICONTROL General]* > **[!UICONTROL B2B features]**.
+1. Establezca **[!UICONTROL Enable Requisition List]** en *Sí*.
+1. Genere más de 2000 productos editando el nodo `simple_products` en `setup/performance-toolkit/profiles/ce/small.xml`.
 1. Ejecute el comando:
 
    ```bash
    bin/magento setup:perf:generate-fixtures ./setup/performance-toolkit/profiles/ce/small.xml
    ```
 
-1. Crear cliente e inicie sesión.
-1. añadir todos los productos al **[!UICONTROL Requisition List]** archivo .
+1. Cree un cliente e inicie sesión.
+1. Agregar todos los productos a **[!UICONTROL Requisition List]**.
 1. Ver **[!UICONTROL Requisition List]** en la tienda.
 
 
@@ -56,16 +57,16 @@ La página debe cargarse en un tiempo razonable.
 
 <u>Resultados reales</u>:
 
-El tiempo de carga del Página aumenta con el número de elementos porque todos los elementos se cargan a la vez debido a la ausencia de paginación.
+El tiempo de carga de la página aumenta con el número de elementos porque todos los elementos se cargan a la vez debido a la ausencia de paginación.
 
 ## Aplicar el parche
 
-Para aplicar parches individuales, utilice los siguientes vínculos en función de su método implementación:
+Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
-* Adobe Systems de comercio o Magento Open Source local: [[!DNL Quality Patches Tool] uso >](/help/tools/quality-patches-tool/usage.md) en el [!DNL Quality Patches Tool] guía.
-* Adobe Systems Commerce on infraestructura en la nube: Upgrades and Patches > Aplicar Patches in the Commerce on Cloud Infrastructure guía.
+* Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía [!DNL Quality Patches Tool].
+* Adobe Commerce en la infraestructura en la nube: Actualizaciones y parches > Aplicar parches en la guía de Commerce en la infraestructura en la nube.
 
-## Lecturas relacionadas
+## Lectura relacionada
 
 Para obtener más información sobre [!DNL Quality Patches Tool], consulte:
 

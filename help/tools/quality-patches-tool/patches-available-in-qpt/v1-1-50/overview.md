@@ -4,7 +4,8 @@ description: Esta subsección proporciona una descripción detallada de los prob
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 4e136531-6bd4-4294-9a5a-66d19eb136db
-source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '388'
 ht-degree: 0%
@@ -22,7 +23,7 @@ QPT v1.1.50 incluye los siguientes parches:
 1. **ACSD-46938**: corrige el problema con el rendimiento de la recreación de déclencheur de base de datos durante `setup:upgrade`.
 1. **ACSD-48210**: corrige el problema en el cual al actualizar el atributo *[!UICONTROL website scope]* en una vista de almacén específica se anulan los valores de atributo en el ámbito global.
 1. **ACSD-54887**: corrige el problema por el que se borra el carro de compras del cliente después de que la sesión del cliente haya caducado con *[!UICONTROL Persistent Shopping Cart]* habilitado.
-1. **ACSD-58141**: corrige el problema en el cual `PHPSESSID` se regenera en solicitudes de POST en el área de tienda para un cliente que ha iniciado sesión si [!UICONTROL L2 Redis cache] está habilitado y el cliente se actualiza desde el administrador.
+1. **ACSD-58141**: corrige el problema en el cual `PHPSESSID` se regenera en solicitudes POST en el área de tienda para un cliente que inició sesión si [!UICONTROL L2 Redis cache] está habilitado y el cliente se actualiza desde el administrador.
 1. **ACSD-58352**: corrige el problema en el cual se devuelven etiquetas de atributo de retorno para la vista de almacén predeterminada mediante la API de GraphQL cuando se especifica una vista de almacén no predeterminada en el encabezado de la solicitud.
 1. **ACSD-58442**: corrige el problema en el que los dispositivos con una anchura de *768px* se tratan como móviles, lo que provoca que el menú y el encabezado se carguen en una vista móvil en lugar de en el escritorio.
 1. **ACSD-58790**: corrige la funcionalidad de *pellizco para zoom* en las imágenes de la página de detalles del producto en la vista móvil en [!DNL Chrome].
@@ -30,7 +31,7 @@ QPT v1.1.50 incluye los siguientes parches:
 1. **ACSD-59229**: corrige el problema por el que la información relacionada con el grupo de clientes se guarda en el segmento incorrecto debido al valor antiguo de [!UICONTROL X-Magento-Vary] en la solicitud.
 1. **ACSD-59378**: corrige el problema en el cual las reescrituras de URL en el nivel de tienda se actualizan incorrectamente durante la importación.
 1. **ACSD-59514**: corrige el problema en el que los formularios del área de administración con [!DNL Page Builder] lanzaban *[!DNL Page Builder]se representaban durante 5 segundos sin liberar bloqueos.Error* en la consola del explorador después de enviar el formulario y no se pueden guardar los cambios.
-1. **ACSD-60303**: corrige el problema en el cual no se puede realizar un pedido del administrador si la minificación del HTML está habilitada.
+1. **ACSD-60303**: corrige el problema en el cual no se puede realizar un pedido del administrador si la minificación de HTML está habilitada.
 1. **ACSD-60441**: corrige el problema con la actualización de clientes a través del punto de conexión `V1/customers REST API` al usar el token de acceso de integración generado desde el servidor.
 
 Utilice el menú de la izquierda para navegar a una página específica del parche.

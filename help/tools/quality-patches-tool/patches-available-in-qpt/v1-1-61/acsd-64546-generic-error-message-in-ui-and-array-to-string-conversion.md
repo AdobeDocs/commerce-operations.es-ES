@@ -3,13 +3,14 @@ title: 'ACSD-64546: mensaje de error genérico en la excepción de conversión d
 description: Aplique el parche ACSD-64546 para corregir el problema de Adobe Commerce donde aparece un mensaje de error genérico en la interfaz de usuario y la excepción de conversión de matriz a cadena se registra durante la creación de etiquetas UPS. El parche garantiza que se muestre el error correcto en la interfaz de usuario y en los registros.
 feature: Shipping/Delivery
 role: Admin, Developer
-source-git-commit: f50da09cec35b3a72208f17b6832e3068de9c874
+exl-id: 458371bc-4afe-4675-b090-5797e05c5b88
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '446'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-64546: mensaje de error genérico en la interfaz de usuario y excepción *Array to string conversion* durante la creación de etiquetas UPS
 
@@ -25,7 +26,7 @@ El parche ACSD-64546 corrige el problema en el que aparece un mensaje de error g
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 

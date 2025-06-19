@@ -4,7 +4,8 @@ description: Esta subsección proporciona una descripción detallada de los prob
 feature: Tools and External Services
 role: Admin
 exl-id: 31812668-1d24-4da6-992f-981c259e00da
-source-git-commit: 81c78439f7c243437b7b76dc80560c847af95ace
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '451'
 ht-degree: 0%
@@ -30,7 +31,7 @@ QPT v1.1.33 incluye los siguientes parches:
 1. **ACSD-51792**: corrige el problema en el cual una página no tiene el evento de impresión cuando [!DNL Google Tag Manager] 4 está habilitado.
 1. **ACSD-51471**: corrige el problema en el cual un usuario administrador no puede guardar una actualización programada para un producto agrupado que usa un producto simple que tiene una actualización programada.
 1. **ACSD-51700**: corrige el error que se produce al cambiar de vista de tienda en una página de edición de producto descargable en el administrador.
-1. **ACSD-51120**: corrige el problema en el cual la caché de las solicitudes de GET de GraphQL no se borra para las páginas de CMS que contienen bloques de CMS que se actualizan mediante una actualización de ensayo.
+1. **ACSD-51120**: corrige el problema en el cual la caché de solicitudes de GraphQL GET no se borra para las páginas de CMS que contienen bloques de CMS que se actualizan mediante una actualización de ensayo.
 1. **ACSD-51240**: corrige el problema en el que falta el archivo cargado si el registro se realiza mediante el formulario de registro de empresa.
 1. **ACSD-51907**: corrige el problema por el que un usuario administrador restringido no puede crear un abono con un reembolso sin conexión.
 1. **ACSD-52148**: corrige el problema donde el inicio de sesión de [!UICONTROL Google V3 reCAPTCHA Admin] falla ocasionalmente.

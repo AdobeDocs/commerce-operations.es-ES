@@ -3,7 +3,9 @@ title: Comprobar parche para el problema de Adobe Commerce con la herramienta Pa
 description: Este artículo proporciona información general sobre la herramienta Parches de calidad (QPT) y vínculos a recursos que explican cómo utilizarla.
 feature: Tools and External Services
 role: Admin
-source-git-commit: 6f311fc4c20caca8b98d4c3c06642e5f61dc614f
+exl-id: 4d651c3c-95ad-4b53-bf77-92758acb795d
+type: Troubleshooting
+source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
 source-wordcount: '359'
 ht-degree: 0%
@@ -21,7 +23,7 @@ Este artículo proporciona información general sobre la herramienta Parches de 
 
 ## Qué es la herramienta Parches de calidad
 
-La [Herramienta de Parches de Calidad](https://github.com/magento/quality-patches) (QPT) son parches individuales desarrollados por el Adobe y la comunidad de Magento Open Source.
+La [Herramienta de Parches de Calidad](https://github.com/magento/quality-patches) (QPT) son parches individuales desarrollados por Adobe y la comunidad de Magento Open Source.
 
 Le permite hacer lo siguiente:
 
@@ -37,11 +39,11 @@ La herramienta está diseñada para permitirle autoabastecerse con parches para 
 
 >[!NOTE]
 >
->QPT es solo para parches de calidad. Los parches de seguridad están disponibles en el [Centro de seguridad del Magento](https://experienceleague.adobe.com/es/docs/commerce-operations/release/notes/overview).
+>QPT es solo para parches de calidad. Los parches de seguridad están disponibles en [Magento Security Center](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview).
 
 ## Parches disponibles en la herramienta Parches de calidad
 
-Consulte [Herramienta de parches de calidad](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es) en nuestra documentación para desarrolladores para ver la lista de parches disponibles.
+Consulte [Herramienta de parches de calidad](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) en nuestra documentación para desarrolladores para ver la lista de parches disponibles.
 
 ## Cómo instalar y utilizar la herramienta Parches de calidad
 
@@ -49,13 +51,13 @@ Los comandos de instalación y uso son diferentes para Adobe Commerce local y pa
 
 ### Cómo instalar y utilizar QPT para Adobe Commerce local
 
-Consulte [Guía de actualización de software > Parches](https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/usage) en nuestra documentación para desarrolladores para obtener más información sobre cómo instalar y utilizar QPT para aplicar y revertir parches.
+Consulte [Guía de actualización de software > Parches](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage) en nuestra documentación para desarrolladores para obtener más información sobre cómo instalar y utilizar QPT para aplicar y revertir parches.
 
 ### Cómo instalar y utilizar QPT para Adobe Commerce en la infraestructura en la nube
 
-Consulte [Cloud for Adobe Commerce > Aplicar parches](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) en nuestra documentación para desarrolladores para obtener más información sobre cómo instalar y utilizar QPT para aplicar y revertir parches en Adobe Commerce en la infraestructura en la nube.
+Consulte [Cloud for Adobe Commerce > Aplicar parches](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) en nuestra documentación para desarrolladores para obtener más información sobre cómo instalar y utilizar QPT para aplicar y revertir parches en Adobe Commerce en la infraestructura en la nube.
 
 ## Lectura relacionada
 
-* [Notas de la versión de la herramienta Parches de calidad](https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/release-notes) en nuestra documentación para desarrolladores.
-* [Cómo aplicar parches de compositor proporcionados por el Adobe](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento) en la base de conocimiento de soporte.
+* [Notas de la versión de la herramienta Parches de calidad](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/release-notes) en nuestra documentación para desarrolladores.
+* [Cómo aplicar parches de compositor proporcionados por Adobe](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento) en la base de conocimiento de soporte.
