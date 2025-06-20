@@ -2,9 +2,9 @@
 title: Deshabilitar salida del módulo
 description: Obtenga información sobre cómo deshabilitar la salida del módulo.
 exl-id: af556bf5-8454-4d65-8ac8-4a64c108f092
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: fee09845777e23717e618ac57df4158d6b172d4f
 workflow-type: tm+mt
-source-wordcount: '348'
+source-wordcount: '362'
 ht-degree: 0%
 
 ---
@@ -101,4 +101,7 @@ El procedimiento para deshabilitar la salida del módulo en una sola instancia d
    ```
 
 En este ejemplo, la salida del módulo `Magento_Review` se ha deshabilitado y los clientes ya no pueden revisar los productos.
-Para volver a habilitar la salida, establezca el valor en `0`.
+
+### Volver a habilitar la salida del módulo
+
+Para volver a habilitar la salida, establezca el valor del módulo en `0` o quite la línea o el módulo del archivo `config.php`.
