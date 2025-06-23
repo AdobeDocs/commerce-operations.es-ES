@@ -5,9 +5,9 @@ feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
 exl-id: 6cfe4f4c-cdb3-49b3-84d0-ad794dfcafc3
-source-git-commit: b1912bbc5aabd36067563326ee5c6bb84e14441d
+source-git-commit: 773bc7a5b34a2b5f7314929be435c842a755de54
 workflow-type: tm+mt
-source-wordcount: '163'
+source-wordcount: '162'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ QPT v1.1.65 incluye los siguientes parches:
 1. **ACSD-65202**: la página **[!UICONTROL My Account]** no muestra pedidos recientes de otras vistas de tiendas.
 1. **ACSD-65254**: no se envió la notificación por correo electrónico después de actualizar el correo electrónico del cliente mediante la mutación de GraphQL `updateCustomerEmail`.
 1. **ACSD-65331**: el almacén seleccionado en **[!UICONTROL Pick in Store]** se borra después de volver a la página de cierre de compra.
-1. **ACSD-65822**: las cantidades de productos agrupados y configurables no se reflejan correctamente en el carro de compras.
+1. **ACSD-65822**: Las cantidades de productos del paquete y configurables no se reflejan correctamente en [!UICONTROL Shopping Cart].
 1. **ACSD-66093**: los campos de nombre de cliente invitado permiten la entrada de correo electrónico, lo que provoca correos electrónicos de pedido no válidos.
 
 Utilice el menú de la izquierda para navegar a una página específica del parche.
