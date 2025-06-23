@@ -5,7 +5,7 @@ feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
 exl-id: 6cfe4f4c-cdb3-49b3-84d0-ad794dfcafc3
-source-git-commit: 773bc7a5b34a2b5f7314929be435c842a755de54
+source-git-commit: 9acccaadf718775430e858da3390e666633ecbd7
 workflow-type: tm+mt
 source-wordcount: '162'
 ht-degree: 0%
@@ -21,7 +21,7 @@ QPT v1.1.65 incluye los siguientes parches:
 1. **ACSD-64118**: las solicitudes simultáneas de guardado de productos para el mismo producto causan incoherencia de datos y entradas duplicadas.
 1. **ACSD-64813**: La anulación de la asignación de categorías en el catálogo compartido B2B a través de la API de REST es lenta.
 1. **ACSD-65202**: la página **[!UICONTROL My Account]** no muestra pedidos recientes de otras vistas de tiendas.
-1. **ACSD-65254**: no se envió la notificación por correo electrónico después de actualizar el correo electrónico del cliente mediante la mutación de GraphQL `updateCustomerEmail`.
+1. **ACSD-65254**: no se envió la notificación por correo electrónico después de actualizar el correo electrónico del cliente mediante la mutación updateCustomerEmail [!DNL GraphQL].
 1. **ACSD-65331**: el almacén seleccionado en **[!UICONTROL Pick in Store]** se borra después de volver a la página de cierre de compra.
 1. **ACSD-65822**: Las cantidades de productos del paquete y configurables no se reflejan correctamente en [!UICONTROL Shopping Cart].
 1. **ACSD-66093**: los campos de nombre de cliente invitado permiten la entrada de correo electrónico, lo que provoca correos electrónicos de pedido no válidos.
