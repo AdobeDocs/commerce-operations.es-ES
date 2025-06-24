@@ -2,10 +2,10 @@
 user-guide-title: Guía de configuración
 user-guide-description: Configure las funciones y los servicios de la aplicación de Adobe Commerce.
 feature: Configuration
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 1850301e0b7f1abbc54613209940dd63d16ef145
 workflow-type: tm+mt
-source-wordcount: '354'
-ht-degree: 0%
+source-wordcount: '367'
+ht-degree: 1%
 
 ---
 
@@ -41,6 +41,10 @@ ht-degree: 0%
       + [Configurar Redis](cache/config-redis.md)
       + [Usar Redis para la caché predeterminada](cache/redis-pg-cache.md)
       + [Usar Redis para el almacenamiento de sesión](cache/redis-session.md)
+   + Valkey {#valkey}
+      + [Configuración de Valkey](cache/config-valkey.md)
+      + [Usar Valkey para la caché predeterminada](cache/valkey-pg-cache.md)
+      + [Uso de Valkey para el almacenamiento de sesión](cache/valkey-session.md)
    + Barniz {#varnish}
       + [Descripción general del barniz](cache/config-varnish.md)
       + [Instalar barniz](cache/config-varnish-install.md)
@@ -96,7 +100,7 @@ ht-degree: 0%
    + [Servicios](reference/config-reference-services.md)
    + [Configuración confidencial y específica del sistema](reference/config-reference-sens.md)
    + [Anular los ajustes de configuración](reference/override-config-settings.md)
-+ Trabajos Cron {#crons}
++ Cron Jobs {#crons}
    + [Trabajos y grupos de Cron](cron/custom-cron.md)
    + [Personalización de la referencia de crons](cron/custom-cron-reference.md)
    + [Configuración de un trabajo cron personalizado](cron/custom-cron-tutorial.md)
@@ -146,4 +150,4 @@ ht-degree: 0%
       + [Verificar base de datos dividida](storage/multi-master-verify.md)
       + [Replicación de base de datos](storage/multi-master-replication.md)
       + [Revertir a base de datos única](storage/revert-split-database.md)
-+ [Volver a las guías operativas](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=es)
++ [Volver a las guías operativas](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
