@@ -4,13 +4,13 @@ description: Aplique el parche ACSD-64813 para solucionar el problema de Adobe C
 feature: B2B, REST, Categories
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 0ed4bde6d78429da5a375a8c50f6b348db5a5ad5
+exl-id: e6fd89c2-d3c0-462f-b328-7a80b456d96d
+source-git-commit: 239a9efcc2ae231b337f654e4e36e6119e6eff7e
 workflow-type: tm+mt
 source-wordcount: '368'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-64813: la desasignación de categorías en el catálogo compartido de [!DNL B2B] a través de la API REST es lenta
 
@@ -28,7 +28,7 @@ El parche ACSD-64813 corrige el problema que causa que la anulación de la asign
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
@@ -38,29 +38,29 @@ La desasignación de categorías en un catálogo compartido de [!DNL B2B] median
 
 1. Habilitar **[!UICONTROL B2B]**, **[!UICONTROL Company]** y **[!UICONTROL Shared Catalog]**.
 1. Genere 30.000 productos activos en stock.
-1. Cree un [catálogo compartido personalizado](https://experienceleague.adobe.com/es/docs/commerce-admin/b2b/shared-catalogs/catalog-shared#actions-controls) y asígnele todos los productos.
+1. Cree un [catálogo compartido personalizado](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/shared-catalogs/catalog-shared#actions-controls) y asígnele todos los productos.
 1. Cree una nueva categoría en la categoría raíz predeterminada y asígnele algunos productos.
 1. Use el token de administración para llamar al extremo de la API REST `rest/all/V1/sharedCatalog/<shared_catalog_id>/assignCategories` con el nuevo ID de categoría.
 
-```
-{
-  "categories": [
-    { "id": <new category id> }
-  ]
-}
-```
+   ```
+   {
+     "categories": [
+       { "id": <new category id> }
+     ]
+   }
+   ```
 
 1. Confirme que la respuesta es *true*.
 1. Ejecute `bin/magento cron:run` dos veces o realice una reindexación.
 1. Use el token de administración para llamar al extremo de la API REST `rest/all/V1/sharedCatalog/<shared_catalog_id>/unassignCategories` con el nuevo ID de categoría.
 
-```
-{
-  "categories": [
-    { "id": <new category id> }
-  ]
-}
-```
+   ```
+   {
+     "categories": [
+       { "id": <new category id> }
+     ]
+   }
+   ```
 
 <u>Resultados esperados</u>:
 
@@ -75,7 +75,7 @@ La ejecución tarda unos 30 minutos o provoca un error de tiempo de espera.
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
 * Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía [!DNL Quality Patches Tool].
-* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=es) en la guía Commerce en la infraestructura de la nube.
+* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) en la guía Commerce en la infraestructura de la nube.
 
 ## Lectura relacionada
 
