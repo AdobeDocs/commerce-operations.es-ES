@@ -3,9 +3,9 @@ title: Notas de la versión
 description: Obtenga información acerca de los parches disponibles para Adobe Commerce y los problemas que resuelven.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
 type: Troubleshooting
-source-git-commit: fe1bec27cb9aa420fd71a0542edd5f82492e17aa
+source-git-commit: c14532e7390a3c123a4f673fca2211bfea9bcaa1
 workflow-type: tm+mt
-source-wordcount: '26682'
+source-wordcount: '26993'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,25 @@ ht-degree: 0%
 
 >[!INFO]
 >
->Consulte [Aplicar parches](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=es#apply-individual-patches) para obtener instrucciones sobre cómo aplicar parches a sus proyectos de Adobe Commerce. Consulte [[!DNL Quality Patches Tool]: busque parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es) en la Guía de actualización de software para revisar una lista completa de parches publicados.
+>Consulte [Aplicar parches](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches) para obtener instrucciones sobre cómo aplicar parches a sus proyectos de Adobe Commerce. Consulte [[!DNL Quality Patches Tool]: busque parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) en la Guía de actualización de software para revisar una lista completa de parches publicados.
 
 >[!INFO]
 >
 >Para obtener información acerca de [!DNL quality patches] creado por la comunidad para Magento Open Source, consulte las [notas de la versión](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## Versión 1.1.67 {#v1-1-67}
+
+* **ACSD-65935** (para Adobe Commerce >=2.4.4 &lt;2.4.8): corrige el problema por el que la consulta de GraphQL `customerOrders` devolvía un error interno del servidor cuando se eliminaba un producto.
+* **ACSD-66049** (para Adobe Commerce y Magento Open Source >=2.4.5-p3 &lt;2.4.6 || >=2.4.7 &lt;2.4.9): corrige el problema en el que las tiendas que no están en inglés muestran precios incorrectos debido a la versión de la biblioteca de la ICU.
+* **ACSD-66084** (para Adobe Commerce y Magento Open Source >=2.4.5 &lt;2.4.9): corrige el problema en el que `row_total_incl_tax` se devuelve como un valor residual cercano a cero en la respuesta de API de pedidos en lugar de 0,00 para los artículos con descuento completo.
+* **ACSD-66118** (para Adobe Commerce y Magento Open Source >=2.4.4 &lt;2.4.9): corrige el problema en el cual al actualizar el código de vista de tienda se borra la configuración de [!UICONTROL Design Configuration] si no se actualiza la caché de configuración.
+* **ACSD-66139** (para Adobe Commerce >=2.4.7 &lt;2.4.8): corrige el problema en el cual las llamadas de GraphQL para realizar un pedido de un carro de compras inexistente o inactivo devolvían un código de error *UNDEFINED*.
+* **ACSD-66301** (para Adobe Commerce y Magento Open Source >=2.4.6-p9 &lt;2.4.7 || >=2.4.7-p4 &lt;2.4.8): corrige el problema en el que el traslado de productos de un pedido de vuelta al carro de compras en la administración causa una discrepancia de cantidades.
+* **ACSD-66434** (para Adobe Commerce >=2.4.6-p8 &lt;2.4.9): corrige el problema en el cual el ID de cliente faltaba en las consultas de GraphQL de la compañía.
+* **ACSD-66441** (para Adobe Commerce y Magento Open Source >=2.4.5 &lt;2.4.8): corrige el problema en el cual la tienda muestra datos de índice incorrectos en la navegación por capas al indexar productos configurables para una configuración de varias tiendas.
+* **AC-14984** (para Adobe Commerce y Magento Open Source >=2.4.6-p10 &lt;2.4.7 || >=2.4.8 &lt;2.4.9): corrige el error *Tipo de trama no válido 21* en la conexión SSL de RabbitMQ.
+* **AC-14985** (para Adobe Commerce y Magento Open Source >=2.4.8 &lt;2.4.9): corrige el problema por el que los correos electrónicos no se envían cuando se utiliza el servidor `smtp` externo con TLS habilitado.
+* Versiones actualizadas: **MDVA-12304**, **ACSD-47920**, **ACSD-56447**, **ACSD-61845**, **ACSD-64118**
 
 ## Versión 1.1.66 {#v1-1-66}
 
