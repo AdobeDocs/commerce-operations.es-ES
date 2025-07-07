@@ -3,9 +3,9 @@ title: Adobe Managed Services
 description: Descubra cómo Adobe Managed Services puede ayudarle a respaldar y mantener su implementación de Adobe Commerce.
 exl-id: b600b0e3-c6fd-4b86-ad2a-a445e599f1bd
 feature: Services
-source-git-commit: e5a50707463bb7b36b4285889b10353faf9ba09f
+source-git-commit: 486e789787c9c08b27b4aae8e601680138956b88
 workflow-type: tm+mt
-source-wordcount: '1168'
+source-wordcount: '1171'
 ht-degree: 0%
 
 ---
@@ -39,20 +39,21 @@ Consulte la siguiente tabla para obtener una comparación más detallada de las 
 
 | Función | Adobe Commerce local | Adobe Commerce en la nube | Adobe Commerce en Managed Services |
 |---------|---------------------------|-------------------------|-----------------------------------|
-| Software empresarial de Adobe | ✓ | ✓ | ✓ |
-| Infraestructura en la nube segura y dedicada | | ✓ | ✓ |
-| Destino de nivel de servicio de incidente mejorado | | P1: 1 hora | P1: 15 minutos |
-| Monitorización y respuesta de la capacidad de sobretensión | | | ✓ |
-| Seguridad de infraestructura | | | ✓ |
-| Nivel de infraestructura 99,99% SLA | | | ✓ |
-| Nivel de aplicación 99,9% SLA | | | |
-| Recurso experto en infraestructura designado (ingeniero de éxito del cliente) | | | |
-| Administración de eventos planificados | | | |
-| Monitorización personalizada del sitio y runbook personalizado | | | |
-| Actualización y aplicación de parches Asistencia de implementación | | | |
-| Coordinación del proceso de Go-live | | | |
-| Administración de escalación dedicada | | | |
-| Supervisión y asistencia de aplicaciones | | | |
+| software empresarial de Adobe | ✓ | ✓ | ✓ |
+| Adobe Developer App Builder | | ✓ | ✓ |
+| Infraestructura en la nube segura y dedicada | | ✓ P1: 1 hora | ✓ P1: 15 minutos |
+| Destino de nivel de servicio de incidente mejorado | | ✓ | ✓ |
+| Monitorización y respuesta de la capacidad de sobretensión | | ✓ | ✓ |
+| Seguridad de infraestructura | | ✓ | ✓ |
+| Nivel de infraestructura 99,99% SLA | | ✓ | ✓ |
+| Nivel de aplicación 99,9% SLA | | | ✓ |
+| Recurso experto en infraestructura designado (ingeniero de éxito del cliente) | | | ✓ |
+| Administración de eventos planificados | | | ✓ |
+| Monitorización personalizada del sitio y runbook personalizado | | | ✓ |
+| Actualización y aplicación de parches de asistencia de implementación | | | ✓ |
+| Coordinación del proceso de Go-live | | | ✓ |
+| Administración de escalación dedicada | | | ✓ |
+| Supervisión y asistencia de aplicaciones | | | ✓ |
 
 ## Funciones y responsabilidades
 
