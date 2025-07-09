@@ -52,7 +52,7 @@ Esta versión beta admite tres nuevas funciones en la consulta [`productSearch` 
 
 Estas nuevas condiciones mejoran el mecanismo de filtrado de consultas de búsqueda para restringir los resultados de búsqueda. Estas nuevas condiciones no afectan a la consulta de búsqueda principal. Para participar en la versión beta, envía una solicitud por correo electrónico a [commerce-storefront-services](mailto:commerce-storefront-services@adobe.com).
 
-Para instalar la versión beta de Live Search, consulta la [guía de Live Search](https://experienceleague.adobe.com/en/docs/commerce/live-search/install#install-the-live-search-beta).
+Para instalar la versión beta de Live Search, consulta la [guía de Live Search](https://experienceleague.adobe.com/es/docs/commerce/live-search/install#install-the-live-search-beta).
 
 ### Integración del sistema IBM Sterling Order Management (Private Beta)
 
@@ -74,7 +74,7 @@ Cada versión alfa y beta de Adobe Commerce Foundation incluye todos los cambios
 - Mejoras de GraphQL
 - Correcciones de errores de calidad generales
 - Contribuciones comunitarias
-- Cambios necesarios para admitir la compatibilidad con [servicios de Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
+- Cambios necesarios para admitir la compatibilidad con [servicios de Adobe Commerce](https://experienceleague.adobe.com/es/docs/commerce/user-guides/home)
 
 #### Convenciones y programación de nombres
 
