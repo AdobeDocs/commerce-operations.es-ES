@@ -2,9 +2,9 @@
 title: GraphQL Application Server
 description: Siga estas instrucciones para activar GraphQL Application Server en la implementación de Adobe Commerce.
 exl-id: 9b223d92-0040-4196-893b-2cf52245ec33
-source-git-commit: 2f8396a367cbe1191bdf67aec75bd56f64d3fda8
+source-git-commit: 8427460cd11169ffe7dd2d4ba0cc1fdaea513702
 workflow-type: tm+mt
-source-wordcount: '2074'
+source-wordcount: '2184'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Commerce GraphQL Application Server permite a Adobe Commerce mantener el estado entre las solicitudes de API de Commerce GraphQL. GraphQL Application Server, que se basa en la extensión Swoole, funciona como un proceso con subprocesos de trabajo que administran el procesamiento de solicitudes. Al preservar un estado de aplicación de arranque entre las solicitudes de API de GraphQL, GraphQL Application Server mejora la gestión de solicitudes y el rendimiento general del producto. Las solicitudes de API son mucho más eficientes.
 
-GraphQL Application Server solo está disponible para Adobe Commerce. No está disponible para Magento Open Source. Para los proyectos de Cloud Pro, debe [enviar un vale de soporte técnico de Adobe Commerce](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) para habilitar el servidor de aplicaciones de GraphQL.
+GraphQL Application Server solo está disponible para Adobe Commerce. No está disponible para Magento Open Source. Para los proyectos de Cloud Pro, debe [enviar un vale de soporte técnico de Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) para habilitar el servidor de aplicaciones de GraphQL.
 
 >[!NOTE]
 >
@@ -112,29 +112,154 @@ Complete los siguientes pasos antes de implementar GraphQL Application Server en
        upstream: "application-server:http"
    ```
 
+1. Elimine los comentarios de la sección `files` en el archivo `.magento/services.yaml`.
+
+   ```yaml
+   files:
+       type: network-storage:2.0
+       disk: 5120
+   ```
+
+1. Elimine los comentarios de la parte `TEMPORARY SHARED MOUNTS` de la configuración de montajes en el archivo `.magento.app.yaml`.
+
+   ```yaml
+   "var_shared":
+       source: "service"
+       service: "files"
+       source_path: "var"
+   "app/etc_shared":
+       source: "service"
+       service: "files"
+       source_path: "etc"
+   "pub/media_shared":
+       source: "service"
+       service: "files"
+       source_path: "media"
+   "pub/static_shared":
+       source: "service"
+       service: "files"
+       source_path: "static"
+   ```
+
 1. Añada archivos actualizados al índice de Git:
 
    ```bash
-   git add -f .magento/routes.yaml application-server/.magento/*
+   git add -f .magento.app.yaml .magento/routes.yaml .magento/services.yaml application-server/.magento/*
    ```
 
-1. Confirme los cambios:
+1. Confirme los cambios e instálelos para almacenar en déclencheur una implementación:
 
    ```bash
-   git commit -m "AppServer Enabled"
+   git commit -m "Enabling AppServer: initial changes"
+   git push
+   ```
+
+1. Use SSH para iniciar sesión en el entorno de nube remoto (_no_ en la aplicación `application-server`):
+
+   ```bash
+   magento-cloud ssh -p <project-ID> -e <environment-ID>
+   ```
+
+1. Sincronice los datos de los montajes locales con los montajes compartidos:
+
+   ```bash
+   rsync -avz var/* var_shared/
+   rsync -avz app/etc/* app/etc_shared/
+   rsync -avz pub/media/* pub/media_shared/
+   rsync -avz pub/static/* pub/static_shared/
+   ```
+
+1. Comente las partes `DEFAULT MOUNTS` y `TEMPORARY SHARED MOUNTS` de la configuración de montajes en el archivo `.magento.app.yaml`.
+
+   ```yaml
+   #"var": "shared:files/var"
+   #"app/etc": "shared:files/etc"
+   #"pub/media": "shared:files/media"
+   #"pub/static": "shared:files/static"
+   
+   #"var_shared":
+   #    source: "service"
+   #    service: "files"
+   #    source_path: "var"
+   #"app/etc_shared":
+   #    source: "service"
+   #    service: "files"
+   #    source_path: "etc"
+   #"pub/media_shared":
+   #    source: "service"
+   #    service: "files"
+   #    source_path: "media"
+   #"pub/static_shared":
+   #    source: "service"
+   #    service: "files"
+   #    source_path: "static"
+   ```
+
+1. Elimine los comentarios de las partes `OLD LOCAL MOUNTS` y `SHARED MOUNTS` de la configuración de montajes en el archivo `.magento.app.yaml`.
+
+   ```yaml
+   "var_old": "shared:files/var"
+   "app/etc_old": "shared:files/etc"
+   "pub/media_old": "shared:files/media"
+   "pub/static_old": "shared:files/static"
+   
+   "var":
+       source: "service"
+       service: "files"
+       source_path: "var"
+   "app/etc":
+       source: "service"
+       service: "files"
+       source_path: "etc"
+   "pub/media":
+       source: "service"
+       service: "files"
+       source_path: "media"
+   "pub/static":
+       source: "service"
+       service: "files"
+       source_path: "static"
+   ```
+
+1. Agregue el archivo actualizado al índice de Git, confirme los cambios e inserte en el déclencheur una implementación:
+
+   ```bash
+   git add -f .magento.app.yaml
+   git commit -m "Enabling AppServer: switch mounts"
+   git push
+   ```
+
+1. Asegúrese de que los archivos de los directorios `*_old` estén presentes en los directorios reales.
+
+1. Limpieza de montajes locales antiguos:
+
+   ```bash
+   rm -rf var_old/*
+   rm -rf app/etc_old/*
+   rm -rf pub/media_old/*
+   rm -rf pub/static_old/*
+   ```
+
+1. Comente la parte `OLD LOCAL MOUNTS` de la configuración de montajes en el archivo `.magento.app.yaml`.
+
+   ```yaml
+   #"var_old": "shared:files/var"
+   #"app/etc_old": "shared:files/etc"
+   #"pub/media_old": "shared:files/media"
+   #"pub/static_old": "shared:files/static"
+   ```
+
+1. Agregue el archivo actualizado al índice de Git, confirme los cambios e inserte en el déclencheur una implementación:
+
+   ```bash
+   git add -f .magento.app.yaml
+   git commit -m "Enabling AppServer: finish"
+   git push
    ```
 
 >[!NOTE]
 >
->Asegúrese de que todas las configuraciones personalizadas del archivo raíz `.magento.app.yaml` se migren correctamente al archivo `application-server/.magento/.magento.app.yaml`. Una vez agregado el archivo `application-server/.magento/.magento.app.yaml` al proyecto, debe mantenerlo además del archivo raíz `.magento.app.yaml`. Por ejemplo, si necesita [configurar el servicio RabbitMQ](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/configure/service/rabbitmq) o [administrar propiedades web](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/configure/app/properties/web-property), también debe agregar la misma configuración a `application-server/.magento/.magento.app.yaml`.
-
-### Implementar proyectos iniciales
-
-Después de completar los [pasos](#before-you-begin-a-cloud-starter-deployment) de habilitación, inserte los cambios en el repositorio Git para implementar GraphQL Application Server:
-
-```bash
-git push
-```
+>Asegúrese de que todas las configuraciones personalizadas del archivo raíz `.magento.app.yaml` se migren correctamente al archivo `application-server/.magento/.magento.app.yaml`. Una vez agregado el archivo `application-server/.magento/.magento.app.yaml` al proyecto, debe mantenerlo además del archivo raíz `.magento.app.yaml`. Por ejemplo, si necesita [configurar el servicio RabbitMQ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/rabbitmq) o [administrar propiedades web](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/properties/web-property), también debe agregar la misma configuración a `application-server/.magento/.magento.app.yaml`.
 
 ### Verificar la habilitación en proyectos en la nube
 
