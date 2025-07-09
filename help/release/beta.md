@@ -2,9 +2,9 @@
 title: Versiones de Beta
 description: Obtenga información sobre las versiones beta de Adobe Commerce y cómo participar.
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
-source-git-commit: 1c0dd720df944a5784c850a3f4ea63b8984069f1
+source-git-commit: 879160b11fe4840eb3af97c64f080deb5f002827
 workflow-type: tm+mt
-source-wordcount: '963'
+source-wordcount: '862'
 ht-degree: 0%
 
 ---
@@ -27,20 +27,6 @@ El acceso anticipado a las funciones que Adobe está desarrollando permite a los
 ## Programas actuales de Beta
 
 Consulte las secciones siguientes para obtener una lista de los programas beta activos.
-
-### Adobe Commerce Optimizer
-
-Adobe Commerce Optimizer mejora su experiencia de comercio electrónico con una tienda de alto rendimiento, lo que aumenta el tráfico orgánico, la participación de los clientes y los ingresos.
-
-Con Adobe Commerce Optimizer, puede:
-
-- Amplíe y escale su catálogo sin volver a plataformas toda su pila de comercio.
-- Introduzca datos de catálogo de cualquier fuente.
-- Definir canales y directivas empresariales.
-- Cree búsquedas y recomendaciones personalizadas con IA y ML.
-- Vea la disponibilidad de datos de productos cruciales, incluido el estado de sincronización y los datos de eventos de tienda para una implementación y solución de problemas precisas.
-
-[Más información](https://experienceleague.adobe.com/docs/commerce/optimizer/overview.html?lang=es) sobre Adobe Commerce Optimizer. Si está interesado en obtener más información sobre el programa de acceso anticipado [!DNL Adobe Commerce Optimizer], complete el [formulario de solicitud de acceso anticipado](https://forms.office.com/Pages/ResponsePage.aspx?id=Wht7-jR7h0OUrtLBeN7O4WOxhjY2doZPikS2hIbfmL5UMlhTMTYzVDhPQVFNTUFYUjJHNlRKTE5TWS4u).
 
 ### Funciones de búsqueda mejoradas para Live Search (Beta público)
 
@@ -66,7 +52,7 @@ Esta versión beta admite tres nuevas funciones en la consulta [`productSearch` 
 
 Estas nuevas condiciones mejoran el mecanismo de filtrado de consultas de búsqueda para restringir los resultados de búsqueda. Estas nuevas condiciones no afectan a la consulta de búsqueda principal. Para participar en la versión beta, envía una solicitud por correo electrónico a [commerce-storefront-services](mailto:commerce-storefront-services@adobe.com).
 
-Para instalar la versión beta de Live Search, consulta la [guía de Live Search](https://experienceleague.adobe.com/es/docs/commerce/live-search/install#install-the-live-search-beta).
+Para instalar la versión beta de Live Search, consulta la [guía de Live Search](https://experienceleague.adobe.com/en/docs/commerce/live-search/install#install-the-live-search-beta).
 
 ### Integración del sistema IBM Sterling Order Management (Private Beta)
 
@@ -88,7 +74,7 @@ Cada versión alfa y beta de Adobe Commerce Foundation incluye todos los cambios
 - Mejoras de GraphQL
 - Correcciones de errores de calidad generales
 - Contribuciones comunitarias
-- Cambios necesarios para admitir la compatibilidad con [servicios de Adobe Commerce](https://experienceleague.adobe.com/es/docs/commerce/user-guides/home)
+- Cambios necesarios para admitir la compatibilidad con [servicios de Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
 
 #### Convenciones y programación de nombres
 
