@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Commerce GraphQL Application Server permite a Adobe Commerce mantener el estado entre las solicitudes de API de Commerce GraphQL. GraphQL Application Server, que se basa en la extensión Swoole, funciona como un proceso con subprocesos de trabajo que administran el procesamiento de solicitudes. Al preservar un estado de aplicación de arranque entre las solicitudes de API de GraphQL, GraphQL Application Server mejora la gestión de solicitudes y el rendimiento general del producto. Las solicitudes de API son mucho más eficientes.
 
-GraphQL Application Server solo está disponible para Adobe Commerce. No está disponible para Magento Open Source. Para los proyectos de Cloud Pro, debe [enviar un vale de soporte técnico de Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) para habilitar el servidor de aplicaciones de GraphQL.
+GraphQL Application Server solo está disponible para Adobe Commerce. No está disponible para Magento Open Source. Para los proyectos de Cloud Pro, debe [enviar un vale de soporte técnico de Adobe Commerce](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) para habilitar el servidor de aplicaciones de GraphQL.
 
 >[!NOTE]
 >
@@ -259,7 +259,7 @@ Complete los siguientes pasos antes de implementar GraphQL Application Server en
 
 >[!NOTE]
 >
->Asegúrese de que todas las configuraciones personalizadas del archivo raíz `.magento.app.yaml` se migren correctamente al archivo `application-server/.magento/.magento.app.yaml`. Una vez agregado el archivo `application-server/.magento/.magento.app.yaml` al proyecto, debe mantenerlo además del archivo raíz `.magento.app.yaml`. Por ejemplo, si necesita [configurar el servicio RabbitMQ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/rabbitmq) o [administrar propiedades web](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/properties/web-property), también debe agregar la misma configuración a `application-server/.magento/.magento.app.yaml`.
+>Asegúrese de que todas las configuraciones personalizadas del archivo raíz `.magento.app.yaml` se migren correctamente al archivo `application-server/.magento/.magento.app.yaml`. Una vez agregado el archivo `application-server/.magento/.magento.app.yaml` al proyecto, debe mantenerlo además del archivo raíz `.magento.app.yaml`. Por ejemplo, si necesita [configurar el servicio RabbitMQ](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/configure/service/rabbitmq) o [administrar propiedades web](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/configure/app/properties/web-property), también debe agregar la misma configuración a `application-server/.magento/.magento.app.yaml`.
 
 ### Verificar la habilitación en proyectos en la nube
 
