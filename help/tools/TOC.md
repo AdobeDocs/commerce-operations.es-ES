@@ -2,9 +2,9 @@
 user-guide-title: Herramientas
 user-guide-description: Obtenga información sobre las distintas herramientas que puede utilizar con Adobe Commerce, sus usos, el proceso de instalación y cómo obtener acceso.
 feature: Configuration
-source-git-commit: f24e6b4cc973247cb176b7e6b10cc9c61e1c16c2
+source-git-commit: ec7907a22a00f5c398c8ddc39d56c05c4bcbe175
 workflow-type: tm+mt
-source-wordcount: '7802'
+source-wordcount: '7817'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ ht-degree: 0%
    - [Alertas administradas para Adobe Commerce: alerta de advertencia de CPU](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-cpu-warning-alert.md)
 - Herramienta Parches de calidad {#quality-patches-tool}
    - [[!DNL Quality Patches Tool]: herramienta de autoservicio para parches de calidad](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)
-   - [[!DNL Quality Patches Tool]: buscar parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es){target="_blank"}
+   - [[!DNL Quality Patches Tool]: buscar parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
    - [Uso](quality-patches-tool/usage.md)
    - [Notas de la versión](quality-patches-tool/release-notes.md)
    - Parches disponibles en la herramienta Parches de calidad {#patches-available-in-qpt}
@@ -804,6 +804,7 @@ ht-degree: 0%
          - [ACP2E-3841: Las reglas de precios de carrito para productos de envío múltiple no se aplican correctamente cuando se utilizan condiciones de subselección y el envío gratuito está habilitado](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-64/acp2e-3841-cart-price-rules-for-multi-shipping-products-do-not-apply-correctly-when-subselect-conditions-are-used-and-free-shipping-is-enabled.md)
       - v1.1.65 {#v1-1-65}
          - [Información general:  [!DNL Quality Patches Tool] (QPT) v1.1.65](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-65/overview.md)
+         - [ACSD-64118: Las solicitudes de guardado de productos simultáneas para el mismo producto causan incoherencia de datos y entradas duplicadas](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-65/acsd-64118-concurrent-product-save-requests-for-same-product-cause-data-inconsistency-and-duplicate-entries.md)
          - [ACSD-65254: notificación por correo electrónico no enviada después de actualizar el correo electrónico del cliente mediante updateCustomerEmail [!DNL GraphQL] mutation](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-65/acsd-65254-email-notification-not-sent-after-updating-customer-email-via-updatecustomeremail-graphql-mutation.md)
          - [ACSD-64813: desasignar categorías en el catálogo compartido  [!DNL B2B] a través de la API REST es lento](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-65/acsd-64813-unassigning-categories-in-b2b-shared-catalog-via-rest-api-is-slow.md)
          - [ACSD-65822: las cantidades de producto configurables y del paquete no se reflejan correctamente en [!UICONTROL Shopping Cart]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-65/acsd-65822-bundle-and-configurable-product-quantities-not-reflected-correctly-in-shopping-cart.md)
@@ -861,6 +862,6 @@ ht-degree: 0%
       - [Datos que requieren una migración manual](data-migration-tool/migrate-data/manual.md)
       - [Pasos de la migración posterior a los datos](data-migration-tool/migrate-data/post-migration.md)
    - Recursos {#resources}
-      - [Solución de problemas](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html?lang=es)
+      - [Solución de problemas](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html)
       - [Registro de cambios](https://github.com/magento/data-migration-tool/blob/2.4/CHANGELOG.md)
-- [Volver a las guías operativas](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=es)
+- [Volver a las guías operativas](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
