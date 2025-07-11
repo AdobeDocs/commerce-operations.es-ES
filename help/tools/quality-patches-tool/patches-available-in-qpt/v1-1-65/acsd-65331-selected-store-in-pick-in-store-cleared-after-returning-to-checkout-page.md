@@ -78,11 +78,11 @@ El paso de envío comienza a cargarse y redirige a **[!UICONTROL Pick In Store]*
 
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
-* Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool]** > Uso]**(/help/tools/quality-patches-tool/usage.md) en la guía[!DNL Quality Patches Tool]**.
+* Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] **&#x200B; > Uso]**(/help/tools/quality-patches-tool/usage.md) en la guía[!DNL Quality Patches Tool]**.
 * Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches]**(https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) en la guía Commerce en la infraestructura de la nube.
 
 ## Lectura relacionada
 
 Para obtener más información sobre [!DNL Quality Patches Tool]**, consulte:
 
-* [[!DNL Quality Patches Tool]**: Una herramienta de autoservicio para parches de calidad]**(/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) en la guía Herramientas.
+* [[!DNL Quality Patches Tool]&#x200B;**: Una herramienta de autoservicio para parches de calidad]**(/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) en la guía Herramientas.
