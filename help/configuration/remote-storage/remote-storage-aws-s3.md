@@ -3,9 +3,9 @@ title: Configuración del compartimento de AWS S3 para almacenamiento remoto
 description: Configure el proyecto de Commerce para que utilice el servicio de almacenamiento AWS S3 para el almacenamiento remoto.
 feature: Configuration, Storage
 exl-id: e8aeade8-2ec4-4844-bd6c-ab9489d10436
-source-git-commit: 3f45b61a2f4fd6db161c66182212f3aff5900e26
+source-git-commit: 3690043019d70ad15332f757158937a7d5305043
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '382'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,8 @@ ht-degree: 0%
 >[!WARNING]
 >
 >Adobe desaconseja encarecidamente el uso de contenedores públicos porque supone un grave riesgo para la seguridad.
+>
+>Cuando se utiliza un compartimento de S3 proporcionado por el cliente para el almacenamiento de recursos o medios, Adobe no se responsabiliza de ningún problema, pérdida de datos o interrupciones relacionadas con la configuración, la administración o el funcionamiento del compartimento de S3, y no proporciona asistencia para dichos problemas. Toda la solución de problemas y el mantenimiento del compartimento S3 es responsabilidad exclusiva del cliente.
 
 **Para habilitar el almacenamiento remoto con el adaptador AWS S3**:
 
