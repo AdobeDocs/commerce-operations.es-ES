@@ -3,9 +3,9 @@ title: Usar Redis para la caché predeterminada
 description: Aprenda a configurar Redis como la memoria caché predeterminada para Adobe Commerce.
 feature: Configuration, Cache
 exl-id: 8c097cfc-85d0-4e96-b56e-284fde40d459
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 2c489f2655e6fb067de1730355df6cd3683ea562
 workflow-type: tm+mt
-source-wordcount: '1069'
+source-wordcount: '1126'
 ht-degree: 0%
 
 ---
@@ -36,6 +36,8 @@ Con los siguientes parámetros:
 | `cache-backend-redis-port` | puerto | Puerto de escucha del servidor Redis | `6379` |
 | `cache-backend-redis-db` | database | Necesario si utiliza Redis tanto para la caché predeterminada como para la caché de página completa. Debe especificar el número de base de datos de una de las cachés; la otra caché utiliza 0 de forma predeterminada.<br><br>**Importante**: Si usa Redis para más de un tipo de almacenamiento en caché, los números de la base de datos deben ser diferentes. Se recomienda asignar el número de base de datos de almacenamiento en caché predeterminado a 0, el número de base de datos de almacenamiento en caché de páginas a 1 y el número de base de datos de almacenamiento de sesión a 2. | `0` |
 | `cache-backend-redis-password` | contraseña | La configuración de una contraseña de Redis habilita una de sus características de seguridad integradas: el comando `auth`, que requiere que los clientes se autentiquen para tener acceso a la base de datos. La contraseña está configurada directamente en el archivo de configuración de Redis: `/etc/redis/redis.conf` | |
+| `--cache-backend-redis-use-lua` | use_lua | Habilitar o deshabilitar LUA. <br><br>**LUA**: Lua nos permite ejecutar parte de la lógica de la aplicación dentro de Redis, mejorando el rendimiento y asegurando la coherencia de los datos a través de su ejecución atómica. | `0` |
+| `--cache-backend-redis-use-lua-on-gc` | use_lua_on_gc | Habilite o deshabilite LUA para la recolección de elementos no utilizados. <br><br>**LUA**: Lua nos permite ejecutar parte de la lógica de la aplicación dentro de Redis, mejorando el rendimiento y asegurando la coherencia de los datos a través de su ejecución atómica. | `1` |
 
 ### Ejemplo, comando
 
