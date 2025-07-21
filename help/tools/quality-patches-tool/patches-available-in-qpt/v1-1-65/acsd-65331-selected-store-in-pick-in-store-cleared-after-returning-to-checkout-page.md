@@ -4,13 +4,13 @@ description: Aplique el parche ACSD-65331 para corregir el problema de Adobe Com
 feature: Inventory
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: a322e822ccf0b584d2385d3f38a3b92ebe3a23d3
+exl-id: 10aaf898-feca-4485-90f6-6b3a9ea013b2
+source-git-commit: dc5df9e918adffe8d6901478a676d9da36b33bcc
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '441'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-65331: el almacén seleccionado en **[!UICONTROL Pick in Store]** se borró después de volver al cierre de compra
 
@@ -28,7 +28,7 @@ La revisión ACSD-65331 corrige el problema en el que el almacén seleccionado e
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
@@ -78,11 +78,11 @@ El paso de envío comienza a cargarse y redirige a **[!UICONTROL Pick In Store]*
 
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
-* Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] **&#x200B; > Uso]**(/help/tools/quality-patches-tool/usage.md) en la guía[!DNL Quality Patches Tool]**.
-* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches]**(https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=es) en la guía Commerce en la infraestructura de la nube.
+* Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía [!DNL Quality Patches Tool].
+* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) en la guía Commerce en la infraestructura de la nube.
 
 ## Lectura relacionada
 
-Para obtener más información sobre [!DNL Quality Patches Tool]**, consulte:
+Para obtener más información sobre [!DNL Quality Patches Tool], consulte:
 
-* [[!DNL Quality Patches Tool]&#x200B;**: Una herramienta de autoservicio para parches de calidad]**(/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) en la guía Herramientas.
+* [[!DNL Quality Patches Tool]: herramienta de autoservicio para parches de calidad](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) en la guía Herramientas.
