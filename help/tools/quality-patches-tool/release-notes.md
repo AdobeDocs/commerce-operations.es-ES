@@ -3,9 +3,9 @@ title: Notas de la versión
 description: Obtenga información acerca de los parches disponibles para Adobe Commerce y los problemas que resuelven.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
 type: Troubleshooting
-source-git-commit: c14532e7390a3c123a4f673fca2211bfea9bcaa1
+source-git-commit: 00153baf1c4a52d17b750db35a678b1950e00ed1
 workflow-type: tm+mt
-source-wordcount: '26993'
+source-wordcount: '27482'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,31 @@ ht-degree: 0%
 
 >[!INFO]
 >
->Consulte [Aplicar parches](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=es#apply-individual-patches) para obtener instrucciones sobre cómo aplicar parches a sus proyectos de Adobe Commerce. Consulte [[!DNL Quality Patches Tool]: busque parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es) en la Guía de actualización de software para revisar una lista completa de parches publicados.
+>Consulte [Aplicar parches](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches) para obtener instrucciones sobre cómo aplicar parches a sus proyectos de Adobe Commerce. Consulte [[!DNL Quality Patches Tool]: busque parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) en la Guía de actualización de software para revisar una lista completa de parches publicados.
 
 >[!INFO]
 >
 >Para obtener información acerca de [!DNL quality patches] creado por la comunidad para Magento Open Source, consulte las [notas de la versión](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## v1.1.68 {#v1-1-68}
+
+* **ACSD-58131** (para Adobe Commerce y Magento Open Source >=2.4.4 &lt;2.4.8): corrige el problema en el cual la presencia de una imagen de 0 bytes en la galería de medios impedía que se mostraran o seleccionaran todas las imágenes del directorio.
+* **ACSD-62415** (para Adobe Commerce y Magento Open Source >=2.4.4 &lt;2.4.8): corrige el problema cuando el back-end de Adobe Commerce carga las categorías muy lentamente.
+* **ACSD-66082** (para Adobe Commerce y Magento Open Source >=2.4.6 &lt;2.4.9): corrige el problema en el cual no era posible actualizar la imagen de muestra de un producto mediante la importación de productos.
+* **ACSD-66179** (para Adobe Commerce y Magento Open Source >=2.4.4-p11 &lt;2.4.5 || >=2.4.5-p10 &lt;2.4.6 || >=2.4.6-p8 &lt;2.4.7 || >=2.4.7-p3 &lt;2.4.9): corrige el problema en el que la cancelación de una factura creada con el tipo de pago &quot;No capturar&quot; daba como resultado una página de error 404.
+* **ACSD-66865** (para Adobe Commerce y Magento Open Source >=2.4.7 &lt;2.4.8): corrige el problema en el cual guardar reglas de precios de catálogo invalidaba los indexadores y proporciona una alternativa para reindexar solo los productos afectados.
+* **ACSD-66963** (para Adobe Commerce y Magento Open Source >=2.4.7 &lt;2.4.8): corrige el problema en el cual la mutación `estimateTotals` devolvía null para descuentos cuando se aplicaba un código de descuento a un carro que contenía productos virtuales.
+* **ACSD-67039** (para Adobe Commerce y Magento Open Source >=2.4.4 &lt;2.4.8): corrige el problema en el cual los registros del cliente no se guardaban debido a la validación del atributo del sistema `rp_token` y la validación de diacríticos ahora se aplica solamente al correo electrónico del cliente resultante.
+* **ACSD-62146** (para Adobe Commerce >=2.4.7 &lt;2.4.8): corrige el problema en el cual la dirección de facturación seleccionada desaparece en la página de pago de cierre de compra cuando la búsqueda de direcciones está habilitada y &quot;Límite de número de direcciones de cliente&quot; está establecido en 1.
+* **ACSD-65938** (para Adobe Commerce >=2.4.4 &lt;2.4.9): corrige el problema por el que se enviaban correos electrónicos con tarjetas de regalo incluso cuando se producía un error en la creación de la factura.
+* **ACSD-66072** (para Adobe Commerce >=2.4.6 &lt;2.4.9): corrige el problema en el cual los productos relacionados no se devolvían a través de GraphQL en la página de detalles del producto debido a un error interno del servidor cuando se configuraban &quot;Reglas de producto relacionadas&quot;.
+* **ACSD-66233** (para Adobe Commerce >=2.4.8 &lt;2.4.9): corrige el problema en el cual los usuarios administradores no podían agregar productos a una categoría debido a que la ventana emergente Agregar producto no se podía cargar.
+* **ACSD-66889** (para Adobe Commerce >=2.4.4 &lt;2.4.6): corrige una línea de código obsoleta con la estructura adecuada para garantizar la finalización correcta del proceso del indizador de inventario.
+* **ACSD-66965** (para Adobe Commerce B2B >=1.5.0 &lt;1.5.3): corrige el problema con la opción de impresión de página de lista de solicitud que provocaba un error.
+* **ACSD-66506** (para Adobe Commerce B2B >=1.5.0 &lt;1.5.3): corrige el error de servidor que se producía cuando se eliminaban productos asignados anteriormente de un catálogo compartido y se asignaban nuevos productos.
+* **ACSD-66417** (para Braintree 4.6.1): corrige un problema en el cual la cuadrícula de pedidos de ventas genera un error al intentar filtrar pedidos por fecha.
+* Versiones actualizadas: **ACSD-60590**, **ACP2E-3705**
+* Revisiones reemplazadas: **ACSD-57003**, **ACSD-66434**
 
 ## Versión 1.1.67 {#v1-1-67}
 
@@ -709,7 +729,7 @@ ht-degree: 0%
 ## v1.1.22 {#v1-1-22}
 
 * **ACSD-47444** (para Adobe Commerce y Magento Open Source >=2.4.0 &lt;2.4.3): corrige el error _Intentando acceder al desplazamiento de la matriz en el valor de tipo bool_ al acceder a ciertas rutas de categoría no existentes para productos conocidos en PHP 7.4.
-* **ACSD-47332** (para Adobe Commerce y Magento Open Source >=2.4.0 &lt;2.4.6): corrige el problema en el que cron falla con un error que solo se informa al ejecutar entre las 00:00 y las 00:59 UTC.
+* **ACSD-47332** (para Adobe Commerce y Magento Open Source >=2.4.0 &lt;2.4.6): corrige el problema en el que cron falla con un error que solo se informa al ejecutar entre 00:00 y 00:59 UTC.
 * **ACSD-47280** (para Adobe Commerce y Magento Open Source >=2.4.0 &lt;2.4.6): corrige el problema en el cual la deshabilitación de la característica de catálogo compartido en un ámbito específico no funciona correctamente.
 * **ACSD-47106** (para Adobe Commerce y Magento Open Source >=2.4.4 &lt;2.4.6): corrige el problema en el cual un valor no se puede guardar en un nuevo atributo personalizado de una página de creación de compañía.
 * Revisión actualizada: ACSD-45143.
