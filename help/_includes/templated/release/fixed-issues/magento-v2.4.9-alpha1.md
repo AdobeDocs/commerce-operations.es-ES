@@ -1,5 +1,5 @@
 ---
-source-git-commit: 6c7feee0cd23d397c40bb66593a79b59ac2f620a
+source-git-commit: 2f471a1bc1cbf31076aeb67ceaee289196841cd4
 workflow-type: tm+mt
 source-wordcount: '2806'
 ht-degree: 0%
@@ -13,268 +13,440 @@ Hemos corregido 67 problemas en el código principal Magento Open Source 2.4.9-a
 
 ### API
 
-* __La operación masiva asincrónica permanece en estado abierto para async.magento.configurableproduct.api.optionrepositoryinterface.save.post__
+#### La operación masiva asincrónica permanece en estado abierto para async.magento.configurableproduct.api.optionrepositoryinterface.save.post
+
 Los extremos de API masivos generarán un error si el cuerpo de la solicitud no es una matriz, por lo que las claves de elementos masivos deben ser números consecutivos a partir de 0. Anteriormente, el estado del artículo en bloque no se actualizaba debido a la clave de artículo arbitraria enviada en la solicitud en bloque.
-  _ACP2E-3544 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/9608ca21)_
-* El error de REST de la API __[CLOUD] en su valor is_subscribed no se tiene en cuenta en el almacén actual usando searchCriteria__
+
+_ACP2E-3544 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/9608ca21)_
+
+#### El error de REST de la API [CLOUD] en su valor is_subscribed no se tiene en cuenta desde el almacén actual usando searchCriteria
+
 API REST La consulta del cliente obtiene el valor &quot;is_subscribed&quot; correcto del almacén correcto mediante searchCriteria
 Anteriormente, la consulta del cliente de REST de API no tenía en cuenta el almacén al recuperar el valor &quot;is_subscribed&quot;.
-  _ACP2E-3621 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/9608ca21)_
-* __async.operations.all puede crear varias entradas para 1 SKU__
+
+_ACP2E-3621 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/9608ca21)_
+
+#### async.operations.all puede crear varias entradas para 1 SKU
+
 Las solicitudes simultáneas para guardar y actualizar el mismo producto ahora se serializan para evitar condiciones de carrera que puedan provocar incoherencia de datos o productos duplicados
-  _ACP2E-3744 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/520f9e30)_
+
+_ACP2E-3744 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/520f9e30)_
 
 ### Cuenta
 
-* __[La operación de eliminación en la nube] está prohibida por el error del área actual durante la creación de la cuenta del cliente__
+#### [La operación de eliminación en la nube] está prohibida por el error del área actual durante la creación de la cuenta del cliente
+
 Después de la corrección, al guardar un cliente con una dirección no válida, se devuelve un mensaje que describe el motivo de la invalidez en lugar de &quot;La operación de eliminación está prohibida para el área actual&quot; irrelevante.
-  _ACP2E-3791 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/6ea61121)_
+
+_ACP2E-3791 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/6ea61121)_
 
 ### IU de administración
 
-* __[Problema]: mejore la experiencia del usuario con el árbol de funciones__
+#### [Problema]: mejore la experiencia del usuario con el árbol de funciones
+
 Esta solicitud de extracción añade botones para contraer todo, expandir todo y expandir ramas con los elementos seleccionados. Esta funcionalidad es similar a la proporcionada en el árbol de categorías (catálogo -> inventario -> categorías)
-  _AC-14020 - [Problema de GitHub](https://github.com/magento/magento2/issues/39654) - [Contribución de código de GitHub](https://github.com/magento/magento2/pull/36511)_
-* __Symfony\Component\Mime\Exception\LogicException: el encabezado &quot;Remitente&quot; debe ser una instancia de &quot;Symfony\Component\Mime\Header\MailboxHeader&quot; (tiene &quot;Symfony\Component\Mime\Header\MailboxListHeader&quot;)__
-  _AC-14520 - [Problema de GitHub](https://github.com/magento/magento2/issues/39823) - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/1e14bd72)_
-* __Proporcione una característica para eliminar tasas de impuestos de forma masiva mediante la cuadrícula__
+
+_AC-14020 - [Problema de GitHub](https://github.com/magento/magento2/issues/39654) - [Contribución de código de GitHub](https://github.com/magento/magento2/pull/36511)_
+
+#### Symfony\Component\Mime\Exception\LogicException: El encabezado &quot;Remitente&quot; debe ser una instancia de &quot;Symfony\Component\Mime\Header\MailboxHeader&quot; (tiene &quot;Symfony\Component\Mime\Header\MailboxListHeader&quot;)
+
+_AC-14520 - [Problema de GitHub](https://github.com/magento/magento2/issues/39823) - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/1e14bd72)_
+
+#### Proporcionar una función para eliminar tipos impositivos de forma masiva mediante la cuadrícula
+
 Los usuarios administradores ahora pueden eliminar simultáneamente varios tipos impositivos de la cuadrícula Tipos impositivos de administración.  [GitHub-33399](https://github.com/magento/magento2/issues/33399)
-  _AC-2238 - [Problema de GitHub](https://github.com/magento/magento2/issues/33399) - [Contribución de código de GitHub](https://github.com/magento/magento2/pull/33484) - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/5cd64dd0)_
-* __La regla de precio del carro de compras con la condición SKU no tiene en cuenta los &quot;ceros a la izquierda&quot; en la SKU (sku: 01234 es igual que 1234)__
+
+_AC-2238 - [Problema de GitHub](https://github.com/magento/magento2/issues/33399) - [Contribución de código de GitHub](https://github.com/magento/magento2/pull/33484) - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/5cd64dd0)_
+
+#### La regla de precio del carro de compras con la condición SKU no tiene en cuenta los &quot;ceros a la izquierda&quot; en la SKU (sku: 01234 es igual que 1234)
+
 El sistema ahora gestiona correctamente la regla de precio del carro de compras con la condición SKU y tiene en cuenta los &quot;ceros a la izquierda&quot; en la SKU
-  _AC-9428 - [Problema de GitHub](https://github.com/magento/magento2/issues/37919) - [Contribución de código de GitHub](https://github.com/magento/magento2/pull/39525)_
-* __Problema con el comportamiento del valor de opción de atributo predeterminado para Multiselect__
+
+_AC-9428 - [Problema de GitHub](https://github.com/magento/magento2/issues/37919) - [Contribución de código de GitHub](https://github.com/magento/magento2/pull/39525)_
+
+#### Problema con el comportamiento del valor de la opción de atributo predeterminado para la selección múltiple
+
 Antes de la corrección, los valores predeterminados de los atributos de varias opciones no se guardaban correctamente. Ahora, después de la corrección, los valores se almacenan correctamente en la base de datos.
-  _ACP2E-3523 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/9608ca21)_
-* __Problema al mover la cantidad del producto al carro de compras desde el administrador__
+
+_ACP2E-3523 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/9608ca21)_
+
+#### Problema al mover la cantidad del producto al carro de compras desde el administrador
+
 Al crear un pedido del administrador, los productos del carro de compras del cliente en la barra lateral no desaparecerán cuando se añadan al pedido.
-  _ACP2E-3563 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/c8ba4ab1)_
+
+_ACP2E-3563 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/c8ba4ab1)_
 
 ### IU de administración, B2B
 
-* __El inicio de sesión B2B como encabezado de cliente sigue teniendo la marca Magento__
+#### El inicio de sesión B2B como encabezado de cliente sigue teniendo la marca Magento
+
 Anteriormente, el encabezado de la tienda muestra &quot;Ahora está conectado como &lt;nombre del cliente> en &lt;nombre de la tienda>&quot; con la marca Magento. Que ahora es fijo y el encabezado se muestra con la marca ADOBE.
-  _AC-14361 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/fadcfa8b)_
+
+_AC-14361 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/fadcfa8b)_
 
 ### IU de administración, contenido
 
-* __Excepción &quot;No se puede crear la representación para las rutas de recursos multimedia&quot; durante la inserción de la imagen__
+#### Excepción &quot;No se puede crear la representación para las rutas de recursos de medios&quot; durante la inserción de la imagen
+
 Después de eliminar los valores de Anchura máxima y Altura máxima de la configuración de Optimización de imágenes de la Galería de medios, el error ya no se produjo durante el proceso de optimización de imágenes.
-  _ACP2E-3781 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/520f9e30)_
+
+_ACP2E-3781 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/520f9e30)_
 
 ### IU de administración, seguridad
 
-* __Administración débil de contraseñas__
+#### Administración de contraseñas poco fiable
+
 El usuario administrador no se puede guardar cuando se utiliza la misma contraseña. Anteriormente, se guardaba correctamente sin una validación adecuada.
-  _ACP2E-3657 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/df92debe)_
+
+_ACP2E-3657 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/df92debe)_
 
 ### Carro y cierre de compra
 
-* __Magento 2.4.7 update (mini)cart no se permite cantidad decimal__
+#### Magento 2.4.7 update (mini)cart no se permite una cantidad decimal
+
 Ahora Magento gestiona correctamente cuándo actualizamos la cantidad con decimales del minicarrito cuando la configuración regional era NL (neerlandés)
-  _AC-13238 - [Problema de GitHub](https://github.com/magento/magento2/issues/39236) - [Contribución de código de GitHub](https://github.com/magento/magento2/pull/39669)_
-* __[Problema] Actualización subtotal.phtml__
+
+_AC-13238 - [Problema de GitHub](https://github.com/magento/magento2/issues/39236) - [Contribución de código de GitHub](https://github.com/magento/magento2/pull/39669)_
+
+#### [Problema] al actualizar subtotal.phtml
+
 El sistema actualiza subtotal.phtml con el espaciado correcto
-  _AC-13907 - [Problema de GitHub](https://github.com/magento/magento2/issues/39619) - [Contribución de código de GitHub](https://github.com/magento/magento2/pull/39612)_
-* __No se pudo realizar el pedido con el invitado__
-  _AC-14241 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/27217d0e)_
-* __Un trabajo cron sales_clean_quote no limpia las ofertas persistentes caducadas__
+
+_AC-13907 - [Problema de GitHub](https://github.com/magento/magento2/issues/39619) - [Contribución de código de GitHub](https://github.com/magento/magento2/pull/39612)_
+
+#### No se puede realizar el pedido con el invitado
+
+_AC-14241 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/27217d0e)_
+
+#### Un trabajo cron sales_clean_quote no limpia las ofertas persistentes caducadas
+
 Las comillas persistentes caducadas ahora se borran cuando se ejecuta el trabajo cron &#39;persistent_clear_expire&#39;. Anteriormente, las comillas persistentes caducadas no se borraban con ningún otro trabajo cron.
-  _ACP2E-3493 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/11be3dff)_
-* __Error &quot;Se produjo un error&quot; al cerrar la compra de una compañía inactiva__
+
+_ACP2E-3493 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/11be3dff)_
+
+#### Error &quot;Se ha producido un error&quot; al cerrar la compra de una empresa inactiva
+
 Antes de la corrección, la acción de cierre de sesión no se completaba correctamente en la página del carro de compras si la empresa del usuario que ha iniciado sesión ya no estaba habilitada. Ahora, si la empresa ya no está disponible, el cierre de sesión se realiza correctamente.
-  _ACP2E-3541 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/df92debe)_
-* __La selección de direcciones no se guarda cuando realizamos la &quot;Desprotección con varias direcciones&quot;__
+
+_ACP2E-3541 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/df92debe)_
+
+#### La selección de direcciones no se guarda cuando se selecciona &quot;Desproteger con varias direcciones&quot;
+
 Antes de la corrección al cancelar la opción de envío múltiple, la dirección no se preseleccionaba al volver a realizar el envío múltiple. Ahora, la dirección predeterminada se reemplaza con una de las selecciones realizadas en la pantalla de envío múltiple.
-  _ACP2E-3646 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/6ea61121)_
+
+_ACP2E-3646 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/6ea61121)_
 
 ### Carro y Pago, Envío
 
-* La regla de precio del carro de compras __[Mainline] no respeta el envío múltiple__
+#### La regla de precio del carro de compras [Mainline] no respeta el envío múltiple
+
 Antes de la implementación de esta corrección, la regla de precio del carro de compras para productos de envío múltiple no se aplicaba correctamente cuando se aplicaban las condiciones de subselección y el envío gratuito estaba habilitado. Sin embargo, como se aplicó la corrección, la regla de precio del carro de compras para carros de envío múltiple ahora funciona según lo previsto.
-  _ACP2E-3666 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/b12ffe36)_
+
+_ACP2E-3666 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/b12ffe36)_
 
 ### Catálogo
 
-* __Duplicar fpc de caché para la misma página con la misma consulta__
+#### Fpc de caché duplicado para la misma página con la misma consulta
+
 El sistema ahora identifica y utiliza correctamente la misma caché de página completa (FPC) para las páginas con los mismos parámetros de consulta, independientemente de su orden o los caracteres finales. Esto evita un aumento innecesario del tamaño de la carpeta de la caché de la página. Anteriormente, el sistema creaba un identificador de FPC diferente para la misma página si el orden de los parámetros de consulta era diferente o si había caracteres de cierre, lo que producía un aumento en el tamaño de la carpeta de caché de la página.
-  _AC-10722 - [Problema de GitHub](https://github.com/magento/magento2/issues/38269) - [Contribución de código de GitHub](https://github.com/magento/magento2/pull/38270)_
-* __Falta la indexación de las columnas necesarias en la tabla catalog_product_entity_int__
+
+_AC-10722 - [Problema de GitHub](https://github.com/magento/magento2/issues/38269) - [Contribución de código de GitHub](https://github.com/magento/magento2/pull/38270)_
+
+#### Falta la indexación de las columnas necesarias en la tabla catalog_product_entity_int
+
 Se ha añadido la indexación que falta de las columnas requeridas en la tabla catalog_product_entity_int
-  _AC-10844 - [Problema de GitHub](https://github.com/magento/magento2/issues/38315) - [Contribución de código de GitHub](https://github.com/magento/magento2/pull/38316)_
-* __La página de producto genera un error debido a las reescrituras de URL__
+
+_AC-10844 - [Problema de GitHub](https://github.com/magento/magento2/issues/38315) - [Contribución de código de GitHub](https://github.com/magento/magento2/pull/38316)_
+
+#### La página del producto da error debido a las reescrituras de URL
+
 Ahora la página de producto se carga correctamente cuando se reescribe la dirección URL
-  _AC-2950 - [Problema de GitHub](https://github.com/magento/magento2/issues/35371) - [Contribución de código de GitHub](https://github.com/magento/magento2/pull/39670)_
-* Error cron de __indexer_update_all_views con MAGE_INDEXER_THREADS_COUNT__
+
+_AC-2950 - [Problema de GitHub](https://github.com/magento/magento2/issues/35371) - [Contribución de código de GitHub](https://github.com/magento/magento2/pull/39670)_
+
+#### error cron indexer_update_all_views con MAGE_INDEXER_THREADS_COUNT
+
 Se ha corregido un problema para MAGE_INDEXER_THREADS_COUNT > 2 con el indexador de segmentos del cliente
-  _ACP2E-3538 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/9608ca21)_
-* __Excepción al agregar &quot;Combinación de condiciones&quot; en la condición del widget de productos de Page Builder__
+
+_ACP2E-3538 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/9608ca21)_
+
+#### Excepción al añadir &quot;Combinación de condiciones&quot; en la condición del widget de productos de Page Builder
+
 El problema se ha corregido añadiendo una comprobación para omitir las condiciones que faltaban o incompletas. Anteriormente, esto provocaba que se generaran registros de errores debido al manejo de condiciones incompletas en el sistema.
-  _ACP2E-3545 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/11be3dff)_
-* __Bloqueo del explorador al cargar el conjunto de atributos__
+
+_ACP2E-3545 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/11be3dff)_
+
+#### Bloqueo del explorador al cargar el conjunto de atributos
+
 El explorador ya no se bloquea en la página de edición del conjunto de atributos si hay más de 4000 atributos de producto
-  _ACP2E-3633 - [Problema de GitHub](https://github.com/magento/magento2/issues/38810) - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/b12ffe36)_
-* La URL del producto __[CLOUD] no se ha creado para la nueva tienda: Go Live Bloqueador__
+
+_ACP2E-3633 - [Problema de GitHub](https://github.com/magento/magento2/issues/38810) - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/b12ffe36)_
+
+#### La URL del producto [CLOUD] no se ha creado para la nueva tienda: Bloqueador de Go Live
+
 Las reescrituras de URL del producto para la nueva tienda se han creado correctamente.
 Anteriormente, la operación finalizaba con pérdidas de memoria o con tiempo de espera.
-  _ACP2E-3669 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/df92debe)_
-* __Valor predeterminado de atributo para las opciones que no funcionan__
+
+_ACP2E-3669 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/df92debe)_
+
+#### Valor predeterminado de atributo para opciones que no funcionan
+
 Anteriormente, cuando se cambiaba el valor predeterminado de un atributo de selección de producto, aparecía como un elemento de matriz con los valores anteriores. Después de aplicar esta corrección, cuando actualicemos un valor de atributo de producto, se guardará como un solo elemento en la tabla eav_attribute.
-  _ACP2E-3688 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/520f9e30)_
+
+_ACP2E-3688 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/520f9e30)_
 
 ### Catálogo, GraphQL, Buscar
 
-* __Los productos que graphql devolvió categorías deshabilitadas en las agregaciones de categorías__
+#### Los productos que graphql devolvió categorías deshabilitadas en las agregaciones de categorías
+
 Después de la corrección, las categorías deshabilitadas no se devuelven para la solicitud de productos de GraphQL.
-  _ACP2E-2885 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/b12ffe36)_
+
+_ACP2E-2885 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/b12ffe36)_
 
 ### Catálogo, Producto
 
-* __[Error aleatorio] La biblioteca de Fotorama no se ha cargado__
+#### [Error aleatorio] La biblioteca de Fotorama no se ha cargado
+
 El sistema garantiza ahora que la biblioteca Fotorama se carga correctamente, lo que permite que todas las imágenes adjuntas se muestren en la galería de imágenes según lo esperado. Anteriormente, solo se podía ver la primera imagen debido a un problema con la biblioteca de Fotorama, que no se cargaba correctamente.
-  _AC-12124 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/45b51c9c) - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/27217d0e)_
+
+_AC-12124 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/45b51c9c) - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/27217d0e)_
 
 ### Contenido
 
-* __Colocar csp_whitelist.xml en el tema no funciona y crea un problema intermitente__
+#### Colocar csp_whitelist.xml en el tema no funciona y crea un problema intermitente
+
 Se ha implementado el almacenamiento en caché de la lista blanca de CSP por área de sitio web.
-  _AC-13069 - [Problema de GitHub](https://github.com/magento/magento2/issues/38933) - [Contribución de código de GitHub](https://github.com/magento/magento2/pull/39672)_
-* __Error: error de script para &quot;Magento_Catalog/js/validate-product&quot; para el generador de páginas de contenido de administrador con carga de productos__
+
+_AC-13069 - [Problema de GitHub](https://github.com/magento/magento2/issues/38933) - [Contribución de código de GitHub](https://github.com/magento/magento2/pull/39672)_
+
+#### Error: Error de script para &quot;Magento_Catalog/js/validate-product&quot; para el generador de páginas de contenido de administrador con carga de productos
+
 Esta PR corrige el error de secuencia de comandos para catalogAddToCart al editar el generador de páginas con la condición de productos
-  _AC-13891 - [Problema de GitHub](https://github.com/magento/magento2/issues/39604) - [Contribución de código de GitHub](https://github.com/magento/magento2/pull/39677)_
-* __Bloquear selección en widgets que tienen el mismo identificador__
+
+_AC-13891 - [Problema de GitHub](https://github.com/magento/magento2/issues/39604) - [Contribución de código de GitHub](https://github.com/magento/magento2/pull/39677)_
+
+#### Bloquear la selección en widgets que tengan el mismo identificador
+
 El sistema ahora gestiona correctamente el bloque de selección al crear widgets cuando tenemos los mismos bloques de identificador
-  _AC-14132 - [Problema de GitHub](https://github.com/magento/magento2/issues/39692) - [Contribución de código de GitHub](https://github.com/magento/magento2/pull/39722)_
-* __No se tiene en cuenta el prefijo de tabla__
-  _AC-14556 - [Problema de GitHub](https://github.com/magento/magento2/issues/39847) - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/1bc2d6d0)_
-* __No se puede cargar la imagen con una anchura relativamente pequeña__
+
+_AC-14132 - [Problema de GitHub](https://github.com/magento/magento2/issues/39692) - [Contribución de código de GitHub](https://github.com/magento/magento2/pull/39722)_
+
+#### No se tiene en cuenta el prefijo de tabla
+
+_AC-14556 - [Problema de GitHub](https://github.com/magento/magento2/issues/39847) - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/1bc2d6d0)_
+
+#### No se puede cargar la imagen con una anchura relativamente pequeña
+
 El sistema ya no deja de cambiar el tamaño de la imagen con una anchura relativamente pequeña a su altura.
-  _ACP2E-3558 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/9608ca21)_
-* __Ruta de configuración incorrecta para la configuración de estilo de ruta de almacenamiento remoto__
+
+_ACP2E-3558 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/9608ca21)_
+
+#### Ruta de configuración incorrecta para la configuración de estilo de ruta de almacenamiento remoto
+
 Después de la corrección, establecer la configuración de estilo de ruta de almacenamiento remoto afectará a la configuración real del estilo de ruta de AWS S3.
-  _ACP2E-3734 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/df92debe)_
+
+_ACP2E-3734 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/df92debe)_
 
 ### Marco
 
-* __Código de compilación del módulo deshabilitado.__
+#### Código de compilación del módulo deshabilitado.
+
 Esta solicitud de extracción omite los módulos deshabilitados antes de la compilación del código.
-  _AC-10933 - [Problema de GitHub](https://github.com/magento/magento2/issues/38241) - [Contribución de código de GitHub](https://github.com/magento/magento2/pull/39723)_
-* __Plantilla Magento_Theme title.phtml no válida para PHP 8.2__
+
+_AC-10933 - [Problema de GitHub](https://github.com/magento/magento2/issues/38241) - [Contribución de código de GitHub](https://github.com/magento/magento2/pull/39723)_
+
+#### Plantilla Magento_Theme title.phtml no válida para PHP 8.2
+
 Esta solicitud de extracción corrige un problema cuando la página de CMS creada con el encabezado nulo como en Php 8.x que pasa nulo a trim() emite una excepción: Funcionalidad obsoleta: trim(): Pasar nulo al parámetro #1 ($string) de tipo cadena
-  _AC-12856 - [Problema de GitHub](https://github.com/magento/magento2/issues/39092) - [Contribución de código de GitHub](https://github.com/magento/magento2/pull/39398)_
-* __Al usar el almacenamiento de archivos para el proveedor de bloqueos, obtenemos un directorio de archivos cada vez mayor sin que se produzca ninguna limpieza__
+
+_AC-12856 - [Problema de GitHub](https://github.com/magento/magento2/issues/39092) - [Contribución de código de GitHub](https://github.com/magento/magento2/pull/39398)_
+
+#### Al utilizar el almacenamiento de archivos para el proveedor de bloqueos, obtenemos un directorio de archivos cada vez más grande sin que se produzca ninguna limpieza
+
 Esta solicitud de extracción presenta un nuevo trabajo de cron que se ejecuta una vez al día y busca archivos de bloqueo que no se hayan modificado en las últimas 24 horas y que, por lo tanto, se pueden eliminar de forma segura. Esto mantendrá el contenido del directorio de archivos de bloqueo bajo control.
 Este trabajo cron solo ejecutará algo cuando el proveedor de bloqueo esté configurado para utilizar archivos, no cuando se utilice uno de los demás (base de datos: el predeterminado, el zookeeper o la caché)
-  _AC-13367 - [Problema de GitHub](https://github.com/magento/magento2/issues/39369) - [Contribución de código de GitHub](https://github.com/magento/magento2/pull/39372)_
-* Limpieza de __[problema]: no use el valor devuelto nulo de las llamadas a métodos.__
+
+_AC-13367 - [Problema de GitHub](https://github.com/magento/magento2/issues/39369) - [Contribución de código de GitHub](https://github.com/magento/magento2/pull/39372)_
+
+#### Limpieza de [problema]: no use el valor devuelto nulo de las llamadas a métodos.
+
 Esta PR realiza una limpieza menor. A veces llamamos a métodos que no devolvían nada (void) y luego usamos ese valor de resultado. Lo cual no es necesario.
-  _AC-13664 - [Problema de GitHub](https://github.com/magento/magento2/issues/39524) - [Contribución de código de GitHub](https://github.com/magento/magento2/pull/39516)_
-* __[Problema] [PHPDOC] Corregir phpdoc incorrecto para Magento\Framework\Message\ManagerInterface__
+
+_AC-13664 - [Problema de GitHub](https://github.com/magento/magento2/issues/39524) - [Contribución de código de GitHub](https://github.com/magento/magento2/pull/39516)_
+
+#### [Problema] [PHPDOC] Corregir phpdoc incorrecto para Magento\Framework\Message\ManagerInterface
+
 Esta PR corrige el phpdoc incorrecto para \Magento\Framework\Message\ManagerInterface y elimina todos los phpdoc duplicados en \Magento\Framework\Message\Manager (use la sintaxis inheritdoc).
-  _AC-14312 - [Problema de GitHub](https://github.com/magento/magento2/issues/39593) - [Contribución de código de GitHub](https://github.com/magento/magento2/pull/39153)_
-* __Se ha eliminado la estabilidad mínima beta de composer.json__
+
+_AC-14312 - [Problema de GitHub](https://github.com/magento/magento2/issues/39593) - [Contribución de código de GitHub](https://github.com/magento/magento2/pull/39153)_
+
+#### Se ha eliminado la estabilidad mínima beta de composer.json
+
 Se ha eliminado la estabilidad mínima beta de composer.json
-  _AC-14450 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/1cbbf187)_
-* La __generación de allow_allel_generation debe establecerse a través de la variable de entorno__
+
+_AC-14450 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/1cbbf187)_
+
+#### allow_allel_generation debe configurarse mediante la variable de entorno
+
 Después de la corrección, se puede utilizar la variable de entorno &quot;MAGENTO_DC_CACHE__ALLOW_PARALLEL_GENERATION&quot; para establecer la configuración &quot;allow_allel_generation&quot;.
-  _ACP2E-3673 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/b12ffe36)_
-* __[Nube] Al cambiar el tipo de columna de tabla de Int a Decimal mediante el archivo db_schema.xml en Magento 2, se producen errores__
+
+_ACP2E-3673 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/b12ffe36)_
+
+#### [Nube] Al cambiar el tipo de columna de tabla de Int a Decimal mediante el archivo db_schema.xml en Magento 2, se producen errores
+
 Cambiar el tipo de datos de columna no funciona correctamente. Anteriormente, genera un error: No se permite el atributo &#39;identity&#39;.
-  _ACP2E-3709 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/df92debe)_
-* __Nueva compatibilidad con moneda (XCG) en Adobe__
+
+_ACP2E-3709 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/df92debe)_
+
+#### Nueva compatibilidad con moneda (XCG) en Adobe
+
 Florín caribeño (XCG) se agrega a la lista de monedas.
-  _ACP2E-3790 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/520f9e30)_
+
+_ACP2E-3790 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/520f9e30)_
 
 ### GraphQL
 
-* __La respuesta de GraphQL para la realización del pedido no incluye el mensaje de excepción__
+#### La respuesta de GraphQL para la colocación de pedidos no incluye el mensaje de excepción
+
 Se ha revertido el cambio anterior que devolvía errores en un formato diferente. Ahora los posibles errores se devuelven de forma coherente, sin romper el esquema de GraphQL. Esto debería añadirse como BIC conocido, aprobado por PM en ACP2E-3399
-  _ACP2E-3399 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/9608ca21)_
-* __La respuesta de GraphQL para la realización del pedido está parcialmente localizada__
+
+_ACP2E-3399 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/9608ca21)_
+
+#### La respuesta de GraphQL para la colocación de pedidos está parcialmente localizada
+
 Los errores devueltos por la mutación placeOrder GraphQl no se han localizado completamente. Ahora, en un contexto multilingüe, los errores se traducen correctamente.
-  _ACP2E-3506 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/9608ca21)_
-* __Llamadas simultáneas para reordenar la API de GraphQL - Se agregaron los mismos productos a diferentes filas__
+
+_ACP2E-3506 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/9608ca21)_
+
+#### Llamadas simultáneas para reordenar la API de GraphQL: los mismos productos añadidos a filas diferentes
+
 Corrige el problema en el cual las llamadas simultáneas a la API de Reordenar GraphQL hacen que los mismos productos se agreguen como filas diferentes, lo que provoca incoherencias en los datos.
-  _ACP2E-3774 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/c8ba4ab1)_
-* __updateCustomerEmail GraphQL mutation(Cambiar dirección de correo electrónico) no almacena en déclencheur la notificación por correo electrónico__
+
+_ACP2E-3774 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/c8ba4ab1)_
+
+#### updateCustomerEmail La mutación de GraphQL (Cambiar dirección de correo electrónico) no almacena en déclencheur la notificación por correo electrónico
+
 Anteriormente, el correo electrónico no se enviaba a los clientes después de actualizar correctamente sus direcciones de correo electrónico en sus cuentas. Una vez aplicada la corrección, los clientes ahora reciben notificaciones por correo electrónico después de actualizar correctamente sus direcciones de correo electrónico.
-  _ACP2E-3785 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/c8ba4ab1)_
-* __El atributo dinámico no se actualiza en el registro de regalos mediante la mutación updateGiftRegistry__
+
+_ACP2E-3785 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/c8ba4ab1)_
+
+#### El atributo dinámico no se actualiza en el registro de regalos mediante la mutación updateGiftRegistry
+
 Anteriormente, antes de esta corrección mediante la mutación updateGiftRegistry, el atributo personalizado del registro de regalos no se modificaba ni actualizaba mediante mutaciones de GraphQL. Después de aplicar esta corrección, el atributo dinámico del registro de regalos se puede actualizar correctamente mediante la mutación updateGiftRegistry.
-  _ACP2E-3805 - [Problema de GitHub](https://mcstaging.briscoes.co.nz/)_
+
+_ACP2E-3805 - [Problema de GitHub](https://mcstaging.briscoes.co.nz/)_
 
 ### Importación/exportación
 
-* __[Problema] Copyedit: cambiar &quot;copia&quot; a &quot;copia&quot;__
+#### [Problema] Copyedit: cambiar &quot;copiar&quot; a &quot;copiar&quot;
+
 PR corrige la edición de copia menor para corregir la ortografía de &quot;copia&quot;
-  _AC-13300 - [Problema de GitHub](https://github.com/magento/magento2/issues/39311) - [Contribución de código de GitHub](https://github.com/magento/magento2/pull/39307)_
-* __El JSON de importación de producto del extremo REST no valida los campos obligatorios__
+
+_AC-13300 - [Problema de GitHub](https://github.com/magento/magento2/issues/39311) - [Contribución de código de GitHub](https://github.com/magento/magento2/pull/39307)_
+
+#### El JSON de importación de producto del extremo REST no valida los campos obligatorios
+
 El campo de nombre ahora es obligatorio al crear nuevos productos a través del proceso de importación (administrador o API). Antes de la corrección, podría haber creado nuevos productos sin nombre, lo que habría roto la interfaz de administración y creado productos no válidos.
-  _ACP2E-3660 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/df92debe)_
-* __Falta la opción de filtro de sitio web en el proceso de exportación__
+
+_ACP2E-3660 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/df92debe)_
+
+#### Falta la opción de filtro de sitio web en el proceso de exportación
+
 Ahora es posible filtrar los productos por sitios web al crear la exportación de productos.
-  _ACP2E-3720 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/520f9e30)_
-* __Duplicado de AC-13913: limpieza de atributo estático asincrónicamente.__
+
+_ACP2E-3720 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/520f9e30)_
+
+#### Duplicado de AC-13913: limpieza de atributos estáticos asincrónicamente.
+
 Después de la corrección, no hay ningún error &quot;Undefined array key &quot;apply_to&quot;&quot; cuando se crean numerosas instancias de \Magento\CatalogImportExport\Model\Import\Product\Type\AbstractType.
-  _ACP2E-3752 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/520f9e30)_
+
+_ACP2E-3752 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/520f9e30)_
 
 ### Inventario/MSI
 
-* __La recogida en la tienda no respeta el radio máximo de búsqueda cuando la dirección se cambia al pagar__
+#### La recogida en tienda no respeta el radio máximo de búsqueda cuando la dirección se cambia al finalizar la compra
+
 Ahora, la tienda preseleccionada en &quot;Elegir en tienda&quot; se actualizará si la dirección de envío cambia. Anteriormente, una vez preseleccionada una tienda, no cambiaba aunque la nueva dirección de envío no estuviera en el radio de la tienda seleccionada
-  _ACP2E-3728 - [Contribución de código de GitHub](https://github.com/magento/inventory/commit/07620383)_
+
+_ACP2E-3728 - [Contribución de código de GitHub](https://github.com/magento/inventory/commit/07620383)_
 
 ### Pedido
 
-* __No se puede devolver nulo para el campo que no admite valores NULL \&amp;quot;AppliedCoupon.code\&amp;quot; problema inesperado__
-  _AC-14484 - [Problema de GitHub](https://github.com/magento/magento2/issues/39841) - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/97b2ea42)_
+#### No puede devolver nulo para el campo que no admite valores NULL \&amp;quot;AppliedCoupon.code\&amp;quot; problema inesperado
+
+_AC-14484 - [Problema de GitHub](https://github.com/magento/magento2/issues/39841) - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/97b2ea42)_
 
 ### Pedido, Precio
 
-* __El administrador muestra un símbolo de moneda incorrecto al crear la devolución__
+#### El administrador muestra un símbolo de moneda incorrecto en al crear la devolución
+
 En una configuración de varios sitios web con diferentes monedas (EUR/USD/GBP), la página de selección de productos de retorno del administrador ahora muestra el símbolo de moneda correcto. Anteriormente, mostraba el símbolo de moneda predeterminado.
-  _ACP2E-3658 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/df92debe)_
+
+_ACP2E-3658 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/df92debe)_
 
 ### Otras herramientas para desarrolladores
 
-* __Error de accesibilidad de Lighthouse__
+#### Error de accesibilidad de Lighthouse
+
 El sistema ahora pasa con una puntuación de accesibilidad de 100
-  _AC-12783 - [Problema de GitHub](https://github.com/magento/magento2/issues/39054) - [Contribución de código de GitHub](https://github.com/magento/magento2/pull/39164)_
-* __Deshabilitar la configuración de la tienda captcha sigue cargando los archivos js captcha__
+
+_AC-12783 - [Problema de GitHub](https://github.com/magento/magento2/issues/39054) - [Contribución de código de GitHub](https://github.com/magento/magento2/pull/39164)_
+
+#### Deshabilitar la configuración de la tienda captcha sigue cargando los archivos js captcha
+
 El sistema ahora no carga los archivos js de captcha cuando deshabilitamos captcha para tienda
-  _AC-14267 - [Problema de GitHub](https://github.com/magento/magento2/issues/32987) - [Contribución de código de GitHub](https://github.com/magento/magento2/pull/39154)_
+
+_AC-14267 - [Problema de GitHub](https://github.com/magento/magento2/issues/32987) - [Contribución de código de GitHub](https://github.com/magento/magento2/pull/39154)_
 
 ### Pagos
 
-* __[Problema] Corrige la captura de factura sin conexión (404)__
+#### [Problema] Corregir captura de factura sin conexión (404)
+
 Corrige el error de página 404 al capturar facturas de métodos de pago sin conexión del administrador de Magento
-  _AC-13336 - [Problema de GitHub](https://github.com/magento/magento2/issues/39298) - [Contribución de código de GitHub](https://github.com/magento/magento2/pull/39297)_
+
+_AC-13336 - [Problema de GitHub](https://github.com/magento/magento2/issues/39298) - [Contribución de código de GitHub](https://github.com/magento/magento2/pull/39297)_
 
 ### Product
 
-* __Colección de productos - addMediaGalleryData llama a getSize cuando la colección puede cargarse o cargarse (puede usar el recuento para evitar una consulta DB adicional)__
+#### Colección de productos: addMediaGalleryData llama a getSize cuando la colección puede cargarse o cargarse (puede utilizar el recuento para evitar una consulta de base de datos adicional)
+
 Esta PR reduce la llamada de consulta adicional mediante count() si la colección de productos ya se carga al llamar a Product Graphql con el campo media_gallery incluido en ella.
-  _AC-13055 - [Problema de GitHub](https://github.com/magento/magento2/issues/39111) - [Contribución de código de GitHub](https://github.com/magento/magento2/pull/39681)_
-* __[2.4.8] No se encontraron llamadas de retorno para el trabajo cron catalog_product_alert__
-  _AC-14494 - [Problema de GitHub](https://github.com/magento/magento2/issues/39800) - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/1bc2d6d0)_
-* __La consulta lenta se ejecuta cuando el widget del producto se incluye a través de pagebuilder__
+
+_AC-13055 - [Problema de GitHub](https://github.com/magento/magento2/issues/39111) - [Contribución de código de GitHub](https://github.com/magento/magento2/pull/39681)_
+
+#### [2.4.8] No se encontraron llamadas de retorno para el trabajo cron catalog_product_alert
+
+_AC-14494 - [Problema de GitHub](https://github.com/magento/magento2/issues/39800) - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/1bc2d6d0)_
+
+#### La consulta lenta se ejecuta cuando el widget de producto se incluye mediante pagebuilder
+
 Se optimiza la consulta para la creación de widgets de producto, incluidos los SKU de producto.
-  _ACP2E-3449 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/df92debe)_
-* __No se cambió el tamaño de las imágenes del producto cuando se agregaron como producto configurable__
+
+_ACP2E-3449 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/df92debe)_
+
+#### Las imágenes de producto no cambian de tamaño cuando se añaden como producto configurable
+
 Anteriormente, las imágenes agregadas a través de Configuraciones en el panel de administración no respetaban el límite máximo de tamaño de carga, lo que podía generar incoherencias y desafíos de administración. Ahora, se ha implementado una corrección para garantizar que las imágenes se redimensionen automáticamente durante la carga para cumplir con el límite de tamaño máximo, simplificar el proceso y mantener los estándares del sistema.
-  _ACP2E-3504 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/df92debe)_
+
+_ACP2E-3504 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/df92debe)_
 
 ### Envío
 
-* __[DHL]-Handle Dimensiones opcionales en la configuración de tamaño normal y la variación de precio entre las integraciones de REST y XML API__
-  _AC-14601 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/1e3bde4c)_
-* __Excepción al crear la etiqueta de envío UPS__
+#### [DHL]-Handle Dimensiones opcionales en la configuración de tamaño normal y la variación de precio entre las integraciones de REST y XML API
+
+_AC-14601 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/1e3bde4c)_
+
+#### Excepción al crear la etiqueta de envío UPS
+
 Advertencia fija: conversión de matriz a cadena durante la creación de etiquetas de envío UPS
-  _ACP2E-3676 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/b12ffe36)_
+
+_ACP2E-3676 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/b12ffe36)_
 
 ### Ensayo y previsualización
 
-* __Al obtener una vista previa de una actualización programada, se abre la primera vista de la tienda en orden alfabético, en lugar de la vista de la tienda que te interesa__
+#### Al obtener una vista previa de una actualización programada, se abre la primera vista de la tienda en orden alfabético, en lugar de la vista de la tienda en cuestión
+
 Antes de la corrección, la vista previa de una actualización programada se abría en la primera vista de tienda en orden alfabético en lugar de la vista de tienda asignada.
 Después de la corrección, la vista previa ahora se abre correctamente en la vista de tienda asignada a la actualización de ensayo del bloque de CMS.
-  _ACP2E-3671 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/b12ffe36)_
+
+_ACP2E-3671 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/b12ffe36)_

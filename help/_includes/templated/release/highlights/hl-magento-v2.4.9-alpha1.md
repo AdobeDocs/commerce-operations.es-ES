@@ -1,5 +1,5 @@
 ---
-source-git-commit: eb6f99520b485d54ba5e44734d5979282f6d965f
+source-git-commit: 2f471a1bc1cbf31076aeb67ceaee289196841cd4
 workflow-type: tm+mt
 source-wordcount: '163'
 ht-degree: 0%
@@ -13,31 +13,46 @@ Los siguientes aspectos destacados se aplican a la versión Magento Open Source 
 
 ### IU de administración
 
-* __Agregar menú &quot;Acciones&quot; para la cuadrícula Reglas de precio de catálogo en la IU de administración__
-  _AC-13916_
+#### Añada el menú &quot;Acciones&quot; para la cuadrícula Reglas de precio de catálogo en la IU de administración
+
+_AC-13916_
 
 ### Marco
 
-* __[Parte 2] - Actualizar toda la biblioteca js y la dependencia npm con la última versión disponible__
+#### [Parte 2]: Actualice toda la biblioteca js y la dependencia npm con la última versión disponible
+
 la compatibilidad con la versión del compositor estaba hasta la versión del compositor 2.2.x solamente. Ahora, la compatibilidad se ha ampliado también a la versión 2.4.x.
-  _AC-13792 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/19844aa0)_
-* __Agregar compatibilidad para Valkey 8.x para 2.4.8, 2.4.7, 2.4.6 y 2.4.5, 2.4.9-alpha1__
-  _AC-14103_
-* __Comprobar la compatibilidad con Varnish 7.7__
-  _AC-14105_
-* __Agregar compatibilidad para RabbitMQ 4.1 para 2.4.8, 2.4.7, 2.4.6 y 2.4.5__
-  _AC-14357_
+
+_AC-13792 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/19844aa0)_
+
+#### Compatibilidad añadida para Valkey 8.x para 2.4.8, 2.4.7, 2.4.6 y 2.4.5, 2.4.9-alpha1
+
+_AC-14103_
+
+#### Comprobar la compatibilidad con Varnish 7.7
+
+_AC-14105_
+
+#### Agregar compatibilidad para RabbitMQ 4.1 para 2.4.8, 2.4.7, 2.4.6 y 2.4.5
+
+_AC-14357_
 
 ### Otros
 
-* __2.4.9-alpha1 - Mejoras de calidad de componentes básicos de junio__
-  _AC-14026_
-* __Hacer que 2.4.7 y 2.4.6 sean compatibles con MariaDB 10.11__
-  _AC-14099_
-* __2.4.9-alpha1 - Contribuciones de la comunidad de junio de 2025__
-  _AC-14559_
+#### 2.4.9-alpha1 - Mejoras en la calidad de los componentes básicos de junio
+
+_AC-14026_
+
+#### Hacer compatible 2.4.7 y 2.4.6 con MariaDB 10.11
+
+_AC-14099_
+
+#### 2.4.9-alpha1 - Contribuciones comunitarias de junio de 2025
+
+_AC-14559_
 
 ### Envío
 
-* __Migrar la integración de DHL desde el XML de DHL Express obsoleto a las nuevas API RESTful de MyDHL__
-  _AC-13258_
+#### Migración de la integración de DHL desde el XML de DHL Express obsoleto a las nuevas API de MyDHL RESTful
+
+_AC-13258_
