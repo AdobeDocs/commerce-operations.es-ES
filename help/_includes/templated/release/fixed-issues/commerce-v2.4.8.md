@@ -1,5 +1,5 @@
 ---
-source-git-commit: 92907752d92cd7f4a81377a5239dfded10fe3655
+source-git-commit: 1f377ab6e4dcdd2d350366f3889b8befd233474b
 workflow-type: tm+mt
 source-wordcount: '27924'
 ht-degree: 0%
@@ -337,7 +337,7 @@ Anteriormente, para el administrador restringido, al agregar un nuevo bloque din
 
 _ACP2E-2687_
 
-#### El nombre de apóstrofo en la vista de tienda se reemplaza por &#039;
+#### El nombre de apóstrofo en la vista de tienda se reemplaza por &amp;#039;
 
 Los filtros de vista de tienda de la cuadrícula ahora muestran correctamente los apóstrofos
 
@@ -1971,7 +1971,7 @@ El sistema ahora se adhiere al estándar de codificación al eliminar la etiquet
 
 _AC-8356 - [Problema de GitHub](https://github.com/magento/magento2/issues/37250) - [Contribución de código de GitHub](https://github.com/magento/magento2/pull/37000)_
 
-#### Espacio en la regla de saltos de sintaxis del editor para `[&lbrace;composer,auth&rbrace;.json]`
+#### Espacio en la regla de saltos de sintaxis del editor para `[{composer,auth}.json]`
 
 El sistema ahora aplica correctamente una sangría de 4 espacios a los archivos composer y auth.json, siguiendo una corrección de un error de sintaxis en la configuración del editor. Anteriormente, debido a un espacio en la sintaxis del editor de configuración, estos archivos tenían un formato incorrecto con una sangría de 2 espacios.
 
@@ -2127,7 +2127,7 @@ El problema se ha corregido después de aplicar la comprobación al solicitar un
 
 _ACP2E-2653 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/12e071c3)_
 
-#### La llamada de productos GraphQL que contiene el filtro de precios `&lbrace;from:&quot;0&quot;&rbrace;` no devuelve ningún resultado
+#### La llamada de productos GraphQL que contiene el filtro de precios `{from:&quot;0&quot;}` no devuelve ningún resultado
 
 Anteriormente, la búsqueda de productos de graphql con filtro para precios cero no arrojaba ningún resultado debido a una excepción generada. Ahora la búsqueda devuelve los resultados según lo esperado.
 
@@ -2706,8 +2706,8 @@ _LYNX-395_
 
 Se ha corregido un problema por el cual al agregar un producto simple (parte de un producto agrupado) al carro de compras se devolvía una imagen en miniatura de marcador de posición, incluso cuando el producto tenía una imagen asignada.
 Detalles de la corrección:
-* La miniatura del producto ahora muestra correctamente la imagen asignada si está disponible.
-* La selección de miniaturas respeta la configuración de administración en:
+- La miniatura del producto ahora muestra correctamente la imagen asignada si está disponible.
+- La selección de miniaturas respeta la configuración de administración en:
 Tiendas > Configuración > Ventas > Cierre de compra > Carro de compra > Imagen de producto agrupada.
 Esto garantiza un comportamiento de miniaturas coherente para los productos agrupados en función de la configuración de la tienda.
 
@@ -2729,8 +2729,8 @@ _LYNX-402_
 
 Se ha resuelto un problema en el cual el atributo only_x_left_in_stock siempre devolvía 0 para los productos configurables cuando se añadía utilizando el SKU principal con opciones.
 Detalles de la corrección:
-* El valor only_x_left_in_stock ahora refleja con precisión el stock de la variante secundaria seleccionada en lugar del SKU principal.
-* Esto garantiza que los niveles de stock se muestren correctamente para las variaciones de productos configurables en el carro de compras y las páginas de productos.
+- El valor only_x_left_in_stock ahora refleja con precisión el stock de la variante secundaria seleccionada en lugar del SKU principal.
+- Esto garantiza que los niveles de stock se muestren correctamente para las variaciones de productos configurables en el carro de compras y las páginas de productos.
 
 _LYNX-403_
 
@@ -2800,7 +2800,7 @@ Se ha resuelto un problema en el que la mutación addProductsToCart devolvía un
 
 _LYNX-469_
 
-#### Atributo del producto > marca comercial abreviada &trade; se devuelve como &trade;
+#### Atributo del producto > marca comercial abreviada &amp;trade; se devuelve como &amp;trade;
 
 Se ha resuelto un problema de codificación de caracteres con el nombre del producto para la API de GraphQL
 
