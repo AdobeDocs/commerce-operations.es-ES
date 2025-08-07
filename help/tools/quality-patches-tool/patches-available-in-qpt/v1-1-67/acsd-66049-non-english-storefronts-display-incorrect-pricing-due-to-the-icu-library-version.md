@@ -39,7 +39,7 @@ Las tiendas que no están en inglés muestran precios incorrectos cuando se usan
 1. Compruebe la versión de ICU:
    * Conéctese al servidor mediante SSH y ejecute el comando: `php -a`
    * En el mensaje, escriba: `echo INTL_ICU_VERSION;`
-1. Vaya a **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL General]** > **[!UICONTROL Locale]** > **[!UICONTROL Locale Options]**. **[!UICONTROL Configure Locale]** = *[Hebreo UICONTROL (Israel)]*.
+1. Vaya a **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL General]** > **[!UICONTROL Locale]** > **[!UICONTROL Locale Options]**. **[!UICONTROL Configure Locale]** = *[!UICONTROL Hebreo (Israel)]*.
 1. Cree un producto con precio = 100.
 1. Ver la página del producto en la tienda.
 
