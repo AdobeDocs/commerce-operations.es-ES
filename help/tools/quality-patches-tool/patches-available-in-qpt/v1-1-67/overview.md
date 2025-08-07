@@ -4,9 +4,9 @@ description: Esta subsección proporciona una descripción detallada de los prob
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 47f6b57d-b945-4e77-8630-2df709a3469e
-source-git-commit: f26ada4171197107866c45db7a711bce8be1d18e
+source-git-commit: 6758b85e797de75ea5430062c8335fa903f00838
 workflow-type: tm+mt
-source-wordcount: '191'
+source-wordcount: '188'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ QPT v1.1.67 incluye los siguientes parches:
 1. **ACSD-66118**: al actualizar el código de vista de tienda, se borran los ajustes de Configuración de diseño si no se actualiza la caché de configuración.
 1. **ACSD-66139**: GraphQL devuelve un error UNDEFINED para un carro de compras inexistente o inactivo durante la realización del pedido.
 1. **ACSD-66301**: al volver a mover productos de un pedido al carro de compras en Administración, la cantidad no coincide.
-1. **[ACSD-66434](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/acsd-66434-customer-id-missing-from-company-graphql-queries.md)**: falta el identificador de cliente en las consultas de GraphQL de la empresa.
-1. **ACSD-66441**: Datos de índice incorrectos en la navegación por capas para productos configurables en configuraciones de varias tiendas.
+1. **ACSD-66434**: falta el identificador de cliente en las consultas de GraphQL de la empresa.
+1. **ACSD-66441**: la navegación por capas muestra opciones de atributos incorrectas en la configuración de varias tiendas.
 
 Utilice el menú de la izquierda para navegar a una página específica del parche.
