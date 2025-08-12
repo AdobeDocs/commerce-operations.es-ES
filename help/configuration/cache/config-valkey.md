@@ -2,9 +2,10 @@
 title: Configuración de Valkey
 description: Obtenga información general sobre las funciones de Valkey e inicie la configuración de Valkey.
 feature: Configuration, Cache
-source-git-commit: 1850301e0b7f1abbc54613209940dd63d16ef145
+exl-id: 12dbc171-3df6-4413-869b-a3450b5647b4
+source-git-commit: b2cf71bfda3e5db8e27eb28d764cf99216454e33
 workflow-type: tm+mt
-source-wordcount: '337'
+source-wordcount: '341'
 ht-degree: 0%
 
 ---
@@ -27,7 +28,7 @@ Para instalar y configurar el software de Valkey, consulte los siguientes recurs
 
 ## Configurar Valkey
 
-Según la instalación, normalmente puede encontrar la configuración de Valkey en `/etc/valkey/valkey.conf` o `/etc/valkey/<port>.conf`.
+Según la instalación, normalmente puede encontrar la configuración de Valkey en el archivo `/etc/valkey/valkey.conf` o en el archivo `/etc/valkey/<port>.conf`.
 
 Para optimizar la instancia de Valkey según sus necesidades, puede obtener los mejores resultados utilizando una instancia específica para cada sesión, caché de Commerce y FPC.
 

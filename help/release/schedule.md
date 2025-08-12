@@ -2,9 +2,9 @@
 title: Programación de versiones
 description: Descubra cuándo Adobe tiene previsto anunciar lanzar nuevas funciones de Adobe Commerce.
 exl-id: ae1e09cd-966f-44a3-9e4d-b90bb838429d
-source-git-commit: 9e3246e81063769e4197f2e786e1e405b4460787
+source-git-commit: b908b468f0b8abe8bb7904b9c4a626201dc919bc
 workflow-type: tm+mt
-source-wordcount: '511'
+source-wordcount: '483'
 ht-degree: 2%
 
 ---
@@ -18,16 +18,14 @@ Adobe se esfuerza continuamente por encontrar el equilibrio adecuado entre hacer
 
 Las nuevas funciones, las actualizaciones de funciones, la infraestructura en la nube y las actualizaciones de extensibilidad se entregan de forma independiente de las versiones de parches y están disponibles a través de módulos externos, extensiones, herramientas o servicios web. Algunos ejemplos son:
 
-- ![Icono de características](../assets/icons/feature.svg) [**Características y funcionalidad**](https://experienceleague.adobe.com/es/docs/commerce/user-guides/release-information/release-notes-all): nuevas características y funcionalidad entregadas independientemente de las versiones de parches. Por ejemplo, [B2B](https://experienceleague.adobe.com/es/docs/commerce-admin/b2b/release-notes), Servicio de catálogo, Conexión de datos, Live Search y Recomendaciones de productos.
+- ![Icono de características](../assets/icons/feature.svg) [**Características y funcionalidad**](https://experienceleague.adobe.com/en/docs/commerce/user-guides/release-information/release-notes-all): nuevas características y funcionalidad entregadas independientemente de las versiones de parches. Por ejemplo, [B2B](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes), Servicio de catálogo, Conexión de datos, Live Search y Recomendaciones de productos.
 
-- ![Icono de infraestructura](../assets/icons/servers.svg) [**Infraestructura en la nube**](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite): nuevas características y mejoras en Adobe Commerce en la infraestructura en la nube y en el conjunto de herramientas en la nube para paquetes de Commerce, que implementan y administran instalaciones y actualizaciones de Adobe Commerce en la plataforma en la nube.
+- ![Icono de infraestructura](../assets/icons/servers.svg) [**Infraestructura en la nube**](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-tools-suite): nuevas características y mejoras en Adobe Commerce en la infraestructura en la nube y en el conjunto de herramientas en la nube para paquetes de Commerce, que implementan y administran instalaciones y actualizaciones de Adobe Commerce en la plataforma en la nube.
 
 - ![Icono de extensibilidad](../assets/icons/brackets.svg) [**Extensibilidad**](https://developer.adobe.com/commerce/extensibility/): nuevas herramientas y servicios para desarrolladores para la extensibilidad fuera de proceso que se entregan independientemente de las versiones de parches. Por ejemplo, Integration Starter Kit, Admin UI, SDK, Adobe I/O Events para Commerce y API Mesh.
 
 La siguiente lista proporciona las fechas para las versiones programadas de la función, la infraestructura en la nube y la extensibilidad (las fechas están sujetas a cambios):
 
-- 13 de agosto de 2024
-- 8 de octubre de 2024
 - 11 de febrero de 2025
 - 8 de abril de 2025
 - 10 de junio de 2025
@@ -36,7 +34,7 @@ La siguiente lista proporciona las fechas para las versiones programadas de la f
 
 >[!NOTE]
 >
->Las versiones de funcionalidades, infraestructura en la nube y extensibilidad pueden variar a lo largo del año. Sin embargo, Adobe publica mejoras de forma regular y continua para estas áreas entre las fechas especificadas en esta página. Ver [¿Qué es Adobe Commerce?](https://experienceleague.adobe.com/es/docs/commerce-admin/start/about) para obtener más información sobre las últimas funciones.
+>Las versiones de funcionalidades, infraestructura en la nube y extensibilidad pueden variar a lo largo del año. Sin embargo, Adobe publica mejoras de forma regular y continua para estas áreas entre las fechas especificadas en esta página. Ver [¿Qué es Adobe Commerce?](https://business.adobe.com/products/magento/magento-commerce.html) para obtener más información sobre las últimas funciones.
 
 ## Parches
 
@@ -55,14 +53,6 @@ En la siguiente tabla se proporcionan las fechas para los lanzamientos de parche
 </thead>
 <tbody>
   <tr>
-  <tr>
-    <td>13 de agosto de 2024</td>
-    <td><img alt="Icono de revisión" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">Parches de seguridad</a>: 2.4.7-p2, 2.4.6-p7, 2.4.5-p9, 2.4.4-p10</td>
-  </tr>
-  <tr>
-    <td>8 de octubre de 2024</td>
-    <td><img alt="Icono de revisión" src="../assets/icons/file-code.svg"></img> <a href="versioning-policy.md#beta-patch-release">parche de Beta</a>: 2.4.8-beta1<br><img alt="Icono de revisión" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">Parches de seguridad</a>: 2.4.7-p3, 2.4.6-p8, 2.4.5-p10, 2.4.4-p11</td>
-  </tr>
   <tr>
     <td>11 de febrero de 2025</td>
     <td><img alt="Icono de revisión" src="../assets/icons/file-code.svg"></img> <a href="versioning-policy.md#beta-patch-release">parche de Beta</a>: 2.4.8-beta2<br><img alt="Icono de revisión" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">Parches de seguridad</a>: para 2.4.7, 2.4.6, 2.4.5 y 2.4.4</td>
