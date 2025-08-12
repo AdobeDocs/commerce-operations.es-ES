@@ -3,7 +3,7 @@ title: Configuración de la aplicación
 description: Obtenga información acerca de la configuración posterior a la instalación necesaria para las implementaciones locales de Adobe Commerce.
 feature: Install, Configuration
 exl-id: b1808664-10ec-4147-8251-a99f8b58f4be
-source-git-commit: a28dad04dac23075234a6ac3c2b362d125c9d981
+source-git-commit: a7c98879e027948fc887e28d4baa5fb04214ca95
 workflow-type: tm+mt
 source-wordcount: '713'
 ht-degree: 0%
@@ -26,7 +26,7 @@ Para obtener más información sobre cron, incluido cómo quitar un crontab y ej
 
 Después de la instalación, le recomendamos lo siguiente:
 
-* Asegúrese de que la propiedad y los permisos del archivo estén correctamente configurados
+* Asegúrese de que la propiedad y los permisos del archivo estén establecidos [correctamente](../prerequisites/file-system/configure-permissions.md)
 * Recomendamos [cambiar el URI de administrador predeterminado](../tutorials/admin-uri.md) de `admin` a otra cosa
 * Asegúrese de que el encabezado HTTP [`X-Frame-Option` ](../../configuration/security/xframe-options.md) esté configurado correctamente.
 * Tome precauciones contra los scripts entre sitios (XSS) al [proteger sus plantillas](https://developer.adobe.com/commerce/php/development/security/cross-site-scripting/)
@@ -65,7 +65,7 @@ Para obtener más información, vea una de las siguientes opciones:
 >
 >* Los entornos de inicio no tienen rotación de registro.
 >
->* No se puede configurar la rotación de registros en entornos Pro Integration. Debe implementar una solución o script personalizado y [configurar su cron](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property) para ejecutar el script según sea necesario.
+>* No se puede configurar la rotación de registros en entornos Pro Integration. Debe implementar una solución o script personalizado y [configurar su cron](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property) para ejecutar el script según sea necesario.
 
 ### Configure las reglas iptables para permitir que varios servicios se comuniquen
 
