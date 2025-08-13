@@ -1,18 +1,18 @@
 ---
-title: 'ACSD-66084: "row_total_incl_tax" devuelve un valor residual cercano a cero en lugar de 0,00 para los artículos con descuento total en la respuesta de API del pedido'
+title: 'ACSD-66084: "row_total_incl_tax" devuelve cerca de cero en lugar de 0,00 para artículos con descuento completo en la API de pedidos'
 description: Aplique el parche ACSD-66084 para corregir el problema de Adobe Commerce en el que row_total_incl_tax devuelve un valor residual cercano a cero en lugar de 0,00 para los artículos con descuento completo en la respuesta de API del pedido.
 feature: Orders, REST, Taxes, Payments, Checkout
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 01f7059e53590c4ff6602c41eb980ac7c141af33
+exl-id: 421c6fe6-b6b1-4f33-acb6-fbd4306bcc4c
+source-git-commit: 951738a4c671ed6fcc47b2a928d2110c78763d26
 workflow-type: tm+mt
-source-wordcount: '455'
+source-wordcount: '447'
 ht-degree: 0%
 
 ---
 
-
-# ACSD-66084: `row_total_incl_tax` devuelve un valor residual cercano a cero en lugar de 0,00 para artículos con descuento completo en la respuesta de API de pedidos
+# ACSD-66084: `row_total_incl_tax` devuelve casi cero en lugar de 0,00 para elementos con descuento completo en la API de pedidos
 
 El parche ACSD-66084 corrige el problema en el que `row_total_incl_tax` se devuelve como un valor residual cercano a cero en la respuesta de API de pedido en lugar de 0,00 para los artículos con descuento completo. Esta revisión está disponible cuando está instalado [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.67. El ID del parche es ACSD-66084. Este problema está programado para solucionarse en Adobe Commerce 2.4.9.
 
@@ -28,7 +28,7 @@ El parche ACSD-66084 corrige el problema en el que `row_total_incl_tax` se devue
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
@@ -61,7 +61,7 @@ Se devuelve `row_total_incl_tax` como un valor residual cercano a cero en la res
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
 * Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía [!DNL Quality Patches Tool].
-* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=es) en la guía Commerce en la infraestructura de la nube.
+* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) en la guía Commerce en la infraestructura de la nube.
 
 ## Lectura relacionada
 

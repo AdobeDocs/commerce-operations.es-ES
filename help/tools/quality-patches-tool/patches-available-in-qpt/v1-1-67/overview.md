@@ -4,9 +4,9 @@ description: Esta subsección proporciona una descripción detallada de los prob
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 47f6b57d-b945-4e77-8630-2df709a3469e
-source-git-commit: d025c8a6e451ff41ec4b50cf633927e52b9429f0
+source-git-commit: 951738a4c671ed6fcc47b2a928d2110c78763d26
 workflow-type: tm+mt
-source-wordcount: '185'
+source-wordcount: '181'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ QPT v1.1.67 incluye los siguientes parches:
 1. **AC-14984**: problema de conexión SSL con php-amqplib/php-amqplib ^3.2.0.
 1. **ACSD-65935**: `customerOrders` La consulta de GraphQL devolvió un error interno del servidor cuando se eliminó un producto.
 1. **ACSD-66049**: las tiendas que no están en inglés muestran precios incorrectos debido a la versión de la biblioteca de la ICU.
-1. **ACSD-66084**: `row_total_incl_tax` devuelve un valor residual cercano a cero en lugar de 0,00 para artículos con descuento total en la respuesta de API de pedidos.
+1. **ACSD-66084**: `row_total_incl_tax` devuelve casi cero en lugar de 0,00 para artículos con descuento completo en la API de pedidos.
 1. **ACSD-66118**: al actualizar el código de **[!UICONTROL Store View]** se borra la configuración de **[!UICONTROL Design Configuration]** si no se ha actualizado la caché de configuración.
 1. **ACSD-66139**: GraphQL devuelve un error UNDEFINED para un carro de compras inexistente o inactivo durante la realización del pedido.
 1. **ACSD-66301**: al mover productos de un pedido al carro de compras en el administrador de Commerce, la cantidad no coincide.
