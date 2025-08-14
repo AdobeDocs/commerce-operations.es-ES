@@ -2,9 +2,9 @@
 title: referencia env.php
 description: Vea una lista de valores para el archivo env.php.
 exl-id: cf02da8f-e0de-4f0e-bab6-67ae02e9166f
-source-git-commit: 3f46ee08bb4edc08775bf986804772b88ca35f45
+source-git-commit: 26fac37405ad635f297b65415517451d5149e50f
 workflow-type: tm+mt
-source-wordcount: '944'
+source-wordcount: '1008'
 ht-degree: 0%
 
 ---
@@ -146,7 +146,7 @@ Commerce utiliza una clave de cifrado para proteger contraseñas y otros datos c
 ]
 ```
 
-Obtenga más información acerca de la [clave de cifrado](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/security/encryption-key) en la _guía del usuario de Commerce_.
+Obtenga más información acerca de la [clave de cifrado](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/encryption-key) en la _guía del usuario de Commerce_.
 
 ## db
 
@@ -203,7 +203,7 @@ Una lista de dominios descargables disponibles en este nodo. Se pueden agregar, 
 ]
 ```
 
-Más información sobre [Dominios descargables](https://experienceleague.adobe.com/es/docs/commerce-operations/tools/cli-reference/commerce-on-premises#downloadabledomainsadd).
+Más información sobre [Dominios descargables](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#downloadabledomainsadd).
 
 ## instalar
 
@@ -347,6 +347,12 @@ export MAGENTO_DC_X-FRAME-OPTIONS=SAMEORIGIN
 ## Anular la configuración del archivo con variables
 
 Para anular las opciones de configuración de `env.php` existentes con una variable de entorno de sistema operativo, el elemento de matriz de la configuración debe estar codificado en JSON y establecerse como un valor de la variable de sistema operativo `MAGENTO_DC__OVERRIDE`.
+
+Cuando se establece `MAGENTO_DC__OVERRIDE`, el marco de trabajo de Commerce omite los valores correspondientes del archivo `env.php` y lee la configuración directamente desde la variable de entorno. Los valores del archivo `env.php` permanecen inalterados, pero se omiten para las secciones de configuración anuladas.
+
+>[!IMPORTANT]
+>
+>La variable `MAGENTO_DC__OVERRIDE` omite completamente las secciones de configuración especificadas en el archivo `env.php`. Este comportamiento es diferente de las variables `MAGENTO_DC_` individuales, que tienen una prioridad menor que los valores del archivo `env.php`.
 
 Si necesita anular varias opciones de configuración, asígnelas todas en una sola matriz antes de la codificación JSON.
 
