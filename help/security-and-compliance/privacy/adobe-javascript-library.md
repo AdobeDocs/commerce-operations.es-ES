@@ -1,5 +1,5 @@
 ---
-title: Adobe Privacidad Biblioteca de JavaScript
+title: Biblioteca JavaScript de privacidad de Adobe
 description: Aprenda a utilizar herramientas personalizadas para acceder a información personal de los clientes y eliminarla, recopilada por Adobe Commerce.
 hide: true
 hidefromtoc: true
@@ -11,11 +11,11 @@ ht-degree: 0%
 
 ---
 
-# Adobe Privacidad Biblioteca de JavaScript
+# Biblioteca JavaScript de privacidad de Adobe
 
 <!-- TODO: Remove hide metadata when the library has been integrated with Commerce. -->
 
-La [Biblioteca JavaScript de privacidad de Adobe](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html?lang=es) es un conjunto de herramientas que ayudan a crear un proceso para obtener acceso a datos privados y eliminarlos.
+La [Biblioteca JavaScript de privacidad de Adobe](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html) es un conjunto de herramientas que ayudan a crear un proceso para obtener acceso a datos privados y eliminarlos.
 
 Los servicios de seguimiento de datos de Adobe Commerce pueden almacenar información privada que sea aplicable a ciertas normas de privacidad, tales como el [Reglamento General de Protección de Datos (RGPD)](gdpr.md) y la [Ley de Privacidad del Consumidor de California (CCPA)](ccpa.md).
 
@@ -43,7 +43,7 @@ La biblioteca JS de privacidad de Adobe proporciona varias funciones para admini
 `retrieveThenRemoveIdentities()`
 : Esta función es similar a `removeIdentities()` en el sentido de que recupera una matriz de identidades y las elimina del explorador.
 
-Para obtener más información y ejemplos sobre el uso de estas funciones, consulte la [documentación oficial de la biblioteca](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html?lang=es).
+Para obtener más información y ejemplos sobre el uso de estas funciones, consulte la [documentación oficial de la biblioteca](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html).
 
 ### Inicialización
 
@@ -54,4 +54,4 @@ var adobePrivacy = new AdobePrivacy({});
 ```
 
 El constructor acepta un objeto de configuración con parámetros durante la creación de instancias.
-Consulte la [documentación oficial de la biblioteca](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html?lang=es) para obtener una lista de estos parámetros de configuración.
+Consulte la [documentación oficial de la biblioteca](https://experienceleague.adobe.com/docs/experience-platform/privacy/js-library.html) para obtener una lista de estos parámetros de configuración.

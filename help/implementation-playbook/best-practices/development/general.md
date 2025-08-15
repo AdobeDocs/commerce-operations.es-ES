@@ -19,7 +19,7 @@ En este tema se describe la línea de base para un proceso de desarrollo de Adob
 >
 >Los arquitectos técnicos de Adobe utilizan estas prácticas recomendadas como referencia durante las contrataciones que implican desarrollo.
 
-Estas prácticas recomendadas se han desarrollado sobre la base de años de experiencia en el desarrollo y la entrega de proyectos de Commerce. El Adobe recomienda que las iniciativas técnicas sigan estas prácticas recomendadas y que mejore los procesos y el código existentes para alinearse con ellos.
+Estas prácticas recomendadas se han desarrollado sobre la base de años de experiencia en el desarrollo y la entrega de proyectos de Commerce. Adobe recomienda que las iniciativas técnicas sigan estas prácticas recomendadas y que mejore los procesos y el código existentes para alinearse con ellos.
 
 ## Convenciones de texto
 

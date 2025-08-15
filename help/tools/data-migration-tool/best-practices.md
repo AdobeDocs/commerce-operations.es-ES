@@ -15,9 +15,9 @@ ht-degree: 0%
 
 En esta sección se proporcionan recomendaciones recomendadas para acelerar y simplificar la migración, así como instrucciones sobre la cantidad de tiempo que puede tardar.
 
-* **Use una copia de la base de datos de una instancia de Magento 1** al realizar las pruebas de migración. No utilice la instancia de producción de la base de datos del almacén de Magento 1.
+* **Use una copia de la base de datos de una instancia de Magento 1** al realizar las pruebas de migración. No utilice la instancia de producción de la base de datos de la tienda Magento 1.
 
-* **Elimine datos redundantes y obsoletos** de la base de datos de Magento 1 antes de la migración.
+* **Elimine los datos redundantes y obsoletos** de la base de datos de Magento 1 antes de la migración.
 
 Estos datos pueden incluir registros, presupuestos de pedidos, productos vistos o comparados recientemente, visitantes, categorías específicas de eventos y reglas promocionales.
 
@@ -31,11 +31,11 @@ Estos datos pueden incluir registros, presupuestos de pedidos, productos vistos 
 
 >[!NOTE]
 >
->Las bases de datos de Magento 1 y Magento 2 deben estar ubicadas en el mismo servidor MySQL y la cuenta de la base de datos debe tener acceso a ambas.
+>Las bases de datos Magento 1 y Magento 2 deben estar ubicadas en el mismo servidor MySQL y la cuenta de la base de datos debe tener acceso a ambas.
 
 ## Estimaciones comparativas
 
-El Adobe ha probado la migración de datos en el siguiente sistema:
+Adobe ha probado la migración de datos en el siguiente sistema:
 
 * Virtual Box VM, CentOS 6, 2,5 GB de RAM, CPU 1 núcleo a 2,6 GHz
 * Base de datos con 177 000 productos, 355 000 pedidos y 214 000 clientes

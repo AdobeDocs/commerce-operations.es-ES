@@ -18,13 +18,13 @@ La ficha [!UICONTROL Alerts] proporciona una serie de alertas, incluidas las ale
 
 ![Abrir alertas críticas](../../assets/tools/observation-for-adobe-commerce/alerts-tab-1.jpg)
 
-El fotograma **[!UICONTROL Open Alert Details]** muestra un recuento de las alertas críticas abiertas en el periodo de tiempo seleccionado. Las alertas incluyen las creadas por Adobes y las creadas por el socio o el comerciante.
+El fotograma **[!UICONTROL Open Alert Details]** muestra un recuento de las alertas críticas abiertas en el periodo de tiempo seleccionado. Las alertas incluyen las alertas creadas por Adobe y todas las creadas por el socio o el comerciante.
 
 ## [!UICONTROL Closed Critical Alerts]
 
 ![Alertas críticas cerradas](../../assets/tools/observation-for-adobe-commerce/alerts-tab-2.jpg)
 
-El fotograma **[!UICONTROL Closed Critical Alerts]** muestra un recuento de las alertas críticas cerradas en el periodo de tiempo seleccionado. Las alertas incluyen las creadas por Adobes y las creadas por el socio o el comerciante.
+El fotograma **[!UICONTROL Closed Critical Alerts]** muestra un recuento de las alertas críticas cerradas en el periodo de tiempo seleccionado. Las alertas incluyen las alertas creadas por Adobe y todas las creadas por el socio o el comerciante.
 
 ## [!UICONTROL Critical Alert Details]
 

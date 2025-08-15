@@ -4,7 +4,7 @@ description: Siga estos pasos para instalar Adobe Commerce en la infraestructura
 exl-id: 25f3c56e-0654-4f8b-a69d-f4152f68aca3
 source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
-source-wordcount: '2094'
+source-wordcount: '2093'
 ht-degree: 0%
 
 ---
@@ -123,7 +123,7 @@ En la versión 2.2.8 y posteriores de Adobe Commerce, puede crear el usuario adm
 
 | Nombre | Valor | ¿Requerido? |
 |--- |--- |--- |
-| `--search-engine` | La versión del motor de búsqueda. Los valores posibles son `elasticsearch7`, `elasticsearch6` y `elasticsearch5`. El valor predeterminado es `elasticsearch7`. Si ha instalado OpenSearch como motor de búsqueda, especifique el valor `elasticsearch7`. El Elasticsearch 5 se ha desaprobado y no se recomienda. | No |
+| `--search-engine` | La versión del motor de búsqueda. Los valores posibles son `elasticsearch7`, `elasticsearch6` y `elasticsearch5`. El valor predeterminado es `elasticsearch7`. Si ha instalado OpenSearch como motor de búsqueda, especifique el valor `elasticsearch7`. Elasticsearch 5 se ha desaprobado y no se recomienda. | No |
 | `--elasticsearch-host` | El nombre de host o la dirección IP donde se está ejecutando el motor de búsqueda. El valor predeterminado es `localhost`. | No |
 | `--elasticsearch-port` | El puerto para las solicitudes HTTP entrantes. El valor predeterminado es `9200`. | No |
 | `--elasticsearch-index-prefix` | Prefijo que identifica el índice de búsqueda. El valor predeterminado es `magento2`. | No |

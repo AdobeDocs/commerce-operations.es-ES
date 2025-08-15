@@ -62,7 +62,7 @@ Para completar este tutorial, necesita acceder a una instalación en funcionamie
 >
 >Consulte [Requisitos previos](../prerequisites/overview.md) y la [Guía de instalación](../overview.md) para obtener más información.
 
-## 1. Edite la configuración del servidor
+## &#x200B;1. Edite la configuración del servidor
 
 El nombre y la ubicación del archivo host virtual dependen de la versión de Apache que esté ejecutando. Este ejemplo muestra el nombre y la ubicación del archivo host virtual en Apache v2.4.
 
@@ -96,7 +96,7 @@ El nombre y la ubicación del archivo host virtual dependen de la versión de Ap
    systemctl restart apache2
    ```
 
-## 2. Actualice la dirección URL base
+## &#x200B;2. Actualice la dirección URL base
 
 Si agregó un nombre de directorio al nombre de host o la dirección IP del servidor para crear la dirección URL base al instalar la aplicación (por ejemplo, `http://192.168.33.10/magento2`), debe quitarla.
 
@@ -122,7 +122,7 @@ Si agregó un nombre de directorio al nombre de host o la dirección IP del serv
    UPDATE core_config_data SET value='http://192.168.33.10' WHERE path='web/unsecure/base_url';
    ```
 
-## 3. Actualice el archivo env.php
+## &#x200B;3. Actualice el archivo env.php
 
 Anexe el siguiente nodo al archivo `env.php`.
 
@@ -134,7 +134,7 @@ Anexe el siguiente nodo al archivo `env.php`.
 
 Consulte la [referencia env.php](../../configuration/reference/config-reference-envphp.md) para obtener más información.
 
-## 4. Cambiar de modo
+## &#x200B;4. Cambiar de modo
 
 [Los modos de aplicación](../../configuration/bootstrap/application-modes.md), que incluyen `production` y `developer`, están diseñados para mejorar la seguridad y facilitar el desarrollo. Como sugieren los nombres, debe cambiar al modo `developer` al ampliar o personalizar la aplicación y cambiar al modo `production` cuando se ejecute en un entorno activo.
 
@@ -164,7 +164,7 @@ Cambiar entre modos es un paso importante para comprobar que la configuración d
 
 1. Actualice el explorador y compruebe que la tienda se muestra correctamente.
 
-## 5. Verificar la tienda
+## &#x200B;5. Verificar la tienda
 
 Vaya a la tienda en un navegador web para comprobar que todo funciona.
 

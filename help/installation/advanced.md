@@ -4,7 +4,7 @@ description: Obtenga información acerca de los escenarios de instalación avanz
 exl-id: e16e750a-e068-4a63-8ad9-62043e2a8231
 source-git-commit: 79c8a15fb9686dd26d73805e9d0fd18bb987770d
 workflow-type: tm+mt
-source-wordcount: '2314'
+source-wordcount: '2313'
 ht-degree: 0%
 
 ---
@@ -119,7 +119,7 @@ Las siguientes opciones especifican la información de usuario y las credenciale
 
 Puede crear el usuario Administrador durante o después de la instalación. Si crea el usuario durante la instalación, se requieren todas las variables de credenciales de administrador. Consulte [Ejemplos de instalaciones de localhost](#sample-localhost-installations).
 
-Las siguientes tablas proporcionan muchos parámetros de instalación disponibles, pero no todos. Para obtener una lista completa, consulte [Referencia de herramientas de la línea de comandos](https://experienceleague.adobe.com/es/docs/commerce-operations/tools/cli-reference/commerce-on-premises).
+Las siguientes tablas proporcionan muchos parámetros de instalación disponibles, pero no todos. Para obtener una lista completa, consulte [Referencia de herramientas de la línea de comandos](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises).
 
 | Nombre | Valor | ¿Requerido? |
 |--- |--- |--- |
@@ -161,12 +161,12 @@ Las siguientes tablas proporcionan muchos parámetros de instalación disponible
 
 | Nombre | Valor | ¿Requerido? |
 |--- |--- |--- |
-| `--search-engine` | La versión de Elasticsearch o OpenSearch que se utilizará como motor de búsqueda. El valor predeterminado es `elasticsearch7`. El Elasticsearch 5 se ha desaprobado y no se recomienda. | No |
-| `--elasticsearch-host` | El nombre de host o la dirección IP donde se está ejecutando el Elasticsearch. El valor predeterminado es `localhost`. | No |
+| `--search-engine` | La versión de Elasticsearch o OpenSearch que se utilizará como motor de búsqueda. El valor predeterminado es `elasticsearch7`. Elasticsearch 5 se ha desaprobado y no se recomienda. | No |
+| `--elasticsearch-host` | El nombre de host o la dirección IP donde se ejecuta Elasticsearch. El valor predeterminado es `localhost`. | No |
 | `--elasticsearch-port` | El puerto Elasticsearch para solicitudes HTTP entrantes. El valor predeterminado es `9200`. | No |
-| `--elasticsearch-index-prefix` | Prefijo que identifica el índice de búsqueda del Elasticsearch. El valor predeterminado es `magento2`. | No |
+| `--elasticsearch-index-prefix` | Prefijo que identifica el índice de búsqueda de Elasticsearch. El valor predeterminado es `magento2`. | No |
 | `--elasticsearch-timeout` | El número de segundos antes de que se agote el tiempo de espera del sistema. El valor predeterminado es `15`. | No |
-| `--elasticsearch-enable-auth` | Habilita la autenticación en el servidor del Elasticsearch. El valor predeterminado es `false`. | No |
+| `--elasticsearch-enable-auth` | Habilita la autenticación en el servidor de Elasticsearch. El valor predeterminado es `false`. | No |
 | `--elasticsearch-username` | El ID de usuario para autenticarse en el servidor de Elasticsearch. | No, a menos que la autenticación esté habilitada |
 | `--elasticsearch-password` | Contraseña para autenticarse en el servidor de Elasticsearchserver. | No, a menos que la autenticación esté habilitada |
 | `--opensearch-host` | Nombre de host o dirección IP donde se está ejecutando OpenSearch. El valor predeterminado es `localhost`. | No |

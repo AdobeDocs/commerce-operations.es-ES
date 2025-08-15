@@ -1,5 +1,5 @@
 ---
-title: paquetes de Magento Open Source
+title: Paquetes de Magento Open Source
 description: Obtenga información acerca de todas las dependencias y licencias de terceros utilizadas en Magento Open Source.
 recommendations: noCatalog
 exl-id: 41f875af-9d65-4d4f-af5c-6ad887eeaf0d

@@ -32,10 +32,10 @@ La deshabilitación de Output se realiza en las siguientes clases:
 
 Para deshabilitar los resultados de los módulos en la implementación de la canalización o en cualquier otra implementación, con varias instancias de la aplicación de Commerce:
 
-1. Edite el archivo `config.xml` del módulo `Backend`.
+1. Edite el archivo `Backend` del módulo `config.xml`.
 1. Exporte los cambios de configuración.
 
-### Editar el archivo `config.xml` del módulo `Backend`
+### Editar el archivo `Backend` del módulo `config.xml`
 
 1. Archivar el archivo `config.xml` original.
 1. Agregue líneas similares a las siguientes al archivo `<Magento_install_dir>/vendor/magento/module-backend/etc/config.xml`, directamente debajo del elemento `<default>`:

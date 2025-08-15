@@ -13,7 +13,7 @@ ht-degree: 0%
 
 A veces puede que desee alojar la base de datos en un servidor independiente en lugar de ejecutar el servidor de base de datos y el servidor web en el mismo equipo.
 
-El Adobe ha proporcionado una forma de conectarse a un servidor MySQL en un equipo diferente. A partir de Adobe Commerce 2.4.3, también puede configurar la aplicación para que utilice una base de datos de Amazon Web Service (AWS) Aurora sin cambios de código.
+Adobe ha proporcionado una forma de conectarse a un servidor MySQL en un equipo diferente. A partir de Adobe Commerce 2.4.3, también puede configurar la aplicación para que utilice una base de datos de Amazon Web Service (AWS) Aurora sin cambios de código.
 
 Aurora es un servidor MySQL totalmente compatible y de alto rendimiento alojado en AWS.
 
@@ -48,7 +48,7 @@ Antes de empezar, debe:
 Siga estas directrices para configurar conexiones a bases de datos remotas si el servidor web o de base de datos está en clúster:
 
 * Debe configurar una conexión para cada nodo de servidor web.
-* Normalmente, se configura una conexión de base de datos con el equilibrador de carga de base de datos; sin embargo, la agrupación en clúster de base de datos puede ser compleja y su configuración depende de usted. El Adobe no realiza recomendaciones específicas para la agrupación en clúster de bases de datos.
+* Normalmente, se configura una conexión de base de datos con el equilibrador de carga de base de datos; sin embargo, la agrupación en clúster de base de datos puede ser compleja y su configuración depende de usted. Adobe no realiza recomendaciones específicas para la agrupación en clúster de bases de datos.
 
   Para obtener más información, consulte [Documentación de MySQL](https://dev.mysql.com/doc/refman/5.6/en/mysql-cluster.html).
 

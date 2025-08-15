@@ -19,7 +19,7 @@ Puede actualizar _implementaciones locales_ de la aplicación Adobe Commerce des
 
 >[!NOTE]
 >
->- Para Adobe Commerce sobre proyectos de infraestructura en la nube, consulte [Actualizar la versión de Commerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version.html?lang=es) en la Guía de la nube.
+>- Para Adobe Commerce sobre proyectos de infraestructura en la nube, consulte [Actualizar la versión de Commerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version.html) en la Guía de la nube.
 >- No utilice este método para actualizar si ha clonado el repositorio de GitHub. Consulte [Actualizar una instalación basada en Git](../developer/git-installs.md).
 
 Las siguientes instrucciones muestran cómo realizar la actualización mediante el Administrador de paquetes del Compositor. Adobe Commerce 2.4.2 ha introducido la compatibilidad con Composer 2. Si intenta actualizar desde &lt;2.4.1, primero debe actualizar a una versión compatible con Composer 2 (por ejemplo, 2.4.2) mediante Composer 1 _antes de_ actualizar a Composer 2 para actualizaciones >2.4.2. Además, debe ejecutar una [versión compatible](../../installation/system-requirements.md) de PHP.
@@ -48,13 +48,13 @@ Debe completar los [requisitos previos de actualización](../prepare/prerequisit
 
 1. Iniciar el proceso de actualización mientras se ejecutan procesos asincrónicos, como los consumidores de cola de mensajes, puede dañar los datos. Para evitar que se dañen los datos, deshabilite todos los trabajos cron.
 
-   _Adobe Commerce en la infraestructura en la nube:_
+   _Adobe Commerce en infraestructura en la nube :_
 
    ```bash
    ./vendor/bin/ece-tools cron:disable
    ```
 
-   _Magento Open Source:_
+   _Magento Open Source :_
 
    ```bash
    bin/magento cron:remove
@@ -88,13 +88,13 @@ Debe completar los [requisitos previos de actualización](../prepare/prerequisit
    composer require <sample data module-1>:<version> ... <sample data module-n>:<version> --no-update
    ```
 
-   - _Adobe Commerce:_
+   - _Adobe Commerce :_
 
      ```bash
      composer require magento/module-bundle-sample-data:100.4.* magento/module-widget-sample-data:100.4.* magento/module-theme-sample-data:100.4.* magento/module-catalog-sample-data:100.4.* magento/module-customer-sample-data:100.4.* magento/module-cms-sample-data:100.4.*  magento/module-catalog-rule-sample-data:100.4.* magento/module-sales-rule-sample-data:100.4.* magento/module-review-sample-data:100.4.* magento/module-tax-sample-data:100.4.* magento/module-sales-sample-data:100.4.* magento/module-grouped-product-sample-data:100.4.* magento/module-downloadable-sample-data:100.4.* magento/module-msrp-sample-data:100.4.* magento/module-configurable-sample-data:100.4.* magento/module-product-links-sample-data:100.4.* magento/module-wishlist-sample-data:100.4.* magento/module-swatches-sample-data:100.4.* magento/sample-data-media:100.4.* magento/module-offline-shipping-sample-data:100.4.* magento/module-gift-card-sample-data:100.4.* magento/module-customer-balance-sample-data:100.4.* magento/module-target-rule-sample-data:100.4.* magento/module-gift-registry-sample-data:100.4.* magento/module-multiple-wishlist-sample-data:100.4.* --no-update
      ```
 
-   - _Magento Open Source:_
+   - _Magento Open Source :_
 
      ```bash
      composer require magento/module-bundle-sample-data:100.4.* magento/module-widget-sample-data:100.4.* magento/module-theme-sample-data:100.4.* magento/module-catalog-sample-data:100.4.* magento/module-customer-sample-data:100.4.* magento/module-cms-sample-data:100.4.*  magento/module-catalog-rule-sample-data:100.4.* magento/module-sales-rule-sample-data:100.4.* magento/module-review-sample-data:100.4.* magento/module-tax-sample-data:100.4.* magento/module-sales-sample-data:100.4.* magento/module-grouped-product-sample-data:100.4.* magento/module-downloadable-sample-data:100.4.* magento/module-msrp-sample-data:100.4.* magento/module-configurable-sample-data:100.4.* magento/module-product-links-sample-data:100.4.* magento/module-wishlist-sample-data:100.4.* magento/module-swatches-sample-data:100.4.* magento/sample-data-media:100.4.* magento/module-offline-shipping-sample-data:100.4.* --no-update
@@ -234,7 +234,7 @@ Para comprobar si la actualización se ha realizado correctamente, abra la direc
 
 Si la aplicación falla con un error `We're sorry, an error has occurred while generating this email.`:
 
-1. Restablecer la propiedad y los permisos del sistema de archivos [como usuario con privilegios de `root`.](../../installation/prerequisites/file-system/configure-permissions.md)
+1. Restablecer la propiedad y los permisos del sistema de archivos [como usuario con privilegios de ](../../installation/prerequisites/file-system/configure-permissions.md).`root`
 1. Borre los siguientes directorios:
    - `var/cache/`
    - `var/page_cache/`

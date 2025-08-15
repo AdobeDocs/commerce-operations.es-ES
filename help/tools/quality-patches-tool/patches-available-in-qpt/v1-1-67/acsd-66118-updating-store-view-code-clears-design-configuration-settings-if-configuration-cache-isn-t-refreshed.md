@@ -4,13 +4,13 @@ description: Aplique el parche ACSD-66118 para solucionar el problema de Adobe C
 feature: Cache, Configuration, Themes
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: ef4d6e420f304b0229c54c8ec7bd5500039bcb6b
+exl-id: ecfdff54-99e0-4dbe-a0bb-80f60aafc7b6
+source-git-commit: 468c780f355c99cf06d557e530e81c414a01961e
 workflow-type: tm+mt
 source-wordcount: '328'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-66118: al actualizar **[!UICONTROL Store View Code]**, se borra la configuración de **[!UICONTROL Design Configuration]** si **[!UICONTROL Configuration Cache]** no se actualiza
 
@@ -28,7 +28,7 @@ La revisión ACSD-66118 corrige el problema en el cual al actualizar **[!UICONTR
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
@@ -56,7 +56,7 @@ Se ha borrado **[!UICONTROL Design Configuration]**. La temática vuelve a los v
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
 * Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía [!DNL Quality Patches Tool].
-* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=es) en la guía Commerce en la infraestructura de la nube.
+* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) en la guía Commerce en la infraestructura de la nube.
 
 ## Lectura relacionada
 

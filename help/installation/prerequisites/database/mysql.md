@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Consulte [Requisitos del sistema](../../system-requirements.md) para ver las versiones compatibles de MySQL.
 
-El Adobe _strong_ recomienda que cumpla el estándar siguiente al configurar la base de datos:
+Adobe _recomienda encarecidamente_ que observe el estándar siguiente al configurar la base de datos:
 
 * Adobe Commerce usa [déclencheur de base de datos MySQL](https://dev.mysql.com/doc/refman/8.0/en/triggers.html) para mejorar el acceso a la base de datos durante la reindexación. Estas se crean cuando el modo de indizador se establece en [schedule](../../../configuration/cli/manage-indexers.md#configure-indexers). La aplicación no admite ningún déclencheur personalizado en la base de datos porque los déclencheur personalizados pueden producir incompatibilidades con versiones futuras de Adobe Commerce.
 * Familiarícese con [estas posibles limitaciones de déclencheur de MySQL](https://dev.mysql.com/doc/mysql-reslimits-excerpt/8.0/en/stored-program-restrictions.html) antes de continuar.

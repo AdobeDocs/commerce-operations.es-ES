@@ -13,17 +13,17 @@ ht-degree: 0%
 
 Las instrucciones de esta página describen cómo instalar Adobe Commerce en una infraestructura autoalojada. Para obtener instrucciones sobre cómo actualizar una instalación existente, consulte la [_Guía de actualización_](../upgrade/overview.md).
 
-El Adobe usa [Composer](https://getcomposer.org/) para administrar los componentes de Adobe Commerce y sus dependencias. Usar Composer para obtener el metapaquete de Adobe Commerce ofrece las siguientes ventajas:
+Adobe usa [Composer](https://getcomposer.org/) para administrar los componentes de Adobe Commerce y sus dependencias. Usar Composer para obtener el metapaquete de Adobe Commerce ofrece las siguientes ventajas:
 
 - Reutilice bibliotecas de terceros sin agruparlas con el código fuente
 - Reduzca los conflictos de extensiones y los problemas de compatibilidad utilizando una arquitectura basada en componentes con una sólida administración de dependencias
 - Adherirse a los estándares [FIG (Grupo de Interoperabilidad PHP-Framework)](https://www.php-fig.org/)
-- Volver a empaquetar el Magento Open Source con otros componentes
+- Volver a empaquetar Magento Open Source con otros componentes
 - Uso del software de Adobe Commerce en un entorno de producción
 
 >[!NOTE]
 >
->Los desarrolladores que contribuyen a Magento Open Source deben usar el método de instalación [basado en Git](https://developer.adobe.com/commerce/contributor/guides/install/).
+>Los desarrolladores que contribuyan a Magento Open Source deberían usar el método de instalación [basado en Git](https://developer.adobe.com/commerce/contributor/guides/install/).
 
 ## Requisitos previos
 
@@ -89,11 +89,11 @@ Para obtener el metapaquete de Adobe Commerce:
    composer create-project --repository-url=https://repo.magento.com/ magento/project-enterprise-edition <install-directory-name>
    ```
 
-   Cuando se le solicite, introduzca sus claves de autenticación. Se crean y configuran claves públicas y privadas desde el Commerce Marketplace [Claves de acceso](https://commercemarketplace.adobe.com/customer/account/login/). Para `[!UICONTROL username]`, copie y pegue el valor de clave pública. Para `[!UICONTROL password]`, copie y pegue el valor de clave privada.
+   Cuando se le solicite, introduzca sus claves de autenticación. Las claves pública y privada se crean y configuran desde [Commerce Marketplace - Claves de acceso](https://commercemarketplace.adobe.com/customer/account/login/). Para `[!UICONTROL username]`, copie y pegue el valor de clave pública. Para `[!UICONTROL password]`, copie y pegue el valor de clave privada.
 
    >[!NOTE]
    >
-   > Si usa un archivo del Compositor `[auth.json](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/develop/authentication-keys)` o una variable de entorno configurada con las claves de autenticación de Commerce, no se le pedirá que especifique las claves de autenticación.
+   > Si usa un archivo del Compositor `[auth.json](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/authentication-keys)` o una variable de entorno configurada con las claves de autenticación de Commerce, no se le pedirá que especifique las claves de autenticación.
 
    Si encuentra errores, como `Could not find package...` o `...no matching package found`, asegúrese de que no haya errores tipográficos en el comando. Si sigue encontrando errores, es posible que no tenga autorización para descargar Adobe Commerce. Póngase en contacto con el [Soporte técnico de Adobe Commerce](https://support.magento.com/hc/en-us) para obtener ayuda.
 

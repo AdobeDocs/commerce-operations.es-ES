@@ -144,14 +144,14 @@ Estos valores de configuración están disponibles en el Administrador de **Tien
 | Contraseña del servidor Solr | `catalog/search/solr_server_password` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) | | ![Específico del sistema](/help/assets/configuration/cloud-env.png) | ![Sensible](/help/assets/configuration/cloud-sens.png) |
 | Ruta del servidor Solr | `catalog/search/solr_server_path` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) | | ![Específico del sistema](/help/assets/configuration/cloud-env.png) | ![Sensible](/help/assets/configuration/cloud-sens.png) |
 | Nombre de host del servidor Elasticsearch | `catalog/search/elasticsearch_server_hostname` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | ![Específico del sistema](/help/assets/configuration/cloud-env.png) | ![Sensible](/help/assets/configuration/cloud-sens.png) |
-| Puerto del servidor Elasticsearch | `catalog/search/elasticsearch_server_port` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | ![Específico del sistema](/help/assets/configuration/cloud-env.png) | ![Sensible](/help/assets/configuration/cloud-sens.png) |
+| Puerto del servidor de Elasticsearch | `catalog/search/elasticsearch_server_port` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | ![Específico del sistema](/help/assets/configuration/cloud-env.png) | ![Sensible](/help/assets/configuration/cloud-sens.png) |
 | Prefijo de índice de Elasticsearch | `catalog/search/elasticsearch_index_prefix` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | ![Específico del sistema](/help/assets/configuration/cloud-env.png) | ![Sensible](/help/assets/configuration/cloud-sens.png) |
 | Habilitar autenticación HTTP de Elasticsearch | `catalog/search/elasticsearch_enable_auth` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | ![Específico del sistema](/help/assets/configuration/cloud-env.png) |
-| Nombre de usuario HTTP del Elasticsearch | `catalog/search/elasticsearch_username` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | ![Específico del sistema](/help/assets/configuration/cloud-env.png) |
-| Contraseña HTTP del Elasticsearch | `catalog/search/elasticsearch_password` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | ![Específico del sistema](/help/assets/configuration/cloud-env.png) |
+| Nombre de usuario HTTP de Elasticsearch | `catalog/search/elasticsearch_username` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | ![Específico del sistema](/help/assets/configuration/cloud-env.png) |
+| Contraseña HTTP de Elasticsearch | `catalog/search/elasticsearch_password` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | ![Específico del sistema](/help/assets/configuration/cloud-env.png) |
 | Tiempo de espera del servidor Elasticsearch | `catalog/search/elasticsearch_server_timeout` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | | ![Específico del sistema](/help/assets/configuration/cloud-env.png) |
-| Nombre de usuario HTTP del Elasticsearch | `catalog/search/elasticsearch_username` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | ![Específico del sistema](/help/assets/configuration/cloud-env.png) |
-| Contraseña HTTP del Elasticsearch | `catalog/search/elasticsearch_password` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | ![Específico del sistema](/help/assets/configuration/cloud-env.png) |
+| Nombre de usuario HTTP de Elasticsearch | `catalog/search/elasticsearch_username` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | ![Específico del sistema](/help/assets/configuration/cloud-env.png) |
+| Contraseña HTTP de Elasticsearch | `catalog/search/elasticsearch_password` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | ![Específico del sistema](/help/assets/configuration/cloud-env.png) |
 | Tiempo de espera del servidor Elasticsearch | `catalog/search/elasticsearch_server_timeout` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | ![Específico del sistema](/help/assets/configuration/cloud-env.png) |
 | Nombre del servidor OpenSearch | `catalog/search/opensearch_server_hostname` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | ![Específico del sistema](/help/assets/configuration/cloud-env.png) | ![Sensible](/help/assets/configuration/cloud-sens.png) |
 | Puerto de servidor OpenSearch | `catalog/search/opensearch_server_port` | <!-- ![Not EE-only](/help/assets/configuration/red-x.png) --> | | ![Específico del sistema](/help/assets/configuration/cloud-env.png) | ![Sensible](/help/assets/configuration/cloud-sens.png) |
@@ -464,7 +464,7 @@ Esta sección enumera los nombres de las variables y las rutas de configuración
 
 {style="table-layout:auto"}
 
-### Rutas sensibles al Braintree y específicas del sistema
+### Rutas sensibles y específicas del sistema de Braintree
 
 | Nombre | Ruta de configuración | ¿Solo Commerce? | ¿Cifrado? | ¿Específico del sistema? | ¿Sensible? |
 |--------------|--------------|--------------|--------------|--------------|--------------|

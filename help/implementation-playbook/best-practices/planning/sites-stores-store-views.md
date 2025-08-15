@@ -28,7 +28,7 @@ Si el proyecto requiere muchos sitios, tiendas o vistas de tiendas, puede utiliz
 
 - Reestructurar el catálogo cambiando la lógica a las categorías
 - Separe las listas de precios de los datos del catálogo mediante un sistema de gestión de precios (PMS) y un precio externo.
-- Usar un almacenamiento de datos alternativo no SQL como Elasticsearch
+- Uso de un almacenamiento de datos no SQL alternativo como Elasticsearch
 
 ## Impactos potenciales en el rendimiento
 
@@ -41,5 +41,5 @@ Los sitios web y las tiendas son multiplicadores de los datos del catálogo, por
 
 ## Más información
 
-- [Explicación de sitios web, tiendas y vistas de tiendas](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/configure-store/best-practices)
-- [Configurar varios sitios web o tiendas](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites)
+- [Explicación de sitios web, tiendas y vistas de tiendas](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/best-practices)
+- [Configurar varios sitios web o tiendas](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites)

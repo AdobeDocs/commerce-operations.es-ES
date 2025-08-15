@@ -20,7 +20,7 @@ A partir de Adobe Commerce 2.4, todas las instalaciones deben estar configuradas
 
 ## Versiones compatibles
 
-Debe instalar y configurar Elasticsearch o OpenSearch antes de instalar Adobe Commerce 2.4.4 y posteriores.
+Debe instalar y configurar Elasticsearch o OpenSearch antes de instalar Adobe Commerce 2.4.4 y versiones posteriores.
 
 Consulte [Requisitos del sistema](../../system-requirements.md) para obtener información específica sobre la versión.
 
@@ -63,7 +63,7 @@ Las solicitudes de búsqueda se procesan de la siguiente manera:
 
 1. El motor de búsqueda procesa la solicitud.
 
-1. La comunicación vuelve por la misma ruta, con el servidor web Elasticsearch actuando como un proxy inverso seguro.
+1. La comunicación vuelve por la misma ruta, con el servidor web de Elasticsearch actuando como un proxy inverso seguro.
 
 ## Requisitos previos
 
@@ -72,7 +72,7 @@ Las tareas tratadas en esta sección requieren lo siguiente:
 * [Firewall y SELinux](#firewall-and-selinux)
 * [Instale el Kit de desarrollo de software de Java (JDK)](#install-the-java-software-development-kit)
 * [Instalación del motor de búsqueda](#install-the-search-engine)
-* [Elasticsearch de actualización](#upgrading-elasticsearch)
+* [Actualización de Elasticsearch](#upgrading-elasticsearch)
 
 ### Firewall y SELinux
 
@@ -95,7 +95,7 @@ Para determinar si Java ya está instalado, introduzca el siguiente comando:
 java -version
 ```
 
-Si se muestra el mensaje `java: command not found`, debe instalar el SDK de Java como se describe en la sección siguiente.
+Si se muestra el mensaje `java: command not found`, debe instalar Java SDK como se describe en la siguiente sección.
 
 Consulte una de las siguientes secciones:
 
@@ -128,11 +128,11 @@ apt-get -y update
 apt-get install -y openjdk-8-jdk
 ```
 
-Para ver otras opciones, consulte [documentación de Oracle](https://docs.oracle.com/javase/8/docs/technotes/guides/install/install_overview.html).
+Para ver otras opciones, consulte [Documentación de Oracle](https://docs.oracle.com/javase/8/docs/technotes/guides/install/install_overview.html).
 
 ### Instalación del motor de búsqueda
 
-Siga [Elasticsearch de instalación](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html) o [Instale y configure OpenSearch](https://opensearch.org/docs/latest/opensearch/install/index/) para los pasos específicos de su plataforma.
+Siga [Instalar Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html) o [Instalar y configurar OpenSearch](https://opensearch.org/docs/latest/opensearch/install/index/) para los pasos específicos de su plataforma.
 
 Para comprobar que Elasticsearch funciona, introduzca el siguiente comando en el servidor en el que se está ejecutando:
 
@@ -157,9 +157,9 @@ curl -XGET https://<host>:9200 -u 'admin:admin' --insecure
 curl -XGET https://<host>:9200/_cat/plugins?v -u 'admin:admin' --insecure
 ```
 
-## Elasticsearch de actualización
+## Actualización de Elasticsearch
 
-Consulte [Actualización del Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) para obtener instrucciones completas sobre cómo realizar copias de seguridad de los datos, detectar posibles problemas de migración y probar las actualizaciones antes de implementarlas en producción. Según la versión actual del Elasticsearch, puede que sea necesario o no reiniciar el clúster por completo.
+Consulte [Actualización de Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) para obtener instrucciones completas sobre cómo realizar copias de seguridad de los datos, detectar posibles problemas de migración y probar actualizaciones antes de implementarlas en producción. Según la versión actual de Elasticsearch, puede que sea necesario o no reiniciar el clúster por completo.
 
 Elasticsearch requiere JDK 1.8 o superior. Consulte [Instalar el kit de desarrollo de software de Java](#install-the-java-software-development-kit) para comprobar qué versión de JDK está instalada.
 

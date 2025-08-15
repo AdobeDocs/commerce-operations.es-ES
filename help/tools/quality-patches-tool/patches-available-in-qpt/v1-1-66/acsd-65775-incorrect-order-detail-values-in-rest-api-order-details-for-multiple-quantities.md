@@ -4,13 +4,13 @@ description: Aplique el parche ACSD-65775 para corregir el problema de Adobe Com
 feature: REST
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 23c78abaf28f64baf0e91bcaf89bd0e34b5bf78a
+exl-id: c2a8f4ef-3998-4e73-af9e-69b17a10d684
+source-git-commit: ce5a136dd59c52d5fa5b555b3ee74fe14d7e53a4
 workflow-type: tm+mt
 source-wordcount: '394'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-65775: valores `base_row_total` y `row_total` incorrectos en los detalles de pedido de la API REST para varias cantidades
 
@@ -28,7 +28,7 @@ El parche ACSD-65775 corrige el problema en el que los detalles del pedido de la
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
@@ -64,7 +64,7 @@ El parche ACSD-65775 corrige el problema en el que los detalles del pedido de la
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
 * Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía [!DNL Quality Patches Tool].
-* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=es) en la guía Commerce en la infraestructura de la nube.
+* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) en la guía Commerce en la infraestructura de la nube.
 
 ## Lectura relacionada
 

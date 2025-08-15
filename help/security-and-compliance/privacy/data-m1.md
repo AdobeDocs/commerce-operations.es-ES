@@ -1,6 +1,6 @@
 ---
 title: Referencia de información personal del cliente (versión 1.x)
-description: Obtenga información sobre las asignaciones de entidades de flujo de datos y base de datos para la información personal del cliente en Magento 1.x.
+description: Obtenga información acerca del flujo de datos y las asignaciones de entidades de base de datos para la información personal del cliente en Magento 1.x.
 exl-id: 8b01418d-8ca1-48fc-9577-a324ed3109d1
 source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
@@ -50,11 +50,11 @@ Commerce carga la información del cliente cuando un comerciante ve varios tipos
 
 ## Entidades de base de datos
 
-El Magento 1 almacena información de clientes en tablas de clientes, ventas y otras bases de datos.
+Magento 1 almacena información de clientes en tablas de clientes, ventas y otras bases de datos.
 
 ### Datos del cliente
 
-El Magento 1 almacena información de clientes en las tablas `customer_entity` y `customer_address_entity`. Ambas tablas tienen varias tablas de referencia que pueden contener atributos personalizados del cliente.
+Magento 1 almacena información de clientes en las tablas `customer_entity` y `customer_address_entity`. Ambas tablas tienen varias tablas de referencia que pueden contener atributos personalizados del cliente.
 
 #### `customer_entity` y tablas de referencia
 

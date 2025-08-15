@@ -62,7 +62,7 @@ Para exportar un archivo de configuración de Barniz desde Admin:
    cp <download_directory>/default.vcl /etc/varnish/default.vcl
    ```
 
-1. El Adobe recomienda abrir `default.vcl` y cambiar el valor de `acl purge` a la dirección IP del host Varnish. (Puede especificar varios hosts en líneas independientes o también puede utilizar la notación CIDR).
+1. Adobe recomienda abrir `default.vcl` y cambiar el valor de `acl purge` a la dirección IP del host Varnish. (Puede especificar varios hosts en líneas independientes o también puede utilizar la notación CIDR).
 
    Por ejemplo,
 

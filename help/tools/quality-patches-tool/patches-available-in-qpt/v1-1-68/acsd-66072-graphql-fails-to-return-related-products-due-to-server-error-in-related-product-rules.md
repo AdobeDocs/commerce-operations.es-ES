@@ -4,13 +4,13 @@ description: Aplique el parche ACSD-66072 para corregir el problema de Adobe Com
 feature: GraphQL, Products
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: b1cd5383d774ab0ed97b80a4abf7df5706706ea5
+exl-id: a706a710-aed3-41a4-bc87-3150e9ba95f7
+source-git-commit: 8bb921704239d2b4622931a7814759bda5e9401f
 workflow-type: tm+mt
 source-wordcount: '362'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-66072: GraphQL no devuelve productos relacionados en la página de detalles del producto
 
@@ -28,7 +28,7 @@ La revisión ACSD-66072 corrige el problema en el cual los productos relacionado
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
@@ -181,7 +181,7 @@ report.ERROR: Deprecated Functionality: explode(): Passing null to parameter #2 
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
 * Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía [!DNL Quality Patches Tool].
-* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=es) en la guía Commerce en la infraestructura de la nube.
+* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) en la guía Commerce en la infraestructura de la nube.
 
 ## Lectura relacionada
 

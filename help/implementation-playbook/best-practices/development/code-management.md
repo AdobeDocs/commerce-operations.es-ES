@@ -67,7 +67,7 @@ Este tema se ha diseñado para ayudarle a decidir si desea utilizar Git o Compos
     <td>
       <ul>
         <li><strong>Enfoque estándar para administrar código para una configuración de varias instancias</strong></li>
-        <li>Cuando el Adobe mantiene el código base o el equipo de mantenimiento está familiarizado con Composer</li>
+        <li>Cuando Adobe mantiene el código base o el equipo de mantenimiento está familiarizado con Composer</li>
       </ul>
     </td>
   </tr>

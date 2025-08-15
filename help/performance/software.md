@@ -1,5 +1,5 @@
 ---
-title: Software Recommendations
+title: Recomendaciones de software
 description: Revise la lista de software recomendado relacionado con el rendimiento óptimo de las implementaciones de Adobe Commerce.
 feature: Best Practices, Install
 exl-id: b091a733-7655-4e91-a988-93271872c5d5
@@ -47,7 +47,7 @@ net.core.somaxconn = 1024
 
 ## PHP
 
-El Magento es totalmente compatible con PHP 7.3 y 7.4. Hay varios factores a tener en cuenta al configurar PHP para obtener la máxima velocidad y eficiencia en el procesamiento de solicitudes.
+Magento es totalmente compatible con PHP 7.3 y 7.4. Hay varios factores a tener en cuenta al configurar PHP para obtener la máxima velocidad y eficiencia en el procesamiento de solicitudes.
 
 ### Extensiones de PHP
 
@@ -151,7 +151,7 @@ opcache.validate_timestamps=0
 opcache.enable_cli=1
 ```
 
-Al ajustar la asignación de memoria para opcache, tenga en cuenta el tamaño del código base de Magento y todas las extensiones. El equipo de rendimiento de Magento utiliza los valores del ejemplo anterior para realizar pruebas, ya que proporciona suficiente espacio en opcache para el promedio de extensiones instaladas.
+Al ajustar la asignación de memoria para opcache, tenga en cuenta el tamaño del código base de Magento y de todas sus extensiones. El equipo de rendimiento de Magento utiliza los valores del ejemplo anterior para realizar pruebas, ya que proporciona suficiente espacio en opcache para el promedio de extensiones instaladas.
 
 Si tiene un equipo con poca memoria y no tiene instaladas muchas extensiones o personalizaciones, utilice la siguiente configuración para obtener un resultado similar:
 
@@ -203,7 +203,7 @@ Se han realizado muchas mejoras en [!DNL MySQL] 5.7.9 Confiamos en que [!DNL MyS
 
 ## [!DNL Varnish]
 
-El Magento recomienda encarecidamente usar [!DNL Varnish] como servidor de caché de página completa para su tienda. El módulo PageCache sigue presente en la base de código, pero debe usarse únicamente con fines de desarrollo. No se debe usar junto con [!DNL Varnish] ni en su lugar.
+Magento recomienda encarecidamente usar [!DNL Varnish] como servidor de caché de página completa para su tienda. El módulo PageCache sigue presente en la base de código, pero debe usarse únicamente con fines de desarrollo. No se debe usar junto con [!DNL Varnish] ni en su lugar.
 
 Instale [!DNL Varnish] en un servidor independiente delante del nivel web. Debe aceptar todas las solicitudes entrantes y proporcionar copias de las páginas en caché. Para permitir que [!DNL Varnish] funcione correctamente con páginas seguras, se puede colocar un proxy de terminación SSL delante de [!DNL Varnish]. Nginx se puede utilizar para este fin.
 
@@ -213,7 +213,7 @@ Instale [!DNL Varnish] en un servidor independiente delante del nivel web. Debe 
 * **El modo de gracia** le permite indicar a [!DNL Varnish] que mantenga un objeto en la caché más allá de su período de tiempo de vida (TTL) y que sirva este contenido obsoleto si [!DNL Commerce] no está en buen estado o si aún no se ha recuperado contenido nuevo.
 * **Modo Saint** pone en lista negra servidores [!DNL Commerce] que no están en buen estado durante un período de tiempo configurable. Como resultado, los backends que no están en buen estado no pueden servir tráfico al usar [!DNL Varnish] como equilibrador de carga.
 
-Consulte [Configuración avanzada [!DNL Varnish] 2&rbrace; para obtener más información sobre cómo implementar estas características.](../configuration/cache/config-varnish-advanced.md)
+Consulte [Configuración avanzada [!DNL Varnish] 2} para obtener más información sobre cómo implementar estas características.](../configuration/cache/config-varnish-advanced.md)
 
 ### Optimizar el rendimiento del recurso
 
@@ -256,7 +256,7 @@ Reinicie el servidor [!DNL Varnish] para vaciar los recursos en caché cada vez 
 
 ## Servidores de almacenamiento en caché y sesión
 
-Magento proporciona una serie de opciones para almacenar los datos de la sesión y la memoria caché, incluidos Redis, Memcache, el sistema de archivos y la base de datos. Algunas de estas opciones se analizan a continuación.
+Magento proporciona una serie de opciones para almacenar los datos de caché y sesión, incluidos Redis, Memcache, el sistema de archivos y la base de datos. Algunas de estas opciones se analizan a continuación.
 
 ### Configuración de nodo web único
 

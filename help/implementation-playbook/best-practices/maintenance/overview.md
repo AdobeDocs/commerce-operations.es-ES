@@ -73,7 +73,7 @@ Las secciones siguientes incluyen información sobre prácticas recomendadas par
 | [Auditar el rendimiento de front-end](frontend-performance.md) | Identificar y abordar los problemas que afectan negativamente al rendimiento del sitio mediante herramientas de rendimiento web. |
 | [Listo, Preparado, Mantener](https://business.adobe.com/blog/basics/ready-set-maintain) | Sugerencias para mantener los sitios de Adobe Commerce a fin de maximizar el valor comercial y el tiempo de actividad. |
 | [Usar [!DNL Site-Wide Analysis Tool]](../../../tools/site-wide-analysis-tool/intro.md#integrations-with-other-adobe-commerce-support-tools) | Vea información importante sobre el sitio de Adobe Commerce en un solo lugar. |
-| [Supervisar rendimiento, espacio en disco y registros](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/performance.html?lang=es) | Utilice New Relic para monitorizar las perspectivas de rendimiento clave sobre su Adobe Commerce en el sitio de infraestructura en la nube. |
+| [Supervisar rendimiento, espacio en disco y registros](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/performance.html) | Utilice New Relic para monitorizar las perspectivas de rendimiento clave sobre su Adobe Commerce en el sitio de infraestructura en la nube. |
 | [Responder a incidentes de seguridad](respond-to-security-incident.md) | Utilice New Relic para monitorizar las perspectivas de rendimiento clave sobre su Adobe Commerce en el sitio de infraestructura en la nube. |
 
 ### Actualizaciones

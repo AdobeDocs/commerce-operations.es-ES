@@ -29,7 +29,7 @@ Donde
 
 >[!NOTE]
 >
->No puede habilitar ni deshabilitar módulos directamente en proyectos en la nube. Debe ejecutar estos comandos localmente y, a continuación, insertar los cambios en el archivo `app/etc/config.php` para un entorno. Vea [Flujo de trabajo de proyecto profesional: flujo de trabajo de implementación](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html?lang=es#deployment-workflow).
+>No puede habilitar ni deshabilitar módulos directamente en proyectos en la nube. Debe ejecutar estos comandos localmente y, a continuación, insertar los cambios en el archivo `app/etc/config.php` para un entorno. Vea [Flujo de trabajo de proyecto profesional: flujo de trabajo de implementación](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html#deployment-workflow).
 
 ## Módulo habilitado, deshabilitar
 
@@ -78,7 +78,7 @@ bin/magento cache:clean
 
 ## Acerca de la activación y desactivación de módulos
 
-Adobe Commerce le permite habilitar o deshabilitar los módulos disponibles actualmente; es decir, cualquier módulo proporcionado por el Adobe o cualquier módulo de terceros disponible actualmente.
+Adobe Commerce le permite habilitar o deshabilitar los módulos disponibles actualmente; es decir, cualquier módulo proporcionado por Adobe o cualquier módulo de terceros disponible actualmente.
 
 Algunos módulos dependen de otros módulos, en cuyo caso es posible que no pueda habilitar o deshabilitar un módulo porque depende de otros módulos.
 

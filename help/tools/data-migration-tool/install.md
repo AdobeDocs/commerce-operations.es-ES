@@ -1,6 +1,6 @@
 ---
 title: Instalar  [!DNL Data Migration Tool]
-description: Aprenda a instalar  [!DNL Data Migration Tool]  para transferir datos entre el Magento 1 y el Magento 2.
+description: Aprenda a instalar  [!DNL Data Migration Tool]  para transferir datos entre Magento 1 y Magento 2.
 exl-id: 5f57067b-3ce8-4b51-b9ae-f60ae089c4ba
 topic: Commerce, Migration
 feature: Configuration, Install
@@ -15,10 +15,10 @@ ht-degree: 0%
 
 >[!INFO]
 >
->Las versiones del Magento y [!DNL Data Migration Tool] deben coincidir.
+>Las versiones de Magento y [!DNL Data Migration Tool] deben coincidir.
 
 
-Asegúrese de que está usando *la misma versión lanzada* del Magento 2 y el [!DNL Data Migration Tool]. Por ejemplo, para la versión de Magento 2.2.0, también debe utilizar la versión 2.2.0 de [!DNL Data Migration Tool].
+Asegúrese de que está usando *la misma versión lanzada* de Magento 2 y [!DNL Data Migration Tool]. Por ejemplo, para la versión 2.2.0 de Magento, también debe utilizar la versión 2.2.0 de [!DNL Data Migration Tool].
 
 ## Compruebe su versión
 
@@ -66,11 +66,11 @@ Puede instalar [!DNL Data Migration Tool] desde:
 Antes de instalar, asegúrese de que dispone de lo siguiente:
 
 - Se han completado todas las tareas mencionadas en la sección [Condiciones previas](prerequisites.md)
-- [Comprobó la versión](install.md#check-your-version) del software de Magento 2
+- [Comprobó la versión](install.md#check-your-version) del software Magento 2
 
 ### Instalar desde `repo.magento.com`
 
-Para instalar [!DNL Data Migration Tool], debe actualizar `composer.json` en el directorio de instalación raíz del Magento para proporcionar la ubicación del paquete [!DNL Data Migration Tool].
+Para instalar [!DNL Data Migration Tool], debe actualizar `composer.json` en el directorio de instalación raíz de Magento para proporcionar la ubicación del paquete [!DNL Data Migration Tool].
 
 1. Inicie sesión en el servidor de aplicaciones como [propietario del sistema de archivos](../../installation/prerequisites/file-system/overview.md) o cambie a él.
 1. Cambie al directorio raíz de la aplicación.
@@ -114,7 +114,7 @@ Si ha clonado el repositorio de GitHub, siga los pasos a continuación para inst
    composer require magento/data-migration-tool:<version>
    ```
 
-   donde `<version>` debe coincidir con la versión del código de base de Magento 2.
+   donde `<version>` debe coincidir con la versión del código base de Magento 2.
 
    Por ejemplo, para la versión 2.2.0, introduzca:
 

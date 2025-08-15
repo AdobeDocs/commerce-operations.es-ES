@@ -104,7 +104,7 @@ Las preferencias son una forma voraz de modificar el código y solo deben utiliz
 
 ### Observador
 
-Un observador es el concepto de oyente de eventos, tal como se encuentra en muchas aplicaciones, plataformas, bibliotecas y lenguajes de codificación. El concepto no es exclusivo de la plataforma Adobe Commerce. Los observadores han estado en la plataforma desde los días del Magento 1 y se consideran una opción principal de cómo modificar el código principal y el código de terceros. 
+Un observador es el concepto de oyente de eventos, tal como se encuentra en muchas aplicaciones, plataformas, bibliotecas y lenguajes de codificación. El concepto no es exclusivo de la plataforma Adobe Commerce. Los observadores han estado presentes en la plataforma desde los días de Magento 1 y se consideran una opción principal sobre cómo modificar el código principal y el código de terceros. 
 
 El código base principal y cualquier módulo de terceros pueden distribuir un evento en un lugar elegido del código. El observador, que está declarado en un archivo `events.xml` y escucha el evento enviado por su nombre, puede trabajar a nivel global o estar restringido a cualquier &quot;área&quot; de Adobe Commerce, como `frontend`, `adminhtml`, `graphql`, `webapi_rest` y `crontab`.
 

@@ -22,7 +22,7 @@ Los desarrolladores colaboradores pueden utilizar este método para instalar dat
 
 >[!WARNING]
 >
->Puede utilizar datos de ejemplo con la rama `develop` (más actual) o con una rama liberada (como `2.4` (más estable)). Le recomendamos que utilice una rama liberada porque es más estable. Si está contribuyendo código al repositorio y necesita el código más reciente, utilice la rama `develop`. Independientemente de la rama que elija, debe [clonar](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/) la rama correspondiente del repositorio de GitHub del Magento Open Source. Por ejemplo, los datos de ejemplo de la rama `develop` se pueden usar *solamente* con la rama del Magento Open Source `develop`.
+>Puede utilizar datos de ejemplo con la rama `develop` (más actual) o con una rama liberada (como `2.4` (más estable)). Le recomendamos que utilice una rama liberada porque es más estable. Si está contribuyendo código al repositorio y necesita el código más reciente, utilice la rama `develop`. Independientemente de la rama que elija, debe [clonar](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/) la rama correspondiente del repositorio de GitHub de Magento Open Source. Por ejemplo, los datos de ejemplo de la rama `develop` se pueden usar *solamente* con la rama de Magento Open Source `develop`.
 
 ## Clonar el repositorio de datos de ejemplo
 
@@ -71,7 +71,7 @@ Para clonar el repositorio de GitHub de datos de ejemplo utilizando el protocolo
 
    Por ejemplo:
 
-   Si ha utilizado la rama `2.4-develop` del repositorio de GitHub del Magento Open Source, la rama de datos de ejemplo debe ser `2.4-develop`.
+   Si ha utilizado la rama `2.4-develop` del repositorio de GitHub de Magento Open Source, la rama de datos de ejemplo debe ser `2.4-develop`.
 
    Para extraer la rama correcta, ejecute el siguiente comando desde el directorio raíz del repositorio de datos de ejemplo (suponiendo que necesite la rama `2.4-develop`):
 
@@ -125,7 +125,7 @@ Para clonar el repositorio de GitHub de datos de ejemplo utilizando el protocolo
 
    Por ejemplo:
 
-   Si ha utilizado la rama `2.4-develop` del repositorio de GitHub del Magento Open Source, la rama de datos de ejemplo debe ser `2.4-develop`.
+   Si ha utilizado la rama `2.4-develop` del repositorio de GitHub de Magento Open Source, la rama de datos de ejemplo debe ser `2.4-develop`.
 
    Para extraer la rama correcta, ejecute el siguiente comando desde el directorio raíz del repositorio de datos de ejemplo (suponiendo que necesite la rama `2.4-develop`):
 

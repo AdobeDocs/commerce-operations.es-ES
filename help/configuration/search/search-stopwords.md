@@ -106,7 +106,7 @@ La ubicación depende de cómo haya instalado el software de Commerce. Si ha clo
 
 **Para cambiar el directorio**:
 
-1. Como propietario del sistema de archivos, abra el Elasticsearch `di.xml` en un editor de texto.
+1. Como propietario del sistema de archivos, abra Elasticsearch `di.xml` en un editor de texto.
 
    Si clonó el repositorio, se encuentra en `app/code/Magento/Elasticsearch/etc/di.xml`
 

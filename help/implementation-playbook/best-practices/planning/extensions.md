@@ -16,7 +16,7 @@ ht-degree: 1%
 Las extensiones de terceros de Adobe Commerce (módulos) pueden causar varios problemas que pueden afectar negativamente al rendimiento de la tienda. Puede evitar estos problemas siguiendo estas prácticas recomendadas:
 
 - Desarrolle sus integraciones y personalizaciones de Commerce usando [extensibilidad fuera de proceso](https://developer.adobe.com/commerce/extensibility/) siempre que sea posible para facilitar el mantenimiento y la actualización.
-- Descargue y compre extensiones de terceros de una fuente de confianza, como el [Commerce Marketplace](https://marketplace.magento.com/extensions.html).
+- Descargue y compre extensiones de terceros de una fuente de confianza, como [Commerce Marketplace](https://marketplace.magento.com/extensions.html).
 - Actualice todas las extensiones de terceros a la versión más reciente.
 - Si no puede mantener actualizadas las extensiones de terceros, considere la posibilidad de utilizar diferentes extensiones.
 - Cuando planee una actualización a una nueva versión de Adobe Commerce, compruebe que las extensiones de terceros instaladas sean compatibles con la nueva versión y actualice las extensiones si es necesario.
@@ -36,5 +36,5 @@ Las extensiones de terceros de Adobe Commerce (módulos) pueden causar varios pr
 
 - [Prácticas recomendadas para planificar las actualizaciones](../../../upgrade/prepare/best-practices.md)
 - Uso de extensiones de terceros con Adobe Commerce en infraestructuras en la nube
-   - [Tecnologías y requisitos: desarrollo y pruebas](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/develop/overview#cloud-req-devtest)
-   - [¿Por qué probar completamente en integración y ensayo?](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/launch/overview#why-test-fully-in-integration-staging-and-production)
+   - [Tecnologías y requisitos: desarrollo y pruebas](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/overview#cloud-req-devtest)
+   - [¿Por qué probar completamente en integración y ensayo?](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/launch/overview#why-test-fully-in-integration-staging-and-production)

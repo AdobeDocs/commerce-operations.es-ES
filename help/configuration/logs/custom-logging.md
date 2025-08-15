@@ -24,7 +24,7 @@ Adobe recomienda utilizar el registro centralizado de aplicaciones por los sigui
 
   >[!INFO]
   >
-  >El Adobe no recomienda ni respalda ninguna solución de registro en particular.
+  >Adobe no recomienda ni respalda ninguna solución de registro en particular.
 
 ## Compatibilidad con PSR-3
 

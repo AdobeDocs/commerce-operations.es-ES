@@ -7,7 +7,7 @@ exl-id: 340dcc84-dcb8-40ed-b2ab-2d950d1dd1ca
 type: Troubleshooting
 source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
-source-wordcount: '404'
+source-wordcount: '405'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ El parche ACSD-62793 corrige el problema de que a los atributos datetime de los 
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
@@ -41,7 +41,7 @@ Los atributos de fecha y hora de los datos exportados no incluyen el componente 
 1. Cree un producto simple con un valor de fecha y hora para el nuevo atributo.
 1. Exporte el producto a un archivo CSV desde **[!UICONTROL System]** > *Transferencia de datos* > **[!UICONTROL Export]**.
 1. Compruebe el valor del atributo en la columna *additional_attributes*. Solo tiene la parte de la fecha, pero no la hora.
-1. Actualice el valor del atributo para utilizar la hora, p. ej., &quot;08/10/22, 3:20 p. m.&quot;.
+1. Actualice el valor del atributo para utilizar la hora, p. ej. &quot;08/10/22, 3:20 PM&quot;.
 1. Importe el archivo CSV.
 1. Compruebe la tabla *catalog_product_entity_datetime*.
 
@@ -58,7 +58,7 @@ Solo se exporta e importa la parte de fecha.
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
 * Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía [!DNL Quality Patches Tool].
-* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=es) en la guía Commerce en la infraestructura de la nube.
+* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) en la guía Commerce en la infraestructura de la nube.
 
 
 ## Lectura relacionada

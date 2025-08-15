@@ -31,7 +31,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Después de instalar este parche de seguridad, los comerciantes de Adobe Commerce B2B también deben actualizar a la última versión del parche de seguridad B2B compatible. Ver [notas de la versión B2B](https://experienceleague.adobe.com/es/docs/commerce-admin/b2b/release-notes).
+>Después de instalar este parche de seguridad, los comerciantes de Adobe Commerce B2B también deben actualizar a la última versión del parche de seguridad B2B compatible. Ver [notas de la versión B2B](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes).
 
 ## Solo Adobe Commerce {#ee-only}
 

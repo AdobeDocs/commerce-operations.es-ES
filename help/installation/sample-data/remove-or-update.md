@@ -15,7 +15,7 @@ En este tema se explica cómo:
 
 * [Quitar módulos de datos de ejemplo](#remove-sample-data-modules) de una instalación de Adobe Commerce `composer.json`. Esta opción *no* quita datos de ejemplo de la base de datos.
 
-* [Prepárese para actualizar los datos de ejemplo](#prepare-to-update-sample-data) (por ejemplo, antes de actualizar la aplicación de Magento).
+* [Prepárese para actualizar datos de ejemplo](#prepare-to-update-sample-data) (por ejemplo, antes de actualizar la aplicación Magento).
 
 ## Quitar módulos de datos de ejemplo
 

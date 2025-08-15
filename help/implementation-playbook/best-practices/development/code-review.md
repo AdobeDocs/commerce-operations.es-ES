@@ -100,7 +100,7 @@ Las revisiones de privacidad y [RGPD](../../../security-and-compliance/privacy/g
 - ¿El código gestiona los datos de los clientes o los correos electrónicos? Preste especial atención.
 - Si este código se puede ejecutar en un bucle, ¿puede filtrar los datos de los clientes de un ciclo de bucle a otro?
 - Los indicadores de un riesgo son las importaciones, los trabajos cron, los correos electrónicos transaccionales y los controladores de cola por lotes.
-- Asegúrese del aislamiento de los datos de usuario en bucles. El Adobe recomienda utilizar fábricas o repositorios para crear modelos en el ciclo de bucle, a los que no se puede acceder fuera del bucle.
+- Asegúrese del aislamiento de los datos de usuario en bucles. Adobe recomienda utilizar fábricas o repositorios para crear modelos en el ciclo de bucle, a los que no se puede acceder fuera del bucle.
 
 ### Tutoría
 

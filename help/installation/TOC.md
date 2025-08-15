@@ -5,7 +5,7 @@ feature: Install
 source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
 source-wordcount: '169'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -38,16 +38,16 @@ ht-degree: 2%
    - [Software opcional](prerequisites/optional-software.md)
 - [Instalación de inicio rápido](composer.md)
 - [Instalación avanzada](advanced.md)
-- Pasos de instalación de Post {#next-steps}
+- Pasos posteriores a la instalación {#next-steps}
    - [Compruebe la instalación](next-steps/verify.md)
    - [Configuración de la aplicación](next-steps/configuration.md)
    - [Establecer una máscara de usuario (opcional)](next-steps/set-umask.md)
-   - Instalar datos de ejemplo (opcional) {#sample-data}
+   - Instalar datos de ejemplo (opcional). {#sample-data}
       - [Información general](sample-data/overview.md)
       - [Descargar paquetes de Compositor](sample-data/composer-packages.md)
       - [Clonar repositorios Git](sample-data/git-repositories.md)
       - [Eliminación o actualización de módulos](sample-data/remove-or-update.md)
-- Tutorials {#tutorials}
+- Tutoriales {#tutorials}
    - [Realizar una copia de seguridad y una reversión del sistema de archivos, medios y base de datos](tutorials/backup.md)
    - [Comprobar el estado de la base de datos](tutorials/database-status.md)
    - [Configuración del comportamiento del consumidor de mensajes](tutorials/message-consumers.md)
@@ -67,4 +67,4 @@ ht-degree: 2%
    - [Desinstalar o volver a instalar Commerce](tutorials/uninstall.md)
    - [Desinstalar temas](tutorials/themes.md)
    - [Actualizar el esquema de base de datos](tutorials/database-upgrade.md)
-- [Volver a las guías operativas](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=es)
+- [Volver a las guías operativas](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

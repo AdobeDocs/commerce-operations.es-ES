@@ -85,7 +85,7 @@ A continuación se muestran algunos comandos de ejemplo.
 
 ### Exclusión de una temática y minificación de HTML
 
-El siguiente comando implementa contenido estático para el idioma inglés de EE. UU. (`en_US`), excluye la temática de Luma proporcionada con Commerce y no minimiza los archivos de HTML.
+El siguiente comando implementa contenido estático para el idioma inglés de EE. UU. (`en_US`), excluye el tema de Luma proporcionado con Commerce y no minimiza los archivos HTML.
 
 ```bash
 bin/magento setup:static-content:deploy en_US --exclude-theme Magento/luma --no-html-minify

@@ -48,7 +48,7 @@ En este tema se utilizan las siguientes convenciones de nomenclatura:
 
 ## Haga una copia de seguridad del sistema Commerce
 
-El Adobe recomienda encarecidamente que realice una copia de seguridad de la base de datos y del sistema de archivos actuales para poder restaurarlos si se producen problemas durante el proceso.
+Adobe recomienda encarecidamente que realice una copia de seguridad de la base de datos y del sistema de archivos actuales para poder restaurarlos si experimenta problemas durante el proceso.
 
 **Para hacer una copia de seguridad del sistema**:
 

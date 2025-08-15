@@ -20,7 +20,7 @@ ht-degree: 0%
 
 El parche de MDVA-39305-V3 corrige el problema en el cual los clientes registrados no pueden iniciar sesión cuando [!DNL Google reCAPTCHA] está habilitado. Esta revisión también corrige el problema en el cual un formulario se puede enviar antes de que [!DNL Google reCAPTCHA] se cargue completamente. Además, corrige el error *Llamada a una función miembro isDisabled() en null* cuando los bloques se usan en ubicaciones no predeterminadas en una página de CMS.
 
-Este parche se agregó en la versión [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.48. Se actualizó en la versión 1.1.58 de QPT para incluir las nuevas versiones de Adobe Commerce 2.4.7 - 2.4.7-p4. La ID del parche es MDVA-39305-V3. Tenga en cuenta que el problema se corrigió en las versiones de Adobe Commerce 2.4.4, 2.4.5-p2 y 2.4.7.
+Este parche se agregó en la versión [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.48. Se actualizó en la versión 1.1.58 de QPT para incluir las nuevas versiones de Adobe Commerce 2.4.7 - 2.4.7-p4. La ID del parche es MDVA-39305-V3. Tenga en cuenta que el problema se corrigió en las versiones de Adobe Commerce 2.4.4, 2.4.5-p2 y 2.4.7.
 
 ## Productos y versiones afectados
 
@@ -34,7 +34,7 @@ Este parche se agregó en la versión [Quality Patches Tool (QPT)](https://exper
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de la herramienta Parches de Calidad. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de la herramienta Parches de Calidad. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problemas
 
@@ -86,7 +86,7 @@ Se produce un error 500 en la página de la tienda.
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
 * Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía [!DNL Quality Patches Tool].
-* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=es) en la guía Commerce en la infraestructura de la nube.
+* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) en la guía Commerce en la infraestructura de la nube.
 
 ## Lectura relacionada
 

@@ -58,7 +58,7 @@ En algunos casos, es posible que desee compilar el código antes de instalar la 
    Generated code and dependency injection configuration successfully.
    ```
 
-Para compilar código sin base de datos, vea [Implementar archivos de vista estática sin instalar el Magento](../cli/static-view-file-deployment.md).
+Para compilar código sin base de datos, vea [Implementar archivos de vista estática sin instalar Magento](../cli/static-view-file-deployment.md).
 
 <!-- link definitions -->
 

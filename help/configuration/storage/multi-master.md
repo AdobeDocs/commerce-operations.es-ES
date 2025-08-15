@@ -38,7 +38,7 @@ La siguiente figura muestra cómo funciona esta función.
 
 ![Adobe Commerce usa diferentes bases de datos para almacenar tablas](../../assets/configuration/split-db-diagram-ee.png)
 
-En Magento Open Source, sólo se utiliza una base de datos maestra.
+En Magento Open Source, solo se utiliza una base de datos maestra.
 
 Adobe Commerce utiliza tres bases de datos maestras y un número configurable de bases de datos esclavas para la replicación. Adobe Commerce tiene una sola interfaz para conexiones de bases de datos, lo que da como resultado un rendimiento más rápido y una mejor escalabilidad.
 
@@ -62,7 +62,7 @@ Esto también significa que puede:
 
 - Configure la solución de base de datos dividida _antes_ de poner Commerce en producción.
 
-  El Adobe recomienda configurar las bases de datos divididas lo antes posible después de instalar el software de Commerce.
+  Adobe recomienda configurar las bases de datos divididas lo antes posible después de instalar el software de Commerce.
 
 - [Configurar manualmente](multi-master-manual.md) la solución de base de datos dividida.
 

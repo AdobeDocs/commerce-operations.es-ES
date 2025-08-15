@@ -79,7 +79,7 @@ El marco **[!UICONTROL Deploy Log Detail]** muestra los detalles del resumen del
 
 ## [!UICONTROL Post Deploy Log Detail]
 
-![Detalle del registro de implementación de Post](../../assets/tools/observation-for-adobe-commerce/deploy-tab-4.jpg)
+![Detalle del registro posterior a la implementación](../../assets/tools/observation-for-adobe-commerce/deploy-tab-4.jpg)
 
 El fotograma **[!UICONTROL Post Deploy Log Detail]** muestra los detalles del registro posterior a la implementación que se produjeron en el periodo de tiempo seleccionado. Este marco se centra en mensajes de registro concretos que contienen las siguientes cadenas:
 

@@ -12,5 +12,5 @@ ht-degree: 5%
 
 # Resúmenes de eventos de Adobe Commerce {#events}
 
-+ Cumbre {#summit}
++ Summit {#summit}
    + [2024](summit/2024.md)

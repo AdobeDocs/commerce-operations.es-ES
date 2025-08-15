@@ -4,7 +4,7 @@ description: Siga estos pasos para ejecutar  [!DNL Upgrade Compatibility Tool]  
 exl-id: a2272339-46d6-443b-bd53-286b72f13d4e
 source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
-source-wordcount: '584'
+source-wordcount: '583'
 ht-degree: 0%
 
 ---
@@ -81,14 +81,14 @@ Donde los argumentos son los siguientes:
 >
 > La ruta predeterminada para la carpeta de salida es `var/output/[TIME]-results.json`.
 
-## informe del HTML
+## Informe de HTML
 
-Puede obtener el informe de HTML mientras ejecuta la herramienta en una interfaz de línea de comandos o a través de [!DNL Site-Wide Analysis Tool]. El informe de HTML también contiene:
+Puede obtener el informe de HTML mientras ejecuta la herramienta en una interfaz de línea de comandos o mediante [!DNL Site-Wide Analysis Tool]. El informe HTML también contiene:
 
 - Una lista de problemas identificados.
 - Un resumen del análisis.
 
-![Informe del HTML - Resumen](../../assets/upgrade-guide/uct-html-summary.png)
+![Informe de HTML - Resumen](../../assets/upgrade-guide/uct-html-summary.png)
 
 Puede navegar fácilmente por los problemas identificados durante el análisis [!DNL Upgrade Compatibility Tool].
 
@@ -96,13 +96,13 @@ Puede filtrar los problemas que se muestran en el informe según el nivel mínim
 
 Hay un menú desplegable en la esquina superior derecha que le permite seleccionar un nivel diferente. La lista de problemas identificados se filtra en consecuencia.
 
-![informe del HTML - Uso desplegable](../../assets/upgrade-guide/uct-html-filtered-issues-list.png)
+![Informe de HTML - Uso desplegable](../../assets/upgrade-guide/uct-html-filtered-issues-list.png)
 
 >[!NOTE]
 >
 > Los problemas con un nivel de problema menor se eliminan, pero se obtiene una notificación para que siempre tenga en cuenta los problemas identificados por módulo.
 
-El informe del HTML también incluye cuatro diagramas diferentes:
+El informe de HTML también incluye cuatro gráficos diferentes:
 
 - **Módulos por gravedad del problema**: Muestra la distribución de la gravedad por módulos.
 - **Archivos por gravedad del problema**: Muestra la distribución de la gravedad por archivos.
@@ -111,13 +111,13 @@ El informe del HTML también incluye cuatro diagramas diferentes:
 
 Estos gráficos le permiten identificar los módulos más comprometidos y los que requieren más trabajo para realizar una actualización.
 
-![informe del HTML - Diagramas](../../assets/upgrade-guide/uct-html-diagrams.png)
+![Informe de HTML - Diagramas](../../assets/upgrade-guide/uct-html-diagrams.png)
 
-Los diagramas del informe del HTML también se actualizan en consecuencia, con la única excepción de `Modules with relative sizes and issues`, que se genera con `min-issue-level` que se configuró originalmente.
+Los diagramas de informes de HTML también se actualizan en consecuencia, con la única excepción de `Modules with relative sizes and issues`, que se genera con `min-issue-level` que se configuró originalmente.
 
 Si desea ver resultados diferentes para el diagrama `Modules with relative sizes and issues`, debe volver a ejecutar el comando proporcionando otro valor para la opción `--min-issue-level`.
 
-![Informe del HTML - Diagrama del gráfico de burbujas](../../assets/upgrade-guide/uct-html-filtered-diagrams.png)
+![Informe de HTML - Diagrama del gráfico de burbujas](../../assets/upgrade-guide/uct-html-filtered-diagrams.png)
 
 Para exportar este informe de HTML a una carpeta de salida diferente:
 

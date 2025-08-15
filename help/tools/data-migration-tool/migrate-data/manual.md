@@ -30,10 +30,10 @@ En esta sección se explica cómo migrar manualmente archivos multimedia.
 
 >[!WARNING]
 >
->El método de almacenamiento de medios de la base de datos está obsoleto a partir del Magento 2.4.3.
+>El método de almacenamiento de medios de la base de datos está obsoleto desde Magento 2.4.3.
 
 
-Esta sección se aplica a usted *solamente* si almacena archivos multimedia en la base de datos del Magento. Este paso se debe realizar antes de la [migración de datos](data.md):
+Esta sección se aplica a usted *solamente* si almacena archivos multimedia en la base de datos de Magento. Este paso se debe realizar antes de la [migración de datos](data.md):
 
 1. Inicie sesión en el Panel de administración de Magento 1 como administrador.
 
@@ -49,9 +49,9 @@ A continuación, repita los mismos pasos en el panel de administración de Magen
 
 ### Archivos multimedia en el sistema de archivos
 
-Todos los archivos multimedia (imágenes para productos, categorías, el editor WYSIWYG, etc.) se deben copiar manualmente de `<your Magento 1 install dir>/media` a `<your Magento 2 install dir>/pub/media`.
+Todos los archivos multimedia (imágenes para productos, categorías, el editor de WYSIWYG, etc.) se deben copiar manualmente de `<your Magento 1 install dir>/media` a `<your Magento 2 install dir>/pub/media`.
 
-Sin embargo, *no* copia los archivos de `.htaccess` ubicados en la carpeta del Magento 1 `media`. El Magento 2 tiene su propio(a) `.htaccess` que se debe conservar.
+Sin embargo, *no* copia los archivos de `.htaccess` ubicados en la carpeta de Magento 1 `media`. Magento 2 tiene su propio `.htaccess` que se debe conservar.
 
 ## Diseño de tienda
 
@@ -63,7 +63,7 @@ Sin embargo, *no* copia los archivos de `.htaccess` ubicados en la carpeta del M
 
 Debe volver a crear manualmente todos los elementos:
 
-* SOAP credenciales para las API del servicio web (, XML-RPC y REST)
+* credenciales para las API del servicio web (SOAP, XML-RPC y REST)
 
 * cuentas de usuario administrativas y asociarlas a privilegios de acceso
 

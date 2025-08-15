@@ -18,7 +18,7 @@ Si implementa Commerce en un solo equipo y puede tolerar cierto tiempo de inacti
 
 ## Implementación de canalización
 
-Con la versión 2.2 de Commerce, el Adobe introdujo la _implementación de canalización_ como una nueva forma de implementar en producción con un tiempo de inactividad mínimo. Este proceso de implementación se produce en diferentes sistemas y proporciona una forma de mantener configuraciones coherentes para todos los sistemas de implementación de canalización. Es un modelo sencillo pero eficaz que le permite separar las opciones de configuración ordinarias de las específicas del sistema (como host y puerto) o de las opciones confidenciales (como nombres y contraseñas).
+Con la versión 2.2 de Commerce, Adobe introdujo la _implementación de canalización_ como una nueva forma de implementar en producción con un tiempo de inactividad mínimo. Este proceso de implementación se produce en diferentes sistemas y proporciona una forma de mantener configuraciones coherentes para todos los sistemas de implementación de canalización. Es un modelo sencillo pero eficaz que le permite separar las opciones de configuración ordinarias de las específicas del sistema (como host y puerto) o de las opciones confidenciales (como nombres y contraseñas).
 
 Para utilizar la implementación de canalización, Adobe supone lo siguiente:
 
@@ -36,7 +36,7 @@ Al implementar recursos estáticos y compilar código en un equipo independiente
 
 Utilizamos los siguientes términos para describir los sistemas implicados en la implementación.
 
-- **Sistema de desarrollo**: equipo en el que los desarrolladores trabajan para personalizar código e instalar extensiones, temáticas y paquetes de idioma desde Commerce Marketplace. Además, puede realizar todos los cambios de configuración en el sistema de desarrollo. Puede tener muchos sistemas de desarrollo.
+- **Sistema de desarrollo**: equipo en el que los desarrolladores trabajan para personalizar código e instalar extensiones, temas y paquetes de idiomas desde Commerce Marketplace. Además, puede realizar todos los cambios de configuración en el sistema de desarrollo. Puede tener muchos sistemas de desarrollo.
 
 - **Sistema de compilación**: un sistema en el que se implementan recursos estáticos y se compila código para el sistema de producción. Debido a que estos recursos se crean en un sistema que no está en producción, se minimiza el tiempo de inactividad del sistema de producción.
 

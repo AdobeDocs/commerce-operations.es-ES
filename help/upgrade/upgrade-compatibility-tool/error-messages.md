@@ -61,7 +61,7 @@ Se generan errores críticos cuando el código personalizado hace referencia a e
 | 5002 | La etiqueta PHP de apertura debe ser el primer contenido del archivo | Asegúrese de que no haya contenido en el archivo antes de la etiqueta de apertura PHP. |
 | 5003 | La función ha quedado obsoleta | Utilice un reemplazo sugerido en el mensaje de error. Si el mensaje no sugiere un reemplazo, se necesita una revisión minuciosa para seleccionar una función o implementación alternativa. |
 | 5005 | Error de sintaxis de PHP | El código debe ser actualizado para cumplir con los estándares de sintaxis PHP. |
-| 5072 | Posible infracción de diseño del Magento 2. Se ha detectado una construcción típica de Magento 1.x. | Actualice la construcción según las normas del Magento 2. |
+| 5072 | Posible infracción de diseño de Magento 2. Se ha detectado una construcción típica de Magento 1.x | Actualice la construcción a las normas Magento 2. |
 | 5076 | No se puede usar en el espacio de nombres porque está reservado desde PHP 7 | Reemplace la palabra reservada en el espacio de nombres por una palabra clave no reservada. |
 | 5077 | No se puede usar como nombre de clase porque está reservado desde PHP 7 | Reemplace el nombre de clase reservado por un nombre no reservado. |
 

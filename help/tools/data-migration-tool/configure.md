@@ -1,6 +1,6 @@
 ---
 title: Configurar  [!DNL Data Migration Tool]
-description: Obtenga información acerca de los dos métodos para configurar  [!DNL Data Migration Tool]  para transferir datos entre el Magento 1 y el Magento 2.
+description: Obtenga información acerca de los dos métodos para configurar  [!DNL Data Migration Tool] para transferir datos entre Magento 1 y Magento 2.
 exl-id: 273be997-8085-4488-a455-f6005a85b406
 topic: Commerce, Migration
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
@@ -15,10 +15,10 @@ ht-degree: 0%
 Después de instalar [!DNL Data Migration Tool], el siguiente directorio contiene los archivos de asignación y configuración:
 
 * Magento Open Source:
-   * `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/opensource-to-opensource`: configuración y scripts para migrar del Magento Open Source 1 al Magento Open Source 2
+   * `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/opensource-to-opensource`: configuración y scripts para migrar de Magento Open Source 1 a Magento Open Source 2
 
 * Adobe Commerce:
-   * `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/opensource-to-commerce`: configuración y scripts para migrar del Magento Open Source 1 a Adobe Commerce 2
+   * `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/opensource-to-commerce`: configuración y scripts para migrar de Magento Open Source 1 a Adobe Commerce 2
    * `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/commerce-to-commerce`: configuración y scripts para migrar de Adobe Commerce 1 a Adobe Commerce 2
 
 Los directorios anteriores contienen subdirectorios para cada versión admitida.
@@ -144,7 +144,7 @@ Para configurar [!DNL Data Migration Tool] para la migración:
    </options>
    ```
 
-   La etiqueta &lt;crypt_key> debe contener un valor. Puede encontrarlo dentro de la etiqueta `<key>`, que se encuentra en el archivo app/etc/local.xml en su instancia de Magento 1.
+   La etiqueta &lt;crypt_key> debe contener un valor. Puede encontrarlo dentro de la etiqueta `<key>`, que se encuentra en el archivo app/etc/local.xml de su instancia de Magento 1.
 
    Parámetros opcionales:
 
@@ -152,7 +152,7 @@ Para configurar [!DNL Data Migration Tool] para la migración:
    * Puerto personalizado de base de datos: `port=<port>`
    * Prefijo de tabla: `<source_prefix>`, `<dest_prefix>`
 
-   Por ejemplo, si el nombre de usuario del propietario de la base de datos es `root` con la contraseña `pass` y utiliza el prefijo `magento1` en la base de datos del Magento 1, utilice lo siguiente en `config.xml`:
+   Por ejemplo, si el nombre de usuario del propietario de la base de datos es `root` con la contraseña `pass` y usa el prefijo `magento1` en la base de datos de Magento 1, use lo siguiente en `config.xml`:
 
    ```xml
    <source>
@@ -198,9 +198,9 @@ Por ejemplo:
 
 * Omitir tablas o campos
 
-* Adaptar la transferencia de datos de un campo al formato del Magento 2
+* Adaptar la transferencia de datos de un campo al formato Magento 2
 
-Los archivos de asignación para las versiones de Magento admitidas se encuentran en los subdirectorios de `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc`
+Los archivos de asignación para las versiones de Magento compatibles se encuentran en los subdirectorios de `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc`
 
 Para utilizar los archivos de asignación:
 
@@ -210,7 +210,7 @@ Para utilizar los archivos de asignación:
 
    1. Ruta absoluta del archivo, p. ej. `/var/www/html/app/code/Vendor/Migration/etc/opensource-to-opensource/1.9.4.1/map.xml`
    1. ruta de archivo relativa del módulo magento/data-migration-tool: `etc/opensource-to-opensource/1.9.4.1/map.xml`
-   1. Ruta de acceso del archivo relativo a la raíz del Magento: `app/code/Vendor/Migration/etc/opensource-to-opensource/1.9.4.1/map.xml`
+   1. Ruta de acceso del archivo relativa a la raíz de Magento: `app/code/Vendor/Migration/etc/opensource-to-opensource/1.9.4.1/map.xml`
 
 Los directorios `<Magento 2 dir>/vendor/magento/data-migration-tool/etc` y `<Magento 2 dir>/vendor/magento/data-migration-tool/etc/<ce version>` contienen los siguientes archivos de configuración:
 
@@ -218,7 +218,7 @@ Aunque esté trabajando con el archivo `map.xml.dist` la mayor parte del tiempo,
 
 | Nombre de archivo de asignación | Descripción |
 | --- | --- |
-| `class-map.xml.dist` | Diccionario de asignaciones de clase entre el Magento 1 y el Magento 2 |
+| `class-map.xml.dist` | Diccionario de asignaciones de clase entre Magento 1 y Magento 2 |
 | `config.xml.dist` | Archivo de configuración principal que especifica las configuraciones de base de datos de Magento 1 y Magento 2, la configuración de pasos y los vínculos a archivos de asignación |
 | *Solo Adobe Commerce*. `customer-attr-document-groups.xml.dist` | Lista de tablas utilizadas en el paso de atributos del cliente personalizados. |
 | *Solo Adobe Commerce*. `customer-attr-map.xml.dist` | Asignar archivo que se utiliza en el paso Atributos del cliente personalizados. |

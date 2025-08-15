@@ -4,13 +4,13 @@ description: Aplique el parche ACSD-65254 para corregir el problema de Adobe Com
 feature: GraphQL, User Account
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 5f7af7704c53c808298422dc165397dd255480b9
+exl-id: a97daceb-98f6-4bb8-9847-692af700c0fd
+source-git-commit: 7e9598e3ac0558706ef98ca81c19d27c37f7e860
 workflow-type: tm+mt
 source-wordcount: '353'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-65254: notificación por correo electrónico no enviada después de actualizar el correo electrónico del cliente mediante la mutación `updateCustomerEmail` [!DNL GraphQL]
 
@@ -28,7 +28,7 @@ El parche ACSD-65254 corrige el problema por el que las notificaciones por corre
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
@@ -91,7 +91,7 @@ Solo se envía un correo electrónico de suscripción a la nueva dirección; no 
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
 * Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía [!DNL Quality Patches Tool].
-* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=es) en la guía Commerce en la infraestructura de la nube.
+* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) en la guía Commerce en la infraestructura de la nube.
 
 ## Lectura relacionada
 

@@ -42,7 +42,7 @@ Las secciones siguientes incluyen información sobre las prácticas recomendadas
 
 | Práctica recomendada | Descripción |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
-| [Compilaciones e implementación](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices.html?lang=es){target="_blank"} | Describe las prácticas recomendadas para las fases de compilación e implementación de Adobe Commerce en proyectos de infraestructura en la nube |
+| [Compilaciones e implementación](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices.html){target="_blank"} | Describe las prácticas recomendadas para las fases de compilación e implementación de Adobe Commerce en proyectos de infraestructura en la nube |
 | Depuración | Depurar el marco de trabajo de Adobe Commerce de forma sistemática y eficaz |
 | [Implementación de contenido estático](static-content-deployment.md) | Evite los problemas con el contenido estático que no aparezca en la tienda |
 | [Solución de problemas](troubleshooting.md) | Solución de problemas comunes de implementación de Adobe Commerce |

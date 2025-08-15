@@ -4,13 +4,13 @@ description: Aplique el parche ACSD-65750 para corregir el problema de Adobe Com
 feature: GraphQL, Page Builder, Products
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 2555327c02985a51e7f34a36dd256227b12b5924
+exl-id: 3aee28e1-1293-42d0-a62c-5021e8f75518
+source-git-commit: 2d6debf4d426a0473eb77919c2307afdc77bf937
 workflow-type: tm+mt
 source-wordcount: '396'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-65750: [!DNL GraphQL] la consulta de &quot;ruta&quot; devuelve productos desordenados en [!DNL Page Builder] Tipo de contenido de productos
 
@@ -28,7 +28,7 @@ El parche ACSD-65750 corrige el problema en el que la consulta &quot;route&quot;
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
@@ -88,7 +88,7 @@ El sistema devuelve productos en un pedido que no coincide con su posición en l
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
 * Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía [!DNL Quality Patches Tool].
-* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=es) en la guía Commerce en la infraestructura de la nube.
+* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) en la guía Commerce en la infraestructura de la nube.
 
 ## Lectura relacionada
 

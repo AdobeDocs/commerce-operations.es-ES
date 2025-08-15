@@ -18,7 +18,7 @@ En la tabla siguiente se describen los parámetros de bootstrap que puede establ
 | Parámetro de Bootstrap | Descripción |
 | ------------------- | -------------------------------------------- |
 | MAGE_DIRS | Especifica rutas de directorio y URL personalizadas |
-| MAGE_PROFILER | Habilita los gráficos de dependencias y la creación de perfiles de HTML |
+| MAGE_PROFILER | Habilita los gráficos de dependencias y los perfiles de HTML |
 
 >[!INFO]
 >

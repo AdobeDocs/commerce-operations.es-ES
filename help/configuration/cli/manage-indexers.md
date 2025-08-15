@@ -43,7 +43,7 @@ store_data_exporter                      Stores Feed
 
 >[!NOTE]
 >
-> Los comerciantes de Adobe Commerce que usan Live Search, Servicio de catálogo o Product Recommendations tienen la opción de usar la [indexación de precios basada en SaaS](https://experienceleague.adobe.com/es/docs/commerce/price-indexer/price-indexing).
+> Los comerciantes de Adobe Commerce que usan Live Search, Servicio de catálogo o Product Recommendations tienen la opción de usar la [indexación de precios basada en SaaS](https://experienceleague.adobe.com/en/docs/commerce/price-indexer/price-indexing).
 
 ## Ver estado del indexador
 
@@ -269,11 +269,11 @@ Stores Feed:                                       Update by Schedule
 >
 >- **2.4.8 y versiones posteriores**: el indizador [!DNL Customer Grid] admite los modos [!UICONTROL Update on Save] y [!UICONTROL Update by Schedule], y el valor predeterminado es [!UICONTROL Update by Schedule].
 >
->Consulte las [Prácticas recomendadas para la configuración del indizador](https://experienceleague.adobe.com/es/docs/commerce-operations/implementation-playbook/best-practices/maintenance/indexer-configuration) en el _Manual de implementación_.
+>Consulte las [Prácticas recomendadas para la configuración del indizador](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/maintenance/indexer-configuration) en el _Manual de implementación_.
 
 >[!INFO]
 >
->Antes de cambiar los modos del indizador, establezca su sitio web en el modo [mantenimiento](../../installation/tutorials/maintenance-mode.md) y [deshabilite los trabajos cron](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property). Esto garantiza que no tenga bloqueos de base de datos.
+>Antes de cambiar los modos del indizador, establezca su sitio web en el modo [mantenimiento](../../installation/tutorials/maintenance-mode.md) y [deshabilite los trabajos cron](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property). Esto garantiza que no tenga bloqueos de base de datos.
 
 Para especificar la configuración del indexador:
 

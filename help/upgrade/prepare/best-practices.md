@@ -1,6 +1,6 @@
 ---
 title: Prácticas recomendadas
-description: Siga las prácticas recomendadas por el Adobe para administrar el proceso de actualización de sus proyectos de Adobe Commerce.
+description: Siga las prácticas recomendadas por Adobe para administrar el proceso de actualización de sus proyectos de Adobe Commerce.
 feature: Upgrade, Best Practices
 exl-id: 53c505a3-8b99-4fc3-b1b4-f2f75208a51b
 source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
@@ -16,7 +16,7 @@ En este tema se enumeran las acciones que debe realizar para administrar la comp
 
 >[!TIP]
 >
->Estas recomendaciones se basan en las mejores prácticas, respaldadas por pruebas de socios, comerciantes, expertos en Adobe y la comunidad que demuestran su impacto y efectividad.
+>Estas recomendaciones se basan en las prácticas recomendadas y están respaldadas por pruebas de socios, comerciantes, expertos en Adobe y la comunidad que demuestran su impacto y efectividad.
 
 ## ¿Qué impacto tiene una actualización?
 
@@ -51,13 +51,13 @@ Empiece a adoptar la plataforma de extensibilidad de Adobe Commerce, si aún no 
 
 - **Extensibilidad de API**. Use [GraphQL](https://developer.adobe.com/commerce/webapi/graphql/index.html) para ampliar el nivel de API web mediante la evolución del modelo de datos de gráficos y la ejecución de funciones lambda directamente desde el nivel de gráficos.
 
-- **Servicios y middleware de Adobe I/O**. Conecte sus sistemas con Adobe Commerce usando middleware de Adobe y un conjunto de conexiones de aplicaciones creadas en [Adobe I/O](https://www.adobe.io/). Además, puede ampliar las funcionalidades básicas de la plataforma sobrescribiendo el comportamiento predeterminado con su propia lógica empresarial que se ejecuta en el Adobe I/O.
+- **Servicios y middleware de Adobe I/O**. Conecte sus sistemas con Adobe Commerce mediante el middleware de Adobe y un conjunto de conexiones de aplicaciones basadas en [Adobe I/O](https://www.adobe.io/). Además, puede ampliar las funcionalidades básicas de la plataforma sobrescribiendo el comportamiento predeterminado con su propia lógica empresarial que se ejecuta en Adobe I/O.
 
 ### Planificación de actualizaciones
 
 A medida que ampliamos continuamente las capacidades de Adobe Commerce, es fundamental que desarrolle en función de la versión disponible más reciente y defina una estrategia de actualización en sus planes de proyecto. Al hacerlo, se mantiene seguro, conforme y actualizado con las últimas mejoras, que le permiten aumentar las ventas más rápido, operar de forma más eficaz y adelantarse a la competencia ahora y en el futuro.
 
-Para ayudarle a planificar y presupuestar las actualizaciones, debe supervisar nuestra [programación de versiones](https://experienceleague.adobe.com/es/docs/commerce-operations/release/planning/schedule). Planifique con antelación las tareas de actualización dentro del registro de pendientes de su equipo. Objetivo: completar este trabajo con GA.
+Para ayudarle a planificar y presupuestar las actualizaciones, debe supervisar nuestra [programación de versiones](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule). Planifique con antelación las tareas de actualización dentro del registro de pendientes de su equipo. Objetivo: completar este trabajo con GA.
 
 - Utilice la versión preliminar para obtener más información sobre cada nueva versión. El prelanzamiento es el código de disponibilidad general que está disponible para los comerciantes de Adobe Commerce y todos los socios dos semanas antes de la disponibilidad general. Si tiene varias tiendas, utilice el prelanzamiento en su tienda base y compruebe que sus módulos y temáticas personalizados son compatibles con él.
 
@@ -73,7 +73,7 @@ Las actualizaciones deben realizarse de forma regular y con un presupuesto prede
 
 Evalúe el trabajo que se debe realizar para la actualización:
 
-- Revise las [notas de la versión](https://experienceleague.adobe.com/es/docs/commerce-operations/release/notes/overview) para comprender el ámbito y el impacto de la nueva versión.
+- Revise las [notas de la versión](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview) para comprender el ámbito y el impacto de la nueva versión.
 
 - Use [[!DNL Upgrade Compatibility Tool]](../upgrade-compatibility-tool/overview.md) para identificar posibles problemas que deben solucionarse en el código personalizado antes de intentar actualizar a una versión más reciente.
 

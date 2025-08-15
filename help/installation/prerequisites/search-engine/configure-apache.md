@@ -134,7 +134,7 @@ Donde
 
   En este ejemplo, utilizamos el usuario del servidor web, pero la elección del usuario depende de usted.
 
-   * Configurando el Elasticsearch: el nombre del usuario es `magento_elasticsearch` en este ejemplo
+   * Configurando Elasticsearch: el nombre del usuario es `magento_elasticsearch` en este ejemplo
 
 * `<password file name>` debe ser un archivo oculto (comienza con `.`) y debe reflejar el nombre del usuario. Consulte los ejemplos que aparecen más adelante en esta sección para obtener más información.
 

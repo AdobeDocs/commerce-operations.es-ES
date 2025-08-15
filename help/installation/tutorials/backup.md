@@ -23,7 +23,7 @@ Después de hacer la copia de seguridad, puedes [revertir](#rollback) más tarde
 
 >[!TIP]
 >
->Para Adobe Commerce sobre proyectos de infraestructura en la nube, consulte [Administración de instantáneas y copias de seguridad](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/develop/storage/snapshots) en la _Guía de la nube_.
+>Para Adobe Commerce sobre proyectos de infraestructura en la nube, consulte [Administración de instantáneas y copias de seguridad](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots) en la _Guía de la nube_.
 
 ## Habilitar copias de seguridad
 
@@ -36,7 +36,7 @@ bin/magento config:set system/backup/functionality_enabled 1
 >[!WARNING]
 >
 >**Aviso de obsolescencia:**
->La funcionalidad de copia de seguridad quedará obsoleta a partir de las versiones 2.1.16, 2.2.7 y 2.3.0. Recomendamos investigar tecnologías de copia de seguridad adicionales y herramientas de copia de seguridad binaria (como Percona XtraBackup).
+>>La funcionalidad de copia de seguridad quedará obsoleta a partir de las versiones 2.1.16, 2.2.7 y 2.3.0. Recomendamos investigar tecnologías de copia de seguridad adicionales y herramientas de copia de seguridad binaria (como Percona XtraBackup).
 
 ## Establecer el límite de archivos abiertos
 

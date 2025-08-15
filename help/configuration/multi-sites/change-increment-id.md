@@ -28,7 +28,7 @@ Es posible que tenga que cambiar el ID de incremento de las nuevas entidades de 
 
 >[!INFO]
 >
->También puedes solucionar el problema de la pasarela de pago de PayPal permitiendo varios pagos por ID de factura en las Preferencias de recepción de pagos de PayPal. Ver [Solicitud rechazada de puerta de enlace de PayPal: problema de factura duplicada](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/paypal-gateway-rejected-request-duplicate-invoice-issue.html?lang=es) en _Knowledge Base_.
+>También puedes solucionar el problema de la pasarela de pago de PayPal permitiendo varios pagos por ID de factura en las Preferencias de recepción de pagos de PayPal. Ver [Solicitud rechazada de puerta de enlace de PayPal: problema de factura duplicada](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/paypal-gateway-rejected-request-duplicate-invoice-issue.html) en _Knowledge Base_.
 
 ## Pasos previos necesarios
 

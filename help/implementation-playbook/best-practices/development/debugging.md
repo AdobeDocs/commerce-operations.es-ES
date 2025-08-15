@@ -122,7 +122,7 @@ Consulte los siguientes diagramas:
 
 ![Diagrama de bisecto](../../../assets/playbooks/bisect2.png)
 
-Existen varios métodos para dividir en dos partes, pero el Adobe recomienda seguir este orden:
+Existen varios métodos para dividir en dos partes, pero Adobe recomienda seguir este orden:
 
 - Bisectar por tema
 - Bisect por confirmaciones

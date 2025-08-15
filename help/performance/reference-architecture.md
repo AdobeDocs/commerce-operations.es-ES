@@ -13,7 +13,7 @@ ht-degree: 0%
 
 En este tema se describe una configuración recomendada genérica para instancias de Adobe Commerce que utilizan servidores simples alojados físicamente en un centro de datos (no virtualizado) en el que los recursos no se comparten con otros usuarios. Su proveedor de alojamiento, especialmente si se especializa en alojamiento de alto rendimiento de Commerce, puede recomendarle una configuración diferente que sea igual o más eficaz para sus necesidades.
 
-Para Adobe Commerce sobre entornos de infraestructura en la nube, consulte [Arquitectura de inicio](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/architecture/starter-architecture).
+Para Adobe Commerce sobre entornos de infraestructura en la nube, consulte [Arquitectura de inicio](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/starter-architecture).
 
 ## [!DNL Commerce] Diagrama de arquitectura de referencia
 
@@ -21,7 +21,7 @@ El diagrama de arquitectura de referencia [!DNL Commerce] representa la práctic
 
 El color de cada elemento del diagrama indica si el elemento forma parte de Magento Open Source o Adobe Commerce y si es necesario.
 
-* Se requieren elementos naranjas para el Magento Open Source
+* Se requieren elementos naranjas para Magento Open Source
 * Los elementos grises son opcionales para Magento Open Source
 * Los elementos azules son opcionales para Adobe Commerce
 
@@ -64,7 +64,7 @@ En las siguientes secciones se proporcionan recomendaciones y consideraciones pa
 
 ### Arquitectura de referencia [!DNL Varnish] recomendada
 
-El Magento admite varios motores de almacenamiento en caché de páginas completas (File, Memcache, Redis, [!DNL Varnish]) de forma predeterminada, además de una cobertura ampliada mediante extensiones. [!DNL Varnish] es el motor de caché de página completa recomendado.  [!DNL Commerce] admite muchas configuraciones de [!DNL Varnish] diferentes.
+Magento admite varios motores de almacenamiento en caché de páginas completas (File, Memcache, Redis, [!DNL Varnish]) de forma predeterminada, así como una cobertura ampliada mediante extensiones. [!DNL Varnish] es el motor de caché de página completa recomendado.  [!DNL Commerce] admite muchas configuraciones de [!DNL Varnish] diferentes.
 
 Para los sitios que no requieren alta disponibilidad, se recomienda usar una configuración simple de [!DNL Varnish] con terminación SSL Nginx.
 

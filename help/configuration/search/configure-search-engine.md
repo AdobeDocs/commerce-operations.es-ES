@@ -17,9 +17,9 @@ En esta sección se analiza la configuración mínima que debe elegir para proba
 >[!TIP]
 >
 >En las versiones 2.4.4 y 2.4.3-p2, todos los campos etiquetados como **Elasticsearch** también se aplican a OpenSearch.
->Cuando se introdujo la compatibilidad con Elasticsearch 8.x en la versión 2.4.6, se crearon nuevas etiquetas para distinguir entre las configuraciones de Elasticsearch y OpenSearch.
+>>Cuando se introdujo la compatibilidad con Elasticsearch 8.x en la versión 2.4.6, se crearon nuevas etiquetas para distinguir entre las configuraciones de Elasticsearch y OpenSearch.
 
-Para obtener más información sobre cómo configurar el motor de búsqueda, consulta la [Guía del usuario](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-configuration.html?lang=es).
+Para obtener más información sobre cómo configurar el motor de búsqueda, consulta la [Guía del usuario](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-configuration.html).
 
 ## Configure el motor de búsqueda desde Admin
 
@@ -41,7 +41,7 @@ Para configurar el sistema para que utilice Elasticsearch u OpenSearch:
    | **[!UICONTROL Server Port]** | Introduzca el puerto proxy del servidor web. El valor predeterminado es 9200<br>Adobe Commerce en la infraestructura en la nube: obtenga este valor de su sistema de integración. |
    | **[!UICONTROL Index Prefix]** | Introduzca el prefijo de índice del motor de búsqueda. Si utiliza una sola instancia para más de una instalación de Commerce (entornos de ensayo y producción), debe especificar un prefijo único para cada instalación. De lo contrario, puede utilizar el prefijo predeterminado magento2. |
    | **[!UICONTROL Enable HTTP Auth]** | Haga clic en **[!UICONTROL Yes]** solo si habilitó la autenticación para el servidor del motor de búsqueda. Si es así, proporcione un nombre de usuario y una contraseña en los campos proporcionados. |
-   | **[!UICONTROL Server Timeout]** | Especifique la cantidad de tiempo (en segundos) de espera al intentar establecer una conexión con el Elasticsearch o el servidor de OpenSearch. |
+   | **[!UICONTROL Server Timeout]** | Especifique la cantidad de tiempo (en segundos) de espera al intentar establecer una conexión con el servidor de Elasticsearch o OpenSearch. |
 
 1. Haga clic en **[!UICONTROL Test Connection]**.
 
@@ -62,7 +62,7 @@ Si es así, intente lo siguiente:
 
 - Asegúrese de que el servidor del motor de búsqueda se esté ejecutando.
 - Si el servidor se encuentra en un host diferente al de Commerce, inicie sesión en el servidor de Commerce y haga ping en el host del motor de búsqueda. Resuelva los problemas de conectividad de red y vuelva a probar la conexión.
-- Examine la ventana de comandos en la que inició Elasticsearch o OpenSearch para buscar los seguimientos de pila y las excepciones. Debe resolverlos antes de continuar. En particular, asegúrese de iniciar el motor de búsqueda como usuario con privilegios de `root`.
+- Examine la ventana de comandos en la que inició Elasticsearch u OpenSearch para buscar los seguimientos de pila y las excepciones. Debe resolverlos antes de continuar. En particular, asegúrese de iniciar el motor de búsqueda como usuario con privilegios de `root`.
 - Asegúrese de que [Firewall de UNIX y SELinux](../../installation/prerequisites/search-engine/overview.md#firewall-and-selinux) estén deshabilitados, o configure reglas para permitir que el motor de búsqueda y Commerce se comuniquen entre sí.
 - Compruebe el valor del campo **[!UICONTROL Server Hostname]**. Asegúrese de que el servidor esté disponible. En su lugar, puede probar la dirección IP del servidor.
 - Utilice el comando `netstat -an | grep <listen-port>` para comprobar que el puerto especificado en el campo **[!UICONTROL Server Port]** no está siendo utilizado por otro proceso.

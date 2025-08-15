@@ -4,7 +4,7 @@ description: Siga estos pasos para personalizar lo que los clientes ven cuando l
 exl-id: 5d9f1493-e771-47b4-b906-3771026cf07a
 source-git-commit: a5dbefda6b77d993756143ef0e7270425f824c44
 workflow-type: tm+mt
-source-wordcount: '533'
+source-wordcount: '531'
 ht-degree: 0%
 
 ---
@@ -86,7 +86,7 @@ Si desea configurar varias tiendas, cada una con un diseño y contenido localiza
 
 En el ejemplo siguiente, se usa un archivo de plantilla de error de tipo `503`, que requiere contenido localizado.
 
-El constructor de la clase `Error_Processor` acepta un parámetro de GET `skin` para cambiar el diseño:
+El constructor de la clase `Error_Processor` acepta un parámetro GET `skin` para cambiar el diseño:
 
 ```php
 if (isset($_GET['skin'])) {

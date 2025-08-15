@@ -33,11 +33,11 @@ http://magento2.com/pub/static/version1475604434/frontend/Magento/luma/en_US/ima
 Cuando ejecuta el comando [`setup:static-content:deploy`](../cli/static-view-file-deployment.md) para implementar contenido estático, Commerce cambia automáticamente la versión de implementación.
 Esto cambia la dirección URL de los archivos estáticos y fuerza al explorador a cargar la nueva versión de los archivos.
 
-Commerce habilita esta función de forma predeterminada y Adobe recomienda mantenerla habilitada para evitar problemas relacionados con los exploradores que sirven recursos estáticos antiguos.
+Commerce habilita esta función de forma predeterminada y Adobe recomienda mantenerla habilitada para evitar problemas relacionados con los exploradores que usan recursos estáticos antiguos.
 
-La configuración para la firma de contenido estático se encuentra en [**[!UICONTROL Stores]**> Configuración > Configuración >**[!UICONTROL Advanced]**>**[!UICONTROL Developer]**>**[!UICONTROL Static Files Settings]**](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/tools/developer-tools#static-file-signatures).
+La configuración para la firma de contenido estático se encuentra en [**[!UICONTROL Stores]**> Configuración > Configuración >**[!UICONTROL Advanced]**>**[!UICONTROL Developer]**>**[!UICONTROL Static Files Settings]**](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/developer-tools#static-file-signatures).
 
-- **Solo local**: esta configuración está disponible si el sitio es **no** en [modo de producción](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html?lang=es#production-mode).
+- **Solo local**: esta configuración está disponible si el sitio es **no** en [modo de producción](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html#production-mode).
 - **Cloud**: esta configuración está oculta porque el modo de producción se aplica estrictamente; por lo tanto, debe utilizar la línea de comandos como se muestra a continuación.
 
 ![Configuración de archivos estáticos](../../assets/configuration/static-files-settings.png)

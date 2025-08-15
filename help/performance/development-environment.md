@@ -1,5 +1,5 @@
 ---
-title: Entorno de desarrollo Recommendations
+title: Recomendaciones del entorno de desarrollo
 description: Obtenga información acerca de las recomendaciones de rendimiento para configurar su entorno de desarrollo local de Adobe Commerce.
 exl-id: f57396c0-86be-4933-8066-eb51c42fb9e4
 source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e

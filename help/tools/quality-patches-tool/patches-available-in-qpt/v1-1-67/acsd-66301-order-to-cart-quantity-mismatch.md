@@ -4,13 +4,13 @@ description: Aplique el parche ACSD-66301 para solucionar el problema de Adobe C
 feature: Orders, Products
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 9a4224c02634514a9428dc6b0daf4c1d5f5c7c43
+exl-id: 61e0e491-b2dc-4ae0-807e-2ae80d17f9c2
+source-git-commit: 1e56c38713344b117ca3882861ced35e602b3239
 workflow-type: tm+mt
 source-wordcount: '399'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-66301: al mover productos de un pedido al carro de compras en el administrador de Commerce, la cantidad no coincide
 
@@ -28,7 +28,7 @@ El parche de ACSD-66301 corrige el problema en el que el traslado de productos d
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
@@ -59,7 +59,7 @@ Producto agregado al carro de compras con la cantidad antigua = *5*.
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
 * Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía [!DNL Quality Patches Tool].
-* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=es) en la guía Commerce en la infraestructura de la nube.
+* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) en la guía Commerce en la infraestructura de la nube.
 
 ## Lectura relacionada
 

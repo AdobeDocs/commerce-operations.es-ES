@@ -48,7 +48,7 @@ Para crear un tipo de configuración:
 1. Cree su archivo XML.
 1. Defina el objeto de configuración en su `di.xml`.
 
-   El siguiente ejemplo del [di.xml](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Sales/etc/di.xml) del módulo Magento_Sales ilustra el aspecto que debería tener un objeto de configuración.
+   El siguiente ejemplo del archivo [di.xml](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Sales/etc/di.xml) del módulo Magento_Sales ilustra el aspecto que debería tener un objeto de configuración.
 
    ```xml
    <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
@@ -76,7 +76,7 @@ Para crear un tipo de configuración:
    </config>
    ```
 
-   - El primer nodo de tipo establece el nombre de archivo del Reader, asociado con las clases `Converter` y `SchemaLocator`.
+   - El primer nodo de tipo establece el nombre de archivo de Reader, asociado con las clases `Converter` y `SchemaLocator`.
    - A continuación, el nodo de tipo virtual `pdfConfigDataStorage` adjunta la clase de lector a una instancia de [Magento\Framework\Config\Data](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Config/Data.php).
    - Y, por último, el último nodo de tipo adjunta ese tipo virtual de datos de configuración a la clase [Magento\Sales\Model\Order\Pdf\Config](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Sales/Model/Order/Pdf/Config.php), que se utiliza para leer valores en de esos archivos [pdf.xml](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Sales/etc/pdf.xml).
 
@@ -115,7 +115,7 @@ class Reader extends Filesystem
 
 >[!INFO]
 >
->Si prefiere crear su propia versión del lector, puede hacerlo implementando `\Magento\Framework\Config\ReaderInterface`. Ver [Magento de configuración de Analytics](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Analytics/ReportXml/Config/Reader.php)
+>Si prefiere crear su propia versión del lector, puede hacerlo implementando `\Magento\Framework\Config\ReaderInterface`. Ver [lector de configuración de Magento_Analytics](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Analytics/ReportXml/Config/Reader.php)
 
 Después de definir el lector, utilícelo para recopilar, combinar, validar y convertir los archivos de configuración en una representación de matriz interna.
 

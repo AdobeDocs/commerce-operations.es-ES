@@ -43,7 +43,7 @@ El error se produce si el valor devuelto es `mysql`, `elasticsearch` o `elastics
 >composer require-commerce magento/product-community-edition=<version>
 >```
 >
->Donde `<version>` es la versión del Magento que ejecutaba **antes** de la actualización. Por ejemplo, `2.3.5`.
+>Donde `<version>` es la versión de Magento que estaba ejecutando **antes de** la actualización. Por ejemplo, `2.3.5`.
 
 Siga las directrices descritas en las secciones siguientes para recuperarse de un estado incoherente.
 
@@ -60,18 +60,18 @@ Después de configurar el motor de búsqueda y reindexar, está listo para actua
 
 ## Si el motor de búsqueda es `elasticsearch`
 
-Ya no se admite el Elasticsearch 6 y versiones anteriores de.
+Elasticsearch 6 y versiones anteriores ya no son compatibles.
 
-El valor `elasticsearch` indica que su versión de nivel inferior de Adobe Commerce está configurada para utilizar el Elasticsearch 2.x. Esta versión de Elasticsearch ya no es compatible.
+El valor `elasticsearch` indica que su versión de nivel inferior de Adobe Commerce está configurada para utilizar Elasticsearch 2.x. Esta versión de Elasticsearch ya no es compatible.
 
 Debe realizar las siguientes tareas antes de actualizar a la versión 2.4:
 
-1. Actualice a una versión de Elasticsearch compatible con Commerce. Consulte [Actualización del Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) para obtener instrucciones completas sobre cómo realizar copias de seguridad de los datos, detectar posibles problemas de migración y probar las actualizaciones antes de implementarlas en producción. Según la versión actual del Elasticsearch, puede que sea necesario o no reiniciar el clúster por completo.
+1. Actualice a una versión de Elasticsearch compatible con Commerce. Consulte [Actualización de Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html) para obtener instrucciones completas sobre cómo realizar copias de seguridad de los datos, detectar posibles problemas de migración y probar actualizaciones antes de implementarlas en producción. Según la versión actual de Elasticsearch, puede que sea necesario o no reiniciar el clúster por completo.
 
    >[!NOTE]
    >
    >Elasticsearch requiere JDK 1.8 o superior. Consulte [Instalar el Kit de desarrollo de software de Java (JDK)](../../installation/prerequisites/search-engine/overview.md#install-the-java-software-development-kit-jdk) para comprobar qué versión de JDK está instalada.
 
-1. [Configurar el Elasticsearch](../../configuration/search/configure-search-engine.md) y reindexar.
+1. [Configurar Elasticsearch](../../configuration/search/configure-search-engine.md) y reindexar.
 
 Después de configurar el motor de búsqueda y reindexar, está listo para actualizar a 2.4.

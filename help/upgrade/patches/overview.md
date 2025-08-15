@@ -25,13 +25,13 @@ Cuando se ejecuta el programa de revisión, este archivo se lee en y se realizan
 
 Existen tres tipos de parches:
 
-- **Revisiones**: parches que publica el Adobe en el [Centro de seguridad](https://magento.com/security/patches).
+- **Revisiones**: parches que Adobe publica en el [Centro de seguridad](https://magento.com/security/patches).
 - **Parches individuales**: Parches que el Soporte técnico de Adobe Commerce crea y distribuye de forma individual.
 - **Parches personalizados**: parches no oficiales que se pueden crear a partir de una confirmación de Git.
 
 ## Revisiones
 
-Las revisiones son parches que contienen correcciones de alta calidad o seguridad de impacto que afectan a muchos comerciantes. Estas correcciones se aplican a la próxima versión del parche para la versión secundaria aplicable. El Adobe publica revisiones según sea necesario.
+Las revisiones son parches que contienen correcciones de alta calidad o seguridad de impacto que afectan a muchos comerciantes. Estas correcciones se aplican a la próxima versión del parche para la versión secundaria aplicable. Adobe publica revisiones según sea necesario.
 
 Encontrará revisiones en [Centro de seguridad](https://magento.com/security/patches). Siga las instrucciones de la página para descargar el archivo de parche, según la versión y el tipo de instalación. Use la [línea de comandos](../patches/apply.md#) o [Compositor](../patches/apply.md) para aplicar revisiones de revisión.
 
@@ -41,9 +41,9 @@ Encontrará revisiones en [Centro de seguridad](https://magento.com/security/pat
 
 ## Parches individuales
 
-Los parches individuales contienen correcciones de calidad de bajo impacto para un problema específico. Estas correcciones se aplican a la versión menor admitida más recientemente (por ejemplo, 2.4.x), pero podrían no estar presentes en la versión menor admitida anteriormente (por ejemplo, 2.3.x). El Adobe libera los parches individuales según sea necesario.
+Los parches individuales contienen correcciones de calidad de bajo impacto para un problema específico. Estas correcciones se aplican a la versión menor admitida más recientemente (por ejemplo, 2.4.x), pero podrían no estar presentes en la versión menor admitida anteriormente (por ejemplo, 2.3.x). Adobe publica parches individuales según sea necesario.
 
-Use [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es){target="_blank"} para aplicar parches individuales.
+Use [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"} para aplicar parches individuales.
 
 >[!NOTE]
 >
@@ -90,10 +90,10 @@ index c8a6fef58d31..7d01c195791e 100644
 
 Puede aplicar parches utilizando cualquiera de los siguientes métodos:
 
-- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es){target="_blank"}
+- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
 - [Línea de comandos](/help/upgrade/patches/apply.md#command-line)
 - [Compositor](/help/upgrade/patches/apply.md#composer)
 
 >[!NOTE]
 >
->Para aplicar un parche a un proyecto de Adobe Commerce en la nube, consulte [Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=es) en la guía de _Commerce en la nube_.
+>Para aplicar un parche a un proyecto de Adobe Commerce en la nube, consulte [Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) en la guía de _Commerce en la nube_.

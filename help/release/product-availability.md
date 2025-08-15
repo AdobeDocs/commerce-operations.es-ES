@@ -31,7 +31,7 @@ En la tabla siguiente se muestra la compatibilidad con las versiones de cada ext
 
 ## Servicios de Commerce
 
-[Servicios de Commerce](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html?lang=es) son un conjunto de características hospedadas en Adobe que proporcionan una funcionalidad sólida y tiempos de respuesta rápidos, junto con su instancia de Commerce.
+[Servicios de Commerce](https://experienceleague.adobe.com/docs/commerce/user-guides/home.html) son un conjunto de características hospedadas en Adobe que proporcionan una funcionalidad sólida y tiempos de respuesta rápidos, junto con su instancia de Commerce.
 
 Se recomienda que los comerciantes utilicen la versión más reciente de un servicio para garantizar la máxima estabilidad y funcionalidad. La documentación describe la versión lanzada actualmente.
 

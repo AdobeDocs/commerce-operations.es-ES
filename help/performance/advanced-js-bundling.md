@@ -76,7 +76,7 @@ Recuerde, el objetivo del agrupamiento de [!DNL JavaScript] es reducir el númer
 
 Una manera de conseguirlo es definir los paquetes por tipos de página. Puede clasificar las páginas de [!DNL Commerce] en varios tipos de página, incluidos Categoría, Producto, CMS, Cliente, Carro de compras y Cierre de compra. Cada página clasificada en uno de estos tipos de página tiene un conjunto diferente de dependencias del módulo RequireJS. Cuando agrupa los módulos RequireJS por tipo de página, acaba teniendo solo un puñado de paquetes que cubren las dependencias de cualquier página de su tienda.
 
-Por ejemplo, puede terminar con un paquete para las dependencias comunes a todas las páginas, un paquete para páginas solo CMS, un paquete para páginas solo catálogo, otro paquete para páginas solo búsqueda y un paquete para páginas de cierre de compra.
+Por ejemplo, podría terminar con un paquete para las dependencias comunes a todas las páginas, un paquete para páginas solo de CMS, un paquete para páginas solo de catálogo, otro paquete para páginas solo de búsqueda y un paquete para páginas de cierre de compra.
 
 También puede crear paquetes por propósito: para funciones comunes, funciones relacionadas con productos, funciones de envío, funciones de cierre de compra, impuestos y validaciones de formularios. La forma de definir los paquetes depende de usted y de la estructura de su tienda. Es posible que algunas estrategias de agrupamiento funcionen mejor que otras.
 
@@ -380,7 +380,7 @@ Este ejemplo reutiliza los recursos `mage/bootstrap` y `requirejs/require`, lo q
 
 Los pasos siguientes describen el proceso básico para generar paquetes de [!DNL Commerce] más eficientes. Puede automatizar este proceso como desee, pero aún necesitará utilizar `nodejs` y `r.js` para generar los paquetes. Y si las temáticas tienen [!DNL JavaScript] personalizaciones relacionadas y no pueden reutilizar el mismo archivo de `build.js`, es posible que necesite crear varias `build.js` configuraciones por temática.
 
-#### 1. Generar sitios de almacenamiento estáticos
+#### &#x200B;1. Generar sitios de almacenamiento estáticos
 
 Antes de generar paquetes, ejecute el comando de implementación estática:
 
@@ -397,7 +397,7 @@ Este comando genera implementaciones de almacén estáticas para cada tema y con
 
 Para generar paquetes para todas las temáticas y configuraciones regionales de la tienda, repita los pasos a continuación para cada temática y configuración regional de la tienda.
 
-#### 2. Mueva el contenido del almacén estático a un directorio temporal
+#### &#x200B;2. Mueva el contenido del almacén estático a un directorio temporal
 
 En primer lugar, debe mover el contenido estático del directorio de destino a algún directorio temporal porque RequireJS reemplaza todo el contenido del directorio de destino.
 
@@ -411,7 +411,7 @@ Por ejemplo:
 mv pub/static/frontend/Magento/luma/en_US pub/static/frontend/Magento/luma/en_US_tmp
 ```
 
-#### 3. Ejecute el optimizador r.js
+#### &#x200B;3. Ejecute el optimizador r.js
 
 A continuación, ejecute el optimizador r.js en el archivo `build.js` desde el directorio raíz de [!DNL Commerce]. Las rutas a todos los directorios y archivos son relativas al directorio de trabajo.
 
@@ -438,7 +438,7 @@ drwxr-xr-x 70 root root    4096 Mar 28 11:24 ../
 -rw-r--r--  1 root root   74233 Mar 28 11:24 shipping.js
 ```
 
-#### 4. Configurar RequireJS para que utilice paquetes
+#### &#x200B;4. Configurar RequireJS para que utilice paquetes
 
 Para que RequireJS use los paquetes, agregue una llamada de retorno `onModuleBundleComplete` después del nodo `modules` en el archivo `build.js`:
 
@@ -474,7 +474,7 @@ require.config({});
 }
 ```
 
-#### 5. Vuelva a ejecutar el comando de implementación
+#### &#x200B;5. Vuelva a ejecutar el comando de implementación
 
 Ejecute el siguiente comando para implementar:
 
@@ -497,7 +497,7 @@ require.config({
 >
 >Al configurar paquetes, asegúrese de colocar las llamadas de `requirejs.config()` en el orden en que desea que se ejecuten, ya que las llamadas se ejecutan en el orden en que aparecen.
 
-#### 6. Pruebe los resultados
+#### &#x200B;6. Pruebe los resultados
 
 Una vez que se carga la página, observe que el explorador carga diferentes dependencias y paquetes. Por ejemplo, estos son los resultados para el perfil &quot;3G lento&quot;:
 
@@ -505,7 +505,7 @@ Una vez que se carga la página, observe que el explorador carga diferentes depe
 
 El tiempo de carga de una página principal vacía ahora es dos veces más rápido que usar el paquete [!DNL Commerce] nativo. Pero podemos hacerlo aún mejor.
 
-#### 7. Optimizar los paquetes
+#### &#x200B;7. Optimizar los paquetes
 
 Aunque estén comprimidos en gzip, los [!DNL JavaScript] archivos siguen siendo grandes. Minimícelos con RequireJS, que usa uglifier para minificar [!DNL JavaScript] con buenos resultados.
 

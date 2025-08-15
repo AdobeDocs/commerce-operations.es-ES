@@ -34,7 +34,7 @@ El fotograma **[!UICONTROL PHP Memory detail]** muestra el uso de memoria de los
 
 ## [!UICONTROL PHP CPU Utilization]
 
-![Uso de CPU PHP](../../assets/tools/php-cpu-utilization.jpg)
+![Utilización de PHP CPU](../../assets/tools/php-cpu-utilization.jpg)
 
 El fotograma **[!UICONTROL PHP CPU Utilization]** muestra el porcentaje de uso de CPU de los procesos PHP en el periodo de tiempo seleccionado.
 

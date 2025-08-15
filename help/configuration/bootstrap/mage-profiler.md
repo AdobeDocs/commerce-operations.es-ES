@@ -15,11 +15,11 @@ Con los perfiles de Commerce, puede:
 
 - Habilite un generador de perfiles integrado.
 
-  Puede utilizar un generador de perfiles integrado con Commerce para realizar tareas como analizar el rendimiento. La naturaleza de los perfiles depende de las herramientas analíticas que utilice. Admitimos varios formatos, incluido el HTML. Cuando se habilita el generador de perfiles, se genera un archivo de `var/profiler.flag` que indica que el generador de perfiles está habilitado y que hay configuraciones. Cuando está desactivado, este archivo se elimina.
+  Puede utilizar un generador de perfiles integrado con Commerce para realizar tareas como analizar el rendimiento. La naturaleza de los perfiles depende de las herramientas analíticas que utilice. Admitimos varios formatos, incluido HTML. Cuando se habilita el generador de perfiles, se genera un archivo de `var/profiler.flag` que indica que el generador de perfiles está habilitado y que hay configuraciones. Cuando está desactivado, este archivo se elimina.
 
 - Mostrar gráficos de dependencias en una página de Commerce.
 
-  Un gráfico de dependencias _1&rbrace; es una lista de dependencias de objetos y todas sus dependencias, todas las dependencias de esas dependencias, etc._
+  Un gráfico de dependencias _1} es una lista de dependencias de objetos y todas sus dependencias, todas las dependencias de esas dependencias, etc._
 
   Debería interesarle especialmente la lista de _dependencias sin usar_, que son objetos que se crearon porque se solicitaron en algún constructor, pero que nunca se utilizaron (es decir, no se llamó a ninguno de sus métodos). Como resultado, se desperdician el tiempo y la memoria del procesador empleados para crear estas dependencias.
 

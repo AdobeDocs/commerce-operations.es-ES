@@ -4,13 +4,13 @@ description: Aplique el parche ACSD-66434 para solucionar el problema de Adobe C
 feature: B2B, GraphQL
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 422e5a9eb9948032cccaac98415cf4b92895d5a9
+exl-id: cd83c868-29d8-4d7c-9067-af7597056d35
+source-git-commit: e60194341bf79ca3ecdc505cf30f226b8f1b6c7f
 workflow-type: tm+mt
 source-wordcount: '300'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-66434: faltan [!UICONTROL Customer ID] en las consultas de la empresa [!DNL GraphQL]
 
@@ -28,7 +28,7 @@ La revisión ACSD-66434 corrige el problema en el que **[!UICONTROL Customer ID]
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
@@ -87,7 +87,7 @@ query {
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
 * Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía [!DNL Quality Patches Tool].
-* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=es) en la guía Commerce en la infraestructura de la nube.
+* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) en la guía Commerce en la infraestructura de la nube.
 
 ## Lectura relacionada
 

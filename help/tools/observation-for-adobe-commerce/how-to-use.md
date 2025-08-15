@@ -28,7 +28,7 @@ Comprobar estados de recursos del entorno:
 
    * Adobe Commerce en la infraestructura en la nube proporciona [!DNL Managed alerts]. Puede hacer clic en el vínculo del encabezado para ver [!DNL Support Knowledge Base] artículos que le ayudarán a determinar las acciones por su parte para alertas específicas.
 
-* Examine el fotograma **[!UICONTROL CPU % by host]**: si muestra un alto uso de CPU, consulte el artículo [!DNL Support Knowledge Base] en el encabezado para ver el fotograma. Compruebe también que las importaciones/exportaciones o las copias de seguridad de la base de datos no se realicen durante los períodos de tráfico máximo.
+* Examine el fotograma **[!UICONTROL CPU % by host]**: si muestra una alta utilización de CPU, busque el fotograma en el artículo [!DNL Support Knowledge Base] del encabezado. Compruebe también que las importaciones/exportaciones o las copias de seguridad de la base de datos no se realicen durante los períodos de tráfico máximo.
 
 * Compruebe el marco **[!UICONTROL Web Traffic volume compared to one week ago]**: si el tráfico es mucho mayor que la semana anterior durante el mismo período, ¿se puede explicar (campaña de venta o nuevos productos que se han comercializado, por ejemplo)?
    * Si no se puede explicar un aumento en el tráfico, observe el Tiempo de respuesta promedio (milisegundos) para el entorno de producción. ¿Es diferente el mayor tráfico que contribuye a un tiempo de respuesta de lo normal? Expanda el periodo de tiempo para ver si se trata de una anomalía.

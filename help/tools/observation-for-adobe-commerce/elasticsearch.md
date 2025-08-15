@@ -44,13 +44,13 @@ Este marco muestra el nombre del índice y el recuento del estado del color del 
 
 ## [!UICONTROL Elasticsearch Status by node information]
 
-![Estado del Elasticsearch](../../assets/tools/elasticsearch-status-by-node.jpg)
+![Estado de Elasticsearch](../../assets/tools/elasticsearch-status-by-node.jpg)
 
 El marco **[!UICONTROL Elasticsearch Status by node information]** muestra el estado del clúster [!DNL Elasticsearch] por color y por nodo. Esto ayuda a indicar qué nodo del clúster [!DNL Elasticsearch] devuelve qué estado durante el periodo de tiempo seleccionado.
 
 ## [!UICONTROL Elasticsearch index information]
 
-![Información del índice del Elasticsearch](../../assets/tools/elasticsearch-tab-elasticsearch-index-information-image-1.jpg)
+![Información del índice de Elasticsearch](../../assets/tools/elasticsearch-tab-elasticsearch-index-information-image-1.jpg)
 
 La tabla **[!UICONTROL Elasticsearch index information]** muestra el nombre del índice, en qué nodo se encuentra, el número de documentos indexados, el estado del índice y el tamaño del índice en MB en un momento determinado.
 
@@ -68,19 +68,19 @@ El fotograma **[!UICONTROL Elasticsearch process CPU %]** muestra el porcentaje 
 
 ## [!UICONTROL Elasticsearch Index information]
 
-![Información del índice de Elasticsearch](../../assets/tools/elasticsearch-index-information-2.jpg)
+![Información de índice de Elasticsearch](../../assets/tools/elasticsearch-index-information-2.jpg)
 
 A medida que se crean y actualizan los índices, su estado puede cambiar.
 
 ## [!UICONTROL Elasticsearch Index Size]
 
-![Tamaño de índice del Elasticsearch](../../assets/tools/elasticsearch-index-size.jpg)
+![Tamaño de índice de Elasticsearch](../../assets/tools/elasticsearch-index-size.jpg)
 
 El fotograma **[!UICONTROL Elasticsearch Index Size]** indica el nombre y el tamaño del índice en el periodo de tiempo seleccionado. Puede indicar problemas con la indexación de un sitio.
 
 ## [!UICONTROL Elasticsearch Errors]
 
-![Errores Del Elasticsearch](../../assets/tools/elasticsearch-tab-elasticsearch-errors.jpg)
+![Errores De Elasticsearch](../../assets/tools/elasticsearch-tab-elasticsearch-errors.jpg)
 
 El marco **[!UICONTROL Elasticsearch Errors]** muestra errores con [!DNL Elasticsearch], como la falta de espacio, el cambio del estado Amarillo a Rojo, cuando se produce un error en todos los fragmentos, cuando hay problemas de parámetros con las búsquedas, errores de versión y cuando todos los nodos no están disponibles.
 

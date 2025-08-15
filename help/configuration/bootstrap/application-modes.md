@@ -26,7 +26,7 @@ Consulte [Establecer el modo de operación](../cli/set-mode.md) para obtener inf
 
 Debido al sistema de archivos de solo lectura, existe una estricta restricción contra el cambio de modos en entornos de nube remotos y el Soporte técnico de Adobe Commerce no puede anularlo. No intente cambiar los modos modificando el archivo `app/etc/env.php` porque el paquete `ece-tools` sobrescribe el archivo basándose en varios orígenes de configuración.
 
-Adobe Commerce en la infraestructura en la nube ejecuta automáticamente la aplicación en modo _mantenimiento_ durante una implementación, lo que desconecta el sitio hasta que se completa la implementación. De lo contrario, la aplicación permanecerá en modo _producción_. Consulte [Proceso de implementación](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/process.html?lang=es#deploy-phase) en la guía de _Commerce en infraestructura de nube_.
+Adobe Commerce en la infraestructura en la nube ejecuta automáticamente la aplicación en modo _mantenimiento_ durante una implementación, lo que desconecta el sitio hasta que se completa la implementación. De lo contrario, la aplicación permanecerá en modo _producción_. Consulte [Proceso de implementación](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/process.html#deploy-phase) en la guía de _Commerce en infraestructura de nube_.
 
 Si usa Cloud Docker para Commerce como herramienta de desarrollo, puede implementar su proyecto de infraestructura en la nube en un entorno de Docker en modo _desarrollador_, pero el rendimiento es más lento debido a las operaciones de sincronización de archivos adicionales. Consulte [Implementar el entorno de Docker](https://developer.adobe.com/commerce/cloud-tools/docker/deploy/#launch-mode) en la guía de _Cloud Docker para Commerce_.
 
@@ -58,7 +58,7 @@ En modo de desarrollador:
 
 >[!NOTE]
 >
->Este modo no es compatible con el entorno de Adobe Commerce Cloud y el Soporte de Adobe Commerce no puede facilitar el cambio del modo de aplicación.
+>Este modo no es compatible con el entorno de Adobe Commerce Cloud y la asistencia de Adobe Commerce no puede facilitar el cambio del modo de la aplicación.
 
 ## Modo de producción
 
@@ -78,7 +78,7 @@ El modo _mantenimiento_ limita o impide el acceso a un sitio durante las mejoras
 
 Puede crear una [página de mantenimiento personalizada](../../upgrade/troubleshooting/maintenance-mode-options.md), habilitar y deshabilitar manualmente el modo de mantenimiento y configurar el modo de mantenimiento para permitir que los visitantes de direcciones IP autorizadas vean la tienda normalmente. Consulte [habilitar y deshabilitar el modo de mantenimiento](../../installation/tutorials/maintenance-mode.md) en la _Guía de instalación_.
 
-Si utiliza Commerce en la infraestructura de la nube, la aplicación de Commerce se ejecuta en modo de mantenimiento durante la fase de implementación. Cuando la implementación se completa correctamente, la aplicación de Commerce vuelve a ejecutarse en el modo de producción. Consulte [Vínculos de implementación](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices.html?lang=es#phase-5%3A-deployment-hooks) en la guía de _Commerce en infraestructura de nube_.
+Si utiliza Commerce en la infraestructura de la nube, la aplicación de Commerce se ejecuta en modo de mantenimiento durante la fase de implementación. Cuando la implementación se completa correctamente, la aplicación de Commerce vuelve a ejecutarse en el modo de producción. Consulte [Vínculos de implementación](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices.html#phase-5%3A-deployment-hooks) en la guía de _Commerce en infraestructura de nube_.
 
 En modo de mantenimiento:
 

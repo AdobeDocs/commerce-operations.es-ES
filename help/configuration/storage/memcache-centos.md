@@ -16,7 +16,7 @@ Esta sección proporciona instrucciones para instalar memcached en CentOS. Para 
 
 >[!INFO]
 >
->El Adobe recomienda utilizar la última versión estable de memcached (actualmente 3.1.3 para memcached).
+>Adobe recomienda utilizar la última versión estable en memcached (actualmente 3.1.3 para memcached).
 
 Debido a que PHP no tiene soporte nativo para memcache, debe instalar una extensión para que PHP la use. Hay dos extensiones PHP disponibles y es importante descodificar cuál utilizar:
 

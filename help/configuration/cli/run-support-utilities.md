@@ -15,7 +15,7 @@ ht-degree: 0%
 
 {{file-system-owner}}
 
-Las utilidades de soporte de Adobe Commerce, también denominadas [Recopilador de datos](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/tools/support#data-collector), permiten a los usuarios recopilar información de solución de problemas acerca del sistema que puede usar nuestro equipo de soporte.
+Las utilidades de soporte de Adobe Commerce, también denominadas [Recopilador de datos](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/support#data-collector), permiten a los usuarios recopilar información de solución de problemas acerca del sistema que puede usar nuestro equipo de soporte.
 
 Adobe Commerce usa estas copias de seguridad, también denominadas _volcados_, para analizar los problemas que requieren acceso al código. A continuación se muestra un escenario típico:
 

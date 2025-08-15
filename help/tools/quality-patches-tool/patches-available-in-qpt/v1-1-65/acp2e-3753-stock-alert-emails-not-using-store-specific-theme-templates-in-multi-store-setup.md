@@ -3,13 +3,13 @@ title: 'ACP2E-3753: Correos electrónicos de alerta de stock que no utilizan pla
 description: Aplique el parche ACP2E-3753 para solucionar el problema de Adobe Commerce, donde los correos electrónicos de alerta de productos en una configuración de varias tiendas siempre se envían con la temática predeterminada, independientemente de la configuración de la tienda o el tema.
 feature: Themes, Personalization
 role: Admin, Developer
-source-git-commit: 6af6dc5d4880cc0cb80c443cab98cfb562949101
+exl-id: ad44ffdd-f122-4119-83e3-1816951b662c
+source-git-commit: 2089fed83a207f9d0211273652ea320d2590f8d5
 workflow-type: tm+mt
 source-wordcount: '379'
 ht-degree: 0%
 
 ---
-
 
 # ACP2E-3753: Correos electrónicos de alerta de stock que no utilizan plantillas de temas específicas de la tienda en la configuración de varias tiendas
 
@@ -27,7 +27,7 @@ El parche ACP2E-3753 corrige el problema en el que los correos electrónicos de 
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
@@ -61,7 +61,7 @@ Los correos electrónicos no incluyen las plantillas configuradas en el sitio we
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
 * Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía [!DNL Quality Patches Tool].
-* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=es) en la guía Commerce en la infraestructura de la nube.
+* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) en la guía Commerce en la infraestructura de la nube.
 
 ## Lectura relacionada
 

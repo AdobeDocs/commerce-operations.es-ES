@@ -5,7 +5,7 @@ feature: Configuration, Cache, Install, Logs
 exl-id: b31179ef-3c0e-4a6b-a118-d3be1830ba4e
 source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
-source-wordcount: '738'
+source-wordcount: '737'
 ht-degree: 0%
 
 ---
@@ -80,7 +80,7 @@ Para configurar mínimamente el barniz:
 
 1. Reemplace el valor de `.port` por el puerto de escucha del servidor web (8080 en este ejemplo).
 
-   Ejemplo: Apache está instalado en el host 192.0.2.55 y Apache escucha en el puerto 8080:
+   Ejemplo: Apache está instalado en el host 192.0.2.55 y Apache está escuchando en el puerto 8080:
 
    ```conf
    backend default {
@@ -91,7 +91,7 @@ Para configurar mínimamente el barniz:
 
    >[!INFO]
    >
-   >Si Varnish y Apache se ejecutan en el mismo host, Adobe recomienda que utilice una dirección IP o un nombre de host y no `localhost`.
+   >Si Varnish y Apache se están ejecutando en el mismo host, Adobe recomienda que utilice una dirección IP o un nombre de host y no `localhost`.
 
 1. Guarde los cambios en `default.vcl` y salga del editor de texto.
 
@@ -197,7 +197,7 @@ backend default {
 
 ## Verificar encabezados de respuesta HTTP
 
-Ahora puede comprobar que Varnish sirve páginas mirando los encabezados de respuesta del HTML devueltos desde cualquier página.
+Ahora puede comprobar que Varnish sirve páginas mirando los encabezados de respuesta de HTML devueltos desde cualquier página.
 
 Para poder ver los encabezados, debe establecer Commerce para el modo de desarrollador. Hay varias formas de hacerlo, la más sencilla de las cuales es modificar `.htaccess` en la raíz de la aplicación de Commerce. También puede usar el comando [`magento deploy:mode:set`](../cli/set-mode.md).
 
@@ -234,7 +234,7 @@ Se muestra una larga lista de encabezados de respuesta en la ventana del símbol
 
 Si se muestran encabezados como este _no_, detenga Varnish, compruebe su `default.vcl` y vuelva a intentarlo.
 
-### Ver encabezados de respuesta del HTML
+### Consulte los encabezados de respuesta de HTML
 
 Existen varias formas de ver los encabezados de respuesta, incluido el uso de un complemento del explorador o un inspector del explorador.
 

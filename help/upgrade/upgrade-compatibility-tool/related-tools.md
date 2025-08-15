@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Hay herramientas relacionadas con [!DNL Upgrade Compatibility Tool], que se pueden usar para resultados similares, o pueden almacenar en déclencheur una ejecución de [!DNL Upgrade Compatibility Tool].
 
-- **[!DNL Security scanner]**: proporciona a los clientes de Adobe Commerce información en tiempo real sobre el estado de seguridad de su tienda mediante la detección proactiva de malware y la notificación si su tienda está en peligro. Consulte la [[!DNL Security scan] guía del usuario](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/security/security-scan) para obtener más información.
+- **[!DNL Security scanner]**: proporciona a los clientes de Adobe Commerce información en tiempo real sobre el estado de seguridad de su tienda mediante la detección proactiva de malware y la notificación si su tienda está en peligro. Consulte la [[!DNL Security scan] guía del usuario](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-scan) para obtener más información.
 
 - **[!DNL Site-Wide Analysis Tool]**: herramienta de autoservicio proactiva y repositorio central que incluye información detallada del sistema y recomendaciones para garantizar la seguridad y la operabilidad de la instalación de Adobe Commerce. Proporciona monitorización del rendimiento, informes y consejos en tiempo real las 24 horas del día, los 7 días de la semana para identificar posibles problemas y proporcionar una mejor visibilidad de las configuraciones de salud, seguridad y aplicaciones del sitio. Consulte la [[!DNL Site-Wide Analysis Tool] guía](../../tools/site-wide-analysis-tool/intro.md) para obtener más información.
 
@@ -25,4 +25,4 @@ Hay herramientas relacionadas con [!DNL Upgrade Compatibility Tool], que se pued
   >
   >[!DNL AmpersandHQ] no es una herramienta oficial de Adobe.
 
-- **[!DNL Quality Patches Tool]**: herramienta de línea de comandos que proporciona parches de calidad para Adobe Commerce. Consulte la [[!DNL Quality patches tool] guía del usuario](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es){target="_blank"} para obtener más información.
+- **[!DNL Quality Patches Tool]**: herramienta de línea de comandos que proporciona parches de calidad para Adobe Commerce. Consulte la [[!DNL Quality patches tool] guía del usuario](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"} para obtener más información.

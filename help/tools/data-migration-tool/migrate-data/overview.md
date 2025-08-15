@@ -1,6 +1,6 @@
 ---
 title: Resumen de migración
-description: Obtenga información sobre cómo empezar a migrar datos del Magento 1 al Magento 2 con  [!DNL Data Migration Tool].
+description: Obtenga información sobre cómo empezar a migrar datos de Magento 1 a Magento 2 con  [!DNL Data Migration Tool].
 exl-id: b775ede1-9d1d-49d5-ad0f-763404b48278
 topic: Commerce, Migration
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Resumen de migración
 
-Antes de iniciar la migración, detenga todos los trabajos cron del Magento 1.
+Antes de iniciar la migración, detenga todos los trabajos cron de Magento 1.
 
 Durante el proceso de migración, siga estas reglas generales para que la migración se realice correctamente:
 
@@ -44,7 +44,7 @@ Esta sección muestra cómo ejecutar [!DNL Data Migration Tool] para migrar la c
    sudo -u <file system owner>  <command>
    ```
 
-1. Para ejecutar comandos del Magento desde cualquier directorio, agregue `<magento_root>/bin` al sistema `PATH`.
+1. Para ejecutar comandos de Magento desde cualquier directorio, agregue `<magento_root>/bin` al sistema `PATH`.
 
    Como los shells tienen sintaxis diferente, consulte una referencia como [unix.stackexchange.com](https://unix.stackexchange.com/questions/117467/how-to-permanently-set-environmental-variables).
 

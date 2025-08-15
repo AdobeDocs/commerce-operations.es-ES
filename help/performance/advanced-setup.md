@@ -92,14 +92,14 @@ bin/magento setup:db-schema:add-slave
 
 Este comando realiza cambios de configuración, pero no configura la replicación en sí. Esto debe hacerse manualmente.
 
-Después de dividir la base de datos maestra y establecer las bases de datos esclavas, [!DNL Commerce] regula automáticamente las conexiones con una base de datos específica y toma decisiones basadas en el tipo de solicitud (POST, PUT, GET, etc.) y recurso de datos. Si [!DNL Commerce] o sus extensiones realizan operaciones de escritura en una solicitud de GET, el sistema cambia automáticamente la conexión de base de datos secundaria a base de datos maestra. Funciona del mismo modo con las bases de datos maestras: tan pronto como se trabaja con una tabla relacionada con la retirada, el sistema redirige todas las consultas a una base de datos específica. Mientras tanto, todas las consultas relacionadas con el catálogo irán a la base de datos principal.
+Después de dividir la base de datos maestra y establecer las bases de datos esclavas, [!DNL Commerce] regula automáticamente las conexiones con una base de datos específica y toma decisiones basadas en el tipo de solicitud (POST, PUT, GET, etc.) y recurso de datos. Si [!DNL Commerce] o sus extensiones realizan operaciones de escritura en una petición GET, el sistema cambiará automáticamente la conexión de base de datos secundaria a maestra. Funciona del mismo modo con las bases de datos maestras: tan pronto como se trabaja con una tabla relacionada con la retirada, el sistema redirige todas las consultas a una base de datos específica. Mientras tanto, todas las consultas relacionadas con el catálogo irán a la base de datos principal.
 
 Para obtener más información sobre la configuración y las ventajas de la configuración maestra/esclava múltiple, consulte
 [Solución de rendimiento de base de datos dividida](../configuration/storage/multi-master.md).
 
 ## Proporcionar contenido multimedia
 
-Magento no proporciona ninguna integración específica para ofrecer y entregar contenido multimedia. Todos los enfoques comunes se pueden utilizar juntos en Magento.
+Magento no proporciona ninguna integración específica para servir y entregar contenido multimedia. Todos los enfoques comunes se pueden utilizar juntos en Magento.
 
 La forma más sencilla de proporcionar contenido multimedia es enviarlo y almacenarlo en caché en un servidor [!DNL Varnish]. Este enfoque supone un sistema de archivos compartido para almacenar contenido multimedia o un servidor dedicado que señala a [!DNL Varnish].
 

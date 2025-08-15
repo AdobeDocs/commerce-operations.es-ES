@@ -116,5 +116,5 @@ Al visitar una URL de caché de imagen, se generan todos los tamaños de imagen 
 
 >[!NOTE]
 >
->- Adobe Commerce en proyectos de infraestructura en la nube puede descargar el cambio de tamaño de la imagen del producto en el servicio Fastly. Consulte [Optimización de imagen profunda](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization.html?lang=es#deep-image-optimization) en la _Guía de Cloud_.
->- Si utiliza el módulo de almacenamiento remoto, también puede intentar descargar el cambio de tamaño de la imagen a nginx. Consulte [Configurar el cambio de tamaño de la imagen para almacenamiento remoto](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/storage/remote-storage/remote-storage-image-resize.html?lang=es) en la _Guía de configuración_.
+>- Adobe Commerce en proyectos de infraestructura en la nube puede descargar el cambio de tamaño de la imagen del producto en el servicio Fastly. Consulte [Optimización de imagen profunda](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization.html?lang=en#deep-image-optimization) en la _Guía de Cloud_.
+>- Si utiliza el módulo de almacenamiento remoto, también puede intentar descargar el cambio de tamaño de la imagen a nginx. Consulte [Configurar el cambio de tamaño de la imagen para almacenamiento remoto](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/storage/remote-storage/remote-storage-image-resize.html) en la _Guía de configuración_.

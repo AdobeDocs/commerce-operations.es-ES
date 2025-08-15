@@ -5,7 +5,7 @@ feature: Configuration, Cache
 exl-id: 0504c6fd-188e-46eb-be8e-968238571f4e
 source-git-commit: ba3c656566af47f16f58f476d7bc9f4781bb0234
 workflow-type: tm+mt
-source-wordcount: '423'
+source-wordcount: '421'
 ht-degree: 0%
 
 ---
@@ -19,11 +19,11 @@ Para reducir el ancho de banda de red a Redis, almacene los datos de la caché l
 - Compruebe la versión de los datos de la caché y asegúrese de que la caché más reciente se almacena localmente
 - Transfiera la última caché del equipo remoto al equipo local
 
-Commerce almacena la versión de los datos con hash en Redis, con el sufijo &quot;:hash&quot; anexado a la clave normal. Si hay una caché local obsoleta, los datos se transfieren al equipo local con un adaptador de caché.
+Commerce almacena la versión de datos con hash en Redis, con el sufijo &#39;:hash&#39; anexado a la clave normal. Si hay una caché local obsoleta, los datos se transfieren al equipo local con un adaptador de caché.
 
 >[!INFO]
 >
->Para Adobe Commerce en la infraestructura en la nube, puede usar [implementar variables](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=es#redis_backend) para la configuración de la caché L2.
+>Para Adobe Commerce en la infraestructura en la nube, puede usar [implementar variables](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_backend) para la configuración de la caché L2.
 
 ## Ejemplo de configuración
 
@@ -70,9 +70,9 @@ Donde:
    - `local_backend_options` es la configuración de caché local.
    - `cache_dir` es una opción específica de la caché de archivos para el directorio donde se almacena la caché local.
 
-El Adobe recomienda usar Redis para el almacenamiento remoto en caché (`\Magento\Framework\Cache\Backend\Redis`) y `Cm_Cache_Backend_File` para el almacenamiento local en caché de datos en la memoria compartida, con: `'local_backend_options' => ['cache_dir' => '/dev/shm/']`
+Adobe recomienda usar Redis para el almacenamiento remoto en caché (`\Magento\Framework\Cache\Backend\Redis`) y `Cm_Cache_Backend_File` para el almacenamiento local en caché de datos en la memoria compartida, con: `'local_backend_options' => ['cache_dir' => '/dev/shm/']`
 
-El Adobe recomienda el uso de la característica [`cache preload`](redis-pg-cache.md#redis-preload-feature), ya que reduce drásticamente la presión sobre Redis. No olvide agregar el sufijo &quot;:hash&quot; para las claves de precarga.
+Adobe recomienda el uso de la característica [`cache preload`](redis-pg-cache.md#redis-preload-feature), ya que reduce drásticamente la presión sobre Redis. No olvide agregar el sufijo &#39;:hash&#39; para las claves de precarga.
 
 ## Opciones de caché antiguas
 
@@ -92,7 +92,7 @@ Adobe recomienda habilitar la opción `use_stale_cache` solo para los tipos de c
 - `reflection`
 - `translate`
 
-El Adobe no recomienda habilitar la opción `use_stale_cache` para el tipo de caché `default`.
+Adobe no recomienda habilitar la opción `use_stale_cache` para el tipo de caché `default`.
 
 El siguiente código muestra un ejemplo de configuración:
 

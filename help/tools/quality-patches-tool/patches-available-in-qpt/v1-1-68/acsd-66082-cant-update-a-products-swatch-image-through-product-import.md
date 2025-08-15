@@ -4,13 +4,13 @@ description: Aplique el parche ACSD-66082 para corregir el problema de Adobe Com
 feature: Products, Data Import/Export, Media
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: bdd15514c6b6ece6c7f33a41267357b4a24261f1
+exl-id: 0bfff90e-5f1f-4c87-8a99-efc5bb0d814b
+source-git-commit: e0d2e42b070591f3fefc0e9adb1bf5c1ba580fd9
 workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-66082: No se puede actualizar la imagen de muestra de un producto mediante la importación de productos
 
@@ -28,7 +28,7 @@ El parche ACSD-66082 corrige el problema en el que no era posible actualizar la 
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
@@ -71,7 +71,7 @@ El proceso de importación genera un error.
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
 * Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía [!DNL Quality Patches Tool].
-* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=es) en la guía Commerce en la infraestructura de la nube.
+* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) en la guía Commerce en la infraestructura de la nube.
 
 ## Lectura relacionada
 

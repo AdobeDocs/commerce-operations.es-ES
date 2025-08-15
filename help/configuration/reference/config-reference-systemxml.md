@@ -6,7 +6,7 @@ badge: label="Colaboró David Lambauer" type="Informative" url="https://github.c
 exl-id: a6c5de6c-e8da-4eca-bbfb-592904b2c53f
 source-git-commit: e231a27d70e29b01c872b0655168e31f590d4876
 workflow-type: tm+mt
-source-wordcount: '2708'
+source-wordcount: '2709'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ Una etiqueta `<tab>` puede tener los atributos siguientes:
 | `id` | Define el identificador que se utiliza para hacer referencia a la sección. | `typeId` | obligatorio |
 | `translate` | Define el campo que debe traducirse. Proporcione `label` para que la etiqueta sea traducible. | `string` | opcional |
 | `sortOrder` | Define el orden de la sección. Los números altos empujan la sección al final de la página; los números bajos empujan la sección al principio. | `float` | opcional |
-| `class` | Agrega una clase CSS definida al elemento de HTML de pestañas procesado. | `string` | opcional |
+| `class` | Agrega una clase CSS definida al elemento HTML de pestaña procesado. | `string` | opcional |
 
 ### Referencia del nodo de pestañas
 
@@ -79,7 +79,7 @@ El siguiente fragmento de código muestra la creación de una nueva pestaña con
 </config>
 ```
 
-El fragmento anterior crea una nueva ficha con el identificador `A_UNIQUE_ID`. A medida que se define el atributo `translate` y hace referencia a la etiqueta, el nodo `label` se puede traducir. Durante el proceso de representación, la clase CSS `a-custom-css-class-to-style-this-tab` se aplicará en el elemento HTML creado para esta pestaña.
+El fragmento anterior crea una nueva ficha con el identificador `A_UNIQUE_ID`. A medida que se define el atributo `translate` y hace referencia a la etiqueta, el nodo `label` se puede traducir. Durante el proceso de representación, la clase CSS `a-custom-css-class-to-style-this-tab` se aplicará en el elemento HTML que se creó para esta pestaña.
 El atributo `sortOrder` con el valor `10` define la posición de la ficha en la lista de todas las fichas cuando se representa.
 
 ## Secciones
@@ -94,7 +94,7 @@ Una etiqueta `<section>` puede tener los atributos siguientes:
 |:----------------|:---------------------------------------------------------------------------------------------------------------------------------------------------|:---------|:---------|
 | `id` | Define el identificador que se utiliza para hacer referencia a la sección. | `typeId` | obligatorio |
 | `translate` | Define el campo que debe traducirse. Proporcione `label` para que la etiqueta sea traducible. | `string` | opcional |
-| `type` | Define el tipo de entrada del elemento HTML representado. El valor predeterminado es `text`. | `string` | opcional |
+| `type` | Define el tipo de entrada del elemento HTML procesado. El valor predeterminado es `text`. | `string` | opcional |
 | `sortOrder` | Define el orden de la sección. Los números altos insertarán la sección en la parte inferior de la página; los números bajos insertarán la sección en la parte superior. | `float` | opcional |
 | `showInDefault` | Define si la sección se muestra en el ámbito de configuración predeterminado. Especifique `1` para mostrar la sección y `0` para ocultar la sección. | `int` | opcional |
 | `showInStore` | Define si la sección se muestra en el nivel de tienda. Especifique `1` para mostrar la sección y `0` para ocultar la sección. | `int` | opcional |
@@ -153,7 +153,7 @@ Una etiqueta `<group>` puede tener los atributos siguientes:
 |:----------------|:---------------------------------------------------------------------------------------------------------------------------------------------------|:---------|:---------|
 | `id` | Define el identificador que se utiliza para hacer referencia al grupo. | `typeId` | obligatorio |
 | `translate` | Define los campos que deben traducirse. Proporcione `label` para que la etiqueta sea traducible. Los campos múltiples deben separarse con un espacio. | `string` | opcional |
-| `type` | Define el tipo de entrada del elemento HTML representado. El valor predeterminado es `text`. | `string` | opcional |
+| `type` | Define el tipo de entrada del elemento HTML procesado. El valor predeterminado es `text`. | `string` | opcional |
 | `sortOrder` | Define el orden de la sección. Los números altos insertarán la sección en la parte inferior de la página; los números bajos insertarán la sección en la parte superior. | `float` | opcional |
 | `showInDefault` | Define si el grupo se muestra en el ámbito de configuración predeterminado. Especifique `1` para mostrar el grupo y `0` para ocultarlo. | `int` | opcional |
 | `showInStore` | Define si el grupo se muestra en el nivel de tienda. Especifique `1` para mostrar el grupo y `0` para ocultarlo. | `int` | opcional |
@@ -176,7 +176,7 @@ Una etiqueta `<group>` puede tener los siguientes elementos secundarios:
 | `help_url` | No extensible. Consulte a continuación. | `typeUrl` |
 | `more_url` | No extensible. Consulte a continuación. | `typeUrl` |
 | `demo_link` | No extensible. Consulte a continuación. | `typeUrl` |
-| `comment` | Agrega un comentario debajo de la etiqueta de grupo. Mediante el uso del HTML `<![CDATA[//]]>` se puede aplicar. | `string` |
+| `comment` | Agrega un comentario debajo de la etiqueta de grupo. Mediante `<![CDATA[//]]>` se puede aplicar HTML. | `string` |
 | `hide_in_single_store_mode` | Si el grupo debe ser visible en el modo de tienda única. `1` oculta el grupo; `0` muestra el grupo. | `int` |
 | `field` | Defina uno o varios campos que deben estar disponibles en este grupo. | `field` |
 | `group` | Defina uno o varios subgrupos. | `unbounded` |
@@ -228,7 +228,7 @@ Una etiqueta `<field>` puede tener los atributos siguientes:
 |:----------------|:---------------------------------------------------------------------------------------------------------------------------------------------------|:---------|:---------|
 | `id` | Define el identificador que se utiliza para hacer referencia al campo. | `typeId` | obligatorio |
 | `translate` | Define los campos que deben traducirse. Proporcione `label` para que la etiqueta sea traducible. Los campos múltiples deben separarse con un espacio. | `string` | opcional |
-| `type` | Define el tipo de entrada del elemento HTML representado. El valor predeterminado es `text`. | `string` | opcional |
+| `type` | Define el tipo de entrada del elemento HTML procesado. El valor predeterminado es `text`. | `string` | opcional |
 | `sortOrder` | Define el orden de la sección. Los números altos empujan la sección al final de la página; los números bajos empujan la sección al principio. | `float` | opcional |
 | `showInDefault` | Define si el campo se muestra en el ámbito de configuración predeterminado. Especifique `1` para mostrar el campo y `0` para ocultarlo. | `int` | opcional |
 | `showInStore` | Define si el campo se muestra en el nivel de tienda. Especifique `1` para mostrar el campo y `0` para ocultarlo. | `int` | opcional |
@@ -248,8 +248,8 @@ Una etiqueta `<field>` puede tener los siguientes valores para el atributo `type
 | `select` | Menú desplegable normal; es posible que necesite un(a) `source_model` personalizado. También se usa para `Yes/No` selecciones. Vea `Magento\Search\Model\Adminhtml\System\Config\Source\Engine` para ver un ejemplo. |
 | `multiselect` | Como `select`, pero varias opciones son válidas. |
 | `button` | Botón que almacena en déclencheur un evento inmediato. Requiere un modelo front-end personalizado para definir el texto del botón y la acción. Vea `Magento\ScheduledImportExport\Block\Adminhtml\System\Config\Clean` para ver un ejemplo. |
-| `obscure` | Campo de texto con el valor cifrado y mostrado como `**&#x200B;**`. Si se cambia el tipo con &quot;Inspect Element&quot; en el explorador, no se muestra el valor. |
-| `password` | Como `obscure`, excepto que el valor oculto no está cifrado y si se cambia el tipo mediante &quot;Inspect Element&quot; en el explorador, se revelará el valor. |
+| `obscure` | Campo de texto con el valor cifrado y mostrado como `****`. Al cambiar el tipo con &quot;Inspeccionar elemento&quot; en el explorador, no se muestra el valor. |
+| `password` | Como `obscure`, excepto que el valor oculto no está cifrado y al cambiar el tipo mediante &quot;Inspeccionar elemento&quot; en el explorador, se muestra el valor. |
 | `file` | Permite cargar un archivo para su procesamiento. |
 | `label` | Muestra una etiqueta en lugar de un campo editable. Utilice este tipo cuando un campo solo se pueda editar en ámbitos específicos; por ejemplo, en el nivel de vista de tienda. |
 | `time` | Control para establecer la hora mediante tres menús desplegables: hora, minuto y segundo. |
@@ -262,7 +262,7 @@ También es posible crear un tipo de campo personalizado. Esto suele hacerse cua
 - Creando un bloque en el área `adminhtml`
 - Estableciendo `type=""` en la ruta de acceso a este bloque
 
-El propio bloque requiere, como mínimo, un método `__construct` y un método `getElementHtml()`. El [Magento_OfflineShipping](https://github.com/magento/magento2/blob/2.4/app/code/Magento/OfflineShipping) es un ejemplo sencillo de un tipo personalizado.
+El propio bloque requiere, como mínimo, un método `__construct` y un método `getElementHtml()`. [Magento_OfflineShipping](https://github.com/magento/magento2/blob/2.4/app/code/Magento/OfflineShipping) es un ejemplo sencillo de un tipo personalizado.
 
 Por ejemplo, en el módulo OfflineShipping, el botón Exportar se define en `Magento\OfflineShipping\Block\Adminhtml\Form\Field\Export` y la definición del campo tiene el siguiente aspecto:
 
@@ -279,7 +279,7 @@ Una etiqueta `<field>` puede tener los siguientes elementos secundarios:
 | Nodo | Descripción | Tipo |
 |-----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------|
 | `label` | Define la etiqueta que se muestra en el front-end. | `string` |
-| `comment` | Agrega un comentario debajo de la etiqueta de campo. Mediante el uso del HTML `<![CDATA[//]]>` se puede aplicar. | `string` |
+| `comment` | Agrega un comentario debajo de la etiqueta de campo. Mediante `<![CDATA[//]]>` se puede aplicar HTML. | `string` |
 | `tooltip` | Otro posible elemento de front-end que se puede utilizar para describir el significado de este campo. Se muestra como un pequeño icono junto al campo. | `string` |
 | `hint` | Muestra información adicional. Solo disponible con `frontend_model` específico. | `string` |
 | `frontend_class` | Agrega una clase CSS definida al elemento HTML de sección procesada. | `string` |
@@ -404,7 +404,7 @@ Están disponibles las siguientes reglas de validación:
 | `validate-emailSender` | Permite una dirección de correo electrónico válida. Por ejemplo, johndoe@domain.com. |
 | `validate-fax` | Permite un número de fax válido. Por ejemplo, 123-456-7890. |
 | `validate-no-empty` | No permite un valor vacío (validación equivalente a `requried-entry`).<br>Mensaje de error de validación: &quot;Valor vacío&quot;. |
-| `validate-no-html-tags` | No permite el uso de etiquetas de HTML. |
+| `validate-no-html-tags` | No permite el uso de etiquetas HTML. |
 | `validate-password` | Permite 6 caracteres o más. Los espacios iniciales y finales se omitirán. |
 | `validate-phoneLax` | Permite un número de teléfono válido. Por ejemplo, (123) 456-7890 o 123-456-7890. |
 | `validate-phoneStrict` | Permite un número de teléfono válido. Por ejemplo, (123) 456-7890 o 123-456-7890. |

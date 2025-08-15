@@ -5,13 +5,13 @@ source-wordcount: '95'
 ht-degree: 5%
 
 ---
-# Disponibilidad de productos de los Servicios de comercio
+# Disponibilidad de productos de los servicios de Commerce
 
 
 <table style="table-layout:auto">
   <thead>
     <tr>
-      <th>Versiones de Adobe Systems Commerce</th>
+      <th>Versiones de Adobe Commerce</th>
       <th>2.4.8</th>
       <th>2.4.7</th>
       <th>2.4.6</th>
@@ -22,15 +22,15 @@ ht-degree: 5%
   </thead>
   <tbody>
       <tr>
-          <td>Servicio de catálogo para Adobe Systems comercio</td>
+          <td>Servicio de catálogo para Adobe Commerce</td>
           <td>1,32</td>
           <td>1,32</td>
           <td>1,32</td>
           <td>1,32</td>
           <td>1,32</td>
           <td>
-              <a href="https://experienceleague.adobe.com/es/docs/commerce/catalog-service/guide-overview">Información general</a><br/>
-              <a href="https://experienceleague.adobe.com/es/docs/commerce/catalog-service/release-notes">de las notas de la versión</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce/catalog-service/guide-overview">Información general</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce/catalog-service/release-notes">Notas de la versión</a><br/>
           </td>
       </tr>
       <tr>
@@ -41,8 +41,8 @@ ht-degree: 5%
           <td>4.3.0</td>
           <td>4.3.0</td>
           <td>
-              <a href="https://commercemarketplace.adobe.com/magento-live-search.html">Notas de la versión de Marketplace</a><br/><a href="https://experienceleague.adobe.com/es/docs/commerce/live-search/release-notes">
-              </a><br/>
+              <a href="https://commercemarketplace.adobe.com/magento-live-search.html">Mercado</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce/live-search/release-notes">Notas de la versión</a><br/>
           </td>
       </tr>
       <tr>
@@ -53,20 +53,20 @@ ht-degree: 5%
           <td>2.4.0 (PHP 8.1)</td>
           <td>2.4.0 (PHP 8.1)</td>
           <td>
-              <a href="https://commercemarketplace.adobe.com/magento-payment-services.html">Notas de la versión de Marketplace</a><br/><a href="https://experienceleague.adobe.com/es/docs/commerce/payment-services/release-notes">
-              </a><br/>
+              <a href="https://commercemarketplace.adobe.com/magento-payment-services.html">Mercado</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce/payment-services/release-notes">Notas de la versión</a><br/>
           </td>
       </tr>
       <tr>
-          <td>Recommendations del producto</td>
+          <td>Recomendaciones de productos</td>
           <td>6.2.0</td>
           <td>6.2.0</td>
           <td>6.2.0</td>
           <td>6.2.0</td>
           <td>6.2.0</td>
           <td>
-              <a href="https://commercemarketplace.adobe.com/magento-product-recommendations.html">Notas de la versión de Marketplace</a><br/><a href="https://experienceleague.adobe.com/es/docs/commerce/product-recommendations/release-notes">
-              </a><br/>
+              <a href="https://commercemarketplace.adobe.com/magento-product-recommendations.html">Mercado</a><br/>
+              <a href="https://experienceleague.adobe.com/en/docs/commerce/product-recommendations/release-notes">Notas de la versión</a><br/>
           </td>
       </tr>
   </tbody>

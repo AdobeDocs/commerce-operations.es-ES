@@ -18,7 +18,7 @@ Este artículo proporciona prácticas recomendadas para modificar tablas de base
 
 Migrar desde [!DNL Magento 1] y otras plataformas de comercio electrónico, o trabajar con módulos del mercado [!DNL Adobe Commerce], puede requerir agregar y guardar datos adicionales. Su primer instinto podría ser agregar una columna a una tabla de la base de datos o ajustar una existente. Sin embargo, solo debe modificar una tabla principal [!DNL Adobe Commerce] (o una tabla de proveedores de terceros) en situaciones limitadas.
 
-## Por qué el Adobe recomienda evitar las modificaciones
+## Por qué Adobe recomienda evitar las modificaciones
 
 El motivo principal para evitar la modificación de las tablas principales es que Adobe Commerce incluye una lógica subyacente que contiene consultas SQL sin procesar. Los cambios en la estructura de la tabla pueden producir efectos adversos inesperados que son difíciles de solucionar. El cambio también puede afectar a las operaciones de DDL (lenguaje de definición de datos), lo que provoca efectos inesperados e impredecibles en el rendimiento.
 
@@ -26,7 +26,7 @@ Otro motivo para evitar cambiar la estructura de la tabla de la base de datos es
 
 ## Saber cuándo guardar o quitar datos
 
-El Adobe recomienda determinar primero si es necesario guardar estos datos. Si mueve datos de un sistema heredado, cualquier dato que pueda eliminar le ahorrará tiempo y esfuerzo durante la migración. (Hay formas de archivar los datos si es necesario acceder a ellos más adelante). Para ser un buen administrador de la aplicación y el rendimiento, está bien retar una solicitud para guardar datos adicionales. Su objetivo es garantizar que guardar los datos sea un requisito para satisfacer una necesidad empresarial que no se puede rellenar de otra manera.
+Adobe recomienda determinar primero si es necesario guardar estos datos. Si mueve datos de un sistema heredado, cualquier dato que pueda eliminar le ahorrará tiempo y esfuerzo durante la migración. (Hay formas de archivar los datos si es necesario acceder a ellos más adelante). Para ser un buen administrador de la aplicación y el rendimiento, está bien retar una solicitud para guardar datos adicionales. Su objetivo es garantizar que guardar los datos sea un requisito para satisfacer una necesidad empresarial que no se puede rellenar de otra manera.
 
 ### Datos heredados
 
@@ -36,9 +36,9 @@ Esta situación requeriría que la base de datos se migrara a un servidor, ofrec
 
 Otra opción relacionada para mantener los datos externos al comercio pero que le permite utilizarlos en tiempo real sería aprovechar otras herramientas, como GraphQL mesh. Esta opción combina diferentes fuentes de datos y las devuelve como una sola respuesta.
 
-Por ejemplo, puede `stitch` agrupar pedidos antiguos de una base de datos externa, tal vez el sitio antiguo del Magento 1 que se ha retirado del mercado. A continuación, utilizando GraphQL mesh, muéstrelos como parte del historial de pedidos de los clientes. Estos pedidos antiguos se pueden combinar con los pedidos del entorno actual [!DNL Adobe Commerce].
+Por ejemplo, puede `stitch` agrupar pedidos antiguos de una base de datos externa, tal vez el sitio antiguo de Magento 1 que se ha retirado del mercado. A continuación, utilizando GraphQL mesh, muéstrelos como parte del historial de pedidos de los clientes. Estos pedidos antiguos se pueden combinar con los pedidos del entorno actual [!DNL Adobe Commerce].
 
-Para obtener más información sobre el uso de la malla de API con GraphQL, consulte [Qué es la malla de API](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/){target="_blank"}) y [Puerta de enlace de GraphQL Mesh](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}.
+Para obtener más información sobre el uso de la malla de API con GraphQL, consulte [Qué es la malla de API](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/){target="_blank"}) y [GraphQL Mesh Gateway](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}.
 
 ## Migración de datos heredados con atributos de extensión
 
@@ -54,7 +54,7 @@ Dos ejemplos de ubicaciones de almacenamiento son las tablas de base de datos y 
 
 Como desarrollador, es vital considerar siempre el uso de herramientas fuera de su entorno de [!DNL Adobe Commerce], como GraphQL mesh y Adobe App Builder. Estas herramientas pueden ayudarle a conservar el acceso a los datos, pero no afectan a la aplicación principal de comercio ni a sus tablas de base de datos subyacentes. Con este enfoque, expone sus datos a través de una API. A continuación, agregue una fuente de datos a la configuración de App Builder. Con GraphQL Mesh, puedes combinar esas fuentes de datos y producir una única respuesta como se menciona en [datos heredados](#legacy-data).
 
-Para obtener más información sobre GraphQL mesh, consulte [GraphQL Mesh Gateway](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}. Para obtener información acerca del Adobe App Builder, consulte [Presentación de App Builder](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/introduction-app-builder.html?lang=es){target="_blank"}.
+Para obtener más información sobre GraphQL mesh, consulte [GraphQL Mesh Gateway](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}. Para obtener información acerca de Adobe App Builder, consulte [Presentación de App Builder](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/introduction-app-builder.html?lang=en){target="_blank"}.
 
 ## Modificación de una tabla principal o de una tabla de terceros
 
@@ -73,7 +73,7 @@ Adobe recomienda seguir estos pasos cuando agregue una columna a una tabla de la
 
    Por ejemplo: `app/code/YourCompany/Customer`
 
-1. Cree los archivos apropiados para habilitar el módulo (consulte [Crear un módulo](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html?lang=es){target="_blank"}.
+1. Cree los archivos apropiados para habilitar el módulo (consulte [Crear un módulo](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html){target="_blank"}.
 
 1. Cree un archivo denominado `db_schema.xml` en la carpeta `etc` y realice los cambios correspondientes.
 

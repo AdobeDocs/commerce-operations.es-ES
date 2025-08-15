@@ -17,10 +17,10 @@ Para tener acceso a los paquetes de Adobe Commerce, debe utilizar las claves aso
 
 >[!TIP]
 >
->Si encuentra [errores](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html?lang=es), es posible que no tenga autorización para acceder al paquete o que el derecho de acceso haya caducado debido a una factura pendiente en su cuenta.
+>Si encuentra [errores](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html), es posible que no tenga autorización para acceder al paquete o que el derecho de acceso haya caducado debido a una factura pendiente en su cuenta.
 >
 >* Si es la persona de contacto principal de la cuenta, asegúrese de que no haya ninguna factura pendiente en la cuenta.
->* Si las claves proporcionadas por el contacto principal no funcionan y no hay facturas pendientes en la cuenta, el contacto principal debe ponerse en contacto con el [Soporte técnico de Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=es#submit-ticket) para obtener ayuda.
+>* Si las claves proporcionadas por el contacto principal no funcionan y no hay facturas pendientes en la cuenta, el contacto principal debe ponerse en contacto con el [Soporte técnico de Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) para obtener ayuda.
 
 Para crear claves de autenticación:
 
@@ -30,7 +30,7 @@ Para crear claves de autenticación:
 
 1. Haga clic en **Claves de acceso** en la ficha Marketplace.
 
-   ![Obtenga sus claves de acceso seguras en el Commerce Marketplace](../../assets/installation/cloud_access-key.png)
+   ![Obtenga sus claves de acceso seguras en Commerce Marketplace](../../assets/installation/cloud_access-key.png)
 
 1. Haga clic en **Crear una nueva clave de acceso**. Escriba un nombre específico para las claves (por ejemplo, el nombre del desarrollador que las recibe) y haga clic en **Aceptar**.
 

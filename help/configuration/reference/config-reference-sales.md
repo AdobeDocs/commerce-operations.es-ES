@@ -32,8 +32,8 @@ Estos valores de configuración están disponibles en el Administrador en **Tien
 | Tarjetas de regalo | `sales/totals_sort/giftcardaccount` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
 | Crédito de tienda | `sales/totals_sort/customerbalance` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
 | Permitir reordenar | `sales/reorder/allow` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Logotipo para copias impresas en PDF (200 x 50) | `sales/identity/logo` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Logotipo para vista de impresión de HTML | `sales/identity/logo_html` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Logotipo para copias impresas PDF (200 x 50) | `sales/identity/logo` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Logotipo para la vista de impresión de HTML | `sales/identity/logo_html` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Dirección | `sales/identity/address` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Activar | `sales/minimum_order/active` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Cantidad mínima | `sales/minimum_order/amount` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -162,7 +162,7 @@ Estos valores de configuración están disponibles en el Administrador en **Tien
 | Habilitar el comercio transfronterizo | `tax/calculation/cross_border_trade_enabled` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | País predeterminado | `tax/defaults/country` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Estado predeterminado | `tax/defaults/region` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Código Post predeterminado | `tax/defaults/postcode` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Código postal predeterminado | `tax/defaults/postcode` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Mostrar precios de productos en el catálogo | `tax/display/type` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Mostrar precios de envío | `tax/display/shipping` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Mostrar precios | `tax/cart_display/price` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |

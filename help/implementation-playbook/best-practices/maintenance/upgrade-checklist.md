@@ -6,7 +6,7 @@ feature: Best Practices
 exl-id: c9b644fa-290c-4f33-b5a7-19f7122ff08e
 source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '511'
+source-wordcount: '488'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Utilice esta lista de comprobación durante sus conversaciones anuales y trimestrales con su equipo de comercio electrónico. Muchas empresas trabajan con presupuestos anuales y hojas de ruta. Es imperativo, durante estas discusiones anuales, que hable sobre la salud, la dirección y la estrategia de actualización de su plataforma para el año, junto con cómo encaja en los objetivos generales y los KPI del negocio. Durante las conversaciones trimestrales, asegúrese de que el plan anual que ha creado sigue estando alineado con su situación actual o pivote si no. El objetivo de esta lista de comprobación del plan de actualización es ayudarle a planificar y programar las actualizaciones de Adobe Commerce para garantizar un proceso de actualización correcto durante el año. Esta lista de comprobación está pensada para que la utilicen las siguientes audiencias para la planificación anual y la revisión trimestral:
 
-- TI de Director/Manager
+- Director/responsable de TI
 - Administrador de comercio electrónico
 - Socio de soluciones / Consultor
 
@@ -32,13 +32,13 @@ Utilice esta lista de comprobación durante sus conversaciones anuales y trimest
 
 ## Metas
 
-▢ Revise los KPI actuales y ajústelos según sea necesario.
+▢: revise los KPI actuales y ajústelos según sea necesario.
 
 ## Extensiones y personalizaciones
 
-▢ Revise todas las extensiones y personalizaciones actuales y asegúrese de que siguen siendo necesarias según los requisitos empresariales.
+▢: revise todas las extensiones y personalizaciones actuales y asegúrese de que siguen siendo necesarias según los requisitos empresariales.
 
-▢ Considere la posibilidad de reemplazar cualquier extensión que no tenga un buen historial de mantenimiento actualizado con versiones de Adobe Commerce.
+▢ Considere la posibilidad de reemplazar cualquier extensión que no tenga un buen historial de mantenerse actualizada con versiones de Adobe Commerce.
 
 ## Equipo
 
@@ -48,47 +48,47 @@ Utilice esta lista de comprobación durante sus conversaciones anuales y trimest
 
 ▢ Use la [programación de versiones](../../../release/schedule.md) de Adobe Commerce para planificar su próxima actualización y prepararse con antelación.
 
-▢ Analice qué versión cree que adoptará (completa o solo de seguridad) en función de las necesidades previstas.
+▢ Analice qué versión cree que adoptará (completa o solo de seguridad) según las necesidades previstas.
 
-▢ Reserve un presupuesto y capacidad de equipo para la actualización.
+▢: reserve un presupuesto y capacidad de equipo para la actualización.
 
 ## Integraciones de terceros
 
-▢ Revise las integraciones actuales de terceros de Adobe Commerce y sus ventanas de mantenimiento para el año, y considere la posibilidad de alinear el trabajo de actualización con su programa de mantenimiento.
+▢ Revise las integraciones actuales de terceros de Adobe Commerce y sus ventanas de mantenimiento para el año, y considere alinear el trabajo de actualización con su horario de mantenimiento.
 
 ## Ámbito y planificación de la implementación
 
-▢ Actividades de acceso anticipado
+▢ actividades de acceso anticipado
 
 - El socio participa en [Beta](../../../release/beta.md)
 - Revisión de las notas de la versión de Beta.
 
-▢ Acordar el presupuesto, el calendario y el alcance.
+▢ de acuerdo en el presupuesto, el cronograma y el ámbito.
 
-▢ Ejecutar la [herramienta de compatibilidad de actualización](../../../upgrade/upgrade-compatibility-tool/overview.md)
+▢ Ejecutar [herramienta de compatibilidad de actualización](../../../upgrade/upgrade-compatibility-tool/overview.md)
 
-▢ Considere la posibilidad de utilizar la actualización para resolver los problemas identificados por la [Herramienta de análisis de todo el sitio](../../../tools/site-wide-analysis-tool/intro.md).
+▢ Considere la posibilidad de usar la actualización para resolver los problemas identificados por la [herramienta de análisis de todo el sitio](../../../tools/site-wide-analysis-tool/intro.md).
 
 ▢ Dependencias de documentos y cualquier cambio técnico de pila necesario, como versiones de PHP o Elastic Search.
 
-▢ Reúna al equipo del proyecto con las certificaciones de Adobe Commerce.
+▢: Reúna al equipo del proyecto con las certificaciones de Adobe Commerce.
 
-▢ Cree un plan de comunicación con las partes interesadas.
+▢: crear plan de comunicación con las partes interesadas.
 
-▢ Período de mantenimiento del plan si se prevé tiempo de inactividad.
+▢ Ventana de mantenimiento del plan si se prevé tiempo de inactividad.
 
 ▢ Revise y apruebe la estrategia de prueba; considere la posibilidad de usar el [marco de prueba](https://developer.adobe.com/commerce/testing/) de Adobe Commerce o un grupo de automatización de terceros.
 
 ▢ Confirme que todas las extensiones y personalizaciones son compatibles.
 
-▢ Revise y actualice el manual posterior al inicio; se utilizará si se detectan problemas durante o después de la actualización.
+▢: revise y actualice el manual posterior al inicio; se utilizará si se detectan problemas durante o después de la actualización.
 
-## Implementación de Post
+## Después de la implementación
 
-▢ Supervisar el sitio para ver si hay problemas de rendimiento, procesamiento de pedidos, análisis y otros.
+▢ Supervisar el sitio en busca de problemas: rendimiento, procesamiento de pedidos, análisis, etc.
 
-▢ Realizar un análisis de seguridad de Adobe Commerce [security scan](https://account.magento.com/scanner/dashboard/) u otro análisis de terceros y revisar posibles vulnerabilidades de seguridad.
+▢ Realice un análisis de seguridad de Adobe Commerce [security scan](https://account.magento.com/scanner/dashboard/) u otro análisis de terceros y revise posibles vulnerabilidades de seguridad.
 
-▢ Realice una retrospectiva con todas las partes interesadas y documente lo que salió bien y lo que no y cómo mejorar.
+▢: realice una retrospectiva con todas las partes interesadas y documente lo que salió bien y lo que no salió bien y cómo mejorar.
 
 ▢ Modifique su plan para la próxima actualización con las lecciones aprendidas.

@@ -26,9 +26,9 @@ En lugar de usar la variable `_isScopePrivate` para contenido privado, cree un b
 
 ## Impacto potencial en el rendimiento
 
-Los sitios que tienen bloques de contenido privado que contienen las variables `_isScopePrivate` tienen como déclencheur AJAX solicitudes de para recuperar los mismos datos para cada solicitud de cliente. Esto aumenta el tiempo de respuesta y utiliza recursos adicionales que podrían utilizarse para gestionar operaciones de tienda más críticas para el negocio, como el registro de clientes, las actualizaciones del carro de compras, el envío de pedidos y las transacciones de pago.
+Los sitios que tienen bloques de contenido privado que contienen las variables `_isScopePrivate` almacenan en déclencheur las solicitudes de AJAX para recuperar los mismos datos para cada solicitud de cliente. Esto aumenta el tiempo de respuesta y utiliza recursos adicionales que podrían utilizarse para gestionar operaciones de tienda más críticas para el negocio, como el registro de clientes, las actualizaciones del carro de compras, el envío de pedidos y las transacciones de pago.
 
 ## Más información
 
 - [Contenido privado](../../../performance/configuration.md#client-side-optimization-settings)
-- AJAX [Las solicitudes de alto rendimiento de los equipos de trabajo provocan un rendimiento deficiente](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/high-throughput-ajax-requests-cause-poor-performance.html?lang=es)
+- [Las solicitudes de AJAX de alto rendimiento causan bajo rendimiento](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/high-throughput-ajax-requests-cause-poor-performance.html)

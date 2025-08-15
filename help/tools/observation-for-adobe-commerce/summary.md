@@ -18,7 +18,7 @@ La ficha [!UICONTROL Summary] de [!DNL Observation for Adobe Commerce] tiene por
 
 ![Información general de transacción](../../assets/tools/transaction-overview.jpg)
 
-### [¿Qué es una transacción?](https://docs.newrelic.com/docs/apm/transactions/intro-transactions/transactions-new-relic-apm/#:%7E:text=transactions%20are%20reported.-,What%20is%20a%20transaction%3F,work%20in%20a%20software%20application.&amp;text=For%20APM%2C%20it%20will%20frequency,when%20the%20response%20is%20sent)
+### [¿Qué es una transacción?](https://docs.newrelic.com/docs/apm/transactions/intro-transactions/transactions-new-relic-apm/#:%7E:text=transactions%20are%20reported.-,What%20is%20a%20transaction%3F,work%20in%20a%20software%20application.&text=For%20APM%2C%20it%20will%20frequency,when%20the%20response%20is%20sent)
 
 &quot;En [!DNL New Relic], una transacción se define como una unidad lógica de trabajo en una aplicación de software. Específicamente, hace referencia a las llamadas de función y las llamadas de método que conforman esa unidad de trabajo. A menudo hace referencia a una transacción web, que representa una actividad que se produce desde el momento en que la aplicación recibe una solicitud web hasta el momento en que se envía la respuesta&quot;.
 
@@ -58,7 +58,7 @@ El fotograma **[!UICONTROL Swap memory free in bytes]** muestra, por nodo, la ca
 
 ![Porcentaje de CPU por host](../../assets/tools/cpu-percent-by-host.jpg)
 
-El agregado de todos los entornos y nodos se muestra en el marco **[!UICONTROL CPU % by host]**. Debe deseleccionar los entornos que no sean de producción. Tenga en cuenta también cualquier instancia en la que no estén presentes todos los nodos del entorno de producción. Para obtener más sugerencias sobre el uso elevado de la CPU, consulte [Solucionar problemas de rendimiento con New Relic en Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.html?lang=es).
+El agregado de todos los entornos y nodos se muestra en el marco **[!UICONTROL CPU % by host]**. Debe deseleccionar los entornos que no sean de producción. Tenga en cuenta también cualquier instancia en la que no estén presentes todos los nodos del entorno de producción. Para obtener más sugerencias sobre la alta utilización de CPU, consulte [Solucionar problemas de rendimiento con New Relic en Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.html).
 
 ## [!UICONTROL Alerts during timeframe]
 
@@ -68,9 +68,9 @@ El **[!UICONTROL Alerts during timeframe]** muestra todas las alertas, incluida 
 
 ## [!UICONTROL CPU Usage]
 
-![uso de CPU](../../assets/tools/cpu-usage.jpg)
+![Uso de CPU](../../assets/tools/cpu-usage.jpg)
 
-Si el marco **[!UICONTROL CPU Usage]** está en blanco, significa que la aplicación de infraestructura de [!DNL New Relic] no está habilitada. Si el sitio está en Inicio, no verá esta información. Si su sitio está en Pro, abra un [ticket de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=es) para que [!DNL New Relic Infrastructure] esté habilitado para su sitio.
+Si el marco **[!UICONTROL CPU Usage]** está en blanco, significa que la aplicación de infraestructura de [!DNL New Relic] no está habilitada. Si el sitio está en Inicio, no verá esta información. Si su sitio está en Pro, abra un [ticket de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html) para que [!DNL New Relic Infrastructure] esté habilitado para su sitio.
 
 ## [!UICONTROL Average Response Time]
 
@@ -116,7 +116,7 @@ El marco **[!UICONTROL Deployment State]** presenta fases de implementación esp
 * &#39;%NOTICE: Generación de comando completada (%) como &#39;gen_compl&#39;
 * &#39;%NOTICE: implementación completada (%) como &#39;deploy_compl&#39;
 * &#39;%NOTICE: iniciando posterior a la implementación.%&#39;) como &#39;start_deploy&#39;
-* &#39;%NOTICE: la implementación de Post se ha completado (%) como &#39;deploy&#39;
+* &#39;%NOTICE: la implementación posterior se ha completado (%) como &#39;deploy&#39;
 * &#39;%deploy-complete%&#39;) como &#39;cl_deploy_compl&#39;
 
 ## [!UICONTROL IP Frequency]
@@ -380,11 +380,11 @@ El marco **[!UICONTROL Order transactions (default?)]** busca las transacciones 
 
 * &#39;%all_shards failed%&#39; como &#39;all_shards_failed&#39;
 * &#39;%NoNodesAvailableException%&#39; como &#39;no_alive_nodes&#39;
-* &#39;%PHP Error grave: Error no capturado: Parámetros incorrectos para Elasticsearch%&#39; como &#39;wrong_param&#39;
+* &#39;%PHP Error grave: error no capturado: parámetros incorrectos para Elasticsearch%&#39; como &#39;wrong_param&#39;
 * &#39;%Puede solucionar este problema actualizando el servicio de Elasticsearch en su infraestructura de Magento Cloud a la versión%&#39; como &#39;ver_err&#39;
 * &#39;%el estado de mantenimiento del clúster ha cambiado de \[AMARILLO\] a \[ROJO\] (motivo:%&#39; como &#39;yel_red&#39;
 * &#39;%No queda espacio en el dispositivo%&#39; como &#39;no_space&#39;
-* &#39;% no pudo ejecutar &lbrack;SearchRequest&lbrace;searchType=%&#39; como &#39;failed_query&#39;
+* &#39;% no pudo ejecutar [SearchRequest{searchType=%&#39; como &#39;failed_query&#39;
 
 ## [!UICONTROL Cron view]
 

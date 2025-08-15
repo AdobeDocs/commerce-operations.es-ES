@@ -28,6 +28,6 @@ El fotograma **[!UICONTROL Upsize / Downsize by node]** muestra los tamaños asc
 
 ## [!UICONTROL CPU Utilization]
 
-![Uso de CPU](../../assets/tools/observation-for-adobe-commerce/quickview_cpu.jpg)
+![Utilización de CPU](../../assets/tools/observation-for-adobe-commerce/quickview_cpu.jpg)
 
-El fotograma **[!UICONTROL CPU Utilization]** muestra el uso de la CPU por nodos en el periodo de tiempo seleccionado.
+El fotograma **[!UICONTROL CPU Utilization]** muestra la utilización de CPU por nodos en el periodo de tiempo seleccionado.

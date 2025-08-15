@@ -15,12 +15,12 @@ ht-degree: 1%
 - [Información general](overview.md)
 - [Responsabilidad compartida](shared-responsibility.md)
 - [Política de seguridad de contenido](content-security-policy.md)
-- Regulaciones de privacidad {#privacy}
+- Normas de privacidad {#privacy}
    - [CCPA](privacy/ccpa.md)
    - [RGPD](privacy/gdpr.md)
-   - [Adobe Privacidad Biblioteca de JavaScript](privacy/adobe-javascript-library.md)
+   - [Biblioteca JavaScript de privacidad de Adobe](privacy/adobe-javascript-library.md)
    - [Biblioteca JavaScript de privacidad](privacy/javascript-library.md)
 - Referencia {#reference}
    - [Información personal del cliente (versión 2.x)](privacy/data-m2.md)
    - [Información personal del cliente (versión 1.x)](privacy/data-m1.md)
-- [Volver a las guías operativas](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=es)
+- [Volver a las guías operativas](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

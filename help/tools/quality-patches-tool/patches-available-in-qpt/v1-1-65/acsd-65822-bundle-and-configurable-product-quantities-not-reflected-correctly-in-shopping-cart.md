@@ -3,13 +3,13 @@ title: 'ACSD-65822: las cantidades de productos agrupados y configurables no se 
 description: Aplique el parche ACSD-65822 para solucionar el problema de Adobe Commerce, donde la cantidad aparecía como 0 en la sección del carro de compras del cliente en el panel de administración al añadir productos agrupados.
 feature: Admin Workspace, Checkout, Orders
 role: Admin, Developer
-source-git-commit: d8421ba07a5d2fa3a3174541ed8cd6a2bc76f157
+exl-id: 6740b5a6-8710-458c-abe4-03d2a8a694c5
+source-git-commit: 7e9598e3ac0558706ef98ca81c19d27c37f7e860
 workflow-type: tm+mt
 source-wordcount: '363'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-65822: las cantidades de producto configurables y del paquete no se reflejan correctamente en [!UICONTROL Shopping Cart]
 
@@ -27,7 +27,7 @@ La revisión ACSD-65822 corrige el problema en el que las cantidades de paquetes
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
@@ -55,7 +55,7 @@ La cantidad de artículos agrupados se muestra como 0.
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
 * Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía [!DNL Quality Patches Tool].
-* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=es) en la guía Commerce en la infraestructura de la nube.
+* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) en la guía Commerce en la infraestructura de la nube.
 
 ## Lectura relacionada
 

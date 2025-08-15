@@ -17,7 +17,7 @@ Suponemos que:
 
   Es posible que se requieran tareas adicionales para implementar varios sitios web en un entorno alojado; póngase en contacto con su proveedor de alojamiento para obtener más información.
 
-  Se requieren tareas adicionales para configurar Adobe Commerce en la infraestructura en la nube. Después de completar las tareas que se describen en este tema, vea [Configurar varios sitios web o tiendas](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html?lang=es) en la guía _Commerce en infraestructura de nube_.
+  Se requieren tareas adicionales para configurar Adobe Commerce en la infraestructura en la nube. Después de completar las tareas que se describen en este tema, vea [Configurar varios sitios web o tiendas](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) en la guía _Commerce en infraestructura de nube_.
 
 - Acepta varios dominios en un archivo host virtual o utiliza un host virtual por sitio web; los archivos de configuración de host virtual se encuentran en `/etc/nginx/sites-available`.
 - Utiliza el(la) `nginx.conf.sample` proporcionado(a) por Commerce solo con las modificaciones descritas en este tutorial.
@@ -36,7 +36,7 @@ A continuación se muestra una hoja de ruta para configurar varios sitios web co
 
 1. [Configurar sitios web, tiendas y vistas de tiendas](ms-admin.md) en el administrador.
 1. Cree un [host virtual Nginx](#step-2-create-nginx-virtual-hosts)) para asignar muchos sitios web o un host virtual Nginx por sitio web de Commerce (los pasos se detallan a continuación).
-1. Pase los valores de las [variables MAGE](ms-overview.md) `$MAGE_RUN_TYPE` y `$MAGE_RUN_CODE` a nginx utilizando `nginx.conf.sample` proporcionadas por el Magento (los pasos se detallan a continuación).
+1. Pase los valores de las [variables MAGE](ms-overview.md) `$MAGE_RUN_TYPE` y `$MAGE_RUN_CODE` a nginx mediante `nginx.conf.sample` proporcionadas por Magento (los pasos se detallan a continuación).
 
    - `$MAGE_RUN_TYPE` puede ser `store` o `website`:
 
@@ -280,7 +280,7 @@ A menos que tenga DNS configurado para las direcciones URL de las tiendas, debe 
 >[!INFO]
 >
 >- Es posible que se requieran tareas adicionales para implementar varios sitios web en un entorno alojado; póngase en contacto con su proveedor de alojamiento para obtener más información.
->- Se requieren tareas adicionales para configurar Adobe Commerce en la infraestructura en la nube. Consulte [Configurar varios sitios web o tiendas en la nube](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html?lang=es) en la guía _Commerce en la infraestructura en la nube_.
+>- Se requieren tareas adicionales para configurar Adobe Commerce en la infraestructura en la nube. Consulte [Configurar varios sitios web o tiendas en la nube](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html) en la guía _Commerce en la infraestructura en la nube_.
 
 ### Resolución de problemas
 

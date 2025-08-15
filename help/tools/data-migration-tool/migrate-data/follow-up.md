@@ -1,6 +1,6 @@
 ---
 title: Seguimiento de la migración de datos
-description: Aprenda a validar que la migración de datos de Magento 1 a Magento 2 se realizó correctamente y que todas las funcionalidades funcionan según lo esperado.
+description: Obtenga información sobre cómo validar que la migración de datos de Magento 1 a Magento 2 se realizó correctamente y que todas las funcionalidades funcionan según lo esperado.
 exl-id: a55f357b-6c95-49d6-b2f1-c2e403a8c85f
 topic: Commerce, Migration
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Seguimiento de la migración de datos
 
-Algunas conductas y lógicas del Magento 1 se han implementado de forma diferente en el Magento 2. [!DNL Data Migration Tool] se encarga de ello. Hay algunos aspectos de la migración que debe conocer y, a veces, debe realizar pasos menores para que algunas funcionalidades funcionen sin problemas después de la migración.
+Algunos comportamientos y lógicas de Magento 1 se han implementado de forma diferente en Magento 2. [!DNL Data Migration Tool] se encarga de ello. Hay algunos aspectos de la migración que debe conocer y, a veces, debe realizar pasos menores para que algunas funcionalidades funcionen sin problemas después de la migración.
 
 ## Información
 
@@ -38,9 +38,9 @@ Después de la migración, los segmentos del cliente deben volver a guardarse de
 
 La herramienta no migra la configuración de zona horaria, por lo que debe configurarla manualmente después de la migración en **Tiendas** > **Configuración** > **Opciones de configuración regional** > **Zona horaria**.
 
-De forma predeterminada, Magento almacena los datos de hora en la zona UTC-0 de la base de datos y los muestra según la configuración de zona horaria actual. Si los datos de tiempo ya se han guardado en la base de datos en una zona distinta de UTC-0, debe convertir la hora existente a UTC-0 mediante el controlador `\Migration\Handler\Timezone` de [!DNL Data Migration Tool].
+De forma predeterminada, Magento almacena los datos de hora en la zona UTC-0 de la base de datos y los muestra según la configuración de zona horaria actual. Si los datos de tiempo ya se han guardado en la base de datos en una zona distinta de UTC-0, debe convertir la hora existente a UTC-0 mediante el controlador [!DNL Data Migration Tool] de `\Migration\Handler\Timezone`.
 
-En el siguiente ejemplo, el Magento 1 ha estado ahorrando tiempo de forma incorrecta en la zona UTC-7 de la base de datos (por ejemplo, debido a una extensión de terceros defectuosa). Para convertir correctamente la hora de creación de la cuenta del cliente a la zona UTC-0 tras la migración, siga estos pasos:
+En el siguiente ejemplo, Magento 1 ha estado ahorrando tiempo de forma incorrecta en la zona UTC-7 de la base de datos (por ejemplo, debido a una extensión de terceros defectuosa). Para convertir correctamente la hora de creación de la cuenta del cliente a la zona UTC-0 tras la migración, siga estos pasos:
 
 1. Copie el archivo de configuración `map-customer.xml.dist` del directorio apropiado de [!DNL Data Migration Tool] (`<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/<migration edition>`) en el archivo `<your Magento 2 install dir>/app/code/Vendor/Migration/etc/<migration edition>/map-customer.xml`.
 

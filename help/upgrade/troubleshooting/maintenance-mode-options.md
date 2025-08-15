@@ -4,7 +4,7 @@ description: Cree una página de modo de mantenimiento personalizada que sus cli
 exl-id: 77e6d82d-5cc6-4d14-8b5c-1d2108f27b29
 source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
 workflow-type: tm+mt
-source-wordcount: '382'
+source-wordcount: '379'
 ht-degree: 0%
 
 ---
@@ -66,9 +66,9 @@ Para redirigir el tráfico a una página de mantenimiento personalizada:
 1. Actualice la configuración de Apache para hacer lo siguiente:
 
    - Redirigir todo el tráfico a la página de mantenimiento
-   - Lista de permitidos ciertas IP para que un administrador pueda actualizar el software del Magento.
+   - Lista de permitidos ciertas IP para que un administrador pueda actualizar el software de Magento.
 
-   En el siguiente ejemplo, se utiliza la lista de permitidos 192.0.2.110.
+   El siguiente ejemplo lista de permitidos 192.0.2.110.
 
    Agregue lo siguiente al final de su archivo de configuración de Apache:
 
@@ -107,7 +107,7 @@ Para redirigir el tráfico a una página de mantenimiento personalizada:
 1. Utilice un editor de texto para abrir el archivo de configuración de nginx que contiene el bloque de servidor.
 1. Agregue lo siguiente al bloque de servidor (`server` se muestra solo para una mayor claridad; no agregue un segundo bloque de servidor).
 
-   La siguiente lista de permitidos las direcciones IP 192.0.2.110 y 192.0.2.115 en un sistema donde Magento está instalado en `/var/www/html/magento2`:
+   La siguiente lista de permitidos la dirección IP 192.0.2.110 y 192.0.2.115 en un sistema donde Magento está instalado en `/var/www/html/magento2`:
 
    ```conf
    server {

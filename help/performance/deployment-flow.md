@@ -26,7 +26,7 @@ composer install --no-dev
 
 ## Instrucciones de inyección de dependencia previa al proceso
 
-Cuando preprocese y compile las instrucciones de inyección de dependencia (ID), Magento:
+Cuando se preprocesan y compilan instrucciones de inyección de dependencia (ID), Magento:
 
 * Lee y procesa todas las configuraciones presentes
 * Analiza las dependencias entre clases

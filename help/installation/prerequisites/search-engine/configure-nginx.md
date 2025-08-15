@@ -89,7 +89,7 @@ Recursos adicionales:
 
 * [Cómo configurar la autenticación de contraseña con Nginx en Ubuntu 14.04 (Digital Ocean)](https://www.digitalocean.com/community/tutorials/how-to-set-up-password-authentication-with-nginx-on-ubuntu-14-04)
 * [Autenticación HTTP básica con Nginx (HowtoForge)](https://www.howtoforge.com/basic-http-authentication-with-nginx)
-* [Ejemplo de configuraciones de Nginx para el Elasticsearch](https://gist.github.com/karmi/b0a9b4c111ed3023a52d)
+* [Ejemplo de configuraciones de Nginx para Elasticsearch](https://gist.github.com/karmi/b0a9b4c111ed3023a52d)
 
 Consulte las secciones siguientes para obtener más información:
 

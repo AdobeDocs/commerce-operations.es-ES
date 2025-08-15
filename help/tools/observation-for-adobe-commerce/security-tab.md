@@ -36,18 +36,18 @@ El marco **[!UICONTROL Create Account access]** muestra el número de nuevas act
 
 El marco **[!UICONTROL POST activities]** muestra las actividades `POST` para el sitio, con facetas en `client_ip` de los registros [!DNL Fastly]. También muestra la dirección URL a la que accede la dirección IP.
 
-![actividades de POST](../../assets/tools/observation-for-adobe-commerce/POST-activities.jpg)
+![actividades POST](../../assets/tools/observation-for-adobe-commerce/POST-activities.jpg)
 
 ## [!UICONTROL POST activities summary table]
 
 El marco **[!UICONTROL POST activities summary table]** muestra las actividades `POST` resumidas para el sitio, con facetas en `client_ip` de los registros [!DNL Fastly]. También muestra el recuento de la dirección URL a la que accede la dirección IP. El recuento es para el periodo de tiempo seleccionado.
 
-![resumen de actividades del POST](../../assets/tools/observation-for-adobe-commerce/POST-activities-summary.jpg)
+![Resumen de actividades de PUBLICACIÓN](../../assets/tools/observation-for-adobe-commerce/POST-activities-summary.jpg)
 
 ## [!UICONTROL POST activities details table]
 
 El marco **[!UICONTROL POST activities details table]** muestra las actividades `POST` para el sitio desde los registros [!DNL Fastly]. También muestra todos los detalles del registro [!DNL Fastly] para estas solicitudes. Se limita a las últimas 2000 solicitudes.
-![detalles-actividades-POST](../../assets/tools/observation-for-adobe-commerce/POST-activities-details.jpg)
+![detalles de actividades de PUBLICACIÓN](../../assets/tools/observation-for-adobe-commerce/POST-activities-details.jpg)
 
 ## [!UICONTROL Guest Carts activities]
 

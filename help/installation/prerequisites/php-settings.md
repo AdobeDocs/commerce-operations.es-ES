@@ -19,7 +19,7 @@ En este tema se explica cómo configurar las opciones de PHP requeridas.
 >
 >La última versión de Adobe Commerce requiere un mínimo de PHP 8.1. Consulte [requisitos del sistema](../system-requirements.md) para todas las versiones compatibles de PHP.
 
-Para obtener instrucciones de configuración de Cloud, consulte [Configuración de PHP](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html?lang=es) en la guía de _Commerce en infraestructura en la nube_.
+Para obtener instrucciones de configuración de Cloud, consulte [Configuración de PHP](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/php-settings.html) en la guía de _Commerce en infraestructura en la nube_.
 
 ## Control de procesos PHP
 
@@ -75,7 +75,7 @@ PHP Warning:  date(): It is not safe to rely on the system's timezone settings. 
 
 - Establezca el límite de memoria PHP.
 
-  El Adobe recomienda lo siguiente:
+  Adobe recomienda lo siguiente:
 
    - Compilando código o implementando recursos estáticos, `1G`
    - Depurando, `2G`
@@ -92,7 +92,7 @@ PHP Warning:  date(): It is not safe to rely on the system's timezone settings. 
 
 - Habilite [`opcache.save_comments`](https://www.php.net/manual/en/opcache.configuration.php#ini.opcache.save-comments), que es necesario para Adobe Commerce 2.1 y versiones posteriores.
 
-  El Adobe recomienda habilitar [PHP OPcache](https://www.php.net/manual/en/book.opcache.php) por motivos de rendimiento. OPcache está habilitado en muchas distribuciones PHP.
+  Adobe recomienda habilitar [PHP OPcache](https://www.php.net/manual/en/book.opcache.php) por motivos de rendimiento. OPcache está habilitado en muchas distribuciones PHP.
 
   Adobe Commerce 2.1 y versiones posteriores utilizan comentarios de código PHP para la generación de código.
 

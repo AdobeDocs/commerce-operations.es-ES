@@ -17,7 +17,7 @@ La implementación de la actualización consta de cinco fases:
 - Desarrollo y control de calidad (QA)
 - Pruebas de aceptación de usuarios (UAT) y preparación para el lanzamiento
 - Launch
-- Post-launch
+- Posterior al lanzamiento
 
 ## Análisis de actualización
 
@@ -25,7 +25,7 @@ El análisis es posiblemente la parte más importante del proceso de actualizaci
 
 Los siguientes son elementos que puede que desee incluir en un análisis exhaustivo:
 
-- **Ámbito de la versión de Target**: la documentación de [Experience League](../../release/release-notes/overview.md) y la información de los seminarios web de la versión de Partner proporcionan todos los detalles que debe conocer sobre la actualización de Target.
+- **Ámbito de la versión de Target**: la documentación de [Experience League](../../release/release-notes/overview.md) y la información de los seminarios web de la versión del socio proporcionan todos los detalles que debe conocer sobre la actualización de Target.
 
 - **[!DNL Upgrade Compatibility Tool]resultados**: esta herramienta hace que cualquier actualización sea más rápida y sencilla comparando el código actual con el código de la versión de destino y generando un informe de todos los problemas que deben solucionarse. Ver [[!DNL Upgrade Compatibility Tool]](../upgrade-compatibility-tool/overview.md). Los detalles clave del informe incluyen:
 
@@ -84,8 +84,8 @@ Siga su plan de comunicación y asegúrese de que todas las partes interesadas e
 
 Por último, informe a su equipo para determinar las lecciones aprendidas y los inconvenientes. Esta retrospectiva le ayuda a mejorar el proceso la próxima vez.
 
-## Post-Launch
+## Posterior al lanzamiento
 
 Una vez que se inicie el sitio, asegúrese de comprobar los datos de análisis, la consola de búsqueda de Google y otros recursos para garantizar que no haya problemas inesperados y que todo funcione según lo esperado.
 
-Siempre es una buena idea vigilar el rendimiento con herramientas de monitorización bien diseñadas. Existen muchas herramientas y medios para monitorizar el rendimiento de su sitio, por lo que asegúrese de elegir uno que se adapte bien a su organización. Recomendamos que los clientes de Adobe Commerce que usen nuestro sistema de administración de infraestructura en la nube aprovechen servicios como [New Relic](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service.html?lang=es) para supervisar el rendimiento del sitio.
+Siempre es una buena idea vigilar el rendimiento con herramientas de monitorización bien diseñadas. Existen muchas herramientas y medios para monitorizar el rendimiento de su sitio, por lo que asegúrese de elegir uno que se adapte bien a su organización. Recomendamos que los clientes de Adobe Commerce que usen nuestro sistema de administración de infraestructura en la nube aprovechen servicios como [New Relic](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service.html) para supervisar el rendimiento del sitio.

@@ -22,7 +22,7 @@ En este tema se proporcionan instrucciones para implementar actualizaciones en C
 >[!WARNING]
 >
 >Esta guía no se aplica si utilizó `git clone` para instalar Commerce.
->Los desarrolladores colaboradores deben usar [esta guía][install] para actualizar su instalación de Commerce.
+>>Los desarrolladores colaboradores deben usar [esta guía][install] para actualizar su instalación de Commerce.
 
 ## Pasos de implementación
 

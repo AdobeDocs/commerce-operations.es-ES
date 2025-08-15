@@ -82,7 +82,7 @@ El(la) `crontab.xml` resultante con dos grupos puede tener este aspecto:
 </config>
 ```
 
-Por ejemplo, vea [Magento_Customer crontab.xml](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Customer/etc/crontab.xml).
+Por ejemplo, consulte [Magento_Customer crontab.xml](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Customer/etc/crontab.xml).
 
 ### Especificar las opciones del grupo Cron
 

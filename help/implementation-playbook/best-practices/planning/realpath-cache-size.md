@@ -36,5 +36,5 @@ Si los valores de configuración de caché de Realpath son demasiado bajos o dem
 - [On-premise: Configuración de PHP](../../../performance/software.md#php-settings)
 - En la infraestructura en la nube:
    - [Prácticas recomendadas de base de datos](database-on-cloud.md)
-   - [Problemas más comunes de la base de datos en Magento Commerce Cloud](../maintenance/resolve-database-performance-issues.md)
-- [Indexadores &quot;Actualización según lo programado&quot; optimiza el rendimiento del Magento](../maintenance/indexer-configuration.md)
+   - [Problemas más comunes de las bases de datos en Magento Commerce Cloud](../maintenance/resolve-database-performance-issues.md)
+- [Indexadores &quot;Actualización según lo programado&quot; optimiza el rendimiento de Magento](../maintenance/indexer-configuration.md)

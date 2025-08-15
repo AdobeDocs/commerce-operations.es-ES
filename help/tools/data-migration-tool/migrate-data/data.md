@@ -1,6 +1,6 @@
 ---
 title: Migración de datos
-description: Obtenga información sobre cómo empezar a migrar datos del Magento 1 al Magento 2 con  [!DNL Data Migration Tool].
+description: Obtenga información sobre cómo empezar a migrar datos de Magento 1 a Magento 2 con  [!DNL Data Migration Tool].
 exl-id: f4ea8f6a-21f8-4db6-b598-c5efecec254f
 topic: Commerce, Migration
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
@@ -90,7 +90,7 @@ Por ejemplo, para `sales_flat_order`, [!DNL Data Migration Tool] crea:
 
 ## Posibles errores de coherencia
 
-Mientras se ejecuta, [!DNL Data Migration Tool] puede notificar incoherencias entre las bases de datos de Magento 1 y Magento 2, y mostrar mensajes como los siguientes:
+Mientras se ejecuta, [!DNL Data Migration Tool] puede notificar incoherencias entre las bases de datos de Magento 1 y Magento 2 y mostrar mensajes como los siguientes:
 
 * `Source documents are missing: <EXTENSION_TABLE_1>,<EXTENSION_TABLE_2>,...<EXTENSION_TABLE_N>`
 * `Destination documents are missing: <EXTENSION_TABLE_1>,<EXTENSION_TABLE_2>,...<EXTENSION_TABLE_N>`

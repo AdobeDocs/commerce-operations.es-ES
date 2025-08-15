@@ -39,12 +39,12 @@ La herramienta está diseñada para permitirle autoabastecerse con parches para 
 
 >[!NOTE]
 >
->QPT es solo para parches de calidad. Los parches de seguridad están disponibles en [Notas de la versión para Adobe Commerce y Magento Open Source](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html?lang=es).
+>QPT es solo para parches de calidad. Los parches de seguridad están disponibles en [Notas de la versión para Adobe Commerce y Magento Open Source](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html).
 
 ## Parches disponibles en [!DNL Quality Patches Tool]
 
 En esta sección de la Base de conocimiento de soporte de Adobe Commerce, encontrará descripciones detalladas de los problemas, resueltos por parches QPT, agrupados por versión de QPT.
-También puede ver una lista de los parches QPT disponibles y filtrar el por componente, utilizando la tabla generada dinámicamente en la página [[!DNL Quality Patches Tool]: Buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es) de nuestra base de conocimiento de soporte.
+También puede ver una lista de los parches QPT disponibles y filtrar el por componente, utilizando la tabla generada dinámicamente en la página [[!DNL Quality Patches Tool]: Buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) de nuestra base de conocimiento de soporte.
 
 ## Cómo instalar y utilizar [!DNL Quality Patches Tool]
 
@@ -56,8 +56,8 @@ Consulte [Commerce > Herramientas > Uso](../usage.md) en nuestra documentación 
 
 ### Cómo instalar y utilizar QPT para Adobe Commerce en la infraestructura en la nube
 
-Consulte [Guía de Commerce en la infraestructura de la nube > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=es) en nuestra documentación para desarrolladores para obtener más información sobre cómo instalar y utilizar QPT para aplicar y revertir parches en Adobe Commerce en la infraestructura de la nube.
+Consulte [Guía de Commerce en la infraestructura de la nube > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) en nuestra documentación para desarrolladores para obtener más información sobre cómo instalar y utilizar QPT para aplicar y revertir parches en Adobe Commerce en la infraestructura de la nube.
 
 ## Lectura relacionada
 
-* [[!DNL Quality Patches Tool] notas de la versión](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html?lang=es) en nuestra documentación para desarrolladores.
+* [[!DNL Quality Patches Tool] notas de la versión](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html) en nuestra documentación para desarrolladores.

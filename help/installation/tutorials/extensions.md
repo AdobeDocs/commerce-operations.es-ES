@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Administración de extensiones de terceros
 
-El código que amplía o personaliza el comportamiento de Adobe Commerce se denomina extensión. Opcionalmente, puede empaquetar y distribuir extensiones en el [Commerce Marketplace](https://commercemarketplace.adobe.com/) u otro sistema de distribución de extensiones.
+El código que amplía o personaliza el comportamiento de Adobe Commerce se denomina extensión. Opcionalmente, puede empaquetar y distribuir extensiones en [Commerce Marketplace](https://commercemarketplace.adobe.com/) u otro sistema de distribución de extensiones.
 
 Las extensiones incluyen:
 
@@ -20,7 +20,7 @@ Las extensiones incluyen:
 - Temas (cambia la apariencia de tu tienda y administrador)
 - Paquetes de idioma (localice la tienda y el administrador)
 
-En este tema se explica cómo usar la interfaz de línea de comandos para administrar las extensiones de terceros que se adquieren al Commerce Marketplace para _proyectos locales_. Para proyectos de infraestructura en la nube, consulte [Administrar extensiones](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/configure-store/extensions).
+En este tema se explica cómo usar la interfaz de línea de comandos para administrar las extensiones de terceros que se adquieren en Commerce Marketplace para _proyectos locales_. Para proyectos de infraestructura en la nube, consulte [Administrar extensiones](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions).
 
 Puede usar el mismo procedimiento para instalar la extensión _any_; todo lo que necesita es el nombre y la versión del Compositor de la extensión. Para encontrarlo, abra el archivo `composer.json` de la extensión y anote los valores de `"name"` y `"version"`.
 
@@ -37,8 +37,8 @@ Antes de la instalación, es posible que desee:
 
 Para instalar una extensión, debe:
 
-1. Obtenga una extensión del Commerce Marketplace u otro desarrollador de extensiones.
-1. Si instala una extensión desde el Commerce Marketplace, asegúrese de que el repositorio `repo.magento.com` existe en el archivo `composer.json`:
+1. Obtenga una extensión de Commerce Marketplace u otro desarrollador de extensiones.
+1. Si instala una extensión desde Commerce Marketplace, asegúrese de que el repositorio `repo.magento.com` existe en el archivo `composer.json`:
 
    ```bash
    "repositories": [
@@ -58,7 +58,7 @@ Para instalar una extensión, debe:
 
 Si ya conoce el nombre y la versión del compositor de la extensión, omita este paso y continúe con [Actualice el archivo `composer.json`](#update-composer-dependencies).
 
-Para obtener el nombre y la versión del compositor de la extensión desde el Commerce Marketplace:
+Para obtener el nombre y la versión del compositor de la extensión de Commerce Marketplace:
 
 1. Inicie sesión en [Commerce Marketplace](https://commercemarketplace.adobe.com/) con el nombre de usuario y la contraseña que utilizó para adquirir la extensión.
 
@@ -156,7 +156,7 @@ Algunas extensiones no funcionan correctamente a menos que borre primero los arc
    bin/magento setup:upgrade
    ```
 
-1. Vuelva a compilar el proyecto: en el modo de producción, puede recibir un mensaje que indique &quot;Vuelva a ejecutar el comando de compilación del Magento&quot;. La aplicación no le pide que ejecute el comando de compilación en modo de desarrollador.
+1. Vuelva a compilar el proyecto: en el modo de producción, puede recibir un mensaje que indique &quot;Vuelva a ejecutar el comando de compilación de Magento&quot;. La aplicación no le pide que ejecute el comando de compilación en modo de desarrollador.
 
    ```bash
    bin/magento setup:di:compile

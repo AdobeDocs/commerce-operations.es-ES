@@ -39,6 +39,6 @@ Estos valores de configuración están disponibles en el Administrador en **Tien
 | Período de caducidad | `oauth/cleanup/expiration_period` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Período de caducidad | `oauth/consumer/expiration_period` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | credenciales de consumidor de OAuth HTTP Post maxredirects | `oauth/consumer/post_maxredirects` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Tiempo de espera de Post HTTP de credenciales de consumidor de OAuth | `oauth/consumer/post_timeout` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Tiempo de espera de publicación HTTP de credenciales de consumidor de OAuth | `oauth/consumer/post_timeout` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 
 {style="table-layout:auto"}

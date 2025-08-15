@@ -5,9 +5,9 @@ source-wordcount: '9'
 ht-degree: 0%
 
 ---
-# Extensiones PHP
+# Extensiones de PHP
 
-Adobe Systems Commerce requiere:
+Adobe Commerce requiere:
 
 - `ext-bcmath`
 - `ext-ctype`

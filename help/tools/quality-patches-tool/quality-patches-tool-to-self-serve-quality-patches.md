@@ -19,7 +19,7 @@ La herramienta proporciona una resolución de problemas de autoservicio más rá
 
 >[!NOTE]
 >
->Debe utilizar la herramienta para extraer las correcciones de calidad necesarias según sea necesario, solo caso por caso y no como un enfoque a largo plazo para mantener el código de Adobe Commerce y de Magento Open Source. La actualización a la última versión de Adobe Commerce o Magento Open Source sigue siendo el mejor método para resolver los problemas de calidad y debe tener prioridad.
+>Debe utilizar la herramienta para extraer las correcciones de calidad necesarias según sea necesario, solo caso por caso y no como un enfoque a largo plazo para mantener el código de Adobe Commerce y Magento Open Source. La actualización a la versión más reciente de Adobe Commerce o Magento Open Source sigue siendo el mejor método para resolver los problemas de calidad y debe tener prioridad.
 
 ## Obtener y usar [!DNL Quality Patches Tool]
 

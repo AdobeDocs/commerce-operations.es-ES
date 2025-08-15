@@ -19,4 +19,4 @@ La siguiente información de estado aparece en el nivel superior de la página e
 
 **[!UICONTROL Health Index Bar]**: mide el estado general del sitio de 0 a 100, donde cero es el peor y 100 es un estado perfecto. Se calcula según la cantidad y el coeficiente de peso prioritario de las recomendaciones activas.
 
-**[!UICONTROL Download Recommendations Report]**: el informe de Recommendations proporciona recomendaciones personalizadas aplicables a su proyecto. Puede descargar un informe de PDF haciendo clic en esta sección.
+**[!UICONTROL Download Recommendations Report]**: el informe de recomendaciones proporciona recomendaciones personalizadas aplicables a su proyecto. Puede descargar un informe de PDF haciendo clic en esta sección.
