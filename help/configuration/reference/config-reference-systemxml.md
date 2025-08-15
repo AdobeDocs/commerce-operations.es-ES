@@ -248,7 +248,7 @@ Una etiqueta `<field>` puede tener los siguientes valores para el atributo `type
 | `select` | Menú desplegable normal; es posible que necesite un(a) `source_model` personalizado. También se usa para `Yes/No` selecciones. Vea `Magento\Search\Model\Adminhtml\System\Config\Source\Engine` para ver un ejemplo. |
 | `multiselect` | Como `select`, pero varias opciones son válidas. |
 | `button` | Botón que almacena en déclencheur un evento inmediato. Requiere un modelo front-end personalizado para definir el texto del botón y la acción. Vea `Magento\ScheduledImportExport\Block\Adminhtml\System\Config\Clean` para ver un ejemplo. |
-| `obscure` | Campo de texto con el valor cifrado y mostrado como `****`. Al cambiar el tipo con &quot;Inspeccionar elemento&quot; en el explorador, no se muestra el valor. |
+| `obscure` | Campo de texto con el valor cifrado y mostrado como `**&#x200B;**`. Al cambiar el tipo con &quot;Inspeccionar elemento&quot; en el explorador, no se muestra el valor. |
 | `password` | Como `obscure`, excepto que el valor oculto no está cifrado y al cambiar el tipo mediante &quot;Inspeccionar elemento&quot; en el explorador, se muestra el valor. |
 | `file` | Permite cargar un archivo para su procesamiento. |
 | `label` | Muestra una etiqueta en lugar de un campo editable. Utilice este tipo cuando un campo solo se pueda editar en ámbitos específicos; por ejemplo, en el nivel de vista de tienda. |

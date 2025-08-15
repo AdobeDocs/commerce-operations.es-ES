@@ -470,7 +470,7 @@ El comando `bin/magento i18n:collect-phrases -o` ahora recopila y agrega correct
 
 _AC-9843 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/0c53bbf7)_
 
-#### El nombre de apóstrofo en la vista de tienda se reemplaza por &amp;#039;
+#### El nombre de apóstrofo en la vista de tienda se reemplaza por &#039;
 
 Los filtros de vista de tienda de la cuadrícula ahora muestran correctamente los apóstrofos
 
@@ -1878,7 +1878,7 @@ El sistema ahora se adhiere al estándar de codificación al eliminar la etiquet
 
 _AC-8356 - [Problema de GitHub](https://github.com/magento/magento2/issues/37250) - [Contribución de código de GitHub](https://github.com/magento/magento2/pull/37000)_
 
-#### Espacio en la regla de saltos de sintaxis del editor para `[{composer,auth}.json]`
+#### Espacio en la regla de saltos de sintaxis del editor para `[&lbrace;composer,auth&rbrace;.json]`
 
 El sistema ahora aplica correctamente una sangría de 4 espacios a los archivos composer y auth.json, siguiendo una corrección de un error de sintaxis en la configuración del editor. Anteriormente, debido a un espacio en la sintaxis del editor de configuración, estos archivos tenían un formato incorrecto con una sangría de 2 espacios.
 
@@ -2022,7 +2022,7 @@ El problema se ha corregido después de aplicar la comprobación al solicitar un
 
 _ACP2E-2653 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/12e071c3)_
 
-#### La llamada de productos GraphQL que contiene el filtro de precios `{from:&quot;0&quot;}` no devuelve ningún resultado
+#### La llamada de productos GraphQL que contiene el filtro de precios `&lbrace;from:&quot;0&quot;&rbrace;` no devuelve ningún resultado
 
 Anteriormente, la búsqueda de productos de graphql con filtro para precios cero no arrojaba ningún resultado debido a una excepción generada. Ahora la búsqueda devuelve los resultados según lo esperado.
 
@@ -2641,7 +2641,7 @@ Se ha resuelto un problema en el que la mutación addProductsToCart devolvía un
 
 _LYNX-469_
 
-#### Atributo del producto > marca comercial abreviada &amp;trade; se devuelve como &amp;trade;
+#### Atributo del producto > marca comercial abreviada &trade; se devuelve como &trade;
 
 Se ha resuelto un problema de codificación de caracteres con el nombre del producto para la API de GraphQL
 

@@ -37,7 +37,7 @@ La importación de datos a través de la IU de administración interfiere con ot
 <u>Pasos a seguir</u>:
 
 1. Vaya a **[!UICONTROL System]** > **[!UICONTROL Data Transfer]** > **[!UICONTROL Import]**.
-1. Establecer **[!UICONTROL Entity Type]** en *[!UICONTROL Customers and Addresses](un solo archivo)*.
+1. Establecer **[!UICONTROL Entity Type]** en *[!UICONTROL Customers and Addresses] (un solo archivo)*.
 1. Establezca **[!UICONTROL Import Behavior]** en *[!UICONTROL Add/Update]*.
 1. Seleccione un archivo válido para importar.
 1. Haga clic en el botón **[!UICONTROL Check Data]**.

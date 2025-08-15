@@ -213,7 +213,7 @@ Instale [!DNL Varnish] en un servidor independiente delante del nivel web. Debe 
 * **El modo de gracia** le permite indicar a [!DNL Varnish] que mantenga un objeto en la caché más allá de su período de tiempo de vida (TTL) y que sirva este contenido obsoleto si [!DNL Commerce] no está en buen estado o si aún no se ha recuperado contenido nuevo.
 * **Modo Saint** pone en lista negra servidores [!DNL Commerce] que no están en buen estado durante un período de tiempo configurable. Como resultado, los backends que no están en buen estado no pueden servir tráfico al usar [!DNL Varnish] como equilibrador de carga.
 
-Consulte [Configuración avanzada [!DNL Varnish] 2} para obtener más información sobre cómo implementar estas características.](../configuration/cache/config-varnish-advanced.md)
+Consulte [Configuración avanzada [!DNL Varnish] 2&rbrace; para obtener más información sobre cómo implementar estas características.](../configuration/cache/config-varnish-advanced.md)
 
 ### Optimizar el rendimiento del recurso
 

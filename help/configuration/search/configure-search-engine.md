@@ -17,7 +17,7 @@ En esta sección se analiza la configuración mínima que debe elegir para proba
 >[!TIP]
 >
 >En las versiones 2.4.4 y 2.4.3-p2, todos los campos etiquetados como **Elasticsearch** también se aplican a OpenSearch.
->>Cuando se introdujo la compatibilidad con Elasticsearch 8.x en la versión 2.4.6, se crearon nuevas etiquetas para distinguir entre las configuraciones de Elasticsearch y OpenSearch.
+>&#x200B;>Cuando se introdujo la compatibilidad con Elasticsearch 8.x en la versión 2.4.6, se crearon nuevas etiquetas para distinguir entre las configuraciones de Elasticsearch y OpenSearch.
 
 Para obtener más información sobre cómo configurar el motor de búsqueda, consulta la [Guía del usuario](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-configuration.html).
 

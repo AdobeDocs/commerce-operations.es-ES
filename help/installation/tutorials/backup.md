@@ -36,7 +36,7 @@ bin/magento config:set system/backup/functionality_enabled 1
 >[!WARNING]
 >
 >**Aviso de obsolescencia:**
->>La funcionalidad de copia de seguridad quedará obsoleta a partir de las versiones 2.1.16, 2.2.7 y 2.3.0. Recomendamos investigar tecnologías de copia de seguridad adicionales y herramientas de copia de seguridad binaria (como Percona XtraBackup).
+>&#x200B;>La funcionalidad de copia de seguridad quedará obsoleta a partir de las versiones 2.1.16, 2.2.7 y 2.3.0. Recomendamos investigar tecnologías de copia de seguridad adicionales y herramientas de copia de seguridad binaria (como Percona XtraBackup).
 
 ## Establecer el límite de archivos abiertos
 

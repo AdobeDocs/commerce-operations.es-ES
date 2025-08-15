@@ -44,6 +44,6 @@ Si el registro binario está habilitado para su base de datos de Magento 1, esta
 
 Migrar el código de extensión de Magento 1 a Magento 2.
 
-Para encontrar las últimas versiones de las extensiones, visite [!DNL [Commerce Marketplace]](https://marketplace.magento.com/) o póngase en contacto con su proveedor de extensiones.
+Para encontrar las últimas versiones de las extensiones, visite [[!DNL [Commerce Marketplace]]](https://marketplace.magento.com/) o póngase en contacto con su proveedor de extensiones.
 
-También puede usar [!DNL [Code Migration Tool]](https://github.com/magento-commerce/code-migration/blob/develop/README.md).
+También puede usar [[!DNL [Code Migration Tool]]](https://github.com/magento-commerce/code-migration/blob/develop/README.md).
