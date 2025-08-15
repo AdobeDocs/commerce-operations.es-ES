@@ -37,7 +37,7 @@ El diagrama siguiente muestra los posibles flujos de trabajo al ejecutar [!DNL U
 
 Vea este vídeo para obtener más información acerca de [!DNL Upgrade Compatibility Tool]:
 
->[!VIDEO](https://video.tv.adobe.com/v/341245?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/344382?quality=12&captions=spa)
 
 ## Ayudar a mejorar [!DNL Upgrade Compatibility Tool]
 

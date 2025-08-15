@@ -69,4 +69,4 @@ Comerciantes y socios que deseen tener una mayor visibilidad de sus sitios web d
 
 Vea este vídeo para obtener más información acerca de [!DNL Site-Wide Analysis Tool]:
 
->[!VIDEO](https://video.tv.adobe.com/v/344001?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3410776?quality=12&captions=spa)
