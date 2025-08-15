@@ -49,7 +49,7 @@ También puede usar un administrador de procesos como [Supervisor](https://super
 
 >[!INFO]
 >
->Si su tienda Adobe Commerce está alojada en la plataforma Cloud, use [`CRON_CONSUMERS_RUNNER`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#cron_consumers_runner) para configurar el trabajo cron de `consumers_runner`.
+>Si su tienda Adobe Commerce está alojada en la plataforma Cloud, use [`CRON_CONSUMERS_RUNNER`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=es#cron_consumers_runner) para configurar el trabajo cron de `consumers_runner`.
 
 ### Configuración específica
 
@@ -82,6 +82,6 @@ Edite el archivo `/app/etc/env.php` para configurar el trabajo cron `consumers_r
 
   >[!INFO]
   >
-  >Si su tienda Adobe Commerce está alojada en la plataforma Cloud, use [`CONSUMERS_WAIT_FOR_MAX_MESSAGES`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#consumers_wait_for_max_messages) para configurar cómo procesan los consumidores los mensajes de la cola de mensajes.
+  >Si su tienda Adobe Commerce está alojada en la plataforma Cloud, use [`CONSUMERS_WAIT_FOR_MAX_MESSAGES`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=es#consumers_wait_for_max_messages) para configurar cómo procesan los consumidores los mensajes de la cola de mensajes.
 
 Consulte [Iniciar consumidores de cola de mensajes](../cli/start-message-queues.md).

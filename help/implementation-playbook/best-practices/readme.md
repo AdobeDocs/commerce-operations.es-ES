@@ -7,7 +7,7 @@ ht-degree: 0%
 ---
 # Prácticas recomendadas: Flujo de trabajo de creación de contenido
 
-En este documento se describe el flujo de trabajo del usuario para solicitar cambios o adiciones al contenido de *[Prácticas recomendadas] (https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/phases.html* en el *Libro de estrategias de implementación de Adobe Commerce*.
+En este documento se describe el flujo de trabajo del usuario para solicitar cambios o adiciones al contenido de *[Prácticas recomendadas] (https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/phases.html?lang=es* en el *Libro de estrategias de implementación de Adobe Commerce*.
 
 ## ¿Quién puede crear una solicitud de?
 
@@ -35,13 +35,13 @@ Puede enviar los siguientes tipos de solicitudes:
 
 Si no se proporciona suficiente información en una solicitud, el equipo solicita información adicional al solicitante. Si el solicitante no responde en un plazo de 14 días, el equipo cierra la solicitud.
 
-**Crear o actualizar contenido**: el trabajo de creación de contenido se ha completado siguiendo el proceso documentado en la [Guía del colaborador de Adobe Experience League](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html). Según la solicitud, el trabajo puede incluir la conversión del contenido nuevo a Markdown, la creación de un tema o la actualización de un tema existente.
+**Crear o actualizar contenido**: el trabajo de creación de contenido se ha completado siguiendo el proceso documentado en la [Guía del colaborador de Adobe Experience League](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=es). Según la solicitud, el trabajo puede incluir la conversión del contenido nuevo a Markdown, la creación de un tema o la actualización de un tema existente.
 
-**Revisión, aprobación y publicación de contenido**: el contenido se revisa y edita durante la creación o actualización del tema mediante [solicitudes de extracción de GitHub](https://experienceleague.adobe.com/docs/contributor/contributor-guide/setup/git-fundamentals.html?lang=en#pull-requests). Todo el contenido debe pasar por una revisión editorial. La revisión técnica es opcional y depende del contenido. Si no se requiere una revisión técnica, el proceso continúa con una revisión editorial solamente. Este proceso puede tardar varias iteraciones hasta que se apruebe el contenido.
+**Revisión, aprobación y publicación de contenido**: el contenido se revisa y edita durante la creación o actualización del tema mediante [solicitudes de extracción de GitHub](https://experienceleague.adobe.com/docs/contributor/contributor-guide/setup/git-fundamentals.html?lang=es#pull-requests). Todo el contenido debe pasar por una revisión editorial. La revisión técnica es opcional y depende del contenido. Si no se requiere una revisión técnica, el proceso continúa con una revisión editorial solamente. Este proceso puede tardar varias iteraciones hasta que se apruebe el contenido.
 
 Una vez aprobado un artículo, la solicitud de extracción se puede combinar con la rama de producción. La combinación debe realizarla el autor. Después de combinar un tema, se puede publicar en producción inmediatamente mediante un proceso manual o automáticamente la próxima vez que se ejecute el trabajo de publicación. Los trabajos de publicación suelen ejecutarse cada dos horas.
 
-**Nueva notificación de contenido**-Adobe proporcionará una sección de *Novedades* en el tema de la [descripción general de las prácticas recomendadas](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/phases.html?lang=en) para mantener informados a los usuarios sobre los temas publicados recientemente o actualizados. Adobe también promocionará contenido nuevo de prácticas recomendadas mediante los canales existentes, como marketing y comunicaciones internas.
+**Nueva notificación de contenido**-Adobe proporcionará una sección de *Novedades* en el tema de la [descripción general de las prácticas recomendadas](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/phases.html?lang=es) para mantener informados a los usuarios sobre los temas publicados recientemente o actualizados. Adobe también promocionará contenido nuevo de prácticas recomendadas mediante los canales existentes, como marketing y comunicaciones internas.
 
 ## Registro de pendientes y Panel Kanban
 

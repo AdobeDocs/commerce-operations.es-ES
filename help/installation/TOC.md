@@ -67,4 +67,4 @@ ht-degree: 3%
    - [Desinstalar o volver a instalar Commerce](tutorials/uninstall.md)
    - [Desinstalar temas](tutorials/themes.md)
    - [Actualizar el esquema de base de datos](tutorials/database-upgrade.md)
-- [Volver a las guías operativas](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
+- [Volver a las guías operativas](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=es)

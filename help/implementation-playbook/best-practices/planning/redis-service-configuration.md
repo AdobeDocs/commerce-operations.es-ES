@@ -30,13 +30,13 @@ stage:
     REDIS_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
 ```
 
-Para obtener información sobre la configuración del entorno en la infraestructura en la nube, consulte [`REDIS_BACKEND`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_backend) en la _Guía de Commerce en la infraestructura en la nube_.
+Para obtener información sobre la configuración del entorno en la infraestructura en la nube, consulte [`REDIS_BACKEND`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=es#redis_backend) en la _Guía de Commerce en la infraestructura en la nube_.
 
 Para instalaciones locales, consulte [Configurar el almacenamiento en caché de la página Redis](../../../configuration/cache/redis-pg-cache.md#configure-redis-page-caching) en la _Guía de configuración_.
 
 >[!NOTE]
 >
->Compruebe que está utilizando la última versión del paquete `ece-tools`. Si no es así, [actualice a la versión más reciente](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html). Puede comprobar la versión instalada en su entorno local mediante el comando CLI `composer show magento/ece-tools`.
+>Compruebe que está utilizando la última versión del paquete `ece-tools`. Si no es así, [actualice a la versión más reciente](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html?lang=es). Puede comprobar la versión instalada en su entorno local mediante el comando CLI `composer show magento/ece-tools`.
 
 
 ### Tamaño de la memoria caché L2 (Adobe Commerce Cloud)
@@ -91,13 +91,13 @@ stage:
     REDIS_USE_SLAVE_CONNECTION: true
 ```
 
-Consulte [REDIS_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_use_slave_connection) en la _Guía de infraestructura en la nube de Commerce_.
+Consulte [REDIS_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=es#redis_use_slave_connection) en la _Guía de infraestructura en la nube de Commerce_.
 
 Para las instalaciones locales de Adobe Commerce, configure la nueva implementación de caché de Redis con los comandos `bin/magento:setup`. Consulte [Usar Redis para la caché predeterminada](../../../configuration/cache/redis-pg-cache.md#configure-redis-page-caching) en la _Guía de configuración_.
 
 >[!WARNING]
 >
->No configure _not_ una conexión esclava de Redis para proyectos de infraestructura en la nube con una [arquitectura escalada/dividida](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture.html). Esto provoca errores de conexión de Redis. Consulte [Directrices de configuración de Redis](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_use_slave_connection) en la guía de _Commerce en infraestructura en la nube_.
+>No configure _not_ una conexión esclava de Redis para proyectos de infraestructura en la nube con una [arquitectura escalada/dividida](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture.html?lang=es). Esto provoca errores de conexión de Redis. Consulte [Directrices de configuración de Redis](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=es#redis_use_slave_connection) en la guía de _Commerce en infraestructura en la nube_.
 
 ## Claves de precarga
 
@@ -159,7 +159,7 @@ stage:
 
 >[!NOTE]
 >
->En el ejemplo anterior, la caché de `full_page` no es relevante para Adobe Commerce en proyectos de infraestructura en la nube, ya que utilizan [Fastly](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly).
+>En el ejemplo anterior, la caché de `full_page` no es relevante para Adobe Commerce en proyectos de infraestructura en la nube, ya que utilizan [Fastly](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/cdn/fastly).
 
 Para configurar instalaciones locales, consulte [Opciones de caché antiguas](../../../configuration/cache/level-two-cache.md#stale-cache-options) en la _Guía de configuración_.
 
@@ -200,7 +200,7 @@ Separar la caché de Redis de la sesión de Redis le permite administrar la cach
        rabbitmq: "rabbitmq:rabbitmq"
    ```
 
-1. Envíe un [ticket de soporte de Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) para solicitar el aprovisionamiento de una nueva instancia de Redis dedicada a sesiones en entornos de producción y ensayo. Incluir los archivos de configuración actualizados de `.magento/services.yaml` y `.magento.app.yaml`. Esto no provocará ningún tiempo de inactividad, pero requiere una implementación para activar el nuevo servicio.
+1. Envíe un [ticket de soporte de Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=es#submit-ticket) para solicitar el aprovisionamiento de una nueva instancia de Redis dedicada a sesiones en entornos de producción y ensayo. Incluir los archivos de configuración actualizados de `.magento/services.yaml` y `.magento.app.yaml`. Esto no provocará ningún tiempo de inactividad, pero requiere una implementación para activar el nuevo servicio.
 
 1. Compruebe que la nueva instancia se esté ejecutando y anote el número de puerto.
 
@@ -237,7 +237,7 @@ Separar la caché de Redis de la sesión de Redis le permite administrar la cach
    redis-cli -h 127.0.0.1 -p 6374 -n 0 FLUSHDB
    ```
 
-Durante la implementación, debería ver las líneas siguientes en el [registro de compilación e implementación](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html#build-and-deploy-logs):
+Durante la implementación, debería ver las líneas siguientes en el [registro de compilación e implementación](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html?lang=es#build-and-deploy-logs):
 
 ```
 W:   - Downloading colinmollenhour/credis (1.11.1)

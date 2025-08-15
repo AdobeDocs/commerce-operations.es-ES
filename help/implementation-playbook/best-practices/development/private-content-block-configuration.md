@@ -31,4 +31,4 @@ Los sitios que tienen bloques de contenido privado que contienen las variables `
 ## Más información
 
 - [Contenido privado](../../../performance/configuration.md#client-side-optimization-settings)
-- [Las solicitudes de AJAX de alto rendimiento causan bajo rendimiento](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/high-throughput-ajax-requests-cause-poor-performance.html)
+- [Las solicitudes de AJAX de alto rendimiento causan bajo rendimiento](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/high-throughput-ajax-requests-cause-poor-performance.html?lang=es)

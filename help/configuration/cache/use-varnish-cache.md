@@ -42,7 +42,7 @@ Una vez instalado y configurado el barniz para que funcione con Commerce, las si
 
 ## Configuración de Commerce para depurar Barniz
 
-Commerce purga los hosts de Varnish después de configurar los hosts de Varnish mediante el comando [`magento setup:config:set`](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#setupconfigset).
+Commerce purga los hosts de Varnish después de configurar los hosts de Varnish mediante el comando [`magento setup:config:set`](https://experienceleague.adobe.com/es/docs/commerce-operations/tools/cli-reference/commerce-on-premises#setupconfigset).
 
 Puede usar el parámetro opcional `--http-cache-hosts` para especificar una lista separada por comas de hosts de Barnish y puertos de escucha. Configure todos los hosts de Varnish, independientemente de si tiene uno o varios. (No separe los hosts con caracteres de espacio.)
 

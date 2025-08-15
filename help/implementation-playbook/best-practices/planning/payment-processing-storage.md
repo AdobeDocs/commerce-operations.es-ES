@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Prácticas recomendadas para el procesamiento y almacenamiento de pagos
 
-Uno de los principios clave para mantener el [cumplimiento de PCI](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/payments/compliance-pci.html) es contar con una estrategia para procesar y almacenar correctamente los pagos con tarjeta de crédito.
+Uno de los principios clave para mantener el [cumplimiento de PCI](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/payments/compliance-pci.html?lang=es) es contar con una estrategia para procesar y almacenar correctamente los pagos con tarjeta de crédito.
 
 Almacenar datos del titular de la tarjeta en Adobe Commerce está **estrictamente prohibido** y hacerlo podría ser una violación de sus obligaciones como comerciante según el Estándar de seguridad de datos de la industria de tarjetas de pago (PCI-DSS). Encontrará más información sobre el modelo de responsabilidad compartida y las directrices para las obligaciones de comerciantes en la [Guía del modelo de responsabilidad compartida de Adobe Commerce](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-commerce-shared-responsibilities-guide.pdf) en el Centro de confianza de Adobe.
 
@@ -53,4 +53,4 @@ El método recomendado para gestionar los datos del titular de la tarjeta es tok
 
 ## Más información
 
-Si estás buscando soluciones de pago recomendadas por Adobe, considera [Servicios de pago de Adobe](https://experienceleague.adobe.com/docs/commerce/payment-services/overview.html).
+Si estás buscando soluciones de pago recomendadas por Adobe, considera [Servicios de pago de Adobe](https://experienceleague.adobe.com/docs/commerce/payment-services/overview.html?lang=es).

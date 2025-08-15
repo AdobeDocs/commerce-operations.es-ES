@@ -16,7 +16,7 @@ A partir del paquete 2002.1.5 de `ece-tools`, puede utilizar una variable de ent
 
 ## Variable de entorno
 
-La variable `REMOTE_STORAGE` se usa durante la [fase de implementación](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/process.html) de un proyecto de infraestructura en la nube.
+La variable `REMOTE_STORAGE` se usa durante la [fase de implementación](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/process.html?lang=es) de un proyecto de infraestructura en la nube.
 
 ### `REMOTE_STORAGE`
 
@@ -40,7 +40,7 @@ stage:
 
 ### Establecer variable con CLI de nube
 
-Establezca la variable `REMOTE_STORAGE` como una [variable de nivel de entorno](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/variable-levels.html) para que los archivos no se compartan entre los entornos Producción, Ensayo e Integración. La configuración de las variables en el nivel de entorno ofrece la flexibilidad de utilizar únicamente el almacenamiento remoto en entornos seleccionados, como la exclusión del uso del entorno de integración del almacenamiento remoto.
+Establezca la variable `REMOTE_STORAGE` como una [variable de nivel de entorno](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/variable-levels.html?lang=es) para que los archivos no se compartan entre los entornos Producción, Ensayo e Integración. La configuración de las variables en el nivel de entorno ofrece la flexibilidad de utilizar únicamente el almacenamiento remoto en entornos seleccionados, como la exclusión del uso del entorno de integración del almacenamiento remoto.
 
 **Para agregar la variable de almacenamiento remoto mediante la CLI de nube**:
 
@@ -89,7 +89,7 @@ También puede utilizar la interfaz Web de Project para agregar la variable al e
 
 ### Utilizar autenticación opcional
 
-`key` y `secret` son opcionales. Cuando cree la variable, puede ocultar `key` y `secret` si selecciona la opción `sensitive`. Con esta configuración, los valores no son visibles en la interfaz web. Consulte [Visibilidad variable](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/variable-levels.html#visibility) en la guía de _Commerce en infraestructura de nube_.
+`key` y `secret` son opcionales. Cuando cree la variable, puede ocultar `key` y `secret` si selecciona la opción `sensitive`. Con esta configuración, los valores no son visibles en la interfaz web. Consulte [Visibilidad variable](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/variable-levels.html?lang=es#visibility) en la guía de _Commerce en infraestructura de nube_.
 
 Si desea utilizar un método de autenticación diferente, omita `key` y `secret` de la configuración JSON,. Configure el método de autenticación alternativo y verifique que el servidor esté autorizado para el compartimento S3.
 
@@ -111,7 +111,7 @@ bin/magento remote-storage:sync
 
 Si decide utilizar la solución de almacenamiento remoto con un proyecto de infraestructura en la nube de Adobe Commerce, use las directrices de [Amazon S3](https://docs.fastly.com/en/guides/amazon-s3) de la documentación de _Fastly_ para asegurarse de que Fastly Image Optimization funciona con AWS S3.
 
-Prepárese con sus [credenciales de Fastly](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html#get-fastly-credentials). En proyectos Pro, use SSH para conectarse a su servidor y obtener las credenciales de Fastly del archivo `/mnt/shared/fastly_tokens.txt`. Los entornos de ensayo y producción tienen credenciales únicas. Debe obtener las credenciales de cada entorno.
+Prepárese con sus [credenciales de Fastly](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html?lang=es#get-fastly-credentials). En proyectos Pro, use SSH para conectarse a su servidor y obtener las credenciales de Fastly del archivo `/mnt/shared/fastly_tokens.txt`. Los entornos de ensayo y producción tienen credenciales únicas. Debe obtener las credenciales de cada entorno.
 
 Siga configurando el almacenamiento remoto para proyectos en la nube con las siguientes tareas:
 

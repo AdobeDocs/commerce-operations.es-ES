@@ -23,7 +23,7 @@ Después de hacer la copia de seguridad, puedes [revertir](#rollback) más tarde
 
 >[!TIP]
 >
->Para Adobe Commerce sobre proyectos de infraestructura en la nube, consulte [Administración de instantáneas y copias de seguridad](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots) en la _Guía de la nube_.
+>Para Adobe Commerce sobre proyectos de infraestructura en la nube, consulte [Administración de instantáneas y copias de seguridad](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/develop/storage/snapshots) en la _Guía de la nube_.
 
 ## Habilitar copias de seguridad
 
