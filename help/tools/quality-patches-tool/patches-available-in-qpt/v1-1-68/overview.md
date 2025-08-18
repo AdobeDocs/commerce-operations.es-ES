@@ -4,9 +4,9 @@ description: Esta subsección proporciona una descripción detallada de los prob
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 74094036-cb1b-419f-b287-ca24d351a448
-source-git-commit: 47c8541c228f9ed3795c93b67b8ff85cbd4bd555
+source-git-commit: 937acc659427b788b8af778f5ea826eacccdc70e
 workflow-type: tm+mt
-source-wordcount: '285'
+source-wordcount: '284'
 ht-degree: 0%
 
 ---
@@ -29,6 +29,6 @@ QPT v1.1.68 incluye los siguientes parches:
 1. **ACSD-66889**: Error durante el reíndice de inventario en CLI.
 1. **ACSD-66963**: la mutación de EstimateTotals devuelve un valor nulo para los descuentos cuando se aplica un código de descuento a un carro de compras con productos virtuales.
 1. **ACSD-66965**: La opción de impresión de la página Lista de solicitudes produce un error.
-1. **ACSD-67039**: no se guardaron los registros del cliente debido a la validación del atributo del sistema rp_token.
+1. **ACSD-67039**: los registros del cliente no se guardaron debido a la validación del atributo del sistema `rp_token`.
 
 Utilice el menú de la izquierda para navegar a una página específica del parche.
