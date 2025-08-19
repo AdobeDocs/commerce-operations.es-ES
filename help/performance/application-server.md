@@ -2,9 +2,9 @@
 title: GraphQL Application Server
 description: Siga estas instrucciones para activar GraphQL Application Server en la implementación de Adobe Commerce.
 exl-id: 9b223d92-0040-4196-893b-2cf52245ec33
-source-git-commit: 8427460cd11169ffe7dd2d4ba0cc1fdaea513702
+source-git-commit: ed46f48472a51db17e1c3ade9bfe3ab134098548
 workflow-type: tm+mt
-source-wordcount: '2184'
+source-wordcount: '2212'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Commerce GraphQL Application Server permite a Adobe Commerce mantener el estado entre las solicitudes de API de Commerce GraphQL. GraphQL Application Server, que se basa en la extensión Swoole, funciona como un proceso con subprocesos de trabajo que administran el procesamiento de solicitudes. Al preservar un estado de aplicación de arranque entre las solicitudes de API de GraphQL, GraphQL Application Server mejora la gestión de solicitudes y el rendimiento general del producto. Las solicitudes de API son mucho más eficientes.
 
-GraphQL Application Server solo está disponible para Adobe Commerce. No está disponible para Magento Open Source. Para los proyectos de Cloud Pro, debe [enviar un vale de soporte técnico de Adobe Commerce](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) para habilitar el servidor de aplicaciones de GraphQL.
+GraphQL Application Server solo está disponible para Adobe Commerce. No está disponible para Magento Open Source. Para los proyectos de Cloud Pro, debe [enviar un vale de soporte técnico de Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) para habilitar el servidor de aplicaciones de GraphQL.
 
 >[!NOTE]
 >
@@ -30,7 +30,7 @@ La transición de la lógica de gestión de solicitudes a un bucle de eventos de
 
 ## Ventajas
 
-El servidor de aplicaciones de GraphQL permite que Adobe Commerce mantenga el estado entre solicitudes consecutivas de la API de Commerce GraphQL. Compartir el estado de la aplicación entre solicitudes mejora la eficacia de las solicitudes de API al minimizar la sobrecarga de procesamiento y optimizar la administración de solicitudes. Como resultado, el tiempo de respuesta de las solicitudes de GraphQL se puede reducir hasta en un 30 %.
+El servidor de aplicaciones de GraphQL permite que Adobe Commerce mantenga el estado entre solicitudes consecutivas de la API de Commerce GraphQL. Compartir el estado de la aplicación entre solicitudes mejora la eficacia de las solicitudes de API al minimizar la sobrecarga de procesamiento y optimizar la administración de solicitudes. Como resultado, puede reducir el tiempo de respuesta de las solicitudes de GraphQL hasta en un 30 %.
 
 ## Requisitos del sistema
 
@@ -38,8 +38,22 @@ La ejecución de GraphQL Application Server requiere lo siguiente:
 
 * Commerce versión 2.4.7+
 * PHP 8.2 o superior
-* Instalación de la extensión PHP v5+
 * RAM y CPU adecuados en función de la carga esperada
+* Extensión Swoole PHP v5+ (consulte los requisitos específicos del proyecto a continuación)
+
+### Proyectos en la nube
+
+Adobe Commerce en proyectos de infraestructura en la nube incluye la extensión Swoole de forma predeterminada. Puede [habilitarlo](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/php-settings#enable-extensions) en la propiedad `runtime` del archivo `.magento.app.yaml`. Por ejemplo:
+
+```yaml
+runtime:
+    extensions:
+        - swoole
+```
+
+### Proyectos locales
+
+Debe [instalar y configurar](#install-and-configure-swoole) manualmente la extensión Swoole PHP para proyectos locales.
 
 ## Habilitar e implementar en la infraestructura en la nube
 
@@ -259,7 +273,7 @@ Complete los siguientes pasos antes de implementar GraphQL Application Server en
 
 >[!NOTE]
 >
->Asegúrese de que todas las configuraciones personalizadas del archivo raíz `.magento.app.yaml` se migren correctamente al archivo `application-server/.magento/.magento.app.yaml`. Una vez agregado el archivo `application-server/.magento/.magento.app.yaml` al proyecto, debe mantenerlo además del archivo raíz `.magento.app.yaml`. Por ejemplo, si necesita [configurar el servicio RabbitMQ](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/configure/service/rabbitmq) o [administrar propiedades web](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/configure/app/properties/web-property), también debe agregar la misma configuración a `application-server/.magento/.magento.app.yaml`.
+>Asegúrese de que todas las configuraciones personalizadas del archivo raíz `.magento.app.yaml` se migren correctamente al archivo `application-server/.magento/.magento.app.yaml`. Una vez agregado el archivo `application-server/.magento/.magento.app.yaml` al proyecto, debe mantenerlo además del archivo raíz `.magento.app.yaml`. Por ejemplo, si necesita [configurar el servicio RabbitMQ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/rabbitmq) o [administrar propiedades web](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/web-property), también debe agregar la misma configuración a `application-server/.magento/.magento.app.yaml`.
 
 ### Verificar la habilitación en proyectos en la nube
 
@@ -473,7 +487,7 @@ Esta prueba está diseñada para detectar cambios de estado en los objetos de se
 
 #### Errores de GraphQlStateTest y posible corrección
 
-* **No se puede agregar, omitir ni filtrar una lista**. Si ve un error acerca de agregar, omitir o filtrar una lista, considere si puede refactorizar la clase de una manera compatible con versiones anteriores para utilizar las fábricas de clases de servicio que tienen estado mutable.
+* **No se puede agregar, omitir ni filtrar una lista**. Si aparece este error, intente refactorizar la clase para que utilice fábricas para clases de servicio con estado mutable.
 
 * **La clase muestra un estado mutable**. Si la propia clase muestra un estado mutable, intente reescribir el código para evitar este estado. Si el estado mutable es necesario por motivos de rendimiento, implemente `ResetAfterRequestInterface` y use `_resetState()` para restablecer el objeto a su estado construido inicial.
 
