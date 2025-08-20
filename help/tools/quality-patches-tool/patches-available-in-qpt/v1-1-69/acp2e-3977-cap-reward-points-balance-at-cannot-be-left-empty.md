@@ -1,15 +1,16 @@
 ---
-title: 'ACP2E-3977: El campo **[!UICONTROL Cap Reward Points Balance At]** no puede dejarse vacío'
+title: 'ACP2E-3977: El campo [!UICONTROL Cap Reward Points Balance At] no puede dejarse vacío'
 description: Aplique el parche ACP2E-3977 para corregir el problema de Adobe Commerce en el que el campo **[!UICONTROL Cap Reward Points Balance At]** no se podía dejar vacío cuando se establecía el campo **[!UICONTROL Rewards Points Balance Redemption Threshold]**, lo que provocaba un error de validación.
 feature: Configuration, Rewards
 role: Admin, Developer
-source-git-commit: 4fd9b66967639f3afff322bfd82e68cfb79b2138
+type: Troubleshooting
+exl-id: 5275911f-4f8c-4b37-af11-24ceb69406c9
+source-git-commit: 83ce590c5078d70f0414276e2f03a71bdcdad321
 workflow-type: tm+mt
 source-wordcount: '304'
 ht-degree: 0%
 
 ---
-
 
 # ACP2E-3977: El campo **[!UICONTROL Cap Reward Points Balance At]** no puede dejarse vacío
 
@@ -27,7 +28,7 @@ El parche ACP2E-3977 corrige el problema en el que el campo **[!UICONTROL Cap Re
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
@@ -53,7 +54,7 @@ Se permite un valor vacío para **[!UICONTROL Cap Reward Points Balance At]** y 
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
 * Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía [!DNL Quality Patches Tool].
-* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=es) en la guía Commerce en la infraestructura de la nube.
+* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) en la guía Commerce en la infraestructura de la nube.
 
 ## Lectura relacionada
 

@@ -3,17 +3,18 @@ title: 'ACSD-66149: el controlador IPN devuelve *500* para tipos no compatibles'
 description: Aplique el parche ACSD-66149 para corregir el problema de Adobe Commerce en el que el controlador IPN no ignora los tipos IPN no admitidos o desconocidos, lo que provoca que el problema no se registre, interrumpe el proceso y también devuelve un error 500.
 feature: Payments
 role: Admin, Developer
-source-git-commit: 81e8bf62c026023f71d52c219357bd7911275f69
+type: Troubleshooting
+exl-id: d4794e24-1b6b-4bb5-b54c-9a248fa5f3bd
+source-git-commit: cf0f5992c7b2a51b270a4a1a81fd50305a92759c
 workflow-type: tm+mt
-source-wordcount: '365'
+source-wordcount: '364'
 ht-degree: 0%
 
 ---
 
-
 # ACSD-66149: el controlador IPN devuelve *500* para tipos no compatibles
 
-El parche ACSD-66149 corrige el problema en el que el controlador de IPN (Notificación de pago instantáneo) devuelve un error *500* para tipos de IPN desconocidos o no compatibles. Esta revisión está disponible cuando está instalado [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.69. El ID del parche es ACSD-66149. Este problema está programado para solucionarse en Adobe Commerce 2.4.9.
+El parche ACSD-66149 corrige el problema en el que el controlador IPN (Notificación de pago instantáneo) devuelve un error 500 para tipos de IPN no admitidos o desconocidos. Esta revisión está disponible cuando está instalado [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.69. El ID del parche es ACSD-66149. Este problema está programado para solucionarse en Adobe Commerce 2.4.9.
 
 ## Productos y versiones afectados
 
@@ -27,7 +28,7 @@ El parche ACSD-66149 corrige el problema en el que el controlador de IPN (Notifi
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
@@ -35,7 +36,7 @@ El problema es que el controlador IPN devuelve un error *500* para tipos IPN no 
 
 <u>Pasos a seguir</u>:
 
-1. Crea un módulo personalizado que emulará todo tipo de tipos de IPN desconocidos de PayPal.
+1. Crea un módulo personalizado que emula todo tipo de tipos de IPN desconocidos de PayPal.
 1. Cree al menos un producto.
 1. Configura PayPal Express con tus propias credenciales.
 1. Realiza un pedido con Paypal Express.
@@ -56,7 +57,7 @@ La aplicación genera muchos errores de *500* durante el procesamiento de IPN in
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
 * Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía [!DNL Quality Patches Tool]
-* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=es) en la guía Commerce en la infraestructura de la nube
+* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) en la guía Commerce en la infraestructura de la nube
 
 ## Lectura relacionada
 
