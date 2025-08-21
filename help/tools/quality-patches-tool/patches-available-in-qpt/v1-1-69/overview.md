@@ -4,7 +4,7 @@ description: Esta subsección proporciona una descripción detallada de los prob
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 39af00ed-3559-462e-9627-e32d6e7c71a8
-source-git-commit: 29f09e0ee426f9b58a98fdd512d7c1ac3fca2425
+source-git-commit: 564004a106d69f4b7ff6f85563209433799d36f1
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 0%
@@ -17,7 +17,7 @@ Esta subsección proporciona una descripción detallada de los problemas corregi
 
 QPT v1.1.69 incluye los siguientes parches:
 1. **AC-15223**: La página de la tienda muestra contenido almacenado en caché después de cambiar de tienda.
-1. **ACP2E-3731**: las exportaciones de productos con visibilidad de **[!UICONTROL Catalog, Search]** incluyen registros de otras vistas de tiendas.
+1. **ACP2E-3731**: las exportaciones de productos con visibilidad de *[!UICONTROL Catalog, Search]* incluyen registros de otras vistas de tiendas.
 1. **ACP2E-3767**: La última opción de paquete vuelve a aparecer después de guardar un producto de paquete.
 1. **ACP2E-3964**: productos secundarios configurables con vídeo no enumerados mediante la API de REST.
 1. **ACP2E-3977**: el campo [!UICONTROL Cap Reward Points Balance At] no puede dejarse vacío.

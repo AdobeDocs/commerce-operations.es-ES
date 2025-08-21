@@ -2,9 +2,9 @@
 user-guide-title: Herramientas
 user-guide-description: Obtenga información sobre las distintas herramientas que puede utilizar con Adobe Commerce, sus usos, el proceso de instalación y cómo obtener acceso.
 feature: Configuration
-source-git-commit: fa5164f3118ec51e4562f7ae5073781307452bc4
+source-git-commit: 564004a106d69f4b7ff6f85563209433799d36f1
 workflow-type: tm+mt
-source-wordcount: '8266'
+source-wordcount: '8278'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ ht-degree: 0%
    - [Alertas administradas para Adobe Commerce: alerta de advertencia de CPU](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-cpu-warning-alert.md)
 - Herramienta Parches de calidad {#quality-patches-tool}
    - [[!DNL Quality Patches Tool]: herramienta de autoservicio para parches de calidad](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)
-   - [[!DNL Quality Patches Tool]: buscar parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es){target="_blank"}
+   - [[!DNL Quality Patches Tool]: buscar parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
    - [Uso](quality-patches-tool/usage.md)
    - [Notas de la versión](quality-patches-tool/release-notes.md)
    - Parches disponibles en la herramienta Parches de calidad {#patches-available-in-qpt}
@@ -847,6 +847,7 @@ ht-degree: 0%
          - [ACSD-66233: Los administradores no pueden agregar productos debido a que la lista de productos emergente no responde](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-68/acsd-66233-admins-unable-add-products-due-to-unresponsive-product-list-popup.md)
       - v1.1.69 {#v1-1-69}
          - [Información general:  [!DNL Quality Patches Tool] (QPT) v1.1.69](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-69/overview.md)
+         - [ACP2E-3731: Las exportaciones de productos con visibilidad de [!UICONTROL Catalog, Search] incluyen registros de otras vistas de tiendas](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-69/acp2e-3731-product-exports-with-catalog-search-visibility-include-records-from-other-store-views.md)
          - [ACSD-66153: la página devuelve 500 debido a que la estructura de diseño incorrecta se está almacenando en caché](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-69/acsd-66153-page-returns-500-due-to-incorrect-layout-structure-being-cached.md)
          - [ACSD-57477: el procesamiento de reglas de ventas ralentiza el rendimiento en solicitudes relacionadas con el carro de compras](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-69/acsd-57477-sales-rule-processing-slows-performance-on-cart-related-requests.md)
          - [ACSD-65983: Se produce un error al volver a configurar la oferta de productos agrupados en Administración](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-69/acsd-65983-error-occurs-when-reconfiguring-bundled-product-quote-in-admin.md)
@@ -905,6 +906,6 @@ ht-degree: 0%
       - [Datos que requieren una migración manual](data-migration-tool/migrate-data/manual.md)
       - [Pasos de la migración posterior a los datos](data-migration-tool/migrate-data/post-migration.md)
    - Recursos {#resources}
-      - [Solución de problemas](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html?lang=es)
+      - [Solución de problemas](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html)
       - [Registro de cambios](https://github.com/magento/data-migration-tool/blob/2.4/CHANGELOG.md)
-- [Volver a las guías operativas](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=es)
+- [Volver a las guías operativas](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
