@@ -4,7 +4,7 @@ description: Conozca las prácticas recomendadas de administración de código p
 feature: Best Practices
 role: Developer
 exl-id: 0bff4c7a-1082-4b3e-b19c-bc8ad529b131
-source-git-commit: ee7551374aa6d4ad462dd64ee3d05b934b43ce45
+source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
 workflow-type: tm+mt
 source-wordcount: '659'
 ht-degree: 0%
@@ -115,3 +115,5 @@ Este tema se ha diseñado para ayudarle a decidir si desea utilizar Git o Compos
 1. **Empiece con Git y, a continuación, pase a Composer**
 
    Elija un método de administración de código al principio del proyecto. Cambiar de Git a Compositor o, a la inversa, con un desarrollo en curso es engorroso y podría provocar la pérdida del código o la pérdida del historial de revisiones.
+
+<!-- Last updated from includes: 2023-08-23 15:56:59 -->

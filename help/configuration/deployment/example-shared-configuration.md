@@ -2,7 +2,7 @@
 title: Ejemplo de uso de una configuración compartida
 description: Vea un ejemplo de cómo cambiar la configuración en un sistema de desarrollo con un archivo de configuración compartido.
 exl-id: c980ec01-ca2d-43db-b68d-8e9435e07e6a
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
 workflow-type: tm+mt
 source-wordcount: '464'
 ht-degree: 0%
@@ -89,3 +89,5 @@ El último paso del proceso es actualizar el sistema de producción desde el con
 >[!INFO]
 >
 >Para cambiar una configuración bloqueada en el administrador, use el comando [`magento config:set --lock` ](../cli/set-configuration-values.md).
+
+<!-- Last updated from includes: 2024-07-18 15:50:54 -->

@@ -2,7 +2,7 @@
 title: Ejemplo con variables de entorno
 description: Vea un ejemplo de cómo establecer valores compartidos, específicos del sistema y confidenciales en el sistema de desarrollo mediante variables de entorno.
 exl-id: 98438674-e7f8-4143-9a76-3cc8bf0a73dc
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
 workflow-type: tm+mt
 source-wordcount: '1089'
 ht-degree: 0%
@@ -197,3 +197,5 @@ En esta sección se explica cómo puede comprobar los ajustes de configuración 
    El valor del campo **Dominio de correo electrónico predeterminado** se muestra de la siguiente manera. Esta es una configuración específica del sistema.
 
    ![Comprobar la configuración del sistema de producción](../../assets/configuration/split-default-domain.png)
+
+<!-- Last updated from includes: 2024-07-18 15:50:54 -->

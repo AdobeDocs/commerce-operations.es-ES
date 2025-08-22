@@ -2,7 +2,7 @@
 title: Configuración del proveedor de bloqueos
 description: Siga estos pasos para evitar que los trabajos cron y los grupos cron duplicados se ejecuten en la implementación de Adobe Commerce.
 exl-id: c54e05b7-38fd-4731-bc77-a873b44d0ae8
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
 workflow-type: tm+mt
 source-wordcount: '224'
 ht-degree: 0%
@@ -26,7 +26,7 @@ Configure un proveedor de bloqueo para evitar el inicio de trabajos cron y grupo
 
 Adobe Commerce utiliza la base de datos para guardar bloqueos de forma predeterminada. Si tiene varios nodos en sus servidores, le recomendamos que utilice Zookeeper como proveedor de bloqueos.
 
-Si está ejecutando Adobe Commerce en una infraestructura en la nube, no es necesario configurar el proveedor de bloqueos. La aplicación configura el proveedor de bloqueo de archivos para proyectos Pro durante el proceso de aprovisionamiento. Consulte [Variables de nube](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud).
+Si está ejecutando Adobe Commerce en una infraestructura en la nube, no es necesario configurar el proveedor de bloqueos. La aplicación configura el proveedor de bloqueo de archivos para proyectos Pro durante el proceso de aprovisionamiento. Consulte [Variables de nube](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud).
 
 ### Uso de comandos
 
@@ -43,3 +43,5 @@ bin/magento setup:config:set [--<parameter_name>=<value>, ...]
 | `--lock-zookeeper-host` | Host y puerto para conectarse al clúster de Zookeeper cuando se utiliza el proveedor de bloqueo `zookeeper`.<br><br>Por ejemplo: `127.0.0.1:2181` | Sí, si se establece `--lock-provider=zookeeper` |
 | `--lock-zookeeper-path` | El camino donde Zookeeper guarda las cerraduras.<br><br>La ruta predeterminada es: `/magento/locks` | No |
 | `--lock-file-path` | Ruta de acceso donde se guardan los bloqueos de archivo. | Sí, si se establece `--lock-provider=file` |
+
+<!-- Last updated from includes: 2022-09-08 11:33:05 -->
