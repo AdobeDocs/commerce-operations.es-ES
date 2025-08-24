@@ -4,9 +4,9 @@ description: Esta subsección proporciona una descripción detallada de los prob
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 39af00ed-3559-462e-9627-e32d6e7c71a8
-source-git-commit: 564004a106d69f4b7ff6f85563209433799d36f1
+source-git-commit: eb64190e0c3f9c0dd0690b0174c7a24798f96366
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '265'
 ht-degree: 0%
 
 ---
@@ -33,6 +33,6 @@ QPT v1.1.69 incluye los siguientes parches:
 1. **ACSD-66404**: el trabajo cron no puede borrar las tablas de registro de cambios debido a los límites de tamaño de transacción de [!DNL Galera Cluster].
 1. **ACSD-66952**: la caché se borra en cada visita al PLP o al carro de compras cuando se establece una regla de destino.
 1. **ACSD-67264**: los diseños de página de productos descargables y del paquete no son coherentes entre los dispositivos.
-1. **ACSD-67347**: el pedido falla con un error de bloqueo al usar cupones de caracteres especiales y bloqueo de archivos.
+1. **ACSD-67347**: el pedido falla con No se puede adquirir un bloqueo al usar códigos de cupones.
 
 Utilice el menú de la izquierda para navegar a una página específica del parche.
