@@ -4,9 +4,9 @@ description: Esta subsección proporciona una descripción detallada de los prob
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 74094036-cb1b-419f-b287-ca24d351a448
-source-git-commit: 53768b017845d0ea8033ebd7651421877ed36a55
+source-git-commit: f04931fb8223f404bbdab8371cc1e4952948f1c1
 workflow-type: tm+mt
-source-wordcount: '279'
+source-wordcount: '324'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,9 @@ QPT v1.1.68 incluye los siguientes parches:
 1. **ACSD-66072**: los productos relacionados no se devuelven a través de GraphQL en la página de detalles del producto debido a un error interno del servidor al configurar [!UICONTROL Related Products Rule].
 1. **ACSD-66082**: no se puede actualizar la imagen de muestra de un producto mediante la importación de productos.
 1. **ACSD-66179**: si cancela una factura con el tipo de pago &quot;No capturar&quot;, aparecerá una página de error 404.
+1. **ACSD-66233**: los usuarios administradores no pudieron agregar productos a las categorías debido a que la ventana emergente Agregar producto no se cargaba.
+1. **ACSD-66506**: el error del servidor se produce después de eliminar y reasignar productos del catálogo compartido.
+1. **ACSD-66865**: al guardar las reglas de precios de catálogo, se invalidan los indizadores y se proporciona una alternativa para reindexar únicamente los productos afectados.
 1. **ACSD-66233**: los administradores no pueden agregar productos debido a que aparece una lista de productos que no responde.
 1. **ACSD-66506**: se produjo un error del servidor cuando se eliminaron productos asignados anteriormente de un catálogo compartido y se asignaron nuevos productos.
 1. **ACSD-66865**: al guardar **[!UICONTROL Catalog Price Rule]**, se invalidan los indizadores y se proporciona una alternativa para reindexar únicamente los productos afectados.
