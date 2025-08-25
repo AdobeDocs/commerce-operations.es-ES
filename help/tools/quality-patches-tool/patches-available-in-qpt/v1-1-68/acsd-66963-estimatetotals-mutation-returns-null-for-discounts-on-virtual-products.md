@@ -82,31 +82,31 @@ La mutación `estimateTotals` devuelve *null* para obtener descuentos cuando se 
 La información de descuento se incluye para carros que solo contienen productos virtuales.
 
     &quot;
-    {
-    &quot;datos&quot;: {
-    &quot;estimateTotals&quot;: {
-    &quot;cart&quot;: {
-    &quot;precios&quot;: {
-    &quot;descuentos&quot;: [
-    {
-    &quot;amount&quot;: {
+    &lbrace;
+    &quot;datos&quot;: &lbrace;
+    &quot;estimateTotals&quot;: &lbrace;
+    &quot;cart&quot;: &lbrace;
+    &quot;precios&quot;: &lbrace;
+    &quot;descuentos&quot;: &lbrack;
+    &lbrace;
+    &quot;amount&quot;: &lbrace;
     &quot;value&quot;: 100.5,
     &quot;currency&quot;: &quot;USD&quot;
-    },
+    &rbrace;,
     &quot;label&quot;: &quot;Un segundo código de descuento para pruebas&quot;,
-    &quot;coupon&quot;: {
+    &quot;coupon&quot;: &lbrace;
     &quot;code&quot;: &quot;z3r0c00l&quot;
-    },
+    &rbrace;,
     &quot;applied_to&quot;: &quot;ITEM&quot;,
     &quot;type&quot;: null
-    }
-    ]
-    }
-    }
-    }
-    },
+    &rbrace;
+    &rbrack;
+    &rbrace;
+    &rbrace;
+    &rbrace;
+    &rbrace;,
     &quot;extensions&quot;: {}
-    }
+    &rbrace;
     &quot;
 
 <u>Resultados reales</u>:
@@ -114,18 +114,18 @@ La información de descuento se incluye para carros que solo contienen productos
 La información de descuento se devuelve como *null* para carros de compras con solo productos virtuales.
 
     &quot;
-    {
-    &quot;datos&quot;: {
-    &quot;estimateTotals&quot;: {
-    &quot;cart&quot;: {
-    &quot;precios&quot;: {
+    &lbrace;
+    &quot;datos&quot;: &lbrace;
+    &quot;estimateTotals&quot;: &lbrace;
+    &quot;cart&quot;: &lbrace;
+    &quot;precios&quot;: &lbrace;
     &quot;descuentos&quot;: null
-    }
+    &rbrace;
     
-    }
-    },
+    &rbrace;
+    &rbrace;,
     &quot;extensiones&quot;: {}
-    }
+    &rbrace;
     &quot;
 
 ## Aplicar el parche
