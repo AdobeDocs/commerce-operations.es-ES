@@ -4,9 +4,9 @@ description: Esta subsección proporciona una descripción detallada de los prob
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 74094036-cb1b-419f-b287-ca24d351a448
-source-git-commit: f04931fb8223f404bbdab8371cc1e4952948f1c1
+source-git-commit: 674aa68a0f7ecf30481a6d4f33b119d295c51a6b
 workflow-type: tm+mt
-source-wordcount: '324'
+source-wordcount: '360'
 ht-degree: 0%
 
 ---
@@ -30,6 +30,9 @@ QPT v1.1.68 incluye los siguientes parches:
 1. **ACSD-66506**: se produjo un error del servidor cuando se eliminaron productos asignados anteriormente de un catálogo compartido y se asignaron nuevos productos.
 1. **ACSD-66865**: al guardar **[!UICONTROL Catalog Price Rule]**, se invalidan los indizadores y se proporciona una alternativa para reindexar únicamente los productos afectados.
 1. **ACSD-66889**: Error durante el reíndice de inventario en CLI.
+1. **ACSD-66963**: la mutación `estimateTotals` devuelve un valor nulo para obtener descuentos en productos virtuales.
+1. **ACSD-66965**: La opción de impresión de la página Lista de solicitudes produce un error.
+1. **ACSD-67039**: no se guardaron los registros del cliente debido a la validación del atributo del sistema rp_token.
 1. **ACSD-66963**: la mutación de EstimateTotals devuelve un valor nulo para los descuentos cuando se aplica un código de descuento a un carro de compras con productos virtuales.
 1. **ACSD-66965**: La opción **[!UICONTROL Print]** de la página **[!UICONTROL Requisition List]** provoca un error.
 1. **ACSD-67039**: los registros del cliente no se guardaron debido a la validación del atributo del sistema `rp_token`.
