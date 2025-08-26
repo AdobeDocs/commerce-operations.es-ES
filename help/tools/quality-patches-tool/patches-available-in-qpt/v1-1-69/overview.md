@@ -4,9 +4,9 @@ description: Esta subsección proporciona una descripción detallada de los prob
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 39af00ed-3559-462e-9627-e32d6e7c71a8
-source-git-commit: eb64190e0c3f9c0dd0690b0174c7a24798f96366
+source-git-commit: 7a2d626092b19852287c48dc3da1fcc766237212
 workflow-type: tm+mt
-source-wordcount: '265'
+source-wordcount: '278'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,8 @@ QPT v1.1.69 incluye los siguientes parches:
 1. **ACP2E-3731**: las exportaciones de productos con visibilidad de *[!UICONTROL Catalog, Search]* incluyen registros de otras vistas de tiendas.
 1. **ACP2E-3767**: La última opción de paquete vuelve a aparecer después de guardar un producto de paquete.
 1. **ACP2E-3964**: productos secundarios configurables con vídeo no enumerados mediante la API de REST.
+1. **ACP2E-3977**: **[!UICONTROL Cap Reward Points Balance At]** no se puede dejar vacío.
+1. **ACP2E-4050**: **[!UICONTROL Free Shipping]** no se aplicó con el cierre de compra de varias direcciones.
 1. **ACP2E-3977**: el campo [!UICONTROL Cap Reward Points Balance At] no puede dejarse vacío.
 1. **ACP2E-4050**: Las reglas de precios del carro de compras fallan para el envío múltiple con paquetes de productos y envío gratuito.
 1. **ACSD-56226**: las consultas READ devuelven datos obsoletos con `synchronous_replication` habilitado.
