@@ -4,13 +4,13 @@ description: Aplique el parche ACSD-66311 para corregir el problema de Adobe Com
 role: Admin, Developer
 feature: B2B
 type: Troubleshooting
-source-git-commit: 841e660136354800dd9758d8c10e86c966be3a1e
+exl-id: e470078b-dd10-4b0b-a489-bc88f025fded
+source-git-commit: 3337907b1893260d6cb18b1c4fbf45dfa1f3d6d5
 workflow-type: tm+mt
-source-wordcount: '425'
+source-wordcount: '405'
 ht-degree: 2%
 
 ---
-
 
 # ACSD-66311: la cuadrícula de las compañías se carga lentamente para los usuarios administradores restringidos
 
@@ -28,7 +28,7 @@ El parche ACSD-66311 corrige el problema en el que la cuadrícula de las compañ
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
@@ -54,7 +54,6 @@ La cuadrícula de compañías se carga lentamente para los usuarios administrado
       | 2 | 1.500 |
       | 3 | 500 |
 
-
    1. Ejecute la siguiente consulta para comprobar la distribución:
 
       ```
@@ -76,14 +75,13 @@ La cuadrícula de compañías se carga lentamente para los usuarios administrado
       ```
             SELECT customer_count, COUNT(*) AS number_of_companies
             FROM (
-      
-            SELECT id_empresa, COUNT(customer_id) AS customer_count
-            DESDE empresa_avanzada_cliente_entidad
-            GROUP BY id_empresa
-) como subconsulta
-GROUP BY customer_count
-ORDER BY customer_count;
-&quot;
+              SELECT company_id, COUNT(customer_id) AS customer_count
+              FROM company_advanced_customer_entity
+              GROUP BY company_id
+            ) AS subquery
+            GROUP BY customer_count
+            ORDER BY customer_count; 
+      ```
 
 1. Reindexe todos los datos para generar entradas en **customer_grid_plain**.
 1. Inicie sesión como **administrador**.
@@ -102,7 +100,7 @@ La página tarda más de 14 minutos en cargarse.
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
 * Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía [!DNL Quality Patches Tool].
-* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=es) en la guía Commerce en la infraestructura de la nube.
+* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) en la guía Commerce en la infraestructura de la nube.
 
 ## Lectura relacionada
 
