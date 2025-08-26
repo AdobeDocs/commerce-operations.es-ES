@@ -4,9 +4,9 @@ description: Esta subsección proporciona una descripción detallada de los prob
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 74094036-cb1b-419f-b287-ca24d351a448
-source-git-commit: 674aa68a0f7ecf30481a6d4f33b119d295c51a6b
+source-git-commit: 9dd2ea9464a8e0fb9e45fea44e17d2ded0193ba9
 workflow-type: tm+mt
-source-wordcount: '360'
+source-wordcount: '352'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 Esta subsección proporciona una descripción detallada de los problemas corregidos por los parches disponibles en [!DNL Quality Patches Tool] (QPT) v1.1.68.
 
 QPT v1.1.68 incluye los siguientes parches:
-1. **ACSD-58131**: la presencia de una imagen de 0 bytes en la galería de medios impidió que se mostraran o seleccionaran todas las imágenes del directorio.
+1. **ACSD-58131** La galería de medios antigua no puede cargar imágenes debido a un archivo de imagen de 0 bytes.
 1. **ACSD-62146**: la dirección de facturación seleccionada desaparece en la página de pago de cierre de compra cuando la búsqueda de direcciones está habilitada y &quot;Límite de número de direcciones de clientes&quot; está establecido en 1.
 1. **[ACSD-62415](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-68/acsd-62415-adobe-commerce-backend-loads-categories-very-slowly.md)**: el servidor de Adobe Commerce carga las categorías muy lentamente.
 1. **ACSD-65938**: se enviaron correos electrónicos con tarjeta regalo aunque se produjo un error en la creación de la factura.
