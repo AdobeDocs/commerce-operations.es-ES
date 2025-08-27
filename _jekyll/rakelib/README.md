@@ -1,7 +1,7 @@
 ---
-source-git-commit: 926ca67d3878de14cf7ee6940e4226ac29a76919
+source-git-commit: 69be9bbc0fbd12d9b4ef8f9abecc1909228c19da
 workflow-type: tm+mt
-source-wordcount: '188'
+source-wordcount: '248'
 ht-degree: 0%
 
 ---
@@ -11,13 +11,28 @@ Este directorio contiene definiciones de tareas de rastrillo organizadas por fun
 
 ## Organización de archivos
 
+### `adobe-docs-tasks.rake`
+
+Contiene requisitos comunes, funcionalidad compartida y tareas sin espacio de nombres para Adobe Commerce en las tareas de rastrillo del repositorio de documentación de Experience League:
+
+- `whatsnew` - Generar datos para compendio de noticias (predeterminado: desde la última actualización)
+- `render`: procesar archivos con plantilla y mantener las inclusiones
+
 ### `includes.rake`
 
-Contiene todas las tareas de rastrillo relacionadas con la inclusión en el área de nombres `:includes`:
+Contiene tareas de administración de inclusión organizadas en el espacio de nombres `:includes`:
 
-- `includes:maintain_relationships`: descubrir y mantener relaciones de inclusión
+- `includes:maintain_relationships`: detectar y mantener relaciones de inclusión en archivos Markdown
 - `includes:maintain_timestamps` - Agregar/actualizar marcas de tiempo basadas en cambios de archivo de inclusión
 - `includes:maintain_all` - Ejecutar ambas operaciones en secuencia
+- `includes:unused` - Buscar archivos de inclusión no utilizados
+
+### `images.rake`
+
+Contiene tareas de administración de imágenes organizadas en el espacio de nombres `:images`:
+
+- `images:optimize` - Optimizar imágenes en archivos no confirmados modificados
+- `images:unused` - Buscar imágenes no utilizadas en el proyecto
 
 ## Cómo funciona
 
