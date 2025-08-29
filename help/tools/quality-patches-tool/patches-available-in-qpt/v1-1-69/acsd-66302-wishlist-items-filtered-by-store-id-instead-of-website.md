@@ -4,13 +4,13 @@ description: Aplique el parche ACSD-66302 para corregir el problema de Adobe Com
 feature: GraphQL
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 7f9a13a9a8cc666c8aa9d964da8aaff01913d35f
+exl-id: c1a9eadc-0321-4f5c-ba82-533286a1f24f
+source-git-commit: bec27df19ce5d34be063dce3de74ffe253c3e8f4
 workflow-type: tm+mt
 source-wordcount: '378'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-66302: elementos de lista de deseos filtrados por ID de tienda en lugar de sitio web
 
@@ -28,7 +28,7 @@ El parche ACSD-66302 corrige el problema en el que los elementos de la lista de 
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
@@ -48,27 +48,27 @@ Los elementos de la lista de deseos se filtran incorrectamente por ID de tienda 
 1. Confirme que el producto sigue apareciendo en la lista de deseos (comportamiento correcto).
 1. Ejecute la siguiente consulta [!DNL GraphQL]:
 
-```
-{
-  customer {
-    wishlists {
-      id
-      name
-      items_count
-      items_v2 {
-        items {
-          id
-          product {
-            uid
-            name
-            sku
-          }
-        }
-      }
-    }
-  }
-}
-```
+   ```
+   {
+     customer {
+       wishlists {
+         id
+         name
+         items_count
+         items_v2 {
+           items {
+             id
+             product {
+               uid
+               name
+               sku
+             }
+           }
+         }
+       }
+     }
+   }
+   ```
 
 1. Realice la consulta en la tienda predeterminada: el producto aparece según lo esperado.
 1. Realice la misma consulta en el almacén de prueba: el producto no aparece.
@@ -86,7 +86,7 @@ El producto desaparece de la lista de deseos al cambiar de vista de tienda.
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
 * Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía [!DNL Quality Patches Tool].
-* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=es) en la guía Commerce en la infraestructura de la nube.
+* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) en la guía Commerce en la infraestructura de la nube.
 
 ## Lectura relacionada
 
