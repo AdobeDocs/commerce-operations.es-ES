@@ -1,7 +1,7 @@
 ---
-source-git-commit: 102fee9672c75c94c7d18d47562338f8eff97f11
+source-git-commit: c8a20ad1b0b57724f389cfa5c63f6ae542758c2b
 workflow-type: tm+mt
-source-wordcount: '451'
+source-wordcount: '488'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Después de instalar este parche de seguridad, los comerciantes de Adobe Commerce B2B también deben actualizar a la última versión del parche de seguridad B2B compatible. Ver [notas de la versión B2B](https://experienceleague.adobe.com/es/docs/commerce-admin/b2b/release-notes).
+>Después de instalar este parche de seguridad, los comerciantes de Adobe Commerce B2B también deben actualizar a la última versión del parche de seguridad B2B compatible. Ver [notas de la versión B2B](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes).
 
 ## Solo Adobe Commerce {#ee-only}
 
@@ -80,3 +80,9 @@ ht-degree: 0%
 ## Control de procesos PHP {#php-process-control}
 
 Para poder ejecutar indizadores en modo paralelo, debe habilitar la compatibilidad con Control de procesos (`pcntl`) en PHP. Consulte [Instalación](https://www.php.net/manual/en/pcntl.installation.php) en la documentación de PHP.
+
+## Parches personalizados {#custom-patches-disclaimer}
+
+>[!IMPORTANT]
+>
+>Adobe no admite la aplicación de parches oficiales proporcionados por Adobe mediante este método. Utilice el siguiente método bajo su propia responsabilidad. Para aplicar parches oficiales, use [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}. Realice siempre pruebas exhaustivas antes de implementar cualquier parche personalizado.

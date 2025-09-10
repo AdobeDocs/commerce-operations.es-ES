@@ -2,7 +2,7 @@
 title: Cómo funcionan los parches
 description: Obtenga información sobre los distintos tipos de parches para Adobe Commerce y cómo funcionan.
 exl-id: d7072ed4-7d51-41fe-881a-aae3b2000b55
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: c8a20ad1b0b57724f389cfa5c63f6ae542758c2b
 workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 0%
@@ -43,7 +43,7 @@ Encontrará revisiones en [Centro de seguridad](https://magento.com/security/pat
 
 Los parches individuales contienen correcciones de calidad de bajo impacto para un problema específico. Estas correcciones se aplican a la versión menor admitida más recientemente (por ejemplo, 2.4.x), pero podrían no estar presentes en la versión menor admitida anteriormente (por ejemplo, 2.3.x). Adobe publica parches individuales según sea necesario.
 
-Use [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es){target="_blank"} para aplicar parches individuales.
+Use [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"} para aplicar parches individuales.
 
 >[!NOTE]
 >
@@ -51,7 +51,9 @@ Use [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/comme
 
 ## Parches personalizados
 
-A veces, el equipo de ingeniería de Adobe tarda un tiempo en incluir una corrección de errores realizada en GitHub en una versión del Compositor de Adobe Commerce. Mientras tanto, puede crear un parche desde GitHub y utilizar el complemento [`cweagans/composer-patches`](https://github.com/cweagans/composer-patches/) para aplicarlo a su instalación basada en Compositor.
+A veces, el equipo de ingeniería de Adobe tarda un tiempo en incluir una corrección de errores realizada en GitHub en una versión oficial de Adobe Commerce. Mientras tanto, puede crear un parche desde GitHub y utilizar el complemento [`cweagans/composer-patches`](https://github.com/cweagans/composer-patches/) para aplicarlo a su instalación basada en Compositor.
+
+{{custom-patches-disclaimer}}
 
 Use [línea de comandos](apply.md#command-line) o [Compositor](apply.md#composer) para aplicar parches personalizados.
 
@@ -90,10 +92,10 @@ index c8a6fef58d31..7d01c195791e 100644
 
 Puede aplicar parches utilizando cualquiera de los siguientes métodos:
 
-- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es){target="_blank"}
+- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
 - [Línea de comandos](/help/upgrade/patches/apply.md#command-line)
 - [Compositor](/help/upgrade/patches/apply.md#composer)
 
 >[!NOTE]
 >
->Para aplicar un parche a un proyecto de Adobe Commerce en la nube, consulte [Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=es) en la guía de _Commerce en la nube_.
+>Para aplicar un parche a un proyecto de Adobe Commerce en la nube, consulte [Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) en la guía de _Commerce en la nube_.

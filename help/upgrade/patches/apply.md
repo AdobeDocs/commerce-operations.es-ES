@@ -2,9 +2,9 @@
 title: Aplicar parches
 description: Obtenga información sobre los métodos para aplicar parches a un proyecto de Adobe Commerce.
 exl-id: 1d5d81ad-0115-4575-adfd-dde7c2826d85
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: c8a20ad1b0b57724f389cfa5c63f6ae542758c2b
 workflow-type: tm+mt
-source-wordcount: '329'
+source-wordcount: '312'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Puede aplicar parches utilizando cualquiera de los siguientes métodos:
 
-- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es){target="_blank"}
+- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
 - [Línea de comandos](../patches/apply.md#command-line)
 - [Compositor](../patches/apply.md#composer)
 
@@ -24,9 +24,7 @@ Puede aplicar parches utilizando cualquiera de los siguientes métodos:
 
 ## Compositor
 
->[!IMPORTANT]
->
->Para aplicar parches de calidad oficiales, use [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es){target="_blank"}. Realice siempre pruebas exhaustivas antes de implementar cualquier parche personalizado.
+{{custom-patches-disclaimer}}
 
 Para aplicar un parche personalizado con Composer:
 
