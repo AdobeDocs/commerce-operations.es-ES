@@ -1,7 +1,7 @@
 ---
-source-git-commit: 7f23a1b123d2ca2e1d116eb66344a67cfe45e409
+source-git-commit: 21a4ec57b49f896cffefbec8db4ce97c161315a0
 workflow-type: tm+mt
-source-wordcount: '816'
+source-wordcount: '850'
 ht-degree: 3%
 
 ---
@@ -43,13 +43,13 @@ Este proyecto ha adoptado el [Código de conducta de código abierto de Adobe](c
 
 ## Acerca de sus contribuciones al contenido de Adobe
 
-Consulte la [Guía del colaborador de Adobe Docs](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=es).
+Consulte la [Guía del colaborador de Adobe Docs](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
 
 La forma en que contribuya depende de quién sea y del tipo de cambios con los que desee contribuir:
 
 ### Cambios menores
 
-Si va a contribuir con actualizaciones menores, visite el artículo y haga clic en el área de comentarios que aparece en la parte inferior del artículo, haga clic en **Opciones de comentarios detalladas** y, a continuación, haga clic en **Sugerir una edición** para ir al archivo de código fuente Markdown en GitHub. Utilice la interfaz de usuario de GitHub para realizar las actualizaciones. Para obtener más información, consulte la [guía para colaboradores de Adobe Docs](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=es).
+Si va a contribuir con actualizaciones menores, visite el artículo y haga clic en el área de comentarios que aparece en la parte inferior del artículo, haga clic en **Opciones de comentarios detalladas** y, a continuación, haga clic en **Sugerir una edición** para ir al archivo de código fuente Markdown en GitHub. Utilice la interfaz de usuario de GitHub para realizar las actualizaciones. Para obtener más información, consulte la [guía para colaboradores de Adobe Docs](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
 
 Las correcciones o aclaraciones menores que envíe para la documentación y los ejemplos de código en este repositorio están sujetos a las condiciones de uso de Adobe.
 
@@ -67,7 +67,7 @@ Si es redactor técnico, administrador de programa o desarrollador del equipo de
 
 Los colaboradores de la comunidad pueden utilizar la interfaz de usuario de GitHub para la edición básica o bifurcar el repositorio para realizar contribuciones importantes.
 
-Consulte la [Guía para colaboradores de Adobe Docs](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=es) para obtener más información.
+Consulte la [Guía para colaboradores de Adobe Docs](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) para obtener más información.
 
 ## Utilizar Markdown para dar formato al tema
 
@@ -86,8 +86,8 @@ Para algunos temas, utilizamos archivos de datos y plantillas para generar conte
 Algunos ejemplos de contenido con plantillas son, entre otros, los siguientes:
 
 - [Referencia de herramientas CLI](https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises.html)
-- [Tablas de disponibilidad de productos](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html?lang=es)
-- [Tablas de requisitos del sistema](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=es)
+- [Tablas de disponibilidad de productos](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html)
+- [Tablas de requisitos del sistema](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html)
 
 ### Generación de contenido con plantilla
 
@@ -96,7 +96,7 @@ En general, la mayoría de los redactores solo necesitan añadir una versión de
 >**NOTA:**
 >
 >- La generación de contenido con plantillas requiere trabajar en la línea de comandos de un terminal.
->- Debe tener instalado Ruby para ejecutar el script de procesamiento. Consulte [_jekyll/.ruby-version] (_jekyll/.ruby-version) para obtener la versión requerida.
+>- Debe tener instalado Ruby para ejecutar el script de procesamiento. Consulte [_jekyll/.ruby-version](_jekyll/.ruby-version) para obtener la versión requerida.
 
 Consulte lo siguiente para obtener una descripción de la estructura de archivos del contenido con plantillas:
 
@@ -109,8 +109,8 @@ Para actualizar el contenido con plantillas:
 
 1. En el editor de texto, abra un archivo de datos en el directorio `/jekyll/_data`. Por ejemplo:
 
-   - [Tablas de disponibilidad de productos](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html?lang=es): `/jekyll/_data/product-availability.yml`
-   - [Tablas de requisitos del sistema](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=es): `/jekyll/_data/system-requirements.yml`
+   - [Tablas de disponibilidad de productos](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html): `/jekyll/_data/product-availability.yml`
+   - [Tablas de requisitos del sistema](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html): `/jekyll/_data/system-requirements.yml`
 
 1. Utilice la estructura YAML existente para crear entradas.
 
@@ -131,10 +131,10 @@ Para actualizar el contenido con plantillas:
 1. Genere contenido con plantilla y escriba el resultado en el directorio `help/_includes/templated`.
 
    ```bash
-   rake render
+   bundle exec rake render
    ```
 
-   >**NOTA:** Debe ejecutar el script desde el directorio `_jekyll`. Si es la primera vez que ejecuta el script, debe instalar primero las dependencias de Ruby con el comando `bundle install`.
+   >**NOTA:** Debe ejecutar el script desde el directorio `_jekyll`. Si es la primera vez que ejecuta el script, debe instalar primero las dependencias de Ruby con el comando `bundle install`. La gema `adobe-comdox-exl-rake-tasks` proporciona las tareas de rastrillado para mejorar la capacidad de mantenimiento en los repositorios de documentación de Adobe Commerce.
 
 1. Vuelva al directorio `root`.
 
@@ -164,3 +164,12 @@ Para actualizar el contenido con plantillas:
    ```
 
 Consulte la documentación de Jekyll para obtener más información sobre [Archivos de datos](https://jekyllrb.com/docs/datafiles), [Filtros líquidos](https://jekyllrb.com/docs/liquid/filters/) y otras características.
+
+## Tareas de rastrillo disponibles
+
+Este repositorio usa las tareas de rastrillado proporcionadas por la joya `adobe-comdox-exl-rake-tasks`. Para ver todas las tareas disponibles, ejecute:
+
+```bash
+cd _jekyll
+bundle exec rake --tasks
+```
