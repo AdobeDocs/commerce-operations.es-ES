@@ -31,7 +31,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Después de instalar este parche de seguridad, los comerciantes de Adobe Commerce B2B también deben actualizar a la última versión del parche de seguridad B2B compatible. Ver [notas de la versión B2B](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes).
+>Después de instalar este parche de seguridad, los comerciantes de Adobe Commerce B2B también deben actualizar a la última versión del parche de seguridad B2B compatible. Ver [notas de la versión B2B](https://experienceleague.adobe.com/es/docs/commerce-admin/b2b/release-notes).
 
 ## Solo Adobe Commerce {#ee-only}
 
@@ -85,4 +85,4 @@ Para poder ejecutar indizadores en modo paralelo, debe habilitar la compatibilid
 
 >[!IMPORTANT]
 >
->Adobe no admite la aplicación de parches oficiales proporcionados por Adobe mediante este método. Utilice el siguiente método bajo su propia responsabilidad. Para aplicar parches oficiales, use [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}. Realice siempre pruebas exhaustivas antes de implementar cualquier parche personalizado.
+>Adobe no admite la aplicación de parches oficiales proporcionados por Adobe mediante este método. Utilice el siguiente método bajo su propia responsabilidad. Para aplicar parches oficiales, use [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es){target="_blank"}. Realice siempre pruebas exhaustivas antes de implementar cualquier parche personalizado.
