@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo mejorar el rendimiento del almacen
 role: Developer, Admin
 feature: Best Practices, Cache
 exl-id: 8b3c9167-d2fa-4894-af45-6924eb983487
-source-git-commit: bbebb414ae3b8c255e17b1f3673a6c4b7c6f23b2
+source-git-commit: 9dc17a7ec44d9c146fdc2ec48e128beacc298299
 workflow-type: tm+mt
-source-wordcount: '840'
+source-wordcount: '1142'
 ht-degree: 0%
 
 ---
@@ -30,13 +30,13 @@ stage:
     REDIS_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
 ```
 
-Para obtener información sobre la configuración del entorno en la infraestructura en la nube, consulte [`REDIS_BACKEND`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=es#redis_backend) en la _Guía de Commerce en la infraestructura en la nube_.
+Para obtener información sobre la configuración del entorno en la infraestructura en la nube, consulte [`REDIS_BACKEND`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_backend) en la _Guía de Commerce en la infraestructura en la nube_.
 
 Para instalaciones locales, consulte [Configurar el almacenamiento en caché de la página Redis](../../../configuration/cache/redis-pg-cache.md#configure-redis-page-caching) en la _Guía de configuración_.
 
 >[!NOTE]
 >
->Compruebe que está utilizando la última versión del paquete `ece-tools`. Si no es así, [actualice a la versión más reciente](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html?lang=es). Puede comprobar la versión instalada en su entorno local mediante el comando CLI `composer show magento/ece-tools`.
+>Compruebe que está utilizando la última versión del paquete `ece-tools`. Si no es así, [actualice a la versión más reciente](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html). Puede comprobar la versión instalada en su entorno local mediante el comando CLI `composer show magento/ece-tools`.
 
 
 ### Tamaño de la memoria caché L2 (Adobe Commerce Cloud)
@@ -91,13 +91,13 @@ stage:
     REDIS_USE_SLAVE_CONNECTION: true
 ```
 
-Consulte [REDIS_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=es#redis_use_slave_connection) en la _Guía de infraestructura en la nube de Commerce_.
+Consulte [REDIS_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_use_slave_connection) en la _Guía de infraestructura en la nube de Commerce_.
 
 Para las instalaciones locales de Adobe Commerce, configure la nueva implementación de caché de Redis con los comandos `bin/magento:setup`. Consulte [Usar Redis para la caché predeterminada](../../../configuration/cache/redis-pg-cache.md#configure-redis-page-caching) en la _Guía de configuración_.
 
 >[!WARNING]
 >
->No configure _not_ una conexión esclava de Redis para proyectos de infraestructura en la nube con una [arquitectura escalada/dividida](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture.html?lang=es). Esto provoca errores de conexión de Redis. Consulte [Directrices de configuración de Redis](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=es#redis_use_slave_connection) en la guía de _Commerce en infraestructura en la nube_.
+>No configure _not_ una conexión esclava de Redis para proyectos de infraestructura en la nube con una [arquitectura escalada/dividida](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/scaled-architecture.html). Esto provoca errores de conexión de Redis. Consulte [Directrices de configuración de Redis](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_use_slave_connection) en la guía de _Commerce en infraestructura en la nube_.
 
 ## Claves de precarga
 
@@ -124,42 +124,49 @@ Para instalaciones locales, consulte [Función de precarga de Redis](../../../co
 
 ## Habilitar caché obsoleta
 
-Reduzca los tiempos de espera de bloqueo y mejore el rendimiento, especialmente cuando se trata de numerosos bloques y claves de caché, mediante el uso de una caché obsoleta y la generación de una nueva caché en paralelo. Habilite la caché obsoleta y defina los tipos de caché en el archivo de configuración `.magento.env.yaml`:
+Reduzca los tiempos de espera de bloqueo y mejore el rendimiento, especialmente cuando se trata de numerosos bloques y claves de caché, mediante el uso de una caché obsoleta y la generación de una nueva caché en paralelo. Habilite la caché obsoleta y defina los tipos de caché en el archivo de configuración `config.php` (solo en la nube):
 
-```yaml
-stage:
-  deploy:
-    REDIS_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
-    CACHE_CONFIGURATION:
-      _merge: true
-      default:
-        backend_options:
-          use_stale_cache: false
-      stale_cache_enabled:
-        backend_options:
-          use_stale_cache: true
-      type:
-        default:
-          frontend: "default"
-        layout:
-          frontend: "stale_cache_enabled"
-        block_html:
-          frontend: "stale_cache_enabled"
-        reflection:
-          frontend: "stale_cache_enabled"
-        config_integration:
-          frontend: "stale_cache_enabled"
-        config_integration_api:
-          frontend: "stale_cache_enabled"
-        full_page:
-          frontend: "stale_cache_enabled"
-        translate:
-          frontend: "stale_cache_enabled"
+```php
+'cache' => [
+        'frontend' => [
+            'stale_cache_enabled' => [
+                'backend' => '\\Magento\\Framework\\Cache\\Backend\\RemoteSynchronizedCache',
+                'backend_options' => [
+                    'remote_backend' => '\\Magento\\Framework\\Cache\\Backend\\Redis',
+                    'remote_backend_options' => [
+                        'persistent' => 0,
+                        'server' => 'localhost',
+                        'database' => '4',
+                        'port' => '6370',
+                        'password' => ''
+                    ],
+                    'local_backend' => 'Cm_Cache_Backend_File',
+                    'local_backend_options' => [
+                        'cache_dir' => '/dev/shm/'
+                    ],
+                    'use_stale_cache' => true,
+                ],
+                'frontend_options' => [
+                    'write_control' => false,
+                ],
+            ]
+        ],
+        'type' => [
+            'default' => ['frontend' => 'default'],
+            'layout' => ['frontend' => 'stale_cache_enabled'],
+            'block_html' => ['frontend' => 'stale_cache_enabled'],
+            'reflection' => ['frontend' => 'stale_cache_enabled'],
+            'config_integration' => ['frontend' => 'stale_cache_enabled'],
+            'config_integration_api' => ['frontend' => 'stale_cache_enabled'],
+            'full_page' => ['frontend' => 'stale_cache_enabled'],
+            'translate' => ['frontend' => 'stale_cache_enabled']
+        ],
+    ]
 ```
 
 >[!NOTE]
 >
->En el ejemplo anterior, la caché de `full_page` no es relevante para Adobe Commerce en proyectos de infraestructura en la nube, ya que utilizan [Fastly](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/cdn/fastly).
+>En el ejemplo anterior, la caché de `full_page` no es relevante para Adobe Commerce en proyectos de infraestructura en la nube, ya que utilizan [Fastly](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly).
 
 Para configurar instalaciones locales, consulte [Opciones de caché antiguas](../../../configuration/cache/level-two-cache.md#stale-cache-options) en la _Guía de configuración_.
 
@@ -200,7 +207,7 @@ Separar la caché de Redis de la sesión de Redis le permite administrar la cach
        rabbitmq: "rabbitmq:rabbitmq"
    ```
 
-1. Envíe un [ticket de soporte de Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=es#submit-ticket) para solicitar el aprovisionamiento de una nueva instancia de Redis dedicada a sesiones en entornos de producción y ensayo. Incluir los archivos de configuración actualizados de `.magento/services.yaml` y `.magento.app.yaml`. Esto no provocará ningún tiempo de inactividad, pero requiere una implementación para activar el nuevo servicio.
+1. Envíe un [ticket de soporte de Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) para solicitar el aprovisionamiento de una nueva instancia de Redis dedicada a sesiones en entornos de producción y ensayo. Incluir los archivos de configuración actualizados de `.magento/services.yaml` y `.magento.app.yaml`. Esto no provocará ningún tiempo de inactividad, pero requiere una implementación para activar el nuevo servicio.
 
 1. Compruebe que la nueva instancia se esté ejecutando y anote el número de puerto.
 
@@ -222,7 +229,6 @@ Separar la caché de Redis de la sesión de Redis le permite administrar la cach
    SESSION_CONFIGURATION:
      _merge: true
      redis:
-       port: 6374 # check the port in $MAGENTO_CLOUD_RELATIONSHIPS and put it here (by default, you can delete this line!!)
        timeout: 5
        disable_locking: 1
        bot_first_lifetime: 60
@@ -237,7 +243,7 @@ Separar la caché de Redis de la sesión de Redis le permite administrar la cach
    redis-cli -h 127.0.0.1 -p 6374 -n 0 FLUSHDB
    ```
 
-Durante la implementación, debería ver las líneas siguientes en el [registro de compilación e implementación](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html?lang=es#build-and-deploy-logs):
+Durante la implementación, debería ver las líneas siguientes en el [registro de compilación e implementación](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html#build-and-deploy-logs):
 
 ```
 W:   - Downloading colinmollenhour/credis (1.11.1)
@@ -269,6 +275,67 @@ stage:
             compress_threshold: 20480     # don't compress files smaller than this value
             compression_lib: 'gzip'       # snappy and lzf for performance, gzip for high compression (~69%)
 ```
+
+## Habilitar la liberación asincrónica de Redis (sin demora)
+
+Para habilitar `lazyfree` en Adobe Commerce en la infraestructura en la nube, envíe un [ticket de soporte de Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) en el que se solicite que se aplique la siguiente configuración de Redis a sus entornos:
+
+```
+lazyfree-lazy-eviction yes
+lazyfree-lazy-expire yes
+lazyfree-lazy-server-del yes
+replica-lazy-flush yes
+lazyfree-lazy-user-del yes
+```
+
+Cuando lazyfree está habilitado, Redis descarga la reclamación de memoria a subprocesos en segundo plano para expulsiones, caducidades, eliminaciones iniciadas por el servidor, eliminaciones del usuario y vaciados del conjunto de datos de réplica. Esto reduce el bloqueo de subprocesos principales y puede reducir la latencia de las solicitudes.
+
+>[!NOTE]
+>
+>La opción `lazyfree-lazy-user-del yes` hace que el comando `DEL` se comporte como `UNLINK`, lo que desvincula las claves inmediatamente y libera su memoria de forma asincrónica.
+
+>[!WARNING]
+>
+>Dado que la liberación se produce en segundo plano, la memoria utilizada por las claves eliminadas, caducadas o desalojadas permanece asignada hasta que los subprocesos en segundo plano completan el trabajo. Si su Redis ya está bajo una presión de memoria estricta, realice pruebas con cautela y considere primero reducir la presión de memoria (por ejemplo, deshabilitando la caché de Block para casos específicos y separando la caché y las instancias de Redis de sesión como se describe arriba).
+
+## Habilitar E/S multiproceso Redis
+
+Para habilitar el subprocesamiento de E/S de Redis en Adobe Commerce en la infraestructura en la nube, envíe un [ticket de soporte de Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) solicitando la configuración a continuación. Esto puede mejorar el rendimiento al descargar lecturas/escrituras de socket y análisis de comandos desde el hilo principal, a costa de un mayor uso de CPU. Valide en y supervise sus hosts.
+
+```
+io-threads-do-reads yes
+io-threads 8 # choose a value lower than the number of CPU cores (check with nproc), then tune under load
+```
+
+>[!NOTE]
+>
+>Los subprocesos de E/S paralelizan solo la E/S del cliente y el análisis. La ejecución de comandos de Redis sigue siendo de un solo subproceso.
+
+>[!WARNING]
+>
+>La activación de los subprocesos de E/S puede aumentar el uso de CPU y no beneficia a todas las cargas de trabajo. Comience con un valor y una referencia conservadores. Si la latencia aumenta o CPU se satura, reduzca `io-threads` o deshabilite las lecturas en los subprocesos de E/S.
+
+## Aumentar los tiempos de espera y reintentos del cliente Redis
+
+Aumente la tolerancia del cliente de caché a la saturación transitoria ajustando las opciones del servidor en `.magento.env.yaml`:
+
+```yaml
+stage:
+  deploy:
+    CACHE_CONFIGURATION:
+      _merge: true
+      frontend:
+        default:
+          backend_options:
+            read_timeout: 10
+            connect_retries: 5
+```
+
+Esta configuración aumenta la tolerancia del cliente para reducir la congestión en Redis al ampliar la ventana de espera de respuesta y reintentar la configuración de la conexión. Esto puede reducir los errores intermitentes `cannot connect to localhost:6370` y de tiempo de espera de lectura durante los picos cortos.
+
+>[!NOTE]
+>
+>No corrigen la sobrecarga persistente.
 
 ## Más información
 
