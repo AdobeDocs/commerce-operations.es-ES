@@ -2,10 +2,10 @@
 title: Información general sobre la instalación local
 description: Obtenga información sobre el proceso de instalación para implementaciones locales de Adobe Commerce y Magento Open Source.
 exl-id: a9f5b241-d05d-462c-8c7f-479a264c988f
-source-git-commit: 7cc77a204d2a3c0773e6a0ab60e57e6e35f12091
+source-git-commit: 9ad18dac76f171ad0f90330e1a1347baa056403b
 workflow-type: tm+mt
-source-wordcount: '329'
-ht-degree: 3%
+source-wordcount: '502'
+ht-degree: 2%
 
 ---
 
@@ -14,13 +14,30 @@ ht-degree: 3%
 
 Esta página proporciona información general sobre la instalación de Adobe Commerce en su propia infraestructura. El proceso de instalación implica la configuración del entorno del servidor, la obtención del software y las credenciales necesarios y la ejecución del comando de instalación.
 
-Puede instalar el software de Adobe Commerce en aproximadamente 30 a 60 minutos. Sin embargo, el tiempo necesario para configurar el entorno del servidor antes de la instalación varía en función de la experiencia y las tecnologías que seleccione.
+Puede instalar el software local de Adobe Commerce en aproximadamente 30 a 60 minutos. Sin embargo, el tiempo necesario para configurar el entorno del servidor antes de la instalación varía en función de la experiencia y las tecnologías que seleccione.
 
 >[!TIP]
 >
 >Debe tener conocimientos técnicos intermedios y acceso al servidor para continuar correctamente.
 
-La instalación crea una tienda Adobe Commerce completamente funcional con [tienda orientada al cliente](https://experienceleague.adobe.com/es/docs/commerce-admin/start/storefront/storefront) y [panel administrativo](https://experienceleague.adobe.com/es/docs/commerce-admin/start/admin/admin). Debe tener listas las credenciales de la base de datos, la información de dominio y las claves de autenticación antes de comenzar el proceso.
+La instalación crea una tienda Adobe Commerce completamente funcional con [tienda orientada al cliente](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront) y [panel administrativo](https://experienceleague.adobe.com/en/docs/commerce-admin/start/admin/admin). Debe tener listas las credenciales de la base de datos, la información de dominio y las claves de autenticación antes de comenzar el proceso.
+
+## Responsabilidades del comerciante
+
+Con Adobe Commerce local, puede alojar y administrar su propia infraestructura, incluidos servidores, entornos de alojamiento y mantenimiento del sistema. Adobe proporciona asistencia específica para la aplicación principal de Commerce, que incluye:
+
+- Acceso a actualizaciones y correcciones de productos
+- Parches de seguridad para abordar vulnerabilidades
+- Documentación completa para ayudarle a administrar y optimizar su solución autoalojada
+
+Tiene control total sobre su entorno, lo que permite una mayor personalización y flexibilidad, pero es usted el responsable de garantizar el rendimiento, la seguridad y la escalabilidad de la infraestructura. Por ejemplo, usted es responsable de lo siguiente:
+
+- El diseño, la implementación, la configuración, el mantenimiento, la resolución de problemas y las pruebas de rendimiento de todos los sistemas locales de Adobe Commerce.
+   - Servidores, sistema operativo, bases de datos, [!DNL PHP], búsqueda, almacenamiento en caché, caché de página completa y red de distribución de contenido. Los temas comunes pueden incluir (entre otros) [!DNL Nginx/Apache], [!DNL PHP], [!DNL MySQL/MariaDB], [!DNL Redis], [!DNL Elasticsearch/OpenSearch], [!DNL RabbitMQ], [!DNL Varnish], [!DNL DNS], [!DNL SSL/TLS certificates] y cualquier [!DNL CDN] usado.
+- Planificación de la capacidad, escalado automático, agrupación en clúster, backups, recuperación ante desastres
+- Todos los datos de productos y clientes, diseño, configuración y configuración, mantenimiento de aplicaciones y bases de datos, implementación de código, actualizaciones de versiones y aplicación de parches
+- Supervisión y alertas mediante APM/registro/alertas (por ejemplo, [!DNL New Relic], [!DNL Datadog], [!DNL ELK])
+- Parches de seguridad para el sistema operativo, [!DNL PHP], base de datos, protección del middleware y actualizaciones
 
 ## Flujo de trabajo
 
