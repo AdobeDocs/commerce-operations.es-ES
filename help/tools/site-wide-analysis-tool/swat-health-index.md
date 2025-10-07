@@ -1,9 +1,9 @@
 ---
 title: Explicación de las puntuaciones y recomendaciones del índice de salud SWAT
 description: Descubra lo que significa el índice de estado de la herramienta de análisis para todo el sitio para su sitio de Adobe Commerce. Descubra cómo interpretar las puntuaciones y utilizar las recomendaciones de forma eficaz.
-source-git-commit: e39e0229538bb245fbe744ebfd642572fc2dc790
+source-git-commit: d9b598e9399c26c8fb7c52e9f211029689343ce9
 workflow-type: tm+mt
-source-wordcount: '331'
+source-wordcount: '330'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 Cuando descarga **[!DNL Recommendations Report]** desde el panel SWAT, PDF incluye una puntuación de **[!DNL Site Wide Analysis Tool Health Index]** en la sección **Introducción**:
 
-![Puntuación del índice de estado de la herramienta de análisis de todo el sitio en el informe de recomendaciones generado](https://git.corp.adobe.com/AdobeDocs/commerce-operations.en/assets/38345/cf56a076-e5a8-488d-927d-a3989966a089)
+![Puntuación del índice de estado de la herramienta de análisis de todo el sitio en el informe de recomendaciones generado](/help/assets/tools/swat-health-index-scroe.png)
 
 El índice SWAT Health Index le ayuda a monitorizar y mejorar el estado general de su sitio de Adobe Commerce. Esta puntuación es una herramienta de orientación, no una medida absoluta de aprobado o suspenso.
 
