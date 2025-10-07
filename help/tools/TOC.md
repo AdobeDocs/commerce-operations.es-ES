@@ -2,9 +2,9 @@
 user-guide-title: Herramientas
 user-guide-description: Obtenga información sobre las distintas herramientas que puede utilizar con Adobe Commerce, sus usos, el proceso de instalación y cómo obtener acceso.
 feature: Configuration
-source-git-commit: 9d6824397b3c1456d8fcf0530a0a6ffff2581277
+source-git-commit: 5491bb0d5cfeaf67850a5eb4d17ea975724a61fb
 workflow-type: tm+mt
-source-wordcount: '8549'
+source-wordcount: '8585'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,7 @@ ht-degree: 0%
    - [Tablero](site-wide-analysis-tool/dashboard.md)
    - [Información](site-wide-analysis-tool/information.md)
    - [Recommendations](site-wide-analysis-tool/recommendations.md)
+   - [Puntuación del índice de estado de SWAT](site-wide-analysis-tool/swat-health-index.md)
    - [Excepciones](site-wide-analysis-tool/exceptions.md)
    - [Extensiones](site-wide-analysis-tool/extensions.md)
    - [Alertas](site-wide-analysis-tool/alerts.md)
@@ -40,7 +41,7 @@ ht-degree: 0%
    - [Alertas administradas para Adobe Commerce: alerta de advertencia de CPU](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-cpu-warning-alert.md)
 - Herramienta Parches de calidad {#quality-patches-tool}
    - [[!DNL Quality Patches Tool]: herramienta de autoservicio para parches de calidad](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)
-   - [[!DNL Quality Patches Tool]: buscar parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es){target="_blank"}
+   - [[!DNL Quality Patches Tool]: buscar parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
    - [Uso](quality-patches-tool/usage.md)
    - [Notas de la versión](quality-patches-tool/release-notes.md)
    - Parches disponibles en la herramienta Parches de calidad {#patches-available-in-qpt}
@@ -872,17 +873,19 @@ ht-degree: 0%
          - [AC-15223: La página de la tienda muestra el contenido almacenado en caché después de cambiar de tienda](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-69/ac-15223-storefront-page-shows-cached-content-after-switching-stores.md)
       - Versión 1.1.70 {#v1-1-70}
          - [Información general:  [!DNL Quality Patches Tool] (QPT) v1.1.70](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-70/overview.md)
+         - [ACSD-66120: [!DNL GraphQL] muestra porcentajes de descuento incorrectos y precios base cuando los precios de catálogo incluyen impuestos](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-70/acsd-66120.md)
+         - [ACSD-67289: el precio normal no se muestra cuando se aplica un precio especial](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-70/acsd-67289.md)
+         - [ACSD-67166: Duplicar la ejecución de la consulta cataloginventory_stock_status al cargar una oferta en la tienda](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-70/acsd-67166.md)
          - [ACSD-67659: Los mensajes de error traducidos devuelven un código de error INDEFINIDO](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-70/acsd-67659.md)
          - [ACSD-66157: El precio especial no tiene efecto para los sitios web creados en diferentes zonas horarias](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-70/acsd-66157.md)
          - [ACSD-67102: La carga de categorías es lenta o se agota el tiempo de espera cuando hay un gran número de categorías y productos](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-70/acsd-67102.md)
-         - [ACSD-67289: el precio normal no se muestra cuando se aplica un precio especial](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-70/acsd-67289.md)
-         - [ACSD-67166: Duplicar la ejecución de la consulta cataloginventory_stock_status al cargar una oferta en la tienda](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-70/acsd-67166.md)
       - Versión 1.1.71 {#v1-1-71}
          - [Información general: [!DNL Quality Patches Tool] (QPT) v1.1.71](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/overview.md)
-         - [ACSD-60624: error al cargar la imagen por contenido vacío en las secciones Imagen, Titular y Deslizador en [!DNL Page Builder]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-60624.md)
          - [ACSD-67643: entradas duplicadas creadas durante actualizaciones programadas en entornos de categoría anidada en alto](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67643.md)
-         - [ACSD-67904: los pedidos no se pueden realizar si el nombre de la ciudad contiene dígitos (0-9), el signo &amp;, puntos (.) o paréntesis ()](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67904.md)
          - [ACSD-67603: generación de mapas de sitios con tiempos de procesamiento largos para productos con inclusión de imágenes habilitada](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67603.md)
+         - [ACSD-67652: el estado del producto agrupado se devolvió como agotado en las llamadas de GraphQL con productos secundarios y principales en stock](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67652.md)
+         - [ACSD-60624: error al cargar la imagen por contenido vacío en las secciones Imagen, Titular y Deslizador en [!DNL Page Builder]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-60624.md)
+         - [ACSD-67904: los pedidos no se pueden realizar si el nombre de la ciudad contiene dígitos (0-9), el signo &amp;, puntos (.) o paréntesis ()](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67904.md)
          - [ACSD-67459: No se pueden importar productos con descripciones de más de 65 536 caracteres](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67459.md)
    - [Comprobar parche para el problema de Adobe Commerce con la herramienta Parches de calidad](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Referencia de herramientas de la línea de comandos {#cli-reference}
@@ -931,6 +934,6 @@ ht-degree: 0%
       - [Datos que requieren una migración manual](data-migration-tool/migrate-data/manual.md)
       - [Pasos de la migración posterior a los datos](data-migration-tool/migrate-data/post-migration.md)
    - Recursos {#resources}
-      - [Solución de problemas](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html?lang=es)
+      - [Solución de problemas](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html)
       - [Registro de cambios](https://github.com/magento/data-migration-tool/blob/2.4/CHANGELOG.md)
-- [Volver a las guías operativas](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=es)
+- [Volver a las guías operativas](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
