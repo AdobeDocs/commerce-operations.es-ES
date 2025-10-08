@@ -1,11 +1,11 @@
 ---
 title: Ubicación de almacenamiento de sesión
-description: Descubra dónde se almacenan los archivos de sesión.
+description: Obtenga información acerca de las ubicaciones de almacenamiento de sesión y la administración de archivos en Adobe Commerce. Descubra la lógica de almacenamiento y las opciones de configuración.
 feature: Configuration, Storage
 exl-id: 43cab98a-5b68-492e-b891-8db4cc99184e
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '257'
+source-wordcount: '267'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ Como usuario con privilegios de `root`, abra el archivo `php.ini` y busque el va
 
 ## Administrar tamaño de sesión
 
-Consulte [Administración de sesión](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/security/security-session-management) en la _Guía del usuario_.
+Consulte [Administración de sesión](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-session-management) en la _Guía del usuario_.
 
 ## Configuración de recolección de basura
 

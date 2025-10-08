@@ -1,11 +1,11 @@
 ---
 title: Limpieza de caché con barniz
-description: Aprenda cómo funciona la limpieza de caché con Varnish y cómo utilizarla como acelerador de almacenamiento en caché web para la aplicación de Adobe Commerce.
+description: Descubra cómo funciona la limpieza de caché con el acelerador de almacenamiento en caché web de Varnish para Adobe Commerce. Descubra las técnicas de optimización y administración de caché.
 feature: Configuration, Cache
 exl-id: 866da415-c428-4092-a045-c3079493cdc4
-source-git-commit: 79c8a15fb9686dd26d73805e9d0fd18bb987770d
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '367'
+source-wordcount: '364'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ Una vez instalado y configurado el barniz para que funcione con Commerce, las si
 
 ## Configuración de Commerce para depurar Barniz
 
-Commerce purga los hosts de Varnish después de configurar los hosts de Varnish mediante el comando [`magento setup:config:set`](https://experienceleague.adobe.com/es/docs/commerce-operations/tools/cli-reference/commerce-on-premises#setupconfigset).
+Commerce purga los hosts de Varnish después de configurar los hosts de Varnish mediante el comando [`magento setup:config:set`](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#setupconfigset).
 
 Puede usar el parámetro opcional `--http-cache-hosts` para especificar una lista separada por comas de hosts de Barnish y puertos de escucha. Configure todos los hosts de Varnish, independientemente de si tiene uno o varios. (No separe los hosts con caracteres de espacio.)
 

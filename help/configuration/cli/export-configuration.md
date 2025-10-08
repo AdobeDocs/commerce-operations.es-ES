@@ -1,10 +1,10 @@
 ---
 title: Exportar ajustes de configuración
-description: Exporte los ajustes de configuración de Adobe Commerce a los archivos de configuración, también conocidos como volcado de configuración.
+description: Obtenga información sobre cómo exportar los ajustes de configuración de Adobe Commerce a archivos mediante el volcado de configuración. Descubra la implementación y administración de la configuración de la canalización.
 exl-id: db680f5e-547a-48f3-b017-d77b8cb07bfd
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '204'
+source-wordcount: '210'
 ht-degree: 0%
 
 ---

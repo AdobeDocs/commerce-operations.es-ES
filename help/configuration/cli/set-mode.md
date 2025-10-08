@@ -1,10 +1,10 @@
 ---
 title: Definición del modo de funcionamiento
-description: Obtenga información sobre cómo configurar los modos de funcionamiento de Adobe Commerce.
+description: Obtenga información sobre cómo establecer los modos de operación de Adobe Commerce entre desarrollador y producción. Comandos de cambio de modo Discover e implicaciones de seguridad.
 exl-id: 62d183fa-d4ff-441d-b8bd-64ef5ae10978
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '385'
+source-wordcount: '396'
 ht-degree: 0%
 
 ---

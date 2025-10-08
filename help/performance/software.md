@@ -1,11 +1,11 @@
 ---
 title: Recomendaciones de software
-description: Revise la lista de software recomendado relacionado con el rendimiento óptimo de las implementaciones de Adobe Commerce.
+description: Obtenga información acerca de los requisitos y recomendaciones de software para Adobe Commerce. Descubra las versiones compatibles y las prácticas recomendadas de configuración para la producción.
 feature: Best Practices, Install
 exl-id: b091a733-7655-4e91-a988-93271872c5d5
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '1392'
+source-wordcount: '1396'
 ht-degree: 0%
 
 ---
@@ -213,7 +213,7 @@ Instale [!DNL Varnish] en un servidor independiente delante del nivel web. Debe 
 * **El modo de gracia** le permite indicar a [!DNL Varnish] que mantenga un objeto en la caché más allá de su período de tiempo de vida (TTL) y que sirva este contenido obsoleto si [!DNL Commerce] no está en buen estado o si aún no se ha recuperado contenido nuevo.
 * **Modo Saint** pone en lista negra servidores [!DNL Commerce] que no están en buen estado durante un período de tiempo configurable. Como resultado, los backends que no están en buen estado no pueden servir tráfico al usar [!DNL Varnish] como equilibrador de carga.
 
-Consulte [Configuración avanzada [!DNL Varnish] 2&rbrace; para obtener más información sobre cómo implementar estas características.](../configuration/cache/config-varnish-advanced.md)
+Consulte [Configuración avanzada [!DNL Varnish] 2} para obtener más información sobre cómo implementar estas características.](../configuration/cache/config-varnish-advanced.md)
 
 ### Optimizar el rendimiento del recurso
 

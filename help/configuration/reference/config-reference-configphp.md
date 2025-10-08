@@ -1,10 +1,10 @@
 ---
 title: config.php reference
-description: Vea una lista de valores en el archivo config.php.
+description: Obtenga información acerca de los valores y secciones del archivo config.php para la configuración de Adobe Commerce. Descubra módulos, ámbitos, configuración del sistema y prácticas recomendadas de implementación.
 exl-id: 9b355d6d-ea66-480b-ad96-0ea9e7e61844
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '147'
+source-wordcount: '158'
 ht-degree: 1%
 
 ---
@@ -124,6 +124,6 @@ Más información sobre [Temas].
 
 <!-- link definitions -->
 
-[Módulos]: https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html?lang=es
-[scopes]: https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=es#scope-settings
+[Módulos]: https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html
+[scopes]: https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings
 [Temas]: https://developer.adobe.com/commerce/frontend-core/guide/themes/create-storefront/

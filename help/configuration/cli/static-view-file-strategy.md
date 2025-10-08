@@ -1,11 +1,11 @@
 ---
 title: Estrategias de implementación para archivos de vista estática
-description: Obtenga información sobre las estrategias de implementación para la aplicación de Commerce.
+description: Obtenga información sobre las estrategias de implementación para archivos de vista estática en aplicaciones de Adobe Commerce. Descubra métodos de implementación óptimos para diferentes casos de uso.
 feature: Configuration, Deploy, Extensions
 exl-id: 12ebbd36-f813-494f-9515-54ce697ca2e4
-source-git-commit: 403a5937561d82b02fd126c95af3f70b0ded0747
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '446'
+source-wordcount: '458'
 ht-degree: 0%
 
 ---

@@ -1,11 +1,11 @@
 ---
 title: Configurar almacenamiento en caché
-description: Obtenga información sobre el almacenamiento en caché y cómo configurar los mecanismos de caché para la aplicación de Adobe Commerce.
+description: Obtenga información sobre los mecanismos de almacenamiento en caché y las opciones de configuración para aplicaciones de Adobe Commerce. Descubra alternativas al almacenamiento en caché predeterminado del sistema de archivos.
 feature: Configuration, Cache
 exl-id: 6effa069-c043-411a-b161-01210be17391
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '203'
+source-wordcount: '207'
 ht-degree: 0%
 
 ---

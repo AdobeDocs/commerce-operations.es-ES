@@ -3,9 +3,9 @@ title: Configurar almacenamiento remoto
 description: Obtenga información sobre cómo configurar el módulo Almacenamiento remoto para la aplicación Commerce local.
 feature: Configuration, Storage
 exl-id: 0428f889-46b0-44c9-8bd9-98c1be797011
-source-git-commit: 419a21604d1fda0a76dd0375ae2340fd6e59ec89
+source-git-commit: 4caabd1578e56b74600441c9c779b7b2dfd06987
 workflow-type: tm+mt
-source-wordcount: '510'
+source-wordcount: '521'
 ht-degree: 0%
 
 ---
@@ -30,11 +30,11 @@ Si habilita el almacenamiento remoto, podría afectar a su experiencia de desarr
 
 >[!INFO]
 >
->- El almacenamiento remoto solo está disponible para la versión 2.4.2 y posteriores de Commerce. Ver las [notas de la versión 2.4.2](https://experienceleague.adobe.com/es/docs/commerce-operations/release/notes/magento-open-source/2-4-2).
+>- El almacenamiento remoto solo está disponible para la versión 2.4.2 y posteriores de Commerce. Ver las [notas de la versión 2.4.2](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/magento-open-source/2-4-2).
 >
 >- El módulo de almacenamiento remoto tiene compatibilidad con _limited_ en Adobe Commerce en la infraestructura en la nube. Adobe no puede solucionar por completo los problemas del servicio del adaptador de almacenamiento de terceros. Consulte [Configuración del almacenamiento remoto para Commerce en la infraestructura en la nube](cloud-support.md) para obtener instrucciones sobre la implementación del almacenamiento remoto para proyectos en la nube.
 
-![imagen de esquema](../../assets/configuration/remote-storage-schema.png)
+![Diagrama del esquema de configuración de almacenamiento remoto que ilustra la relación entre el almacenamiento local y el almacenamiento en la nube](../../assets/configuration/remote-storage-schema.png)
 
 ## Opciones de almacenamiento remoto
 
@@ -91,7 +91,7 @@ Después de habilitar el almacenamiento remoto para un adaptador específico, pu
 
 >[!INFO]
 >
->El comando sync solo migra archivos en el directorio `pub/media`, _no_ los archivos de importación y exportación en el directorio `var`. Consulte [Importación/Exportación programada](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-scheduled-import-export.html?lang=es) en la _Guía del usuario de Commerce 2.4_.
+>El comando sync solo migra archivos en el directorio `pub/media`, _no_ los archivos de importación y exportación en el directorio `var`. Consulte [Importación/Exportación programada](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-scheduled-import-export.html) en la _Guía del usuario de Commerce 2.4_.
 
 <!-- link definitions -->
 

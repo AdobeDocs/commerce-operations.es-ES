@@ -2,9 +2,9 @@
 title: Administración de extensiones de terceros
 description: Siga estos pasos para instalar, habilitar, actualizar y desinstalar una extensión de Adobe Commerce.
 exl-id: b564662a-2e5f-4fa9-bae1-ca7498478fa9
-source-git-commit: f057cf082eeab1e34957e284817c6b93517de21b
+source-git-commit: 4caabd1578e56b74600441c9c779b7b2dfd06987
 workflow-type: tm+mt
-source-wordcount: '802'
+source-wordcount: '805'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Las extensiones incluyen:
 - Temas (cambia la apariencia de tu tienda y administrador)
 - Paquetes de idioma (localice la tienda y el administrador)
 
-En este tema se explica cómo usar la interfaz de línea de comandos para administrar las extensiones de terceros que se adquieren en Commerce Marketplace para _proyectos locales_. Para proyectos de infraestructura en la nube, consulte [Administrar extensiones](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/configure-store/extensions).
+En este tema se explica cómo usar la interfaz de línea de comandos para administrar las extensiones de terceros que se adquieren en Commerce Marketplace para _proyectos locales_. Para proyectos de infraestructura en la nube, consulte [Administrar extensiones](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions).
 
 Puede usar el mismo procedimiento para instalar la extensión _any_; todo lo que necesita es el nombre y la versión del Compositor de la extensión. Para encontrarlo, abra el archivo `composer.json` de la extensión y anote los valores de `"name"` y `"version"`.
 
@@ -72,7 +72,7 @@ Para obtener el nombre y la versión del compositor de la extensión de Commerce
 
 1. Busque la extensión que desea instalar y anote el nombre y la versión del componente.
 
-   ![Los detalles técnicos muestran el nombre de autor de la extensión](../../assets/installation/marketplace-extension-technical-details.png)
+   ![Detalles técnicos de la extensión que muestran el nombre del paquete Compositor para la instalación](../../assets/installation/marketplace-extension-technical-details.png)
 
 >[!TIP]
 >

@@ -1,10 +1,10 @@
 ---
 title: Ejecutar pruebas unitarias
-description: Ejecute pruebas unitarias definidas en la base de código de Adobe Commerce.
+description: Obtenga información sobre cómo ejecutar pruebas unitarias definidas en el código base de Adobe Commerce. Descubra los comandos de prueba, las opciones de ejecución y los informes de resultados.
 exl-id: 23200420-d15c-4910-8ce6-abd0cc070777
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '142'
+source-wordcount: '152'
 ht-degree: 0%
 
 ---

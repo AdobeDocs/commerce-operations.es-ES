@@ -1,10 +1,10 @@
 ---
 title: Herramienta de línea de comandos
-description: Utilice la herramienta de línea de comandos de Commerce para ejecutar las tareas de instalación y configuración.
+description: Aprenda a utilizar la herramienta de línea de comandos de Adobe Commerce para las tareas de instalación y configuración. Descubra los comandos de CLI y las funciones administrativas.
 exl-id: 44470ce1-a5a2-4c12-962e-e42d11a6bd15
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '295'
+source-wordcount: '304'
 ht-degree: 0%
 
 ---

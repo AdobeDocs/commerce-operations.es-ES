@@ -1,10 +1,10 @@
 ---
 title: Importación de datos de archivos de configuración
-description: Importe las opciones de configuración de Adobe Commerce desde los archivos de configuración.
+description: Obtenga información sobre cómo importar los ajustes de configuración de Adobe Commerce desde archivos de configuración. Descubra los procesos de implementación de canalización e importación de base de datos.
 exl-id: 7d9f156c-e8d3-4888-b359-5d9aa8c4ea05
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '493'
+source-wordcount: '503'
 ht-degree: 0%
 
 ---

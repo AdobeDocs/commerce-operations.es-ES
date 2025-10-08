@@ -1,11 +1,11 @@
 ---
 title: Generar datos para pruebas de rendimiento
-description: Obtenga información sobre cómo generar una gran cantidad de datos para utilizarlos en pruebas de rendimiento.
+description: Obtenga información sobre cómo generar grandes cantidades de datos para pruebas de rendimiento de Adobe Commerce. Descubra perfiles de generación de datos y estrategias de prueba.
 feature: Configuration, Orders
 exl-id: 2f54701d-88c4-464a-b4dc-56db14d54160
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '762'
+source-wordcount: '768'
 ht-degree: 9%
 
 ---

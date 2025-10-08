@@ -1,11 +1,11 @@
 ---
 title: Habilitar registro
-description: Obtenga información sobre cómo habilitar y deshabilitar tipos de registro.
+description: Obtenga información sobre cómo habilitar y deshabilitar diferentes tipos de registro en Adobe Commerce. Descubra las técnicas de configuración y administración de registros.
 feature: Configuration, Logs
 exl-id: 78b0416a-5bad-42a9-a918-603600e98928
-source-git-commit: 403a5937561d82b02fd126c95af3f70b0ded0747
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '258'
+source-wordcount: '268'
 ht-degree: 0%
 
 ---

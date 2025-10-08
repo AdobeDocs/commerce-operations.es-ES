@@ -1,10 +1,10 @@
 ---
 title: Informes de dependencias
-description: Cree informes que muestren los totales de las dependencias de módulo, circular y marco.
+description: Obtenga información sobre cómo crear informes de dependencias que muestren dependencias de módulo, circular y de marco de trabajo en Adobe Commerce. Descubra las herramientas de análisis e informes.
 exl-id: b7a32fe1-71c5-495f-8276-242503fb50ae
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '240'
+source-wordcount: '248'
 ht-degree: 0%
 
 ---

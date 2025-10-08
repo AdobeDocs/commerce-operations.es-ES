@@ -1,10 +1,10 @@
 ---
 title: referencia env.php
-description: Vea una lista de valores para el archivo env.php.
+description: Obtenga información acerca de los valores y secciones de configuración del archivo env.php en Adobe Commerce. Descubra los ajustes y las opciones de configuración del entorno.
 exl-id: cf02da8f-e0de-4f0e-bab6-67ae02e9166f
-source-git-commit: 26fac37405ad635f297b65415517451d5149e50f
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '1008'
+source-wordcount: '1016'
 ht-degree: 0%
 
 ---
@@ -146,7 +146,7 @@ Commerce utiliza una clave de cifrado para proteger contraseñas y otros datos c
 ]
 ```
 
-Obtenga más información acerca de la [clave de cifrado](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/security/encryption-key) en la _guía del usuario de Commerce_.
+Obtenga más información acerca de la [clave de cifrado](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/encryption-key) en la _guía del usuario de Commerce_.
 
 ## db
 
@@ -203,7 +203,7 @@ Una lista de dominios descargables disponibles en este nodo. Se pueden agregar, 
 ]
 ```
 
-Más información sobre [Dominios descargables](https://experienceleague.adobe.com/es/docs/commerce-operations/tools/cli-reference/commerce-on-premises#downloadabledomainsadd).
+Más información sobre [Dominios descargables](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#downloadabledomainsadd).
 
 ## instalar
 

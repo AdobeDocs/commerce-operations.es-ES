@@ -1,10 +1,10 @@
 ---
 title: Configurar y ejecutar trabajos cron
-description: Aprenda a administrar los trabajos de cron.
+description: Obtenga información sobre cómo configurar y administrar trabajos cron en Adobe Commerce. Descubra las técnicas de programación, configuración y solución de problemas.
 exl-id: 8ba2b2f9-5200-4e96-9799-1b00d7d23ce1
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '748'
+source-wordcount: '759'
 ht-degree: 0%
 
 ---

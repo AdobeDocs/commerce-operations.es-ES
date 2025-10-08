@@ -1,11 +1,11 @@
 ---
 title: Información general sobre la instalación local
-description: Obtenga información sobre el proceso de instalación para implementaciones locales de Adobe Commerce y Magento Open Source.
+description: Obtenga información acerca del proceso de instalación local de Adobe Commerce. Descubra los requisitos del servidor, los pasos de configuración y las prácticas recomendadas de implementación.
 exl-id: a9f5b241-d05d-462c-8c7f-479a264c988f
-source-git-commit: 9ad18dac76f171ad0f90330e1a1347baa056403b
+source-git-commit: 062267b8b06e41d89f704144e640fc1254952532
 workflow-type: tm+mt
-source-wordcount: '502'
-ht-degree: 2%
+source-wordcount: '509'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +20,7 @@ Puede instalar el software local de Adobe Commerce en aproximadamente 30 a 60 mi
 >
 >Debe tener conocimientos técnicos intermedios y acceso al servidor para continuar correctamente.
 
-La instalación crea una tienda Adobe Commerce completamente funcional con [tienda orientada al cliente](https://experienceleague.adobe.com/es/docs/commerce-admin/start/storefront/storefront) y [panel administrativo](https://experienceleague.adobe.com/es/docs/commerce-admin/start/admin/admin). Debe tener listas las credenciales de la base de datos, la información de dominio y las claves de autenticación antes de comenzar el proceso.
+La instalación crea una tienda Adobe Commerce completamente funcional con [tienda orientada al cliente](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront) y [panel administrativo](https://experienceleague.adobe.com/en/docs/commerce-admin/start/admin/admin). Debe tener listas las credenciales de la base de datos, la información de dominio y las claves de autenticación antes de comenzar el proceso.
 
 ## Responsabilidades del comerciante
 

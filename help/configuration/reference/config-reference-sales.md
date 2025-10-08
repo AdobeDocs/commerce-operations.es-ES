@@ -1,11 +1,11 @@
 ---
 title: Referencia de rutas de configuración de ventas
-description: Consulte una lista de valores de configuración de ventas.
+description: Obtenga información sobre las rutas de configuración de ventas y los nombres de variables en Adobe Commerce. Descubra la configuración de administración para pagos, envíos e impuestos.
 feature: Configuration, Checkout, Gift, Shipping/Delivery, Taxes
 exl-id: 7981f78a-5e5f-422c-9bff-54022e1fb9f3
-source-git-commit: 16e9396f19693436dfc7bdac78d84624a78f0c21
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '1473'
+source-wordcount: '1485'
 ht-degree: 0%
 
 ---

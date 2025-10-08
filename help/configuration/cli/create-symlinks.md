@@ -1,10 +1,10 @@
 ---
 title: Creación de enlaces simbólicos a archivos LESS
-description: Aprenda a crear enlaces simbólicos a archivos LESS.
+description: Aprenda a crear enlaces simbólicos a archivos LESS para el desarrollo de Adobe Commerce. Descubra la vinculación de hojas de estilo y la optimización del flujo de trabajo de desarrollo.
 exl-id: 58a6123a-28b4-445b-b3f9-f524233ac127
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '161'
+source-wordcount: '172'
 ht-degree: 0%
 
 ---

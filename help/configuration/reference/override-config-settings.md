@@ -1,10 +1,10 @@
 ---
 title: Anular los ajustes de configuración
-description: Aprenda a utilizar variables de entorno para anular los ajustes de configuración.
+description: Aprenda a utilizar variables de entorno para anular los ajustes de configuración de Adobe Commerce. Descubra las prácticas recomendadas de implementación y administración de la configuración.
 exl-id: 788fd3cd-f8c1-4514-8141-547fed36e9ce
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '1202'
+source-wordcount: '1211'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Puede anular el valor de _any_ configuración mediante variables de entorno; sin
 
 >[!TIP]
 >
->Consulte el tema [Configurar entornos](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-intro.html?lang=es) en la guía _Commerce en infraestructura de nube_.
+>Consulte el tema [Configurar entornos](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-intro.html) en la guía _Commerce en infraestructura de nube_.
 
 ## Variables de entorno
 
@@ -62,8 +62,8 @@ El formato general de los nombres de las variables de configuración del sistema
   Para obtener más información sobre los ámbitos, consulte:
 
    - [Paso 1: Encuentre el valor de ámbito de vista del sitio web o tienda](#step-1-find-the-website-or-store-view-scope-value)
-   - [Tema de la Guía del usuario de Commerce sobre el ámbito](https://experienceleague.adobe.com/es/docs/commerce-admin/start/setup/websites-stores-views#scope-settings)
-   - [Referencia rápida del ámbito](https://experienceleague.adobe.com/es/docs/commerce-admin/config/scope-change#scope-quick-reference)
+   - [Tema de la Guía del usuario de Commerce sobre el ámbito](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views#scope-settings)
+   - [Referencia rápida del ámbito](https://experienceleague.adobe.com/en/docs/commerce-admin/config/scope-change#scope-quick-reference)
 
 `<SYSTEM__VARIABLE__NAME>` es la ruta de configuración con caracteres de subrayado doble sustituidos para `/`. Para obtener más información, consulte [Paso 2: Establecer variables del sistema](#step-2-set-global-website-or-store-view-variables).
 
@@ -253,6 +253,6 @@ Se muestra un ejemplo paso a paso en [Establecer valores de configuración media
 >
 >- Para usar los valores que configuró en la matriz `$_ENV`, debe establecer `variables_order = "EGPCS"` (Entorno, Obtener, Publicación, Cookie y Servidor) en el archivo `php.ini`. Para obtener más información, consulte [Documentación de PHP](https://www.php.net/manual/en/ini.core.php).
 >
->- Para Adobe Commerce en la infraestructura en la nube, si está intentando anular las opciones de configuración mediante la [Interfaz web de Project](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html?lang=es#configure-the-project), debe anteponer el nombre de la variable a `env:`. Por ejemplo:
+>- Para Adobe Commerce en la infraestructura en la nube, si está intentando anular las opciones de configuración mediante la [Interfaz web de Project](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html#configure-the-project), debe anteponer el nombre de la variable a `env:`. Por ejemplo:
 >
 >![Ejemplo de variable de entorno](../../assets/configuration/cloud-console-envvariable.png)

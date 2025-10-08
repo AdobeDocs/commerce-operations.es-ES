@@ -1,11 +1,11 @@
 ---
 title: Información general sobre la guía de configuración
-description: Obtenga información sobre todas las funciones y servicios configurables para su aplicación de Adobe Commerce.
+description: Obtenga información sobre las funciones y los servicios configurables para su aplicación de Adobe Commerce. Descubra cómo administrar la implementación, el almacenamiento en caché, la seguridad y otras configuraciones críticas.
 exl-id: c4997792-5a47-4ae5-903a-7e5d7235e42e
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '144'
-ht-degree: 9%
+source-wordcount: '153'
+ht-degree: 0%
 
 ---
 
@@ -25,8 +25,8 @@ La guía _Configuración_ proporciona material de referencia e instrucciones lim
 
 ## Configuración de administración de Commerce
 
-Hay temas correspondientes en la [Guía del usuario de Commerce](https://experienceleague.adobe.com/es/docs/commerce-admin/config/guide-overview) que pueden ayudarle a comprender las descripciones de los campos de cada configuración en el Administrador de Commerce.
+Hay temas correspondientes en la [Guía del usuario de Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/config/guide-overview) que pueden ayudarle a comprender las descripciones de los campos de cada configuración en el Administrador de Commerce.
 
 ## Configuración de nube
 
-[!DNL Commerce on cloud infrastructure] usa un [conjunto de archivos de configuración](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/overview.html?lang=es) para actualizar las características y servicios de la aplicación Commerce en los entornos hospedados. Debido a la naturaleza única de los entornos alojados en la nube de Adobe, siempre debe revisar la [Guía de nube](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/overview.html?lang=es) para conocer los requisitos de configuración adicionales.
+[!DNL Commerce on cloud infrastructure] usa un [conjunto de archivos de configuración](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/overview.html) para actualizar las características y servicios de la aplicación Commerce en los entornos hospedados. Debido a la naturaleza única de los entornos alojados en la nube de Adobe, siempre debe revisar la [Guía de nube](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/overview.html) para conocer los requisitos de configuración adicionales.

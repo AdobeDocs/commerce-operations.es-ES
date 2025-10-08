@@ -1,11 +1,11 @@
 ---
 title: Referencia de rutas de configuración de catálogo
-description: Consulte una lista de valores de configuración del catálogo.
+description: Obtenga información sobre las rutas y los valores de configuración del catálogo en la configuración de administración de Adobe Commerce. Descubra las opciones de configuración de administración de productos, categorías y catálogos.
 feature: Configuration, Catalog Management
 exl-id: 19451443-228e-437d-a3eb-7dc968b9fb0d
-source-git-commit: 47bda51cdcab964c37d9f652d467d69d795d8641
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '832'
+source-wordcount: '845'
 ht-degree: 0%
 
 ---
@@ -23,9 +23,9 @@ Estos valores de configuración están disponibles en el Administrador de **Tien
 | Nombre | Ruta de configuración | ¿Solo Commerce? |
 |--------------|--------------|--------------|
 | Máscara para SKU | `catalog/fields_masks/sku` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Máscara para metatítulo | `catalog/fields_masks/meta_title` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Máscara para palabras clave meta | `catalog/fields_masks/meta_keyword` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Máscara para metadescripción | `catalog/fields_masks/meta_description` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Máscara para el título de Meta | `catalog/fields_masks/meta_title` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Máscara para palabras clave de Meta | `catalog/fields_masks/meta_keyword` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Máscara para la descripción de Meta | `catalog/fields_masks/meta_description` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Modo de lista | `catalog/frontend/list_mode` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Productos por página en valores permitidos de cuadrícula | `catalog/frontend/grid_per_page_values` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Productos por página en valor predeterminado de cuadrícula | `catalog/frontend/grid_per_page` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
@@ -80,8 +80,8 @@ Estos valores de configuración están disponibles en el Administrador de **Tien
 | Utilizar ruta de categorías para URL de productos | `catalog/seo/product_use_categories` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Crear redireccionamiento permanente para direcciones URL si se cambia la clave URL | `catalog/seo/save_rewrites_history` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Separador de título de página | `catalog/seo/title_separator` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Usar Meta Etiqueta De Vínculo Canónico Para Las Categorías | `catalog/seo/category_canonical_tag` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| Uso De La Meta Etiqueta De Vínculo Canónico Para Productos | `catalog/seo/product_canonical_tag` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Usar Etiqueta Meta De Vínculo Canónico Para Categorías | `catalog/seo/category_canonical_tag` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Uso De La Etiqueta Meta De Vínculo Canónico Para Productos | `catalog/seo/product_canonical_tag` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
 | Activar | `catalog/magento_catalogpermissions/enabled` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
 | Permitir categoría de exploración | `catalog/magento_catalogpermissions/grant_catalog_category_view` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
 | Grupos de clientes | `catalog/magento_catalogpermissions/grant_catalog_category_view_groups` | ![Solo Commerce](/help/assets/configuration/cloud-ee.png) |
@@ -151,7 +151,7 @@ Estos valores de configuración están disponibles en el Administrador de **Tien
 
 ## Rutas de Visual Merchandiser
 
-[!BADGE Solo PaaS]{type=Informative url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe) y a proyectos locales."}
+[!BADGE Solo PaaS]{type=Informative url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe) y a proyectos locales."}
 
 Estos valores de configuración están disponibles en el Administrador de **Tiendas** > Configuración > **Configuración** > **Catálogo** > **Visual Merchandiser**.
 

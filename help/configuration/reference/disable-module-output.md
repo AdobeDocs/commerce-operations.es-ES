@@ -1,10 +1,10 @@
 ---
 title: Deshabilitar salida del módulo
-description: Obtenga información sobre cómo deshabilitar la salida del módulo.
+description: Obtenga información sobre cómo deshabilitar la salida de módulos en Adobe Commerce sin eliminar dependencias. Descubra los pasos y casos de uso de la configuración.
 exl-id: af556bf5-8454-4d65-8ac8-4a64c108f092
-source-git-commit: fee09845777e23717e618ac57df4158d6b172d4f
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '362'
+source-wordcount: '374'
 ht-degree: 0%
 
 ---

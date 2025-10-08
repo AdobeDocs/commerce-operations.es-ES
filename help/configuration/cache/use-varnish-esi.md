@@ -1,12 +1,12 @@
 ---
 title: Barniz Bloque ESI
-description: Obtenga información sobre las inclusiones laterales de Edge y cómo puede utilizarlas para incrustar páginas web.
+description: Obtenga información acerca de Barnish Edge Side Includes (ESI) y cómo incrustar páginas web para Adobe Commerce. Descubra la implementación y optimización de bloques de ESI.
 badge: label="Colaboró Konstantin G." type="Informative" url="https://github.com/goivvy" tooltip="Konstantin G."
 feature: Configuration, Cache
 exl-id: 7dccafa5-df79-4690-be5c-ff774c66bb2a
-source-git-commit: a2bd4139aac1044e7e5ca8fcf2114b7f7e9e9b68
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '129'
+source-wordcount: '136'
 ht-degree: 0%
 
 ---

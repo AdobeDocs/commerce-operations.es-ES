@@ -3,9 +3,9 @@ title: Configurar el cambio de tamaño de la imagen para almacenamiento remoto
 description: Optimice los recursos de disco configurando el cambio de tamaño de las imágenes del lado del servidor.
 feature: Configuration, Storage
 exl-id: 51c2b9b3-0f5f-4868-9191-911d5df341ec
-source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
+source-git-commit: 4caabd1578e56b74600441c9c779b7b2dfd06987
 workflow-type: tm+mt
-source-wordcount: '238'
+source-wordcount: '247'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ De forma predeterminada, Adobe Commerce admite el cambio de tamaño de las imág
 
 El diagrama siguiente muestra cómo Nginx recupera, cambia de tamaño y almacena imágenes en la caché. El cambio de tamaño viene determinado por los parámetros incluidos en la dirección URL, como la altura y la anchura.
 
-![cambio de tamaño de imagen](../../assets/configuration/remote-storage-nginx-image-resize.png)
+![Cambio de tamaño de la imagen de almacenamiento remoto mostrando la configuración del bloque de servidor](../../assets/configuration/remote-storage-nginx-image-resize.png)
 
 >[!TIP]
 >

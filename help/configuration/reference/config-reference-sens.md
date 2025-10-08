@@ -1,11 +1,11 @@
 ---
 title: Rutas confidenciales y específicas del sistema
-description: Consulte una lista de valores de configuración específicos del sistema y confidenciales.
+description: Obtenga información acerca de las rutas de configuración confidenciales y específicas del sistema para Adobe Commerce. Descubra la configuración segura y la administración de variables de entorno.
 feature: Configuration, System
 exl-id: 127880ab-7507-4e53-8b51-dfa6557d0b18
-source-git-commit: e5a1c5634124831c8d5a95df6818ec30c372e8dd
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '3676'
+source-wordcount: '3684'
 ht-degree: 0%
 
 ---

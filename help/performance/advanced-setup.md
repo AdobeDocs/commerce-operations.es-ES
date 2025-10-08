@@ -1,10 +1,10 @@
 ---
 title: Configuración avanzada
-description: Revise las prácticas recomendadas y las recomendaciones para sistemas de grandes empresas diseñados para procesar grandes volúmenes de datos.
+description: Obtenga información sobre la configuración avanzada de Adobe Commerce. Descubra instrucciones paso a paso y requisitos de configuración.
 exl-id: eb9ca9fa-b099-4e77-ab33-16cd0f382ffe
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: da9ce645d4d32c1368da442d9bd260f5fb3cdb98
 workflow-type: tm+mt
-source-wordcount: '1173'
+source-wordcount: '1171'
 ht-degree: 0%
 
 ---

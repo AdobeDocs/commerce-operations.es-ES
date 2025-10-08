@@ -1,10 +1,10 @@
 ---
 title: Marcador URN
-description: Aprenda a configurar el resaltado de URN en el IDE.
+description: Aprenda a configurar el resaltado de URN en su IDE para el desarrollo de Adobe Commerce. Descubra la configuración y optimización del desarrollo del esquema XSD.
 exl-id: 6389ab58-af70-4b33-800e-be3191c5a4cc
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '176'
+source-wordcount: '187'
 ht-degree: 0%
 
 ---

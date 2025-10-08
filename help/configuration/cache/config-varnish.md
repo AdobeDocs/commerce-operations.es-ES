@@ -1,11 +1,11 @@
 ---
 title: Configuración y uso de Barniz
-description: Entender cómo Varnish almacena archivos y mejora el tráfico HTTP.
+description: Aprenda a configurar y utilizar el almacenamiento en caché de Varnish para Adobe Commerce. Descubra las técnicas de aceleración HTTP, almacenamiento de archivos y optimización de rendimiento.
 feature: Configuration, Cache
 exl-id: 57614878-e349-43bb-b22b-1aa321907be1
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '1049'
+source-wordcount: '1060'
 ht-degree: 0%
 
 ---

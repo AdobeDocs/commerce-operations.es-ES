@@ -1,10 +1,10 @@
 ---
 title: Archivos de configuración del módulo
-description: Obtenga información sobre cómo personalizar un módulo mediante tipos de configuración.
+description: Obtenga información sobre cómo personalizar módulos mediante tipos de configuración en Adobe Commerce. Descubra las prácticas recomendadas de administración de archivos de configuración y personalización de módulos.
 exl-id: 87433c28-8e3d-43d0-b77e-3ff9a680af5f
-source-git-commit: 80d7a7f2592e547ef70f2fac63c25be0cce9365d
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '1252'
+source-wordcount: '1263'
 ht-degree: 0%
 
 ---

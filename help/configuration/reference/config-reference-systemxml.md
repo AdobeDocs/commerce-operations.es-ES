@@ -1,12 +1,12 @@
 ---
 title: referencia de system.xml
-description: Obtenga información sobre cómo administra el archivo XML del sistema la configuración de la aplicación de Commerce.
+description: Descubra cómo el archivo system.xml administra la configuración de la aplicación de Adobe Commerce. Descubra técnicas de implementación, estructura XML y administración de la configuración del sistema.
 feature: Configuration, System
 badge: label="Colaboró David Lambauer" type="Informative" url="https://github.com/DavidLambauer" tooltip="David Lambauer"
 exl-id: a6c5de6c-e8da-4eca-bbfb-592904b2c53f
-source-git-commit: e231a27d70e29b01c872b0655168e31f590d4876
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '2709'
+source-wordcount: '2717'
 ht-degree: 0%
 
 ---
@@ -248,7 +248,7 @@ Una etiqueta `<field>` puede tener los siguientes valores para el atributo `type
 | `select` | Menú desplegable normal; es posible que necesite un(a) `source_model` personalizado. También se usa para `Yes/No` selecciones. Vea `Magento\Search\Model\Adminhtml\System\Config\Source\Engine` para ver un ejemplo. |
 | `multiselect` | Como `select`, pero varias opciones son válidas. |
 | `button` | Botón que almacena en déclencheur un evento inmediato. Requiere un modelo front-end personalizado para definir el texto del botón y la acción. Vea `Magento\ScheduledImportExport\Block\Adminhtml\System\Config\Clean` para ver un ejemplo. |
-| `obscure` | Campo de texto con el valor cifrado y mostrado como `**&#x200B;**`. Al cambiar el tipo con &quot;Inspeccionar elemento&quot; en el explorador, no se muestra el valor. |
+| `obscure` | Campo de texto con el valor cifrado y mostrado como `****`. Al cambiar el tipo con &quot;Inspeccionar elemento&quot; en el explorador, no se muestra el valor. |
 | `password` | Como `obscure`, excepto que el valor oculto no está cifrado y al cambiar el tipo mediante &quot;Inspeccionar elemento&quot; en el explorador, se muestra el valor. |
 | `file` | Permite cargar un archivo para su procesamiento. |
 | `label` | Muestra una etiqueta en lugar de un campo editable. Utilice este tipo cuando un campo solo se pueda editar en ámbitos específicos; por ejemplo, en el nivel de vista de tienda. |

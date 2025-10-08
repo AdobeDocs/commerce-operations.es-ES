@@ -1,10 +1,10 @@
 ---
 title: Administrar la caché
-description: Administre los tipos de caché y vea el estado de la caché desde la línea de comandos utilizando la CLI de Commerce
+description: Obtenga información sobre cómo administrar los tipos de caché y ver su estado mediante los comandos CLI de Adobe Commerce. Descubra las técnicas de optimización y administración de caché.
 exl-id: bbd76c00-727b-412e-a8e5-1e013a83a29a
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '612'
+source-wordcount: '618'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Puede utilizar el sistema de administración de caché de Adobe Commerce para me
 >[!NOTE]
 >
 >
->Los administradores del sitio de Commerce pueden administrar la caché desde el Administrador mediante la herramienta Cache Management System (Sistema de administración de caché). Consulte [Administración de caché](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/tools/cache-management) en la _Guía de sistemas de administración_.
+>Los administradores del sitio de Commerce pueden administrar la caché desde el Administrador mediante la herramienta Sistema de administración de caché. Consulte [Administración de caché](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management) en la _Guía de sistemas de administración_.
 
 
 ## Ver el estado de la caché
@@ -59,7 +59,7 @@ Current status:
 
 >[!TIP]
 >
->Para obtener una descripción detallada de los tipos de caché predeterminados admitidos por Adobe Commerce, consulte [Cachés](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/tools/cache-management#caches) en la _Guía de sistemas de administración_.
+>Para obtener una descripción detallada de los tipos de caché predeterminados admitidos por Adobe Commerce, consulte [Cachés](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management#caches) en la _Guía de sistemas de administración_.
 
 
 ## Habilitar o deshabilitar tipos de caché

@@ -1,11 +1,11 @@
 ---
 title: Usar Redis para la caché predeterminada
-description: Aprenda a configurar Redis como la memoria caché predeterminada para Adobe Commerce.
+description: Obtenga información sobre cómo configurar Redis como caché predeterminada para Adobe Commerce. Descubra la configuración de la línea de comandos, las opciones de configuración y las técnicas de validación.
 feature: Configuration, Cache
 exl-id: 8c097cfc-85d0-4e96-b56e-284fde40d459
-source-git-commit: 2c489f2655e6fb067de1730355df6cd3683ea562
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '1126'
+source-wordcount: '1135'
 ht-degree: 0%
 
 ---

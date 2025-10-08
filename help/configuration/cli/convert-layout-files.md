@@ -1,10 +1,10 @@
 ---
 title: Convertir archivos de diseño
-description: Convertir archivos de diseño XML.
+description: Obtenga información sobre cómo convertir archivos de diseño XML mediante las herramientas de línea de comandos de Adobe Commerce. Descubra actualizaciones de hojas de estilo XSLT y procesos de conversión de archivos.
 exl-id: 9852b735-9b4b-43ce-887f-5c37d398bbf7
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '82'
+source-wordcount: '98'
 ht-degree: 0%
 
 ---

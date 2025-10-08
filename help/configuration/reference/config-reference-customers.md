@@ -1,11 +1,11 @@
 ---
 title: Referencia de rutas de configuración de clientes
-description: Consulte una lista de valores de configuración de clientes.
+description: Obtenga información acerca de las rutas y los valores de configuración del cliente en Configuración de administración de Adobe Commerce. Descubra opciones de newsletter, administración de cuentas y servicio al cliente.
 feature: Configuration, Customers
 exl-id: a0571423-6fbd-4cfc-9797-a13c0c24bb53
-source-git-commit: 16e9396f19693436dfc7bdac78d84624a78f0c21
+source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '883'
+source-wordcount: '896'
 ht-degree: 0%
 
 ---
