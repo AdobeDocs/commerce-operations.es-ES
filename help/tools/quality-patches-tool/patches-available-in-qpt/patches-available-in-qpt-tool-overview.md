@@ -44,7 +44,7 @@ La herramienta está diseñada para permitirle autoabastecerse con parches para 
 ## Parches disponibles en [!DNL Quality Patches Tool]
 
 En esta sección de la Base de conocimiento de soporte de Adobe Commerce, encontrará descripciones detalladas de los problemas, resueltos por parches QPT, agrupados por versión de QPT.
-También puede ver una lista de los parches QPT disponibles y filtrar el por componente, utilizando la tabla generada dinámicamente en la página [[!DNL Quality Patches Tool]: Buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) de nuestra base de conocimiento de soporte.
+También puede ver una lista de los parches QPT disponibles y filtrar el por componente, utilizando la tabla generada dinámicamente en la página [[!DNL Quality Patches Tool]: Buscar parches &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) de nuestra base de conocimiento de soporte.
 
 ## Cómo instalar y utilizar [!DNL Quality Patches Tool]
 

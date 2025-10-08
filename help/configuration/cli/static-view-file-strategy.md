@@ -66,7 +66,7 @@ El método de implementación utilizado en la estrategia compacta significa que 
 - `map.php`
 - `requirejs-map.js`
 
-`map.php`[`Magento\Framework\View\Asset\Repository` utiliza el archivo ](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/View/Asset/Repository.php) para generar las direcciones URL correctas.
+`map.php`[`Magento\Framework\View\Asset\Repository` utiliza el archivo &#x200B;](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/View/Asset/Repository.php) para generar las direcciones URL correctas.
 
 El complemento `requirejs-map.js` utiliza `baseUrlResolver` para RequireJS.
 

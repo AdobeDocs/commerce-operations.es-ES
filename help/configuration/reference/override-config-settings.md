@@ -30,7 +30,7 @@ Puede utilizar variables para cualquiera de las siguientes opciones:
 
    - Variables de entorno
    - El comando [`magento config:set`](../cli/set-configuration-values.md)
-   - El administrador seguido del comando [`magento app:config:dump` ](../cli/export-configuration.md)
+   - El administrador seguido del comando [`magento app:config:dump` &#x200B;](../cli/export-configuration.md)
 
 Las rutas de configuración se encuentran en:
 
