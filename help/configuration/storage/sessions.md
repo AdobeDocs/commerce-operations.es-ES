@@ -41,7 +41,7 @@ Como usuario con privilegios de `root`, abra el archivo `php.ini` y busque el va
 
 ## Administrar tamaño de sesión
 
-Consulte [Administración de sesión](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-session-management) en la _Guía del usuario_.
+Consulte [Administración de sesión](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/security/security-session-management) en la _Guía del usuario_.
 
 ## Configuración de recolección de basura
 
