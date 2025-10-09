@@ -2,9 +2,9 @@
 user-guide-title: Herramientas
 user-guide-description: Obtenga información sobre las distintas herramientas que puede utilizar con Adobe Commerce, sus usos, el proceso de instalación y cómo obtener acceso.
 feature: Configuration
-source-git-commit: 2f835d98037a2be35adcbaae80cade45514c0110
+source-git-commit: b62f35e3365262e4358ed6e2bbd92322220364e8
 workflow-type: tm+mt
-source-wordcount: '8631'
+source-wordcount: '8645'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ ht-degree: 0%
    - [Alertas administradas para Adobe Commerce: alerta de advertencia de CPU](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-cpu-warning-alert.md)
 - Herramienta Parches de calidad {#quality-patches-tool}
    - [[!DNL Quality Patches Tool]: herramienta de autoservicio para parches de calidad](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)
-   - [[!DNL Quality Patches Tool]: buscar parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es){target="_blank"}
+   - [[!DNL Quality Patches Tool]: buscar parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
    - [Uso](quality-patches-tool/usage.md)
    - [Notas de la versión](quality-patches-tool/release-notes.md)
    - Parches disponibles en la herramienta Parches de calidad {#patches-available-in-qpt}
@@ -886,6 +886,7 @@ ht-degree: 0%
          - [ACSD-67089: la API inventory/export-stock-salable-qty devuelve un total_count incorrecto cuando se establece page_size](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67089.md)
          - [ACSD-67643: entradas duplicadas creadas durante actualizaciones programadas en entornos de categoría anidada en alto](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67643.md)
          - [ACSD-67603: generación de mapas de sitios con tiempos de procesamiento largos para productos con inclusión de imágenes habilitada](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67603.md)
+         - [ACSD-67093: La recuperación de pedidos a través de GraphQL mediante el filtro de intervalo de fechas devuelve resultados incorrectos](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67093.md)
          - [ACSD-67652: el estado del producto agrupado se devolvió como agotado en las llamadas de GraphQL con productos secundarios y principales en stock](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67652.md)
          - [ACSD-60624: error al cargar la imagen por contenido vacío en las secciones Imagen, Titular y Deslizador en [!DNL Page Builder]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-60624.md)
          - [ACSD-67904: los pedidos no se pueden realizar si el nombre de la ciudad contiene dígitos (0-9), el signo &amp;, puntos (.) o paréntesis ()](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-71/acsd-67904.md)
@@ -937,6 +938,6 @@ ht-degree: 0%
       - [Datos que requieren una migración manual](data-migration-tool/migrate-data/manual.md)
       - [Pasos de la migración posterior a los datos](data-migration-tool/migrate-data/post-migration.md)
    - Recursos {#resources}
-      - [Solución de problemas](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html?lang=es)
+      - [Solución de problemas](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html)
       - [Registro de cambios](https://github.com/magento/data-migration-tool/blob/2.4/CHANGELOG.md)
-- [Volver a las guías operativas](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=es)
+- [Volver a las guías operativas](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
