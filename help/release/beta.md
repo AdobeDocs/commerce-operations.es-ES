@@ -2,9 +2,9 @@
 title: Versiones de Beta
 description: Obtenga información sobre las versiones beta de Adobe Commerce y cómo participar.
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
-source-git-commit: d467ada97a81d64dff358bc83acd489f69ba0677
+source-git-commit: a15422e4e135eba01931172960dfb0a6b359cde8
 workflow-type: tm+mt
-source-wordcount: '1021'
+source-wordcount: '728'
 ht-degree: 0%
 
 ---
@@ -30,9 +30,9 @@ Consulte las secciones siguientes para obtener una lista de los programas beta a
 
 ### Servicio de parches de automatización de la nube (Private Beta)
 
-El servicio de parches de automatización de la nube [Cloud](../tools/caps-tool/intro.md) automatiza el proceso de aplicar parches de seguridad aislados a los entornos de [Adobe Commerce en la infraestructura de la nube](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/overview).
+El servicio de parches de automatización de la nube [Cloud](../tools/caps-tool/intro.md) automatiza el proceso de aplicar parches de seguridad aislados a los entornos de [Adobe Commerce en la infraestructura de la nube](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview).
 
-En octubre de 2025, la versión beta del servicio de parches de automatización de la nube se agregará al [panel de herramientas de análisis en todo el sitio](https://experienceleague.adobe.com/es/docs/commerce-operations/tools/site-wide-analysis-tool/dashboard). Este servicio es compatible con los administradores de proyectos de Commerce con un flujo de trabajo optimizado de parches que incluye:
+En octubre de 2025, la versión beta del servicio de parches de automatización de la nube se agregará al [panel de herramientas de análisis en todo el sitio](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/dashboard). Este servicio es compatible con los administradores de proyectos de Commerce con un flujo de trabajo optimizado de parches que incluye:
 
 - Instalación automatizada de parches
 - Recuperación de reversión
@@ -47,37 +47,9 @@ La versión beta incluye las siguientes funciones:
 
 >[!NOTE]
 >
->Dado que el servicio de parches de automatización de la nube aplica automáticamente parches de seguridad aislados, debe tener la función [Colaborador o Administrador de proyecto](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/project/user-access) para poder usarlos.
+>Dado que el servicio de parches de automatización de la nube aplica automáticamente parches de seguridad aislados, debe tener la función [Colaborador o Administrador de proyecto](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/user-access) para poder usarlos.
 
 Para participar en esta versión beta, completa y envía el [Servicio de parches de automatización de la nube - Formulario de suscripción de Beta](https://forms.office.com/r/3Wfxj5nPdB).
-
-### Funciones de búsqueda mejoradas para Live Search (Beta público)
-
-Esta versión beta admite tres nuevas funciones en la consulta [`productSearch` &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/):
-
-- **Búsqueda por niveles** - Buscar en otro contexto de búsqueda - Con esta capacidad, puede realizar hasta dos niveles de búsqueda para sus consultas de búsqueda. Por ejemplo:
-
-   - **Búsqueda de nivel 1** - Busque &quot;motor&quot; en &quot;product_attribute_1&quot;.
-   - **Búsqueda de nivel 2** - Busque &quot;número de pieza 123&quot; en &quot;product_attribute_2&quot;. En este ejemplo se busca &quot;número de pieza 123&quot; dentro de los resultados para &quot;motor&quot;.
-
-  La búsqueda por capas está disponible tanto para la indexación de búsqueda `startsWith` como para la indexación de búsqueda `contains`, tal como se describe a continuación:
-
-- **comienza con la indexación de búsqueda** - La búsqueda usa la indexación `startsWith`. Esta nueva capacidad permite:
-
-   - Búsqueda de productos en los que el valor del atributo empieza con una cadena determinada.
-   - Configuración de una búsqueda &quot;termina con&quot; para que los compradores puedan buscar productos en los que el valor del atributo termine con una cadena en particular. Para habilitar una búsqueda &quot;termina con&quot;, el atributo del producto debe ingerirse a la inversa y la llamada de API también debe ser una cadena invertida.
-
-- **contiene indización de búsqueda**: la búsqueda de un atributo mediante contiene indización. Esta nueva capacidad permite:
-
-   - Búsqueda de una consulta dentro de una cadena más grande. Por ejemplo, si un comprador busca el número de producto PE-123 en la cadena HAPE-123.
-
-     >[!NOTE]
-     >
-     >Este tipo de búsqueda es diferente de la [búsqueda de frases](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) existente, que realiza una búsqueda de autocompletar. Por ejemplo, si el valor de atributo del producto es &quot;pantalones de exterior&quot;, una búsqueda de frase devuelve una respuesta para &quot;sin bandeja&quot;, pero no devuelve una respuesta para &quot;u hormigas&quot;. Sin embargo, una búsqueda contiene sí devuelve una respuesta para &quot;o hormigas&quot;.
-
-Estas nuevas condiciones mejoran el mecanismo de filtrado de consultas de búsqueda para restringir los resultados de búsqueda. Estas nuevas condiciones no afectan a la consulta de búsqueda principal. Para participar en la versión beta, envía una solicitud por correo electrónico a [commerce-storefront-services](mailto:commerce-storefront-services@adobe.com).
-
-Para instalar la versión beta de Live Search, consulta la [guía de Live Search](https://experienceleague.adobe.com/es/docs/commerce/live-search/install#install-the-live-search-beta).
 
 ### Integración del sistema IBM Sterling Order Management (Private Beta)
 
@@ -99,7 +71,7 @@ Cada versión alfa y beta de Adobe Commerce Foundation incluye todos los cambios
 - Mejoras de GraphQL
 - Correcciones de errores de calidad generales
 - Contribuciones comunitarias
-- Cambios necesarios para admitir la compatibilidad con [servicios de Adobe Commerce](https://experienceleague.adobe.com/es/docs/commerce/user-guides/home)
+- Cambios necesarios para admitir la compatibilidad con [servicios de Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
 
 #### Convenciones y programación de nombres
 
