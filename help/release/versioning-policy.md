@@ -81,10 +81,10 @@ Los parches individuales contienen correcciones de calidad de bajo impacto para 
 
 Los parches aislados son correcciones de seguridad no acumulativas publicadas independientemente de un parche de seguridad completo para permitir una implementación más rápida. Cada corrección de seguridad aislada soluciona un problema de seguridad específico y se incluye en la última revisión de seguridad o en una revisión de seguridad completa prevista. Los detalles sobre el problema se proporcionan en el boletín de seguridad relacionado, que vincula a un artículo de la Base de conocimiento (KB) que contiene los detalles de la corrección, cómo aplicarla e información adicional.
 
-Consulta el [Centro de seguridad](https://helpx.adobe.com/security/products/magento.html) para ver las últimas actualizaciones de seguridad disponibles para Adobe Commerce.
+Consulta el [Centro de seguridad](https://helpx.adobe.com/es/security/products/magento.html) para ver las últimas actualizaciones de seguridad disponibles para Adobe Commerce.
 
 ## Parche personalizado
 
-Creado por personal que no es de Adobe para solucionar un problema o modificar el código de Adobe Commerce por varios motivos. Los parches personalizados se entregan a través de la [Herramienta de parches de calidad](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage).
+Creado por personal que no es de Adobe para solucionar un problema o modificar el código de Adobe Commerce por varios motivos. Los parches personalizados se entregan a través de la [Herramienta de parches de calidad](https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/usage).
 
 <!-- Last updated from includes: 2025-10-09 22:53:22 -->
