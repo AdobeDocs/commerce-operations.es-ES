@@ -1,78 +1,37 @@
 ---
-title: Programación de versiones
-description: Descubra cuándo planea Adobe anunciar nuevas funciones y versiones para Adobe Commerce. Descubra las próximas programaciones de parches y los plazos de entrega de funciones para una mejor planificación.
+title: Programación de lanzamiento del parche
+description: Descubra cuándo planea Adobe anunciar el lanzamiento de nuevos parches y correcciones de seguridad para Adobe Commerce.
 exl-id: ae1e09cd-966f-44a3-9e4d-b90bb838429d
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 5f9f0e1dab7f5e4580f077693039ea387df23880
 workflow-type: tm+mt
-source-wordcount: '493'
+source-wordcount: '297'
 ht-degree: 0%
 
 ---
 
 
-# Programación de versiones
+# Programación de lanzamiento del parche
 
-Adobe se esfuerza continuamente por encontrar el equilibrio adecuado entre hacer que las actualizaciones de productos sean sencillas y predecibles, al tiempo que ofrece mejoras y nuevas características a los usuarios que las adoptaron por primera vez más rápido (consulte [directiva de versiones](versioning-policy.md)). El propósito de esta programación es proporcionar fechas para cuando Adobe planea anunciar el lanzamiento de nuevas funciones sustanciales.
+Adobe se esfuerza continuamente por encontrar el equilibrio adecuado entre hacer que las actualizaciones de los productos sean sencillas y predecibles, y al mismo tiempo ofrecer mejoras más rápidas a los usuarios que las adoptaron por primera vez (consulte [directiva de versiones](versioning-policy.md)).
 
-## Funciones, infraestructura en la nube y extensibilidad
-
-Las nuevas funciones, las actualizaciones de funciones, la infraestructura en la nube y las actualizaciones de extensibilidad se entregan de forma independiente de las versiones de parches y están disponibles a través de módulos externos, extensiones, herramientas o servicios web. Algunos ejemplos son:
-
-- ![Icono de características](../assets/icons/feature.svg) [**Características y funcionalidad**](https://experienceleague.adobe.com/es/docs/commerce/user-guides/release-information/release-notes-all): nuevas características y funcionalidad entregadas independientemente de las versiones de parches. Por ejemplo, [B2B](https://experienceleague.adobe.com/es/docs/commerce-admin/b2b/release-notes), Servicio de catálogo, Conexión de datos, Live Search y Recomendaciones de productos.
-
-- ![Icono de infraestructura](../assets/icons/servers.svg) [**Infraestructura en la nube**](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/release-notes/cloud-tools-suite): nuevas características y mejoras en Adobe Commerce en la infraestructura en la nube y en el conjunto de herramientas en la nube para paquetes de Commerce, que implementan y administran instalaciones y actualizaciones de Adobe Commerce en la plataforma en la nube.
-
-- ![Icono de extensibilidad](../assets/icons/brackets.svg) [**Extensibilidad**](https://developer.adobe.com/commerce/extensibility/): nuevas herramientas y servicios para desarrolladores para la extensibilidad fuera de proceso que se entregan independientemente de las versiones de parches. Por ejemplo, Integration Starter Kit, Admin UI, SDK, Adobe I/O Events para Commerce y API Mesh.
-
-La siguiente lista proporciona las fechas para las versiones programadas de la función, la infraestructura en la nube y la extensibilidad (las fechas están sujetas a cambios):
-
-- 11 de febrero de 2025
-- 8 de abril de 2025
-- 10 de junio de 2025
-- 12 de agosto de 2025
-- 14 de octubre de 2025
+El propósito de esta programación es proporcionar fechas para cuándo Adobe planea anunciar el lanzamiento de [parches](versioning-policy.md#patch-release) para cada línea de lanzamiento compatible de la aplicación principal de Adobe Commerce PHP. Las versiones de parches son oportunidades para actualizar la base de código principal a fin de mantener la seguridad, la fiabilidad y el rendimiento de su plataforma.
 
 >[!NOTE]
 >
->Las versiones de funcionalidades, infraestructura en la nube y extensibilidad pueden variar a lo largo del año. Sin embargo, Adobe publica mejoras de forma regular y continua para estas áreas entre las fechas especificadas en esta página. Ver [¿Qué es Adobe Commerce?](https://business.adobe.com/products/magento/magento-commerce.html) para obtener más información sobre las últimas funciones.
-
-## Parches
-
-Adobe también lanza [parches](versioning-policy.md#patch-release) para cada línea de versión compatible de la aplicación principal de Adobe Commerce PHP. Las versiones de parches son oportunidades para actualizar la base de código principal a fin de mantener la seguridad, la fiabilidad y el rendimiento de su plataforma.
+>Para obtener más información sobre las nuevas características, la infraestructura en la nube y las versiones de extensibilidad, consulte la [documentación de la versión de Adobe Commerce Services](https://experienceleague.adobe.com/en/docs/commerce/user-guides/release-information/release-notes-all).
 
 Además de los parches de calidad, seguridad y beta programados que se enumeran en esta página, Adobe proporciona acceso a [parches individuales](versioning-policy.md#individual-patch) mediante la [Herramienta de parches de calidad](../tools/quality-patches-tool/usage.md). La herramienta le permite aplicar, revertir y ver información general sobre todos los parches individuales que están disponibles para la versión instalada de Adobe Commerce.
 
-En la siguiente tabla se proporcionan las fechas para los lanzamientos de parches programados (las fechas están sujetas a cambios):
+A partir de enero de 2026, Adobe Commerce pasará a una programación mensual de versiones de parches con la siguiente estrategia:
 
-<table>
-<thead>
-  <tr>
-    <th>Disponibilidad general</th>
-    <th>Parches</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-  <tr>
-    <td>11 de febrero de 2025</td>
-    <td><img alt="Icono de revisión" src="../assets/icons/file-code.svg"></img> <a href="versioning-policy.md#beta-patch-release">parche de Beta</a>: 2.4.8-beta2<br><img alt="Icono de revisión" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">Parches de seguridad</a>: para 2.4.7, 2.4.6, 2.4.5 y 2.4.4</td>
-  </tr>
-  <tr>
-    <tr>
-    <td>8 de abril de 2025</td>
-    <td><img alt="Icono de revisión" src="../assets/icons/file-code.svg"></img> <a href="release-notes/commerce/overview.md"><strong>Adobe Commerce 2.4.8</a></strong>:<ul><li>Mejoras de rendimiento</li><li>Mejoras de calidad</li><li>Mejoras de seguridad</li><li>Actualizaciones de dependencias de terceros</li></ul><img alt="Icono de revisión" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">Parches de seguridad</a>: para 2.4.7, 2.4.6, 2.4.5 y 2.4.4</td>
-  </tr>
-  <tr>
-    <td>10 de junio de 2025</td>
-    <td><img alt="Icono de revisión" src="../assets/icons/file-code.svg"></img> <a href="versioning-policy.md#alpha-patch-release">parche de Alpha</a>: 2.4.9-alpha1<br><img alt="Icono de revisión" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">parches de seguridad</a>: para 2.4.8, 2.4.7, 2.4.6 y 2.4.5</td>
-  </tr>
-  <tr>
-    <td>12 de agosto de 2025</td>
-    <td><img alt="Icono de revisión" src="../assets/icons/file-code.svg"></img> <a href="versioning-policy.md#alpha-patch-release">parche de Alpha</a>: 2.4.9-alpha2<br><img alt="Icono de revisión" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">parches de seguridad</a>: para 2.4.8, 2.4.7, 2.4.6 y 2.4.5</td>
-  </tr>
-  <tr>
-    <td>14 de octubre de 2025</td>
-    <td><img alt="Icono de revisión" src="../assets/icons/file-code.svg"></img> <a href="versioning-policy.md#alpha-patch-release">parche de Alpha</a>: 2.4.9-alpha3<br><img alt="Icono de revisión" src="../assets/icons/file-code.svg"></img> <a href="release-notes/security/overview.md">Parches de seguridad</a>: para 2.4.8, 2.4.7 y 2.4.6</td>
-  </tr>
-</tbody>
-</table>
+- **Correcciones de seguridad aisladas**: [correcciones de seguridad](versioning-policy.md#isolated-patch) individuales y no acumulativas se pueden publicar mensualmente e incluir correcciones de seguridad para todas las [líneas de versión admitidas](lifecycle-policy.md) (incluye soporte regular y extendido).
+
+- **Parches de seguridad**: como mínimo, [los parches de seguridad](versioning-policy.md#security-patch-release) se lanzan anualmente (mayo) para todas las [líneas de versión admitidas](lifecycle-policy.md). Estos parches incluyen todas las correcciones de seguridad aisladas publicadas anteriormente. Adobe puede lanzar parches de seguridad adicionales en noviembre si es necesario, pero no está garantizado.
+
+- **Parche**: anualmente (mayo) se lanza un [parche](versioning-policy.md#patch-release) completo para la línea de versión LTS de Adobe Commerce 2.4.x (período de compatibilidad de 3 años).
+
+- **Parches de Beta**: dos veces al año (marzo y noviembre) se lanzan dos [parches beta](versioning-policy.md#beta-patch-release) para la línea de versión Adobe Commerce 2.4.x LTS.
+
+Consulte la siguiente imagen para obtener más información:
+
+![Calendario de la versión de Adobe Commerce de 2026](../assets/release/release-calendar.drawio.svg)

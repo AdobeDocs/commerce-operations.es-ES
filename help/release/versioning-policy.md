@@ -2,9 +2,9 @@
 title: Directiva de versión
 description: Obtenga información acerca de los distintos tipos de versiones de Adobe Commerce.
 exl-id: 61a83de6-6a7b-4a88-8fff-1638b4fe472a
-source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
+source-git-commit: fd2ebc358850e47975ce6a3b8df058774440bcf2
 workflow-type: tm+mt
-source-wordcount: '810'
+source-wordcount: '746'
 ht-degree: 0%
 
 ---
@@ -61,15 +61,6 @@ Versiones de disponibilidad generales previas de las funciones de Adobe Commerce
 
 Las versiones de Beta pueden contener defectos y se proporcionan &quot;TAL CUAL&quot; sin garantía de ningún tipo. Adobe no tiene obligación de mantener, corregir, actualizar, cambiar, modificar o dar otro tipo de soporte (a través de los servicios de soporte de Adobe o de otro modo) a las versiones de Beta. Los clientes no deben confiar en el funcionamiento o el rendimiento correctos de las versiones de Beta ni de la documentación o los materiales adjuntos. Por lo tanto, cualquier uso de las Versiones de Beta es bajo el propio riesgo del cliente.
 
-## Funciones, infraestructura en la nube y versión de extensibilidad
-
-La infraestructura de la nube y las versiones de funciones contienen nuevas funciones y actualizaciones de funciones que se entregan como servicios independientes, independientes de las versiones de parches. Algunos ejemplos son, entre otros:
-
-- Actualizaciones de servicios e infraestructura de alojamiento en la nube
-- B2B
-- Productos SaaS (servicio de catálogo, conexión de datos, recomendaciones de productos y Live Search)
-- Tecnología de extensibilidad (IU de administración de SDK, API Mesh, Starter Kits de App Builder, Eventos y Webhooks)
-
 ## Revisión
 
 Las revisiones son parches que contienen correcciones de alta calidad o seguridad de impacto, como correcciones a vulnerabilidades de día cero, que afectan a muchos comerciantes. Adobe publica revisiones (según sea necesario) para las versiones de Adobe Commerce admitidas cuando surjan problemas críticos de seguridad o calidad. Las revisiones se han publicado en la [sección Problemas conocidos](https://support.magento.com/hc/en-us/sections/360003869892-Known-issues-patches-attached-) de la Base de conocimiento. Estas correcciones se incluyen en la próxima versión planificada del parche.
@@ -86,14 +77,14 @@ Los parches individuales contienen correcciones de calidad de bajo impacto para 
 >
 >Los parches individuales no contienen cambios incompatibles con versiones anteriores.
 
-## Parche aislado
+## Correcciones de seguridad aisladas
 
-Los parches aislados son correcciones de seguridad publicadas de forma independiente de un parche de seguridad completo para permitir una implementación más rápida. Cada parche aislado aborda un problema de seguridad específico y se incluye en el último o en un próximo parche de seguridad completo. Los detalles sobre el problema se proporcionan en el boletín de seguridad relacionado, que vincula a un artículo de la Base de conocimiento (KB) que contiene los detalles de la corrección, cómo aplicar el parche e información adicional.
+Los parches aislados son correcciones de seguridad no acumulativas publicadas independientemente de un parche de seguridad completo para permitir una implementación más rápida. Cada corrección de seguridad aislada soluciona un problema de seguridad específico y se incluye en la última revisión de seguridad o en una revisión de seguridad completa prevista. Los detalles sobre el problema se proporcionan en el boletín de seguridad relacionado, que vincula a un artículo de la Base de conocimiento (KB) que contiene los detalles de la corrección, cómo aplicarla e información adicional.
 
-Consulta el [Centro de seguridad](https://helpx.adobe.com/es/security/products/magento.html) para ver las últimas actualizaciones de seguridad disponibles para Adobe Commerce.
+Consulta el [Centro de seguridad](https://helpx.adobe.com/security/products/magento.html) para ver las últimas actualizaciones de seguridad disponibles para Adobe Commerce.
 
 ## Parche personalizado
 
-Creado por personal que no es de Adobe para solucionar un problema o modificar el código de Adobe Commerce por varios motivos. Los parches personalizados se entregan a través de la [Herramienta de parches de calidad](https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/usage).
+Creado por personal que no es de Adobe para solucionar un problema o modificar el código de Adobe Commerce por varios motivos. Los parches personalizados se entregan a través de la [Herramienta de parches de calidad](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage).
 
 <!-- Last updated from includes: 2025-05-28 16:37:31 -->

@@ -2,9 +2,9 @@
 title: referencia env.php
 description: Obtenga información acerca de los valores y secciones de configuración del archivo env.php en Adobe Commerce. Descubra los ajustes y las opciones de configuración del entorno.
 exl-id: cf02da8f-e0de-4f0e-bab6-67ae02e9166f
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: cb89f0c0a576cf6cd8b53a4ade12c21106e2cdf3
 workflow-type: tm+mt
-source-wordcount: '1016'
+source-wordcount: '1033'
 ht-degree: 0%
 
 ---
@@ -146,7 +146,7 @@ Commerce utiliza una clave de cifrado para proteger contraseñas y otros datos c
 ]
 ```
 
-Obtenga más información acerca de la [clave de cifrado](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/security/encryption-key) en la _guía del usuario de Commerce_.
+Obtenga más información acerca de la [clave de cifrado](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/encryption-key) en la _guía del usuario de Commerce_.
 
 ## db
 
@@ -172,11 +172,19 @@ Todas las configuraciones de base de datos están disponibles en este nodo.
 
 ## default_connection
 
-Define la conexión predeterminada para colas de mensajes. El valor puede ser `db`, `amqp` o un sistema de colas personalizado como `redismq`. Si especifica cualquier valor distinto de `db`, primero debe instalar y configurar el software de cola de mensajes. De lo contrario, los mensajes no se procesarán correctamente.
+Define la conexión predeterminada para colas de mensajes. El valor puede ser `db`, `amqp`, `stomp` o un sistema de colas personalizado como `redismq`. Si especifica cualquier valor distinto de `db`, primero debe instalar y configurar el software de cola de mensajes. De lo contrario, los mensajes no se procesarán correctamente.
 
 ```conf
 'queue' => [
     'default_connection' => 'amqp'
+]
+```
+
+Para STOMP (ActiveMQ Artemis):
+
+```conf
+'queue' => [
+    'default_connection' => 'stomp'
 ]
 ```
 
@@ -203,7 +211,7 @@ Una lista de dominios descargables disponibles en este nodo. Se pueden agregar, 
 ]
 ```
 
-Más información sobre [Dominios descargables](https://experienceleague.adobe.com/es/docs/commerce-operations/tools/cli-reference/commerce-on-premises#downloadabledomainsadd).
+Más información sobre [Dominios descargables](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#downloadabledomainsadd).
 
 ## instalar
 
@@ -233,13 +241,13 @@ Más información sobre [Modos de aplicación](../cli/set-mode.md).
 
 ## cola
 
-Las configuraciones de cola de mensajes están disponibles en este nodo.
+Las configuraciones de cola de mensajes están disponibles en este nodo. Puede configurar RabbitMQ (AMQP) o ActiveMQ Artemis (STOMP) como su agente de mensajes.
 
 ```conf
 'queue' => [
   'topics' => [
-    'customer.created' => [publisher="default-rabitmq"],
-    'order.created' => [publisher="default-rabitmq"],
+    'customer.created' => [publisher="default-broker"],
+    'order.created' => [publisher="default-broker"],
   ]
 ]
 ```
