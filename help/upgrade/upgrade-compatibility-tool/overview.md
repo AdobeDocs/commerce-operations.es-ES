@@ -23,7 +23,7 @@ Esta guía está dirigida a administradores e ingenieros de software de Adobe Co
 
 Puede usar el(la) [!DNL Upgrade Compatibility Tool] mediante:
 
-- Como herramienta independiente [interfaz de línea de comandos](../upgrade-compatibility-tool/run.md). Para obtener la lista completa de comandos disponibles, vea la referencia [`bin/uct` ](../../tools/reference/uct.md).
+- Como herramienta independiente [interfaz de línea de comandos](../upgrade-compatibility-tool/run.md). Para obtener la lista completa de comandos disponibles, vea la referencia [`bin/uct` &#x200B;](../../tools/reference/uct.md).
 - Integrando [!DNL Upgrade Compatibility Tool] con [[!DNL Site-Wide Analysis Tool]](../upgrade-compatibility-tool/integrate-analysis-tool.md).
 - Una configuración de ejecución dentro del [complemento Magento PHPStorm](../upgrade-compatibility-tool/run-configuration-phpstorm-plugin.md).
 

@@ -26,4 +26,4 @@ Puede tener cualquier número de sistemas de desarrollo, siempre que lo siguient
 
 - Asegúrese de que `app/etc/config.php` esté _incluido_ en el control de código fuente
 
-Si usa Git, el archivo `.gitignore` proporciona la mayor parte de lo anterior. Ver la referencia [`.gitignore` ](../reference/config-reference-gitignore.md).
+Si usa Git, el archivo `.gitignore` proporciona la mayor parte de lo anterior. Ver la referencia [`.gitignore` &#x200B;](../reference/config-reference-gitignore.md).

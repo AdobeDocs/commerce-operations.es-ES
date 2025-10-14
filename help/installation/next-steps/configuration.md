@@ -28,7 +28,7 @@ Después de la instalación, le recomendamos lo siguiente:
 
 * Asegúrese de que la propiedad y los permisos del archivo estén establecidos [correctamente](../prerequisites/file-system/configure-permissions.md)
 * Recomendamos [cambiar el URI de administrador predeterminado](../tutorials/admin-uri.md) de `admin` a otra cosa
-* Asegúrese de que el encabezado HTTP [`X-Frame-Option` ](../../configuration/security/xframe-options.md) esté configurado correctamente.
+* Asegúrese de que el encabezado HTTP [`X-Frame-Option` &#x200B;](../../configuration/security/xframe-options.md) esté configurado correctamente.
 * Tome precauciones contra los scripts entre sitios (XSS) al [proteger sus plantillas](https://developer.adobe.com/commerce/php/development/security/cross-site-scripting/)
 
 Si ha instalado [clonando el repositorio de GitHub](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/), asegúrese de que al implementar la aplicación solo incluya los archivos y carpetas necesarios para el entorno de producción. Los archivos y carpetas que no son necesarios pueden exponer potencialmente riesgos de seguridad.

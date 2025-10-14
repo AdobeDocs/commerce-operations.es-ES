@@ -28,7 +28,7 @@ Adobe Commerce (todos los métodos de implementación) 2.4.1 - 2.4.3-p1
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de la herramienta Parches de Calidad. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de la herramienta Parches de Calidad. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches &#x200B;](https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
@@ -39,7 +39,7 @@ Los usuarios obtienen un error al recuperar la información del pedido sin el va
 1. Vaya a **Tienda** > **Configuración** > **Clientes** > **Configuración del cliente** > **Opciones de nombre y dirección** > **Mostrar teléfono** y establezca el número de teléfono como opcional.
 1. Realice un pedido con [!DNL GraphQL API] como cliente que inició sesión.
    * No configure el número de teléfono al configurar las direcciones de facturación y envío. Siga las instrucciones que se dan en [[!DNL GraphQL] Tutorial de cierre de compra](https://developer.adobe.com/commerce/webapi/graphql/tutorials/checkout/) en nuestra documentación para desarrolladores.
-1. Recupere el pedido utilizando la consulta [!DNL GraphQL] [`customerOrders` ](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/queries/orders/).
+1. Recupere el pedido utilizando la consulta [!DNL GraphQL] [`customerOrders` &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/queries/orders/).
 
 <pre>
 <code class="language-graphql">

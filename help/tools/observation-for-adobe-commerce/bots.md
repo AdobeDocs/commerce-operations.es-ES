@@ -68,7 +68,7 @@ Si hay un pico de errores en las direcciones IP durante la inestabilidad o la in
 
 ## [!UICONTROL Table - IPs that do not identify as bots]
 
-![Tabla: direcciones IP que no se identifican como bots con errores de estado HTTP durante el período de tiempo seleccionado Cómo bloquear el tráfico de bots en el nivel Fastly O administrar bots a través del archivo robots.txt Prácticas recomendadas para Adobe Commerce robots.txt ](../../assets/tools/observation-for-adobe-commerce/ips-http-errors.png)
+![Tabla: direcciones IP que no se identifican como bots con errores de estado HTTP durante el período de tiempo seleccionado Cómo bloquear el tráfico de bots en el nivel Fastly O administrar bots a través del archivo robots.txt Prácticas recomendadas para Adobe Commerce robots.txt &#x200B;](../../assets/tools/observation-for-adobe-commerce/ips-http-errors.png)
 
 La tabla **[!UICONTROL Table - IPs that do not identify as bots with HTTP status errors during selected time period How to block bot traffic on Fastly level OR manage bots through your robots.txt file Best practices for Adobe Commerce robots.txt]** mostrará las solicitudes de IP con códigos de estado http que no sean 200 y que NO se identifiquen automáticamente como [!DNL bots] en el campo del agente de usuario de solicitud. Estas direcciones IP podrían ser direcciones IP malintencionadas, especialmente si los recuentos son altos para el período de tiempo seleccionado.
 
@@ -82,7 +82,7 @@ Cuando las direcciones IP generan una alta frecuencia de errores, pregunte ¿qu�
 
 ## [!UICONTROL Show 5XX status distribution]
 
-![Mostrar la distribución de estado 5XX en las direcciones IP (las 200 direcciones principales) Cómo bloquear el tráfico de bots en el nivel Fastly O administrar bots a través del archivo robots.txt Prácticas recomendadas para Adobe Commerce robots.txt ](../../assets/tools/observation-for-adobe-commerce/5xx-status.png)
+![Mostrar la distribución de estado 5XX en las direcciones IP (las 200 direcciones principales) Cómo bloquear el tráfico de bots en el nivel Fastly O administrar bots a través del archivo robots.txt Prácticas recomendadas para Adobe Commerce robots.txt &#x200B;](../../assets/tools/observation-for-adobe-commerce/5xx-status.png)
 
 El fotograma **[!UICONTROL Show 5XX status distribution across IP addresses (top 200 addresses) How to block bot traffic on Fastly level OR manage bots through your robots.txt file Best practices for Adobe Commerce robots.txt]** es potente. Muestra las direcciones IP que tienen códigos de estado http 5XX durante el período de tiempo seleccionado. Si una dirección IP realiza un gran volumen de solicitudes y el sitio se ve afectado hasta el punto de no poder administrar el tráfico, las direcciones IP que realizan la mayor frecuencia de solicitudes tendrán generalmente el mayor volumen de errores. Los códigos de estado http 5XX suelen indicar un sitio que tiene problemas para responder a las solicitudes.
 
@@ -138,7 +138,7 @@ El marco **[!UICONTROL Blocked Bot name / IP addresses (in Fastly) during select
 
 ## [!UICONTROL Blocked non-Bot name / IP addresses (in Fastly)]
 
-![Nombre de bot/direcciones IP bloqueados (en Fastly) durante el período de tiempo seleccionado. Este gráfico muestra tráfico que no es de bots y direcciones IP que se devolvieron con el código de estado HTTP prohibido 403 ](../../assets/tools/observation-for-adobe-commerce/blocked-non-bot-name-ip-addresses.png)
+![Nombre de bot/direcciones IP bloqueados (en Fastly) durante el período de tiempo seleccionado. Este gráfico muestra tráfico que no es de bots y direcciones IP que se devolvieron con el código de estado HTTP prohibido 403 &#x200B;](../../assets/tools/observation-for-adobe-commerce/blocked-non-bot-name-ip-addresses.png)
 
 El marco **[!UICONTROL Blocked non-Bot name / IP addresses (in Fastly) during selected time period graph displays non-bot traffic and IPs that were returned a 403 Forbidden HTTP Status code]** muestra las direcciones IP que no se identifican como [!DNL bot] y que han sido bloqueadas a través de [!DNL Fastly].
 

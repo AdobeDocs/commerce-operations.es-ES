@@ -234,7 +234,7 @@ Para comprobar si la actualización se ha realizado correctamente, abra la direc
 
 Si la aplicación falla con un error `We're sorry, an error has occurred while generating this email.`:
 
-1. Restablecer la propiedad y los permisos del sistema de archivos [como usuario con privilegios de ](../../installation/prerequisites/file-system/configure-permissions.md).`root`
+1. Restablecer la propiedad y los permisos del sistema de archivos [como usuario con privilegios de &#x200B;](../../installation/prerequisites/file-system/configure-permissions.md).`root`
 1. Borre los siguientes directorios:
    - `var/cache/`
    - `var/page_cache/`
