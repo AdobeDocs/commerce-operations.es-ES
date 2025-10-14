@@ -53,7 +53,7 @@ Para participar en esta versión beta, completa y envía el [Servicio de parches
 
 ### Funciones de búsqueda mejoradas para Live Search (Beta público)
 
-Esta versión beta admite tres nuevas funciones en la consulta [`productSearch` ](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/):
+Esta versión beta admite tres nuevas funciones en la consulta [`productSearch` &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/):
 
 - **Búsqueda por niveles** - Buscar en otro contexto de búsqueda - Con esta capacidad, puede realizar hasta dos niveles de búsqueda para sus consultas de búsqueda. Por ejemplo:
 
