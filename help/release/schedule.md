@@ -2,7 +2,7 @@
 title: Programación de lanzamiento del parche
 description: Descubra cuándo planea Adobe anunciar el lanzamiento de nuevos parches y correcciones de seguridad para Adobe Commerce.
 exl-id: ae1e09cd-966f-44a3-9e4d-b90bb838429d
-source-git-commit: 5f9f0e1dab7f5e4580f077693039ea387df23880
+source-git-commit: f4601034e3e988b3058946b263ec5e8da41fce16
 workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 0%
@@ -18,7 +18,7 @@ El propósito de esta programación es proporcionar fechas para cuándo Adobe pl
 
 >[!NOTE]
 >
->Para obtener más información sobre las nuevas características, la infraestructura en la nube y las versiones de extensibilidad, consulte la [documentación de la versión de Adobe Commerce Services](https://experienceleague.adobe.com/es/docs/commerce/user-guides/release-information/release-notes-all).
+>Para obtener más información sobre las nuevas características, la infraestructura en la nube y las versiones de extensibilidad, consulte la [documentación de la versión de Adobe Commerce Services](https://experienceleague.adobe.com/en/docs/commerce/user-guides/release-information/release-notes-all).
 
 Además de los parches de calidad, seguridad y beta programados que se enumeran en esta página, Adobe proporciona acceso a [parches individuales](versioning-policy.md#individual-patch) mediante la [Herramienta de parches de calidad](../tools/quality-patches-tool/usage.md). La herramienta le permite aplicar, revertir y ver información general sobre todos los parches individuales que están disponibles para la versión instalada de Adobe Commerce.
 
@@ -34,4 +34,6 @@ A partir de enero de 2026, Adobe Commerce pasará a una programación mensual de
 
 Consulte la siguiente imagen para obtener más información:
 
-![Calendario de la versión de Adobe Commerce de 2026](../assets/release/release-calendar.drawio.svg)
+<!-- The SVG source for the following image is located here: /help/assets/release/release-calendar.drawio.svg -->
+
+![Calendario de la versión de Adobe Commerce de 2026](../assets/release/release-calendar.drawio.png)
