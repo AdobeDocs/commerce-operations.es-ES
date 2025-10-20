@@ -9,7 +9,7 @@ ht-degree: 0%
 
 Esta versión incluye los siguientes aspectos destacados:
 
-* **Actualización de TinyMCE**: el [editor de WYSIWYG](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/wysiwyg/editor) del administrador ahora usa la última versión de la dependencia de TinyMCE (7.3&#x200B;).
+* **Actualización de TinyMCE**: el [editor de WYSIWYG](https://experienceleague.adobe.com/es/docs/commerce-admin/content-design/wysiwyg/editor) del administrador ahora usa la última versión de la dependencia de TinyMCE (7.3&#x200B;).
 
    * TinyMCE 7.3 ofrece una experiencia de usuario mejorada, una mejor colaboración y una mayor eficiencia. TinyMCE 5 se ha eliminado en la línea de versión 2.4.8&#x200B;
 
