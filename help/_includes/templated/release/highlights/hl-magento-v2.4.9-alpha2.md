@@ -1,5 +1,5 @@
 ---
-source-git-commit: bfad68a46b9b1a79a702f04efd39129decda1a1c
+source-git-commit: 3bc225485fa5a4c2b3565014af4ed81dc37fc4ab
 workflow-type: tm+mt
 source-wordcount: '647'
 ht-degree: 0%
@@ -94,16 +94,18 @@ _AC-14610_
 
 Para cumplir con el anuncio de USPS de la retirada de las API de herramientas web heredadas antes del 25 de enero de 2026, la integración de Adobe Commerce USPS se migra a las nuevas API de RESTful USPS.
 Mejoras clave:
-- Compatibilidad con API dual: Los usuarios administradores ahora pueden elegir entre la API heredada de Web Tools y la nueva API de RESTful USPS a través de los ajustes de configuración.
-- Actualización de autenticación: se ha implementado OAuth 2.0 para el acceso seguro a la API.
-- Formato de datos mejorado: Se ha realizado la transición de XML a JSON para una comunicación más limpia y eficaz.
-- Nuevos campos de administración:
-URL de REST de puerta de enlace (según el modo: Desarrollo o Activo)
-ID de cliente y secreto
-Tipo de cuenta, Número de cuenta
-CRID, MID, código de identificación de Mailer
-AES/ITN para envíos internacionales
-Métodos de envío permitidos específicos de REST
+
+* Compatibilidad con API dual: Los usuarios administradores ahora pueden elegir entre la API heredada de Web Tools y la nueva API de RESTful USPS a través de los ajustes de configuración.
+* Actualización de autenticación: se ha implementado OAuth 2.0 para el acceso seguro a la API.
+* Formato de datos mejorado: Se ha realizado la transición de XML a JSON para una comunicación más limpia y eficaz.
+* Nuevos campos de administración:
+   * URL de REST de puerta de enlace (según el modo: Desarrollo o Activo)
+   * ID de cliente y secreto
+   * Tipo de cuenta, Número de cuenta
+   * CRID, MID, código de identificación de Mailer
+   * AES/ITN para envíos internacionales
+   * Métodos de envío permitidos específicos de REST
+
 Esta migración garantiza que Adobe Commerce siga cumpliendo con los estándares de USPS, mejore la fiabilidad del sistema y las integraciones de envíos futuras para los comerciantes.
 
 _AC-13257_
