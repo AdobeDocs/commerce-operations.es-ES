@@ -2,9 +2,9 @@
 title: Realización de una actualización
 description: Siga estos pasos para actualizar las implementaciones locales de Adobe Commerce.
 exl-id: 9183f1d2-a8dd-4232-bdee-7c431e0133df
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 4cf6f81ce43ddcccf20db12b8735f29a151d420d
 workflow-type: tm+mt
-source-wordcount: '730'
+source-wordcount: '769'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Puede actualizar _implementaciones locales_ de la aplicación Adobe Commerce des
 
 >[!NOTE]
 >
->- Para Adobe Commerce sobre proyectos de infraestructura en la nube, consulte [Actualizar la versión de Commerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version.html?lang=es) en la Guía de la nube.
+>- Para Adobe Commerce sobre proyectos de infraestructura en la nube, consulte [Actualizar la versión de Commerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version.html) en la Guía de la nube.
 >- No utilice este método para actualizar si ha clonado el repositorio de GitHub. Consulte [Actualizar una instalación basada en Git](../developer/git-installs.md).
 
 Las siguientes instrucciones muestran cómo realizar la actualización mediante el Administrador de paquetes del Compositor. Adobe Commerce 2.4.2 ha introducido la compatibilidad con Composer 2. Si intenta actualizar desde &lt;2.4.1, primero debe actualizar a una versión compatible con Composer 2 (por ejemplo, 2.4.2) mediante Composer 1 _antes de_ actualizar a Composer 2 para actualizaciones >2.4.2. Además, debe ejecutar una [versión compatible](../../installation/system-requirements.md) de PHP.
@@ -31,6 +31,12 @@ Las siguientes instrucciones muestran cómo realizar la actualización mediante 
 ## Antes de empezar
 
 Debe completar los [requisitos previos de actualización](../prepare/prerequisites.md) para preparar su entorno antes de iniciar el proceso de actualización.
+
+>[!IMPORTANT]
+>
+>La versión 2.4.6-p13 de Adobe Commerce no incluye el paquete `magento/inventory-composer-installer`, que es necesario para una actualización sin problemas de versiones menores anteriores con cambios incompatibles con versiones anteriores.<br>
+>>Si actualiza de 2.3 a 2.4.6-p13, ejecute el siguiente comando para instalar el paquete `magento/inventory-composer-installer` antes de actualizar:
+>>`composer require magento/inventory-composer-installer`
 
 ## Administración de paquetes
 
@@ -234,7 +240,7 @@ Para comprobar si la actualización se ha realizado correctamente, abra la direc
 
 Si la aplicación falla con un error `We're sorry, an error has occurred while generating this email.`:
 
-1. Restablecer la propiedad y los permisos del sistema de archivos [como usuario con privilegios de &#x200B;](../../installation/prerequisites/file-system/configure-permissions.md).`root`
+1. Restablecer la propiedad y los permisos del sistema de archivos [como usuario con privilegios de ](../../installation/prerequisites/file-system/configure-permissions.md).`root`
 1. Borre los siguientes directorios:
    - `var/cache/`
    - `var/page_cache/`
