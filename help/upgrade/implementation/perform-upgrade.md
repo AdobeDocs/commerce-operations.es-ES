@@ -35,8 +35,8 @@ Debe completar los [requisitos previos de actualización](../prepare/prerequisit
 >[!IMPORTANT]
 >
 >La versión 2.4.6-p13 de Adobe Commerce no incluye el paquete `magento/inventory-composer-installer`, que es necesario para una actualización sin problemas de versiones menores anteriores con cambios incompatibles con versiones anteriores.<br>
->>Si actualiza de 2.3 a 2.4.6-p13, ejecute el siguiente comando para instalar el paquete `magento/inventory-composer-installer` antes de actualizar:
->>`composer require magento/inventory-composer-installer`
+>&#x200B;>Si actualiza de 2.3 a 2.4.6-p13, ejecute el siguiente comando para instalar el paquete `magento/inventory-composer-installer` antes de actualizar:
+>&#x200B;>`composer require magento/inventory-composer-installer`
 
 ## Administración de paquetes
 
@@ -240,7 +240,7 @@ Para comprobar si la actualización se ha realizado correctamente, abra la direc
 
 Si la aplicación falla con un error `We're sorry, an error has occurred while generating this email.`:
 
-1. Restablecer la propiedad y los permisos del sistema de archivos [como usuario con privilegios de ](../../installation/prerequisites/file-system/configure-permissions.md).`root`
+1. Restablecer la propiedad y los permisos del sistema de archivos [como usuario con privilegios de &#x200B;](../../installation/prerequisites/file-system/configure-permissions.md).`root`
 1. Borre los siguientes directorios:
    - `var/cache/`
    - `var/page_cache/`

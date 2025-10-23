@@ -101,7 +101,7 @@ Mejoras clave:
 * Formato de datos mejorado: Se ha realizado la transición de XML a JSON para una comunicación más limpia y eficaz.
 * Nuevos campos de administración:
    * URL de REST de puerta de enlace (según el modo: Desarrollo o Activo)
-   * ID de cliente &amp;amp; Secret
+   * ID de cliente &amp; Secret
    * Tipo de cuenta, Número de cuenta
    * CRID, MID, código de identificación de Mailer
    * AES/ITN para envíos internacionales
