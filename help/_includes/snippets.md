@@ -1,7 +1,7 @@
 ---
-source-git-commit: 4cf6f81ce43ddcccf20db12b8735f29a151d420d
+source-git-commit: e625670e741c0669050ab758d4f87c5ca06fe3df
 workflow-type: tm+mt
-source-wordcount: '607'
+source-wordcount: '724'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Después de instalar este parche de seguridad, los comerciantes de Adobe Commerce B2B también deben actualizar a la última versión del parche de seguridad B2B compatible. Ver [notas de la versión B2B](https://experienceleague.adobe.com/es/docs/commerce-admin/b2b/release-notes).
+>Después de instalar este parche de seguridad, los comerciantes de Adobe Commerce B2B también deben actualizar a la última versión del parche de seguridad B2B compatible. Ver [notas de la versión B2B](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes).
 
 ## Solo Adobe Commerce {#ee-only}
 
@@ -85,7 +85,7 @@ Para poder ejecutar indizadores en modo paralelo, debe habilitar la compatibilid
 
 >[!IMPORTANT]
 >
->Adobe no admite la aplicación de parches oficiales proporcionados por Adobe mediante este método. Utilice el siguiente método bajo su propia responsabilidad. Para aplicar parches oficiales, use [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es){target="_blank"}. Realice siempre pruebas exhaustivas antes de implementar cualquier parche personalizado.
+>Adobe no admite la aplicación de parches oficiales proporcionados por Adobe mediante este método. Utilice el siguiente método bajo su propia responsabilidad. Para aplicar parches oficiales, use [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}. Realice siempre pruebas exhaustivas antes de implementar cualquier parche personalizado.
 
 ## Backports de parches de seguridad de octubre de 2025 {#oct-2025-backports}
 
@@ -99,4 +99,21 @@ Para poder ejecutar indizadores en modo paralelo, debe habilitar la compatibilid
 
 * **Se agregó compatibilidad con el protocolo Apache ActiveMQ Artemis STOMP**
 
-  Se ha agregado compatibilidad con el agente de mensajes de código abierto ActiveMQ Artemis a través del Protocolo simple de mensajería orientada a texto (STOMP). Ofrece un sistema de mensajería fiable y escalable, que ofrece flexibilidad para integraciones basadas en STOMP. Consulte [Apache ActiveMQ Artemis](https://experienceleague.adobe.com/es/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework#apache-activemq-artemis-stomp) en la *Guía de configuración de Commerce*.
+  Se ha agregado compatibilidad con el agente de mensajes de código abierto ActiveMQ Artemis a través del Protocolo simple de mensajería orientada a texto (STOMP). Ofrece un sistema de mensajería fiable y escalable, que ofrece flexibilidad para integraciones basadas en STOMP. Consulte [Apache ActiveMQ Artemis](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework#apache-activemq-artemis-stomp) en la *Guía de configuración de Commerce*.
+
+## La página Checkout no puede cargar static.min.js y mixins.min.js {#checkout-page-fails-to-load-static-min-js-and-mixins-min-js}
+
+Después de los cambios recientes de CSP/SRI, la página de cierre de compra no carga static.min.js y mixins.min.js cuando el agrupamiento y la minificación de JavaScript están habilitados en el modo de producción. Como resultado, los mixins de RequireJS no se ejecutan y las plantillas Knockout de desprotección no se pueden resolver (por ejemplo, `"Failed to load the 'Magento_Checkout/shipping' template requested by 'checkout.steps.shipping-step.shippingAddress'"`).
+
+**Solución alternativa**:
+
+* Deshabilite el agrupamiento de JavaScript; o
+* Si mantiene habilitado el agrupamiento de JavaScript, deshabilite la minificación de JavaScript.
+
+>[!IMPORTANT]
+>
+>No desactive el CSP ni elimine las protecciones de la SRI en producción. Cualquier omisión a nivel de complemento solo debe utilizarse como último recurso para una revisión y debe revisarlo el equipo de seguridad.
+
+**Revisión**:
+
+Se publicará lo antes posible una revisión para solucionar este problema. Supervise esta página de notas de la versión para ver las actualizaciones.
