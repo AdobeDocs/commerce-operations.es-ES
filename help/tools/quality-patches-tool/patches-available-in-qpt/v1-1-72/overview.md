@@ -4,9 +4,9 @@ description: Esta subsección proporciona una descripción detallada de los prob
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 4a3060235a4d22764cbb231aca7c1f835d357906
+source-git-commit: 3493a89d40e3dee377be715e71e2f977a3afd382
 workflow-type: tm+mt
-source-wordcount: '286'
+source-wordcount: '280'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ QPT v1.1.72 incluye los siguientes parches:
 1. **[ACSD-67696](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67696.md)**: `media_gallery` entradas no se devuelven en el nodo de producto Cart GraphQL después de vaciar la caché.
 1. **ACSD-67946**: las actualizaciones del carro de compras muestran titulares de error duplicados.
 1. **ACSD-68011**: SKU no existentes asignadas al catálogo compartido mediante la API /V1/sharedCatalog/:id/assignProducts.
-1. **ACSD-68118**: `customerCart` La consulta de GraphQL devuelve valores de atributo de producto que no reflejan el encabezado del almacén, lo que provoca una localización incoherente.
+1. **ACSD-68118**: la consulta `customerCart` [!DNL GraphQL] devuelve valores de atributo de producto incorrectos para la vista de tienda.
 1. **ACSD-68092**: Las opciones de paquete de productos se pierden después de varios guardados debido a una sincronización incorrecta entre las actualizaciones programadas y los datos de productos base.
 1. **ACSD-67424**: el valor `updated_at` en la respuesta de la API `GET /carts/search` [!DNL REST] no coincide con el valor mostrado en **[!UICONTROL Admin panel]** al usar Ofertas negociables.
 1. **ACSD-67187**: Los usuarios administradores restringidos a sitios web no predeterminados ven el error, *&quot;*Cree al menos un catálogo compartido público para continuar* y no puede acceder al botón **[!UICONTROL Add New Company]** en la cuadrícula de la compañía.
