@@ -2,9 +2,9 @@
 title: Notas de la versión de los parches de seguridad de Adobe Commerce 2.4.3
 description: Obtenga información acerca de las correcciones de errores de seguridad, las mejoras de seguridad y otras actualizaciones relacionadas con la seguridad incluidas en las versiones de parches de seguridad para Adobe Commerce 2.4.3.
 exl-id: 72d343cd-83d7-48ce-976a-e26ba1b8db27
-source-git-commit: 46816b42ea30cb6c5f5ce59752cc00c38d221610
+source-git-commit: 2e62c49dd0c338f0913ce5f725f396c2cfa95122
 workflow-type: tm+mt
-source-wordcount: '931'
+source-wordcount: '937'
 ht-degree: 0%
 
 ---
@@ -18,9 +18,9 @@ ht-degree: 0%
 
 La versión de seguridad de Adobe Commerce 2.4.3-p3 proporciona correcciones de seguridad para vulnerabilidades identificadas en versiones anteriores de 2.4.3. Esta versión también incluye mejoras de seguridad que mejoran el cumplimiento de las prácticas recomendadas de seguridad más recientes.
 
-Para obtener la información más reciente sobre la corrección de errores de seguridad, consulte [Boletín de seguridad de Adobe APSB22-38](https://helpx.adobe.com/es/security/products/magento/apsb22-38.html).
+Para obtener la información más reciente sobre la corrección de errores de seguridad, consulte [Boletín de seguridad de Adobe APSB22-38](https://helpx.adobe.com/security/products/magento/apsb22-38.html).
 
-### Aplicar `AC-3022.patch` para seguir ofreciendo DHL como transportista
+### Aplique AC-3022.patch para seguir ofreciendo DHL como transportista
 
 DHL ha introducido la versión de esquema 6.2 y dejará de utilizar la versión de esquema 6.0 en un futuro próximo. Adobe Commerce 2.4.4 y las versiones anteriores compatibles con la integración de DHL solo admiten la versión 6.0. Los comerciantes que implementen estas versiones deben aplicar `AC-3022.patch` lo antes posible para seguir ofreciendo DHL como transportista. Consulte el artículo de la base de conocimiento [Aplicar un parche para seguir ofreciendo DHL como transportista](https://support.magento.com/hc/en-us/articles/7707818131597-Apply-a-patch-to-continue-offering-DHL-as-shipping-carrier) para obtener información sobre cómo descargar e instalar el parche.
 
@@ -35,10 +35,10 @@ DHL ha introducido la versión de esquema 6.2 y dejará de utilizar la versión 
 
 La versión de seguridad de Adobe Commerce 2.4.3-p2 proporciona correcciones de errores de seguridad para vulnerabilidades que se han identificado en versiones anteriores. Esta versión también incluye mejoras de seguridad que mejoran el cumplimiento de las prácticas recomendadas de seguridad más recientes.
 
-Para obtener la información más reciente sobre la corrección de errores de seguridad, consulte [Boletín de seguridad de Adobe APSB22-13](https://helpx.adobe.com/es/security/products/magento/apsb22-13.html).  La versión del parche también resuelve la vulnerabilidad a la que se refieren `MDVA-43395_EE_2.4.3-p1_COMPOSER_v1.patch.zip`, `MDVA-43443_EE_2.4.3-p1_COMPOSER_v1.patch.zip`, `MDVA-43395_EE_2.4.3-p1_COMPOSER_v1.patch` y `MDVA-43443_EE_2.4.3-p1_COMPOSER_v1.patch`.
+Para obtener la información más reciente sobre la corrección de errores de seguridad, consulte [Boletín de seguridad de Adobe APSB22-13](https://helpx.adobe.com/security/products/magento/apsb22-13.html).  La versión del parche también resuelve la vulnerabilidad a la que se refieren `MDVA-43395_EE_2.4.3-p1_COMPOSER_v1.patch.zip`, `MDVA-43443_EE_2.4.3-p1_COMPOSER_v1.patch.zip`, `MDVA-43395_EE_2.4.3-p1_COMPOSER_v1.patch` y `MDVA-43443_EE_2.4.3-p1_COMPOSER_v1.patch`.
 
 
-### Aplicar `AC-3022.patch` para seguir ofreciendo DHL como transportista
+### Aplique AC-3022.patch para seguir ofreciendo DHL como transportista
 
 DHL ha introducido la versión de esquema 6.2 y dejará de utilizar la versión de esquema 6.0 en un futuro próximo. Adobe Commerce 2.4.4 y las versiones anteriores compatibles con la integración de DHL solo admiten la versión 6.0. Los comerciantes que implementen estas versiones deben aplicar `AC-3022.patch` lo antes posible para seguir ofreciendo DHL como transportista. Consulte el artículo de la base de conocimiento [Aplicar un parche para seguir ofreciendo DHL como transportista](https://support.magento.com/hc/en-us/articles/7707818131597-Apply-a-patch-to-continue-offering-DHL-as-shipping-carrier) para obtener información sobre cómo descargar e instalar el parche.
 
@@ -46,7 +46,7 @@ DHL ha introducido la versión de esquema 6.2 y dejará de utilizar la versión 
 
 * El uso de variables de correo electrónico volvió a quedar obsoleto en la versión 2.3.4 como parte de una mitigación del riesgo de seguridad en favor de una sintaxis de variables más estricta. Este comportamiento heredado se ha eliminado por completo en esta versión como continuación de la mitigación de riesgos de seguridad.
 
-  Como resultado, es posible que las plantillas de correo electrónico o de newsletter que funcionaban en versiones anteriores no funcionen correctamente después de actualizar a Adobe Commerce 2.4.3-p2. Las plantillas afectadas incluyen invalidaciones de administración, temáticas, temáticas secundarias y plantillas de módulos personalizados o extensiones de terceros. Su implementación puede verse afectada incluso después de usar la [herramienta de compatibilidad de actualización](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/overview.html?lang=es) para corregir usos obsoletos. Consulte [Migración de plantillas de correo electrónico personalizadas](https://developer.adobe.com/commerce/frontend-core/guide/templates/email-migration/) para obtener información sobre posibles efectos y directrices para migrar plantillas afectadas.
+  Como resultado, es posible que las plantillas de correo electrónico o de newsletter que funcionaban en versiones anteriores no funcionen correctamente después de actualizar a Adobe Commerce 2.4.3-p2. Las plantillas afectadas incluyen invalidaciones de administración, temáticas, temáticas secundarias y plantillas de módulos personalizados o extensiones de terceros. Su implementación puede verse afectada incluso después de usar la [herramienta de compatibilidad de actualización](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/overview.html?lang=en) para corregir usos obsoletos. Consulte [Migración de plantillas de correo electrónico personalizadas](https://developer.adobe.com/commerce/frontend-core/guide/templates/email-migration/) para obtener información sobre posibles efectos y directrices para migrar plantillas afectadas.
 
 * Los tokens de acceso de OAuth y los tokens de restablecimiento de contraseña ahora se cifran cuando se almacenan en la base de datos. <!-- AC-520 1323-->
 
@@ -64,9 +64,9 @@ DHL ha introducido la versión de esquema 6.2 y dejará de utilizar la versión 
 La versión de seguridad de Adobe Commerce 2.4.3-p1 proporciona correcciones de errores de seguridad para vulnerabilidades identificadas en la versión anterior (Adobe Commerce 2.4.3 y Magento Open Source 2.4.3). Esta versión también incluye mejoras de seguridad que mejoran el cumplimiento de las prácticas recomendadas de seguridad más recientes.
 
 
-Para obtener la información más reciente sobre la corrección de errores de seguridad, consulte [Boletín de seguridad de Adobe APSB21-86](https://helpx.adobe.com/es/security/products/magento/apsb21-86.html). La versión del parche también proporciona correcciones de errores para las extensiones desarrolladas por el proveedor de [Braintree](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/braintree.html?lang=es), [Klarna](https://marketplace.magento.com/klarna-m2-klarna.html) y [Vertex](https://marketplace.magento.com/vertexinc-vertex-tax-module.html).
+Para obtener la información más reciente sobre la corrección de errores de seguridad, consulte [Boletín de seguridad de Adobe APSB21-86](https://helpx.adobe.com/security/products/magento/apsb21-86.html). La versión del parche también proporciona correcciones de errores para las extensiones desarrolladas por el proveedor de [Braintree](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/braintree.html), [Klarna](https://marketplace.magento.com/klarna-m2-klarna.html) y [Vertex](https://marketplace.magento.com/vertexinc-vertex-tax-module.html).
 
-### Aplicar `AC-3022.patch` para seguir ofreciendo DHL como transportista
+### Aplique AC-3022.patch para seguir ofreciendo DHL como transportista
 
 DHL ha introducido la versión de esquema 6.2 y dejará de utilizar la versión de esquema 6.0 en un futuro próximo. Adobe Commerce 2.4.4 y las versiones anteriores compatibles con la integración de DHL solo admiten la versión 6.0. Los comerciantes que implementen estas versiones deben aplicar `AC-3022.patch` lo antes posible para seguir ofreciendo DHL como transportista. Consulte el artículo de la base de conocimiento [Aplicar un parche para seguir ofreciendo DHL como transportista](https://support.magento.com/hc/en-us/articles/7707818131597-Apply-a-patch-to-continue-offering-DHL-as-shipping-carrier) para obtener información sobre cómo descargar e instalar el parche.
 
