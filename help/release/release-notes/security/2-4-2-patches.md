@@ -18,7 +18,7 @@ ht-degree: 0%
 
 La versión de seguridad de Adobe Commerce 2.4.2-p2 proporciona correcciones de errores de seguridad para vulnerabilidades identificadas en versiones anteriores de 2.4.2.
 
-Para obtener la información más reciente sobre la corrección de errores de seguridad, consulte [Boletín de seguridad de Adobe APSB21-64](https://helpx.adobe.com/security/products/magento/apsb21-64.html).
+Para obtener la información más reciente sobre la corrección de errores de seguridad, consulte [Boletín de seguridad de Adobe APSB21-64](https://helpx.adobe.com/es/security/products/magento/apsb21-64.html).
 
 ## Aplique AC-3022.patch para seguir ofreciendo DHL como transportista
 
