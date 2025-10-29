@@ -4,9 +4,9 @@ description: Esta subsección proporciona una descripción detallada de los prob
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 87f2d57e60ca74e2c90107a0d38517049802c89e
+source-git-commit: 4e2c22626701e342920c8f60caff56af23712306
 workflow-type: tm+mt
-source-wordcount: '288'
+source-wordcount: '284'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Esta subsección proporciona una descripción detallada de los problemas corregi
 QPT v1.1.72 incluye los siguientes parches:
 1. **ACSD-68040**: la página de búsqueda de front-end ralentiza [!DNL MariaDB] 10.6 con un historial grande.
 1. **ACSD-67941**: Las solicitudes de GraphQL con nombres de filtro desconocidos provocan registros de excepciones de PHP.
-1. **ACSD-68064**: al crear actualizaciones programadas, se generan entradas duplicadas en entornos con un número elevado de categorías anidadas.
+1. **ACSD-68064**: entradas duplicadas creadas durante actualizaciones programadas en entornos con categorías profundamente anidadas.
 1. **ACSD-66807**: la tabla `report_viewed_product_index` muestra un recuento incorrecto de vistas de página de productos.
 1. **ACSD-67383**: el inicio de sesión como cliente con dos cuentas de administrador de empresa en la misma sesión provoca un error de *No existe esa entidad con cartId*.
 1. **ACSD-67518**: los informes avanzados generan filas de encabezado duplicadas cuando el recuento de filas supera el tamaño del lote.
