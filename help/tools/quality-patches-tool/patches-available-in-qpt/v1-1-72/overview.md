@@ -4,9 +4,9 @@ description: Esta subsección proporciona una descripción detallada de los prob
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 3493a89d40e3dee377be715e71e2f977a3afd382
+source-git-commit: 87f2d57e60ca74e2c90107a0d38517049802c89e
 workflow-type: tm+mt
-source-wordcount: '280'
+source-wordcount: '288'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,7 @@ QPT v1.1.72 incluye los siguientes parches:
 1. **ACSD-67383**: el inicio de sesión como cliente con dos cuentas de administrador de empresa en la misma sesión provoca un error de *No existe esa entidad con cartId*.
 1. **ACSD-67518**: los informes avanzados generan filas de encabezado duplicadas cuando el recuento de filas supera el tamaño del lote.
 1. **ACSD-67639**: Error al crear un abono para productos agrupados con **[!UICONTROL Dynamic Price]** establecido en *No*.
+1. **ACSD-67946**: la actualización del carro de compras muestra titulares de error duplicados.
 1. **[ACSD-67696](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67696.md)**: `media_gallery` entradas no se devuelven en el nodo de producto Cart GraphQL después de vaciar la caché.
 1. **ACSD-67946**: las actualizaciones del carro de compras muestran titulares de error duplicados.
 1. **ACSD-68011**: SKU no existentes asignadas al catálogo compartido mediante la API /V1/sharedCatalog/:id/assignProducts.
