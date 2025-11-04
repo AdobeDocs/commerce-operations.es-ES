@@ -2,9 +2,9 @@
 title: Modelo operativo y de seguridad de responsabilidad compartida
 description: Obtenga información sobre las responsabilidades de seguridad de cada parte involucrada en su proyecto de infraestructura de Adobe Commerce en la nube.
 exl-id: f3cc1685-e469-4e30-b18e-55ce10dd69ce
-source-git-commit: fcaf6ff1dce1c1a5084307cd366ca58d71a8f4e4
+source-git-commit: aac78fc95b86951f352a636eef33e0b79b22a183
 workflow-type: tm+mt
-source-wordcount: '2850'
+source-wordcount: '2939'
 ht-degree: 0%
 
 ---
@@ -745,9 +745,9 @@ Los comerciantes son responsables de sincronizar datos entre entornos.
 
 |     | Adobe | Comerciante |
 | --- | --- | --- |
-| Disponibilidad de Elasticsearch | R |   |
-| Configuración de los ajustes predeterminados de Elasticsearch | R |   |
-| Envíe una solicitud de servicio para instalar una versión de Elasticsearch compatible con la versión de Adobe Commerce instalada |  | R |
+| Disponibilidad de Elasticsearch o OpenSearch | R |   |
+| Configuración de los ajustes predeterminados de Elasticsearch o OpenSearch | R |   |
+| Envíe una solicitud de servicio para instalar una versión de Elasticsearch o OpenSearch compatible con la versión de Adobe Commerce instalada |  | R |
 
 {style="table-layout:auto"}
 
@@ -793,11 +793,17 @@ Los comerciantes son responsables de sincronizar datos entre entornos.
 
 {style="table-layout:auto"}
 
+>
+>Los comerciantes deben utilizar la versión más reciente de Live Search, Recomendaciones de productos y Servicios de pago para garantizar la máxima estabilidad, funcionalidad y elegibilidad para la asistencia.
+>Adobe no admite versiones obsoletas y la actualización garantiza que se beneficie de las mejoras y correcciones de errores más recientes.
+>Para obtener más información sobre las versiones compatibles, consulte la [Matriz de disponibilidad del producto para los servicios de Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability#commerce-services).
+
 #### Recomendaciones de productos
 
 |     | Adobe | Comerciante |
 | --- | --- | --- |
 | Disponibilidad del servicio Recomendaciones de productos | R |   |
+| Actualización de módulos de Recomendaciones de producto |   | R |
 
 {style="table-layout:auto"}
 
@@ -806,6 +812,7 @@ Los comerciantes son responsables de sincronizar datos entre entornos.
 |     | Adobe | Comerciante |
 | --- | --- | --- |
 | Disponibilidad del servicio Live Search | R |   |
+| Actualización de módulos de Live Search |   | R |
 
 {style="table-layout:auto"}
 
@@ -820,6 +827,15 @@ Los comerciantes son responsables de sincronizar datos entre entornos.
 | Implementación de Core AEM EDS (Commerce Boilerplate) | R |   |
 | Implementación personalizada de AEM EDS |  | R |
 | Cualquier otra implementación de tienda personalizada |  | R |
+
+{style="table-layout:auto"}
+
+#### Servicios de pago
+
+|     | Adobe | Comerciante |
+| --- | --- | --- |
+| Disponibilidad del servicio de pagos | R |   |
+| Actualización de los módulos Pagos |   | R |
 
 {style="table-layout:auto"}
 
