@@ -614,7 +614,7 @@ Esta página contiene los cambios realizados en los últimos 60 días. Excluimos
       <td>
         Actualización importante
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/pull/161">solicitud de extracción</a></td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.es-ES/pull/161">solicitud de extracción</a></td>
     </tr>
   </tbody>
 </table>
