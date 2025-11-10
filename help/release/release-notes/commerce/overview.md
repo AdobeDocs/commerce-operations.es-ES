@@ -17,4 +17,4 @@ Obtenga información sobre las últimas mejoras de Adobe Commerce, incluidas mej
 
 {{bics}}
 
-Use Composer para actualizar la instalación de Commerce a la última versión y así poder aprovechar las nuevas funciones, mejoras de rendimiento y parches de seguridad. Para obtener instrucciones de actualización detalladas, consulte la [guía de actualización de Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/overview.html).
+Use Composer para actualizar la instalación de Commerce a la última versión y así poder aprovechar las nuevas funciones, mejoras de rendimiento y parches de seguridad. Para obtener instrucciones de actualización detalladas, consulte la [guía de actualización de Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/overview.html?lang=es).
