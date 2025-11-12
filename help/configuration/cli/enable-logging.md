@@ -3,9 +3,9 @@ title: Habilitar registro
 description: Obtenga información sobre cómo habilitar y deshabilitar diferentes tipos de registro en Adobe Commerce. Descubra las técnicas de configuración y administración de registros.
 feature: Configuration, Logs
 exl-id: 78b0416a-5bad-42a9-a918-603600e98928
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: aff705cefcd4de38d17cad41628bc8dbd6d630cb
 workflow-type: tm+mt
-source-wordcount: '268'
+source-wordcount: '352'
 ht-degree: 0%
 
 ---
@@ -54,6 +54,23 @@ De manera predeterminada, Commerce escribe en el registro de depuración (`<inst
 
 De manera predeterminada, Commerce escribe los registros de actividad de la base de datos en el archivo `<install-dir>/var/debug/db.log`.
 
+### Ubicación de almacenamiento del registro de consultas
+
+Cuando el registro de bases de datos está habilitado, Commerce almacena los registros de consultas en la siguiente ubicación:
+
+- **Archivo de registro de consultas**: `<install-directory>/var/debug/db.log`
+- **Directorio de registro**: `<install-directory>/var/debug/`
+
+El registro de consultas contiene:
+- Consultas SQL ejecutadas por la aplicación
+- Tiempos de ejecución de consultas
+- Parámetros de consulta y enlaces
+- Información de conexión a base de datos
+
+>[!NOTE]
+>
+>El archivo de registro de consultas puede crecer rápidamente en entornos de alto tráfico. Supervise el espacio en disco y considere implementar la rotación del registro o la limpieza periódica del archivo de registro de consultas.
+
 ### Para habilitar el registro en base de datos
 
 1. Utilice el comando `dev:query-log` para habilitar o deshabilitar el registro en la base de datos.
@@ -71,6 +88,24 @@ De manera predeterminada, Commerce escribe los registros de actividad de la base
    ```bash
    bin/magento cache:flush
    ```
+
+### Para ver los registros de consultas
+
+Puede ver los registros de consulta utilizando los comandos estándar de visualización de archivos:
+
+```bash
+# View the entire query log
+cat var/debug/db.log
+
+# View the last 100 lines of the query log
+tail -n 100 var/debug/db.log
+
+# Monitor the query log in real-time
+tail -f var/debug/db.log
+
+# Search for specific queries
+grep "SELECT" var/debug/db.log
+```
 
 ## Registro de Cron
 
