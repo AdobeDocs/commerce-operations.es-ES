@@ -1,7 +1,7 @@
 ---
-source-git-commit: e044459f849f35a4a1e161a191bc7497fcef9281
+source-git-commit: 92685411a41cb03f1ac9408b0cef2fe83b4a2a16
 workflow-type: tm+mt
-source-wordcount: '977'
+source-wordcount: '993'
 ht-degree: 1%
 
 ---
@@ -20,6 +20,10 @@ La lista inicial se genera automáticamente usando el comando `bin/uct list` en 
 ## General
 
 Obtenga más información acerca de la herramienta en [Información general](/help/upgrade/upgrade-compatibility-tool/overview.md).
+
+>[!NOTE]
+>
+>El comando `composer update` no funciona para actualizar esta herramienta; debe [descargar e instalar la versión más reciente](/help/upgrade/upgrade-compatibility-tool/run.md).
 
 Esta documentación de referencia se genera a partir del código fuente de la aplicación. Para cambiar la documentación, debe abrir una solicitud de extracción para el comando correspondiente en el repositorio [codebase](https://github.com/magento) correspondiente. Consulte [Contribuciones de código](https://developer.adobe.com/commerce/contributor/guides/code-contributions/) para obtener más información.
 
