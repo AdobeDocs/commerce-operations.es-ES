@@ -3,9 +3,9 @@ title: Crear, editar o desbloquear una cuenta de administrador
 description: Siga estos pasos para administrar la cuenta de administrador de la aplicación de administración de Adobe Commerce.
 feature: Install, User Account
 exl-id: d87871a1-717d-4662-b84d-98a018518286
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: aaed7dba7d11085eb8e2793cefffb8c8b082e750
 workflow-type: tm+mt
-source-wordcount: '319'
+source-wordcount: '320'
 ht-degree: 0%
 
 ---
@@ -39,12 +39,12 @@ bin/magento admin:user:create [--<parameter_name>=<value>, ...]
 Donde la siguiente tabla define parámetros y valores:
 
 | Nombre | Valor | ¿Requerido? |
-|--- |--- |--- |
+|--- |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--- |
 | `--admin-firstname` | Nombre del usuario administrador. | Sí |
 | `--admin-lastname` | Apellido del usuario administrador. | Sí |
 | `--admin-email` | Dirección de correo electrónico del usuario administrador. | Sí |
 | `--admin-user` | Nombre de usuario del administrador. | Sí |
-| `--admin-password` | Contraseña de usuario del administrador. La contraseña debe tener al menos 7 caracteres de longitud e incluir al menos un carácter alfabético y al menos un carácter numérico. <br><br>Recomendamos una contraseña más larga y compleja. Si la cadena de contraseña contiene caracteres especiales que requieren interpretación literal (como barras invertidas o espacios), escriba la contraseña entre comillas simples. | Sí |
+| `--admin-password` | Contraseña de usuario del administrador. La contraseña debe tener al menos 12 caracteres de longitud e incluir al menos un carácter alfabético y al menos un carácter numérico. <br><br>Adobe recomienda especificar una contraseña más larga y compleja. Si la cadena de contraseña contiene caracteres especiales que requieren interpretación literal (como barras invertidas o espacios), escriba la contraseña entre comillas simples. | Sí |
 | `--magento-init-params` | Agregue a cualquier comando para personalizar los parámetros de inicialización de la aplicación<br/><br/>Por ejemplo: `MAGE_MODE=developer&MAGE_DIRS[base][path]=/var/www/example.com&MAGE_DIRS[cache][path]=/var/tmp/cache` | No |
 
 Ejemplo de uso:
