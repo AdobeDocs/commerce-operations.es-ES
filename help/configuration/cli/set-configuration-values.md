@@ -142,7 +142,7 @@ En la tabla siguiente se describen los parámetros de comando `set`:
 >
 >A partir de Commerce 2.2.4, las opciones `--lock-env` y `--lock-config` reemplazan la opción `--lock`.
 >
->Si usa la opción `--lock-env` o `--lock-config` para establecer o cambiar un valor, debe usar el comando [`bin/magento app:config:import` ](../cli/import-configuration.md) para importar la configuración antes de tener acceso al administrador o a la tienda.
+>Si usa la opción `--lock-env` o `--lock-config` para establecer o cambiar un valor, debe usar el comando [`bin/magento app:config:import` &#x200B;](../cli/import-configuration.md) para importar la configuración antes de tener acceso al administrador o a la tienda.
 
 Si escribe una ruta de configuración incorrecta, este comando devuelve un error
 
@@ -221,7 +221,7 @@ donde
 
 >[!INFO]
 >
->El comando `bin/magento config:show` muestra los valores de cualquier [valor cifrado](../reference/config-reference-sens.md) como una serie de asteriscos: `******`.
+>El comando `bin/magento config:show` muestra los valores de cualquier [valor cifrado](../reference/config-reference-sens.md) como una serie de asteriscos: `**&#x200B;**&#x200B;**`.
 
 ### Ejemplos
 
