@@ -2,9 +2,9 @@
 title: Establecer valores de configuración
 description: Obtenga información sobre cómo establecer valores de configuración y cambiar valores de administración bloqueados en Adobe Commerce. Descubra los comandos y las técnicas de configuración avanzada.
 exl-id: 1dc2412d-50b3-41fb-ab22-3eccbb086302
-source-git-commit: 2672c696d672ad72bef7537570ed630bc33c41b4
+source-git-commit: 5e2d11330d3334df36ba8b3d176fbe2d8bfe0486
 workflow-type: tm+mt
-source-wordcount: '1101'
+source-wordcount: '1116'
 ht-degree: 0%
 
 ---
@@ -140,9 +140,7 @@ En la tabla siguiente se describen los parámetros de comando `set`:
 
 >[!INFO]
 >
->A partir de Commerce 2.2.4, las opciones `--lock-env` y `--lock-config` reemplazan la opción `--lock`.
->
->Si usa la opción `--lock-env` o `--lock-config` para establecer o cambiar un valor, debe usar el comando [`bin/magento app:config:import` &#x200B;](../cli/import-configuration.md) para importar la configuración antes de tener acceso al administrador o a la tienda.
+>A partir de Commerce 2.2.4, las opciones `--lock-env` y `--lock-config` reemplazan la opción `--lock`. Si usa cualquiera de estas opciones, el valor se escribe directamente en el archivo `app/etc/env.php` o `app/etc/config.php` y pasa a ser de solo lectura en el Administrador. Para importar los cambios de configuración de estos archivos en la base de datos, ejecute el comando `bin/magento app:config:import`, por ejemplo, después de editar o volver a implementar manualmente los archivos.
 
 Si escribe una ruta de configuración incorrecta, este comando devuelve un error
 
@@ -191,7 +189,7 @@ Puede usar la opción `--lock-env` para establecer los valores de configuración
 
 >[!INFO]
 >
->El archivo `env.php` es específico del sistema. No debe transferirlo a otro sistema. Puede utilizarlo para sobrescribir los valores de configuración de la base de datos. Por ejemplo, puede tomar un volcado de la base de datos de otro sistema y sobrescribir `base_url` y otros valores para no tener que modificar la base de datos.
+>El archivo `env.php` es específico del sistema. No lo transfiera a otro sistema. Puede utilizarlo para sobrescribir los valores de configuración de la base de datos. Por ejemplo, puede tomar un volcado de la base de datos de otro sistema y sobrescribir `base_url` y otros valores para no tener que modificar la base de datos.
 
 Si usa la opción `--lock-config` de la siguiente manera, el valor de configuración se guarda en `<Commerce base dir>/app/etc/config.php`. El campo para editar este valor en Admin está desactivado.
 
@@ -221,7 +219,7 @@ donde
 
 >[!INFO]
 >
->El comando `bin/magento config:show` muestra los valores de cualquier [valor cifrado](../reference/config-reference-sens.md) como una serie de asteriscos: `**&#x200B;**&#x200B;**`.
+>El comando `bin/magento config:show` muestra los valores de cualquier [valor cifrado](../reference/config-reference-sens.md) como una serie de asteriscos: `******`.
 
 ### Ejemplos
 
