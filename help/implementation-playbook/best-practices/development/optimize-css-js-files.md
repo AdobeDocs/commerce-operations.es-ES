@@ -4,9 +4,9 @@ description: Aprenda a combinar y minificar archivos CSS y JavaScript (JS) para 
 role: Developer
 feature: Best Practices
 exl-id: ff0bc407-b563-418b-9d6a-7c1dc8f235df
-source-git-commit: 79c8a15fb9686dd26d73805e9d0fd18bb987770d
+source-git-commit: 19f874130645fcabe3178a37ec6dedcf75b93afa
 workflow-type: tm+mt
-source-wordcount: '395'
+source-wordcount: '430'
 ht-degree: 0%
 
 ---
@@ -89,9 +89,19 @@ También puede habilitar el paquete integrado de Adobe Commerce (paquete básico
 php -f bin/magento config:set dev/js/enable_js_bundling 1
 ```
 
+## Diferir scripts de encabezado no críticos
+
+Diferir automáticamente los JavaScript no críticos cargados en la sección del encabezado habilitando esta opción: [!UICONTROL **Almacenes** > **Configuración** > **Configuración** > **Avanzado** > **Desarrollador** > **Configuración de JavaScript**].
+
+También puede habilitar este indicador desde la línea de comandos:
+
+```bash
+php -f bin/magento config:set dev/js/defer_non_critical 1
+```
+
 ## Más información
 
 - [Configuración de optimización del lado del cliente](../../../performance/configuration.md#client-side-optimization-settings)
-- [Guía del usuario: optimizando archivos de recursos](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/tools/developer-tools#optimizing-resource-files)
+- [Guía del usuario: optimizando archivos de recursos](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/developer-tools#optimizing-resource-files)
 - [Guía para desarrolladores de Frontend: combinación, minificación y rendimiento del sitio de CSS](https://developer.adobe.com/commerce/frontend-core/guide/css/#css-merging-minification-and-performance)
 - [Paquete de JavaScript avanzado](../../../performance/advanced-js-bundling.md)
