@@ -20,7 +20,7 @@ Puede instalar el software local de Adobe Commerce en aproximadamente 30 a 60 mi
 >
 >Debe tener conocimientos técnicos intermedios y acceso al servidor para continuar correctamente.
 
-La instalación crea una tienda Adobe Commerce completamente funcional con [tienda orientada al cliente](https://experienceleague.adobe.com/es/docs/commerce-admin/start/storefront/storefront) y [panel administrativo](https://experienceleague.adobe.com/es/docs/commerce-admin/start/admin/admin). Debe tener listas las credenciales de la base de datos, la información de dominio y las claves de autenticación antes de comenzar el proceso.
+La instalación crea una tienda Adobe Commerce completamente funcional con [tienda orientada al cliente](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront) y [panel administrativo](https://experienceleague.adobe.com/en/docs/commerce-admin/start/admin/admin). Debe tener listas las credenciales de la base de datos, la información de dominio y las claves de autenticación antes de comenzar el proceso.
 
 ## Responsabilidades del comerciante
 
