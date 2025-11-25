@@ -7,7 +7,7 @@ ht-degree: 0%
 ---
 # Prácticas recomendadas: Flujo de trabajo de creación de contenido
 
-En este documento se describe el flujo de trabajo del usuario para solicitar cambios o adiciones al contenido de *[Prácticas recomendadas](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/phases.html* en el *Libro de estrategias de implementación de Adobe Commerce*.
+En este documento se describe el flujo de trabajo del usuario para solicitar cambios o adiciones al contenido de *[Prácticas recomendadas] (https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/phases.html* en el *Libro de estrategias de implementación de Adobe Commerce*.
 
 ## ¿Quién puede crear una solicitud de?
 
