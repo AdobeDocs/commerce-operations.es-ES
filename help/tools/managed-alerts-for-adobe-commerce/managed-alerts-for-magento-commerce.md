@@ -14,11 +14,11 @@ ht-degree: 0%
 # Alertas administradas para Adobe Commerce
 
 
-Hemos configurado paneles y alertas clave para ayudarle a comprender cuándo su sitio alcanza niveles de almacenamiento críticos y [!DNL Apdex] (satisfacción de los usuarios con las aplicaciones y el tiempo de respuesta de los servicios). Esto puede ayudarle a tomar medidas antes de que note tiempos de respuesta lentos o una interrupción del servicio. Podrá solucionar los problemas de las alertas con los artículos que se enumeran a continuación. Antes de poder utilizar las alertas, primero configure los canales de notificación. Consulte [[!DNL New Relic] Configuración de canales de notificación](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/new-relic/new-relic-service) en la Guía de Commerce en la nube.
+Hemos configurado paneles y alertas clave para ayudarle a comprender cuándo su sitio alcanza niveles de almacenamiento críticos y [!DNL Apdex] (satisfacción de los usuarios con las aplicaciones y el tiempo de respuesta de los servicios). Esto puede ayudarle a tomar medidas antes de que note tiempos de respuesta lentos o una interrupción del servicio. Podrá solucionar los problemas de las alertas con los artículos que se enumeran a continuación. Antes de poder utilizar las alertas, primero configure los canales de notificación. Consulte [[!DNL New Relic] Configuración de canales de notificación](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/monitor/new-relic/new-relic-service) en la Guía de Commerce en la nube.
 
 >[!NOTE]
 >
->Si las alertas administradas para la directiva de alertas de Adobe Commerce no están disponibles, podría deberse a que esta cuenta se ha creado recientemente o a que [!DNL New Relic] se ha configurado recientemente. Todos los martes se ejecuta un proceso para agregar la directiva de alerta a esas cuentas. La directiva de alertas debe estar disponible el día siguiente a la ejecución del siguiente proceso. Si la directiva aún no se encuentra, [envíe una solicitud de soporte técnico de Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case) e incluya su ID de proyecto.
+>Si las alertas administradas para la directiva de alertas de Adobe Commerce no están disponibles, podría deberse a que esta cuenta se ha creado recientemente o a que [!DNL New Relic] se ha configurado recientemente. Todos los martes se ejecuta un proceso para agregar la directiva de alerta a esas cuentas. La directiva de alertas debe estar disponible el día siguiente a la ejecución del siguiente proceso. Si la directiva aún no se encuentra, [envíe una solicitud de soporte técnico de Adobe Commerce](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case) e incluya su ID de proyecto.
 
 Consulte a continuación en la tabla los vínculos a los artículos de la BC que proporcionan pasos para la resolución de problemas de estas alertas:
 
@@ -54,4 +54,4 @@ Consulte a continuación en la tabla los vínculos a los artículos de la BC que
 
 ## Revisar los umbrales de alerta establecidos para las alertas administradas
 
-Puede revisar los umbrales de alerta configurados para las alertas administradas desde su cuenta de New Relic. Para obtener instrucciones, vea [Supervisar el rendimiento con alertas administradas](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/new-relic/investigate/investigate-performance#monitor-performance-with-managed-alerts).
+Puede revisar los umbrales de alerta configurados para las alertas administradas desde su cuenta de New Relic. Para obtener instrucciones, vea [Supervisar el rendimiento con alertas administradas](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/monitor/new-relic/investigate/investigate-performance#monitor-performance-with-managed-alerts).

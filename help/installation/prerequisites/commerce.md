@@ -15,13 +15,13 @@ Usted está entre los 240.000 comerciantes de todo el mundo que confían en nues
 
 ## Cómo obtener el software
 
-Compruebe la disponibilidad y compatibilidad de las extensiones creadas por Adobe y los servicios de Commerce para Adobe Commerce y Magento Open Source en nuestra [página de disponibilidad del producto](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability).
+Compruebe la disponibilidad y compatibilidad de las extensiones creadas por Adobe y los servicios de Commerce para Adobe Commerce y Magento Open Source en nuestra [página de disponibilidad del producto](https://experienceleague.adobe.com/es/docs/commerce-operations/release/product-availability).
 
 >[!NOTE]
 >
 >Los códigos base de Adobe Commerce ahora se distribuyen exclusivamente a través de Composer debido a cambios en las políticas. Use Composer para descargar cualquiera de las versiones de Adobe Commerce enumeradas, ya que el código base ya no está disponible en la sección Descargas.
 >
->Para obtener más información, consulte [No se puede acceder al extracto de facturación y descargar el código de base en Adobe Commerce en la infraestructura en la nube](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26611)
+>Para obtener más información, consulte [No se puede acceder al extracto de facturación y descargar el código de base en Adobe Commerce en la infraestructura en la nube](https://experienceleague.adobe.com/es/docs/experience-cloud-kcs/kbarticles/ka-26611)
 
 Consulte la siguiente tabla para empezar a instalar Adobe Commerce.
 
