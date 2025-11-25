@@ -2,7 +2,7 @@
 title: Instalación de Adobe Commerce
 description: Siga estos pasos para instalar Adobe Commerce en la infraestructura de su propiedad.
 exl-id: 25f3c56e-0654-4f8b-a69d-f4152f68aca3
-source-git-commit: 47525e8d8379061b254bfa90ab46e27a1ee2f524
+source-git-commit: 84a20012a81278cc95587ec14281b05330261687
 workflow-type: tm+mt
 source-wordcount: '2261'
 ht-degree: 0%
@@ -57,7 +57,7 @@ Puede ejecutar los siguientes comandos para buscar los valores de algunos argume
 
 >[!NOTE]
 >
->Si aparece un error al ejecutar estos comandos, compruebe que ha actualizado las dependencias de instalación tal como se describe en [Actualizar dependencias de instalación](https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies/).
+>Si aparece un error al ejecutar estos comandos, compruebe que ha actualizado las dependencias de instalación tal como se describe en [Actualizar dependencias de instalación](https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies).
 
 ## Instale desde la línea de comandos
 

@@ -2,7 +2,7 @@
 title: Clonar repositorios Git de datos de muestra
 description: Siga estos pasos para instalar datos de ejemplo de Adobe Commerce clonando repositorios Git.
 exl-id: 748eee30-2821-457d-9c1c-62ede8bc0510
-source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
+source-git-commit: 84a20012a81278cc95587ec14281b05330261687
 workflow-type: tm+mt
 source-wordcount: '733'
 ht-degree: 0%
@@ -18,11 +18,11 @@ Si no es un desarrollador colaborador, elija una de las otras opciones que se mu
 Los desarrolladores colaboradores pueden utilizar este método para instalar datos de ejemplo *solamente* si se cumple lo siguiente:
 
 * Utiliza Magento Open Source
-* Usted [clonó el repositorio de GitHub](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)
+* Usted [clonó el repositorio de GitHub](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository)
 
 >[!WARNING]
 >
->Puede utilizar datos de ejemplo con la rama `develop` (más actual) o con una rama liberada (como `2.4` (más estable)). Le recomendamos que utilice una rama liberada porque es más estable. Si está contribuyendo código al repositorio y necesita el código más reciente, utilice la rama `develop`. Independientemente de la rama que elija, debe [clonar](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/) la rama correspondiente del repositorio de GitHub de Magento Open Source. Por ejemplo, los datos de ejemplo de la rama `develop` se pueden usar *solamente* con la rama de Magento Open Source `develop`.
+>Puede utilizar datos de ejemplo con la rama `develop` (más actual) o con una rama liberada (como `2.4` (más estable)). Le recomendamos que utilice una rama liberada porque es más estable. Si está contribuyendo código al repositorio y necesita el código más reciente, utilice la rama `develop`. Independientemente de la rama que elija, debe [clonar](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository) la rama correspondiente del repositorio de GitHub de Magento Open Source. Por ejemplo, los datos de ejemplo de la rama `develop` se pueden usar *solamente* con la rama de Magento Open Source `develop`.
 
 ## Clonar el repositorio de datos de ejemplo
 

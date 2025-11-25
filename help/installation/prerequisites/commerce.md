@@ -2,7 +2,7 @@
 title: Obtener el software de Adobe Commerce
 description: Obtenga información sobre cómo descargar el software de Adobe Commerce.
 exl-id: 7a769d5b-5397-4572-8db5-7602068e6aad
-source-git-commit: 0659c19e24e90ca4e3a7ac1c04914bda82b766dd
+source-git-commit: 84a20012a81278cc95587ec14281b05330261687
 workflow-type: tm+mt
 source-wordcount: '414'
 ht-degree: 0%
@@ -15,13 +15,13 @@ Usted está entre los 240.000 comerciantes de todo el mundo que confían en nues
 
 ## Cómo obtener el software
 
-Compruebe la disponibilidad y compatibilidad de las extensiones creadas por Adobe y los servicios de Commerce para Adobe Commerce y Magento Open Source en nuestra [página de disponibilidad del producto](https://experienceleague.adobe.com/es/docs/commerce-operations/release/product-availability).
+Compruebe la disponibilidad y compatibilidad de las extensiones creadas por Adobe y los servicios de Commerce para Adobe Commerce y Magento Open Source en nuestra [página de disponibilidad del producto](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability).
 
 >[!NOTE]
 >
 >Los códigos base de Adobe Commerce ahora se distribuyen exclusivamente a través de Composer debido a cambios en las políticas. Use Composer para descargar cualquiera de las versiones de Adobe Commerce enumeradas, ya que el código base ya no está disponible en la sección Descargas.
 >
->Para obtener más información, consulte [No se puede acceder al extracto de facturación y descargar el código de base en Adobe Commerce en la infraestructura en la nube](https://experienceleague.adobe.com/es/docs/experience-cloud-kcs/kbarticles/ka-26611)
+>Para obtener más información, consulte [No se puede acceder al extracto de facturación y descargar el código de base en Adobe Commerce en la infraestructura en la nube](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26611)
 
 Consulte la siguiente tabla para empezar a instalar Adobe Commerce.
 
@@ -53,7 +53,7 @@ Consulte la siguiente tabla para empezar a instalar Adobe Commerce.
             <li>Instala la aplicación mediante <a href="../advanced.md">línea de comandos</a>.</li>
             <li>Actualiza la aplicación con <a href="../../upgrade/developer/git-installs.md">comandos Composer y Git</a>.</li>
             <li>Personaliza el código en el directorio <code>app/code</code>.</li></ol></td>
-        <td><p><a href="https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/">Clone el repositorio de GitHub</a></p></td>
+        <td><p><a href="https://developer.adobe.com/commerce/contributor/guides/install/clone-repository">Clone el repositorio de GitHub</a></p></td>
     </tr>
     </tbody>
 </table>

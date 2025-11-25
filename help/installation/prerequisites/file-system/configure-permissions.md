@@ -2,7 +2,7 @@
 title: Configurar la propiedad y los permisos del archivo
 description: Siga estos pasos para configurar permisos del sistema de archivos para instalaciones locales de Adobe Commerce.
 exl-id: 2410ee4f-978c-4b71-b3f6-0c042f9f4dc4
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 84a20012a81278cc95587ec14281b05330261687
 workflow-type: tm+mt
 source-wordcount: '981'
 ht-degree: 0%
@@ -58,7 +58,7 @@ Para establecer permisos antes de instalar la aplicación:
 1. Si aún no lo ha hecho, obtenga la aplicación de una de las siguientes maneras:
 
    * [Metapaquete del Compositor](../../composer.md)
-   * [Clonar el repositorio (solo desarrolladores colaboradores)](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)
+   * [Clonar el repositorio (solo desarrolladores colaboradores)](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository)
 
 1. Después de establecer la propiedad y los permisos del sistema de archivos, [instale la aplicación](../../advanced.md)
 
@@ -192,7 +192,7 @@ Para completar la tarea, reinicie el servidor web:
 Si aún no lo ha hecho, obtenga el software de una de las siguientes maneras:
 
 * [Metapaquete del Compositor](../../composer.md)
-* [Clonar el repositorio (solo desarrolladores colaboradores)](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)
+* [Clonar el repositorio (solo desarrolladores colaboradores)](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository)
 
 ### Establecer la propiedad y los permisos para el grupo compartido
 
