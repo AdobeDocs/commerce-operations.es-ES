@@ -2,7 +2,7 @@
 title: Instalación local avanzada
 description: Obtenga información acerca de los escenarios de instalación avanzados para implementaciones locales de Adobe Commerce. Descubra configuraciones complejas y opciones de configuración personalizadas.
 exl-id: e16e750a-e068-4a63-8ad9-62043e2a8231
-source-git-commit: 84a20012a81278cc95587ec14281b05330261687
+source-git-commit: 937db2209ec4122c611a857796f043523a0acb29
 workflow-type: tm+mt
 source-wordcount: '2485'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 >[!TIP]
 >
->¿Perdido? ¿Necesita ayuda? Pruebe nuestras guías de [instalación rápida](composer.md) o [instalación de colaborador](https://developer.adobe.com/commerce/contributor/guides/install).
+>¿Perdido? ¿Necesita ayuda? Pruebe nuestras guías de [instalación rápida](composer.md) o [instalación de colaborador](https://developer.adobe.com/commerce/contributor/guides/install/).
 
 >[!NOTE]
 >
@@ -119,7 +119,7 @@ Las siguientes opciones especifican la información de usuario y las credenciale
 
 Puede crear el usuario Administrador durante o después de la instalación. Si crea el usuario durante la instalación, se requieren todas las variables de credenciales de administrador. Consulte [Ejemplos de instalaciones de localhost](#sample-localhost-installations).
 
-Las siguientes tablas proporcionan muchos parámetros de instalación disponibles, pero no todos. Para obtener una lista completa, consulte [Referencia de herramientas de la línea de comandos](https://experienceleague.adobe.com/es/docs/commerce-operations/tools/cli-reference/commerce-on-premises).
+Las siguientes tablas proporcionan muchos parámetros de instalación disponibles, pero no todos. Para obtener una lista completa, consulte [Referencia de herramientas de la línea de comandos](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises).
 
 | Nombre | Valor | ¿Requerido? |
 |--- |--- |--- |

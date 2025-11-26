@@ -2,7 +2,7 @@
 title: Completar requisitos previos
 description: Prepare su proyecto de Adobe Commerce para una actualización completando estos pasos previos.
 exl-id: f7775900-1d10-4547-8af0-3d1283d9b89e
-source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
+source-git-commit: 2d17da1f8cbda1462839ad2fa3ea569833443827
 workflow-type: tm+mt
 source-wordcount: '1866'
 ht-degree: 0%
@@ -33,7 +33,7 @@ Asegúrese de haber actualizado todos los requisitos y dependencias del sistema 
 
 >[!NOTE]
 >
->Para los proyectos Pro de Adobe Commerce en la nube, debe crear un ticket de [Soporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=es#submit-ticket) para instalar o actualizar servicios en entornos de Ensayo y Producción. Indique los cambios de servicio necesarios e incluya los `.magento.app.yaml` y `services.yaml` archivos actualizados y la versión de PHP en el ticket. El equipo de infraestructura en la nube puede tardar hasta 48 horas en actualizar el proyecto. Consulte [Software y servicios compatibles](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/cloud-architecture.html?lang=es#supported-software-and-services).
+>Para los proyectos Pro de Adobe Commerce en la nube, debe crear un ticket de [Soporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) para instalar o actualizar servicios en entornos de Ensayo y Producción. Indique los cambios de servicio necesarios e incluya los `.magento.app.yaml` y `services.yaml` archivos actualizados y la versión de PHP en el ticket. El equipo de infraestructura en la nube puede tardar hasta 48 horas en actualizar el proyecto. Consulte [Software y servicios compatibles](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/cloud-architecture.html#supported-software-and-services).
 
 ## Compruebe que haya instalado un motor de búsqueda compatible
 
@@ -99,7 +99,7 @@ Para actualizar correctamente MySQL de la versión 8.0 a la versión 8.4, debe s
    >
    >Si no cambia el valor de `restrict_fk_on_non_standard_key` a `OFF`, obtendrá el siguiente error durante la importación:
    >
-   >```sql
+   ```sql
    > ERROR 6125 (HY000) at line 2164: Failed to add the foreign key constraint. Missing unique key for constraint 'CAT_PRD_FRONTEND_ACTION_PRD_ID_CAT_PRD_ENTT_ENTT_ID' in the referenced table 'catalog_product_entity'
    >```
 1. Reinicie el servidor MySQL.
@@ -445,4 +445,4 @@ Para instalar el complemento:
    composer update
    ```
 
-<!-- Last updated from includes: 2024-02-12 09:51:27 -->
+<!-- Last updated from includes: 2025-11-25 11:39:51 -->
