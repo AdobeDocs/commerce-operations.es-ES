@@ -2,7 +2,7 @@
 title: Administrar colas de mensajes
 description: Obtenga información sobre cómo administrar colas de mensajes desde la línea de comandos para Adobe Commerce.
 exl-id: 619e5df1-39cb-49b6-b636-618b12682d32
-source-git-commit: 47525e8d8379061b254bfa90ab46e27a1ee2f524
+source-git-commit: 7610a5843b526a765dd35188722b7be8e6051049
 workflow-type: tm+mt
 source-wordcount: '427'
 ht-degree: 0%
@@ -49,7 +49,7 @@ También puede usar un administrador de procesos como [Supervisor](https://super
 
 >[!INFO]
 >
->Si su tienda Adobe Commerce está alojada en la plataforma Cloud, use [`CRON_CONSUMERS_RUNNER`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=es#cron_consumers_runner) para configurar el trabajo cron de `consumers_runner`.
+>Si su tienda Adobe Commerce está alojada en la plataforma Cloud, use [`CRON_CONSUMERS_RUNNER`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#cron_consumers_runner) para configurar el trabajo cron de `consumers_runner`.
 
 ### Configuración específica
 
@@ -82,10 +82,10 @@ Edite el archivo `/app/etc/env.php` para configurar el trabajo cron `consumers_r
 
   >[!INFO]
   >
-  >Si su tienda Adobe Commerce está alojada en la plataforma Cloud, use [`CONSUMERS_WAIT_FOR_MAX_MESSAGES`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=es#consumers_wait_for_max_messages) para configurar cómo procesan los consumidores los mensajes de la cola de mensajes.
+  >Si su tienda Adobe Commerce está alojada en la plataforma Cloud, use [`CONSUMERS_WAIT_FOR_MAX_MESSAGES`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#consumers_wait_for_max_messages) para configurar cómo procesan los consumidores los mensajes de la cola de mensajes.
 
   >[!NOTE]
   >
-  >ActiveMQ Artemis (STOMP) se introdujo en Adobe Commerce 2.4.6 y versiones posteriores.
+  >ActiveMQ Artemis (STOMP) se introdujo en Adobe Commerce 2.4.5 y versiones posteriores.
 
 Consulte [Iniciar consumidores de cola de mensajes](../cli/start-message-queues.md).

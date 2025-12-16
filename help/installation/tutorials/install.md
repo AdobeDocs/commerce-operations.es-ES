@@ -2,7 +2,7 @@
 title: Instalación de Adobe Commerce
 description: Siga estos pasos para instalar Adobe Commerce en la infraestructura de su propiedad.
 exl-id: 25f3c56e-0654-4f8b-a69d-f4152f68aca3
-source-git-commit: 84a20012a81278cc95587ec14281b05330261687
+source-git-commit: 7610a5843b526a765dd35188722b7be8e6051049
 workflow-type: tm+mt
 source-wordcount: '2261'
 ht-degree: 0%
@@ -148,7 +148,7 @@ En la versión 2.2.8 y posteriores de Adobe Commerce, puede crear el usuario adm
 
 >[!NOTE]
 >
->ActiveMQ Artemis se introdujo en Adobe Commerce 2.4.6 y versiones posteriores.
+>ActiveMQ Artemis se introdujo en Adobe Commerce 2.4.5 y versiones posteriores.
 
 | Nombre | Valor | ¿Requerido? |
 |--- |--- |--- |
@@ -335,7 +335,7 @@ magento setup:install --base-url=http://127.0.0.1/magento2/ \
 
 >[!NOTE]
 >
->La instalación de ActiveMQ Artemis requiere Adobe Commerce 2.4.6 o posterior.
+>La instalación de ActiveMQ Artemis requiere Adobe Commerce 2.4.5 o posterior.
 
 >[!TIP]
 >

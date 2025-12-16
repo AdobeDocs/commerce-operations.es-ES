@@ -1,7 +1,7 @@
 ---
 title: Agente de mensajes (ActiveMQ Artemis)
 description: Siga estos pasos para instalar y configurar Apache ActiveMQ Artemis message broker para instalaciones locales de Adobe Commerce.
-source-git-commit: aee02c258acaeb7a248e10b867017ef8f72b544d
+source-git-commit: 7610a5843b526a765dd35188722b7be8e6051049
 workflow-type: tm+mt
 source-wordcount: '902'
 ht-degree: 0%
@@ -15,7 +15,7 @@ Adobe Commerce también es compatible con el agente de mensajes de código abier
 
 >[!NOTE]
 >
->ActiveMQ Artemis se introdujo en Adobe Commerce 2.4.6 y versiones posteriores. Para obtener más información sobre la instalación de ActiveMQ Artemis en Adobe Commerce en proyectos de infraestructura en la nube, consulte [Configurar el servicio ActiveMQ](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/configure/service/activemq) en la *Guía de Commerce en la nube*.
+>ActiveMQ Artemis se introdujo en Adobe Commerce 2.4.5 y versiones posteriores. Para obtener más información sobre la instalación de ActiveMQ Artemis en Adobe Commerce en proyectos de infraestructura en la nube, consulte [Configurar el servicio ActiveMQ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/activemq) en la *Guía de Commerce en la nube*.
 
 Las colas de mensajes proporcionan un mecanismo de comunicaciones asincrónico en el que el remitente y el receptor de un mensaje no se ponen en contacto entre sí. Tampoco necesitan comunicarse con la cola de mensajes al mismo tiempo. Cuando un remitente coloca un mensaje en cola, se almacena hasta que el destinatario lo recibe.
 

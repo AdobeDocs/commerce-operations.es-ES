@@ -2,9 +2,9 @@
 title: Migrar de RabbitMQ a ActiveMQ
 description: Obtenga información sobre cómo reemplazar el agente de cola de mensajes que se utiliza para las instalaciones locales de Adobe Commerce.
 feature: Services, Configuration
-source-git-commit: 8f57a4fa7744f4647ab96d0fcfae08b8eb4927c6
+source-git-commit: 7610a5843b526a765dd35188722b7be8e6051049
 workflow-type: tm+mt
-source-wordcount: '648'
+source-wordcount: '649'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 ActiveMQ (Apache ActiveMQ Artemis) es un agente de mensajes multiprotocolo de alto rendimiento que proporciona una alternativa a RabbitMQ para gestionar colas de mensajes en Adobe Commerce.
 
-A partir de las versiones 2.4.8-p3, 2.4.7-p8 y 2.4.6-p13, Adobe Commerce admite ActiveMQ como agente de cola de mensajes. Esto proporciona flexibilidad adicional para que las instalaciones locales puedan elegir entre RabbitMQ y ActiveMQ en función de sus requisitos de infraestructura y experiencia.
+A partir de las versiones 2.4.8-p3, 2.4.7-p8, 2.4.6-p13 y 2.4.5-p16, Adobe Commerce admite ActiveMQ como agente de cola de mensajes. Esto proporciona flexibilidad adicional para que las instalaciones locales puedan elegir entre RabbitMQ y ActiveMQ en función de sus requisitos de infraestructura y experiencia.
 
 ## Antes de empezar
 
