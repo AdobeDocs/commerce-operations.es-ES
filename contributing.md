@@ -1,7 +1,7 @@
 ---
-source-git-commit: 4dd926ca7014c9e007a8c2c847e076064eb8d170
+source-git-commit: 86d7fba92705b808b45d655a432bb92ed9f9181a
 workflow-type: tm+mt
-source-wordcount: '564'
+source-wordcount: '576'
 ht-degree: 1%
 
 ---
@@ -17,9 +17,9 @@ Este proyecto se adhiere al [código de conducta](code-of-conduct.md) de Adobe. 
 se espera que respete este código. Informe de cualquier comportamiento inaceptable a
 [Grp-opensourceoffice@adobe.com](mailto:Grp-opensourceoffice@adobe.com).
 
-## Documentación de guía del colaborador
+## Documentación de la guía del colaborador
 
-Consulte la [Guía del colaborador](https://experienceleague.adobe.com/es/docs/contributor/contributor-guide/introduction).
+Consulte la [Guía del colaborador](https://experienceleague.adobe.com/en/docs/contributor/contributor-guide/introduction).
 
 ## ¿Tiene alguna pregunta?
 
@@ -27,7 +27,7 @@ Comience por rellenar un problema. Los supervisores de este proyecto trabajan pa
 consenso en torno a la dirección del proyecto y las soluciones de problemas dentro de los hilos de problemas
 (cuando proceda).
 
-## Contrato de licencia de colaborador
+## Acuerdo de licencia de colaborador
 
 Todas las contribuciones de terceros a este proyecto deben estar acompañadas por un colaborador firmado
 acuerdo de licencia. Esto otorga permiso a Adobe para redistribuir sus contribuciones
@@ -41,12 +41,11 @@ Todos los envíos deben ser solicitudes de extracción y deben revisarse
 por los supervisores del proyecto. Leer [documentación de solicitud de extracción de GitHub](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests)
 para obtener más información sobre el envío de solicitudes de extracción.
 
-<!--
-Lastly, please follow the [pull request template](PULL_REQUEST_TEMPLATE.md) when
-submitting a pull request!
--->
+Por último, siga la [plantilla de solicitud de extracción](PULL_REQUEST_TEMPLATE.md) cuando
+envío de una solicitud de extracción
 
-## De Colaborador a Supervisor
+
+## De colaborador a supervisor
 
 ¡Nos encantan las contribuciones de nuestra comunidad! Si desea ir un paso más allá de colaborador
 y convertirse en un supervisor con acceso de escritura completo y voz en el proyecto, debe
@@ -57,11 +56,11 @@ no dude en ponerse en contacto con los supervisores existentes para hablar sobre
 
 ## Problemas de seguridad
 
-Los problemas de seguridad no deben notificarse en este rastreador de problemas. En su lugar, [presente un problema a nuestros expertos en seguridad](https://helpx.adobe.com/es/security/alertus.html).
+Los problemas de seguridad no deben notificarse en este rastreador de problemas. En su lugar, [presente un problema a nuestros expertos en seguridad](https://helpx.adobe.com/security/alertus.html).
 
 ## Aspectos destacados de las novedades
 
-Si los cambios introducen nuevos temas, actualizaciones significativas o correcciones que es necesario resaltar, puede agregar una breve descripción a la [sección Novedades](https://experienceleague.adobe.com/es/docs/commerce-operations/operational-guides/home#whats-new) directamente desde el cuerpo de la solicitud de extracción.
+Si los cambios introducen nuevos temas, actualizaciones significativas o correcciones que es necesario resaltar, puede agregar una breve descripción a la [sección Novedades](https://experienceleague.adobe.com/en/docs/commerce-operations/operational-guides/home#whats-new) directamente desde el cuerpo de la solicitud de extracción.
 
 Para añadir un resaltado de Novedades:
 
@@ -109,4 +108,4 @@ Para añadir un resaltado de Novedades:
 1. La parte `whatsnew` debe comenzar desde la etiqueta `whatsnew` y estar al final del cuerpo de la solicitud de extracción.
 1. Las descripciones de los cambios deben incluir vínculos de trabajo. Asegúrese de que los vínculos sean correctos y lleven a los temas deseados. Si el tema es nuevo, compruebe que los vínculos funcionan después de combinar la solicitud de extracción y publicar el nuevo tema. Es aceptable corregir los vínculos después de combinar la solicitud de extracción.
 
-Por ejemplo, busque en solicitudes de extracción cerradas en el repositorio para ver el formato de los resaltados existentes y compárelos con la [sección Novedades](https://experienceleague.adobe.com/es/docs/commerce-operations/operational-guides/home#whats-new) para ver cómo aparecen en la documentación.
+Por ejemplo, busque en solicitudes de extracción cerradas en el repositorio para ver el formato de los resaltados existentes y compárelos con la [sección Novedades](https://experienceleague.adobe.com/en/docs/commerce-operations/operational-guides/home#whats-new) para ver cómo aparecen en la documentación.
