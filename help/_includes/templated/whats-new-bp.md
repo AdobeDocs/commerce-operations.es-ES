@@ -23,12 +23,12 @@ Esta página contiene los cambios realizados en los últimos 60 días. Excluimos
   </thead>
   <tbody>
     <tr>
-      <td><p>Se proporcionaron más detalles sobre <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configuration-management/set-configuration-values">Establecer valores de configuración</a>.</p>
+      <td><p>Se proporcionaron más detalles sobre <a href="https://experienceleague.adobe.com/es/docs/commerce-operations/configuration-guide/cli/configuration-management/set-configuration-values">Establecer valores de configuración</a>.</p>
 </td>
       <td>
         Prácticas recomendadas
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/pull/147">solicitud de extracción</a></td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.es-ES/pull/147">solicitud de extracción</a></td>
     </tr>
   </tbody>
 </table>
@@ -45,12 +45,12 @@ Esta página contiene los cambios realizados en los últimos 60 días. Excluimos
   </thead>
   <tbody>
     <tr>
-      <td><p>Se ha actualizado el comando CLI <code class="language-plaintext highlighter-rouge">bin/magento setup:config:set</code> en las instrucciones <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/valkey/valkey-pg-cache#configure-valkey-default-caching">Configurar el almacenamiento en caché predeterminado de Valkey</a> para especificar el valor correcto del parámetro <code class="language-plaintext highlighter-rouge">cache-backend</code>.</p>
+      <td><p>Se ha actualizado el comando CLI <code class="language-plaintext highlighter-rouge">bin/magento setup:config:set</code> en las instrucciones <a href="https://experienceleague.adobe.com/es/docs/commerce-operations/configuration-guide/cache/valkey/valkey-pg-cache#configure-valkey-default-caching">Configurar el almacenamiento en caché predeterminado de Valkey</a> para especificar el valor correcto del parámetro <code class="language-plaintext highlighter-rouge">cache-backend</code>.</p>
 </td>
       <td>
         Prácticas recomendadas
       </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/pull/159">solicitud de extracción</a></td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.es-ES/pull/159">solicitud de extracción</a></td>
     </tr>
   </tbody>
 </table>
