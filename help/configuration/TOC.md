@@ -151,4 +151,4 @@ ht-degree: 1%
       + [Verificar base de datos dividida](storage/multi-master-verify.md)
       + [Replicación de base de datos](storage/multi-master-replication.md)
       + [Revertir a base de datos única](storage/revert-split-database.md)
-+ [Volver a las guías operativas](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
++ [Volver a las guías operativas](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=es)
