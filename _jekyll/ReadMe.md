@@ -1,7 +1,7 @@
 ---
-source-git-commit: 9994f486c38df4c0dc2ff477c48f3e8f3259aa9f
+source-git-commit: 4589c405bab743001e967a9825d578ee1a03c216
 workflow-type: tm+mt
-source-wordcount: '602'
+source-wordcount: '672'
 ht-degree: 0%
 
 ---
@@ -83,6 +83,32 @@ Genera un mapa de regiones de Azure. El archivo de datos de entrada debe colocar
 ```sh
 rake azure_regions
 ```
+
+### `get_released_versions`
+
+Obtiene las últimas 10 versiones publicadas del repositorio `magento/magento2`. Requiere que [GitHub CLI](https://cli.github.com/) se instale y autentique.
+
+**Uso:**
+
+```sh
+rake get_released_versions
+```
+
+**Salida:** genera `tmp/core-release.txt` con nombres y fechas de etiquetas de versión.
+
+### `first_merge_date`
+
+Obtiene la fecha de la primera combinación en una rama especificada. Requiere que [GitHub CLI](https://cli.github.com/) se instale y autentique.
+
+**Uso:**
+
+```sh
+rake first_merge_date base=develop
+```
+
+**Argumentos:**
+
+- `base` (obligatorio): El nombre de la rama de destino para buscar combinaciones.
 
 ### `includes:maintain_relationships`
 
@@ -215,7 +241,8 @@ Los archivos de contenido principal utilizan la siguiente sintaxis para incluir 
 ## Requisitos previos
 
 - Ruby y Bundler instalados.
-- Se han especificado las gemas necesarias en Gemfile.
+- Se especificaron las gemas requeridas en el archivo Gem (las dependencias principales las proporciona `adobe-comdox-exl-rake-tasks`).
+- [CLI de GitHub](https://cli.github.com/) para las tareas `get_released_versions` y `first_merge_date`.
 - Python, [PyGMT](https://www.pygmt.org/latest/install.html) y [pdf2svg](https://formulae.brew.sh/formula/pdf2svg) para la tarea `azure_regions`.
 
 ## Configurar
