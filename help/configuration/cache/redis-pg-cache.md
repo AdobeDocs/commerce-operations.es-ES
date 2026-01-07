@@ -3,9 +3,9 @@ title: Usar Redis para la caché predeterminada
 description: Obtenga información sobre cómo configurar Redis como caché predeterminada para Adobe Commerce. Descubra la configuración de la línea de comandos, las opciones de configuración y las técnicas de validación.
 feature: Configuration, Cache
 exl-id: 8c097cfc-85d0-4e96-b56e-284fde40d459
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: ee4a873a73e8fd747e7d4c8e157327fab1074cc9
 workflow-type: tm+mt
-source-wordcount: '1135'
+source-wordcount: '890'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,10 @@ ht-degree: 0%
 Commerce proporciona opciones de línea de comandos para configurar la página Redis y el almacenamiento en caché predeterminado. Aunque puede configurar el almacenamiento en caché mediante la edición del archivo `<Commerce-install-dir>app/etc/env.php`, el método recomendado es utilizar la línea de comandos, especialmente para las configuraciones iniciales. La línea de comandos proporciona validación, lo que garantiza que la configuración sea sintácticamente correcta.
 
 Debe [instalar Redis](config-redis.md#install-redis) antes de continuar.
+
+>[!NOTE]
+>
+>Para las instancias de Commerce alojadas en EC2, puede utilizar AWS ElastiCache en lugar de una instancia local de Redis. Consulte [Configurar Elasticache para instancias de EC2](redis-elasticache-for-ec2.md).
 
 ## Configurar el almacenamiento en caché predeterminado de Redis
 
@@ -76,9 +80,9 @@ El ejemplo siguiente habilita el almacenamiento en caché de páginas de Redis, 
 bin/magento setup:config:set --page-cache=redis --page-cache-redis-server=127.0.0.1 --page-cache-redis-db=1
 ```
 
-## Resultados
+## Revisar la configuración del entorno de Commerce
 
-Como resultado de los dos comandos de ejemplo, Commerce agrega líneas similares a las siguientes a `<Commerce-install-dir>app/etc/env.php`:
+Al ejecutar los comandos para configurar el almacenamiento en caché de Redis, se actualiza la configuración del entorno de Commerce (`<Commerce-install-dir>app/etc/env.php`):
 
 ```php
 'cache' => [
@@ -104,93 +108,11 @@ Como resultado de los dos comandos de ejemplo, Commerce agrega líneas similares
 ],
 ```
 
-## Uso de AWS ElastiCache con la instancia EC2
+## Configurar opciones de almacenamiento en caché adicionales
 
-A partir de Commerce 2.4.3, las instancias alojadas en Amazon EC2 pueden utilizar una AWS ElastiCache en lugar de una instancia local de Redis.
+En esta sección se describe cómo habilitar opciones de configuración opcionales que están deshabilitadas de forma predeterminada.
 
->[!WARNING]
->
->Esta sección solo funciona para instancias de Commerce que se ejecutan en VPC Amazon EC2. No funciona para instalaciones locales.
-
-### Configurar un clúster de Redis
-
-Después de [configurar un clúster de Redis en AWS](https://aws.amazon.com/getting-started/hands-on/setting-up-a-redis-cluster-with-amazon-elasticache/), configure la instancia EC2 para que use ElastiCache.
-
-1. [Cree un clúster de ElastiCache](https://docs.aws.amazon.com/AmazonElastiCache/latest/red-ug/set-up.html) en la misma región y VPC de la instancia EC2.
-1. Compruebe la conexión.
-
-   - Abra una conexión SSH a la instancia EC2.
-   - En la instancia EC2, instale el cliente Redis:
-
-     ```bash
-     sudo apt-get install redis
-     ```
-
-   - Agregar una regla de entrada al grupo de seguridad EC2: Tipo `- Custom TCP, port - 6379, Source - 0.0.0.0/0`
-   - Agregue una regla de entrada al grupo de seguridad de clúster de ElastiCache: Tipo `- Custom TCP, port - 6379, Source - 0.0.0.0/0`
-   - Conéctese a la CLI de Redis:
-
-     ```bash
-     redis-cli -h <ElastiCache Primary Endpoint host> -p <ElastiCache Primary Endpoint port>
-     ```
-
-### Configuración de Commerce para utilizar el clúster
-
-Commerce admite varios tipos de configuraciones de almacenamiento en caché. Por lo general, las configuraciones de almacenamiento en caché se dividen entre front-end y back-end. El almacenamiento en caché de front-end se clasifica como `default` y se usa para cualquier tipo de caché. Puede personalizar o dividir en cachés de nivel inferior para lograr un mejor rendimiento. Una configuración común de Redis es separar la caché predeterminada y la caché de página en su propia base de datos de Redis (RDB).
-
-Ejecute `setup` comandos para especificar los extremos de Redis.
-
-Para configurar Commerce para Redis como almacenamiento en caché predeterminado:
-
-```bash
-bin/magento setup:config:set --cache-backend=redis --cache-backend-redis-server=<ElastiCache Primary Endpoint host> --cache-backend-redis-port=<ElastiCache Primary Endpoint port> --cache-backend-redis-db=0
-```
-
-Para configurar Commerce para el almacenamiento en caché de páginas de Redis:
-
-```bash
-bin/magento setup:config:set --page-cache=redis --page-cache-redis-server=<ElastiCache Primary Endpoint host> --page-cache-redis-port=<ElastiCache Primary Endpoint port> --page-cache-redis-db=1
-```
-
-Para configurar Commerce para que utilice Redis para el almacenamiento de sesión:
-
-```bash
-bin/magento setup:config:set --session-save=redis --session-save-redis-host=<ElastiCache Primary Endpoint host> --session-save-redis-port=<ElastiCache Primary Endpoint port> --session-save-redis-log-level=4 --session-save-redis-db=2
-```
-
-### Verificar conectividad
-
-**Para comprobar que Commerce está hablando con ElastiCache**:
-
-1. Abra una conexión SSH a la instancia de Commerce EC2.
-1. Inicie el monitor de Redis.
-
-   ```bash
-   redis-cli -h <ElastiCache-Primary-Endpoint-host> -p <ElastiCache-Primary-Endpoint-port> monitor
-   ```
-
-1. Abra una página en la interfaz de usuario de Commerce.
-1. Compruebe la [salida de caché](#verify-redis-connection) en su terminal.
-
-## Nueva implementación de caché de Redis
-
-A partir de Commerce 2.3.5, se recomienda utilizar la implementación de caché de Redis extendida: `\Magento\Framework\Cache\Backend\Redis`.
-
-```php
-'cache' => [
-    'frontend' => [
-        'default' => [
-            'backend' => '\\Magento\\Framework\\Cache\\Backend\\Redis',
-            'backend_options' => [
-                'server' => '127.0.0.1',
-                'database' => '0',
-                'port' => '6379'
-            ],
-        ],
-],
-```
-
-## Función de precarga Redis
+### Función de precarga Redis
 
 Dado que Commerce almacena datos de configuración en la caché de Redis, podemos cargar previamente datos que se reutilizan entre páginas. Para buscar las claves que deben cargarse previamente, analice los datos que se transfieren de Redis a Commerce. Se recomienda cargar previamente los datos cargados en todas las páginas, como `SYSTEM_DEFAULT`, `EAV_ENTITY_TYPES`, `DB_IS_UP_TO_DATE`.
 
@@ -235,10 +157,11 @@ Si utiliza la función de precarga con la caché L2, no olvide agregar el sufijo
 ],
 ```
 
-## Generación paralela
+### Generación paralela
 
-A partir de la versión 2.4.0, presentamos la opción `allow_parallel_generation` para los usuarios que desean eliminar las esperas de bloqueos.
-Está desactivada de forma predeterminada y se recomienda desactivarla hasta que tenga configuraciones o bloques excesivos.
+Para eliminar la espera de bloqueos, habilite la opción `allow_parallel_generation`.
+
+Esta opción está desactivada de forma predeterminada y Adobe recomienda desactivarla hasta que tenga un gran número de configuraciones o bloques.
 
 **Para habilitar la generación paralela**:
 
@@ -246,7 +169,7 @@ Está desactivada de forma predeterminada y se recomienda desactivarla hasta que
 bin/magento setup:config:set --allow-parallel-generation
 ```
 
-Como es un indicador, no puede deshabilitarlo con un comando. Debe establecer manualmente el valor de configuración en `false`:
+Dado que esta opción es un indicador, no puede desactivarla con un comando. Debe establecer manualmente el valor de configuración en `false`:
 
 ```php
     'cache' => [
@@ -271,7 +194,7 @@ Como es un indicador, no puede deshabilitarlo con un comando. Debe establecer ma
     ],
 ```
 
-## Verificar conexión de Redis
+## Compruebe la conexión de Redis
 
 Para comprobar que Redis y Commerce funcionan juntos, inicie sesión en el servidor que ejecuta Redis, abra un terminal y utilice el comando Redis monitor o el comando ping.
 
