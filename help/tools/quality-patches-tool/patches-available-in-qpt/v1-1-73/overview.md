@@ -4,9 +4,9 @@ description: Esta subsección proporciona una descripción detallada de los prob
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 3103c03c7cde04d1fffd16254ff8969851305b47
+source-git-commit: 291262109cacaae5b4a749e50d1f7c8fa910b538
 workflow-type: tm+mt
-source-wordcount: '175'
+source-wordcount: '242'
 ht-degree: 0%
 
 ---
@@ -16,6 +16,9 @@ ht-degree: 0%
 Esta subsección proporciona una descripción detallada de los problemas corregidos por los parches disponibles en [!DNL Quality Patches Tool] (QPT) v1.1.73.
 
 QPT v1.1.73 incluye los siguientes parches:
+1. **ACSD-67171**: se ha corregido un problema por el cual los usuarios de B2B veían una página de acceso denegado cuando su sesión expiraba o se eliminaba durante el cierre de compra.
+1. **ACSD-67908**: se corrigió el problema por el cual los archivos JS no se combinan correctamente en configuraciones de varias tiendas.
+1. **[ACSD-68190](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/acsd-68190.md)**: se corrigió un problema por el cual los descuentos no se aplican, los descuentos aplicados no se muestran correctamente en la respuesta de vista del carro de compras de GraphQL y los descuentos no relacionados con cupones se eliminan al eliminar un descuento de cupones.
 1. **ACSD-67908**: los archivos JavaScript no se pueden combinar correctamente en configuraciones de varias tiendas
 1. **ACSD-67171**: La sesión [!DNL B2B] caducada durante la desprotección redirige a la página Acceso denegado en lugar de al inicio de sesión
 1. **ACSD-68190**: se corrigió un problema por el cual los descuentos no se aplican, los descuentos aplicados no se muestran correctamente en la respuesta de vista del carro de compras de GraphQL y los descuentos no relacionados con cupones se eliminan al eliminar un descuento de cupones.
