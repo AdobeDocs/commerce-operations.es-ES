@@ -2,9 +2,9 @@
 user-guide-title: Herramientas
 user-guide-description: Obtenga información sobre las distintas herramientas que puede utilizar con Adobe Commerce, sus usos, el proceso de instalación y cómo obtener acceso.
 feature: Configuration
-source-git-commit: 291262109cacaae5b4a749e50d1f7c8fa910b538
+source-git-commit: 9aa3bde355da7be23cb704c443d041e5da7cd080
 workflow-type: tm+mt
-source-wordcount: '9013'
+source-wordcount: '9028'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ ht-degree: 0%
    - [Alertas administradas para Adobe Commerce: alerta de advertencia de CPU](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-cpu-warning-alert.md)
 - Herramienta Parches de calidad {#quality-patches-tool}
    - [[!DNL Quality Patches Tool]: herramienta de autoservicio para parches de calidad](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)
-   - [[!DNL Quality Patches Tool]: buscar parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es){target="_blank"}
+   - [[!DNL Quality Patches Tool]: buscar parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
    - [Uso](quality-patches-tool/usage.md)
    - [Notas de la versión](quality-patches-tool/release-notes.md)
    - Parches disponibles en la herramienta Parches de calidad {#patches-available-in-qpt}
@@ -832,6 +832,7 @@ ht-degree: 0%
          - [ACP2E-3918: Error de cierre de compra para clientes de la empresa que utilizan recogida en la tienda](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-66/acp2e-3918-checkout-failure-for-company-customers-using-in-store-pickup.md)
       - Versión 1.1.67 {#v1-1-67}
          - [Información general:  [!DNL Quality Patches Tool] (QPT) v1.1.67](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/overview.md)
+         - [ACSD-65935: la consulta de GraphQL customerOrders devolvió un error interno del servidor cuando se eliminó un producto](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/acsd-65935-customerorders-graphql-query-returned-an-internal-server-error-when-a-product-was-deleted.md)
          - [ACSD-66139: el pedido de GraphQL falla con un error INDEFINIDO para el carro de compras inactivo](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/acsd-66139-graphql-order-fails-with-undefined-error-for-inactive-cart.md)
          - [ACSD-66301: al mover productos de un pedido al carro de compras en Commerce Admin, la cantidad no coincide](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/acsd-66301-order-to-cart-quantity-mismatch.md)
          - [AC-14984: problema de conexión SSL con php-amqplib/php-amqplib ^3.2.0](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/ac-14984-ssl-connection-issue-with-php-amqplib-php-amqplib-3-2.md)
@@ -975,6 +976,6 @@ ht-degree: 0%
       - [Datos que requieren una migración manual](data-migration-tool/migrate-data/manual.md)
       - [Pasos de la migración posterior a los datos](data-migration-tool/migrate-data/post-migration.md)
    - Recursos {#resources}
-      - [Solución de problemas](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html?lang=es)
+      - [Solución de problemas](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html)
       - [Registro de cambios](https://github.com/magento/data-migration-tool/blob/2.4/CHANGELOG.md)
-- [Volver a las guías operativas](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=es)
+- [Volver a las guías operativas](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
