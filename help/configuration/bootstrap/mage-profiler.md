@@ -19,7 +19,7 @@ Con los perfiles de Commerce, puede:
 
 - Mostrar gráficos de dependencias en una página de Commerce.
 
-  Un gráfico de dependencias _1} es una lista de dependencias de objetos y todas sus dependencias, todas las dependencias de esas dependencias, etc._
+  Un gráfico de dependencias _1&rbrace; es una lista de dependencias de objetos y todas sus dependencias, todas las dependencias de esas dependencias, etc._
 
   Debería interesarle especialmente la lista de _dependencias sin usar_, que son objetos que se crearon porque se solicitaron en algún constructor, pero que nunca se utilizaron (es decir, no se llamó a ninguno de sus métodos). Como resultado, se desperdician el tiempo y la memoria del procesador empleados para crear estas dependencias.
 

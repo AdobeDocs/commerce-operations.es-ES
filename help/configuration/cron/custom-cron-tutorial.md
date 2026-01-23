@@ -33,7 +33,7 @@ Si ya tiene un módulo de ejemplo, puede utilizarlo; omita este paso y el siguie
 
 1. Inicie sesión en el servidor de Commerce como [propietario del sistema de archivos](../../installation/prerequisites/file-system/overview.md) o cambie a él.
 1. Cambie a un directorio que no esté en la raíz de la aplicación de Commerce (por ejemplo, el directorio principal).
-1. Clonar el repositorio [`magento2-samples` ](https://github.com/magento/magento2-samples).
+1. Clonar el repositorio [`magento2-samples` &#x200B;](https://github.com/magento/magento2-samples).
 
    ```bash
    git clone git@github.com:magento/magento2-samples.git

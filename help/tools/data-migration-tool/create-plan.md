@@ -34,7 +34,7 @@ La migración es un buen momento para realizar cambios importantes y preparar su
 
 * Instale Magento 2 (con todos los módulos de esta versión) y [!DNL Data Migration Tool] en un sistema que cumpla [los requisitos del sistema](../../installation/system-requirements.md)
 
-* Personalice el código [!DNL Data Migration Tool] para omitir determinados datos (como páginas de CMS o reglas de ventas) o convertir personalizaciones durante la migración. Lea las [!DNL Data Migration Tool]especificaciones técnicas[ de ](technical-specification.md) para obtener más información acerca de cómo funciona la migración
+* Personalice el código [!DNL Data Migration Tool] para omitir determinados datos (como páginas de CMS o reglas de ventas) o convertir personalizaciones durante la migración. Lea las [!DNL Data Migration Tool]especificaciones técnicas[&#x200B; de &#x200B;](technical-specification.md) para obtener más información acerca de cómo funciona la migración
 
 ## Paso 3: Ejecución en seco
 
