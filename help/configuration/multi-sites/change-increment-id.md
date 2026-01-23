@@ -2,9 +2,9 @@
 title: Cambiar ID de incremento
 description: Cambiar el ID de incremento de una entidad de base de datos de Commerce.
 exl-id: 039fc34c-d9cf-42f4-af5d-16a26a3e8171
-source-git-commit: 2a45fe77d5a6fac089ae2c55d0ad047064dd07b0
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
-source-wordcount: '372'
+source-wordcount: '365'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Es posible que tenga que cambiar el ID de incremento de las nuevas entidades de 
 
 >[!INFO]
 >
->También puedes solucionar el problema de la pasarela de pago de PayPal permitiendo varios pagos por ID de factura en las Preferencias de recepción de pagos de PayPal. Ver [Solicitud rechazada de puerta de enlace de PayPal: problema de factura duplicada](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/paypal-gateway-rejected-request-duplicate-invoice-issue.html?lang=es) en _Knowledge Base_.
+>También puedes solucionar el problema de la pasarela de pago de PayPal permitiendo varios pagos por ID de factura en las Preferencias de recepción de pagos de PayPal. Ver [Solicitud rechazada de puerta de enlace de PayPal: problema de factura duplicada](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/paypal-gateway-rejected-request-duplicate-invoice-issue.html) en _Knowledge Base_.
 
 ## Pasos previos necesarios
 
@@ -70,10 +70,5 @@ El siguiente pedido realizado en la tienda con `ID=1` tendrá el identificador &
 Antes de ejecutar la consulta `ALTER TABLE` en un entorno de producción de Adobe Commerce en una infraestructura en la nube, se recomienda encarecidamente realizar estos pasos:
 
 - Pruebe todo el procedimiento para cambiar el ID de incremento en el entorno de ensayo
-- [Cree una copia de seguridad de la base de datos] para restaurar la base de datos de producción en caso de error
+- [Cree una copia de seguridad de la base de datos](https://support.magento.com/hc/en-us/articles/360003254334) para restaurar la base de datos de producción en caso de error
 
-<!-- Link Definitions -->
-
-[PayPal gateway rejected request - duplicate invoice issue]: https://support.magento.com/hc/en-us/articles/115002457473
-[Creación de una copia de seguridad DB]: https://support.magento.com/hc/en-us/articles/360003254334
-[cualquier versión compatible]

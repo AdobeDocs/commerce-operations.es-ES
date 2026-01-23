@@ -3,16 +3,16 @@ title: Configuración del compartimento de AWS S3 para almacenamiento remoto
 description: Configure el proyecto de Commerce para que utilice el servicio de almacenamiento AWS S3 para el almacenamiento remoto.
 feature: Configuration, Storage
 exl-id: e8aeade8-2ec4-4844-bd6c-ab9489d10436
-source-git-commit: 3690043019d70ad15332f757158937a7d5305043
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
-source-wordcount: '382'
+source-wordcount: '381'
 ht-degree: 0%
 
 ---
 
 # Configuración del compartimento de AWS S3 para almacenamiento remoto
 
-[Amazon Simple Storage Service (Amazon S3)][AWS S3] es un servicio de almacenamiento de objetos que ofrece escalabilidad, disponibilidad de datos, seguridad y rendimiento líderes en el sector. El servicio AWS S3 utiliza contenedores para el almacenamiento de datos. Esta configuración requiere que cree un contenedor de _private_. Para Adobe Commerce sobre la infraestructura en la nube, consulte [Configuración del almacenamiento remoto para Commerce en la infraestructura en la nube](cloud-support.md).
+[Amazon Simple Storage Service (Amazon S3)](https://aws.amazon.com/s3) es un servicio de almacenamiento de objetos que ofrece escalabilidad, disponibilidad de datos, seguridad y rendimiento líderes en el sector. El servicio AWS S3 utiliza contenedores para el almacenamiento de datos. Esta configuración requiere que cree un contenedor de _private_. Para Adobe Commerce sobre la infraestructura en la nube, consulte [Configuración del almacenamiento remoto para Commerce en la infraestructura en la nube](cloud-support.md).
 
 >[!WARNING]
 >
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 1. Inicie sesión en el tablero de Amazon S3 y cree un contenedor de _private_.
 
-1. Configure [funciones de AWS IAM]. También puede generar claves de acceso y de secreto.
+1. Configure [funciones de AWS IAM](https://aws.amazon.com/iam/). También puede generar claves de acceso y de secreto.
 
 1. Deshabilite el almacenamiento predeterminado de la base de datos.
 
@@ -73,7 +73,7 @@ location ~* \.(ico|jpg|jpeg|png|gif|svg|js|css|swf|eot|ttf|otf|woff|woff2)$ {
 
 ### Autenticación
 
-Si usa claves secretas y de acceso en lugar de los roles de [AWS IAM], debe incluir el módulo [`ngx_aws_auth` Nginx][ngx repo].
+Si usa claves secretas y de acceso en lugar de los roles de [AWS IAM](https://aws.amazon.com/iam/), debe incluir el módulo [`ngx_aws_auth` Nginx](https://github.com/anomalizer/ngx_aws_auth).
 
 ### Permisos
 
@@ -83,8 +83,3 @@ La integración de S3 depende de la capacidad de generar y almacenar imágenes e
 
 Se recomienda encarecidamente que utilice [!DNL Commerce] métodos de adaptador de archivos en su programación o desarrollo de extensiones, independientemente del tipo de almacenamiento de archivos. Cuando utilice S3 para almacenamiento, no utilice operaciones de E/S de archivos PHP nativos, como `copy`, `rename` o `file_put_contents`, ya que los archivos S3 no se encuentran dentro del sistema de archivos. Consulte [DriverInterface.php](https://github.com/magento/magento2/blob/2.4-develop/lib/internal/Magento/Framework/Filesystem/DriverInterface.php#L18) para ver ejemplos de código.
 
-<!-- link definitions -->
-
-[AWS S3]: https://aws.amazon.com/s3
-[AWS IAM]: https://aws.amazon.com/iam/
-[ngx repo]: https://github.com/anomalizer/ngx_aws_auth

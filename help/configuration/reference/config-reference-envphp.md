@@ -2,7 +2,7 @@
 title: referencia env.php
 description: Obtenga información acerca de los valores y secciones de configuración del archivo env.php en Adobe Commerce. Descubra los ajustes y las opciones de configuración del entorno.
 exl-id: cf02da8f-e0de-4f0e-bab6-67ae02e9166f
-source-git-commit: cb89f0c0a576cf6cd8b53a4ade12c21106e2cdf3
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
 source-wordcount: '1033'
 ht-degree: 0%
@@ -32,7 +32,7 @@ El archivo `env.php` contiene las siguientes secciones:
 | `resource` | Asignación del nombre del recurso a una conexión |
 | `session` | Datos de almacenamiento de sesión |
 | `system` | Deshabilita el campo para editarlo en el administrador |
-| `x-frame-options` | Estableciendo para [x-frame-options][x-frame-options] |
+| `x-frame-options` | Estableciendo para [x-frame-options](../security/xframe-options.md) |
 
 ## servidor
 
@@ -146,7 +146,7 @@ Commerce utiliza una clave de cifrado para proteger contraseñas y otros datos c
 ]
 ```
 
-Obtenga más información acerca de la [clave de cifrado](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/security/encryption-key) en la _guía del usuario de Commerce_.
+Obtenga más información acerca de la [clave de cifrado](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/encryption-key) en la _guía del usuario de Commerce_.
 
 ## db
 
@@ -211,7 +211,7 @@ Una lista de dominios descargables disponibles en este nodo. Se pueden agregar, 
 ]
 ```
 
-Más información sobre [Dominios descargables](https://experienceleague.adobe.com/es/docs/commerce-operations/tools/cli-reference/commerce-on-premises#downloadabledomainsadd).
+Más información sobre [Dominios descargables](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises#downloadabledomainsadd).
 
 ## instalar
 
@@ -252,7 +252,7 @@ Las configuraciones de cola de mensajes están disponibles en este nodo. Puede c
 ]
 ```
 
-Más información sobre [Cola de mensajes][message-queue].
+Más información sobre [Cola de mensajes](https://developer.adobe.com/commerce/php/development/components/message-queues/).
 
 ## resource
 
@@ -305,9 +305,6 @@ Con este nodo, Commerce bloquea los valores de configuración en el archivo `env
 
 Obtenga más información en [env-php-config-set](../cli/set-configuration-values.md).
 
-<!-- Link definitions -->
-
-[message-queue]: https://developer.adobe.com/commerce/php/development/components/message-queues/
 
 
 ## Agregar variables a la configuración de archivo

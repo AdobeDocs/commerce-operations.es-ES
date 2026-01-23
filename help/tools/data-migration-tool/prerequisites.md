@@ -3,7 +3,7 @@ title: '[!DNL Data Migration Tool] requisitos previos'
 description: Aprenda lo que necesita hacer antes de empezar a usar  [!DNL Data Migration Tool] para transferir datos entre Magento 1 y Magento 2.
 exl-id: 42dfa1ca-41ed-453d-a3e4-41ff36817ca3
 topic: Commerce, Migration
-source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
 source-wordcount: '234'
 ht-degree: 0%
@@ -44,6 +44,6 @@ Si el registro binario está habilitado para su base de datos de Magento 1, esta
 
 Migrar el código de extensión de Magento 1 a Magento 2.
 
-Para encontrar las últimas versiones de las extensiones, visite [[!DNL [Commerce Marketplace]]](https://marketplace.magento.com/) o póngase en contacto con su proveedor de extensiones.
+Para encontrar las últimas versiones de las extensiones, visite [!DNL [Commerce Marketplace]](https://commercemarketplace.adobe.com//) o póngase en contacto con su proveedor de extensiones.
 
-También puede usar [[!DNL [Code Migration Tool]]](https://github.com/magento-commerce/code-migration/blob/develop/README.md).
+También puede usar [!DNL [Code Migration Tool]](https://github.com/magento-commerce/code-migration/blob/develop/README.md).

@@ -3,9 +3,9 @@ title: Registro personalizado
 description: Obtenga información sobre cómo investigar errores mediante el registro personalizado.
 feature: Configuration, Logs
 exl-id: 6c94ebcf-70df-4818-a17b-32512eba516d
-source-git-commit: 991bd5fb34a2ffe61aa194ec46e2b04b4ce5b3e7
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
-source-wordcount: '394'
+source-wordcount: '390'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Adobe recomienda utilizar el registro centralizado de aplicaciones por los sigui
 
 - Permite el almacenamiento de registros en un servidor distinto del servidor de aplicaciones y disminuye las operaciones de E/S del disco, lo que simplifica la compatibilidad con el servidor de aplicaciones.
 
-- Hace que el procesamiento de los datos de registros sea más eficaz mediante herramientas especiales, como [Logstash], [Logplex] o [fluentd], sin afectar a un servidor de producción.
+- Hace que el procesamiento de los datos de registros sea más eficaz mediante herramientas especiales, como [Logstash](https://www.elastic.co/products/logstash), [Logplex](https://devcenter.heroku.com/articles/logplex) o [fluentd](https://www.fluentd.org/), sin afectar a un servidor de producción.
 
   >[!INFO]
   >
@@ -28,13 +28,13 @@ Adobe recomienda utilizar el registro centralizado de aplicaciones por los sigui
 
 ## Compatibilidad con PSR-3
 
-El [estándar PSR-3][laminas] define una interfaz PHP común para las bibliotecas de registro. El objetivo principal de PSR-3 es permitir que las bibliotecas reciban un objeto `Psr\Log\LoggerInterface` y escriban registros en él de una manera simple y universal.
+El [estándar PSR-3](https://docs.laminas.dev/laminas-log/) define una interfaz PHP común para las bibliotecas de registro. El objetivo principal de PSR-3 es permitir que las bibliotecas reciban un objeto `Psr\Log\LoggerInterface` y escriban registros en él de una manera simple y universal.
 
 Esto permite reemplazar la implementación fácilmente sin tener que preocuparse de que dicha sustitución pueda dañar el código de la aplicación. También garantiza que un componente personalizado funcionará incluso cuando la implementación de registro se cambie en una versión futura del sistema.
 
 ## Monólogo
 
-Commerce 2 cumple con el estándar PSR-3. De manera predeterminada, Commerce usa [Monólogo]. Monólogo implementado como preferencia para `Psr\Log\LoggerInterface` en la aplicación de Commerce [`di.xml`][di].
+Commerce 2 cumple con el estándar PSR-3. De manera predeterminada, Commerce usa [Monólogo](https://github.com/Seldaek/monolog). Monólogo implementado como preferencia para `Psr\Log\LoggerInterface` en la aplicación de Commerce [`di.xml`](https://github.com/magento/magento2/blob/2.4/app/etc/di.xml#L9).
 
 Monolog es una popular solución de registro de PHP con una amplia gama de controladores que le permiten construir estrategias de registro avanzadas. A continuación se muestra un resumen del funcionamiento de Monolog.
 
@@ -52,11 +52,3 @@ Los mensajes de registro se pueden procesar de muchas maneras diferentes. Por ej
 
 Otros canales pueden tener un conjunto diferente de controladores y lógica.
 
-<!-- link definitions -->
-
-[di]: https://github.com/magento/magento2/blob/2.4/app/etc/di.xml#L9
-[fluido]: https://www.fluentd.org/
-[laminas]: https://docs.laminas.dev/laminas-log/
-[Logplex]: https://devcenter.heroku.com/articles/logplex
-[Logstash]: https://www.elastic.co/products/logstash
-[Monólogo]: https://github.com/Seldaek/monolog

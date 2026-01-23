@@ -2,7 +2,7 @@
 title: Habilitar generación de perfiles
 description: Obtenga más información sobre cómo habilitar el analizador de imágenes para utilizarlo con sus herramientas analíticas.
 exl-id: a46289ed-16dc-4a72-84ff-85fe825dac11
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
 source-wordcount: '373'
 ht-degree: 0%
@@ -19,11 +19,11 @@ Con los perfiles de Commerce, puede:
 
 - Mostrar gráficos de dependencias en una página de Commerce.
 
-  Un gráfico de dependencias _1&rbrace; es una lista de dependencias de objetos y todas sus dependencias, todas las dependencias de esas dependencias, etc._
+  Un gráfico de dependencias _1} es una lista de dependencias de objetos y todas sus dependencias, todas las dependencias de esas dependencias, etc._
 
   Debería interesarle especialmente la lista de _dependencias sin usar_, que son objetos que se crearon porque se solicitaron en algún constructor, pero que nunca se utilizaron (es decir, no se llamó a ninguno de sus métodos). Como resultado, se desperdician el tiempo y la memoria del procesador empleados para crear estas dependencias.
 
-Commerce proporciona la funcionalidad base en [`Magento\Framework\Profiler`][profiler].
+Commerce proporciona la funcionalidad base en [`Magento\Framework\Profiler`](https://github.com/magento/magento2/blob/2.4.8/lib/internal/Magento/Framework/Profiler.php).
 
 Puede habilitar y configurar el generador de perfiles mediante una variable MAGE_PROFILER o la línea de comandos.
 
@@ -37,8 +37,8 @@ Puede establecer el valor de `MAGE_PROFILER` de cualquiera de las formas descrit
 
   Puede utilizar uno de los siguientes valores para habilitar un generador de perfiles específico:
 
-   - `csvfile` que usa [`Magento\Framework\Profiler\Driver\Standard\Output\Csvfile`][csvfile]
-   - Cualquier otro valor (excepto `2`), incluido un valor vacío, que utilice [`Magento\Framework\Profiler\Driver\Standard\Output\Html`][html]
+   - `csvfile` que usa [`Magento\Framework\Profiler\Driver\Standard\Output\Csvfile`](https://github.com/magento/magento2/blob/2.4.8/lib/internal/Magento/Framework/Profiler/Driver/Standard/Output/Csvfile.php)
+   - Cualquier otro valor (excepto `2`), incluido un valor vacío, que utiliza [`Magento\Framework\Profiler\Driver\Standard\Output\Html`](https://github.com/magento/magento2/blob/2.4.8/lib/internal/Magento/Framework/Profiler/Driver/Standard/Output/Html.php)
 
 - `2` para habilitar los gráficos de dependencias.
 
@@ -81,8 +81,3 @@ Para habilitar los gráficos de dependencias, utilice la opción de variable.
    bin/magento dev:profiler:disable
    ```
 
-<!-- link definitions -->
-
-[csvfile]: https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Profiler/Driver/Standard/Output/Csvfile.php
-[html]: https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Profiler/Driver/Standard/Output/Html.php
-[profiler]: https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Profiler.php

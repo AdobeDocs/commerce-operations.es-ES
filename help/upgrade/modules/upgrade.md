@@ -2,7 +2,7 @@
 title: Actualización de módulos y extensiones
 description: Utilice la interfaz de línea de comandos y el Compositor para actualizar los módulos y las extensiones de Adobe Commerce.
 exl-id: 017d75df-fd21-4fb4-abc9-80a35fc47d0f
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
 source-wordcount: '173'
 ht-degree: 0%
@@ -47,14 +47,14 @@ Para actualizar o actualizar un módulo o una extensión:
 
 ## Extensiones agrupadas de proveedor (VBE)
 
-Adobe eliminó todos los [VBE](https://experienceleague.adobe.com/es/docs/commerce-operations/upgrade-guide/modules/upgrade) en 2.4.4. Los proveedores siguen admitiendo estas extensiones en Adobe Commerce Marketplace.
+Adobe eliminó todos los [VBE](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/modules/upgrade) en 2.4.4. Los proveedores siguen admitiendo estas extensiones en Adobe Commerce Marketplace.
 
 Si desea seguir utilizando estas extensiones con Adobe Commerce 2.4.4 y versiones posteriores, debe actualizar las dependencias de paquete correspondientes en el archivo `composer.json` _antes_ de actualizar a 2.4.4. Póngase en contacto con el proveedor para obtener el nombre y la versión del paquete que desea utilizar.
 
 Consulte los siguientes listados de Adobe Commerce Marketplace para obtener más información:
 
-- [Amazon Pay](https://marketplace.magento.com/amzn-amazon-pay-magento-2-module.html)
-- [Dotdigital](https://marketplace.magento.com/dotdigital-dotdigital-magento2-os-package.html)
-- [Klarna](https://marketplace.magento.com/klarna-m2-klarna.html)
-- [Vértice](https://marketplace.magento.com/vertexinc-vertex-tax-module.html)
-- [Yotpo](https://marketplace.magento.com/yotpo-module-yotpo.html)
+- [Amazon Pay](https://commercemarketplace.adobe.com//amzn-amazon-pay-magento-2-module.html)
+- [Dotdigital](https://commercemarketplace.adobe.com//dotdigital-dotdigital-magento2-os-package.html)
+- [Klarna](https://commercemarketplace.adobe.com//klarna-m2-klarna.html)
+- [Vértice](https://commercemarketplace.adobe.com//vertexinc-vertex-tax-module.html)
+- [Yotpo](https://commercemarketplace.adobe.com//yotpo-module-yotpo.html)

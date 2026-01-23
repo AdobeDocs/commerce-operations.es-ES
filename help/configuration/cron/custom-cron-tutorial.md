@@ -2,16 +2,16 @@
 title: Configuración de un trabajo cron personalizado y un grupo cron (tutorial)
 description: Aprenda a crear trabajos cron personalizados con este tutorial paso a paso para Adobe Commerce. Descubra la configuración del módulo y del grupo cron.
 exl-id: d8efcafc-3ae1-4c2d-a8ad-4a806fb48932
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
-source-wordcount: '820'
+source-wordcount: '821'
 ht-degree: 0%
 
 ---
 
 # Configuración de un trabajo cron personalizado
 
-Este tutorial paso a paso muestra cómo crear un trabajo cron personalizado y, opcionalmente, un grupo cron en un módulo de muestra. Puede usar un módulo que ya tiene o puede usar un módulo de ejemplo de nuestro repositorio [`magento2-samples`][samples].
+Este tutorial paso a paso muestra cómo crear un trabajo cron personalizado y, opcionalmente, un grupo cron en un módulo de muestra. Puede usar un módulo que ya tiene o puede usar un módulo de ejemplo de nuestro repositorio [`magento2-samples`](https://github.com/magento/magento2-samples).
 
 La ejecución del trabajo cron hace que se agregue una fila a la tabla `cron_schedule` con el nombre del trabajo cron `custom_cron`.
 
@@ -33,13 +33,13 @@ Si ya tiene un módulo de ejemplo, puede utilizarlo; omita este paso y el siguie
 
 1. Inicie sesión en el servidor de Commerce como [propietario del sistema de archivos](../../installation/prerequisites/file-system/overview.md) o cambie a él.
 1. Cambie a un directorio que no esté en la raíz de la aplicación de Commerce (por ejemplo, el directorio principal).
-1. Clonar el repositorio [`magento2-samples` ][samples].
+1. Clonar el repositorio [`magento2-samples` ](https://github.com/magento/magento2-samples).
 
    ```bash
    git clone git@github.com:magento/magento2-samples.git
    ```
 
-   Si el comando falla con el error `Permission denied (publickey).`, debe [agregar su clave pública SSH a GitHub.com][git-ssh].
+   Si el comando falla con el error `Permission denied (publickey).`, debe [agregar su clave pública SSH a GitHub.com](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account).
 
 1. Cree un directorio en el que copiar el código de ejemplo:
 
@@ -303,7 +303,3 @@ Para verificar su grupo cron personalizado:
 
    ![Su grupo cron personalizado](../../assets/configuration/cron-group.png)
 
-<!-- link definitions -->
-
-[git-ssh]: https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account
-[samples]: https://github.com/magento/magento2-samples

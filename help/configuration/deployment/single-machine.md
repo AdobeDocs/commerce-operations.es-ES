@@ -3,7 +3,7 @@ title: Implementación de una sola máquina
 description: Obtenga información sobre cómo implementar actualizaciones en Commerce en un servidor de producción mediante la línea de comandos.
 feature: Configuration, Deploy
 exl-id: ca73309c-7584-4506-99de-dd933651eeb6
-source-git-commit: 84a20012a81278cc95587ec14281b05330261687
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
 source-wordcount: '180'
 ht-degree: 1%
@@ -22,7 +22,7 @@ En este tema se proporcionan instrucciones para implementar actualizaciones en C
 >[!WARNING]
 >
 >Esta guía no se aplica si utilizó `git clone` para instalar Commerce.
->Los desarrolladores colaboradores deben usar [esta guía][install] para actualizar su instalación de Commerce.
+>Los desarrolladores colaboradores deben usar [esta guía](https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies) para actualizar su instalación de Commerce.
 
 ## Pasos de implementación
 
@@ -91,6 +91,3 @@ En este tema se proporcionan instrucciones para implementar actualizaciones en C
    bin/magento maintenance:disable
    ```
 
-<!-- link definitions -->
-
-[install]: https://developer.adobe.com/commerce/contributor/guides/install/update-dependencies

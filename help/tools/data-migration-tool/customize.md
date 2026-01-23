@@ -3,7 +3,7 @@ title: Personalizar  [!DNL Data Migration Tool]
 description: Aprenda a personalizar  [!DNL Data Migration Tool]  para transferir datos creados por extensiones entre Magento 1 y Magento 2.
 exl-id: a5c1575f-9d77-416e-91fe-a82905ef2e1c
 topic: Commerce, Migration
-source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
 source-wordcount: '836'
 ht-degree: 0%
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Configurar [!DNL Data Migration Tool]
 
-A veces, el formato de datos y la estructura creados por [extensiones](https://marketplace.magento.com/extensions.html) o código personalizado son diferentes entre Magento 1 y Magento 2. Utilice puntos de extensión dentro de [!DNL Data Migration Tool] para migrar estos datos. Si el formato y la estructura de los datos son los mismos, la herramienta puede migrar automáticamente los datos sin la intervención del usuario.
+A veces, el formato de datos y la estructura creados por [extensiones](https://commercemarketplace.adobe.com//extensions.html) o código personalizado son diferentes entre Magento 1 y Magento 2. Utilice puntos de extensión dentro de [!DNL Data Migration Tool] para migrar estos datos. Si el formato y la estructura de los datos son los mismos, la herramienta puede migrar automáticamente los datos sin la intervención del usuario.
 
 Durante la migración, el [paso de asignación](technical-specification.md#map-step) analiza y compara todas las tablas de Magento 1 y Magento 2, incluidas las creadas por las extensiones. Si las tablas son iguales, la herramienta migra automáticamente los datos. Si las tablas difieren, la herramienta finaliza y se lo comunica al usuario.
 

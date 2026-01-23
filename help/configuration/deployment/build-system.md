@@ -3,9 +3,9 @@ title: Configurar sistema de compilación
 description: Obtenga información sobre cómo implementar Commerce en un sistema de compilación.
 feature: Configuration, Build, Deploy
 exl-id: f6daf5c6-6d12-46b0-b775-76791bacea53
-source-git-commit: dcc283b901917e3681863370516771763ae87462
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
-source-wordcount: '367'
+source-wordcount: '365'
 ht-degree: 0%
 
 ---
@@ -67,11 +67,11 @@ Para instalar Composer:
    mv composer.phar /usr/local/bin/composer
    ```
 
-Para obtener más opciones de instalación, consulte la [documentación de instalación del Compositor][composer].
+Para obtener más opciones de instalación, consulte la [documentación de instalación del Compositor](https://getcomposer.org/download/).
 
 ### Instalar PHP
 
-Instala PHP en [CentOS] o [Ubuntu].
+Instala PHP en [CentOS](https://wiki.centos.org/HowTos/php7) o [Ubuntu](https://help.ubuntu.com/lts/serverguide/php.html).
 
 ### Configurar el sistema de compilación
 
@@ -134,8 +134,3 @@ Para configurar el sistema de compilación:
 
    Se requiere `<mode>`. Puede ser `default` o `developer`.
 
-<!-- Link Definitions -->
-
-[CentOS]: https://wiki.centos.org/HowTos/php7
-[composer]: https://getcomposer.org/download/
-[Ubuntu]: https://help.ubuntu.com/lts/serverguide/php.html

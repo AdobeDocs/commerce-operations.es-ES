@@ -2,7 +2,7 @@
 title: Personalizar rutas de directorio base
 description: Utilice la variable MAGE_DIRS para establecer una matriz de rutas absolutas.
 exl-id: ee8e1a3a-f1d4-412c-8767-16447113f0cd
-source-git-commit: 4116d0983edc797ce42d24e711fb5ecdbf8fdec9
+source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
 workflow-type: tm+mt
 source-wordcount: '116'
 ht-degree: 0%
@@ -15,7 +15,7 @@ La variable de entorno `MAGE_DIRS` le permite especificar rutas de acceso de dir
 
 ## Establecer MAGE_DIRS
 
-Especifique una matriz asociativa donde las claves son constantes de [\\Magento\\App\\Filesystem\\DirectoryList][directory-list] y los valores son rutas absolutas de directorios o sus rutas de URL, respectivamente.
+Especifique una matriz asociativa donde las claves son constantes de [\\Magento\\App\\Filesystem\\DirectoryList](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/Filesystem/DirectoryList.php) y los valores son rutas absolutas de directorios o sus rutas de URL, respectivamente.
 
 Puede establecer `MAGE_DIRS` de cualquiera de las siguientes maneras:
 
@@ -50,6 +50,3 @@ Puede establecer `MAGE_DIRS` de cualquiera de las siguientes maneras:
 
 El ejemplo anterior establece rutas de acceso para los directorios `[cache]` y `[media]` en `/mnt/nfs/cache` y `/mnt/nfs/media`, respectivamente.
 
-<!-- link definitions -->
-
-[directory-list]: https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/App/Filesystem/DirectoryList.php
