@@ -34,7 +34,7 @@ Contiene una matriz de módulos y sus estados. Si el módulo está habilitado, e
 ]
 ```
 
-Más información sobre [Módulos](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html).
+Más información sobre [Módulos](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html?lang=es).
 
 ## ámbitos
 
@@ -82,7 +82,7 @@ Contiene una matriz de valores de configuración de ámbito. Tiene los siguiente
 ]
 ```
 
-Más información sobre [Ámbitos de Commerce](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings).
+Más información sobre [Ámbitos de Commerce](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=es#scope-settings).
 
 ## sistema
 
