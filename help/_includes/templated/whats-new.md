@@ -53,7 +53,7 @@ Esta página contiene los cambios realizados en los últimos 60 días. Excluimos
   </thead>
   <tbody>
     <tr>
-      <td><p>Se agregó <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/acsd-65935-customerorders-graphql-query-returned-an-internal-server-error-when-a-product-was-deleted">descripción detallada del problema corregido por el parche ACSD-65935 en la versión QPT 1.1.67</a>.</p>
+      <td><p>Se agregó <a href="https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-67/acsd-65935-customerorders-graphql-query-returned-an-internal-server-error-when-a-product-was-deleted">descripción detallada del problema corregido por el parche ACSD-65935 en la versión QPT 1.1.67</a>.</p>
 </td>
       <td>
         Tema nuevo, qpt
@@ -61,7 +61,7 @@ Esta página contiene los cambios realizados en los últimos 60 días. Excluimos
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/8921d17196230f97b6f940621e8236c5d85e1b9f">comprometer</a></td>
     </tr>
     <tr>
-      <td><p>Se ha agregado una descripción detallada de la corrección de QPT 1.1.73 para <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/acsd-68190">ACSD-68190: los descuentos no se aplican, los descuentos aplicados no se muestran correctamente en la respuesta de vista del carro de compras de GraphQL y los descuentos sin cupón se eliminan al eliminar un descuento con cupón</a>.</p>
+      <td><p>Se ha agregado una descripción detallada de la corrección de QPT 1.1.73 para <a href="https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/acsd-68190">ACSD-68190: los descuentos no se aplican, los descuentos aplicados no se muestran correctamente en la respuesta de vista del carro de compras de GraphQL y los descuentos sin cupón se eliminan al eliminar un descuento con cupón</a>.</p>
 </td>
       <td>
         Tema nuevo, qpt
