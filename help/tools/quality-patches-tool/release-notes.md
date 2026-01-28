@@ -3,9 +3,9 @@ title: Notas de la versión
 description: Obtenga información acerca de los parches disponibles para Adobe Commerce y los problemas que resuelven.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
 type: Troubleshooting
-source-git-commit: f08af2909959bf8fb14b279f904e91a90f4e3d44
+source-git-commit: a233f39557ef1cc4f27f3e4ce015de554941d676
 workflow-type: tm+mt
-source-wordcount: '29786'
+source-wordcount: '30379'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,30 @@ ht-degree: 0%
 
 >[!INFO]
 >
->Consulte [Aplicar parches](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=es#apply-individual-patches) para obtener instrucciones sobre cómo aplicar parches a sus proyectos de Adobe Commerce. Consulte [[!DNL Quality Patches Tool]: busque parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es) en la Guía de actualización de software para revisar una lista completa de parches publicados.
+>Consulte [Aplicar parches](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches) para obtener instrucciones sobre cómo aplicar parches a sus proyectos de Adobe Commerce. Consulte [[!DNL Quality Patches Tool]: busque parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) en la Guía de actualización de software para revisar una lista completa de parches publicados.
 
 >[!INFO]
 >
 >Para obtener información acerca de [!DNL quality patches] creado por la comunidad para Magento Open Source, consulte las [notas de la versión](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## Versión 1.1.76 {#v1-1-76}
+
+* **ACSD-67091** (para Adobe Commerce y Magento Open Source >=2.4.8 &lt;2.4.9): corrige el error de tamaño máximo del conjunto de escritura para garantizar la limpieza del índice de productos de la regla de catálogo mediante la implementación de dos estrategias de eliminación basadas en el volumen de datos.
+* **ACSD-67370** (para Adobe Commerce y Magento Open Source >=2.4.7 &lt;2.4.9): corrige varios problemas en los que se mostraban precios incorrectos para productos en paquete en PDP/PLP y la página de carro de compras para tiendas en varias monedas.
+* **ACSD-68410** (para Adobe Commerce, B2B >=1.3.3 &lt;1.5.3): corrige un problema en el cual al realizar un pedido de una oferta negociable se agregan o combinan incorrectamente líneas de carro de compras adicionales a la oferta. Los productos ahora se añaden correctamente al carro de compras después de dejar el último paso de cierre de compra de presupuesto negociable.
+* **ACSD-69086** (para Adobe Commerce y Magento Open Source >=2.4.7 &lt;2.4.8): corrige el problema en el que el trabajo cron no borra las tablas changelog, lo que provoca bloqueos del clúster de Galera al administrar grandes cantidades de datos.
+* **ACSD-69115** (para Adobe Commerce >=2.4.4 &lt;2.4.9): corrige un problema en el cual los errores del carro de compras no se mostraban al usuario administrador al administrar el carro de compras para un cliente asignado a un sitio web no predeterminado.
+* **ACSD-69129** (para Adobe Commerce y Magento Open Source >=2.4.5 &lt;2.4.7 || >=2.4.8 &lt;2.4.9): corrige un problema en el que, al eliminar el sitio web base predeterminado y usar el sitio web secundario como predeterminado, se producía un error al intentar actualizar el precio de nivel del sitio web secundario mediante la API de REST.
+* **ACSD-69203** (para Adobe Commerce y Magento Open Source >=2.4.8 &lt;2.4.9): corrige un problema en el cual el widget de lista de productos devolvía resultados incorrectos cuando se enumeraban varias categorías en la condición de categoría.
+* **ACSD-69261** (para Adobe Commerce y Magento Open Source >=2.4.4 &lt;2.4.9): corrige un problema en el cual un cupón de regla de precio de carro de compras configurado para un solo uso por cliente se reutilizó varias veces debido a un manejo incorrecto del atributo `times_used` en los escenarios de factura parcial y cancelación de cantidad restante.
+* **ACSD-69308** (para Adobe Commerce y Magento Open Source >=2.4.4 &lt;2.4.9): corrige un problema en el cual las reglas de precios de catálogo no se aplicaban cuando `special_price` se establecía solamente en el nivel de sitio web (no en &quot;Todas las vistas de tiendas&quot;). Después de la corrección, las reglas de precios de catálogo se aplican correctamente al comprobar primero la tienda predeterminada del sitio web.
+* **ACSD-69319** (para Adobe Commerce y Magento Open Source >=2.4.7 &lt;2.4.9): corrige un problema en el cual los precios de paquetes no se indizaban correctamente cuando los productos secundarios tenían existencias bajo fuentes personalizadas.
+* **ACSD-69325** (para Adobe Commerce y Magento Open Source >=2.4.7 &lt;2.4.9): corrige un problema en el cual al modificar el caso del SKU, el producto aparecía sin existencias en la tienda.
+* **ACSD-69331** (para Adobe Commerce y Magento Open Source >=2.4.5 &lt;2.4.9): corrige un problema en el cual los creadores de contenido en la galería de medios no podían crear carpetas con solo el permiso `create_folder`. Después de la corrección, pueden crear carpetas según lo esperado.
+* **ACSD-69333** (para Adobe Commerce >=2.4.7 &lt;2.4.9): corrige un problema en el cual se permitían cambios de SKU para productos con una actualización programada activa. Después de la corrección, los cambios de SKU están prohibidos durante las actualizaciones activas; los guardados fallan con un error de borrado y el campo SKU del administrador está desactivado. Esto evita las incoherencias en el inventario MSI causadas por los cambios de SKU durante las reversiones de ensayo.
+* **ACSD-69541** (para Adobe Commerce y Magento Open Source >=2.4.4 &lt;2.4.9): corrige un problema en el cual reducir la cantidad de un producto en el administrador a menos de lo que ya existe en un carro de compras hacía imposible editar la cantidad de productos en ese carro de compras a través de GraphQL.
+* Versiones actualizadas: **ACSD-46541**, **ACSD-53750**, **ACSD-66404**
+* Revisiones reemplazadas: **ACSD-66404**, **ACSD-68499**
 
 ## Versión 1.1.75 {#v1-1-75}
 
