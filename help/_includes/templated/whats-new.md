@@ -23,7 +23,7 @@ Esta página contiene los cambios realizados en los últimos 60 días. Excluimos
   </thead>
   <tbody>
     <tr>
-      <td><p>Se agregó una descripción detallada de la corrección de QPT 1.1.75 para <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/acsd-68615">ACSD-68615: La CLI de compensación de reserva de inventario mostró una excepción si la combinación procesada tenía un ID de pedido que faltaba</a>.</p>
+      <td><p>Se agregó una descripción detallada de la corrección de QPT 1.1.75 para <a href="https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/acsd-68615">ACSD-68615: La CLI de compensación de reserva de inventario mostró una excepción si la combinación procesada tenía un ID de pedido que faltaba</a>.</p>
 </td>
       <td>
         Tema nuevo, qpt
