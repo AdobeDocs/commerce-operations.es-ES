@@ -2,7 +2,7 @@
 title: Programación de lanzamiento del parche
 description: Descubra cuándo planea Adobe anunciar el lanzamiento de nuevos parches y correcciones de seguridad para Adobe Commerce.
 exl-id: ae1e09cd-966f-44a3-9e4d-b90bb838429d
-source-git-commit: ee39af1beb8df93b179c2e5dee3942b3f367e51a
+source-git-commit: 1c32f1e506cd3caefacbb250821da087e34c34ea
 workflow-type: tm+mt
 source-wordcount: '337'
 ht-degree: 0%
@@ -18,7 +18,7 @@ El propósito de esta programación es proporcionar fechas para cuándo Adobe pl
 
 >[!NOTE]
 >
->Para obtener más información sobre las nuevas características, la infraestructura en la nube y las versiones de extensibilidad, consulte la [documentación de la versión de Adobe Commerce Services](https://experienceleague.adobe.com/es/docs/commerce/user-guides/release-information/release-notes-all).
+>Para obtener más información sobre las nuevas características, la infraestructura en la nube y las versiones de extensibilidad, consulte la [documentación de la versión de Adobe Commerce Services](https://experienceleague.adobe.com/en/docs/commerce/user-guides/release-information/release-notes-all).
 
 Además de los parches de calidad, seguridad y beta programados que se enumeran en esta página, Adobe proporciona acceso a [parches individuales](versioning-policy.md#individual-patch) mediante la [Herramienta de parches de calidad](../tools/quality-patches-tool/usage.md). La herramienta le permite aplicar, revertir y ver información general sobre todos los parches individuales que están disponibles para la versión instalada de Adobe Commerce.
 
@@ -36,17 +36,17 @@ Consulte la siguiente imagen para obtener más información:
 
 <!-- The SVG source for the following image is located here: /help/assets/release/release-calendar.drawio.svg -->
 
-![Calendario de la versión de Adobe Commerce de 2026](../assets/release/release-calendar.drawio.png)
+![Calendario de la versión de Adobe Commerce de 2026](../assets/release/release-calendar.png)
 
 
 ## Canales de notificación de versiones
 
 Adobe notifica a los clientes sobre las nuevas versiones de parches a través de los siguientes canales:
 
-- [Avisos y boletines de seguridad de Adobe](https://helpx.adobe.com/es/security/security-bulletin.html#magento)
+- [Avisos y boletines de seguridad de Adobe](https://helpx.adobe.com/security/security-bulletin.html#magento)
 - Correo electrónico
 - Alertas en el producto
 
 >[!NOTE]
 >
-> Para ver las fechas de lanzamiento de cada versión secundaria, revisión y de seguridad, y las fechas de fin de la compatibilidad regular, consulte [Versiones publicadas](https://experienceleague.adobe.com/es/docs/commerce-operations/release/versions).
+> Para ver las fechas de lanzamiento de cada versión secundaria, revisión y de seguridad, y las fechas de fin de la compatibilidad regular, consulte [Versiones publicadas](https://experienceleague.adobe.com/en/docs/commerce-operations/release/versions).
