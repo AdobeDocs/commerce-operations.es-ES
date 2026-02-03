@@ -1,5 +1,5 @@
 ---
-source-git-commit: 48dfdd81992a82bf984c3e7b0f30f8e5a69ee735
+source-git-commit: 937e883e74d3a0b32a25dbdf3db0347398ef6ba3
 workflow-type: tm+mt
 source-wordcount: '8232'
 ht-degree: 1%
@@ -24,9 +24,7 @@ Utilice la guía [&quot;Agregar comandos CLI&quot;](https://developer.adobe.com/
 
 Puede llamar a `bin/magento` comandos de CLI mediante métodos abreviados en lugar del nombre completo del comando. Por ejemplo, puede llamar a `bin/magento setup:upgrade` usando `bin/magento s:up`, `bin/magento s:upg`. Consulte [sintaxis de método abreviado](https://symfony.com/doc/current/components/console/usage.html#shortcut-syntax) para saber cómo utilizar los métodos abreviados con cualquier comando de CLI.
 
-Esta documentación de referencia se genera a partir del código fuente de la aplicación. Para cambiar la documentación, debe abrir
-una solicitud de extracción para el comando correspondiente en el repositorio [codebase](https://github.com/magento) correspondiente. Consulte
-[Contribuciones de código](https://developer.adobe.com/commerce/contributor/guides/code-contributions/) para obtener más información.
+Esta documentación de referencia se genera a partir del código fuente de la aplicación. Para cambiar la documentación, debe abrir una solicitud de extracción para el comando correspondiente en el repositorio [codebase](https://github.com/magento) correspondiente. Consulte [Contribuciones de código](https://developer.adobe.com/commerce/contributor/guides/code-contributions/) para obtener más información.
 
 ### Opciones globales
 
