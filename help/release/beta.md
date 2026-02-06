@@ -2,9 +2,9 @@
 title: Versiones de Beta
 description: Obtenga información sobre las versiones beta de Adobe Commerce y cómo participar.
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
-source-git-commit: 937e883e74d3a0b32a25dbdf3db0347398ef6ba3
+source-git-commit: c5d43d79679a1036f207313464f2a43bc197a3b5
 workflow-type: tm+mt
-source-wordcount: '887'
+source-wordcount: '935'
 ht-degree: 0%
 
 ---
@@ -28,6 +28,10 @@ El acceso anticipado a las funciones que Adobe está desarrollando permite a los
 
 Consulte las secciones siguientes para obtener una lista de los programas beta activos.
 
+### Almacenamiento de la base de datos para App Builder (Beta público)
+
+[Almacenamiento de la base de datos para App Builder](https://developer.adobe.com/app-builder/docs/guides/app_builder_guides/storage/database) es un nuevo almacén de datos administrado y de estilo documento integrado en Adobe Developer App Builder que proporciona a sus aplicaciones Commerce un almacenamiento persistente y consultable de datos JSON estructurados. Todos los clientes con una licencia de App Builder pueden aprovisionar esta función.
+
 ### Búsqueda semántica: experiencias de compra más inteligentes y según el contexto (beta privada)
 
 La búsqueda semántica es una tecnología de búsqueda de comercio electrónico que comprende el *significado* detrás de la consulta de un comprador, no solo las palabras exactas. A diferencia de la búsqueda tradicional basada en palabras clave, que a menudo falla cuando las consultas incluyen términos desconocidos o mal escritos, este enfoque impulsado por IA interpreta la intención mediante el procesamiento de lenguaje natural (NLP) y el contexto para ofrecer resultados más relevantes.
@@ -43,9 +47,9 @@ Para solicitar una invitación para el programa beta, envíe un correo electrón
 
 ### Servicio de parches de automatización de la nube (Private Beta)
 
-El servicio de parches de automatización de la nube [Cloud](../tools/caps-tool/intro.md) automatiza el proceso de aplicar parches de seguridad aislados a los entornos de [Adobe Commerce en la infraestructura de la nube](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/overview).
+El servicio de parches de automatización de la nube [Cloud](../tools/caps-tool/intro.md) automatiza el proceso de aplicar parches de seguridad aislados a los entornos de [Adobe Commerce en la infraestructura de la nube](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview).
 
-En octubre de 2025, la versión beta del servicio de parches de automatización de la nube se agregará al [panel de herramientas de análisis en todo el sitio](https://experienceleague.adobe.com/es/docs/commerce-operations/tools/site-wide-analysis-tool/dashboard). Este servicio es compatible con los administradores de proyectos de Commerce con un flujo de trabajo optimizado de parches que incluye:
+En octubre de 2025, la versión beta del servicio de parches de automatización de la nube se agregará al [panel de herramientas de análisis en todo el sitio](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/dashboard). Este servicio es compatible con los administradores de proyectos de Commerce con un flujo de trabajo optimizado de parches que incluye:
 
 - Instalación automatizada de parches
 - Recuperación de reversión
@@ -60,7 +64,7 @@ La versión beta incluye las siguientes funciones:
 
 >[!NOTE]
 >
->Dado que el servicio de parches de automatización de la nube aplica automáticamente parches de seguridad aislados, debe tener la función [Colaborador o Administrador de proyecto](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/project/user-access) para poder usarlos.
+>Dado que el servicio de parches de automatización de la nube aplica automáticamente parches de seguridad aislados, debe tener la función [Colaborador o Administrador de proyecto](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/user-access) para poder usarlos.
 
 Para participar en esta versión beta, completa y envía el [Servicio de parches de automatización de la nube - Formulario de suscripción de Beta](https://forms.office.com/r/3Wfxj5nPdB).
 
@@ -84,7 +88,7 @@ Cada versión alfa y beta de Adobe Commerce Foundation incluye todos los cambios
 - Mejoras de GraphQL
 - Correcciones de errores de calidad generales
 - Contribuciones comunitarias
-- Cambios necesarios para admitir la compatibilidad con [servicios de Adobe Commerce](https://experienceleague.adobe.com/es/docs/commerce/user-guides/home)
+- Cambios necesarios para admitir la compatibilidad con [servicios de Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce/user-guides/home)
 
 #### Convenciones y programación de nombres
 
