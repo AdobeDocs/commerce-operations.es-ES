@@ -2,9 +2,9 @@
 user-guide-title: Herramientas
 user-guide-description: Obtenga información sobre las distintas herramientas que puede utilizar con Adobe Commerce, sus usos, el proceso de instalación y cómo obtener acceso.
 feature: Configuration
-source-git-commit: 5ec2de54f7e0e81187bdb61bccfd66a75d28b4de
+source-git-commit: 57f258be67804028e38bb75a7da3a7de128f3fef
 workflow-type: tm+mt
-source-wordcount: '9065'
+source-wordcount: '9053'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ ht-degree: 0%
    - [Alertas administradas para Adobe Commerce: alerta de advertencia de CPU](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-cpu-warning-alert.md)
 - Herramienta Parches de calidad {#quality-patches-tool}
    - [[!DNL Quality Patches Tool]: herramienta de autoservicio para parches de calidad](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)
-   - [[!DNL Quality Patches Tool]: buscar parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es){target="_blank"}
+   - [[!DNL Quality Patches Tool]: buscar parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
    - [Uso](quality-patches-tool/usage.md)
    - [Notas de la versión](quality-patches-tool/release-notes.md)
    - Parches disponibles en la herramienta Parches de calidad {#patches-available-in-qpt}
@@ -916,12 +916,12 @@ ht-degree: 0%
          - [ACSD-67696: las entradas de media_gallery no se devuelven en el nodo de producto de Cart GraphQL después de un vaciado de caché](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-72/acsd-67696.md)
       - Versión 1.1.73 {#v1-1-73}
          - [Información general:  [!DNL Quality Patches Tool] (QPT) v1.1.73](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/overview.md)
-         - [ACSD-68190: no se aplican descuentos, los descuentos aplicados no se muestran correctamente en la respuesta de vista del carro de compras de GraphQL y los descuentos no relacionados con cupones se eliminan al eliminar un descuento de cupón](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/acsd-68190.md)
+         - [ACSD-68190: Los descuentos no se aplican correctamente y se eliminan después de eliminar el cupón en la vista del carro de compras de GraphQL](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/acsd-68190.md)
          - [ACSD-68391: los permisos relacionados con categorías no se aplicaron en [!UICONTROL Quick Order] y [!UICONTROL Requisition Lists]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/acsd-68391.md)
          - [ACSD-67908: Los archivos de JavaScript no se combinan correctamente en configuraciones de varias tiendas](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/acsd-67908.md)
          - [ACSD-68206: [!DNL GraphQL] el servidor falla con la limitación de velocidad y la extensión PHP Redis](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/acsd-68206.md)
          - [ACSD-67171: la sesión  [!DNL B2B] caducada durante la desprotección redirige a la página Acceso denegado en lugar de iniciar sesión](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/acsd-67171.md)
-         - [ACSD-68400: la cantidad de la tarjeta regalo virtual no se reflejaba con precisión en la tabla de reserva de inventario](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/acsd-68400.md)
+         - [ACSD-68400: La cantidad de tarjetas de regalo virtuales no se refleja con precisión en la tabla de reservas de inventario](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/acsd-68400.md)
          - [ACSD-68356: [!DNL GraphQL] la consulta del carro de compras devuelve una cantidad de descuento incorrecta para las cotizaciones virtuales](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/acsd-68356.md)
       - Versión 1.1.74 {#v1-1-74}
          - [Información general:  [!DNL Quality Patches Tool] (QPT) v1.1.74](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-74/overview.md)
@@ -981,6 +981,6 @@ ht-degree: 0%
       - [Datos que requieren una migración manual](data-migration-tool/migrate-data/manual.md)
       - [Pasos de la migración posterior a los datos](data-migration-tool/migrate-data/post-migration.md)
    - Recursos {#resources}
-      - [Solución de problemas](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html?lang=es)
+      - [Solución de problemas](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html)
       - [Registro de cambios](https://github.com/magento/data-migration-tool/blob/2.4/CHANGELOG.md)
-- [Volver a las guías operativas](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=es)
+- [Volver a las guías operativas](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
