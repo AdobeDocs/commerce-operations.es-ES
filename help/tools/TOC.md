@@ -2,9 +2,9 @@
 user-guide-title: Herramientas
 user-guide-description: Obtenga información sobre las distintas herramientas que puede utilizar con Adobe Commerce, sus usos, el proceso de instalación y cómo obtener acceso.
 feature: Configuration
-source-git-commit: d3376b2ae1b4e95be0326d17f64e2033201ffe81
+source-git-commit: 588320e7221f492cd8c3f50e4175eadf4d1b7cfe
 workflow-type: tm+mt
-source-wordcount: '9095'
+source-wordcount: '9118'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ ht-degree: 0%
    - [Alertas administradas para Adobe Commerce: alerta de advertencia de CPU](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-cpu-warning-alert.md)
 - Herramienta Parches de calidad {#quality-patches-tool}
    - [[!DNL Quality Patches Tool]: herramienta de autoservicio para parches de calidad](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)
-   - [[!DNL Quality Patches Tool]: buscar parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es){target="_blank"}
+   - [[!DNL Quality Patches Tool]: buscar parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
    - [Uso](quality-patches-tool/usage.md)
    - [Notas de la versión](quality-patches-tool/release-notes.md)
    - Parches disponibles en la herramienta Parches de calidad {#patches-available-in-qpt}
@@ -931,6 +931,7 @@ ht-degree: 0%
          - [ACSD-68636: falta el nombre del propietario de la tienda en los encabezados de correo electrónico de las tarjetas regalo cuando se crea la factura desde otra tienda](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-74/acsd-68636.md)
       - Versión 1.1.75 {#v1-1-75}
          - [Información general:  [!DNL Quality Patches Tool] (QPT) v1.1.75](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/overview.md)
+         - [ACSD-68573: Los permisos de categoría no se aplicaban a los elementos de la lista de deseos del cliente, lo que provocaba una visualización y paginación incorrectas en la tienda web y en GraphQL](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/acsd-68573.md)
          - [ACSD-68793: los productos válidos se rechazan incorrectamente durante la asignación del catálogo compartido](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/acsd-68793.md)
          - [ACSD-68925: Las respuestas de GraphQL ahora siguen las especificaciones HTTP, y devuelven 4XX para solicitudes no analizables, no autorizadas o no válidas](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/acsd-68925.md)
          - [ACSD-68289: la búsqueda de texto completo no devuelve resultados cuando se aplica una coincidencia mínima en todos los campos en los que se puede buscar](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/acsd-68289.md)
@@ -984,6 +985,6 @@ ht-degree: 0%
       - [Datos que requieren una migración manual](data-migration-tool/migrate-data/manual.md)
       - [Pasos de la migración posterior a los datos](data-migration-tool/migrate-data/post-migration.md)
    - Recursos {#resources}
-      - [Solución de problemas](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html?lang=es)
+      - [Solución de problemas](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html)
       - [Registro de cambios](https://github.com/magento/data-migration-tool/blob/2.4/CHANGELOG.md)
-- [Volver a las guías operativas](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=es)
+- [Volver a las guías operativas](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

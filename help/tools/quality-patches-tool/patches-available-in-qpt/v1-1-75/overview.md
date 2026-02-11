@@ -4,9 +4,9 @@ description: Esta subsección proporciona una descripción detallada de los prob
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: d952deb1c82ce0d99c3e13909cfc18b7a48034c3
+source-git-commit: 588320e7221f492cd8c3f50e4175eadf4d1b7cfe
 workflow-type: tm+mt
-source-wordcount: '308'
+source-wordcount: '299'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ QPT v1.1.75 incluye los siguientes parches:
 1. **ACSD-68451**: corrige un problema en varios sitios web donde el administrador de una compañía inicia sesión en un sitio web, crea una compañía no relacionada en otro sitio web pero está vinculada erróneamente a esa compañía no relacionada.
 1. **ACSD-68490**: **[!UICONTROL Add New Attribute]** botón visible para el administrador restringido durante la creación de productos configurables.
 1. **ACSD-68517**: corrige un error de reenvío de formulario en las páginas Catálogo y Búsqueda en catálogo.
-1. **ACSD-68573**: corrige el problema en el cual los permisos de categoría no se aplicaban correctamente a los elementos de la lista de deseos del cliente. Después de la corrección, los elementos de la lista de deseos se muestran y paginan correctamente en la web y en GraphQL.
+1. **ACSD-68573**: los permisos de categoría no se aplicaron a los elementos de la lista de deseos del cliente, lo que provocó una visualización y paginación incorrectas en la tienda web y en [!DNL GraphQL].
 1. **ACSD-68615**: corrige el problema en el que la CLI de compensación de reserva de inventario mostraba una excepción si la combinación procesada tenía un identificador de pedido que faltaba.
 1. **ACSD-68793**: corrige un problema en el cual los productos válidos se rechazaban incorrectamente al asignarlos a un catálogo compartido.
 1. **ACSD-68925**: corrige un problema en el cual las respuestas para solicitudes de GraphQL ahora están alineadas con las especificaciones de GraphQL sobre HTTP. Se devuelve un código de respuesta 4XX cuando la solicitud no se puede analizar, no está autorizada o encuentra un problema general si se analiza la solicitud.
