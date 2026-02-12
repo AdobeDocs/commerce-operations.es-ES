@@ -2,9 +2,9 @@
 title: Programación de lanzamiento del parche
 description: Descubra cuándo planea Adobe anunciar el lanzamiento de nuevos parches y correcciones de seguridad para Adobe Commerce.
 exl-id: ae1e09cd-966f-44a3-9e4d-b90bb838429d
-source-git-commit: 1c32f1e506cd3caefacbb250821da087e34c34ea
+source-git-commit: 8ee6404271170b19ff27a3ab64711061505494b3
 workflow-type: tm+mt
-source-wordcount: '337'
+source-wordcount: '336'
 ht-degree: 0%
 
 ---
@@ -18,13 +18,13 @@ El propósito de esta programación es proporcionar fechas para cuándo Adobe pl
 
 >[!NOTE]
 >
->Para obtener más información sobre las nuevas características, la infraestructura en la nube y las versiones de extensibilidad, consulte la [documentación de la versión de Adobe Commerce Services](https://experienceleague.adobe.com/es/docs/commerce/user-guides/release-information/release-notes-all).
+>Para obtener más información sobre las nuevas características, la infraestructura en la nube y las versiones de extensibilidad, consulte la [documentación de la versión de Adobe Commerce Services](https://experienceleague.adobe.com/en/docs/commerce/user-guides/release-information/release-notes-all).
 
 Además de los parches de calidad, seguridad y beta programados que se enumeran en esta página, Adobe proporciona acceso a [parches individuales](versioning-policy.md#individual-patch) mediante la [Herramienta de parches de calidad](../tools/quality-patches-tool/usage.md). La herramienta le permite aplicar, revertir y ver información general sobre todos los parches individuales que están disponibles para la versión instalada de Adobe Commerce.
 
-Adobe Commerce sigue una programación mensual de versiones de parches con la siguiente estrategia:
+Las versiones de parches de Adobe Commerce se publican en función de las siguientes directrices:
 
-- **Correcciones de seguridad aisladas**: [correcciones de seguridad](versioning-policy.md#isolated-patch) individuales y no acumulativas se pueden publicar mensualmente e incluir correcciones de seguridad para todas las [líneas de versión admitidas](lifecycle-policy.md) (incluye soporte regular y extendido).
+- **Correcciones de seguridad aisladas**: las [correcciones de seguridad](versioning-policy.md#isolated-patch) individuales y no acumulativas se publican según sea necesario e incluyen correcciones de seguridad para todas las [líneas de versión admitidas](lifecycle-policy.md) (incluye compatibilidad regular y extendida).
 
 - **Parches de seguridad**: como mínimo, [los parches de seguridad](versioning-policy.md#security-patch-release) se lanzan anualmente (mayo) para todas las [líneas de versión admitidas](lifecycle-policy.md). Estos parches incluyen todas las correcciones de seguridad aisladas publicadas anteriormente. Adobe puede lanzar parches de seguridad adicionales en noviembre si es necesario, pero no está garantizado.
 
@@ -43,10 +43,10 @@ Consulte la siguiente imagen para obtener más información:
 
 Adobe notifica a los clientes sobre las nuevas versiones de parches a través de los siguientes canales:
 
-- [Avisos y boletines de seguridad de Adobe](https://helpx.adobe.com/es/security/security-bulletin.html#magento)
+- [Avisos y boletines de seguridad de Adobe](https://helpx.adobe.com/security/security-bulletin.html#magento)
 - Correo electrónico
 - Alertas en el producto
 
 >[!NOTE]
 >
-> Para ver las fechas de lanzamiento de cada versión secundaria, revisión y de seguridad, y las fechas de fin de la compatibilidad regular, consulte [Versiones publicadas](https://experienceleague.adobe.com/es/docs/commerce-operations/release/versions).
+> Para ver las fechas de lanzamiento de cada versión secundaria, revisión y de seguridad, y las fechas de fin de la compatibilidad regular, consulte [Versiones publicadas](https://experienceleague.adobe.com/en/docs/commerce-operations/release/versions).
