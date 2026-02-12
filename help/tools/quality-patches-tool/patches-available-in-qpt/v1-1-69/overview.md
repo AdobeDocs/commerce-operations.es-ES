@@ -4,9 +4,9 @@ description: Esta subsección proporciona una descripción detallada de los prob
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 39af00ed-3559-462e-9627-e32d6e7c71a8
-source-git-commit: e72c99bbb5e82cd2dc77e33b7d17dfe8955e945a
+source-git-commit: ac3f3b37b5c5705722b411f92be0ba21c6155449
 workflow-type: tm+mt
-source-wordcount: '278'
+source-wordcount: '257'
 ht-degree: 0%
 
 ---
@@ -16,17 +16,16 @@ ht-degree: 0%
 Esta subsección proporciona una descripción detallada de los problemas corregidos por los parches disponibles en [!DNL Quality Patches Tool] (QPT) v1.1.69.
 
 QPT v1.1.69 incluye los siguientes parches:
+
 1. **AC-15223**: La página de la tienda muestra contenido almacenado en caché después de cambiar de tienda.
 1. **ACP2E-3731**: las exportaciones de productos con visibilidad de *[!UICONTROL Catalog, Search]* incluyen registros de otras vistas de tiendas.
 1. **ACP2E-3767**: La última opción de paquete vuelve a aparecer después de guardar un producto de paquete.
 1. **ACP2E-3964**: productos secundarios configurables con vídeo no enumerados mediante la API de REST.
 1. **ACP2E-3977**: **[!UICONTROL Cap Reward Points Balance At]** no se puede dejar vacío.
 1. **ACP2E-4050**: **[!UICONTROL Free Shipping]** no se aplicó con el cierre de compra de varias direcciones.
-1. **ACP2E-3977**: el campo [!UICONTROL Cap Reward Points Balance At] no puede dejarse vacío.
-1. **ACP2E-4050**: Las reglas de precios del carro de compras fallan para el envío múltiple con paquetes de productos y envío gratuito.
 1. **ACSD-56226**: las consultas READ devuelven datos obsoletos con `synchronous_replication` habilitado.
 1. **ACSD-57477**: el procesamiento de reglas de ventas ralentiza el rendimiento en las solicitudes relacionadas con el carro de compras.
-1. **[ACSD-58108](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-69/acsd-58108-missing-join-table-name-causes-sql-errors-in-order-grid-custom-module-extension.md)**: Si falta el nombre de la tabla de combinación, se producen errores de SQL en la extensión del módulo personalizado de cuadrícula de pedidos.
+1. **ACSD-58108**: Si falta el nombre de la tabla de combinación, se producen errores de SQL en la extensión del módulo personalizado de cuadrícula de pedidos.
 1. **ACSD-65983**: Se produce un error al volver a configurar la oferta de productos agrupados en el administrador.
 1. **ACSD-66149**: el controlador IPN devuelve 500 para tipos no compatibles.
 1. **ACSD-66153**: la página devuelve un error 500 debido a una estructura de diseño incorrecta en la caché.

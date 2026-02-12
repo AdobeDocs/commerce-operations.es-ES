@@ -4,7 +4,7 @@ description: Esta subsección proporciona una descripción detallada de los prob
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: b5b80bfa-a52c-466b-b95c-23590e850aed
-source-git-commit: 8e7cec268cf4d0022cf5037f5effcaa8a13b55ca
+source-git-commit: ac3f3b37b5c5705722b411f92be0ba21c6155449
 workflow-type: tm+mt
 source-wordcount: '179'
 ht-degree: 0%
@@ -16,6 +16,7 @@ ht-degree: 0%
 Esta subsección proporciona una descripción detallada de los problemas corregidos por los parches disponibles en [!DNL Quality Patches Tool] (QPT) v1.1.66.
 
 QPT v1.1.66 incluye los siguientes parches:
+
 1. **ACP2E-3918**: Error de cierre de compra para los clientes de la empresa que utilizan recogida en la tienda.
 1. **ACP2E-3789**: Archivos de medios duplicados al actualizar el producto mediante WebAPI.
 1. **ACSD-65750**: la consulta &quot;route&quot; de GraphQL devolvió productos desordenados en los tipos de contenido de productos de Page Builder.
