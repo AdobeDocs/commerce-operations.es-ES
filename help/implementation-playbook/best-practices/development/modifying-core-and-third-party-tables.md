@@ -5,9 +5,9 @@ role: Developer, Architect
 feature: Best Practices
 last-substantial-update: 2022-11-15T00:00:00Z
 exl-id: 9e7adaaa-b165-4293-aa98-5dc4b8c23022
-source-git-commit: d40de2f05147e6c58c15cd3cd59275cc91283162
+source-git-commit: a1357a85dc447c8a0f2d48ea4de1c6cf076a5de5
 workflow-type: tm+mt
-source-wordcount: '1420'
+source-wordcount: '1509'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ Dos ejemplos de ubicaciones de almacenamiento son las tablas de base de datos y 
 
 Como desarrollador, es vital considerar siempre el uso de herramientas fuera de su entorno de [!DNL Adobe Commerce], como GraphQL mesh y Adobe App Builder. Estas herramientas pueden ayudarle a conservar el acceso a los datos, pero no afectan a la aplicación principal de comercio ni a sus tablas de base de datos subyacentes. Con este enfoque, expone sus datos a través de una API. A continuación, agregue una fuente de datos a la configuración de App Builder. Con GraphQL Mesh, puedes combinar esas fuentes de datos y producir una única respuesta como se menciona en [datos heredados](#legacy-data).
 
-Para obtener más información sobre GraphQL mesh, consulte [GraphQL Mesh Gateway](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}. Para obtener información acerca de Adobe App Builder, consulte [Presentación de App Builder](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/introduction-app-builder.html?lang=es){target="_blank"}.
+Para obtener más información sobre GraphQL mesh, consulte [GraphQL Mesh Gateway](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}. Para obtener información acerca de Adobe App Builder, consulte [Presentación de App Builder](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/introduction-app-builder.html){target="_blank"}.
 
 ## Modificación de una tabla principal o de una tabla de terceros
 
@@ -73,7 +73,7 @@ Adobe recomienda seguir estos pasos cuando agregue una columna a una tabla de la
 
    Por ejemplo: `app/code/YourCompany/Customer`
 
-1. Cree los archivos apropiados para habilitar el módulo (consulte [Crear un módulo](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html?lang=es){target="_blank"}.
+1. Cree los archivos apropiados para habilitar el módulo (consulte [Crear un módulo](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html){target="_blank"}.
 
 1. Cree un archivo denominado `db_schema.xml` en la carpeta `etc` y realice los cambios correspondientes.
 
@@ -152,3 +152,18 @@ MariaDB [magento]> SELECT DISTINCT TABLE_NAME FROM INFORMATION_SCHEMA.COLUMNS WH
 +------------------------+
 10 rows in set (0.020 sec)
 ```
+
+## Buscar tablas MySQL grandes
+
+Para identificar las tablas grandes, conéctese a la base de datos como se describe en el artículo [Conectarse a la base de datos](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/mysql#connect-to-the-database) y ejecute el siguiente comando. Usar `project_id` para el entorno de producción. Para entornos de ensayo, use `[project_id]_stg`, `[project_id]_stg2`.
+
+```sql
+SELECT TABLE_NAME AS `Table`,
+  ROUND((DATA_LENGTH + INDEX_LENGTH) / 1024 / 1024) AS `Size (MB)`
+FROM information_schema.TABLES
+WHERE TABLE_SCHEMA = "<project_id>"
+ORDER BY (DATA_LENGTH + INDEX_LENGTH) DESC
+LIMIT 10;
+```
+
+Esto mostrará las 10 tablas más grandes. Si necesita ver más tablas, aumente el número `LIMIT`. Sin límite, el comando mostrará todas las tablas existentes (más de 100). También mostrará el tamaño de cada tabla. Puede revisar la lista e identificar qué tablas requieren atención según el tamaño.
