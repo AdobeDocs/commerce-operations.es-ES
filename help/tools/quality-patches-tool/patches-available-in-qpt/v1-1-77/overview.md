@@ -4,9 +4,9 @@ description: Esta subsección proporciona una descripción detallada de los prob
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: ba9d41179fe253634b9de3e3711c19b6fe797a69
+source-git-commit: cb5efec8e323dbe49fe38a4cf2977718b28c835f
 workflow-type: tm+mt
-source-wordcount: '191'
+source-wordcount: '193'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ QPT v1.1.77 incluye los siguientes parches:
 1. **ACSD-69016**: el precio especial no se aplica en sitios web con diferentes zonas horarias.
 1. **ACSD-69020**: los productos configurables aparecen en [!UICONTROL Page Builder] carruseles cuando los productos secundarios coinciden con los filtros.
 1. **ACSD-69237**: `sales_*_async_insert` trabajos cron solo procesan 100 entradas por ejecución.
-1. **ACSD-69311**: cálculo de impuestos incorrecto en las notas de abono después de los reembolsos parciales de las facturas.
+1. **[ACSD-69311](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69311.md)**: corrige el cálculo de impuestos incorrecto en las notas de abono después de los reembolsos parciales de las facturas.
 1. **ACSD-69351**: los saldos de las tarjetas regalo y las fechas de caducidad se muestran en sitios web incorrectos.
 1. **ACSD-69494**: Las solicitudes de reembolso asincrónico con `is_online` no almacenan en déclencheur los reembolsos en línea.
 
