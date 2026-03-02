@@ -4,9 +4,9 @@ description: Esta subsección proporciona una descripción detallada de los prob
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: aeda6ddd9bac7e5f81329d9bd05ab8957ef2fb76
+source-git-commit: 27356acfca4b9e640478010579b0f419749930d3
 workflow-type: tm+mt
-source-wordcount: '472'
+source-wordcount: '481'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ QPT v1.1.76 incluye los siguientes parches:
 1. **ACSD-69319**: corrige un problema en el que los precios de los paquetes no se indizaron correctamente cuando los productos secundarios tenían existencias de fuentes personalizadas.
 1. **ACSD-69325**: corrige un problema en el cual al modificar el caso del SKU, el producto aparece sin existencias en la tienda.
 1. **ACSD-69331**: corrige un problema en el cual los creadores de contenido de la galería de medios no podían crear carpetas con el permiso `create_folder` solamente. Después de la corrección, pueden crear carpetas según lo esperado.
-1. **ACSD-69333**: corrige un problema en el cual se permitían cambios de SKU para productos con una actualización programada activa. Después de la corrección, los cambios de SKU están prohibidos durante las actualizaciones activas; los guardados fallan con un error de borrado y el campo SKU del administrador está desactivado. Esto evita MSI.
+1. **[ACSD-69333](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69333.md)**: corrige un problema en el cual se permitían cambios de SKU para productos con una actualización programada activa. Después de la corrección, los cambios de SKU están prohibidos durante las actualizaciones activas; los guardados fallan con un error de borrado y el campo SKU del administrador está desactivado. Esto evita las incoherencias del inventario MSI causadas por los cambios de SKU durante las reversiones de ensayo.
 1. **ACSD-69541**: corrige un problema en el cual reducir la cantidad de un producto en el administrador a menos de lo que ya existe en un carro de compras hacía imposible editar la cantidad de productos en ese carro de compras a través de GraphQL.
 
 Utilice el menú de la izquierda para navegar a una página específica del parche.
