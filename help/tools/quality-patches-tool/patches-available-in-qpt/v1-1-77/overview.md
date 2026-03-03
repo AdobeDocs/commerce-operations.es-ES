@@ -4,7 +4,7 @@ description: Esta subsección proporciona una descripción detallada de los prob
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 77e2401d76a95ff15ba47a3ee0e2c228b2ecd39f
+source-git-commit: da3647e87926e35309a138a9d9aff4dbf44a5334
 workflow-type: tm+mt
 source-wordcount: '197'
 ht-degree: 0%
@@ -20,7 +20,7 @@ QPT v1.1.77 incluye los siguientes parches:
 1. **ACSD-63687**: corrige un problema en el que se muestran precios incorrectos porque la limpieza de la caché de [!DNL Redis] falla.
 1. **ACSD-68341**: se producen varias actualizaciones de la cookie `X‑Magento‑Vary` al cargar PDP.
 1. **ACSD-68537**: el rendimiento de cierre de compra se degrada con muchos segmentos de clientes.
-1. **ACSD-68664**: La vista previa de la actualización programada tiene errores en los dominios de almacenamiento personalizados.
+1. **[ACSD-68664](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68664.md)**: La vista previa de la actualización programada tiene errores en los dominios de almacenamiento personalizados.
 1. **ACSD-68759**: error de creación de cuenta de cliente con configuración regional árabe cuando se muestra la fecha de nacimiento.
 1. **ACSD-68892**: Comportamiento de almacenamiento en caché [!DNL Fastly] incoherente para páginas almacenables en caché.
 1. **ACSD-69016**: el precio especial no se aplica en sitios web con diferentes zonas horarias.
