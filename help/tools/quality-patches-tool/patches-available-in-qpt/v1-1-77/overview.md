@@ -4,9 +4,9 @@ description: Esta subsección proporciona una descripción detallada de los prob
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: f7205d2558f79798cf25c7c51326eae9fcfa8d19
+source-git-commit: 77e2401d76a95ff15ba47a3ee0e2c228b2ecd39f
 workflow-type: tm+mt
-source-wordcount: '195'
+source-wordcount: '197'
 ht-degree: 0%
 
 ---
@@ -17,8 +17,8 @@ Esta subsección proporciona una descripción detallada de los problemas corregi
 
 QPT v1.1.77 incluye los siguientes parches:
 
-1. **ACSD-63687**: se muestran precios incorrectos debido a [!DNL Redis] problemas de limpieza de caché.
-1. **[ACSD-68341](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68341.md)**: se producen varias actualizaciones de la cookie `X‑Magento‑Vary` al cargar PDP.
+1. **ACSD-63687**: corrige un problema en el que se muestran precios incorrectos porque la limpieza de la caché de [!DNL Redis] falla.
+1. **ACSD-68341**: se producen varias actualizaciones de la cookie `X‑Magento‑Vary` al cargar PDP.
 1. **ACSD-68537**: el rendimiento de cierre de compra se degrada con muchos segmentos de clientes.
 1. **ACSD-68664**: La vista previa de la actualización programada tiene errores en los dominios de almacenamiento personalizados.
 1. **ACSD-68759**: error de creación de cuenta de cliente con configuración regional árabe cuando se muestra la fecha de nacimiento.
@@ -26,7 +26,7 @@ QPT v1.1.77 incluye los siguientes parches:
 1. **ACSD-69016**: el precio especial no se aplica en sitios web con diferentes zonas horarias.
 1. **ACSD-69020**: los productos configurables aparecen en [!UICONTROL Page Builder] carruseles cuando los productos secundarios coinciden con los filtros.
 1. **ACSD-69237**: `sales_*_async_insert` trabajos cron solo procesan 100 entradas por ejecución.
-1. **[ACSD-69311](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69311.md)**: corrige el cálculo de impuestos incorrecto en las notas de abono después de los reembolsos parciales de las facturas.
+1. **ACSD-69311**: corrige el cálculo de impuestos incorrecto en las notas de abono después de los reembolsos parciales de las facturas.
 1. **ACSD-69351**: los saldos de las tarjetas regalo y las fechas de caducidad se muestran en sitios web incorrectos.
 1. **[ACSD-69494](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69494.md)**: corrige las solicitudes de reembolso asincrónicas con `is_online` no déclencheur reembolsos en línea.
 
