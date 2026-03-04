@@ -1,13 +1,13 @@
 ---
-title: 'ACSD-64112: &grave;indexer_update_all_views&grave; la ejecución de cron falla cuando se establece "MAGE_INDEXER_THREADS_COUNT"'
+title: 'ACSD-64112: `indexer_update_all_views` la ejecución de cron falla cuando se establece "MAGE_INDEXER_THREADS_COUNT"'
 description: Aplique el parche ACSD-64112 para corregir el problema de Adobe Commerce donde la ejecución de cron "indexer_update_all_views" falla cuando se establece "MAGE_INDEXER_THREADS_COUNT".
 feature: Catalog Management, B2B
 role: Admin, Developer
 exl-id: c95f179d-5291-481f-b655-08a9db608513
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 8124ce31fbe3a94638fba057419efa7f2a139b84
 workflow-type: tm+mt
-source-wordcount: '387'
+source-wordcount: '397'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ El parche ACSD-64112 corrige el problema en el que la ejecución de `indexer_upd
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
@@ -88,7 +88,7 @@ report.CRITICAL: PDOException: There is no active transaction in /home/vendor/ma
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
 * Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía [!DNL Quality Patches Tool].
-* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=es) en la guía Commerce en la infraestructura de la nube.
+* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) en la guía Commerce en la infraestructura de la nube.
 
 ## Pasos adicionales necesarios tras la instalación del parche
 
@@ -99,3 +99,4 @@ Para aplicar parches individuales, utilice los siguientes vínculos según el m�
 Para obtener más información sobre [!DNL Quality Patches Tool], consulte:
 
 * [[!DNL Quality Patches Tool]: herramienta de autoservicio para parches de calidad](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) en la guía Herramientas.
+* [Reindexación en modo paralelo](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers#reindexing-in-parallel-mode) en la Guía de configuración de Commerce.
