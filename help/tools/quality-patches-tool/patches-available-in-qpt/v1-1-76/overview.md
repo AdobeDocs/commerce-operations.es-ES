@@ -4,7 +4,7 @@ description: Esta subsección proporciona una descripción detallada de los prob
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 27356acfca4b9e640478010579b0f419749930d3
+source-git-commit: 65e615d2f679e88d51093a8ea28007dfe418d385
 workflow-type: tm+mt
 source-wordcount: '481'
 ht-degree: 0%
@@ -18,7 +18,7 @@ Esta subsección proporciona una descripción detallada de los problemas corregi
 QPT v1.1.76 incluye los siguientes parches:
 1. **ACSD-67091**: corrige el error de tamaño máximo del conjunto de escritura para garantizar la limpieza del índice de productos de la regla de catálogo mediante la implementación de dos estrategias de eliminación basadas en el volumen de datos.
 1. **ACSD-67370**: corrige varios problemas en los que se mostraban precios incorrectos para productos en paquete en PDP/PLP y la página de carro de compras para tiendas en múltiples monedas.
-1. **ACSD-68410**: corrige un problema en el cual al realizar un pedido de una oferta negociable se agregan o combinan incorrectamente líneas de carro de compras adicionales a la oferta. Los productos ahora se añaden correctamente al carro de compras después de dejar el último paso de cierre de compra de presupuesto negociable.
+1. **[ACSD-68410](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-68410.md)**: corrige un problema en el cual al realizar un pedido de una oferta negociable se agregan o combinan incorrectamente líneas de carro de compras adicionales a la oferta. Los productos ahora se añaden correctamente al carro de compras después de dejar el último paso de cierre de compra de presupuesto negociable.
 1. **ACSD-69086**: corrige el problema en el que el trabajo cron no borra las tablas changelog, lo que provoca [!DNL Galera Cluster] bloqueos al administrar grandes cantidades de datos.
 1. **ACSD-69115**: corrige un problema en el cual los errores del carro de compras no se mostraban al usuario administrador al administrar el carro de compras para un cliente asignado a un sitio web no predeterminado.
 1. **ACSD-69129**: corrige un problema en el cual al eliminar el sitio web base predeterminado y usar el sitio web secundario como predeterminado se produce un error al intentar actualizar el precio de nivel del sitio web secundario mediante la API [!DNL REST].
