@@ -4,7 +4,7 @@ description: Esta subsección proporciona una descripción detallada de los prob
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 3196580876eaa90e79d98f0cd14cbccc841d0524
+source-git-commit: 59ae7d5e05395f123ad139bea4e022b26d310f1f
 workflow-type: tm+mt
 source-wordcount: '481'
 ht-degree: 0%
@@ -26,7 +26,7 @@ QPT v1.1.76 incluye los siguientes parches:
 1. **ACSD-69261**: corrige un problema en el cual un cupón de regla de precio de carro de compras configurado para un solo uso por cliente se reutilizó varias veces debido a un manejo incorrecto del atributo `times_used` en los escenarios de cancelación de factura parcial y cantidad restante.
 1. **ACSD-69308**: corrige un problema en el cual las reglas de precios de catálogo no se aplicaban cuando `special_price` se establecía solamente en el nivel de sitio web (no en **[!UICONTROL All Store Views]**). Después de la corrección, las reglas de precios de catálogo se aplican correctamente al comprobar primero la tienda predeterminada del sitio web.
 1. **ACSD-69319**: corrige un problema en el que los precios de los paquetes no se indizaron correctamente cuando los productos secundarios tenían existencias de fuentes personalizadas.
-1. **ACSD-69325**: corrige un problema en el cual al modificar el caso del SKU, el producto aparece sin existencias en la tienda.
+1. **[ACSD-69325](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69325.md)**: corrige un problema en el cual al modificar el caso del SKU, el producto aparece sin existencias en la tienda.
 1. **ACSD-69331**: corrige un problema en el cual los creadores de contenido de la galería de medios no podían crear carpetas con el permiso `create_folder` solamente. Después de la corrección, pueden crear carpetas según lo esperado.
 1. **[ACSD-69333](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69333.md)**: corrige un problema en el cual se permitían cambios de SKU para productos con una actualización programada activa. Después de la corrección, los cambios de SKU están prohibidos durante las actualizaciones activas; los guardados fallan con un error de borrado y el campo SKU del administrador está desactivado. Esto evita las incoherencias del inventario MSI causadas por los cambios de SKU durante las reversiones de ensayo.
 1. **ACSD-69541**: corrige un problema en el cual reducir la cantidad de un producto en el administrador a menos de lo que ya existe en un carro de compras hacía imposible editar la cantidad de productos en ese carro de compras a través de GraphQL.
