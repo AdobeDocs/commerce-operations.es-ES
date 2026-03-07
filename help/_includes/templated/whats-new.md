@@ -23,7 +23,7 @@ Esta página contiene los cambios realizados en los últimos 60 días. Excluimos
   </thead>
   <tbody>
     <tr>
-      <td><p>Se ha agregado una descripción detallada de la corrección de QPT 1.1.76 para <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69308">ACSD-69308: Las reglas de precio de catálogo no se aplicaban cuando <code class="language-plaintext highlighter-rouge">special_price</code> se establecía únicamente en el nivel de sitio web (no en "Todas las vistas de la tienda"). Después de la corrección, las reglas de precios de catálogo se aplican correctamente al comprobar primero la tienda predeterminada del sitio web </a>.</p>
+      <td><p>Se ha agregado una descripción detallada de la corrección de QPT 1.1.76 para <a href="https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69308">ACSD-69308: Las reglas de precio de catálogo no se aplicaban cuando <code class="language-plaintext highlighter-rouge">special_price</code> se establecía únicamente en el nivel de sitio web (no en "Todas las vistas de la tienda"). Después de la corrección, las reglas de precios de catálogo se aplican correctamente al comprobar primero la tienda predeterminada del sitio web </a>.</p>
 </td>
       <td>
         Tema nuevo, qpt
@@ -31,7 +31,7 @@ Esta página contiene los cambios realizados en los últimos 60 días. Excluimos
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/db07a5d6f991ff36536a4365ee88fa25062dbe43">comprometer</a></td>
     </tr>
     <tr>
-      <td><p>Se agregó una descripción detallada de la corrección de QPT 1.1.76 para <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69541">ACSD-69541: Reducir la cantidad de un producto en el administrador a menos de lo que ya existe en un carro de compras hizo imposible editar la cantidad de productos en ese carro de compras mediante GraphQL</a>.</p>
+      <td><p>Se agregó una descripción detallada de la corrección de QPT 1.1.76 para <a href="https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69541">ACSD-69541: Reducir la cantidad de un producto en el administrador a menos de lo que ya existe en un carro de compras hizo imposible editar la cantidad de productos en ese carro de compras mediante GraphQL</a>.</p>
 </td>
       <td>
         Tema nuevo, qpt
@@ -39,7 +39,7 @@ Esta página contiene los cambios realizados en los últimos 60 días. Excluimos
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b2b801b88aee7fc6c275be3fb32a2e75bbe6f20d">comprometer</a></td>
     </tr>
     <tr>
-      <td><p>Se agregó una descripción detallada de la corrección de QPT 1.1.77 para <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69020">ACSD-69020: Los productos configurables aparecen en los carruseles de Page Builder cuando los productos secundarios coinciden con los filtros</a>.</p>
+      <td><p>Se agregó una descripción detallada de la corrección de QPT 1.1.77 para <a href="https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69020">ACSD-69020: Los productos configurables aparecen en los carruseles de Page Builder cuando los productos secundarios coinciden con los filtros</a>.</p>
 </td>
       <td>
         Tema nuevo, qpt
