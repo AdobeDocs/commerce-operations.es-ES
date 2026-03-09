@@ -4,9 +4,9 @@ description: Esta subsección proporciona una descripción detallada de los prob
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 8eac0cdbf303e307b7734845c09c9d652d901d7b
+source-git-commit: 535934d92c0bd8a0d029c2c9a6c06be161db266f
 workflow-type: tm+mt
-source-wordcount: '465'
+source-wordcount: '537'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,8 @@ QPT v1.1.76 incluye los siguientes parches:
 1. **ACSD-69115**: corrige un problema en el cual los errores del carro de compras no se mostraban al usuario administrador al administrar el carro de compras para un cliente asignado a un sitio web no predeterminado.
 1. **[ACSD-69129](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69129.md)**: corrige un problema en el cual al eliminar el sitio web base predeterminado y usar el sitio web secundario como predeterminado se produce un error al intentar actualizar el precio de nivel del sitio web secundario mediante la API [!DNL REST].
 1. **ACSD-69203**: corrige un problema por el que el widget **[!UICONTROL Products List]** devuelve resultados incorrectos cuando se enumeraron varias categorías en la condición de categoría.
+1. **[ACSD-69261](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69261.md)**: corrige un problema en el cual un cupón de regla de precio de carro de compras configurado para un solo uso por cliente se reutilizó varias veces debido a un manejo incorrecto del atributo `times_used` en los escenarios de cancelación de factura parcial y cantidad restante.
+1. **ACSD-69308**: corrige un problema en el cual las reglas de precios de catálogo no se aplicaban cuando `special_price` se establecía solamente en el nivel de sitio web (no en **[!UICONTROL All Store Views]**). Después de la corrección, las reglas de precios de catálogo se aplican correctamente al comprobar primero la tienda predeterminada del sitio web.
 1. **ACSD-69261**: corrige un problema en el cual un cupón de regla de precio de carro de compras configurado para un solo uso por cliente se reutilizó varias veces debido a un manejo incorrecto del atributo `times_used` en los escenarios de cancelación de factura parcial y cantidad restante.
 1. **[ACSD-69308](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69308.md)**: corrige un problema en el cual las reglas de precios de catálogo no se aplicaban cuando `special_price` se establecía solamente en el nivel de sitio web (no en **[!UICONTROL All Store Views]**).
 1. **ACSD-69319**: corrige un problema en el que los precios de los paquetes no se indizaron correctamente cuando los productos secundarios tenían existencias de fuentes personalizadas.

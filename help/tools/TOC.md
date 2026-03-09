@@ -2,9 +2,9 @@
 user-guide-title: Herramientas
 user-guide-description: Obtenga información sobre las distintas herramientas que puede utilizar con Adobe Commerce, sus usos, el proceso de instalación y cómo obtener acceso.
 feature: Configuration
-source-git-commit: 8eac0cdbf303e307b7734845c09c9d652d901d7b
+source-git-commit: 535934d92c0bd8a0d029c2c9a6c06be161db266f
 workflow-type: tm+mt
-source-wordcount: '9335'
+source-wordcount: '9354'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ ht-degree: 0%
    - [Alertas administradas para Adobe Commerce: alerta de advertencia de CPU](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-cpu-warning-alert.md)
 - Herramienta Parches de calidad {#quality-patches-tool}
    - [[!DNL Quality Patches Tool]: herramienta de autoservicio para parches de calidad](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)
-   - [[!DNL Quality Patches Tool]: buscar parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es){target="_blank"}
+   - [[!DNL Quality Patches Tool]: buscar parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
    - [Uso](quality-patches-tool/usage.md)
    - [Notas de la versión](quality-patches-tool/release-notes.md)
    - Parches disponibles en la herramienta Parches de calidad {#patches-available-in-qpt}
@@ -942,6 +942,7 @@ ht-degree: 0%
          - [ACSD-68490: [!UICONTROL Add New Attribute] botón visible para el administrador restringido durante la creación de productos configurables](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-75/acsd-68490.md)
       - Versión 1.1.76 {#v1-1-76}
          - [Información general:  [!DNL Quality Patches Tool] (QPT) v1.1.76](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/overview.md)
+         - [ACSD-69261: cupón de regla de precio del carro de compras de un solo uso reutilizado debido a la gestión times_used incorrecta en los flujos de factura parcial y cancelación](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69261.md)
          - [ACSD-67091: La limpieza del índice del producto de reglas de catálogo falla debido al tamaño máximo del conjunto de escritura durante eliminaciones grandes](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-67091.md)
          - [ACSD-69308: Las reglas de precios de catálogo no se aplican cuando &quot;special_price&quot; se establece en el nivel de sitio web](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69308.md)
          - [ACSD-69541: ACSD-69541: La cantidad de artículos del carro de compras no se puede actualizar mediante GraphQL después de reducir el stock de productos en [!UICONTROL Admin]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69541.md)
@@ -1006,6 +1007,6 @@ ht-degree: 0%
       - [Datos que requieren una migración manual](data-migration-tool/migrate-data/manual.md)
       - [Pasos de la migración posterior a los datos](data-migration-tool/migrate-data/post-migration.md)
    - Recursos {#resources}
-      - [Solución de problemas](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html?lang=es)
+      - [Solución de problemas](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html)
       - [Registro de cambios](https://github.com/magento/data-migration-tool/blob/2.4/CHANGELOG.md)
-- [Volver a las guías operativas](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=es)
+- [Volver a las guías operativas](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
