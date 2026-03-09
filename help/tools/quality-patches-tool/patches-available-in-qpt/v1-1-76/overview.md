@@ -4,7 +4,7 @@ description: Esta subsección proporciona una descripción detallada de los prob
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 9b73f6e893a2d68029237407fa525e4d001960e9
+source-git-commit: 8eac0cdbf303e307b7734845c09c9d652d901d7b
 workflow-type: tm+mt
 source-wordcount: '465'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 Esta subsección proporciona una descripción detallada de los problemas corregidos por los parches disponibles en [!DNL Quality Patches Tool] (QPT) v1.1.76.
 
 QPT v1.1.76 incluye los siguientes parches:
-1. **ACSD-67091**: corrige el error de tamaño máximo del conjunto de escritura para garantizar la limpieza del índice de productos de la regla de catálogo mediante la implementación de dos estrategias de eliminación basadas en el volumen de datos.
+1. **[ACSD-67091](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-67091.md)**: corrige el error de tamaño máximo del conjunto de escritura para garantizar la limpieza del índice de productos de la regla de catálogo mediante la implementación de dos estrategias de eliminación basadas en el volumen de datos.
 1. **ACSD-67370**: corrige varios problemas en los que se mostraban precios incorrectos para productos en paquete en PDP/PLP y la página de carro de compras para tiendas en múltiples monedas.
 1. **[ACSD-68410](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-68410.md)**: corrige un problema en el cual al realizar un pedido de una oferta negociable se agregan o combinan incorrectamente líneas de carro de compras adicionales a la oferta. Los productos ahora se añaden correctamente al carro de compras después de dejar el último paso de cierre de compra de presupuesto negociable.
 1. **ACSD-69086**: corrige el problema en el que el trabajo cron no borra las tablas changelog, lo que provoca [!DNL Galera Cluster] bloqueos al administrar grandes cantidades de datos.
