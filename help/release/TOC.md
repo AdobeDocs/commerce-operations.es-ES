@@ -3,7 +3,7 @@ user-guide-title: Información de versión
 user-guide-description: Acceda a toda la información de la versión de los parches y servicios de Adobe Commerce en un solo lugar.
 feature: Release Notes
 recommendations: noDisplay, noCatalog
-source-git-commit: 5e8ff044ed2426bfdcfea79f6ed26407caf94444
+source-git-commit: c76154516c3b800c530769f35d4c52f794e47076
 workflow-type: tm+mt
 source-wordcount: '114'
 ht-degree: 5%
@@ -18,7 +18,7 @@ ht-degree: 5%
    - [Cambios incompatibles con versiones anteriores](backward-incompatible-changes.md)
    - Adobe Commerce {#adobe-commerce}
       - [Información general](release-notes/commerce/overview.md)
-      - [2.4.9-alpha](release-notes/commerce/2-4-9.md)
+      - [2.4.9-beta](release-notes/commerce/2-4-9.md)
       - [2.4.8](release-notes/commerce/2-4-8.md)
       - [2.4.7](release-notes/commerce/2-4-7.md)
       - [2.4.6](release-notes/commerce/2-4-6.md)
@@ -30,7 +30,7 @@ ht-degree: 5%
       - [2.4.0](release-notes/commerce/2-4-0.md)
    - Magento Open Source {#magento-open-source}
       - [Información general](release-notes/open-source/overview.md)
-      - [2.4.9-alpha](release-notes/open-source/2-4-9.md)
+      - [2.4.9-beta](release-notes/open-source/2-4-9.md)
       - [2.4.8](release-notes/open-source/2-4-8.md)
       - [2.4.7](release-notes/open-source/2-4-7.md)
       - [2.4.6](release-notes/open-source/2-4-6.md)
@@ -60,4 +60,4 @@ ht-degree: 5%
 - Paquetes {#packages}
    - [Adobe Commerce](packages/adobe-commerce.md)
    - [Magento Open Source](packages/magento-open-source.md)
-- [Volver a las guías operativas](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=es)
+- [Volver a las guías operativas](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
