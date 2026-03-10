@@ -1,7 +1,7 @@
 ---
-source-git-commit: c699c3db054dbfb6d43ad18ced4d4d860e2c9db5
+source-git-commit: fd421e8c2455a2b45d3f3cc93573d2a609e4936d
 workflow-type: tm+mt
-source-wordcount: '2565'
+source-wordcount: '2408'
 ht-degree: 0%
 
 ---
@@ -137,12 +137,6 @@ Adobe Commerce 2.4.9-beta1 agrega compatibilidad completa con Valkey 8.x como ba
 
 _AC-14103, AC-14604_
 
-#### Actualización de la versión de Nginx de 1.26 a 1.28
-
-La versión de Nginx utilizada en los entornos de desarrollo y prueba en todas las versiones de Adobe Commerce admitidas actualmente se actualiza a 1.28, alineándose con la última versión estable de Nginx. Las pruebas de nivel PR ahora se ejecutan con Nginx 1.28, lo que confirma la compatibilidad total y la compatibilidad con todas las versiones de Adobe Commerce.
-
-_AC-14104_
-
 #### La compatibilidad con Apache ActiveMQ Artemis reemplaza a RabbitMQ
 
 Se ha agregado compatibilidad con Apache ActiveMQ Artemis como alternativa estratégica a RabbitMQ, impulsada por riesgos de fin de soporte asociados con RabbitMQ 4. ActiveMQ Artemis ahora es totalmente compatible con todas las líneas de versión de Commerce 2.4.6 a 2.4.9-beta1, incluido Adobe Commerce Cloud con AWS ActiveMQ para implementaciones nativas en la nube, y admite la configuración STOMP para consumidores y editores en cola. Las instalaciones existentes de RabbitMQ 4 siguen siendo compatibles con los comerciantes que prefieren seguir utilizando su servicio actual de cola de mensajes.
@@ -162,12 +156,6 @@ _AC-15615_
 A partir de Adobe Commerce 2.4.9-beta1, PHP 8.2 ya no es compatible. La plataforma ahora se dirige a PHP 8.3 y versiones posteriores, con código principal, dependencias y herramientas actualizadas para ejecutarse de forma limpia y fiable en PHP 8.4 y 8.5.
 
 _AC-15758_
-
-#### Compatibilidad con la versión ampliada de Composer 2.x
-
-Anteriormente, la compatibilidad con la versión de Composer estaba limitada a 2.2.x. Adobe Commerce 2.4.9-beta1 amplía esta compatibilidad para incluir Composer 2.4.x y versiones posteriores, lo que amplía la compatibilidad para entornos de desarrollo e implementación.
-
-_AC-13792 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/19844aa0)_
 
 #### Compatibilidad verificada con Composer 2.9
 
@@ -276,12 +264,6 @@ _AC-15461_
   _AC-14420 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/98b2848a)_
 
 ### Seguridad
-
-#### Endurecimiento integral del control de acceso multisitio
-
-Esta actualización proporciona una protección completa de las listas de control de acceso (ACL) de varios sitios en el administrador de Adobe Commerce, y aborda los problemas de permisos conocidos y anteriormente desconocidos en la configuración de control de acceso de varios sitios. Los usuarios administradores con acceso a sitios web o tiendas específicos ya no pueden ver ni modificar datos que pertenecen a otros sitios web o tiendas en una implementación de varios sitios.
-
-_AC-11899_
 
 #### La validación CAPTCHA ahora se impone para las API de REST y GraphQL
 

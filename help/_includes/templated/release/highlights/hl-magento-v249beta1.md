@@ -1,7 +1,7 @@
 ---
-source-git-commit: 56974b4ada65c21ce1303e4b93bd8acb9fe41b28
+source-git-commit: 65a9bd667d434f1deae69798696f66998e6024a0
 workflow-type: tm+mt
-source-wordcount: '991'
+source-wordcount: '952'
 ht-degree: 0%
 
 ---
@@ -26,12 +26,6 @@ _ACP2E-4358 - [Contribución de código de GitHub](https://github.com/magento/ma
 Como parte del proceso continuo de revisión de la seguridad, evaluamos la última versión del marco JWT para garantizar la futura compatibilidad y mantener estándares de seguridad sólidos. Esta versión no afecta a la funcionalidad existente.
 
 _AC-13209 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/2bac8114) - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/09b36ebb) - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/33b81f28)_
-
-#### [Parte 2]: Actualice toda la biblioteca js y la dependencia npm con la última versión disponible
-
-la compatibilidad con la versión del compositor estaba hasta la versión del compositor 2.2.x solamente. Ahora, la compatibilidad también se ha ampliado a la versión 2.4.x.
-
-_AC-13792 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/19844aa0)_
 
 #### Reemplace carlos-mg89/oauth con funciones nativas de PHP
 
