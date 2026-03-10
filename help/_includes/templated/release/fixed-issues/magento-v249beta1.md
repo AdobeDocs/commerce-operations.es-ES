@@ -61,7 +61,7 @@ Ahora, las API validan correctamente la entrada y devuelven un error 400 para ca
 
 _AC-6419 - [Problema de GitHub](https://github.com/magento/magento2/issues/35934) - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/a7ef6300)_
 
-#### Error interno del servidor en el extremo de API `/V1/order/{orderId}/ship`
+#### Error interno del servidor en el extremo de API `/V1/order/&lbrace;orderId&rbrace;/ship`
 
 El sistema corrige ahora el error interno del servidor en el extremo de API `/V1/order/{orderId}/ship` y devuelve un error 400, ya que la solicitud tiene un formato incorrecto.
 
@@ -2168,7 +2168,7 @@ _AC-8949 - [Contribución de código de GitHub](https://github.com/magento/magen
 
 #### La respuesta de GraphQL para la colocación de pedidos no incluye el mensaje de excepción
 
-Se ha revertido el cambio anterior que devolvía errores en un formato diferente. Ahora los posibles errores se devuelven de forma coherente, sin romper el esquema de GraphQL. Debe agregarse como BIC conocido, aprobado por PM aquí: https://jira.corp.adobe.com/browse/ACP2E-3399?focusedId=45248897&amp;page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-45248897
+Se ha revertido el cambio anterior que devolvía errores en un formato diferente. Ahora los posibles errores se devuelven de forma coherente, sin romper el esquema de GraphQL. Debe agregarse como BIC conocido, aprobado por PM aquí: https://jira.corp.adobe.com/browse/ACP2E-3399?focusedId=45248897&page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-45248897
 
 _ACP2E-3399 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/9608ca21)_
 
