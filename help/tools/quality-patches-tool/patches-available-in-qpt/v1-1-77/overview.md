@@ -4,9 +4,9 @@ description: Esta subsección proporciona una descripción detallada de los prob
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 5ad8f9ce930ca8484c355561f8bfa2f19dba3e9c
+source-git-commit: fa839814adf83d2a22840e13d4d70540270269b1
 workflow-type: tm+mt
-source-wordcount: '221'
+source-wordcount: '257'
 ht-degree: 0%
 
 ---
@@ -22,6 +22,9 @@ QPT v1.1.77 incluye los siguientes parches:
 1. **ACSD-68537**: el rendimiento de cierre de compra se degrada con muchos segmentos de clientes.
 1. **[ACSD-68664](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68664.md)**: La vista previa de la actualización programada tiene errores en los dominios de almacenamiento personalizados.
 1. **ACSD-68759**: error de creación de cuenta de cliente con configuración regional árabe cuando se muestra la fecha de nacimiento.
+1. **ACSD-68892**: Comportamiento de almacenamiento en caché [!DNL Fastly] incoherente para páginas almacenables en caché.
+1. **[ACSD-69016](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69016.md)**: corrige un problema en el cual no se aplica un precio especial en sitios web con diferentes zonas horarias.
+1. **ACSD-69020**: los productos configurables aparecen en [!UICONTROL Page Builder] carruseles cuando los productos secundarios coinciden con los filtros.
 1. **[ACSD-68892](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68892.md)**: corrige un comportamiento de almacenamiento en caché [!DNL Fastly] incoherente para páginas almacenables en caché.
 1. **ACSD-69016**: el precio especial no se aplica en sitios web con diferentes zonas horarias.
 1. **[ACSD-69020](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69020.md)**: corrige un problema en el que los productos configurables aparecen en [!DNL Page Builder] carruseles de productos cuando los productos secundarios coinciden con las condiciones de filtrado.
