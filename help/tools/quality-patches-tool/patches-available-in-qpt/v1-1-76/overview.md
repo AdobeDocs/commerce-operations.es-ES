@@ -4,9 +4,9 @@ description: Esta subsección proporciona una descripción detallada de los prob
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: f56050886f28692286c42102222dfb580e52aef1
+source-git-commit: d852c8dc40d061b878daf25aac0c7cf57628954c
 workflow-type: tm+mt
-source-wordcount: '537'
+source-wordcount: '557'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,7 @@ QPT v1.1.76 incluye los siguientes parches:
 1. **[ACSD-68410](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-68410.md)**: corrige un problema en el cual al realizar un pedido de una oferta negociable se agregan o combinan incorrectamente líneas de carro de compras adicionales a la oferta. Los productos ahora se añaden correctamente al carro de compras después de dejar el último paso de cierre de compra de presupuesto negociable.
 1. **ACSD-69086**: corrige el problema en el que el trabajo cron no borra las tablas changelog, lo que provoca [!DNL Galera Cluster] bloqueos al administrar grandes cantidades de datos.
 1. **ACSD-69115**: corrige un problema en el cual los errores del carro de compras no se mostraban al usuario administrador al administrar el carro de compras para un cliente asignado a un sitio web no predeterminado.
+1. **[ACSD-69203](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69203.md)**: corrige un problema por el que el widget **[!UICONTROL Products List]** devuelve resultados incorrectos cuando se enumeraron varias categorías en la condición de categoría.
 1. **[ACSD-69129](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69129.md)**: corrige un problema en el cual al eliminar el sitio web base predeterminado y usar el sitio web secundario como predeterminado se produce un error al intentar actualizar el precio de nivel del sitio web secundario mediante la API [!DNL REST].
 1. **ACSD-69203**: corrige un problema por el que el widget **[!UICONTROL Products List]** devuelve resultados incorrectos cuando se enumeraron varias categorías en la condición de categoría.
 1. **[ACSD-69261](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69261.md)**: corrige un problema en el cual un cupón de regla de precio de carro de compras configurado para un solo uso por cliente se reutilizó varias veces debido a un manejo incorrecto del atributo `times_used` en los escenarios de cancelación de factura parcial y cantidad restante.
