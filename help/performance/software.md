@@ -3,9 +3,9 @@ title: Recomendaciones de software
 description: Obtenga información acerca de los requisitos y recomendaciones de software para Adobe Commerce. Descubra las versiones compatibles y las prácticas recomendadas de configuración para la producción.
 feature: Best Practices, Install
 exl-id: b091a733-7655-4e91-a988-93271872c5d5
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 766226dc998aafe54bc84d77cabee6fb0a969e6c
 workflow-type: tm+mt
-source-wordcount: '1396'
+source-wordcount: '1390'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 Se necesita el siguiente software para las instancias de producción de [!DNL Commerce]:
 
 * [PHP](../installation/system-requirements.md)
-* Nginx y [PHP-FPM](https://php-fpm.org/)
+* Nginx y [PHP-FPM](https://www.php.net/manual/en/install.fpm.php)
 * [[!DNL MySQL]](../installation/prerequisites/database/mysql.md)
 * [[!DNL Elasticsearch] o OpenSearch](../installation/prerequisites/search-engine/overview.md)
 
@@ -47,7 +47,7 @@ net.core.somaxconn = 1024
 
 ## PHP
 
-Magento es totalmente compatible con PHP 7.3 y 7.4. Hay varios factores a tener en cuenta al configurar PHP para obtener la máxima velocidad y eficiencia en el procesamiento de solicitudes.
+Use una versión de PHP compatible con la versión de Adobe Commerce que está instalando, tal como se indica en [requisitos del sistema](../installation/system-requirements.md). Hay varios factores a tener en cuenta al configurar PHP para obtener la máxima velocidad y eficiencia en el procesamiento de solicitudes.
 
 ### Extensiones de PHP
 
@@ -141,7 +141,7 @@ realpath_cache_ttl=7200
 
 #### ByteCode
 
-Para obtener la máxima velocidad de [!DNL Commerce] en PHP 7, debe activar el módulo OpCache y configurarlo correctamente. Se recomiendan estas configuraciones para el módulo:
+Para obtener la máxima velocidad de [!DNL Commerce], debe activar el módulo OpCache y configurarlo correctamente. Se recomiendan estas configuraciones para el módulo:
 
 ```text
 opcache.memory_consumption=512
@@ -184,15 +184,14 @@ También debe configurar el número de hilos para el procesamiento de solicitude
 
 | Servidor web | Nombre de atributo | Ubicación | Información relacionada |
 |--- | --- | --- | ---|
-| Nginx | `worker_connections` | `/etc/nginx/nginx.conf` (Debian) | [Ajuste de NGINX para el rendimiento](https://www.nginx.com/blog/tuning-nginx/) |
-| Apache 2.2 | `MaxClients` | `/etc/httpd/conf/httpd.conf` (CentOS) | [Ajuste de rendimiento de Apache](https://httpd.apache.org/docs/2.2/misc/perf-tuning.html) |
+| Nginx | `worker_connections` | `/etc/nginx/nginx.conf` (Debian) | [Ajuste de NGINX para el rendimiento](https://www.f5.com/company/blog/nginx/tuning-nginx) |
 | Apache 2.4 | `MaxRequestWorkers` | `/etc/httpd/conf/httpd.conf` (CentOS) | [Directivas comunes de Apache MPM](https://httpd.apache.org/docs/2.4/mod/mpm_common.html#maxrequestworkers) |
 
 ## [!DNL MySQL]
 
 Este documento no proporciona instrucciones detalladas de ajuste de [!DNL MySQL] porque cada tienda y entorno son diferentes, pero podemos hacer algunas recomendaciones generales.
 
-Se han realizado muchas mejoras en [!DNL MySQL] 5.7.9 Confiamos en que [!DNL MySQL] se distribuya con una buena configuración predeterminada. Las configuraciones más críticas son:
+Las [!DNL MySQL] versiones recientes incluyen muchas mejoras de rendimiento y [!DNL MySQL] se distribuye generalmente con una buena configuración predeterminada. Las configuraciones más críticas son:
 
 | Parámetro | Predeterminado | Descripción |
 |--- | --- | ---|
@@ -207,13 +206,13 @@ Magento recomienda encarecidamente usar [!DNL Varnish] como servidor de caché d
 
 Instale [!DNL Varnish] en un servidor independiente delante del nivel web. Debe aceptar todas las solicitudes entrantes y proporcionar copias de las páginas en caché. Para permitir que [!DNL Varnish] funcione correctamente con páginas seguras, se puede colocar un proxy de terminación SSL delante de [!DNL Varnish]. Nginx se puede utilizar para este fin.
 
-[!DNL Commerce] distribuye un archivo de configuración de ejemplo para [!DNL Varnish] (versiones 4 y 5) que contiene todas las opciones recomendadas para el rendimiento. Entre ellos, los más críticos en términos de rendimiento son:
+[!DNL Commerce] distribuye archivos de configuración de ejemplo para las versiones compatibles de [!DNL Varnish] que contienen todas las opciones recomendadas para el rendimiento. Entre ellos, los más críticos en términos de rendimiento son:
 
 * **Comprobación de estado back-end** sondea el servidor [!DNL Commerce] para determinar si responde a tiempo.
 * **El modo de gracia** le permite indicar a [!DNL Varnish] que mantenga un objeto en la caché más allá de su período de tiempo de vida (TTL) y que sirva este contenido obsoleto si [!DNL Commerce] no está en buen estado o si aún no se ha recuperado contenido nuevo.
 * **Modo Saint** pone en lista negra servidores [!DNL Commerce] que no están en buen estado durante un período de tiempo configurable. Como resultado, los backends que no están en buen estado no pueden servir tráfico al usar [!DNL Varnish] como equilibrador de carga.
 
-Consulte [Configuración avanzada [!DNL Varnish] 2&rbrace; para obtener más información sobre cómo implementar estas características.](../configuration/cache/config-varnish-advanced.md)
+Consulte [Configuración avanzada [!DNL Varnish] 2} para obtener más información sobre cómo implementar estas características.](../configuration/cache/config-varnish-advanced.md)
 
 ### Optimizar el rendimiento del recurso
 
@@ -221,7 +220,7 @@ En general, recomendamos almacenar los recursos (imágenes, JS, CSS, etc.) en un
 
 Si su sitio no requiere la implementación de un gran número de configuraciones regionales y los servidores se encuentran en la misma región que la mayoría de sus clientes, puede encontrar mejoras de rendimiento significativas a un costo menor almacenando los recursos en [!DNL Varnish] en lugar de usar una CDN.
 
-Para almacenar los recursos en [!DNL Varnish], agregue las siguientes entradas VCL al archivo `default.vcl` generado por [!DNL Commerce] para [!DNL Varnish] 5.
+Para almacenar sus recursos en [!DNL Varnish], agregue las siguientes entradas VCL al archivo `default.vcl` generado por [!DNL Commerce].
 
 Al final de la instrucción `if` para las solicitudes PURGE en la subrutina `vcl_recv`, agregue:
 

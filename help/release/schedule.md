@@ -2,10 +2,10 @@
 title: Programación de lanzamiento del parche
 description: Descubra cuándo planea Adobe anunciar el lanzamiento de nuevos parches y correcciones de seguridad para Adobe Commerce.
 exl-id: ae1e09cd-966f-44a3-9e4d-b90bb838429d
-source-git-commit: 8ee6404271170b19ff27a3ab64711061505494b3
+source-git-commit: a423b2a2f4938f81db0da3706ba6fa240e53b1b3
 workflow-type: tm+mt
-source-wordcount: '336'
-ht-degree: 0%
+source-wordcount: '330'
+ht-degree: 5%
 
 ---
 
@@ -18,7 +18,7 @@ El propósito de esta programación es proporcionar fechas para cuándo Adobe pl
 
 >[!NOTE]
 >
->Para obtener más información sobre las nuevas características, la infraestructura en la nube y las versiones de extensibilidad, consulte la [documentación de la versión de Adobe Commerce Services](https://experienceleague.adobe.com/es/docs/commerce/user-guides/release-information/release-notes-all).
+>Para obtener más información sobre las nuevas características, la infraestructura en la nube y las versiones de extensibilidad, consulte la [documentación de la versión de Adobe Commerce Services](https://experienceleague.adobe.com/en/docs/commerce/user-guides/release-information/release-notes-all).
 
 Además de los parches de calidad, seguridad y beta programados que se enumeran en esta página, Adobe proporciona acceso a [parches individuales](versioning-policy.md#individual-patch) mediante la [Herramienta de parches de calidad](../tools/quality-patches-tool/usage.md). La herramienta le permite aplicar, revertir y ver información general sobre todos los parches individuales que están disponibles para la versión instalada de Adobe Commerce.
 
@@ -26,11 +26,11 @@ Las versiones de parches de Adobe Commerce se publican en función de las siguie
 
 - **Correcciones de seguridad aisladas**: las [correcciones de seguridad](versioning-policy.md#isolated-patch) individuales y no acumulativas se publican según sea necesario e incluyen correcciones de seguridad para todas las [líneas de versión admitidas](lifecycle-policy.md) (incluye compatibilidad regular y extendida).
 
-- **Parches de seguridad**: como mínimo, [los parches de seguridad](versioning-policy.md#security-patch-release) se lanzan anualmente (mayo) para todas las [líneas de versión admitidas](lifecycle-policy.md). Estos parches incluyen todas las correcciones de seguridad aisladas publicadas anteriormente. Adobe puede lanzar parches de seguridad adicionales en noviembre si es necesario, pero no está garantizado.
+- **Parches de seguridad**: como mínimo, [los parches de seguridad](versioning-policy.md#security-patch-release) se lanzan anualmente para todas las [líneas de versión admitidas](lifecycle-policy.md). Estos parches incluyen todas las correcciones de seguridad aisladas publicadas anteriormente. Adobe puede lanzar parches de seguridad adicionales si es necesario, pero no está garantizado.
 
 - **Parche**: anualmente (mayo) se lanza un [parche](versioning-policy.md#patch-release) completo para la línea de versión LTS de Adobe Commerce 2.4.x (período de compatibilidad de 3 años).
 
-- **Parches de Beta**: dos veces al año (marzo y noviembre) se lanzan dos [parches beta](versioning-policy.md#beta-patch-release) para la línea de versión Adobe Commerce 2.4.x LTS.
+- **Parches de Beta**: dos veces al año se lanzan dos [parches beta](versioning-policy.md#beta-patch-release) para la línea de versión Adobe Commerce 2.4.x LTS.
 
 Consulte la siguiente imagen para obtener más información:
 
@@ -43,10 +43,10 @@ Consulte la siguiente imagen para obtener más información:
 
 Adobe notifica a los clientes sobre las nuevas versiones de parches a través de los siguientes canales:
 
-- [Avisos y boletines de seguridad de Adobe](https://helpx.adobe.com/es/security/security-bulletin.html#magento)
+- [Avisos y boletines de seguridad de Adobe](https://helpx.adobe.com/security/security-bulletin.html#magento)
 - Correo electrónico
 - Alertas en el producto
 
 >[!NOTE]
 >
-> Para ver las fechas de lanzamiento de cada versión secundaria, revisión y de seguridad, y las fechas de fin de la compatibilidad regular, consulte [Versiones publicadas](https://experienceleague.adobe.com/es/docs/commerce-operations/release/versions).
+> Para ver las fechas de lanzamiento de cada versión secundaria, revisión y de seguridad, y las fechas de fin de la compatibilidad regular, consulte [Versiones publicadas](https://experienceleague.adobe.com/en/docs/commerce-operations/release/versions).
