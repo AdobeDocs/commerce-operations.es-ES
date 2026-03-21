@@ -45,7 +45,7 @@ Esta página contiene los cambios realizados en los últimos 60 días. Excluimos
   </thead>
   <tbody>
     <tr>
-      <td><p>Se agregó una descripción detallada de la corrección de QPT 1.1.77 para <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68759">ACSD-68759: Error de creación de cuenta de cliente con configuración regional árabe cuando se muestra la fecha de nacimiento</a>.</p>
+      <td><p>Se agregó una descripción detallada de la corrección de QPT 1.1.77 para <a href="https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68759">ACSD-68759: Error de creación de cuenta de cliente con configuración regional árabe cuando se muestra la fecha de nacimiento</a>.</p>
 </td>
       <td>
         Tema nuevo, qpt
@@ -53,7 +53,7 @@ Esta página contiene los cambios realizados en los últimos 60 días. Excluimos
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/d3c2d0ebea67fb376a43a67995f3ce278ceac3ee">comprometer</a></td>
     </tr>
     <tr>
-      <td><p>Se agregó una descripción detallada de la corrección de QPT 1.1.77 para <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69237">ACSD-69237: Los trabajos cron de Sales__async_insert solo procesan 100 entradas por ejecución</a>.</p>
+      <td><p>Se agregó una descripción detallada de la corrección de QPT 1.1.77 para <a href="https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69237">ACSD-69237: Los trabajos cron de Sales__async_insert solo procesan 100 entradas por ejecución</a>.</p>
 </td>
       <td>
         Tema nuevo, qpt
@@ -61,7 +61,7 @@ Esta página contiene los cambios realizados en los últimos 60 días. Excluimos
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/0842ba414e45857e36d61c589687718435739efa">comprometer</a></td>
     </tr>
     <tr>
-      <td><p>Se ha agregado una descripción detallada de la corrección de QPT 1.1.76 para <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69203">ACSD-69203: el widget de lista de productos devuelve resultados incorrectos cuando se utilizan varias categorías en la condición de categoría</a>.</p>
+      <td><p>Se ha agregado una descripción detallada de la corrección de QPT 1.1.76 para <a href="https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-76/acsd-69203">ACSD-69203: el widget de lista de productos devuelve resultados incorrectos cuando se utilizan varias categorías en la condición de categoría</a>.</p>
 </td>
       <td>
         Tema nuevo, qpt
