@@ -1,5 +1,5 @@
 ---
-source-git-commit: 9db68896486b973f6f84ac5bcd5bf6b4b1cc7250
+source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
 workflow-type: tm+mt
 source-wordcount: '180'
 ht-degree: 8%
@@ -7,8 +7,10 @@ ht-degree: 8%
 ---
 # Funciones de Commerce
 
-<!--This include content is automatically generated using the features.html template and the "_data/release/features.yml" data file. To update the content, add new information to the data file. Follow the instructions in the README instructions to generate the updated content:
-https://github.com/AdobeDocs/commerce-operations.es-ES/blob/main/README.md#templates -->
+<!--
+This include content is automatically generated using the features.html template and the "_data/release/features.yml" data file. To update the content, add new information to the data file. Follow the instructions in the README instructions to generate the updated content:
+https://github.com/AdobeDocs/commerce-operations.en/blob/main/README.md#templates 
+-->
 
 <table style="table-layout:auto">
   <tbody>
@@ -21,7 +23,7 @@ https://github.com/AdobeDocs/commerce-operations.es-ES/blob/main/README.md#templ
       <th style="border-style:none;">2,4</th>
     </tr>
     <tr>
-      <td>Live Search con tecnología Adobe AI (B2C y B2B)</td>
+      <td>Live Search con tecnología de Adobe AI (B2C y B2B)</td>
       <td></td>
       <td></td>
       <td></td>
@@ -45,7 +47,7 @@ https://github.com/AdobeDocs/commerce-operations.es-ES/blob/main/README.md#templ
       <td>+</td>
     </tr>
     <tr>
-      <td>Recomendaciones de productos con tecnología de Adobe AI (B2C y B2B)</td>
+      <td>Recomendaciones de productos con tecnología Adobe AI (B2C y B2B)</td>
       <td></td>
       <td></td>
       <td></td>

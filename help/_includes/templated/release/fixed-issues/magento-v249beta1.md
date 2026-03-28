@@ -1,7 +1,7 @@
 ---
-source-git-commit: 0a22d08d6965c6abc288a1a171d25f4ff8bbd7ce
+source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
 workflow-type: tm+mt
-source-wordcount: '24356'
+source-wordcount: '24355'
 ht-degree: 0%
 
 ---
@@ -61,7 +61,7 @@ Ahora, las API validan correctamente la entrada y devuelven un error 400 para ca
 
 _AC-6419 - [Problema de GitHub](https://github.com/magento/magento2/issues/35934) - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/a7ef6300)_
 
-#### Error interno del servidor en el extremo de API `/V1/order/&lbrace;orderId&rbrace;/ship`
+#### Error interno del servidor en el extremo de API `/V1/order/{orderId}/ship`
 
 El sistema corrige ahora el error interno del servidor en el extremo de API `/V1/order/{orderId}/ship` y devuelve un error 400, ya que la solicitud tiene un formato incorrecto.
 
@@ -730,7 +730,7 @@ _AC-14464 - [Problema de GitHub](https://github.com/magento/magento2/issues/3982
 
 #### [2.4.8] No se pueden realizar pedidos en los que la ciudad tenga dígitos 0-9, símbolo et, punto final o paréntesis en el nombre de la ciudad
 
-Se ha corregido un problema por el cual el cierre de compra fallaba para nombres de ciudades que contenían caracteres especiales como . , &amp; o entre paréntesis.
+Se ha corregido un problema por el cual el cierre de compra fallaba para nombres de ciudades que contenían caracteres especiales como . , &amp; o paréntesis.
 Ahora, los pedidos con estos nombres de ciudad se colocan correctamente sin errores de validación.
 
 _AC-14495 - [Problema de GitHub](https://github.com/magento/magento2/issues/39854) - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/b9f5d6f7)_
@@ -2168,7 +2168,7 @@ _AC-8949 - [Contribución de código de GitHub](https://github.com/magento/magen
 
 #### La respuesta de GraphQL para la colocación de pedidos no incluye el mensaje de excepción
 
-Se ha revertido el cambio anterior que devolvía errores en un formato diferente. Ahora los posibles errores se devuelven de forma coherente, sin romper el esquema de GraphQL. Debe agregarse como BIC conocido, aprobado por PM aquí: https://jira.corp.adobe.com/browse/ACP2E-3399?focusedId=45248897&page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-45248897
+Se ha revertido el cambio anterior que devolvía errores en un formato diferente. Ahora los posibles errores se devuelven de forma coherente, sin romper el esquema de GraphQL. Debe agregarse como BIC conocido, aprobado por PM aquí: https://jira.corp.adobe.com/browse/ACP2E-3399?focusedId=45248897&amp;page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-45248897
 
 _ACP2E-3399 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/9608ca21)_
 
@@ -2447,7 +2447,7 @@ _ACP2E-4233 - [Contribución de código de GitHub](https://github.com/magento/ma
 
 #### [MSI] pruebas MFTF con errores relacionadas con los cambios más recientes de la línea principal.
 
-Antes de la corrección, los clientes invitados que elegían la recogida en la tienda sin una dirección de envío tenían su dirección de facturación rellenada automáticamente con la dirección de la tienda, que no se podía cambiar, lo que provocaba detalles de factura incorrectos. Después de corregir, la dirección de facturación ahora se puede editar en este escenario, lo que permite a los invitados introducir sus propios detalles. Los usuarios registrados verán su dirección de facturación guardada en lugar de la de la tienda.
+Antes de la corrección, los clientes invitados que elegían la opción de recogida en tienda sin una dirección de envío tenían su dirección de facturación rellenada automáticamente con la dirección de la tienda, lo que no se podía cambiar, lo que provocaba detalles de factura incorrectos. Después de corregir, la dirección de facturación ahora se puede editar en este escenario, lo que permite a los invitados introducir sus propios detalles. Los usuarios registrados verán su dirección de facturación guardada en lugar de la de la tienda.
 
 _ACP2E-4260 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/ab891304) - [Contribución de código de GitHub](https://github.com/magento/inventory/commit/13e432a6)_
 
@@ -2964,7 +2964,7 @@ Ahora, la consulta se ejecuta correctamente y devuelve la información de cupón
 
 _AC-14889 - [Problema de GitHub](https://github.com/magento/magento2/issues/39962) - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/fe72c407)_
 
-#### Regla de precio de catálogo [Cloud][experienceleague] no aplicada
+#### `[Cloud][experienceleague]` regla de precio de catálogo no aplicada
 
 Antes de la corrección, las reglas de precios de catálogo no se aplicaban cuando `special_price` se establecía solamente en el nivel de sitio web (no en &quot;Todas las vistas de tienda&quot;). Después de corregir las reglas de precios del catálogo, ahora se aplican correctamente cuando `special_price` se establece en el nivel de sitio web comprobando primero la tienda predeterminada del sitio web.
 
@@ -3152,7 +3152,7 @@ _ACP2E-4212 - [Contribución de código de GitHub](https://github.com/magento/ma
 
 #### No se puede navegar entre sitios web en la vista previa Programar actualización
 
-Antes de esta corrección, la vista previa de la actualización programada se dañaría al intentar obtener una vista previa del contenido de las tiendas con dominios personalizados. Después de esta corrección, los dominios de tienda personalizados se pueden previsualizar tal cual y navegar dentro del iframe de vista previa. La corrección cubre productos, categorías, páginas de CMS y bloques de CMS, y admite vínculos de navegación con etiquetas de marcado `{{store url}}`, como se documenta en [Variables de Adobe Commerce y Etiquetas de marcado](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/variables/markup-tags).
+Antes de esta corrección, la vista previa de la actualización programada se dañaría al intentar obtener una vista previa del contenido de las tiendas con dominios personalizados. Después de esta corrección, los dominios de tienda personalizados se pueden previsualizar tal cual y navegar dentro del iframe de vista previa. La corrección cubre productos, categorías, páginas de CMS y bloques de CMS, y admite vínculos de navegación con etiquetas de marcado `{{store url}}`, como se documenta en [Variables de Adobe Commerce y Etiquetas de marcado](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/variables/markup-tags).
 
 _ACP2E-4308 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/0a3b7032)_
 

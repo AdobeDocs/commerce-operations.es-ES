@@ -3,7 +3,7 @@ title: Referencia de rutas de configuración generales
 description: Obtenga información sobre las rutas y los valores de configuración generales y avanzados de Adobe Commerce. Descubra las opciones de configuración del sistema, de seguridad y administrativa.
 feature: Configuration, Observability, Roles/Permissions, System
 exl-id: 3c557746-5182-4929-aebf-5b6fe76f0d8f
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
 workflow-type: tm+mt
 source-wordcount: '971'
 ht-degree: 0%
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Referencia de rutas de configuración generales y avanzadas
 
-En este tema se enumeran las rutas de configuración generales y avanzadas, y _no_ [valores confidenciales y específicos del sistema](config-reference-sens.md). El comando [`magento app:config:dump` &#x200B;](../cli/export-configuration.md) escribe estos valores en el archivo de configuración compartida, `app/etc/config.php`, que debe estar en el control de código fuente.
+En este tema se enumeran las rutas de configuración generales y avanzadas, y _no_ [valores confidenciales y específicos del sistema](config-reference-sens.md). El comando [`magento app:config:dump` ](../cli/export-configuration.md) escribe estos valores en el archivo de configuración compartida, `app/etc/config.php`, que debe estar en el control de código fuente.
 
 Para anular opcionalmente las opciones de configuración o establecer opciones confidenciales, vea [Usar variables de entorno para anular las opciones de configuración](override-config-settings.md#environment-variables).
 
@@ -30,8 +30,8 @@ Estos valores de configuración están disponibles en el Administrador de **Tien
 | Permitir países | `general/country/allow` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![Sensible](/help/assets/configuration/cloud-sens.png) |
 | Código postal opcional para | `general/country/optional_zip_countries` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![Sensible](/help/assets/configuration/cloud-sens.png) |
 | Países de la Unión Europea | `general/country/eu_countries` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | ![Sensible](/help/assets/configuration/cloud-sens.png) |
-| Principales destinos | `general/country/destinations` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
-| El estado es obligatorio para | `general/region/state_required` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> |
+| Principales destinos | `general/country/destinations` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
+| El estado es obligatorio para | `general/region/state_required` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
 | Permitir la selección del estado si es opcional para el país | `general/region/display_all` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
 | Zona horaria | `general/locale/timezone` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |
 | Configuración regional | `general/locale/code` | <!-- ![Not Commerce-only](/help/assets/configuration/red-x.png) --> | |

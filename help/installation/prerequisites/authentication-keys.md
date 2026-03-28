@@ -2,9 +2,9 @@
 title: Obtener las claves de autenticación
 description: Siga estos pasos para recuperar las credenciales y poder acceder a los paquetes de Adobe Commerce Composer en repo.magento.com.
 exl-id: 7ec2a410-d81f-476a-bf6a-f3c61982a734
-source-git-commit: 84a20012a81278cc95587ec14281b05330261687
+source-git-commit: 4a4fd51891b7a98529d00d51c94ed10429218726
 workflow-type: tm+mt
-source-wordcount: '479'
+source-wordcount: '533'
 ht-degree: 0%
 
 ---
@@ -17,12 +17,16 @@ Para tener acceso a los paquetes de Adobe Commerce, debe utilizar las claves aso
 
 >[!TIP]
 >
->Si encuentra [errores](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html?lang=es) o no ve la sección [!UICONTROL Access Keys] en la pestaña Marketplace, es posible que no tenga autorización para acceder al paquete o que el derecho de acceso haya caducado debido a una factura pendiente en su cuenta.
+>Si encuentra [errores](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html) o no ve la sección [!UICONTROL Access Keys] en la pestaña Marketplace, es posible que no tenga autorización para acceder al paquete o que el derecho de acceso haya caducado debido a una factura pendiente en su cuenta.
 >
 >* Si es la persona de contacto principal de la cuenta, asegúrese de que no haya ninguna factura pendiente en la cuenta.
->* Si las claves proporcionadas por el contacto principal no funcionan y no hay facturas pendientes en la cuenta, el contacto principal debe ponerse en contacto con el [Soporte técnico de Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=es#submit-ticket) para obtener ayuda.
+>* Si las claves proporcionadas por el contacto principal no funcionan y no hay facturas pendientes en la cuenta, el contacto principal debe ponerse en contacto con el [Soporte técnico de Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) para obtener ayuda.
 
 Para crear claves de autenticación:
+
+>[!NOTE]
+>
+>A partir de agosto de 2022, el propietario de la cuenta debe tener un Adobe ID y asegurarse de que está vinculado a su cuenta de Commerce. Si el propietario de la cuenta no tiene un Adobe ID, debe crear uno y vincularlo a su cuenta de Commerce antes de generar las claves de autenticación: [Cree y acceda a su cuenta de Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-create#create-a-commerce-account)
 
 1. Inicie sesión en [Commerce Marketplace](https://commercemarketplace.adobe.com/). Si no tiene una cuenta, haga clic en **Registrar**.
 

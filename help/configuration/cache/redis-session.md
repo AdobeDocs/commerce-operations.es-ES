@@ -3,7 +3,7 @@ title: Usar Redis para el almacenamiento de sesión
 description: Obtenga información sobre cómo configurar Redis para el almacenamiento de sesiones en Adobe Commerce. Descubra la configuración de la línea de comandos, las opciones de configuración y las técnicas de optimización del rendimiento.
 feature: Configuration, Cache
 exl-id: f93f500d-65b0-4788-96ab-f1c3d2d40a38
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
 workflow-type: tm+mt
 source-wordcount: '724'
 ht-degree: 1%
@@ -37,7 +37,7 @@ donde
 | session-save-redis-port | puerto | Puerto de escucha del servidor Redis. | 6379 |
 | session-save-redis-password | contraseña | Especifica una contraseña si el servidor Redis requiere autenticación. | vaciar |
 | session-save-redis-timeout | timeout | Tiempo de espera de conexión, en segundos. | 2,5 |
-| session-save-redis-persistent-id | persistent_identifier | Cadena única para habilitar conexiones persistentes (por ejemplo, sess-db0).<br>[Problemas conocidos con phpredis y php-fpm](https://github.com/phpredis/phpredis/issues/70). |
+| session-save-redis-persistent-id | persistent_identifier | Cadena única para habilitar conexiones persistentes (por ejemplo, sess-db0).<br>[Problemas conocidos con phpredis y php-fpm](https://github.com/phpredis/phpredis/issues/70). |  |
 | session-save-redis-db | database | Número único de la base de datos de Redis, recomendado para protegerse contra la pérdida de datos.<br><br>**Importante**: Si usa Redis para más de un tipo de almacenamiento en caché, los números de la base de datos deben ser diferentes. Se recomienda asignar el número de base de datos de almacenamiento en caché predeterminado a 0, el número de base de datos de almacenamiento en caché de páginas a 1 y el número de base de datos de almacenamiento de sesión a 2. | 0 |
 | session-save-redis-compression-threshold | compression_threshold | Establezca el valor en 0 para deshabilitar la compresión (recomendado cuando `suhosin.session.encrypt = On`).<br>[Problema conocido con cadenas de más de 64 KB](https://github.com/colinmollenhour/Cm_Cache_Backend_Redis/issues/18). | 2048 |
 | session-save-redis-compression-lib | compression_library | Opciones: gzip, lzf, lz4 o snappy. | gzip |

@@ -1,5 +1,5 @@
 ---
-source-git-commit: fd421e8c2455a2b45d3f3cc93573d2a609e4936d
+source-git-commit: adda02b9d05b66ab066f110e877584bc1c77515d
 workflow-type: tm+mt
 source-wordcount: '2408'
 ht-degree: 0%
@@ -281,7 +281,7 @@ _AC-14078 - [Contribución de código de GitHub](https://github.com/magento/mage
 
 Ahora, los usuarios administradores solo tienen que configurar uno de los proveedores 2FA habilitados del comerciante (por ejemplo, Google Authenticator o U2F) para acceder al panel Administración. Se pueden configurar proveedores habilitados adicionales más adelante según sea necesario. Anteriormente, cuando se habilitaban varios proveedores de 2FA, todos los usuarios administradores tenían que configurar todos los proveedores habilitados para poder iniciar sesión, lo que creaba fricciones para los usuarios que no tenían acceso a todos los factores.
 
-_AC-8253 - [Contribución de código de GitHub](https://github.com/magento/security-package/commit/71e7936b)_
+_AC-8253 - [Contribución de código de GitHub](https://github.com/magento-commerce/security-package/commit/41e5a26bd36528cb6b1bdc27b249696a2c721779)_
 
 ### Envío
 
