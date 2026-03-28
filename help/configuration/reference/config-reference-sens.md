@@ -15,7 +15,7 @@ ht-degree: 0%
 En este tema se enumeran las rutas de configuración para la configuración específica del sistema y confidencial:
 
 - El comando [`magento app:config:dump`](../cli/export-configuration.md) escribe la configuración específica del sistema en el archivo de configuración específico del sistema, `app/etc/env.php`, que debería _no_ estar en el control de código fuente. También escribe la configuración compartida para todas las instancias de Commerce en `app/etc/config.php`; este archivo _debería_ estar en el control de código fuente.
-- El comando [`magento config:sensitive:set` ](../cli/set-configuration-values.md) escribe la configuración confidencial en `app/etc/env.php`.
+- El comando [`magento config:sensitive:set` &#x200B;](../cli/set-configuration-values.md) escribe la configuración confidencial en `app/etc/env.php`.
 
   También puede establecer valores confidenciales usando variables de configuración como se describe en [Usar variables de entorno para invalidar las opciones de configuración](../reference/override-config-settings.md#environment-variables).
 

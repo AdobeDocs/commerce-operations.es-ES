@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Referencia de rutas de configuración generales y avanzadas
 
-En este tema se enumeran las rutas de configuración generales y avanzadas, y _no_ [valores confidenciales y específicos del sistema](config-reference-sens.md). El comando [`magento app:config:dump` ](../cli/export-configuration.md) escribe estos valores en el archivo de configuración compartida, `app/etc/config.php`, que debe estar en el control de código fuente.
+En este tema se enumeran las rutas de configuración generales y avanzadas, y _no_ [valores confidenciales y específicos del sistema](config-reference-sens.md). El comando [`magento app:config:dump` &#x200B;](../cli/export-configuration.md) escribe estos valores en el archivo de configuración compartida, `app/etc/config.php`, que debe estar en el control de código fuente.
 
 Para anular opcionalmente las opciones de configuración o establecer opciones confidenciales, vea [Usar variables de entorno para anular las opciones de configuración](override-config-settings.md#environment-variables).
 
