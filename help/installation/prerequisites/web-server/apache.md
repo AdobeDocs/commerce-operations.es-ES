@@ -2,7 +2,7 @@
 title: Instalación de Apache para implementaciones locales
 description: Obtenga información sobre cómo instalar y configurar Apache para implementaciones locales de Adobe Commerce. Habilite los módulos, las reescrituras y la configuración ".htaccess" necesarios.
 feature: Install, Configuration
-badgePaas: label="On-Premise" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos locales de Adobe Commerce."
+badgePaas: label="On-Premise" type="Informative" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos locales de Adobe Commerce."
 exl-id: a9a394c9-389f-42ef-9029-dd22c979cfb8
 source-git-commit: 352a71cb88ff38c0920201f49f1d7b889509fd61
 workflow-type: tm+mt
