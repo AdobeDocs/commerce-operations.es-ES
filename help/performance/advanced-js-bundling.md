@@ -1,28 +1,30 @@
 ---
-title: Paquete  [!DNL JavaScript] avanzado
-description: Obtenga información acerca del paquete avanzado  [!DNL javascript] en Adobe Commerce. Descubra estrategias de optimización y directrices de implementación.
+title: Paquete de JavaScript avanzado
+description: Obtenga información acerca del paquete de JavaScript avanzado en Adobe Commerce. Descubra estrategias de optimización y directrices de implementación.
 exl-id: 81a313f8-e541-4da6-801b-8bbd892d6252
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 5d827da35414fa75649f86a2d96fa8ab9086601a
 workflow-type: tm+mt
-source-wordcount: '2133'
+source-wordcount: '2224'
 ht-degree: 0%
 
 ---
 
-# Paquete [!DNL JavaScript] avanzado
+# Paquete de JavaScript avanzado
 
-Agrupar [!DNL JavaScript] módulos para obtener un mejor rendimiento implica reducir dos cosas:
+Agrupar módulos JavaScript para obtener un mejor rendimiento implica reducir dos cosas:
 
 1. Número de solicitudes del servidor.
 1. El tamaño de esas solicitudes de servidor.
 
-En una aplicación modular, el número de solicitudes de servidor puede alcanzar los cientos. Por ejemplo, la captura de pantalla siguiente muestra solamente el inicio de la lista de [!DNL JavaScript] módulos cargados en la página principal de una instalación limpia.
+En una aplicación modular, el número de solicitudes de servidor puede alcanzar los cientos. Por ejemplo, la siguiente captura de pantalla muestra solo el inicio de la lista de módulos de JavaScript cargados en la página principal de una instalación limpia.
 
 ![Sin agrupamiento](../assets/performance/images/noBundling.png)
 
 ## Combinación y agrupamiento
 
-De serie, [!DNL Commerce] proporciona dos formas de reducir el número de solicitudes de servidor: combinando y agrupando. Esta configuración está desactivada de forma predeterminada. Puede activarlos en la interfaz de usuario de administración en **[!UICONTROL Stores]** > **Configuración** > **[!UICONTROL Configuration]** > **[!UICONTROL Advanced]** > **[!UICONTROL Developer]** > **[!UICONTROL [!DNL JavaScript] Settings]**, o desde la línea de comandos.
+Commerce admite el agrupamiento para reducir el número de solicitudes de servidor. El agrupamiento está desactivado de forma predeterminada. Puede activarlo en **[!UICONTROL Stores]** > **Configuración** > **[!UICONTROL Configuration]** > **[!UICONTROL Advanced]** > **[!UICONTROL Developer]** > **[!UICONTROL JavaScript Settings]**, o desde la línea de comandos.
+
+Consulte [Sugerencias de agrupación](configuration.md#bundling-tips) en *Prácticas recomendadas de configuración* para herramientas de terceros, HTTP/2 e instrucciones sobre la combinación de JS y CSS obsoletas.
 
 ![Paquete](../assets/performance/images/bundlingImage.png)
 
@@ -34,15 +36,20 @@ Para habilitar el agrupamiento integrado desde la línea de comandos:
 php -f bin/magento config:set dev/js/enable_js_bundling 1
 ```
 
-Este es un mecanismo [!DNL Commerce] nativo que combina todos los recursos presentes en el sistema y los distribuye entre paquetes del mismo tamaño (bundle_0.js, bundle_1.js ... bundle_x.js):
+Se trata de un mecanismo nativo de Commerce que combina todos los recursos presentes en el sistema y los distribuye entre paquetes del mismo tamaño (bundle_0.js, bundle_1.js ... bundle_x.js):
 
-![[!DNL Commerce] paquete](../assets/performance/images/magentoBundling.png)
+![Paquete de Commerce](../assets/performance/images/magentoBundling.png)
 
-Mejor, pero el explorador sigue cargando TODOS los paquetes de [!DNL JavaScript], no solo los necesarios.
+Mejor, pero el navegador sigue cargando TODOS los paquetes de JavaScript, no solo los necesarios.
 
-El paquete [!DNL Commerce] reduce el número de conexiones por página, pero para cada solicitud de página carga todos los paquetes, incluso cuando la página solicitada solo puede depender de archivos dentro de uno o dos de los paquetes. El rendimiento mejora después de que el explorador almacene en caché los paquetes. Sin embargo, como el explorador carga estos paquetes sincrónicamente, la primera visita del usuario a una tienda de [!DNL Commerce] podría tardar un poco en procesarse y dañar la experiencia del usuario.
+El paquete de Commerce reduce el número de conexiones por página, pero para cada solicitud de página carga todos los paquetes, incluso cuando la página solicitada solo puede depender de archivos dentro de uno o dos de los paquetes. El rendimiento mejora después de que el explorador almacene en caché los paquetes. Sin embargo, como el explorador carga estos paquetes sincrónicamente, la primera visita del usuario a una tienda de Commerce podría tardar un tiempo en procesarse y dañar la experiencia del usuario.
 
-### Combinación básica
+### Combinación básica (no recomendada)
+
+>[!NOTE]
+>
+>No se recomienda usar **[!UICONTROL Merge JavaScript Files]**. Esta configuración se diseñó únicamente para JavaScript cargados sincrónicamente en la sección HEAD de la página y puede hacer que el agrupamiento y la lógica [!DNL RequireJS] funcionen incorrectamente. Se mantiene solo para la compatibilidad con versiones anteriores y no proporciona ninguna ventaja de rendimiento cuando HTTP/2 está habilitado.
+>Si tiene **[!UICONTROL Merge JavaScript Files]** habilitado y tiene problemas, intente deshabilitarlo antes de aplicar los parches. Consulte [ACSD-67908](../tools/quality-patches-tool/patches-available-in-qpt/v1-1-73/acsd-67908.md) si no puede deshabilitar la combinación.
 
 Para habilitar la combinación integrada desde la línea de comandos:
 
@@ -50,7 +57,7 @@ Para habilitar la combinación integrada desde la línea de comandos:
 php -f bin/magento config:set dev/js/merge_files 1
 ```
 
-Este comando combina todos los archivos sincrónicos de [!DNL JavaScript] en un archivo. Habilitar la combinación sin habilitar también el agrupamiento no es útil porque [!DNL Commerce] usa RequireJS. Si no habilita el agrupamiento, [!DNL Commerce] solo combina RequireJS y su configuración. Al habilitar el agrupamiento y la combinación, [!DNL Commerce] crea un solo archivo [!DNL JavaScript]:
+Este comando combina todos los archivos sincrónicos de JavaScript en un archivo. Habilitar la combinación sin habilitar también el agrupamiento no es útil porque Commerce usa [!DNL RequireJS]. Si no habilita el agrupamiento, Commerce solo combina [!DNL RequireJS] y su configuración. Al habilitar el agrupamiento y la combinación, Commerce crea un solo archivo JavaScript:
 
 ![Combinación en el mundo real](../assets/performance/images/magentoMergingDevWorld.png)
 
@@ -62,25 +69,25 @@ Para probar y preparar la implementación de tu tienda para el mundo real, te re
 
 ![Paquete para el mundo real](../assets/performance/images/magentoBundlingRealWorld.png)
 
-Con una conectividad 3G lenta, se tardan unos 44 segundos en cargar todos los paquetes para la página principal de una instalación [!DNL Commerce] limpia.
+Con una conectividad 3G lenta, se tarda unos 44 segundos en cargar todos los paquetes para la página principal de una instalación limpia de Commerce.
 
 Lo mismo ocurre al combinar los paquetes en un solo archivo. Los usuarios aún pueden esperar alrededor de 42 segundos para la carga inicial de la página, como se muestra a continuación:
 
 ![Combinación en el mundo real](../assets/performance/images/magentoMergingRealWorld.png)
 
-Con un enfoque más avanzado para el agrupamiento de [!DNL JavaScript], podemos mejorar estos tiempos de carga.
+Con un enfoque más avanzado del agrupamiento de JavaScript, podemos mejorar estos tiempos de carga.
 
 ## Agrupación avanzada
 
-Recuerde, el objetivo del agrupamiento de [!DNL JavaScript] es reducir el número y el tamaño de los recursos solicitados para cada página cargada en el explorador. Para ello, queremos crear nuestros paquetes para que cada página de nuestra tienda solo necesite descargar un paquete común y un paquete específico para cada página a la que se acceda.
+Recuerde, el objetivo del agrupamiento de JavaScript es reducir el número y el tamaño de los recursos solicitados para cada página cargada en el explorador. Para ello, queremos crear nuestros paquetes para que cada página de nuestra tienda solo necesite descargar un paquete común y un paquete específico para cada página a la que se acceda.
 
-Una manera de conseguirlo es definir los paquetes por tipos de página. Puede clasificar las páginas de [!DNL Commerce] en varios tipos de página, incluidos Categoría, Producto, CMS, Cliente, Carro de compras y Cierre de compra. Cada página clasificada en uno de estos tipos de página tiene un conjunto diferente de dependencias del módulo RequireJS. Cuando agrupa los módulos RequireJS por tipo de página, acaba teniendo solo un puñado de paquetes que cubren las dependencias de cualquier página de su tienda.
+Una manera de conseguirlo es definir los paquetes por tipos de página. Puede clasificar las páginas de Commerce en varios tipos de página, como Categoría, Producto, CMS, Cliente, Carro de compras y Cierre de compra. Cada página clasificada en uno de estos tipos de página tiene un conjunto diferente de [!DNL RequireJS] dependencias de módulo. Cuando agrupe los módulos de [!DNL RequireJS] por tipo de página, solo obtendrá un puñado de paquetes que cubran las dependencias de cualquier página de su tienda.
 
 Por ejemplo, podría terminar con un paquete para las dependencias comunes a todas las páginas, un paquete para páginas solo de CMS, un paquete para páginas solo de catálogo, otro paquete para páginas solo de búsqueda y un paquete para páginas de cierre de compra.
 
 También puede crear paquetes por propósito: para funciones comunes, funciones relacionadas con productos, funciones de envío, funciones de cierre de compra, impuestos y validaciones de formularios. La forma de definir los paquetes depende de usted y de la estructura de su tienda. Es posible que algunas estrategias de agrupamiento funcionen mejor que otras.
 
-Una instalación limpia de [!DNL Commerce] permite alcanzar un rendimiento suficientemente bueno dividiendo los paquetes por tipos de página, pero algunas personalizaciones pueden requerir un análisis más profundo y otras distribuciones de recursos.
+Una instalación limpia de Commerce permite alcanzar un rendimiento suficientemente bueno dividiendo los paquetes por tipos de página, pero algunas personalizaciones pueden requerir un análisis más profundo y otras distribuciones de recursos.
 
 ### Herramientas necesarias
 
@@ -102,7 +109,7 @@ Las versiones completas del código de ejemplo utilizado en este artículo está
 
 #### 1\. Añadir un archivo build.js
 
-Crear un archivo de `build.js` en el directorio raíz de [!DNL Commerce]. Este archivo contendrá toda la configuración de compilación de los paquetes.
+Cree un archivo de `build.js` en el directorio raíz de Commerce. Este archivo contendrá toda la configuración de compilación de los paquetes.
 
 ```javascript
 ({
@@ -113,9 +120,9 @@ Crear un archivo de `build.js` en el directorio raíz de [!DNL Commerce]. Este a
 
 Más adelante, cambiaremos la configuración de `optimize:` de_ `none` a `uglify2` para minimizar la salida del paquete. Pero por ahora, durante el desarrollo, puede dejarlo establecido en `none` para garantizar compilaciones más rápidas.
 
-#### 2\. Agregar dependencias, correcciones de compatibilidad, rutas y asignaciones de RequireJS
+#### 2\. Agregar [!DNL RequireJS] dependencias, suplementos, rutas y asignaciones
 
-Agregue los siguientes nodos de configuración de compilación de RequireJS, `deps`, `shim`, `paths` y `map`, a su archivo de compilación:
+Agregue los siguientes [!DNL RequireJS] nodos de configuración de compilación, `deps`, `shim`, `paths` y `map`, a su archivo de compilación:
 
 ```javascript
 ({
@@ -129,11 +136,11 @@ Agregue los siguientes nodos de configuración de compilación de RequireJS, `de
 })
 ```
 
-#### 3\. Agregue los valores de instancia requirements-config.js
+#### 3\. Agregar los valores de instancia `requirejs-config.js`
 
 En este paso, tendrá que agregar todos los nodos de configuración de `deps`, `shim`, `paths` y `map` del archivo `requirejs-config.js` de su tienda a los nodos correspondientes del archivo `build.js`. Para ello, puede abrir la pestaña **[!UICONTROL Network]** en el panel Herramientas para desarrolladores del explorador y navegar a cualquier página de la tienda, como la página principal. En la pestaña Red, verá la instancia del archivo `requirejs-config.js` que tiene su tienda cerca de la parte superior y que se resalta aquí:
 
-![Requerir configuración de JS](../assets/performance/images/RequireJSConfig.png)
+![[!DNL RequireJS] configuración](../assets/performance/images/RequireJSConfig.png)
 
 Dentro de este archivo, encontrará varias entradas para cada uno de los nodos de configuración (`deps`, `shim`, `paths`, `map`). Debe agregar estos valores de varios nodos al nodo de configuración único del archivo build.js. Por ejemplo, si la instancia `requirejs-config.js` de su almacén tiene entradas para 15 nodos `map` separados, deberá combinar las entradas de los 15 nodos en el nodo `map` único del archivo `build.js`. Lo mismo ocurrirá con los nodos `deps`, `shim` y `paths`. Sin un script para automatizar este proceso, puede llevar tiempo.
 
@@ -167,16 +174,16 @@ Al final del archivo `build.js`, agregue la matriz module[] como marcador de pos
 })
 ```
 
-#### 5\. Recuperar dependencias de RequireJS
+#### 5\. Recuperar dependencias [!DNL RequireJS]
 
 Puede recuperar todas las dependencias del módulo [!DNL RequireJS] de los tipos de página del almacén mediante:
 
 1. [!DNL PhantomJS] desde la línea de comandos (suponiendo que tenga [!DNL PhantomJS] instalado).
-1. Requiera el comando JS en la consola del explorador.
+1. [!DNL RequireJS] comando en la consola del explorador.
 
 #### Para usar [!DNL PhantomJS]:
 
-En el directorio raíz [!DNL Commerce], cree un nuevo archivo llamado `deps.js` y copie el código siguiente. Este código utiliza [!DNL [!DNL PhantomJS]] para abrir una página y esperar a que el explorador cargue todos los recursos de la página. Luego genera todas las dependencias [!DNL RequireJS] para una página determinada.
+En el directorio raíz de Commerce, cree un nuevo archivo llamado `deps.js` y copie el código siguiente. Este código utiliza [!DNL [!DNL PhantomJS]] para abrir una página y esperar a que el explorador cargue todos los recursos de la página. Luego genera todas las dependencias [!DNL RequireJS] para una página determinada.
 
 ```javascript
 "use strict";
@@ -204,7 +211,7 @@ if (system.args.length === 1) {
 }
 ```
 
-Abra un terminal dentro del directorio raíz [!DNL Commerce] y ejecute el script con cada página del almacén que represente un tipo de página específico:
+Abra un terminal dentro del directorio raíz de Commerce y ejecute el script en cada página de la tienda que represente un tipo de página específico:
 
 <pre>
 phantomjs deps.js <i>url-to-specific-page</i> &gt; <i>text-file-representation-pagetype-dependencies</i>
@@ -252,9 +259,9 @@ sed -i -e 's/mixins\!.*$//g' bundle/product.txt
 
 #### 7\. Identificación de paquetes únicos y comunes
 
-El objetivo es crear un paquete común de [!DNL JavaScript] archivos necesarios para todas las páginas. De este modo, el explorador solo necesita cargar el paquete común junto con uno o más tipos de página específicos.
+El objetivo es crear un paquete común de archivos JavaScript necesarios para todas las páginas. De este modo, el explorador solo necesita cargar el paquete común junto con uno o más tipos de página específicos.
 
-Abra un terminal en el directorio raíz [!DNL Commerce] y utilice el siguiente comando para comprobar que dispone de dependencias que puede dividir en paquetes independientes:
+Abra un terminal en el directorio raíz de Commerce y utilice el siguiente comando para comprobar que tiene dependencias que puede dividir en paquetes separados:
 
 ```bash
 sort bundle/*.txt |uniq -c |sort -n
@@ -287,7 +294,7 @@ Esto nos indica que es probable que podamos mejorar las velocidades de carga de 
 
 #### 8\. Creación de un archivo de distribución de dependencias
 
-Para saber qué tipos de página necesitan qué dependencias, cree un nuevo archivo en el directorio raíz [!DNL Commerce] llamado `deps-map.sh` y copie el código siguiente:
+Para saber qué tipos de página necesitan qué dependencias, cree un nuevo archivo en el directorio raíz de Commerce llamado `deps-map.sh` y copie el código siguiente:
 
 ```shell
 awk 'END {
@@ -309,7 +316,7 @@ awk 'END {
 
 También puede encontrar el script en [https://www.unix.com/shell-programming-and-scripting/140390-get-common-lines-multiple-files.html](https://www.unix.com/shell-programming-and-scripting/140390-get-common-lines-multiple-files.html)
 
-Abra un terminal en el directorio raíz [!DNL Commerce] y ejecute el archivo:
+Abra un terminal en el directorio raíz de Commerce y ejecute el archivo:
 
 ```bash
 bash deps-map.sh
@@ -341,7 +348,7 @@ Abra el archivo de configuración `build.js` y agregue los paquetes al nodo `mod
 
 - `create`: un indicador booleano para crear el paquete (valores: `true` o `false`).
 
-- `include`: una matriz de recursos (cadenas) incluidos como dependencias para la página. RequireJS rastrea todas las dependencias e las incluye en el paquete a menos que se excluyan.
+- `include`: una matriz de recursos (cadenas) incluidos como dependencias para la página. [!DNL RequireJS] rastrea todas las dependencias e las incluye en el paquete a menos que se excluyan.
 
 - `exclude`: una matriz de paquetes o recursos que se excluirán del paquete.
 
@@ -378,7 +385,7 @@ Este ejemplo reutiliza los recursos `mage/bootstrap` y `requirejs/require`, lo q
 
 ### Parte 2: Generación de paquetes
 
-Los pasos siguientes describen el proceso básico para generar paquetes de [!DNL Commerce] más eficientes. Puede automatizar este proceso como desee, pero aún necesitará utilizar `nodejs` y `r.js` para generar los paquetes. Y si las temáticas tienen [!DNL JavaScript] personalizaciones relacionadas y no pueden reutilizar el mismo archivo de `build.js`, es posible que necesite crear varias `build.js` configuraciones por temática.
+Los pasos siguientes describen el proceso básico para generar paquetes de Commerce más eficientes. Puede automatizar este proceso como desee, pero aún necesitará utilizar `nodejs` y `r.js` para generar los paquetes. Y si las temáticas tienen personalizaciones relacionadas con JavaScript y no pueden reutilizar el mismo archivo de `build.js`, es posible que tenga que crear varias configuraciones de `build.js` por temática.
 
 #### &#x200B;1. Generar sitios de almacenamiento estáticos
 
@@ -399,7 +406,7 @@ Para generar paquetes para todas las temáticas y configuraciones regionales de 
 
 #### &#x200B;2. Mueva el contenido del almacén estático a un directorio temporal
 
-En primer lugar, debe mover el contenido estático del directorio de destino a algún directorio temporal porque RequireJS reemplaza todo el contenido del directorio de destino.
+Primero, debe mover el contenido estático del directorio de destino a algún directorio temporal porque [!DNL RequireJS] reemplaza todo el contenido del directorio de destino.
 
 ```bash
 mv pub/static/frontend/Magento/{theme}/{locale} pub/static/frontend/Magento/{theme}/{locale}_tmp
@@ -413,7 +420,7 @@ mv pub/static/frontend/Magento/luma/en_US pub/static/frontend/Magento/luma/en_US
 
 #### &#x200B;3. Ejecute el optimizador r.js
 
-A continuación, ejecute el optimizador r.js en el archivo `build.js` desde el directorio raíz de [!DNL Commerce]. Las rutas a todos los directorios y archivos son relativas al directorio de trabajo.
+A continuación, ejecute el optimizador r.js en el archivo `build.js` desde el directorio raíz de Commerce. Las rutas a todos los directorios y archivos son relativas al directorio de trabajo.
 
 ```bash
 r.js -o build.js baseUrl=pub/static/frontend/Magento/luma/en_US_tmp dir=pub/static/frontend/Magento/luma/en_US
@@ -438,9 +445,9 @@ drwxr-xr-x 70 root root    4096 Mar 28 11:24 ../
 -rw-r--r--  1 root root   74233 Mar 28 11:24 shipping.js
 ```
 
-#### &#x200B;4. Configurar RequireJS para que utilice paquetes
+#### &#x200B;4. Configurar [!DNL RequireJS] para que use paquetes
 
-Para que RequireJS use los paquetes, agregue una llamada de retorno `onModuleBundleComplete` después del nodo `modules` en el archivo `build.js`:
+Para que [!DNL RequireJS] use sus paquetes, agregue una llamada de retorno `onModuleBundleComplete` después del nodo `modules` en el archivo `build.js`:
 
 ```javascript
 [
@@ -482,7 +489,7 @@ Ejecute el siguiente comando para implementar:
 r.js -o app/design/frontend/Magento/luma/build.js baseUrl=pub/static/frontend/Magento/luma/en_US_tmp dir=pub/static/frontend/Magento/luma/en_US
 ```
 
-Abra `requirejs-config.js` en el directorio `pub/static/frontend/Magento/luma/en_US` para comprobar que RequireJS anexó el archivo con llamadas de configuración de agrupamiento:
+Abra `requirejs-config.js` en el directorio `pub/static/frontend/Magento/luma/en_US` para comprobar que [!DNL RequireJS] anexó el archivo con llamadas de configuración de agrupamiento:
 
 ```javascript
 require.config({
@@ -503,11 +510,11 @@ Una vez que se carga la página, observe que el explorador carga diferentes depe
 
 ![Dos veces más rápido](../assets/performance/images/TwiceAsFast.png)
 
-El tiempo de carga de una página principal vacía ahora es dos veces más rápido que usar el paquete [!DNL Commerce] nativo. Pero podemos hacerlo aún mejor.
+El tiempo de carga de una página principal vacía ahora es el doble de rápido que utilizar el paquete nativo de Commerce. Pero podemos hacerlo aún mejor.
 
 #### &#x200B;7. Optimizar los paquetes
 
-Aunque estén comprimidos en gzip, los [!DNL JavaScript] archivos siguen siendo grandes. Minimícelos con RequireJS, que usa uglifier para minificar [!DNL JavaScript] con buenos resultados.
+Incluso si se comprime, los archivos JavaScript siguen siendo grandes. Minimícelos con [!DNL RequireJS], que usa uglifier para minificar JavaScript con buenos resultados.
 
 Para habilitar el optimizador en el archivo `build.js`, agregue `uglify2` como valor para la propiedad de optimización en la parte superior del archivo `build.js`:
 
@@ -521,4 +528,4 @@ Para habilitar el optimizador en el archivo `build.js`, agregue `uglify2` como v
 Los resultados pueden ser significativos:
 ![Tres veces más rápido](../assets/performance/images/ThreeTimesFaster.png)
 
-Los tiempos de carga ahora son tres veces más rápidos que con el paquete [!DNL Commerce] nativo.
+Los tiempos de carga ahora son tres veces más rápidos que con el paquete nativo de Commerce.

@@ -1,7 +1,7 @@
 ---
-source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
+source-git-commit: 1dcfbd53f79c83dbf6c44ffce952de101f7e01f1
 workflow-type: tm+mt
-source-wordcount: '27921'
+source-wordcount: '27999'
 ht-degree: 0%
 
 ---
@@ -132,6 +132,8 @@ _AC-10782 - [Problema de GitHub](https://github.com/magento/magento2/issues/3833
 
 #### admin Actualización de contraseña.
 
+No hay ninguna descripción disponible.
+
 _AC-10886 - [Problema de GitHub](https://github.com/magento/magento2/issues/38352) - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/4bca5dfe)_
 
 #### bloqueo de añadir dirección de mi cuenta al guardar
@@ -171,6 +173,8 @@ El sistema ahora permite establecer los campos &quot;Iniciar sesión como client
 _AC-13000 - [Problema de GitHub](https://github.com/magento/magento2/issues/32329) - [Contribución de código de GitHub](https://github.com/magento/magento2/pull/32359)_
 
 #### La página principal de la interfaz de usuario del front-end de mi perfil desplegable es que el botón no está allí.(intermitentemente)
+
+No hay ninguna descripción disponible.
 
 _AC-14299_
 
@@ -237,6 +241,8 @@ _ACP2E-3038 - [Contribución de código de GitHub](https://github.com/magento/ma
 
 #### El atributo de dirección de cliente personalizada &quot;select&quot; no se representa para la nueva dirección de cliente
 
+No hay ninguna descripción disponible.
+
 _AC-2341 - [Problema de GitHub](https://github.com/magento/magento2/issues/34950)_
 
 ### IU de administración
@@ -285,9 +291,13 @@ _AC-13529 - [Contribución de código de GitHub](https://github.com/magento/mage
 
 #### Cuando el número máximo de solicitudes de restablecimiento de contraseña&quot; está establecido en más de 0, p. ej.: 3 , &quot;Los mensajes de error que exceden el límite se envían antes de alcanzar el límite, es decir, desde la segunda vez
 
+No hay ninguna descripción disponible.
+
 _AC-13767_
 
 #### Aunque &quot;Número máximo de solicitudes de restablecimiento de contraseña&quot; está establecido en 0 ( deshabilitado) , &quot;Los mensajes de error que exceden el límite se envían desde la segunda vez&quot;
+
+No hay ninguna descripción disponible.
 
 _AC-13768_
 
@@ -298,6 +308,8 @@ Anteriormente, el asterisco rojo no se mostraba para el número de teléfono, pe
 _AC-13850 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/c699c206)_
 
 #### En Administración Cuando intentamos Reordenar el botón de envío del pedido no se puede hacer clic en. (intermitentemente)
+
+No hay ninguna descripción disponible.
 
 _AC-14300_
 
@@ -605,6 +617,8 @@ _ACP2E-3187 - [Contribución de código de GitHub](https://github.com/magento/ma
 
 #### Paquete 2.4.8-beta102 Enterprise Edition falla con excepciones de aplicación
 
+No hay ninguna descripción disponible.
+
 _AC-13501_
 
 #### Los productos asignados al catálogo compartido no se reflejan en el front-end cuando se ejecuta el índice parcial
@@ -684,6 +698,8 @@ _ACP2E-3391_
 
 #### El botón de cierre de compra rápido del administrador está desactivado.
 
+No hay ninguna descripción disponible.
+
 _AC-14293_
 
 #### Pagar a través de LPM
@@ -699,6 +715,8 @@ El sistema ahora permite métodos de pago exprés para productos configurables q
 _PAQUETE-3368_
 
 #### Error de comprobación de CVV
+
+No hay ninguna descripción disponible.
 
 _PAQUETE-3369_
 
@@ -810,9 +828,13 @@ _AC-13302 - [Problema de GitHub](https://github.com/magento/magento2/issues/3929
 
 #### Registro de regalos El producto no se muestra correctamente
 
+No hay ninguna descripción disponible.
+
 _AC-13797_
 
 #### Registro de regalos El producto no se muestra correctamente
+
+No hay ninguna descripción disponible.
 
 _AC-13841_
 
@@ -1531,6 +1553,8 @@ _AC-12283 - [Problema de GitHub](https://github.com/magento/magento2/issues/3884
 
 #### El árbol de categorías del widget no se representa correctamente
 
+No hay ninguna descripción disponible.
+
 _AC-12692 - [Problema de GitHub](https://github.com/magento/magento2/issues/39008) - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/58e40ceb)_
 
 #### No se puede ver el mensaje &quot;Using Default value&quot; al cambiar el tema en la página de configuración de diseño
@@ -1909,6 +1933,8 @@ _AC-13149 - [Problema de GitHub](https://github.com/magento/magento2/issues/3921
 
 #### La instalación :upgrade está fallando con la versión MariaDB 11.4 debido a cambios en el conjunto de caracteres y la intercalación
 
+No hay ninguna descripción disponible.
+
 _AC-13247_
 
 #### [Problema] Elimine todos los parámetros de obtención de marketing para minimizar la caché
@@ -1971,7 +1997,7 @@ El sistema ahora se adhiere al estándar de codificación al eliminar la etiquet
 
 _AC-8356 - [Problema de GitHub](https://github.com/magento/magento2/issues/37250) - [Contribución de código de GitHub](https://github.com/magento/magento2/pull/37000)_
 
-#### Espacio en la regla de saltos de sintaxis del editor para `[&lbrace;composer,auth&rbrace;.json]`
+#### Espacio en la regla de saltos de sintaxis del editor para `[{composer,auth}.json]`
 
 El sistema ahora aplica correctamente una sangría de 4 espacios a los archivos composer y auth.json, siguiendo una corrección de un error de sintaxis en la configuración del editor. Anteriormente, debido a un espacio en la sintaxis del editor de configuración, estos archivos tenían un formato incorrecto con una sangría de 2 espacios.
 
@@ -2085,6 +2111,8 @@ _AC-7976 - [Problema de GitHub](https://github.com/magento/magento2/issues/36877
 
 #### Los informes 2.4.8-beta1 EE no se generan debido a la excepción de Magento
 
+No hay ninguna descripción disponible.
+
 _AC-13011_
 
 ### Marco, marco de IU
@@ -2127,7 +2155,7 @@ El problema se ha corregido después de aplicar la comprobación al solicitar un
 
 _ACP2E-2653 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/12e071c3)_
 
-#### La llamada de productos GraphQL que contiene el filtro de precios `&lbrace;from:"0"&rbrace;` no devuelve ningún resultado
+#### La llamada de productos GraphQL que contiene el filtro de precios `{from:"0"}` no devuelve ningún resultado
 
 Anteriormente, la búsqueda de productos de graphql con filtro para precios cero no arrojaba ningún resultado debido a una excepción generada. Ahora la búsqueda devuelve los resultados según lo esperado.
 
@@ -2662,13 +2690,19 @@ _ACP2E-3003 - [Contribución de código de GitHub](https://github.com/magento/ma
 
 #### [Braintree] reembolsa la transacción de almacenamiento en línea como transactionid-return
 
+No hay ninguna descripción disponible.
+
 _PAQUETE-3394_
 
 #### [Braintree] + [CLOUD] Braintree (tarjeta de crédito) no puede dividir los cargos
 
+No hay ninguna descripción disponible.
+
 _PAQUETE-3421_
 
 #### El certificado SSL de [Braintree] [Cloud]Braintree caduca el 30 de junio
+
+No hay ninguna descripción disponible.
 
 _PAQUETE-3422_
 
@@ -2981,6 +3015,8 @@ _AC-11474 - [Problema de GitHub](https://github.com/magento/magento2/issues/3848
 
 #### La navegación en el árbol de categorías provoca errores en Redis: &quot;La sesión de Redis ha superado las conexiones simultáneas&quot;
 
+No hay ninguna descripción disponible.
+
 _AC-12571 - [Problema de GitHub](https://github.com/magento/magento2/issues/38851) - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/0611e750)_
 
 #### Problemas de CSP combinados con dev/css/use_css_critical_path
@@ -3115,6 +3151,8 @@ El sistema ahora muestra correctamente el precio de los productos simples cuando
 _AC-11810: [problema de GitHub](https://github.com/magento/magento2/issues/38603)_
 
 #### Error de redondeo de céntimos en la regla de catálogo
+
+No hay ninguna descripción disponible.
 
 _AC-13855 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/276e0acd)_
 
@@ -3335,6 +3373,8 @@ _ACP2E-3383 - [Contribución de código de GitHub](https://github.com/magento/ma
 
 #### La regla de precio del segundo carro de compras no se aplica si ya se ha aplicado la regla del primer carro de compras
 
+No hay ninguna descripción disponible.
+
 _AC-13751_
 
 ### Buscar
@@ -3346,6 +3386,8 @@ El sistema ahora muestra correctamente los resultados de búsqueda en la página
 _AC-13053 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/3ea26621)_
 
 #### magento/module-open-search depende de una rama opensearch-php inexistente
+
+No hay ninguna descripción disponible.
 
 _AC-13721 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/05dc0bbf)_
 
@@ -3396,6 +3438,8 @@ Asegúrese de que las tarifas de UPS sean visibles en el pago y en el carro de c
 _AC-11938 - [Problema de GitHub](https://github.com/magento/magento2/issues/38618) - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/493e01f5)_
 
 #### Actualizaciones de las instrucciones de configuración de &quot;sandbox&quot; y &quot;prod&quot; de UPS REST en devdoc
+
+No hay ninguna descripción disponible.
 
 _AC-12938_
 
@@ -3505,9 +3549,13 @@ _AC-13362 - [Problema de GitHub](https://github.com/magento/magento2/issues/3139
 
 #### MAGETWO-95118: Comprobación del comportamiento con el carro de compras persistente después de que caduque la sesión
 
+No hay ninguna descripción disponible.
+
 _AC-13478 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/7d5e3906)_
 
 #### Las pruebas de integración dan error Magento\NegotiableQuote\Controller\Quote\DownloadTest::testCompanyManagerDownloadWithNQSubPermission
+
+No hay ninguna descripción disponible.
 
 _AC-13716_
 
@@ -3518,6 +3566,8 @@ Anteriormente, si la base de datos contenía un registro sobre la regla de desti
 _AC-13722_
 
 #### Corregir pruebas estáticas para habilitar el uso por extensiones de terceros
+
+No hay ninguna descripción disponible.
 
 _AC-13848 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/9e383b4d)_
 
@@ -3584,6 +3634,8 @@ Esta PR mejora el mensaje de error cuando requireJs no puede cargar un component
 _AC-13472 - [Problema de GitHub](https://github.com/magento/magento2/issues/36761) - [Contribución de código de GitHub](https://github.com/magento/magento2/pull/38971)_
 
 #### Errores de obsolescencia de PHP 8.4 que causan errores de compilación en 2.4-development
+
+No hay ninguna descripción disponible.
 
 _AC-14004 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/1da9ba6f)_
 
