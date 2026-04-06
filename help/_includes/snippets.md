@@ -1,11 +1,17 @@
 ---
-source-git-commit: 1e3508e2e8e99d686dfa692415e2b4b41e8b80e8
+source-git-commit: c297996273c42481fe9d3ee20ec3b9256e27fb5f
 workflow-type: tm+mt
-source-wordcount: '726'
+source-wordcount: '761'
 ht-degree: 0%
 
 ---
 # Fragmentos
+
+## Parches de seguridad para una compatibilidad ampliada {#extended-support}
+
+>[!NOTE]
+>
+>Los parches de seguridad de soporte ampliado para 2.4.5 solo están disponibles para los clientes de Adobe Commerce. Estos parches no están disponibles para la base de código de Magento Open Source. Consulte [Soporte ampliado](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy#extended-support).
 
 ## Solo Commerce {#commerce-only}
 
@@ -31,7 +37,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Después de instalar este parche de seguridad, los comerciantes de Adobe Commerce B2B también deben actualizar a la última versión del parche de seguridad B2B compatible. Ver [notas de la versión B2B](https://experienceleague.adobe.com/es/docs/commerce-admin/b2b/release-notes).
+>Después de instalar este parche de seguridad, los comerciantes de Adobe Commerce B2B también deben actualizar a la última versión del parche de seguridad B2B compatible. Ver [notas de la versión B2B](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes).
 
 ## Solo Adobe Commerce {#ee-only}
 
@@ -85,7 +91,7 @@ Para poder ejecutar indizadores en modo paralelo, debe habilitar la compatibilid
 
 >[!IMPORTANT]
 >
->Adobe no admite la aplicación de parches oficiales proporcionados por Adobe mediante este método. Utilice el siguiente método bajo su propia responsabilidad. Para aplicar parches oficiales, use [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es){target="_blank"}. Realice siempre pruebas exhaustivas antes de implementar cualquier parche personalizado.
+>Adobe no admite la aplicación de parches oficiales proporcionados por Adobe mediante este método. Utilice el siguiente método bajo su propia responsabilidad. Para aplicar parches oficiales, use [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}. Realice siempre pruebas exhaustivas antes de implementar cualquier parche personalizado.
 
 ## Backports de parches de seguridad de octubre de 2025 {#oct-2025-backports}
 
@@ -99,7 +105,7 @@ Para poder ejecutar indizadores en modo paralelo, debe habilitar la compatibilid
 
 * **Se agregó compatibilidad con el protocolo Apache ActiveMQ Artemis STOMP**
 
-  Se ha agregado compatibilidad con el agente de mensajes de código abierto ActiveMQ Artemis a través del Protocolo simple de mensajería orientada a texto (STOMP). Ofrece un sistema de mensajería fiable y escalable, que ofrece flexibilidad para integraciones basadas en STOMP. Consulte [Apache ActiveMQ Artemis](https://experienceleague.adobe.com/es/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework#apache-activemq-artemis-stomp) en la *Guía de configuración de Commerce*.
+  Se ha agregado compatibilidad con el agente de mensajes de código abierto ActiveMQ Artemis a través del Protocolo simple de mensajería orientada a texto (STOMP). Ofrece un sistema de mensajería fiable y escalable, que ofrece flexibilidad para integraciones basadas en STOMP. Consulte [Apache ActiveMQ Artemis](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework#apache-activemq-artemis-stomp) en la *Guía de configuración de Commerce*.
 
 ## La página Checkout no puede cargar static.min.js y mixins.min.js {#checkout-page-fails-to-load-static-min-js-and-mixins-min-js}
 
@@ -116,4 +122,4 @@ Después de los cambios recientes de CSP/SRI, la página de cierre de compra no 
 
 **Revisión**:
 
-Hay una revisión disponible. Consulte [La desprotección falla cuando la minificación y el agrupamiento de JS están habilitados](https://experienceleague.adobe.com/es/docs/experience-cloud-kcs/kbarticles/ka-27997) en la Base de conocimiento para obtener detalles del parche.
+Hay una revisión disponible. Consulte [La desprotección falla cuando la minificación y el agrupamiento de JS están habilitados](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27997) en la Base de conocimiento para obtener detalles del parche.
