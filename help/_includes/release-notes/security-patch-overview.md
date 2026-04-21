@@ -1,7 +1,7 @@
 ---
-source-git-commit: 4a2266f2df235b98ed3b738af4b97cb4b74dc664
+source-git-commit: 52c330f62d722a4cae7f7f360ca61eca0f04b961
 workflow-type: tm+mt
-source-wordcount: '265'
+source-wordcount: '388'
 ht-degree: 0%
 
 ---
@@ -17,8 +17,17 @@ Las versiones de parches de seguridad también pueden incluir cambios relacionad
 
 Cada versión del parche de seguridad se basa en la versión completa anterior del parche. Contiene correcciones de calidad y seguridad de versiones anteriores de parches y correcciones de seguridad creadas entre la versión anterior completa de parches y la versión de parches de seguridad.
 
-Para obtener instrucciones sobre cómo descargar y aplicar parches de seguridad, consulte [Cómo obtener y aplicar parches de seguridad](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/how-to/how-to-obtain-and-apply-security-patches) en la _base de conocimiento de Adobe Commerce_.
+Para obtener instrucciones sobre cómo descargar y aplicar parches de seguridad, consulte [Cómo obtener y aplicar parches de seguridad](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/how-to-obtain-and-apply-security-patches) en la _base de conocimiento de Adobe Commerce_.
 
 >[!NOTE]
 >
->Los parches de seguridad de compatibilidad ampliada para 2.4.4 y 2.4.5 están disponibles solo para los clientes de Adobe Commerce y no para la base de código de Magento Open Source. Consulte [Soporte ampliado](https://experienceleague.adobe.com/es/docs/commerce-operations/release/planning/lifecycle-policy#extended-support).
+>Los parches de seguridad de soporte ampliado solo están disponibles para los clientes de Adobe Commerce y no para el código base de Magento Open Source. Consulte [Soporte ampliado](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy#extended-support).
+
+## Archivo de parche de seguridad aislado
+
+Los archivos de parches de seguridad aislados son archivos de parches independientes no acumulativos que incluyen correcciones solo para una o más vulnerabilidades de seguridad, sin actualizaciones de funciones ni cambios de no seguridad adicionales. Estos parches se lanzan de forma independiente para permitir una corrección más rápida y se incorporan al siguiente parche de seguridad completo. Los detalles sobre las vulnerabilidades se proporcionan en el boletín de seguridad asociado, que vincula a un artículo de Knowledge Base (KB) con instrucciones para aplicar el parche e información adicional.
+
+Para aplicar un archivo de parches de seguridad aislado, los clientes deben estar en la última versión de parches de solo seguridad (la última versión -p) para su línea de versiones admitida, ya que los archivos de parches de seguridad aislados se prueban exclusivamente en esa versión.
+
+Consulta el [Centro de seguridad](https://helpx.adobe.com/security/products/magento.html) para ver las últimas actualizaciones de seguridad disponibles para Adobe Commerce.
+

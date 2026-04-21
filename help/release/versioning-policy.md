@@ -2,9 +2,9 @@
 title: Directiva de versión
 description: Obtenga información acerca de los distintos tipos de versiones de Adobe Commerce.
 exl-id: 61a83de6-6a7b-4a88-8fff-1638b4fe472a
-source-git-commit: bf7049ad5b805397f823e7e4cb430e9ecca5965e
+source-git-commit: ef1f4b3199e7e1daa670e537b97175f58327aa12
 workflow-type: tm+mt
-source-wordcount: '746'
+source-wordcount: '650'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ Las versiones de Beta pueden contener defectos y se proporcionan &quot;TAL CUAL&
 
 ## Revisión
 
-Las revisiones son parches que contienen correcciones de alta calidad o seguridad de impacto, como correcciones a vulnerabilidades de día cero, que afectan a muchos comerciantes. Adobe publica revisiones (según sea necesario) para las versiones de Adobe Commerce admitidas cuando surjan problemas críticos de seguridad o calidad. Las revisiones se han publicado en la [sección Problemas conocidos](https://support.magento.com/hc/en-us/sections/360003869892-Known-issues-patches-attached-) de la Base de conocimiento. Estas correcciones se incluyen en la próxima versión planificada del parche.
+Las revisiones son parches que contienen correcciones de alta calidad o seguridad de impacto, como correcciones a vulnerabilidades de día cero, que afectan a muchos comerciantes. Adobe publica revisiones (según sea necesario) para las versiones de Adobe Commerce admitidas cuando surjan problemas críticos de seguridad o calidad. Las revisiones se entregan a través de la [herramienta Parches de calidad](../tools/quality-patches-tool/usage.md). Estas correcciones se incluyen en la próxima versión planificada del parche.
 
 >[!NOTE]
 >
@@ -71,20 +71,14 @@ Las revisiones son parches que contienen correcciones de alta calidad o segurida
 
 ## Parche individual
 
-Los parches individuales contienen correcciones de calidad de bajo impacto para un problema específico. Estas correcciones se aplican a las versiones secundarias compatibles de Adobe Commerce. Adobe publica parches individuales según sea necesario para Adobe Commerce de acuerdo con la [Política de ciclo de vida del software](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf).
+Los parches individuales contienen correcciones de calidad de bajo impacto para un problema específico. Estas correcciones se aplican a las versiones secundarias compatibles de Adobe Commerce. Adobe publica parches individuales según sea necesario para Adobe Commerce de acuerdo con la [Política de ciclo de vida del software](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf). Se entregan a través de la [herramienta Parches de calidad](../tools/quality-patches-tool/usage.md).
 
 >[!NOTE]
 >
 >Los parches individuales no contienen cambios incompatibles con versiones anteriores.
 
-## Correcciones de seguridad aisladas
-
-Los parches aislados son correcciones de seguridad no acumulativas publicadas independientemente de un parche de seguridad completo para permitir una implementación más rápida. Cada corrección de seguridad aislada soluciona un problema de seguridad específico y se incluye en la última revisión de seguridad o en una revisión de seguridad completa prevista. Los detalles sobre el problema se proporcionan en el boletín de seguridad relacionado, que vincula a un artículo de la Base de conocimiento (KB) que contiene los detalles de la corrección, cómo aplicarla e información adicional.
-
-Consulta el [Centro de seguridad](https://helpx.adobe.com/es/security/products/magento.html) para ver las últimas actualizaciones de seguridad disponibles para Adobe Commerce.
-
 ## Parche personalizado
 
-Creado por personal que no es de Adobe para solucionar un problema o modificar el código de Adobe Commerce por varios motivos. Los parches personalizados se entregan a través de la [Herramienta de parches de calidad](https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/usage).
+Creado por personal que no es de Adobe para solucionar un problema o modificar el código de Adobe Commerce por varios motivos.
 
 <!-- Last updated from includes: 2025-10-09 22:53:22 -->
