@@ -2,7 +2,7 @@
 title: Requisitos del sistema
 description: Obtenga información sobre las dependencias de software y los requisitos del sistema para Adobe Commerce. Descubra las configuraciones probadas para garantizar la compatibilidad con el entorno de implementación.
 exl-id: 008c9edc-7d72-403c-847f-0e3b77bbb197
-source-git-commit: 107fac05f8e7bcbd66e07187f46a3ffa170a2001
+source-git-commit: e0905f357c5ab84b30304eeaad00d9ae4ec0c168
 workflow-type: tm+mt
 source-wordcount: '1056'
 ht-degree: 0%
@@ -19,11 +19,11 @@ Existen algunas diferencias en las dependencias para Commerce en la nube. La com
 >
 >Las tablas de requisitos del sistema identifican las versiones de Adobe Commerce específicas incluidas, incluidas las versiones beta o de acceso anticipado etiquetadas explícitamente. Consulte las [notas de la versión](../release/release-notes/overview.md) para obtener más información sobre las últimas versiones publicadas de Adobe Commerce.
 >
->Las discrepancias en la versión del servicio respecto a la versión de Commerce pueden introducir un comportamiento que no se pueda reproducir en los entornos admitidos. En estos casos, el equipo de asistencia puede solicitarle que alinee el entorno con una configuración admitida (por ejemplo, actualizar o reducir la versión del servicio) antes de que podamos investigar, solucionar problemas o validar el comportamiento notificado. Una vez que las versiones están alineadas, el soporte técnico puede continuar con la investigación.
+>Las discrepancias en la versión del servicio respecto a la versión de Commerce pueden introducir un comportamiento que no se pueda reproducir en los entornos admitidos. In these cases, Support may request that you align the environment to a supported configuration (for example, upgrade or downgrade the service version) before we can investigate, troubleshoot, or validate the reported behavior. Una vez que las versiones están alineadas, el soporte técnico puede continuar con la investigación.
 
 Las siguientes tablas muestran versiones de dependencias de software de terceros que Adobe ha probado con versiones específicas de Adobe Commerce.
 
-Adobe solo admite la combinación de requisitos del sistema que se describen en las tablas siguientes. Por ejemplo, 2.4.5 se ha probado completamente con MariaDB 10.4. Adobe recomienda actualizar a MariaDB 10.4 antes de actualizar a 2.4.5.
+Adobe only supports the combination of system requirements described in the following tables. Por ejemplo, 2.4.5 se ha probado completamente con MariaDB 10.4. Adobe recomienda actualizar a MariaDB 10.4 antes de actualizar a 2.4.5.
 
 Para garantizar un proceso de actualización sin problemas y evitar errores de implementación, Adobe recomienda actualizar las versiones de RabbitMQ gradualmente. Por ejemplo, al actualizar de la versión 3.8 a la 4.1, primero debe actualizar de la 3.8 a la 3.9, después de la 3.9 a la 3.10, y así sucesivamente. Solo después de llegar a la versión 3.13 debe continuar con la actualización a la versión 4.1.
 
@@ -50,7 +50,7 @@ opensearch:
     disk: 1024
 ```
 
-Consulte [Configurar servicios](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/configure/service/services-yaml) en la guía de *Commerce en infraestructura en la nube*.
+Consulte [Configurar servicios](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/services-yaml) en la guía de *Commerce en infraestructura en la nube*.
 
 >[!TAB Commerce local]
 
@@ -62,13 +62,13 @@ Consulte [Configurar servicios](https://experienceleague.adobe.com/es/docs/comme
 
 Hay ciertas opciones de configuración de PHP, como la configuración de `memory_limit`, que pueden ayudarle a evitar problemas comunes al usar Adobe Commerce. Consulte [Configuración de PHP requerida](prerequisites/php-settings.md).
 
-Para obtener instrucciones de configuración de Cloud, consulte [Configuración de PHP](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/configure/app/php-settings) en la guía de *Commerce en infraestructura en la nube*.
+Para obtener instrucciones de configuración de Cloud, consulte [Configuración de PHP](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/php-settings) en la guía de *Commerce en infraestructura en la nube*.
 
 ### OPcache de PHP
 
 Adobe recomienda comprobar que [PHP OPcache](https://www.php.net/manual/en/book.opcache.php) está habilitado por motivos de rendimiento. OPcache está habilitado en muchas distribuciones PHP.
 - **Para implementaciones de infraestructura de Adobe Commerce en la nube**, la extensión `opcache` se instala de manera predeterminada.
-- **Para implementaciones locales de Adobe Commerce:**
+- **For Adobe Commerce on-premises deployments:**
    - [Compruebe que la extensión PHP OPcache esté instalada](prerequisites/php-settings.md#verify-php-is-installed).
    - Para obtener instrucciones específicas sobre la configuración de rendimiento, consulte las recomendaciones de software para [configuración de PHP](../performance/software.md#php-settings) en la guía de *Prácticas recomendadas de rendimiento*.
 
@@ -89,7 +89,7 @@ Las [instrucciones de instalación de PHP](prerequisites/php-settings.md) incluy
 
 >[!TIP]
 >
->Para las extensiones PHP en la infraestructura en la nube, consulte [Habilitar extensiones PHP](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/configure/app/php-settings#enable-extensions) en la guía de _Commerce en la infraestructura en la nube_.
+>Para las extensiones PHP en la infraestructura en la nube, consulte [Habilitar extensiones PHP](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/php-settings#enable-extensions) en la guía de _Commerce en la infraestructura en la nube_.
 
 >[!BEGINTABS]
 
@@ -128,11 +128,11 @@ Tienda y administrador:
 
 ### Servidor de correo
 
-Agente de transferencia de correo (MTA) o un servidor SMTP. La infraestructura de Commerce en la nube usa el [servicio de correo electrónico SendGrid](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/project/sendgrid).
+Agente de transferencia de correo (MTA) o un servidor SMTP. La infraestructura de Commerce en la nube usa el [servicio de correo electrónico SendGrid](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/sendgrid).
 
 ### Memoria
 
-La actualización de las aplicaciones y extensiones que obtiene de Commerce Marketplace y otras fuentes puede requerir hasta 2 GB de RAM. Si usa un sistema con menos de 2 GB de RAM, cree un [archivo de intercambio](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/troubleshooting/installation-and-upgrade/out-of-memory-error-during-install-or-upgrade). De lo contrario, es posible que la actualización falle.
+La actualización de las aplicaciones y extensiones que obtiene de Commerce Marketplace y otras fuentes puede requerir hasta 2 GB de RAM. Si usa un sistema con menos de 2 GB de RAM, cree un [archivo de intercambio](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/installation-and-upgrade/out-of-memory-error-during-install-or-upgrade). De lo contrario, es posible que la actualización falle.
 
 ### Sistemas operativos (Linux x86-64)
 
@@ -158,17 +158,17 @@ Adobe Commerce requiere las siguientes herramientas del sistema para algunas ope
 - No se admiten certificados SSL firmados automáticamente.
 - Requisito de seguridad de la capa de transporte (TLS): PayPal y `repo.magento.com` requieren TLS 1.2 o posterior.
 
-Para Commerce sobre la infraestructura en la nube, consulte [Configuración rápida](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/cdn/setup-fastly/fastly-configuration) en la guía de *Commerce sobre la infraestructura en la nube*.
+Para Commerce sobre la infraestructura en la nube, consulte [Configuración rápida](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/setup-fastly/fastly-configuration) en la guía de *Commerce sobre la infraestructura en la nube*.
 
 ### Xdebug
 
-Para Adobe Commerce, use [php_xdebug 2.5.x](https://xdebug.org/download) o posterior (solo para entornos de desarrollo; puede tener un efecto adverso en el rendimiento).
+For Adobe Commerce, use [php_xdebug 2.5.x](https://xdebug.org/download) or later (development environments only; can have an adverse effect on performance).
 
-Para Adobe Commerce en la nube, consulte [Configuración de Xdebug](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/develop/test/debug) en la guía de *Commerce en infraestructura en la nube*.
+For Adobe Commerce on Cloud, see [Configure Xdebug](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/test/debug) in the *Commerce on Cloud Infrastructure* guide.
 
 >[!NOTE]
 >
->Hay un problema conocido con `xdebug` que puede afectar las instalaciones de Adobe Commerce o el acceso a la tienda o al administrador después de la instalación. Ver [Problema conocido que afecta a la instalación de `xdebug`](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/known-issues-that-affect-installation) en la _Base de conocimiento de soporte técnico de Commerce_.
+>There is a known issue with `xdebug` that can affect Adobe Commerce installations or access to the storefront or Admin after installation. See [Known issue that affects `xdebug` installation](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/known-issues-that-affect-installation) in the _Commerce Support Knowledge Base_.
 
 
-<!-- Last updated from includes: 2026-03-13 12:40:18 -->
+<!-- Last updated from includes: 2026-04-07 14:41:32 -->

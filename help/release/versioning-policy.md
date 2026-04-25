@@ -1,38 +1,38 @@
 ---
-title: Directiva de versión
-description: Obtenga información acerca de los distintos tipos de versiones de Adobe Commerce.
+title: Release policy
+description: Learn about the different types of Adobe Commerce releases.
 exl-id: 61a83de6-6a7b-4a88-8fff-1638b4fe472a
-source-git-commit: ef1f4b3199e7e1daa670e537b97175f58327aa12
+source-git-commit: e0905f357c5ab84b30304eeaad00d9ae4ec0c168
 workflow-type: tm+mt
-source-wordcount: '650'
+source-wordcount: '680'
 ht-degree: 0%
 
 ---
 
-# directiva de versión de Adobe Commerce
+# Adobe Commerce release policy
 
-Adobe Commerce usa [versiones semánticas](https://semver.org/) en el nivel de módulo individual (por ejemplo `magento/framework 101.1.1`), pero no para el número de versión de marketing. Por ejemplo:
+Adobe Commerce uses [semantic versioning](https://semver.org/) on the individual module level (for example `magento/framework 101.1.1`), but not for the marketing version number. Por ejemplo:
 
-- **Versión principal**—2
-- **Versión menor**—2.4
-- **Versión de PATCH**—2.4.8
-   - **Versión del parche de SEGURIDAD**—2.4.8-p1
-      - Corrección de errores de seguridad
-      - Mejora de seguridad
-- **Versión de parche de ALPHA**—2.4.8-alpha1
-- **Versión de parche de BETA**—2.4.8-beta1
-- **Extensibilidad, infraestructura y servicios**
-- **Revisión**
-- **Parche individual**
-- **Parche personalizado**
+- **MAJOR release**—2
+- **MINOR release**—2.4
+- **PATCH release**—2.4.8
+   - **SECURITY patch release**—2.4.8-p1
+      - Security bug fix
+      - Security enhancement
+- **ALPHA patch release**—2.4.8-alpha1
+- **BETA patch release**—2.4.8-beta1
+- **Extensibility, Infrastructure, and Services release**
+- **Hotfix**
+- **Individual patch**
+- **Custom patch**
 
-## Versión secundaria
+## MINOR release
 
-Las siguientes directrices se aplican a versiones secundarias:
+The following guidelines apply to minor releases:
 
-- Es posible que se produzcan cambios importantes; es posible que el código escrito para Adobe Commerce 2.2.x ya no funcione con Adobe Commerce 2.3.x. Por ejemplo, las versiones menores pueden introducir compatibilidad con los principales requisitos y dependencias del sistema, como PHP.
-- Las versiones de los módulos pueden variar. Por ejemplo, algunos cambios de módulo se introducen en un nuevo parche, mientras que otros se introducen en una versión secundaria.
-- Las versiones menores pueden incluir nuevas funciones que pueden requerir un trabajo adicional por parte suya o de su socio de soluciones durante una actualización para garantizar la compatibilidad.
+- Breaking changes are possible; code written for Adobe Commerce 2.2.x may no longer work with Adobe Commerce 2.3.x. For example, minor releases can introduce support for major system requirements and dependencies, such as PHP.
+- Module versions can vary. For example, some module changes are introduced in a new patch whereas others are introduced in a minor release.
+- Minor releases can include new features that may require additional work by you or your solution partner during an upgrade to ensure compatibility.
 - Las versiones menores pueden incluir correcciones para problemas de seguridad y calidad.
 
 ## Versión de PATCH
@@ -81,4 +81,4 @@ Los parches individuales contienen correcciones de calidad de bajo impacto para 
 
 Creado por personal que no es de Adobe para solucionar un problema o modificar el código de Adobe Commerce por varios motivos.
 
-<!-- Last updated from includes: 2025-10-09 22:53:22 -->
+<!-- Last updated from includes: 2026-04-20 10:12:04 -->
