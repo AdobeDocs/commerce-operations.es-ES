@@ -4,7 +4,7 @@ description: Esta subsección proporciona una descripción detallada de los prob
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 5d52a3d956054c1d4cb8922f0cfd26ae600c4b8d
+source-git-commit: cc3bd15a0c11762812e4e51e4c01bfa64756421a
 workflow-type: tm+mt
 source-wordcount: '574'
 ht-degree: 0%
@@ -24,7 +24,7 @@ QPT v1.1.78 incluye los siguientes parches:
 1. **ACP2E-4456**: corrige un problema en el cual cancelar un pedido usando una mutación de GraphQL no pasa un pedido pagado completamente con tarjetas de regalo al estado Cerrado.
 1. **ACP2E-4507**: corrige el problema en el que la configuración de Opciones de contraseña no se aplica a las solicitudes de restablecimiento de contraseña de cliente realizadas a través de mutaciones de GraphQL.
 1. **ACP2E-4513**: corrige el problema en el cual las imágenes CAPTCHA caducadas no se eliminan del sistema.
-1. **ACP2E-4522**: corrige el problema en el que se produce un error intermitente de clave duplicada en la tabla quote_coupons cuando se ejecutan varias solicitudes de guardado de combinación de carro de compras o presupuesto al mismo tiempo.
+1. **[ACP2E-4522](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4522.md)**: corrige el problema en el que se produce un error intermitente de clave duplicada en la tabla quote_coupons cuando se ejecutan varias solicitudes de guardado de combinación de carro de compras o presupuesto al mismo tiempo.
 1. **ACP2E-4528**: corrige el problema de validación de ciudad en las direcciones de los clientes, que ahora permite el carácter de barra diagonal (/) y rechaza los caracteres no válidos como !, &quot;, # y ?.
 1. **ACP2E-4535**: corrige un problema por el que al enviar el formulario de contraseña olvidada se destruye o regenera la sesión (cambios PHPSESSID) y se borra el carro de invitados.
 1. **ACP2E-4540**: corrige el problema en el que la biblioteca Fotorama no se cargaba correctamente, lo que provocaba que solo fuera visible la primera imagen adjunta.
