@@ -4,7 +4,7 @@ description: Esta subsección proporciona una descripción detallada de los prob
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: cc3bd15a0c11762812e4e51e4c01bfa64756421a
+source-git-commit: 0494717c06fcabcb093a2b168ae714f773ed6f7b
 workflow-type: tm+mt
 source-wordcount: '574'
 ht-degree: 0%
@@ -29,7 +29,7 @@ QPT v1.1.78 incluye los siguientes parches:
 1. **ACP2E-4535**: corrige un problema por el que al enviar el formulario de contraseña olvidada se destruye o regenera la sesión (cambios PHPSESSID) y se borra el carro de invitados.
 1. **ACP2E-4540**: corrige el problema en el que la biblioteca Fotorama no se cargaba correctamente, lo que provocaba que solo fuera visible la primera imagen adjunta.
 1. **ACP2E-4555**: soluciona el problema en el que los números de teléfono modernos contienen &quot;.&quot; o &quot;/&quot; no se han validado correctamente.
-1. **ACP2E-4565**: corrige el problema en el que la consulta Company GraphQL devuelve &quot;El cliente actual no está autorizado&quot; cuando se utiliza el encabezado X-Adobe-Company.
+1. **[ACP2E-4565](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4565.md)**: corrige el problema en el que la consulta Company GraphQL devuelve &quot;El cliente actual no está autorizado&quot; cuando se utiliza el encabezado X-Adobe-Company.
 1. **ACP2E-4591**: corrige el problema en el que los segmentos de clientes basados en el recuento de pedidos, como &quot;Compradores nuevos&quot;, no se actualizaban cuando los pedidos se realizaban mediante la API de REST.
 1. **ACP2E-4609**: corrige el problema por el que la página Mis comillas no muestra comillas cuando algunas comillas contienen productos eliminados.
 1. **ACP2E-4613**: corrige el problema en el que las estructuras de directorios de medios grandes causaban respuestas gettree lentas, lo que provocaba tiempos de carga de árboles de directorios de Media Gallery extendidos.
