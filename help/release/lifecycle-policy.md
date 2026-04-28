@@ -2,9 +2,9 @@
 title: Directiva de ciclo vital de software
 description: Obtenga información sobre las fechas clave de fin de compatibilidad de software para las versiones de Adobe Commerce.
 exl-id: 9ee4ecc8-d893-412a-a605-5a8606a1b9a9
-source-git-commit: 3e7cef954a2be506c6f72e704710d16ed1d9b7a3
+source-git-commit: 3bf3c4261073ab649376bb5c7fb84ea591a09869
 workflow-type: tm+mt
-source-wordcount: '807'
+source-wordcount: '949'
 ht-degree: 2%
 
 ---
@@ -16,7 +16,7 @@ Para optimizar la política del ciclo vital de Adobe Commerce y satisfacer las n
 
 Durante el periodo de soporte de tres años, el cliente tiene acceso a:
 
-- **Correcciones de calidad**: los clientes pueden obtener acceso a las correcciones de calidad poniéndose en contacto con el [Soporte técnico de Adobe Commerce](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) o a través del servicio de autoservicio [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es). En la tabla siguiente se describen las fechas de fin de compatibilidad de software para las líneas de versión de Adobe Commerce.
+- **Correcciones de calidad**: los clientes pueden obtener acceso a las correcciones de calidad poniéndose en contacto con el [Soporte técnico de Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) o a través del servicio de autoservicio [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). En la tabla siguiente se describen las fechas de fin de compatibilidad de software para las líneas de versión de Adobe Commerce.
 
 - **Correcciones de seguridad**: Adobe proporciona correcciones de seguridad mediante parches de seguridad acumulativos y [archivos de parches de seguridad aislados](versioning-policy.md#isolated-security-fixes) no acumulativos durante el período de compatibilidad de tres años.
 
@@ -36,8 +36,8 @@ Adobe recomienda a los clientes que se actualicen lo antes posible. Sin embargo,
 
 | Versión | Disponibilidad general | Fin del soporte técnico regular<sup>1</sup> | Fin de la compatibilidad ampliada |
 |----------------------|----------------------|------------------------------------|-------------------------|
-| Adobe Commerce 2.4.8 | 8 de abril de 2025 | 31 de mayo de 2028 | Por determinar |
-| Adobe Commerce 2.4.7 | 9 de abril de 2024 | 31 de mayo de 2027 | Por determinar |
+| Adobe Commerce 2.4.8 | 8 de abril de 2025 | 31 de mayo de 2028 | TBD |
+| Adobe Commerce 2.4.7 | 9 de abril de 2024 | 31 de mayo de 2027 | TBD |
 | Adobe Commerce 2.4.6 | 14 de marzo de 2023 | 11 de agosto de 2026 | 30 de agosto de 2027 |
 | Adobe Commerce 2.4.5 | 9 de agosto de 2022 | 12 de agosto de 2025 | 11 de agosto de 2026 |
 | Adobe Commerce 2.4.4 | 12 de abril de 2022 | 12 de abril de 2025 | 14 de abril de 2026 |
@@ -49,6 +49,10 @@ Adobe recomienda a los clientes que se actualicen lo antes posible. Sin embargo,
 >- <sup>1</sup> Si es cliente de Adobe Commerce, puede seguir recibiendo correcciones de seguridad y calidad durante un año adicional a través del período de soporte extendido.
 >- Consulte [Política de ciclo de vida de software](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf).
 
+>[!IMPORTANT]
+>
+>No se puede garantizar el cumplimiento de PCI para los comerciantes que ejecutan la versión 2.4.6 y siguen usando PHP 8.1, que llegó al [fin de la compatibilidad en 2025](https://www.php.net/eol.php). Del mismo modo, PHP 8.2 llega al [final de su vida útil a finales de 2026](https://www.php.net/supported-versions.php), lo que crea el mismo riesgo de conformidad con PCI para los comerciantes que siguen usándolo en 2027.
+
 ## Aprovisionamiento de correcciones de seguridad adicionales para Adobe Commerce 2.4.4 y 2.4.5
 
 Como excepción única, Adobe proporciona un período de aprovisionamiento de correcciones de seguridad ampliado para las versiones 2.4.4 y 2.4.5 de Adobe Commerce a fin de que los clientes tengan más tiempo para migrar a Adobe Commerce as a Cloud Service o actualizar a una línea de versión compatible.
@@ -59,11 +63,11 @@ Durante este período de aprovisionamiento de correcciones de seguridad, tenga e
 
   Para aplicar un archivo de parches de seguridad aislado, los clientes deben estar en la última versión de parches de solo seguridad (la última versión -p) para su línea de versiones admitida, ya que las correcciones de seguridad aisladas se prueban exclusivamente en esa versión.
 
-- **No se proporcionarán correcciones de calidad ni asistencia de ingeniería**-No se proporcionarán correcciones de errores, actualizaciones de calidad ([Herramienta Parches de calidad](../tools/quality-patches-tool/usage.md)) ni asistencia de ingeniería ([Soporte de Adobe Commerce](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)) para las versiones 2.4.4 o 2.4.5 durante este período.
+- **No se proporcionarán correcciones de calidad ni asistencia de ingeniería**-No se proporcionarán correcciones de errores, actualizaciones de calidad ([Herramienta Parches de calidad](../tools/quality-patches-tool/usage.md)) ni asistencia de ingeniería ([Soporte de Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide)) para las versiones 2.4.4 o 2.4.5 durante este período.
 
 - **No se garantiza el cumplimiento de PCI:**-Debido a que 2.4.4 y 2.4.5 utilizan versiones de PHP que han llegado al final de su vida útil, no se puede garantizar el cumplimiento de PCI para los comerciantes en esas versiones. Si continúa ejecutando estas versiones, puede poner en riesgo la conformidad con PCI.
 
-Para mantener una cobertura de seguridad completa y asegurar el cumplimiento de PCI, los clientes deben actualizar a una versión compatible de Adobe Commerce lo antes posible o migrar a [Adobe Commerce as a Cloud Service](https://experienceleague.adobe.com/es/docs/commerce/cloud-service/overview).
+Para mantener una cobertura de seguridad completa y asegurar el cumplimiento de PCI, los clientes deben actualizar a una versión compatible de Adobe Commerce lo antes posible o migrar a [Adobe Commerce as a Cloud Service](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview).
 
 | Versión | Disponibilidad general | Fin de la compatibilidad ampliada | Fin del aprovisionamiento de correcciones de seguridad |
 |----------------------|----------------------|-------------------------|------------------------------------|
