@@ -2,9 +2,9 @@
 user-guide-title: Herramientas
 user-guide-description: Obtenga información sobre las distintas herramientas que puede utilizar con Adobe Commerce, sus usos, el proceso de instalación y cómo obtener acceso.
 feature: Configuration
-source-git-commit: 55b1c830073eaa7bfacae9fb8e9190414d7a990c
+source-git-commit: e0111754306fc220ba7eacf3590b70bcc048f34f
 workflow-type: tm+mt
-source-wordcount: '9698'
+source-wordcount: '9784'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ ht-degree: 0%
    - [Alertas administradas para Adobe Commerce: alerta de advertencia de CPU](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-cpu-warning-alert.md)
 - Herramienta Parches de calidad {#quality-patches-tool}
    - [[!DNL Quality Patches Tool]: herramienta de autoservicio para parches de calidad](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)
-   - [[!DNL Quality Patches Tool]: buscar parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es){target="_blank"}
+   - [[!DNL Quality Patches Tool]: buscar parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
    - [Uso](quality-patches-tool/usage.md)
    - [Notas de la versión](quality-patches-tool/release-notes.md)
    - Parches disponibles en la herramienta Parches de calidad {#patches-available-in-qpt}
@@ -972,6 +972,12 @@ ht-degree: 0%
          - [ACSD-68341: se producen varias actualizaciones de la cookie X-Magento-Vary al cargar PDP](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68341.md)
       - Versión 1.1.78 {#v1-1-78}
          - [Información general:  [!DNL Quality Patches Tool] (QPT) v1.1.78](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/overview.md)
+         - [ACP2E-4613: El directorio de medios grande causa retrasos en la carga del árbol de directorios de Media Gallery](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4613.md)
+         - [ACP2E-4609: La página [!UICONTROL My Quotes] no muestra comillas cuando algunas comillas contienen productos eliminados](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4609.md)
+         - [ACP2E-4416: Los puntos de recompensa del cliente no se inicializan cuando se crean en Admin](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4416.md)
+         - [ACP2E-4535: Enviar el formulario de contraseña olvidada destruye o regenera la sesión (cambios PHPSESSID) y borra el carro de compras de invitados](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4535.md)
+         - [ACP2E-4507: La configuración de [!UICONTROL Password Options] no se aplica a las solicitudes de restablecimiento de contraseña de cliente realizadas a través de mutaciones de GraphQL](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4507.md)
+         - [ACP2E-4431: [!UICONTROL Related Products] coincidentes con reglas de destino se eliminan durante el proceso de reindexación](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4431.md)
          - [ACP2E-4540: La biblioteca Fotorama no se carga correctamente, por lo que solo es visible la primera imagen adjunta](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4540.md)
          - [ACP2E-4555: Los números de teléfono que contienen puntos o barras diagonales no se validan correctamente](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4555.md)
          - [ACP2E-4565: La consulta GraphQL de la compañía devuelve &quot;El cliente actual no está autorizado&quot; cuando se utiliza el encabezado X-Adobe-Company](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4565.md)
@@ -1025,6 +1031,6 @@ ht-degree: 0%
       - [Datos que requieren una migración manual](data-migration-tool/migrate-data/manual.md)
       - [Pasos de la migración posterior a los datos](data-migration-tool/migrate-data/post-migration.md)
    - Recursos {#resources}
-      - [Resolución de problemas](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html?lang=es)
+      - [Resolución de problemas](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html)
       - [Changelog](https://github.com/magento/data-migration-tool/blob/2.4/CHANGELOG.md)
-- [Volver a Guías operativas](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=es)
+- [Volver a Guías operativas](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
