@@ -4,9 +4,9 @@ description: Esta subsección proporciona una descripción detallada de los prob
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: e0111754306fc220ba7eacf3590b70bcc048f34f
+source-git-commit: f78520918618a750cdca062a0543eb4821dfc525
 workflow-type: tm+mt
-source-wordcount: '697'
+source-wordcount: '722'
 ht-degree: 0%
 
 ---
@@ -40,6 +40,7 @@ QPT v1.1.78 incluye los siguientes parches:
 1. **ACP2E-4609**: corrige el problema por el que la página Mis comillas no muestra comillas cuando algunas comillas contienen productos eliminados.
 1. **[ACP2E-4613](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4613.md)**: corrige el problema en el que las estructuras de directorios de medios grandes causaban respuestas gettree lentas, lo que provocaba tiempos de carga prolongados para el árbol de directorios **[!UICONTROL Media Gallery]**.
 1. **ACP2E-4628**: corrige el problema en el que la importación de clientes con direcciones de correo electrónico en mayúsculas da como resultado un error de clave de matriz no definida, cuando el uso compartido de cuentas está establecido en Global.
+1. **[ACP2E-4665](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4665.md)**: corrige el problema en el que los productos secundarios de productos configurables que contienen vídeos en las galerías de productos no aparecen en la lista cuando se solicitan mediante la API de REST.
 1. **ACP2E-4665**: corrige el problema en el cual los productos secundarios de productos configurables que contienen vídeos en las galerías de productos no se enumeran cuando se solicitan a través de la API de REST.
 1. **ACP2E-4732**: corrige un problema en el cual se detuvo la indexación parcial para clientes con un gran número de actualizaciones cuando la columna version_id en la tabla changelog alcanzó su valor máximo.
 1. **ACP2E-4763**: Corrige el problema por el que la consulta GraphQL customerOrders devuelve valores inflados original_price_included_tax y original_row_total_include_tax cuando los precios de catálogo se establecen en Incluyendo impuesto, debido a que el impuesto se aplica dos veces.
