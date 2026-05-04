@@ -3,9 +3,9 @@ title: Instalar barniz
 description: Obtenga información acerca de los requisitos de instalación de Varnish para el almacenamiento en caché de Adobe Commerce. Descubra los recursos de instalación y las instrucciones de instalación.
 feature: Configuration, Cache
 exl-id: e1881a85-3965-42d9-a46f-c2f5f20fbacc
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '168'
+source-wordcount: '184'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ La instalación del software Varnish no entra dentro del ámbito de esta guía. 
 
 Abra un terminal e introduzca el siguiente comando para mostrar la versión de Barniz:
 
-```bash
+```shell
 varnishd -V
 ```
 

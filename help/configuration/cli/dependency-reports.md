@@ -2,9 +2,9 @@
 title: Informes de dependencias
 description: Obtenga información sobre cómo crear informes de dependencias que muestren dependencias de módulo, circular y de marco de trabajo en Adobe Commerce. Descubra las herramientas de análisis e informes.
 exl-id: b7a32fe1-71c5-495f-8276-242503fb50ae
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '248'
+source-wordcount: '249'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Una dependencia en un comentario también es una dependencia.
 
 Opciones de comando:
 
-```bash
+```shell
 bin/magento info:dependencies:{show-modules|show-modules-circular|show-framework} [-d|--directory="<path>"] [-o|--output="<path and filename"]
 ```
 
@@ -51,7 +51,7 @@ Si no se pasa ningún directorio o nombre de archivo como argumento, se utiliza 
 
 El siguiente es una parte del resultado de un informe de dependencias de módulo de ejemplo:
 
-```
+```text
 "","All","Hard","Soft"
 "Total number of dependencies","602","587","15"
 
@@ -75,7 +75,7 @@ El siguiente es una parte del resultado de un informe de dependencias de módulo
 
 El siguiente es una parte del resultado de un ejemplo de informe de dependencias circulares:
 
-```
+```text
 "Circular dependencies:","Total number of chains"
 "","848"
 
@@ -101,7 +101,7 @@ El siguiente es una parte del resultado de un ejemplo de informe de dependencias
 
 A continuación se muestra una parte del resultado de un informe de dependencias de marco de trabajo de ejemplo:
 
-```
+```text
 "Dependencies of framework:","Total number"
 "","111"
 

@@ -2,7 +2,7 @@
 title: Comprobar el estado de la base de datos
 description: Siga estos pasos para comprobar el estado de la base de datos de Adobe Commerce.
 exl-id: 33d9b30a-4504-4955-b11a-0a642f23209b
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
 source-wordcount: '104'
 ht-degree: 3%
@@ -17,7 +17,7 @@ Antes de ejecutar este comando, debe [crear o actualizar la configuración de im
 
 Para comprobar el estado de la base de datos.
 
-```bash
+```shell
 bin/magento setup:db:status
 ```
 
@@ -25,7 +25,7 @@ Este comando no tiene argumentos ni opciones.
 
 Salida de ejemplo:
 
-```
+```text
 All modules are up to date.
 ```
 

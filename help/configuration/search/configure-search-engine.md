@@ -3,9 +3,9 @@ title: Configuración del motor de búsqueda
 description: Configure un motor de búsqueda para implementaciones locales de Adobe Commerce.
 feature: Configuration, Search
 exl-id: 61fbe0c2-bdd5-4f57-a518-23e180401804
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '643'
+source-wordcount: '652'
 ht-degree: 0%
 
 ---
@@ -17,9 +17,9 @@ En esta sección se analiza la configuración mínima que debe elegir para proba
 >[!TIP]
 >
 >En las versiones 2.4.4 y 2.4.3-p2, todos los campos etiquetados como **Elasticsearch** también se aplican a OpenSearch.
->&#x200B;>Cuando se introdujo la compatibilidad con Elasticsearch 8.x en la versión 2.4.6, se crearon nuevas etiquetas para distinguir entre las configuraciones de Elasticsearch y OpenSearch.
+>Cuando se introdujo la compatibilidad con Elasticsearch 8.x en la versión 2.4.6, se crearon nuevas etiquetas para distinguir entre las configuraciones de Elasticsearch y OpenSearch.
 
-Para obtener más información sobre cómo configurar el motor de búsqueda, consulta la [Guía del usuario](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-configuration.html?lang=es).
+Para obtener más información sobre cómo configurar el motor de búsqueda, consulta la [Guía del usuario](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-configuration.html).
 
 ## Configure el motor de búsqueda desde Admin
 
@@ -37,7 +37,7 @@ Para configurar el sistema para que utilice Elasticsearch u OpenSearch:
 
    | Opción | Descripción |
    |--- |--- |
-   | **[!UICONTROL Server Hostname]** | Introduzca el nombre de host completo o la dirección IP del equipo que ejecuta Elasticsearch o OpenSearch.<br>Adobe Commerce en la infraestructura de la nube: obtenga este valor de su sistema de integración. |
+   | **[!UICONTROL Server Hostname]** | Escriba el nombre de host completo o la dirección IP de la máquina que ejecuta Elasticsearch u OpenSearch.<br>Adobe Commerce en la infraestructura en la nube: Obtenga este valor de su sistema de integración. |
    | **[!UICONTROL Server Port]** | Introduzca el puerto proxy del servidor web. El valor predeterminado es 9200<br>Adobe Commerce en la infraestructura en la nube: obtenga este valor de su sistema de integración. |
    | **[!UICONTROL Index Prefix]** | Introduzca el prefijo de índice del motor de búsqueda. Si utiliza una sola instancia para más de una instalación de Commerce (entornos de ensayo y producción), debe especificar un prefijo único para cada instalación. De lo contrario, puede utilizar el prefijo predeterminado magento2. |
    | **[!UICONTROL Enable HTTP Auth]** | Haga clic en **[!UICONTROL Yes]** solo si habilitó la autenticación para el servidor del motor de búsqueda. Si es así, proporcione un nombre de usuario y una contraseña en los campos proporcionados. |
@@ -69,13 +69,13 @@ Si es así, intente lo siguiente:
 
   Por ejemplo, para ver si el motor de búsqueda se está ejecutando en el puerto predeterminado, utilice el siguiente comando:
 
-  ```bash
+  ```shell
   netstat -an | grep 9200
   ```
 
   Si se ejecuta en el puerto 9200, se muestra de forma similar a la siguiente:
 
-  ```
+  ```text
   `tcp        0      0 :::9200            :::-         LISTEN`
   ```
 
@@ -100,13 +100,13 @@ Para reindexar con la línea de comandos:
 
    Introduzca el siguiente comando para reindexar solo el índice de búsqueda del catálogo:
 
-   ```bash
+   ```shell
    bin/magento indexer:reindex catalogsearch_fulltext
    ```
 
    Introduzca el siguiente comando para reindexar todos los indexadores:
 
-   ```bash
+   ```shell
    bin/magento indexer:reindex
    ```
 

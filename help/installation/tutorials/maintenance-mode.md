@@ -2,9 +2,9 @@
 title: Habilitar o deshabilitar el modo de mantenimiento
 description: Siga estos pasos para personalizar lo que los clientes ven cuando la implementación de Adobe Commerce está inactiva por motivos de mantenimiento.
 exl-id: 5d9f1493-e771-47b4-b906-3771026cf07a
-source-git-commit: a5dbefda6b77d993756143ef0e7270425f824c44
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '531'
+source-wordcount: '533'
 ht-degree: 0%
 
 ---
@@ -30,15 +30,15 @@ Utilice el comando CLI `magento maintenance` para habilitar o deshabilitar el mo
 
 Uso de comandos:
 
-```bash
+```shell
 bin/magento maintenance:enable [--ip=<ip address> ... --ip=<ip address>] | [ip=none]
 ```
 
-```bash
+```shell
 bin/magento maintenance:disable [--ip=<ip address> ... --ip=<ip address>] | [ip=none]
 ```
 
-```bash
+```shell
 bin/magento maintenance:status
 ```
 
@@ -52,13 +52,13 @@ El comando `bin/magento maintenance:status` muestra el estado del modo de manten
 
 Por ejemplo, para habilitar el modo de mantenimiento sin excepciones de dirección IP:
 
-```bash
+```shell
 bin/magento maintenance:enable
 ```
 
 Para habilitar el modo de mantenimiento para todos los clientes excepto 192.0.2.10 y 192.0.2.11:
 
-```bash
+```shell
 bin/magento maintenance:enable --ip=192.0.2.10 --ip=192.0.2.11
 ```
 
@@ -69,7 +69,7 @@ Una forma de encontrar estos procesos es ejecutar el comando `ps -ef | grep queu
 
 Para mantener la lista de direcciones IP exentas, puede utilizar la opción `[--ip=<ip list>]` en los comandos anteriores o puede utilizar lo siguiente:
 
-```bash
+```shell
 bin/magento maintenance:allow-ips <ip address> .. <ip address> [--none]
 ```
 

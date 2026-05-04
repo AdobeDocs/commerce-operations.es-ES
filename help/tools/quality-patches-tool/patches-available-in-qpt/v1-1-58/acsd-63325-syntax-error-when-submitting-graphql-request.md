@@ -1,13 +1,13 @@
 ---
-title: 'ACSD-63325: Error de sintaxis: &lt;EOF&gt; inesperado al enviar  [!DNL GraphQL] solicitud vacía'
+title: 'ACSD-63325: error de sintaxis: error inesperado de <EOF> al enviar una solicitud  [!DNL GraphQL] vacía'
 description: Aplique el parche ACSD-63325 para corregir el problema de Adobe Commerce donde se produce un error de sintaxis al enviar una solicitud  [!DNL GraphQL] vacía.
 feature: GraphQL
 Role: Admin, Developer
 exl-id: a83a8c5f-a43a-4733-a601-7b92656e5325
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '297'
+source-wordcount: '313'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ El parche ACSD-63325 corrige el problema donde se devolvía un error &quot;Sinta
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
@@ -46,7 +46,7 @@ Al enviar una solicitud [!DNL GraphQL] vacía, se produce un error de servidor i
 
 El código de respuesta es 200 para la solicitud.
 
-```
+```shell
 curl -i -X OPTIONS http://commerce.local/graphql
 ```
 
@@ -54,7 +54,7 @@ curl -i -X OPTIONS http://commerce.local/graphql
 
 Se produce un error de servidor interno 500 como se muestra:
 
-```
+```text
 HTTP/1.1 500 Internal Server Error
 ```
 
@@ -63,7 +63,7 @@ HTTP/1.1 500 Internal Server Error
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
 * Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía [!DNL Quality Patches Tool].
-* Adobe Commerce en infraestructura de nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) en la guía Commerce en infraestructura de nube.
+* Adobe Commerce en infraestructura de nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) en la guía Commerce en infraestructura de nube.
 
 ## Lectura relacionada
 

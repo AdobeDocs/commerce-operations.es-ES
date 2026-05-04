@@ -3,9 +3,9 @@ title: Configuración de memcached en CentOS
 description: Obtenga información sobre cómo instalar y configurar memcached en CentOS para el almacenamiento en caché de Adobe Commerce. Descubra las instrucciones de configuración y los consejos de optimización.
 feature: Configuration, Cache, Storage
 exl-id: fc4ad18b-7e99-496e-aebc-1d7640d8716c
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '563'
+source-wordcount: '593'
 ht-degree: 0%
 
 ---
@@ -35,19 +35,19 @@ Para instalar memcached en CentOS, realice las siguientes tareas como usuario co
 
 1. Instale memcached y sus dependencias:
 
-   ```bash
+   ```shell
    yum -y update
    ```
 
-   ```bash
+   ```shell
    yum install -y libevent libevent-devel
    ```
 
-   ```bash
+   ```shell
    yum install -y memcached
    ```
 
-   ```bash
+   ```shell
    yum install -y php-pecl-memcache
    ```
 
@@ -70,7 +70,7 @@ Para instalar memcached en CentOS, realice las siguientes tareas como usuario co
 1. Guarde los cambios en `memcached` y salga del editor de texto.
 1. Reinicie memcached.
 
-   ```bash
+   ```shell
    service memcached restart
    ```
 
@@ -78,7 +78,7 @@ Para instalar memcached en CentOS, realice las siguientes tareas como usuario co
 
    Para Apache:
 
-   ```bash
+   ```shell
    service httpd restart
    ```
 
@@ -120,7 +120,7 @@ La prueba utiliza una base de datos, tabla y datos MySQL para comprobar que pued
 
 Cree la base de datos MySQL:
 
-```bash
+```shell
 mysql -u root -p
 ```
 
@@ -167,11 +167,11 @@ Donde `<memcached hostname or ip>` es `localhost`, `127.0.0.1` o el nombre de ho
 
 Ejecute la secuencia de comandos desde la línea de comandos.
 
-```bash
+```shell
 cd <web server docroot>
 ```
 
-```bash
+```shell
 php cache-test.php
 ```
 
@@ -181,19 +181,19 @@ El segundo resultado es `got result from memcached`, que comprueba que el valor 
 
 Finalmente, puede ver las claves memcache usando Telnet:
 
-```bash
+```shell
 telnet localhost <memcache port>
 ```
 
 En el mensaje, escriba
 
-```bash
+```shell
 stats items
 ```
 
 El resultado es similar al siguiente:
 
-```
+```text
 STAT items:3:number 1
 STAT items:3:age 1075
 STAT items:3:evicted 0
@@ -205,12 +205,12 @@ STAT items:3:tailrepairs 0
 
 Vaciar el almacenamiento de memcache y salir de Telnet:
 
-```bash
+```shell
 flush_all
 ```
 
-```bash
+```shell
 quit
 ```
 
-[Información adicional acerca de la prueba Telnet](https://darkcoding.net/software/memcached-list-all-keys/)
+[Información adicional sobre la prueba Telnet](https://darkcoding.net/software/memcached-list-all-keys/)

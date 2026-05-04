@@ -2,9 +2,9 @@
 title: Realizar una copia de seguridad y una reversión del sistema de archivos, medios y base de datos
 description: Siga estos pasos para realizar una copia de seguridad y restaurar la aplicación de Adobe Commerce.
 exl-id: b9925198-37b4-4456-aa82-7c55d060c9eb
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '506'
+source-wordcount: '522'
 ht-degree: 0%
 
 ---
@@ -23,20 +23,20 @@ Después de hacer la copia de seguridad, puedes [revertir](#rollback) más tarde
 
 >[!TIP]
 >
->Para Adobe Commerce sobre proyectos de infraestructura en la nube, consulte [Administración de instantáneas y copias de seguridad](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/develop/storage/snapshots) en la _Guía de la nube_.
+>Para Adobe Commerce sobre proyectos de infraestructura en la nube, consulte [Administración de instantáneas y copias de seguridad](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots) en la _Guía de la nube_.
 
 ## Habilitar copias de seguridad
 
 La función de copia de seguridad está desactivada de forma predeterminada. Para habilitarlo, introduzca el siguiente comando de CLI:
 
-```bash
+```shell
 bin/magento config:set system/backup/functionality_enabled 1
 ```
 
 >[!WARNING]
 >
 >**Aviso de obsolescencia:**
->&#x200B;>La funcionalidad de copia de seguridad quedará obsoleta a partir de las versiones 2.1.16, 2.2.7 y 2.3.0. Recomendamos investigar tecnologías de copia de seguridad adicionales y herramientas de copia de seguridad binaria (como Percona XtraBackup).
+>La funcionalidad de copia de seguridad quedará obsoleta a partir de las versiones 2.1.16, 2.2.7 y 2.3.0. Recomendamos investigar tecnologías de copia de seguridad adicionales y herramientas de copia de seguridad binaria (como Percona XtraBackup).
 
 ## Establecer el límite de archivos abiertos
 
@@ -54,7 +54,7 @@ Antes de continuar, si aún no lo ha hecho, cambie al [propietario del sistema d
 
 Comando:
 
-```bash
+```shell
 ulimit -s 65536
 ```
 
@@ -70,7 +70,7 @@ Para establecer de forma opcional el valor en el shell de Bash del usuario:
 1. Abra `/home/<username>/.bashrc` en un editor de texto.
 1. Añada la línea siguiente:
 
-   ```bash
+   ```shell
    ulimit -s 65536
    ```
 
@@ -84,7 +84,7 @@ Para establecer de forma opcional el valor en el shell de Bash del usuario:
 
 Uso de comandos:
 
-```bash
+```shell
 bin/magento setup:backup [--code] [--media] [--db]
 ```
 
@@ -103,13 +103,13 @@ El comando realiza las siguientes tareas:
 
 Por ejemplo, para realizar una copia de seguridad del sistema de archivos y la base de datos,
 
-```bash
+```shell
 bin/magento setup:backup --code --db
 ```
 
 Se muestran mensajes similares a los siguientes:
 
-```
+```shell
 Enabling maintenance mode
 Code backup is starting...
 Code backup filename: 1434133011_filesystem.tgz (The archive can be uncompressed with 7-Zip on Windows systems)
@@ -128,7 +128,7 @@ En esta sección se explica cómo revertir a una copia de seguridad realizada an
 
 Para buscar el nombre de las copias de seguridad, introduzca:
 
-```bash
+```shell
 bin/magento info:backups:list
 ```
 
@@ -136,19 +136,19 @@ La primera cadena del nombre del archivo de copia de seguridad es la marca de ti
 
 Para revertir a una copia de seguridad anterior, introduzca:
 
-```bash
+```shell
 bin/magento setup:rollback [-c|--code-file="<name>"] [-m|--media-file="<name>"] [-d|--db-file="<name>"]
 ```
 
 Por ejemplo, para restaurar una copia de seguridad de medios denominada `1440611839_filesystem_media.tgz`, escriba
 
-```bash
+```shell
 bin/magento setup:rollback -m 1440611839_filesystem_media.tgz
 ```
 
 Se muestran mensajes similares a los siguientes:
 
-```
+```shell
 [SUCCESS]: Media rollback completed successfully.
 Please set file permission of bin/magento to executable
 Disabling maintenance mode

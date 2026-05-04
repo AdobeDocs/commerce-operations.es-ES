@@ -1,5 +1,5 @@
 ---
-source-git-commit: d263e412022a89255b7d33b267b696a8bb1bc8a2
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
 source-wordcount: '85'
 ht-degree: 0%
@@ -12,11 +12,11 @@ ht-degree: 0%
 1. Inicie sesión en el sistema de producción como propietario del sistema de archivos.
 1. Cambie a la raíz de la aplicación y habilite el modo de mantenimiento.
 
-   ```bash
+   ```shell
    cd <Magento root dir>
    ```
 
-   ```bash
+   ```shell
    bin/magento maintenance:enable
    ```
 
@@ -32,42 +32,42 @@ ht-degree: 0%
 
 1. Actualice la configuración.
 
-   ```bash
+   ```shell
    bin/magento app:config:import
    ```
 
 1. Finalmente, `kill` cualquier proceso de consumidor activo.
 
-   ```bash
+   ```shell
    kill <PID>
    ```
 
    Donde `PID` es el ID de proceso que se va a eliminar, por ejemplo:
 
-   ```bash
+   ```shell
    kill 1234
    ```
 
 1. Extraer código del control de código fuente.
 
-   ```bash
+   ```shell
    git pull mconfig m2.2_deploy
    ```
 
 1. Actualice la configuración.
 
-   ```bash
+   ```shell
    bin/magento app:config:import
    ```
 
 1. Limpie la caché.
 
-   ```bash
+   ```shell
    bin/magento cache:clean
    ```
 
 1. Finalizar modo de mantenimiento.
 
-   ```bash
+   ```shell
    bin/magento maintenance:disable
    ```

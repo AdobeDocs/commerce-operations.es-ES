@@ -3,9 +3,9 @@ title: Configure Nginx para su motor de búsqueda
 description: Siga estos pasos para configurar un motor de búsqueda con el servidor web Nginx para instalaciones locales de Adobe Commerce.
 feature: Install, Search
 exl-id: 8d2f8695-e30a-4acc-bba3-d122212b0a53
-source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '603'
+source-wordcount: '638'
 ht-degree: 0%
 
 ---
@@ -51,25 +51,25 @@ En esta sección se explica cómo especificar quién puede acceder al servidor d
 
 1. Reiniciar nginx:
 
-   ```bash
+   ```shell
    service nginx restart
    ```
 
 1. Compruebe que el proxy funciona introduciendo el siguiente comando:
 
-   ```bash
+   ```shell
    curl -i http://localhost:<proxy port>/_cluster/health
    ```
 
    Por ejemplo, si el proxy utiliza el puerto 8080:
 
-   ```bash
+   ```shell
    curl -i http://localhost:8080/_cluster/health
    ```
 
    Se muestran mensajes similares a los siguientes para indicar que se ha realizado correctamente:
 
-   ```
+   ```text
    HTTP/1.1 200 OK
    Date: Tue, 23 Feb 2019 20:38:03 GMT
    Content-Type: application/json; charset=UTF-8
@@ -106,7 +106,7 @@ Para crear una contraseña:
 
 1. Escriba el siguiente comando para determinar si `htpasswd` ya está instalado:
 
-   ```bash
+   ```shell
    which htpasswd
    ```
 
@@ -119,11 +119,11 @@ Para crear una contraseña:
 
 1. Cree un directorio `/etc/nginx/passwd` para almacenar contraseñas:
 
-   ```bash
+   ```shell
    mkdir -p /etc/nginx/passwd
    ```
 
-   ```bash
+   ```shell
    htpasswd -c /etc/nginx/passwd/.<filename> <username>
    ```
 
@@ -133,7 +133,7 @@ Para crear una contraseña:
 
 1. *(Opcional).* Para agregar otro usuario al archivo de contraseñas, escriba el mismo comando sin la opción `-c` (crear):
 
-   ```bash
+   ```shell
    htpasswd /etc/nginx/passwd/.<filename> <username>
    ```
 
@@ -188,7 +188,7 @@ En esta sección se explica cómo especificar quién puede acceder al servidor d
 
 1. Introduzca el siguiente comando para crear un directorio donde almacenar la configuración de autenticación:
 
-   ```bash
+   ```shell
    mkdir /etc/nginx/auth/
    ```
 
@@ -209,7 +209,7 @@ En esta sección se explica cómo especificar quién puede acceder al servidor d
 1. Si configuró un proxy seguro, elimine `/etc/nginx/conf.d/magento_es_auth.conf`.
 1. Reinicie nginx y continúe con la siguiente sección:
 
-   ```bash
+   ```shell
    service nginx restart
    ```
 

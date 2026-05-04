@@ -2,9 +2,9 @@
 title: Establecer el valor de los parámetros de arranque
 description: Obtenga información sobre cómo establecer parámetros de bootstrap para la aplicación de Commerce.
 exl-id: 4e1e4e5e-e1bc-49a5-8a2a-2e6b91ca9175
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '559'
+source-wordcount: '617'
 ht-degree: 1%
 
 ---
@@ -35,7 +35,7 @@ Puede especificar variables de bootstrap como variables de entorno de todo el si
 
 Por ejemplo, puede usar la variable de entorno del sistema `MAGE_PROFILER` para especificar un modo de la siguiente manera:
 
-```
+```text
 MAGE_PROFILER={firebug|csv|<custom value>}
 ```
 
@@ -43,7 +43,7 @@ Configure la variable mediante un comando específico del shell. Como los shells
 
 Ejemplo de shell de Bash para CentOS:
 
-```bash
+```shell
 export MAGE_PROFILER=firebug
 ```
 
@@ -80,7 +80,7 @@ Puede modificar `.htaccess` en cualquiera de las siguientes ubicaciones, según 
 
 1. Establezca el valor de `MAGE_PROFILER` en cualquiera de las siguientes opciones:
 
-   ```
+   ```text
    firebug
    csvfile
    <custom value>
@@ -124,13 +124,13 @@ Los procedimientos siguientes muestran cómo establecer el modo de aplicación e
 1. Guarde los cambios y salga del editor de texto.
 1. Habilite el host virtual si aún no lo ha hecho:
 
-   ```bash
+   ```shell
    a2ensite <virtual host config file name>
    ```
 
    Por ejemplo,
 
-   ```bash
+   ```shell
    a2ensite my.magento.conf
    ```
 

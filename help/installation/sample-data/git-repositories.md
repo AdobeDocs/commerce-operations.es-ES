@@ -2,9 +2,9 @@
 title: Clonar repositorios Git de datos de muestra
 description: Siga estos pasos para instalar datos de ejemplo de Adobe Commerce clonando repositorios Git.
 exl-id: 748eee30-2821-457d-9c1c-62ede8bc0510
-source-git-commit: 84a20012a81278cc95587ec14281b05330261687
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '733'
+source-wordcount: '762'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ Para clonar el repositorio de GitHub de datos de ejemplo utilizando el protocolo
 
    A continuación se muestra un ejemplo:
 
-   ```bash
+   ```shell
    git clone git@github.com:magento/magento2-sample-data.git
    ```
 
@@ -61,7 +61,7 @@ Para clonar el repositorio de GitHub de datos de ejemplo utilizando el protocolo
    >
    >Si se muestra el siguiente error, asegúrese de que [compartió su clave SSH](https://docs.github.com/articles/generating-ssh-keys/) con GitHub:<br>
 
-   ```
+   ```text
    Cloning into 'magento2'...
    Permission denied (publickey).
    fatal: The remote end hung up unexpectedly
@@ -75,14 +75,14 @@ Para clonar el repositorio de GitHub de datos de ejemplo utilizando el protocolo
 
    Para extraer la rama correcta, ejecute el siguiente comando desde el directorio raíz del repositorio de datos de ejemplo (suponiendo que necesite la rama `2.4-develop`):
 
-   ```bash
+   ```shell
    git checkout 2.4-develop
    ```
 
 1. Cambiar a `<app_root>`.
 1. Introduzca el siguiente comando para crear vínculos simbólicos entre los archivos clonados de modo que los datos de ejemplo funcionen correctamente:
 
-   ```bash
+   ```shell
    php -f <sample-data_clone_dir>/dev/tools/build-sample-data.php -- --ce-source="<path_to_your_magento_instance>"
    ```
 
@@ -92,7 +92,7 @@ Para clonar el repositorio de GitHub de datos de ejemplo utilizando el protocolo
 
 1. Ejecute el siguiente comando:
 
-   ```bash
+   ```shell
    bin/magento setup:upgrade
    ```
 
@@ -116,7 +116,7 @@ Para clonar el repositorio de GitHub de datos de ejemplo utilizando el protocolo
 
    A continuación se muestra un ejemplo:
 
-   ```bash
+   ```shell
    git clone https://github.com/magento/magento2-sample-data.git
    ```
 
@@ -129,20 +129,20 @@ Para clonar el repositorio de GitHub de datos de ejemplo utilizando el protocolo
 
    Para extraer la rama correcta, ejecute el siguiente comando desde el directorio raíz del repositorio de datos de ejemplo (suponiendo que necesite la rama `2.4-develop`):
 
-   ```bash
+   ```shell
    git checkout 2.4-develop
    ```
 
 1. Cambiar a `<magento_root>`.
 1. Introduzca el siguiente comando para crear vínculos simbólicos entre los archivos clonados de modo que los datos de ejemplo funcionen correctamente:
 
-   ```bash
+   ```shell
    php -f <sample-data_clone_dir>/dev/tools/build-sample-data.php -- --ce-source="<path_to_your_magento_instance>"
    ```
 
    Por ejemplo,
 
-   ```bash
+   ```shell
    php -f <sample-data_clone_dir>/dev/tools/build-sample-data.php -- --ce-source="/var/www/magento2"
    ```
 
@@ -153,7 +153,7 @@ Para clonar el repositorio de GitHub de datos de ejemplo utilizando el protocolo
 >
 >Si va a instalar los datos de ejemplo *después de* de instalar Adobe Commerce, también debe ejecutar el siguiente comando para actualizar la base de datos y el esquema:
 >
->```bash
+>```shell
 ><magento_root>/bin/magento setup:upgrade
 >```
 
@@ -166,7 +166,7 @@ Para establecer los permisos y la propiedad del sistema de archivos en el reposi
 1. Cambie al directorio de clonación de datos de ejemplo.
 1. Establecer propiedad:
 
-   ```bash
+   ```shell
    chown -R :<your web server group name> .
    ```
 
@@ -178,17 +178,17 @@ Para establecer los permisos y la propiedad del sistema de archivos en el reposi
 
 1. Definir permisos:
 
-   ```bash
+   ```shell
    find . -type d -exec chmod g+ws {} +
    ```
 
 1. Borrar archivos estáticos:
 
-   ```bash
+   ```shell
    cd <your Magento Open Source install dir>
    ```
 
-   ```bash
+   ```shell
    rm -rf var/cache/* var/page_cache/* generated/*
    ```
 

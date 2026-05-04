@@ -5,9 +5,9 @@ feature: B2B
 role: Admin, Developer
 exl-id: 1798baa3-da2f-44eb-8312-1f1b3f75b24d
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '339'
+source-wordcount: '346'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ La revisión ACSD-63974 corrige el problema en el cual la página **[!UICONTROL 
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
@@ -41,7 +41,7 @@ La página **[!UICONTROL Requisition List]** tarda mucho tiempo en cargarse cuan
 1. Genere más de 2000 productos editando el nodo `simple_products` en `setup/performance-toolkit/profiles/ce/small.xml`.
 1. Ejecute el comando:
 
-   ```bash
+   ```shell
    bin/magento setup:perf:generate-fixtures ./setup/performance-toolkit/profiles/ce/small.xml
    ```
 

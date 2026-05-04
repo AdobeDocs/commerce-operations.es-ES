@@ -3,9 +3,9 @@ title: Verificación final
 description: Aprenda a realizar la verificación final de la configuración de Barniz con Adobe Commerce. Descubra los pasos de prueba y las técnicas de solución de problemas.
 feature: Configuration, Cache
 exl-id: 01f28c93-75cd-4969-9142-b8dac0aa2adb
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
 workflow-type: tm+mt
-source-wordcount: '348'
+source-wordcount: '361'
 ht-degree: 0%
 
 ---
@@ -22,13 +22,13 @@ Primero, asegúrese de que está usando [modo de desarrollador](../cli/set-mode.
 
 Por ejemplo,
 
-```bash
+```shell
 curl -I -v --location-trusted 'http://192.0.2.55/magento2'
 ```
 
 Encabezados importantes:
 
-```
+```text
 X-Magento-Cache-Control: max-age=86400, public, s-maxage=86400
 Age: 0
 X-Magento-Cache-Debug: MISS
@@ -70,7 +70,7 @@ Asegúrese de que el directorio `<magento_root>/var/page_cache` esté vacío:
 1. Inicie sesión en el servidor de Commerce o cambie a propietario del sistema de archivos.
 1. Introduzca el siguiente comando:
 
-   ```bash
+   ```shell
    rm -rf <magento_root>/var/page_cache/*
    ```
 
@@ -83,4 +83,4 @@ Asegúrese de que el directorio `<magento_root>/var/page_cache` esté vacío:
 
 >[!TIP]
 >
->Si encuentra errores 503 (Error de recuperación de servidor), consulte [Solución de problemas 503 (Servicio no disponible) errores](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-503-errors.html?lang=es) en el _Centro de ayuda de Adobe Commerce_.
+>Si encuentra errores 503 (Error de recuperación de servidor), consulte [Solución de problemas 503 (Servicio no disponible) errores](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-503-errors.html) en el _Centro de ayuda de Adobe Commerce_.

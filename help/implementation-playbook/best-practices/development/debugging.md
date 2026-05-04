@@ -4,9 +4,9 @@ description: Conozca las técnicas para resolver los problemas comunes de desarr
 feature: Best Practices
 role: Developer
 exl-id: 78fbea7b-28e8-4713-990d-b4cae159250c
-source-git-commit: 823498f041a6d12cfdedd6757499d62ac2aced3d
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '1139'
+source-wordcount: '1164'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ En esta sección se describen los problemas más comunes que pueden producirse d
 
 El siguiente ejemplo de código proporciona comandos útiles relacionados con la administración de la caché (no se ejecute en entornos de producción):
 
-```bash
+```shell
 # restart php-fpm to flush APC
 sudo service php-fpm restart
  
@@ -78,7 +78,7 @@ Reindexe todo si el problema puede estar relacionado con el índice. La depuraci
 
 Es posible que el código esté obsoleto debido a un cambio de rama o a que los archivos principales se editaron en un esfuerzo de depuración anterior. Para eliminar posibles problemas, ejecute los siguientes comandos:
 
-```bash
+```shell
 rm -rf vendor/*
 composer clear-cache
 composer install
@@ -88,7 +88,7 @@ composer install
 
 Vuelva a compilar los archivos de front-end antes de depurar el contenido generado en JS, CSS, imágenes, traducciones y otros archivos.
 
-```bash
+```shell
 rm -rf generated/* var/cache/* var/page_cache/* var/session/* var/view_preprocessed/* pub/static/*
 bin/magento setup:static-content:deploy
 bin/magento cache:flush
@@ -104,7 +104,7 @@ Si ha creado un módulo, compruebe los siguientes problemas:
 
 - ¿Está activado el módulo?
 
-  ```bash
+  ```shell
   bin/magento module --enable Your_Module
   ```
 
@@ -179,7 +179,7 @@ Si está viendo un problema durante demasiado tiempo, puede ser difícil encontr
 
 Las herramientas de CLI de magerun n98 ([https://github.com/netz98/n98-magerun2](https://github.com/netz98/n98-magerun2)) proporcionan capacidades útiles para trabajar con Adobe Commerce desde la línea de comandos. Especialmente estos comandos:
 
-```bash
+```shell
 n98-magerun2.phar dev:console
 n98-magerun2.phar sys:cron:run
 n98-magerun2.phar db:console

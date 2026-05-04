@@ -2,9 +2,9 @@
 title: Directrices de MySQL
 description: Siga estos pasos para instalar y configurar MySQL y MariaDB para instalaciones locales de Adobe Commerce.
 exl-id: dc5771a8-4066-445c-b1cd-9d5f449ec9e9
-source-git-commit: 766226dc998aafe54bc84d77cabee6fb0a969e6c
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '1053'
+source-wordcount: '1177'
 ht-degree: 0%
 
 ---
@@ -64,7 +64,7 @@ La especificación de anchura de visualización para tipos de datos enteros (TIN
 
 Describir admin_user en mysql 8.19
 
-| Campo | Tipo | Nulo | Clave | Predeterminado | Extra |
+| Campo | Tipo | Null | Clave | Predeterminado | Extra |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | user\_id | `int unsigned` | NO | PRI | `NULL` | `auto_increment` |
 | `firstname` | `varchar(32)` | SÍ | | `NULL` | |
@@ -106,13 +106,13 @@ Para actualizar correctamente MySQL de la versión 5.7 a la versión 8, debe seg
 Pruebe todo y asegúrese de que el sistema funciona según lo esperado.
 1. Activar modo de mantenimiento:
 
-   ```bash
+   ```shell
    bin/magento maintenance:enable
    ```
 
 1. Hacer una copia de seguridad de base de datos:
 
-   ```bash
+   ```shell
    bin/magento setup:backup --db
    ```
 
@@ -120,13 +120,13 @@ Pruebe todo y asegúrese de que el sistema funciona según lo esperado.
 1. Importe los datos de copia de seguridad en MySQL.
 1. Limpie la caché:
 
-   ```bash
+   ```shell
    bin/magento cache:clean
    ```
 
 1. Desactivar el modo de mantenimiento:
 
-   ```bash
+   ```shell
    bin/magento maintenance:disable
    ```
 
@@ -139,7 +139,7 @@ Para configurar una instancia de base de datos MySQL:
 1. Inicie sesión en el servidor de la base de datos como cualquier usuario.
 1. Vaya al símbolo del sistema de MySQL:
 
-   ```bash
+   ```shell
    mysql -u root -p
    ```
 
@@ -166,7 +166,7 @@ Para configurar una instancia de base de datos MySQL:
 
 1. Compruebe la base de datos:
 
-   ```bash
+   ```shell
    mysql -u magento -p
    ```
 

@@ -5,9 +5,9 @@ feature: Search
 role: Admin, Developer
 exl-id: 211c1e3c-0739-4ff6-a25c-b27d335920d1
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '383'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Adobe Commerce (todos los métodos de implementación) 2.4.4 - 2.4.7-p3
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
@@ -39,7 +39,7 @@ Las tablas grandes de `search_query` ralentizan considerablemente las búsquedas
 1. Configure Adobe Commerce Develop utilizando el kit de herramientas de rendimiento `small.xml`.
 1. Obtenga acceso a la línea de comandos de SQL y elimine la tabla `search_query` mediante los siguientes comandos:
 
-   ```
+   ```text
    SET FOREIGN_KEY_CHECKS = 0;  
    DROP TABLE search_query;  
    SET FOREIGN_KEY_CHECKS = 1;  
@@ -48,7 +48,7 @@ Las tablas grandes de `search_query` ralentizan considerablemente las búsquedas
 1. Rellene la tabla `search_query` con un gran número de registros, por ejemplo: 4 millones de registros.
 1. Déclencheur la reindexación y vaciado de cachés.
 
-   ```
+   ```shell
    bin/magento indexer:reindex  
    bin/magento c:c  
    bin/magento c:f  
@@ -56,7 +56,7 @@ Las tablas grandes de `search_query` ralentizan considerablemente las búsquedas
 
 1. Habilitar registros de depuración de base de datos:
 
-   ```
+   ```shell
    bin/magento dev:query-log:enable  
    ```
 
@@ -64,7 +64,7 @@ Las tablas grandes de `search_query` ralentizan considerablemente las búsquedas
    `http://your_magento_instance/default/catalogsearch/result/?q=test.`
 1. Compruebe `db.log` el tiempo de ejecución de la consulta para el siguiente SQL:
 
-   ```
+   ```sql
    SELECT COUNT(*) FROM (  
    SELECT DISTINCT `main_table`.`query_text`  
    FROM `search_query` AS `main_table`  
@@ -82,7 +82,7 @@ El tiempo de ejecución de la consulta está optimizado, lo que da como resultad
 
 El tiempo de ejecución de la consulta aumenta significativamente debido a la administración ineficaz de la tabla `search_query` de gran tamaño:
 
-```
+```text
 TIME: 10.8520 seconds  
 ```
 
@@ -91,7 +91,7 @@ TIME: 10.8520 seconds
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
 * Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía [!DNL Quality Patches Tool].
-* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=es) en la guía Commerce en la infraestructura de la nube.
+* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) en la guía Commerce en la infraestructura de la nube.
 
 ## Lectura relacionada
 

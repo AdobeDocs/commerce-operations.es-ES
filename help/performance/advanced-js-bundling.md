@@ -2,9 +2,9 @@
 title: Paquete de JavaScript avanzado
 description: Obtenga información acerca del paquete de JavaScript avanzado en Adobe Commerce. Descubra estrategias de optimización y directrices de implementación.
 exl-id: 81a313f8-e541-4da6-801b-8bbd892d6252
-source-git-commit: 5d827da35414fa75649f86a2d96fa8ab9086601a
+source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
 workflow-type: tm+mt
-source-wordcount: '2224'
+source-wordcount: '2283'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Consulte [Sugerencias de agrupación](configuration.md#bundling-tips) en *Práct
 
 Para habilitar el agrupamiento integrado desde la línea de comandos:
 
-```bash
+```shell
 php -f bin/magento config:set dev/js/enable_js_bundling 1
 ```
 
@@ -53,7 +53,7 @@ El paquete de Commerce reduce el número de conexiones por página, pero para ca
 
 Para habilitar la combinación integrada desde la línea de comandos:
 
-```bash
+```shell
 php -f bin/magento config:set dev/js/merge_files 1
 ```
 
@@ -219,7 +219,7 @@ phantomjs deps.js <i>url-to-specific-page</i> &gt; <i>text-file-representation-p
 
 Por ejemplo, aquí hay cuatro páginas de la tienda de muestras con temas de Luma que representan los cuatro tipos de página que utilizaremos para crear nuestros cuatro paquetes (página principal, categoría, producto, carro de compras):
 
-```
+```text
 phantomjs deps.js http://m2.loc/ > bundle/homepage.txt
 phantomjs deps.js http://m2.loc/women/tops-women/jackets-women.html > bundle/category.txt
 phantomjs deps.js http://m2.loc/beaumont-summit-kit.html > bundle/product.txt
@@ -241,7 +241,7 @@ Este comando (utilizado en el script [!DNL PhantomJS]) crea la misma lista de de
 
 Después de combinar las dependencias [!DNL RequireJS] en archivos de texto de tipo de página, puede utilizar el siguiente comando en cada archivo de dependencia de tipo de página para reemplazar las comas de los archivos por líneas nuevas:
 
-```bash
+```shell
 sed -i -e $'s/,/\\\n/g' bundle/category.txt
 sed -i -e $'s/,/\\\n/g' bundle/homepage.txt
 sed -i -e $'s/,/\\\n/g' bundle/product.txt
@@ -250,7 +250,7 @@ sed -i -e $'s/,/\\\n/g' bundle/product.txt
 
 También debe quitar todos los mixins de cada archivo porque los mixins duplican dependencias. Utilice el siguiente comando en cada archivo de dependencia:
 
-```bash
+```shell
 sed -i -e 's/mixins\!.*$//g' bundle/homepage.txt
 sed -i -e 's/mixins\!.*$//g' bundle/category.txt
 sed -i -e 's/mixins\!.*$//g' bundle/product.txt
@@ -263,13 +263,13 @@ El objetivo es crear un paquete común de archivos JavaScript necesarios para to
 
 Abra un terminal en el directorio raíz de Commerce y utilice el siguiente comando para comprobar que tiene dependencias que puede dividir en paquetes separados:
 
-```bash
+```shell
 sort bundle/*.txt |uniq -c |sort -n
 ```
 
 Este comando combina y ordena las dependencias encontradas en los archivos `bundle/*.txt`.  El resultado también muestra el número de archivos que contienen cada dependencia:
 
-```
+```text
 1 buildTools,
 1 jquery/jquery.parsequery,
 1 jsbuild,
@@ -318,13 +318,13 @@ También puede encontrar el script en [https://www.unix.com/shell-programming-an
 
 Abra un terminal en el directorio raíz de Commerce y ejecute el archivo:
 
-```bash
+```shell
 bash deps-map.sh
 ```
 
 El resultado de este script, aplicado a nuestros tres tipos de página de ejemplo, debería tener un aspecto similar al siguiente (pero mucho más largo):
 
-```
+```text
 bundle/product.txt   -->   buildTools,
 bundle/category.txt  -->   jquery/jquery.parsequery,
 bundle/product.txt   -->   jsbuild,
@@ -391,7 +391,7 @@ Los pasos siguientes describen el proceso básico para generar paquetes de Comme
 
 Antes de generar paquetes, ejecute el comando de implementación estática:
 
-```bash
+```shell
 php -f bin/magento setup:static-content:deploy -f -a frontend
 ```
 
@@ -404,25 +404,25 @@ Este comando genera implementaciones de almacén estáticas para cada tema y con
 
 Para generar paquetes para todas las temáticas y configuraciones regionales de la tienda, repita los pasos a continuación para cada temática y configuración regional de la tienda.
 
-#### &#x200B;2. Mueva el contenido del almacén estático a un directorio temporal
+#### &#x200B;2. Mover el contenido del almacén estático a un directorio temporal
 
 Primero, debe mover el contenido estático del directorio de destino a algún directorio temporal porque [!DNL RequireJS] reemplaza todo el contenido del directorio de destino.
 
-```bash
+```shell
 mv pub/static/frontend/Magento/{theme}/{locale} pub/static/frontend/Magento/{theme}/{locale}_tmp
 ```
 
 Por ejemplo:
 
-```bash
+```shell
 mv pub/static/frontend/Magento/luma/en_US pub/static/frontend/Magento/luma/en_US_tmp
 ```
 
-#### &#x200B;3. Ejecute el optimizador r.js
+#### &#x200B;3. Ejecute el optimizador de r.js.
 
 A continuación, ejecute el optimizador r.js en el archivo `build.js` desde el directorio raíz de Commerce. Las rutas a todos los directorios y archivos son relativas al directorio de trabajo.
 
-```bash
+```shell
 r.js -o build.js baseUrl=pub/static/frontend/Magento/luma/en_US_tmp dir=pub/static/frontend/Magento/luma/en_US
 ```
 
@@ -430,11 +430,11 @@ Este comando genera paquetes en un subdirectorio `bundles` del directorio de des
 
 La lista del contenido del nuevo directorio de paquetes puede tener este aspecto:
 
-```bash
+```shell
 ll pub/static/frontend/Magento/luma/en_US/bundles
 ```
 
-```
+```text
 total 1900
 drwxr-xr-x  2 root root    4096 Mar 28 11:24 ./
 drwxr-xr-x 70 root root    4096 Mar 28 11:24 ../
@@ -481,11 +481,11 @@ require.config({});
 }
 ```
 
-#### &#x200B;5. Vuelva a ejecutar el comando de implementación
+#### &#x200B;5. Volver a ejecutar el comando de implementación
 
 Ejecute el siguiente comando para implementar:
 
-```bash
+```shell
 r.js -o app/design/frontend/Magento/luma/build.js baseUrl=pub/static/frontend/Magento/luma/en_US_tmp dir=pub/static/frontend/Magento/luma/en_US
 ```
 
@@ -504,7 +504,7 @@ require.config({
 >
 >Al configurar paquetes, asegúrese de colocar las llamadas de `requirejs.config()` en el orden en que desea que se ejecuten, ya que las llamadas se ejecutan en el orden en que aparecen.
 
-#### &#x200B;6. Pruebe los resultados
+#### &#x200B;6. Prueba de los resultados
 
 Una vez que se carga la página, observe que el explorador carga diferentes dependencias y paquetes. Por ejemplo, estos son los resultados para el perfil &quot;3G lento&quot;:
 
@@ -512,7 +512,7 @@ Una vez que se carga la página, observe que el explorador carga diferentes depe
 
 El tiempo de carga de una página principal vacía ahora es el doble de rápido que utilizar el paquete nativo de Commerce. Pero podemos hacerlo aún mejor.
 
-#### &#x200B;7. Optimizar los paquetes
+#### &#x200B;7. Optimización de los paquetes
 
 Incluso si se comprime, los archivos JavaScript siguen siendo grandes. Minimícelos con [!DNL RequireJS], que usa uglifier para minificar JavaScript con buenos resultados.
 

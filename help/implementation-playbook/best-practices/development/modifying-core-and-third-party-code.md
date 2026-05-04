@@ -5,9 +5,9 @@ role: Developer
 feature: Best Practices
 last-substantial-update: 2023-12-8
 exl-id: 32b3137d-fc00-4be8-ba02-5d8d48a51fe1
-source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '1747'
+source-wordcount: '1767'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Un parche es un archivo que contiene instrucciones para cambiar directamente el 
 
 Los parches se rompen fácilmente. Si se actualizan los archivos a los que se dirige el parche, a menudo el parche deja de funcionar. Esto se debe a que un archivo de parche contiene números de línea y números de columna que indican específicamente lo que debe cambiar el parche. Si algo no coincide con lo que esperaba el parche, deja de aplicarse y rompe el código.
 
-```bash
+```shell
 diff --git a/vendor/magento/module-quote/Model/QuoteManagement.php b/vendor/magento/module-quote/Model/QuoteManagement.php
 index 51b68411d40..ac4a3468322 100644
 --- a/vendor/magento/module-quote/Model/QuoteManagement.php

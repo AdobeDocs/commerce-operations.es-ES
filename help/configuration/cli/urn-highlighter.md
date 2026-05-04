@@ -2,9 +2,9 @@
 title: Marcador URN
 description: Aprenda a configurar el resaltado de URN en su IDE para el desarrollo de Adobe Commerce. Descubra la configuración y optimización del desarrollo del esquema XSD.
 exl-id: 6389ab58-af70-4b33-800e-be3191c5a4cc
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '187'
+source-wordcount: '191'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Actualmente, solo se admiten PhpStorm y código de Visual Studio.
 
 Sintaxis del comando:
 
-```bash
+```shell
 bin/magento dev:urn-catalog:generate <path>
 ```
 

@@ -1,10 +1,10 @@
 ---
 title: Desinstalación de módulos
-description: Siga estos pasos para desinstalar un módulo de Adobe Commerce.
+description: Obtenga información sobre cómo desinstalar módulos de Adobe Commerce con la eliminación opcional de código, esquema y datos, y cuándo deshabilitar módulos en lugar de desinstalarlos.
 exl-id: 66879ef5-47c7-4b61-8c7e-78b60441980a
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
 workflow-type: tm+mt
-source-wordcount: '727'
+source-wordcount: '754'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Solo debe desinstalar un módulo si está seguro de que no lo utilizará. En lug
 
 Uso de comandos:
 
-```bash
+```shell
 bin/magento module:uninstall [--backup-code] [--backup-media] [--backup-db] [-r|--remove-data] [-c|--clear-static-content] \
   {ModuleName} ... {ModuleName}
 ```
@@ -67,7 +67,7 @@ El comando de desinstalación del módulo realiza las siguientes tareas:
 
 Por ejemplo, si intenta desinstalar un módulo del que depende otro módulo, aparecerá el siguiente mensaje:
 
-```
+```shell
 magento module:uninstall Magento_SampleMinimal
     Cannot uninstall module 'Magento_SampleMinimal' because the following module(s) depend on it:
         Magento_SampleModifyContent
@@ -75,13 +75,13 @@ magento module:uninstall Magento_SampleMinimal
 
 Una alternativa es desinstalar ambos módulos después de hacer una copia de seguridad del sistema de archivos de módulos, `pub/media` archivos y tablas de base de datos, pero _no_ quitando el esquema o los datos de base de datos del módulo:
 
-```bash
+```shell
 bin/magento module:uninstall Magento_SampleMinimal Magento_SampleModifyContent --backup-code --backup-media --backup-db
 ```
 
 Se muestran mensajes similares a los siguientes:
 
-```
+```text
 You are about to remove code and/or database tables. Are you sure?[y/N]y
 Enabling maintenance mode
 Code backup is starting...
@@ -122,7 +122,7 @@ Disabling maintenance mode
 
 Para restaurar el código base al estado en el que realizó la copia de seguridad, utilice el siguiente comando:
 
-```bash
+```shell
 bin/magento setup:rollback [-c|--code-file="<filename>"] [-m|--media-file="<filename>"] [-d|--db-file="<filename>"]
 ```
 
@@ -142,7 +142,7 @@ Este comando realiza las tareas siguientes:
 1. Comprueba el nombre del archivo de copia de seguridad.
 1. Si especifica un archivo de reversión de código:
 
-   a. Comprueba que las ubicaciones de destino de reversión pueden escribirse (tenga en cuenta que las carpetas `pub/static` y `var` se omiten).
+   a. Comprueba que se pueden escribir las ubicaciones de destino de reversión (tenga en cuenta que las carpetas `pub/static` y `var` se omiten).
 
    b. Elimina todos los archivos y directorios del directorio de instalación de la aplicación.
 
@@ -156,7 +156,7 @@ Este comando realiza las tareas siguientes:
 
 1. Si especifica un archivo de reversión de medios:
 
-   a. Comprueba que se puede escribir en las ubicaciones de destino de reversión.
+   a. Comprueba que las ubicaciones de destino de reversión pueden escribirse.
 
    b. Elimina todos los archivos y directorios de `pub/media`
 
@@ -168,19 +168,19 @@ Por ejemplo, para restaurar una copia de seguridad de un código (es decir, un s
 
 * Mostrar una lista de copias de seguridad:
 
-  ```bash
+  ```shell
   magento info:backups:list
   ```
 
 * Restaurar una copia de seguridad de archivos con el nombre `1433876616_filesystem.tgz`:
 
-  ```bash
+  ```shell
   magento setup:rollback --code-file="1433876616_filesystem.tgz"
   ```
 
   Se muestran mensajes similares a los siguientes:
 
-  ```
+  ```text
   Enabling maintenance mode
   Code rollback is starting ...
   Code rollback filename: 1433876616_filesystem.tgz

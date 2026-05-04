@@ -2,7 +2,7 @@
 title: Ejecutar pruebas unitarias
 description: Obtenga información sobre cómo ejecutar pruebas unitarias definidas en el código base de Adobe Commerce. Descubra los comandos de prueba, las opciones de ejecución y los informes de resultados.
 exl-id: 23200420-d15c-4910-8ce6-abd0cc070777
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
 source-wordcount: '152'
 ht-degree: 0%
@@ -21,7 +21,7 @@ Antes de ejecutar este comando, el siguiente _debe_ ser verdadero:
 
 - El módulo `Magento_Developer` debe estar habilitado. Puede habilitarlo de la siguiente manera:
 
-  ```bash
+  ```shell
   bin/magento module:enable [--force] Magento_Developer
   ```
 
@@ -35,24 +35,24 @@ Por ejemplo, para ejecutar pruebas de integración, debe copiar `dev/tests/integ
 
 Uso de comandos:
 
-```bash
+```shell
 bin/magento dev:tests:run <test>
 ```
 
 Para enumerar los tipos de prueba disponibles:
 
-```bash
+```shell
 bin/magento dev:tests:run --help
 ```
 
 Devolución de muestra:
 
-```
+```text
 all, unit, integration, integration-all, static, static-all, integrity, legacy, default
 ```
 
 Por ejemplo, para ejecutar pruebas de integración:
 
-```bash
+```shell
 bin/magento dev:tests:run integration
 ```

@@ -1,11 +1,11 @@
 ---
 title: Desinstalar temas
-description: Siga estos pasos para desinstalar una temática de Adobe Commerce.
+description: Aprenda a desinstalar temas de Adobe Commerce desde la línea de comandos, incluidos los paquetes de Compositor, la eliminación de código y las copias de seguridad antes de realizar cambios.
 feature: Install, Themes
 exl-id: 73150e8c-2d83-4479-b96b-75f41fd9c842
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '476'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ Antes de utilizar este comando, debe conocer la ruta relativa a la temática. Lo
 
 Por ejemplo, la ruta al tema de Luma proporcionado con Adobe Commerce es `frontend/Magento/luma`.
 
-Para obtener más información acerca de las temáticas, vea [estructura de temáticas](https://developer.adobe.com/commerce/frontend-core/guide/themes/structure/).
+Para obtener más información acerca de las temáticas, vea [estructura de temáticas](https://developer.adobe.com/commerce/frontend-core/guide/themes/structure).
 
 ## Información general sobre la desinstalación de temáticas
 
@@ -27,13 +27,13 @@ Este comando desinstala *solamente* temas especificados en `composer.json`; en o
 * Actualizando la información del nodo `parent` en `theme.xml` para quitar las referencias al tema.
 * Quitando el código de tema del sistema de archivos.
 
-  [Más información acerca de la herencia de temas](https://developer.adobe.com/commerce/frontend-core/guide/themes/inheritance/).
+  [Más información acerca de la herencia de temas](https://developer.adobe.com/commerce/frontend-core/guide/themes/inheritance).
 
 ## Desinstalar temas
 
 Uso de comandos:
 
-```bash
+```shell
 bin/magento theme:uninstall [--backup-code] [-c|--clear-static-content] {theme path} ... {theme path}
 ```
 
@@ -68,20 +68,20 @@ El comando realiza las siguientes tareas:
 
 Por ejemplo, si intenta desinstalar una temática de la que depende otra, se muestra el siguiente mensaje:
 
-```
+```text
 Cannot uninstall frontend/ExampleCorp/SampleModuleTheme because the following package(s) depend on it:
         ExampleCorp/sample-module-theme-depend
 ```
 
 Una alternativa es desinstalar ambos temas al mismo tiempo como se indica a continuación, haciendo una copia de seguridad de la base de código:
 
-```bash
+```shell
 bin/magento theme:uninstall frontend/ExampleCorp/SampleModuleTheme frontend/ExampleCorp/SampleModuleThemeDepend --backup-code
 ```
 
 Se muestran mensajes similares a los siguientes:
 
-```
+```text
 Code backup is starting...
 Code backup filename: 1435261098_filesystem_code.tgz (The archive can be uncompressed with 7-Zip on Windows systems)
 Code backup path: /var/www/html/magento2/var/backups/1435261098_filesystem_code.tgz

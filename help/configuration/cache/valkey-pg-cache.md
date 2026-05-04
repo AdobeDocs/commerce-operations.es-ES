@@ -3,9 +3,9 @@ title: Usar Valkey para la caché predeterminada
 description: Aprenda a configurar Valkey como la memoria caché predeterminada para Adobe Commerce. Descubra la configuración de la línea de comandos, las opciones de configuración y las técnicas de validación.
 feature: Configuration, Cache
 exl-id: d0baa2a6-8aa8-4f3f-9edf-102d621430e0
-source-git-commit: e9f1bef9f97a0e1d738f1221758f1b9a0a238da1
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '1056'
+source-wordcount: '1084'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Debe [instalar Valkey](config-redis.md#install-redis) antes de continuar.
 
 Ejecute el comando `setup:config:set` y especifique los parámetros para el almacenamiento en caché predeterminado de Valkey.
 
-```bash
+```shell
 bin/magento setup:config:set --cache-backend=valkey --cache-backend-valkey-<parameter>=<value>...
 ```
 
@@ -33,7 +33,7 @@ bin/magento setup:config:set --cache-backend=valkey --cache-backend-valkey-<para
 >
 >A partir de **Adobe Commerce 2.4.9-alpha2**, **Valkey** ha reemplazado oficialmente a Redis en las herramientas CLI debido a cambios en las licencias. Valkey es una ramificación de Redis y mantiene una funcionalidad casi idéntica. Para las **versiones 2.4.8 y anteriores**, los comandos CLI utilizados para configurar Valkey siguen siendo los mismos que los de Redis, lo que garantiza una compatibilidad con versiones anteriores sin problemas y simplifica la migración o la compatibilidad con entornos duales. El ejemplo siguiente muestra el comando específico de Valkey.
 
-```bash
+```shell
 bin/magento setup:config:set --cache-backend=valkey --cache-backend-valkey-<parameter>=<value>...
 ```
 
@@ -41,14 +41,14 @@ bin/magento setup:config:set --cache-backend=valkey --cache-backend-valkey-<para
 |---------------------------------| --------- |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| ------------- |
 | `cache-backend-valkey-server` | server | Nombre de host completo, dirección IP o ruta absoluta a un socket UNIX. El valor predeterminado de `127.0.0.1` indica que Valkey está instalado en el servidor de Commerce. | `127.0.0.1` |
 | `cache-backend-valkey-port` | puerto | Puerto de escucha del servidor Valkey | `6379` |
-| `cache-backend-valkey-db` | database | Necesario si utiliza Valkey tanto para la caché predeterminada como para la caché de página completa. Debe especificar el número de base de datos de una de las cachés; la otra caché utiliza `0` de forma predeterminada.<br><br>**Importante**: Si usa Valkey para más de un tipo de almacenamiento en caché, los números de la base de datos deben ser diferentes. Adobe recomienda que asigne el número de base de datos de almacenamiento en caché predeterminado a `0`, el número de base de datos de almacenamiento en caché de páginas a `1` y el número de base de datos de almacenamiento de sesión a `2`. | `0` |
+| `cache-backend-valkey-db` | database | Necesario si utiliza Valkey tanto para la caché predeterminada como para la caché de página completa. Debe especificar el número de base de datos de una de las cachés; la otra caché usa `0` de forma predeterminada.<br><br>**Importante**: Si usa Valkey para más de un tipo de almacenamiento en caché, los números de base de datos deben ser diferentes. Adobe recomienda que asigne el número de base de datos de almacenamiento en caché predeterminado a `0`, el número de base de datos de almacenamiento en caché de páginas a `1` y el número de base de datos de almacenamiento de sesión a `2`. | `0` |
 | `cache-backend-valkey-password` | contraseña | La configuración de una contraseña de Valkey habilita una de sus características de seguridad integradas: el comando `auth`, que requiere que los clientes se autentiquen para acceder a la base de datos. La contraseña está configurada directamente en el archivo de configuración de Valkey: `/etc/valkey/valkey.conf` | |
 
 ### Ejemplo, comando
 
 El ejemplo siguiente habilita el almacenamiento en caché predeterminado de Valkey, establece el host en `127.0.0.1` y asigna el número de base de datos a `0`. Valkey utiliza los valores predeterminados de todos los demás parámetros.
 
-```bash
+```shell
 bin/magento setup:config:set --cache-backend=valkey --cache-backend-valkey-server=127.0.0.1 --cache-backend-valkey-db=0
 ```
 
@@ -56,7 +56,7 @@ bin/magento setup:config:set --cache-backend=valkey --cache-backend-valkey-serve
 >
 >A partir de **Adobe Commerce 2.4.9-alpha2**, **Valkey** ha reemplazado oficialmente a Redis en las herramientas CLI debido a cambios en las licencias. Valkey es una ramificación de Redis y mantiene una funcionalidad casi idéntica. Para las **versiones 2.4.8 y anteriores**, los comandos CLI utilizados para configurar Valkey siguen siendo los mismos que los de Redis, lo que garantiza una compatibilidad con versiones anteriores sin problemas y simplifica la migración o la compatibilidad con entornos duales. El ejemplo siguiente muestra el comando específico de Valkey.
 
-```bash
+```shell
 bin/magento setup:config:set --cache-backend=redis --cache-backend-redis-server=127.0.0.1 --cache-backend-redis-db=0
 ```
 
@@ -64,7 +64,7 @@ bin/magento setup:config:set --cache-backend=redis --cache-backend-redis-server=
 
 Para configurar el almacenamiento en caché de la página Valkey en Commerce, ejecute el comando `setup:config:set` con parámetros adicionales.
 
-```bash
+```shell
 bin/magento setup:config:set --page-cache=valkey --page-cache-valkey-<parameter>=<value>...
 ```
 
@@ -78,7 +78,7 @@ Con los siguientes parámetros:
 >
 >A partir de **Adobe Commerce 2.4.9-alpha2**, **Valkey** ha reemplazado oficialmente a Redis en las herramientas CLI debido a cambios en las licencias. Valkey es una ramificación de Redis y mantiene una funcionalidad casi idéntica. Para las **versiones 2.4.8 y anteriores**, los comandos CLI utilizados para configurar Valkey siguen siendo los mismos que los de Redis, lo que garantiza una compatibilidad con versiones anteriores sin problemas y simplifica la migración o la compatibilidad con entornos duales. El ejemplo siguiente muestra el comando específico de Valkey.
 
-```bash
+```shell
 bin/magento setup:config:set --page-cache=redis --page-cache-redis-<parameter>=<value>...
 ```
 
@@ -86,14 +86,14 @@ bin/magento setup:config:set --page-cache=redis --page-cache-redis-<parameter>=<
 |------------------------------| --------- |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| ------------- |
 | `page-cache-valkey-server` | server | Nombre de host completo, dirección IP o ruta absoluta a un socket UNIX. El valor predeterminado de `127.0.0.1` indica que Valkey está instalado en el servidor de Commerce. | `127.0.0.1` |
 | `page-cache-valkey-port` | puerto | Puerto de escucha del servidor Valkey. | `6379` |
-| `page-cache-valkey-db` | database | Necesario si utiliza Valkey tanto para la caché predeterminada como para la caché de página completa. Debe especificar el número de base de datos de una de las cachés; la otra caché utiliza `0` de forma predeterminada.<br/>**Importante**: Si usa Valkey para más de un tipo de almacenamiento en caché, los números de la base de datos deben ser diferentes. Se recomienda asignar el número de base de datos de almacenamiento en caché predeterminado a `0`, el número de base de datos de almacenamiento en caché de páginas a `1` y el número de base de datos de almacenamiento de sesión a `2`. | `0` |
+| `page-cache-valkey-db` | database | Necesario si utiliza Valkey tanto para la caché predeterminada como para la caché de página completa. Debe especificar el número de base de datos de una de las cachés; la otra caché usa `0` de forma predeterminada.<br/>**Importante**: Si usa Valkey para más de un tipo de almacenamiento en caché, los números de base de datos deben ser diferentes. Se recomienda asignar el número de base de datos de almacenamiento en caché predeterminado a `0`, el número de base de datos de almacenamiento en caché de páginas a `1` y el número de base de datos de almacenamiento de sesión a `2`. | `0` |
 | `page-cache-valkey-password` | contraseña | La configuración de una contraseña de Valkey habilita una de sus características de seguridad integradas: el comando `auth`, que requiere que los clientes se autentiquen para acceder a la base de datos. Configure la contraseña en el archivo de configuración de Valkey: `/etc/valkey/valkey.conf` | |
 
 ### Ejemplo, comando
 
 El ejemplo siguiente habilita el almacenamiento en caché de páginas de Valkey, establece el host en `127.0.0.1` y asigna el número de base de datos a `1`. El resto de parámetros se definen con el valor predeterminado.
 
-```bash
+```shell
 bin/magento setup:config:set --page-cache=valkey --page-cache-valkey-server=127.0.0.1 --page-cache-valkey-db=1
 ```
 
@@ -101,7 +101,7 @@ bin/magento setup:config:set --page-cache=valkey --page-cache-valkey-server=127.
 >
 >A partir de **Adobe Commerce 2.4.9-alpha2**, **Valkey** ha reemplazado oficialmente a Redis en las herramientas CLI debido a cambios en las licencias. Valkey es una ramificación de Redis y mantiene una funcionalidad casi idéntica. Para las **versiones 2.4.8 y anteriores**, los comandos CLI utilizados para configurar Valkey siguen siendo los mismos que los de Redis, lo que garantiza una compatibilidad con versiones anteriores sin problemas y simplifica la migración o la compatibilidad con entornos duales. El ejemplo siguiente muestra el comando específico de Valkey.
 
-```bash
+```shell
 bin/magento setup:config:set --page-cache=redis --page-cache-redis-server=127.0.0.1 --page-cache-valkey-db=1
 ```
 
@@ -205,7 +205,7 @@ Está desactivada de forma predeterminada y Adobe recomienda desactivarla hasta 
 
 **Para habilitar la generación paralela**:
 
-```bash
+```shell
 bin/magento setup:config:set --allow-parallel-generation
 ```
 
@@ -240,13 +240,13 @@ Para comprobar que Valkey y Commerce funcionan juntos correctamente, inicie sesi
 
 ### Comando Valkey monitor
 
-```bash
+```shell
 valkey-cli monitor
 ```
 
 Ejemplo de salida de almacenamiento en caché de páginas:
 
-```
+```text
 1476826133.810090 [0 127.0.0.1:52366] "select" "1"
 1476826133.816293 [0 127.0.0.1:52367] "select" "0"
 1476826133.817461 [0 127.0.0.1:52367] "hget" "zc:k:ea6_GLOBAL__DICONFIG" "d"
@@ -271,7 +271,7 @@ Ejemplo de salida de almacenamiento en caché de páginas:
 
 ### Valkey ping, comando
 
-```bash
+```shell
 valkey-cli ping
 ```
 

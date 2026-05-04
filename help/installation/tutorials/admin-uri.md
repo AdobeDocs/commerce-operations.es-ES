@@ -3,9 +3,9 @@ title: Mostrar o cambiar el URI de administrador
 description: Siga estos pasos para ver y modificar el URI de su aplicación de administración de Adobe Commerce.
 feature: Install, Configuration
 exl-id: 768f9ab4-7123-4460-9df8-a6c98ae55d95
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '91'
+source-wordcount: '99'
 ht-degree: 0%
 
 ---
@@ -20,13 +20,13 @@ En esta sección se explica cómo usar la línea de comandos para mostrar el ide
 
 Opciones de comando:
 
-```bash
+```shell
 bin/magento info:adminuri
 ```
 
 A continuación se muestra un ejemplo:
 
-```
+```text
 Admin Panel URI: /admin_1wgrah
 ```
 

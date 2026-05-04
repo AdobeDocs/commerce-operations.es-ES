@@ -3,9 +3,9 @@ title: Configurar  [!DNL Data Migration Tool]
 description: Obtenga información acerca de los dos métodos para configurar  [!DNL Data Migration Tool] para transferir datos entre Magento 1 y Magento 2.
 exl-id: 273be997-8085-4488-a455-f6005a85b406
 topic: Commerce, Migration
-source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '808'
+source-wordcount: '811'
 ht-degree: 0%
 
 ---
@@ -96,11 +96,11 @@ Antes de migrar datos, debe crear un módulo de Magento 2.
 
    Por ejemplo, si migra `Magento 1.9.3.6 Community Edition` a `Magento 2 Open Source`:
 
-   ```bash
+   ```shell
    cd <your Magento 2 install dir>
    ```
 
-   ```bash
+   ```shell
    cp vendor/magento/data-migration-tool/etc/opensource-to-opensource/1.9.3.6/config.xml.dist app/code/Vendor/Migration/etc/opensource-to-opensource/1.9.3.6/config.xml
    ```
 
@@ -118,13 +118,13 @@ Para configurar [!DNL Data Migration Tool] para la migración:
 
 1. Cambie al siguiente directorio:
 
-   ```bash
+   ```shell
    <your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/<migration edition>/<ce or version>
    ```
 
 1. Escriba el siguiente comando para crear un `config.xml` a partir del ejemplo proporcionado:
 
-   ```bash
+   ```shell
    cp config.xml.dist config.xml
    ```
 
@@ -208,7 +208,7 @@ Para utilizar los archivos de asignación:
 
 1. Actualice la ruta al archivo recién copiado en el nodo `<options>` de `config.xml`. La ruta actualizada debe ser una de las siguientes:
 
-   1. Ruta absoluta del archivo, p. ej. `/var/www/html/app/code/Vendor/Migration/etc/opensource-to-opensource/1.9.4.1/map.xml`
+   1. Ruta absoluta del archivo, p. ej. g. `/var/www/html/app/code/Vendor/Migration/etc/opensource-to-opensource/1.9.4.1/map.xml`
    1. ruta de archivo relativa del módulo magento/data-migration-tool: `etc/opensource-to-opensource/1.9.4.1/map.xml`
    1. Ruta de acceso del archivo relativa a la raíz de Magento: `app/code/Vendor/Migration/etc/opensource-to-opensource/1.9.4.1/map.xml`
 

@@ -4,9 +4,9 @@ description: Aplique el parche ACP2E-3753 para solucionar el problema de Adobe C
 feature: Themes, Personalization
 role: Admin, Developer
 exl-id: ad44ffdd-f122-4119-83e3-1816951b662c
-source-git-commit: 2089fed83a207f9d0211273652ea320d2590f8d5
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '379'
+source-wordcount: '405'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ El parche ACP2E-3753 corrige el problema en el que los correos electrónicos de 
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
@@ -40,7 +40,7 @@ Los correos electrónicos de alerta de producto en una configuración de varias 
 1. La configuración de alertas de producto es el ámbito predeterminado que se ejecuta cada minuto.
 1. Anular o agregar contenido al archivo `stock.phtml` para ambas temáticas. Ejemplo de la ubicación del archivo:
 
-   ```
+   ```text
    app\design\frontend\Adobe\Taiwan\Magento_ProductAlert\templates\email\stock.phtml
    app\design\frontend\Adobe\Japan\Magento_ProductAlert\templates\email\stock.phtml
    ```
@@ -61,7 +61,7 @@ Los correos electrónicos no incluyen las plantillas configuradas en el sitio we
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
 * Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía [!DNL Quality Patches Tool].
-* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=es) en la guía Commerce en la infraestructura de la nube.
+* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) en la guía Commerce en la infraestructura de la nube.
 
 ## Lectura relacionada
 

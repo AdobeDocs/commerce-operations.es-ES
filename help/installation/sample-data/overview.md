@@ -1,10 +1,10 @@
 ---
 title: Resumen de datos de muestra
-description: Obtenga información sobre el uso de datos de ejemplo para proyectos de Adobe Commerce.
+description: Obtenga información acerca de la instalación de datos de muestra de Adobe Commerce para demostraciones y formación, cómo se comporta la tienda basada en Luma y las limitaciones para el desarrollo de la producción.
 exl-id: 828b009d-a6ff-4db2-aa1a-838f6f55a194
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
 workflow-type: tm+mt
-source-wordcount: '243'
+source-wordcount: '257'
 ht-degree: 0%
 
 ---

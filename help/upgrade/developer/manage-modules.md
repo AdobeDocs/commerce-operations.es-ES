@@ -3,9 +3,9 @@ title: Administración de módulos y extensiones (desarrollador)
 description: Administre módulos y extensiones de Adobe Commerce mediante la interfaz de línea de comandos y el administrador de paquetes del Compositor.
 feature: Upgrade, Extensions
 exl-id: 447eb317-83e1-4900-83a5-9ac1a008e752
-source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '131'
+source-wordcount: '132'
 ht-degree: 3%
 
 ---
@@ -24,13 +24,13 @@ Tiene las siguientes opciones:
 
 Uso de comandos:
 
-```bash
+```shell
 composer show --all <vendor>/<name>
 ```
 
 Por ejemplo:
 
-```bash
+```shell
 composer show --all example/module
 ```
 
@@ -38,13 +38,13 @@ composer show --all example/module
 
 Uso de comandos:
 
-```bash
+```shell
 composer require <vendor>/<name>:<version>
 ```
 
 Por ejemplo:
 
-```bash
+```shell
 composer require example/module:1.0.0
 ```
 
@@ -67,7 +67,7 @@ Espere mientras Composer actualiza las dependencias e instala el módulo.
 
 1. Resuelva dependencias y escriba versiones exactas en el archivo `composer.lock`.
 
-   ```bash
+   ```shell
    composer update
    ```
 

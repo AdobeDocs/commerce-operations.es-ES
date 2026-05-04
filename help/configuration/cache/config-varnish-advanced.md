@@ -3,9 +3,9 @@ title: Configuración avanzada de barniz
 description: Aprenda a configurar las funciones avanzadas de Barniz para Adobe Commerce, incluidas las comprobaciones de estado, la gracia y los modos de santo. Descubra las técnicas de optimización de VCL.
 feature: Configuration, Cache
 exl-id: 178bd675-6ed0-40cc-9455-08a11b32c054
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '881'
+source-wordcount: '908'
 ht-degree: 0%
 
 ---
@@ -79,7 +79,7 @@ Como alternativa, el control de versiones de archivos estáticos se puede desact
 
 Finalmente, todas las instancias de Commerce deben estar en modo de producción. Antes de iniciar Varnish, borre la caché en cada instancia. En el Administrador, vaya a **Sistema** > Herramientas > **Administración de caché** y haga clic en **Vaciar caché de Magento**. También puede ejecutar el siguiente comando para borrar la caché:
 
-```bash
+```shell
 bin/magento cache:flush
 ```
 
@@ -92,7 +92,7 @@ Después de volver a compilar, puede instalar el módulo del modo Saint. En gene
 1. Obtenga el código fuente de [módulos Varnish](https://github.com/varnish/varnish-modules). Clone la versión de Git (versión maestra) ya que las versiones 0.9.x contienen un error de código fuente.
 1. Genere el código fuente con autotools:
 
-   ```bash
+   ```shell
    sudo apt-get install libvarnishapi-dev || sudo yum install varnish-libs-devel
    ./bootstrap   # If running from git.
    ./configure

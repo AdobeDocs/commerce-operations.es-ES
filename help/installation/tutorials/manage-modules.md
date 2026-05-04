@@ -1,10 +1,10 @@
 ---
 title: Habilitar o deshabilitar módulos
-description: Siga estos pasos para administrar los módulos de Adobe Commerce.
+description: Obtenga información sobre cómo habilitar, deshabilitar y comprobar el estado de los módulos de Adobe Commerce desde la línea de comandos mediante el estado del módulo y las opciones relacionadas.
 exl-id: 7155950a-a66a-4254-a71c-1a9aeab47606
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
 workflow-type: tm+mt
-source-wordcount: '572'
+source-wordcount: '605'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Este comando no tiene requisitos previos.
 
 Utilice el siguiente comando para ver una lista de los módulos activados y desactivados:
 
-```bash
+```shell
 bin/magento module:status [--enabled] [--disabled] <module-list>
 ```
 
@@ -29,17 +29,17 @@ Donde
 
 >[!NOTE]
 >
->No puede habilitar ni deshabilitar módulos directamente en proyectos en la nube. Debe ejecutar estos comandos localmente y, a continuación, insertar los cambios en el archivo `app/etc/config.php` para un entorno. Vea [Flujo de trabajo de proyecto profesional: flujo de trabajo de implementación](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html?lang=es#deployment-workflow).
+>No puede habilitar ni deshabilitar módulos directamente en proyectos en la nube. Debe ejecutar estos comandos localmente y, a continuación, insertar los cambios en el archivo `app/etc/config.php` para un entorno. Vea [Flujo de trabajo de proyecto profesional: flujo de trabajo de implementación](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html#deployment-workflow).
 
 ## Módulo habilitado, deshabilitar
 
 Para activar o desactivar los módulos disponibles, utilice el siguiente comando:
 
-```bash
+```shell
 bin/magento module:enable [-c|--clear-static-content] [-f|--force] [--all] <module-list>
 ```
 
-```bash
+```shell
 bin/magento module:disable [-c|--clear-static-content] [-f|--force] [--all] <module-list>
 ```
 
@@ -56,7 +56,7 @@ Donde
 
 Por ejemplo, para deshabilitar el módulo `Magento_Weee`, escriba:
 
-```bash
+```shell
 bin/magento module:disable Magento_Weee
 ```
 
@@ -66,13 +66,13 @@ Para obtener información importante acerca de cómo habilitar y deshabilitar m�
 
 Si ha activado uno o más módulos, ejecute el siguiente comando para actualizar la base de datos:
 
-```bash
+```shell
 bin/magento setup:upgrade
 ```
 
 A continuación, limpie la caché:
 
-```bash
+```shell
 bin/magento cache:clean
 ```
 

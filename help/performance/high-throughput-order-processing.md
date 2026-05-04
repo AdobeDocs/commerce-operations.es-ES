@@ -3,9 +3,9 @@ title: Prácticas recomendadas de rendimiento de Checkout
 description: Obtenga información acerca de las prácticas recomendadas de rendimiento de cierre de compra en Adobe Commerce. Descubra estrategias de optimización y directrices de implementación.
 feature: Best Practices, Orders
 exl-id: dc2d0399-0d7f-42d8-a6cf-ce126e0b052d
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 5d94ecbe32b94acf9604db9618a9ae6eb1ae04f9
 workflow-type: tm+mt
-source-wordcount: '1122'
+source-wordcount: '1299'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Prácticas recomendadas de rendimiento de Checkout
 
-El proceso de [pago y envío](https://experienceleague.adobe.com/es/docs/commerce-admin/stores-sales/point-of-purchase/checkout/checkout-process) en Adobe Commerce es un aspecto crítico de la experiencia de la tienda. Se basa en las capacidades integradas de [carrito](https://experienceleague.adobe.com/es/docs/commerce-admin/start/storefront/storefront#shopping-cart) y [cierre de compra](https://experienceleague.adobe.com/es/docs/commerce-admin/start/storefront/storefront#checkout-page).
+El proceso de [pago y envío](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/checkout/checkout-process) en Adobe Commerce es un aspecto crítico de la experiencia de la tienda. Se basa en las capacidades integradas de [carrito](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront#shopping-cart) y [cierre de compra](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront#checkout-page).
 
 El rendimiento es clave para mantener una buena experiencia de usuario. Puede optimizar el rendimiento del cierre de compra configurando las siguientes opciones para **procesamiento de pedidos de alto rendimiento**:
 
@@ -26,7 +26,7 @@ Las opciones de configuración AsyncOrder, Cálculo de totales diferidos y Compr
 
 >[!NOTE]
 >
->No utilice código PHP personalizado para personalizar las capacidades integradas de carrito y pago. Además de los posibles problemas de rendimiento, el uso de código PHP personalizado puede resultar en actualizaciones complejas y desafíos de mantenimiento. Estos problemas aumentan el coste total de propiedad. Si no se puede evitar la personalización del carro de compras y el cierre de compra basados en PHP, use solo las extensiones aprobadas por [Adobe Commerce Marketplace](https://commercemarketplace.adobe.com/). Todas las extensiones de Marketplace están sujetas a [amplia revisión](https://developer.adobe.com/commerce/marketplace/guides/sellers/extension-quality-program/) para comprobar que cumplen con los estándares de codificación y las prácticas recomendadas de Adobe Commerce.
+>No utilice código PHP personalizado para personalizar las capacidades integradas de carrito y pago. Además de los posibles problemas de rendimiento, el uso de código PHP personalizado puede resultar en actualizaciones complejas y desafíos de mantenimiento. Estos problemas aumentan el coste total de propiedad. Si no se puede evitar la personalización del carro de compras y el cierre de compra basados en PHP, use solo las extensiones aprobadas por [Adobe Commerce Marketplace](https://commercemarketplace.adobe.com/). Todas las extensiones de Marketplace están sujetas a [amplia revisión](https://developer.adobe.com/commerce/marketplace/guides/sellers/extension-quality-program) para comprobar que cumplen con los estándares de codificación y las prácticas recomendadas de Adobe Commerce.
 
 ## Colocación de pedido asincrónica
 
@@ -43,7 +43,7 @@ Use la interfaz de línea de comandos para habilitar estas características o ed
 
 Puede habilitar AsyncOrder mediante la interfaz de línea de comandos:
 
-```bash
+```shell
 bin/magento setup:config:set --checkout-async 1
 ```
 
@@ -66,7 +66,7 @@ Consulte [AsyncOrder](https://developer.adobe.com/commerce/php/module-reference/
 
 Puede deshabilitar AsyncOrder mediante la interfaz de línea de comandos:
 
-```bash
+```shell
 bin/magento setup:config:set --checkout-async 0
 ```
 
@@ -132,7 +132,7 @@ El cálculo total diferido está **deshabilitado** de manera predeterminada. Use
 
 Puede habilitar DeferredTotalCalculation mediante la interfaz de línea de comandos:
 
-```bash
+```shell
 bin/magento setup:config:set --deferred-total-calculating 1
 ```
 
@@ -149,7 +149,7 @@ El comando `set` escribe lo siguiente en el archivo `app/etc/env.php`:
 
 Puede deshabilitar DeferredTotalCalculation mediante la interfaz de línea de comandos:
 
-```bash
+```shell
 bin/magento setup:config:set --deferred-total-calculating 0
 ```
 
@@ -174,13 +174,13 @@ La configuración global _Habilitar inventario al cargar el carro_ determina si 
 
 Cuando está desactivada, la comprobación de inventario no se produce al añadir un producto al carro de compras. Si se omite esta comprobación de inventario, algunos escenarios sin existencias podrían generar otros tipos de errores. Se realiza una comprobación de inventario _siempre_ en el paso de colocación de pedidos, incluso cuando está deshabilitada.
 
-**Habilitar la comprobación de inventario al cargar el carro** está habilitada (establecida en Sí) de manera predeterminada. Para deshabilitar la comprobación de inventario al cargar el carro de compras, establezca **[!UICONTROL Enable Inventory Check On Cart Load]** en `No` en la sección **Tiendas** > **Configuración** > **Catálogo** > **Inventario** > **Opciones de Stock** de la IU de administración. Consulte [Configurar opciones globales](https://experienceleague.adobe.com/es/docs/commerce-admin/inventory/configuration/global-options) y [Inventario de catálogo](https://experienceleague.adobe.com/es/docs/commerce-admin/inventory/guide-overview) en la _Guía del usuario_.
+**Habilitar la comprobación de inventario al cargar el carro** está habilitada (establecida en Sí) de manera predeterminada. Para deshabilitar la comprobación de inventario al cargar el carro de compras, establezca **[!UICONTROL Enable Inventory Check On Cart Load]** en `No` en la sección **Tiendas** > **Configuración** > **Catálogo** > **Inventario** > **Opciones de Stock** de la IU de administración. Consulte [Configurar opciones globales](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/configuration/global-options) y [Inventario de catálogo](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/guide-overview) en la _Guía del usuario_.
 
 ## Equilibrio de carga
 
 Puede ayudar a equilibrar la carga entre los distintos nodos activando conexiones secundarias para la base de datos MySQL y la instancia de Redis.
 
-Adobe Commerce puede leer varias bases de datos o instancias de Redis de forma asincrónica. Si usa Commerce en la infraestructura de la nube, puede configurar las conexiones secundarias editando los valores de [MYSQL_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy#mysql_use_slave_connection) y [REDIS_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy#redis_use_slave_connection) en el archivo `.magento.env.yaml`. Solo un nodo necesita controlar el tráfico de lectura-escritura, por lo que al establecer las variables en `true` se crea una conexión secundaria para el tráfico de solo lectura. Establezca los valores en `false` para quitar cualquier matriz de conexión de solo lectura existente del archivo `env.php`.
+Adobe Commerce puede leer varias bases de datos o instancias de Redis de forma asincrónica. Si usa Commerce en la infraestructura de la nube, puede configurar las conexiones secundarias editando los valores de [MYSQL_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy#mysql_use_slave_connection) y [REDIS_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy#redis_use_slave_connection) en el archivo `.magento.env.yaml`. Solo un nodo necesita controlar el tráfico de lectura-escritura, por lo que al establecer las variables en `true` se crea una conexión secundaria para el tráfico de solo lectura. Establezca los valores en `false` para quitar cualquier matriz de conexión de solo lectura existente del archivo `env.php`.
 
 Ejemplo del archivo `.magento.env.yaml`:
 

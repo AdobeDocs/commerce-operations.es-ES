@@ -8,9 +8,9 @@ feature: Best Practices, Cache
 feature-set: Commerce
 topic: Performance
 exl-id: 8b3c9167-d2fa-4894-af45-6924eb983487
-source-git-commit: 381d58d5fc9844aca88239e8e7ac39151dfc766c
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '1909'
+source-wordcount: '2071'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Utilice estas recomendaciones para configurar Redis o Valkey para el almacenamie
 
 >[!NOTE]
 >
->Para Commerce en entornos de infraestructura en la nube, compruebe que está usando la última versión del paquete `ece-tools`. Si no es así, [actualice a la versión más reciente](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html?lang=es). Puede comprobar la versión instalada en su entorno local mediante el comando CLI `composer show magento/ece-tools`.
+>Para Commerce en entornos de infraestructura en la nube, compruebe que está usando la última versión del paquete `ece-tools`. Si no es así, [actualice a la versión más reciente](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html). Puede comprobar la versión instalada en su entorno local mediante el comando CLI `composer show magento/ece-tools`.
 
 ## Configuración de la caché L2
 
@@ -48,7 +48,7 @@ stage:
     REDIS_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
 ```
 
-Para obtener información sobre la configuración del entorno en la infraestructura en la nube, consulte la referencia de configuración [`REDIS_BACKEND`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=es#redis_backend) en la _Guía de Commerce en la infraestructura en la nube_.
+Para obtener información sobre la configuración del entorno en la infraestructura en la nube, consulte la referencia de configuración [`REDIS_BACKEND`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_backend) en la _Guía de Commerce en la infraestructura en la nube_.
 
 Para instalaciones locales, consulte [Configurar el almacenamiento en caché de la página Redis](../../../configuration/cache/redis-pg-cache.md#configure-redis-page-caching) en la _Guía de configuración_.
 
@@ -62,7 +62,7 @@ stage:
     VALKEY_BACKEND: '\Magento\Framework\Cache\Backend\RemoteSynchronizedCache'
 ```
 
-Para obtener información sobre la configuración del entorno en la infraestructura en la nube, consulte la referencia de configuración [`VALKEY_BACKEND`](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend) en la _Guía de Commerce en la infraestructura en la nube_.
+Para obtener información sobre la configuración del entorno en la infraestructura en la nube, consulte la referencia de configuración [`VALKEY_BACKEND`](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend) en la _Guía de Commerce en la infraestructura en la nube_.
 
 Para instalaciones locales, consulte [Configurar Valkey](../../../configuration/cache/config-valkey.md) en la _Guía de configuración_.
 
@@ -123,7 +123,7 @@ Lo ideal es que el uso de la memoria caché L2 se estabilice por debajo del umbr
 
 Puede comprobar el uso de la memoria de almacenamiento en caché L2 en cada nodo del clúster ejecutando el siguiente comando CLI y revisando la línea `/dev/shm`.
 
-```bash
+```shell
 df -h /dev/shm
 ```
 
@@ -145,7 +145,7 @@ stage:
     REDIS_USE_SLAVE_CONNECTION: true
 ```
 
-Para obtener información sobre la configuración del entorno en la infraestructura de Commerce Cloud, consulte [REDIS_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=es#redis_use_slave_connection) en la _Guía de infraestructura de Commerce en la nube_.
+Para obtener información sobre la configuración del entorno en la infraestructura de Commerce Cloud, consulte [REDIS _USE_ SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_use_slave_connection) en la _Guía de infraestructura de Commerce en la nube_.
 
 Para las instalaciones locales de Adobe Commerce, configure la nueva implementación de caché de Redis con los comandos `bin/magento setup`. Consulte [Usar Redis para la caché predeterminada](../../../configuration/cache/redis-pg-cache.md#configure-redis-page-caching) en la _Guía de configuración_.
 
@@ -159,7 +159,7 @@ stage:
     VALKEY_USE_SLAVE_CONNECTION: true
 ```
 
-Para obtener información sobre la configuración del entorno en la infraestructura de Commerce Cloud, consulte [VALKEY_USE_SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=es#valkey_use_slave_connection) en la _Guía de infraestructura de Commerce en la nube_.
+Para obtener información sobre la configuración del entorno en la infraestructura de Commerce Cloud, consulte [VALKEY _USE_ SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#valkey_use_slave_connection) en la _Guía de infraestructura de Commerce en la nube_.
 
 Para las instalaciones locales de Adobe Commerce, configure la nueva implementación de caché de Valkey con los comandos `bin/magento setup`. Consulte [Configurar Valkey](../../../configuration/cache/config-valkey.md) en la _Guía de configuración_.
 
@@ -305,7 +305,7 @@ stage:
 
 >[!NOTE]
 >
->El tipo de caché `full_page` no es relevante para los proyectos de Adobe Commerce en la nube porque usan [Fastly](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/cdn/fastly).
+>El tipo de caché `full_page` no es relevante para los proyectos de Adobe Commerce en la nube porque usan [Fastly](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly).
 
 Para instalaciones locales, consulte [Opciones de caché antiguas](../../../configuration/cache/level-two-cache.md#stale-cache-options) en la _Guía de configuración_.
 
@@ -490,13 +490,13 @@ Siga los pasos a continuación para aprovisionar una instancia dedicada para las
 
 1. Solicite una nueva instancia de Redis dedicada a sesiones en entornos de producción y ensayo.
 
-   Enviar un [ticket de soporte de Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=es#submit-ticket). Incluir los archivos de configuración actualizados de `.magento/services.yaml` y `.magento.app.yaml`.
+   Enviar un [ticket de soporte de Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket). Incluir los archivos de configuración actualizados de `.magento/services.yaml` y `.magento.app.yaml`.
 
    Esta actualización no provoca ningún tiempo de inactividad, pero requiere una implementación para activar el nuevo servicio.
 
 1. Compruebe que la nueva instancia se esté ejecutando y anote el número de puerto.
 
-   ```bash
+   ```shell
    echo $MAGENTO_CLOUD_RELATIONSHIPS | base64 -d | json_pp
    ```
 
@@ -565,13 +565,13 @@ Siga los pasos a continuación para aprovisionar una instancia dedicada para las
 
 1. Solicite una nueva instancia de Valkey dedicada a sesiones en entornos de producción y ensayo.
 
-   Enviar un [ticket de soporte de Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=es#submit-ticket). Incluir los archivos de configuración actualizados de `.magento/services.yaml` y `.magento.app.yaml`.
+   Enviar un [ticket de soporte de Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket). Incluir los archivos de configuración actualizados de `.magento/services.yaml` y `.magento.app.yaml`.
 
    Esta actualización no provoca ningún tiempo de inactividad, pero requiere una implementación para activar el nuevo servicio.
 
 1. Compruebe que la nueva instancia se esté ejecutando y anote el número de puerto.
 
-   ```bash
+   ```shell
    echo $MAGENTO_CLOUD_RELATIONSHIPS | base64 -d | json_pp
    ```
 
@@ -625,7 +625,7 @@ stage:
 
 ## Habilitar la liberación asincrónica
 
-Para habilitar `lazyfree` en Adobe Commerce en la infraestructura en la nube, envíe un [ticket de soporte de Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=es#submit-ticket) en el que se solicite que se aplique la siguiente configuración de Redis o Valkey a sus entornos:
+Para habilitar `lazyfree` en Adobe Commerce en la infraestructura en la nube, envíe un [ticket de soporte de Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) en el que se solicite que se aplique la siguiente configuración de Redis o Valkey a sus entornos:
 
 ```text
 lazyfree-lazy-eviction yes
@@ -647,7 +647,7 @@ Cuando `lazyfree` está habilitado, Redis o Valkey descargan la reclamación de 
 
 ## Habilitar E/S multiproceso
 
-Para habilitar el subprocesamiento de E/S de Redis en Adobe Commerce en la infraestructura en la nube, envíe un [ticket de soporte de Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=es#submit-ticket) solicitando la configuración de subprocesamiento de E/S a continuación. Esta configuración puede mejorar el rendimiento descargando lecturas y escrituras de socket y analizando comandos desde el hilo principal, a costa de un mayor uso de CPU. Valide en y supervise sus hosts.
+Para habilitar el subprocesamiento de E/S de Redis en Adobe Commerce en la infraestructura en la nube, envíe un [ticket de soporte de Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) solicitando la configuración de subprocesamiento de E/S a continuación. Esta configuración puede mejorar el rendimiento descargando lecturas y escrituras de socket y analizando comandos desde el hilo principal, a costa de un mayor uso de CPU. Valide en y supervise sus hosts.
 
 >[!BEGINTABS]
 

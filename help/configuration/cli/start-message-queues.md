@@ -2,9 +2,9 @@
 title: Iniciar consumidores de cola de mensajes
 description: Obtenga información sobre cómo iniciar consumidores de colas de mensajes para operaciones asincrónicas de Adobe Commerce. Descubra la configuración de la funcionalidad B2B y la administración de consumidores.
 exl-id: fd6edb24-8ebe-4b67-8a03-6cc759b60fa8
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '189'
+source-wordcount: '191'
 ht-degree: 0%
 
 ---
@@ -17,19 +17,19 @@ Debe iniciar un [consumidor de cola de mensajes](../queues/consumers.md) para ha
 
 Para ver una lista de todos los consumidores:
 
-```bash
+```shell
 bin/magento queue:consumers:list
 ```
 
 Para iniciar consumidores de cola de mensajes:
 
-```bash
+```shell
 bin/magento queue:consumers:start [--max-messages=<value>] [--batch-size=<value>] [--single-thread] [--area-code=<value>] [--multi-process=<value>] <consumer_name>
 ```
 
 Después de consumir todos los mensajes disponibles, el comando finaliza. Puede volver a ejecutar el comando manualmente o con un trabajo cron. También puede ejecutar varias instancias del comando `magento queue:consumers:start` para procesar colas de mensajes grandes. Por ejemplo, puede anexar `&` al comando para ejecutarlo en segundo plano, volver a un símbolo del sistema y continuar ejecutando comandos:
 
-```bash
+```shell
 bin/magento queue:consumers:start <consumer_name> &
 ```
 

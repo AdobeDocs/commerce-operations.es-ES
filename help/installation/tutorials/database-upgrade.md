@@ -2,7 +2,7 @@
 title: Actualizar el esquema y los datos de la base de datos
 description: Siga estos pasos para actualizar el esquema de la base de datos de Adobe Commerce.
 exl-id: bef04561-6c6b-4636-a8ab-a1ade44f5a8f
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
 source-wordcount: '169'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Cada vez que realice una acción que provoque cambios en el esquema o los datos 
 
 1. Inicie la actualización:
 
-   ```bash
+   ```shell
    bin/magento setup:upgrade [--keep-generated]
    ```
 
@@ -35,6 +35,6 @@ Cada vez que realice una acción que provoque cambios en el esquema o los datos 
 
 1. Limpie la caché:
 
-   ```bash
+   ```shell
    bin/magento cache:clean
    ```

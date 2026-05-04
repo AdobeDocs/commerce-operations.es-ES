@@ -3,9 +3,9 @@ title: Revertir base de datos dividida
 description: Revertir de una implementación de base de datos dividida en desuso a una implementación de base de datos única.
 feature: Configuration, Storage
 exl-id: 2ece24e0-1f85-445a-8e22-fb10611403ff
-source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
+source-git-commit: f9a135fc63574ccbecd3f564a87fc5c4ac03f009
 workflow-type: tm+mt
-source-wordcount: '254'
+source-wordcount: '240'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 {{ee-only}}
 
-Para los clientes de Adobe Commerce que han implementado [Split Database](multi-master.md), en el siguiente tema se describe cómo revertir o volver a migrar a una sola base de datos. Recomendamos a los comerciantes de Adobe Commerce que actualmente usan la base de datos dividida y planean actualizar a la versión 2.4.2 y posteriores y revisar estos pasos, así como nuestro [anuncio](https://community.magento.com/t5/Magento-DevBlog/Deprecation-of-Split-Database-in-Magento-Commerce/ba-p/465187) sobre la obsolescencia planeada de la base de datos dividida.
+Para los clientes de Adobe Commerce que han implementado [Split Database](multi-master.md), en el siguiente tema se describe cómo revertir o volver a migrar a una sola base de datos. Recomendamos que los comerciantes de Adobe Commerce que actualmente utilizan la base de datos dividida y planean actualizar a la versión 2.4.2 y posteriores revisen estos pasos.
 
 La reversión de una base de datos dividida a una única base de datos implica la creación de copias de seguridad de las bases de datos `magento_quote` y `magento_sales` antes de cargarlas en la única base de datos `magento_main`.
 
@@ -22,44 +22,44 @@ En este ejemplo, iniciamos sesión en las tres bases de datos, que están instal
 
 1. Crear una copia de seguridad de la base de datos `magento_quote`:
 
-   ```bash
+   ```shell
    mysqldump -h "magento2-mysql" -u root -p magento_quote > ./quote.sql
    ```
 
 1. Crear una copia de seguridad de la base de datos `magento_sales`:
 
-   ```bash
+   ```shell
    mysqldump -h "magento2-mysql" -u root -p magento_sales > ./sales.sql
    ```
 
 1. Cargar la base de datos `magento_quote` en la base de datos `magento_main`:
 
-   ```bash
+   ```shell
    mysql -h "magento2-mysql" -u root -p magento_main < ./quote.sql
    ```
 
 1. Cargar la base de datos `magento_sales` en la base de datos `magento_main`:
 
-   ```bash
+   ```shell
    mysql -h "magento2-mysql" -u root -p magento_main < ./sales.sql
    ```
 
 1. Soltar la base de datos `magento_sales`:
 
-   ```bash
+   ```shell
    mysql -h "magento2-mysql" -u root -p -e "DROP DATABASE magento_sales;"
    ```
 
 1. Soltar la base de datos `magento_quote`:
 
-   ```bash
+   ```shell
    mysql -h "magento2-mysql" -u root -p -e "DROP DATABASE magento_quote;"
    ```
 
 1. Quite la configuración de implementación para `checkout` y `sales` en las secciones `connections` y `resources` del archivo `env.php`.
 1. Restaurar claves externas:
 
-   ```bash
+   ```shell
    bin/magento setup:upgrade
    ```
 

@@ -2,9 +2,9 @@
 title: '[!DNL Upgrade Compatibility Tool] requisitos'
 description: Compruebe que el sistema cumple los requisitos necesarios para ejecutar  [!DNL Upgrade Compatibility Tool]  en una interfaz de línea de comandos para el proyecto de Adobe Commerce.
 exl-id: b8af2e07-3d28-4937-bb88-b0a1c88a2938
-source-git-commit: 40d850add2ef8c51e9192758135768306b163780
+source-git-commit: f9a135fc63574ccbecd3f564a87fc5c4ac03f009
 workflow-type: tm+mt
-source-wordcount: '273'
+source-wordcount: '315'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 {{commerce-only}}
 
-Debe tener [claves de acceso de Adobe Commerce](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-information/#access-keys) para descargar y usar [!DNL Upgrade Compatibility Tool]. Agregue sus claves de acceso de Adobe Commerce al archivo `auth.json`, que se encuentra en `~/.composer` de forma predeterminada.
+Debe tener [claves de acceso de Adobe Commerce](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-information#access-keys) para descargar y usar [!DNL Upgrade Compatibility Tool]. Agregue sus claves de acceso de Adobe Commerce al archivo `auth.json`, que se encuentra en `~/.composer` de forma predeterminada.
 
 >[!NOTE]
 >
@@ -44,14 +44,14 @@ Los requisitos mínimos para usar [!DNL Upgrade Compatibility Tool] en una inter
 
 | **Requisitos** | **Restricciones** |
 |----------------|-----------------|
-| Versión de PHP | >= 7,3 |
+| Versión de PHP | >= 7.3 |
 | Compositor | no se conoce ningún requisito. |
-| Node.js | Versiones de Node.js `^12.22.0`, `^14.17.0` o `>=16.0.0` (consulte [Instalar Node.js](https://nodejs.org/en/learn/getting-started/how-to-install-nodejs)) |
+| Node.js | Versiones de Node.js `^12.22.0`, `^14.17.0` o `>=16.0.0` (consulte [Instalar Node.js](https://nodejs.org/en/download)) |
 | Limitaciones de memoria | Al menos 2 GB de RAM. |
 
 [!DNL Upgrade Compatibility Tool] requiere [PCNTL](https://www.php.net/manual/en/book.pcntl.php) y otras extensiones PHP para la ejecución. Compruebe las extensiones PHP necesarias con el comando `composer check-platform-reqs`:
 
-```bash
+```shell
 # Example output of `composer check-platform-reqs` command for UCT 2.2.6 and PHP 7.4:
 
 $ composer check-platform-reqs
@@ -80,4 +80,4 @@ Es necesario que [!DNL Upgrade Compatibility Tool] tenga acceso al código fuent
 
 Si está ejecutando [!DNL Upgrade Compatibility Tool] en una instancia de Adobe Commerce con módulos y archivos grandes, es posible que la herramienta requiera una gran cantidad de RAM (al menos 2 GB).
 
-Ejecute [!DNL Upgrade Compatibility Tool] desde [[!DNL Site-Wide Analysis Tool]](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/integrate-analysis-tool.html?lang=es) para los proyectos de [Adobe Commerce en la nube](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html?lang=es){target=_blank}.
+Ejecute [!DNL Upgrade Compatibility Tool] desde [[!DNL Site-Wide Analysis Tool]](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/integrate-analysis-tool.html) para los proyectos de [Adobe Commerce en la nube](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html){target=_blank}.

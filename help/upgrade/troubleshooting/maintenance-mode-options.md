@@ -2,7 +2,7 @@
 title: Opciones de modo de mantenimiento para la actualización
 description: Cree una página de modo de mantenimiento personalizada que sus clientes vean en su tienda de Adobe Commerce mientras ejecuta una actualización.
 exl-id: 77e6d82d-5cc6-4d14-8b5c-1d2108f27b29
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
 source-wordcount: '379'
 ht-degree: 0%
@@ -72,7 +72,7 @@ Para redirigir el tráfico a una página de mantenimiento personalizada:
 
    Agregue lo siguiente al final de su archivo de configuración de Apache:
 
-   ```
+   ```text
    RewriteEngine On
    RewriteCond %{REMOTE_ADDR} !^192\.0\.2\.110
    RewriteCond %{DOCUMENT_ROOT}/maintenance.html -f
@@ -90,7 +90,7 @@ Para redirigir el tráfico a una página de mantenimiento personalizada:
 
 1. Introduzca el siguiente comando:
 
-   ```bash
+   ```shell
    touch <web server docroot>/maintenance.enable
    ```
 
@@ -144,13 +144,13 @@ Para redirigir el tráfico a una página de mantenimiento personalizada:
 
 1. Introduzca el siguiente comando:
 
-   ```bash
+   ```shell
    touch <magento_root>/maintenance.enable
    ```
 
 1. Vuelva a cargar la configuración de nginx:
 
-   ```bash
+   ```shell
    service nginx reload
    ```
 
@@ -159,6 +159,6 @@ Para redirigir el tráfico a una página de mantenimiento personalizada:
 1. Una vez completada la actualización, elimine `maintenance.enable` o cambie su nombre
 1. Vuelva a cargar la configuración de nginx:
 
-   ```bash
+   ```shell
    service nginx reload
    ```

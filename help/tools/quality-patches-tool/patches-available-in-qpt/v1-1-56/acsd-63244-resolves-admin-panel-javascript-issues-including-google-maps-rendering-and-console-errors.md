@@ -1,13 +1,13 @@
 ---
 title: 'ACSD-63244: resuelva los problemas de JavaScript del panel de administración, incluidos  [!DNL Google Maps] errores de procesamiento y consola'
-description: El parche ACSD-63244 corrige varios problemas de JavaScript en el panel de administración, incluidos problemas con el procesamiento  [!DNL Google Maps] y el error de tipo no capturado recurrente._each no es un error de function en la consola del navegador.
+description: El parche ACSD-63244 corrige varios problemas de JavaScript en el panel de administración, incluidos problemas con  [!DNL Google Maps] procesamiento y errores recurrentes de TypeError this._each no es una función en la consola del explorador.
 feature: Admin Workspace
 role: Admin, Developer
 exl-id: 1985c845-219e-4af4-8f70-62dd57722494
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '338'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Adobe Commerce (todos los métodos de implementación) 2.4.4 - 2.4.7-p3
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
@@ -40,7 +40,7 @@ Adobe Commerce (todos los métodos de implementación) 2.4.4 - 2.4.7-p3
 1. Cargue la IU de administración de Adobe Commerce.
 1. Abra la consola del explorador y ejecute el siguiente script:
 
-   ```
+   ```text
    Object.values([] || {}).forEach((function(e) {  
    e("dd")  
    }));  
@@ -54,7 +54,7 @@ Las funciones de JavaScript disponibles en la biblioteca JS predeterminada se ej
 
 Los errores de JavaScript aparecen en la consola del explorador:
 
-```
+```text
 Uncaught TypeError: this._each is not a function
 ```
 
@@ -63,7 +63,7 @@ Uncaught TypeError: this._each is not a function
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
 * Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía [!DNL Quality Patches Tool].
-* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=es) en la guía Commerce en la infraestructura de la nube.
+* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) en la guía Commerce en la infraestructura de la nube.
 
 ## Lectura relacionada
 

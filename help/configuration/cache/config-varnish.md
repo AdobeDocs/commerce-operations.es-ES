@@ -3,16 +3,16 @@ title: Configuración y uso de Barniz
 description: Aprenda a configurar y utilizar el almacenamiento en caché de Varnish para Adobe Commerce. Descubra las técnicas de aceleración HTTP, almacenamiento de archivos y optimización de rendimiento.
 feature: Configuration, Cache
 exl-id: 57614878-e349-43bb-b22b-1aa321907be1
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+source-git-commit: f9a135fc63574ccbecd3f564a87fc5c4ac03f009
 workflow-type: tm+mt
-source-wordcount: '1042'
+source-wordcount: '1087'
 ht-degree: 0%
 
 ---
 
 # Configurar barniz
 
-[Varnish Cache](https://varnish-cache.org) es un acelerador de aplicaciones web de código abierto (también conocido como _acelerador HTTP_ o _proxy inverso HTTP de almacenamiento en caché_). Varnish almacena (o almacena en caché) archivos o fragmentos de archivos en la memoria, lo que permite a Varnish reducir el tiempo de respuesta y el consumo de ancho de banda de la red en solicitudes futuras y equivalentes. A diferencia de los servidores web como Apache y nginx, Varnish fue diseñado para usarse exclusivamente con el protocolo HTTP.
+[Varnish Cache](https://www.varnish.org/) es un acelerador de aplicaciones web de código abierto (también conocido como _acelerador HTTP_ o _proxy inverso HTTP de almacenamiento en caché_). Varnish almacena (o almacena en caché) archivos o fragmentos de archivos en la memoria, lo que permite a Varnish reducir el tiempo de respuesta y el consumo de ancho de banda de la red en solicitudes futuras y equivalentes. A diferencia de los servidores web como Apache y nginx, Varnish fue diseñado para usarse exclusivamente con el protocolo HTTP.
 
 [Requisitos del sistema](../../installation/system-requirements.md) enumera las versiones compatibles de Barnish.
 
@@ -22,9 +22,9 @@ ht-degree: 0%
 
 Para obtener más información sobre Barniz, consulte:
 
-- [Imagen de barniz grande](https://www.varnish-cache.org/docs/trunk/users-guide/intro.html)
-- [Opciones de inicio de barniz](https://www.varnish-cache.org/docs/trunk/reference/varnishd.html#ref-varnishd-options)
-- [Barniz y rendimiento del sitio web](https://www.varnish-cache.org/docs/trunk/users-guide/performance.html#users-performance)
+- [El cuadro de barniz grande](https://www.varnish.org/docs/users-guide/intro/#users-intro)
+- [Opciones de inicio de barniz](https://www.varnish.org/docs/users-guide/running/#users-running)
+- [Barniz y rendimiento del sitio web](https://www.varnish.org/docs/users-guide/performance/)
 
 ## Diagrama de topología de barniz
 
@@ -61,7 +61,7 @@ El proceso puede resumirse de la siguiente manera:
 
 Sabemos de los siguientes problemas con Varnish:
 
-- [Varnish no admite SSL](https://www.varnish-cache.org/docs/3.0/phk/ssl.html)
+- [El barniz no admite SSL](https://www.varnish-cache.org/docs/3.0/phk/ssl.html)
 
   Como alternativa, utilice la terminación SSL o un proxy de terminación SSL.
 
@@ -69,7 +69,7 @@ Sabemos de los siguientes problemas con Varnish:
 
 - Posible error al instalar Commerce:
 
-  ```
+  ```text
   Error 503 Service Unavailable
   Service Unavailable
   XID: 303394517

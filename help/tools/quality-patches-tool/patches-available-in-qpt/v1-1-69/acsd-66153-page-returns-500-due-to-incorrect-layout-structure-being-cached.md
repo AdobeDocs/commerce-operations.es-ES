@@ -4,13 +4,13 @@ description: Aplique el parche ACSD-66153 para corregir el problema de Adobe Com
 feature: Catalog Management
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 70c7255e369ef366407d539488f0d815eb93f48a
+exl-id: 2d6f47cb-2244-40b6-b1b9-0d03f13adc43
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '342'
+source-wordcount: '360'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-66153: La página devuelve un error 500 debido a una estructura de diseño incorrecta en caché
 
@@ -28,7 +28,7 @@ El parche ACSD-66153 corrige el problema en el que una página devuelve un códi
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
@@ -44,7 +44,7 @@ Una página devuelve un error 500 debido a una estructura de diseño incorrecta 
 1. Abrir **[!UICONTROL two terminal windows]**:
    1. **Terminal 1**: Limpie continuamente la caché de diseño:
 
-      ```
+      ```shell
       for i in {1..200}; do
         bin/magento cache:clean layout
       done
@@ -52,7 +52,7 @@ Una página devuelve un error 500 debido a una estructura de diseño incorrecta 
 
    1. **Terminal 2**: simular solicitudes simultáneas en la página de categoría:
 
-      ```
+      ```shell
       for i in {1..200}; do
         curl -s -o /dev/null -w "Request $i: HTTP %{http_code}\n""http://your_magento_base_url/shop.html?req=$i"
       done
@@ -60,7 +60,7 @@ Una página devuelve un error 500 debido a una estructura de diseño incorrecta 
 
 1. Algunas solicitudes fallan aleatoriamente con un código de estado 500 y `var/log/support_report.log` muestra el siguiente error:
 
-   ```
+   ```yaml
    report.CRITICAL: The element with the "root" ID wasn't found. Verify the ID and try again. [] []
    ```
 
@@ -77,7 +77,7 @@ Algunas solicitudes devuelven de forma intermitente 500 Error interno del servid
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
 * Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía [!DNL Quality Patches Tool].
-* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=es) en la guía Commerce en la infraestructura de la nube.
+* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) en la guía Commerce en la infraestructura de la nube.
 
 ## Lectura relacionada
 

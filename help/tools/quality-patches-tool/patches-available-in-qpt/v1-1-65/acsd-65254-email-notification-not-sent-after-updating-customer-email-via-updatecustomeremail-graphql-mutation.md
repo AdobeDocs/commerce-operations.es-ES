@@ -5,9 +5,9 @@ feature: GraphQL, User Account
 role: Admin, Developer
 type: Troubleshooting
 exl-id: a97daceb-98f6-4bb8-9847-692af700c0fd
-source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '353'
+source-wordcount: '369'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ El parche ACSD-65254 corrige el problema por el que las notificaciones por corre
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
@@ -38,7 +38,7 @@ No se enviaron notificaciones por correo electrónico a los clientes después de
 
 1. Crear usuario con la siguiente mutación:
 
-   ```
+   ```graphql
    mutation {
        createCustomer(
            input: {
@@ -58,7 +58,7 @@ No se enviaron notificaciones por correo electrónico a los clientes después de
 
 1. Genere un token para el usuario creado anteriormente y utilícelo como token de portador:
 
-   ```
+   ```graphql
    mutation {
    generateCustomerToken(email: "test@test.com", password: "Admin@123") {
        token
@@ -68,7 +68,7 @@ No se enviaron notificaciones por correo electrónico a los clientes después de
 
 1. Intente actualizar el correo electrónico del usuario creado anteriormente con el último token de portador creado:
 
-   ```
+   ```graphql
    mutation {
        updateCustomerEmail(email: "test+updated@test.com", password: "Admin@123") {
            customer {
@@ -91,7 +91,7 @@ Solo se envía un correo electrónico de suscripción a la nueva dirección; no 
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
 * Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía [!DNL Quality Patches Tool].
-* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=es) en la guía Commerce en la infraestructura de la nube.
+* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) en la guía Commerce en la infraestructura de la nube.
 
 ## Lectura relacionada
 

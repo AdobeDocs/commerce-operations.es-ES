@@ -3,9 +3,9 @@ title: Configurar palabras de parada de búsqueda
 description: Obtenga información sobre cómo administrar palabras de detención para Adobe Commerce mediante archivos CSV.
 feature: Configuration, Search
 exl-id: 75320868-9939-4a6e-8dbb-73ca68c9f0ee
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '616'
+source-wordcount: '656'
 ht-degree: 0%
 
 ---
@@ -20,10 +20,10 @@ Debe administrar las palabras de detención mediante archivos CSV ubicados en el
 
 Para obtener más información sobre cómo Elasticsearch y OpenSearch utilizan palabras de parada, consulte los siguientes recursos:
 
-- [Palabras de parada: rendimiento frente a precisión](https://www.elastic.co/guide/en/elasticsearch/guide/current/stopwords.html)
-- [Ventajas e inconvenientes de las palabras clave](https://www.elastic.co/guide/en/elasticsearch/guide/current/pros-cons-stopwords.html)
-- [Usar palabras de detención](https://www.elastic.co/guide/en/elasticsearch/guide/current/using-stopwords.html)
-- [Palabras de parada y rendimiento](https://www.elastic.co/guide/en/elasticsearch/guide/current/stopwords-performance.html)
+- [Palabras clave: Rendimiento frente a precisión](https://www.elastic.co/guide/en/elasticsearch/guide/current/stopwords.html)
+- [Ventajas y desventajas de Stopwords](https://www.elastic.co/guide/en/elasticsearch/guide/current/pros-cons-stopwords.html)
+- [Uso de palabras finales](https://www.elastic.co/guide/en/elasticsearch/guide/current/using-stopwords.html)
+- [Palabras clave y rendimiento](https://www.elastic.co/guide/en/elasticsearch/guide/current/stopwords-performance.html)
 
 ## Configurar palabras de parada
 
@@ -51,7 +51,7 @@ La duración predeterminada de la caché del archivo de palabras de parada es de
 
    - Línea de comandos: Como propietario del sistema de archivos, introduzca el siguiente comando:
 
-     ```bash
+     ```shell
      php <magento_root>/bin/magento cache:clean config
      ```
 
@@ -89,7 +89,7 @@ La duración predeterminada de la caché del archivo de palabras de parada es de
 
    - Línea de comandos: Como propietario del sistema de archivos, introduzca el siguiente comando:
 
-     ```bash
+     ```shell
      php <magento_root>/bin/magento magento cache:clean config
      ```
 
@@ -126,7 +126,7 @@ La ubicación depende de cómo haya instalado el software de Commerce. Si ha clo
 
 ## Para cambiar el directorio desde el módulo
 
-1. [Crear un módulo](https://developer.adobe.com/commerce/php/development/build/component-file-structure/)
+1. [Creación de un módulo](https://developer.adobe.com/commerce/php/development/build/component-file-structure/)
 1. En su módulo `etc/di.xml` agregue instrucciones:
 
    ```xml

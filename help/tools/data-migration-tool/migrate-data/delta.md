@@ -3,9 +3,9 @@ title: Migrar cambios
 description: Aprenda a migrar únicamente los datos que han cambiado desde la última migración de datos de Magento 1 con  [!DNL Data Migration Tool].
 exl-id: c300c567-77d3-4c25-8b28-a7ae4ab0092e
 topic: Commerce, Migration
-source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '355'
+source-wordcount: '358'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Consulte la sección [primeros pasos](overview.md#first-steps) para obtener más
 
 Para empezar a migrar cambios incrementales, ejecute:
 
-```bash
+```shell
 bin/magento migrate:delta [-r|--reset] [-a|--auto] {<path to config.xml>}
 ```
 

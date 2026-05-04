@@ -2,16 +2,16 @@
 title: Comprender el ámbito de actualización
 description: Obtenga información acerca de los cambios incompatibles con versiones anteriores en una versión que podrían afectar a los módulos personalizados de Adobe Commerce o a las extensiones de terceros.
 exl-id: dab2a14f-dbf0-422e-afb4-642e2220ec7a
-source-git-commit: 9eeb0e3a1c75b25cc70b092d23f02ebfe355d6bd
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '897'
+source-wordcount: '946'
 ht-degree: 0%
 
 ---
 
 # Comprender el ámbito de la actualización
 
-Revise las [notas de la versión](https://experienceleague.adobe.com/es/docs/commerce-operations/release/notes/overview) para comprender el ámbito de una versión, incluidas las mejoras, las correcciones de errores y los problemas conocidos que podrían afectar a los módulos personalizados y de terceros.
+Revise las [notas de la versión](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview) para comprender el ámbito de una versión, incluidas las mejoras, las correcciones de errores y los problemas conocidos que podrían afectar a los módulos personalizados y de terceros.
 
 ## Cambios incompatibles con versiones anteriores
 
@@ -26,7 +26,7 @@ La nueva directiva de compatibilidad de Adobe Commerce Marketplace garantiza que
 
 ## Módulos personalizados
 
-Todos los módulos personalizados deben comprobarse con la versión de destino a la que desee actualizar. Este es el proceso de actualización que requiere más tiempo y recursos. Al evaluar los módulos personalizados, debe buscar cambios incompatibles con versiones anteriores y tener en cuenta las nuevas prácticas, como la descomposición del controlador. Puede obtener más información sobre esto en [notas de la versión](https://experienceleague.adobe.com/es/docs/commerce-operations/release/notes/overview). Además, asegúrese de seguir las [prácticas recomendadas](https://developer.adobe.com/commerce/php/best-practices/extensions/) para el desarrollo de módulos.
+Todos los módulos personalizados deben comprobarse con la versión de destino a la que desee actualizar. Este es el proceso de actualización que requiere más tiempo y recursos. Al evaluar los módulos personalizados, debe buscar cambios incompatibles con versiones anteriores y tener en cuenta las nuevas prácticas, como la descomposición del controlador. Puede obtener más información sobre esto en [notas de la versión](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview). Además, asegúrese de seguir las [prácticas recomendadas](https://developer.adobe.com/commerce/php/best-practices/extensions/) para el desarrollo de módulos.
 
 ## [!DNL Upgrade Compatibility Tool]
 
@@ -40,7 +40,7 @@ Consulte las secciones siguientes para comenzar con [!DNL Upgrade Compatibility 
 
 Use Composer para descargar la herramienta. Requiere PHP 7.3 o posterior, al menos 2 GB de RAM, Node.js (si está comprobando la compatibilidad con GraphQL) y una licencia de Adobe Commerce.
 
-```bash
+```shell
 composer create-project magento/upgrade-compatibility-tool uct --repository https://repo.magento.com
 ```
 
@@ -48,7 +48,7 @@ composer create-project magento/upgrade-compatibility-tool uct --repository http
 
 Para analizar la instancia y comprobar si hay errores, advertencias y problemas críticos:
 
-```bash
+```shell
 bin/uct upgrade:check <dir> -c <coming version> 
 ```
 
@@ -58,7 +58,7 @@ bin/uct upgrade:check <dir> -c <coming version>
 
 Para identificar los problemas más críticos que debe abordar su equipo:
 
-```bash
+```shell
 bin/uct upgrade:check /path/to/magento/ --ignore-current-compatibility-issues –min-issue-level critical --vanilla-dir /path/to/vanilla/code/ /path/to/magento/app/code/Vendor/
 ```
 

@@ -1,11 +1,11 @@
 ---
 title: Replicación de base de datos
-description: Consulte las ventajas de configurar la replicación de bases de datos.
+description: Obtenga información acerca de los beneficios de replicación de bases de datos para Adobe Commerce, incluida la copia de seguridad, la descarga de análisis y la configuración asincrónica de MySQL esclavo.
 recommendations: noCatalog
 exl-id: 0e41dca0-5a23-4d12-96fe-241c511ae366
-source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
+source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
 workflow-type: tm+mt
-source-wordcount: '166'
+source-wordcount: '194'
 ht-degree: 0%
 
 ---

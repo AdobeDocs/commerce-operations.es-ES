@@ -5,9 +5,9 @@ feature: Customers, Admin Workspace
 role: Admin, Developer
 exl-id: 5423bbd3-75e9-4137-b2d5-3a0ceb3384ad
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '416'
+source-wordcount: '423'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ El parche ACSD-64149 corrige el problema en el que un segmento de cliente con un
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
@@ -38,7 +38,7 @@ Al editar un segmento de cliente existente con una condición en productos dentr
 
 1. Asegúrese de que el consumidor `matchCustomerSegmentProcessor` se está ejecutando:
 
-   ```bash
+   ```shell
    $ bin/magento que:cons:st matchCustomerSegmentProcessor
    ```
 
@@ -62,7 +62,7 @@ El selector **[!UICONTROL Date range]** no debe agregar la hora a la fecha al ed
    * Una fecha solo tiene la fecha, mientras que la otra tiene la fecha y la hora especificadas.
 * El siguiente error aparece en los registros:
 
-  ```
+  ```yaml
   report.CRITICAL: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 2, query was: SELECT `item`.`quote_id` FROM `quote_item` AS `item`
   INNER JOIN `quote` AS `list` ON item.quote_id = list.entity_id WHERE (list.is_active = 1) AND () [] []
   ```

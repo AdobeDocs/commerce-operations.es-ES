@@ -2,9 +2,9 @@
 title: Configurar una conexión de base de datos MySQL remota
 description: Siga estos pasos para configurar una conexión de base de datos remota para instalaciones locales de Adobe Commerce.
 exl-id: 5fe304bd-ff38-4066-a1fd-8937575e4de4
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
 workflow-type: tm+mt
-source-wordcount: '700'
+source-wordcount: '724'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Usar Aurora como base de datos es tan fácil como especificar la base de datos e
 
 Al ejecutar `bin/magento setup:install`, use la información de Aurora en los campos `db-`:
 
-```bash
+```shell
 bin/magento setup:install ... --db-host='database-aurora.us-east-1.rds.amazonaws.com' --db-name='magento2' --db-user='username' --db-password='password' ...
 ```
 
@@ -64,13 +64,13 @@ Para crear una conexión remota:
 
    Para localizarlo, introduzca el siguiente comando:
 
-   ```bash
+   ```shell
    mysql --help
    ```
 
    La ubicación se muestra de forma similar a la siguiente:
 
-   ```
+   ```text
    Default options are read from the following files in the given order:
    /etc/my.cnf /etc/mysql/my.cnf /usr/etc/my.cnf ~/.my.cnf
    ```
@@ -132,13 +132,13 @@ Para conceder acceso a un usuario de base de datos:
 
 En el host del nodo web, introduzca el siguiente comando para comprobar que la conexión funciona:
 
-```bash
+```shell
 mysql -u <local database username> -h <database server ip address> -p
 ```
 
 Si el monitor MySQL se muestra de la siguiente manera, la base de datos está lista para Adobe Commerce:
 
-```
+```text
 Welcome to the MySQL monitor.  Commands end with ; or \g.
 Your MySQL connection id is 213 Server version: 5.6.26 MySQL Community Server (GPL)
 

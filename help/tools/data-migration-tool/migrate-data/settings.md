@@ -3,7 +3,7 @@ title: Configuración de migración de datos
 description: Obtenga información sobre cómo empezar a migrar la configuración de Magento 1 a Magento 2 con  [!DNL Data Migration Tool].
 exl-id: 6fc8285a-9f26-48a5-9034-49a6a1b66b40
 topic: Commerce, Migration
-source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
 source-wordcount: '299'
 ht-degree: 0%
@@ -31,7 +31,7 @@ Consulte la sección [primeros pasos](overview.md#first-steps) para obtener más
 
 Para empezar a migrar la configuración, ejecute:
 
-```bash
+```shell
 bin/magento migrate:settings [-r|--reset] [-a|--auto] {<path to config.xml>}
 ```
 
@@ -58,7 +58,7 @@ Puede ignorar, cambiar el nombre o cambiar las configuraciones del sistema al mi
 
 1. Cambie al siguiente directorio:
 
-   ```bash
+   ```shell
    cd <your application 2 install dir>/vendor/magento/data-migration-tool/etc/<edition-to-edition>
    ```
 
@@ -72,7 +72,7 @@ Puede ignorar, cambiar el nombre o cambiar las configuraciones del sistema al mi
 
 1. Para crear un archivo de `settings.xml` a partir del ejemplo proporcionado, ejecute:
 
-   ```bash
+   ```shell
    cp settings.xml.dist settings.xml
    ```
 

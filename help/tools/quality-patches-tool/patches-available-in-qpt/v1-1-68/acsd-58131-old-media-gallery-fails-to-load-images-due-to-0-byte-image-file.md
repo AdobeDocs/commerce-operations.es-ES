@@ -4,13 +4,13 @@ description: Aplique el parche ACSD-58131 para corregir el problema de Adobe Com
 feature: Media
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: b09749a1e56ab6a7b613135ca252fd69757669d0
+exl-id: 8fdca43d-b79f-4036-8694-de6fa1417a52
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '420'
+source-wordcount: '446'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-58131: la galería de medios antigua no puede cargar imágenes debido a un archivo de imagen de 0 bytes
 
@@ -28,13 +28,13 @@ El parche ACSD-58131 corrige el problema en el que la antigua galería de medios
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
 Cuando se coloca una imagen de 0 bytes en el directorio de la galería de medios, la galería de medios antigua no procesa ninguna imagen. El sistema actualizado ahora omite los archivos de 0 bytes no válidos, muestra las imágenes válidas según lo esperado y registra una advertencia para cada archivo no válido.
 
-```
+```text
 [2024-05-02T14:00:39.616459+00:00] report.WARNING: The image empty2.jpg is invalid and cannot be displayed in the gallery. [] []
 ```
 
@@ -60,7 +60,7 @@ La galería de medios sigue funcionando aunque exista una imagen de 0 bytes (o c
 
 La galería de medios no puede cargar ninguna imagen del directorio `wysiwyg` debido a un error crítico registrado en `var/log/system.log`:
 
-```
+```text
 [2024-03-22T05:00:55.100934+00:00] report.CRITICAL: Exception: Notice: getimagesizefromstring(): Error reading from ! in /app/project/vendor/magento/module-cms/Model/Wysiwyg/Images/Storage.php on line 426 in /app/project/vendor/magento/framework/App/ErrorHandler.php:62
 ```
 
@@ -69,7 +69,7 @@ La galería de medios no puede cargar ninguna imagen del directorio `wysiwyg` de
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
 * Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía [!DNL Quality Patches Tool].
-* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=es) en la guía Commerce en la infraestructura de la nube.
+* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) en la guía Commerce en la infraestructura de la nube.
 
 ## Lectura relacionada
 

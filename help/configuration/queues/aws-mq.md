@@ -1,10 +1,10 @@
 ---
 title: Configuración de la cola de mensajes de Amazon
-description: Obtenga información sobre cómo configurar Commerce para que utilice el servicio AWS MQ.
+description: Aprenda a configurar colas de mensajes de Adobe Commerce para Amazon MQ en env.php, incluidos los requisitos SSL y TLS para conexiones AMQP listas para la nube.
 exl-id: 463e513f-e8d4-4450-845e-312cbf00d843
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
 workflow-type: tm+mt
-source-wordcount: '334'
+source-wordcount: '357'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ Donde:
 
 Después de editar el archivo `env.php`, ejecute el siguiente comando para finalizar la instalación:
 
-```bash
+```shell
 bin/magento setup:upgrade
 ```
 
@@ -82,7 +82,7 @@ Para probar el envío de mensajes de Commerce a [!DNL RabbitMQ]:
 
 1. Inicie el consumidor de cola de mensajes `async.operations.all`.
 
-   ```bash
+   ```shell
    bin/magento queue:consumers:start async.operations.all
    ```
 

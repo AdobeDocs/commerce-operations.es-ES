@@ -2,9 +2,9 @@
 title: Establecer valores de configuración
 description: Obtenga información sobre cómo establecer valores de configuración y cambiar valores de administración bloqueados en Adobe Commerce. Descubra los comandos y las técnicas de configuración avanzada.
 exl-id: 1dc2412d-50b3-41fb-ab22-3eccbb086302
-source-git-commit: 5e2d11330d3334df36ba8b3d176fbe2d8bfe0486
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '1116'
+source-wordcount: '1122'
 ht-degree: 0%
 
 ---
@@ -78,7 +78,7 @@ Los códigos de ámbito de los sitios web y las vistas de tienda se almacenan en
 
 1. Conéctese a la base de datos de Commerce.
 
-   ```bash
+   ```shell
    mysql -u <Commerce database username> -p
    ```
 
@@ -98,7 +98,7 @@ Los códigos de ámbito de los sitios web y las vistas de tienda se almacenan en
 
    A continuación se muestra un ejemplo:
 
-   ```
+   ```ini
    [mysql]> SELECT * FROM store_website;
    +------------+-------+--------------+------------+------------------+------------+
    | website_id | code  | name         | sort_order | default_group_id | is_default |
@@ -117,13 +117,13 @@ Los códigos de ámbito de los sitios web y las vistas de tienda se almacenan en
 
 **Para establecer valores de configuración específicos del sistema**:
 
-```bash
+```shell
 bin/magento config:set [--scope="..."] [--scope-code="..."] [-le | --lock-env] [-lc | --lock-config] path value
 ```
 
 **Para establecer valores de configuración confidenciales**:
 
-```bash
+```shell
 bin/magento config:sensitive:set [--scope="..."] [--scope-code="..."] path
 ```
 
@@ -161,19 +161,19 @@ A continuación se muestran algunos ejemplos de configuración de una URL base d
 
 Establezca la dirección URL base para el ámbito predeterminado:
 
-```bash
+```shell
 bin/magento config:set web/unsecure/base_url http://example.com/
 ```
 
 Establecer la dirección URL base del sitio web `base`:
 
-```bash
+```shell
 bin/magento config:set --scope=websites --scope-code=base web/unsecure/base_url http://example2.com/
 ```
 
 Establecer la dirección URL base para la vista del almacén `test`:
 
-```bash
+```shell
 bin/magento config:set --scope=stores --scope-code=test web/unsecure/base_url http://example3.com/
 ```
 
@@ -181,7 +181,7 @@ bin/magento config:set --scope=stores --scope-code=test web/unsecure/base_url ht
 
 Si usa la opción `--lock-env` de la siguiente manera, el comando guarda el valor de configuración en `<Commerce base dir>/app/etc/env.php` y deshabilita el campo para editar este valor en el Administrador.
 
-```bash
+```shell
 bin/magento config:set --lock-env --scope=stores --scope-code=default web/unsecure/base_url http://example3.com
 ```
 
@@ -193,7 +193,7 @@ Puede usar la opción `--lock-env` para establecer los valores de configuración
 
 Si usa la opción `--lock-config` de la siguiente manera, el valor de configuración se guarda en `<Commerce base dir>/app/etc/config.php`. El campo para editar este valor en Admin está desactivado.
 
-```bash
+```shell
 bin/magento config:set --lock-config --scope=stores --scope-code=default web/url/use_store 1
 ```
 
@@ -207,7 +207,7 @@ Puede usar `--lock-config` para establecer los valores de configuración si Comm
 
 Opciones de comando:
 
-```bash
+```shell
 bin/magento config:show [--scope[="..."]] [--scope-code[="..."]] path
 ```
 
@@ -215,23 +215,23 @@ donde
 
 - `--scope` es el ámbito de configuración (predeterminado, sitio web, tienda). El valor predeterminado es `default`
 - `--scope-code` es el código de ámbito de configuración (código de sitio web o código de vista de tienda)
-- `path` es la ruta de configuración con el formato first_part/second_part/third_part/etc (_obligatorio_)
+- `path` es la ruta de configuración con el formato first _part/second_ part/third_part/etc (_obligatorio_)
 
 >[!INFO]
 >
->El comando `bin/magento config:show` muestra los valores de cualquier [valor cifrado](../reference/config-reference-sens.md) como una serie de asteriscos: `**&#x200B;**&#x200B;**`.
+>El comando `bin/magento config:show` muestra los valores de cualquier [valor cifrado](../reference/config-reference-sens.md) como una serie de asteriscos: `******`.
 
 ### Ejemplos
 
 **Para mostrar todas las configuraciones guardadas**:
 
-```bash
+```shell
 bin/magento config:show
 ```
 
 Resultado:
 
-```
+```text
 web/unsecure/base_url - http://example.com/
 general/region/display_all - 1
 general/region/state_required - AT,BR,CA,CH,EE,ES,FI,LT,LV,RO,US
@@ -241,50 +241,50 @@ analytics/subscription/enabled - 1
 
 **Para mostrar todas las configuraciones guardadas para el sitio web `base`**:
 
-```bash
+```shell
 bin/magento config:show --scope=websites --scope-code=base
 ```
 
 Resultado:
 
-```
+```text
 web/unsecure/base_url - http://example-for-website.com/
 general/region/state_required - AT,BR,CA
 ```
 
 **Para mostrar la dirección URL base del ámbito predeterminado**:
 
-```bash
+```shell
 bin/magento config:show web/unsecure/base_url
 ```
 
 Resultado:
 
-```
+```text
 web/unsecure/base_url - http://example.com/
 ```
 
 **Para mostrar la dirección URL base del sitio web `base`**:
 
-```bash
+```shell
 bin/magento config:show --scope=websites --scope-code=base web/unsecure/base_url
 ```
 
 Resultado:
 
-```
+```text
 web/unsecure/base_url - http://example-for-website.com/
 ```
 
 **Para mostrar la dirección URL base del almacén `default`**:
 
-```bash
+```shell
 bin/magento config:show --scope=stores --scope-code=default web/unsecure/base_url
 ```
 
 Resultado:
 
-```
+```text
 web/unsecure/base_url - http://example-for-store.com/
 ```
 

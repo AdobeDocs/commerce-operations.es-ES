@@ -1,11 +1,11 @@
 ---
 title: Configurar sistema de compilación
-description: Obtenga información sobre cómo implementar Commerce en un sistema de compilación.
+description: Obtenga información sobre cómo configurar un sistema de compilación para la implementación de Adobe Commerce con control de código fuente, recursos generados y requisitos de contenido estático.
 feature: Configuration, Build, Deploy
 exl-id: f6daf5c6-6d12-46b0-b775-76791bacea53
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
 workflow-type: tm+mt
-source-wordcount: '365'
+source-wordcount: '386'
 ht-degree: 0%
 
 ---
@@ -59,11 +59,11 @@ Para instalar Composer:
 
 1. Introduzca los siguientes comandos:
 
-   ```bash
+   ```shell
    curl -sS https://getcomposer.org/installer | php
    ```
 
-   ```bash
+   ```shell
    mv composer.phar /usr/local/bin/composer
    ```
 
@@ -82,26 +82,26 @@ Para configurar el sistema de compilación:
 
    Si utiliza Git, utilice el siguiente comando:
 
-   ```bash
+   ```shell
    git clone [-b <branch name>] <repository URL>
    ```
 
 1. Cambie al directorio raíz de Commerce e introduzca:
 
-   ```bash
+   ```shell
    composer install
    ```
 
 1. Espere a que se actualicen las dependencias.
 1. Establecer propiedad:
 
-   ```bash
+   ```shell
    chown -R <Commerce file system owner name>:<web server username> .
    ```
 
    Por ejemplo,
 
-   ```bash
+   ```shell
    chown -R commerce-username:apache .
    ```
 
@@ -120,7 +120,7 @@ Para configurar el sistema de compilación:
 1. Guarde los cambios en `.gitignore` y salga del editor de texto.
 1. Si utiliza Git, utilice los siguientes comandos para confirmar el cambio:
 
-   ```bash
+   ```shell
    git add .gitignore && git commit -m "Modify .gitignore for build and production"
    ```
 
@@ -128,7 +128,7 @@ Para configurar el sistema de compilación:
 
 1. El sistema de compilación debe usar [modo predeterminado](../bootstrap/application-modes.md#default-mode) o [modo de desarrollador](../bootstrap/application-modes.md#developer-mode):
 
-   ```bash
+   ```shell
    bin/magento deploy:mode:set <mode>
    ```
 

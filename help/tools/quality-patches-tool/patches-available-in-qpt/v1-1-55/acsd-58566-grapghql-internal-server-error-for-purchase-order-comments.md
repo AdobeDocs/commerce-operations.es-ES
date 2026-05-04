@@ -5,9 +5,9 @@ feature: B2B, Purchase Orders, GraphQL
 role: Admin, Developer
 exl-id: 6d051f57-7a2f-44a5-a1c9-834917ed986c
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '335'
+source-wordcount: '353'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ El parche ACSD-58566 corrige el problema en el que al consultar el campo `create
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
@@ -47,7 +47,7 @@ Se instalan los módulos B2B y se activan los pedidos de empresa y compra.
    1. Realice el pedido con `placePurchaseOrder`.
    1. Agregar un comentario al pedido de compra usando `addPurchaseOrderComment`.
 
-   ```
+   ```graphql
    mutation {
        addPurchaseOrderComment(
            input: { purchase_order_uid: "MQ==", comment: "Looks good to me" }
@@ -74,7 +74,7 @@ El campo `created_at` devuelve la fecha y hora del comentario del pedido de comp
 
 Muestra null en lugar de la fecha `created_at`.
 
-```
+```json
 {
   "errors": [
     {
@@ -103,7 +103,7 @@ Muestra null en lugar de la fecha `created_at`.
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
 * Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía [!DNL Quality Patches Tool].
-* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=es) en la guía Commerce en la infraestructura de la nube.
+* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) en la guía Commerce en la infraestructura de la nube.
 
 ## Lectura relacionada
 

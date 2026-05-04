@@ -3,9 +3,9 @@ title: Recomendaciones de hardware
 description: Obtenga información acerca de las recomendaciones de hardware para obtener un rendimiento óptimo de Adobe Commerce. Descubra los requisitos de CPU, memoria y almacenamiento para las implementaciones de producción.
 feature: Best Practices, Install
 exl-id: ab548c4b-6f56-4409-a4ed-5c959939e04b
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '470'
+source-wordcount: '480'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 [!DNL Commerce] nodos web atienden todas las solicitudes que no se almacenan en caché o que no se pueden almacenar en caché a través de la aplicación. Un núcleo de CPU puede servir alrededor de dos (a veces hasta cuatro) [!DNL Commerce] solicitudes de manera efectiva. Utilice la siguiente ecuación para determinar cuántos nodos/núcleos web necesita para procesar todas las solicitudes entrantes sin ponerlas en cola:
 
-```
+```text
 N[Cores] = (N[Expected Requests] / 2) + N [Expected Cron Processes]
 ```
 

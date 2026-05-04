@@ -2,9 +2,9 @@
 title: Ejecutar las utilidades de soporte
 description: Obtenga información sobre cómo ejecutar utilidades de soporte para solucionar problemas del proyecto de Adobe Commerce. Descubra las herramientas integradas de diagnóstico y asistencia.
 exl-id: 021b795f-e00d-43b5-9cbb-5b57a4795be7
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
 workflow-type: tm+mt
-source-wordcount: '470'
+source-wordcount: '484'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 {{file-system-owner}}
 
-Las utilidades de soporte de Adobe Commerce, también denominadas [Recopilador de datos](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/tools/support#data-collector), permiten a los usuarios recopilar información de solución de problemas acerca del sistema que puede usar nuestro equipo de soporte.
+Las utilidades de soporte de Adobe Commerce, también denominadas [Recopilador de datos](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/support#data-collector), permiten a los usuarios recopilar información de solución de problemas acerca del sistema que puede usar nuestro equipo de soporte.
 
 Adobe Commerce usa estas copias de seguridad, también denominadas _volcados_, para analizar los problemas que requieren acceso al código. A continuación se muestra un escenario típico:
 
@@ -42,7 +42,7 @@ Este comando realiza una copia de seguridad del código y lo comprime en formato
 
 Opciones de comando:
 
-```bash
+```shell
 bin/magento support:backup:code [--name=<file name>] [-o|--output=<path>] [-l|--logs]
 ```
 
@@ -54,7 +54,7 @@ Donde:
 
 Por ejemplo, para crear una copia de seguridad de código con el nombre `/var/www/html/magento2/var/log/mycodebackup.tar.gz`:
 
-```bash
+```shell
 bin/magento support:backup:code --name mycodebackup -o /var/www/html/magento2/var/log
 ```
 
@@ -68,7 +68,7 @@ Este comando realiza una copia de seguridad de la base de datos de Commerce y la
 
 Opciones de comando:
 
-```bash
+```shell
 bin/magento support:backup:db [--name=<name>] [-o|--output=<path>] [-l|--logs] [-i|--ignore-sanitize]
 ```
 
@@ -81,7 +81,7 @@ Donde:
 
 Los datos confidenciales incluyen información del cliente de las siguientes tablas de base de datos:
 
-```
+```text
 'customer_entity',
 'customer_entity_varchar',
 'customer_address_entity',
@@ -100,7 +100,7 @@ Una vez finalizado el comando, proporcione la copia de seguridad de la base de d
 
 Proporcionamos comandos que muestran las rutas a las utilidades requeridas por el Recopilador de datos y la línea de comandos. Puede utilizar estos comandos, por ejemplo, si se muestran errores como los siguientes en Admin o en la línea de comandos:
 
-```
+```text
 Utility lsof not found
 ```
 
@@ -119,7 +119,7 @@ Ejecute los siguientes comandos en el orden mostrado para mostrar las rutas a la
 
 A continuación se muestra un ejemplo:
 
-```
+```text
    gzip => /bin/gzip
    lsof => /usr/sbin/lsof
    mysqldump => /usr/bin/mysqldump

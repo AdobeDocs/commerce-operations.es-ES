@@ -3,9 +3,9 @@ title: Requisitos previos del motor de búsqueda
 description: Siga estos pasos para instalar y configurar el software de motor de búsqueda compatible para las instalaciones locales de Adobe Commerce.
 feature: Install, Search
 exl-id: 44ea638a-7200-4269-be1b-b0851de2c4f4
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '723'
+source-wordcount: '802'
 ht-degree: 0%
 
 ---
@@ -82,16 +82,16 @@ El software relacionado con la seguridad (iptables, SELinux, AppArmor) puede con
 
 Para configurar reglas que permitan la comunicación con el cortafuegos o con SELinux activado, consulte los siguientes recursos:
 
-* [procedimientos de iptables](https://help.ubuntu.com/community/IptablesHowTo)
+* [procedimiento de iptables](https://help.ubuntu.com/community/IptablesHowTo)
 * [Cómo editar reglas iptables (proyecto fedora)](https://fedoraproject.org/wiki/How_to_edit_iptables_rules)
 * [Introducción a SELinux (CentOS.org)](https://www.centos.org)
-* [Wiki de procedimientos para SELinux (CentOS.org)](https://wiki.centos.org/HowTos/SELinux)
+* [Wiki de procedimientos de SELinux (CentOS.org)](https://wiki.centos.org/HowTos/SELinux)
 
 ### Instalación del kit de desarrollo de software de Java
 
 Para determinar si Java ya está instalado, introduzca el siguiente comando:
 
-```bash
+```shell
 java -version
 ```
 
@@ -108,7 +108,7 @@ Ver este [tutorial de Digital Ocean](https://www.digitalocean.com/community/tuto
 
 Asegúrese de instalar el JDK y *no* el JRE.
 
-```bash
+```shell
 yum -y install java-1.8.0-openjdk
 ```
 
@@ -120,11 +120,11 @@ yum -y install java-1.8.0-openjdk
 
 Para instalar JDK 1.8 en Ubuntu, introduzca los siguientes comandos como usuario con privilegios de `root`:
 
-```bash
+```shell
 apt-get -y update
 ```
 
-```bash
+```shell
 apt-get install -y openjdk-8-jdk
 ```
 
@@ -136,24 +136,24 @@ Siga [Instalar Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/refe
 
 Para comprobar que Elasticsearch funciona, introduzca el siguiente comando en el servidor en el que se está ejecutando:
 
-```bash
+```shell
 curl -XGET '<host>:9200/_cat/health?v&pretty'
 ```
 
 Se muestra un mensaje similar al siguiente:
 
-```
+```text
 epoch      timestamp cluster       status node.total node.data shards pri relo init unassign pending_tasks
 1519701563 03:19:23  elasticsearch green           1         1      0   0    0    0        0             0
 ```
 
 Para comprobar que OpenSearch funciona, introduzca los siguientes comandos:
 
-```bash
+```shell
 curl -XGET https://<host>:9200 -u 'admin:admin' --insecure
 ```
 
-```bash
+```shell
 curl -XGET https://<host>:9200/_cat/plugins?v -u 'admin:admin' --insecure
 ```
 

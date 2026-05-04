@@ -3,9 +3,9 @@ title: Configuración del compartimento de AWS S3 para almacenamiento remoto
 description: Configure el proyecto de Commerce para que utilice el servicio de almacenamiento AWS S3 para el almacenamiento remoto.
 feature: Configuration, Storage
 exl-id: e8aeade8-2ec4-4844-bd6c-ab9489d10436
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '406'
 ht-degree: 0%
 
 ---
@@ -28,19 +28,19 @@ ht-degree: 0%
 
 1. Deshabilite el almacenamiento predeterminado de la base de datos.
 
-   ```bash
+   ```shell
    bin/magento config:set system/media_storage_configuration/media_database 0
    ```
 
 1. Configure Commerce para que utilice el contenedor privado. Consulte [Opciones de almacenamiento remoto](remote-storage.md#remote-storage-options) para obtener una lista completa de parámetros.
 
-   ```bash
+   ```shell
    bin/magento setup:config:set --remote-storage-driver="aws-s3" --remote-storage-bucket="<bucket-name>" --remote-storage-region="<region-name>" --remote-storage-prefix="<optional-prefix>" --remote-storage-key=<optional-access-key> --remote-storage-secret=<optional-secret-key> -n
    ```
 
 1. Sincronizar archivos multimedia con almacenamiento remoto.
 
-   ```bash
+   ```shell
    bin/magento remote-storage:sync
    ```
 

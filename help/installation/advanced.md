@@ -2,9 +2,9 @@
 title: Instalación local avanzada
 description: Obtenga información acerca de los escenarios de instalación avanzados para implementaciones locales de Adobe Commerce. Descubra configuraciones complejas y opciones de configuración personalizadas.
 exl-id: e16e750a-e068-4a63-8ad9-62043e2a8231
-source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
+source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
 workflow-type: tm+mt
-source-wordcount: '2484'
+source-wordcount: '2527'
 ht-degree: 0%
 
 ---
@@ -103,7 +103,7 @@ Puede ejecutar los siguientes comandos para buscar los valores de algunos argume
 
 El comando install utiliza el siguiente formato:
 
-```bash
+```shell
 bin/magento setup:install --<option>=<value> ... --<option>=<value>
 ```
 
@@ -119,7 +119,7 @@ Las siguientes opciones especifican la información de usuario y las credenciale
 
 Puede crear el usuario Administrador durante o después de la instalación. Si crea el usuario durante la instalación, se requieren todas las variables de credenciales de administrador. Consulte [Ejemplos de instalaciones de localhost](#sample-localhost-installations).
 
-Las siguientes tablas proporcionan muchos parámetros de instalación disponibles, pero no todos. Para obtener una lista completa, consulte [Referencia de herramientas de la línea de comandos](https://experienceleague.adobe.com/es/docs/commerce-operations/tools/cli-reference/commerce-on-premises).
+Las siguientes tablas proporcionan muchos parámetros de instalación disponibles, pero no todos. Para obtener una lista completa, consulte [Referencia de herramientas de la línea de comandos](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/cli-reference/commerce-on-premises).
 
 | Nombre | Valor | ¿Requerido? |
 |--- |--- |--- |
@@ -133,9 +133,9 @@ Las siguientes tablas proporcionan muchos parámetros de instalación disponible
 
 | Nombre | Valor | ¿Requerido? |
 |--- |--- |--- |
-| `--base-url` | Dirección URL base que se utilizará para obtener acceso al administrador y a la tienda en cualquiera de los siguientes formatos: <br><br>`http[s]://<host or ip>/<your install dir>/`.<br><br>**Nota:** El esquema (http:// o https://) y una barra diagonal son obligatorios.<br><br>`<your install dir>` es la ruta de acceso relativa a docroot en la que se instala el software de Adobe Commerce. Según la configuración del servidor web y los hosts virtuales, la ruta puede ser magento2 o estar en blanco.<br><br>Para acceder a Adobe Commerce o MagenAdobe Commerce, use `http://127.0.0.1/<your install dir>/` o `http://127.0.0.1/<your install dir>/`.<br><br>- `{{base_url}}` que representa una URL base definida por una configuración de host virtual o por un entorno de virtualización como Docker. Por ejemplo, si configura un host virtual con el nombre de host `magento.example.com`, puede instalar el software con `--base-url={{base_url}}` y acceder al administrador con una dirección URL como `http://magento.example.com/admin`. | Sí |
+| `--base-url` | Dirección URL base que se usará para obtener acceso al administrador y a la tienda en cualquiera de los siguientes formatos:<br><br>`http[s]://<host or ip>/<your install dir>/`.<br><br>**Nota:** El esquema (http:// o https://) y una barra diagonal son obligatorios.<br><br>`<your install dir>` es la ruta relativa a docroot en la que se instala el software de Adobe Commerce. Según la configuración del servidor web y los hosts virtuales, la ruta puede ser magento2 o estar en blanco.<br><br>Para acceder a Adobe Commerce o MagenAdobe Commerce, use `http://127.0.0.1/<your install dir>/` o `http://127.0.0.1/<your install dir>/`.<br><br>- `{{base_url}}`, que representa una URL base definida por una configuración de host virtual o por un entorno de virtualización como Docker. Por ejemplo, si configura un host virtual con el nombre de host `magento.example.com`, puede instalar el software con `--base-url={{base_url}}` y acceder al administrador con una dirección URL como `http://magento.example.com/admin`. | Sí |
 | `--backend-frontname` | Identificador uniforme de recursos (URI) para acceder al administrador. Puede omitir este parámetro para permitir que la aplicación genere un URI aleatorio con el siguiente patrón <code>admin_jkhgdfq</code>.<br><br>Recomendamos un URI aleatorio por motivos de seguridad. Un URI aleatorio es más difícil de explotar para los piratas informáticos o para el software malintencionado.<br><br>El URI se muestra al final de la instalación. Puede mostrarlo más adelante en cualquier momento mediante el comando `bin/magento info:adminuri`.<br><br>Si elige introducir un valor, le recomendamos que no utilice una palabra común como admin, backend. El URI de administrador solo puede contener valores alfanuméricos y el carácter de subrayado (`_`). | No |
-| `--db-host` | Use cualquiera de los siguientes:<br><br>- El nombre de host completo o la dirección IP del servidor de base de datos.<br><br>- `localhost` (predeterminado) o `127.0.0.1` si el servidor de la base de datos está en el mismo host que el servidor web.localhost significa que la biblioteca de cliente MySQL utiliza sockets UNIX para conectarse a la base de datos. `127.0.0.1` hace que la biblioteca de cliente use el protocolo TCP. Para obtener más información sobre sockets, consulte la [documentación PHP PDO_MYSQL](https://www.php.net/manual/en/ref.pdo-mysql.php).<br><br>**Nota:** Si lo desea, puede especificar el puerto del servidor de base de datos en su nombre de host como `www.example.com:9000` | Sí |
+| `--db-host` | Use cualquiera de los siguientes:<br><br>- El nombre de host completo o la dirección IP del servidor de base de datos.<br><br>- `localhost` (predeterminado) o `127.0.0.1` si el servidor de base de datos está en el mismo host que el servidor web.localhost significa que la biblioteca de cliente de MySQL utiliza sockets UNIX para conectarse a la base de datos. `127.0.0.1` hace que la biblioteca de cliente use el protocolo TCP. Para obtener más información acerca de los sockets, vea la [documentación PHP PDO_MYSQL](https://www.php.net/manual/en/ref.pdo-mysql.php).<br><br>**Nota:** Si lo desea, puede especificar el puerto del servidor de base de datos en su nombre de host, como `www.example.com:9000` | Sí |
 | `--db-name` | Nombre de la instancia de base de datos en la que desea instalar las tablas de base de datos.<br><br>El valor predeterminado es `magento2`. | Sí |
 | `--db-user` | Nombre de usuario del propietario de la instancia de base de datos.<br><br>El valor predeterminado es `root`. | Sí |
 | `--db-password` | Contraseña del propietario de la instancia de base de datos. | Sí |
@@ -146,12 +146,12 @@ Las siguientes tablas proporcionan muchos parámetros de instalación disponible
 | `--language` | Código de idioma que se utilizará en la administración y en la tienda. (Si aún no lo ha hecho, puede ver la lista de códigos de idioma al escribir `bin/magento info:language:list` desde el directorio bin.) | No |
 | `--currency` | Moneda predeterminada que se utilizará en la tienda. (Si aún no lo ha hecho, puede ver la lista de monedas especificando `bin/magento info:currency:list` desde el directorio bin.) | No |
 | `--timezone` | Zona horaria predeterminada que se utilizará en la administración y en la tienda. (Si aún no lo ha hecho, puede ver la lista de zonas horarias escribiendo `bin/magento info:timezone:list` desde el directorio `bin/`.) | No |
-| `--use-rewrites` | `1` significa que utiliza las reescrituras de servidor web para los vínculos generados en la tienda y el administrador.<br><br>`0` deshabilita el uso de reescrituras de servidor web. Esta es la opción predeterminada. | No |
+| `--use-rewrites` | `1` significa que usa reescrituras de servidor web para los vínculos generados en la tienda y el administrador.<br><br>`0` deshabilita el uso de reescrituras de servidores web. Esta es la opción predeterminada. | No |
 | `--use-secure` | `1` habilita el uso de Capa de sockets seguros (SSL) en las direcciones URL de las tiendas. Asegúrese de que el servidor web admita SSL antes de seleccionar esta opción.<br><br>`0` deshabilita el uso de SSL. En este caso, todas las demás opciones de URL segura se suponen que también son 0. Esta es la opción predeterminada. | No |
 | `--base-url-secure` | URL base segura que se usará para tener acceso a su administración y tienda en el siguiente formato: `http[s]://<host or ip>/<your install dir>/` | No |
 | `--use-secure-admin` | `1` significa que utiliza SSL para acceder al administrador. Asegúrese de que el servidor web admita SSL antes de seleccionar esta opción.<br><br>`0` significa que no utiliza SSL con el administrador. Esta es la opción predeterminada. | No |
-| `--admin-use-security-key` | 1 hace que la aplicación utilice un valor clave generado aleatoriamente para acceder a las páginas del administrador y a los formularios. Estos valores clave ayudan a evitar ataques de falsificación de scripts entre sitios. Esta es la opción predeterminada.<br><br>`0` deshabilita el uso de la clave. | No |
-| `--session-save` | Use cualquiera de las siguientes opciones:<br><br>- `db` para almacenar datos de sesión en la base de datos. Elija el almacenamiento de la base de datos si tiene una base de datos en clúster; de lo contrario, es posible que no haya muchas ventajas con respecto al almacenamiento basado en archivos.<br><br>- `files` para almacenar datos de sesión en el sistema de archivos. El almacenamiento de sesión basado en archivos es adecuado a menos que el acceso al sistema de archivos sea lento, tenga una base de datos en clúster o desee almacenar los datos de sesión en Redis.<br><br>- `redis` para almacenar datos de sesión en Redis. Si utiliza Redis para el almacenamiento en caché predeterminado o de página, debe estar instalado. Consulte Uso de Redis para el almacenamiento de sesión para obtener información adicional sobre la configuración de la compatibilidad con Redis. | No |
+| `--admin-use-security-key` | 1 hace que la aplicación utilice un valor clave generado aleatoriamente para acceder a las páginas del administrador y a los formularios. Estos valores clave ayudan a evitar ataques de falsificación de scripts entre sitios. Éste es el valor predeterminado.<br><br>`0` deshabilita el uso de la clave. | No |
+| `--session-save` | Use cualquiera de las siguientes opciones:<br><br>- `db` para almacenar datos de sesión en la base de datos. Elija el almacenamiento de la base de datos si tiene una base de datos en clúster; de lo contrario, es posible que no haya muchas ventajas con el almacenamiento basado en archivos.<br><br>- `files` para almacenar datos de sesión en el sistema de archivos. El almacenamiento de sesión basado en archivos es adecuado a menos que el acceso al sistema de archivos sea lento, tenga una base de datos en clúster o desee almacenar los datos de sesión en Redis.<br><br>- `redis` para almacenar los datos de sesión en Redis. Si utiliza Redis para el almacenamiento en caché predeterminado o de página, debe estar instalado. Consulte Uso de Redis para el almacenamiento de sesión para obtener información adicional sobre la configuración de la compatibilidad con Redis. | No |
 | `--key` | Si tiene una, especifique una clave para cifrar datos confidenciales en la base de datos. Si no tiene ninguna, la aplicación generará una para usted. | Sí |
 | `--cleanup-database` | Para borrar tablas de base de datos antes de instalar Adobe Commerce, especifique este parámetro sin un valor. De lo contrario, la base de datos se deja intacta. | No |
 | `--db-init-statements` | Parámetro de configuración avanzado de MySQL. Utiliza sentencias de inicialización de base de datos para ejecutarse al conectarse a la base de datos MySQL. Consulte una referencia similar a esta antes de establecer cualquier valor.<br><br>El valor predeterminado es `SET NAMES utf8;`. | No |
@@ -181,7 +181,7 @@ Las siguientes tablas proporcionan muchos parámetros de instalación disponible
 
 | Nombre | Valor | ¿Requerido? |
 |--- |--- |--- |
-| `--amqp-host` | No utilice las opciones `--amqp` a menos que ya haya configurado una instalación de [!DNL RabbitMQ]. Consulte la instalación de [!DNL RabbitMQ] para obtener más información sobre cómo instalar y configurar [!DNL RabbitMQ].<br><br>Nombre de host donde está instalado [!DNL RabbitMQ]. | No |
+| `--amqp-host` | No utilice las opciones `--amqp` a menos que ya haya configurado una instalación de [!DNL RabbitMQ]. Consulte la instalación de [!DNL RabbitMQ] para obtener más información sobre cómo instalar y configurar [!DNL RabbitMQ].<br><br>El nombre de host donde está instalado [!DNL RabbitMQ]. | No |
 | `--amqp-port` | El puerto que se va a usar para conectarse a [!DNL RabbitMQ]. El valor predeterminado es 5672. | No |
 | `--amqp-user` | Nombre de usuario para conectarse a [!DNL RabbitMQ]. No use el usuario predeterminado `guest`. | No |
 | `--amqp-password` | Contraseña para conectarse a [!DNL RabbitMQ]. No use la contraseña predeterminada `guest`. | No |
@@ -197,7 +197,7 @@ Las siguientes tablas proporcionan muchos parámetros de instalación disponible
 
 | Nombre | Valor | ¿Requerido? |
 |--- |--- |--- |
-| `--stomp-host` | No utilice las opciones `--stomp` a menos que ya haya configurado una instalación de ActiveMQ Artemis. Consulte Instalación de ActiveMQ Artemis para obtener más información sobre cómo instalar y configurar ActiveMQ Artemis.<br><br>Nombre de host donde está instalado ActiveMQ Artemis. | No |
+| `--stomp-host` | No utilice las opciones `--stomp` a menos que ya haya configurado una instalación de ActiveMQ Artemis. Consulte Instalación de ActiveMQ Artemis para obtener más información sobre cómo instalar y configurar ActiveMQ Artemis.<br><br>El nombre de host donde está instalado ActiveMQ Artemis. | No |
 | `--stomp-port` | Puerto que se utilizará para conectar con ActiveMQ Artemis. El valor predeterminado es 61613. | No |
 | `--stomp-user` | Nombre de usuario para conectarse a ActiveMQ Artemis. No use el usuario predeterminado `artemis`. | No |
 | `--stomp-password` | Contraseña para conectarse a ActiveMQ Artemis. No use la contraseña predeterminada `artemis`. | No |
@@ -208,7 +208,7 @@ Las siguientes tablas proporcionan muchos parámetros de instalación disponible
 
 | Nombre | Valor | ¿Requerido? |
 |--- |--- |--- |
-| `--lock-provider` | Bloquear nombre de proveedor.<br><br>Proveedores de bloqueos disponibles: `db`, `zookeeper`, `file`.<br><br>El proveedor de bloqueo predeterminado: `db` | No |
+| `--lock-provider` | Bloquear nombre de proveedor.<br><br>Proveedores de bloqueo disponibles: `db`, `zookeeper`, `file`.<br><br>El proveedor de bloqueo predeterminado: `db` | No |
 | `--lock-db-prefix` | Prefijo de base de datos específico para evitar conflictos de bloqueo al utilizar el proveedor de bloqueo `db`.<br><br>El valor predeterminado: `NULL` | No |
 | `--lock-zookeeper-host` | Host y puerto para conectarse al clúster de Zookeeper cuando se utiliza el proveedor de bloqueo `zookeeper`.<br><br>Por ejemplo: `127.0.0.1:2181` | Sí, si se establece `--lock-provider=zookeeper` |
 | `--lock-zookeeper-path` | El camino donde Zookeeper guarda las cerraduras.<br><br>La ruta predeterminada es: `/magento/locks` | No |
@@ -255,7 +255,7 @@ El siguiente ejemplo instala Adobe Commerce con las siguientes opciones:
 * La zona horaria predeterminada es Centro de Estados Unidos (América/Chicago)
 * OpenSearch 1.2 está instalado en `os-host.example.com` y se conecta al puerto 9200
 
-```bash
+```shell
 magento setup:install --base-url=http://127.0.0.1/magento2/ \
 --db-host=localhost --db-name=magento --db-user=magento --db-password=magento \
 --admin-firstname=Magento --admin-lastname=User --admin-email=user@example.com \
@@ -267,7 +267,7 @@ magento setup:install --base-url=http://127.0.0.1/magento2/ \
 
 Se muestran mensajes similares a los siguientes para indicar que la instalación se ha realizado correctamente:
 
-```
+```text
 Post installation file permissions check...
 For security, remove write permissions from these directories: '/var/www/html/magento2/app/etc'
 [Progress: 274 / 274]
@@ -279,7 +279,7 @@ For security, remove write permissions from these directories: '/var/www/html/ma
 
 Puede instalar Adobe Commerce sin crear el usuario administrador, como se muestra en el siguiente ejemplo.
 
-```bash
+```shell
 magento setup:install --base-url=http://127.0.0.1/magento2/ \
 --db-host=localhost --db-name=magento --db-user=magento --db-password=magento \
 --language=en_US --currency=USD --timezone=America/Chicago --use-rewrites=1 \
@@ -289,7 +289,7 @@ magento setup:install --base-url=http://127.0.0.1/magento2/ \
 
 Si la instalación se realiza correctamente, se muestran mensajes como el siguiente:
 
-```
+```text
 Post installation file permissions check...
 For security, remove write permissions from these directories: '/var/www/html/magento2/app/etc'
 [Progress: 274 / 274]
@@ -327,7 +327,7 @@ El siguiente ejemplo instala Adobe Commerce con las siguientes opciones:
 * Utiliza reescrituras del servidor
 * OpenSearch está instalado en `os-host.example.com` y se conecta al puerto 9200
 
-```bash
+```shell
 magento setup:install --base-url=http://127.0.0.1/magento2/ \
 --db-host=localhost --db-name=magento --db-user=magento --db-password=magento \
 --admin-firstname=Magento --admin-lastname=User --admin-email=user@example.com \
@@ -344,7 +344,7 @@ magento setup:install --base-url=http://127.0.0.1/magento2/ \
 
 Si la instalación se realiza correctamente, se muestran mensajes como el siguiente:
 
-```
+```text
 Post installation file permissions check...
 For security, remove write permissions from these directories: '/var/www/html/magento2/app/etc'
 [Progress: 274 / 274]
@@ -356,7 +356,7 @@ For security, remove write permissions from these directories: '/var/www/html/ma
 
 El siguiente ejemplo muestra cómo instalar Adobe Commerce con ActiveMQ Artemis como agente de mensajes:
 
-```bash
+```shell
 bin/magento setup:install --base-url=http://127.0.0.1/magento2/ \
 --db-host=localhost --db-name=magento --db-user=magento --db-password=magento \
 --admin-firstname=Magento --admin-lastname=User --admin-email=user@example.com \

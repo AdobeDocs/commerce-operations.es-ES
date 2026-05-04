@@ -1,11 +1,11 @@
 ---
 title: Secure cron PHP
-description: Restrinja quién puede ejecutar el archivo cron.php en un explorador.
+description: Obtenga información sobre cómo restringir el acceso del explorador a pub/cron.php y proteger las tareas programadas de Adobe Commerce contra la ejecución no autorizada o maliciosa de cron.
 feature: Configuration, Security
 exl-id: c81fcab2-1ee3-4ec7-a300-0a416db98614
-source-git-commit: 56a2461edea2799a9d569bd486f995b0fe5b5947
+source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
 workflow-type: tm+mt
-source-wordcount: '924'
+source-wordcount: '975'
 ht-degree: 1%
 
 ---
@@ -47,11 +47,11 @@ Por motivos de seguridad, puede localizar el archivo de contraseña en cualquier
 
 Escriba los siguientes comandos como usuario con privilegios de `root`:
 
-```bash
+```shell
 mkdir -p /usr/local/apache/password
 ```
 
-```bash
+```shell
 htpasswd -c /usr/local/apache/password/passwords <username>
 ```
 
@@ -61,7 +61,7 @@ Siga las indicaciones de la pantalla para crear una contraseña de usuario.
 
 Para agregar otro usuario al archivo de contraseñas, escriba el siguiente comando como usuario con privilegios de `root`:
 
-```bash
+```shell
 htpasswd /usr/local/apache/password/passwords <username>
 ```
 
@@ -71,13 +71,13 @@ Puede permitir que más de un usuario ejecute cron agregando estos usuarios a su
 
 Para agregar otro usuario al archivo de contraseñas:
 
-```bash
+```shell
 htpasswd /usr/local/apache/password/passwords <username>
 ```
 
 Para crear un grupo autorizado, cree un archivo de grupo en cualquier lugar fuera del docroot del servidor web. El archivo de grupo especifica el nombre del grupo y los usuarios del grupo. En este ejemplo, el nombre de grupo es `MagentoCronGroup`.
 
-```bash
+```shell
 vim /usr/local/apache/password/group
 ```
 
@@ -96,7 +96,7 @@ Para proteger cron en el archivo `.htaccess`:
 
    (Dado que `cron.php` se encuentra en el directorio `pub`, edite este(a) `.htaccess` solamente.)
 
-1. _Acceso de Cron para uno o más usuarios._ Reemplace la directiva `<Files cron.php>` existente con lo siguiente:
+1. _Acceso cron para uno o más usuarios._ Reemplace la directiva `<Files cron.php>` existente con lo siguiente:
 
    ```conf
    <Files cron.php>
@@ -163,7 +163,7 @@ Commerce proporciona un archivo de configuración nginx de muestra optimizado de
 
 1.Restart nginx:
 
-```bash
+```shell
 systemctl restart nginx
 ```
 
@@ -183,7 +183,7 @@ La forma más sencilla de comprobar que `pub/cron.php` es seguro es comprobar qu
 
    Por ejemplo,
 
-   ```bash
+   ```shell
    mysql -u magento -p
    ```
 

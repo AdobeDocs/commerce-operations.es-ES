@@ -2,7 +2,7 @@
 title: Quitar o actualizar módulos de datos de ejemplo
 description: Siga estos pasos para administrar los módulos de datos de ejemplo de Adobe Commerce.
 exl-id: d23f999f-18bf-449b-be23-bdf392dda539
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
 source-wordcount: '107'
 ht-degree: 0%
@@ -21,7 +21,7 @@ En este tema se explica cómo:
 
 Introduzca el siguiente comando:
 
-```bash
+```shell
 bin/magento sampledata:remove
 ```
 
@@ -55,7 +55,7 @@ Este comando permite actualizar los datos de ejemplo antes de actualizar Adobe C
 
 Para preparar los datos de ejemplo para la actualización, introduzca el siguiente comando:
 
-```bash
+```shell
 bin/magento sampledata:reset
 ```
 

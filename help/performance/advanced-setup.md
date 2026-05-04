@@ -2,9 +2,9 @@
 title: Configuración avanzada
 description: Obtenga información sobre la configuración avanzada de Adobe Commerce. Descubra instrucciones paso a paso y requisitos de configuración.
 exl-id: eb9ca9fa-b099-4e77-ab33-16cd0f382ffe
-source-git-commit: da9ce645d4d32c1368da442d9bd260f5fb3cdb98
+source-git-commit: f9a135fc63574ccbecd3f564a87fc5c4ac03f009
 workflow-type: tm+mt
-source-wordcount: '1171'
+source-wordcount: '1192'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ Adobe Commerce admite colas de mensajes implementadas mediante [!DNL RabbitMQ]. 
 
 >[!WARNING]
 >
->La función de base de datos dividida estaba [obsoleta](https://community.magento.com/t5/Magento-DevBlog/Deprecation-of-Split-Database-in-Magento-Commerce/ba-p/465187) en la versión 2.4.2 de Adobe Commerce. Ver [Revertir de una base de datos dividida a una sola base de datos](../configuration/storage/revert-split-database.md).
+>La función de base de datos dividida estaba en desuso en la versión 2.4.2 de Adobe Commerce. Ver [Revertir de una base de datos dividida a una sola base de datos](../configuration/storage/revert-split-database.md).
 
 Adobe Commerce le permite configurar el almacenamiento escalable de la base de datos para satisfacer las necesidades de una empresa en crecimiento. Puede configurar tres bases de datos maestras independientes que sirven a dominios específicos:
 
@@ -68,13 +68,13 @@ Para configurar bases de datos adicionales, debe crear una base de datos vacía 
 
 Para la base de datos maestra de extracción
 
-```bash
+```shell
 bin/magento setup:db-schema:split-quote
 ```
 
 Para base de datos maestra de OMS
 
-```bash
+```shell
 bin/magento setup:db-schema:split-sales
 ```
 
@@ -86,7 +86,7 @@ Además de las bases de datos maestras, [!DNL Commerce] le permite configurar va
 
 Puede agregar una base de datos esclava ejecutando el siguiente comando:
 
-```bash
+```shell
 bin/magento setup:db-schema:add-slave
 ```
 

@@ -5,16 +5,16 @@ feature: REST, Products, Admin Workspace
 role: Admin, Developer
 exl-id: 21aecd6d-06e4-4f2b-904a-27487ba74968
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '347'
 ht-degree: 0%
 
 ---
 
 # ACSD-64523: el extremo REST no puede validar los campos obligatorios
 
-El parche ACSD-64523 corrige un problema en el que el extremo REST [V1/import/csv] no valida los campos obligatorios, lo que permite la creación de productos sin los datos necesarios. Para resolver esto, actualice el encabezado Autorización. Esta revisión está disponible cuando está instalado [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.62. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.8.
+El parche ACSD-64523 corrige un problema en el que el extremo REST [V1/import/csv] no valida los campos obligatorios, lo que permite la creación de productos sin los datos necesarios. Para resolver esto, actualice el encabezado Autorización.Esta revisión está disponible cuando está instalado [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.62. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.8.
 
 ## Productos y versiones afectados
 
@@ -28,7 +28,7 @@ El parche ACSD-64523 corrige un problema en el que el extremo REST [V1/import/cs
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
@@ -38,7 +38,7 @@ El extremo REST `[V1/import/csv]` no puede validar los campos obligatorios, lo q
 
 1. Ejecute la siguiente carga útil (actualice el encabezado Autorización):
 
-   ```
+   ```shell
    curl --location 'http://<domain>/rest/default/V1/import/json' \
    --header 'Content-Type: application/json' \
    --header 'Authorization: Bearer xxxxx' \
@@ -92,7 +92,7 @@ El producto se ha guardado correctamente sin especificar el nombre del producto,
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
 * Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía [!DNL Quality Patches Tool].
-* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=es) en la guía Commerce en la infraestructura de la nube.
+* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) en la guía Commerce en la infraestructura de la nube.
 
 ## Lectura relacionada
 

@@ -4,13 +4,13 @@ description: Aplique el parche ACSD-56226 para corregir el problema de Adobe Com
 feature: System
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: a45cef14b7b37f1112d2ef82adf29b09d63b8e2b
+exl-id: 5ad0e884-decb-4e09-b5b3-b38a9953a4b8
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '336'
+source-wordcount: '354'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-56226: las consultas READ devuelven datos obsoletos con `synchronous_replication` habilitado
 
@@ -28,7 +28,7 @@ El parche ACSD-56226 corrige el problema en el que las consultas READ devuelven 
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
@@ -39,7 +39,7 @@ Las consultas READ devuelven datos obsoletos cuando el indicador `synchronous_re
 1. Establezca `MYSQL_USE_SLAVE_CONNECTION` en *true* en las variables de entorno en Adobe Commerce en la infraestructura de la nube.
 1. Agregue la siguiente configuración a `.magento.env.yaml` para establecer `synchronous_replication` en *false*:
 
-   ```
+   ```text
    DATABASE_CONFIGURATION:
      _merge: true
      slave_connection:
@@ -62,7 +62,7 @@ La conexión esclava se deshabilitó cuando `synchronous_replication` se estable
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
 * Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía [!DNL Quality Patches Tool].
-* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=es) en la guía Commerce en la infraestructura de la nube.
+* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) en la guía Commerce en la infraestructura de la nube.
 
 ## Lectura relacionada
 

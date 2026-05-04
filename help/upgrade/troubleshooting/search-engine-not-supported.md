@@ -3,9 +3,9 @@ title: Motor de búsqueda actual no admitido
 description: Solucione el problema de la actualización de Adobe Commerce después de encontrar un error sobre un motor de búsqueda no compatible.
 feature: Upgrade, Search
 exl-id: 11479d23-53a5-4086-9f9a-c3420ccad073
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '400'
+source-wordcount: '411'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 El siguiente mensaje de error indica que la versión de Adobe Commerce desde la que está actualizando está configurada para utilizar un motor de búsqueda en el catálogo que no es compatible con la versión a la que está actualizando:
 
-```
+```text
 Your current search engine, <Engine Name>, is not supported. You must install a supported search engine before upgrading. See the System Upgrade Guide for more information.
 ```
 
@@ -25,7 +25,7 @@ Este error significa que una de las siguientes condiciones es verdadera en la ve
 
 Utilice el siguiente comando para comprobar el motor de búsqueda actual:
 
-```bash
+```shell
 bin/magento config:show catalog/search/engine
 ```
 
@@ -35,11 +35,11 @@ El error se produce si el valor devuelto es `mysql`, `elasticsearch` o `elastics
 >
 >Si ha recibido este error, la instalación está en un estado incoherente y no puede acceder al administrador. Le recomendamos que vuelva a su versión anterior mientras resuelve este error. Para ello, ejecute uno de los siguientes comandos:
 >
->```bash
+>```shell
 >composer require-commerce magento/product-enterprise-edition=<version>
 >```
 >
->```bash
+>```shell
 >composer require-commerce magento/product-community-edition=<version>
 >```
 >

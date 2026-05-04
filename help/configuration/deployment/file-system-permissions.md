@@ -3,9 +3,9 @@ title: Permisos de acceso a sistemas de archivos
 description: Consulte cómo configurar el propietario o los propietarios del sistema de archivos de la aplicación Commerce para un sistema de desarrollo y producción.
 feature: Configuration, Roles/Permissions
 exl-id: 95b27db9-5247-4f58-a9af-1590897d73db
-source-git-commit: dcc283b901917e3681863370516771763ae87462
+source-git-commit: f9a135fc63574ccbecd3f564a87fc5c4ac03f009
 workflow-type: tm+mt
-source-wordcount: '864'
+source-wordcount: '887'
 ht-degree: 0%
 
 ---
@@ -74,19 +74,19 @@ Para quitar permisos de escritura a archivos y directorios del grupo del usuario
 
 1. Cambie al modo de producción.
 
-   ```bash
+   ```shell
    bin/magento deploy:mode:set production
    ```
 
 1. Quite los permisos de escritura en los siguientes directorios.
 
-   ```bash
+   ```shell
    find app/code var/view_preprocessed vendor pub/static app/etc generated/code generated/metadata \( -type f -or -type d \) -exec chmod u-w {} + && chmod o-rwx app/etc/env.php
    ```
 
 1. Hacer ejecutable la herramienta de línea de comandos.
 
-   ```bash
+   ```shell
    chmod u+x bin/magento
    ```
 
@@ -98,7 +98,7 @@ Para hacer que los archivos y directorios se puedan escribir para actualizar com
 1. Cambie al directorio de instalación de Commerce.
 1. Introduzca los siguientes comandos:
 
-   ```bash
+   ```shell
    chmod -R u+w .
    ```
 
@@ -139,7 +139,7 @@ Los usuarios deben poder escribir en los archivos de los siguientes directorios 
 - `pub/media`
 - `app/etc`
 
-Establezca el bit [`setgid`](https://linuxg.net/how-to-set-the-setuid-and-setgid-bit-for-files-in-linux-and-unix/) en los directorios para que los permisos siempre hereden del directorio principal.
+Establezca el bit [`setgid`](https://linuxconfig.org/how-to-use-special-permissions-the-setuid-setgid-and-sticky-bits) en los directorios para que los permisos siempre hereden del directorio principal.
 
 >[!INFO]
 >
@@ -154,15 +154,15 @@ Para establecer `setgid` y permisos para el modo de desarrollador:
 1. Inicie sesión en el servidor de Commerce como propietario del sistema de archivos o cambie a.
 1. Introduzca los siguientes comandos en el orden mostrado:
 
-   ```bash
+   ```shell
    cd <magento_root>
    ```
 
-   ```bash
+   ```shell
    find var generated pub/static pub/media app/etc -type f -exec chmod g+w {} +
    ```
 
-   ```bash
+   ```shell
    find var generated pub/static pub/media app/etc -type d -exec chmod g+ws {} +
    ```
 
@@ -188,13 +188,13 @@ Para quitar los permisos de escritura en archivos y directorios del grupo del us
 1. Cambie al directorio de instalación de Commerce.
 1. Como propietario del sistema de archivos, introduzca el siguiente comando para cambiar al modo de producción:
 
-   ```bash
+   ```shell
    bin/magento deploy:mode:set production
    ```
 
 1. Escriba el siguiente comando como usuario con privilegios de `root`:
 
-   ```bash
+   ```shell
    find app/code lib pub/static app/etc generated/code generated/metadata var/view_preprocessed \( -type d -or -type f \) -exec chmod g-w {} + && chmod o-rwx app/etc/env.php
    ```
 
@@ -206,6 +206,6 @@ Para hacer que los archivos y directorios se puedan escribir para actualizar com
 1. Cambie al directorio de instalación de Commerce.
 1. Introduzca el siguiente comando:
 
-   ```bash
+   ```shell
    find app/code lib var generated vendor pub/static pub/media app/etc \( -type d -or -type f \) -exec chmod g+w {} + && chmod o+rwx app/etc/env.php
    ```

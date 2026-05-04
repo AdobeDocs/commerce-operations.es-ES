@@ -2,9 +2,9 @@
 title: Aplicar parches
 description: Obtenga información sobre los métodos para aplicar parches a un proyecto de Adobe Commerce.
 exl-id: 1d5d81ad-0115-4575-adfd-dde7c2826d85
-source-git-commit: c8a20ad1b0b57724f389cfa5c63f6ae542758c2b
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '312'
+source-wordcount: '324'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Puede aplicar parches utilizando cualquiera de los siguientes métodos:
 
-- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es){target="_blank"}
+- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
 - [Línea de comandos](../patches/apply.md#command-line)
 - [Compositor](../patches/apply.md#composer)
 
@@ -31,7 +31,7 @@ Para aplicar un parche personalizado con Composer:
 1. Abra la aplicación de línea de comandos y vaya al directorio del proyecto.
 1. Agregar el complemento `cweagans/composer-patches` al archivo `composer.json`.
 
-   ```bash
+   ```shell
    composer require cweagans/composer-patches
    ```
 
@@ -57,13 +57,13 @@ Para aplicar un parche personalizado con Composer:
 
 1. Aplique el parche. Utilice la opción `-v` solo si desea ver información de depuración.
 
-   ```bash
+   ```shell
    composer -v install
    ```
 
 1. Actualizar el archivo `composer.lock`. El archivo de bloqueo registra qué parches se han aplicado a cada paquete Composer de un objeto.
 
-   ```bash
+   ```shell
    composer update --lock
    ```
 
@@ -75,7 +75,7 @@ Para aplicar parches desde la línea de comandos:
 1. Inicie sesión en el servidor como [usuario administrador](../../configuration/cli/config-cli.md#prerequisites) y compruebe que el archivo se encuentra en el directorio correcto.
 1. En la interfaz de línea de comandos, ejecute los siguientes comandos según la extensión del parche:
 
-   ```bash
+   ```shell
    patch < patch_file_name.patch
    ```
 

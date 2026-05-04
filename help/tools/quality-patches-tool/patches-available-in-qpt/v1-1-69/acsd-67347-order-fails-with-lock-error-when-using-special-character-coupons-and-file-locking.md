@@ -4,13 +4,13 @@ description: Aplique el parche ACSD-67347 al problema de Adobe Commerce donde lo
 feature: Checkout, Shopping Cart
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 1a48428efbb022b53320370f68691eaed44809b3
+exl-id: a439e163-8b09-456c-91bd-6ee67528744e
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '372'
+source-wordcount: '393'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-67347: el pedido falla con *No se puede adquirir un error lock* al usar códigos de cupones
 
@@ -28,7 +28,7 @@ El parche ACSD-67347 corrige el problema en el que los pedidos fallan con un err
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
@@ -39,7 +39,7 @@ Los pedidos fallan con el error *No se puede adquirir un bloqueo* cuando se usan
 1. Instalar 2.4-desarrollar.
 1. Establecer la configuración de bloqueo de archivos en el archivo `env.php`:
 
-   ```
+   ```text
    'lock' => [
            'provider' => 'file',
            'config' => [
@@ -61,7 +61,7 @@ Los pedidos se realizan correctamente porque no hay restricciones en la creació
 
 No se puede realizar el pedido. Aparece el siguiente error: *No se puede adquirir el bloqueo.*
 
-```
+```text
 File "/Users/test/sites/test/locks/coupon_code_123/abc" cannot be opened Warning!fopen(/Users/test/sites/test/locks/coupon_code_123/abc): Failed to open stream: No such file or directory
 ```
 
@@ -70,7 +70,7 @@ File "/Users/test/sites/test/locks/coupon_code_123/abc" cannot be opened Warning
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
 * Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía [!DNL Quality Patches Tool].
-* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=es) en la guía Commerce en la infraestructura de la nube.
+* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) en la guía Commerce en la infraestructura de la nube.
 
 ## Lectura relacionada
 

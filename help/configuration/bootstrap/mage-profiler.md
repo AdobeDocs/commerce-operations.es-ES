@@ -2,9 +2,9 @@
 title: Habilitar generación de perfiles
 description: Obtenga más información sobre cómo habilitar el analizador de imágenes para utilizarlo con sus herramientas analíticas.
 exl-id: a46289ed-16dc-4a72-84ff-85fe825dac11
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '413'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Con los perfiles de Commerce, puede:
 
 - Mostrar gráficos de dependencias en una página de Commerce.
 
-  Un gráfico de dependencias _1&rbrace; es una lista de dependencias de objetos y todas sus dependencias, todas las dependencias de esas dependencias, etc._
+  Un gráfico de dependencias _1} es una lista de dependencias de objetos y todas sus dependencias, todas las dependencias de esas dependencias, etc._
 
   Debería interesarle especialmente la lista de _dependencias sin usar_, que son objetos que se crearon porque se solicitaron en algún constructor, pero que nunca se utilizaron (es decir, no se llamó a ninguno de sus métodos). Como resultado, se desperdician el tiempo y la memoria del procesador empleados para crear estas dependencias.
 
@@ -63,13 +63,13 @@ Para habilitar los gráficos de dependencias, utilice la opción de variable.
 
    Para habilitar el generador de perfiles con el tipo `html` y crear un archivo de indicador:
 
-   ```bash
+   ```shell
    bin/magento dev:profiler:enable html
    ```
 
    Para habilitar el generador de perfiles con el tipo `csvfile` y crear un archivo de indicador:
 
-   ```bash
+   ```shell
    bin/magento dev:profiler:enable csvfile
    ```
 
@@ -77,7 +77,7 @@ Para habilitar los gráficos de dependencias, utilice la opción de variable.
 
    Para deshabilitar el generador de perfiles y quitar el archivo de indicador:
 
-   ```bash
+   ```shell
    bin/magento dev:profiler:disable
    ```
 

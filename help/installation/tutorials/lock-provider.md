@@ -2,9 +2,9 @@
 title: Configuración del proveedor de bloqueos
 description: Siga estos pasos para evitar que los trabajos cron y los grupos cron duplicados se ejecuten en la implementación de Adobe Commerce.
 exl-id: c54e05b7-38fd-4731-bc77-a873b44d0ae8
-source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '224'
+source-wordcount: '236'
 ht-degree: 0%
 
 ---
@@ -26,11 +26,11 @@ Configure un proveedor de bloqueo para evitar el inicio de trabajos cron y grupo
 
 Adobe Commerce utiliza la base de datos para guardar bloqueos de forma predeterminada. Si tiene varios nodos en sus servidores, le recomendamos que utilice Zookeeper como proveedor de bloqueos.
 
-Si está ejecutando Adobe Commerce en una infraestructura en la nube, no es necesario configurar el proveedor de bloqueos. La aplicación configura el proveedor de bloqueo de archivos para proyectos Pro durante el proceso de aprovisionamiento. Consulte [Variables de nube](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud).
+Si está ejecutando Adobe Commerce en una infraestructura en la nube, no es necesario configurar el proveedor de bloqueos. La aplicación configura el proveedor de bloqueo de archivos para proyectos Pro durante el proceso de aprovisionamiento. Consulte [Variables de nube](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud).
 
 ### Uso de comandos
 
-```bash
+```shell
 bin/magento setup:config:set [--<parameter_name>=<value>, ...]
 ```
 
@@ -38,7 +38,7 @@ bin/magento setup:config:set [--<parameter_name>=<value>, ...]
 
 | Nombre | Valor | ¿Requerido? |
 |--- |--- |--- |
-| `--lock-provider` | Bloquear nombre de proveedor: `db`, `zookeeper` o `file`.<br><br>El proveedor de bloqueo predeterminado: `db` | No |
+| `--lock-provider` | Nombre del proveedor de bloqueos: `db`, `zookeeper` o `file`.<br><br>El proveedor de bloqueos predeterminado: `db` | No |
 | `--lock-db-prefix` | Prefijo de base de datos específico para evitar conflictos de bloqueo al utilizar el proveedor de bloqueo `db`.<br><br>El valor predeterminado: `NULL` | No |
 | `--lock-zookeeper-host` | Host y puerto para conectarse al clúster de Zookeeper cuando se utiliza el proveedor de bloqueo `zookeeper`.<br><br>Por ejemplo: `127.0.0.1:2181` | Sí, si se establece `--lock-provider=zookeeper` |
 | `--lock-zookeeper-path` | El camino donde Zookeeper guarda las cerraduras.<br><br>La ruta predeterminada es: `/magento/locks` | No |

@@ -2,9 +2,9 @@
 title: '[!DNL Upgrade Compatibility Tool] informes'
 description: Siga estos pasos para ejecutar  [!DNL Upgrade Compatibility Tool]  en su proyecto de Adobe Commerce.
 exl-id: a2272339-46d6-443b-bd53-286b72f13d4e
-source-git-commit: ca8dc855e0598d2c3d43afae2e055aa27035a09b
+source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
 workflow-type: tm+mt
-source-wordcount: '583'
+source-wordcount: '588'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Como resultado del análisis, [!DNL Upgrade Compatibility Tool] puede exportar u
 
 Consulte el siguiente ejemplo de interfaz de línea de comandos de un informe:
 
-```
+```text
 File: /app/code/Custom/CatalogExtension/Controller/Index/Index.php
 ------------------------------------------------------------------
  * [WARNING][1131] Line 10: Extending from class 'Magento\Framework\App\Action\Action' that is @deprecated on version '2.4.4'
@@ -43,7 +43,7 @@ Este informe también incluye un resumen detallado que muestra lo siguiente:
 
 Consulte el siguiente ejemplo de interfaz de línea de comandos:
 
-```
+```text
  ----------------------------- ----------------- 
   Current version               2.4.1            
   Target version                2.4.4            
@@ -68,7 +68,7 @@ Para cada problema encontrado, el informe proporciona información detallada, co
 
 Para exportar este archivo de `JSON` a una carpeta de salida diferente:
 
-```bash
+```shell
 bin/uct upgrade:check <dir> --json-output-path[=JSON-OUTPUT-PATH]
 ```
 
@@ -121,7 +121,7 @@ Si desea ver resultados diferentes para el diagrama `Modules with relative sizes
 
 Para exportar este informe de HTML a una carpeta de salida diferente:
 
-```bash
+```shell
 bin/uct upgrade:check <dir> --html-output-path[=HTML-OUTPUT-PATH]
 ```
 

@@ -2,9 +2,9 @@
 title: Actualización de una instalación basada en Git
 description: Actualice una instalación de Adobe Commerce que haya clonado desde un repositorio de Git.
 exl-id: a8c42857-7221-4b21-8377-4bfb6308c418
-source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '110'
+source-wordcount: '118'
 ht-degree: 0%
 
 ---
@@ -21,13 +21,13 @@ Para actualizar si es un desarrollador colaborador:
 
 1. Cree una copia de seguridad del archivo `composer.json`.
 
-   ```bash
+   ```shell
    cp composer.json composer.json.old
    ```
 
 1. Actualice el repositorio local para obtener el código más reciente:
 
-   ```bash
+   ```shell
    git pull origin develop
    ```
 
@@ -39,19 +39,19 @@ Para actualizar si es un desarrollador colaborador:
 
 1. Resuelva dependencias y escriba versiones exactas en el archivo `composer.lock`.
 
-   ```bash
+   ```shell
    composer update
    ```
 
 1. Actualizar la base de datos:
 
-   ```bash
+   ```shell
    bin/magento setup:upgrade
    ```
 
 1. Limpie la caché:
 
-   ```bash
+   ```shell
    bin/magento cache:clean
    ```
 

@@ -2,9 +2,9 @@
 title: Agente de mensajes (RabbitMQ)
 description: Siga estos pasos para instalar y configurar el software de Agente de mensajes necesario (como  [!DNL RabbitMQ]) para las instalaciones locales de Adobe Commerce.
 exl-id: ae6200d6-540f-46b3-92ba-7df7f6bb6fae
-source-git-commit: 73faaa2a3b9ce773e9a381d103735403966f568b
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '546'
+source-wordcount: '573'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Debe establecerse el sistema de cola de mensajes antes de instalar Adobe Commerc
 
 Para instalar [!DNL RabbitMQ] en Ubuntu 16, ingrese el siguiente comando:
 
-```bash
+```shell
 sudo apt install -y rabbitmq-server
 ```
 
@@ -73,7 +73,7 @@ Revise la documentación oficial de [!DNL RabbitMQ] para configurar y administra
 
 Si instala Adobe Commerce _después de_, instale [!DNL RabbitMQ] y agregue los siguientes parámetros de línea de comandos durante la instalación:
 
-```bash
+```shell
 --amqp-host="<hostname>" --amqp-port="5672" --amqp-user="<user_name>" --amqp-password="<password>" --amqp-virtualhost="/"
 ```
 
@@ -108,7 +108,7 @@ Si ya tiene Adobe Commerce instalado y desea conectarlo a [!DNL RabbitMQ], agreg
 
 También puede establecer los valores de configuración de [!DNL RabbitMQ] mediante el comando `bin/magento setup:config:set`:
 
-```bash
+```shell
 bin/magento setup:config:set --amqp-host="rabbitmq.example.com" --amqp-port="11213" --amqp-user="magento" --amqp-password="magento" --amqp-virtualhost="/"
 ```
 

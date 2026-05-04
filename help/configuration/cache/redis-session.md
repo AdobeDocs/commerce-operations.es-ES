@@ -3,9 +3,9 @@ title: Usar Redis para el almacenamiento de sesión
 description: Obtenga información sobre cómo configurar Redis para el almacenamiento de sesiones en Adobe Commerce. Descubra la configuración de la línea de comandos, las opciones de configuración y las técnicas de optimización del rendimiento.
 feature: Configuration, Cache
 exl-id: f93f500d-65b0-4788-96ab-f1c3d2d40a38
-source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '724'
+source-wordcount: '836'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ Commerce ahora proporciona opciones de línea de comandos para configurar el alm
 
 Ejecute el comando `setup:config:set` y especifique los parámetros específicos de Redis.
 
-```bash
+```shell
 bin/magento setup:config:set --session-save=redis --session-save-redis-<parameter_name>=<parameter_value>...
 ```
 
@@ -38,8 +38,8 @@ donde
 | session-save-redis-password | contraseña | Especifica una contraseña si el servidor Redis requiere autenticación. | vaciar |
 | session-save-redis-timeout | timeout | Tiempo de espera de conexión, en segundos. | 2,5 |
 | session-save-redis-persistent-id | persistent_identifier | Cadena única para habilitar conexiones persistentes (por ejemplo, sess-db0).<br>[Problemas conocidos con phpredis y php-fpm](https://github.com/phpredis/phpredis/issues/70). |  |
-| session-save-redis-db | database | Número único de la base de datos de Redis, recomendado para protegerse contra la pérdida de datos.<br><br>**Importante**: Si usa Redis para más de un tipo de almacenamiento en caché, los números de la base de datos deben ser diferentes. Se recomienda asignar el número de base de datos de almacenamiento en caché predeterminado a 0, el número de base de datos de almacenamiento en caché de páginas a 1 y el número de base de datos de almacenamiento de sesión a 2. | 0 |
-| session-save-redis-compression-threshold | compression_threshold | Establezca el valor en 0 para deshabilitar la compresión (recomendado cuando `suhosin.session.encrypt = On`).<br>[Problema conocido con cadenas de más de 64 KB](https://github.com/colinmollenhour/Cm_Cache_Backend_Redis/issues/18). | 2048 |
+| session-save-redis-db | database | Número único de la base de datos Redis, que se recomienda proteger contra la pérdida de datos.<br><br>**Importante**: Si usa Redis para más de un tipo de almacenamiento en caché, los números de la base de datos deben ser diferentes. Se recomienda asignar el número de base de datos de almacenamiento en caché predeterminado a 0, el número de base de datos de almacenamiento en caché de páginas a 1 y el número de base de datos de almacenamiento de sesión a 2. | 0 |
+| session-save-redis-compression-threshold | compression_threshold | Establezca el valor en 0 para deshabilitar la compresión (recomendada cuando `suhosin.session.encrypt = On`).<br>[Problema conocido con cadenas de más de 64 KB](https://github.com/colinmollenhour/Cm_Cache_Backend_Redis/issues/18). | 2048 |
 | session-save-redis-compression-lib | compression_library | Opciones: gzip, lzf, lz4 o snappy. | gzip |
 | session-save-redis-log-level | log_level | Establezca cualquiera de las siguientes opciones, enumeradas en orden de menos detallado a más detallado:<ul><li>0 (emergencia: solo los errores más graves)<li>1 (alerta: acción inmediata requerida)<li>2 (crítico: componente de aplicación no disponible)<li>3 (error: errores de tiempo de ejecución, no críticos, pero deben monitorizarse)<li>4 (advertencia: información adicional, recomendada)<li>5 (aviso: condición normal pero significativa)<li>6 (información: mensajes informativos)<li>7 (depurar: la información más importante solo para desarrollo o pruebas)</ul> | 1 |
 | session-save-redis-max-concurrency | max_concurrency | Número máximo de procesos que pueden esperar un bloqueo en una sesión. Para los clústeres de producción grandes, establezca esto en al menos el 10% del número de procesos PHP. | 6 |
@@ -60,7 +60,7 @@ donde
 
 En el ejemplo siguiente se establece Redis como almacén de datos de sesión, se establece el host en `127.0.0.1`, se establece el nivel de registro en 4 y se establece el número de base de datos en 2. El resto de parámetros se definen con el valor predeterminado.
 
-```bash
+```shell
 bin/magento setup:config:set --session-save=redis --session-save-redis-host=127.0.0.1 --session-save-redis-log-level=4 --session-save-redis-db=2
 ```
 
@@ -104,13 +104,13 @@ Para comprobar que Redis y Commerce funcionan juntos, inicie sesión en el servi
 
 ### Redis monitor, comando
 
-```bash
+```shell
 redis-cli monitor
 ```
 
 Salida de almacenamiento de sesión de muestra:
 
-```
+```text
 1476824834.187250 [0 127.0.0.1:52353] "select" "0"
 1476824834.187587 [0 127.0.0.1:52353] "hmget" "sess_sgmeh2k3t7obl2tsot3h2ss0p1" "data" "writes"
 1476824834.187939 [0 127.0.0.1:52353] "expire" "sess_sgmeh2k3t7obl2tsot3h2ss0p1" "1200"
@@ -121,7 +121,7 @@ Salida de almacenamiento de sesión de muestra:
 
 ### Redis ping, comando
 
-```bash
+```shell
 redis-cli ping
 ```
 

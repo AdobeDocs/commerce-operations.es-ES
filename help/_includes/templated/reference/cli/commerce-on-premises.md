@@ -1,7 +1,7 @@
 ---
-source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
+source-git-commit: ef3abc83e2c699ebfbb53ad367aaceb9ecb92491
 workflow-type: tm+mt
-source-wordcount: '8012'
+source-wordcount: '8072'
 ht-degree: 1%
 
 ---
@@ -81,7 +81,7 @@ No haga ninguna pregunta interactiva
 
 ## `_complete`
 
-```bash
+```shell
 bin/magento _complete [-s|--shell SHELL] [-i|--input INPUT] [-c|--current CURRENT] [-a|--api-version API-VERSION] [-S|--symfony SYMFONY]
 ```
 
@@ -125,13 +125,13 @@ obsoleto
 
 ## `completion`
 
-```bash
+```shell
 bin/magento completion [--debug] [--] [<shell>]
 ```
 
 Volcar el script de finalización de shell
 
-```
+```text
 The completion command dumps the shell completion script required
 to use shell autocompletion (currently, bash, fish, zsh completion are supported).
 
@@ -180,13 +180,13 @@ Seguimiento del registro de depuración de finalización
 
 ## `help`
 
-```bash
+```shell
 bin/magento help [--format FORMAT] [--raw] [--] [<command_name>]
 ```
 
 Mostrar la ayuda de un comando
 
-```
+```text
 The help command displays help for a given command:
 
   bin/magento help list
@@ -227,13 +227,13 @@ Para generar la ayuda del comando raw
 
 ## `list`
 
-```bash
+```shell
 bin/magento list [--raw] [--format FORMAT] [--short] [--] [<namespace>]
 ```
 
 Comandos de lista
 
-```
+```text
 The list command lists all commands:
 
   bin/magento list
@@ -285,7 +285,7 @@ Para omitir la descripción de argumentos de comandos
 
 ## `admin:adobe-ims:disable`
 
-```bash
+```shell
 bin/magento admin:adobe-ims:disable
 ```
 
@@ -298,7 +298,7 @@ Para ver las opciones globales, consulte [Opciones globales](#global-options).
 
 ## `admin:adobe-ims:enable`
 
-```bash
+```shell
 bin/magento admin:adobe-ims:enable [-o|--organization-id [ORGANIZATION-ID]] [-c|--client-id [CLIENT-ID]] [-s|--client-secret [CLIENT-SECRET]] [-t|--2fa [2FA]]
 ```
 
@@ -335,7 +335,7 @@ Compruebe si 2FA está habilitado para la organización en Adobe Admin Console. 
 
 ## `admin:adobe-ims:info`
 
-```bash
+```shell
 bin/magento admin:adobe-ims:info
 ```
 
@@ -348,7 +348,7 @@ Para ver las opciones globales, consulte [Opciones globales](#global-options).
 
 ## `admin:adobe-ims:status`
 
-```bash
+```shell
 bin/magento admin:adobe-ims:status
 ```
 
@@ -361,7 +361,7 @@ Para ver las opciones globales, consulte [Opciones globales](#global-options).
 
 ## `admin:user:create`
 
-```bash
+```shell
 bin/magento admin:user:create [--admin-user ADMIN-USER] [--admin-password ADMIN-PASSWORD] [--admin-email ADMIN-EMAIL] [--admin-firstname ADMIN-FIRSTNAME] [--admin-lastname ADMIN-LASTNAME] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
 
@@ -410,13 +410,13 @@ Agregar a cualquier comando para personalizar los parámetros de inicialización
 
 ## `admin:user:unlock`
 
-```bash
+```shell
 bin/magento admin:user:unlock <username>
 ```
 
 Desbloquear cuenta de administrador
 
-```
+```text
 This command unlocks an admin account by its username.
 To unlock:
       bin/magento admin:user:unlock username
@@ -437,7 +437,7 @@ Para ver las opciones globales, consulte [Opciones globales](#global-options).
 
 ## `app:config:dump`
 
-```bash
+```shell
 bin/magento app:config:dump [<config-types>...]
 ```
 
@@ -459,7 +459,7 @@ Para ver las opciones globales, consulte [Opciones globales](#global-options).
 
 ## `app:config:import`
 
-```bash
+```shell
 bin/magento app:config:import
 ```
 
@@ -472,7 +472,7 @@ Para ver las opciones globales, consulte [Opciones globales](#global-options).
 
 ## `app:config:status`
 
-```bash
+```shell
 bin/magento app:config:status
 ```
 
@@ -485,7 +485,7 @@ Para ver las opciones globales, consulte [Opciones globales](#global-options).
 
 ## `braintree:migrate`
 
-```bash
+```shell
 bin/magento braintree:migrate [--host HOST] [--dbname DBNAME] [--username USERNAME] [--password PASSWORD]
 ```
 
@@ -522,7 +522,7 @@ Contraseña
 
 ## `cache:clean`
 
-```bash
+```shell
 bin/magento cache:clean [--bootstrap BOOTSTRAP] [--] [<types>...]
 ```
 
@@ -550,7 +550,7 @@ añadir o anular parámetros del bootstrap
 
 ## `cache:clean:payment_services_merchant_scopes`
 
-```bash
+```shell
 bin/magento cache:clean:payment_services_merchant_scopes
 ```
 
@@ -563,7 +563,7 @@ Para ver las opciones globales, consulte [Opciones globales](#global-options).
 
 ## `cache:disable`
 
-```bash
+```shell
 bin/magento cache:disable [--bootstrap BOOTSTRAP] [--] [<types>...]
 ```
 
@@ -591,7 +591,7 @@ añadir o anular parámetros del bootstrap
 
 ## `cache:enable`
 
-```bash
+```shell
 bin/magento cache:enable [--bootstrap BOOTSTRAP] [--] [<types>...]
 ```
 
@@ -619,7 +619,7 @@ añadir o anular parámetros del bootstrap
 
 ## `cache:flush`
 
-```bash
+```shell
 bin/magento cache:flush [--bootstrap BOOTSTRAP] [--] [<types>...]
 ```
 
@@ -647,7 +647,7 @@ añadir o anular parámetros del bootstrap
 
 ## `cache:status`
 
-```bash
+```shell
 bin/magento cache:status [--bootstrap BOOTSTRAP]
 ```
 
@@ -666,7 +666,7 @@ añadir o anular parámetros del bootstrap
 
 ## `catalog:images:resize`
 
-```bash
+```shell
 bin/magento catalog:images:resize [-a|--async] [--skip_hidden_images]
 ```
 
@@ -693,7 +693,7 @@ No procesar imágenes marcadas como ocultas en la página del producto
 
 ## `catalog:product:attributes:cleanup`
 
-```bash
+```shell
 bin/magento catalog:product:attributes:cleanup
 ```
 
@@ -706,7 +706,7 @@ Para ver las opciones globales, consulte [Opciones globales](#global-options).
 
 ## `cms:wysiwyg:restrict`
 
-```bash
+```shell
 bin/magento cms:wysiwyg:restrict <restrict>
 ```
 
@@ -727,7 +727,7 @@ Para ver las opciones globales, consulte [Opciones globales](#global-options).
 
 ## `config:sensitive:set`
 
-```bash
+```shell
 bin/magento config:sensitive:set [-i|--interactive] [--scope [SCOPE]] [--scope-code [SCOPE-CODE]] [--] [<path> [<value>]]
 ```
 
@@ -772,7 +772,7 @@ Código de ámbito de la configuración, cadena vacía de forma predeterminada
 
 ## `config:set`
 
-```bash
+```shell
 bin/magento config:set [--scope SCOPE] [--scope-code SCOPE-CODE] [-e|--lock-env] [-c|--lock-config] [-l|--lock] [--] <path> <value>
 ```
 
@@ -834,7 +834,7 @@ En desuso, utilice la opción —lock-env en su lugar.
 
 ## `config:show`
 
-```bash
+```shell
 bin/magento config:show [--scope [SCOPE]] [--scope-code [SCOPE-CODE]] [--] [<path>]
 ```
 
@@ -867,7 +867,7 @@ Código de ámbito (requerido únicamente si el ámbito no es `default`)
 
 ## `cron:install`
 
-```bash
+```shell
 bin/magento cron:install [-f|--force] [-d|--non-optional]
 ```
 
@@ -894,7 +894,7 @@ Instalar solo las tareas no opcionales (predeterminadas)
 
 ## `cron:remove`
 
-```bash
+```shell
 bin/magento cron:remove
 ```
 
@@ -907,7 +907,7 @@ Para ver las opciones globales, consulte [Opciones globales](#global-options).
 
 ## `cron:run`
 
-```bash
+```shell
 bin/magento cron:run [--group GROUP] [--exclude-group [EXCLUDE-GROUP]] [--bootstrap BOOTSTRAP]
 ```
 
@@ -939,7 +939,7 @@ Agregar o anular parámetros del bootstrap
 
 ## `customer:hash:upgrade`
 
-```bash
+```shell
 bin/magento customer:hash:upgrade
 ```
 
@@ -952,7 +952,7 @@ Para ver las opciones globales, consulte [Opciones globales](#global-options).
 
 ## `deploy:mode:set`
 
-```bash
+```shell
 bin/magento deploy:mode:set [-s|--skip-compilation] [--] <mode>
 ```
 
@@ -980,7 +980,7 @@ Omite la eliminación y regeneración del contenido estático (código generado,
 
 ## `deploy:mode:show`
 
-```bash
+```shell
 bin/magento deploy:mode:show
 ```
 
@@ -993,7 +993,7 @@ Para ver las opciones globales, consulte [Opciones globales](#global-options).
 
 ## `dev:di:info`
 
-```bash
+```shell
 bin/magento dev:di:info <class> [<area>]
 ```
 
@@ -1019,7 +1019,7 @@ Para ver las opciones globales, consulte [Opciones globales](#global-options).
 
 ## `dev:email:newsletter-compatibility-check`
 
-```bash
+```shell
 bin/magento dev:email:newsletter-compatibility-check
 ```
 
@@ -1032,7 +1032,7 @@ Para ver las opciones globales, consulte [Opciones globales](#global-options).
 
 ## `dev:email:override-compatibility-check`
 
-```bash
+```shell
 bin/magento dev:email:override-compatibility-check
 ```
 
@@ -1045,7 +1045,7 @@ Para ver las opciones globales, consulte [Opciones globales](#global-options).
 
 ## `dev:profiler:disable`
 
-```bash
+```shell
 bin/magento dev:profiler:disable
 ```
 
@@ -1058,7 +1058,7 @@ Para ver las opciones globales, consulte [Opciones globales](#global-options).
 
 ## `dev:profiler:enable`
 
-```bash
+```shell
 bin/magento dev:profiler:enable [<type>]
 ```
 
@@ -1077,7 +1077,7 @@ Para ver las opciones globales, consulte [Opciones globales](#global-options).
 
 ## `dev:query-log:disable`
 
-```bash
+```shell
 bin/magento dev:query-log:disable
 ```
 
@@ -1090,7 +1090,7 @@ Para ver las opciones globales, consulte [Opciones globales](#global-options).
 
 ## `dev:query-log:enable`
 
-```bash
+```shell
 bin/magento dev:query-log:enable [--include-all-queries [INCLUDE-ALL-QUERIES]] [--query-time-threshold [QUERY-TIME-THRESHOLD]] [--include-call-stack [INCLUDE-CALL-STACK]]
 ```
 
@@ -1124,7 +1124,7 @@ Incluir pila de llamadas. [true\|false]
 
 ## `dev:source-theme:deploy`
 
-```bash
+```shell
 bin/magento dev:source-theme:deploy [--type TYPE] [--locale LOCALE] [--area AREA] [--theme THEME] [--] [<file>...]
 ```
 
@@ -1175,7 +1175,7 @@ Tema: [Proveedor/tema]
 
 ## `dev:template-hints:disable`
 
-```bash
+```shell
 bin/magento dev:template-hints:disable
 ```
 
@@ -1188,7 +1188,7 @@ Para ver las opciones globales, consulte [Opciones globales](#global-options).
 
 ## `dev:template-hints:enable`
 
-```bash
+```shell
 bin/magento dev:template-hints:enable
 ```
 
@@ -1201,7 +1201,7 @@ Para ver las opciones globales, consulte [Opciones globales](#global-options).
 
 ## `dev:template-hints:status`
 
-```bash
+```shell
 bin/magento dev:template-hints:status
 ```
 
@@ -1214,7 +1214,7 @@ Para ver las opciones globales, consulte [Opciones globales](#global-options).
 
 ## `dev:tests:run`
 
-```bash
+```shell
 bin/magento dev:tests:run [-c|--arguments ARGUMENTS] [--] [<type>]
 ```
 
@@ -1242,7 +1242,7 @@ Argumentos adicionales para PHPUnit. Ejemplo: &quot;-c&#39;—filter=MyTest&#39;
 
 ## `dev:urn-catalog:generate`
 
-```bash
+```shell
 bin/magento dev:urn-catalog:generate [--ide IDE] [--] <path>
 ```
 
@@ -1270,7 +1270,7 @@ Formato en el que se generará el catálogo. Compatible: [phpstorm, vscode]
 
 ## `dev:xml:convert`
 
-```bash
+```shell
 bin/magento dev:xml:convert [-o|--overwrite] [--] <xml-file> <processor>
 ```
 
@@ -1305,7 +1305,7 @@ Sobrescribir archivo XML
 
 ## `downloadable:domains:add`
 
-```bash
+```shell
 bin/magento downloadable:domains:add [<domains>...]
 ```
 
@@ -1327,7 +1327,7 @@ Para ver las opciones globales, consulte [Opciones globales](#global-options).
 
 ## `downloadable:domains:remove`
 
-```bash
+```shell
 bin/magento downloadable:domains:remove [<domains>...]
 ```
 
@@ -1349,7 +1349,7 @@ Para ver las opciones globales, consulte [Opciones globales](#global-options).
 
 ## `downloadable:domains:show`
 
-```bash
+```shell
 bin/magento downloadable:domains:show
 ```
 
@@ -1362,7 +1362,7 @@ Para ver las opciones globales, consulte [Opciones globales](#global-options).
 
 ## `encryption:data:list-re-encryptors`
 
-```bash
+```shell
 bin/magento encryption:data:list-re-encryptors
 ```
 
@@ -1375,7 +1375,7 @@ Para ver las opciones globales, consulte [Opciones globales](#global-options).
 
 ## `encryption:data:re-encrypt`
 
-```bash
+```shell
 bin/magento encryption:data:re-encrypt [<encryptors>...]
 ```
 
@@ -1397,7 +1397,7 @@ Para ver las opciones globales, consulte [Opciones globales](#global-options).
 
 ## `encryption:key:change`
 
-```bash
+```shell
 bin/magento encryption:key:change [-k|--key [KEY]]
 ```
 
@@ -1416,7 +1416,7 @@ La clave debe tener una cadena de 32 caracteres. Si no se proporciona, se genera
 
 ## `encryption:payment-data:update`
 
-```bash
+```shell
 bin/magento encryption:payment-data:update
 ```
 
@@ -1429,7 +1429,7 @@ Para ver las opciones globales, consulte [Opciones globales](#global-options).
 
 ## `events:create-event-provider`
 
-```bash
+```shell
 bin/magento events:create-event-provider [--label [LABEL]] [--description [DESCRIPTION]]events:provider:create 
 ```
 
@@ -1454,7 +1454,7 @@ Una descripción de su proveedor.
 
 ## `events:generate:module`
 
-```bash
+```shell
 bin/magento events:generate:module
 ```
 
@@ -1467,7 +1467,7 @@ Para ver las opciones globales, consulte [Opciones globales](#global-options).
 
 ## `events:info`
 
-```bash
+```shell
 bin/magento events:info [--depth [DEPTH]] [--] <event-code>
 ```
 
@@ -1495,7 +1495,7 @@ El número de niveles de la carga útil de evento que se van a devolver
 
 ## `events:list`
 
-```bash
+```shell
 bin/magento events:list
 ```
 
@@ -1508,7 +1508,7 @@ Para ver las opciones globales, consulte [Opciones globales](#global-options).
 
 ## `events:list:all`
 
-```bash
+```shell
 bin/magento events:list:all <module_name>
 ```
 
@@ -1529,7 +1529,7 @@ Para ver las opciones globales, consulte [Opciones globales](#global-options).
 
 ## `events:metadata:populate`
 
-```bash
+```shell
 bin/magento events:metadata:populate
 ```
 
@@ -1542,7 +1542,7 @@ Para ver las opciones globales, consulte [Opciones globales](#global-options).
 
 ## `events:provider:info`
 
-```bash
+```shell
 bin/magento events:provider:info
 ```
 
@@ -1555,7 +1555,7 @@ Para ver las opciones globales, consulte [Opciones globales](#global-options).
 
 ## `events:registrations:list`
 
-```bash
+```shell
 bin/magento events:registrations:list
 ```
 
@@ -1568,7 +1568,7 @@ Para ver las opciones globales, consulte [Opciones globales](#global-options).
 
 ## `events:subscribe`
 
-```bash
+```shell
 bin/magento events:subscribe [-f|--force] [--fields FIELDS] [--parent PARENT] [--rules RULES] [-p|--priority] [-d|--destination DESTINATION] [--hipaaAuditRequired] [--] <event-code>
 ```
 
@@ -1637,7 +1637,7 @@ Indica que el evento contiene datos sujetos a auditoría HIPAA.
 
 ## `events:sync-events-metadata`
 
-```bash
+```shell
 bin/magento events:sync-events-metadata [-d|--delete]
 ```
 
@@ -1657,7 +1657,7 @@ Ya no es necesario eliminar metadatos de eventos
 
 ## `events:unsubscribe`
 
-```bash
+```shell
 bin/magento events:unsubscribe <event-code>
 ```
 
@@ -1678,7 +1678,7 @@ Para ver las opciones globales, consulte [Opciones globales](#global-options).
 
 ## `i18n:collect-phrases`
 
-```bash
+```shell
 bin/magento i18n:collect-phrases [-o|--output OUTPUT] [-m|--magento] [--] [<directory>]
 ```
 
@@ -1710,7 +1710,7 @@ Utilice el parámetro —magento para analizar la base de código de Magento act
 
 ## `i18n:pack`
 
-```bash
+```shell
 bin/magento i18n:pack [-m|--mode MODE] [-d|--allow-duplicates] [--] <source> <locale>
 ```
 
@@ -1752,7 +1752,7 @@ Utilice el parámetro —allow-duplicates para permitir el guardado de duplicado
 
 ## `i18n:uninstall`
 
-```bash
+```shell
 bin/magento i18n:uninstall [-b|--backup-code] [--] <package>...
 ```
 
@@ -1783,7 +1783,7 @@ Realizar copia de seguridad de archivos de código y configuración (excepto arc
 
 ## `indexer:info`
 
-```bash
+```shell
 bin/magento indexer:info
 ```
 
@@ -1796,7 +1796,7 @@ Para ver las opciones globales, consulte [Opciones globales](#global-options).
 
 ## `indexer:reindex`
 
-```bash
+```shell
 bin/magento indexer:reindex [<index>...]
 ```
 
@@ -1818,7 +1818,7 @@ Para ver las opciones globales, consulte [Opciones globales](#global-options).
 
 ## `indexer:reset`
 
-```bash
+```shell
 bin/magento indexer:reset [<index>...]
 ```
 
@@ -1840,7 +1840,7 @@ Para ver las opciones globales, consulte [Opciones globales](#global-options).
 
 ## `indexer:set-dimensions-mode`
 
-```bash
+```shell
 bin/magento indexer:set-dimensions-mode [<indexer> [<mode>]]
 ```
 
@@ -1855,7 +1855,7 @@ Nombre del indizador [catalog_product_price|catalogpermissions_category]
 
 #### `mode`
 
-Modos de dimensión del indexador catalog_product_price          none,sitio web,grupo_cliente,sitio_web_y_grupo_cliente catalogpermissions_category    ninguno,customer_group
+Modos de dimensión de indizador catalog_product_price none,sitio web,customer_group,sitio_web_and_customer_group catalogpermissions_category none,customer_group
 
 ### Opciones
 
@@ -1864,7 +1864,7 @@ Para ver las opciones globales, consulte [Opciones globales](#global-options).
 
 ## `indexer:set-mode`
 
-```bash
+```shell
 bin/magento indexer:set-mode [<mode> [<index>...]]
 ```
 
@@ -1891,7 +1891,7 @@ Para ver las opciones globales, consulte [Opciones globales](#global-options).
 
 ## `indexer:set-status`
 
-```bash
+```shell
 bin/magento indexer:set-status <status> [<index>...]
 ```
 
@@ -1920,7 +1920,7 @@ Para ver las opciones globales, consulte [Opciones globales](#global-options).
 
 ## `indexer:show-dimensions-mode`
 
-```bash
+```shell
 bin/magento indexer:show-dimensions-mode [<indexer>...]
 ```
 
@@ -1942,7 +1942,7 @@ Para ver las opciones globales, consulte [Opciones globales](#global-options).
 
 ## `indexer:show-mode`
 
-```bash
+```shell
 bin/magento indexer:show-mode [<index>...]
 ```
 
@@ -1964,7 +1964,7 @@ Para ver las opciones globales, consulte [Opciones globales](#global-options).
 
 ## `indexer:status`
 
-```bash
+```shell
 bin/magento indexer:status [<index>...]
 ```
 
@@ -1986,7 +1986,7 @@ Para ver las opciones globales, consulte [Opciones globales](#global-options).
 
 ## `info:adminuri`
 
-```bash
+```shell
 bin/magento info:adminuri
 ```
 
@@ -1999,7 +1999,7 @@ Para ver las opciones globales, consulte [Opciones globales](#global-options).
 
 ## `info:backups:list`
 
-```bash
+```shell
 bin/magento info:backups:list
 ```
 
@@ -2012,7 +2012,7 @@ Para ver las opciones globales, consulte [Opciones globales](#global-options).
 
 ## `info:currency:list`
 
-```bash
+```shell
 bin/magento info:currency:list
 ```
 
@@ -2025,7 +2025,7 @@ Para ver las opciones globales, consulte [Opciones globales](#global-options).
 
 ## `info:dependencies:show-framework`
 
-```bash
+```shell
 bin/magento info:dependencies:show-framework [-o|--output OUTPUT]
 ```
 
@@ -2045,7 +2045,7 @@ Nombre del informe
 
 ## `info:dependencies:show-modules`
 
-```bash
+```shell
 bin/magento info:dependencies:show-modules [-o|--output OUTPUT]
 ```
 
@@ -2065,7 +2065,7 @@ Nombre del informe
 
 ## `info:dependencies:show-modules-circular`
 
-```bash
+```shell
 bin/magento info:dependencies:show-modules-circular [-o|--output OUTPUT]
 ```
 
@@ -2085,7 +2085,7 @@ Nombre del informe
 
 ## `info:language:list`
 
-```bash
+```shell
 bin/magento info:language:list
 ```
 
@@ -2098,7 +2098,7 @@ Para ver las opciones globales, consulte [Opciones globales](#global-options).
 
 ## `info:timezone:list`
 
-```bash
+```shell
 bin/magento info:timezone:list
 ```
 
@@ -2111,7 +2111,7 @@ Para ver las opciones globales, consulte [Opciones globales](#global-options).
 
 ## `inventory:reservation:create-compensations`
 
-```bash
+```shell
 bin/magento inventory:reservation:create-compensations [-r|--raw] [--] [<compensations>...]
 ```
 
@@ -2140,7 +2140,7 @@ Salida en bruto
 
 ## `inventory:reservation:list-inconsistencies`
 
-```bash
+```shell
 bin/magento inventory:reservation:list-inconsistencies [-c|--complete-orders] [-i|--incomplete-orders] [-b|--bunch-size [BUNCH-SIZE]] [-r|--raw]
 ```
 
@@ -2181,7 +2181,7 @@ Salida en bruto
 
 ## `inventory-geonames:import`
 
-```bash
+```shell
 bin/magento inventory-geonames:import <countries>...
 ```
 
@@ -2205,7 +2205,7 @@ Para ver las opciones globales, consulte [Opciones globales](#global-options).
 
 ## `maintenance:allow-ips`
 
-```bash
+```shell
 bin/magento maintenance:allow-ips [--none] [--add] [--magento-init-params MAGENTO-INIT-PARAMS] [--] [<ip>...]
 ```
 
@@ -2247,7 +2247,7 @@ Agregar a cualquier comando para personalizar los parámetros de inicialización
 
 ## `maintenance:disable`
 
-```bash
+```shell
 bin/magento maintenance:disable [--ip IP] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
 
@@ -2273,7 +2273,7 @@ Agregar a cualquier comando para personalizar los parámetros de inicialización
 
 ## `maintenance:enable`
 
-```bash
+```shell
 bin/magento maintenance:enable [--ip IP] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
 
@@ -2299,7 +2299,7 @@ Agregar a cualquier comando para personalizar los parámetros de inicialización
 
 ## `maintenance:status`
 
-```bash
+```shell
 bin/magento maintenance:status [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
 
@@ -2318,7 +2318,7 @@ Agregar a cualquier comando para personalizar los parámetros de inicialización
 
 ## `media-content:sync`
 
-```bash
+```shell
 bin/magento media-content:sync
 ```
 
@@ -2331,7 +2331,7 @@ Para ver las opciones globales, consulte [Opciones globales](#global-options).
 
 ## `media-gallery:sync`
 
-```bash
+```shell
 bin/magento media-gallery:sync
 ```
 
@@ -2344,7 +2344,7 @@ Para ver las opciones globales, consulte [Opciones globales](#global-options).
 
 ## `module:config:status`
 
-```bash
+```shell
 bin/magento module:config:status
 ```
 
@@ -2357,7 +2357,7 @@ Para ver las opciones globales, consulte [Opciones globales](#global-options).
 
 ## `module:disable`
 
-```bash
+```shell
 bin/magento module:disable [-f|--force] [--all] [-c|--clear-static-content] [--magento-init-params MAGENTO-INIT-PARAMS] [--] [<module>...]
 ```
 
@@ -2406,7 +2406,7 @@ Agregar a cualquier comando para personalizar los parámetros de inicialización
 
 ## `module:enable`
 
-```bash
+```shell
 bin/magento module:enable [-f|--force] [--all] [-c|--clear-static-content] [--magento-init-params MAGENTO-INIT-PARAMS] [--] [<module>...]
 ```
 
@@ -2455,7 +2455,7 @@ Agregar a cualquier comando para personalizar los parámetros de inicialización
 
 ## `module:status`
 
-```bash
+```shell
 bin/magento module:status [--enabled] [--disabled] [--magento-init-params MAGENTO-INIT-PARAMS] [--] [<module-names>...]
 ```
 
@@ -2497,7 +2497,7 @@ Agregar a cualquier comando para personalizar los parámetros de inicialización
 
 ## `module:uninstall`
 
-```bash
+```shell
 bin/magento module:uninstall [-r|--remove-data] [--backup-code] [--backup-media] [--backup-db] [--non-composer] [-c|--clear-static-content] [--magento-init-params MAGENTO-INIT-PARAMS] [--] <module>...
 ```
 
@@ -2569,7 +2569,7 @@ Agregar a cualquier comando para personalizar los parámetros de inicialización
 
 ## `newrelic:create:deploy-marker`
 
-```bash
+```shell
 bin/magento newrelic:create:deploy-marker <message> <change_log> [<user> [<revision>]]
 ```
 
@@ -2607,13 +2607,13 @@ Para ver las opciones globales, consulte [Opciones globales](#global-options).
 
 ## `queue:consumers:list`
 
-```bash
+```shell
 bin/magento queue:consumers:list
 ```
 
 Lista de consumidores de MessageQueue
 
-```
+```text
 This command shows list of MessageQueue consumers.
 ```
 
@@ -2624,13 +2624,13 @@ Para ver las opciones globales, consulte [Opciones globales](#global-options).
 
 ## `queue:consumers:restart`
 
-```bash
+```shell
 bin/magento queue:consumers:restart
 ```
 
 Reiniciar consumidores de MessageQueue
 
-```
+```text
 Command put poison pill for MessageQueue consumers and force to restart them after next status check.
 ```
 
@@ -2641,13 +2641,13 @@ Para ver las opciones globales, consulte [Opciones globales](#global-options).
 
 ## `queue:consumers:start`
 
-```bash
+```shell
 bin/magento queue:consumers:start [--max-messages MAX-MESSAGES] [--batch-size BATCH-SIZE] [--area-code AREA-CODE] [--single-thread] [--multi-process [MULTI-PROCESS]] [--pid-file-path PID-FILE-PATH] [--] <consumer>
 ```
 
 Iniciar consumidor de MessageQueue
 
-```
+```text
 This command starts MessageQueue consumer by its name.
 
 To start consumer which will process all queued messages and terminate execution:
@@ -2705,7 +2705,7 @@ Número de mensajes por lote. Aplicable únicamente para el consumidor de lotes.
 
 #### `--area-code`
 
-El área preferida (global, adminhtml, etc.) por defecto es global.
+El área preferida (global, adminhtml, etc.) el valor predeterminado es global.
 
 - Requiere un valor
 
@@ -2731,7 +2731,7 @@ Ruta de archivo para guardar el PID (esta opción está obsoleta; utilice —sin
 
 ## `remote-storage:sync`
 
-```bash
+```shell
 bin/magento remote-storage:sync
 ```
 
@@ -2744,7 +2744,7 @@ Para ver las opciones globales, consulte [Opciones globales](#global-options).
 
 ## `saas:resync`
 
-```bash
+```shell
 bin/magento saas:resync [--feed FEED] [--no-reindex] [--cleanup-feed] [--dry-run] [--thread-count THREAD-COUNT] [--batch-size BATCH-SIZE] [--continue-resync] [--by-ids BY-IDS] [--id-type ID-TYPE]
 ```
 
@@ -2815,7 +2815,7 @@ Tipo de identificadores para la resincronización parcial (por ejemplo: sku, pro
 
 ## `sampledata:deploy`
 
-```bash
+```shell
 bin/magento sampledata:deploy [--no-update]
 ```
 
@@ -2835,7 +2835,7 @@ Actualizar composer.json sin ejecutar la actualización del compositor
 
 ## `sampledata:remove`
 
-```bash
+```shell
 bin/magento sampledata:remove [--no-update]
 ```
 
@@ -2855,7 +2855,7 @@ Actualizar composer.json sin ejecutar la actualización del compositor
 
 ## `sampledata:reset`
 
-```bash
+```shell
 bin/magento sampledata:reset
 ```
 
@@ -2868,7 +2868,7 @@ Para ver las opciones globales, consulte [Opciones globales](#global-options).
 
 ## `security:recaptcha:disable-for-user-forgot-password`
 
-```bash
+```shell
 bin/magento security:recaptcha:disable-for-user-forgot-password
 ```
 
@@ -2881,7 +2881,7 @@ Para ver las opciones globales, consulte [Opciones globales](#global-options).
 
 ## `security:recaptcha:disable-for-user-login`
 
-```bash
+```shell
 bin/magento security:recaptcha:disable-for-user-login
 ```
 
@@ -2894,7 +2894,7 @@ Para ver las opciones globales, consulte [Opciones globales](#global-options).
 
 ## `security:tfa:google:set-secret`
 
-```bash
+```shell
 bin/magento security:tfa:google:set-secret <user> <secret>
 ```
 
@@ -2922,7 +2922,7 @@ Para ver las opciones globales, consulte [Opciones globales](#global-options).
 
 ## `security:tfa:providers`
 
-```bash
+```shell
 bin/magento security:tfa:providers
 ```
 
@@ -2935,7 +2935,7 @@ Para ver las opciones globales, consulte [Opciones globales](#global-options).
 
 ## `security:tfa:reset`
 
-```bash
+```shell
 bin/magento security:tfa:reset <user> <provider>
 ```
 
@@ -2963,7 +2963,7 @@ Para ver las opciones globales, consulte [Opciones globales](#global-options).
 
 ## `server:run`
 
-```bash
+```shell
 bin/magento server:run [-p|--port [PORT]] [-b|--background [BACKGROUND]] [-wn|--workerNum [WORKERNUM]] [-dm|--dispatchMode [DISPATCHMODE]] [-mr|--maxRequests [MAXREQUESTS]] [-a|--area [AREA]] [-mip|--magento-init-params [MAGENTO-INIT-PARAMS]] [-mwt|--maxWaitTime [MAXWAITTIME]] [--state-monitor]
 ```
 
@@ -3039,7 +3039,7 @@ Habilite la monitorización de estado. Utilice esto solo para depurar problemas 
 
 ## `server:state-monitor:aggregate-output`
 
-```bash
+```shell
 bin/magento server:state-monitor:aggregate-output
 ```
 
@@ -3052,7 +3052,7 @@ Para ver las opciones globales, consulte [Opciones globales](#global-options).
 
 ## `setup:backup`
 
-```bash
+```shell
 bin/magento setup:backup [--code] [--media] [--db] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
 
@@ -3092,7 +3092,7 @@ Agregar a cualquier comando para personalizar los parámetros de inicialización
 
 ## `setup:config:set`
 
-```bash
+```shell
 bin/magento setup:config:set [--remote-storage-driver REMOTE-STORAGE-DRIVER] [--remote-storage-prefix REMOTE-STORAGE-PREFIX] [--remote-storage-endpoint REMOTE-STORAGE-ENDPOINT] [--remote-storage-bucket REMOTE-STORAGE-BUCKET] [--remote-storage-region REMOTE-STORAGE-REGION] [--remote-storage-key REMOTE-STORAGE-KEY] [--remote-storage-secret REMOTE-STORAGE-SECRET] [--remote-storage-path-style REMOTE-STORAGE-PATH-STYLE] [--backend-frontname BACKEND-FRONTNAME] [--enable-debug-logging ENABLE-DEBUG-LOGGING] [--enable-syslog-logging ENABLE-SYSLOG-LOGGING] [--id_salt ID_SALT] [--checkout-async CHECKOUT-ASYNC] [--config-async CONFIG-ASYNC] [--amqp-host AMQP-HOST] [--amqp-port AMQP-PORT] [--amqp-user AMQP-USER] [--amqp-password AMQP-PASSWORD] [--amqp-virtualhost AMQP-VIRTUALHOST] [--amqp-ssl AMQP-SSL] [--amqp-ssl-options AMQP-SSL-OPTIONS] [--consumers-wait-for-messages CONSUMERS-WAIT-FOR-MESSAGES] [--queue-default-connection QUEUE-DEFAULT-CONNECTION] [--deferred-total-calculating DEFERRED-TOTAL-CALCULATING] [--key KEY] [--db-host DB-HOST] [--db-name DB-NAME] [--db-user DB-USER] [--db-engine DB-ENGINE] [--db-password DB-PASSWORD] [--db-prefix DB-PREFIX] [--db-model DB-MODEL] [--db-init-statements DB-INIT-STATEMENTS] [-s|--skip-db-validation] [--http-cache-hosts HTTP-CACHE-HOSTS] [--db-ssl-key DB-SSL-KEY] [--db-ssl-cert DB-SSL-CERT] [--db-ssl-ca DB-SSL-CA] [--db-ssl-verify] [--session-save SESSION-SAVE] [--session-save-redis-host SESSION-SAVE-REDIS-HOST] [--session-save-redis-port SESSION-SAVE-REDIS-PORT] [--session-save-redis-password SESSION-SAVE-REDIS-PASSWORD] [--session-save-redis-timeout SESSION-SAVE-REDIS-TIMEOUT] [--session-save-redis-retries SESSION-SAVE-REDIS-RETRIES] [--session-save-redis-persistent-id SESSION-SAVE-REDIS-PERSISTENT-ID] [--session-save-redis-db SESSION-SAVE-REDIS-DB] [--session-save-redis-compression-threshold SESSION-SAVE-REDIS-COMPRESSION-THRESHOLD] [--session-save-redis-compression-lib SESSION-SAVE-REDIS-COMPRESSION-LIB] [--session-save-redis-log-level SESSION-SAVE-REDIS-LOG-LEVEL] [--session-save-redis-max-concurrency SESSION-SAVE-REDIS-MAX-CONCURRENCY] [--session-save-redis-break-after-frontend SESSION-SAVE-REDIS-BREAK-AFTER-FRONTEND] [--session-save-redis-break-after-adminhtml SESSION-SAVE-REDIS-BREAK-AFTER-ADMINHTML] [--session-save-redis-first-lifetime SESSION-SAVE-REDIS-FIRST-LIFETIME] [--session-save-redis-bot-first-lifetime SESSION-SAVE-REDIS-BOT-FIRST-LIFETIME] [--session-save-redis-bot-lifetime SESSION-SAVE-REDIS-BOT-LIFETIME] [--session-save-redis-disable-locking SESSION-SAVE-REDIS-DISABLE-LOCKING] [--session-save-redis-min-lifetime SESSION-SAVE-REDIS-MIN-LIFETIME] [--session-save-redis-max-lifetime SESSION-SAVE-REDIS-MAX-LIFETIME] [--session-save-redis-sentinel-master SESSION-SAVE-REDIS-SENTINEL-MASTER] [--session-save-redis-sentinel-servers SESSION-SAVE-REDIS-SENTINEL-SERVERS] [--session-save-redis-sentinel-verify-master SESSION-SAVE-REDIS-SENTINEL-VERIFY-MASTER] [--session-save-redis-sentinel-connect-retries SESSION-SAVE-REDIS-SENTINEL-CONNECT-RETRIES] [--cache-backend CACHE-BACKEND] [--cache-backend-redis-server CACHE-BACKEND-REDIS-SERVER] [--cache-backend-redis-db CACHE-BACKEND-REDIS-DB] [--cache-backend-redis-port CACHE-BACKEND-REDIS-PORT] [--cache-backend-redis-password CACHE-BACKEND-REDIS-PASSWORD] [--cache-backend-redis-compress-data CACHE-BACKEND-REDIS-COMPRESS-DATA] [--cache-backend-redis-compression-lib CACHE-BACKEND-REDIS-COMPRESSION-LIB] [--cache-backend-redis-use-lua CACHE-BACKEND-REDIS-USE-LUA] [--cache-backend-redis-use-lua-on-gc CACHE-BACKEND-REDIS-USE-LUA-ON-GC] [--cache-id-prefix CACHE-ID-PREFIX] [--allow-parallel-generation] [--page-cache PAGE-CACHE] [--page-cache-redis-server PAGE-CACHE-REDIS-SERVER] [--page-cache-redis-db PAGE-CACHE-REDIS-DB] [--page-cache-redis-port PAGE-CACHE-REDIS-PORT] [--page-cache-redis-password PAGE-CACHE-REDIS-PASSWORD] [--page-cache-redis-compress-data PAGE-CACHE-REDIS-COMPRESS-DATA] [--page-cache-redis-compression-lib PAGE-CACHE-REDIS-COMPRESSION-LIB] [--page-cache-id-prefix PAGE-CACHE-ID-PREFIX] [--lock-provider LOCK-PROVIDER] [--lock-db-prefix LOCK-DB-PREFIX] [--lock-zookeeper-host LOCK-ZOOKEEPER-HOST] [--lock-zookeeper-path LOCK-ZOOKEEPER-PATH] [--lock-file-path LOCK-FILE-PATH] [--document-root-is-pub DOCUMENT-ROOT-IS-PUB] [--backpressure-logger BACKPRESSURE-LOGGER] [--backpressure-logger-redis-server BACKPRESSURE-LOGGER-REDIS-SERVER] [--backpressure-logger-redis-port BACKPRESSURE-LOGGER-REDIS-PORT] [--backpressure-logger-redis-timeout BACKPRESSURE-LOGGER-REDIS-TIMEOUT] [--backpressure-logger-redis-persistent BACKPRESSURE-LOGGER-REDIS-PERSISTENT] [--backpressure-logger-redis-db BACKPRESSURE-LOGGER-REDIS-DB] [--backpressure-logger-redis-password BACKPRESSURE-LOGGER-REDIS-PASSWORD] [--backpressure-logger-redis-user BACKPRESSURE-LOGGER-REDIS-USER] [--backpressure-logger-id-prefix BACKPRESSURE-LOGGER-ID-PREFIX] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
 
@@ -3247,7 +3247,7 @@ Opciones SSL de Amqp (JSON)
 
 #### `--queue-default-connection`
 
-Conexión predeterminada de colas de mensajes. Puede ser &quot;db&quot;, &quot;amqp&quot; o un sistema de colas personalizado. El sistema de colas debe estar instalado y configurado; de lo contrario, los mensajes no se procesarán correctamente.
+Conexión predeterminada de colas de mensajes. Puede ser &quot;db&quot;, &quot;amqp&quot; o un sistema de colas personalizado.El sistema de colas debe estar instalado y configurado; de lo contrario, los mensajes no se procesarán correctamente.
 
 - Requiere un valor
 
@@ -3710,7 +3710,7 @@ Agregar a cualquier comando para personalizar los parámetros de inicialización
 
 ## `setup:db-data:upgrade`
 
-```bash
+```shell
 bin/magento setup:db-data:upgrade [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
 
@@ -3729,7 +3729,7 @@ Agregar a cualquier comando para personalizar los parámetros de inicialización
 
 ## `setup:db-declaration:generate-patch`
 
-```bash
+```shell
 bin/magento setup:db-declaration:generate-patch [--revertable [REVERTABLE]] [--type [TYPE]] [--] <module> <patch>
 ```
 
@@ -3771,7 +3771,7 @@ Averigüe qué tipo de parche se debe generar. Valores disponibles: `data`, `sch
 
 ## `setup:db-declaration:generate-whitelist`
 
-```bash
+```shell
 bin/magento setup:db-declaration:generate-whitelist [--module-name [MODULE-NAME]]
 ```
 
@@ -3791,7 +3791,7 @@ Nombre del módulo donde se generará la lista de admitidos
 
 ## `setup:db-schema:add-slave`
 
-```bash
+```shell
 bin/magento setup:db-schema:add-slave [--host HOST] [--dbname DBNAME] [--username USERNAME] [--password [PASSWORD]] [--connection [CONNECTION]] [--resource [RESOURCE]] [--maxAllowedLag [MAXALLOWEDLAG]] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
 
@@ -3857,7 +3857,7 @@ Agregar a cualquier comando para personalizar los parámetros de inicialización
 
 ## `setup:db-schema:split-quote`
 
-```bash
+```shell
 bin/magento setup:db-schema:split-quote [--host HOST] [--dbname DBNAME] [--username USERNAME] [--password [PASSWORD]] [--connection [CONNECTION]] [--resource [RESOURCE]] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
 
@@ -3914,7 +3914,7 @@ Agregar a cualquier comando para personalizar los parámetros de inicialización
 
 ## `setup:db-schema:split-sales`
 
-```bash
+```shell
 bin/magento setup:db-schema:split-sales [--host HOST] [--dbname DBNAME] [--username USERNAME] [--password [PASSWORD]] [--connection [CONNECTION]] [--resource [RESOURCE]] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
 
@@ -3971,7 +3971,7 @@ Agregar a cualquier comando para personalizar los parámetros de inicialización
 
 ## `setup:db-schema:upgrade`
 
-```bash
+```shell
 bin/magento setup:db-schema:upgrade [--convert-old-scripts [CONVERT-OLD-SCRIPTS]] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
 
@@ -3997,7 +3997,7 @@ Agregar a cualquier comando para personalizar los parámetros de inicialización
 
 ## `setup:db:status`
 
-```bash
+```shell
 bin/magento setup:db:status [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
 
@@ -4016,7 +4016,7 @@ Agregar a cualquier comando para personalizar los parámetros de inicialización
 
 ## `setup:di:compile`
 
-```bash
+```shell
 bin/magento setup:di:compile
 ```
 
@@ -4029,7 +4029,7 @@ Para ver las opciones globales, consulte [Opciones globales](#global-options).
 
 ## `setup:install`
 
-```bash
+```shell
 bin/magento setup:install [--remote-storage-driver REMOTE-STORAGE-DRIVER] [--remote-storage-prefix REMOTE-STORAGE-PREFIX] [--remote-storage-endpoint REMOTE-STORAGE-ENDPOINT] [--remote-storage-bucket REMOTE-STORAGE-BUCKET] [--remote-storage-region REMOTE-STORAGE-REGION] [--remote-storage-key REMOTE-STORAGE-KEY] [--remote-storage-secret REMOTE-STORAGE-SECRET] [--remote-storage-path-style REMOTE-STORAGE-PATH-STYLE] [--backend-frontname BACKEND-FRONTNAME] [--enable-debug-logging ENABLE-DEBUG-LOGGING] [--enable-syslog-logging ENABLE-SYSLOG-LOGGING] [--id_salt ID_SALT] [--checkout-async CHECKOUT-ASYNC] [--config-async CONFIG-ASYNC] [--amqp-host AMQP-HOST] [--amqp-port AMQP-PORT] [--amqp-user AMQP-USER] [--amqp-password AMQP-PASSWORD] [--amqp-virtualhost AMQP-VIRTUALHOST] [--amqp-ssl AMQP-SSL] [--amqp-ssl-options AMQP-SSL-OPTIONS] [--consumers-wait-for-messages CONSUMERS-WAIT-FOR-MESSAGES] [--queue-default-connection QUEUE-DEFAULT-CONNECTION] [--deferred-total-calculating DEFERRED-TOTAL-CALCULATING] [--key KEY] [--db-host DB-HOST] [--db-name DB-NAME] [--db-user DB-USER] [--db-engine DB-ENGINE] [--db-password DB-PASSWORD] [--db-prefix DB-PREFIX] [--db-model DB-MODEL] [--db-init-statements DB-INIT-STATEMENTS] [-s|--skip-db-validation] [--http-cache-hosts HTTP-CACHE-HOSTS] [--db-ssl-key DB-SSL-KEY] [--db-ssl-cert DB-SSL-CERT] [--db-ssl-ca DB-SSL-CA] [--db-ssl-verify] [--session-save SESSION-SAVE] [--session-save-redis-host SESSION-SAVE-REDIS-HOST] [--session-save-redis-port SESSION-SAVE-REDIS-PORT] [--session-save-redis-password SESSION-SAVE-REDIS-PASSWORD] [--session-save-redis-timeout SESSION-SAVE-REDIS-TIMEOUT] [--session-save-redis-retries SESSION-SAVE-REDIS-RETRIES] [--session-save-redis-persistent-id SESSION-SAVE-REDIS-PERSISTENT-ID] [--session-save-redis-db SESSION-SAVE-REDIS-DB] [--session-save-redis-compression-threshold SESSION-SAVE-REDIS-COMPRESSION-THRESHOLD] [--session-save-redis-compression-lib SESSION-SAVE-REDIS-COMPRESSION-LIB] [--session-save-redis-log-level SESSION-SAVE-REDIS-LOG-LEVEL] [--session-save-redis-max-concurrency SESSION-SAVE-REDIS-MAX-CONCURRENCY] [--session-save-redis-break-after-frontend SESSION-SAVE-REDIS-BREAK-AFTER-FRONTEND] [--session-save-redis-break-after-adminhtml SESSION-SAVE-REDIS-BREAK-AFTER-ADMINHTML] [--session-save-redis-first-lifetime SESSION-SAVE-REDIS-FIRST-LIFETIME] [--session-save-redis-bot-first-lifetime SESSION-SAVE-REDIS-BOT-FIRST-LIFETIME] [--session-save-redis-bot-lifetime SESSION-SAVE-REDIS-BOT-LIFETIME] [--session-save-redis-disable-locking SESSION-SAVE-REDIS-DISABLE-LOCKING] [--session-save-redis-min-lifetime SESSION-SAVE-REDIS-MIN-LIFETIME] [--session-save-redis-max-lifetime SESSION-SAVE-REDIS-MAX-LIFETIME] [--session-save-redis-sentinel-master SESSION-SAVE-REDIS-SENTINEL-MASTER] [--session-save-redis-sentinel-servers SESSION-SAVE-REDIS-SENTINEL-SERVERS] [--session-save-redis-sentinel-verify-master SESSION-SAVE-REDIS-SENTINEL-VERIFY-MASTER] [--session-save-redis-sentinel-connect-retries SESSION-SAVE-REDIS-SENTINEL-CONNECT-RETRIES] [--cache-backend CACHE-BACKEND] [--cache-backend-redis-server CACHE-BACKEND-REDIS-SERVER] [--cache-backend-redis-db CACHE-BACKEND-REDIS-DB] [--cache-backend-redis-port CACHE-BACKEND-REDIS-PORT] [--cache-backend-redis-password CACHE-BACKEND-REDIS-PASSWORD] [--cache-backend-redis-compress-data CACHE-BACKEND-REDIS-COMPRESS-DATA] [--cache-backend-redis-compression-lib CACHE-BACKEND-REDIS-COMPRESSION-LIB] [--cache-backend-redis-use-lua CACHE-BACKEND-REDIS-USE-LUA] [--cache-backend-redis-use-lua-on-gc CACHE-BACKEND-REDIS-USE-LUA-ON-GC] [--cache-id-prefix CACHE-ID-PREFIX] [--allow-parallel-generation] [--page-cache PAGE-CACHE] [--page-cache-redis-server PAGE-CACHE-REDIS-SERVER] [--page-cache-redis-db PAGE-CACHE-REDIS-DB] [--page-cache-redis-port PAGE-CACHE-REDIS-PORT] [--page-cache-redis-password PAGE-CACHE-REDIS-PASSWORD] [--page-cache-redis-compress-data PAGE-CACHE-REDIS-COMPRESS-DATA] [--page-cache-redis-compression-lib PAGE-CACHE-REDIS-COMPRESSION-LIB] [--page-cache-id-prefix PAGE-CACHE-ID-PREFIX] [--lock-provider LOCK-PROVIDER] [--lock-db-prefix LOCK-DB-PREFIX] [--lock-zookeeper-host LOCK-ZOOKEEPER-HOST] [--lock-zookeeper-path LOCK-ZOOKEEPER-PATH] [--lock-file-path LOCK-FILE-PATH] [--document-root-is-pub DOCUMENT-ROOT-IS-PUB] [--backpressure-logger BACKPRESSURE-LOGGER] [--backpressure-logger-redis-server BACKPRESSURE-LOGGER-REDIS-SERVER] [--backpressure-logger-redis-port BACKPRESSURE-LOGGER-REDIS-PORT] [--backpressure-logger-redis-timeout BACKPRESSURE-LOGGER-REDIS-TIMEOUT] [--backpressure-logger-redis-persistent BACKPRESSURE-LOGGER-REDIS-PERSISTENT] [--backpressure-logger-redis-db BACKPRESSURE-LOGGER-REDIS-DB] [--backpressure-logger-redis-password BACKPRESSURE-LOGGER-REDIS-PASSWORD] [--backpressure-logger-redis-user BACKPRESSURE-LOGGER-REDIS-USER] [--backpressure-logger-id-prefix BACKPRESSURE-LOGGER-ID-PREFIX] [--base-url BASE-URL] [--language LANGUAGE] [--timezone TIMEZONE] [--currency CURRENCY] [--use-rewrites USE-REWRITES] [--use-secure USE-SECURE] [--base-url-secure BASE-URL-SECURE] [--use-secure-admin USE-SECURE-ADMIN] [--admin-use-security-key ADMIN-USE-SECURITY-KEY] [--admin-user [ADMIN-USER]] [--admin-password [ADMIN-PASSWORD]] [--admin-email [ADMIN-EMAIL]] [--admin-firstname [ADMIN-FIRSTNAME]] [--admin-lastname [ADMIN-LASTNAME]] [--search-engine SEARCH-ENGINE] [--elasticsearch-host ELASTICSEARCH-HOST] [--elasticsearch-port ELASTICSEARCH-PORT] [--elasticsearch-enable-auth ELASTICSEARCH-ENABLE-AUTH] [--elasticsearch-username ELASTICSEARCH-USERNAME] [--elasticsearch-password ELASTICSEARCH-PASSWORD] [--elasticsearch-index-prefix ELASTICSEARCH-INDEX-PREFIX] [--elasticsearch-timeout ELASTICSEARCH-TIMEOUT] [--opensearch-host OPENSEARCH-HOST] [--opensearch-port OPENSEARCH-PORT] [--opensearch-enable-auth OPENSEARCH-ENABLE-AUTH] [--opensearch-username OPENSEARCH-USERNAME] [--opensearch-password OPENSEARCH-PASSWORD] [--opensearch-index-prefix OPENSEARCH-INDEX-PREFIX] [--opensearch-timeout OPENSEARCH-TIMEOUT] [--cleanup-database] [--sales-order-increment-prefix SALES-ORDER-INCREMENT-PREFIX] [--use-sample-data] [--enable-modules [ENABLE-MODULES]] [--disable-modules [DISABLE-MODULES]] [--convert-old-scripts [CONVERT-OLD-SCRIPTS]] [-i|--interactive] [--safe-mode [SAFE-MODE]] [--data-restore [DATA-RESTORE]] [--dry-run [DRY-RUN]] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
 
@@ -4184,7 +4184,7 @@ Opciones SSL de Amqp (JSON)
 
 #### `--queue-default-connection`
 
-Conexión predeterminada de colas de mensajes. Puede ser &quot;db&quot;, &quot;amqp&quot; o un sistema de colas personalizado. El sistema de colas debe estar instalado y configurado; de lo contrario, los mensajes no se procesarán correctamente.
+Conexión predeterminada de colas de mensajes. Puede ser &quot;db&quot;, &quot;amqp&quot; o un sistema de colas personalizado.El sistema de colas debe estar instalado y configurado; de lo contrario, los mensajes no se procesarán correctamente.
 
 - Requiere un valor
 
@@ -4886,7 +4886,7 @@ Agregar a cualquier comando para personalizar los parámetros de inicialización
 
 ## `setup:performance:generate-fixtures`
 
-```bash
+```shell
 bin/magento setup:performance:generate-fixtures [-s|--skip-reindex] [--] <profile>
 ```
 
@@ -4914,7 +4914,7 @@ Omitir reindexación
 
 ## `setup:rollback`
 
-```bash
+```shell
 bin/magento setup:rollback [-c|--code-file CODE-FILE] [-m|--media-file MEDIA-FILE] [-d|--db-file DB-FILE] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
 
@@ -4951,7 +4951,7 @@ Agregar a cualquier comando para personalizar los parámetros de inicialización
 
 ## `setup:static-content:deploy`
 
-```bash
+```shell
 bin/magento setup:static-content:deploy [-f|--force] [-s|--strategy [STRATEGY]] [-a|--area [AREA]] [--exclude-area [EXCLUDE-AREA]] [-t|--theme [THEME]] [--exclude-theme [EXCLUDE-THEME]] [-l|--language [LANGUAGE]] [--exclude-language [EXCLUDE-LANGUAGE]] [-j|--jobs [JOBS]] [--max-execution-time [MAX-EXECUTION-TIME]] [--symlink-locale] [--content-version CONTENT-VERSION] [--refresh-content-version-only] [--no-javascript] [--no-js-bundle] [--no-css] [--no-less] [--no-images] [--no-fonts] [--no-html] [--no-misc] [--no-html-minify] [--no-parent] [--] [<languages>...]
 ```
 
@@ -5133,7 +5133,7 @@ No compilar temáticas principales. Compatible solo con estrategias rápidas y e
 
 ## `setup:store-config:set`
 
-```bash
+```shell
 bin/magento setup:store-config:set [--base-url BASE-URL] [--language LANGUAGE] [--timezone TIMEZONE] [--currency CURRENCY] [--use-rewrites USE-REWRITES] [--use-secure USE-SECURE] [--base-url-secure BASE-URL-SECURE] [--use-secure-admin USE-SECURE-ADMIN] [--admin-use-security-key ADMIN-USE-SECURITY-KEY] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
 
@@ -5206,7 +5206,7 @@ Agregar a cualquier comando para personalizar los parámetros de inicialización
 
 ## `setup:uninstall`
 
-```bash
+```shell
 bin/magento setup:uninstall [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
 
@@ -5225,7 +5225,7 @@ Agregar a cualquier comando para personalizar los parámetros de inicialización
 
 ## `setup:upgrade`
 
-```bash
+```shell
 bin/magento setup:upgrade [--keep-generated] [--convert-old-scripts [CONVERT-OLD-SCRIPTS]] [--safe-mode [SAFE-MODE]] [--data-restore [DATA-RESTORE]] [--dry-run [DRY-RUN]] [--magento-init-params MAGENTO-INIT-PARAMS]
 ```
 
@@ -5277,7 +5277,7 @@ Agregar a cualquier comando para personalizar los parámetros de inicialización
 
 ## `store:list`
 
-```bash
+```shell
 bin/magento store:list
 ```
 
@@ -5290,7 +5290,7 @@ Para ver las opciones globales, consulte [Opciones globales](#global-options).
 
 ## `store:website:list`
 
-```bash
+```shell
 bin/magento store:website:list
 ```
 
@@ -5303,7 +5303,7 @@ Para ver las opciones globales, consulte [Opciones globales](#global-options).
 
 ## `support:backup:code`
 
-```bash
+```shell
 bin/magento support:backup:code [--name [NAME]] [-o|--output [OUTPUT]] [-l|--logs]
 ```
 
@@ -5335,7 +5335,7 @@ Incluir registros
 
 ## `support:backup:db`
 
-```bash
+```shell
 bin/magento support:backup:db [--name [NAME]] [-o|--output [OUTPUT]] [-l|--logs] [-i|--ignore-sanitize]
 ```
 
@@ -5374,7 +5374,7 @@ Ignorar sanear
 
 ## `support:utility:check`
 
-```bash
+```shell
 bin/magento support:utility:check [--hide-paths]
 ```
 
@@ -5394,7 +5394,7 @@ Compruebe solo las utilidades de consola requeridas
 
 ## `support:utility:paths`
 
-```bash
+```shell
 bin/magento support:utility:paths [-f|--force]
 ```
 
@@ -5414,7 +5414,7 @@ Forzar
 
 ## `theme:uninstall`
 
-```bash
+```shell
 bin/magento theme:uninstall [--backup-code] [-c|--clear-static-content] [--] <theme>...
 ```
 
@@ -5452,7 +5452,7 @@ Borrar archivos de vista estática generados.
 
 ## `varnish:vcl:generate`
 
-```bash
+```shell
 bin/magento varnish:vcl:generate [--access-list ACCESS-LIST] [--backend-host BACKEND-HOST] [--backend-port BACKEND-PORT] [--export-version EXPORT-VERSION] [--grace-period GRACE-PERIOD] [--input-file INPUT-FILE] [--output-file OUTPUT-FILE]
 ```
 
@@ -5512,7 +5512,7 @@ Ruta al archivo para escribir vcl
 
 ## `webhooks:dev:run`
 
-```bash
+```shell
 bin/magento webhooks:dev:run <name> <payload>
 ```
 
@@ -5540,7 +5540,7 @@ Para ver las opciones globales, consulte [Opciones globales](#global-options).
 
 ## `webhooks:generate:module`
 
-```bash
+```shell
 bin/magento webhooks:generate:module
 ```
 
@@ -5553,7 +5553,7 @@ Para ver las opciones globales, consulte [Opciones globales](#global-options).
 
 ## `webhooks:info`
 
-```bash
+```shell
 bin/magento webhooks:info [--depth [DEPTH]] [--] <webhook-name> [<webhook-type>]
 ```
 
@@ -5588,7 +5588,7 @@ El número de niveles de la carga útil del gancho web que se van a devolver
 
 ## `webhooks:list`
 
-```bash
+```shell
 bin/magento webhooks:list
 ```
 
@@ -5601,7 +5601,7 @@ Para ver las opciones globales, consulte [Opciones globales](#global-options).
 
 ## `webhooks:list:all`
 
-```bash
+```shell
 bin/magento webhooks:list:all <module_name>
 ```
 

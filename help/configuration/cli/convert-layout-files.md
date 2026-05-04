@@ -2,9 +2,9 @@
 title: Convertir archivos de diseño
 description: Obtenga información sobre cómo convertir archivos de diseño XML mediante las herramientas de línea de comandos de Adobe Commerce. Descubra actualizaciones de hojas de estilo XSLT y procesos de conversión de archivos.
 exl-id: 9852b735-9b4b-43ce-887f-5c37d398bbf7
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: f9a135fc63574ccbecd3f564a87fc5c4ac03f009
 workflow-type: tm+mt
-source-wordcount: '98'
+source-wordcount: '118'
 ht-degree: 0%
 
 ---
@@ -15,12 +15,12 @@ ht-degree: 0%
 
 Utilice este comando para actualizar los archivos XML de diseño si actualiza la hoja de estilo XSLT (Extensible Stylesheet Language Transformations) correspondiente.
 
-- [Instrucciones de diseño](https://developer.adobe.com/commerce/frontend-core/guide/layouts/xml-instructions/)
-- [Tipos de archivo de diseño](https://developer.adobe.com/commerce/frontend-core/guide/layouts/types/)
+- [Instrucciones de diseño](https://developer.adobe.com/commerce/frontend-core/guide/layouts/xml-instructions)
+- [Tipos de archivo de diseño](https://developer.adobe.com/commerce/frontend-core/guide/layouts/#layout-files-types-and-conventions)
 
 Opciones de comando:
 
-```bash
+```shell
 bin/magento dev:xml:convert [-o|--overwrite] {xml file} {xslt stylesheet}
 ```
 

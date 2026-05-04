@@ -3,9 +3,9 @@ title: Seguridad de instalación local
 description: Obtenga información acerca de las formas de mejorar la postura de seguridad de la instalación local de Adobe Commerce.
 feature: Install, Security
 exl-id: 56724a72-c64d-44d4-a886-90d97ae5fb6d
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '302'
+source-wordcount: '339'
 ht-degree: 0%
 
 ---
@@ -22,30 +22,30 @@ ht-degree: 0%
 
 Si decide habilitar SELinux, es posible que tenga problemas al ejecutar el instalador a menos que cambie el *contexto de seguridad* de algunos directorios de la siguiente manera:
 
-```bash
+```shell
 chcon -R --type httpd_sys_rw_content_t <magento_root>/app/etc
 ```
 
-```bash
+```shell
 chcon -R --type httpd_sys_rw_content_t <magento_root>/var
 ```
 
-```bash
+```shell
 chcon -R --type httpd_sys_rw_content_t <magento_root>/pub/media
 ```
 
-```bash
+```shell
 chcon -R --type httpd_sys_rw_content_t <magento_root>/pub/static
 ```
 
-```bash
+```shell
 chcon -R --type httpd_sys_rw_content_t <magento_root>/generated
 ```
 
 Los comandos anteriores solo funcionan con el servidor web Apache. Debido a la variedad de configuraciones y requisitos de seguridad, no garantizamos que estos comandos funcionen en todas las situaciones. Para obtener más información, consulte:
 
 * [página de comando man](https://linux.die.net/man/8/httpd_selinux)
-* [Laboratorio de servidores](https://www.serverlab.ca/tutorials/linux/web-servers-linux/configuring-selinux-policies-for-apache-web-servers/)
+* [Laboratorio del servidor](https://www.serverlab.ca/tutorials/linux/web-servers-linux/configuring-selinux-policies-for-apache-web-servers/)
 
 ## Habilitar la comunicación entre servidores
 
@@ -54,7 +54,7 @@ Para permitir que Apache inicie una conexión con otro host con SELinux habilita
 
 1. Para determinar si SELinux está habilitado, utilice el siguiente comando:
 
-   ```bash
+   ```shell
    getenforce
    ```
 

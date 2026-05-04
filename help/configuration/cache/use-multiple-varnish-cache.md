@@ -3,9 +3,9 @@ title: Borrado de caché con varias instancias de barniz
 description: Descubra cómo funciona la limpieza de caché con varias instancias de Barniz en Adobe Commerce. Descubra las prácticas recomendadas de configuración y administración.
 feature: Configuration, Cache
 exl-id: 289a4e54-9e73-454c-bfb9-e78e405af56c
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '185'
+source-wordcount: '186'
 ht-degree: 1%
 
 ---
@@ -26,7 +26,7 @@ El formato del parámetro debe ser `<hostname or ip>:<listen port>`, donde puede
 
 Por ejemplo,
 
-```bash
+```shell
 bin/magento setup:config:set --http-cache-hosts=192.0.2.100,192.0.2.155:8080
 ```
 

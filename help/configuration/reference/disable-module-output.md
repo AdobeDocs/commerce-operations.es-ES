@@ -2,9 +2,9 @@
 title: Deshabilitar salida del módulo
 description: Obtenga información sobre cómo deshabilitar la salida de módulos en Adobe Commerce sin eliminar dependencias. Descubra los pasos y casos de uso de la configuración.
 exl-id: af556bf5-8454-4d65-8ac8-4a64c108f092
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '374'
+source-wordcount: '401'
 ht-degree: 0%
 
 ---
@@ -32,10 +32,10 @@ La deshabilitación de Output se realiza en las siguientes clases:
 
 Para deshabilitar los resultados de los módulos en la implementación de la canalización o en cualquier otra implementación, con varias instancias de la aplicación de Commerce:
 
-1. Edite el archivo `Backend` del módulo `config.xml`.
+1. Edite el archivo `config.xml` del módulo `Backend`.
 1. Exporte los cambios de configuración.
 
-### Editar el archivo `Backend` del módulo `config.xml`
+### Editar el archivo `config.xml` del módulo `Backend`
 
 1. Archivar el archivo `config.xml` original.
 1. Agregue líneas similares a las siguientes al archivo `<Magento_install_dir>/vendor/magento/module-backend/etc/config.xml`, directamente debajo del elemento `<default>`:
@@ -60,7 +60,7 @@ Como resultado de esta configuración, los clientes ya no pueden suscribirse par
 
 Ejecute el siguiente comando para exportar los cambios de configuración:
 
-```bash
+```shell
 bin/magento app:config:dump
 ```
 
@@ -68,7 +68,7 @@ Los resultados se escriben en el archivo `<Magento_install_dir>/app/etc/config.p
 
 A continuación, borre la caché para habilitar la nueva configuración:
 
-```bash
+```shell
 bin/magento cache:clean config
 ```
 

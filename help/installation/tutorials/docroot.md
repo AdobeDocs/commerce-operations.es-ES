@@ -3,9 +3,9 @@ title: Modifique docroot para mejorar la seguridad
 description: Impida el acceso no autorizado basado en explorador al sistema de archivos local de Adobe Commerce.
 feature: Install, Security
 exl-id: aabe148d-00c8-4011-a629-aa5abfa6c682
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '578'
+source-wordcount: '593'
 ht-degree: 0%
 
 ---
@@ -62,14 +62,14 @@ Para completar este tutorial, necesita acceder a una instalación en funcionamie
 >
 >Consulte [Requisitos previos](../prerequisites/overview.md) y la [Guía de instalación](../overview.md) para obtener más información.
 
-## &#x200B;1. Edite la configuración del servidor
+## &#x200B;1. Edite la configuración de su servidor
 
 El nombre y la ubicación del archivo host virtual dependen de la versión de Apache que esté ejecutando. Este ejemplo muestra el nombre y la ubicación del archivo host virtual en Apache v2.4.
 
 1. Inicie sesión en el servidor de aplicaciones.
 1. Edite el archivo host virtual:
 
-   ```bash
+   ```shell
    vim /etc/apache2/sites-available/000-default.conf
    ```
 
@@ -92,11 +92,11 @@ El nombre y la ubicación del archivo host virtual dependen de la versión de Ap
 
 1. Reinicie Apache:
 
-   ```bash
+   ```shell
    systemctl restart apache2
    ```
 
-## &#x200B;2. Actualice la dirección URL base
+## &#x200B;2. Actualizar la dirección URL base
 
 Si agregó un nombre de directorio al nombre de host o la dirección IP del servidor para crear la dirección URL base al instalar la aplicación (por ejemplo, `http://192.168.33.10/magento2`), debe quitarla.
 
@@ -106,7 +106,7 @@ Si agregó un nombre de directorio al nombre de host o la dirección IP del serv
 
 1. Inicie sesión en la base de datos:
 
-   ```bash
+   ```shell
    mysql -u <user> -p
    ```
 
@@ -122,7 +122,7 @@ Si agregó un nombre de directorio al nombre de host o la dirección IP del serv
    UPDATE core_config_data SET value='http://192.168.33.10' WHERE path='web/unsecure/base_url';
    ```
 
-## &#x200B;3. Actualice el archivo env.php
+## &#x200B;3. Actualizar el archivo env.php
 
 Anexe el siguiente nodo al archivo `env.php`.
 
@@ -134,7 +134,7 @@ Anexe el siguiente nodo al archivo `env.php`.
 
 Consulte la [referencia env.php](../../configuration/reference/config-reference-envphp.md) para obtener más información.
 
-## &#x200B;4. Cambiar de modo
+## &#x200B;4. Cambiar modos
 
 [Los modos de aplicación](../../configuration/bootstrap/application-modes.md), que incluyen `production` y `developer`, están diseñados para mejorar la seguridad y facilitar el desarrollo. Como sugieren los nombres, debe cambiar al modo `developer` al ampliar o personalizar la aplicación y cambiar al modo `production` cuando se ejecute en un entorno activo.
 
@@ -143,22 +143,22 @@ Cambiar entre modos es un paso importante para comprobar que la configuración d
 1. Vaya al directorio de instalación.
 1. Cambiar a modo `production`.
 
-   ```bash
+   ```shell
    bin/magento deploy:mode:set production
    ```
 
-   ```bash
+   ```shell
    bin/magento cache:flush
    ```
 
 1. Actualice el explorador y compruebe que la tienda se muestra correctamente.
 1. Cambiar a modo `developer`.
 
-   ```bash
+   ```shell
    bin/magento deploy:mode:set developer
    ```
 
-   ```bash
+   ```shell
    bin/magento cache:flush
    ```
 

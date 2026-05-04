@@ -3,9 +3,9 @@ title: Evitar ataques de clickjacking
 description: Evite las vulnerabilidades de secuestro de clics utilizando el encabezado "X-Frame-Options" para controlar las representaciones de páginas.
 feature: Configuration, Security
 exl-id: 83cf5fd2-3eb8-4bd9-99e2-1c701dcd1382
-source-git-commit: 6cc04211fedddab68087bcf2f3603ae0403862b9
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '209'
+source-wordcount: '234'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ Para comprobar la configuración, vea los encabezados HTTP en cualquier página 
 
 El siguiente ejemplo utiliza curl, que puede ejecutar desde cualquier equipo que pueda conectarse al servidor de Commerce a través del protocolo HTTP.
 
-```bash
+```shell
 curl -I -v --location-trusted '<storefront-URL>'
 ```
 

@@ -2,9 +2,9 @@
 title: Completar requisitos previos
 description: Prepare su proyecto de Adobe Commerce para una actualización completando estos pasos previos.
 exl-id: f7775900-1d10-4547-8af0-3d1283d9b89e
-source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '1865'
+source-wordcount: '1985'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Asegúrese de haber actualizado todos los requisitos y dependencias del sistema 
 
 >[!NOTE]
 >
->Para los proyectos Pro de Adobe Commerce en la nube, debe crear un ticket de [Soporte](https://experienceleague.adobe.com/es/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) para instalar o actualizar servicios en entornos de Ensayo y Producción. Indique los cambios de servicio necesarios e incluya los `.magento.app.yaml` y `services.yaml` archivos actualizados y la versión de PHP en el ticket. El equipo de infraestructura en la nube puede tardar hasta 48 horas en actualizar el proyecto. Consulte [Software y servicios compatibles](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/architecture/cloud-architecture#supported-software-and-services).
+>Para los proyectos Pro de Adobe Commerce en la nube, debe crear un ticket de [Soporte](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) para instalar o actualizar servicios en entornos de Ensayo y Producción. Indique los cambios de servicio necesarios e incluya los `.magento.app.yaml` y `services.yaml` archivos actualizados y la versión de PHP en el ticket. El equipo de infraestructura en la nube puede tardar hasta 48 horas en actualizar el proyecto. Consulte [Software y servicios compatibles](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/cloud-architecture#supported-software-and-services).
 
 ## Compruebe que haya instalado un motor de búsqueda compatible
 
@@ -56,7 +56,7 @@ Las secciones siguientes describen qué acciones debe realizar antes de actualiz
 A partir de la versión 2.4, MySQL ya no es un motor de búsqueda de catálogo compatible. Debe instalar y configurar Elasticsearch o OpenSearch antes de actualizar. Utilice los siguientes recursos para guiarle a través de este proceso:
 
 * [Instalación y configuración de Elasticsearch](../../configuration/search/overview-search.md)
-* [Instalando Elasticsearch](https://www.elastic.co/docs/deploy-manage/deploy/self-managed/installing-elasticsearch)
+* [Instalación de Elasticsearch](https://www.elastic.co/docs/deploy-manage/deploy/self-managed/installing-elasticsearch)
 * Configure [nginx](../../installation/prerequisites/search-engine/configure-nginx.md) o [Apache](../../installation/prerequisites/search-engine/configure-apache.md) para que funcionen con el motor de búsqueda
 * [Configurar Commerce para usar Elasticsearch](../../configuration/search/configure-search-engine.md) y reindexar
 
@@ -77,20 +77,20 @@ Para actualizar correctamente MySQL de la versión 8.0 a la versión 8.4, debe s
 
 1. Activar modo de mantenimiento:
 
-   ```bash
+   ```shell
    bin/magento maintenance:enable
    ```
 
 1. Hacer una copia de seguridad de base de datos:
 
-   ```bash
+   ```shell
    bin/magento setup:backup --db
    ```
 
 1. Actualice MySQL a la versión 8.4.
 1. Establecer `restrict_fk_on_non_standard_key` en `OFF` en `[mysqld]` en el archivo `my.cnf`.
 
-   ```bash
+   ```shell
    [mysqld]
    restrict_fk_on_non_standard_key = OFF 
    ```
@@ -107,13 +107,13 @@ Para actualizar correctamente MySQL de la versión 8.0 a la versión 8.4, debe s
 1. Importe los datos de copia de seguridad en MySQL.
 1. Limpie la caché:
 
-   ```bash
+   ```shell
    bin/magento cache:clean
    ```
 
 1. Desactivar el modo de mantenimiento:
 
-   ```bash
+   ```shell
    bin/magento maintenance:disable
    ```
 
@@ -169,7 +169,7 @@ La compatibilidad con Elasticsearch 8.x se introdujo en Adobe Commerce 2.4.6. La
 
 1. En el directorio raíz del proyecto de Adobe Commerce, actualice las dependencias del Compositor para quitar el módulo `Magento_Elasticsearch7` e instalar el módulo `Magento_Elasticsearch8`.
 
-   ```bash
+   ```shell
    composer require magento/module-elasticsearch-8 --update-with-all-dependencies
    ```
 
@@ -181,13 +181,13 @@ La compatibilidad con Elasticsearch 8.x se introdujo en Adobe Commerce 2.4.6. La
 
    1. En primer lugar, requiera el módulo de Elasticsearch 8 sin actualizar otras dependencias:
 
-      ```bash
+      ```shell
       composer require magento/module-elasticsearch-8 --no-update
       ```
 
    1. A continuación, actualice el módulo Elasticsearch 8 y los paquetes `aws/aws-sdk-php`:
 
-      ```bash
+      ```shell
       composer update magento/module-elasticsearch-8 aws/aws-sdk-php -W
       ```
 
@@ -197,7 +197,7 @@ La compatibilidad con Elasticsearch 8.x se introdujo en Adobe Commerce 2.4.6. La
 
 1. Actualice los componentes del proyecto.
 
-   ```bash
+   ```shell
    bin/magento setup:upgrade
    ```
 
@@ -205,13 +205,13 @@ La compatibilidad con Elasticsearch 8.x se introdujo en Adobe Commerce 2.4.6. La
 
 1. Reindexe el índice del catálogo.
 
-   ```bash
+   ```shell
    bin/magento indexer:reindex catalogsearch_fulltext
    ```
 
 1. Elimine todos los elementos de los tipos de caché habilitados.
 
-   ```bash
+   ```shell
    bin/magento cache:clean
    ```
 
@@ -223,13 +223,13 @@ Si actualiza de forma involuntaria la versión de Elasticsearch en el servidor o
 
 1. En el directorio raíz del proyecto de Adobe Commerce, actualice las dependencias de Composer para quitar el módulo `Magento_Elasticsearch8` y sus dependencias de Composer e instale el módulo `Magento_Elasticsearch7`.
 
-   ```bash
+   ```shell
    composer remove magento/module-elasticsearch-8
    ```
 
 1. Actualice los componentes del proyecto.
 
-   ```bash
+   ```shell
    bin/magento setup:upgrade
    ```
 
@@ -237,13 +237,13 @@ Si actualiza de forma involuntaria la versión de Elasticsearch en el servidor o
 
 1. Reindexe el índice del catálogo.
 
-   ```bash
+   ```shell
    bin/magento indexer:reindex catalogsearch_fulltext
    ```
 
 1. Elimine todos los elementos de los tipos de caché habilitados.
 
-   ```bash
+   ```shell
    bin/magento cache:clean
    ```
 
@@ -266,7 +266,7 @@ Para establecer el ulimit desde la línea de comandos:
 1. Cambiar al [propietario del sistema de archivos](../../installation/prerequisites/file-system/overview.md).
 1. Establezca el ulimit en `65536`.
 
-   ```bash
+   ```shell
    ulimit -n 65536
    ```
 
@@ -276,7 +276,7 @@ Para establecer el valor en su shell de Bash:
 1. Abra `/home/<username>/.bashrc` en un editor de texto.
 1. Añada la línea siguiente:
 
-   ```bash
+   ```shell
    ulimit -n 65536
    ```
 
@@ -296,7 +296,7 @@ Para comprobar que el trabajo de cron está configurado correctamente, compruebe
 >
 >El crontab es el archivo de configuración responsable de ejecutar los trabajos cron.
 
-```bash
+```shell
 crontab -l
 ```
 
@@ -341,7 +341,7 @@ Para establecer la variable de entorno:
 1. Cambiar al [propietario del sistema de archivos](../../installation/prerequisites/file-system/overview.md).
 1. Configure la variable:
 
-   ```bash
+   ```shell
    export DATA_CONVERTER_BATCH_SIZE=100000
    ```
 
@@ -351,7 +351,7 @@ Para establecer la variable de entorno:
 
 1. Una vez completada la actualización, puede anular el ajuste de la variable:
 
-   ```bash
+   ```shell
    unset DATA_CONVERTER_BATCH_SIZE
    ```
 
@@ -365,7 +365,7 @@ Para comprobar que los permisos del sistema de archivos están correctamente con
 
 Por ejemplo, escriba el siguiente comando si la aplicación está instalada en `/var/www/html/magento2`:
 
-```bash
+```shell
 ls -l /var/www/html/magento2
 ```
 
@@ -414,7 +414,7 @@ Consulte lo siguiente para obtener una explicación del resultado del ejemplo:
 
 Para obtener información más detallada, puede introducir el siguiente comando:
 
-```bash
+```shell
 ls -la /var/www/html/magento2/pub
 ```
 
@@ -436,13 +436,13 @@ Para instalar el complemento:
 
 1. Agregue el paquete a su archivo `composer.json`.
 
-   ```bash
+   ```shell
    composer require magento/composer-root-update-plugin ~2.0 --no-update
    ```
 
 1. Actualice las dependencias:
 
-   ```bash
+   ```shell
    composer update
    ```
 

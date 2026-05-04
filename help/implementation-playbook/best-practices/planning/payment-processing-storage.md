@@ -1,19 +1,19 @@
 ---
 title: Prácticas recomendadas para el procesamiento y almacenamiento de pagos
-description: Aprenda a procesar y almacenar datos de pago de forma segura
+description: Aprenda a procesar y almacenar de forma segura los datos de pago en Adobe Commerce mientras mantiene la conformidad con PCI y evita el almacenamiento prohibido de datos del titular de la tarjeta.
 role: Developer
 feature: Best Practices
 exl-id: 635f38d3-0199-4d96-ba75-9edd0cb94b5c
-source-git-commit: 16feb8ec7ecc88a6ef03a769d45b1a3a2fe88d97
+source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '527'
 ht-degree: 0%
 
 ---
 
 # Prácticas recomendadas para el procesamiento y almacenamiento de pagos
 
-Uno de los principios clave para mantener el [cumplimiento de PCI](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/payments/compliance-pci.html?lang=es) es contar con una estrategia para procesar y almacenar correctamente los pagos con tarjeta de crédito.
+Uno de los principios clave para mantener el [cumplimiento de PCI](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/payments/compliance-pci.html) es contar con una estrategia para procesar y almacenar correctamente los pagos con tarjeta de crédito.
 
 Almacenar datos del titular de la tarjeta en Adobe Commerce está **estrictamente prohibido** y hacerlo podría ser una violación de sus obligaciones como comerciante según el Estándar de seguridad de datos de la industria de tarjetas de pago (PCI-DSS). Encontrará más información sobre el modelo de responsabilidad compartida y las directrices para las obligaciones de comerciantes en la [Guía del modelo de responsabilidad compartida de Adobe Commerce](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-commerce-shared-responsibilities-guide.pdf) en el Centro de confianza de Adobe.
 
@@ -53,4 +53,4 @@ El método recomendado para gestionar los datos del titular de la tarjeta es tok
 
 ## Más información
 
-Si estás buscando soluciones de pago recomendadas por Adobe, considera [Servicios de pago de Adobe](https://experienceleague.adobe.com/docs/commerce/payment-services/overview.html?lang=es).
+Si estás buscando soluciones de pago recomendadas por Adobe, considera [Servicios de pago de Adobe](https://experienceleague.adobe.com/docs/commerce/payment-services/overview.html).

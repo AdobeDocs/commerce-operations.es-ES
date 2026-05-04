@@ -5,9 +5,9 @@ feature: Data Import/Export
 role: Admin, Developer
 exl-id: 785907dc-aa3f-49e2-bd52-c3afe4393456
 type: Troubleshooting
-source-git-commit: 84a20012a81278cc95587ec14281b05330261687
+source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
 workflow-type: tm+mt
-source-wordcount: '369'
+source-wordcount: '398'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ El parche ACSD-63139 corrige el problema en el que la exportación del producto 
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
@@ -38,22 +38,22 @@ La exportación del producto falla cuando los atributos del producto contienen m
 
 1. Instale Adobe Commerce con el módulo B2B.
 1. Importar un volcado de base de datos grande con:
-   &#x200B;- ~7.000 productos
-   &#x200B;- ~450 atributos del producto
+   - ~7.000 productos
+   - ~450 atributos del producto
    : Algunos atributos con más de 100 opciones
 1. Ejecute el siguiente comando para instalar cron (si no está instalado):
 
-   ```
+   ```shell
    bin/magento cron:install
    ```
 
-1. Configure [!DNL RabbitMQ] siguiendo las instrucciones de [[!DNL RabbitMQ] requisitos previos](https://experienceleague.adobe.com/es/docs/commerce-operations/installation-guide/prerequisites/message-brokers/rabbitmq).
+1. Configure [!DNL RabbitMQ] siguiendo las instrucciones de [[!DNL RabbitMQ] requisitos previos](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/message-brokers/rabbitmq).
 1. Abra el archivo `php.ini`, establezca el límite de memoria en 4G y reinicie el servicio PHP.
 1. En el panel de administración, vaya a **[!UICONTROL System]** > *[!UICONTROL Data Transfer]* > **[!UICONTROL Export]**.
 1. En la sección *[!UICONTROL Export Settings]*, establezca **[!UICONTROL Entity Type]** en *Productos*, desplácese hacia abajo y haga clic en **[!UICONTROL Continue]**.
 1. Ejecute el siguiente comando para iniciar el procesador de exportación:
 
-   ```
+   ```shell
    bin/magento queue:consumers:start exportProcessor --max-messages=1
    ```
 
@@ -65,7 +65,7 @@ La exportación del producto debe finalizar correctamente.
 
 El proceso de exportación del producto falla y devuelve el siguiente error irrecuperable:
 
-```
+```text
 Fatal error: Allowed memory size of 4294967296 bytes exhausted (tried to allocate 12288 bytes) in /var/www/html/app/code/Magento/Catalog/Model/ResourceModel/Product/Collection.php on line 597
 ```
 
@@ -74,7 +74,7 @@ Fatal error: Allowed memory size of 4294967296 bytes exhausted (tried to allocat
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
 * Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía [!DNL Quality Patches Tool].
-* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=es) en la guía Commerce en la infraestructura de la nube.
+* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) en la guía Commerce en la infraestructura de la nube.
 
 ## Lectura relacionada
 

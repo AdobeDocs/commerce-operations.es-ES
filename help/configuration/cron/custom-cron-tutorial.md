@@ -2,9 +2,9 @@
 title: Configuración de un trabajo cron personalizado y un grupo cron (tutorial)
 description: Aprenda a crear trabajos cron personalizados con este tutorial paso a paso para Adobe Commerce. Descubra la configuración del módulo y del grupo cron.
 exl-id: d8efcafc-3ae1-4c2d-a8ad-4a806fb48932
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '821'
+source-wordcount: '850'
 ht-degree: 0%
 
 ---
@@ -33,9 +33,9 @@ Si ya tiene un módulo de ejemplo, puede utilizarlo; omita este paso y el siguie
 
 1. Inicie sesión en el servidor de Commerce como [propietario del sistema de archivos](../../installation/prerequisites/file-system/overview.md) o cambie a él.
 1. Cambie a un directorio que no esté en la raíz de la aplicación de Commerce (por ejemplo, el directorio principal).
-1. Clonar el repositorio [`magento2-samples` &#x200B;](https://github.com/magento/magento2-samples).
+1. Clonar el repositorio [`magento2-samples` ](https://github.com/magento/magento2-samples).
 
-   ```bash
+   ```shell
    git clone git@github.com:magento/magento2-samples.git
    ```
 
@@ -43,25 +43,25 @@ Si ya tiene un módulo de ejemplo, puede utilizarlo; omita este paso y el siguie
 
 1. Cree un directorio en el que copiar el código de ejemplo:
 
-   ```bash
+   ```shell
    mkdir -p /var/www/html/magento2/app/code/Magento/SampleMinimal
    ```
 
 1. Copie el código del módulo de ejemplo:
 
-   ```bash
+   ```shell
    cp -r ~/magento2-samples/sample-module-minimal/* /var/www/html/magento2/app/code/Magento/SampleMinimal
    ```
 
 1. Compruebe que los archivos se han copiado correctamente:
 
-   ```bash
+   ```shell
    ls -al /var/www/html/magento2/app/code/Magento/SampleMinimal
    ```
 
    Debería ver el siguiente resultado:
 
-   ```
+   ```text
    drwxrwsr-x.   4 magento_user apache  4096 Oct 30 13:19 .
    drwxrwsr-x. 121 magento_user apache  4096 Oct 30 13:19 ..
    -rw-rw-r--.   1 magento_user apache   372 Oct 30 13:19 composer.json
@@ -75,13 +75,13 @@ Si ya tiene un módulo de ejemplo, puede utilizarlo; omita este paso y el siguie
 
 1. Actualice la base de datos y el esquema de Commerce:
 
-   ```bash
+   ```shell
    bin/magento setup:upgrade
    ```
 
 1. Limpie la caché:
 
-   ```bash
+   ```shell
    bin/magento cache:clean
    ```
 
@@ -91,13 +91,13 @@ Antes de continuar, compruebe que el módulo de ejemplo esté registrado y habil
 
 1. Ejecute el siguiente comando:
 
-   ```bash
+   ```shell
    bin/magento module:status Magento_SampleMinimal
    ```
 
 1. Asegúrese de que el módulo esté activado.
 
-   ```
+   ```text
    Module is enabled
    ```
 
@@ -113,7 +113,7 @@ Para crear una clase:
 
 1. Cree un directorio para la clase y cambie a ese directorio:
 
-   ```bash
+   ```shell
    mkdir /var/www/html/magento2/app/code/Magento/SampleMinimal/Cron && cd /var/www/html/magento2/app/code/Magento/SampleMinimal/Cron
    ```
 
@@ -181,13 +181,13 @@ Donde, `system/config/path` es una ruta de acceso de configuración del sistema 
 
 Compile el código con este comando:
 
-```bash
+```shell
 bin/magento setup:di:compile
 ```
 
 Y limpie la caché con este comando:
 
-```bash
+```shell
 bin/magento cache:clean
 ```
 
@@ -199,7 +199,7 @@ Para verificar cron:
 
 1. Ejecutar trabajos cron de Commerce:
 
-   ```bash
+   ```shell
    bin/magento cron:run
    ```
 
@@ -215,7 +215,7 @@ Para verificar cron:
 
       El resultado debe ser similar al siguiente:
 
-      ```
+      ```text
       +-------------+----------------+---------+----------+---------------------+---------------------+---------------------+---------------------+
       | schedule_id | job_code       | status  | messages | created_at        | scheduled_at        | executed_at         | finished_at     |
       +-------------+----------------+---------+----------+---------------------+---------------------+---------------------+---------------------+
@@ -228,13 +228,13 @@ Para verificar cron:
 
 1. (Opcional) Compruebe que los mensajes se escriben en el registro del sistema de Commerce:
 
-   ```bash
+   ```shell
    cat /var/www/html/magento2/var/log/system.log
    ```
 
    Debería ver una o más entradas como la siguiente:
 
-   ```
+   ```text
    [2016-11-02 22:17:03] main.INFO: Cron Works [] []
    ```
 
@@ -283,7 +283,7 @@ Para verificar su grupo cron personalizado:
 
 1. Ejecute trabajos cron de Commerce para su grupo personalizado:
 
-   ```bash
+   ```shell
    php /var/www/html/magento2/bin/magento cron:run --group="custom_crongroup"
    ```
 
@@ -291,7 +291,7 @@ Para verificar su grupo cron personalizado:
 
 1. Limpie la caché:
 
-   ```bash
+   ```shell
    php /var/www/html/magento2/bin/magento cache:clean
    ```
 

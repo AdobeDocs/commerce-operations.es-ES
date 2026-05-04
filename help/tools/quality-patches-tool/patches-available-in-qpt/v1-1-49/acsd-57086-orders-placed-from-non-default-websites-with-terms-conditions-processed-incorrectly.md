@@ -5,16 +5,16 @@ feature: Orders
 role: Admin, Developer
 exl-id: d9f2ef50-12c4-4a2d-b140-dfd0e8948fd3
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
 workflow-type: tm+mt
-source-wordcount: '509'
+source-wordcount: '572'
 ht-degree: 0%
 
 ---
 
 # ACSD-57086: los pedidos de sitios web no predeterminados con los términos y condiciones habilitados se procesan incorrectamente
 
-El parche ACSD-57086 corrige el problema en el que los pedidos realizados desde sitios web no predeterminados con los términos y condiciones habilitados no se procesan correctamente. Esta revisión está disponible cuando está instalado [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.49. El ID del parche es ACSD-57086. Tenga en cuenta que este problema se solucionó en Adobe Commerce 2.4.7.
+El parche ACSD-57086 corrige el problema en el que los pedidos realizados desde sitios web no predeterminados con los términos y condiciones habilitados no se procesan correctamente. Esta revisión está disponible cuando está instalado [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.49. El ID del parche es ACSD-57086. Tenga en cuenta que este problema se solucionó en Adobe Commerce 2.4.7.
 
 ## Productos y versiones afectados
 
@@ -28,7 +28,7 @@ El parche ACSD-57086 corrige el problema en el que los pedidos realizados desde 
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
@@ -39,7 +39,7 @@ Al utilizar una configuración de varias tiendas con procesamiento AsyncOrder, l
 1. Instale [!DNL RabbitMQ] y ejecute `bin/magento setup:upgrade` para crear las colas de [!DNL RabbitMQ].
 1. Configurar el procesamiento de AsyncOrder con:
 
-   ```bash
+   ```shell
    bin/magento setup:config:set --checkout-async 1
    ```
 
@@ -59,7 +59,7 @@ Al utilizar una configuración de varias tiendas con procesamiento AsyncOrder, l
 1. Cambie el sitio web predeterminado yendo a **[!UICONTROL Stores]** > **[!UICONTROL All Stores]**. Haga clic en el segundo sitio web, marque *[!UICONTROL Set as Default]* y guarde.
 1. Borre la caché con:
 
-   ```bash
+   ```shell
    bin/magento cache:clear
    ```
 
@@ -67,13 +67,13 @@ Al utilizar una configuración de varias tiendas con procesamiento AsyncOrder, l
 1. Vuelva a Administración después de realizar el pedido y cambie el sitio web predeterminado al sitio web principal original y guarde los cambios.
 1. Borre la caché:
 
-   ```bash
+   ```shell
    bin/magento cache:clear
    ```
 
 1. Ejecute el siguiente comando para iniciar el consumidor de cola:
 
-   ```bash
+   ```shell
    bin/magento queue:cons:start placeOrderProcessor
    ```
 
@@ -92,14 +92,14 @@ El estado del pedido es *rechazado* con el siguiente comentario:
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
 * Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía [!DNL Quality Patches Tool].
-* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=es) en la guía Commerce en la infraestructura de la nube.
+* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) en la guía Commerce en la infraestructura de la nube.
 
 ## Lectura relacionada
 
 Para obtener más información sobre [!DNL Quality Patches Tool], consulte:
 
-* [[!DNL Quality Patches Tool] publicado: nueva herramienta para autodistribuir parches de calidad](https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) en la base de conocimiento de soporte.
+* [[!DNL Quality Patches Tool] publicado: nueva herramienta para autodistribuir parches de calidad](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) en la base de conocimiento de soporte.
 * [Compruebe si el parche está disponible para su problema de Adobe Commerce usando [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) en la guía [!UICONTROL Quality Patches Tool].
 
 
-Para obtener información sobre otros parches disponibles en QPT, consulte [[!DNL Quality Patches Tool]: Buscar parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es) en la guía [!DNL Quality Patches Tool].
+Para obtener información sobre otros parches disponibles en QPT, consulte [[!DNL Quality Patches Tool]: Buscar parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) en la guía [!DNL Quality Patches Tool].
