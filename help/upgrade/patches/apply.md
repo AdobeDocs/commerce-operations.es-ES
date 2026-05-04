@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Puede aplicar parches utilizando cualquiera de los siguientes métodos:
 
-- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
+- [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es){target="_blank"}
 - [Línea de comandos](../patches/apply.md#command-line)
 - [Compositor](../patches/apply.md#composer)
 

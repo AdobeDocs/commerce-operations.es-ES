@@ -15,7 +15,7 @@ Adobe Commerce también es compatible con el agente de mensajes de código abier
 
 >[!NOTE]
 >
->ActiveMQ Artemis se introdujo en Adobe Commerce 2.4.5 y versiones posteriores. Para obtener más información sobre la instalación de ActiveMQ Artemis en Adobe Commerce en proyectos de infraestructura en la nube, consulte [Configurar el servicio ActiveMQ](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/activemq) en la *Guía de Commerce en la nube*.
+>ActiveMQ Artemis se introdujo en Adobe Commerce 2.4.5 y versiones posteriores. Para obtener más información sobre la instalación de ActiveMQ Artemis en Adobe Commerce en proyectos de infraestructura en la nube, consulte [Configurar el servicio ActiveMQ](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/configure/service/activemq) en la *Guía de Commerce en la nube*.
 
 Las colas de mensajes proporcionan un mecanismo de comunicaciones asincrónico en el que el remitente y el receptor de un mensaje no se ponen en contacto entre sí. Tampoco necesitan comunicarse con la cola de mensajes al mismo tiempo. Cuando un remitente coloca un mensaje en cola, se almacena hasta que el destinatario lo recibe.
 
