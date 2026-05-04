@@ -2,9 +2,9 @@
 user-guide-title: Herramientas
 user-guide-description: Obtenga información sobre las distintas herramientas que puede utilizar con Adobe Commerce, sus usos, el proceso de instalación y cómo obtener acceso.
 feature: Configuration
-source-git-commit: 371cca36da675d8b9ad8e7b0281e48a3067073e2
+source-git-commit: 4c95c5a6c60ff701e81a3d58cbcd587810322a24
 workflow-type: tm+mt
-source-wordcount: '9820'
+source-wordcount: '9834'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ ht-degree: 0%
    - [Alertas administradas para Adobe Commerce: alerta de advertencia de CPU](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-cpu-warning-alert.md)
 - Herramienta Parches de calidad {#quality-patches-tool}
    - [[!DNL Quality Patches Tool]: herramienta de autoservicio para parches de calidad](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)
-   - [[!DNL Quality Patches Tool]: buscar parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es){target="_blank"}
+   - [[!DNL Quality Patches Tool]: buscar parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
    - [Uso](quality-patches-tool/usage.md)
    - [Notas de la versión](quality-patches-tool/release-notes.md)
    - Parches disponibles en la herramienta Parches de calidad {#patches-available-in-qpt}
@@ -972,6 +972,7 @@ ht-degree: 0%
          - [ACSD-68341: se producen varias actualizaciones de la cookie X-Magento-Vary al cargar PDP](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68341.md)
       - Versión 1.1.78 {#v1-1-78}
          - [Información general:  [!DNL Quality Patches Tool] (QPT) v1.1.78](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/overview.md)
+         - [ACP2E-4452: Los precios de los productos de la página de pedidos rápidos incluyen impuestos independientemente de la configuración de la visualización de impuestos](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4452.md)
          - [ACP2E-4448: Los cambios de configuración realizados durante  [!DNL Redis] interrupciones no se reflejan después de [!DNL Redis] recuperaciones y los valores antiguos persisten](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4448.md)
          - [ACP2E-4665: Los productos secundarios de productos configurables con vídeos en las galerías de productos no aparecen cuando se solicitan a través de la API de REST](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4665.md)
          - [ACP2E-4613: El directorio de medios grande causa retrasos en la carga del árbol de directorios de Media Gallery](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4613.md)
@@ -1033,6 +1034,6 @@ ht-degree: 0%
       - [Datos que requieren una migración manual](data-migration-tool/migrate-data/manual.md)
       - [Pasos de la migración posterior a los datos](data-migration-tool/migrate-data/post-migration.md)
    - Recursos {#resources}
-      - [Resolución de problemas](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html?lang=es)
+      - [Resolución de problemas](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html)
       - [Changelog](https://github.com/magento/data-migration-tool/blob/2.4/CHANGELOG.md)
-- [Volver a Guías operativas](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=es)
+- [Volver a Guías operativas](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
