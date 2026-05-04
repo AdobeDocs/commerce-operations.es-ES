@@ -28,7 +28,7 @@ El parche ACSD-63139 corrige el problema en el que la exportación del producto 
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
@@ -38,8 +38,8 @@ La exportación del producto falla cuando los atributos del producto contienen m
 
 1. Instale Adobe Commerce con el módulo B2B.
 1. Importar un volcado de base de datos grande con:
-   - ~7.000 productos
-   - ~450 atributos del producto
+   &#x200B;- ~7.000 productos
+   &#x200B;- ~450 atributos del producto
    : Algunos atributos con más de 100 opciones
 1. Ejecute el siguiente comando para instalar cron (si no está instalado):
 

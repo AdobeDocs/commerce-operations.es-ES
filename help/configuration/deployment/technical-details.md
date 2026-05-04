@@ -55,7 +55,7 @@ La configuración confidencial también se almacena en `app/etc/env.php`.
 Puede administrar la configuración confidencial de cualquiera de las siguientes maneras:
 
 - Variables de entorno
-- Guarde la configuración confidencial en `env.php` en el sistema de producción mediante el comando [`magento config:set:sensitive` ](../cli/set-configuration-values.md)
+- Guarde la configuración confidencial en `env.php` en el sistema de producción mediante el comando [`magento config:set:sensitive` &#x200B;](../cli/set-configuration-values.md)
 
 ### Ajustes de configuración bloqueados en el administrador
 
@@ -88,7 +88,7 @@ El administrador muestra el siguiente comportamiento mientras está en modo de p
 
 ## Instalar y eliminar cron
 
-En la versión 2.2 por primera vez, le ayudamos a configurar su trabajo cron proporcionando el comando [`magento cron:install` ](../cli/configure-cron-jobs.md). Este comando configura un crontab como el usuario que ejecuta el comando.
+En la versión 2.2 por primera vez, le ayudamos a configurar su trabajo cron proporcionando el comando [`magento cron:install` &#x200B;](../cli/configure-cron-jobs.md). Este comando configura un crontab como el usuario que ejecuta el comando.
 
 Además, puede quitar el crontab mediante el comando `magento cron:remove`.
 
