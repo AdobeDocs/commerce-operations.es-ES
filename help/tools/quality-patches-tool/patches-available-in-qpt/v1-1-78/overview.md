@@ -4,9 +4,9 @@ description: Esta subsección proporciona una descripción detallada de los prob
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: f78520918618a750cdca062a0543eb4821dfc525
+source-git-commit: 371cca36da675d8b9ad8e7b0281e48a3067073e2
 workflow-type: tm+mt
-source-wordcount: '722'
+source-wordcount: '808'
 ht-degree: 0%
 
 ---
@@ -16,6 +16,10 @@ ht-degree: 0%
 Esta subsección proporciona una descripción detallada de los problemas corregidos por los parches disponibles en [!DNL Quality Patches Tool] (QPT) v1.1.78.
 
 QPT v1.1.78 incluye los siguientes parches:
+1. **ACP2E-4416**: corrige el problema en el cual los puntos de recompensa del cliente no se inicializan cuando se crean en el administrador.
+1. **ACP2E-4419**: corrige el problema por el cual las tarjetas de regalo no se aplican correctamente en el cierre de compra después de una validación exitosa de reCAPTCHA v2 (&#39;No soy un robot&#39;) en la tienda.
+1. **ACP2E-4431**: corrige el problema en el que los productos relacionados que coinciden con las reglas de destino se eliminan durante el proceso de reindexación.
+1. **[ACP2E-4448](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4448.md)**: corrige el problema en el que los cambios de configuración realizados durante las interrupciones de Redis no se reflejan después de que Redis se recupere, lo que provoca que los valores antiguos persistan.
 1. **[ACP2E-4416](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4416.md)**: corrige el problema en el cual los puntos de recompensa del cliente no se inicializan cuando se crean en el administrador.
 1. **[ACP2E-4431](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4431.md)**: corrige el problema donde [!UICONTROL Related Products] coincidentes con las reglas de destino se eliminan durante el proceso de reindexación.
 1. **[ACP2E-4419](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4419.md)**: soluciona el problema que causaba que las tarjetas de regalo no se aplicaran correctamente en el cierre de compra después de una validación correcta de reCAPTCHA v2 (&quot;No soy un robot&quot;) en la tienda.
