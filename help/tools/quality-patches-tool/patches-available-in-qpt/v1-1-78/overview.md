@@ -4,7 +4,7 @@ description: Esta subsección proporciona una descripción detallada de los prob
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 4c95c5a6c60ff701e81a3d58cbcd587810322a24
+source-git-commit: 0c45d7ba61be21d0983b242cfdbe0b9591dd5c5c
 workflow-type: tm+mt
 source-wordcount: '942'
 ht-degree: 0%
@@ -20,8 +20,8 @@ QPT v1.1.78 incluye los siguientes parches:
 1. **ACP2E-4419**: corrige el problema por el cual las tarjetas de regalo no se aplican correctamente en el cierre de compra después de una validación exitosa de reCAPTCHA v2 (&#39;No soy un robot&#39;) en la tienda.
 1. **ACP2E-4431**: corrige el problema en el que los productos relacionados que coinciden con las reglas de destino se eliminan durante el proceso de reindexación.
 1. **ACP2E-4448**: corrige el problema en el que los cambios de configuración realizados durante las interrupciones de Redis no se reflejan después de que Redis se recupere, lo que provoca que los valores antiguos persistan.
+1. **[ACP2E-4456](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4456.md)**: corrige un problema en el cual cancelar un pedido usando una mutación de GraphQL no pasa un pedido pagado completamente con tarjetas de regalo al estado Cerrado.
 1. **[ACP2E-4452](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4452.md)**: corrige el problema por el que los precios de los productos en la página [!UICONTROL Quick Order] incluyen impuestos independientemente de la configuración de presentación de impuestos.
-1. **ACP2E-4456**: corrige un problema en el cual cancelar un pedido usando una mutación de GraphQL no pasa un pedido pagado completamente con tarjetas de regalo al estado Cerrado.
 1. **ACP2E-4507**: corrige el problema en el que la configuración de Opciones de contraseña no se aplica a las solicitudes de restablecimiento de contraseña de cliente realizadas a través de mutaciones de GraphQL.
 1. **ACP2E-4513**: corrige el problema en el cual las imágenes CAPTCHA caducadas no se eliminan del sistema.
 1. **ACP2E-4522**: corrige el problema en el que se produce un error intermitente de clave duplicada en la tabla quote_coupons cuando se ejecutan varias solicitudes de guardado de combinación de carro de compras o presupuesto al mismo tiempo.
