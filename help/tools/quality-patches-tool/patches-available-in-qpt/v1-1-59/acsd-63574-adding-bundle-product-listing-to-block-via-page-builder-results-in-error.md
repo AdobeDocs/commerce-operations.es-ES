@@ -5,9 +5,9 @@ feature: Page Builder, Page Content
 role: Admin, Developer
 exl-id: bb56c0c2-e094-4173-8260-da154df79748
 type: Troubleshooting
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: 0382d65a4d2ab24e595ede662be113a04db99450
 workflow-type: tm+mt
-source-wordcount: '433'
+source-wordcount: '408'
 ht-degree: 0%
 
 ---
@@ -28,15 +28,15 @@ Adobe Commerce (todos los métodos de implementación) 2.4.4 - 2.4.4-p11
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
 Al agregar **[!UICONTROL Bundle Product]** a un bloque mediante [!DNL Page Builder], la vista previa del widget de productos se interrumpe y muestra el mensaje de error *Lo sentimos, se produjo un error al generar este contenido*. Este problema ocurre específicamente cuando el paquete de productos incluye `Checkbox` o `Multi Select` tipos de opciones y `indexer dimension mode` está establecido en `website_and_customer_group`. El registro de excepciones muestra el siguiente error:
 
-    &quot;yaml
-    report.CRITICAL: PDOException: SQLSTATE[42S02]: No se encontró la tabla o vista base: 1146 La tabla &#39;db_name.catalog_product_index_price_cg0_ws0&#39; no existe en /home/vendor/magento/framework/DB/Statement/Pdo/Mysql.php:90
-    &quot;
+```yaml
+report.CRITICAL: PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'db_name.catalog_product_index_price_cg0_ws0' doesn't exist in /home/vendor/magento/framework/DB/Statement/Pdo/Mysql.php:90
+```
 
 <u>Pasos a seguir</u>:
 
