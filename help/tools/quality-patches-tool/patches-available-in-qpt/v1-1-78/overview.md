@@ -4,9 +4,9 @@ description: Esta subsección proporciona una descripción detallada de los prob
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 88d68b8ad28dfe044808a304d947bde4f5dfb054
+source-git-commit: fcc363df787b5d2f35e8109481d0f9d94c6da9e7
 workflow-type: tm+mt
-source-wordcount: '942'
+source-wordcount: '887'
 ht-degree: 0%
 
 ---
@@ -40,13 +40,11 @@ QPT v1.1.78 incluye los siguientes parches:
 1. **ACP2E-4540**: corrige el problema en el que la biblioteca Fotorama no se cargaba correctamente, lo que provocaba que solo fuera visible la primera imagen adjunta.
 1. **ACP2E-4555**: soluciona el problema en el que los números de teléfono modernos contienen &quot;.&quot; o &quot;/&quot; no se han validado correctamente.
 1. **ACP2E-4565**: corrige el problema en el que la consulta Company GraphQL devuelve &quot;El cliente actual no está autorizado&quot; cuando se utiliza el encabezado X-Adobe-Company.
-1. **ACP2E-4591**: corrige el problema en el que los segmentos de clientes basados en el recuento de pedidos, como &quot;Compradores nuevos&quot;, no se actualizaban cuando los pedidos se realizaban mediante la API de REST.
+1. **[ACP2E-4591](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4591.md)**: corrige el problema en el que los segmentos de clientes basados en el recuento de pedidos, como &quot;Compradores nuevos&quot;, no se actualizaban cuando los pedidos se realizaban mediante la API de REST.
 1. **[ACP2E-4540](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4540.md)**: corrige el problema en el que la biblioteca Fotorama no se cargaba correctamente, lo que provocaba que solo fuera visible la primera imagen adjunta.
 1. **[ACP2E-4555](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4555.md)**: soluciona el problema en el que los números de teléfono modernos contienen &quot;.&quot; o &quot;/&quot; no se han validado correctamente.
 1. **[ACP2E-4565](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4565.md)**: corrige el problema en el que la consulta Company GraphQL devuelve &quot;El cliente actual no está autorizado&quot; cuando se utiliza el encabezado X-Adobe-Company.
-1. **ACP2E-4591**: corrige el problema en el que los segmentos de clientes basados en el recuento de pedidos, como &quot;Compradores nuevos&quot;, no se actualizaban cuando los pedidos se realizaban mediante la API de REST.
 1. **[ACP2E-4609](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4609.md)**: corrige el problema por el que la página Mis comillas no muestra comillas cuando algunas comillas contienen productos eliminados.
-1. **ACP2E-4591**: corrige el problema en el cual los segmentos de clientes basados en el recuento de pedidos, como &quot;Compradores nuevos&quot;, no se actualizaban cuando los pedidos se realizaban mediante la API de REST.
 1. **ACP2E-4609**: corrige el problema por el que la página Mis comillas no muestra comillas cuando algunas comillas contienen productos eliminados.
 1. **[ACP2E-4613](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4613.md)**: corrige el problema en el que las estructuras de directorios de medios grandes causaban respuestas gettree lentas, lo que provocaba tiempos de carga prolongados para el árbol de directorios **[!UICONTROL Media Gallery]**.
 1. **ACP2E-4628**: corrige el problema en el que la importación de clientes con direcciones de correo electrónico en mayúsculas da como resultado un error de clave de matriz no definida, cuando el uso compartido de cuentas está establecido en Global.
