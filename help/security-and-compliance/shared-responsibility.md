@@ -1,106 +1,116 @@
 ---
-title: Modelo operativo y de seguridad de responsabilidad compartida
+title: Seguridad de responsabilidad compartida y modelo operativo
 description: Obtenga información sobre las responsabilidades de seguridad de cada parte involucrada en su proyecto de infraestructura de Adobe Commerce en la nube.
 exl-id: f3cc1685-e469-4e30-b18e-55ce10dd69ce
-source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
+source-git-commit: 4e5477a247b272dc17863a84bd3b9a55bf36d688
 workflow-type: tm+mt
-source-wordcount: '2939'
+source-wordcount: '3227'
 ht-degree: 0%
 
 ---
 
 # Modelo operativo y de seguridad de responsabilidad compartida
 
-Adobe Commerce en la infraestructura en la nube es una oferta de plataforma como servicio (PaaS) que se basa en un modelo operativo y de seguridad de responsabilidad compartida. Estas responsabilidades se comparten entre Adobe, el comerciante, el proveedor de servicios en la nube y el proveedor de la red de entrega de contenido (CDN). Cada parte tiene la responsabilidad distinta de proteger y operar la aplicación de Adobe Commerce y el código específico del comerciante y las extensiones implementadas en la infraestructura en la nube.
+Adobe Commerce en la infraestructura en la nube es una oferta de plataforma como servicio (PaaS) que se basa en un modelo operativo y de seguridad de responsabilidad compartida. Adobe, el comerciante, el proveedor de servicios en la nube y el proveedor de la red de entrega de contenido (CDN) comparten estas responsabilidades. Cada parte tiene la responsabilidad distinta de proteger y operar la aplicación de Adobe Commerce y el código específico del comerciante y las extensiones implementadas en la infraestructura en la nube.
 
-Este modelo compartido permite a los comerciantes diseñar e implementar una solución altamente flexible, personalizable y escalable para satisfacer sus necesidades comerciales, al mismo tiempo que minimiza las responsabilidades y los costes operativos.
+Este modelo compartido permite a los comerciantes diseñar e implementar una solución flexible, personalizable y escalable que cumpla con sus requisitos comerciales y minimice al mismo tiempo las responsabilidades y los costes operativos.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3458392/?learn=on&enablevpops)
 
-En general, Adobe es responsable de lo siguiente:
+Adobe es responsable de lo siguiente:
 
-- Desarrollo y mantenimiento del código de la aplicación principal segura
-- Mantenimiento de la seguridad de la plataforma
-- Garantizar que la plataforma sea compatible con SOC 2 y PCI y compatible con componentes de tecnología compatibles con PCI (por ejemplo, PHP, Redis)
-- Respuesta a los problemas de seguridad relacionados con la plataforma principal
-- Trabajar con proveedores de servicios en la nube y socios de CDN para resolver cualquier problema que se produzca
+* Desarrollo y mantenimiento del código de la aplicación principal segura
+* Mantenimiento de la seguridad de la plataforma
+* Garantizar que la plataforma sea compatible con SOC 2 y PCI y compatible con componentes de tecnología compatibles con PCI (por ejemplo, PHP, Redis)
+* Respuesta a los problemas de seguridad relacionados con la plataforma principal
+* Trabajar con proveedores de servicios en la nube y socios de CDN para resolver cualquier problema que se produzca
 
 Los comerciantes son responsables de lo siguiente:
 
-- Mantenimiento de la seguridad para el código personalizado y las integraciones con aplicaciones de terceros
-- Garantizar el desarrollo seguro de aplicaciones
-- Obtención de la certificación PCI si así lo solicita el procesador de pagos del comerciante
-- Reacción y respuesta a incidentes de seguridad
+* Mantenimiento de la seguridad para el código personalizado y las integraciones con aplicaciones de terceros
+* Garantizar el desarrollo seguro de aplicaciones
+* Obtención de la certificación PCI si así lo solicita el procesador de pagos del comerciante
+* Reacción y respuesta a incidentes de seguridad
+* Mantener todas las dependencias de terceros, los servicios de plataforma y las extensiones de servicios de Adobe Commerce en versiones compatibles de forma activa. Adobe no proporciona soporte de seguridad ni asistencia para implementaciones que ejecutan versiones de dependencia no admitidas. Consulte [Requisitos del sistema](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) y la [Matriz de disponibilidad del producto](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability) para ver las versiones compatibles.
+
+{{supported-versions-only}}
 
 ## Responsabilidades de Adobe
 
-Adobe es responsable de la seguridad y disponibilidad del entorno de Adobe Commerce en la nube y del código de la solución principal. Además, Adobe es responsable de las actividades y mecanismos necesarios para mantener la seguridad de la solución Adobe Commerce en la infraestructura en la nube, lo que incluye:
+Adobe es responsable de la seguridad y disponibilidad del entorno de Adobe Commerce en la nube y del código de la solución principal. Adobe también realiza las actividades que mantienen la seguridad de la solución Adobe Commerce en la nube, entre las que se incluyen las siguientes:
 
-- Aplicación de parches y seguridad de nivel de servidor para aplicaciones compatibles con Adobe Commerce en infraestructuras en la nube, como almacenamiento de datos en la nube y funciones de búsqueda
-- Realizar pruebas de penetración y análisis del código de infraestructura principal de Adobe Commerce en la nube
-- Realización de revisiones y auditorías semestrales de las soluciones y la administración de permisos de los proveedores de servicios de nube pública de identidad y acceso (IAM) (requisito de cumplimiento de PCI)
-- Realización de revisiones y auditorías semestrales de usuarios autorizados, incluidos empleados y contratistas de Adobe (requisito de conformidad con PCI)
-- Realización de pruebas y documentación anuales de la funcionalidad de backup y restauración
-- Configuración de servidores de seguridad perimetrales y de servidor
-- Conexión y configuración de Adobe Commerce en el repositorio de la infraestructura en la nube
-- Definir, probar, implementar y documentar planes de recuperación ante desastres (DR) para las áreas dentro del ámbito de responsabilidad de Adobe
-- Definición de reglas de cortafuegos de aplicaciones web de plataforma global (WAF)
-- Protección del sistema operativo (SO)
-- Implementación y mantenimiento de la integración de soluciones de red de distribución de contenido (CDN) y administración del rendimiento de las aplicaciones (APM) con Adobe Commerce en la infraestructura en la nube
-- Emisión de actualizaciones periódicas de seguridad y de otro tipo para el código de infraestructura central de Adobe Commerce en la nube (la aplicación de parches es responsabilidad del comerciante)
-- Administración de soporte comercial y control de acceso de soporte (por ejemplo, Zendesk)
-- Monitorización, registro y corrección de incidentes de seguridad relacionados con Adobe Commerce en la infraestructura de la plataforma de la nube
-- Monitorización de las operaciones de la plataforma y asistencia las 24 horas del día y los 7 días de la semana para Adobe Commerce en comerciantes de infraestructura en la nube
-- Aprovisionamiento de los entornos de producción y ensayo
-- Evaluación de posibles amenazas de seguridad para las operaciones e infraestructura de la plataforma
-- Escalar la computación, el almacenamiento, la cuadrícula y otros recursos, tal como se describe en el acuerdo de nivel de servicio (SLA) con el comerciante
-- Configuración de DNS (Adobe Commerce solo en la infraestructura de la plataforma de la nube)
-- Prueba de la plataforma para detectar vulnerabilidades de seguridad
+* Aplicación de parches y seguridad de nivel de servidor para aplicaciones compatibles con Adobe Commerce en infraestructuras en la nube, como almacenamiento de datos en la nube y funciones de búsqueda
+* Realizar pruebas de penetración y análisis del código de infraestructura principal de Adobe Commerce en la nube
+* Realización de revisiones y auditorías semestrales de las soluciones y la administración de permisos de los proveedores de servicios de nube pública de identidad y acceso (IAM) (requisito de cumplimiento de PCI)
+* Realización de revisiones y auditorías semestrales de usuarios autorizados, incluidos empleados y contratistas de Adobe (requisito de conformidad con PCI)
+* Realización de pruebas y documentación anuales de la funcionalidad de backup y restauración
+* Configuración de servidores de seguridad perimetrales y de servidor
+* Conexión y configuración de Adobe Commerce en el repositorio de la infraestructura en la nube
+* Definir, probar, implementar y documentar planes de recuperación ante desastres (DR) para las áreas dentro del ámbito de responsabilidad de Adobe
+* Definición de reglas de cortafuegos de aplicaciones web de plataforma global (WAF)
+* Protección del sistema operativo (SO)
+* Implementación y mantenimiento de la integración de soluciones de red de distribución de contenido (CDN) y administración del rendimiento de las aplicaciones (APM) con Adobe Commerce en la infraestructura en la nube
+* Emisión de actualizaciones periódicas de seguridad y de otro tipo para el código de infraestructura central de Adobe Commerce en la nube (la aplicación de parches es responsabilidad del comerciante)
+* Administración del soporte comercial y de los controles de acceso de soporte (por ejemplo, Soporte de Experience League)
+* Monitorización, registro y corrección de incidentes de seguridad relacionados con Adobe Commerce en la infraestructura de la plataforma de la nube
+* Monitorización de las operaciones de la plataforma y asistencia las 24 horas del día y los 7 días de la semana para Adobe Commerce en comerciantes de infraestructura en la nube
+* Aprovisionamiento de los entornos de producción y ensayo
+* Evaluación de posibles amenazas de seguridad para las operaciones e infraestructura de la plataforma
+* Escalar la computación, el almacenamiento, la cuadrícula y otros recursos, tal como se describe en el acuerdo de nivel de servicio (SLA) con el comerciante
+* Configuración de DNS (Adobe Commerce solo en la infraestructura de la plataforma de la nube)
+* Prueba de la plataforma para detectar vulnerabilidades de seguridad
 
-Adobe mantiene la certificación PCI para la infraestructura y los servicios utilizados para la solución Adobe Commerce.  Los comerciantes son responsables de la conformidad de los procesos de código personalizado, sistema y red, y de la organización.
+Adobe mantiene la certificación PCI para la infraestructura y los servicios utilizados para la solución Adobe Commerce. Los comerciantes son responsables de la conformidad de su código personalizado, sistema, procesos de red y organización.
 
 Adobe también garantiza la disponibilidad de la infraestructura del comerciante según lo acordado en la SLA aplicable.
 
 ## Responsabilidades del comerciante
 
-El comerciante es responsable de seguir las prácticas recomendadas de seguridad para su instancia específica y personalizada de Adobe Commerce en la solución de infraestructura en la nube:
+El comerciante es responsable de seguir las prácticas recomendadas de seguridad en su instancia personalizada de la solución Adobe Commerce en la infraestructura en la nube:
 
-- Añadir al repositorio los archivos de configuración de Adobe Commerce en la nube necesarios
-- La aplicación de parches de seguridad y de otro tipo a su solución personalizada de Adobe Commerce en la nube inmediatamente después de su lanzamiento por parte de Adobe.
-- Aplicar parches de seguridad y de otro tipo a todas las extensiones y códigos personalizados, inmediatamente después de su lanzamiento por el proveedor
-- Creación, implementación y prueba de archivos VCL de barniz personalizados
-- Diseñar, asignar temas, instalar, integrar y proteger la solución de Adobe Commerce personalizada en infraestructura en la nube, incluidas todas las extensiones y el código personalizados
-- Concesión y revocación del acceso de usuario a la instancia de Adobe Commerce del comerciante en la configuración, aplicación y plataforma de la infraestructura en la nube
-- Gestión de los problemas de seguridad relacionados con la red interna del comerciante, los servidores, la infraestructura y cualquier aplicación personalizada creada en Adobe Commerce en la plataforma de infraestructura en la nube
-- Instalación de la herramienta de integración de la línea de comandos (CLI) de Adobe Commerce en la infraestructura de la nube
-- Mantener el nivel requerido de conformidad con PCI de la aplicación personalizada y otros procesos internos, según se define en las directrices de PCI-DSS
+* Añadir al repositorio los archivos de configuración de Adobe Commerce en la nube necesarios
+* La aplicación de parches de seguridad y de otro tipo a su solución personalizada de Adobe Commerce en la nube inmediatamente después de su lanzamiento por parte de Adobe.
+* Aplicar parches de seguridad y de otro tipo a todas las extensiones personalizadas y al código inmediatamente después de su lanzamiento por el proveedor
+* Creación, implementación y prueba de archivos VCL de barniz personalizados
+* Diseñar, asignar temas, instalar, integrar y proteger la solución de Adobe Commerce personalizada en infraestructura en la nube, incluidas todas las extensiones y el código personalizados
+* Concesión y revocación del acceso de usuario a la instancia de Adobe Commerce del comerciante en la configuración, aplicación y plataforma de la infraestructura en la nube
+* Gestión de los problemas de seguridad relacionados con la red interna del comerciante, los servidores, la infraestructura y cualquier aplicación personalizada creada en Adobe Commerce en la plataforma de infraestructura en la nube
+* Instalación de la herramienta de integración de la línea de comandos (CLI) de Adobe Commerce en la infraestructura de la nube
+* Mantener el nivel requerido de conformidad con PCI de la aplicación personalizada y otros procesos internos, según se define en las directrices de PCI-DSS
 
   >[!NOTE]
   >
   >Para minimizar las áreas que deben revisarse, la conformidad con PCI para el comerciante se basa en las certificaciones PCI de Adobe Commerce y el proveedor de alojamiento en la nube.
 
-- Ejecución de análisis ASV de PCI y corrección de problemas en el Adobe Commerce principal en el código y la plataforma de la infraestructura en la nube
-- Monitorización de todas las actividades de la aplicación que puedan revelar una posible amenaza para la seguridad, incluidas las pruebas de penetración, los análisis de vulnerabilidades y los registros
-- Monitorización y respuesta a incidentes de seguridad, incluidos análisis forenses, corrección y creación de informes relacionados con la solución Adobe Commerce on cloud Infrastructure del comerciante y las cuentas de usuario
-- Obtención de un proveedor de DNS y configuración y mantenimiento de registros DNS específicos del comerciante
-- Ejecución de pruebas de rendimiento en la aplicación personalizada
-- Protección del acceso a las cuentas de plataforma, al acceso a instancias y a la aplicación
-- Pruebas y control de calidad de la aplicación personalizada
-- Mantener la seguridad de cualquier sistema o red que el comerciante conecte con la aplicación de infraestructura en la nube de Adobe Commerce
+* Ejecución de análisis ASV de PCI y corrección de problemas en el Adobe Commerce principal en el código y la plataforma de la infraestructura en la nube
+* Monitorización de todas las actividades de la aplicación que puedan revelar una posible amenaza para la seguridad, incluidas las pruebas de penetración, los análisis de vulnerabilidades y los registros
+* Monitorización y respuesta a incidentes de seguridad, incluidos análisis forenses, corrección y creación de informes relacionados con la solución Adobe Commerce on cloud Infrastructure del comerciante y las cuentas de usuario
+* Obtención de un proveedor de DNS y configuración y mantenimiento de registros DNS específicos del comerciante
+* Ejecución de pruebas de rendimiento en la aplicación personalizada
+* Protección del acceso a las cuentas de plataforma, al acceso a instancias y a la aplicación
+* Pruebas y control de calidad de la aplicación personalizada
+* Mantener la seguridad de cualquier sistema o red que el comerciante conecte con la aplicación de infraestructura en la nube de Adobe Commerce
+* Mantener todos los servicios de plataforma, las dependencias de terceros y las extensiones de servicios de Adobe Commerce en versiones admitidas activamente por sus respectivos proveedores o por Adobe. Esto incluye:
+
+   * Servicios de infraestructura como la base de datos, caché, búsqueda, tiempo de ejecución de PHP y servidor web
+   * Extensiones de Adobe Commerce Services
+   * Todas las integraciones personalizadas y extensiones de terceros
+
+  Adobe no admite implementaciones que ejecuten versiones no admitidas. Consulte [Requisitos del sistema](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) y la [Matriz de disponibilidad del producto](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability) para ver las versiones compatibles.
 
 ## Responsabilidades del proveedor de Cloud Service
 
-Adobe se basa en proveedores de servicios en la nube bien establecidos para alojar la infraestructura de servidor en la nube de Adobe Commerce en la nube. Estos proveedores son responsables de la seguridad de la red, incluido el enrutamiento, la conmutación y la seguridad de la red perimetral a través de sistemas de cortafuegos y sistemas de detección de intrusiones (IDS). Los proveedores de servicios en la nube también son responsables de la seguridad física de los centros de datos que alojan la solución Adobe Commerce en la infraestructura en la nube y de la seguridad medioambiental de los centros de datos.
+Adobe depende de los proveedores de servicios en la nube para alojar la infraestructura de servidor en la nube para Adobe Commerce en la nube. Estos proveedores son responsables de la seguridad de la red, incluido el enrutamiento, la conmutación y la seguridad de la red perimetral a través de sistemas de cortafuegos y sistemas de detección de intrusiones (IDS). Los proveedores de servicios en la nube también son responsables de la seguridad física y ambiental de los centros de datos que alojan la solución Adobe Commerce en la infraestructura en la nube.
 
 Los proveedores de servicios en la nube también son responsables de:
 
-- Mantener las certificaciones PCI DSS, SOC 2 e ISO 27001 para sus servicios en la nube
-- Fijación del hipervisor
-- Protección del centro de datos, incluido el acceso físico y de red
+* Mantener las certificaciones PCI DSS, SOC 2 e ISO 27001 para sus servicios en la nube
+* Fijación del hipervisor
+* Protección del centro de datos, incluido el acceso físico y de red
 
 ## Responsabilidades del proveedor de CDN
 
-La solución de Adobe Commerce en la nube utiliza proveedores de CDN para acelerar el tiempo de carga de página, almacenar en caché el contenido y purgar instantáneamente el contenido obsoleto. Estos proveedores también son responsables de los problemas de seguridad directamente relacionados con su CDN o que afectan a ella, y de definir y mantener las reglas de WAF de CDN.
+La solución de Adobe Commerce en la nube utiliza proveedores de CDN para acelerar el tiempo de carga de página, almacenar en caché el contenido y purgar instantáneamente el contenido obsoleto. Estos proveedores también son responsables de los problemas de seguridad que afectan a su CDN y de definir y mantener reglas de WAF de CDN.
 
 ## Resumen de responsabilidades de seguridad
 
@@ -518,14 +528,21 @@ La siguiente tabla de resumen utiliza el modelo RACI para mostrar las responsabi
     <td></td>
     <td></td>
   </tr>
+  <tr>
+    <td>Mantenimiento de todos los servicios de plataforma, dependencias de terceros y extensiones de servicios de Commerce en versiones compatibles de forma activa (incluidos, entre otros, servicios de infraestructura, complementos de Commerce de SaaS y extensiones de terceros)</td>
+    <td>I</td>
+    <td>R</td>
+    <td></td>
+    <td></td>
+  </tr>
 </tbody>
 <tfoot>
   <tr>
     <td colspan="5">
-      <p><sup><strong>1</strong></sup> Solo si el repositorio de Adobe Commerce en la nube se usa como repositorio principal. El uso de otros repositorios externos es responsabilidad exclusiva del comerciante.</p>
-      <p><sup><strong>2</strong></sup> Adobe proporciona compatibilidad de nivel 1 para problemas con proveedores de CDN.</p>
-      <p><sup><strong>3</strong></sup> El comerciante es responsable de los controles Ngnix que configure para sus aplicaciones.</p>
-      <p><sup><strong>4</strong></sup> Para PCI, los requisitos de prueba de penetración se comparten entre Adobe y el comerciante.</p>
+      <p><sup>1</sup> Solo si el repositorio de Adobe Commerce en la nube se usa como repositorio principal. El uso de otros repositorios externos es responsabilidad exclusiva del comerciante.</p>
+      <p><sup>2</sup> Adobe proporciona compatibilidad de nivel 1 para problemas con proveedores de CDN.</p>
+      <p><sup>3</sup> El comerciante es responsable de los controles Nginx que configure para sus aplicaciones.</p>
+      <p><sup>4</sup> Para PCI, los requisitos de prueba de penetración se comparten entre Adobe y el comerciante.</p>
     </td>
   </tr>
 </tfoot>
@@ -629,7 +646,7 @@ Los comerciantes son responsables de sincronizar datos entre entornos.
 | Optimización y ajuste de aplicaciones principales | R |   |
 | Optimización y ajuste del código personalizado |     | R |
 | Código Adobe Commerce personalizado |     | R |
-| Pruebas de carga |     | R |
+| Prueba de carga |     | R |
 | Pruebas de rendimiento |     | R |
 
 {style="table-layout:auto"}
@@ -640,10 +657,10 @@ Los comerciantes son responsables de sincronizar datos entre entornos.
 |     | Adobe | Comerciante |
 | --- | --- | --- |
 | Rotación de registros | R |   |
-| Aplicación de Adobe Commerce personalizada | | R |
-| Disponibilidad de los servicios de New Relic:<br>integración de aplicaciones y agentes de APM, aplicación de infraestructura,<br>Registro e integración | R |   |
+| Aplicación de Adobe Commerce personalizada |   | R |
+| Disponibilidad de los servicios de New Relic:<br>integración de aplicación y agente de APM, aplicación de infraestructura,<br>registro e integración | R |   |
 | Configuración de alertas de New Relic |     | R |
-| Implementación del agente de New Relic en servidores PaaS | R |  |
+| Implementación del agente de New Relic en servidores PaaS | R |   |
 
 {style="table-layout:auto"}
 
@@ -696,6 +713,7 @@ Los comerciantes son responsables de sincronizar datos entre entornos.
 | Configuración de la configuración predeterminada de PHP | R |     |
 | Configuración de ajustes personalizados de PHP |     | R |
 | Configuración del archivo YAML para alinear las versiones de PHP compatibles con la versión de Adobe Commerce instalada |    | R |
+| El comerciante debe mantener PHP en una versión compatible. Las implementaciones en versiones no compatibles NO cumplen los requisitos para la compatibilidad con Adobe y pueden contener vulnerabilidades de seguridad sin parches. |     | R |
 
 {style="table-layout:auto"}
 
@@ -704,13 +722,14 @@ Los comerciantes son responsables de sincronizar datos entre entornos.
 |     | Adobe | Comerciante |
 | --- | --- | --- |
 | Disponibilidad de los servicios de Galera y MariaDB | R | |
-| Mantenimiento continuo de la configuración predeterminada de la base de datos <br><br> (indexando y optimizando las tablas principales, optimizando la configuración predeterminada de sys-admin) | R |   |
+| Mantenimiento continuo de la configuración predeterminada de la base de datos <br><br> (indexando y optimizando las tablas principales, optimizando la configuración predeterminada de administración del sistema) | R |   |
 | Mantenimiento continuo de los datos del comerciante y de la configuración modificada<br><br>(configuración de tablas normalizadas frente a tablas planas, indización y optimización de tablas personalizadas y de terceros, archivado o eliminación de datos, configuración de la administración del sistema) |     | R |
 | Configuración de Galera y MySQL | R |   |
 | Calidad y parches continuos de Galera y MariaDB | R |   |
 | Optimización de la infraestructura en curso | R |   |
 | Identificación y corrección de consultas lentas |     | R |
 | Envíe una solicitud de servicio para instalar una versión de MariaDB compatible con la versión de Adobe Commerce instalada |     | R |
+| El comerciante debe mantener MariaDB en una versión compatible. Las implementaciones en versiones no compatibles NO cumplen los requisitos para la compatibilidad con Adobe y pueden contener vulnerabilidades de seguridad sin parches. |     | R |
 | Configuración y mantenimiento de políticas de retención de datos específicas del comerciante (las políticas de retención de datos de Adobe se definen en el acuerdo del comerciante) |     | R |
 
 {style="table-layout:auto"}
@@ -720,11 +739,11 @@ Los comerciantes son responsables de sincronizar datos entre entornos.
 |     | Adobe | Comerciante |
 | --- | --- | --- |
 | Disponibilidad y calidad de CDN | R |   |
-| Configuración del servicio rápida (mediante extensión/API) |     | R |
-| Calidad de extensión de Fastly | R |   |
-| Fragmentos VCL de integración rápida (incluidos en la extensión Fastly) Calidad | R |   |
+| Configuración del servicio rápida (mediante extensión o API) |     | R |
+| Calidad de extensión rápida | R |   |
+| Calidad de fragmentos de VCL de integración rápida (empaquetados con la extensión Fastly) | R |   |
 | Optimización de caché de página |     | R |
-| Adición de dominios a servicios, a CDN y a infraestructura | R |   |
+| Adición de dominios a servicios, CDN e infraestructura | R |   |
 | Fragmentos de VCL personalizados |     | R |
 | Reglas de WAF y WAF | R |   |
 
@@ -738,6 +757,7 @@ Los comerciantes son responsables de sincronizar datos entre entornos.
 | Configuración de las opciones predeterminadas de Redis | R |   |
 | Calidad continua y parches de Redis | R |   |
 | Envíe una solicitud de servicio para instalar una versión de Redis compatible con la versión de Adobe Commerce instalada |     | R |
+| El comerciante debe mantener Redis en una versión compatible. Las implementaciones en versiones no compatibles NO cumplen los requisitos para la compatibilidad con Adobe y pueden contener vulnerabilidades de seguridad sin parches. |     | R |
 
 {style="table-layout:auto"}
 
@@ -745,9 +765,10 @@ Los comerciantes son responsables de sincronizar datos entre entornos.
 
 |     | Adobe | Comerciante |
 | --- | --- | --- |
-| Disponibilidad de Elasticsearch o OpenSearch | R |   |
-| Configuración de los ajustes predeterminados de Elasticsearch o OpenSearch | R |   |
-| Envíe una solicitud de servicio para instalar una versión de Elasticsearch o OpenSearch compatible con la versión de Adobe Commerce instalada |  | R |
+| Disponibilidad de OpenSearch | R |   |
+| Configuración de los ajustes predeterminados de OpenSearch | R |   |
+| Envíe una solicitud de servicio para instalar una versión de OpenSearch compatible con la versión de Adobe Commerce instalada |   | R |
+| El comerciante debe mantener OpenSearch en una versión compatible. Las implementaciones en versiones no admitidas _no_ cumplen los requisitos para la compatibilidad con Adobe y pueden contener vulnerabilidades de seguridad sin parches. |     | R |
 
 {style="table-layout:auto"}
 
@@ -756,8 +777,8 @@ Los comerciantes son responsables de sincronizar datos entre entornos.
 |     | Adobe | Comerciante |
 | --- | --- | --- |
 | Disponibilidad del servicio de correo electrónico SendGrid y su integración | R |   |
-| Monitorización del uso de SendGrid del comerciante con respecto a los límites | R |   |
-| El comerciante es responsable de usar el servicio solamente para correos electrónicos transaccionales salientes<br>El servicio no admite el envío de correos electrónicos de marketing. |     | R |
+| Supervisión del uso de SendGrid del comerciante con respecto a los límites | R |   |
+| Usar el servicio solo para correos electrónicos transaccionales salientes. El servicio no admite el envío de correos electrónicos de marketing. |     | R |
 | Configuración de servicios de correo electrónico opcionales de terceros |     | R |
 
 {style="table-layout:auto"}
@@ -777,7 +798,7 @@ Los comerciantes son responsables de sincronizar datos entre entornos.
 |     | Adobe | Comerciante |
 | --- | --- | --- |
 | Disponibilidad del servicio de informes avanzados | R |   |
-| La configuración de los informes avanzados cumple con los términos y condiciones de los informes avanzados |     | R |
+| La configuración de los informes avanzados cumple los términos y condiciones de los informes avanzados |     | R |
 
 {style="table-layout:auto"}
 
@@ -793,11 +814,7 @@ Los comerciantes son responsables de sincronizar datos entre entornos.
 
 {style="table-layout:auto"}
 
->[!NOTE]
->
->Los comerciantes deben utilizar la versión más reciente de Live Search, Recomendaciones de productos y Servicios de pago para garantizar la máxima estabilidad, funcionalidad y elegibilidad para la asistencia.
->Adobe no admite versiones obsoletas y la actualización garantiza que se beneficie de las mejoras y correcciones de errores más recientes.
->Para obtener más información sobre las versiones compatibles, consulte la [Matriz de disponibilidad del producto para los servicios de Commerce](https://experienceleague.adobe.com/es/docs/commerce-operations/release/product-availability#commerce-services).
+{{supported-versions-only}}
 
 #### Recomendaciones de productos
 
@@ -805,6 +822,7 @@ Los comerciantes son responsables de sincronizar datos entre entornos.
 | --- | --- | --- |
 | Disponibilidad del servicio Recomendaciones de productos | R |   |
 | Actualización de módulos de Recomendaciones de producto |   | R |
+| Solo es compatible la última versión de Recomendaciones de productos. El comerciante debe actualizarse rápidamente después de cada lanzamiento. |     | R |
 
 {style="table-layout:auto"}
 
@@ -814,10 +832,13 @@ Los comerciantes son responsables de sincronizar datos entre entornos.
 | --- | --- | --- |
 | Disponibilidad del servicio Live Search | R |   |
 | Actualización de módulos de Live Search |   | R |
+| Solo se admite la última versión lanzada de Live Search. El comerciante debe actualizarse rápidamente después de cada lanzamiento. |     | R |
 
 {style="table-layout:auto"}
 
-#### Calidad de los eventos de tienda (recopilación de datos) para potenciar las recomendaciones de productos y la salida de Live Search
+#### Calidad de datos de evento de tienda
+
+La recopilación de eventos de tienda mejora la calidad de las recomendaciones de productos y la salida de Live Search. La responsabilidad depende de la implementación de la tienda:
 
 |     | Adobe | Comerciante |
 | --- | --- | --- |
@@ -825,8 +846,8 @@ Los comerciantes son responsables de sincronizar datos entre entornos.
 | Tema personalizado |  | R |
 | Implementación de Core PWA | R |   |
 | Implementación personalizada de PWA |  | R |
-| Implementación de Core AEM EDS (Commerce Boilerplate) | R |   |
-| Implementación personalizada de AEM EDS |  | R |
+| Implementación de Core Edge Delivery Services (Commerce Boilerplate) | R |   |
+| Implementación personalizada de Edge Delivery Services |   | R |
 | Cualquier otra implementación de tienda personalizada |  | R |
 
 {style="table-layout:auto"}
@@ -837,6 +858,7 @@ Los comerciantes son responsables de sincronizar datos entre entornos.
 | --- | --- | --- |
 | Disponibilidad del servicio de pagos | R |   |
 | Actualización de los módulos Pagos |   | R |
+| Solo se admite la última versión lanzada de Payment Services. El comerciante debe actualizarse rápidamente después de cada lanzamiento. |     | R |
 
 {style="table-layout:auto"}
 
@@ -846,7 +868,7 @@ Los comerciantes son responsables de sincronizar datos entre entornos.
 
 |     | Adobe | Comerciante |
 | --- | --- | --- |
-| Disponibilidad y calidad de la optimización de imágenes | R |  |
+| Disponibilidad y calidad de la optimización de imágenes | R |   |
 | Configuración de la optimización de imágenes |     | R |
 
 {style="table-layout:auto"}
@@ -855,9 +877,9 @@ Los comerciantes son responsables de sincronizar datos entre entornos.
 
 |     | Adobe | Comerciante |
 | --- | --- | --- |
-| Certificado dedicado SSL: caducidad | R |  |
-| Aprovisionamiento de certificados SSL | R |  |
-| Compras y mantenimiento de certificados SSL específicos/EV (distintos de los valores por defecto proporcionados) y proporcionados a Adobe |     | R |
+| Caducidad de certificado SSL dedicada | R |   |
+| Aprovisionamiento de certificados SSL | R |   |
+| Compra y mantenimiento de certificados EV u otros certificados SSL específicos (distintos de los valores por defecto proporcionados) y su entrega a Adobe |     | R |
 
 {style="table-layout:auto"}
 
@@ -865,35 +887,35 @@ Los comerciantes son responsables de sincronizar datos entre entornos.
 
 |     | Adobe | Comerciante |
 | --- | --- | --- |
-| Disponibilidad y configuración de WAF | R |  |
-| Direccionamiento de falsos positivos para reglas de WAF | R | |
-| Falsos positivos en la regla WAF de informes |     | R |
-| Ajuste de reglas de WAF (NO COMPATIBLE) |     |     |
-| Registros de WAF/CDN |     | R |
+| Disponibilidad y configuración de WAF | R |   |
+| Direccionamiento de falsos positivos para reglas de WAF | R |   |
+| Falsos positivos en la regla WAF de creación de informes |     | R |
+| Ajuste de reglas de WAF (NO ADMITIDO) |     |     |
+| Registros de WAF y CDN |     | R |
 
 {style="table-layout:auto"}
 
-#### DDOS
+#### DDoS
 
 |     | Adobe | Comerciante |
 | --- | --- | --- |
 | Bloqueo proactivo de IP |     | R |
 | Protección de bots |     | R |
-| Detección de DDOS: capa 3-4 | R |   |
-| Detección de DDOS: capa 7 |     | R |
-| Respuesta de DDOS | R |   |
+| Detección de DDoS: capa 3-4 | R |   |
+| Detección de DDoS: nivel 7 |     | R |
+| Respuesta DDoS | R |   |
 
 {style="table-layout:auto"}
 
-#### Vínculo privado
+#### PrivateLink
 
 |     | Adobe | Comerciante |
 | --- | --- | --- |
 | Configuración y mantenimiento de conexiones de PrivateLink (si se utilizan) con un VPC propiedad de Adobe | R |   |
 | Configuración y mantenimiento de conexiones de PrivateLink (si se utilizan) con un VPC de propiedad del comerciante |     | R |
-| Disponibilidad de SSH (vínculo no privado) | R |   |
-| Configuración de PrivateLink Inbound a extremo de Adobe Commerce Cloud Service | R |   |
-| Aceptación de PrivateLink Inbound para el punto final de Adobe Commerce Cloud Service |     | R |
+| Disponibilidad de SSH (non-PrivateLink) | R |   |
+| Configuración de PrivateLink entrante a un punto final de Adobe Commerce Cloud Service | R |   |
+| Aceptación de PrivateLink entrante a un punto final de Adobe Commerce Cloud Service |     | R |
 | Configuración de PrivateLink entrante al extremo del servicio VPC del comerciante |     | R |
 | Aceptación de PrivateLink entrante al extremo del servicio VPC del comerciante | R |   |
 | Configuración de integraciones de PrivateLink (extremo a cuenta) |     | R |
@@ -933,13 +955,14 @@ Los comerciantes son responsables de sincronizar datos entre entornos.
 
 {style="table-layout:auto"}
 
-#### Servidores y escalado en la nube
+#### Servidores en la nube y escalado
 
 |     | Adobe | Comerciante |
 | --- | --- | --- |
-| Disponibilidad de recursos de CPU, centro de datos, espacio en disco | R |   |
+| Disponibilidad de recursos de CPU, centro de datos y espacio en disco | R |   |
 | Disponibilidad y ejecución de capacidad de sobretensión o de ampliación de emergencia | R |   |
 | Solicitando capacidad de sobretensión |     | R |
 | Monitorización del uso de vCPU con respecto a los límites | R |   |
 
 {style="table-layout:auto"}
+
