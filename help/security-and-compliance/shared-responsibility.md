@@ -31,7 +31,7 @@ Los comerciantes son responsables de lo siguiente:
 * Garantizar el desarrollo seguro de aplicaciones
 * Obtención de la certificación PCI si así lo solicita el procesador de pagos del comerciante
 * Reacción y respuesta a incidentes de seguridad
-* Mantener todas las dependencias de terceros, los servicios de plataforma y las extensiones de servicios de Adobe Commerce en versiones compatibles de forma activa. Adobe no proporciona soporte de seguridad ni asistencia para implementaciones que ejecutan versiones de dependencia no admitidas. Consulte [Requisitos del sistema](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) y la [Matriz de disponibilidad del producto](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability) para ver las versiones compatibles.
+* Mantener todas las dependencias de terceros, los servicios de plataforma y las extensiones de servicios de Adobe Commerce en versiones compatibles de forma activa. Adobe no proporciona soporte de seguridad ni asistencia para implementaciones que ejecutan versiones de dependencia no admitidas. Consulte [Requisitos del sistema](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=es) y la [Matriz de disponibilidad del producto](https://experienceleague.adobe.com/es/docs/commerce-operations/release/product-availability) para ver las versiones compatibles.
 
 {{supported-versions-only}}
 
@@ -96,7 +96,7 @@ El comerciante es responsable de seguir las prácticas recomendadas de seguridad
    * Extensiones de Adobe Commerce Services
    * Todas las integraciones personalizadas y extensiones de terceros
 
-  Adobe no admite implementaciones que ejecuten versiones no admitidas. Consulte [Requisitos del sistema](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) y la [Matriz de disponibilidad del producto](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability) para ver las versiones compatibles.
+  Adobe no admite implementaciones que ejecuten versiones no admitidas. Consulte [Requisitos del sistema](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=es) y la [Matriz de disponibilidad del producto](https://experienceleague.adobe.com/es/docs/commerce-operations/release/product-availability) para ver las versiones compatibles.
 
 ## Responsabilidades del proveedor de Cloud Service
 
