@@ -2,9 +2,9 @@
 title: Notas de la versión de Adobe Commerce 2.4.8 Security Patch
 description: Obtenga información acerca de las correcciones de errores de seguridad, las mejoras de seguridad y otras actualizaciones relacionadas con la seguridad incluidas en las versiones de parches de seguridad para Adobe Commerce 2.4.8.
 exl-id: 5f8866ed-9215-4b2e-9c77-b2d474f6c1f9
-source-git-commit: a61409b02e612295fb03a42e22dcfdf5c3eb0e57
+source-git-commit: 95333e271e6f7a8e782d6a40b754fe29ac280414
 workflow-type: tm+mt
-source-wordcount: '817'
+source-wordcount: '815'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 La versión de seguridad de Adobe Commerce 2.4.8-p5 proporciona correcciones de errores de seguridad para vulnerabilidades identificadas en versiones anteriores de 2.4.8.
 
-Para obtener la información más reciente sobre la corrección de errores de seguridad, consulte [Boletín de seguridad de Adobe APSB26-49](https://helpx.adobe.com/es/security/products/magento/apsb26-49.html).
+Para obtener la información más reciente sobre la corrección de errores de seguridad, consulte [Boletín de seguridad de Adobe APSB26-49](https://helpx.adobe.com/security/products/magento/apsb26-49.html).
 
 {{b2b-patches}}
 
@@ -33,9 +33,9 @@ Adobe Commerce 2.4.8 se ha validado para la compatibilidad con MariaDB 11.8 y, a
 
 Adobe Commerce 2.4.8 ahora es compatible con la última versión menor de OpenSearch 3 en Adobe Commerce en implementaciones de infraestructura en la nube, nativas de la nube y locales. Se conserva la compatibilidad con OpenSearch 2.
 
-#### Compatibilidad con Valkey 9.x LTS
+#### Compatibilidad con Valkey 8.1 LTS
 
-Adobe Commerce 2.4.8 ahora es compatible con Valkey 9.x LTS, proporcionando una opción de back-end de caché de soporte a largo plazo compatible con Adobe Commerce en la infraestructura en la nube.
+Adobe Commerce 2.4.8 ahora es compatible con Valkey 8.1 LTS, y proporciona una opción de back-end de caché de soporte a largo plazo compatible con Adobe Commerce en la infraestructura en la nube.
 
 #### Soporte para RabbitMQ 4.2
 
@@ -53,7 +53,7 @@ Para resolver la retirada de Laminas MVC, Adobe Commerce ahora usa una ramificac
 
 La versión de seguridad de Adobe Commerce 2.4.8-p4 proporciona correcciones de errores de seguridad para vulnerabilidades identificadas en versiones anteriores de 2.4.8.
 
-Para obtener la información más reciente sobre la corrección de errores de seguridad, consulte [Boletín de seguridad de Adobe APSB26-05](https://helpx.adobe.com/es/security/products/magento/apsb26-05.html).
+Para obtener la información más reciente sobre la corrección de errores de seguridad, consulte [Boletín de seguridad de Adobe APSB26-05](https://helpx.adobe.com/security/products/magento/apsb26-05.html).
 
 {{b2b-patches}}
 
@@ -73,7 +73,7 @@ Adobe Commerce 2.4.8 se ha actualizado para admitir Composer 2.9.x, pero seguir�
 
 La versión de seguridad de Adobe Commerce 2.4.8-p3 proporciona correcciones de errores de seguridad para vulnerabilidades identificadas en versiones anteriores de 2.4.8.
 
-Para obtener la información más reciente sobre la corrección de errores de seguridad, consulte [Boletín de seguridad de Adobe APSB25-94](https://helpx.adobe.com/es/security/products/magento/apsb25-94.html).
+Para obtener la información más reciente sobre la corrección de errores de seguridad, consulte [Boletín de seguridad de Adobe APSB25-94](https://helpx.adobe.com/security/products/magento/apsb25-94.html).
 
 {{b2b-patches}}
 
@@ -99,7 +99,7 @@ Esta versión incluye los siguientes aspectos destacados:
 
 La versión de seguridad de Adobe Commerce 2.4.8-p2 proporciona correcciones de errores de seguridad para vulnerabilidades identificadas en versiones anteriores de 2.4.8.
 
-Para obtener la información más reciente sobre la corrección de errores de seguridad, consulte [Boletín de seguridad de Adobe APSB25-71](https://helpx.adobe.com/es/security/products/magento/apsb25-71.html).
+Para obtener la información más reciente sobre la corrección de errores de seguridad, consulte [Boletín de seguridad de Adobe APSB25-71](https://helpx.adobe.com/security/products/magento/apsb25-71.html).
 
 {{b2b-patches}}
 
@@ -107,7 +107,7 @@ Para obtener la información más reciente sobre la corrección de errores de se
 
 La versión de seguridad de Adobe Commerce 2.4.8-p1 proporciona correcciones de errores de seguridad para vulnerabilidades identificadas en versiones anteriores de 2.4.8.
 
-Para obtener la información más reciente sobre la corrección de errores de seguridad, consulte [Boletín de seguridad de Adobe APSB25-50](https://helpx.adobe.com/es/security/products/magento/apsb25-50.html).
+Para obtener la información más reciente sobre la corrección de errores de seguridad, consulte [Boletín de seguridad de Adobe APSB25-50](https://helpx.adobe.com/security/products/magento/apsb25-50.html).
 
 {{b2b-patches}}
 
@@ -131,7 +131,7 @@ Esta versión incluye los siguientes aspectos destacados:
 
 >[!BEGINSHADEBOX]
 
-Las correcciones para CVE-2025-47110 y VULN-31547 también están disponibles como parche aislado. Consulte el [artículo de la Base de conocimiento](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-50) para obtener detalles.
+Las correcciones para CVE-2025-47110 y VULN-31547 también están disponibles como parche aislado. Consulte el [artículo de la Base de conocimiento](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-50) para obtener detalles.
 
 >[!ENDSHADEBOX]
 
