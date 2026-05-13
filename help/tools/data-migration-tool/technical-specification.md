@@ -3,7 +3,7 @@ title: Especificación técnica de [!DNL Data Migration Tool]
 description: Obtenga información acerca de los detalles de implementación de  [!DNL Data Migration Tool]  y cómo ampliarlos al transferir datos entre Magento 1 y Magento 2.
 exl-id: fec3ac3a-dd67-4533-a29f-db917f54d606
 topic: Commerce, Migration
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
 workflow-type: tm+mt
 source-wordcount: '2113'
 ht-degree: 0%
@@ -227,7 +227,7 @@ El proceso de migración consta de pasos.
 
 Step es una unidad que proporciona la funcionalidad necesaria para la migración de algunos datos separados. El paso puede constar de una o más etapas (comprobación de integridad, datos, comprobación de volumen y delta).
 
-De manera predeterminada, hay varios pasos ([Mapa](#map-step), [EAV](#eav), [Reescrituras de URL](#url-rewrite-step), etc.). Si lo desea, también puede agregar sus propios pasos.
+De manera predeterminada, hay varios pasos ([Mapa](#map-step), [EAV](#eav-step), [Reescrituras de URL](#url-rewrite-step), etc.). Si lo desea, también puede agregar sus propios pasos.
 
 Las clases relacionadas con los pasos se encuentran en el directorio src/Migration/Step.
 

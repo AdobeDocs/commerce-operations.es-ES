@@ -3,14 +3,14 @@ title: Configuración y uso de Barniz
 description: Aprenda a configurar y utilizar el almacenamiento en caché de Varnish para Adobe Commerce. Descubra las técnicas de aceleración HTTP, almacenamiento de archivos y optimización de rendimiento.
 feature: Configuration, Cache
 exl-id: 57614878-e349-43bb-b22b-1aa321907be1
-source-git-commit: f9a135fc63574ccbecd3f564a87fc5c4ac03f009
+source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
 workflow-type: tm+mt
-source-wordcount: '1087'
+source-wordcount: '1089'
 ht-degree: 0%
 
 ---
 
-# Configurar barniz
+# Configuración y uso de Barniz
 
 [Varnish Cache](https://www.varnish.org/) es un acelerador de aplicaciones web de código abierto (también conocido como _acelerador HTTP_ o _proxy inverso HTTP de almacenamiento en caché_). Varnish almacena (o almacena en caché) archivos o fragmentos de archivos en la memoria, lo que permite a Varnish reducir el tiempo de respuesta y el consumo de ancho de banda de la red en solicitudes futuras y equivalentes. A diferencia de los servidores web como Apache y nginx, Varnish fue diseñado para usarse exclusivamente con el protocolo HTTP.
 

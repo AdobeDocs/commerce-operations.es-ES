@@ -1,16 +1,16 @@
 ---
-title: Verificación final
+title: Verificar configuración de barniz
 description: Aprenda a realizar la verificación final de la configuración de Barniz con Adobe Commerce. Descubra los pasos de prueba y las técnicas de solución de problemas.
 feature: Configuration, Cache
 exl-id: 01f28c93-75cd-4969-9142-b8dac0aa2adb
-source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
+source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
 workflow-type: tm+mt
-source-wordcount: '361'
+source-wordcount: '360'
 ht-degree: 0%
 
 ---
 
-# Verificación final de la configuración del barniz
+# Verificar configuración de barniz {#final-verification}
 
 Ahora que está usando el `default.vcl` generado por Commerce, puede realizar algunas comprobaciones finales para asegurarse de que Varnish funciona.
 
@@ -83,4 +83,4 @@ Asegúrese de que el directorio `<magento_root>/var/page_cache` esté vacío:
 
 >[!TIP]
 >
->Si encuentra errores 503 (Error de recuperación de servidor), consulte [Solución de problemas 503 (Servicio no disponible) errores](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-503-errors.html?lang=es) en el _Centro de ayuda de Adobe Commerce_.
+>Si encuentra errores 503 (Error de recuperación de servidor), consulte [Solución de problemas 503 (Servicio no disponible) errores](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-503-errors.html) en el _Centro de ayuda de Adobe Commerce_.

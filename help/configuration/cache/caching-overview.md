@@ -1,50 +1,62 @@
 ---
-title: Configurar almacenamiento en caché
-description: Obtenga información sobre los mecanismos de almacenamiento en caché y las opciones de configuración para aplicaciones de Adobe Commerce. Descubra alternativas al almacenamiento en caché predeterminado del sistema de archivos.
+title: Información general de almacenamiento en caché y opciones de configuración
+description: Obtenga información acerca del almacenamiento en caché en Adobe Commerce, incluido el almacenamiento back-end, la configuración de front-end y el almacenamiento en caché de página completa con Varnish, Redis, Valkey y caché L2.
 feature: Configuration, Cache
 exl-id: 6effa069-c043-411a-b161-01210be17391
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 9cd0f2a84772e2d68fd15a00651216abfa9ec91c
 workflow-type: tm+mt
-source-wordcount: '207'
+source-wordcount: '544'
 ht-degree: 0%
 
 ---
 
-# Configurar almacenamiento en caché
+# Información general de almacenamiento en caché y opciones de configuración
 
-[!DNL Commerce] le permite configurar alternativas al almacenamiento en caché predeterminado del sistema de archivos. En esta guía se analizan algunas de estas alternativas, a saber:
+Adobe Commerce se basa en una arquitectura de almacenamiento en caché de varios niveles para reducir la carga de la base de datos, minimizar el procesamiento redundante y acelerar la entrega de páginas. A nivel de aplicación, Commerce mantiene más de una docena de [tipos de caché](../cli/manage-cache.md#clean-and-flush-cache-types), como configuración, diseño, HTML de bloques y colecciones, cada uno de los cuales se puede enrutar a un servidor de almacenamiento dedicado como [Redis](config-redis.md) o [Valkey](config-valkey.md). Para el almacenamiento en caché de páginas completas, Adobe recomienda encarecidamente [Varnish](config-varnish.md), un acelerador HTTP que proporciona páginas en caché directamente desde la memoria. Capas adicionales como [almacenamiento en caché L2](level-two-cache.md) y [firma de contenido estático](static-content-signing.md) mejoran aún más el rendimiento para implementaciones de varios nodos y de alto tráfico.
 
-- Configure los siguientes mecanismos de caché en la configuración de [!DNL Commerce]:
+Esta guía explica cómo funciona cada capa de almacenamiento en caché y muestra cómo configurar front-end, backends y opciones avanzadas para que coincidan con los requisitos de implementación.
 
-   - [Base de datos](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/)
-   - [Redis](config-redis.md)
-   - Sistema de archivos (predeterminado): no es necesaria ninguna configuración para utilizar el almacenamiento en caché predeterminado del sistema de archivos.
+## Almacenar en caché frontend
 
-- Configure [Varnish](config-varnish.md) sin modificar la configuración de [!DNL Commerce].
+Un front-end de caché es una interfaz entre Commerce y el back-end de almacenamiento de caché. Puede definir varios front-end, cada uno con una configuración de back-end diferente, y luego asignar [tipos de caché](../cli/manage-cache.md#clean-and-flush-cache-types) específicos a cada front-end.  Para obtener detalles de configuración, consulte [Configurar front-end de caché](cache-types.md).
+
+## Almacenar en caché backends
+
+Un back-end de caché es el mecanismo de almacenamiento subyacente para los datos en caché. Commerce proporciona un back-end del sistema de archivos predeterminado, pero puede configurar otros back-end, como Redis o Valkey, para mejorar el rendimiento y la escalabilidad. Para obtener más información sobre las opciones disponibles, consulte [Opciones del servidor de caché](cache-options.md).
+
+## Almacenamiento en caché de página completa con Barniz
+
+[Varnish Cache](config-varnish.md) es un acelerador HTTP que almacena en caché páginas completas en la memoria. Adobe recomienda encarecidamente Varnish para los entornos de producción porque es considerablemente más rápido que la memoria caché integrada de página completa.
+
+>[!NOTE]
+>
+>El barniz funciona como un proxy inverso delante del servidor web y no requiere cambios en la configuración del back-end de la caché de Commerce.
+
+## Almacenamiento en caché L2 (dos niveles)
+
+[Caché L2](level-two-cache.md) almacena los datos de caché localmente en cada nodo web mientras usa una caché remota (Redis o Valkey) como origen de la verdad. Esto reduce el tráfico de red entre los nodos web y la caché remota, lo que mejora el rendimiento de los sitios con mucho tráfico.
+
+## Almacenamiento en caché de contenido estático
+
+[La firma de contenido estático](static-content-signing.md) invalida la memoria caché del explorador para los recursos estáticos (CSS, JavaScript, imágenes) al incrustar una versión de implementación en las direcciones URL de los archivos.
 
 ## Terminología del almacenamiento en caché
 
 [!DNL Commerce] utiliza la siguiente terminología de almacenamiento en caché:
 
-- **Frontend**: similar a una interfaz o puerta de enlace para el almacenamiento en caché, implementada por [Magento\Framework\Cache\Frontend](https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/Cache/Frontend).
-- **Tipos de caché**: puede ser uno de los tipos proporcionados con [!DNL Commerce] o puede [crear los suyos propios](https://developer.adobe.com/commerce/php/development/cache/partial/cache-type/).
-- **Servidor**: especifica detalles sobre el [almacenamiento en caché](https://framework.zend.com/manual/1.12/en/zend.cache.backends.html), implementado por [Magento\Framework\Cache\Backend](https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/Cache/Backend)
-- **Servidor de dos niveles**: almacena los registros de caché en dos servidores: uno más rápido y uno más lento.
-
-  >[!INFO]
-  >
-  >La configuración de caché back-end de dos niveles está fuera del ámbito de esta guía.
+- **Frontend**: una interfaz o puerta de enlace para el almacenamiento en caché, implementada por [Magento\Framework\Cache\Frontend](https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/Cache/Frontend).
+- **Tipos de caché**: uno de los tipos integrados proporcionados con [!DNL Commerce] (como `config`, `layout`, `block_html`, `full_page`) o un [tipo personalizado](https://developer.adobe.com/commerce/php/development/cache/partial/cache-type/).
+- **Servidor**: especifica los detalles de [almacenamiento en caché](https://framework.zend.com/manual/1.12/en/zend.cache.backends.html), implementado por [Magento\Framework\Cache\Backend](https://github.com/magento/magento2/tree/2.4/lib/internal/Magento/Framework/Cache/Backend).
+- **Servidor de dos niveles**: almacena registros de caché en dos servidores: una caché local (rápida) y una caché remota (compartida). Consulte [Configuración de caché L2](level-two-cache.md).
 
 ## Opciones de configuración
 
-- Modificando el front-end de caché de `default` proporcionado:
+La configuración de caché se almacena en dos archivos:
 
-  Solo modifica el archivo `<magento_root>/app/etc/di.xml`, la configuración de inyección de dependencia global de la aplicación Commerce.
+- `<magento_root>/app/etc/di.xml`: la configuración de inyección de dependencia global. Modifique este archivo para cambiar el front-end de caché `default` proporcionado.
+- `<magento_root>/app/etc/env.php`: configuración específica del entorno. Modifique este archivo para configurar los front-end de caché personalizados. Este archivo anula la configuración equivalente de `di.xml`.
 
-- Configurar su propio front-end de caché personalizado:
+Para obtener más información sobre la asignación de front-end-to-type y la sintaxis de configuración de caché, consulte:
 
-  Solo modifica el archivo `<magento_root>/app/etc/env.php` porque anula la configuración equivalente del archivo `di.xml`.
-
->[!TIP]
->
->El barniz no requiere cambios en la configuración de [!DNL Commerce]. Consulte [Configurar y utilizar Barniz](config-varnish.md).
+- [Configurar front-end de caché](cache-types.md): asocie un front-end de caché con tipos de caché específicos
+- [Opciones de servidor de caché](cache-options.md) — Referencia de la opción de servidor

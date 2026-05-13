@@ -2,7 +2,7 @@
 title: '[!DNL Recommendations]'
 description: Obtenga información acerca de la ficha [!UICONTROL Recommendations] en  [!DNL Site-Wide Analysis Tool], cuándo utilizarla, sus ventajas y prácticas recomendadas.
 exl-id: 17ff57e2-5b51-4afb-b505-09e46f490509
-source-git-commit: e39e0229538bb245fbe744ebfd642572fc2dc790
+source-git-commit: b1cfa656e3393bd47fb2c1557ff75db3ec6c6a67
 workflow-type: tm+mt
 source-wordcount: '176'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 El(la) [!UICONTROL Recommendations page] de la página [!DNL Site-Wide Analysis Tool] proporciona:
 
-* Una puntuación del índice de estado de [SWAT](#swat-health-index.md) para ayudarle a supervisar y mejorar el estado general de su sitio de Adobe Commerce
+* Una puntuación del índice de estado de [SWAT](swat-health-index.md) para ayudarle a supervisar y mejorar el estado general de su sitio de Adobe Commerce
 * Lista de recomendaciones basadas en las prácticas recomendadas para solucionar los problemas detectados en el sitio.
 
 Las recomendaciones se ordenan por prioridad de OC a P4, donde PO es crítico y P4 es bajo. Los resultados incluyen descripción, recomendación, impacto del sitio, causa raíz, escenarios/condiciones previas, resultado esperado y herramientas utilizadas.

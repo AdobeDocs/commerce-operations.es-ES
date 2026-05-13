@@ -3,7 +3,7 @@ title: Descargar paquetes de Compositor de datos de ejemplo
 description: Siga estos pasos para instalar datos de muestra de Adobe Commerce mediante el Compositor PHP Package Manager.
 feature: Install, Deploy
 exl-id: 735591af-a152-4476-9fa6-e31c4bab3ba8
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: 87302734f3ff91f0403beac283ff21925d89318d
 workflow-type: tm+mt
 source-wordcount: '302'
 ht-degree: 0%
@@ -66,4 +66,4 @@ Si aparece el error, cambie al directorio de instalación de la aplicación y ej
 
 {{$include /help/_includes/sample-data-complete.md}}
 
-<!-- Last updated from includes: 2022-09-08 11:33:05 -->
+<!-- Last updated from includes: 2026-04-17 13:49:36 -->

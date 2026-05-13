@@ -2,9 +2,9 @@
 title: Ejemplo con variables de entorno
 description: Vea un ejemplo de cómo establecer valores compartidos, específicos del sistema y confidenciales en el sistema de desarrollo mediante variables de entorno.
 exl-id: 98438674-e7f8-4143-9a76-3cc8bf0a73dc
-source-git-commit: 55512521254c49511100a557a4b00cf3ebee0311
+source-git-commit: 87302734f3ff91f0403beac283ff21925d89318d
 workflow-type: tm+mt
-source-wordcount: '1089'
+source-wordcount: '1102'
 ht-degree: 0%
 
 ---
@@ -198,4 +198,4 @@ En esta sección se explica cómo puede comprobar los ajustes de configuración 
 
    ![Comprobar la configuración del sistema de producción](../../assets/configuration/split-default-domain.png)
 
-<!-- Last updated from includes: 2024-07-18 15:50:54 -->
+<!-- Last updated from includes: 2026-04-17 13:49:36 -->

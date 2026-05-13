@@ -3,14 +3,14 @@ title: Configuración de Barniz para Commerce
 description: Aprenda a configurar Varnish específicamente para aplicaciones de Adobe Commerce. Descubra las actualizaciones y técnicas de administración de archivos de configuración.
 feature: Configuration, Cache, SCD
 exl-id: 6c007ff9-493f-4df2-b7b4-438b41fd7e37
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
 workflow-type: tm+mt
-source-wordcount: '439'
+source-wordcount: '436'
 ht-degree: 0%
 
 ---
 
-# Configuración de la aplicación de Commerce para que utilice Barniz
+# Configuración de Barniz para Commerce
 
 Para configurar Commerce para que utilice Barniz:
 

@@ -2,7 +2,7 @@
 title: Definición del modo de funcionamiento
 description: Obtenga información sobre cómo establecer los modos de operación de Adobe Commerce entre desarrollador y producción. Comandos de cambio de modo Discover e implicaciones de seguridad.
 exl-id: 62d183fa-d4ff-441d-b8bd-64ef5ae10978
-source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
+source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
 workflow-type: tm+mt
 source-wordcount: '397'
 ht-degree: 0%
@@ -161,6 +161,6 @@ Enabled default mode.
 
 ### Ejecute comandos CLI desde cualquier lugar
 
-[Ejecute comandos CLI desde cualquier lugar](../cli/config-cli.md#config-install-cli-first).
+[Ejecute comandos CLI desde cualquier lugar](../cli/config-cli.md#prerequisites).
 
 Si no ha agregado `<Commerce-install-directory>/bin` a su sistema `PATH`, recibirá un error cuando ejecute el comando por sí solo.

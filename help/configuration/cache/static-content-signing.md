@@ -1,16 +1,16 @@
 ---
-title: Caché de contenido estático
-description: Obtenga información acerca de la firma de caché de contenido estático y la optimización de rendimiento en Adobe Commerce. Descubra cómo habilitar, deshabilitar y configurar las funciones de almacenamiento en caché.
+title: Firma de contenido estático e invalidación de caché del explorador
+description: Descubra cómo funciona la firma de contenido estático en Adobe Commerce para invalidar la caché del explorador para los recursos estáticos. Descubra cómo habilitar y configurar esta función.
 feature: Configuration, Cache, SCD
 exl-id: b54ceea2-b3a1-4dbb-ba87-743f2af0d2fb
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
 workflow-type: tm+mt
-source-wordcount: '496'
+source-wordcount: '495'
 ht-degree: 0%
 
 ---
 
-# Caché de contenido estático
+# Firma de contenido estático e invalidación de la caché del explorador
 
 Para mejorar el rendimiento, Commerce establece los encabezados `Expires` de los recursos estáticos, como imágenes, JavaScript y archivos CSS.
 Al establecer el encabezado `Expires` en un recurso estático, se indica al explorador que almacene en caché el recurso en esa dirección URL y proporcione la versión en caché hasta que caduque.
@@ -35,9 +35,9 @@ Esto cambia la dirección URL de los archivos estáticos y fuerza al explorador 
 
 Commerce habilita esta función de forma predeterminada y Adobe recomienda mantenerla habilitada para evitar problemas relacionados con los exploradores que usan recursos estáticos antiguos.
 
-La configuración para la firma de contenido estático se encuentra en [**[!UICONTROL Stores]**> Configuración > Configuración >**[!UICONTROL Advanced]**>**[!UICONTROL Developer]**>**[!UICONTROL Static Files Settings]**](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/tools/developer-tools#static-file-signatures).
+La configuración para la firma de contenido estático se encuentra en [**[!UICONTROL Stores]**> Configuración > Configuración >**[!UICONTROL Advanced]**>**[!UICONTROL Developer]**>**[!UICONTROL Static Files Settings]**](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/developer-tools#static-file-signatures).
 
-- **Solo local**: esta configuración está disponible si el sitio es **no** en [modo de producción](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html?lang=es#production-mode).
+- **Solo local**: esta configuración está disponible si el sitio es **no** en [modo de producción](../bootstrap/application-modes.md#production-mode).
 - **Cloud**: esta configuración está oculta porque el modo de producción se aplica estrictamente; por lo tanto, debe utilizar la línea de comandos como se muestra a continuación.
 
 ![Configuración de archivos estáticos](../../assets/configuration/static-files-settings.png)

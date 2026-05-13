@@ -1,30 +1,34 @@
 ---
-title: Tipos de caché
-description: Aprenda a asociar frontend de caché con tipos de caché en Adobe Commerce. Descubra las técnicas de configuración y administración de caché.
+title: Configurar front-end de caché
+description: Obtenga información sobre cómo definir front-end de caché y asociarlos a tipos de caché en Adobe Commerce. Descubra la sintaxis de configuración para env.php y di.xml.
 feature: Configuration, Cache
 exl-id: 67d4ba06-b48b-4e1a-a7a8-9830490dfe3d
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: de613310ad701dd594a6ee8fcd973aa2c3769870
 workflow-type: tm+mt
-source-wordcount: '274'
+source-wordcount: '465'
 ht-degree: 0%
 
 ---
 
-# Tipos de caché
+# Configurar front-end de caché
 
-Los siguientes pasos describen cómo asociar el front-end de caché con un tipo de caché.
+Un front-end de caché es una interfaz entre Commerce y el back-end de almacenamiento de caché. Puede definir varios front-end, cada uno con una configuración de back-end diferente, y luego asignar [tipos de caché](../cli/manage-cache.md#clean-and-flush-cache-types) específicos a cada front-end.
 
-## Paso 1: Definir un front-end de caché
+Esto resulta útil cuando desea utilizar diferentes backends o configuraciones de caché para diferentes tipos de datos en caché. Por ejemplo, es posible que desee el almacenamiento en caché de `full_page` en una base de datos Redis dedicada mientras utiliza una base de datos independiente para el almacenamiento en caché de `default`.
 
-La aplicación Commerce tiene un front-end de caché `default` que puede usar para cualquier [tipo de caché](../cli/manage-cache.md#clean-and-flush-cache-types). En esta sección se explica cómo definir de forma opcional un front-end de caché con un nombre diferente, lo que es preferible si espera personalizar el front-end.
+## Usar el front-end predeterminado
 
->[!INFO]
->
->Para usar el tipo de caché `default`, no es necesario modificar `env.php` en absoluto; se modifica la caché global `di.xml` de Commerce. Consulte [Opciones de caché de nivel inferior](cache-options.md).
+Commerce proporciona un front-end de caché `default` que funciona para todos los tipos de caché. Amplía [Zend_Cache_Core](https://framework.zend.com/manual/1.12/en/zend.cache.frontends.html) al implementar la caché de front-end [Magento\Framework\Cache\Core](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Cache/Core.php).
 
-Debe especificar un front-end de caché personalizado `app/etc/env.php` o el global de Commerce `app/etc/di.xml`.
+En la mayoría de los casos, no es necesario personalizar el front-end. Solo es necesario configurar el servidor. Consulte [Opciones de servidor de caché](cache-options.md).
 
-El siguiente ejemplo muestra cómo definirlo en el archivo `env.php`, que anula el archivo `di.xml`:
+## Definir un front-end de caché personalizado
+
+A continuación se describen los pasos para asociar un front-end de caché con un tipo de caché.
+
+### Paso 1: Definir un front-end de caché y asignar tipos de caché
+
+Para definir un front-end de caché personalizado, agregue la configuración a `app/etc/env.php` (que invalida `di.xml`):
 
 ```php?start_inline=1
 'cache' => [
@@ -37,8 +41,6 @@ El siguiente ejemplo muestra cómo definirlo en el archivo `env.php`, que anula 
          <cache type 1> => [
              'frontend' => '<unique frontend id>'
         ],
-    ],
-    'type' => [
          <cache type 2> => [
              'frontend' => '<unique frontend id>'
         ],
@@ -46,11 +48,19 @@ El siguiente ejemplo muestra cómo definirlo en el archivo `env.php`, que anula 
 ],
 ```
 
-Donde `<unique frontend id>` es un nombre único para identificar el front-end y `<cache options>` son opciones que se tratan en los temas específicos de cada tipo de almacenamiento en caché (base de datos, Redis, etc.).
+Donde:
 
-## Paso 2: Configuración de la caché
+- `<unique frontend id>`: un nombre único para identificar el front-end (por ejemplo, `default`, `page_cache`, `stale_cache_enabled`)
+- `<cache options>`: tipo de servidor y opciones para este front-end (consulte [Opciones de caché](cache-options.md))
+- `<cache type>`: un tipo de caché de Commerce para asignar a este front-end (por ejemplo, `config`, `layout`, `block_html`, `full_page`)
 
-Puede especificar opciones de configuración de caché de front-end y back-end en `env.php` o `di.xml`. Esta tarea es opcional.
+>[!TIP]
+>
+>**Implementación moderna de Symfony Cache (2.4.9+):** A partir de Commerce 2.4.9, puede usar tipos de backend simplificados como `redis`, `valkey` o `file` con la implementación moderna de Symfony Cache. Consulte [Usar Redis para la caché predeterminada](redis-pg-cache.md) y [Usar Valkey para la caché predeterminada](valkey-pg-cache.md) para obtener más información.
+
+### Paso 2: Configurar las opciones de front-end y back-end
+
+Puede especificar opciones de configuración de caché de front-end y back-end en `env.php` o `di.xml`. Esta tarea es opcional. Si no especifica opciones, Commerce utiliza la configuración predeterminada de front-end y back-end.
 
 `env.php` ejemplo:
 
@@ -67,13 +77,26 @@ Puede especificar opciones de configuración de caché de front-end y back-end e
 ],
 ```
 
-donde
+Donde:
 
-- `<frontend_type>` es el tipo de caché de nivel inferior de front-end. Especifique el nombre de una clase compatible con `Zend\Cache\Core`.
-Si omite `<frontend_type>`, se usará [Magento\Framework\Cache\Core](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Cache/Core.php).
+- `<frontend_type>`: el tipo de caché de nivel inferior de front-end. Especifique un nombre de clase compatible con `Zend\Cache\Core`.
+Si se omite, se usa [Magento\Framework\Cache\Core](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Cache/Core.php).
 
-- `<frontend_option>`, `<frontend_option_value>` son el nombre y el valor de las opciones que el marco de trabajo de Commerce pasa como una matriz asociativa a la caché de front-end en el momento de su creación.
-- `<backend_type>` es el tipo de caché de nivel inferior del servidor. Especifique el nombre de una clase compatible con `Zend_Cache_Backend` y que implementa `Zend_Cache_Backend_Interface`.
-- `<backend_option>` y `<backend_option_value>` son el nombre y el valor de las opciones que el marco de trabajo de Commerce pasa como una matriz asociativa a la caché back-end en el momento de su creación.
+- `<frontend_option>`, `<frontend_option_value>`: el nombre y valor de las opciones que el marco de trabajo de Commerce pasa como una matriz asociativa a la caché de front-end en el momento de la creación.
 
-Consulte la [documentación de Laminas](https://docs.laminas.dev/) para obtener la información más reciente sobre Zend.
+- `<backend_type>`: el tipo de caché de servidor de nivel bajo. Puede especificar:
+   - **Caché Symfony moderna (2.4.9+, recomendada)**: Nombres simplificados como `redis`, `valkey` o `file`
+   - **Heredado (basado en Zend)**: Nombre de clase completo compatible con `Zend_Cache_Backend` que implementa `Zend_Cache_Backend_Interface`
+
+- `<backend_option>`, `<backend_option_value>`: nombre y valor de las opciones que el marco de trabajo de Commerce pasa como una matriz asociativa a la caché back-end al crearla.
+
+>[!NOTE]
+>
+>**Implementación heredada frente a moderna:**
+>
+>- **Heredado (basado en Zend)**: `'backend' => 'Magento\\Framework\\Cache\\Backend\\Redis'`
+>- **Moderno (caché de Symfony)**: `'backend' => 'redis'` (recomendado para Commerce 2.4.9+)
+>
+>La implementación moderna de Symfony Cache proporciona un mejor rendimiento a través del cumplimiento de PSR-6, serialización Igbinary, compresión gzip, scripts Lua y conexiones persistentes.
+
+Consulte la [documentación de Laminas](https://docs.laminas.dev/) para ver las opciones basadas en Zend o las modernas guías de Symfony Cache para [Redis](redis-pg-cache.md) y [Valkey](valkey-pg-cache.md).

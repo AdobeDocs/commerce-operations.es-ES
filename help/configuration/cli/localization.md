@@ -2,7 +2,7 @@
 title: Diccionarios de traducción y paquetes de idiomas
 description: Obtenga información sobre cómo generar diccionarios de traducción y paquetes de idiomas para Adobe Commerce. Descubra la localización y la configuración de tiendas multilingües.
 exl-id: dd27ccdd-158d-40a6-a2e2-563857820ae9
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
 workflow-type: tm+mt
 source-wordcount: '1513'
 ht-degree: 0%
@@ -35,7 +35,7 @@ Para generar el diccionario y comenzar la traducción:
 
 1. Puede empaquetar los diccionarios de traducción en un paquete de idioma y proporcionar el paquete al administrador de la tienda de Commerce.
 
-1. En el Administrador, el administrador del almacén [configura las traducciones](https://experienceleague.adobe.com/es/docs/commerce-admin/stores-sales/site-store/store-localize).
+1. En el Administrador, el administrador del almacén [configura las traducciones](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-localize).
 
 Opciones de comando:
 
@@ -106,7 +106,7 @@ En la tabla siguiente se explican los parámetros y valores del comando del paqu
 
 | Parámetro | Valor | ¿Requerido? |
 |--- |--- |--- |
-| `<source>` | Ruta absoluta del sistema de archivos y nombre de archivo de un archivo CSV que contiene el diccionario de traducción combinado y la metainformación necesaria para el desglose en un paquete de idioma.<br><br>Use [`bin/magento i18n:collect-phrases`](#config-cli-subcommands-xlate-dict-dict) para crear el archivo CSV y después cree el paquete de idioma como se describe en [Crear directorios y archivos](#m2devgde-xlate-files). | Sí |
+| `<source>` | Ruta absoluta del sistema de archivos y nombre de archivo de un archivo CSV que contiene el diccionario de traducción combinado y la metainformación necesaria para el desglose en un paquete de idioma.<br><br>Use [`bin/magento i18n:collect-phrases`](#generate-a-translation-dictionary) para crear el archivo CSV y después cree el paquete de idioma como se describe en [Crear directorios y archivos](#create-directories-and-files). | Sí |
 | `<locale>` | El identificador de idioma [ISO 639-1](https://www.iso.org/iso-639-language-codes.html) (idioma) y [ISO 3166](https://www.iso.org/iso-3166-country-codes.html) (país) usado como nombre de archivo para todos los archivos CSV resultantes. Ejemplos: `de_DE`, `pt_PT`, `pt_BR`. | Sí |
 | `-m --mode` | Si existe un archivo de destino, especifica si se debe reemplazar el paquete de idioma existente o combinarlo con el nuevo. La combinación reemplaza las frases existentes y agrega las nuevas.<br><br>Valores: combinar o reemplazar (predeterminado). | No |
 | `-d --allow-duplicates` | Incluya esta opción para permitir duplicados en el paquete de idioma. De lo contrario, el comando falla con un error si encuentra la misma frase en varias entradas con traducciones diferentes. | No |

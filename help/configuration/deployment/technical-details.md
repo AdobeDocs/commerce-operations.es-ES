@@ -2,7 +2,7 @@
 title: Detalles técnicos
 description: Obtenga información sobre los detalles técnicos de la implementación de la canalización, los tipos de configuraciones y los flujos de trabajo recomendados.
 exl-id: a396d241-f895-4414-92af-3abf3511e62a
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
 workflow-type: tm+mt
 source-wordcount: '1269'
 ht-degree: 0%
@@ -14,10 +14,10 @@ ht-degree: 0%
 En este tema se tratan los detalles de implementación técnica de la canalización en Commerce 2.2 y versiones posteriores. Las mejoras se pueden dividir en las siguientes áreas:
 
 - [Administración de configuración](#configuration-management)
-- [Cambios en la administración](#changes-in-the-admin)
+- [Cambios en la administración](#the-commerce-admin)
 - [Instalar y eliminar cron](#install-and-remove-cron)
 
-En este tema también se describe el [flujo de trabajo recomendado](#recommended-workflow) para la implementación de canalizaciones y se proporcionan algunos ejemplos para ayudarle a comprender cómo funciona.
+En este tema también se describe el [flujo de trabajo recomendado](#recommended-pipeline-deployment-workflow) para la implementación de canalizaciones y se proporcionan algunos ejemplos para ayudarle a comprender cómo funciona.
 
 Antes de comenzar, revise los [requisitos previos para sus sistemas de desarrollo, compilación y producción](../deployment/prerequisites.md).
 
@@ -55,12 +55,12 @@ La configuración confidencial también se almacena en `app/etc/env.php`.
 Puede administrar la configuración confidencial de cualquiera de las siguientes maneras:
 
 - Variables de entorno
-- Guarde la configuración confidencial en `env.php` en el sistema de producción mediante el comando [`magento config:set:sensitive` &#x200B;](../cli/set-configuration-values.md)
+- Guarde la configuración confidencial en `env.php` en el sistema de producción mediante el comando [`magento config:set:sensitive` ](../cli/set-configuration-values.md)
 
 ### Ajustes de configuración bloqueados en el administrador
 
 Cualquier configuración de `config.php` o `env.php` está bloqueada en el administrador; es decir, dicha configuración no se puede cambiar en el administrador.
-Use el comando [`magento config:set` o `magento config:set --lock`](../cli/export-configuration.md#config-cli-config-set) para cambiar la configuración de los archivos `config.php` o `env.php`.
+Use el comando [`magento config:set` o `magento config:set --lock`](../cli/set-configuration-values.md#set-values) para cambiar la configuración de los archivos `config.php` o `env.php`.
 
 ## El administrador de Commerce
 
@@ -88,7 +88,7 @@ El administrador muestra el siguiente comportamiento mientras está en modo de p
 
 ## Instalar y eliminar cron
 
-En la versión 2.2 por primera vez, le ayudamos a configurar su trabajo cron proporcionando el comando [`magento cron:install` &#x200B;](../cli/configure-cron-jobs.md). Este comando configura un crontab como el usuario que ejecuta el comando.
+En la versión 2.2 por primera vez, le ayudamos a configurar su trabajo cron proporcionando el comando [`magento cron:install` ](../cli/configure-cron-jobs.md). Este comando configura un crontab como el usuario que ejecuta el comando.
 
 Además, puede quitar el crontab mediante el comando `magento cron:remove`.
 

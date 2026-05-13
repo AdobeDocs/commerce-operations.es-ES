@@ -1,16 +1,16 @@
 ---
-title: Configuración del servidor web
+title: Configurar el servidor web para el almacenamiento en caché de barniz
 description: Aprenda a configurar el servidor web para que funcione con el almacenamiento en caché de Varnish para Adobe Commerce. Descubra los requisitos de configuración e instalación de puertos.
 feature: Configuration, Cache, Install, Logs
 exl-id: b31179ef-3c0e-4a6b-a118-d3be1830ba4e
-source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
+source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
 workflow-type: tm+mt
-source-wordcount: '764'
+source-wordcount: '769'
 ht-degree: 0%
 
 ---
 
-# Configuración del servidor web
+# Configurar el servidor web para el almacenamiento en caché de Barniz
 
 Configure el servidor web para que escuche en un puerto que no sea el puerto predeterminado 80, ya que Varnish responde directamente a las solicitudes HTTP entrantes, no al servidor web.
 

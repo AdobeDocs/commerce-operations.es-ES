@@ -2,7 +2,7 @@
 title: Ejemplo con comandos CLI
 description: Vea un ejemplo de cómo establecer valores compartidos, específicos del sistema y confidenciales en el sistema de desarrollo mediante la línea de comandos.
 exl-id: d0058e9f-a5a9-48a6-9c66-c61515666335
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: 87302734f3ff91f0403beac283ff21925d89318d
 workflow-type: tm+mt
 source-wordcount: '1038'
 ht-degree: 0%
@@ -182,4 +182,4 @@ Para comprobar las opciones de configuración:
 
    ![Comprobar la configuración del sistema de producción](../../assets/configuration/split-default-domain.png)
 
-<!-- Last updated from includes: 2024-07-18 15:50:54 -->
+<!-- Last updated from includes: 2026-04-17 13:49:36 -->

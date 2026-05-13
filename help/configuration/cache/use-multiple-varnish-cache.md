@@ -3,14 +3,14 @@ title: Borrado de caché con varias instancias de barniz
 description: Descubra cómo funciona la limpieza de caché con varias instancias de Barniz en Adobe Commerce. Descubra las prácticas recomendadas de configuración y administración.
 feature: Configuration, Cache
 exl-id: 289a4e54-9e73-454c-bfb9-e78e405af56c
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
 workflow-type: tm+mt
-source-wordcount: '186'
+source-wordcount: '187'
 ht-degree: 1%
 
 ---
 
-# Caché que borra varias instancias de Varnish
+# Borrado de caché con varias instancias de barniz
 
 Adobe Commerce admite varias instancias de Barniz de forma predeterminada.
 
