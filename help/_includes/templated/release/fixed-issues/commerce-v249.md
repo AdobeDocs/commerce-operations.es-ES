@@ -73,7 +73,7 @@ Ahora, las API validan correctamente la entrada y devuelven un error 400 para ca
 
 _AC-6419 - [Problema de GitHub](https://github.com/magento/magento2/issues/35934) - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/a7ef6300)_
 
-#### Error interno del servidor en el extremo de API `/V1/order/{orderId}/ship`
+#### Error interno del servidor en el extremo de API `/V1/order/&lbrace;orderId&rbrace;/ship`
 
 El sistema corrige ahora el error interno del servidor en el extremo de API `/V1/order/{orderId}/ship` y devuelve un error 400, ya que la solicitud tiene un formato incorrecto.
 
