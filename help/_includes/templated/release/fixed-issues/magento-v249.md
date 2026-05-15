@@ -1,7 +1,7 @@
 ---
-source-git-commit: d70c7f4ea201e0073588f879d19a29ea11962244
+source-git-commit: 04ed1df1fa8601e121811661b81a86672422b639
 workflow-type: tm+mt
-source-wordcount: '32488'
+source-wordcount: '32485'
 ht-degree: 0%
 
 ---
@@ -73,7 +73,7 @@ Ahora, las API validan correctamente la entrada y devuelven un error 400 para ca
 
 _AC-6419 - [Problema de GitHub](https://github.com/magento/magento2/issues/35934) - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/a7ef6300)_
 
-#### Error interno del servidor en el extremo de API `/V1/order/&lbrace;orderId&rbrace;/ship`
+#### Error interno del servidor en el extremo de API `/V1/order/{orderId}/ship`
 
 El sistema corrige ahora el error interno del servidor en el extremo de API `/V1/order/{orderId}/ship` y devuelve un error 400, ya que la solicitud tiene un formato incorrecto.
 
@@ -663,7 +663,7 @@ _ACP2E-4675 - [Contribución de código de GitHub](https://github.com/magento/ma
 
 #### Las rutas de la imagen [Cloud] son absolutas en la segunda edición en Pagebuilder
 
-Se ha corregido un problema en el cual la edición en línea de texto de Page Builder podía guardar direcciones URL de imagen de medios absolutos después de volver a editar una imagen, en lugar de mantener la directiva {{media url=...}} portátil.
+Se ha corregido un problema en el cual la edición en línea de texto de Page Builder podía guardar direcciones URL de imagen de medios absolutos después de volver a editar una imagen, en lugar de mantener la directiva `{{media url=...}}` portátil.
 
 _ACP2E-4698 - [Contribución de código de GitHub](https://github.com/magento/magento2-page-builder/commit/5fd20dbb)_
 
@@ -1787,7 +1787,7 @@ En 2.4.9-alpha3, la validación ahora bloquea correctamente el guardado de clien
 
 _AC-13535 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/68a45d0a)_
 
-#### Error al restablecer la contraseña de [Administrador][Customer] en el administrador de clientes
+#### Error al restablecer la contraseña de `[Admin][Customer]` en el administrador de clientes
 
 Se ha corregido un problema en el cual el restablecimiento de la contraseña de un cliente desde el panel de administración provocaba un error del sistema y un bloqueo de página. El restablecimiento de contraseña ahora funciona correctamente y envía el vínculo de restablecimiento sin errores, incluso en casos extremos que implican cambios en la tienda.
 
@@ -3215,7 +3215,7 @@ Antes de la corrección, las claves de caché utilizadas para los metadatos de a
 
 _ACP2E-4345 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/0a3b7032)_
 
-#### Cuello de botella [CLOUD][CLOUD] [Mainline] sales_clean_quote getSize()
+#### `[CLOUD][B2B]` `[Mainline]` cuello de botella sales_clean_quote getSize()
 
 Mejore el rendimiento del trabajo cron sales_clean_quote.
 
@@ -3657,7 +3657,7 @@ _ACP2E-4212 - [Contribución de código de GitHub](https://github.com/magento/ma
 
 #### No se puede navegar entre sitios web en la vista previa Programar actualización
 
-Antes de esta corrección, la vista previa de la actualización programada se dañaría al intentar obtener una vista previa del contenido de las tiendas con dominios personalizados. Después de esta corrección, los dominios de tienda personalizados se pueden previsualizar tal cual y navegar dentro del iframe de vista previa. La corrección cubre productos, categorías, páginas de CMS y bloques de CMS, y admite vínculos de navegación con etiquetas de marcado `{{store url}}`, como se documenta en [Variables de Adobe Commerce y Etiquetas de marcado](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/variables/markup-tags).
+Antes de esta corrección, la vista previa de la actualización programada se dañaría al intentar obtener una vista previa del contenido de las tiendas con dominios personalizados. Después de esta corrección, los dominios de tienda personalizados se pueden previsualizar tal cual y navegar dentro del iframe de vista previa. La corrección cubre productos, categorías, páginas de CMS y bloques de CMS, y admite vínculos de navegación con etiquetas de marcado `{{store url}}`, como se documenta en [Variables de Adobe Commerce y Etiquetas de marcado](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/variables/markup-tags).
 
 _ACP2E-4308 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/0a3b7032)_
 
