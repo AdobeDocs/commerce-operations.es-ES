@@ -35,7 +35,7 @@ Esto cambia la dirección URL de los archivos estáticos y fuerza al explorador 
 
 Commerce habilita esta función de forma predeterminada y Adobe recomienda mantenerla habilitada para evitar problemas relacionados con los exploradores que usan recursos estáticos antiguos.
 
-La configuración para la firma de contenido estático se encuentra en [**[!UICONTROL Stores]**> Configuración > Configuración >**[!UICONTROL Advanced]**>**[!UICONTROL Developer]**>**[!UICONTROL Static Files Settings]**](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/tools/developer-tools#static-file-signatures).
+La configuración para la firma de contenido estático se encuentra en [**[!UICONTROL Stores]**> Configuración > Configuración >**[!UICONTROL Advanced]**>**[!UICONTROL Developer]**>**[!UICONTROL Static Files Settings]**](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/developer-tools#static-file-signatures).
 
 - **Solo local**: esta configuración está disponible si el sitio es **no** en [modo de producción](../bootstrap/application-modes.md#production-mode).
 - **Cloud**: esta configuración está oculta porque el modo de producción se aplica estrictamente; por lo tanto, debe utilizar la línea de comandos como se muestra a continuación.

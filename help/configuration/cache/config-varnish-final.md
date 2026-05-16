@@ -83,4 +83,4 @@ Asegúrese de que el directorio `<magento_root>/var/page_cache` esté vacío:
 
 >[!TIP]
 >
->Si encuentra errores 503 (Error de recuperación de servidor), consulte [Solución de problemas 503 (Servicio no disponible) errores](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-503-errors.html?lang=es) en el _Centro de ayuda de Adobe Commerce_.
+>Si encuentra errores 503 (Error de recuperación de servidor), consulte [Solución de problemas 503 (Servicio no disponible) errores](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-503-errors.html) en el _Centro de ayuda de Adobe Commerce_.
