@@ -2,20 +2,21 @@
 cloud: Experience Cloud
 description: Guías operativas de Adobe Commerce
 feature-set: Commerce
-git-repo: https://github.com/AdobeDocs/commerce-operations.es-ES
+git-repo: https://github.com/AdobeDocs/commerce-operations.en
 index: true
 level: Experienced
 mini-toc-levels: 2
 product: magento
 role: Admin, Developer
 solution: Commerce
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
 solution-title: Commerce
 topic: Administration, Commerce, Development
 type: Documentation
-badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe) y a proyectos locales."
-source-git-commit: ca842f16660c568d8d690bbcef06777e68ceac2c
+badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe) y a proyectos locales."
+source-git-commit: 441ab23da859cfa2f242aa7c0581203f79f9e60e
 workflow-type: tm+mt
-source-wordcount: '146'
+source-wordcount: 176
 ht-degree: 0%
 
 ---
