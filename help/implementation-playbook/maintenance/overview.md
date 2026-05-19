@@ -3,9 +3,9 @@ title: Información general de mantenimiento y asistencia
 description: Mantenga y admita correctamente su implementación de Adobe Commerce recién iniciada.
 exl-id: 5a104148-74f1-469b-84ca-9bce740a7865
 feature: Deploy
-source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
+source-git-commit: ee1041f3f7ea0ce7cdda2ce7a405d65a24352b4f
 workflow-type: tm+mt
-source-wordcount: '525'
+source-wordcount: '534'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ La transferencia de conocimientos se produce a lo largo de todo el proyecto y el
 
 El diagrama siguiente muestra las fases y actividades que se incluirían en un resultado de transición exitoso:
 
-![Diagrama que muestra las fases del proceso de transición](../../assets/playbooks/transition-diagram.svg)
+![Diagrama que muestra las fases del proceso de transición](../../assets/playbooks/transition-diagram.png)
 
 >[!NOTE]
 >
@@ -33,5 +33,5 @@ El diagrama siguiente muestra las fases y actividades que se incluirían en un r
 La identificación del modelo de asistencia adecuado para que su empresa siga mejorando y optimizando su plataforma (y las prácticas comerciales en su conjunto) es un paso crítico para mantener todo el trabajo duro realizado durante el proceso de implementación. Con un plan de soporte integral y continuo, su sitio de comercio puede estar a la altura de las expectativas de sus clientes y puede seguir alcanzando sus objetivos.
 
 Al implementar Adobe Commerce, es fundamental tener en cuenta qué debe incluir en su estrategia de mantenimiento y asistencia.
-La licencia de Adobe Commerce incluye soporte Expert. Para obtener más información sobre soporte Expert y planes de Soporte Adobe, consulte [Planes de Soporte Adobe](https://business.adobe.com/es/customers/consulting-services/premier-support.html).
+La licencia de Adobe Commerce incluye soporte Expert. Para obtener más información sobre soporte Expert y planes de Soporte Adobe, consulte [Planes de Soporte Adobe](https://business.adobe.com/customers/consulting-services/premier-support.html).
 Además de los planes de Soporte de Adobe, existen términos de soporte de Magento heredados. Para comprender qué servicios de asistencia son aplicables a usted, consulte su contrato para ver qué acuerdo de asistencia tiene o hable con su equipo de cuenta de Adobe.

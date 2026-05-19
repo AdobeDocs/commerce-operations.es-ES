@@ -1,11 +1,11 @@
 ---
 title: Información general sobre la instalación local
-description: Obtenga información acerca del proceso de instalación local de Adobe Commerce. Descubra los requisitos del servidor, los pasos de configuración y las prácticas recomendadas de implementación.
+description: Obtenga información sobre el proceso de instalación local de Adobe Commerce. Descubra los requisitos del servidor, los pasos de configuración y las prácticas recomendadas de implementación.
 exl-id: a9f5b241-d05d-462c-8c7f-479a264c988f
-source-git-commit: 84a20012a81278cc95587ec14281b05330261687
+source-git-commit: ee1041f3f7ea0ce7cdda2ce7a405d65a24352b4f
 workflow-type: tm+mt
-source-wordcount: '509'
-ht-degree: 0%
+source-wordcount: '540'
+ht-degree: 3%
 
 ---
 
@@ -20,7 +20,7 @@ Puede instalar el software local de Adobe Commerce en aproximadamente 30 a 60 mi
 >
 >Debe tener conocimientos técnicos intermedios y acceso al servidor para continuar correctamente.
 
-La instalación crea una tienda Adobe Commerce completamente funcional con [tienda orientada al cliente](https://experienceleague.adobe.com/es/docs/commerce-admin/start/storefront/storefront) y [panel administrativo](https://experienceleague.adobe.com/es/docs/commerce-admin/start/admin/admin). Debe tener listas las credenciales de la base de datos, la información de dominio y las claves de autenticación antes de comenzar el proceso.
+La instalación crea una tienda Adobe Commerce completamente funcional con [tienda orientada al cliente](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront) y [panel administrativo](https://experienceleague.adobe.com/en/docs/commerce-admin/start/admin/admin). Debe tener listas las credenciales de la base de datos, la información de dominio y las claves de autenticación antes de comenzar el proceso.
 
 ## Responsabilidades del comerciante
 
@@ -43,7 +43,7 @@ Tiene control total sobre su entorno, lo que permite una mayor personalización 
 
 El diagrama siguiente ilustra los pasos principales involucrados en la instalación de Adobe Commerce para entornos locales:
 
-![Funcionamiento de la instalación](../assets/installation/on-premises-install.drawio.svg)
+![Funcionamiento de la instalación](../assets/installation/on-premises-install.png)
 
 ### Configuración del entorno del servidor
 
