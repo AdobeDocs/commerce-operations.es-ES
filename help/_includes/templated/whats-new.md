@@ -1,7 +1,7 @@
 ---
-source-git-commit: 726f78414fa49a9d5d2ee4f1b43e718107039530
+source-git-commit: 8b631aabebcc37a793d8dda60af0c9194c269e36
 workflow-type: tm+mt
-source-wordcount: '2622'
+source-wordcount: '2623'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Esta página contiene los cambios realizados en los últimos 60 días. Excluimos
       <td><p>Se ha agregado una sección contraíble de <a href="https://experienceleague.adobe.com/es/docs/commerce-operations/installation-guide/system-requirements">Requisitos del sistema para versiones anteriores de Commerce</a> con tablas de referencia e instrucciones de fin de soporte de MySQL 8.0 / Elasticsearch 7.17 para versiones anteriores de Adobe Commerce.</p>
 </td>
       <td>
-        Técnico
+        Técnico, comentarios
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/07e7c6904ead0c730597bc6d0899f4c988b7725b">comprometer</a></td>
     </tr>
