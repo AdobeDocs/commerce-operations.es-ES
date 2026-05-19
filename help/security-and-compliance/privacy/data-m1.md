@@ -2,9 +2,9 @@
 title: Referencia de información personal del cliente (versión 1.x)
 description: Obtenga información acerca del flujo de datos y las asignaciones de entidades de base de datos para la información personal del cliente en Magento 1.x.
 exl-id: 8b01418d-8ca1-48fc-9577-a324ed3109d1
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+source-git-commit: ee1041f3f7ea0ce7cdda2ce7a405d65a24352b4f
 workflow-type: tm+mt
-source-wordcount: '715'
+source-wordcount: '718'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Un usuario puede introducir información sobre el cliente, la dirección y el pa
 
 Commerce carga la información del cliente cuando este inicia sesión y ve varias páginas o cierres de compra diferentes.
 
-![Puntos de acceso a datos de front-end](../../assets/security-compliance/frontend-data-access-points.svg)
+![Puntos de acceso a datos de front-end](../../assets/security-compliance/frontend-data-access-points.png)
 
 ### Puntos de entrada de datos back-end
 
@@ -46,7 +46,7 @@ Un comerciante puede introducir la información de cliente, dirección y pago de
 
 Commerce carga la información del cliente cuando un comerciante ve varios tipos de cuadrículas, hace clic en una cuadrícula para ver información detallada y realiza otras tareas.
 
-![Puntos de acceso a datos back-end](../../assets/security-compliance/backend-data-access-points.svg)
+![Puntos de acceso a datos back-end](../../assets/security-compliance/backend-data-access-points.png)
 
 ## Entidades de base de datos
 

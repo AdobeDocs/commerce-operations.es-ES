@@ -3,9 +3,9 @@ title: Proteja su sitio e infraestructura de Commerce
 description: Mantenga la seguridad implementando las prácticas recomendadas de seguridad al configurar y actualizar instalaciones de Adobe Commerce.
 feature: Best Practices
 exl-id: 50d8a464-6496-4e9a-b642-0c6d0eb51ba0
-source-git-commit: ee7551374aa6d4ad462dd64ee3d05b934b43ce45
+source-git-commit: ee1041f3f7ea0ce7cdda2ce7a405d65a24352b4f
 workflow-type: tm+mt
-source-wordcount: '2000'
+source-wordcount: '2173'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Adobe considera que las siguientes recomendaciones son prioritarias para todos l
 
 ![Lista de comprobación](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Habilite la autenticación de doble factor para su administrador y todas las conexiones SSH**
 
-- [Seguridad para el administrador de Commerce](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/2fa/security-two-factor-authentication.html?lang=es)
+- [Seguridad para el administrador de Commerce](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/2fa/security-two-factor-authentication.html)
 
 - [Conexiones SSH seguras](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/multi-factor-authentication.html?lang=es) (infraestructura en la nube)
 
@@ -109,9 +109,9 @@ Como parte de un plan de recuperación ante desastres, Adobe recomienda encareci
 
 **Adobe Commerce implementado en la infraestructura en la nube**
 
-- [Copia de seguridad y recuperación ante desastres](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-architecture.html?lang=es#backup-and-disaster-recovery)
+- [Backup y recuperación ante desastres](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-architecture.html?lang=es#backup-and-disaster-recovery)
 
-- [Administración de configuración de tienda para Adobe Commerce en la infraestructura en la nube](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/store-settings.html?lang=es)
+- [Administración de la configuración de tienda de Adobe Commerce en la infraestructura en la nube](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/store-settings.html?lang=es)
 
 **Adobe Commerce implementado localmente**
 
@@ -131,7 +131,7 @@ Esta sección resume las prácticas recomendadas para mantener la seguridad del 
 
 Las instalaciones de Adobe Commerce implementadas en la infraestructura de la nube pueden utilizar los servicios integrados de WAF disponibles con la [integración de Fastly services](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly.html?lang=es)
 
-![Lista de comprobación](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Configurar la configuración avanzada de seguridad de contraseñas**: configure contraseñas seguras y cámbielas al menos cada 90 días, tal como recomienda el Estándar de seguridad de datos PCI en la sección 8.2.4. Consulte [Configurar la seguridad de administración](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-admin.html?lang=es).
+![Lista de comprobación](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Configurar la configuración avanzada de seguridad de contraseñas**: configure contraseñas seguras y cámbielas al menos cada 90 días, tal como recomienda el Estándar de seguridad de datos PCI en la sección 8.2.4. Consulte [Configurar opciones de seguridad de administración](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-admin.html?lang=es).
 
 ![Lista de comprobación](/help/assets/icons/Smock_CheckmarkCircleOutline_18_N.svg) **Usar HTTPS**: si el sitio de Commerce se ha implementado recientemente, inicie todo el sitio usando HTTPS. Google no solo utiliza HTTPS como factor de clasificación, sino que muchos usuarios ni siquiera consideran comprar en un sitio a menos que esté protegido con HTTPS.
 
@@ -145,7 +145,7 @@ En los ataques que se producen con más frecuencia, se inserta código malintenc
 
 Los skimmers de tarjetas de crédito del lado del cliente son un tipo de malware que incrusta código en el contenido del sitio web del comerciante que se puede ejecutar en el explorador de un usuario, como se muestra en la siguiente figura.
 
-![Flujo de datos para ataques de malware dirigidos a sitios de comercio electrónico](../../../assets/playbooks/malware-data-flow.svg)
+![Flujo de datos para ataques de malware dirigidos a sitios de comercio electrónico](../../../assets/playbooks/malware-data-flow.png)
 
 Después de que se producen determinadas acciones, como que un usuario envíe un formulario o modifique un valor de campo, el simulador serializa los datos y los envía a extremos de terceros. Estos extremos suelen ser otros sitios web comprometidos que actúan como relé para enviar los datos a su destino final.
 
