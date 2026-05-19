@@ -2,7 +2,7 @@
 cloud: Experience Cloud
 description: Guías operativas de Adobe Commerce
 feature-set: Commerce
-git-repo: https://github.com/AdobeDocs/commerce-operations.en
+git-repo: https://github.com/AdobeDocs/commerce-operations.es-ES
 index: true
 level: Experienced
 landing-page-name: commerce
@@ -17,7 +17,7 @@ usetq: true
 solution-title: Commerce
 topic: Administration, Commerce, Development
 type: Documentation
-badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe) y a proyectos locales."
+badgePaas: label="Solo PaaS" type="Informative" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe) y a proyectos locales."
 source-git-commit: 1c6e6ee398f55823cbbcd7aa8a69507f769a15d2
 workflow-type: tm+mt
 source-wordcount: 176
