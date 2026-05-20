@@ -4,7 +4,7 @@ description: Esta subsección proporciona una descripción detallada de los prob
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: a8666ceccfe78536a624c67227692c98a521f555
+source-git-commit: 19f0697ee47fcd7e3228d9e44010b45c3799a182
 workflow-type: tm+mt
 source-wordcount: '333'
 ht-degree: 0%
@@ -19,7 +19,7 @@ QPT v1.1.79 incluye los siguientes parches:
 1. **ACP2E-4402**: corrige el problema por el cual los productos creados como deshabilitados no se volvieron a agregar a los resultados de [!UICONTROL Target Rule] relacionados después de habilitarse.
 1. **ACP2E-4505**: soluciona el problema en el que era posible guardar una categoría con datos antiguos desde una ficha de explorador duplicada, creando una dependencia circular.
 1. **ACP2E-4531**: corrige el problema que causaba que al cambiar la clave URL de una página CMS no se actualizara la dirección URL jerárquica de la página.
-1. **ACP2E-4601**: soluciona el problema en el que el procesamiento de transacciones de pago podría comportarse de forma ineficiente en ciertas condiciones.
+1. **[ACP2E-4601](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4601.md)**: soluciona el problema en el que el procesamiento de transacciones de pago podría comportarse de forma ineficiente en ciertas condiciones.
 1. **ACP2E-4603**: corrige el problema que causaba que al ejecutar el reíndice de productos de [!UICONTROL Catalog Permissions] se dejaran sin cambios las filas de índice de permisos existentes, lo que causaba que las concesiones de permisos de categorías actualizadas no se reflejaran de forma fiable en los productos.
 1. **ACP2E-4706**: corrige el problema por el que el indizador [!UICONTROL Target Rule] omitió los productos no habilitados en el ámbito [!UICONTROL Admin].
 1. **ACP2E-4720**: corrige el problema por el cual el envío gratuito no se aplicaba correctamente ni se eliminaba para los productos agrupados con reglas de descuento en el carro de compras.
