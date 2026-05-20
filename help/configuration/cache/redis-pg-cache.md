@@ -3,9 +3,9 @@ title: Configurar Redis para caché de páginas y predeterminados
 description: Aprenda a configurar Redis como el backend predeterminado y de la caché de página para Adobe Commerce. Descubra los comandos de CLI, la configuración de env.php y la verificación de la conexión.
 feature: Configuration, Cache
 exl-id: 8c097cfc-85d0-4e96-b56e-284fde40d459
-source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
+source-git-commit: d82061ad2fa4676bd8fa71a9d34a954444eb0f54
 workflow-type: tm+mt
-source-wordcount: '1287'
+source-wordcount: '1467'
 ht-degree: 0%
 
 ---
@@ -66,8 +66,19 @@ Con los siguientes parámetros:
 | `cache-backend-redis-port` | puerto | Puerto de escucha del servidor Redis | `6379` |
 | `cache-backend-redis-db` | database | Necesario si utiliza Redis tanto para la caché predeterminada como para la caché de página completa. Especifique el número de base de datos de una de las cachés; la otra caché utiliza 0 de forma predeterminada.<br><br>**Importante**: Si utiliza Redis para más de un tipo de almacenamiento en caché, los números de base de datos deben ser diferentes. Se recomienda asignar el número de base de datos de almacenamiento en caché predeterminado a 0, el número de base de datos de almacenamiento en caché de páginas a 1 y el número de base de datos de almacenamiento de sesión a 2. | `0` |
 | `cache-backend-redis-password` | contraseña | La configuración de una contraseña de Redis habilita una de sus características de seguridad integradas: el comando `auth`, que requiere que los clientes se autentiquen para tener acceso a la base de datos. La contraseña está configurada directamente en el archivo de configuración de Redis: `/etc/redis/redis.conf` | |
-| `cache-backend-redis-use-lua` | use_lua | Habilite o deshabilite Lua. <br><br>**Lua**: Lua permite ejecutar parte de la lógica de la aplicación dentro de Redis, lo que mejora el rendimiento y garantiza la coherencia de los datos mediante la ejecución atómica. | `0` |
-| `cache-backend-redis-use-lua-on-gc` | use_lua_on_gc | Habilite o deshabilite Lua para la recolección de elementos no utilizados. <br><br>**Lua**: Lua permite ejecutar parte de la lógica de la aplicación dentro de Redis, lo que mejora el rendimiento y garantiza la coherencia de los datos mediante la ejecución atómica. | `1` |
+| `cache-backend-redis-use-lua` | use_lua | Habilite o deshabilite los scripts de Lua para todas las operaciones de redis. <br><br>**Valor predeterminado: mantener en `0`.** El modo Lua está deshabilitado de forma predeterminada para evitar regresiones de rendimiento conocidas y problemas de pérdida de caché de GraphQL introducidos por la biblioteca Redis integrada (1.17.x) cuando Lua estaba habilitado. | `0` |
+| `cache-backend-redis-use-lua-on-gc` | use_lua_on_gc | Habilite o deshabilite los scripts de Lua para la recolección de elementos no utilizados (el trabajo cron de `backend_clean_cache`). <br><br>**Valor predeterminado: mantener en `1`.** Habilitado de forma intencionada para garantizar la limpieza del conjunto de etiquetas atómicas durante la CG. Sin ella, puede producirse una condición de carrera cuando el cron `backend_clean_cache` se ejecuta al mismo tiempo que una operación de guardado de caché, lo que deja las entradas de caché sin un registro correspondiente en el índice de etiquetas de caché. Esto provoca que la invalidación basada en etiquetas falle de forma silenciosa; por ejemplo, actualizar un precio de producto puede no invalidar la caché del producto y, en su lugar, requerir un vaciado de caché completo. | `1` |
+
+### Modo Lua
+
+Cuando se habilita, el modo Lua agrupa varias operaciones de Redis (escrituras en caché, actualizaciones de etiquetas, recolección de elementos no utilizados) en un solo script atómico ejecutado en el lado del servidor mediante `EVALSHA`. Esto evita la intercalación de solicitudes simultáneas como, por ejemplo, garantizar que una entrada de caché y su pertenencia a una etiqueta se escriban juntas.
+
+>[!WARNING]
+>
+>No cambie los valores predeterminados de `use_lua` y `use_lua_on_gc` sin comprender las implicaciones para su versión de Adobe Commerce:
+>
+>- **`use_lua`**: si se habilita esto en Adobe Commerce 2.4.7 o 2.4.8 (biblioteca `colinmollenhour/cache-backend-redis` 1.17.1), pueden dañarse las cachés y producirse problemas de pérdida de caché en GraphQL.
+>- **`use_lua_on_gc`**: al deshabilitar esto en Adobe Commerce 2.4.8, se elimina la protección atómica durante la recolección de elementos no utilizados y puede provocar que la invalidación de la caché basada en etiquetas falle de forma silenciosa, lo que requiere un vaciado de caché completo para recuperarse.
 
 ## Comando de ejemplo (caché predeterminada)
 
@@ -399,7 +410,7 @@ php -m | grep redis
 
 | Operación | Predis | fpredis | Mejora |
 |-----------|--------|----------|-------------|
-| Almacenar en caché GET | 1-5 ms | 0,5-2 ms | De 2 a 3 veces más rápido |
+| GET de caché | 1-5 ms | 0,5-2 ms | De 2 a 3 veces más rápido |
 | CONJUNTO DE caché | 2 a 6 ms | 0,8-2,5 ms | De 2 a 3 veces más rápido |
 | Operaciones de etiqueta | 10-30 ms | 3 a 10 ms | De 3 a 4 veces más rápido |
 
