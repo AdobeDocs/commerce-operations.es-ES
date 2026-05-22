@@ -2,9 +2,9 @@
 user-guide-title: Herramientas
 user-guide-description: Obtenga información sobre las distintas herramientas que puede utilizar con Adobe Commerce, sus usos, el proceso de instalación y cómo obtener acceso.
 feature: Configuration
-source-git-commit: 08e7a82bb2f079d404250011b2822980601394ca
+source-git-commit: 535c5a6de142008bccd2d5883a9b680c77914264
 workflow-type: tm+mt
-source-wordcount: '9970'
+source-wordcount: '9978'
 ht-degree: 0%
 
 ---
@@ -994,6 +994,7 @@ ht-degree: 0%
          - [ACP2E-4419: Las tarjetas de regalo no se aplican correctamente en el momento de la compra después de la validación correcta de reCAPTCHA v2 en la tienda](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4419.md)
       - Versión 1.1.79 {#v1-1-79}
          - [Información general:  [!DNL Quality Patches Tool] (QPT) v1.1.79](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/overview.md)
+         - [AC-10737: el comando `bin/magento setup:db:status` no reconoce el tipo de datos JSON](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/ac-10737.md)
          - [ACP2E-4601: Volver a guardar una operación de autorización de pago con autorreferencia parent_id y déclencheur un bucle/OOM infinito](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4601.md)
    - [Comprobar parche para el problema de Adobe Commerce con la herramienta Parches de calidad](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Referencia de herramientas de la línea de comandos {#cli-reference}
