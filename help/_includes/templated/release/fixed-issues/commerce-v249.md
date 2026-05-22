@@ -1,7 +1,7 @@
 ---
-source-git-commit: 04ed1df1fa8601e121811661b81a86672422b639
+source-git-commit: 0d07af38e1af9331924c109356126a1bfa96156b
 workflow-type: tm+mt
-source-wordcount: '36741'
+source-wordcount: '36655'
 ht-degree: 0%
 
 ---
@@ -9,7 +9,7 @@ ht-degree: 0%
 
 ## Se han corregido problemas en la versión 2.4.9.
 
-Hemos corregido 667 problemas en el código principal de Adobe Commerce 2.4.9. A continuación, se describe un subconjunto de los problemas corregidos que se incluyen en esta versión.
+Hemos corregido 666 problemas en el código principal de Adobe Commerce 2.4.9. A continuación, se describe un subconjunto de los problemas corregidos que se incluyen en esta versión.
 
 ### API
 
@@ -73,7 +73,7 @@ Ahora, las API validan correctamente la entrada y devuelven un error 400 para ca
 
 _AC-6419 - [Problema de GitHub](https://github.com/magento/magento2/issues/35934) - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/a7ef6300)_
 
-#### Error interno del servidor en el extremo de API `/V1/order/&lbrace;orderId&rbrace;/ship`
+#### Error interno del servidor en el extremo de API `/V1/order/{orderId}/ship`
 
 El sistema corrige ahora el error interno del servidor en el extremo de API `/V1/order/{orderId}/ship` y devuelve un error 400, ya que la solicitud tiene un formato incorrecto.
 
@@ -2095,7 +2095,7 @@ _AC-15336 - [Contribución de código de GitHub](https://github.com/magento/mage
 
 #### Compilar código de módulo deshabilitado
 
-Esta solicitud de extracción ha desactivado los módulos antes de la compilación del código.
+Se ha cambiado el comportamiento de `setup:di:compile` para que ya no compile el código para los módulos deshabilitados.
 
 _AC-10933 - [Problema de GitHub](https://github.com/magento/magento2/issues/38241) - [Contribución de código de GitHub](https://github.com/magento/magento2/pull/39723)_
 
@@ -2214,15 +2214,6 @@ Anteriormente, alcanzar el valor máximo de la columna version_id en la tabla ch
 AC-14424
 
 _AC-14424 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/7bdafaa2)_
-
-#### Magento 2.4.8 utiliza paquetes dev que no siguen el control de versiones semántico
-
-Magento 2.4.8 requiere versiones dev de pdepend/pdepend y phpmd/phpmd (3.x-dev) para compatibilidad con PHP 8.4.
-Estas versiones de desarrollo entran en conflicto con las herramientas de terceros que esperan paquetes compatibles con SemVer, lo que impide algunas actualizaciones.
-Una solución temporal consiste en alias de las versiones de desarrollo en composer.json (por ejemplo, &quot;3.x-dev as 3.99.0&quot;), lo que permite la compatibilidad al tiempo que satisface las versiones semánticas.
-Esto garantiza la compatibilidad con PHP 8.4 y evita conflictos hasta que haya versiones estables disponibles.
-
-_AC-14519: [problema de GitHub](https://github.com/magento/magento2/issues/39796)_
 
 #### Después de descargar la etiqueta de envío, podemos ver algunos importes de envío que no coincidían con el precio de envío y manipulación.
 
@@ -3936,7 +3927,7 @@ _AC-15547 - [Problema de GitHub](https://github.com/magento/magento2/issues/4018
 
 #### No se ha procesado el mensaje de error para la solicitud de GET
 
-Se ha corregido un problema en el cual los mensajes de error no se mostraban inmediatamente para solicitudes de GET no válidas. Los mensajes de error ahora se muestran correctamente sin requerir acciones adicionales del usuario, lo que mejora los comentarios del usuario y la coherencia.
+Se ha corregido un problema en el cual los mensajes de error no se mostraban inmediatamente para solicitudes GET no válidas. Los mensajes de error ahora se muestran correctamente sin requerir acciones adicionales del usuario, lo que mejora los comentarios del usuario y la coherencia.
 
 _AC-16296 - [Problema de GitHub](https://github.com/magento/magento2/issues/40411) - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/8391dbcc)_
 
@@ -4167,7 +4158,7 @@ _ACP2E-4226_
 
 #### No se puede navegar entre sitios web en la vista previa Programar actualización
 
-Antes de esta corrección, la vista previa de la actualización programada se dañaría al intentar obtener una vista previa del contenido de las tiendas con dominios personalizados. Después de esta corrección, los dominios de tienda personalizados se pueden previsualizar tal cual y navegar dentro del iframe de vista previa. La corrección cubre productos, categorías, páginas de CMS y bloques de CMS, y admite vínculos de navegación con etiquetas de marcado `{{store url}}`, como se documenta en [Variables de Adobe Commerce y Etiquetas de marcado](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/variables/markup-tags).
+Antes de esta corrección, la vista previa de la actualización programada se dañaría al intentar obtener una vista previa del contenido de las tiendas con dominios personalizados. Después de esta corrección, los dominios de tienda personalizados se pueden previsualizar tal cual y navegar dentro del iframe de vista previa. La corrección cubre productos, categorías, páginas de CMS y bloques de CMS, y admite vínculos de navegación con etiquetas de marcado `{{store url}}`, como se documenta en [Variables de Adobe Commerce y Etiquetas de marcado](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/variables/markup-tags).
 
 _ACP2E-4308 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/0a3b7032)_
 
