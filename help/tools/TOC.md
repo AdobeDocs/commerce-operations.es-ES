@@ -2,7 +2,7 @@
 user-guide-title: Herramientas
 user-guide-description: Obtenga información sobre las distintas herramientas que puede utilizar con Adobe Commerce, sus usos, el proceso de instalación y cómo obtener acceso.
 feature: Configuration
-source-git-commit: 535c5a6de142008bccd2d5883a9b680c77914264
+source-git-commit: 891f738f4a3db4e361984d11585f3679068c8ced
 workflow-type: tm+mt
 source-wordcount: '9978'
 ht-degree: 0%
@@ -47,7 +47,7 @@ ht-degree: 0%
    - [Alertas administradas para Adobe Commerce: alerta de advertencia de CPU](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-cpu-warning-alert.md)
 - Herramienta Parches de calidad {#quality-patches-tool}
    - [[!DNL Quality Patches Tool]: herramienta de autoservicio para parches de calidad](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)
-   - [[!DNL Quality Patches Tool]: buscar parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es){target="_blank"}
+   - [[!DNL Quality Patches Tool]: buscar parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
    - [Uso](quality-patches-tool/usage.md)
    - [Notas de la versión](quality-patches-tool/release-notes.md)
    - Parches disponibles en la herramienta Parches de calidad {#patches-available-in-qpt}
@@ -371,7 +371,7 @@ ht-degree: 0%
       - Versión 1.1.30 {#v1-1-30}
          - [Información general:  [!DNL Quality Patches Tool] (QPT) v1.1.30](quality-patches-tool/patches-available-in-qpt/v1-1-30/overview.md)
          - [ACSD-50367: La exportación de direcciones de clientes no funciona](quality-patches-tool/patches-available-in-qpt/v1-1-30/acsd-50367-customer-address-export-does-not-work.md)
-         - [BB2B-2598: Añade capacidad de almacenamiento en caché a storeConfig, moneda, país, países, availableStores y consultas de GraphQl](quality-patches-tool/patches-available-in-qpt/v1-1-30/bb2b-2598-add-caching-capability.md)
+         - [B2B-2598: Añade la capacidad de almacenamiento en caché a storeConfig, moneda, país, países, availableStores y consultas de GraphQl](quality-patches-tool/patches-available-in-qpt/v1-1-30/b2b-2598-add-caching-capability.md)
          - [B2B-2674: Añade la capacidad de almacenamiento en caché a la consulta customAttributeMetadata de GraphQL](quality-patches-tool/patches-available-in-qpt/v1-1-30/b2b-2674-add-caching-capability.md)
          - [ACSD-49973: rendimiento mejorado al recuperar productos agrupados mediante  [!DNL GraphQL]](quality-patches-tool/patches-available-in-qpt/v1-1-30/acsd-49973-improved-performance-fetching-bundled-products-via-graphql.md)
          - [ACSD-50116: un usuario administrador no puede crear una reescritura de URL](quality-patches-tool/patches-available-in-qpt/v1-1-30/acsd-50116-admin-user-cannot-create-a-url-rewrite.md)
@@ -1044,6 +1044,6 @@ ht-degree: 0%
       - [Datos que requieren una migración manual](data-migration-tool/migrate-data/manual.md)
       - [Pasos de la migración posterior a los datos](data-migration-tool/migrate-data/post-migration.md)
    - Recursos {#resources}
-      - [Resolución de problemas](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html?lang=es)
+      - [Resolución de problemas](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html)
       - [Changelog](https://github.com/magento/data-migration-tool/blob/2.4/CHANGELOG.md)
-- [Volver a Guías operativas](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=es)
+- [Volver a Guías operativas](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
