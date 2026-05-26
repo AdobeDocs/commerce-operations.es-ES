@@ -2,7 +2,7 @@
 title: Administrar los indexadores
 description: Obtenga información sobre cómo ver y administrar indizadores de Adobe Commerce mediante herramientas de línea de comandos. Descubra los comandos del indexador, la comprobación de estado y las técnicas de reindexación.
 exl-id: d2cd1399-231e-4c42-aa0c-c2ed5d7557a0
-source-git-commit: ed21cbaf145493614d274da6eee41f6b1ae39ff2
+source-git-commit: 2c221ccf793a0b469fc6984b443699c30a6064ce
 workflow-type: tm+mt
 source-wordcount: '1025'
 ht-degree: 0%
@@ -188,7 +188,7 @@ Opciones de comando:
 bin/magento indexer:reset [indexer]
 ```
 
-Donde ```[indexer]``` es una lista de indizadores separados por espacios. Omita `[indexer]` para invalidar todos los indizadores.
+Donde `[indexer]` es una lista de indizadores separados por espacios. Omita `[indexer]` para invalidar todos los indizadores.
 
 Resultado de muestra:
 
