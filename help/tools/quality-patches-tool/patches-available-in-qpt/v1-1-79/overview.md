@@ -4,9 +4,9 @@ description: Esta subsección proporciona una descripción detallada de los prob
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 09abc74b48c1ac07a3553aed37fcb0c80e3bbefe
+source-git-commit: 36e8242f67e80504118e36574cfe4d3b799b849c
 workflow-type: tm+mt
-source-wordcount: '334'
+source-wordcount: '449'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,11 @@ QPT v1.1.79 incluye los siguientes parches:
 1. **[ACP2E-4601](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4601.md)**: soluciona el problema en el que el procesamiento de transacciones de pago podría comportarse de forma ineficiente en ciertas condiciones.
 1. **ACP2E-4706**: corrige el problema por el que el indizador [!UICONTROL Target Rule] omitió los productos no habilitados en el ámbito [!UICONTROL Admin].
 1. **ACP2E-4720**: corrige el problema por el cual el envío gratuito no se aplicaba correctamente ni se eliminaba para los productos agrupados con reglas de descuento en el carro de compras.
+1. **ACP2E-4411**: corrige el problema por el que se muestra un precio incorrecto para un producto agrupado en la página del carro de compras y en el minicarrito para tiendas de múltiples monedas.
+1. **[ACP2E-4475](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4475.md)**: corrige el problema por el que la página de listado de productos filtra y ordena incorrectamente los productos de paquetes agotados por precio cuando la opción [!UICONTROL Display Out of Stock Products] está habilitada.
+1. **ACP2E-4110**: corrige el problema en el que los productos agrupados con un precio especial mostraban importes incorrectos en PDP y PLP en una moneda no predeterminada.
+1. **[AC-10698](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/ac-10698.md)**: corrige el problema por el que el sistema envió la moneda en el nivel de todos los pedidos en lugar de asociarla con pedidos individuales.
+1. **AC-10737**: corrige un problema en el cual el comando `bin/magento setup:db:status` no reconoce el tipo de datos JSON.
 1. **[ACP2E-4411](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4411.md)**: corrige el problema por el que se muestra un precio incorrecto para un producto agrupado en la página del carro de compras y en el minicarrito para tiendas de múltiples monedas.
 1. **ACP2E-4475**: corrige el problema por el que la página de listado de productos filtra y ordena incorrectamente los productos de paquetes agotados por precio cuando la opción **[!UICONTROL Display Out of Stock Products]** está habilitada.
 1. **[ACP2E-4110](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4110.md)**: Corrige el problema por el que los productos agrupados con **[!UICONTROL Special Price]** muestran cantidades incorrectas en el PDP y el PLP en una moneda no predeterminada.
