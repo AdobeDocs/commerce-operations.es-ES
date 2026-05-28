@@ -2,9 +2,9 @@
 user-guide-title: Herramientas
 user-guide-description: Obtenga información sobre las distintas herramientas que puede utilizar con Adobe Commerce, sus usos, el proceso de instalación y cómo obtener acceso.
 feature: Configuration
-source-git-commit: 36e8242f67e80504118e36574cfe4d3b799b849c
+source-git-commit: b5c120d34b84229c006fbeb9ba8d0f93f558aec1
 workflow-type: tm+mt
-source-wordcount: '10059'
+source-wordcount: '10074'
 ht-degree: 0%
 
 ---
@@ -972,6 +972,7 @@ ht-degree: 0%
          - [ACSD-68341: se producen varias actualizaciones de la cookie X-Magento-Vary al cargar PDP](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68341.md)
       - Versión 1.1.78 {#v1-1-78}
          - [Información general:  [!DNL Quality Patches Tool] (QPT) v1.1.78](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/overview.md)
+         - [ACP2E-4528: La validación de la ciudad de la dirección del cliente gestiona incorrectamente las barras diagonales (/) y los caracteres no válidos como !, &quot;, #, y ?](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4528.md)
          - [ACP2E-4628: La importación de clientes con direcciones de correo electrónico en mayúsculas déclencheur un error de clave de matriz no definida cuando Compartir cuentas está establecido en Global](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4628.md)
          - [ACSD-60989: Modificar una columna con una clave externa mediante un esquema declarativo provoca errores en  [!DNL MariaDB]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acsd-60989.md)
          - [ACP2E-4763: La consulta GraphQL customerOrders devuelve original_price_included_tax inflado y original_row_total_include_tax](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4763.md)
