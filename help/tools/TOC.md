@@ -2,9 +2,9 @@
 user-guide-title: Herramientas
 user-guide-description: Obtenga información sobre las distintas herramientas que puede utilizar con Adobe Commerce, sus usos, el proceso de instalación y cómo obtener acceso.
 feature: Configuration
-source-git-commit: 1c965dc05aced58896d109191f43df196f30a017
+source-git-commit: 7625ecbebf7c8ca227f3817a0f4f21bba1bb253a
 workflow-type: tm+mt
-source-wordcount: '10102'
+source-wordcount: '10121'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ ht-degree: 0%
    - [Alertas administradas para Adobe Commerce: alerta de advertencia de CPU](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-cpu-warning-alert.md)
 - Herramienta Parches de calidad {#quality-patches-tool}
    - [[!DNL Quality Patches Tool]: herramienta de autoservicio para parches de calidad](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)
-   - [[!DNL Quality Patches Tool]: buscar parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es){target="_blank"}
+   - [[!DNL Quality Patches Tool]: buscar parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
    - [Uso](quality-patches-tool/usage.md)
    - [Notas de la versión](quality-patches-tool/release-notes.md)
    - Parches disponibles en la herramienta Parches de calidad {#patches-available-in-qpt}
@@ -972,6 +972,7 @@ ht-degree: 0%
          - [ACSD-68341: se producen varias actualizaciones de la cookie X-Magento-Vary al cargar PDP](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68341.md)
       - Versión 1.1.78 {#v1-1-78}
          - [Información general:  [!DNL Quality Patches Tool] (QPT) v1.1.78](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/overview.md)
+         - [ACP2E-4513: Las imágenes CAPTCHA caducadas no se eliminan del sistema](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4513.md)
          - [ACP2E-4528: La validación de la ciudad de la dirección del cliente gestiona incorrectamente las barras diagonales (/) y los caracteres no válidos como !, &quot;, #, y ?](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4528.md)
          - [ACP2E-4628: La importación de clientes con direcciones de correo electrónico en mayúsculas déclencheur un error de clave de matriz no definida cuando Compartir cuentas está establecido en Global](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4628.md)
          - [ACSD-60989: Modificar una columna con una clave externa mediante un esquema declarativo provoca errores en  [!DNL MariaDB]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acsd-60989.md)
@@ -1002,6 +1003,7 @@ ht-degree: 0%
          - [ACP2E-4411: Los precios del paquete de productos muestran valores de impuestos y divisas incorrectos entre la página de detalles del producto y el carro de compras en una configuración de varias monedas](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4411.md)
          - [ACP2E-4110: Los precios del paquete de productos con un **[!UICONTROL Special Price]** difieren entre PDP/PLP y el carro de compras en una moneda no predeterminada](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4110.md)
          - [ACP2E-4603: El reíndice de productos de Permisos de catálogo deja filas de índice de permisos obsoletas y el interbloqueo de MySQL](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4603.md)
+         - [AC-10737: el comando `bin/magento setup:db:status` no reconoce el tipo de datos JSON](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/ac-10737.md)
          - [ACP2E-4601: Volver a guardar una operación de autorización de pago con autorreferencia parent_id y déclencheur un bucle/OOM infinito](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4601.md)
    - [Comprobar parche para el problema de Adobe Commerce con la herramienta Parches de calidad](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Referencia de herramientas de la línea de comandos {#cli-reference}
@@ -1051,6 +1053,6 @@ ht-degree: 0%
       - [Datos que requieren una migración manual](data-migration-tool/migrate-data/manual.md)
       - [Pasos de la migración posterior a los datos](data-migration-tool/migrate-data/post-migration.md)
    - Recursos {#resources}
-      - [Resolución de problemas](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html?lang=es)
+      - [Resolución de problemas](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html)
       - [Changelog](https://github.com/magento/data-migration-tool/blob/2.4/CHANGELOG.md)
-- [Volver a Guías operativas](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=es)
+- [Volver a Guías operativas](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
