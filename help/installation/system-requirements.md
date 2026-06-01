@@ -2,9 +2,9 @@
 title: Requisitos del sistema
 description: Obtenga información sobre las dependencias de software y los requisitos del sistema para Adobe Commerce. Consulte las configuraciones probadas para comprobar la compatibilidad con el entorno de implementación.
 exl-id: 008c9edc-7d72-403c-847f-0e3b77bbb197
-source-git-commit: f5d0b6943b1b5ca41967c61842b73734ed41f26f
+source-git-commit: dc0a70a11f332dabf8f09e528c355f2bcb7910bc
 workflow-type: tm+mt
-source-wordcount: '1544'
+source-wordcount: '1249'
 ht-degree: 0%
 
 ---
@@ -38,6 +38,9 @@ La [plantilla de Commerce en la nube](https://github.com/magento/magento-cloud) 
 
 {{$include /help/_includes/templated/cloud-requirements-table.md}}
 
+**<sup>1</sup>Compatibilidad entre MariaDB 12.3 y Adobe Commerce 2.4.9**
+La compatibilidad entre MariaDB 12.3 y Adobe Commerce 2.4.9 se confirmará tras el lanzamiento oficial de MariaDB 12.3, previsto en el periodo de tiempo de mayo a junio.
+
 Para la configuración predeterminada, los servicios y las versiones se definen en [el archivo `services.yaml`](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml).
 Para obtener más información, consulte [Configuración de servicios](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/configure/service/services-yaml) en la guía de *Commerce en infraestructura en la nube*.
 
@@ -62,10 +65,6 @@ Todos los clientes locales de Adobe Commerce que ejecutan las versiones 2.4.6, 2
 se aconseja migrar su infraestructura de búsqueda a una versión compatible de OpenSearch.
 
 >[!ENDTABS]
-
->[!AVAILABILITY]
->
->La compatibilidad de <sup>1</sup> entre MariaDB 12.3 y Adobe Commerce 2.4.9 se confirmará tras el lanzamiento oficial de MariaDB 12.3, previsto para el periodo de tiempo de mayo a junio.
 
 ## Requisitos del sistema para versiones anteriores de Commerce
 
@@ -225,4 +224,4 @@ Para Adobe Commerce en la nube, consulte [Configuración de Xdebug](https://expe
 >
 >Hay un problema conocido con `xdebug` que puede afectar las instalaciones de Adobe Commerce o el acceso a la tienda o al administrador después de la instalación. Ver [Problema conocido que afecta a la instalación de `xdebug`](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/known-issues-that-affect-installation) en la _Base de conocimiento de soporte técnico de Commerce_.
 
-<!-- Last updated from includes: 2026-05-13 16:20:40 -->
+<!-- Last updated from includes: 2026-06-01 11:19:57 -->

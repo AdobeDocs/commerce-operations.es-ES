@@ -2,9 +2,9 @@
 user-guide-title: Herramientas
 user-guide-description: Obtenga información sobre las distintas herramientas que puede utilizar con Adobe Commerce, sus usos, el proceso de instalación y cómo obtener acceso.
 feature: Configuration
-source-git-commit: b5c120d34b84229c006fbeb9ba8d0f93f558aec1
+source-git-commit: 7625ecbebf7c8ca227f3817a0f4f21bba1bb253a
 workflow-type: tm+mt
-source-wordcount: '10074'
+source-wordcount: '10121'
 ht-degree: 0%
 
 ---
@@ -972,6 +972,7 @@ ht-degree: 0%
          - [ACSD-68341: se producen varias actualizaciones de la cookie X-Magento-Vary al cargar PDP](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68341.md)
       - Versión 1.1.78 {#v1-1-78}
          - [Información general:  [!DNL Quality Patches Tool] (QPT) v1.1.78](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/overview.md)
+         - [ACP2E-4513: Las imágenes CAPTCHA caducadas no se eliminan del sistema](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4513.md)
          - [ACP2E-4528: La validación de la ciudad de la dirección del cliente gestiona incorrectamente las barras diagonales (/) y los caracteres no válidos como !, &quot;, #, y ?](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4528.md)
          - [ACP2E-4628: La importación de clientes con direcciones de correo electrónico en mayúsculas déclencheur un error de clave de matriz no definida cuando Compartir cuentas está establecido en Global](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4628.md)
          - [ACSD-60989: Modificar una columna con una clave externa mediante un esquema declarativo provoca errores en  [!DNL MariaDB]](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acsd-60989.md)
@@ -995,6 +996,8 @@ ht-degree: 0%
          - [ACP2E-4419: Las tarjetas de regalo no se aplican correctamente en el momento de la compra después de la validación correcta de reCAPTCHA v2 en la tienda](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4419.md)
       - Versión 1.1.79 {#v1-1-79}
          - [Información general:  [!DNL Quality Patches Tool] (QPT) v1.1.79](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/overview.md)
+         - [ACP2E-4505: La dependencia de categoría circular impide guardar una categoría con datos antiguos en una pestaña duplicada del explorador](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4505.md)
+         - [ACP2E-4720: Las reglas de precio del carro de compras de envío gratuito no se restablecen para los productos de paquetes de precio fijo con artículos de envío por separado](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4720.md)
          - [AC-10698: Los precios y totales de transacción no se envían a la etiqueta de Google](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/ac-10698.md)
          - [ACP2E-4475: Pedido o filtro por precio que no funciona para los productos del paquete sin existencias](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4475.md)
          - [ACP2E-4411: Los precios del paquete de productos muestran valores de impuestos y divisas incorrectos entre la página de detalles del producto y el carro de compras en una configuración de varias monedas](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4411.md)

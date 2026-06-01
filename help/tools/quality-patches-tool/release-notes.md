@@ -3,9 +3,18 @@ title: Notas de la versión
 description: Obtenga información acerca de los parches disponibles para Adobe Commerce y los problemas que resuelven.
 exl-id: 22262555-f5ea-49ad-98ad-ea8428ef66d5
 type: Troubleshooting
-source-git-commit: 26f4a5c5a23e3df9448898b57495e60e2e51133a
+autotag-review: '2026-05-29T17:40:45.034Z'
+TQID: 'https://experienceleague.adobe.com/HHiR-UPHRK-dZCKE9L6H1bfm4hykrOgYsBm-XJv8zyE'
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+source-git-commit: c7b05a4b636b1d4f67e1d3db40dce7fab1cb1b6b
 workflow-type: tm+mt
-source-wordcount: '30379'
+source-wordcount: 30977
 ht-degree: 0%
 
 ---
@@ -21,6 +30,27 @@ ht-degree: 0%
 >[!INFO]
 >
 >Para obtener información acerca de [!DNL quality patches] creado por la comunidad para Magento Open Source, consulte las [notas de la versión](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## Versión 1.1.80 {#v1-1-80}
+
+* **ACP2E-4239** (para Adobe Commerce y Magento Open Source >=2.4.7 &lt;2.4.9): corrige el problema en el que los filtros de cuadrícula de administración que utilizan atributos de fecha devuelven resultados incorrectos debido a diferencias de zona horaria entre la fecha seleccionada, los valores UTC almacenados y la zona horaria de almacenamiento configurada.
+* **ACP2E-4472** (para Adobe Commerce y Magento Open Source >=2.4.4 &lt;2.4.9): corrige el problema en el que se crea una cotización nula durante el flujo &quot;Iniciar sesión como cliente&quot;.
+* **ACP2E-4481** (para Adobe Commerce y Magento Open Source >=2.4.7 &lt;2.4.9): corrige el problema en el que la capacidad de venta de productos del paquete no se recalcula correctamente después de cancelar un pedido.
+* **ACP2E-4488** (para Adobe Commerce y Magento Open Source >=2.4.4 &lt;2.4.9): corrige el problema por el cual guardar o editar productos en Administración es lento para productos con grandes conjuntos de atributos.
+* **ACP2E-4493** (para Adobe Commerce >=2.4.4 &lt;2.4.9): corrige el problema en el que la cuadrícula Archivo de pedidos de ventas muestra un estado de pedido incorrecto cuando la indexación asincrónica está habilitada.
+* **ACP2E-4496** (para Adobe Commerce y Magento Open Source >=2.4.8 &lt;2.4.9): corrige el problema en el que el trabajo cron de Analytics causa una degradación del rendimiento durante la ejecución, lo que da como resultado un rendimiento general del sistema mejorado.
+* **ACP2E-4533** (para Adobe Commerce y Magento Open Source >=2.4.7 &lt;2.4.8): corrige el problema en el cual las imágenes de marcador de posición no se cargan en la Tienda cuando se incluye un código de tienda en la dirección URL.
+* **ACP2E-4552** (para Adobe Commerce, B2B >=1.5.0 &lt;1.5.3): corrige el problema en el que el estado de la compañía no se devuelve en la respuesta de GraphQL.
+* **ACP2E-4610** (para Adobe Commerce y Magento Open Source >=2.4.4 &lt;2.4.9): corrige el problema en el que el trabajo cron sales_clean_quote tiene problemas de rendimiento.
+* **ACP2E-4615** (para Adobe Commerce >=2.4.4-p13 &lt;2.4.4-p17 || >=2.4.4-p18 &lt;2.4.5 || >=2.4.5-p12 &lt;2.4.6 || >=2.4.6-p10 &lt;2.4.7 || >=2.4.7-p5 &lt;2.4.9): corrige el problema en el que los reembolsos de pedidos en línea fallan con un error de PayPal que indica &quot;La puerta de enlace de PayPal rechaza la solicitud. Error interno.&quot;.
+* **ACP2E-4626** (para Adobe Commerce y Magento Open Source >=2.4.7 &lt;2.4.9): corrige el problema en el que algunos archivos de Storefront JavaScript se solicitan y ejecutan dos veces, lo que provoca cargas duplicadas intermitentes y un comportamiento inestable.
+* **ACP2E-4653** (para Adobe Commerce y Magento Open Source >=2.4.8 &lt;2.4.9): corrige el problema en el que el ámbito del atributo de condición de Regla de precio de carro de compras para &quot;Categoría (solo principal)&quot; y &quot;Categoría (solo secundaria)&quot; no se expone al recuperar o actualizar reglas a través de la API de REST.
+* **ACP2E-4808** (para Adobe Commerce y Magento Open Source >=2.4.4 &lt;2.4.10): corrige el problema por el que el atributo Weight de la página de producto de la tienda muestra solamente un valor numérico sin procesar en la sección &quot;Información adicional&quot; o &quot;Más información&quot; sin la unidad de medida configurada (libras o kg).
+* **ACP2E-4156** (para Adobe Commerce y Magento Open Source >=2.4.8 &lt;2.4.9): corrige el problema en el cual la validación de direcciones de envío en la API de REST no se adhiere a la configuración de atributos definida en Administración.
+* **ACP2E-4813** (para Adobe Commerce y Magento Open Source >=2.4.6-p3 &lt;2.4.6-p15 || >=2.4.7 &lt;2.4.7-p10 || >=2.4.8 &lt;2.4.8-p5): corrige el problema en el que los métodos de envío de USPS no están disponibles al realizar el cierre de compra y las estimaciones de envío son incorrectas para determinados productos, incluidos los pedidos divididos en varios paquetes.
+* **ACSD-53502** (para Adobe Commerce y Magento Open Source >=2.4.4 &lt;2.4.6): corrige el problema en el cual Agregar al carro de compras falla intermitentemente en la tienda en iOS Safari debido a llamadas recursivas al script de supervisión de New Relic, lo que provoca recargas de página.
+* Versiones actualizadas: **AC-15210**, **MDVA-12304**, **ACSD-46520**, **ACSD-48627**, **ACSD-49898**, **ACSD-51291**, **ACSD-51358**, **ACSD-50815**, **ACSD-54106**, **ACSD-53636**, **ACSD-55100**, **ACSD-58008**, **ACSD-61133**, **ACSD-63286**, **ACSD-67941**, **ACSD-64546**, **ACSD-64118**, **ACSD-65822**, **ACSD-57477**, **ACSD-58108**, **ACSD-66149**, **ACSD-**, **ACSD-66404**, **ACSD-67250**, **ACSD-67686 68925**, **ACP2E-4402**, **ACP2E-4505**, **ACP2E-4603**, **ACP2E-4706**
+* Revisiones reemplazadas: **AC-15210**, **ACSD-58108**
 
 ## Versión 1.1.79 {#v1-1-79}
 

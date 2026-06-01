@@ -1,7 +1,7 @@
 ---
-source-git-commit: 75c28c839ee5e6405550df0149ef4196f7e15a1c
+source-git-commit: 7e5c9d7f4bbd1f47ef9ef10dc21e2b0f1cfac356
 workflow-type: tm+mt
-source-wordcount: '2685'
+source-wordcount: '2608'
 ht-degree: 0%
 
 ---
@@ -527,36 +527,6 @@ Esta página contiene los cambios realizados en los últimos 60 días. Excluimos
         Técnico, comentarios
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/c3030226d7832b17c82be375431795cba44d72f9">comprometer</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 1 de abril de 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descripción</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Se ha actualizado el <a href="https://experienceleague.adobe.com/es/docs/commerce-operations/release/planning/schedule">calendario de versiones de Adobe Commerce de 2026</a> con la información de la versión más reciente.</p>
-</td>
-      <td>
-        Notas de la versión
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/3f32d342cbdc3e962fede45de828d836c242bc9a">comprometer</a></td>
-    </tr>
-    <tr>
-      <td><p>Se han actualizado las <a href="https://experienceleague.adobe.com/es/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration">prácticas recomendadas para la configuración de Redis y Valkey</a> y se han proporcionado instrucciones de configuración relacionadas.</p>
-</td>
-      <td>
-        Técnico, comentarios
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/c96e5b397a2ffee8fadaf638e721799b40d320d3">comprometer</a></td>
     </tr>
   </tbody>
 </table>

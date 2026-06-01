@@ -1,5 +1,5 @@
 ---
-source-git-commit: c040c9a3f184f0a39f778e7f0f2417dcbfbfeba1
+source-git-commit: 44c3c7eaf57d858b5810e6ba6f510e9fea4e1a1a
 workflow-type: tm+mt
 source-wordcount: '506'
 ht-degree: 0%
@@ -82,3 +82,5 @@ Este repositorio usa las tareas de rastrillado proporcionadas por la joya `adobe
 cd _jekyll
 bundle exec rake --tasks
 ```
+
+
