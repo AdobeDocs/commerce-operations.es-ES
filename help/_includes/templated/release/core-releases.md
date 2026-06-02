@@ -1,7 +1,7 @@
 ---
-source-git-commit: 96a30744d05e5220b60a6a56a9d64d92e1dfd9ce
+source-git-commit: e77a19ce01fb0dd650aee3e8ec5f86375b429451
 workflow-type: tm+mt
-source-wordcount: '2070'
+source-wordcount: '2046'
 ht-degree: 3%
 
 ---
@@ -275,6 +275,7 @@ La compatibilidad regular con la línea de la versión 2.4.6 finaliza el 11 de a
 
 La compatibilidad regular con la línea de la versión 2.4.5 finalizó el 12 de agosto de 2025.
 La compatibilidad ampliada para la línea de versión 2.4.5 finaliza el 11 de agosto de 2026.
+El aprovisionamiento de correcciones de seguridad adicionales para la línea de versión 2.4.5 finaliza en mayo de 2027.
 
 <table>
   <thead>
@@ -399,6 +400,7 @@ La compatibilidad ampliada para la línea de versión 2.4.5 finaliza el 11 de ag
 
 La compatibilidad regular con la línea de versión 2.4.4 finalizó el 12 de abril de 2025.
 La compatibilidad ampliada para la línea de versión 2.4.4 finalizó el 14 de abril de 2026.
+El aprovisionamiento de correcciones de seguridad adicionales para la línea de versión 2.4.4 finaliza en mayo de 2027.
 
 <table>
   <thead>

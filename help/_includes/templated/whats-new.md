@@ -1,7 +1,7 @@
 ---
-source-git-commit: eca5c109548e0d92435b3dca90a905ef2efaa504
+source-git-commit: e77a19ce01fb0dd650aee3e8ec5f86375b429451
 workflow-type: tm+mt
-source-wordcount: '3357'
+source-wordcount: '3282'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Esta página contiene los cambios realizados en los últimos 60 días. Excluimos
   </thead>
   <tbody>
     <tr>
-      <td><p>Se agregó una descripción detallada de la corrección de QPT 1.1.78 para <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4513">ACP2E-4513: Las imágenes CAPTCHA caducadas no se eliminan del sistema</a>.</p>
+      <td><p>Se agregó una descripción detallada de la corrección de QPT 1.1.78 para <a href="https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4513">ACP2E-4513: Las imágenes CAPTCHA caducadas no se eliminan del sistema</a>.</p>
 </td>
       <td>
         Tema nuevo, qpt
@@ -39,7 +39,7 @@ Esta página contiene los cambios realizados en los últimos 60 días. Excluimos
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/0a726754a6e171a60a07ccedf76db7505f19706a">comprometer</a></td>
     </tr>
     <tr>
-      <td><p>Se agregó una descripción detallada de la corrección de QPT 1.1.79 para <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4505">ACP2E-4505: La dependencia de categoría circular impide guardar una categoría con datos antiguos en una pestaña duplicada del explorador</a>.</p>
+      <td><p>Se agregó una descripción detallada de la corrección de QPT 1.1.79 para <a href="https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4505">ACP2E-4505: La dependencia de categoría circular impide guardar una categoría con datos antiguos en una pestaña duplicada del explorador</a>.</p>
 </td>
       <td>
         Tema nuevo, qpt
@@ -77,7 +77,7 @@ Esta página contiene los cambios realizados en los últimos 60 días. Excluimos
   </thead>
   <tbody>
     <tr>
-      <td><p>Se agregó una descripción detallada de la corrección de QPT 1.1.79 para <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4720">ACP2E-4720: Las reglas de precio del carro de compras de envío gratuito no se restablecen para los productos de paquetes de precio fijo con elementos de envío por separado</a>.</p>
+      <td><p>Se agregó una descripción detallada de la corrección de QPT 1.1.79 para <a href="https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4720">ACP2E-4720: Las reglas de precio del carro de compras de envío gratuito no se restablecen para los productos de paquetes de precio fijo con elementos de envío por separado</a>.</p>
 </td>
       <td>
         Tema nuevo, qpt
@@ -265,7 +265,7 @@ Esta página contiene los cambios realizados en los últimos 60 días. Excluimos
   </thead>
   <tbody>
     <tr>
-      <td><p>Se ha corregido la compatibilidad de Valkey LTS con 8.1 en las versiones de parches de seguridad <a href="https://experienceleague.adobe.com/es/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#valkey-81-lts-support">2.4.5</a>, <a href="https://experienceleague.adobe.com/es/docs/commerce-operations/release/notes/security-patches/2-4-6-patches#valkey-81-lts-support">2.4.6</a> y <a href="https://experienceleague.adobe.com/es/docs/commerce-operations/release/notes/security-patches/2-4-8-patches#valkey-81-lts-support">2.4.8</a> temas para que la guía del servidor de caché coincida con la de Valkey compatible en Adobe Commerce en la infraestructura en la nube.<br /><em>Soluciona el problema <a href="https://github.com/AdobeDocs/commerce-operations.es-ES/issues/177">#177</a>.</em></p>
+      <td><p>Se ha corregido la compatibilidad de Valkey LTS con 8.1 en las versiones de parches de seguridad <a href="https://experienceleague.adobe.com/es/docs/commerce-operations/release/notes/security-patches/2-4-5-patches#valkey-81-lts-support">2.4.5</a>, <a href="https://experienceleague.adobe.com/es/docs/commerce-operations/release/notes/security-patches/2-4-6-patches#valkey-81-lts-support">2.4.6</a> y <a href="https://experienceleague.adobe.com/es/docs/commerce-operations/release/notes/security-patches/2-4-8-patches#valkey-81-lts-support">2.4.8</a> temas para que la guía del servidor de caché coincida con la de Valkey compatible en Adobe Commerce en la infraestructura en la nube.<br /><em>Soluciona el problema <a href="https://github.com/AdobeDocs/commerce-operations.en/issues/177">#177</a>.</em></p>
 </td>
       <td>
         Técnico, comentarios, notas de la versión
@@ -687,28 +687,6 @@ Esta página contiene los cambios realizados en los últimos 60 días. Excluimos
         Actualización importante
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/a9f3594a0ccf4326b0541a4f2b07fdf49cde7148">comprometer</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 3 de abril de 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descripción</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Se agregaron instrucciones para anular correctamente los directorios de caché L2 predeterminados de Adobe Commerce en <code>env.php</code> a fin de garantizar que los archivos de caché se almacenen en la ubicación deseada y evitar los errores de segmentación de GlusterFS y los directorios de caché divididos. Consulte las instrucciones actualizadas en <a href="https://experienceleague.adobe.com/es/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-service-configuration">Prácticas recomendadas para la configuración de los servicios Redis y Valkey</a>.</p>
-</td>
-      <td>
-        Técnico, comentarios
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/c3030226d7832b17c82be375431795cba44d72f9">comprometer</a></td>
     </tr>
   </tbody>
 </table>
