@@ -4,9 +4,9 @@ description: Obtenga información sobre las versiones beta de Adobe Commerce y c
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
 badgePaas: label="PaaS" type="Informative" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe) y a proyectos locales."
 badgeSaas: label="SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
-source-git-commit: 3411fb1d4c89bd4dd576f58b98dcf19ddafa00bf
+source-git-commit: 300ed6b9123701244042abccf70ff774ac05b0fa
 workflow-type: tm+mt
-source-wordcount: '1574'
+source-wordcount: '1894'
 ht-degree: 0%
 
 ---
@@ -91,6 +91,25 @@ La comercialización por categorías de Adobe Commerce Optimizer ayuda a los com
 - El ámbito se rige por la vista de catálogo cuando la configuración utiliza varias vistas de catálogo.
 
 Para obtener más información, consulte [Comercialización por categorías](https://experienceleague.adobe.com/es/docs/commerce/optimizer/merchandising/rules/add).
+
+Para compartir tus comentarios mientras usas esta función beta, envía un correo electrónico a [commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com).
+
+### Filtros de precio de recomendación (Beta público) {#recommendation-price-filters-public-beta}
+
+[!BADGE Solo SaaS]{type=Positive url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."}
+
+[!DNL Adobe Commerce Optimizer] agrega **filtros de precio** a las recomendaciones de productos para que pueda incluir o excluir productos recomendados según el precio cuando cree o edite una unidad de recomendación. Los filtros usan el **precio calculado final** de cada producto del **libro de precios activo** de la tienda, incluidos los descuentos y las promociones de ese libro de precios (no solo el precio de lista). Las reglas de precios refinan el conjunto de candidatos; no reclasifican los productos.
+
+Puede definir rangos **static** con valores mínimos y máximos fijos en la moneda base de su tienda, o reglas **dynamic** en páginas de detalles de productos que comparan productos recomendados con el **producto visualizado actualmente**, usando operadores tales como menor o igual que, mayor o igual que, o dentro de un valor o rango de porcentaje del precio de anclaje. Los filtros dinámicos están disponibles para tipos de recomendación relacionados con SKU que se ejecutan en el contexto del producto (por ejemplo, *Visualizó esto, vio aquello* y *Más como esto*).
+
+**Ventajas principales**
+
+- Incluir o excluir candidatos de recomendación por precio usando reglas de inclusión y exclusión en el paso **Filtrar productos**.
+- Utilice bandas de precios estáticas para los objetivos de comercialización fijos (por ejemplo, complementos económicos o ventas adicionales premium).
+- Utilice reglas de precios dinámicas en la página de detalles del producto para mostrar alternativas dentro de una banda de precios comparable en relación con el producto que se está viendo.
+- Alinee el filtrado con el precio que ven los compradores, que es el mismo precio final del libro de precios activo que se utiliza para el filtrado y la visualización.
+
+Para obtener más información, consulte [Filtros de recomendación — Precio](https://experienceleague.adobe.com/es/docs/commerce/optimizer/merchandising/recommendations/filters#price) en la guía del comerciante y [Configuración de recomendaciones de productos](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/content-customizations/product-recommendations/?lang=es) en la guía desplegable de la tienda.
 
 Para compartir tus comentarios mientras usas esta función beta, envía un correo electrónico a [commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com).
 
