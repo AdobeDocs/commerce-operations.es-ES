@@ -1,7 +1,7 @@
 ---
-source-git-commit: b552c5e9aa33c33efe962f5f3661ca26b29ef0b6
+source-git-commit: b8c97f7a7d92a75ce54d323344460e2e71e8f548
 workflow-type: tm+mt
-source-wordcount: '3380'
+source-wordcount: '3441'
 ht-degree: 0%
 
 ---
@@ -10,6 +10,58 @@ ht-degree: 0%
 ## Novedades
 
 Esta página contiene los cambios realizados en los últimos 60 días. Excluimos todas las actualizaciones menores, como la edición de copias, de esta lista.
+
+### 12 de junio de 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descripción</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Se agregó <a href="https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/overview">Información general: Herramienta de parches de calidad (QPT) v1.1.80</a>.</p>
+</td>
+      <td>
+        Tema nuevo, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/6e585cb2150ca7dc2ae6ae883339ef9b894741f0">comprometer</a></td>
+    </tr>
+    <tr>
+      <td><p>Se ha agregado el programa de búsqueda por coincidencia y clasificación (Private Beta) a <a href="https://experienceleague.adobe.com/es/docs/commerce-operations/release/beta#search-matching-and-ranking-private-beta">versiones de Beta</a>, que incluye el modelo de coincidencia por capas, la interacción con pesos y reglas de comercialización y las instrucciones de invitación.</p>
+</td>
+      <td>
+        Actualización importante
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b364a26b6ad3e36652b8309dcb87268d522fa31c">comprometer</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 8 de junio de 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descripción</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Se ha agregado una descripción detallada de la corrección de QPT 1.1.79 para <a href="https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4706">ACP2E-4706: el indexador de reglas de Target cron no elige productos habilitados solo en el ámbito de la vista de tienda</a>.</p>
+</td>
+      <td>
+        Tema nuevo, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/f1f9890a2a2b7dbe501037ca8dbe919865012b6f">comprometer</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 5 de junio de 2026
 
@@ -701,36 +753,6 @@ Esta página contiene los cambios realizados en los últimos 60 días. Excluimos
         Actualización técnica, importante
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/0bc6807d7f4bfd84ac698de81f8cf6f56d849af7">comprometer</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 8 de abril de 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descripción</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Se han actualizado <a href="https://experienceleague.adobe.com/es/docs/commerce-operations/installation-guide/system-requirements">Requisitos del sistema</a> con versiones compatibles con New Relic (APM) para Commerce en la nube mediante el lanzamiento.</p>
-</td>
-      <td>
-        Técnico, comentarios
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/f82d05cf0f7d2749b313ef5f7e89e1e36248bf30">comprometer</a></td>
-    </tr>
-    <tr>
-      <td><p>Se han actualizado <a href="https://experienceleague.adobe.com/es/docs/commerce-operations/release/beta">versiones de Beta</a> con un programa de comercialización por categorías (Beta público) para proyectos SaaS, que incluye vínculos a <a href="https://experienceleague.adobe.com/es/docs/commerce/optimizer/merchandising/rules/add">comercialización por categorías</a> y temas relacionados con reglas de comercialización.</p>
-</td>
-      <td>
-        Actualización importante
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/a9f3594a0ccf4326b0541a4f2b07fdf49cde7148">comprometer</a></td>
     </tr>
   </tbody>
 </table>
