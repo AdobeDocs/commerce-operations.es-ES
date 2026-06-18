@@ -2,9 +2,9 @@
 title: Seguridad de responsabilidad compartida y modelo operativo
 description: Obtenga información sobre las responsabilidades de seguridad de cada parte involucrada en su proyecto de infraestructura de Adobe Commerce en la nube.
 exl-id: f3cc1685-e469-4e30-b18e-55ce10dd69ce
-source-git-commit: 4e5477a247b272dc17863a84bd3b9a55bf36d688
+source-git-commit: 7dcd7f79417df28402a29e1e52d99eb288e8c6b9
 workflow-type: tm+mt
-source-wordcount: '3227'
+source-wordcount: '3253'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,14 @@ Los comerciantes son responsables de lo siguiente:
 * Garantizar el desarrollo seguro de aplicaciones
 * Obtención de la certificación PCI si así lo solicita el procesador de pagos del comerciante
 * Reacción y respuesta a incidentes de seguridad
-* Mantener todas las dependencias de terceros, los servicios de plataforma y las extensiones de servicios de Adobe Commerce en versiones compatibles de forma activa. Adobe no proporciona soporte de seguridad ni asistencia para implementaciones que ejecutan versiones de dependencia no admitidas. Consulte [Requisitos del sistema](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=es) y la [Matriz de disponibilidad del producto](https://experienceleague.adobe.com/es/docs/commerce-operations/release/product-availability) para ver las versiones compatibles.
+* Mantener todas las dependencias de terceros, los servicios de plataforma y las extensiones de servicios de Adobe Commerce en versiones compatibles de forma activa. Adobe no proporciona soporte de seguridad ni asistencia para implementaciones que ejecutan versiones de dependencia no admitidas. Consulte [Requisitos del sistema](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) y la [Matriz de disponibilidad del producto](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability) para ver las versiones compatibles.
+
+>[!NOTE]
+>
+>Consulte también:
+>
+>* [Política de ciclo de vida del software](../release/lifecycle-policy.md): fechas de fin de soporte, soporte ampliado y disposiciones transitorias de solo seguridad
+>* [Directiva de aplicación de actualización de la versión en la nube](../release/version-upgrade-enforcement-policy.md): fechas de aplicación y acciones requeridas
 
 {{supported-versions-only}}
 
@@ -96,7 +103,7 @@ El comerciante es responsable de seguir las prácticas recomendadas de seguridad
    * Extensiones de Adobe Commerce Services
    * Todas las integraciones personalizadas y extensiones de terceros
 
-  Adobe no admite implementaciones que ejecuten versiones no admitidas. Consulte [Requisitos del sistema](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=es) y la [Matriz de disponibilidad del producto](https://experienceleague.adobe.com/es/docs/commerce-operations/release/product-availability) para ver las versiones compatibles.
+  Adobe no admite implementaciones que ejecuten versiones no admitidas. Consulte [Requisitos del sistema](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) y la [Matriz de disponibilidad del producto](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability) para ver las versiones compatibles.
 
 ## Responsabilidades del proveedor de Cloud Service
 
@@ -813,8 +820,6 @@ Los comerciantes son responsables de sincronizar datos entre entornos.
 | Configuración de la sincronización de datos de MBI para Adobe Commerce Cloud Pro<br> (configuración de la base de datos de Adobe Commerce Cloud) | R |   |
 
 {style="table-layout:auto"}
-
-{{supported-versions-only}}
 
 #### Recomendaciones de productos
 
