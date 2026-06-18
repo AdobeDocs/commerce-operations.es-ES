@@ -4,10 +4,10 @@ user-guide-description: Acceda a toda la información de la versión de los parc
 feature: Release Notes
 recommendations: noDisplay, noCatalog
 nudge: true
-source-git-commit: c8fa72ef4b5bb6f9a2d82e4e9840f683afb8ca54
+source-git-commit: 34c15beb4ddf0f6624295b0ec835de013dd36315
 workflow-type: tm+mt
-source-wordcount: '97'
-ht-degree: 34%
+source-wordcount: '101'
+ht-degree: 32%
 
 ---
 
@@ -54,6 +54,7 @@ ht-degree: 34%
 - [Versiones de Beta](beta.md)
 - Planificación y políticas {#planning}
    - [Política de ciclo vital](lifecycle-policy.md)
+   - [Directiva de aplicación de actualización de versiones](version-upgrade-enforcement-policy.md)
    - [Directiva de versiones](versioning-policy.md)
    - [Programación de versiones](schedule.md)
 - [Características por versión](features.md)
