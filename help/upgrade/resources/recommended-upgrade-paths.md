@@ -2,9 +2,9 @@
 title: Modernización de la plataforma con Adobe Commerce
 description: Revise las recomendaciones para planificar la actualización de Adobe Commerce.
 exl-id: f776b000-0085-4b77-860f-623837c3c902
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 8be75548a939008057fb5fdf37ba5b5a0345f6d4
 workflow-type: tm+mt
-source-wordcount: '228'
+source-wordcount: '173'
 ht-degree: 0%
 
 ---
@@ -18,9 +18,7 @@ Una implementación de comercio electrónico es una evolución; nunca ha termina
 - Flexibilidad y personalización continuas para satisfacer necesidades empresariales únicas
 - Incrementos significativos en rendimiento y escalabilidad
 - Mejor experiencia y mejores herramientas para desarrolladores
-- Posibilidad de integración más profunda con otras aplicaciones de Adobe Experience Cloud
-
-Para proporcionar a nuestros comerciantes más flexibilidad a la hora de planificar las actualizaciones, hemos actualizado recientemente la [programación de versiones](../../release/schedule.md) de Adobe Commerce, hemos ampliado la fecha de fin de soporte (EOS) de la versión 2.3 y hemos anunciado nuevas opciones de soporte ampliado para determinadas versiones de nuestro software. Para obtener más información sobre estas actualizaciones, consulte [Compatibilidad ampliada con Adobe Commerce](https://business.adobe.com/blog/the-latest/adobe-announces-expanded-support).
+- Posibilidad de integración con otras aplicaciones de Adobe Experience Cloud
 
 Las siguientes son rutas de actualización recomendadas por Adobe Commerce para mantener el sitio seguro y con rendimiento al actualizar a una de las versiones más recientes.
 

@@ -2,9 +2,9 @@
 title: Requisitos del sistema
 description: Obtenga información sobre las dependencias de software y los requisitos del sistema para Adobe Commerce. Consulte las configuraciones probadas para comprobar la compatibilidad con el entorno de implementación.
 exl-id: 008c9edc-7d72-403c-847f-0e3b77bbb197
-source-git-commit: 4ffbd0ab5109fb242d3d83c8f6c19c58d1bcb822
+source-git-commit: eacee993ec38cce7763d4c99b1bbb67a319d8c1a
 workflow-type: tm+mt
-source-wordcount: '1253'
+source-wordcount: '1371'
 ht-degree: 0%
 
 ---
@@ -56,6 +56,8 @@ Línea de versión de Commerce.
 Todos los clientes locales de Adobe Commerce que ejecutan las versiones 2.4.7, 2.4.6, 2.4.5 y 2.4.4 tienen una
 se aconseja migrar sus servidores de base de datos a una versión de MariaDB compatible.
 
+Los clientes de Adobe Commerce en la nube deben mantener las dependencias de plataforma de las versiones compatibles. Ver [dependencias de plataforma](../release/lifecycle-policy.md#platform-dependencies) en la directiva de ciclo vital.
+
 **Elasticsearch 7.17 llegó al fin de la compatibilidad (EOS) el 15 de enero de 2026.**
 Después de esta fecha, Adobe Commerce 2.4.6, 2.4.5 y 2.4.4 no proporcionará compatibilidad o
 compatibilidad con cualquier versión de Elasticsearch lanzada después de Elasticsearch 7. Adobe no
@@ -71,6 +73,10 @@ se aconseja migrar su infraestructura de búsqueda a una versión compatible de 
 En las tablas siguientes se enumeran los requisitos del sistema para las versiones de Adobe Commerce, incluidas las que son compatibles con versiones ampliadas. Estas tablas se proporcionan solo con fines de referencia. Adobe no recomienda el uso de versiones no admitidas de dependencias de software y la Asistencia técnica requiere que alinee su entorno con una configuración admitida para que podamos investigar, solucionar problemas o validar el comportamiento notificado.
 
 >[!NOTE]
+>
+>Adobe Commerce 2.4.6 cuenta con [soporte extendido](../release/lifecycle-policy.md#extended-support) hasta el **30 de agosto de 2027**, seguido de un [período de transición solo de seguridad](../release/lifecycle-policy.md#security-only-transitional-period) hasta el **31 de mayo de 2028**. Estas provisiones solo están disponibles para los clientes de Adobe Commerce. No amplían la compatibilidad con dependencias de terceros como MySQL.
+>
+>Si ejecuta Adobe Commerce en la nube, debe actualizar a una versión compatible o migrar a [!DNL Adobe Commerce as a Cloud Service] antes del **1 de junio de 2028** [fecha de aplicación de la actualización de la versión](../release/version-upgrade-enforcement-policy.md). Consulte la tabla [fechas de fin de soporte](../release/lifecycle-policy.md#end-of-support-dates) para ver las fechas completas del ciclo vital.
 >
 >La tabla está contraída para minimizar la longitud de este artículo. Seleccione el encabezado para expandirlo.
 
@@ -98,6 +104,8 @@ validar o proporcionar compatibilidad con las versiones principales más recient
 Línea de versión de Commerce.
 Todos los clientes locales de Adobe Commerce que ejecutan las versiones 2.4.7, 2.4.6, 2.4.5 y 2.4.4 tienen una
 se aconseja migrar sus servidores de base de datos a una versión de MariaDB compatible.
+
+Los clientes de Adobe Commerce en la nube deben mantener las dependencias de plataforma de las versiones compatibles. Ver [dependencias de plataforma](../release/lifecycle-policy.md#platform-dependencies) en la directiva de ciclo vital.
 
 **Elasticsearch 7.17 llegó al fin de la compatibilidad (EOS) el 15 de enero de 2026.**
 Después de esta fecha, Adobe Commerce 2.4.6, 2.4.5 y 2.4.4 no proporcionará compatibilidad o

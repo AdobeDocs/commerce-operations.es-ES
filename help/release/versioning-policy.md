@@ -2,9 +2,9 @@
 title: Directiva de versión
 description: Obtenga información acerca de los tipos de versiones de Adobe Commerce, marketing y versiones de módulos, versiones de parches y seguridad, beta, revisiones y la directiva de versión general.
 exl-id: 61a83de6-6a7b-4a88-8fff-1638b4fe472a
-source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
+source-git-commit: 8be75548a939008057fb5fdf37ba5b5a0345f6d4
 workflow-type: tm+mt
-source-wordcount: '692'
+source-wordcount: '703'
 ht-degree: 0%
 
 ---
@@ -71,7 +71,7 @@ Las revisiones son parches que contienen correcciones de alta calidad o segurida
 
 ## Parche individual
 
-Los parches individuales contienen correcciones de calidad de bajo impacto para un problema específico. Estas correcciones se aplican a las versiones secundarias compatibles de Adobe Commerce. Adobe publica parches individuales según sea necesario para Adobe Commerce de acuerdo con la [Política de ciclo de vida del software](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf). Se entregan a través de la [herramienta Parches de calidad](../tools/quality-patches-tool/usage.md).
+Los parches individuales contienen correcciones de calidad de bajo impacto para un problema específico. Estas correcciones se aplican a las versiones secundarias compatibles de Adobe Commerce. Adobe publica parches individuales según sea necesario para Adobe Commerce de acuerdo con la [directiva de ciclo de vida del software](lifecycle-policy.md). Para conocer los términos legales, consulte la [Política de ciclo de vida del software de Adobe Commerce (PDF)](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf). Se entregan a través de la [herramienta Parches de calidad](../tools/quality-patches-tool/usage.md).
 
 >[!NOTE]
 >

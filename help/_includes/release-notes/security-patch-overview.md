@@ -1,7 +1,7 @@
 ---
-source-git-commit: 52c330f62d722a4cae7f7f360ca61eca0f04b961
+source-git-commit: 8be75548a939008057fb5fdf37ba5b5a0345f6d4
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '372'
 ht-degree: 0%
 
 ---
@@ -19,9 +19,7 @@ Cada versión del parche de seguridad se basa en la versión completa anterior d
 
 Para obtener instrucciones sobre cómo descargar y aplicar parches de seguridad, consulte [Cómo obtener y aplicar parches de seguridad](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/how-to/how-to-obtain-and-apply-security-patches) en la _base de conocimiento de Adobe Commerce_.
 
->[!NOTE]
->
->Los parches de seguridad de soporte ampliado solo están disponibles para los clientes de Adobe Commerce y no para el código base de Magento Open Source. Consulte [Soporte ampliado](https://experienceleague.adobe.com/es/docs/commerce-operations/release/planning/lifecycle-policy#extended-support).
+{{$include /help/_includes/release-notes/extended-support-policy-note.md}}
 
 ## Archivo de parche de seguridad aislado
 
