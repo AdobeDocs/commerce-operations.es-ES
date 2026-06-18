@@ -1,8 +1,8 @@
 ---
 title: Directiva de aplicación de actualización de versión de nube
 description: 'Obtenga información acerca de la aplicación de actualización de versiones para Adobe Commerce en la nube: por qué Adobe aplica actualizaciones, fechas de aplicación, clausura y acciones requeridas. Consulte la política de ciclo vital para disposiciones transitorias y rutas de migración.'
-nudge: true
-source-git-commit: eacee993ec38cce7763d4c99b1bbb67a319d8c1a
+nudge: false
+source-git-commit: 797f067de451c8b1b4d735e82de66a3fd9b56563
 workflow-type: tm+mt
 source-wordcount: '491'
 ht-degree: 0%
