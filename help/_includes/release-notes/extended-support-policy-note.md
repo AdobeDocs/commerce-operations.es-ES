@@ -16,4 +16,4 @@ ht-degree: 0%
 >Consulte también:
 >
 >- [Política de ciclo de vida del software](https://experienceleague.adobe.com/es/docs/commerce-operations/release/planning/lifecycle-policy): fechas de fin de soporte, soporte ampliado y disposiciones transitorias de solo seguridad
->- [Directiva de aplicación de actualización de la versión en la nube](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/version-upgrade-enforcement-policy): fechas de aplicación y acciones requeridas
+>- [Directiva de aplicación de actualización de la versión en la nube](https://experienceleague.adobe.com/es/docs/commerce-operations/release/planning/version-upgrade-enforcement-policy): fechas de aplicación y acciones requeridas
