@@ -2,9 +2,9 @@
 title: Notas de la versión de Adobe Commerce
 description: Descubra dónde encontrar información sobre versiones específicas de Adobe Commerce.
 exl-id: f6385e12-5c3d-425f-939c-9dfd7ef6c4f5
-source-git-commit: 8be75548a939008057fb5fdf37ba5b5a0345f6d4
+source-git-commit: 3373f83b5c03e9e81c26376f299014e8bf63a6e9
 workflow-type: tm+mt
-source-wordcount: '462'
+source-wordcount: '493'
 ht-degree: 2%
 
 ---
@@ -12,7 +12,16 @@ ht-degree: 2%
 
 # Notas de la versión de Adobe Commerce
 
-Utilice la siguiente tabla para buscar notas de la versión e información importante relacionada con versiones específicas de todos los productos, servicios y herramientas de Adobe Commerce.
+La siguiente tabla proporciona notas de la versión e información importante para Adobe Commerce local y Adobe Commerce sobre productos, servicios y herramientas en la nube.
+
+>[!BEGINSHADEBOX]
+
+**Notas de la versión para otros productos:**
+
+- [Adobe Commerce as a Cloud Service](https://experienceleague.adobe.com/es/docs/commerce/cloud-service/release-notes)
+- [Adobe Commerce Optimizer](https://experienceleague.adobe.com/es/docs/commerce/optimizer/release-notes)
+
+>[!ENDSHADEBOX]
 
 >[!TIP]
 >
@@ -53,7 +62,7 @@ Utilice la siguiente tabla para buscar notas de la versión e información impor
             <li><a href="https://experienceleague.adobe.com/docs/commerce/catalog-service/release-notes.html?lang=es">Servicio de catálogo</a></li>
             <li><a href="https://experienceleague.adobe.com/es/docs/commerce/data-connection/release-notes">Conector de Experience Platform</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce/live-search/release-notes.html?lang=es">Live Search</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce/payment-services/release-notes.html?lang=es">Servicios de pago</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce/payment-services/release-notes.html">Servicios de pago</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce/product-recommendations/release-notes.html?lang=es">Recomendaciones de productos</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html?lang=es">Conector de servicios</a></li>
           </ul>
