@@ -14,7 +14,7 @@ feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 393900188a9b3c08184a84665d32890f09703d35
+source-git-commit: 3eff1670dd536175d4905d386027674431831ae8
 workflow-type: tm+mt
 source-wordcount: 409
 ht-degree: 0%
@@ -40,7 +40,7 @@ QPT v1.1.80 incluye los siguientes parches:
 1. **ACP2E-4626**: corrige el problema donde algunos archivos de Storefront JavaScript se solicitaron y ejecutaron dos veces, causando cargas duplicadas intermitentes y comportamiento inestable.
 1. **ACP2E-4653**: corrige el problema en el que el ámbito de atributo de condición **[!UICONTROL Cart Price Rule]** para **[!UICONTROL Category (Parent Only)]** y **[!UICONTROL Category (Children Only)]** no se expone al recuperar o actualizar reglas a través de la API REST.
 1. **ACP2E-4808**: corrige el problema por el que el atributo Weight de la página de productos de la tienda muestra únicamente un valor numérico sin procesar en la sección **[!UICONTROL Additional Information]** o **[!UICONTROL More Information]** sin la unidad de medida configurada (libras o kg).
-1. **ACP2E-4156**: corrige el problema en el cual la validación de direcciones de envío en la API de REST no cumple la configuración de atributo definida en [!UICONTROL Admin].
+1. **[ACP2E-4156](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4156.md)**: corrige el problema en el que la validación de la dirección de envío en la API [!DNL REST] no cumple la configuración de atributo definida en Administración.
 1. **ACP2E-4813**: soluciona el problema en el que los métodos de envío de USPS no están disponibles al realizar el cierre de compra y las estimaciones de envío son incorrectas para determinados productos, incluidos los pedidos que se dividen en varios paquetes.
 1. **ACSD-53502**: corrige el problema en el que **[!UICONTROL Add to Cart]** produce un error intermitente en la tienda de iOS [!DNL Safari] debido a llamadas recursivas al script de supervisión de New Relic, lo que provoca que la página se vuelva a cargar.
 
