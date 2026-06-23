@@ -3,7 +3,7 @@ title: Firma de contenido estático e invalidación de caché del explorador
 description: Descubra cómo funciona la firma de contenido estático en Adobe Commerce para invalidar la caché del explorador para los recursos estáticos. Descubra cómo habilitar y configurar esta función.
 feature: Configuration, Cache, SCD
 exl-id: b54ceea2-b3a1-4dbb-ba87-743f2af0d2fb
-badgePaas: label="PaaS" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce en proyectos en la nube y locales."
+badgePaas: label="PaaS" type="Informative" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce en proyectos en la nube y locales."
 autotag-review: '2026-06-22T21:48:08.334Z'
 TQID: 'https://experienceleague.adobe.com/vagWBVnjIS7tjnwVE5Dk56VDmPtbPgjsNVLBHSlOc-s'
 product_v2:
@@ -51,7 +51,7 @@ Esto cambia la dirección URL de los archivos estáticos y fuerza al explorador 
 
 Commerce habilita esta función de forma predeterminada y Adobe recomienda mantenerla habilitada para evitar problemas relacionados con los exploradores que usan recursos estáticos antiguos.
 
-La configuración para la firma de contenido estático se encuentra en [**[!UICONTROL Stores]**> Configuración > Configuración >**[!UICONTROL Advanced]**>**[!UICONTROL Developer]**>**[!UICONTROL Static Files Settings]**](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/developer-tools#static-file-signatures).
+La configuración para la firma de contenido estático se encuentra en [**[!UICONTROL Stores]**> Configuración > Configuración >**[!UICONTROL Advanced]**>**[!UICONTROL Developer]**>**[!UICONTROL Static Files Settings]**](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/tools/developer-tools#static-file-signatures).
 
 - **Solo local**: esta configuración está disponible si el sitio es **no** en [modo de producción](../bootstrap/application-modes.md#production-mode).
 - **Cloud**: esta configuración está oculta porque el modo de producción se aplica estrictamente; por lo tanto, debe utilizar la línea de comandos como se muestra a continuación.

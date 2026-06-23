@@ -3,7 +3,7 @@ title: Configuración de nginx para el almacenamiento en caché de barniz
 description: Aprenda a configurar el servidor web para que funcione con el almacenamiento en caché de Varnish para Adobe Commerce. Descubra los requisitos de configuración e instalación de puertos.
 feature: Configuration, Cache, Install, Logs
 exl-id: b31179ef-3c0e-4a6b-a118-d3be1830ba4e
-badgePaas: label="En las instalaciones" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos locales de Adobe Commerce."
+badgePaas: label="En las instalaciones" type="Informative" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos locales de Adobe Commerce."
 autotag-review: '2026-06-22T21:49:41.837Z'
 TQID: 'https://experienceleague.adobe.com/0vOg86gRkST8CZGhdIESzhld63HQ5IUlO4go-Hgw9Xs'
 product_v2:

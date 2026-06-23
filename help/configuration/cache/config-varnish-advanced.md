@@ -3,7 +3,7 @@ title: Configuración avanzada de barniz
 description: Aprenda a configurar las funciones avanzadas de Barniz para Adobe Commerce, incluidas las comprobaciones de estado, la gracia y los modos de santo. Descubra las técnicas de optimización de VCL.
 feature: Configuration, Cache
 exl-id: 178bd675-6ed0-40cc-9455-08a11b32c054
-badgePaas: label="En las instalaciones" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos locales de Adobe Commerce."
+badgePaas: label="En las instalaciones" type="Informative" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos locales de Adobe Commerce."
 product_v2:
   - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
   - id: eadea719-cf89-469b-a6fd-a236a7138047

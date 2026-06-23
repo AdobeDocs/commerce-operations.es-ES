@@ -3,7 +3,7 @@ title: Verificar configuración de barniz
 description: Aprenda a realizar la verificación final de la configuración de Barniz con Adobe Commerce. Descubra los pasos de prueba y las técnicas de solución de problemas.
 feature: Configuration, Cache
 exl-id: 01f28c93-75cd-4969-9142-b8dac0aa2adb
-badgePaas: label="En las instalaciones" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos locales de Adobe Commerce."
+badgePaas: label="En las instalaciones" type="Informative" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos locales de Adobe Commerce."
 product_v2:
   - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
   - id: eadea719-cf89-469b-a6fd-a236a7138047
@@ -98,4 +98,4 @@ Asegúrese de que el directorio `<magento_root>/var/page_cache` esté vacío:
 
 >[!TIP]
 >
->Si encuentra errores 503 (Error de recuperación de servidor), consulte [Solución de problemas 503 (Servicio no disponible) errores](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-503-errors.html) en el _Centro de ayuda de Adobe Commerce_.
+>Si encuentra errores 503 (Error de recuperación de servidor), consulte [Solución de problemas 503 (Servicio no disponible) errores](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshooting-503-errors.html?lang=es) en el _Centro de ayuda de Adobe Commerce_.
