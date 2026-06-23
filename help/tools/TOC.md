@@ -1059,6 +1059,6 @@ ht-degree: 0%
       - [Datos que requieren una migración manual](data-migration-tool/migrate-data/manual.md)
       - [Pasos de la migración posterior a los datos](data-migration-tool/migrate-data/post-migration.md)
    - Recursos {#resources}
-      - [Resolución de problemas](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html)
+      - [Resolución de problemas](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html?lang=es)
       - [Changelog](https://github.com/magento/data-migration-tool/blob/2.4/CHANGELOG.md)
-- [Volver a Guías operativas](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
+- [Volver a Guías operativas](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=es)
