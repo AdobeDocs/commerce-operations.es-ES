@@ -1,56 +1,92 @@
 ---
-title: Configurar el servidor web para el almacenamiento en caché de barniz
+title: Configuración de nginx para el almacenamiento en caché de barniz
 description: Aprenda a configurar el servidor web para que funcione con el almacenamiento en caché de Varnish para Adobe Commerce. Descubra los requisitos de configuración e instalación de puertos.
 feature: Configuration, Cache, Install, Logs
 exl-id: b31179ef-3c0e-4a6b-a118-d3be1830ba4e
-source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
+badgePaas: label="En las instalaciones" type="Informative" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos locales de Adobe Commerce."
+autotag-review: '2026-06-22T21:49:41.837Z'
+TQID: 'https://experienceleague.adobe.com/0vOg86gRkST8CZGhdIESzhld63HQ5IUlO4go-Hgw9Xs'
+product_v2:
+  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: c8faa589c9e9d1dbc01863d90aad5f91b11c0140
 workflow-type: tm+mt
-source-wordcount: '769'
+source-wordcount: 806
 ht-degree: 0%
 
 ---
 
-# Configurar el servidor web para el almacenamiento en caché de Barniz
+# Configuración de nginx para el almacenamiento en caché de Varnish {#configure-web-server-for-varnish-caching}
 
-Configure el servidor web para que escuche en un puerto que no sea el puerto predeterminado 80, ya que Varnish responde directamente a las solicitudes HTTP entrantes, no al servidor web.
+Cuando Varnish se utiliza como caché de página completa delante de Adobe Commerce, Varnish generalmente escucha en el puerto HTTP público y reenvía solicitudes a nginx en un puerto back-end no predeterminado como 8080. Actualice la configuración del sitio nginx para su servidor de origen de Commerce para escuchar en el puerto back-end que utilizará Varnish.
+
+{{varnish-config-cloud}}
 
 Las siguientes secciones utilizan el puerto 8080 como ejemplo.
 
-**Para cambiar el puerto de escucha Apache 2.4**:
+**Cambiar el puerto de escucha nginx para el servidor de origen de Commerce**:
 
-1. Abra `/etc/httpd/conf/httpd.conf` en un editor de texto.
-1. Busque la directiva `Listen`.
-1. Cambie el valor del puerto de escucha a `8080`. (Puede utilizar cualquier puerto de escucha disponible).
-1. Guarde los cambios en `httpd.conf` y salga del editor de texto.
+1. Abra la configuración del sitio de nginx para su servidor de origen de Adobe Commerce en un editor de texto.
+
+La ubicación depende del sistema operativo y del diseño de nginx. Por ejemplo, Ubuntu usa a menudo un archivo bajo `/etc/nginx/sites-available/`.
+
+1. En el bloque `server` para el sitio Commerce, cambie la directiva `listen` del puerto HTTP público al puerto back-end que Varnish usará para llegar a nginx.
+
+   Por ejemplo, cambie
+
+   ```conf
+   server {
+       listen 80;
+       server_name example.com;
+       root /var/www/html/magento2;
+       include /var/www/html/magento2/nginx.conf.sample;
+   }
+   ```
+
+   hasta:
+
+   ```conf
+   server {
+       listen 8080;
+       server_name example.com;
+       root /var/www/html/magento2;
+       include /var/www/html/magento2/nginx.conf.sample;
+   }
+   ```
+
+1. Guarde el archivo.
+
+1. Compruebe la configuración de nginx:
+
+   ```shell
+   nginx -t
+   ```
+
+1. Reiniciar nginx:
+
+   ```shell
+   systemctl restart nginx
+   ```
 
 ## Modifique la configuración del sistema de barniz
 
-Para modificar la configuración del sistema de barniz:
+Después de actualizar nginx para escuchar en el puerto back-end, configure Varnish para reenviar solicitudes a ese host y puerto. Por ejemplo:
 
-1. Como usuario con privilegios de `root`, abra el archivo de configuración de Desvanecer en un editor de texto:
-
-   - CentOS 6: `/etc/sysconfig/varnish`
-   - CentOS 7: `/etc/varnish/varnish.params`
-   - Debian: `/etc/default/varnish`
-   - Ubuntu: `/etc/default/varnish`
-
-1. Establezca el puerto de escucha de barniz en 80:
-
-   ```conf
-   VARNISH_LISTEN_PORT=80
-   ```
-
-   Para Varnish 4.x, asegúrese de que DAEMON_OPTS contiene el puerto de escucha correcto para el parámetro `-a` (incluso si VARNISH_LISTEN_PORT está establecido en el valor correcto):
-
-   ```conf
-   DAEMON_OPTS="-a :80 \
-      -T localhost:6082 \
-      -f /etc/varnish/default.vcl \
-      -S /etc/varnish/secret \
-      -s malloc,256m"
-   ```
-
-1. Guarde los cambios en el fichero de configuración de Barniz y salga del editor de texto.
+```conf
+backend default {
+    .host = "192.0.2.55";
+    .port = "8080";
+}
+```
 
 ### Modificación del VCL predeterminado
 
@@ -80,7 +116,7 @@ Para configurar mínimamente el barniz:
 
 1. Reemplace el valor de `.port` por el puerto de escucha del servidor web (8080 en este ejemplo).
 
-   Ejemplo: Apache está instalado en el host 192.0.2.55 y Apache está escuchando en el puerto 8080:
+   Ejemplo: nginx está instalado en el host 192.0.2.55 y escucha en el puerto 8080:
 
    ```conf
    backend default {
@@ -91,7 +127,7 @@ Para configurar mínimamente el barniz:
 
    >[!INFO]
    >
-   >Si Varnish y Apache se están ejecutando en el mismo host, Adobe recomienda que utilice una dirección IP o un nombre de host y no `localhost`.
+   >Si Varnish y nginx se ejecutan en el mismo host, Adobe recomienda que utilice una dirección IP o un nombre de host y no `localhost`.
 
 1. Guarde los cambios en `default.vcl` y salga del editor de texto.
 
@@ -162,11 +198,11 @@ Busque el siguiente resultado en particular:
 ```text
 tcp        0      0 0.0.0.0:80                  0.0.0.0:*                   LISTEN      32614/varnishd
 tcp        0      0 127.0.0.1:58484             0.0.0.0:*                   LISTEN      32604/varnishd
-tcp        0      0 :::8080                     :::*                        LISTEN      26822/httpd
+tcp        0      0 :::8080                     :::*                        LISTEN      26822/nginx
 tcp        0      0 ::1:48509                   :::*                        LISTEN      32604/varnishd
 ```
 
-El anterior muestra Varnish ejecutándose en el puerto 80 y Apache ejecutándose en el puerto 8080.
+La anterior muestra Varnish ejecutándose en el puerto 80 y nginx ejecutándose en el puerto 8080.
 
 Si no ve el resultado de `varnishd`, asegúrese de que Varnish se esté ejecutando.
 

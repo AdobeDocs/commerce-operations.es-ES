@@ -3,21 +3,38 @@ title: Configurar Redis para el almacenamiento de sesión
 description: Obtenga información sobre cómo configurar Redis para el almacenamiento de sesiones en Adobe Commerce. Descubra la configuración de CLI, los parámetros de sesión y las técnicas de verificación de conexiones.
 feature: Configuration, Cache
 exl-id: f93f500d-65b0-4788-96ab-f1c3d2d40a38
-source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
+badgePaas: label="En las instalaciones" type="Informative" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos locales de Adobe Commerce."
+autotag-review: '2026-06-22T21:56:59.687Z'
+TQID: 'https://experienceleague.adobe.com/deiikp11GlXtMJFkhT7DhgguCYFkplQgr2fYm8MMN7I'
+product_v2:
+  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: ab2a9ef6d4c3ed692f4a6a66323ab5e3d5c6673a
 workflow-type: tm+mt
-source-wordcount: '835'
+source-wordcount: 859
 ht-degree: 1%
 
 ---
 
 # Configurar Redis para el almacenamiento de sesión
 
->[!IMPORTANT]
->
->Debe [instalar Redis](config-redis.md#install-redis) antes de continuar.
-
+{{cloud-cache-config}}
 
 Commerce ahora proporciona opciones de línea de comandos para configurar el almacenamiento de sesión de Redis. En versiones anteriores, editó el archivo `<Commerce install dir>app/etc/env.php`. La línea de comandos proporciona validación y es el método de configuración recomendado, pero aún puede editar el archivo `env.php`.
+
+>[!IMPORTANT]
+>
+>Para poder configurar el almacenamiento de sesión, debe tener [Redis instalado](config-redis.md#install-redis).
 
 Ejecute el comando `setup:config:set` y especifique los parámetros específicos de Redis.
 

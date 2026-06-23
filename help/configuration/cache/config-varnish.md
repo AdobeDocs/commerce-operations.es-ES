@@ -3,16 +3,31 @@ title: Configuración y uso de Barniz
 description: Aprenda a configurar y utilizar el almacenamiento en caché de Varnish para Adobe Commerce. Descubra las técnicas de aceleración HTTP, almacenamiento de archivos y optimización de rendimiento.
 feature: Configuration, Cache
 exl-id: 57614878-e349-43bb-b22b-1aa321907be1
-source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
+autotag-review: '2026-06-22T21:50:49.341Z'
+TQID: 'https://experienceleague.adobe.com/BsUTkhb2QhntUOT3EC181zdsQjqk8Dw0T5Iac0LS318'
+product_v2:
+  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2:
+  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 8cbff72c3b765c6ff85a34a3ec3d2f58b52bb9c3
 workflow-type: tm+mt
-source-wordcount: '1089'
+source-wordcount: 1077
 ht-degree: 0%
 
 ---
 
 # Configuración y uso de Barniz
 
-[Varnish Cache](https://www.varnish.org/) es un acelerador de aplicaciones web de código abierto (también conocido como _acelerador HTTP_ o _proxy inverso HTTP de almacenamiento en caché_). Varnish almacena (o almacena en caché) archivos o fragmentos de archivos en la memoria, lo que permite a Varnish reducir el tiempo de respuesta y el consumo de ancho de banda de la red en solicitudes futuras y equivalentes. A diferencia de los servidores web como Apache y nginx, Varnish fue diseñado para usarse exclusivamente con el protocolo HTTP.
+[Varnish Cache](https://www.varnish.org/) es un acelerador de aplicaciones web de código abierto (también conocido como _acelerador HTTP_ o _proxy inverso HTTP de almacenamiento en caché_). Varnish almacena (o almacena en caché) archivos o fragmentos de archivos en la memoria, lo que permite a Varnish reducir el tiempo de respuesta y el consumo de ancho de banda de la red en solicitudes futuras y equivalentes. A diferencia de los servidores web como nginx, Varnish fue diseñado para usarse exclusivamente con el protocolo HTTP.
 
 [Requisitos del sistema](../../installation/system-requirements.md) enumera las versiones compatibles de Barnish.
 
@@ -53,9 +68,7 @@ El proceso puede resumirse de la siguiente manera:
 
 >[!NOTE]
 >
->- Salvo que se indique lo contrario, debe escribir todos los comandos mencionados en este tema como usuario con privilegios de `root`.
->
->- Este tema está escrito para Varnish en CentOS y Apache 2.4. Si está configurando Barniz en un entorno diferente, algunos comandos pueden ser diferentes. Consulte la documentación de Barniz para obtener más información.
+>Salvo que se indique lo contrario, debe escribir todos los comandos mencionados en este tema como usuario con privilegios de `root`.
 
 ## Problemas conocidos
 
@@ -88,11 +101,10 @@ Sabemos de los siguientes problemas con Varnish:
 
 ## Descripción general del almacenamiento en caché de Varnish
 
-El almacenamiento en caché de barniz funciona con Commerce mediante:
+En una implementación típica basada en nginx, Varnish acepta el tráfico HTTP entrante en el puerto 80 y reenvía solicitudes a nginx en un puerto back-end como 8080. Adobe Commerce proporciona `nginx.conf.sample` para el servidor web de origen y genera el barniz `default.vcl` del administrador.
 
-- [`nginx.conf.sample`](https://github.com/magento/magento2/blob/2.4/nginx.conf.sample) del repositorio de GitHub de Magento 2
-- `.htaccess` archivo de configuración distribuido para Apache proporcionado con Commerce
-- Se ha generado la configuración de `default.vcl` para Varnish usando [Admin](../cache/configure-varnish-commerce.md)
+- [`nginx.conf.sample`](https://github.com/magento/magento2/blob/2.4/nginx.conf.sample) proporcionado con Adobe Commerce
+- `default.vcl` se generó a partir de [Admin](../cache/configure-varnish-commerce.md)
 
 >[!INFO]
 >
@@ -114,7 +126,7 @@ En esta sección se utiliza un inspector del explorador para mostrar cómo se en
 
 En la siguiente figura se muestra un ejemplo utilizando un inspector del explorador:
 
-![La primera vez que se solicita un objeto almacenable en caché, Varnish lo envía al explorador](../../assets/configuration/varnish-apache-first-visit.png)
+![La primera vez que se solicita un objeto almacenable en caché, Varnish lo envía al explorador](../../assets/configuration/varnish-webserver-first-visit.png)
 
 El ejemplo anterior muestra una solicitud para la página principal de la tienda (`m2_ce_my`). Los recursos CSS y JavaScript se almacenan en la caché del explorador del cliente.
 
@@ -126,7 +138,7 @@ El ejemplo anterior muestra una solicitud para la página principal de la tienda
 
 Si el mismo explorador vuelve a solicitar la misma página, estos recursos se entregan desde la caché del explorador local, como se muestra en la siguiente ilustración.
 
-![La próxima vez que se solicite el mismo objeto, los recursos se cargarán desde la caché del explorador local](../../assets/configuration/varnish-apache-second-visit.png)
+![La próxima vez que se solicite el mismo objeto, los recursos se cargarán desde la caché del explorador local](../../assets/configuration/varnish-webserver-second-visit.png)
 
 Tenga en cuenta la diferencia en el tiempo de respuesta entre la primera y la segunda solicitud. De nuevo, los recursos estáticos tienen un código de respuesta 200 (OK) porque se envían desde la caché local por primera vez.
 
