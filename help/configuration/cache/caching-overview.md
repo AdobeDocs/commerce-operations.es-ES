@@ -3,16 +3,23 @@ title: Información general de almacenamiento en caché y opciones de configurac
 description: Obtenga información acerca del almacenamiento en caché en Adobe Commerce, incluido el almacenamiento back-end, la configuración de front-end y el almacenamiento en caché de página completa con Varnish, Redis, Valkey y caché L2.
 feature: Configuration, Cache
 exl-id: 6effa069-c043-411a-b161-01210be17391
-source-git-commit: 9cd0f2a84772e2d68fd15a00651216abfa9ec91c
+autotag-review: '2026-06-22T20:28:12.484Z'
+TQID: 'https://experienceleague.adobe.com/oDoZ1o2IWXsDTo84XQygWZYVmfVHWbk-CuqaU47laU4'
+product_v2: id: b974b164-8a4e-43b8-a9e2-8e67ec131677id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: dbc1f6d0edff87130604d4762477ee5892a7aafc
 workflow-type: tm+mt
-source-wordcount: '544'
+source-wordcount: 589
 ht-degree: 0%
 
 ---
 
 # Información general de almacenamiento en caché y opciones de configuración
 
-Adobe Commerce se basa en una arquitectura de almacenamiento en caché de varios niveles para reducir la carga de la base de datos, minimizar el procesamiento redundante y acelerar la entrega de páginas. A nivel de aplicación, Commerce mantiene más de una docena de [tipos de caché](../cli/manage-cache.md#clean-and-flush-cache-types), como configuración, diseño, HTML de bloques y colecciones, cada uno de los cuales se puede enrutar a un servidor de almacenamiento dedicado como [Redis](config-redis.md) o [Valkey](config-valkey.md). Para el almacenamiento en caché de páginas completas, Adobe recomienda encarecidamente [Varnish](config-varnish.md), un acelerador HTTP que proporciona páginas en caché directamente desde la memoria. Capas adicionales como [almacenamiento en caché L2](level-two-cache.md) y [firma de contenido estático](static-content-signing.md) mejoran aún más el rendimiento para implementaciones de varios nodos y de alto tráfico.
+Adobe Commerce se basa en una arquitectura de almacenamiento en caché de varios niveles para reducir la carga de la base de datos, minimizar el procesamiento redundante y acelerar la entrega de páginas. A nivel de aplicación, Commerce mantiene más de una docena de [tipos de caché](../cli/manage-cache.md#clean-and-flush-cache-types), como configuración, diseño, HTML de bloques y colecciones, cada uno de los cuales se puede enrutar a un servidor de almacenamiento dedicado como [Redis](config-redis.md) o [Valkey](config-valkey.md). Para el almacenamiento en caché de página completa en implementaciones locales, Adobe recomienda [Varnish](config-varnish.md). Las implementaciones de Commerce en la nube utilizan Fastly. Capas adicionales como [almacenamiento en caché L2](level-two-cache.md) y [firma de contenido estático](static-content-signing.md) mejoran aún más el rendimiento para implementaciones de varios nodos y de alto tráfico.
 
 Esta guía explica cómo funciona cada capa de almacenamiento en caché y muestra cómo configurar front-end, backends y opciones avanzadas para que coincidan con los requisitos de implementación.
 
@@ -26,7 +33,7 @@ Un back-end de caché es el mecanismo de almacenamiento subyacente para los dato
 
 ## Almacenamiento en caché de página completa con Barniz
 
-[Varnish Cache](config-varnish.md) es un acelerador HTTP que almacena en caché páginas completas en la memoria. Adobe recomienda encarecidamente Varnish para los entornos de producción porque es considerablemente más rápido que la memoria caché integrada de página completa.
+[Varnish Cache](config-varnish.md) es un acelerador HTTP que almacena en caché páginas completas en la memoria. Para entornos de producción locales, Adobe recomienda encarecidamente Varnish, ya que es considerablemente más rápido que la caché integrada de página completa. Commerce en entornos de nube usa [Fastly](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly) para el almacenamiento en caché de página completa en lugar de Varnish.
 
 >[!NOTE]
 >
@@ -51,12 +58,16 @@ Un back-end de caché es el mecanismo de almacenamiento subyacente para los dato
 
 ## Opciones de configuración
 
-La configuración de caché se almacena en dos archivos:
+Para la asignación de front-end-to-type y la sintaxis de configuración de caché:
+
+**Local**: la configuración de la caché se almacena en dos archivos:
 
 - `<magento_root>/app/etc/di.xml`: la configuración de inyección de dependencia global. Modifique este archivo para cambiar el front-end de caché `default` proporcionado.
 - `<magento_root>/app/etc/env.php`: configuración específica del entorno. Modifique este archivo para configurar los front-end de caché personalizados. Este archivo anula la configuración equivalente de `di.xml`.
 
-Para obtener más información sobre la asignación de front-end-to-type y la sintaxis de configuración de caché, consulte:
+Para obtener más información, consulte:
 
 - [Configurar front-end de caché](cache-types.md): asocie un front-end de caché con tipos de caché específicos
-- [Opciones de servidor de caché](cache-options.md) — Referencia de la opción de servidor
+- [Opciones de servidor de caché](cache-options.md): referencia de opción de servidor
+
+**Adobe Commerce en la nube**: configure el almacenamiento en caché con `CACHE_CONFIGURATION` en `.magento.env.yaml`. Consulte [Prácticas recomendadas para la configuración de los servicios Redis y Valkey](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md).
