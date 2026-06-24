@@ -62,7 +62,7 @@ La siguiente tabla proporciona notas de la versión e información importante pa
             <li><a href="https://experienceleague.adobe.com/docs/commerce/catalog-service/release-notes.html?lang=es">Servicio de catálogo</a></li>
             <li><a href="https://experienceleague.adobe.com/es/docs/commerce/data-connection/release-notes">Conector de Experience Platform</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce/live-search/release-notes.html?lang=es">Live Search</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce/payment-services/release-notes.html">Servicios de pago</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce/payment-services/release-notes.html?lang=es">Servicios de pago</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce/product-recommendations/release-notes.html?lang=es">Recomendaciones de productos</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html?lang=es">Conector de servicios</a></li>
           </ul>
