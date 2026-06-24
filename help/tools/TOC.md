@@ -2,9 +2,9 @@
 user-guide-title: Herramientas
 user-guide-description: Obtenga información sobre las distintas herramientas que puede utilizar con Adobe Commerce, sus usos, el proceso de instalación y cómo obtener acceso.
 feature: Configuration
-source-git-commit: dace5fedf8e247c3391a8ffae1b2050f3e37367e
+source-git-commit: 08101f36665d77f807386f261d39dee1e379a8b1
 workflow-type: tm+mt
-source-wordcount: '10174'
+source-wordcount: '10185'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ ht-degree: 0%
    - [Alertas administradas para Adobe Commerce: alerta de advertencia de CPU](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-cpu-warning-alert.md)
 - Herramienta Parches de calidad {#quality-patches-tool}
    - [[!DNL Quality Patches Tool]: herramienta de autoservicio para parches de calidad](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)
-   - [[!DNL Quality Patches Tool]: buscar parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
+   - [[!DNL Quality Patches Tool]: buscar parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es){target="_blank"}
    - [Uso](quality-patches-tool/usage.md)
    - [Notas de la versión](quality-patches-tool/release-notes.md)
    - Parches disponibles en la herramienta Parches de calidad {#patches-available-in-qpt}
@@ -1009,6 +1009,7 @@ ht-degree: 0%
          - [ACP2E-4601: Volver a guardar una operación de autorización de pago con autorreferencia parent_id y déclencheur un bucle/OOM infinito](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4601.md)
       - Versión 1.1.80 {#v1-1-80}
          - [Información general:  [!DNL Quality Patches Tool] (QPT) v1.1.80](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/overview.md)
+         - [ACP2E-4808: Visualización del peso del producto sin unidad de medida en la tienda](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4808.md)
          - [ACP2E-4533: Las imágenes de marcador de posición no se pueden cargar en la tienda cuando la URL incluye el código de tienda](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4533.md)
          - [ACP2E-4156: [!DNL REST] La validación de la dirección de envío de API ignora la configuración del atributo de administración](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4156.md)
    - [Comprobar parche para el problema de Adobe Commerce con la herramienta Parches de calidad](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
