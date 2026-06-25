@@ -2,9 +2,9 @@
 user-guide-title: Herramientas
 user-guide-description: Obtenga información sobre las distintas herramientas que puede utilizar con Adobe Commerce, sus usos, el proceso de instalación y cómo obtener acceso.
 feature: Configuration
-source-git-commit: 016a56af24e8e4ff127c54713e5fa45ab9fca826
+source-git-commit: f1c04fe69abdcdbb425d4488e3095baa2debc274
 workflow-type: tm+mt
-source-wordcount: '10196'
+source-wordcount: '10206'
 ht-degree: 0%
 
 ---
@@ -1009,6 +1009,7 @@ ht-degree: 0%
          - [ACP2E-4601: Volver a guardar una operación de autorización de pago con autorreferencia parent_id y déclencheur un bucle/OOM infinito](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4601.md)
       - Versión 1.1.80 {#v1-1-80}
          - [Información general:  [!DNL Quality Patches Tool] (QPT) v1.1.80](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/overview.md)
+         - [ACP2E-4653: Condiciones del ámbito de la categoría de regla de precio del carro de compras que faltan en la API  [!DNL REST] &#x200B;](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4653.md)
          - [ACP2E-4472: Presupuesto nulo creado mediante el flujo Iniciar sesión como cliente](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4472.md)
          - [ACP2E-4808: Visualización del peso del producto sin unidad de medida en la tienda](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4808.md)
          - [ACP2E-4533: Las imágenes de marcador de posición no se pueden cargar en la tienda cuando la URL incluye el código de tienda](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4533.md)
