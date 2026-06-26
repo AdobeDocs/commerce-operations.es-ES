@@ -6,17 +6,12 @@ role: Admin, Developer
 type: Troubleshooting
 autotag-review: '2026-06-11T01:10:37.916Z'
 TQID: 'https://experienceleague.adobe.com/q2sNWUJQCm4eRUP8RusytBAqQoscU4F9qDtDIeNmm6E'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 1816dfaa5145de416decf64482ed81ee82c7448d
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: c1256247-af4b-46d8-9dca-0c654ecfa157id: d1e21356-0064-4f48-9089-16e3f0dbd2a6id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: 9c0c1b7124793e2f8b9b9e4296ba42315557ac61
 workflow-type: tm+mt
-source-wordcount: 463
+source-wordcount: 541
 ht-degree: 0%
 
 ---
@@ -39,6 +34,9 @@ QPT v1.1.80 incluye los siguientes parches:
 1. **[ACP2E-4533](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4533.md)**: corrige el problema por el que las imágenes de marcador de posición no se cargan en la tienda cuando se incluye un código de tienda en la dirección URL.
 1. **ACP2E-4610**: Corrige el problema en el que el trabajo cron de `sales_clean_quotes` tiene problemas de rendimiento.
 1. **ACP2E-4615**: corrige el problema en el que los reembolsos de pedidos en línea fallan con un error de PayPal que indica que *la puerta de enlace de PayPal rechaza la solicitud. Error interno.*.
+1. **[ACP2E-4626](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4626.md)**: corrige el problema donde algunos archivos de Storefront JavaScript se solicitaron y ejecutaron dos veces, causando cargas duplicadas intermitentes y comportamiento inestable.
+1. **ACP2E-4653**: corrige el problema en el que el ámbito de atributo de condición **[!UICONTROL Cart Price Rule]** para **[!UICONTROL Category (Parent Only)]** y **[!UICONTROL Category (Children Only)]** no se expone al recuperar o actualizar reglas a través de la API REST.
+1. **ACP2E-4808**: corrige el problema por el que el atributo Weight de la página de productos de la tienda muestra únicamente un valor numérico sin procesar en la sección **[!UICONTROL Additional Information]** o **[!UICONTROL More Information]** sin la unidad de medida configurada (libras o kg).
 1. **ACP2E-4626**: corrige el problema donde algunos archivos de Storefront JavaScript se solicitaron y ejecutaron dos veces, causando cargas duplicadas intermitentes y comportamiento inestable.
 1. **[ACP2E-4653](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4653.md)**: corrige el problema en el que el ámbito del atributo de condición de regla de precio de carro de compras para **[!UICONTROL Category (Parent Only)]** y **[!UICONTROL Category (Children Only)]** no se expone al recuperar o actualizar reglas a través de la API [!DNL REST].
 1. **[ACP2E-4808](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4808.md)**: corrige el problema por el que el atributo Weight de la página de productos de la tienda muestra únicamente un valor numérico sin procesar en la sección **[!UICONTROL Additional Information]** o **[!UICONTROL More Information]** sin la unidad de medida configurada (libras o kg).
