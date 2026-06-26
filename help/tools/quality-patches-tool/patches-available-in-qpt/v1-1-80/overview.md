@@ -14,9 +14,9 @@ feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 9c0c1b7124793e2f8b9b9e4296ba42315557ac61
+source-git-commit: f8a08611109d9c8e5e686e0c451b0a58ecc12e21
 workflow-type: tm+mt
-source-wordcount: 541
+source-wordcount: 596
 ht-degree: 0%
 
 ---
@@ -34,19 +34,22 @@ QPT v1.1.80 incluye los siguientes parches:
 1. **ACP2E-4493**: corrige el problema en el que la cuadrícula Archivo de pedidos de ventas muestra un estado de pedido incorrecto cuando la indexación asincrónica está habilitada.
 1. **ACP2E-4496**: corrige el problema en el que el trabajo cron de Analytics causa una degradación del rendimiento durante la ejecución, lo que da como resultado un rendimiento general del sistema mejorado.
 1. **ACP2E-4533**: corrige el problema por el cual las imágenes de marcador de posición no se cargan en la Tienda cuando se incluye un código de tienda en la dirección URL.
+1. **ACP2E-4552**: corrige el problema donde el estado de la compañía no se devuelve en la respuesta de GraphQL.
+1. **[ACP2E-4610](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4610.md)**: Corrige el problema en el que el trabajo cron de `sales_clean_quotes` tiene problemas de rendimiento.
 1. **[ACP2E-4552](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4552.md)**: corrige el problema en el que el estado de la compañía no se devuelve en la respuesta de GraphQL.
 1. **[ACP2E-4496](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4496.md)**: corrige el problema en el que el trabajo cron de Analytics causa una degradación del rendimiento durante la ejecución, lo que da como resultado un rendimiento general del sistema mejorado.
 1. **[ACP2E-4533](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4533.md)**: corrige el problema por el que las imágenes de marcador de posición no se cargan en la tienda cuando se incluye un código de tienda en la dirección URL.
 1. **ACP2E-4610**: Corrige el problema en el que el trabajo cron de `sales_clean_quotes` tiene problemas de rendimiento.
-1. **ACP2E-4615**: corrige el problema en el que los reembolsos de pedidos en línea fallan con un error de PayPal que indica que *la puerta de enlace de PayPal rechaza la solicitud. Error interno.*.
+1. **[ACP2E-4615](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4615.md)**: corrige el problema en el que los reembolsos de pedidos en línea fallan con un error de PayPal que indica que *la puerta de enlace de PayPal rechaza la solicitud. Error interno.*.
 1. **[ACP2E-4626](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4626.md)**: corrige el problema donde algunos archivos de Storefront JavaScript se solicitaron y ejecutaron dos veces, causando cargas duplicadas intermitentes y comportamiento inestable.
 1. **ACP2E-4653**: corrige el problema en el que el ámbito de atributo de condición **[!UICONTROL Cart Price Rule]** para **[!UICONTROL Category (Parent Only)]** y **[!UICONTROL Category (Children Only)]** no se expone al recuperar o actualizar reglas a través de la API REST.
 1. **ACP2E-4808**: corrige el problema por el que el atributo Weight de la página de productos de la tienda muestra únicamente un valor numérico sin procesar en la sección **[!UICONTROL Additional Information]** o **[!UICONTROL More Information]** sin la unidad de medida configurada (libras o kg).
+1. **[ACP2E-4813](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4813.md)**: soluciona el problema en el que los métodos de envío de USPS no están disponibles al realizar el cierre de compra y las estimaciones de envío son incorrectas para determinados productos, incluidos los pedidos que se dividen en varios paquetes.
 1. **ACP2E-4626**: corrige el problema donde algunos archivos de Storefront JavaScript se solicitaron y ejecutaron dos veces, causando cargas duplicadas intermitentes y comportamiento inestable.
 1. **[ACP2E-4653](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4653.md)**: corrige el problema en el que el ámbito del atributo de condición de regla de precio de carro de compras para **[!UICONTROL Category (Parent Only)]** y **[!UICONTROL Category (Children Only)]** no se expone al recuperar o actualizar reglas a través de la API [!DNL REST].
 1. **[ACP2E-4808](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4808.md)**: corrige el problema por el que el atributo Weight de la página de productos de la tienda muestra únicamente un valor numérico sin procesar en la sección **[!UICONTROL Additional Information]** o **[!UICONTROL More Information]** sin la unidad de medida configurada (libras o kg).
 1. **[ACP2E-4156](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4156.md)**: corrige el problema en el que la validación de la dirección de envío en la API [!DNL REST] no cumple la configuración de atributo definida en Administración.
 1. **ACP2E-4813**: soluciona el problema en el que los métodos de envío de USPS no están disponibles al realizar el cierre de compra y las estimaciones de envío son incorrectas para determinados productos, incluidos los pedidos que se dividen en varios paquetes.
-1. **ACSD-53502**: corrige el problema en el que **[!UICONTROL Add to Cart]** produce un error intermitente en la tienda de iOS [!DNL Safari] debido a llamadas recursivas al script de supervisión de New Relic, lo que provoca que la página se vuelva a cargar.
+1. **[ACSD-53502](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acsd-53502.md)**: corrige el problema en el que **[!UICONTROL Add to Cart]** produce un error intermitente en la tienda de iOS [!DNL Safari] debido a llamadas recursivas al script de supervisión de New Relic, lo que provoca que la página se vuelva a cargar.
 
 Utilice el menú de la izquierda para navegar a una página específica del parche.

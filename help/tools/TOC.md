@@ -2,9 +2,9 @@
 user-guide-title: Herramientas
 user-guide-description: Obtenga información sobre las distintas herramientas que puede utilizar con Adobe Commerce, sus usos, el proceso de instalación y cómo obtener acceso.
 feature: Configuration
-source-git-commit: 9c0c1b7124793e2f8b9b9e4296ba42315557ac61
+source-git-commit: f8a08611109d9c8e5e686e0c451b0a58ecc12e21
 workflow-type: tm+mt
-source-wordcount: '10248'
+source-wordcount: '10293'
 ht-degree: 0%
 
 ---
@@ -1009,6 +1009,10 @@ ht-degree: 0%
          - [ACP2E-4601: Volver a guardar una operación de autorización de pago con autorreferencia parent_id y déclencheur un bucle/OOM infinito](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4601.md)
       - Versión 1.1.80 {#v1-1-80}
          - [Información general:  [!DNL Quality Patches Tool] (QPT) v1.1.80](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/overview.md)
+         - [ACSD-53502: **[!UICONTROL Add to Cart]** produce un error intermitente en iOS [!DNL Safari] debido a la recursión del script New Relic](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acsd-53502.md)
+         - [ACP2E-4813: métodos de envío USPS no disponibles o incorrectos para pedidos de varios paquetes](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4813.md)
+         - [ACP2E-4615: los reembolsos de pedidos en línea de PayPal fallan con el error *La puerta de enlace de PayPal rechaza la solicitud. Error interno.*](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4615.md)
+         - [ACP2E-4610: Ejecución lenta de `/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4610.md/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4610.md/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4610.md2` cron](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4610.md)
          - [ACP2E-4626: Los archivos JavaScript de Storefront se cargan dos veces, lo que provoca cargas duplicadas y un comportamiento inestable](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4626.md)
          - [ACP2E-4552: La respuesta de GraphQL no devuelve el estado de la empresa](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4552.md)
          - [ACP2E-4496: Trabajo cron de Analytics degrada el rendimiento durante la ejecución](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4496.md)
