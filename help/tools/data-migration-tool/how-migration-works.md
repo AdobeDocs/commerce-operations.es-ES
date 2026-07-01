@@ -3,9 +3,9 @@ title: Funcionamiento de la migración de datos
 description: Obtenga información acerca del proceso de migración de datos entre Magento 1 y Magento 2, incluida la terminología, los diagramas de flujo de trabajo y los pasos.
 exl-id: 821492dc-ee5b-4c4a-9479-680ee8c5756d
 topic: Commerce, Migration
-source-git-commit: f9a135fc63574ccbecd3f564a87fc5c4ac03f009
+source-git-commit: 65ee7e84800c781577b1e210971a62b430d6300a
 workflow-type: tm+mt
-source-wordcount: '829'
+source-wordcount: '834'
 ht-degree: 0%
 
 ---
@@ -83,9 +83,8 @@ Encontrará más información sobre el desarrollo de extensiones para Magento 2 
 
 ### Temas y personalizaciones
 
-Magento 2 utiliza nuevos enfoques y tecnologías que ofrecen a los comerciantes una capacidad inigualable para crear experiencias de compra innovadoras y escalarlas a nuevos niveles. Para aprovechar estos avances, los desarrolladores deben realizar cambios en sus temáticas y personalizaciones. La documentación está disponible en línea para crear [temas](https://developer.adobe.com/commerce/frontend-core/guide/themes), [diseños](https://developer.adobe.com/commerce/frontend-core/guide/layouts/) y [personalizaciones](https://developer.adobe.com/commerce/frontend-core/guide/layouts/xml-manage) de Magento 2.
+Magento 2 utiliza nuevos enfoques y tecnologías que ofrecen a los comerciantes una capacidad inigualable para crear experiencias de compra innovadoras y escalarlas a nuevos niveles. Para aprovechar estos avances, los desarrolladores deben realizar cambios en sus temáticas y personalizaciones. La documentación está disponible en línea para crear [temas](https://developer.adobe.com/commerce/frontend-core/guide/themes/), [diseños](https://developer.adobe.com/commerce/frontend-core/guide/layouts/) y [personalizaciones](https://developer.adobe.com/commerce/frontend-core/guide/layouts/xml-manage) de Magento 2.
 
 ## Esfuerzos de migración
 
-Al igual que una actualización entre las versiones 1.x (por ejemplo, de la v1.12 a la v1.14), el nivel de esfuerzo para migrar de Magento 1 a Magento 2 depende de cómo haya creado el sitio y su nivel de personalización.
-Sin embargo, estamos mejorando constantemente [!DNL Data Migration Tool] (vea el [Changelog](https://github.com/magento/data-migration-tool/blob/2.3/CHANGELOG.md) para obtener más información); por lo que los esfuerzos de migración disminuyen continuamente.
+Al igual que una actualización entre las versiones 1.x (por ejemplo, de la v1.12 a la v1.14), el nivel de esfuerzo para migrar de Magento 1 a Magento 2 depende de cómo haya creado el sitio y su nivel de personalización.Sin embargo, estamos mejorando constantemente [!DNL Data Migration Tool] (vea el [Changelog](https://github.com/magento/data-migration-tool/blob/2.3/CHANGELOG.md) para obtener más información); por lo que los esfuerzos de migración disminuyen continuamente.
