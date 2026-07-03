@@ -40,7 +40,7 @@ Un back-end de caché es el mecanismo de almacenamiento subyacente para los dato
 
 ## Almacenamiento en caché de página completa con Barniz
 
-[Varnish Cache](config-varnish.md) es un acelerador HTTP que almacena en caché páginas completas en la memoria. Para entornos de producción locales, Adobe recomienda encarecidamente Varnish, ya que es considerablemente más rápido que la caché integrada de página completa. Commerce en entornos de nube usa [Fastly](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly) para el almacenamiento en caché de página completa en lugar de Varnish.
+[Varnish Cache](config-varnish.md) es un acelerador HTTP que almacena en caché páginas completas en la memoria. Para entornos de producción locales, Adobe recomienda encarecidamente Varnish, ya que es considerablemente más rápido que la caché integrada de página completa. Commerce en entornos de nube usa [Fastly](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/cdn/fastly) para el almacenamiento en caché de página completa en lugar de Varnish.
 
 >[!NOTE]
 >
