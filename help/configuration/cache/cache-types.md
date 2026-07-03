@@ -1,5 +1,5 @@
 ---
-title: Configurar front-end de caché
+title: Configurar tipos y frontend de caché
 description: Obtenga información sobre cómo definir front-end de caché y asociarlos a tipos de caché en Adobe Commerce. Descubra la sintaxis de configuración para env.php y di.xml.
 feature: Configuration, Cache
 exl-id: 67d4ba06-b48b-4e1a-a7a8-9830490dfe3d
@@ -16,18 +16,22 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: ae31702797c8754a719e5a5eb39a3924e723c87a
+source-git-commit: 7171e5abfad69ad0f2d3f4c4b5eb57c13d07feb4
 workflow-type: tm+mt
-source-wordcount: 454
-ht-degree: 0%
+source-wordcount: 507
+ht-degree: 1%
 
 ---
 
-# Configurar front-end de caché
+# Configurar tipos y front-end de caché
 
-Un front-end de caché es una interfaz entre Commerce y el back-end de almacenamiento de caché. Puede definir varios front-end, cada uno con una configuración de back-end diferente, y luego asignar [tipos de caché](../cli/manage-cache.md#clean-and-flush-cache-types) específicos a cada front-end.
+Un front-end de caché es una interfaz entre los tipos de caché de Commerce y el back-end de almacenamiento de caché. Puede definir varios front-end, cada uno con una configuración de back-end diferente, y luego asignar [tipos de caché](../cli/manage-cache.md#clean-and-flush-cache-types) específicos a cada front-end.
 
-Esto resulta útil cuando desea utilizar diferentes backends o configuraciones de caché para diferentes tipos de datos en caché. Por ejemplo, es posible que desee el almacenamiento en caché de `full_page` en una base de datos Redis dedicada mientras utiliza una base de datos independiente para el almacenamiento en caché de `default`.
+Utilice esta relación para decidir dónde almacena datos cada tipo de caché:
+
+`cache type` -> `cache frontend` -> `cache backend`
+
+Esto resulta útil cuando desea utilizar diferentes backends o configuraciones de caché para diferentes tipos de datos en caché. Por ejemplo, podría asignar el tipo de caché `full_page` a un front-end `page_cache` que use una base de datos de Valkey dedicada, mientras que otros tipos de caché usan el front-end `default`.
 
 {{cloud-cache-config}}
 
@@ -71,7 +75,8 @@ Donde:
 
 >[!TIP]
 >
->**Implementación moderna de Symfony Cache (2.4.9+):** A partir de Commerce 2.4.9, puede usar tipos de backend simplificados como `redis`, `valkey` o `file` con la implementación moderna de Symfony Cache. Consulte [Usar Redis para la caché predeterminada](redis-pg-cache.md) y [Usar Valkey para la caché predeterminada](valkey-pg-cache.md) para obtener más información.
+>Adobe Commerce 2.4.9 y versiones posteriores utilizan nombres de tipo de back-end simplificados, como `valkey` o `file`, con la implementación de Symfony Cache. Consulte [Opciones de back-end de caché](cache-options.md) para ver ejemplos de back-end e instrucciones específicas de la versión.
+
 
 ### Paso 2: Configurar las opciones de front-end y back-end
 
@@ -94,8 +99,7 @@ Puede especificar opciones de configuración de caché de front-end y back-end e
 
 Donde:
 
-- `<frontend_type>`: el tipo de caché de nivel inferior de front-end. Especifique un nombre de clase compatible con `Zend\Cache\Core`.
-Si se omite, se usará [Magento\Framework\Cache\Core](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Cache/Core.php).
+- `<frontend_type>`: el tipo de caché de nivel inferior de front-end. Especifique un nombre de clase compatible con `Zend\Cache\Core`.Si se omite, se usa [Magento\Framework\Cache\Core](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Cache/Core.php).
 
 - `<frontend_option>`, `<frontend_option_value>`: el nombre y valor de las opciones que el marco de trabajo de Commerce pasa como una matriz asociativa a la caché de front-end en el momento de la creación.
 
@@ -110,7 +114,7 @@ Si se omite, se usará [Magento\Framework\Cache\Core](https://github.com/magento
 >**Implementación heredada frente a moderna:**
 >
 >- **Heredado (basado en Zend)**: `'backend' => 'Magento\\Framework\\Cache\\Backend\\Redis'`
->- **Moderno (caché de Symfony)**: `'backend' => 'redis'` (recomendado para Commerce 2.4.9+)
+>- **Moderno (Symfony Cache)**: `'backend' => 'valkey'` para las versiones de Commerce 2.4.9+ y las revisiones actuales para las líneas de versión 2.4.5 - 2.4.8 donde Valkey es el servidor de caché compatible.
 >
 >La implementación moderna de Symfony Cache proporciona un mejor rendimiento a través del cumplimiento de PSR-6, serialización Igbinary, compresión gzip, scripts Lua y conexiones persistentes.
 

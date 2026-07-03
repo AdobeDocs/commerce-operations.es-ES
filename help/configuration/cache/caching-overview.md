@@ -17,9 +17,9 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: dbc1f6d0edff87130604d4762477ee5892a7aafc
+source-git-commit: 7171e5abfad69ad0f2d3f4c4b5eb57c13d07feb4
 workflow-type: tm+mt
-source-wordcount: 589
+source-wordcount: 593
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Esta guía explica cómo funciona cada capa de almacenamiento en caché y muestr
 
 ## Almacenar en caché frontend
 
-Un front-end de caché es una interfaz entre Commerce y el back-end de almacenamiento de caché. Puede definir varios front-end, cada uno con una configuración de back-end diferente, y luego asignar [tipos de caché](../cli/manage-cache.md#clean-and-flush-cache-types) específicos a cada front-end.  Para obtener detalles de configuración, consulte [Configurar front-end de caché](cache-types.md).
+Un front-end de caché es una interfaz entre Commerce y el back-end de almacenamiento de caché. Puede definir varios front-end, cada uno con una configuración de back-end diferente, y luego asignar [tipos de caché](../cli/manage-cache.md#clean-and-flush-cache-types) específicos a cada front-end. Para obtener detalles de configuración, consulte [Configurar tipos y front-end de caché](cache-types.md).
 
 ## Almacenar en caché backends
 
@@ -74,7 +74,7 @@ Para la asignación de front-end-to-type y la sintaxis de configuración de cach
 
 Para obtener más información, consulte:
 
-- [Configurar front-end de caché](cache-types.md): asocie un front-end de caché con tipos de caché específicos
+- [Configurar tipos y front-end de caché](cache-types.md): asocie un front-end de caché con tipos de caché específicos
 - [Opciones de servidor de caché](cache-options.md): referencia de opción de servidor
 
 **Adobe Commerce en la nube**: configure el almacenamiento en caché con `CACHE_CONFIGURATION` en `.magento.env.yaml`. Consulte [Prácticas recomendadas para la configuración de los servicios Redis y Valkey](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md).
