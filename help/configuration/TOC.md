@@ -2,10 +2,10 @@
 user-guide-title: Guía de configuración
 user-guide-description: Configure las funciones y los servicios de la aplicación de Adobe Commerce.
 feature: Configuration
-source-git-commit: 605b2e59d200bc8eeab43e91006a3f95e6a6c138
+source-git-commit: 7171e5abfad69ad0f2d3f4c4b5eb57c13d07feb4
 workflow-type: tm+mt
-source-wordcount: '399'
-ht-degree: 1%
+source-wordcount: '401'
+ht-degree: 0%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 1%
       + [Uso de variables de entorno](deployment/example-environment-variables.md)
 + Caché {#cache}
    + [Resumen del almacenamiento en caché](cache/caching-overview.md)
-   + [Configurar front-end de caché](cache/cache-types.md)
+   + [Configurar tipos y front-end de caché](cache/cache-types.md)
    + [Opciones del back-end de caché](cache/cache-options.md)
    + [Configuración de caché L2](cache/level-two-cache.md)
    + Redis {#redis}
@@ -151,4 +151,4 @@ ht-degree: 1%
       + [Verificar base de datos dividida](storage/multi-master-verify.md)
       + [Replicación de base de datos](storage/multi-master-replication.md)
       + [Revertir a base de datos única](storage/revert-split-database.md)
-+ [Volver a Guías operativas](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=es)
++ [Volver a Guías operativas](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
