@@ -23,7 +23,7 @@ Esta página contiene los cambios realizados en los últimos 60 días. Excluimos
   </thead>
   <tbody>
     <tr>
-      <td><p>Se ha añadido una descripción detallada de la corrección de QPT 1.1.80 para <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4615">ACP2E-4615: los reembolsos de pedidos en línea de PayPal fallan con el error "La puerta de enlace de PayPal rechaza la solicitud. Error interno."</a>.</p>
+      <td><p>Se ha añadido una descripción detallada de la corrección de QPT 1.1.80 para <a href="https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4615">ACP2E-4615: los reembolsos de pedidos en línea de PayPal fallan con el error "La puerta de enlace de PayPal rechaza la solicitud. Error interno."</a>.</p>
 </td>
       <td>
         Tema nuevo, qpt
@@ -47,7 +47,7 @@ Esta página contiene los cambios realizados en los últimos 60 días. Excluimos
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/55fad95c3110f8150097f410115d89299b9e681b">comprometer</a></td>
     </tr>
     <tr>
-      <td><p>Se agregó una descripción detallada de la corrección de QPT 1.1.80 para <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4813">ACP2E-4813: los métodos de envío USPS no están disponibles o son incorrectos para los pedidos de varios paquetes</a>.</p>
+      <td><p>Se agregó una descripción detallada de la corrección de QPT 1.1.80 para <a href="https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4813">ACP2E-4813: los métodos de envío USPS no están disponibles o son incorrectos para los pedidos de varios paquetes</a>.</p>
 </td>
       <td>
         Tema nuevo, qpt
@@ -55,7 +55,7 @@ Esta página contiene los cambios realizados en los últimos 60 días. Excluimos
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/94b45f953d8a91814fa7359369f976e0cbd94a36">comprometer</a></td>
     </tr>
     <tr>
-      <td><p>Se agregó una descripción detallada de la corrección de QPT 1.1.80 para <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4610">ACP2E-4610: Ejecución lenta de sales_clean_quote cron</a>.</p>
+      <td><p>Se agregó una descripción detallada de la corrección de QPT 1.1.80 para <a href="https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4610">ACP2E-4610: Ejecución lenta de sales_clean_quote cron</a>.</p>
 </td>
       <td>
         Tema nuevo, qpt

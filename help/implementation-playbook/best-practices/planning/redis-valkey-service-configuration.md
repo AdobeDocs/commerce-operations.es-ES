@@ -238,7 +238,7 @@ stage:
     VALKEY_USE_SLAVE_CONNECTION: true
 ```
 
-Para obtener detalles de configuración de la variable de entorno, consulte [VALKEY _USE_ SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#valkey_use_slave_connection) en la _Guía de infraestructura de Commerce en la nube_.
+Para obtener detalles de configuración de la variable de entorno, consulte [VALKEY _USE_ SLAVE_CONNECTION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=es#valkey_use_slave_connection) en la _Guía de infraestructura de Commerce en la nube_.
 
 >[!TAB Configuración de Redis]
 
