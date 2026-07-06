@@ -14,7 +14,7 @@ feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 82ff85d4d1e1f86d5640a9dcdaa565b01e928091
+source-git-commit: 1924e1d193461fc96851fb478bbfde8a8232f852
 workflow-type: tm+mt
 source-wordcount: 593
 ht-degree: 0%
@@ -27,11 +27,11 @@ Esta subsección proporciona una descripción detallada de los problemas corregi
 
 QPT v1.1.80 incluye los siguientes parches:
 
+1. **[ACP2E-4493](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4493.md)**: corrige el problema en el que la cuadrícula Archivo de pedidos de ventas muestra un estado de pedido incorrecto cuando la indexación asincrónica está habilitada.
 1. **[ACP2E-4239](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4239.md)**: corrige el problema en el que los filtros de cuadrícula de administración que usan atributos de fecha no devuelven resultados debido a la falta de coincidencia de zona horaria entre la fecha seleccionada, los valores de [!DNL UTC] almacenados y la zona horaria de almacén configurada.
 1. **[ACP2E-4481](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4481.md)**: corrige el problema en el que la capacidad de venta de productos del paquete se recalcula incorrectamente después de la cancelación del pedido.
 1. **[ACP2E-4472](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4472.md)**: corrige el problema por el que se crea un registro de comillas nulas en la tabla de base de datos `quote` durante el flujo **[!UICONTROL Login as Customer]**.
 1. **[ACP2E-4488](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4488.md)**: corrige el problema por el cual guardar o editar productos en Administración es lento para productos con grandes conjuntos de atributos.
-1. **ACP2E-4493**: corrige el problema en el que la cuadrícula Archivo de pedidos de ventas muestra un estado de pedido incorrecto cuando la indexación asincrónica está habilitada.
 1. **ACP2E-4496**: corrige el problema en el que el trabajo cron de Analytics causa una degradación del rendimiento durante la ejecución, lo que da como resultado un rendimiento general del sistema mejorado.
 1. **ACP2E-4533**: corrige el problema por el cual las imágenes de marcador de posición no se cargan en la Tienda cuando se incluye un código de tienda en la dirección URL.
 1. **ACP2E-4552**: corrige el problema donde el estado de la compañía no se devuelve en la respuesta de GraphQL.
