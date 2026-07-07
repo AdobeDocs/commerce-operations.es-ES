@@ -5,7 +5,7 @@ feature: Best Practices
 exl-id: 77275d37-4f1d-462d-ba11-29432791da6a
 source-git-commit: e63f68dd469564e70269154810cbfbd95d2b2e57
 workflow-type: tm+mt
-source-wordcount: '1172'
+source-wordcount: '1287'
 ht-degree: 0%
 
 ---
@@ -91,7 +91,7 @@ Continúe monitorizando de cerca el sitio después del incidente, ya que muchos 
 
 - [Revisar el acceso de los usuarios administradores](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions-users-all.html?lang=es): elimine las cuentas antiguas, no utilizadas o sospechosas y gire las contraseñas de todos los usuarios administradores.
 
-- [Revisar la configuración de seguridad de administración](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-admin.html?lang=es): compruebe que la configuración de seguridad de administración sigue las prácticas recomendadas de seguridad.
+- [Revisar la configuración de seguridad de administración](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-admin.html): compruebe que la configuración de seguridad de administración sigue las prácticas recomendadas de seguridad.
 
 - [Revise las cuentas de usuario de Adobe Commerce en los proyectos de infraestructura en la nube](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html?lang=es): elimine las cuentas antiguas, no utilizadas o sospechosas y gire las contraseñas de todos los usuarios administradores de proyectos en la nube. Asegúrese de que la configuración de seguridad de la cuenta es correcta.
 

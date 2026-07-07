@@ -4,7 +4,7 @@ description: Siga estos pasos para confirmar que la instalación local de Adobe 
 exl-id: 0bd7ec01-c616-4384-ae26-db2ce3668caf
 source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '245'
+source-wordcount: '264'
 ht-degree: 0%
 
 ---

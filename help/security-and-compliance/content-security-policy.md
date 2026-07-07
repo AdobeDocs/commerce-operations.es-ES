@@ -4,7 +4,7 @@ description: Aprenda a mejorar la postura de seguridad de su tienda Adobe Commer
 exl-id: 81070a09-5f8f-48b1-b542-1443dbd43f5f
 source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '493'
+source-wordcount: '515'
 ht-degree: 0%
 
 ---

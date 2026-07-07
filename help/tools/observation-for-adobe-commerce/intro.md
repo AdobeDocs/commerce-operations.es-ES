@@ -5,7 +5,7 @@ exl-id: a787be0f-5dd8-4acc-adbf-5cedd96b08d6
 feature: Configuration, Observability
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
-source-wordcount: '362'
+source-wordcount: '365'
 ht-degree: 0%
 
 ---
@@ -38,4 +38,4 @@ Comerciantes y socios que deseen optimizar el rendimiento de su sitio Adobe Comm
 
 Vea este vídeo para obtener más información sobre [!DNL Observation for Adobe Commerce]:
 
->[!VIDEO](https://video.tv.adobe.com/v/3410746?quality=12&captions=spa)
+>[!VIDEO](https://video.tv.adobe.com/v/3410746?captions=spa&quality=12)

@@ -4,7 +4,7 @@ description: Obtenga información acerca de las distintas fichas de característ
 exl-id: 23fc0311-82aa-430b-b11b-e287bea23d7b
 source-git-commit: 786be8bfa915fe82d9316f51662b20bde71abbaa
 workflow-type: tm+mt
-source-wordcount: '310'
+source-wordcount: '397'
 ht-degree: 0%
 
 ---
@@ -13,17 +13,13 @@ ht-degree: 0%
 
 La siguiente información de fichas de características aparece en el extremo superior de la pantalla [!DNL Site-Wide Analysis Tool].
 
-**[!UICONTROL Dashboard]**: la página [!UICONTROL Dashboard] muestra widgets que contienen las recomendaciones actuales, la compatibilidad de la actualización, el análisis de seguridad, las extensiones y [!DNL NewRelic Alerts] para el estado actual del sitio web de Adobe Commerce. También hay una lista de [!UICONTROL External Resources] vínculos para Adobe Commerce, entre los que se incluyen [Base de conocimiento de soporte técnico del Centro de ayuda de Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html?lang=es), [Documentación para desarrolladores de Adobe Commerce (DevDocs)](https://developer.adobe.com/commerce/docs/), [[!DNL Quality Patches Tool]: Buscar parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es){target="_blank"}, [Centro de seguridad](https://helpx.adobe.com/es/security.html) y [Observación para Adobe Commerce (OAC)](https://experienceleague.adobe.com/docs/commerce-operations/tools/observation-for-adobe-commerce/intro.html?lang=es).
+**[!UICONTROL Dashboard]**: la página [!UICONTROL Dashboard] muestra widgets que contienen las recomendaciones actuales, la compatibilidad de la actualización, el análisis de seguridad, las extensiones y [!DNL NewRelic Alerts] para el estado actual del sitio web de Adobe Commerce. También hay una lista de [!UICONTROL External Resources] vínculos para Adobe Commerce, entre los que se incluyen [Base de conocimiento de soporte técnico del Centro de ayuda de Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html?lang=es), [Documentación para desarrolladores de Adobe Commerce (DevDocs)](https://developer.adobe.com/commerce/docs/), [[!DNL Quality Patches Tool]: Buscar parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es){target="_blank"}, [Centro de seguridad](https://helpx.adobe.com/es/security.html) y [Observación para Adobe Commerce (OAC)](https://experienceleague.adobe.com/docs/commerce-operations/tools/observation-for-adobe-commerce/intro.html).
 
-**[!UICONTROL Information]**: la página [!UICONTROL Information] muestra información general sobre el sitio.
-El área [!UICONTROL General Information] muestra los datos de la base del sitio del comerciante, las secciones Propietario del contacto, [!DNL Jira] problemas (solo para uso interno) e Informe de tickets.
-El área de Adobe Commerce muestra las secciones Detalles del sitio, Productos, Vínculos de proyecto e integración, Cuenta y Servicio y Componentes.
+**[!UICONTROL Information]**: la página [!UICONTROL Information] muestra información general sobre el sitio.El área [!UICONTROL General Information] muestra los datos de la base del sitio del comerciante, las secciones Propietario del contacto, [!DNL Jira] problemas (solo para uso interno) e Informe de tickets.El área de Adobe Commerce muestra las secciones Detalles del sitio, Productos, Vínculos de proyecto e integración, Cuenta y Servicio y Componentes.
 
-**[!UICONTROL Recommendations]**: la página [!UICONTROL Recommendations] muestra las recomendaciones de prácticas recomendadas del sitio. Las recomendaciones de prácticas recomendadas (problemas encontrados y recomendaciones por corregir) se ordenan por prioridad: de P0 (crítico) a P4 (notificación).
-Las recomendaciones de prácticas recomendadas incluyen la descripción de la recomendación de prácticas recomendadas, la recomendación, el impacto en el sitio, la causa raíz, los escenarios o condiciones previas y las herramientas utilizadas.
+**[!UICONTROL Recommendations]**: la página [!UICONTROL Recommendations] muestra las recomendaciones de prácticas recomendadas del sitio. Las recomendaciones de prácticas recomendadas (problemas encontrados y recomendaciones por corregir) se ordenan por prioridad: de P0 (crítico) a P4 (notificación).Las recomendaciones de prácticas recomendadas incluyen la descripción de la recomendación de prácticas recomendadas, la recomendación, el impacto en el sitio, la causa raíz, los escenarios o condiciones previas y las herramientas utilizadas.
 
-**[!UICONTROL Exceptions]**: la página [!UICONTROL Exceptions] muestra errores o excepciones en el archivo de registro del sitio. Las excepciones se ordenan por fecha y hora (UTC).
-La información de Excepciones incluye Última fecha de detección (UTC), Detalle de la excepción y Recuento (número de veces) que la excepción se produjo ese día.
+**[!UICONTROL Exceptions]**: la página [!UICONTROL Exceptions] muestra errores o excepciones en el archivo de registro del sitio. Las excepciones se ordenan por fecha y hora (UTC).La información de Excepciones incluye Última fecha de detección (UTC), Detalle de la excepción y Recuento (número de veces) que la excepción se produjo ese día.
 
 **[!UICONTROL Extensions]**: la página [!UICONTROL Extensions] muestra las extensiones instaladas actualmente en la instancia de Adobe Commerce. Se proporciona información de Adobe Commerce Marketplace, cuando está disponible, para las extensiones enumeradas allí.
 

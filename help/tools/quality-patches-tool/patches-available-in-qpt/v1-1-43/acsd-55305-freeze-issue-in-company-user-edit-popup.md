@@ -1,13 +1,13 @@
 ---
 title: 'ACSD-55305: congelación emergente durante la edición por parte del usuario de la compañía en [!UICONTROL My Account]'
-description: Aplique la revisión ACSD-55305 para solucionar el problema de Adobe Commerce donde la ventana emergente [!UICONTROL Edit Company User] de la página [!UICONTROL My Account] &gt; [!UICONTROL Company Structure] se bloquea con un cargador en la pantalla.
+description: Aplique la revisión ACSD-55305 para solucionar el problema de Adobe Commerce donde la ventana emergente [!UICONTROL Edit Company User] de la página [!UICONTROL My Account] > [!UICONTROL Company Structure] se bloquea con un cargador en la pantalla.
 feature: Companies, B2B
 role: Admin, Developer
 exl-id: eeb2b136-022f-42d5-85e2-85537f4677d6
 type: Troubleshooting
 source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '424'
 ht-degree: 0%
 
 ---
