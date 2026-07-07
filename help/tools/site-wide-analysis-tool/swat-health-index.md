@@ -3,7 +3,7 @@ title: Explicación de las puntuaciones y recomendaciones del índice de salud S
 description: Descubra lo que significa el índice de estado de la herramienta de análisis para todo el sitio para su sitio de Adobe Commerce. Descubra cómo interpretar las puntuaciones y utilizar las recomendaciones de forma eficaz.
 source-git-commit: d9b598e9399c26c8fb7c52e9f211029689343ce9
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '334'
 ht-degree: 0%
 
 ---

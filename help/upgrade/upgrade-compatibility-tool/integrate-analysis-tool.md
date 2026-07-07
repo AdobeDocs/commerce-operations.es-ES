@@ -4,7 +4,7 @@ description: Siga estos pasos para recuperar el informe  [!DNL Upgrade Compatibi
 exl-id: 1ef37294-a837-47a4-841c-4027087acf12
 source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
-source-wordcount: '189'
+source-wordcount: '200'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 El [!DNL Upgrade Compatibility Tool] está ahora integrado con el [!DNL Site-Wide Analysis Tool] para proporcionar a los usuarios no técnicos la capacidad de ejecutar el [!DNL Upgrade Compatibility Tool] y obtener un [informe](../upgrade-compatibility-tool/reports.md) que contenga una lista de problemas para cada archivo.
 
-Consulte la [[!DNL Site-Wide Analysis Tool] guía del usuario](https://experienceleague.adobe.com/es/docs/commerce-operations/tools/site-wide-analysis-tool/access) para obtener más información.
+Consulte la [[!DNL Site-Wide Analysis Tool] guía del usuario](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/access) para obtener más información.
 
 ## Ejecutar [!DNL Upgrade Compatibility Tool] desde [!DNL Site-Wide Analysis Tool]
 

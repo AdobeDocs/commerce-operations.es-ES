@@ -5,8 +5,8 @@ feature: Configuration, Customers
 exl-id: a0571423-6fbd-4cfc-9797-a13c0c24bb53
 source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '896'
-ht-degree: 0%
+source-wordcount: '945'
+ht-degree: 1%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 En esta sección se enumeran los nombres de las variables y las rutas de configuración disponibles para las opciones del Administrador en **Tiendas** > Configuración > **Configuración** > **Clientes**.
 
-El comando [`magento app:config:dump` &#x200B;](../cli/export-configuration.md) escribe estos valores en el archivo de configuración compartida, `app/etc/config.php`, que debe estar en el control de código fuente. Para anular opcionalmente las opciones de configuración o establecer opciones confidenciales, vea [Usar variables de entorno para anular las opciones de configuración](override-config-settings.md#environment-variables). Este tema _no_ enumera [valores confidenciales y específicos del sistema](config-reference-sens.md).
+El comando [`magento app:config:dump` ](../cli/export-configuration.md) escribe estos valores en el archivo de configuración compartida, `app/etc/config.php`, que debe estar en el control de código fuente. Para anular opcionalmente las opciones de configuración o establecer opciones confidenciales, vea [Usar variables de entorno para anular las opciones de configuración](override-config-settings.md#environment-variables). Este tema _no_ enumera [valores confidenciales y específicos del sistema](config-reference-sens.md).
 
 ## Rutas de newsletter
 
