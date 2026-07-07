@@ -5,7 +5,7 @@ exl-id: 741310ca-28fb-4b08-95c7-e8d1fb952018
 feature: Configuration, Observability
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
-source-wordcount: '1905'
+source-wordcount: '1951'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ Esta ficha contiene información que explica cómo identificar si y qué [!DNL b
 
 ## Descripción general de alto nivel de [!DNL bots]:
 
-* Un [!DNL bot] es un software que ejecuta tareas automatizadas repetitivas. Con la evolución de la inteligencia artificial y el aprendizaje automático, las tareas, los métodos y las interacciones de [!DNL bots] están cambiando. Hay *buenos* [!DNL bots] que benefician a los sitios al rastrearlos y agregarlos a los motores de búsqueda de Internet. Esto hace que los usuarios de Internet sean guiados al sitio a través de los resultados de los motores de búsqueda. Un *buen* [!DNL bot] generalmente respeta los límites colocados en el [!DNL bot] por un archivo de `robots.txt` o la configuración de una consola de motor de búsqueda. Los límites pueden restringir el acceso al sitio o a partes del sitio.
+* Un [!DNL bot] es un software que ejecuta tareas automatizadas repetitivas. Con la evolución de la inteligencia artificial y el aprendizaje automático, las tareas, los métodos y las interacciones de [!DNL bots] están cambiando. Hay *buenos* [!DNL bots] que benefician a los sitios al rastrear y agregarlos a los motores de búsqueda de Internet. Esto hace que los usuarios de Internet sean guiados al sitio a través de los resultados de los motores de búsqueda. Un *buen* [!DNL bot] generalmente respeta los límites colocados en el [!DNL bot] por un archivo de `robots.txt` o la configuración de una consola de motor de búsqueda. Los límites pueden restringir el acceso al sitio o a partes del sitio.
 * Los [!DNL bots] malintencionados omiten el archivo `robots.txt` o pueden suplantar un [!DNL bot] correcto a través del campo del agente de usuario de solicitud de los datos de solicitud HTTP. Algunas cosas que hacen los [!DNL bots] malintencionados:
    * Añada la carga a un sitio para denegar el acceso al sitio a los usuarios legítimos.
    * Rascar y reutilizar contenido sin permiso.
