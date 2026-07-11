@@ -2,9 +2,9 @@
 user-guide-title: Herramientas
 user-guide-description: Obtenga información sobre las distintas herramientas que puede utilizar con Adobe Commerce, sus usos, el proceso de instalación y cómo obtener acceso.
 feature: Configuration
-source-git-commit: 1924e1d193461fc96851fb478bbfde8a8232f852
+source-git-commit: 5775ba3b4486899bccd59638db6d54f39aed090b
 workflow-type: tm+mt
-source-wordcount: '10330'
+source-wordcount: '10334'
 ht-degree: 0%
 
 ---
@@ -1024,6 +1024,8 @@ ht-degree: 0%
          - [ACP2E-4808: Visualización del peso del producto sin unidad de medida en la tienda](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4808.md)
          - [ACP2E-4533: Las imágenes de marcador de posición no se pueden cargar en la tienda cuando la URL incluye el código de tienda](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4533.md)
          - [ACP2E-4156: [!DNL REST] La validación de la dirección de envío de API ignora la configuración del atributo de administración](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4156.md)
+      - v1.1.81 {#v1-1-81}
+         - [Información general:  [!DNL Quality Patches Tool] (QPT) v1.1.81](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/overview.md)
    - [Comprobar parche para el problema de Adobe Commerce con la herramienta Parches de calidad](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Referencia de herramientas de la línea de comandos {#cli-reference}
    - [Adobe Commerce (local)](reference/commerce-on-premises.md)
