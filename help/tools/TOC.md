@@ -2,9 +2,11 @@
 user-guide-title: Herramientas
 user-guide-description: Obtenga información sobre las distintas herramientas que puede utilizar con Adobe Commerce, sus usos, el proceso de instalación y cómo obtener acceso.
 feature: Configuration
-source-git-commit: 5775ba3b4486899bccd59638db6d54f39aed090b
+nduge: true
+color: red
+source-git-commit: 6a72cf3e1d68d92675ac73c8c361414a340fd20b
 workflow-type: tm+mt
-source-wordcount: '10334'
+source-wordcount: '10343'
 ht-degree: 0%
 
 ---
@@ -26,6 +28,11 @@ ht-degree: 0%
    - [Extensiones](site-wide-analysis-tool/extensions.md)
    - [Alertas](site-wide-analysis-tool/alerts.md)
    - [Parches](site-wide-analysis-tool/patches.md)
+- [!DNL Commerce Version Tool] {#commerce-version-tool}
+   - [Introducción](commerce-version-tool/intro.md)
+   - [Generación de un informe de estado del parche](commerce-version-tool/generate-report.md)
+   - [Resolución de problemas](commerce-version-tool/troubleshooting.md)
+   - [Notas de la versión](commerce-version-tool/release-notes.md)
 - MAYÚSCULAS {#caps-tool}
    - {hide-from-toc}[Introducción](caps-tool/intro.md)
    - {hide-from-toc}[Acceso](caps-tool/access.md)
