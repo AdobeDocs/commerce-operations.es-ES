@@ -2,9 +2,11 @@
 user-guide-title: Herramientas
 user-guide-description: Obtenga información sobre las distintas herramientas que puede utilizar con Adobe Commerce, sus usos, el proceso de instalación y cómo obtener acceso.
 feature: Configuration
-source-git-commit: 5775ba3b4486899bccd59638db6d54f39aed090b
+nduge: true
+color: red
+source-git-commit: 6a72cf3e1d68d92675ac73c8c361414a340fd20b
 workflow-type: tm+mt
-source-wordcount: '10334'
+source-wordcount: '10343'
 ht-degree: 0%
 
 ---
@@ -26,6 +28,11 @@ ht-degree: 0%
    - [Extensiones](site-wide-analysis-tool/extensions.md)
    - [Alertas](site-wide-analysis-tool/alerts.md)
    - [Parches](site-wide-analysis-tool/patches.md)
+- [!DNL Commerce Version Tool] {#commerce-version-tool}
+   - [Introducción](commerce-version-tool/intro.md)
+   - [Generación de un informe de estado del parche](commerce-version-tool/generate-report.md)
+   - [Resolución de problemas](commerce-version-tool/troubleshooting.md)
+   - [Notas de la versión](commerce-version-tool/release-notes.md)
 - MAYÚSCULAS {#caps-tool}
    - {hide-from-toc}[Introducción](caps-tool/intro.md)
    - {hide-from-toc}[Acceso](caps-tool/access.md)
@@ -47,7 +54,7 @@ ht-degree: 0%
    - [Alertas administradas para Adobe Commerce: alerta de advertencia de CPU](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-cpu-warning-alert.md)
 - Herramienta Parches de calidad {#quality-patches-tool}
    - [[!DNL Quality Patches Tool]: herramienta de autoservicio para parches de calidad](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)
-   - [[!DNL Quality Patches Tool]: buscar parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es){target="_blank"}
+   - [[!DNL Quality Patches Tool]: buscar parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
    - [Uso](quality-patches-tool/usage.md)
    - [Notas de la versión](quality-patches-tool/release-notes.md)
    - Parches disponibles en la herramienta Parches de calidad {#patches-available-in-qpt}
@@ -1005,7 +1012,7 @@ ht-degree: 0%
          - [ACP2E-4411: Los precios del paquete de productos muestran valores de impuestos y divisas incorrectos entre la página de detalles del producto y el carro de compras en una configuración de varias monedas](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4411.md)
          - [ACP2E-4110: Los precios del paquete de productos con un **[!UICONTROL Special Price]** difieren entre PDP/PLP y el carro de compras en una moneda no predeterminada](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4110.md)
          - [ACP2E-4603: El reíndice de productos de Permisos de catálogo deja filas de índice de permisos obsoletas y el interbloqueo de MySQL](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4603.md)
-         - [AC-10737: el comando `/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/ac-10737.md/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/ac-10737.md/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/ac-10737.md1` no reconoce el tipo de datos JSON](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/ac-10737.md)
+         - [AC-10737: el comando `bin/magento setup:db:status` no reconoce el tipo de datos JSON](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/ac-10737.md)
          - [ACP2E-4601: Volver a guardar una operación de autorización de pago con autorreferencia parent_id y déclencheur un bucle/OOM infinito](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4601.md)
       - Versión 1.1.80 {#v1-1-80}
          - [Información general:  [!DNL Quality Patches Tool] (QPT) v1.1.80](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/overview.md)
@@ -1014,12 +1021,12 @@ ht-degree: 0%
          - [ACSD-53502: **[!UICONTROL Add to Cart]** produce un error intermitente en iOS [!DNL Safari] debido a la recursión del script New Relic](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acsd-53502.md)
          - [ACP2E-4813: métodos de envío USPS no disponibles o incorrectos para pedidos de varios paquetes](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4813.md)
          - [ACP2E-4615: los reembolsos de pedidos en línea de PayPal fallan con el error *La puerta de enlace de PayPal rechaza la solicitud. Error interno.*](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4615.md)
-         - [ACP2E-4610: Ejecución lenta de `/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4610.md/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4610.md/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4610.md2` cron](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4610.md)
+         - [ACP2E-4610: Ejecución lenta de `sales_clean_quotes` cron](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4610.md)
          - [ACP2E-4626: Los archivos JavaScript de Storefront se cargan dos veces, lo que provoca cargas duplicadas y un comportamiento inestable](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4626.md)
          - [ACP2E-4552: La respuesta de GraphQL no devuelve el estado de la empresa](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4552.md)
          - [ACP2E-4496: Trabajo cron de Analytics degrada el rendimiento durante la ejecución](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4496.md)
          - [ACP2E-4488: Lento guardado/edición del producto de administración para grandes conjuntos de atributos](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4488.md)
-         - [ACP2E-4653: Condiciones del ámbito de la categoría de regla de precio del carro de compras que faltan en la API  [!DNL REST] &#x200B;](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4653.md)
+         - [ACP2E-4653: Condiciones del ámbito de la categoría de regla de precio del carro de compras que faltan en la API  [!DNL REST] ](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4653.md)
          - [ACP2E-4472: Presupuesto nulo creado mediante el flujo Iniciar sesión como cliente](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4472.md)
          - [ACP2E-4808: Visualización del peso del producto sin unidad de medida en la tienda](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4808.md)
          - [ACP2E-4533: Las imágenes de marcador de posición no se pueden cargar en la tienda cuando la URL incluye el código de tienda](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4533.md)
@@ -1074,6 +1081,6 @@ ht-degree: 0%
       - [Datos que requieren una migración manual](data-migration-tool/migrate-data/manual.md)
       - [Pasos de la migración posterior a los datos](data-migration-tool/migrate-data/post-migration.md)
    - Recursos {#resources}
-      - [Resolución de problemas](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html?lang=es)
+      - [Resolución de problemas](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.html)
       - [Changelog](https://github.com/magento/data-migration-tool/blob/2.4/CHANGELOG.md)
-- [Volver a Guías operativas](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=es)
+- [Volver a Guías operativas](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
