@@ -14,7 +14,7 @@ feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: afd48570ab4ab29b2d5946e2805b3124b0b7fe82
+source-git-commit: 11f63d811ab907de5e93c121ef8fdf0de294b25f
 workflow-type: tm+mt
 source-wordcount: 272
 ht-degree: 0%
@@ -31,7 +31,7 @@ QPT v1.1.81 incluye los siguientes parches:
 1. **ACP2E-4401**: corrige el problema por el que el [!UICONTROL Scheduled Update Preview] del vínculo de la página de inicio con productos configurables redirige a la página de mantenimiento en lugar de mostrar la lista de productos.
 1. **ACP2E-4395**: La creación del producto de la API de Giftcard ahora mostrará un error si no se especifican cantidades para el ámbito global.
 1. **ACP2E-4468**: corrige el problema en el cual los usuarios de [!UICONTROL Admin] con permisos de ámbito de sitio web no pueden editar el contenido del banner.
-1. **ACP2E-4630**: corrige el problema en el que los nombres de productos largos con opciones personalizadas se superponen con columnas adyacentes o artículos en PDF de varias páginas de facturas, envíos, notas de crédito y devoluciones después de los saltos de página, lo que hace que los artículos de línea sean ilegibles.
+1. **[ACP2E-4630](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4630.md)**: corrige el problema en el que los nombres de productos largos con opciones personalizadas se superponen con columnas adyacentes o artículos en PDF de varias páginas de facturas, envíos, notas de crédito y devoluciones después de los saltos de página, lo que hace que los artículos de línea sean ilegibles.
 1. **[ACP2E-4680](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4680.md)**: soluciona el problema en el que los productos no vendibles o eliminados desaparecen de las cotizaciones negociables finalizadas.
 1. **ACP2E-4709**: corrige un problema en el cual las páginas de CMS no se pueden guardar al usar Page Builder.
 1. **ACP2E-4786**: corrige el problema en el que la exportación de productos no puede escribir archivos cuando el almacenamiento remoto de AWS S3 está configurado, debido a una resolución de ruta incorrecta en el controlador de almacenamiento.
