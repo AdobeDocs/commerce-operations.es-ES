@@ -4,9 +4,9 @@ user-guide-description: Obtenga información sobre las distintas herramientas qu
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: 6a72cf3e1d68d92675ac73c8c361414a340fd20b
+source-git-commit: afd48570ab4ab29b2d5946e2805b3124b0b7fe82
 workflow-type: tm+mt
-source-wordcount: '10343'
+source-wordcount: '10365'
 ht-degree: 0%
 
 ---
@@ -1033,6 +1033,8 @@ ht-degree: 0%
          - [ACP2E-4156: [!DNL REST] La validación de la dirección de envío de API ignora la configuración del atributo de administración](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4156.md)
       - v1.1.81 {#v1-1-81}
          - [Información general:  [!DNL Quality Patches Tool] (QPT) v1.1.81](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/overview.md)
+         - [ACP2E-4680: Los productos no vendibles desaparecen de las cotizaciones negociables finalizadas](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4680.md)
+         - [ACP2E-4300: Los permisos del catálogo de tiendas no se actualizan tras el cambio del grupo de clientes administradores](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4300.md)
    - [Comprobar parche para el problema de Adobe Commerce con la herramienta Parches de calidad](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Referencia de herramientas de la línea de comandos {#cli-reference}
    - [Adobe Commerce (local)](reference/commerce-on-premises.md)
