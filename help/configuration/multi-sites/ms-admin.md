@@ -4,7 +4,7 @@ description: Configure sitios web, tiendas y vistas de tiendas adicionales en el
 exl-id: e6b4d14d-7504-48f9-a2e1-7e9a1bc76ab9
 source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
 workflow-type: tm+mt
-source-wordcount: '1052'
+source-wordcount: '1118'
 ht-degree: 0%
 
 ---
@@ -14,8 +14,8 @@ ht-degree: 0%
 Esta tarea requiere que cree una categoría raíz (y categorías adicionales, si lo desea) para cada tienda. Las tareas que se tratan en este tema proporcionan una forma de configurar varias tiendas. Para obtener más información, consulte los siguientes recursos en la Guía del usuario de Commerce:
 
 - [Categorías](https://experienceleague.adobe.com/es/docs/commerce-admin/catalog/categories/categories)
-- [Agregando sitios web](https://experienceleague.adobe.com/es/docs/commerce-admin/stores-sales/site-store/stores#add-websites)
-- [URL de almacenamiento](https://experienceleague.adobe.com/es/docs/commerce-admin/stores-sales/site-store/store-urls)
+- [Adición de sitios web](https://experienceleague.adobe.com/es/docs/commerce-admin/stores-sales/site-store/stores#add-websites)
+- [URL de tienda](https://experienceleague.adobe.com/es/docs/commerce-admin/stores-sales/site-store/store-urls)
 - [Contenido](https://experienceleague.adobe.com/es/docs/commerce-admin/content-design/content-menu)
 
 >[!INFO]

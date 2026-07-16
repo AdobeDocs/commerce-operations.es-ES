@@ -14,9 +14,9 @@ feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 11f63d811ab907de5e93c121ef8fdf0de294b25f
+source-git-commit: 3f7c0db0da082e2cc83bb18d943c3e50aa99d2dc
 workflow-type: tm+mt
-source-wordcount: 272
+source-wordcount: 273
 ht-degree: 0%
 
 ---
@@ -35,6 +35,6 @@ QPT v1.1.81 incluye los siguientes parches:
 1. **[ACP2E-4680](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4680.md)**: soluciona el problema en el que los productos no vendibles o eliminados desaparecen de las cotizaciones negociables finalizadas.
 1. **ACP2E-4709**: corrige un problema en el cual las páginas de CMS no se pueden guardar al usar Page Builder.
 1. **ACP2E-4786**: corrige el problema en el que la exportación de productos no puede escribir archivos cuando el almacenamiento remoto de AWS S3 está configurado, debido a una resolución de ruta incorrecta en el controlador de almacenamiento.
-1. **ACP2E-4801**: corrige el problema por el cual no se aplica la actualización de las cantidades de opciones de productos del paquete a través del botón [!UICONTROL Configure] en una oferta negociable de [!UICONTROL Admin] y se descartan los cambios.
+1. **[ACP2E-4801](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4801.md)**: corrige el problema por el cual no se aplica la actualización de las cantidades de opciones de productos del paquete a través del botón **[!UICONTROL Configure]** en una oferta negociable del administrador y se descartan los cambios.
 
 Utilice el menú de la izquierda para navegar a una página específica del parche.

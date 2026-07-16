@@ -5,7 +5,7 @@ exl-id: b600b0e3-c6fd-4b86-ad2a-a445e599f1bd
 feature: Services
 source-git-commit: 486e789787c9c08b27b4aae8e601680138956b88
 workflow-type: tm+mt
-source-wordcount: '1171'
+source-wordcount: '1181'
 ht-degree: 0%
 
 ---
@@ -388,7 +388,7 @@ Adobe proporciona un conjunto de servicios relacionados con el aprovisionamiento
 
 La pila de seguridad de Adobe para Managed Services crea seguridad en en todos los niveles mediante la automatización y la coherencia para reducir los errores humanos. Los equipos de desarrollo y operaciones heredan automáticamente los controles de seguridad de los diferentes niveles de la pila.
 
-Los socios de plataforma, como Amazon Web Service y Microsoft Azure, garantizan la máxima cobertura de seguridad al aplicar las personalizaciones de plataforma, mientras que el equipo de Managed Services de Adobe proporciona servicios de seguridad principales, como conformidad, registro, autenticación, análisis y supervisión, y seguridad del servidor y configuración de aplicaciones seguras. Consulte [Seguridad de Adobe Commerce](https://business.adobe.com/es/products/magento/secure-ecommerce.html) para obtener más información.
+Los socios de plataforma, como Amazon Web Service y Microsoft Azure, garantizan la máxima cobertura de seguridad al aplicar las personalizaciones de plataforma, mientras que el equipo de Managed Services de Adobe proporciona servicios de seguridad principales, como conformidad, registro, autenticación, análisis y supervisión, y seguridad del servidor y configuración segura de aplicaciones. Consulte [Seguridad de Adobe Commerce](https://business.adobe.com/es/products/magento/secure-ecommerce.html) para obtener más información.
 
 El diagrama siguiente muestra la pila de tecnología de seguridad de Adobe Managed Services:
 
@@ -437,7 +437,7 @@ Adobe proporciona un conjunto de servicios relacionados con el aprovisionamiento
     <td>Actualizar servicios de infraestructura<br />[MariaDB, Redis, Open Search y Rabbit MQ] (ensayo y producción)</td>
     <td></td>
     <td></td>
-    <td>El propietario<br />CSE coordina las actualizaciones del servicio de infraestructura.<br />CSE programa evento de reunión de conferencia para actualizaciones.<br />CSE ayuda con la migración de datos de Producción a Ensayo.</td>
+    <td>Propietario<br />CSE coordina las actualizaciones del servicio de infraestructura.<br />CSE programa evento de reunión de conferencia para actualizaciones.<br />CSE ayuda con la migración de datos de Producción a Ensayo.</td>
   </tr>
   <tr>
     <td>Actualizar el código base de Commerce y las personalizaciones; recompilación y refactorización del código</td>
@@ -456,7 +456,7 @@ Adobe proporciona un conjunto de servicios relacionados con el aprovisionamiento
     <td>Ejecución de pruebas de rendimiento y seguridad</td>
     <td>Colaborador</td>
     <td>Propietario</td>
-    <td>El colaborador<br />CSE ayuda con las pruebas de carga mediante la supervisión del rendimiento de la aplicación y la infraestructura.<br />CSE ayuda a configurar la Herramienta de análisis de seguridad de Commerce.</td>
+    <td>Colaborador<br />CSE ayuda con las pruebas de carga mediante la supervisión del rendimiento de la aplicación y la infraestructura.<br />CSE ayuda a configurar la herramienta de análisis de seguridad de Commerce.</td>
   </tr>
   <tr>
     <td>Pruebas de aceptación del usuario en ensayo</td>

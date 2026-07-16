@@ -6,7 +6,7 @@ badge: label="Colaboró David Lambauer" type="Informative" url="https://github.c
 exl-id: a6c5de6c-e8da-4eca-bbfb-592904b2c53f
 source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
 workflow-type: tm+mt
-source-wordcount: '2717'
+source-wordcount: '2748'
 ht-degree: 0%
 
 ---
@@ -248,7 +248,7 @@ Una etiqueta `<field>` puede tener los siguientes valores para el atributo `type
 | `select` | Menú desplegable normal; es posible que necesite un(a) `source_model` personalizado. También se usa para `Yes/No` selecciones. Vea `Magento\Search\Model\Adminhtml\System\Config\Source\Engine` para ver un ejemplo. |
 | `multiselect` | Como `select`, pero varias opciones son válidas. |
 | `button` | Botón que almacena en déclencheur un evento inmediato. Requiere un modelo front-end personalizado para definir el texto del botón y la acción. Vea `Magento\ScheduledImportExport\Block\Adminhtml\System\Config\Clean` para ver un ejemplo. |
-| `obscure` | Campo de texto con el valor cifrado y mostrado como `**&#x200B;**`. Al cambiar el tipo con &quot;Inspeccionar elemento&quot; en el explorador, no se muestra el valor. |
+| `obscure` | Campo de texto con el valor cifrado y mostrado como `****`. Al cambiar el tipo con &quot;Inspeccionar elemento&quot; en el explorador, no se muestra el valor. |
 | `password` | Como `obscure`, excepto que el valor oculto no está cifrado y al cambiar el tipo mediante &quot;Inspeccionar elemento&quot; en el explorador, se muestra el valor. |
 | `file` | Permite cargar un archivo para su procesamiento. |
 | `label` | Muestra una etiqueta en lugar de un campo editable. Utilice este tipo cuando un campo solo se pueda editar en ámbitos específicos; por ejemplo, en el nivel de vista de tienda. |
@@ -398,7 +398,7 @@ Están disponibles las siguientes reglas de validación:
 | `validate-alphanum-with-spaces` | Solo permite el uso de letras (a-z o A-Z), números (0-9) o espacios. |
 | `validate-clean-url` | Permite una dirección URL válida. Por ejemplo, `https://www.example.com` o `www.example.com`. |
 | `validate-currency-dollar` | Permite una cantidad válida (en dólares). Por ejemplo, 100,00 $. |
-| `validate-data` | Solo permite el uso de letras (a-z o A-Z), números (0-9) o guiones bajos (\_).<br>El primer carácter debe ser una letra.<br>(Debe coincidir con la expresión: `/^[A-Za-z]+[A-Za-z0-9_]+$/`)<br>Mensaje de error de validación: &quot;Use solo letras (a-z o A-Z), números (0-9) o guiones bajos (\_) en este campo, y el primer carácter debe ser una letra&quot;. |
+| `validate-data` | Solo permite el uso de letras (a-z o A-Z), números (0-9) o guiones bajos (\_).<br>El primer carácter debe ser una letra.<br>(Debe coincidir con la expresión: `/^[A-Za-z]+[A-Za-z0-9_]+$/`)<br>Mensaje de error de validación: &quot;Use solamente letras (a-z o A-Z), números (0-9) o guiones bajos (\_) en este campo, y el primer carácter debe ser una letra.&quot; |
 | `validate-date-au` | Aplica el siguiente formato de fecha: dd/mm/aaaa. Por ejemplo, 17/03/2006 para el 17 de marzo de 2006. |
 | `validate-email` | Permite una dirección de correo electrónico válida. Por ejemplo, johndoe@domain.com. |
 | `validate-emailSender` | Permite una dirección de correo electrónico válida. Por ejemplo, johndoe@domain.com. |

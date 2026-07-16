@@ -4,9 +4,9 @@ user-guide-description: Obtenga información sobre las distintas herramientas qu
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: 11f63d811ab907de5e93c121ef8fdf0de294b25f
+source-git-commit: 3f7c0db0da082e2cc83bb18d943c3e50aa99d2dc
 workflow-type: tm+mt
-source-wordcount: '10381'
+source-wordcount: '10396'
 ht-degree: 0%
 
 ---
@@ -1033,6 +1033,7 @@ ht-degree: 0%
          - [ACP2E-4156: [!DNL REST] La validación de la dirección de envío de API ignora la configuración del atributo de administración](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4156.md)
       - v1.1.81 {#v1-1-81}
          - [Información general:  [!DNL Quality Patches Tool] (QPT) v1.1.81](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/overview.md)
+         - [ACP2E-4801: Las cantidades de opciones de productos agrupados no se actualizan al reconfigurar un presupuesto negociable en Administración](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4801.md)
          - [ACP2E-4630: Los nombres de productos largos se superponen con las columnas adyacentes en PDF de ventas de varias páginas después de los saltos de página](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4630.md)
          - [ACP2E-4680: Los productos no vendibles desaparecen de las cotizaciones negociables finalizadas](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4680.md)
          - [ACP2E-4300: Los permisos del catálogo de tiendas no se actualizan tras el cambio del grupo de clientes administradores](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4300.md)
