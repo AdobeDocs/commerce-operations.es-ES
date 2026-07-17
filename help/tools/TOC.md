@@ -4,9 +4,9 @@ user-guide-description: Obtenga información sobre las distintas herramientas qu
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: 3f7c0db0da082e2cc83bb18d943c3e50aa99d2dc
+source-git-commit: af9c1cd1091aa70aa247064f076817895286c4b8
 workflow-type: tm+mt
-source-wordcount: '10396'
+source-wordcount: '10408'
 ht-degree: 0%
 
 ---
@@ -1033,6 +1033,7 @@ ht-degree: 0%
          - [ACP2E-4156: [!DNL REST] La validación de la dirección de envío de API ignora la configuración del atributo de administración](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4156.md)
       - v1.1.81 {#v1-1-81}
          - [Información general:  [!DNL Quality Patches Tool] (QPT) v1.1.81](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/overview.md)
+         - [ACP2E-4786: La exportación del producto falla cuando se configura el almacenamiento remoto de AWS S3](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4786.md)
          - [ACP2E-4801: Las cantidades de opciones de productos agrupados no se actualizan al reconfigurar un presupuesto negociable en Administración](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4801.md)
          - [ACP2E-4630: Los nombres de productos largos se superponen con las columnas adyacentes en PDF de ventas de varias páginas después de los saltos de página](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4630.md)
          - [ACP2E-4680: Los productos no vendibles desaparecen de las cotizaciones negociables finalizadas](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4680.md)
