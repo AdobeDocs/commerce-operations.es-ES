@@ -1,7 +1,7 @@
 ---
-source-git-commit: 5629025bd6a2fd492ac368e2680a70f9cc256339
+source-git-commit: 970dcea74edf889a6cb5abf1449d63dfe2d7d654
 workflow-type: tm+mt
-source-wordcount: '2448'
+source-wordcount: '2772'
 ht-degree: 0%
 
 ---
@@ -10,6 +10,96 @@ ht-degree: 0%
 ## Novedades
 
 Esta página contiene los cambios realizados en los últimos 60 días. Excluimos todas las actualizaciones menores, como la edición de copias, de esta lista.
+
+### 16 de julio de 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descripción</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Se agregó una descripción detallada de la corrección de QPT 1.1.81 para <a href="https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4801">ACP2E-4801: Las cantidades de opciones de productos agrupados no se actualizan al reconfigurar una cotización negociable en Administración</a>.</p>
+</td>
+      <td>
+        Tema nuevo, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/31872eee953126b52f1c13444dd46140edc879c6">comprometer</a></td>
+    </tr>
+    <tr>
+      <td><p>Se agregó una descripción detallada de la corrección de QPT 1.1.81 para <a href="https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4786">ACP2E-4786: La exportación del producto falla cuando se configura el almacenamiento remoto de AWS S3</a>.</p>
+</td>
+      <td>
+        Tema nuevo, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b7ca2e40743aa512b0bc785e486d3e7d1c6dbefc">comprometer</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 15 de julio de 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descripción</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Se agregó una descripción detallada de la corrección de QPT 1.1.81 para <a href="https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4630">ACP2E-4630: Los nombres de productos largos se superponen con las columnas adyacentes en los PDF de ventas de varias páginas después de los saltos de página</a>.</p>
+</td>
+      <td>
+        Tema nuevo, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/5581e6f7a507bb83a3fc0fd7229239137b15acd7">comprometer</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 14 de julio de 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descripción</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Se agregó una descripción detallada de la corrección de QPT 1.1.81 para <a href="https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4300">ACP2E-4300: Los permisos del catálogo de tiendas no se actualizan después del cambio del grupo de clientes administradores</a>.</p>
+</td>
+      <td>
+        Tema nuevo, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/2c26efeb7aa734e4dcc8d0131cb82a96d35e8f32">comprometer</a></td>
+    </tr>
+    <tr>
+      <td><p>Se agregó una descripción detallada de la corrección de QPT 1.1.81 para <a href="https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4680">ACP2E-4680: Los productos no vendibles desaparecen de las cotizaciones negociables finalizadas</a>.</p>
+</td>
+      <td>
+        Tema nuevo, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/1448b291e70cdf515872f019028c15bd703f80fe">comprometer</a></td>
+    </tr>
+    <tr>
+      <td><p>Se ha agregado <a href="https://experienceleague.adobe.com/es/docs/commerce-operations/tools/commerce-version-tool/intro">documentación de la herramienta Commerce Version</a> con disponibilidad, generación de informes, salida JSON y CSV, resolución de problemas y notas de la versión para los informes mensuales de estado de parches de seguridad de Adobe Commerce.</p>
+</td>
+      <td>
+        Nuevo tema
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/43571d84d9a27ffa113ba4f3a8a08883602211f6">comprometer</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 10 de julio de 2026
 
