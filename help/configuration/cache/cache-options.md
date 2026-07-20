@@ -3,24 +3,17 @@ title: Opciones del servidor de caché y referencia de almacenamiento
 description: Obtenga información acerca de las opciones de back-end de caché en Adobe Commerce, incluido el sistema de archivos, Redis, Valkey y el almacenamiento de bases de datos. Descubra enfoques heredados y modernos.
 feature: Configuration, Cache
 exl-id: e0330108-5c55-4a33-9f93-63fbb71af761
-badgePaas: label="En las instalaciones" type="Informative" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos locales de Adobe Commerce."
+badgePaas: label="En las instalaciones" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos locales de Adobe Commerce."
 autotag-review: '2026-06-22T18:37:32.504Z'
 TQID: 'https://experienceleague.adobe.com/m7eUBNrt8UF43iJq9Tpl0Y1WcmR-dlt7Z4PoHvXVNnA'
-product_v2:
-  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: ab2a9ef6d4c3ed692f4a6a66323ab5e3d5c6673a
+product_v2: id: b974b164-8a4e-43b8-a9e2-8e67ec131677id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: a7e44e5b4ddeda89b9fee08aa29b1a31f521e90a
 workflow-type: tm+mt
-source-wordcount: 309
+source-wordcount: 362
 ht-degree: 0%
 
 ---
@@ -31,6 +24,10 @@ ht-degree: 0%
 
 La aplicación de Commerce utiliza un front-end y un back-end de caché de bajo nivel para proporcionar acceso al almacenamiento en caché. Commerce admite varios back-ends y estrategias de almacenamiento en caché, cada uno adaptado a diferentes casos de uso. Esta página describe los backends disponibles y cómo difieren.
 
+>[!NOTE]
+>
+>[Varnish](config-varnish.md) administra el almacenamiento en caché de página completa en el nivel HTTP y no utiliza el servidor de caché de nivel inferior.
+
 ## Opciones de caché back-end
 
 La siguiente tabla resume las cachés backend disponibles:
@@ -38,13 +35,11 @@ La siguiente tabla resume las cachés backend disponibles:
 | Servidor | Descripción | Guía de configuración |
 | ------- | ----------- | ------------------- |
 | Sistema de archivos | Predeterminado. Almacena datos de caché en archivos bajo `var/cache/`. No se requiere configuración. | N/D |
-| [Redis](config-redis.md) | Almacén de datos en memoria para el almacenamiento en caché de alto rendimiento. | [Usar Redis para la caché predeterminada](redis-pg-cache.md) |
+| [Redis](config-redis.md) | Almacén de datos en memoria para el almacenamiento en caché de alto rendimiento. | [Usar Redis para la memoria caché predeterminada](redis-pg-cache.md)<br>**Nota: la memoria caché de Redis no es compatible con Adobe Commerce 2.4.9 o con versiones de parches posteriores a las 2.4.5-p16, 2.4.6-p14, 2.4.7-p9 y 2.4.8-p5. Utilice Valkey para la configuración de caché donde no se admita Redis. Consulte [Requisitos del sistema](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements) para ver los servicios de caché admitidos por versión. |
 | [Valkey](config-valkey.md) | Alternativa de código abierto y compatible con Redis. | [Usar Valkey para la caché predeterminada](valkey-pg-cache.md) |
 | [Base de datos](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/) | Almacenamiento en caché respaldado por base de datos. | [Crear motores de caché personalizados](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/){target="_blank"} (documentación para desarrolladores de Adobe) |
 
->[!NOTE]
->
->[Varnish](config-varnish.md) administra el almacenamiento en caché de página completa en el nivel HTTP y no utiliza el servidor de caché de nivel inferior.
+{{redis-cache-support}}
 
 ## Enfoques de implementación
 
