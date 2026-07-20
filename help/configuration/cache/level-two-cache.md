@@ -3,24 +3,14 @@ title: Configuración de caché L2 para la optimización del rendimiento
 description: Aprenda a configurar la caché L2 en Adobe Commerce para reducir el tráfico de red y mejorar el rendimiento. Descubra las opciones de implementación heredadas y de Symfony.
 feature: Configuration, Cache
 exl-id: 0504c6fd-188e-46eb-be8e-968238571f4e
-badgePaas: label="En las instalaciones" type="Informative" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos locales de Adobe Commerce."
+badgePaas: label="En las instalaciones" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos locales de Adobe Commerce."
 TQID: 'https://experienceleague.adobe.com/7vswBqyn9UZLmaeirgPRZ4xEQH5F66XUEtY5hPkz9NY'
-product_v2:
-  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b5f00040-57a0-4a6d-a39e-383b1936c2c9
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: efeccc00d057a7e7115f1b156c3d9202ab476ded
+product_v2: id: b974b164-8a4e-43b8-a9e2-8e67ec131677id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b5f00040-57a0-4a6d-a39e-383b1936c2c9id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+source-git-commit: 5f20ef1b6e40728e38d06f5c9f90f72ba1eb43e0
 workflow-type: tm+mt
 source-wordcount: 764
 ht-degree: 0%
@@ -47,7 +37,7 @@ Hay dos implementaciones de caché L2 disponibles:
 
 >[!NOTE]
 >
->Para Adobe Commerce en la nube, configure la caché L2 estableciendo la variable de implementación [`REDIS_BACKEND`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=es#redis_backend) o [`VALKEY_BACKEND`](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend) en `.magento.env.yaml`. Consulte [Configurar la caché L2](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md#configure-l2-cache) para ver ejemplos de configuración.
+>Para Adobe Commerce en la nube, configure la caché L2 estableciendo la variable de implementación [`REDIS_BACKEND`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_backend) o [`VALKEY_BACKEND`](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend) en `.magento.env.yaml`. Consulte [Configurar la caché L2](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md#configure-l2-cache) para ver ejemplos de configuración.
 
 ## Configuración de caché L2 heredada (RemoteSynchronizedCache)
 
@@ -88,11 +78,11 @@ Donde:
 
 - `backend` es la implementación de caché L2.
 - `backend_options` es la configuración de caché L2.
-   - `remote_backend` es la implementación de caché remota: Redis o MySQL.
-   - `remote_backend_options` es la configuración de caché remota.
-   - `local_backend` es la implementación de caché local: `Cm_Cache_Backend_File`
-   - `local_backend_options` es la configuración de caché local.
-   - `cache_dir` es una opción específica de la caché de archivos para el directorio donde se almacena la caché local.
+  - `remote_backend` es la implementación de caché remota: Redis o MySQL.
+  - `remote_backend_options` es la configuración de caché remota.
+  - `local_backend` es la implementación de caché local: `Cm_Cache_Backend_File`
+  - `local_backend_options` es la configuración de caché local.
+  - `cache_dir` es una opción específica de la caché de archivos para el directorio donde se almacena la caché local.
 
 Adobe recomienda usar Redis para el almacenamiento remoto en caché (`\Magento\Framework\Cache\Backend\Redis`) y `Cm_Cache_Backend_File` para el almacenamiento local en caché de datos en la memoria compartida, con: `'local_backend_options' => ['cache_dir' => '/dev/shm/']`
 
@@ -188,7 +178,7 @@ A partir de Commerce 2.4.9, puede utilizar la implementación de caché L2 basad
 
 >[!NOTE]
 >
->Actualmente, esta funcionalidad solo está disponible para clientes de Adobe Commerce local 2.4.9. Se habilitará para Adobe Commerce en la nube más adelante en julio de 2026.
+>Actualmente, esta funcionalidad solo está disponible para clientes de Adobe Commerce On Premises 2.4.9. Se habilitará para Adobe Commerce en la nube más adelante en julio de 2026.
 
 ### Ventajas de la caché Symfony L2
 
