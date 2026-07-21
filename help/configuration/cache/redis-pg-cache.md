@@ -21,9 +21,9 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 7171e5abfad69ad0f2d3f4c4b5eb57c13d07feb4
+source-git-commit: ec95c99d060f3c45095236d41729648abf389dd1
 workflow-type: tm+mt
-source-wordcount: 1261
+source-wordcount: 1411
 ht-degree: 0%
 
 ---
@@ -235,6 +235,59 @@ Como es un indicador, no puede deshabilitarlo con un comando. Establezca manualm
     ],
 ```
 
+## Optimización del rendimiento
+
+Si utiliza Symfony Cache, puede optimizar aún más el rendimiento configurando el serializador Igbinary, instalando la extensión PHP igbinary y la extensión phpredis, y habilitando conexiones persistentes.
+
+### Serializador igbinario
+
+El serializador Igbinary proporciona mejoras significativas de rendimiento sobre la serialización predeterminada de PHP. Debe configurarse manualmente en `app/etc/env.php`:
+
+```php
+'cache' => [
+    'frontend' => [
+        'default' => [
+            'backend_options' => [
+                'server' => 'redis',
+                'database' => '0',
+                'port' => '6379',
+                'serializer' => 'igbinary',  // Enable Igbinary serialization
+            ]
+        ],
+        'page_cache' => [
+            'backend_options' => [
+                'server' => 'redis',
+                'database' => '1',
+                'port' => '6379',
+                'serializer' => 'igbinary',  // Enable Igbinary for page cache too
+            ]
+        ]
+    ]
+]
+```
+
+### Instale la extensión PHP Igbinary
+
+Para utilizar la serialización igbinary, debe instalar la extensión PHP Igbinary.
+
+**Usando apt (recomendado para Debian/Ubuntu)**:
+
+```bash
+sudo apt-get install php-igbinary
+sudo systemctl restart php-fpm
+php -m | grep igbinary
+```
+
+**Usando pecl (método alternativo)**:
+
+```bash
+sudo pecl install igbinary
+echo "extension=igbinary.so" | sudo tee /etc/php/8.3/mods-available/igbinary.ini
+sudo phpenmod igbinary
+sudo systemctl restart php-fpm
+php -m | grep igbinary
+```
+
 ### Extensión de PHP Redis
 
 Utilice la extensión nativa de PHP Redis (`phpredis`) cuando su entorno la admita:
@@ -259,6 +312,98 @@ echo "extension=redis.so" | sudo tee /etc/php/<version>/mods-available/redis.ini
 sudo phpenmod redis
 sudo systemctl restart php-fpm
 php -m | grep redis
+```
+
+**Comparación de rendimiento**:
+
+| Operación | Predis | fpredis | Mejora |
+|-----------|--------|----------|-------------|
+| GET de caché | 1-5 ms | 0,5-2 ms | De 2 a 3 veces más rápido |
+| CONJUNTO DE caché | 2 a 6 ms | 0,8-2,5 ms | De 2 a 3 veces más rápido |
+| Operaciones de etiqueta | 10-30 ms | 3 a 10 ms | De 3 a 4 veces más rápido |
+
+### Conexiones persistentes
+
+Las conexiones persistentes reutilizan las conexiones de Redis existentes entre solicitudes, lo que proporciona operaciones de caché un 5-15 % más rápidas. Configurar en `app/etc/env.php`:
+
+```php
+'cache' => [
+    'frontend' => [
+        'default' => [
+            'backend_options' => [
+                'server' => 'redis',
+                'database' => '0',
+                'port' => '6379',
+                'persistent' => '1',
+                'persistent_id' => 'cache_default',
+                'timeout' => '2.5',
+                'read_timeout' => '2.0',
+            ]
+        ],
+        'page_cache' => [
+            'backend_options' => [
+                'server' => 'redis',
+                'database' => '1',
+                'port' => '6379',
+                'persistent' => '1',
+                'persistent_id' => 'cache_fpc',
+            ]
+        ]
+    ]
+]
+```
+
+>[!IMPORTANT]
+>
+>Use un `persistent_id` único para cada tipo de caché a fin de evitar conflictos de conexión.
+
+### Configuración optimizada completa
+
+Esta es una configuración de Redis lista para la producción que combina todas las optimizaciones de rendimiento:
+
+```php
+'cache' => [
+    'frontend' => [
+        'default' => [
+            'id_prefix' => 'b0b_',
+            'backend' => 'redis',
+            'backend_options' => [
+                'server' => 'redis',
+                'database' => '0',
+                'port' => '6379',
+                'serializer' => 'igbinary',
+                'compress_data' => '1',
+                'compression_lib' => 'gzip',
+                'persistent' => '1',
+                'persistent_id' => 'cache_default',
+                'timeout' => '2.5',
+                'read_timeout' => '2.0',
+                'use_lua' => '1',
+                'use_lua_on_gc' => '1',
+                'preload_keys' => [
+                    'b0b_EAV_ENTITY_TYPES',
+                    'b0b_GLOBAL_PLUGIN_LIST',
+                    'b0b_DB_IS_UP_TO_DATE',
+                    'b0b_SYSTEM_DEFAULT',
+                ],
+            ]
+        ],
+        'page_cache' => [
+            'id_prefix' => 'b0b_',
+            'backend' => 'redis',
+            'backend_options' => [
+                'server' => 'redis',
+                'database' => '1',
+                'port' => '6379',
+                'serializer' => 'igbinary',
+                'compress_data' => '0',
+                'persistent' => '1',
+                'persistent_id' => 'cache_fpc',
+            ]
+        ]
+    ],
+    'allow_parallel_generation' => false
+]
 ```
 
 ## Compruebe la conexión de Redis

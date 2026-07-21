@@ -1,7 +1,7 @@
 ---
-source-git-commit: 15314bbcb5c2bdccf92901235f7d07e1770955d9
+source-git-commit: d8197ca0e1028cb50fae0415843c80ac68e49566
 workflow-type: tm+mt
-source-wordcount: '1111'
+source-wordcount: '1118'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Para Adobe Commerce en proyectos en la nube, consulte [Prácticas recomendadas para la configuración de los servicios Redis y Valkey](https://experienceleague.adobe.com/es/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration) para obtener instrucciones de configuración de la caché. La caché de Redis no es compatible con Adobe Commerce 2.4.9 o con versiones de parches posteriores a las 2.4.5-p16, 2.4.6-p14, 2.4.7-p9 y 2.4.8-p5. Utilice Valkey para la configuración de caché donde no se admita Redis. Consulte [Requisitos del sistema](https://experienceleague.adobe.com/es/docs/commerce-operations/installation-guide/system-requirements) para ver los servicios de caché admitidos por versión.
+>Para Adobe Commerce en proyectos en la nube, consulte [Prácticas recomendadas para la configuración de los servicios Redis y Valkey](https://experienceleague.adobe.com/es/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration) para obtener instrucciones de configuración de la caché.
+
+## Compatibilidad con caché de Redis {#redis-cache-support}
+
+La caché de Redis no es compatible con Adobe Commerce 2.4.9 o con versiones de parches posteriores a las 2.4.5-p16, 2.4.6-p14, 2.4.7-p9 y 2.4.8-p5. Si está actualizando a una versión que no admite Redis, debe configurar Valkey y actualizar la configuración de caché para utilizarlo. Para implementaciones locales, consulte [configurar Valkey](/help/configuration/cache/config-valkey.md).
 
 ## Nota de configuración de Commerce en Cloud Varnish con referencia {#varnish-config-cloud}
 

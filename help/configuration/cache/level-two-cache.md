@@ -20,9 +20,9 @@ level_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: efeccc00d057a7e7115f1b156c3d9202ab476ded
+source-git-commit: d92082d5311d8cfccc1299d0014c238cbaf102e3
 workflow-type: tm+mt
-source-wordcount: 764
+source-wordcount: 826
 ht-degree: 0%
 
 ---
@@ -45,13 +45,17 @@ Hay dos implementaciones de caché L2 disponibles:
 | [Heredado (`RemoteSynchronizedCache`)](#legacy-l2-cache-configuration-remotesynchronizedcache) | 2.4.x | Caché de dos niveles basada en Zend con `Cm_Cache_Backend_File` para almacenamiento local |
 | [Moderno (`symfony_l2`)](#modern-symfony-l2-cache-implementation) | 2.4.9+ | L2 basado en caché Symfony con compatibilidad con PSR-6 y rendimiento mejorado |
 
->[!NOTE]
->
->Para Adobe Commerce en la nube, configure la caché L2 estableciendo la variable de implementación [`REDIS_BACKEND`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=es#redis_backend) o [`VALKEY_BACKEND`](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend) en `.magento.env.yaml`. Consulte [Configurar la caché L2](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md#configure-l2-cache) para ver ejemplos de configuración.
-
 ## Configuración de caché L2 heredada (RemoteSynchronizedCache)
 
-Utilice el siguiente ejemplo para modificar o reemplazar la sección de caché existente en el archivo `app/etc/env.php`.
+>[!NOTE]
+>
+>Las instrucciones de configuración de caché L2 heredada se aplican a versiones anteriores de Adobe Commerce. Si usa la versión 2.4.9 o posterior de Adobe Commerce, Adobe recomienda usar [Symfony 2 para la caché L2](#modern-symfony-l2-cache-implementation).
+
+Las instrucciones de configuración de la caché dependen del tipo de implementación:
+
+- **Para Adobe Commerce en la nube**, configure la caché L2 estableciendo la variable de implementación [`REDIS_BACKEND`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=es#redis_backend) o [`VALKEY_BACKEND`](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend) en `.magento.env.yaml`. Consulte [Configurar la caché L2](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md#configure-l2-cache) para ver ejemplos de configuración.
+
+- **Para las versiones locales de Adobe Commerce compatibles con Redis**, use el siguiente ejemplo para modificar o reemplazar la sección de caché existente en el archivo `app/etc/env.php`.
 
 ```php
 'cache' => [
@@ -81,20 +85,20 @@ Utilice el siguiente ejemplo para modificar o reemplazar la sección de caché e
     'type' => [
         'default' => ['frontend' => 'default'],
     ],
-],
+]
 ```
 
 Donde:
 
 - `backend` es la implementación de caché L2.
 - `backend_options` es la configuración de caché L2.
-   - `remote_backend` es la implementación de caché remota: Redis o MySQL.
-   - `remote_backend_options` es la configuración de caché remota.
-   - `local_backend` es la implementación de caché local: `Cm_Cache_Backend_File`
-   - `local_backend_options` es la configuración de caché local.
-   - `cache_dir` es una opción específica de la caché de archivos para el directorio donde se almacena la caché local.
+  - `remote_backend` es la implementación de caché remota: Redis o MySQL.
+  - `remote_backend_options` es la configuración de caché remota.
+  - `local_backend` es la implementación de caché local: `Cm_Cache_Backend_File`
+  - `local_backend_options` es la configuración de caché local.
+  - `cache_dir` es una opción específica de la caché de archivos para el directorio donde se almacena la caché local.
 
-Adobe recomienda usar Redis para el almacenamiento remoto en caché (`\Magento\Framework\Cache\Backend\Redis`) y `Cm_Cache_Backend_File` para el almacenamiento local en caché de datos en la memoria compartida, con: `'local_backend_options' => ['cache_dir' => '/dev/shm/']`
+Para Adobe Commerce, Adobe recomienda usar Redis para el almacenamiento remoto en caché (`\Magento\Framework\Cache\Backend\Redis`) y `Cm_Cache_Backend_File` para el almacenamiento local en caché de datos en la memoria compartida, con: `'local_backend_options' => ['cache_dir' => '/dev/shm/']`
 
 Adobe recomienda el uso de la característica [`cache preload`](redis-pg-cache.md#redis-preload-feature), ya que reduce drásticamente la presión sobre Redis. No olvide agregar el sufijo &#39;:hash&#39; para las claves de precarga.
 
@@ -184,11 +188,11 @@ El siguiente código muestra un ejemplo de configuración:
 
 ## Implementación moderna de la caché Symfony L2
 
-A partir de Commerce 2.4.9, puede utilizar la implementación de caché L2 basada en Symfony Cache (`symfony_l2` backend) que proporciona una implementación de almacenamiento en caché moderna compatible con PSR-6 con mejoras significativas de rendimiento con respecto a la implementación tradicional de `RemoteSynchronizedCache`.
+En las versiones de Commerce 2.4.9 o posterior, utilice la implementación de caché L2 basada en caché de Symfony (`symfony_l2` backend) en lugar de la caché L2 heredada.  La caché Symfony L2 proporciona una implementación de almacenamiento en caché moderna compatible con PSR-6 con mejoras de rendimiento significativas con respecto a la versión tradicional de `RemoteSynchronizedCache`.
 
 >[!NOTE]
 >
->Actualmente, esta funcionalidad solo está disponible para clientes de Adobe Commerce local 2.4.9. Se habilitará para Adobe Commerce en la nube más adelante en julio de 2026.
+>Para Adobe Commerce en la nube, el paquete de herramientas de ECE (`ece-tools`) administra esta configuración automáticamente. No edite `app/etc/env.php` directamente: la implementación sobrescribe los cambios manuales. Para la configuración en la nube, consulta [Configurar la caché de Symfony L2](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md#configure-symfony-l2-cache) en su lugar.
 
 ### Ventajas de la caché Symfony L2
 
