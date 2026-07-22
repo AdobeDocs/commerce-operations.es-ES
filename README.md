@@ -1,7 +1,7 @@
 ---
-source-git-commit: 44c3c7eaf57d858b5810e6ba6f510e9fea4e1a1a
+source-git-commit: 73d9b59320fac5ad73e893e87aea1edb4bb72a06
 workflow-type: tm+mt
-source-wordcount: '506'
+source-wordcount: '521'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Si forma parte de la comunidad de Adobe y desea crear un artículo nuevo o envia
 
 ### Cambios importantes de los empleados de Adobe
 
-Si es redactor técnico, administrador de programa o desarrollador del equipo de producto para una solución de Adobe Experience Cloud y debe contribuir o crear artículos técnicos, debe utilizar el repositorio privado en `https://github.com/Adobe-Enterprise-Docs`.
+Si es redactor técnico, administrador de programa o desarrollador del equipo de producto para una solución de Adobe Experience Cloud y debe contribuir a artículos técnicos o crearlos, debe utilizar el repositorio privado en `https://github.com/Adobe-Enterprise-Docs`.
 
 ## Herramientas y configuración
 
@@ -76,11 +76,14 @@ Para obtener instrucciones de instalación, solución de problemas y configuraci
 
 ## Tareas de rastrillo disponibles
 
-Este repositorio usa las tareas de rastrillado proporcionadas por la joya `adobe-comdox-exl-rake-tasks`. Para ver todas las tareas disponibles, ejecute:
+Este repositorio utiliza las tareas de rastreo proporcionadas por el
+[`adobe-comdox-exl-rake-tasks`](https://github.com/commerce-docs/adobe-comdox-exl-rake-tasks)
+joya. Para ver todas las tareas disponibles, ejecute:
 
 ```bash
 cd _jekyll
 bundle exec rake --tasks
 ```
 
-
+Para las tareas específicas de la repo, el formato de archivo de las relaciones de inclusión y la configuración
+detalles, consulte [`_jekyll/ReadMe.md`](_jekyll/ReadMe.md).
