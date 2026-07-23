@@ -2,7 +2,7 @@
 title: Directiva de versión
 description: Obtenga información acerca de los tipos de versiones de Adobe Commerce, marketing y versiones de módulos, versiones de parches y seguridad, beta, revisiones y la directiva de versión general.
 exl-id: 61a83de6-6a7b-4a88-8fff-1638b4fe472a
-source-git-commit: 8be75548a939008057fb5fdf37ba5b5a0345f6d4
+source-git-commit: 48fc318078cbf1800522aeb43d8927b72727e7ed
 workflow-type: tm+mt
 source-wordcount: '703'
 ht-degree: 0%
@@ -16,9 +16,9 @@ Adobe Commerce usa [versiones semánticas](https://semver.org/) en el nivel de m
 - **Versión principal**—2
 - **Versión menor**—2.4
 - **Versión de PATCH**—2.4.8
-   - **Versión del parche de SEGURIDAD**—2.4.8-p1
-      - Corrección de errores de seguridad
-      - Mejora de seguridad
+  - **Versión del parche de SEGURIDAD**—2.4.8-p1
+    - Corrección de errores de seguridad
+    - Mejora de seguridad
 - **Versión de parche de ALPHA**—2.4.8-alpha1
 - **Versión de parche de BETA**—2.4.8-beta1
 - **Extensibilidad, infraestructura y servicios**
@@ -81,4 +81,4 @@ Los parches individuales contienen correcciones de calidad de bajo impacto para 
 
 Creado por personal que no es de Adobe para solucionar un problema o modificar el código de Adobe Commerce por varios motivos.
 
-<!-- Last updated from includes: 2026-04-20 10:12:04 -->
+<!-- Last updated from includes: 2026-06-16 17:36:23 -->

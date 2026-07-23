@@ -4,9 +4,9 @@ user-guide-description: Obtenga información sobre las distintas herramientas qu
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: c6a5714275fc7f36688b4aaabffadb90a346e61a
+source-git-commit: f28140efde87efac04d64121ecbc603dbe87e6b6
 workflow-type: tm+mt
-source-wordcount: '10449'
+source-wordcount: '10465'
 ht-degree: 0%
 
 ---
@@ -1041,6 +1041,7 @@ ht-degree: 0%
       - [ACP2E-4630: Los nombres de productos largos se superponen con las columnas adyacentes en PDF de ventas de varias páginas después de los saltos de página](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4630.md)
       - [ACP2E-4680: Los productos no vendibles desaparecen de las cotizaciones negociables finalizadas](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4680.md)
       - [ACP2E-4300: Los permisos del catálogo de tiendas no se actualizan tras el cambio del grupo de clientes administradores](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4300.md)
+      - [ACP2E-4709: Las páginas de CMS no se guardan en Page Builder cuando la jerarquía de páginas incluye comillas dobles](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4709.md)
   - [Comprobar parche para el problema de Adobe Commerce con la herramienta Parches de calidad](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Referencia de herramientas de la línea de comandos {#cli-reference}
   - [Adobe Commerce (local)](reference/commerce-on-premises.md)

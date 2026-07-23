@@ -1,7 +1,7 @@
 ---
-source-git-commit: 970dcea74edf889a6cb5abf1449d63dfe2d7d654
+source-git-commit: 06df92107c98f188a5dcb4b56aa6d61d3c594a7e
 workflow-type: tm+mt
-source-wordcount: '2772'
+source-wordcount: '2460'
 ht-degree: 0%
 
 ---
@@ -683,88 +683,6 @@ Esta página contiene los cambios realizados en los últimos 60 días. Excluimos
         Tema nuevo, qpt
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/21979ca7c9dd21a871c22271603bcd09b9dfd29a">comprometer</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 23 de mayo de 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descripción</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Se han agregado correcciones de errores tipográficos y URL de la corrección de QPT 1.1.30 para <a href="https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-30/b2b-2598-add-caching-capability">B2B-2598: agrega capacidad de almacenamiento en caché a storeConfig, currency, country, countries, availableStores y consultas de GraphQl</a>.</p>
-</td>
-      <td>
-        Qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/07202bf339331adb7b4103cdd123b0a194b72bf4">comprometer</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 22 de mayo de 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descripción</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Se han actualizado las <a href="https://experienceleague.adobe.com/es/docs/commerce-operations/release/notes/adobe-commerce/2-4-9">notas de la versión 2.4.9 de Adobe Commerce</a> y las <a href="https://experienceleague.adobe.com/es/docs/commerce-operations/release/notes/magento-open-source/2-4-9">notas de la versión 2.4.9 de Magento Open Source</a>: se ha aclarado la corrección de AC-10933 <code>setup:di:compile</code>, se ha eliminado la corrección cancelada de AC-14519 y se han ajustado los recuentos de problemas corregidos.<br /><em>Crédito: <a href="https://github.com/hostep">hostep</a></em></p>
-</td>
-      <td>
-        Comentarios, asistencia técnica
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/0e5a69a282839a393d6eb873af9938208706af50">comprometer</a></td>
-    </tr>
-    <tr>
-      <td><p>Se agregó una descripción detallada de la corrección de QPT 1.1.79 para <a href="https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/ac-10737">AC-10737: El comando <code>setup:db:status</code> de Bin/Magento no reconoce el tipo de datos JSON</a>.</p>
-</td>
-      <td>
-        Tema nuevo, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/9aad978f42697f74ebd7c8f401e45b4780bd5038">comprometer</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 20 de mayo de 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descripción</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Se agregó una descripción detallada de la corrección de QPT 1.1.79 para <a href="https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4601">ACP2E-4601: Volver a guardar una transacción de autorización de pago con autorreferencia parent_id y déclencheur un bucle infinito/OOM</a>.</p>
-</td>
-      <td>
-        Tema nuevo, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/3fe9730b1954a07d9ef4a405ee75fcde9511e09d">comprometer</a></td>
-    </tr>
-    <tr>
-      <td><p>Se ha actualizado <a href="https://experienceleague.adobe.com/es/docs/commerce-operations/release/planning/lifecycle-policy">la política de ciclo de vida del software</a> con fechas de aplicación de actualización de la versión de Cloud, definiciones de períodos de soporte (incluido el período de transición de solo seguridad), una tabla de fin de soporte ampliada para 2.4.4-2.4.9, directrices PCI de PHP y rutas para migrar a Adobe Commerce as a Cloud Service o actualizar en PaaS.</p>
-</td>
-      <td>
-        Actualización importante
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/cd0f27ae6a8dcec9b25af15386d8350c22d2fb95">comprometer</a></td>
     </tr>
   </tbody>
 </table>
