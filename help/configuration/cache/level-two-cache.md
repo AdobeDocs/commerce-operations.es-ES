@@ -3,26 +3,16 @@ title: Configuración de caché L2 para la optimización del rendimiento
 description: Aprenda a configurar la caché L2 en Adobe Commerce para reducir el tráfico de red y mejorar el rendimiento. Descubra las opciones de implementación heredadas y de Symfony.
 feature: Configuration, Cache
 exl-id: 0504c6fd-188e-46eb-be8e-968238571f4e
-badgePaas: label="En las instalaciones" type="Informative" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos locales de Adobe Commerce."
+badgePaas: label="En las instalaciones" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos locales de Adobe Commerce."
 TQID: 'https://experienceleague.adobe.com/7vswBqyn9UZLmaeirgPRZ4xEQH5F66XUEtY5hPkz9NY'
-product_v2:
-  - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: b5f00040-57a0-4a6d-a39e-383b1936c2c9
-  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
-  - id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: d92082d5311d8cfccc1299d0014c238cbaf102e3
+product_v2: id: b974b164-8a4e-43b8-a9e2-8e67ec131677id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: b5f00040-57a0-4a6d-a39e-383b1936c2c9id: dac87252-6066-4d6e-a9d2-f6d84c323de7id: e8818fe6-9c8b-4bc0-9ef8-377a10b7bc75
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+source-git-commit: a816ed6fff5e2573b93712069bc7b1524dcad403
 workflow-type: tm+mt
-source-wordcount: 826
+source-wordcount: 1166
 ht-degree: 0%
 
 ---
@@ -42,18 +32,18 @@ Hay dos implementaciones de caché L2 disponibles:
 
 | Implementación | Versión | Descripción |
 | -------------- | ------- | ----------- |
-| [Heredado (`RemoteSynchronizedCache`)](#legacy-l2-cache-configuration-remotesynchronizedcache) | 2.4.x | Caché de dos niveles basada en Zend con `Cm_Cache_Backend_File` para almacenamiento local |
-| [Moderno (`symfony_l2`)](#modern-symfony-l2-cache-implementation) | 2.4.9+ | L2 basado en caché Symfony con compatibilidad con PSR-6 y rendimiento mejorado |
+| [Heredado (`RemoteSynchronizedCache`)](#legacy-l2-cache-configuration-remotesynchronizedcache) | &lt;2.4.9 | Caché de dos niveles basada en Zend con `Cm_Cache_Backend_File` para almacenamiento local |
+| [Moderno (`symfony_l2`)](#modern-symfony-l2-cache-implementation) | 2.4.9+ | L2 basado en caché Symfony con compatibilidad con PSR-6 y rendimiento mejorado. Solo admite Valkey. |
 
 ## Configuración de caché L2 heredada (RemoteSynchronizedCache)
 
 >[!NOTE]
 >
->Las instrucciones de configuración de caché L2 heredada se aplican a versiones anteriores de Adobe Commerce. Si usa la versión 2.4.9 o posterior de Adobe Commerce, Adobe recomienda usar [Symfony 2 para la caché L2](#modern-symfony-l2-cache-implementation).
+>Las instrucciones de configuración de caché L2 heredada se aplican a versiones anteriores de Adobe Commerce. Si usa la versión 2.4.9 o posterior de Adobe Commerce, use Valkey con [Symfony 2 para la caché L2](#modern-symfony-l2-cache-implementation).
 
 Las instrucciones de configuración de la caché dependen del tipo de implementación:
 
-- **Para Adobe Commerce en la nube**, configure la caché L2 estableciendo la variable de implementación [`REDIS_BACKEND`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=es#redis_backend) o [`VALKEY_BACKEND`](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend) en `.magento.env.yaml`. Consulte [Configurar la caché L2](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md#configure-l2-cache) para ver ejemplos de configuración.
+- **Para Adobe Commerce en la nube**, configure la caché L2 estableciendo la variable de implementación [`REDIS_BACKEND`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_backend) o [`VALKEY_BACKEND`](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend) en `.magento.env.yaml`. Consulte [Configurar la caché L2](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md#configure-l2-cache) para ver ejemplos de configuración.
 
 - **Para las versiones locales de Adobe Commerce compatibles con Redis**, use el siguiente ejemplo para modificar o reemplazar la sección de caché existente en el archivo `app/etc/env.php`.
 
@@ -188,20 +178,26 @@ El siguiente código muestra un ejemplo de configuración:
 
 ## Implementación moderna de la caché Symfony L2
 
-En las versiones de Commerce 2.4.9 o posterior, utilice la implementación de caché L2 basada en caché de Symfony (`symfony_l2` backend) en lugar de la caché L2 heredada.  La caché Symfony L2 proporciona una implementación de almacenamiento en caché moderna compatible con PSR-6 con mejoras de rendimiento significativas con respecto a la versión tradicional de `RemoteSynchronizedCache`.
+En las versiones de Commerce 2.4.9 o posterior, utilice la implementación de caché L2 basada en caché de Symfony (`symfony_l2` backend) en lugar de la caché L2 heredada. La caché Symfony L2 proporciona una implementación de almacenamiento en caché moderna compatible con PSR-6 con mejoras de rendimiento significativas con respecto a la versión tradicional de `RemoteSynchronizedCache`.
 
 >[!NOTE]
 >
 >Para Adobe Commerce en la nube, el paquete de herramientas de ECE (`ece-tools`) administra esta configuración automáticamente. No edite `app/etc/env.php` directamente: la implementación sobrescribe los cambios manuales. Para la configuración en la nube, consulta [Configurar la caché de Symfony L2](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md#configure-symfony-l2-cache) en su lugar.
 
+>[!IMPORTANT]
+>
+>{{redis-cache-support}}
+>
+>Dado que `symfony_l2` solo está disponible en Adobe Commerce 2.4.9 y versiones posteriores, configúrelo con Valkey como servidor remoto. Redis no es un servidor remoto compatible oficialmente para `symfony_l2`. Consulte [Requisitos del sistema](../../installation/system-requirements.md) para ver los servicios de caché admitidos por versión.
+
 ### Ventajas de la caché Symfony L2
 
 - **Arquitectura moderna**: creada en los componentes de la caché Symfony (compatible con PSR-6)
 - **Mejor rendimiento**: Compatibilidad nativa con serialización Igbinary, compresión gzip y scripts Lua
-- **Conexiones persistentes**: reduce la sobrecarga de conexión de Redis o Valkey con la agrupación de conexiones
+- **Conexiones persistentes**: reduce la sobrecarga de conexión de Valkey con la agrupación de conexiones
 - **Claves de precarga**: admite la precarga de claves de caché para datos críticos
 - **Compatibilidad con caché obsoleta**: Compatibilidad total con la opción `use_stale_cache`
-- **Configuración simplificada**: nombres de tipo de servidor más limpios (`redis`, `valkey`, `file`)
+- **Configuración simplificada**: nombres de tipo de servidor más limpios (`valkey`, `file`)
 
 ### Ejemplo de configuración con caché Symfony L2
 
@@ -213,8 +209,8 @@ Usar el tipo de servidor `symfony_l2` simplificado para la caché L2:
         'default' => [
             'backend' => 'symfony_l2',
             'backend_options' => [
-                // L2 (Remote): Redis with Symfony Cache
-                'remote_backend' => 'redis',
+                // L2 (Remote): Valkey with Symfony Cache
+                'remote_backend' => 'valkey',
                 'remote_backend_options' => [
                     'server' => 'localhost',
                     'database' => '0',
@@ -259,7 +255,7 @@ Configure front-end independientes para admitir caché obsoleta:
         'default' => [
             'backend' => 'symfony_l2',
             'backend_options' => [
-                'remote_backend' => 'redis',
+                'remote_backend' => 'valkey',
                 'remote_backend_options' => [
                     'server' => 'localhost',
                     'database' => '0',
@@ -278,7 +274,7 @@ Configure front-end independientes para admitir caché obsoleta:
         'stale_cache_enabled' => [
             'backend' => 'symfony_l2',
             'backend_options' => [
-                'remote_backend' => 'redis',
+                'remote_backend' => 'valkey',
                 'remote_backend_options' => [
                     'server' => 'localhost',
                     'database' => '0',
@@ -312,31 +308,47 @@ Configure front-end independientes para admitir caché obsoleta:
 
 | Opción | Tipo | Predeterminado | Descripción |
 |--------|------|---------|-------------------------------------------------------------------|
-| `remote_backend` | cadena | `'redis'` | Tipo de servidor remoto: `redis`, `valkey` o `file` |
-| `remote_backend_options` | matriz | `[]` | Configuración del servidor remoto (consulte la documentación de Redis/Valkey) |
+| `remote_backend` | cadena | `'valkey'` | Tipo de servidor remoto: `valkey` o `file`. Usar `valkey` para la caché L2. |
+| `remote_backend_options` | matriz | `[]` | Configuración remota del servidor (consulte la documentación de Valkey) |
 | `local_backend` | cadena | `'file'` | Tipo de servidor local: `file` o `apcu` |
 | `local_backend_options` | matriz | `[]` | Configuración del servidor local |
-| `cleanup_percentage` | entero | `90` | Umbral de limpieza de caché L1 (1-100) |
+| `cleanup_percentage` | entero | `95` | Umbral de limpieza de caché L1 (1-100) |
 | `use_stale_cache` | booleano | `false` | Habilitar caché anticuada para alta disponibilidad |
 
-### Asistencia de Valkey
+>[!NOTE]
+>
+>La opción `remote_backend` también acepta un valor de `redis`. Sin embargo, Redis no es un servicio de caché admitido oficialmente para Adobe Commerce 2.4.9 y versiones posteriores. Adobe recomienda configurar `symfony_l2` solo con `valkey`. Consulte [Requisitos del sistema](../../installation/system-requirements.md) para ver los servicios de caché admitidos por versión.
 
-El servidor `symfony_l2` también admite Valkey como servidor remoto:
+### Rendimiento y fiabilidad mejorados de la caché Symfony L2
 
-```php
-'backend_options' => [
-    'remote_backend' => 'valkey',  // Use Valkey instead of Redis
-    'remote_backend_options' => [
-        'server' => 'localhost',
-        'database' => '0',
-        'port' => '6379',
-        'serializer' => 'igbinary',
-        'compression_lib' => 'gzip',
-    ],
-    // ... rest of configuration
-]
-```
+>[!NOTE]
+>
+>Estas mejoras se aplican a las implementaciones de Adobe Commerce 2.4.9 que utilizan `symfony_l2` y están disponibles con el parche ACP2E-5132. Consulte [Parches de nube para Commerce](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches#latest) para ver las últimas notas de la versión de los parches.
+
+#### Almacenamiento de etiquetas de caché de Symfony L2 optimizado
+
+Se ha optimizado el comportamiento de la caché de Symfony L2 para implementaciones respaldadas por Valkey al eliminar escrituras redundantes de índices de etiquetas de sistemas de archivos. Las etiquetas de caché ahora se almacenan exclusivamente en Valkey, alineando el comportamiento de la caché de Symfony L2 con la implementación de la caché heredada. Esto reduce la E/S de disco innecesaria, mejora el rendimiento de escritura en caché y evita el crecimiento del directorio `var/cache/symfony/tags/`.
+
+#### Comportamiento de caché basado en archivos mejorado
+
+Para implementaciones que utilizan la caché basada en archivos (sin Valkey), el índice de etiquetas local se sigue manteniendo para admitir la invalidación de la caché. El índice de etiquetas ahora se escribe en la ubicación `cache_dir` configurada en lugar de en la ubicación `var/cache` codificada anteriormente, lo que garantiza un uso coherente del directorio de caché y una compatibilidad mejorada con las configuraciones de caché personalizadas.
+
+#### Invalidación de caché mejorada
+
+La invalidación de caché ahora utiliza bloqueos de regeneración basados en TTL con una limpieza de etiquetas L1 adecuada, lo que elimina las entradas de caché antiguas que anteriormente podían persistir después de la invalidación de etiquetas.
+
+#### Compresión habilitada de forma predeterminada
+
+La compresión Redis/Valkey (`compress_data`) ahora está habilitada de manera predeterminada para la caché Symfony L2, lo que reduce el consumo de memoria y el tráfico de red y se alinea con el comportamiento predeterminado de la implementación de caché heredada.
+
+#### Impacto
+
+- Elimina las escrituras redundantes del índice de etiquetas del sistema de archivos para las implementaciones de caché Symfony L2 respaldadas por Valkey.
+- Reduce la E/S del disco y mejora el rendimiento de escritura en caché.
+- Evita el crecimiento innecesario del directorio `var/cache/symfony/tags/`.
+- Garantiza que las implementaciones de caché basadas en archivos utilicen de forma coherente el elemento `cache_dir` configurado y, al mismo tiempo, conserva el comportamiento de invalidación de la caché.
+- Elimina las entradas de caché antiguas mediante bloqueos de regeneración basados en TTL y una limpieza de etiquetas L1 adecuada.
+- Reduce el consumo de memoria y el tráfico de red con `compress_data` habilitado de forma predeterminada.
 
 Para ver las opciones de configuración detalladas, consulte:
-- [Configuración de caché de Redis con caché de Symfony](redis-pg-cache.md)
 - [Configuración de la caché de Valkey con Symfony Cache](valkey-pg-cache.md)
