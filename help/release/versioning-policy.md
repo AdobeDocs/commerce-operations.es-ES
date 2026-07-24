@@ -2,7 +2,7 @@
 title: Directiva de versión
 description: Obtenga información acerca de los tipos de versiones de Adobe Commerce, marketing y versiones de módulos, versiones de parches y seguridad, beta, revisiones y la directiva de versión general.
 exl-id: 61a83de6-6a7b-4a88-8fff-1638b4fe472a
-source-git-commit: 48fc318078cbf1800522aeb43d8927b72727e7ed
+source-git-commit: d9152906a6fbbd765a60e3aeacdbf7cc7527529d
 workflow-type: tm+mt
 source-wordcount: '703'
 ht-degree: 0%
@@ -82,3 +82,4 @@ Los parches individuales contienen correcciones de calidad de bajo impacto para 
 Creado por personal que no es de Adobe para solucionar un problema o modificar el código de Adobe Commerce por varios motivos.
 
 <!-- Last updated from includes: 2026-06-16 17:36:23 -->
+

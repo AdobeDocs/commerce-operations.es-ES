@@ -18,9 +18,9 @@ level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 3d64249bf778a5aa73db22a532a454bb37d6dd37
+source-git-commit: d9152906a6fbbd765a60e3aeacdbf7cc7527529d
 workflow-type: tm+mt
-source-wordcount: 309
+source-wordcount: 331
 ht-degree: 0%
 
 ---
@@ -88,14 +88,17 @@ Utiliza nombres de tipo de servidor simplificado:
 
 | Servidor | Escriba el nombre |
 | ------- | --------- |
-| Redis | `redis` |
 | Valkey | `valkey` |
 | Sistema de archivos | `file` |
+
+>[!NOTE]
+>
+>El nombre de tipo `redis` también se acepta, pero Redis no es un servicio de caché admitido oficialmente para Adobe Commerce 2.4.9 y versiones posteriores. Utilice `valkey` en su lugar.
 
 **Ejemplo de configuración:**
 
 ```php?start_inline=1
-'backend' => 'redis',
+'backend' => 'valkey',
 'backend_options' => [
     'server' => '127.0.0.1',
     'database' => '0',
@@ -114,3 +117,4 @@ Para ver las opciones de configuración completas, consulte:
 - [Configuración de caché L2](level-two-cache.md)
 
 Consulte la [documentación de Laminas](https://docs.laminas.dev/) para ver las opciones heredadas basadas en Zend.
+
