@@ -3,11 +3,11 @@ user-guide-title: Información de versión
 user-guide-description: Acceda a toda la información de la versión de los parches y servicios de Adobe Commerce en un solo lugar.
 feature: Release Notes
 recommendations: noDisplay, noCatalog
-nudge: false
-source-git-commit: ffdb7bcf14a38091fd1d1180f4bf910cceef3e66
+nudge: true
+source-git-commit: ba745eae9c3e31fec40d317b0e35a8d0ff37971a
 workflow-type: tm+mt
-source-wordcount: '101'
-ht-degree: 32%
+source-wordcount: '107'
+ht-degree: 30%
 
 ---
 
@@ -15,51 +15,52 @@ ht-degree: 32%
 # Información de versión {#release}
 
 - Notas de la versión {#notes}
-   - [Información general](release-notes/overview.md)
-   - [Cambios incompatibles con versiones anteriores](backward-incompatible-changes.md)
-   - Adobe Commerce {#adobe-commerce}
-      - [Información general](release-notes/commerce/overview.md)
-      - [2.4.9](release-notes/commerce/2-4-9.md)
-      - [2.4.8](release-notes/commerce/2-4-8.md)
-      - [2.4.7](release-notes/commerce/2-4-7.md)
-      - [2.4.6](release-notes/commerce/2-4-6.md)
-      - [2.4.5](release-notes/commerce/2-4-5.md)
-      - [2.4.4](release-notes/commerce/2-4-4.md)
-      - [2.4.3](release-notes/commerce/2-4-3.md)
-      - [2.4.2](release-notes/commerce/2-4-2.md)
-      - [2.4.1](release-notes/commerce/2-4-1.md)
-      - [2.4.0](release-notes/commerce/2-4-0.md)
-   - Magento Open Source {#magento-open-source}
-      - [Información general](release-notes/open-source/overview.md)
-      - [2.4.9](release-notes/open-source/2-4-9.md)
-      - [2.4.8](release-notes/open-source/2-4-8.md)
-      - [2.4.7](release-notes/open-source/2-4-7.md)
-      - [2.4.6](release-notes/open-source/2-4-6.md)
-      - [2.4.5](release-notes/open-source/2-4-5.md)
-      - [2.4.4](release-notes/open-source/2-4-4.md)
-      - [2.4.3](release-notes/open-source/2-4-3.md)
-      - [2.4.2](release-notes/open-source/2-4-2.md)
-      - [2.4.1](release-notes/open-source/2-4-1.md)
-      - [2.4.0](release-notes/open-source/2-4-0.md)
-   - Versiones de parches de seguridad {#security-patches}
-      - [Información general](release-notes/security/overview.md)
-      - [2.4.8](release-notes/security/2-4-8-patches.md)
-      - [2.4.7](release-notes/security/2-4-7-patches.md)
-      - [2.4.6](release-notes/security/2-4-6-patches.md)
-      - [2.4.5](release-notes/security/2-4-5-patches.md)
-      - [2.4.4](release-notes/security/2-4-4-patches.md)
-      - [2.4.3](release-notes/security/2-4-3-patches.md)
-      - [2.4.2](release-notes/security/2-4-2-patches.md)
+  - [Información general](release-notes/overview.md)
+  - [Cambios incompatibles con versiones anteriores](backward-incompatible-changes.md)
+  - Adobe Commerce {#adobe-commerce}
+    - [Información general](release-notes/commerce/overview.md)
+    - [2.4.9](release-notes/commerce/2-4-9.md)
+    - [2.4.8](release-notes/commerce/2-4-8.md)
+    - [2.4.7](release-notes/commerce/2-4-7.md)
+    - [2.4.6](release-notes/commerce/2-4-6.md)
+    - [2.4.5](release-notes/commerce/2-4-5.md)
+    - [2.4.4](release-notes/commerce/2-4-4.md)
+    - [2.4.3](release-notes/commerce/2-4-3.md)
+    - [2.4.2](release-notes/commerce/2-4-2.md)
+    - [2.4.1](release-notes/commerce/2-4-1.md)
+    - [2.4.0](release-notes/commerce/2-4-0.md)
+  - Magento Open Source {#magento-open-source}
+    - [Información general](release-notes/open-source/overview.md)
+    - [2.4.9](release-notes/open-source/2-4-9.md)
+    - [2.4.8](release-notes/open-source/2-4-8.md)
+    - [2.4.7](release-notes/open-source/2-4-7.md)
+    - [2.4.6](release-notes/open-source/2-4-6.md)
+    - [2.4.5](release-notes/open-source/2-4-5.md)
+    - [2.4.4](release-notes/open-source/2-4-4.md)
+    - [2.4.3](release-notes/open-source/2-4-3.md)
+    - [2.4.2](release-notes/open-source/2-4-2.md)
+    - [2.4.1](release-notes/open-source/2-4-1.md)
+    - [2.4.0](release-notes/open-source/2-4-0.md)
+  - Versiones de parches de seguridad {#security-patches}
+    - [Información general](release-notes/security/overview.md)
+    - [2.4.8](release-notes/security/2-4-8-patches.md)
+    - [2.4.7](release-notes/security/2-4-7-patches.md)
+    - [2.4.6](release-notes/security/2-4-6-patches.md)
+    - [2.4.5](release-notes/security/2-4-5-patches.md)
+    - [2.4.4](release-notes/security/2-4-4-patches.md)
+    - [2.4.3](release-notes/security/2-4-3-patches.md)
+    - [2.4.2](release-notes/security/2-4-2-patches.md)
 - [Disponibilidad del producto](product-availability.md)
 - [Versiones de Beta](beta.md)
 - Planificación y políticas {#planning}
-   - [Política de ciclo vital](lifecycle-policy.md)
-   - [Directiva de aplicación de actualización de versiones](version-upgrade-enforcement-policy.md)
-   - [Directiva de versiones](versioning-policy.md)
-   - [Programación de versiones](schedule.md)
+  - [Política de ciclo vital](lifecycle-policy.md)
+  - {hide-from-toc}[Acciones y plazos de la directiva de aplicación de seguridad:Required](security-enforcement-policy.md)
+  - [Directiva de aplicación de actualización de versiones](version-upgrade-enforcement-policy.md)
+  - [Directiva de versiones](versioning-policy.md)
+  - [Programación de versiones](schedule.md)
 - [Características por versión](features.md)
 - [Versiones publicadas](versions.md)
 - Paquetes {#packages}
-   - [Adobe Commerce](packages/adobe-commerce.md)
-   - [Magento Open Source](packages/magento-open-source.md)
-- [Volver a Guías operativas](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=es)
+  - [Adobe Commerce](packages/adobe-commerce.md)
+  - [Magento Open Source](packages/magento-open-source.md)
+- [Volver a Guías operativas](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
