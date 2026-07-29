@@ -3,7 +3,7 @@ title: Configuración de caché L2 para la optimización del rendimiento
 description: Aprenda a configurar la caché L2 en Adobe Commerce para reducir el tráfico de red y mejorar el rendimiento. Descubra las opciones de implementación heredadas y de Symfony.
 feature: Configuration, Cache
 exl-id: 0504c6fd-188e-46eb-be8e-968238571f4e
-badgePaas: label="En las instalaciones" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos locales de Adobe Commerce."
+badgePaas: label="En las instalaciones" type="Informative" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos locales de Adobe Commerce."
 TQID: 'https://experienceleague.adobe.com/7vswBqyn9UZLmaeirgPRZ4xEQH5F66XUEtY5hPkz9NY'
 product_v2:
   - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
@@ -53,7 +53,7 @@ Hay dos implementaciones de caché L2 disponibles:
 
 Las instrucciones de configuración de la caché dependen del tipo de implementación:
 
-- **Para Adobe Commerce en la nube**, configure la caché L2 estableciendo la variable de implementación [`REDIS_BACKEND`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#redis_backend) o [`VALKEY_BACKEND`](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend) en `.magento.env.yaml`. Consulte [Configurar la caché L2](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md#configure-l2-cache) para ver ejemplos de configuración.
+- **Para Adobe Commerce en la nube**, configure la caché L2 estableciendo la variable de implementación [`REDIS_BACKEND`](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=es#redis_backend) o [`VALKEY_BACKEND`](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#valkey_backend) en `.magento.env.yaml`. Consulte [Configurar la caché L2](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md#configure-l2-cache) para ver ejemplos de configuración.
 
 - **Para las versiones locales de Adobe Commerce compatibles con Redis**, use el siguiente ejemplo para modificar o reemplazar la sección de caché existente en el archivo `app/etc/env.php`.
 
@@ -333,7 +333,7 @@ Configure front-end independientes para admitir caché obsoleta:
 
 >[!NOTE]
 >
->Estas mejoras se aplican a las implementaciones de Adobe Commerce 2.4.9 que utilizan `symfony_l2` y están disponibles con el parche ACP2E-5132. Consulte [Parches de nube para Commerce](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches#latest) para ver las últimas notas de la versión de los parches.
+>Estas mejoras se aplican a las implementaciones de Adobe Commerce 2.4.9 que utilizan `symfony_l2` y están disponibles con el parche ACP2E-5132. Consulte [Parches de nube para Commerce](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches#latest) para ver las últimas notas de la versión de los parches.
 
 #### Almacenamiento de etiquetas de caché de Symfony L2 optimizado
 
