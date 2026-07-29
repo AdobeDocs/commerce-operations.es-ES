@@ -10,9 +10,9 @@ topic: Performance
 exl-id: 8b3c9167-d2fa-4894-af45-6924eb983487
 badgePaas: label="Commerce en la nube" type="Informative" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce en la nube."
 nudge: true
-source-git-commit: d9152906a6fbbd765a60e3aeacdbf7cc7527529d
+source-git-commit: 5f0b6f7a04ee96b2aa650ee242e31d383bd7512b
 workflow-type: tm+mt
-source-wordcount: '2454'
+source-wordcount: '2470'
 ht-degree: 0%
 
 ---
@@ -98,7 +98,7 @@ Al establecer la variable de implementación `VALKEY_BACKEND` en `symfony_l2`, s
 
 >[!NOTE]
 >
->Adobe Commerce 2.4.9 incluye mejoras en la memoria caché de Symfony L2, como almacenamiento de etiquetas de caché, invalidación y compresión, con el parche ACP2E-5132, reducción de E/S de disco, eliminación de entradas de caché antiguas y reducción de la sobrecarga de memoria y de red. Consulte [Rendimiento y fiabilidad mejorados de la caché Symfony L2](../../../configuration/cache/level-two-cache.md#enhanced-symfony-l2-cache-performance-and-reliability) en la _Guía de configuración de Adobe Commerce_.
+>Adobe Commerce 2.4.9 incluye mejoras en la memoria caché de Symfony L2, como almacenamiento de etiquetas de caché, invalidación y compresión, con el parche ACP2E-5132, reducción de E/S de disco, eliminación de entradas de caché antiguas y reducción de la sobrecarga de memoria y de red. Consulte [Rendimiento y fiabilidad mejorados de la caché Symfony L2](../../../configuration/cache/level-two-cache.md#enhanced-symfony-l2-cache-performance-and-reliability.md) en la _Guía de configuración de Adobe Commerce_. El parche ACP2E-5132 se incluye en los parches de Cloud Patches y se aplica automáticamente mediante ece-tools.
 
 #### Personalice la configuración de caché de Symfony L2
 

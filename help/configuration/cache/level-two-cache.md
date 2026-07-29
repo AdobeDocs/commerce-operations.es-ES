@@ -20,9 +20,9 @@ level_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: d9152906a6fbbd765a60e3aeacdbf7cc7527529d
+source-git-commit: 37196b2d34951dd2df4d1e459cc9e29480f4f6e1
 workflow-type: tm+mt
-source-wordcount: 1166
+source-wordcount: 1221
 ht-degree: 0%
 
 ---
@@ -190,15 +190,11 @@ El siguiente código muestra un ejemplo de configuración:
 
 En las versiones de Commerce 2.4.9 o posterior, utilice la implementación de caché L2 basada en caché de Symfony (`symfony_l2` backend) en lugar de la caché L2 heredada. La caché Symfony L2 proporciona una implementación de almacenamiento en caché moderna compatible con PSR-6 con mejoras de rendimiento significativas con respecto a la versión tradicional de `RemoteSynchronizedCache`.
 
->[!NOTE]
->
->Para Adobe Commerce en la nube, el paquete de herramientas de ECE (`ece-tools`) administra esta configuración automáticamente. No edite `app/etc/env.php` directamente: la implementación sobrescribe los cambios manuales. Para la configuración en la nube, consulta [Configurar la caché de Symfony L2](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md#configure-symfony-l2-cache) en su lugar.
-
 >[!IMPORTANT]
 >
->{{redis-cache-support}}
+>La caché de Redis no es compatible con Adobe Commerce 2.4.9 o con versiones de parches posteriores a las 2.4.5-p16, 2.4.6-p14, 2.4.7-p9 y 2.4.8-p5. Si está actualizando a una versión que no admite Redis, debe configurar Valkey y actualizar la configuración de la caché para que utilice `symfony_l2`. Para Commerce local, consulte [configurar Valkey](config-valkey.md). Para Commerce en la nube, consulte [Configurar Valkey](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md){target="_blank"}
 >
->Dado que `symfony_l2` solo está disponible en Adobe Commerce 2.4.9 y versiones posteriores, configúrelo con Valkey como servidor remoto. Redis no es un servidor remoto compatible oficialmente para `symfony_l2`. Consulte [Requisitos del sistema](../../installation/system-requirements.md) para ver los servicios de caché admitidos por versión.
+>Redis no es un servidor remoto compatible oficialmente para `symfony_l2`. Si su versión es compatible con `symfony_l2`, debe usar Valkey para el almacenamiento en caché. Consulte [Requisitos del sistema](../../installation/system-requirements.md) para
 
 ### Ventajas de la caché Symfony L2
 
@@ -210,6 +206,10 @@ En las versiones de Commerce 2.4.9 o posterior, utilice la implementación de ca
 - **Configuración simplificada**: nombres de tipo de servidor más limpios (`valkey`, `file`)
 
 ### Ejemplo de configuración con caché Symfony L2
+
+>[!NOTE]
+>
+>Para Adobe Commerce en la nube, el paquete de herramientas ECE (`ece-tools`) administra la configuración de la caché automáticamente. No edite `app/etc/env.php` directamente: la implementación sobrescribe los cambios manuales. Para la configuración en la nube, consulta [Configurar la caché de Symfony L2](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md#configure-symfony-l2-cache) en su lugar.
 
 Usar el tipo de servidor `symfony_l2` simplificado para la caché L2:
 
