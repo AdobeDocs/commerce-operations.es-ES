@@ -7,7 +7,7 @@ exl-id: bee0c4be-11ec-4dcb-9b3c-7af26676cee9
 type: Troubleshooting
 source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
-source-wordcount: '479'
+source-wordcount: '537'
 ht-degree: 0%
 
 ---
@@ -40,13 +40,13 @@ Después de crear un abono parcial con puntos de recompensa del cliente, el esta
 2. Vaya a **[!UICONTROL Stores]** > **[!UICONTROL Other Setting]** > **[!UICONTROL Reward Exchange Rates]** > **[!UICONTROL Add New Rate]**.
 3. Añada dos tarifas:
    * *[!UICONTROL First]*:
-      * *[!UICONTROL Direction]* = *Puntos por la moneda*
-      * *[!UICONTROL Rate]* = *100*
-      * *[!UICONTROL Upper Boundary]* = *100*
+     * *[!UICONTROL Direction]* = *Puntos por la moneda*
+     * *[!UICONTROL Rate]* = *100*
+     * *[!UICONTROL Upper Boundary]* = *100*
    * *[!UICONTROL Second]*:
-      * *[!UICONTROL Direction]* = *Divisa a puntos*
-      * *[!UICONTROL Rate]* = *100*
-      * *[!UICONTROL Upper Boundary]* = *100*
+     * *[!UICONTROL Direction]* = *Divisa a puntos*
+     * *[!UICONTROL Rate]* = *100*
+     * *[!UICONTROL Upper Boundary]* = *100*
 4. Crea un producto simple con el precio de *$100* y con *Cantidad*: *100*.
 5. Cree un cliente desde la tienda.
 6. Vuelva al servidor : **[!UICONTROL Customers]** > **[!UICONTROL All Customers]** > **[!UICONTROL Edit]** > **[!UICONTROL Reward Points]** > **[!UICONTROL Update Points]** > Agregar *100* y guarde el cliente.

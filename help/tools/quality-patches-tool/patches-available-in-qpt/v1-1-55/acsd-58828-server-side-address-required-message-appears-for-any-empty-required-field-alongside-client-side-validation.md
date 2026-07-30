@@ -7,7 +7,7 @@ exl-id: 6c19773d-cb75-409f-bbd7-78d285a0252a
 type: Troubleshooting
 source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
-source-wordcount: '358'
+source-wordcount: '386'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ El mensaje de error describe la información que falta o es incorrecta y que es 
 
 Resultados reales:
 
-Se requiere la dirección de error *. Introduzca e inténtelo de nuevo.* se muestra.
+Se requiere la dirección de error *. Escriba lo que desee e inténtelo de nuevo.* muestra.
 
 ## Aplicar el parche
 

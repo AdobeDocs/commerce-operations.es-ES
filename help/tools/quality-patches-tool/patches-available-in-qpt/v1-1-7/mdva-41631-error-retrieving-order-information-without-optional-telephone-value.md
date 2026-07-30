@@ -7,7 +7,7 @@ exl-id: e56cea59-ffc1-4520-85ca-136cda613884
 type: Troubleshooting
 source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
-source-wordcount: '401'
+source-wordcount: '500'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ Los usuarios obtienen un error al recuperar la información del pedido sin el va
     suffix
     email
 
-    orders(filter:{number:{eq:"000000001"}})&lbrace;
+    orders(filter:{number:{eq:"000000001"}&#x200B;})&lbrace;
         items&lbrace;
           billing_address &lbrace;
 firstname

@@ -7,7 +7,7 @@ exl-id: ebd79187-2835-403b-945d-80ac34d6fb9c
 type: Troubleshooting
 source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '534'
 ht-degree: 0%
 
 ---
@@ -49,20 +49,20 @@ Los módulos de Adobe Commerce Inventory management (MSI) están instalados.
    * Prioridad = 1
    * Condiciones: El subtotal es igual o mayor que *$75*
    * Acciones:
-      * Aplicar al importe de envío = Sí
-      * Descartar reglas subsiguientes = No
-      * Envío gratuito = para envíos con artículos coincidentes
+     * Aplicar al importe de envío = Sí
+     * Descartar reglas subsiguientes = No
+     * Envío gratuito = para envíos con artículos coincidentes
 1. Crear otra regla de precios de carro de compras:
    * Nombre = *35off*
    * Prioridad = 0
    * Coupon = Specific Coupon
    * Código de cupón = 35off
    * Acciones:
-      * Aplicar = Porcentaje de descuento en el precio del producto
-      * Importe de descuento = 35
-      * Aplicar al importe de envío = No
-      * Descartar reglas subsiguientes = Sí
-      * Envío gratuito = No
+     * Aplicar = Porcentaje de descuento en el precio del producto
+     * Importe de descuento = 35
+     * Aplicar al importe de envío = No
+     * Descartar reglas subsiguientes = Sí
+     * Envío gratuito = No
 1. Abra la tienda y añada tres productos al carro de compras para que el subtotal supere los 75 $.
 1. Continúe con el pago y envío como invitado.
 1. En el paso de envío, selecciona **$0 - envío gratuito** y continúa con el paso de pago.
