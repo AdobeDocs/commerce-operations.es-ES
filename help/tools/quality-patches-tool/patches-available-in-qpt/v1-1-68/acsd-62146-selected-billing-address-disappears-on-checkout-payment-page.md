@@ -4,13 +4,13 @@ description: Aplique el parche ACSD-62146 para corregir el problema de Adobe Com
 feature: Customers, Checkout
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 3de3de80383372d0e3bec5485fd65b9d70fe8860
+exl-id: 2a2f1afe-8a48-4beb-b78d-a894b685717d
+source-git-commit: 4e6eaf9519fd74e407c25992d367babfddf404a7
 workflow-type: tm+mt
-source-wordcount: '382'
+source-wordcount: '400'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-62146: la dirección de facturación seleccionada desaparece en la página de pago de pago
 
@@ -28,7 +28,7 @@ El parche ACSD-62146 corrige el problema en el que la dirección de facturación
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
@@ -59,7 +59,7 @@ La dirección de facturación predeterminada y la dirección de envío seleccion
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
 * Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía [!DNL Quality Patches Tool].
-* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=es) en la guía Commerce en la infraestructura de la nube.
+* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) en la guía Commerce en la infraestructura de la nube.
 
 ## Lectura relacionada
 
