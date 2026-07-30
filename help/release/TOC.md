@@ -3,7 +3,8 @@ user-guide-title: Información de versión
 user-guide-description: Acceda a toda la información de la versión de los parches y servicios de Adobe Commerce en un solo lugar.
 feature: Release Notes
 recommendations: noDisplay, noCatalog
-source-git-commit: e124490ef2c131d866eb583fad934435ace06b8f
+color: blue
+source-git-commit: ae0435a965214ce3165bd4aa1317a4d4df87cefc
 workflow-type: tm+mt
 source-wordcount: '107'
 ht-degree: 30%
@@ -53,7 +54,7 @@ ht-degree: 30%
 - [Versiones de Beta](beta.md)
 - Planificación y políticas {#planning}
   - [Política de ciclo vital](lifecycle-policy.md)
-  - {hide-from-toc}[Política de seguridad: acciones requeridas y plazos](security-enforcement-policy.md)
+  - [Política de seguridad: acciones y plazos requeridos](security-enforcement-policy.md)
   - [Directiva de aplicación de actualización de versiones](version-upgrade-enforcement-policy.md)
   - [Directiva de versiones](versioning-policy.md)
   - [Programación de versiones](schedule.md)
@@ -62,4 +63,4 @@ ht-degree: 30%
 - Paquetes {#packages}
   - [Adobe Commerce](packages/adobe-commerce.md)
   - [Magento Open Source](packages/magento-open-source.md)
-- [Volver a Guías operativas](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=es)
+- [Volver a Guías operativas](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
