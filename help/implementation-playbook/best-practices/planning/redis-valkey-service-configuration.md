@@ -10,9 +10,9 @@ topic: Performance
 exl-id: 8b3c9167-d2fa-4894-af45-6924eb983487
 badgePaas: label="Commerce en la nube" type="Informative" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce en la nube."
 nudge: true
-source-git-commit: 5f0b6f7a04ee96b2aa650ee242e31d383bd7512b
+source-git-commit: 0c69ccdfcb3592a717b8b3a5a59762c8daeceec7
 workflow-type: tm+mt
-source-wordcount: '2470'
+source-wordcount: '2524'
 ht-degree: 0%
 
 ---
@@ -98,7 +98,9 @@ Al establecer la variable de implementación `VALKEY_BACKEND` en `symfony_l2`, s
 
 >[!NOTE]
 >
->Adobe Commerce 2.4.9 incluye mejoras en la memoria caché de Symfony L2, como almacenamiento de etiquetas de caché, invalidación y compresión, con el parche ACP2E-5132, reducción de E/S de disco, eliminación de entradas de caché antiguas y reducción de la sobrecarga de memoria y de red. Consulte [Rendimiento y fiabilidad mejorados de la caché Symfony L2](../../../configuration/cache/level-two-cache.md#enhanced-symfony-l2-cache-performance-and-reliability.md) en la _Guía de configuración de Adobe Commerce_. El parche ACP2E-5132 se incluye en los parches de Cloud Patches y se aplica automáticamente mediante ece-tools.
+>El parche ACP2E-5132 para Adobe Commerce 2.4.9 mejora el rendimiento y la fiabilidad de la caché de Symfony L2: almacenamiento de etiquetas optimizado, un bloqueo de regeneración de caché anticuado y correcciones para suscripciones de etiquetas anticuadas después del reetiquetado, escrituras remotas redundantes en guardados sin modificar y desalojo basado en el tamaño L1 (`cleanup_percentage`). Esto reduce la E/S del disco y la carga back-end al tiempo que mejora la coherencia de la caché. Consulte [Rendimiento y fiabilidad mejorados de la caché Symfony L2](../../../configuration/cache/level-two-cache.md#enhanced-symfony-l2-cache-performance-and-reliability) en la _Guía de configuración de Adobe Commerce_.
+>
+>El parche se incluye en [Parches de nube para el paquete de Commerce](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches) (una dependencia de `ece-tools`) y se aplica automáticamente durante la implementación al actualizar a la última versión de `ece-tools`. Actualice a la última versión de `ece-tools` para recibir el parche.
 
 #### Personalice la configuración de caché de Symfony L2
 
