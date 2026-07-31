@@ -14,9 +14,9 @@ feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: e52becee703b046f5ffb00b01ca780311d711ec8
+source-git-commit: 9ea2dec8843119280f9ee291a89590024ddd2973
 workflow-type: tm+mt
-source-wordcount: 485
+source-wordcount: 484
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ QPT v1.1.82 incluye los siguientes parches:
 
 1. **ACP2E-4815**: corrige varios problemas de GraphQL que causaban excepciones de PHP en los registros, asociación correcta de pedidos con cuentas de clientes creadas después de pedidos a través de GraphQL y alineación de respuestas con GraphQL a través de especificaciones HTTP.
 1. **ACP2E-4194**: corrige el problema en el que las respuestas de GraphQL devuelven códigos de estado HTTP incorrectos para solicitudes no válidas, no autorizadas o con formato incorrecto.
-1. **ACP2E-4547**: corrige el problema en el cual un usuario administrador no puede usar **[!UICONTROL Add Products by SKU]** en el administrador para agregar productos del catálogo estándar a una oferta negociable para una compañía asignada a un grupo de clientes que no está vinculado a un catálogo compartido.
+1. **[ACP2E-4547](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4547.md)**: corrige el problema en el cual un usuario administrador no puede usar **[!UICONTROL Add Products By SKU]** en el administrador para agregar productos del catálogo predeterminado a un pedido de una compañía asignada a un grupo de clientes que no está vinculado a un catálogo compartido.
 1. **ACP2E-4593**: corrige el problema en el que la página de CMS que se muestra para las restricciones de sitios web es incorrecta en sitios web secundarios en implementaciones de varios sitios web.
 1. **ACP2E-4682**: corrige el problema que se produce cuando al visitar una página de Storefront que comprueba el estado de la cotización `isActive` se crean registros de cotización vacíos cada vez que se carga la página.
 1. **ACP2E-4695**: corrige el problema por el que el indizador de reglas de catálogo consume memoria excesiva y no se puede completar, lo que provoca inestabilidad y errores de memoria insuficiente.

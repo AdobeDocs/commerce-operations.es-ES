@@ -4,9 +4,9 @@ user-guide-description: Obtenga información sobre las distintas herramientas qu
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: e52becee703b046f5ffb00b01ca780311d711ec8
+source-git-commit: d8ad9344c866eeffeda81e45ebe7de9376905638
 workflow-type: tm+mt
-source-wordcount: '10517'
+source-wordcount: '10538'
 ht-degree: 0%
 
 ---
@@ -1044,6 +1044,7 @@ ht-degree: 0%
       - [ACP2E-4709: Las páginas de CMS no se guardan en Page Builder cuando la jerarquía de páginas incluye comillas dobles](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4709.md)
     - Versión 1.1.82 {#v1-1-82}
       - [Información general:  [!DNL Quality Patches Tool] (QPT) v1.1.82](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/overview.md)
+      - [ACP2E-4547: El administrador no puede añadir un producto de catálogo predeterminado a una oferta cuando no está asignado al catálogo compartido del usuario](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4547.md)
       - [ACP2E-4805: Las solicitudes de cierre de compra se ralentizan para los productos configurables cuando aparece el primer hijo comercializable más adelante en la lista](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4805.md)
       - [ACP2E-4748: La caducidad de los puntos de recompensa se ejecuta lentamente en las tiendas con un historial de puntos de recompensa grande](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4748.md)
       - [ACP2E-4875: Los usuarios administradores cerraron sesión al abrir cuentas de clientes con libretas de direcciones grandes](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4875.md)
