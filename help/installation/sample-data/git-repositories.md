@@ -2,7 +2,8 @@
 title: Clonar repositorios Git de datos de muestra
 description: Siga estos pasos para instalar datos de ejemplo de Adobe Commerce clonando repositorios Git.
 exl-id: 748eee30-2821-457d-9c1c-62ede8bc0510
-source-git-commit: 87302734f3ff91f0403beac283ff21925d89318d
+last-update: 2026-04-28T00:00:00Z
+source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
 workflow-type: tm+mt
 source-wordcount: '762'
 ht-degree: 0%

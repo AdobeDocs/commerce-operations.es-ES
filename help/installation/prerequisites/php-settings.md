@@ -3,7 +3,8 @@ title: Configuración de PHP
 description: Siga estos pasos para instalar las extensiones de PHP requeridas y configurar los ajustes de PHP necesarios para las instalaciones locales de Adobe Commerce.
 feature: Install, Configuration
 exl-id: 84064442-7053-42ab-a8a6-9b313e5efc78
-source-git-commit: fdd98cea53f1a060b8b56268250b463c74abaaa1
+last-update: 2026-05-12T00:00:00Z
+source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
 workflow-type: tm+mt
 source-wordcount: '847'
 ht-degree: 0%
@@ -19,7 +20,7 @@ En este tema se explica cómo configurar las opciones de PHP requeridas.
 >
 >Las versiones de PHP compatibles varían según la versión de Adobe Commerce. Consulte [requisitos del sistema](../system-requirements.md) para ver las versiones de PHP exactas que admite la versión que está instalando.
 
-Para obtener instrucciones de configuración de Cloud, consulte [Configuración de PHP](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/configure/app/php-settings) en la guía de _Commerce en infraestructura en la nube_.
+Para obtener instrucciones de configuración de Cloud, consulte [Configuración de PHP](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/php-settings) en la guía de _Commerce en infraestructura en la nube_.
 
 ## Control de procesos PHP
 
@@ -77,9 +78,9 @@ PHP Warning:  date(): It is not safe to rely on the system's timezone settings. 
 
   Adobe recomienda lo siguiente:
 
-   - Compilando código o implementando recursos estáticos, `1G`
-   - Depurando, `2G`
-   - Probando, `~3-4G`
+  - Compilando código o implementando recursos estáticos, `1G`
+  - Depurando, `2G`
+  - Probando, `~3-4G`
 
 - Aumente los valores de PHP `realpath_cache_size` y `realpath_cache_ttl` a la configuración recomendada:
 
@@ -206,8 +207,8 @@ Para establecer las opciones de `opcache.ini`:
 Consulte los siguientes artículos de soporte de Adobe Commerce para obtener ayuda con la resolución de problemas de PHP:
 
 - [Error de versión de PHP o error 404 al acceder a Adobe Commerce en un explorador](https://support.magento.com/hc/en-us/articles/360033117152-PHP-version-error-or-404-error-when-accessing-Magento-in-browser)
-- [Errores de configuración de PHP](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/php-settings-errors)
-- [Problemas de comprobación de preparación de versiones de PHP](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues)
-- [Errores y soluciones mortales comunes de PHP](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/common-php-fatal-errors-and-solutions)
+- [Errores de configuración de PHP](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/php-settings-errors)
+- [Problemas de comprobación de preparación de versiones de PHP](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues)
+- [Errores y soluciones mortales comunes de PHP](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/common-php-fatal-errors-and-solutions)
 
 <!-- Last updated from includes: 2026-05-11 20:38:54 -->
