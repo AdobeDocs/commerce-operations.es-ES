@@ -2,9 +2,10 @@
 title: Notas de la versión de Adobe Commerce 2.4.7 Security Patch
 description: Obtenga información acerca de las correcciones de errores de seguridad, las mejoras de seguridad y otras actualizaciones relacionadas con la seguridad incluidas en las versiones de parches de seguridad para Adobe Commerce 2.4.7.
 exl-id: 38e5632b-c795-47d8-89dd-26bbaeb34e67
-source-git-commit: f731debd7e0734d1bb1b8c821149ffafea735337
+last-update: 2026-05-12T00:00:00Z
+source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
 workflow-type: tm+mt
-source-wordcount: '1390'
+source-wordcount: '1352'
 ht-degree: 0%
 
 ---
@@ -18,9 +19,9 @@ ht-degree: 0%
 >
 >MySQL 8.0 llegará al fin del soporte (EOS) a partir del 30 de abril de 2026.
 >
->Después de esta fecha, Adobe Commerce 2.4.7 no proporcionará compatibilidad ni>compatibilidad con cualquier versión de MySQL lanzada después de MySQL 8.0. Adobe no>validar o proporcionar compatibilidad con las versiones principales más recientes de MySQL en este Adobe>Línea de versión de Commerce.
+>Después de esta fecha, Adobe Commerce 2.4.7 no proporcionará compatibilidad o >soporte para ninguna versión de MySQL lanzada después de MySQL 8.0. Adobe no>validará ni proporcionará soporte para las versiones principales más recientes de MySQL en esta línea de versiones de Adobe>Commerce.
 >
->Todos los clientes locales de Adobe Commerce que ejecutan la versión 2.4.7 tienen una>se aconseja migrar sus servidores de base de datos a una versión de MariaDB compatible.
+>Se recomienda a todos los clientes locales de Adobe Commerce que ejecuten la versión 2.4.7>de migrar sus servidores de bases de datos a una versión de MariaDB compatible.
 
 ## 2,4,7-p10
 

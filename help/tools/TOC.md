@@ -4,9 +4,9 @@ user-guide-description: Obtenga información sobre las distintas herramientas qu
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: d8ad9344c866eeffeda81e45ebe7de9376905638
+source-git-commit: 989662bcb4c1a3cc50cffae1d706501409898c64
 workflow-type: tm+mt
-source-wordcount: '10538'
+source-wordcount: '10533'
 ht-degree: 0%
 
 ---
@@ -1051,7 +1051,6 @@ ht-degree: 0%
   - [Comprobar parche para el problema de Adobe Commerce con la herramienta Parches de calidad](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Referencia de herramientas de la línea de comandos {#cli-reference}
   - [Adobe Commerce (local)](reference/commerce-on-premises.md)
-  - [Adobe Commerce Beta (local)](reference/commerce-on-premises-beta.md)
   - [Actualizar herramienta de compatibilidad](reference/uct.md)
 - Observación para Adobe Commerce {#observation-for-adobe-commerce}
   - [Introducción](observation-for-adobe-commerce/intro.md)
