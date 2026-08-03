@@ -22,10 +22,10 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
 badgePaas: label="Solo Adobe Commerce en la nube" type="Informative" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce en la versión 2.4.4 - 2.4.9 de Cloud"
-nudge: true
-source-git-commit: 6ecb6002982432b8d67c122569043da55939d915
+color: blue
+source-git-commit: 7cd1bf694234196313373dea6620bdf67e08e82c
 workflow-type: tm+mt
-source-wordcount: 1981
+source-wordcount: 2017
 ht-degree: 0%
 
 ---
@@ -63,6 +63,8 @@ Encuentre su versión de Adobe Commerce en la nube a continuación para ver qué
 | 2.4.8 o 2.4.9 | Requerido para el 30 de octubre de 2026 o el 31 de mayo de 2027, según el software. | No se requiere en este momento |
 
 **Tabla 1: Acciones requeridas y fechas límites por versión**
+
+Si necesita una extensión de plazo, comuníquese con el equipo de su cuenta o con [Soporte técnico de Adobe](https://experienceleague.adobe.com/es/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide?lang=en#submit-ticket).
 
 ## ¿Quién no necesita tomar medidas?
 
