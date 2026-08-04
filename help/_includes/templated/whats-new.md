@@ -1,7 +1,7 @@
 ---
-source-git-commit: 462c3bcd5e4359d2be1a8f112c2dc50d3b8825bd
+source-git-commit: 05769de0613c19ab0b0a008db523a380d0b62d5b
 workflow-type: tm+mt
-source-wordcount: '2666'
+source-wordcount: '2275'
 ht-degree: 1%
 
 ---
@@ -10,6 +10,110 @@ ht-degree: 1%
 ## Novedades
 
 Esta página contiene los cambios realizados en los últimos 60 días. Excluimos todas las actualizaciones menores, como la edición de copias, de esta lista.
+
+### 31 de julio de 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descripción</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Se agregó una descripción detallada de la corrección de QPT 1.1.82 para <a href="https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4547">ACP2E-4547: El administrador no puede agregar un producto de catálogo predeterminado a una cotización cuando no está asignado al catálogo compartido del usuario</a>.</p>
+</td>
+      <td>
+        Tema nuevo, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/6d0313c01e979d3d4bd3e781e2f0e9c336bbd8c5">comprometer</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 30 de julio de 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descripción</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Se ha agregado <a href="https://experienceleague.adobe.com/es/docs/commerce-operations/release/planning/security-enforcement-policy">Política de seguridad: Acciones y plazos requeridos</a> para los clientes de Adobe Commerce en la nube con el fin de explicar los requisitos, las escalas de tiempo y las instrucciones para actualizar Adobe Commerce en implementaciones de la nube que ejecuten versiones no compatibles o dependencias de software de terceros.</p>
+</td>
+      <td>
+        Nuevo tema
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b7649aae1f8cab020c1081db2b2363bca22adfed">comprometer</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 28 de julio de 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descripción</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Se ha agregado una descripción detallada de la corrección de QPT 1.1.82 para <a href="https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4805">ACP2E-4805: Las solicitudes de cierre de compra se ralentizan para los productos configurables cuando aparece el primer elemento secundario comercializable más adelante en la lista</a>.</p>
+</td>
+      <td>
+        Tema nuevo, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/1b5fb4826f6599d7b7609dedfeb545f29454ba4d">comprometer</a></td>
+    </tr>
+    <tr>
+      <td><p>Se agregó una descripción detallada de la corrección de QPT 1.1.82 para <a href="https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4748">ACP2E-4748: La caducidad de los puntos de recompensa se ejecuta lentamente en tiendas con un historial de puntos de recompensa grande</a>.</p>
+</td>
+      <td>
+        Tema nuevo, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/30fe149f9743ceca7f40374246b4fc9b9503c590">comprometer</a></td>
+    </tr>
+    <tr>
+      <td><p>Se agregó una descripción detallada de la corrección de QPT 1.1.82 para <a href="https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4875">ACP2E-4875: Los usuarios administradores cerraron la sesión al abrir cuentas de clientes con libretas de direcciones grandes</a>.</p>
+</td>
+      <td>
+        Tema nuevo, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/3174f84e0a8c64aaed50cc075a9287bc011778ef">comprometer</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 27 de julio de 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descripción</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Se agregó <a href="https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/overview">Información general: Herramienta de parches de calidad (QPT) v1.1.82</a>.</p>
+</td>
+      <td>
+        Tema nuevo, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/ddfb8e85d015b8ab675a3af56cf5d2bb72e535c4">comprometer</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 23 de julio de 2026
 
@@ -575,188 +679,6 @@ Esta página contiene los cambios realizados en los últimos 60 días. Excluimos
         Tema nuevo, qpt
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/e5aa6a001b0c96b2d0489a444c227a8f0d406675">comprometer</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 2 de junio de 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descripción</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Se han actualizado <a href="https://experienceleague.adobe.com/es/docs/commerce-operations/release/versions">las versiones publicadas</a> con correcciones de seguridad adicionales que proporcionan las fechas de finalización de las líneas de versión 2.4.4 y 2.4.5 (mayo de 2027).</p>
-</td>
-      <td>
-        Actualización importante
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/7457647b2fc4c0a4786146a9eee74b2050bf5ad9">comprometer</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 1 de junio de 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descripción</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Se agregó una descripción detallada de la corrección de QPT 1.1.78 para <a href="https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4513">ACP2E-4513: Las imágenes CAPTCHA caducadas no se eliminan del sistema</a>.</p>
-</td>
-      <td>
-        Tema nuevo, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/86d06d83592f40bd181b30158cb9d83a2e963b07">comprometer</a></td>
-    </tr>
-    <tr>
-      <td><p>Se agregó una descripción detallada de la corrección de QPT 1.1.79 para <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4531">ACP2E-4531: La jerarquía de CMS no actualiza la dirección URL jerárquica cuando se cambia la clave de dirección URL de la página secundaria</a>.</p>
-</td>
-      <td>
-        Tema nuevo, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/0a726754a6e171a60a07ccedf76db7505f19706a">comprometer</a></td>
-    </tr>
-    <tr>
-      <td><p>Se agregó una descripción detallada de la corrección de QPT 1.1.79 para <a href="https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4505">ACP2E-4505: La dependencia de categoría circular impide guardar una categoría con datos antiguos en una pestaña duplicada del explorador</a>.</p>
-</td>
-      <td>
-        Tema nuevo, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/bc87b7024550f49756be23108030fe7bdd571855">comprometer</a></td>
-    </tr>
-    <tr>
-      <td><p>Se ha actualizado la versión de Nginx compatible para Adobe Commerce local de 1.28 a 1.30 en los <a href="https://experienceleague.adobe.com/es/docs/commerce-operations/installation-guide/system-requirements">Requisitos del sistema</a> para las últimas versiones de parches de 2.4.8 a 2.4.4. Adobe Commerce en Cloud Infrastructure sigue utilizando Nginx 1.28.</p>
-</td>
-      <td>
-        Técnico
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/e407df8cff6711d69f0dea5bceff031123e1bee6">comprometer</a></td>
-    </tr>
-    <tr>
-      <td><p>Se han actualizado las versiones de MariaDB y Nginx en <a href="https://experienceleague.adobe.com/es/docs/commerce-operations/installation-guide/system-requirements">requisitos del sistema</a> para la ficha Local de la versión 2.4.9.</p>
-</td>
-      <td>
-        Técnico
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/c96653313a98e9fe2e12b26236e0a985049ec523">comprometer</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 29 de mayo de 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descripción</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Se agregó una descripción detallada de la corrección de QPT 1.1.79 para <a href="https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4720">ACP2E-4720: Las reglas de precio del carro de compras de envío gratuito no se restablecen para los productos de paquetes de precio fijo con elementos de envío por separado</a>.</p>
-</td>
-      <td>
-        Tema nuevo, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/8aec766f7377e1ed5a08987a433e676794fc2a59">comprometer</a></td>
-    </tr>
-    <tr>
-      <td><p>Se han actualizado las versiones de dependencias del sistema en <a href="https://experienceleague.adobe.com/es/docs/commerce-operations/upgrade-guide/journey/implementation">Guía de análisis de actualización</a>.</p>
-</td>
-      <td>
-        Técnico
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/dd93d4c8f52d0852f0459e234d66fda2063b6bee">comprometer</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 28 de mayo de 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descripción</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Se ha agregado una descripción detallada de la corrección de QPT 1.1.78 para <a href="https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4528">ACP2E-4528: La validación de la ciudad de la dirección del cliente gestiona incorrectamente las barras diagonales (/) y los caracteres no válidos como !, ", # y ?</a>.</p>
-</td>
-      <td>
-        Tema nuevo, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/7cd24cd0182fc191f64733c2bac361404f9f9a08">comprometer</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 27 de mayo de 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descripción</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Se ha agregado una descripción detallada de la corrección de QPT 1.1.79 para <a href="https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4411">ACP2E-4411: Los precios del paquete de productos muestran valores de impuestos y monedas incorrectos entre la página de detalles del producto y el carro de compras en una configuración multidivisa</a>.</p>
-</td>
-      <td>
-        Tema nuevo, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/29ef4059b5ca8b48c628c396771659a39413573e">comprometer</a></td>
-    </tr>
-    <tr>
-      <td><p>Se agregó una descripción detallada de la corrección de QPT 1.1.79 para <a href="https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4110">ACP2E-4110: Los precios del paquete de productos con un precio especial difieren entre PDP/PLP y el carro de compras en una moneda no predeterminada</a>.</p>
-</td>
-      <td>
-        Tema nuevo, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/0133d7598293f529b285737c6ef51613dc5bd826">comprometer</a></td>
-    </tr>
-    <tr>
-      <td><p>Se ha agregado una descripción detallada de la corrección de QPT 1.1.79 para <a href="https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4475">ACP2E-4475: Ordene o filtre por precio no funcionando para paquetes de productos sin existencias</a>.</p>
-</td>
-      <td>
-        Tema nuevo, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/2728ac1f484659b1db69b537640e3a5da8f965a7">comprometer</a></td>
-    </tr>
-    <tr>
-      <td><p>Se agregó una descripción detallada de la corrección de QPT 1.1.79 para <a href="https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4603">ACP2E-4603: El reíndice de productos de permisos de catálogo deja filas de índices de permisos obsoletos y el interbloqueo de MySQL</a>.</p>
-</td>
-      <td>
-        Tema nuevo, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/e8f56414b758832c77e7f2f93009df527f506c5b">comprometer</a></td>
-    </tr>
-    <tr>
-      <td><p>Se agregó una descripción detallada de la corrección de QPT 1.1.79 para <a href="https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/ac-10698">AC-10698: Los precios y totales de transacción no se envían a Google Tag</a>.</p>
-</td>
-      <td>
-        Tema nuevo, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/21979ca7c9dd21a871c22271603bcd09b9dfd29a">comprometer</a></td>
     </tr>
   </tbody>
 </table>
