@@ -3,9 +3,9 @@ title: Directiva de ciclo vital de software
 description: Obtenga información sobre las fechas clave de fin de compatibilidad de software para las versiones de Adobe Commerce.
 exl-id: 9ee4ecc8-d893-412a-a605-5a8606a1b9a9
 nudge: true
-source-git-commit: ed2757282c079ea7399d4df92000f346aecfbdd8
+source-git-commit: 79afa4fa95c425dfd4bc0fd894abc24db2d1b33b
 workflow-type: tm+mt
-source-wordcount: '1376'
+source-wordcount: '1390'
 ht-degree: 1%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # directiva de ciclo vital de Adobe Commerce
 
-Para optimizar la política de ciclo vital de Adobe Commerce y satisfacer las necesidades esenciales de los clientes, Adobe ofrece un período de soporte estándar de tres años a partir de la fecha de disponibilidad general (GA) para cada versión y publica correcciones de calidad durante este período. Para ver las fechas y los detalles sobre el fin de la compatibilidad de software en cada versión, consulte la tabla [Fin de la compatibilidad de software](#end-of-software-support).
+Para optimizar la política de ciclo vital de Adobe Commerce y satisfacer las necesidades esenciales de los clientes, Adobe ofrece un período de soporte estándar de tres años a partir de la fecha de disponibilidad general (GA) para cada versión y publica correcciones de calidad durante este período. Para ver las fechas y los detalles sobre el fin de la compatibilidad de software en cada versión, consulte la tabla [Fechas de fin de la compatibilidad](#end-of-support-dates).
 
 Adobe no proporciona correcciones de seguridad y calidad para servicios de terceros y dependencias de software (como PHP y MySQL) que pueden llegar al final de su vida útil mientras los clientes están en el período de soporte de tres años o ampliado para Adobe Commerce. Consulte los [requisitos del sistema](../installation/system-requirements.md) para obtener una lista completa de las tecnologías de terceros probadas y admitidas.
 
@@ -21,7 +21,7 @@ Adobe no proporciona correcciones de seguridad y calidad para servicios de terce
 
 El periodo de soporte estándar de tres años a partir de la fecha de disponibilidad general (GA). El soporte estándar incluye correcciones de calidad, parches de seguridad y soporte total de Adobe Commerce on-call.
 
-- **Correcciones de calidad**: los clientes pueden obtener acceso a las correcciones de calidad poniéndose en contacto con el [Soporte técnico de Adobe Commerce](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) o a través del servicio de autoservicio [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es).
+- **Correcciones de calidad**: los clientes pueden obtener acceso a las correcciones de calidad poniéndose en contacto con el [Soporte técnico de Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) o a través del servicio de autoservicio [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html).
 
 - **Correcciones de seguridad**: Adobe proporciona correcciones de seguridad mediante parches de seguridad acumulativos y [archivos de parches de seguridad aislados](versioning-policy.md#isolated-security-patch-file) no acumulativos durante el período de compatibilidad de tres años.
 
@@ -33,15 +33,15 @@ Adobe recomienda a los clientes que se actualicen lo antes posible. Sin embargo,
 
 >[!NOTE]
 >
->Adobe presenta una directiva de actualización de versiones forzada para Adobe Commerce en la nube. A partir del **1 de junio de 2027**, Adobe dejará de mantener los entornos de nube que ejecutan versiones de Commerce no compatibles y se reserva el derecho de eliminarlos. Si se ejecuta en la nube, debe pasar a una versión de Adobe Commerce compatible o migrar a [!DNL Adobe Commerce as a Cloud Service] antes de la fecha de [fin de la compatibilidad extendida](lifecycle-policy.md#end-of-support-dates) publicada para la línea de lanzamiento. Consulte [Directiva de aplicación de actualización de versiones en la nube](version-upgrade-enforcement-policy.md) para ver las fechas de aplicación y las versiones afectadas, así como lo que sucede si permanece en una versión no compatible.
+>Adobe presenta una directiva de actualización de versiones aplicada para Adobe Commerce en la nube para ayudar a cada cliente a permanecer en una plataforma segura y compatible. A partir del **1 de junio de 2027**, Adobe dejará de mantener los entornos de nube que ejecutan versiones de Commerce no compatibles y se reserva el derecho de eliminarlos. Si se ejecuta en la nube, debe pasar a una versión de Adobe Commerce compatible o migrar a [!DNL Adobe Commerce as a Cloud Service] antes de la fecha de [fin de la compatibilidad extendida](lifecycle-policy.md#end-of-support-dates) publicada para la línea de lanzamiento. Si está en la versión 2.4.4 a 2.4.9, consulte el [Aviso de seguridad y cumplimiento](security-enforcement-policy.md) para ver las acciones específicas y los plazos que se aplican a su entorno.
 
 ## Período transitorio solo de seguridad
 
-Un período transitorio único y limitado en el tiempo solo está disponible para las versiones 2.4.4, 2.4.5 y 2.4.6 cuya compatibilidad ampliada finalizó en 2025 o 2026. El período transitorio solo de seguridad proporciona correcciones de seguridad aisladas limitadas. No se proporcionan correcciones de calidad de Adobe Commerce. Este periodo no es equivalente a la asistencia estándar o ampliada y no se ampliará más. Trátelo como un período de migración, no como un nivel de asistencia a largo plazo.
+Un período transitorio único y limitado en el tiempo solo está disponible para las versiones 2.4.4, 2.4.5 y 2.4.6 cuya compatibilidad ampliada finalizó en 2025 o 2026. El período transitorio solo de seguridad proporciona correcciones de seguridad aisladas limitadas únicamente (sin correcciones de calidad).
 
 >[!IMPORTANT]
 >
->El período transitorio de solo seguridad es una excepción única. No se ampliará más allá de las fechas de publicación. Trate el período de solo seguridad como un tiempo de migración, no como un nivel de soporte a largo plazo.
+>El período transitorio de solo seguridad es una excepción única. No se ampliará más allá de las fechas de publicación. Trate el período de solo seguridad como un tiempo de migración, no como un nivel de soporte a largo plazo. Póngase en contacto con el equipo de su cuenta si desea ayuda para crear un plan de migración.
 
 ## Fechas de fin de soporte
 
@@ -173,7 +173,7 @@ Usted es responsable de mantener todas las dependencias de terceros y los servic
 
 >[!IMPORTANT]
 >
->La ejecución de versiones de dependencia no admitidas puede provocar una vulnerabilidad de seguridad en la instancia de Cloud que Adobe no puede resolver. En estos casos, Adobe se reserva el derecho de aplicar una actualización de la dependencia de software afectada o de eliminar la instancia si no es posible una actualización, independientemente del estado de compatibilidad con la versión de Adobe Commerce.
+>La ejecución de versiones de dependencia no admitidas puede provocar una vulnerabilidad de seguridad en la instancia de Cloud que Adobe no puede resolver. En estos casos, Adobe se reserva el derecho de aplicar una actualización de la dependencia de software afectada o de eliminar la instancia si no es posible una actualización, independientemente del estado de compatibilidad con la versión de Adobe Commerce. Consulte el [Aviso de seguridad y cumplimiento](security-enforcement-policy.md) para ver cómo se programan estas actualizaciones y la asistencia técnica disponible durante todo el proceso.
 
 ## Fin de vida útil de PHP y cumplimiento de PCI
 
@@ -205,7 +205,7 @@ Si su versión se acerca a las fechas de fin de soporte o las supera, actúe aho
 - Puede acceder a las últimas funciones de Adobe: comercialización con tecnología de IA, arquitectura de tienda componible e integraciones nativas de Adobe Experience Cloud.
 - Se eliminan los ciclos de actualización recurrentes.
 
-Póngase en contacto con el equipo de su cuenta de Adobe para comenzar una evaluación de la migración. Consulte [Adobe Commerce as a Cloud Service](https://experienceleague.adobe.com/es/docs/commerce/cloud-service/overview) para obtener información general del producto.
+Póngase en contacto con el equipo de su cuenta de Adobe para comenzar una evaluación de la migración. Consulte [Adobe Commerce as a Cloud Service](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview) para obtener información general del producto.
 
 ### Ruta alternativa: actualización a una versión compatible de Adobe Commerce en la nube o local
 
