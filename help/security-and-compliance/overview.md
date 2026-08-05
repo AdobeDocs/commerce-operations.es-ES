@@ -2,9 +2,9 @@
 title: Seguridad y cumplimiento
 description: Obtenga información acerca de los recursos de seguridad, privacidad y cumplimiento normativo de su proyecto de Adobe Commerce. Descubra cómo mantener entornos seguros y cumplir con los requisitos regulatorios.
 exl-id: 8c8cb369-33da-4c4c-bcab-a95d5ec97cc1
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 3e0d993078c73a191809c85c1a0ef03ff29a78a6
 workflow-type: tm+mt
-source-wordcount: '207'
+source-wordcount: '231'
 ht-degree: 0%
 
 ---
@@ -18,6 +18,7 @@ Esta sección contiene información sobre la seguridad, la privacidad y el cumpl
 - [Seguridad del producto Adobe](https://helpx.adobe.com/es/security.html): Obtenga información sobre los parches, las actualizaciones de seguridad y las prácticas recomendadas más recientes para Adobe Commerce.
 - [Centro de confianza de Adobe](https://www.adobe.com/trust.html): acceda a la información disponible más reciente sobre el estado operativo, la seguridad, la privacidad y el cumplimiento normativo de todos los servicios en la nube de Adobe.
 - [Herramienta de análisis de todo el sitio](../tools/site-wide-analysis-tool/dashboard.md): vea información de seguridad optimizada sobre el sitio de Adobe Commerce, incluidos análisis de seguridad, servicios de fin de vida útil y recomendaciones de seguridad.
+- [Aviso de seguridad y cumplimiento](../release/security-enforcement-policy.md): Obtenga información acerca de las acciones y los plazos requeridos para las versiones 2.4.4 a 2.4.9 de Adobe Commerce en la nube para mantener la seguridad y el cumplimiento.
 
 ## Cumplimiento
 

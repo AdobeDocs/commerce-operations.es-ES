@@ -2,9 +2,9 @@
 title: Notas de la versión de Adobe Commerce
 description: Descubra dónde encontrar información sobre versiones específicas de Adobe Commerce.
 exl-id: f6385e12-5c3d-425f-939c-9dfd7ef6c4f5
-source-git-commit: 3373f83b5c03e9e81c26376f299014e8bf63a6e9
+source-git-commit: 3e0d993078c73a191809c85c1a0ef03ff29a78a6
 workflow-type: tm+mt
-source-wordcount: '493'
+source-wordcount: '497'
 ht-degree: 2%
 
 ---
@@ -37,8 +37,9 @@ La siguiente tabla proporciona notas de la versión e información importante pa
             <li><a href="https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/">Cambios incompatibles con versiones anteriores</a></li>
             <li><a href="commerce/overview.md">Adobe Commerce</a></li>
             <li><a href="security/overview.md">Parches de seguridad</a></li>
-            <li><a href="../../lifecycle-policy.md">Directiva de ciclo vital de software</a></li>
-            <li><a href="../../version-upgrade-enforcement-policy.md">Directiva de aplicación de actualización de versiones de Cloud</a></li>
+            <li><a href="../lifecycle-policy.md">Directiva de ciclo vital de software</a></li>
+            <li><a href="../version-upgrade-enforcement-policy.md">Directiva de aplicación de actualización de versiones de Cloud</a></li>
+            <li><a href="../security-enforcement-policy.md">Aviso de seguridad y cumplimiento</a></li>
             <li><a href="https://helpx.adobe.com/es/security/products/magento.html">Boletín de seguridad de Adobe</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html?lang=es">B2B para Adobe Commerce</a></li>
           </ul>

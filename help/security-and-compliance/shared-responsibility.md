@@ -2,9 +2,9 @@
 title: Seguridad de responsabilidad compartida y modelo operativo
 description: Obtenga información sobre las responsabilidades de seguridad de cada parte involucrada en su proyecto de infraestructura de Adobe Commerce en la nube.
 exl-id: f3cc1685-e469-4e30-b18e-55ce10dd69ce
-source-git-commit: 7dcd7f79417df28402a29e1e52d99eb288e8c6b9
+source-git-commit: 3e0d993078c73a191809c85c1a0ef03ff29a78a6
 workflow-type: tm+mt
-source-wordcount: '3253'
+source-wordcount: '3270'
 ht-degree: 0%
 
 ---
@@ -39,6 +39,7 @@ Los comerciantes son responsables de lo siguiente:
 >
 >* [Política de ciclo de vida del software](../release/lifecycle-policy.md): fechas de fin de soporte, soporte ampliado y disposiciones transitorias de solo seguridad
 >* [Directiva de aplicación de actualización de la versión en la nube](../release/version-upgrade-enforcement-policy.md): fechas de aplicación y acciones requeridas
+>* [Aviso de seguridad y cumplimiento](../release/security-enforcement-policy.md): acciones y plazos requeridos para las versiones 2.4.4 a 2.4.9 de Adobe Commerce en la nube
 
 {{supported-versions-only}}
 
@@ -99,9 +100,9 @@ El comerciante es responsable de seguir las prácticas recomendadas de seguridad
 * Mantener la seguridad de cualquier sistema o red que el comerciante conecte con la aplicación de infraestructura en la nube de Adobe Commerce
 * Mantener todos los servicios de plataforma, las dependencias de terceros y las extensiones de servicios de Adobe Commerce en versiones admitidas activamente por sus respectivos proveedores o por Adobe. Esto incluye:
 
-   * Servicios de infraestructura como la base de datos, caché, búsqueda, tiempo de ejecución de PHP y servidor web
-   * Extensiones de Adobe Commerce Services
-   * Todas las integraciones personalizadas y extensiones de terceros
+  * Servicios de infraestructura como la base de datos, caché, búsqueda, tiempo de ejecución de PHP y servidor web
+  * Extensiones de Adobe Commerce Services
+  * Todas las integraciones personalizadas y extensiones de terceros
 
   Adobe no admite implementaciones que ejecuten versiones no admitidas. Consulte [Requisitos del sistema](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=es) y la [Matriz de disponibilidad del producto](https://experienceleague.adobe.com/es/docs/commerce-operations/release/product-availability) para ver las versiones compatibles.
 
