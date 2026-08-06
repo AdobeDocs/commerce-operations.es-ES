@@ -3,9 +3,9 @@ title: Directiva de ciclo vital de software
 description: Obtenga información sobre las fechas clave de fin de compatibilidad de software para las versiones de Adobe Commerce.
 exl-id: 9ee4ecc8-d893-412a-a605-5a8606a1b9a9
 nudge: true
-source-git-commit: 79afa4fa95c425dfd4bc0fd894abc24db2d1b33b
+source-git-commit: e40305c77d2900a7741f1d97e022a28c04c0630c
 workflow-type: tm+mt
-source-wordcount: '1390'
+source-wordcount: '1469'
 ht-degree: 1%
 
 ---
@@ -33,7 +33,7 @@ Adobe recomienda a los clientes que se actualicen lo antes posible. Sin embargo,
 
 >[!NOTE]
 >
->Adobe presenta una directiva de actualización de versiones aplicada para Adobe Commerce en la nube para ayudar a cada cliente a permanecer en una plataforma segura y compatible. A partir del **1 de junio de 2027**, Adobe dejará de mantener los entornos de nube que ejecutan versiones de Commerce no compatibles y se reserva el derecho de eliminarlos. Si se ejecuta en la nube, debe pasar a una versión de Adobe Commerce compatible o migrar a [!DNL Adobe Commerce as a Cloud Service] antes de la fecha de [fin de la compatibilidad extendida](lifecycle-policy.md#end-of-support-dates) publicada para la línea de lanzamiento. Si está en la versión 2.4.4 a 2.4.9, consulte el [Aviso de seguridad y cumplimiento](security-enforcement-policy.md) para ver las acciones específicas y los plazos que se aplican a su entorno.
+>Adobe presenta una directiva de actualización de versiones aplicada para Adobe Commerce en la nube para ayudar a cada cliente a permanecer en una plataforma segura y compatible. A partir del **1 de junio de 2027**, Adobe dejará de mantener los entornos de nube que ejecutan versiones de Commerce no compatibles y se verá obligado a tomar las medidas adecuadas para garantizar la seguridad de Adobe Commerce y de sus clientes. Esto incluye la suspensión del tráfico a la infraestructura afectada. Como resultado, tu tienda de comercio electrónico se desconectará. Si se ejecuta en la nube, debe pasar a una versión de Adobe Commerce compatible o migrar a [!DNL Adobe Commerce as a Cloud Service] antes de la fecha de [fin de la compatibilidad extendida](lifecycle-policy.md#end-of-support-dates) publicada para la línea de lanzamiento. Si está en la versión 2.4.4 a 2.4.9, consulte el [Aviso de seguridad y cumplimiento](security-enforcement-policy.md) para ver las acciones específicas y los plazos que se aplican a su entorno.
 
 ## Período transitorio solo de seguridad
 
@@ -173,7 +173,9 @@ Usted es responsable de mantener todas las dependencias de terceros y los servic
 
 >[!IMPORTANT]
 >
->La ejecución de versiones de dependencia no admitidas puede provocar una vulnerabilidad de seguridad en la instancia de Cloud que Adobe no puede resolver. En estos casos, Adobe se reserva el derecho de aplicar una actualización de la dependencia de software afectada o de eliminar la instancia si no es posible una actualización, independientemente del estado de compatibilidad con la versión de Adobe Commerce. Consulte el [Aviso de seguridad y cumplimiento](security-enforcement-policy.md) para ver cómo se programan estas actualizaciones y la asistencia técnica disponible durante todo el proceso.
+>La ejecución de versiones de dependencia no admitidas puede provocar una vulnerabilidad de seguridad en la instancia de Cloud que Adobe no puede resolver. En estos casos, Adobe se verá obligado a tomar las medidas adecuadas para mantener la seguridad de la plataforma de Adobe Commerce y de sus clientes. Esto incluye la suspensión del tráfico a la infraestructura afectada. Como resultado, tu tienda de comercio electrónico se desconectará.
+>
+>Si un entorno sigue sin cumplir los requisitos después de la suspensión del tráfico, Adobe puede finalizar los servicios en la nube e iniciar el proceso de retirada del servicio. Como resultado de la retirada del mercado, todos los datos y activos del entorno de comercio electrónico alojado, incluidas todas las instancias, entornos y ramas, se eliminarán de forma permanente y no se podrán restaurar. Consulte las [acciones y plazos requeridos para proteger los entornos de Commerce](security-enforcement-policy.md) para ver cómo se programan estas actualizaciones y la asistencia disponible durante todo el proceso.
 
 ## Fin de vida útil de PHP y cumplimiento de PCI
 
