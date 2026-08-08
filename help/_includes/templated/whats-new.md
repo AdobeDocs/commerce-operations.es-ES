@@ -1,7 +1,7 @@
 ---
-source-git-commit: e62cb90ac4362a72f5608f30a6c919a5c36b9963
+source-git-commit: 2c9dd65bbfff402767450508d3760d0281cb3296
 workflow-type: tm+mt
-source-wordcount: '2220'
+source-wordcount: '2201'
 ht-degree: 1%
 
 ---
@@ -10,6 +10,28 @@ ht-degree: 1%
 ## Novedades
 
 Esta página contiene los cambios realizados en los últimos 60 días. Excluimos todas las actualizaciones menores, como la edición de copias, de esta lista.
+
+### 6 de agosto de 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descripción</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Se ha corregido la matriz de compatibilidad de versiones de extensión B2B en <a href="https://experienceleague.adobe.com/es/docs/commerce-operations/release/product-availability">Disponibilidad del producto</a> para Adobe Commerce 2.4.6, 2.4.7 y 2.4.8.</p>
+</td>
+      <td>
+        Técnico
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/50fb71aa968abf1302e86ffeb3d3b3a66b3c33d5">comprometer</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 31 de julio de 2026
 
@@ -635,28 +657,6 @@ Esta página contiene los cambios realizados en los últimos 60 días. Excluimos
         Actualización importante
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/b364a26b6ad3e36652b8309dcb87268d522fa31c">comprometer</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 8 de junio de 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descripción</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Se ha agregado una descripción detallada de la corrección de QPT 1.1.79 para <a href="https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-79/acp2e-4706">ACP2E-4706: el indexador de reglas de Target cron no elige productos habilitados solo en el ámbito de la vista de tienda</a>.</p>
-</td>
-      <td>
-        Tema nuevo, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/f1f9890a2a2b7dbe501037ca8dbe919865012b6f">comprometer</a></td>
     </tr>
   </tbody>
 </table>
