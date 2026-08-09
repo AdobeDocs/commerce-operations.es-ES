@@ -6,17 +6,12 @@ role: Admin, Developer
 type: Troubleshooting
 autotag-review: '2026-07-24T20:44:59.025Z'
 TQID: 'https://experienceleague.adobe.com/Qoz-3w1ddXeHyDsyfsM0gD1kwi-Z6dc-C6P9Q-nYrUo'
-product_v2:
-  - id: eadea719-cf89-469b-a6fd-a236a7138047
-feature_v2:
-  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
-  - id: c1256247-af4b-46d8-9dca-0c654ecfa157
-  - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
-topic_v2:
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 9ea2dec8843119280f9ee291a89590024ddd2973
+product_v2: id: eadea719-cf89-469b-a6fd-a236a7138047
+feature_v2: id: bd989d82-1e15-4534-88db-f1f51dd77ffaid: c1256247-af4b-46d8-9dca-0c654ecfa157id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
+topic_v2: id: c1579802-ddd4-4214-8a91-97b2066abe11
+source-git-commit: f9962ead84372461e69df158f17456d5cdf0d89e
 workflow-type: tm+mt
-source-wordcount: 484
+source-wordcount: 485
 ht-degree: 0%
 
 ---
@@ -29,8 +24,8 @@ QPT v1.1.82 incluye los siguientes parches:
 
 1. **ACP2E-4815**: corrige varios problemas de GraphQL que causaban excepciones de PHP en los registros, asociación correcta de pedidos con cuentas de clientes creadas después de pedidos a través de GraphQL y alineación de respuestas con GraphQL a través de especificaciones HTTP.
 1. **ACP2E-4194**: corrige el problema en el que las respuestas de GraphQL devuelven códigos de estado HTTP incorrectos para solicitudes no válidas, no autorizadas o con formato incorrecto.
+1. **[ACP2E-4593](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4593.md)**: corrige el problema en el que la página de CMS que se muestra para las restricciones de sitios web puede ser incorrecta en sitios web secundarios en implementaciones de varios sitios web.
 1. **[ACP2E-4547](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4547.md)**: corrige el problema en el cual un usuario administrador no puede usar **[!UICONTROL Add Products By SKU]** en el administrador para agregar productos del catálogo predeterminado a un pedido de una compañía asignada a un grupo de clientes que no está vinculado a un catálogo compartido.
-1. **ACP2E-4593**: corrige el problema en el que la página de CMS que se muestra para las restricciones de sitios web es incorrecta en sitios web secundarios en implementaciones de varios sitios web.
 1. **ACP2E-4682**: corrige el problema que se produce cuando al visitar una página de Storefront que comprueba el estado de la cotización `isActive` se crean registros de cotización vacíos cada vez que se carga la página.
 1. **ACP2E-4695**: corrige el problema por el que el indizador de reglas de catálogo consume memoria excesiva y no se puede completar, lo que provoca inestabilidad y errores de memoria insuficiente.
 1. **ACP2E-4698**: corrige el problema por el que al volver a editar una imagen en el contenido de texto del Page Builder se guarda una URL de medios absoluta en lugar de conservar una directiva de medios portátil.
