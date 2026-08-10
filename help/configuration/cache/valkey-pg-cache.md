@@ -50,19 +50,19 @@ Commerce proporciona opciones de línea de comandos para configurar el valor pre
 >[!TAB Caché Zend (2.4.8 y anteriores)]
 
 - **Caché Zend (2.4.8 y anteriores)**: servidor Valkey heredado para Commerce 2.4.8 y anteriores:
-   - **Servidor Valkey heredado** — Utiliza la ruta de clase completa (`Magento\Framework\Cache\Backend\Valkey`)
-   - **Claves de precarga**: admite la precarga de claves de caché utilizadas frecuentemente
-   - **Scripts de Lua**: Lua para la recolección de basura
-   - **Compresión**: admite la compresión de datos
+  - **Servidor Valkey heredado** — Utiliza la ruta de clase completa (`Magento\Framework\Cache\Backend\Valkey`)
+  - **Claves de precarga**: admite la precarga de claves de caché utilizadas frecuentemente
+  - **Scripts de Lua**: Lua para la recolección de basura
+  - **Compresión**: admite la compresión de datos
 
 >[!TAB Caché Symfony (2.4.9+)]
 
 - **Caché Symfony (2.4.9+)**: a partir de Commerce 2.4.9, la caché Symfony proporciona una implementación de caché moderna compatible con PSR-6 para Valkey con mejoras de rendimiento significativas:
-   - **Canalización automática de Valkey**: agrupa varias operaciones en solicitudes únicas, lo que reduce la latencia
-   - **PSR-6 TagAwareAdapter**: invalidación eficiente de caché basada en etiquetas con operaciones atómicas
-   - **Serialización binaria Igbinary**: la serialización binaria reduce el tamaño de entrada de caché en un 45% y mejora la velocidad en un 5-10%
-   - **Conexiones persistentes mejoradas**: agrupación de conexiones más estable con mejor manejo de los procesos bifurcados
-   - **Scripts Lua optimizados**: ejecución del lado del servidor combinada con canalización para lograr la máxima eficiencia
+  - **Canalización automática de Valkey**: agrupa varias operaciones en solicitudes únicas, lo que reduce la latencia
+  - **PSR-6 TagAwareAdapter**: invalidación eficiente de caché basada en etiquetas con operaciones atómicas
+  - **Serialización binaria Igbinary**: la serialización binaria reduce el tamaño de entrada de caché en un 45% y mejora la velocidad en un 5-10%
+  - **Conexiones persistentes mejoradas**: agrupación de conexiones más estable con mejor manejo de los procesos bifurcados
+  - **Scripts Lua optimizados**: ejecución del lado del servidor combinada con canalización para lograr la máxima eficiencia
 
 >[!ENDTABS]
 

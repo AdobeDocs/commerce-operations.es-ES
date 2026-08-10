@@ -4,9 +4,9 @@ user-guide-description: Obtenga información sobre las distintas herramientas qu
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: f9962ead84372461e69df158f17456d5cdf0d89e
+source-git-commit: 35bad8e2071ee36c0bafccf542035564aeeebc59
 workflow-type: tm+mt
-source-wordcount: '10549'
+source-wordcount: '10578'
 ht-degree: 0%
 
 ---
@@ -1044,6 +1044,8 @@ ht-degree: 0%
       - [ACP2E-4709: Las páginas de CMS no se guardan en Page Builder cuando la jerarquía de páginas incluye comillas dobles](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4709.md)
     - Versión 1.1.82 {#v1-1-82}
       - [Información general:  [!DNL Quality Patches Tool] (QPT) v1.1.82](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/overview.md)
+      - [ACP2E-4797: Editor de WYSIWYG de administración y Page Builder bloquean los caracteres Unicode de 4 bytes cuando se admite utf8mb4](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4797.md)
+      - [ACP2E-4682: Las páginas de tienda que comprueban la cotización están activas y crean registros de cotización vacíos](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4682.md)
       - [ACP2E-4593: página de CMS de restricción de sitio web incorrecta servida en el sitio web secundario en tiendas de varios sitios web](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4593.md)
       - [ACP2E-4547: El administrador no puede añadir un producto de catálogo predeterminado a una oferta cuando no está asignado al catálogo compartido del usuario](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4547.md)
       - [ACP2E-4805: Las solicitudes de cierre de compra se ralentizan para los productos configurables cuando aparece el primer hijo comercializable más adelante en la lista](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4805.md)

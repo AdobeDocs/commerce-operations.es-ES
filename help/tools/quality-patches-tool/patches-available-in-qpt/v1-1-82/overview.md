@@ -14,9 +14,9 @@ feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: f9962ead84372461e69df158f17456d5cdf0d89e
+source-git-commit: 35bad8e2071ee36c0bafccf542035564aeeebc59
 workflow-type: tm+mt
-source-wordcount: 485
+source-wordcount: 487
 ht-degree: 0%
 
 ---
@@ -29,13 +29,13 @@ QPT v1.1.82 incluye los siguientes parches:
 
 1. **ACP2E-4815**: corrige varios problemas de GraphQL que causaban excepciones de PHP en los registros, asociación correcta de pedidos con cuentas de clientes creadas después de pedidos a través de GraphQL y alineación de respuestas con GraphQL a través de especificaciones HTTP.
 1. **ACP2E-4194**: corrige el problema en el que las respuestas de GraphQL devuelven códigos de estado HTTP incorrectos para solicitudes no válidas, no autorizadas o con formato incorrecto.
-1. **[ACP2E-4593](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4593.md)**: corrige el problema en el que la página de CMS que se muestra para las restricciones de sitios web puede ser incorrecta en sitios web secundarios en implementaciones de varios sitios web.
+1. **[ACP2E-4682](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4682.md)**: corrige el problema en el cual al visitar una página de Storefront que comprueba el estado Activo de la oferta, se crean registros de oferta vacíos cada vez que se carga la página.
 1. **[ACP2E-4547](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4547.md)**: corrige el problema en el cual un usuario administrador no puede usar **[!UICONTROL Add Products By SKU]** en el administrador para agregar productos del catálogo predeterminado a un pedido de una compañía asignada a un grupo de clientes que no está vinculado a un catálogo compartido.
-1. **ACP2E-4682**: corrige el problema que se produce cuando al visitar una página de Storefront que comprueba el estado de la cotización `isActive` se crean registros de cotización vacíos cada vez que se carga la página.
+1. **[ACP2E-4593](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4593.md)**: corrige el problema en el que la página de CMS que se muestra para las restricciones de sitios web puede ser incorrecta en sitios web secundarios en implementaciones de varios sitios web.
 1. **ACP2E-4695**: corrige el problema por el que el indizador de reglas de catálogo consume memoria excesiva y no se puede completar, lo que provoca inestabilidad y errores de memoria insuficiente.
 1. **ACP2E-4698**: corrige el problema por el que al volver a editar una imagen en el contenido de texto del Page Builder se guarda una URL de medios absoluta en lugar de conservar una directiva de medios portátil.
+1. **[ACP2E-4797](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4797.md)**: soluciona el problema de que la introducción de caracteres Unicode de 4 bytes en el editor de WYSIWYG o en el contenido de Page Builder en el administrador se bloquea incorrectamente incluso cuando la base de datos está configurada para admitir utf8mb4.
 1. **[ACP2E-4748](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4748.md)**: soluciona el problema por el que la caducidad de los puntos de recompensa se ejecuta lentamente en las tiendas con un historial de puntos de recompensa grande, lo que causa retrasos en los puntos de recompensa que caducan.
-1. **ACP2E-4797**: soluciona el problema que causaba que la introducción de caracteres Unicode de 4 bytes en el editor de WYSIWYG o en el contenido de Page Builder en el administrador se bloqueara incorrectamente incluso cuando la base de datos está configurada para admitir `utf8mb4`.
 1. **ACP2E-4799**: corrige el problema en el que la consulta de GraphQL `requisition_lists` devuelve un valor de `total_count` que refleja únicamente el número de elementos de la página actual en lugar del número total de listas de solicitudes que coinciden con los criterios de la consulta.
 1. **[ACP2E-4805](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4805.md)**: corrige el problema en el que las solicitudes de API de cierre de compra se vuelven significativamente más lentas para los productos configurables con muchos productos secundarios cuando el primer producto secundario comercializable aparece tarde en la lista.
 1. **ACP2E-4840**: corrige el problema en el que el valor de cantidad solicitado en la consulta de GraphQL `products` devuelve *null*.

@@ -1,7 +1,7 @@
 ---
 source-git-commit: 0d07af38e1af9331924c109356126a1bfa96156b
 workflow-type: tm+mt
-source-wordcount: '32399'
+source-wordcount: '32815'
 ht-degree: 0%
 
 ---
@@ -73,7 +73,7 @@ Ahora, las API validan correctamente la entrada y devuelven un error 400 para ca
 
 _AC-6419 - [Problema de GitHub](https://github.com/magento/magento2/issues/35934) - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/a7ef6300)_
 
-#### Error interno del servidor en el extremo de API `/V1/order/&lbrace;orderId&rbrace;/ship`
+#### Error interno del servidor en el extremo de API `/V1/order/{orderId}/ship`
 
 El sistema corrige ahora el error interno del servidor en el extremo de API `/V1/order/{orderId}/ship` y devuelve un error 400, ya que la solicitud tiene un formato incorrecto.
 
@@ -3529,7 +3529,7 @@ _ACP2E-4285 - [Contribución de código de GitHub](https://github.com/magento/ma
 
 #### Error interno del servidor
 
-Magento ahora agrega correctamente productos al carro de compras de un cliente al usar el extremo REST asincrónico POST /rest/default/async/V1/carts/mine/items. Anteriormente, esta solicitud asincrónica de &quot;agregar al carro de compras&quot; generaba un error interno del servidor y Magento registraba el siguiente error: Error: Call to a member function setFinalPrice() on null en app/code/Magento/Quote/Model/Quote/Item/AbstractItem.php:162.
+Magento ahora agrega correctamente productos al carro de compras de un cliente al usar el extremo REST asincrónico POST /rest/default/async/V1/carts/mine/items. Anteriormente, esta solicitud asincrónica de &quot;agregar al carro de compras&quot; provocaba un error interno del servidor y Magento registraba el siguiente error: Error: Call to a member function setFinalPrice() on null en app/code/Magento/Quote/Model/Quote/Item/AbstractItem.php:162.
 
 _AC-16344 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/8670a2b4)_
 
