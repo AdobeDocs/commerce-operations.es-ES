@@ -28,7 +28,7 @@ Adobe Commerce (todos los métodos de implementación) 2.3.5 - 2.3.7-p1 y 2.4.1 
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de la herramienta Parches de Calidad. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de la herramienta Parches de Calidad. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches &#x200B;](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
@@ -42,15 +42,15 @@ Si agrega un artículo al carro de compras varias veces (solicitud paralela) par
 
    <pre>
     <code class="language-graphql">
-    mutation {
+    mutation &lbrace;
         generateCustomerToken(
             email: "customer email"
             password: "customer password"
         )
-        {
+        &lbrace;
             token
-        }
-    }
+        &rbrace;
+    &rbrace;
     </code>
     </pre>
 
@@ -58,9 +58,9 @@ Si agrega un artículo al carro de compras varias veces (solicitud paralela) par
 
    <pre>
     <code class="language-graphql">
-    mutation{
+    mutation&lbrace;
      createEmptyCart
-    }
+    &rbrace;
     </code>
     </pre>
 
