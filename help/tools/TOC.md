@@ -4,9 +4,9 @@ user-guide-description: Obtenga información sobre las distintas herramientas qu
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: 35bad8e2071ee36c0bafccf542035564aeeebc59
+source-git-commit: b5b0f88fa2b7c168ab51f457994e4ed0578794a2
 workflow-type: tm+mt
-source-wordcount: '10578'
+source-wordcount: '10598'
 ht-degree: 0%
 
 ---
@@ -1044,6 +1044,8 @@ ht-degree: 0%
       - [ACP2E-4709: Las páginas de CMS no se guardan en Page Builder cuando la jerarquía de páginas incluye comillas dobles](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4709.md)
     - Versión 1.1.82 {#v1-1-82}
       - [Información general:  [!DNL Quality Patches Tool] (QPT) v1.1.82](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/overview.md)
+      - [ACP2E-4870: Correos electrónicos de alerta de producto ignoran la configuración de correo electrónico de vista de tienda](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4870.md)
+      - [ACP2E-4799: GraphQL query request_lists devuelve total_count incorrecto con paginación](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4799.md)
       - [ACP2E-4797: Editor de WYSIWYG de administración y Page Builder bloquean los caracteres Unicode de 4 bytes cuando se admite utf8mb4](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4797.md)
       - [ACP2E-4682: Las páginas de tienda que comprueban la cotización están activas y crean registros de cotización vacíos](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4682.md)
       - [ACP2E-4593: página de CMS de restricción de sitio web incorrecta servida en el sitio web secundario en tiendas de varios sitios web](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4593.md)

@@ -14,9 +14,9 @@ feature_v2:
   - id: d1e21356-0064-4f48-9089-16e3f0dbd2a6
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
-source-git-commit: 35bad8e2071ee36c0bafccf542035564aeeebc59
+source-git-commit: b5b0f88fa2b7c168ab51f457994e4ed0578794a2
 workflow-type: tm+mt
-source-wordcount: 487
+source-wordcount: 488
 ht-degree: 0%
 
 ---
@@ -36,10 +36,10 @@ QPT v1.1.82 incluye los siguientes parches:
 1. **ACP2E-4698**: corrige el problema por el que al volver a editar una imagen en el contenido de texto del Page Builder se guarda una URL de medios absoluta en lugar de conservar una directiva de medios portátil.
 1. **[ACP2E-4797](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4797.md)**: soluciona el problema de que la introducción de caracteres Unicode de 4 bytes en el editor de WYSIWYG o en el contenido de Page Builder en el administrador se bloquea incorrectamente incluso cuando la base de datos está configurada para admitir utf8mb4.
 1. **[ACP2E-4748](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4748.md)**: soluciona el problema por el que la caducidad de los puntos de recompensa se ejecuta lentamente en las tiendas con un historial de puntos de recompensa grande, lo que causa retrasos en los puntos de recompensa que caducan.
-1. **ACP2E-4799**: corrige el problema en el que la consulta de GraphQL `requisition_lists` devuelve un valor de `total_count` que refleja únicamente el número de elementos de la página actual en lugar del número total de listas de solicitudes que coinciden con los criterios de la consulta.
+1. **[ACP2E-4799](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4799.md)**: corrige el problema en el que la consulta `requisition_lists GraphQL` devuelve un valor `total_count` que refleja únicamente el número de elementos de la página actual en lugar del número total de listas de solicitudes que coinciden con los criterios de consulta.
 1. **[ACP2E-4805](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4805.md)**: corrige el problema en el que las solicitudes de API de cierre de compra se vuelven significativamente más lentas para los productos configurables con muchos productos secundarios cuando el primer producto secundario comercializable aparece tarde en la lista.
 1. **ACP2E-4840**: corrige el problema en el que el valor de cantidad solicitado en la consulta de GraphQL `products` devuelve *null*.
-1. **ACP2E-4870**: corrige el problema en el que **[!UICONTROL Product Alerts]** notificaciones por correo electrónico omiten la configuración de correo electrónico de vista de tienda.
+1. **[ACP2E-4870](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4870.md)**: corrige el problema en el que las notificaciones por correo electrónico de alertas de productos omiten la configuración de correo electrónico de vista de tienda.
 1. **[ACP2E-4875](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4875.md)**: corrige el problema en el que al ver cuentas de clientes con libretas de direcciones grandes en el administrador se cierra la sesión de los usuarios administradores de forma inesperada.
 1. **ACP2E-4894**: Corrige el problema por el que los nuevos pedidos se retrasan en aparecer en las cuadrículas de administración de pedidos cuando **[!UICONTROL Asynchronous Indexing]** está habilitado en tiendas de gran volumen.
 1. **ACP2E-4981**: corrige el problema en el que los carruseles de productos de Page Builder muestran productos en un orden que no refleja la posición establecida en el Administrador e incluyen productos configurables cuando se encuentran productos secundarios que coinciden y que son visibles individualmente.
