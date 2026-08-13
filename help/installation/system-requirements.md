@@ -3,7 +3,7 @@ title: Requisitos del sistema
 description: Obtenga información sobre las dependencias de software y los requisitos del sistema para Adobe Commerce. Consulte las configuraciones probadas para comprobar la compatibilidad con el entorno de implementación.
 exl-id: 008c9edc-7d72-403c-847f-0e3b77bbb197
 last-update: 2026-08-11T00:00:00Z
-source-git-commit: 5e79de91e5b277d9e4b44dc91f48d7eac6733324
+source-git-commit: 81442a33c3dabcaa3b9eda56a2132bf7b7432ba2
 workflow-type: tm+mt
 source-wordcount: '1651'
 ht-degree: 0%
@@ -230,4 +230,4 @@ Para Adobe Commerce en la nube, consulte [Configuración de Xdebug](https://expe
 >
 >Hay un problema conocido con `xdebug` que puede afectar las instalaciones de Adobe Commerce o el acceso a la tienda o al administrador después de la instalación. Ver [Problema conocido que afecta a la instalación de `xdebug`](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/known-issues-that-affect-installation) en la _Base de conocimiento de soporte técnico de Commerce_.
 
-<!-- Last updated from includes: 2026-07-23 16:17:19 -->
+<!-- Last updated from includes: 2026-08-10 23:39:34 -->

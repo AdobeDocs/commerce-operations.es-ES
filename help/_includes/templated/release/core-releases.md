@@ -1,7 +1,7 @@
 ---
-source-git-commit: e77a19ce01fb0dd650aee3e8ec5f86375b429451
+source-git-commit: 420e4af6778d3f493e9ad4fcc4ae175446d31243
 workflow-type: tm+mt
-source-wordcount: '2046'
+source-wordcount: '2131'
 ht-degree: 3%
 
 ---
@@ -9,7 +9,7 @@ ht-degree: 3%
 
 ## 2.4.9
 
-La compatibilidad regular con la línea de la versión 2.4.9 finaliza en mayo de 2029.
+La compatibilidad regular con la línea de la versión 2.4.9 finaliza el 31 de mayo de 2029.
 
 <table>
   <thead>
@@ -30,7 +30,7 @@ La compatibilidad regular con la línea de la versión 2.4.9 finaliza en mayo de
 
 ## 2.4.8
 
-La compatibilidad regular con la línea de versión 2.4.8 finaliza el 11 de abril de 2028.
+La compatibilidad regular con la línea de la versión 2.4.8 finaliza el 31 de mayo de 2028.
 
 <table>
   <thead>
@@ -81,7 +81,8 @@ La compatibilidad regular con la línea de versión 2.4.8 finaliza el 11 de abri
 
 ## 2.4.7
 
-La compatibilidad regular con la línea de versión 2.4.7 finaliza el 9 de abril de 2027.
+La compatibilidad regular con la línea de la versión 2.4.7 finaliza el 31 de mayo de 2027.
+La compatibilidad ampliada para la línea de versión 2.4.7 finaliza el 31 de mayo de 2028.
 
 <table>
   <thead>
@@ -162,7 +163,9 @@ La compatibilidad regular con la línea de versión 2.4.7 finaliza el 9 de abril
 
 ## 2.4.6
 
-La compatibilidad regular con la línea de la versión 2.4.6 finaliza el 11 de agosto de 2026.
+La compatibilidad regular con la línea de la versión 2.4.6 finalizó el 11 de agosto de 2026.
+La compatibilidad ampliada para la línea de versión 2.4.6 finaliza el 31 de agosto de 2027.
+El aprovisionamiento de correcciones de seguridad adicionales para la línea de la versión 2.4.6 finaliza el 31 de mayo de 2028.
 
 <table>
   <thead>
@@ -274,8 +277,8 @@ La compatibilidad regular con la línea de la versión 2.4.6 finaliza el 11 de a
 ## 2.4.5
 
 La compatibilidad regular con la línea de la versión 2.4.5 finalizó el 12 de agosto de 2025.
-La compatibilidad ampliada para la línea de versión 2.4.5 finaliza el 11 de agosto de 2026.
-El aprovisionamiento de correcciones de seguridad adicionales para la línea de versión 2.4.5 finaliza en mayo de 2027.
+La compatibilidad ampliada para la línea de versión 2.4.5 finalizó el 11 de agosto de 2026.
+El aprovisionamiento de correcciones de seguridad adicionales para la línea de versión 2.4.5 finaliza el 31 de mayo de 2027.
 
 <table>
   <thead>
@@ -400,7 +403,7 @@ El aprovisionamiento de correcciones de seguridad adicionales para la línea de 
 
 La compatibilidad regular con la línea de versión 2.4.4 finalizó el 12 de abril de 2025.
 La compatibilidad ampliada para la línea de versión 2.4.4 finalizó el 14 de abril de 2026.
-El aprovisionamiento de correcciones de seguridad adicionales para la línea de versión 2.4.4 finaliza en mayo de 2027.
+El aprovisionamiento de correcciones de seguridad adicionales para la línea de versión 2.4.4 finaliza el 31 de mayo de 2027.
 
 <table>
   <thead>
