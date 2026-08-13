@@ -3,7 +3,7 @@ title: Directiva de ciclo vital de software
 description: Obtenga información sobre las fechas clave de fin de compatibilidad de software para las versiones de Adobe Commerce.
 exl-id: 9ee4ecc8-d893-412a-a605-5a8606a1b9a9
 nudge: true
-source-git-commit: e40305c77d2900a7741f1d97e022a28c04c0630c
+source-git-commit: bde0fd61b02eaf5a962cc9b79cf39a08199e83c8
 workflow-type: tm+mt
 source-wordcount: '1469'
 ht-degree: 1%
@@ -21,7 +21,7 @@ Adobe no proporciona correcciones de seguridad y calidad para servicios de terce
 
 El periodo de soporte estándar de tres años a partir de la fecha de disponibilidad general (GA). El soporte estándar incluye correcciones de calidad, parches de seguridad y soporte total de Adobe Commerce on-call.
 
-- **Correcciones de calidad**: los clientes pueden obtener acceso a las correcciones de calidad poniéndose en contacto con el [Soporte técnico de Adobe Commerce](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) o a través del servicio de autoservicio [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es).
+- **Correcciones de calidad**: los clientes pueden obtener acceso a las correcciones de calidad poniéndose en contacto con el [Soporte técnico de Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) o a través del servicio de autoservicio [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html).
 
 - **Correcciones de seguridad**: Adobe proporciona correcciones de seguridad mediante parches de seguridad acumulativos y [archivos de parches de seguridad aislados](versioning-policy.md#isolated-security-patch-file) no acumulativos durante el período de compatibilidad de tres años.
 
@@ -52,8 +52,8 @@ La siguiente tabla muestra el ciclo de vida completo para cada versión de Adobe
 | Adobe Commerce 2.4.9 | 12 de mayo de 2026 | 31 de mayo de 2029 | TBD | N/D | TBD |
 | Adobe Commerce 2.4.8 | 8 de abril de 2025 | 31 de mayo de 2028 | TBD | N/D | TBD |
 | Adobe Commerce 2.4.7 | 9 de abril de 2024 | 31 de mayo de 2027 | 31 de mayo de 2028 | N/D | 1 de junio de 2028 |
-| Adobe Commerce 2.4.6 | 14 de marzo de 2023 | 11 de agosto de 2026 | 30 de agosto de 2027 | 31 de mayo de 2028 | 1 de junio de 2028 |
-| Adobe Commerce 2.4.5 | 9 de agosto de 2022 | 12 de agosto de 2025 | 12 de agosto de 2026 | 31 de mayo de 2027 | 1 de junio de 2027 |
+| Adobe Commerce 2.4.6 | 14 de marzo de 2023 | 11 de agosto de 2026 | 31 de agosto de 2027 | 31 de mayo de 2028 | 1 de junio de 2028 |
+| Adobe Commerce 2.4.5 | 9 de agosto de 2022 | 12 de agosto de 2025 | 11 de agosto de 2026 | 31 de mayo de 2027 | 1 de junio de 2027 |
 | Adobe Commerce 2.4.4 | 12 de abril de 2022 | 12 de abril de 2025 | 14 de abril de 2026 | 31 de mayo de 2027 | 1 de junio de 2027 |
 
 {style="table-layout:auto"}
@@ -207,7 +207,7 @@ Si su versión se acerca a las fechas de fin de soporte o las supera, actúe aho
 - Puede acceder a las últimas funciones de Adobe: comercialización con tecnología de IA, arquitectura de tienda componible e integraciones nativas de Adobe Experience Cloud.
 - Se eliminan los ciclos de actualización recurrentes.
 
-Póngase en contacto con el equipo de su cuenta de Adobe para comenzar una evaluación de la migración. Consulte [Adobe Commerce as a Cloud Service](https://experienceleague.adobe.com/es/docs/commerce/cloud-service/overview) para obtener información general del producto.
+Póngase en contacto con el equipo de su cuenta de Adobe para comenzar una evaluación de la migración. Consulte [Adobe Commerce as a Cloud Service](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview) para obtener información general del producto.
 
 ### Ruta alternativa: actualización a una versión compatible de Adobe Commerce en la nube o local
 
