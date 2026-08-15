@@ -22,9 +22,9 @@ level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
 badgePaas: label="Solo Adobe Commerce en la nube 2.4.4&#58; 2.4.9" type="Informative" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce en la versión de nube 2.4.4 a 2.4.9"
 nudge: true
-source-git-commit: c3ea400087a14aa1021ab6998b9de48c33787cc9
+source-git-commit: e2b86c349bdd085717f732532f68e3fae8455d13
 workflow-type: tm+mt
-source-wordcount: 2174
+source-wordcount: 2200
 ht-degree: 0%
 
 ---
@@ -87,10 +87,11 @@ Compruebe que su entorno ejecute versiones compatibles con el proveedor de las s
 
 #### Paso 1: Compruebe las versiones de dependencia del software de terceros
 
-1. Inicie sesión en [Cloud Console](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/start/cloud-console), donde podrá ver todos sus entornos.
+1. Inicie sesión en [Cloud Console](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/start/cloud-console), donde podrá ver todos sus proyectos en la nube.
 2. Abra el proyecto correspondiente y, a continuación, seleccione el entorno que desee revisar.
-3. Compruebe la configuración del servicio para ese entorno en el archivo `.magento/services.yaml`, que define los nombres de servicio y las versiones compatibles que utiliza Adobe Commerce en la nube.
-4. Compruebe las versiones de dependencia que cada entorno está ejecutando siguiendo las instrucciones de [Configurar servicios](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/configure/service/services-yaml).
+3. Abra la pestaña &quot;Contenedores&quot;, donde puede ver una lista de todos los servicios que se utilizan actualmente en el entorno seleccionado.
+4. Haga clic en cada vínculo de servicio para comprobar la versión exacta que se está ejecutando en el entorno.
+Consulte las instrucciones de [Configurar servicios](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/configure/service/services-yaml) para obtener más información.
 
 Todas las dependencias de software no admitidas deben actualizarse a las versiones descritas en los cronogramas compartidos en la Tabla 2 a continuación.
 
@@ -177,7 +178,7 @@ Si un entorno sigue sin cumplir los requisitos después de la suspensión del tr
 
 **Si decide actualizar a Adobe Commerce en la versión 2.4.9 de la nube:**
 
-* **Informe de compatibilidad de actualización:** Adobe proporciona un informe detallado que identifica exactamente lo que requiere su actualización a Adobe Commerce versión 2.4.9, incluyendo la identificación de qué módulos y archivos requieren actualizaciones, el número de problemas críticos, etc. [Genere su informe de compatibilidad de actualización](https://supportinsights.adobe.com/commerce/tab/main).
+* **Informe de compatibilidad de actualización:** Adobe proporciona un informe detallado que identifica exactamente lo que requiere su actualización a Adobe Commerce versión 2.4.9, incluyendo la identificación de qué módulos y archivos requieren actualizaciones, el número de problemas críticos, etc. Consulte la documentación de [Site-Wide Analysis Tool](https://experienceleague.adobe.com/es/docs/commerce-operations/tools/site-wide-analysis-tool/access) para obtener más información sobre cómo generar el informe de compatibilidad de actualización.
 
 * **Actualización de dependencia de software:** Dado que no puede actualizar las dependencias de software directamente, abra un [ticket de soporte](https://experienceleague.adobe.com/es/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case) para que Adobe se ocupe de la actualización. Para obtener más información, consulte [Configurar servicios](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/configure/service/services-yaml).
 
