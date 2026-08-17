@@ -2,8 +2,8 @@
 title: Disponibilidad del producto
 description: Obtenga información sobre las funciones de Adobe Commerce que se admiten actualmente y compruebe su compatibilidad con versiones específicas de Adobe Commerce.
 exl-id: 7e8e8ac2-a0b9-4023-a813-c0f1293e54c2
-last-update: 2026-08-13T00:00:00Z
-source-git-commit: 9d4cd97d654a4837068876bb539559979a4a10e8
+last-update: 2026-08-14T00:00:00Z
+source-git-commit: b5601f4fa56a7bb40d8104fd3d8ec4f72c4681e2
 workflow-type: tm+mt
 source-wordcount: '317'
 ht-degree: 0%
