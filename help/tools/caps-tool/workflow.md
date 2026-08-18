@@ -1,27 +1,27 @@
 ---
-title: Cómo funciona  [!DNL Cloud Automation Patching Service (CAPS)] flujo de trabajo
+title: Resumen del flujo de trabajo [!DNL Cloud Automation Patching Service (CAPS)]
 description: Obtenga información acerca del proceso de  [!DNL Cloud Automation Patching Service (CAPS)] flujo de trabajo, incluida la terminología, las fases de flujo de trabajo y las operaciones para la administración automatizada de parches.
 hide: true
-source-git-commit: de77f68f9ca6f2d4c4d4abed317210d5121a5497
+source-git-commit: a11f18cf9736be873c84327d1a74e6eec6773ec2
 workflow-type: tm+mt
-source-wordcount: '834'
+source-wordcount: '854'
 ht-degree: 0%
 
 ---
 
-# Funcionamiento del flujo de trabajo [!DNL Cloud Automation Patching Service (CAPS)]
+# Resumen de flujo de trabajo [!DNL Cloud Automation Patching Service (CAPS)]
 
 Este tema proporciona información general de alto nivel sobre cómo funcionan las operaciones de revisión con [!DNL CAPS (Cloud Automation Patching Service)].
 
 ## Terminología
 
 * **Operaciones** - las acciones principales realizadas por [!DNL CAPS]:
-   * Aplicar
-   * Revertir
+  * Aplicar
+  * Revertir
 * **Fases**: las tres fases del flujo de trabajo:
-   * Comprobación preliminar
-   * Parches
-   * Validación
+  * Comprobación preliminar
+  * Parches
+  * Validación
 * **Entorno**: el entorno de Adobe Commerce Cloud en el que se aplican los parches.
 
 ## Operaciones
@@ -53,10 +53,10 @@ La fase de comprobación preliminar valida que el parche se pueda aplicar de for
 **Qué sucede:**
 
 * **Salvaguardias del entorno de producción** (solo entornos de producción):
-   * Comprueba si el almacén está en modo de mantenimiento
-   * Comprueba que los trabajos cron estén deshabilitados
-   * Bloques de aplicación de parches si no se cumplen las condiciones
-   * Muestra el cuadro de diálogo de confirmación si se cumplen las condiciones
+  * Comprueba si el almacén está en modo de mantenimiento
+  * Comprueba que los trabajos cron estén deshabilitados
+  * Bloques de aplicación de parches si no se cumplen las condiciones
+  * Muestra el cuadro de diálogo de confirmación si se cumplen las condiciones
 * **Validación de revisión** - comprueba que el archivo de revisión es válido y compatible
 * **Evaluación del entorno**: comprueba la preparación y los recursos del entorno
 * **Detección de conflictos** - identifica posibles conflictos con el código existente
@@ -92,6 +92,10 @@ Este enfoque proporciona lo siguiente:
 **Operaciones de Git**: los cambios se confirman y se insertan en la rama del entorno de integración
 
 **Activación del entorno**: el entorno de integración está activado para implementar el código al que se aplicó el parche
+
+>[!NOTE]
+>
+>Si el proyecto usa un repositorio externo de GitHub, [!DNL CAPS] administra la autenticación automáticamente mediante la [[!DNL CAPS] aplicación de GitHub](github-integration.md). No se requieren credenciales adicionales.
 
 #### Fase 2c: volver a combinar con el entorno de destino
 
@@ -159,5 +163,6 @@ Si no se cumple alguna de las condiciones, la aplicación de parche se bloquea y
 
 * [Introducción a CAPS](intro.md)
 * [Cómo acceder a](access.md)
+* [Integración de GitHub](github-integration.md)
 * [Prácticas recomendadas](best-practices.md)
 * [Resolución de problemas](troubleshooting.md)

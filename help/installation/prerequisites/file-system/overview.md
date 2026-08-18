@@ -4,7 +4,7 @@ description: Obtenga información acerca de la importancia de los permisos del s
 exl-id: a84784bf-afd6-4dba-9745-3fefc0ecafcb
 source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '448'
 ht-degree: 0%
 
 ---
@@ -27,9 +27,9 @@ Existen dos tipos de propietarios del sistema de archivos:
 
   El alojamiento privado es útil si administra un servidor de aplicaciones. Cada usuario tiene una responsabilidad específica:
 
-   - El _usuario del servidor web_ ejecuta el administrador y la tienda.
+  - El _usuario del servidor web_ ejecuta el administrador y la tienda.
 
-   - El _usuario de línea de comandos_ ejecuta trabajos cron y utilidades de línea de comandos.
+  - El _usuario de línea de comandos_ ejecuta trabajos cron y utilidades de línea de comandos.
 
   Ambos usuarios necesitan los mismos permisos para el sistema de archivos, por lo que es mejor usar un [grupo compartido](configure-permissions.md#set-ownership-and-permissions-for-two-users) y establecer un [`umask`](#restrict-access-with-a-umask).
 

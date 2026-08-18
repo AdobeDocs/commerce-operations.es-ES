@@ -7,7 +7,7 @@ feature: Best Practices
 exl-id: 18bc97a0-3d34-4d48-a3e2-84af2da7d0d3
 source-git-commit: d884d434e696a911de626dc76983468556cf451f
 workflow-type: tm+mt
-source-wordcount: '977'
+source-wordcount: '1157'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ Una herramienta que puede usar para las pruebas de esfuerzo es GTmetrix. Medir l
 
 Obtenga más información sobre la preparación de proyectos de Commerce para períodos de alto tráfico:
 
-- [Preparación para las vacaciones](https://experienceleague.adobe.com/docs/events/commerce-intelligence-webinar-recordings/2021/holiday-readiness.html?lang=es)
+- [Preparación para las vacaciones](https://experienceleague.adobe.com/docs/events/commerce-intelligence-webinar-recordings/2021/holiday-readiness.html)
 - [Análisis de compras de vacaciones](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/analyze/performance/holiday-season-perf.html?lang=es)
 - [Aumento de capacidad de sobretensión](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/2021-holiday-surge-capacity-requests-for-magento-commerce-cloud.html?lang=es)
 
@@ -52,7 +52,7 @@ Utilice GTmetrix para simular el tráfico pesado y analizar el rendimiento del s
 Obtenga más información sobre la prueba de proyectos de Adobe Commerce:
 
 - [Guía de pruebas](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/guidance.html?lang=es) (infraestructura en la nube)
-- [Pruebas de aplicación](https://developer.adobe.com/commerce/testing/guide/)
+- [Pruebas de aplicaciones](https://developer.adobe.com/commerce/testing/guide/)
 
 ### Identificar y resolver problemas de rendimiento
 
@@ -93,8 +93,8 @@ Para optimizar el rendimiento del servidor MySQL y minimizar los cuellos de bote
 
 Obtenga más información sobre la configuración y optimización de MySQL:
 
-- [Prácticas recomendadas para la configuración de bases de datos](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html?lang=es)
-- [Replicación lenta para la replicación de Galera DB](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/galera-db-slow-replication.html?lang=es)
+- [Prácticas recomendadas para configurar bases de datos](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html?lang=es)
+- [Replicación lenta para Galera DB replicación](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/galera-db-slow-replication.html?lang=es)
 - [Directrices generales de MySQL](/help/installation/prerequisites/database/mysql.md)
 - [Almacenamiento en caché de consultas MySQL](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/mysql-query-cache.html?lang=es)
 

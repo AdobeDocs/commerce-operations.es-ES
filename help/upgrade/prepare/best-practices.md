@@ -5,7 +5,7 @@ feature: Upgrade, Best Practices
 exl-id: 53c505a3-8b99-4fc3-b1b4-f2f75208a51b
 source-git-commit: 6b3afb93770c1d976dd975a484070e0aee730a98
 workflow-type: tm+mt
-source-wordcount: '1055'
+source-wordcount: '1118'
 ht-degree: 0%
 
 ---
@@ -24,11 +24,11 @@ Es importante comprender las variables que determinan la complejidad de una actu
 
 El nivel de esfuerzo para actualizar la instancia de Adobe Commerce depende de estos factores:
 
-- **¿Cómo creó el sitio?** La cantidad de trabajo personalizado y el número de módulos de terceros instalados afectan fuertemente la complejidad de una actualización. La calidad del trabajo personalizado y de los módulos puede determinar si una actualización se realiza sin problemas.
+- **¿Cómo creó el sitio?** La cantidad de trabajo personalizado y el número de módulos de terceros instalados afectan en gran medida a la complejidad de una actualización. La calidad del trabajo personalizado y de los módulos puede determinar si una actualización se realiza sin problemas.
 
-- **¿Se está saltando varias versiones?** Si se omiten las versiones, la siguiente actualización será más compleja; al actualizarla desde las versiones posteriores, el proceso será más fácil y barato.
+- **¿Se están omitiendo varias versiones?** Omitir versiones hace que la siguiente actualización sea más compleja, ya que la actualización de las versiones posteriores facilita y abarata el proceso.
 
-- **¿Qué tipo de actualización está realizando?** Una actualización a una versión secundaria (de 2.3.x a 2.4.0, por ejemplo) es más extensa que una actualización entre versiones de parches (de 2.4.2 a 2.4.3, por ejemplo). Las actualizaciones de seguridad son el tipo más fácil de implementar.
+- **¿Qué tipo de actualización está realizando?** Una actualización a una versión secundaria (de 2.3.x a 2.4.0, por ejemplo) es más extensa que una actualización entre versiones de parches (como de 2.4.2 a 2.4.3). Las actualizaciones de seguridad son el tipo más fácil de implementar.
 
 ## Prácticas recomendadas para planificar las actualizaciones
 

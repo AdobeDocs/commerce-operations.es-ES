@@ -2,9 +2,9 @@
 title: '[!DNL Cloud Automation Patching Service (CAPS)]'
 description: Obtenga información acerca de  [!DNL Cloud Automation Patching Service (CAPS)], sus usos, cómo tener acceso a él y prácticas recomendadas para aplicar parches automatizados
 hide: true
-source-git-commit: de77f68f9ca6f2d4c4d4abed317210d5121a5497
+source-git-commit: baa10442a07aa4280fad6213a82d632760f8e1d2
 workflow-type: tm+mt
-source-wordcount: '340'
+source-wordcount: '351'
 ht-degree: 0%
 
 ---
@@ -18,31 +18,32 @@ Esta guía está diseñada para comerciantes y socios de Adobe Commerce Cloud qu
 ## [!DNL CAPS] temas
 
 * **[Cómo acceder](access.md)**
-* **[Flujo de trabajo](workflow.md)**
+* **[Resumen del flujo de trabajo](workflow.md)**
+* **[Integración de GitHub](github-integration.md)**
 * **[Prácticas recomendadas](best-practices.md)**
 * **[Solución de problemas](troubleshooting.md)**
 
 ## Información general de herramientas
 
 * **Interfaz de usuario**
-   * Visualización de la disponibilidad y el estado de los parches en tiempo real para combinaciones específicas de proyecto y entorno
-   * Información completa del estado de aplicación de parches que muestra el progreso, los errores y cualquier otro mensaje relevante
-   * [!UICONTROL Patch Management Dashboard] para:
-      * Visualización de parches disponibles
-      * Aplicación de parches con un solo clic
-      * Reversión de parches aplicados anteriormente
-      * Monitorización del estado y los resultados de las operaciones de parche
+  * Visualización de la disponibilidad y el estado de los parches en tiempo real para combinaciones específicas de proyecto y entorno
+  * Información completa del estado de aplicación de parches que muestra el progreso, los errores y cualquier otro mensaje relevante
+  * [!UICONTROL Patch Management Dashboard] para:
+    * Visualización de parches disponibles
+    * Aplicación de parches con un solo clic
+    * Reversión de parches aplicados anteriormente
+    * Monitorización del estado y los resultados de las operaciones de parche
 
 * **Servicio de aplicación automatizada de parches con flujo de trabajo estructurado**
-   * **Comprobación preliminar**: valida la compatibilidad de parches y la preparación del entorno
-   * **Parches**: Aplica o revierte parches automáticamente en entornos de integración
-   * **Validación**: realiza comprobaciones de estado y garantiza que las funcionalidades críticas no se vean afectadas
+  * **Comprobación preliminar**: valida la compatibilidad de parches y la preparación del entorno
+  * **Parches**: Aplica o revierte parches automáticamente en entornos de integración
+  * **Validación**: realiza comprobaciones de estado y garantiza que las funcionalidades críticas no se vean afectadas
 
 * **Características de seguridad**
-   * Crea entornos de integración temporales para realizar pruebas
-   * Valida la compatibilidad del parche antes de la aplicación
-   * Proporciona reversión automática en los errores de validación
-   * Aplica parches a la carpeta `m2-hotfixes` con eliminación automática durante la reversión
+  * Crea entornos de integración temporales para realizar pruebas
+  * Valida la compatibilidad del parche antes de la aplicación
+  * Mantiene el entorno de destino sin cambios hasta que el parche pase la validación en el entorno temporal
+  * Aplica parches a la carpeta `m2-hotfixes` con eliminación automática durante la reversión
 
 ## Integraciones con Adobe Commerce Cloud
 

@@ -4,9 +4,9 @@ user-guide-description: Obtenga información sobre las distintas herramientas qu
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: 3bb6679e2a5e254ef066b47816e527123ca8dcb3
+source-git-commit: 2fce4e7794a3defe46c03b3795df3e62f96dbf73
 workflow-type: tm+mt
-source-wordcount: '10658'
+source-wordcount: '10661'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,8 @@ ht-degree: 0%
 - MAYÚSCULAS {#caps-tool}
   - {hide-from-toc}[Introducción](caps-tool/intro.md)
   - {hide-from-toc}[Acceso](caps-tool/access.md)
-  - {hide-from-toc}[Flujo de trabajo](caps-tool/workflow.md)
+  - {hide-from-toc}[Resumen del flujo de trabajo](caps-tool/workflow.md)
+  - {hide-from-toc}[Integración de GitHub](caps-tool/github-integration.md)
   - {hide-from-toc}[Prácticas recomendadas](caps-tool/best-practices.md)
   - {hide-from-toc}[Solución de problemas](caps-tool/troubleshooting.md)
 - Alertas administradas en Adobe Commerce {#managed-alerts-for-adobe-commerce}

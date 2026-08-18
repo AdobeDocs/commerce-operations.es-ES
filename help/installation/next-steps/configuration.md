@@ -5,7 +5,7 @@ feature: Install, Configuration
 exl-id: b1808664-10ec-4147-8251-a99f8b58f4be
 source-git-commit: 84a20012a81278cc95587ec14281b05330261687
 workflow-type: tm+mt
-source-wordcount: '713'
+source-wordcount: '819'
 ht-degree: 0%
 
 ---
@@ -56,8 +56,8 @@ La utilidad UNIX `logrotate` permite administrar sistemas que generan grandes ca
 Para obtener más información, vea una de las siguientes opciones:
 
 * [Cómo: El tutorial de comando de rotación de registros definitivo con diez ejemplos](https://www.thegeekstuff.com/2010/07/logrotate-examples)
-* [Intercambio de pila](https://unix.stackexchange.com/questions/85662/how-to-properly-automatically-manually-rotate-log-files-for-production-rails-app)
-* [`logrotate` página de comando man](https://linuxconfig.org/logrotate-8-manual-page)
+* [Stack Exchange](https://unix.stackexchange.com/questions/85662/how-to-properly-automatically-manually-rotate-log-files-for-production-rails-app)
+* [Página de comando man `logrotate`](https://linuxconfig.org/logrotate-8-manual-page)
 
 >[!AVAILABILITY]
 >
