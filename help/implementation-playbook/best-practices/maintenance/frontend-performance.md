@@ -6,8 +6,8 @@ feature: Best Practices
 exl-id: bafae565-9d09-4cc0-8507-e89a11dbd915
 source-git-commit: 94d7a57dcd006251e8eefbdb4ec3a5e140bf43f9
 workflow-type: tm+mt
-source-wordcount: '184'
-ht-degree: 1%
+source-wordcount: '207'
+ht-degree: 0%
 
 ---
 
@@ -37,5 +37,5 @@ Para comprobar el rendimiento de front-end de la tienda del sitio web:
 ## Más información
 
 - [Administración de índices para usuarios administradores](../../../configuration/cli/manage-indexers.md#configure-indexers)
-- [Administración de índices mediante CLI](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html?lang=es)
+- [Administración de índices mediante CLI](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html)
 - [Información general de indización para desarrolladores](https://developer.adobe.com/commerce/php/development/components/indexing/)

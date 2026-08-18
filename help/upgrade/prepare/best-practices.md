@@ -5,7 +5,7 @@ feature: Upgrade, Best Practices
 exl-id: 53c505a3-8b99-4fc3-b1b4-f2f75208a51b
 source-git-commit: 6b3afb93770c1d976dd975a484070e0aee730a98
 workflow-type: tm+mt
-source-wordcount: '1055'
+source-wordcount: '1118'
 ht-degree: 0%
 
 ---
@@ -24,11 +24,11 @@ Es importante comprender las variables que determinan la complejidad de una actu
 
 El nivel de esfuerzo para actualizar la instancia de Adobe Commerce depende de estos factores:
 
-- **¿Cómo creó el sitio?** La cantidad de trabajo personalizado y el número de módulos de terceros instalados afectan fuertemente la complejidad de una actualización. La calidad del trabajo personalizado y de los módulos puede determinar si una actualización se realiza sin problemas.
+- **¿Cómo creó el sitio?** La cantidad de trabajo personalizado y el número de módulos de terceros instalados afectan en gran medida a la complejidad de una actualización. La calidad del trabajo personalizado y de los módulos puede determinar si una actualización se realiza sin problemas.
 
-- **¿Se está saltando varias versiones?** Si se omiten las versiones, la siguiente actualización será más compleja; al actualizarla desde las versiones posteriores, el proceso será más fácil y barato.
+- **¿Se están omitiendo varias versiones?** Omitir versiones hace que la siguiente actualización sea más compleja, ya que la actualización de las versiones posteriores facilita y abarata el proceso.
 
-- **¿Qué tipo de actualización está realizando?** Una actualización a una versión secundaria (de 2.3.x a 2.4.0, por ejemplo) es más extensa que una actualización entre versiones de parches (de 2.4.2 a 2.4.3, por ejemplo). Las actualizaciones de seguridad son el tipo más fácil de implementar.
+- **¿Qué tipo de actualización está realizando?** Una actualización a una versión secundaria (de 2.3.x a 2.4.0, por ejemplo) es más extensa que una actualización entre versiones de parches (como de 2.4.2 a 2.4.3). Las actualizaciones de seguridad son el tipo más fácil de implementar.
 
 ## Prácticas recomendadas para planificar las actualizaciones
 
@@ -57,11 +57,11 @@ Empiece a adoptar la plataforma de extensibilidad de Adobe Commerce, si aún no 
 
 A medida que ampliamos continuamente las capacidades de Adobe Commerce, es fundamental que desarrolle en función de la versión disponible más reciente y defina una estrategia de actualización en sus planes de proyecto. Al hacerlo, se mantiene seguro, conforme y actualizado con las últimas mejoras, que le permiten aumentar las ventas más rápido, operar de forma más eficaz y adelantarse a la competencia ahora y en el futuro.
 
-Para ayudarle a planificar y presupuestar las actualizaciones, debe supervisar nuestra [programación de versiones](https://experienceleague.adobe.com/es/docs/commerce-operations/release/planning/schedule). Planifique con antelación las tareas de actualización dentro del registro de pendientes de su equipo. Objetivo: completar este trabajo con GA.
+Para ayudarle a planificar y presupuestar las actualizaciones, debe supervisar nuestra [programación de versiones](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule). Planifique con antelación las tareas de actualización dentro del registro de pendientes de su equipo. Objetivo: completar este trabajo con GA.
 
 - Utilice la versión preliminar para obtener más información sobre cada nueva versión. El prelanzamiento es el código de disponibilidad general que está disponible para los comerciantes de Adobe Commerce y todos los socios dos semanas antes de la disponibilidad general. Si tiene varias tiendas, utilice el prelanzamiento en su tienda base y compruebe que sus módulos y temáticas personalizados son compatibles con él.
 
-- Revise la [lista de comprobación del plan de actualización](https://experienceleague.adobe.com/es/docs/commerce-operations/implementation-playbook/best-practices/maintenance/upgrade-checklist) para Adobe Commerce para ayudarle a planificar su actualización.
+- Revise la [lista de comprobación del plan de actualización](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/maintenance/upgrade-checklist) para Adobe Commerce para ayudarle a planificar su actualización.
 
 - Planifique las actualizaciones a principios de año. Debe reservar un presupuesto y recursos para completar cada actualización. Recuerde, el esfuerzo de actualización puede variar significativamente de un proyecto a otro. Use sus experiencias y conocimientos para hacer un plan lo más preciso posible.
 
@@ -73,7 +73,7 @@ Las actualizaciones deben realizarse de forma regular y con un presupuesto prede
 
 Evalúe el trabajo que se debe realizar para la actualización:
 
-- Revise las [notas de la versión](https://experienceleague.adobe.com/es/docs/commerce-operations/release/notes/overview) para comprender el ámbito y el impacto de la nueva versión.
+- Revise las [notas de la versión](https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/overview) para comprender el ámbito y el impacto de la nueva versión.
 
 - Use [[!DNL Upgrade Compatibility Tool]](../upgrade-compatibility-tool/overview.md) para identificar posibles problemas que deben solucionarse en el código personalizado antes de intentar actualizar a una versión más reciente.
 

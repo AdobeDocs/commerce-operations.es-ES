@@ -5,7 +5,7 @@ feature: Install, Configuration
 exl-id: b1808664-10ec-4147-8251-a99f8b58f4be
 source-git-commit: 84a20012a81278cc95587ec14281b05330261687
 workflow-type: tm+mt
-source-wordcount: '713'
+source-wordcount: '819'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Después de la instalación, le recomendamos lo siguiente:
 
 * Asegúrese de que la propiedad y los permisos del archivo estén establecidos [correctamente](../prerequisites/file-system/configure-permissions.md)
 * Recomendamos [cambiar el URI de administrador predeterminado](../tutorials/admin-uri.md) de `admin` a otra cosa
-* Asegúrese de que el encabezado HTTP [`X-Frame-Option` &#x200B;](../../configuration/security/xframe-options.md) esté configurado correctamente.
+* Asegúrese de que el encabezado HTTP [`X-Frame-Option` ](../../configuration/security/xframe-options.md) esté configurado correctamente.
 * Tome precauciones contra los scripts entre sitios (XSS) al [proteger sus plantillas](https://developer.adobe.com/commerce/php/development/security/cross-site-scripting)
 
 Si ha instalado [clonando el repositorio de GitHub](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository), asegúrese de que al implementar la aplicación solo incluya los archivos y carpetas necesarios para el entorno de producción. Los archivos y carpetas que no son necesarios pueden exponer potencialmente riesgos de seguridad.
@@ -56,8 +56,8 @@ La utilidad UNIX `logrotate` permite administrar sistemas que generan grandes ca
 Para obtener más información, vea una de las siguientes opciones:
 
 * [Cómo: El tutorial de comando de rotación de registros definitivo con diez ejemplos](https://www.thegeekstuff.com/2010/07/logrotate-examples)
-* [Intercambio de pila](https://unix.stackexchange.com/questions/85662/how-to-properly-automatically-manually-rotate-log-files-for-production-rails-app)
-* [`logrotate` página de comando man](https://linuxconfig.org/logrotate-8-manual-page)
+* [Stack Exchange](https://unix.stackexchange.com/questions/85662/how-to-properly-automatically-manually-rotate-log-files-for-production-rails-app)
+* [Página de comando man `logrotate`](https://linuxconfig.org/logrotate-8-manual-page)
 
 >[!AVAILABILITY]
 >
@@ -65,7 +65,7 @@ Para obtener más información, vea una de las siguientes opciones:
 >
 >* Los entornos de inicio no tienen rotación de registro.
 >
->* No se puede configurar la rotación de registros en entornos Pro Integration. Debe implementar una solución o script personalizado y [configurar su cron](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property) para ejecutar el script según sea necesario.
+>* No se puede configurar la rotación de registros en entornos Pro Integration. Debe implementar una solución o script personalizado y [configurar su cron](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property) para ejecutar el script según sea necesario.
 
 ### Configure las reglas iptables para permitir que varios servicios se comuniquen
 
