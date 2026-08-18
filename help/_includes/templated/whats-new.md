@@ -1,7 +1,7 @@
 ---
-source-git-commit: b14e0f2c4656ec9afa79545a9e8db83cc2e0d4d4
+source-git-commit: 0537a7cf89e2c427c5c525f2d510d29eb8bb8aa6
 workflow-type: tm+mt
-source-wordcount: '2809'
+source-wordcount: '2690'
 ht-degree: 1%
 
 ---
@@ -757,50 +757,6 @@ Esta página contiene los cambios realizados en los últimos 60 días. Excluimos
         Tema nuevo, qpt
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/eb7012dd29323ae70a19c7b37ab82dac5215c705">comprometer</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 18 de junio de 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descripción</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Se ha actualizado <a href="https://experienceleague.adobe.com/es/docs/commerce-operations/release/planning/lifecycle-policy">la política de ciclo de vida del software</a> con fechas de aplicación de actualización de la versión de Cloud, definiciones de períodos de soporte (incluido el período de transición de solo seguridad), una tabla de fin de soporte ampliada para 2.4.4-2.4.9, directrices PCI de PHP y rutas para migrar a Adobe Commerce as a Cloud Service o actualizar en PaaS.</p>
-</td>
-      <td>
-        Actualización importante
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/dc8326755ceee435f9980d7ea8003a6692ba1e92">comprometer</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 16 de junio de 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descripción</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Se ha actualizado la versión del Compositor a 2.10 en las tablas de <a href="https://experienceleague.adobe.com/es/docs/commerce-operations/installation-guide/system-requirements">Requisitos del sistema</a> para Cloud y On-Prem para Adobe Commerce 2.4.9, 2.4.8 y 2.4.7.</p>
-</td>
-      <td>
-        Técnico
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/23f2234eb2b9e11e36e49607b21c3c092266fec4">comprometer</a></td>
     </tr>
   </tbody>
 </table>
