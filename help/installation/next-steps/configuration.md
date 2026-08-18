@@ -65,7 +65,7 @@ Para obtener más información, vea una de las siguientes opciones:
 >
 >* Los entornos de inicio no tienen rotación de registro.
 >
->* No se puede configurar la rotación de registros en entornos Pro Integration. Debe implementar una solución o script personalizado y [configurar su cron](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property) para ejecutar el script según sea necesario.
+>* No se puede configurar la rotación de registros en entornos Pro Integration. Debe implementar una solución o script personalizado y [configurar su cron](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property) para ejecutar el script según sea necesario.
 
 ### Configure las reglas iptables para permitir que varios servicios se comuniquen
 
