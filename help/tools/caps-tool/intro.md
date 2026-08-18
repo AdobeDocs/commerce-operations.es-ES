@@ -53,7 +53,7 @@ Esta guía está diseñada para comerciantes y socios de Adobe Commerce Cloud qu
 
 Obtenga información acerca del servicio de parches automatizados de Adobe Cloud y cómo esta herramienta ayuda a los usuarios a encontrar y aplicar rápidamente parches de seguridad. El siguiente vídeo explica cómo acceder a él a través del panel SWAT, elegir el proyecto y el entorno, y aplicar parches con un solo clic.
 
->[!VIDEO](https://video.tv.adobe.com/v/3476247/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3476250/?captions=spa&learn=on&enablevpops)
 
 ## Casos de uso comunes
 
