@@ -3,7 +3,7 @@ title: Configuración de caché L2 para la optimización del rendimiento
 description: Aprenda a configurar la caché L2 en Adobe Commerce para reducir el tráfico de red y mejorar el rendimiento. Descubra las opciones de implementación heredadas y de Symfony.
 feature: Configuration, Cache
 exl-id: 0504c6fd-188e-46eb-be8e-968238571f4e
-badgePaas: label="En las instalaciones" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos locales de Adobe Commerce."
+badgePaas: label="En las instalaciones" type="Informative" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos locales de Adobe Commerce."
 TQID: 'https://experienceleague.adobe.com/7vswBqyn9UZLmaeirgPRZ4xEQH5F66XUEtY5hPkz9NY'
 product_v2:
   - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
@@ -361,7 +361,7 @@ Utilice el siguiente ejemplo para configurar front-end independientes para la co
 
 >[!NOTE]
 >
->Estas mejoras se aplican a las implementaciones de Adobe Commerce 2.4.9 que utilizan `symfony_l2` y están disponibles en el parche ACP2E-5132. Para Adobe Commerce local, aplique este parche con la herramienta Parches de calidad (QPT). Para Adobe Commerce en la nube, este parche se entrega automáticamente mediante [Parches de nube para Commerce](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches#latest).
+>Estas mejoras se aplican a las implementaciones de Adobe Commerce 2.4.9 que utilizan `symfony_l2` y están disponibles en el parche ACP2E-5132. Para Adobe Commerce local, aplique este parche con la herramienta Parches de calidad (QPT). Para Adobe Commerce en la nube, este parche se entrega automáticamente mediante [Parches de nube para Commerce](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches#latest).
 
 Las actualizaciones más recientes mejoran la escalabilidad de la caché de Symfony L2, reducen la E/S innecesaria del sistema de archivos y mejoran la consistencia y fiabilidad de la caché.
 

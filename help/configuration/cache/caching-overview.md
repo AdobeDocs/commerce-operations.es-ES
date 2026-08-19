@@ -56,7 +56,7 @@ Puede asignar diferentes tipos de caché a diferentes front-end cuando se requie
 El almacenamiento en caché de página completa HTTP almacena las respuestas completas en la capa HTTP o CDN. Para implementaciones de producción:
 
 - **Adobe Commerce local**—Adobe recomienda [Varnish](config-varnish.md) para el almacenamiento en caché de página completa. El barniz funciona como un proxy inverso delante del servidor web.
-- **Adobe Commerce en la infraestructura de la nube** usa [Fastly](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly){target="_blank"} para el nivel de almacenamiento en caché de Edge y de página completa. La infraestructura en la nube no utiliza un servicio Varnish administrado por separado.
+- **Adobe Commerce en la infraestructura de la nube** usa [Fastly](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/cdn/fastly){target="_blank"} para el nivel de almacenamiento en caché de Edge y de página completa. La infraestructura en la nube no utiliza un servicio Varnish administrado por separado.
 
 >[!NOTE]
 >
@@ -79,7 +79,7 @@ Las siguientes tareas de configuración varían según el tipo de implementació
 | Tarea | On-Premise | Infraestructura en nube |
 | --- | --- | --- |
 | Backends de caché de aplicaciones | [Opciones de servidor de caché y referencia de almacenamiento](cache-options.md) | [Prácticas recomendadas para la configuración de los servicios Valkey y Redis](../../implementation-playbook/best-practices/planning/redis-valkey-service-configuration.md) |
-| Almacenamiento en caché de página completa HTTP | [Configurar barniz](config-varnish.md) | [Resumen de servicios de Fastly](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/fastly) |
+| Almacenamiento en caché de página completa HTTP | [Configurar barniz](config-varnish.md) | [Resumen de servicios de Fastly](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/cdn/fastly) |
 
 Las siguientes tareas se aplican a todos los tipos de implementación:
 

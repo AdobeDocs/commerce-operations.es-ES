@@ -39,7 +39,7 @@ Para obtener una descripción general de la arquitectura de almacenamiento en ca
 
 >[!NOTE]
 >
->Para Adobe Commerce en la infraestructura en la nube, use la [configuración de implementación en la nube](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/configure-env-yaml) que se describe en la guía de Cloud. No edite `app/etc/env.php` directamente. Las herramientas de implementación generan este archivo y pueden sobrescribir los cambios manuales.
+>Para Adobe Commerce en la infraestructura en la nube, use la [configuración de implementación en la nube](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/configure/env/configure-env-yaml) que se describe en la guía de Cloud. No edite `app/etc/env.php` directamente. Las herramientas de implementación generan este archivo y pueden sobrescribir los cambios manuales.
 
 ## Usar el front-end predeterminado
 
