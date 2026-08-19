@@ -5,16 +5,16 @@ feature: Taxes, Shipping/Delivery
 role: Admin, Developer
 exl-id: 7f4a8923-11dd-48b2-9d97-77de5c2b24ce
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '387'
-ht-degree: 0%
+source-wordcount: '512'
+ht-degree: 20%
 
 ---
 
 # ACSD-53309: aplicación de impuestos incompleta para opciones personalizables y etiqueta &#39;[!UICONTROL Regular Price]&#39;
 
-La revisión ACSD-53309 corrige el problema en el que los impuestos no se aplican completamente en la etiqueta &#39;[!UICONTROL Regular Price]&#39; cuando se selecciona una opción personalizable. Esta revisión está disponible cuando está instalado [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.43. El ID del parche es ACSD-53309. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.7.
+La revisión ACSD-53309 corrige el problema en el que los impuestos no se aplican completamente en la etiqueta &#39;[!UICONTROL Regular Price]&#39; cuando se selecciona una opción personalizable. Esta revisión está disponible cuando está instalado [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.43. El ID del parche es ACSD-53309. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.7.
 
 ## Productos y versiones afectados
 
@@ -28,7 +28,7 @@ La revisión ACSD-53309 corrige el problema en el que los impuestos no se aplica
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
@@ -41,29 +41,29 @@ El impuesto no se refleja completamente en la etiqueta &#39;[!UICONTROL Regular 
 
    * [!UICONTROL Tax Classes]:
 
-      * [!UICONTROL Tax Class for Shipping] = [!UICONTROL Taxable Goods]
-      * [!UICONTROL Tax Class for Gift Options] = [!UICONTROL Taxable Goods]
+     * [!UICONTROL Tax Class for Shipping] = [!UICONTROL Taxable Goods]
+     * [!UICONTROL Tax Class for Gift Options] = [!UICONTROL Taxable Goods]
 
    * [!UICONTROL Calculation Settings]:
 
-      * [!UICONTROL Catalog Prices] = [!UICONTROL Including Tax]
-      * [!UICONTROL Shipping Prices] = [!UICONTROL Including Tax]
-      * [!UICONTROL Apply Discount On Prices] = [!UICONTROL Including Tax]
+     * [!UICONTROL Catalog Prices] = [!UICONTROL Including Tax]
+     * [!UICONTROL Shipping Prices] = [!UICONTROL Including Tax]
+     * [!UICONTROL Apply Discount On Prices] = [!UICONTROL Including Tax]
 
    * [!UICONTROL Default Tax Destination Calculation]:
 
-      * [!UICONTROL Default Post Code] = *
+     * [!UICONTROL Default Post Code] = *
 
    * [!UICONTROL Price Display Settings]:
 
-      * [!UICONTROL Display Product Prices In Catalog] = [!UICONTROL Including Tax]
-      * [!UICONTROL Display Shipping Prices] = [!UICONTROL Including Tax]
+     * [!UICONTROL Display Product Prices In Catalog] = [!UICONTROL Including Tax]
+     * [!UICONTROL Display Shipping Prices] = [!UICONTROL Including Tax]
 
    * [!UICONTROL Shopping Cart Display Settings]:
 
-      * [!UICONTROL Display Prices] = [!UICONTROL Including Tax]
-      * [!UICONTROL Display Subtotal] = [!UICONTROL Including Tax]
-      * [!UICONTROL Display Shipping Amount] = [!UICONTROL Including Tax]
+     * [!UICONTROL Display Prices] = [!UICONTROL Including Tax]
+     * [!UICONTROL Display Subtotal] = [!UICONTROL Including Tax]
+     * [!UICONTROL Display Shipping Amount] = [!UICONTROL Including Tax]
 
 1. Conjunto **[!UICONTROL Shipping Settings]** > **[!UICONTROL Origin]** > **[!UICONTROL Country]** = *Reino Unido*.
 
@@ -72,7 +72,7 @@ El impuesto no se refleja completamente en la etiqueta &#39;[!UICONTROL Regular 
    * [!UICONTROL Country] = Estados Unidos
    * [!UICONTROL Zip Code] = *
    * [!UICONTROL State] = *
-   * [!UICONTROL Rate] = 20 %
+   * [!UICONTROL Rate] = 20%
 1. Cree un producto sencillo y configure lo siguiente:
    * [!UICONTROL Price = 110]
    * [!UICONTROL Special Price = 100]
@@ -83,26 +83,26 @@ El impuesto no se refleja completamente en la etiqueta &#39;[!UICONTROL Regular 
 <u>Resultados esperados</u>:
 
 * El 20 % de impuesto se aplica a la opción personalizada seleccionada.
-* &#39;[!UICONTROL Regular Price]&#39; = 151,80.
+* &#39;[!UICONTROL Regular Price]&#39; = 151.80.
 
 <u>Resultados reales</u>:
 
 * El 20 % de impuesto no se aplica a la opción personalizada seleccionada.
-* &#39;[!UICONTROL Regular Price]&#39; = 148,50.
+* &#39;[!UICONTROL Regular Price]&#39; = 148.50.
 
 ## Aplicar el parche
 
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
 * Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía [!DNL Quality Patches Tool].
-* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=es) en la guía Commerce en la infraestructura de la nube.
+* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) en la guía Commerce en la infraestructura de la nube.
 
 ## Lectura relacionada
 
 Para obtener más información sobre [!DNL Quality Patches Tool], consulte:
 
-* [[!DNL Quality Patches Tool] publicado: nueva herramienta para autodistribuir parches de calidad](https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) en la base de conocimiento de soporte.
+* [[!DNL Quality Patches Tool] publicado: nueva herramienta para autodistribuir parches de calidad](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) en la base de conocimiento de soporte.
 * [Compruebe si el parche está disponible para su problema de Adobe Commerce usando [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) en la guía [!UICONTROL Quality Patches Tool].
 
 
-Para obtener información sobre otros parches disponibles en QPT, consulte [[!DNL Quality Patches Tool]: Buscar parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es) en la guía [!DNL Quality Patches Tool].
+Para obtener información sobre otros parches disponibles en QPT, consulte [[!DNL Quality Patches Tool]: Buscar parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) en la guía [!DNL Quality Patches Tool].

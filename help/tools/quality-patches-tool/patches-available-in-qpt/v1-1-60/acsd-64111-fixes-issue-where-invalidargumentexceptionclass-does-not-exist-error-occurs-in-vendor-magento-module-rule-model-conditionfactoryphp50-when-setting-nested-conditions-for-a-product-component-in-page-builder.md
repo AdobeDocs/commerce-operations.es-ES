@@ -1,12 +1,13 @@
 ---
 title: 'ACSD-64111: corrige el error *InvalidArgumentException: la clase no existe* al establecer condiciones anidadas para un componente de producto en  [!DNL Page Builder]'
+description: Aplique el parche ACSD-64111 para solucionar el problema de Adobe Commerce donde, al agregar una combinación de condiciones a una condición de widget de productos en Page Builder, se produce una excepción InvalidArgumentException porque la clase no existe en vendor/magento/module-rule/Model/ConditionFactory.php.
 feature: Products, Page Builder
 role: Admin, Developer
 exl-id: dc39c65b-fb78-4105-b0e8-92a78b49adaf
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '364'
+source-wordcount: '406'
 ht-degree: 0%
 
 ---
@@ -19,7 +20,7 @@ La revisión ACSD-64111 corrige el problema donde *InvalidArgumentException: la 
 
 **El parche se ha creado para la versión de Adobe Commerce:**
 
-* Adobe Commerce (todos los métodos de implementación)  2.4.6-p8
+* Adobe Commerce (todos los métodos de implementación) 2.4.6-p8
 
 **Compatible con versiones de Adobe Commerce:**
 
@@ -27,11 +28,11 @@ La revisión ACSD-64111 corrige el problema donde *InvalidArgumentException: la 
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
-Error *InvalidArgumentException: la clase no existe en /app/&lt;id de proyecto\>/vendor/magento/module-rule/Model/ConditionFactory.php* se produce al agregar un *[!UICONTROL Conditions Combination]* en la condición del widget [!DNL Page Builder] Productos.
+Error *InvalidArgumentException: la clase no existe en /app/&lt;id. de proyecto\>/vendor/magento/module-rule/Model/ConditionFactory.php* se produce al agregar *[!UICONTROL Conditions Combination]* en la condición del widget de productos [!DNL Page Builder].
 
 <u>Pasos a seguir</u>:
 
@@ -59,7 +60,7 @@ La siguiente excepción se registra en los registros:
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
 * Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía [!DNL Quality Patches Tool].
-* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=es) en la guía Commerce en la infraestructura de la nube.
+* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) en la guía Commerce en la infraestructura de la nube.
 
 
 ## Lectura relacionada

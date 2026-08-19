@@ -4,9 +4,9 @@ description: Obtenga información sobre las distintas estrategias de ramificaci�
 feature: Best Practices
 role: Developer
 exl-id: 7d7736e8-7023-4315-9965-71866b0be5c3
-source-git-commit: 823498f041a6d12cfdedd6757499d62ac2aced3d
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '306'
+source-wordcount: '376'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Cada fase de desarrollo debe tener una rama correspondiente en Git para rastrear
 
 >[!TIP]
 >
->Adobe Commerce en proyectos de infraestructura en la nube contiene ramas específicas que corresponden a entornos diferentes. Consulte [Flujo de trabajo del proyecto profesional](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html?lang=es) y [Flujo de trabajo del proyecto inicial](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/starter-develop-deploy-workflow.html?lang=es) en la _Guía de Cloud_.
+>Adobe Commerce en proyectos de infraestructura en la nube contiene ramas específicas que corresponden a entornos diferentes. Consulte [Flujo de trabajo del proyecto profesional](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow) y [Flujo de trabajo del proyecto inicial](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/starter-develop-deploy-workflow) en la _Guía de Cloud_.
 
 ## Estrategias de rama
 
@@ -48,9 +48,9 @@ Existen varias estrategias de ramificación que puede utilizar. Elija la estrate
 
 Para obtener más información, consulte los siguientes recursos externos:
 
-- [Flujos de trabajo de ramificación](https://git-scm.com/book/en/v2/Git-Branching-Branching-Workflows)
+- [Bifurcación de flujos de trabajo](https://git-scm.com/book/en/v2/Git-Branching-Branching-Workflows)
 - [Flujos de trabajo distribuidos](https://git-scm.com/book/en/v2/Distributed-Git-Distributed-Workflows)
 - [Patrones para administrar ramas de código fuente](https://martinfowler.com/articles/branching-patterns.html)
-- [Un modelo de bifurcación Git correcto](https://nvie.com/posts/a-successful-git-branching-model/)
+- [Un modelo de ramificación Git correcto](https://nvie.com/posts/a-successful-git-branching-model/)
 - [Flujo de GitHub](https://docs.github.com/en/get-started/quickstart/github-flow)
 - [Flujo de GitLab](https://about.gitlab.com/blog/2023/07/27/gitlab-flow-duo/)

@@ -3,9 +3,9 @@ title: Inicialización de aplicaciones y bootstrap
 description: Obtenga información sobre la inicialización y la lógica de arranque de la aplicación Commerce.
 feature: Configuration, Install, Media
 exl-id: 46d1ffc0-7870-4dd1-beec-0a9ff858ab62
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+source-git-commit: b378f6da50e40b1868ae759cc7f3523a7e3ced4b
 workflow-type: tm+mt
-source-wordcount: '804'
+source-wordcount: '901'
 ht-degree: 0%
 
 ---
@@ -73,7 +73,7 @@ Tenemos las siguientes aplicaciones de punto de entrada (es decir, aplicaciones 
 
 [\Magento\Framework\App\Http](https://github.com/magento/magento2/tree/2.4.8/lib/internal/Magento/Framework/App/Http) funciona de la siguiente manera:
 
-1. Determina el [área de aplicación](https://developer.adobe.com/commerce/php/architecture/modules/areas/).
+1. Determina el [área de aplicación](https://developer.adobe.com/commerce/php/architecture/modules/areas).
 1. Inicia el controlador delantero y los sistemas de enrutamiento para buscar y ejecutar una acción del controlador.
 1. Utiliza un objeto de respuesta HTTP para devolver el resultado obtenido de la acción del controlador.
 1. Tratamiento de errores (en el siguiente orden de prioridad):

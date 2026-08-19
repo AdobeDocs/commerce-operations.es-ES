@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo crear y configurar archivos de reg
 feature: Configuration, Logs
 badge: label="Gentileza de Atwix" type="Informative" url="https://www.atwix.com/" tooltip="Atwix"
 exl-id: 875f45e7-30c9-4b1b-afe9-d1a8d51ccdf0
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+source-git-commit: b378f6da50e40b1868ae759cc7f3523a7e3ced4b
 workflow-type: tm+mt
-source-wordcount: '321'
+source-wordcount: '432'
 ht-degree: 0%
 
 ---
@@ -32,9 +32,9 @@ Puede utilizar uno de los siguientes métodos para iniciar sesión en un archivo
 
 ## Configurar un archivo de registro personalizado en `di.xml`
 
-Este ejemplo muestra cómo usar [tipos virtuales](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types) para registrar `debug` mensajes en un archivo de registro personalizado en lugar de un `/var/log/debug.log` estándar.
+Este ejemplo muestra cómo usar [tipos virtuales](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file#virtual-types) para registrar `debug` mensajes en un archivo de registro personalizado en lugar de un `/var/log/debug.log` estándar.
 
-1. En el archivo `di.xml` de su módulo, defina un archivo de registro personalizado como [tipo virtual](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types).
+1. En el archivo `di.xml` de su módulo, defina un archivo de registro personalizado como [tipo virtual](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file#virtual-types).
 
    ```xml
    <virtualType name="Magento\Payment\Model\Method\MyCustomDebug" type="Magento\Framework\Logger\Handler\Base">
@@ -46,7 +46,7 @@ Este ejemplo muestra cómo usar [tipos virtuales](https://developer.adobe.com/co
 
    El valor `name` de `Magento\Payment\Model\Method\MyCustomDebug` debe ser único.
 
-1. Defina el controlador en otro [tipo virtual](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types) con un `name` único:
+1. Defina el controlador en otro [tipo virtual](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file#virtual-types) con un `name` único:
 
    ```xml
    <virtualType name="Magento\Payment\Model\Method\MyCustomLogger" type="Magento\Framework\Logger\Monolog">
@@ -58,7 +58,7 @@ Este ejemplo muestra cómo usar [tipos virtuales](https://developer.adobe.com/co
    </virtualType>
    ```
 
-1. Inyecte el `MyCustomLogger` [tipo virtual](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types) en el objeto `Magento\Payment\Model\Method\Logger`:
+1. Inyecte el `MyCustomLogger` [tipo virtual](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file#virtual-types) en el objeto `Magento\Payment\Model\Method\Logger`:
 
    ```xml
    <type name="Magento\Payment\Model\Method\Logger">
@@ -117,7 +117,7 @@ Este ejemplo muestra cómo utilizar una clase de controlador de registrador pers
    }
    ```
 
-1. Defina el controlador para esta clase como un [tipo virtual](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file/#virtual-types) en el archivo `di.xml` del módulo.
+1. Defina el controlador para esta clase como un [tipo virtual](https://developer.adobe.com/commerce/php/development/build/dependency-injection-file#virtual-types) en el archivo `di.xml` del módulo.
 
    ```xml
    <virtualType name="MyCustomLogger" type="Magento\Framework\Logger\Monolog">
