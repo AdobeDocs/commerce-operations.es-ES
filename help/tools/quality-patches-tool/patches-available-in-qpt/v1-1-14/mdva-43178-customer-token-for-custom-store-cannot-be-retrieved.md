@@ -28,7 +28,7 @@ El parche MDVA-43178 corrige el problema en el que el token de cliente para una 
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de la herramienta Parches de Calidad. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de la herramienta Parches de Calidad. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
@@ -45,10 +45,10 @@ El token de cliente de una tienda personalizada no se puede recuperar en GraphQL
 
    <pre>
     <code class="language-graphql">
-    {
+    &lbrace;
       "username": "login",
       "password": "password"
-    }
+    &rbrace;
     </code>
     </pre>
 

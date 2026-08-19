@@ -28,7 +28,7 @@ El parche ACSD-56415 corrige el problema en el que el rendimiento de [!UICONTROL
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
@@ -41,15 +41,15 @@ El rendimiento de [!UICONTROL Partial Price Indexing] se ve ralentizado debido a
 1. Crear *10 grupos de clientes*.
 1. Ejecute la siguiente consulta para agregar productos a la tabla `_cl`:
 
-   ``
+   &grave;&grave;
     insert into catalog_product_price_cl (entity_id) select entity_id from catalog_product_entity
- ``
+ &grave;&grave;
 
 1. Ejecute el siguiente comando para almacenar en déclencheur el proceso de indexación de precios parcial:
 
-   ``
+   &grave;&grave;
     bin/magento cron:run --group=index --bootstrap=standaloneProcessStarted=1
- ``
+ &grave;&grave;
 
 <u>Resultados esperados</u>:
 

@@ -28,7 +28,7 @@ El parche ACSD-47704 corrige el problema de que los precios de los segmentos de 
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
@@ -38,7 +38,7 @@ El precio de un producto agrupado con la asignación de precios dinámica activa
 
 1. Vaya al panel de administración de Commerce.
 1. Vaya a **[!UICONTROL CATALOG]** > **[!UICONTROL Products]** > **[!UICONTROL Add Product]** > **[!UICONTROL Bundle Product]**.
-1. Establezca **[UICONTROL Dynamic Price]** en **[!UICONTROL Yes]**.
+1. Establezca **[!UICONTROL Dynamic Price]** en **[!UICONTROL Yes]**.
 1. Elementos de paquete:
    * Establecer **[!UICONTROL Ship bundle items]** en **[!UICONTROL Together]**
    * Seleccionar **[!UICONTROL Add Option]**

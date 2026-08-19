@@ -12,9 +12,9 @@ ht-degree: 0%
 
 ---
 
-# ACSD-47336: error _[!UICONTROL Something went wrong]_al descartar las notificaciones en el administrador de Adobe Commerce
+# ACSD-47336: error _[!UICONTROL Something went wrong]_&#x200B;al descartar las notificaciones en el administrador de Adobe Commerce
 
-El parche ACSD-47336 corrige el problema en el que el usuario ve el error _[!UICONTROL Something went wrong]_al descartar las notificaciones en el administrador de [!DNL Commerce]. Esta revisión está disponible cuando está instalado [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.24. El ID del parche es ACSD-47336. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.6.
+El parche ACSD-47336 corrige el problema en el que el usuario ve el error _[!UICONTROL Something went wrong]_&#x200B;al descartar las notificaciones en el administrador de [!DNL Commerce]. Esta revisión está disponible cuando está instalado [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.24. El ID del parche es ACSD-47336. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.6.
 
 ## Productos y versiones afectados
 
@@ -28,11 +28,11 @@ El parche ACSD-47336 corrige el problema en el que el usuario ve el error _[!UIC
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
-El usuario ve un error de _[!UICONTROL Something went wrong]_al descartar las notificaciones en el administrador de [!DNL Commerce].
+El usuario ve un error de _[!UICONTROL Something went wrong]_&#x200B;al descartar las notificaciones en el administrador de [!DNL Commerce].
 
 <u>Pasos a seguir</u>:
 
@@ -42,7 +42,7 @@ El usuario ve un error de _[!UICONTROL Something went wrong]_al descartar las no
 
 <u>Resultados esperados</u>:
 
-El error _[!UICONTROL Something went wrong]_no debería mostrarse al borrar las tareas completadas.
+El error _[!UICONTROL Something went wrong]_&#x200B;no debería mostrarse al borrar las tareas completadas.
 
 <u>Resultados reales</u>:
 

@@ -28,7 +28,7 @@ El parche ACSD-63793 corrige el problema en el que los procesos de importación 
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
@@ -37,7 +37,7 @@ La importación de datos a través de la IU de administración interfiere con ot
 <u>Pasos a seguir</u>:
 
 1. Vaya a **[!UICONTROL System]** > **[!UICONTROL Data Transfer]** > **[!UICONTROL Import]**.
-1. Establecer **[!UICONTROL Entity Type]** en *[!UICONTROL Customers and Addresses](un solo archivo)*.
+1. Establecer **[!UICONTROL Entity Type]** en *[!UICONTROL Customers and Addresses] (un solo archivo)*.
 1. Establezca **[!UICONTROL Import Behavior]** en *[!UICONTROL Add/Update]*.
 1. Seleccione un archivo válido para importar.
 1. Haga clic en el botón **[!UICONTROL Check Data]**.

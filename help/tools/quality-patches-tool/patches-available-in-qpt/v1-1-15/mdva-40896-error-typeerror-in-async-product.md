@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-40896: Error "Error: TypeError: Argumento 3" en el producto asíncrono'
-description: 'El parche MDVA-40896 corrige el problema donde el error "Error: TypeError: Argument 3 pasado a Magento\Framework\Webapi\ServiceInputProcessor::process() debe ser de la matriz de tipo, el error string given" se muestra en la API asíncrona de productos. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.15. El ID del parche es MDVA-40896. Tenga en cuenta que el problema se corrige en Adobe Commerce 2.4.4.'
+description: 'El parche MDVA-40896 corrige el problema donde el error "Error: TypeError: Argument 3 pasado a MagentoFrameworkWebapiServiceInputProcessor::process() debe ser de la matriz de tipo, el error string given" se muestra en la API asíncrona de productos. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.15. El ID del parche es MDVA-40896. Tenga en cuenta que el problema se corrige en Adobe Commerce 2.4.4.'
 feature: Products
 role: Admin
 exl-id: 24eedd8d-4ae1-4ebc-a3e4-993f0c361a67
@@ -28,7 +28,7 @@ El parche MDVA-40896 corrige el problema en el que el error `Error: TypeError: A
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de la herramienta Parches de Calidad. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de la herramienta Parches de Calidad. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 

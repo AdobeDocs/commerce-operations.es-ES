@@ -28,7 +28,7 @@ El parche MDVA-44147 corrige el problema en el que la solicitud [!DNL GraphQL] n
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
@@ -42,14 +42,14 @@ La solicitud [!DNL GraphQL] no devuelve [!UICONTROL Requisition Lists].
 
    <pre>
     <code class="language-graphql">
-    mutation {
+    mutation &lbrace;
       generateCustomerToken(
         email: "test@gmail.com"
         password: "xxxxxxxx"
-        ) {
+        ) &lbrace;
           token
-        }
-      }
+        &rbrace;
+      &rbrace;
       </code>
       </pre>
 
@@ -59,33 +59,33 @@ La solicitud [!DNL GraphQL] no devuelve [!UICONTROL Requisition Lists].
 
    <pre>
     <code class="language-graphql">
-    query {
-      customer {
+    query &lbrace;
+      customer &lbrace;
         requisition_lists(
           pageSize: 20
-          ) {
-            items {
+          ) &lbrace;
+            items &lbrace;
               uid
               name
               description
-              items(pageSize: 20) {
-                items {
+              items(pageSize: 20) &lbrace;
+                items &lbrace;
                   uid
-                  product {
+                  product &lbrace;
                     uid
                     name
                     sku
                     __typename
-                  }
+                  &rbrace;
                   quantity
-                }
+                &rbrace;
                 total_pages
-              }
-            }
+              &rbrace;
+            &rbrace;
             total_count
-          }
-        }
-      }
+          &rbrace;
+        &rbrace;
+      &rbrace;
       </code>
       </pre>
 
@@ -93,37 +93,37 @@ La solicitud [!DNL GraphQL] no devuelve [!UICONTROL Requisition Lists].
 
    <pre>
     <code class="language-graphql">
-    {
-      "data": {
-        "customer": {
-          "requisition_lists": {
-            "items": [
-            {
+    &lbrace;
+      "data": &lbrace;
+        "customer": &lbrace;
+          "requisition_lists": &lbrace;
+            "items": &lbrack;
+            &lbrace;
               "uid": "MQ==",
               "name": "Name",
               "description": "Description",
-              "items": {
-                "items": [
-                {
+              "items": &lbrace;
+                "items": &lbrack;
+                &lbrace;
                   "uid": "MQ==",
-                  "product": {
+                  "product": &lbrace;
                     "uid": "MQ==",
                     "name": "Simple 01",
                     "sku": "s00001",
                     "__typename": "SimpleProduct"
-                    },
+                    &rbrace;,
                     "quantity": 1
-                  }
-                  ],
+                  &rbrace;
+                  &rbrack;,
                   "total_pages": 1
-                }
-              }
-              ],
+                &rbrace;
+              &rbrace;
+              &rbrack;,
               "total_count": 1
-            }
-          }
-        }
-      }
+            &rbrace;
+          &rbrace;
+        &rbrace;
+      &rbrace;
       </code>
       </pre>
 
@@ -131,38 +131,38 @@ La solicitud [!DNL GraphQL] no devuelve [!UICONTROL Requisition Lists].
 
    <pre>
     <code class="language-graphql">
-    query {
-      customer {
+    query &lbrace;
+      customer &lbrace;
         requisition_lists(
           pageSize: 20,
-          filter: {
-            uids: {
+          filter: &lbrace;
+            uids: &lbrace;
               eq: "MQ=="
-            }
-          }
-          ) {
-            items {
+            &rbrace;
+          &rbrace;
+          ) &lbrace;
+            items &lbrace;
               uid
               name
               description
-              items(pageSize: 20) {
-                items {
+              items(pageSize: 20) &lbrace;
+                items &lbrace;
                   uid
-                  product {
+                  product &lbrace;
                     uid
                     name
                     sku
                     __typename
-                  }
+                  &rbrace;
                   quantity
-                }
+                &rbrace;
                 total_pages
-              }
-            }
+              &rbrace;
+            &rbrace;
             total_count
-          }
-        }
-      }
+          &rbrace;
+        &rbrace;
+      &rbrace;
       </code>
       </pre>
 

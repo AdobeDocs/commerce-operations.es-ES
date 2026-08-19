@@ -28,7 +28,7 @@ El parche ACSD-46988 corrige el problema en el que la solicitud de API de GraphQ
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
@@ -41,19 +41,19 @@ La solicitud de API de GraphQL currency devuelve valores nulos para una moneda p
 
 <pre>
 <code class="language-graphql">
-{
-    currency {
+&lbrace;
+    currency &lbrace;
         base_currency_code
         base_currency_symbol
         default_display_currency_code
         default_display_currency_symbol
         available_currency_codes
-        exchange_rates {
+        exchange_rates &lbrace;
             currency_to
             rate
-        }
-    }
-}
+        &rbrace;
+    &rbrace;
+&rbrace;
 </code>
 </pre>
 

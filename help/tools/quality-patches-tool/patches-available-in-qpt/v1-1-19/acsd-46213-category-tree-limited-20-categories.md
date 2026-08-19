@@ -28,7 +28,7 @@ El parche ACSD-46213 corrige el problema en el que la solicitud del árbol de ca
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de la herramienta Parches de Calidad. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de la herramienta Parches de Calidad. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 
 ## Problema
@@ -43,30 +43,30 @@ La solicitud del árbol de categorías está limitada a 20 categorías.
 
    <pre>
     <code class="language-graphql">
-    {
-      categoryList(filters: { parent_id: { in: ["3"] } }) {
+    &lbrace;
+      categoryList(filters: { parent_id: { in: ["3"] } }) &lbrace;
         name
         level
         path
         url_path
-        children {
+        children &lbrace;
           id
           level
           name
           path
           url_path
           url_key
-          children {
+          children &lbrace;
             uid
             level
             name
             path
             url_path
             url_key
-          }
-        }
-      }
-    }
+          &rbrace;
+        &rbrace;
+      &rbrace;
+    &rbrace;
     </code>
     </pre>
 

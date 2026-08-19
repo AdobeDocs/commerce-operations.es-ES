@@ -28,7 +28,7 @@ El parche MDVA-41305 resuelve el problema en el que los usuarios reciben un erro
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de la herramienta Parches de Calidad. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de la herramienta Parches de Calidad. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
@@ -42,11 +42,11 @@ Cuando los usuarios añaden productos configurables (con/sin configuración) a l
 
    <pre>
     <code class="language-graphql">
-    mutation {
-      generateCustomerToken(email: "", password: "") {
+    mutation &lbrace;
+      generateCustomerToken(email: "", password: "") &lbrace;
         token
-      }
-     }
+      &rbrace;
+     &rbrace;
      </code>
      </pre>
 
@@ -55,84 +55,84 @@ Cuando los usuarios añaden productos configurables (con/sin configuración) a l
 
 <pre>
 <code class="language-graphql">
-mutation {
+mutation &lbrace;
  addProductsToWishlist(
    wishlistId: 1
-   wishlistItems: [
-     {
+   wishlistItems: &lbrack;
+     &lbrace;
        sku: "conf2"
-       selected_options: [
+       selected_options: &lbrack;
             "Y29uZmlndXJhYmxlLzkzLzUw"
-       ]
+       &rbrack;
        quantity: 1
-       entered_options: [
-         {
+       entered_options: &lbrack;
+         &lbrace;
            uid: "Y3VzdG9tLW9wdGlvbi8x"
            value: "test"
-         }
-       ]
-     }
-    ]
-  ) {
-    wishlist {
+         &rbrace;
+       &rbrack;
+     &rbrace;
+    &rbrack;
+  ) &lbrace;
+    wishlist &lbrace;
       id
       items_count
-      items_v2 (currentPage: 1, pageSize: 8 ) {
-        items {
+      items_v2 (currentPage: 1, pageSize: 8 ) &lbrace;
+        items &lbrace;
          id
          quantity
-         ... on ConfigurableWishlistItem  {
+         ... on ConfigurableWishlistItem  &lbrace;
            child_sku
-           customizable_options {
+           customizable_options &lbrace;
              customizable_option_uid
-           }
-         }
-         product {
+           &rbrace;
+         &rbrace;
+         product &lbrace;
            uid
            name
            sku
            options_container
-           ... on CustomizableProductInterface {
-             options {
+           ... on CustomizableProductInterface &lbrace;
+             options &lbrace;
               title
               required
               sort_order
               option_id
-              ... on CustomizableFieldOption {
-                value {
+              ... on CustomizableFieldOption &lbrace;
+                value &lbrace;
                   uid
                   sku
                   price
                   price_type
                   max_characters
-                }
-              }
-            }
-          }
-          price_range {
-            minimum_price {
-              regular_price {
+                &rbrace;
+              &rbrace;
+            &rbrace;
+          &rbrace;
+          price_range &lbrace;
+            minimum_price &lbrace;
+              regular_price &lbrace;
                 currency
                 value
-              }
-            }
-            maximum_price {
-               regular_price {
+              &rbrace;
+            &rbrace;
+            maximum_price &lbrace;
+               regular_price &lbrace;
                  currency
                  value
-               }
-             }
-           }
-         }
-       }
-     }
-   }
-  user_errors {
+               &rbrace;
+             &rbrace;
+           &rbrace;
+         &rbrace;
+       &rbrace;
+     &rbrace;
+   &rbrace;
+  user_errors &lbrace;
     code
     message
-   }
- }
-}
+   &rbrace;
+ &rbrace;
+&rbrace;
 </code>
 </pre>
 

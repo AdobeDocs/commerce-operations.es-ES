@@ -12,9 +12,9 @@ ht-degree: 0%
 
 ---
 
-# ACSD-47444: error _[!UICONTROL Trying to access array offset on value of type bool]_al acceder a determinadas rutas de categoría no existentes para productos conocidos en PHP 7.4
+# ACSD-47444: error _[!UICONTROL Trying to access array offset on value of type bool]_&#x200B;al acceder a determinadas rutas de categoría no existentes para productos conocidos en PHP 7.4
 
-El parche ACSD-47444 resuelve el problema en el que se ve un error de _[!UICONTROL Trying to access array offset on value of type bool]_al acceder a ciertas rutas de categoría no existentes para productos conocidos en PHP 7.4. Esta revisión está disponible cuando está instalado [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.22.
+El parche ACSD-47444 resuelve el problema en el que se ve un error de _[!UICONTROL Trying to access array offset on value of type bool]_&#x200B;al acceder a ciertas rutas de categoría no existentes para productos conocidos en PHP 7.4. Esta revisión está disponible cuando está instalado [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.22.
 
 ## Productos y versiones afectados
 
@@ -26,11 +26,11 @@ El parche ACSD-47444 resuelve el problema en el que se ve un error de _[!UICONTR
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
-Experimenta el siguiente error: _[!UICONTROL Trying to access array offset on value of type bool]_al acceder a ciertas rutas de categoría no existentes para productos conocidos, en PHP 7.4.
+Experimenta el siguiente error: _[!UICONTROL Trying to access array offset on value of type bool]_&#x200B;al acceder a ciertas rutas de categoría no existentes para productos conocidos, en PHP 7.4.
 
 <u>Requisitos previos</u>:
 

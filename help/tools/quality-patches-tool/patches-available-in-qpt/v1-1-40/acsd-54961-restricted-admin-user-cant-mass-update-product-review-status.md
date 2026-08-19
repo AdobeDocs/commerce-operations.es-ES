@@ -28,7 +28,7 @@ El parche ACSD-54961 corrige el problema en el que un usuario administrador rest
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
@@ -39,7 +39,7 @@ Un usuario administrador restringido no puede actualizar [!UICONTROL Product Rev
 1. Cree un sitio web, una tienda y una vista de tienda adicionales.
 1. Agregue un producto a la segunda tienda y, a continuación, agregue una revisión.
 1. Cree un usuario administrador restringido con acceso solo a la segunda tienda.
-1. Inicie sesión como usuario administrador restringido, luego vaya a **[!UICONTROL  Marketings]** > **[!UICONTROL Reviews]** > **[!UICONTROL Mass Update]** y establezca **Estado** en *Aprobado* o *Pendiente*.
+1. Inicie sesión como usuario administrador restringido, luego vaya a **[!UICONTROL &#x200B; Marketings]** > **[!UICONTROL Reviews]** > **[!UICONTROL Mass Update]** y establezca **Estado** en *Aprobado* o *Pendiente*.
 
 <u>Resultados esperados</u>:
 
