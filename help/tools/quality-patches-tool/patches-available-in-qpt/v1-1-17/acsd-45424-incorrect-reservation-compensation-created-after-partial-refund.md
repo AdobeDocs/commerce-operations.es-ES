@@ -1,6 +1,6 @@
 ---
 title: 'ACSD-45424: Compensación de reserva incorrecta creada tras un reembolso parcial'
-description: El parche ACSD-45424 corrige el problema en el que se crea una compensación de reserva incorrecta después de un reembolso parcial. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.17. El ID del parche es ACSD-45424. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.6.
+description: El parche ACSD-45424 corrige el problema en el que se crea una compensación de reserva incorrecta después de un reembolso parcial. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.17. El ID del parche es ACSD-45424. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.6.
 feature: Orders
 role: Admin
 exl-id: 94435816-9f4a-40f9-be80-05836ed7781f
@@ -72,7 +72,7 @@ Aunque no seleccionó *Volver a stock* durante la creación de la nota de abono,
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
 * Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía [!DNL Quality Patches Tool].
-* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) en la guía Commerce en la infraestructura de la nube.
+* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) en la guía Commerce en la infraestructura de la nube.
 
 ## Lectura relacionada
 

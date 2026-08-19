@@ -40,7 +40,7 @@ Cada fase de desarrollo debe tener una rama correspondiente en Git para rastrear
 
 >[!TIP]
 >
->Adobe Commerce en proyectos de infraestructura en la nube contiene ramas específicas que corresponden a entornos diferentes. Consulte [Flujo de trabajo del proyecto profesional](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow) y [Flujo de trabajo del proyecto inicial](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/starter-develop-deploy-workflow) en la _Guía de Cloud_.
+>Adobe Commerce en proyectos de infraestructura en la nube contiene ramas específicas que corresponden a entornos diferentes. Consulte [Flujo de trabajo del proyecto profesional](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow) y [Flujo de trabajo del proyecto inicial](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/architecture/starter-develop-deploy-workflow) en la _Guía de Cloud_.
 
 ## Estrategias de rama
 

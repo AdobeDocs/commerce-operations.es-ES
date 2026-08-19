@@ -132,7 +132,7 @@ Esta versión incluye los siguientes aspectos destacados:
 
 >[!BEGINSHADEBOX]
 
-Las correcciones para CVE-2025-47110 y VULN-31547 también están disponibles como parche aislado. Consulte el [artículo de la Base de conocimiento](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27181) para obtener detalles.
+Las correcciones para CVE-2025-47110 y VULN-31547 también están disponibles como parche aislado. Consulte el [artículo de la Base de conocimiento](https://experienceleague.adobe.com/es/docs/experience-cloud-kcs/kbarticles/ka-27181) para obtener detalles.
 
 >[!ENDSHADEBOX]
 

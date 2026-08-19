@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-31590: No se pueden actualizar atributos por lotes mediante colas asíncronas de MySQL'
-description: El parche MDVA-31590 resuelve el problema en el que los usuarios no pueden actualizar los atributos de forma masiva mediante colas asincrónicas de MySQL. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.3. El ID del parche es MDVA-31590. Tenga en cuenta que el problema se solucionó en Adobe Commerce 2.4.2.
+description: El parche MDVA-31590 resuelve el problema en el que los usuarios no pueden actualizar los atributos de forma masiva mediante colas asincrónicas de MySQL. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.3. El ID del parche es MDVA-31590. Tenga en cuenta que el problema se solucionó en Adobe Commerce 2.4.2.
 feature: Attributes, Services
 role: Admin
 exl-id: f8d1c3bd-e995-41ef-89e1-93eec6e8b1f1
@@ -71,7 +71,7 @@ Los usuarios no pueden actualizar los atributos de forma masiva mediante MySQL a
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
 * Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía [!DNL Quality Patches Tool].
-* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) en la guía Commerce en la infraestructura de la nube.
+* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) en la guía Commerce en la infraestructura de la nube.
 
 ## Lectura relacionada
 

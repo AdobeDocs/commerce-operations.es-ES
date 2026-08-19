@@ -1,6 +1,6 @@
 ---
 title: 'ACSD-45255: Excepción en la página de informe de Stock bajo para el usuario administrador restringido'
-description: El parche ACSD-45255 resuelve el problema en el que se produce una excepción en la página Informe de bajo stock para un usuario administrador restringido. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.18. El ID del parche es ACSD-45255. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.6.
+description: El parche ACSD-45255 resuelve el problema en el que se produce una excepción en la página Informe de bajo stock para un usuario administrador restringido. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.18. El ID del parche es ACSD-45255. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.6.
 feature: Admin Workspace, Orders
 role: Admin
 exl-id: bf7e0893-e4a7-4184-a223-02ceef7a30d9
@@ -71,4 +71,4 @@ Para obtener más información sobre la herramienta Parches de calidad, consulte
 * [Lanzamiento de la herramienta Parches de calidad: una nueva herramienta para autodistribuir parches de calidad](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) en la base de conocimiento de asistencia.
 * [Compruebe si el parche está disponible para su problema de Adobe Commerce mediante la herramienta Parches de calidad](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) en la guía [!DNL Quality Patches Tool].
 
-Para obtener información sobre otros parches disponibles en QPT, consulte [[!DNL Quality Patches Tool]: Buscar parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) en la guía [!DNL Quality Patches Tool].
+Para obtener información sobre otros parches disponibles en QPT, consulte [[!DNL Quality Patches Tool]: Buscar parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es) en la guía [!DNL Quality Patches Tool].

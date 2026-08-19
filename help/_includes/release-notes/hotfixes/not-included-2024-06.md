@@ -25,22 +25,22 @@ Opción 1:
 
    * [2.4.4-p9](/help/release/release-notes/security/2-4-4-patches.md#adobe-commerce-244-p9)
 
-1. Aplicar la [revisión](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27136) publicada el 17 de julio de 2024.
+1. Aplicar la [revisión](https://experienceleague.adobe.com/es/docs/experience-cloud-kcs/kbarticles/ka-27136) publicada el 17 de julio de 2024.
 
-1. [Rotar](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/encryption-key) claves de cifrado.
+1. [Rotar](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/security/encryption-key) claves de cifrado.
 
 Opción 2:
 
-1. Aplicar el [parche aislado](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27136).
+1. Aplicar el [parche aislado](https://experienceleague.adobe.com/es/docs/experience-cloud-kcs/kbarticles/ka-27136).
 
-1. [Rotar](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/encryption-key) claves de cifrado.
+1. [Rotar](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/security/encryption-key) claves de cifrado.
 
 **Para clientes que ya han aplicado un parche de seguridad lanzado el 11 de junio de 2024 o el parche aislado lanzado el 28 de junio de 2024:**
 
-1. Aplicar la [revisión](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27136) publicada el 17 de julio de 2024.
+1. Aplicar la [revisión](https://experienceleague.adobe.com/es/docs/experience-cloud-kcs/kbarticles/ka-27136) publicada el 17 de julio de 2024.
 
-1. [Rotar](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/encryption-key) claves de cifrado.
+1. [Rotar](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/security/encryption-key) claves de cifrado.
 
 **Para clientes que ya han aplicado 1) un parche de seguridad lanzado el 11 de junio de 2024 o, 2) el parche aislado lanzado el 28 de junio de 2024 y 3) han girado sus claves de cifrado:**
  
-1. Aplicar la [revisión](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27136) publicada el 17 de julio de 2024.
+1. Aplicar la [revisión](https://experienceleague.adobe.com/es/docs/experience-cloud-kcs/kbarticles/ka-27136) publicada el 17 de julio de 2024.

@@ -43,7 +43,7 @@ La herramienta está diseñada para permitirle autoabastecerse con parches para 
 
 ## Parches disponibles en la herramienta Parches de calidad
 
-Consulte [Herramienta de parches de calidad](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) en nuestra documentación para desarrolladores para ver la lista de parches disponibles.
+Consulte [Herramienta de parches de calidad](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es) en nuestra documentación para desarrolladores para ver la lista de parches disponibles.
 
 ## Cómo instalar y utilizar la herramienta Parches de calidad
 
@@ -55,9 +55,9 @@ Consulte [Guía de actualización de software > Parches](/help/tools/quality-pat
 
 ### Cómo instalar y utilizar QPT para Adobe Commerce en la infraestructura en la nube
 
-Consulte [Cloud for Adobe Commerce > Aplicar parches](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) en nuestra documentación para desarrolladores para obtener más información sobre cómo instalar y utilizar QPT para aplicar y revertir parches en Adobe Commerce en la infraestructura en la nube.
+Consulte [Cloud for Adobe Commerce > Aplicar parches](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) en nuestra documentación para desarrolladores para obtener más información sobre cómo instalar y utilizar QPT para aplicar y revertir parches en Adobe Commerce en la infraestructura en la nube.
 
 ## Lectura relacionada
 
 * [Notas de la versión de la herramienta Parches de calidad](/help/tools/quality-patches-tool/release-notes.md) en nuestra documentación para desarrolladores.
-* [Cómo aplicar parches de compositor proporcionados por Adobe](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento) en la base de conocimiento de soporte.
+* [Cómo aplicar parches de compositor proporcionados por Adobe](https://experienceleague.adobe.com/es/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento) en la base de conocimiento de soporte.

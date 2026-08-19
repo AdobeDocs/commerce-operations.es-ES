@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-40435: El descuento en el paquete no se aplica correctamente a través de GraphQL'
-description: El parche MDVA-40435 soluciona el problema de que el descuento en un producto empaquetado no se aplique correctamente a través de GraphQL. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.4. El ID del parche es MDVA-40435. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.4.
+description: El parche MDVA-40435 soluciona el problema de que el descuento en un producto empaquetado no se aplique correctamente a través de GraphQL. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.4. El ID del parche es MDVA-40435. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.4.
 feature: GraphQL, Orders, Personalization, Products
 role: Admin
 exl-id: 001be138-5d09-455d-a597-57115cd21a25
@@ -55,7 +55,7 @@ El descuento en un producto empaquetado no se aplica correctamente a través de 
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
 * Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía [!DNL Quality Patches Tool].
-* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) en la guía Commerce en la infraestructura de la nube.
+* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) en la guía Commerce en la infraestructura de la nube.
 
 ## Lectura relacionada
 

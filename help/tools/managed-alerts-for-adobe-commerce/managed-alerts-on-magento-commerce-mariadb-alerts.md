@@ -44,7 +44,7 @@ Recibirá una alerta administrada en [!DNL New Relic] si se ha registrado en [Al
 
 Si recibe una alerta de consultas críticas de DML, comience en el paso uno. Si recibe una alerta de advertencia de consultas DML, comience en el paso dos.
 
-1. Compruebe si existe un ticket de asistencia de Adobe Commerce. Para ver los pasos, consulte nuestra base de conocimiento [Seguimiento de los tickets de asistencia](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#track-support-case). Es posible que el equipo de asistencia haya recibido una alerta de umbral [!DNL New Relic], haya creado un ticket y haya empezado a trabajar en el problema. Si no existe ningún ticket, cree uno. El ticket debe tener la siguiente información:
+1. Compruebe si existe un ticket de asistencia de Adobe Commerce. Para ver los pasos, consulte nuestra base de conocimiento [Seguimiento de los tickets de asistencia](https://experienceleague.adobe.com/es/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#track-support-case). Es posible que el equipo de asistencia haya recibido una alerta de umbral [!DNL New Relic], haya creado un ticket y haya empezado a trabajar en el problema. Si no existe ningún ticket, cree uno. El ticket debe tener la siguiente información:
    * Motivo del contacto: seleccione **[!UICONTROL New Relic MariaDB alert received]**.
    * Descripción de la alerta.
    * [[!DNL New Relic] Vínculo de incidente](https://docs.newrelic.com/docs/alerts-applied-intelligence/new-relic-alerts/alert-incidents/view-violation-event-details-incidents). Esto se incluye en [Alertas administradas para Adobe Commerce](managed-alerts-for-magento-commerce.md).
@@ -56,4 +56,4 @@ Si recibe una alerta de consultas críticas de DML, comience en el paso uno. Si 
    1. Busque optimizaciones de código u optimizaciones operativas:
       * Optimizaciones de código: busque optimizar las consultas con inserciones/actualizaciones masivas, minimizando el uso del índice o restringiendo el código.
       * Optimizaciones operativas: descargue las modificaciones de datos que requieren muchos recursos para reducir los tiempos de tráfico.
-      * Optimizaciones adicionales: Asegúrese de que está en la última versión de ECE-Tools. Para ver los pasos, consulte [Actualizar ece-tools version](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package) en la Guía de Commerce en la nube.
+      * Optimizaciones adicionales: Asegúrese de que está en la última versión de ECE-Tools. Para ver los pasos, consulte [Actualizar ece-tools version](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package) en la Guía de Commerce en la nube.

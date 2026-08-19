@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-37115: El aviso "Solo quedan 0" aparece en la página del producto'
-description: El parche de MDVA-37115 soluciona el problema de mostrar el aviso innecesario *Solo 0 restante* en la página de productos configurables. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.2. El ID del parche es MDVA-37115. Tenga en cuenta que el problema se solucionó en Adobe Commerce 2.4.3.
+description: El parche de MDVA-37115 soluciona el problema de mostrar el aviso innecesario *Solo 0 restante* en la página de productos configurables. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.2. El ID del parche es MDVA-37115. Tenga en cuenta que el problema se solucionó en Adobe Commerce 2.4.3.
 feature: Configuration, Products, Orders
 role: Admin
 exl-id: ba94b2fd-6a7d-4194-afd8-798854431b57
@@ -57,7 +57,7 @@ Se muestra *Solo queda 0* aviso en la página del producto.
 Para aplicar parches individuales, utilice los siguientes vínculos en función del tipo de implementación:
 
 * Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía [!DNL Quality Patches Tool].
-* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) en la guía Commerce en la infraestructura de la nube.
+* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) en la guía Commerce en la infraestructura de la nube.
 
 ## Lectura relacionada
 

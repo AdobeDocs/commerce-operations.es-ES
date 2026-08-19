@@ -1,6 +1,6 @@
 ---
 title: 'ACSD-46146: Dos correos electrónicos de confirmación de pedido enviados después de realizar el pedido desde el administrador'
-description: El parche ACSD-46146 soluciona el problema de enviar dos correos electrónicos de confirmación de pedido después de realizar un pedido del administrador. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.18. El ID del parche es ACSD-46146. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.6.
+description: El parche ACSD-46146 soluciona el problema de enviar dos correos electrónicos de confirmación de pedido después de realizar un pedido del administrador. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.18. El ID del parche es ACSD-46146. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.6.
 feature: Admin Workspace, Communications, Orders
 role: Admin
 exl-id: 1db809d0-461d-45d4-9e1b-8209a014b7a1
@@ -61,4 +61,4 @@ Para obtener más información sobre la herramienta Parches de calidad, consulte
 * [Lanzamiento de la herramienta Parches de calidad: una nueva herramienta para autodistribuir parches de calidad](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) en la base de conocimiento de asistencia.
 * [Compruebe si el parche está disponible para su problema de Adobe Commerce mediante la herramienta Parches de calidad](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) en la guía [!DNL Quality Patches Tool].
 
-Para obtener información sobre otros parches disponibles en QPT, consulte [[!DNL Quality Patches Tool]: Buscar parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) en la guía [!DNL Quality Patches Tool].
+Para obtener información sobre otros parches disponibles en QPT, consulte [[!DNL Quality Patches Tool]: Buscar parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es) en la guía [!DNL Quality Patches Tool].

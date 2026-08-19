@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-40619: Los cambios de jerarquía rompen la edición en línea de la página de CMS y generan un error 500'
-description: El parche MDVA-40619 resuelve el problema en el que los cambios en la jerarquía de páginas de CMS rompen la edición en línea de la página de CMS y emiten "Error 500". Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.5. El ID del parche es MDVA-40619. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.4.
+description: El parche MDVA-40619 resuelve el problema en el que los cambios en la jerarquía de páginas de CMS rompen la edición en línea de la página de CMS y emiten "Error 500". Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.5. El ID del parche es MDVA-40619. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.4.
 feature: CMS
 role: Admin
 exl-id: 148cb0a5-5a6c-4cfa-bf95-4bafc57beec6
@@ -61,7 +61,7 @@ Se obtiene el siguiente error:
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
 * Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía [!DNL Quality Patches Tool].
-* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) en la guía Commerce en la infraestructura de la nube.
+* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) en la guía Commerce en la infraestructura de la nube.
 
 ## Lectura relacionada
 

@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-37364: atributo de cliente personalizado de tipo de fecha rompe la IU de la cuadrícula'
-description: El parche MDVA-37364 resuelve el problema en el que el atributo de cliente personalizado de tipo de fecha rompe la interfaz de usuario de la cuadrícula del cliente. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.2. El ID del parche es MDVA-37364. Tenga en cuenta que está programado que el problema se corrija en la versión 2.4.4 de Adobe Commerce.
+description: El parche MDVA-37364 resuelve el problema en el que el atributo de cliente personalizado de tipo de fecha rompe la interfaz de usuario de la cuadrícula del cliente. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.2. El ID del parche es MDVA-37364. Tenga en cuenta que está programado que el problema se corrija en la versión 2.4.4 de Adobe Commerce.
 feature: Attributes, Cache
 role: Developer
 exl-id: 5bd64004-06c4-49fd-8e56-e2c44008ca82
@@ -61,7 +61,7 @@ La IU de la cuadrícula del cliente de administración está dañada.
 Para aplicar parches individuales, utilice los siguientes vínculos en función del tipo de implementación:
 
 * Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía [!DNL Quality Patches Tool].
-* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) en la guía Commerce en la infraestructura de la nube.
+* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) en la guía Commerce en la infraestructura de la nube.
 
 ## Lectura relacionada
 

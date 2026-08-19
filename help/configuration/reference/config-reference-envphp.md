@@ -146,7 +146,7 @@ Commerce utiliza una clave de cifrado para proteger contraseñas y otros datos c
 ]
 ```
 
-Obtenga más información acerca de la [clave de cifrado](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/encryption-key) en la _guía del usuario de Commerce_.
+Obtenga más información acerca de la [clave de cifrado](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/security/encryption-key) en la _guía del usuario de Commerce_.
 
 ## db
 

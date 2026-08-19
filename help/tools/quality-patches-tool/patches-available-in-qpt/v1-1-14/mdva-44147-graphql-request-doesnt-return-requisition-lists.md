@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-44147: [!DNL GraphQL] la solicitud no devuelve [!UICONTROL Requisition Lists]'
-description: El parche MDVA-44147 corrige el problema donde  [!DNL GraphQL] request no devuelve [!UICONTROL Requisition Lists]. Esta revisión está disponible cuando está instalado [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.14. El ID del parche es MDVA-44147. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.5.
+description: El parche MDVA-44147 corrige el problema donde  [!DNL GraphQL] request no devuelve [!UICONTROL Requisition Lists]. Esta revisión está disponible cuando está instalado [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.14. El ID del parche es MDVA-44147. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.5.
 feature: B2B, GraphQL
 role: Admin
 exl-id: 534c4e45-6521-45c0-ae4e-c60b754f432f
@@ -37,7 +37,7 @@ La solicitud [!DNL GraphQL] no devuelve [!UICONTROL Requisition Lists].
 <u>Pasos a seguir</u>:
 
 1. Vaya a **Tienda** > **Configuración** > **Configuración** > **General** > **Características B2B** y habilite **[!UICONTROL Requisition List]**.
-1. Inicie sesión como cliente y agregue un producto a [[!UICONTROL Requisition List]](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/requisition-lists/requisition-lists).
+1. Inicie sesión como cliente y agregue un producto a [[!UICONTROL Requisition List]](https://experienceleague.adobe.com/es/docs/commerce-admin/b2b/requisition-lists/requisition-lists).
 1. Crear un [[!UICONTROL Customer Token]](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/mutations/generate-token/).
 
    <pre>
@@ -179,7 +179,7 @@ No se devuelven resultados.
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
 * Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía [!DNL Quality Patches Tool].
-* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) en la guía Commerce en la infraestructura de la nube.
+* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) en la guía Commerce en la infraestructura de la nube.
 
 ## Lectura relacionada
 
@@ -188,4 +188,4 @@ Para obtener más información sobre [!DNL Quality Patches Tool], consulte:
 * [[!DNL Quality Patches Tool] publicado: nueva herramienta para autodistribuir parches de calidad](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) en la base de conocimiento de soporte.
 * [Compruebe si el parche está disponible para su problema de Adobe Commerce usando  [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) en la guía [!DNL Quality Patches Tool].
 
-Para obtener información acerca de otras revisiones disponibles en [!DNL QPT], consulte [[!DNL Quality Patches Tool]: Buscar revisiones](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) en la guía [!DNL Quality Patches Tool].
+Para obtener información acerca de otras revisiones disponibles en [!DNL QPT], consulte [[!DNL Quality Patches Tool]: Buscar revisiones](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es) en la guía [!DNL Quality Patches Tool].

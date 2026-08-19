@@ -23,6 +23,6 @@ Los temas de la sección Seguridad de la guía de configuración no son completo
 
 Varios temas relacionados con la seguridad que se incluían en la guía de configuración al mismo tiempo, ahora se encuentran en las siguientes guías:
 
-- [Google reCAPTCHA](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/captcha/security-google-recaptcha) en la _guía de extensión_.
+- [Google reCAPTCHA](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/security/captcha/security-google-recaptcha) en la _guía de extensión_.
 - [Autenticación de doble factor](https://developer.adobe.com/commerce/testing/functional-testing-framework/two-factor-authentication) en la _guía de extensión_.
 - [Cumplimiento del Reglamento General de Protección de Datos (RGPD)](/help/security-and-compliance/privacy/gdpr.md) en la _Guía de seguridad y cumplimiento_.
