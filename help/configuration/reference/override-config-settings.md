@@ -2,9 +2,9 @@
 title: Anular los ajustes de configuración
 description: Aprenda a utilizar variables de entorno para anular los ajustes de configuración de Adobe Commerce. Descubra las prácticas recomendadas de implementación y administración de la configuración.
 exl-id: 788fd3cd-f8c1-4514-8141-547fed36e9ce
-source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '1270'
+source-wordcount: '1277'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Puede anular el valor de _any_ configuración mediante variables de entorno; sin
 
 >[!TIP]
 >
->Consulte el tema [Configurar entornos](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-intro.html?lang=es) en la guía _Commerce en infraestructura de nube_.
+>Consulte el tema [Configurar entornos](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-intro) en la guía _Commerce en infraestructura de nube_.
 
 ## Variables de entorno
 
@@ -28,9 +28,9 @@ Puede utilizar variables para cualquiera de las siguientes opciones:
 - [Los valores confidenciales](config-reference-sens.md) deben establecerse mediante variables de entorno o el comando [`magento config:sensitive:set`](../cli/set-configuration-values.md).
 - Los valores específicos del sistema deben configurarse con:
 
-   - Variables de entorno
-   - El comando [`magento config:set`](../cli/set-configuration-values.md)
-   - El administrador seguido del comando [`magento app:config:dump` &#x200B;](../cli/export-configuration.md)
+  - Variables de entorno
+  - El comando [`magento config:set`](../cli/set-configuration-values.md)
+  - El administrador seguido del comando [`magento app:config:dump` &#x200B;](../cli/export-configuration.md)
 
 Las rutas de configuración se encuentran en:
 
@@ -61,9 +61,9 @@ El formato general de los nombres de las variables de configuración del sistema
 
   Para obtener más información sobre los ámbitos, consulte:
 
-   - [Paso 1: Encuentre el valor de ámbito de vista del sitio web o tienda](#step-1-find-the-website-or-store-view-scope-value)
-   - [Tema de la Guía del usuario de Commerce sobre el ámbito](https://experienceleague.adobe.com/es/docs/commerce-admin/start/setup/websites-stores-views#scope-settings)
-   - [Referencia rápida del ámbito](https://experienceleague.adobe.com/es/docs/commerce-admin/config/scope-change#scope-quick-reference)
+  - [Paso 1: Encuentre el valor de ámbito de vista del sitio web o tienda](#step-1-find-the-website-or-store-view-scope-value)
+  - [Tema de la Guía del usuario de Commerce sobre el ámbito](https://experienceleague.adobe.com/es/docs/commerce-admin/start/setup/websites-stores-views#scope-settings)
+  - [Referencia rápida del ámbito](https://experienceleague.adobe.com/es/docs/commerce-admin/config/scope-change#scope-quick-reference)
 
 `<SYSTEM__VARIABLE__NAME>` es la ruta de configuración con caracteres de subrayado doble sustituidos para `/`. Para obtener más información, consulte [Paso 2: Establecer variables del sistema](#step-2-set-global-website-or-store-view-variables).
 
@@ -103,10 +103,10 @@ Cómo leer la tabla:
 
   Si lo desea, tiene la opción de especificar los valores del sistema para estos parámetros de configuración como variables de entorno.
 
-   - El nombre completo de la variable siempre está en MAYÚSCULAS
-   - Iniciar un nombre de variable con `CONFIG__` (observe dos caracteres de subrayado)
-   - Puede encontrar la parte `<STORE_VIEW_CODE>` o `<WEBSITE_CODE>` del nombre de una variable en la base de datos de administración o de Commerce, como se indica en las secciones siguientes.
-   - Puede encontrar `<SYSTEM__VARIABLE__NAME>` como se describe en [Paso 2: establecer variables globales, de sitio web o de vista de tienda](#step-2-set-global-website-or-store-view-variables).
+  - El nombre completo de la variable siempre está en MAYÚSCULAS
+  - Iniciar un nombre de variable con `CONFIG__` (observe dos caracteres de subrayado)
+  - Puede encontrar la parte `<STORE_VIEW_CODE>` o `<WEBSITE_CODE>` del nombre de una variable en la base de datos de administración o de Commerce, como se indica en las secciones siguientes.
+  - Puede encontrar `<SYSTEM__VARIABLE__NAME>` como se describe en [Paso 2: establecer variables globales, de sitio web o de vista de tienda](#step-2-set-global-website-or-store-view-variables).
 
 ### Busque un sitio web o un ámbito de vista de tienda en el Administrador de
 
@@ -185,8 +185,8 @@ En esta sección se explica cómo establecer variables del sistema.
 
 - Para establecer un valor para una vista de tienda o sitio web en particular, inicie el nombre de la variable como se describe en [Paso 1: Encuentre el valor de ámbito](#step-1-find-the-website-or-store-view-scope-value):
 
-   - `CONFIG__WEBSITES`
-   - `CONFIG__STORES`
+  - `CONFIG__WEBSITES`
+  - `CONFIG__STORES`
 
 - La última parte del nombre de la variable es la ruta de configuración, que es única para cada ajuste de configuración.
 
@@ -253,6 +253,6 @@ Se muestra un ejemplo paso a paso en [Establecer valores de configuración media
 >
 >- Para usar los valores que configuró en la matriz `$_ENV`, debe establecer `variables_order = "EGPCS"` (Entorno, Obtener, Publicación, Cookie y Servidor) en el archivo `php.ini`. Para obtener más información, consulte [Documentación de PHP](https://www.php.net/manual/en/ini.core.php).
 >
->- Para Adobe Commerce en la infraestructura en la nube, si está intentando anular las opciones de configuración mediante la [Interfaz web de Project](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html?lang=es#configure-the-project), debe anteponer el nombre de la variable a `env:`. Por ejemplo:
+>- Para Adobe Commerce en la infraestructura en la nube, si está intentando anular las opciones de configuración mediante la [Interfaz web de Project](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/project/overview#configure-the-project), debe anteponer el nombre de la variable a `env:`. Por ejemplo:
 >
 >![Ejemplo de variable de entorno](../../assets/configuration/cloud-console-envvariable.png)

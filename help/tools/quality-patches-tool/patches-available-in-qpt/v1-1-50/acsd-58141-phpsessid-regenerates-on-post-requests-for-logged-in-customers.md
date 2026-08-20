@@ -5,16 +5,16 @@ feature: Customers, Cache
 role: Admin, Developer
 exl-id: c188c215-204c-489f-8703-4c81ca8703b7
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '448'
+source-wordcount: '474'
 ht-degree: 0%
 
 ---
 
 # ACSD-58141: PHPSESSID se regenera en [!DNL POST] solicitudes para clientes que han iniciado sesión si la caché de L2 Redis está habilitada
 
-El parche ACSD-58141 corrige el problema en el cual `PHPSESSID` se regenera en [!DNL POST] solicitudes para un cliente que ha iniciado sesión si la caché de L2 Redis está habilitada y el cliente se actualiza desde Administración. Esta revisión está disponible cuando está instalado [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.50. El ID del parche es ACSD-58141. Tenga en cuenta que el problema se solucionó en Adobe Commerce 2.4.7.
+El parche ACSD-58141 corrige el problema en el cual `PHPSESSID` se regenera en [!DNL POST] solicitudes para un cliente que ha iniciado sesión si la caché de L2 Redis está habilitada y el cliente se actualiza desde Administración. Esta revisión está disponible cuando está instalado [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.50. El ID del parche es ACSD-58141. Tenga en cuenta que el problema se solucionó en Adobe Commerce 2.4.7.
 
 ## Productos y versiones afectados
 
@@ -63,13 +63,13 @@ El entorno debe configurarse con Redis que tenga al menos 3 nodos.
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
 * Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía [!DNL Quality Patches Tool].
-* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=es) en la guía Commerce en la infraestructura de la nube.
+* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) en la guía Commerce en la infraestructura de la nube.
 
 ## Lectura relacionada
 
 Para obtener más información sobre [!DNL Quality Patches Tool], consulte:
 
-* [[!DNL Quality Patches Tool] publicado: nueva herramienta para autodistribuir parches de calidad](https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) en la base de conocimiento de soporte.
+* [[!DNL Quality Patches Tool] publicado: nueva herramienta para autodistribuir parches de calidad](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) en la base de conocimiento de soporte.
 * [Compruebe si el parche está disponible para su problema de Adobe Commerce usando [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) en la guía [!UICONTROL Quality Patches Tool].
 
 

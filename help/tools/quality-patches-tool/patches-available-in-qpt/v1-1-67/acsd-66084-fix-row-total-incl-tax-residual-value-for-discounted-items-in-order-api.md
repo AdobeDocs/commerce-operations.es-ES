@@ -5,9 +5,9 @@ feature: Orders, REST, Taxes, Payments, Checkout
 role: Admin, Developer
 type: Troubleshooting
 exl-id: 421c6fe6-b6b1-4f33-acb6-fbd4306bcc4c
-source-git-commit: 951738a4c671ed6fcc47b2a928d2110c78763d26
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '447'
+source-wordcount: '473'
 ht-degree: 0%
 
 ---
@@ -61,7 +61,7 @@ Se devuelve `row_total_incl_tax` como un valor residual cercano a cero en la res
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
 * Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía [!DNL Quality Patches Tool].
-* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=es) en la guía Commerce en la infraestructura de la nube.
+* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) en la guía Commerce en la infraestructura de la nube.
 
 ## Lectura relacionada
 

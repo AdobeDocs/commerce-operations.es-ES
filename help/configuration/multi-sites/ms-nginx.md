@@ -2,9 +2,9 @@
 title: Configuración de varios sitios web con Nginx
 description: Siga este tutorial para configurar varios sitios web con Nginx.
 exl-id: f13926a2-182c-4ce2-b091-19c5f978f267
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '972'
+source-wordcount: '974'
 ht-degree: 0%
 
 ---
@@ -17,16 +17,16 @@ Suponemos que:
 
   Es posible que se requieran tareas adicionales para implementar varios sitios web en un entorno alojado; póngase en contacto con su proveedor de alojamiento para obtener más información.
 
-  Se requieren tareas adicionales para configurar Adobe Commerce en la infraestructura en la nube. Después de completar las tareas que se describen en este tema, vea [Configurar varios sitios web o tiendas](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html?lang=es) en la guía _Commerce en infraestructura de nube_.
+  Se requieren tareas adicionales para configurar Adobe Commerce en la infraestructura en la nube. Después de completar las tareas que se describen en este tema, vea [Configurar varios sitios web o tiendas](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/configure-store/multiple-sites) en la guía _Commerce en infraestructura de nube_.
 
 - Acepta varios dominios en un archivo host virtual o utiliza un host virtual por sitio web; los archivos de configuración de host virtual se encuentran en `/etc/nginx/sites-available`.
 - Utiliza el(la) `nginx.conf.sample` proporcionado(a) por Commerce solo con las modificaciones descritas en este tutorial.
 - El software de Commerce está instalado en `/var/www/html/magento2`.
 - Tiene dos sitios web distintos del predeterminado:
 
-   - `french.mysite.mg` con código de sitio web `french` y código de vista de tienda `fr`
-   - `german.mysite.mg` con código de sitio web `german` y código de vista de tienda `de`
-   - `mysite.mg` es el sitio web predeterminado y la vista de tienda predeterminada
+  - `french.mysite.mg` con código de sitio web `french` y código de vista de tienda `fr`
+  - `german.mysite.mg` con código de sitio web `german` y código de vista de tienda `de`
+  - `mysite.mg` es el sitio web predeterminado y la vista de tienda predeterminada
 
 >[!TIP]
 >
@@ -40,8 +40,8 @@ A continuación se muestra una hoja de ruta para configurar varios sitios web co
 
    - `$MAGE_RUN_TYPE` puede ser `store` o `website`:
 
-      - Use `website` para cargar el sitio web en la tienda.
-      - Use `store` para cargar cualquier vista de tienda en su tienda.
+     - Use `website` para cargar el sitio web en la tienda.
+     - Use `store` para cargar cualquier vista de tienda en su tienda.
 
    - `$MAGE_RUN_CODE` es el sitio web único o el código de vista de tienda que corresponde a `$MAGE_RUN_TYPE`.
 
@@ -280,7 +280,7 @@ A menos que tenga DNS configurado para las direcciones URL de las tiendas, debe 
 >[!INFO]
 >
 >- Es posible que se requieran tareas adicionales para implementar varios sitios web en un entorno alojado; póngase en contacto con su proveedor de alojamiento para obtener más información.
->- Se requieren tareas adicionales para configurar Adobe Commerce en la infraestructura en la nube. Consulte [Configurar varios sitios web o tiendas en la nube](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html?lang=es) en la guía _Commerce en la infraestructura en la nube_.
+>- Se requieren tareas adicionales para configurar Adobe Commerce en la infraestructura en la nube. Consulte [Configurar varios sitios web o tiendas en la nube](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/configure-store/multiple-sites) en la guía _Commerce en la infraestructura en la nube_.
 
 ### Resolución de problemas
 

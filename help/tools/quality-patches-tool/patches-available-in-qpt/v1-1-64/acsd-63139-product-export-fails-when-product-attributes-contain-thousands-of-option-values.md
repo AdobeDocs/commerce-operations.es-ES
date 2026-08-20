@@ -5,9 +5,9 @@ feature: Data Import/Export
 role: Admin, Developer
 exl-id: 785907dc-aa3f-49e2-bd52-c3afe4393456
 type: Troubleshooting
-source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '398'
+source-wordcount: '387'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ La exportación del producto falla cuando los atributos del producto contienen m
    bin/magento cron:install
    ```
 
-1. Configure [!DNL RabbitMQ] siguiendo las instrucciones de [[!DNL RabbitMQ] requisitos previos](https://experienceleague.adobe.com/es/docs/commerce-operations/installation-guide/prerequisites/message-brokers/rabbitmq).
+1. Configure [!DNL RabbitMQ] siguiendo las instrucciones de [[!DNL RabbitMQ] requisitos previos](/help/installation/prerequisites/rabbitmq.md).
 1. Abra el archivo `php.ini`, establezca el límite de memoria en 4G y reinicie el servicio PHP.
 1. En el panel de administración, vaya a **[!UICONTROL System]** > *[!UICONTROL Data Transfer]* > **[!UICONTROL Export]**.
 1. En la sección *[!UICONTROL Export Settings]*, establezca **[!UICONTROL Entity Type]** en *Productos*, desplácese hacia abajo y haga clic en **[!UICONTROL Continue]**.
@@ -74,7 +74,7 @@ Fatal error: Allowed memory size of 4294967296 bytes exhausted (tried to allocat
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
 * Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía [!DNL Quality Patches Tool].
-* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=es) en la guía Commerce en la infraestructura de la nube.
+* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) en la guía Commerce en la infraestructura de la nube.
 
 ## Lectura relacionada
 

@@ -1,16 +1,16 @@
 ---
 title: 'ACSD-66865: al guardar un [!UICONTROL Catalog Price Rule], se invalidan los indexadores y se proporciona una alternativa para reindexar solo los productos afectados'
-description: Aplique el parche ACSD-66865 para solucionar el problema de Adobe Commerce donde  al guardar [!UICONTROL Catalog Price Rules] se invalidan los indizadores y se proporciona una alternativa para reindexar solo los productos afectados.
+description: Aplique el parche ACSD-66865 para corregir el problema de Adobe Commerce en el que al guardar un [!UICONTROL Catalog Price Rules] se invalidan los indexadores y se proporciona una alternativa para reindexar solo los productos afectados.
 feature: Price Rules, Price Indexer
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: fe36522b99ec3fe7189d164cfca6127c9119e06e
+exl-id: 68baf176-ee6e-4ba8-8a34-8adb8d1e16fe
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '396'
+source-wordcount: '415'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-66865: al guardar un **[!UICONTROL Catalog Price Rule]**, se invalidan los indexadores y se proporciona una alternativa para reindexar solo los productos afectados
 
@@ -56,7 +56,7 @@ Se activa un reíndice completo para todos los indizadores, incluso cuando solo 
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
 * Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía [!DNL Quality Patches Tool].
-* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=es) en la guía Commerce en la infraestructura de la nube.
+* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) en la guía Commerce en la infraestructura de la nube.
 
 ## Lectura relacionada
 

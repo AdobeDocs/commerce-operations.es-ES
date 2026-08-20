@@ -2,7 +2,7 @@
 title: Información general sobre política de seguridad de contenido
 description: Aprenda a mejorar la postura de seguridad de su tienda Adobe Commerce mediante una política de seguridad de contenido.
 exl-id: 81070a09-5f8f-48b1-b542-1443dbd43f5f
-source-git-commit: ddf988826c29b4ebf054a4d4fb5f4c285662ef4e
+source-git-commit: b378f6da50e40b1868ae759cc7f3523a7e3ced4b
 workflow-type: tm+mt
 source-wordcount: '515'
 ht-degree: 0%
@@ -27,11 +27,11 @@ Es importante revisar todos los errores de CSP a medida que se producen y refina
 
 La primera fase de la implementación del CSP de Adobe Commerce se introdujo en Adobe Commerce 2.3.5 y ponía el CSP a disposición en `report-only mode` de forma predeterminada.  En Adobe Commerce 2.4.7 y versiones posteriores, el CSP está configurado en `restrict-mode` de forma predeterminada para las páginas de pago en las áreas de tienda y administración, y en el modo `report-only` para todas las demás páginas. El encabezado CSP correspondiente no contiene la palabra clave `unsafe-inline` dentro de la directiva `script-src` para páginas de pago. Además, solo se permiten scripts en línea en la lista blanca.
 
-Dado que el CSP se configura desde el servidor, en lugar de desde el administrador, la mayoría de los comerciantes necesitan la asistencia de un integrador de sistemas o desarrollador para configurarlo correctamente. Consulte [Políticas de seguridad de contenido](https://developer.adobe.com/commerce/php/development/security/content-security-policies/) en la _Guía para desarrolladores de Commerce PHP_.
+Dado que el CSP se configura desde el servidor, en lugar de desde el administrador, la mayoría de los comerciantes necesitan la asistencia de un integrador de sistemas o desarrollador para configurarlo correctamente. Consulte [Políticas de seguridad de contenido](https://developer.adobe.com/commerce/php/development/security/content-security-policies) en la _Guía para desarrolladores de Commerce PHP_.
 
 
 ## Informes
 
-De forma predeterminada, el CSP envía errores a la consola del explorador, pero se puede configurar para que recopile registros de errores mediante una solicitud HTTP. Además, hay varios servicios de terceros que puede utilizar para monitorizar, recopilar e informar de violaciones de CSP. Las infracciones de CSP se pueden notificar a un extremo para su recopilación agregando el URI del administrador o desde el archivo `config.xml` de un módulo personalizado.  Consulte [Configuración del URI de informe](https://developer.adobe.com/commerce/php/development/security/content-security-policies/#report-uri-configuration) en la _Guía para desarrolladores de extensiones Commerce PHP_.
+De forma predeterminada, el CSP envía errores a la consola del explorador, pero se puede configurar para que recopile registros de errores mediante una solicitud HTTP. Además, hay varios servicios de terceros que puede utilizar para monitorizar, recopilar e informar de violaciones de CSP. Las infracciones de CSP se pueden notificar a un extremo para su recopilación agregando el URI del administrador o desde el archivo `config.xml` de un módulo personalizado.  Consulte [Configuración del URI de informe](https://developer.adobe.com/commerce/php/development/security/content-security-policies#report-uri-configuration) en la _Guía para desarrolladores de extensiones Commerce PHP_.
 
 [URI de informe](https://report-uri.io/) es un servicio que supervisa las infracciones de CSP y muestra los resultados en un panel. Tanto los comerciantes como los desarrolladores pueden utilizar el servicio para recibir informes cada vez que se produzcan infracciones de CSP.

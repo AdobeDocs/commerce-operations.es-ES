@@ -20,9 +20,9 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: ab2a9ef6d4c3ed692f4a6a66323ab5e3d5c6673a
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: 405
+source-wordcount: 392
 ht-degree: 0%
 
 ---
@@ -45,9 +45,9 @@ Una vez instalado y configurado el barniz para que funcione con Commerce, las si
 
   Por ejemplo, cualquier cosa que haga en el Administrador de:
 
-   - **TIENDAS** > **Configuración** > **Configuración** > GENERAL > **General**
-   - **TIENDAS** > **Configuración** > **Configuración** > GENERAL > **Configuración de moneda**
-   - **TIENDAS** > **Configuración** > **Configuración** > GENERAL > **Almacenar direcciones de correo electrónico**
+  - **TIENDAS** > **Configuración** > **Configuración** > GENERAL > **General**
+  - **TIENDAS** > **Configuración** > **Configuración** > GENERAL > **Configuración de moneda**
+  - **TIENDAS** > **Configuración** > **Configuración** > GENERAL > **Almacenar direcciones de correo electrónico**
 
   Cuando Commerce detecta un cambio de este tipo, aparece un mensaje que le informa de que debe actualizar la caché.
 
@@ -61,7 +61,7 @@ Una vez instalado y configurado el barniz para que funcione con Commerce, las si
 
 ## Configuración de Commerce para depurar Barniz
 
-Commerce purga los hosts de Varnish después de configurar los hosts de Varnish mediante el comando [`magento setup:config:set`](https://experienceleague.adobe.com/es/docs/commerce-operations/tools/cli-reference/commerce-on-premises#setupconfigset).
+Commerce purga los hosts de Varnish después de configurar los hosts de Varnish mediante el comando [`magento setup:config:set`](/help/tools/reference/commerce-on-premises.md#setupconfigset).
 
 Puede usar el parámetro opcional `--http-cache-hosts` para especificar una lista separada por comas de hosts de Barnish y puertos de escucha. Configure todos los hosts de Varnish, independientemente de si tiene uno o varios. (No separe los hosts con caracteres de espacio.)
 

@@ -4,13 +4,13 @@ description: Aplique el parche ACSD-66404 para corregir el problema de Adobe Com
 feature: System
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 42bd5934782ca65b891a36f61102083356c92e59
+exl-id: d7ad3b11-aee6-4a26-8892-369fbfe6932e
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '362'
+source-wordcount: '380'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-66404: el trabajo de cron no puede borrar las tablas de registro de cambios debido a los límites de tamaño de transacción de [!DNL Galera Cluster]
 
@@ -53,7 +53,7 @@ El trabajo cron de `indexer_clean_all_changelogs` realiza la limpieza del regist
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
 * Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía [!DNL Quality Patches Tool]
-* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=es) en la guía Commerce en la infraestructura de la nube
+* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) en la guía Commerce en la infraestructura de la nube
 
 ## Lectura relacionada
 

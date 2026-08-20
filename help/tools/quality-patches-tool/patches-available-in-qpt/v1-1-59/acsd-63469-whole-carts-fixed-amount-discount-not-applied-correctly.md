@@ -5,9 +5,9 @@ feature: Price Rules
 role: Admin, Developer
 exl-id: fb6dee57-281e-4165-8b70-7ff5949eb677
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '391'
+source-wordcount: '414'
 ht-degree: 0%
 
 ---
@@ -39,11 +39,11 @@ Cuando se aplican varias reglas de **[!UICONTROL Fixed amount discount for whole
 1. Cree dos productos con un precio de 850 y 85 dólares y establezca sus precios especiales en 765 y 68 dólares, respectivamente.
 1. Cree dos **[!UICONTROL Cart Price Rules]** de la siguiente manera:
    * Regla 1
-      * **[!UICONTROL Conditions]**: para el producto de 850 $, establezca *Cantidad* en *igual o mayor que 2*
-      * **[!UICONTROL Actions]**: aplicar **[!UICONTROL Fixed amount discount for whole cart]** de *$153*
+     * **[!UICONTROL Conditions]**: para el producto de 850 $, establezca *Cantidad* en *igual o mayor que 2*
+     * **[!UICONTROL Actions]**: aplicar **[!UICONTROL Fixed amount discount for whole cart]** de *$153*
    * Regla 2
-      * **[!UICONTROL Conditions]**: para el producto de 85 $, establezca *Cantidad* en *igual o mayor que 2*
-      * **[!UICONTROL Actions]**: aplicar **[!UICONTROL Fixed amount discount for whole cart]** de *$14*
+     * **[!UICONTROL Conditions]**: para el producto de 85 $, establezca *Cantidad* en *igual o mayor que 2*
+     * **[!UICONTROL Actions]**: aplicar **[!UICONTROL Fixed amount discount for whole cart]** de *$14*
 1. Agregue ambos productos al carro de compras, cada uno con una cantidad de 2.
 
 <u>Resultados esperados</u>:
@@ -59,7 +59,7 @@ El descuento aplicado en el carro de compras es de 41 $.
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
 * Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía [!DNL Quality Patches Tool].
-* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=es) en la guía Commerce en la infraestructura de la nube.
+* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) en la guía Commerce en la infraestructura de la nube.
 
 ## Pasos adicionales necesarios tras la instalación del parche
 

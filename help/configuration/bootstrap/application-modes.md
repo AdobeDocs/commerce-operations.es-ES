@@ -2,9 +2,9 @@
 title: Modos de aplicación
 description: La aplicación de Commerce puede funcionar en diferentes modos según sus necesidades. Vea una lista detallada de los modos de aplicación disponibles.
 exl-id: a2a71f43-682f-4fa4-940a-1f6a4d441c41
-source-git-commit: b1cfa656e3393bd47fb2c1557ff75db3ec6c6a67
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '776'
+source-wordcount: '778'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Consulte [Establecer el modo de operación](../cli/set-mode.md) para obtener inf
 
 Debido al sistema de archivos de solo lectura, existe una estricta restricción contra el cambio de modos en entornos de nube remotos y el Soporte técnico de Adobe Commerce no puede anularlo. No intente cambiar los modos modificando el archivo `app/etc/env.php` porque el paquete `ece-tools` sobrescribe el archivo basándose en varios orígenes de configuración.
 
-Adobe Commerce en la infraestructura en la nube ejecuta automáticamente la aplicación en modo _mantenimiento_ durante una implementación, lo que desconecta el sitio hasta que se completa la implementación. De lo contrario, la aplicación permanecerá en modo _producción_. Consulte [Proceso de implementación](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/process.html?lang=es#deploy-phase) en la guía de _Commerce en infraestructura de nube_.
+Adobe Commerce en la infraestructura en la nube ejecuta automáticamente la aplicación en modo _mantenimiento_ durante una implementación, lo que desconecta el sitio hasta que se completa la implementación. De lo contrario, la aplicación permanecerá en modo _producción_. Consulte [Proceso de implementación](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/develop/deploy/process#deploy-phase) en la guía de _Commerce en infraestructura de nube_.
 
 Si usa Cloud Docker para Commerce como herramienta de desarrollo, puede implementar su proyecto de infraestructura en la nube en un entorno de Docker en modo _desarrollador_, pero el rendimiento es más lento debido a las operaciones de sincronización de archivos adicionales. Consulte [Implementar el entorno de Docker](https://developer.adobe.com/commerce/cloud-tools/docker/deploy/#launch-mode) en la guía de _Cloud Docker para Commerce_.
 
@@ -78,7 +78,7 @@ El modo _mantenimiento_ limita o impide el acceso a un sitio durante las mejoras
 
 Puede crear una [página de mantenimiento personalizada](../../upgrade/troubleshooting/maintenance-mode-options.md), habilitar y deshabilitar manualmente el modo de mantenimiento y configurar el modo de mantenimiento para permitir que los visitantes de direcciones IP autorizadas vean la tienda normalmente. Consulte [habilitar y deshabilitar el modo de mantenimiento](../../installation/tutorials/maintenance-mode.md) en la _Guía de instalación_.
 
-Si utiliza Commerce en la infraestructura de la nube, la aplicación de Commerce se ejecuta en modo de mantenimiento durante la fase de implementación. Cuando la implementación se completa correctamente, la aplicación de Commerce vuelve a ejecutarse en el modo de producción. Consulte [Vínculos de implementación](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices.html?lang=es#phase-5%3A-deployment-hooks) en la guía de _Commerce en infraestructura de nube_.
+Si utiliza Commerce en la infraestructura de la nube, la aplicación de Commerce se ejecuta en modo de mantenimiento durante la fase de implementación. Cuando la implementación se completa correctamente, la aplicación de Commerce vuelve a ejecutarse en el modo de producción. Consulte [Vínculos de implementación](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/develop/deploy/best-practices#phase-5%3A-deployment-hooks) en la guía de _Commerce en infraestructura de nube_.
 
 En modo de mantenimiento:
 

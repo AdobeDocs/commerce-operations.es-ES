@@ -5,16 +5,16 @@ feature: Staging
 role: Admin, Developer
 exl-id: 6e2e598b-72f1-4f00-a989-3f75bf65f8f0
 type: Troubleshooting
-source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '376'
+source-wordcount: '399'
 ht-degree: 0%
 
 ---
 
 # ACSD-51358: faltan actualizaciones programadas
 
-El parche ACSD-51358 corrige el problema en el que los cambios en la actualización programada sin fecha de finalización conducen a eliminar otras actualizaciones programadas en la misma entidad. Esta revisión está disponible cuando está instalado [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.35. El ID del parche es ACSD-51358. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.7.
+El parche ACSD-51358 corrige el problema en el que los cambios en la actualización programada sin fecha de finalización conducen a eliminar otras actualizaciones programadas en la misma entidad. Esta revisión está disponible cuando está instalado [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.35. El ID del parche es ACSD-51358. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.7.
 
 ## Productos y versiones afectados
 
@@ -53,13 +53,13 @@ La (*actualización 2*) se quitó de la lista **[!UICONTROL schedule update]** c
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
 * Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía [!DNL Quality Patches Tool].
-* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=es) en la guía Commerce en la infraestructura de la nube.
+* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) en la guía Commerce en la infraestructura de la nube.
 
 ## Lectura relacionada
 
 Para obtener más información sobre [!DNL Quality Patches Tool], consulte:
 
-* [[!DNL Quality Patches Tool] publicado: nueva herramienta para autodistribuir parches de calidad](https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) en la base de conocimiento de soporte.
+* [[!DNL Quality Patches Tool] publicado: nueva herramienta para autodistribuir parches de calidad](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) en la base de conocimiento de soporte.
 * [Compruebe si el parche está disponible para su problema de Adobe Commerce usando [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) en la guía [!UICONTROL Quality Patches Tool].
 
 

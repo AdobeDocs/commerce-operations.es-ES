@@ -2,7 +2,7 @@
 title: Consumidores de cola de mensajes
 description: Obtenga información acerca de los consumidores de colas de mensajes de Adobe Commerce, incluidas las funciones y las opciones de configuración del sistema asociadas a ellos.
 exl-id: 7fd7ab3f-581f-493c-956c-731f111d1b14
-source-git-commit: f9a135fc63574ccbecd3f564a87fc5c4ac03f009
+source-git-commit: b378f6da50e40b1868ae759cc7f3523a7e3ced4b
 workflow-type: tm+mt
 source-wordcount: '1125'
 ht-degree: 0%
@@ -16,7 +16,7 @@ La siguiente tabla identifica a todos los consumidores de colas de mensajes, des
 | Consumidor y descripción | Adobe Commerce | Adobe Commerce con B2B | Magento Open Source |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------|-------------------------|---------------------|
 | `async.operations.all` | + | + | + |
-| Crea mensajes para cada tarea individual de una [operación masiva](https://developer.adobe.com/commerce/php/development/components/message-queues/bulk-operations/), como importar o exportar artículos, cambiar precios a escala masiva y asignar productos a un almacén. Necesario cuando la opción [**[!UICONTROL Admin bulk operations]**](https://experienceleague.adobe.com/es/docs/commerce-admin/config/catalog/inventory#admin-bulk-operations) está establecida en **[!UICONTROL Run asynchronously]**&#x200B;en las opciones de configuración del sistema de administración. |                |                         |                     |
+| Crea mensajes para cada tarea individual de una [operación masiva](https://developer.adobe.com/commerce/php/development/components/message-queues/bulk-operations), como importar o exportar artículos, cambiar precios a escala masiva y asignar productos a un almacén. Necesario cuando la opción [**[!UICONTROL Admin bulk operations]**](https://experienceleague.adobe.com/es/docs/commerce-admin/config/catalog/inventory#admin-bulk-operations) está establecida en **[!UICONTROL Run asynchronously]**&#x200B;en las opciones de configuración del sistema de administración. |                |                         |                     |
 | `codegeneratorProcessor` | + | + | + |
 | Genera cupones de forma asíncrona en segundo plano. Necesario para utilizar la característica [generación de cupones por lotes](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-coupon.html?lang=es#method-2%3A-generate-a-batch-of-coupons). |                |                         |                     |
 | `commerce.eventing.event.publish` | + | + |                     |
@@ -52,7 +52,7 @@ La siguiente tabla identifica a todos los consumidores de colas de mensajes, des
 | `negotiableQuotePriceUpdate` |                | + |                     |
 | Actualiza los precios de las ofertas negociables. Necesario cuando la opción [**[!UICONTROL Quotes]**](https://experienceleague.adobe.com/es/docs/commerce-admin/b2b/quotes/quotes) está habilitada en las opciones de configuración del sistema de administración. |                |                         |                     |
 | `placeOrderProcessor` | + | + |                     |
-| [procesa de forma asíncrona pedidos](https://developer.adobe.com/commerce/php/module-reference/module-async-order/), que marcan los pedidos como recibidos, los coloca en la cola de mensajes y los procesa en orden de entrada y de salida. Se considera una [práctica recomendada](../../implementation-playbook/best-practices/maintenance/order-processing-configuration.md) para mejorar el número de pedidos que se pueden procesar porque los clientes no necesitan esperar a que se completen los procesos back-end antes de ver un mensaje de éxito. |                |                         |                     |
+| [procesa de forma asíncrona pedidos](https://developer.adobe.com/commerce/php/module-reference/module-async-order), que marcan los pedidos como recibidos, los coloca en la cola de mensajes y los procesa en orden de entrada y de salida. Se considera una [práctica recomendada](../../implementation-playbook/best-practices/maintenance/order-processing-configuration.md) para mejorar el número de pedidos que se pueden procesar porque los clientes no necesitan esperar a que se completen los procesos back-end antes de ver un mensaje de éxito. |                |                         |                     |
 | `product_action_attribute.update` | + | + | + |
 | Escribe de forma asíncrona cambios en los atributos del producto en la base de datos después de usar el administrador para [realizar actualizaciones](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/bulk-product-attribute-update.html?lang=es). |                |                         |                     |
 | `product_action_attribute.website.update` | + | + | + |

@@ -2,9 +2,9 @@
 title: Cómo acceder a  [!DNL Site-Wide Analysis Tool]
 description: Obtenga información sobre cómo acceder al panel de herramientas de análisis de todo el sitio desde el Panel de administración de Adobe Commerce. Descubra los permisos de usuario y los requisitos de funciones.
 exl-id: b691fb2c-8d66-4cf9-8612-bbcb4df5b95f
-source-git-commit: d75d8fe87b5bf5cf5cd1d5a15371a456b82f18db
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '519'
+source-wordcount: '509'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ Para la función personalizada que necesita acceso de [!DNL Site-Wide Analysis T
 
 >[!NOTE]
 >
->Si ha comprobado que la cuenta de usuario tiene permiso para acceder a [!DNL Site-Wide Analysis Tool] y el usuario recibe un error 403 al intentar acceder a la herramienta desde [!UICONTROL Admin], su instancia de Adobe Commerce en la infraestructura en la nube podría tener habilitado el control de acceso HTTP. El panel [!DNL Site-Wide Analysis Tool] NO es compatible si tiene habilitada la autenticación HTTP. Para obtener más información sobre cómo resolver este problema, consulte nuestro [artículo de asistencia](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/403-errors-when-accessing-site-wide-analysis-tool-on-magento).
+>Si ha comprobado que la cuenta de usuario tiene permiso para acceder a [!DNL Site-Wide Analysis Tool] y el usuario recibe un error 403 al intentar acceder a la herramienta desde [!UICONTROL Admin], su instancia de Adobe Commerce en la infraestructura en la nube podría tener habilitado el control de acceso HTTP. El panel [!DNL Site-Wide Analysis Tool] NO es compatible si tiene habilitada la autenticación HTTP. Para obtener más información sobre cómo resolver este problema, consulte nuestro [artículo de asistencia](https://experienceleague.adobe.com/es/docs/experience-cloud-kcs/kbarticles/ka-26852).
 
 ### Paso 2: Acceso a [!DNL Site-Wide Analysis Tool]
 

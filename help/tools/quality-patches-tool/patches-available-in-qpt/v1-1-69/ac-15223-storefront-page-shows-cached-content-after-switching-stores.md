@@ -4,13 +4,13 @@ description: Aplique el parche de AC-15223 para solucionar el problema de Adobe 
 feature: Cache
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: ea3584e180acad1765f5b8105c45170725c71269
+exl-id: 22257e94-8d59-4221-bf79-1d63b5600498
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '316'
+source-wordcount: '333'
 ht-degree: 0%
 
 ---
-
 
 # AC-15223: La página de la tienda muestra el contenido almacenado en caché después de cambiar de tienda
 
@@ -53,7 +53,7 @@ El nombre de la vista de tienda no cambia en el encabezado hasta que la caché s
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
 * Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía [!DNL Quality Patches Tool].
-* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=es) en la guía Commerce en la infraestructura de la nube.
+* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) en la guía Commerce en la infraestructura de la nube.
 
 ## Lectura relacionada
 

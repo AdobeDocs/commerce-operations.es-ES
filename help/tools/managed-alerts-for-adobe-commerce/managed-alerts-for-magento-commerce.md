@@ -4,9 +4,9 @@ description: Si es cliente de Adobe Commerce en una infraestructura en la nube, 
 feature: Observability, Support, Tools and External Services
 role: Admin
 exl-id: 3fc4b07f-4e27-4833-97a9-cf9741ae5648
-source-git-commit: 4560e7d000ad8333c3089b8b5e8ffd25f5d31b67
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '587'
+source-wordcount: '590'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Hemos configurado paneles y alertas clave para ayudarle a comprender cuándo su 
 
 >[!NOTE]
 >
->Si las alertas administradas para la directiva de alertas de Adobe Commerce no están disponibles, podría deberse a que esta cuenta se ha creado recientemente o a que [!DNL New Relic] se ha configurado recientemente. Todos los martes se ejecuta un proceso para agregar la directiva de alerta a esas cuentas. La directiva de alertas debe estar disponible el día siguiente a la ejecución del siguiente proceso. Si la directiva aún no se encuentra, [envíe una solicitud de soporte técnico de Adobe Commerce](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case) e incluya su ID de proyecto.
+>Si las alertas administradas para la directiva de alertas de Adobe Commerce no están disponibles, podría deberse a que esta cuenta se ha creado recientemente o a que [!DNL New Relic] se ha configurado recientemente. Todos los martes se ejecuta un proceso para agregar la directiva de alerta a esas cuentas. La directiva de alertas debe estar disponible el día siguiente a la ejecución del siguiente proceso. Si la directiva aún no se encuentra, [envíe una solicitud de soporte técnico de Adobe Commerce](https://experienceleague.adobe.com/es/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case) e incluya su ID de proyecto.
 
 Consulte a continuación en la tabla los vínculos a los artículos de la BC que proporcionan pasos para la resolución de problemas de estas alertas:
 

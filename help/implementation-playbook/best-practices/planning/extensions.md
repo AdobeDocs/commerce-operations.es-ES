@@ -4,7 +4,7 @@ description: Obtenga información sobre cómo evitar problemas de rendimiento ca
 role: Admin
 feature: Best Practices, Extensions
 exl-id: 95d2c7bf-fd2f-4c98-8293-96d69b86341f
-source-git-commit: f9a135fc63574ccbecd3f564a87fc5c4ac03f009
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
 source-wordcount: '246'
 ht-degree: 0%
@@ -36,5 +36,5 @@ Las extensiones de terceros de Adobe Commerce (módulos) pueden causar varios pr
 
 - [Prácticas recomendadas para planificar las actualizaciones](../../../upgrade/prepare/best-practices.md)
 - Uso de extensiones de terceros con Adobe Commerce en infraestructuras en la nube
-   - [Tecnologías y requisitos: desarrollo y pruebas](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/develop/overview#cloud-req-devtest)
-   - [¿Por qué probar completamente en integración y ensayo?](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/launch/overview#why-test-fully-in-integration-staging-and-production)
+  - [Tecnologías y requisitos: desarrollo y pruebas](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/develop/overview#cloud-req-devtest)
+  - [¿Por qué probar completamente en integración y ensayo?](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/launch/overview#why-test-fully-in-integration-staging-and-production)

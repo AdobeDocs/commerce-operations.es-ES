@@ -5,9 +5,9 @@ feature: Catalog Management, Media, REST, Products, Cache
 role: Admin, Developer
 type: Troubleshooting
 exl-id: 1eaa8ed0-fde6-47c4-9339-8f5e7bce7b19
-source-git-commit: f82dcd6c76ba3512e59275c26815b6bb89e53733
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '361'
+source-wordcount: '380'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ La imagen se duplica con un nuevo nombre (por ejemplo, wb04-blue-1.jpg), lo que 
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
 * Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía [!DNL Quality Patches Tool].
-* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=es) en la guía Commerce en la infraestructura de la nube.
+* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) en la guía Commerce en la infraestructura de la nube.
 
 ## Lectura relacionada
 

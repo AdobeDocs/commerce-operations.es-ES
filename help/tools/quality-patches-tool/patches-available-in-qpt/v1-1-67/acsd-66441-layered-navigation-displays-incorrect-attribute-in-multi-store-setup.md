@@ -5,9 +5,9 @@ feature: Catalog Management, Search
 role: Admin, Developer
 type: Troubleshooting
 exl-id: d61c6b9e-bbcf-4285-b97b-b1fee67048e5
-source-git-commit: 515e6d1f00c910455a2ffddf70c4a450184e7e81
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '411'
 ht-degree: 0%
 
 ---
@@ -58,7 +58,7 @@ La navegación por capas muestra las opciones de atributos (tamaños) de los pro
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
 * Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía [!DNL Quality Patches Tool].
-* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=es) en la guía Commerce en la infraestructura de la nube.
+* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) en la guía Commerce en la infraestructura de la nube.
 
 ## Lectura relacionada
 

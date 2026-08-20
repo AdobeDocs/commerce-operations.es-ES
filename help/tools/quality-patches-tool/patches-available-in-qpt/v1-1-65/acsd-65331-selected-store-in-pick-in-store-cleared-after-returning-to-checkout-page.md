@@ -5,9 +5,9 @@ feature: Inventory
 role: Admin, Developer
 type: Troubleshooting
 exl-id: 10aaf898-feca-4485-90f6-6b3a9ea013b2
-source-git-commit: dc5df9e918adffe8d6901478a676d9da36b33bcc
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '460'
+source-wordcount: '461'
 ht-degree: 0%
 
 ---
@@ -79,7 +79,7 @@ El paso de envío comienza a cargarse y redirige a **[!UICONTROL Pick In Store]*
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
 * Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía [!DNL Quality Patches Tool].
-* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=es) en la guía Commerce en la infraestructura de la nube.
+* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) en la guía Commerce en la infraestructura de la nube.
 
 ## Lectura relacionada
 

@@ -2,9 +2,9 @@
 title: Cómo funcionan los parches
 description: Obtenga información sobre los distintos tipos de parches para Adobe Commerce y cómo funcionan.
 exl-id: d7072ed4-7d51-41fe-881a-aae3b2000b55
-source-git-commit: c8a20ad1b0b57724f389cfa5c63f6ae542758c2b
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '533'
+source-wordcount: '592'
 ht-degree: 0%
 
 ---
@@ -98,4 +98,4 @@ Puede aplicar parches utilizando cualquiera de los siguientes métodos:
 
 >[!NOTE]
 >
->Para aplicar un parche a un proyecto de Adobe Commerce en la nube, consulte [Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=es) en la guía de _Commerce en la nube_.
+>Para aplicar un parche a un proyecto de Adobe Commerce en la nube, consulte [Aplicar parches](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) en la guía de _Commerce en la nube_.

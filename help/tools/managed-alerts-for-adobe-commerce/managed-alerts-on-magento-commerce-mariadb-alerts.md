@@ -4,9 +4,9 @@ description: Este artículo proporciona pasos para solucionar problemas cuando r
 feature: Cache, Observability, Support, Tools and External Services
 role: Admin
 exl-id: d85af2e1-090c-4ad7-a898-3a3c4a5efe3b
-source-git-commit: 18c8e466bf15957b73cd3cddda8ff078ebeb23b0
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '518'
+source-wordcount: '582'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Recibirá una alerta administrada en [!DNL New Relic] si se ha registrado en [Al
 **Hacer!**
 
 * Anule cualquier implementación programada hasta que se borre esta alerta.
-* Ponga su sitio en modo de mantenimiento inmediatamente si su sitio no responde o se vuelve completamente insensible. Para ver los pasos, consulte [Habilitar o deshabilitar el modo de mantenimiento](https://experienceleague.adobe.com/es/docs/commerce-operations/installation-guide/tutorials/maintenance-mode) en la Guía de instalación de Commerce. Asegúrese de añadir su IP a la lista de direcciones IP exentas para asegurarse de que aún puede acceder al sitio para solucionar problemas. Para ver los pasos, consulte [Mantener la lista de direcciones IP exentas](https://experienceleague.adobe.com/es/docs/commerce-operations/installation-guide/tutorials/maintenance-mode#maintain-the-list-of-exempt-ip-addresses).
+* Ponga su sitio en modo de mantenimiento inmediatamente si su sitio no responde o se vuelve completamente insensible. Para ver los pasos, consulte [Habilitar o deshabilitar el modo de mantenimiento](/help/installation/tutorials/maintenance-mode.md) en la Guía de instalación de Commerce. Asegúrese de añadir su IP a la lista de direcciones IP exentas para asegurarse de que aún puede acceder al sitio para solucionar problemas. Para ver los pasos, consulte [Mantener la lista de direcciones IP exentas](/help/installation/tutorials/maintenance-mode.md#maintain-the-list-of-exempt-ip-addresses).
 * Finalice los scripts, como las importaciones, que puedan ser la causa de la alerta si el rendimiento del sitio se ve afectado.
 
 **¡No!**
@@ -44,7 +44,7 @@ Recibirá una alerta administrada en [!DNL New Relic] si se ha registrado en [Al
 
 Si recibe una alerta de consultas críticas de DML, comience en el paso uno. Si recibe una alerta de advertencia de consultas DML, comience en el paso dos.
 
-1. Compruebe si existe un ticket de asistencia de Adobe Commerce. Para ver los pasos, consulte nuestra base de conocimiento [Seguimiento de los tickets de asistencia](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#track-support-case). Es posible que el equipo de asistencia haya recibido una alerta de umbral [!DNL New Relic], haya creado un ticket y haya empezado a trabajar en el problema. Si no existe ningún ticket, cree uno. El ticket debe tener la siguiente información:
+1. Compruebe si existe un ticket de asistencia de Adobe Commerce. Para ver los pasos, consulte nuestra base de conocimiento [Seguimiento de los tickets de asistencia](https://experienceleague.adobe.com/es/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#track-support-case). Es posible que el equipo de asistencia haya recibido una alerta de umbral [!DNL New Relic], haya creado un ticket y haya empezado a trabajar en el problema. Si no existe ningún ticket, cree uno. El ticket debe tener la siguiente información:
    * Motivo del contacto: seleccione **[!UICONTROL New Relic MariaDB alert received]**.
    * Descripción de la alerta.
    * [[!DNL New Relic] Vínculo de incidente](https://docs.newrelic.com/docs/alerts-applied-intelligence/new-relic-alerts/alert-incidents/view-violation-event-details-incidents). Esto se incluye en [Alertas administradas para Adobe Commerce](managed-alerts-for-magento-commerce.md).

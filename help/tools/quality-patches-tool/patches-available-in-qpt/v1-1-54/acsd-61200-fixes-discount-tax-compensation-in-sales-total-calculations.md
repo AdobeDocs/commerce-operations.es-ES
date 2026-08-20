@@ -5,10 +5,10 @@ feature: Reporting, Taxes
 role: Admin, Developer
 exl-id: eb908827-de29-4b2c-b094-b5db0931cd52
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '372'
-ht-degree: 0%
+source-wordcount: '451'
+ht-degree: 13%
 
 ---
 
@@ -66,10 +66,10 @@ Los datos del pedido de ventas y del informe de cupones no coinciden porque *[!U
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
 - Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía [!DNL Quality Patches Tool].
-- Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=es) en la guía Commerce en la infraestructura de la nube.
+- Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) en la guía Commerce en la infraestructura de la nube.
 
 ## Lectura relacionada
 
 Para obtener más información sobre [!DNL Quality Patches Tool], consulte:
 
-[[!DNL Quality Patches Tool] publicado: una nueva herramienta para aplicar parches de calidad de autoservicio](https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) en la guía Herramientas.
+[[!DNL Quality Patches Tool] publicado: una nueva herramienta para aplicar parches de calidad de autoservicio](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) en la guía Herramientas.
