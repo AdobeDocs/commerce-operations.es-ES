@@ -2,7 +2,7 @@
 title: Configuración avanzada
 description: Obtenga información sobre la configuración avanzada de Adobe Commerce. Descubra instrucciones paso a paso y requisitos de configuración.
 exl-id: eb9ca9fa-b099-4e77-ab33-16cd0f382ffe
-source-git-commit: f9a135fc63574ccbecd3f564a87fc5c4ac03f009
+source-git-commit: b378f6da50e40b1868ae759cc7f3523a7e3ced4b
 workflow-type: tm+mt
 source-wordcount: '1192'
 ht-degree: 0%
@@ -36,7 +36,7 @@ Por ejemplo, si está ejecutando un perfil similar a B2B Medium, puede anular el
 
 Un gran número de SKU de producto, sitios web, grupos de clientes o catálogos compartidos afectará al tiempo de ejecución de los indexadores de Precio de producto y Regla de catálogo. Esto se debe a que, de forma predeterminada, todos los sitios web se asignan a todos los grupos de clientes (catálogos compartidos).
 
-Para reducir el tiempo de indexación, puede [excluir ciertos sitios web de los grupos de clientes (catálogos compartidos)](https://developer.adobe.com/commerce/php/development/components/indexing/optimization/#customer-group-limitations-by-websites).
+Para reducir el tiempo de indexación, puede [excluir ciertos sitios web de los grupos de clientes (catálogos compartidos)](https://developer.adobe.com/commerce/php/development/components/indexing/optimization#customer-group-limitations-by-websites).
 
 ## Configuración de Redis
 

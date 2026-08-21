@@ -3,9 +3,9 @@ title: La ficha [!UICONTROL Summary]
 description: Obtenga información acerca de la ficha [!UICONTROL Summary] de  [!DNL Observation for Adobe Commerce].
 exl-id: b07ed898-a211-4353-a1d4-1b71d4898b93
 feature: Configuration, Observability
-source-git-commit: 818c25db0442f5288191ee414b7e2ab07c4cbedf
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '2636'
+source-wordcount: '2640'
 ht-degree: 0%
 
 ---
@@ -72,7 +72,7 @@ El **[!UICONTROL Alerts during timeframe]** muestra todas las alertas, incluida 
 
 ![Uso de CPU](../../assets/tools/cpu-usage.jpg)
 
-Si el marco **[!UICONTROL CPU Usage]** está en blanco, significa que la aplicación de infraestructura de [!DNL New Relic] no está habilitada. Si el sitio está en Inicio, no verá esta información. Si su sitio está en Pro, abra un [ticket de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=es) para que [!DNL New Relic Infrastructure] esté habilitado para su sitio.
+Si el marco **[!UICONTROL CPU Usage]** está en blanco, significa que la aplicación de infraestructura de [!DNL New Relic] no está habilitada. Si el sitio está en Inicio, no verá esta información. Si su sitio está en Pro, abra un [ticket de asistencia](https://experienceleague.adobe.com/es/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide) para que [!DNL New Relic Infrastructure] esté habilitado para su sitio.
 
 ## [!UICONTROL Average Response Time]
 

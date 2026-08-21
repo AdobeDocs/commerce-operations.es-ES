@@ -4,13 +4,13 @@ description: Aplique el parche ACSD-66506 para corregir el problema de Adobe Com
 feature: B2B
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 8f77101832ccfb415d040c202f0fc7221f97419a
+exl-id: db08c58b-7e14-4bd8-af85-8f63aba9051b
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '425'
+source-wordcount: '446'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-66506: El error del servidor se produce después de eliminar y reasignar productos de catálogo compartido
 
@@ -61,7 +61,7 @@ Se produce un error: *El producto solicitado no existe. Compruebe el producto y 
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
 * Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía [!DNL Quality Patches Tool].
-* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=es) en la guía Commerce en la infraestructura de la nube.
+* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) en la guía Commerce en la infraestructura de la nube.
 
 ## Lectura relacionada
 

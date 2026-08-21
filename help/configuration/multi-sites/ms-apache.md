@@ -2,9 +2,9 @@
 title: Configuración de varios sitios web con Apache
 description: Siga este tutorial para configurar varios sitios web con Apache.
 exl-id: 4c6890b3-f15a-46f2-a3e8-6f2a9b57a6ad
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '523'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Si es necesario, copie el script de punto de entrada `index.php` existente para 
 
   Es posible que se requieran tareas adicionales para implementar varios sitios web en un entorno alojado; póngase en contacto con su proveedor de alojamiento para obtener más información.
 
-  Se requieren tareas adicionales para configurar Adobe Commerce en la infraestructura en la nube. Después de completar las tareas que se describen en este tema, vea [Configurar varios sitios web o tiendas](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html?lang=es) en la guía _Commerce en infraestructura de nube_.
+  Se requieren tareas adicionales para configurar Adobe Commerce en la infraestructura en la nube. Después de completar las tareas que se describen en este tema, vea [Configurar varios sitios web o tiendas](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/configure-store/multiple-sites) en la guía _Commerce en infraestructura de nube_.
 
 - Utiliza un host virtual por sitio web; el archivo de configuración del host virtual es `/etc/httpd/httpd.conf`
 
@@ -28,8 +28,8 @@ Si es necesario, copie el script de punto de entrada `index.php` existente para 
 - El software de Commerce está instalado en `/var/www/html/magento2`
 - Tiene dos sitios web distintos del predeterminado:
 
-   - `french.mysite.mg` con código de sitio web `french` y código de vista de tienda `fr`
-   - `german.mysite.mg` con código de sitio web `german` y código de vista de tienda `de`
+  - `french.mysite.mg` con código de sitio web `french` y código de vista de tienda `fr`
+  - `german.mysite.mg` con código de sitio web `german` y código de vista de tienda `de`
 
 ## Guía para configurar varios sitios web con Apache
 
@@ -110,7 +110,7 @@ A menos que tenga DNS configurado para las direcciones URL de las tiendas, debe 
 >[!INFO]
 >
 >- Es posible que se requieran tareas adicionales para implementar varios sitios web en un entorno alojado; póngase en contacto con su proveedor de alojamiento para obtener más información.
->- Se requieren tareas adicionales para configurar Adobe Commerce en la infraestructura en la nube. Consulte [Configurar varios sitios web o tiendas en la nube](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html?lang=es) en la guía _Commerce en la infraestructura en la nube_.
+>- Se requieren tareas adicionales para configurar Adobe Commerce en la infraestructura en la nube. Consulte [Configurar varios sitios web o tiendas en la nube](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/configure-store/multiple-sites) en la guía _Commerce en la infraestructura en la nube_.
 
 ### Resolución de problemas
 

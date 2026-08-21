@@ -4,13 +4,13 @@ description: Aplique el parche ACSD-67264 para corregir el paquete de Adobe Comm
 feature: Page Content, Products
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 9b6794366ba552d86cdfc6a3d6f699c307fcd8f6
+exl-id: 783271ba-176c-4542-8dd8-82bc029ea453
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '331'
+source-wordcount: '350'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-67264: diseños de página de producto descargables y agrupados incoherentes entre dispositivos
 
@@ -54,7 +54,7 @@ La PDP del producto del paquete se procesa con espacios aleatorios.
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
 * Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía [!DNL Quality Patches Tool]
-* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=es) en la guía Commerce en la infraestructura de la nube
+* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) en la guía Commerce en la infraestructura de la nube
 
 ## Lectura relacionada
 

@@ -3,9 +3,9 @@ title: Información general de implementación
 description: Obtenga información sobre las estrategias de implementación para la aplicación de Commerce.
 feature: Configuration, Deploy
 exl-id: d5ed6fb3-2dd2-49df-802b-6d712ecd9ccf
-source-git-commit: dcc283b901917e3681863370516771763ae87462
+source-git-commit: b378f6da50e40b1868ae759cc7f3523a7e3ced4b
 workflow-type: tm+mt
-source-wordcount: '804'
+source-wordcount: '831'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ Utilizamos los siguientes términos para describir los sistemas implicados en la
 
 - **Sistema de ensayo**—_Opcional_. Si lo desea, puede configurar un sistema de ensayo para utilizarlo en las pruebas finales de todo el código integrado, incluidas las pruebas de aceptación de usuarios (UAT). Configure un sistema de ensayo del mismo modo que configura un sistema de producción. Excepto por el hecho de que el ensayo no es su tienda en directo y no procesa pedidos de clientes, es idéntico al de producción.
 
-- **Sistema de producción**—Su tienda en vivo. Aquí debe realizar cambios mínimos directos en la configuración y, desde luego, nada que no se haya probado en una instancia de ensayo. Si es posible, realice cambios de configuración con [Parches de datos](https://developer.adobe.com/commerce/php/development/components/declarative-schema/patches/) que se hayan probado en una instancia de ensayo/desarrollo.
+- **Sistema de producción**—Su tienda en vivo. Aquí debe realizar cambios mínimos directos en la configuración y, desde luego, nada que no se haya probado en una instancia de ensayo. Si es posible, realice cambios de configuración con [Parches de datos](https://developer.adobe.com/commerce/php/development/components/declarative-schema/patches) que se hayan probado en una instancia de ensayo/desarrollo.
 
 ## Otros métodos de implementación
 

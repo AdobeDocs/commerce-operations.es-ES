@@ -4,13 +4,13 @@ description: Aplique el parche ACSD-58108 para corregir el problema de Adobe Com
 feature: Orders, System
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 26009fee51fb81e2517ad09319bac1190d127564
+exl-id: 1195e1c3-575c-48d6-8a10-c300f9bbb84a
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: '388'
 ht-degree: 0%
 
 ---
-
 
 # ACSD-58108: Se producen errores de SQL en la extensión del módulo personalizado de cuadrícula de orden debido a la falta del nombre de la tabla de unión
 
@@ -56,7 +56,7 @@ Se produce un error al aplicar filtros en la cuadrícula de orden.
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
 * Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía [!DNL Quality Patches Tool].
-* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=es) en la guía Commerce en la infraestructura de la nube.
+* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) en la guía Commerce en la infraestructura de la nube.
 
 ## Lectura relacionada
 

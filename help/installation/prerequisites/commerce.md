@@ -2,9 +2,9 @@
 title: Obtener el software de Adobe Commerce
 description: Obtenga información sobre cómo obtener el software de Adobe Commerce mediante Composer, compruebe la compatibilidad de la extensión y elija la distribución correcta para la instalación.
 exl-id: 7a769d5b-5397-4572-8db5-7602068e6aad
-source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '452'
+source-wordcount: '443'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Usted está entre los 240.000 comerciantes de todo el mundo que confían en nues
 
 ## Cómo obtener el software
 
-Compruebe la disponibilidad y compatibilidad de las extensiones creadas por Adobe y los servicios de Commerce para Adobe Commerce y Magento Open Source en nuestra [página de disponibilidad del producto](https://experienceleague.adobe.com/es/docs/commerce-operations/release/product-availability).
+Compruebe la disponibilidad y compatibilidad de las extensiones creadas por Adobe y los servicios de Commerce para Adobe Commerce y Magento Open Source en nuestra [página de disponibilidad del producto](/help/release/product-availability.md).
 
 >[!NOTE]
 >

@@ -5,16 +5,16 @@ feature: Shopping Cart, Price Rules
 role: Admin, Developer
 exl-id: 0fb7a988-d391-49e5-a59d-62315a16132c
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '474'
+source-wordcount: '495'
 ht-degree: 0%
 
 ---
 
 # ACSD-61553: [!UICONTROL Cart Price Rule] se calcula incorrectamente cuando se aplican varios descuentos con diferentes prioridades
 
-El parche ACSD-61553 corrige el problema en el que [!UICONTROL Cart Price Rule] se calcula incorrectamente cuando se aplican varios descuentos con diferentes prioridades. Esta revisión está disponible cuando está instalado [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.53. El ID del parche es ACSD-61553. Este problema está programado para solucionarse en Adobe Commerce 2.4.8.
+El parche ACSD-61553 corrige el problema en el que [!UICONTROL Cart Price Rule] se calcula incorrectamente cuando se aplican varios descuentos con diferentes prioridades. Esta revisión está disponible cuando está instalado [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.53. El ID del parche es ACSD-61553. Este problema está programado para solucionarse en Adobe Commerce 2.4.8.
 
 ## Productos y versiones afectados
 
@@ -45,32 +45,32 @@ Adobe Commerce (todos los métodos de implementación) 2.4.5 - 2.4.6-p8
    Escenario 01
 
        Regla A
-       Prioridad: 1
-       Se ha aplicado un descuento por cantidad máxima a: 1
-       
-       Regla B
-       Prioridad: 0
-       Se ha aplicado el descuento máximo en cantidad a: 0
+     Prioridad: 1
+     Se ha aplicado el descuento por cantidad máxima a: 1
+     
+     Regla B
+     Prioridad: 0
+     Se ha aplicado el descuento por cantidad máxima a: 0
    
    Escenario 02
 
        Regla A
-       Prioridad: 0
-       Se ha aplicado un descuento por cantidad máxima a: 0
-       
-       Regla B
-       Prioridad: 1
-       Se ha aplicado el descuento máximo en cantidad a: 1
+     Prioridad: 0
+     Se ha aplicado el descuento por cantidad máxima a: 0
+     
+     Regla B
+     Prioridad: 1
+     Se ha aplicado el descuento por cantidad máxima a: 1
    
    Escenario 03
 
        Regla A
-       Prioridad: 0
-       Se ha aplicado un descuento por cantidad máxima a: 0
-       
-       Regla B
-       Prioridad: 0
-       Se ha aplicado el descuento máximo en cantidad a: 1
+     Prioridad: 0
+     Se ha aplicado el descuento por cantidad máxima a: 0
+     
+     Regla B
+     Prioridad: 0
+     Se ha aplicado el descuento por cantidad máxima a: 1
    
 1. Haga clic en el botón **[!UICONTROL Update Shopping Cart]** para volver a calcular los descuentos.
 
@@ -91,13 +91,13 @@ En los tres casos, el descuento total es de 9.000 dólares.
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
 * Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía [!DNL Quality Patches Tool].
-* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=es) en la guía Commerce en la infraestructura de la nube.
+* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) en la guía Commerce en la infraestructura de la nube.
 
 ## Lectura relacionada
 
 Para obtener más información sobre [!DNL Quality Patches Tool], consulte:
 
-* [[!DNL Quality Patches Tool] publicado: nueva herramienta para autodistribuir parches de calidad](https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) en la base de conocimiento de soporte.
+* [[!DNL Quality Patches Tool] publicado: nueva herramienta para autodistribuir parches de calidad](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) en la base de conocimiento de soporte.
 * [Compruebe si el parche está disponible para su problema de Adobe Commerce usando [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) en la guía [!DNL Quality Patches Tool].
 
 Para obtener información sobre otros parches disponibles en QPT, consulte [[!DNL Quality Patches Tool]: Buscar parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es) en la guía [!DNL Quality Patches Tool].

@@ -5,9 +5,9 @@ feature: Categories, GraphQL, Roles/Permissions
 role: Admin, Developer
 exl-id: ef986fa6-e8bc-4322-80f2-fa0c5d5e8d40
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '544'
+source-wordcount: '563'
 ht-degree: 0%
 
 ---
@@ -46,12 +46,12 @@ Las respuestas de [!DNL GraphQL] para clientes invitados (que usan un catálogo 
 
    * Catálogo compartido público:
 
-      * Asigne todas las categorías al catálogo público.
+     * Asigne todas las categorías al catálogo público.
 
    * Catálogo compartido privado:
 
-      * Asigne solamente la categoría `Gear` y sus categorías secundarias al catálogo privado.
-      * Asigne el catálogo privado a una empresa de prueba.
+     * Asigne solamente la categoría `Gear` y sus categorías secundarias al catálogo privado.
+     * Asigne el catálogo privado a una empresa de prueba.
 
 1. Crear un usuario de empresa:
 
@@ -102,7 +102,7 @@ La respuesta de la consulta `categories` no muestra ninguna categoría.
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
 * Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía [!DNL Quality Patches Tool].
-* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=es) en la guía Commerce en la infraestructura de la nube.
+* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) en la guía Commerce en la infraestructura de la nube.
 
 
 ## Lectura relacionada

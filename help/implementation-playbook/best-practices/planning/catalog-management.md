@@ -4,7 +4,7 @@ description: Conozca las recomendaciones para configurar los límites del carro 
 role: Developer
 feature: Best Practices, Catalog Management
 exl-id: 9a672017-9122-4841-a67b-a183224b67dc
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
 source-wordcount: '1444'
 ht-degree: 0%
@@ -100,7 +100,7 @@ Elimine los conjuntos de atributos de productos no utilizados mediante MySQL.
 
 #### Revisar configuración de conjunto de atributos
 
-1. [Conectarse a la base de datos del sitio](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/configure/service/mysql#connect-to-the-database).
+1. [Conectarse a la base de datos del sitio](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/configure/service/mysql#connect-to-the-database).
 
 1. Buscar el número de conjuntos de atributos usando MySQL
 

@@ -4,9 +4,9 @@ description: Aprenda a utilizar la herramienta Parches de calidad para aplicar y
 exl-id: f9ad37e9-2d0f-4bc8-a98b-6d60b6f56d42
 feature: Configuration, Install
 type: Troubleshooting
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '939'
+source-wordcount: '940'
 ht-degree: 0%
 
 ---
@@ -62,18 +62,18 @@ Adobe Commerce 2.3.5.
 La tabla de estado incluye:
 
 - **Tipo**:
-   - `Optional`: todos los parches del paquete [!DNL Quality Patches Tool] y [Commerce en la guía de infraestructura en la nube > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=es) son opcionales para las instalaciones de Adobe Commerce.
-   - `Deprecated`: Adobe ha desaprobado el parche individual. Si ha aplicado el parche, le recomendamos que lo revierta. La operación de reversión también elimina el parche de la tabla de estado.
+  - `Optional`: todos los parches del paquete [!DNL Quality Patches Tool] y [Commerce en la guía de infraestructura en la nube > Aplicar parches](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) son opcionales para las instalaciones de Adobe Commerce.
+  - `Deprecated`: Adobe ha desaprobado el parche individual. Si ha aplicado el parche, le recomendamos que lo revierta. La operación de reversión también elimina el parche de la tabla de estado.
 
 - **Estado**:
-   - `Applied`: se ha aplicado el parche.
-   - `Not applied`: no se ha aplicado el parche.
-   - `N/A`: el estado del parche no se puede definir debido a varios conflictos.
+  - `Applied`: se ha aplicado el parche.
+  - `Not applied`: no se ha aplicado el parche.
+  - `N/A`: el estado del parche no se puede definir debido a varios conflictos.
 
 - **Detalles**:
-   - `Affected components`: la lista de módulos afectados.
-   - `Required patches`: la lista de parches que se deben aplicar para que un parche indicado funcione correctamente (dependencias).
-   - `Recommended replacement`: el parche que se recomienda para reemplazar un parche obsoleto.
+  - `Affected components`: la lista de módulos afectados.
+  - `Required patches`: la lista de parches que se deben aplicar para que un parche indicado funcione correctamente (dependencias).
+  - `Recommended replacement`: el parche que se recomienda para reemplazar un parche obsoleto.
 
 >[!INFO]
 >

@@ -5,16 +5,16 @@ feature: Categories, Data Import/Export, Products
 role: Admin
 exl-id: ebe72038-511d-43e1-bd65-e5b468342f05
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '389'
+source-wordcount: '418'
 ht-degree: 0%
 
 ---
 
 # ACSD-45675: la exportación de productos utiliza nombres de categoría del ámbito de vista de tienda predeterminado
 
-El parche de ACSD-45675 corrige el problema en el que la exportación del producto utiliza nombres de categoría desde el ámbito de vista de tienda predeterminado. Esta revisión está disponible cuando está instalado [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.20. El ID del parche es ACSD-45675. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.6.
+El parche de ACSD-45675 corrige el problema en el que la exportación del producto utiliza nombres de categoría desde el ámbito de vista de tienda predeterminado. Esta revisión está disponible cuando está instalado [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.20. El ID del parche es ACSD-45675. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.6.
 
 ## Productos y versiones afectados
 
@@ -62,7 +62,7 @@ La ruta de la categoría tiene idiomas mixtos: *[!UICONTROL Default Category/ช
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
 * Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tools] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía de la herramienta Parches de calidad.
-* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=es) en la guía Commerce en la infraestructura de la nube.
+* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) en la guía Commerce en la infraestructura de la nube.
 
 ## Lectura relacionada
 

@@ -5,9 +5,9 @@ feature: Catalog Management, Admin Workspace
 role: Admin, Developer
 exl-id: bd0d452b-aae3-4682-8a2c-471a7f8bf132
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '336'
+source-wordcount: '354'
 ht-degree: 0%
 
 ---
@@ -60,7 +60,7 @@ Se genera un error: *El valor del atributo &quot;Atributo personalizado&quot; no
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
 * Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía [!DNL Quality Patches Tool].
-* Adobe Commerce en infraestructura de nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) en la guía Commerce en infraestructura de nube.
+* Adobe Commerce en infraestructura de nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) en la guía Commerce en infraestructura de nube.
 
 ## Lectura relacionada
 

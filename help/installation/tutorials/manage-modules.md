@@ -2,9 +2,9 @@
 title: Habilitar o deshabilitar módulos
 description: Obtenga información sobre cómo habilitar, deshabilitar y comprobar el estado de los módulos de Adobe Commerce desde la línea de comandos mediante el estado del módulo y las opciones relacionadas.
 exl-id: 7155950a-a66a-4254-a71c-1a9aeab47606
-source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '605'
+source-wordcount: '606'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Donde
 
 >[!NOTE]
 >
->No puede habilitar ni deshabilitar módulos directamente en proyectos en la nube. Debe ejecutar estos comandos localmente y, a continuación, insertar los cambios en el archivo `app/etc/config.php` para un entorno. Vea [Flujo de trabajo de proyecto profesional: flujo de trabajo de implementación](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow.html?lang=es#deployment-workflow).
+>No puede habilitar ni deshabilitar módulos directamente en proyectos en la nube. Debe ejecutar estos comandos localmente y, a continuación, insertar los cambios en el archivo `app/etc/config.php` para un entorno. Vea [Flujo de trabajo de proyecto profesional: flujo de trabajo de implementación](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow#deployment-workflow).
 
 ## Módulo habilitado, deshabilitar
 

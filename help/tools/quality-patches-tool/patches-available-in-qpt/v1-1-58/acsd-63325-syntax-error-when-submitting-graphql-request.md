@@ -5,7 +5,7 @@ feature: GraphQL
 Role: Admin, Developer
 exl-id: a83a8c5f-a43a-4733-a601-7b92656e5325
 type: Troubleshooting
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
 source-wordcount: '313'
 ht-degree: 0%
@@ -63,7 +63,7 @@ HTTP/1.1 500 Internal Server Error
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
 * Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía [!DNL Quality Patches Tool].
-* Adobe Commerce en infraestructura de nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) en la guía Commerce en infraestructura de nube.
+* Adobe Commerce en infraestructura de nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) en la guía Commerce en infraestructura de nube.
 
 ## Lectura relacionada
 

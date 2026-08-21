@@ -2,9 +2,9 @@
 title: Programación de lanzamiento del parche
 description: Descubra cuándo planea Adobe anunciar el lanzamiento de nuevos parches y correcciones de seguridad para Adobe Commerce.
 exl-id: ae1e09cd-966f-44a3-9e4d-b90bb838429d
-source-git-commit: 0f46bdfd0afbca07e0d60e995ee9426f5408671d
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '380'
+source-wordcount: '402'
 ht-degree: 4%
 
 ---
@@ -45,10 +45,10 @@ Consulte la siguiente imagen para obtener más información:
 
 Adobe notifica a los clientes sobre las nuevas versiones de parches a través de los siguientes canales:
 
-- [Avisos y boletines de seguridad de Adobe](https://helpx.adobe.com/es/security/security-bulletin.html#magento)
+- [Boletines y avisos de seguridad de Adobe](https://helpx.adobe.com/es/security/security-bulletin.html#magento)
 - Correo electrónico
 - Alertas en el producto
 
 >[!NOTE]
 >
-> Para ver las fechas de lanzamiento de cada versión secundaria, revisión y de seguridad, y las fechas de fin de la compatibilidad regular, consulte [Versiones publicadas](https://experienceleague.adobe.com/es/docs/commerce-operations/release/versions).
+> Para ver las fechas de lanzamiento de cada versión secundaria, revisión y de seguridad, y las fechas de fin de la compatibilidad regular, consulte [Versiones publicadas](/help/release/versions.md).

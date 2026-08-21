@@ -5,9 +5,9 @@ feature: Gift, Shopping Cart
 role: Admin, Developer
 exl-id: cff5b9e6-56ee-4df2-961a-6d90ec83c0c2
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '455'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 La revisión ACSD-63283 corrige el problema en el que al ordenar elementos de [!UICONTROL Gift Registry] se produce una excepción y se garantiza que [!UICONTROL Gift Registry Updates] incluya únicamente los elementos correctos. Esta revisión está disponible cuando está instalado [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.58. El ID del parche es ACSD-63283. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.8.
 
 >[!NOTE]
->Este parche reemplaza y amplía el parche QPT [ACSD-56280](https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-44/acsd-56280-gift-registry-purchases-are-not-completed).
+>Este parche reemplaza y amplía el parche QPT [ACSD-56280](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-44/acsd-56280-gift-registry-purchases-are-not-completed.md).
 
 ## Productos y versiones afectados
 
@@ -64,7 +64,7 @@ El cliente B recibe el correo electrónico con artículos de todos los registros
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
 * Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía [!DNL Quality Patches Tool].
-* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=es) en la guía Commerce en la infraestructura de la nube.
+* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) en la guía Commerce en la infraestructura de la nube.
 
 
 ## Lectura relacionada

@@ -2,8 +2,8 @@
 title: Configuración del proveedor de bloqueos
 description: Siga estos pasos para evitar que los trabajos cron y los grupos cron duplicados se ejecuten en la implementación de Adobe Commerce.
 exl-id: c54e05b7-38fd-4731-bc77-a873b44d0ae8
-last-update: 2026-04-28T00:00:00Z
-source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
+last-update: 2026-08-19T00:00:00Z
+source-git-commit: 3c67ddaf060b11e58a101b2d45417f3779a5312b
 workflow-type: tm+mt
 source-wordcount: '236'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Configure un proveedor de bloqueo para evitar el inicio de trabajos cron y grupo
 
 Adobe Commerce utiliza la base de datos para guardar bloqueos de forma predeterminada. Si tiene varios nodos en sus servidores, le recomendamos que utilice Zookeeper como proveedor de bloqueos.
 
-Si está ejecutando Adobe Commerce en una infraestructura en la nube, no es necesario configurar el proveedor de bloqueos. La aplicación configura el proveedor de bloqueo de archivos para proyectos Pro durante el proceso de aprovisionamiento. Consulte [Variables de nube](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud).
+Si está ejecutando Adobe Commerce en una infraestructura en la nube, no es necesario configurar el proveedor de bloqueos. La aplicación configura el proveedor de bloqueo de archivos para proyectos Pro durante el proceso de aprovisionamiento. Consulte [Variables de nube](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-cloud).
 
 ### Uso de comandos
 

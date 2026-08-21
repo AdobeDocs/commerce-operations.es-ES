@@ -23,16 +23,16 @@ topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
 industry_v2:
   - id: aad1e361-483a-40cf-9a88-144325515074
-source-git-commit: 17c3f587a16209876a9713881eff0034d872581e
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: 457
+source-wordcount: 422
 ht-degree: 0%
 
 ---
 
 # B2B-2598: Agrega la capacidad de almacenamiento en caché a `storeConfig`, `currency`, `country`, `countries` y `availableStores` consultas de GraphQl
 
-El parche B2B-2598 agrega capacidad de almacenamiento en caché a `storeConfig`, `currency`, `country`, `countries` y `availableStores` consultas de GraphQl. Esta revisión está disponible cuando está instalado [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.30. El ID del parche es B2B-2598. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.7-beta1.
+El parche B2B-2598 agrega capacidad de almacenamiento en caché a `storeConfig`, `currency`, `country`, `countries` y `availableStores` consultas de GraphQl. Esta revisión está disponible cuando está instalado [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.30. El ID del parche es B2B-2598. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.7-beta1.
 
 ## Productos y versiones afectados
 
@@ -68,13 +68,13 @@ Una vez aplicado el parche, ejecute los siguientes pasos para asegurarse de que 
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
 * Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía [!DNL Quality Patches Tool]
-* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=es) en la guía Commerce en la infraestructura de la nube
+* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) en la guía Commerce en la infraestructura de la nube
 
 ## Lectura relacionada
 
 Para obtener más información sobre [!DNL Quality Patches Tool], consulte:
 
-* [[!DNL Quality Patches Tool] publicado: nueva herramienta para autodistribuir parches de calidad](https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) en la base de conocimiento de soporte
+* [[!DNL Quality Patches Tool] publicado: nueva herramienta para autodistribuir parches de calidad](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) en la base de conocimiento de soporte
 * [Compruebe si el parche está disponible para su problema de Adobe Commerce usando [!DNL Quality Patches Tool]](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) en la guía [!UICONTROL Quality Patches Tool]
 
 

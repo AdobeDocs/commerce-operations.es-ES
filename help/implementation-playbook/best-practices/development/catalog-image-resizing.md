@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo evitar la degradación del rendimi
 feature: Best Practices
 role: Developer
 exl-id: 591b1a62-bdba-4301-858a-77620ee657a9
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '496'
+source-wordcount: '497'
 ht-degree: 0%
 
 ---
@@ -116,5 +116,5 @@ Al visitar una URL de caché de imagen, se generan todos los tamaños de imagen 
 
 >[!NOTE]
 >
->- Adobe Commerce en proyectos de infraestructura en la nube puede descargar el cambio de tamaño de la imagen del producto en el servicio Fastly. Consulte [Optimización de imagen profunda](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization.html?lang=es#deep-image-optimization) en la _Guía de Cloud_.
+>- Adobe Commerce en proyectos de infraestructura en la nube puede descargar el cambio de tamaño de la imagen del producto en el servicio Fastly. Consulte [Optimización de imagen profunda](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/cdn/fastly-image-optimization#deep-image-optimization) en la _Guía de Cloud_.
 >- Si utiliza el módulo de almacenamiento remoto, también puede intentar descargar el cambio de tamaño de la imagen a nginx. Consulte [Configurar el cambio de tamaño de la imagen para almacenamiento remoto](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/storage/remote-storage/remote-storage-image-resize.html?lang=es) en la _Guía de configuración_.

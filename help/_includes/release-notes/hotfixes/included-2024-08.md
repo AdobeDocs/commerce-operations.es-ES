@@ -1,7 +1,7 @@
 ---
-source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '79'
+source-wordcount: '113'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ACP2E-3158
 ACP2E-3159
 -->
 
-* Revisión para resolver un problema de validación de token web JSON (JWT) relacionado con CVE-2024-34102. Consulte la [actualización de seguridad disponible para Adobe Commerce-APSB24-40](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb24-40-revised-to-include-isolated-patch-for-cve-2024-34102) Artículo de la base de conocimiento para obtener más detalles.
+* Revisión para resolver un problema de validación de token web JSON (JWT) relacionado con CVE-2024-34102. Consulte la [actualización de seguridad disponible para Adobe Commerce-APSB24-40](https://experienceleague.adobe.com/es/docs/experience-cloud-kcs/kbarticles/ka-27136) Artículo de la base de conocimiento para obtener más detalles.
 
 <!--
 AC-12486

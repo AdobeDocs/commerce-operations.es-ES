@@ -2,9 +2,9 @@
 title: Información general de  [!DNL Upgrade Compatibility Tool]
 description: Obtenga información acerca de  [!DNL Upgrade Compatibility Tool]  y cómo puede ayudarle con su proyecto de Adobe Commerce.
 exl-id: 9493406a-1690-462b-b119-1b685b026c0b
-source-git-commit: 79c8a15fb9686dd26d73805e9d0fd18bb987770d
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '357'
+source-wordcount: '348'
 ht-degree: 0%
 
 ---
@@ -47,13 +47,13 @@ Para conectarse con el equipo [!DNL Upgrade Compatibility Tool], póngase en con
 
 [!DNL Upgrade Compatibility Tool] usa reglas definidas en nuestros [estándares de codificación](https://developer.adobe.com/commerce/php/coding-standards/) para garantizar que su proyecto sigue las prácticas recomendadas de Adobe Commerce y para ayudarle a mejorar y ampliar [!DNL Upgrade Compatibility Tool].
 
-Consulte el tema [Contribute](https://developer.adobe.com/commerce/php/coding-standards/contributing/) para obtener más información sobre cómo contribuir con estándares de codificación.
+Consulte el tema [Contribute](https://developer.adobe.com/commerce/php/coding-standards/contributing) para obtener más información sobre cómo contribuir con estándares de codificación.
 
 ## Recursos
 
 Consulte los siguientes recursos para comprender mejor las actualizaciones de Adobe Commerce:
 
 - La [guía de actualización](../overview.md) proporciona información general sobre el recorrido de actualización típico de Adobe Commerce y las prácticas recomendadas a lo largo de ese recorrido.
-- La página [próximas versiones](https://experienceleague.adobe.com/es/docs/commerce-operations/release/planning/schedule) proporciona las fechas para las versiones programadas y próximas.
+- La página [próximas versiones](/help/release/schedule.md) proporciona las fechas para las versiones programadas y próximas.
 - La página [recursos de la comunidad](https://developer.adobe.com/commerce/contributor/community/) se encuentra aquí para iniciar discusiones o encontrar más información.
 - Consulte la página [herramientas relacionadas](../upgrade-compatibility-tool/related-tools.md) para obtener herramientas útiles en su recorrido de actualización habitual.

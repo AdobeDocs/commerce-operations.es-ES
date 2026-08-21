@@ -5,9 +5,9 @@ feature: Reporting, Admin Workspace, Data Import/Export
 role: Admin, Developer
 exl-id: 99d77ddd-4fb3-4eda-8771-62c0e25f49d1
 type: Troubleshooting
-source-git-commit: 3469da56c15499de4ceb5313c3cc2dfde0f0771c
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '283'
+source-wordcount: '315'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ La exportación de *[!UICONTROL Ordered Products Report]* genera el error 404.
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
 * Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía [!DNL Quality Patches Tool].
-* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=es) en la guía Commerce en la infraestructura de la nube.
+* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) en la guía Commerce en la infraestructura de la nube.
 
 ## Lectura relacionada
 

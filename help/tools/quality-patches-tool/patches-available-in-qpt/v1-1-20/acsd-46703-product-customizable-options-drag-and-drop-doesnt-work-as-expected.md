@@ -5,16 +5,16 @@ feature: Products
 role: Developer
 exl-id: 38b9490a-c9d4-4f8e-b90f-69bf50a6b571
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '375'
+source-wordcount: '391'
 ht-degree: 0%
 
 ---
 
 # ACSD-46703: La función de arrastrar y soltar para personalizar el producto no funciona
 
-El parche ACSD-46703 corrige el problema en el que las opciones personalizables del producto (arrastrar y soltar) no funcionan según lo esperado. Este parche está disponible cuando está instalada la [Herramienta Parches de calidad (QPT)](https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.20. El ID del parche es ACSD-46703. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.6.
+El parche ACSD-46703 corrige el problema en el que las opciones personalizables del producto (arrastrar y soltar) no funcionan según lo esperado. Este parche está disponible cuando está instalada la [Herramienta Parches de calidad (QPT)](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.20. El ID del parche es ACSD-46703. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.6.
 
 ## Productos y versiones afectados
 
@@ -55,7 +55,7 @@ No puede mover ningún valor a otra página mediante la funcionalidad de arrastr
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
 * Adobe Commerce o Magento Open Source local: [Herramientas de parches de calidad > Uso](/help/tools/quality-patches-tool/usage.md) en la guía de la herramienta de parches de calidad.
-* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=es) en la guía Commerce en la infraestructura de la nube.
+* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) en la guía Commerce en la infraestructura de la nube.
 
 ## Lectura relacionada
 

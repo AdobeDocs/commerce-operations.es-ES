@@ -4,9 +4,9 @@ description: Conozca las prácticas recomendadas para configurar sitios, tiendas
 role: Admin
 feature: Best Practices
 exl-id: 3ea0c6c5-15a9-4e77-b4d0-ce15721c7167
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '228'
+source-wordcount: '254'
 ht-degree: 0%
 
 ---
@@ -41,5 +41,5 @@ Los sitios web y las tiendas son multiplicadores de los datos del catálogo, por
 
 ## Más información
 
-- [Explicación de sitios web, tiendas y vistas de tiendas](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/configure-store/best-practices)
-- [Configurar varios sitios web o tiendas](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites)
+- [Explicación de sitios web, tiendas y vistas de tiendas](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/configure-store/best-practices)
+- [Configurar varios sitios web o tiendas](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/configure-store/multiple-sites)

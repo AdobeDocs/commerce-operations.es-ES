@@ -2,9 +2,9 @@
 title: Planificación anual de actualizaciones
 description: Revise sugerencias para crear un plan de actualización anual para su proyecto de Adobe Commerce.
 exl-id: f28e5ad1-28ac-4419-a507-63d79dbd6376
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '221'
+source-wordcount: '220'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Muchas empresas trabajan con presupuestos anuales y hojas de ruta. Durante estas discusiones anuales, es imperativo que hable sobre el estado, la dirección y la estrategia de actualización de la plataforma durante el año, junto con cómo se adapta a los objetivos generales y a los indicadores clave de rendimiento (KPI) de la empresa.
 
-Siguiendo la [programación de versiones](https://experienceleague.adobe.com/es/docs/commerce-operations/release/planning/schedule), asigne las ventanas de presupuesto y lanzamiento para las actualizaciones, evitando festivos, cierres de empresas y horas punta. Si comprende la programación de versiones de Adobe y se mantiene informado de los cambios y las mejoras que forman parte de cada versión a través de las [notas de la versión](https://experienceleague.adobe.com/es/docs/commerce-operations/release/notes/overview), podrá planificar mejor su año.
+Siguiendo la [programación de versiones](/help/release/schedule.md), asigne las ventanas de presupuesto y lanzamiento para las actualizaciones, evitando festivos, cierres de empresas y horas punta. Si comprende la programación de versiones de Adobe y se mantiene informado de los cambios y las mejoras que forman parte de cada versión a través de las [notas de la versión](/help/release/release-notes/overview.md), podrá planificar mejor su año.
 
 Durante la planificación, es posible que desee preguntarse:
 

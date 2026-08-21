@@ -4,9 +4,9 @@ description: Obtenga información sobre las versiones beta de Adobe Commerce y c
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
 badgePaas: label="PaaS" type="Informative" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe) y a proyectos locales."
 badgeSaas: label="SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
-source-git-commit: bf0f269900468870a1da7b5360548d49e009097c
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '1400'
+source-wordcount: '1509'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Los programas de Beta para [soluciones de productos de Adobe Commerce](https://e
 >[!IMPORTANT]
 >
 >**Descargo de responsabilidad legal**<br/>
->Las >versiones de Beta incluyen funciones de versión preliminar y código que pueden contener defectos y se proporcionan &quot;TAL CUAL&quot; sin garantía de ningún tipo. Adobe tiene la única discreción de si las versiones beta están disponibles de forma general. Adobe no tiene obligación de mantener, corregir, actualizar, cambiar, modificar, ofrecer asistencia (a través de los servicios de soporte de Adobe o de otro modo) o entregar dichas versiones beta en una fecha específica. En caso de que se publique una versión beta, podría estar sujeta a términos y condiciones adicionales, incluidas las tarifas aplicables. Las versiones de Beta están sujetas a cambios sin previo aviso, incluida la interrupción. Se aconseja a los clientes que tengan cuidado y que no confíen en modo alguno en el funcionamiento o el rendimiento ininterrumpidos o sin errores de las versiones beta.  Por lo tanto, cualquier uso de las versiones beta es totalmente bajo el propio riesgo del cliente.
+>Las versiones de Beta incluyen funciones de versión preliminar y código que pueden contener defectos y se proporcionan &quot;TAL CUAL&quot; sin garantía de ningún tipo. Adobe tiene la única discreción de si las versiones beta están disponibles de forma general. Adobe no tiene obligación de mantener, corregir, actualizar, cambiar, modificar, ofrecer asistencia (a través de los servicios de soporte de Adobe o de otro modo) o entregar dichas versiones beta en una fecha específica. En caso de que se publique una versión beta, podría estar sujeta a términos y condiciones adicionales, incluidas las tarifas aplicables. Las versiones de Beta están sujetas a cambios sin previo aviso, incluida la interrupción. Se aconseja a los clientes que tengan cuidado y que no confíen en modo alguno en el funcionamiento o el rendimiento ininterrumpidos o sin errores de las versiones beta.  Por lo tanto, cualquier uso de las versiones beta es totalmente bajo el propio riesgo del cliente.
 
 ## Ventajas de participar
 
@@ -73,7 +73,7 @@ Para compartir tus comentarios mientras usas esta función beta, envía un corre
 
 El servicio de parches de automatización de la nube [Cloud](../tools/caps-tool/intro.md) automatiza el proceso de aplicar parches de seguridad aislados a los entornos de [Adobe Commerce en la infraestructura de la nube](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/overview).
 
-En octubre de 2025, la versión beta del servicio de parches de automatización de la nube se agregará al [panel de herramientas de análisis en todo el sitio](https://experienceleague.adobe.com/es/docs/commerce-operations/tools/site-wide-analysis-tool/dashboard). Este servicio es compatible con los administradores de proyectos de Commerce con un flujo de trabajo optimizado de parches que incluye:
+En octubre de 2025, la versión beta del servicio de parches de automatización de la nube se agregará al [panel de herramientas de análisis en todo el sitio](/help/tools/site-wide-analysis-tool/dashboard.md). Este servicio es compatible con los administradores de proyectos de Commerce con un flujo de trabajo optimizado de parches que incluye:
 
 - Instalación automatizada de parches
 - Recuperación de reversión

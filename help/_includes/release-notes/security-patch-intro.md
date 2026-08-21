@@ -1,7 +1,7 @@
 ---
-source-git-commit: b1cfa656e3393bd47fb2c1557ff75db3ec6c6a67
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '119'
+source-wordcount: '122'
 ht-degree: 0%
 
 ---
@@ -18,4 +18,4 @@ Estas notas de la versión del parche de seguridad capturan actualizaciones para
 Obtenga más información sobre las versiones de parches de seguridad:
 
 * [Información general sobre versiones de parches de seguridad de Adobe Commerce](/help/release/release-notes/security/overview.md#about-security-patch-releases)
-* Las instrucciones para descargar y aplicar revisiones de seguridad están disponibles en [Cómo obtener y aplicar revisiones de seguridad](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/how-to/how-to-obtain-and-apply-security-patches) en la _base de conocimiento de Adobe Commerce_.
+* Las instrucciones para descargar y aplicar revisiones de seguridad están disponibles en [Cómo obtener y aplicar revisiones de seguridad](https://experienceleague.adobe.com/es/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-obtain-and-apply-security-patches) en la _base de conocimiento de Adobe Commerce_.

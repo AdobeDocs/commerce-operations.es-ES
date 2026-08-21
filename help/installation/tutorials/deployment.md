@@ -3,10 +3,10 @@ title: Crear o actualizar la configuración de implementación
 description: Siga estos pasos para administrar la configuración de implementación de Adobe Commerce.
 feature: Install, Deploy, Configuration
 exl-id: 2cdde735-0c70-44e8-b2ee-ffb874c1c443
-last-update: 2026-04-28T00:00:00Z
-source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
+last-update: 2026-08-19T00:00:00Z
+source-git-commit: 3c67ddaf060b11e58a101b2d45417f3779a5312b
 workflow-type: tm+mt
-source-wordcount: '684'
+source-wordcount: '697'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ En la tabla siguiente se describen los significados de los parámetros y valores
 | `--db-user` | Nombre de usuario del propietario de la instancia de base de datos.<br><br>El valor predeterminado es `root`. | No |
 | `--db-password` | Contraseña del propietario de la instancia de base de datos. | No |
 | `--db-prefix` | Utilícelo únicamente si va a instalar las tablas de base de datos en una instancia de base de datos que ya contiene tablas de Adobe Commerce.<br><br>En ese caso, use un prefijo para identificar las tablas de esta instalación. Algunos clientes tienen más de una instancia de Adobe Commerce ejecutándose en un servidor con todas las tablas de la misma base de datos.<br><br>El prefijo puede tener una longitud máxima de cinco caracteres. Debe comenzar por una letra y solo puede incluir letras, números y caracteres de subrayado.<br><br>Esta opción permite que esos clientes compartan el servidor de base de datos con más de una instalación de Adobe Commerce. | No |
-| `--session-save` | Use cualquiera de las siguientes opciones:<br><br>- `db` para almacenar datos de sesión en la [base de datos](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching/). Elija el almacenamiento de la base de datos si tiene una base de datos en clúster; de lo contrario, es posible que no haya muchas ventajas con el almacenamiento basado en archivos.<br><br>- `files` para almacenar datos de sesión en el sistema de archivos. El almacenamiento de sesión basado en archivos es apropiado a menos que el acceso al sistema de archivos sea lento, tenga una base de datos en clúster o desee almacenar datos de sesión en Redis.<br><br>- `redis` para almacenar datos de sesión en [Use Redis para el almacenamiento de sesión](../../configuration/cache/config-redis.md). Si utiliza Redis para el almacenamiento en caché predeterminado o de página, debe estar instalado. | No |
+| `--session-save` | Use cualquiera de las siguientes opciones:<br><br>- `db` para almacenar datos de sesión en la [base de datos](https://developer.adobe.com/commerce/php/development/cache/partial/database-caching). Elija el almacenamiento de la base de datos si tiene una base de datos en clúster; de lo contrario, es posible que no haya muchas ventajas con el almacenamiento basado en archivos.<br><br>- `files` para almacenar datos de sesión en el sistema de archivos. El almacenamiento de sesión basado en archivos es apropiado a menos que el acceso al sistema de archivos sea lento, tenga una base de datos en clúster o desee almacenar datos de sesión en Redis.<br><br>- `redis` para almacenar datos de sesión en [Use Redis para el almacenamiento de sesión](../../configuration/cache/config-redis.md). Si utiliza Redis para el almacenamiento en caché predeterminado o de página, debe estar instalado. | No |
 | `--key` | Si tiene una, especifique una clave para cifrar [datos confidenciales](#sensitive-data) en la base de datos. Si no tiene ninguna, la aplicación generará una para usted. | No |
 | `--db-init-statements` | Parámetro de configuración avanzado de MySQL. Utiliza sentencias de inicialización de base de datos para ejecutarse al conectarse a la base de datos MySQL.<br><br>El valor predeterminado es `SET NAMES utf8;`.<br><br>Consulte una referencia similar a [esta](https://dev.mysql.com/doc/refman/5.6/en/server-options.html) antes de establecer cualquier valor. | No |
 | `--http-cache-hosts` | Lista separada por comas de los hosts de puerta de enlace de caché HTTP a los que enviar solicitudes de depuración. (Por ejemplo, servidores Varnish). Utilice este parámetro para especificar el host o hosts que se van a depurar en la misma solicitud. (No importa si sólo tiene uno o varios hosts.)<br><br>El formato debe ser `<hostname or ip>:<listen port>`, donde puede omitir `<listen port>` si es el puerto 80. Por ejemplo, `--http-cache-hosts=192.0.2.100,192.0.2.155:6081`. No separe los hosts con caracteres de espacio. | No |
