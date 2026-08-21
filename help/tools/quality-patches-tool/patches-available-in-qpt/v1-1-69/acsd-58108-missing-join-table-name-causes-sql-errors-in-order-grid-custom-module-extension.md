@@ -28,7 +28,7 @@ El parche ACSD-58108 corrige el problema en el que la falta de un nombre de tabl
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
@@ -36,12 +36,12 @@ El nombre de tabla de unión que falta en la tabla de recuperación original pro
 
 <u>Pasos a seguir</u>:
 
-01. Instale una instancia de desarrollo de 2.4.
-02. Cree un nuevo pedido.
-03. Instale un módulo personalizado con una extensión SQL.
-04. Vaya a **[!UICONTROL Admin]** > **[!UICONTROL Sales]** > **[!UICONTROL Orders]**.
-05. Aplique el filtro **[!UICONTROL Purchase Date]** y espere al resultado.
-06. Aplicar el filtro **[!UICONTROL Product SKU]**.
+&#x200B;01. Instale una instancia de desarrollo de 2.4.
+&#x200B;02. Cree un nuevo pedido.
+&#x200B;03. Instale un módulo personalizado con una extensión SQL.
+&#x200B;04. Vaya a **[!UICONTROL Admin]** > **[!UICONTROL Sales]** > **[!UICONTROL Orders]**.
+&#x200B;05. Aplique el filtro **[!UICONTROL Purchase Date]** y espere al resultado.
+&#x200B;06. Aplicar el filtro **[!UICONTROL Product SKU]**.
 
 <u>Resultados esperados</u>:
 

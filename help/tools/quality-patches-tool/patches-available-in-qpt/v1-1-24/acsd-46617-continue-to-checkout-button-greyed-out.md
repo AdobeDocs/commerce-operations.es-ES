@@ -28,7 +28,7 @@ Este parche de ACSD-46617 resuelve el problema en el que el botón **[!UICONTROL
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
@@ -38,16 +38,16 @@ El botón **[!UICONTROL Continue to Checkout]** aparece atenuado incluso si el s
 
 1. Vaya a Adobe Commerce Admin > **[!UICONTROL Store]** > **[!UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL Minimum Order Amount]** y establezca lo siguiente:
    * [!UICONTROL Enable]: *[!UICONTROL Yes]*
-   * 
-     [!UICONTROL Minimum Amount]: *2*
+   * &#x200B;
+     [!UICONTROL Minimum Amount]&#x200B;: *2*
 
 1. Crear un [!UICONTROL Cart Price Rule].
    * [!UICONTROL Coupon Code]: *[!UICONTROL TEST (optional)]*
    * [!UICONTROL Conditions]: *[!UICONTROL Keep empty]*
    * [!UICONTROL Actions]:
      * [!UICONTROL Apply]: *[!UICONTROL Percent of product price discount]*
-     * 
-       [!UICONTROL Discount Amount]: *92*
+     * &#x200B;
+       [!UICONTROL Discount Amount]&#x200B;: *92*
      * [!UICONTROL Apply to Shipping Amount]: *[!UICONTROL Yes]*
 1. Cree un producto con el precio de 25 $.
 1. Añadir el producto al carro de compras.

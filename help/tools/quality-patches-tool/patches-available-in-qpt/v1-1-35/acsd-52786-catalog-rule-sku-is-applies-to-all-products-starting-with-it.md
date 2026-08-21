@@ -28,7 +28,7 @@ El parche ACSD-52786 corrige el problema en el que la condición de regla de cat
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
@@ -39,7 +39,7 @@ La condición de regla de catálogo *[!UICONTROL SKU is]* se aplica a todos los 
 1. Cree dos productos, uno con el SKU &quot;24&quot; y otro con el SKU &quot;24-MB01&quot;.
 1. Vaya a **[!UICONTROL Marketing]** > **[!UICONTROL Catalog Price Rule]** > **[!UICONTROL Add New Rule]**.
 1. Aplique la siguiente condición:
-   * *[!UICONTROL If ** TODAS **de estas condiciones son** VERDADERAS **]*: *[!UICONTROL SKU is 24]*
+   * *[!UICONTROL If **&#x200B; TODAS &#x200B;** de estas condiciones son **&#x200B; VERDADERAS &#x200B;**]*: *[!UICONTROL SKU is 24]*
 1. Defina cualquier importe de descuento en las acciones.
 1. Haga clic en **[!UICONTROL Save and Apply]**.
 1. Vaciar caché.

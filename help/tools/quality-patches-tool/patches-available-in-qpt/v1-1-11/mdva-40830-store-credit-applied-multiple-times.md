@@ -28,7 +28,7 @@ El parche MDVA-40830 soluciona el problema de que el crédito de la tienda se ap
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de la herramienta Parches de Calidad. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de la herramienta Parches de Calidad. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
@@ -44,30 +44,30 @@ El crédito de la tienda se aplica varias veces durante la realización del pedi
 
 <pre>
 <code class="language-graphql">
-mutation {
+mutation &lbrace;
   applyStoreCreditToCart(
     input: { cart_id: "%cartId%" }
-  ) {
-    cart {
-      prices {
-        grand_total {
+  ) &lbrace;
+    cart &lbrace;
+      prices &lbrace;
+        grand_total &lbrace;
           currency
           value
-        }
-      }
-      applied_store_credit {
-        applied_balance {
+        &rbrace;
+      &rbrace;
+      applied_store_credit &lbrace;
+        applied_balance &lbrace;
           currency
           value
-        }
-        current_balance {
+        &rbrace;
+        current_balance &lbrace;
           currency
           value
-        }
-      }
-    }
-  }
-}
+        &rbrace;
+      &rbrace;
+    &rbrace;
+  &rbrace;
+&rbrace;
 </code>
 </pre>
 

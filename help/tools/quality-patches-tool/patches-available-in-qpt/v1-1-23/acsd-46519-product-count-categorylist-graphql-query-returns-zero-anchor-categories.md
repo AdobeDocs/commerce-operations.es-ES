@@ -26,7 +26,7 @@ El parche ACSD-46519 resuelve el problema en el que la consulta [!UICONTROL prod
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
@@ -37,34 +37,34 @@ Cuando se usa el método [!UICONTROL categoryList] [!DNL GraphQL] para obtener c
 1. Utilice la siguiente solicitud [!DNL GraphQL] para obtener la jerarquía de categorías con [!UICONTROL product_count]:
 
 <pre><code>
-{
-  categoryList(filters: { ids: { eq: "2" } }) {
+&lbrace;
+  categoryList(filters: { ids: { eq: "2" } }) &lbrace;
     id
     name
     product_count
     level
-    children {
+    children &lbrace;
       name
       product_count
       level
-      children {
+      children &lbrace;
         name
         product_count
         level
-        children {
+        children &lbrace;
           name
           product_count
           level
-          children {
+          children &lbrace;
             name
             product_count
             level
-          }
-        }
-      }
-    }
-  }
-}
+          &rbrace;
+        &rbrace;
+      &rbrace;
+    &rbrace;
+  &rbrace;
+&rbrace;
 </code></pre>
 
 <u>Resultados esperados</u>:
@@ -76,46 +76,46 @@ Si la categoría principal es una categoría anclada, [!UICONTROL product_count]
 Si la categoría principal es una categoría anclada, los productos se muestran como 0 para la categoría nivel 2 y hacia abajo.
 
 <pre><code>
-{
-    "data": {
-        "categoryList": [
-            {
+&lbrace;
+    "data": &lbrace;
+        "categoryList": &lbrack;
+            &lbrace;
                 "id": 2,
                 "name": "Default Category",
                 "product_count": 186,
                 "level": 1,
-                "children": [
-                    {
+                "children": &lbrack;
+                    &lbrace;
                         "name": "What's New",
                         "product_count": 0,
                         "level": 2,
                         "children": []
-                    },
-                    {
+                    &rbrace;,
+                    &lbrace;
                         "name": "Women",
                         "product_count": 0,
                         "level": 2,
-                        "children": [
-                            {
+                        "children": &lbrack;
+                            &lbrace;
                                 "name": "Tops",
                                 "product_count": 0,
                                 "level": 3,
                                 "children": []
-                            },
-                            {
+                            &rbrace;,
+                            &lbrace;
                                 "name": "Bottoms",
                                 "product_count": 0,
                                 "level": 3,
                                 "children": []
-                            }
-                        ]
-                    },
+                            &rbrace;
+                        &rbrack;
+                    &rbrace;,
                     ...
-                ]
-            }
-        ]
-    }
-}
+                &rbrack;
+            &rbrace;
+        &rbrack;
+    &rbrace;
+&rbrace;
 </code></pre>
 
 ## Aplicar el parche

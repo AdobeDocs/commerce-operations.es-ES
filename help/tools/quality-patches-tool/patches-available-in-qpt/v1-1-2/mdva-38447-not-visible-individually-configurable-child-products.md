@@ -28,7 +28,7 @@ El parche de MDVA-38447 Adobe Commerce corrige el problema en el que los product
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de la herramienta Parches de Calidad. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de la herramienta Parches de Calidad. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
@@ -50,30 +50,30 @@ Deben instalarse los módulos B2B.
   $search: String
   $pageSize: Int!
   $currentPage: Int!
-) {
+) &lbrace;
   products()
     filter: $filter
     sort: $sort
     buscar: $search
     pageSize: $pageSize
     currentPage: $currentPage
-  ) {
+  ) &lbrace;
     total_count
-    page_info {
+    page_info &lbrace;
       total_pages
       current_page
       page_size
-    }
-    elementos {
+    &rbrace;
+    elementos &lbrace;
       name
       sku
-    }
-  }
-}</pre>
+    &rbrace;
+  &rbrace;
+&rbrace;</pre>
 
 Variables:
 
-<pre>{"filter":{"user_group":{"eq":""}},"search":"config-100","sort":{},"pageSize":200,"currentPage":1}
+<pre>{"filter":{"user_group":{"eq":""}&#x200B;},"search":"config-100","sort":{},"pageSize":200,"currentPage":1}
 </pre>
 
 <u>Resultados esperados</u>:
