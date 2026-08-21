@@ -4,7 +4,7 @@ description: Obtenga información sobre cómo configurar la base de datos y la c
 role: Developer, Admin
 feature: Best Practices
 exl-id: ca377dc8-c8bd-4f77-a24b-22a298e2bba4
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
 source-wordcount: '728'
 ht-degree: 0%
@@ -37,7 +37,7 @@ SELECT table_schema, CONCAT(ROUND((index_length+data_length)/1024/1024),'MB')
 
 ### Cambie el motor de almacenamiento a InnoDB
 
-En el archivo `db_schema.xml` que declara la tabla, establezca el valor del atributo `engine` para el nodo `table` correspondiente en `innodb`. Como referencia, consulte [Configurar esquema declarativo > nodo de tabla](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration/) en nuestra documentación para desarrolladores.
+En el archivo `db_schema.xml` que declara la tabla, establezca el valor del atributo `engine` para el nodo `table` correspondiente en `innodb`. Como referencia, consulte [Configurar esquema declarativo > nodo de tabla](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration) en nuestra documentación para desarrolladores.
 
 El esquema declarativo se introdujo en Adobe Commerce en la versión 2.3 de la infraestructura en la nube.
 
@@ -59,9 +59,9 @@ Para determinar qué motor de búsqueda está actualmente en uso, ejecute el sig
 
 Para obtener instrucciones de configuración, consulte la Guía del desarrollador de Adobe Commerce en la nube:
 
-- [Configurar el servicio OpenSearch](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/configure/service/opensearch)
+- [Configurar el servicio OpenSearch](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/opensearch)
 
-- [Configuración del servicio Elasticsearch](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/configure/service/elasticsearch)
+- [Configuración del servicio Elasticsearch](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/elasticsearch)
 
 ## Evitar déclencheur personalizados
 
@@ -76,14 +76,14 @@ Para obtener más información sobre alternativas al uso de déclencheur persona
 
 ## Actualizar [!DNL ECE-Tools] a la versión 2002.0.21 o superior {#ece-tools-version}
 
-Para evitar posibles problemas con los interbloqueos de cron, actualice ECE-Tools a la versión 2002.0.21 o superior. Para obtener instrucciones, consulte [Actualizar `ece-tools` versión](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package) en nuestra documentación para desarrolladores.
+Para evitar posibles problemas con los interbloqueos de cron, actualice ECE-Tools a la versión 2002.0.21 o superior. Para obtener instrucciones, consulte [Actualizar `ece-tools` versión](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/ece-tools/update-package) en nuestra documentación para desarrolladores.
 
 ## Cambiar el modo del indexador con seguridad
 
 <!--This best practice might belong in the Maintenance phase. Database lock prevention might be consolidated under a single heading-->
 
 Cambiar los indizadores genera instrucciones [!DNL data definition language] (DDL) para crear déclencheur que pueden bloquear la base de datos. Puede evitar este problema poniendo su sitio web en modo de mantenimiento y deshabilitando los trabajos cron antes de cambiar la configuración.
-Para obtener instrucciones, consulte [Configuración de indizadores](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html?lang=es#configure-indexers-1) en la *Guía de configuración de Adobe Commerce*.
+Para obtener instrucciones, consulte [Configuración de indizadores](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html#configure-indexers-1) en la *Guía de configuración de Adobe Commerce*.
 
 ## No ejecutar instrucciones DDL en producción
 
@@ -95,7 +95,7 @@ Si necesita ejecutar una instrucción DDL, ponga el sitio web en modo de manteni
 
 Active el archivado de pedidos desde el administrador para reducir el espacio necesario para las tablas de ventas a medida que aumentan los datos de pedidos. El archivado ahorra espacio en disco de MySQL y mejora el rendimiento de cierre de compra.
 
-Consulte [Habilitar archivado](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-archive.html?lang=es) en la documentación de Adobe Commerce Merchant.
+Consulte [Habilitar archivado](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-archive.html) en la documentación de Adobe Commerce Merchant.
 
 ## Más información
 

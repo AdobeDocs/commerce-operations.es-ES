@@ -3,9 +3,9 @@ title: Archivos de configuración para implementación
 description: Descubra cómo funcionan los archivos de configuración para la implementación de aplicaciones de Adobe Commerce. Descubra las prácticas recomendadas de administración de la configuración compartidas y específicas del sistema.
 feature: Configuration, Deploy
 exl-id: 772a6814-6b18-4f8f-b31e-72faf790ff37
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '442'
+source-wordcount: '464'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ El archivo `config.php` contiene una lista de módulos instalados. Adobe Commerc
 Ejemplos:
 
 - Desinstalar componentes: [`bin/magento setup:uninstall`](../../installation/tutorials/uninstall-modules.md)
-- Comprobar el estado de los componentes: [`bin/magento module:status`](https://experienceleague.adobe.com/es/docs/commerce-operations/tools/cli-reference/commerce-on-premises#modulestatus)
+- Comprobar el estado de los componentes: [`bin/magento module:status`](/help/tools/reference/commerce-on-premises.md#modulestatus)
 - Habilitar o deshabilitar componentes: [`bin/magento module:disable`](../../installation/tutorials/manage-modules.md), [`bin/magento module:enable`](../../installation/tutorials/manage-modules.md).
 
 > _config.php_

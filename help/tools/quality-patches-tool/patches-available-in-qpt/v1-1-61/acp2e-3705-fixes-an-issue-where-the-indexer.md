@@ -1,13 +1,13 @@
 ---
-title: 'ACP2E-3705: &grave;indexer_update_all_views&grave; La ejecución de cron falla cuando se establece "MAGE_INDEXER_THREADS_COUNT"'
+title: 'ACP2E-3705: `indexer_update_all_views` La ejecución de cron falla cuando se establece "MAGE_INDEXER_THREADS_COUNT"'
 description: Aplique el parche ACP2E-3705 para corregir el problema de Adobe Commerce donde la ejecución de cron "indexer_update_all_views" falla cuando se establece "MAGE_INDEXER_THREADS_COUNT".
 feature: Catalog Management, B2B
 role: Admin, Developer
 exl-id: 111325fa-8ed5-45f9-9e68-b52f4425d253
 type: Troubleshooting
-source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '356'
+source-wordcount: '341'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ El parche ACP2E-3705 corrige el problema en el que la ejecución de `indexer_upd
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
@@ -79,4 +79,4 @@ Para aplicar parches individuales, utilice los siguientes vínculos según el m�
 Para obtener más información sobre [!DNL Quality Patches Tool], consulte:
 
 * [[!DNL Quality Patches Tool]: herramienta de autoservicio para parches de calidad](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) en la guía Herramientas.
-* [Reindexación en modo paralelo](https://experienceleague.adobe.com/es/docs/commerce-operations/configuration-guide/cli/manage-indexers#reindexing-in-parallel-mode) en la Guía de configuración de Commerce.
+* [Reindexación en modo paralelo](/help/configuration/cli/manage-indexers.md#reindexing-in-parallel-mode) en la Guía de configuración de Commerce.

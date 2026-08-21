@@ -5,9 +5,9 @@ role: Developer
 feature: Best Practices
 last-substantial-update: 2022-11-15T00:00:00Z
 exl-id: 9e7adaaa-b165-4293-aa98-5dc4b8c23022
-source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '1509'
+source-wordcount: '1591'
 ht-degree: 0%
 
 ---
@@ -38,11 +38,11 @@ Otra opción relacionada para mantener los datos externos al comercio pero que l
 
 Por ejemplo, puede `stitch` agrupar pedidos antiguos de una base de datos externa, tal vez el sitio antiguo de Magento 1 que se ha retirado del mercado. A continuación, utilizando GraphQL mesh, muéstrelos como parte del historial de pedidos de los clientes. Estos pedidos antiguos se pueden combinar con los pedidos del entorno actual [!DNL Adobe Commerce].
 
-Para obtener más información sobre el uso de la malla de API con GraphQL, consulte [Qué es la malla de API](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/){target="_blank"}) y [GraphQL Mesh Gateway](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}.
+Para obtener más información sobre el uso de la malla de API con GraphQL, consulte [Qué es la malla de API](https://developer.adobe.com/graphql-mesh-gateway/mesh/){target="_blank"}) y [GraphQL Mesh Gateway](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}.
 
 ## Migración de datos heredados con atributos de extensión
 
-Si determina que los datos heredados requieren migración o que los nuevos datos deben guardarse en [!DNL Adobe Commerce], Adobe recomienda usar [atributos de extensión](https://developer.adobe.com/commerce/php/development/components/add-attributes/){target="_blank"}. El uso de atributos de extensión para guardar datos adicionales ofrece las siguientes ventajas:
+Si determina que los datos heredados requieren migración o que los nuevos datos deben guardarse en [!DNL Adobe Commerce], Adobe recomienda usar [atributos de extensión](https://developer.adobe.com/commerce/php/development/components/add-attributes){target="_blank"}. El uso de atributos de extensión para guardar datos adicionales ofrece las siguientes ventajas:
 
 - Puede controlar los datos que se mantienen y la estructura de la base de datos, que garantiza que los datos se guarden con el tipo de columna correcto y los índices adecuados.
 - La mayoría de las entidades de [!DNL Adobe Commerce] admiten el uso de atributos de extensión.
@@ -54,7 +54,7 @@ Dos ejemplos de ubicaciones de almacenamiento son las tablas de base de datos y 
 
 Como desarrollador, es vital considerar siempre el uso de herramientas fuera de su entorno de [!DNL Adobe Commerce], como GraphQL mesh y Adobe App Builder. Estas herramientas pueden ayudarle a conservar el acceso a los datos, pero no afectan a la aplicación principal de comercio ni a sus tablas de base de datos subyacentes. Con este enfoque, expone sus datos a través de una API. A continuación, agregue una fuente de datos a la configuración de App Builder. Con GraphQL Mesh, puedes combinar esas fuentes de datos y producir una única respuesta como se menciona en [datos heredados](#legacy-data).
 
-Para obtener más información sobre GraphQL mesh, consulte [GraphQL Mesh Gateway](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}. Para obtener información acerca de Adobe App Builder, consulte [Presentación de App Builder](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/introduction-app-builder.html?lang=es){target="_blank"}.
+Para obtener más información sobre GraphQL mesh, consulte [GraphQL Mesh Gateway](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}. Para obtener información acerca de Adobe App Builder, consulte [Presentación de App Builder](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/introduction-app-builder.html){target="_blank"}.
 
 ## Modificación de una tabla principal o de una tabla de terceros
 
@@ -73,11 +73,11 @@ Adobe recomienda seguir estos pasos cuando agregue una columna a una tabla de la
 
    Por ejemplo: `app/code/YourCompany/Customer`
 
-1. Cree los archivos apropiados para habilitar el módulo (consulte [Crear un módulo](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html?lang=es){target="_blank"}.
+1. Cree los archivos apropiados para habilitar el módulo (consulte [Crear un módulo](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html){target="_blank"}.
 
 1. Cree un archivo denominado `db_schema.xml` en la carpeta `etc` y realice los cambios correspondientes.
 
-   Si corresponde, genere un archivo de `db_schema_whitelist.json`. Vea [Esquema declarativo](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration/){target="_blank"} para obtener más información.
+   Si corresponde, genere un archivo de `db_schema_whitelist.json`. Vea [Esquema declarativo](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration){target="_blank"} para obtener más información.
 
 ### Impactos potenciales
 
@@ -97,19 +97,19 @@ Algunas tablas principales tienen una columna `additional_data` que contiene dat
 
 - Ventajas de usar el campo `additional_data`
 
-   - No se necesitan campos adicionales, lo que mantiene un número mínimo de columnas. Esto resulta útil en el flujo de ventas, donde ya hay muchas tablas implicadas. Es mejor no añadir más complejidad a este proceso ya complicado. Este método satisface muchos casos de uso, pero no todos.
+  - No se necesitan campos adicionales, lo que mantiene un número mínimo de columnas. Esto resulta útil en el flujo de ventas, donde ya hay muchas tablas implicadas. Es mejor no añadir más complejidad a este proceso ya complicado. Este método satisface muchos casos de uso, pero no todos.
 
 - Desventajas
 
-   - Este método es ideal solo para almacenar datos de solo lectura. Este problema se produce porque el código tendría que ser no serializado para modificar y generar el objeto para agregar dependencias o relaciones de base de datos.
+  - Este método es ideal solo para almacenar datos de solo lectura. Este problema se produce porque el código tendría que ser no serializado para modificar y generar el objeto para agregar dependencias o relaciones de base de datos.
 
-   - Es difícil utilizar las operaciones de la base de datos para buscar estos campos. La búsqueda con este método es lenta.
+  - Es difícil utilizar las operaciones de la base de datos para buscar estos campos. La búsqueda con este método es lenta.
 
-   - Se debe tener especial cuidado al almacenar los datos en la columna `additional_data` para evitar activar operaciones de serialización o anulación de serialización que podrían romper el código al crear un JSON no válido o provocar errores de lectura durante el tiempo de ejecución.
+  - Se debe tener especial cuidado al almacenar los datos en la columna `additional_data` para evitar activar operaciones de serialización o anulación de serialización que podrían romper el código al crear un JSON no válido o provocar errores de lectura durante el tiempo de ejecución.
 
-   - Estos campos deben declararse claramente en el código para que un desarrollador pueda encontrarlos fácilmente.
+  - Estos campos deben declararse claramente en el código para que un desarrollador pueda encontrarlos fácilmente.
 
-   - Otros problemas que pueden ocurrir pueden ser muy difíciles de diagnosticar. Por ejemplo, con algunas funciones PHP nativas si no utiliza los métodos envoltorios [!DNL Adobe Commerce] proporcionados por la aplicación principal, el resultado final de los datos transformados puede ser diferente del formato esperado. Utilice siempre las funciones de envoltorio para garantizar la coherencia y la previsibilidad de los datos que se guardan o recuperan.
+  - Otros problemas que pueden ocurrir pueden ser muy difíciles de diagnosticar. Por ejemplo, con algunas funciones PHP nativas si no utiliza los métodos envoltorios [!DNL Adobe Commerce] proporcionados por la aplicación principal, el resultado final de los datos transformados puede ser diferente del formato esperado. Utilice siempre las funciones de envoltorio para garantizar la coherencia y la previsibilidad de los datos que se guardan o recuperan.
 
 Estos son ejemplos de tablas que tienen la columna y la estructura de la columna `additional_data`.
 
@@ -155,7 +155,7 @@ MariaDB [magento]> SELECT DISTINCT TABLE_NAME FROM INFORMATION_SCHEMA.COLUMNS WH
 
 ## Buscar tablas MySQL grandes
 
-Para identificar las tablas grandes, conéctese a la base de datos como se describe en el artículo [Conectarse a la base de datos](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/configure/service/mysql#connect-to-the-database) y ejecute el siguiente comando. Usar `project_id` para el entorno de producción. Para entornos de ensayo, use `[project_id]_stg`, `[project_id]_stg2`.
+Para identificar las tablas grandes, conéctese a la base de datos como se describe en el artículo [Conectarse a la base de datos](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/mysql#connect-to-the-database) y ejecute el siguiente comando. Usar `project_id` para el entorno de producción. Para entornos de ensayo, use `[project_id]_stg`, `[project_id]_stg2`.
 
 ```sql
 SELECT TABLE_NAME AS `Table`,

@@ -2,9 +2,9 @@
 title: Guía de solución de problemas de [!DNL Cloud Automation Patching Service (CAPS)]
 description: Solucionar problemas comunes y mensajes de error en  [!DNL Cloud Automation Patching Service (CAPS)]
 hide: true
-source-git-commit: baa10442a07aa4280fad6213a82d632760f8e1d2
+source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
 workflow-type: tm+mt
-source-wordcount: '1137'
+source-wordcount: '1128'
 ht-degree: 0%
 
 ---
@@ -172,7 +172,7 @@ Si la Opción 1 no resuelve su problema, continúe con la Opción 2.
 
 **Causa:** Un problema temporal impidió que [!DNL CAPS] se conectara a GitHub
 
-**Solución:** Espere unos minutos y vuelva a intentar la operación. Si el error persiste, ponte en contacto con el [servicio de asistencia en Adobe Commerce Cloud](https://experienceleague.adobe.com/home?lang=es#support)
+**Solución:** Espere unos minutos y vuelva a intentar la operación. Si el error persiste, ponte en contacto con el [servicio de asistencia en Adobe Commerce Cloud](https://experienceleague.adobe.com/home#support)
 
 #### &quot;Entorno no creado dentro del tiempo de espera&quot; (proyecto conectado a GitHub)
 
@@ -180,7 +180,7 @@ Si la Opción 1 no resuelve su problema, continúe con la Opción 2.
 
 **Causa:** La integración de GitHub del proyecto tiene deshabilitada la opción `fetch-branches`, por lo que las ramas temporales [!DNL CAPS] inserciones no se sincronizan y el entorno de integración nunca se crea.
 
-**Solución:** Habilite la opción [`fetch-branches` de la integración](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github#enable-the-github-integration) y vuelva a intentar la operación. Consulte [Configurar la integración de GitHub para [!DNL CAPS]](github-integration.md).
+**Solución:** Habilite la opción [`fetch-branches` de la integración](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github#enable-the-github-integration) y vuelva a intentar la operación. Consulte [Configurar la integración de GitHub para [!DNL CAPS]](github-integration.md).
 
 ### Errores de recursos y cuotas
 
@@ -243,8 +243,8 @@ Para obtener información técnica más detallada:
 
 ### Temas relacionados
 
-* [Documentación de Adobe Commerce Cloud](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/overview)
-* [Guía de instalación de Adobe Commerce](https://experienceleague.adobe.com/es/docs/commerce-operations/installation-guide/overview)
+* [Documentación de Adobe Commerce Cloud](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview)
+* [Guía de instalación de Adobe Commerce](/help/installation/overview.md)
 * [Introducción a CAPS](intro.md)
 * [Cómo acceder a](access.md)
 * [Resumen de flujo de trabajo](workflow.md)
