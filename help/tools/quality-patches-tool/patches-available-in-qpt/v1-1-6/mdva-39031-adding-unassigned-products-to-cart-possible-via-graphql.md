@@ -28,7 +28,7 @@ El parche MDVA-39031 soluciona el problema de que es posible añadir un producto
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de la herramienta Parches de Calidad. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de la herramienta Parches de Calidad. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
@@ -42,9 +42,9 @@ Es posible añadir un producto al carro de compras mediante GraphQL aunque no es
 
    <pre>
     <code class="language-graphql">
-    mutation{
+    mutation&lbrace;
      createEmptyCart
-    }
+    &rbrace;
     </code>
     </pre>
 
@@ -52,9 +52,9 @@ Es posible añadir un producto al carro de compras mediante GraphQL aunque no es
 
    <pre>
     <code class="language-graphql">
-    {
+    &lbrace;
       "Store":"en_au"
-    }
+    &rbrace;
     </code>
     </pre>
 
@@ -62,27 +62,27 @@ Es posible añadir un producto al carro de compras mediante GraphQL aunque no es
 
    <pre>
     <code class="language-graphql">
-    mutation {
+    mutation &lbrace;
       addProductsToCart(
           cartId: "XHrUN2nJ37OqDByhtL0VC8OxYsEZs41c"
-          cartItems: [
-            {
+          cartItems: &lbrack;
+            &lbrace;
               quantity: 1
               sku: "p1"
-            }
-          ]
-        ) {
-          cart {
-           items {
-            product {
+            &rbrace;
+          &rbrack;
+        ) &lbrace;
+          cart &lbrace;
+           items &lbrace;
+            product &lbrace;
               name
               sku
-            }
+            &rbrace;
             quantity
-          }
-        }
-      }
-    }
+          &rbrace;
+        &rbrace;
+      &rbrace;
+    &rbrace;
     </code>
     </pre>
 
@@ -90,9 +90,9 @@ Es posible añadir un producto al carro de compras mediante GraphQL aunque no es
 
    <pre>
     <code class="language-graphql">
-    {
+    &lbrace;
       "Store":"en_au"
-    }
+    &rbrace;
     </code>
     </pre>
 

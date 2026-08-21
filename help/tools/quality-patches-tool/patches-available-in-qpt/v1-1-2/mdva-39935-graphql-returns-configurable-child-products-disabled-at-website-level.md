@@ -28,7 +28,7 @@ Adobe Commerce (todos los métodos de implementación) 2.4.1 - 2.4.3
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de la herramienta Parches de Calidad. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de la herramienta Parches de Calidad. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
@@ -43,26 +43,26 @@ GraphQL devuelve productos secundarios configurables incluso después de que est
 
 <pre>
   <code class="language-graphql">
-{
-  products(filter: { sku: { eq: "cp1" } }) {
-    items {
+&lbrace;
+  products(filter: { sku: { eq: "cp1" } }) &lbrace;
+    items &lbrace;
       __typename
       name
       sku
-      ... on ConfigurableProduct {
-        variants {
-          product {
+      ... on ConfigurableProduct &lbrace;
+        variants &lbrace;
+          product &lbrace;
             __typename
             name
             sku
             color
             stock_status
-          }
-        }
-      }
-    }
-  }
-}
+          &rbrace;
+        &rbrace;
+      &rbrace;
+    &rbrace;
+  &rbrace;
+&rbrace;
 </code>
 </pre>
 

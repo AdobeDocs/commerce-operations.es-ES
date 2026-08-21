@@ -28,7 +28,7 @@ El parche MDVA-42341 resuelve el problema de que la consulta GraphQL categoryLis
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de la herramienta Parches de Calidad. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de la herramienta Parches de Calidad. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
@@ -43,19 +43,19 @@ La consulta GraphQL categoryList no filtra los resultados si una solicitud tiene
 
 <pre>
 <code class="language-graphql">
-{
-  categoryList(filters: {name: {match: "category1"}}) {
+&lbrace;
+  categoryList(filters: {name: {match: "category1"}&#x200B;}) &lbrace;
     uid
     level
     name
-    breadcrumbs {
+    breadcrumbs &lbrace;
       category_uid
       category_name
       category_level
       category_url_key
-    }
-  }
-}
+    &rbrace;
+  &rbrace;
+&rbrace;
 </code>
 </pre>
 
