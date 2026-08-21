@@ -35,7 +35,7 @@ Para generar el diccionario y comenzar la traducción:
 
 1. Puede empaquetar los diccionarios de traducción en un paquete de idioma y proporcionar el paquete al administrador de la tienda de Commerce.
 
-1. En el Administrador, el administrador del almacén [configura las traducciones](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-localize).
+1. En el Administrador, el administrador del almacén [configura las traducciones](https://experienceleague.adobe.com/es/docs/commerce-admin/stores-sales/site-store/store-localize).
 
 Opciones de comando:
 

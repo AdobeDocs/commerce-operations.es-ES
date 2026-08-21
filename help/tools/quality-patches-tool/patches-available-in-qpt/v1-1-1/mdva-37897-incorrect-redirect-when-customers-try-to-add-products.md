@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-37897: redirección incorrecta al añadir productos de productos vistos recientemente'
-description: El parche MDVA-37897 resuelve el problema de la redirección incorrecta cuando los usuarios intentan agregar productos con opciones del widget de elementos visualizados recientemente. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.1. El ID del parche es MDVA-37897. Tenga en cuenta que está programado que el problema se corrija en la versión 2.4.4 de Adobe Commerce.
+description: El parche MDVA-37897 resuelve el problema de la redirección incorrecta cuando los usuarios intentan agregar productos con opciones del widget de elementos visualizados recientemente. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.1. El ID del parche es MDVA-37897. Tenga en cuenta que está programado que el problema se corrija en la versión 2.4.4 de Adobe Commerce.
 feature: Products
 role: Admin
 exl-id: d4d1d735-38e4-455e-9045-a2443ce33851
@@ -54,7 +54,7 @@ Se le redirigirá a la página de lista de productos.
 Para aplicar parches individuales, utilice los siguientes vínculos en función del tipo de implementación:
 
 * Adobe Commerce on-premise: [Guía de actualización de software > Aplicar parches](/help/tools/quality-patches-tool/usage.md) en nuestra documentación para desarrolladores.
-* Adobe Commerce en nuestra infraestructura de nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) en nuestra documentación para desarrolladores.
+* Adobe Commerce en nuestra infraestructura de nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) en nuestra documentación para desarrolladores.
 
 ## Lectura relacionada
 
@@ -63,4 +63,4 @@ Para obtener más información sobre parches de calidad para Adobe Commerce, con
 * [Lanzamiento de la herramienta Parches de calidad: una nueva herramienta para autodistribuir parches de calidad](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) en la base de conocimiento de asistencia.
 * [Compruebe si el parche está disponible para su problema de Adobe Commerce mediante la herramienta Parches de calidad](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) en la guía [!DNL Quality Patches Tool].
 
-Para obtener información sobre otros parches disponibles en QPT, consulte la sección [Parches disponibles en QPT](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html).
+Para obtener información sobre otros parches disponibles en QPT, consulte la sección [Parches disponibles en QPT](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es).

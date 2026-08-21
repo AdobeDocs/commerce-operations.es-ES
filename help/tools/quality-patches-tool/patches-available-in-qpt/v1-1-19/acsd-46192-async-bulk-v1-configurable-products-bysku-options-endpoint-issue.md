@@ -1,6 +1,6 @@
 ---
 title: 'ACSD-46192: problema con el extremo async/bulk/V1/configurable-products/bySku/options'
-description: El parche ACSD-46192 corrige el problema con el punto de conexión "async/bulk/V1/configurable-products/bySku/options". Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.19. El ID del parche es ACSD-46192. Tenga en cuenta que el problema se solucionó en Adobe Commerce 2.4.5.
+description: El parche ACSD-46192 corrige el problema con el punto de conexión "async/bulk/V1/configurable-products/bySku/options". Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.19. El ID del parche es ACSD-46192. Tenga en cuenta que el problema se solucionó en Adobe Commerce 2.4.5.
 feature: Configuration, Products
 role: Admin
 exl-id: 5a54f4b5-8467-40de-9d8f-ba46880ed5ad
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->El parche ACSD-46192 está parcialmente obsoleto, ya que este problema se soluciona con el parche de seguridad obligatorio [APSB25-08](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27149).
+>El parche ACSD-46192 está parcialmente obsoleto, ya que este problema se soluciona con el parche de seguridad obligatorio [APSB25-08](https://experienceleague.adobe.com/es/docs/experience-cloud-kcs/kbarticles/ka-27149).
 
 La revisión ACSD-46192 corrige el problema con el extremo `async/bulk/V1/configurable-products/bySku/options`. Este parche está disponible cuando está instalada la [Herramienta Parches de calidad (QPT)](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.19. El ID del parche es ACSD-46192. Tenga en cuenta que el problema se solucionó en Adobe Commerce 2.4.5.
 
@@ -90,7 +90,7 @@ TypeError: Argument 3 passed to Magento\Framework\Webapi\ServiceInputProcessor::
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
 * Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía [!DNL Quality Patches Tool].
-* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) en la guía Commerce en la infraestructura de la nube.
+* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) en la guía Commerce en la infraestructura de la nube.
 
 ## Lectura relacionada
 
@@ -99,4 +99,4 @@ Para obtener más información sobre la herramienta Parches de calidad, consulte
 * [Lanzamiento de la herramienta Parches de calidad: una nueva herramienta para autodistribuir parches de calidad](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) en la base de conocimiento de asistencia.
 * [Compruebe si el parche está disponible para su problema de Adobe Commerce mediante la herramienta Parches de calidad](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) en la guía [!DNL Quality Patches Tool].
 
-Para obtener información sobre otros parches disponibles en QPT, consulte [[!DNL Quality Patches Tool]: Buscar parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) en la guía [!DNL Quality Patches Tool].
+Para obtener información sobre otros parches disponibles en QPT, consulte [[!DNL Quality Patches Tool]: Buscar parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es) en la guía [!DNL Quality Patches Tool].

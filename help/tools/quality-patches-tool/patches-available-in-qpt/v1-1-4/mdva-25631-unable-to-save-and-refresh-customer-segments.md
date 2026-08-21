@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-25631: No se pueden guardar y actualizar los segmentos del cliente'
-description: El parche MDVA-25631 resuelve el problema en el que los usuarios no pueden guardar y actualizar segmentos de clientes que contienen un gran número de clientes. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.4. El ID del parche es MDVA-25631. Tenga en cuenta que el problema se solucionó en Adobe Commerce 2.4.2.
+description: El parche MDVA-25631 resuelve el problema en el que los usuarios no pueden guardar y actualizar segmentos de clientes que contienen un gran número de clientes. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.4. El ID del parche es MDVA-25631. Tenga en cuenta que el problema se solucionó en Adobe Commerce 2.4.2.
 feature: Customer Service
 role: Admin
 exl-id: 3cf40538-822a-4d3e-b8fa-20f9ef9228ae
@@ -55,7 +55,7 @@ Recibe un error de *500* porque se está agotando el tamaño de memoria permitid
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
 * Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía [!DNL Quality Patches Tool].
-* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) en la guía Commerce en la infraestructura de la nube.
+* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) en la guía Commerce en la infraestructura de la nube.
 
 ## Lectura relacionada
 

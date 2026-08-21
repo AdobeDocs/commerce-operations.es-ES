@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-41399: No se puede acceder a Administrar carro de compras si un cliente agrega un producto a la lista de deseos'
-description: El parche MDVA-41399 resuelve el problema en el que los usuarios administradores no pueden acceder a la página Administrar carro de compras si un cliente agrega un producto a la lista de deseos. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.6. El ID del parche es MDVA-41399. Tenga en cuenta que el problema se solucionó en Adobe Commerce 2.4.2.
+description: El parche MDVA-41399 resuelve el problema en el que los usuarios administradores no pueden acceder a la página Administrar carro de compras si un cliente agrega un producto a la lista de deseos. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.6. El ID del parche es MDVA-41399. Tenga en cuenta que el problema se solucionó en Adobe Commerce 2.4.2.
 feature: Orders, Products, Shopping Cart
 role: Admin
 exl-id: 81a128b5-0c38-4f8f-b297-1f264952d431
@@ -59,7 +59,7 @@ El usuario administrador recibe un mensaje de error: *Se produjo un error. Consu
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
 * Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía [!DNL Quality Patches Tool].
-* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) en la guía Commerce en la infraestructura de la nube.
+* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) en la guía Commerce en la infraestructura de la nube.
 
 ## Lectura relacionada
 

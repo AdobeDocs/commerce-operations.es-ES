@@ -25,8 +25,8 @@ La guía _Configuración_ proporciona material de referencia e instrucciones lim
 
 ## Configuración de administración de Commerce
 
-Hay temas correspondientes en la [Guía del usuario de Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/config/guide-overview) que pueden ayudarle a comprender las descripciones de los campos de cada configuración en el Administrador de Commerce.
+Hay temas correspondientes en la [Guía del usuario de Commerce](https://experienceleague.adobe.com/es/docs/commerce-admin/config/guide-overview) que pueden ayudarle a comprender las descripciones de los campos de cada configuración en el Administrador de Commerce.
 
 ## Configuración de nube
 
-[!DNL Commerce on cloud infrastructure] usa un [conjunto de archivos de configuración](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/overview) para actualizar las características y servicios de la aplicación Commerce en los entornos hospedados. Debido a la naturaleza única de los entornos alojados en la nube de Adobe, siempre debe revisar la [Guía de nube](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview) para conocer los requisitos de configuración adicionales.
+[!DNL Commerce on cloud infrastructure] usa un [conjunto de archivos de configuración](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/configure/overview) para actualizar las características y servicios de la aplicación Commerce en los entornos hospedados. Debido a la naturaleza única de los entornos alojados en la nube de Adobe, siempre debe revisar la [Guía de nube](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/overview) para conocer los requisitos de configuración adicionales.

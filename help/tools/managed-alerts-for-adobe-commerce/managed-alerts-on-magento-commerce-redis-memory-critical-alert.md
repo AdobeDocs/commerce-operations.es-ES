@@ -43,13 +43,13 @@ Siga estos pasos para identificar y solucionar los problemas de la causa.
 
 **Como se trata de una alerta crítica, se recomienda completar el paso 1 antes de intentar solucionar el problema (paso 2 en adelante).**
 
-1. Compruebe si existe un ticket de asistencia de Adobe Commerce. Para ver los pasos, consulte [Rastrear los vales de soporte](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#track-support-case) en la Base de conocimiento de soporte de Commerce. Es posible que la asistencia técnica ya haya recibido una alerta de umbral [!DNL New Relic], haya creado un ticket y haya empezado a trabajar en el problema. Si no existe ningún ticket, cree uno. El ticket debe tener la siguiente información:
+1. Compruebe si existe un ticket de asistencia de Adobe Commerce. Para ver los pasos, consulte [Rastrear los vales de soporte](https://experienceleague.adobe.com/es/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#track-support-case) en la Base de conocimiento de soporte de Commerce. Es posible que la asistencia técnica ya haya recibido una alerta de umbral [!DNL New Relic], haya creado un ticket y haya empezado a trabajar en el problema. Si no existe ningún ticket, cree uno. El ticket debe tener la siguiente información:
 
    * Motivo del contacto: seleccione **[!UICONTROL New Relic CRITICAL alert received]**.
    * Descripción de la alerta.
    * [[!DNL New Relic] vínculo de incidente](https://docs.newrelic.com/docs/alerts-applied-intelligence/new-relic-alerts/alert-incidents/view-violation-event-details-incidents/). Esto se incluye en [Alertas administradas para Adobe Commerce](managed-alerts-for-magento-commerce.md).
 
-1. Si no existe un vale de soporte, compruebe si la memoria usada de [!DNL Redis] está aumentando o disminuyendo. Para ello, vaya a la página [one.newrelic.com](https://login.newrelic.com) > **[!UICONTROL Infrastructure]** > **[!UICONTROL Third-party services]** y seleccione el panel [!DNL Redis]. Si es estable o aumenta, [envíe un vale de soporte técnico](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case) para que se actualice el clúster, o bien aumente el límite de `maxmemory` al siguiente nivel.
+1. Si no existe un vale de soporte, compruebe si la memoria usada de [!DNL Redis] está aumentando o disminuyendo. Para ello, vaya a la página [one.newrelic.com](https://login.newrelic.com) > **[!UICONTROL Infrastructure]** > **[!UICONTROL Third-party services]** y seleccione el panel [!DNL Redis]. Si es estable o aumenta, [envíe un vale de soporte técnico](https://experienceleague.adobe.com/es/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case) para que se actualice el clúster, o bien aumente el límite de `maxmemory` al siguiente nivel.
 1. Si no puede identificar la causa del aumento del consumo de memoria de [!DNL Redis], revise las tendencias recientes para identificar los problemas con las implementaciones de código o los cambios de configuración recientes (por ejemplo, nuevos grupos de clientes y grandes cambios en el catálogo). Se recomienda revisar los últimos siete días de actividad para cualquier correlación en implementaciones o cambios de código.
 1. Compruebe si hay extensiones de terceros con comportamiento incorrecto:
 
@@ -59,7 +59,7 @@ Siga estos pasos para identificar y solucionar los problemas de la causa.
 1. Si los pasos anteriores no le ayudan a identificar o solucionar el origen del problema, considere habilitar la caché L2 para reducir el tráfico de red entre la aplicación y [!DNL Redis]. Para obtener información general sobre qué es la caché L2, consulte [Almacenamiento en caché L2 en la aplicación Adobe Commerce](/help/configuration/cache/level-two-cache.md) en la Guía de configuración de Commerce. Para habilitar la caché L2 para la infraestructura en la nube, intente lo siguiente:
 
    * Actualice las herramientas de ECE si es inferior a la versión 2002.1.2.
-   * Configure la caché L2 usando [Use REDIS\_BACKEND variable](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#redis_backend) y actualizando el archivo `.magento.env.yaml`:
+   * Configure la caché L2 usando [Use REDIS\_BACKEND variable](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#redis_backend) y actualizando el archivo `.magento.env.yaml`:
 
    ```yaml
    stage:

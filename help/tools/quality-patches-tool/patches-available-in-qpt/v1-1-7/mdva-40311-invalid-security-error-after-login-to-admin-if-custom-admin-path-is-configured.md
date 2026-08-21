@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-40311: Error "Seguridad no válida o clave de formulario" después de iniciar sesión en el administrador si se ha configurado la ruta de administración personalizada'
-description: 'El parche de MDVA-40311 corrige el problema en el que el usuario administrador recibe un mensaje de error: *Seguridad o clave de formulario no válidas. Actualice la página*, después de iniciar sesión en el administrador, si la ruta de administración personalizada está configurada y la clave secreta está habilitada. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.7. El ID del parche es MDVA-40311. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.4.'
+description: 'El parche de MDVA-40311 corrige el problema en el que el usuario administrador recibe un mensaje de error: *Seguridad o clave de formulario no válidas. Actualice la página*, después de iniciar sesión en el administrador, si la ruta de administración personalizada está configurada y la clave secreta está habilitada. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.7. El ID del parche es MDVA-40311. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.4.'
 feature: Admin Workspace, Compliance, Security
 role: Admin
 exl-id: dce4914b-e32e-4af0-be24-e55680191fa3
@@ -51,7 +51,7 @@ El usuario puede iniciar sesión sin ningún mensaje de error.
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
 * Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía [!DNL Quality Patches Tool].
-* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) en la guía Commerce en la infraestructura de la nube.
+* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) en la guía Commerce en la infraestructura de la nube.
 
 ## Lectura relacionada
 
@@ -60,4 +60,4 @@ Para obtener más información sobre la herramienta Parches de calidad, consulte
 * [Lanzamiento de la herramienta Parches de calidad: una nueva herramienta para autodistribuir parches de calidad](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) en la base de conocimiento de asistencia.
 * [Compruebe si el parche está disponible para su problema de Adobe Commerce mediante la herramienta Parches de calidad](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) en la guía [!DNL Quality Patches Tool].
 
-Para obtener información sobre otros parches disponibles en QPT, consulte [[!DNL Quality Patches Tool]: Buscar parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) en la guía [!DNL Quality Patches Tool].
+Para obtener información sobre otros parches disponibles en QPT, consulte [[!DNL Quality Patches Tool]: Buscar parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es) en la guía [!DNL Quality Patches Tool].

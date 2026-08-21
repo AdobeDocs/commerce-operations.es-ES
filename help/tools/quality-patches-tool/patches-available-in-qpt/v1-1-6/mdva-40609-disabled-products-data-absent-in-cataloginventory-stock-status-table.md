@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-40609: datos de productos desactivados ausentes en la tabla cataloginventory_stock_status'
-description: El parche MDVA-40609 resuelve el problema en el que los datos de productos desactivados no se muestran en la tabla de índice cataloginventory_stock_status, lo que provoca la visualización de cantidades de productos incorrectas. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.6. El ID del parche es MDVA-40609. Tenga en cuenta que el problema se solucionó en Adobe Commerce 2.4.3.
+description: El parche MDVA-40609 resuelve el problema en el que los datos de productos desactivados no se muestran en la tabla de índice cataloginventory_stock_status, lo que provoca la visualización de cantidades de productos incorrectas. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.6. El ID del parche es MDVA-40609. Tenga en cuenta que el problema se solucionó en Adobe Commerce 2.4.3.
 feature: Catalog Management, Inventory, Orders, Products
 role: Admin
 exl-id: e207ee55-b6ce-4065-bae1-2be89dcf5092
@@ -61,7 +61,7 @@ Un inventario tiene un valor cero.
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
 * Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía [!DNL Quality Patches Tool].
-* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) en la guía Commerce en la infraestructura de la nube.
+* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) en la guía Commerce en la infraestructura de la nube.
 
 ## Lectura relacionada
 

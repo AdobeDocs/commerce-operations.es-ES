@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-26005: No se puede seleccionar la categoría en el árbol para las condiciones de regla de precio del carro de compras'
-description: El parche MDVA-26005 resuelve el problema en el que los usuarios no pueden seleccionar una categoría en el árbol de categorías para las condiciones de regla de precio del carro de compras. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.4. El ID del parche es MDVA-26005. Tenga en cuenta que el problema se solucionó en Adobe Commerce 2.3.6.
+description: El parche MDVA-26005 resuelve el problema en el que los usuarios no pueden seleccionar una categoría en el árbol de categorías para las condiciones de regla de precio del carro de compras. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.4. El ID del parche es MDVA-26005. Tenga en cuenta que el problema se solucionó en Adobe Commerce 2.3.6.
 feature: Categories, Orders, Price Rules, Shopping Cart
 role: Admin
 exl-id: 02d9eef4-89f0-48be-8bb9-c62bbdad76a5

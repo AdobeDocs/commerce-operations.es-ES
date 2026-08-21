@@ -17,16 +17,16 @@ Para tener acceso a los paquetes de Adobe Commerce, debe utilizar las claves aso
 
 >[!TIP]
 >
->Si encuentra [errores](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25968) o no ve la sección [!UICONTROL Access Keys] en la pestaña Marketplace, es posible que no tenga autorización para acceder al paquete o que el derecho de acceso haya caducado debido a una factura pendiente en su cuenta.
+>Si encuentra [errores](https://experienceleague.adobe.com/es/docs/experience-cloud-kcs/kbarticles/ka-25968) o no ve la sección [!UICONTROL Access Keys] en la pestaña Marketplace, es posible que no tenga autorización para acceder al paquete o que el derecho de acceso haya caducado debido a una factura pendiente en su cuenta.
 >
 >* Si es la persona de contacto principal de la cuenta, asegúrese de que no haya ninguna factura pendiente en la cuenta.
->* Si las claves proporcionadas por el contacto principal no funcionan y no hay facturas pendientes en la cuenta, el contacto principal debe ponerse en contacto con el [Soporte técnico de Adobe Commerce](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) para obtener ayuda.
+>* Si las claves proporcionadas por el contacto principal no funcionan y no hay facturas pendientes en la cuenta, el contacto principal debe ponerse en contacto con el [Soporte técnico de Adobe Commerce](https://experienceleague.adobe.com/es/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) para obtener ayuda.
 
 Para crear claves de autenticación:
 
 >[!NOTE]
 >
->A partir de agosto de 2022, el propietario de la cuenta debe tener un Adobe ID y asegurarse de que está vinculado a su cuenta de Commerce. Si el propietario de la cuenta no tiene un Adobe ID, debe crear uno y vincularlo a su cuenta de Commerce antes de generar las claves de autenticación: [Cree y acceda a su cuenta de Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-create#create-a-commerce-account)
+>A partir de agosto de 2022, el propietario de la cuenta debe tener un Adobe ID y asegurarse de que está vinculado a su cuenta de Commerce. Si el propietario de la cuenta no tiene un Adobe ID, debe crear uno y vincularlo a su cuenta de Commerce antes de generar las claves de autenticación: [Cree y acceda a su cuenta de Commerce](https://experienceleague.adobe.com/es/docs/commerce-admin/start/commerce-account/commerce-account-create#create-a-commerce-account)
 
 1. Inicie sesión en [Commerce Marketplace](https://commercemarketplace.adobe.com/). Si no tiene una cuenta, haga clic en **Registrar**.
 

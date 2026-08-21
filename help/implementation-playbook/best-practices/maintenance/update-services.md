@@ -23,9 +23,9 @@ Adobe Commerce en la infraestructura en la nube 2.4.x y posterior
 
 Actualice los servicios y componentes que utiliza Adobe Commerce antes de que lleguen a la fecha de fin de vida útil o estén cerca de ella. Esto ayuda a cumplir con PCI y a disminuir las vulnerabilidades de seguridad.
 
-Los clientes con planes de inicio pueden autoabastecerse con actualizaciones de servicios. Consulte [Cambiar la versión del servicio](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/services-yaml#change-service-version) para obtener más información sobre cómo hacerlo.
+Los clientes con planes de inicio pueden autoabastecerse con actualizaciones de servicios. Consulte [Cambiar la versión del servicio](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/configure/service/services-yaml#change-service-version) para obtener más información sobre cómo hacerlo.
 
-Los clientes con planes Pro solo pueden autoabastecerse con actualizaciones de servicios en su [entorno de integración](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27242). Para las actualizaciones de servicios en Producción, debe [enviar un vale de soporte](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) solicitando la actualización.
+Los clientes con planes Pro solo pueden autoabastecerse con actualizaciones de servicios en su [entorno de integración](https://experienceleague.adobe.com/es/docs/experience-cloud-kcs/kbarticles/ka-27242). Para las actualizaciones de servicios en Producción, debe [enviar un vale de soporte](https://experienceleague.adobe.com/es/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) solicitando la actualización.
 
 >[!WARNING]
 >
