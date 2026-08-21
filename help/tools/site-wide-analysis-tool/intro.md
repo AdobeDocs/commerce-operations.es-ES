@@ -25,7 +25,7 @@ Esta guía proporciona información general integral de [!DNL Site-Wide Analysis
 >
 >Después de aplicar una recomendación, puede tardar unos días en actualizarse en el panel de herramientas de análisis de todo el sitio o en el informe generado.
 >
->El [!DNL Site-Wide Analysis Tool] informa sobre datos de nivel de sistema. Para obtener informes sobre los datos de productos, ventas, marketing y otras aplicaciones de comercio de Adobe Commerce, consulte [Informes de Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/reports-menu).
+>El [!DNL Site-Wide Analysis Tool] informa sobre datos de nivel de sistema. Para obtener informes sobre los datos de productos, ventas, marketing y otras aplicaciones de comercio de Adobe Commerce, consulte [Informes de Adobe Commerce](https://experienceleague.adobe.com/es/docs/commerce-admin/start/reporting/reports-menu).
 
 ![Panel de herramientas de análisis en todo el sitio](../../assets/tools/swat-dashboard.png){width="700" zoomable="yes"}
 
@@ -38,8 +38,8 @@ Vea este [vídeo de introducción](https://www.youtube.com/watch?v=KW2R8ki_RG4) 
     También incluye un gráfico histórico para rastrear cómo cambia el estado del sitio web con el paso del tiempo.
   - Muestra **[!UICONTROL Security Center Widget]** que proporciona vínculos a los siguientes recursos:
     - [Tech [!DNL Stack] Cumplimiento de la versión con [!DNL end of life (EOL)]](/help/installation/system-requirements.md)
-    - [Boletín de seguridad de Adobe](https://helpx.adobe.com/security/security-bulletin.html)
-    - [Recomendaciones de  [!DNL Security Scan Tool]](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-scan)
+    - [Boletín de seguridad de Adobe](https://helpx.adobe.com/es/security/security-bulletin.html)
+    - [Recomendaciones de  [!DNL Security Scan Tool]](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/security/security-scan)
     - [[!DNL Site-Wide Analysis Tool] recomendaciones de seguridad de prácticas recomendadas](/help/tools/site-wide-analysis-tool/recommendations.md)
 
 - **Información**: proporciona información de contacto del cliente y un resumen de los tickets actuales, con información detallada sobre cada producto de Adobe Commerce instalado.
@@ -47,7 +47,7 @@ Vea este [vídeo de introducción](https://www.youtube.com/watch?v=KW2R8ki_RG4) 
 - **Recommendations**: proporciona una puntuación de índice de estado de [SWAT](swat-health-index.md) para realizar un seguimiento del estado del sitio y enumera recomendaciones basadas en las prácticas recomendadas para resolver los problemas detectados en el sitio:
   - Para los cambios que requieren una actualización de la infraestructura, envíe una solicitud de asistencia.
   - Para los cambios que requieran una actualización de la aplicación, realice los cambios usted mismo.
-  - Para cambios que requieran intervención manual como una [implementación de código](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow#deployment-workflow), pídale ayuda al administrador del sistema o a los desarrolladores.
+  - Para cambios que requieran intervención manual como una [implementación de código](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow#deployment-workflow), pídale ayuda al administrador del sistema o a los desarrolladores.
 
 - **Excepciones**: enumera los errores producidos por la aplicación debido a condiciones anómalas sin un controlador de errores.
 
@@ -60,9 +60,9 @@ Vea este [vídeo de introducción](https://www.youtube.com/watch?v=KW2R8ki_RG4) 
 Vea información importante sobre el sitio en un solo lugar. [!DNL Site-Wide Analysis Tool] le permite obtener acceso directo a la información de [!UICONTROL Security Center Widget], [!DNL Upgrade Compatibility Tool] y [!DNL Managed Alerts].
 
 - **[!UICONTROL Security Center Widget]** - Muestra información de seguridad para el sitio.<br>
-La información de seguridad incluye [Cumplimiento técnico [!DNL Stack] de la versión con [!DNL end of life (EOL)]](/help/installation/system-requirements.md), [Adobe Security Bulletin](https://helpx.adobe.com/security/security-bulletin.html), [Recommendations from the [!DNL Security Scan Tool]](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-scan), and [[!DNL Site-Wide Analysis Tool] Recomendaciones de seguridad de prácticas recomendadas](/help/tools/site-wide-analysis-tool/recommendations.md).
+La información de seguridad incluye [Cumplimiento técnico [!DNL Stack] de la versión con [!DNL end of life (EOL)]](/help/installation/system-requirements.md), [Adobe Security Bulletin](https://helpx.adobe.com/es/security/security-bulletin.html), [Recommendations from the [!DNL Security Scan Tool]](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/security/security-scan), and [[!DNL Site-Wide Analysis Tool] Recomendaciones de seguridad de prácticas recomendadas](/help/tools/site-wide-analysis-tool/recommendations.md).
 
-  [[!DNL Security Scan Tool]](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-scan) proporciona a los clientes de Adobe Commerce y Magento Open-Source información en tiempo real sobre la postura de seguridad de su tienda mediante la detección proactiva de malware y la alerta si su tienda está en peligro.
+  [[!DNL Security Scan Tool]](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/security/security-scan) proporciona a los clientes de Adobe Commerce y Magento Open-Source información en tiempo real sobre la postura de seguridad de su tienda mediante la detección proactiva de malware y la alerta si su tienda está en peligro.
 
 - **[[!DNL Upgrade Compatibility Tool]](../../upgrade/upgrade-compatibility-tool/overview.md)**: comprueba la instancia de Adobe Commerce en relación con la versión de actualización e indica los problemas, errores y advertencias críticos que se deben corregir antes de la actualización. Abordar estos problemas optimiza el proceso de actualización&quot;.
 

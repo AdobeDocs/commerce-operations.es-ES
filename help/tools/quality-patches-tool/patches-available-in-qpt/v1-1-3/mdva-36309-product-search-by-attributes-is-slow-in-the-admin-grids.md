@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-36309: La búsqueda de productos por atributos es lenta en las cuadrículas de administración'
-description: El parche MDVA-36309 soluciona el problema de que la búsqueda de productos por atributos es lenta en las cuadrículas de administración. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.3. El ID del parche es MDVA-36309. Tenga en cuenta que el problema se solucionó en Adobe Commerce 2.4.3.
+description: El parche MDVA-36309 soluciona el problema de que la búsqueda de productos por atributos es lenta en las cuadrículas de administración. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.3. El ID del parche es MDVA-36309. Tenga en cuenta que el problema se solucionó en Adobe Commerce 2.4.3.
 feature: Admin Workspace, Attributes, Products, Search
 role: Admin
 exl-id: fe23f129-15b4-4239-a699-4776587cc4b8
@@ -51,7 +51,7 @@ La búsqueda lleva mucho tiempo.
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
 * Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía [!DNL Quality Patches Tool].
-* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) en la guía Commerce en la infraestructura de la nube.
+* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) en la guía Commerce en la infraestructura de la nube.
 
 ## Lectura relacionada
 
