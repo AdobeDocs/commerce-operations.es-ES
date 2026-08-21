@@ -2,8 +2,8 @@
 title: Notas de la versión de Adobe Commerce 2.4.8 Security Patch
 description: Obtenga información acerca de las correcciones de errores de seguridad, las mejoras de seguridad y otras actualizaciones relacionadas con la seguridad incluidas en las versiones de parches de seguridad para Adobe Commerce 2.4.8.
 exl-id: 5f8866ed-9215-4b2e-9c77-b2d474f6c1f9
-last-update: 2026-05-13T00:00:00Z
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+last-update: 2026-08-19T00:00:00Z
+source-git-commit: 3c67ddaf060b11e58a101b2d45417f3779a5312b
 workflow-type: tm+mt
 source-wordcount: '804'
 ht-degree: 0%
@@ -132,7 +132,7 @@ Esta versión incluye los siguientes aspectos destacados:
 
 >[!BEGINSHADEBOX]
 
-Las correcciones para CVE-2025-47110 y VULN-31547 también están disponibles como parche aislado. Consulte el [artículo de la Base de conocimiento](https://experienceleague.adobe.com/es/docs/experience-cloud-kcs/kbarticles/ka-27181) para obtener detalles.
+Las correcciones para CVE-2025-47110 y VULN-31547 también están disponibles como parche aislado. Consulte el [artículo de la Base de conocimiento](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27181) para obtener detalles.
 
 >[!ENDSHADEBOX]
 

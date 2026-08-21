@@ -3,9 +3,9 @@ title: Información general de implementación
 description: Obtenga información sobre las estrategias de implementación para la aplicación de Commerce.
 feature: Configuration, Deploy
 exl-id: d5ed6fb3-2dd2-49df-802b-6d712ecd9ccf
-source-git-commit: dcc283b901917e3681863370516771763ae87462
+source-git-commit: b378f6da50e40b1868ae759cc7f3523a7e3ced4b
 workflow-type: tm+mt
-source-wordcount: '804'
+source-wordcount: '831'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ Utilizamos los siguientes términos para describir los sistemas implicados en la
 
 - **Sistema de ensayo**—_Opcional_. Si lo desea, puede configurar un sistema de ensayo para utilizarlo en las pruebas finales de todo el código integrado, incluidas las pruebas de aceptación de usuarios (UAT). Configure un sistema de ensayo del mismo modo que configura un sistema de producción. Excepto por el hecho de que el ensayo no es su tienda en directo y no procesa pedidos de clientes, es idéntico al de producción.
 
-- **Sistema de producción**—Su tienda en vivo. Aquí debe realizar cambios mínimos directos en la configuración y, desde luego, nada que no se haya probado en una instancia de ensayo. Si es posible, realice cambios de configuración con [Parches de datos](https://developer.adobe.com/commerce/php/development/components/declarative-schema/patches/) que se hayan probado en una instancia de ensayo/desarrollo.
+- **Sistema de producción**—Su tienda en vivo. Aquí debe realizar cambios mínimos directos en la configuración y, desde luego, nada que no se haya probado en una instancia de ensayo. Si es posible, realice cambios de configuración con [Parches de datos](https://developer.adobe.com/commerce/php/development/components/declarative-schema/patches) que se hayan probado en una instancia de ensayo/desarrollo.
 
 ## Otros métodos de implementación
 
@@ -70,12 +70,12 @@ Proporcionamos una forma de sincronizar la configuración de sus sistemas:
 
 - **Configuración confidencial**: configuración que debería _no_ estar en el control de código fuente porque expone información de identificación personal (PII) o configuraciones como claves de API o contraseñas.
 
-  El archivo de configuración específico del sistema, `app/etc/env.php`, debería _no_ incluirse en el control de código fuente o compartirse de otro modo entre sistemas. En su lugar, use los comandos [`magento config:set` y `magento:sensitive:set` &#x200B;](../cli/set-configuration-values.md) para proporcionar valores para esas configuraciones en el sistema de producción.
+  El archivo de configuración específico del sistema, `app/etc/env.php`, debería _no_ incluirse en el control de código fuente o compartirse de otro modo entre sistemas. En su lugar, use los comandos [`magento config:set` y `magento:sensitive:set` ](../cli/set-configuration-values.md) para proporcionar valores para esas configuraciones en el sistema de producción.
 
 >[!INFO]
 >
 >Estos nuevos métodos para administrar la configuración son opcionales. No es necesario, pero se recomienda encarecidamente que los utilice.
 
-La mayoría de las veces, las opciones de configuración establecidas en la configuración compartida, específica del sistema o confidencial no se pueden editar en el Administrador. Esto ayuda a mantener la coherencia de la configuración en todos los sistemas. (Opcionalmente, puede usar el comando [`magento config:set` &#x200B;](../cli/set-configuration-values.md) sin la opción `--lock` para configurar opciones que se pueden editar en el Administrador).
+La mayoría de las veces, las opciones de configuración establecidas en la configuración compartida, específica del sistema o confidencial no se pueden editar en el Administrador. Esto ayuda a mantener la coherencia de la configuración en todos los sistemas. (Opcionalmente, puede usar el comando [`magento config:set` ](../cli/set-configuration-values.md) sin la opción `--lock` para configurar opciones que se pueden editar en el Administrador).
 
 Cada opción de configuración de Commerce tiene una _ruta de configuración_ única. Para establecer un valor para una opción de configuración, puede utilizar un comando CLI o una variable de entorno para establecer el valor de esa ruta de configuración en un sistema específico.

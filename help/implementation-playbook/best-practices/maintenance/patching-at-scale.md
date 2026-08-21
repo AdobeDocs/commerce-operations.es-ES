@@ -5,9 +5,9 @@ role: Developer
 feature: Best Practices
 badge: label="Colaboró Tony Evers, arquitecto técnico senior de Adobe" type="Informative" url="https://www.linkedin.com/in/evers-tony/" tooltip="Colaboró Tony Evers"
 exl-id: 08c38dc5-3dc2-49ee-b56f-59e1718e12b5
-source-git-commit: 2c9f827326315bc4ef77d511dddce81e059a1092
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '1359'
+source-wordcount: '1361'
 ht-degree: 0%
 
 ---
@@ -33,8 +33,8 @@ Dado que hay muchos tipos diferentes de parches y muchas maneras de aplicarlos, 
 
 1. **Los parches de seguridad** forman parte de la base de código estático de una versión de Adobe Commerce.
 1. **Revisiones del compositor** a través de `composer install` y `composer update` complementos como [cweagans/composer-patch](https://packagist.org/packages/cweagans/composer-patches).
-1. **Todos los parches necesarios** están incluidos en el paquete [Parches de nube para Commerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches.html?lang=es).
-1. **parches de calidad** seleccionados incluidos en [[!DNL [Quality Patches Tool]]](../../../tools/quality-patches-tool/usage.md).
+1. **Todos los parches necesarios** están incluidos en el paquete [Parches de nube para Commerce](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches).
+1. **parches de calidad** seleccionados incluidos en [!DNL [Quality Patches Tool]](../../../tools/quality-patches-tool/usage.md).
 1. **Parches personalizados** y parches de soporte de Adobe Commerce en el directorio `/m2-hotfixes` en orden alfabético por nombre de parche.
 
    >[!IMPORTANT]
@@ -61,13 +61,13 @@ En resumen, este ejemplo de aplicación centralizada de parches requiere la crea
 
 - **Paquete de componentes:** `centralized-patcher`
 
-   - Define la lista de parches de calidad y `m2-hotfixes` para instalar
-   - Requiere el paquete `centralized-patcher-composer-plugin`, que ejecuta el comando `vendor/bin/magento-patches apply` después de `composer install` operaciones
+  - Define la lista de parches de calidad y `m2-hotfixes` para instalar
+  - Requiere el paquete `centralized-patcher-composer-plugin`, que ejecuta el comando `vendor/bin/magento-patches apply` después de `composer install` operaciones
 
 - **Paquete de complemento:** `centralized-patcher-composer-plugin`
 
-   - Define una clase PHP `CentralizedPatcher` que lee la lista de parches de calidad del paquete `centralized-patcher`
-   - Ejecuta el comando `vendor/bin/magento-patches apply` para instalar la lista de parches de calidad después de `composer install` operaciones
+  - Define una clase PHP `CentralizedPatcher` que lee la lista de parches de calidad del paquete `centralized-patcher`
+  - Ejecuta el comando `vendor/bin/magento-patches apply` para instalar la lista de parches de calidad después de `composer install` operaciones
 
 ### `centralized-patcher`
 
@@ -148,7 +148,7 @@ Para crear el paquete de componentes `centralized-patcher`:
    ```
 
 
-El atributo `quality-patches` del ejemplo de código anterior contiene dos parches de la [lista completa de parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es) como ejemplo.  Estas revisiones de calidad se instalan en todos los proyectos que requieren el paquete `centralized-patcher` mediante el comando `vendor/bin/magento-patches apply`.
+El atributo `quality-patches` del ejemplo de código anterior contiene dos parches de la [lista completa de parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) como ejemplo.  Estas revisiones de calidad se instalan en todos los proyectos que requieren el paquete `centralized-patcher` mediante el comando `vendor/bin/magento-patches apply`.
 
 Para realizar pruebas, puede crear un parche de ejemplo (`/m2-hotfixes/EXAMPLE-PATCH_2.4.6.patch`).
 
@@ -365,7 +365,7 @@ Al igual que con Adobe Commerce en la infraestructura en la nube, este artículo
 
 De este modo, puede gestionar de forma centralizada todos sus parches para todas sus instalaciones y garantizar mejor la seguridad y estabilidad de sus tiendas Adobe Commerce. Utilice los siguientes métodos para comprobar el estado del parche:
 
-- [Proyectos de infraestructura en nube](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=es#view-available-patches-and-status)
+- [Proyectos de infraestructura en nube](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches#view-available-patches-and-status)
 - [Proyectos locales](../../../tools/quality-patches-tool/usage.md#view-individual-patches)
 
 ## Ejemplos de código

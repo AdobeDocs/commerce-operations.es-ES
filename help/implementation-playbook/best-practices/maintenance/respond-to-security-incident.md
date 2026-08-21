@@ -3,9 +3,9 @@ title: Responder a un incidente de seguridad
 description: Gestione los incidentes de seguridad siguiendo las prácticas recomendadas para responder y solucionar los problemas de seguridad que afectan a la disponibilidad y el rendimiento del sitio.
 feature: Best Practices
 exl-id: 77275d37-4f1d-462d-ba11-29432791da6a
-source-git-commit: e63f68dd469564e70269154810cbfbd95d2b2e57
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '1287'
+source-wordcount: '1291'
 ht-degree: 0%
 
 ---
@@ -46,24 +46,24 @@ En el desafortunado caso de un compromiso con el sitio, estas son algunas recome
 - Póngase en contacto con el integrador de sistemas y el personal de seguridad adecuado para llevar a cabo tareas de investigación y corrección.
 
 - Determine el alcance del ataque:
-   - ¿Se accedió a la información de tarjeta de crédito?
-   - ¿Qué información fue robada?
-   - ¿Cuánto tiempo ha pasado desde el compromiso?
-   - ¿La información estaba encriptada?
+  - ¿Se accedió a la información de tarjeta de crédito?
+  - ¿Qué información fue robada?
+  - ¿Cuánto tiempo ha pasado desde el compromiso?
+  - ¿La información estaba encriptada?
 
 - Intente encontrar el vector de ataque para determinar cuándo y cómo se comprometió el sitio, revisando los archivos de registro del servidor y los cambios de archivo.
 
-   - En determinadas circunstancias, puede ser aconsejable borrar y volver a instalar todo o, en el caso del alojamiento virtual, crear una nueva instancia. El malware podría estar oculto en una ubicación insospechada a la espera de restaurarse.
+  - En determinadas circunstancias, puede ser aconsejable borrar y volver a instalar todo o, en el caso del alojamiento virtual, crear una nueva instancia. El malware podría estar oculto en una ubicación insospechada a la espera de restaurarse.
 
-   - Elimine todos los archivos innecesarios. A continuación, vuelva a instalar los archivos necesarios desde un origen limpio y conocido. Por ejemplo, puede volver a instalar con archivos del sistema de control de versiones o con los archivos de distribución originales de Adobe.
+  - Elimine todos los archivos innecesarios. A continuación, vuelva a instalar los archivos necesarios desde un origen limpio y conocido. Por ejemplo, puede volver a instalar con archivos del sistema de control de versiones o con los archivos de distribución originales de Adobe.
 
-   - Restablezca todas las credenciales, incluida la base de datos, el acceso a archivos, las integraciones de pago y envío, los servicios web y el inicio de sesión del administrador. Restablezca también todas las claves y cuentas de integración y API que puedan utilizarse para atacar el sistema.
+  - Restablezca todas las credenciales, incluida la base de datos, el acceso a archivos, las integraciones de pago y envío, los servicios web y el inicio de sesión del administrador. Restablezca también todas las claves y cuentas de integración y API que puedan utilizarse para atacar el sistema.
 
 ## Análisis de un incidente
 
 El primer paso del análisis de incidentes es recopilar tantos hechos como sea posible y con la mayor rapidez posible. La recopilación de información sobre el incidente puede ayudar a determinar la causa potencial del mismo. Adobe Commerce proporciona las herramientas siguientes para ayudarle con el análisis de incidentes.
 
-- [Registros De Acciones De Administración De Auditoría](https://experienceleague.adobe.com/docs/commerce-admin/systems/action-logs/action-log-report.html?lang=es).
+- [Registros De Acciones De Administración De Auditoría](https://experienceleague.adobe.com/docs/commerce-admin/systems/action-logs/action-log-report.html).
 
   El informe Registros de acciones muestra un registro detallado de todas las acciones de administración habilitadas para el registro. Cada registro tiene una marca de hora y registra la dirección IP y el nombre del usuario. El detalle del registro incluye los datos de usuario de administración y los cambios relacionados que se realizaron durante la acción.
 
@@ -73,13 +73,13 @@ El primer paso del análisis de incidentes es recopilar tantos hechos como sea p
 
   Use la ficha **Seguridad** de la herramienta para tener una visión clara de los posibles problemas de seguridad y ayudar a identificar las causas principales y mantener el rendimiento óptimo de los sitios.
 
-- Analizar registros con [Registros de New Relic](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service.html?lang=es)
+- Analizar registros con [Registros de New Relic](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/new-relic/new-relic-service)
 
-  Los proyectos Pro de Adobe Commerce en infraestructura en la nube incluyen el servicio [Registros de New Relic](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/monitor/new-relic/log-management.html?lang=es). El servicio está preconfigurado para agregar todos los datos de registro de los entornos de ensayo y producción y mostrarlos en un panel de administración de registros centralizado, donde puede buscar y visualizar los datos agregados.
+  Los proyectos Pro de Adobe Commerce en infraestructura en la nube incluyen el servicio [Registros de New Relic](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/new-relic/log-management). El servicio está preconfigurado para agregar todos los datos de registro de los entornos de ensayo y producción y mostrarlos en un panel de administración de registros centralizado, donde puede buscar y visualizar los datos agregados.
 
   Para otros proyectos de Commerce, puede configurar y utilizar el servicio [Registros de New Relic](https://docs.newrelic.com/docs/logs/get-started/get-started-log-management/) para completar las tareas siguientes:
-   - Use [consultas de New Relic](https://docs.newrelic.com/docs/logs/new-relic-logs/ui-data/query-syntax-logs) para buscar datos de registro agregados.
-   - Visualice los datos de registro mediante la aplicación New Relic Logs.
+  - Use [consultas de New Relic](https://docs.newrelic.com/docs/logs/new-relic-logs/ui-data/query-syntax-logs) para buscar datos de registro agregados.
+  - Visualice los datos de registro mediante la aplicación New Relic Logs.
 
 ## Cuentas de auditoría, código y base de datos
 
@@ -89,17 +89,17 @@ Continúe monitorizando de cerca el sitio después del incidente, ya que muchos 
 
 ### Auditar cuentas de usuario de administración
 
-- [Revisar el acceso de los usuarios administradores](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions-users-all.html?lang=es): elimine las cuentas antiguas, no utilizadas o sospechosas y gire las contraseñas de todos los usuarios administradores.
+- [Revisar el acceso de los usuarios administradores](https://experienceleague.adobe.com/docs/commerce-admin/systems/user-accounts/permissions-users-all.html): elimine las cuentas antiguas, no utilizadas o sospechosas y gire las contraseñas de todos los usuarios administradores.
 
-- [Revisar la configuración de seguridad de administración](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-admin.html?lang=es): compruebe que la configuración de seguridad de administración sigue las prácticas recomendadas de seguridad.
+- [Revisar la configuración de seguridad de administración](https://experienceleague.adobe.com/docs/commerce-admin/systems/security/security-admin.html): compruebe que la configuración de seguridad de administración sigue las prácticas recomendadas de seguridad.
 
-- [Revise las cuentas de usuario de Adobe Commerce en los proyectos de infraestructura en la nube](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html?lang=es): elimine las cuentas antiguas, no utilizadas o sospechosas y gire las contraseñas de todos los usuarios administradores de proyectos en la nube. Asegúrese de que la configuración de seguridad de la cuenta es correcta.
+- [Revise las cuentas de usuario de Adobe Commerce en los proyectos de infraestructura en la nube](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/user-access): elimine las cuentas antiguas, no utilizadas o sospechosas y gire las contraseñas de todos los usuarios administradores de proyectos en la nube. Asegúrese de que la configuración de seguridad de la cuenta es correcta.
 
-- [Auditar claves SSH](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html?lang=es) para Adobe Commerce en la infraestructura en la nube: revise, elimine y gire las claves SSH.
+- [Auditar claves SSH](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/secure-connections) para Adobe Commerce en la infraestructura en la nube: revise, elimine y gire las claves SSH.
 
 ### Código de auditoría
 
-- Desde el administrador, revise la [configuración del encabezado y pie de página de HTML](https://experienceleague.adobe.com/docs/commerce-admin/content-design/design/page-setup.html?lang=es) en todos los niveles de ámbito, incluidos `website` y `store view`. Elimine cualquier código JavaScript desconocido de los scripts y las hojas de estilos, así como otras configuraciones de HTML. Conservar solo código reconocido, como fragmentos de seguimiento.
+- Desde el administrador, revise la [configuración del encabezado y pie de página de HTML](https://experienceleague.adobe.com/docs/commerce-admin/content-design/design/page-setup.html) en todos los niveles de ámbito, incluidos `website` y `store view`. Elimine cualquier código JavaScript desconocido de los scripts y las hojas de estilos, así como otras configuraciones de HTML. Conservar solo código reconocido, como fragmentos de seguimiento.
 
 - Compare el código base de producción actual con el código base almacenado en el Sistema de control de versiones (VCS).
 

@@ -4,9 +4,9 @@ description: Aprenda a solucionar los problemas de las bases de datos que ralent
 role: Developer, Admin
 feature: Best Practices
 exl-id: e40e0564-a4eb-43a8-89dd-9f6c5cedb4a7
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '541'
+source-wordcount: '595'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ Puede utilizar MySQL para identificar y resolver consultas de larga ejecución e
 Si el proyecto de Adobe Commerce está implementado en una arquitectura Pro, puede usar el Kit de herramientas de Percona para analizar las consultas.
 
 1. Ejecute el comando `pt-query-digest --type=slowlog` con los registros de consulta lentos de MySQL.
-   * Para encontrar la ubicación de los registros de consultas lentas, consulte **[!UICONTROL Log locations > Service Logs]**(https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/develop/test/log-locations#service-logs) en nuestra documentación para desarrolladores.
+   * Para encontrar la ubicación de los registros de consultas lentas, consulte **[!UICONTROL Log locations > Service Logs]**(https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/test/log-locations#service-logs) en nuestra documentación para desarrolladores.
    * Consulte la documentación de [Percona Toolkit > pt-query-digest](https://www.percona.com/doc/percona-toolkit/LATEST/pt-query-digest.html#pt-query-digest).
 1. En función de los problemas encontrados, realice pasos para corregir la consulta de modo que se ejecute más rápidamente.
 
@@ -66,7 +66,7 @@ Evite estos problemas definiendo una clave principal para cualquier tabla que no
 
    Cuando agregue el nodo, reemplace las variables `referenceID` y `column name` por sus valores personalizados.
 
-Para obtener más información, consulte [Configurar esquema declarativo](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration/) en nuestra documentación para desarrolladores.
+Para obtener más información, consulte [Configurar esquema declarativo](https://developer.adobe.com/commerce/php/development/components/declarative-schema/configuration) en nuestra documentación para desarrolladores.
 
 ## Identificación y eliminación de índices duplicados
 

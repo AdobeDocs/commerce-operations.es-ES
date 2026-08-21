@@ -2,8 +2,8 @@
 title: Notas de la versión de Adobe Commerce 2.4.7 Security Patch
 description: Obtenga información acerca de las correcciones de errores de seguridad, las mejoras de seguridad y otras actualizaciones relacionadas con la seguridad incluidas en las versiones de parches de seguridad para Adobe Commerce 2.4.7.
 exl-id: 38e5632b-c795-47d8-89dd-26bbaeb34e67
-last-update: 2026-05-12T00:00:00Z
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+last-update: 2026-08-19T00:00:00Z
+source-git-commit: 3c67ddaf060b11e58a101b2d45417f3779a5312b
 workflow-type: tm+mt
 source-wordcount: '1374'
 ht-degree: 0%
@@ -149,7 +149,7 @@ Para obtener la información más reciente sobre la corrección de errores de se
 
 >[!BEGINSHADEBOX]
 
-Esta versión también presenta compatibilidad con la [extensión compatible con HIPAA](https://experienceleague.adobe.com/es/docs/commerce-admin/start/compliance/hipaa-ready-service/overview) de Adobe Commerce.
+Esta versión también presenta compatibilidad con la [extensión compatible con HIPAA](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/hipaa-ready-service/overview) de Adobe Commerce.
 
 >[!ENDSHADEBOX]
 
@@ -217,12 +217,12 @@ Para obtener la información más reciente sobre la corrección de errores de se
 
 Esta versión incluye los siguientes aspectos destacados:
 
-* **Actualizar la configuración de contraseña de un solo uso [OTP](https://experienceleague.adobe.com/es/docs/commerce-admin/config/security/2fa) para Google Authenticator**: esta actualización es necesaria para resolver un error que se introdujo mediante un [cambio incompatible con versiones anteriores](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/highlights/#new-system-configuration-validation-for-two-factor-authentication-otp_window-value) en 2.4.7. La descripción del campo **[!UICONTROL OTP Window]** ahora proporciona una explicación precisa de la configuración y el valor predeterminado se ha cambiado de `1` a `29`.
+* **Actualizar la configuración de contraseña de un solo uso [OTP](https://experienceleague.adobe.com/en/docs/commerce-admin/config/security/2fa) para Google Authenticator**: esta actualización es necesaria para resolver un error que se introdujo mediante un [cambio incompatible con versiones anteriores](https://developer.adobe.com/commerce/php/development/backward-incompatible-changes/highlights/#new-system-configuration-validation-for-two-factor-authentication-otp_window-value) en 2.4.7. La descripción del campo **[!UICONTROL OTP Window]** ahora proporciona una explicación precisa de la configuración y el valor predeterminado se ha cambiado de `1` a `29`.
 
-* **Compatibilidad de la versión B2B**: para la compatibilidad con Commerce versión 2.4.7-p1, los comerciantes que tengan la extensión Adobe Commerce B2B deben actualizar a [B2B versión 1.4.2-p1](https://experienceleague.adobe.com/es/docs/commerce-admin/b2b/release-notes#b2b-v142-p1).
+* **Compatibilidad de la versión B2B**: para la compatibilidad con Commerce versión 2.4.7-p1, los comerciantes que tengan la extensión Adobe Commerce B2B deben actualizar a [B2B versión 1.4.2-p1](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/release-notes#b2b-v142-p1).
 
 ### Revisiones incluidas en esta versión
 
-Adobe Commerce 2.4.7-p1 resuelve un problema introducido en el ámbito de la migración de la integración de UPS de SOAP a la API de REST. Este problema afectaba a los clientes que realizaban envíos fuera de los EE. UU. e impedía que utilizaran las mediciones del sistema métrico/SI de kilogramos y centímetros para los paquetes con el fin de crear envíos con UPS. Consulte el artículo de la base de conocimiento [Migración del método de envío UPS de SOAP a la API RESTful](https://experienceleague.adobe.com/es/docs/experience-cloud-kcs/kbarticles/ka-27146) para obtener más detalles.
+Adobe Commerce 2.4.7-p1 resuelve un problema introducido en el ámbito de la migración de la integración de UPS de SOAP a la API de REST. Este problema afectaba a los clientes que realizaban envíos fuera de los EE. UU. e impedía que utilizaran las mediciones del sistema métrico/SI de kilogramos y centímetros para los paquetes con el fin de crear envíos con UPS. Consulte el artículo de la base de conocimiento [Migración del método de envío UPS de SOAP a la API RESTful](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27146) para obtener más detalles.
 
 <!-- Last updated from includes: 2026-04-08 15:01:38 -->

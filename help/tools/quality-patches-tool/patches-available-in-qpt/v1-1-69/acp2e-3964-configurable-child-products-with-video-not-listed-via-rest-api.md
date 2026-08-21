@@ -5,9 +5,9 @@ feature: Products, Media, REST, Catalog Management
 role: Admin, Developer
 type: Troubleshooting
 exl-id: 61c5b97c-79aa-4ee7-96b3-70924d2c85a0
-source-git-commit: 319f3232d1ba5f5ed7cdd10ce85b9d7ffbeec89a
+source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: '371'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ El parche ACP2E-3964 corrige el problema en el que los productos secundarios de 
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
@@ -39,7 +39,7 @@ Los productos secundarios de productos configurables con un vídeo en **[!UICONT
 1. Cree un nuevo producto configurable y añada un solo producto secundario.
 1. Edite el producto secundario y agregue un vídeo en **[!UICONTROL Images and Videos]** (por ejemplo, [https://vimeo.com/1084537](https://vimeo.com/1084537)).
 1. Guarde el producto secundario.
-1. Envíe una solicitud GET al extremo de la API REST: `rest/v1/configurable-products/%sku%/children` mediante un token de portador de administrador.
+1. Envíe una petición GET al extremo de la API REST: `rest/v1/configurable-products/%sku%/children` mediante un token de portador de administrador.
 
 <u>Resultados esperados</u>:
 
@@ -58,7 +58,7 @@ Error: Call to a member function getVideoProvider() on null in vendor/magento/mo
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
 * Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía [!DNL Quality Patches Tool].
-* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=es) en la guía Commerce en la infraestructura de la nube.
+* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) en la guía Commerce en la infraestructura de la nube.
 
 ## Lectura relacionada
 
