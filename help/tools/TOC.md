@@ -4,9 +4,9 @@ user-guide-description: Obtenga información sobre las distintas herramientas qu
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: e1ac67f8533c6a9f7948e982c3ddbd79f4e02855
+source-git-commit: c1fe8b4c04514603b6625f4b3cae5a9fac039cb1
 workflow-type: tm+mt
-source-wordcount: '10694'
+source-wordcount: '10695'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 0%
   - [Generación de un informe de estado del parche](commerce-version-tool/generate-report.md)
   - [Resolución de problemas](commerce-version-tool/troubleshooting.md)
   - [Notas de la versión](commerce-version-tool/release-notes.md)
-- MAYÚSCULAS {#caps-tool}
+- Automatización de parches {#caps-tool}
   - {hide-from-toc}[Introducción](caps-tool/intro.md)
   - {hide-from-toc}[Acceso](caps-tool/access.md)
   - {hide-from-toc}[Resumen del flujo de trabajo](caps-tool/workflow.md)
@@ -55,7 +55,7 @@ ht-degree: 0%
   - [Alertas administradas para Adobe Commerce: alerta de advertencia de CPU](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-cpu-warning-alert.md)
 - Herramienta Parches de calidad {#quality-patches-tool}
   - [[!DNL Quality Patches Tool]: herramienta de autoservicio para parches de calidad](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)
-  - [[!DNL Quality Patches Tool]: buscar parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es){target="_blank"}
+  - [[!DNL Quality Patches Tool]: buscar parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
   - [Uso](quality-patches-tool/usage.md)
   - [Notas de la versión](quality-patches-tool/release-notes.md)
   - Parches disponibles en la herramienta Parches de calidad {#patches-available-in-qpt}
@@ -1028,7 +1028,7 @@ ht-degree: 0%
       - [ACP2E-4552: La respuesta de GraphQL no devuelve el estado de la empresa](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4552.md)
       - [ACP2E-4496: Trabajo cron de Analytics degrada el rendimiento durante la ejecución](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4496.md)
       - [ACP2E-4488: Lento guardado/edición del producto de administración para grandes conjuntos de atributos](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4488.md)
-      - [ACP2E-4653: Condiciones del ámbito de la categoría de regla de precio del carro de compras que faltan en la API  [!DNL REST] &#x200B;](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4653.md)
+      - [ACP2E-4653: Condiciones del ámbito de la categoría de regla de precio del carro de compras que faltan en la API  [!DNL REST] ](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4653.md)
       - [ACP2E-4472: Presupuesto nulo creado mediante el flujo Iniciar sesión como cliente](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4472.md)
       - [ACP2E-4808: Visualización del peso del producto sin unidad de medida en la tienda](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4808.md)
       - [ACP2E-4533: Las imágenes de marcador de posición no se pueden cargar en la tienda cuando la URL incluye el código de tienda](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4533.md)
@@ -1109,4 +1109,4 @@ ht-degree: 0%
   - Recursos {#resources}
     - [Resolución de problemas](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting)
     - [Changelog](https://github.com/magento/data-migration-tool/blob/2.4/CHANGELOG.md)
-- [Volver a Guías operativas](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=es)
+- [Volver a Guías operativas](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
