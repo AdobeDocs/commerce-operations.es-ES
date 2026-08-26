@@ -24,11 +24,11 @@ Antes de aplicar los parches, asegúrese de que su entorno está preparado corre
 * **Cuenta de Adobe Commerce Cloud**
   * Suscripción activa a Adobe Commerce Cloud
   * Licencia válida de Adobe Commerce
-  * [Claves de autenticación del compositor](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/authentication-keys) configuradas para acceder al repositorio de Adobe Commerce
+  * [Claves de autenticación del compositor](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/develop/authentication-keys) configuradas para acceder al repositorio de Adobe Commerce
   * Permisos de proyectos y entornos
 
 * **Recursos de entorno**
-  * El proyecto tiene capacidad para crear un entorno de integración activo adicional para la operación de revisión. Consulte [Administrar ramas con la consola de Cloud](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/console-branches) para obtener información sobre los límites de entorno activos
+  * El proyecto tiene capacidad para crear un entorno de integración activo adicional para la operación de revisión. Consulte [Administrar ramas con la consola de Cloud](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/project/console-branches) para obtener información sobre los límites de entorno activos
   * Suficientes recursos de almacenamiento, CPU y memoria
   * Acceso de red a repositorios de Adobe
   * Entorno principal estable para la sincronización

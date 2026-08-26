@@ -35,7 +35,7 @@ Si no ve ningún proyecto en la interfaz de usuario de [!DNL Patching Automation
 
 ## Acceder a [!DNL Patching Automation]
 
-[!DNL Patching Automation] está disponible como una ficha dentro del panel [!DNL Site-Wide Analysis Tool]. Puede acceder a él desde el Panel de administración desde **Informes** > **Información del sistema** > **Herramienta de análisis de todo el sitio** en la barra lateral de administración. Consulte [Cómo acceder a la herramienta de análisis de todo el sitio](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/access) para conocer los requisitos previos y la configuración de permisos.
+[!DNL Patching Automation] está disponible como una ficha dentro del panel [!DNL Site-Wide Analysis Tool]. Puede acceder a él desde el Panel de administración desde **Informes** > **Información del sistema** > **Herramienta de análisis de todo el sitio** en la barra lateral de administración. Consulte [Cómo acceder a la herramienta de análisis de todo el sitio](https://experienceleague.adobe.com/es/docs/commerce-operations/tools/site-wide-analysis-tool/access) para conocer los requisitos previos y la configuración de permisos.
 
 Una vez que esté en el panel:
 
