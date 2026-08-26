@@ -1,17 +1,17 @@
 ---
-title: Guía de solución de problemas de [!DNL Cloud Automation Patching Service (CAPS)]
-description: Solucionar problemas comunes y mensajes de error en  [!DNL Cloud Automation Patching Service (CAPS)]
+title: Guía de solución de problemas de [!DNL Adobe Commerce Patching Automation]
+description: Solucionar problemas comunes y mensajes de error en  [!DNL Adobe Commerce Patching Automation]
 hide: true
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+source-git-commit: 1f92a1542c77954f10aa4c14de54f090581f9330
 workflow-type: tm+mt
-source-wordcount: '1128'
+source-wordcount: '1710'
 ht-degree: 0%
 
 ---
 
-# [!DNL Cloud Automation Patching Service (CAPS)] guía de solución de problemas
+# [!DNL Adobe Commerce Patching Automation] guía de solución de problemas
 
-Al usar [!DNL CAPS] para operaciones de revisión, puede encontrar mensajes de error y problemas que pueden impedir la aplicación o reversión de revisión correcta. Esta guía proporciona soluciones para los problemas más comunes.
+Al usar [!DNL Patching Automation] para operaciones de revisión, puede encontrar mensajes de error y problemas que pueden impedir la aplicación o reversión de revisión correcta. Esta guía proporciona soluciones para los problemas más comunes.
 
 ## Pasos rápidos de solución de problemas
 
@@ -22,6 +22,10 @@ Al usar [!DNL CAPS] para operaciones de revisión, puede encontrar mensajes de e
 * Examinar los registros de errores para obtener detalles técnicos
 * Siga las soluciones proporcionadas en esta guía
 
+>[!TIP]
+>
+>En Cloud Console, los registros de implementación están disponibles en la fuente de actividades del proyecto, incluso después de eliminar un entorno de integración temporal.
+
 ### Duración de operaciones de parche
 
 En la mayoría de los entornos, la siguiente cronología describe cuánto tiempo deben tardar las operaciones de parche, pero podría tardar más según el tamaño y la complejidad del entorno:
@@ -30,6 +34,10 @@ En la mayoría de los entornos, la siguiente cronología describe cuánto tiempo
 * **Parches:** de 5 a 15 minutos
 * **Procesamiento posterior:** de 10 a 40 minutos
 * **Total:** 15-60 minutos
+
+>[!NOTE]
+>
+>El tiempo posterior al procesamiento se calcula a partir del historial de implementación del entorno, por lo que puede quedar fuera del intervalo anterior en el caso de entornos de implementación inusualmente rápida o lenta.
 
 ### Cancelación de un parche en curso
 
@@ -47,9 +55,23 @@ En la mayoría de los entornos, la siguiente cronología describe cuánto tiempo
 
 ## Mensajes de error comunes y soluciones
 
+>[!NOTE]
+>
+>No todos los errores posibles se enumeran a continuación. Un error no enumerado durante la comprobación preliminar aparece como el &quot;Error durante la comprobación preliminar&quot; genérico; un error no enumerado durante la validación aparece como el &quot;Error durante el procesamiento posterior&quot; genérico; póngase en contacto con el soporte técnico con el texto de error exacto en cualquier caso. Durante la aplicación de parches, un error no anticipado muestra directamente el mensaje de error subyacente sin procesar en lugar de la reserva genérica.
+
+### Errores de preparación del entorno
+
+#### &quot;La última implementación no se realizó correctamente. Asegúrese de que el entorno sea estable antes de aplicar o revertir parches&quot;.
+
+**Cuando esto sucede:** Al comienzo de la comprobación preliminar, antes de cualquier validación específica del parche
+
+**Causa:** La implementación más reciente del entorno de destino no se completó correctamente
+
+**Solución:** Vuelva a implementar el entorno de destino y confirme que la implementación se completa correctamente (compruebe su registro de implementación en la consola de Cloud) antes de volver a intentar la operación de revisión.
+
 ### Errores de aplicación de parche
 
-#### &quot;No se puede aplicar el parche porque [!DNL CAPS] ha detectado estos problemas con el código base o el archivo de parche&quot;
+#### &quot;No se puede aplicar el parche porque [!DNL Patching Automation] ha detectado estos problemas con el código base o el archivo de parche&quot;
 
 **Cuando se produce:** Durante la comprobación preliminar
 
@@ -62,11 +84,11 @@ En la mayoría de los entornos, la siguiente cronología describe cuánto tiempo
 * Verifique que el parche sea compatible con su versión de Adobe Commerce
 * Considere la posibilidad de resolver conflictos manualmente o póngase en contacto con el soporte técnico
 
-#### &quot;Este parche no fue administrado por [!DNL CAPS]. No se puede revertir&quot;
+#### &quot;Está intentando revertir un parche que no se aplicó a través de [!DNL Patching Automation]. Es probable que el parche se haya aplicado manualmente&quot;.
 
 **Cuando se produce:** Durante las operaciones de reversión
 
-**Causa:** Está intentando revertir un parche que no se aplicó mediante [!DNL CAPS]
+**Causa:** Está intentando revertir un parche que no se aplicó mediante [!DNL Patching Automation]
 
 **Solución:** Use el mismo método que se usó para aplicar el parche originalmente o póngase en contacto con el soporte técnico para obtener ayuda manual
 
@@ -74,17 +96,28 @@ En la mayoría de los entornos, la siguiente cronología describe cuánto tiempo
 
 #### &quot;El entorno no está sincronizado con el elemento principal&quot;
 
-**Cuando se produce:** Durante la validación
+**Cuando esto sucede:** Durante la validación, en la comprobación de sincronización previa a la combinación, antes de que el entorno de integración se combine en el entorno de destino
 
-**Causa:** El entorno de integración difiere del entorno principal
+**Causa:** El entorno de integración difiere del entorno principal, normalmente porque el entorno de destino cambió mientras se estaba probando el parche
 
 **Soluciones:**
 
-* Sincronizar el entorno con la rama principal
-* Vuelva a intentar la operación de parche
+* Vuelva a intentar la operación de parche una vez que el entorno de destino esté estable
+* Evite realizar cambios en el entorno de destino mientras se lleva a cabo una operación de parche
 * Póngase en contacto con el servicio de asistencia si persisten problemas de sincronización
 
-#### &quot;No se cumplen las salvaguardias del entorno de producción&quot;
+#### &quot;Error de verificación posterior a la combinación: los entornos no están sincronizados después de la combinación&quot;.
+
+**Cuando esto sucede:** Durante la validación, después de que el entorno de integración ya se haya combinado en el entorno de destino
+
+**Causa:** El código del código de los dos entornos no coincide después de la combinación, normalmente un retraso temporal de propagación de la API Platform.sh en lugar de un conflicto real
+
+**Soluciones:**
+
+* Espere unos minutos y vuelva a comprobar el estado del entorno. Este problema a menudo se resuelve solo
+* Si los entornos siguen sin coincidir después de unos minutos, póngase en contacto con el Soporte técnico de Adobe.
+
+#### &quot;No se puede crear el trabajo de parche en el entorno de producción cuando cron está habilitado y el modo de mantenimiento está deshabilitado. Habilite el modo de mantenimiento y deshabilite los trabajos cron antes de aplicar los parches&quot;.
 
 **Cuando esto sucede:** Durante la comprobación preliminar de entornos de producción
 
@@ -95,57 +128,31 @@ En la mayoría de los entornos, la siguiente cronología describe cuánto tiempo
 * Habilite el modo de mantenimiento para su tienda de producción
 * Deshabilitar los trabajos cron en el entorno de producción
 * Compruebe que se cumplen ambas condiciones antes de volver a intentarlo
+* También puede seleccionar la casilla de verificación de anulación en la interfaz de usuario para omitir estas comprobaciones y continuar de todos modos. Utilice únicamente la opción de anulación si comprende el riesgo de aplicar parches a la producción sin esas garantías
 
 >[!IMPORTANT]
 >
-> [!DNL CAPS] no habilita automáticamente el modo de mantenimiento ni deshabilita los trabajos cron; usted debe realizar estos trabajos de forma externa
+> [!DNL Patching Automation] no habilita automáticamente el modo de mantenimiento ni deshabilita los trabajos cron; usted debe realizar estos trabajos de forma externa
 
-#### &quot;Se ha aplicado el parche, pero la comprobación de estado no ha funcionado. Considere la posibilidad de revertir&quot;
+#### &quot;La operación de revisión se completó, pero la comprobación de estado del entorno falló. Esto indica posibles problemas con la implementación. Revise el estado del entorno y considere la posibilidad de revertir el cambio&quot;.
 
-**Cuando ocurre:** Después de aplicar el parche durante la validación
+**Cuando esto sucede:** Después de aplicar el parche o de la reversión, durante la validación
 
-**Causa:** El parche se aplicó correctamente, pero no se pudo comprobar el estado
+**Causa:** El parche se aplicó o se revirtió correctamente, pero la comprobación de estado posterior no se realizó correctamente
 
 **Soluciones:**
 
-* Revisar los registros de aplicaciones para detectar errores específicos
-* Prueba manual de la funcionalidad esencial
-* Considere la posibilidad de revertir el parche si los problemas persisten
-* Póngase en contacto con el soporte si necesita ayuda
+* Pruebe los flujos de trabajo de tienda y de cierre de compra y administración críticos para confirmar si los clientes se ven afectados
+* En Cloud Console, revise el estado del entorno e inspeccione los registros de aplicación e implementación en la fuente de proyectos **Activity**. Busque errores asociados con la operación o implementación de parches.
+* Almacene en déclencheur una reimplementación manual para determinar si el error de comprobación de estado se debe a un problema transitorio de implementación o de infraestructura.
+* Si el problema persiste, revierta el parche. Si el parche lo administra [!DNL Patching Automation] y la operación está disponible, seleccione [!UICONTROL Revert]. Si la revisión es una revisión personalizada en el directorio `m2-hotfixes`, elimine el archivo de revisión del repositorio del proyecto. Confirme e inserte el cambio y, a continuación, vuelva a implementar el entorno.
+* Si el problema persiste, póngase en contacto con el Soporte técnico de Adobe. Incluya la siguiente información en su solicitud de soporte técnico: ID de proyecto de soporte, ID de entorno y este mensaje exacto: la última operación no se completó correctamente, por lo que es posible que el servicio de soporte técnico necesite confirmar el estado del entorno.
 
 ### Errores de autenticación y acceso
 
-#### &quot;Error de autenticación para el repositorio de Adobe Commerce&quot;
+#### &quot;Acceso denegado&quot;
 
-**Cuando ocurre:** Durante cualquier etapa
-
-**Causa:** credenciales de repositorio de Adobe Commerce no válidas o caducadas
-
-**Soluciones:**
-
-Existen dos opciones recomendadas para resolver este problema:
-
-**Opción 1: corregir `env:COMPOSER_AUTH` variable de nivel de entorno (recomendado)**
-
-* Asegúrese de haber configurado las credenciales correctas para `env:COMPOSER_AUTH`.
-* Para acceder a la configuración global, haga clic en el icono de engranaje en la parte superior izquierda de la interfaz de usuario del proyecto en la nube y, a continuación, seleccione la pestaña **Variables**.
-* Asegúrese de seleccionar _Disponible durante la compilación_ y deseleccione _Disponible durante la ejecución_.
-
-Si la Opción 1 no resuelve su problema, continúe con la Opción 2.
-
-**Opción 2: crear e implementar el archivo `auth.json` manualmente**
-
-* SSH en el servidor.
-* Recupere el contenido de la variable `env:COMPOSER_AUTH` actual mediante:\
-  `echo $COMPOSER_AUTH`
-* Copie todo el contenido del paso anterior (en formato JSON).
-* Cree un nuevo archivo de nombre `auth.json` con este contenido.
-* Confirme este archivo `auth.json` recién creado en el directorio raíz del repositorio.
-* Déclencheur una nueva implementación.
-
-#### &quot;Permisos insuficientes para el acceso al entorno&quot;
-
-**Cuando ocurre:** Durante la creación del entorno o el acceso
+**Cuando ocurre:** Cuando su cuenta carece de los permisos necesarios durante la creación o el acceso al entorno
 
 **Causa:** Su cuenta de usuario carece de los permisos necesarios
 
@@ -158,19 +165,19 @@ Si la Opción 1 no resuelve su problema, continúe con la Opción 2.
 
 ### Errores de integración de GitHub
 
-#### &quot;No hay credenciales de Git disponibles para el proveedor github. Instalar la aplicación CAPS de GitHub para este repositorio&quot;
+#### &quot;No hay credenciales de Git disponibles para el proveedor &quot;github&quot;. Instale la aplicación GitHub de automatización de parches para este repositorio&quot;
 
 **Cuando esto sucede:** Durante las operaciones de revisión de los proyectos conectados a GitHub
 
-**Causa:** La aplicación GitHub [!DNL CAPS] no está instalada en el repositorio
+**Causa:** La aplicación GitHub [!DNL Patching Automation] no está instalada en el repositorio
 
-**Solución:** Siga los pasos de [Configurar la integración de GitHub para [!DNL CAPS]](github-integration.md)
+**Solución:** Siga los pasos de [Configurar la integración de GitHub para [!DNL Patching Automation]](github-integration.md)
 
 #### &quot;Error de solicitud de API de GitHub&quot;
 
 **Cuando esto sucede:** Durante las operaciones de revisión para proyectos conectados a GitHub
 
-**Causa:** Un problema temporal impidió que [!DNL CAPS] se conectara a GitHub
+**Causa:** Un problema temporal impidió que el servicio se conectara a GitHub
 
 **Solución:** Espere unos minutos y vuelva a intentar la operación. Si el error persiste, ponte en contacto con el [servicio de asistencia en Adobe Commerce Cloud](https://experienceleague.adobe.com/home?lang=es#support)
 
@@ -178,37 +185,36 @@ Si la Opción 1 no resuelve su problema, continúe con la Opción 2.
 
 **Cuando ocurre:** Durante la creación del entorno de integración
 
-**Causa:** La integración de GitHub del proyecto tiene deshabilitada la opción `fetch-branches`, por lo que las ramas temporales [!DNL CAPS] inserciones no se sincronizan y el entorno de integración nunca se crea.
+**Causa:** La integración de GitHub del proyecto tiene deshabilitada la opción `fetch-branches`. Como resultado, las ramas temporales insertadas por el servicio no se sincronizan y el entorno de integración nunca se crea.
 
-**Solución:** Habilite la opción [`fetch-branches` de la integración](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github#enable-the-github-integration) y vuelva a intentar la operación. Consulte [Configurar la integración de GitHub para [!DNL CAPS]](github-integration.md).
+**Solución:** Habilite la opción [`fetch-branches` de la integración](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github#enable-the-github-integration) y vuelva a intentar la operación. Consulte [Configurar la integración de GitHub para [!DNL Patching Automation]](github-integration.md).
 
-### Errores de recursos y cuotas
+### Errores de activación del entorno
 
-#### &quot;Se ha superado la cuota de entorno&quot;
+#### &quot;No se puede activar el entorno de integración&quot;.
 
-**Cuando se produce:** Durante la creación del entorno
+**Cuando esto sucede:** Cuando [!DNL Patching Automation] no puede activar el entorno de integración temporal necesario para probar el parche de forma segura.
 
-**Causa:** Ha alcanzado el límite de entorno
+**Causa:** depende de los detalles adicionales que se muestran junto con el error:
 
-**Soluciones:**
+**Si los detalles mencionan paquetes de Compositor o Adobe Commerce:**
 
-* Desactivar entornos no utilizados
-* Limpieza de ramas e implementaciones antiguas
-* Póngase en contacto con el servicio de asistencia para solicitar aumento de cuota
-* Considere actualizar su plan
+* Inicie sesión en [https://account.magento.com/](https://account.magento.com/) (o pida al propietario de la cuenta que lo haga) y confirme que su cuenta tiene acceso a la base de código empresarial de Commerce.
+* Compruebe que el par de claves pública y privada del Compositor del proyecto sea correcto; consulte [Claves de autenticación](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/develop/authentication-keys).
+* Inicie sesión en [https://account.magento.com/](https://account.magento.com/) (o pídale al propietario de la cuenta que lo haga) y confirme que su cuenta tiene acceso a la base de código empresarial de Commerce.
+* Compruebe que las claves de autenticación pública y privada del Compositor del proyecto son correctas. Consulte [Claves de autenticación](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/develop/authentication-keys).
+* Confirme que el paquete llamado en el mensaje de error está disponible para su versión de Commerce. Ver [paquetes de Adobe Commerce](https://experienceleague.adobe.com/es/docs/commerce-operations/release/packages/adobe-commerce).
 
-#### &quot;Recursos insuficientes para la operación&quot;
+**Si los detalles mencionan espacios o recursos del entorno:**
 
-**Cuando ocurre:** Durante cualquier etapa
+* En Cloud Console, abra la descripción general del proyecto y revise los entornos y sus estados. Desactivar o eliminar cualquier entorno de integración que no se utilice: seleccione el entorno. Ir a **[!UICONTROL Settings]>[!UICONTROL General]**. Establezca el estado del entorno en inactivo.
 
-**Causa:** Su entorno carece de CPU, memoria o almacenamiento suficientes
+  También puede usar la CLI: `magento-cloud environment:list` / `magento-cloud environment:deactivate <environment-name>`
+* Compruebe que el proyecto tiene recursos suficientes, por ejemplo, espacio en disco.
+* Asegúrese de que el entorno principal sea estable (sin implementación activa) en el momento de la operación.
+* Póngase en contacto con el Soporte técnico de Adobe si necesita aumentar el límite de entornos.
 
-**Soluciones:**
-
-* Compruebe el uso de los recursos del entorno
-* Libere recursos limpiando archivos
-* Esperar a que los recursos estén disponibles
-* Póngase en contacto con el servicio de asistencia si persisten problemas de recursos
+**Por cualquier otra causa:** revise los registros de error detallados en la interfaz de usuario de automatización de parches o póngase en contacto con el servicio de soporte técnico con el texto exacto del error.
 
 ## Obtención de ayuda
 
@@ -228,7 +234,7 @@ Al ponerse en contacto con el servicio de asistencia, proporcione:
 
 * **ID de proyecto** - Su identificador de proyecto de Adobe Commerce Cloud
 * **Id. de entorno** - El entorno específico donde ocurrió el problema
-* **Id. de operación** - Identificador de operación [!DNL CAPS]
+* **Id. de operación** - Identificador de operación [!DNL Patching Automation]
 * **Detalles del error** - Completar mensajes de error y registros
 * **Pasos para reproducir**: lo que estaba haciendo cuando se produjo el error
 * **Intentos anteriores** - Lo que ya ha intentado resolver el problema
@@ -245,7 +251,7 @@ Para obtener información técnica más detallada:
 
 * [Documentación de Adobe Commerce Cloud](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/overview)
 * [Guía de instalación de Adobe Commerce](/help/installation/overview.md)
-* [Introducción a CAPS](intro.md)
+* [Introducción a la automatización de parches](intro.md)
 * [Cómo acceder a](access.md)
 * [Resumen de flujo de trabajo](workflow.md)
 * [Integración de GitHub](github-integration.md)

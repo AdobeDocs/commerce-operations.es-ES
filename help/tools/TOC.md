@@ -4,9 +4,9 @@ user-guide-description: Obtenga información sobre las distintas herramientas qu
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+source-git-commit: c1fe8b4c04514603b6625f4b3cae5a9fac039cb1
 workflow-type: tm+mt
-source-wordcount: '10678'
+source-wordcount: '10695'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 0%
   - [Generación de un informe de estado del parche](commerce-version-tool/generate-report.md)
   - [Resolución de problemas](commerce-version-tool/troubleshooting.md)
   - [Notas de la versión](commerce-version-tool/release-notes.md)
-- MAYÚSCULAS {#caps-tool}
+- Automatización de parches {#caps-tool}
   - {hide-from-toc}[Introducción](caps-tool/intro.md)
   - {hide-from-toc}[Acceso](caps-tool/access.md)
   - {hide-from-toc}[Resumen del flujo de trabajo](caps-tool/workflow.md)
@@ -1046,6 +1046,7 @@ ht-degree: 0%
       - [ACP2E-4709: Las páginas de CMS no se guardan en Page Builder cuando la jerarquía de páginas incluye comillas dobles](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4709.md)
     - Versión 1.1.82 {#v1-1-82}
       - [Información general:  [!DNL Quality Patches Tool] (QPT) v1.1.82](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/overview.md)
+      - [ACP2E-4840: la consulta de productos de GraphQL devuelve una cantidad nula para los productos en stock en existencias de inventario personalizadas](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4840.md)
       - [ACP2E-4695: Errores de memoria insuficiente del indexador de reglas de catálogo causados por un uso excesivo de la memoria](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4695.md)
       - [ACP2E-4194: Las solicitudes de GraphQL con nombres de filtro desconocidos causan registros de excepciones de PHP](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4194.md)
       - [ACP2E-4698: Page Builder La edición en línea de texto guarda URL de medios absolutos en lugar de la directiva portátil](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4698.md)

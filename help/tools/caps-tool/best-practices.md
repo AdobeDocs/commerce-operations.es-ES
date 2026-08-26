@@ -1,17 +1,17 @@
 ---
-title: Guía de prácticas recomendadas de [!DNL Cloud Automation Patching Service (CAPS)]
-description: Conozca las prácticas recomendadas para usar  [!DNL Cloud Automation Patching Service (CAPS)] de forma eficaz y segura
+title: Guía de prácticas recomendadas de [!DNL Adobe Commerce Patching Automation]
+description: Aprenda a usar [!DNL Adobe Commerce Patching Automation] para planear, validar y aplicar parches de forma segura, minimizando el riesgo de implementación y las interrupciones del servicio.
 hide: true
-source-git-commit: a11f18cf9736be873c84327d1a74e6eec6773ec2
+source-git-commit: 1f92a1542c77954f10aa4c14de54f090581f9330
 workflow-type: tm+mt
-source-wordcount: '614'
+source-wordcount: '672'
 ht-degree: 0%
 
 ---
 
-# Guía de prácticas recomendadas de [!DNL Cloud Automation Patching Service (CAPS)]
+# Guía de prácticas recomendadas de [!DNL Adobe Commerce Patching Automation]
 
-Las siguientes prácticas recomendadas son esenciales para realizar correctamente y de forma segura las operaciones de revisión con [!DNL Cloud Automation Patching Service] ([!DNL CAPS]). Esta guía proporciona prácticas recomendadas completas para realizar operaciones de parches eficaces, administrar el entorno y lograr la excelencia operativa.
+Las siguientes prácticas recomendadas son esenciales para realizar correctamente y de forma segura las operaciones de revisión con [!DNL Adobe Commerce Patching Automation]. Esta guía proporciona prácticas recomendadas completas para realizar operaciones de parches eficaces, administrar el entorno y lograr la excelencia operativa.
 
 ## Prácticas recomendadas de revisión previa
 
@@ -24,21 +24,21 @@ Antes de aplicar los parches, asegúrese de que su entorno está preparado corre
 * **Cuenta de Adobe Commerce Cloud**
   * Suscripción activa a Adobe Commerce Cloud
   * Licencia válida de Adobe Commerce
-  * Credenciales de acceso al repositorio configuradas
+  * [Claves de autenticación del compositor](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/develop/authentication-keys) configuradas para acceder al repositorio de Adobe Commerce
   * Permisos de proyectos y entornos
 
 * **Recursos de entorno**
-  * Ranuras de entorno disponibles para pruebas temporales
+  * El proyecto tiene capacidad para crear un entorno de integración activo adicional para la operación de revisión. Consulte [Administrar ramas con la consola de Cloud](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/project/console-branches) para obtener información sobre los límites de entorno activos
   * Suficientes recursos de almacenamiento, CPU y memoria
   * Acceso de red a repositorios de Adobe
   * Entorno principal estable para la sincronización
 
 * **Preparación del entorno de producción** (para aplicar parches de producción)
-  * Se puede activar el modo de mantenimiento
-  * Los trabajos Cron se pueden deshabilitar
-  * Procedimientos de ventana de mantenimiento establecidos
-  * Procedimientos de reversión documentados
-  * Plan de comunicación con las partes interesadas listo
+  * Habilitar modo de mantenimiento
+  * Deshabilitar trabajos de Cron
+  * Establecer procedimientos de ventana de mantenimiento
+  * Procedimientos de reversión de documentos
+  * Preparar plan de comunicación con las partes interesadas
 
 ## Prácticas recomendadas de aplicación de parches
 
@@ -141,7 +141,7 @@ Antes de aplicar los parches, asegúrese de que su entorno está preparado corre
 
 ## Resumen de las prácticas recomendadas clave
 
-### Prácticas recomendadas críticas para el éxito de [!DNL CAPS]
+### Prácticas recomendadas críticas para el éxito de [!DNL Patching Automation]
 
 * Realice pruebas siempre en la preproducción antes de aplicar parches a los entornos de producción
 * Habilitar el modo de mantenimiento y deshabilitar los trabajos cron para las operaciones de parches de producción
@@ -154,7 +154,7 @@ Antes de aplicar los parches, asegúrese de que su entorno está preparado corre
 
 ## Temas relacionados
 
-* [Introducción a CAPS](intro.md)
+* [Introducción a la automatización de parches](intro.md)
 * [Cómo acceder a](access.md)
 * [Resumen de flujo de trabajo](workflow.md)
 * [Integración de GitHub](github-integration.md)
