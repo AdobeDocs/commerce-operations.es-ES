@@ -4,9 +4,9 @@ description: Obtenga información sobre las versiones beta de Adobe Commerce y c
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
 badgePaas: label="PaaS" type="Informative" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe) y a proyectos locales."
 badgeSaas: label="SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+source-git-commit: ba69e06096892027bd50485eaf69cef94b40d6ce
 workflow-type: tm+mt
-source-wordcount: '1509'
+source-wordcount: '1713'
 ht-degree: 0%
 
 ---
@@ -30,6 +30,23 @@ El acceso anticipado a las funciones que Adobe está desarrollando permite a los
 ## Programas actuales de Beta
 
 Consulte las secciones siguientes para obtener una lista de los programas beta activos.
+
+### Clasificación de atributos (Beta público) {#attribute-ranking-public-beta}
+
+[!BADGE Solo SaaS]{type=Positive url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."}
+
+Las reglas de comercialización de [!DNL Adobe Commerce Optimizer] ahora admiten la clasificación de atributos **&#x200B;**, que aplica una acción de **Boost**, **Bury** o **Hide** automáticamente a los productos que coinciden con una o más condiciones de atributo (como marca, categoría o fabricante) sin requerir la selección de SKU individuales. La clasificación de atributos aparece en el editor de reglas junto con la clasificación inteligente y la clasificación manual. Úsalo con **todas las listas de productos**, **reglas de categoría** y **reglas de búsqueda**.
+
+**Ventajas principales**
+
+- Escale la comercialización en catálogos grandes segmentando valores de atributo en lugar de SKU individuales.
+- Aumente, entierre u oculte cada producto coincidente con una sola regla, por ejemplo, promocionando una marca completa o suprimiendo un color discontinuado.
+- Combine condiciones de atributo con una clasificación inteligente: los productos coincidentes tienen prioridad y los productos no coincidentes siguen ordenados según su estrategia de clasificación.
+- Establezca la intensidad de ampliación o enterramiento por condición para ajustar la intensidad con la que la regla afecta a los productos coincidentes.
+
+Para obtener más información, consulte [Clasificación de atributos](https://experienceleague.adobe.com/es/docs/commerce/optimizer/merchandising/rules/add#attribute-ranking) en la guía de reglas de comercialización.
+
+Para compartir comentarios sobre esta característica beta, envía un correo electrónico a [commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com).
 
 ### Coincidencia y clasificación de búsquedas (Private Beta)
 
