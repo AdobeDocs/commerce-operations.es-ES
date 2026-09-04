@@ -35,7 +35,7 @@ Consulte las secciones siguientes para obtener una lista de los programas beta a
 
 [!BADGE Solo SaaS]{type=Positive url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."}
 
-Las reglas de comercialización de [!DNL Adobe Commerce Optimizer] ahora admiten la clasificación de atributos ****, que aplica una acción de **Boost**, **Bury** o **Hide** automáticamente a los productos que coinciden con una o más condiciones de atributo (como marca, categoría o fabricante) sin requerir la selección de SKU individuales. La clasificación de atributos aparece en el editor de reglas junto con la clasificación inteligente y la clasificación manual. Úsalo con **todas las listas de productos**, **reglas de categoría** y **reglas de búsqueda**.
+Las reglas de comercialización de [!DNL Adobe Commerce Optimizer] ahora admiten la clasificación de atributos **&#x200B;**, que aplica una acción de **Boost**, **Bury** o **Hide** automáticamente a los productos que coinciden con una o más condiciones de atributo (como marca, categoría o fabricante) sin requerir la selección de SKU individuales. La clasificación de atributos aparece en el editor de reglas junto con la clasificación inteligente y la clasificación manual. Úsalo con **todas las listas de productos**, **reglas de categoría** y **reglas de búsqueda**.
 
 **Ventajas principales**
 
