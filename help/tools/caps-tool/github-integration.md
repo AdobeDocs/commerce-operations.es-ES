@@ -1,8 +1,7 @@
 ---
 title: Configurar la integración de GitHub para  [!DNL Adobe Commerce Patching Automation]
 description: Aprenda a instalar la aplicación  [!DNL Adobe Commerce Patching Automation] GitHub para habilitar las operaciones de revisión en los proyectos de Adobe Commerce Cloud conectados a GitHub.
-hide: true
-source-git-commit: 1f92a1542c77954f10aa4c14de54f090581f9330
+source-git-commit: d9f6fc714332638ae1dcfa92ac8abe274efe8a0b
 workflow-type: tm+mt
 source-wordcount: '444'
 ht-degree: 0%
@@ -17,7 +16,7 @@ Si su proyecto de Adobe Commerce Cloud está conectado a un repositorio de GitHu
 ## Requisitos previos
 
 * Una suscripción activa a Adobe Commerce Cloud
-* Ya hay configurada una [integración de GitHub](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github) para su proyecto de Adobe Commerce Cloud, con su opción [`fetch-branches` habilitada](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github#enable-the-github-integration). [!DNL Patching Automation] crea y inserta ramas de entorno de integración temporales, por lo que las operaciones de revisión no pueden crear el entorno cuando esta opción está deshabilitada.
+* Ya hay configurada una [integración de GitHub](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github) para su proyecto de Adobe Commerce Cloud, con su opción [`fetch-branches` habilitada](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github#enable-the-github-integration). [!DNL Patching Automation] crea y inserta ramas de entorno de integración temporales, por lo que las operaciones de revisión no pueden crear el entorno cuando esta opción está deshabilitada.
 * Repositorio alojado en [!DNL github.com]. No se admiten integraciones de GitHub configuradas con un dominio personalizado.
 * Acceso de propietario o administrador a la organización o al repositorio de GitHub
 

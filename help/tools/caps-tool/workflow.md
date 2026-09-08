@@ -1,8 +1,7 @@
 ---
 title: Resumen del flujo de trabajo [!DNL Adobe Commerce Patching Automation]
 description: Obtenga información acerca del proceso de  [!DNL Adobe Commerce Patching Automation] flujo de trabajo, incluida la terminología, las fases de flujo de trabajo y las operaciones para la administración automatizada de parches.
-hide: true
-source-git-commit: 1f92a1542c77954f10aa4c14de54f090581f9330
+source-git-commit: d9f6fc714332638ae1dcfa92ac8abe274efe8a0b
 workflow-type: tm+mt
 source-wordcount: '1127'
 ht-degree: 0%
@@ -82,7 +81,7 @@ Este enfoque proporciona lo siguiente:
 
 **Sin clonación de datos**: el entorno de integración no recibe una copia de los datos del entorno de destino (base de datos, medios u otro contenido almacenado); solo se usa el código base para aplicar y comprobar el parche
 
-**Requisitos de recursos**: la capacidad de almacenamiento total del proyecto de Cloud está definida en el contrato. (Consulte a través de la página de su cuenta o `magento-cloud subscription:info`). La asignación de disco de cada entorno se configura por separado mediante la propiedad `disk` en `.magento.app.yaml`/`.magento/services.yaml`. Consulte [Administrar espacio en disco](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/develop/storage/manage-disk-space) para obtener más información. Si falla una operación de revisión debido a limitaciones de almacenamiento, compare el uso de disco del entorno de integración (`magento-cloud db:size` / `magento-cloud mount:size`) con la asignación configurada.
+**Requisitos de recursos**: la capacidad de almacenamiento total del proyecto de Cloud está definida en el contrato. (Consulte a través de la página de su cuenta o `magento-cloud subscription:info`). La asignación de disco de cada entorno se configura por separado mediante la propiedad `disk` en `.magento.app.yaml`/`.magento/services.yaml`. Consulte [Administrar espacio en disco](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/storage/manage-disk-space) para obtener más información. Si falla una operación de revisión debido a limitaciones de almacenamiento, compare el uso de disco del entorno de integración (`magento-cloud db:size` / `magento-cloud mount:size`) con la asignación configurada.
 
 #### Fase 2b: aplicación de parches en el entorno de integración
 
