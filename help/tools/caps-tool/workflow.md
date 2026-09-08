@@ -1,7 +1,7 @@
 ---
 title: Resumen del flujo de trabajo [!DNL Adobe Commerce Patching Automation]
 description: Obtenga información acerca del proceso de  [!DNL Adobe Commerce Patching Automation] flujo de trabajo, incluida la terminología, las fases de flujo de trabajo y las operaciones para la administración automatizada de parches.
-source-git-commit: d9f6fc714332638ae1dcfa92ac8abe274efe8a0b
+source-git-commit: a56211744d35006924bd4ffd35c76ddb77118ed4
 workflow-type: tm+mt
 source-wordcount: '1127'
 ht-degree: 0%
@@ -63,7 +63,7 @@ La fase de comprobación preliminar valida que el parche se pueda aplicar de for
 
 ### Fase 2: aplicación de parches
 
-La fase de aplicación de parches aplica o revierte el parche en un entorno de integración temporal. Durante esta fase, el servicio crea un entorno de integración temporal para aplicar de forma segura el parche, confirmar que se implementa correctamente y verificar que pasa una comprobación de estado antes de realizar cualquier cambio en el entorno real.
+La fase de aplicación de parches aplica o revierte el parche en un entorno de integración temporal. Durante esta fase, el servicio crea un entorno de integración temporal para aplicar el parche de forma segura, confirmar que se implementa correctamente y verificar que pasa una comprobación de estado antes de realizar cualquier cambio en el entorno real.
 
 Este enfoque proporciona lo siguiente:
 
@@ -73,25 +73,25 @@ Este enfoque proporciona lo siguiente:
 
 #### Fase 2a: Creación del entorno de integración
 
-**Creación de rama** - [!DNL Patching Automation] crea una rama de entorno de integración temporal llamada `{target-environment}-CAPS-{patch-id}`
+**Creación de rama** — [!DNL Patching Automation] crea una rama de entorno de integración temporal llamada `{target-environment}-CAPS-{patch-id}`
 
-**Configuración del entorno**: el entorno de integración se crea como elemento secundario del entorno de destino
+**Configuración del entorno**: el entorno de integración se crea como secundario del entorno de destino
 
 **Sincronización de código**: el entorno de integración hereda el estado de código exacto del entorno de destino (el mismo código base)
 
 **Sin clonación de datos**: el entorno de integración no recibe una copia de los datos del entorno de destino (base de datos, medios u otro contenido almacenado); solo se usa el código base para aplicar y comprobar el parche
 
-**Requisitos de recursos**: la capacidad de almacenamiento total del proyecto de Cloud está definida en el contrato. (Consulte a través de la página de su cuenta o `magento-cloud subscription:info`). La asignación de disco de cada entorno se configura por separado mediante la propiedad `disk` en `.magento.app.yaml`/`.magento/services.yaml`. Consulte [Administrar espacio en disco](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/develop/storage/manage-disk-space) para obtener más información. Si falla una operación de revisión debido a limitaciones de almacenamiento, compare el uso de disco del entorno de integración (`magento-cloud db:size` / `magento-cloud mount:size`) con la asignación configurada.
+**Requisitos de recursos**: la capacidad de almacenamiento total del proyecto de Cloud está definida en el contrato. (Consulte a través de la página de su cuenta o `magento-cloud subscription:info`). La asignación de disco de cada entorno se configura por separado mediante la propiedad `disk` en `.magento.app.yaml`/`.magento/services.yaml`. Consulte [Administrar espacio en disco](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/storage/manage-disk-space) para obtener más información. Si falla una operación de revisión debido a limitaciones de almacenamiento, compare el uso de disco del entorno de integración (`magento-cloud db:size` / `magento-cloud mount:size`) con la asignación configurada.
 
 #### Fase 2b: aplicación de parches en el entorno de integración
 
 **Pruebas seguras**: el parche se aplica al entorno de integración, no directamente al entorno de destino
 
-**Administración de archivos** - Los archivos de revisión se colocan en la carpeta `m2-hotfixes`
+**Administración de archivos**: los archivos de revisión se colocan en la carpeta `m2-hotfixes`
 
 **Operaciones de Git**: los cambios se confirman y se insertan en la rama del entorno de integración
 
-**Activación del entorno**: el entorno de integración está activado para implementar el código al que se aplicó el parche
+**Activación del entorno**: el entorno de integración está activado para implementar el código al que se ha aplicado el parche
 
 **Comprobación de estado**: una vez activado, [!DNL Patching Automation] confirma lo siguiente antes de continuar con la combinación: el entorno de integración se implementó correctamente y está en buen estado, la aplicación se inicia y se puede acceder a sus conexiones de caché y base de datos.
 
@@ -103,7 +103,7 @@ Este enfoque proporciona lo siguiente:
 
 **Comprobación de sincronización**: antes de la combinación, el servicio confirma que el entorno de integración sigue activo, sincronizado con el entorno de destino y en buen estado. Si el destino ha cambiado durante el parche, la operación se detiene aquí en lugar de combinarse
 
-**Cierre de seguridad del entorno**: el servicio cierra el entorno de destino localmente
+**Cierre de seguridad del entorno** — El servicio cierra el entorno de destino localmente
 
 **Operación de combinación**: la rama del entorno de integración se combina con el entorno de destino
 

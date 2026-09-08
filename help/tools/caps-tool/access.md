@@ -1,9 +1,9 @@
 ---
 title: Cómo tener acceso a  [!DNL Adobe Commerce Patching Automation]
 description: Obtenga información sobre cómo acceder y utilizar  [!DNL Adobe Commerce Patching Automation]
-source-git-commit: d9f6fc714332638ae1dcfa92ac8abe274efe8a0b
+source-git-commit: e7e2cb120377e73f2a6f80edcacfcf644b48be84
 workflow-type: tm+mt
-source-wordcount: '336'
+source-wordcount: '335'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 1%
 Si no ve ningún proyecto en la interfaz de usuario de [!DNL Patching Automation], solicite acceso a la persona apropiada:
 
 * Póngase en contacto con el propietario de la cuenta o el administrador del proyecto
-* Ellos le otorgarán la función adecuada a través de la consola de Cloud
+* Pueden otorgarle la función adecuada a través de la consola en la nube
 * Una vez concedido el acceso, puede iniciar sesión en Cloud Console para utilizar el servicio
 
 >[!NOTE]
@@ -34,7 +34,7 @@ Si no ve ningún proyecto en la interfaz de usuario de [!DNL Patching Automation
 
 ## Acceder a [!DNL Patching Automation]
 
-[!DNL Patching Automation] está disponible como una ficha dentro del panel [!DNL Site-Wide Analysis Tool]. Puede acceder a él desde el Panel de administración desde **Informes** > **Información del sistema** > **Herramienta de análisis de todo el sitio** en la barra lateral de administración. Consulte [Cómo acceder a la herramienta de análisis de todo el sitio](https://experienceleague.adobe.com/es/docs/commerce-operations/tools/site-wide-analysis-tool/access) para conocer los requisitos previos y la configuración de permisos.
+[!DNL Patching Automation] está disponible como una ficha dentro del panel [!DNL Site-Wide Analysis Tool]. Puede acceder a él desde el panel de administración desde **Informes** > **Información del sistema** > **Herramienta de análisis de todo el sitio** en la barra lateral de administración. Consulte [Cómo acceder a la herramienta de análisis de todo el sitio](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/access) para conocer los requisitos previos y la configuración de permisos.
 
 Una vez que esté en el panel:
 
