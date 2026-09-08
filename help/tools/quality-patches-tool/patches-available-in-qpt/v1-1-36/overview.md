@@ -7,7 +7,7 @@ exl-id: ce2ee50b-246a-43b7-b520-d7a42749e0ee
 type: Troubleshooting
 source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
-source-wordcount: '223'
+source-wordcount: '228'
 ht-degree: 0%
 
 ---
@@ -25,6 +25,6 @@ QPT v1.1.36 incluye los siguientes parches:
 1. **ACSD-52736**: corrige el problema en el que un [!UICONTROL Cart Price Rule] que incluye requisitos para cantidad de productos configurables no funciona como se esperaba.
 1. **ACSD-47875**: corrige el problema en el cual los usuarios administradores no pueden agregar un producto al carro de compras de un cliente desde el Administrador para un ámbito de vista de tienda en particular con administración de inventario.
 1. **ACSD-53176**: corrige el problema en el que *[!UICONTROL Related Product Rule]* con la condición *[!UICONTROL is one of]* no coincide con los productos.
-1. **ACSD-51666**: corrige el error: *La sesión ha caducado; vuelva a iniciar sesión.* que sucede después de que un cliente intente iniciar sesión.
+1. **ACSD-51666**: corrige el error: *La sesión ha caducado; vuelva a iniciar sesión.* esto sucede después de que un cliente intente iniciar sesión.
 
 Utilice el menú de la izquierda para navegar a una página específica del parche.

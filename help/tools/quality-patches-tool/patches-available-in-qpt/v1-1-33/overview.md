@@ -7,7 +7,7 @@ exl-id: 31812668-1d24-4da6-992f-981c259e00da
 type: Troubleshooting
 source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
 workflow-type: tm+mt
-source-wordcount: '451'
+source-wordcount: '453'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Esta subsección proporciona una descripción detallada de los problemas corregi
 QPT v1.1.33 incluye los siguientes parches:
 
 1. **ACSD-50478**: corrige el comando de reversión de base de datos para un caso en el que el volcado de base de datos contiene déclencheur y un comando SQL delimitador.
-1. **ACSD-50512**: corrige el error: *El vínculo descargable no está relacionado con el producto. Compruebe el vínculo e inténtelo de nuevo.* que sucede al actualizar la fecha de inicio de una actualización descargable del ensayo de un producto.
+1. **ACSD-50512**: corrige el error: *El vínculo descargable no está relacionado con el producto. Compruebe el vínculo e inténtelo de nuevo.*  esto sucede al actualizar la fecha de inicio de una actualización de ensayo de producto descargable.
 1. **ACSD-50949**: corrige el problema en el que el filtro de precio de [!UICONTROL Advanced Search] no devuelve los resultados correctos cuando se usa junto con el filtro SKU.
 1. **ACSD-51645**: corrige el error producido al guardar un nuevo [!UICONTROL Cart Price Rule] si la extensión `Magento_OfflineShipping` está deshabilitada.
 1. **ACSD-50895**: corrige el problema en el que [!DNL Google Analytics] 3 etiquetas GTM no se activan si [!DNL Google Analytics] 4 GTM no está configurada.
@@ -31,7 +31,7 @@ QPT v1.1.33 incluye los siguientes parches:
 1. **ACSD-51792**: corrige el problema en el cual una página no tiene el evento de impresión cuando [!DNL Google Tag Manager] 4 está habilitado.
 1. **ACSD-51471**: corrige el problema en el cual un usuario administrador no puede guardar una actualización programada para un producto agrupado que usa un producto simple que tiene una actualización programada.
 1. **ACSD-51700**: corrige el error que se produce al cambiar de vista de tienda en una página de edición de producto descargable en el administrador.
-1. **ACSD-51120**: corrige el problema en el cual la caché de solicitudes de GraphQL GET no se borra para las páginas de CMS que contienen bloques de CMS que se actualizan mediante una actualización de ensayo.
+1. **ACSD-51120**: corrige el problema en el cual la caché de solicitudes GET de GraphQL no se borra para las páginas de CMS que contienen bloques de CMS que se actualizan mediante una actualización de ensayo.
 1. **ACSD-51240**: corrige el problema en el que falta el archivo cargado si el registro se realiza mediante el formulario de registro de empresa.
 1. **ACSD-51907**: corrige el problema por el que un usuario administrador restringido no puede crear un abono con un reembolso sin conexión.
 1. **ACSD-52148**: corrige el problema donde el inicio de sesión de [!UICONTROL Google V3 reCAPTCHA Admin] falla ocasionalmente.
