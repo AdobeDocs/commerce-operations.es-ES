@@ -1,8 +1,7 @@
 ---
 title: Guía de prácticas recomendadas de [!DNL Adobe Commerce Patching Automation]
 description: Aprenda a usar [!DNL Adobe Commerce Patching Automation] para planear, validar y aplicar parches de forma segura, minimizando el riesgo de implementación y las interrupciones del servicio.
-hide: true
-source-git-commit: 1f92a1542c77954f10aa4c14de54f090581f9330
+source-git-commit: d9f6fc714332638ae1dcfa92ac8abe274efe8a0b
 workflow-type: tm+mt
 source-wordcount: '672'
 ht-degree: 0%

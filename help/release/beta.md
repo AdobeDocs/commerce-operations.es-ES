@@ -4,9 +4,9 @@ description: Obtenga información sobre las versiones beta de Adobe Commerce y c
 exl-id: 662cb061-995f-4e09-a2ef-9e607cc0000b
 badgePaas: label="PaaS" type="Informative" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe) y a proyectos locales."
 badgeSaas: label="SaaS" type="Positive" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."
-source-git-commit: ba69e06096892027bd50485eaf69cef94b40d6ce
+source-git-commit: efdc4734b5c0db8efc0c83bef41e7ccaafd9b6af
 workflow-type: tm+mt
-source-wordcount: '1713'
+source-wordcount: '1475'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 Los programas de Beta para [soluciones de productos de Adobe Commerce](https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions) son una forma para que los comerciantes obtengan acceso a las características y el código de la versión preliminar, proporcionen comentarios y guíen el futuro de Adobe Commerce. Existen dos tipos de programas beta:
 
 - Beta público: Hay un programa beta público disponible para todos los clientes y socios de Adobe Commerce
-- Private Beta: Un programa beta privado puede requerir una aprobación basada en los criterios de calificación para participar
+- Private Beta: un programa beta privado requiere aprobación según los criterios de idoneidad para participar
 
 >[!IMPORTANT]
 >
@@ -35,14 +35,14 @@ Consulte las secciones siguientes para obtener una lista de los programas beta a
 
 [!BADGE Solo SaaS]{type=Positive url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce as a Cloud Service y Adobe Commerce Optimizer (infraestructura de SaaS administrada por Adobe)."}
 
-Las reglas de comercialización de [!DNL Adobe Commerce Optimizer] ahora admiten la clasificación de atributos **&#x200B;**, que aplica una acción de **Boost**, **Bury** o **Hide** automáticamente a los productos que coinciden con una o más condiciones de atributo (como marca, categoría o fabricante) sin requerir la selección de SKU individuales. La clasificación de atributos aparece en el editor de reglas junto con la clasificación inteligente y la clasificación manual. Úsalo con **todas las listas de productos**, **reglas de categoría** y **reglas de búsqueda**.
+Las reglas de comercialización de [!DNL Adobe Commerce Optimizer] ahora admiten la clasificación de atributos **&#x200B;**, que aplica automáticamente una acción de **Boost**, **Bury** o **Hide** a los productos que coinciden con las condiciones de atributos (como marca, categoría o fabricante) sin requerir la selección de SKU individuales. La clasificación de atributos aparece en el editor de reglas junto con la clasificación inteligente y la clasificación manual. Úsalo con **todas las listas de productos**, **reglas de categoría** y **reglas de búsqueda**.
 
 **Ventajas principales**
 
 - Escale la comercialización en catálogos grandes segmentando valores de atributo en lugar de SKU individuales.
 - Aumente, entierre u oculte cada producto coincidente con una sola regla, por ejemplo, promocionando una marca completa o suprimiendo un color discontinuado.
-- Combine condiciones de atributo con una clasificación inteligente: los productos coincidentes tienen prioridad y los productos no coincidentes siguen ordenados según su estrategia de clasificación.
-- Establezca la intensidad de ampliación o enterramiento por condición para ajustar la intensidad con la que la regla afecta a los productos coincidentes.
+- Combine condiciones de atributo con una clasificación inteligente: los productos coincidentes tienen prioridad y su estrategia de clasificación sigue solicitando productos no coincidentes.
+- Establezca la intensidad de ampliación o eliminación por condición para ajustar cómo la regla afecta a los productos coincidentes.
 
 Para obtener más información, consulte [Clasificación de atributos](https://experienceleague.adobe.com/es/docs/commerce/optimizer/merchandising/rules/add#attribute-ranking) en la guía de reglas de comercialización.
 
@@ -50,7 +50,7 @@ Para compartir comentarios sobre esta característica beta, envía un correo ele
 
 ### Coincidencia y clasificación de búsquedas (Private Beta)
 
-Adobe está mejorando la forma en que la detección de productos clasifica los resultados de búsqueda de [!DNL Live Search] en [!DNL Adobe Commerce] y para [!DNL Adobe Commerce Optimizer]. La actualización da prioridad a **coincidencias exactas y cercanas a la frase**, luego coincide donde **todos los términos de consulta aparecen en el mismo atributo en el que se puede buscar** y, finalmente, **coincidencias entre campos** (incluido el comportamiento que admite sugerencias de estilo autocompletado). Ese modelo por capas ayuda a las consultas de alta intención a mostrar primero los productos más relevantes, al tiempo que devuelve alternativas útiles.
+Adobe está mejorando la forma en que la detección de productos clasifica los resultados de búsqueda de [!DNL Live Search] en [!DNL Adobe Commerce] y para [!DNL Adobe Commerce Optimizer]. La actualización da prioridad a **coincidencias exactas y cercanas a la frase**, luego coincide donde **todos los términos de consulta aparecen en el mismo atributo en el que se puede buscar** y, finalmente, **coincidencias entre campos** (incluido el comportamiento que admite sugerencias de estilo autocompletado). Ese modelo por capas ayuda a las consultas de alta intención a mostrar primero los productos más relevantes sin dejar por ello de devolver alternativas útiles.
 
 El mismo modelo de relevancia interactúa con **pesos de búsqueda**, **clasificación inteligente**, **sinónimos** y **reglas de comercialización** (fijar, impulsar, enterrar). Los escaparates alemanes pueden usar **decompositor** para palabras compuestas, con el mismo enfoque de priorización general.
 
@@ -63,7 +63,7 @@ El mismo modelo de relevancia interactúa con **pesos de búsqueda**, **clasific
 
 Obtenga más información acerca de la estrategia de búsqueda y clasificación en [Adobe Commerce Optimizer (SaaS)](https://experienceleague.adobe.com/es/docs/commerce/optimizer/manage-results/search-relevance-matching) y [Live Search (PaaS)](https://experienceleague.adobe.com/es/docs/commerce/live-search/live-search-admin/search-relevance-matching).
 
-Para solicitar una invitación para esta versión beta privada, envía un correo electrónico a [commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com). El equipo de Adobe responderá con los siguientes pasos y los requisitos de idoneidad.
+Para solicitar una invitación para esta versión beta privada, envía un correo electrónico a [commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com). El equipo de Adobe responde con los siguientes pasos y los requisitos de idoneidad.
 
 ### Filtros de precio de recomendación (Beta público) {#recommendation-price-filters-public-beta}
 
@@ -83,31 +83,6 @@ Puede definir rangos **static** con valores mínimos y máximos fijos en la mone
 Para obtener más información, consulte [Filtros de recomendación — Precio](https://experienceleague.adobe.com/es/docs/commerce/optimizer/merchandising/recommendations/filters#price) en la guía del comerciante y [Configuración de recomendaciones de productos](https://experienceleague.adobe.com/developer/commerce/storefront/merchants/content-customizations/product-recommendations/?lang=es) en la guía desplegable de la tienda.
 
 Para compartir tus comentarios mientras usas esta función beta, envía un correo electrónico a [commerce-storefront-services@adobe.com](mailto:commerce-storefront-services@adobe.com).
-
-### Servicio de parches de automatización de la nube (Private Beta)
-
-[!BADGE Solo PaaS]{type=Informative url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Se aplica solo a proyectos de Adobe Commerce en la nube (infraestructura PaaS administrada por Adobe) y a proyectos locales."}
-
-El servicio de parches de automatización de la nube [Cloud](../tools/caps-tool/intro.md) automatiza el proceso de aplicar parches de seguridad aislados a los entornos de [Adobe Commerce en la infraestructura de la nube](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/overview).
-
-En octubre de 2025, la versión beta del servicio de parches de automatización de la nube se agregará al [panel de herramientas de análisis en todo el sitio](/help/tools/site-wide-analysis-tool/dashboard.md). Este servicio es compatible con los administradores de proyectos de Commerce con un flujo de trabajo optimizado de parches que incluye:
-
-- Instalación automatizada de parches
-- Recuperación de reversión
-- Verificación posterior a la implementación.
-
-El servicio garantiza que puede mantener entornos seguros, estables y actualizados con un esfuerzo manual y un riesgo mínimos.
-
-La versión beta incluye las siguientes funciones:
-
-- **Automatizar la instalación de parches**: Simplifique y automatice el proceso de aplicar parches a vulnerabilidades críticas en entornos.
-- **Minimizar el riesgo**: Evite las interrupciones del sitio con las funciones de comprobación de estado y reversión posteriores a la implementación.
-
->[!NOTE]
->
->Dado que el servicio de parches de automatización de la nube aplica automáticamente parches de seguridad aislados, debe tener la función [Colaborador o Administrador de proyecto](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/project/user-access) para poder usarlos.
-
-Para participar en esta versión beta, completa y envía el [Servicio de parches de automatización de la nube - Formulario de suscripción de Beta](https://forms.office.com/r/3Wfxj5nPdB).
 
 ### Asistente de inteligencia artificial aplicada a la productividad del comerciante (Beta público)
 

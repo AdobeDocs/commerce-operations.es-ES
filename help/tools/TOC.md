@@ -4,7 +4,7 @@ user-guide-description: Obtenga información sobre las distintas herramientas qu
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: c1fe8b4c04514603b6625f4b3cae5a9fac039cb1
+source-git-commit: d9f6fc714332638ae1dcfa92ac8abe274efe8a0b
 workflow-type: tm+mt
 source-wordcount: '10695'
 ht-degree: 0%
@@ -34,12 +34,12 @@ ht-degree: 0%
   - [Resolución de problemas](commerce-version-tool/troubleshooting.md)
   - [Notas de la versión](commerce-version-tool/release-notes.md)
 - Automatización de parches {#caps-tool}
-  - {hide-from-toc}[Introducción](caps-tool/intro.md)
-  - {hide-from-toc}[Acceso](caps-tool/access.md)
-  - {hide-from-toc}[Resumen del flujo de trabajo](caps-tool/workflow.md)
-  - {hide-from-toc}[Integración de GitHub](caps-tool/github-integration.md)
-  - {hide-from-toc}[Prácticas recomendadas](caps-tool/best-practices.md)
-  - {hide-from-toc}[Solución de problemas](caps-tool/troubleshooting.md)
+  - [Introducción](caps-tool/intro.md)
+  - [Acceso](caps-tool/access.md)
+  - [Resumen de flujo de trabajo](caps-tool/workflow.md)
+  - [Integración de GitHub](caps-tool/github-integration.md)
+  - [Prácticas recomendadas](caps-tool/best-practices.md)
+  - [Resolución de problemas](caps-tool/troubleshooting.md)
 - Alertas administradas en Adobe Commerce {#managed-alerts-for-adobe-commerce}
   - [Alertas administradas en Adobe Commerce: [!DNL Redis] alerta crítica de memoria](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-redis-memory-critical-alert.md)
   - [Alertas gestionadas para Adobe Commerce: Alerta de advertencia de disco](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-disk-warning-alert.md)
