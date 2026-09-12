@@ -1,5 +1,5 @@
 ---
-source-git-commit: 1459bd6961b08d778d43a87b380e23c3041c89bb
+source-git-commit: 526e20111bfbdf299b18c39879ccbffc1550b22a
 workflow-type: tm+mt
 source-wordcount: '1988'
 ht-degree: 1%
@@ -10,6 +10,28 @@ ht-degree: 1%
 ## Novedades
 
 Esta página contiene los cambios realizados en los últimos 60 días. Excluimos todas las actualizaciones menores, como la edición de copias, de esta lista.
+
+### 8 de septiembre de 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descripción</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>La automatización de parches de Adobe Commerce ya está disponible de forma general. Consulte la <a href="https://experienceleague.adobe.com/es/docs/commerce-operations/tools/caps-tool/intro">documentación</a> para obtener más información.</p>
+</td>
+      <td>
+        Actualización principal, nuevo tema
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/a88bfea449616c0b79c5bd3380bec74c68687052">comprometer</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 26 de agosto de 2026
 
@@ -545,28 +567,6 @@ Esta página contiene los cambios realizados en los últimos 60 días. Excluimos
         Nuevo tema
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/43571d84d9a27ffa113ba4f3a8a08883602211f6">comprometer</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 10 de julio de 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descripción</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Se agregó <a href="https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/overview">Información general: Herramienta de parches de calidad (QPT) v1.1.81</a>.</p>
-</td>
-      <td>
-        Tema nuevo, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/2cc434ac8efd0d9344140ad07f2f68d2d48b1fb4">comprometer</a></td>
     </tr>
   </tbody>
 </table>
