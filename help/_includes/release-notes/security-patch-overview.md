@@ -27,5 +27,5 @@ Los archivos de parches de seguridad aislados son archivos de parches independie
 
 Para aplicar un archivo de parches de seguridad aislado, los clientes deben estar en la última versión de parches de solo seguridad (la última versión -p) para su línea de versiones admitida, ya que los archivos de parches de seguridad aislados se prueban exclusivamente en esa versión.
 
-Consulta el [Centro de seguridad](https://helpx.adobe.com/security/products/magento.html) para ver las últimas actualizaciones de seguridad disponibles para Adobe Commerce.
+Consulta el [Centro de seguridad](https://helpx.adobe.com/es/security/products/magento.html) para ver las últimas actualizaciones de seguridad disponibles para Adobe Commerce.
 

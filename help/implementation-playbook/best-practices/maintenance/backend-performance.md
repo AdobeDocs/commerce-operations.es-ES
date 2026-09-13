@@ -39,7 +39,7 @@ Una herramienta que puede usar para las pruebas de esfuerzo es GTmetrix. Medir l
 
 Obtenga más información sobre la preparación de proyectos de Commerce para períodos de alto tráfico:
 
-- [Preparación para las vacaciones](https://experienceleague.adobe.com/docs/events/commerce-intelligence-webinar-recordings/2021/holiday-readiness.html)
+- [Preparación para las vacaciones](https://experienceleague.adobe.com/docs/events/commerce-intelligence-webinar-recordings/2021/holiday-readiness.html?lang=es)
 - [Análisis de compras de vacaciones](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/analyze/performance/holiday-season-perf.html?lang=es)
 - [Aumento de capacidad de sobretensión](https://experienceleague.adobe.com/es/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/holiday-surge-capacity-requests-for-magento-commerce-cloud)
 
