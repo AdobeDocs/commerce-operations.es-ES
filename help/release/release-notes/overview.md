@@ -40,7 +40,7 @@ La siguiente tabla proporciona notas de la versión e información importante pa
             <li><a href="../lifecycle-policy.md">Directiva de ciclo vital de software</a></li>
             <li><a href="../version-upgrade-enforcement-policy.md">Directiva de aplicación de actualización de versiones de Cloud</a></li>
             <li><a href="../security-enforcement-policy.md">Aviso de seguridad y cumplimiento</a></li>
-            <li><a href="https://helpx.adobe.com/security/products/magento.html">Boletín de seguridad de Adobe</a></li>
+            <li><a href="https://helpx.adobe.com/es/security/products/magento.html">Boletín de seguridad de Adobe</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html?lang=es">B2B para Adobe Commerce</a></li>
           </ul>
         </td>

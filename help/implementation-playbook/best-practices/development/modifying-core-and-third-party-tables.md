@@ -54,7 +54,7 @@ Dos ejemplos de ubicaciones de almacenamiento son las tablas de base de datos y 
 
 Como desarrollador, es vital considerar siempre el uso de herramientas fuera de su entorno de [!DNL Adobe Commerce], como GraphQL mesh y Adobe App Builder. Estas herramientas pueden ayudarle a conservar el acceso a los datos, pero no afectan a la aplicación principal de comercio ni a sus tablas de base de datos subyacentes. Con este enfoque, expone sus datos a través de una API. A continuación, agregue una fuente de datos a la configuración de App Builder. Con GraphQL Mesh, puedes combinar esas fuentes de datos y producir una única respuesta como se menciona en [datos heredados](#legacy-data).
 
-Para obtener más información sobre GraphQL mesh, consulte [GraphQL Mesh Gateway](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}. Para obtener información acerca de Adobe App Builder, consulte [Presentación de App Builder](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/introduction-app-builder.html){target="_blank"}.
+Para obtener más información sobre GraphQL mesh, consulte [GraphQL Mesh Gateway](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}. Para obtener información acerca de Adobe App Builder, consulte [Presentación de App Builder](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/introduction-app-builder.html?lang=es){target="_blank"}.
 
 ## Modificación de una tabla principal o de una tabla de terceros
 
