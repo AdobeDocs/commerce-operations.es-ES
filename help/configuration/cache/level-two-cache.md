@@ -3,7 +3,7 @@ title: Configuración de caché L2 para la optimización del rendimiento
 description: Obtenga información sobre cómo configurar la caché L2 en Adobe Commerce local para reducir el tráfico de red y mejorar el rendimiento. Compare la implementación heredada de RemoteSynchronizedCache con la implementación moderna de Symfony L2.
 feature: Configuration, Cache
 exl-id: 0504c6fd-188e-46eb-be8e-968238571f4e
-badgePaas: label="En las instalaciones" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos locales de Adobe Commerce."
+badgePaas: label="En las instalaciones" type="Informative" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos locales de Adobe Commerce."
 TQID: 'https://experienceleague.adobe.com/7vswBqyn9UZLmaeirgPRZ4xEQH5F66XUEtY5hPkz9NY'
 product_v2:
   - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
