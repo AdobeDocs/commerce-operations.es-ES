@@ -3,20 +3,18 @@ user-guide-title: Guía de implementación
 user-guide-description: Obtenga información acerca de las estrategias para planificar e implementar un sitio de Adobe Commerce con éxito.
 mini-toc-levels: 3
 nudge: true
-source-git-commit: 9343b1fb2832ea0865614e8fb58e5283a72c990d
+source-git-commit: d891254482ae9d0fa5b154f56de83a4a483feef7
 workflow-type: tm+mt
 source-wordcount: '170'
 ht-degree: 14%
-
 ---
-
 
 # Guía de implementación {#implementation-playbook}
 
 - [Información general](overview.md)
 - Arquitectura e integraciones {#architecture}
   - [Referencia empresarial](architecture/enterprise-blueprint.md)
-- Mantenimiento y asistencia {#maintenance}
+- Mantenimiento y asistencia {#maintenance-and-support}
   - [Información general](maintenance/overview.md)
   - [Adobe Managed Services](maintenance/adobe-managed-services.md)
 - Prácticas recomendadas {#best-practices}
@@ -49,7 +47,7 @@ ht-degree: 14%
     - [Bloques de contenido privado](best-practices/development/private-content-block-configuration.md)
     - [Implementación de contenido estático](best-practices/development/static-content-deployment.md)
     - [Modificación de tablas de base de datos](best-practices/development/modifying-core-and-third-party-tables.md)
-    - [Modificar código principal y de terceros](best-practices/development/modifying-core-and-third-party-code.md)
+    - [Modificación del código principal y de terceros](best-practices/development/modifying-core-and-third-party-code.md)
   - Launch {#launch}
     - [Información general](best-practices/launch/overview.md)
     - [Configuración de rastreadores web](best-practices/launch/robots-txt.md)
@@ -69,4 +67,4 @@ ht-degree: 14%
     - [Lista de comprobación de actualización](best-practices/maintenance/upgrade-checklist.md)
     - [Actualizar los requisitos previos de MariaDB](best-practices/maintenance/mariadb-upgrade.md)
 - [Glosario](glossary.md)
-- [Volver a Guías operativas](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=es)
+- [Volver a Guías operativas](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)

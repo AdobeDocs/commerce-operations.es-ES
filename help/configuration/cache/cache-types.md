@@ -5,24 +5,30 @@ feature: Configuration, Cache
 exl-id: 67d4ba06-b48b-4e1a-a7a8-9830490dfe3d
 product_v2:
   - id: cdf0c6dd-1717-4e20-9530-a24eee57088b
+    internal-label: Commerce on Cloud
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
   - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+    internal-label: Commerce on Prem
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 3652976a8db3d0bb19ff9cd06adb3a7736c89539
+    internal-label: Implementation
+source-git-commit: 23f63c896760992da9b0d30b756a37de2117f6b8
 workflow-type: tm+mt
-source-wordcount: 398
+source-wordcount: '471'
 ht-degree: 0%
-
 ---
-
 # Configurar tipos y front-end de caché
 
 Un front-end de caché conecta los tipos de caché de Commerce con el almacenamiento de caché. Puede definir varios front-end y asignar tipos de caché específicos a cada front-end.
@@ -39,7 +45,7 @@ Para obtener una descripción general de la arquitectura de almacenamiento en ca
 
 >[!NOTE]
 >
->Para Adobe Commerce en la infraestructura en la nube, use la [configuración de implementación en la nube](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/configure/env/configure-env-yaml) que se describe en la guía de Cloud. No edite `app/etc/env.php` directamente. Las herramientas de implementación generan este archivo y pueden sobrescribir los cambios manuales.
+>Para Adobe Commerce en la infraestructura en la nube, use la [configuración de implementación en la nube](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/configure-env-yaml) que se describe en la guía de Cloud. No edite `app/etc/env.php` directamente. Las herramientas de implementación generan este archivo y pueden sobrescribir los cambios manuales.
 
 ## Usar el front-end predeterminado
 
@@ -95,11 +101,22 @@ La configuración de `type` asigna un tipo de caché a un front-end:
 ],
 ```
 
-En este ejemplo, Commerce asigna el tipo de caché `full_page` al front-end `page_cache`. El front-end determina qué configuración back-end almacena ese tipo de caché.
+Donde:
+
+- `<frontend_type>`: el tipo de caché de nivel inferior de front-end. Especifique un nombre de clase compatible con `Zend_Cache_Core`.
+Si se omite, se usa [Magento\Framework\Cache\Core](https://github.com/magento/magento2/blob/2.4/lib/internal/Magento/Framework/Cache/Core.php).
+
+- `<frontend_option>`, `<frontend_option_value>`: el nombre y valor de las opciones que el marco de trabajo de Commerce pasa como una matriz asociativa a la caché de front-end en el momento de la creación.
+
+- `<backend_type>`: el tipo de caché de servidor de nivel bajo. Puede especificar:
+  - **Caché Symfony (2.4.9+, recomendado)**: Nombres simplificados como `valkey` o `file`
+  - **Basado en Zend**: Nombre de clase completo compatible con `Zend_Cache_Backend` que implementa `Zend_Cache_Backend_Interface`
+
+- `<backend_option>`, `<backend_option_value>`: nombre y valor de las opciones que el marco de trabajo de Commerce pasa como una matriz asociativa a la caché back-end al crearla.
 
 >[!NOTE]
 >
->La clave `full_page` representa un tipo de caché de aplicación de Commerce. El almacenamiento en caché de página completa HTTP a través de Varnish o Fastly es una capa de almacenamiento en caché independiente. Consulte [Información general de almacenamiento en caché y opciones de configuración](caching-overview.md).
+>Para los formatos de valor de servidor, como los nombres de clase basados en Zend frente a los nombres simplificados de Symfony Cache como `valkey` o `file`, consulte [Opciones de servidor de caché](cache-options.md).
 
 >[!MORELIKETHIS]
 >
