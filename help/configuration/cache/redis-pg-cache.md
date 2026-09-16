@@ -8,26 +8,34 @@ autotag-review: '2026-06-22T21:55:53.227Z'
 TQID: 'https://experienceleague.adobe.com/2KjWE19ud32PUdvJQWNWkK338ysaa5vt0mA4EyyP66I'
 product_v2:
   - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+    internal-label: Commerce on Prem
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+    internal-label: Security
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
+    internal-label: Optimization
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: ec95c99d060f3c45095236d41729648abf389dd1
+    internal-label: Security
+source-git-commit: 23f63c896760992da9b0d30b756a37de2117f6b8
 workflow-type: tm+mt
-source-wordcount: 1411
+source-wordcount: '1407'
 ht-degree: 0%
-
 ---
-
 # Configurar Redis para caché predeterminada y de página
 
 {{cloud-cache-config}}
@@ -46,7 +54,7 @@ Commerce proporciona opciones de línea de comandos para configurar la página R
 
 Adobe Commerce ha utilizado estas implementaciones back-end de caché de Redis:
 
-- **Servidor Redis heredado** (`Cm_Cache_Backend_Redis`): implementación obsoleta usada en configuraciones de Redis anteriores.
+- **Servidor de Redis obsoleto** (`Cm_Cache_Backend_Redis`): se usa en configuraciones de Redis anteriores; ya no se recomienda.
 - **Servidor Redis** (`Magento\Framework\Cache\Backend\Redis`): servidor utilizado por la configuración de línea de comandos en este tema para la caché predeterminada y de página.
 - **Servidor de caché L2** (`Magento\Framework\Cache\Backend\RemoteSynchronizedCache`): implementación de caché de dos niveles que usa Redis como servidor remoto y almacenamiento de caché de archivos locales para sincronizar los datos de caché entre nodos. Consulte [Configuración de caché de dos niveles](level-two-cache.md).
 
@@ -202,7 +210,7 @@ Al utilizar la característica de precarga con una caché L2, debe agregar el su
 
 ### Generación paralela
 
-A partir de la versión Commerce 2.4.0, Adobe introdujo la opción `allow_parallel_generation` para los usuarios que desean eliminar la espera de bloqueos. Está desactivada de forma predeterminada y Adobe recomienda desactivarla hasta que tenga configuraciones o bloques excesivos.
+Adobe Commerce proporciona la opción `allow_parallel_generation` a los usuarios que desean eliminar la espera de bloqueos. Está desactivada de forma predeterminada y Adobe recomienda desactivarla hasta que tenga configuraciones o bloques excesivos.
 
 **Para habilitar la generación paralela**:
 

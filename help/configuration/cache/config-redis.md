@@ -8,23 +8,28 @@ autotag-review: '2026-06-22T20:26:29.348Z'
 TQID: 'https://experienceleague.adobe.com/N61AAy4ihSIlhEjdvpji2XVOdZuHWhytp9zgoAU41K4'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
   - id: b974b164-8a4e-43b8-a9e2-8e67ec131677
+    internal-label: Commerce on Prem
 feature_v2:
   - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: ab2a9ef6d4c3ed692f4a6a66323ab5e3d5c6673a
+    internal-label: Implementation
+source-git-commit: c17dcd295b7a27ac1732a700b97af26316a98b7d
 workflow-type: tm+mt
-source-wordcount: 456
+source-wordcount: '460'
 ht-degree: 0%
-
 ---
-
 # Instalación y configuración de Redis
 
 Redis es un almacén de datos en memoria que se puede utilizar como back-end de caché y para almacenamiento de sesión. Las funciones principales incluyen:
@@ -48,7 +53,7 @@ La instalación y configuración del software de Redis excede el ámbito de esta
 
 Según la instalación, normalmente puede encontrar la configuración de Redis en uno de los siguientes archivos: `/etc/redis/redis.conf` o `/etc/redis/<port>.conf`
 
-Para optimizar la instancia de Redis según sus necesidades, obtenga los mejores resultados utilizando una instancia específica para cada sesión, caché de Commerce y FPC.
+Para optimizar la instancia de Redis según sus necesidades, obtenga los mejores resultados utilizando una instancia específica para cada sesión, la caché de Commerce y la caché de página completa (FPC).
 
 Para las sesiones, Adobe recomienda habilitar la persistencia para copiar datos de Redis en el disco mediante cualquiera de las siguientes opciones de persistencia: instantáneas de Redis Database Backup (RDB) normales o registros de persistencia de Anexar solo archivo (AOF).
 
@@ -56,9 +61,17 @@ Para las sesiones, Adobe recomienda habilitar la persistencia para copiar datos 
 
 - **Anexar solo archivo** (AOF) almacena cada operación de escritura enviada a Redis en un archivo de diario. Redis solo lee este archivo al reiniciar y lo utiliza para restaurar el conjunto de datos original.
 
-También puede activar las opciones RDB y AOF al mismo tiempo. Para obtener más información, incluidas las ventajas y desventajas de las opciones de persistencia, consulte la [documentación de Redis Persistence](https://redis.io/topics/persistence).
+También puede activar las opciones RDB y AOF al mismo tiempo. Para obtener más información, incluidas las ventajas y desventajas de las opciones de persistencia, consulte la [documentación de Redis Persistence](https://redis.io/docs/latest/operate/rs/databases/configure/database-persistence/).
 
-Para la instancia de caché, configúrela de modo que sea lo suficientemente grande como para almacenar toda la caché de Commerce. Los requisitos de tamaño dependen de diferentes factores, como el número de productos y las vistas de la tienda. Como punto de partida, puede utilizar el tamaño de la carpeta de caché en el sistema de archivos. Por ejemplo, si la carpeta `var/cache` del sistema de archivos tiene 5 GB, configure la instancia de Redis con al menos 5 GB para que se inicie. No se requiere persistencia para la instancia de caché porque se puede restaurar la caché de Commerce. Consulte [Guía de caché de Redis](https://redis.io/docs/latest/develop/use/).
+Para la instancia de caché, configúrela de modo que sea lo suficientemente grande como para almacenar toda la caché de Commerce.
+
+- Los requisitos de tamaño dependen de diferentes factores, como el número de productos y las vistas de la tienda.
+
+  Como punto de partida, utilice el tamaño de la carpeta `var/cache` en su sistema de archivos. Por ejemplo, si `var/cache` tiene 5 GB, configure la instancia de Redis con al menos 5 GB para que se inicie.
+
+- No se requiere persistencia para la instancia de caché porque se puede restaurar la caché de Commerce.
+
+  Consulte la [Guía de caché de Redis](https://redis.io/docs/latest/develop/use/) para obtener más información.
 
 Para ajustar el rendimiento, puede habilitar la siguiente configuración para la eliminación asincrónica. Esta configuración no cambia el comportamiento de Redis.
 
