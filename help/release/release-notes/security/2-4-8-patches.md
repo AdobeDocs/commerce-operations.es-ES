@@ -2,14 +2,12 @@
 title: Notas de la versión de Adobe Commerce 2.4.8 Security Patch
 description: Obtenga información acerca de las correcciones de errores de seguridad, las mejoras de seguridad y otras actualizaciones relacionadas con la seguridad incluidas en las versiones de parches de seguridad para Adobe Commerce 2.4.8.
 exl-id: 5f8866ed-9215-4b2e-9c77-b2d474f6c1f9
-last-update: 2026-08-19T00:00:00Z
-source-git-commit: 3c67ddaf060b11e58a101b2d45417f3779a5312b
+last-update: 2026-08-19
+source-git-commit: 0a3db740cc40376664128121a462e0c93c70e746
 workflow-type: tm+mt
 source-wordcount: '804'
 ht-degree: 0%
-
 ---
-
 # Notas de la versión de parches de seguridad de Adobe Commerce 2.4.8
 
 {{$include /help/_includes/release-notes/security-patch-intro.md}}
@@ -18,7 +16,7 @@ ht-degree: 0%
 
 La versión de seguridad de Adobe Commerce 2.4.8-p5 proporciona correcciones de errores de seguridad para vulnerabilidades identificadas en versiones anteriores de 2.4.8.
 
-Para obtener la información más reciente sobre la corrección de errores de seguridad, consulte [Boletín de seguridad de Adobe APSB26-49](https://helpx.adobe.com/es/security/products/magento/apsb26-49.html).
+Para obtener la información más reciente sobre la corrección de errores de seguridad, consulte [Boletín de seguridad de Adobe APSB26-49](https://helpx.adobe.com/security/products/magento/apsb26-49.html).
 
 {{b2b-patches}}
 
@@ -46,15 +44,15 @@ Adobe Commerce 2.4.8 ahora es compatible con RabbitMQ 4.2, que aborda la fecha d
 
 La integración de envío de USPS ahora es compatible con las API de USPS de RESTful modernizadas, además de las API de herramientas web heredadas. Los administradores pueden seleccionar qué API de integración de USPS utilizar en la configuración de administración. Esta actualización se prepara para la desaprobación de la API de herramientas web de USPS.
 
-#### Horquilla MVC Laminas propiedad de Magento
+#### Horquilla MVC Laminas de Magento
 
-Para resolver la retirada de Laminas MVC, Adobe Commerce ahora usa una ramificación de `laminas-mvc` propiedad de Magento (publicada como `magento/magento-zf-mvc`). Esta ramificación garantiza la aplicación continua de parches y la seguridad a largo plazo de Adobe Commerce 2.4.8.
+Para resolver el problema de la jubilación de Laminas MVC, Adobe Commerce ahora usa una ramificación de `laminas-mvc` propiedad de Magento (publicada como `magento/magento-zf-mvc`). Esta ramificación garantiza la aplicación continua de parches y la seguridad a largo plazo de Adobe Commerce 2.4.8.
 
 ## 2.4.8-p4
 
 La versión de seguridad de Adobe Commerce 2.4.8-p4 proporciona correcciones de errores de seguridad para vulnerabilidades identificadas en versiones anteriores de 2.4.8.
 
-Para obtener la información más reciente sobre la corrección de errores de seguridad, consulte [Boletín de seguridad de Adobe APSB26-05](https://helpx.adobe.com/es/security/products/magento/apsb26-05.html).
+Para obtener la información más reciente sobre la corrección de errores de seguridad, consulte [Boletín de seguridad de Adobe APSB26-05](https://helpx.adobe.com/security/products/magento/apsb26-05.html).
 
 {{b2b-patches}}
 
@@ -74,7 +72,7 @@ Adobe Commerce 2.4.8 se ha actualizado para admitir Composer 2.9.x, pero seguir�
 
 La versión de seguridad de Adobe Commerce 2.4.8-p3 proporciona correcciones de errores de seguridad para vulnerabilidades identificadas en versiones anteriores de 2.4.8.
 
-Para obtener la información más reciente sobre la corrección de errores de seguridad, consulte [Boletín de seguridad de Adobe APSB25-94](https://helpx.adobe.com/es/security/products/magento/apsb25-94.html).
+Para obtener la información más reciente sobre la corrección de errores de seguridad, consulte [Boletín de seguridad de Adobe APSB25-94](https://helpx.adobe.com/security/products/magento/apsb25-94.html).
 
 {{b2b-patches}}
 
@@ -100,7 +98,7 @@ Esta versión incluye los siguientes aspectos destacados:
 
 La versión de seguridad de Adobe Commerce 2.4.8-p2 proporciona correcciones de errores de seguridad para vulnerabilidades identificadas en versiones anteriores de 2.4.8.
 
-Para obtener la información más reciente sobre la corrección de errores de seguridad, consulte [Boletín de seguridad de Adobe APSB25-71](https://helpx.adobe.com/es/security/products/magento/apsb25-71.html).
+Para obtener la información más reciente sobre la corrección de errores de seguridad, consulte [Boletín de seguridad de Adobe APSB25-71](https://helpx.adobe.com/security/products/magento/apsb25-71.html).
 
 {{b2b-patches}}
 
@@ -108,7 +106,7 @@ Para obtener la información más reciente sobre la corrección de errores de se
 
 La versión de seguridad de Adobe Commerce 2.4.8-p1 proporciona correcciones de errores de seguridad para vulnerabilidades identificadas en versiones anteriores de 2.4.8.
 
-Para obtener la información más reciente sobre la corrección de errores de seguridad, consulte [Boletín de seguridad de Adobe APSB25-50](https://helpx.adobe.com/es/security/products/magento/apsb25-50.html).
+Para obtener la información más reciente sobre la corrección de errores de seguridad, consulte [Boletín de seguridad de Adobe APSB25-50](https://helpx.adobe.com/security/products/magento/apsb25-50.html).
 
 {{b2b-patches}}
 
@@ -132,8 +130,8 @@ Esta versión incluye los siguientes aspectos destacados:
 
 >[!BEGINSHADEBOX]
 
-Las correcciones para CVE-2025-47110 y VULN-31547 también están disponibles como parche aislado. Consulte el [artículo de la Base de conocimiento](https://experienceleague.adobe.com/es/docs/experience-cloud-kcs/kbarticles/ka-27181) para obtener detalles.
+Las correcciones para CVE-2025-47110 y VULN-31547 también están disponibles como parche aislado. Consulte el [artículo de la Base de conocimiento](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27181) para obtener detalles.
 
 >[!ENDSHADEBOX]
 
-<!-- Last updated from includes: 2026-04-08 15:01:38 -->
+<!-- Last updated from includes: 2026-08-19 13:31:55 -->

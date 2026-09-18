@@ -2,14 +2,12 @@
 title: Directiva de versión
 description: Obtenga información acerca de los tipos de versiones de Adobe Commerce, marketing y versiones de módulos, versiones de parches y seguridad, beta, revisiones y la directiva de versión general.
 exl-id: 61a83de6-6a7b-4a88-8fff-1638b4fe472a
-last-update: 2026-08-19T00:00:00Z
-source-git-commit: 3c67ddaf060b11e58a101b2d45417f3779a5312b
+last-update: 2026-08-19
+source-git-commit: 0a3db740cc40376664128121a462e0c93c70e746
 workflow-type: tm+mt
 source-wordcount: '703'
 ht-degree: 0%
-
 ---
-
 # directiva de versión de Adobe Commerce
 
 Adobe Commerce usa [versiones semánticas](https://semver.org/) en el nivel de módulo individual (por ejemplo `magento/framework 101.1.1`), pero no para el número de versión de marketing. Por ejemplo:
@@ -82,4 +80,4 @@ Los parches individuales contienen correcciones de calidad de bajo impacto para 
 
 Creado por personal que no es de Adobe para solucionar un problema o modificar el código de Adobe Commerce por varios motivos.
 
-<!-- Last updated from includes: 2026-06-16 17:36:23 -->
+<!-- Last updated from includes: 2026-08-19 13:31:55 -->

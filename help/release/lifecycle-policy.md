@@ -3,14 +3,12 @@ title: Directiva de ciclo vital de software
 description: Obtenga información sobre las fechas clave de fin de compatibilidad de software para las versiones de Adobe Commerce.
 exl-id: 9ee4ecc8-d893-412a-a605-5a8606a1b9a9
 nudge: true
-last-update: 2026-08-19T00:00:00Z
-source-git-commit: 3c67ddaf060b11e58a101b2d45417f3779a5312b
+last-update: 2026-08-19
+source-git-commit: 0a3db740cc40376664128121a462e0c93c70e746
 workflow-type: tm+mt
 source-wordcount: '1353'
 ht-degree: 1%
-
 ---
-
 
 # directiva de ciclo vital de Adobe Commerce
 
@@ -22,7 +20,7 @@ Adobe no proporciona correcciones de seguridad y calidad para servicios de terce
 
 El periodo de soporte estándar de tres años a partir de la fecha de disponibilidad general (GA). El soporte estándar incluye correcciones de calidad, parches de seguridad y soporte total de Adobe Commerce on-call.
 
-- **Correcciones de calidad**: los clientes pueden obtener acceso a las correcciones de calidad poniéndose en contacto con el [Soporte técnico de Adobe Commerce](https://experienceleague.adobe.com/es/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide) o a través del servicio de autoservicio [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es).
+- **Correcciones de calidad**: los clientes pueden obtener acceso a las correcciones de calidad poniéndose en contacto con el [Soporte técnico de Adobe Commerce](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide) o a través del servicio de autoservicio [[!DNL Quality Patches Tool]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html).
 
 - **Correcciones de seguridad**: Adobe proporciona correcciones de seguridad mediante parches de seguridad acumulativos y [archivos de parches de seguridad aislados](versioning-policy.md#isolated-security-patch-file) no acumulativos durante el período de compatibilidad de tres años.
 
@@ -199,10 +197,12 @@ Si su versión se acerca a las fechas de fin de soporte o las supera, actúe aho
 - Puede acceder a las últimas funciones de Adobe: comercialización con tecnología de IA, arquitectura de tienda componible e integraciones nativas de Adobe Experience Cloud.
 - Se eliminan los ciclos de actualización recurrentes.
 
-Póngase en contacto con el equipo de su cuenta de Adobe para comenzar una evaluación de la migración. Consulte [Adobe Commerce as a Cloud Service](https://experienceleague.adobe.com/es/docs/commerce/cloud-service/overview) para obtener información general del producto.
+Póngase en contacto con el equipo de su cuenta de Adobe para comenzar una evaluación de la migración. Consulte [Adobe Commerce as a Cloud Service](https://experienceleague.adobe.com/en/docs/commerce/cloud-service/overview) para obtener información general del producto.
 
 ### Ruta alternativa: actualización a una versión compatible de Adobe Commerce en la nube o local
 
 Si no puede migrar a [!DNL Adobe Commerce as a Cloud Service] inmediatamente, puede actualizar a la versión de Adobe Commerce en la nube más reciente y compatible actualmente. Esto le lleva a una pila de infraestructura moderna y totalmente compatible, al tiempo que conserva su modelo de implementación de Commerce en la nube existente.
 
 Tenga en cuenta que esta ruta no elimina las futuras obligaciones de actualización. Los clientes con implementaciones de Adobe Commerce en la nube deben continuar actualizándose a medida que las líneas de versión alcanzan sus fechas de aplicación de actualización de versiones.
+
+<!-- Last updated from includes: 2026-09-17 13:05:40 -->

@@ -1,9 +1,8 @@
 ---
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+source-git-commit: 9021cff48fa6f0557da6ecd5077cffa5cb14e1e7
 workflow-type: tm+mt
-source-wordcount: '83'
+source-wordcount: '86'
 ht-degree: 0%
-
 ---
 # Nota de la directiva de soporte ampliado
 
@@ -16,4 +15,4 @@ ht-degree: 0%
 >Consulte también:
 >
 >- [Política de ciclo de vida del software](/help/release/lifecycle-policy.md): fechas de fin de soporte, soporte ampliado y disposiciones transitorias de solo seguridad
->- [Directiva de aplicación de actualización de la versión en la nube](/help/release/version-upgrade-enforcement-policy.md): fechas de aplicación y acciones requeridas
+>- [Acciones y plazos requeridos para proteger los entornos de Commerce](/help/release/security-enforcement-policy.md): fechas de aplicación y acciones requeridas

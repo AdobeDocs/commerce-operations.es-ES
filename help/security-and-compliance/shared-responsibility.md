@@ -2,13 +2,11 @@
 title: Seguridad de responsabilidad compartida y modelo operativo
 description: Obtenga información sobre las responsabilidades de seguridad de cada parte involucrada en su proyecto de infraestructura de Adobe Commerce en la nube.
 exl-id: f3cc1685-e469-4e30-b18e-55ce10dd69ce
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+source-git-commit: 9021cff48fa6f0557da6ecd5077cffa5cb14e1e7
 workflow-type: tm+mt
-source-wordcount: '3252'
+source-wordcount: '3242'
 ht-degree: 0%
-
 ---
-
 # Modelo operativo y de seguridad de responsabilidad compartida
 
 Adobe Commerce en la infraestructura en la nube es una oferta de plataforma como servicio (PaaS) que se basa en un modelo operativo y de seguridad de responsabilidad compartida. Adobe, el comerciante, el proveedor de servicios en la nube y el proveedor de la red de entrega de contenido (CDN) comparten estas responsabilidades. Cada parte tiene la responsabilidad distinta de proteger y operar la aplicación de Adobe Commerce y el código específico del comerciante y las extensiones implementadas en la infraestructura en la nube.
@@ -31,14 +29,13 @@ Los comerciantes son responsables de lo siguiente:
 * Garantizar el desarrollo seguro de aplicaciones
 * Obtención de la certificación PCI si así lo solicita el procesador de pagos del comerciante
 * Reacción y respuesta a incidentes de seguridad
-* Mantener todas las dependencias de terceros, los servicios de plataforma y las extensiones de servicios de Adobe Commerce en versiones compatibles de forma activa. Adobe no proporciona soporte de seguridad ni asistencia para implementaciones que ejecutan versiones de dependencia no admitidas. Consulte [Requisitos del sistema](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=es) y la [Matriz de disponibilidad del producto](/help/release/product-availability.md) para ver las versiones compatibles.
+* Mantener todas las dependencias de terceros, los servicios de plataforma y las extensiones de servicios de Adobe Commerce en versiones compatibles de forma activa. Adobe no proporciona soporte de seguridad ni asistencia para implementaciones que ejecutan versiones de dependencia no admitidas. Consulte [Requisitos del sistema](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) y la [Matriz de disponibilidad del producto](/help/release/product-availability.md) para ver las versiones compatibles.
 
 >[!NOTE]
 >
 >Consulte también:
 >
 >* [Política de ciclo de vida del software](../release/lifecycle-policy.md): fechas de fin de soporte, soporte ampliado y disposiciones transitorias de solo seguridad
->* [Directiva de aplicación de actualización de la versión en la nube](../release/version-upgrade-enforcement-policy.md): fechas de aplicación y acciones requeridas
 >* [Aviso de seguridad y cumplimiento](../release/security-enforcement-policy.md): acciones y plazos requeridos para las versiones 2.4.4 a 2.4.9 de Adobe Commerce en la nube
 
 {{supported-versions-only}}
@@ -104,7 +101,7 @@ El comerciante es responsable de seguir las prácticas recomendadas de seguridad
   * Extensiones de Adobe Commerce Services
   * Todas las integraciones personalizadas y extensiones de terceros
 
-  Adobe no admite implementaciones que ejecuten versiones no admitidas. Consulte [Requisitos del sistema](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=es) y la [Matriz de disponibilidad del producto](/help/release/product-availability.md) para ver las versiones compatibles.
+  Adobe no admite implementaciones que ejecuten versiones no admitidas. Consulte [Requisitos del sistema](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) y la [Matriz de disponibilidad del producto](/help/release/product-availability.md) para ver las versiones compatibles.
 
 ## Responsabilidades del proveedor de Cloud Service
 
