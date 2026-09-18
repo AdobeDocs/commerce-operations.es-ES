@@ -4,13 +4,11 @@ user-guide-description: Acceda a toda la información de la versión de los parc
 feature: Release Notes
 recommendations: noDisplay, noCatalog
 nudge: true
-source-git-commit: 5e0e4b0dc59aa2d8bd08d2d4af1176d14577f063
+source-git-commit: 7f611e9d05ddc53c853839d33bcacf48a59c126e
 workflow-type: tm+mt
-source-wordcount: '109'
+source-wordcount: '110'
 ht-degree: 30%
-
 ---
-
 
 # Información de versión {#release}
 
@@ -55,7 +53,7 @@ ht-degree: 30%
 - Planificación y políticas {#planning}
   - [Política de ciclo vital](lifecycle-policy.md)
   - [Acciones y plazos necesarios para proteger los entornos de Commerce](security-enforcement-policy.md)
-  - [Directiva de aplicación de actualización de versiones](version-upgrade-enforcement-policy.md)
+  - [Política de parches aislados de seguridad mensual](monthly-isolated-security-patches.md)
   - [Directiva de versiones](versioning-policy.md)
   - [Programación de versiones](schedule.md)
 - [Características por versión](features.md)

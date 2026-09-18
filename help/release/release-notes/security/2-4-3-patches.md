@@ -2,14 +2,12 @@
 title: Notas de la versión de los parches de seguridad de Adobe Commerce 2.4.3
 description: Obtenga información acerca de las correcciones de errores de seguridad, las mejoras de seguridad y otras actualizaciones relacionadas con la seguridad incluidas en las versiones de parches de seguridad para Adobe Commerce 2.4.3.
 exl-id: 72d343cd-83d7-48ce-976a-e26ba1b8db27
-last-update: 2026-08-19T00:00:00Z
-source-git-commit: 3c67ddaf060b11e58a101b2d45417f3779a5312b
+last-update: 2026-08-19
+source-git-commit: 0a3db740cc40376664128121a462e0c93c70e746
 workflow-type: tm+mt
 source-wordcount: '1106'
 ht-degree: 0%
-
 ---
-
 
 # Notas de la versión de los parches de seguridad de Adobe Commerce 2.4.3
 
@@ -89,4 +87,4 @@ Se han eliminado **ID de sesión de la base de datos**. Este cambio de código p
 
 La expresión de origen no admitida `unsafe-inline` se ha quitado de la directiva de la directiva de la directiva de seguridad de contenido `frame-ancestors`. [GitHub-33101](https://github.com/magento/magento2/issues/33101)<!-- MC-42632-->
 
-<!-- Last updated from includes: 2026-04-08 15:01:38 -->
+<!-- Last updated from includes: 2026-08-19 13:31:55 -->

@@ -2,14 +2,12 @@
 title: Notas de la versión de Adobe Commerce 2.4.7 Security Patch
 description: Obtenga información acerca de las correcciones de errores de seguridad, las mejoras de seguridad y otras actualizaciones relacionadas con la seguridad incluidas en las versiones de parches de seguridad para Adobe Commerce 2.4.7.
 exl-id: 38e5632b-c795-47d8-89dd-26bbaeb34e67
-last-update: 2026-08-19T00:00:00Z
-source-git-commit: 3c67ddaf060b11e58a101b2d45417f3779a5312b
+last-update: 2026-08-19
+source-git-commit: 0a3db740cc40376664128121a462e0c93c70e746
 workflow-type: tm+mt
 source-wordcount: '1374'
 ht-degree: 0%
-
 ---
-
 
 # Notas de la versión de parches de seguridad de Adobe Commerce 2.4.7
 
@@ -59,9 +57,9 @@ Adobe Commerce 2.4.7 ahora es compatible con RabbitMQ 4.2, que aborda la fecha d
 
 La integración de envío de USPS ahora es compatible con las API de USPS de RESTful modernizadas, además de las API de herramientas web heredadas. Los administradores pueden seleccionar qué API de integración de USPS utilizar en la configuración de administración. Esta actualización se prepara para la desaprobación de la API de herramientas web de USPS.
 
-#### Horquilla MVC Laminas propiedad de Magento
+#### Horquilla MVC Laminas de Magento
 
-Para resolver la retirada de Laminas MVC, Adobe Commerce ahora usa una ramificación de `laminas-mvc` propiedad de Magento (publicada como `magento/magento-zf-mvc`). Esta ramificación garantiza la aplicación continua de parches y la seguridad a largo plazo de Adobe Commerce 2.4.7.
+Para resolver el problema de la jubilación de Laminas MVC, Adobe Commerce ahora usa una ramificación de `laminas-mvc` propiedad de Magento (publicada como `magento/magento-zf-mvc`). Esta ramificación garantiza la aplicación continua de parches y la seguridad a largo plazo de Adobe Commerce 2.4.7.
 
 ## 2.4.7-p9
 
@@ -193,7 +191,7 @@ Para obtener la información más reciente sobre la corrección de errores de se
 
 La versión de seguridad de Adobe Commerce 2.4.7-p2 proporciona correcciones de errores de seguridad para vulnerabilidades identificadas en versiones anteriores de 2.4.7.
 
-Para obtener la información más reciente sobre la corrección de errores de seguridad, consulte [Boletín de seguridad de Adobe APSB24-61](https://helpx.adobe.com/es/security/products/magento/apsb24-61.html).
+Para obtener la información más reciente sobre la corrección de errores de seguridad, consulte [Boletín de seguridad de Adobe APSB24-61](https://helpx.adobe.com/security/products/magento/apsb24-61.html).
 
 ### Características destacadas
 
@@ -225,4 +223,4 @@ Esta versión incluye los siguientes aspectos destacados:
 
 Adobe Commerce 2.4.7-p1 resuelve un problema introducido en el ámbito de la migración de la integración de UPS de SOAP a la API de REST. Este problema afectaba a los clientes que realizaban envíos fuera de los EE. UU. e impedía que utilizaran las mediciones del sistema métrico/SI de kilogramos y centímetros para los paquetes con el fin de crear envíos con UPS. Consulte el artículo de la base de conocimiento [Migración del método de envío UPS de SOAP a la API RESTful](https://experienceleague.adobe.com/es/docs/experience-cloud-kcs/kbarticles/ka-27146) para obtener más detalles.
 
-<!-- Last updated from includes: 2026-04-08 15:01:38 -->
+<!-- Last updated from includes: 2026-08-19 13:47:15 -->

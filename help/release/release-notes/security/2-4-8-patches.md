@@ -2,14 +2,12 @@
 title: Notas de la versión de Adobe Commerce 2.4.8 Security Patch
 description: Obtenga información acerca de las correcciones de errores de seguridad, las mejoras de seguridad y otras actualizaciones relacionadas con la seguridad incluidas en las versiones de parches de seguridad para Adobe Commerce 2.4.8.
 exl-id: 5f8866ed-9215-4b2e-9c77-b2d474f6c1f9
-last-update: 2026-08-19T00:00:00Z
-source-git-commit: 3c67ddaf060b11e58a101b2d45417f3779a5312b
+last-update: 2026-08-19
+source-git-commit: 0a3db740cc40376664128121a462e0c93c70e746
 workflow-type: tm+mt
 source-wordcount: '804'
 ht-degree: 0%
-
 ---
-
 # Notas de la versión de parches de seguridad de Adobe Commerce 2.4.8
 
 {{$include /help/_includes/release-notes/security-patch-intro.md}}
@@ -46,9 +44,9 @@ Adobe Commerce 2.4.8 ahora es compatible con RabbitMQ 4.2, que aborda la fecha d
 
 La integración de envío de USPS ahora es compatible con las API de USPS de RESTful modernizadas, además de las API de herramientas web heredadas. Los administradores pueden seleccionar qué API de integración de USPS utilizar en la configuración de administración. Esta actualización se prepara para la desaprobación de la API de herramientas web de USPS.
 
-#### Horquilla MVC Laminas propiedad de Magento
+#### Horquilla MVC Laminas de Magento
 
-Para resolver la retirada de Laminas MVC, Adobe Commerce ahora usa una ramificación de `laminas-mvc` propiedad de Magento (publicada como `magento/magento-zf-mvc`). Esta ramificación garantiza la aplicación continua de parches y la seguridad a largo plazo de Adobe Commerce 2.4.8.
+Para resolver el problema de la jubilación de Laminas MVC, Adobe Commerce ahora usa una ramificación de `laminas-mvc` propiedad de Magento (publicada como `magento/magento-zf-mvc`). Esta ramificación garantiza la aplicación continua de parches y la seguridad a largo plazo de Adobe Commerce 2.4.8.
 
 ## 2.4.8-p4
 
@@ -136,4 +134,4 @@ Las correcciones para CVE-2025-47110 y VULN-31547 también están disponibles co
 
 >[!ENDSHADEBOX]
 
-<!-- Last updated from includes: 2026-04-08 15:01:38 -->
+<!-- Last updated from includes: 2026-08-19 13:31:55 -->

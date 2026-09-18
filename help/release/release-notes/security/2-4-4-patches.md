@@ -2,14 +2,12 @@
 title: Notas de la versión de Adobe Commerce 2.4.4 Security Patch
 description: Obtenga información acerca de las correcciones de errores de seguridad, las mejoras de seguridad y otras actualizaciones relacionadas con la seguridad incluidas en las versiones de parches de seguridad para Adobe Commerce 2.4.4.
 exl-id: 136d7090-6bf2-41e3-8445-b07bdc67f12b
-last-update: 2026-08-19T00:00:00Z
-source-git-commit: 3c67ddaf060b11e58a101b2d45417f3779a5312b
+last-update: 2026-08-19
+source-git-commit: 0a3db740cc40376664128121a462e0c93c70e746
 workflow-type: tm+mt
 source-wordcount: '2160'
 ht-degree: 0%
-
 ---
-
 
 # Notas de la versión de parches de seguridad de Adobe Commerce 2.4.4
 
@@ -121,7 +119,7 @@ Para obtener la información más reciente sobre la corrección de errores de se
 
 La versión de seguridad de Adobe Commerce 2.4.4-p10 proporciona correcciones de errores de seguridad para vulnerabilidades identificadas en versiones anteriores de 2.4.4.
 
-Para obtener la información más reciente sobre la corrección de errores de seguridad, consulte [Boletín de seguridad de Adobe APSB24-61](https://helpx.adobe.com/es/security/products/magento/apsb24-61.html).
+Para obtener la información más reciente sobre la corrección de errores de seguridad, consulte [Boletín de seguridad de Adobe APSB24-61](https://helpx.adobe.com/security/products/magento/apsb24-61.html).
 
 ### Características destacadas
 
@@ -268,4 +266,4 @@ Las mejoras de seguridad para esta versión mejoran el cumplimiento de las prác
 
 **Problema**: Los comerciantes pueden observar avisos de reducción de versión del paquete durante una actualización de Adobe Commerce 2.4.4 a Adobe Commerce 2.4.4-p1. Estos mensajes se pueden ignorar. La discrepancia en las versiones del paquete se debe a anomalías durante la generación del paquete. No se ha visto afectada ninguna funcionalidad del producto. Consulte el artículo de la base de conocimiento [Paquetes degradados después de actualizar de 2.4.4 a 2.4.4-p1](https://support.magento.com/hc/en-us/articles/8214752983949) para ver una discusión de los escenarios afectados y las soluciones alternativas.
 
-<!-- Last updated from includes: 2026-04-08 15:01:38 -->
+<!-- Last updated from includes: 2026-08-19 13:47:15 -->

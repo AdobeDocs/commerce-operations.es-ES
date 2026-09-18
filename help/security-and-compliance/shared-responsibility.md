@@ -2,13 +2,11 @@
 title: Seguridad de responsabilidad compartida y modelo operativo
 description: Obtenga información sobre las responsabilidades de seguridad de cada parte involucrada en su proyecto de infraestructura de Adobe Commerce en la nube.
 exl-id: f3cc1685-e469-4e30-b18e-55ce10dd69ce
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+source-git-commit: 9021cff48fa6f0557da6ecd5077cffa5cb14e1e7
 workflow-type: tm+mt
-source-wordcount: '3252'
+source-wordcount: '3242'
 ht-degree: 0%
-
 ---
-
 # Modelo operativo y de seguridad de responsabilidad compartida
 
 Adobe Commerce en la infraestructura en la nube es una oferta de plataforma como servicio (PaaS) que se basa en un modelo operativo y de seguridad de responsabilidad compartida. Adobe, el comerciante, el proveedor de servicios en la nube y el proveedor de la red de entrega de contenido (CDN) comparten estas responsabilidades. Cada parte tiene la responsabilidad distinta de proteger y operar la aplicación de Adobe Commerce y el código específico del comerciante y las extensiones implementadas en la infraestructura en la nube.
@@ -38,7 +36,6 @@ Los comerciantes son responsables de lo siguiente:
 >Consulte también:
 >
 >* [Política de ciclo de vida del software](../release/lifecycle-policy.md): fechas de fin de soporte, soporte ampliado y disposiciones transitorias de solo seguridad
->* [Directiva de aplicación de actualización de la versión en la nube](../release/version-upgrade-enforcement-policy.md): fechas de aplicación y acciones requeridas
 >* [Aviso de seguridad y cumplimiento](../release/security-enforcement-policy.md): acciones y plazos requeridos para las versiones 2.4.4 a 2.4.9 de Adobe Commerce en la nube
 
 {{supported-versions-only}}

@@ -3,14 +3,12 @@ title: Directiva de ciclo vital de software
 description: Obtenga información sobre las fechas clave de fin de compatibilidad de software para las versiones de Adobe Commerce.
 exl-id: 9ee4ecc8-d893-412a-a605-5a8606a1b9a9
 nudge: true
-last-update: 2026-08-19T00:00:00Z
-source-git-commit: 3c67ddaf060b11e58a101b2d45417f3779a5312b
+last-update: 2026-08-19
+source-git-commit: 0a3db740cc40376664128121a462e0c93c70e746
 workflow-type: tm+mt
 source-wordcount: '1353'
 ht-degree: 1%
-
 ---
-
 
 # directiva de ciclo vital de Adobe Commerce
 
@@ -206,3 +204,5 @@ Póngase en contacto con el equipo de su cuenta de Adobe para comenzar una evalu
 Si no puede migrar a [!DNL Adobe Commerce as a Cloud Service] inmediatamente, puede actualizar a la versión de Adobe Commerce en la nube más reciente y compatible actualmente. Esto le lleva a una pila de infraestructura moderna y totalmente compatible, al tiempo que conserva su modelo de implementación de Commerce en la nube existente.
 
 Tenga en cuenta que esta ruta no elimina las futuras obligaciones de actualización. Los clientes con implementaciones de Adobe Commerce en la nube deben continuar actualizándose a medida que las líneas de versión alcanzan sus fechas de aplicación de actualización de versiones.
+
+<!-- Last updated from includes: 2026-09-17 13:05:40 -->

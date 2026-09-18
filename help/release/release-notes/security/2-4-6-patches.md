@@ -2,14 +2,12 @@
 title: Notas de la versión de Adobe Commerce 2.4.6 Security Patch
 description: Obtenga información acerca de las correcciones de errores de seguridad, las mejoras de seguridad y otras actualizaciones relacionadas con la seguridad incluidas en las versiones de parches de seguridad para Adobe Commerce 2.4.6.
 exl-id: cde096ac-d192-490d-873a-475996c474ff
-last-update: 2026-08-19T00:00:00Z
-source-git-commit: 3c67ddaf060b11e58a101b2d45417f3779a5312b
+last-update: 2026-08-19
+source-git-commit: 0a3db740cc40376664128121a462e0c93c70e746
 workflow-type: tm+mt
 source-wordcount: '2365'
 ht-degree: 0%
-
 ---
-
 
 # Notas de la versión de parches de seguridad de Adobe Commerce 2.4.6
 
@@ -31,7 +29,7 @@ ht-degree: 0%
 >
 >Adobe Commerce 2.4.6 cuenta con [soporte extendido](../../lifecycle-policy.md#extended-support) hasta el **30 de agosto de 2027**, seguido de un [período de transición solo de seguridad](../../lifecycle-policy.md#security-only-transitional-period) hasta el **31 de mayo de 2028**. Estas provisiones solo están disponibles para los clientes de Adobe Commerce. No amplían la compatibilidad con dependencias de terceros como MySQL.
 >
->Si ejecuta Adobe Commerce en la nube, debe actualizar a una versión compatible o migrar a [!DNL Adobe Commerce as a Cloud Service] antes del **1 de junio de 2028** [fecha de aplicación de la actualización de la versión](../../version-upgrade-enforcement-policy.md). Consulte la tabla [fechas de fin de soporte](../../lifecycle-policy.md#end-of-support-dates) para ver las fechas completas del ciclo vital.
+>Si ejecuta Adobe Commerce en la nube, debe actualizar a una versión compatible o migrar a [!DNL Adobe Commerce as a Cloud Service] antes del **1 de junio de 2028** [fecha de aplicación de la actualización de la versión](../../security-enforcement-policy.md). Consulte la tabla [fechas de fin de soporte](../../lifecycle-policy.md#end-of-support-dates) para ver las fechas completas del ciclo vital.
 
 ## 2,4,6-p15
 
@@ -61,9 +59,9 @@ Adobe Commerce 2.4.6 ahora es compatible con RabbitMQ 4.2, que aborda la fecha d
 
 La integración de envío de USPS ahora es compatible con las API de USPS de RESTful modernizadas, además de las API de herramientas web heredadas. Los administradores pueden seleccionar qué API de integración de USPS utilizar en la configuración de administración. Esta actualización se prepara para la desaprobación de la API de herramientas web de USPS.
 
-#### Horquilla MVC Laminas propiedad de Magento
+#### Horquilla MVC Laminas de Magento
 
-Para resolver la retirada de Laminas MVC, Adobe Commerce ahora usa una ramificación de `laminas-mvc` propiedad de Magento (publicada como `magento/magento-zf-mvc`). Esta ramificación garantiza la aplicación continua de parches y la seguridad a largo plazo de Adobe Commerce 2.4.6.
+Para resolver el problema de la jubilación de Laminas MVC, Adobe Commerce ahora usa una ramificación de `laminas-mvc` propiedad de Magento (publicada como `magento/magento-zf-mvc`). Esta ramificación garantiza la aplicación continua de parches y la seguridad a largo plazo de Adobe Commerce 2.4.6.
 
 ## 2,4,6-p14
 
@@ -195,7 +193,7 @@ Para obtener la información más reciente sobre la corrección de errores de se
 
 La versión de seguridad de Adobe Commerce 2.4.6-p7 proporciona correcciones de errores de seguridad para vulnerabilidades identificadas en versiones anteriores de 2.4.6.
 
-Para obtener la información más reciente sobre la corrección de errores de seguridad, consulte [Boletín de seguridad de Adobe APSB24-61](https://helpx.adobe.com/es/security/products/magento/apsb24-61.html).
+Para obtener la información más reciente sobre la corrección de errores de seguridad, consulte [Boletín de seguridad de Adobe APSB24-61](https://helpx.adobe.com/security/products/magento/apsb24-61.html).
 
 ### Características destacadas
 
@@ -331,4 +329,4 @@ Las actualizaciones de plataforma para esta versión mejoran el cumplimiento de 
 
   Este problema se puede resolver agregando dependencias manuales para el paquete de seguridad B2B con una [etiqueta de estabilidad](https://getcomposer.org/doc/04-schema.md#package-links). Para obtener más información, consulte las [notas de la versión de B2B](https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html?lang=es#known-issue).
 
-<!-- Last updated from includes: 2026-04-08 15:01:38 -->
+<!-- Last updated from includes: 2026-08-19 13:47:15 -->
