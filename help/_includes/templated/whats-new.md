@@ -1,7 +1,7 @@
 ---
-source-git-commit: 0a3db740cc40376664128121a462e0c93c70e746
+source-git-commit: 076f76112159204c0f23d3ddfbb606e274c406eb
 workflow-type: tm+mt
-source-wordcount: '1664'
+source-wordcount: '1538'
 ht-degree: 1%
 ---
 # Novedades de la plantilla
@@ -9,6 +9,50 @@ ht-degree: 1%
 ## Novedades
 
 Esta página contiene los cambios realizados en los últimos 60 días. Excluimos todas las actualizaciones menores, como la edición de copias, de esta lista.
+
+### 18 de septiembre de 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descripción</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Se ha agregado <a href="https://experienceleague.adobe.com/es/docs/commerce-operations/release/planning/monthly-isolated-security-patches">directiva de parches de seguridad aislada mensual</a>, que explica cómo Adobe Commerce ofrece correcciones CVE específicas y aisladas el martes de parches entre las versiones de parches de seguridad completas, y cómo aplicarlas y verificarlas.</p>
+</td>
+      <td>
+        Nuevo tema
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/681f7f0589aed8787aaf165d36ac00f670d751ce">comprometer</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 15 de septiembre de 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descripción</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Se ha corregido la guía de configuración del servicio <a href="https://experienceleague.adobe.com/es/docs/commerce-operations/implementation-playbook/best-practices/planning/redis-valkey-service-configuration">Redis/Valkey</a> para aclarar que las variables de implementación <code>VALKEY_BACKEND</code> y <code>REDIS_BACKEND</code> no determinan qué servicio de caché utiliza realmente Adobe Commerce y que <code>VALKEY_USE_SLAVE_CONNECTION</code>/<code>REDIS_USE_SLAVE_CONNECTION</code> debe coincidir con el servicio disponible en el entorno.</p>
+</td>
+      <td>
+        Técnico
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/49781ad38a266fffa1be080b5a093327a28cf6a6">comprometer</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 8 de septiembre de 2026
 
@@ -380,102 +424,6 @@ Esta página contiene los cambios realizados en los últimos 60 días. Excluimos
         Tema nuevo, qpt
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/3174f84e0a8c64aaed50cc075a9287bc011778ef">comprometer</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 27 de julio de 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descripción</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Se agregó <a href="https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/overview">Información general: Herramienta de parches de calidad (QPT) v1.1.82</a>.</p>
-</td>
-      <td>
-        Tema nuevo, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/ddfb8e85d015b8ab675a3af56cf5d2bb72e535c4">comprometer</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 23 de julio de 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descripción</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Se han actualizado <a href="https://experienceleague.adobe.com/es/docs/commerce-operations/installation-guide/system-requirements">Requisitos del sistema</a> con los detalles de compatibilidad de la versión de MariaDB Cloud para Adobe Commerce 2.4.9 (se recomienda 12.3, se admite 11.8).</p>
-</td>
-      <td>
-        Técnico
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/eaf47339d87d296799367f699f9322c14e6ee780">comprometer</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 22 de julio de 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descripción</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Se ha actualizado el tema <a href="https://experienceleague.adobe.com/es/docs/commerce-operations/installation-guide/system-requirements">Requisitos del sistema</a> con las últimas versiones de Commerce en Cloud Service, incluida una actualización de RabbitMQ 4.3 y la compatibilidad confirmada con MariaDB 12.3.</p>
-</td>
-      <td>
-        Actualización importante
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/6607852ba3221a1120f3c88007c106ed9704dcec">comprometer</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 21 de julio de 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descripción</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Se agregó una descripción detallada de la corrección de QPT 1.1.81 para <a href="https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4401">ACP2E-4401: Actualización programada para obtener una vista previa de la página de inicio con productos configurables y redirecciones a la página de mantenimiento</a>.</p>
-</td>
-      <td>
-        Tema nuevo, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/41aac13f73ff0836f93b8ec30a709bd89fa34a94">comprometer</a></td>
-    </tr>
-    <tr>
-      <td><p>Se agregó una descripción detallada de la corrección de QPT 1.1.81 para <a href="https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4468">ACP2E-4468: Los usuarios administradores con alcance de sitio web no pueden guardar bloques dinámicos en Page Builder</a>.</p>
-</td>
-      <td>
-        Tema nuevo, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/f5fbe594284c05aaa9b2461e3628a3444229efb6">comprometer</a></td>
     </tr>
   </tbody>
 </table>
