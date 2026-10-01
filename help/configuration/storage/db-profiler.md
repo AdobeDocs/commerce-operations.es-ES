@@ -6,11 +6,9 @@ badge: label="Colaboró Atish Goswami" type="Informative" url="https://github.co
 exl-id: 87780db5-6e50-4ebb-9591-0cf22ab39af5
 source-git-commit: af45ac46afffeef5cd613628b2a98864fd7da69b
 workflow-type: tm+mt
-source-wordcount: '184'
+source-wordcount: '198'
 ht-degree: 0%
-
 ---
-
 # Configurar el analizador de bases de datos
 
 El analizador de la base de datos Commerce muestra todas las consultas implementadas en una página, incluida la hora de cada consulta y los parámetros aplicados.
