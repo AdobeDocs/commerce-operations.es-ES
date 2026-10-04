@@ -1,15 +1,13 @@
 ---
 title: La ficha [!UICONTROL MySQL]
-description: Obtenga información acerca de la ficha [!UICONTROL MySQL] de  [!DNL Observation for Adobe Commerce].
+description: Obtenga información acerca de la ficha [!UICONTROL MySQL] de [!DNL Observation for Adobe Commerce].
 exl-id: 1d8dd07c-15fd-4ffd-ad10-0d886bf1579e
 feature: Configuration, Observability
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
-source-wordcount: '1625'
+source-wordcount: '1640'
 ht-degree: 0%
-
 ---
-
 # La ficha [!UICONTROL MySQL]
 
 ## [!UICONTROL MySQL% free storage by node]
