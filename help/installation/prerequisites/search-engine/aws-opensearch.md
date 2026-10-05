@@ -5,11 +5,9 @@ feature: Install, Search
 exl-id: 39ca7fd0-e21f-4f14-bda6-ff00a61a1a4d
 source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
 workflow-type: tm+mt
-source-wordcount: '324'
+source-wordcount: '341'
 ht-degree: 0%
-
 ---
-
 # AWS OpenSearch
 
 Adobe Commerce 2.4.5 es compatible con el uso de clústeres del servicio OpenSearch de Amazon. Este servicio es el sucesor del servicio Elasticsearch de Amazon. En este tema se describe cómo configurar Commerce para que utilice AWS OpenSearch y cómo migrar datos de una instancia local de Elasticsearch u OpenSearch a un clúster de AWS OpenSearch.
