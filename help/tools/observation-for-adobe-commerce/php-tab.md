@@ -1,15 +1,13 @@
 ---
 title: La ficha [!UICONTROL PHP]
-description: Obtenga información acerca de la ficha [!UICONTROL PHP] de  [!DNL Observation for Adobe Commerce].
+description: Obtenga información acerca de la ficha [!UICONTROL PHP] de [!DNL Observation for Adobe Commerce].
 exl-id: 0989a7f5-75b0-4fb5-ac5e-2618603bf548
 feature: Configuration, Observability
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
-source-wordcount: '571'
+source-wordcount: '560'
 ht-degree: 0%
-
 ---
-
 # La ficha [!UICONTROL PHP]
 
 La pestaña **PHP** muestra problemas de procesos de PHP para proporcionar un análisis más profundo de los problemas de PHP.
@@ -45,7 +43,7 @@ El fotograma **[!UICONTROL PHP CPU Utilization]** muestra el porcentaje de uso d
 El fotograma **[!UICONTROL PHP Process states]** muestra los estados del proceso PHP a lo largo del periodo de tiempo seleccionado. Se muestra cuando los procesos de PHP finalizan y se reinician. Tenga cuidado con los procesos PHP terminados que no muestran reinicios.
 
 * &#39;%NOTICE: finalizando ...%&#39;) como &#39;php_term&#39;
-* &#39;% AVISO: saliendo, ¡adiós!%&#39;) como &#39;php_exit&#39;
+* &#39;% AVISO: saliendo, bye-bye!%&#39;) como &#39;php_exit&#39;
 * &#39;% NOTICE: fpm se está ejecutando, pid%&#39;) como &#39;fpm_start&#39;
 * &#39;%NOTICE: listo para gestionar conexiones (%) como &#39;php_ready&#39;
 
@@ -56,7 +54,7 @@ El fotograma **[!UICONTROL PHP Process states]** muestra los estados del proceso
 El fotograma **[!UICONTROL PHP Errors]** muestra el número de errores de trabajo de PHP en el periodo de tiempo seleccionado. Los mensajes de error analizados y mostrados incluyen:
 
 * &#39;%worker_connections are not ough (%) as &#39;worker&#39;
-* &#39;%PHP Error grave: tamaño de memoria permitido%&#39;) como &#39;mem_size&#39;
+* &#39;%PHP Error grave: tamaño de memoria permitido!%&#39;) como &#39;mem_size&#39;
 * &#39;%salía en la señal 11 (SIGSEGV)%&#39;) como &#39;sig_11&#39;
 * &#39;%saliente en la señal 7 (SIGBUS)%&#39;) como &#39;sig_7&#39;
 * &#39;%increased pm.start_servers%&#39;) como &#39;pmstart_serv&#39;
