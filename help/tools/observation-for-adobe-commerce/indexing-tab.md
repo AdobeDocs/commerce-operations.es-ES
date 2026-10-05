@@ -1,15 +1,13 @@
 ---
 title: La ficha [!UICONTROL Indexing]
-description: Obtenga información acerca de la ficha [!UICONTROL Indexing] de  [!DNL Observation for Adobe Commerce].
+description: Obtenga información acerca de la ficha [!UICONTROL Indexing] de [!DNL Observation for Adobe Commerce].
 exl-id: c7e123b7-2d0c-49d4-9f76-128939dc02a8
 feature: Configuration, Observability
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
-source-wordcount: '176'
+source-wordcount: '177'
 ht-degree: 0%
-
 ---
-
 # La ficha [!UICONTROL Indexing]
 
 La pestaña **[!UICONTROL Indexing]** intenta explicar los problemas con la indexación e identificar las posibles causas.
