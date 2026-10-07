@@ -1,15 +1,13 @@
 ---
-title: La  [!DNL Cron] pestaña
-description: Obtenga información acerca de la ficha  [!DNL Cron] de [!DNL Observation for Adobe Commerce].
+title: La ficha [!DNL Cron]
+description: Obtenga información acerca de la ficha [!DNL Cron] de [!DNL Observation for Adobe Commerce].
 exl-id: 66f5ffd6-4118-4534-b2d6-09c7a30e5e13
 feature: Configuration, Observability
 source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
 workflow-type: tm+mt
-source-wordcount: '297'
+source-wordcount: '298'
 ht-degree: 0%
-
 ---
-
 # La ficha [!DNL Cron]
 
 Esta ficha es un intento de aislar rápidamente los problemas y las causas de [!DNL cron] problemas.

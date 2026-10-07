@@ -1,15 +1,13 @@
 ---
 title: La ficha [!UICONTROL CDN]
-description: Obtenga información acerca de la ficha [!UICONTROL CDN] de  [!DNL Observation for Adobe Commerce].
+description: Obtenga información acerca de la ficha [!UICONTROL CDN] de [!DNL Observation for Adobe Commerce].
 exl-id: db22bbca-2033-4e9a-8799-b47d84bdd720
 feature: Configuration, Observability
 source-git-commit: e753528a1d74eda0a1393e2cc455f33f529db739
 workflow-type: tm+mt
-source-wordcount: '739'
+source-wordcount: '743'
 ht-degree: 0%
-
 ---
-
 # La ficha [!UICONTROL CDN]
 
 Esta ficha contiene información centrada en [!DNL content delivery network (CDN)]. En el caso de Adobe Commerce Cloud, este es el servicio [!DNL Fastly].
