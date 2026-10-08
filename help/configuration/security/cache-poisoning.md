@@ -7,9 +7,7 @@ source-git-commit: 56a2461edea2799a9d569bd486f995b0fe5b5947
 workflow-type: tm+mt
 source-wordcount: '265'
 ht-degree: 0%
-
 ---
-
 # Evitar el envenenamiento de caché
 
 En este tema se explica cómo evitar el envenenamiento de caché si utiliza el servidor web de Microsoft Internet Information Server (IIS). _Intoxicación de caché_ es un método para cambiar el contenido de la caché con el fin de incluir páginas diferentes del mismo sitio. Por ejemplo, es posible insertar una página de error HTTP 404 (no encontrada) en lugar de alguna página benigna (por ejemplo, la página principal de la tienda), lo que puede provocar una posible denegación de servicio (DoS). Varnish o Redis almacenan en caché las direcciones URL de páginas malintencionadas; de ahí el nombre _envenenamiento de caché de páginas_.
