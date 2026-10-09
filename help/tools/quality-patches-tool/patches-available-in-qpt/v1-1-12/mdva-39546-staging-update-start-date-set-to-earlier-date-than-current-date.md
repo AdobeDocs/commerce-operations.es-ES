@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-39546: la fecha de inicio de la actualización de ensayo se puede establecer en una fecha anterior a la fecha actual'
-description: El parche MDVA-39546 soluciona el problema por el que la fecha de inicio de la actualización de ensayo puede fijarse en una fecha anterior a la fecha actual. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.12. El ID del parche es MDVA-39546. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.5.
+description: El parche MDVA-39546 soluciona el problema por el que la fecha de inicio de la actualización de ensayo puede fijarse en una fecha anterior a la fecha actual. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.12. El ID del parche es MDVA-39546. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.5.
 feature: Staging
 role: Admin
 exl-id: 5d53db52-71af-4c19-84dd-dffb7303c00f

@@ -68,7 +68,7 @@ Consulte [Guía de actualización de software > Parches](/help/tools/quality-pat
 
 ### Cómo instalar y utilizar QPT para Adobe Commerce en la infraestructura en la nube
 
-Consulte [Cloud for Adobe Commerce > Aplicar parches](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) en nuestra documentación para desarrolladores para obtener más información sobre cómo instalar y utilizar QPT para aplicar y revertir parches en Adobe Commerce en la infraestructura en la nube.
+Consulte [Cloud for Adobe Commerce > Aplicar parches](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) en nuestra documentación para desarrolladores para obtener más información sobre cómo instalar y utilizar QPT para aplicar y revertir parches en Adobe Commerce en la infraestructura en la nube.
 
 ## Lectura relacionada
 

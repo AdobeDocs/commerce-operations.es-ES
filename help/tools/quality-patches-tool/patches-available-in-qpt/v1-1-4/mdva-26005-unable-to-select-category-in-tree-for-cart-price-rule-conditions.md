@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-26005: No se puede seleccionar la categoría en el árbol para las condiciones de regla de precio del carro de compras'
-description: El parche MDVA-26005 resuelve el problema en el que los usuarios no pueden seleccionar una categoría en el árbol de categorías para las condiciones de regla de precio del carro de compras. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.4. El ID del parche es MDVA-26005. Tenga en cuenta que el problema se solucionó en Adobe Commerce 2.3.6.
+description: El parche MDVA-26005 resuelve el problema en el que los usuarios no pueden seleccionar una categoría en el árbol de categorías para las condiciones de regla de precio del carro de compras. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.4. El ID del parche es MDVA-26005. Tenga en cuenta que el problema se solucionó en Adobe Commerce 2.3.6.
 feature: Categories, Orders, Price Rules, Shopping Cart
 role: Admin
 exl-id: 02d9eef4-89f0-48be-8bb9-c62bbdad76a5
@@ -72,7 +72,7 @@ No puede seleccionar una categoría debido a un error de JS.
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
 * Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía [!DNL Quality Patches Tool].
-* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) en la guía Commerce en la infraestructura de la nube.
+* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) en la guía Commerce en la infraestructura de la nube.
 
 ## Lectura relacionada
 

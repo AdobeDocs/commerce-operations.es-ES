@@ -74,7 +74,7 @@ Siga estos pasos para identificar y solucionar los problemas de la causa.
 
 **Como se trata de una alerta crítica, se recomienda completar el paso 1 antes de intentar solucionar el problema (paso 2 en adelante).**
 
-1. Compruebe si existe un ticket de asistencia de Adobe Commerce. Para ver los pasos, consulte [Rastrear los vales de soporte](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#track-support-case) en la Base de conocimiento de soporte de Commerce. Es posible que la asistencia técnica ya haya recibido una alerta de umbral [!DNL New Relic], haya creado un ticket y haya empezado a trabajar en el problema. Si no existe ningún ticket, cree uno. El ticket debe tener la siguiente información:
+1. Compruebe si existe un ticket de asistencia de Adobe Commerce. Para ver los pasos, consulte [Rastrear los vales de soporte](https://experienceleague.adobe.com/es/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#track-support-case) en la Base de conocimiento de soporte de Commerce. Es posible que la asistencia técnica ya haya recibido una alerta de umbral [!DNL New Relic], haya creado un ticket y haya empezado a trabajar en el problema. Si no existe ningún ticket, cree uno. El ticket debe tener la siguiente información:
 
    * Motivo del contacto: seleccione **[!UICONTROL New Relic CRITICAL alert received]**.
    * Descripción de la alerta.

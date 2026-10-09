@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-40816: Los datos de inventario no se muestran en la cuadrícula del producto'
-description: El parche MDVA-40816 soluciona el problema de que la información de inventario no se muestra en la cuadrícula del producto si un SKU de producto contiene caracteres especiales. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.10. El ID del parche es MDVA-40816. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.5.
+description: El parche MDVA-40816 soluciona el problema de que la información de inventario no se muestra en la cuadrícula del producto si un SKU de producto contiene caracteres especiales. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.10. El ID del parche es MDVA-40816. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.5.
 feature: Admin Workspace, Inventory, Orders, Products
 role: Admin
 exl-id: be1dbf75-389d-4bb2-847f-56afb746e4ce

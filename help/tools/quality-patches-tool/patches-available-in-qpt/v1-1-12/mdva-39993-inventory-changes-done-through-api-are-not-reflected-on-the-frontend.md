@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-39993: Los cambios en el inventario realizados a través de la API no se reflejan en la tienda'
-description: El parche MDVA-39993 resuelve el problema de que los cambios de inventario realizados a través de la API no se reflejen en la tienda. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.12. El ID del parche es MDVA-39993. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.5.
+description: El parche MDVA-39993 resuelve el problema de que los cambios de inventario realizados a través de la API no se reflejen en la tienda. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.12. El ID del parche es MDVA-39993. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.5.
 feature: REST, Inventory, Orders, Storefront
 role: Admin
 exl-id: 5fa13635-bd58-470b-a4d5-e50cda8a46e3
