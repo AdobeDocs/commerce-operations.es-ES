@@ -3,13 +3,22 @@ title: Configurar manualmente bases de datos maestras
 description: Consulte las directrices sobre la configuración manual de la solución de base de datos dividida.
 recommendations: noCatalog
 exl-id: 2c357486-4a8a-4a36-9e13-b53c83f69456
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '1391'
 ht-degree: 0%
-
 ---
-
 # Configurar manualmente bases de datos maestras
 
 {{ee-only}}
@@ -23,9 +32,9 @@ La división manual de bases de datos implica:
 - Creación de las bases de datos de sistema de gestión de pedidos (OMS) y de cierre de compra
 - Ejecute una serie de scripts SQL que:
 
-   - Soltar claves externas
-   - Realizar copia de seguridad de tablas de base de datos de ofertas y ventas
-   - Mover tablas de la base de datos principal a las bases de datos de ofertas y ventas
+  - Soltar claves externas
+  - Realizar copia de seguridad de tablas de base de datos de ofertas y ventas
+  - Mover tablas de la base de datos principal a las bases de datos de ofertas y ventas
 
 >[!WARNING]
 >

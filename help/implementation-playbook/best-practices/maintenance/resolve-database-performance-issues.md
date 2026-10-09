@@ -4,13 +4,25 @@ description: Aprenda a solucionar los problemas de las bases de datos que ralent
 role: Developer, Admin
 feature: Best Practices
 exl-id: e40e0564-a4eb-43a8-89dd-9f6c5cedb4a7
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '595'
 ht-degree: 0%
-
 ---
-
 <!--Consider moving this topic to the Maintenance section-->
 
 # Prácticas recomendadas para resolver problemas de rendimiento de la base de datos
@@ -38,7 +50,7 @@ Puede utilizar MySQL para identificar y resolver consultas de larga ejecución e
 Si el proyecto de Adobe Commerce está implementado en una arquitectura Pro, puede usar el Kit de herramientas de Percona para analizar las consultas.
 
 1. Ejecute el comando `pt-query-digest --type=slowlog` con los registros de consulta lentos de MySQL.
-   * Para encontrar la ubicación de los registros de consultas lentas, consulte **[!UICONTROL Log locations > Service Logs]**(https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/develop/test/log-locations#service-logs) en nuestra documentación para desarrolladores.
+   * Para encontrar la ubicación de los registros de consultas lentas, consulte **[!UICONTROL Log locations > Service Logs]**(https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/test/log-locations#service-logs) en nuestra documentación para desarrolladores.
    * Consulte la documentación de [Percona Toolkit > pt-query-digest](https://www.percona.com/doc/percona-toolkit/LATEST/pt-query-digest.html#pt-query-digest).
 1. En función de los problemas encontrados, realice pasos para corregir la consulta de modo que se ejecute más rápidamente.
 

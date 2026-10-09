@@ -1,25 +1,34 @@
 ---
-title: Configurar  [!DNL Data Migration Tool]
-description: Obtenga información acerca de los dos métodos para configurar  [!DNL Data Migration Tool] para transferir datos entre Magento 1 y Magento 2.
+title: Configurar [!DNL Data Migration Tool]
+description: Obtenga información acerca de los dos métodos para configurar [!DNL Data Migration Tool] para transferir datos entre Magento 1 y Magento 2.
 exl-id: 273be997-8085-4488-a455-f6005a85b406
 topic: Commerce, Migration
-source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '811'
+source-wordcount: '826'
 ht-degree: 0%
-
 ---
-
 # Configurar [!DNL Data Migration Tool]
 
 Después de instalar [!DNL Data Migration Tool], el siguiente directorio contiene los archivos de asignación y configuración:
 
 * Magento Open Source:
-   * `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/opensource-to-opensource`: configuración y scripts para migrar de Magento Open Source 1 a Magento Open Source 2
+  * `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/opensource-to-opensource`: configuración y scripts para migrar de Magento Open Source 1 a Magento Open Source 2
 
 * Adobe Commerce:
-   * `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/opensource-to-commerce`: configuración y scripts para migrar de Magento Open Source 1 a Adobe Commerce 2
-   * `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/commerce-to-commerce`: configuración y scripts para migrar de Adobe Commerce 1 a Adobe Commerce 2
+  * `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/opensource-to-commerce`: configuración y scripts para migrar de Magento Open Source 1 a Adobe Commerce 2
+  * `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc/commerce-to-commerce`: configuración y scripts para migrar de Adobe Commerce 1 a Adobe Commerce 2
 
 Los directorios anteriores contienen subdirectorios para cada versión admitida.
 
@@ -35,7 +44,7 @@ Si planea ejecutar [!DNL Data Migration Tool] solo localmente, puede editar los 
 
 ### Configuración de la migración en un módulo independiente
 
-Antes de migrar datos, debe crear un módulo de Magento 2.
+Antes de migrar cualquier dato, debe crear un módulo de Magento 2.
 
 1. Cree un módulo de Magento 2.
 
@@ -144,7 +153,7 @@ Para configurar [!DNL Data Migration Tool] para la migración:
    </options>
    ```
 
-   La etiqueta &lt;crypt_key> debe contener un valor. Puede encontrarlo dentro de la etiqueta `<key>`, que se encuentra en el archivo app/etc/local.xml de su instancia de Magento 1.
+   La etiqueta &lt;crypt_key> debe contener un valor. Puede encontrarlo dentro de la etiqueta `<key>`, que se encuentra en el archivo app/etc/local.xml en su instancia de Magento 1.
 
    Parámetros opcionales:
 
@@ -152,7 +161,7 @@ Para configurar [!DNL Data Migration Tool] para la migración:
    * Puerto personalizado de base de datos: `port=<port>`
    * Prefijo de tabla: `<source_prefix>`, `<dest_prefix>`
 
-   Por ejemplo, si el nombre de usuario del propietario de la base de datos es `root` con la contraseña `pass` y usa el prefijo `magento1` en la base de datos de Magento 1, use lo siguiente en `config.xml`:
+   Por ejemplo, si el nombre de usuario del propietario de la base de datos es `root` con la contraseña `pass` y utiliza el prefijo `magento1` en la base de datos de Magento 1, utilice el siguiente prefijo en `config.xml`:
 
    ```xml
    <source>
@@ -190,7 +199,7 @@ Por ejemplo:
 
 ## Trabajo con archivos de configuración y asignación
 
-[!DNL Data Migration Tool] usa *archivos de asignación* para permitirle realizar asignaciones de base de datos personalizadas entre las bases de datos de Magento 1 y Magento 2, entre las que se incluyen:
+[!DNL Data Migration Tool] usa *archivos de asignación* para permitirle realizar una asignación de base de datos personalizada entre las bases de datos de Magento 1 y Magento 2, entre las que se incluyen:
 
 * Cambio de nombres de tabla
 
@@ -198,7 +207,7 @@ Por ejemplo:
 
 * Omitir tablas o campos
 
-* Adaptar la transferencia de datos de un campo al formato Magento 2
+* Adaptación de la transferencia de datos de un campo al formato Magento 2
 
 Los archivos de asignación para las versiones de Magento compatibles se encuentran en los subdirectorios de `<your Magento 2 install dir>/vendor/magento/data-migration-tool/etc`
 
@@ -210,7 +219,7 @@ Para utilizar los archivos de asignación:
 
    1. Ruta absoluta del archivo, p. ej. g. `/var/www/html/app/code/Vendor/Migration/etc/opensource-to-opensource/1.9.4.1/map.xml`
    1. ruta de archivo relativa del módulo magento/data-migration-tool: `etc/opensource-to-opensource/1.9.4.1/map.xml`
-   1. Ruta de acceso del archivo relativa a la raíz de Magento: `app/code/Vendor/Migration/etc/opensource-to-opensource/1.9.4.1/map.xml`
+   1. Ruta de archivo relativa a la raíz de Magento: `app/code/Vendor/Migration/etc/opensource-to-opensource/1.9.4.1/map.xml`
 
 Los directorios `<Magento 2 dir>/vendor/magento/data-migration-tool/etc` y `<Magento 2 dir>/vendor/magento/data-migration-tool/etc/<ce version>` contienen los siguientes archivos de configuración:
 

@@ -1,19 +1,28 @@
 ---
 title: Fichas de características
-description: Obtenga información acerca de las distintas fichas de características en  [!DNL Site-Wide Analysis Tool]
+description: Obtenga información acerca de las distintas fichas de características de [!DNL Site-Wide Analysis Tool]
 exl-id: 23fc0311-82aa-430b-b11b-e287bea23d7b
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '359'
 ht-degree: 0%
-
 ---
-
 # Fichas de características
 
 La siguiente información de fichas de características aparece en el extremo superior de la pantalla [!DNL Site-Wide Analysis Tool].
 
-**[!UICONTROL Dashboard]**: la página [!UICONTROL Dashboard] muestra widgets que contienen las recomendaciones actuales, la compatibilidad de la actualización, el análisis de seguridad, las extensiones y [!DNL NewRelic Alerts] para el estado actual del sitio web de Adobe Commerce. También hay una lista de [!UICONTROL External Resources] vínculos para Adobe Commerce, entre los que se incluyen [Base de conocimiento de soporte técnico del Centro de ayuda de Adobe Commerce](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/overview), [Documentación para desarrolladores de Adobe Commerce (DevDocs)](https://developer.adobe.com/commerce/docs/), [[!DNL Quality Patches Tool]: Buscar parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es){target="_blank"}, [Centro de seguridad](https://helpx.adobe.com/es/security.html) y [Observación para Adobe Commerce (OAC)](https://experienceleague.adobe.com/docs/commerce-operations/tools/observation-for-adobe-commerce/intro.html?lang=es).
+**[!UICONTROL Dashboard]**: la página [!UICONTROL Dashboard] muestra widgets que contienen las recomendaciones actuales, la compatibilidad de la actualización, el análisis de seguridad, las extensiones y [!DNL NewRelic Alerts] para el estado actual del sitio web de Adobe Commerce. También hay una lista de [!UICONTROL External Resources] vínculos para Adobe Commerce, entre los que se incluyen [Base de conocimiento de soporte técnico del Centro de ayuda de Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview), [Documentación para desarrolladores de Adobe Commerce (DevDocs)](https://developer.adobe.com/commerce/docs/), [[!DNL Quality Patches Tool]: Buscar parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}, [Centro de seguridad](https://helpx.adobe.com/security.html) y [Observación para Adobe Commerce (OAC)](https://experienceleague.adobe.com/docs/commerce-operations/tools/observation-for-adobe-commerce/intro.html).
 
 **[!UICONTROL Information]**: la página [!UICONTROL Information] muestra información general sobre el sitio.
 El área [!UICONTROL General Information] muestra los datos de la base del sitio del comerciante, las secciones Propietario del contacto, [!DNL Jira] problemas (solo para uso interno) e Informe de tickets.
@@ -27,6 +36,6 @@ La información de Excepciones incluye Última fecha de detección (UTC), Detall
 
 **[!UICONTROL Extensions]**: la página [!UICONTROL Extensions] muestra las extensiones instaladas actualmente en la instancia de Adobe Commerce. Se proporciona información de Adobe Commerce Marketplace, cuando está disponible, para las extensiones enumeradas allí.
 
-**[!UICONTROL Alerts]**: la página [!UICONTROL Alerts] muestra la última [!DNL NewRelic Managed Alerts] para la instancia de Adobe Commerce. Obtenga más información sobre [Alertas administradas para Adobe Commerce](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce.md) y cómo [acceder a los servicios de NewRelic](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/faq/access-new-relic-services) en la Base de conocimiento de soporte de Adobe Commerce.
+**[!UICONTROL Alerts]**: la página [!UICONTROL Alerts] muestra la última [!DNL NewRelic Managed Alerts] para la instancia de Adobe Commerce. Obtenga más información sobre [Alertas administradas para Adobe Commerce](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce.md) y cómo [acceder a los servicios de NewRelic](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/faq/access-new-relic-services) en la Base de conocimiento de soporte de Adobe Commerce.
 
-**[!UICONTROL Patches]**: la página [!UICONTROL Patches] muestra todas las revisiones actuales de [[!DNL Quality Patches Tool]: busque revisiones](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es){target="_blank"} compatibles con la versión de instancia de Adobe Commerce del comerciante. Obtenga más información acerca de [[!DNL Quality Patches Tool]: una herramienta de autoservicio para parches de calidad](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) en la guía Herramientas.
+**[!UICONTROL Patches]**: la página [!UICONTROL Patches] muestra todas las revisiones actuales de [[!DNL Quality Patches Tool]: busque revisiones](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"} compatibles con la versión de instancia de Adobe Commerce del comerciante. Obtenga más información acerca de [[!DNL Quality Patches Tool]: una herramienta de autoservicio para parches de calidad](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) en la guía Herramientas.

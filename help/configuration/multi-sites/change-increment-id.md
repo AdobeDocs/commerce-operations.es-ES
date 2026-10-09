@@ -2,13 +2,22 @@
 title: Cambiar ID de incremento
 description: Obtenga información sobre cómo cambiar los ID de incremento para pedidos, facturas, notas de abono y otras entidades de base de datos de Commerce mediante SQL al combinar o restaurar sitios.
 exl-id: 039fc34c-d9cf-42f4-af5d-16a26a3e8171
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '396'
 ht-degree: 0%
-
 ---
-
 # Cambiar ID de incremento
 
 Este artículo explica cómo cambiar el id. de incremento de una entidad de la base de datos de Commerce (BD) (pedido, factura, nota de abono, etc.) en un almacén de Commerce concreto mediante la instrucción SQL `ALTER TABLE`.
@@ -28,7 +37,7 @@ Es posible que tenga que cambiar el ID de incremento de las nuevas entidades de 
 
 >[!INFO]
 >
->También puedes solucionar el problema de la pasarela de pago de PayPal permitiendo varios pagos por ID de factura en las Preferencias de recepción de pagos de PayPal. Ver [Solicitud rechazada de puerta de enlace de PayPal: problema de factura duplicada](https://experienceleague.adobe.com/es/docs/experience-cloud-kcs/kbarticles/ka-26838) en _Knowledge Base_.
+>También puedes solucionar el problema de la pasarela de pago de PayPal permitiendo varios pagos por ID de factura en las Preferencias de recepción de pagos de PayPal. Ver [Solicitud rechazada de puerta de enlace de PayPal: problema de factura duplicada](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26838) en _Knowledge Base_.
 
 ## Pasos previos necesarios
 

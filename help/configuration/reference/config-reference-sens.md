@@ -3,19 +3,33 @@ title: Rutas confidenciales y específicas del sistema
 description: Obtenga información acerca de las rutas de configuración confidenciales y específicas del sistema para Adobe Commerce. Descubra la configuración segura y la administración de variables de entorno.
 feature: Configuration, System
 exl-id: 127880ab-7507-4e53-8b51-dfa6557d0b18
-source-git-commit: 7054a5286f01e26e324401f4d8505e4e0faed93e
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 8d0b446f-5b16-5a10-b272-01143504a11c
+    internal-label: System
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '4206'
+source-wordcount: '4570'
 ht-degree: 0%
-
 ---
-
 # Configuración confidencial y específica del sistema
 
 En este tema se enumeran las rutas de configuración para la configuración específica del sistema y confidencial:
 
 - El comando [`magento app:config:dump`](../cli/export-configuration.md) escribe la configuración específica del sistema en el archivo de configuración específico del sistema, `app/etc/env.php`, que debería _no_ estar en el control de código fuente. También escribe la configuración compartida para todas las instancias de Commerce en `app/etc/config.php`; este archivo _debería_ estar en el control de código fuente.
-- El comando [`magento config:sensitive:set` &#x200B;](../cli/set-configuration-values.md) escribe la configuración confidencial en `app/etc/env.php`.
+- El comando [`magento config:sensitive:set` ](../cli/set-configuration-values.md) escribe la configuración confidencial en `app/etc/env.php`.
 
   También puede establecer valores confidenciales usando variables de configuración como se describe en [Usar variables de entorno para invalidar las opciones de configuración](../reference/override-config-settings.md#environment-variables).
 
@@ -171,9 +185,9 @@ Estos valores de configuración están disponibles en el Administrador de **Tien
 
 Estos valores de configuración están disponibles en el Administrador de **Tiendas** > Configuración > **Configuración** > **Catálogo** > **Inventario**.
 
-| Nombre | Ruta de configuración | Compatibilidad con la versión de Commerce | ¿Cifrado? | ¿Específico del sistema? | ¿Sensible? | |
---------------|--------------|--------------|--------------|--------------|--------------|
-| Clave de API de Google | `cataloginventory/source_selection_distance_based_google/api_key` | | Cifrado | | | Sensible |
+| Nombre | Ruta de configuración | Compatibilidad con la versión de Commerce| ¿Cifrado? | ¿Específico del sistema? | ¿Sensible? | |
+|--------------|--------------|--------------|--------------|--------------|--------------| |
+| Clave de API de Google | `cataloginventory/source_selection_distance_based_google/api_key` |  | Cifrado | | Sensible |
 
 ### Rutas específicas del sistema y confidenciales del mapa del sitio XML
 

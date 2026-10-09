@@ -2,13 +2,22 @@
 title: Información general sobre la instalación local
 description: Obtenga información sobre el proceso de instalación local de Adobe Commerce. Descubra los requisitos del servidor, los pasos de configuración y las prácticas recomendadas de implementación.
 exl-id: a9f5b241-d05d-462c-8c7f-479a264c988f
-source-git-commit: ee1041f3f7ea0ce7cdda2ce7a405d65a24352b4f
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '540'
 ht-degree: 3%
-
 ---
-
 
 # Información general sobre la instalación local
 
@@ -20,7 +29,7 @@ Puede instalar el software local de Adobe Commerce en aproximadamente 30 a 60 mi
 >
 >Debe tener conocimientos técnicos intermedios y acceso al servidor para continuar correctamente.
 
-La instalación crea una tienda Adobe Commerce completamente funcional con [tienda orientada al cliente](https://experienceleague.adobe.com/es/docs/commerce-admin/start/storefront/storefront) y [panel administrativo](https://experienceleague.adobe.com/es/docs/commerce-admin/start/admin/admin). Debe tener listas las credenciales de la base de datos, la información de dominio y las claves de autenticación antes de comenzar el proceso.
+La instalación crea una tienda Adobe Commerce completamente funcional con [tienda orientada al cliente](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront) y [panel administrativo](https://experienceleague.adobe.com/en/docs/commerce-admin/start/admin/admin). Debe tener listas las credenciales de la base de datos, la información de dominio y las claves de autenticación antes de comenzar el proceso.
 
 ## Responsabilidades del comerciante
 
@@ -33,7 +42,7 @@ Con Adobe Commerce local, puede alojar y administrar su propia infraestructura, 
 Tiene control total sobre su entorno, lo que permite una mayor personalización y flexibilidad, pero es usted el responsable de garantizar el rendimiento, la seguridad y la escalabilidad de la infraestructura. Por ejemplo, usted es responsable de lo siguiente:
 
 - El diseño, la implementación, la configuración, el mantenimiento, la resolución de problemas y las pruebas de rendimiento de todos los sistemas locales de Adobe Commerce.
-   - Servidores, sistema operativo, bases de datos, [!DNL PHP], búsqueda, almacenamiento en caché, caché de página completa y red de distribución de contenido. Los temas comunes pueden incluir (entre otros) [!DNL Nginx/Apache], [!DNL PHP], [!DNL MySQL/MariaDB], [!DNL Redis], [!DNL Elasticsearch/OpenSearch], [!DNL RabbitMQ], [!DNL Varnish], [!DNL DNS], [!DNL SSL/TLS certificates] y cualquier [!DNL CDN] usado.
+  - Servidores, sistema operativo, bases de datos, [!DNL PHP], búsqueda, almacenamiento en caché, caché de página completa y red de distribución de contenido. Los temas comunes pueden incluir (entre otros) [!DNL Nginx/Apache], [!DNL PHP], [!DNL MySQL/MariaDB], [!DNL Redis], [!DNL Elasticsearch/OpenSearch], [!DNL RabbitMQ], [!DNL Varnish], [!DNL DNS], [!DNL SSL/TLS certificates] y cualquier [!DNL CDN] usado.
 - Planificación de la capacidad, escalado automático, agrupación en clúster, backups, recuperación ante desastres
 - Todos los datos de productos y clientes, diseño, configuración y configuración, mantenimiento de aplicaciones y bases de datos, implementación de código, actualizaciones de versiones y aplicación de parches
 - Supervisión y alertas mediante APM/registro/alertas (por ejemplo, [!DNL New Relic], [!DNL Datadog], [!DNL ELK])

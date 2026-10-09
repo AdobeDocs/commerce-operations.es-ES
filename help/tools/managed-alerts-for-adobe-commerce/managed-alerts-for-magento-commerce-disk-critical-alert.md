@@ -1,16 +1,37 @@
 ---
 title: 'Alertas administradas para Adobe Commerce: Alerta de disco crítico'
-description: Este artículo proporciona pasos para solucionar problemas cuando recibe una alerta de disco crítica para Adobe Commerce en  [!DNL New Relic]. Se requiere una acción inmediata para solucionar el problema.
+description: Este artículo proporciona pasos para solucionar problemas cuando recibe una alerta de disco crítica para Adobe Commerce en [!DNL New Relic]. Se requiere una acción inmediata para solucionar el problema.
 feature: Cache, Marketing Tools, Observability, Support, Tools and External Services
 role: Admin
 exl-id: 1378dcfd-cf7c-4234-82bb-6697e23d54ca
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 125c1f49-aefd-5f34-a252-288937f95f6b
+    internal-label: Marketing Tools
+  - id: 4239b8a6-e74f-567d-a7a5-b98b9ead0ea4
+    internal-label: Observability
+  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
+subfeature_v2:
+  - id: b673188e-f9fa-492a-b470-c8f949bf7827
+    internal-label: Cache
+  - id: a59f76dc-e003-5617-951e-dffa5bd3de81
+    internal-label: Support
+  - id: 618ab558-d6ad-5352-99d6-d5702c6fdf80
+    internal-label: Tools and External Services
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '717'
 ht-degree: 0%
-
 ---
-
 # Alertas administradas para Adobe Commerce: Alerta de disco crítico
 
 Este artículo proporciona pasos para solucionar problemas cuando recibe una alerta de disco crítica para Adobe Commerce en [!DNL New Relic]. Se requiere una acción inmediata para solucionar el problema. La alerta tendrá el siguiente aspecto, según el canal de notificación de alerta que haya seleccionado.
@@ -47,16 +68,16 @@ Siga estos pasos para identificar y solucionar los problemas de la causa.
 >
 >Como se trata de una alerta crítica, se recomienda completar el **Paso 1** antes de intentar solucionar el problema (Paso 2 en adelante).
 
-1. Compruebe si existe un ticket de asistencia de Adobe Commerce. Para ver los pasos, consulte [Rastrear los vales de soporte](https://experienceleague.adobe.com/es/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#track-support-case) en la Base de conocimiento de soporte de Commerce. Es posible que el equipo de asistencia haya recibido una alerta de umbral [!DNL New Relic], haya creado un ticket y haya empezado a trabajar en el problema. Si no existe ningún ticket, cree uno. El ticket debe tener la siguiente información:
+1. Compruebe si existe un ticket de asistencia de Adobe Commerce. Para ver los pasos, consulte [Rastrear los vales de soporte](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#track-support-case) en la Base de conocimiento de soporte de Commerce. Es posible que el equipo de asistencia haya recibido una alerta de umbral [!DNL New Relic], haya creado un ticket y haya empezado a trabajar en el problema. Si no existe ningún ticket, cree uno. El ticket debe tener la siguiente información:
    * Motivo del contacto: seleccione **[!UICONTROL New Relic CRITICAL alert received]**.
    * Descripción de la alerta.
    * [[!DNL New Relic] Vínculo de incidente](https://docs.newrelic.com/docs/alerts/incident-management/view-event-details-incidents/). Esto se incluye en [Alertas administradas para Adobe Commerce](managed-alerts-for-magento-commerce.md).
 1. En [!DNL New Relic], revise los discos para el uso más alto. Para ver los pasos, consulte la ficha **[!UICONTROL Storage]** en la página [[!DNL New Relic] Hosts de supervisión de infraestructura: ficha [!UICONTROL Storage]](https://docs.newrelic.com/docs/infrastructure/infrastructure-ui-pages/infra-hosts-ui-page/#storage):
    * Si en [!DNL New Relic] observa un aumento lento en el uso del disco, pruebe las siguientes opciones:
-     * Optimización del espacio en disco mediante el ajuste de la asignación de espacio. Para ver los pasos, consulte [Administrar espacio en disco](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/develop/storage/manage-disk-space) en la Guía de Commerce en la nube. También es posible que deba solicitar más espacio en disco (póngase en contacto con el equipo de cuenta de Adobe).
-     * Borrar espacio en disco para MySQL. Consulte [El espacio en disco de MySQL es bajo](https://experienceleague.adobe.com/es/docs/experience-cloud-kcs/kbarticles/ka-27806) en la Base de conocimiento de soporte de Commerce para ver los pasos.
+     * Optimización del espacio en disco mediante el ajuste de la asignación de espacio. Para ver los pasos, consulte [Administrar espacio en disco](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/storage/manage-disk-space) en la Guía de Commerce en la nube. También es posible que deba solicitar más espacio en disco (póngase en contacto con el equipo de cuenta de Adobe).
+     * Borrar espacio en disco para MySQL. Consulte [El espacio en disco de MySQL es bajo](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27806) en la Base de conocimiento de soporte de Commerce para ver los pasos.
      * Si [!DNL New Relic] muestra un uso de disco que aumenta rápidamente, esto podría indicar que hay un problema que ha causado que un archivo aumente muy rápidamente en un directorio. Realice las siguientes comprobaciones:
        1. Compruebe el espacio en disco general para identificar el problema ejecutando el siguiente comando en CLI/Terminal: `df -h`
        1. Después de identificar un directorio con un uso de disco inesperadamente grande y creciente, debe comprobar el sistema de archivos afectado. El ejemplo siguiente muestra cómo comprobar el directorio de archivos `pub/media/`. Este es el directorio que utiliza Commerce para almacenar registros y archivos multimedia grandes. Sin embargo, debe ejecutar este comando para cualquier directorio que muestre un uso de disco inesperado: `du -sch ~/pub/media/*`
 
-Si la salida del terminal muestra un archivo en uno de estos directorios aumentando rápidamente el uso del disco y sabe que el contenido del archivo no es necesario, considere la posibilidad de quitar el archivo. Si no se siente cómodo al realizar esta acción, [envíe un ticket de soporte de Adobe Commerce](https://experienceleague.adobe.com/es/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case).
+Si la salida del terminal muestra un archivo en uno de estos directorios aumentando rápidamente el uso del disco y sabe que el contenido del archivo no es necesario, considere la posibilidad de quitar el archivo. Si no se siente cómodo al realizar esta acción, [envíe un ticket de soporte de Adobe Commerce](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-case).

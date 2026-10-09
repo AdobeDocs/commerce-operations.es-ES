@@ -2,13 +2,22 @@
 title: Tipos de configuración
 description: Obtenga información sobre cómo crear y ampliar tipos de configuración en Adobe Commerce. Descubra las técnicas de configuración y personalización del módulo.
 exl-id: 4390c310-b35a-431a-859f-3fd46d8ba6bf
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '559'
+source-wordcount: '603'
 ht-degree: 0%
-
 ---
-
 # Tipos de configuración
 
 ## Ampliar tipos de configuración
@@ -48,7 +57,7 @@ Para crear un tipo de configuración:
 1. Cree su archivo XML.
 1. Defina el objeto de configuración en su `di.xml`.
 
-   El siguiente ejemplo del archivo [di.xml](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Sales/etc/di.xml) del módulo Magento_Sales ilustra el aspecto que debería tener un objeto de configuración.
+   El siguiente ejemplo del [di.xml](https://github.com/magento/magento2/blob/2.4/app/code/Magento/Sales/etc/di.xml) del módulo Magento_Sales ilustra el aspecto que debería tener un objeto de configuración.
 
    ```xml
    <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">

@@ -2,13 +2,22 @@
 title: Programación de lanzamiento del parche
 description: Descubra cuándo planea Adobe anunciar el lanzamiento de nuevos parches y correcciones de seguridad para Adobe Commerce.
 exl-id: ae1e09cd-966f-44a3-9e4d-b90bb838429d
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '402'
 ht-degree: 4%
-
 ---
-
 
 # Programación de lanzamiento del parche
 
@@ -18,7 +27,7 @@ El propósito de esta programación es proporcionar fechas para cuándo Adobe pl
 
 >[!NOTE]
 >
->Para obtener más información sobre las nuevas características, la infraestructura en la nube y las versiones de extensibilidad, consulte la [documentación de la versión de Adobe Commerce Services](https://experienceleague.adobe.com/es/docs/commerce/user-guides/release-information/release-notes-all).
+>Para obtener más información sobre las nuevas características, la infraestructura en la nube y las versiones de extensibilidad, consulte la [documentación de la versión de Adobe Commerce Services](https://experienceleague.adobe.com/en/docs/commerce/user-guides/release-information/release-notes-all).
 
 Además de los parches de calidad, seguridad y beta programados que se enumeran en esta página, Adobe proporciona acceso a [parches individuales](versioning-policy.md#individual-patch) mediante la [Herramienta de parches de calidad](../tools/quality-patches-tool/usage.md). La herramienta le permite aplicar, revertir y ver información general sobre todos los parches individuales que están disponibles para la versión instalada de Adobe Commerce.
 
@@ -45,7 +54,7 @@ Consulte la siguiente imagen para obtener más información:
 
 Adobe notifica a los clientes sobre las nuevas versiones de parches a través de los siguientes canales:
 
-- [Boletines y avisos de seguridad de Adobe](https://helpx.adobe.com/es/security/security-bulletin.html#magento)
+- [Boletines y avisos de seguridad de Adobe](https://helpx.adobe.com/security/security-bulletin.html#magento)
 - Correo electrónico
 - Alertas en el producto
 

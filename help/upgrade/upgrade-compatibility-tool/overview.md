@@ -1,14 +1,23 @@
 ---
-title: Información general de  [!DNL Upgrade Compatibility Tool]
-description: Obtenga información acerca de  [!DNL Upgrade Compatibility Tool]  y cómo puede ayudarle con su proyecto de Adobe Commerce.
+title: Información general de [!DNL Upgrade Compatibility Tool]
+description: Obtenga información acerca de [!DNL Upgrade Compatibility Tool] y cómo puede ayudarle con su proyecto de Adobe Commerce.
 exl-id: 9493406a-1690-462b-b119-1b685b026c0b
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '348'
+source-wordcount: '349'
 ht-degree: 0%
-
 ---
-
 # Información general de guía
 
 {{commerce-only}}
@@ -23,7 +32,7 @@ Esta guía está dirigida a administradores e ingenieros de software de Adobe Co
 
 Puede usar el(la) [!DNL Upgrade Compatibility Tool] mediante:
 
-- Como herramienta independiente [interfaz de línea de comandos](../upgrade-compatibility-tool/run.md). Para obtener la lista completa de comandos disponibles, vea la referencia [`bin/uct` &#x200B;](../../tools/reference/uct.md).
+- Como herramienta independiente [interfaz de línea de comandos](../upgrade-compatibility-tool/run.md). Para obtener la lista completa de comandos disponibles, vea la referencia [`bin/uct` ](../../tools/reference/uct.md).
 - Integrando [!DNL Upgrade Compatibility Tool] con [[!DNL Site-Wide Analysis Tool]](../upgrade-compatibility-tool/integrate-analysis-tool.md).
 - Una configuración de ejecución dentro del [complemento Magento PHPStorm](../upgrade-compatibility-tool/run-configuration-phpstorm-plugin.md).
 
@@ -37,7 +46,7 @@ El diagrama siguiente muestra los posibles flujos de trabajo al ejecutar [!DNL U
 
 Vea este vídeo para obtener más información acerca de [!DNL Upgrade Compatibility Tool]:
 
->[!VIDEO](https://video.tv.adobe.com/v/344382?captions=spa&quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/341245?quality=12)
 
 ## Ayudar a mejorar [!DNL Upgrade Compatibility Tool]
 

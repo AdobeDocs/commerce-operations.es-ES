@@ -2,13 +2,22 @@
 title: Anular los ajustes de configuración
 description: Aprenda a utilizar variables de entorno para anular los ajustes de configuración de Adobe Commerce. Descubra las prácticas recomendadas de implementación y administración de la configuración.
 exl-id: 788fd3cd-f8c1-4514-8141-547fed36e9ce
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '1277'
 ht-degree: 0%
-
 ---
-
 # Anular los ajustes de configuración
 
 En este tema se explica cómo derivar un nombre de variable de entorno que conozca una ruta de configuración. Puede anular los ajustes de configuración de Adobe Commerce mediante variables de entorno. Por ejemplo, puede anular el valor de la URL activa de un procesador de pagos en su sistema de producción.
@@ -17,7 +26,7 @@ Puede anular el valor de _any_ configuración mediante variables de entorno; sin
 
 >[!TIP]
 >
->Consulte el tema [Configurar entornos](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-intro) en la guía _Commerce en infraestructura de nube_.
+>Consulte el tema [Configurar entornos](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-intro) en la guía _Commerce en infraestructura de nube_.
 
 ## Variables de entorno
 
@@ -30,7 +39,7 @@ Puede utilizar variables para cualquiera de las siguientes opciones:
 
   - Variables de entorno
   - El comando [`magento config:set`](../cli/set-configuration-values.md)
-  - El administrador seguido del comando [`magento app:config:dump` &#x200B;](../cli/export-configuration.md)
+  - El administrador seguido del comando [`magento app:config:dump` ](../cli/export-configuration.md)
 
 Las rutas de configuración se encuentran en:
 
@@ -62,8 +71,8 @@ El formato general de los nombres de las variables de configuración del sistema
   Para obtener más información sobre los ámbitos, consulte:
 
   - [Paso 1: Encuentre el valor de ámbito de vista del sitio web o tienda](#step-1-find-the-website-or-store-view-scope-value)
-  - [Tema de la Guía del usuario de Commerce sobre el ámbito](https://experienceleague.adobe.com/es/docs/commerce-admin/start/setup/websites-stores-views#scope-settings)
-  - [Referencia rápida del ámbito](https://experienceleague.adobe.com/es/docs/commerce-admin/config/scope-change#scope-quick-reference)
+  - [Tema de la Guía del usuario de Commerce sobre el ámbito](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views#scope-settings)
+  - [Referencia rápida del ámbito](https://experienceleague.adobe.com/en/docs/commerce-admin/config/scope-change#scope-quick-reference)
 
 `<SYSTEM__VARIABLE__NAME>` es la ruta de configuración con caracteres de subrayado doble sustituidos para `/`. Para obtener más información, consulte [Paso 2: Establecer variables del sistema](#step-2-set-global-website-or-store-view-variables).
 
@@ -253,6 +262,6 @@ Se muestra un ejemplo paso a paso en [Establecer valores de configuración media
 >
 >- Para usar los valores que configuró en la matriz `$_ENV`, debe establecer `variables_order = "EGPCS"` (Entorno, Obtener, Publicación, Cookie y Servidor) en el archivo `php.ini`. Para obtener más información, consulte [Documentación de PHP](https://www.php.net/manual/en/ini.core.php).
 >
->- Para Adobe Commerce en la infraestructura en la nube, si está intentando anular las opciones de configuración mediante la [Interfaz web de Project](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/project/overview#configure-the-project), debe anteponer el nombre de la variable a `env:`. Por ejemplo:
+>- Para Adobe Commerce en la infraestructura en la nube, si está intentando anular las opciones de configuración mediante la [Interfaz web de Project](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/overview#configure-the-project), debe anteponer el nombre de la variable a `env:`. Por ejemplo:
 >
 >![Ejemplo de variable de entorno](../../assets/configuration/cloud-console-envvariable.png)

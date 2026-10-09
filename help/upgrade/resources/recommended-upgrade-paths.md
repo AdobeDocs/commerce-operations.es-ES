@@ -2,13 +2,22 @@
 title: Modernización de la plataforma con Adobe Commerce
 description: Revise las recomendaciones para planificar la actualización de Adobe Commerce.
 exl-id: f776b000-0085-4b77-860f-623837c3c902
-source-git-commit: 8be75548a939008057fb5fdf37ba5b5a0345f6d4
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '173'
 ht-degree: 0%
-
 ---
-
 # Rutas de actualización recomendadas
 
 Una implementación de comercio electrónico es una evolución; nunca ha terminado del todo. Su empresa debe mantenerse un paso por delante de las tendencias mediante la introducción de las últimas funciones y funcionalidades que mantienen el interés de sus clientes. La actualización a la última versión de Adobe Commerce le permite adelantarse al resto con las mejores innovaciones de su clase y afianzar el futuro de su empresa con:

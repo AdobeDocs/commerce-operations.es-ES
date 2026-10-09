@@ -4,13 +4,27 @@ description: Conozca las prácticas recomendadas de implementación para la fase
 role: Developer, Admin, User
 feature: Best Practices
 exl-id: 6baeac79-8dc3-45b4-bb25-8f2add8b3443
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '465'
 ht-degree: 1%
-
 ---
-
 # Fase de planificación
 
 La fase de planificación incluye las siguientes actividades:
@@ -46,7 +60,7 @@ Las secciones siguientes incluyen información sobre las prácticas recomendadas
     <td>Corrija y evite los cinco problemas de configuración más comunes para los sitios de Adobe Commerce.</td>
   </tr>
   <tr>
-    <td><a href="https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cache-management.html?lang=es">Almacenamiento en caché</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cache-management.html">Almacenamiento en caché</a></td>
     <td>Utilice las herramientas de administración de caché para mejorar el rendimiento del sitio.</td>
   </tr>
   <tr>
@@ -76,7 +90,7 @@ Las secciones siguientes incluyen información sobre las prácticas recomendadas
     <td colspan="2"><em>Configuración de servicios</em></td>
   </tr>
   <tr>
-    <td><a href="https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/cdn/setup-fastly/fastly-configuration">Configuración rápida</a></td>
+    <td><a href="https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/setup-fastly/fastly-configuration">Configuración rápida</a></td>
     <td>Configure los servicios de Fastly para su proyecto de Adobe Commerce en la nube.</td>
   </tr>
   <tr>

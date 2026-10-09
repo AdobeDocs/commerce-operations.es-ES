@@ -1,15 +1,29 @@
 ---
 title: La ficha [!UICONTROL bots]
-description: Obtenga información acerca de la ficha [!UICONTROL bots] de  [!DNL Observation for Adobe Commerce].
+description: Obtenga información acerca de la ficha [!UICONTROL bots] de [!DNL Observation for Adobe Commerce].
 exl-id: 741310ca-28fb-4b08-95c7-e8d1fb952018
 feature: Configuration, Observability
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: 4239b8a6-e74f-567d-a7a5-b98b9ead0ea4
+    internal-label: Observability
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '1952'
 ht-degree: 0%
-
 ---
-
 # La ficha [!UICONTROL bots]
 
 Esta ficha contiene información que explica cómo identificar si y qué [!DNL bots] están causando problemas en el sitio.
@@ -38,7 +52,7 @@ Esta ficha contiene información que explica cómo identificar si y qué [!DNL b
 
 El marco **[!UICONTROL Experimental Potential Malicious Bots frame]** ejecuta más de 12 consultas separadas y complejas. Detecta firmas de solicitudes de IP malintencionadas y, a continuación, agrega los resultados, los suma y los ordena por recuento en orden descendente. Las consultas contienen una multitud de firmas de vulnerabilidades CVE y otras solicitudes malintencionadas. Incluso cuando las vulnerabilidades están bloqueadas por correcciones/parches de seguridad y no son una amenaza para el sitio, la solicitud debe ser gestionada por el sitio web. El volumen de solicitudes puede llegar a ser bastante significativo en un corto periodo de tiempo. Este marco no muestra las solicitudes totales de la dirección IP, sino las solicitudes que tienen señales que indican que la solicitud tenía intención sospechosa.
 
-Asegúrese de comprobar que el tráfico es sospechoso y que no se origina desde una dirección [!DNL Content Distributed Network] (CDN) que también pueda estar enviando solicitudes válidas. Si se determina que las solicitudes provienen de una dirección IP de CDN, póngase en contacto con ese proveedor de servicios para que le ayude a bloquear el tráfico sospechoso a través de su red. Si necesita bloquear la dirección o solicitar URL, consulte [Bloquear el tráfico malintencionado para Adobe Commerce en [!DNL Fastly] nivel](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/how-to/block-malicious-traffic-for-magento-commerce-on-fastly-level) en la Base de conocimiento de asistencia de Adobe Commerce.
+Asegúrese de comprobar que el tráfico es sospechoso y que no se origina desde una dirección [!DNL Content Distributed Network] (CDN) que también pueda estar enviando solicitudes válidas. Si se determina que las solicitudes provienen de una dirección IP de CDN, póngase en contacto con ese proveedor de servicios para que le ayude a bloquear el tráfico sospechoso a través de su red. Si necesita bloquear la dirección o solicitar URL, consulte [Bloquear el tráfico malintencionado para Adobe Commerce en [!DNL Fastly] nivel](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/block-malicious-traffic-for-magento-commerce-on-fastly-level) en la Base de conocimiento de asistencia de Adobe Commerce.
 
 ## [!UICONTROL Rate of HTTP request per second (top 25) during requested time period]
 
@@ -68,7 +82,7 @@ Si hay un pico de errores en las direcciones IP durante la inestabilidad o la in
 
 ## [!UICONTROL Table - IPs that do not identify as bots]
 
-![Tabla: direcciones IP que no se identifican como bots con errores de estado HTTP durante el período de tiempo seleccionado Cómo bloquear el tráfico de bots en el nivel Fastly O administrar bots a través del archivo robots.txt Prácticas recomendadas para Adobe Commerce robots.txt &#x200B;](../../assets/tools/observation-for-adobe-commerce/ips-http-errors.png)
+![Tabla: direcciones IP que no se identifican como bots con errores de estado HTTP durante el período de tiempo seleccionado Cómo bloquear el tráfico de bots en el nivel Fastly O administrar bots a través del archivo robots.txt Prácticas recomendadas para Adobe Commerce robots.txt ](../../assets/tools/observation-for-adobe-commerce/ips-http-errors.png)
 
 La tabla **[!UICONTROL Table - IPs that do not identify as bots with HTTP status errors during selected time period How to block bot traffic on Fastly level OR manage bots through your robots.txt file Best practices for Adobe Commerce robots.txt]** mostrará las solicitudes de IP con códigos de estado http que no sean 200 y que NO se identifiquen automáticamente como [!DNL bots] en el campo del agente de usuario de solicitud. Estas direcciones IP podrían ser direcciones IP malintencionadas, especialmente si los recuentos son altos para el período de tiempo seleccionado.
 
@@ -82,7 +96,7 @@ Cuando las direcciones IP generan una alta frecuencia de errores, pregunte ¿qu�
 
 ## [!UICONTROL Show 5XX status distribution]
 
-![Mostrar la distribución de estado 5XX en las direcciones IP (las 200 direcciones principales) Cómo bloquear el tráfico de bots en el nivel Fastly O administrar bots a través del archivo robots.txt Prácticas recomendadas para Adobe Commerce robots.txt &#x200B;](../../assets/tools/observation-for-adobe-commerce/5xx-status.png)
+![Mostrar la distribución de estado 5XX en las direcciones IP (las 200 direcciones principales) Cómo bloquear el tráfico de bots en el nivel Fastly O administrar bots a través del archivo robots.txt Prácticas recomendadas para Adobe Commerce robots.txt ](../../assets/tools/observation-for-adobe-commerce/5xx-status.png)
 
 El fotograma **[!UICONTROL Show 5XX status distribution across IP addresses (top 200 addresses) How to block bot traffic on Fastly level OR manage bots through your robots.txt file Best practices for Adobe Commerce robots.txt]** es potente. Muestra las direcciones IP que tienen códigos de estado http 5XX durante el período de tiempo seleccionado. Si una dirección IP realiza un gran volumen de solicitudes y el sitio se ve afectado hasta el punto de no poder administrar el tráfico, las direcciones IP que realizan la mayor frecuencia de solicitudes tendrán generalmente el mayor volumen de errores. Los códigos de estado http 5XX suelen indicar un sitio que tiene problemas para responder a las solicitudes.
 
@@ -138,7 +152,7 @@ El marco **[!UICONTROL Blocked Bot name / IP addresses (in Fastly) during select
 
 ## [!UICONTROL Blocked non-Bot name / IP addresses (in Fastly)]
 
-![Nombre de bot/direcciones IP bloqueados (en Fastly) durante el período de tiempo seleccionado. Este gráfico muestra tráfico que no es de bots y direcciones IP que se devolvieron con el código de estado HTTP prohibido 403 &#x200B;](../../assets/tools/observation-for-adobe-commerce/blocked-non-bot-name-ip-addresses.png)
+![Nombre de bot/direcciones IP bloqueados (en Fastly) durante el período de tiempo seleccionado. Este gráfico muestra tráfico que no es de bots y direcciones IP que se devolvieron con el código de estado HTTP prohibido 403 ](../../assets/tools/observation-for-adobe-commerce/blocked-non-bot-name-ip-addresses.png)
 
 El marco **[!UICONTROL Blocked non-Bot name / IP addresses (in Fastly) during selected time period graph displays non-bot traffic and IPs that were returned a 403 Forbidden HTTP Status code]** muestra las direcciones IP que no se identifican como [!DNL bot] y que han sido bloqueadas a través de [!DNL Fastly].
 

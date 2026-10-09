@@ -2,13 +2,22 @@
 title: Configuración avanzada
 description: Obtenga información sobre la configuración avanzada de Adobe Commerce. Descubra instrucciones paso a paso y requisitos de configuración.
 exl-id: eb9ca9fa-b099-4e77-ab33-16cd0f382ffe
-source-git-commit: b378f6da50e40b1868ae759cc7f3523a7e3ced4b
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '1192'
 ht-degree: 0%
-
 ---
-
 # Configuración avanzada
 
 [!DNL Commerce] es un producto altamente flexible y escalable que contiene soluciones para comerciantes de todos los tamaños. Esta sección trata las prácticas recomendadas y recomendaciones sobre la configuración de [!DNL Commerce] para que funcione con grandes cantidades de datos, cargas extremas y otros casos empresariales.
@@ -99,7 +108,7 @@ Para obtener más información sobre la configuración y las ventajas de la conf
 
 ## Proporcionar contenido multimedia
 
-Magento no proporciona ninguna integración específica para servir y entregar contenido multimedia. Todos los enfoques comunes se pueden utilizar juntos en Magento.
+Magento no proporciona ninguna integración específica para ofrecer y entregar contenido multimedia. Todos los enfoques comunes se pueden utilizar juntos en Magento.
 
 La forma más sencilla de proporcionar contenido multimedia es enviarlo y almacenarlo en caché en un servidor [!DNL Varnish]. Este enfoque supone un sistema de archivos compartido para almacenar contenido multimedia o un servidor dedicado que señala a [!DNL Varnish].
 

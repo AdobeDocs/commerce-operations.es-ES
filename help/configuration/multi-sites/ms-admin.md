@@ -2,21 +2,30 @@
 title: Configure varios sitios web, tiendas y vistas de tiendas en el Administrador de
 description: Configure sitios web, tiendas y vistas de tiendas adicionales en el administrador de Commerce.
 exl-id: e6b4d14d-7504-48f9-a2e1-7e9a1bc76ab9
-source-git-commit: 987d65b52437fbd21f41600bb5741b3cc43d01f3
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '1118'
 ht-degree: 0%
-
 ---
-
 # Configure varias vistas en el administrador
 
 Esta tarea requiere que cree una categoría raíz (y categorías adicionales, si lo desea) para cada tienda. Las tareas que se tratan en este tema proporcionan una forma de configurar varias tiendas. Para obtener más información, consulte los siguientes recursos en la Guía del usuario de Commerce:
 
-- [Categorías](https://experienceleague.adobe.com/es/docs/commerce-admin/catalog/categories/categories)
-- [Adición de sitios web](https://experienceleague.adobe.com/es/docs/commerce-admin/stores-sales/site-store/stores#add-websites)
-- [URL de tienda](https://experienceleague.adobe.com/es/docs/commerce-admin/stores-sales/site-store/store-urls)
-- [Contenido](https://experienceleague.adobe.com/es/docs/commerce-admin/content-design/content-menu)
+- [Categorías](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/categories)
+- [Adición de sitios web](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/stores#add-websites)
+- [URL de tienda](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-urls)
+- [Contenido](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/content-menu)
 
 >[!INFO]
 >
@@ -34,7 +43,7 @@ Para crear una categoría raíz:
 1. En el campo **Nombre de categoría**, escriba un nombre único para identificar esta categoría.
 1. Asegúrese de que Habilitar categoría está establecida en **Sí**.
 
-   Para obtener información acerca de las demás opciones de esta página, vea [Categorías raíz](https://experienceleague.adobe.com/es/docs/commerce-admin/catalog/categories/category-root).
+   Para obtener información acerca de las demás opciones de esta página, vea [Categorías raíz](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/category-root).
 
    La siguiente figura muestra un ejemplo.
 
@@ -131,7 +140,7 @@ Commerce le da la opción de agregar el código de tienda a la dirección URL de
 
 Esto evita que `index.php` y `.htaccess` se desincronicen con el código base de Commerce en futuras actualizaciones.
 
-Consulte la [Guía del usuario de Commerce](https://experienceleague.adobe.com/es/docs/commerce-admin/stores-sales/site-store/store-urls).
+Consulte la [Guía del usuario de Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-urls).
 
 Para agregar el código de tienda a la dirección URL base:
 

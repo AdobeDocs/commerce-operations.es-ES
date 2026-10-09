@@ -1,15 +1,24 @@
 ---
 title: Migración de datos
-description: Obtenga información sobre cómo empezar a migrar datos de Magento 1 a Magento 2 con  [!DNL Data Migration Tool].
+description: Obtenga información sobre cómo empezar a migrar datos de Magento 1 a Magento 2 con [!DNL Data Migration Tool].
 exl-id: f4ea8f6a-21f8-4db6-b598-c5efecec254f
 topic: Commerce, Migration
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '337'
 ht-degree: 0%
-
 ---
-
 # Migración de datos
 
 Antes de empezar, siga estos pasos para prepararse:
@@ -35,7 +44,7 @@ Donde:
 
 * `{<path to config.xml>}` es la ruta absoluta del sistema de archivos a `config.xml`; este argumento es obligatorio
 
-Dentro de este paso, [!DNL Data Migration Tool] crea tablas y déclencheur adicionales para las tablas de migración en la base de datos de Magento 1. Se utilizan en el paso de migración [incremental/delta](delta.md). Las tablas adicionales contienen información sobre los registros modificados después de la ejecución final de la migración. Los déclencheur de base de datos se utilizan para rellenar estas tablas adicionales, por lo que si se está realizando una nueva operación en la tabla concreta (se agrega, modifica o elimina un registro), estos déclencheur de base de datos guardan información sobre esta operación en la tabla adicional. Cuando ejecutamos un proceso de migración delta, [!DNL Data Migration Tool] comprueba si hay registros sin procesar en estas tablas y migra el contenido necesario a la base de datos de Magento 2.
+Dentro de este paso, [!DNL Data Migration Tool] crea tablas y déclencheur adicionales para las tablas de migración en la base de datos de Magento 1. Se utilizan en el paso de migración [incremental/delta](delta.md). Las tablas adicionales contienen información sobre los registros modificados después de la ejecución final de la migración. Los déclencheur de base de datos se utilizan para rellenar estas tablas adicionales, por lo que si se está realizando una nueva operación en la tabla concreta (se agrega, modifica o elimina un registro), estos déclencheur de base de datos guardan información sobre esta operación en la tabla adicional. Cuando ejecutamos un proceso de migración delta, [!DNL Data Migration Tool] comprueba en estas tablas los registros no procesados y migra el contenido necesario a la base de datos de Magento 2.
 
 Cada nueva tabla contiene:
 

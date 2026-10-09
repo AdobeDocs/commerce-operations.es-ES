@@ -2,13 +2,22 @@
 title: Trabajos cron
 description: Obtenga información sobre los grupos de cron y cómo crear trabajos de cron personalizados en Adobe Commerce. Descubra la configuración de tareas programadas y el grupo cron.
 exl-id: a9d83af7-9979-4653-adc9-30ffeb13a5ce
-source-git-commit: 10f324478e9a5e80fc4d28ce680929687291e990
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '167'
+source-wordcount: '179'
 ht-degree: 0%
-
 ---
-
 # Trabajos cron
 
 En estos temas se explica cómo configurar un trabajo cron personalizado y, opcionalmente, un grupo cron personalizado. Si la extensión de Commerce requiere que las tareas programadas se ejecuten periódicamente, puede utilizar estos temas para configurar un _trabajo_ cron (la tarea programada) y, opcionalmente, un _grupo_ cron, que ejecuta tareas personalizadas al mismo tiempo.
@@ -21,5 +30,5 @@ La aplicación de Commerce proporciona los siguientes grupos cron:
 - `index`, que actualiza [indexadores](../cli/manage-indexers.md)
 - `consumers`, que ejecuta la cola de mensajes [consumidores](../cli/start-message-queues.md)
 - Estos temas solo están disponibles en Adobe Commerce
-   - `staging`, que ejecuta [tareas relacionadas con el ensayo](https://experienceleague.adobe.com/es/docs/commerce-admin/content-design/staging/content-staging)
-   - `catalog_event`, que ejecuta tareas para el destino y reglas del carro de compras
+  - `staging`, que ejecuta [tareas relacionadas con el ensayo](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/staging/content-staging)
+  - `catalog_event`, que ejecuta tareas para el destino y reglas del carro de compras

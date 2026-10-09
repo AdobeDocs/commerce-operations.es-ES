@@ -1,17 +1,32 @@
 ---
 title: 'MDVA-43348: La solicitud de GraphQL para la tarjeta regalo muestra un error'
-description: El parche MDVA-43348 corrige el problema en el que la solicitud de GraphQL de tarjeta de regalo muestra un error si las opciones de tarjeta de regalo contienen "uid". Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.12. El ID del parche es MDVA-43348. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.5.
+description: El parche MDVA-43348 corrige el problema en el que la solicitud de GraphQL de tarjeta de regalo muestra un error si las opciones de tarjeta de regalo contienen "uid". Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.12. El ID del parche es MDVA-43348. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.5.
 feature: Gift, GraphQL
 role: Admin
 exl-id: 94cb939a-fad2-4f01-a641-d8d5b656d931
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 4fc0a729-4349-5307-bd06-1b4bfbaf5d0c
+    internal-label: Gift
+  - id: c32adafa-ed01-4b31-997e-2413013911b0
+    internal-label: Integrations
+subfeature_v2:
+  - id: e396cff5-f586-484c-89f0-7f1da3308f92
+    internal-label: GraphQL
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '402'
 ht-degree: 0%
-
 ---
-
 # MDVA-43348: La solicitud de GraphQL para la tarjeta regalo muestra un error
 
 El parche MDVA-43348 corrige el problema en el que la solicitud de GraphQL de la tarjeta regalo muestra un error si `gift_card_options` contiene &quot;uid&quot;. Este parche está disponible cuando está instalada la [Herramienta de parches de calidad (QPT)](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.12. El ID del parche es MDVA-43348. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.5.
@@ -28,7 +43,7 @@ El parche MDVA-43348 corrige el problema en el que la solicitud de GraphQL de la
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de la herramienta Parches de Calidad. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de la herramienta Parches de Calidad. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
@@ -42,12 +57,12 @@ La solicitud GraphQL de tarjeta regalo muestra un error si las opciones_de_tarje
 
 <pre>
 <code class="language-graphql">
-query getProductOptionsForProductPage_bypassFastly($urlKey: String!) &lbrace;
-  products(filter: { url_key: { eq: $urlKey } }) &lbrace;
-    items &lbrace;
+query getProductOptionsForProductPage_bypassFastly($urlKey: String!) {
+  products(filter: { url_key: { eq: $urlKey } }) {
+    items {
       id
       url_key
-      ... on GiftCardProduct &lbrace;
+      ... on GiftCardProduct {
         allow_open_amount
         open_amount_min
         open_amount_max
@@ -56,15 +71,15 @@ query getProductOptionsForProductPage_bypassFastly($urlKey: String!) &lbrace;
         lifetime
         allow_message
         message_max_length
-        gift_card_options &lbrace;
+        gift_card_options {
           uid
           title
           required
-        &rbrace;
-      &rbrace;
-    &rbrace;
-  &rbrace;
-&rbrace;
+        }
+      }
+    }
+  }
+}
 </code>
 </pre>
 
@@ -78,118 +93,118 @@ El siguiente error se produce al solicitar los datos de la tarjeta regalo:
 
 <pre>
 <code class="language-graphql">
-&lbrace;
-  "errors": &lbrack;
-    &lbrace;
+{
+  "errors": [
+    {
       "debugMessage": "Cannot return null for non-nullable field \"CustomizableFieldOption.uid\".",
       "message": "Internal server error",
-      "extensions": &lbrace;
+      "extensions": {
         "category": "internal"
-      &rbrace;,
-      "locations": &lbrack;
-        &lbrace;
+      },
+      "locations": [
+        {
           "line": 16,
           "column": 1
-        &rbrace;
-      &rbrack;,
-      "path": &lbrack;
+        }
+      ],
+      "path": [
         "products",
         "items",
         0,
         "gift_card_options",
         0,
         "uid"
-      &rbrack;
-    &rbrace;,
-    &lbrace;
+      ]
+    },
+    {
       "debugMessage": "Cannot return null for non-nullable field \"CustomizableFieldOption.uid\".",
       "message": "Internal server error",
-      "extensions": &lbrace;
+      "extensions": {
         "category": "internal"
-      &rbrace;,
-      "locations": &lbrack;
-        &lbrace;
+      },
+      "locations": [
+        {
           "line": 16,
           "column": 1
-        &rbrace;
-      &rbrack;,
-      "path": &lbrack;
+        }
+      ],
+      "path": [
         "products",
         "items",
         0,
         "gift_card_options",
         1,
         "uid"
-      &rbrack;
-    &rbrace;,
-    &lbrace;
+      ]
+    },
+    {
       "debugMessage": "Cannot return null for non-nullable field \"CustomizableFieldOption.uid\".",
       "message": "Internal server error",
-      "extensions": &lbrace;
+      "extensions": {
         "category": "internal"
-      &rbrace;,
-      "locations": &lbrack;
-        &lbrace;
+      },
+      "locations": [
+        {
           "line": 16,
           "column": 1
-        &rbrace;
-      &rbrack;,
-      "path": &lbrack;
+        }
+      ],
+      "path": [
         "products",
         "items",
         0,
         "gift_card_options",
         2,
         "uid"
-      &rbrack;
-    &rbrace;,
-    &lbrace;
+      ]
+    },
+    {
       "debugMessage": "Cannot return null for non-nullable field \"CustomizableFieldOption.uid\".",
       "message": "Internal server error",
-      "extensions": &lbrace;
+      "extensions": {
         "category": "internal"
-      &rbrace;,
-      "locations": &lbrack;
-        &lbrace;
+      },
+      "locations": [
+        {
           "line": 16,
           "column": 1
-        &rbrace;
-      &rbrack;,
-      "path": &lbrack;
+        }
+      ],
+      "path": [
         "products",
         "items",
         0,
         "gift_card_options",
         3,
         "uid"
-      &rbrack;
-    &rbrace;,
-    &lbrace;
+      ]
+    },
+    {
       "debugMessage": "Cannot return null for non-nullable field \"CustomizableFieldOption.uid\".",
       "message": "Internal server error",
-      "extensions": &lbrace;
+      "extensions": {
         "category": "internal"
-      &rbrace;,
-      "locations": &lbrack;
-        &lbrace;
+      },
+      "locations": [
+        {
           "line": 16,
           "column": 1
-        &rbrace;
-      &rbrack;,
-      "path": &lbrack;
+        }
+      ],
+      "path": [
         "products",
         "items",
         0,
         "gift_card_options",
         4,
         "uid"
-      &rbrack;
-    &rbrace;
-  &rbrack;,
-  "data": &lbrace;
-    "products": &lbrace;
-      "items": &lbrack;
-        &lbrace;
+      ]
+    }
+  ],
+  "data": {
+    "products": {
+      "items": [
+        {
           "id": 2,
           "url_key": "gitf-card",
           "allow_open_amount": false,
@@ -200,18 +215,18 @@ El siguiente error se produce al solicitar los datos de la tarjeta regalo:
           "lifetime": 0,
           "allow_message": true,
           "message_max_length": 255,
-          "gift_card_options": &lbrack;
+          "gift_card_options": [
             null,
             null,
             null,
             null,
             null
-          &rbrack;
-        &rbrace;
-      &rbrack;
-    &rbrace;
-  &rbrace;
-&rbrace;
+          ]
+        }
+      ]
+    }
+  }
+}
 </code>
 </pre>
 
@@ -220,7 +235,7 @@ El siguiente error se produce al solicitar los datos de la tarjeta regalo:
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
 * Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía [!DNL Quality Patches Tool].
-* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) en la guía Commerce en la infraestructura de la nube.
+* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) en la guía Commerce en la infraestructura de la nube.
 
 ## Lectura relacionada
 
@@ -229,4 +244,4 @@ Para obtener más información sobre la herramienta Parches de calidad, consulte
 * [Lanzamiento de la herramienta Parches de calidad: una nueva herramienta para autodistribuir parches de calidad](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) en la base de conocimiento de asistencia.
 * [Compruebe si el parche está disponible para su problema de Adobe Commerce mediante la herramienta Parches de calidad](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) en la guía [!DNL Quality Patches Tool].
 
-Para obtener información sobre otros parches disponibles en QPT, consulte [[!DNL Quality Patches Tool]: Buscar parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es) en la guía [!DNL Quality Patches Tool].
+Para obtener información sobre otros parches disponibles en QPT, consulte [[!DNL Quality Patches Tool]: Buscar parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) en la guía [!DNL Quality Patches Tool].

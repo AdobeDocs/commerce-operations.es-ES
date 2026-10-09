@@ -3,13 +3,27 @@ title: Permisos de acceso a sistemas de archivos
 description: Consulte cómo configurar el propietario o los propietarios del sistema de archivos de la aplicación Commerce para un sistema de desarrollo y producción.
 feature: Configuration, Roles/Permissions
 exl-id: 95b27db9-5247-4f58-a9af-1590897d73db
-source-git-commit: f9a135fc63574ccbecd3f564a87fc5c4ac03f009
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: e439352c-5b67-587d-b34e-d2a0aa5a0242
+    internal-label: Roles/Permissions
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '887'
 ht-degree: 0%
-
 ---
-
 # Permisos de acceso a sistemas de archivos
 
 En esta sección se explica cómo configurar el propietario o los propietarios del sistema de archivos de Commerce para un sistema de desarrollo y producción. Antes de continuar, revise los conceptos mencionados en [Información general sobre la propiedad y los permisos del sistema de archivos](../../installation/prerequisites/file-system/overview.md).
@@ -24,9 +38,9 @@ En las secciones siguientes se describen los requisitos de uno o dos propietario
 
   En su lugar, tiene usuarios independientes:
 
-   - El usuario del servidor web, que ejecuta el administrador y la tienda.
+  - El usuario del servidor web, que ejecuta el administrador y la tienda.
 
-   - Un _usuario de línea de comandos_, que es una cuenta de usuario local que puede usar para iniciar sesión en el servidor. Este usuario ejecuta trabajos cron de Commerce y utilidades de la línea de comandos.
+  - Un _usuario de línea de comandos_, que es una cuenta de usuario local que puede usar para iniciar sesión en el servidor. Este usuario ejecuta trabajos cron de Commerce y utilidades de la línea de comandos.
 
 ## Propiedad del sistema de archivos de producción para el alojamiento compartido (un usuario)
 

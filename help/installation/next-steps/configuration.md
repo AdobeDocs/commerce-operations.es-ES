@@ -3,13 +3,27 @@ title: Configuración de la aplicación
 description: Obtenga información acerca de la configuración posterior a la instalación necesaria para las implementaciones locales de Adobe Commerce.
 feature: Install, Configuration
 exl-id: b1808664-10ec-4147-8251-a99f8b58f4be
-source-git-commit: 84a20012a81278cc95587ec14281b05330261687
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 6388cf7b-8a81-5248-a1e4-7bb57bbe250f
+    internal-label: Install
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '819'
 ht-degree: 0%
-
 ---
-
 # Configuración de la aplicación
 
 Ahora que ha terminado de instalar Adobe Commerce, debe configurarlo. En este tema se proporcionan algunas opciones de configuración recomendadas.
@@ -28,7 +42,7 @@ Después de la instalación, le recomendamos lo siguiente:
 
 * Asegúrese de que la propiedad y los permisos del archivo estén establecidos [correctamente](../prerequisites/file-system/configure-permissions.md)
 * Recomendamos [cambiar el URI de administrador predeterminado](../tutorials/admin-uri.md) de `admin` a otra cosa
-* Asegúrese de que el encabezado HTTP [`X-Frame-Option` &#x200B;](../../configuration/security/xframe-options.md) esté configurado correctamente.
+* Asegúrese de que el encabezado HTTP [`X-Frame-Option` ](../../configuration/security/xframe-options.md) esté configurado correctamente.
 * Tome precauciones contra los scripts entre sitios (XSS) al [proteger sus plantillas](https://developer.adobe.com/commerce/php/development/security/cross-site-scripting)
 
 Si ha instalado [clonando el repositorio de GitHub](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository), asegúrese de que al implementar la aplicación solo incluya los archivos y carpetas necesarios para el entorno de producción. Los archivos y carpetas que no son necesarios pueden exponer potencialmente riesgos de seguridad.
@@ -65,7 +79,7 @@ Para obtener más información, vea una de las siguientes opciones:
 >
 >* Los entornos de inicio no tienen rotación de registro.
 >
->* No se puede configurar la rotación de registros en entornos Pro Integration. Debe implementar una solución o script personalizado y [configurar su cron](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property) para ejecutar el script según sea necesario.
+>* No se puede configurar la rotación de registros en entornos Pro Integration. Debe implementar una solución o script personalizado y [configurar su cron](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property) para ejecutar el script según sea necesario.
 
 ### Configure las reglas iptables para permitir que varios servicios se comuniquen
 

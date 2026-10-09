@@ -1,17 +1,32 @@
 ---
 title: Parches disponibles en la descripción general de la herramienta QPT
-description: Este artículo proporciona información general sobre  [!DNL Quality Patches Tool] (QPT) y vínculos a recursos que explican cómo utilizarlo.
+description: Este artículo proporciona información general sobre [!DNL Quality Patches Tool] (QPT) y vínculos a recursos que explican cómo utilizarlo.
 feature: Support, Tools and External Services
 role: Admin
 exl-id: e67e5823-d878-4efc-90af-c7bb8c59d654
 type: Troubleshooting
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 125c1f49-aefd-5f34-a252-288937f95f6b
+    internal-label: Marketing Tools
+subfeature_v2:
+  - id: a59f76dc-e003-5617-951e-dffa5bd3de81
+    internal-label: Support
+  - id: 618ab558-d6ad-5352-99d6-d5702c6fdf80
+    internal-label: Tools and External Services
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '464'
 ht-degree: 0%
-
 ---
-
 # Parches disponibles en la descripción general de la herramienta QPT
 
 Este artículo proporciona información general sobre [!DNL Quality Patches Tool] (QPT) y vínculos a recursos que explican cómo utilizarlo.
@@ -39,12 +54,12 @@ La herramienta está diseñada para permitirle autoabastecerse con parches para 
 
 >[!NOTE]
 >
->QPT es solo para parches de calidad. Los parches de seguridad están disponibles en [Notas de la versión para Adobe Commerce y Magento Open Source](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html?lang=es).
+>QPT es solo para parches de calidad. Los parches de seguridad están disponibles en [Notas de la versión para Adobe Commerce y Magento Open Source](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/overview.html).
 
 ## Parches disponibles en [!DNL Quality Patches Tool]
 
 En esta sección de la Base de conocimiento de soporte de Adobe Commerce, encontrará descripciones detalladas de los problemas, resueltos por parches QPT, agrupados por versión de QPT.
-También puede ver una lista de los parches QPT disponibles y filtrar el por componente, utilizando la tabla generada dinámicamente en la página [[!DNL Quality Patches Tool]: Buscar parches &#x200B;](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es) de nuestra base de conocimiento de soporte.
+También puede ver una lista de los parches QPT disponibles y filtrar el por componente, utilizando la tabla generada dinámicamente en la página [[!DNL Quality Patches Tool]: Buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) de nuestra base de conocimiento de soporte.
 
 ## Cómo instalar y utilizar [!DNL Quality Patches Tool]
 
@@ -56,8 +71,8 @@ Consulte [Commerce > Herramientas > Uso](../usage.md) en nuestra documentación 
 
 ### Cómo instalar y utilizar QPT para Adobe Commerce en la infraestructura en la nube
 
-Consulte [Guía de Commerce en la infraestructura de la nube > Aplicar parches](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) en nuestra documentación para desarrolladores para obtener más información sobre cómo instalar y utilizar QPT para aplicar y revertir parches en Adobe Commerce en la infraestructura de la nube.
+Consulte [Guía de Commerce en la infraestructura de la nube > Aplicar parches](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) en nuestra documentación para desarrolladores para obtener más información sobre cómo instalar y utilizar QPT para aplicar y revertir parches en Adobe Commerce en la infraestructura de la nube.
 
 ## Lectura relacionada
 
-* [[!DNL Quality Patches Tool] notas de la versión](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html?lang=es) en nuestra documentación para desarrolladores.
+* [[!DNL Quality Patches Tool] notas de la versión](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html) en nuestra documentación para desarrolladores.

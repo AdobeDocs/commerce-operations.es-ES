@@ -4,20 +4,34 @@ description: Siga estas prácticas recomendadas de migración de datos para gara
 exl-id: 0cd51987-a514-434d-b21e-2739ada2ce85
 feature: Best Practices, Configuration
 topic: Commerce, Migration
-source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '219'
 ht-degree: 0%
-
 ---
-
 # Prácticas recomendadas de migración de datos
 
 En esta sección se proporcionan recomendaciones recomendadas para acelerar y simplificar la migración, así como instrucciones sobre la cantidad de tiempo que puede tardar.
 
 * **Use una copia de la base de datos de una instancia de Magento 1** al realizar las pruebas de migración. No utilice la instancia de producción de la base de datos de la tienda Magento 1.
 
-* **Elimine los datos redundantes y obsoletos** de la base de datos de Magento 1 antes de la migración.
+* **Elimine datos redundantes y obsoletos** de la base de datos de Magento 1 antes de la migración.
 
 Estos datos pueden incluir registros, presupuestos de pedidos, productos vistos o comparados recientemente, visitantes, categorías específicas de eventos y reglas promocionales.
 
@@ -31,7 +45,7 @@ Estos datos pueden incluir registros, presupuestos de pedidos, productos vistos 
 
 >[!NOTE]
 >
->Las bases de datos Magento 1 y Magento 2 deben estar ubicadas en el mismo servidor MySQL y la cuenta de la base de datos debe tener acceso a ambas.
+>Las bases de datos de Magento 1 y Magento 2 deben estar ubicadas en el mismo servidor MySQL y la cuenta de la base de datos debe tener acceso a ambas bases de datos.
 
 ## Estimaciones comparativas
 

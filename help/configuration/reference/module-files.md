@@ -2,13 +2,22 @@
 title: Archivos de configuración del módulo
 description: Obtenga información sobre cómo personalizar módulos mediante tipos de configuración en Adobe Commerce. Descubra las prácticas recomendadas de administración de archivos de configuración y personalización de módulos.
 exl-id: 87433c28-8e3d-43d0-b77e-3ff9a680af5f
-source-git-commit: b378f6da50e40b1868ae759cc7f3523a7e3ced4b
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '2121'
 ht-degree: 0%
-
 ---
-
 # Información general sobre los archivos de configuración del módulo
 
 Las responsabilidades del archivo de configuración `config.xml` utilizado en versiones anteriores de Commerce ahora se dividen entre varios archivos, ubicados en varios directorios de módulos. Los archivos de configuración múltiples de Commerce solo se cargan bajo demanda cuando un módulo solicita un tipo de configuración específico.

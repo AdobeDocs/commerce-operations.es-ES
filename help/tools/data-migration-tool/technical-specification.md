@@ -1,15 +1,24 @@
 ---
 title: Especificación técnica de [!DNL Data Migration Tool]
-description: Obtenga información acerca de los detalles de implementación de  [!DNL Data Migration Tool]  y cómo ampliarlos al transferir datos entre Magento 1 y Magento 2.
+description: Obtenga información acerca de los detalles de implementación de [!DNL Data Migration Tool] y cómo ampliarlos al transferir datos entre Magento 1 y Magento 2.
 exl-id: fec3ac3a-dd67-4533-a29f-db917f54d606
 topic: Commerce, Migration
-source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '2113'
+source-wordcount: '2114'
 ht-degree: 0%
-
 ---
-
 # Especificación técnica de [!DNL Data Migration Tool]
 
 Esta sección describe los detalles de implementación de [!DNL Data Migration Tool] y cómo ampliar su funcionalidad.
@@ -171,7 +180,7 @@ Se puede acceder a los datos de configuración con la clase `\Migration\Config`.
 | Documento | Campo |
 |---|---|
 | `step` | Nodo de segundo nivel dentro del nodo Steps. Se debe especificar la descripción del paso correspondiente en el atributo `title`. |
-| `integrity` | Especifica la clase PHP responsable de la comprobación de integridad. Compara los nombres de los campos de tabla, los tipos y otra información para comprobar la compatibilidad entre las estructuras de datos de Magento 1 y 2. |
+| `integrity` | Especifica la clase PHP responsable de la comprobación de integridad. Compara los nombres de los campos de tabla, los tipos y otra información para verificar la compatibilidad entre las estructuras de datos de Magento 1 y Magento 2. |
 | `data` | Especifica la clase PHP responsable de la comprobación de datos. Transfiere los datos tabla por tabla de Magento 1 a Magento 2. |
 | `volume` | Especifica la clase PHP responsable de la comprobación de volumen. Compara el número de registros entre tablas para comprobar que la transferencia se realizó correctamente. |
 | `delta` | Especifica la clase PHP responsable de la comprobación delta. Transfiere el delta de Magento 1 a Magento 2 después de la migración de datos completa. |
@@ -181,9 +190,9 @@ Se puede acceder a los datos de configuración con la clase `\Migration\Config`.
 | Documento | Campo | ¿Requerido? |
 |---|---|---|
 | `name` | Nombre de la base de datos del servidor Magento 1. | yes |
-| `host` | Dirección IP del host del servidor de Magento 1. | yes |
+| `host` | Dirección IP del host del servidor Magento 1. | yes |
 | `port` | Número de puerto del servidor Magento 1. | no |
-| `user` | Nombre de usuario del servidor de base de datos de Magento 1. | yes |
+| `user` | Nombre de usuario del servidor de base de datos Magento 1. | yes |
 | `password` | Contraseña del servidor de base de datos de Magento 1. | yes |
 | `ssl_ca` | Ruta al archivo de autoridad de certificación SSL. | no |
 | `ssl_cert` | Ruta al archivo de certificado SSL. | no |
@@ -193,10 +202,10 @@ Se puede acceder a los datos de configuración con la clase `\Migration\Config`.
 
 | Documento | Campo | ¿Requerido? |
 |---|---|---|
-| `name` | Nombre de base de datos del servidor Magento 2. | yes |
-| `host` | Dirección IP del host del servidor de Magento 2. | yes |
-| `port` | Número de puerto del servidor de Magento 2. | no |
-| `user` | Nombre de usuario del servidor de base de datos de Magento 2. | yes |
+| `name` | Nombre de la base de datos del servidor Magento 2. | yes |
+| `host` | Dirección IP del host del servidor Magento 2. | yes |
+| `port` | Número de puerto del servidor Magento 2. | no |
+| `user` | Nombre de usuario del servidor de base de datos Magento 2. | yes |
 | `password` | Contraseña del servidor de base de datos de Magento 2. | yes |
 | `ssl_ca` | Ruta al archivo de autoridad de certificación SSL. | no |
 | `ssl_cert` | Ruta al archivo de certificado SSL. | no |
@@ -333,17 +342,17 @@ Toda la configuración del almacén mantiene sus datos en la tabla core_config_d
 </settings>
 ```
 
-En el nodo `<key>` hay reglas que funcionan con la columna &quot;ruta&quot; en la tabla `core_config_data`. `<ignore>` reglas impiden que la herramienta transfiera algunas configuraciones. En este nodo se pueden utilizar caracteres comodín. Se migrarán todas las demás configuraciones que no aparezcan en el nodo `<ignore>`. Si la ruta de acceso a una configuración ha cambiado en Magento 2, debe agregarse al nodo `//key/rename`, donde la ruta antigua indica en el nodo `//key/rename/path` y la nueva ruta indica en el nodo `//key/rename/to`.
+En el nodo `<key>` hay reglas que funcionan con la columna &quot;ruta&quot; en la tabla `core_config_data`. `<ignore>` reglas impiden que la herramienta transfiera algunas configuraciones. En este nodo se pueden utilizar caracteres comodín. Se migrarán todas las demás configuraciones que no aparezcan en el nodo `<ignore>`. Si la ruta a una configuración ha cambiado en Magento 2, debe agregarse al nodo `//key/rename`, donde la ruta antigua indica en el nodo `//key/rename/path` y la nueva indica en el nodo `//key/rename/to`.
 
 En el nodo `<value>`, hay reglas que funcionan con la columna &quot;value&quot; en la tabla `core_config_data`. Estas reglas pretenden transformar el valor de la configuración mediante controladores (clases que implementan `Migration\Handler\HandlerInterface`) y adaptarlo para Magento 2.
 
 ### Modo de migración de datos
 
-En este modo, se migran la mayoría de los datos. Antes de la migración de datos, se ejecutan las fases de comprobación de integridad de cada paso. Si la comprobación de integridad es correcta, [!DNL Data Migration Tool] instala las tablas deltalog (con el prefijo `m2_cl_*`) y los déclencheur correspondientes en la base de datos de Magento 1 y ejecuta la fase de migración de datos de los pasos siguientes. Cuando la migración se completa sin errores, la comprobación de volumen comprueba la coherencia de los datos. Puede mostrar un mensaje de advertencia si migra el almacén activo. No se preocupe, la migración delta se encarga de estos datos incrementales. Los pasos de migración más valiosos son Asignación, Reescritura de URL y EAV.
+En este modo, se migran la mayoría de los datos. Antes de la migración de datos, se ejecutan las fases de comprobación de integridad de cada paso. Si se supera la comprobación de integridad, [!DNL Data Migration Tool] instala las tablas deltalog (con el prefijo `m2_cl_*`) y los déclencheur correspondientes en la base de datos de Magento 1 y ejecuta la fase de migración de datos de los pasos siguientes. Cuando la migración se completa sin errores, la comprobación de volumen comprueba la coherencia de los datos. Puede mostrar un mensaje de advertencia si migra el almacén activo. No se preocupe, la migración delta se encarga de estos datos incrementales. Los pasos de migración más valiosos son Asignación, Reescritura de URL y EAV.
 
 #### Etapa de mapa
 
-El paso de asignación es responsable de transferir la mayoría de los datos de Magento 1 a Magento 2. Este paso lee las instrucciones del archivo map.xml (ubicado en el directorio `etc/`). El archivo describe las diferencias entre las estructuras de datos de origen (Magento 1) y destino (Magento 2). Si Magento 1 contiene tablas o campos que pertenecen a alguna extensión que no existe en Magento 2, estas entidades se pueden colocar aquí para ignorarlos mediante el paso de asignación. De lo contrario, muestra un mensaje de error.
+Este paso es responsable de transferir la mayoría de los datos de Magento 1 a Magento 2. Este paso lee las instrucciones del archivo map.xml (ubicado en el directorio `etc/`). El archivo describe las diferencias entre las estructuras de datos de origen (Magento 1) y destino (Magento 2). Si Magento 1 contiene tablas o campos que pertenecen a alguna extensión que no existe en Magento 2, estas entidades se pueden colocar aquí para ignorarlos mediante el paso de asignación. De lo contrario, muestra un mensaje de error.
 
 El archivo de mapa tiene el siguiente formato:
 
@@ -457,7 +466,7 @@ Después de la migración principal, es posible que se hayan agregado datos adic
 
 ## Fuentes de datos
 
-Para llegar a los orígenes de datos de Magento 1 y Magento 2 y trabajar con sus datos (seleccionar, actualizar, insertar, eliminar) hay muchas clases en Resource folder. Migration\ResourceModel\Source y Migration\ResourceModel\Destination son clases principales. Todos los pasos de migración lo utilizan para operar con datos. Estos datos se incluyen en clases como Migration\ResourceModel\Document, Migration\ResourceModel\Record, Migration\ResourceModel\Structure, etc.
+Para acceder a las fuentes de datos de Magento 1 y Magento 2 y trabajar con sus datos (seleccionar, actualizar, insertar, eliminar), hay muchas clases en la carpeta Recurso. Migration\ResourceModel\Source y Migration\ResourceModel\Destination son clases principales. Todos los pasos de migración lo utilizan para operar con datos. Estos datos se incluyen en clases como Migration\ResourceModel\Document, Migration\ResourceModel\Record, Migration\ResourceModel\Structure, etc.
 
 Este es un diagrama de clase de estas clases:
 
@@ -496,7 +505,7 @@ Existe la posibilidad de personalizar dónde se debe escribir la información de
 
 * FileHandler: escribe mensajes en el archivo de registro que se ha establecido en la opción de configuración &quot;log_file&quot;
 
-Además, es posible implementar cualquier controlador adicional. Hay un conjunto de controladores en el marco de trabajo de Magento. Ejemplo de adición de controladores al registrador:
+Además, es posible implementar cualquier controlador adicional. Hay un conjunto de controladores en el marco de Magento. Ejemplo de adición de controladores al registrador:
 
 ```php
 // $this->consoleHandler is the object of Migration\Logger\ConsoleHandler class

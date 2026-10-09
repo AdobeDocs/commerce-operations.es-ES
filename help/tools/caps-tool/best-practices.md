@@ -1,13 +1,22 @@
 ---
 title: Guía de prácticas recomendadas de [!DNL Adobe Commerce Patching Automation]
-description: Aprenda a usar [!DNL Adobe Commerce Patching Automation] para planear, validar y aplicar parches de forma segura, minimizando el riesgo de implementación y las interrupciones del servicio.
-source-git-commit: d9f6fc714332638ae1dcfa92ac8abe274efe8a0b
+description: Aprenda a utilizar [!DNL Adobe Commerce Patching Automation] para planificar, validar y aplicar parches de forma segura, minimizando el riesgo de implementación y las interrupciones del servicio.
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '672'
+source-wordcount: '673'
 ht-degree: 0%
-
 ---
-
 # Guía de prácticas recomendadas de [!DNL Adobe Commerce Patching Automation]
 
 Las siguientes prácticas recomendadas son esenciales para realizar correctamente y de forma segura las operaciones de revisión con [!DNL Adobe Commerce Patching Automation]. Esta guía proporciona prácticas recomendadas completas para realizar operaciones de parches eficaces, administrar el entorno y lograr la excelencia operativa.
@@ -23,11 +32,11 @@ Antes de aplicar los parches, asegúrese de que su entorno está preparado corre
 * **Cuenta de Adobe Commerce Cloud**
   * Suscripción activa a Adobe Commerce Cloud
   * Licencia válida de Adobe Commerce
-  * [Claves de autenticación del compositor](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/develop/authentication-keys) configuradas para acceder al repositorio de Adobe Commerce
+  * [Claves de autenticación del compositor](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/authentication-keys) configuradas para acceder al repositorio de Adobe Commerce
   * Permisos de proyectos y entornos
 
 * **Recursos de entorno**
-  * El proyecto tiene capacidad para crear un entorno de integración activo adicional para la operación de revisión. Consulte [Administrar ramas con la consola de Cloud](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/project/console-branches) para obtener información sobre los límites de entorno activos
+  * El proyecto tiene capacidad para crear un entorno de integración activo adicional para la operación de revisión. Consulte [Administrar ramas con la consola de Cloud](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/console-branches) para obtener información sobre los límites de entorno activos
   * Suficientes recursos de almacenamiento, CPU y memoria
   * Acceso de red a repositorios de Adobe
   * Entorno principal estable para la sincronización

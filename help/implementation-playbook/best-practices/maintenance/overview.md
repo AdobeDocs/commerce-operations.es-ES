@@ -3,13 +3,25 @@ title: Fase de mantenimiento de implementación
 description: Conozca las prácticas recomendadas de implementación para la fase de mantenimiento de los proyectos de Adobe Commerce.
 exl-id: bd052412-a41c-4dbd-9aba-ba2fcac31f2d
 feature: Best Practices
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '429'
 ht-degree: 2%
-
 ---
-
 # Fase de mantenimiento
 
 La fase de mantenimiento incluye las siguientes actividades:
@@ -73,7 +85,7 @@ Las secciones siguientes incluyen información sobre prácticas recomendadas par
 | [Auditar el rendimiento de front-end](frontend-performance.md) | Identificar y abordar los problemas que afectan negativamente al rendimiento del sitio mediante herramientas de rendimiento web. |
 | [Listo, Preparado, Mantener](https://business.adobe.com/blog/basics/ready-set-maintain) | Sugerencias para mantener los sitios de Adobe Commerce a fin de maximizar el valor comercial y el tiempo de actividad. |
 | [Usar [!DNL Site-Wide Analysis Tool]](../../../tools/site-wide-analysis-tool/intro.md#integrations-with-other-adobe-commerce-support-tools) | Vea información importante sobre el sitio de Adobe Commerce en un solo lugar. |
-| [Supervisar rendimiento, espacio en disco y registros](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/monitor/performance) | Utilice New Relic para monitorizar las perspectivas de rendimiento clave sobre su Adobe Commerce en el sitio de infraestructura en la nube. |
+| [Supervisar rendimiento, espacio en disco y registros](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/performance) | Utilice New Relic para monitorizar las perspectivas de rendimiento clave sobre su Adobe Commerce en el sitio de infraestructura en la nube. |
 | [Responder a incidentes de seguridad](respond-to-security-incident.md) | Utilice New Relic para monitorizar las perspectivas de rendimiento clave sobre su Adobe Commerce en el sitio de infraestructura en la nube. |
 
 ### Actualizaciones

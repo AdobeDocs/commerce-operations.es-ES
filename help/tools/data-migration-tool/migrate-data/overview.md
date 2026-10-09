@@ -1,22 +1,31 @@
 ---
 title: Resumen de migración
-description: Obtenga información sobre cómo empezar a migrar datos de Magento 1 a Magento 2 con  [!DNL Data Migration Tool].
+description: Obtenga información sobre cómo empezar a migrar datos de Magento 1 a Magento 2 con [!DNL Data Migration Tool].
 exl-id: b775ede1-9d1d-49d5-ad0f-763404b48278
 topic: Commerce, Migration
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '315'
 ht-degree: 0%
-
 ---
-
 # Resumen de migración
 
 Antes de iniciar la migración, detenga todos los trabajos cron de Magento 1.
 
 Durante el proceso de migración, siga estas reglas generales para que la migración se realice correctamente:
 
-1. **No** realice cambios en el administrador de Magento 1, excepto en la administración de pedidos (envío, creación de facturas y notas de abono)
+1. **No** realice cambios en el administrador de Magento 1, excepto en la administración de pedidos (envío, creación de facturas y abonos)
 1. **No** modificar ningún código
 1. **No** realice cambios en el administrador y tienda de Magento 2
 
@@ -44,7 +53,7 @@ Esta sección muestra cómo ejecutar [!DNL Data Migration Tool] para migrar la c
    sudo -u <file system owner>  <command>
    ```
 
-1. Para ejecutar comandos de Magento desde cualquier directorio, agregue `<magento_root>/bin` al sistema `PATH`.
+1. Para ejecutar comandos de Magento desde cualquier directorio, agregue `<magento_root>/bin` a su sistema `PATH`.
 
    Como los shells tienen sintaxis diferente, consulte una referencia como [unix.stackexchange.com](https://unix.stackexchange.com/questions/117467/how-to-permanently-set-environmental-variables).
 

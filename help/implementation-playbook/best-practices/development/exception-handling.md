@@ -4,13 +4,23 @@ description: Conozca los métodos recomendados para registrar excepciones al des
 feature: Best Practices
 role: Developer
 exl-id: e7ad685b-3eaf-485b-8ab1-702f2e7ab89e
-source-git-commit: 4bf8dd5c5320cc9a34cfaa552ec5e91d517d3617
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '565'
+source-wordcount: '589'
 ht-degree: 0%
-
 ---
-
 # Prácticas recomendadas de gestión de excepciones
 
 Si no se escribe una excepción en el archivo `exception.log` con el modelo de excepción como contexto, no se reconoce ni se analiza correctamente en New Relic u otro almacenamiento de registro compatible con el monólogo PSR-3. El registro de solo una parte de la excepción (o el registro en el archivo incorrecto) provoca errores en la producción cuando se pasan por alto las excepciones.

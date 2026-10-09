@@ -1,13 +1,22 @@
 ---
 title: Guía de solución de problemas de [!DNL Adobe Commerce Patching Automation]
-description: Solucionar problemas comunes y mensajes de error en  [!DNL Adobe Commerce Patching Automation]
-source-git-commit: f2b9ba118bfe4982a67ec5041141e5ee7548fc4d
+description: Solucionar problemas comunes y mensajes de error en [!DNL Adobe Commerce Patching Automation]
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '1639'
 ht-degree: 0%
-
 ---
-
 # [!DNL Adobe Commerce Patching Automation] guía de solución de problemas
 
 Al usar [!DNL Patching Automation] para operaciones de revisión, puede encontrar mensajes de error y problemas que pueden impedir la aplicación o reversión de revisión correcta. Esta guía proporciona soluciones para los problemas más comunes.
@@ -178,7 +187,7 @@ En la mayoría de los entornos, la siguiente cronología describe la duración d
 
 **Causa:** Un problema temporal impidió que el servicio se conectara a GitHub
 
-**Solución:** Espere unos minutos y vuelva a intentar la operación. Si el error persiste, ponte en contacto con el [servicio de asistencia en Adobe Commerce Cloud](https://experienceleague.adobe.com/home?lang=es#support)
+**Solución:** Espere unos minutos y vuelva a intentar la operación. Si el error persiste, ponte en contacto con el [servicio de asistencia en Adobe Commerce Cloud](https://experienceleague.adobe.com/home#support)
 
 #### &quot;Entorno no creado dentro del tiempo de espera&quot; (proyecto conectado a GitHub)
 
@@ -186,7 +195,7 @@ En la mayoría de los entornos, la siguiente cronología describe la duración d
 
 **Causa:** La integración de GitHub del proyecto tiene deshabilitada la opción `fetch-branches`. Como resultado, las ramas temporales insertadas por el servicio no se sincronizan y el entorno de integración nunca se crea.
 
-**Solución:** Habilite la opción [`fetch-branches` de la integración](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github#enable-the-github-integration) y vuelva a intentar la operación. Consulte [Configurar la integración de GitHub para [!DNL Patching Automation]](github-integration.md).
+**Solución:** Habilite la opción [`fetch-branches` de la integración](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/integrations/github#enable-the-github-integration) y vuelva a intentar la operación. Consulte [Configurar la integración de GitHub para [!DNL Patching Automation]](github-integration.md).
 
 ### Errores de activación del entorno
 
@@ -199,8 +208,8 @@ En la mayoría de los entornos, la siguiente cronología describe la duración d
 **Si los detalles mencionan paquetes de Compositor o Adobe Commerce:**
 
 * Inicie sesión en [https://account.magento.com/customer/account/login](https://account.magento.com/customer/account/login) (o pida al propietario de la cuenta que lo haga) y confirme que su cuenta tiene acceso a la base de código empresarial de Commerce.
-* Compruebe que las claves de autenticación pública y privada del Compositor del proyecto son correctas. Consulte [Claves de autenticación](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/develop/authentication-keys).
-* Confirme que el paquete llamado en el mensaje de error está disponible para su versión de Commerce. Ver [paquetes de Adobe Commerce](https://experienceleague.adobe.com/es/docs/commerce-operations/release/packages/adobe-commerce).
+* Compruebe que las claves de autenticación pública y privada del Compositor del proyecto son correctas. Consulte [Claves de autenticación](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/authentication-keys).
+* Confirme que el paquete llamado en el mensaje de error está disponible para su versión de Commerce. Ver [paquetes de Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/release/packages/adobe-commerce).
 
 **Si los detalles mencionan espacios o recursos del entorno:**
 
@@ -246,7 +255,7 @@ Para obtener información técnica más detallada:
 
 ### Temas relacionados
 
-* [Documentación de Adobe Commerce Cloud](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/overview)
+* [Documentación de Adobe Commerce Cloud](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview)
 * [Guía de instalación de Adobe Commerce](/help/installation/overview.md)
 * [Introducción a la automatización de parches](intro.md)
 * [Cómo acceder a](access.md)

@@ -3,15 +3,25 @@ title: Prácticas recomendadas para modificar tablas de base de datos
 description: Obtenga información sobre cómo y cuándo modificar tablas de bases de datos de Adobe Commerce y de terceros.
 role: Developer
 feature: Best Practices
-last-substantial-update: 2022-11-15T00:00:00Z
+last-substantial-update: 2022-11-15T00:00:00.000Z
 exl-id: 9e7adaaa-b165-4293-aa98-5dc4b8c23022
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '1591'
 ht-degree: 0%
-
 ---
-
 # Prácticas recomendadas para modificar tablas de base de datos
 
 Este artículo proporciona prácticas recomendadas para modificar tablas de base de datos creadas por [!DNL Adobe Commerce] o módulos de terceros. Comprender cuándo y cómo modificar tablas de forma eficaz ayuda a garantizar la viabilidad y estabilidad a largo plazo de su plataforma de comercio.
@@ -54,7 +64,7 @@ Dos ejemplos de ubicaciones de almacenamiento son las tablas de base de datos y 
 
 Como desarrollador, es vital considerar siempre el uso de herramientas fuera de su entorno de [!DNL Adobe Commerce], como GraphQL mesh y Adobe App Builder. Estas herramientas pueden ayudarle a conservar el acceso a los datos, pero no afectan a la aplicación principal de comercio ni a sus tablas de base de datos subyacentes. Con este enfoque, expone sus datos a través de una API. A continuación, agregue una fuente de datos a la configuración de App Builder. Con GraphQL Mesh, puedes combinar esas fuentes de datos y producir una única respuesta como se menciona en [datos heredados](#legacy-data).
 
-Para obtener más información sobre GraphQL mesh, consulte [GraphQL Mesh Gateway](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}. Para obtener información acerca de Adobe App Builder, consulte [Presentación de App Builder](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/introduction-app-builder.html?lang=es){target="_blank"}.
+Para obtener más información sobre GraphQL mesh, consulte [GraphQL Mesh Gateway](https://developer.adobe.com/graphql-mesh-gateway/){target="_blank"}. Para obtener información acerca de Adobe App Builder, consulte [Presentación de App Builder](https://experienceleague.adobe.com/docs/adobe-developers-live-events/events/2021/oct2021/introduction-app-builder.html){target="_blank"}.
 
 ## Modificación de una tabla principal o de una tabla de terceros
 
@@ -73,7 +83,7 @@ Adobe recomienda seguir estos pasos cuando agregue una columna a una tabla de la
 
    Por ejemplo: `app/code/YourCompany/Customer`
 
-1. Cree los archivos apropiados para habilitar el módulo (consulte [Crear un módulo](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html?lang=es){target="_blank"}.
+1. Cree los archivos apropiados para habilitar el módulo (consulte [Crear un módulo](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/backend-development/create-module.html){target="_blank"}.
 
 1. Cree un archivo denominado `db_schema.xml` en la carpeta `etc` y realice los cambios correspondientes.
 
@@ -155,7 +165,7 @@ MariaDB [magento]> SELECT DISTINCT TABLE_NAME FROM INFORMATION_SCHEMA.COLUMNS WH
 
 ## Buscar tablas MySQL grandes
 
-Para identificar las tablas grandes, conéctese a la base de datos como se describe en el artículo [Conectarse a la base de datos](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/configure/service/mysql#connect-to-the-database) y ejecute el siguiente comando. Usar `project_id` para el entorno de producción. Para entornos de ensayo, use `[project_id]_stg`, `[project_id]_stg2`.
+Para identificar las tablas grandes, conéctese a la base de datos como se describe en el artículo [Conectarse a la base de datos](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/mysql#connect-to-the-database) y ejecute el siguiente comando. Usar `project_id` para el entorno de producción. Para entornos de ensayo, use `[project_id]_stg`, `[project_id]_stg2`.
 
 ```sql
 SELECT TABLE_NAME AS `Table`,

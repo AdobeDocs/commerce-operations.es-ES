@@ -2,13 +2,22 @@
 title: Habilitar generación de perfiles
 description: Obtenga más información sobre cómo habilitar el analizador de imágenes para utilizarlo con sus herramientas analíticas.
 exl-id: a46289ed-16dc-4a72-84ff-85fe825dac11
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '413'
 ht-degree: 0%
-
 ---
-
 # Habilitar generación de perfiles
 
 Con los perfiles de Commerce, puede:
@@ -19,7 +28,7 @@ Con los perfiles de Commerce, puede:
 
 - Mostrar gráficos de dependencias en una página de Commerce.
 
-  Un gráfico de dependencias _1&rbrace; es una lista de dependencias de objetos y todas sus dependencias, todas las dependencias de esas dependencias, etc._
+  Un gráfico de dependencias _1} es una lista de dependencias de objetos y todas sus dependencias, todas las dependencias de esas dependencias, etc._
 
   Debería interesarle especialmente la lista de _dependencias sin usar_, que son objetos que se crearon porque se solicitaron en algún constructor, pero que nunca se utilizaron (es decir, no se llamó a ninguno de sus métodos). Como resultado, se desperdician el tiempo y la memoria del procesador empleados para crear estas dependencias.
 
@@ -37,8 +46,8 @@ Puede establecer el valor de `MAGE_PROFILER` de cualquiera de las formas descrit
 
   Puede utilizar uno de los siguientes valores para habilitar un generador de perfiles específico:
 
-   - `csvfile` que usa [`Magento\Framework\Profiler\Driver\Standard\Output\Csvfile`](https://github.com/magento/magento2/blob/2.4.8/lib/internal/Magento/Framework/Profiler/Driver/Standard/Output/Csvfile.php)
-   - Cualquier otro valor (excepto `2`), incluido un valor vacío, que utiliza [`Magento\Framework\Profiler\Driver\Standard\Output\Html`](https://github.com/magento/magento2/blob/2.4.8/lib/internal/Magento/Framework/Profiler/Driver/Standard/Output/Html.php)
+  - `csvfile` que usa [`Magento\Framework\Profiler\Driver\Standard\Output\Csvfile`](https://github.com/magento/magento2/blob/2.4.8/lib/internal/Magento/Framework/Profiler/Driver/Standard/Output/Csvfile.php)
+  - Cualquier otro valor (excepto `2`), incluido un valor vacío, que utiliza [`Magento\Framework\Profiler\Driver\Standard\Output\Html`](https://github.com/magento/magento2/blob/2.4.8/lib/internal/Magento/Framework/Profiler/Driver/Standard/Output/Html.php)
 
 - `2` para habilitar los gráficos de dependencias.
 

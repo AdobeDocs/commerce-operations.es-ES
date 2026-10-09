@@ -3,13 +3,27 @@ title: Recomendaciones de software
 description: Obtenga información acerca de los requisitos y recomendaciones de software para Adobe Commerce. Descubra las versiones compatibles y las prácticas recomendadas de configuración para la producción.
 feature: Best Practices, Install
 exl-id: b091a733-7655-4e91-a988-93271872c5d5
-source-git-commit: 766226dc998aafe54bc84d77cabee6fb0a969e6c
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+  - id: 6388cf7b-8a81-5248-a1e4-7bb57bbe250f
+    internal-label: Install
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '1390'
+source-wordcount: '1488'
 ht-degree: 0%
-
 ---
-
 # Recomendaciones de software
 
 Se necesita el siguiente software para las instancias de producción de [!DNL Commerce]:
@@ -151,7 +165,7 @@ opcache.validate_timestamps=0
 opcache.enable_cli=1
 ```
 
-Al ajustar la asignación de memoria para opcache, tenga en cuenta el tamaño del código base de Magento y de todas sus extensiones. El equipo de rendimiento de Magento utiliza los valores del ejemplo anterior para realizar pruebas, ya que proporciona suficiente espacio en opcache para el promedio de extensiones instaladas.
+Al ajustar la asignación de memoria para opcache, tenga en cuenta el tamaño del código base de Magento y todas sus extensiones. El equipo de rendimiento de Magento utiliza los valores del ejemplo anterior para realizar pruebas, ya que proporciona suficiente espacio en opcache para el número promedio de extensiones instaladas.
 
 Si tiene un equipo con poca memoria y no tiene instaladas muchas extensiones o personalizaciones, utilice la siguiente configuración para obtener un resultado similar:
 
@@ -212,7 +226,7 @@ Instale [!DNL Varnish] en un servidor independiente delante del nivel web. Debe 
 * **El modo de gracia** le permite indicar a [!DNL Varnish] que mantenga un objeto en la caché más allá de su período de tiempo de vida (TTL) y que sirva este contenido obsoleto si [!DNL Commerce] no está en buen estado o si aún no se ha recuperado contenido nuevo.
 * **Modo Saint** pone en lista negra servidores [!DNL Commerce] que no están en buen estado durante un período de tiempo configurable. Como resultado, los backends que no están en buen estado no pueden servir tráfico al usar [!DNL Varnish] como equilibrador de carga.
 
-Consulte [Configuración avanzada [!DNL Varnish] 2&rbrace; para obtener más información sobre cómo implementar estas características.](../configuration/cache/config-varnish-advanced.md)
+Consulte [Configuración avanzada [!DNL Varnish] 2} para obtener más información sobre cómo implementar estas características.](../configuration/cache/config-varnish-advanced.md)
 
 ### Optimizar el rendimiento del recurso
 
@@ -255,7 +269,7 @@ Reinicie el servidor [!DNL Varnish] para vaciar los recursos en caché cada vez 
 
 ## Servidores de almacenamiento en caché y sesión
 
-Magento proporciona una serie de opciones para almacenar los datos de caché y sesión, incluidos Redis, Memcache, el sistema de archivos y la base de datos. Algunas de estas opciones se analizan a continuación.
+Magento proporciona una serie de opciones para almacenar la caché y los datos de sesión, incluidos Redis, Memcache, el sistema de archivos y la base de datos. Algunas de estas opciones se analizan a continuación.
 
 ### Configuración de nodo web único
 

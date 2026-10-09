@@ -4,13 +4,23 @@ description: Obtenga información sobre cómo mantener su Adobe Commerce en la p
 role: Developer
 feature: Best Practices
 exl-id: 62aeffe3-b5a6-49f8-a39b-3219b46cd486
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '308'
 ht-degree: 0%
-
 ---
-
 # Actualizar prácticas recomendadas de servicios
 
 Este artículo incluye recomendaciones para mantener actualizado el conjunto de tecnología de Adobe Commerce en la infraestructura en la nube y proporciona vínculos a recursos útiles.
@@ -23,9 +33,9 @@ Adobe Commerce en la infraestructura en la nube 2.4.x y posterior
 
 Actualice los servicios y componentes que utiliza Adobe Commerce antes de que lleguen a la fecha de fin de vida útil o estén cerca de ella. Esto ayuda a cumplir con PCI y a disminuir las vulnerabilidades de seguridad.
 
-Los clientes con planes de inicio pueden autoabastecerse con actualizaciones de servicios. Consulte [Cambiar la versión del servicio](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/configure/service/services-yaml#change-service-version) para obtener más información sobre cómo hacerlo.
+Los clientes con planes de inicio pueden autoabastecerse con actualizaciones de servicios. Consulte [Cambiar la versión del servicio](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/services-yaml#change-service-version) para obtener más información sobre cómo hacerlo.
 
-Los clientes con planes Pro solo pueden autoabastecerse con actualizaciones de servicios en su [entorno de integración](https://experienceleague.adobe.com/es/docs/experience-cloud-kcs/kbarticles/ka-27242). Para las actualizaciones de servicios en Producción, debe [enviar un vale de soporte](https://experienceleague.adobe.com/es/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) solicitando la actualización.
+Los clientes con planes Pro solo pueden autoabastecerse con actualizaciones de servicios en su [entorno de integración](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27242). Para las actualizaciones de servicios en Producción, debe [enviar un vale de soporte](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) solicitando la actualización.
 
 >[!WARNING]
 >

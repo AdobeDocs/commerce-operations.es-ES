@@ -1,20 +1,29 @@
 ---
 title: Funcionamiento de la migración de datos
-description: Obtenga información acerca del proceso de migración de datos entre Magento 1 y Magento 2, incluida la terminología, los diagramas de flujo de trabajo y los pasos.
+description: Obtenga información sobre el proceso de migración de datos entre Magento 1 y Magento 2, incluida la terminología, los diagramas de flujo de trabajo y los pasos.
 exl-id: 821492dc-ee5b-4c4a-9479-680ee8c5756d
 topic: Commerce, Migration
-source-git-commit: 65ee7e84800c781577b1e210971a62b430d6300a
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '834'
 ht-degree: 0%
-
 ---
-
 # Funcionamiento de la migración de datos
 
 Este tema proporciona información general de alto nivel sobre cómo se migran los datos de Magento 1 a Magento 2 mediante [!DNL Data Migration Tool].
 
-[!DNL Data Migration Tool] es una herramienta de interfaz de línea de comandos (CLI) utilizada para transferir datos de Magento 1 a Magento 2. La herramienta comprueba la coherencia entre las estructuras de base de datos (tablas y campos) de Magento 1 y 2, rastrea el progreso de la transferencia de datos, crea registros y ejecuta pruebas de verificación de datos.
+[!DNL Data Migration Tool] es una herramienta de interfaz de línea de comandos (CLI) utilizada para transferir datos de Magento 1 a Magento 2. La herramienta verifica la coherencia entre las estructuras de base de datos (tablas y campos) de Magento 1 y Magento 2, rastrea el progreso de la transferencia de datos, crea registros y ejecuta pruebas de verificación de datos.
 
 ## Terminología
 
@@ -43,7 +52,7 @@ Este tema proporciona información general de alto nivel sobre cómo se migran l
 
 En cada paso hay tres *etapas* que siempre se ejecutan en este orden para garantizar que los datos se migren correctamente:
 
-1. **Comprobación de integridad**: Compara los nombres de los campos de tabla, los tipos y otra información para comprobar la compatibilidad entre las estructuras de datos de Magento 1 y 2.
+1. **Comprobación de integridad**: Compara los nombres de los campos de tabla, los tipos y otra información para comprobar la compatibilidad entre las estructuras de datos de Magento 1 y Magento 2.
 1. **Transferencia de datos**: transfiere la tabla de datos por tabla desde Magento 1 y 2.
 1. **Comprobación de volumen**: Compara el número de registros entre tablas para comprobar que la transferencia se realizó correctamente.
 
@@ -73,7 +82,7 @@ La migración a Magento 2 implica cuatro componentes: datos, extensiones y códi
 
 ### Datos
 
-Hemos desarrollado **Magento 2[!DNL Data Migration Tool]** para ayudarle a mover con eficacia todos sus productos, clientes, datos de pedidos, configuraciones de tienda, promociones y mucho más a Magento 2. Esta guía proporciona información sobre la herramienta y las prácticas recomendadas para utilizarla con el fin de migrar los datos.
+Hemos desarrollado **Magento 2[!DNL Data Migration Tool]** para que pueda mover con eficacia todos sus productos, clientes, datos de pedidos, configuraciones de tienda, promociones y mucho más a Magento 2. Esta guía proporciona información sobre la herramienta y las prácticas recomendadas para utilizarla con el fin de migrar los datos.
 
 ### Extensiones y código personalizado
 
@@ -87,4 +96,5 @@ Magento 2 utiliza nuevos enfoques y tecnologías que ofrecen a los comerciantes 
 
 ## Esfuerzos de migración
 
-Al igual que una actualización entre las versiones 1.x (por ejemplo, de la v1.12 a la v1.14), el nivel de esfuerzo para migrar de Magento 1 a Magento 2 depende de cómo haya creado el sitio y su nivel de personalización.Sin embargo, estamos mejorando constantemente [!DNL Data Migration Tool] (vea el [Changelog](https://github.com/magento/data-migration-tool/blob/2.3/CHANGELOG.md) para obtener más información); por lo que los esfuerzos de migración disminuyen continuamente.
+Al igual que una actualización entre las versiones 1.x (por ejemplo, de la v1.12 a la v1.14), el nivel de esfuerzo para migrar de Magento 1 a Magento 2 depende de cómo haya creado el sitio y de su nivel de personalización.
+Sin embargo, estamos mejorando constantemente [!DNL Data Migration Tool] (vea el [Changelog](https://github.com/magento/data-migration-tool/blob/2.3/CHANGELOG.md) para obtener más información); por lo que los esfuerzos de migración disminuyen continuamente.

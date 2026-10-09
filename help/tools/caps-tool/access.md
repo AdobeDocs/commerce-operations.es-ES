@@ -1,13 +1,22 @@
 ---
-title: Cómo tener acceso a  [!DNL Adobe Commerce Patching Automation]
-description: Obtenga información sobre cómo acceder y utilizar  [!DNL Adobe Commerce Patching Automation]
-source-git-commit: e7e2cb120377e73f2a6f80edcacfcf644b48be84
+title: Cómo acceder a [!DNL Adobe Commerce Patching Automation]
+description: Obtenga información sobre cómo acceder y utilizar [!DNL Adobe Commerce Patching Automation]
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '335'
 ht-degree: 1%
-
 ---
-
 # Cómo acceder a [!DNL Adobe Commerce Patching Automation]
 
 ## Requisitos previos
@@ -34,7 +43,7 @@ Si no ve ningún proyecto en la interfaz de usuario de [!DNL Patching Automation
 
 ## Acceder a [!DNL Patching Automation]
 
-[!DNL Patching Automation] está disponible como una ficha dentro del panel [!DNL Site-Wide Analysis Tool]. Puede acceder a él desde el panel de administración desde **Informes** > **Información del sistema** > **Herramienta de análisis de todo el sitio** en la barra lateral de administración. Consulte [Cómo acceder a la herramienta de análisis de todo el sitio](https://experienceleague.adobe.com/es/docs/commerce-operations/tools/site-wide-analysis-tool/access) para conocer los requisitos previos y la configuración de permisos.
+[!DNL Patching Automation] está disponible como una ficha dentro del panel [!DNL Site-Wide Analysis Tool]. Puede acceder a él desde el panel de administración desde **Informes** > **Información del sistema** > **Herramienta de análisis de todo el sitio** en la barra lateral de administración. Consulte [Cómo acceder a la herramienta de análisis de todo el sitio](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/access) para conocer los requisitos previos y la configuración de permisos.
 
 Una vez que esté en el panel:
 

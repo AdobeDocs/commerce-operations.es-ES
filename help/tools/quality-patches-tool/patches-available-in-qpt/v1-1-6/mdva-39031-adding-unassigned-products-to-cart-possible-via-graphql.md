@@ -1,17 +1,36 @@
 ---
 title: 'MDVA-39031: Añadir productos sin asignar al carro de compras es posible mediante GraphQL'
-description: El parche MDVA-39031 soluciona el problema de que es posible añadir un producto al carro de compras mediante GraphQL aunque no esté asignado al sitio web de destino. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.6. El ID del parche es MDVA-39031. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.4.
+description: El parche MDVA-39031 soluciona el problema de que es posible añadir un producto al carro de compras mediante GraphQL aunque no esté asignado al sitio web de destino. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.6. El ID del parche es MDVA-39031. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.4.
 feature: GraphQL, Orders, Products, Shopping Cart
 role: Admin
 exl-id: 6250c6f6-b74b-4713-a704-d252270693d4
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 4820f335-ec9f-5611-8fe3-f5b7e3e56967
+    internal-label: Orders
+  - id: 4067ab89-2e97-5de1-8d98-de8318461a8d
+    internal-label: Products
+  - id: df8eaa0e-dd74-553a-8ad5-28129f8e8d3d
+    internal-label: Shopping Cart
+  - id: c32adafa-ed01-4b31-997e-2413013911b0
+    internal-label: Integrations
+subfeature_v2:
+  - id: e396cff5-f586-484c-89f0-7f1da3308f92
+    internal-label: GraphQL
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '471'
 ht-degree: 0%
-
 ---
-
 # MDVA-39031: Añadir productos sin asignar al carro de compras es posible mediante GraphQL
 
 El parche MDVA-39031 soluciona el problema de que es posible añadir un producto al carro de compras mediante GraphQL aunque no esté asignado al sitio web de destino. Este parche está disponible cuando está instalada la [Herramienta de parches de calidad (QPT)](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.6. El ID del parche es MDVA-39031. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.4.
@@ -28,7 +47,7 @@ El parche MDVA-39031 soluciona el problema de que es posible añadir un producto
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de la herramienta Parches de Calidad. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de la herramienta Parches de Calidad. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
@@ -42,9 +61,9 @@ Es posible añadir un producto al carro de compras mediante GraphQL aunque no es
 
    <pre>
     <code class="language-graphql">
-    mutation&lbrace;
+    mutation{
      createEmptyCart
-    &rbrace;
+    }
     </code>
     </pre>
 
@@ -52,9 +71,9 @@ Es posible añadir un producto al carro de compras mediante GraphQL aunque no es
 
    <pre>
     <code class="language-graphql">
-    &lbrace;
+    {
       "Store":"en_au"
-    &rbrace;
+    }
     </code>
     </pre>
 
@@ -62,27 +81,27 @@ Es posible añadir un producto al carro de compras mediante GraphQL aunque no es
 
    <pre>
     <code class="language-graphql">
-    mutation &lbrace;
+    mutation {
       addProductsToCart(
           cartId: "XHrUN2nJ37OqDByhtL0VC8OxYsEZs41c"
-          cartItems: &lbrack;
-            &lbrace;
+          cartItems: [
+            {
               quantity: 1
               sku: "p1"
-            &rbrace;
-          &rbrack;
-        ) &lbrace;
-          cart &lbrace;
-           items &lbrace;
-            product &lbrace;
+            }
+          ]
+        ) {
+          cart {
+           items {
+            product {
               name
               sku
-            &rbrace;
+            }
             quantity
-          &rbrace;
-        &rbrace;
-      &rbrace;
-    &rbrace;
+          }
+        }
+      }
+    }
     </code>
     </pre>
 
@@ -90,9 +109,9 @@ Es posible añadir un producto al carro de compras mediante GraphQL aunque no es
 
    <pre>
     <code class="language-graphql">
-    &lbrace;
+    {
       "Store":"en_au"
-    &rbrace;
+    }
     </code>
     </pre>
 
@@ -109,7 +128,7 @@ El producto se ha agregado correctamente al carro de compras.
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
 * Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía [!DNL Quality Patches Tool].
-* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) en la guía Commerce en la infraestructura de la nube.
+* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) en la guía Commerce en la infraestructura de la nube.
 
 ## Lectura relacionada
 
@@ -118,4 +137,4 @@ Para obtener más información sobre la herramienta Parches de calidad, consulte
 * [Lanzamiento de la herramienta Parches de calidad: una nueva herramienta para autodistribuir parches de calidad](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) en la base de conocimiento de asistencia.
 * [Compruebe si el parche está disponible para su problema de Adobe Commerce mediante la herramienta Parches de calidad](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) en la guía [!DNL Quality Patches Tool].
 
-Para obtener información sobre otros parches disponibles en QPT, consulte [[!DNL Quality Patches Tool]: Buscar parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es) en la guía [!DNL Quality Patches Tool].
+Para obtener información sobre otros parches disponibles en QPT, consulte [[!DNL Quality Patches Tool]: Buscar parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) en la guía [!DNL Quality Patches Tool].

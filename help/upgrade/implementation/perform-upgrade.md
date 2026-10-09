@@ -2,13 +2,22 @@
 title: Realización de una actualización
 description: Siga estos pasos para actualizar las implementaciones locales de Adobe Commerce.
 exl-id: 9183f1d2-a8dd-4232-bdee-7c431e0133df
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '804'
 ht-degree: 0%
-
 ---
-
 
 # Realización de una actualización
 
@@ -19,7 +28,7 @@ Puede actualizar _implementaciones locales_ de la aplicación Adobe Commerce des
 
 >[!NOTE]
 >
->- Para Adobe Commerce sobre proyectos de infraestructura en la nube, consulte [Actualizar la versión de Commerce](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/develop/upgrade/commerce-version) en la Guía de la nube.
+>- Para Adobe Commerce sobre proyectos de infraestructura en la nube, consulte [Actualizar la versión de Commerce](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/commerce-version) en la Guía de la nube.
 >- No utilice este método para actualizar si ha clonado el repositorio de GitHub. Consulte [Actualizar una instalación basada en Git](../developer/git-installs.md).
 
 Las siguientes instrucciones muestran cómo realizar la actualización mediante el Administrador de paquetes del Compositor. Adobe Commerce 2.4.2 ha introducido la compatibilidad con Composer 2. Si intenta actualizar desde &lt;2.4.1, primero debe actualizar a una versión compatible con Composer 2 (por ejemplo, 2.4.2) mediante Composer 1 _antes de_ actualizar a Composer 2 para actualizaciones >2.4.2. Además, debe ejecutar una [versión compatible](../../installation/system-requirements.md) de PHP.

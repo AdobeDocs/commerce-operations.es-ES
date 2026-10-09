@@ -1,17 +1,30 @@
 ---
-title: 'MDVA-39305-V3: problema de inicio de sesión con habilitado [!DNL Google reCAPTCHA]'
-description: Aplique el parche de MDVA-39305-V3 para corregir el problema de Adobe Commerce en el que los clientes registrados no pueden iniciar sesión cuando  [!DNL Google reCAPTCHA] está habilitado. Este parche también soluciona el problema en el que un formulario se puede enviar antes de que  [!DNL Google reCAPTCHA] se cargue completamente. Además, corrige el error *Call to a member function isDisabled() en null* cuando los bloques se utilizan en ubicaciones no predeterminadas en una página de CMS.
+title: 'MDVA-39305-V3: problema de inicio de sesión con [!DNL Google reCAPTCHA] habilitado'
+description: Aplique el parche de MDVA-39305-V3 para corregir el problema de Adobe Commerce en el que los clientes registrados no pueden iniciar sesión cuando [!DNL Google reCAPTCHA] está habilitado. Esta revisión también corrige el problema en el cual un formulario se puede enviar antes de que [!DNL Google reCAPTCHA] se cargue completamente. Además, corrige el error *Call to a member function isDisabled() en null* cuando los bloques se utilizan en ubicaciones no predeterminadas en una página de CMS.
 feature: Console
 role: Admin
 exl-id: 63e880aa-9a2e-4c34-9ead-20bfc5204f2c
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 125c1f49-aefd-5f34-a252-288937f95f6b
+    internal-label: Marketing Tools
+subfeature_v2:
+  - id: c4af0798-d497-5e6b-8380-19812c26d00a
+    internal-label: Console
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '489'
 ht-degree: 0%
-
 ---
-
 # MDVA-39305-V3: problema de inicio de sesión con [!DNL Google reCAPTCHA] habilitado
 
 >[!NOTE]
@@ -34,7 +47,7 @@ Este parche se agregó en la versión [Quality Patches Tool (QPT)](/help/tools/q
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de la herramienta Parches de Calidad. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches &#x200B;](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de la herramienta Parches de Calidad. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problemas
 
@@ -86,7 +99,7 @@ Se produce un error 500 en la página de la tienda.
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
 * Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía [!DNL Quality Patches Tool].
-* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) en la guía Commerce en la infraestructura de la nube.
+* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) en la guía Commerce en la infraestructura de la nube.
 
 ## Lectura relacionada
 
