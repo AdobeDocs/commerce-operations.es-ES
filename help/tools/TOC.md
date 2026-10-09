@@ -4,9 +4,9 @@ user-guide-description: Obtenga información sobre las distintas herramientas qu
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: 9e2d11d7a383434670c4cb45e3764ed2b8974e9c
+source-git-commit: 758cab5d4002ddba607dadb3c4b44553adf8d8ba
 workflow-type: tm+mt
-source-wordcount: '10703'
+source-wordcount: '10740'
 ht-degree: 0%
 ---
 
@@ -53,7 +53,7 @@ ht-degree: 0%
   - [Alertas administradas para Adobe Commerce: alerta de advertencia de CPU](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-cpu-warning-alert.md)
 - Herramienta Parches de calidad {#quality-patches-tool}
   - [[!DNL Quality Patches Tool]: herramienta de autoservicio para parches de calidad](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)
-  - [[!DNL Quality Patches Tool]: buscar parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es){target="_blank"}
+  - [[!DNL Quality Patches Tool]: buscar parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
   - [Uso](quality-patches-tool/usage.md)
   - [Notas de la versión](quality-patches-tool/release-notes.md)
   - Parches disponibles en la herramienta Parches de calidad {#patches-available-in-qpt}
@@ -478,7 +478,7 @@ ht-degree: 0%
       - [ACSD-53176: La regla de producto con es una de condición que no coincide](quality-patches-tool/patches-available-in-qpt/v1-1-36/acsd-53176-product-rule-with-is-one-of-condition-do-not-match.md)
       - [ACSD-47875: no se puede agregar un producto al carro para el ámbito de vista de tienda con la administración de inventario](quality-patches-tool/patches-available-in-qpt/v1-1-36/acsd-47875-unable-to-add-product-to-customer-cart-for-store-view-scope-with-inventory-management.md)
       - [ACSD-51666: Error &quot;La sesión ha caducado, vuelva a iniciar sesión&quot;. después de iniciar sesión](quality-patches-tool/patches-available-in-qpt/v1-1-36/acsd-51666-error-session-has-expired-please-login-again.md)
-      - [ACSD-52906: resolviendo el problema de cookies X-Magento-Vary para el almacenamiento en caché de clientes que iniciaron sesión](quality-patches-tool/patches-available-in-qpt/v1-1-36/acsd-52906-resolving-x-magento-vary-cookie-issue-logged-in-customer-caching.md)
+      - [ACSD-52906: resolviendo el problema de cookies de X-Magento-Vary para el almacenamiento en caché de clientes que han iniciado sesión](quality-patches-tool/patches-available-in-qpt/v1-1-36/acsd-52906-resolving-x-magento-vary-cookie-issue-logged-in-customer-caching.md)
     - Versión 1.1.37 {#v1-1-37}
       - [Información general:  [!DNL Quality Patches Tool] (QPT) v1.1.37](quality-patches-tool/patches-available-in-qpt/v1-1-37/overview.md)
       - [ACSD-52613: la caché y los índices se actualizan sin actualizaciones](quality-patches-tool/patches-available-in-qpt/v1-1-37/acsd-52613-cache-and-indexes-are-refreshed-with-no-updates.md)
@@ -639,7 +639,7 @@ ht-degree: 0%
       - [ACSD-46938: problemas de rendimiento con déclencheur de BD durante la instalación :upgrade](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-46938-fix-for-db-triggers-performance-issue-during-setup-upgrade.md)
       - [ACSD-54887: el carro de compras del cliente se borra después de que la sesión del cliente haya caducado](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-54887-customer-shopping-cart-gets-cleared-after-session-expiry.md)
       - [ACSD-58141: PHPSESSID se regenera en solicitudes POST para clientes conectados si la caché L2 Redis está habilitada](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-58141-phpsessid-regenerates-on-post-requests-for-logged-in-customers.md)
-      - [ACSD-59229: asignación incorrecta de datos del grupo de clientes debido a un valor X-Magento-Vary obsoleto](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-59229-customer-group-segmentation-fix.md)
+      - [ACSD-59229: asignación incorrecta de datos del grupo de clientes debido a un valor obsoleto de X-Magento-Vary](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-59229-customer-group-segmentation-fix.md)
       - [ACSD-60441: La actualización de clientes a través de V1/customers [!DNL REST] extremo de API genera un error](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-60441-updating-customers-via-v1-customers-rest-api.md)
       - [ACSD-58352: las etiquetas de atributo devueltas para la tienda predeterminada se devuelven mediante la API  [!DNL GraphQL] API](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-58352-return-attribute-labels-for-the-default-store-are-returned-via-graphql-api.md)
       - [ACSD-59514: Forms en el administrador con  [!DNL Page Builder] error de lanzamiento en la consola del explorador](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-59514-forms-in-admin-with-page-builder-throw-error-in-browser-console.md)
@@ -975,7 +975,7 @@ ht-degree: 0%
       - [ACSD-69494: Las solicitudes de reembolso asíncronas con &quot;is_online&quot; no déclencheur reembolsos en línea](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69494.md)
       - [ACSD-68537: el rendimiento de cierre de compra se degrada con muchos segmentos de clientes](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68537.md)
       - [ACSD-69311: cálculo de impuestos incorrecto en las notas de abono después de devoluciones parciales de facturas](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69311.md)
-      - [ACSD-68341: se producen varias actualizaciones de la cookie X-Magento-Vary al cargar PDP](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68341.md)
+      - [ACSD-68341: se producen varias actualizaciones de las cookies de X-Magento-Vary al cargar PDP](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68341.md)
     - Versión 1.1.78 {#v1-1-78}
       - [Información general:  [!DNL Quality Patches Tool] (QPT) v1.1.78](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/overview.md)
       - [ACP2E-4513: Las imágenes CAPTCHA caducadas no se eliminan del sistema](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4513.md)
@@ -1026,7 +1026,7 @@ ht-degree: 0%
       - [ACP2E-4552: La respuesta de GraphQL no devuelve el estado de la empresa](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4552.md)
       - [ACP2E-4496: Trabajo cron de Analytics degrada el rendimiento durante la ejecución](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4496.md)
       - [ACP2E-4488: Lento guardado/edición del producto de administración para grandes conjuntos de atributos](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4488.md)
-      - [ACP2E-4653: Condiciones del ámbito de la categoría de regla de precio del carro de compras que faltan en la API  [!DNL REST] &#x200B;](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4653.md)
+      - [ACP2E-4653: Condiciones del ámbito de la categoría de regla de precio del carro de compras que faltan en la API  [!DNL REST] ](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4653.md)
       - [ACP2E-4472: Presupuesto nulo creado mediante el flujo Iniciar sesión como cliente](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4472.md)
       - [ACP2E-4808: Visualización del peso del producto sin unidad de medida en la tienda](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4808.md)
       - [ACP2E-4533: Las imágenes de marcador de posición no se pueden cargar en la tienda cuando la URL incluye el código de tienda](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4533.md)
@@ -1060,6 +1060,9 @@ ht-degree: 0%
       - [ACP2E-4875: Los usuarios administradores cerraron sesión al abrir cuentas de clientes con libretas de direcciones grandes](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4875.md)
     - Versión 1.1.83 {#v1-1-83}
       - [Información general:  [!DNL Quality Patches Tool] (QPT) v1.1.83](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/overview.md)
+      - [ACP2E-5223: El índice de permisos de catálogo incluye los sitios web excluidos de los grupos de clientes](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5223.md)
+      - [ACP2E-5101: La instalación de Adobe Commerce B2B falla cuando los indexadores utilizan Actualizar por programación](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5101.md)
+      - [AC-12854: el reordenamiento del administrador utiliza el número de orden original con un sufijo -1](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-12854.md)
     - v1.1.84 {#v1-1-84}
       - [Información general:  [!DNL Quality Patches Tool] (QPT) v1.1.84](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/overview.md)
   - [Comprobar parche para el problema de Adobe Commerce con la herramienta Parches de calidad](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
@@ -1109,6 +1112,6 @@ ht-degree: 0%
     - [Datos que requieren una migración manual](data-migration-tool/migrate-data/manual.md)
     - [Pasos de la migración posterior a los datos](data-migration-tool/migrate-data/post-migration.md)
   - Recursos {#resources}
-    - [Resolución de problemas](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting)
+    - [Resolución de problemas](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting)
     - [Changelog](https://github.com/magento/data-migration-tool/blob/2.4/CHANGELOG.md)
-- [Volver a Guías operativas](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=es)
+- [Volver a Guías operativas](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
