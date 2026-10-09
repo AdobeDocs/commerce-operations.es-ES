@@ -61,7 +61,7 @@ tipo de caché → caché front-end → back-end de caché
 
 >[!ENDSHADEBOX]
 
-Un tipo de caché **1} identifica el tipo de datos que se almacenan en caché, como la configuración, el diseño, el bloque de HTML o el contenido de página completa.** Un **front-end de caché** conecta uno o más tipos de caché al almacenamiento. Un back-end de **caché** proporciona la implementación de almacenamiento.
+Un tipo de caché **1&rbrace; identifica el tipo de datos que se almacenan en caché, como la configuración, el diseño, el bloque de HTML o el contenido de página completa.** Un **front-end de caché** conecta uno o más tipos de caché al almacenamiento. Un back-end de **caché** proporciona la implementación de almacenamiento.
 
 Puede asignar diferentes tipos de caché a diferentes front-end cuando se requiera una configuración de caché o almacenamiento independiente. Para obtener detalles de configuración, consulte [Configurar tipos y front-end de caché](cache-types.md).
 
