@@ -2,13 +2,22 @@
 title: Arquitectura de referencia
 description: Obtenga información acerca de la arquitectura de referencia en Adobe Commerce. Descubra estrategias de optimización y directrices de implementación.
 exl-id: 85a6d3d6-f47f-4806-97bd-fa7a73605f4c
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '434'
 ht-degree: 0%
-
 ---
-
 # Arquitectura de referencia
 
 En este tema se describe una configuración recomendada genérica para instancias de Adobe Commerce que utilizan servidores simples alojados físicamente en un centro de datos (no virtualizado) en el que los recursos no se comparten con otros usuarios. Su proveedor de alojamiento, especialmente si se especializa en alojamiento de alto rendimiento de Commerce, puede recomendarle una configuración diferente que sea igual o más eficaz para sus necesidades.

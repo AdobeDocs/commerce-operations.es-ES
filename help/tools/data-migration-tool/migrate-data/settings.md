@@ -1,15 +1,24 @@
 ---
 title: Configuración de migración de datos
-description: Obtenga información sobre cómo empezar a migrar la configuración de Magento 1 a Magento 2 con  [!DNL Data Migration Tool].
+description: Obtenga información sobre cómo empezar a migrar configuraciones de Magento 1 a Magento 2 con [!DNL Data Migration Tool].
 exl-id: 6fc8285a-9f26-48a5-9034-49a6a1b66b40
 topic: Commerce, Migration
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '299'
 ht-degree: 0%
-
 ---
-
 # Configuración de migración de datos
 
 El modo `Settings` migra tiendas, sitios web y la configuración del sistema, como la configuración de envío, pago e impuestos. Según nuestro pedido [order](overview.md#migration-order) de migración de datos, primero debe migrar la configuración.
@@ -22,7 +31,7 @@ Antes de empezar, siga estos pasos para prepararse:
 
 >[!NOTE]
 >
->Asegúrese de que Magento 2 esté implementado en modo `default`. El modo de desarrollador puede provocar errores de validación en la herramienta de migración.
+>Asegúrese de que Magento 2 se haya implementado en el modo `default`. El modo de desarrollador puede provocar errores de validación en la herramienta de migración.
 
 
 Consulte la sección [primeros pasos](overview.md#first-steps) para obtener más información.
@@ -45,7 +54,7 @@ Donde:
 
 >[!NOTE]
 >
->Este comando no migra todas las opciones de configuración. Compruebe todas las configuraciones en el Administrador de Magento 2 antes de continuar.
+>Este comando no migra todas las opciones de configuración. Compruebe todas las configuraciones en el administrador de Magento 2 antes de continuar.
 
 
 El mensaje `Migration completed` se muestra después de que la configuración se transfiera correctamente.

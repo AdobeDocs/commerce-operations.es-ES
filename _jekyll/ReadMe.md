@@ -1,10 +1,21 @@
 ---
-source-git-commit: 90e3f9cb6033c91be67947e84520d3e2537ca5d9
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '358'
 ht-degree: 0%
-
 ---
+
 # Información general
 
 Este proyecto utiliza las tareas de Rake para automatizar partes del flujo de trabajo de documentación. La mayoría de las tareas se comparten entre repositorios de documentos de ExL Commerce y provienen de la joya [`adobe-comdox-exl-rake-tasks`](https://github.com/commerce-docs/adobe-comdox-exl-rake-tasks). A continuación se indican algunas tareas específicas de este repositorio.

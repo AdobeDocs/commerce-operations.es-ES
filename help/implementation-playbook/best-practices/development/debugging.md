@@ -4,13 +4,23 @@ description: Conozca las técnicas para resolver los problemas comunes de desarr
 feature: Best Practices
 role: Developer
 exl-id: 78fbea7b-28e8-4713-990d-b4cae159250c
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '1164'
 ht-degree: 0%
-
 ---
-
 # Prácticas recomendadas de depuración para Adobe Commerce
 
 En este tema se explican las formas de depurar de forma sistemática y eficaz el marco de trabajo de Adobe Commerce. El objetivo es ayudarle a llegar a la raíz de un problema rápidamente y minimizar el tiempo de investigación.

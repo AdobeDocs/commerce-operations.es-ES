@@ -5,13 +5,25 @@ feature: Checkout
 role: Admin, Developer
 exl-id: 8aad34e2-89ef-460c-8921-91098bd1645b
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 8cd50456-5eb0-5364-922a-f14161feb828
+    internal-label: Checkout
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '347'
 ht-degree: 0%
-
 ---
-
 # ACSD-61134: *[!UICONTROL Braintree Vault]* método de pago deseleccionado automáticamente en el flujo de trabajo de cierre de compra
 
 El parche ACSD-61134 corrige el problema en el que el método de pago *[!UICONTROL Braintree Vault]* se anula automáticamente de la selección en el flujo de trabajo de cierre de compra cuando un comprador actualiza su dirección de facturación anulando la selección de la casilla de verificación *[!UICONTROL My billing and shipping address are the same]*. Esta revisión está disponible cuando está instalado [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.54. El ID del parche es ACSD-61134. Tenga en cuenta que este problema está programado para solucionarse en Adobe Commerce 2.4.7-beta1.

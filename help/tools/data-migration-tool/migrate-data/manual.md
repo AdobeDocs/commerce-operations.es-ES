@@ -3,13 +3,22 @@ title: Datos que requieren una migración manual
 description: Obtenga información sobre los datos que deben migrarse manualmente durante una migración de datos de Magento 1 a Magento 2 y cómo hacerlo.
 exl-id: 830abd81-4c6d-418b-9da4-b6acd95f5ec8
 topic: Commerce, Migration
-source-git-commit: e83e2359377f03506178c28f8b30993c172282c7
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '287'
+source-wordcount: '289'
 ht-degree: 0%
-
 ---
-
 # Datos que requieren una migración manual
 
 Existen cuatro tipos de datos que deben migrarse manualmente:
@@ -33,7 +42,7 @@ En esta sección se explica cómo migrar manualmente archivos multimedia.
 >El método de almacenamiento de medios de la base de datos está obsoleto desde Magento 2.4.3.
 
 
-Esta sección se aplica a usted *solamente* si almacena archivos multimedia en la base de datos de Magento. Este paso se debe realizar antes de la [migración de datos](data.md):
+Esta sección se aplica *solamente* si almacena archivos multimedia en la base de datos de Magento. Este paso se debe realizar antes de la [migración de datos](data.md):
 
 1. Inicie sesión en el Panel de administración de Magento 1 como administrador.
 
@@ -51,13 +60,13 @@ A continuación, repita los mismos pasos en el panel de administración de Magen
 
 Todos los archivos multimedia (imágenes para productos, categorías, el editor de WYSIWYG, etc.) se deben copiar manualmente de `<your Magento 1 install dir>/media` a `<your Magento 2 install dir>/pub/media`.
 
-Sin embargo, *no* copia los archivos de `.htaccess` ubicados en la carpeta de Magento 1 `media`. Magento 2 tiene su propio `.htaccess` que se debe conservar.
+Sin embargo, *no* copia los archivos de `.htaccess` ubicados en la carpeta Magento 1 `media`. Magento 2 tiene su propio `.htaccess` que se debe conservar.
 
 ## Diseño de tienda
 
 * El diseño en archivos (CSS, JS, plantillas, diseños XML) ha cambiado su ubicación y formato
 
-* Actualizaciones de diseño almacenadas en la base de datos. Realizado mediante el administrador de Magento 1 en páginas de CMS, widgets de CMS, páginas de categorías y páginas de productos
+* Actualizaciones de diseño almacenadas en la base de datos. Con el administrador de Magento 1 en páginas de CMS, widgets de CMS, páginas de categorías y páginas de productos
 
 ## Listas de control de acceso (ACL)
 

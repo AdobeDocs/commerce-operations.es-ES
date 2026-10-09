@@ -3,13 +3,25 @@ title: Adobe Managed Services
 description: Descubra cómo Adobe Managed Services puede ayudarle a respaldar y mantener su implementación de Adobe Commerce.
 exl-id: b600b0e3-c6fd-4b86-ad2a-a445e599f1bd
 feature: Services
-source-git-commit: 486e789787c9c08b27b4aae8e601680138956b88
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: da76473c-f99b-5ad0-9b14-896aed473f8a
+    internal-label: Services
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '1181'
 ht-degree: 0%
-
 ---
-
 
 # Adobe Managed Services
 
@@ -28,12 +40,12 @@ Adobe Managed Services ofrece ventajas clave sobre las implementaciones en la nu
 - **Objetivos de nivel de servicio (SLT, por sus siglas en inglés) mejorados**: tiempos de respuesta más rápidos que la asistencia estándar de Adobe Commerce.
 - **Acuerdos de nivel de servicio (SLA) mejorados**: nivel de aplicación del 99,9 % que los clientes habituales de Adobe Commerce en la infraestructura en la nube obtienen sobre el nivel de infraestructura del 99,99 %.
 - **Experiencia en la nube designada**: Managed Services proporciona a los clientes un ingeniero de éxito del cliente (Customer Success Engineer, CSE) designado que sirve como experto en infraestructura de la nube y aplicaciones. El CSE trabaja con los clientes y sus socios, proporcionándoles prácticas recomendadas y orientación para acelerar el tiempo de salida al mercado, lo que incluye:
-   - Guía y asistencia a través del proceso de incorporación
-   - Administrar el aprovisionamiento y la configuración de plataforma
-   - Asesorar sobre principios arquitectónicos para integraciones y personalizaciones
-   - Impulso de la administración de incidentes y la continuidad empresarial
-   - Proporcionar compatibilidad con eventos mediante la planificación, la ejecución y la monitorización
-   - Soporte y experiencia en la nube (optimización proactiva, creación de informes y prácticas recomendadas)
+  - Guía y asistencia a través del proceso de incorporación
+  - Administrar el aprovisionamiento y la configuración de plataforma
+  - Asesorar sobre principios arquitectónicos para integraciones y personalizaciones
+  - Impulso de la administración de incidentes y la continuidad empresarial
+  - Proporcionar compatibilidad con eventos mediante la planificación, la ejecución y la monitorización
+  - Soporte y experiencia en la nube (optimización proactiva, creación de informes y prácticas recomendadas)
 
 Consulte la siguiente tabla para obtener una comparación más detallada de las ventajas clave de Managed Services:
 

@@ -2,13 +2,22 @@
 title: Comprender el ámbito de actualización
 description: Obtenga información acerca de los cambios incompatibles con versiones anteriores en una versión que podrían afectar a los módulos personalizados de Adobe Commerce o a las extensiones de terceros.
 exl-id: dab2a14f-dbf0-422e-afb4-642e2220ec7a
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '928'
 ht-degree: 0%
-
 ---
-
 # Comprender el ámbito de la actualización
 
 Revise las [notas de la versión](/help/release/release-notes/overview.md) para comprender el ámbito de una versión, incluidas las mejoras, las correcciones de errores y los problemas conocidos que podrían afectar a los módulos personalizados y de terceros.

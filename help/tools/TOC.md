@@ -4,9 +4,9 @@ user-guide-description: Obtenga información sobre las distintas herramientas qu
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: 9e2d11d7a383434670c4cb45e3764ed2b8974e9c
+source-git-commit: 758cab5d4002ddba607dadb3c4b44553adf8d8ba
 workflow-type: tm+mt
-source-wordcount: '10703'
+source-wordcount: '10740'
 ht-degree: 0%
 ---
 
@@ -478,7 +478,7 @@ ht-degree: 0%
       - [ACSD-53176: La regla de producto con es una de condición que no coincide](quality-patches-tool/patches-available-in-qpt/v1-1-36/acsd-53176-product-rule-with-is-one-of-condition-do-not-match.md)
       - [ACSD-47875: no se puede agregar un producto al carro para el ámbito de vista de tienda con la administración de inventario](quality-patches-tool/patches-available-in-qpt/v1-1-36/acsd-47875-unable-to-add-product-to-customer-cart-for-store-view-scope-with-inventory-management.md)
       - [ACSD-51666: Error &quot;La sesión ha caducado, vuelva a iniciar sesión&quot;. después de iniciar sesión](quality-patches-tool/patches-available-in-qpt/v1-1-36/acsd-51666-error-session-has-expired-please-login-again.md)
-      - [ACSD-52906: resolviendo el problema de cookies X-Magento-Vary para el almacenamiento en caché de clientes que iniciaron sesión](quality-patches-tool/patches-available-in-qpt/v1-1-36/acsd-52906-resolving-x-magento-vary-cookie-issue-logged-in-customer-caching.md)
+      - [ACSD-52906: resolviendo el problema de cookies de X-Magento-Vary para el almacenamiento en caché de clientes que han iniciado sesión](quality-patches-tool/patches-available-in-qpt/v1-1-36/acsd-52906-resolving-x-magento-vary-cookie-issue-logged-in-customer-caching.md)
     - Versión 1.1.37 {#v1-1-37}
       - [Información general:  [!DNL Quality Patches Tool] (QPT) v1.1.37](quality-patches-tool/patches-available-in-qpt/v1-1-37/overview.md)
       - [ACSD-52613: la caché y los índices se actualizan sin actualizaciones](quality-patches-tool/patches-available-in-qpt/v1-1-37/acsd-52613-cache-and-indexes-are-refreshed-with-no-updates.md)
@@ -639,7 +639,7 @@ ht-degree: 0%
       - [ACSD-46938: problemas de rendimiento con déclencheur de BD durante la instalación :upgrade](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-46938-fix-for-db-triggers-performance-issue-during-setup-upgrade.md)
       - [ACSD-54887: el carro de compras del cliente se borra después de que la sesión del cliente haya caducado](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-54887-customer-shopping-cart-gets-cleared-after-session-expiry.md)
       - [ACSD-58141: PHPSESSID se regenera en solicitudes POST para clientes conectados si la caché L2 Redis está habilitada](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-58141-phpsessid-regenerates-on-post-requests-for-logged-in-customers.md)
-      - [ACSD-59229: asignación incorrecta de datos del grupo de clientes debido a un valor X-Magento-Vary obsoleto](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-59229-customer-group-segmentation-fix.md)
+      - [ACSD-59229: asignación incorrecta de datos del grupo de clientes debido a un valor obsoleto de X-Magento-Vary](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-59229-customer-group-segmentation-fix.md)
       - [ACSD-60441: La actualización de clientes a través de V1/customers [!DNL REST] extremo de API genera un error](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-60441-updating-customers-via-v1-customers-rest-api.md)
       - [ACSD-58352: las etiquetas de atributo devueltas para la tienda predeterminada se devuelven mediante la API  [!DNL GraphQL] API](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-58352-return-attribute-labels-for-the-default-store-are-returned-via-graphql-api.md)
       - [ACSD-59514: Forms en el administrador con  [!DNL Page Builder] error de lanzamiento en la consola del explorador](quality-patches-tool/patches-available-in-qpt/v1-1-50/acsd-59514-forms-in-admin-with-page-builder-throw-error-in-browser-console.md)
@@ -975,7 +975,7 @@ ht-degree: 0%
       - [ACSD-69494: Las solicitudes de reembolso asíncronas con &quot;is_online&quot; no déclencheur reembolsos en línea](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69494.md)
       - [ACSD-68537: el rendimiento de cierre de compra se degrada con muchos segmentos de clientes](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68537.md)
       - [ACSD-69311: cálculo de impuestos incorrecto en las notas de abono después de devoluciones parciales de facturas](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-69311.md)
-      - [ACSD-68341: se producen varias actualizaciones de la cookie X-Magento-Vary al cargar PDP](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68341.md)
+      - [ACSD-68341: se producen varias actualizaciones de las cookies de X-Magento-Vary al cargar PDP](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-77/acsd-68341.md)
     - Versión 1.1.78 {#v1-1-78}
       - [Información general:  [!DNL Quality Patches Tool] (QPT) v1.1.78](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/overview.md)
       - [ACP2E-4513: Las imágenes CAPTCHA caducadas no se eliminan del sistema](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-78/acp2e-4513.md)
@@ -1060,6 +1060,9 @@ ht-degree: 0%
       - [ACP2E-4875: Los usuarios administradores cerraron sesión al abrir cuentas de clientes con libretas de direcciones grandes](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4875.md)
     - Versión 1.1.83 {#v1-1-83}
       - [Información general:  [!DNL Quality Patches Tool] (QPT) v1.1.83](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/overview.md)
+      - [ACP2E-5223: El índice de permisos de catálogo incluye los sitios web excluidos de los grupos de clientes](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5223.md)
+      - [ACP2E-5101: La instalación de Adobe Commerce B2B falla cuando los indexadores utilizan Actualizar por programación](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5101.md)
+      - [AC-12854: el reordenamiento del administrador utiliza el número de orden original con un sufijo -1](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-12854.md)
     - v1.1.84 {#v1-1-84}
       - [Información general:  [!DNL Quality Patches Tool] (QPT) v1.1.84](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/overview.md)
   - [Comprobar parche para el problema de Adobe Commerce con la herramienta Parches de calidad](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)

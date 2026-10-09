@@ -4,13 +4,23 @@ description: Obtenga información sobre cómo crear y utilizar una lista de comp
 role: Leader
 feature: Best Practices
 exl-id: c9b644fa-290c-4f33-b5a7-19f7122ff08e
-source-git-commit: 8d0d8f9822b88f2dd8cbae8f6d7e3cdb14cc4848
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+role_v2:
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '503'
 ht-degree: 0%
-
 ---
-
 # Prácticas recomendadas de lista de comprobación de actualización
 
 Utilice esta lista de comprobación durante sus conversaciones anuales y trimestrales con su equipo de comercio electrónico. Muchas empresas trabajan con presupuestos anuales y hojas de ruta. Es imperativo, durante estas discusiones anuales, que hable sobre la salud, la dirección y la estrategia de actualización de su plataforma para el año, junto con cómo encaja en los objetivos generales y los KPI del negocio. Durante las conversaciones trimestrales, asegúrese de que el plan anual que ha creado sigue estando alineado con su situación actual o pivote si no. El objetivo de esta lista de comprobación del plan de actualización es ayudarle a planificar y programar las actualizaciones de Adobe Commerce para garantizar un proceso de actualización correcto durante el año. Esta lista de comprobación está pensada para que la utilicen las siguientes audiencias para la planificación anual y la revisión trimestral:

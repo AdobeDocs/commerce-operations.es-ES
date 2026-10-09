@@ -1,17 +1,32 @@
 ---
-title: 'Información general:  [!DNL Quality Patches Tool] (QPT) v1.1.39'
-description: Esta subsección proporciona una descripción detallada de los problemas corregidos por los parches disponibles en  [!DNL Quality Patches Tool] (QPT) v1.1.39.
+title: 'Información general: [!DNL Quality Patches Tool] (QPT) v1.1.39'
+description: Esta subsección proporciona una descripción detallada de los problemas corregidos por los parches disponibles en [!DNL Quality Patches Tool] (QPT) v1.1.39.
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 6116f566-2ff8-4148-ab60-cec65f9b7a6f
 type: Troubleshooting
-source-git-commit: 7fdb02a6d89d50ea593c5fd99d78101f89198424
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 125c1f49-aefd-5f34-a252-288937f95f6b
+    internal-label: Marketing Tools
+subfeature_v2:
+  - id: 618ab558-d6ad-5352-99d6-d5702c6fdf80
+    internal-label: Tools and External Services
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '270'
+source-wordcount: '274'
 ht-degree: 0%
-
 ---
-
 # Información general: [!DNL Quality Patches Tool] (QPT) v1.1.39
 
 Esta subsección proporciona una descripción detallada de los problemas corregidos por los parches disponibles en [!DNL Quality Patches Tool] (QPT) v1.1.39.
@@ -27,7 +42,7 @@ QPT v1.1.39 incluye los siguientes parches:
 1. **ACSD-54660**: se ha agregado un nuevo atributo de entrada *sort* para ordenar los pedidos de los clientes en GraphQL por `sort_field` y `sort_direction`.
 1. **ACSD-54776**: corrige el problema en el cual los valores de *[!UICONTROL Use Default Value]* sin marcar y los valores de campo de producto no predeterminados no se guardan para el segundo sitio web, tienda y vista de tienda.
 1. **ACSD-53998**: corrige el problema en el cual un(a) **[!UICONTROL Dynamic Block]** basado en un(a) **[!UICONTROL Customer Segment]** no funciona correctamente después de cerrar sesión desde una cuenta de cliente.
-1. **ACSD-53204**: correcciones *El producto no se puede guardar.Error* al realizar solicitudes simultáneas para agregar imágenes a la galería de productos mediante el extremo `rest/V1/products/<sku>/media`.
+1. **ACSD-53204**: correcciones *El producto no se puede guardar.* error al realizar solicitudes simultáneas para agregar imágenes a la galería de productos usando el extremo `rest/V1/products/<sku>/media`.
 1. **ACSD-47657**: se agregó un mecanismo de almacenamiento en caché para las credenciales de AWS. Un proveedor de credenciales ahora utiliza la caché de Magento para almacenar en caché las credenciales recuperadas de AWS para la configuración EC2.
 
 Utilice el menú de la izquierda para navegar a una página específica del parche.

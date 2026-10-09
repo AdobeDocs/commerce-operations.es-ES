@@ -2,13 +2,22 @@
 title: Configuración del sistema de producción
 description: Obtenga información sobre cómo configurar un sistema de producción para la aplicación de Commerce.
 exl-id: e678e97e-d9f2-4f24-bb6b-1994a2a1167c
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '378'
 ht-degree: 0%
-
 ---
-
 # Configuración del sistema de producción
 
 Puede tener un sistema de producción. Todo lo siguiente debe ser verdadero:
@@ -16,11 +25,11 @@ Puede tener un sistema de producción. Todo lo siguiente debe ser verdadero:
 - Todo el código Commerce está en control de código fuente en el mismo repositorio que los sistemas de desarrollo y compilación
 - Asegúrese de que todos los elementos siguientes estén _incluidos_ en el control de código fuente:
 
-   - `app/etc/config.php`
-   - Directorio `generated` (y subdirectorios)
-   - `pub/media` directorio
-   - Directorio `pub/media/wysiwyg` (y subdirectorios)
-   - Directorio `pub/static` (y subdirectorios)
+  - `app/etc/config.php`
+  - Directorio `generated` (y subdirectorios)
+  - `pub/media` directorio
+  - Directorio `pub/media/wysiwyg` (y subdirectorios)
+  - Directorio `pub/static` (y subdirectorios)
 
 - Commerce 2.2 o posterior debe estar instalado y configurado para [modo de producción](../bootstrap/application-modes.md#production-mode)
 - Tiene la propiedad del sistema de archivos y los permisos establecidos como se describe en [Requisito previo para los sistemas de desarrollo, compilación y producción](../deployment/prerequisites.md).

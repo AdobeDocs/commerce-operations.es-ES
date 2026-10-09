@@ -3,13 +3,27 @@ title: Información general de implementación
 description: Obtenga información sobre las estrategias de implementación para la aplicación de Commerce.
 feature: Configuration, Deploy
 exl-id: d5ed6fb3-2dd2-49df-802b-6d712ecd9ccf
-source-git-commit: b378f6da50e40b1868ae759cc7f3523a7e3ced4b
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+  - id: bcd8874c-7b93-5596-bdaa-22660e84df14
+    internal-label: Deploy
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '831'
 ht-degree: 0%
-
 ---
-
 # Información general de implementación
 
 En estos temas se describe el proceso de implementación de la aplicación Commerce en un sitio de producción para la versión 2.2 y posteriores de Adobe Commerce. Adobe recomienda este método de implementación para cualquier persona con un sitio grande que no desee experimentar tiempo de inactividad durante la implementación.

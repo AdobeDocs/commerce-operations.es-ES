@@ -5,13 +5,27 @@ feature: Quotes, Shopping Cart
 role: Admin, Developer
 exl-id: 795d1ddf-0d5b-406c-870b-36cb92cf07fa
 type: Troubleshooting
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 792a7e9b-6519-5e99-a913-56c3dd2408da
+    internal-label: Quotes
+  - id: df8eaa0e-dd74-553a-8ad5-28129f8e8d3d
+    internal-label: Shopping Cart
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '373'
 ht-degree: 0%
-
 ---
-
 # ACSD-63406: las comillas persistentes caducadas no se borran cuando se ejecuta el trabajo cron de `persistent_clear_expired`
 
 El parche ACSD-63406 corrige el problema en el que las comillas persistentes caducadas no son borradas por ningún trabajo cron cuando se ejecuta el trabajo cron `persistent_clear_expired`. Esta revisión está disponible cuando está instalado [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.62. El ID del parche es ACSD-63406. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.8.

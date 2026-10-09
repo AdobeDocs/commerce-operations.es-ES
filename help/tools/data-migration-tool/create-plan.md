@@ -3,13 +3,22 @@ title: Creación de un plan de migración de datos
 description: Obtenga información sobre cómo crear un plan de migración de datos para actualizar de Magento 1 a Magento 2. Planifique y pruebe la migración para evitar problemas.
 exl-id: a14237f3-c5fe-4f5f-86eb-ed4c39507bff
 topic: Commerce, Migration
-source-git-commit: 6896d31a202957d7354c3dd5eb6459eda426e8d7
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '889'
+source-wordcount: '890'
 ht-degree: 0%
-
 ---
-
 # Creación de un plan de migración de datos
 
 Para migrar correctamente y evitar problemas, debe planificar a fondo y probar la migración.
@@ -34,7 +43,7 @@ La migración es un buen momento para realizar cambios importantes y preparar su
 
 * Instale Magento 2 (con todos los módulos de esta versión) y [!DNL Data Migration Tool] en un sistema que cumpla [los requisitos del sistema](../../installation/system-requirements.md)
 
-* Personalice el código [!DNL Data Migration Tool] para omitir determinados datos (como páginas de CMS o reglas de ventas) o convertir personalizaciones durante la migración. Lea las [!DNL Data Migration Tool]especificaciones técnicas[&#x200B; de &#x200B;](technical-specification.md) para obtener más información acerca de cómo funciona la migración
+* Personalice el código [!DNL Data Migration Tool] para omitir determinados datos (como páginas de CMS o reglas de ventas) o convertir personalizaciones durante la migración. Lea las [especificaciones técnicas](technical-specification.md) de [!DNL Data Migration Tool] para obtener más información acerca de cómo funciona la migración
 
 ## Paso 3: Ejecución en seco
 
@@ -44,7 +53,7 @@ En estas pruebas de migración, siga estos pasos:
 
 * Copiar la tienda de Magento 1 en un servidor de ensayo
 
-* Migrar completamente la tienda replicada de Magento 1 a Magento 2
+* Migración completa de la tienda duplicada de Magento 1 a Magento 2
 
 * Pruebe exhaustivamente su nueva tienda
 
@@ -58,7 +67,7 @@ En estas pruebas de migración, siga estos pasos:
    >
    >No reanude estas actividades hasta que su tienda de Magento 2 se active.
 
-1. Recomendamos detener todos los trabajos cron de Magento 1.
+1. Recomendamos detener todos los trabajos de Magento 1 cron.
 
    Si algunos trabajos deben ejecutarse durante la migración, asegúrese de que no creen ni modifiquen entidades de base de datos de formas que el modo Delta no pueda procesar.
 
@@ -70,11 +79,11 @@ En estas pruebas de migración, siga estos pasos:
 
    Copie estos archivos manualmente del directorio `magento1-root/media` a `magento2-root/pub/media`.
 
-1. Use [!DNL Data Migration Tool] para copiar masivamente los datos de la base de datos de Magento 1 en la base de datos de Magento 2.
+1. Utilice [!DNL Data Migration Tool] para copiar masivamente los datos de la base de datos de Magento 1 en la base de datos de Magento 2.
 
-   Si algunas de las extensiones tienen datos que desea migrar, es posible que tenga que instalar estas extensiones adaptadas para Magento 2. Si las extensiones tienen una estructura diferente en la base de datos de Magento 2, utilice los archivos de asignación proporcionados con [!DNL Data Migration Tool].
+   Si algunas extensiones tienen datos que desea migrar, es posible que tenga que instalar estas extensiones adaptadas para Magento 2. Si las extensiones tienen una estructura diferente en la base de datos de Magento 2, utilice los archivos de asignación proporcionados con [!DNL Data Migration Tool].
 
-1. Reindexe todos los indexadores de Magento 2. Para obtener más información, consulte [Administrar indexadores](../../configuration/cli/manage-indexers.md) en la _Guía de configuración_.
+1. Reindexe todos los indexadores Magento 2. Para obtener más información, consulte [Administrar indexadores](../../configuration/cli/manage-indexers.md) en la _Guía de configuración_.
 
 ## Paso 5: Realice cambios en los datos migrados (si es necesario)
 
@@ -94,7 +103,7 @@ Después de migrar los datos, utilice el modo Delta para capturar y transferir a
 
 >[!NOTE]
 >
->Pueden aparecer advertencias de comprobación de volumen en caso de que realice pruebas del sitio de Magento 2 y ejecute el proceso de migración al mismo tiempo. Esto sucede porque en Magento 2 se crean entidades que no existen en Magento 1.
+>Pueden aparecer advertencias de comprobación de volumen en caso de que realice pruebas del sitio de Magento 2 y ejecute el proceso de migración al mismo tiempo. Esto sucede porque en Magento 2 se crean entidades que no existen en la instancia de Magento 1.
 
 ## Paso 7: Publicación
 
@@ -104,9 +113,9 @@ Una vez que el sitio de Magento 2 se haya migrado completamente y funcione norma
 
 1. Presione Control+C en la ventana de comandos de la herramienta de migración para detener las actualizaciones incrementales.
 
-1. Inicie sus trabajos cron de Magento 2.
+1. Inicie sus trabajos de Magento 2 cron.
 
-1. En el sistema Magento 2, vuelva a indexar el indexador de cotizaciones. Para obtener más información, consulte [Administrar indexadores](../../configuration/cli/manage-indexers.md) en la _Guía de configuración_.
+1. En el sistema Magento 2, vuelva a indexar el indexador de acciones. Para obtener más información, consulte [Administrar indexadores](../../configuration/cli/manage-indexers.md) en la _Guía de configuración_.
 
 1. Con una herramienta de su elección, visite las páginas de su sistema Magento 2 para almacenar en caché las páginas antes que los clientes que usen su tienda.
 

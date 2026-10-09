@@ -1,16 +1,37 @@
 ---
 title: 'Alertas administradas en Adobe Commerce: Alerta crítica de CPU'
-description: Este artículo proporciona pasos para solucionar problemas cuando recibe una alerta crítica de CPU para Adobe Commerce en  [!DNL New Relic]. Se requiere una acción inmediata para solucionar el problema.
+description: Este artículo proporciona pasos para solucionar problemas cuando recibe una alerta crítica de CPU para Adobe Commerce en [!DNL New Relic]. Se requiere una acción inmediata para solucionar el problema.
 feature: Cache, Marketing Tools, Observability, Support, Tools and External Services
 role: Admin
 exl-id: 8629ab18-5eef-4d76-9cf8-88fe2d3439df
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 125c1f49-aefd-5f34-a252-288937f95f6b
+    internal-label: Marketing Tools
+  - id: 4239b8a6-e74f-567d-a7a5-b98b9ead0ea4
+    internal-label: Observability
+  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
+subfeature_v2:
+  - id: b673188e-f9fa-492a-b470-c8f949bf7827
+    internal-label: Cache
+  - id: a59f76dc-e003-5617-951e-dffa5bd3de81
+    internal-label: Support
+  - id: 618ab558-d6ad-5352-99d6-d5702c6fdf80
+    internal-label: Tools and External Services
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '963'
 ht-degree: 0%
-
 ---
-
 # Alertas administradas en Adobe Commerce: Alerta crítica de CPU
 
 Este artículo proporciona pasos para solucionar problemas cuando recibe una alerta crítica de CPU para Adobe Commerce en [!DNL New Relic]. Se requiere una acción inmediata para solucionar el problema. La alerta tendrá el siguiente aspecto, según el canal de notificación de alerta que haya seleccionado.
@@ -56,9 +77,9 @@ Compruebe si existe el vale de soporte de Adobe Commerce. Para ver los pasos, co
    * Ordene las transacciones según las puntuaciones de Apdex ascendentes. [[!DNL Apdex]](https://docs.newrelic.com/docs/apm/new-relic-apm/apdex/apdex-measure-user-satisfaction) hace referencia a la satisfacción del usuario con el tiempo de respuesta de sus aplicaciones y servicios web. Una [puntuación [!DNL Apdex] baja](managed-alerts-for-magento-commerce-apdex-warning-alert.md) puede indicar un cuello de botella (una transacción con un tiempo de respuesta más alto). Normalmente, está relacionado con la base de datos [!DNL Redis] o PHP. Para ver los pasos, consulte [Ver transacciones con mayor insatisfacción [!DNL Apdex] 2&rbrace; de New Relic.](https://docs.newrelic.com/docs/apm/new-relic-apm/apdex/view-your-apdex-score#apdex-dissat)
    * Ordene las transacciones por el mayor rendimiento, el tiempo de respuesta medio más lento, el tiempo más lento y otros umbrales. Para ver los pasos, consulte [!DNL New Relic] [Buscar problemas de rendimiento específicos](https://docs.newrelic.com/docs/apm/applications-menu/monitoring/transactions-page-find-specific-performance-problems).
 1. Si sigue teniendo problemas para identificar el origen, use la [[!DNL New Relic] página Infraestructura de APM](https://docs.newrelic.com/docs/infrastructure/infrastructure-ui-pages/infra-hosts-ui-page) para identificar los servicios con recursos pesados. Para ver los pasos, consulte [!DNL New Relic] [Página de hosts de supervisión de infraestructura: ficha Procesos](https://docs.newrelic.com/docs/infrastructure/infrastructure-ui-pages/infra-hosts-ui-page/#processes).
-1. Si identifica la fuente, SSH en el entorno para investigar más a fondo. Para ver los pasos, consulte [SSH en su entorno](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/develop/secure-connections) en la Guía de Commerce en la nube.
+1. Si identifica la fuente, SSH en el entorno para investigar más a fondo. Para ver los pasos, consulte [SSH en su entorno](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/secure-connections) en la Guía de Commerce en la nube.
 1. Si sigue teniendo problemas para identificar la fuente:
    * Revise las tendencias recientes para identificar los problemas con las implementaciones de código o los cambios de configuración recientes (por ejemplo, nuevos grupos de clientes y grandes cambios en el catálogo). Se recomienda revisar los últimos siete días de actividad para cualquier correlación en implementaciones o cambios de código.
    * Considere la posibilidad de buscar y deshabilitar catálogos planos. Para ver los pasos, consulte [Funcionamiento lento, crons lentos y de larga duración](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/slow-performance-slow-and-long-running-crons) en la Base de conocimiento de asistencia de Commerce.
-   * Si sospecha que está experimentando un ataque DDoS, intente bloquear el tráfico de bots. Para ver los pasos, consulte [Cómo bloquear el tráfico malintencionado para Adobe Commerce en la infraestructura en la nube en el nivel Fastly](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/how-to/block-malicious-traffic-for-magento-commerce-on-fastly-level) en la Base de conocimiento de asistencia de Commerce.
-1. Si el problema parece temporal, realice pasos de mitigación como un aumento de tamaño o ponga el sitio en modo de mantenimiento. Para ver los pasos, consulte [Cómo solicitar el cambio de tamaño temporal](https://experienceleague.adobe.com/es/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-request-temporary-adobe-commerce-on-cloud-infrastructure-upsize) en la Base de conocimiento de asistencia de Commerce y [Habilitar o deshabilitar el modo de mantenimiento](/help/installation/tutorials/maintenance-mode.md) en la Guía de instalación de Commerce. Si el cambio de tamaño devuelve el sitio a las operaciones normales, considere la posibilidad de solicitar un cambio de tamaño permanente (póngase en contacto con el equipo de cuenta de Adobe) o intente reproducir el problema en el ensayo dedicado ejecutando una prueba de carga y optimizando las consultas o el código que reduce la presión sobre los servicios. Para ver los pasos, consulte [Pruebas de carga y esfuerzo](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/develop/test/staging-and-production#load-and-stress-testing) en la Guía de Commerce en la nube.
+   * Si sospecha que está experimentando un ataque DDoS, intente bloquear el tráfico de bots. Para ver los pasos, consulte [Cómo bloquear el tráfico malintencionado para Adobe Commerce en la infraestructura en la nube en el nivel Fastly](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/block-malicious-traffic-for-magento-commerce-on-fastly-level) en la Base de conocimiento de asistencia de Commerce.
+1. Si el problema parece temporal, realice pasos de mitigación como un aumento de tamaño o ponga el sitio en modo de mantenimiento. Para ver los pasos, consulte [Cómo solicitar el cambio de tamaño temporal](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-request-temporary-adobe-commerce-on-cloud-infrastructure-upsize) en la Base de conocimiento de asistencia de Commerce y [Habilitar o deshabilitar el modo de mantenimiento](/help/installation/tutorials/maintenance-mode.md) en la Guía de instalación de Commerce. Si el cambio de tamaño devuelve el sitio a las operaciones normales, considere la posibilidad de solicitar un cambio de tamaño permanente (póngase en contacto con el equipo de cuenta de Adobe) o intente reproducir el problema en el ensayo dedicado ejecutando una prueba de carga y optimizando las consultas o el código que reduce la presión sobre los servicios. Para ver los pasos, consulte [Pruebas de carga y esfuerzo](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/develop/test/staging-and-production#load-and-stress-testing) en la Guía de Commerce en la nube.

@@ -5,13 +5,25 @@ feature: Configuration
 role: Admin, Developer
 exl-id: 5bba3f05-e017-42b2-8a89-5471afb84ff3
 type: Troubleshooting
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '394'
 ht-degree: 0%
-
 ---
-
 # ACSD-61534: la configuración de diseño no se puede establecer con `bin/magento config:set` y los valores bloqueados se pueden modificar mediante la manipulación de formularios
 
 El parche ACSD-61534 corrige el problema en el que la configuración de diseño no se puede establecer con el comando `bin/magento config:set` y los valores bloqueados se pueden modificar mediante la manipulación de formularios. Esta revisión está disponible cuando está instalado [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.55. El ID del parche es ACSD-61534. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.8.

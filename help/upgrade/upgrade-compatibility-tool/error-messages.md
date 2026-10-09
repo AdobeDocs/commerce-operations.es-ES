@@ -1,14 +1,23 @@
 ---
 title: '[!DNL Upgrade Compatibility Tool] mensajes de error'
-description: Obtenga más información acerca de los mensajes de error que aparecen al usar  [!DNL Upgrade Compatibility Tool]  en su proyecto de Adobe Commerce.
+description: Obtenga más información sobre los mensajes de error que aparecen al usar [!DNL Upgrade Compatibility Tool] en su proyecto de Adobe Commerce.
 exl-id: fe4a17a9-a807-4315-b3cd-e35f34e39f6d
-source-git-commit: 95ffff39d82cc9027fa633dffedf15193040802d
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '4151'
+source-wordcount: '4152'
 ht-degree: 4%
-
 ---
-
 # [!DNL Upgrade Compatibility Tool] mensajes de error
 
 {{commerce-only}}
@@ -61,7 +70,7 @@ Se generan errores críticos cuando el código personalizado hace referencia a e
 | 5002 | La etiqueta PHP de apertura debe ser el primer contenido del archivo | Asegúrese de que no haya contenido en el archivo antes de la etiqueta de apertura PHP. |
 | 5003 | La función ha quedado obsoleta | Utilice un reemplazo sugerido en el mensaje de error. Si el mensaje no sugiere un reemplazo, se necesita una revisión minuciosa para seleccionar una función o implementación alternativa. |
 | 5005 | Error de sintaxis de PHP | El código debe ser actualizado para cumplir con los estándares de sintaxis PHP. |
-| 5072 | Posible infracción de diseño de Magento 2. Se ha detectado una construcción típica de Magento 1.x | Actualice la construcción a las normas Magento 2. |
+| 5072 | Posible infracción de diseño de Magento 2. Se ha detectado una construcción típica de Magento 1.x | Actualice la construcción a los estándares de Magento 2. |
 | 5076 | No se puede usar en el espacio de nombres porque está reservado desde PHP 7 | Reemplace la palabra reservada en el espacio de nombres por una palabra clave no reservada. |
 | 5077 | No se puede usar como nombre de clase porque está reservado desde PHP 7 | Reemplace el nombre de clase reservado por un nombre no reservado. |
 

@@ -4,13 +4,27 @@ description: Aplique el parche ACSD-66212 para corregir el problema de Adobe Com
 feature: Data Import/Export, Customers
 role: Admin, Developer
 exl-id: ae41f341-6ca3-405e-877a-35bdc3bc5623
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 601e4abe-d9bf-58de-a779-32ed6794dcbe
+    internal-label: Data Import/Export
+  - id: 22bad240-8308-569b-a9d5-578f1ff890ca
+    internal-label: Customers
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '315'
 ht-degree: 0%
-
 ---
-
 # ACSD-66212: la importación del archivo CSV del cliente dos veces provocaba errores en el segundo intento y en los posteriores
 
 El parche ACSD-66212 corrige el problema en el que la importación de un archivo CSV de cliente dos veces provocaba errores en el segundo intento y en los posteriores. Esta revisión está disponible cuando está instalado [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.66. El ID del parche es ACSD-66212. Este problema está programado para solucionarse en Adobe Commerce 2.4.9.

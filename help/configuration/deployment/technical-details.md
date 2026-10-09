@@ -2,13 +2,22 @@
 title: Detalles técnicos
 description: Obtenga información sobre los detalles técnicos de la implementación de la canalización, los tipos de configuraciones y los flujos de trabajo recomendados.
 exl-id: a396d241-f895-4414-92af-3abf3511e62a
-source-git-commit: d20f9d38a06fcd0eed872fe6f7ef1f3ee015a00f
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '1269'
+source-wordcount: '1282'
 ht-degree: 0%
-
 ---
-
 # Detalles técnicos
 
 En este tema se tratan los detalles de implementación técnica de la canalización en Commerce 2.2 y versiones posteriores. Las mejoras se pueden dividir en las siguientes áreas:
@@ -69,16 +78,16 @@ El administrador muestra el siguiente comportamiento mientras está en modo de p
 - No puede habilitar ni deshabilitar los tipos de caché en el Administrador
 - La configuración de desarrollador no está disponible (**Tiendas** > Configuración > **Configuración** > Avanzada > **Desarrollador**), e incluye:
 
-   - Minimizar CSS, JavaScript y HTML
-   - Combinar CSS y JavaScript
-   - Compilación LESS del lado del servidor o del lado del cliente
-   - Traducciones en línea
-   - Como se mencionó anteriormente, cualquier configuración en `config.php` o `env.php` está bloqueada y no se puede editar en el Administrador.
-   - Puede cambiar la configuración regional del administrador solo a los idiomas utilizados por las temáticas implementadas
+  - Minimizar CSS, JavaScript y HTML
+  - Combinar CSS y JavaScript
+  - Compilación LESS del lado del servidor o del lado del cliente
+  - Traducciones en línea
+  - Como se mencionó anteriormente, cualquier configuración en `config.php` o `env.php` está bloqueada y no se puede editar en el Administrador.
+  - Puede cambiar la configuración regional del administrador solo a los idiomas utilizados por las temáticas implementadas
 
-     La siguiente figura muestra un ejemplo de la lista **Configuración de cuenta** > **Configuración regional de la interfaz** en el Administrador que muestra solo dos configuraciones regionales implementadas:
+    La siguiente figura muestra un ejemplo de la lista **Configuración de cuenta** > **Configuración regional de la interfaz** en el Administrador que muestra solo dos configuraciones regionales implementadas:
 
-     ![Solo puede cambiar la configuración regional del administrador a configuraciones regionales implementadas](../../assets/configuration/split-deploy-admin-locale.png)
+    ![Solo puede cambiar la configuración regional del administrador a configuraciones regionales implementadas](../../assets/configuration/split-deploy-admin-locale.png)
 
 - No puede cambiar las configuraciones de configuración regional de ningún ámbito mediante el Administrador.
 

@@ -5,13 +5,28 @@ feature: Admin Workspace, System
 role: Admin
 exl-id: 8f39afea-551a-4306-994a-cb8ce5bd5b4a
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 8d0b446f-5b16-5a10-b272-01143504a11c
+    internal-label: System
+  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
+subfeature_v2:
+  - id: bb2df8be-afdd-4818-b6b5-95ca1dd3bc3a
+    internal-label: Admin workspace
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '359'
 ht-degree: 0%
-
 ---
-
 # ACSD-51630: Numerosos mensajes del sistema ralentizan la descarga de las páginas de administración
 
 El parche ACSD-51630 corrige el problema de rendimiento en el que una gran cantidad de mensajes del sistema ralentiza la descarga de las páginas de administración. Esta revisión está disponible cuando está instalado [!DNL Quality Patches Tool (QPT)] 1.1.34. El ID del parche es ACSD-51630. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.7.

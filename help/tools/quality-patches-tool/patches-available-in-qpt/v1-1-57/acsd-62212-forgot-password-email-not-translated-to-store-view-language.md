@@ -5,13 +5,28 @@ feature: GraphQL
 role: Admin, Developer
 exl-id: 29e6f2fa-574f-4ab1-82f5-88e1eb1de83e
 type: Troubleshooting
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: c32adafa-ed01-4b31-997e-2413013911b0
+    internal-label: Integrations
+subfeature_v2:
+  - id: e396cff5-f586-484c-89f0-7f1da3308f92
+    internal-label: GraphQL
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '418'
 ht-degree: 0%
-
 ---
-
 # ACSD-62212: *[!UICONTROL Forgot Password]* correo electrónico no traducido al idioma de vista de tienda
 
 El parche ACSD-62212 corrige el problema en el que el contenido del correo electrónico *[!UICONTROL Forgot Password]* no se traduce al idioma de vista de la tienda. Esta revisión está disponible cuando está instalado [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=es) 1.1.57. El ID del parche es ACSD-62212. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.8.

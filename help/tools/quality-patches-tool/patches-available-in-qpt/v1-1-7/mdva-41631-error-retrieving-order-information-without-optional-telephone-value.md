@@ -1,17 +1,27 @@
 ---
 title: 'MDVA-41631: Error al recuperar la información del pedido sin el valor "phone" opcional'
-description: El parche MDVA-41631 corrige el problema en el que los usuarios obtienen un error al recuperar la información del pedido sin el valor "phone" opcional a través de  [!DNL GraphQL]. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.7. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.4.
+description: La revisión MDVA-41631 corrige el problema en el cual los usuarios obtienen un error al recuperar la información del pedido sin el valor "phone" opcional a través de [!DNL GraphQL]. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.7. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.4.
 feature: Orders
 role: Admin
 exl-id: e56cea59-ffc1-4520-85ca-136cda613884
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 4820f335-ec9f-5611-8fe3-f5b7e3e56967
+    internal-label: Orders
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '447'
 ht-degree: 0%
-
 ---
-
 # MDVA-41631: Error al recuperar la información del pedido sin el valor &quot;phone&quot; opcional
 
 La revisión MDVA-41631 corrige el problema en el cual los usuarios obtienen un error al recuperar la información del pedido sin el valor &quot;phone&quot; opcional a través de [!DNL GraphQL]. Esta revisión está disponible cuando está instalado [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.7. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.4.

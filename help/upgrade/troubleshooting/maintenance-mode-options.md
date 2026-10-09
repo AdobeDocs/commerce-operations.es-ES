@@ -2,13 +2,22 @@
 title: Opciones de modo de mantenimiento para la actualización
 description: Cree una página de modo de mantenimiento personalizada que sus clientes vean en su tienda de Adobe Commerce mientras ejecuta una actualización.
 exl-id: 77e6d82d-5cc6-4d14-8b5c-1d2108f27b29
-source-git-commit: 48624d70761117ed0b9f8a7be913fce0572577b6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '379'
 ht-degree: 0%
-
 ---
-
 # Opciones de modo de mantenimiento para la actualización
 
 En este tema se explica cómo crear una página de mantenimiento personalizada para mostrarla a los usuarios mientras se actualiza la aplicación de Magento. Crear una página personalizada es opcional, pero se recomienda porque el sitio es accesible durante parte de la actualización.

@@ -5,13 +5,23 @@ feature: Configuration
 role: Admin
 exl-id: 6724b7ed-31d4-4dbc-9b80-6799fb3b8f3c
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '468'
 ht-degree: 0%
-
 ---
-
 # MDVA-41215: Los usuarios reciben un error 500 después de configurar la cookie &quot;mage-messages&quot;
 
 El parche de MDVA-41215 soluciona el problema en el que los usuarios reciben un error 500 después de configurar la cookie &quot;mage-messages&quot; si ya existe, pero no hay mensajes nuevos. Este parche está disponible cuando está instalada la [Herramienta de parches de calidad (QPT)](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.8. El ID del parche es MDVA-41215. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.4.

@@ -16,7 +16,9 @@ role_v2:
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
-source-git-commit: ec5bfb45c2c170168c0e30a8c2197ba3ab58ccfe
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '33143'
 ht-degree: 0%
@@ -1107,7 +1109,7 @@ ht-degree: 0%
 * **MDVA-44887** (*para Adobe Commerce y Magento Open Source >=2.4.4 &lt;2.4.5*) - Corrige el error *Sintaxis no detectada: Error inesperado de token &#39;const&#39;* en el Panel de administración.
 * **MDVA-43718** (*para Adobe Commerce y Magento Open Source >=2.3.0 &lt;2.4.5*) - Correcciones *El consumidor no tiene autorización para acceder a %recursos.* error que aparece al acceder a un catálogo compartido desde una integración personalizada.
 * **MDVA-44660** (*para Adobe Commerce y Magento Open Source >=2.4.2-p1 &lt;2.4.5*) - Corrige el problema por el que el carácter de acento grave (\`) no se podía usar para el nombre y los apellidos de un cliente.
-* **MDVA-40896** (*para Adobe Commerce y Magento Open Source >=2.4.3 &lt;2.4.4*) - Corrige el error *Error: TypeError: el argumento 3 pasó a Magento* error en la API de productos asíncronos en bloque.
+* **MDVA-40896** (*para Adobe Commerce y Magento Open Source >=2.4.3 &lt;2.4.4*) - Corrige el *error: TypeError: el argumento 3 pasó a Magento* error en la API asíncrona de productos.
 * **MDVA-38559** (*para Adobe Commerce y Magento Open Source >=2.4.0 &lt;2.4.3*) - Corrige el error */V1/customers/search API* para clientes con más de una suscripción.
 * **MDVA-44533** (*para Adobe Commerce y Magento Open Source >=2.3.1 &lt;2.4.4*): corrige el problema en el que el descuento se aplica incorrectamente a un producto secundario del paquete.
 * Revisiones actualizadas: MDVA-41061, MDVA-42269.

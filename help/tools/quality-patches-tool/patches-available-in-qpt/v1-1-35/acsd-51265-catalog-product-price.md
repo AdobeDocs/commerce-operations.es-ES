@@ -5,13 +5,28 @@ feature: Products, Price Indexer
 role: Admin
 exl-id: 1a173ca7-f99e-42d8-87d7-81a6b33f2d4d
 type: Troubleshooting
-source-git-commit: 14c28ca8eec3348b2289b0fce2f30b563c7debe0
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 4067ab89-2e97-5de1-8d98-de8318461a8d
+    internal-label: Products
+  - id: 125c1f49-aefd-5f34-a252-288937f95f6b
+    internal-label: Marketing Tools
+subfeature_v2:
+  - id: b0d35b91-b9b0-5983-b37c-f35bd2650b53
+    internal-label: Price Indexer
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '360'
 ht-degree: 0%
-
 ---
-
 # ACSD-51265: optimizar la reindexación para productos agrupados
 
 El parche ACSD-51265 corrige el problema en el que el rendimiento de reindexación de `catalog_product_price` es bajo cuando hay demasiados productos agrupados en el sistema. Esta revisión está disponible cuando está instalado [!DNL Quality Patches Tool (QPT)] 1.1.35. El ID del parche es ACSD-51265. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.7.

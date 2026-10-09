@@ -1,17 +1,32 @@
 ---
-title: 'ACSD-63244: resuelva los problemas de JavaScript del panel de administración, incluidos  [!DNL Google Maps] errores de procesamiento y consola'
-description: El parche ACSD-63244 corrige varios problemas de JavaScript en el panel de administración, incluidos problemas con  [!DNL Google Maps] procesamiento y errores recurrentes de TypeError this._each no es una función en la consola del explorador.
+title: 'ACSD-63244: resolver los problemas de JavaScript del panel de administración, incluidos los errores de procesamiento y consola de [!DNL Google Maps]'
+description: El parche ACSD-63244 corrige varios problemas de JavaScript en el panel de administración, incluidos problemas con el procesamiento de [!DNL Google Maps] y errores recurrentes de tipo no capturado this._each no es una función en la consola del explorador.
 feature: Admin Workspace
 role: Admin, Developer
 exl-id: 1985c845-219e-4af4-8f70-62dd57722494
 type: Troubleshooting
-source-git-commit: 4266dbeca837bc62e5a76b2ef22b065a3452e088
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
+subfeature_v2:
+  - id: bb2df8be-afdd-4818-b6b5-95ca1dd3bc3a
+    internal-label: Admin workspace
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
-source-wordcount: '339'
+source-wordcount: '341'
 ht-degree: 0%
-
 ---
-
 # ACSD-63244: resolver los problemas de JavaScript del panel de administración, incluidos los errores de procesamiento y consola de [!DNL Google Maps]
 
 La revisión ACSD-63244 corrige varios problemas de JavaScript en el panel de administración, incluidos problemas con el procesamiento de [!DNL Google Maps] y errores recurrentes de `Uncaught TypeError: this._each is not a function` en la consola del explorador. Este parche está disponible con [[!DNL Quality Patches Tool (QPT)]](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) 1.1.56. El ID del parche es ACSD-63244. Tenga en cuenta que el problema estaba programado para solucionarse en Adobe Commerce 2.4.8.

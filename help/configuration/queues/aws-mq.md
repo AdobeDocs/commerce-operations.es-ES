@@ -2,13 +2,22 @@
 title: Configuración de la cola de mensajes de Amazon
 description: Aprenda a configurar colas de mensajes de Adobe Commerce para Amazon MQ en env.php, incluidos los requisitos SSL y TLS para conexiones AMQP listas para la nube.
 exl-id: 463e513f-e8d4-4450-845e-312cbf00d843
-source-git-commit: 41b8d77793f1c24f08ff7e6a2d35826a62477534
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
 workflow-type: tm+mt
 source-wordcount: '357'
 ht-degree: 0%
-
 ---
-
 # Configuración de la cola de mensajes de Amazon
 
 A partir de Commerce 2.4.3, la cola de mensajes de Amazon (MQ) está disponible como un reemplazo listo para la nube para instancias de cola de mensajes locales.
