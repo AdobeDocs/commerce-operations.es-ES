@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-43091: No se puede solicitar el producto empaquetado al administrador'
-description: El parche MDVA-43091 resuelve el problema en el que los usuarios no pueden solicitar el producto empaquetado al administrador de Commerce. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.10. El ID del parche es MDVA-43091. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.4.
+description: El parche MDVA-43091 resuelve el problema en el que los usuarios no pueden solicitar el producto empaquetado al administrador de Commerce. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.10. El ID del parche es MDVA-43091. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.4.
 feature: Admin Workspace, Orders, Products
 role: Admin
 exl-id: d2812f97-107c-4db9-93cc-7004344fcc95
@@ -74,7 +74,7 @@ El usuario administrador recibe el siguiente error: *No se puede usar la cantida
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
 * Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](/help/tools/quality-patches-tool/usage.md) en la guía [!DNL Quality Patches Tool].
-* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) en la guía Commerce en la infraestructura de la nube.
+* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) en la guía Commerce en la infraestructura de la nube.
 
 ## Lectura relacionada
 

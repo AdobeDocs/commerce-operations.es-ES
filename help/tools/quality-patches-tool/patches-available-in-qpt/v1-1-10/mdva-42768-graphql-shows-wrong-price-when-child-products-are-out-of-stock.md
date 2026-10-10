@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-42768: GraphQL muestra un precio incorrecto cuando los productos secundarios están agotados'
-description: El parche MDVA-42768 soluciona el problema de que GraphQL muestra el precio incorrecto cuando los productos secundarios de un producto configurable no están disponibles. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.10. El ID del parche es MDVA-42768. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.5.
+description: El parche MDVA-42768 soluciona el problema de que GraphQL muestra el precio incorrecto cuando los productos secundarios de un producto configurable no están disponibles. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.10. El ID del parche es MDVA-42768. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.5.
 feature: GraphQL, Orders, Products
 role: Admin
 exl-id: 9f6ab418-2267-4548-952a-17dc8295f632
@@ -127,4 +127,4 @@ Para obtener más información sobre la herramienta Parches de calidad, consulte
 * [Lanzamiento de la herramienta Parches de calidad: una nueva herramienta para autodistribuir parches de calidad](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) en la base de conocimiento de asistencia.
 * [Compruebe si el parche está disponible para su problema de Adobe Commerce mediante la herramienta Parches de calidad](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) en la guía [!DNL Quality Patches Tool].
 
-Para obtener información sobre otros parches disponibles en QPT, consulte [[!DNL Quality Patches Tool]: Buscar parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) en la guía [!DNL Quality Patches Tool].
+Para obtener información sobre otros parches disponibles en QPT, consulte [[!DNL Quality Patches Tool]: Buscar parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es) en la guía [!DNL Quality Patches Tool].

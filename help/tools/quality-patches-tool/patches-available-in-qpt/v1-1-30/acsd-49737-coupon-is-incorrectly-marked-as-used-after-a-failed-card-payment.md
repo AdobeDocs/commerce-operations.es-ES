@@ -49,7 +49,7 @@ El cupón se marcó incorrectamente como *usado* después de un pago con tarjeta
 <u>Requisitos previos</u>:
 
 1. Configure el método **[!UICONTROL Braintree sandbox payment]**.
-1. Asegúrese de que el consumidor [*sales.rule.update.coupon.usage*](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/message-queues/consumers.html) esté configurado y en ejecución.
+1. Asegúrese de que el consumidor [*sales.rule.update.coupon.usage*](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/message-queues/consumers.html?lang=es) esté configurado y en ejecución.
 
 <u>Pasos a seguir</u>:
 
