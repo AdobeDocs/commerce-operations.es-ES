@@ -1,7 +1,7 @@
 ---
-source-git-commit: 206f502c41b53c822cca42957d7705184f18c0ab
+source-git-commit: d3d2fcd6dd6023ced00872b04bbf6b624deca3be
 workflow-type: tm+mt
-source-wordcount: '1282'
+source-wordcount: '1132'
 ht-degree: 1%
 ---
 # Novedades de la plantilla
@@ -9,6 +9,80 @@ ht-degree: 1%
 ## Novedades
 
 Esta página contiene los cambios realizados en los últimos 60 días. Excluimos todas las actualizaciones menores, como la edición de copias, de esta lista.
+
+### 9 de octubre de 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descripción</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Se ha agregado una descripción detallada de la corrección de QPT 1.1.83 para <a href="https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5101">ACP2E-5101: La instalación de Adobe Commerce B2B falla cuando los indexadores utilizan Actualización por programación</a>.</p>
+</td>
+      <td>
+        Tema nuevo, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/aae0dcd4753bf36df994a76e1311057fce65e32a">comprometer</a></td>
+    </tr>
+    <tr>
+      <td><p>Se agregó una descripción detallada de la corrección de QPT 1.1.83 para <a href="https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5223">ACP2E-5223: El índice de Permisos de catálogo incluye los sitios web excluidos de los grupos de clientes</a>.</p>
+</td>
+      <td>
+        Tema nuevo, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/4a441aea67627b23c7f6a79c20317404283243f7">comprometer</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 8 de octubre de 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descripción</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Se ha agregado una descripción detallada de la corrección de QPT 1.1.83 para <a href="https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-12854">AC-12854: El reordenamiento del administrador usa el número de orden original con un sufijo -1</a>.</p>
+</td>
+      <td>
+        Tema nuevo, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/087b7f48c2864837d394c6a9a72f9b30d6db3d90">comprometer</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 5 de octubre de 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descripción</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Se agregó <a href="https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/overview">Información general: Herramienta de parches de calidad (QPT) v1.1.84</a>.</p>
+</td>
+      <td>
+        Tema nuevo, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/7550eaff7dfabecaf2d5ace52e4f28d8da9ff45a">comprometer</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2 de octubre de 2026
 
@@ -266,104 +340,6 @@ Esta página contiene los cambios realizados en los últimos 60 días. Excluimos
         Técnico
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/046d641dc45b269c6495bef0c06c53bdc500227b">comprometer</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 10 de agosto de 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descripción</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Se agregó una descripción detallada de la corrección de QPT 1.1.82 para <a href="https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4797">ACP2E-4797: Editor de WYSIWYG de administración y Page Builder bloquean caracteres Unicode de 4 bytes cuando se admite utf8mb4</a>.</p>
-</td>
-      <td>
-        Tema nuevo, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/c97bb9c77eb0ec4bbc92d042cfa9fd440e970ca7">comprometer</a></td>
-    </tr>
-    <tr>
-      <td><p>Se ha agregado una descripción detallada de la corrección de QPT 1.1.82 para <a href="https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4682">ACP2E-4682: Las páginas de tienda que comprueban la cotización están activas y crean registros de cotización vacíos</a>.</p>
-</td>
-      <td>
-        Tema nuevo, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/ceac870e3ccb9eeee64e3b574aaccd33c6ab69d0">comprometer</a></td>
-    </tr>
-    <tr>
-      <td><p>Se agregó una descripción detallada de la corrección de QPT 1.1.82 para <a href="https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4799">ACP2E-4799: GraphQL query request_lists devuelve total_count incorrecto con la paginación</a>.</p>
-</td>
-      <td>
-        Tema nuevo, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/19f854db1a0ff78d0a6dca070b4b6db09d3de83e">comprometer</a></td>
-    </tr>
-    <tr>
-      <td><p>Se agregó una descripción detallada de la corrección de QPT 1.1.82 para <a href="https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4870">ACP2E-4870: los correos electrónicos de alertas de productos ignoran la configuración del correo electrónico de vista de tienda</a>.</p>
-</td>
-      <td>
-        Tema nuevo, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/907df07e641ab7124353f89ca799f92d097aa54f">comprometer</a></td>
-    </tr>
-    <tr>
-      <td><p>Se ha actualizado la tabla <a href="https://experienceleague.adobe.com/es/docs/commerce-operations/release/product-availability">Disponibilidad de productos</a> con compatibilidad con Adobe Commerce 2.4.9 y se ha eliminado la entrada Page Builder, que forma parte del producto principal desde la versión 2.4.3.</p>
-</td>
-      <td>
-        Actualización importante
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/a5120adab9f624677447889722359951e775c3f3">comprometer</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 9 de agosto de 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descripción</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Se agregó una descripción detallada de la corrección de QPT 1.1.82 para <a href="https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4593">ACP2E-4593: página de CMS de restricción de sitio web incorrecta servida en el sitio web secundario en tiendas de varios sitios web</a>.</p>
-</td>
-      <td>
-        Tema nuevo, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/86c85db0098192092241b680d38b882f1a52b578">comprometer</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 6 de agosto de 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descripción</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Se ha corregido la matriz de compatibilidad de versiones de extensión B2B en <a href="https://experienceleague.adobe.com/es/docs/commerce-operations/release/product-availability">Disponibilidad del producto</a> para Adobe Commerce 2.4.6, 2.4.7 y 2.4.8.</p>
-</td>
-      <td>
-        Técnico
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/50fb71aa968abf1302e86ffeb3d3b3a66b3c33d5">comprometer</a></td>
     </tr>
   </tbody>
 </table>
