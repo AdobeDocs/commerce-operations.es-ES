@@ -1,6 +1,6 @@
 ---
 title: 'MDVA-34948: Ralentización del sitio web'
-description: El parche de MDVA-34948 Adobe Commerce soluciona el problema de la ralentización del sitio web. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.1. El ID del parche es MDVA-34948. Tenga en cuenta que el problema se corrigió en la versión 2.4.1 de Adobe Commerce.
+description: El parche de MDVA-34948 Adobe Commerce soluciona el problema de la ralentización del sitio web. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) 1.1.1. El ID del parche es MDVA-34948. Tenga en cuenta que el problema se corrigió en la versión 2.4.1 de Adobe Commerce.
 feature: Observability, Configuration
 role: Admin
 exl-id: 3c2a2d44-7d60-42da-a0a3-785fb61d571e
@@ -76,4 +76,4 @@ Para obtener más información sobre la herramienta Parches de calidad, consulte
 * [Lanzamiento de la herramienta Parches de calidad: una nueva herramienta para autodistribuir parches de calidad](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md) en la base de conocimiento de asistencia.
 * [Compruebe si el parche está disponible para su problema de Adobe Commerce mediante la herramienta Parches de calidad](/help/tools/quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md) en la guía [!DNL Quality Patches Tool].
 
-Para obtener información sobre otros parches disponibles en QPT, consulte la sección [Parches disponibles en QPT](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html).
+Para obtener información sobre otros parches disponibles en QPT, consulte la sección [Parches disponibles en QPT](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es).

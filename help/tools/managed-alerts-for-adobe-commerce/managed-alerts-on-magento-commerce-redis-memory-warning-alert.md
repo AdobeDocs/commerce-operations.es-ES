@@ -76,7 +76,7 @@ Siga estos pasos para identificar y solucionar los problemas de la causa.
    * Revise las extensiones que podrían afectar a la caché de Adobe Commerce y hacer que esta crezca rápidamente. Por ejemplo, los bloques de diseño personalizados, la anulación de la funcionalidad de la caché y el almacenamiento de grandes cantidades de datos en la caché.
 1. Si los pasos anteriores no le ayudan a identificar o solucionar el origen del problema, considere habilitar la caché L2 para reducir el tráfico de red entre la aplicación y [!DNL Redis]. Para obtener información general sobre qué es la caché L2, consulte [Almacenamiento en caché L2 en la aplicación Adobe Commerce](/help/configuration/cache/level-two-cache.md) en la Guía de configuración de Commerce. Para habilitar la caché L2 para la infraestructura en la nube, intente lo siguiente:
    * Actualice las herramientas de ECE si es inferior a la versión 2002.1.2.
-   * Configurar la caché L2 mediante [Usar la variable REDIS\_BACKEND](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#redis_backend) y actualizar el archivo `.magento.env.yaml`:
+   * Configurar la caché L2 mediante [Usar la variable REDIS\_BACKEND](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/configure/env/stage/variables-deploy#redis_backend) y actualizar el archivo `.magento.env.yaml`:
 
    ```yaml
    stage:

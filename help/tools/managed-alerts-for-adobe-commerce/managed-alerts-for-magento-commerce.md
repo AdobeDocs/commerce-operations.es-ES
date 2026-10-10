@@ -71,4 +71,4 @@ Consulte a continuación en la tabla los vínculos a los artículos de la BC que
 
 ## Revisar los umbrales de alerta establecidos para las alertas administradas
 
-Puede revisar los umbrales de alerta configurados para las alertas administradas desde su cuenta de New Relic. Para obtener instrucciones, vea [Supervisar el rendimiento con alertas administradas](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/monitor/new-relic/investigate/investigate-performance#monitor-performance-with-managed-alerts).
+Puede revisar los umbrales de alerta configurados para las alertas administradas desde su cuenta de New Relic. Para obtener instrucciones, vea [Supervisar el rendimiento con alertas administradas](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/monitor/new-relic/investigate/investigate-performance#monitor-performance-with-managed-alerts).
