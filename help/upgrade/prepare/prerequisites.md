@@ -2,14 +2,23 @@
 title: Completar requisitos previos
 description: Prepare su proyecto de Adobe Commerce para una actualización completando estos pasos previos.
 exl-id: f7775900-1d10-4547-8af0-3d1283d9b89e
-last-update: 2026-04-28T00:00:00Z
-source-git-commit: 1166b8fbfeef21a51ad6e4e695aed2b25006230e
+last-update: 2026-04-28
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
+source-git-commit: a3c0eba7bdcd8017e88bdb4df1f45d77fe4bb351
 workflow-type: tm+mt
-source-wordcount: '1971'
+source-wordcount: '1991'
 ht-degree: 0%
-
 ---
-
 # Completar requisitos previos de actualización
 
 Es importante comprender lo necesario para ejecutar Adobe Commerce. Primero debe revisar los [requisitos del sistema](../../installation/system-requirements.md) para la versión a la que planea actualizar.
@@ -34,7 +43,7 @@ Asegúrese de haber actualizado todos los requisitos y dependencias del sistema 
 
 >[!NOTE]
 >
->Para los proyectos Pro de Adobe Commerce en la nube, debe crear un ticket de [Soporte](https://experienceleague.adobe.com/es/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) para instalar o actualizar servicios en entornos de Ensayo y Producción. Indique los cambios de servicio necesarios e incluya los `.magento.app.yaml` y `services.yaml` archivos actualizados y la versión de PHP en el ticket. El equipo de infraestructura en la nube puede tardar hasta 48 horas en actualizar el proyecto. Consulte [Software y servicios compatibles](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/architecture/cloud-architecture#supported-software-and-services).
+>Para los proyectos Pro de Adobe Commerce en la nube, debe crear un ticket de [Soporte](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) para instalar o actualizar servicios en entornos de Ensayo y Producción. Indique los cambios de servicio necesarios e incluya los `.magento.app.yaml` y `services.yaml` archivos actualizados y la versión de PHP en el ticket. El equipo de infraestructura en la nube puede tardar hasta 48 horas en actualizar el proyecto. Consulte [Software y servicios compatibles](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/cloud-architecture#supported-software-and-services).
 
 ## Compruebe que haya instalado un motor de búsqueda compatible
 
