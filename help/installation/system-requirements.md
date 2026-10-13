@@ -14,16 +14,16 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: a3c0eba7bdcd8017e88bdb4df1f45d77fe4bb351
+source-git-commit: 78a34dc069a30b72a1e0baff36085a2458a05983
 workflow-type: tm+mt
-source-wordcount: '1651'
+source-wordcount: '1614'
 ht-degree: 0%
 ---
 # Requisitos del sistema
 
 La siguiente información resume las dependencias y servicios de software probados para Adobe Commerce.
 
-Existen algunas diferencias en las dependencias para Commerce en la nube. La compatibilidad y la versión de los servicios para Adobe Commerce en la nube están determinadas por los servicios probados e implementados en los entornos de nube alojados y, a veces, difieren de las versiones admitidas por las implementaciones locales de Adobe Commerce.
+Las dependencias de software para Adobe Commerce en la infraestructura de la nube difieren de las de las implementaciones locales. Adobe determina las versiones de servicio compatibles y la compatibilidad en función de los servicios probados e implementados en entornos de nube alojados. Estas versiones a veces difieren de las admitidas para implementaciones locales.
 
 >[!IMPORTANT]
 >
@@ -48,36 +48,44 @@ La [plantilla de Commerce en la nube](https://github.com/magento/magento-cloud) 
 
 {{$include /help/_includes/templated/cloud-requirements-table.md}}
 
-Para la configuración predeterminada, los servicios y las versiones se definen en [el archivo `services.yaml`](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml).
-Para obtener más información, consulte [Configuración de servicios](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/configure/service/services-yaml) en la guía de *Commerce en infraestructura en la nube*.
+El archivo [`services.yaml`](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml) define los servicios y las versiones predeterminados.
+Consulte [Configurar servicios](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/services-yaml) en la guía de *Commerce en infraestructura en la nube*.
 
 >[!TAB Commerce local]
 
 {{$include /help/_includes/templated/system-requirements-table.md}}
 
 **MySQL 8.0 llegó al fin del soporte técnico (EOS) el 30 de abril de 2026.**
-Después de esta fecha, Adobe Commerce 2.4.7, 2.4.6, 2.4.5 y 2.4.4 no proporcionará compatibilidad ni
-compatibilidad con cualquier versión de MySQL lanzada después de MySQL 8.0. Adobe no
-validar o proporcionar compatibilidad con las versiones principales más recientes de MySQL en este Adobe
-Línea de versión de Commerce.
-Todos los clientes locales de Adobe Commerce que ejecutan las versiones 2.4.7, 2.4.6, 2.4.5 y 2.4.4 tienen una
-se aconseja migrar sus servidores de base de datos a una versión de MariaDB compatible.
+Después de esta fecha, Adobe Commerce 2.4.7, 2.4.6, 2.4.5 y 2.4.4 no proporcionan compatibilidad ni soporte para las versiones de MySQL publicadas después de MySQL 8.0.
+Adobe no valida ni admite las versiones principales más recientes de MySQL para estas versiones de Commerce.
+Si ejecuta las versiones locales de Adobe Commerce 2.4.7, 2.4.6, 2.4.5 o 2.4.4, Adobe recomienda migrar los servidores de bases de datos a una versión MariaDB compatible.
 
 Los clientes de Adobe Commerce en la nube deben mantener las dependencias de plataforma de las versiones compatibles. Ver [dependencias de plataforma](../release/lifecycle-policy.md#platform-dependencies) en la directiva de ciclo vital.
 
 **Elasticsearch 7.17 llegó al fin de la compatibilidad (EOS) el 15 de enero de 2026.**
-Después de esta fecha, Adobe Commerce 2.4.6, 2.4.5 y 2.4.4 no proporcionará compatibilidad o
-compatibilidad con cualquier versión de Elasticsearch lanzada después de Elasticsearch 7. Adobe no
-validar o proporcionar compatibilidad con las versiones principales más recientes de Elasticsearch en este Adobe
-Línea de versión de Commerce.
-Todos los clientes locales de Adobe Commerce que ejecutan las versiones 2.4.6, 2.4.5 y 2.4.4 tienen una
-se aconseja migrar su infraestructura de búsqueda a una versión compatible de OpenSearch.
+Después de esta fecha, Adobe Commerce 2.4.6, 2.4.5 y 2.4.4 no proporcionan compatibilidad ni compatibilidad con las versiones de Elasticsearch publicadas después de Elasticsearch 7.
+Adobe no valida ni admite las versiones principales más recientes de Elasticsearch para estas versiones de Commerce.
+Si ejecuta las versiones locales de Adobe Commerce 2.4.6, 2.4.5 o 2.4.4, Adobe recomienda migrar su infraestructura de búsqueda a una versión de OpenSearch compatible.
+
+>[!ENDTABS]
+
+## Requisitos del sistema para la versión de Commerce 2.4.10-alpha
+
+>[!BEGINTABS]
+
+>[!TAB Commerce en la nube]
+
+{{$include /help/_includes/templated/cloud-requirements-table-alpha.md}}
+
+>[!TAB Commerce local]
+
+{{$include /help/_includes/templated/system-requirements-table-alpha.md}}
 
 >[!ENDTABS]
 
 ## Requisitos del sistema para versiones anteriores de Commerce
 
-En las tablas siguientes se enumeran los requisitos del sistema para las versiones de Adobe Commerce, incluidas las que son compatibles con versiones ampliadas. Estas tablas se proporcionan solo con fines de referencia. Adobe no recomienda el uso de versiones no admitidas de dependencias de software y la Asistencia técnica requiere que alinee su entorno con una configuración admitida para que podamos investigar, solucionar problemas o validar el comportamiento notificado.
+En las tablas siguientes se enumeran los requisitos del sistema para las versiones de Adobe Commerce, incluidas las de compatibilidad ampliada. Utilice estas tablas solo como referencia. Adobe no recomienda el uso de versiones no compatibles de dependencias de software. Antes de que el Soporte de Adobe investigue, solucione problemas o valide el comportamiento informado, debe alinear su entorno con una configuración admitida.
 
 >[!NOTE]
 >
@@ -97,30 +105,24 @@ La [plantilla de Commerce en la nube](https://github.com/magento/magento-cloud) 
 
 {{$include /help/_includes/templated/cloud-requirements-table-old-releases.md}}
 
-Para la configuración predeterminada, los servicios y las versiones se definen en [el archivo `services.yaml`](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml).
-Para obtener más información, consulte [Configuración de servicios](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/configure/service/services-yaml) en la guía de *Commerce en infraestructura en la nube*.
+El archivo [`services.yaml`](https://github.com/magento/magento-cloud/blob/master/.magento/services.yaml) define los servicios y las versiones predeterminados.
+Consulte [Configurar servicios](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/service/services-yaml) en la guía de *Commerce en infraestructura en la nube*.
 
 >[!TAB Commerce local]
 
 {{$include /help/_includes/templated/system-requirements-table-old-releases.md}}
 
 **MySQL 8.0 llegó al fin del soporte técnico (EOS) el 30 de abril de 2026.**
-Después de esta fecha, Adobe Commerce 2.4.7, 2.4.6, 2.4.5 y 2.4.4 no proporcionará compatibilidad ni
-compatibilidad con cualquier versión de MySQL lanzada después de MySQL 8.0. Adobe no
-validar o proporcionar compatibilidad con las versiones principales más recientes de MySQL en este Adobe
-Línea de versión de Commerce.
-Todos los clientes locales de Adobe Commerce que ejecutan las versiones 2.4.7, 2.4.6, 2.4.5 y 2.4.4 tienen una
-se aconseja migrar sus servidores de base de datos a una versión de MariaDB compatible.
+Después de esta fecha, Adobe Commerce 2.4.7, 2.4.6, 2.4.5 y 2.4.4 no proporcionan compatibilidad ni soporte para las versiones de MySQL publicadas después de MySQL 8.0.
+Adobe no valida ni admite las versiones principales más recientes de MySQL para estas versiones de Commerce.
+Si ejecuta las versiones locales de Adobe Commerce 2.4.7, 2.4.6, 2.4.5 o 2.4.4, Adobe recomienda migrar los servidores de bases de datos a una versión MariaDB compatible.
 
 Los clientes de Adobe Commerce en la nube deben mantener las dependencias de plataforma de las versiones compatibles. Ver [dependencias de plataforma](../release/lifecycle-policy.md#platform-dependencies) en la directiva de ciclo vital.
 
 **Elasticsearch 7.17 llegó al fin de la compatibilidad (EOS) el 15 de enero de 2026.**
-Después de esta fecha, Adobe Commerce 2.4.6, 2.4.5 y 2.4.4 no proporcionará compatibilidad o
-compatibilidad con cualquier versión de Elasticsearch lanzada después de Elasticsearch 7. Adobe no
-validar o proporcionar compatibilidad con las versiones principales más recientes de Elasticsearch en este Adobe
-Línea de versión de Commerce.
-Todos los clientes locales de Adobe Commerce que ejecutan las versiones 2.4.6, 2.4.5 y 2.4.4 tienen una
-se aconseja migrar su infraestructura de búsqueda a una versión compatible de OpenSearch.
+Después de esta fecha, Adobe Commerce 2.4.6, 2.4.5 y 2.4.4 no proporcionan compatibilidad ni compatibilidad con las versiones de Elasticsearch publicadas después de Elasticsearch 7.
+Adobe no valida ni admite las versiones principales más recientes de Elasticsearch para estas versiones de Commerce.
+Si ejecuta las versiones locales de Adobe Commerce 2.4.6, 2.4.5 o 2.4.4, Adobe recomienda migrar su infraestructura de búsqueda a una versión de OpenSearch compatible.
 
 >[!ENDTABS]
 
@@ -128,13 +130,13 @@ se aconseja migrar su infraestructura de búsqueda a una versión compatible de 
 
 ## Configuración de PHP
 
-Hay ciertas opciones de configuración de PHP, como la configuración de `memory_limit`, que pueden ayudarle a evitar problemas comunes al usar Adobe Commerce. Consulte [Configuración de PHP requerida](prerequisites/php-settings.md).
+Configure las opciones de PHP, como `memory_limit`, para evitar problemas comunes al usar Adobe Commerce. Consulte [Configuración de PHP requerida](prerequisites/php-settings.md).
 
-Para obtener instrucciones de configuración de Cloud, consulte [Configuración de PHP](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/configure/app/php-settings) en la guía de *Commerce en infraestructura en la nube*.
+Para obtener instrucciones de configuración de Cloud, consulte [Configuración de PHP](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/php-settings) en la guía de *Commerce en infraestructura en la nube*.
 
 ### OPcache de PHP
 
-Adobe recomienda comprobar que [PHP OPcache](https://www.php.net/manual/en/book.opcache.php) está habilitado por motivos de rendimiento. OPcache está habilitado en muchas distribuciones PHP.
+Adobe recomienda comprobar que [PHP OPcache](https://www.php.net/manual/en/book.opcache.php) está habilitado para mejorar el rendimiento. Muchas distribuciones PHP habilitan OPcache.
 
 - **Para implementaciones de infraestructura de Adobe Commerce en la nube**, la extensión `opcache` se instala de manera predeterminada.
 - **Para implementaciones locales de Adobe Commerce:**
@@ -158,7 +160,7 @@ Las [instrucciones de instalación de PHP](prerequisites/php-settings.md) incluy
 
 >[!TIP]
 >
->Para las extensiones PHP en la infraestructura en la nube, consulte [Habilitar extensiones PHP](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/configure/app/php-settings#enable-extensions) en la guía de _Commerce en la infraestructura en la nube_.
+>Para las extensiones PHP en la infraestructura en la nube, consulte [Habilitar extensiones PHP](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/php-settings#enable-extensions) en la guía de _Commerce en la infraestructura en la nube_.
 
 >[!BEGINTABS]
 
@@ -172,7 +174,7 @@ La siguiente tabla muestra las extensiones PHP compatibles al implementar Adobe 
 
 {{$include /help/_includes/templated/php-extensions.md}}
 
-Consulte [documentación oficial de PHP](https://www.php.net/manual/en/extensions.php) para obtener detalles de instalación.
+Consulte la [documentación oficial de PHP](https://www.php.net/manual/en/extensions.php) para obtener detalles sobre la instalación.
 
 >[!ENDTABS]
 
@@ -186,22 +188,22 @@ En esta sección se describe la compatibilidad con todos los demás tipos de sof
 
 ### Navegadores
 
-Tienda y administrador:
+Adobe Commerce es compatible con las versiones principales más recientes y anteriores de los siguientes exploradores para la tienda y el administrador, excepto cuando se indique lo siguiente:
 
-- Microsoft Edge (versión principal más reciente y anterior)
-- Firefox (última versión y anterior en cualquier sistema operativo)
-- Chrome (versión principal más reciente y anterior en cualquier sistema operativo)
-- Safari (versión principal más reciente y anterior solo en macOS)
-- Safari para iOS (versión principal más reciente y anterior de la tienda)
-- Chrome para Android (versión principal más reciente y anterior de la tienda)
+- Microsoft Edge
+- Firefox (cualquier sistema operativo)
+- Chrome (cualquier sistema operativo)
+- Safari (solo macOS)
+- Safari para iOS (solo tienda)
+- Chrome para Android (solo tienda)
 
 ### Servidor de correo
 
-Agente de transferencia de correo (MTA) o un servidor SMTP. La infraestructura de Commerce en la nube usa el [servicio de correo electrónico SendGrid](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/project/sendgrid).
+Agente de transferencia de correo (MTA) o un servidor SMTP. La infraestructura de Commerce en la nube usa el [servicio de correo electrónico SendGrid](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/sendgrid).
 
 ### Memoria
 
-La actualización de las aplicaciones y extensiones que obtiene de Commerce Marketplace y otras fuentes puede requerir hasta 2 GB de RAM. Si usa un sistema con menos de 2 GB de RAM, cree un [archivo de intercambio](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/troubleshooting/installation-and-upgrade/out-of-memory-error-during-install-or-upgrade). De lo contrario, es posible que la actualización falle.
+La actualización de aplicaciones y extensiones desde Commerce Marketplace y otras fuentes puede requerir hasta 2 GB de RAM. Si tu sistema tiene menos de 2 GB de RAM, crea un [archivo de intercambio](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/installation-and-upgrade/out-of-memory-error-during-install-or-upgrade). Sin un archivo de intercambio, es posible que la actualización falle.
 
 ### Sistemas operativos (Linux x86-64)
 
@@ -227,16 +229,16 @@ Adobe Commerce requiere las siguientes herramientas del sistema para algunas ope
 - No se admiten certificados SSL firmados automáticamente.
 - Requisito de seguridad de la capa de transporte (TLS): PayPal y `repo.magento.com` requieren TLS 1.2 o posterior.
 
-Para Commerce sobre la infraestructura en la nube, consulte [Configuración rápida](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/cdn/setup-fastly/fastly-configuration) en la guía de *Commerce sobre la infraestructura en la nube*.
+Para Commerce sobre la infraestructura en la nube, consulte [Configuración rápida](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/setup-fastly/fastly-configuration) en la guía de *Commerce sobre la infraestructura en la nube*.
 
 ### Xdebug
 
-Para Adobe Commerce, use [php_xdebug 2.5.x](https://xdebug.org/download) o posterior (solo para entornos de desarrollo; puede tener un efecto adverso en el rendimiento).
+Solo para entornos de desarrollo de Adobe Commerce, use [php_xdebug 2.5.x](https://xdebug.org/download) o posterior. Xdebug puede afectar negativamente al rendimiento.
 
-Para Adobe Commerce en la nube, consulte [Configuración de Xdebug](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/develop/test/debug) en la guía de *Commerce en infraestructura en la nube*.
+Para Adobe Commerce en la nube, consulte [Configuración de Xdebug](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/test/debug) en la guía de *Commerce en infraestructura en la nube*.
 
 >[!NOTE]
 >
->Hay un problema conocido con `xdebug` que puede afectar las instalaciones de Adobe Commerce o el acceso a la tienda o al administrador después de la instalación. Ver [Problema conocido que afecta a la instalación de `xdebug`](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/known-issues-that-affect-installation) en la _Base de conocimiento de soporte técnico de Commerce_.
+>Un problema conocido con Xdebug puede afectar a las instalaciones de Adobe Commerce o al acceso a la tienda o al administrador después de la instalación. Ver [Problema conocido que afecta a la instalación de `xdebug`](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/known-issues-that-affect-installation) en la _Base de conocimiento de soporte técnico de Commerce_.
 
-<!-- Last updated from includes: 2026-08-10 23:39:34 -->
+<!-- Last updated from includes: 2026-10-07 13:03:29 -->
