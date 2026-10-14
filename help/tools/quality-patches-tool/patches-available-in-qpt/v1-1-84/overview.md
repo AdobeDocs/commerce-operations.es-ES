@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 4fcf88b6e7e67204ac07a82d756c068ac715d120
+source-git-commit: b3e370d4d133d52fd97a4cd82ea9243cbd679c0e
 workflow-type: tm+mt
-source-wordcount: '553'
+source-wordcount: '555'
 ht-degree: 0%
 ---
 # Información general: [!DNL Quality Patches Tool] (QPT) v1.1.84
@@ -41,7 +41,7 @@ QPT v1.1.84 incluye los siguientes parches:
 1. **ACP2E-5041**: corrige el problema en el cual guardar un producto durante una actualización programada hace que la tienda muestre el precio normal en lugar de **[!UICONTROL Special Price]** después de que finalice la actualización.
 1. **ACP2E-5059**: corrige el problema en el cual los clientes reciben correos electrónicos de confirmación de pedidos duplicados para el mismo pedido.
 1. **ACP2E-5122**: corrige el problema en el que los errores administrados de las solicitudes de GraphQL para el carro de compras se registran incorrectamente en los registros de excepciones como errores de aplicación.
-1. **ACP2E-5143**: corrige el problema en el que la consulta de ruta de GraphQL procesa contenido completo de páginas de CMS cuando solo se solicitan metadatos de enrutamiento, lo que aumenta las consultas de base de datos para páginas de CMS que contienen widgets de Page Builder.
+1. **[ACP2E-5143](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5143.md)**: corrige el problema en el que la consulta de GraphQL `route` procesa contenido de página CMS completo cuando solo se solicitan metadatos de enrutamiento, lo que aumenta el número de consultas de base de datos para páginas de CMS que contienen widgets de Page Builder.
 1. **ACP2E-5183**: corrige el problema en el que la implementación de contenido estático falla en PHP 8.5 mientras compila un archivo `LESS` que usa la directiva `@magento_import`.
 1. **ACP2E-5242**: corrige el problema en el cual al comprobar la disponibilidad del producto mientras se agregan elementos al carro de compras se muestra un error que indica que no se puede encontrar el sitio web.
 1. **ACP2E-5263**: corrige el problema en el cual la exportación de productos a un archivo CSV puede detenerse antes de que se incluyan todos los productos, lo que da como resultado un archivo incompleto.
