@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 42ccea80dbbf503f58ba7d63d4731687b3c310a8
+source-git-commit: 0e4d8845da584cd8a58b49d1adf892df80155734
 workflow-type: tm+mt
-source-wordcount: '513'
+source-wordcount: '514'
 ht-degree: 0%
 ---
 # Información general: [!DNL Quality Patches Tool] (QPT) v1.1.83
@@ -33,8 +33,8 @@ Esta subsección proporciona una descripción detallada de los problemas corregi
 QPT v1.1.83 incluye los siguientes parches:
 
 1. **AC-17975**: corrige varios problemas de compatibilidad con PHP 8.5 que afectan los flujos de trabajo de administración, la autenticación de cierre de compra, el procesamiento CAPTCHA, la administración de categorías, las páginas de configuración y las operaciones de línea de comandos en ciertos entornos PHP.
-1. **AC-18128**: corrige el problema por el que las fechas de los pedidos y las marcas de tiempo de los comentarios de pedidos devueltas por GraphQL muestran fechas de calendario incorrectas en configuraciones regionales que no están en inglés.
-1. **AC-18096**: corrige el problema en el que los campos de fecha de Sales GraphQL devuelven fechas en un formato diferente al de versiones anteriores al revertir el formato de fecha de separado por barras (`/`) a separado por guiones (`-`).
+1. **[AC-18096](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-18096.md)**: corrige el problema en el que los campos de fecha de Sales GraphQL devuelven fechas en un formato diferente al de versiones anteriores al revertir el formato de fecha de separado por barras (/) a separado por guiones (-).
+1. **[AC-18128](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-18128.md)**: corrige el problema por el que las fechas de los pedidos y las marcas de tiempo de los comentarios de pedidos devueltas por GraphQL pueden mostrar fechas de calendario incorrectas en configuraciones regionales que no estén en inglés.
 1. **[ACP2E-4838](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4838.md)**: corrige el problema en el que un usuario administrador con permisos restringidos no puede eliminar clientes de la cuadrícula Clientes.
 1. **[ACP2E-4639](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4639.md)**: corrige el problema por el que el tipo de elementos de la lista de solicitudes está mal escrito en el esquema de GraphQL. El campo `items` más antiguo y el tipo `RequistionListItems` siguen disponibles, pero están en desuso.
 1. **ACP2E-4877**: corrige el problema por el que los pedidos realizados con **[!UICONTROL Payment on Account]** no se pudieron editar en el administrador mientras estaban en estado *Pendiente*.
