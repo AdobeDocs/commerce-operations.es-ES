@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 09eedab06d326baa0d4155274266dc3ef5356589
+source-git-commit: 6a3ffddee54d8f9f04e8f72a0d2708baa5c1f37a
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '513'
 ht-degree: 0%
 ---
 # Información general: [!DNL Quality Patches Tool] (QPT) v1.1.83
@@ -43,7 +43,7 @@ QPT v1.1.83 incluye los siguientes parches:
 1. **ACP2E-4977**: corrige el problema en el que los totales generales de facturas y notas de abono de los productos configurables no incluyen **[!UICONTROL Fixed Product Tax]** (FPT), lo que da como resultado totales inferiores al total del pedido.
 1. **AC-16530**: corrige un problema en el cual el carro de compras no reflejaba de manera consistente las actualizaciones programadas en las reglas de precios del catálogo.
 1. **AC-11389**: corrige el problema por el que los descuentos, impuestos y totales de pedidos se calculan incorrectamente en algunos casos de redondeo.
-1. **ACP2E-4998**: corrige el problema en el que la solicitud de API de REST `POST /V1/products/tier-prices` falló para toda la solicitud cuando no existía un SKU en la carga útil, lo que impedía que se actualizaran los SKU válidos.
+1. **[ACP2E-4998](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4998.md)**: corrige el problema en el que la solicitud de API de REST `POST /V1/products/tier-prices` fallaba por completo cuando no existía un SKU en la carga útil, lo que impedía que se actualizaran SKU válidas.
 1. **ACP2E-5015**: corrige el problema en el cual al guardar un catálogo compartido en el administrador se pueden eliminar involuntariamente los productos y precios asignados cuando los datos de catálogo requeridos no están disponibles.
 1. **AC-14940**: corrige el problema por el cual al hacer clic en **[!UICONTROL Reset Password]** para una cuenta de cliente en el administrador no se enviaba el correo electrónico de restablecimiento de contraseña en algunos casos relacionados con el almacén.
 1. **[ACP2E-5101](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5101.md)**: corrige el problema en el que se produjo un error al instalar el módulo B2B cuando los indizadores se establecieron en **[!UICONTROL Update by Schedule]**.
