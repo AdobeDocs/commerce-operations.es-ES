@@ -13,9 +13,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
+source-git-commit: 2afe4bc1ae92dcb0d682ee88ade79560bcb2c35f
 workflow-type: tm+mt
-source-wordcount: '492'
+source-wordcount: '496'
 ht-degree: 2%
 ---
 
@@ -48,7 +48,7 @@ La siguiente tabla proporciona notas de la versión e información importante pa
             <li><a href="security/overview.md">Parches de seguridad</a></li>
             <li><a href="../lifecycle-policy.md">Directiva de ciclo vital de software</a></li>
             <li><a href="../security-enforcement-policy.md">Aviso de seguridad y cumplimiento</a></li>
-            <li><a href="https://helpx.adobe.com/es/security/products/magento.html">Boletín de seguridad de Adobe</a></li>
+            <li><a href="https://www.adobe.com/trust/security/bulletins-and-advisories.html">Boletines y avisos de seguridad de Adobe</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/b2b/release-notes.html?lang=es">B2B para Adobe Commerce</a></li>
           </ul>
         </td>

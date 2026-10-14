@@ -14,9 +14,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: a3c0eba7bdcd8017e88bdb4df1f45d77fe4bb351
+source-git-commit: 2afe4bc1ae92dcb0d682ee88ade79560bcb2c35f
 workflow-type: tm+mt
-source-wordcount: '2365'
+source-wordcount: '2342'
 ht-degree: 0%
 ---
 
@@ -36,17 +36,17 @@ ht-degree: 0%
 >Todos los clientes locales de Adobe Commerce que ejecutan la versión 2.4.6 tienen una
 >se aconseja migrar sus servidores de base de datos a una versión de MariaDB compatible.
 >
->Los clientes de Adobe Commerce en la nube deben mantener las dependencias de plataforma de las versiones compatibles. Ver [dependencias de plataforma](../../lifecycle-policy.md#platform-dependencies) en la directiva de ciclo vital.
+>Los clientes de Adobe Commerce en la nube deben mantener las dependencias de plataforma de las versiones compatibles. Ver [dependencias de plataforma](/help/release/lifecycle-policy.md#platform-dependencies) en la directiva de ciclo vital.
 >
->Adobe Commerce 2.4.6 cuenta con [soporte extendido](../../lifecycle-policy.md#extended-support) hasta el **30 de agosto de 2027**, seguido de un [período de transición solo de seguridad](../../lifecycle-policy.md#security-only-transitional-period) hasta el **31 de mayo de 2028**. Estas provisiones solo están disponibles para los clientes de Adobe Commerce. No amplían la compatibilidad con dependencias de terceros como MySQL.
+>Adobe Commerce 2.4.6 cuenta con [soporte extendido](/help/release/lifecycle-policy.md#extended-support) hasta el **30 de agosto de 2027**, seguido de un [período de transición solo de seguridad](/help/release/lifecycle-policy.md#security-only-transitional-period) hasta el **31 de mayo de 2028**. Estas provisiones solo están disponibles para los clientes de Adobe Commerce. No amplían la compatibilidad con dependencias de terceros como MySQL.
 >
->Si ejecuta Adobe Commerce en la nube, debe actualizar a una versión compatible o migrar a [!DNL Adobe Commerce as a Cloud Service] antes del **1 de junio de 2028** [fecha de aplicación de la actualización de la versión](../../security-enforcement-policy.md). Consulte la tabla [fechas de fin de soporte](../../lifecycle-policy.md#end-of-support-dates) para ver las fechas completas del ciclo vital.
+>Si ejecuta Adobe Commerce en la nube, debe actualizar a una versión compatible o migrar a [!DNL Adobe Commerce as a Cloud Service] antes del **1 de junio de 2028** [fecha de aplicación de la actualización de la versión](../../security-enforcement-policy.md). Consulte la tabla [fechas de fin de soporte](/help/release/lifecycle-policy.md#end-of-support-dates) para ver las fechas completas del ciclo vital.
 
 ## 2,4,6-p15
 
 La versión de seguridad de Adobe Commerce 2.4.6-p15 proporciona correcciones de errores de seguridad para vulnerabilidades identificadas en versiones anteriores de 2.4.6.
 
-Para obtener la información más reciente sobre la corrección de errores de seguridad, consulte [Boletín de seguridad de Adobe APSB26-49](https://helpx.adobe.com/es/security/products/magento/apsb26-49.html).
+{{security-bulletin-apsb26-49}}
 
 {{b2b-patches}}
 
@@ -70,9 +70,9 @@ Adobe Commerce 2.4.6 ahora es compatible con RabbitMQ 4.2, que aborda la fecha d
 
 La integración de envío de USPS ahora es compatible con las API de USPS de RESTful modernizadas, además de las API de herramientas web heredadas. Los administradores pueden seleccionar qué API de integración de USPS utilizar en la configuración de administración. Esta actualización se prepara para la desaprobación de la API de herramientas web de USPS.
 
-#### Horquilla MVC Laminas de Magento
+#### Horquilla MVC Laminas propiedad de Magento
 
-Para resolver el problema de la jubilación de Laminas MVC, Adobe Commerce ahora usa una ramificación de `laminas-mvc` propiedad de Magento (publicada como `magento/magento-zf-mvc`). Esta ramificación garantiza la aplicación continua de parches y la seguridad a largo plazo de Adobe Commerce 2.4.6.
+Para resolver la retirada de Laminas MVC, Adobe Commerce ahora usa una ramificación de `laminas-mvc` propiedad de Magento (publicada como `magento/magento-zf-mvc`). Esta ramificación garantiza la aplicación continua de parches y la seguridad a largo plazo de Adobe Commerce 2.4.6.
 
 ## 2,4,6-p14
 
