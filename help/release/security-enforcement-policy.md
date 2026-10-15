@@ -35,9 +35,9 @@ level_v2:
     internal-label: Experienced
 badgePaas: 'label="Solo Adobe Commerce en la nube 2.4.4: 2.4.9" type="Informative" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a Adobe Commerce en la versión de nube 2.4.4 a 2.4.9"'
 nudge: true
-source-git-commit: 9021cff48fa6f0557da6ecd5077cffa5cb14e1e7
+source-git-commit: 5cfbac0f93bc8f82c1af04057c0d9ac3b1f3abb4
 workflow-type: tm+mt
-source-wordcount: '2149'
+source-wordcount: '2181'
 ht-degree: 0%
 ---
 
@@ -74,7 +74,7 @@ Para mantener el entorno de comercio electrónico seguro y mitigar los riesgos, 
 
 1. Una versión segura y compatible de Adobe Commerce en la nube. Las versiones totalmente compatibles incluyen 2.4.8, 2.4.9 o la última versión disponible. Consulte la documentación de [política de ciclo de vida](/help/release/lifecycle-policy.md).
 
-Siga las directrices que se indican a continuación para comprobar si debe realizar alguna acción para proteger su Adobe Commerce en el entorno de la nube. Los entornos que no cumplan los requisitos de seguridad según los plazos descritos en la tabla 1 a continuación suspenderán el tráfico entrante y desconectarán la tienda. Si tienes dudas sobre cumplir la fecha límite, ponte en contacto con el equipo de tu cuenta o con el [Soporte técnico de Adobe](https://experienceleague.adobe.com/es/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide?lang=en#submit-ticket) lo antes posible.
+Siga las directrices que se indican a continuación para comprobar si debe realizar alguna acción para proteger su Adobe Commerce en el entorno de la nube. Los entornos que no cumplan los requisitos de seguridad según los plazos descritos en la Tabla 1 a continuación pueden tener suspendido el acceso de administrador, mientras la tienda permanece en línea o tiene suspendido el tráfico entrante, dejando la tienda sin conexión. Si tienes dudas sobre cumplir la fecha límite, ponte en contacto con el equipo de tu cuenta o con el [Soporte técnico de Adobe](https://experienceleague.adobe.com/es/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide?lang=en#submit-ticket) lo antes posible.
 
 >[!NOTE]
 >
@@ -181,7 +181,7 @@ La siguiente tabla le ayuda a comparar sus opciones y determinar la mejor ruta p
 
 Adobe mantiene su compromiso de ayudarle a ejecutar los pasos que debe seguir para adoptar una versión compatible del software de terceros, actualizar a la última versión de Adobe Commerce en la nube o migrar a Adobe Commerce as a Cloud Service.  Si tienes dudas sobre cumplir la fecha límite y necesitas una breve extensión, ponte en contacto con el equipo de tu cuenta o con [Soporte técnico de Adobe](https://experienceleague.adobe.com/es/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide?lang=en#submit-ticket) lo antes posible.
 
-Si un entorno no ha cumplido los requisitos de seguridad en las fechas de aplicación compartidas anteriormente, Adobe se verá obligado a tomar las medidas adecuadas para mantener la seguridad de la plataforma de Adobe Commerce y de sus clientes. Esto incluye la suspensión del tráfico a la infraestructura afectada y, como resultado, la tienda de Commerce se desconectará.
+Si un entorno no ha cumplido los requisitos de seguridad en las fechas de aplicación compartidas anteriormente, Adobe se verá obligado a tomar las medidas adecuadas para mantener la seguridad de la plataforma de Adobe Commerce y de sus clientes. Esto puede incluir la suspensión del acceso al administrador de Adobe Commerce para todos los usuarios en el entorno afectado, mientras la tienda permanece en línea, y/o la suspensión del tráfico a la infraestructura afectada, lo que hará que la tienda de Commerce se desconecte.
 
 Si un entorno sigue sin cumplir los requisitos después de la suspensión del tráfico, Adobe puede finalizar los servicios en la nube e iniciar el proceso de retirada del servicio. Como resultado de la retirada del mercado, todos los datos y activos del entorno de comercio alojado, incluidas todas las instancias, entornos y ramas, se eliminarán de forma permanente y no se podrán restaurar.
 

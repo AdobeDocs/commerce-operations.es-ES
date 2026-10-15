@@ -4,9 +4,9 @@ user-guide-description: Obtenga información sobre las distintas herramientas qu
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: 42ccea80dbbf503f58ba7d63d4731687b3c310a8
+source-git-commit: b3e370d4d133d52fd97a4cd82ea9243cbd679c0e
 workflow-type: tm+mt
-source-wordcount: '10776'
+source-wordcount: '10826'
 ht-degree: 0%
 ---
 
@@ -1060,6 +1060,8 @@ ht-degree: 0%
       - [ACP2E-4875: Los usuarios administradores cerraron sesión al abrir cuentas de clientes con libretas de direcciones grandes](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4875.md)
     - Versión 1.1.83 {#v1-1-83}
       - [Información general:  [!DNL Quality Patches Tool] (QPT) v1.1.83](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/overview.md)
+      - [AC-18096: Los campos de fecha de Sales GraphQL devuelven un formato localizado incorrecto](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-18096.md)
+      - [AC-18128: las fechas de pedidos de GraphQL y las marcas de tiempo de comentarios son incorrectas para las configuraciones regionales que no están en inglés](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-18128.md)
       - [ACP2E-4838: El usuario administrador restringido no puede eliminar clientes de un sitio web permitido](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4838.md)
       - [ACP2E-4998: La falta de SKU impide actualizaciones de precios de nivel de volumen para productos válidos](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4998.md)
       - [ACP2E-4639: Tipo de elementos de lista de solicitud mal escrito en el esquema GraphQL de Adobe Commerce](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4639.md)
@@ -1068,6 +1070,8 @@ ht-degree: 0%
       - [AC-12854: el reordenamiento del administrador utiliza el número de orden original con un sufijo -1](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-12854.md)
     - v1.1.84 {#v1-1-84}
       - [Información general:  [!DNL Quality Patches Tool] (QPT) v1.1.84](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/overview.md)
+      - [ACP2E-5143: la consulta de ruta de GraphQL procesa contenido de página de CMS no solicitado](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5143.md)
+      - [ACP2E-4741: Guardar un producto enlazado oculta otro producto de la tienda con stock personalizado](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-4741.md)
   - [Comprobar parche para el problema de Adobe Commerce con la herramienta Parches de calidad](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Referencia de herramientas de la línea de comandos {#cli-reference}
   - [Adobe Commerce (local)](reference/commerce-on-premises.md)
