@@ -34,7 +34,7 @@ Adobe ofrece una extensión de soporte de un año sin coste adicional para los c
 >
 >- Adobe recomienda instalar o actualizar Adobe Commerce con el último parche de seguridad disponible para cada versión.
 >- Para ver otras actualizaciones de seguridad, consulte [Boletines de seguridad y avisos de Adobe](https://www.adobe.com/trust/security/bulletins-and-advisories.html) en el Centro de confianza.
->- Para ver los precios, consulta [precios de Adobe Commerce](https://business.adobe.com/products/magento/pricing.html).
+>- Para ver los precios, consulta [precios de Adobe Commerce](https://business.adobe.com/es/products/magento/pricing.html).
 
 {{$include /help/_includes/templated/release/core-releases.md}}
 
