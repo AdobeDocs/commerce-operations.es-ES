@@ -32,7 +32,7 @@ _AC-3223 - [Problema de GitHub](https://github.com/magento/magento2/issues/35577
 
 #### API de REST que muestra pedidos de otro sitio web. 
 
-El sistema ahora admite el acceso autorizado de ámbito para tokens de administrador de API de REST y extremos de Magento_Sales, lo que garantiza que la API de REST solo muestre los pedidos a los que el administrador tiene acceso. Anteriormente, la API de REST mostraba pedidos de todos los sitios web, independientemente del sitio web asignado al usuario administrador.
+El sistema ahora admite el acceso autorizado de ámbito para tokens de administrador de API de REST y puntos finales de Magento_Sales, lo que garantiza que la API de REST solo muestre los pedidos a los que el administrador tiene acceso. Anteriormente, la API de REST mostraba pedidos de todos los sitios web, independientemente del sitio web asignado al usuario administrador.
 
 _ACP2E-2703_
 
@@ -264,7 +264,7 @@ El sistema ahora valida correctamente los datos y oculta el botón &quot;Importa
 
 _AC-11588 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/0574ac23)_
 
-#### [Error]: Magento 2.4.7 no permite fotos de productos con extensión de archivo de letra mayúscula.
+#### [Error]: Magento 2.4.7 no permite fotos de productos con extensión de archivo de mayúsculas.
 
 El sistema ahora acepta cargas de imágenes de productos con extensiones de archivo en mayúsculas, lo que garantiza un proceso de creación de productos sin problemas. Anteriormente, las cargas de imágenes con extensiones de archivo de mayúsculas se rechazaban, lo que obligaba a los usuarios a cambiar la extensión del archivo a minúsculas.
 
@@ -420,7 +420,7 @@ Anteriormente, el botón Restablecer no funcionaba en la página Agregar/Editar 
 
 _ACP2E-3364 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/5184c067)_
 
-#### Detección de errores y errores CORS en el enrutamiento de URL de administración de Magento
+#### Detección de errores de enrutamiento de URL de administración de Magento y errores CORS
 
 Después de la corrección, si el dominio de administración personalizado es un subdominio del dominio principal, el administrador solo es accesible desde el subdominio configurado.
 
@@ -751,7 +751,7 @@ El sistema ahora solo muestra un mensaje de error de validación cuando se hace 
 
 _AC-10826 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/3ea26621)_
 
-#### Excepción de Magento generada en algunos casos de prueba relacionados con pedidos
+#### Se produjo una excepción de Magento en algunos casos de prueba relacionados con pedidos
 
 El sistema ahora administra correctamente el paso &#39;sendGuestPaymentInformation&#39; en varios casos de prueba, lo que evita que se produzcan excepciones de Magento. Anteriormente, estas excepciones se producían debido a un método de pago nulo, lo que provocaba errores en varios casos de prueba.
 
@@ -777,7 +777,7 @@ El sistema ahora omite correctamente la dirección de envío y el método de env
 
 _AC-11641 - [Problema de GitHub](https://github.com/magento/magento2/issues/32781) - [Contribución de código de GitHub](https://github.com/magento/magento2/pull/32511)_
 
-#### Error de inicio de sesión de Magento 2 dentro del cierre de compra con la consola de cliente existente en el navegador Firefox
+#### Error de inicio de sesión de Magento 2 dentro del cierre de compra con el cliente existente en el navegador Firefox.
 
 El sistema ahora permite a los usuarios iniciar sesión durante el proceso de cierre de compra sin encontrar errores de consola en el navegador Firefox. Anteriormente, si se intentaba iniciar sesión como un cliente existente durante el cierre de compra, se producía un error de consola en Firefox.
 
@@ -1912,7 +1912,7 @@ El sistema ahora incluye la extensión FTP como dependencia en el archivo compos
 
 _AC-12857 - [Problema de GitHub](https://github.com/magento/magento2/issues/39083) - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/47b448e2)_
 
-#### [Problema] Corrige clases incorrectas a las que se hace referencia en los módulos de Magento.
+#### [Problema] Corrige las clases incorrectas a las que se hace referencia en los módulos Magento.
 
 El sistema ahora hace referencia correctamente a las clases en los módulos, lo que garantiza un funcionamiento más suave y evita bloqueos debido a clases no existentes. Esto incluye una corrección de errores en los módulos Indexer y CreditMemo, y la implementación de HttpGetActionInterface en la clase PrintAction. Anteriormente, las referencias de clase incorrectas provocaban errores y posibles bloqueos del sistema, y algunas funcionalidades, como el nombre de archivo de los archivos PDF de memo de crédito y la reindexación de existencias, no funcionaban según lo esperado.
 
@@ -2080,7 +2080,7 @@ Anteriormente, en el panel de administración hay muchos errores de JavaScript e
 
 _ACP2E-3375 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/d75cff27)_
 
-#### [Cloud] Magento: el mensaje en cola se ha eliminado
+#### [Cloud] Magento: se eliminó el mensaje en cola
 
 Los mensajes en cola se están borrando correctamente. Antes de la corrección, dado que se estaba utilizando el sistema de cola SQL, se podían haber eliminado nuevos mensajes si el mensaje de la cola de limpieza se estaba ejecutando al mismo tiempo.
 
@@ -2092,7 +2092,7 @@ El modo LUA está ahora habilitado de forma predeterminada para el recolector de
 
 _ACP2E-3537 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/a52ff98f)_
 
-#### El valor MAGENTO_DC_INDEXER__USE_APPLICATION_LOCK se omite
+#### El valor Magento_DC_INDEXER__USE_APPLICATION_LOCK se omite
 
 Después de la corrección, una variable ENV establecida en &quot;false&quot; se tratará como bool false, no como cadena &#39;false&#39;.
 
@@ -3102,9 +3102,9 @@ El sistema ahora gestiona correctamente la configuración del host MySQL que inc
 
 _AC-12176 - [Problema de GitHub](https://github.com/magento/magento2/issues/38799) - [Contribución de código de GitHub](https://github.com/magento/magento2/pull/38842)_
 
-#### Compatibilidad con la interfaz CommandLoaderInterface de Symfony en Magento CLI
+#### Compatibilidad con CommandLoaderInterface de Symfony en Magento CLI
 
-Este cambio reduce el tiempo de inicialización de la aplicación Magento CLI al permitir la inicialización diferida de comandos hasta que se necesitan.
+Este cambio reduce el tiempo de inicialización de la aplicación CLI de Magento al permitir la inicialización diferida de comandos hasta que se necesitan.
 
 _AC-13471 - [Problema de GitHub](https://github.com/magento/magento2/issues/29266) - [Contribución de código de GitHub](https://github.com/magento/magento2/pull/29355)_
 
@@ -3255,7 +3255,7 @@ Se ha corregido un problema con el descuento de reglas del carro de compras cuan
 
 _ACP2E-3332 - [Contribución de código de GitHub](https://github.com/magento/magento2/commit/581b7ef1)_
 
-#### La actualización a [CLOUD] Magento provocó que los cupones hicieran distinción entre mayúsculas y minúsculas
+#### La actualización a [CLOUD] Magento hizo que los cupones hicieran distinción entre mayúsculas y minúsculas
 
 Antes de la corrección, tenía que escribir el código de cupón exactamente como estaba configurado, teniendo en cuenta las mayúsculas y minúsculas. Ahora, el cupón se validará en el back-end independientemente de la configuración del código en mayúsculas o minúsculas.
 
