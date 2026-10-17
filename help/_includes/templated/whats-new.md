@@ -22,7 +22,7 @@ Esta página contiene los cambios realizados en los últimos 60 días. Excluimos
   </thead>
   <tbody>
     <tr>
-      <td><p>Se agregó una descripción detallada de la corrección de QPT 1.1.83 para <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5015">ACP2E-5015: al guardar el catálogo compartido, se eliminan las asignaciones de productos y los precios después de un error de lectura de sesión</a>.</p>
+      <td><p>Se agregó una descripción detallada de la corrección de QPT 1.1.83 para <a href="https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5015">ACP2E-5015: al guardar el catálogo compartido, se eliminan las asignaciones de productos y los precios después de un error de lectura de sesión</a>.</p>
 </td>
       <td>
         Tema nuevo, qpt
@@ -30,7 +30,7 @@ Esta página contiene los cambios realizados en los últimos 60 días. Excluimos
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/5277785149087405dfe01a3e059d7f617869fbf2">comprometer</a></td>
     </tr>
     <tr>
-      <td><p>Se agregó una descripción detallada de la corrección de QPT 1.1.83 para <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-3211">ACP2E-3211: Las solicitudes paralelas de complemento al carro de compras crean elementos separados para el mismo SKU</a>.</p>
+      <td><p>Se agregó una descripción detallada de la corrección de QPT 1.1.83 para <a href="https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-3211">ACP2E-3211: Las solicitudes paralelas de complemento al carro de compras crean elementos separados para el mismo SKU</a>.</p>
 </td>
       <td>
         Tema nuevo, qpt
