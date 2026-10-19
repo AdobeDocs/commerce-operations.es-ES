@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: def92a94816f70e016dad85c428316672adcf452
+source-git-commit: a844e4f16c931370aa77a3b92ac770f6221b60d0
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '519'
 ht-degree: 0%
 ---
 # Información general: [!DNL Quality Patches Tool] (QPT) v1.1.83
@@ -33,16 +33,16 @@ Esta subsección proporciona una descripción detallada de los problemas corregi
 QPT v1.1.83 incluye los siguientes parches:
 
 1. **AC-17975**: corrige varios problemas de compatibilidad con PHP 8.5 que afectan los flujos de trabajo de administración, la autenticación de cierre de compra, el procesamiento CAPTCHA, la administración de categorías, las páginas de configuración y las operaciones de línea de comandos en ciertos entornos PHP.
+1. **[ACP2E-4877](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4877.md)**: corrige el problema por el cual los pedidos realizados mediante Pago a cuenta no se pudieron editar en el administrador mientras estaban en estado *Pendiente*.
 1. **[AC-18096](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-18096.md)**: corrige el problema en el que los campos de fecha de Sales GraphQL devuelven fechas en un formato diferente al de versiones anteriores al revertir el formato de fecha de separado por barras (/) a separado por guiones (-).
 1. **[AC-18128](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-18128.md)**: corrige el problema por el que las fechas de los pedidos y las marcas de tiempo de los comentarios de pedidos devueltas por GraphQL pueden mostrar fechas de calendario incorrectas en configuraciones regionales que no estén en inglés.
 1. **[ACP2E-4838](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4838.md)**: corrige el problema en el que un usuario administrador con permisos restringidos no puede eliminar clientes de la cuadrícula Clientes.
 1. **[ACP2E-4639](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4639.md)**: corrige el problema por el que el tipo de elementos de la lista de solicitudes está mal escrito en el esquema de GraphQL. El campo `items` más antiguo y el tipo `RequistionListItems` siguen disponibles, pero están en desuso.
-1. **ACP2E-4877**: corrige el problema por el que los pedidos realizados con **[!UICONTROL Payment on Account]** no se pudieron editar en el administrador mientras estaban en estado *Pendiente*.
 1. **ACP2E-4908**: soluciona el problema de los catálogos grandes que causan un uso excesivo de memoria en Redis o Valkey porque se crearon entradas de caché de diseño independientes para cada producto en cada vista de tienda.
 1. **[AC-12854](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-12854.md)**: corrige el problema en el cual al reordenar un pedido en el administrador se crea un nuevo número de pedido con un sufijo `-1` en lugar de asignar el siguiente número de pedido secuencial.
 1. **ACP2E-4977**: corrige el problema en el que los totales generales de facturas y notas de abono de los productos configurables no incluyen **[!UICONTROL Fixed Product Tax]** (FPT), lo que da como resultado totales inferiores al total del pedido.
 1. **AC-16530**: corrige un problema en el cual el carro de compras no reflejaba de manera consistente las actualizaciones programadas en las reglas de precios del catálogo.
-1. **AC-11389**: corrige el problema por el que los descuentos, impuestos y totales de pedidos se calculan incorrectamente en algunos casos de redondeo.
+1. **[AC-11389](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-11389.md)**: corrige el problema por el que los descuentos, impuestos y totales de pedidos se calculan incorrectamente en algunos casos de redondeo.
 1. **[ACP2E-5015](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5015.md)**: corrige el problema en el cual al guardar un catálogo compartido en el administrador se pueden eliminar involuntariamente los productos y precios asignados cuando los datos de catálogo requeridos no están disponibles.
 1. **[ACP2E-4998](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4998.md)**: corrige el problema en el que la solicitud de API de REST `POST /V1/products/tier-prices` fallaba por completo cuando no existía un SKU en la carga útil, lo que impedía que se actualizaran SKU válidas.
 1. **[AC-14940](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-14940.md)**: corrige el problema en el cual al hacer clic en [!UICONTROL Reset Password] para una cuenta de cliente en el administrador no se envía el correo electrónico de restablecimiento de contraseña en algunos casos relacionados con el almacén.
