@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 9c67720bcc00fe0b3e783e6c5cc77dea59ee007a
+source-git-commit: def92a94816f70e016dad85c428316672adcf452
 workflow-type: tm+mt
-source-wordcount: '514'
+source-wordcount: '515'
 ht-degree: 0%
 ---
 # Información general: [!DNL Quality Patches Tool] (QPT) v1.1.83
@@ -45,7 +45,7 @@ QPT v1.1.83 incluye los siguientes parches:
 1. **AC-11389**: corrige el problema por el que los descuentos, impuestos y totales de pedidos se calculan incorrectamente en algunos casos de redondeo.
 1. **[ACP2E-5015](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5015.md)**: corrige el problema en el cual al guardar un catálogo compartido en el administrador se pueden eliminar involuntariamente los productos y precios asignados cuando los datos de catálogo requeridos no están disponibles.
 1. **[ACP2E-4998](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4998.md)**: corrige el problema en el que la solicitud de API de REST `POST /V1/products/tier-prices` fallaba por completo cuando no existía un SKU en la carga útil, lo que impedía que se actualizaran SKU válidas.
-1. **AC-14940**: corrige el problema por el cual al hacer clic en **[!UICONTROL Reset Password]** para una cuenta de cliente en el administrador no se enviaba el correo electrónico de restablecimiento de contraseña en algunos casos relacionados con el almacén.
+1. **[AC-14940](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-14940.md)**: corrige el problema en el cual al hacer clic en [!UICONTROL Reset Password] para una cuenta de cliente en el administrador no se envía el correo electrónico de restablecimiento de contraseña en algunos casos relacionados con el almacén.
 1. **[ACP2E-5101](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-5101.md)**: corrige el problema en el que se produjo un error al instalar el módulo B2B cuando los indizadores se establecieron en **[!UICONTROL Update by Schedule]**.
 1. **ACP2E-5205**: corrige el problema que se produce cuando la carga de categorías tarda mucho tiempo o agota el tiempo de espera cuando hay un gran número de categorías y productos involucrados. Además, el recuento de productos ahora se muestra correctamente para cada hoja de categoría.
 1. **[ACP2E-3211](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-3211.md)**: soluciona el problema que causaba que, al agregar el mismo producto al carro de compras al mismo tiempo en la Tienda, se crearan elementos independientes en el carro de compras para la misma SKU en lugar de combinarlos en un solo elemento.
