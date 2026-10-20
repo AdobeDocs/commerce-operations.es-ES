@@ -20,7 +20,7 @@ La fecha en la que finaliza la línea de versión de 2.4.10 aún no se ha establ
   <tbody>
     <tr>
         <td>
-          <a href="https://experienceleague.adobe.com/en/docs/commerce-operations/release/notes/adobe-commerce/2-4-10">2.4.10-alpha1</a>
+          <a href="https://experienceleague.adobe.com/es/docs/commerce-operations/release/notes/adobe-commerce/2-4-10">2.4.10-alpha1</a>
         </td>
         <td>13 de octubre de 2026</td>
     </tr><!-- patch_releases -->
