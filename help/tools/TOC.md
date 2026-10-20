@@ -4,9 +4,9 @@ user-guide-description: Obtenga información sobre las distintas herramientas qu
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: 827148df3d53885c24ee333b9a0e8c5eb8d95216
+source-git-commit: baa1eb193d1cda28ee9891324b616ddee5f23f53
 workflow-type: tm+mt
-source-wordcount: '10911'
+source-wordcount: '10961'
 ht-degree: 0%
 ---
 
@@ -53,7 +53,7 @@ ht-degree: 0%
   - [Alertas administradas para Adobe Commerce: alerta de advertencia de CPU](/help/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-cpu-warning-alert.md)
 - Herramienta Parches de calidad {#quality-patches-tool}
   - [[!DNL Quality Patches Tool]: herramienta de autoservicio para parches de calidad](/help/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches.md)
-  - [[!DNL Quality Patches Tool]: buscar parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es){target="_blank"}
+  - [[!DNL Quality Patches Tool]: buscar parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html){target="_blank"}
   - [Uso](quality-patches-tool/usage.md)
   - [Notas de la versión](quality-patches-tool/release-notes.md)
   - Parches disponibles en la herramienta Parches de calidad {#patches-available-in-qpt}
@@ -1026,7 +1026,7 @@ ht-degree: 0%
       - [ACP2E-4552: La respuesta de GraphQL no devuelve el estado de la empresa](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4552.md)
       - [ACP2E-4496: Trabajo cron de Analytics degrada el rendimiento durante la ejecución](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4496.md)
       - [ACP2E-4488: Lento guardado/edición del producto de administración para grandes conjuntos de atributos](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4488.md)
-      - [ACP2E-4653: Condiciones del ámbito de la categoría de regla de precio del carro de compras que faltan en la API  [!DNL REST] &#x200B;](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4653.md)
+      - [ACP2E-4653: Condiciones del ámbito de la categoría de regla de precio del carro de compras que faltan en la API  [!DNL REST] ](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4653.md)
       - [ACP2E-4472: Presupuesto nulo creado mediante el flujo Iniciar sesión como cliente](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4472.md)
       - [ACP2E-4808: Visualización del peso del producto sin unidad de medida en la tienda](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4808.md)
       - [ACP2E-4533: Las imágenes de marcador de posición no se pueden cargar en la tienda cuando la URL incluye el código de tienda](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-80/acp2e-4533.md)
@@ -1076,6 +1076,10 @@ ht-degree: 0%
       - [AC-12854: el reordenamiento del administrador utiliza el número de orden original con un sufijo -1](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-12854.md)
     - v1.1.84 {#v1-1-84}
       - [Información general:  [!DNL Quality Patches Tool] (QPT) v1.1.84](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/overview.md)
+      - [ACP2E-5059: Los trabajos cron simultáneos envían correos electrónicos de confirmación de pedido duplicados](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5059.md)
+      - [ACP2E-5122: Los errores de carrito de GraphQL gestionados se escriben incorrectamente en el registro de excepciones](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5122.md)
+      - [ACP2E-4913: El envío de API REST y la creación de facturas no se vuelven a intentar después de un bloqueo de la base de datos](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-4913.md)
+      - [ACP2E-5017: La consulta de función de cliente de GraphQL falla para clientes sin compañía](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5017.md)
       - [ACP2E-5143: la consulta de ruta de GraphQL procesa contenido de página de CMS no solicitado](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5143.md)
       - [ACP2E-4741: Guardar un producto enlazado oculta otro producto de la tienda con stock personalizado](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-4741.md)
   - [Comprobar parche para el problema de Adobe Commerce con la herramienta Parches de calidad](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
@@ -1125,6 +1129,6 @@ ht-degree: 0%
     - [Datos que requieren una migración manual](data-migration-tool/migrate-data/manual.md)
     - [Pasos de la migración posterior a los datos](data-migration-tool/migrate-data/post-migration.md)
   - Recursos {#resources}
-    - [Resolución de problemas](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting)
+    - [Resolución de problemas](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-migration-tool-troubleshooting)
     - [Changelog](https://github.com/magento/data-migration-tool/blob/2.4/CHANGELOG.md)
-- [Volver a Guías operativas](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html?lang=es)
+- [Volver a Guías operativas](https://experienceleague.adobe.com/docs/commerce-operations/operational-guides/home.html)
