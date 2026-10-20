@@ -4,9 +4,9 @@ user-guide-description: Obtenga información sobre las distintas herramientas qu
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: a844e4f16c931370aa77a3b92ac770f6221b60d0
+source-git-commit: 827148df3d53885c24ee333b9a0e8c5eb8d95216
 workflow-type: tm+mt
-source-wordcount: '10898'
+source-wordcount: '10911'
 ht-degree: 0%
 ---
 
@@ -1060,6 +1060,7 @@ ht-degree: 0%
       - [ACP2E-4875: Los usuarios administradores cerraron sesión al abrir cuentas de clientes con libretas de direcciones grandes](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4875.md)
     - Versión 1.1.83 {#v1-1-83}
       - [Información general:  [!DNL Quality Patches Tool] (QPT) v1.1.83](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/overview.md)
+      - [ACP2E-4977: Los totales de factura de producto configurable y nota de abono excluyen el impuesto sobre productos fijos](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4977.md)
       - [AC-11389: los totales del pedido varían en función del pedido que se agregue al carro de compras](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-11389.md)
       - [ACP2E-4877: Falta el botón Editar para pedidos pendientes de Pago en Cuenta en Administración](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4877.md)
       - [AC-14940: el correo electrónico de restablecimiento de contraseña no se envía después de eliminar la vista de la tienda de un cliente](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-14940.md)
