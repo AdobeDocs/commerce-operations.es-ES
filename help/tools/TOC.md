@@ -4,9 +4,9 @@ user-guide-description: Obtenga información sobre las distintas herramientas qu
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: 827148df3d53885c24ee333b9a0e8c5eb8d95216
+source-git-commit: baa1eb193d1cda28ee9891324b616ddee5f23f53
 workflow-type: tm+mt
-source-wordcount: '10911'
+source-wordcount: '10961'
 ht-degree: 0%
 ---
 
@@ -1076,6 +1076,10 @@ ht-degree: 0%
       - [AC-12854: el reordenamiento del administrador utiliza el número de orden original con un sufijo -1](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-12854.md)
     - v1.1.84 {#v1-1-84}
       - [Información general:  [!DNL Quality Patches Tool] (QPT) v1.1.84](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/overview.md)
+      - [ACP2E-5059: Los trabajos cron simultáneos envían correos electrónicos de confirmación de pedido duplicados](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5059.md)
+      - [ACP2E-5122: Los errores de carrito de GraphQL gestionados se escriben incorrectamente en el registro de excepciones](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5122.md)
+      - [ACP2E-4913: El envío de API REST y la creación de facturas no se vuelven a intentar después de un bloqueo de la base de datos](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-4913.md)
+      - [ACP2E-5017: La consulta de función de cliente de GraphQL falla para clientes sin compañía](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5017.md)
       - [ACP2E-5143: la consulta de ruta de GraphQL procesa contenido de página de CMS no solicitado](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5143.md)
       - [ACP2E-4741: Guardar un producto enlazado oculta otro producto de la tienda con stock personalizado](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-4741.md)
   - [Comprobar parche para el problema de Adobe Commerce con la herramienta Parches de calidad](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
