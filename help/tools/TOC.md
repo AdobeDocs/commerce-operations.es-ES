@@ -4,9 +4,9 @@ user-guide-description: Obtenga información sobre las distintas herramientas qu
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: 4ed8f5ee3aefe44d3139421a178ca6834a2815f6
+source-git-commit: b9ce2de42db0056d16d8df5e650231ae2b013653
 workflow-type: tm+mt
-source-wordcount: '11012'
+source-wordcount: '11022'
 ht-degree: 0%
 ---
 
@@ -1076,6 +1076,7 @@ ht-degree: 0%
       - [AC-12854: el reordenamiento del administrador utiliza el número de orden original con un sufijo -1](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-12854.md)
     - v1.1.84 {#v1-1-84}
       - [Información general:  [!DNL Quality Patches Tool] (QPT) v1.1.84](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/overview.md)
+      - [ACP2E-5263: La exportación de CSV del producto se detiene antes y omite los productos](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5263.md)
       - [ACP2E-5009: La migración de ensayo de contenido crea actualizaciones no válidas y retrasa la configuración:upgrade](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5009.md)
       - [ACP2E-5005: Las cantidades de productos agrupados no se actualizan en las ofertas negociables de administración](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5005.md)
       - [ACP2E-5127: Al guardar una empresa con una configuración regional de administración que no está en inglés, se restablece el límite de crédito a cero](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5127.md)
