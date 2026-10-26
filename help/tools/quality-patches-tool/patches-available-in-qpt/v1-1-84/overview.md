@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: b9ce2de42db0056d16d8df5e650231ae2b013653
+source-git-commit: e3fec5eba866e1d0ae4c7285667f41b289edf21b
 workflow-type: tm+mt
-source-wordcount: '558'
+source-wordcount: '567'
 ht-degree: 0%
 ---
 # Información general: [!DNL Quality Patches Tool] (QPT) v1.1.84
@@ -36,7 +36,7 @@ QPT v1.1.84 incluye los siguientes parches:
 1. **[ACP2E-4913](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-4913.md)**: corrige el problema donde el envío de API REST y la creación de facturas fallan permanentemente después de un interbloqueo de base de datos.
 1. **[ACP2E-5009](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5009.md)**: corrige el problema en el cual la migración de datos de Magento Open Source a Adobe Commerce no migra correctamente los cambios de diseño programados de categoría y las actualizaciones programadas de producto **[!UICONTROL Special Price]**, lo que provoca que falten algunas actualizaciones programadas o se omitan durante la migración y mejora el rendimiento de la migración.
 1. **[ACP2E-5017](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5017.md)**: corrige el problema en el cual consultar al cliente `role` a través de GraphQL devuelve *error interno del servidor* cuando el cliente no está asignado a una compañía.
-1. **ACP2E-5027**: corrige el problema en el que los indexadores permanecen atascados en un bucle y la reindexación no se completa cuando el bloqueo de archivos está habilitado.
+1. **[ACP2E-5027](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5027.md)**: soluciona el problema en el que los indizadores nunca terminan porque siguen intentando adquirir su propio bloqueo cuando el bloqueo de aplicaciones está habilitado y el proveedor de bloqueo de archivos está configurado.
 1. **ACP2E-5029**: corrige el problema por el cual los cambios en las reglas de precios de catálogo no aparecen en **[!DNL Live Search]** hasta que se realice una resincronización manual.
 1. **ACP2E-5041**: corrige el problema en el cual guardar un producto durante una actualización programada hace que la tienda muestre el precio normal en lugar de **[!UICONTROL Special Price]** después de que finalice la actualización.
 1. **[ACP2E-5059](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5059.md)**: corrige el problema en el cual los clientes reciben correos electrónicos de confirmación de pedidos duplicados para el mismo pedido.
