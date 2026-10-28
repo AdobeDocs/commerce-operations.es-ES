@@ -32,9 +32,9 @@ level_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 889cab9f0f353242319e1feaa090e74819f53027
+source-git-commit: 4e0c8bca6f53821914bf40481eb0cee7ededa411
 workflow-type: tm+mt
-source-wordcount: '704'
+source-wordcount: '489'
 ht-degree: 0%
 ---
 # Información general: [!DNL Quality Patches Tool] (QPT) v1.1.82
@@ -44,18 +44,10 @@ Esta subsección proporciona una descripción detallada de los problemas corregi
 QPT v1.1.82 incluye los siguientes parches:
 
 1. **ACP2E-4815**: corrige varios problemas de GraphQL que causaban excepciones de PHP en los registros, asociación correcta de pedidos con cuentas de clientes creadas después de pedidos a través de GraphQL y alineación de respuestas con GraphQL a través de especificaciones HTTP.
-1. **ACP2E-4194**: corrige el problema en el que las respuestas de GraphQL devuelven códigos de estado HTTP incorrectos para solicitudes no válidas, no autorizadas o con formato incorrecto.
-1. **ACP2E-4593**: corrige el problema en el que la página de CMS que se muestra para las restricciones de sitios web es incorrecta en sitios web secundarios en implementaciones de varios sitios web.
-1. **ACP2E-4682**: corrige el problema que se produce cuando al visitar una página de Storefront que comprueba el estado de la cotización `isActive` se crean registros de cotización vacíos cada vez que se carga la página.
 1. **[ACP2E-4695](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4695.md)**: corrige el problema por el que el indizador de reglas de catálogo consume memoria excesiva y no se puede completar, lo que provoca inestabilidad y errores de memoria insuficiente.
 1. **[ACP2E-4194](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4194.md)**: corrige el problema en el que las respuestas de GraphQL devuelven códigos de estado HTTP incorrectos para solicitudes no válidas, no autorizadas o con formato incorrecto.
-1. **ACP2E-4547**: corrige el problema en el cual un usuario administrador no puede usar **[!UICONTROL Add Products by SKU]** en el administrador para agregar productos del catálogo estándar a una oferta negociable para una compañía asignada a un grupo de clientes que no está vinculado a un catálogo compartido.
-1. **ACP2E-4593**: corrige el problema en el que la página de CMS que se muestra para las restricciones de sitios web es incorrecta en sitios web secundarios en implementaciones de varios sitios web.
 1. **[ACP2E-4547](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4547.md)**: corrige el problema en el cual un usuario administrador no puede usar **[!UICONTROL Add Products By SKU]** en el administrador para agregar productos del catálogo predeterminado a un pedido de una compañía asignada a un grupo de clientes que no está vinculado a un catálogo compartido.
-1. **ACP2E-4593**: corrige el problema en el que la página de CMS que se muestra para las restricciones de sitios web es incorrecta en sitios web secundarios en implementaciones de varios sitios web.
-1. **ACP2E-4682**: corrige el problema que se produce cuando al visitar una página de Storefront que comprueba el estado de la cotización `isActive` se crean registros de cotización vacíos cada vez que se carga la página.
-1. **[ACP2E-4682](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4682.md)**: corrige el problema en el cual al visitar una página de Storefront que comprueba el estado Activo de la oferta, se crean registros de oferta vacíos cada vez que se carga la página.
-1. **[ACP2E-4547](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4547.md)**: corrige el problema en el cual un usuario administrador no puede usar **[!UICONTROL Add Products By SKU]** en el administrador para agregar productos del catálogo predeterminado a un pedido de una compañía asignada a un grupo de clientes que no está vinculado a un catálogo compartido.
+1. **[ACP2E-4682](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4682.md)**: corrige el problema en el cual al visitar una página de tienda que comprueba el estado de la oferta `isActive`, se crean registros de oferta vacíos cada vez que se carga la página.
 1. **[ACP2E-4593](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4593.md)**: corrige el problema en el que la página de CMS que se muestra para las restricciones de sitios web puede ser incorrecta en sitios web secundarios en implementaciones de varios sitios web.
 1. **[ACP2E-4698](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4698.md)**: corrige el problema que causaba que, al volver a editar una imagen en el contenido de texto de Page Builder, se pudiera guardar una URL de medios absoluta en lugar de conservar una directiva de medios portátil.
 1. **[ACP2E-4797](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4797.md)**: soluciona el problema de que la introducción de caracteres Unicode de 4 bytes en el editor de WYSIWYG o en el contenido de Page Builder en el administrador se bloquea incorrectamente incluso cuando la base de datos está configurada para admitir utf8mb4.
