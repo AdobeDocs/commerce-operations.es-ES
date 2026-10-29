@@ -32,9 +32,9 @@ level_v2:
 topic_v2:
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
     internal-label: Troubleshooting
-source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
+source-git-commit: 4e0c8bca6f53821914bf40481eb0cee7ededa411
 workflow-type: tm+mt
-source-wordcount: '311'
+source-wordcount: '270'
 ht-degree: 0%
 ---
 # Información general: [!DNL Quality Patches Tool] (QPT) v1.1.81
@@ -46,9 +46,7 @@ QPT v1.1.81 incluye los siguientes parches:
 
 1. **[ACP2E-4401](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4401.md)**: corrige el problema en el que [!UICONTROL Scheduled Update Preview] del vínculo [!UICONTROL Home Page] con productos configurables redirige a [!UICONTROL maintenance page] en lugar de mostrar la lista de productos.
 1. **[ACP2E-4300](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4300.md)**: corrige el problema en el cual al cambiar un grupo de clientes en el Administrador no se actualizan los permisos de catálogo en la tienda, lo que provoca que el catálogo y el carro reflejen permisos obsoletos.
-1. **ACP2E-4401**: corrige el problema por el que el [!UICONTROL Scheduled Update Preview] del vínculo de la página de inicio con productos configurables redirige a la página de mantenimiento en lugar de mostrar la lista de productos.
 1. **[ACP2E-4395](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4395.md)**: La creación del producto de la API de Giftcard ahora mostrará un error si no se especifican cantidades para el ámbito global.
-1. **ACP2E-4468**: corrige el problema en el cual los usuarios de [!UICONTROL Admin] con permisos de ámbito de sitio web no pueden editar el contenido del banner.
 1. **[ACP2E-4468](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4468.md)**: corrige el problema en el cual los usuarios administradores con permisos de ámbito de sitio web no pueden editar el contenido del banner.
 1. **[ACP2E-4630](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4630.md)**: corrige el problema en el que los nombres de productos largos con opciones personalizadas se superponen con columnas adyacentes o artículos en PDF de varias páginas de facturas, envíos, notas de crédito y devoluciones después de los saltos de página, lo que hace que los artículos de línea sean ilegibles.
 1. **[ACP2E-4680](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-81/acp2e-4680.md)**: soluciona el problema en el que los productos no vendibles o eliminados desaparecen de las cotizaciones negociables finalizadas.
