@@ -18,9 +18,9 @@ level_v2:
     internal-label: Intermediate
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
+source-git-commit: 244ff697888c6feed99861b3e7b63c8cccc3676c
 workflow-type: tm+mt
-source-wordcount: '33143'
+source-wordcount: '33534'
 ht-degree: 0%
 ---
 # Notas de la versión
@@ -29,11 +29,28 @@ ht-degree: 0%
 
 >[!INFO]
 >
->Consulte [Aplicar parches](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=es#apply-individual-patches) para obtener instrucciones sobre cómo aplicar parches a sus proyectos de Adobe Commerce. Consulte [[!DNL Quality Patches Tool]: busque parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es) en la Guía de actualización de software para revisar una lista completa de parches publicados.
+>Consulte [Aplicar parches](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html#apply-individual-patches) para obtener instrucciones sobre cómo aplicar parches a sus proyectos de Adobe Commerce. Consulte [[!DNL Quality Patches Tool]: busque parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) en la Guía de actualización de software para revisar una lista completa de parches publicados.
 
 >[!INFO]
 >
 >Para obtener información acerca de [!DNL quality patches] creado por la comunidad para Magento Open Source, consulte las [notas de la versión](https://github.com/magento/quality-patches/blob/master/community-release-notes.md).
+
+## Versión 1.1.85 {#v1-1-85}
+
+* **ACP2E-4929** (para Adobe Commerce y Magento Open Source >=2.4.5 &lt;2.4.10): corrige el problema en el que las etiquetas de atributos de la [!UICONTROL Compare Products] página muestran traducciones desde una vista de tienda diferente en lugar de la vista de tienda actual.
+* **ACP2E-5075** (para Adobe Commerce y Magento Open Source >=2.4.8 &lt;2.4.10): corrige el problema en el que una regla de precio de carro de compras de cantidad fija con una condición de categoría aplicaba incorrectamente un descuento a todos los elementos secundarios de un paquete de precio dinámico cuando la regla coincidía únicamente con el producto principal del paquete.
+* **ACP2E-5077** (para Adobe Commerce y Magento Open Source >=2.4.7-p7 &lt;2.4.10): corrige el problema en el cual las `customerCart` consultas simultáneas de GraphQL o `POST /V1/carts/mine REST` solicitudes crean carros de compras activos duplicados para clientes que aún no tienen un carro de compras activo.
+* **ACP2E-5088** (para Adobe Commerce y Magento Open Source >=2.4.8 &lt;2.4.10): corrige el problema en el que se borra el carro de compras persistente de un cliente cuando caduca su sesión.
+* **ACP2E-3991** (para Adobe Commerce >=2.4.7 &lt;2.4.9): corrige el problema en el que la dirección IP del cliente no se determina correctamente.
+* **ACP2E-5092** (para Adobe Commerce, B2B >=1.3.4 &lt;1.5.4): corrige el problema en el que la página [!UICONTROL Company Profile] y la página Administrador [!UICONTROL Customer Edit] muestran un error cuando una dirección de compañía que se ha guardado sin una región, tiene más tarde una región agregada a su país.
+* **ACP2E-5124** (para Adobe Commerce y Magento Open Source >=2.4.5 &lt;2.4.10): corrige el problema en el que el botón [!UICONTROL Import] permanece disponible en los resultados de validación después de que la validación falle cuando [!UICONTROL Validation Strategy] se establece en *Detener en caso de error*.
+* **AC-17456** (para Adobe Commerce y Magento Open Source >=2.4.9 &lt;2.4.10): corrige el problema en el cual al editar el ámbito *[!UICONTROL Global]* en la página [!UICONTROL Design Configuration] en el Panel de administración, se devuelve un error *HTTP 500* en PHP 8.4 y 8.5.
+* **ACP2E-5212** (para Adobe Commerce, B2B >=1.3.4 &lt;1.5.4): corrige el problema en el que [!UICONTROL Quick Order] acepta archivos que no son CSV y que tienen la extensión `.csv`.
+* **ACP2E-5300** (para Adobe Commerce y Magento Open Source >=2.4.9 &lt;2.4.10): corrige el problema en el que la palabra clave busca varios números de pedido separados por espacios o por comas en la cuadrícula del Panel de administración [!UICONTROL Orders] no devuelven pedidos coincidentes.
+* **ACP2E-5354** (para Adobe Commerce, B2B >=1.5.3 &lt;1.5.4): corrige el problema en el cual al actualizar un cliente a través de la API de REST, un cliente asociado a una cuenta de compañía aparece varias veces en la cuadrícula [!UICONTROL Customers] de administración.
+* **ACP2E-5208** (para Adobe Commerce, B2B >=1.5.1 &lt;1.5.4): corrige el problema en el que la sección [!UICONTROL Requisition List] se vuelve a cargar en cada navegación de página de Storefront, incluso cuando no se han realizado cambios.
+* Versiones actualizadas: **ACP2E-4894**
+* Revisiones reemplazadas: **ACP2E-4626**
 
 ## v1.1.84 {#v1-1-84}
 
@@ -180,7 +197,7 @@ ht-degree: 0%
 * **ACP2E-4732** (para Adobe Commerce y Magento Open Source >=2.4.4 &lt;2.4.8): corrige un problema en el cual se detuvo la indexación parcial para clientes con un gran número de actualizaciones cuando la columna version_id en la tabla changelog alcanzó su valor máximo.
 * **ACP2E-4763** (para Adobe Commerce y Magento Open Source >=2.4.8 &lt;2.4.9): corrige el problema en el que la consulta customerOrders de GraphQL devuelve valores original_price_included_tax y original_row_total_include_tax inflados cuando los precios de catálogo se establecen en Incluyendo impuesto, debido a que el impuesto se aplica dos veces.
 * **ACSD-60989** (para Adobe Commerce y Magento Open Source >=2.4.4 &lt;2.4.8): corrige el problema en el cual la modificación de una columna con una clave externa a través de un esquema declarativo provoca errores en MariaDB.
-* Versiones actualizadas: **ACSD-59280**, **ACSD-45255**, **ACSD-50336**, **ACSD-49737**, **ACSD-50849**, **ACSD-53750**, **ACSD-55031**, **ACSD-51819**, **ACSD-55628**, **ACSD-54965-V2**, **ACSD-56546**, **ACSD-61756**, **ACSD-68040**, **ACSD-62708**, **ACSD-63283**, **ACSD-64732**, **ACSD-65775**, **ACSD-66965**, **ACP2E-4050&rbrace;**
+* Versiones actualizadas: **ACSD-59280**, **ACSD-45255**, **ACSD-50336**, **ACSD-49737**, **ACSD-50849**, **ACSD-53750**, **ACSD-55031**, **ACSD-51819**, **ACSD-55628**, **ACSD-54965-V2**, **ACSD-56546**, **ACSD-61756**, **ACSD-68040**, **ACSD-62708**, **ACSD-63283**, **ACSD-64732**, **ACSD-65775**, **ACSD-66965**, **ACP2E-4050}**
 * Revisiones reemplazadas: **ACSD-58446**, **ACSD-67904**
 
 ## Versión 1.1.77 {#v1-1-77}
