@@ -1,7 +1,7 @@
 ---
-source-git-commit: e402a703aa2b493618d866ba001273d4f3b21bc6
+source-git-commit: 6ee589d7274397880a5404227f3c5ab9659f73a5
 workflow-type: tm+mt
-source-wordcount: '1830'
+source-wordcount: '2002'
 ht-degree: 1%
 ---
 # Novedades de la plantilla
@@ -9,6 +9,94 @@ ht-degree: 1%
 ## Novedades
 
 Esta página contiene los cambios realizados en los últimos 60 días. Excluimos todas las actualizaciones menores, como la edición de copias, de esta lista.
+
+### 29 de octubre de 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descripción</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Se agregó una descripción detallada de la corrección de QPT 1.1.83 para <a href="https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-16530">AC-16530: El carro de compras muestra precios incoherentes después de una actualización programada de la regla de precios del catálogo</a>.</p>
+</td>
+      <td>
+        Tema nuevo, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/87bb58152a37d84e7ca9c4a882b014bf45224981">comprometer</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 28 de octubre de 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descripción</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Se agregó una descripción detallada de la corrección de QPT 1.1.84 para <a href="https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/ac-15494">AC-15494: La consulta de productos de GraphQL devuelve nombres de productos con escape de HTML</a>.</p>
+</td>
+      <td>
+        Tema nuevo, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/d8d3bfc8adf81046abf9d46ff2dba43c742e2945">comprometer</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 27 de octubre de 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descripción</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Se agregó una descripción detallada de la corrección de QPT 1.1.84 para <a href="https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5242">ACP2E-5242: GraphQL usa el ID de la tienda como el ID del sitio web durante las solicitudes de complementos al carro de compras</a>.</p>
+</td>
+      <td>
+        Tema nuevo, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/9b84a4c224d31afe6452fd609f6202bc9ac7c1c8">comprometer</a></td>
+    </tr>
+  </tbody>
+</table>
+
+### 26 de octubre de 2026
+
+<table style="table-layout:auto;">
+  <thead>
+    <tr>
+      <th>Descripción</th>
+      <th>Tipo</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><p>Se agregó una descripción detallada de la corrección de QPT 1.1.84 para <a href="https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5027">ACP2E-5027: Los indizadores no terminan cuando el bloqueo de aplicaciones usa el proveedor de bloqueo de archivos</a>.</p>
+</td>
+      <td>
+        Tema nuevo, qpt
+      </td>
+      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/7d6f20dd3fe3dca1b8d61fd3afeb2e80bcaa9862">comprometer</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ### 23 de octubre de 2026
 
@@ -472,28 +560,6 @@ Esta página contiene los cambios realizados en los últimos 60 días. Excluimos
         Actualización principal, nuevo tema
       </td>
       <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/a88bfea449616c0b79c5bd3380bec74c68687052">comprometer</a></td>
-    </tr>
-  </tbody>
-</table>
-
-### 26 de agosto de 2026
-
-<table style="table-layout:auto;">
-  <thead>
-    <tr>
-      <th>Descripción</th>
-      <th>Tipo</th>
-      <th>Source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><p>Se ha agregado una descripción detallada de la corrección de QPT 1.1.82 para <a href="https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4840">ACP2E-4840: la consulta de productos de GraphQL devuelve una cantidad nula para los productos en existencias en existencias en existencias en existencias en inventarios personalizados</a>.</p>
-</td>
-      <td>
-        Tema nuevo, qpt
-      </td>
-      <td><a href="https://github.com/AdobeDocs/commerce-operations.en/commit/edfc38af34925749c5acb36d2c0bcfc5d16a577a">comprometer</a></td>
     </tr>
   </tbody>
 </table>
