@@ -4,9 +4,9 @@ user-guide-description: Obtenga información sobre las distintas herramientas qu
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: cbba2086ee177da6a26da84984153b54c725e1a8
+source-git-commit: c97df849a9fba077fc75b194298ab759e3129ad5
 workflow-type: tm+mt
-source-wordcount: '11091'
+source-wordcount: '11112'
 ht-degree: 0%
 ---
 
@@ -1060,6 +1060,7 @@ ht-degree: 0%
       - [ACP2E-4875: Los usuarios administradores cerraron sesión al abrir cuentas de clientes con libretas de direcciones grandes](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-82/acp2e-4875.md)
     - Versión 1.1.83 {#v1-1-83}
       - [Información general:  [!DNL Quality Patches Tool] (QPT) v1.1.83](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/overview.md)
+      - [ACP2E-4908: Los catálogos grandes causan un uso excesivo de la memoria Redis o Valkey](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4908.md)
       - [AC-17975: Los problemas de compatibilidad con PHP 8.5 afectan a los comandos CLI, la edición de categorías, la configuración de diseño y el inicio de sesión del cliente](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-17975.md)
       - [AC-16530: el carro de compras muestra precios incoherentes después de una actualización programada de la regla de precios del catálogo](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-16530.md)
       - [ACP2E-4977: Los totales de factura de producto configurable y nota de abono excluyen el impuesto sobre productos fijos](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/acp2e-4977.md)
@@ -1078,6 +1079,7 @@ ht-degree: 0%
       - [AC-12854: el reordenamiento del administrador utiliza el número de orden original con un sufijo -1](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-83/ac-12854.md)
     - v1.1.84 {#v1-1-84}
       - [Información general:  [!DNL Quality Patches Tool] (QPT) v1.1.84](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/overview.md)
+      - [ACP2E-5183: La implementación de contenido estático falla en PHP 8.5 con `@magento_import`](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5183.md)
       - [AC-15494: La consulta de productos de GraphQL devuelve nombres de productos que han escapado de HTML](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/ac-15494.md)
       - [ACP2E-5242: GraphQL utiliza el ID de la tienda como ID del sitio web durante las solicitudes de complementos al carro de compras](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5242.md)
       - [ACP2E-5027: Los indexadores no terminan cuando el bloqueo de aplicaciones utiliza el proveedor de bloqueo de archivos](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5027.md)
