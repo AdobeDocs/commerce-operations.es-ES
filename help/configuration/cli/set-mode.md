@@ -13,9 +13,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
+source-git-commit: a6400a85be93c8576f5bb2866f4f5107acb5ec1d
 workflow-type: tm+mt
-source-wordcount: '397'
+source-wordcount: '420'
 ht-degree: 0%
 ---
 # Definición del modo de funcionamiento
@@ -135,6 +135,10 @@ Enabled production mode.
 ```
 
 ### Cambiar a modo de desarrollador
+
+>[!NOTE]
+>
+>El modo de desarrollador no es compatible con el entorno de Adobe Commerce Cloud y la asistencia de Adobe Commerce no puede facilitar el cambio del modo de aplicación.
 
 Cuando cambie del modo de producción al modo de desarrollador, debe borrar las clases generadas y las entidades del Administrador de objetos como los proxies para evitar errores inesperados. Después de hacerlo, puede cambiar de modo. Siga estos pasos:
 
