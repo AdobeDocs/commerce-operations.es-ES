@@ -19,7 +19,7 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-badgePaas: label="Commerce en la nube" type="Informative" url="https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce en la nube."
+badgePaas: label="Commerce en la nube" type="Informative" url="https://experienceleague.adobe.com/es/docs/commerce/user-guides/product-solutions" tooltip="Solo se aplica a los proyectos de Adobe Commerce en la nube."
 source-git-commit: f1894f3a95e38f64affff0769e80557fe0b4a4d7
 workflow-type: tm+mt
 source-wordcount: '1201'
@@ -403,7 +403,7 @@ Adobe proporciona un conjunto de servicios relacionados con el aprovisionamiento
 
 La pila de seguridad de Adobe para Managed Services crea seguridad en en todos los niveles mediante la automatización y la coherencia para reducir los errores humanos. Los equipos de desarrollo y operaciones heredan automáticamente los controles de seguridad de los diferentes niveles de la pila.
 
-Los socios de plataforma, como Amazon Web Service y Microsoft Azure, garantizan la máxima cobertura de seguridad al aplicar las personalizaciones de plataforma, mientras que el equipo de Managed Services de Adobe proporciona servicios de seguridad principales, como conformidad, registro, autenticación, análisis y supervisión, y seguridad del servidor y configuración segura de aplicaciones. Consulte [Seguridad de Adobe Commerce](https://business.adobe.com/products/magento/secure-ecommerce.html) para obtener más información.
+Los socios de plataforma, como Amazon Web Service y Microsoft Azure, garantizan la máxima cobertura de seguridad al aplicar las personalizaciones de plataforma, mientras que el equipo de Managed Services de Adobe proporciona servicios de seguridad principales, como conformidad, registro, autenticación, análisis y supervisión, y seguridad del servidor y configuración segura de aplicaciones. Consulte [Seguridad de Adobe Commerce](https://business.adobe.com/es/products/magento/secure-ecommerce.html) para obtener más información.
 
 El diagrama siguiente muestra la pila de tecnología de seguridad de Adobe Managed Services:
 
