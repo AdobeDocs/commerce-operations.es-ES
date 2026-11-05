@@ -13,10 +13,10 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 2afe4bc1ae92dcb0d682ee88ade79560bcb2c35f
+source-git-commit: bce83371e9d510552b871005d591981b1d099f80
 workflow-type: tm+mt
-source-wordcount: '496'
-ht-degree: 2%
+source-wordcount: '545'
+ht-degree: 1%
 ---
 
 # Notas de la versión de Adobe Commerce
@@ -65,15 +65,18 @@ La siguiente tabla proporciona notas de la versión e información importante pa
     </tr>
     <tr>
       <td><strong>Servicios para Adobe Commerce</strong>
-        <p>Obtenga información sobre las últimas mejoras de los innovadores servicios de comercialización de Commerce.</p>
+        <p>Obtenga información sobre las últimas mejoras e innovaciones en los servicios de Commerce.</p>
           <ul>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html?lang=es">Audience Activation</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce/catalog-service/release-notes.html?lang=es">Servicio de catálogo</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation">Audience Activation</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce/catalog-service/release-notes">Servicio de catálogo</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce/live-search/release-notes">Live Search</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce/payment-services/release-notes">Servicios de pago</a></li>
+            <li><a href="https://experienceleague.adobe.com/es/docs/commerce/aem-assets-integration/release-notes">Integración de AEM Assets para Commerce/a&gt;</li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce/product-recommendations/release-notes">Recomendaciones de productos</a></li>
+            <li><a href="https://experienceleague.adobe.com/es/docs/commerce/saas-data-export/release-notes">Servicio de exportación de datos SaaS</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas">Commerce Services Connector</a></li>
+            <li><a href="https://experienceleague.adobe.com/es/docs/commerce/aco-optimizer-connector/release-notes">Conector de Commerce Optimizer</a></li>
             <li><a href="https://experienceleague.adobe.com/es/docs/commerce/data-connection/release-notes">Conector de Experience Platform</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce/live-search/release-notes.html?lang=es">Live Search</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce/payment-services/release-notes.html?lang=es">Servicios de pago</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce/product-recommendations/release-notes.html?lang=es">Recomendaciones de productos</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce/user-guides/integration-services/saas.html?lang=es">Conector de servicios</a></li>
           </ul>
         </td>
       <td><strong>Herramientas</strong>
@@ -82,6 +85,7 @@ La siguiente tabla proporciona notas de la versión e información importante pa
             <li><a href="https://developer.adobe.com/graphql-mesh-gateway/">Malla de API para desarrolladores de Adobe App Builder</a></li>
             <li><a href="https://developer.adobe.com/commerce/events/get-started/release-notes/">Adobe I/O Events para Adobe Commerce</a></li>
             <li><a href="https://developer.adobe.com/commerce/extensibility/admin-ui-sdk/release-notes/">IU de administración de SDK</a></li>
+            <li><a href="../../tools/commerce-version-tool/release-notes.md">Herramienta Versión de Commerce</a></li>
             <li><a href="../../tools/quality-patches-tool/release-notes.md">Herramienta Parches de calidad</a></li>
             <li><a href="../../tools/site-wide-analysis-tool/intro.md">Herramienta de análisis de todo el sitio</a></li>
             <li><a href="../../upgrade/upgrade-compatibility-tool/overview.md">Actualizar herramienta de compatibilidad</a></li>
@@ -92,7 +96,7 @@ La siguiente tabla proporciona notas de la versión e información importante pa
        <td><strong>Experiencia en tienda</strong>
         <p>Obtenga información sobre las últimas mejoras en la tecnología de tiendas que puede utilizar para crear experiencias únicas para sus clientes.</p>
           <ul>
-            <li><a href="https://experienceleague.adobe.com/developer/commerce/storefront/?lang=es">Adobe Commerce Storefront</a></li>
+            <li><a href="https://experienceleague.adobe.com/en/tools/commerce-storefront/releases/"">Adobe Commerce Storefront</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-admin/page-builder/release-notes.html?lang=es">Page Builder</a></li>
             <li><a href="https://github.com/magento/pwa-studio/releases/latest">PWA Studio</a></li>
           </ul>
