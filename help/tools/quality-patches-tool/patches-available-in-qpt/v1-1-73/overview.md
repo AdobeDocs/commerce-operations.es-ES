@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
+source-git-commit: 316b2f5efb35b6500a702ec1754a87da881ba961
 workflow-type: tm+mt
-source-wordcount: '180'
+source-wordcount: '195'
 ht-degree: 0%
 ---
 # Información general: [!DNL Quality Patches Tool] (QPT) v1.1.73
@@ -36,8 +36,8 @@ QPT v1.1.73 incluye los siguientes parches:
 1. **ACSD-67908**: se corrigió el problema por el cual los archivos JS no se combinan correctamente en configuraciones de varias tiendas.
 1. **ACSD-68190**: se corrigió un problema por el cual los descuentos no se aplican, los descuentos aplicados no se muestran correctamente en la respuesta de vista del carro de compras de GraphQL y los descuentos no relacionados con cupones se eliminan al eliminar un descuento de cupones.
 1. **ACSD-68206**: se corrigió el error al usar el servidor de aplicaciones de GraphQL con la característica **[!UICONTROL Rate Limiting]** con la extensión PHP [!DNL Redis] instalada.
-1. **ACSD-68356**: la consulta del carro de compras [!DNL GraphQL] devuelve una cantidad de descuento incorrecta para las ofertas virtuales.
-1. **ACSD-68391**: los permisos relacionados con categorías no se aplicaron en **[!UICONTROL Quick Order]** y **[!UICONTROL Requisition Lists]**.
-1. **ACSD-68400**: la cantidad de tarjetas regalo virtuales no se refleja con precisión en **[!UICONTROL Inventory reservation table]**.
+1. **ACSD-68356**: se ha corregido un problema por el que una consulta al carro de compras de [!DNL GraphQL] devolvía una cantidad de descuento incorrecta para las ofertas virtuales.
+1. **ACSD-68391**: se corrigió un problema por el cual los permisos relacionados con la categoría no se aplicaban correctamente en **[!UICONTROL Quick Order]** y **[!UICONTROL Requisition Lists]**.
+1. **ACSD-68400**: se corrigió un problema en el cual la cantidad de la tarjeta regalo virtual no se reflejaba con precisión en **[!UICONTROL Inventory reservation table]**.
 
 Utilice el menú de la izquierda para navegar a una página específica del parche.

@@ -21,9 +21,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
+source-git-commit: 49785473e0154e72e675b54f9d8119460c53bd8c
 workflow-type: tm+mt
-source-wordcount: '140'
+source-wordcount: '154'
 ht-degree: 0%
 ---
 # Información general: [!DNL Quality Patches Tool] (QPT) v1.1.74
@@ -34,7 +34,7 @@ QPT v1.1.74 incluye los siguientes parches:
 
 1. **ACSD-68636**: se corrigió un problema por el cual el nombre del propietario de la tienda no se muestra correctamente en los encabezados de correo electrónico de las tarjetas regalo de las facturas generadas desde otra tienda.
 1. **ACSD-68430**: se corrigió un problema por el cual al guardar un cliente o una dirección se produce un error cuando los datos incluyen opciones de atributo eliminadas de la configuración de atributos.
-1. **ACSD-68499**: la mutación de GraphQL `updateCartItems` devuelve *success* para cantidades superiores a las existencias disponibles.
+1. **ACSD-68499**: se ha corregido un problema por el que la mutación de GraphQL `updateCartItems` devolvía una respuesta correcta al actualizar cantidades que excedían las existencias disponibles, lo que provocaba cantidades y totales inflados.
 1. **ACSD-68810**: se corrigió el problema por el que un pedido se asigna a un cliente recién creado en un sitio web diferente a pesar de la configuración de **[!UICONTROL Customer Account Sharing]**.
 
 Utilice el menú de la izquierda para navegar a una página específica del parche.
