@@ -21,7 +21,7 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: c97df849a9fba077fc75b194298ab759e3129ad5
+source-git-commit: 1904bb69074eca0a679ec41b4a3817d954f8f488
 workflow-type: tm+mt
 source-wordcount: '549'
 ht-degree: 0%
@@ -38,7 +38,7 @@ QPT v1.1.84 incluye los siguientes parches:
 1. **[ACP2E-5017](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5017.md)**: corrige el problema en el cual consultar al cliente `role` a través de GraphQL devuelve *error interno del servidor* cuando el cliente no está asignado a una compañía.
 1. **[ACP2E-5027](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5027.md)**: corrige el problema en el que los indexadores permanecen atascados en un bucle y la reindexación no se completa cuando el bloqueo de archivos está habilitado.
 1. **ACP2E-5029**: corrige el problema por el cual los cambios en las reglas de precios de catálogo no aparecen en **[!DNL Live Search]** hasta que se realice una resincronización manual.
-1. **ACP2E-5041**: corrige el problema en el cual guardar un producto durante una actualización programada hace que la tienda muestre el precio normal en lugar de **[!UICONTROL Special Price]** después de que finalice la actualización.
+1. **[ACP2E-5041](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5041.md)**: corrige el problema en el cual guardar un producto durante una actualización programada hace que la tienda muestre el precio normal en lugar de **[!UICONTROL Special Price]** después de que finalice la actualización.
 1. **[ACP2E-5183](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5183.md)**: corrige el problema en el que la implementación de contenido estático falla en PHP 8.5 mientras compila un archivo `LESS` que usa la directiva `@magento_import`.
 1. **[ACP2E-5059](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5059.md)**: corrige el problema en el cual los clientes reciben correos electrónicos de confirmación de pedidos duplicados para el mismo pedido.
 1. **[ACP2E-5122](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5122.md)**: corrige el problema en el que los errores administrados de las solicitudes de GraphQL para el carro de compras se registran incorrectamente en los registros de excepciones como errores de aplicación.
