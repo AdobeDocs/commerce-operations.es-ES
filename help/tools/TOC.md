@@ -4,9 +4,9 @@ user-guide-description: Obtenga información sobre las distintas herramientas qu
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: 25d545e300a0a32f982a41c7d3d82b3ed5daf5ef
+source-git-commit: 8e93fbc0f771dd2b4ca1a5049ef8dd15f947cd82
 workflow-type: tm+mt
-source-wordcount: '11153'
+source-wordcount: '11157'
 ht-degree: 0%
 ---
 
@@ -1097,6 +1097,8 @@ ht-degree: 0%
       - [ACP2E-5017: La consulta de función de cliente de GraphQL falla para clientes sin compañía](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5017.md)
       - [ACP2E-5143: la consulta de ruta de GraphQL procesa contenido de página de CMS no solicitado](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5143.md)
       - [ACP2E-4741: Guardar un producto enlazado oculta otro producto de la tienda con stock personalizado](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-4741.md)
+    - Versión 1.1.85 {#v1-1-85}
+      - [Información general:  [!DNL Quality Patches Tool] (QPT) v1.1.85](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-85/overview.md)
   - [Comprobar parche para el problema de Adobe Commerce con la herramienta Parches de calidad](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Referencia de herramientas de la línea de comandos {#cli-reference}
   - [Adobe Commerce (local)](reference/commerce-on-premises.md)
