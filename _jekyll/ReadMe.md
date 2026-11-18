@@ -10,9 +10,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
+source-git-commit: 63e52c8451f368e2d2a36096fc11c7ead62ee94e
 workflow-type: tm+mt
-source-wordcount: '358'
+source-wordcount: '704'
 ht-degree: 0%
 ---
 
@@ -41,6 +41,66 @@ bundle exec rake whatsnew_bp
 ```sh
 bundle exec rake whatsnew_bp since="jul 4"
 ```
+
+### `whatsnew_consolidated`
+
+Consolida los proyectos de documentación publicados de Novedades de los proyectos configurados de Commerce en `help/_includes/automated/whatsnew/consolidated.md`.
+
+```sh
+bundle exec rake whatsnew_consolidated
+```
+
+Configurar proyectos en `whatsnew_consolidated.projects` en [`_config.yml`](_config.yml). Cada entrada requiere un nombre de repositorio, un título de proyecto y una dirección URL del sitio web HTTP(S) absoluta:
+
+```yaml
+whatsnew_consolidated:
+  projects:
+    - repo: commerce-operations.en
+      title: Adobe Commerce operational guides
+      website: https://experienceleague.adobe.com/en/docs/commerce-operations/operational-guides/home
+    - repo: commerce-webapi
+      title: Adobe Commerce web APIs
+      website: https://developer.adobe.com/commerce/webapi/
+    - repo: commerce.en
+      title: Adobe Commerce
+      website: https://experienceleague.adobe.com/en/docs/commerce
+```
+
+Mover entradas para cambiar el orden de la sección. Puede entrelazar libremente proyectos de ambas plataformas. Los nombres de repositorio que terminan con `.en` utilizan la ruta de origen ExL, `help/_includes/templated/whats-new.md`. Todos los demás repositorios utilizan la ruta de origen DevSite `src/pages/_includes/templated/whats-new.md`.
+
+La tarea recupera `main` archivos públicos de la organización GitHub `AdobeDocs`. Muestra el título de cada proyecto como un encabezado de texto sin formato e introduce cada tabla con una frase que vincula el título del proyecto con la página principal de la documentación configurada en `website` como origen de las actualizaciones de novedades. Utiliza `Description | Type | Date/source` encabezados de tabla en todo. Solo para proyectos DevSite, las etiquetas de escape `\<br/\>` se convierten en `<br/>`. De lo contrario, las filas del cuerpo, los duplicados, los vínculos y el orden de las filas de origen permanecen inalterados. Cada origen define su propio período de tiempo.
+
+Se omiten los proyectos con un mensaje reconocido de no actualizaciones. Si cada proyecto no tiene entradas, la inclusión contiene un mensaje general de no actualizaciones. Los errores de configuración, captura, análisis o escritura fallan en la tarea sin reemplazar una inclusión existente.
+
+La tarea no programa la generación ni actualiza las páginas consumidoras.
+
+El grupo de pruebas centrado incluye pruebas de punto de entrada de Rake que cargan el archivo de clasificación `_jekyll` y se ejecutan a través de Bundler. Instale primero el paquete `_jekyll` y el paquete:
+
+```sh
+cd _jekyll && bundle install
+```
+
+A continuación, ejecute las pruebas desde la raíz del repositorio:
+
+```sh
+ruby _jekyll/test/consolidated_whatsnew_test.rb
+```
+
+### `whatsnew_feedback`
+
+Crea `help/_includes/automated/whatsnew/consolidated-feedback.md` filtrando la inclusión `help/_includes/automated/whatsnew/consolidated.md` local existente.
+
+```sh
+bundle exec rake whatsnew_feedback
+```
+
+La tarea coincide con `Feedback` como un valor Type completo separado por comas, omitiendo mayúsculas y minúsculas y espacios en blanco adyacentes. Se incluyen los tipos combinados como `Feedback, technical`. Las menciones en descripciones, vínculos de origen o nombres de tipo parciales no cumplen los requisitos.
+
+Las filas, duplicados, encabezados de proyecto de texto sin formato, frases de origen cuando están presentes y el orden de proyecto y fila no cambiarán. Se omiten los proyectos sin entradas coincidentes. Si nada coincide, la salida contiene un mensaje general sin comentarios.
+
+La entrada ya debe existir. Ejecute `bundle exec rake whatsnew_consolidated` por separado cuando desee actualizarlo. La tarea de comentarios no obtiene contenido remoto, lee la configuración del proyecto ni regenera su entrada.
+
+La entrada faltante o mal formada falla en la tarea sin reemplazar una inclusión filtrada existente. El archivo de entrada nunca se modifica y la salida filtrada se publica automáticamente.
 
 ### `get_released_versions`
 
