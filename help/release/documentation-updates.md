@@ -13,15 +13,15 @@ ht-degree: 0%
 
 # Actualizaciones de documentación
 
-Esta página reúne las actualizaciones de la documentación técnica de Adobe Commerce sobre [Experience League](https://experienceleague.adobe.com/en/docs/commerce) y [Adobe Developer](https://developer.adobe.com/commerce/docs/). Utilice estas listas para buscar nuevos temas, directrices revisadas y mejoras realizadas en respuesta a los comentarios de los lectores.
+Esta página reúne las actualizaciones de la documentación técnica de Adobe Commerce sobre [Experience League](https://experienceleague.adobe.com/es/docs/commerce) y [Adobe Developer](https://developer.adobe.com/commerce/docs/). Utilice estas listas para buscar nuevos temas, directrices revisadas y mejoras realizadas en respuesta a los comentarios de los lectores.
 
-Los cambios basados en los comentarios abordan sugerencias o problemas planteados por los lectores, como instrucciones poco claras, detalles que faltan o información inexacta. Por ejemplo, los comentarios generaron correcciones acerca de la compatibilidad con productos agrupados y agrupados en la [documentación de recomendaciones de productos](https://experienceleague.adobe.com/en/docs/commerce/product-recommendations/boundaries-limits).
+Los cambios basados en los comentarios abordan sugerencias o problemas planteados por los lectores, como instrucciones poco claras, detalles que faltan o información inexacta. Por ejemplo, los comentarios generaron correcciones acerca de la compatibilidad con productos agrupados y agrupados en la [documentación de recomendaciones de productos](https://experienceleague.adobe.com/es/docs/commerce/product-recommendations/boundaries-limits).
 
 ## Proporcionar comentarios
 
 Los comentarios ayudan a mejorar la documentación de. Puede contribuir de las siguientes maneras:
 
-* En Experience League, utilice el área de comentarios de la parte inferior de un tema para valorar su utilidad y dejar un comentario. Consulte la [Guía del colaborador de Adobe Docs](https://experienceleague.adobe.com/en/docs/contributor/contributor-guide/introduction) para obtener instrucciones sobre cómo informar sobre problemas y sugerir cambios.
+* En Experience League, utilice el área de comentarios de la parte inferior de un tema para valorar su utilidad y dejar un comentario. Consulte la [Guía del colaborador de Adobe Docs](https://experienceleague.adobe.com/es/docs/contributor/contributor-guide/introduction) para obtener instrucciones sobre cómo informar sobre problemas y sugerir cambios.
 * En Adobe Developer, utilice el repositorio público de GitHub vinculado desde el tema para informar de un problema de documentación o proponer una edición.
 
 Incluya la dirección URL del tema y describa lo que no está claro, lo que falta o lo que es incorrecto para que el equipo de documentación pueda comprender su sugerencia.
