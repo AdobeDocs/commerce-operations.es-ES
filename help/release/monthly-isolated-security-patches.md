@@ -78,7 +78,7 @@ Para aplicar el archivo de parches de seguridad aislado mensual y mantenerse al 
 
    Los nuevos archivos de parches aislados mensuales se envían según la programación de versiones. Revise el boletín de seguridad correspondiente para ver los componentes y CVE afectados. Cada boletín se vincula a las notas de la versión con instrucciones paso a paso para instalar el archivo de parches aislado de ese mes.
 
-1. **Compruebe el estado de seguridad de la instalación de Commerce mediante la [herramienta Commerce Version](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/commerce-version-tool/intro).**
+1. **Compruebe el estado de seguridad de la instalación de Commerce mediante la [herramienta Commerce Version](https://experienceleague.adobe.com/es/docs/commerce-operations/tools/commerce-version-tool/intro).**
 
    La herramienta informa de qué parches mensuales están instalados actualmente, cuáles faltan y a qué CVE permanece expuesta la instalación. Esto proporciona una evaluación definitiva de qué acción es necesaria, en lugar de depender solo del número de versión.
 
@@ -92,7 +92,7 @@ Para aplicar el archivo de parches de seguridad aislado mensual y mantenerse al 
 
    >[!NOTE]
    >
-   >**Clientes de la nube:** Primero compruebe los parches de nube instalados para Commerce [versión](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches#latest). Es posible que la corrección ya se haya incluido y aplicarla manualmente puede crear un conflicto o duplicar la corrección.
+   >**Clientes de la nube:** Primero compruebe los parches de nube instalados para Commerce [versión](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches#latest). Es posible que la corrección ya se haya incluido y aplicarla manualmente puede crear un conflicto o duplicar la corrección.
 
 1. **Hacer coincidir archivos con los componentes instalados.**
 
@@ -106,7 +106,7 @@ Para aplicar el archivo de parches de seguridad aislado mensual y mantenerse al 
 
    Realice la validación en el entorno de ensayo antes de pasar a producción, según el proceso de cambio normal.
 
-Los clientes de la nube también pueden usar [Adobe Commerce Patching Automation](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/caps-tool/intro) para aplicar o revertir parches a través del Panel de administración en lugar de los pasos manuales de Git y Compositor anteriores.
+Los clientes de la nube también pueden usar [Adobe Commerce Patching Automation](https://experienceleague.adobe.com/es/docs/commerce-operations/tools/caps-tool/intro) para aplicar o revertir parches a través del Panel de administración en lugar de los pasos manuales de Git y Compositor anteriores.
 
 ## Acciones de parche por tipo de implementación
 
@@ -131,7 +131,7 @@ En una instalación con varios componentes (CE, EE, B2B y Page Builder), una ver
 
 ### Con parches en capas en los parches, ¿cómo sé en qué estado de seguridad se encuentra mi instalación?
 
-Con el lanzamiento de los parches de seguridad mensuales, Adobe Commerce presentó [Commerce Version Tool](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/commerce-version-tool/intro), una utilidad independiente que informa sobre qué parches están instalados o faltan y contra qué CVE está protegida su instalación. En lugar de depender de los números de versión, la herramienta lee los metadatos de los parches y proporciona resultados legibles por el equipo para la creación de informes y la integración continua (CI).
+Con el lanzamiento de los parches de seguridad mensuales, Adobe Commerce presentó [Commerce Version Tool](https://experienceleague.adobe.com/es/docs/commerce-operations/tools/commerce-version-tool/intro), una utilidad independiente que informa sobre qué parches están instalados o faltan y contra qué CVE está protegida su instalación. En lugar de depender de los números de versión, la herramienta lee los metadatos de los parches y proporciona resultados legibles por el equipo para la creación de informes y la integración continua (CI).
 
 ### ¿Significa esto que Adobe se ha alejado de las versiones acumulativas de las versiones de seguridad?
 
@@ -149,4 +149,4 @@ No. El mecanismo de envío no afecta al resultado de seguridad de la corrección
 >* [Directiva de versión](versioning-policy.md)
 >* [Programación de publicación de parches](schedule.md)
 >* [Herramienta Versión de Commerce](../tools/commerce-version-tool/intro.md)
->* [Avisos y boletines de seguridad de Adobe](https://helpx.adobe.com/security/security-bulletin.html)
+>* [Avisos y boletines de seguridad de Adobe](https://helpx.adobe.com/es/security/security-bulletin.html)

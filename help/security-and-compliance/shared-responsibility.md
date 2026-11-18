@@ -40,7 +40,7 @@ Los comerciantes son responsables de lo siguiente:
 * Garantizar el desarrollo seguro de aplicaciones
 * Obtención de la certificación PCI si así lo solicita el procesador de pagos del comerciante
 * Reacción y respuesta a incidentes de seguridad
-* Mantener todas las dependencias de terceros, los servicios de plataforma y las extensiones de servicios de Adobe Commerce en versiones compatibles de forma activa. Adobe no proporciona soporte de seguridad ni asistencia para implementaciones que ejecutan versiones de dependencia no admitidas. Consulte [Requisitos del sistema](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) y la [Matriz de disponibilidad del producto](/help/release/product-availability.md) para ver las versiones compatibles.
+* Mantener todas las dependencias de terceros, los servicios de plataforma y las extensiones de servicios de Adobe Commerce en versiones compatibles de forma activa. Adobe no proporciona soporte de seguridad ni asistencia para implementaciones que ejecutan versiones de dependencia no admitidas. Consulte [Requisitos del sistema](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=es) y la [Matriz de disponibilidad del producto](/help/release/product-availability.md) para ver las versiones compatibles.
 
 >[!NOTE]
 >
@@ -85,7 +85,7 @@ Adobe también garantiza la disponibilidad de la infraestructura del comerciante
 El comerciante es responsable de seguir las prácticas recomendadas de seguridad en su instancia personalizada de la solución Adobe Commerce en la infraestructura en la nube:
 
 * Añadir al repositorio los archivos de configuración de Adobe Commerce en la nube necesarios
-* La aplicación de parches de seguridad y de otro tipo a su solución personalizada de Adobe Commerce en la nube inmediatamente después de su lanzamiento por parte de Adobe. Para archivos de revisión de seguridad individuales, consulte [Cómo aplicar una revisión del compositor proporcionada por Adobe](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento) en la _Guía de herramientas y soporte técnico de Adobe_.
+* La aplicación de parches de seguridad y de otro tipo a su solución personalizada de Adobe Commerce en la nube inmediatamente después de su lanzamiento por parte de Adobe. Para archivos de revisión de seguridad individuales, consulte [Cómo aplicar una revisión del compositor proporcionada por Adobe](https://experienceleague.adobe.com/es/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento) en la _Guía de herramientas y soporte técnico de Adobe_.
 * Aplicar parches de seguridad y de otro tipo a todas las extensiones personalizadas y al código inmediatamente después de su lanzamiento por el proveedor
 * Creación, implementación y prueba de archivos VCL de barniz personalizados
 * Diseñar, asignar temas, instalar, integrar y proteger la solución de Adobe Commerce personalizada en infraestructura en la nube, incluidas todas las extensiones y el código personalizados
@@ -112,7 +112,7 @@ El comerciante es responsable de seguir las prácticas recomendadas de seguridad
   * Extensiones de Adobe Commerce Services
   * Todas las integraciones personalizadas y extensiones de terceros
 
-  Adobe no admite implementaciones que ejecuten versiones no admitidas. Consulte [Requisitos del sistema](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) y la [Matriz de disponibilidad del producto](/help/release/product-availability.md) para ver las versiones compatibles.
+  Adobe no admite implementaciones que ejecuten versiones no admitidas. Consulte [Requisitos del sistema](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html?lang=es) y la [Matriz de disponibilidad del producto](/help/release/product-availability.md) para ver las versiones compatibles.
 
 ## Responsabilidades del proveedor de Cloud Service
 
