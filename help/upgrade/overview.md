@@ -13,9 +13,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
+source-git-commit: 16e16980e1b3b021aaaa8c3f1265162f87d5c951
 workflow-type: tm+mt
-source-wordcount: '960'
+source-wordcount: '942'
 ht-degree: 2%
 ---
 # Descripción general del proceso de actualización
@@ -35,7 +35,7 @@ La audiencia de destino de esta guía incluye:
 
 Es probable que una de las razones por las que eligió Adobe Commerce sea:
 
-- Amplio conjunto de funciones listo para usar
+- Conjunto de funciones estándar amplio
 - Funciones de SaaS ofrecidas por separado del código principal
 - Oferta sólida de extensiones de Marketplace
 - Capacidad única para permitir una flexibilidad infinita para que pueda personalizar su sitio para satisfacer mejor las necesidades de su negocio y de los clientes
@@ -51,9 +51,9 @@ La actualización permite a su empresa mantenerse ágil en el acelerado y cambia
 La seguridad es una de las principales razones para la actualización, ya que el 83 % de los incidentes de seguridad se producen en software obsoleto. Según [IBM](https://www.ibm.com/reports/data-breach), el costo promedio de una violación de datos es de 3,86 millones de dólares, mucho más de lo que cuesta mitigar este riesgo mediante la actualización. Adobe ofrece dos formas de mantener la seguridad de su tienda durante todo el año:
 
 - **Versiones de parches**: incluye correcciones de errores de alta prioridad, de seguridad, de rendimiento y de calidad.
-- **Versiones de parches de seguridad**: incluye correcciones y mejoras para mantener el sitio seguro y son más fáciles de implementar.
+- **[Versiones de parches de seguridad](implementation/perform-upgrade.md#example---security-patch)**: incluye correcciones y mejoras que ayudan a mantener el sitio seguro.
 
-Si está usando la versión 2.4.4 a 2.4.9 de Adobe Commerce en la nube, consulte el [Aviso de seguridad y cumplimiento](../release/security-enforcement-policy.md) para conocer las acciones y los plazos necesarios para mantener el entorno seguro y compatible.
+Si usa Adobe Commerce en la versión 2.4.4 a 2.4.9 de la nube, consulte el [Aviso de seguridad y cumplimiento](../release/security-enforcement-policy.md) para conocer las acciones y los plazos necesarios para mantener el entorno seguro y compatible.
 
 ### Rendimiento
 
@@ -63,9 +63,9 @@ El rendimiento es otro de los principales motivos para la actualización. Según
 
 El motivo para retrasar o aplazar las actualizaciones de la plataforma a menudo se reduce al coste inmediato. Sin embargo, el coste real de ejecutar una versión obsoleta de cualquier software es mucho mayor y puede tener un impacto duradero en una empresa.
 
-Puede parecer ilógico, pero realizar actualizaciones regulares de la plataforma requiere menos esfuerzo general que realizar actualizaciones poco frecuentes debido a la cantidad de deuda técnica acumulada que resulta del retraso. Adobe ha trabajado recientemente con un socio que tiene un comerciante minorista que solía realizar actualizaciones de forma poco frecuente e incoherente (una vez al año o durante más tiempo). Al transformar la forma en que se abordan las actualizaciones y seguir una ruta de actualización regular recomendada por Adobe a lo largo de 12 meses, el socio pudo ahorrar al cliente cuatro semanas de tiempo de desarrollo acumulado, esfuerzo y costes asociados. Estos costes podrían entonces redirigirse a iniciativas para impulsar el crecimiento del negocio.
+Puede parecer ilógico, pero realizar actualizaciones regulares de la plataforma requiere menos esfuerzo general que realizar actualizaciones poco frecuentes debido a la cantidad de deuda técnica acumulada que resulta del retraso. Adobe ha trabajado recientemente con un socio que tiene un comerciante minorista que solía realizar actualizaciones de forma poco frecuente e incoherente (una vez al año o durante más tiempo). Al transformar su enfoque de actualización y seguir una ruta de actualización regular recomendada por Adobe durante 12 meses, el socio ahorró al cliente cuatro semanas de tiempo de desarrollo, esfuerzo y costes, lo que les permitió redirigir estos costes a otras iniciativas estratégicas.
 
-Cuando las actualizaciones se realizan regularmente, los cambios son incrementales y el esfuerzo de actualización correspondiente lo refleja. Cuando las actualizaciones de la plataforma se aplazan durante un periodo prolongado, pueden convertirse en un proceso mucho más involucrado. Además, las extensiones que utilice de [Adobe Commerce Marketplace](https://commercemarketplace.adobe.com//) y otras integraciones de terceros también pueden verse afectadas. Por último, el tiempo que se tarda en investigar, planificar y realizar una actualización retrasada se amplía, lo que añade esfuerzo y costes que se pueden evitar.
+Cuando las actualizaciones se realizan regularmente, los cambios son incrementales y el esfuerzo de actualización correspondiente lo refleja. Cuando las actualizaciones de la plataforma se aplazan durante un periodo prolongado, pueden convertirse en un proceso mucho más involucrado. Además, las extensiones que utilice de [Adobe Commerce Marketplace](https://commercemarketplace.adobe.com//) y otras integraciones de terceros también pueden verse afectadas. Por último, se amplía el tiempo necesario para investigar, planificar y realizar una actualización retrasada, lo que supone un esfuerzo y unos costes que se pueden evitar.
 
 Algunos de los factores generales que afectan el nivel de esfuerzo para actualizar su proyecto incluyen, entre otros:
 
@@ -76,4 +76,4 @@ Algunos de los factores generales que afectan el nivel de esfuerzo para actualiz
 | Número de integraciones con terceros (OMS, ERP) | Su estrategia de prueba |
 | Codificación según las prácticas recomendadas |                                                              |
 
-El crecimiento continuo en el espacio del comercio digital ha ejercido una mayor presión sobre las empresas para que evolucionen más rápido, con más frecuencia y de formas impredecibles. El no mantenerse al día y anticipar el comportamiento de compra de los clientes ha nivelado el campo de juego incluso para las marcas más grandes y establecidas. Debe poder proporcionar experiencias personalizadas y sólidas en todos los puntos de contacto, sin interrupciones en el rendimiento y el tiempo de actividad. Debe ser capaz de innovar más rápido, sin límites, para mantenerse por delante de los competidores globales. Al actualizar, está afianzando su empresa en el futuro y configurándose para atender mejor las necesidades dinámicas de los clientes.
+El crecimiento continuo en el espacio del comercio digital ha ejercido una mayor presión sobre las empresas para que evolucionen más rápido, con más frecuencia y de formas impredecibles. El no mantenerse al día y anticipar el comportamiento de compra de los clientes ha nivelado el campo de juego incluso para las marcas más grandes y establecidas. Debe poder proporcionar experiencias personalizadas y sólidas en todos los puntos de contacto, sin interrupciones en el rendimiento y el tiempo de actividad. Debe ser capaz de innovar más rápido, sin límites, para mantenerse por delante de los competidores globales. Al actualizar, está preparando su empresa para los requisitos futuros y configurándose para atender mejor las necesidades dinámicas de los clientes.

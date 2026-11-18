@@ -20,9 +20,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
+source-git-commit: 28065887dc2539b1e594792cbbff3bfff146163a
 workflow-type: tm+mt
-source-wordcount: '443'
+source-wordcount: '445'
 ht-degree: 0%
 ---
 # Comprobar parche para el problema de Adobe Commerce con la herramienta Parches de calidad
@@ -56,7 +56,7 @@ La herramienta está diseñada para permitirle autoabastecerse con parches para 
 
 ## Parches disponibles en la herramienta Parches de calidad
 
-Consulte [Herramienta de parches de calidad](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es) en nuestra documentación para desarrolladores para ver la lista de parches disponibles.
+Consulte [Herramienta de parches de calidad](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) en nuestra documentación para desarrolladores para ver la lista de parches disponibles.
 
 ## Cómo instalar y utilizar la herramienta Parches de calidad
 
@@ -68,9 +68,9 @@ Consulte [Guía de actualización de software > Parches](/help/tools/quality-pat
 
 ### Cómo instalar y utilizar QPT para Adobe Commerce en la infraestructura en la nube
 
-Consulte [Cloud for Adobe Commerce > Aplicar parches](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) en nuestra documentación para desarrolladores para obtener más información sobre cómo instalar y utilizar QPT para aplicar y revertir parches en Adobe Commerce en la infraestructura en la nube.
+Consulte [Cloud for Adobe Commerce > Aplicar parches](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) en nuestra documentación para desarrolladores para obtener más información sobre cómo instalar y utilizar QPT para aplicar y revertir parches en Adobe Commerce en la infraestructura en la nube.
 
 ## Lectura relacionada
 
 * [Notas de la versión de la herramienta Parches de calidad](/help/tools/quality-patches-tool/release-notes.md) en nuestra documentación para desarrolladores.
-* [Cómo aplicar parches de compositor proporcionados por Adobe](https://experienceleague.adobe.com/es/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento) en la base de conocimiento de soporte.
+* [Cómo aplicar los parches del compositor proporcionados por Adobe](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento) en la _Guía de herramientas y soporte técnico de Adobe_.
