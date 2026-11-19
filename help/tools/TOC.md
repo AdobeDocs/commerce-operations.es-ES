@@ -4,9 +4,9 @@ user-guide-description: Obtenga información sobre las distintas herramientas qu
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: 73b32dcbf7f306d5b98277ff757e8e9b2eb4f0fa
+source-git-commit: d8a15da2f255c5cac40003ea677e49c5d288d36d
 workflow-type: tm+mt
-source-wordcount: '11161'
+source-wordcount: '11174'
 ht-degree: 0%
 ---
 
@@ -1089,6 +1089,7 @@ ht-degree: 0%
       - [ACP2E-5263: La exportación de CSV del producto se detiene antes y omite los productos](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5263.md)
       - [ACP2E-5009: La migración de ensayo de contenido crea actualizaciones no válidas y retrasa la configuración:upgrade](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5009.md)
       - [ACP2E-5005: Las cantidades de productos agrupados no se actualizan en las ofertas negociables de administración](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5005.md)
+      - [ACP2E-5029: Los cambios en las reglas de precios de catálogo no se sincronizan con las fuentes de precios de Live Search](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5029.md)
       - [ACP2E-5127: Al guardar una empresa con una configuración regional de administración que no está en inglés, se restablece el límite de crédito a cero](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5127.md)
       - [ACP2E-5079: Los segmentos de clientes solo coinciden con el primer sitio web con uso compartido de cuentas globales](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5079.md)
       - [ACP2E-5059: Los trabajos cron simultáneos envían correos electrónicos de confirmación de pedido duplicados](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-5059.md)

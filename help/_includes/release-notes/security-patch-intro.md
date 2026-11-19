@@ -1,7 +1,7 @@
 ---
-source-git-commit: 28065887dc2539b1e594792cbbff3bfff146163a
+source-git-commit: 1b4787319702489477756682d2dad0da86b28942
 workflow-type: tm+mt
-source-wordcount: '138'
+source-wordcount: '160'
 ht-degree: 0%
 ---
 # Introducción a las notas de revisión de seguridad
@@ -19,3 +19,7 @@ Obtenga más información sobre las versiones de parches de seguridad:
 * [Información general sobre versiones de parches de seguridad de Adobe Commerce](/help/release/release-notes/security/overview.md#about-security-patch-releases)
 * Para obtener instrucciones sobre cómo actualizar a una versión de parche de seguridad, vea el [ejemplo de actualización de parche de seguridad](/help/upgrade/implementation/perform-upgrade.md#example---security-patch).
 * Para aplicar archivos de parches de seguridad individuales, consulte [Cómo aplicar un parche del compositor proporcionado por Adobe](https://experienceleague.adobe.com/es/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento) en la _Guía de herramientas y soporte técnico de Adobe_.
+
+>[!NOTE]
+>
+>Para obtener información acerca de la compatibilidad con dependencias de terceros, consulte [Requisitos del sistema](https://experienceleague.adobe.com/es/docs/commerce-operations/installation-guide/system-requirements).
