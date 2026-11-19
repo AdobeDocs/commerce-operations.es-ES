@@ -13,9 +13,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
+source-git-commit: 16e16980e1b3b021aaaa8c3f1265162f87d5c951
 workflow-type: tm+mt
-source-wordcount: '3242'
+source-wordcount: '3286'
 ht-degree: 0%
 ---
 # Modelo operativo y de seguridad de responsabilidad compartida
@@ -85,7 +85,7 @@ Adobe también garantiza la disponibilidad de la infraestructura del comerciante
 El comerciante es responsable de seguir las prácticas recomendadas de seguridad en su instancia personalizada de la solución Adobe Commerce en la infraestructura en la nube:
 
 * Añadir al repositorio los archivos de configuración de Adobe Commerce en la nube necesarios
-* La aplicación de parches de seguridad y de otro tipo a su solución personalizada de Adobe Commerce en la nube inmediatamente después de su lanzamiento por parte de Adobe.
+* La aplicación de parches de seguridad y de otro tipo a su solución personalizada de Adobe Commerce en la nube inmediatamente después de su lanzamiento por parte de Adobe. Para archivos de revisión de seguridad individuales, consulte [Cómo aplicar una revisión del compositor proporcionada por Adobe](https://experienceleague.adobe.com/es/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento) en la _Guía de herramientas y soporte técnico de Adobe_.
 * Aplicar parches de seguridad y de otro tipo a todas las extensiones personalizadas y al código inmediatamente después de su lanzamiento por el proveedor
 * Creación, implementación y prueba de archivos VCL de barniz personalizados
 * Diseñar, asignar temas, instalar, integrar y proteger la solución de Adobe Commerce personalizada en infraestructura en la nube, incluidas todas las extensiones y el código personalizados
@@ -979,4 +979,3 @@ La recopilación de eventos de tienda mejora la calidad de las recomendaciones d
 | Monitorización del uso de vCPU con respecto a los límites | R |   |
 
 {style="table-layout:auto"}
-

@@ -17,9 +17,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 0c13885f16ac339066198329f38d5c5e2d4a06d1
+source-git-commit: 16e16980e1b3b021aaaa8c3f1265162f87d5c951
 workflow-type: tm+mt
-source-wordcount: '2085'
+source-wordcount: '2129'
 ht-degree: 0%
 ---
 # Proteja su sitio e infraestructura de Commerce
@@ -105,6 +105,7 @@ Consulte los siguientes recursos para obtener información sobre las versiones d
 - [Aviso de seguridad y cumplimiento](../../../release/security-enforcement-policy.md) (Adobe Commerce en las versiones 2.4.4 a 2.4.9 de Cloud)
 - [Guía de actualización](../../../upgrade/overview.md)
 - [Cómo aplicar los parches](../../../upgrade/patches/overview.md)
+- Para archivos de revisión de seguridad individuales, consulte [Cómo aplicar una revisión del compositor proporcionada por Adobe](https://experienceleague.adobe.com/es/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento) en la _Guía de herramientas y soporte técnico de Adobe_.
 
 >[!TIP]
 >

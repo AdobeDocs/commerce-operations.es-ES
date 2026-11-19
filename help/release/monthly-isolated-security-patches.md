@@ -33,9 +33,9 @@ role_v2:
 level_v2:
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
     internal-label: Experienced
-source-git-commit: 66d7c9fd19785e791635d8e8bdf3d6ff3aa27a20
+source-git-commit: 16e16980e1b3b021aaaa8c3f1265162f87d5c951
 workflow-type: tm+mt
-source-wordcount: '1553'
+source-wordcount: '1570'
 ht-degree: 0%
 ---
 # Política de parches de seguridad aislada mensual
@@ -84,7 +84,7 @@ Para aplicar el archivo de parches de seguridad aislado mensual y mantenerse al 
 
 1. **Confirmar la versión de línea de base.**
 
-   Los parches aislados solo se comprueban con la última versión de solo seguridad `-p` para su línea. Si está atrasado en esa línea de base, aplíquelo primero.
+   Los parches aislados solo se comprueban con la última versión de solo seguridad `-p` para su línea. Si está atrasado en esa línea de base, aplíquelo primero. Consulte el [ejemplo de actualización de revisión de seguridad](../upgrade/implementation/perform-upgrade.md#example---security-patch) para obtener instrucciones sobre cómo especificar una versión de revisión de seguridad durante una actualización.
 
 1. **Aplicar todas las revisiones que faltan en orden.**
 
