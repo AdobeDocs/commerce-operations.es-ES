@@ -18,8 +18,8 @@ Obtenga más información sobre las versiones de parches de seguridad:
 
 * [Información general sobre versiones de parches de seguridad de Adobe Commerce](/help/release/release-notes/security/overview.md#about-security-patch-releases)
 * Para obtener instrucciones sobre cómo actualizar a una versión de parche de seguridad, vea el [ejemplo de actualización de parche de seguridad](/help/upgrade/implementation/perform-upgrade.md#example---security-patch).
-* Para aplicar archivos de parches de seguridad individuales, consulte [Cómo aplicar un parche del compositor proporcionado por Adobe](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento) en la _Guía de herramientas y soporte técnico de Adobe_.
+* Para aplicar archivos de parches de seguridad individuales, consulte [Cómo aplicar un parche del compositor proporcionado por Adobe](https://experienceleague.adobe.com/es/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento) en la _Guía de herramientas y soporte técnico de Adobe_.
 
 >[!NOTE]
 >
->Para obtener información acerca de la compatibilidad con dependencias de terceros, consulte [Requisitos del sistema](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements).
+>Para obtener información acerca de la compatibilidad con dependencias de terceros, consulte [Requisitos del sistema](https://experienceleague.adobe.com/es/docs/commerce-operations/installation-guide/system-requirements).
