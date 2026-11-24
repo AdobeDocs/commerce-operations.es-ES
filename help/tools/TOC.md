@@ -4,9 +4,9 @@ user-guide-description: Obtenga información sobre las distintas herramientas qu
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: c6b7cbe24fcac793bb906349bb653f9c05161ddf
+source-git-commit: 86872648c372158143f5bbe707ba7a3f15552bc3
 workflow-type: tm+mt
-source-wordcount: '11190'
+source-wordcount: '11234'
 ht-degree: 0%
 ---
 
@@ -1102,6 +1102,9 @@ ht-degree: 0%
       - [Información general:  [!DNL Quality Patches Tool] (QPT) v1.1.85](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-85/overview.md)
     - Versión 1.1.86 {#v1-1-86}
       - [Información general:  [!DNL Quality Patches Tool] (QPT) v1.1.86](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/overview.md)
+      - [ACP2E-5061: La regla de comercialización de categoría no puede combinar condiciones AND con condiciones que coincidan con varios valores](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5061.md)
+      - [ACP2E-5046: La actualización de la página al crear el pedido en el administrador añade el mismo SKU varias veces](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5046.md)
+      - [ACP2E-3094: Ver o editar permisos de categorías para categorías con muchos permisos provoca que el navegador no responda](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-3094.md)
       - [ACP2E-5050: Al visualizar o guardar la RMA en el administrador, no se muestra el número de RMA en el informe Registros de acciones](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5050.md)
   - [Comprobar parche para el problema de Adobe Commerce con la herramienta Parches de calidad](quality-patches-tool/patches-available-in-qpt/check-patch-for-magento-issue-with-magento-quality-patches.md)
 - Referencia de herramientas de la línea de comandos {#cli-reference}

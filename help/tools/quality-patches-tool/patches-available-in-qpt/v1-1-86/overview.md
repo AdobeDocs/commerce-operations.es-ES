@@ -4,9 +4,9 @@ description: Esta subsección proporciona una descripción detallada de los prob
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: eb417e7d25291df12e4b35e4e581e3771cd9c55b
+source-git-commit: 86872648c372158143f5bbe707ba7a3f15552bc3
 workflow-type: tm+mt
-source-wordcount: '625'
+source-wordcount: '626'
 ht-degree: 0%
 ---
 # Información general: [!DNL Quality Patches Tool] (QPT) v1.1.86
@@ -15,11 +15,12 @@ Esta subsección proporciona una descripción detallada de los problemas corregi
 
 QPT v1.1.86 incluye los siguientes parches:
 
-1. **ACP2E-3094**: corrige el problema en el cual ver o editar **[!UICONTROL Category Permissions]** para una categoría con muchos permisos puede hacer que el explorador no responda.
-1. **ACP2E-5046**: corrige el problema por el cual al actualizar la página mientras se crea un pedido en el administrador se agrega el mismo SKU varias veces.
+
+1. **[ACP2E-5046](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5046.md)**: corrige el problema por el cual al actualizar la página mientras se crea un pedido en el administrador se agrega el mismo SKU varias veces.
+1. **[ACP2E-3094](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-3094.md)**: corrige el problema en el cual ver o editar **[!UICONTROL Category Permissions]** para una categoría con muchos permisos puede hacer que el explorador no responda.
 1. **[ACP2E-5050](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5050.md)**: soluciona el problema que impide que ver o guardar una RMA en el administrador muestre el número de RMA en el informe **[!UICONTROL Action Logs]**.
 1. **ACP2E-5057**: corrige el problema en el que [!DNL GraphQL] consultas de productos de paquetes devuelven precios de opciones de paquetes globales en lugar de precios específicos de sitios web cuando **[!UICONTROL Catalog Price Scope]** está establecido en **[!UICONTROL Website]**.
-1. **ACP2E-5061**: corrige el problema en el que una regla de comercialización de categoría no puede combinar condiciones de `AND` con una condición que coincida con cualquiera de varios valores.
+1. **[ACP2E-5061](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5061.md)**: corrige el problema en el que una regla de comercialización de categoría no puede combinar condiciones AND con una condición que coincida con cualquiera de varios valores.
 1. **ACP2E-5071**: corrige el problema en el que el mensaje de no disponibilidad de existencias no siempre se muestra en la página del producto cuando el carro de compras ya contiene la cantidad disponible completa.
 1. **ACP2E-5094**: corrige el problema por el que las cargas de página son considerablemente más lentas cuando se establece una variable de entorno `MAGENTO_DC_*`.
 1. **ACP2E-5118**: corrige el problema en el que la vista previa de [!DNL Page Builder] no se procesa cuando la caché de **[!UICONTROL Translations]** está deshabilitada.
