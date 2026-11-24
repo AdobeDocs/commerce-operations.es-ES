@@ -4,7 +4,7 @@ description: Esta subsección proporciona una descripción detallada de los prob
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 50215e62371db397c96f9dbd2ff2b9a26ef3a131
+source-git-commit: f7162ccff3f6011af51e0b32eec4bf405633050b
 workflow-type: tm+mt
 source-wordcount: '625'
 ht-degree: 0%
@@ -15,8 +15,9 @@ Esta subsección proporciona una descripción detallada de los problemas corregi
 
 QPT v1.1.86 incluye los siguientes parches:
 
+
+1. **[ACP2E-5046](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5046.md)**: corrige el problema por el cual al actualizar la página mientras se crea un pedido en el administrador se agrega el mismo SKU varias veces.
 1. **[ACP2E-3094](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-3094.md)**: corrige el problema en el cual ver o editar **[!UICONTROL Category Permissions]** para una categoría con muchos permisos puede hacer que el explorador no responda.
-1. **ACP2E-5046**: corrige el problema por el cual al actualizar la página mientras se crea un pedido en el administrador se agrega el mismo SKU varias veces.
 1. **[ACP2E-5050](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5050.md)**: soluciona el problema que impide que ver o guardar una RMA en el administrador muestre el número de RMA en el informe **[!UICONTROL Action Logs]**.
 1. **ACP2E-5057**: corrige el problema en el que [!DNL GraphQL] consultas de productos de paquetes devuelven precios de opciones de paquetes globales en lugar de precios específicos de sitios web cuando **[!UICONTROL Catalog Price Scope]** está establecido en **[!UICONTROL Website]**.
 1. **ACP2E-5061**: corrige el problema en el que una regla de comercialización de categoría no puede combinar condiciones de `AND` con una condición que coincida con cualquiera de varios valores.
