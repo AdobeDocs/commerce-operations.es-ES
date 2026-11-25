@@ -4,9 +4,9 @@ description: Esta subsección proporciona una descripción detallada de los prob
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 86872648c372158143f5bbe707ba7a3f15552bc3
+source-git-commit: 7becdaa615e1ee4cd31454e65a6076de31717fd2
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '631'
 ht-degree: 0%
 ---
 # Información general: [!DNL Quality Patches Tool] (QPT) v1.1.86
@@ -23,8 +23,8 @@ QPT v1.1.86 incluye los siguientes parches:
 1. **[ACP2E-5061](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5061.md)**: corrige el problema en el que una regla de comercialización de categoría no puede combinar condiciones AND con una condición que coincida con cualquiera de varios valores.
 1. **ACP2E-5071**: corrige el problema en el que el mensaje de no disponibilidad de existencias no siempre se muestra en la página del producto cuando el carro de compras ya contiene la cantidad disponible completa.
 1. **ACP2E-5094**: corrige el problema por el que las cargas de página son considerablemente más lentas cuando se establece una variable de entorno `MAGENTO_DC_*`.
-1. **ACP2E-5118**: corrige el problema en el que la vista previa de [!DNL Page Builder] no se procesa cuando la caché de **[!UICONTROL Translations]** está deshabilitada.
-1. **ACP2E-5134**: corrige el problema por el cual al eliminar un producto de componente de paquete del [!UICONTROL Shared Catalog] de una compañía, se deja el producto de paquete en el carro de compras, lo que provoca un error en el carro de compras y durante el cierre de compra.
+1. **[ACP2E-5134](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5134.md)**: corrige el problema que causa que al eliminar un producto incluido en un paquete del catálogo compartido de una compañía, se deje el producto del paquete en el carro de compras y se produzca un error en el carro y durante el cierre de compra.
+1. **[ACP2E-5118](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5118.md)**: corrige el problema en el que la vista previa de [!DNL Page Builder] no se procesa cuando la caché de **[!UICONTROL Translations]** está deshabilitada.
 1. **ACP2E-5146**: corrige el problema en el cual un usuario administrador restringido a sitios web específicos no puede eliminar clientes cuando un cliente en otro sitio web tiene el mismo ID que el usuario administrador.
 1. **ACP2E-5176**: corrige el problema por el que los eventos de comercio electrónico enviados a [!DNL Google Analytics 4] a través de [!DNL Google Tag Manager] utilizan el formato [!DNL Universal Analytics] y omiten varios eventos de cierre de compra.
 1. **ACP2E-5185**: soluciona el problema por el cual al mover una categoría en el árbol de categorías se muestra el error `There was a category move error` o se tarda varios minutos en completarse cuando el almacén tiene muchas reescrituras de URL.
