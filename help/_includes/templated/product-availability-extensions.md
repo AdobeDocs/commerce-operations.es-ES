@@ -1,8 +1,8 @@
 ---
-source-git-commit: 8fb85fe5ae589f4ca3e82b2f3520c4eb7b2e55d8
+source-git-commit: c3c07635a41ffa8eb581e10c1d3de1fd58caa471
 workflow-type: tm+mt
-source-wordcount: '259'
-ht-degree: 18%
+source-wordcount: '256'
+ht-degree: 19%
 ---
 # Disponibilidad del producto de las extensiones creadas por Adobe
 
@@ -100,16 +100,16 @@ ht-degree: 18%
           </td>
       </tr>
       <tr>
-          <td>Enriquecimiento de catálogo</td>
-          <td>2.1.2</td>
+          <td>Detección de productos de IA</td>
+          <td>2.1.3</td>
           <td>2.1.2</td>
           <td>2.1.2</td>
           <td>no admitido</td>
           <td>no admitido</td>
           <td>no admitido</td>
           <td>
-              <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/catalog-enrichment#enable-catalog-enrichment">Compositor</a><br/>
-              <a href="https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/catalog-enrichment#release-notes">Notas de la versión</a><br/>
+              <a href="https://experienceleague.adobe.com/es/docs/commerce-admin/ai-product-discovery/prerequisites">Compositor</a><br/>
+              <a href="https://experienceleague.adobe.com/es/docs/commerce-admin/ai-product-discovery/release-notes">Notas de la versión</a><br/>
           </td>
       </tr>
       <tr>
