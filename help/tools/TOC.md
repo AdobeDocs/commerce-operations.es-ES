@@ -4,9 +4,9 @@ user-guide-description: Obtenga información sobre las distintas herramientas qu
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: 7becdaa615e1ee4cd31454e65a6076de31717fd2
+source-git-commit: a1cc81ee1a8d0bbcbea322558da75a31e65d66a4
 workflow-type: tm+mt
-source-wordcount: '11262'
+source-wordcount: '11345'
 ht-degree: 0%
 ---
 
@@ -1100,8 +1100,13 @@ ht-degree: 0%
       - [ACP2E-4741: Guardar un producto enlazado oculta otro producto de la tienda con stock personalizado](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-84/acp2e-4741.md)
     - Versión 1.1.85 {#v1-1-85}
       - [Información general:  [!DNL Quality Patches Tool] (QPT) v1.1.85](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-85/overview.md)
+      - [ACP2E-3991: La dirección IP del cliente no está determinada correctamente](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-85/acp2e-3991.md)
+      - [ACP2E-4929: Las etiquetas de atributo de la página Comparar productos muestran traducciones de una vista de tienda diferente en lugar de la actual](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-85/acp2e-4929.md)
     - Versión 1.1.86 {#v1-1-86}
       - [Información general:  [!DNL Quality Patches Tool] (QPT) v1.1.86](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/overview.md)
+      - [ACP2E-5245: El nuevo cliente utiliza la misma dirección para el envío y la facturación en el primer pedido y ve la dirección dos veces al pagar](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5245.md)
+      - [ACP2E-3752: La importación de productos genera un error de clave de matriz indefinida cuando se ejecutan muchas operaciones de importación](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-3752.md)
+      - [ACP2E-4973: Cambiar de la entrega en tienda a otro método de entrega no borra la dirección de la tienda del carro de compras](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-4973.md)
       - [ACP2E-5134: La eliminación del producto empaquetado del catálogo compartido deja el paquete en el carro de compras y provoca errores en el cierre de compra](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5134.md)
       - [ACP2E-5118: La previsualización de Page Builder no se procesa cuando la caché de traducciones está desactivada](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5118.md)
       - [ACP2E-5061: La regla de comercialización de categoría no puede combinar condiciones AND con condiciones que coincidan con varios valores](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5061.md)
