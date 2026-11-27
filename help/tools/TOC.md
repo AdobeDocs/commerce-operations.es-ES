@@ -4,9 +4,9 @@ user-guide-description: Obtenga información sobre las distintas herramientas qu
 feature: Configuration
 nduge: true
 color: red
-source-git-commit: 69ae2a93791211a4bde29de919694cef61c764a4
+source-git-commit: 41f455b05b7afecd8a476188c3b723a8e02235a4
 workflow-type: tm+mt
-source-wordcount: '11399'
+source-wordcount: '11424'
 ht-degree: 0%
 ---
 
@@ -1104,6 +1104,8 @@ ht-degree: 0%
       - [ACP2E-4929: Las etiquetas de atributo de la página Comparar productos muestran traducciones de una vista de tienda diferente en lugar de la actual](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-85/acp2e-4929.md)
     - Versión 1.1.86 {#v1-1-86}
       - [Información general:  [!DNL Quality Patches Tool] (QPT) v1.1.86](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/overview.md)
+      - [ACP2E-5248: Usuarios administradores sin permiso de **[!UICONTROL Edit Product Status]** ven error de obsolescencia en la página **[!UICONTROL Add Product]** en PHP 8.5](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5248.md)
+      - [ACP2E-5425: Los clientes reciben correos electrónicos de confirmación de pedido duplicados para el mismo pedido](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5425.md)
       - [ACP2E-5071: El mensaje de no disponibilidad de stock no siempre se muestra en la página del producto cuando el carro de compras contiene la cantidad disponible completa](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5071.md)
       - [ACP2E-5176: Los eventos de comercio electrónico enviados a Google Analytics 4 mediante Google Tag Manager utilizan el formato de Universal Analytics y omiten los eventos de cierre de compra](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5176.md)
       - [ACP2E-4191: Las solicitudes de API de REST entran en bucle infinito cuando los tipos de EAV y la caché de atributos están desactivados](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-4191.md)
