@@ -4,7 +4,7 @@ description: Esta subsección proporciona una descripción detallada de los prob
 feature: Tools and External Services
 role: Admin, Developer
 type: Troubleshooting
-source-git-commit: 69ae2a93791211a4bde29de919694cef61c764a4
+source-git-commit: 9e453ce98ac552d883469e20e65516be8ef02b4f
 workflow-type: tm+mt
 source-wordcount: '742'
 ht-degree: 0%
@@ -44,6 +44,6 @@ QPT v1.1.86 incluye los siguientes parches:
 1. **ACP2E-5295**: corrige el problema en el que la reindexación de precios de productos paralelos falla con el error `Fail in child process` cuando se ejecuta después del indexador **[!UICONTROL Inventory]** en el mismo proceso.
 1. **ACP2E-5298**: corrige el problema en el cual los usuarios administradores con acceso de solo vista a las reglas de precios del carro de compras pueden generar o eliminar códigos de cupones.
 1. **ACP2E-5333**: corrige el problema que se produce cuando se actualiza un segmento de cliente con una condición **[!UICONTROL Total Number of Orders]** que usa el operador **[!UICONTROL is not]** y un valor de uno o más falla con el error `Unknown operator specified`.
-1. **ACP2E-5425**: corrige el problema en el cual los clientes reciben correos electrónicos de confirmación de pedidos duplicados para el mismo pedido.
+1. **[ACP2E-5425](/help/tools/quality-patches-tool/patches-available-in-qpt/v1-1-86/acp2e-5425.md)**: corrige el problema en el cual los clientes reciben correos electrónicos de confirmación de pedidos duplicados para el mismo pedido.
 
 Utilice el menú de la izquierda para navegar a una página específica del parche.
